@@ -25,7 +25,7 @@ public class MessagePanel extends JPanel {
 
         add(getPlayerPanel(message), BorderLayout.WEST);
 
-        final TextLabel textLabel=new TextLabel(message.getText(),maxWidth,false);
+        final TextLabel textLabel=new TextLabel(message.getText(),maxWidth+26,false);
         textLabel.setColors(Color.BLACK,Color.BLUE);
         add(textLabel,BorderLayout.CENTER);
 
@@ -65,7 +65,7 @@ public class MessagePanel extends JPanel {
             lifeLabel.setForeground(Color.RED);
         }
         lifePanel.add(new JLabel(IconImages.REGENERATED), "center");
-        lifePanel.add(lifeLabel);
+        lifePanel.add(lifeLabel, "w 100%");
         return lifePanel;
     }
 
