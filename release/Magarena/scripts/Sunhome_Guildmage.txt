@@ -7,7 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={R}{W}
 pt=2/2
-ability=pay {2}{R}{W}: PN puts a 1/1 red and white Soldier creature token with haste onto the battlefield.;\
-        pay {1}{R}{W}: Creatures PN controls get +1/+0 until end of turn.
+ability=pay {1}{R}{W}: Creatures PN controls get +1/+0 until end of turn.;\
+        pay {2}{R}{W}: PN puts a 1/1 red and white Soldier creature token with haste onto the battlefield.
 timing=main
-
