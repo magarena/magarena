@@ -10,4 +10,3 @@ ability=lifelink;enters with -1/-1 4
 pt=6/6
 timing=main
 requires_groovy_code
-

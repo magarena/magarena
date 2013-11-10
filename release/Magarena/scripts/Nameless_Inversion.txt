@@ -9,4 +9,3 @@ ability=changeling
 cost={1}{B}
 timing=removal
 requires_groovy_code
-

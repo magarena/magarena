@@ -8,4 +8,3 @@ type=Instant
 cost={2}{W}
 timing=attack
 requires_groovy_code
-

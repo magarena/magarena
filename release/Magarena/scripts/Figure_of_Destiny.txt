@@ -9,4 +9,3 @@ cost={R/W}
 pt=1/1
 timing=main
 requires_groovy_code
-

@@ -8,4 +8,3 @@ type=Sorcery
 cost={B}
 timing=removal
 requires_groovy_code
-

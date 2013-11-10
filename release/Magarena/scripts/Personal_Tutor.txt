@@ -7,4 +7,3 @@ type=Sorcery
 cost={U}
 timing=main
 requires_groovy_code
-

@@ -7,4 +7,3 @@ type=Instant
 cost={W}
 timing=removal
 requires_groovy_code
-

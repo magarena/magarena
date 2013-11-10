@@ -7,4 +7,3 @@ type=Enchantment
 cost={2}{R}{W}
 timing=enchantment
 requires_groovy_code
-
