@@ -1,7 +1,6 @@
 package magic.ui;
 
 import magic.ui.viewer.CardViewer;
-import magic.ui.viewer.LogBookViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import javax.swing.JLayeredPane;
@@ -28,10 +27,6 @@ public class GameLayeredPane extends JLayeredPane {
         final CardViewer cardViewer=gamePanel.getImageCardViewer();
         add(cardViewer);
         setLayer(cardViewer,2);
-
-        final LogBookViewer logBookViewer=gamePanel.getLogBookViewer();
-        add(logBookViewer);
-        setLayer(logBookViewer,3);
 
         this.addComponentListener(new ComponentAdapter() {
 
