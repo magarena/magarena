@@ -7,6 +7,7 @@ import magic.ui.theme.ThemeFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -143,7 +144,9 @@ public class TextLabel extends JPanel {
         }
 
         final Insets insets=getInsets();
-        setPreferredSize(new Dimension(insets.left+insets.right,y+LINE_HEIGHT+insets.top+insets.bottom));
+        setPreferredSize(new Dimension(
+                maxWidth - insets.left + insets.right,
+                y + LINE_HEIGHT + insets.top + insets.bottom));
     }
 
     @Override

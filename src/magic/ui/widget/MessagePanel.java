@@ -10,52 +10,82 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 
 public class MessagePanel extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
-    public MessagePanel(final MagicMessage message,final int maxWidth) {
+    private static int lastTurn = 0;
+    private static int textLabelWidth = 0;
 
-        setBorder(FontsAndBorders.EMPTY_BORDER);
-        setLayout(new BorderLayout(4,0));
-        setOpaque(true);
+    private final MagicMessage message;
 
-        add(getPlayerPanel(message), BorderLayout.WEST);
+    public MessagePanel(final MagicMessage message0, final int containerWidth) {
+        message = message0;
+        setMessagePanelLayout(containerWidth);
+    }
 
-        final TextLabel textLabel=new TextLabel(message.getText(),maxWidth+26,false);
+    private void setMessagePanelLayout(final int containerWidth) {
+
+        int gap = 8; // pixels
+        setLayout(new MigLayout("insets 0, gap " + gap, "[][][grow,right]", "[top]"));
+
+        JPanel playerPanel = getPlayerPanel();
+        JPanel turnPanel = getTurnPanel();
+
+        if (textLabelWidth == 0) {
+            textLabelWidth =
+                    containerWidth -
+                    playerPanel.getPreferredSize().width -
+                    turnPanel.getPreferredSize().width -
+                    (gap * 2);
+        }
+
+        final TextLabel textLabel=new TextLabel(message.getText(), textLabelWidth, false);
         textLabel.setColors(Color.BLACK,Color.BLUE);
-        add(textLabel,BorderLayout.CENTER);
 
-        final JPanel gamePanel=new JPanel(new BorderLayout());
-        gamePanel.setOpaque(false);
-        add(gamePanel,BorderLayout.EAST);
+        add(playerPanel);
+        add(textLabel);
+        add(turnPanel);
+    }
 
-        final JLabel turnLabel=new JLabel("Turn "+message.getTurn());
-        turnLabel.setFont(FontsAndBorders.FONT1);
-        turnLabel.setHorizontalAlignment(JLabel.RIGHT);
-        gamePanel.add(turnLabel,BorderLayout.NORTH);
+    private JPanel getTurnPanel() {
+        final JPanel turnPanel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
+        turnPanel.setOpaque(false);
+        turnPanel.add(getTurnLabel(), "w 100%");
+        turnPanel.add(getPhaseLabel(), "w 100%");
+        return turnPanel;
+    }
 
-        final JLabel phaseLabel=new JLabel(message.getPhaseType().getName());
+    private JLabel getPhaseLabel() {
+        final JLabel phaseLabel=new JLabel(message.getPhaseType().getAbbreviation());
         phaseLabel.setFont(FontsAndBorders.FONT0);
         phaseLabel.setHorizontalAlignment(JLabel.RIGHT);
-        gamePanel.add(phaseLabel,BorderLayout.SOUTH);
+        return phaseLabel;
+    }
+
+    private JLabel getTurnLabel() {
+        final int messageTurn = message.getTurn();
+        final JLabel turnLabel = new JLabel(String.format("%03d", messageTurn));
+        turnLabel.setFont(lastTurn != messageTurn ? FontsAndBorders.FONT1 : FontsAndBorders.FONT0);
+        turnLabel.setHorizontalAlignment(JLabel.RIGHT);
+        lastTurn = messageTurn;
+        return turnLabel;
     }
 
     /**
      *  Displays the player avatar & health.
      */
-    private JPanel getPlayerPanel(final MagicMessage message) {
+    private JPanel getPlayerPanel() {
         final JPanel playerPanel = new JPanel(new MigLayout("insets 0", "[]2[]"));
         playerPanel.setOpaque(false);
-        playerPanel.add(getPlayerAvatar(message));
-        playerPanel.add(getPlayerLifePanel(message));
+        playerPanel.add(getPlayerAvatar());
+        playerPanel.add(getPlayerLifePanel());
         return playerPanel;
     }
 
-    private JPanel getPlayerLifePanel(final MagicMessage message) {
+    private JPanel getPlayerLifePanel() {
         final JPanel lifePanel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
         lifePanel.setOpaque(false);
         final int life=message.getLife();
@@ -69,7 +99,7 @@ public class MessagePanel extends JPanel {
         return lifePanel;
     }
 
-    private JLabel getPlayerAvatar(final MagicMessage message) {
+    private JLabel getPlayerAvatar() {
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
         final int face = message.getPlayer().getPlayerDefinition().getFace();
         return new JLabel(theme.getAvatarIcon(face,1));

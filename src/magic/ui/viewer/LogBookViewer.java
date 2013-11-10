@@ -17,12 +17,13 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
 import javax.swing.event.MouseInputAdapter;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
@@ -34,7 +35,7 @@ public class LogBookViewer extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
-    private static final Border SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
+    private static final CompoundBorder SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createMatteBorder(0,0,1,0,Color.GRAY),
         FontsAndBorders.EMPTY_BORDER
     );
@@ -45,8 +46,8 @@ public class LogBookViewer extends JPanel {
     private final JPanel messagePanel;
     private final JScrollPane scrollPane;
     private final GeneralConfig config = GeneralConfig.getInstance();
-    private boolean isScrollbarVisible = config.isLogScrollbarVisible();
-    private boolean isNewMessageAddedToTop = config.isLogMessageAddedToTop();
+    private boolean isScrollbarVisible = false; //config.isLogScrollbarVisible();
+    private boolean isNewMessageAddedToTop = false; // config.isLogMessageAddedToTop();
 
     public LogBookViewer(final MagicLogBook logBook) {
 
@@ -56,7 +57,7 @@ public class LogBookViewer extends JPanel {
 
         TitleBar tb = new TitleBar("Log");
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
-        tb.add(getOptionsButton(), BorderLayout.EAST);
+        //tb.add(getOptionsButton(), BorderLayout.EAST);
         add(tb, BorderLayout.NORTH);
 
         final JPanel centerPanel=new JPanel();
@@ -128,7 +129,8 @@ public class LogBookViewer extends JPanel {
     }
 
     private MessagePanel getNewMessagePanel(MagicMessage message) {
-        final int maxWidth = getWidth() - 175;
+        Insets s = SEPARATOR_BORDER.getInsideBorder().getBorderInsets(null);
+        final int maxWidth = getWidth() - (s.left + s.right);
         final MessagePanel panel = new MessagePanel(message, maxWidth);
         panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);

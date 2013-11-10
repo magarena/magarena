@@ -38,4 +38,23 @@ public enum MagicPhaseType {
                this == DeclareBlockers ||
                this == EndOfCombat;
     }
+
+    public String getAbbreviation() {
+        switch (this) {
+        case Mulligan:          return "MU";
+        case Draw:              return "DR";
+        case Upkeep:            return "UP";
+        case FirstMain:         return "M1";
+        case BeginOfCombat:     return "BC";
+        case Cleanup:           return "CU";
+        case CombatDamage:      return "CD";
+        case DeclareAttackers:  return "DA";
+        case DeclareBlockers:   return "DB";
+        case EndOfCombat:       return "EC";
+        case EndOfTurn:         return "ET";
+        case SecondMain:        return "M2";
+        case Untap:             return "UT";
+        default:                return name;
+        }
+    }
 }
