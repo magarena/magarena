@@ -1,5 +1,6 @@
-MEM=256M
-JAVA=java -Xms$(MEM) -Xmx$(MEM) 
+MIN_MEM=256M
+MAX_MEM=512M
+JAVA=java -Xms$(MIN_MEM) -Xmx$(MAX_MEM) 
 DEBUG=$(JAVA) -ea
 LIBS=.:lib/annotations.jar:lib/jsr305.jar:release/lib/groovy-all-2.1.1.jar
 RUN=${DEBUG} -Dcom.sun.management.jmxremote -cp $(LIBS):release/Magarena.jar
