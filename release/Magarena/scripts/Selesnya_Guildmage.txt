@@ -1,0 +1,13 @@
+name=Selesnya Guildmage
+url=http://magiccards.info/cmd/en/224.html
+image=http://magiccards.info/scans/en/cmd/224.jpg
+value=3.333
+rarity=U
+type=Creature
+subtype=Elf,Wizard
+cost={G/W}{G/W}
+pt=2/2
+ability=pay {3}{G}: PN puts a 1/1 green Saproling creature token onto the battlefield.;\
+        pay {3}{W}: Creatures PN controls get +1/+1 until end of turn.
+timing=main
+

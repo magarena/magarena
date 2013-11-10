@@ -1,0 +1,12 @@
+name=Skarrg Guildmage
+url=http://magiccards.info/gtc/en/196.html
+image=http://magiccards.info/scans/en/gtc/196.jpg
+value=3.867
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={R}{G}
+pt=2/2
+ability=pay {R}{G}: Creatures PN controls gain trample until end of turn.
+timing=main
+requires_groovy_code

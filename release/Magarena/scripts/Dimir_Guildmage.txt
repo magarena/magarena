@@ -1,0 +1,12 @@
+name=Dimir Guildmage
+url=http://magiccards.info/rav/en/245.html
+image=http://magiccards.info/scans/en/rav/245.jpg
+value=3.802
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={U/B}{U/B}
+pt=2/2
+timing=main
+requires_groovy_code
+
