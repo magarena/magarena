@@ -38,7 +38,9 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
         String content = "";
         description = "";
         try { //load deck description
-            content = FileIO.toStr(file);
+            if (file != null) {
+                content = FileIO.toStr(file);
+            }
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable to load " + file.getName());
             ex.printStackTrace();
