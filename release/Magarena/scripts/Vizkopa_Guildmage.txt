@@ -1,0 +1,12 @@
+name=Vizkopa Guildmage
+url=http://magiccards.info/gtc/en/206.html
+image=http://magiccards.info/scans/en/gtc/206.jpg
+value=4.300
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={W}{B}
+pt=2/2
+ability=pay {1}{W}{B}: Target creature gains lifelink until end of turn.
+timing=main
+requires_groovy_code

@@ -617,6 +617,8 @@ normalize_files:
 	sed -i -e 's/\x0D$$//'  ${FILES}
 	# convert tab to four spaces
 	sed -i -e 's/\t/    /g' ${FILES}
+	# remove empty lines in scripts
+	sed -i -e '/^\s*$$/d' release/Magarena/scripts/*.txt
 
 %.post:
 	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"
