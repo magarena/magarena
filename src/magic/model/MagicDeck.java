@@ -37,4 +37,10 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     public void setDescription(final String desc) {
         this.description = desc;
     }
+
+    @Override
+    public void clear() {
+        super.clear();
+        this.description = "";
+    }
 }
