@@ -282,7 +282,7 @@ public class MCTSAI implements MagicAI {
             //look for first non root AI node along this path and add it to cache
             if (!found && curr != root && curr.isAI()) {
                 found = true;
-                assert curr.isCached() || printPath(path);
+                //assert curr.isCached() || printPath(path);
                 MCTSGameTree.addNode(CACHE, game, curr);
             }
 
@@ -454,7 +454,7 @@ public class MCTSAI implements MagicAI {
         for (final MCTSGameTree p : path) {
             sb.append(" -> ").append(p.desc);
         }
-        log(sb.toString());
+        System.err.println(sb.toString());
         return true;
     }
 }
@@ -528,7 +528,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         if (candidate != null) {
             assert log("CACHE HIT");
             assert log("HIT  : " + game.getIdString());
-            assert printNode(candidate, choices);
+            //assert printNode(candidate, choices);
             return candidate;
         } else {
             assert log("CACHE MISS");
@@ -562,16 +562,16 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     static boolean printNode(final MCTSGameTree curr, final List<Object[]> choices) {
         if (curr.choicesStr != null) {
             for (final String str : curr.choicesStr) {
-                log("PAREN: " + str);
+                System.err.println("PAREN: " + str);
             }
         } else {
-            log("PAREN: not defined");
+            System.err.println("PAREN: not defined");
         }
         for (final MCTSGameTree child : curr) {
-            log("CHILD: " + child.desc);
+            System.err.println("CHILD: " + child.desc);
         }
         for (final Object[] choice : choices) {
-            log("GAME : " + obj2String(choice[0]));
+            System.err.println("GAME : " + obj2String(choice[0]));
         }
         return true;
     }
