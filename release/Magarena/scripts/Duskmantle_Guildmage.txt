@@ -1,0 +1,11 @@
+name=Duskmantle Guildmage
+url=http://magiccards.info/gtc/en/158.html
+image=http://magiccards.info/scans/en/gtc/158.jpg
+value=3.884
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={U}{B}
+pt=2/2
+timing=main
+requires_groovy_code
