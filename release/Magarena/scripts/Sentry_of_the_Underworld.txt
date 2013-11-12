@@ -1,0 +1,12 @@
+name=Sentry of the Underworld
+url=http://magiccards.info/ths/en/202.html
+image=http://magiccards.info/scans/en/ths/202.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Griffin,Skeleton
+cost={3}{W}{B}
+pt=3/3
+ability=flying;vigilance
+timing=main
+requires_groovy_code
