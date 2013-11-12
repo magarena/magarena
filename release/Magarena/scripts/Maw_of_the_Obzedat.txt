@@ -1,0 +1,11 @@
+name=Maw of the Obzedat
+url=http://magiccards.info/dgm/en/83.html
+image=http://magiccards.info/scans/en/dgm/83.jpg
+value=3.336
+rarity=U
+type=Creature
+subtype=Thrull
+cost={3}{W}{B}
+pt=3/3
+ability=pay Sacrifice a creature: Creatures PN controls get +1/+1 until end of turn.
+timing=main

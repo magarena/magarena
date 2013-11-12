@@ -1,0 +1,9 @@
+name=Overgrown Estate
+url=http://magiccards.info/ap/en/113.html
+image=http://magiccards.info/scans/en/ap/113.jpg
+value=3.317
+rarity=R
+type=Enchantment
+cost={B}{G}{W}
+ability=pay Sacrifice a land: PN gains 3 life.
+timing=enchantment
