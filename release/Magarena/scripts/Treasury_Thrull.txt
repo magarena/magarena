@@ -1,0 +1,12 @@
+name=Treasury Thrull
+url=http://magiccards.info/gtc/en/201.html
+image=http://magiccards.info/scans/en/gtc/201.jpg
+value=3.455
+rarity=R
+type=Creature
+subtype=Thrull
+cost={4}{W}{B}
+pt=4/4
+ability=extort
+timing=main
+requires_groovy_code
