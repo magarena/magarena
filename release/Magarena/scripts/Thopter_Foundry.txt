@@ -1,0 +1,9 @@
+name=Thopter Foundry
+url=http://magiccards.info/arb/en/133.html
+image=http://magiccards.info/scans/en/arb/133.jpg
+value=4.700
+rarity=U
+type=Artifact
+cost={W/B}{U}
+timing=artifact
+requires_groovy_code
