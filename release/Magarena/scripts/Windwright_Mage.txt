@@ -1,0 +1,12 @@
+name=Windwright Mage
+url=http://magiccards.info/ala/en/208.html
+image=http://magiccards.info/scans/en/ala/208.jpg
+value=2.964
+rarity=C
+type=Artifact,Creature
+subtype=Human,Wizard
+cost={W}{U}{B}
+pt=2/2
+ability=lifelink
+timing=artifact
+requires_groovy_code
