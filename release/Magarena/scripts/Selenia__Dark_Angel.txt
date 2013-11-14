@@ -1,4 +1,4 @@
- name=Selenia, Dark Angel
+name=Selenia, Dark Angel
 url=http://magiccards.info/tp/en/345.html
 image=http://magiccards.info/scans/en/tp/345.jpg
 value=3.900
