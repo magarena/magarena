@@ -1,0 +1,11 @@
+name=Ali Baba
+url=http://magiccards.info/4e/en/193.html
+image=http://magiccards.info/scans/en/4e/193.jpg
+value=2.407
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={R}
+pt=1/1
+ability=pay {R}:Tap target Wall.
+timing=main
