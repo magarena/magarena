@@ -1,0 +1,8 @@
+name=Blasted Landscape
+url=http://magiccards.info/uz/en/319.html
+image=http://magiccards.info/scans/en/uz/319.jpg
+value=3.578
+rarity=U
+type=Land
+ability=enters tapped;tap add mana {1};cycling {2}
+timing=tapland

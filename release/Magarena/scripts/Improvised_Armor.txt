@@ -1,0 +1,12 @@
+name=Improvised Armor
+url=http://magiccards.info/ons/en/40.html
+image=http://magiccards.info/scans/en/ons/40.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+given_pt=+2/+5
+ability=cycling {3}
+timing=aura
+enchant=pump,pos creature

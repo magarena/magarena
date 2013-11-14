@@ -1,0 +1,12 @@
+name=Drifting Djinn
+url=http://magiccards.info/us/en/71.html
+image=http://magiccards.info/scans/en/us/71.jpg
+value=2.880
+rarity=R
+type=Creature
+subtype=Djinn
+cost={4}{U}{U}
+pt=5/5
+ability=flying,cycling {2}
+timing=main
+requires_groovy_code

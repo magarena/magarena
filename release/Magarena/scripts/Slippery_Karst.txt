@@ -1,0 +1,9 @@
+name=Slippery Karst
+url=http://magiccards.info/ddd/en/26.html
+image=http://magiccards.info/scans/en/ddd/26.jpg
+value=2.625
+rarity=C
+type=Land
+mana=g3
+ability=enters tapped;tap add mana {G};cycling {2}
+timing=tapland

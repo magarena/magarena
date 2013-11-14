@@ -1,0 +1,9 @@
+name=Secluded Steppe
+url=http://magiccards.info/cmd/en/286.html
+image=http://magiccards.info/scans/en/cmd/286.jpg
+value=3.333
+rarity=C
+type=Land
+mana=w3
+ability=enters tapped;tap add mana {W};cycling {W}
+timing=tapland

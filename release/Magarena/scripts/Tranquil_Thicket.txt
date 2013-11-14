@@ -1,0 +1,9 @@
+name=Tranquil Thicket
+url=http://magiccards.info/ddj/en/82.html
+image=http://magiccards.info/scans/en/ddj/82.jpg
+value=3.333
+rarity=C
+type=Land
+mana=g3
+ability=enters tapped;tap add mana {G};cycling {G}
+timing=tapland

@@ -1,0 +1,13 @@
+name=Savage Hunger
+url=http://magiccards.info/ala/en/147.html
+image=http://magiccards.info/scans/en/ala/147.jpg
+value=1.370
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+given_pt=+1/+0
+given_ability=trample
+ability=cycling {2}
+timing=aura
+enchant=pump,trample,pos creature

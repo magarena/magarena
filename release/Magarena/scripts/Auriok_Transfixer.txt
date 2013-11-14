@@ -1,0 +1,11 @@
+name=Auriok Transfixer
+url=http://magiccards.info/mi/en/5.html
+image=http://magiccards.info/scans/en/mi/5.jpg
+value=2.714
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={W}
+pt=1/1
+ability=pay {W},{T}: Tap target artifact.
+timing=main

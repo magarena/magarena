@@ -1,0 +1,9 @@
+name=Lonely Sandbar
+url=http://magiccards.info/ddj/en/35.html
+image=http://magiccards.info/scans/en/ddj/35.jpg
+value=3.333
+rarity=C
+type=Land
+mana=u3
+ability=enters tapped;tap add mana {U};cycling {U}
+timing=tapland

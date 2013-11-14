@@ -1,0 +1,9 @@
+name=Remote Isle
+url=http://magiccards.info/bd/en/75.html
+image=http://magiccards.info/scans/en/bd/75.jpg
+value=3.700
+rarity=C
+type=Land
+mana=u3
+ability=enters tapped;tap add mana {U};cycling {2}
+timing=tapland
