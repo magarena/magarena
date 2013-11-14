@@ -1,0 +1,12 @@
+name=Sydri, Galvanic Genius
+url=http://magiccards.info/c13/en/220.html
+image=http://magiccards.info/scans/en/c13/220.jpg
+value=4.423
+rarity=M
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={W}{U}{B}
+pt=2/2
+ability=pay {W}{B}:Target artifact creature gains deathtouch and lifelink until end of turn.
+timing=main
+requires_groovy_code
