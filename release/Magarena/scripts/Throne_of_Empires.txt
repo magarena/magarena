@@ -1,0 +1,9 @@
+name=Throne of Empires
+url=http://magiccards.info/m12/en/221.html
+image=http://magiccards.info/scans/en/m12/221.jpg
+value=3.712
+rarity=R
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
