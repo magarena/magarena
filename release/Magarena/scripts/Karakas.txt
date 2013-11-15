@@ -1,0 +1,9 @@
+name=Karakas
+url=http://magiccards.info/me3/en/208.html
+image=http://magiccards.info/scans/en/me3/208.jpg
+value=4.542
+rarity=R
+type=Legendary,Land
+mana=w1
+ability=tap add mana {W};pay {T}:Return target legendary creature to its owner's hand.
+timing=land
