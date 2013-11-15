@@ -1,0 +1,11 @@
+name=High Priest of Penance
+url=http://magiccards.info/gtc/en/171.html
+image=http://magiccards.info/scans/en/gtc/171.jpg
+value=3.935
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={W}{B}
+pt=1/1
+timing=main
+requires_groovy_code
