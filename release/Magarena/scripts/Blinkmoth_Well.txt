@@ -1,0 +1,8 @@
+name=Blinkmoth Well
+url=http://magiccards.info/mi/en/279.html
+image=http://magiccards.info/scans/en/mi/279.jpg
+value=3.615
+rarity=U
+type=Land
+ability=tap add mana {1};pay {2},{T}:tap target noncreature artifact.
+timing=land
