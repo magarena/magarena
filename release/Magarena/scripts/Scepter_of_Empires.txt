@@ -1,0 +1,9 @@
+name=Scepter of Empires
+url=http://magiccards.info/m12/en/216.html
+image=http://magiccards.info/scans/en/m12/216.jpg
+value=2.920
+rarity=U
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code
