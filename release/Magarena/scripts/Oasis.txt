@@ -1,0 +1,8 @@
+name=Oasis
+url=http://magiccards.info/me4/en/248.html
+image=http://magiccards.info/scans/en/me4/248.jpg
+value=2.091
+rarity=C
+type=Land
+ability=pay {T}:Prevent the next 1 damage that would be dealt to target creature this turn.
+timing=land
