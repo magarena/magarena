@@ -1,0 +1,9 @@
+name=Culling Sun
+url=http://magiccards.info/gp/en/109.html
+image=http://magiccards.info/scans/en/gp/109.jpg
+value=3.358
+rarity=R
+type=Sorcery
+cost={2}{W}{W}{B}
+timing=main
+requires_groovy_code
