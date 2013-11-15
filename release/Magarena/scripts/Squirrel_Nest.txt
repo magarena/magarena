@@ -1,0 +1,11 @@
+name=Squirrel Nest
+url=http://magiccards.info/od/en/274.html
+image=http://magiccards.info/scans/en/od/274.jpg
+value=4.477
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{G}{G}
+given_ability=pay {T}: PN puts a 1/1 green Squirrel creature token onto the battlefield.
+enchant=pump,pos land
+timing=aura
