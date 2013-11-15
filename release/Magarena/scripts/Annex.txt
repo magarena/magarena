@@ -1,0 +1,11 @@
+name=Annex
+url=http://magiccards.info/9e/en/59.html
+image=http://magiccards.info/scans/en/9e/59.jpg
+value=3.607
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+ability=control enchanted
+enchant=gain control, neg land
+timing=aura
