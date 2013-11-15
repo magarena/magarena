@@ -1,0 +1,8 @@
+name=Phyrexia's Core
+url=http://magiccards.info/nph/en/165.html
+image=http://magiccards.info/scans/en/nph/165.jpg
+value=2.942
+rarity=U
+type=Land
+ability=tap add mana {1};pay {1},{T},Sacrifice an artifact:PN gains 1 life.
+timing=land
