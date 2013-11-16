@@ -5,6 +5,6 @@ value=1.958
 rarity=C
 type=Instant
 cost={1}{R}
-effect=destroy target artifact creature
+effect=destroy target artifact creature.
 ability=cycling {2}
 timing=removal
