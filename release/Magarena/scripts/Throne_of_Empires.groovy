@@ -7,7 +7,8 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostTapEvent(source, "{1}")
+                new MagicPayManaCostEvent(source, "{1}"),
+                new MagicTapEvent(source)
             ];
         }
 
@@ -15,9 +16,8 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getController(),
                 this,
-                "PN Put a 1/1 white Soldier creature token onto the battlefield." + 
+                "PN puts a 1/1 white Soldier creature token onto the battlefield." + 
                 "Put 5 of those tokens onto the battlefield instead if you control " + 
                 "artifacts named Crown of Empires and Scepter of Empires."
             );
