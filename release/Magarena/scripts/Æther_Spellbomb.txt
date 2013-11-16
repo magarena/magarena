@@ -1,0 +1,9 @@
+name=AEther Spellbomb
+url=http://magiccards.info/mma/en/196.html
+image=http://magiccards.info/scans/en/mma/196.jpg
+value=3.905
+rarity=C
+type=Artifact
+cost={1}
+ability=pay {U},{S}:Return target creature to its owner's hand.;pay {1},{S}:PN draws a card.
+timing=artifact
