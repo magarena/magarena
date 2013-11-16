@@ -1,0 +1,9 @@
+name=Oboro, Palace in the Clouds
+url=http://magiccards.info/sok/en/164.html
+image=http://magiccards.info/scans/en/sok/164.jpg
+value=4.354
+rarity=R
+type=Legendary,Land
+mana=b1
+ability=tap add mana {U};pay {1}:Return SN to its owner's hand.
+timing=land

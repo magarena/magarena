@@ -1,0 +1,8 @@
+name=Riptide Laboratory
+url=http://magiccards.info/on/en/322.html
+image=http://magiccards.info/scans/en/on/322.jpg
+value=4.090
+rarity=R
+type=Land
+ability=tap add mana {1};pay {T},{1}{U}:Return target Wizard you control to its owner's hand.
+timing=land

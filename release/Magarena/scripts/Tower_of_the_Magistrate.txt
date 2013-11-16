@@ -1,0 +1,8 @@
+name=Tower of the Magistrate
+url=http://magiccards.info/mm/en/330.html
+image=http://magiccards.info/scans/en/mm/330.jpg
+value=3.875
+rarity=R
+type=Land
+ability=tap add mana {1};pay {T},{1}: Target creature gains protection from artifacts until end of turn.
+timing=land

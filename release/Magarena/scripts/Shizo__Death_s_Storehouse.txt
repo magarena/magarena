@@ -1,0 +1,9 @@
+name=Shizo, Death's Storehouse
+url=http://magiccards.info/chk/en/283.html
+image=http://magiccards.info/scans/en/chk/283.jpg
+value=4.227
+rarity=R
+type=Legendary,Land
+mana=b1
+ability=tap add mana {B};pay {T},{B}: Target legendary creature gains fear until end of turn.
+timing=land
