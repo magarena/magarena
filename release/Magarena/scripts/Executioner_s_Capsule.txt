@@ -1,4 +1,4 @@
- name=Executioner's Capsule
+name=Executioner's Capsule
 url=http://magiccards.info/mma/en/83.html
 image=http://magiccards.info/scans/en/mma/83.jpg
 value=4.094

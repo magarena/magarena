@@ -1,0 +1,9 @@
+name=Phyrexian Vault
+url=http://magiccards.info/pvc/en/21.html
+image=http://magiccards.info/scans/en/pvc/21.jpg
+value=2.209
+rarity=U
+type=Artifact
+cost={3}
+ability=pay {2},{T},Sacrifice a creature:PN draws a card.
+timing=artifact
