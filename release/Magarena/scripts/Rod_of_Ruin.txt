@@ -1,0 +1,9 @@
+name=Rod of Ruin
+url=http://magiccards.info/m14/en/217.html
+image=http://magiccards.info/scans/en/m14/217.jpg
+value=1.212
+rarity=U
+type=Artifact
+cost={4}
+ability=pay {3},{T}:SN deals 1 damage to target creature or player.
+timing=artifact
