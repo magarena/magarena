@@ -1,0 +1,9 @@
+name=War Chariot
+url=http://magiccards.info/ia/en/323.html
+image=http://magiccards.info/scans/en/ia/323.jpg
+value=2.036
+rarity=U
+type=Artifact
+cost={3}
+ability=pay {3},{T}:Target creature gains trample until end of turn.
+timing=artifact

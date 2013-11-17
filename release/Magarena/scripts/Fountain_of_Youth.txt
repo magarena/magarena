@@ -1,0 +1,9 @@
+name=Fountain of Youth
+url=http://magiccards.info/10e/en/323.html
+image=http://magiccards.info/scans/en/10e/323.jpg
+value=2.356
+rarity=U
+type=Artifact
+cost={0}
+ability=pay {2},{T}:PN gains 1 life.
+timing=artifact

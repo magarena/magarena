@@ -1,0 +1,9 @@
+name=Galvanic Key
+url=http://magiccards.info/mi/en/173.html
+image=http://magiccards.info/scans/en/mi/173.jpg
+value=2.529
+rarity=C
+type=Artifact
+cost={2}
+ability=flash; pay {3},{T}:Untap target artifact.
+timing=flash

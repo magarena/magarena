@@ -1,0 +1,9 @@
+name=Skullmead Cauldron
+url=http://magiccards.info/di/en/167.html
+image=http://magiccards.info/scans/en/di/167.jpg
+value=2.447
+rarity=U
+type=Artifact
+cost={4}
+ability=pay {T}:PN gains 1 life.;pay {T},Discard a card:PN gains 3 life.
+timing=artifact

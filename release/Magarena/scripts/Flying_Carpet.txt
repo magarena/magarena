@@ -1,0 +1,9 @@
+name=Flying Carpet
+url=http://magiccards.info/me4/en/201.html
+image=http://magiccards.info/scans/en/me4/201.jpg
+value=2.262
+rarity=C
+type=Artifact
+cost={4}
+ability=pay {2},{T}:Target creature gains flying until end of turn.
+timing=artifact
