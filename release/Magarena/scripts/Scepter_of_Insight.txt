@@ -1,0 +1,9 @@
+name=Scepter of Insight
+url=http://magiccards.info/cfx/en/33.html
+image=http://magiccards.info/scans/en/cfx/33.jpg
+value=2.543
+rarity=R
+type=Artifact
+cost={1}{U}{U}
+ability=pay {3}{U},{T}:PN draws a card.
+timing=artifact
