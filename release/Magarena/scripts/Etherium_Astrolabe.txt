@@ -1,0 +1,9 @@
+name=Etherium Astrolabe
+url=http://magiccards.info/ala/en/41.html
+image=http://magiccards.info/scans/en/ala/41.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={2}{U}
+ability=pay {B},{T},Sacrifice an artifact:PN draws a card.
+timing=artifact
