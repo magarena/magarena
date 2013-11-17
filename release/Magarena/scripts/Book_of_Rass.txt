@@ -1,0 +1,9 @@
+name=Book of Rass
+url=http://magiccards.info/me4/en/183.html
+image=http://magiccards.info/scans/en/me4/183.jpg
+value=2.630
+rarity=U
+type=Artifact
+cost={6}
+ability=pay {2},Pay 2 life:PN draws a card.
+timing=artifact
