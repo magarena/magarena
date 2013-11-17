@@ -1,0 +1,9 @@
+name=Tower of Eons
+url=http://magiccards.info/mi/en/266.html
+image=http://magiccards.info/scans/en/mi/266.jpg
+value=3.041
+rarity=R
+type=Artifact
+cost={4}
+ability=pay {8},{T}:PN gains 10 life.
+timing=artifact
