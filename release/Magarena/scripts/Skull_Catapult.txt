@@ -1,0 +1,9 @@
+name=Skull Catapult
+url=http://magiccards.info/cstd/en/46.html
+image=http://magiccards.info/scans/en/cstd/46.jpg
+value=2.797
+rarity=U
+type=Artifact
+cost={4}
+ability=pay {1},{T},Sacrifice a creature:SN deals 2 damage to target creature or player.
+timing=artifact
