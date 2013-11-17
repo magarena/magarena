@@ -1,0 +1,11 @@
+name=Paradise Mantle
+url=http://magiccards.info/mma/en/211.html
+image=http://magiccards.info/scans/en/mma/211.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={0}
+equip={1}
+given_ability=tap add mana any
+timing=artifact
