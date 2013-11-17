@@ -1,0 +1,9 @@
+name=Marble Chalice
+url=http://magiccards.info/ala/en/18.html
+image=http://magiccards.info/scans/en/ala/18.jpg
+value=2.069
+rarity=C
+type=Artifact
+cost={2}{W}
+ability=pay {T}:PN gains 1 life.
+timing=artifact
