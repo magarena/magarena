@@ -6,6 +6,6 @@ rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={4}
-color=White, Blue, Black, Red, Green
+color=wburg
 pt=3/3
 timing=artifact
