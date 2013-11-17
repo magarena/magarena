@@ -1,0 +1,11 @@
+name=Sylvok Replica
+url=http://magiccards.info/som/en/210.html
+image=http://magiccards.info/scans/en/som/210.jpg
+value=3.418
+rarity=C
+type=Artifact,Creature
+subtype=Shaman
+cost={3}
+pt=1/3
+ability=pay {G},{S}:Destroy target artifact or enchantment.
+timing=artifact
