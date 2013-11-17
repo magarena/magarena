@@ -1,0 +1,8 @@
+name=2/2 colorless Assembly-Worker artifact creature token
+token=Assembly-Worker
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=44636&stc=1&d=1175676958
+value=1
+type=Artifact,Creature
+subtype=Assembly-Worker
+cost={0}
+pt=2/2
