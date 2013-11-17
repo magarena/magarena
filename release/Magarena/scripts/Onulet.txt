@@ -1,0 +1,11 @@
+name=Onulet
+url=http://magiccards.info/me4/en/219.html
+image=http://magiccards.info/scans/en/me4/219.jpg
+value=3.275
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=2/2
+ability=dies effect PN gain 2 life.
+timing=artifact
