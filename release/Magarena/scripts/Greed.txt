@@ -1,0 +1,9 @@
+name=Greed
+url=http://magiccards.info/c13/en/79.html
+image=http://magiccards.info/scans/en/c13/79.jpg
+value=4.429
+rarity=R
+type=Enchantment
+cost={3}{B}
+ability=pay {B},Pay 2 life: PN draw a card.
+timing=enchantment
