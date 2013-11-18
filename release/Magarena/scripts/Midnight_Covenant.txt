@@ -1,0 +1,11 @@
+name=Midnight Covenant
+url=http://magiccards.info/chk/en/125.html
+image=http://magiccards.info/scans/en/chk/125.jpg
+value=2.656
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+enchant=pump,pos creature
+given_ability=pay {B}:SN gets +1/+1 until end of turn.
+timing=aura
