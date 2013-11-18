@@ -1,0 +1,11 @@
+name=Forbidden Lore
+url=http://magiccards.info/me2/en/163.html
+image=http://magiccards.info/scans/en/me2/163.jpg
+value=2.833
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+given_ability=pay {T}:Target creature gets +2/+1 until end of turn.
+enchant=pump,pos land
+timing=aura

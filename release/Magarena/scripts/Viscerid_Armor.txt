@@ -1,0 +1,12 @@
+name=Viscerid Armor
+url=http://magiccards.info/me2/en/72.html
+image=http://magiccards.info/scans/en/me2/72.jpg
+value=2.804
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_pt=+1/+1
+ability=pay {1}{U}:Return SN to its owner's hand.
+enchant=pump,pos creature
+timing=aura
