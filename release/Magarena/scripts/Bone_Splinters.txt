@@ -1,0 +1,10 @@
+name=Bone Splinters
+url=http://magiccards.info/avr/en/88.html
+image=http://magiccards.info/scans/en/avr/88.jpg
+value=2.968
+rarity=C
+type=Sorcery
+cost={B}
+effect=Destroy target creature.
+timing=main
+requires_groovy_code
