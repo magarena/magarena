@@ -1,0 +1,9 @@
+name=Narcissism
+url=http://magiccards.info/tr/en/134.html
+image=http://magiccards.info/scans/en/tr/134.jpg
+value=3.212
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=pay {G},Discard a card: Target creature gets +2/+2 until end of turn.;pay {G},{S}:Target creature gets +2/+2 until end of turn.
+timing=enchantment
