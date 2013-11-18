@@ -1,0 +1,9 @@
+name=Domineer
+url=http://magiccards.info/mi/en/33.html
+image=http://magiccards.info/scans/en/mi/33.jpg
+value=3.257
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}{U}
+timing=enchantment

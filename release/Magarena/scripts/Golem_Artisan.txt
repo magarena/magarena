@@ -1,0 +1,11 @@
+name=Golem Artisan
+url=http://magiccards.info/som/en/159.html
+image=http://magiccards.info/scans/en/som/159.jpg
+value=3.432
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=3/3
+ability=pay {2}:Target artifact creature gets +1/+1 until end of turn.;pay {2}:Target artifact creature gains flying until end of turn.;pay {2}:Target artifact creature gains trample until end of turn.;pay {2}:Target artifact creature gains haste until end of turn.
+timing=artifact

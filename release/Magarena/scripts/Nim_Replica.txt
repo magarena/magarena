@@ -1,0 +1,11 @@
+name=Nim Replica
+url=http://magiccards.info/mi/en/220.html
+image=http://magiccards.info/scans/en/mi/220.jpg
+value=1.641
+rarity=C
+type=Artifact,Creature
+subtype=Zombie
+cost={3}
+pt=3/1
+ability=pay {2}{B},{S}:Target creature gets -1/-1 until end of turn.
+timing=artifact

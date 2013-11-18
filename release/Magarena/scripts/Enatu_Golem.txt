@@ -1,0 +1,11 @@
+name=Enatu Golem
+url=http://magiccards.info/roe/en/217.html
+image=http://magiccards.info/scans/en/roe/217.jpg
+value=1.971
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=3/5
+ability=dies effect PN gain 4 life.
+timing=artifact
