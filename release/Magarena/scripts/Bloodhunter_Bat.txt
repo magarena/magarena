@@ -1,0 +1,11 @@
+name=Bloodhunter Bat
+url=http://magiccards.info/m13/en/82.html
+image=http://magiccards.info/scans/en/m13/82.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bat
+cost={3}{B}
+pt=2/2
+ability=flying;enters effect Target opponent loses 2 life and PN gains 2 life.
+timing=main
