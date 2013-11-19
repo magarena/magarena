@@ -1,0 +1,12 @@
+name=Maelstrom Archangel
+url=http://magiccards.info/cfx/en/115.html
+image=http://magiccards.info/scans/en/cfx/115.jpg
+value=4.099
+rarity=M
+type=Creature
+subtype=Angel
+cost={W}{U}{B}{R}{G}
+pt=5/5
+ability=flying
+timing=main
+requires_groovy_code
