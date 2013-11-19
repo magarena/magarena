@@ -1,0 +1,9 @@
+name=Treasure Trove
+url=http://magiccards.info/9e/en/110.html
+image=http://magiccards.info/scans/en/9e/110.jpg
+value=3.057
+rarity=U
+type=Enchantment
+cost={2}{U}{U}
+ability=pay {2}{U}{U}: PN draws a card.
+timing=enchantment

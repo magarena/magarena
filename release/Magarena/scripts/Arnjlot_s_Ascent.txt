@@ -1,0 +1,9 @@
+name=Arnjlot's Ascent
+url=http://magiccards.info/ia/en/57.html
+image=http://magiccards.info/scans/en/ia/57.jpg
+value=1.824
+rarity=C
+type=Enchantment
+cost={1}{U}{U}
+ability=cumulative upkeep {U};pay {1}:Target creature gains flying until end of turn.
+timing=enchantment

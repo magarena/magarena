@@ -1,0 +1,9 @@
+name=Elven Fortress
+url=http://magiccards.info/fe/en/67.html
+image=http://magiccards.info/scans/en/fe/67.jpg
+value=2.355
+rarity=C
+type=Enchantment
+cost={G}
+ability=pay {1}{G}: Target blocking creature gets +0/+1 until end of turn.
+timing=enchantment
