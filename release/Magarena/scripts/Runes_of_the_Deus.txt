@@ -1,0 +1,11 @@
+name=Runes of the Deus
+url=http://magiccards.info/shm/en/215.html
+image=http://magiccards.info/scans/en/shm/215.jpg
+value=3.800
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={4}{R/G}
+timing=enchantment
+enchant=pump,pos creature
+requires_groovy_code

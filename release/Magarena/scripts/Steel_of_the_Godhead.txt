@@ -1,0 +1,11 @@
+name=Steel of the Godhead
+url=http://magiccards.info/shm/en/150.html
+image=http://magiccards.info/scans/en/shm/150.jpg
+value=3.958
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W/U}
+timing=enchantment
+enchant=pump,pos creature
+requires_groovy_code

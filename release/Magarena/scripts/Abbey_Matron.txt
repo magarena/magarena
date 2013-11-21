@@ -1,0 +1,11 @@
+name=Abbey Matron
+url=http://magiccards.info/hl/en/102.html
+image=http://magiccards.info/scans/en/hl/102.jpg
+value=1.591
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=1/3
+ability=pay {W},{T}:SN gets +0/+3 until end of turn.
+timing=main
