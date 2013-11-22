@@ -70,19 +70,6 @@
     </jar>
   </target>
 
-  <target name="bundle-magarena">
-    <bundleapp outputdirectory="dist"
-               name="Magarena"
-               displayname="Magarena"
-               shortversion="1.42"
-               signature="Maga"
-               icon="arena.icns"
-               identifier="magic.MagicMain"
-               mainclassname="magic.MagicMain">
-      <option value="-Dapple.laf.useScreenMenuBar=true -Xms256M -Xmx256M"></option>
-    </bundleapp>
-  </target>
-
   <!-- javadoc -  Generate Javadoc -->
   <target name="javadoc">
     <javadoc sourcepath="src" destdir="javadoc" />
