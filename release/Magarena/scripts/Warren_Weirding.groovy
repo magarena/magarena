@@ -16,7 +16,7 @@ def action = {
             }
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicSpellCardEvent() {
@@ -43,7 +43,7 @@ def action = {
                     action,
                     "Choose a creature to sacrifice\$."
                 ));
-            } as MagicPlayerAction);
+            });
         }
     }
 ]

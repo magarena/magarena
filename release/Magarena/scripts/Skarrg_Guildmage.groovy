@@ -42,7 +42,7 @@ def SU = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
             event.processTargetPermanent(game, {
                 final MagicPermanent land ->
                 game.doAction(new MagicBecomesCreatureAction(land,PT,ST,SU));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

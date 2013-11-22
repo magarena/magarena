@@ -23,7 +23,7 @@
                             amount,
                             true
                         ));
-                    } as MagicEventAction,
+                    },
                     "Prevent ${amount} damage and put ${amount} +1/+1 counters on RN"
                 ):
                 MagicEvent.NONE;

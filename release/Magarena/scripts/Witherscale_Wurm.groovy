@@ -17,7 +17,7 @@
                     permanent,
                     MagicAbility.Wither
                 ));
-            } as MagicPermanentAction);
+            });
         }
     },
     new MagicWhenDamageIsDealtTrigger() {

@@ -21,7 +21,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
             event.processRefPermanent(game, {
                 final MagicPermanent permanent ->
                 game.doAction(new MagicAddStaticAction(permanent, AB));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

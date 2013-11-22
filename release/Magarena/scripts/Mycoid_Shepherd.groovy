@@ -3,7 +3,7 @@ def action = {
     if (event.isYes()) {
         game.doAction(new MagicChangeLifeAction(event.getPlayer(),5));
     }
-} as MagicEventAction
+}
 
 def event = {
     final MagicPermanent permanent ->

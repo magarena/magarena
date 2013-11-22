@@ -29,7 +29,7 @@
                                     G.doAction(new MagicTapAction(P, true))
                                 }
                             }
-                        } as MagicEventAction,
+                        },
                         "PN may\$ " + (perm.isTapped() ? "untap" : "tap") + " RN."
                     ));
                 }

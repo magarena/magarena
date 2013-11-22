@@ -20,7 +20,7 @@
                     permanent,
                     MagicAbility.Lifelink
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

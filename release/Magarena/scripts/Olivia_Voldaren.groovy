@@ -87,7 +87,7 @@
                         perm
                     )
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

@@ -7,7 +7,7 @@ def action = {
             game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),toughness));
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicSpellCardEvent() {
@@ -34,7 +34,7 @@ def action = {
                     action,
                     "Choose a creature to sacrifice\$."
                 ));
-            } as MagicPlayerAction);
+            });
         }
     }
 ]

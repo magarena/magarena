@@ -19,7 +19,7 @@
                     new MagicDamage(event.getSource(),target,1)
                 ));
                 game.addEvent(new MagicScryEvent(event));
-            } as MagicTargetAction);
+            });
         }
     }
 ]

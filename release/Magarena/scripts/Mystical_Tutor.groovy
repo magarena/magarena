@@ -24,7 +24,7 @@ def act = {
             }
         });
     }
-} as MagicEventAction
+}
 
 def evt = {
     final MagicEvent event, final MagicChoice choice ->

@@ -10,7 +10,7 @@ def action = {
     } else {
         game.doAction(new MagicDestroyAction(event.getRefPermanent()));
     }
-} as MagicEventAction
+}
 
 [
     new MagicPermanentActivation(
@@ -47,7 +47,7 @@ def action = {
                     action,
                     "PN may\$ have SN deal 2 damage to him or her."
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

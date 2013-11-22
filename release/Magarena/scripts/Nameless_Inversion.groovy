@@ -22,7 +22,7 @@ def TP = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                 MagicPermanent creature ->
                     game.doAction(new MagicBecomesCreatureAction(creature,TP));
                     game.doAction(new MagicChangeTurnPTAction(creature,3,-3));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

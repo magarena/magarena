@@ -9,7 +9,7 @@ def action = {
             ));
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicPermanentActivation(
@@ -48,7 +48,7 @@ def action = {
                     action,
                     "PN exiles a card from his or her hand."
                 ));
-            } as MagicPlayerAction);
+            });
         }
     },
     new MagicWhenLeavesPlayTrigger() {

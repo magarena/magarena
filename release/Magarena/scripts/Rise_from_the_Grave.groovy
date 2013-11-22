@@ -21,7 +21,7 @@
                     event.getPlayer(),
                     [MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
                 ));
-            } as MagicCardAction);
+            });
         }
     }
 ]

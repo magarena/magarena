@@ -16,7 +16,7 @@
                     {
                         final MagicGame G, final MagicEvent E ->
                         G.doAction(new MagicSacrificeAction(E.getPermanent()));
-                    } as MagicEventAction,
+                    },
                     "Sacrifice SN."
                 );
         }

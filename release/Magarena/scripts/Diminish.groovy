@@ -22,7 +22,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
             event.processTargetPermanent(game, {
                 MagicPermanent creature ->
                     game.doAction(new MagicBecomesCreatureAction(creature,PT));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

@@ -6,7 +6,7 @@ def action = {
             game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicPermanentActivation(
@@ -38,7 +38,7 @@ def action = {
                     action,
                     "PN exiles a card\$ from his or her graveyard."
                 ));
-            } as MagicPlayerAction);
+            });
         }
     },
     new MagicPermanentActivation(

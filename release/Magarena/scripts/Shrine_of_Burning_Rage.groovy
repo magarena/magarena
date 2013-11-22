@@ -6,7 +6,7 @@ def action = {
         1,
         true
     ));
-} as MagicEventAction
+}
 
 def getEvent = {
     final MagicPermanent permanent ->

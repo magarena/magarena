@@ -33,7 +33,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
                     MagicStatic.AllCreatureTypesUntilEOT,
                     AB
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

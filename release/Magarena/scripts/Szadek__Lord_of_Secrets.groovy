@@ -26,7 +26,7 @@
                             E.getRefPlayer(),
                             amount
                         ));
-                    } as MagicEventAction,
+                    },
                     "Put ${amount} +1/+1 counters on SN and RN puts that many cards from the top of his or her library into his or her graveyard."
                 ):
                 MagicEvent.NONE;

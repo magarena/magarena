@@ -6,7 +6,7 @@ def action = {
             game.doAction(new MagicDealDamageAction(damage));
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicSpellCardEvent() {
@@ -38,7 +38,7 @@ def action = {
                     action,
                     "SN deals RN damage to target creature\$."
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

@@ -3,7 +3,7 @@ def action = {
     if (event.isNo()) {
         game.doAction(new MagicSacrificeAction(event.getPermanent()));
     }
-} as MagicEventAction ;
+} ;
 
 [
     new MagicAtUpkeepTrigger() {

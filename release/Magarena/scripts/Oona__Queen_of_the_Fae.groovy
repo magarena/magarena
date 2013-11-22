@@ -45,7 +45,7 @@
                                     ));
                                 }
                             }
-                        } as MagicEventAction,
+                        },
                         "Chosen color\$."
                     ));
                 }

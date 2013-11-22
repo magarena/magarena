@@ -6,7 +6,7 @@ def action = {
             game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
         }
     });
-} as MagicEventAction
+}
 
 def event = {
     final MagicPermanent permanent ->

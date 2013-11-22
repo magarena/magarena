@@ -9,7 +9,7 @@ def action = {
             }
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicPermanentActivation(
@@ -46,7 +46,7 @@ def action = {
                         "PN exiles a card\$ from his or her graveyard."
                     ));
                 }
-            } as MagicPlayerAction);
+            });
         }
     }
 ]

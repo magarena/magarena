@@ -53,7 +53,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
                 game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Gold,1,true));
                 game.doAction(new MagicAddStaticAction(creature, AB));
                 game.doAction(new MagicAddStaticAction(creature, ST));
-            } as MagicPermanentAction);
+            });
         }
     },
     new MagicWhenLeavesPlayTrigger() {

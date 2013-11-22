@@ -33,7 +33,7 @@
                         event.getPlayer()
                     ));
                 }
-            } as MagicPlayerAction);
+            });
         }
     }
 ]

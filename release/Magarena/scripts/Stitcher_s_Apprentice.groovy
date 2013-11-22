@@ -5,7 +5,7 @@ def action = {
             game.doAction(new MagicSacrificeAction(permanent));
         }
     });
-} as MagicEventAction;
+};
 
 [
     new MagicPermanentActivation(

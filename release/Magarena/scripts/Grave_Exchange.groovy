@@ -9,7 +9,7 @@ def action = {
             ));
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicSpellCardEvent() {

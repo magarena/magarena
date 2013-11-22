@@ -52,7 +52,7 @@ def GainTrig = new MagicStatic(MagicLayer.Ability) {
                     game.doAction(action);
                     final MagicPermanent perm = action.getPermanent();
                     game.doAction(new MagicAddStaticAction(perm, GainTrig));
-                } as MagicPermanentAction);
+                });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack()

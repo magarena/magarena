@@ -37,7 +37,7 @@ def cantBePrevented = new MagicIfDamageWouldBeDealtTrigger() {
 
                 final MagicDamage damage=new MagicDamage(event.getSource(),player,3);
                 game.doAction(new MagicDealDamageAction(damage));
-            } as MagicPlayerAction);
+            });
         }
     }
 ]

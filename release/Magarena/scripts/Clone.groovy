@@ -20,7 +20,7 @@
                         event.getCardOnStack(),
                         chosen
                     ));
-                } as MagicPermanentAction);
+                });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack()

@@ -69,7 +69,7 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
                         action.getPermanent(),
                         GainAct
                     ));
-                } as MagicPermanentAction);
+                });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack()

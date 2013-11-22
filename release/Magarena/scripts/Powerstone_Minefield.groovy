@@ -2,7 +2,7 @@ def Action = {
     final MagicGame game, final MagicEvent event ->
     final MagicDamage damage = new MagicDamage(event.getSource(),event.getRefPermanent(),2);
     game.doAction(new MagicDealDamageAction(damage));
-} as MagicEventAction
+}
 
 def Event = {
     final MagicPermanent permanent, final MagicPermanent creature ->

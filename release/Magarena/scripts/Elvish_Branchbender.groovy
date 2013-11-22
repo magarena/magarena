@@ -43,7 +43,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                     }
                 };
                 game.doAction(new MagicBecomesCreatureAction(land,PT,ST));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

@@ -19,7 +19,7 @@
                     permanent,
                     MagicAbility.DoubleStrike
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

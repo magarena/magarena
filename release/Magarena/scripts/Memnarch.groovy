@@ -62,7 +62,7 @@
                     event.getPlayer(),
                     perm
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

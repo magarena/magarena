@@ -6,7 +6,7 @@ def action = {
             game.doAction(MagicChangeStateAction.Set(perm,MagicPermanentState.DoesNotUntapDuringNext));
         }
     });
-} as MagicEventAction
+}
 
 def event = {
     final MagicPermanent permanent ->
