@@ -1,0 +1,8 @@
+name=Gargoyle Castle
+url=http://magiccards.info/m10/en/225.html
+image=http://magiccards.info/scans/en/m10/225.jpg
+value=3.739
+rarity=R
+type=Land
+ability=tap add mana {1}; pay {5},{T},{S}:PN puts a 3/4 colorless Gargoyle creature token with flying onto the battlefield.
+timing=land
