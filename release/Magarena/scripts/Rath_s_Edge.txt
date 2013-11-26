@@ -1,0 +1,8 @@
+name=Rath's Edge
+url=http://magiccards.info/ne/en/142.html
+image=http://magiccards.info/scans/en/ne/142.jpg
+value=2.511
+rarity=R
+type=Legendary,Land
+ability=tap add mana {1};pay {4},{T},Sacrifice a land:SN deals 1 damage to target creature or player.
+timing=land
