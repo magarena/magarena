@@ -1,0 +1,12 @@
+name=Dragon Mantle
+url=http://magiccards.info/ths/en/119.html
+image=http://magiccards.info/scans/en/ths/119.jpg
+value=3.905
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+ability=enters effect PN draws a card.
+given_ability=pay {R}:SN gets +1/+0 until end of turn.
+enchant=pump,pos creature
+timing=aura
