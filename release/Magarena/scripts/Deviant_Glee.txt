@@ -1,0 +1,12 @@
+name=Deviant Glee
+url=http://magiccards.info/rtr/en/65.html
+image=http://magiccards.info/scans/en/rtr/65.jpg
+value=3.370
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+enchant=pump,pos creature
+given_pt=+2/+1
+given_ability=pay {R}:SN gains trample until end of turn.
+timing=enchantment
