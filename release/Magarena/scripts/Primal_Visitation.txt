@@ -1,0 +1,12 @@
+name=Primal Visitation
+url=http://magiccards.info/gtc/en/187.html
+image=http://magiccards.info/scans/en/gtc/187.jpg
+value=0.920
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{R}{G}
+given_pt=+3/+3
+given_ability=haste
+enchant=pump,pos creature
+timing=enchantment
