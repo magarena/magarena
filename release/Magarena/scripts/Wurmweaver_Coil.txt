@@ -1,0 +1,12 @@
+name=Wurmweaver Coil
+url=http://magiccards.info/gpt/en/99.html
+image=http://magiccards.info/scans/en/gpt/99.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={4}{G}{G}
+enchant=pump,pos creature
+given_pt=+6/+6
+ability=pay {G}{G}{G},{S}:PN puts a 6/6 green Wurm creature token onto the battlefield.
+timing=enchantment
