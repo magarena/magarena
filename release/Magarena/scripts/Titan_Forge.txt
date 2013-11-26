@@ -1,0 +1,9 @@
+name=Titan Forge
+url=http://magiccards.info/mbs/en/141.html
+image=http://magiccards.info/scans/en/mbs/141.jpg
+value=3.484
+rarity=R
+type=Artifact
+cost={3}
+ability=pay {3},{T}:Put a charge counter on SN.;pay {T},{C3}:PN puts a 9/9 colorless Golem artifact creature token onto the battlefield.
+timing=artifact
