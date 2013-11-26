@@ -1,0 +1,11 @@
+name=Barbed Field
+url=http://magiccards.info/pr/en/83.html
+image=http://magiccards.info/scans/en/pr/83.jpg
+value=3.060
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{R}{R}
+enchant=pump,pos land
+given_ability=pay {T}:SN deals 1 damage to target creature or player.
+timing=aura
