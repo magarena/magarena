@@ -1,0 +1,12 @@
+name=Vulshok Gauntlets
+url=http://magiccards.info/mi/en/273.html
+image=http://magiccards.info/scans/en/mi/273.jpg
+value=3.257
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={3}
+given_pt=+4/+2
+given_ability=doesn't untap during untap step
+timing=artifact
