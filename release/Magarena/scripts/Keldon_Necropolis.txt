@@ -1,0 +1,8 @@
+name=Keldon Necropolis
+url=http://magiccards.info/in/en/325.html
+image=http://magiccards.info/scans/en/in/325.jpg
+value=3.119
+rarity=R
+type=Legendary,Land
+ability=tap add mana {1};pay {4}{R},{T},Sacrifice a creature:SN deals 2 damage to target creature or player.
+timing=land
