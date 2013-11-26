@@ -1,0 +1,9 @@
+name=Mirari
+url=http://magiccards.info/fvr/en/9.html
+image=http://magiccards.info/scans/en/fvr/9.jpg
+value=4.444
+rarity=M
+type=Legendary,Artifact
+cost={5}
+timing=artifact
+requires_groovy_code
