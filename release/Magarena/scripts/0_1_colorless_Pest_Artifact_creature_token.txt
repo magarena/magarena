@@ -1,0 +1,7 @@
+name=0/1 colorless Pest artifact creature token
+cost={0}
+pt=0/1
+token=Pest
+value=1
+type=Artifact,Creature
+subtype=Pest
