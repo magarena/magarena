@@ -1,0 +1,12 @@
+name=Talons of Falkenrath
+url=http://magiccards.info/dka/en/105.html
+image=http://magiccards.info/scans/en/dka/105.jpg
+value=1.690
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=flash
+given_ability=pay {1}{R}:SN gets +2/+0 until end of turn.
+enchant=pump,pos creature
+timing=aura
