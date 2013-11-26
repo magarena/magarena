@@ -1,0 +1,9 @@
+name=Voltaic Key
+url=http://magiccards.info/m11/en/219.html
+image=http://magiccards.info/scans/en/m11/219.jpg
+value=4.664
+rarity=U
+type=Artifact
+cost={1}
+ability=pay {1},{T}:Untap target artifact.
+timing=artifact
