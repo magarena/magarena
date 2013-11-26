@@ -1,0 +1,8 @@
+name=Archaeological Dig
+url=http://magiccards.info/in/en/320.html
+image=http://magiccards.info/scans/en/in/320.jpg
+value=3.486
+rarity=U
+type=Land
+ability=tap add mana {1};tap sac add mana any
+timing=land
