@@ -1,0 +1,9 @@
+name=Hatching Plans
+url=http://magiccards.info/gp/en/27.html
+image=http://magiccards.info/scans/en/gp/27.jpg
+value=3.682
+rarity=R
+type=Enchantment
+cost={1}{U}
+ability=dies effect PN draws three cards.
+timing=enchantment
