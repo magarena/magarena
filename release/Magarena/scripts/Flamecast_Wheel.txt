@@ -1,0 +1,9 @@
+name=Flamecast Wheel
+url=http://magiccards.info/ths/en/215.html
+image=http://magiccards.info/scans/en/ths/215.jpg
+value=0.946
+rarity=U
+type=Artifact
+cost={1}
+ability=pay {5},{T},{S}:SN deals 3 damage to target creature.
+timing=artifact
