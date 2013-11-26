@@ -1,0 +1,9 @@
+name=Teetering Peaks
+url=http://magiccards.info/pd2/en/30.html
+image=http://magiccards.info/scans/en/pd2/30.jpg
+value=3.600
+rarity=C
+type=Land
+mana=r3
+ability=enters tapped; enters effect Target creature gets +2/+0 until end of turn.;tap add mana {R}
+timing=land
