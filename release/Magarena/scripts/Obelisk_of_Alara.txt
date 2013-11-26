@@ -1,0 +1,9 @@
+name=Obelisk of Alara
+url=http://magiccards.info/cfx/en/140.html
+image=http://magiccards.info/scans/en/cfx/140.jpg
+value=3.463
+rarity=R
+type=Artifact
+cost={6}
+ability=pay {1}{W},{T}:PN gains 5 life.;pay {1}{U},{T}:PN draws a card, then discards a card.;pay {1}{B},{T}:Target creature gets -2/-2 until end of turn.;pay {1}{R},{T}:SN deals 3 damage to target player.;pay {1}{G},{T}:Target creature gets +4/+4 until end of turn.
+timing=artifact
