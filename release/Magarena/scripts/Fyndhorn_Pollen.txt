@@ -1,0 +1,9 @@
+name=Fyndhorn Pollen
+url=http://magiccards.info/me2/en/166.html
+image=http://magiccards.info/scans/en/me2/166.jpg
+value=1.792
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=lord creatures get -1/-0;pay {1}{G}:All creatures get -1/-0 until end of turn.
+timing=enchantment
