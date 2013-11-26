@@ -1,0 +1,12 @@
+name=Whip Silk
+url=http://magiccards.info/in/en/225.html
+image=http://magiccards.info/scans/en/in/225.jpg
+value=3.333
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+enchant=flying,pos creature
+given_ability=reach
+ability=pay {G}:Return SN to its owner's hand.
+timing=enchantment
