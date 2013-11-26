@@ -1,0 +1,11 @@
+name=Rustspore Ram
+url=http://magiccards.info/mi/en/235.html
+image=http://magiccards.info/scans/en/mi/235.jpg
+value=2.130
+rarity=U
+type=Artifact,Creature
+subtype=Sheep
+cost={4}
+pt=1/3
+ability=enters effect Destroy target Equipment.
+timing=artifact
