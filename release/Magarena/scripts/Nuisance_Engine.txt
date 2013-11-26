@@ -1,0 +1,9 @@
+name=Nuisance Engine
+url=http://magiccards.info/pch/en/121.html
+image=http://magiccards.info/scans/en/pch/121.jpg
+value=3.777
+rarity=U
+type=Artifact
+cost={3}
+ability=pay {2},{T}:PN puts a 0/1 colorless Pest artifact creature token onto the battlefield.
+timing=artifact
