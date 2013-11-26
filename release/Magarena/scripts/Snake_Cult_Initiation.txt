@@ -1,0 +1,11 @@
+name=Snake Cult Initiation
+url=http://magiccards.info/fut/en/89.html
+image=http://magiccards.info/scans/en/fut/89.jpg
+value=3.707
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{B}
+given_ability=poisonous 3
+enchant=pump,pos creature
+timing=enchantment
