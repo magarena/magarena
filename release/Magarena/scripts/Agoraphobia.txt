@@ -1,0 +1,12 @@
+name=Agoraphobia
+url=http://magiccards.info/gtc/en/30.html
+image=http://magiccards.info/scans/en/gtc/30.jpg
+value=2.864
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+enchant=pump,neg creature
+given_pt=-5/-0
+ability=pay {2}{U}:Return SN to its owner's hand.
+timing=aura
