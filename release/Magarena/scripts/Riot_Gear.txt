@@ -1,0 +1,11 @@
+name=Riot Gear
+url=http://magiccards.info/gtc/en/236.html
+image=http://magiccards.info/scans/en/gtc/236.jpg
+value=1.673
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={2}
+given_pt=+1/+2
+timing=artifact
