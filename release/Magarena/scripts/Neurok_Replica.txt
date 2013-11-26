@@ -1,0 +1,11 @@
+name=Neurok Replica
+url=http://magiccards.info/som/en/186.html
+image=http://magiccards.info/scans/en/som/186.jpg
+value=2.725
+rarity=C
+type=Artifact,Creature
+subtype=Wizard
+cost={3}
+pt=1/4
+ability=pay {1}{U},{S}:Return target creature to its owner's hand.
+timing=artifact
