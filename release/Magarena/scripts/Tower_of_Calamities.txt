@@ -1,0 +1,9 @@
+name=Tower of Calamities
+url=http://magiccards.info/som/en/212.html
+image=http://magiccards.info/scans/en/som/212.jpg
+value=2.750
+rarity=R
+type=Artifact
+cost={4}
+ability=pay {8},{T}:SN deals 12 damage to target creature.
+timing=artifact
