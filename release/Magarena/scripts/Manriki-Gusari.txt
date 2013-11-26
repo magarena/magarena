@@ -1,0 +1,12 @@
+name=Manriki-Gusari
+url=http://magiccards.info/sok/en/156.html
+image=http://magiccards.info/scans/en/sok/156.jpg
+value=3.862
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={1}
+given_pt=+1/+2
+given_ability=pay {T}:Destroy target equipment.
+timing=artifact
