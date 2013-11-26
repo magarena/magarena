@@ -1,0 +1,9 @@
+name=Braidwood Cup
+url=http://magiccards.info/ud/en/126.html
+image=http://magiccards.info/scans/en/ud/126.jpg
+value=2.903
+rarity=U
+type=Artifact
+cost={3}
+ability=pay {T}:PN gains 1 life.
+timing=artifact
