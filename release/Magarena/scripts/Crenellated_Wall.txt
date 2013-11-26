@@ -1,0 +1,11 @@
+name=Crenellated Wall
+url=http://magiccards.info/mm/en/290.html
+image=http://magiccards.info/scans/en/mm/290.jpg
+value=3.588
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={4}
+pt=0/4
+ability=defender;pay {T}:Target creature gets +0/+4 until end of turn.
+timing=artifact
