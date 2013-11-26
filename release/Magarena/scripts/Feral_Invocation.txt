@@ -1,0 +1,12 @@
+name=Feral Invocation
+url=http://magiccards.info/ths/en/158.html
+image=http://magiccards.info/scans/en/ths/158.jpg
+value=3.568
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=flash
+enchant=pump,pos creature
+given_pt=+2/+2
+timing=flash
