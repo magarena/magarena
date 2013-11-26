@@ -1,0 +1,9 @@
+name=Leonin Sun Standard
+url=http://magiccards.info/mi/en/194.html
+image=http://magiccards.info/scans/en/mi/194.jpg
+value=4.135
+rarity=R
+type=Artifact
+cost={2}
+ability=pay {1}{W}:Creatures PN controls get +1/+1 until end of turn.
+timing=artifact
