@@ -1,0 +1,12 @@
+name=Shimmering Wings
+url=http://magiccards.info/10e/en/107.html
+image=http://magiccards.info/scans/en/10e/107.jpg
+value=3.842
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+given_ability=flying.
+ability=pay {U}:Return SN to its owner's hand.
+enchant=flying,pos creature
+timing=aura
