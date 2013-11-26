@@ -1,0 +1,9 @@
+name=Ring of Gix
+url=http://magiccards.info/ul/en/131.html
+image=http://magiccards.info/scans/en/ul/131.jpg
+value=3.779
+rarity=R
+type=Artifact
+cost={3}
+ability=echo;pay {1},{T}:Tap target artifact.;pay {1},{T}:Tap target creature.;pay {1},{T}:Tap target land.
+timing=artifact
