@@ -1,0 +1,12 @@
+name=Illuminated Wings
+url=http://magiccards.info/ud/en/34.html
+image=http://magiccards.info/scans/en/ud/34.jpg
+value=2.433
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+enchant=pump,pos creature
+given_ability=flying
+ability=pay {2},{S}:PN draws a card.
+timing=aura
