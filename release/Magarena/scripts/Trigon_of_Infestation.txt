@@ -1,0 +1,9 @@
+name=Trigon of Infestation
+url=http://magiccards.info/som/en/214.html
+image=http://magiccards.info/scans/en/som/214.jpg
+value=3.019
+rarity=U
+type=Artifact
+cost={4}
+ability=enters with counter charge 3;pay {G}{G},{T}:Put a charge counter on SN.;pay {2},{T},{C}:PN puts a 1/1 green Insect creature token with infect onto the battlefield.
+timing=artifact
