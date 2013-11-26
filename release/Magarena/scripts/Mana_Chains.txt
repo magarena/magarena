@@ -1,0 +1,11 @@
+name=Mana Chains
+url=http://magiccards.info/wl/en/41.html
+image=http://magiccards.info/scans/en/wl/41.jpg
+value=3.980
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+enchant=sacrifice,neg creature
+given_ability=cumulative upkeep {1}
+timing=aura
