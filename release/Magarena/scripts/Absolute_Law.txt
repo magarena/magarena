@@ -1,0 +1,9 @@
+name=Absolute Law
+url=http://magiccards.info/us/en/2.html
+image=http://magiccards.info/scans/en/us/2.jpg
+value=3.716
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability=lord All creatures have protection from red.
+timing=enchantment
