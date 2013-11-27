@@ -4,5 +4,6 @@ image=http://magiccards.info/scans/en/ddi/37.jpg
 value=2.472
 rarity=C
 type=Land
-ability=enters tapped;enters effect Target creature gains flying until end of turn.
+mana=u3
+ability=enters tapped;enters effect Target creature gains flying until end of turn.;tap add mana {U}
 timing=fmain
