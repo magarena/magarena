@@ -1,0 +1,11 @@
+name=Power of Fire
+url=http://magiccards.info/shm/en/101.html
+image=http://magiccards.info/scans/en/shm/101.jpg
+value=3.225
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+given_ability=pay {T}:SN deals 1 damage to target creature or player.
+enchant=pump,pos creature
+timing=aura

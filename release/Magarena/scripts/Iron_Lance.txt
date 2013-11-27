@@ -1,0 +1,9 @@
+name=Iron Lance
+url=http://magiccards.info/mm/en/300.html
+image=http://magiccards.info/scans/en/mm/300.jpg
+value=4.000
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {3}, {T}: Target creature gains first strike until end of turn.
+timing=artifact
