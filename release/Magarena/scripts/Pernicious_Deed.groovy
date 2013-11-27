@@ -1,12 +1,12 @@
 def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl () {
-	public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-		return target.isArtifact() ||
-			   target.isEnchantment() ||
-			   target.isCreature();
-	}
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.isArtifact() ||
+               target.isEnchantment() ||
+               target.isCreature();
+    }
 };
 [
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Destroy"
     ) {
@@ -14,17 +14,17 @@ def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl ()
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [ 
-				new MagicPayManaCostTapEvent(source,"{X}"),
+                new MagicPayManaCostTapEvent(source,"{X}"),
                 new MagicSacrificeEvent(source)
-			];
+            ];
         }
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final int amount=payedCost.getX();
-			return new MagicEvent(
+            return new MagicEvent(
                 source,
-				amount,
+                amount,
                 this,
                 "Destroy each artifact, creature and enchantment with converted mana cost RN or less."
             );

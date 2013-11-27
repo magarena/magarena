@@ -32,7 +32,7 @@
                         card,
                         event.getPlayer()
                     ));
-					break;
+                    break;
                 }
             }
         }
