@@ -14,7 +14,8 @@ def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl ()
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [ 
-                new MagicPayManaCostTapEvent(source,"{X}"),
+                new MagicPayManaCostEvent(source,"{X}"),
+                new MagicTapEvent(source),
                 new MagicSacrificeEvent(source)
             ];
         }
