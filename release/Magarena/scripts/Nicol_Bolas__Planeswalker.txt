@@ -1,4 +1,4 @@
- name=Nicol Bolas, Planeswalker
+name=Nicol Bolas, Planeswalker
 url=http://magiccards.info/m13/en/199.html
 image=http://magiccards.info/scans/en/m13/199.jpg
 value=4.159
