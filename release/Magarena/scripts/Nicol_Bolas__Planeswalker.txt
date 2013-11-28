@@ -1,0 +1,11 @@
+ name=Nicol Bolas, Planeswalker
+url=http://magiccards.info/m13/en/199.html
+image=http://magiccards.info/scans/en/m13/199.jpg
+value=4.159
+rarity=M
+type=Planeswalker
+subtype=Bolas
+cost={4}{U}{B}{B}{R}
+timing=main
+ability=enters with charge 5
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Light of Day
+url=http://magiccards.info/6e/en/29.html
+image=http://magiccards.info/scans/en/6e/29.jpg
+value=4.418
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=lord black creatures have can't attack or block.
+timing=enchantment

@@ -1,0 +1,9 @@
+name=2/2 green and blue Drake creature token with flying
+cost={0}
+value=2
+pt=2/2
+color=GB
+type=Creature
+ability=flying
+subtype=Drake
+token=Drake
