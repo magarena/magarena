@@ -1,0 +1,11 @@
+name=Messenger's Speed
+url=http://magiccards.info/ths/en/129.html
+image=http://magiccards.info/scans/en/ths/129.jpg
+value=3.725
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+given_ability=trample;haste
+enchant=pump,pos creature
+timing=aura
