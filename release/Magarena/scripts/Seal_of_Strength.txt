@@ -1,0 +1,9 @@
+name=Seal of Strength
+url=http://magiccards.info/ne/en/115.html
+image=http://magiccards.info/scans/en/ne/115.jpg
+value=4.140
+rarity=C
+type=Enchantment
+cost={G}
+ability=pay {S}:Target creature gets +3/+3 until end of turn.
+timing=enchantment

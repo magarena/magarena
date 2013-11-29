@@ -1,0 +1,9 @@
+name=Shivan Harvest
+url=http://magiccards.info/in/en/167.html
+image=http://magiccards.info/scans/en/in/167.jpg
+value=3.426
+rarity=U
+type=Enchantment
+cost={1}{R}
+ability=pay {1}{R},Sacrifice a creature:Destroy target nonbasic land.
+timing=enchantment
