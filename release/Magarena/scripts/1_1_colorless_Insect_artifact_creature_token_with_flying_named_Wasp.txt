@@ -1,4 +1,4 @@
-name=1/1 colorless Insect artifact creature token with flying
+name=1/1 colorless Insect artifact creature token with flying named Wasp
 token=Wasp
 image=http://magiccards.info/extras/token/tenth-edition/wasp.jpg
 value=1
