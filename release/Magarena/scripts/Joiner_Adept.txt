@@ -1,0 +1,13 @@
+name=Joiner Adept
+url=http://magiccards.info/10e/en/271.html
+image=http://magiccards.info/scans/en/10e/271.jpg
+value=4.438
+rarity=R
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=2/1
+ability=lord lands you control have tap add mana any
+static=player
+timing=main
+
