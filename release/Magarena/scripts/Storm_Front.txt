@@ -1,0 +1,9 @@
+name=Storm Front
+url=http://magiccards.info/tp/en/153.html
+image=http://magiccards.info/scans/en/tp/153.jpg
+value=3.103
+rarity=U
+type=Enchantment
+cost={G}
+ability=pay {G}{G}:Tap target creature with flying.
+timing=enchantment

@@ -1,0 +1,9 @@
+name=Choke
+url=http://magiccards.info/8e/en/237.html
+image=http://magiccards.info/scans/en/8e/237.jpg
+value=3.833
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=lord Islands have don't untap during untap step.
+timing=enchantment
