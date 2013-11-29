@@ -124,6 +124,7 @@ public class MMAB implements MagicAI {
             " cheat=" + CHEAT +
             " index=" + scorePlayer.getIndex() +
             " life=" + scorePlayer.getLife() +
+            " turn=" + sourceGame.getTurn() +
             " phase=" + sourceGame.getPhase().getType() +
             " slice=" + (slice/1000000) +
             " time=" + timeTaken
