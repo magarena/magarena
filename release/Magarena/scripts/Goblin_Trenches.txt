@@ -1,0 +1,9 @@
+name=Goblin Trenches
+url=http://magiccards.info/ap/en/104.html
+image=http://magiccards.info/scans/en/ap/104.jpg
+value=4.250
+rarity=R
+type=Enchantment
+cost={1}{R}{W}
+ability=pay {2},Sacrifice a land:PN puts two 1/1 red and white Goblin Soldier creature tokens onto the battlefield.
+timing=enchantment
