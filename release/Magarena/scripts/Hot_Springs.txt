@@ -1,5 +1,5 @@
 name=Hot Springs
-url=http://magiccards.info/ia/en/.html
+url=http://magiccards.info/ia/en/136.html
 image=http://magiccards.info/scans/en/ia/.jpg
 value=1.564
 rarity=R
