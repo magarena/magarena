@@ -1,0 +1,12 @@
+name=Heart Warden
+url=http://magiccards.info/ud/en/108.html
+image=http://magiccards.info/scans/en/ud/108.jpg
+value=4.107
+rarity=C
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=1/1
+ability=tap add mana {G};pay {2},{S}: PN draws a card.
+timing=main
+
