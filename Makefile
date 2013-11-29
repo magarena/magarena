@@ -463,7 +463,6 @@ checks: \
 	check_tokens \
 	check_unique_key \
 	check_groovy_escape \
-	check_tokens \
 	check_url \
 	check_image \
 	check_meta \
