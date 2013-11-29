@@ -1,0 +1,12 @@
+name=Kaysa
+url=http://magiccards.info/ai/en/80.html
+image=http://magiccards.info/scans/en/ai/80.jpg
+value=3.851
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Druid
+cost={3}{G}{G}
+pt=2/3
+ability=lord green creatures you control get +1/+1
+static=player
+timing=main
