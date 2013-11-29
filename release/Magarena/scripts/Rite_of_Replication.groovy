@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE,
-                MagicCopyTargetPicker.create(),
+                MagicCopyPermanentPicker.create(),
                 this,
                 "Put a token onto the battlefield that's a copy of target creature\$. " +
                 "If SN was kicked, put five of those tokens onto the battlefield instead."

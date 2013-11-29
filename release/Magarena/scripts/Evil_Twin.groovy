@@ -48,7 +48,7 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
             return new MagicEvent(
                 cardOnStack,
                 new MagicMayChoice(MagicTargetChoice.CREATURE),
-                MagicCopyTargetPicker.create(),
+                MagicCopyPermanentPicker.create(),
                 this,
                 "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, " + 
                 "except it gains \"{U}{B}, {T}: Destroy target creature with the same name as this creature.\""

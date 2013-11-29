@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_ARTIFACT_OR_CREATURE,
-                MagicCopyTargetPicker.create(),
+                MagicCopyPermanentPicker.create(),
                 this,
                 "Put a token onto the battlefield that's a copy of target artifact or creature\$. " +
                 "Cipher."

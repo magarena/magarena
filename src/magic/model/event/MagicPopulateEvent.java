@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicCopyTargetPicker;
+import magic.model.target.MagicCopyPermanentPicker;
 
 public class MagicPopulateEvent extends MagicEvent {
 
@@ -14,7 +14,7 @@ public class MagicPopulateEvent extends MagicEvent {
         super(
             source,
             MagicTargetChoice.CREATURE_TOKEN_YOU_CONTROL,
-            MagicCopyTargetPicker.create(),
+            MagicCopyPermanentPicker.create(),
             EA,
             "Put a token onto the battlefield that's a copy of a creature token$ you control."
         );

@@ -33,7 +33,7 @@ def GainTrig = new MagicStatic(MagicLayer.Ability) {
             return new MagicEvent(
                 cardOnStack,
                 new MagicMayChoice(MagicTargetChoice.CREATURE),
-                MagicCopyTargetPicker.create(),
+                MagicCopyPermanentPicker.create(),
                 this,
                 "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, " + 
                 "except it gains \"At the beginning of your upkeep, if this creature isn't a token, put a token onto the battlefield that's a copy of this creature.\""
