@@ -1,0 +1,12 @@
+name=Chosen by Heliod
+url=http://magiccards.info/ths/en/5.html
+image=http://magiccards.info/scans/en/ths/5.jpg
+value=3.019
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=enters effect PN draws a card.
+given_pt=+0/+2
+enchant=pump,pos creature
+timing=aura
