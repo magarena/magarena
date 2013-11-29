@@ -1,0 +1,9 @@
+name=Stormcaller's Boon
+url=http://magiccards.info/arb/en/13.html
+image=http://magiccards.info/scans/en/arb/13.jpg
+value=2.619
+rarity=C
+type=Enchantment
+cost={2}{W}{U}
+ability=cascade;pay {S}:Creatures you control gain flying until end of turn.
+timing=enchantment
