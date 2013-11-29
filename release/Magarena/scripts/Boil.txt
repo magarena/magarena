@@ -1,6 +1,6 @@
 name=Boil
 url=http://magiccards.info/8e/en/180.html
-image=http://magiccards.info/scans/en/8e/180.jpg
+image=http://mtgimage.com/card/boil.jpg
 value=4.089
 rarity=U
 type=Instant

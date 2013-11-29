@@ -1,6 +1,6 @@
 name=Sensor Splicer
 url=http://magiccards.info/nph/en/22.html
-image=http://magiccards.info/scans/en/nph/22.jpg
+image=http://mtgimage.com/card/sensor%20splicer.jpg
 value=2.590
 rarity=C
 type=Creature

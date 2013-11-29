@@ -1,6 +1,6 @@
 name=Reaper from the Abyss
 url=http://magiccards.info/isd/en/112.html
-image=http://magiccards.info/scans/en/isd/112.jpg
+image=http://mtgimage.com/card/reaper%20from%20the%20abyss.jpg
 value=3.915
 rarity=M
 type=Creature

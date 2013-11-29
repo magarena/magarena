@@ -1,6 +1,6 @@
 name=Thundersong Trumpeter
 url=http://magiccards.info/rav/en/235.html
-image=http://magiccards.info/scans/en/rav/235.jpg
+image=http://mtgimage.com/card/thundersong%20trumpeter.jpg
 value=3.765
 rarity=C
 type=Creature

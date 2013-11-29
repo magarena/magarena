@@ -1,6 +1,6 @@
 name=Darklit Gargoyle
 url=http://magiccards.info/cfx/en/7.html
-image=http://magiccards.info/scans/en/cfx/7.jpg
+image=http://mtgimage.com/card/darklit%20gargoyle.jpg
 value=3.033
 rarity=C
 type=Artifact,Creature

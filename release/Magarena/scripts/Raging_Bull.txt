@@ -1,6 +1,6 @@
 name=Raging Bull
 url=http://magiccards.info/lg/en/160.html
-image=http://magiccards.info/scans/en/lg/160.jpg
+image=http://mtgimage.com/card/raging%20bull.jpg
 value=1.558
 rarity=C
 type=Creature

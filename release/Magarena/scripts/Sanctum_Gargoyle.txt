@@ -1,6 +1,6 @@
 name=Sanctum Gargoyle
 url=http://magiccards.info/arc/en/5.html
-image=http://magiccards.info/scans/en/arc/5.jpg
+image=http://mtgimage.com/card/sanctum%20gargoyle.jpg
 value=3.885
 rarity=C
 type=Artifact,Creature

@@ -1,6 +1,6 @@
 name=Tricks of the Trade
 url=http://magiccards.info/m13/en/74.html
-image=http://magiccards.info/scans/en/m13/74.jpg
+image=http://mtgimage.com/card/tricks%20of%20the%20trade.jpg
 value=3.014
 rarity=C
 type=Enchantment

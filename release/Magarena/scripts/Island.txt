@@ -1,6 +1,6 @@
 name=Island
 url=http://magiccards.info/isd/en/253.html
-image=http://magiccards.info/scans/en/zen/234.jpg
+image=http://mtgimage.com/set/ZEN/island1.jpg
 num_images=2
 value=4.000
 rarity=L

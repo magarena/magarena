@@ -1,6 +1,6 @@
 name=Bramblewood Paragon
 url=http://magiccards.info/mt/en/115.html
-image=http://magiccards.info/scans/en/mt/115.jpg
+image=http://mtgimage.com/card/bramblewood%20paragon.jpg
 value=4.250
 rarity=U
 type=Creature

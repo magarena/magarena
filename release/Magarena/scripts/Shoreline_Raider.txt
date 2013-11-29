@@ -1,6 +1,6 @@
 name=Shoreline Raider
 url=http://magiccards.info/in/en/73.html
-image=http://magiccards.info/scans/en/in/73.jpg
+image=http://mtgimage.com/card/shoreline%20raider.jpg
 value=2.662
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Soltari Foot Soldier
 url=http://magiccards.info/br/en/74.html
-image=http://magiccards.info/scans/en/br/74.jpg
+image=http://mtgimage.com/card/soltari%20foot%20soldier.jpg
 value=4.047
 rarity=C
 type=Creature

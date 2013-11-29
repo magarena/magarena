@@ -1,6 +1,6 @@
 name=Oraxid
 url=http://magiccards.info/ne/en/35.html
-image=http://magiccards.info/scans/en/ne/35.jpg
+image=http://mtgimage.com/card/oraxid.jpg
 value=2.970
 rarity=C
 type=Creature

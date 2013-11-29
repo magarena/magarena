@@ -1,6 +1,6 @@
 name=Shrieking Mogg
 url=http://magiccards.info/ne/en/99.html
-image=http://magiccards.info/scans/en/ne/99.jpg
+image=http://mtgimage.com/card/shrieking%20mogg.jpg
 value=3.515
 rarity=R
 type=Creature

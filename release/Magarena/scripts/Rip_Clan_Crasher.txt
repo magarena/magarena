@@ -1,6 +1,6 @@
 name=Rip-Clan Crasher
 url=http://magiccards.info/ala/en/189.html
-image=http://magiccards.info/scans/en/ala/189.jpg
+image=http://mtgimage.com/card/rip%2Dclan%20crasher.jpg
 value=2.973
 ability=haste
 rarity=C

@@ -1,6 +1,6 @@
 name=Devout Monk
 url=http://magiccards.info/st/en/14.html
-image=http://magiccards.info/scans/en/st/14.jpg
+image=http://mtgimage.com/card/devout%20monk.jpg
 value=2.015
 rarity=C
 type=Creature

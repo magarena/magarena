@@ -1,6 +1,6 @@
 name=Battle Mastery
 url=http://magiccards.info/lw/en/5.html
-image=http://magiccards.info/scans/en/lw/5.jpg
+image=http://mtgimage.com/card/battle%20mastery.jpg
 value=3.455
 rarity=U
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Overgrown Estate
 url=http://magiccards.info/ap/en/113.html
-image=http://magiccards.info/scans/en/ap/113.jpg
+image=http://mtgimage.com/card/overgrown%20estate.jpg
 value=3.317
 rarity=R
 type=Enchantment

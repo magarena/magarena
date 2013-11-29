@@ -1,6 +1,6 @@
 name=Arid Mesa
 url=http://magiccards.info/zen/en/211.html
-image=http://magiccards.info/scans/en/zen/211.jpg
+image=http://mtgimage.com/card/arid%20mesa.jpg
 value=4.430
 rarity=R
 type=Land

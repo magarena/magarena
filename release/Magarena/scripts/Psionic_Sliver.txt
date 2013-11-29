@@ -1,6 +1,6 @@
 name=Psionic Sliver
 url=http://magiccards.info/ts/en/72.html
-image=http://magiccards.info/scans/en/ts/72.jpg
+image=http://mtgimage.com/card/psionic%20sliver.jpg
 value=3.667
 rarity=R
 type=Creature

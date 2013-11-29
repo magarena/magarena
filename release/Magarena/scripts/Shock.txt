@@ -1,6 +1,6 @@
 name=Shock
 url=http://magiccards.info/m12/en/154.html
-image=http://magiccards.info/scans/en/m12/154.jpg
+image=http://mtgimage.com/card/shock.jpg
 value=3.382
 rarity=C
 type=Instant

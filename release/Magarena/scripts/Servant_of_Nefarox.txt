@@ -1,6 +1,6 @@
 name=Servant of Nefarox
 url=http://magiccards.info/m13/en/108.html
-image=http://magiccards.info/scans/en/m13/108.jpg
+image=http://mtgimage.com/card/servant%20of%20nefarox.jpg
 value=2.766
 ability=exalted
 rarity=C

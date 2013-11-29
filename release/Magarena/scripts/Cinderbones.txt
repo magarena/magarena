@@ -1,6 +1,6 @@
 name=Cinderbones
 url=http://magiccards.info/shm/en/59.html
-image=http://magiccards.info/scans/en/shm/59.jpg
+image=http://mtgimage.com/card/cinderbones.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Sylvan Tutor
 url=http://magiccards.info/me4/en/169.html
-image=http://magiccards.info/scans/en/me4/169.jpg
+image=http://mtgimage.com/card/sylvan%20tutor.jpg
 value=4.370
 rarity=U
 type=Sorcery

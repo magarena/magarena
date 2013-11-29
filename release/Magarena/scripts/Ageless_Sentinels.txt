@@ -1,6 +1,6 @@
 name=Ageless Sentinels
 url=http://magiccards.info/sc/en/1.html
-image=http://magiccards.info/scans/en/sc/1.jpg
+image=http://mtgimage.com/card/ageless%20sentinels.jpg
 value=3.847
 rarity=R
 type=Creature

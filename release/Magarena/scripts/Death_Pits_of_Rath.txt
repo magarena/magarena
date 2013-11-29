@@ -1,6 +1,6 @@
 name=Death Pits of Rath
 url=http://magiccards.info/9e/en/123.html
-image=http://magiccards.info/scans/en/9e/123.jpg
+image=http://mtgimage.com/card/death%20pits%20of%20rath.jpg
 value=4.160
 rarity=R
 type=Enchantment

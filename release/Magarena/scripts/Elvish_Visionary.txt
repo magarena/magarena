@@ -1,6 +1,6 @@
 name=Elvish Visionary
 url=http://magiccards.info/dpa/en/63.html
-image=http://magiccards.info/scans/en/m10/178.jpg
+image=http://mtgimage.com/card/elvish%20visionary.jpg
 value=3.815
 rarity=C
 type=Creature

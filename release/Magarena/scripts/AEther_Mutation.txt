@@ -1,6 +1,6 @@
 name=AEther Mutation
 url=http://magiccards.info/ap/en/91.html
-image=http://magiccards.info/scans/en/ap/91.jpg
+image=http://mtgimage.com/card/aether%20mutation.jpg
 value=3.972
 rarity=U
 type=Sorcery

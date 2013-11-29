@@ -1,6 +1,6 @@
 name=Hornet Queen
 url=http://magiccards.info/cmd/en/159.html
-image=http://magiccards.info/scans/en/cmd/159.jpg
+image=http://mtgimage.com/card/hornet%20queen.jpg
 value=3.910
 rarity=R
 type=Creature

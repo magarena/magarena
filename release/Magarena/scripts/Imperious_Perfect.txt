@@ -1,6 +1,6 @@
 name=Imperious Perfect
 url=http://magiccards.info/dpa/en/71.html
-image=http://magiccards.info/scans/en/dpa/71.jpg
+image=http://mtgimage.com/card/imperious%20perfect.jpg
 value=4.381
 rarity=U
 type=Creature

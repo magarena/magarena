@@ -1,6 +1,6 @@
 name=Selesnya Guildgate
 url=http://magiccards.info/rtr/en/246.html
-image=http://magiccards.info/scans/en/rtr/246.jpg
+image=http://mtgimage.com/card/selesnya%20guildgate.jpg
 value=3.033
 rarity=C
 type=Land

@@ -1,6 +1,6 @@
 name=Ravenous Rats
 url=http://magiccards.info/dpa/en/31.html
-image=http://magiccards.info/scans/en/10e/171.jpg
+image=http://mtgimage.com/card/ravenous%20rats.jpg
 value=4.342
 rarity=C
 type=Creature

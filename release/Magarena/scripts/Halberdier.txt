@@ -1,6 +1,6 @@
 name=Halberdier
 url=http://magiccards.info/od/en/196.html
-image=http://magiccards.info/scans/en/od/196.jpg
+image=http://mtgimage.com/card/halberdier.jpg
 value=2.676
 ability=first strike
 rarity=C

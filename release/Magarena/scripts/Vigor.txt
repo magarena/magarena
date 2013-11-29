@@ -1,6 +1,6 @@
 name=Vigor
 url=http://magiccards.info/dpa/en/88.html
-image=http://magiccards.info/scans/en/lw/240.jpg
+image=http://mtgimage.com/card/vigor.jpg
 value=4.475
 rarity=R
 type=Creature

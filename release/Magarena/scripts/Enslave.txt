@@ -1,6 +1,6 @@
 name=Enslave
 url=http://magiccards.info/nph/en/58.html
-image=http://magiccards.info/scans/en/nph/58.jpg
+image=http://mtgimage.com/card/enslave.jpg
 value=3.589
 rarity=U
 type=Enchantment

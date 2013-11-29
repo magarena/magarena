@@ -1,6 +1,6 @@
 name=Ethercaste Knight
 url=http://magiccards.info/arb/en/3.html
-image=http://magiccards.info/scans/en/arb/3.jpg
+image=http://mtgimage.com/card/ethercaste%20knight.jpg
 value=3.062
 rarity=C
 type=Artifact,Creature

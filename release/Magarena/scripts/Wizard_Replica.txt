@@ -1,6 +1,6 @@
 name=Wizard Replica
 url=http://magiccards.info/pch/en/129.html
-image=http://magiccards.info/scans/en/pch/129.jpg
+image=http://mtgimage.com/card/wizard%20replica.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature

@@ -1,6 +1,6 @@
 name=Hurloon Shaman
 url=http://magiccards.info/wl/en/108.html
-image=http://magiccards.info/scans/en/wl/108.jpg
+image=http://mtgimage.com/card/hurloon%20shaman.jpg
 value=3.306
 rarity=U
 type=Creature

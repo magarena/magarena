@@ -1,6 +1,6 @@
 name=Juzam Djinn
 url=http://magiccards.info/med/en/74.html
-image=http://magiccards.info/scans/en/med/74.jpg
+image=http://mtgimage.com/card/juzam%20djinn.jpg
 value=4.325
 rarity=R
 type=Creature

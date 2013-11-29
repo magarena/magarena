@@ -1,6 +1,6 @@
 name=Selfless Cathar
 url=http://magiccards.info/isd/en/30.html
-image=http://magiccards.info/scans/en/isd/30.jpg
+image=http://mtgimage.com/card/selfless%20cathar.jpg
 value=2.886
 rarity=C
 type=Creature

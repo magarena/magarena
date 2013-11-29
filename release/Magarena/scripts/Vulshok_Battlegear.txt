@@ -1,6 +1,6 @@
 name=Vulshok Battlegear
 url=http://magiccards.info/mi/en/272.html
-image=http://magiccards.info/scans/en/mi/272.jpg
+image=http://mtgimage.com/card/vulshok%20battlegear.jpg
 value=3.727
 rarity=U
 type=Artifact

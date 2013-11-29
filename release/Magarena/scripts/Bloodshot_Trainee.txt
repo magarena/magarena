@@ -1,6 +1,6 @@
 name=Bloodshot Trainee
 url=http://magiccards.info/som/en/85.html
-image=http://magiccards.info/scans/en/som/85.jpg
+image=http://mtgimage.com/card/bloodshot%20trainee.jpg
 value=2.907
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Yavimaya Coast
 url=http://magiccards.info/10e/en/363.html
-image=http://magiccards.info/scans/en/10e/363.jpg
+image=http://mtgimage.com/card/yavimaya%20coast.jpg
 value=4.222
 rarity=R
 type=Land

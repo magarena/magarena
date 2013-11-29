@@ -1,6 +1,6 @@
 name=Supreme Exemplar
 url=http://magiccards.info/mt/en/53.html
-image=http://magiccards.info/scans/en/mt/53.jpg
+image=http://mtgimage.com/card/supreme%20exemplar.jpg
 value=3.678
 removal=2
 rarity=R

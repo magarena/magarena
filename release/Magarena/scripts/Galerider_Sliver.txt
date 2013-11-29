@@ -1,6 +1,6 @@
 name=Galerider Sliver
 url=http://magiccards.info/m14/en/57.html
-image=http://magiccards.info/scans/en/m14/57.jpg
+image=http://mtgimage.com/card/galerider%20sliver.jpg
 value=3.898
 rarity=R
 type=Creature

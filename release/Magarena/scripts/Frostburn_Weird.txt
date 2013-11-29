@@ -1,6 +1,6 @@
 name=Frostburn Weird
 url=http://magiccards.info/rtr/en/215.html
-image=http://magiccards.info/scans/en/rtr/215.jpg
+image=http://mtgimage.com/card/frostburn%20weird.jpg
 value=3.431
 rarity=C
 type=Creature

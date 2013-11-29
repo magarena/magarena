@@ -1,6 +1,6 @@
 name=Norwood Warrior
 url=http://magiccards.info/po2/en/80.html
-image=http://magiccards.info/scans/en/po2/80.jpg
+image=http://mtgimage.com/card/norwood%20warrior.jpg
 value=2.692
 rarity=C
 type=Creature

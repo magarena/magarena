@@ -1,6 +1,6 @@
 name=Diabolic Intent
 url=http://magiccards.info/ps/en/42.html
-image=http://magiccards.info/scans/en/ps/42.jpg
+image=http://mtgimage.com/card/diabolic%20intent.jpg
 value=4.386
 rarity=R
 type=Sorcery

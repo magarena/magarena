@@ -1,6 +1,6 @@
 name=Goblin Settler
 url=http://magiccards.info/st/en/106.html
-image=http://magiccards.info/scans/en/st/106.jpg
+image=http://mtgimage.com/card/goblin%20settler.jpg
 value=3.647
 removal=1
 rarity=U

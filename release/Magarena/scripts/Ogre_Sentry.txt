@@ -1,6 +1,6 @@
 name=Ogre Sentry
 url=http://magiccards.info/roe/en/159.html
-image=http://magiccards.info/scans/en/roe/159.jpg
+image=http://mtgimage.com/card/ogre%20sentry.jpg
 value=2.625
 ability=defender
 rarity=C

@@ -1,6 +1,6 @@
 name=Anaba Bodyguard
 url=http://magiccards.info/10e/en/187.html
-image=http://magiccards.info/scans/en/10e/187.jpg
+image=http://mtgimage.com/card/anaba%20bodyguard.jpg
 value=2.174
 ability=first strike
 rarity=C

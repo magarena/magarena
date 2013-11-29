@@ -1,6 +1,6 @@
 name=Teetering Peaks
 url=http://magiccards.info/pd2/en/30.html
-image=http://magiccards.info/scans/en/pd2/30.jpg
+image=http://mtgimage.com/card/teetering%20peaks.jpg
 value=3.600
 rarity=C
 type=Land

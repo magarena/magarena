@@ -1,6 +1,6 @@
 name=Swiftfoot Boots
 url=http://magiccards.info/m12/en/219.html
-image=http://magiccards.info/scans/en/m12/219.jpg
+image=http://mtgimage.com/card/swiftfoot%20boots.jpg
 value=4.189
 rarity=U
 type=Artifact

@@ -1,6 +1,6 @@
 name=Talons of Falkenrath
 url=http://magiccards.info/dka/en/105.html
-image=http://magiccards.info/scans/en/dka/105.jpg
+image=http://mtgimage.com/card/talons%20of%20falkenrath.jpg
 value=1.690
 rarity=C
 type=Enchantment

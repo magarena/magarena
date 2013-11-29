@@ -1,6 +1,6 @@
 name=Rampant Growth
 url=http://magiccards.info/m12/en/190.html
-image=http://magiccards.info/scans/en/m12/190.jpg
+image=http://mtgimage.com/card/rampant%20growth.jpg
 value=4.000
 rarity=C
 type=Sorcery

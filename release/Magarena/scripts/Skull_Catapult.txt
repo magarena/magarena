@@ -1,6 +1,6 @@
 name=Skull Catapult
 url=http://magiccards.info/cstd/en/46.html
-image=http://magiccards.info/scans/en/cstd/46.jpg
+image=http://mtgimage.com/card/skull%20catapult.jpg
 value=2.797
 rarity=U
 type=Artifact

@@ -1,6 +1,6 @@
 name=Wing Splicer
 url=http://magiccards.info/nph/en/50.html
-image=http://magiccards.info/scans/en/nph/50.jpg
+image=http://mtgimage.com/card/wing%20splicer.jpg
 value=3.621
 rarity=U
 type=Creature

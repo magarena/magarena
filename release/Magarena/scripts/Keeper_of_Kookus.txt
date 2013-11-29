@@ -1,6 +1,6 @@
 name=Keeper of Kookus
 url=http://magiccards.info/vi/en/85.html
-image=http://magiccards.info/scans/en/vi/85.jpg
+image=http://mtgimage.com/card/keeper%20of%20kookus.jpg
 value=3.244
 rarity=C
 type=Creature

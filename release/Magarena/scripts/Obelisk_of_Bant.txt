@@ -1,6 +1,6 @@
 name=Obelisk of Bant
 url=http://magiccards.info/ala/en/212.html
-image=http://magiccards.info/scans/en/ala/212.jpg
+image=http://mtgimage.com/card/obelisk%20of%20bant.jpg
 value=2.581
 rarity=C
 type=Artifact

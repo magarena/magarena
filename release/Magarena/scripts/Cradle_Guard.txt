@@ -1,6 +1,6 @@
 name=Cradle Guard
 url=http://magiccards.info/us/en/245.html
-image=http://magiccards.info/scans/en/us/245.jpg
+image=http://mtgimage.com/card/cradle%20guard.jpg
 value=4.131
 rarity=U
 type=Creature

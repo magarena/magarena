@@ -1,6 +1,6 @@
 name=Reflexes
 url=http://magiccards.info/9e/en/211.html
-image=http://magiccards.info/scans/en/9e/211.jpg
+image=http://mtgimage.com/card/reflexes.jpg
 value=2.478
 rarity=C
 type=Enchantment

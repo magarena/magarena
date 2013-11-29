@@ -1,6 +1,6 @@
 name=Carrion Feeder
 url=http://magiccards.info/pvc/en/2.html
-image=http://magiccards.info/scans/en/pvc/2.jpg
+image=http://mtgimage.com/card/carrion%20feeder.jpg
 value=4.192
 rarity=C
 type=Creature

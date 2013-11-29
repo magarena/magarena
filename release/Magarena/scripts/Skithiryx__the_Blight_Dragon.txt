@@ -1,6 +1,6 @@
 name=Skithiryx, the Blight Dragon
 url=http://magiccards.info/som/en/79.html
-image=http://magiccards.info/scans/en/som/79.jpg
+image=http://mtgimage.com/card/skithiryx%2C%20the%20blight%20dragon.jpg
 value=4.162
 rarity=M
 type=Legendary,Creature

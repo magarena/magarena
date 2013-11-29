@@ -1,6 +1,6 @@
 name=Felhide Minotaur
 url=http://magiccards.info/ths/en/87.html
-image=http://magiccards.info/scans/en/ths/87.jpg
+image=http://mtgimage.com/card/felhide%20minotaur.jpg
 value=1.544
 rarity=C
 type=Creature

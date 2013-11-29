@@ -1,6 +1,6 @@
 name=Siege Mastodon
 url=http://magiccards.info/m12/en/34.html
-image=http://magiccards.info/scans/en/m11/29.jpg
+image=http://mtgimage.com/card/siege%20mastodon.jpg
 value=1.482
 rarity=C
 type=Creature

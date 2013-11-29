@@ -1,6 +1,6 @@
 name=Gorilla Warrior
 url=http://magiccards.info/br/en/30.html
-image=http://magiccards.info/scans/en/br/30.jpg
+image=http://mtgimage.com/card/gorilla%20warrior.jpg
 value=2.632
 rarity=C
 type=Creature

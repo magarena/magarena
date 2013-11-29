@@ -1,6 +1,6 @@
 name=Torment
 url=http://magiccards.info/sh/en/23.html
-image=http://magiccards.info/scans/en/sh/23.jpg
+image=http://mtgimage.com/card/torment.jpg
 value=1.970
 rarity=C
 type=Enchantment

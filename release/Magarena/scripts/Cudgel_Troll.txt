@@ -1,6 +1,6 @@
 name=Cudgel Troll
 url=http://magiccards.info/m12/en/169.html
-image=http://magiccards.info/scans/en/m11/167.jpg
+image=http://mtgimage.com/card/cudgel%20troll.jpg
 value=3.858
 rarity=U
 type=Creature

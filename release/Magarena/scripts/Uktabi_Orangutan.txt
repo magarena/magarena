@@ -1,6 +1,6 @@
 name=Uktabi Orangutan
 url=http://magiccards.info/6e/en/260.html
-image=http://magiccards.info/scans/en/6e/260.jpg
+image=http://mtgimage.com/card/uktabi%20orangutan.jpg
 value=4.128
 removal=1
 rarity=U

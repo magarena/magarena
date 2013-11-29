@@ -1,6 +1,6 @@
 name=Anurid Barkripper
 url=http://magiccards.info/ju/en/104.html
-image=http://magiccards.info/scans/en/ju/104.jpg
+image=http://mtgimage.com/card/anurid%20barkripper.jpg
 value=2.760
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Guardian Lions
 url=http://magiccards.info/m13/en/17.html
-image=http://magiccards.info/scans/en/m13/17.jpg
+image=http://mtgimage.com/card/guardian%20lions.jpg
 value=1.841
 rarity=C
 type=Creature

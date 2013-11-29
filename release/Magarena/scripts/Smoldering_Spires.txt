@@ -1,6 +1,6 @@
 name=Smoldering Spires
 url=http://magiccards.info/wwk/en/143.html
-image=http://magiccards.info/scans/en/wwk/143.jpg
+image=http://mtgimage.com/card/smoldering%20spires.jpg
 value=3.184
 rarity=C
 type=Land

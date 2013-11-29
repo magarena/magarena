@@ -1,6 +1,6 @@
 name=Scion of Oona
 url=http://magiccards.info/lw/en/83.html
-image=http://magiccards.info/scans/en/lw/83.jpg
+image=http://mtgimage.com/card/scion%20of%20oona.jpg
 value=4.471
 rarity=R
 type=Creature

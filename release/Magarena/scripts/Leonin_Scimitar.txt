@@ -1,6 +1,6 @@
 name=Leonin Scimitar
 url=http://magiccards.info/10e/en/331.html
-image=http://magiccards.info/scans/en/10e/331.jpg
+image=http://mtgimage.com/card/leonin%20scimitar.jpg
 value=2.947
 rarity=C
 type=Artifact

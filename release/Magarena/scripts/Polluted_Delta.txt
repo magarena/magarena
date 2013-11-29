@@ -1,6 +1,6 @@
 name=Polluted Delta
 url=http://magiccards.info/on/en/321.html
-image=http://magiccards.info/scans/en/on/321.jpg
+image=http://mtgimage.com/card/polluted%20delta.jpg
 value=4.650
 rarity=R
 type=Land

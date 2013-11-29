@@ -1,6 +1,6 @@
 name=Drakewing Krasis
 url=http://magiccards.info/gtc/en/157.html
-image=http://magiccards.info/scans/en/gtc/157.jpg
+image=http://mtgimage.com/card/drakewing%20krasis.jpg
 value=3.254
 rarity=C
 type=Creature

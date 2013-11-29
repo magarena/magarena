@@ -1,6 +1,6 @@
 name=Sleep
 url=http://magiccards.info/m11/en/73.html
-image=http://magiccards.info/scans/en/m11/73.jpg
+image=http://mtgimage.com/card/sleep.jpg
 value=3.817
 removal=1
 rarity=U

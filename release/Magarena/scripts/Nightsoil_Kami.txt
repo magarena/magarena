@@ -1,6 +1,6 @@
 name=Nightsoil Kami
 url=http://magiccards.info/sok/en/139.html
-image=http://magiccards.info/scans/en/sok/139.jpg
+image=http://mtgimage.com/card/nightsoil%20kami.jpg
 value=2.522
 rarity=C
 type=Creature

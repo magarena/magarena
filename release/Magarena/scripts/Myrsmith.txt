@@ -1,6 +1,6 @@
 name=Myrsmith
 url=http://magiccards.info/som/en/16.html
-image=http://magiccards.info/scans/en/som/16.jpg
+image=http://mtgimage.com/card/myrsmith.jpg
 value=3.715
 rarity=U
 type=Creature

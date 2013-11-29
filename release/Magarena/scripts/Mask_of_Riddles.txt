@@ -1,6 +1,6 @@
 name=Mask of Riddles
 url=http://magiccards.info/arb/en/25.html
-image=http://magiccards.info/scans/en/arb/25.jpg
+image=http://mtgimage.com/card/mask%20of%20riddles.jpg
 value=3.448
 rarity=U
 type=Artifact

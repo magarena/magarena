@@ -1,6 +1,6 @@
 name=Rite of Replication
 url=http://magiccards.info/zen/en/61.html
-image=http://magiccards.info/scans/en/zen/61.jpg
+image=http://mtgimage.com/card/rite%20of%20replication.jpg
 value=4.395
 rarity=R
 type=Sorcery

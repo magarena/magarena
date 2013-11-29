@@ -1,6 +1,6 @@
 name=Endless Cockroaches
 url=http://magiccards.info/po/en/14.html
-image=http://magiccards.info/scans/en/po/14.jpg
+image=http://mtgimage.com/card/endless%20cockroaches.jpg
 value=3.359
 rarity=R
 type=Creature

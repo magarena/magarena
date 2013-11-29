@@ -1,6 +1,6 @@
 name=Snake Cult Initiation
 url=http://magiccards.info/fut/en/89.html
-image=http://magiccards.info/scans/en/fut/89.jpg
+image=http://mtgimage.com/card/snake%20cult%20initiation.jpg
 value=3.707
 rarity=U
 type=Enchantment

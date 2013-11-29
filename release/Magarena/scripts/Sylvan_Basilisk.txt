@@ -1,6 +1,6 @@
 name=Sylvan Basilisk
 url=http://magiccards.info/10e/en/301.html
-image=http://magiccards.info/scans/en/10e/301.jpg
+image=http://mtgimage.com/card/sylvan%20basilisk.jpg
 value=4.160
 rarity=R
 type=Creature

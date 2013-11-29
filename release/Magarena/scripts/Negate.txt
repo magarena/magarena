@@ -1,6 +1,6 @@
 name=Negate
 url=http://magiccards.info/m12/en/69.html
-image=http://magiccards.info/scans/en/dpa/13.jpg
+image=http://mtgimage.com/card/negate.jpg
 value=4.050
 rarity=C
 type=Instant

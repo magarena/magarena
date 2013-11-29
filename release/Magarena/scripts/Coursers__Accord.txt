@@ -1,6 +1,6 @@
 name=Coursers' Accord
 url=http://magiccards.info/rtr/en/154.html
-image=http://magiccards.info/scans/en/rtr/154.jpg
+image=http://mtgimage.com/card/coursers%27%20accord.jpg
 value=2.620
 rarity=C
 type=Sorcery

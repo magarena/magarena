@@ -1,6 +1,6 @@
 name=Tiger Claws
 url=http://magiccards.info/mm/en/279.html
-image=http://magiccards.info/scans/en/mm/279.jpg
+image=http://mtgimage.com/card/tiger%20claws.jpg
 value=3.460
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Lightning Prowess
 url=http://magiccards.info/avr/en/145.html
-image=http://magiccards.info/scans/en/avr/145.jpg
+image=http://mtgimage.com/card/lightning%20prowess.jpg
 value=2.734
 rarity=U
 type=Enchantment

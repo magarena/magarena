@@ -1,6 +1,6 @@
 name=Sylvok Replica
 url=http://magiccards.info/som/en/210.html
-image=http://magiccards.info/scans/en/som/210.jpg
+image=http://mtgimage.com/card/sylvok%20replica.jpg
 value=3.418
 rarity=C
 type=Artifact,Creature

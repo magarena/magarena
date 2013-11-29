@@ -1,6 +1,6 @@
 name=Deathknell Kami
 url=http://magiccards.info/sok/en/65.html
-image=http://magiccards.info/scans/en/sok/65.jpg
+image=http://mtgimage.com/card/deathknell%20kami.jpg
 value=1.879
 rarity=C
 type=Creature

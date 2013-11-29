@@ -1,6 +1,6 @@
 name=Auriok Champion
 url=http://magiccards.info/5dn/en/3.html
-image=http://magiccards.info/scans/en/5dn/3.jpg
+image=http://mtgimage.com/card/auriok%20champion.jpg
 value=4.472
 rarity=R
 type=Creature

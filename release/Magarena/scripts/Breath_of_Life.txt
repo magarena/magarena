@@ -1,6 +1,6 @@
 name=Breath of Life
 url=http://magiccards.info/7e/en/4.html
-image=http://magiccards.info/scans/en/7e/4.jpg
+image=http://mtgimage.com/card/breath%20of%20life.jpg
 value=4.256
 rarity=U
 type=Sorcery

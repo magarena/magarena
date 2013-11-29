@@ -1,6 +1,6 @@
 name=Wall of Razors
 url=http://magiccards.info/sh/en/100.html
-image=http://magiccards.info/scans/en/sh/100.jpg
+image=http://mtgimage.com/card/wall%20of%20razors.jpg
 value=3.982
 rarity=U
 type=Creature

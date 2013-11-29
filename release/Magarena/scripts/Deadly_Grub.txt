@@ -1,6 +1,6 @@
 name=Deadly Grub
 url=http://magiccards.info/pc/en/69.html
-image=http://magiccards.info/scans/en/pc/69.jpg
+image=http://mtgimage.com/card/deadly%20grub.jpg
 value=3.105
 rarity=C
 type=Creature

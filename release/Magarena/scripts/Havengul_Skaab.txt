@@ -1,6 +1,6 @@
 name=Havengul Skaab
 url=http://magiccards.info/avr/en/60.html
-image=http://magiccards.info/scans/en/avr/60.jpg
+image=http://mtgimage.com/card/havengul%20skaab.jpg
 value=1.532
 rarity=C
 type=Creature

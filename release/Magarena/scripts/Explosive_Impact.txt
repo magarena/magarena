@@ -1,6 +1,6 @@
 name=Explosive Impact
 url=http://magiccards.info/rtr/en/94.html
-image=http://magiccards.info/scans/en/rtr/94.jpg
+image=http://mtgimage.com/card/explosive%20impact.jpg
 value=2.255
 rarity=C
 type=Instant

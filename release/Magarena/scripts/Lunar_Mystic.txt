@@ -1,6 +1,6 @@
 name=Lunar Mystic
 url=http://magiccards.info/avr/en/65.html
-image=http://magiccards.info/scans/en/avr/65.jpg
+image=http://mtgimage.com/card/lunar%20mystic.jpg
 value=3.574
 rarity=R
 type=Creature

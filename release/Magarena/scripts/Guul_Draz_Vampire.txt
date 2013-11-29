@@ -1,6 +1,6 @@
 name=Guul Draz Vampire
 url=http://magiccards.info/zen/en/93.html
-image=http://magiccards.info/scans/en/zen/93.jpg
+image=http://mtgimage.com/card/guul%20draz%20vampire.jpg
 value=4.028
 rarity=C
 type=Creature

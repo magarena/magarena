@@ -1,6 +1,6 @@
 name=Zhalfirin Knight
 url=http://magiccards.info/mr/en/254.html
-image=http://magiccards.info/scans/en/mr/254.jpg
+image=http://mtgimage.com/card/zhalfirin%20knight.jpg
 value=3.359
 rarity=C
 type=Creature

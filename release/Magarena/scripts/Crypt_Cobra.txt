@@ -1,6 +1,6 @@
 name=Crypt Cobra
 url=http://magiccards.info/mr/en/12.html
-image=http://magiccards.info/scans/en/mr/12.jpg
+image=http://mtgimage.com/card/crypt%20cobra.jpg
 value=3.306
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Conquer
 url=http://magiccards.info/me2/en/122.html
-image=http://magiccards.info/scans/en/me2/122.jpg
+image=http://mtgimage.com/card/conquer.jpg
 value=2.532
 rarity=U
 type=Enchantment

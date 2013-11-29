@@ -1,6 +1,6 @@
 name=Sinkhole
 url=http://magiccards.info/me4/en/97.html
-image=http://magiccards.info/scans/en/me4/97.jpg
+image=http://mtgimage.com/card/sinkhole.jpg
 value=4.659
 removal=3
 rarity=C

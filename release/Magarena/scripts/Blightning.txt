@@ -1,6 +1,6 @@
 name=Blightning
 url=http://magiccards.info/ala/en/156.html
-image=http://magiccards.info/scans/en/ala/156.jpg
+image=http://mtgimage.com/card/blightning.jpg
 value=4.500
 rarity=C
 type=Sorcery

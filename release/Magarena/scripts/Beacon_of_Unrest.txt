@@ -1,6 +1,6 @@
 name=Beacon of Unrest
 url=http://magiccards.info/arc/en/10.html
-image=http://magiccards.info/scans/en/arc/10.jpg
+image=http://mtgimage.com/card/beacon%20of%20unrest.jpg
 value=4.386
 rarity=R
 type=Sorcery

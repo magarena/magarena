@@ -1,6 +1,6 @@
 name=Nekrataal
 url=http://magiccards.info/10e/en/163.html
-image=http://magiccards.info/scans/en/10e/163.jpg
+image=http://mtgimage.com/card/nekrataal.jpg
 value=4.240
 rarity=U
 type=Creature

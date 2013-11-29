@@ -1,6 +1,6 @@
 name=Worldly Tutor
 url=http://magiccards.info/mr/en/153.html
-image=http://magiccards.info/scans/en/mr/153.jpg
+image=http://mtgimage.com/card/worldly%20tutor.jpg
 value=4.633
 rarity=U
 type=Instant

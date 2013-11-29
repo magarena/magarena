@@ -1,6 +1,6 @@
 name=Furyborn Hellkite
 url=http://magiccards.info/m12/en/135.html
-image=http://magiccards.info/scans/en/m12/135.jpg
+image=http://mtgimage.com/card/furyborn%20hellkite.jpg
 value=4.179
 rarity=M
 type=Creature

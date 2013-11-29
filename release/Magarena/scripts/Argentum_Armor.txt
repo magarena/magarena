@@ -1,6 +1,6 @@
 name=Argentum Armor
 url=http://magiccards.info/som/en/137.html
-image=http://magiccards.info/scans/en/som/137.jpg
+image=http://mtgimage.com/card/argentum%20armor.jpg
 value=3.901
 rarity=R
 type=Artifact

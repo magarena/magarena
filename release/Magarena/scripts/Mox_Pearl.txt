@@ -1,6 +1,6 @@
 name=Mox Pearl
 url=http://magiccards.info/cedi/en/265.html
-image=http://magiccards.info/scans/en/cedi/265.jpg
+image=http://mtgimage.com/card/mox%20pearl.jpg
 value=4.755
 rarity=R
 type=Artifact

@@ -1,6 +1,6 @@
 name=Primeval Titan
 url=http://magiccards.info/m12/en/188.html
-image=http://magiccards.info/scans/en/m12/188.jpg
+image=http://mtgimage.com/card/primeval%20titan.jpg
 value=4.404
 rarity=M
 type=Creature

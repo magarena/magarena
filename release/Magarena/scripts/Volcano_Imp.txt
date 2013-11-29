@@ -1,6 +1,6 @@
 name=Volcano Imp
 url=http://magiccards.info/ps/en/56.html
-image=http://magiccards.info/scans/en/ps/56.jpg
+image=http://mtgimage.com/card/volcano%20imp.jpg
 value=1.810
 rarity=C
 type=Creature

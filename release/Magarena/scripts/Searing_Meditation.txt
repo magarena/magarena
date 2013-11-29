@@ -1,6 +1,6 @@
 name=Searing Meditation
 url=http://magiccards.info/ddh/en/27.html
-image=http://magiccards.info/scans/en/ddh/27.jpg
+image=http://mtgimage.com/card/searing%20meditation.jpg
 value=3.758
 rarity=R
 type=Enchantment

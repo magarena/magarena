@@ -1,6 +1,6 @@
 name=Barbed Field
 url=http://magiccards.info/pr/en/83.html
-image=http://magiccards.info/scans/en/pr/83.jpg
+image=http://mtgimage.com/card/barbed%20field.jpg
 value=3.060
 rarity=U
 type=Enchantment

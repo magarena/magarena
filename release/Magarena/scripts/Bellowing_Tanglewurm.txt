@@ -1,6 +1,6 @@
 name=Bellowing Tanglewurm
 url=http://magiccards.info/som/en/111.html
-image=http://magiccards.info/scans/en/som/111.jpg
+image=http://mtgimage.com/card/bellowing%20tanglewurm.jpg
 value=4.050
 rarity=U
 type=Creature

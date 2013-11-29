@@ -1,6 +1,6 @@
 name=Raging Kavu
 url=http://magiccards.info/ptc/en/12.html
-image=http://magiccards.info/scans/en/in/262.jpg
+image=http://mtgimage.com/card/raging%20kavu.jpg
 ignore=59949
 value=3.657
 ability=flash;haste

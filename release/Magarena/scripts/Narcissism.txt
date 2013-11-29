@@ -1,6 +1,6 @@
 name=Narcissism
 url=http://magiccards.info/tr/en/134.html
-image=http://magiccards.info/scans/en/tr/134.jpg
+image=http://mtgimage.com/card/narcissism.jpg
 value=3.212
 rarity=U
 type=Enchantment

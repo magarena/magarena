@@ -1,6 +1,6 @@
 name=War-Spike Changeling
 url=http://magiccards.info/mt/en/112.html
-image=http://magiccards.info/scans/en/mt/112.jpg
+image=http://mtgimage.com/card/war%2Dspike%20changeling.jpg
 value=2.864
 rarity=C
 type=Creature

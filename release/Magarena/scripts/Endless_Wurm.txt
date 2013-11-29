@@ -1,6 +1,6 @@
 name=Endless Wurm
 url=http://magiccards.info/us/en/249.html
-image=http://magiccards.info/scans/en/us/249.jpg
+image=http://mtgimage.com/card/endless%20wurm.jpg
 value=4.230
 rarity=R
 type=Creature

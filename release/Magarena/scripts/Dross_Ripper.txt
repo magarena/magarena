@@ -1,6 +1,6 @@
 name=Dross Ripper
 url=http://magiccards.info/mbs/en/106.html
-image=http://magiccards.info/scans/en/mbs/106.jpg
+image=http://mtgimage.com/card/dross%20ripper.jpg
 value=2.259
 rarity=C
 type=Artifact,Creature

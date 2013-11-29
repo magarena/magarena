@@ -1,6 +1,6 @@
 name=Voice of Law
 url=http://magiccards.info/us/en/55.html
-image=http://magiccards.info/scans/en/us/55.jpg
+image=http://mtgimage.com/card/voice%20of%20law.jpg
 value=3.462
 rarity=U
 type=Creature

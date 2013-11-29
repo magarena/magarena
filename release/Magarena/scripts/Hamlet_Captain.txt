@@ -1,6 +1,6 @@
 name=Hamlet Captain
 url=http://magiccards.info/isd/en/187.html
-image=http://magiccards.info/scans/en/isd/187.jpg
+image=http://mtgimage.com/card/hamlet%20captain.jpg
 value=3.809
 rarity=U
 type=Creature

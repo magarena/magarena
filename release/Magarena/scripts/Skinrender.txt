@@ -1,6 +1,6 @@
 name=Skinrender
 url=http://magiccards.info/som/en/78.html
-image=http://magiccards.info/scans/en/som/78.jpg
+image=http://mtgimage.com/card/skinrender.jpg
 value=4.316
 rarity=U
 removal=3

@@ -1,6 +1,6 @@
 name=Bone to Ash
 url=http://magiccards.info/dka/en/29.html
-image=http://magiccards.info/scans/en/dka/29.jpg
+image=http://mtgimage.com/card/bone%20to%20ash.jpg
 value=2.404
 rarity=C
 type=Instant

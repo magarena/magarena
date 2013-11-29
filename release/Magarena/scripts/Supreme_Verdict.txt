@@ -1,6 +1,6 @@
 name=Supreme Verdict
 url=http://magiccards.info/rtr/en/201.html
-image=http://magiccards.info/scans/en/rtr/201.jpg
+image=http://mtgimage.com/card/supreme%20verdict.jpg
 value=4.018
 rarity=R
 type=Sorcery

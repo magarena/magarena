@@ -1,6 +1,6 @@
 name=Guardian of the Guildpact
 url=http://magiccards.info/di/en/10.html
-image=http://magiccards.info/scans/en/di/10.jpg
+image=http://mtgimage.com/card/guardian%20of%20the%20guildpact.jpg
 value=3.936
 rarity=C
 type=Creature

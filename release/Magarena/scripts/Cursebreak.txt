@@ -1,6 +1,6 @@
 name=Cursebreak
 url=http://magiccards.info/avr/en/14.html
-image=http://magiccards.info/scans/en/avr/14.jpg
+image=http://mtgimage.com/card/cursebreak.jpg
 value=2.722
 removal=1
 rarity=C

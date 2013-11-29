@@ -1,6 +1,6 @@
 name=Mortify
 url=http://magiccards.info/cmd/en/211.html
-image=http://magiccards.info/scans/en/gp/122.jpg
+image=http://mtgimage.com/card/mortify.jpg
 value=4.468
 removal=5
 rarity=U

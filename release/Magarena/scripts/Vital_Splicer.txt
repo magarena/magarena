@@ -1,6 +1,6 @@
 name=Vital Splicer
 url=http://magiccards.info/nph/en/126.html
-image=http://magiccards.info/scans/en/nph/126.jpg
+image=http://mtgimage.com/card/vital%20splicer.jpg
 value=3.183
 rarity=U
 type=Creature

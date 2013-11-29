@@ -1,6 +1,6 @@
 name=Watchwolf
 url=http://magiccards.info/arc/en/100.html
-image=http://magiccards.info/scans/en/arc/100.jpg
+image=http://mtgimage.com/card/watchwolf.jpg
 value=4.454
 rarity=U
 type=Creature

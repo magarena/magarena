@@ -1,6 +1,6 @@
 name=Hellraiser Goblin
 url=http://magiccards.info/gtc/en/95.html
-image=http://magiccards.info/scans/en/gtc/95.jpg
+image=http://mtgimage.com/card/hellraiser%20goblin.jpg
 value=2.940
 rarity=U
 type=Creature

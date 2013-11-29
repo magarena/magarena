@@ -1,6 +1,6 @@
 name=Zombify
 url=http://magiccards.info/arc/en/29.html
-image=http://magiccards.info/scans/en/arc/29.jpg
+image=http://mtgimage.com/card/zombify.jpg
 value=4.330
 rarity=U
 type=Sorcery

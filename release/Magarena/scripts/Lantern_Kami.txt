@@ -1,6 +1,6 @@
 name=Lantern Kami
 url=http://magiccards.info/chk/en/32.html
-image=http://magiccards.info/scans/en/chk/32.jpg
+image=http://mtgimage.com/card/lantern%20kami.jpg
 value=3.448
 ability=flying
 rarity=C

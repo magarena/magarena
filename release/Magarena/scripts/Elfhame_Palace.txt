@@ -1,6 +1,6 @@
 name=Elfhame Palace
 url=http://magiccards.info/pvc/en/64.html
-image=http://magiccards.info/scans/en/pvc/64.jpg
+image=http://mtgimage.com/card/elfhame%20palace.jpg
 value=3.315
 rarity=U
 type=Land

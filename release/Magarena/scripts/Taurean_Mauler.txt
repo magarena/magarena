@@ -1,6 +1,6 @@
 name=Taurean Mauler
 url=http://magiccards.info/arc/en/49.html
-image=http://magiccards.info/scans/en/arc/49.jpg
+image=http://mtgimage.com/card/taurean%20mauler.jpg
 value=4.402
 rarity=R
 type=Creature

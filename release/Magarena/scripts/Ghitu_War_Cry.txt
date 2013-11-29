@@ -1,6 +1,6 @@
 name=Ghitu War Cry
 url=http://magiccards.info/ul/en/78.html
-image=http://magiccards.info/scans/en/ul/78.jpg
+image=http://mtgimage.com/card/ghitu%20war%20cry.jpg
 value=3.724
 rarity=U
 type=Enchantment

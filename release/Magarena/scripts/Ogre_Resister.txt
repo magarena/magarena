@@ -1,6 +1,6 @@
 name=Ogre Resister
 url=http://magiccards.info/mbs/en/72.html
-image=http://magiccards.info/scans/en/mbs/72.jpg
+image=http://mtgimage.com/card/ogre%20resister.jpg
 value=2.613
 rarity=C
 type=Creature

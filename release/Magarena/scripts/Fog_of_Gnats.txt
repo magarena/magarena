@@ -1,6 +1,6 @@
 name=Fog of Gnats
 url=http://magiccards.info/ul/en/53.html
-image=http://magiccards.info/scans/en/ul/53.jpg
+image=http://mtgimage.com/card/fog%20of%20gnats.jpg
 value=4.292
 rarity=C
 type=Creature

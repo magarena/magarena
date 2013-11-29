@@ -1,6 +1,6 @@
 name=Nut Collector
 url=http://magiccards.info/od/en/259.html
-image=http://magiccards.info/scans/en/od/259.jpg
+image=http://mtgimage.com/card/nut%20collector.jpg
 value=4.009
 rarity=R
 type=Creature

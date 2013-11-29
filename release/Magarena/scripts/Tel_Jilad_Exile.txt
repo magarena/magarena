@@ -1,6 +1,6 @@
 name=Tel-Jilad Exile
 url=http://magiccards.info/mi/en/133.html
-image=http://magiccards.info/scans/en/mi/133.jpg
+image=http://mtgimage.com/card/tel%2Djilad%20exile.jpg
 value=2.114
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Labyrinth Champion
 url=http://magiccards.info/ths/en/126.html
-image=http://magiccards.info/scans/en/ths/126.jpg
+image=http://mtgimage.com/card/labyrinth%20champion.jpg
 value=3.786
 rarity=R
 type=Creature

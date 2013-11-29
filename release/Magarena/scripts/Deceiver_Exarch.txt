@@ -1,6 +1,6 @@
 name=Deceiver Exarch
 url=http://magiccards.info/nph/en/33.html
-image=http://magiccards.info/scans/en/nph/33.jpg
+image=http://mtgimage.com/card/deceiver%20exarch.jpg
 value=3.797
 rarity=U
 type=Creature

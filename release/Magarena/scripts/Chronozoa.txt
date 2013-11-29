@@ -1,6 +1,6 @@
 name=Chronozoa
 url=http://magiccards.info/pc/en/37.html
-image=http://magiccards.info/scans/en/pc/37.jpg
+image=http://mtgimage.com/card/chronozoa.jpg
 value=4.286
 rarity=R
 type=Creature

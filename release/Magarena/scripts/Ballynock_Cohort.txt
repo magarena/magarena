@@ -1,6 +1,6 @@
 name=Ballynock Cohort
 url=http://magiccards.info/shm/en/3.html
-image=http://magiccards.info/scans/en/shm/3.jpg
+image=http://mtgimage.com/card/ballynock%20cohort.jpg
 value=3.455
 rarity=C
 type=Creature

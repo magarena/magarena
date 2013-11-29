@@ -1,6 +1,6 @@
 name=Loyal Sentry
 url=http://magiccards.info/ddf/en/5.html
-image=http://magiccards.info/scans/en/10e/27.jpg
+image=http://mtgimage.com/card/loyal%20sentry.jpg
 value=4.289
 rarity=R
 type=Creature

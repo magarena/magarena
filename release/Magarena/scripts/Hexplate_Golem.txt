@@ -1,6 +1,6 @@
 name=Hexplate Golem
 url=http://magiccards.info/mbs/en/109.html
-image=http://magiccards.info/scans/en/mbs/109.jpg
+image=http://mtgimage.com/card/hexplate%20golem.jpg
 value=2.033
 rarity=C
 type=Artifact,Creature

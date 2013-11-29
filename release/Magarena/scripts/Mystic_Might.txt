@@ -1,6 +1,6 @@
 name=Mystic Might
 url=http://magiccards.info/ia/en/86.html
-image=http://magiccards.info/scans/en/ia/86.jpg
+image=http://mtgimage.com/card/mystic%20might.jpg
 value=1.944
 rarity=R
 type=Enchantment

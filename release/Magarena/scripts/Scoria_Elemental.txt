@@ -1,6 +1,6 @@
 name=Scoria Elemental
 url=http://magiccards.info/som/en/102.html
-image=http://magiccards.info/scans/en/som/102.jpg
+image=http://mtgimage.com/card/scoria%20elemental.jpg
 value=1.512
 rarity=C
 type=Creature

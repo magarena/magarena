@@ -1,6 +1,6 @@
 name=Grove of the Burnwillows
 url=http://magiccards.info/v12/en/8.html
-image=http://magiccards.info/scans/en/v12/8.jpg
+image=http://mtgimage.com/card/grove%20of%20the%20burnwillows.jpg
 value=4.042
 rarity=M
 type=Land

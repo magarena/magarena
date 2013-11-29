@@ -1,6 +1,6 @@
 name=Water Servant
 url=http://magiccards.info/m11/en/80.html
-image=http://magiccards.info/scans/en/m11/80.jpg
+image=http://mtgimage.com/card/water%20servant.jpg
 value=3.556
 rarity=U
 type=Creature

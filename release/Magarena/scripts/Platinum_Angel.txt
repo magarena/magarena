@@ -1,6 +1,6 @@
 name=Platinum Angel
 url=http://magiccards.info/m11/en/212.html
-image=http://magiccards.info/scans/en/m11/212.jpg
+image=http://mtgimage.com/card/platinum%20angel.jpg
 value=4.376
 rarity=M
 type=Artifact,Creature

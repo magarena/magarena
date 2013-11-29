@@ -1,6 +1,6 @@
 name=Corrupted Resolve
 url=http://magiccards.info/nph/en/32.html
-image=http://magiccards.info/scans/en/nph/32.jpg
+image=http://mtgimage.com/card/corrupted%20resolve.jpg
 value=3.762
 rarity=U
 type=Instant

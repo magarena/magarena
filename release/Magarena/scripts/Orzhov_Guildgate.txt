@@ -1,6 +1,6 @@
 name=Orzhov Guildgate
 url=http://magiccards.info/gtc/en/244.html
-image=http://magiccards.info/scans/en/gtc/244.jpg
+image=http://mtgimage.com/card/orzhov%20guildgate.jpg
 value=3.792
 rarity=C
 type=Land

@@ -1,6 +1,6 @@
 name=Ogre's Cleaver
 url=http://magiccards.info/roe/en/220.html
-image=http://magiccards.info/scans/en/roe/220.jpg
+image=http://mtgimage.com/card/ogre%27s%20cleaver.jpg
 value=2.869
 rarity=U
 type=Artifact

@@ -1,6 +1,6 @@
 name=Fissure
 url=http://magiccards.info/med/en/93.html
-image=http://magiccards.info/scans/en/med/93.jpg
+image=http://mtgimage.com/card/fissure.jpg
 value=3.732
 rarity=C
 type=Instant

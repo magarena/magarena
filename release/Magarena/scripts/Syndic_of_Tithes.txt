@@ -1,6 +1,6 @@
 name=Syndic of Tithes
 url=http://magiccards.info/gtc/en/26.html
-image=http://magiccards.info/scans/en/gtc/26.jpg
+image=http://mtgimage.com/card/syndic%20of%20tithes.jpg
 value=3.200
 rarity=C
 type=Creature

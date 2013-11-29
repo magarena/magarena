@@ -1,6 +1,6 @@
 name=Mana Chains
 url=http://magiccards.info/wl/en/41.html
-image=http://magiccards.info/scans/en/wl/41.jpg
+image=http://mtgimage.com/card/mana%20chains.jpg
 value=3.980
 rarity=C
 type=Enchantment

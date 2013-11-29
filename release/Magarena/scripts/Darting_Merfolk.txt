@@ -1,6 +1,6 @@
 name=Darting Merfolk
 url=http://magiccards.info/mm/en/72.html
-image=http://magiccards.info/scans/en/mm/72.jpg
+image=http://mtgimage.com/card/darting%20merfolk.jpg
 value=3.134
 rarity=C
 type=Creature

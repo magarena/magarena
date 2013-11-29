@@ -1,6 +1,6 @@
 name=Keeneye Aven
 url=http://magiccards.info/le/en/41.html
-image=http://magiccards.info/scans/en/le/41.jpg
+image=http://mtgimage.com/card/keeneye%20aven.jpg
 value=1.925
 rarity=C
 type=Creature

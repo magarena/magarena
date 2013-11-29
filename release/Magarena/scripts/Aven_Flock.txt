@@ -1,6 +1,6 @@
 name=Aven Flock
 url=http://magiccards.info/9e/en/4.html
-image=http://magiccards.info/scans/en/9e/4.jpg
+image=http://mtgimage.com/card/aven%20flock.jpg
 value=1.378
 rarity=C
 type=Creature

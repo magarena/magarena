@@ -1,6 +1,6 @@
 name=Lifesmith
 url=http://magiccards.info/som/en/124.html
-image=http://magiccards.info/scans/en/som/124.jpg
+image=http://mtgimage.com/card/lifesmith.jpg
 value=2.944
 rarity=U
 type=Creature

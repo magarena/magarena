@@ -1,6 +1,6 @@
 name=Yavimaya Hollow
 url=http://magiccards.info/ud/en/143.html
-image=http://magiccards.info/scans/en/ud/143.jpg
+image=http://mtgimage.com/card/yavimaya%20hollow.jpg
 value=4.384
 rarity=R
 type=Legendary,Land

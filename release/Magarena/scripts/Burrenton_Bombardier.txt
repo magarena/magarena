@@ -1,6 +1,6 @@
 name=Burrenton Bombardier
 url=http://magiccards.info/mt/en/3.html
-image=http://magiccards.info/scans/en/mt/3.jpg
+image=http://mtgimage.com/card/burrenton%20bombardier.jpg
 rarity=C
 value=2.771
 type=Creature

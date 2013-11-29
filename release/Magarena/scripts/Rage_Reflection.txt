@@ -1,6 +1,6 @@
 name=Rage Reflection
 url=http://magiccards.info/dpa/en/52.html
-image=http://magiccards.info/scans/en/shm/104.jpg
+image=http://mtgimage.com/card/rage%20reflection.jpg
 value=3.492
 rarity=R
 type=Enchantment

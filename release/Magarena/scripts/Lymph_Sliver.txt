@@ -1,6 +1,6 @@
 name=Lymph Sliver
 url=http://magiccards.info/fut/en/26.html
-image=http://magiccards.info/scans/en/fut/26.jpg
+image=http://mtgimage.com/card/lymph%20sliver.jpg
 value=3.452
 rarity=C
 type=Creature

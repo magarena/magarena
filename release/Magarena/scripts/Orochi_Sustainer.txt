@@ -1,6 +1,6 @@
 name=Orochi Sustainer
 url=http://magiccards.info/chk/en/236.html
-image=http://magiccards.info/scans/en/chk/236.jpg
+image=http://mtgimage.com/card/orochi%20sustainer.jpg
 value=2.426
 rarity=C
 type=Creature

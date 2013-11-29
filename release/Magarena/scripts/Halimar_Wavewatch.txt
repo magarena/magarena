@@ -1,6 +1,6 @@
 name=Halimar Wavewatch
 url=http://magiccards.info/roe/en/72.html
-image=http://magiccards.info/scans/en/roe/72.jpg
+image=http://mtgimage.com/card/halimar%20wavewatch.jpg
 value=3.246
 rarity=C
 type=Creature

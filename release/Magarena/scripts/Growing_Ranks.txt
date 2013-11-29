@@ -1,6 +1,6 @@
 name=Growing Ranks
 url=http://magiccards.info/rtr/en/217.html
-image=http://magiccards.info/scans/en/rtr/217.jpg
+image=http://mtgimage.com/card/growing%20ranks.jpg
 value=3.761
 rarity=R
 type=Enchantment

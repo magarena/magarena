@@ -1,6 +1,6 @@
 name=Crawling Filth
 url=http://magiccards.info/bok/en/64.html
-image=http://magiccards.info/scans/en/bok/64.jpg
+image=http://mtgimage.com/card/crawling%20filth.jpg
 value=1.026
 rarity=C
 type=Creature

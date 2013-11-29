@@ -1,6 +1,6 @@
 name=Goblin King
 url=http://magiccards.info/10e/en/207.html
-image=http://magiccards.info/scans/en/10e/207.jpg
+image=http://mtgimage.com/card/goblin%20king.jpg
 value=4.238
 rarity=R
 type=Creature

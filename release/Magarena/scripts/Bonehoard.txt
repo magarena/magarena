@@ -1,6 +1,6 @@
 name=Bonehoard
 url=http://magiccards.info/mbs/en/100.html
-image=http://magiccards.info/scans/en/mbs/100.jpg
+image=http://mtgimage.com/card/bonehoard.jpg
 value=3.815
 rarity=R
 type=Artifact

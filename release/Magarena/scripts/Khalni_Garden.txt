@@ -1,6 +1,6 @@
 name=Khalni Garden
 url=http://magiccards.info/arc/en/127.html
-image=http://magiccards.info/scans/en/arc/127.jpg
+image=http://mtgimage.com/card/khalni%20garden.jpg
 value=3.700
 rarity=C
 type=Land

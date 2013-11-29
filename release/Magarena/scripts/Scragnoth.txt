@@ -1,6 +1,6 @@
 name=Scragnoth
 url=http://magiccards.info/tsts/en/83.html
-image=http://magiccards.info/scans/en/tsts/83.jpg
+image=http://mtgimage.com/card/scragnoth.jpg
 value=3.894
 rarity=U
 type=Creature

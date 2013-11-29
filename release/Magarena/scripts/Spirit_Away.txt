@@ -1,6 +1,6 @@
 name=Spirit Away
 url=http://magiccards.info/avr/en/76.html
-image=http://magiccards.info/scans/en/avr/76.jpg
+image=http://mtgimage.com/card/spirit%20away.jpg
 value=2.890
 rarity=R
 type=Enchantment

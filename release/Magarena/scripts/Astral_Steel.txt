@@ -1,6 +1,6 @@
 name=Astral Steel
 url=http://magiccards.info/sc/en/2.html
-image=http://magiccards.info/scans/en/sc/2.jpg
+image=http://mtgimage.com/card/astral%20steel.jpg
 value=2.250
 rarity=C
 type=Instant

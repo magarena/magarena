@@ -1,6 +1,6 @@
 name=Nefarox, Overlord of Grixis
 url=http://magiccards.info/m13/en/103.html
-image=http://magiccards.info/scans/en/m13/103.jpg
+image=http://mtgimage.com/card/nefarox%2C%20overlord%20of%20grixis.jpg
 value=3.723
 rarity=R
 type=Legendary,Creature

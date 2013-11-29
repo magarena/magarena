@@ -1,6 +1,6 @@
 name=Reality Acid
 url=http://magiccards.info/pc/en/45.html
-image=http://magiccards.info/scans/en/pc/45.jpg
+image=http://mtgimage.com/card/reality%20acid.jpg
 value=3.594
 removal=1
 rarity=C

@@ -1,6 +1,6 @@
 name=Demonic Rising
 url=http://magiccards.info/avr/en/94.html
-image=http://magiccards.info/scans/en/avr/94.jpg
+image=http://mtgimage.com/card/demonic%20rising.jpg
 value=3.068
 rarity=R
 type=Enchantment

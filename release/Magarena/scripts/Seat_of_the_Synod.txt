@@ -1,6 +1,6 @@
 name=Seat of the Synod
 url=http://magiccards.info/pch/en/136.html
-image=http://magiccards.info/scans/en/pch/136.jpg
+image=http://mtgimage.com/card/seat%20of%20the%20synod.jpg
 value=4.616
 rarity=C
 type=Artifact,Land

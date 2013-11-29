@@ -1,6 +1,6 @@
 name=Galvanic Key
 url=http://magiccards.info/mi/en/173.html
-image=http://magiccards.info/scans/en/mi/173.jpg
+image=http://mtgimage.com/card/galvanic%20key.jpg
 value=2.529
 rarity=C
 type=Artifact

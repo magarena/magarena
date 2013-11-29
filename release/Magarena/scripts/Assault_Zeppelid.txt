@@ -1,6 +1,6 @@
 name=Assault Zeppelid
 url=http://magiccards.info/di/en/103.html
-image=http://magiccards.info/scans/en/di/103.jpg
+image=http://mtgimage.com/card/assault%20zeppelid.jpg
 value=3.864
 rarity=C
 type=Creature

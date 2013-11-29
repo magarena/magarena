@@ -1,6 +1,6 @@
 name=Flowering Field
 url=http://magiccards.info/pr/en/9.html
-image=http://magiccards.info/scans/en/pr/9.jpg
+image=http://mtgimage.com/card/flowering%20field.jpg
 value=1.882
 rarity=U
 type=Enchantment

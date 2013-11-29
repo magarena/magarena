@@ -1,6 +1,6 @@
 name=Memory Lapse
 url=http://magiccards.info/7e/en/88.html
-image=http://magiccards.info/scans/en/7e/88.jpg
+image=http://mtgimage.com/card/memory%20lapse.jpg
 value=4.053
 rarity=C
 type=Instant

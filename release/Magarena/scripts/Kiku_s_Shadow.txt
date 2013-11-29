@@ -1,6 +1,6 @@
 name=Kiku's Shadow
 url=http://magiccards.info/sok/en/77.html
-image=http://magiccards.info/scans/en/sok/77.jpg
+image=http://mtgimage.com/card/kiku%27s%20shadow.jpg
 value=3.898
 rarity=U
 type=Sorcery

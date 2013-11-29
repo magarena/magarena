@@ -1,6 +1,6 @@
 name=Corpse Cur
 url=http://magiccards.info/som/en/147.html
-image=http://magiccards.info/scans/en/som/147.jpg
+image=http://mtgimage.com/card/corpse%20cur.jpg
 value=3.295
 rarity=C
 type=Artifact,Creature

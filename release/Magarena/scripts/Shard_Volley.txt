@@ -1,6 +1,6 @@
 name=Shard Volley
 url=http://magiccards.info/mt/en/103.html
-image=http://magiccards.info/scans/en/mt/103.jpg
+image=http://mtgimage.com/card/shard%20volley.jpg
 value=2.779
 removal=3
 rarity=C

@@ -1,6 +1,6 @@
 name=Grim Tutor
 url=http://magiccards.info/me3/en/69.html
-image=http://magiccards.info/scans/en/me3/69.jpg
+image=http://mtgimage.com/card/grim%20tutor.jpg
 value=4.271
 rarity=R
 type=Sorcery

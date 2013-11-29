@@ -1,6 +1,6 @@
 name=Lhurgoyf
 url=http://magiccards.info/cmd/en/165.html
-image=http://magiccards.info/scans/en/cmd/165.jpg
+image=http://mtgimage.com/card/lhurgoyf.jpg
 value=4.336
 rarity=R
 type=Creature

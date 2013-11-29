@@ -1,6 +1,6 @@
 name=Trigon of Infestation
 url=http://magiccards.info/som/en/214.html
-image=http://magiccards.info/scans/en/som/214.jpg
+image=http://mtgimage.com/card/trigon%20of%20infestation.jpg
 value=3.019
 rarity=U
 type=Artifact

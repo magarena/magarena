@@ -1,6 +1,6 @@
 name=Staff of Domination
 url=http://magiccards.info/5dn/en/156.html
-image=http://magiccards.info/scans/en/5dn/156.jpg
+image=http://mtgimage.com/card/staff%20of%20domination.jpg
 value=4.423
 rarity=R
 type=Artifact

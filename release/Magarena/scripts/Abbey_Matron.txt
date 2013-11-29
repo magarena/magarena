@@ -1,6 +1,6 @@
 name=Abbey Matron
 url=http://magiccards.info/hl/en/102.html
-image=http://magiccards.info/scans/en/hl/102.jpg
+image=http://mtgimage.com/card/abbey%20matron.jpg
 value=1.591
 rarity=C
 type=Creature

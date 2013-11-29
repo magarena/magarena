@@ -1,6 +1,6 @@
 name=Blunt the Assault
 url=http://magiccards.info/som/en/113.html
-image=http://magiccards.info/scans/en/som/113.jpg
+image=http://mtgimage.com/card/blunt%20the%20assault.jpg
 value=2.830
 rarity=C
 type=Instant

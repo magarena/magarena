@@ -1,6 +1,6 @@
 name=Master Transmuter
 url=http://magiccards.info/arc/en/7.html
-image=http://magiccards.info/scans/en/arc/7.jpg
+image=http://mtgimage.com/card/master%20transmuter.jpg
 value=4.554
 rarity=R
 type=Artifact,Creature

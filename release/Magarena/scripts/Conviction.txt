@@ -1,6 +1,6 @@
 name=Conviction
 url=http://magiccards.info/sh/en/105.html
-image=http://magiccards.info/scans/en/sh/105.jpg
+image=http://mtgimage.com/card/conviction.jpg
 value=3.061
 rarity=C
 type=Enchantment

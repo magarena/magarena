@@ -1,6 +1,6 @@
 name=Rafiq of the Many
 url=http://magiccards.info/fvl/en/10.html
-image=http://magiccards.info/scans/en/ala/185.jpg
+image=http://mtgimage.com/card/rafiq%20of%20the%20many.jpg
 value=3.809
 rarity=M
 type=Legendary,Creature

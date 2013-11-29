@@ -1,6 +1,6 @@
 name=Academy Ruins
 url=http://magiccards.info/ts/en/269.html
-image=http://magiccards.info/scans/en/ts/269.jpg
+image=http://mtgimage.com/card/academy%20ruins.jpg
 value=4.453
 rarity=R
 type=Legendary,Land

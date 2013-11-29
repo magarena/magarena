@@ -1,6 +1,6 @@
 name=Demonic Tutor
 url=http://magiccards.info/dvd/en/49.html
-image=http://magiccards.info/scans/en/dvd/49.jpg
+image=http://mtgimage.com/card/demonic%20tutor.jpg
 value=4.895
 rarity=R
 type=Sorcery

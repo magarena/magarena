@@ -1,6 +1,6 @@
 name=Goblin Bombardment
 url=http://magiccards.info/tp/en/179.html
-image=http://magiccards.info/scans/en/tp/179.jpg
+image=http://mtgimage.com/card/goblin%20bombardment.jpg
 value=4.218
 rarity=U
 type=Enchantment

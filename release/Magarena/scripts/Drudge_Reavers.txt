@@ -1,6 +1,6 @@
 name=Drudge Reavers
 url=http://magiccards.info/ts/en/105.html
-image=http://magiccards.info/scans/en/ts/105.jpg
+image=http://mtgimage.com/card/drudge%20reavers.jpg
 value=2.854
 rarity=C
 type=Creature

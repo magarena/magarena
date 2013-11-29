@@ -1,6 +1,6 @@
 name=Dauthi Horror
 url=http://magiccards.info/tp/en/16.html
-image=http://magiccards.info/scans/en/tp/16.jpg
+image=http://mtgimage.com/card/dauthi%20horror.jpg
 value=4.106
 rarity=C
 type=Creature

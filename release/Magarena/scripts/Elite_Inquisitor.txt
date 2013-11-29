@@ -1,6 +1,6 @@
 name=Elite Inquisitor
 url=http://magiccards.info/isd/en/13.html
-image=http://magiccards.info/scans/en/isd/13.jpg
+image=http://mtgimage.com/card/elite%20inquisitor.jpg
 value=3.934
 rarity=R
 type=Creature

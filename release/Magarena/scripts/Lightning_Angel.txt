@@ -1,6 +1,6 @@
 name=Lightning Angel
 url=http://magiccards.info/tsts/en/94.html
-image=http://magiccards.info/scans/en/tsts/94.jpg
+image=http://mtgimage.com/card/lightning%20angel.jpg
 value=4.446
 rarity=R
 type=Creature

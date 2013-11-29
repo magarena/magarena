@@ -1,6 +1,6 @@
 name=Tower of Eons
 url=http://magiccards.info/mi/en/266.html
-image=http://magiccards.info/scans/en/mi/266.jpg
+image=http://mtgimage.com/card/tower%20of%20eons.jpg
 value=3.041
 rarity=R
 type=Artifact

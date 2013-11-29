@@ -1,6 +1,6 @@
 name=Wasteland
 url=http://magiccards.info/tp/en/340.html
-image=http://magiccards.info/scans/en/tp/340.jpg
+image=http://mtgimage.com/card/wasteland.jpg
 value=4.647
 rarity=U
 type=Land

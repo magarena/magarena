@@ -1,6 +1,6 @@
 name=Ethersworn Adjudicator
 url=http://magiccards.info/cfx/en/26.html
-image=http://magiccards.info/scans/en/cfx/26.jpg
+image=http://mtgimage.com/card/ethersworn%20adjudicator.jpg
 value=3.802
 rarity=M
 type=Artifact,Creature

@@ -1,6 +1,6 @@
 name=Lull
 url=http://magiccards.info/us/en/267.html
-image=http://magiccards.info/scans/en/us/267.jpg
+image=http://mtgimage.com/card/lull.jpg
 value=4.113
 rarity=C
 type=Instant

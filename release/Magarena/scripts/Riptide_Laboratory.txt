@@ -1,6 +1,6 @@
 name=Riptide Laboratory
 url=http://magiccards.info/on/en/322.html
-image=http://magiccards.info/scans/en/on/322.jpg
+image=http://mtgimage.com/card/riptide%20laboratory.jpg
 value=4.090
 rarity=R
 type=Land

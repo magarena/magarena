@@ -1,6 +1,6 @@
 name=Debtors' Knell
 url=http://magiccards.info/gp/en/141.html
-image=http://magiccards.info/scans/en/gp/141.jpg
+image=http://mtgimage.com/card/debtors%27%20knell.jpg
 value=4.490
 rarity=R
 type=Enchantment

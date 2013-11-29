@@ -1,6 +1,6 @@
 name=Sighted-Caste Sorcerer
 url=http://magiccards.info/ala/en/26.html
-image=http://magiccards.info/scans/en/ala/26.jpg
+image=http://mtgimage.com/card/sighted%2Dcaste%20sorcerer.jpg
 value=2.631
 rarity=C
 type=Creature

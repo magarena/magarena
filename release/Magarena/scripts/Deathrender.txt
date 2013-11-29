@@ -1,6 +1,6 @@
 name=Deathrender
 url=http://magiccards.info/lw/en/255.html
-image=http://magiccards.info/scans/en/lw/255.jpg
+image=http://mtgimage.com/card/deathrender.jpg
 value=4.351
 rarity=R
 type=Artifact

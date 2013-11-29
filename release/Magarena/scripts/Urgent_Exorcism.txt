@@ -1,6 +1,6 @@
 name=Urgent Exorcism
 url=http://magiccards.info/isd/en/40.html
-image=http://magiccards.info/scans/en/isd/40.jpg
+image=http://mtgimage.com/card/urgent%20exorcism.jpg
 value=2.804
 removal=1
 rarity=C

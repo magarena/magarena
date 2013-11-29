@@ -1,6 +1,6 @@
 name=Maw of the Mire
 url=http://magiccards.info/isd/en/108.html
-image=http://magiccards.info/scans/en/isd/108.jpg
+image=http://mtgimage.com/card/maw%20of%20the%20mire.jpg
 value=2.127
 removal=3
 rarity=C

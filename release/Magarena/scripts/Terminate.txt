@@ -1,6 +1,6 @@
 name=Terminate
 url=http://magiccards.info/cmd/en/231.html
-image=http://magiccards.info/scans/en/arc/95.jpg
+image=http://mtgimage.com/card/terminate.jpg
 value=4.711
 removal=5
 rarity=C

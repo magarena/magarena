@@ -1,6 +1,6 @@
 name=Perimeter Captain
 url=http://magiccards.info/wwk/en/16.html
-image=http://magiccards.info/scans/en/wwk/16.jpg
+image=http://mtgimage.com/card/perimeter%20captain.jpg
 value=4.231
 rarity=U
 type=Creature

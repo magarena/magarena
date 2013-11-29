@@ -1,6 +1,6 @@
 name=Vampiric Link
 url=http://magiccards.info/pc/en/92.html
-image=http://magiccards.info/scans/en/pc/92.jpg
+image=http://mtgimage.com/card/vampiric%20link.jpg
 value=4.018
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Vodalian Soldiers
 url=http://magiccards.info/5e/en/134.html
-image=http://magiccards.info/scans/en/5e/134.jpg
+image=http://mtgimage.com/card/vodalian%20soldiers.jpg
 value=1.810
 rarity=C
 type=Creature

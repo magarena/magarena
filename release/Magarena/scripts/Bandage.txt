@@ -1,6 +1,6 @@
 name=Bandage
 url=http://magiccards.info/10e/en/9.html
-image=http://magiccards.info/scans/en/10e/9.jpg
+image=http://mtgimage.com/card/bandage.jpg
 value=2.206
 rarity=C
 type=Instant

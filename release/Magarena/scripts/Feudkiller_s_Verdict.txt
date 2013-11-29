@@ -1,6 +1,6 @@
 name=Feudkiller's Verdict
 url=http://magiccards.info/mt/en/9.html
-image=http://magiccards.info/scans/en/mt/9.jpg
+image=http://mtgimage.com/card/feudkiller%27s%20verdict.jpg
 value=4.000
 rarity=R
 type=Tribal,Sorcery

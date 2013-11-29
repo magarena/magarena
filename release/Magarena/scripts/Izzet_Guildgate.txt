@@ -1,6 +1,6 @@
 name=Izzet Guildgate
 url=http://magiccards.info/rtr/en/242.html
-image=http://magiccards.info/scans/en/rtr/242.jpg
+image=http://mtgimage.com/card/izzet%20guildgate.jpg
 value=3.783
 rarity=C
 type=Land

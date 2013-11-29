@@ -1,6 +1,6 @@
 name=Ophidian
 url=http://magiccards.info/wl/en/45.html
-image=http://magiccards.info/scans/en/wl/45.jpg
+image=http://mtgimage.com/card/ophidian.jpg
 value=3.689
 rarity=C
 type=Creature

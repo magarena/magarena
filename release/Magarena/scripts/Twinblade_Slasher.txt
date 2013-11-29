@@ -1,6 +1,6 @@
 name=Twinblade Slasher
 url=http://magiccards.info/eve/en/79.html
-image=http://magiccards.info/scans/en/eve/79.jpg
+image=http://mtgimage.com/card/twinblade%20slasher.jpg
 value=3.959
 rarity=U
 type=Creature

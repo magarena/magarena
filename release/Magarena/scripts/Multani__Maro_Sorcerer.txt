@@ -1,6 +1,6 @@
 name=Multani, Maro-Sorcerer
 url=http://magiccards.info/ul/en/107.html
-image=http://magiccards.info/scans/en/ul/107.jpg
+image=http://mtgimage.com/card/multani%2C%20maro%2Dsorcerer.jpg
 value=4.115
 rarity=R
 type=Legendary,Creature

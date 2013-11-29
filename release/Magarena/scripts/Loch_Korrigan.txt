@@ -1,6 +1,6 @@
 name=Loch Korrigan
 url=http://magiccards.info/shm/en/71.html
-image=http://magiccards.info/scans/en/shm/71.jpg
+image=http://mtgimage.com/card/loch%20korrigan.jpg
 value=1.580
 rarity=C
 type=Creature

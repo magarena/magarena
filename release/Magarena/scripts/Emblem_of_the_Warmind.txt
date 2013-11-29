@@ -1,6 +1,6 @@
 name=Emblem of the Warmind
 url=http://magiccards.info/fut/en/112.html
-image=http://magiccards.info/scans/en/fut/112.jpg
+image=http://mtgimage.com/card/emblem%20of%20the%20warmind.jpg
 value=3.202
 rarity=U
 type=Enchantment

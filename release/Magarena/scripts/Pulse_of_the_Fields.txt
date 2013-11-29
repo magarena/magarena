@@ -1,6 +1,6 @@
 name=Pulse of the Fields
 url=http://magiccards.info/ds/en/11.html
-image=http://magiccards.info/scans/en/ds/11.jpg
+image=http://mtgimage.com/card/pulse%20of%20the%20fields.jpg
 value=4.160
 rarity=R
 type=Instant

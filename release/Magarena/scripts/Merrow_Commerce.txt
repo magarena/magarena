@@ -1,6 +1,6 @@
 name=Merrow Commerce
 url=http://magiccards.info/lw/en/72.html
-image=http://magiccards.info/scans/en/lw/72.jpg
+image=http://mtgimage.com/card/merrow%20commerce.jpg
 value=3.920
 rarity=U
 type=Tribal,Enchantment

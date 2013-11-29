@@ -1,6 +1,6 @@
 name=Freewind Falcon
 url=http://magiccards.info/vi/en/105.html
-image=http://magiccards.info/scans/en/vi/105.jpg
+image=http://mtgimage.com/card/freewind%20falcon.jpg
 value=3.180
 rarity=C
 type=Creature

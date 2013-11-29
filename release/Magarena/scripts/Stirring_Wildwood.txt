@@ -1,6 +1,6 @@
 name=Stirring Wildwood
 url=http://magiccards.info/wwk/en/144.html
-image=http://magiccards.info/scans/en/wwk/144.jpg
+image=http://mtgimage.com/card/stirring%20wildwood.jpg
 value=4.215
 rarity=R
 type=Land

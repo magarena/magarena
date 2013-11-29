@@ -1,6 +1,6 @@
 name=Bonfire of the Damned
 url=http://magiccards.info/avr/en/129.html
-image=http://magiccards.info/scans/en/avr/129.jpg
+image=http://mtgimage.com/card/bonfire%20of%20the%20damned.jpg
 value=4.008
 removal=2
 rarity=M

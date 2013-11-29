@@ -1,6 +1,6 @@
 name=Noble Vestige
 url=http://magiccards.info/zen/en/29.html
-image=http://magiccards.info/scans/en/zen/29.jpg
+image=http://mtgimage.com/card/noble%20vestige.jpg
 value=1.595
 rarity=C
 type=Creature

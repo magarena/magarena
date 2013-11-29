@@ -1,6 +1,6 @@
 name=Dross Crocodile
 url=http://magiccards.info/10e/en/138.html
-image=http://magiccards.info/scans/en/10e/138.jpg
+image=http://mtgimage.com/card/dross%20crocodile.jpg
 value=2.697
 rarity=C
 type=Creature

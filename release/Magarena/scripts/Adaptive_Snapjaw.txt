@@ -1,6 +1,6 @@
 name=Adaptive Snapjaw
 url=http://magiccards.info/gtc/en/113.html
-image=http://magiccards.info/scans/en/gtc/113.jpg
+image=http://mtgimage.com/card/adaptive%20snapjaw.jpg
 value=2.981
 rarity=C
 type=Creature

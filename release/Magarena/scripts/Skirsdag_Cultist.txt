@@ -1,6 +1,6 @@
 name=Skirsdag Cultist
 url=http://magiccards.info/isd/en/163.html
-image=http://magiccards.info/scans/en/isd/163.jpg
+image=http://mtgimage.com/card/skirsdag%20cultist.jpg
 value=3.188
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Oblivion Crown
 url=http://magiccards.info/fut/en/73.html
-image=http://magiccards.info/scans/en/fut/73.jpg
+image=http://mtgimage.com/card/oblivion%20crown.jpg
 value=2.959
 rarity=C
 type=Enchantment

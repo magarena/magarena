@@ -1,6 +1,6 @@
 name=Aesthir Glider
 url=http://magiccards.info/me4/en/176.html
-image=http://magiccards.info/scans/en/me4/176.jpg
+image=http://mtgimage.com/card/aesthir%20glider.jpg
 value=2.569
 rarity=C
 type=Artifact,Creature

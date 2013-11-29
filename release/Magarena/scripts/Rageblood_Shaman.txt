@@ -1,6 +1,6 @@
 name=Rageblood Shaman
 url=http://magiccards.info/ths/en/138.html
-image=http://magiccards.info/scans/en/ths/138.jpg
+image=http://mtgimage.com/card/rageblood%20shaman.jpg
 value=4.011
 rarity=R
 type=Creature

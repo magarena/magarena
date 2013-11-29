@@ -1,6 +1,6 @@
 name=Doubtless One
 url=http://magiccards.info/on/en/27.html
-image=http://magiccards.info/scans/en/on/27.jpg
+image=http://mtgimage.com/card/doubtless%20one.jpg
 value=4.102
 rarity=U
 type=Creature

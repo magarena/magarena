@@ -1,6 +1,6 @@
 name=Falkenrath Marauders
 url=http://magiccards.info/isd/en/141.html
-image=http://magiccards.info/scans/en/isd/141.jpg
+image=http://mtgimage.com/card/falkenrath%20marauders.jpg
 value=3.903
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Changeling Hero
 url=http://magiccards.info/lw/en/9.html
-image=http://magiccards.info/scans/en/lw/9.jpg
+image=http://mtgimage.com/card/changeling%20hero.jpg
 value=2.965
 removal=2
 rarity=U

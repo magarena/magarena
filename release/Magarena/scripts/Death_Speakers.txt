@@ -1,6 +1,6 @@
 name=Death Speakers
 url=http://magiccards.info/med/en/7.html
-image=http://magiccards.info/scans/en/med/7.jpg
+image=http://mtgimage.com/card/death%20speakers.jpg
 value=3.206
 rarity=C
 type=Creature

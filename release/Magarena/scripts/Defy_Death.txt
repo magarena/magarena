@@ -1,6 +1,6 @@
 name=Defy Death
 url=http://magiccards.info/avr/en/16.html
-image=http://magiccards.info/scans/en/avr/16.jpg
+image=http://mtgimage.com/card/defy%20death.jpg
 value=3.786
 rarity=U
 type=Sorcery

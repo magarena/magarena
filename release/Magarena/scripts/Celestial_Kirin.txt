@@ -1,6 +1,6 @@
 name=Celestial Kirin
 url=http://magiccards.info/sok/en/3.html
-image=http://magiccards.info/scans/en/sok/3.jpg
+image=http://mtgimage.com/card/celestial%20kirin.jpg
 value=3.855
 rarity=R
 type=Legendary,Creature

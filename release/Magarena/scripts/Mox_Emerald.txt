@@ -1,6 +1,6 @@
 name=Mox Emerald
 url=http://magiccards.info/cedi/en/263.html
-image=http://magiccards.info/scans/en/cedi/263.jpg
+image=http://mtgimage.com/card/mox%20emerald.jpg
 value=4.749
 rarity=R
 type=Artifact

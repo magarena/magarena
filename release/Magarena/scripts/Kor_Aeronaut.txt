@@ -1,6 +1,6 @@
 name=Kor Aeronaut
 url=http://magiccards.info/ddf/en/10.html
-image=http://magiccards.info/scans/en/zen/17.jpg
+image=http://mtgimage.com/card/kor%20aeronaut.jpg
 value=4.050
 rarity=U
 type=Creature

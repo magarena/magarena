@@ -1,6 +1,6 @@
 name=Marble Diamond
 url=http://magiccards.info/dvd/en/24.html
-image=http://magiccards.info/scans/en/dvd/24.jpg
+image=http://mtgimage.com/card/marble%20diamond.jpg
 value=3.075
 rarity=U
 type=Artifact

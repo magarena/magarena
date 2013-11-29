@@ -1,6 +1,6 @@
 name=Cleanfall
 url=http://magiccards.info/chk/en/6.html
-image=http://magiccards.info/scans/en/chk/6.jpg
+image=http://mtgimage.com/card/cleanfall.jpg
 value=2.821
 rarity=U
 type=Sorcery

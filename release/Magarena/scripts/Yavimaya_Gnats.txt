@@ -1,6 +1,6 @@
 name=Yavimaya Gnats
 url=http://magiccards.info/ia/en/168.html
-image=http://magiccards.info/scans/en/ia/168.jpg
+image=http://mtgimage.com/card/yavimaya%20gnats.jpg
 value=2.829
 rarity=U
 type=Creature

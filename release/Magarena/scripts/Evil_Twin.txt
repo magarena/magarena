@@ -1,6 +1,6 @@
 name=Evil Twin
 url=http://magiccards.info/isd/en/212.html
-image=http://magiccards.info/scans/en/isd/212.jpg
+image=http://mtgimage.com/card/evil%20twin.jpg
 value=3.912
 rarity=R
 type=Creature

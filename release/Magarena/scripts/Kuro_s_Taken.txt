@@ -1,6 +1,6 @@
 name=Kuro's Taken
 url=http://magiccards.info/sok/en/79.html
-image=http://magiccards.info/scans/en/sok/79.jpg
+image=http://mtgimage.com/card/kuro%27s%20taken.jpg
 value=3.042
 rarity=C
 type=Creature

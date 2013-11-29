@@ -1,6 +1,6 @@
 name=Urza's Blueprints
 url=http://magiccards.info/ul/en/137.html
-image=http://magiccards.info/scans/en/ul/137.jpg
+image=http://mtgimage.com/card/urza%27s%20blueprints.jpg
 value=2.870
 rarity=R
 type=Artifact

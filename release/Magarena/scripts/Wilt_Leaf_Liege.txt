@@ -1,6 +1,6 @@
 name=Wilt-Leaf Liege
 url=http://magiccards.info/shm/en/245.html
-image=http://magiccards.info/scans/en/shm/245.jpg
+image=http://mtgimage.com/card/wilt%2Dleaf%20liege.jpg
 value=4.325
 rarity=R
 type=Creature

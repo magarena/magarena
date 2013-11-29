@@ -1,6 +1,6 @@
 name=Slayers' Stronghold
 url=http://magiccards.info/avr/en/229.html
-image=http://magiccards.info/scans/en/avr/229.jpg
+image=http://mtgimage.com/card/slayers%27%20stronghold.jpg
 value=3.844
 rarity=R
 type=Land

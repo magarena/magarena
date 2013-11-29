@@ -1,6 +1,6 @@
 name=Seraph Sanctuary
 url=http://magiccards.info/avr/en/228.html
-image=http://magiccards.info/scans/en/avr/228.jpg
+image=http://mtgimage.com/card/seraph%20sanctuary.jpg
 value=2.852
 rarity=C
 type=Land

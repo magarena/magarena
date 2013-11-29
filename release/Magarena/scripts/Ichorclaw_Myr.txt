@@ -1,6 +1,6 @@
 name=Ichorclaw Myr
 url=http://magiccards.info/som/en/166.html
-image=http://magiccards.info/scans/en/som/166.jpg
+image=http://mtgimage.com/card/ichorclaw%20myr.jpg
 value=4.137
 rarity=C
 type=Artifact,Creature

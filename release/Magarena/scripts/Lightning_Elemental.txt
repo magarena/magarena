@@ -1,6 +1,6 @@
 name=Lightning Elemental
 url=http://magiccards.info/m12/en/149.html
-image=http://magiccards.info/scans/en/dpa/50.jpg
+image=http://mtgimage.com/card/lightning%20elemental.jpg
 value=3.137
 ability=haste
 rarity=C

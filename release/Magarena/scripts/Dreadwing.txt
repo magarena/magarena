@@ -1,6 +1,6 @@
 name=Dreadwing
 url=http://magiccards.info/cfx/en/43.html
-image=http://magiccards.info/scans/en/cfx/43.jpg
+image=http://mtgimage.com/card/dreadwing.jpg
 value=2.745
 rarity=U
 type=Creature

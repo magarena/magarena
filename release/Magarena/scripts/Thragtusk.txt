@@ -1,6 +1,6 @@
 name=Thragtusk
 url=http://magiccards.info/m13/en/193.html
-image=http://magiccards.info/scans/en/m13/193.jpg
+image=http://mtgimage.com/card/thragtusk.jpg
 value=4.073
 rarity=R
 type=Creature

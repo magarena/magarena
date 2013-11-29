@@ -1,6 +1,6 @@
 name=Spirit of the Night
 url=http://magiccards.info/mr/en/44.html
-image=http://magiccards.info/scans/en/mr/44.jpg
+image=http://mtgimage.com/card/spirit%20of%20the%20night.jpg
 value=4.098
 rarity=R
 type=Legendary,Creature

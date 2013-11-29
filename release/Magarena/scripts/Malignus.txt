@@ -1,6 +1,6 @@
 name=Malignus
 url=http://magiccards.info/avr/en/148.html
-image=http://magiccards.info/scans/en/avr/148.jpg
+image=http://mtgimage.com/card/malignus.jpg
 value=3.735
 rarity=M
 type=Creature

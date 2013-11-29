@@ -1,6 +1,6 @@
 name=Shatterstorm
 url=http://magiccards.info/10e/en/229.html
-image=http://magiccards.info/scans/en/10e/229.jpg
+image=http://mtgimage.com/card/shatterstorm.jpg
 value=4.331
 removal=2
 rarity=R

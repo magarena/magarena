@@ -1,6 +1,6 @@
 name=Charmbreaker Devils
 url=http://magiccards.info/isd/en/134.html
-image=http://magiccards.info/scans/en/isd/134.jpg
+image=http://mtgimage.com/card/charmbreaker%20devils.jpg
 value=3.850
 rarity=R
 type=Creature

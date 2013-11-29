@@ -1,6 +1,6 @@
 name=Poultice Sliver
 url=http://magiccards.info/pc/en/11.html
-image=http://magiccards.info/scans/en/pc/11.jpg
+image=http://mtgimage.com/card/poultice%20sliver.jpg
 value=2.120
 rarity=C
 type=Creature

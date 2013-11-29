@@ -1,6 +1,6 @@
 name=Blur Sliver
 url=http://magiccards.info/m14/en/129.html
-image=http://magiccards.info/scans/en/m14/129.jpg
+image=http://mtgimage.com/card/blur%20sliver.jpg
 value=3.268
 rarity=C
 type=Creature

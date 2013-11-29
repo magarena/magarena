@@ -1,6 +1,6 @@
 name=Soldier Replica
 url=http://magiccards.info/mi/en/244.html
-image=http://magiccards.info/scans/en/mi/244.jpg
+image=http://mtgimage.com/card/soldier%20replica.jpg
 value=3.103
 rarity=C
 type=Artifact,Creature

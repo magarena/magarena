@@ -1,6 +1,6 @@
 name=Kami of Empty Graves
 url=http://magiccards.info/sok/en/75.html
-image=http://magiccards.info/scans/en/sok/75.jpg
+image=http://mtgimage.com/card/kami%20of%20empty%20graves.jpg
 value=1.574
 rarity=C
 type=Creature

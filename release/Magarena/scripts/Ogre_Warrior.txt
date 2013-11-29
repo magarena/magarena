@@ -1,6 +1,6 @@
 name=Ogre Warrior
 url=http://magiccards.info/st2k/en/12.html
-image=http://magiccards.info/scans/en/st2k/12.jpg
+image=http://mtgimage.com/card/ogre%20warrior.jpg
 value=1.690
 rarity=C
 type=Creature

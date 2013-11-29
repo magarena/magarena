@@ -1,6 +1,6 @@
 name=Marhault Elsdragon
 url=http://magiccards.info/ch/en/114.html
-image=http://magiccards.info/scans/en/ch/114.jpg
+image=http://mtgimage.com/card/marhault%20elsdragon.jpg
 value=2.484
 rarity=U
 type=Legendary,Creature

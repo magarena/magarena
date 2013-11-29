@@ -1,6 +1,6 @@
 name=Dispel
 url=http://magiccards.info/rtr/en/36.html
-image=http://magiccards.info/scans/en/rtr/36.jpg
+image=http://mtgimage.com/card/dispel.jpg
 value=3.529
 rarity=C
 type=Instant

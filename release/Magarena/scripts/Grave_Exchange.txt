@@ -1,6 +1,6 @@
 name=Grave Exchange
 url=http://magiccards.info/avr/en/105.html
-image=http://magiccards.info/scans/en/avr/105.jpg
+image=http://mtgimage.com/card/grave%20exchange.jpg
 value=1.860
 rarity=C
 type=Sorcery

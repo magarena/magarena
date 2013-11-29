@@ -1,6 +1,6 @@
 name=Mental Discipline
 url=http://magiccards.info/ud/en/37.html
-image=http://magiccards.info/scans/en/ud/37.jpg
+image=http://mtgimage.com/card/mental%20discipline.jpg
 value=2.914
 rarity=C
 type=Enchantment

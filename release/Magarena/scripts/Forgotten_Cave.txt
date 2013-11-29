@@ -1,6 +1,6 @@
 name=Forgotten Cave
 url=http://magiccards.info/ddj/en/33.html
-image=http://magiccards.info/scans/en/ddj/33.jpg
+image=http://mtgimage.com/card/forgotten%20cave.jpg
 value=3.167
 rarity=C
 type=Land

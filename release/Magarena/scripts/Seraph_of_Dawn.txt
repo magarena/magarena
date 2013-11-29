@@ -1,6 +1,6 @@
 name=Seraph of Dawn
 url=http://magiccards.info/avr/en/35.html
-image=http://magiccards.info/scans/en/avr/35.jpg
+image=http://mtgimage.com/card/seraph%20of%20dawn.jpg
 value=3.867
 rarity=C
 type=Creature

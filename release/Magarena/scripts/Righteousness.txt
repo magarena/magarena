@@ -1,6 +1,6 @@
 name=Righteousness
 url=http://magiccards.info/m10/en/27.html
-image=http://magiccards.info/scans/en/m10/27.jpg
+image=http://mtgimage.com/card/righteousness.jpg
 ignore=62602
 value=4.045
 rarity=R

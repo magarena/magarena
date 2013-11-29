@@ -1,6 +1,6 @@
 name=Kragma Warcaller
 url=http://magiccards.info/ths/en/195.html
-image=http://magiccards.info/scans/en/ths/195.jpg
+image=http://mtgimage.com/card/kragma%20warcaller.jpg
 value=3.940
 rarity=U
 type=Creature

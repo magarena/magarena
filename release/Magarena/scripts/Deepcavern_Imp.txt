@@ -1,6 +1,6 @@
 name=Deepcavern Imp
 url=http://magiccards.info/fut/en/83.html
-image=http://magiccards.info/scans/en/fut/83.jpg
+image=http://mtgimage.com/card/deepcavern%20imp.jpg
 value=3.028
 rarity=C
 type=Creature

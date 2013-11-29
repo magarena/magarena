@@ -1,6 +1,6 @@
 name=Ring of Gix
 url=http://magiccards.info/ul/en/131.html
-image=http://magiccards.info/scans/en/ul/131.jpg
+image=http://mtgimage.com/card/ring%20of%20gix.jpg
 value=3.779
 rarity=R
 type=Artifact

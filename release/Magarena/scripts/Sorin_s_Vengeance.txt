@@ -1,6 +1,6 @@
 name=Sorin's Vengeance
 url=http://magiccards.info/m12/en/111.html
-image=http://magiccards.info/scans/en/m12/111.jpg
+image=http://mtgimage.com/card/sorin%27s%20vengeance.jpg
 value=4.107
 rarity=R
 type=Sorcery

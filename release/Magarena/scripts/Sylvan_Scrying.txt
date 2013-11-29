@@ -1,6 +1,6 @@
 name=Sylvan Scrying
 url=http://magiccards.info/10e/en/302.html
-image=http://magiccards.info/scans/en/10e/302.jpg
+image=http://mtgimage.com/card/sylvan%20scrying.jpg
 value=4.354
 rarity=U
 type=Sorcery

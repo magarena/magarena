@@ -1,6 +1,6 @@
 name=Thundermare
 url=http://magiccards.info/9e/en/224.html
-image=http://magiccards.info/scans/en/9e/224.jpg
+image=http://mtgimage.com/card/thundermare.jpg
 value=4.071
 rarity=R
 type=Creature

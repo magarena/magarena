@@ -1,6 +1,6 @@
 name=Giant Adephage
 url=http://magiccards.info/gtc/en/121.html
-image=http://magiccards.info/scans/en/gtc/121.jpg
+image=http://mtgimage.com/card/giant%20adephage.jpg
 value=3.614
 rarity=M
 type=Creature

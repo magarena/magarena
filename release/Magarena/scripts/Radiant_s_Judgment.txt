@@ -1,6 +1,6 @@
 name=Radiant's Judgment
 url=http://magiccards.info/ul/en/22.html
-image=http://magiccards.info/scans/en/ul/22.jpg
+image=http://mtgimage.com/card/radiant%27s%20judgment.jpg
 value=3.652
 removal=3
 rarity=C

@@ -1,6 +1,6 @@
 name=Rootbound Crag
 url=http://magiccards.info/m12/en/228.html
-image=http://magiccards.info/scans/en/m11/227.jpg
+image=http://mtgimage.com/card/rootbound%20crag.jpg
 value=3.826
 rarity=R
 type=Land

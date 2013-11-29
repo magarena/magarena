@@ -1,6 +1,6 @@
 name=Deranged Hermit
 url=http://magiccards.info/ul/en/101.html
-image=http://magiccards.info/scans/en/ul/101.jpg
+image=http://mtgimage.com/card/deranged%20hermit.jpg
 value=4.424
 rarity=R
 type=Creature

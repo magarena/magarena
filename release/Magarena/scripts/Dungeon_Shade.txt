@@ -1,6 +1,6 @@
 name=Dungeon Shade
 url=http://magiccards.info/sh/en/8.html
-image=http://magiccards.info/scans/en/sh/8.jpg
+image=http://mtgimage.com/card/dungeon%20shade.jpg
 value=3.473
 rarity=C
 type=Creature

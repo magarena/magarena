@@ -1,6 +1,6 @@
 name=Otherworld Atlas
 url=http://magiccards.info/avr/en/219.html
-image=http://magiccards.info/scans/en/avr/219.jpg
+image=http://mtgimage.com/card/otherworld%20atlas.jpg
 value=3.000
 rarity=R
 type=Artifact

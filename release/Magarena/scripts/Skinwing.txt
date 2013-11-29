@@ -1,6 +1,6 @@
 name=Skinwing
 url=http://magiccards.info/mbs/en/133.html
-image=http://magiccards.info/scans/en/mbs/133.jpg
+image=http://mtgimage.com/card/skinwing.jpg
 value=2.438
 rarity=U
 type=Artifact

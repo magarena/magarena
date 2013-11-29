@@ -1,6 +1,6 @@
 name=Goblin Striker
 url=http://magiccards.info/mi/en/94.html
-image=http://magiccards.info/scans/en/mi/94.jpg
+image=http://mtgimage.com/card/goblin%20striker.jpg
 value=3.067
 ability=first strike;haste
 rarity=C

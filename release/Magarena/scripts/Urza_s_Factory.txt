@@ -1,6 +1,6 @@
 name=Urza's Factory
 url=http://magiccards.info/ts/en/280.html
-image=http://magiccards.info/scans/en/ts/280.jpg
+image=http://mtgimage.com/card/urza%27s%20factory.jpg
 value=2.938
 rarity=U
 type=Land

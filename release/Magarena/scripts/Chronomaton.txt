@@ -1,6 +1,6 @@
 name=Chronomaton
 url=http://magiccards.info/m13/en/201.html
-image=http://magiccards.info/scans/en/m13/201.jpg
+image=http://mtgimage.com/card/chronomaton.jpg
 value=3.679
 rarity=U
 type=Artifact,Creature

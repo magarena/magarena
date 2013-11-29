@@ -1,6 +1,6 @@
 name=Phantom Nomad
 url=http://magiccards.info/ju/en/17.html
-image=http://magiccards.info/scans/en/ju/17.jpg
+image=http://mtgimage.com/card/phantom%20nomad.jpg
 value=3.486
 rarity=C
 type=Creature

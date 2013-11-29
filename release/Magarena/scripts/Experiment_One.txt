@@ -1,6 +1,6 @@
 name=Experiment One
 url=http://magiccards.info/gtc/en/119.html
-image=http://magiccards.info/scans/en/gtc/119.jpg
+image=http://mtgimage.com/card/experiment%20one.jpg
 value=3.817
 rarity=U
 type=Creature

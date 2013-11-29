@@ -1,6 +1,6 @@
 name=Sphere of the Suns
 url=http://magiccards.info/mbs/en/134.html
-image=http://magiccards.info/scans/en/mbs/134.jpg
+image=http://mtgimage.com/card/sphere%20of%20the%20suns.jpg
 value=3.591
 rarity=U
 type=Artifact

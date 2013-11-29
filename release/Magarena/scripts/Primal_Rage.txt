@@ -1,6 +1,6 @@
 name=Primal Rage
 url=http://magiccards.info/10e/en/286.html
-image=http://magiccards.info/scans/en/10e/286.jpg
+image=http://mtgimage.com/card/primal%20rage.jpg
 value=4.180
 rarity=U
 type=Enchantment

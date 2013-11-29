@@ -1,6 +1,6 @@
 name=Blighted Agent
 url=http://magiccards.info/nph/en/29.html
-image=http://magiccards.info/scans/en/nph/29.jpg
+image=http://mtgimage.com/card/blighted%20agent.jpg
 value=3.971
 rarity=C
 type=Creature

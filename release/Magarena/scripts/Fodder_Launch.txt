@@ -1,6 +1,6 @@
 name=Fodder Launch
 url=http://magiccards.info/lw/en/114.html
-image=http://magiccards.info/scans/en/lw/114.jpg
+image=http://mtgimage.com/card/fodder%20launch.jpg
 value=3.875
 rarity=U
 type=Tribal,Sorcery

@@ -1,6 +1,6 @@
 name=Bottle Gnomes
 url=http://magiccards.info/jvc/en/7.html
-image=http://magiccards.info/scans/en/jvc/7.jpg
+image=http://mtgimage.com/card/bottle%20gnomes.jpg
 value=4.081
 rarity=U
 type=Artifact,Creature

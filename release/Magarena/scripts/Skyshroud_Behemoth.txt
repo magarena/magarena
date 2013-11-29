@@ -1,6 +1,6 @@
 name=Skyshroud Behemoth
 url=http://magiccards.info/ne/en/116.html
-image=http://magiccards.info/scans/en/ne/116.jpg
+image=http://mtgimage.com/card/skyshroud%20behemoth.jpg
 value=1.937
 rarity=R
 type=Creature

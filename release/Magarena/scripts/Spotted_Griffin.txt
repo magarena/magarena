@@ -1,6 +1,6 @@
 name=Spotted Griffin
 url=http://magiccards.info/me4/en/28.html
-image=http://magiccards.info/scans/en/me4/28.jpg
+image=http://mtgimage.com/card/spotted%20griffin.jpg
 value=2.526
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Cinder Pyromancer
 url=http://magiccards.info/eve/en/50.html
-image=http://magiccards.info/scans/en/eve/50.jpg
+image=http://mtgimage.com/card/cinder%20pyromancer.jpg
 value=3.776
 rarity=C
 type=Creature

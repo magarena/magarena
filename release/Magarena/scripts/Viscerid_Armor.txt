@@ -1,6 +1,6 @@
 name=Viscerid Armor
 url=http://magiccards.info/me2/en/72.html
-image=http://magiccards.info/scans/en/me2/72.jpg
+image=http://mtgimage.com/card/viscerid%20armor.jpg
 value=2.804
 rarity=C
 type=Enchantment

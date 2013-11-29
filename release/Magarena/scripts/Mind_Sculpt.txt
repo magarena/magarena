@@ -1,6 +1,6 @@
 name=Mind Sculpt
 url=http://magiccards.info/m13/en/61.html
-image=http://magiccards.info/scans/en/m13/61.jpg
+image=http://mtgimage.com/card/mind%20sculpt.jpg
 value=3.717
 rarity=C
 type=Sorcery

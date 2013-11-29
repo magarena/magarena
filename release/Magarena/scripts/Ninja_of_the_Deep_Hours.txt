@@ -1,6 +1,6 @@
 name=Ninja of the Deep Hours
 url=http://magiccards.info/bok/en/44.html
-image=http://magiccards.info/scans/en/bok/44.jpg
+image=http://mtgimage.com/card/ninja%20of%20the%20deep%20hours.jpg
 value=4.561
 rarity=C
 type=Creature

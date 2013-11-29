@@ -1,6 +1,6 @@
 name=Moorland Inquisitor
 url=http://magiccards.info/avr/en/30.html
-image=http://magiccards.info/scans/en/avr/30.jpg
+image=http://mtgimage.com/card/moorland%20inquisitor.jpg
 value=2.324
 rarity=C
 type=Creature

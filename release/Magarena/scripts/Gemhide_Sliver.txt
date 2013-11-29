@@ -1,6 +1,6 @@
 name=Gemhide Sliver
 url=http://magiccards.info/ts/en/196.html
-image=http://magiccards.info/scans/en/ts/196.jpg
+image=http://mtgimage.com/card/gemhide%20sliver.jpg
 value=4.510
 rarity=C
 type=Creature

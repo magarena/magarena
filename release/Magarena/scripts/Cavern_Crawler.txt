@@ -1,6 +1,6 @@
 name=Cavern Crawler
 url=http://magiccards.info/mm/en/181.html
-image=http://magiccards.info/scans/en/mm/181.jpg
+image=http://mtgimage.com/card/cavern%20crawler.jpg
 value=1.484
 rarity=C
 type=Creature

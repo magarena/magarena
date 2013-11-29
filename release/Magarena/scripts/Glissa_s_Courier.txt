@@ -1,6 +1,6 @@
 name=Glissa's Courier
 url=http://magiccards.info/mbs/en/80.html
-image=http://magiccards.info/scans/en/mbs/80.jpg
+image=http://mtgimage.com/card/glissa%27s%20courier.jpg
 value=2.555
 rarity=C
 type=Creature

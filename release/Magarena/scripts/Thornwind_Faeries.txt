@@ -1,6 +1,6 @@
 name=Thornwind Faeries
 url=http://magiccards.info/ul/en/44.html
-image=http://magiccards.info/scans/en/ul/44.jpg
+image=http://mtgimage.com/card/thornwind%20faeries.jpg
 value=4.000
 rarity=C
 type=Creature

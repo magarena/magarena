@@ -1,6 +1,6 @@
 name=Geistcatcher's Rig
 url=http://magiccards.info/isd/en/223.html
-image=http://magiccards.info/scans/en/isd/223.jpg
+image=http://mtgimage.com/card/geistcatcher%27s%20rig.jpg
 value=2.618
 rarity=U
 type=Artifact,Creature

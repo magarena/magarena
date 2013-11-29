@@ -1,6 +1,6 @@
 name=Emerald Oryx
 url=http://magiccards.info/m10/en/179.html
-image=http://magiccards.info/scans/en/m10/179.jpg
+image=http://mtgimage.com/card/emerald%20oryx.jpg
 value=1.594
 ability=forestwalk
 rarity=C

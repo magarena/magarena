@@ -1,6 +1,6 @@
 name=Peace of Mind
 url=http://magiccards.info/9e/en/33.html
-image=http://magiccards.info/scans/en/9e/33.jpg
+image=http://mtgimage.com/card/peace%20of%20mind.jpg
 value=3.438
 rarity=U
 type=Enchantment

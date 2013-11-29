@@ -1,6 +1,6 @@
 name=Hungry Spriggan
 url=http://magiccards.info/shm/en/120.html
-image=http://magiccards.info/scans/en/shm/120.jpg
+image=http://mtgimage.com/card/hungry%20spriggan.jpg
 value=3.357
 rarity=C
 type=Creature

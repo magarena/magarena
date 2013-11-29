@@ -1,6 +1,6 @@
 name=Anger of the Gods
 url=http://magiccards.info/ths/en/112.html
-image=http://magiccards.info/scans/en/ths/112.jpg
+image=http://mtgimage.com/card/anger%20of%20the%20gods.jpg
 value=4.157
 removal=3
 rarity=R

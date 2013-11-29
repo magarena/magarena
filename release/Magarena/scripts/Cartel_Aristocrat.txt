@@ -1,6 +1,6 @@
 name=Cartel Aristocrat
 url=http://magiccards.info/gtc/en/150.html
-image=http://magiccards.info/scans/en/gtc/150.jpg
+image=http://mtgimage.com/card/cartel%20aristocrat.jpg
 value=3.350
 rarity=U
 type=Creature

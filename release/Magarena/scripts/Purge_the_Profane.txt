@@ -1,6 +1,6 @@
 name=Purge the Profane
 url=http://magiccards.info/gtc/en/190.html
-image=http://magiccards.info/scans/en/gtc/190.jpg
+image=http://mtgimage.com/card/purge%20the%20profane.jpg
 value=2.146
 rarity=C
 type=Sorcery

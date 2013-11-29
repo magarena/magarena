@@ -1,6 +1,6 @@
 name=Accorder Paladin
 url=http://magiccards.info/mbs/en/1.html
-image=http://magiccards.info/scans/en/mbs/1.jpg
+image=http://mtgimage.com/card/accorder%20paladin.jpg
 value=3.888
 rarity=U
 type=Creature

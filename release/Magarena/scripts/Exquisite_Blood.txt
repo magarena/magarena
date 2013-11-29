@@ -1,6 +1,6 @@
 name=Exquisite Blood
 url=http://magiccards.info/avr/en/102.html
-image=http://magiccards.info/scans/en/avr/102.jpg
+image=http://mtgimage.com/card/exquisite%20blood.jpg
 value=3.796
 rarity=R
 type=Enchantment

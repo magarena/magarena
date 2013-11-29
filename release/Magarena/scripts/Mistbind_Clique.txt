@@ -1,6 +1,6 @@
 name=Mistbind Clique
 url=http://magiccards.info/lw/en/75.html
-image=http://magiccards.info/scans/en/lw/75.jpg
+image=http://mtgimage.com/card/mistbind%20clique.jpg
 value=4.040
 removal=2
 rarity=R

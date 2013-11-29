@@ -1,6 +1,6 @@
 name=Sokenzan Bruiser
 url=http://magiccards.info/chk/en/188.html
-image=http://magiccards.info/scans/en/chk/188.jpg
+image=http://mtgimage.com/card/sokenzan%20bruiser.jpg
 value=1.677
 ability=mountainwalk
 rarity=C

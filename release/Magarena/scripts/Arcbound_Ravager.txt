@@ -1,6 +1,6 @@
 name=Arcbound Ravager
 url=http://magiccards.info/ds/en/100.html
-image=http://magiccards.info/scans/en/ds/100.jpg
+image=http://mtgimage.com/card/arcbound%20ravager.jpg
 value=4.491
 rarity=R
 type=Artifact,Creature

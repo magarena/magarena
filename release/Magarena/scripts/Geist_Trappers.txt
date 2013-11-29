@@ -1,6 +1,6 @@
 name=Geist Trappers
 url=http://magiccards.info/avr/en/179.html
-image=http://magiccards.info/scans/en/avr/179.jpg
+image=http://mtgimage.com/card/geist%20trappers.jpg
 value=1.833
 rarity=C
 type=Creature

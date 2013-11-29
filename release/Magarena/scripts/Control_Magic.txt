@@ -1,6 +1,6 @@
 name=Control Magic
 url=http://magiccards.info/4e/en/64.html
-image=http://magiccards.info/scans/en/4e/64.jpg
+image=http://mtgimage.com/card/control%20magic.jpg
 value=4.599
 rarity=U
 type=Enchantment

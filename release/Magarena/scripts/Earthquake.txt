@@ -1,6 +1,6 @@
 name=Earthquake
 url=http://magiccards.info/cmd/en/121.html
-image=http://magiccards.info/scans/en/m10/134.jpg
+image=http://mtgimage.com/card/earthquake.jpg
 value=4.321
 removal=2
 rarity=R

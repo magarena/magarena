@@ -1,6 +1,6 @@
 name=Underground Sea
 url=http://magiccards.info/me4/en/256.html
-image=http://magiccards.info/scans/en/me4/256.jpg
+image=http://mtgimage.com/card/underground%20sea.jpg
 value=4.628
 rarity=R
 type=Land

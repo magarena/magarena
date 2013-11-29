@@ -1,6 +1,6 @@
 name=Boomerang
 url=http://magiccards.info/dpa/en/2.html
-image=http://magiccards.info/scans/en/10e/70.jpg
+image=http://mtgimage.com/card/boomerang.jpg
 value=4.346
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Hurloon Minotaur
 url=http://magiccards.info/me3/en/102.html
-image=http://magiccards.info/scans/en/me3/102.jpg
+image=http://mtgimage.com/card/hurloon%20minotaur.jpg
 value=3.091
 rarity=C
 type=Creature

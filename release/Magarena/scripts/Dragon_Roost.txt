@@ -1,6 +1,6 @@
 name=Dragon Roost
 url=http://magiccards.info/10e/en/197.html
-image=http://magiccards.info/scans/en/10e/197.jpg
+image=http://mtgimage.com/card/dragon%20roost.jpg
 value=3.925
 rarity=R
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Taste of Blood
 url=http://magiccards.info/m12/en/113.html
-image=http://magiccards.info/scans/en/m12/113.jpg
+image=http://mtgimage.com/card/taste%20of%20blood.jpg
 value=1.939
 rarity=C
 type=Sorcery

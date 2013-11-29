@@ -1,6 +1,6 @@
 name=Recover
 url=http://magiccards.info/10e/en/172.html
-image=http://magiccards.info/scans/en/10e/172.jpg
+image=http://mtgimage.com/card/recover.jpg
 value=3.538
 rarity=C
 type=Sorcery

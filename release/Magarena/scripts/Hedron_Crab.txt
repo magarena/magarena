@@ -1,6 +1,6 @@
 name=Hedron Crab
 url=http://magiccards.info/zen/en/47.html
-image=http://magiccards.info/scans/en/zen/47.jpg
+image=http://mtgimage.com/card/hedron%20crab.jpg
 value=4.463
 rarity=U
 type=Creature

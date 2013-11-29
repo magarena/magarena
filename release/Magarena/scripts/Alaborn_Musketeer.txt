@@ -1,6 +1,6 @@
 name=Alaborn Musketeer
 url=http://magiccards.info/me4/en/1.html
-image=http://magiccards.info/scans/en/me4/1.jpg
+image=http://mtgimage.com/card/alaborn%20musketeer.jpg
 value=2.552
 ability=reach
 rarity=C

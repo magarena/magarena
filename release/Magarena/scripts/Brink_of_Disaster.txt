@@ -1,6 +1,6 @@
 name=Brink of Disaster
 url=http://magiccards.info/m12/en/84.html
-image=http://magiccards.info/scans/en/m12/84.jpg
+image=http://mtgimage.com/card/brink%20of%20disaster.jpg
 value=1.857
 removal=4
 rarity=C

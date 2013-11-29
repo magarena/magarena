@@ -1,6 +1,6 @@
 name=Duskwalker
 url=http://magiccards.info/in/en/104.html
-image=http://magiccards.info/scans/en/in/104.jpg
+image=http://mtgimage.com/card/duskwalker.jpg
 value=2.697
 rarity=C
 type=Creature

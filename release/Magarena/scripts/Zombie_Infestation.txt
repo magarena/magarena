@@ -1,6 +1,6 @@
 name=Zombie Infestation
 url=http://magiccards.info/m12/en/120.html
-image=http://magiccards.info/scans/en/m12/120.jpg
+image=http://mtgimage.com/card/zombie%20infestation.jpg
 value=4.000
 rarity=U
 type=Enchantment

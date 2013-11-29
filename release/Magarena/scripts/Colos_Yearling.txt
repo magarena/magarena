@@ -1,6 +1,6 @@
 name=Colos Yearling
 url=http://magiccards.info/ud/en/79.html
-image=http://magiccards.info/scans/en/ud/79.jpg
+image=http://mtgimage.com/card/colos%20yearling.jpg
 value=2.818
 rarity=C
 type=Creature

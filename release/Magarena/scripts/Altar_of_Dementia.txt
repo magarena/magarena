@@ -1,6 +1,6 @@
 name=Altar of Dementia
 url=http://magiccards.info/tp/en/266.html
-image=http://magiccards.info/scans/en/tp/266.jpg
+image=http://mtgimage.com/card/altar%20of%20dementia.jpg
 value=4.599
 rarity=R
 type=Artifact

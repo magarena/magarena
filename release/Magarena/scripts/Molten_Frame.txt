@@ -1,6 +1,6 @@
 name=Molten Frame
 url=http://magiccards.info/con/en/69.html
-image=http://magiccards.info/scans/en/con/69.jpg
+image=http://mtgimage.com/card/molten%20frame.jpg
 value=1.958
 rarity=C
 type=Instant

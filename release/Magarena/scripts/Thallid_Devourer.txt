@@ -1,6 +1,6 @@
 name=Thallid Devourer
 url=http://magiccards.info/me2/en/181.html
-image=http://magiccards.info/scans/en/me2/181.jpg
+image=http://mtgimage.com/card/thallid%20devourer.jpg
 value=3.478
 rarity=C
 type=Creature

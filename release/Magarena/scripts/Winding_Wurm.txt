@@ -1,6 +1,6 @@
 name=Winding Wurm
 url=http://magiccards.info/us/en/285.html
-image=http://magiccards.info/scans/en/us/285.jpg
+image=http://mtgimage.com/card/winding%20wurm.jpg
 value=2.784
 rarity=C
 type=Creature

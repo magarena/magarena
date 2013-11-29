@@ -1,6 +1,6 @@
 name=Kyren Glider
 url=http://magiccards.info/mm/en/196.html
-image=http://magiccards.info/scans/en/mm/196.jpg
+image=http://mtgimage.com/card/kyren%20glider.jpg
 value=1.921
 rarity=C
 type=Creature

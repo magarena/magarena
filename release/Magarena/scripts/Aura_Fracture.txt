@@ -1,6 +1,6 @@
 name=Aura Fracture
 url=http://magiccards.info/pr/en/2.html
-image=http://magiccards.info/scans/en/pr/2.jpg
+image=http://mtgimage.com/card/aura%20fracture.jpg
 value=2.923
 rarity=C
 type=Enchantment

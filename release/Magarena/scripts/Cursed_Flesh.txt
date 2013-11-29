@@ -1,6 +1,6 @@
 name=Cursed Flesh
 url=http://magiccards.info/in/en/98.html
-image=http://magiccards.info/scans/en/in/98.jpg
+image=http://mtgimage.com/card/cursed%20flesh.jpg
 value=2.924
 rarity=C
 type=Enchantment

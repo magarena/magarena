@@ -1,6 +1,6 @@
 name=Gustcloak Skirmisher
 url=http://magiccards.info/on/en/38.html
-image=http://magiccards.info/scans/en/on/38.jpg
+image=http://mtgimage.com/card/gustcloak%20skirmisher.jpg
 value=3.263
 rarity=U
 type=Creature

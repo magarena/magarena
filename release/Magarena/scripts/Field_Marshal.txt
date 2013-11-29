@@ -1,6 +1,6 @@
 name=Field Marshal
 url=http://magiccards.info/10e/en/15.html
-image=http://magiccards.info/scans/en/10e/15.jpg
+image=http://mtgimage.com/card/field%20marshal.jpg
 value=4.429
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Mountain
 url=http://magiccards.info/isd/en/259.html
-image=http://magiccards.info/scans/en/zen/242.jpg
+image=http://mtgimage.com/set/ZEN/mountain1.jpg
 num_images=2
 value=3.833
 rarity=L

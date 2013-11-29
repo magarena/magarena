@@ -1,6 +1,6 @@
 name=Corrosive Mentor
 url=http://magiccards.info/shm/en/61.html
-image=http://magiccards.info/scans/en/shm/61.jpg
+image=http://mtgimage.com/card/corrosive%20mentor.jpg
 value=3.842
 rarity=U
 type=Creature

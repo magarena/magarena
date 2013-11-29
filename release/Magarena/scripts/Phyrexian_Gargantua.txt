@@ -1,6 +1,6 @@
 name=Phyrexian Gargantua
 url=http://magiccards.info/pvc/en/15.html
-image=http://magiccards.info/scans/en/pvc/15.jpg
+image=http://mtgimage.com/card/phyrexian%20gargantua.jpg
 value=3.737
 rarity=U
 type=Creature

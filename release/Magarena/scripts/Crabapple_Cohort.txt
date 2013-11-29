@@ -1,6 +1,6 @@
 name=Crabapple Cohort
 url=http://magiccards.info/shm/en/109.html
-image=http://magiccards.info/scans/en/shm/109.jpg
+image=http://mtgimage.com/card/crabapple%20cohort.jpg
 value=2.054
 rarity=C
 type=Creature

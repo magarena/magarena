@@ -1,6 +1,6 @@
 name=Eternal Witness
 url=http://magiccards.info/cmd/en/152.html
-image=http://magiccards.info/scans/en/cmd/152.jpg
+image=http://mtgimage.com/card/eternal%20witness.jpg
 value=4.550
 rarity=U
 type=Creature

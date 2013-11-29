@@ -1,6 +1,6 @@
 name=Basilica Guards
 url=http://magiccards.info/gtc/en/5.html
-image=http://magiccards.info/scans/en/gtc/5.jpg
+image=http://mtgimage.com/card/basilica%20guards.jpg
 value=2.867
 rarity=C
 type=Creature

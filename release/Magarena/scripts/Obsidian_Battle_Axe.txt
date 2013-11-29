@@ -1,6 +1,6 @@
 name=Obsidian Battle-Axe
 url=http://magiccards.info/mt/en/144.html
-image=http://magiccards.info/scans/en/mt/144.jpg
+image=http://mtgimage.com/card/obsidian%20battle%2Daxe.jpg
 value=3.711
 rarity=U
 type=Tribal,Artifact

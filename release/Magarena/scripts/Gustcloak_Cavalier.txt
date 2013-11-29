@@ -1,6 +1,6 @@
 name=Gustcloak Cavalier
 url=http://magiccards.info/ts/en/22.html
-image=http://magiccards.info/scans/en/ts/22.jpg
+image=http://mtgimage.com/card/gustcloak%20cavalier.jpg
 value=3.071
 rarity=U
 type=Creature

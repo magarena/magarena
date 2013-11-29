@@ -1,6 +1,6 @@
 name=Mad Prophet
 url=http://magiccards.info/avr/en/146.html
-image=http://magiccards.info/scans/en/avr/146.jpg
+image=http://mtgimage.com/card/mad%20prophet.jpg
 value=3.179
 rarity=C
 type=Creature

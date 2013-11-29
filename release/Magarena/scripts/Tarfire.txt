@@ -1,6 +1,6 @@
 name=Tarfire
 url=http://magiccards.info/lw/en/194.html
-image=http://magiccards.info/scans/en/lw/194.jpg
+image=http://mtgimage.com/card/tarfire.jpg
 value=4.318
 rarity=C
 type=Tribal,Instant

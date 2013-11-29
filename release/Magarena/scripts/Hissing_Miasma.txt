@@ -1,6 +1,6 @@
 name=Hissing Miasma
 url=http://magiccards.info/gp/en/51.html
-image=http://magiccards.info/scans/en/gp/51.jpg
+image=http://mtgimage.com/card/hissing%20miasma.jpg
 value=3.930
 rarity=U
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Fires of Yavimaya
 url=http://magiccards.info/arc/en/86.html
-image=http://magiccards.info/scans/en/pch/87.jpg
+image=http://mtgimage.com/card/fires%20of%20yavimaya.jpg
 value=4.765
 rarity=U
 type=Enchantment

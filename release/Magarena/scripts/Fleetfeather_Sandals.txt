@@ -1,6 +1,6 @@
 name=Fleetfeather Sandals
 url=http://magiccards.info/ths/en/216.html
-image=http://magiccards.info/scans/en/ths/216.jpg
+image=http://mtgimage.com/card/fleetfeather%20sandals.jpg
 value=2.500
 rarity=C
 type=Artifact

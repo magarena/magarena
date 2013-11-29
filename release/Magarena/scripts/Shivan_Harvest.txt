@@ -1,6 +1,6 @@
 name=Shivan Harvest
 url=http://magiccards.info/in/en/167.html
-image=http://magiccards.info/scans/en/in/167.jpg
+image=http://mtgimage.com/card/shivan%20harvest.jpg
 value=3.426
 rarity=U
 type=Enchantment

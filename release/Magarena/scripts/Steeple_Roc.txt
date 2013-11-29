@@ -1,6 +1,6 @@
 name=Steeple Roc
 url=http://magiccards.info/dgm/en/8.html
-image=http://magiccards.info/scans/en/dgm/8.jpg
+image=http://mtgimage.com/card/steeple%20roc.jpg
 value=1.889
 rarity=C
 type=Creature

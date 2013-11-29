@@ -1,6 +1,6 @@
 name=Eaten by Spiders
 url=http://magiccards.info/avr/en/177.html
-image=http://magiccards.info/scans/en/avr/177.jpg
+image=http://mtgimage.com/card/eaten%20by%20spiders.jpg
 value=3.095
 removal=3
 rarity=U

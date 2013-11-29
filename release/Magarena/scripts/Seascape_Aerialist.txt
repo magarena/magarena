@@ -1,6 +1,6 @@
 name=Seascape Aerialist
 url=http://magiccards.info/zen/en/64.html
-image=http://magiccards.info/scans/en/zen/64.jpg
+image=http://mtgimage.com/card/seascape%20aerialist.jpg
 value=2.653
 rarity=U
 type=Creature

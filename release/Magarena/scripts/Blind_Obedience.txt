@@ -1,6 +1,6 @@
 name=Blind Obedience
 url=http://magiccards.info/gtc/en/6.html
-image=http://magiccards.info/scans/en/gtc/6.jpg
+image=http://mtgimage.com/card/blind%20obedience.jpg
 value=4.150
 rarity=R
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Suture Priest
 url=http://magiccards.info/nph/en/25.html
-image=http://magiccards.info/scans/en/nph/25.jpg
+image=http://mtgimage.com/card/suture%20priest.jpg
 value=3.990
 rarity=C
 type=Creature

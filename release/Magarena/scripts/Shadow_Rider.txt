@@ -1,6 +1,6 @@
 name=Shadow Rider
 url=http://magiccards.info/wl/en/21.html
-image=http://magiccards.info/scans/en/wl/21.jpg
+image=http://mtgimage.com/card/shadow%20rider.jpg
 value=3.484
 rarity=C
 type=Creature

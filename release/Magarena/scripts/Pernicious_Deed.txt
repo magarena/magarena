@@ -1,6 +1,6 @@
 name=Pernicious Deed
 url=http://magiccards.info/ap/en/114.html
-image=http://magiccards.info/scans/en/ap/114.jpg
+image=http://mtgimage.com/card/pernicious%20deed.jpg
 value=4.519
 rarity=R
 type=Enchantment

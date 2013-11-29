@@ -1,6 +1,6 @@
 name=Canopy Cover
 url=http://magiccards.info/wwk/en/98.html
-image=http://magiccards.info/scans/en/wwk/98.jpg
+image=http://mtgimage.com/card/canopy%20cover.jpg
 value=3.988
 rarity=U
 type=Enchantment

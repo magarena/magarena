@@ -1,6 +1,6 @@
 name=Kami of Lunacy
 url=http://magiccards.info/chk/en/119.html
-image=http://magiccards.info/scans/en/chk/119.jpg
+image=http://mtgimage.com/card/kami%20of%20lunacy.jpg
 value=1.609
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Gibbering Kami
 url=http://magiccards.info/chk/en/112.html
-image=http://magiccards.info/scans/en/chk/112.jpg
+image=http://mtgimage.com/card/gibbering%20kami.jpg
 value=2.086
 rarity=C
 type=Creature

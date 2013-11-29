@@ -1,6 +1,6 @@
 name=Armor Sliver
 url=http://magiccards.info/pds/en/16.html
-image=http://magiccards.info/scans/en/pds/16.jpg
+image=http://mtgimage.com/card/armor%20sliver.jpg
 value=2.474
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Ardent Recruit
 url=http://magiccards.info/mbs/en/2.html
-image=http://magiccards.info/scans/en/mbs/2.jpg
+image=http://mtgimage.com/card/ardent%20recruit.jpg
 value=3.408
 rarity=C
 type=Creature

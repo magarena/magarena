@@ -1,6 +1,6 @@
 name=Battlefield Forge
 url=http://magiccards.info/10e/en/348.html
-image=http://magiccards.info/scans/en/10e/348.jpg
+image=http://mtgimage.com/card/battlefield%20forge.jpg
 value=4.261
 rarity=R
 type=Land

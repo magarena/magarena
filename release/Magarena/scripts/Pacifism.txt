@@ -1,6 +1,6 @@
 name=Pacifism
 url=http://magiccards.info/m12/en/28.html
-image=http://magiccards.info/scans/en/dvd/17.jpg
+image=http://mtgimage.com/card/pacifism.jpg
 value=3.889
 removal=3
 rarity=C

@@ -1,6 +1,6 @@
 name=Hatching Plans
 url=http://magiccards.info/gp/en/27.html
-image=http://magiccards.info/scans/en/gp/27.jpg
+image=http://mtgimage.com/card/hatching%20plans.jpg
 value=3.682
 rarity=R
 type=Enchantment

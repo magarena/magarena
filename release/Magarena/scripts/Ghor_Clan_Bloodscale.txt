@@ -1,6 +1,6 @@
 name=Ghor-Clan Bloodscale
 url=http://magiccards.info/gp/en/66.html
-image=http://magiccards.info/scans/en/gp/66.jpg
+image=http://mtgimage.com/card/ghor%2Dclan%20bloodscale.jpg
 value=1.638
 rarity=U
 type=Creature

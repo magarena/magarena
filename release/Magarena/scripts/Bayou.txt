@@ -1,6 +1,6 @@
 name=Bayou
 url=http://magiccards.info/me4/en/242.html
-image=http://magiccards.info/scans/en/me4/242.jpg
+image=http://mtgimage.com/card/bayou.jpg
 value=4.637
 rarity=R
 type=Land

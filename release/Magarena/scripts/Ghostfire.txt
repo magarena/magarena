@@ -1,6 +1,6 @@
 name=Ghostfire
 url=http://magiccards.info/ddg/en/69.html
-image=http://magiccards.info/scans/en/ddg/69.jpg
+image=http://mtgimage.com/card/ghostfire.jpg
 value=3.673
 rarity=C
 type=Instant

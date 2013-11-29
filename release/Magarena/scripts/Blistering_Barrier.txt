@@ -1,6 +1,6 @@
 name=Blistering Barrier
 url=http://magiccards.info/mr/en/159.html
-image=http://magiccards.info/scans/en/mr/159.jpg
+image=http://mtgimage.com/card/blistering%20barrier.jpg
 value=2.738
 rarity=C
 type=Creature

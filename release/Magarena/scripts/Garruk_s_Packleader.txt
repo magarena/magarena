@@ -1,6 +1,6 @@
 name=Garruk's Packleader
 url=http://magiccards.info/m13/en/175.html
-image=http://magiccards.info/scans/en/m13/175.jpg
+image=http://mtgimage.com/card/garruk%27s%20packleader.jpg
 value=3.769
 rarity=U
 type=Creature

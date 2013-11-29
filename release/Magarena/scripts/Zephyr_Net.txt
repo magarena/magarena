@@ -1,6 +1,6 @@
 name=Zephyr Net
 url=http://magiccards.info/lw/en/98.html
-image=http://magiccards.info/scans/en/lw/98.jpg
+image=http://mtgimage.com/card/zephyr%20net.jpg
 value=2.135
 rarity=C
 type=Enchantment

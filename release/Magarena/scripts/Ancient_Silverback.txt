@@ -1,6 +1,6 @@
 name=Ancient Silverback
 url=http://magiccards.info/9e/en/230.html
-image=http://magiccards.info/scans/en/9e/230.jpg
+image=http://mtgimage.com/card/ancient%20silverback.jpg
 value=4.017
 rarity=R
 type=Creature

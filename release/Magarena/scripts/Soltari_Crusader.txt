@@ -1,6 +1,6 @@
 name=Soltari Crusader
 url=http://magiccards.info/tp/en/253.html
-image=http://magiccards.info/scans/en/tp/253.jpg
+image=http://mtgimage.com/card/soltari%20crusader.jpg
 value=3.444
 rarity=U
 type=Creature

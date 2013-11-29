@@ -1,6 +1,6 @@
 name=Isolated Chapel
 url=http://magiccards.info/isd/en/242.html
-image=http://magiccards.info/scans/en/isd/242.jpg
+image=http://mtgimage.com/card/isolated%20chapel.jpg
 value=3.898
 rarity=R
 type=Land

@@ -1,6 +1,6 @@
 name=Border Guard
 url=http://magiccards.info/st/en/9.html
-image=http://magiccards.info/scans/en/st/9.jpg
+image=http://mtgimage.com/card/border%20guard.jpg
 value=2.066
 rarity=C
 type=Creature

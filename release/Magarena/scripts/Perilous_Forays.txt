@@ -1,6 +1,6 @@
 name=Perilous Forays
 url=http://magiccards.info/rav/en/176.html
-image=http://magiccards.info/scans/en/rav/176.jpg
+image=http://mtgimage.com/card/perilous%20forays.jpg
 value=3.731
 rarity=U
 type=Enchantment

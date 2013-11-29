@@ -1,6 +1,6 @@
 name=Ashenmoor Cohort
 url=http://magiccards.info/shm/en/56.html
-image=http://magiccards.info/scans/en/shm/56.jpg
+image=http://mtgimage.com/card/ashenmoor%20cohort.jpg
 value=1.091
 rarity=C
 type=Creature

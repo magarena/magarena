@@ -1,6 +1,6 @@
 name=Savage Silhouette
 url=http://magiccards.info/zen/en/181.html
-image=http://magiccards.info/scans/en/zen/181.jpg
+image=http://mtgimage.com/card/savage%20silhouette.jpg
 value=3.127
 rarity=C
 type=Enchantment

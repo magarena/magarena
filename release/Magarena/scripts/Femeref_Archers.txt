@@ -1,6 +1,6 @@
 name=Femeref Archers
 url=http://magiccards.info/10e/en/264.html
-image=http://magiccards.info/scans/en/10e/264.jpg
+image=http://mtgimage.com/card/femeref%20archers.jpg
 value=3.614
 rarity=U
 type=Creature

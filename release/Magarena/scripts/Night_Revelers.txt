@@ -1,6 +1,6 @@
 name=Night Revelers
 url=http://magiccards.info/isd/en/153.html
-image=http://magiccards.info/scans/en/isd/153.jpg
+image=http://mtgimage.com/card/night%20revelers.jpg
 value=2.130
 rarity=C
 type=Creature

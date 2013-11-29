@@ -1,6 +1,6 @@
 name=Cairn Wanderer
 url=http://magiccards.info/lw/en/105.html
-image=http://magiccards.info/scans/en/lw/105.jpg
+image=http://mtgimage.com/card/cairn%20wanderer.jpg
 value=4.154
 rarity=R
 type=Creature

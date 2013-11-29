@@ -1,6 +1,6 @@
 name=Hollowhenge Scavenger
 url=http://magiccards.info/isd/en/188.html
-image=http://magiccards.info/scans/en/isd/188.jpg
+image=http://mtgimage.com/card/hollowhenge%20scavenger.jpg
 value=3.085
 rarity=U
 type=Creature

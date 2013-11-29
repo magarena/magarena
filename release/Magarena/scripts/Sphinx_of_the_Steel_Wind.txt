@@ -1,6 +1,6 @@
 name=Sphinx of the Steel Wind
 url=http://magiccards.info/arb/en/110.html
-image=http://magiccards.info/scans/en/arb/110.jpg
+image=http://mtgimage.com/card/sphinx%20of%20the%20steel%20wind.jpg
 value=4.635
 rarity=M
 type=Artifact,Creature

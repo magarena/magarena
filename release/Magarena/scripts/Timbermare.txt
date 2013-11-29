@@ -1,6 +1,6 @@
 name=Timbermare
 url=http://magiccards.info/pc/en/140.html
-image=http://magiccards.info/scans/en/pc/140.jpg
+image=http://mtgimage.com/card/timbermare.jpg
 value=4.096
 rarity=R
 type=Creature

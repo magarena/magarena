@@ -1,6 +1,6 @@
 name=Victory's Herald
 url=http://magiccards.info/mbs/en/18.html
-image=http://magiccards.info/scans/en/mbs/18.jpg
+image=http://mtgimage.com/card/victory%27s%20herald.jpg
 value=3.764
 rarity=R
 type=Creature

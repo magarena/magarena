@@ -1,6 +1,6 @@
 name=Sea Gate Loremaster
 url=http://magiccards.info/zen/en/63.html
-image=http://magiccards.info/scans/en/zen/63.jpg
+image=http://mtgimage.com/card/sea%20gate%20loremaster.jpg
 value=3.956
 rarity=R
 type=Creature

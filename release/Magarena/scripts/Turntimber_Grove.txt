@@ -1,6 +1,6 @@
 name=Turntimber Grove
 url=http://magiccards.info/zen/en/227.html
-image=http://magiccards.info/scans/en/zen/227.jpg
+image=http://mtgimage.com/card/turntimber%20grove.jpg
 value=3.049
 rarity=C
 type=Land

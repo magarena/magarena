@@ -1,6 +1,6 @@
 name=Ray of Command
 url=http://magiccards.info/cmd/en/56.html
-image=http://magiccards.info/scans/en/cmd/56.jpg
+image=http://mtgimage.com/card/ray%20of%20command.jpg
 value=3.922
 removal=5
 rarity=U

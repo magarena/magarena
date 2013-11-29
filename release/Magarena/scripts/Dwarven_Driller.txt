@@ -1,6 +1,6 @@
 name=Dwarven Driller
 url=http://magiccards.info/ju/en/85.html
-image=http://magiccards.info/scans/en/ju/85.jpg
+image=http://mtgimage.com/card/dwarven%20driller.jpg
 value=3.829
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Grounded
 url=http://magiccards.info/avr/en/181.html
-image=http://magiccards.info/scans/en/avr/181.jpg
+image=http://mtgimage.com/card/grounded.jpg
 value=1.036
 rarity=C
 type=Enchantment

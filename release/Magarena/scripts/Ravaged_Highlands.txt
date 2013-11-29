@@ -1,6 +1,6 @@
 name=Ravaged Highlands
 url=http://magiccards.info/od/en/324.html
-image=http://magiccards.info/scans/en/od/324.jpg
+image=http://mtgimage.com/card/ravaged%20highlands.jpg
 value=2.658
 rarity=C
 type=Land

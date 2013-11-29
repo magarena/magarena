@@ -1,6 +1,6 @@
 name=Puncture Blast
 url=http://magiccards.info/eve/en/60.html
-image=http://magiccards.info/scans/en/eve/60.jpg
+image=http://mtgimage.com/card/puncture%20blast.jpg
 value=3.398
 removal=3
 rarity=C

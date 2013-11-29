@@ -1,6 +1,6 @@
 name=Wingsteed Rider
 url=http://magiccards.info/ths/en/36.html
-image=http://magiccards.info/scans/en/ths/36.jpg
+image=http://mtgimage.com/card/wingsteed%20rider.jpg
 value=3.769
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Shimmering Wings
 url=http://magiccards.info/10e/en/107.html
-image=http://magiccards.info/scans/en/10e/107.jpg
+image=http://mtgimage.com/card/shimmering%20wings.jpg
 value=3.842
 rarity=C
 type=Enchantment

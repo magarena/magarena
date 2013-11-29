@@ -1,6 +1,6 @@
 name=Skull of Ramos
 url=http://magiccards.info/mm/en/312.html
-image=http://magiccards.info/scans/en/mm/312.jpg
+image=http://mtgimage.com/card/skull%20of%20ramos.jpg
 value=2.769
 rarity=R
 type=Artifact

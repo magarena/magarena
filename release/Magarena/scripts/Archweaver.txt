@@ -1,6 +1,6 @@
 name=Archweaver
 url=http://magiccards.info/rtr/en/114.html
-image=http://magiccards.info/scans/en/rtr/114.jpg
+image=http://mtgimage.com/card/archweaver.jpg
 value=2.278
 rarity=U
 type=Creature

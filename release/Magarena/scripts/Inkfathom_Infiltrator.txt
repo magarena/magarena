@@ -1,6 +1,6 @@
 name=Inkfathom Infiltrator
 url=http://magiccards.info/shm/en/167.html
-image=http://magiccards.info/scans/en/shm/167.jpg
+image=http://mtgimage.com/card/inkfathom%20infiltrator.jpg
 value=4.060
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Dispense Justice
 url=http://magiccards.info/som/en/5.html
-image=http://magiccards.info/scans/en/som/5.jpg
+image=http://mtgimage.com/card/dispense%20justice.jpg
 value=3.611
 removal=4
 rarity=U

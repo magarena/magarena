@@ -1,6 +1,6 @@
 name=Deadly Insect
 url=http://magiccards.info/mm/en/238.html
-image=http://magiccards.info/scans/en/mm/238.jpg
+image=http://mtgimage.com/card/deadly%20insect.jpg
 value=3.214
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Doom Blade
 url=http://magiccards.info/m12/en/95.html
-image=http://magiccards.info/scans/en/m11/95.jpg
+image=http://mtgimage.com/card/doom%20blade.jpg
 value=4.246
 removal=4
 rarity=C

@@ -1,6 +1,6 @@
 name=Diregraf Captain
 url=http://magiccards.info/dka/en/135.html
-image=http://magiccards.info/scans/en/dka/135.jpg
+image=http://mtgimage.com/card/diregraf%20captain.jpg
 value=3.853
 rarity=U
 type=Creature

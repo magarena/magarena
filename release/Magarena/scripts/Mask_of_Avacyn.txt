@@ -1,6 +1,6 @@
 name=Mask of Avacyn
 url=http://magiccards.info/isd/en/229.html
-image=http://magiccards.info/scans/en/isd/229.jpg
+image=http://mtgimage.com/card/mask%20of%20avacyn.jpg
 value=3.688
 rarity=U
 type=Artifact

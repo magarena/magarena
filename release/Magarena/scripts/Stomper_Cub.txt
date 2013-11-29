@@ -1,6 +1,6 @@
 name=Stomper Cub
 url=http://magiccards.info/roe/en/210.html
-image=http://magiccards.info/scans/en/roe/210.jpg
+image=http://mtgimage.com/card/stomper%20cub.jpg
 value=2.662
 ability=trample
 rarity=C

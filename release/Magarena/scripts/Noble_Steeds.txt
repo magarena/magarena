@@ -1,6 +1,6 @@
 name=Noble Steeds
 url=http://magiccards.info/ai/en/140.html
-image=http://magiccards.info/scans/en/ai/140.jpg
+image=http://mtgimage.com/card/noble%20steeds.jpg
 value=1.706
 rarity=C
 type=Enchantment

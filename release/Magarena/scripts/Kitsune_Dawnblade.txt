@@ -1,6 +1,6 @@
 name=Kitsune Dawnblade
 url=http://magiccards.info/sok/en/16.html
-image=http://magiccards.info/scans/en/sok/16.jpg
+image=http://mtgimage.com/card/kitsune%20dawnblade.jpg
 value=1.743
 rarity=C
 type=Creature

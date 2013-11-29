@@ -1,6 +1,6 @@
 name=Thallid Shell-Dweller
 url=http://magiccards.info/ts/en/226.html
-image=http://magiccards.info/scans/en/ts/226.jpg
+image=http://mtgimage.com/card/thallid%20shell%2Ddweller.jpg
 value=3.867
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Tsunami
 url=http://magiccards.info/me4/en/171.html
-image=http://magiccards.info/scans/en/me4/171.jpg
+image=http://mtgimage.com/card/tsunami.jpg
 value=4.000
 rarity=R
 type=Sorcery

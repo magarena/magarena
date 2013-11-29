@@ -1,6 +1,6 @@
 name=Dispatch
 url=http://magiccards.info/nph/en/7.html
-image=http://magiccards.info/scans/en/nph/7.jpg
+image=http://mtgimage.com/card/dispatch.jpg
 value=3.975
 rarity=U
 type=Instant

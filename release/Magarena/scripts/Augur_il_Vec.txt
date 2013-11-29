@@ -1,6 +1,6 @@
 name=Augur il-Vec
 url=http://magiccards.info/fut/en/2.html
-image=http://magiccards.info/scans/en/fut/2.jpg
+image=http://mtgimage.com/card/augur%20il%2Dvec.jpg
 value=2.807
 rarity=C
 type=Creature

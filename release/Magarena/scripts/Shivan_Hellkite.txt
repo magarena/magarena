@@ -1,6 +1,6 @@
 name=Shivan Hellkite
 url=http://magiccards.info/ddg/en/60.html
-image=http://magiccards.info/scans/en/10e/231.jpg
+image=http://mtgimage.com/card/shivan%20hellkite.jpg
 value=4.133
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Thran Golem
 url=http://magiccards.info/m12/en/220.html
-image=http://magiccards.info/scans/en/m12/220.jpg
+image=http://mtgimage.com/card/thran%20golem.jpg
 value=4.250
 rarity=U
 type=Artifact,Creature

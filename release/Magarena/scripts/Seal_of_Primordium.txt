@@ -1,6 +1,6 @@
 name=Seal of Primordium
 url=http://magiccards.info/pc/en/153.html
-image=http://magiccards.info/scans/en/pc/153.jpg
+image=http://mtgimage.com/card/seal%20of%20primordium.jpg
 value=4.151
 rarity=C
 type=Enchantment

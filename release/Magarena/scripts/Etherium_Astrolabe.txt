@@ -1,6 +1,6 @@
 name=Etherium Astrolabe
 url=http://magiccards.info/ala/en/41.html
-image=http://magiccards.info/scans/en/ala/41.jpg
+image=http://mtgimage.com/card/etherium%20astrolabe.jpg
 value=2.500
 rarity=U
 type=Artifact

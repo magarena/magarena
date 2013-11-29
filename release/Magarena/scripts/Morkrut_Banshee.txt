@@ -1,6 +1,6 @@
 name=Morkrut Banshee
 url=http://magiccards.info/isd/en/110.html
-image=http://magiccards.info/scans/en/isd/110.jpg
+image=http://mtgimage.com/card/morkrut%20banshee.jpg
 value=3.449
 rarity=U
 type=Creature

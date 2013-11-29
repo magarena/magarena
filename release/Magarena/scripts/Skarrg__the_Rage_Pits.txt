@@ -1,6 +1,6 @@
 name=Skarrg, the Rage Pits
 url=http://magiccards.info/gp/en/163.html
-image=http://magiccards.info/scans/en/gp/163.jpg
+image=http://mtgimage.com/card/skarrg%2C%20the%20rage%20pits.jpg
 value=4.182
 rarity=U
 type=Land

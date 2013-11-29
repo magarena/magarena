@@ -1,6 +1,6 @@
 name=Arcanis the Omnipotent
 url=http://magiccards.info/10e/en/66.html
-image=http://magiccards.info/scans/en/10e/66.jpg
+image=http://mtgimage.com/card/arcanis%20the%20omnipotent.jpg
 value=4.411
 rarity=R
 type=Legendary,Creature

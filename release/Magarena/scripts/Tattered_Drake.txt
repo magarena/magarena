@@ -1,6 +1,6 @@
 name=Tattered Drake
 url=http://magiccards.info/rav/en/68.html
-image=http://magiccards.info/scans/en/rav/68.jpg
+image=http://mtgimage.com/card/tattered%20drake.jpg
 value=1.474
 rarity=C
 type=Creature

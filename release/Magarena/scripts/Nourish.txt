@@ -1,6 +1,6 @@
 name=Nourish
 url=http://magiccards.info/ds/en/78.html
-image=http://magiccards.info/scans/en/ds/78.jpg
+image=http://mtgimage.com/card/nourish.jpg
 value=3.574
 rarity=C
 type=Instant

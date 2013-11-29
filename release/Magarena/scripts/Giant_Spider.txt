@@ -1,6 +1,6 @@
 name=Giant Spider
 url=http://magiccards.info/m12/en/177.html
-image=http://magiccards.info/scans/en/dpa/67.jpg
+image=http://mtgimage.com/card/giant%20spider.jpg
 value=3.348
 ability=reach
 rarity=C

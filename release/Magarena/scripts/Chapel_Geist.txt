@@ -1,6 +1,6 @@
 name=Chapel Geist
 url=http://magiccards.info/isd/en/7.html
-image=http://magiccards.info/scans/en/isd/7.jpg
+image=http://mtgimage.com/card/chapel%20geist.jpg
 value=3.059
 rarity=C
 type=Creature

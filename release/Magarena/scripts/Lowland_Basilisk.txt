@@ -1,6 +1,6 @@
 name=Lowland Basilisk
 url=http://magiccards.info/sh/en/59.html
-image=http://magiccards.info/scans/en/sh/59.jpg
+image=http://mtgimage.com/card/lowland%20basilisk.jpg
 value=3.083
 rarity=C
 type=Creature

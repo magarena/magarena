@@ -1,6 +1,6 @@
 name=Cloud Crusader
 url=http://magiccards.info/m11/en/10.html
-image=http://magiccards.info/scans/en/m11/10.jpg
+image=http://mtgimage.com/card/cloud%20crusader.jpg
 value=2.895
 ability=flying;first strike
 rarity=C

@@ -1,6 +1,6 @@
 name=Cancel
 url=http://magiccards.info/m12/en/47.html
-image=http://magiccards.info/scans/en/m12/47.jpg
+image=http://mtgimage.com/card/cancel.jpg
 value=2.684
 rarity=C
 type=Instant

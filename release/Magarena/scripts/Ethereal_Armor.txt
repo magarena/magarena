@@ -1,6 +1,6 @@
 name=Ethereal Armor
 url=http://magiccards.info/rtr/en/9.html
-image=http://magiccards.info/scans/en/rtr/9.jpg
+image=http://mtgimage.com/card/ethereal%20armor.jpg
 value=3.774
 rarity=C
 type=Enchantment

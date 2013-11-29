@@ -1,6 +1,6 @@
 name=Batterskull
 url=http://magiccards.info/nph/en/130.html
-image=http://magiccards.info/scans/en/nph/130.jpg
+image=http://mtgimage.com/card/batterskull.jpg
 value=4.196
 rarity=M
 type=Artifact

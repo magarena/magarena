@@ -1,6 +1,6 @@
 name=Selesnya Guildmage
 url=http://magiccards.info/cmd/en/224.html
-image=http://magiccards.info/scans/en/cmd/224.jpg
+image=http://mtgimage.com/card/selesnya%20guildmage.jpg
 value=3.333
 rarity=U
 type=Creature

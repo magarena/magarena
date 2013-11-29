@@ -1,6 +1,6 @@
 name=Grapeshot
 url=http://magiccards.info/ts/en/160.html
-image=http://magiccards.info/scans/en/ts/160.jpg
+image=http://mtgimage.com/card/grapeshot.jpg
 value=4.212
 rarity=C
 type=Sorcery

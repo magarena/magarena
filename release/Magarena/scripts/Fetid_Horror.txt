@@ -1,6 +1,6 @@
 name=Fetid Horror
 url=http://magiccards.info/mr/en/21.html
-image=http://magiccards.info/scans/en/mr/21.jpg
+image=http://mtgimage.com/card/fetid%20horror.jpg
 value=3.058
 rarity=C
 type=Creature

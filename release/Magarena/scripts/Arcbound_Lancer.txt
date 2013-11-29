@@ -1,6 +1,6 @@
 name=Arcbound Lancer
 url=http://magiccards.info/ds/en/98.html
-image=http://magiccards.info/scans/en/ds/98.jpg
+image=http://mtgimage.com/card/arcbound%20lancer.jpg
 value=2.581
 rarity=U
 type=Artifact,Creature

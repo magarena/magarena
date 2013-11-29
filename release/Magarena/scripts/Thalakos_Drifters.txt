@@ -1,6 +1,6 @@
 name=Thalakos Drifters
 url=http://magiccards.info/ex/en/47.html
-image=http://magiccards.info/scans/en/ex/47.jpg
+image=http://mtgimage.com/card/thalakos%20drifters.jpg
 value=3.265
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Flusterstorm
 url=http://magiccards.info/cmd/en/46.html
-image=http://magiccards.info/scans/en/cmd/46.jpg
+image=http://mtgimage.com/card/flusterstorm.jpg
 value=4.275
 rarity=R
 type=Instant

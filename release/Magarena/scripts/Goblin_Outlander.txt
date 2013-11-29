@@ -1,6 +1,6 @@
 name=Goblin Outlander
 url=http://magiccards.info/cfx/en/109.html
-image=http://magiccards.info/scans/en/cfx/109.jpg
+image=http://mtgimage.com/card/goblin%20outlander.jpg
 value=2.944
 ability=protection from white
 rarity=C

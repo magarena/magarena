@@ -1,6 +1,6 @@
 name=Arnjlot's Ascent
 url=http://magiccards.info/ia/en/57.html
-image=http://magiccards.info/scans/en/ia/57.jpg
+image=http://mtgimage.com/card/arnjlot%27s%20ascent.jpg
 value=1.824
 rarity=C
 type=Enchantment

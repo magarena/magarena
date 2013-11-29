@@ -1,6 +1,6 @@
 name=Azorius Guildgate
 url=http://magiccards.info/rtr/en/237.html
-image=http://magiccards.info/scans/en/rtr/237.jpg
+image=http://mtgimage.com/card/azorius%20guildgate.jpg
 value=3.548
 rarity=C
 type=Land

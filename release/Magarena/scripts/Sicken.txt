@@ -1,6 +1,6 @@
 name=Sicken
 url=http://magiccards.info/us/en/156.html
-image=http://magiccards.info/scans/en/us/156.jpg
+image=http://mtgimage.com/card/sicken.jpg
 value=2.852
 rarity=C
 type=Enchantment

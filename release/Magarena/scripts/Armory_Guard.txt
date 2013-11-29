@@ -1,6 +1,6 @@
 name=Armory Guard
 url=http://magiccards.info/rtr/en/2.html
-image=http://magiccards.info/scans/en/rtr/2.jpg
+image=http://mtgimage.com/card/armory%20guard.jpg
 value=2.100
 rarity=C
 type=Creature

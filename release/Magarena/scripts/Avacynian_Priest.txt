@@ -1,6 +1,6 @@
 name=Avacynian Priest
 url=http://magiccards.info/isd/en/4.html
-image=http://magiccards.info/scans/en/isd/4.jpg
+image=http://mtgimage.com/card/avacynian%20priest.jpg
 value=2.679
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Spined Wurm
 url=http://magiccards.info/dpa/en/83.html
-image=http://magiccards.info/scans/en/dpa/83.jpg
+image=http://mtgimage.com/card/spined%20wurm.jpg
 value=2.745
 rarity=C
 type=Creature

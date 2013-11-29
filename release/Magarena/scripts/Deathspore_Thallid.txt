@@ -1,6 +1,6 @@
 name=Deathspore Thallid
 url=http://magiccards.info/ts/en/102.html
-image=http://magiccards.info/scans/en/ts/102.jpg
+image=http://mtgimage.com/card/deathspore%20thallid.jpg
 value=3.865
 rarity=C
 type=Creature

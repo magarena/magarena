@@ -1,6 +1,6 @@
 name=Cathars' Crusade
 url=http://magiccards.info/avr/en/10.html
-image=http://magiccards.info/scans/en/avr/10.jpg
+image=http://mtgimage.com/card/cathars%27%20crusade.jpg
 value=3.892
 rarity=R
 type=Enchantment

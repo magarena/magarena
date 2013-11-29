@@ -1,6 +1,6 @@
 name=Renegade Demon
 url=http://magiccards.info/avr/en/118.html
-image=http://magiccards.info/scans/en/avr/118.jpg
+image=http://mtgimage.com/card/renegade%20demon.jpg
 value=2.163
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Neurok Invisimancer
 url=http://magiccards.info/som/en/37.html
-image=http://magiccards.info/scans/en/som/37.jpg
+image=http://mtgimage.com/card/neurok%20invisimancer.jpg
 value=3.000
 rarity=C
 type=Creature

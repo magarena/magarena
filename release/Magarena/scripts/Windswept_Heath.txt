@@ -1,6 +1,6 @@
 name=Windswept Heath
 url=http://magiccards.info/on/en/328.html
-image=http://magiccards.info/scans/en/on/328.jpg
+image=http://mtgimage.com/card/windswept%20heath.jpg
 value=4.613
 rarity=R
 type=Land

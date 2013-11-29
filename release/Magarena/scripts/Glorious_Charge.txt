@@ -1,6 +1,6 @@
 name=Glorious Charge
 url=http://magiccards.info/m10/en/11.html
-image=http://magiccards.info/scans/en/m10/11.jpg
+image=http://mtgimage.com/card/glorious%20charge.jpg
 value=2.105
 rarity=C
 type=Instant

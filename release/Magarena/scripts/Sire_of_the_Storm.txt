@@ -1,6 +1,6 @@
 name=Sire of the Storm
 url=http://magiccards.info/chk/en/85.html
-image=http://magiccards.info/scans/en/chk/85.jpg
+image=http://mtgimage.com/card/sire%20of%20the%20storm.jpg
 value=2.537
 rarity=U
 type=Creature

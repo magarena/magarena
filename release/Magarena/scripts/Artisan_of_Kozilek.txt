@@ -1,6 +1,6 @@
 name=Artisan of Kozilek
 url=http://magiccards.info/roe/en/2.html
-image=http://magiccards.info/scans/en/roe/2.jpg
+image=http://mtgimage.com/card/artisan%20of%20kozilek.jpg
 value=3.810
 rarity=U
 type=Creature

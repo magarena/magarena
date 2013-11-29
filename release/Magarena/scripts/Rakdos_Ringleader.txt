@@ -1,6 +1,6 @@
 name=Rakdos Ringleader
 url=http://magiccards.info/rtr/en/186.html
-image=http://magiccards.info/scans/en/rtr/186.jpg
+image=http://mtgimage.com/card/rakdos%20ringleader.jpg
 value=1.350
 rarity=U
 type=Creature

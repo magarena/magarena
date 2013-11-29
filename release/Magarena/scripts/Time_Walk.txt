@@ -1,6 +1,6 @@
 name=Time Walk
 url=http://magiccards.info/un/en/84.html
-image=http://magiccards.info/scans/en/un/84.jpg
+image=http://mtgimage.com/card/time%20walk.jpg
 value=4.823
 rarity=R
 type=Sorcery

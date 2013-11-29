@@ -1,6 +1,6 @@
 name=Vraska the Unseen
 url=http://magiccards.info/rtr/en/208.html
-image=http://magiccards.info/scans/en/rtr/208.jpg
+image=http://mtgimage.com/card/vraska%20the%20unseen.jpg
 value=4.052
 rarity=M
 type=Planeswalker

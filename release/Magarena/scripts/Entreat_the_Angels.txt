@@ -1,6 +1,6 @@
 name=Entreat the Angels
 url=http://magiccards.info/avr/en/20.html
-image=http://magiccards.info/scans/en/avr/20.jpg
+image=http://mtgimage.com/card/entreat%20the%20angels.jpg
 value=3.958
 rarity=M
 type=Sorcery

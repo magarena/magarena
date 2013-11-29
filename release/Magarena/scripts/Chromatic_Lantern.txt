@@ -1,6 +1,6 @@
 name=Chromatic Lantern
 url=http://magiccards.info/rtr/en/226.html
-image=http://magiccards.info/scans/en/rtr/226.jpg
+image=http://mtgimage.com/card/chromatic%20lantern.jpg
 value=4.182
 rarity=R
 type=Artifact

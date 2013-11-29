@@ -1,6 +1,6 @@
 name=Horned Troll
 url=http://magiccards.info/8e/en/257.html
-image=http://magiccards.info/scans/en/8e/257.jpg
+image=http://mtgimage.com/card/horned%20troll.jpg
 value=3.475
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Deathgaze Cockatrice
 url=http://magiccards.info/m14/en/94.html
-image=http://magiccards.info/scans/en/m14/94.jpg
+image=http://mtgimage.com/card/deathgaze%20cockatrice.jpg
 value=3.359
 rarity=C
 type=Creature

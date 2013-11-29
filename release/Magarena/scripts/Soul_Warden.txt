@@ -1,6 +1,6 @@
 name=Soul Warden
 url=http://magiccards.info/pch/en/7.html
-image=http://magiccards.info/scans/en/pch/7.jpg
+image=http://mtgimage.com/card/soul%20warden.jpg
 value=4.458
 rarity=C
 type=Creature

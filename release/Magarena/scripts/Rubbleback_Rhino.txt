@@ -1,6 +1,6 @@
 name=Rubbleback Rhino
 url=http://magiccards.info/rtr/en/132.html
-image=http://magiccards.info/scans/en/rtr/132.jpg
+image=http://mtgimage.com/card/rubbleback%20rhino.jpg
 value=2.190
 rarity=C
 type=Creature

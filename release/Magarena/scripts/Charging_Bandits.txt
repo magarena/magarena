@@ -1,6 +1,6 @@
 name=Charging Bandits
 url=http://magiccards.info/po/en/6.html
-image=http://magiccards.info/scans/en/po/6.jpg
+image=http://mtgimage.com/card/charging%20bandits.jpg
 value=2.146
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Arbalest Elite
 url=http://magiccards.info/m12/en/5.html
-image=http://magiccards.info/scans/en/m12/5.jpg
+image=http://mtgimage.com/card/arbalest%20elite.jpg
 value=1.807
 rarity=U
 type=Creature

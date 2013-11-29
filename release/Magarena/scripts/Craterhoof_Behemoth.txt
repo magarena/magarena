@@ -1,6 +1,6 @@
 name=Craterhoof Behemoth
 url=http://magiccards.info/avr/en/172.html
-image=http://magiccards.info/scans/en/avr/172.jpg
+image=http://mtgimage.com/card/craterhoof%20behemoth.jpg
 value=3.888
 rarity=M
 type=Creature

@@ -1,6 +1,6 @@
 name=Dismal Failure
 url=http://magiccards.info/pc/en/39.html
-image=http://magiccards.info/scans/en/pc/39.jpg
+image=http://mtgimage.com/card/dismal%20failure.jpg
 value=3.683
 rarity=U
 type=Instant

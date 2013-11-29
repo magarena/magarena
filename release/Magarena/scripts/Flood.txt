@@ -1,6 +1,6 @@
 name=Flood
 url=http://magiccards.info/5e/en/87.html
-image=http://magiccards.info/scans/en/5e/87.jpg
+image=http://mtgimage.com/card/flood.jpg
 value=3.866
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Darksteel Ingot
 url=http://magiccards.info/ds/en/112.html
-image=http://magiccards.info/scans/en/ds/112.jpg
+image=http://mtgimage.com/card/darksteel%20ingot.jpg
 value=4.096
 rarity=C
 type=Artifact

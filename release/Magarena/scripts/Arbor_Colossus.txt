@@ -1,6 +1,6 @@
 name=Arbor Colossus
 url=http://magiccards.info/ths/en/150.html
-image=http://magiccards.info/scans/en/ths/150.jpg
+image=http://mtgimage.com/card/arbor%20colossus.jpg
 value=4.010
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Mammoth Umbra
 url=http://magiccards.info/roe/en/37.html
-image=http://magiccards.info/scans/en/roe/37.jpg
+image=http://mtgimage.com/card/mammoth%20umbra.jpg
 value=2.974
 rarity=U
 type=Enchantment

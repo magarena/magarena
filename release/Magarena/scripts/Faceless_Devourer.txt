@@ -1,6 +1,6 @@
 name=Faceless Devourer
 url=http://magiccards.info/ts/en/108.html
-image=http://magiccards.info/scans/en/ts/108.jpg
+image=http://mtgimage.com/card/faceless%20devourer.jpg
 value=2.135
 removal=2
 rarity=U

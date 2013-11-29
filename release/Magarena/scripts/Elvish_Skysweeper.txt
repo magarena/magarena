@@ -1,6 +1,6 @@
 name=Elvish Skysweeper
 url=http://magiccards.info/rav/en/162.html
-image=http://magiccards.info/scans/en/rav/162.jpg
+image=http://mtgimage.com/card/elvish%20skysweeper.jpg
 value=2.866
 rarity=C
 type=Creature

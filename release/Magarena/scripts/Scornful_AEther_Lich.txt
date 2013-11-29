@@ -1,6 +1,6 @@
 name=Scornful AEther-Lich
 url=http://magiccards.info/cfx/en/34.html
-image=http://magiccards.info/scans/en/cfx/34.jpg
+image=http://mtgimage.com/card/scornful%20aether%2Dlich.jpg
 value=2.897
 rarity=U
 type=Artifact,Creature

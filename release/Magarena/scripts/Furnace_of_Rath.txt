@@ -1,6 +1,6 @@
 name=Furnace of Rath
 url=http://magiccards.info/dpa/en/44.html
-image=http://magiccards.info/scans/en/dpa/44.jpg
+image=http://mtgimage.com/card/furnace%20of%20rath.jpg
 value=4.444
 rarity=R
 type=Enchantment

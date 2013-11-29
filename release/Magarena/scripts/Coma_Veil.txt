@@ -1,6 +1,6 @@
 name=Coma Veil
 url=http://magiccards.info/ala/en/36.html
-image=http://magiccards.info/scans/en/ala/36.jpg
+image=http://mtgimage.com/card/coma%20veil.jpg
 value=0.938
 rarity=C
 type=Enchantment

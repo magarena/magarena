@@ -1,6 +1,6 @@
 name=Raven's Run Dragoon
 url=http://magiccards.info/shm/en/235.html
-image=http://magiccards.info/scans/en/shm/235.jpg
+image=http://mtgimage.com/card/raven%27s%20run%20dragoon.jpg
 value=2.500
 rarity=C
 type=Creature

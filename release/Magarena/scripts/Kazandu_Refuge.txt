@@ -1,6 +1,6 @@
 name=Kazandu Refuge
 url=http://magiccards.info/ddh/en/35.html
-image=http://magiccards.info/scans/en/arc/126.jpg
+image=http://mtgimage.com/card/kazandu%20refuge.jpg
 value=4.125
 rarity=U
 type=Land

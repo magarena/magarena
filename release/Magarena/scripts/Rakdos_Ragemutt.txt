@@ -1,6 +1,6 @@
 name=Rakdos Ragemutt
 url=http://magiccards.info/rtr/en/185.html
-image=http://magiccards.info/scans/en/rtr/185.jpg
+image=http://mtgimage.com/card/rakdos%20ragemutt.jpg
 value=2.774
 rarity=U
 type=Creature

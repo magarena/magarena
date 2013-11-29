@@ -1,6 +1,6 @@
 name=Leaden Fists
 url=http://magiccards.info/fut/en/38.html
-image=http://magiccards.info/scans/en/fut/38.jpg
+image=http://mtgimage.com/card/leaden%20fists.jpg
 value=2.848
 rarity=C
 type=Enchantment

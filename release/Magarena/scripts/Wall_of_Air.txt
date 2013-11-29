@@ -1,6 +1,6 @@
 name=Wall of Air
 url=http://magiccards.info/10e/en/124.html
-image=http://magiccards.info/scans/en/10e/124.jpg
+image=http://mtgimage.com/card/wall%20of%20air.jpg
 value=3.476
 ability=defender;flying
 rarity=U

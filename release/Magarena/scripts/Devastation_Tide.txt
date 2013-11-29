@@ -1,6 +1,6 @@
 name=Devastation Tide
 url=http://magiccards.info/avr/en/48.html
-image=http://magiccards.info/scans/en/avr/48.jpg
+image=http://mtgimage.com/card/devastation%20tide.jpg
 value=3.916
 removal=2
 rarity=R

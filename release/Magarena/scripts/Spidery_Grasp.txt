@@ -1,6 +1,6 @@
 name=Spidery Grasp
 url=http://magiccards.info/isd/en/204.html
-image=http://magiccards.info/scans/en/isd/204.jpg
+image=http://mtgimage.com/card/spidery%20grasp.jpg
 value=2.734
 rarity=C
 type=Instant

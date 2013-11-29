@@ -1,6 +1,6 @@
 name=Vivid Grove
 url=http://magiccards.info/cmd/en/295.html
-image=http://magiccards.info/scans/en/lw/277.jpg
+image=http://mtgimage.com/card/vivid%20grove.jpg
 value=3.818
 rarity=U
 type=Land

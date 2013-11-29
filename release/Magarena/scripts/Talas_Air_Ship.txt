@@ -1,6 +1,6 @@
 name=Talas Air Ship
 url=http://magiccards.info/po2/en/48.html
-image=http://magiccards.info/scans/en/po2/48.jpg
+image=http://mtgimage.com/card/talas%20air%20ship.jpg
 value=2.976
 rarity=C
 type=Creature

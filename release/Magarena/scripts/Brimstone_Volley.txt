@@ -1,6 +1,6 @@
 name=Brimstone Volley
 url=http://magiccards.info/isd/en/132.html
-image=http://magiccards.info/scans/en/isd/132.jpg
+image=http://mtgimage.com/card/brimstone%20volley.jpg
 value=3.809
 rarity=C
 type=Instant

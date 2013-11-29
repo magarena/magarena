@@ -1,6 +1,6 @@
 name=Glitterfang
 url=http://magiccards.info/sok/en/100.html
-image=http://magiccards.info/scans/en/sok/100.jpg
+image=http://mtgimage.com/card/glitterfang.jpg
 value=3.783
 rarity=C
 type=Creature

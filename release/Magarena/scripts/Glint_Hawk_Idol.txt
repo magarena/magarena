@@ -1,6 +1,6 @@
 name=Glint Hawk Idol
 url=http://magiccards.info/som/en/156.html
-image=http://magiccards.info/scans/en/som/156.jpg
+image=http://mtgimage.com/card/glint%20hawk%20idol.jpg
 value=3.746
 rarity=C
 type=Artifact

@@ -1,6 +1,6 @@
 name=Muscle Sliver
 url=http://magiccards.info/pds/en/9.html
-image=http://magiccards.info/scans/en/pds/9.jpg
+image=http://mtgimage.com/card/muscle%20sliver.jpg
 value=4.562
 rarity=C
 type=Creature

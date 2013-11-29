@@ -1,6 +1,6 @@
 name=Merfolk of the Pearl Trident
 url=http://magiccards.info/7e/en/90.html
-image=http://magiccards.info/scans/en/7e/90.jpg
+image=http://mtgimage.com/card/merfolk%20of%20the%20pearl%20trident.jpg
 value=2.209
 rarity=C
 type=Creature

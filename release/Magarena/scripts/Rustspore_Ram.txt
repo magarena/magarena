@@ -1,6 +1,6 @@
 name=Rustspore Ram
 url=http://magiccards.info/mi/en/235.html
-image=http://magiccards.info/scans/en/mi/235.jpg
+image=http://mtgimage.com/card/rustspore%20ram.jpg
 value=2.130
 rarity=U
 type=Artifact,Creature

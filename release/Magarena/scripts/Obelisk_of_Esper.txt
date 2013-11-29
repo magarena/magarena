@@ -1,6 +1,6 @@
 name=Obelisk of Esper
 url=http://magiccards.info/arc/en/113.html
-image=http://magiccards.info/scans/en/arc/113.jpg
+image=http://mtgimage.com/card/obelisk%20of%20esper.jpg
 value=2.431
 rarity=C
 type=Artifact

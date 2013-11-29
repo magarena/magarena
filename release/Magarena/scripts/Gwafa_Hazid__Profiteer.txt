@@ -1,6 +1,6 @@
 name=Gwafa Hazid, Profiteer
 url=http://magiccards.info/cfx/en/110.html
-image=http://magiccards.info/scans/en/cfx/110.jpg
+image=http://mtgimage.com/card/gwafa%20hazid%2C%20profiteer.jpg
 value=3.287
 rarity=R
 type=Legendary,Creature

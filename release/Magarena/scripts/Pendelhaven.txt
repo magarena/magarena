@@ -1,6 +1,6 @@
 name=Pendelhaven
 url=http://magiccards.info/tsts/en/120.html
-image=http://magiccards.info/scans/en/tsts/120.jpg
+image=http://mtgimage.com/card/pendelhaven.jpg
 value=4.452
 rarity=U
 type=Legendary,Land

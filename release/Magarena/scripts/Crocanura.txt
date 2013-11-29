@@ -1,6 +1,6 @@
 name=Crocanura
 url=http://magiccards.info/gtc/en/116.html
-image=http://magiccards.info/scans/en/gtc/116.jpg
+image=http://mtgimage.com/card/crocanura.jpg
 value=3.174
 rarity=C
 type=Creature

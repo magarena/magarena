@@ -1,6 +1,6 @@
 name=Viashino Fangtail
 url=http://magiccards.info/rav/en/148.html
-image=http://magiccards.info/scans/en/rav/148.jpg
+image=http://mtgimage.com/card/viashino%20fangtail.jpg
 value=3.346
 rarity=C
 type=Creature

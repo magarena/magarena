@@ -1,6 +1,6 @@
 name=Lightning Reaver
 url=http://magiccards.info/arb/en/42.html
-image=http://magiccards.info/scans/en/arb/42.jpg
+image=http://mtgimage.com/card/lightning%20reaver.jpg
 value=3.810
 rarity=R
 type=Creature

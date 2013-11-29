@@ -1,6 +1,6 @@
 name=Vampire Outcasts
 url=http://magiccards.info/m12/en/115.html
-image=http://magiccards.info/scans/en/m12/115.jpg
+image=http://mtgimage.com/card/vampire%20outcasts.jpg
 value=3.429
 rarity=U
 type=Creature

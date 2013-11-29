@@ -1,6 +1,6 @@
 name=Flamekin Brawler
 url=http://magiccards.info/lw/en/166.html
-image=http://magiccards.info/scans/en/lw/166.jpg
+image=http://mtgimage.com/card/flamekin%20brawler.jpg
 value=3.531
 rarity=C
 type=Creature

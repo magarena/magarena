@@ -1,6 +1,6 @@
 name=Phantom Nantuko
 url=http://magiccards.info/ju/en/128.html
-image=http://magiccards.info/scans/en/ju/128.jpg
+image=http://mtgimage.com/card/phantom%20nantuko.jpg
 value=3.721
 rarity=R
 type=Creature

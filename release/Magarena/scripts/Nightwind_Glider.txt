@@ -1,6 +1,6 @@
 name=Nightwind Glider
 url=http://magiccards.info/mm/en/31.html
-image=http://magiccards.info/scans/en/mm/31.jpg
+image=http://mtgimage.com/card/nightwind%20glider.jpg
 value=3.043
 rarity=C
 type=Creature

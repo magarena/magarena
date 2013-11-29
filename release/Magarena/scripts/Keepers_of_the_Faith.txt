@@ -1,6 +1,6 @@
 name=Keepers of the Faith
 url=http://magiccards.info/ch/en/65.html
-image=http://magiccards.info/scans/en/ch/65.jpg
+image=http://mtgimage.com/card/keepers%20of%20the%20faith.jpg
 value=1.821
 rarity=C
 type=Creature

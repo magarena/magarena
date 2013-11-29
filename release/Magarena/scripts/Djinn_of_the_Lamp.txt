@@ -1,6 +1,6 @@
 name=Djinn of the Lamp
 url=http://magiccards.info/po/en/54.html
-image=http://magiccards.info/scans/en/po/54.jpg
+image=http://mtgimage.com/card/djinn%20of%20the%20lamp.jpg
 value=2.147
 rarity=R
 type=Creature

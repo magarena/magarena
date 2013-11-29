@@ -1,6 +1,6 @@
 name=Graypelt Hunter
 url=http://magiccards.info/wwk/en/103.html
-image=http://magiccards.info/scans/en/wwk/103.jpg
+image=http://mtgimage.com/card/graypelt%20hunter.jpg
 value=3.451
 rarity=C
 type=Creature

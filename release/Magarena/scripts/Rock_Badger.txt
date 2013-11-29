@@ -1,6 +1,6 @@
 name=Rock Badger
 url=http://magiccards.info/10e/en/226.html
-image=http://magiccards.info/scans/en/10e/226.jpg
+image=http://mtgimage.com/card/rock%20badger.jpg
 value=1.828
 rarity=U
 type=Creature

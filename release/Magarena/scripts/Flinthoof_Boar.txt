@@ -1,6 +1,6 @@
 name=Flinthoof Boar
 url=http://magiccards.info/m13/en/171.html
-image=http://magiccards.info/scans/en/m13/171.jpg
+image=http://mtgimage.com/card/flinthoof%20boar.jpg
 value=3.983
 rarity=U
 type=Creature

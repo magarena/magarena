@@ -1,6 +1,6 @@
 name=Arcbound Overseer
 url=http://magiccards.info/ds/en/99.html
-image=http://magiccards.info/scans/en/ds/99.jpg
+image=http://mtgimage.com/card/arcbound%20overseer.jpg
 value=4.160
 rarity=R
 type=Artifact,Creature

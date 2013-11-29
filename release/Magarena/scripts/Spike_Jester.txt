@@ -1,6 +1,6 @@
 name=Spike Jester
 url=http://magiccards.info/dgm/en/106.html
-image=http://magiccards.info/scans/en/dgm/106.jpg
+image=http://mtgimage.com/card/spike%20jester.jpg
 value=4.059
 rarity=U
 type=Creature

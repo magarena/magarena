@@ -1,6 +1,6 @@
 name=Riddlekeeper
 url=http://magiccards.info/cmd/en/59.html
-image=http://magiccards.info/scans/en/cmd/59.jpg
+image=http://mtgimage.com/card/riddlekeeper.jpg
 value=3.772
 rarity=R
 type=Creature

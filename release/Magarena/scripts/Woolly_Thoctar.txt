@@ -1,6 +1,6 @@
 name=Woolly Thoctar
 url=http://magiccards.info/ddh/en/13.html
-image=http://magiccards.info/scans/en/ala/209.jpg
+image=http://mtgimage.com/card/woolly%20thoctar.jpg
 value=4.299
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Bay Falcon
 url=http://magiccards.info/mr/en/54.html
-image=http://magiccards.info/scans/en/mr/54.jpg
+image=http://mtgimage.com/card/bay%20falcon.jpg
 value=3.050
 rarity=C
 type=Creature

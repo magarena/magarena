@@ -1,6 +1,6 @@
 name=Angel of Light
 url=http://magiccards.info/me2/en/3.html
-image=http://magiccards.info/scans/en/me2/3.jpg
+image=http://mtgimage.com/card/angel%20of%20light.jpg
 value=2.378
 rarity=U
 type=Creature

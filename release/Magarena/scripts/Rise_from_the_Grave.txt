@@ -1,6 +1,6 @@
 name=Rise from the Grave
 url=http://magiccards.info/cmd/en/96.html
-image=http://magiccards.info/scans/en/cmd/96.jpg
+image=http://mtgimage.com/card/rise%20from%20the%20grave.jpg
 value=3.688
 rarity=U
 type=Sorcery

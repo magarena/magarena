@@ -1,6 +1,6 @@
 name=Molten Ravager
 url=http://magiccards.info/zen/en/138.html
-image=http://magiccards.info/scans/en/zen/138.jpg
+image=http://mtgimage.com/card/molten%20ravager.jpg
 value=3.119
 rarity=C
 type=Creature

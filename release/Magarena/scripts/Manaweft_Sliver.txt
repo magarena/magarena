@@ -1,6 +1,6 @@
 name=Manaweft Sliver
 url=http://magiccards.info/m14/en/184.html
-image=http://magiccards.info/scans/en/m14/184.jpg
+image=http://mtgimage.com/card/manaweft%20sliver.jpg
 value=3.858
 rarity=U
 type=Creature

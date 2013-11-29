@@ -1,6 +1,6 @@
 name=Strandwalker
 url=http://magiccards.info/mbs/en/137.html
-image=http://magiccards.info/scans/en/mbs/137.jpg
+image=http://mtgimage.com/card/strandwalker.jpg
 value=2.840
 rarity=U
 type=Artifact

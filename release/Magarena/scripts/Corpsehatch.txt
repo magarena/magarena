@@ -1,6 +1,6 @@
 name=Corpsehatch
 url=http://magiccards.info/roe/en/103.html
-image=http://magiccards.info/scans/en/roe/103.jpg
+image=http://mtgimage.com/card/corpsehatch.jpg
 value=3.120
 removal=3
 rarity=U

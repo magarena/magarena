@@ -1,6 +1,6 @@
 name=Kitsune Blademaster
 url=http://magiccards.info/chk/en/25.html
-image=http://magiccards.info/scans/en/chk/25.jpg
+image=http://mtgimage.com/card/kitsune%20blademaster.jpg
 value=3.720
 rarity=C
 type=Creature

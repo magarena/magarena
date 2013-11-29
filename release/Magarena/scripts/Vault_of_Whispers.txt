@@ -1,6 +1,6 @@
 name=Vault of Whispers
 url=http://magiccards.info/pch/en/141.html
-image=http://magiccards.info/scans/en/pch/141.jpg
+image=http://mtgimage.com/card/vault%20of%20whispers.jpg
 value=4.491
 rarity=C
 type=Artifact,Land

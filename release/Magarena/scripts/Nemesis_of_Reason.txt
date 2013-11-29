@@ -1,6 +1,6 @@
 name=Nemesis of Reason
 url=http://magiccards.info/arb/en/28.html
-image=http://magiccards.info/scans/en/arb/28.jpg
+image=http://mtgimage.com/card/nemesis%20of%20reason.jpg
 value=4.281
 rarity=R
 type=Creature

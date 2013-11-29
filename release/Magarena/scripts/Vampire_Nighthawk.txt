@@ -1,6 +1,6 @@
 name=Vampire Nighthawk
 url=http://magiccards.info/cmd/en/106.html
-image=http://magiccards.info/scans/en/zen/116.jpg
+image=http://mtgimage.com/card/vampire%20nighthawk.jpg
 value=4.521
 rarity=U
 type=Creature

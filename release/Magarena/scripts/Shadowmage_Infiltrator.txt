@@ -1,6 +1,6 @@
 name=Shadowmage Infiltrator
 url=http://magiccards.info/tsts/en/99.html
-image=http://magiccards.info/scans/en/tsts/99.jpg
+image=http://mtgimage.com/card/shadowmage%20infiltrator.jpg
 value=4.518
 rarity=R
 type=Creature

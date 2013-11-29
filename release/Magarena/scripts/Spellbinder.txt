@@ -1,6 +1,6 @@
 name=Spellbinder
 url=http://magiccards.info/ds/en/143.html
-image=http://magiccards.info/scans/en/ds/143.jpg
+image=http://mtgimage.com/card/spellbinder.jpg
 value=3.207
 rarity=R
 type=Artifact

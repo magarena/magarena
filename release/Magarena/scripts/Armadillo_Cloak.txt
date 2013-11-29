@@ -1,6 +1,6 @@
 name=Armadillo Cloak
 url=http://magiccards.info/arc/en/78.html
-image=http://magiccards.info/scans/en/arc/78.jpg
+image=http://mtgimage.com/card/armadillo%20cloak.jpg
 value=4.478
 rarity=C
 type=Enchantment

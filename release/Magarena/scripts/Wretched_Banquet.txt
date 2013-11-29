@@ -1,6 +1,6 @@
 name=Wretched Banquet
 url=http://magiccards.info/cfx/en/56.html
-image=http://magiccards.info/scans/en/cfx/56.jpg
+image=http://mtgimage.com/card/wretched%20banquet.jpg
 value=2.970
 removal=4
 rarity=C

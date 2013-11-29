@@ -1,6 +1,6 @@
 name=Triumph of Cruelty
 url=http://magiccards.info/avr/en/122.html
-image=http://magiccards.info/scans/en/avr/122.jpg
+image=http://mtgimage.com/card/triumph%20of%20cruelty.jpg
 value=2.750
 rarity=U
 type=Enchantment

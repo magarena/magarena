@@ -1,6 +1,6 @@
 name=Army Ants
 url=http://magiccards.info/vi/en/126.html
-image=http://magiccards.info/scans/en/vi/126.jpg
+image=http://mtgimage.com/card/army%20ants.jpg
 value=2.500
 rarity=U
 type=Creature

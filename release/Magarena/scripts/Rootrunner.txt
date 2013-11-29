@@ -1,6 +1,6 @@
 name=Rootrunner
 url=http://magiccards.info/chk/en/237.html
-image=http://magiccards.info/scans/en/chk/237.jpg
+image=http://mtgimage.com/card/rootrunner.jpg
 value=3.077
 rarity=U
 type=Creature

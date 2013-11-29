@@ -1,6 +1,6 @@
 name=Nature's Claim
 url=http://magiccards.info/wwk/en/108.html
-image=http://magiccards.info/scans/en/wwk/108.jpg
+image=http://mtgimage.com/card/nature%27s%20claim.jpg
 value=4.092
 removal=1
 rarity=C

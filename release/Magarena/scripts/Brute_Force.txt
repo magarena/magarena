@@ -1,6 +1,6 @@
 name=Brute Force
 url=http://magiccards.info/pc/en/116.html
-image=http://magiccards.info/scans/en/pc/116.jpg
+image=http://mtgimage.com/card/brute%20force.jpg
 value=4.360
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Akoum Refuge
 url=http://magiccards.info/cmd/en/264.html
-image=http://magiccards.info/scans/en/zen/210.jpg
+image=http://mtgimage.com/card/akoum%20refuge.jpg
 value=4.278
 rarity=U
 type=Land

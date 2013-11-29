@@ -1,6 +1,6 @@
 name=Trained Cheetah
 url=http://magiccards.info/p3k/en/154.html
-image=http://magiccards.info/scans/en/p3k/154.jpg
+image=http://mtgimage.com/card/trained%20cheetah.jpg
 value=1.923
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Hive Stirrings
 url=http://magiccards.info/m14/en/21.html
-image=http://magiccards.info/scans/en/m14/21.jpg
+image=http://mtgimage.com/card/hive%20stirrings.jpg
 value=3.333
 rarity=C
 type=Sorcery

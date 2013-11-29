@@ -1,6 +1,6 @@
 name=Seller of Songbirds
 url=http://magiccards.info/rtr/en/22.html
-image=http://magiccards.info/scans/en/rtr/22.jpg
+image=http://mtgimage.com/card/seller%20of%20songbirds.jpg
 value=2.800
 rarity=C
 type=Creature

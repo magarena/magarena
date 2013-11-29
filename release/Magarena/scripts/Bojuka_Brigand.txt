@@ -1,6 +1,6 @@
 name=Bojuka Brigand
 url=http://magiccards.info/wwk/en/51.html
-image=http://magiccards.info/scans/en/wwk/51.jpg
+image=http://mtgimage.com/card/bojuka%20brigand.jpg
 value=2.783
 rarity=C
 type=Creature

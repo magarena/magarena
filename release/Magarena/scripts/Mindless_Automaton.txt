@@ -1,6 +1,6 @@
 name=Mindless Automaton
 url=http://magiccards.info/ex/en/135.html
-image=http://magiccards.info/scans/en/ex/135.jpg
+image=http://mtgimage.com/card/mindless%20automaton.jpg
 value=3.691
 rarity=R
 type=Artifact,Creature

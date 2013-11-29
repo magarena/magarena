@@ -1,6 +1,6 @@
 name=Pestilence Demon
 url=http://magiccards.info/roe/en/124.html
-image=http://magiccards.info/scans/en/roe/124.jpg
+image=http://mtgimage.com/card/pestilence%20demon.jpg
 value=4.176
 rarity=R
 type=Creature

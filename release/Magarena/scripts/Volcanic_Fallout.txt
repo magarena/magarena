@@ -1,6 +1,6 @@
 name=Volcanic Fallout
 url=http://magiccards.info/arc/en/51.html
-image=http://magiccards.info/scans/en/arc/51.jpg
+image=http://mtgimage.com/card/volcanic%20fallout.jpg
 value=4.397
 removal=2
 rarity=U

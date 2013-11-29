@@ -1,6 +1,6 @@
 name=Scythe Tiger
 url=http://magiccards.info/zen/en/183.html
-image=http://magiccards.info/scans/en/zen/183.jpg
+image=http://mtgimage.com/card/scythe%20tiger.jpg
 value=3.773
 rarity=C
 type=Creature

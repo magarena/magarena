@@ -1,6 +1,6 @@
 name=Last Gasp
 url=http://magiccards.info/rav/en/93.html
-image=http://magiccards.info/scans/en/rav/93.jpg
+image=http://mtgimage.com/card/last%20gasp.jpg
 value=4.228
 removal=2
 rarity=C

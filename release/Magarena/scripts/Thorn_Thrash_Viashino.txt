@@ -1,6 +1,6 @@
 name=Thorn-Thrash Viashino
 url=http://magiccards.info/ala/en/116.html
-image=http://magiccards.info/scans/en/ala/116.jpg
+image=http://mtgimage.com/card/thorn%2Dthrash%20viashino.jpg
 value=2.450
 rarity=C
 type=Creature

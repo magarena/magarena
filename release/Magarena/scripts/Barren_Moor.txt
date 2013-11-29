@@ -1,6 +1,6 @@
 name=Barren Moor
 url=http://magiccards.info/ddj/en/78.html
-image=http://magiccards.info/scans/en/ddj/78.jpg
+image=http://mtgimage.com/card/barren%20moor.jpg
 value=3.000
 rarity=C
 type=Land

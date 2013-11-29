@@ -1,6 +1,6 @@
 name=Scroll Thief
 url=http://magiccards.info/m11/en/72.html
-image=http://magiccards.info/scans/en/m11/72.jpg
+image=http://mtgimage.com/card/scroll%20thief.jpg
 value=3.175
 rarity=C
 type=Creature

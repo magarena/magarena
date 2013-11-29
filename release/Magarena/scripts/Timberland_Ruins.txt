@@ -1,6 +1,6 @@
 name=Timberland Ruins
 url=http://magiccards.info/od/en/330.html
-image=http://magiccards.info/scans/en/od/330.jpg
+image=http://mtgimage.com/card/timberland%20ruins.jpg
 value=2.667
 rarity=C
 type=Land

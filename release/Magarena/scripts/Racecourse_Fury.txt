@@ -1,6 +1,6 @@
 name=Racecourse Fury
 url=http://magiccards.info/rtr/en/104.html
-image=http://magiccards.info/scans/en/rtr/104.jpg
+image=http://mtgimage.com/card/racecourse%20fury.jpg
 value=2.615
 rarity=U
 type=Enchantment

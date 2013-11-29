@@ -1,6 +1,6 @@
 name=Phyrexian Vatmother
 url=http://magiccards.info/mbs/en/52.html
-image=http://magiccards.info/scans/en/mbs/52.jpg
+image=http://mtgimage.com/card/phyrexian%20vatmother.jpg
 value=3.665
 rarity=R
 type=Creature

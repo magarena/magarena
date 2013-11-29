@@ -1,6 +1,6 @@
 name=Stromkirk Noble
 url=http://magiccards.info/isd/en/164.html
-image=http://magiccards.info/scans/en/isd/164.jpg
+image=http://mtgimage.com/card/stromkirk%20noble.jpg
 value=3.818
 rarity=R
 type=Creature

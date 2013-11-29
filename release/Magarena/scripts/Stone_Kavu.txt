@@ -1,6 +1,6 @@
 name=Stone Kavu
 url=http://magiccards.info/ps/en/93.html
-image=http://magiccards.info/scans/en/ps/93.jpg
+image=http://mtgimage.com/card/stone%20kavu.jpg
 value=2.870
 rarity=C
 type=Creature

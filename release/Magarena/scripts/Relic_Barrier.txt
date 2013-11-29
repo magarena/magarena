@@ -1,6 +1,6 @@
 name=Relic Barrier
 url=http://magiccards.info/5dn/en/147.html
-image=http://magiccards.info/scans/en/5dn/147.jpg
+image=http://mtgimage.com/card/relic%20barrier.jpg
 value=3.286
 rarity=U
 type=Artifact

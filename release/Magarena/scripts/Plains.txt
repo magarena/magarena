@@ -1,6 +1,6 @@
 name=Plains
 url=http://magiccards.info/isd/en/250.html
-image=http://magiccards.info/scans/en/zen/230.jpg
+image=http://mtgimage.com/set/ZEN/plains1.jpg
 num_images=2
 value=4.750
 rarity=L

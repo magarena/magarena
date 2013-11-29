@@ -1,6 +1,6 @@
 name=Nether Horror
 url=http://magiccards.info/m11/en/108.html
-image=http://magiccards.info/scans/en/m11/108.jpg
+image=http://mtgimage.com/card/nether%20horror.jpg
 value=1.854
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Mycoloth
 url=http://magiccards.info/ala/en/140.html
-image=http://magiccards.info/scans/en/ala/140.jpg
+image=http://mtgimage.com/card/mycoloth.jpg
 value=3.521
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Wheel of Fortune
 url=http://magiccards.info/rv/en/184.html
-image=http://magiccards.info/scans/en/rv/184.jpg
+image=http://mtgimage.com/card/wheel%20of%20fortune.jpg
 value=4.676
 rarity=R
 type=Sorcery

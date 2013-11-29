@@ -1,6 +1,6 @@
 name=Overwhelming Stampede
 url=http://magiccards.info/m11/en/189.html
-image=http://magiccards.info/scans/en/m11/189.jpg
+image=http://mtgimage.com/card/overwhelming%20stampede.jpg
 value=4.427
 rarity=R
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Glimpse the Unthinkable
 url=http://magiccards.info/rav/en/208.html
-image=http://magiccards.info/scans/en/rav/208.jpg
+image=http://mtgimage.com/card/glimpse%20the%20unthinkable.jpg
 value=4.475
 rarity=R
 type=Sorcery

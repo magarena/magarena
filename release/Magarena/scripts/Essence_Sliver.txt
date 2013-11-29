@@ -1,6 +1,6 @@
 name=Essence Sliver
 url=http://magiccards.info/tsts/en/8.html
-image=http://magiccards.info/scans/en/tsts/8.jpg
+image=http://mtgimage.com/card/essence%20sliver.jpg
 value=4.420
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Kitchen Finks
 url=http://magiccards.info/shm/en/229.html
-image=http://magiccards.info/scans/en/shm/229.jpg
+image=http://mtgimage.com/card/kitchen%20finks.jpg
 value=4.561
 rarity=U
 type=Creature

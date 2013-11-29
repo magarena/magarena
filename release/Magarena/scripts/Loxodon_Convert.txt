@@ -1,6 +1,6 @@
 name=Loxodon Convert
 url=http://magiccards.info/nph/en/14.html
-image=http://magiccards.info/scans/en/nph/14.jpg
+image=http://mtgimage.com/card/loxodon%20convert.jpg
 value=2.008
 rarity=C
 type=Creature

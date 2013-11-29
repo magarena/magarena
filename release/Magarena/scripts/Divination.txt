@@ -1,6 +1,6 @@
 name=Divination
 url=http://magiccards.info/m12/en/50.html
-image=http://magiccards.info/scans/en/m10/49.jpg
+image=http://mtgimage.com/card/divination.jpg
 value=2.907
 rarity=C
 type=Sorcery

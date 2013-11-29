@@ -1,6 +1,6 @@
 name=Seer's Sundial
 url=http://magiccards.info/wwk/en/130.html
-image=http://magiccards.info/scans/en/wwk/130.jpg
+image=http://mtgimage.com/card/seer%27s%20sundial.jpg
 value=3.382
 rarity=R
 type=Artifact

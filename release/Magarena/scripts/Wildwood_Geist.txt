@@ -1,6 +1,6 @@
 name=Wildwood Geist
 url=http://magiccards.info/avr/en/204.html
-image=http://magiccards.info/scans/en/avr/204.jpg
+image=http://mtgimage.com/card/wildwood%20geist.jpg
 value=1.468
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Scattershot Archer
 url=http://magiccards.info/cfx/en/90.html
-image=http://magiccards.info/scans/en/cfx/90.jpg
+image=http://mtgimage.com/card/scattershot%20archer.jpg
 value=3.631
 rarity=C
 type=Creature

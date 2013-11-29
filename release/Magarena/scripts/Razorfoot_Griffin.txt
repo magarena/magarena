@@ -1,6 +1,6 @@
 name=Razorfoot Griffin
 url=http://magiccards.info/m10/en/25.html
-image=http://magiccards.info/scans/en/m10/25.jpg
+image=http://mtgimage.com/card/razorfoot%20griffin.jpg
 value=2.698
 ability=flying;first strike
 rarity=C

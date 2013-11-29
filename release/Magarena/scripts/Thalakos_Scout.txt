@@ -1,6 +1,6 @@
 name=Thalakos Scout
 url=http://magiccards.info/ex/en/48.html
-image=http://magiccards.info/scans/en/ex/48.jpg
+image=http://mtgimage.com/card/thalakos%20scout.jpg
 value=3.455
 rarity=C
 type=Creature

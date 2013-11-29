@@ -1,6 +1,6 @@
 name=Temple Garden
 url=http://magiccards.info/rav/en/284.html
-image=http://magiccards.info/scans/en/rav/284.jpg
+image=http://mtgimage.com/card/temple%20garden.jpg
 value=4.310
 rarity=R
 type=Land

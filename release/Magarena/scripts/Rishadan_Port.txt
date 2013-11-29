@@ -1,6 +1,6 @@
 name=Rishadan Port
 url=http://magiccards.info/mm/en/324.html
-image=http://magiccards.info/scans/en/mm/324.jpg
+image=http://mtgimage.com/card/rishadan%20port.jpg
 value=4.569
 rarity=R
 type=Land

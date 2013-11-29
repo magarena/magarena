@@ -1,6 +1,6 @@
 name=Minotaur Skullcleaver
 url=http://magiccards.info/ths/en/130.html
-image=http://magiccards.info/scans/en/ths/130.jpg
+image=http://mtgimage.com/card/minotaur%20skullcleaver.jpg
 value=3.833
 rarity=C
 type=Creature

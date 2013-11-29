@@ -1,6 +1,6 @@
 name=Transcendent Master
 url=http://magiccards.info/roe/en/51.html
-image=http://magiccards.info/scans/en/roe/51.jpg
+image=http://mtgimage.com/card/transcendent%20master.jpg
 value=4.281
 rarity=M
 type=Creature

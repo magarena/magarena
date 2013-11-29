@@ -1,6 +1,6 @@
 name=Shambleshark
 url=http://magiccards.info/gtc/en/193.html
-image=http://magiccards.info/scans/en/gtc/193.jpg
+image=http://mtgimage.com/card/shambleshark.jpg
 value=3.744
 rarity=C
 type=Creature

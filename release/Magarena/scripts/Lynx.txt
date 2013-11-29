@@ -1,6 +1,6 @@
 name=Lynx
 url=http://magiccards.info/po2/en/72.html
-image=http://magiccards.info/scans/en/po2/72.jpg
+image=http://mtgimage.com/card/lynx.jpg
 value=3.043
 rarity=U
 type=Creature

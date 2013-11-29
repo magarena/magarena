@@ -1,6 +1,6 @@
 name=Spiteful Shadows
 url=http://magiccards.info/dka/en/75.html
-image=http://magiccards.info/scans/en/dka/75.jpg
+image=http://mtgimage.com/card/spiteful%20shadows.jpg
 value=2.150
 rarity=C
 type=Enchantment

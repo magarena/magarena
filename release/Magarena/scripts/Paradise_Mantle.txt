@@ -1,6 +1,6 @@
 name=Paradise Mantle
 url=http://magiccards.info/mma/en/211.html
-image=http://magiccards.info/scans/en/mma/211.jpg
+image=http://mtgimage.com/card/paradise%20mantle.jpg
 value=2.500
 rarity=U
 type=Artifact

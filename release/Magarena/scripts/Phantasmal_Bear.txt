@@ -1,6 +1,6 @@
 name=Phantasmal Bear
 url=http://magiccards.info/m12/en/70.html
-image=http://magiccards.info/scans/en/m12/70.jpg
+image=http://mtgimage.com/card/phantasmal%20bear.jpg
 value=4.168
 rarity=C
 type=Creature

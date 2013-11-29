@@ -1,6 +1,6 @@
 name=Wild Colos
 url=http://magiccards.info/ud/en/100.html
-image=http://magiccards.info/scans/en/ud/100.jpg
+image=http://mtgimage.com/card/wild%20colos.jpg
 value=3.000
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Bronze Sable
 url=http://magiccards.info/ths/en/212.html
-image=http://magiccards.info/scans/en/ths/212.jpg
+image=http://mtgimage.com/card/bronze%20sable.jpg
 value=2.386
 rarity=C
 type=Artifact,Creature

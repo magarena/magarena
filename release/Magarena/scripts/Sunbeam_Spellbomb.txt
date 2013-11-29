@@ -1,6 +1,6 @@
 name=Sunbeam Spellbomb
 url=http://magiccards.info/mrd/en/250.html
-image=http://magiccards.info/scans/en/mrd/250.jpg
+image=http://mtgimage.com/card/sunbeam%20spellbomb.jpg
 value=3.394
 rarity=C
 type=Artifact

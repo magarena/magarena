@@ -1,6 +1,6 @@
 name=Seance
 url=http://magiccards.info/dka/en/20.html
-image=http://magiccards.info/scans/en/dka/20.jpg
+image=http://mtgimage.com/card/seance.jpg
 value=3.244
 rarity=R
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Limestone Golem
 url=http://magiccards.info/od/en/301.html
-image=http://magiccards.info/scans/en/od/301.jpg
+image=http://mtgimage.com/card/limestone%20golem.jpg
 value=1.706
 rarity=U
 type=Artifact,Creature

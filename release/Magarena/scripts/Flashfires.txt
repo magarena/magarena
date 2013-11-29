@@ -1,6 +1,6 @@
 name=Flashfires
 url=http://magiccards.info/9e/en/183.html
-image=http://magiccards.info/scans/en/9e/183.jpg
+image=http://mtgimage.com/card/flashfires.jpg
 value=3.837
 rarity=U
 type=Sorcery

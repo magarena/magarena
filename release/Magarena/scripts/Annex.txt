@@ -1,6 +1,6 @@
 name=Annex
 url=http://magiccards.info/9e/en/59.html
-image=http://magiccards.info/scans/en/9e/59.jpg
+image=http://mtgimage.com/card/annex.jpg
 value=3.607
 rarity=U
 type=Enchantment

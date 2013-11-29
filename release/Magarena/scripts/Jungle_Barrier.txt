@@ -1,6 +1,6 @@
 name=Jungle Barrier
 url=http://magiccards.info/ap/en/106.html
-image=http://magiccards.info/scans/en/ap/106.jpg
+image=http://mtgimage.com/card/jungle%20barrier.jpg
 value=3.659
 rarity=U
 type=Creature

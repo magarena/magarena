@@ -1,6 +1,6 @@
 name=Riot Spikes
 url=http://magiccards.info/di/en/146.html
-image=http://magiccards.info/scans/en/di/146.jpg
+image=http://mtgimage.com/card/riot%20spikes.jpg
 value=2.522
 rarity=C
 type=Enchantment

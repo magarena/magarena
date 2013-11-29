@@ -1,6 +1,6 @@
 name=Ankh of Mishra
 url=http://magiccards.info/med/en/151.html
-image=http://magiccards.info/scans/en/med/151.jpg
+image=http://mtgimage.com/card/ankh%20of%20mishra.jpg
 value=4.049
 rarity=R
 type=Artifact

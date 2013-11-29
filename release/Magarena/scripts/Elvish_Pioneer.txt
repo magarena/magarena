@@ -1,6 +1,6 @@
 name=Elvish Pioneer
 url=http://magiccards.info/8e/en/243.html
-image=http://magiccards.info/scans/en/8e/243.jpg
+image=http://mtgimage.com/card/elvish%20pioneer.jpg
 value=3.807
 rarity=C
 type=Creature

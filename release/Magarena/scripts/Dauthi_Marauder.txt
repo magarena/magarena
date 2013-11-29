@@ -1,6 +1,6 @@
 name=Dauthi Marauder
 url=http://magiccards.info/tp/en/17.html
-image=http://magiccards.info/scans/en/tp/17.jpg
+image=http://mtgimage.com/card/dauthi%20marauder.jpg
 value=3.907
 rarity=C
 type=Creature

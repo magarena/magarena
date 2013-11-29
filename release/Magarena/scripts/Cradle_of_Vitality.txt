@@ -1,6 +1,6 @@
 name=Cradle of Vitality
 url=http://magiccards.info/ala/en/7.html
-image=http://magiccards.info/scans/en/ala/7.jpg
+image=http://mtgimage.com/card/cradle%20of%20vitality.jpg
 value=3.295
 rarity=R
 type=Enchantment

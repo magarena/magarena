@@ -1,6 +1,6 @@
 name=Magister Sphinx
 url=http://magiccards.info/arc/en/89.html
-image=http://magiccards.info/scans/en/arc/89.jpg
+image=http://mtgimage.com/card/magister%20sphinx.jpg
 value=3.896
 rarity=R
 type=Artifact,Creature

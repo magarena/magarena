@@ -1,6 +1,6 @@
 name=Mass Appeal
 url=http://magiccards.info/avr/en/66.html
-image=http://magiccards.info/scans/en/avr/66.jpg
+image=http://mtgimage.com/card/mass%20appeal.jpg
 value=3.465
 rarity=U
 type=Sorcery

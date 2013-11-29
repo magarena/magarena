@@ -1,6 +1,6 @@
 name=Wing Snare
 url=http://magiccards.info/8e/en/288.html
-image=http://magiccards.info/scans/en/8e/288.jpg
+image=http://mtgimage.com/card/wing%20snare.jpg
 value=2.548
 removal=3
 rarity=U

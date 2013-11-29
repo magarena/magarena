@@ -1,6 +1,6 @@
 name=Mark of Fury
 url=http://magiccards.info/ud/en/93.html
-image=http://magiccards.info/scans/en/ud/93.jpg
+image=http://mtgimage.com/card/mark%20of%20fury.jpg
 value=3.622
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Moonglove Changeling
 url=http://magiccards.info/mt/en/67.html
-image=http://magiccards.info/scans/en/mt/67.jpg
+image=http://mtgimage.com/card/moonglove%20changeling.jpg
 value=2.969
 rarity=C
 type=Creature

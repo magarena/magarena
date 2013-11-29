@@ -1,6 +1,6 @@
 name=Farbog Boneflinger
 url=http://magiccards.info/dka/en/61.html
-image=http://magiccards.info/scans/en/dka/61.jpg
+image=http://mtgimage.com/card/farbog%20boneflinger.jpg
 value=1.331
 rarity=U
 removal=2

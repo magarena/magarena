@@ -1,6 +1,6 @@
 name=Reanimate
 url=http://magiccards.info/arc/en/21.html
-image=http://magiccards.info/scans/en/arc/21.jpg
+image=http://mtgimage.com/card/reanimate.jpg
 value=4.654
 rarity=U
 type=Sorcery

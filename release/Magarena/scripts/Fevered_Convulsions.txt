@@ -1,6 +1,6 @@
 name=Fevered Convulsions
 url=http://magiccards.info/tp/en/30.html
-image=http://magiccards.info/scans/en/tp/30.jpg
+image=http://mtgimage.com/card/fevered%20convulsions.jpg
 value=3.032
 rarity=R
 type=Enchantment

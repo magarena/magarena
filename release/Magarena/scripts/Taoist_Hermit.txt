@@ -1,6 +1,6 @@
 name=Taoist Hermit
 url=http://magiccards.info/p3k/en/150.html
-image=http://magiccards.info/scans/en/p3k/150.jpg
+image=http://mtgimage.com/card/taoist%20hermit.jpg
 value=3.378
 rarity=U
 type=Creature

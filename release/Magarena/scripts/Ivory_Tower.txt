@@ -1,6 +1,6 @@
 name=Ivory Tower
 url=http://magiccards.info/fvr/en/4.html
-image=http://magiccards.info/scans/en/fvr/4.jpg
+image=http://mtgimage.com/card/ivory%20tower.jpg
 value=4.318
 rarity=R
 type=Artifact

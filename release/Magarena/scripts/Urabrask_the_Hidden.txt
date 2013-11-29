@@ -1,6 +1,6 @@
 name=Urabrask the Hidden
 url=http://magiccards.info/nph/en/98.html
-image=http://magiccards.info/scans/en/nph/98.jpg
+image=http://mtgimage.com/card/urabrask%20the%20hidden.jpg
 value=4.217
 rarity=M
 type=Legendary,Creature

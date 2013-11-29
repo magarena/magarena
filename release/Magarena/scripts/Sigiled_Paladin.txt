@@ -1,6 +1,6 @@
 name=Sigiled Paladin
 url=http://magiccards.info/ala/en/27.html
-image=http://magiccards.info/scans/en/ala/27.jpg
+image=http://mtgimage.com/card/sigiled%20paladin.jpg
 value=3.662
 rarity=U
 type=Creature

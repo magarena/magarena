@@ -1,6 +1,6 @@
 name=Moriok Scavenger
 url=http://magiccards.info/mi/en/68.html
-image=http://magiccards.info/scans/en/mi/68.jpg
+image=http://mtgimage.com/card/moriok%20scavenger.jpg
 value=3.338
 rarity=C
 type=Creature

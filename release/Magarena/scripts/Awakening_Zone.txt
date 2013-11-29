@@ -1,6 +1,6 @@
 name=Awakening Zone
 url=http://magiccards.info/cmd/en/142.html
-image=http://magiccards.info/scans/en/roe/176.jpg
+image=http://mtgimage.com/card/awakening%20zone.jpg
 value=3.857
 rarity=R
 type=Enchantment

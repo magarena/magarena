@@ -1,6 +1,6 @@
 name=Cursed Ronin
 url=http://magiccards.info/chk/en/107.html
-image=http://magiccards.info/scans/en/chk/107.jpg
+image=http://mtgimage.com/card/cursed%20ronin.jpg
 value=2.750
 rarity=C
 type=Creature

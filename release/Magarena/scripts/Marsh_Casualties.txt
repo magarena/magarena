@@ -1,6 +1,6 @@
 name=Marsh Casualties
 url=http://magiccards.info/zen/en/101.html
-image=http://magiccards.info/scans/en/zen/101.jpg
+image=http://mtgimage.com/card/marsh%20casualties.jpg
 value=3.761
 removal=2
 rarity=U

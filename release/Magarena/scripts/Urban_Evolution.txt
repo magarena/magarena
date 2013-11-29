@@ -1,6 +1,6 @@
 name=Urban Evolution
 url=http://magiccards.info/gtc/en/204.html
-image=http://magiccards.info/scans/en/gtc/204.jpg
+image=http://mtgimage.com/card/urban%20evolution.jpg
 value=3.478
 rarity=U
 type=Sorcery

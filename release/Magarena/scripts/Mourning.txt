@@ -1,6 +1,6 @@
 name=Mourning
 url=http://magiccards.info/in/en/111.html
-image=http://magiccards.info/scans/en/in/111.jpg
+image=http://mtgimage.com/card/mourning.jpg
 value=2.154
 rarity=C
 type=Enchantment

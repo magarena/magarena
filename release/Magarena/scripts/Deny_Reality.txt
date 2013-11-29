@@ -1,6 +1,6 @@
 name=Deny Reality
 url=http://magiccards.info/pc2/en/85.html
-image=http://magiccards.info/scans/en/pc2/85.jpg
+image=http://mtgimage.com/card/deny%20reality.jpg
 value=2.875
 rarity=C
 type=Sorcery

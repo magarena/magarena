@@ -1,6 +1,6 @@
 name=Puresteel Paladin
 url=http://magiccards.info/nph/en/20.html
-image=http://magiccards.info/scans/en/nph/20.jpg
+image=http://mtgimage.com/card/puresteel%20paladin.jpg
 value=4.350
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Aeolipile
 url=http://magiccards.info/me2/en/202.html
-image=http://magiccards.info/scans/en/me2/202.jpg
+image=http://mtgimage.com/card/aeolipile.jpg
 value=3.385
 rarity=C
 type=Artifact

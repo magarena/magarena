@@ -1,6 +1,6 @@
 name=Cathedral Sanctifier
 url=http://magiccards.info/avr/en/11.html
-image=http://magiccards.info/scans/en/avr/11.jpg
+image=http://mtgimage.com/card/cathedral%20sanctifier.jpg
 value=3.478
 rarity=C
 type=Creature

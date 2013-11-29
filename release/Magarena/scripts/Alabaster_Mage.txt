@@ -1,6 +1,6 @@
 name=Alabaster Mage
 url=http://magiccards.info/m12/en/2.html
-image=http://magiccards.info/scans/en/m12/2.jpg
+image=http://mtgimage.com/card/alabaster%20mage.jpg
 value=3.103
 rarity=U
 type=Creature

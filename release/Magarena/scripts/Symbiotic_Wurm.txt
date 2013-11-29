@@ -1,6 +1,6 @@
 name=Symbiotic Wurm
 url=http://magiccards.info/cmd/en/174.html
-image=http://magiccards.info/scans/en/cmd/174.jpg
+image=http://mtgimage.com/card/symbiotic%20wurm.jpg
 value=3.964
 rarity=R
 type=Creature

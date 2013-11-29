@@ -1,6 +1,6 @@
 name=Intrepid Hero
 url=http://magiccards.info/m13/en/20.html
-image=http://magiccards.info/scans/en/m13/20.jpg
+image=http://mtgimage.com/card/intrepid%20hero.jpg
 value=4.258
 rarity=R
 type=Creature

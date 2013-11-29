@@ -1,6 +1,6 @@
 name=Soltari Visionary
 url=http://magiccards.info/ex/en/20.html
-image=http://magiccards.info/scans/en/ex/20.jpg
+image=http://mtgimage.com/card/soltari%20visionary.jpg
 value=4.361
 rarity=C
 type=Creature

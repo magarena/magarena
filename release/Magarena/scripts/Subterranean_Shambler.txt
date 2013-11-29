@@ -1,6 +1,6 @@
 name=Subterranean Shambler
 url=http://magiccards.info/ts/en/178.html
-image=http://magiccards.info/scans/en/ts/178.jpg
+image=http://mtgimage.com/card/subterranean%20shambler.jpg
 value=2.113
 removal=1
 rarity=C

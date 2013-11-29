@@ -1,6 +1,6 @@
 name=Paraselene
 url=http://magiccards.info/isd/en/26.html
-image=http://magiccards.info/scans/en/isd/26.jpg
+image=http://mtgimage.com/card/paraselene.jpg
 value=3.348
 removal=2
 rarity=U

@@ -1,6 +1,6 @@
 name=Diviner's Wand
 url=http://magiccards.info/mt/en/142.html
-image=http://magiccards.info/scans/en/mt/142.jpg
+image=http://mtgimage.com/card/diviner%27s%20wand.jpg
 value=3.000
 rarity=U
 type=Tribal,Artifact

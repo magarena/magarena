@@ -1,6 +1,6 @@
 name=Shattering Spree
 url=http://magiccards.info/gp/en/75.html
-image=http://magiccards.info/scans/en/gp/75.jpg
+image=http://mtgimage.com/card/shattering%20spree.jpg
 value=4.621
 removal=1
 rarity=U

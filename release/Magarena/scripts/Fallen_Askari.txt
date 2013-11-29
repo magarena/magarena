@@ -1,6 +1,6 @@
 name=Fallen Askari
 url=http://magiccards.info/vi/en/9.html
-image=http://magiccards.info/scans/en/vi/9.jpg
+image=http://mtgimage.com/card/fallen%20askari.jpg
 value=3.674
 rarity=C
 type=Creature

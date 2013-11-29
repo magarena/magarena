@@ -1,6 +1,6 @@
 name=Mudbrawler Cohort
 url=http://magiccards.info/shm/en/100.html
-image=http://magiccards.info/scans/en/shm/100.jpg
+image=http://mtgimage.com/card/mudbrawler%20cohort.jpg
 value=2.923
 rarity=C
 type=Creature

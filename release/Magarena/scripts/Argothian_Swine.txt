@@ -1,6 +1,6 @@
 name=Argothian Swine
 url=http://magiccards.info/us/en/235.html
-image=http://magiccards.info/scans/en/us/235.jpg
+image=http://mtgimage.com/card/argothian%20swine.jpg
 value=3.542
 rarity=C
 type=Creature

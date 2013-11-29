@@ -1,6 +1,6 @@
 name=Riku of Two Reflections
 url=http://magiccards.info/cmd/en/220.html
-image=http://magiccards.info/scans/en/cmd/220.jpg
+image=http://mtgimage.com/card/riku%20of%20two%20reflections.jpg
 value=4.086
 rarity=M
 type=Legendary,Creature

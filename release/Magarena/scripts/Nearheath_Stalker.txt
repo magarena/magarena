@@ -1,6 +1,6 @@
 name=Nearheath Stalker
 url=http://magiccards.info/dka/en/100.html
-image=http://magiccards.info/scans/en/dka/100.jpg
+image=http://mtgimage.com/card/nearheath%20stalker.jpg
 value=1.922
 rarity=C
 type=Creature

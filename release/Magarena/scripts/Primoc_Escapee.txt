@@ -1,6 +1,6 @@
 name=Primoc Escapee
 url=http://magiccards.info/le/en/49.html
-image=http://magiccards.info/scans/en/le/49.jpg
+image=http://mtgimage.com/card/primoc%20escapee.jpg
 value=1.889
 rarity=U
 type=Creature

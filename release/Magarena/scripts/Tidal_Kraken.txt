@@ -1,6 +1,6 @@
 name=Tidal Kraken
 url=http://magiccards.info/9e/en/105.html
-image=http://magiccards.info/scans/en/9e/105.jpg
+image=http://mtgimage.com/card/tidal%20kraken.jpg
 value=3.845
 ability=unblockable
 rarity=R

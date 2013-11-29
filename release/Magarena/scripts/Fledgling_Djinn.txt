@@ -1,6 +1,6 @@
 name=Fledgling Djinn
 url=http://magiccards.info/wl/en/11.html
-image=http://magiccards.info/scans/en/wl/11.jpg
+image=http://mtgimage.com/card/fledgling%20djinn.jpg
 value=3.060
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Belligerent Hatchling
 url=http://magiccards.info/eve/en/134.html
-image=http://magiccards.info/scans/en/eve/134.jpg
+image=http://mtgimage.com/card/belligerent%20hatchling.jpg
 value=3.404
 rarity=U
 type=Creature

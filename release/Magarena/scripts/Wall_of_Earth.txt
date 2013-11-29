@@ -1,6 +1,6 @@
 name=Wall of Earth
 url=http://magiccards.info/lg/en/166.html
-image=http://magiccards.info/scans/en/lg/166.jpg
+image=http://mtgimage.com/card/wall%20of%20earth.jpg
 value=3.074
 rarity=C
 type=Creature

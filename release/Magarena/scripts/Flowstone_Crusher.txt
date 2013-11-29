@@ -1,6 +1,6 @@
 name=Flowstone Crusher
 url=http://magiccards.info/9e/en/184.html
-image=http://magiccards.info/scans/en/9e/184.jpg
+image=http://mtgimage.com/card/flowstone%20crusher.jpg
 value=3.375
 rarity=U
 type=Creature

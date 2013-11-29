@@ -1,6 +1,6 @@
 name=Highland Berserker
 url=http://magiccards.info/zen/en/132.html
-image=http://magiccards.info/scans/en/zen/132.jpg
+image=http://mtgimage.com/card/highland%20berserker.jpg
 value=3.117
 rarity=C
 type=Creature

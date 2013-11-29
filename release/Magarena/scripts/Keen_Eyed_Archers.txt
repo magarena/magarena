@@ -1,6 +1,6 @@
 name=Keen-Eyed Archers
 url=http://magiccards.info/po/en/181.html
-image=http://magiccards.info/scans/en/po/181.jpg
+image=http://mtgimage.com/card/keen%2Deyed%20archers.jpg
 value=3.048
 rarity=C
 type=Creature

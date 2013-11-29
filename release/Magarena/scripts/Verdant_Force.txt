@@ -1,6 +1,6 @@
 name=Verdant Force
 url=http://magiccards.info/dpa/en/87.html
-image=http://magiccards.info/scans/en/10e/307.jpg
+image=http://mtgimage.com/card/verdant%20force.jpg
 value=4.290
 rarity=R
 type=Creature

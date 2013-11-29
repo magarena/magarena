@@ -1,6 +1,6 @@
 name=Viashino Shanktail
 url=http://magiccards.info/gtc/en/110.html
-image=http://magiccards.info/scans/en/gtc/110.jpg
+image=http://mtgimage.com/card/viashino%20shanktail.jpg
 value=2.895
 rarity=U
 type=Creature

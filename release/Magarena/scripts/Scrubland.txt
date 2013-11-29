@@ -1,6 +1,6 @@
 name=Scrubland
 url=http://magiccards.info/me4/en/251.html
-image=http://magiccards.info/scans/en/me4/251.jpg
+image=http://mtgimage.com/card/scrubland.jpg
 value=4.574
 rarity=R
 type=Land

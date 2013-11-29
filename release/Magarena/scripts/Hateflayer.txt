@@ -1,6 +1,6 @@
 name=Hateflayer
 url=http://magiccards.info/eve/en/55.html
-image=http://magiccards.info/scans/en/eve/55.jpg
+image=http://mtgimage.com/card/hateflayer.jpg
 value=3.950
 rarity=R
 type=Creature

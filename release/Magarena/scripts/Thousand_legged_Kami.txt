@@ -1,6 +1,6 @@
 name=Thousand-legged Kami
 url=http://magiccards.info/chk/en/246.html
-image=http://magiccards.info/scans/en/chk/246.jpg
+image=http://mtgimage.com/card/thousand%2Dlegged%20kami.jpg
 value=2.188
 rarity=U
 type=Creature

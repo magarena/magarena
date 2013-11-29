@@ -1,6 +1,6 @@
 name=Diregraf Ghoul
 url=http://magiccards.info/isd/en/97.html
-image=http://magiccards.info/scans/en/isd/97.jpg
+image=http://mtgimage.com/card/diregraf%20ghoul.jpg
 value=3.864
 rarity=U
 type=Creature

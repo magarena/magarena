@@ -1,6 +1,6 @@
 name=Rath's Edge
 url=http://magiccards.info/ne/en/142.html
-image=http://magiccards.info/scans/en/ne/142.jpg
+image=http://mtgimage.com/card/rath%27s%20edge.jpg
 value=2.511
 rarity=R
 type=Legendary,Land

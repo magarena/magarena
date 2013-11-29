@@ -1,6 +1,6 @@
 name=Collective Blessing
 url=http://magiccards.info/rtr/en/150.html
-image=http://magiccards.info/scans/en/rtr/150.jpg
+image=http://mtgimage.com/card/collective%20blessing.jpg
 value=3.646
 rarity=R
 type=Enchantment

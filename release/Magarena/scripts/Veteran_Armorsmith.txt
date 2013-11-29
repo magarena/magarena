@@ -1,6 +1,6 @@
 name=Veteran Armorsmith
 url=http://magiccards.info/m10/en/38.html
-image=http://magiccards.info/scans/en/m10/38.jpg
+image=http://mtgimage.com/card/veteran%20armorsmith.jpg
 value=4.152
 rarity=C
 type=Creature

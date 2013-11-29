@@ -1,6 +1,6 @@
 name=Legacy Weapon
 url=http://magiccards.info/10e/en/330.html
-image=http://magiccards.info/scans/en/ap/137.jpg
+image=http://mtgimage.com/card/legacy%20weapon.jpg
 value=4.149
 rarity=R
 type=Legendary,Artifact

@@ -1,6 +1,6 @@
 name=Stun Sniper
 url=http://magiccards.info/arb/en/100.html
-image=http://magiccards.info/scans/en/arb/100.jpg
+image=http://mtgimage.com/card/stun%20sniper.jpg
 value=3.818
 rarity=U
 type=Creature

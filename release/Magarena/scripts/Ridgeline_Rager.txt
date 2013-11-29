@@ -1,6 +1,6 @@
 name=Ridgeline Rager
 url=http://magiccards.info/8e/en/215.html
-image=http://magiccards.info/scans/en/8e/215.jpg
+image=http://mtgimage.com/card/ridgeline%20rager.jpg
 value=3.182
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Restless Apparition
 url=http://magiccards.info/eve/en/94.html
-image=http://magiccards.info/scans/en/eve/94.jpg
+image=http://mtgimage.com/card/restless%20apparition.jpg
 value=3.620
 rarity=U
 type=Creature

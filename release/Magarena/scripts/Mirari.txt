@@ -1,6 +1,6 @@
 name=Mirari
 url=http://magiccards.info/fvr/en/9.html
-image=http://magiccards.info/scans/en/fvr/9.jpg
+image=http://mtgimage.com/card/mirari.jpg
 value=4.444
 rarity=M
 type=Legendary,Artifact

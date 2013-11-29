@@ -1,6 +1,6 @@
 name=Shield of the Righteous
 url=http://magiccards.info/arb/en/11.html
-image=http://magiccards.info/scans/en/arb/11.jpg
+image=http://mtgimage.com/card/shield%20of%20the%20righteous.jpg
 value=2.986
 rarity=U
 type=Artifact

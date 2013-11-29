@@ -1,6 +1,6 @@
 name=Blackcleave Cliffs
 url=http://magiccards.info/som/en/224.html
-image=http://magiccards.info/scans/en/som/224.jpg
+image=http://mtgimage.com/card/blackcleave%20cliffs.jpg
 value=4.239
 rarity=R
 type=Land

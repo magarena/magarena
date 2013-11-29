@@ -1,6 +1,6 @@
 name=Talon Sliver
 url=http://magiccards.info/tp/en/262.html
-image=http://magiccards.info/scans/en/tp/262.jpg
+image=http://mtgimage.com/card/talon%20sliver.jpg
 value=4.080
 rarity=C
 type=Creature

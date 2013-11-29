@@ -1,6 +1,6 @@
 name=Changeling Titan
 url=http://magiccards.info/lw/en/200.html
-image=http://magiccards.info/scans/en/lw/200.jpg
+image=http://mtgimage.com/card/changeling%20titan.jpg
 value=3.703
 removal=2
 rarity=U

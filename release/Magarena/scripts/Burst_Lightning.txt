@@ -1,6 +1,6 @@
 name=Burst Lightning
 url=http://magiccards.info/zen/en/119.html
-image=http://magiccards.info/scans/en/zen/119.jpg
+image=http://mtgimage.com/card/burst%20lightning.jpg
 value=4.082
 removal=3
 rarity=C

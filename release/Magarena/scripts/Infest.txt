@@ -1,6 +1,6 @@
 name=Infest
 url=http://magiccards.info/arc/en/19.html
-image=http://magiccards.info/scans/en/arc/19.jpg
+image=http://mtgimage.com/card/infest.jpg
 value=4.434
 removal=2
 rarity=U

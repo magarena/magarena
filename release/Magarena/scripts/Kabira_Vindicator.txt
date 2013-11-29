@@ -1,6 +1,6 @@
 name=Kabira Vindicator
 url=http://magiccards.info/roe/en/28.html
-image=http://magiccards.info/scans/en/roe/28.jpg
+image=http://mtgimage.com/card/kabira%20vindicator.jpg
 value=3.355
 rarity=U
 type=Creature

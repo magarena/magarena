@@ -1,6 +1,6 @@
 name=Street Spasm
 url=http://magiccards.info/rtr/en/106.html
-image=http://magiccards.info/scans/en/rtr/106.jpg
+image=http://mtgimage.com/card/street%20spasm.jpg
 value=3.037
 rarity=U
 type=Instant

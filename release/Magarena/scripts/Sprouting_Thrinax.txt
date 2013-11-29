@@ -1,6 +1,6 @@
 name=Sprouting Thrinax
 url=http://magiccards.info/ala/en/197.html
-image=http://magiccards.info/scans/en/ala/197.jpg
+image=http://mtgimage.com/card/sprouting%20thrinax.jpg
 value=4.037
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Sword of the Chosen
 url=http://magiccards.info/sh/en/135.html
-image=http://magiccards.info/scans/en/sh/135.jpg
+image=http://mtgimage.com/card/sword%20of%20the%20chosen.jpg
 value=3.176
 rarity=R
 type=Legendary,Artifact

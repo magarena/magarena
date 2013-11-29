@@ -1,6 +1,6 @@
 name=Heartwood Treefolk
 url=http://magiccards.info/tp/en/127.html
-image=http://magiccards.info/scans/en/tp/127.jpg
+image=http://mtgimage.com/card/heartwood%20treefolk.jpg
 value=2.804
 rarity=U
 type=Creature

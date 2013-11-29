@@ -1,6 +1,6 @@
 name=Overrun
 url=http://magiccards.info/m12/en/186.html
-image=http://magiccards.info/scans/en/dpa/78.jpg
+image=http://mtgimage.com/card/overrun.jpg
 value=4.483
 rarity=U
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Riot Ringleader
 url=http://magiccards.info/avr/en/152.html
-image=http://magiccards.info/scans/en/avr/152.jpg
+image=http://mtgimage.com/card/riot%20ringleader.jpg
 value=2.566
 rarity=C
 type=Creature

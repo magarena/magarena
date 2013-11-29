@@ -1,6 +1,6 @@
 name=Rhox Charger
 url=http://magiccards.info/ala/en/145.html
-image=http://magiccards.info/scans/en/ala/145.jpg
+image=http://mtgimage.com/card/rhox%20charger.jpg
 value=2.976
 rarity=U
 type=Creature

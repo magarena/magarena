@@ -1,6 +1,6 @@
 name=Foundry Street Denizen
 url=http://magiccards.info/gtc/en/92.html
-image=http://magiccards.info/scans/en/gtc/92.jpg
+image=http://mtgimage.com/card/foundry%20street%20denizen.jpg
 value=2.821
 rarity=C
 type=Creature

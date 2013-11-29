@@ -1,6 +1,6 @@
 name=Bountiful Harvest
 url=http://magiccards.info/m12/en/166.html
-image=http://magiccards.info/scans/en/m12/166.jpg
+image=http://mtgimage.com/card/bountiful%20harvest.jpg
 value=1.148
 rarity=C
 type=Sorcery

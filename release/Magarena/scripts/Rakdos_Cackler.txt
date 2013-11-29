@@ -1,6 +1,6 @@
 name=Rakdos Cackler
 url=http://magiccards.info/rtr/en/220.html
-image=http://magiccards.info/scans/en/rtr/220.jpg
+image=http://mtgimage.com/card/rakdos%20cackler.jpg
 value=4.212
 rarity=U
 type=Creature

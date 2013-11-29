@@ -1,6 +1,6 @@
 name=Judge's Familiar
 url=http://magiccards.info/rtr/en/218.html
-image=http://magiccards.info/scans/en/rtr/218.jpg
+image=http://mtgimage.com/card/judge%27s%20familiar.jpg
 value=2.500
 rarity=U
 type=Creature

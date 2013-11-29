@@ -1,6 +1,6 @@
 name=Mythic Proportions
 url=http://magiccards.info/on/en/274.html
-image=http://magiccards.info/scans/en/on/274.jpg
+image=http://mtgimage.com/card/mythic%20proportions.jpg
 value=3.616
 rarity=R
 type=Enchantment

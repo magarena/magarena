@@ -1,6 +1,6 @@
 name=Pongify
 url=http://magiccards.info/pc/en/44.html
-image=http://magiccards.info/scans/en/pc/44.jpg
+image=http://mtgimage.com/card/pongify.jpg
 value=4.504
 removal=3
 rarity=U

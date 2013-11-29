@@ -1,6 +1,6 @@
 name=Briarknit Kami
 url=http://magiccards.info/sok/en/124.html
-image=http://magiccards.info/scans/en/sok/124.jpg
+image=http://mtgimage.com/card/briarknit%20kami.jpg
 value=3.044
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Spire Monitor
 url=http://magiccards.info/nph/en/46.html
-image=http://magiccards.info/scans/en/nph/46.jpg
+image=http://mtgimage.com/card/spire%20monitor.jpg
 value=2.898
 ability=flash;flying
 rarity=C

@@ -1,6 +1,6 @@
 name=Death Grasp
 url=http://magiccards.info/ap/en/95.html
-image=http://magiccards.info/scans/en/ap/95.jpg
+image=http://mtgimage.com/card/death%20grasp.jpg
 value=4.500
 removal=4
 rarity=R

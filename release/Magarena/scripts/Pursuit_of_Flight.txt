@@ -1,6 +1,6 @@
 name=Pursuit of Flight
 url=http://magiccards.info/rtr/en/102.html
-image=http://magiccards.info/scans/en/rtr/102.jpg
+image=http://mtgimage.com/card/pursuit%20of%20flight.jpg
 value=2.439
 rarity=C
 type=Enchantment

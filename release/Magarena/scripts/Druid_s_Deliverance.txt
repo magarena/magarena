@@ -1,6 +1,6 @@
 name=Druid's Deliverance
 url=http://magiccards.info/rtr/en/123.html
-image=http://magiccards.info/scans/en/rtr/123.jpg
+image=http://mtgimage.com/card/druid%27s%20deliverance.jpg
 value=3.717
 rarity=C
 type=Instant

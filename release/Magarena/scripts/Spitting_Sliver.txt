@@ -1,6 +1,6 @@
 name=Spitting Sliver
 url=http://magiccards.info/pc/en/80.html
-image=http://magiccards.info/scans/en/pc/80.jpg
+image=http://mtgimage.com/card/spitting%20sliver.jpg
 value=2.500
 rarity=C
 type=Creature

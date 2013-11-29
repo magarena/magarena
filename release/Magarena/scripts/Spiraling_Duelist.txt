@@ -1,6 +1,6 @@
 name=Spiraling Duelist
 url=http://magiccards.info/mbs/en/76.html
-image=http://magiccards.info/scans/en/mbs/76.jpg
+image=http://mtgimage.com/card/spiraling%20duelist.jpg
 value=2.309
 rarity=U
 type=Creature

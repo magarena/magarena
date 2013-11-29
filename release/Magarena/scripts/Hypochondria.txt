@@ -1,6 +1,6 @@
 name=Hypochondria
 url=http://magiccards.info/tr/en/7.html
-image=http://magiccards.info/scans/en/tr/7.jpg
+image=http://mtgimage.com/card/hypochondria.jpg
 value=2.845
 rarity=U
 type=Enchantment

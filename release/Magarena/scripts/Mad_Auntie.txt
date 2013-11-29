@@ -1,6 +1,6 @@
 name=Mad Auntie
 url=http://magiccards.info/lw/en/123.html
-image=http://magiccards.info/scans/en/lw/123.jpg
+image=http://mtgimage.com/card/mad%20auntie.jpg
 value=4.324
 rarity=R
 type=Creature

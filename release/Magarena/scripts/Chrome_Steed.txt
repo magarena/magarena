@@ -1,6 +1,6 @@
 name=Chrome Steed
 url=http://magiccards.info/som/en/142.html
-image=http://magiccards.info/scans/en/som/142.jpg
+image=http://mtgimage.com/card/chrome%20steed.jpg
 value=2.430
 rarity=C
 type=Artifact,Creature

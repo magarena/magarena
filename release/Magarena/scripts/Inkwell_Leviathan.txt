@@ -1,6 +1,6 @@
 name=Inkwell Leviathan
 url=http://magiccards.info/cfx/en/30.html
-image=http://magiccards.info/scans/en/cfx/30.jpg
+image=http://mtgimage.com/card/inkwell%20leviathan.jpg
 value=4.639
 ability=islandwalk;trample;shroud
 rarity=R

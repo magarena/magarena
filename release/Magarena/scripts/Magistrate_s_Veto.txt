@@ -1,6 +1,6 @@
 name=Magistrate's Veto
 url=http://magiccards.info/mm/en/204.html
-image=http://magiccards.info/scans/en/mm/204.jpg
+image=http://mtgimage.com/card/magistrate%27s%20veto.jpg
 value=3.879
 rarity=U
 type=Enchantment

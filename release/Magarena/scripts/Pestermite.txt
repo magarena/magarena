@@ -1,6 +1,6 @@
 name=Pestermite
 url=http://magiccards.info/lw/en/78.html
-image=http://magiccards.info/scans/en/lw/78.jpg
+image=http://mtgimage.com/card/pestermite.jpg
 value=4.176
 rarity=C
 type=Creature

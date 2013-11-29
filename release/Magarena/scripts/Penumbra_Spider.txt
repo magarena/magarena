@@ -1,6 +1,6 @@
 name=Penumbra Spider
 url=http://magiccards.info/pc2/en/73.html
-image=http://magiccards.info/scans/en/pc2/73.jpg
+image=http://mtgimage.com/card/penumbra%20spider.jpg
 value=3.882
 rarity=C
 type=Creature

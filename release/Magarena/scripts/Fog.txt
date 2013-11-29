@@ -1,6 +1,6 @@
 name=Fog
 url=http://magiccards.info/m12/en/173.html
-image=http://magiccards.info/scans/en/m12/173.jpg
+image=http://mtgimage.com/card/fog.jpg
 value=3.931
 rarity=C
 type=Instant

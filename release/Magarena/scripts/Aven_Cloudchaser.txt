@@ -1,6 +1,6 @@
 name=Aven Cloudchaser
 url=http://magiccards.info/10e/en/7.html
-image=http://magiccards.info/scans/en/10e/7.jpg
+image=http://mtgimage.com/card/aven%20cloudchaser.jpg
 value=3.077
 rarity=C
 type=Creature

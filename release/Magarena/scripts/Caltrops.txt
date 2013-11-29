@@ -1,6 +1,6 @@
 name=Caltrops
 url=http://magiccards.info/ud/en/129.html
-image=http://magiccards.info/scans/en/ud/129.jpg
+image=http://mtgimage.com/card/caltrops.jpg
 value=3.888
 rarity=U
 type=Artifact

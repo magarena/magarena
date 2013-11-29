@@ -1,6 +1,6 @@
 name=Lost Soul
 url=http://magiccards.info/6e/en/142.html
-image=http://magiccards.info/scans/en/6e/142.jpg
+image=http://mtgimage.com/card/lost%20soul.jpg
 value=2.033
 rarity=C
 type=Creature

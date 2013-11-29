@@ -1,6 +1,6 @@
 name=Threaten
 url=http://magiccards.info/10e/en/242.html
-image=http://magiccards.info/scans/en/10e/242.jpg
+image=http://mtgimage.com/card/threaten.jpg
 value=4.042
 removal=5
 rarity=U

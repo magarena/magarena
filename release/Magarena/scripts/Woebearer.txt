@@ -1,6 +1,6 @@
 name=Woebearer
 url=http://magiccards.info/mi/en/83.html
-image=http://magiccards.info/scans/en/mi/83.jpg
+image=http://mtgimage.com/card/woebearer.jpg
 value=3.823
 rarity=U
 type=Creature

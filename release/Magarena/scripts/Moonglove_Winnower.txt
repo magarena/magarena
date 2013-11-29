@@ -1,6 +1,6 @@
 name=Moonglove Winnower
 url=http://magiccards.info/dpa/en/29.html
-image=http://magiccards.info/scans/en/dpa/29.jpg
+image=http://mtgimage.com/card/moonglove%20winnower.jpg
 value=2.717
 ability=deathtouch
 rarity=C

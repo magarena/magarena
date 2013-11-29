@@ -1,6 +1,6 @@
 name=Brush with Death
 url=http://magiccards.info/sh/en/2.html
-image=http://magiccards.info/scans/en/sh/2.jpg
+image=http://mtgimage.com/card/brush%20with%20death.jpg
 value=2.891
 rarity=C
 type=Sorcery

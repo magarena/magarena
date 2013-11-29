@@ -1,6 +1,6 @@
 name=Puppet Strings
 url=http://magiccards.info/pvc/en/22.html
-image=http://magiccards.info/scans/en/pvc/22.jpg
+image=http://mtgimage.com/card/puppet%20strings.jpg
 value=3.857
 rarity=U
 type=Artifact

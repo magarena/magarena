@@ -1,6 +1,6 @@
 name=Thopter Foundry
 url=http://magiccards.info/arb/en/133.html
-image=http://magiccards.info/scans/en/arb/133.jpg
+image=http://mtgimage.com/card/thopter%20foundry.jpg
 value=4.700
 rarity=U
 type=Artifact

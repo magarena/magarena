@@ -1,6 +1,6 @@
 name=Dauthi Embrace
 url=http://magiccards.info/tp/en/14.html
-image=http://magiccards.info/scans/en/tp/14.jpg
+image=http://mtgimage.com/card/dauthi%20embrace.jpg
 value=4.443
 rarity=U
 type=Enchantment

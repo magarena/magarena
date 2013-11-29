@@ -1,6 +1,6 @@
 name=Stromgald Crusader
 url=http://magiccards.info/cs/en/71.html
-image=http://magiccards.info/scans/en/cs/71.jpg
+image=http://mtgimage.com/card/stromgald%20crusader.jpg
 value=4.369
 rarity=U
 type=Creature

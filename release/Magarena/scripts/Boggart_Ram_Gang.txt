@@ -1,6 +1,6 @@
 name=Boggart Ram-Gang
 url=http://magiccards.info/pd2/en/13.html
-image=http://magiccards.info/scans/en/shm/203.jpg
+image=http://mtgimage.com/card/boggart%20ram%2Dgang.jpg
 value=4.269
 rarity=U
 type=Creature

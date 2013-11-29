@@ -1,6 +1,6 @@
 name=Primal Huntbeast
 url=http://magiccards.info/m13/en/182.html
-image=http://magiccards.info/scans/en/m13/182.jpg
+image=http://mtgimage.com/card/primal%20huntbeast.jpg
 value=3.291
 rarity=C
 type=Creature

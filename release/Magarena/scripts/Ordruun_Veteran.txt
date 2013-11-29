@@ -1,6 +1,6 @@
 name=Ordruun Veteran
 url=http://magiccards.info/gtc/en/184.html
-image=http://magiccards.info/scans/en/gtc/184.jpg
+image=http://mtgimage.com/card/ordruun%20veteran.jpg
 value=2.775
 rarity=U
 type=Creature

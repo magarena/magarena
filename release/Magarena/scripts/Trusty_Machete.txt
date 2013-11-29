@@ -1,6 +1,6 @@
 name=Trusty Machete
 url=http://magiccards.info/zen/en/209.html
-image=http://magiccards.info/scans/en/zen/209.jpg
+image=http://mtgimage.com/card/trusty%20machete.jpg
 value=4.018
 rarity=U
 type=Artifact

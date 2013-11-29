@@ -1,6 +1,6 @@
 name=Odylic Wraith
 url=http://magiccards.info/wl/en/19.html
-image=http://magiccards.info/scans/en/wl/19.jpg
+image=http://mtgimage.com/card/odylic%20wraith.jpg
 value=2.862
 rarity=U
 type=Creature

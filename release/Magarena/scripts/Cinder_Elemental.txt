@@ -1,6 +1,6 @@
 name=Cinder Elemental
 url=http://magiccards.info/pch/en/51.html
-image=http://magiccards.info/scans/en/pch/51.jpg
+image=http://mtgimage.com/card/cinder%20elemental.jpg
 value=3.439
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Oracle of Nectars
 url=http://magiccards.info/shm/en/233.html
-image=http://magiccards.info/scans/en/shm/233.jpg
+image=http://mtgimage.com/card/oracle%20of%20nectars.jpg
 value=4.095
 rarity=R
 type=Creature

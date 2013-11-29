@@ -1,6 +1,6 @@
 name=Goblin Replica
 url=http://magiccards.info/mi/en/178.html
-image=http://magiccards.info/scans/en/mi/178.jpg
+image=http://mtgimage.com/card/goblin%20replica.jpg
 value=2.459
 rarity=C
 type=Artifact,Creature

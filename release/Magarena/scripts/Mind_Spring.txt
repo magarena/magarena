@@ -1,6 +1,6 @@
 name=Mind Spring
 url=http://magiccards.info/dpa/en/12.html
-image=http://magiccards.info/scans/en/m10/64.jpg
+image=http://mtgimage.com/card/mind%20spring.jpg
 value=3.821
 rarity=R
 type=Sorcery

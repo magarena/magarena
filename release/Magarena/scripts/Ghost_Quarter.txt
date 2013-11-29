@@ -1,6 +1,6 @@
 name=Ghost Quarter
 url=http://magiccards.info/isd/en/240.html
-image=http://magiccards.info/scans/en/isd/240.jpg
+image=http://mtgimage.com/card/ghost%20quarter.jpg
 value=4.128
 rarity=U
 type=Land

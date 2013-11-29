@@ -1,6 +1,6 @@
 name=Okiba-Gang Shinobi
 url=http://magiccards.info/bok/en/76.html
-image=http://magiccards.info/scans/en/bok/76.jpg
+image=http://mtgimage.com/card/okiba%2Dgang%20shinobi.jpg
 value=3.207
 rarity=C
 type=Creature

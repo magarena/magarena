@@ -1,6 +1,6 @@
 name=Emmara Tandris
 url=http://magiccards.info/dgm/en/68.html
-image=http://magiccards.info/scans/en/dgm/68.jpg
+image=http://mtgimage.com/card/emmara%20tandris.jpg
 value=1.450
 rarity=R
 type=Legendary,Creature

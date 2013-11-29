@@ -1,6 +1,6 @@
 name=Scar
 url=http://magiccards.info/shm/en/194.html
-image=http://magiccards.info/scans/en/shm/194.jpg
+image=http://mtgimage.com/card/scar.jpg
 value=3.031
 removal=1
 rarity=C

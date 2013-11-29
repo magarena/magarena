@@ -1,6 +1,6 @@
 name=Magnivore
 url=http://magiccards.info/od/en/204.html
-image=http://magiccards.info/scans/en/od/204.jpg
+image=http://mtgimage.com/card/magnivore.jpg
 value=4.139
 rarity=R
 type=Creature

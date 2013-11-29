@@ -1,6 +1,6 @@
 name=Blood Reckoning
 url=http://magiccards.info/m13/en/81.html
-image=http://magiccards.info/scans/en/m13/81.jpg
+image=http://mtgimage.com/card/blood%20reckoning.jpg
 value=2.630
 rarity=U
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Fractured Powerstone
 url=http://magiccards.info/pc2/en/111.html
-image=http://magiccards.info/scans/en/pc2/111.jpg
+image=http://mtgimage.com/card/fractured%20powerstone.jpg
 value=3.362
 rarity=C
 type=Artifact

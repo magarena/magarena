@@ -1,6 +1,6 @@
 name=Kavu Glider
 url=http://magiccards.info/ap/en/64.html
-image=http://magiccards.info/scans/en/ap/64.jpg
+image=http://mtgimage.com/card/kavu%20glider.jpg
 value=1.710
 rarity=C
 type=Creature

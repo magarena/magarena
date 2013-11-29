@@ -1,6 +1,6 @@
 name=Pillar of Flame
 url=http://magiccards.info/avr/en/149.html
-image=http://magiccards.info/scans/en/avr/149.jpg
+image=http://mtgimage.com/card/pillar%20of%20flame.jpg
 value=3.829
 removal=2
 rarity=C

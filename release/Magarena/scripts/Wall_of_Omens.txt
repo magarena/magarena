@@ -1,6 +1,6 @@
 name=Wall of Omens
 url=http://magiccards.info/cmd/en/37.html
-image=http://magiccards.info/scans/en/cmd/37.jpg
+image=http://mtgimage.com/card/wall%20of%20omens.jpg
 value=4.296
 rarity=U
 type=Creature

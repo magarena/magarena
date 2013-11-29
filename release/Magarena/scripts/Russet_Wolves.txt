@@ -1,6 +1,6 @@
 name=Russet Wolves
 url=http://magiccards.info/dka/en/102.html
-image=http://magiccards.info/scans/en/dka/102.jpg
+image=http://mtgimage.com/card/russet%20wolves.jpg
 value=1.620
 rarity=C
 type=Creature

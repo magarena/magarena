@@ -1,6 +1,6 @@
 name=Fungusaur
 url=http://magiccards.info/8e/en/250.html
-image=http://magiccards.info/scans/en/8e/250.jpg
+image=http://mtgimage.com/card/fungusaur.jpg
 value=3.800
 rarity=R
 type=Creature

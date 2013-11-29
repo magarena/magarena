@@ -1,6 +1,6 @@
 name=Henge Guardian
 url=http://magiccards.info/ddg/en/55.html
-image=http://magiccards.info/scans/en/ddg/55.jpg
+image=http://mtgimage.com/card/henge%20guardian.jpg
 value=2.828
 rarity=U
 type=Artifact,Creature

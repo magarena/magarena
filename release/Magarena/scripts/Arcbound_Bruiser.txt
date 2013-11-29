@@ -1,6 +1,6 @@
 name=Arcbound Bruiser
 url=http://magiccards.info/ds/en/94.html
-image=http://magiccards.info/scans/en/ds/94.jpg
+image=http://mtgimage.com/card/arcbound%20bruiser.jpg
 value=2.676
 rarity=C
 type=Artifact,Creature

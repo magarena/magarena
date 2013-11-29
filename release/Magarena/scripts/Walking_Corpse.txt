@@ -1,6 +1,6 @@
 name=Walking Corpse
 url=http://magiccards.info/isd/en/126.html
-image=http://magiccards.info/scans/en/isd/126.jpg
+image=http://mtgimage.com/card/walking%20corpse.jpg
 value=3.114
 rarity=C
 type=Creature

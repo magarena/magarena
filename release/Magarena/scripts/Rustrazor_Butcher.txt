@@ -1,6 +1,6 @@
 name=Rustrazor Butcher
 url=http://magiccards.info/shm/en/105.html
-image=http://magiccards.info/scans/en/shm/105.jpg
+image=http://mtgimage.com/card/rustrazor%20butcher.jpg
 value=3.425
 rarity=C
 type=Creature

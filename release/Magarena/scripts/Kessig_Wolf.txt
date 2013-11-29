@@ -1,6 +1,6 @@
 name=Kessig Wolf
 url=http://magiccards.info/isd/en/151.html
-image=http://magiccards.info/scans/en/isd/151.jpg
+image=http://mtgimage.com/card/kessig%20wolf.jpg
 value=2.405
 rarity=C
 type=Creature

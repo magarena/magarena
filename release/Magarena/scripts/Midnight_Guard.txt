@@ -1,6 +1,6 @@
 name=Midnight Guard
 url=http://magiccards.info/dka/en/14.html
-image=http://magiccards.info/scans/en/dka/14.jpg
+image=http://mtgimage.com/card/midnight%20guard.jpg
 value=3.363
 rarity=C
 type=Creature

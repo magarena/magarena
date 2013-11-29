@@ -1,6 +1,6 @@
 name=River Bear
 url=http://magiccards.info/9e/en/266.html
-image=http://magiccards.info/scans/en/9e/266.jpg
+image=http://mtgimage.com/card/river%20bear.jpg
 value=3.397
 ability=islandwalk
 rarity=U

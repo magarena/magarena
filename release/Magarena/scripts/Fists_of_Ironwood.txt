@@ -1,6 +1,6 @@
 name=Fists of Ironwood
 url=http://magiccards.info/cmd/en/156.html
-image=http://magiccards.info/scans/en/rav/164.jpg
+image=http://mtgimage.com/card/fists%20of%20ironwood.jpg
 value=3.431
 rarity=C
 type=Enchantment

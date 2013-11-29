@@ -1,6 +1,6 @@
 name=Backfire
 url=http://magiccards.info/4e/en/62.html
-image=http://magiccards.info/scans/en/4e/62.jpg
+image=http://mtgimage.com/card/backfire.jpg
 value=3.612
 rarity=U
 type=Enchantment

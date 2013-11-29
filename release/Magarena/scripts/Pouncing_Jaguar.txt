@@ -1,6 +1,6 @@
 name=Pouncing Jaguar
 url=http://magiccards.info/us/en/269.html
-image=http://magiccards.info/scans/en/us/269.jpg
+image=http://mtgimage.com/card/pouncing%20jaguar.jpg
 value=4.088
 rarity=C
 type=Creature

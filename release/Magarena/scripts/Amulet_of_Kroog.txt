@@ -1,6 +1,6 @@
 name=Amulet of Kroog
 url=http://magiccards.info/me4/en/179.html
-image=http://magiccards.info/scans/en/me4/179.jpg
+image=http://mtgimage.com/card/amulet%20of%20kroog.jpg
 value=1.792
 rarity=C
 type=Artifact

@@ -1,6 +1,6 @@
 name=Duty-Bound Dead
 url=http://magiccards.info/m13/en/92.html
-image=http://magiccards.info/scans/en/m13/92.jpg
+image=http://mtgimage.com/card/duty%2Dbound%20dead.jpg
 value=3.890
 rarity=C
 type=Creature

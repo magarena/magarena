@@ -1,6 +1,6 @@
 name=Eternal Warrior
 url=http://magiccards.info/lg/en/142.html
-image=http://magiccards.info/scans/en/lg/142.jpg
+image=http://mtgimage.com/card/eternal%20warrior.jpg
 value=2.629
 rarity=C
 type=Enchantment

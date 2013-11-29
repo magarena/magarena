@@ -1,6 +1,6 @@
 name=Druid's Familiar
 url=http://magiccards.info/avr/en/175.html
-image=http://magiccards.info/scans/en/avr/175.jpg
+image=http://mtgimage.com/card/druid%27s%20familiar.jpg
 value=3.381
 rarity=U
 type=Creature

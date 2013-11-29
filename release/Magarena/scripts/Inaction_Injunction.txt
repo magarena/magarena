@@ -1,6 +1,6 @@
 name=Inaction Injunction
 url=http://magiccards.info/rtr/en/41.html
-image=http://magiccards.info/scans/en/rtr/41.jpg
+image=http://mtgimage.com/card/inaction%20injunction.jpg
 value=3.311
 removal=1
 rarity=C

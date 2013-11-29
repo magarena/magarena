@@ -1,6 +1,6 @@
 name=Forge Devil
 url=http://magiccards.info/dka/en/91.html
-image=http://magiccards.info/scans/en/dka/91.jpg
+image=http://mtgimage.com/card/forge%20devil.jpg
 value=3.041
 rarity=C
 type=Creature

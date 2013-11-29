@@ -1,6 +1,6 @@
 name=Bloodcrazed Neonate
 url=http://magiccards.info/isd/en/131.html
-image=http://magiccards.info/scans/en/isd/131.jpg
+image=http://mtgimage.com/card/bloodcrazed%20neonate.jpg
 value=3.319
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Leap of Flame
 url=http://magiccards.info/gp/en/121.html
-image=http://magiccards.info/scans/en/gp/121.jpg
+image=http://mtgimage.com/card/leap%20of%20flame.jpg
 value=2.942
 rarity=C
 type=Instant

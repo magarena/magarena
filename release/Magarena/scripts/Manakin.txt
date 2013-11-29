@@ -1,6 +1,6 @@
 name=Manakin
 url=http://magiccards.info/tp/en/286.html
-image=http://magiccards.info/scans/en/tp/286.jpg
+image=http://mtgimage.com/card/manakin.jpg
 value=3.233
 rarity=C
 type=Artifact,Creature

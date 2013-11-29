@@ -1,6 +1,6 @@
 name=Reforge the Soul
 url=http://magiccards.info/avr/en/151.html
-image=http://magiccards.info/scans/en/avr/151.jpg
+image=http://mtgimage.com/card/reforge%20the%20soul.jpg
 value=4.069
 rarity=R
 type=Sorcery

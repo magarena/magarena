@@ -1,6 +1,6 @@
 name=Living Airship
 url=http://magiccards.info/ap/en/28.html
-image=http://magiccards.info/scans/en/ap/28.jpg
+image=http://mtgimage.com/card/living%20airship.jpg
 value=2.606
 rarity=C
 type=Creature

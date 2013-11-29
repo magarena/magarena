@@ -1,6 +1,6 @@
 name=Rukh Egg
 url=http://magiccards.info/9e/en/214.html
-image=http://magiccards.info/scans/en/9e/214.jpg
+image=http://mtgimage.com/card/rukh%20egg.jpg
 value=3.568
 rarity=R
 type=Creature

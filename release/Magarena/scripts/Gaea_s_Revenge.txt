@@ -1,6 +1,6 @@
 name=Gaea's Revenge
 url=http://magiccards.info/m11/en/174.html
-image=http://magiccards.info/scans/en/m11/174.jpg
+image=http://mtgimage.com/card/gaea%27s%20revenge.jpg
 value=4.349
 rarity=M
 type=Creature

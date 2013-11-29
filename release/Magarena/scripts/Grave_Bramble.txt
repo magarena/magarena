@@ -1,6 +1,6 @@
 name=Grave Bramble
 url=http://magiccards.info/isd/en/184.html
-image=http://magiccards.info/scans/en/isd/184.jpg
+image=http://mtgimage.com/card/grave%20bramble.jpg
 value=3.355
 rarity=C
 type=Creature

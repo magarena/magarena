@@ -1,6 +1,6 @@
 name=Glorious Anthem
 url=http://magiccards.info/10e/en/17.html
-image=http://magiccards.info/scans/en/10e/17.jpg
+image=http://mtgimage.com/card/glorious%20anthem.jpg
 value=4.398
 rarity=R
 type=Enchantment

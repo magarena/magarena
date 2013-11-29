@@ -1,6 +1,6 @@
 name=All Is Dust
 url=http://magiccards.info/roe/en/1.html
-image=http://magiccards.info/scans/en/roe/1.jpg
+image=http://mtgimage.com/card/all%20is%20dust.jpg
 value=4.477
 rarity=M
 type=Tribal,Sorcery

@@ -1,6 +1,6 @@
 name=Axebane Stag
 url=http://magiccards.info/rtr/en/116.html
-image=http://magiccards.info/scans/en/rtr/116.jpg
+image=http://mtgimage.com/card/axebane%20stag.jpg
 value=2.045
 rarity=C
 type=Creature

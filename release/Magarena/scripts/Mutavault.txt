@@ -1,6 +1,6 @@
 name=Mutavault
 url=http://magiccards.info/mt/en/148.html
-image=http://magiccards.info/scans/en/mt/148.jpg
+image=http://mtgimage.com/card/mutavault.jpg
 value=4.250
 rarity=R
 type=Land

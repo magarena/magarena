@@ -1,6 +1,6 @@
 name=Nessian Courser
 url=http://magiccards.info/fut/en/148.html
-image=http://magiccards.info/scans/en/fut/148.jpg
+image=http://mtgimage.com/card/nessian%20courser.jpg
 value=2.953
 rarity=C
 type=Creature

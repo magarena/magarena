@@ -1,6 +1,6 @@
 name=Bee Sting
 url=http://magiccards.info/po2/en/64.html
-image=http://magiccards.info/scans/en/po2/64.jpg
+image=http://mtgimage.com/card/bee%20sting.jpg
 value=2.087
 rarity=U
 type=Sorcery

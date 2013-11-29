@@ -1,6 +1,6 @@
 name=Simic Cluestone
 url=http://magiccards.info/dgm/en/145.html
-image=http://magiccards.info/scans/en/dgm/145.jpg
+image=http://mtgimage.com/card/simic%20cluestone.jpg
 value=2.683
 rarity=C
 type=Artifact

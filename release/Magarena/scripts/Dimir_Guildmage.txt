@@ -1,6 +1,6 @@
 name=Dimir Guildmage
 url=http://magiccards.info/rav/en/245.html
-image=http://magiccards.info/scans/en/rav/245.jpg
+image=http://mtgimage.com/card/dimir%20guildmage.jpg
 value=3.802
 rarity=U
 type=Creature

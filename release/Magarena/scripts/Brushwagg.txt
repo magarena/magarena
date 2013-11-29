@@ -1,6 +1,6 @@
 name=Brushwagg
 url=http://magiccards.info/mr/en/106.html
-image=http://magiccards.info/scans/en/mr/106.jpg
+image=http://mtgimage.com/card/brushwagg.jpg
 value=4.176
 rarity=R
 type=Creature

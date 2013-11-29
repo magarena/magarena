@@ -1,6 +1,6 @@
 name=Elven Fortress
 url=http://magiccards.info/fe/en/67.html
-image=http://magiccards.info/scans/en/fe/67.jpg
+image=http://mtgimage.com/card/elven%20fortress.jpg
 value=2.355
 rarity=C
 type=Enchantment

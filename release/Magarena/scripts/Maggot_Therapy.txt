@@ -1,6 +1,6 @@
 name=Maggot Therapy
 url=http://magiccards.info/mm/en/145.html
-image=http://magiccards.info/scans/en/mm/145.jpg
+image=http://mtgimage.com/card/maggot%20therapy.jpg
 value=3.211
 rarity=C
 type=Enchantment

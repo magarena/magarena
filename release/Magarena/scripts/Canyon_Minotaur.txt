@@ -1,6 +1,6 @@
 name=Canyon Minotaur
 url=http://magiccards.info/m11/en/126.html
-image=http://magiccards.info/scans/en/m11/126.jpg
+image=http://mtgimage.com/card/canyon%20minotaur.jpg
 value=2.056
 rarity=C
 type=Creature

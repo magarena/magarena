@@ -1,6 +1,6 @@
 name=Psionic Gift
 url=http://magiccards.info/od/en/95.html
-image=http://magiccards.info/scans/en/od/95.jpg
+image=http://mtgimage.com/card/psionic%20gift.jpg
 value=3.864
 rarity=C
 type=Enchantment

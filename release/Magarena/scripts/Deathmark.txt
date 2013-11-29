@@ -1,6 +1,6 @@
 name=Deathmark
 url=http://magiccards.info/m12/en/90.html
-image=http://magiccards.info/scans/en/m11/91.jpg
+image=http://mtgimage.com/card/deathmark.jpg
 value=3.737
 removal=3
 rarity=U

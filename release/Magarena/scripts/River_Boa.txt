@@ -1,6 +1,6 @@
 name=River Boa
 url=http://magiccards.info/dpa/en/80.html
-image=http://magiccards.info/scans/en/zen/180.jpg
+image=http://mtgimage.com/card/river%20boa.jpg
 value=4.362
 rarity=U
 type=Creature

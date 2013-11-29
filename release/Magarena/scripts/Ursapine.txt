@@ -1,6 +1,6 @@
 name=Ursapine
 url=http://magiccards.info/rav/en/188.html
-image=http://magiccards.info/scans/en/rav/188.jpg
+image=http://mtgimage.com/card/ursapine.jpg
 value=4.051
 rarity=R
 type=Creature

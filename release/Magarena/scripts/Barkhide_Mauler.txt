@@ -1,6 +1,6 @@
 name=Barkhide Mauler
 url=http://magiccards.info/on/en/246.html
-image=http://magiccards.info/scans/en/on/246.jpg
+image=http://mtgimage.com/card/barkhide%20mauler.jpg
 value=2.707
 rarity=C
 type=Creature

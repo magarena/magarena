@@ -1,6 +1,6 @@
 name=Solemn Offering
 url=http://magiccards.info/m11/en/32.html
-image=http://magiccards.info/scans/en/m11/32.jpg
+image=http://mtgimage.com/card/solemn%20offering.jpg
 value=3.475
 removal=1
 rarity=C

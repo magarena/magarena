@@ -1,6 +1,6 @@
 name=Ivy Elemental
 url=http://magiccards.info/pch/en/74.html
-image=http://magiccards.info/scans/en/pch/74.jpg
+image=http://mtgimage.com/card/ivy%20elemental.jpg
 value=3.363
 rarity=R
 type=Creature

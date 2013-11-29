@@ -1,6 +1,6 @@
 name=Outrider of Jhess
 url=http://magiccards.info/ala/en/52.html
-image=http://magiccards.info/scans/en/ala/52.jpg
+image=http://mtgimage.com/card/outrider%20of%20jhess.jpg
 value=1.824
 ability=exalted
 rarity=C

@@ -1,6 +1,6 @@
 name=Pitchburn Devils
 url=http://magiccards.info/isd/en/156.html
-image=http://magiccards.info/scans/en/isd/156.jpg
+image=http://mtgimage.com/card/pitchburn%20devils.jpg
 value=2.853
 rarity=C
 type=Creature

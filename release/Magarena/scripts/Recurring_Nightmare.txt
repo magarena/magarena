@@ -1,6 +1,6 @@
 name=Recurring Nightmare
 url=http://magiccards.info/ex/en/72.html
-image=http://magiccards.info/scans/en/ex/72.jpg
+image=http://mtgimage.com/card/recurring%20nightmare.jpg
 value=4.615
 rarity=R
 type=Enchantment

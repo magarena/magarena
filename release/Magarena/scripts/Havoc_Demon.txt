@@ -1,6 +1,6 @@
 name=Havoc Demon
 url=http://magiccards.info/le/en/74.html
-image=http://magiccards.info/scans/en/le/74.jpg
+image=http://mtgimage.com/card/havoc%20demon.jpg
 value=4.263
 rarity=R
 type=Creature

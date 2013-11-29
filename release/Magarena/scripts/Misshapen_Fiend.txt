@@ -1,6 +1,6 @@
 name=Misshapen Fiend
 url=http://magiccards.info/mm/en/147.html
-image=http://magiccards.info/scans/en/mm/147.jpg
+image=http://mtgimage.com/card/misshapen%20fiend.jpg
 value=1.904
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Sword of Feast and Famine
 url=http://magiccards.info/mbs/en/138.html
-image=http://magiccards.info/scans/en/mbs/138.jpg
+image=http://mtgimage.com/card/sword%20of%20feast%20and%20famine.jpg
 value=4.238
 rarity=M
 type=Artifact

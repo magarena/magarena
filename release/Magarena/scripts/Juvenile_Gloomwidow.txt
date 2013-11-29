@@ -1,6 +1,6 @@
 name=Juvenile Gloomwidow
 url=http://magiccards.info/shm/en/121.html
-image=http://magiccards.info/scans/en/shm/121.jpg
+image=http://mtgimage.com/card/juvenile%20gloomwidow.jpg
 value=3.319
 ability=reach;wither
 rarity=C

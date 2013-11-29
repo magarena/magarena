@@ -1,6 +1,6 @@
 name=Vivid Creek
 url=http://magiccards.info/cmd/en/294.html
-image=http://magiccards.info/scans/en/lw/276.jpg
+image=http://mtgimage.com/card/vivid%20creek.jpg
 value=4.000
 rarity=U
 type=Land

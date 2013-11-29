@@ -1,6 +1,6 @@
 name=Avenger of Zendikar
 url=http://magiccards.info/wwk/en/96.html
-image=http://magiccards.info/scans/en/wwk/96.jpg
+image=http://mtgimage.com/card/avenger%20of%20zendikar.jpg
 value=4.287
 rarity=M
 type=Creature

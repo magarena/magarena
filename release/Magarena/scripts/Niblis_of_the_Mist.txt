@@ -1,6 +1,6 @@
 name=Niblis of the Mist
 url=http://magiccards.info/dka/en/15.html
-image=http://magiccards.info/scans/en/dka/15.jpg
+image=http://mtgimage.com/card/niblis%20of%20the%20mist.jpg
 value=2.036
 rarity=C
 type=Creature

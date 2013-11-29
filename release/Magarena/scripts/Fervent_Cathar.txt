@@ -1,6 +1,6 @@
 name=Fervent Cathar
 url=http://magiccards.info/avr/en/135.html
-image=http://magiccards.info/scans/en/avr/135.jpg
+image=http://mtgimage.com/card/fervent%20cathar.jpg
 value=2.579
 rarity=C
 type=Creature

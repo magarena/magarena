@@ -1,6 +1,6 @@
 name=Thallid
 url=http://magiccards.info/tsts/en/86.html
-image=http://magiccards.info/scans/en/tsts/86.jpg
+image=http://mtgimage.com/card/thallid.jpg
 value=4.130
 rarity=C
 type=Creature

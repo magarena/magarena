@@ -1,6 +1,6 @@
 name=Elvish Eulogist
 url=http://magiccards.info/lw/en/205.html
-image=http://magiccards.info/scans/en/lw/205.jpg
+image=http://mtgimage.com/card/elvish%20eulogist.jpg
 value=2.724
 rarity=C
 type=Creature

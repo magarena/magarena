@@ -1,6 +1,6 @@
 name=Crusade
 url=http://magiccards.info/ddf/en/27.html
-image=http://magiccards.info/scans/en/ddf/27.jpg
+image=http://mtgimage.com/card/crusade.jpg
 value=4.175
 rarity=R
 type=Enchantment

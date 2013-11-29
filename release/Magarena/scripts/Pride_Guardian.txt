@@ -1,6 +1,6 @@
 name=Pride Guardian
 url=http://magiccards.info/m12/en/31.html
-image=http://magiccards.info/scans/en/m12/31.jpg
+image=http://mtgimage.com/card/pride%20guardian.jpg
 value=3.118
 rarity=C
 type=Creature

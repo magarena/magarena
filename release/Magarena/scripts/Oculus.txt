@@ -1,6 +1,6 @@
 name=Oculus
 url=http://magiccards.info/mbs/en/29.html
-image=http://magiccards.info/scans/en/mbs/29.jpg
+image=http://mtgimage.com/card/oculus.jpg
 value=2.738
 rarity=C
 type=Creature

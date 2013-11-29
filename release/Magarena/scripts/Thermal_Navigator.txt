@@ -1,6 +1,6 @@
 name=Thermal Navigator
 url=http://magiccards.info/5dn/en/162.html
-image=http://magiccards.info/scans/en/5dn/162.jpg
+image=http://mtgimage.com/card/thermal%20navigator.jpg
 value=1.643
 rarity=C
 type=Artifact,Creature

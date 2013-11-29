@@ -1,6 +1,6 @@
 name=Natural Spring
 url=http://magiccards.info/dpa/en/75.html
-image=http://magiccards.info/scans/en/10e/281.jpg
+image=http://mtgimage.com/card/natural%20spring.jpg
 value=2.244
 rarity=C
 type=Sorcery

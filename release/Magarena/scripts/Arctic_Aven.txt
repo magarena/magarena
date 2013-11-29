@@ -1,6 +1,6 @@
 name=Arctic Aven
 url=http://magiccards.info/m13/en/42.html
-image=http://magiccards.info/scans/en/m13/42.jpg
+image=http://mtgimage.com/card/arctic%20aven.jpg
 value=3.429
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Remote Isle
 url=http://magiccards.info/bd/en/75.html
-image=http://magiccards.info/scans/en/bd/75.jpg
+image=http://mtgimage.com/card/remote%20isle.jpg
 value=3.700
 rarity=C
 type=Land

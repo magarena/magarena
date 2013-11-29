@@ -1,6 +1,6 @@
 name=Darkslick Shores
 url=http://magiccards.info/som/en/226.html
-image=http://magiccards.info/scans/en/som/226.jpg
+image=http://mtgimage.com/card/darkslick%20shores.jpg
 value=4.268
 rarity=R
 type=Land

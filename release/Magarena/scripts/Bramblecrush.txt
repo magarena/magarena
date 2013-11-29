@@ -1,6 +1,6 @@
 name=Bramblecrush
 url=http://magiccards.info/isd/en/172.html
-image=http://magiccards.info/scans/en/isd/172.jpg
+image=http://mtgimage.com/card/bramblecrush.jpg
 value=3.758
 removal=3
 rarity=U

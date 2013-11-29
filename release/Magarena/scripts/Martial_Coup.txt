@@ -1,6 +1,6 @@
 name=Martial Coup
 url=http://magiccards.info/cfx/en/11.html
-image=http://magiccards.info/scans/en/cfx/11.jpg
+image=http://mtgimage.com/card/martial%20coup.jpg
 value=4.067
 removal=4
 rarity=R

@@ -1,6 +1,6 @@
 name=Hazerider Drake
 url=http://magiccards.info/mr/en/328.html
-image=http://magiccards.info/scans/en/mr/328.jpg
+image=http://mtgimage.com/card/hazerider%20drake.jpg
 value=2.750
 rarity=U
 type=Creature

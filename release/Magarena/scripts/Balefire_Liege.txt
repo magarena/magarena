@@ -1,6 +1,6 @@
 name=Balefire Liege
 url=http://magiccards.info/pch/en/97.html
-image=http://magiccards.info/scans/en/pch/97.jpg
+image=http://mtgimage.com/card/balefire%20liege.jpg
 value=4.477
 rarity=R
 type=Creature

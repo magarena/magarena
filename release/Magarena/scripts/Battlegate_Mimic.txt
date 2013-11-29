@@ -1,6 +1,6 @@
 name=Battlegate Mimic
 url=http://magiccards.info/pch/en/98.html
-image=http://magiccards.info/scans/en/pch/98.jpg
+image=http://mtgimage.com/card/battlegate%20mimic.jpg
 value=3.570
 rarity=C
 type=Creature

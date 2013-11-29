@@ -1,6 +1,6 @@
 name=Force of Will
 url=http://magiccards.info/med/en/33.html
-image=http://magiccards.info/scans/en/med/33.jpg
+image=http://mtgimage.com/card/force%20of%20will.jpg
 value=4.712
 rarity=R
 type=Instant

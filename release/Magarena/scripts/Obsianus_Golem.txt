@@ -1,6 +1,6 @@
 name=Obsianus Golem
 url=http://magiccards.info/me4/en/218.html
-image=http://magiccards.info/scans/en/me4/218.jpg
+image=http://mtgimage.com/card/obsianus%20golem.jpg
 value=2.759
 rarity=U
 type=Artifact,Creature

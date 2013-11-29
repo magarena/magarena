@@ -1,6 +1,6 @@
 name=Nephalia Drownyard
 url=http://magiccards.info/isd/en/245.html
-image=http://magiccards.info/scans/en/isd/245.jpg
+image=http://mtgimage.com/card/nephalia%20drownyard.jpg
 value=3.612
 rarity=R
 type=Land

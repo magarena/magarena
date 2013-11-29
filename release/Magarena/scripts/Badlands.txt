@@ -1,6 +1,6 @@
 name=Badlands
 url=http://magiccards.info/me4/en/241.html
-image=http://magiccards.info/scans/en/me4/241.jpg
+image=http://mtgimage.com/card/badlands.jpg
 value=4.661
 rarity=R
 type=Land

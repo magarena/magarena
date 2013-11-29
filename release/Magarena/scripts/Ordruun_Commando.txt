@@ -1,6 +1,6 @@
 name=Ordruun Commando
 url=http://magiccards.info/rav/en/137.html
-image=http://magiccards.info/scans/en/rav/137.jpg
+image=http://mtgimage.com/card/ordruun%20commando.jpg
 value=1.972
 rarity=C
 type=Creature

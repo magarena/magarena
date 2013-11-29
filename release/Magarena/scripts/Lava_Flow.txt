@@ -1,6 +1,6 @@
 name=Lava Flow
 url=http://magiccards.info/me4/en/126.html
-image=http://magiccards.info/scans/en/me4/126.jpg
+image=http://mtgimage.com/card/lava%20flow.jpg
 value=3.139
 removal=3
 rarity=C

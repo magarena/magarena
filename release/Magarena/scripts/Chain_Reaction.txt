@@ -1,6 +1,6 @@
 name=Chain Reaction
 url=http://magiccards.info/cmd/en/113.html
-image=http://magiccards.info/scans/en/wwk/74.jpg
+image=http://mtgimage.com/card/chain%20reaction.jpg
 value=3.554
 removal=2
 rarity=R

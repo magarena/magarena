@@ -1,6 +1,6 @@
 name=Carnage Altar
 url=http://magiccards.info/zen/en/198.html
-image=http://magiccards.info/scans/en/zen/198.jpg
+image=http://mtgimage.com/card/carnage%20altar.jpg
 value=4.125
 rarity=U
 type=Artifact

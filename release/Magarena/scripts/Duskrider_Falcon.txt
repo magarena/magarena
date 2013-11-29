@@ -1,6 +1,6 @@
 name=Duskrider Falcon
 url=http://magiccards.info/wl/en/128.html
-image=http://magiccards.info/scans/en/wl/128.jpg
+image=http://mtgimage.com/card/duskrider%20falcon.jpg
 value=3.054
 rarity=C
 type=Creature

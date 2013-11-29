@@ -1,6 +1,6 @@
 name=Somberwald Vigilante
 url=http://magiccards.info/avr/en/156.html
-image=http://magiccards.info/scans/en/avr/156.jpg
+image=http://mtgimage.com/card/somberwald%20vigilante.jpg
 value=3.438
 rarity=C
 type=Creature

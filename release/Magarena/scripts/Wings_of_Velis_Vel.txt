@@ -1,6 +1,6 @@
 name=Wings of Velis Vel
 url=http://magiccards.info/lw/en/97.html
-image=http://magiccards.info/scans/en/lw/97.jpg
+image=http://mtgimage.com/card/wings%20of%20velis%20vel.jpg
 value=3.176
 rarity=C
 type=Tribal,Instant

@@ -1,6 +1,6 @@
 name=Vampire Hexmage
 url=http://magiccards.info/zen/en/114.html
-image=http://magiccards.info/scans/en/zen/114.jpg
+image=http://mtgimage.com/card/vampire%20hexmage.jpg
 value=4.577
 rarity=U
 type=Creature

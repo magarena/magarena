@@ -1,6 +1,6 @@
 name=Bound in Silence
 url=http://magiccards.info/fut/en/20.html
-image=http://magiccards.info/scans/en/fut/20.jpg
+image=http://mtgimage.com/card/bound%20in%20silence.jpg
 value=3.500
 removal=3
 rarity=U

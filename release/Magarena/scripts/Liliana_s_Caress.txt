@@ -1,6 +1,6 @@
 name=Liliana's Caress
 url=http://magiccards.info/m11/en/103.html
-image=http://magiccards.info/scans/en/m11/103.jpg
+image=http://mtgimage.com/card/liliana%27s%20caress.jpg
 value=4.337
 rarity=U
 type=Enchantment

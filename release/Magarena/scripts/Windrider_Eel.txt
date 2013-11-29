@@ -1,6 +1,6 @@
 name=Windrider Eel
 url=http://magiccards.info/zen/en/78.html
-image=http://magiccards.info/scans/en/zen/78.jpg
+image=http://mtgimage.com/card/windrider%20eel.jpg
 value=3.569
 rarity=C
 type=Creature

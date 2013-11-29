@@ -1,6 +1,6 @@
 name=Enfeeblement
 url=http://magiccards.info/9e/en/127.html
-image=http://magiccards.info/scans/en/9e/127.jpg
+image=http://mtgimage.com/card/enfeeblement.jpg
 value=2.741
 removal=2
 rarity=C

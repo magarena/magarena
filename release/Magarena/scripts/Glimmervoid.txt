@@ -1,6 +1,6 @@
 name=Glimmervoid
 url=http://magiccards.info/mi/en/281.html
-image=http://magiccards.info/scans/en/mi/281.jpg
+image=http://mtgimage.com/card/glimmervoid.jpg
 value=4.500
 rarity=R
 type=Land

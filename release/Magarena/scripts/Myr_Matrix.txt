@@ -1,6 +1,6 @@
 name=Myr Matrix
 url=http://magiccards.info/ds/en/132.html
-image=http://magiccards.info/scans/en/ds/132.jpg
+image=http://mtgimage.com/card/myr%20matrix.jpg
 value=4.186
 rarity=R
 type=Artifact

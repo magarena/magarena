@@ -1,6 +1,6 @@
 name=Talonrend
 url=http://magiccards.info/eve/en/30.html
-image=http://magiccards.info/scans/en/eve/30.jpg
+image=http://mtgimage.com/card/talonrend.jpg
 value=1.422
 rarity=U
 type=Creature

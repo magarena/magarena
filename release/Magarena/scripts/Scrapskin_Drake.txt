@@ -1,6 +1,6 @@
 name=Scrapskin Drake
 url=http://magiccards.info/avr/en/73.html
-image=http://magiccards.info/scans/en/avr/73.jpg
+image=http://mtgimage.com/card/scrapskin%20drake.jpg
 value=2.279
 rarity=C
 type=Creature

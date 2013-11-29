@@ -1,6 +1,6 @@
 name=Intangible Virtue
 url=http://magiccards.info/isd/en/19.html
-image=http://magiccards.info/scans/en/isd/19.jpg
+image=http://mtgimage.com/card/intangible%20virtue.jpg
 value=3.885
 rarity=U
 type=Enchantment

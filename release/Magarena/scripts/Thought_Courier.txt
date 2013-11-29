@@ -1,6 +1,6 @@
 name=Thought Courier
 url=http://magiccards.info/5dn/en/38.html
-image=http://magiccards.info/scans/en/5dn/38.jpg
+image=http://mtgimage.com/card/thought%20courier.jpg
 value=3.688
 rarity=C
 type=Creature

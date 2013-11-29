@@ -1,6 +1,6 @@
 name=Wrath of God
 url=http://magiccards.info/10e/en/61.html
-image=http://magiccards.info/scans/en/10e/61.jpg
+image=http://mtgimage.com/card/wrath%20of%20god.jpg
 value=4.635
 removal=2
 rarity=R

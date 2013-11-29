@@ -1,6 +1,6 @@
 name=Fanning the Flames
 url=http://magiccards.info/sh/en/80.html
-image=http://magiccards.info/scans/en/sh/80.jpg
+image=http://mtgimage.com/card/fanning%20the%20flames.jpg
 value=3.757
 removal=3
 rarity=U

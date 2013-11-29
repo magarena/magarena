@@ -1,6 +1,6 @@
 name=Heavy Arbalest
 url=http://magiccards.info/som/en/164.html
-image=http://magiccards.info/scans/en/som/164.jpg
+image=http://mtgimage.com/card/heavy%20arbalest.jpg
 value=2.390
 rarity=U
 type=Artifact

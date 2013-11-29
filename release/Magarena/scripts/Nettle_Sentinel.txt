@@ -1,6 +1,6 @@
 name=Nettle Sentinel
 url=http://magiccards.info/eve/en/71.html
-image=http://magiccards.info/scans/en/eve/71.jpg
+image=http://mtgimage.com/card/nettle%20sentinel.jpg
 value=4.429
 rarity=C
 type=Creature

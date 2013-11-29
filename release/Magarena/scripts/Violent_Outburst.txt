@@ -1,6 +1,6 @@
 name=Violent Outburst
 url=http://magiccards.info/arb/en/63.html
-image=http://magiccards.info/scans/en/arb/63.jpg
+image=http://mtgimage.com/card/violent%20outburst.jpg
 value=3.024
 rarity=C
 type=Instant

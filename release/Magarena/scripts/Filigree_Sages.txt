@@ -1,6 +1,6 @@
 name=Filigree Sages
 url=http://magiccards.info/ala/en/44.html
-image=http://magiccards.info/scans/en/ala/44.jpg
+image=http://mtgimage.com/card/filigree%20sages.jpg
 value=3.000
 rarity=U
 type=Artifact,Creature

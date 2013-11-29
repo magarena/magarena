@@ -1,6 +1,6 @@
 name=Deathforge Shaman
 url=http://magiccards.info/wwk/en/80.html
-image=http://magiccards.info/scans/en/wwk/80.jpg
+image=http://mtgimage.com/card/deathforge%20shaman.jpg
 value=3.191
 rarity=U
 type=Creature

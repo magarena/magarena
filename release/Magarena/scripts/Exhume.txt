@@ -1,6 +1,6 @@
 name=Exhume
 url=http://magiccards.info/br/en/24.html
-image=http://magiccards.info/scans/en/br/24.jpg
+image=http://mtgimage.com/card/exhume.jpg
 value=4.637
 rarity=C
 type=Sorcery

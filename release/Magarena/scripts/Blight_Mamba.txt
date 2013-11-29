@@ -1,6 +1,6 @@
 name=Blight Mamba
 url=http://magiccards.info/som/en/112.html
-image=http://magiccards.info/scans/en/som/112.jpg
+image=http://mtgimage.com/card/blight%20mamba.jpg
 value=3.772
 rarity=C
 type=Creature

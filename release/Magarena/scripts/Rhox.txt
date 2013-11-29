@@ -1,6 +1,6 @@
 name=Rhox
 url=http://magiccards.info/10e/en/291.html
-image=http://magiccards.info/scans/en/10e/291.jpg
+image=http://mtgimage.com/card/rhox.jpg
 value=4.420
 rarity=R
 type=Creature

@@ -1,6 +1,6 @@
 name=Norwood Ranger
 url=http://magiccards.info/9e/en/260.html
-image=http://magiccards.info/scans/en/9e/260.jpg
+image=http://mtgimage.com/card/norwood%20ranger.jpg
 value=2.608
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Necropouncer
 url=http://magiccards.info/nph/en/147.html
-image=http://magiccards.info/scans/en/nph/147.jpg
+image=http://mtgimage.com/card/necropouncer.jpg
 value=2.590
 rarity=U
 type=Artifact

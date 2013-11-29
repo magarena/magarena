@@ -1,6 +1,6 @@
 name=Assassinate
 url=http://magiccards.info/m11/en/81.html
-image=http://magiccards.info/scans/en/m11/81.jpg
+image=http://mtgimage.com/card/assassinate.jpg
 value=2.481
 removal=3
 rarity=C

@@ -1,6 +1,6 @@
 name=Cloak of Mists
 url=http://magiccards.info/us/en/65.html
-image=http://magiccards.info/scans/en/us/65.jpg
+image=http://mtgimage.com/card/cloak%20of%20mists.jpg
 value=4.083
 rarity=C
 type=Enchantment

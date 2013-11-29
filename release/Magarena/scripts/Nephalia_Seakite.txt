@@ -1,6 +1,6 @@
 name=Nephalia Seakite
 url=http://magiccards.info/dka/en/43.html
-image=http://magiccards.info/scans/en/dka/43.jpg
+image=http://mtgimage.com/card/nephalia%20seakite.jpg
 value=3.367
 rarity=C
 type=Creature

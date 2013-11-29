@@ -1,6 +1,6 @@
 name=Break Asunder
 url=http://magiccards.info/sc/en/113.html
-image=http://magiccards.info/scans/en/sc/113.jpg
+image=http://mtgimage.com/card/break%20asunder.jpg
 value=2.375
 removal=1
 rarity=C

@@ -1,6 +1,6 @@
 name=Wrack with Madness
 url=http://magiccards.info/dka/en/107.html
-image=http://magiccards.info/scans/en/dka/107.jpg
+image=http://mtgimage.com/card/wrack%20with%20madness.jpg
 value=2.721
 removal=3
 rarity=C

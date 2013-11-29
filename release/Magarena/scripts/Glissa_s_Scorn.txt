@@ -1,6 +1,6 @@
 name=Glissa's Scorn
 url=http://magiccards.info/nph/en/110.html
-image=http://magiccards.info/scans/en/nph/110.jpg
+image=http://mtgimage.com/card/glissa%27s%20scorn.jpg
 value=3.276
 removal=1
 rarity=C

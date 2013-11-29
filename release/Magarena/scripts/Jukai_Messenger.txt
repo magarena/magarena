@@ -1,6 +1,6 @@
 name=Jukai Messenger
 url=http://magiccards.info/chk/en/218.html
-image=http://magiccards.info/scans/en/chk/218.jpg
+image=http://mtgimage.com/card/jukai%20messenger.jpg
 value=1.900
 ability=forestwalk
 rarity=C

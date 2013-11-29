@@ -1,6 +1,6 @@
 name=Seachrome Coast
 url=http://magiccards.info/som/en/229.html
-image=http://magiccards.info/scans/en/som/229.jpg
+image=http://mtgimage.com/card/seachrome%20coast.jpg
 value=4.286
 rarity=R
 type=Land

@@ -1,6 +1,6 @@
 name=Soultether Golem
 url=http://magiccards.info/fut/en/164.html
-image=http://magiccards.info/scans/en/fut/164.jpg
+image=http://mtgimage.com/card/soultether%20golem.jpg
 value=2.239
 rarity=U
 type=Artifact,Creature

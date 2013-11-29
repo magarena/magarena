@@ -1,6 +1,6 @@
 name=Soul's Majesty
 url=http://magiccards.info/cfx/en/92.html
-image=http://magiccards.info/scans/en/cfx/92.jpg
+image=http://mtgimage.com/card/soul%27s%20majesty.jpg
 value=3.069
 rarity=R
 type=Sorcery

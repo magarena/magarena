@@ -1,6 +1,6 @@
 name=Arcane Sanctum
 url=http://magiccards.info/ala/en/220.html
-image=http://magiccards.info/scans/en/ala/220.jpg
+image=http://mtgimage.com/card/arcane%20sanctum.jpg
 value=3.955
 rarity=U
 type=Land

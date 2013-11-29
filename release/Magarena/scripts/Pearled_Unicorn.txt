@@ -1,6 +1,6 @@
 name=Pearled Unicorn
 url=http://magiccards.info/5e/en/326.html
-image=http://magiccards.info/scans/en/5e/326.jpg
+image=http://mtgimage.com/card/pearled%20unicorn.jpg
 value=1.750
 rarity=C
 type=Creature

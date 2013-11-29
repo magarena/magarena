@@ -1,6 +1,6 @@
 name=Hellhole Flailer
 url=http://magiccards.info/rtr/en/167.html
-image=http://magiccards.info/scans/en/rtr/167.jpg
+image=http://mtgimage.com/card/hellhole%20flailer.jpg
 value=3.811
 rarity=U
 type=Creature

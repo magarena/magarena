@@ -1,6 +1,6 @@
 name=Jor Kadeen, the Prevailer
 url=http://magiccards.info/nph/en/128.html
-image=http://magiccards.info/scans/en/nph/128.jpg
+image=http://mtgimage.com/card/jor%20kadeen%2C%20the%20prevailer.jpg
 value=3.889
 rarity=R
 type=Legendary,Creature

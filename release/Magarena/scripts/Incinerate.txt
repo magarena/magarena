@@ -1,6 +1,6 @@
 name=Incinerate
 url=http://magiccards.info/m12/en/146.html
-image=http://magiccards.info/scans/en/jvc/51.jpg
+image=http://mtgimage.com/card/incinerate.jpg
 value=4.275
 removal=3
 rarity=C

@@ -1,6 +1,6 @@
 name=Putrefy
 url=http://magiccards.info/rav/en/221.html
-image=http://magiccards.info/scans/en/rav/221.jpg
+image=http://mtgimage.com/card/putrefy.jpg
 value=4.409
 removal=5
 rarity=U

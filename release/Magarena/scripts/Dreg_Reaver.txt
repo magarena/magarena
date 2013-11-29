@@ -1,6 +1,6 @@
 name=Dreg Reaver
 url=http://magiccards.info/ala/en/73.html
-image=http://magiccards.info/scans/en/ala/73.jpg
+image=http://mtgimage.com/card/dreg%20reaver.jpg
 value=1.401
 rarity=C
 type=Creature

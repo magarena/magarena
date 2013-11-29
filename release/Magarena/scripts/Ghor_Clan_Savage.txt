@@ -1,6 +1,6 @@
 name=Ghor-Clan Savage
 url=http://magiccards.info/gp/en/86.html
-image=http://magiccards.info/scans/en/gp/86.jpg
+image=http://mtgimage.com/card/ghor%2Dclan%20savage.jpg
 value=3.111
 rarity=C
 type=Creature

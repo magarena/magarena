@@ -1,6 +1,6 @@
 name=Rancor
 url=http://magiccards.info/arc/en/67.html
-image=http://magiccards.info/scans/en/gvl/15.jpg
+image=http://mtgimage.com/card/rancor.jpg
 value=4.646
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Swords to Plowshares
 url=http://magiccards.info/ddf/en/22.html
-image=http://magiccards.info/scans/en/cstd/7.jpg
+image=http://mtgimage.com/card/swords%20to%20plowshares.jpg
 value=4.744
 removal=4
 rarity=U

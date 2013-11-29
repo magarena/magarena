@@ -1,6 +1,6 @@
 name=Boros Swiftblade
 url=http://magiccards.info/pch/en/82.html
-image=http://magiccards.info/scans/en/pch/82.jpg
+image=http://mtgimage.com/card/boros%20swiftblade.jpg
 value=4.085
 ability=double strike
 rarity=U

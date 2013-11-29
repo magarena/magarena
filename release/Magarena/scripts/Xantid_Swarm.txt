@@ -1,6 +1,6 @@
 name=Xantid Swarm
 url=http://magiccards.info/sc/en/135.html
-image=http://magiccards.info/scans/en/sc/135.jpg
+image=http://mtgimage.com/card/xantid%20swarm.jpg
 value=4.591
 rarity=R
 type=Creature

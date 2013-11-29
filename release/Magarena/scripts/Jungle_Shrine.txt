@@ -1,6 +1,6 @@
 name=Jungle Shrine
 url=http://magiccards.info/ddh/en/34.html
-image=http://magiccards.info/scans/en/ala/226.jpg
+image=http://mtgimage.com/card/jungle%20shrine.jpg
 value=3.636
 rarity=U
 type=Land

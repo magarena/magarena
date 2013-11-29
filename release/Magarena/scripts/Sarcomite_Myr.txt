@@ -1,6 +1,6 @@
 name=Sarcomite Myr
 url=http://magiccards.info/pch/en/13.html
-image=http://magiccards.info/scans/en/pch/13.jpg
+image=http://mtgimage.com/card/sarcomite%20myr.jpg
 value=2.705
 rarity=C
 type=Artifact,Creature

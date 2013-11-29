@@ -1,6 +1,6 @@
 name=Ruinous Minotaur
 url=http://magiccards.info/zen/en/145.html
-image=http://magiccards.info/scans/en/zen/145.jpg
+image=http://mtgimage.com/card/ruinous%20minotaur.jpg
 value=3.792
 rarity=C
 type=Creature

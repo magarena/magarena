@@ -1,6 +1,6 @@
 name=Pyroclasm
 url=http://magiccards.info/m11/en/154.html
-image=http://magiccards.info/scans/en/m11/154.jpg
+image=http://mtgimage.com/card/pyroclasm.jpg
 value=4.375
 removal=2
 rarity=U

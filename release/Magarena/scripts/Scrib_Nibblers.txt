@@ -1,6 +1,6 @@
 name=Scrib Nibblers
 url=http://magiccards.info/wwk/en/66.html
-image=http://magiccards.info/scans/en/wwk/66.jpg
+image=http://mtgimage.com/card/scrib%20nibblers.jpg
 value=3.350
 rarity=U
 type=Creature

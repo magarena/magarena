@@ -1,6 +1,6 @@
 name=Marsh Flats
 url=http://magiccards.info/zen/en/219.html
-image=http://magiccards.info/scans/en/zen/219.jpg
+image=http://mtgimage.com/card/marsh%20flats.jpg
 value=4.531
 rarity=R
 type=Land

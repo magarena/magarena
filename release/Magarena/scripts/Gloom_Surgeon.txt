@@ -1,6 +1,6 @@
 name=Gloom Surgeon
 url=http://magiccards.info/avr/en/104.html
-image=http://magiccards.info/scans/en/avr/104.jpg
+image=http://mtgimage.com/card/gloom%20surgeon.jpg
 value=2.906
 rarity=R
 type=Creature

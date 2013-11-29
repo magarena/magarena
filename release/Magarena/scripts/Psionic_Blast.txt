@@ -1,6 +1,6 @@
 name=Psionic Blast
 url=http://magiccards.info/tsts/en/30.html
-image=http://magiccards.info/scans/en/tsts/30.jpg
+image=http://mtgimage.com/card/psionic%20blast.jpg
 value=4.269
 rarity=U
 type=Instant

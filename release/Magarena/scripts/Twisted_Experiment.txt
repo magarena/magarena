@@ -1,6 +1,6 @@
 name=Twisted Experiment
 url=http://magiccards.info/ud/en/74.html
-image=http://magiccards.info/scans/en/ud/74.jpg
+image=http://mtgimage.com/card/twisted%20experiment.jpg
 value=3.333
 rarity=C
 type=Enchantment

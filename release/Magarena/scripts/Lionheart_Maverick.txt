@@ -1,6 +1,6 @@
 name=Lionheart Maverick
 url=http://magiccards.info/ddg/en/3.html
-image=http://magiccards.info/scans/en/ddg/3.jpg
+image=http://mtgimage.com/card/lionheart%20maverick.jpg
 value=3.250
 rarity=C
 type=Creature

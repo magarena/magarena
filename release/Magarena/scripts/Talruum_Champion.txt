@@ -1,6 +1,6 @@
 name=Talruum Champion
 url=http://magiccards.info/vi/en/97.html
-image=http://magiccards.info/scans/en/vi/97.jpg
+image=http://mtgimage.com/card/talruum%20champion.jpg
 value=3.362
 rarity=C
 type=Creature

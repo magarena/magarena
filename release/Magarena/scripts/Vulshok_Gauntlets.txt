@@ -1,6 +1,6 @@
 name=Vulshok Gauntlets
 url=http://magiccards.info/mi/en/273.html
-image=http://magiccards.info/scans/en/mi/273.jpg
+image=http://mtgimage.com/card/vulshok%20gauntlets.jpg
 value=3.257
 rarity=C
 type=Artifact

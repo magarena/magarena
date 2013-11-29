@@ -1,6 +1,6 @@
 name=Faerie Trickery
 url=http://magiccards.info/lw/en/62.html
-image=http://magiccards.info/scans/en/lw/62.jpg
+image=http://mtgimage.com/card/faerie%20trickery.jpg
 value=3.833
 rarity=C
 type=Tribal,Instant

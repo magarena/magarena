@@ -1,6 +1,6 @@
 name=Maro
 url=http://magiccards.info/mr/en/126.html
-image=http://magiccards.info/scans/en/mr/126.jpg
+image=http://mtgimage.com/card/maro.jpg
 value=3.679
 rarity=R
 type=Creature

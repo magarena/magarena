@@ -1,6 +1,6 @@
 name=Feebleness
 url=http://magiccards.info/ts/en/110.html
-image=http://magiccards.info/scans/en/ts/110.jpg
+image=http://mtgimage.com/card/feebleness.jpg
 value=1.690
 removal=1
 rarity=C

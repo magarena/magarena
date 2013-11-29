@@ -1,6 +1,6 @@
 name=Mana Tithe
 url=http://magiccards.info/pc/en/25.html
-image=http://magiccards.info/scans/en/pc/25.jpg
+image=http://mtgimage.com/card/mana%20tithe.jpg
 value=4.238
 rarity=C
 type=Instant

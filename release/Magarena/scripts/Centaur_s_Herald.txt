@@ -1,6 +1,6 @@
 name=Centaur's Herald
 url=http://magiccards.info/rtr/en/118.html
-image=http://magiccards.info/scans/en/rtr/118.jpg
+image=http://mtgimage.com/card/centaur%27s%20herald.jpg
 value=2.500
 rarity=C
 type=Creature

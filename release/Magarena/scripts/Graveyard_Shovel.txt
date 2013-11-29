@@ -1,6 +1,6 @@
 name=Graveyard Shovel
 url=http://magiccards.info/isd/en/225.html
-image=http://magiccards.info/scans/en/isd/225.jpg
+image=http://mtgimage.com/card/graveyard%20shovel.jpg
 value=1.922
 rarity=U
 type=Artifact

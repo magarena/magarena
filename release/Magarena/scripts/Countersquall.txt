@@ -1,6 +1,6 @@
 name=Countersquall
 url=http://magiccards.info/ddh/en/59.html
-image=http://magiccards.info/scans/en/cfx/103.jpg
+image=http://mtgimage.com/card/countersquall.jpg
 value=4.009
 rarity=U
 type=Instant

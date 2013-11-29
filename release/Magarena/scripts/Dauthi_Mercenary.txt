@@ -1,6 +1,6 @@
 name=Dauthi Mercenary
 url=http://magiccards.info/tp/en/18.html
-image=http://magiccards.info/scans/en/tp/18.jpg
+image=http://mtgimage.com/card/dauthi%20mercenary.jpg
 value=4.043
 rarity=U
 type=Creature

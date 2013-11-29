@@ -1,6 +1,6 @@
 name=Elf Replica
 url=http://magiccards.info/mi/en/167.html
-image=http://magiccards.info/scans/en/mi/167.jpg
+image=http://mtgimage.com/card/elf%20replica.jpg
 value=2.672
 rarity=C
 type=Artifact,Creature

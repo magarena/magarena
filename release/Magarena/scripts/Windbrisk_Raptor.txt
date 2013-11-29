@@ -1,6 +1,6 @@
 name=Windbrisk Raptor
 url=http://magiccards.info/shm/en/26.html
-image=http://magiccards.info/scans/en/shm/26.jpg
+image=http://mtgimage.com/card/windbrisk%20raptor.jpg
 value=3.799
 rarity=R
 type=Creature

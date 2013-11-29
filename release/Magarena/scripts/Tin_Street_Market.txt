@@ -1,6 +1,6 @@
 name=Tin Street Market
 url=http://magiccards.info/gtc/en/108.html
-image=http://magiccards.info/scans/en/gtc/108.jpg
+image=http://mtgimage.com/card/tin%20street%20market.jpg
 value=1.220
 rarity=C
 type=Enchantment

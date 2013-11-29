@@ -1,6 +1,6 @@
 name=Caldera Lake
 url=http://magiccards.info/tp/en/306.html
-image=http://magiccards.info/scans/en/tp/306.jpg
+image=http://mtgimage.com/card/caldera%20lake.jpg
 value=2.875
 rarity=R
 type=Land

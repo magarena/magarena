@@ -1,6 +1,6 @@
 name=Ivory Mask
 url=http://magiccards.info/9e/en/23.html
-image=http://magiccards.info/scans/en/9e/23.jpg
+image=http://mtgimage.com/card/ivory%20mask.jpg
 value=4.268
 rarity=R
 type=Enchantment

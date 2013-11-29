@@ -1,6 +1,6 @@
 name=Grapeshot Catapult
 url=http://magiccards.info/me4/en/204.html
-image=http://magiccards.info/scans/en/me4/204.jpg
+image=http://mtgimage.com/card/grapeshot%20catapult.jpg
 value=2.684
 rarity=U
 type=Artifact,Creature

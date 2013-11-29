@@ -1,6 +1,6 @@
 name=Smallpox
 url=http://magiccards.info/m12/en/108.html
-image=http://magiccards.info/scans/en/m12/108.jpg
+image=http://mtgimage.com/card/smallpox.jpg
 value=4.160
 removal=4
 rarity=U

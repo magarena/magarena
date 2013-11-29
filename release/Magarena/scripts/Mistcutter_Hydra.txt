@@ -1,6 +1,6 @@
 name=Mistcutter Hydra
 url=http://magiccards.info/ths/en/162.html
-image=http://magiccards.info/scans/en/ths/162.jpg
+image=http://mtgimage.com/card/mistcutter%20hydra.jpg
 value=4.027
 rarity=R
 type=Creature

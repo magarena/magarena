@@ -1,6 +1,6 @@
 name=Sunhome Guildmage
 url=http://magiccards.info/gtc/en/200.html
-image=http://magiccards.info/scans/en/gtc/200.jpg
+image=http://mtgimage.com/card/sunhome%20guildmage.jpg
 value=3.330
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Glade Gnarr
 url=http://magiccards.info/ap/en/78.html
-image=http://magiccards.info/scans/en/ap/78.jpg
+image=http://mtgimage.com/card/glade%20gnarr.jpg
 value=2.667
 rarity=C
 type=Creature

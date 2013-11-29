@@ -1,6 +1,6 @@
 name=Shivan Oasis
 url=http://magiccards.info/pvc/en/65.html
-image=http://magiccards.info/scans/en/pvc/65.jpg
+image=http://mtgimage.com/card/shivan%20oasis.jpg
 value=3.350
 rarity=U
 type=Land

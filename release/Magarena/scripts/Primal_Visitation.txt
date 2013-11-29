@@ -1,6 +1,6 @@
 name=Primal Visitation
 url=http://magiccards.info/gtc/en/187.html
-image=http://magiccards.info/scans/en/gtc/187.jpg
+image=http://mtgimage.com/card/primal%20visitation.jpg
 value=0.920
 rarity=C
 type=Enchantment

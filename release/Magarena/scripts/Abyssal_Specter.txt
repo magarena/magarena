@@ -1,6 +1,6 @@
 name=Abyssal Specter
 url=http://magiccards.info/dpa/en/18.html
-image=http://magiccards.info/scans/en/dpa/18.jpg
+image=http://mtgimage.com/card/abyssal%20specter.jpg
 value=3.745
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Sublime Archangel
 url=http://magiccards.info/m13/en/36.html
-image=http://magiccards.info/scans/en/m13/36.jpg
+image=http://mtgimage.com/card/sublime%20archangel.jpg
 value=4.276
 rarity=M
 type=Creature

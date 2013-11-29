@@ -1,6 +1,6 @@
 name=Dwarven Vigilantes
 url=http://magiccards.info/vi/en/77.html
-image=http://magiccards.info/scans/en/vi/77.jpg
+image=http://mtgimage.com/card/dwarven%20vigilantes.jpg
 value=3.161
 rarity=C
 type=Creature

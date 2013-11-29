@@ -1,6 +1,6 @@
 name=Heart of Ramos
 url=http://magiccards.info/mm/en/296.html
-image=http://magiccards.info/scans/en/mm/296.jpg
+image=http://mtgimage.com/card/heart%20of%20ramos.jpg
 value=3.208
 rarity=R
 type=Artifact

@@ -1,6 +1,6 @@
 name=Peace Strider
 url=http://magiccards.info/mbs/en/119.html
-image=http://magiccards.info/scans/en/mbs/119.jpg
+image=http://mtgimage.com/card/peace%20strider.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

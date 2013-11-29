@@ -1,6 +1,6 @@
 name=Hinterland Harbor
 url=http://magiccards.info/isd/en/241.html
-image=http://magiccards.info/scans/en/isd/241.jpg
+image=http://mtgimage.com/card/hinterland%20harbor.jpg
 value=3.808
 rarity=R
 type=Land

@@ -1,6 +1,6 @@
 name=Bloodrock Cyclops
 url=http://magiccards.info/10e/en/192.html
-image=http://magiccards.info/scans/en/10e/192.jpg
+image=http://mtgimage.com/card/bloodrock%20cyclops.jpg
 value=3.288
 rarity=C
 type=Creature

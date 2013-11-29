@@ -1,6 +1,6 @@
 name=Rupture Spire
 url=http://magiccards.info/ddh/en/75.html
-image=http://magiccards.info/scans/en/cfx/144.jpg
+image=http://mtgimage.com/card/rupture%20spire.jpg
 value=3.333
 rarity=C
 type=Land

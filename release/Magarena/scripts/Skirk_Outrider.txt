@@ -1,6 +1,6 @@
 name=Skirk Outrider
 url=http://magiccards.info/le/en/114.html
-image=http://magiccards.info/scans/en/le/114.jpg
+image=http://mtgimage.com/card/skirk%20outrider.jpg
 value=2.273
 rarity=C
 type=Creature

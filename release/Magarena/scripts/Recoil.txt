@@ -1,6 +1,6 @@
 name=Recoil
 url=http://magiccards.info/ddh/en/61.html
-image=http://magiccards.info/scans/en/in/264.jpg
+image=http://mtgimage.com/card/recoil.jpg
 value=4.530
 rarity=C
 type=Instant

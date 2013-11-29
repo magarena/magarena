@@ -1,6 +1,6 @@
 name=Hedron Scrabbler
 url=http://magiccards.info/zen/en/204.html
-image=http://magiccards.info/scans/en/zen/204.jpg
+image=http://mtgimage.com/card/hedron%20scrabbler.jpg
 value=1.909
 rarity=C
 type=Artifact,Creature

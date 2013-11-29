@@ -1,6 +1,6 @@
 name=Crimson Mage
 url=http://magiccards.info/m12/en/129.html
-image=http://magiccards.info/scans/en/m12/129.jpg
+image=http://mtgimage.com/card/crimson%20mage.jpg
 value=3.629
 rarity=U
 type=Creature

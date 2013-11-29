@@ -1,6 +1,6 @@
 name=Stony Silence
 url=http://magiccards.info/isd/en/36.html
-image=http://magiccards.info/scans/en/isd/36.jpg
+image=http://mtgimage.com/card/stony%20silence.jpg
 value=4.172
 rarity=R
 type=Enchantment

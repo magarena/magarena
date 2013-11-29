@@ -1,6 +1,6 @@
 name=Metamorphic Wurm
 url=http://magiccards.info/od/en/250.html
-image=http://magiccards.info/scans/en/od/250.jpg
+image=http://mtgimage.com/card/metamorphic%20wurm.jpg
 value=3.742
 rarity=U
 type=Creature

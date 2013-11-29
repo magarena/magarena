@@ -1,6 +1,6 @@
 name=Watery Grave
 url=http://magiccards.info/rav/en/286.html
-image=http://magiccards.info/scans/en/rav/286.jpg
+image=http://mtgimage.com/card/watery%20grave.jpg
 value=4.264
 rarity=R
 type=Land

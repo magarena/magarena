@@ -1,6 +1,6 @@
 name=Diabolic Tutor
 url=http://magiccards.info/m14/en/95.html
-image=http://magiccards.info/scans/en/m14/95.jpg
+image=http://mtgimage.com/card/diabolic%20tutor.jpg
 value=4.143
 rarity=U
 type=Sorcery

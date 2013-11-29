@@ -1,6 +1,6 @@
 name=Tanglebloom
 url=http://magiccards.info/mi/en/258.html
-image=http://magiccards.info/scans/en/mi/258.jpg
+image=http://mtgimage.com/card/tanglebloom.jpg
 value=1.948
 rarity=U
 type=Artifact

@@ -1,6 +1,6 @@
 name=Vampiric Tutor
 url=http://magiccards.info/vi/en/22.html
-image=http://magiccards.info/scans/en/vi/22.jpg
+image=http://mtgimage.com/card/vampiric%20tutor.jpg
 value=4.699
 rarity=R
 type=Instant

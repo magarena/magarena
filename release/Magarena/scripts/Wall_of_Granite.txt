@@ -1,6 +1,6 @@
 name=Wall of Granite
 url=http://magiccards.info/po/en/161.html
-image=http://magiccards.info/scans/en/po/161.jpg
+image=http://mtgimage.com/card/wall%20of%20granite.jpg
 value=2.944
 rarity=U
 type=Creature

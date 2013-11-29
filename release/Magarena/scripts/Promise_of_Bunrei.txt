@@ -1,6 +1,6 @@
 name=Promise of Bunrei
 url=http://magiccards.info/sok/en/24.html
-image=http://magiccards.info/scans/en/sok/24.jpg
+image=http://mtgimage.com/card/promise%20of%20bunrei.jpg
 value=4.026
 rarity=R
 type=Enchantment

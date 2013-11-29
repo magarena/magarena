@@ -1,6 +1,6 @@
 name=Rain of Tears
 url=http://magiccards.info/10e/en/170.html
-image=http://magiccards.info/scans/en/10e/170.jpg
+image=http://mtgimage.com/card/rain%20of%20tears.jpg
 value=3.811
 removal=3
 rarity=U

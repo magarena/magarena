@@ -1,6 +1,6 @@
 name=Liliana Vess
 url=http://magiccards.info/m11/en/102.html
-image=http://magiccards.info/scans/en/m11/102.jpg
+image=http://mtgimage.com/card/liliana%20vess.jpg
 value=4.405
 rarity=M
 type=Planeswalker

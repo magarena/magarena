@@ -1,6 +1,6 @@
 name=Pus Kami
 url=http://magiccards.info/bok/en/79.html
-image=http://magiccards.info/scans/en/bok/79.jpg
+image=http://mtgimage.com/card/pus%20kami.jpg
 value=1.513
 rarity=U
 type=Creature

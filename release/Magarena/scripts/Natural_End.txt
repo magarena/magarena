@@ -1,6 +1,6 @@
 name=Natural End
 url=http://magiccards.info/avr/en/185.html
-image=http://magiccards.info/scans/en/avr/185.jpg
+image=http://mtgimage.com/card/natural%20end.jpg
 value=2.857
 removal=1
 rarity=C

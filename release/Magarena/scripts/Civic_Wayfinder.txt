@@ -1,6 +1,6 @@
 name=Civic Wayfinder
 url=http://magiccards.info/rav/en/157.html
-image=http://magiccards.info/scans/en/rav/157.jpg
+image=http://mtgimage.com/card/civic%20wayfinder.jpg
 value=3.516
 rarity=C
 type=Creature

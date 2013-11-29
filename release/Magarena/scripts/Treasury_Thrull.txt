@@ -1,6 +1,6 @@
 name=Treasury Thrull
 url=http://magiccards.info/gtc/en/201.html
-image=http://magiccards.info/scans/en/gtc/201.jpg
+image=http://mtgimage.com/card/treasury%20thrull.jpg
 value=3.455
 rarity=R
 type=Creature

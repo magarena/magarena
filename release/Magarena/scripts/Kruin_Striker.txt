@@ -1,6 +1,6 @@
 name=Kruin Striker
 url=http://magiccards.info/avr/en/143.html
-image=http://magiccards.info/scans/en/avr/143.jpg
+image=http://mtgimage.com/card/kruin%20striker.jpg
 value=3.049
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Mindshrieker
 url=http://magiccards.info/isd/en/67.html
-image=http://magiccards.info/scans/en/isd/67.jpg
+image=http://mtgimage.com/card/mindshrieker.jpg
 value=4.041
 rarity=R
 type=Creature

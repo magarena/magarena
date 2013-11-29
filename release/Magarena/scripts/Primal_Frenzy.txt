@@ -1,6 +1,6 @@
 name=Primal Frenzy
 url=http://magiccards.info/od/en/262.html
-image=http://magiccards.info/scans/en/od/262.jpg
+image=http://mtgimage.com/card/primal%20frenzy.jpg
 value=2.086
 rarity=C
 type=Enchantment

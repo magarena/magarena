@@ -1,6 +1,6 @@
 name=Oblivion Ring
 url=http://magiccards.info/m12/en/27.html
-image=http://magiccards.info/scans/en/m12/27.jpg
+image=http://mtgimage.com/card/oblivion%20ring.jpg
 value=4.337
 removal=2
 rarity=C

@@ -1,6 +1,6 @@
 name=Mugging
 url=http://magiccards.info/gtc/en/102.html
-image=http://magiccards.info/scans/en/gtc/102.jpg
+image=http://mtgimage.com/card/mugging.jpg
 value=2.923
 removal=2
 rarity=C

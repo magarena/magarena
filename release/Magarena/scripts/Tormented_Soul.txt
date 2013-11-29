@@ -1,6 +1,6 @@
 name=Tormented Soul
 url=http://magiccards.info/m12/en/114.html
-image=http://magiccards.info/scans/en/m12/114.jpg
+image=http://mtgimage.com/card/tormented%20soul.jpg
 value=3.833
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Skeletal Grimace
 url=http://magiccards.info/isd/en/116.html
-image=http://magiccards.info/scans/en/isd/116.jpg
+image=http://mtgimage.com/card/skeletal%20grimace.jpg
 value=3.254
 rarity=C
 type=Enchantment

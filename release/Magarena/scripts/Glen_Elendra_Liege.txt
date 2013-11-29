@@ -1,6 +1,6 @@
 name=Glen Elendra Liege
 url=http://magiccards.info/shm/en/163.html
-image=http://magiccards.info/scans/en/shm/163.jpg
+image=http://mtgimage.com/card/glen%20elendra%20liege.jpg
 value=3.521
 rarity=R
 type=Creature

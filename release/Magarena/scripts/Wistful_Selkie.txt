@@ -1,6 +1,6 @@
 name=Wistful Selkie
 url=http://magiccards.info/eve/en/165.html
-image=http://magiccards.info/scans/en/eve/165.jpg
+image=http://mtgimage.com/card/wistful%20selkie.jpg
 value=3.394
 rarity=U
 type=Creature

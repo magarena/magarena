@@ -1,6 +1,6 @@
 name=Fodder Cannon
 url=http://magiccards.info/8e/en/302.html
-image=http://magiccards.info/scans/en/8e/302.jpg
+image=http://mtgimage.com/card/fodder%20cannon.jpg
 value=4.170
 rarity=U
 type=Artifact

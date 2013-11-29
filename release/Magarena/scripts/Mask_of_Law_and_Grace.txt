@@ -1,6 +1,6 @@
 name=Mask of Law and Grace
 url=http://magiccards.info/ud/en/11.html
-image=http://magiccards.info/scans/en/ud/11.jpg
+image=http://mtgimage.com/card/mask%20of%20law%20and%20grace.jpg
 value=3.391
 rarity=C
 type=Enchantment

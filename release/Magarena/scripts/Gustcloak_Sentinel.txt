@@ -1,6 +1,6 @@
 name=Gustcloak Sentinel
 url=http://magiccards.info/on/en/37.html
-image=http://magiccards.info/scans/en/on/37.jpg
+image=http://mtgimage.com/card/gustcloak%20sentinel.jpg
 value=3.375
 rarity=U
 type=Creature

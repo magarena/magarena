@@ -1,6 +1,6 @@
 name=Barrage of Expendables
 url=http://magiccards.info/m14/en/127.html
-image=http://magiccards.info/scans/en/m14/127.jpg
+image=http://mtgimage.com/card/barrage%20of%20expendables.jpg
 value=3.459
 rarity=U
 type=Enchantment

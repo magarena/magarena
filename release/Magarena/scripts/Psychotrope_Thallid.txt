@@ -1,6 +1,6 @@
 name=Psychotrope Thallid
 url=http://magiccards.info/pc/en/137.html
-image=http://magiccards.info/scans/en/pc/137.jpg
+image=http://mtgimage.com/card/psychotrope%20thallid.jpg
 value=3.525
 rarity=U
 type=Creature

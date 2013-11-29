@@ -1,6 +1,6 @@
 name=Wanderbrine Rootcutters
 url=http://magiccards.info/shm/en/178.html
-image=http://magiccards.info/scans/en/shm/178.jpg
+image=http://mtgimage.com/card/wanderbrine%20rootcutters.jpg
 value=2.143
 rarity=C
 type=Creature

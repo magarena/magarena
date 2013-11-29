@@ -1,6 +1,6 @@
 name=Jerrard of the Closed Fist
 url=http://magiccards.info/me3/en/154.html
-image=http://magiccards.info/scans/en/me3/154.jpg
+image=http://mtgimage.com/card/jerrard%20of%20the%20closed%20fist.jpg
 value=2.530
 rarity=U
 type=Legendary,Creature

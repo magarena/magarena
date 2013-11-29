@@ -1,6 +1,6 @@
 name=Midnight Duelist
 url=http://magiccards.info/avr/en/27.html
-image=http://magiccards.info/scans/en/avr/27.jpg
+image=http://mtgimage.com/card/midnight%20duelist.jpg
 value=3.177
 rarity=C
 type=Creature

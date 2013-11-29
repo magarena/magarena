@@ -1,6 +1,6 @@
 name=Honor of the Pure
 url=http://magiccards.info/m12/en/23.html
-image=http://magiccards.info/scans/en/m11/17.jpg
+image=http://mtgimage.com/card/honor%20of%20the%20pure.jpg
 value=4.235
 rarity=R
 type=Enchantment

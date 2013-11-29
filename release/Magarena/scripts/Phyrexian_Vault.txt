@@ -1,6 +1,6 @@
 name=Phyrexian Vault
 url=http://magiccards.info/pvc/en/21.html
-image=http://magiccards.info/scans/en/pvc/21.jpg
+image=http://mtgimage.com/card/phyrexian%20vault.jpg
 value=2.209
 rarity=U
 type=Artifact

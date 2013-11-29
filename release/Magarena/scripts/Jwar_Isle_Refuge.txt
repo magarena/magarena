@@ -1,6 +1,6 @@
 name=Jwar Isle Refuge
 url=http://magiccards.info/cmd/en/279.html
-image=http://magiccards.info/scans/en/zen/215.jpg
+image=http://mtgimage.com/card/jwar%20isle%20refuge.jpg
 value=3.265
 rarity=U
 type=Land

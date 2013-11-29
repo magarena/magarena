@@ -1,6 +1,6 @@
 name=Debtor's Pulpit
 url=http://magiccards.info/gtc/en/10.html
-image=http://magiccards.info/scans/en/gtc/10.jpg
+image=http://mtgimage.com/card/debtor%27s%20pulpit.jpg
 value=1.806
 rarity=U
 type=Enchantment

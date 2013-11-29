@@ -1,6 +1,6 @@
 name=Fallen Angel
 url=http://magiccards.info/cmd/en/82.html
-image=http://magiccards.info/scans/en/dvd/42.jpg
+image=http://mtgimage.com/card/fallen%20angel.jpg
 value=3.773
 rarity=R
 type=Creature

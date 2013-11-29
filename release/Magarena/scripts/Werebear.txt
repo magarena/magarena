@@ -1,6 +1,6 @@
 name=Werebear
 url=http://magiccards.info/od/en/282.html
-image=http://magiccards.info/scans/en/od/282.jpg
+image=http://mtgimage.com/card/werebear.jpg
 value=4.587
 rarity=C
 type=Creature

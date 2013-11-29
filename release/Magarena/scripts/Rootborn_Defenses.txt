@@ -1,6 +1,6 @@
 name=Rootborn Defenses
 url=http://magiccards.info/rtr/en/19.html
-image=http://magiccards.info/scans/en/rtr/19.jpg
+image=http://mtgimage.com/card/rootborn%20defenses.jpg
 value=3.778
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Mulldrifter
 url=http://magiccards.info/lw/en/76.html
-image=http://magiccards.info/scans/en/lw/76.jpg
+image=http://mtgimage.com/card/mulldrifter.jpg
 value=4.406
 rarity=C
 type=Creature

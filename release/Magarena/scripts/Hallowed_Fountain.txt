@@ -1,6 +1,6 @@
 name=Hallowed Fountain
 url=http://magiccards.info/di/en/174.html
-image=http://magiccards.info/scans/en/di/174.jpg
+image=http://mtgimage.com/card/hallowed%20fountain.jpg
 value=4.352
 rarity=R
 type=Land

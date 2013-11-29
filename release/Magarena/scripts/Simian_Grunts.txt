@@ -1,6 +1,6 @@
 name=Simian Grunts
 url=http://magiccards.info/ul/en/113.html
-image=http://magiccards.info/scans/en/ul/113.jpg
+image=http://mtgimage.com/card/simian%20grunts.jpg
 value=3.806
 rarity=C
 type=Creature
