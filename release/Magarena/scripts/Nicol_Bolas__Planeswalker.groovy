@@ -5,7 +5,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_NONCREATURE,
-                new MagicDestroyTargetPicker(true),
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target noncreature permanent\$."
             );
