@@ -1,7 +1,7 @@
 name=Snow-Covered Mountain
 url=http://magiccards.info/cs/en/154.html
 image=http://mtgimage.com/card/snow%2Dcovered%20mountain.jpg
-value=4.597
+value=4.609
 rarity=L
 type=Basic,Snow,Land
 subtype=Mountain

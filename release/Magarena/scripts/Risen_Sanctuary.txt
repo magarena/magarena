@@ -1,7 +1,7 @@
 name=Risen Sanctuary
 url=http://magiccards.info/rtr/en/190.html
 image=http://mtgimage.com/card/risen%20sanctuary.jpg
-value=3.237
+value=3.224
 rarity=U
 type=Creature
 subtype=Elemental

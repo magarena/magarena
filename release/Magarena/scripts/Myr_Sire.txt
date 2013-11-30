@@ -1,7 +1,7 @@
 name=Myr Sire
 url=http://magiccards.info/mbs/en/116.html
 image=http://mtgimage.com/card/myr%20sire.jpg
-value=3.432
+value=3.447
 rarity=C
 type=Artifact,Creature
 subtype=Myr

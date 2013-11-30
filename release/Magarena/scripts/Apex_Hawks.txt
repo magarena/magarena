@@ -1,7 +1,7 @@
 name=Apex Hawks
 url=http://magiccards.info/wwk/en/2.html
 image=http://mtgimage.com/card/apex%20hawks.jpg
-value=2.547
+value=2.546
 rarity=C
 type=Creature
 subtype=Bird

@@ -1,7 +1,7 @@
 name=Ascended Lawmage
 url=http://magiccards.info/dgm/en/53.html
 image=http://mtgimage.com/card/ascended%20lawmage.jpg
-value=3.992
+value=4.028
 rarity=U
 type=Creature
 subtype=Vedalken,Wizard

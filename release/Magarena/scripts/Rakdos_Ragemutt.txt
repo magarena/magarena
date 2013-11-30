@@ -1,7 +1,7 @@
 name=Rakdos Ragemutt
 url=http://magiccards.info/rtr/en/185.html
 image=http://mtgimage.com/card/rakdos%20ragemutt.jpg
-value=2.774
+value=2.815
 rarity=U
 type=Creature
 subtype=Elemental,Hound

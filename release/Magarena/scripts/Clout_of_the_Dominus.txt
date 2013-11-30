@@ -1,7 +1,7 @@
 name=Clout of the Dominus
 url=http://magiccards.info/eve/en/99.html
 image=http://mtgimage.com/card/clout%20of%20the%20dominus.jpg
-value=4.168
+value=4.180
 rarity=C
 type=Enchantment
 subtype=Aura

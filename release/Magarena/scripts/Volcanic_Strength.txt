@@ -1,7 +1,7 @@
 name=Volcanic Strength
 url=http://magiccards.info/m11/en/158.html
 image=http://mtgimage.com/card/volcanic%20strength.jpg
-value=3.353
+value=3.329
 rarity=C
 type=Enchantment
 subtype=Aura

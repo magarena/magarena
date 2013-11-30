@@ -1,7 +1,7 @@
 name=Blightwidow
 url=http://magiccards.info/mbs/en/77.html
 image=http://mtgimage.com/card/blightwidow.jpg
-value=3.462
+value=3.433
 ability=reach;infect
 rarity=C
 type=Creature

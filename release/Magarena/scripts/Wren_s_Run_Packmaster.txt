@@ -1,7 +1,7 @@
 name=Wren's Run Packmaster
 url=http://magiccards.info/lw/en/244.html
 image=http://mtgimage.com/card/wren%27s%20run%20packmaster.jpg
-value=4.305
+value=4.312
 removal=2
 rarity=R
 type=Creature

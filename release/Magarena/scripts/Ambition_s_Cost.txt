@@ -1,7 +1,7 @@
 name=Ambition's Cost
 url=http://magiccards.info/8e/en/118.html
 image=http://mtgimage.com/card/ambition%27s%20cost.jpg
-value=3.567
+value=3.557
 rarity=U
 type=Sorcery
 cost={3}{B}

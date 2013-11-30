@@ -1,7 +1,7 @@
 name=Plated Slagwurm
 url=http://magiccards.info/gvl/en/12.html
 image=http://mtgimage.com/card/plated%20slagwurm.jpg
-value=4.437
+value=4.433
 rarity=R
 type=Creature
 subtype=Wurm

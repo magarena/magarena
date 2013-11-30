@@ -1,7 +1,7 @@
 name=Rhox Pikemaster
 url=http://magiccards.info/m10/en/26.html
 image=http://mtgimage.com/card/rhox%20pikemaster.jpg
-value=3.803
+value=3.806
 rarity=U
 type=Creature
 subtype=Rhino,Soldier

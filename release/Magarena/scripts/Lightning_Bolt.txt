@@ -1,7 +1,7 @@
 name=Lightning Bolt
 url=http://magiccards.info/pd2/en/17.html
 image=http://mtgimage.com/card/lightning%20bolt.jpg
-value=4.641
+value=4.643
 removal=3
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Karmic Guide
 url=http://magiccards.info/ul/en/11.html
 image=http://mtgimage.com/card/karmic%20guide.jpg
-value=4.309
+value=4.633
 rarity=R
 type=Creature
 subtype=Angel,Spirit

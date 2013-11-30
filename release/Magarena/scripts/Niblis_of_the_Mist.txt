@@ -1,7 +1,7 @@
 name=Niblis of the Mist
 url=http://magiccards.info/dka/en/15.html
 image=http://mtgimage.com/card/niblis%20of%20the%20mist.jpg
-value=2.036
+value=2.058
 rarity=C
 type=Creature
 subtype=Spirit

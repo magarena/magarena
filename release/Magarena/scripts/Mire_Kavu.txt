@@ -1,7 +1,7 @@
 name=Mire Kavu
 url=http://magiccards.info/ps/en/67.html
 image=http://mtgimage.com/card/mire%20kavu.jpg
-value=2.800
+value=2.719
 rarity=C
 type=Creature
 subtype=Kavu

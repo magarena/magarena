@@ -1,7 +1,7 @@
 name=Beastmaster Ascension
 url=http://magiccards.info/zen/en/159.html
 image=http://mtgimage.com/card/beastmaster%20ascension.jpg
-value=4.348
+value=4.346
 rarity=R
 type=Enchantment
 cost={2}{G}

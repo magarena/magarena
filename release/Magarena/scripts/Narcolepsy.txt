@@ -1,7 +1,7 @@
 name=Narcolepsy
 url=http://magiccards.info/roe/en/79.html
 image=http://mtgimage.com/card/narcolepsy.jpg
-value=3.947
+value=3.918
 removal=2
 rarity=C
 type=Enchantment

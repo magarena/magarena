@@ -1,7 +1,7 @@
 name=Crypt Rats
 url=http://magiccards.info/7e/en/125.html
 image=http://mtgimage.com/card/crypt%20rats.jpg
-value=4.333
+value=4.327
 rarity=U
 type=Creature
 subtype=Rat

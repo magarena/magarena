@@ -1,7 +1,7 @@
 name=Null Champion
 url=http://magiccards.info/roe/en/121.html
 image=http://mtgimage.com/card/null%20champion.jpg
-value=3.275
+value=3.295
 rarity=C
 type=Creature
 subtype=Zombie,Warrior

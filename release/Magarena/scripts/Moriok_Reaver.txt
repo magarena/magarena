@@ -1,7 +1,7 @@
 name=Moriok Reaver
 url=http://magiccards.info/som/en/70.html
 image=http://mtgimage.com/card/moriok%20reaver.jpg
-value=2.029
+value=2.038
 rarity=C
 type=Creature
 subtype=Human,Warrior

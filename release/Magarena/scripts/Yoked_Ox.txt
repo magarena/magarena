@@ -1,7 +1,7 @@
 name=Yoked Ox
 url=http://magiccards.info/ths/en/37.html
 image=http://mtgimage.com/card/yoked%20ox.jpg
-value=3.342
+value=3.354
 rarity=C
 type=Creature
 subtype=Ox

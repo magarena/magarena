@@ -1,7 +1,7 @@
 name=Enlisted Wurm
 url=http://magiccards.info/pc2/en/90.html
 image=http://mtgimage.com/card/enlisted%20wurm.jpg
-value=3.090
+value=3.100
 rarity=U
 type=Creature
 subtype=Wurm

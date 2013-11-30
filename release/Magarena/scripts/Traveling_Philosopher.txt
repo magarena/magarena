@@ -1,7 +1,7 @@
 name=Traveling Philosopher
 url=http://magiccards.info/ths/en/34.html
 image=http://mtgimage.com/card/traveling%20philosopher.jpg
-value=2.333
+value=2.389
 rarity=C
 type=Creature
 subtype=Human,Advisor

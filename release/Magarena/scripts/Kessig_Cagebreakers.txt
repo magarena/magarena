@@ -1,7 +1,7 @@
 name=Kessig Cagebreakers
 url=http://magiccards.info/isd/en/189.html
 image=http://mtgimage.com/card/kessig%20cagebreakers.jpg
-value=3.848
+value=3.856
 rarity=R
 type=Creature
 subtype=Human,Rogue

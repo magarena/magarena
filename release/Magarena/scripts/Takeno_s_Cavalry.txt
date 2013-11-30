@@ -1,7 +1,7 @@
 name=Takeno's Cavalry
 url=http://magiccards.info/bok/en/24.html
 image=http://mtgimage.com/card/takeno%27s%20cavalry.jpg
-value=0.833
+value=0.830
 rarity=C
 type=Creature
 subtype=Human,Samurai,Archer

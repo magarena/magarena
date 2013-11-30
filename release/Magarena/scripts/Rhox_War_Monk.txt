@@ -1,7 +1,7 @@
 name=Rhox War Monk
 url=http://magiccards.info/ala/en/188.html
 image=http://mtgimage.com/card/rhox%20war%20monk.jpg
-value=4.000
+value=4.006
 rarity=U
 type=Creature
 subtype=Rhino,Monk

@@ -1,7 +1,7 @@
 name=Nekrataal
 url=http://magiccards.info/10e/en/163.html
 image=http://mtgimage.com/card/nekrataal.jpg
-value=4.240
+value=4.237
 rarity=U
 type=Creature
 subtype=Human,Assassin

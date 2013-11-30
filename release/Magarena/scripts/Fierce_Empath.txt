@@ -1,7 +1,7 @@
 name=Fierce Empath
 url=http://magiccards.info/cmd/en/155.html
 image=http://mtgimage.com/card/fierce%20empath.jpg
-value=3.619
+value=3.682
 rarity=C
 type=Creature
 subtype=Elf

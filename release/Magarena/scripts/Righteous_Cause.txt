@@ -1,7 +1,7 @@
 name=Righteous Cause
 url=http://magiccards.info/cmd/en/29.html
 image=http://mtgimage.com/card/righteous%20cause.jpg
-value=3.370
+value=3.375
 rarity=U
 type=Enchantment
 cost={3}{W}{W}

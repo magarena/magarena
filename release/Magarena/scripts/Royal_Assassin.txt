@@ -1,7 +1,7 @@
 name=Royal Assassin
 url=http://magiccards.info/m12/en/105.html
 image=http://mtgimage.com/card/royal%20assassin.jpg
-value=4.371
+value=4.368
 rarity=R
 type=Creature
 subtype=Human,Assassin

@@ -1,7 +1,7 @@
 name=Iron Lance
 url=http://magiccards.info/mm/en/300.html
 image=http://mtgimage.com/card/iron%20lance.jpg
-value=4.000
+value=1.759
 rarity=U
 type=Artifact
 cost={2}

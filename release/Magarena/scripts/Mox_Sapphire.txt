@@ -1,7 +1,7 @@
 name=Mox Sapphire
 url=http://magiccards.info/cedi/en/267.html
 image=http://mtgimage.com/card/mox%20sapphire.jpg
-value=4.774
+value=4.758
 rarity=R
 type=Artifact
 cost={0}

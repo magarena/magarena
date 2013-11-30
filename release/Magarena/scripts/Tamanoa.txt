@@ -1,7 +1,7 @@
 name=Tamanoa
 url=http://magiccards.info/cs/en/132.html
 image=http://mtgimage.com/card/tamanoa.jpg
-value=4.303
+value=4.300
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,7 +1,7 @@
 name=Quilled Sliver
 url=http://magiccards.info/ts/en/37.html
 image=http://mtgimage.com/card/quilled%20sliver.jpg
-value=2.777
+value=2.823
 rarity=U
 type=Creature
 subtype=Sliver

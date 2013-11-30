@@ -1,7 +1,7 @@
 name=Eel Umbra
 url=http://magiccards.info/roe/en/65.html
 image=http://mtgimage.com/card/eel%20umbra.jpg
-value=4.071
+value=4.089
 rarity=C
 type=Enchantment
 subtype=Aura

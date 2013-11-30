@@ -1,7 +1,7 @@
 name=Despondency
 url=http://magiccards.info/us/en/129.html
 image=http://mtgimage.com/card/despondency.jpg
-value=3.731
+value=3.679
 rarity=C
 type=Enchantment
 subtype=Aura

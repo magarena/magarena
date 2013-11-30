@@ -1,7 +1,7 @@
 name=Gruul Cluestone
 url=http://magiccards.info/dgm/en/140.html
 image=http://mtgimage.com/card/gruul%20cluestone.jpg
-value=2.679
+value=2.621
 rarity=C
 type=Artifact
 cost={3}

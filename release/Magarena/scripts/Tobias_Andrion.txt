@@ -1,7 +1,7 @@
 name=Tobias Andrion
 url=http://magiccards.info/me3/en/181.html
 image=http://mtgimage.com/card/tobias%20andrion.jpg
-value=1.242
+value=1.239
 rarity=C
 type=Legendary,Creature
 subtype=Human,Advisor

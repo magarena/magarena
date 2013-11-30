@@ -1,7 +1,7 @@
 name=Labyrinth Minotaur
 url=http://magiccards.info/me3/en/39.html
 image=http://mtgimage.com/card/labyrinth%20minotaur.jpg
-value=3.269
+value=3.333
 rarity=C
 type=Creature
 subtype=Minotaur

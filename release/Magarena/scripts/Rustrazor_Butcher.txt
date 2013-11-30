@@ -1,7 +1,7 @@
 name=Rustrazor Butcher
 url=http://magiccards.info/shm/en/105.html
 image=http://mtgimage.com/card/rustrazor%20butcher.jpg
-value=3.425
+value=3.454
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

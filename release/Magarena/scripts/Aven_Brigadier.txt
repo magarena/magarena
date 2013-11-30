@@ -1,7 +1,7 @@
 name=Aven Brigadier
 url=http://magiccards.info/on/en/7.html
 image=http://mtgimage.com/card/aven%20brigadier.jpg
-value=4.009
+value=4.000
 rarity=R
 type=Creature
 subtype=Bird,Soldier

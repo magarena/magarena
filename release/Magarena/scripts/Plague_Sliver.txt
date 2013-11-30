@@ -1,7 +1,7 @@
 name=Plague Sliver
 url=http://magiccards.info/ts/en/124.html
 image=http://mtgimage.com/card/plague%20sliver.jpg
-value=3.722
+value=3.733
 rarity=R
 type=Creature
 subtype=Sliver

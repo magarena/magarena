@@ -1,7 +1,7 @@
 name=Fabled Hero
 url=http://magiccards.info/ths/en/12.html
 image=http://mtgimage.com/card/fabled%20hero.jpg
-value=4.000
+value=4.085
 rarity=R
 type=Creature
 subtype=Human,Soldier

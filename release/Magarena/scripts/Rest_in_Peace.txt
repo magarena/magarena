@@ -1,7 +1,7 @@
 name=Rest in Peace
 url=http://magiccards.info/rtr/en/18.html
 image=http://mtgimage.com/card/rest%20in%20peace.jpg
-value=3.955
+value=3.985
 rarity=R
 type=Enchantment
 cost={1}{W}

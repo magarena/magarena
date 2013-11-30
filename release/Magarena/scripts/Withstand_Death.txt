@@ -1,7 +1,7 @@
 name=Withstand Death
 url=http://magiccards.info/som/en/134.html
 image=http://mtgimage.com/card/withstand%20death.jpg
-value=3.331
+value=3.333
 rarity=C
 type=Instant
 cost={G}

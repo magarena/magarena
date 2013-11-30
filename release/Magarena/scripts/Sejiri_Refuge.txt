@@ -1,7 +1,7 @@
 name=Sejiri Refuge
 url=http://magiccards.info/zen/en/224.html
 image=http://mtgimage.com/card/sejiri%20refuge.jpg
-value=3.600
+value=4.400
 rarity=U
 type=Land
 mana=w3u3

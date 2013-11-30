@@ -1,7 +1,7 @@
 name=Odious Trow
 url=http://magiccards.info/eve/en/125.html
 image=http://mtgimage.com/card/odious%20trow.jpg
-value=3.011
+value=3.054
 rarity=C
 type=Creature
 subtype=Troll

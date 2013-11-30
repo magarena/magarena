@@ -1,7 +1,7 @@
 name=Ghostfire
 url=http://magiccards.info/ddg/en/69.html
 image=http://mtgimage.com/card/ghostfire.jpg
-value=3.673
+value=3.649
 rarity=C
 type=Instant
 cost={2}{R}

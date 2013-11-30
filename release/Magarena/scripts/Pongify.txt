@@ -1,7 +1,7 @@
 name=Pongify
 url=http://magiccards.info/pc/en/44.html
 image=http://mtgimage.com/card/pongify.jpg
-value=4.504
+value=4.508
 removal=3
 rarity=U
 type=Instant

@@ -1,7 +1,7 @@
 name=Rush of Blood
 url=http://magiccards.info/avr/en/154.html
 image=http://mtgimage.com/card/rush%20of%20blood.jpg
-value=2.929
+value=2.944
 rarity=U
 type=Instant
 cost={2}{R}

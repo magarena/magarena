@@ -1,7 +1,7 @@
 name=Opaline Sliver
 url=http://magiccards.info/ts/en/244.html
 image=http://mtgimage.com/card/opaline%20sliver.jpg
-value=3.479
+value=3.510
 rarity=U
 type=Creature
 subtype=Sliver

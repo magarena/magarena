@@ -1,7 +1,7 @@
 name=Phantom Wurm
 url=http://magiccards.info/ts/en/211.html
 image=http://mtgimage.com/card/phantom%20wurm.jpg
-value=3.182
+value=3.235
 rarity=U
 type=Creature
 subtype=Wurm,Spirit

@@ -1,7 +1,7 @@
 name=Pride Guardian
 url=http://magiccards.info/m12/en/31.html
 image=http://mtgimage.com/card/pride%20guardian.jpg
-value=3.118
+value=3.154
 rarity=C
 type=Creature
 subtype=Cat,Monk

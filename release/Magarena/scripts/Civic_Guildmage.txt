@@ -1,7 +1,7 @@
 name=Civic Guildmage
 url=http://magiccards.info/mr/en/211.html
 image=http://mtgimage.com/card/civic%20guildmage.jpg
-value=2.383
+value=2.355
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,7 +1,7 @@
 name=Moat
 url=http://magiccards.info/med/en/21.html
 image=http://mtgimage.com/card/moat.jpg
-value=4.671
+value=4.672
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

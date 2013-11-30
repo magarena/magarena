@@ -1,7 +1,7 @@
 name=Zodiac Rooster
 url=http://magiccards.info/p3k/en/163.html
 image=http://mtgimage.com/card/zodiac%20rooster.jpg
-value=3.948
+value=3.949
 rarity=C
 type=Creature
 subtype=Bird

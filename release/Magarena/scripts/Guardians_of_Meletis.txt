@@ -1,7 +1,7 @@
 name=Guardians of Meletis
 url=http://magiccards.info/ths/en/217.html
 image=http://mtgimage.com/card/guardians%20of%20meletis.jpg
-value=3.436
+value=3.535
 rarity=C
 type=Artifact,Creature
 subtype=Golem

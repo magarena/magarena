@@ -1,7 +1,7 @@
 name=Innocent Blood
 url=http://magiccards.info/pch/en/33.html
 image=http://mtgimage.com/card/innocent%20blood.jpg
-value=4.528
+value=4.534
 removal=2
 rarity=C
 type=Sorcery

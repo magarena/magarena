@@ -1,7 +1,7 @@
 name=Narwhal
 url=http://magiccards.info/me2/en/57.html
 image=http://mtgimage.com/card/narwhal.jpg
-value=3.825
+value=3.833
 rarity=R
 type=Creature
 subtype=Whale

@@ -1,7 +1,7 @@
 name=Memnite
 url=http://magiccards.info/som/en/174.html
 image=http://mtgimage.com/card/memnite.jpg
-value=4.516
+value=4.518
 rarity=U
 type=Artifact,Creature
 subtype=Construct

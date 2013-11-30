@@ -1,7 +1,7 @@
 name=Outwit
 url=http://magiccards.info/avr/en/70.html
 image=http://mtgimage.com/card/outwit.jpg
-value=2.634
+value=2.655
 rarity=C
 type=Instant
 cost={U}

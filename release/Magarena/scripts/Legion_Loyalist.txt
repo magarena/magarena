@@ -1,7 +1,7 @@
 name=Legion Loyalist
 url=http://magiccards.info/gtc/en/97.html
 image=http://mtgimage.com/card/legion%20loyalist.jpg
-value=4.116
+value=4.129
 rarity=R
 type=Creature
 subtype=Goblin,Soldier

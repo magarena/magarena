@@ -1,7 +1,7 @@
 name=Elspeth, Knight-Errant
 url=http://magiccards.info/ala/en/9.html
 image=http://mtgimage.com/card/elspeth%2C%20knight%2Derrant.jpg
-value=4.643
+value=4.655
 rarity=M
 type=Planeswalker
 subtype=Elspeth

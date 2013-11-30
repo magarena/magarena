@@ -1,7 +1,7 @@
 name=Elite Vanguard
 url=http://magiccards.info/m12/en/15.html
 image=http://mtgimage.com/card/elite%20vanguard.jpg
-value=4.075
+value=4.074
 rarity=U
 type=Creature
 subtype=Human,Soldier

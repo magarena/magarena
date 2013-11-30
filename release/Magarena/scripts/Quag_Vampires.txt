@@ -1,7 +1,7 @@
 name=Quag Vampires
 url=http://magiccards.info/wwk/en/63.html
 image=http://mtgimage.com/card/quag%20vampires.jpg
-value=3.178
+value=3.175
 rarity=C
 type=Creature
 subtype=Vampire,Rogue

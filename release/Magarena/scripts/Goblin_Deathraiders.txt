@@ -1,7 +1,7 @@
 name=Goblin Deathraiders
 url=http://magiccards.info/ala/en/169.html
 image=http://mtgimage.com/card/goblin%20deathraiders.jpg
-value=3.138
+value=3.148
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

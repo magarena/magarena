@@ -1,7 +1,7 @@
 name=Phantasmal Image
 url=http://magiccards.info/m12/en/72.html
 image=http://mtgimage.com/card/phantasmal%20image.jpg
-value=4.326
+value=4.322
 rarity=R
 type=Creature
 subtype=Illusion

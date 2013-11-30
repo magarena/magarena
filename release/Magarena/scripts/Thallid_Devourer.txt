@@ -1,7 +1,7 @@
 name=Thallid Devourer
 url=http://magiccards.info/me2/en/181.html
 image=http://mtgimage.com/card/thallid%20devourer.jpg
-value=3.478
+value=3.458
 rarity=C
 type=Creature
 subtype=Fungus

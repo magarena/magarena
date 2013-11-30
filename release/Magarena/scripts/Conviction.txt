@@ -1,7 +1,7 @@
 name=Conviction
 url=http://magiccards.info/sh/en/105.html
 image=http://mtgimage.com/card/conviction.jpg
-value=3.061
+value=3.044
 rarity=C
 type=Enchantment
 subtype=Aura

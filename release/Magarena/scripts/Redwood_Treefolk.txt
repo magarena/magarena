@@ -1,7 +1,7 @@
 name=Redwood Treefolk
 url=http://magiccards.info/7e/en/264.html
 image=http://mtgimage.com/card/redwood%20treefolk.jpg
-value=2.865
+value=2.830
 rarity=C
 type=Creature
 subtype=Treefolk

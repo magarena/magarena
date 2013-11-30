@@ -1,7 +1,7 @@
 name=Nav Squad Commandos
 url=http://magiccards.info/gtc/en/22.html
 image=http://mtgimage.com/card/nav%20squad%20commandos.jpg
-value=2.054
+value=2.062
 rarity=C
 type=Creature
 subtype=Human,Soldier

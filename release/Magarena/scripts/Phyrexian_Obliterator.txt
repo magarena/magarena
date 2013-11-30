@@ -1,7 +1,7 @@
 name=Phyrexian Obliterator
 url=http://magiccards.info/nph/en/68.html
 image=http://mtgimage.com/card/phyrexian%20obliterator.jpg
-value=4.456
+value=4.457
 rarity=M
 type=Creature
 subtype=Horror

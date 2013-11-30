@@ -1,7 +1,7 @@
 name=Snake Umbra
 url=http://magiccards.info/roe/en/207.html
 image=http://mtgimage.com/card/snake%20umbra.jpg
-value=3.225
+value=3.095
 rarity=C
 type=Enchantment
 subtype=Aura

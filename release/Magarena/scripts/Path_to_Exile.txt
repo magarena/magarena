@@ -1,7 +1,7 @@
 name=Path to Exile
 url=http://magiccards.info/mma/en/25.html
 image=http://mtgimage.com/card/path%20to%20exile.jpg
-value=4
+value=4.438
 removal=5
 rarity=U
 type=Instant

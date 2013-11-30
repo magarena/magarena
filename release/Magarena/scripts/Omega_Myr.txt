@@ -1,7 +1,7 @@
 name=Omega Myr
 url=http://magiccards.info/mi/en/223.html
 image=http://mtgimage.com/card/omega%20myr.jpg
-value=2.588
+value=2.535
 rarity=C
 type=Artifact,Creature
 subtype=Myr

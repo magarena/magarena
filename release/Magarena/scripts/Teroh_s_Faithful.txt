@@ -1,7 +1,7 @@
 name=Teroh's Faithful
 url=http://magiccards.info/tr/en/18.html
 image=http://mtgimage.com/card/teroh%27s%20faithful.jpg
-value=2.324
+value=2.303
 rarity=C
 type=Creature
 subtype=Human,Cleric

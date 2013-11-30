@@ -1,7 +1,7 @@
 name=Ondu Cleric
 url=http://magiccards.info/zen/en/30.html
 image=http://mtgimage.com/card/ondu%20cleric.jpg
-value=4.034
+value=4.016
 rarity=C
 type=Creature
 subtype=Kor,Cleric,Ally

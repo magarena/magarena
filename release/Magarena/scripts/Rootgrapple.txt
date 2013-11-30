@@ -1,7 +1,7 @@
 name=Rootgrapple
 url=http://magiccards.info/lw/en/234.html
 image=http://mtgimage.com/card/rootgrapple.jpg
-value=3.273
+value=3.311
 rarity=C
 type=Tribal,Instant
 subtype=Treefolk

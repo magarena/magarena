@@ -1,7 +1,7 @@
 name=Body of Jukai
 url=http://magiccards.info/bok/en/121.html
 image=http://mtgimage.com/card/body%20of%20jukai.jpg
-value=2.605
+value=2.615
 rarity=U
 type=Creature
 subtype=Spirit

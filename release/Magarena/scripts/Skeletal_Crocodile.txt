@@ -1,7 +1,7 @@
 name=Skeletal Crocodile
 url=http://magiccards.info/po/en/33.html
 image=http://mtgimage.com/card/skeletal%20crocodile.jpg
-value=2.429
+value=2.488
 rarity=C
 type=Creature
 subtype=Crocodile,Skeleton

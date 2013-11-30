@@ -1,7 +1,7 @@
 name=Riot Devils
 url=http://magiccards.info/isd/en/160.html
 image=http://mtgimage.com/card/riot%20devils.jpg
-value=2.148
+value=2.145
 rarity=C
 type=Creature
 subtype=Devil

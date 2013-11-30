@@ -1,7 +1,7 @@
 name=Mishra's Factory
 url=http://magiccards.info/ddf/en/73.html
 image=http://mtgimage.com/card/mishra%27s%20factory.jpg
-value=4.642
+value=4.653
 rarity=U
 type=Land
 timing=land

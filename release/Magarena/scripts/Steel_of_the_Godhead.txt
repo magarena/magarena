@@ -1,7 +1,7 @@
 name=Steel of the Godhead
 url=http://magiccards.info/shm/en/150.html
 image=http://mtgimage.com/card/steel%20of%20the%20godhead.jpg
-value=3.958
+value=3.600
 rarity=C
 type=Enchantment
 subtype=Aura

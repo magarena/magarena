@@ -1,7 +1,7 @@
 name=Mirran Mettle
 url=http://magiccards.info/mbs/en/84.html
 image=http://mtgimage.com/card/mirran%20mettle.jpg
-value=3.086
+value=3.085
 rarity=C
 type=Instant
 cost={G}

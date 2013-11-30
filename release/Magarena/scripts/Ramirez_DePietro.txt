@@ -1,7 +1,7 @@
 name=Ramirez DePietro
 url=http://magiccards.info/me3/en/168.html
 image=http://mtgimage.com/card/ramirez%20depietro.jpg
-value=3.375
+value=3.377
 rarity=C
 type=Legendary,Creature
 subtype=Human,Pirate

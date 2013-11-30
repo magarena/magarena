@@ -1,7 +1,7 @@
 name=Woodland Cemetery
 url=http://magiccards.info/isd/en/249.html
 image=http://mtgimage.com/card/woodland%20cemetery.jpg
-value=3.797
+value=3.799
 rarity=R
 type=Land
 mana=b3g3

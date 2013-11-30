@@ -1,7 +1,7 @@
 name=Craterize
 url=http://magiccards.info/m13/en/126.html
 image=http://mtgimage.com/card/craterize.jpg
-value=1.182
+value=1.174
 removal=3
 rarity=C
 type=Sorcery

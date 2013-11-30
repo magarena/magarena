@@ -1,7 +1,7 @@
 name=Angelsong
 url=http://magiccards.info/ala/en/4.html
 image=http://mtgimage.com/card/angelsong.jpg
-value=3.029
+value=3.057
 rarity=C
 type=Instant
 cost={1}{W}

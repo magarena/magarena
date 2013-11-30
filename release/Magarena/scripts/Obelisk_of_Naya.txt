@@ -1,7 +1,7 @@
 name=Obelisk of Naya
 url=http://magiccards.info/ala/en/216.html
 image=http://mtgimage.com/card/obelisk%20of%20naya.jpg
-value=2.214
+value=2.250
 rarity=C
 type=Artifact
 cost={3}

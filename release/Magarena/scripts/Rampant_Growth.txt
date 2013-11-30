@@ -1,7 +1,7 @@
 name=Rampant Growth
 url=http://magiccards.info/m12/en/190.html
 image=http://mtgimage.com/card/rampant%20growth.jpg
-value=4.000
+value=4.006
 rarity=C
 type=Sorcery
 cost={1}{G}

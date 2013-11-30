@@ -1,7 +1,7 @@
 name=Rotted Hystrix
 url=http://magiccards.info/nph/en/120.html
 image=http://mtgimage.com/card/rotted%20hystrix.jpg
-value=2.009
+value=2.018
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,7 +1,7 @@
 name=Crown of Empires
 url=http://magiccards.info/m12/en/203.html
 image=http://mtgimage.com/card/crown%20of%20empires.jpg
-value=3.214
+value=3.230
 rarity=U
 type=Artifact
 cost={2}

@@ -1,7 +1,7 @@
 name=Grave Titan
 url=http://magiccards.info/m12/en/98.html
 image=http://mtgimage.com/card/grave%20titan.jpg
-value=4.475
+value=4.478
 rarity=M
 type=Creature
 subtype=Giant

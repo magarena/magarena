@@ -1,7 +1,7 @@
 name=Frost Titan
 url=http://magiccards.info/m12/en/55.html
 image=http://mtgimage.com/card/frost%20titan.jpg
-value=4.179
+value=4.178
 rarity=M
 type=Creature
 subtype=Giant

@@ -1,7 +1,7 @@
 name=Granger Guildmage
 url=http://magiccards.info/mr/en/118.html
 image=http://mtgimage.com/card/granger%20guildmage.jpg
-value=3.430
+value=3.432
 rarity=C
 type=Creature
 subtype=Human,Wizard

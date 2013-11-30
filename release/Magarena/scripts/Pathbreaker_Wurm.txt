@@ -1,7 +1,7 @@
 name=Pathbreaker Wurm
 url=http://magiccards.info/avr/en/188.html
 image=http://mtgimage.com/card/pathbreaker%20wurm.jpg
-value=3.193
+value=3.250
 rarity=C
 type=Creature
 subtype=Wurm

@@ -1,7 +1,7 @@
 name=Stun
 url=http://magiccards.info/10e/en/240.html
 image=http://mtgimage.com/card/stun.jpg
-value=2.818
+value=2.824
 rarity=C
 type=Instant
 cost={1}{R}

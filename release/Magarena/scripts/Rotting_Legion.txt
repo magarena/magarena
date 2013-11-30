@@ -1,7 +1,7 @@
 name=Rotting Legion
 url=http://magiccards.info/m11/en/115.html
 image=http://mtgimage.com/card/rotting%20legion.jpg
-value=1.890
+value=1.878
 rarity=C
 type=Creature
 subtype=Zombie

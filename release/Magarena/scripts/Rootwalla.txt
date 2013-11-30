@@ -1,7 +1,7 @@
 name=Rootwalla
 url=http://magiccards.info/10e/en/293.html
 image=http://mtgimage.com/card/rootwalla.jpg
-value=2.826
+value=2.848
 rarity=C
 type=Creature
 subtype=Lizard

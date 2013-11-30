@@ -1,7 +1,7 @@
 name=Drifting Meadow
 url=http://magiccards.info/us/en/320.html
 image=http://mtgimage.com/card/drifting%20meadow.jpg
-value=3.704
+value=3.875
 rarity=C
 type=Land
 mana=w3

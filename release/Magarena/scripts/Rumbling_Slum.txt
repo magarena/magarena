@@ -1,7 +1,7 @@
 name=Rumbling Slum
 url=http://magiccards.info/pch/en/93.html
 image=http://mtgimage.com/card/rumbling%20slum.jpg
-value=4.341
+value=4.343
 rarity=R
 type=Creature
 subtype=Elemental

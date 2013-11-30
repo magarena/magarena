@@ -1,7 +1,7 @@
 name=Ichor Rats
 url=http://magiccards.info/som/en/67.html
 image=http://mtgimage.com/card/ichor%20rats.jpg
-value=3.667
+value=3.627
 rarity=U
 type=Creature
 subtype=Rat

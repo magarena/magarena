@@ -1,7 +1,7 @@
 name=Spiraling Duelist
 url=http://magiccards.info/mbs/en/76.html
 image=http://mtgimage.com/card/spiraling%20duelist.jpg
-value=2.309
+value=2.281
 rarity=U
 type=Creature
 subtype=Human,Berserker

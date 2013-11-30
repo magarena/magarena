@@ -1,7 +1,7 @@
 name=Prickly Boggart
 url=http://magiccards.info/mt/en/74.html
 image=http://mtgimage.com/card/prickly%20boggart.jpg
-value=3.836
+value=3.854
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

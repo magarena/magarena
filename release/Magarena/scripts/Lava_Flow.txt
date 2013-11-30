@@ -1,7 +1,7 @@
 name=Lava Flow
 url=http://magiccards.info/me4/en/126.html
 image=http://mtgimage.com/card/lava%20flow.jpg
-value=3.139
+value=3.158
 removal=3
 rarity=C
 type=Sorcery

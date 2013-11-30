@@ -1,7 +1,7 @@
 name=Wooded Foothills
 url=http://magiccards.info/on/en/330.html
 image=http://mtgimage.com/card/wooded%20foothills.jpg
-value=4.640
+value=4.648
 rarity=R
 type=Land
 timing=land

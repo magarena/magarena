@@ -1,7 +1,7 @@
 name=Wake the Reflections
 url=http://magiccards.info/dgm/en/10.html
 image=http://mtgimage.com/card/wake%20the%20reflections.jpg
-value=3.620
+value=3.625
 rarity=C
 type=Sorcery
 cost={W}

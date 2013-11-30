@@ -1,7 +1,7 @@
 name=Fettergeist
 url=http://magiccards.info/avr/en/52.html
 image=http://mtgimage.com/card/fettergeist.jpg
-value=3.245
+value=3.260
 rarity=U
 type=Creature
 subtype=Spirit

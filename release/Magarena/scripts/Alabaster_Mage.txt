@@ -1,7 +1,7 @@
 name=Alabaster Mage
 url=http://magiccards.info/m12/en/2.html
 image=http://mtgimage.com/card/alabaster%20mage.jpg
-value=3.103
+value=3.068
 rarity=U
 type=Creature
 subtype=Human,Wizard

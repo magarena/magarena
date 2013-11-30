@@ -1,7 +1,7 @@
 name=Ink-Eyes, Servant of Oni
 url=http://magiccards.info/bok/en/71.html
 image=http://mtgimage.com/card/ink%2Deyes%2C%20servant%20of%20oni.jpg
-value=4.417
+value=4.395
 rarity=R
 type=Legendary,Creature
 subtype=Rat,Ninja

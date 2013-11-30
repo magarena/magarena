@@ -1,7 +1,7 @@
 name=Carnivorous Plant
 url=http://magiccards.info/med/en/115.html
 image=http://mtgimage.com/card/carnivorous%20plant.jpg
-value=3.019
+value=3.036
 rarity=C
 type=Creature
 subtype=Plant,Wall

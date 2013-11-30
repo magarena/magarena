@@ -1,7 +1,7 @@
 name=Char-Rumbler
 url=http://magiccards.info/fut/en/96.html
 image=http://mtgimage.com/card/char%2Drumbler.jpg
-value=3.424
+value=3.408
 rarity=U
 type=Creature
 subtype=Elemental

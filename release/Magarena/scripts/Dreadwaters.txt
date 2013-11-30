@@ -1,7 +1,7 @@
 name=Dreadwaters
 url=http://magiccards.info/avr/en/49.html
 image=http://mtgimage.com/card/dreadwaters.jpg
-value=2.317
+value=2.290
 rarity=C
 type=Sorcery
 cost={3}{U}

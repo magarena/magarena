@@ -1,7 +1,7 @@
 name=Anger of the Gods
 url=http://magiccards.info/ths/en/112.html
 image=http://mtgimage.com/card/anger%20of%20the%20gods.jpg
-value=4.157
+value=4.162
 removal=3
 rarity=R
 type=Sorcery

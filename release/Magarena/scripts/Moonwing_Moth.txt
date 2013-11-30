@@ -1,7 +1,7 @@
 name=Moonwing Moth
 url=http://magiccards.info/sok/en/20.html
 image=http://mtgimage.com/card/moonwing%20moth.jpg
-value=2.054
+value=2.081
 rarity=C
 type=Creature
 subtype=Insect

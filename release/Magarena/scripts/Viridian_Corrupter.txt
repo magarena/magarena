@@ -1,7 +1,7 @@
 name=Viridian Corrupter
 url=http://magiccards.info/mbs/en/94.html
 image=http://mtgimage.com/card/viridian%20corrupter.jpg
-value=4.104
+value=4.102
 removal=1
 rarity=U
 type=Creature

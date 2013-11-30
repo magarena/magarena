@@ -1,7 +1,7 @@
 name=Dryad Arbor
 url=http://magiccards.info/v12/en/5.html
 image=http://mtgimage.com/card/dryad%20arbor.jpg
-value=4.278
+value=4.291
 rarity=M
 type=Land,Creature
 subtype=Forest,Dryad

@@ -1,7 +1,7 @@
 name=Nacatl Savage
 url=http://magiccards.info/cfx/en/86.html
 image=http://mtgimage.com/card/nacatl%20savage.jpg
-value=2.461
+value=2.423
 rarity=C
 type=Creature
 subtype=Cat,Warrior

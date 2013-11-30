@@ -1,7 +1,7 @@
 name=Mindshrieker
 url=http://magiccards.info/isd/en/67.html
 image=http://mtgimage.com/card/mindshrieker.jpg
-value=4.041
+value=4.034
 rarity=R
 type=Creature
 subtype=Spirit,Bird

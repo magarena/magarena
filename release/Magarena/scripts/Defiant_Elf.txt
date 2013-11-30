@@ -1,7 +1,7 @@
 name=Defiant Elf
 url=http://magiccards.info/le/en/123.html
 image=http://mtgimage.com/card/defiant%20elf.jpg
-value=3.250
+value=3.217
 ability=trample
 rarity=C
 type=Creature

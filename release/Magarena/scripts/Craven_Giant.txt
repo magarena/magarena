@@ -1,7 +1,7 @@
 name=Craven Giant
 url=http://magiccards.info/sh/en/78.html
 image=http://mtgimage.com/card/craven%20giant.jpg
-value=2.943
+value=2.886
 rarity=C
 type=Creature
 subtype=Giant

@@ -1,7 +1,7 @@
 name=Neurok Commando
 url=http://magiccards.info/mbs/en/28.html
 image=http://mtgimage.com/card/neurok%20commando.jpg
-value=3.181
+value=3.177
 rarity=U
 type=Creature
 subtype=Human,Rogue

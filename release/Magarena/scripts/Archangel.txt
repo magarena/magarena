@@ -1,7 +1,7 @@
 name=Archangel
 url=http://magiccards.info/avr/en/5.html
 image=http://mtgimage.com/card/archangel.jpg
-value=3.017
+value=3.550
 rarity=U
 type=Creature
 subtype=Angel

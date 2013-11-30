@@ -1,7 +1,7 @@
 name=Hand of the Praetors
 url=http://magiccards.info/som/en/66.html
 image=http://mtgimage.com/card/hand%20of%20the%20praetors.jpg
-value=4.245
+value=4.227
 rarity=R
 type=Creature
 subtype=Zombie

@@ -1,7 +1,7 @@
 name=Smite the Monstrous
 url=http://magiccards.info/isd/en/33.html
 image=http://mtgimage.com/card/smite%20the%20monstrous.jpg
-value=2.688
+value=2.944
 removal=3
 rarity=C
 type=Instant

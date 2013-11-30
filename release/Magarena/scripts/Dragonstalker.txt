@@ -1,7 +1,7 @@
 name=Dragonstalker
 url=http://magiccards.info/sc/en/11.html
 image=http://mtgimage.com/card/dragonstalker.jpg
-value=2.081
+value=2.108
 ability=flying;protection from Dragons
 rarity=U
 type=Creature

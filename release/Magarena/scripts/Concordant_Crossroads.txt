@@ -1,7 +1,7 @@
 name=Concordant Crossroads
 url=http://magiccards.info/me3/en/114.html
 image=http://mtgimage.com/card/concordant%20crossroads.jpg
-value=4.597
+value=4.603
 rarity=R
 type=World,Enchantment
 cost={G}

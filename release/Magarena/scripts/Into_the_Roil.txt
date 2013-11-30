@@ -1,7 +1,7 @@
 name=Into the Roil
 url=http://magiccards.info/zen/en/48.html
 image=http://mtgimage.com/card/into%20the%20roil.jpg
-value=4.258
+value=4.256
 removal=2
 rarity=C
 type=Instant

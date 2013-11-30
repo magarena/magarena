@@ -1,7 +1,7 @@
 name=Riverfall Mimic
 url=http://magiccards.info/eve/en/111.html
 image=http://mtgimage.com/card/riverfall%20mimic.jpg
-value=3.466
+value=3.408
 rarity=C
 type=Creature
 subtype=Shapeshifter

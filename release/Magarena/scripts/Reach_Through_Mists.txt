@@ -1,7 +1,7 @@
 name=Reach Through Mists
 url=http://magiccards.info/mma/en/61.html
 image=http://mtgimage.com/card/reach%20through%20mists.jpg
-value=2.938
+value=2.917
 rarity=C
 type=Instant
 subtype=Arcane

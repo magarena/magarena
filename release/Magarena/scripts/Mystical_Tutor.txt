@@ -1,7 +1,7 @@
 name=Mystical Tutor
 url=http://magiccards.info/fve/en/8.html
 image=http://mtgimage.com/card/mystical%20tutor.jpg
-value=4.640
+value=4.638
 rarity=M
 type=Instant
 cost={U}

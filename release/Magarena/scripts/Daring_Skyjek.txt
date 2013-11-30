@@ -1,7 +1,7 @@
 name=Daring Skyjek
 url=http://magiccards.info/gtc/en/9.html
 image=http://mtgimage.com/card/daring%20skyjek.jpg
-value=3.299
+value=3.312
 rarity=C
 type=Creature
 subtype=Human,Knight

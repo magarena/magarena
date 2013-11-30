@@ -1,7 +1,7 @@
 name=Maritime Guard
 url=http://magiccards.info/m11/en/63.html
 image=http://mtgimage.com/card/maritime%20guard.jpg
-value=2.411
+value=2.399
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier

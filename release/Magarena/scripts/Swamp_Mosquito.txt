@@ -1,7 +1,7 @@
 name=Swamp Mosquito
 url=http://magiccards.info/ai/en/30.html
 image=http://mtgimage.com/card/swamp%20mosquito.jpg
-value=3.707
+value=3.631
 rarity=C
 type=Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Hands of Binding
 url=http://magiccards.info/gtc/en/37.html
 image=http://mtgimage.com/card/hands%20of%20binding.jpg
-value=3.482
+value=3.512
 rarity=C
 type=Sorcery
 cost={1}{U}

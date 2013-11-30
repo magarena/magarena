@@ -1,7 +1,7 @@
 name=Pillory of the Sleepless
 url=http://magiccards.info/gp/en/125.html
 image=http://mtgimage.com/card/pillory%20of%20the%20sleepless.jpg
-value=4.189
+value=4.195
 removal=4
 rarity=C
 type=Enchantment

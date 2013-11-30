@@ -1,7 +1,7 @@
 name=Diabolic Machine
 url=http://magiccards.info/me4/en/196.html
 image=http://mtgimage.com/card/diabolic%20machine.jpg
-value=2.250
+value=2.220
 rarity=U
 type=Artifact,Creature
 subtype=Construct

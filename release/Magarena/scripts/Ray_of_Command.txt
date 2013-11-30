@@ -1,7 +1,7 @@
 name=Ray of Command
 url=http://magiccards.info/cmd/en/56.html
 image=http://mtgimage.com/card/ray%20of%20command.jpg
-value=3.922
+value=3.955
 removal=5
 rarity=U
 type=Instant

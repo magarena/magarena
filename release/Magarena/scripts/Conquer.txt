@@ -1,7 +1,7 @@
 name=Conquer
 url=http://magiccards.info/me2/en/122.html
 image=http://mtgimage.com/card/conquer.jpg
-value=2.532
+value=2.516
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Ogre Menial
 url=http://magiccards.info/nph/en/89.html
 image=http://mtgimage.com/card/ogre%20menial.jpg
-value=3.000
+value=3.016
 rarity=C
 type=Creature
 subtype=Ogre

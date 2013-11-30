@@ -1,7 +1,7 @@
 name=Hussar Patrol
 url=http://magiccards.info/rtr/en/169.html
 image=http://mtgimage.com/card/hussar%20patrol.jpg
-value=3.204
+value=3.209
 rarity=C
 type=Creature
 subtype=Human,Knight

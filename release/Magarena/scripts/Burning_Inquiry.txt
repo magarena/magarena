@@ -1,7 +1,7 @@
 name=Burning Inquiry
 url=http://magiccards.info/m10/en/128.html
 image=http://mtgimage.com/card/burning%20inquiry.jpg
-value=3.926
+value=3.932
 rarity=C
 type=Sorcery
 cost={R}

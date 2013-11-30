@@ -1,7 +1,7 @@
 name=Angelic Edict
 url=http://magiccards.info/gtc/en/2.html
 image=http://mtgimage.com/card/angelic%20edict.jpg
-value=2.763
+value=2.746
 rarity=C
 type=Sorcery
 cost={4}{W}

@@ -1,7 +1,7 @@
 name=Death's Caress
 url=http://magiccards.info/dka/en/59.html
 image=http://mtgimage.com/card/death%27s%20caress.jpg
-value=1.324
+value=1.333
 removal=3
 rarity=C
 type=Sorcery

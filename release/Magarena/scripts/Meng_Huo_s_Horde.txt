@@ -1,7 +1,7 @@
 name=Meng Huo's Horde
 url=http://magiccards.info/me3/en/129.html
 image=http://mtgimage.com/card/meng%20huo%27s%20horde.jpg
-value=2.114
+value=2.109
 rarity=C
 type=Creature
 subtype=Human,Soldier

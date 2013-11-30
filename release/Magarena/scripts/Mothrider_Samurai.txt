@@ -1,7 +1,7 @@
 name=Mothrider Samurai
 url=http://magiccards.info/chk/en/34.html
 image=http://mtgimage.com/card/mothrider%20samurai.jpg
-value=2.845
+value=2.833
 rarity=C
 type=Creature
 subtype=Human,Samurai

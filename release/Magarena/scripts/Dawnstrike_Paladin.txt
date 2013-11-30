@@ -1,7 +1,7 @@
 name=Dawnstrike Paladin
 url=http://magiccards.info/m14/en/15.html
 image=http://mtgimage.com/card/dawnstrike%20paladin.jpg
-value=2.944
+value=2.950
 rarity=C
 type=Creature
 subtype=Human,Knight

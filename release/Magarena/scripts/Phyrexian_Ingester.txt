@@ -1,7 +1,7 @@
 name=Phyrexian Ingester
 url=http://magiccards.info/nph/en/41.html
 image=http://mtgimage.com/card/phyrexian%20ingester.jpg
-value=3.698
+value=3.709
 rarity=R
 type=Creature
 subtype=Beast

@@ -1,7 +1,7 @@
 name=Sporecap Spider
 url=http://magiccards.info/roe/en/209.html
 image=http://mtgimage.com/card/sporecap%20spider.jpg
-value=3.250
+value=3.280
 ability=reach
 rarity=C
 type=Creature

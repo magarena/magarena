@@ -1,7 +1,7 @@
 name=Wall of Tears
 url=http://magiccards.info/sh/en/50.html
 image=http://mtgimage.com/card/wall%20of%20tears.jpg
-value=4.456
+value=4.466
 rarity=U
 type=Creature
 subtype=Wall

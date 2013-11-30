@@ -1,7 +1,7 @@
 name=Kavu Titan
 url=http://magiccards.info/in/en/194.html
 image=http://mtgimage.com/card/kavu%20titan.jpg
-value=4.486
+value=4.480
 rarity=R
 type=Creature
 subtype=Kavu

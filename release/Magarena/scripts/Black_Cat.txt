@@ -1,7 +1,7 @@
 name=Black Cat
 url=http://magiccards.info/dka/en/54.html
 image=http://mtgimage.com/card/black%20cat.jpg
-value=3.973
+value=3.970
 rarity=C
 type=Creature
 subtype=Zombie,Cat

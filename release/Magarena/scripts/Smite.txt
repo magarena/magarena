@@ -1,7 +1,7 @@
 name=Smite
 url=http://magiccards.info/roe/en/43.html
 image=http://mtgimage.com/card/smite.jpg
-value=4.038
+value=4.043
 removal=3
 rarity=C
 type=Instant

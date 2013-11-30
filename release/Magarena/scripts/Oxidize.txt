@@ -1,7 +1,7 @@
 name=Oxidize
 url=http://magiccards.info/ds/en/79.html
 image=http://mtgimage.com/card/oxidize.jpg
-value=4.342
+value=4.287
 removal=1
 rarity=U
 type=Instant

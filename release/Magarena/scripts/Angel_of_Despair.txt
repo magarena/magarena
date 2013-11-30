@@ -1,7 +1,7 @@
 name=Angel of Despair
 url=http://magiccards.info/cmd/en/180.html
 image=http://mtgimage.com/card/angel%20of%20despair.jpg
-value=4.376
+value=4.383
 removal=4
 rarity=R
 type=Creature

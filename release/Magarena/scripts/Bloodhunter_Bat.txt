@@ -1,7 +1,7 @@
 name=Bloodhunter Bat
 url=http://magiccards.info/m13/en/82.html
 image=http://mtgimage.com/card/bloodhunter%20bat.jpg
-value=2.500
+value=2.802
 rarity=C
 type=Creature
 subtype=Bat

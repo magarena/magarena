@@ -1,7 +1,7 @@
 name=All Is Dust
 url=http://magiccards.info/roe/en/1.html
 image=http://mtgimage.com/card/all%20is%20dust.jpg
-value=4.477
+value=4.482
 rarity=M
 type=Tribal,Sorcery
 subtype=Eldrazi

@@ -1,7 +1,7 @@
 name=Goblin Marshal
 url=http://magiccards.info/ud/en/85.html
 image=http://mtgimage.com/card/goblin%20marshal.jpg
-value=3.045
+value=3.067
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

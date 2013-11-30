@@ -1,7 +1,7 @@
 name=Rod of Ruin
 url=http://magiccards.info/m14/en/217.html
 image=http://mtgimage.com/card/rod%20of%20ruin.jpg
-value=1.212
+value=1.209
 rarity=U
 type=Artifact
 cost={4}

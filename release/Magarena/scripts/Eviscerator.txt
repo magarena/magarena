@@ -1,7 +1,7 @@
 name=Eviscerator
 url=http://magiccards.info/ul/en/52.html
 image=http://mtgimage.com/card/eviscerator.jpg
-value=3.011
+value=3.033
 rarity=R
 type=Creature
 subtype=Horror

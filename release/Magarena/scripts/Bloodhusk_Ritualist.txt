@@ -1,7 +1,7 @@
 name=Bloodhusk Ritualist
 url=http://magiccards.info/wwk/en/50.html
 image=http://mtgimage.com/card/bloodhusk%20ritualist.jpg
-value=3.731
+value=3.734
 rarity=U
 type=Creature
 subtype=Vampire,Shaman

@@ -1,7 +1,7 @@
 name=Tree of Tales
 url=http://magiccards.info/pch/en/140.html
 image=http://mtgimage.com/card/tree%20of%20tales.jpg
-value=4.243
+value=4.145
 rarity=C
 type=Artifact,Land
 mana=g4

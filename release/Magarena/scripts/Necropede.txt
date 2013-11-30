@@ -1,7 +1,7 @@
 name=Necropede
 url=http://magiccards.info/som/en/185.html
 image=http://mtgimage.com/card/necropede.jpg
-value=3.640
+value=3.619
 rarity=U
 type=Artifact,Creature
 subtype=Insect

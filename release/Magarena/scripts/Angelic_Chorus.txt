@@ -1,7 +1,7 @@
 name=Angelic Chorus
 url=http://magiccards.info/10e/en/4.html
 image=http://mtgimage.com/card/angelic%20chorus.jpg
-value=4.134
+value=4.132
 rarity=R
 type=Enchantment
 cost={3}{W}{W}

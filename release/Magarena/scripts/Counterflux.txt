@@ -1,7 +1,7 @@
 name=Counterflux
 url=http://magiccards.info/rtr/en/153.html
 image=http://mtgimage.com/card/counterflux.jpg
-value=3.636
+value=3.629
 rarity=R
 type=Instant
 cost={U}{U}{R}

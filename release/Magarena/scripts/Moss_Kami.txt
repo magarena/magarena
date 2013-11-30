@@ -1,7 +1,7 @@
 name=Moss Kami
 url=http://magiccards.info/chk/en/228.html
 image=http://mtgimage.com/card/moss%20kami.jpg
-value=2.906
+value=2.859
 ability=trample
 rarity=C
 type=Creature

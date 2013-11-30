@@ -1,7 +1,7 @@
 name=Wirewood Savage
 url=http://magiccards.info/gvl/en/6.html
 image=http://mtgimage.com/card/wirewood%20savage.jpg
-value=4.069
+value=4.085
 rarity=C
 type=Creature
 subtype=Elf

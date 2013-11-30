@@ -1,7 +1,7 @@
 name=Mythic Proportions
 url=http://magiccards.info/on/en/274.html
 image=http://mtgimage.com/card/mythic%20proportions.jpg
-value=3.616
+value=3.625
 rarity=R
 type=Enchantment
 subtype=Aura

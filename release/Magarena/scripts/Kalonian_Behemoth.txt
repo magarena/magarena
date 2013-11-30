@@ -1,7 +1,7 @@
 name=Kalonian Behemoth
 url=http://magiccards.info/m10/en/188.html
 image=http://mtgimage.com/card/kalonian%20behemoth.jpg
-value=4.132
+value=4.137
 rarity=R
 type=Creature
 subtype=Beast

@@ -1,7 +1,7 @@
 name=Roc Egg
 url=http://magiccards.info/m12/en/32.html
 image=http://mtgimage.com/card/roc%20egg.jpg
-value=3.110
+value=3.143
 rarity=U
 type=Creature
 subtype=Bird

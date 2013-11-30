@@ -1,7 +1,7 @@
 name=Knight of the Skyward Eye
 url=http://magiccards.info/ala/en/15.html
 image=http://mtgimage.com/card/knight%20of%20the%20skyward%20eye.jpg
-value=3.000
+value=2.984
 rarity=C
 type=Creature
 subtype=Human,Knight

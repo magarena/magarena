@@ -1,7 +1,7 @@
 name=Flashfires
 url=http://magiccards.info/9e/en/183.html
 image=http://mtgimage.com/card/flashfires.jpg
-value=3.837
+value=3.840
 rarity=U
 type=Sorcery
 cost={3}{R}

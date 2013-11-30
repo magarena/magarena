@@ -1,7 +1,7 @@
 name=Ordruun Veteran
 url=http://magiccards.info/gtc/en/184.html
 image=http://mtgimage.com/card/ordruun%20veteran.jpg
-value=2.775
+value=2.817
 rarity=U
 type=Creature
 subtype=Minotaur,Soldier

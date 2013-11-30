@@ -1,7 +1,7 @@
 name=Ulamog, the Infinite Gyre
 url=http://magiccards.info/roe/en/12.html
 image=http://mtgimage.com/card/ulamog%2C%20the%20infinite%20gyre.jpg
-value=4.193
+value=4.201
 removal=3
 rarity=M
 type=Legendary,Creature

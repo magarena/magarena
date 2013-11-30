@@ -1,7 +1,7 @@
 name=Keiga, the Tide Star
 url=http://magiccards.info/chk/en/72.html
 image=http://mtgimage.com/card/keiga%2C%20the%20tide%20star.jpg
-value=4.333
+value=4.364
 rarity=R
 type=Legendary,Creature
 subtype=Dragon,Spirit

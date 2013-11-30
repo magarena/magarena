@@ -1,7 +1,7 @@
 name=Terramorphic Expanse
 url=http://magiccards.info/mma/en/224.html
 image=http://mtgimage.com/card/terramorphic%20expanse.jpg
-value=3.682
+value=4.000
 rarity=C
 type=Land
 timing=land

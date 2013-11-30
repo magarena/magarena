@@ -1,7 +1,7 @@
 name=Vision Skeins
 url=http://magiccards.info/cmd/en/67.html
 image=http://mtgimage.com/card/vision%20skeins.jpg
-value=2.596
+value=3.500
 rarity=C
 type=Instant
 cost={1}{U}

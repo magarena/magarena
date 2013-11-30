@@ -1,7 +1,7 @@
 name=Guardian Seraph
 url=http://magiccards.info/m10/en/13.html
 image=http://mtgimage.com/card/guardian%20seraph.jpg
-value=4.303
+value=4.300
 rarity=R
 type=Creature
 subtype=Angel

@@ -1,7 +1,7 @@
 name=Sentry of the Underworld
 url=http://magiccards.info/ths/en/202.html
 image=http://mtgimage.com/card/sentry%20of%20the%20underworld.jpg
-value=2.500
+value=3.438
 rarity=U
 type=Creature
 subtype=Griffin,Skeleton

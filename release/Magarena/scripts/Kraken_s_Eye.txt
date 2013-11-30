@@ -1,7 +1,7 @@
 name=Kraken's Eye
 url=http://magiccards.info/m12/en/211.html
 image=http://mtgimage.com/card/kraken%27s%20eye.jpg
-value=1.857
+value=1.860
 rarity=U
 type=Artifact
 cost={2}

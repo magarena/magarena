@@ -1,7 +1,7 @@
 name=Bog Raiders
 url=http://magiccards.info/m11/en/86.html
 image=http://mtgimage.com/card/bog%20raiders.jpg
-value=3.163
+value=3.140
 ability=swampwalk
 rarity=C
 type=Creature

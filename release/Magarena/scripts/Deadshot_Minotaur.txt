@@ -1,7 +1,7 @@
 name=Deadshot Minotaur
 url=http://magiccards.info/arb/en/52.html
 image=http://mtgimage.com/card/deadshot%20minotaur.jpg
-value=2.961
+value=2.954
 rarity=C
 type=Creature
 subtype=Minotaur

@@ -1,7 +1,7 @@
 name=Bloodflow Connoisseur
 url=http://magiccards.info/avr/en/87.html
 image=http://mtgimage.com/card/bloodflow%20connoisseur.jpg
-value=2.936
+value=2.938
 rarity=C
 type=Creature
 subtype=Vampire

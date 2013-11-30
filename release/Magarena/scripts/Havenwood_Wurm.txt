@@ -1,7 +1,7 @@
 name=Havenwood Wurm
 url=http://magiccards.info/ts/en/199.html
 image=http://mtgimage.com/card/havenwood%20wurm.jpg
-value=3.153
+value=3.081
 ability=flash;trample
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Halt Order
 url=http://magiccards.info/som/en/34.html
 image=http://mtgimage.com/card/halt%20order.jpg
-value=2.688
+value=2.694
 rarity=U
 type=Instant
 cost={2}{U}

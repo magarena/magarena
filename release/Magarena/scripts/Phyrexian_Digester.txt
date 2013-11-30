@@ -1,7 +1,7 @@
 name=Phyrexian Digester
 url=http://magiccards.info/mbs/en/120.html
 image=http://mtgimage.com/card/phyrexian%20digester.jpg
-value=2.065
+value=2.102
 ability=infect
 rarity=C
 type=Artifact,Creature

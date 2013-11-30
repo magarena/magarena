@@ -1,7 +1,7 @@
 name=Inkwell Leviathan
 url=http://magiccards.info/cfx/en/30.html
 image=http://mtgimage.com/card/inkwell%20leviathan.jpg
-value=4.639
+value=4.643
 ability=islandwalk;trample;shroud
 rarity=R
 type=Artifact,Creature

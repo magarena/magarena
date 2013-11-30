@@ -1,7 +1,7 @@
 name=Rakdos Shred-Freak
 url=http://magiccards.info/rtr/en/221.html
 image=http://mtgimage.com/card/rakdos%20shred%2Dfreak.jpg
-value=3.435
+value=3.418
 ability=haste
 rarity=C
 type=Creature

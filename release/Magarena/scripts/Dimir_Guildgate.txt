@@ -1,7 +1,7 @@
 name=Dimir Guildgate
 url=http://magiccards.info/gtc/en/241.html
 image=http://mtgimage.com/card/dimir%20guildgate.jpg
-value=3.386
+value=3.500
 rarity=C
 type=Land
 subtype=Gate

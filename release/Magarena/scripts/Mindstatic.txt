@@ -1,7 +1,7 @@
 name=Mindstatic
 url=http://magiccards.info/dgm/en/14.html
 image=http://mtgimage.com/card/mindstatic.jpg
-value=1.633
+value=1.588
 rarity=C
 type=Instant
 cost={3}{U}

@@ -1,7 +1,7 @@
 name=Colossal Might
 url=http://magiccards.info/cmd/en/190.html
 image=http://mtgimage.com/card/colossal%20might.jpg
-value=2.786
+value=2.830
 rarity=C
 type=Instant
 cost={R}{G}

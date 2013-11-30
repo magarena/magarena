@@ -1,7 +1,7 @@
 name=Crescendo of War
 url=http://magiccards.info/cmd/en/12.html
 image=http://mtgimage.com/card/crescendo%20of%20war.jpg
-value=3.578
+value=3.621
 rarity=R
 type=Enchantment
 cost={3}{W}

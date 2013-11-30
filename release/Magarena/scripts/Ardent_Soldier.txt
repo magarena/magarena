@@ -1,7 +1,7 @@
 name=Ardent Soldier
 url=http://magiccards.info/in/en/3.html
 image=http://mtgimage.com/card/ardent%20soldier.jpg
-value=2.683
+value=2.631
 rarity=C
 type=Creature
 subtype=Human,Soldier

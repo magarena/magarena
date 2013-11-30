@@ -1,7 +1,7 @@
 name=Barbed Battlegear
 url=http://magiccards.info/som/en/139.html
 image=http://mtgimage.com/card/barbed%20battlegear.jpg
-value=2.900
+value=2.902
 rarity=U
 type=Artifact
 subtype=Equipment

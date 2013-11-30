@@ -1,7 +1,7 @@
 name=Satyr Rambler
 url=http://magiccards.info/ths/en/139.html
 image=http://mtgimage.com/card/satyr%20rambler.jpg
-value=3.396
+value=3.288
 rarity=C
 type=Creature
 subtype=Satyr

@@ -1,7 +1,7 @@
 name=Glimmervoid
 url=http://magiccards.info/mi/en/281.html
 image=http://mtgimage.com/card/glimmervoid.jpg
-value=4.500
+value=4.529
 rarity=R
 type=Land
 ability=tap add mana any

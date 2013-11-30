@@ -1,7 +1,7 @@
 name=Mwonvuli Ooze
 url=http://magiccards.info/wl/en/77.html
 image=http://mtgimage.com/card/mwonvuli%20ooze.jpg
-value=2.438
+value=2.379
 rarity=R
 type=Creature
 subtype=Ooze

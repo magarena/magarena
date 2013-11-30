@@ -1,7 +1,7 @@
 name=Bramble Creeper
 url=http://magiccards.info/m10/en/171.html
 image=http://mtgimage.com/card/bramble%20creeper.jpg
-value=2.131
+value=2.124
 rarity=C
 type=Creature
 subtype=Elemental

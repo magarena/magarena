@@ -1,7 +1,7 @@
 name=Drogskol Reaver
 url=http://magiccards.info/dka/en/137.html
 image=http://mtgimage.com/card/drogskol%20reaver.jpg
-value=3.886
+value=3.890
 rarity=M
 type=Creature
 subtype=Spirit

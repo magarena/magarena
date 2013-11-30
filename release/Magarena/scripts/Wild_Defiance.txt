@@ -1,7 +1,7 @@
 name=Wild Defiance
 url=http://magiccards.info/avr/en/203.html
 image=http://mtgimage.com/card/wild%20defiance.jpg
-value=3.776
+value=3.779
 rarity=R
 type=Enchantment
 cost={2}{G}

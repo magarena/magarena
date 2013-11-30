@@ -1,7 +1,7 @@
 name=Triton Shorethief
 url=http://magiccards.info/ths/en/70.html
 image=http://mtgimage.com/card/triton%20shorethief.jpg
-value=2.655
+value=2.703
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

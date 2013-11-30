@@ -1,7 +1,7 @@
 name=Avian Changeling
 url=http://magiccards.info/lw/en/4.html
 image=http://mtgimage.com/card/avian%20changeling.jpg
-value=3.250
+value=3.294
 ability=changeling;flying
 rarity=C
 type=Creature

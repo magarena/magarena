@@ -1,7 +1,7 @@
 name=Kiln Fiend
 url=http://magiccards.info/ddj/en/2.html
 image=http://mtgimage.com/card/kiln%20fiend.jpg
-value=4.468
+value=4.469
 rarity=C
 type=Creature
 subtype=Elemental,Beast

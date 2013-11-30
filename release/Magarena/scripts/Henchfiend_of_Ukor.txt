@@ -1,7 +1,7 @@
 name=Henchfiend of Ukor
 url=http://magiccards.info/fut/en/117.html
 image=http://mtgimage.com/card/henchfiend%20of%20ukor.jpg
-value=2.536
+value=2.552
 rarity=C
 type=Creature
 subtype=Ogre

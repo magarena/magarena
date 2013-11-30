@@ -1,7 +1,7 @@
 name=Mutilate
 url=http://magiccards.info/m13/en/102.html
 image=http://mtgimage.com/card/mutilate.jpg
-value=4.528
+value=4.537
 removal=3
 rarity=R
 type=Sorcery

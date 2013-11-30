@@ -1,7 +1,7 @@
 name=Woebearer
 url=http://magiccards.info/mi/en/83.html
 image=http://mtgimage.com/card/woebearer.jpg
-value=3.823
+value=3.797
 rarity=U
 type=Creature
 subtype=Zombie

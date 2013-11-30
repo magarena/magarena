@@ -1,7 +1,7 @@
 name=Kavu Predator
 url=http://magiccards.info/pc/en/132.html
 image=http://mtgimage.com/card/kavu%20predator.jpg
-value=4.441
+value=4.474
 rarity=U
 type=Creature
 subtype=Kavu
