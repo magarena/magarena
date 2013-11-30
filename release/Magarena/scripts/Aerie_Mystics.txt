@@ -1,6 +1,6 @@
 name=Aerie Mystics
 url=http://magiccards.info/cfx/en/1.html
-image=http://magiccards.info/scans/en/cfx/1.jpg
+image=http://mtgimage.com/card/aerie%20mystics.jpg
 value=3.667
 rarity=U
 type=Creature

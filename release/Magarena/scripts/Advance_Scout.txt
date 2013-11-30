@@ -1,6 +1,6 @@
 name=Advance Scout
 url=http://magiccards.info/tp/en/213.html
-image=http://magiccards.info/scans/en/tp/213.jpg
+image=http://mtgimage.com/card/advance%20scout.jpg
 value=3.635
 rarity=C
 type=Creature

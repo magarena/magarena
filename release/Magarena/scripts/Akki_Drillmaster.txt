@@ -1,6 +1,6 @@
 name=Akki Drillmaster
 url=http://magiccards.info/sok/en/92.html
-image=http://magiccards.info/scans/en/sok/92.jpg
+image=http://mtgimage.com/card/akki%20drillmaster.jpg
 value=2.829
 rarity=C
 type=Creature
