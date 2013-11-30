@@ -1,0 +1,11 @@
+name=Aerie Mystics
+url=http://magiccards.info/cfx/en/1.html
+image=http://magiccards.info/scans/en/cfx/1.jpg
+value=3.667
+rarity=U
+type=Creature
+subtype=Bird,Wizard
+cost={4}{W}
+pt=3/3
+ability=flying;pay {1}{G}{U}:Creatures PN controls gain shroud until end of turn.
+timing=main

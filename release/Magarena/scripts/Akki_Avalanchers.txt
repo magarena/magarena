@@ -1,0 +1,11 @@
+name=Akki Avalanchers
+url=http://magiccards.info/chk/en/151.html
+image=http://magiccards.info/scans/en/chk/151.jpg
+value=2.293
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={R}
+pt=1/1
+ability=pay {O},Sacrifice a land:SN gets +2/+0 until end of turn.
+timing=main
