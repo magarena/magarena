@@ -1,6 +1,6 @@
 name=Zephyr Charge
 url=http://magiccards.info/m14/en/82.html
-image=http://magiccards.info/scans/en/m14/82.jpg
+image=http://mtgimage.com/card/zephyr%20charge.jpg
 value=3.520
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Heart Warden
 url=http://magiccards.info/ud/en/108.html
-image=http://magiccards.info/scans/en/ud/108.jpg
+image=http://mtgimage.com/card/heart%20warden.jpg
 value=4.107
 rarity=C
 type=Creature

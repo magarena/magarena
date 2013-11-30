@@ -1,6 +1,6 @@
 name=Gerrard's Battle Cry
 url=http://magiccards.info/tp/en/233.html
-image=http://magiccards.info/scans/en/tp/233.jpg
+image=http://mtgimage.com/card/gerrard%27s%20battle%20cry.jpg
 value=4.025
 rarity=R
 type=Enchantment

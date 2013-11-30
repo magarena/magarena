@@ -1,6 +1,6 @@
 name=Goblin Trenches
 url=http://magiccards.info/ap/en/104.html
-image=http://magiccards.info/scans/en/ap/104.jpg
+image=http://mtgimage.com/card/goblin%20trenches.jpg
 value=4.250
 rarity=R
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Choke
 url=http://magiccards.info/8e/en/237.html
-image=http://magiccards.info/scans/en/8e/237.jpg
+image=http://mtgimage.com/card/choke.jpg
 value=3.833
 rarity=U
 type=Enchantment
