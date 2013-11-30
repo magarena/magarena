@@ -1,0 +1,9 @@
+name=Tempered Steel
+url=http://magiccards.info/som/en/24.html
+image=http://magiccards.info/scans/en/som/24.jpg
+value=4.099
+rarity=R
+type=Enchantment
+cost={1}{W}{W}
+ability=lord artifact creatures you control get +2/+2
+timing=enchantment

@@ -1,0 +1,11 @@
+name=Nissa's Chosen
+url=http://magiccards.info/zen/en/171.html
+image=http://magiccards.info/scans/en/zen/171.jpg
+value=4.049
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={G}{G}
+pt=2/3
+timing=main
+requires_groovy_code
