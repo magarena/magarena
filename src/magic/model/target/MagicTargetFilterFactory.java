@@ -23,6 +23,7 @@ public class MagicTargetFilterFactory {
         // used by lord ability
         factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
         factory.put("nonbasic lands", TARGET_NONBASIC_LAND);
+        factory.put("islands", TARGET_ISLAND);
         factory.put("permanents you control", TARGET_PERMANENT_YOU_CONTROL);
         factory.put("artifacts you control", TARGET_ARTIFACT_YOU_CONTROL);
         factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
