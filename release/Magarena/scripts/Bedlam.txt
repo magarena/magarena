@@ -5,5 +5,5 @@ value=4.120
 rarity=R
 type=Enchantment
 cost={2}{R}{R}
-ability=lord All creatures have can't block.
+ability=lord all creatures have can't block
 timing=enchantment
