@@ -14,12 +14,11 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                    if (event.isBuyback()) {
-                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    }
+            event.processTargetPermanent(game, {
+                final MagicPermanent permanent ->
+                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                if (event.isBuyback()) {
+                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }
             });
         }

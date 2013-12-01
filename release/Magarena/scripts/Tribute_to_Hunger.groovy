@@ -1,11 +1,10 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    event.processTargetPermanent(game,new MagicPermanentAction() {
-        public void doAction(final MagicPermanent permanent) {
-            game.doAction(new MagicSacrificeAction(permanent));
-            final int toughness = permanent.getToughness();
-            game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),toughness));
-        }
+    event.processTargetPermanent(game, {
+        final MagicPermanent permanent ->
+        game.doAction(new MagicSacrificeAction(permanent));
+        final int toughness = permanent.getToughness();
+        game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),toughness));
     });
 }
 

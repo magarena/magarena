@@ -16,12 +16,11 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final int toughness=creature.getToughness();
-                    game.doAction(new MagicSacrificeAction(creature));
-                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                final int toughness=creature.getToughness();
+                game.doAction(new MagicSacrificeAction(creature));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
             });
         }
     }

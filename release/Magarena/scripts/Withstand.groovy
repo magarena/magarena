@@ -13,11 +13,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    game.doAction(new MagicPreventDamageAction(target,3));
-                    game.doAction(new MagicDrawAction(event.getPlayer()));
-                }
+            event.processTarget(game, {
+                final MagicTarget target ->
+                game.doAction(new MagicPreventDamageAction(target,3));
+                game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }
     }
