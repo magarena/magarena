@@ -33,15 +33,14 @@ def ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if(event.isYes()){
-                event.processTargetCard(game,new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                        game.doAction(new MagicPlayCardAction(
-                            card,
-                            event.getPlayer(), 
-                            [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING]
-                        ));
-                    }
+                event.processTargetCard(game, {
+                    final MagicCard card ->
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+                    game.doAction(new MagicPlayCardAction(
+                        card,
+                        event.getPlayer(), 
+                        [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING]
+                    ));
                 });
             }
         }
