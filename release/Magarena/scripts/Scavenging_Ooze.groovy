@@ -22,29 +22,28 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    game.doAction(new MagicRemoveCardAction(
-                        card,
-                        MagicLocationType.Graveyard
+            event.processTargetCard(game, {
+                final MagicCard card ->
+                game.doAction(new MagicRemoveCardAction(
+                    card,
+                    MagicLocationType.Graveyard
+                ));
+                game.doAction(new MagicMoveCardAction(
+                    card,
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.Exile
+                ));
+                if (card.hasType(MagicType.Creature)) {
+                    game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        MagicCounterType.PlusOne,
+                        1,
+                        true
                     ));
-                    game.doAction(new MagicMoveCardAction(
-                        card,
-                        MagicLocationType.Graveyard,
-                        MagicLocationType.Exile
+                    game.doAction(new MagicChangeLifeAction(
+                        event.getPlayer(),
+                        1
                     ));
-                    if (card.hasType(MagicType.Creature)) {
-                        game.doAction(new MagicChangeCountersAction(
-                            event.getPermanent(),
-                            MagicCounterType.PlusOne,
-                            1,
-                            true
-                        ));
-                        game.doAction(new MagicChangeLifeAction(
-                            event.getPlayer(),
-                            1
-                        ));
-                    }
                 }
             });
         }

@@ -1,13 +1,12 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    event.processTargetCard(game,new MagicCardAction() {
-        public void doAction(final MagicCard card) {
-            game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                event.getPermanent(),
-                card,
-                MagicLocationType.OwnersHand
-            ));
-        }
+    event.processTargetCard(game, {
+        final MagicCard card ->
+        game.doAction(new MagicExileUntilThisLeavesPlayAction(
+            event.getPermanent(),
+            card,
+            MagicLocationType.OwnersHand
+        ));
     });
 }
 
