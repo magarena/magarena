@@ -13,10 +13,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent land) {
-                        game.doAction(new MagicSacrificeAction(land));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent land ->
+                    game.doAction(new MagicSacrificeAction(land));
                 });
             } else {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
