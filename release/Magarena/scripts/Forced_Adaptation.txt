@@ -1,7 +1,7 @@
 name=Forced Adaptation
 url=http://magiccards.info/gtc/en/120.html
-image=http://magiccards.info/scans/en/gtc/120.jpg
-value=3.117
+image=http://mtgimage.com/card/forced%20adaptation.jpg
+value=3.060
 rarity=C
 type=Enchantment
 subtype=Aura

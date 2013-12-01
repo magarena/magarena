@@ -10,7 +10,7 @@ def EventAction = {
     );
     game.addEvent(search);
     game.addEvent(search);
-} as MagicEventAction;
+};
 
 def Event = {
     final MagicPermanent permanent ->

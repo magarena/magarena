@@ -1,6 +1,6 @@
 name=Striped Bears
 url=http://magiccards.info/wl/en/82.html
-image=http://magiccards.info/scans/en/wl/82.jpg
+image=http://mtgimage.com/card/striped%20bears.jpg
 value=3.091
 rarity=C
 type=Creature

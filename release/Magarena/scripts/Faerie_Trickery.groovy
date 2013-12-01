@@ -24,10 +24,9 @@ def NEG_TARGET_NON_FAERIE_SPELL = new MagicTargetChoice(
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack targetSpell) {
-                    game.doAction(new MagicCounterItemOnStackAction(targetSpell, MagicLocationType.Exile));
-                }
+            event.processTargetCardOnStack(game, {
+                final MagicCardOnStack targetSpell ->
+                game.doAction(new MagicCounterItemOnStackAction(targetSpell, MagicLocationType.Exile));
             });
         }
     }

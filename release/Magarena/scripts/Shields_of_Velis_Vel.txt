@@ -1,7 +1,7 @@
 name=Shields of Velis Vel
 url=http://magiccards.info/lw/en/39.html
-image=http://magiccards.info/scans/en/lw/39.jpg
-value=2.969
+image=http://mtgimage.com/card/shields%20of%20velis%20vel.jpg
+value=2.950
 rarity=C
 type=Tribal,Instant
 subtype=Shapeshifter

@@ -1,0 +1,9 @@
+name=Aysen Highway
+url=http://magiccards.info/hl/en/107.html
+image=http://mtgimage.com/card/aysen%20highway.jpg
+value=1.171
+rarity=R
+type=Enchantment
+cost={3}{W}{W}{W}
+ability=lord white creatures have plainswalk
+timing=enchantment

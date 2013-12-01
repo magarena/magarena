@@ -1,6 +1,6 @@
 name=Goblin Commando
 url=http://magiccards.info/st/en/100.html
-image=http://magiccards.info/scans/en/st/100.jpg
+image=http://mtgimage.com/card/goblin%20commando.jpg
 value=2.279
 rarity=U
 type=Creature

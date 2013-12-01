@@ -1,6 +1,6 @@
 name=Shardless Agent
 url=http://magiccards.info/pc2/en/104.html
-image=http://magiccards.info/scans/en/pc2/104.jpg
+image=http://mtgimage.com/card/shardless%20agent.jpg
 value=4.489
 rarity=U
 type=Artifact,Creature

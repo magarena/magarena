@@ -1,6 +1,6 @@
 name=Lady Orca
 url=http://magiccards.info/me3/en/159.html
-image=http://magiccards.info/scans/en/me3/159.jpg
+image=http://mtgimage.com/card/lady%20orca.jpg
 value=1.677
 rarity=U
 type=Legendary,Creature

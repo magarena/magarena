@@ -1,0 +1,9 @@
+name=Sword of the Chosen
+url=http://magiccards.info/sh/en/135.html
+image=http://mtgimage.com/card/sword%20of%20the%20chosen.jpg
+value=3.176
+rarity=R
+type=Legendary,Artifact
+cost={2}
+ability=pay {T}:Target legendary creature gets +2/+2 until end of turn.
+timing=artifact

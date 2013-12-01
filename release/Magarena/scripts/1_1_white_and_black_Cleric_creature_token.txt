@@ -1,0 +1,10 @@
+name=1/1 white and black Cleric creature token
+token=Cleric
+image=http://magiccards.info/extras/token/gatecrash/cleric.jpg
+value=3
+type=Creature
+subtype=Cleric
+color=wb
+cost={0}
+pt=1/1
+requires_groovy_code

@@ -1,6 +1,6 @@
 name=Ali Baba
 url=http://magiccards.info/4e/en/193.html
-image=http://magiccards.info/scans/en/4e/193.jpg
+image=http://mtgimage.com/card/ali%20baba.jpg
 value=2.407
 rarity=U
 type=Creature

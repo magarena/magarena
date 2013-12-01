@@ -1,6 +1,6 @@
 name=Ezuri's Archers
 url=http://magiccards.info/som/en/120.html
-image=http://magiccards.info/scans/en/som/120.jpg
+image=http://mtgimage.com/card/ezuri%27s%20archers.jpg
 value=4.059
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Metathran Zombie
 url=http://magiccards.info/in/en/63.html
-image=http://magiccards.info/scans/en/in/63.jpg
+image=http://mtgimage.com/card/metathran%20zombie.jpg
 value=3.139
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Sandstone Warrior
 url=http://magiccards.info/9e/en/215.html
-image=http://magiccards.info/scans/en/9e/215.jpg
+image=http://mtgimage.com/card/sandstone%20warrior.jpg
 value=3.393
 rarity=C
 type=Creature

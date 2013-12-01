@@ -1,6 +1,6 @@
 name=Starlight Invoker
 url=http://magiccards.info/10e/en/47.html
-image=http://magiccards.info/scans/en/10e/47.jpg
+image=http://mtgimage.com/card/starlight%20invoker.jpg
 value=2.604
 rarity=C
 type=Creature

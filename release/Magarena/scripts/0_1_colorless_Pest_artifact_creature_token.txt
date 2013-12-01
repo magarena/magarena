@@ -1,0 +1,8 @@
+name=0/1 colorless Pest artifact creature token
+token=Pest
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=20005&amp;d=1143673218
+cost={0}
+pt=0/1
+value=1
+type=Artifact,Creature
+subtype=Pest

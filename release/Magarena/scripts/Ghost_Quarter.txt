@@ -1,7 +1,7 @@
 name=Ghost Quarter
 url=http://magiccards.info/isd/en/240.html
-image=http://magiccards.info/scans/en/isd/240.jpg
-value=4.128
+image=http://mtgimage.com/card/ghost%20quarter.jpg
+value=4.121
 rarity=U
 type=Land
 ability=tap add mana {1}

@@ -1,6 +1,6 @@
 name=Minotaur Warrior
 url=http://magiccards.info/po/en/145.html
-image=http://magiccards.info/scans/en/po/145.jpg
+image=http://mtgimage.com/card/minotaur%20warrior.jpg
 value=2.459
 rarity=C
 type=Creature

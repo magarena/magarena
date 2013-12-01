@@ -1,0 +1,9 @@
+name=Ark of Blight
+url=http://magiccards.info/sc/en/140.html
+image=http://mtgimage.com/card/ark%20of%20blight.jpg
+value=1.926
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {3},{T},{S}:Destroy target land.
+timing=artifact

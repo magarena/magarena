@@ -1,7 +1,7 @@
 name=Shimmering Barrier
 url=http://magiccards.info/us/en/50.html
-image=http://magiccards.info/scans/en/us/50.jpg
-value=3.017
+image=http://mtgimage.com/card/shimmering%20barrier.jpg
+value=3.000
 rarity=U
 type=Creature
 subtype=Wall

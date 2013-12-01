@@ -1,6 +1,6 @@
 name=Aven Fisher
 url=http://magiccards.info/10e/en/68.html
-image=http://magiccards.info/scans/en/10e/68.jpg
+image=http://mtgimage.com/card/aven%20fisher.jpg
 value=2.735
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Liliana's Reaver
 url=http://magiccards.info/m14/en/103.html
-image=http://magiccards.info/scans/en/m14/103.jpg
+image=http://mtgimage.com/card/liliana%27s%20reaver.jpg
 value=4.300
 rarity=R
 type=Creature

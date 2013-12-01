@@ -19,11 +19,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        if (creature.isTapped()) {
-                            game.doAction(new MagicDestroyAction(creature));
-                        }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    if (creature.isTapped()) {
+                        game.doAction(new MagicDestroyAction(creature));
                     }
                 });
             }
@@ -48,10 +47,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicTapAction(creature,true));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(new MagicTapAction(creature,true));
                 });
             }
         }

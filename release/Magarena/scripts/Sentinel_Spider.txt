@@ -1,6 +1,6 @@
 name=Sentinel Spider
 url=http://magiccards.info/m13/en/189.html
-image=http://magiccards.info/scans/en/m13/189.jpg
+image=http://mtgimage.com/card/sentinel%20spider.jpg
 value=3.766
 rarity=C
 type=Creature

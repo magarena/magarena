@@ -1,0 +1,11 @@
+name=Henge Guardian
+url=http://magiccards.info/ddg/en/55.html
+image=http://mtgimage.com/card/henge%20guardian.jpg
+value=2.828
+rarity=U
+type=Artifact,Creature
+subtype=Dragon,Wurm
+cost={5}
+pt=3/4
+ability=pay {2}:SN gains trample until end of turn.
+timing=artifact

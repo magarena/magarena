@@ -1,0 +1,9 @@
+name=Staff of Zegon
+url=http://magiccards.info/me4/en/229.html
+image=http://mtgimage.com/card/staff%20of%20zegon.jpg
+value=2.548
+rarity=C
+type=Artifact
+cost={4}
+ability=pay {3},{T}:Target creature gets -2/-0 until end of turn.
+timing=artifact

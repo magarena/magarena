@@ -1,6 +1,6 @@
 name=Meglonoth
 url=http://magiccards.info/cfx/en/118.html
-image=http://magiccards.info/scans/en/cfx/118.jpg
+image=http://mtgimage.com/card/meglonoth.jpg
 value=4.187
 rarity=R
 type=Creature

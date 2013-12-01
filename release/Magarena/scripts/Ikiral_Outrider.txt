@@ -1,6 +1,6 @@
 name=Ikiral Outrider
 url=http://magiccards.info/roe/en/27.html
-image=http://magiccards.info/scans/en/roe/27.jpg
+image=http://mtgimage.com/card/ikiral%20outrider.jpg
 value=2.768
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Elusive Krasis
 url=http://magiccards.info/gtc/en/160.html
-image=http://magiccards.info/scans/en/gtc/160.jpg
+image=http://mtgimage.com/card/elusive%20krasis.jpg
 value=3.788
 rarity=U
 type=Creature

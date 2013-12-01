@@ -1,6 +1,6 @@
 name=Archwing Dragon
 url=http://magiccards.info/avr/en/126.html
-image=http://magiccards.info/scans/en/avr/126.jpg
+image=http://mtgimage.com/card/archwing%20dragon.jpg
 value=3.816
 rarity=R
 type=Creature

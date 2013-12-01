@@ -1,6 +1,6 @@
 name=Oasis
 url=http://magiccards.info/me4/en/248.html
-image=http://magiccards.info/scans/en/me4/248.jpg
+image=http://mtgimage.com/card/oasis.jpg
 value=2.091
 rarity=C
 type=Land

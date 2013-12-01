@@ -1,6 +1,6 @@
 name=Plated Sliver
 url=http://magiccards.info/le/en/19.html
-image=http://magiccards.info/scans/en/le/19.jpg
+image=http://mtgimage.com/card/plated%20sliver.jpg
 value=4.059
 rarity=C
 type=Creature

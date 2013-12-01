@@ -1,6 +1,6 @@
 name=False Defeat
 url=http://magiccards.info/me3/en/11.html
-image=http://magiccards.info/scans/en/me3/11.jpg
+image=http://mtgimage.com/card/false%20defeat.jpg
 value=4.133
 rarity=U
 type=Sorcery

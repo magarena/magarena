@@ -1,6 +1,6 @@
 name=Trained Jackal
 url=http://magiccards.info/p3k/en/155.html
-image=http://magiccards.info/scans/en/p3k/155.jpg
+image=http://mtgimage.com/card/trained%20jackal.jpg
 value=3.442
 rarity=C
 type=Creature

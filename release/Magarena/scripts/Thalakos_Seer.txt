@@ -1,6 +1,6 @@
 name=Thalakos Seer
 url=http://magiccards.info/tp/en/94.html
-image=http://magiccards.info/scans/en/tp/94.jpg
+image=http://mtgimage.com/card/thalakos%20seer.jpg
 value=3.800
 rarity=C
 type=Creature

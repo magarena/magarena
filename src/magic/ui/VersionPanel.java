@@ -20,6 +20,9 @@ public class VersionPanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
+    private static final String VERSION = "1.45";
+    private static final String VERSION_TEXT = "Magarena " + VERSION;
+
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
     private final CardViewer cardViewer;
@@ -29,7 +32,7 @@ public class VersionPanel extends JPanel implements ActionListener {
     public VersionPanel(final MagicFrame frame) {
 
         this.frame=frame;
-        frame.setTitle(frame.getTitle());
+        frame.setTitle(VERSION_TEXT);
 
         setLayout(null);
 
@@ -67,6 +70,10 @@ public class VersionPanel extends JPanel implements ActionListener {
                 loadButton.setBounds(150,size.height-60,130,50);
             }
         });
+    }
+
+    public static final String getVersion() {
+        return VERSION;
     }
 
     @Override

@@ -25,11 +25,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final MagicPermanent sacrificed = event.getRefPermanent();
-                    game.doAction(new MagicMillLibraryAction(player,sacrificed.getPower()));
-                }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final MagicPermanent sacrificed = event.getRefPermanent();
+                game.doAction(new MagicMillLibraryAction(player,sacrificed.getPower()));
             });
         }
     }

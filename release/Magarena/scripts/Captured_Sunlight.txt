@@ -1,6 +1,6 @@
 name=Captured Sunlight
 url=http://magiccards.info/arb/en/66.html
-image=http://magiccards.info/scans/en/arb/66.jpg
+image=http://mtgimage.com/card/captured%20sunlight.jpg
 value=2.812
 rarity=C
 type=Sorcery

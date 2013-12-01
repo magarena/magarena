@@ -1,0 +1,12 @@
+name=Skeletal Grimace
+url=http://magiccards.info/isd/en/116.html
+image=http://mtgimage.com/card/skeletal%20grimace.jpg
+value=3.254
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+enchant=pump,pos creature
+given_pt=+1/+1
+given_ability=regenerate {B}
+timing=aura

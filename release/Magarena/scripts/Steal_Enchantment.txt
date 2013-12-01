@@ -1,0 +1,11 @@
+name=Steal Enchantment
+url=http://magiccards.info/tp/en/90.html
+image=http://mtgimage.com/card/steal%20enchantment.jpg
+value=3.919
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}{U}
+ability=control enchanted
+enchant=gain control,neg enchantment
+timing=enchantment

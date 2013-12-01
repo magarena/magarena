@@ -1,7 +1,7 @@
 name=Spectral Lynx
 url=http://magiccards.info/ap/en/17.html
-image=http://magiccards.info/scans/en/ap/17.jpg
-value=4.069
+image=http://mtgimage.com/card/spectral%20lynx.jpg
+value=4.087
 rarity=R
 type=Creature
 subtype=Cat,Spirit

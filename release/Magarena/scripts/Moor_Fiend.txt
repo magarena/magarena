@@ -1,6 +1,6 @@
 name=Moor Fiend
 url=http://magiccards.info/ia/en/41.html
-image=http://magiccards.info/scans/en/ia/41.jpg
+image=http://mtgimage.com/card/moor%20fiend.jpg
 value=3.000
 rarity=C
 type=Creature

@@ -39,7 +39,7 @@ public abstract class MagicTargetPicker<T> {
         register("weaken", new MagicWeakenTargetPicker(0,0));
         register("flying", MagicFlyingTargetPicker.create());
         register("lifelink", MagicLifelinkTargetPicker.create());
-        register("copy", MagicCopyTargetPicker.create());
+        register("copy", MagicCopyPermanentPicker.create());
         register("haste", MagicHasteTargetPicker.create());
         register("trample", MagicTrampleTargetPicker.create());
         register("unblockable", MagicUnblockableTargetPicker.create());

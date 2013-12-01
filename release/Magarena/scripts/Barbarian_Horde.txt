@@ -1,6 +1,6 @@
 name=Barbarian Horde
 url=http://magiccards.info/p3k/en/101.html
-image=http://magiccards.info/scans/en/p3k/101.jpg
+image=http://mtgimage.com/card/barbarian%20horde.jpg
 value=1.742
 rarity=C
 type=Creature

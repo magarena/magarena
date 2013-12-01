@@ -1,7 +1,7 @@
 name=Mire Boa
 url=http://magiccards.info/pc/en/135.html
-image=http://magiccards.info/scans/en/pc/135.jpg
-value=4.157
+image=http://mtgimage.com/card/mire%20boa.jpg
+value=4.167
 rarity=C
 type=Creature
 subtype=Snake

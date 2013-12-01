@@ -1,6 +1,6 @@
 name=Brushstrider
 url=http://magiccards.info/rtr/en/117.html
-image=http://magiccards.info/scans/en/rtr/117.jpg
+image=http://mtgimage.com/card/brushstrider.jpg
 value=3.059
 rarity=U
 type=Creature

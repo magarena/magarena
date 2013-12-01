@@ -1,7 +1,7 @@
 name=Realm Razer
 url=http://magiccards.info/ala/en/187.html
-image=http://magiccards.info/scans/en/ala/187.jpg
-value=3.580
+image=http://mtgimage.com/card/realm%20razer.jpg
+value=3.545
 rarity=R
 type=Creature
 subtype=Beast

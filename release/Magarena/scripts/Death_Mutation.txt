@@ -1,7 +1,7 @@
 name=Death Mutation
 url=http://magiccards.info/cmd/en/192.html
-image=http://magiccards.info/scans/en/cmd/192.jpg
-value=3.032
+image=http://mtgimage.com/card/death%20mutation.jpg
+value=3.031
 rarity=U
 type=Sorcery
 cost={6}{B}{G}

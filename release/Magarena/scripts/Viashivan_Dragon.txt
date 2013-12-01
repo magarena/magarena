@@ -1,6 +1,6 @@
 name=Viashivan Dragon
 url=http://magiccards.info/vi/en/140.html
-image=http://magiccards.info/scans/en/vi/140.jpg
+image=http://mtgimage.com/card/viashivan%20dragon.jpg
 value=3.842
 rarity=R
 type=Creature

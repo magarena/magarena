@@ -1,6 +1,6 @@
 name=Barbed Sliver
 url=http://magiccards.info/pds/en/18.html
-image=http://magiccards.info/scans/en/pds/18.jpg
+image=http://mtgimage.com/card/barbed%20sliver.jpg
 value=2.393
 rarity=U
 type=Creature

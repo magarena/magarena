@@ -1,6 +1,6 @@
 name=Tranquility
 url=http://magiccards.info/tp/en/155.html
-image=http://magiccards.info/scans/en/tp/155.jpg
+image=http://mtgimage.com/card/tranquility.jpg
 value=3.467
 rarity=C
 type=Sorcery

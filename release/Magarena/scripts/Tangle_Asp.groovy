@@ -17,7 +17,7 @@
                     permanent,
                     MagicAtEndOfCombatTrigger.Destroy
                 ))
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

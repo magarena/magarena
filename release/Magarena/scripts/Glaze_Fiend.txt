@@ -1,6 +1,6 @@
 name=Glaze Fiend
 url=http://magiccards.info/ala/en/77.html
-image=http://magiccards.info/scans/en/ala/77.jpg
+image=http://mtgimage.com/card/glaze%20fiend.jpg
 value=3.069
 rarity=C
 type=Artifact,Creature

@@ -1,6 +1,6 @@
 name=Ravaging Horde
 url=http://magiccards.info/p3k/en/118.html
-image=http://magiccards.info/scans/en/p3k/118.jpg
+image=http://mtgimage.com/card/ravaging%20horde.jpg
 value=3.604
 removal=1
 rarity=U

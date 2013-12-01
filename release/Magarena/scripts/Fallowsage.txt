@@ -1,6 +1,6 @@
 name=Fallowsage
 url=http://magiccards.info/lw/en/63.html
-image=http://magiccards.info/scans/en/lw/63.jpg
+image=http://mtgimage.com/card/fallowsage.jpg
 value=3.648
 rarity=U
 type=Creature

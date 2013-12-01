@@ -1,6 +1,6 @@
 name=Caustic Rain
 url=http://magiccards.info/gp/en/44.html
-image=http://magiccards.info/scans/en/gp/44.jpg
+image=http://mtgimage.com/card/caustic%20rain.jpg
 value=3.044
 rarity=U
 type=Sorcery

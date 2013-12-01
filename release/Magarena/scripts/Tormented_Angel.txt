@@ -1,7 +1,7 @@
 name=Tormented Angel
 url=http://magiccards.info/ud/en/22.html
-image=http://magiccards.info/scans/en/ud/22.jpg
-value=2.260
+image=http://mtgimage.com/card/tormented%20angel.jpg
+value=2.296
 rarity=C
 type=Creature
 subtype=Angel

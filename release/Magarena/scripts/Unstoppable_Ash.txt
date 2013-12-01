@@ -1,6 +1,6 @@
 name=Unstoppable Ash
 url=http://magiccards.info/mt/en/137.html
-image=http://magiccards.info/scans/en/mt/137.jpg
+image=http://mtgimage.com/card/unstoppable%20ash.jpg
 value=4.034
 removal=2
 rarity=R

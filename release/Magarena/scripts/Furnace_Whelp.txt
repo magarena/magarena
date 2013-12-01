@@ -1,7 +1,7 @@
 name=Furnace Whelp
 url=http://magiccards.info/cmd/en/124.html
-image=http://magiccards.info/scans/en/arc/39.jpg
-value=3.135
+image=http://mtgimage.com/card/furnace%20whelp.jpg
+value=3.167
 rarity=U
 type=Creature
 subtype=Dragon

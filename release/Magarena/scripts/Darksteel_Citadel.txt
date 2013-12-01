@@ -1,6 +1,6 @@
 name=Darksteel Citadel
 url=http://magiccards.info/ds/en/164.html
-image=http://magiccards.info/scans/en/ds/164.jpg
+image=http://mtgimage.com/card/darksteel%20citadel.jpg
 value=4.616
 rarity=C
 type=Artifact,Land

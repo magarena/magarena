@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 new MagicMayChoice(MagicTargetChoice.CREATURE),
-                MagicCopyTargetPicker.create(),
+                MagicCopyPermanentPicker.create(),
                 this,
                 "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield."
             );
@@ -20,7 +20,7 @@
                         event.getCardOnStack(),
                         chosen
                     ));
-                } as MagicPermanentAction);
+                });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack()

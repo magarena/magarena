@@ -1,6 +1,6 @@
 name=Stuffy Doll
 url=http://magiccards.info/ts/en/264.html
-image=http://magiccards.info/scans/en/ts/264.jpg
+image=http://mtgimage.com/card/stuffy%20doll.jpg
 value=4.013
 rarity=R
 type=Artifact,Creature

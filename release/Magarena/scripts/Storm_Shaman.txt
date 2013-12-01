@@ -1,6 +1,6 @@
 name=Storm Shaman
 url=http://magiccards.info/ai/en/119.html
-image=http://magiccards.info/scans/en/ai/119.jpg
+image=http://mtgimage.com/card/storm%20shaman.jpg
 value=3.074
 rarity=U
 type=Creature

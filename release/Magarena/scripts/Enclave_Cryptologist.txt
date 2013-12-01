@@ -1,6 +1,6 @@
 name=Enclave Cryptologist
 url=http://magiccards.info/roe/en/66.html
-image=http://magiccards.info/scans/en/roe/66.jpg
+image=http://mtgimage.com/card/enclave%20cryptologist.jpg
 value=3.904
 rarity=U
 type=Creature

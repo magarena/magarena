@@ -1,6 +1,6 @@
 name=Jhessian Balmgiver
 url=http://magiccards.info/cfx/en/112.html
-image=http://magiccards.info/scans/en/cfx/112.jpg
+image=http://mtgimage.com/card/jhessian%20balmgiver.jpg
 value=3.119
 rarity=U
 type=Creature

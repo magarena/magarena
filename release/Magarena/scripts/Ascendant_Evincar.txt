@@ -1,6 +1,6 @@
 name=Ascendant Evincar
 url=http://magiccards.info/dpa/en/19.html
-image=http://magiccards.info/scans/en/10e/127.jpg
+image=http://mtgimage.com/card/ascendant%20evincar.jpg
 value=3.987
 rarity=R
 type=Legendary,Creature

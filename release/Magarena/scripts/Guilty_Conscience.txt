@@ -1,6 +1,6 @@
 name=Guilty Conscience
 url=http://magiccards.info/sc/en/17.html
-image=http://magiccards.info/scans/en/sc/17.jpg
+image=http://mtgimage.com/card/guilty%20conscience.jpg
 value=4.120
 rarity=C
 type=Enchantment

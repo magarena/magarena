@@ -1,6 +1,6 @@
 name=Thoughtflare
 url=http://magiccards.info/rtr/en/203.html
-image=http://magiccards.info/scans/en/rtr/203.jpg
+image=http://mtgimage.com/card/thoughtflare.jpg
 value=3.036
 rarity=U
 type=Instant

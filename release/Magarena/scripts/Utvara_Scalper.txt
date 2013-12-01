@@ -1,6 +1,6 @@
 name=Utvara Scalper
 url=http://magiccards.info/di/en/76.html
-image=http://magiccards.info/scans/en/di/76.jpg
+image=http://mtgimage.com/card/utvara%20scalper.jpg
 value=2.205
 rarity=C
 type=Creature

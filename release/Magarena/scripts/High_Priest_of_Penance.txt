@@ -1,6 +1,6 @@
 name=High Priest of Penance
 url=http://magiccards.info/gtc/en/171.html
-image=http://magiccards.info/scans/en/gtc/171.jpg
+image=http://mtgimage.com/card/high%20priest%20of%20penance.jpg
 value=3.935
 rarity=R
 type=Creature

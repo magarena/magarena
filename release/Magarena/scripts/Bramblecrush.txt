@@ -1,7 +1,7 @@
 name=Bramblecrush
 url=http://magiccards.info/isd/en/172.html
-image=http://magiccards.info/scans/en/isd/172.jpg
-value=3.758
+image=http://mtgimage.com/card/bramblecrush.jpg
+value=3.764
 removal=3
 rarity=U
 type=Sorcery

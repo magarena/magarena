@@ -1,6 +1,6 @@
 name=Expunge
 url=http://magiccards.info/us/en/135.html
-image=http://magiccards.info/scans/en/us/135.jpg
+image=http://mtgimage.com/card/expunge.jpg
 value=3.825
 removal=2
 rarity=C

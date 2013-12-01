@@ -1,6 +1,6 @@
 name=Syndicate Enforcer
 url=http://magiccards.info/gtc/en/80.html
-image=http://magiccards.info/scans/en/gtc/80.jpg
+image=http://mtgimage.com/card/syndicate%20enforcer.jpg
 value=2.362
 rarity=C
 type=Creature

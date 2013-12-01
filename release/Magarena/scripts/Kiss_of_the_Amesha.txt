@@ -1,6 +1,6 @@
 name=Kiss of the Amesha
 url=http://magiccards.info/ala/en/177.html
-image=http://magiccards.info/scans/en/ala/177.jpg
+image=http://mtgimage.com/card/kiss%20of%20the%20amesha.jpg
 value=3.007
 rarity=U
 type=Sorcery

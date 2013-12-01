@@ -1,6 +1,6 @@
 name=Sparring Golem
 url=http://magiccards.info/in/en/312.html
-image=http://magiccards.info/scans/en/in/312.jpg
+image=http://mtgimage.com/card/sparring%20golem.jpg
 value=3.152
 rarity=U
 type=Artifact,Creature

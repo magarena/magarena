@@ -1,6 +1,6 @@
 name=Woodfall Primus
 url=http://magiccards.info/shm/en/135.html
-image=http://magiccards.info/scans/en/shm/135.jpg
+image=http://mtgimage.com/card/woodfall%20primus.jpg
 value=4.175
 rarity=R
 type=Creature

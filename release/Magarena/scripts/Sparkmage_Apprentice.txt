@@ -1,6 +1,6 @@
 name=Sparkmage Apprentice
 url=http://magiccards.info/m10/en/158.html
-image=http://magiccards.info/scans/en/m10/158.jpg
+image=http://mtgimage.com/card/sparkmage%20apprentice.jpg
 value=3.476
 rarity=C
 type=Creature

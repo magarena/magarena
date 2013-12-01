@@ -1,6 +1,6 @@
 name=Giant Mantis
 url=http://magiccards.info/mr/en/116.html
-image=http://magiccards.info/scans/en/mr/116.jpg
+image=http://mtgimage.com/card/giant%20mantis.jpg
 value=3.339
 rarity=C
 type=Creature

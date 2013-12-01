@@ -1,6 +1,6 @@
 name=Spiketail Hatchling
 url=http://magiccards.info/10e/en/111.html
-image=http://magiccards.info/scans/en/10e/111.jpg
+image=http://mtgimage.com/card/spiketail%20hatchling.jpg
 value=4.270
 rarity=U
 type=Creature

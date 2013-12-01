@@ -1,6 +1,6 @@
 name=Holy Justiciar
 url=http://magiccards.info/avr/en/25.html
-image=http://magiccards.info/scans/en/avr/25.jpg
+image=http://mtgimage.com/card/holy%20justiciar.jpg
 value=1.500
 rarity=U
 type=Creature

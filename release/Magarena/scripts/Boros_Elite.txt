@@ -1,6 +1,6 @@
 name=Boros Elite
 url=http://magiccards.info/gtc/en/7.html
-image=http://magiccards.info/scans/en/gtc/7.jpg
+image=http://mtgimage.com/card/boros%20elite.jpg
 value=3.351
 rarity=U
 type=Creature

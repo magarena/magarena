@@ -1,6 +1,6 @@
 name=Bonded Fetch
 url=http://magiccards.info/fut/en/50.html
-image=http://magiccards.info/scans/en/fut/50.jpg
+image=http://mtgimage.com/card/bonded%20fetch.jpg
 value=3.315
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Lightning Crafter
 url=http://magiccards.info/mt/en/93.html
-image=http://magiccards.info/scans/en/mt/93.jpg
+image=http://mtgimage.com/card/lightning%20crafter.jpg
 value=4.270
 removal=2
 rarity=R

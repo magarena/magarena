@@ -1,7 +1,7 @@
 name=Sword of Light and Shadow
 url=http://magiccards.info/ds/en/149.html
-image=http://magiccards.info/scans/en/ds/149.jpg
-value=4.571
+image=http://mtgimage.com/card/sword%20of%20light%20and%20shadow.jpg
+value=4.581
 rarity=R
 type=Artifact
 subtype=Equipment

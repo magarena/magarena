@@ -1,0 +1,11 @@
+name=Adarkar Sentinel
+url=http://magiccards.info/me2/en/201.html
+image=http://mtgimage.com/card/adarkar%20sentinel.jpg
+value=2.600
+rarity=C
+type=Artifact,Creature
+subtype=Soldier
+cost={5}
+pt=3/3
+ability=pay {1}:SN gets +0/+1 until end of turn.
+timing=artifact

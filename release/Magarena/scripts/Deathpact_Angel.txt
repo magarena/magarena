@@ -1,0 +1,11 @@
+name=Deathpact Angel
+url=http://magiccards.info/gtc/en/153.html
+image=http://mtgimage.com/card/deathpact%20angel.jpg
+value=3.258
+rarity=M
+type=Creature
+subtype=Angel
+cost={3}{W}{B}{B}
+pt=5/5
+ability=flying;dies effect PN puts a 1/1 white and black Cleric creature token onto the battlefield.
+timing=main

@@ -1,6 +1,6 @@
 name=Time Ebb
 url=http://magiccards.info/9e/en/107.html
-image=http://magiccards.info/scans/en/9e/107.jpg
+image=http://mtgimage.com/card/time%20ebb.jpg
 value=3.984
 removal=3
 rarity=C

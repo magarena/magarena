@@ -1,7 +1,7 @@
 name=Raging Poltergeist
 url=http://magiccards.info/avr/en/150.html
-image=http://magiccards.info/scans/en/avr/150.jpg
-value=1.007
+image=http://mtgimage.com/card/raging%20poltergeist.jpg
+value=1.029
 rarity=C
 type=Creature
 subtype=Spirit

@@ -1,6 +1,6 @@
 name=Indomitable Will
 url=http://magiccards.info/chk/en/17.html
-image=http://magiccards.info/scans/en/chk/17.jpg
+image=http://mtgimage.com/card/indomitable%20will.jpg
 value=2.586
 rarity=C
 type=Enchantment

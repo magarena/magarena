@@ -1,6 +1,6 @@
 name=Bloodmark Mentor
 url=http://magiccards.info/ddg/en/50.html
-image=http://magiccards.info/scans/en/shm/83.jpg
+image=http://mtgimage.com/card/bloodmark%20mentor.jpg
 value=3.868
 rarity=U
 type=Creature

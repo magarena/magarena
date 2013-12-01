@@ -1,0 +1,9 @@
+name=Aura Fracture
+url=http://magiccards.info/pr/en/2.html
+image=http://mtgimage.com/card/aura%20fracture.jpg
+value=2.923
+rarity=C
+type=Enchantment
+cost={2}{W}
+ability=pay Sacrifice a land:Destroy target enchantment.
+timing=enchantment

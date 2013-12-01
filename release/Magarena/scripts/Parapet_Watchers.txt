@@ -1,7 +1,7 @@
 name=Parapet Watchers
 url=http://magiccards.info/shm/en/45.html
-image=http://magiccards.info/scans/en/shm/45.jpg
-value=2.347
+image=http://mtgimage.com/card/parapet%20watchers.jpg
+value=2.324
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

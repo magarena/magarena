@@ -1,6 +1,6 @@
 name=Akoum Battlesinger
 url=http://magiccards.info/wwk/en/71.html
-image=http://magiccards.info/scans/en/wwk/71.jpg
+image=http://mtgimage.com/card/akoum%20battlesinger.jpg
 value=3.062
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Lonely Sandbar
 url=http://magiccards.info/ddj/en/35.html
-image=http://magiccards.info/scans/en/ddj/35.jpg
-value=3.333
+image=http://mtgimage.com/card/lonely%20sandbar.jpg
+value=3.700
 rarity=C
 type=Land
 mana=u3

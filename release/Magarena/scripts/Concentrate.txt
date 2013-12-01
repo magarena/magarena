@@ -1,6 +1,6 @@
 name=Concentrate
 url=http://magiccards.info/pc2/en/16.html
-image=http://magiccards.info/scans/en/pc2/16.jpg
+image=http://mtgimage.com/card/concentrate.jpg
 value=3.938
 rarity=U
 type=Sorcery

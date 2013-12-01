@@ -1,6 +1,6 @@
 name=Pariah
 url=http://magiccards.info/10e/en/33.html
-image=http://magiccards.info/scans/en/10e/33.jpg
+image=http://mtgimage.com/card/pariah.jpg
 value=4.564
 rarity=R
 type=Enchantment

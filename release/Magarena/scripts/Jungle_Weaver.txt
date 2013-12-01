@@ -1,6 +1,6 @@
 name=Jungle Weaver
 url=http://magiccards.info/ala/en/134.html
-image=http://magiccards.info/scans/en/ala/134.jpg
+image=http://mtgimage.com/card/jungle%20weaver.jpg
 value=2.664
 rarity=C
 type=Creature

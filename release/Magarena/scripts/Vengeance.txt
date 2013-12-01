@@ -1,6 +1,6 @@
 name=Vengeance
 url=http://magiccards.info/9eb/en/2.html
-image=http://magiccards.info/scans/en/9eb/2.jpg
+image=http://mtgimage.com/card/vengeance.jpg
 value=2.692
 removal=3
 rarity=U

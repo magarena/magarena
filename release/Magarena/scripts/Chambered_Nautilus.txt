@@ -1,6 +1,6 @@
 name=Chambered Nautilus
 url=http://magiccards.info/mm/en/64.html
-image=http://magiccards.info/scans/en/mm/64.jpg
+image=http://mtgimage.com/card/chambered%20nautilus.jpg
 value=3.466
 rarity=U
 type=Creature

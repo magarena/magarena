@@ -1,7 +1,7 @@
 name=Llanowar Knight
 url=http://magiccards.info/in/en/254.html
-image=http://magiccards.info/scans/en/in/254.jpg
-value=3.744
+image=http://mtgimage.com/card/llanowar%20knight.jpg
+value=3.750
 ability=protection from black
 rarity=C
 type=Creature

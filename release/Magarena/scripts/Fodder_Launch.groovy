@@ -19,16 +19,15 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent targetPermanent) {
-                    game.doAction(new MagicChangeTurnPTAction(targetPermanent,-5,-5));
-                    final MagicDamage damage = new MagicDamage(
-                        event.getSource(),
-                        targetPermanent.getController(),
-                        5
-                    );
-                    game.doAction(new MagicDealDamageAction(damage)); 
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent targetPermanent ->
+                game.doAction(new MagicChangeTurnPTAction(targetPermanent,-5,-5));
+                final MagicDamage damage = new MagicDamage(
+                    event.getSource(),
+                    targetPermanent.getController(),
+                    5
+                );
+                game.doAction(new MagicDealDamageAction(damage)); 
             });
         }
     }

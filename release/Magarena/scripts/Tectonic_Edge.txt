@@ -1,6 +1,6 @@
 name=Tectonic Edge
 url=http://magiccards.info/wwk/en/145.html
-image=http://magiccards.info/scans/en/wwk/145.jpg
+image=http://mtgimage.com/card/tectonic%20edge.jpg
 value=3.677
 rarity=U
 type=Land

@@ -1,6 +1,6 @@
 name=Ember Hauler
 url=http://magiccards.info/m11/en/135.html
-image=http://magiccards.info/scans/en/m11/135.jpg
+image=http://mtgimage.com/card/ember%20hauler.jpg
 value=4.022
 rarity=U
 type=Creature

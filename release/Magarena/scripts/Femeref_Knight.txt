@@ -1,6 +1,6 @@
 name=Femeref Knight
 url=http://magiccards.info/mr/en/222.html
-image=http://magiccards.info/scans/en/mr/222.jpg
+image=http://mtgimage.com/card/femeref%20knight.jpg
 value=3.250
 rarity=C
 type=Creature

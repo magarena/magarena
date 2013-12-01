@@ -1,0 +1,9 @@
+name=Puppet Strings
+url=http://magiccards.info/pvc/en/22.html
+image=http://mtgimage.com/card/puppet%20strings.jpg
+value=3.857
+rarity=U
+type=Artifact
+cost={3}
+ability=pay {2},{T}:Tap target creature.;pay {2},{T}:Untap target creature.
+timing=artifact

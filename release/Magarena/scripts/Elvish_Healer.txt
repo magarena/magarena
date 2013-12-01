@@ -1,7 +1,7 @@
 name=Elvish Healer
 url=http://magiccards.info/ia/en/246.html
-image=http://magiccards.info/scans/en/ia/246.jpg
-value=2.406
+image=http://mtgimage.com/card/elvish%20healer.jpg
+value=2.424
 rarity=C
 type=Creature
 subtype=Elf,Cleric

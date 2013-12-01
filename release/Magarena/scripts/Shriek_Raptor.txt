@@ -1,7 +1,7 @@
 name=Shriek Raptor
 url=http://magiccards.info/nph/en/24.html
-image=http://magiccards.info/scans/en/nph/24.jpg
-value=2.685
+image=http://mtgimage.com/card/shriek%20raptor.jpg
+value=2.670
 rarity=C
 type=Creature
 subtype=Bird

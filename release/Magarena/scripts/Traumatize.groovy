@@ -12,11 +12,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer target) {
-                    def amount = target.getLibrary().size().intdiv(2);
-                    game.doAction(new MagicMillLibraryAction(target,amount));
-                }
+            event.processTargetPlayer(game, {
+                final MagicPlayer target ->
+                def amount = target.getLibrary().size().intdiv(2);
+                game.doAction(new MagicMillLibraryAction(target,amount));
             });
         }
     }

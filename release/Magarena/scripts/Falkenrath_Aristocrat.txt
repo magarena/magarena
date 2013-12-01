@@ -1,7 +1,7 @@
 name=Falkenrath Aristocrat
 url=http://magiccards.info/dka/en/138.html
-image=http://magiccards.info/scans/en/dka/138.jpg
-value=3.879
+image=http://mtgimage.com/card/falkenrath%20aristocrat.jpg
+value=3.883
 rarity=M
 type=Creature
 subtype=Vampire

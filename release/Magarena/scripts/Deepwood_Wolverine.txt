@@ -1,6 +1,6 @@
 name=Deepwood Wolverine
 url=http://magiccards.info/mm/en/242.html
-image=http://magiccards.info/scans/en/mm/242.jpg
+image=http://mtgimage.com/card/deepwood%20wolverine.jpg
 value=3.600
 rarity=C
 type=Creature

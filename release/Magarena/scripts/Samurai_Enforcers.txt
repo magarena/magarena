@@ -1,6 +1,6 @@
 name=Samurai Enforcers
 url=http://magiccards.info/chk/en/42.html
-image=http://magiccards.info/scans/en/chk/42.jpg
+image=http://mtgimage.com/card/samurai%20enforcers.jpg
 value=2.641
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Ekundu Griffin
 url=http://magiccards.info/mr/en/217.html
-image=http://magiccards.info/scans/en/mr/217.jpg
+image=http://mtgimage.com/card/ekundu%20griffin.jpg
 value=2.850
 rarity=C
 type=Creature

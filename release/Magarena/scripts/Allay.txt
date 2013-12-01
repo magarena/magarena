@@ -1,6 +1,6 @@
 name=Allay
 url=http://magiccards.info/ex/en/1.html
-image=http://magiccards.info/scans/en/ex/1.jpg
+image=http://mtgimage.com/card/allay.jpg
 value=2.971
 removal=1
 rarity=C

@@ -1,6 +1,6 @@
 name=Anodet Lurker
 url=http://magiccards.info/5dn/en/101.html
-image=http://magiccards.info/scans/en/5dn/101.jpg
+image=http://mtgimage.com/card/anodet%20lurker.jpg
 value=1.650
 rarity=C
 type=Artifact,Creature

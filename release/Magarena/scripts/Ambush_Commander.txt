@@ -1,7 +1,7 @@
 name=Ambush Commander
 url=http://magiccards.info/evg/en/1.html
-image=http://magiccards.info/scans/en/evg/1.jpg
-value=4.296
+image=http://mtgimage.com/card/ambush%20commander.jpg
+value=4.300
 rarity=R
 type=Creature
 subtype=Elf

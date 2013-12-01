@@ -1,6 +1,6 @@
 name=Restless Dead
 url=http://magiccards.info/mr/en/36.html
-image=http://magiccards.info/scans/en/mr/36.jpg
+image=http://mtgimage.com/card/restless%20dead.jpg
 value=3.531
 rarity=C
 type=Creature

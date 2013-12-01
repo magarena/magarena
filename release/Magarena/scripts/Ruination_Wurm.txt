@@ -1,7 +1,7 @@
 name=Ruination Wurm
 url=http://magiccards.info/gtc/en/192.html
-image=http://magiccards.info/scans/en/gtc/192.jpg
-value=2.941
+image=http://mtgimage.com/card/ruination%20wurm.jpg
+value=2.942
 rarity=C
 type=Creature
 subtype=Wurm

@@ -1,0 +1,9 @@
+name=Hidden Path
+url=http://magiccards.info/dk/en/41.html
+image=http://mtgimage.com/card/hidden%20path.jpg
+value=1.250
+rarity=R
+type=Enchantment
+cost={2}{G}{G}{G}{G}
+ability=lord green creatures have forestwalk
+timing=enchantment

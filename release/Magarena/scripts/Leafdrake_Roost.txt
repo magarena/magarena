@@ -1,0 +1,11 @@
+name=Leafdrake Roost
+url=http://magiccards.info/di/en/116.html
+image=http://mtgimage.com/card/leafdrake%20roost.jpg
+value=3.833
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{G}{U}
+given_ability=pay {G}{U},{T}:PN puts a 2/2 green and blue Drake creature token with flying onto the battlefield.
+enchant=pump,pos land
+timing=enchantment

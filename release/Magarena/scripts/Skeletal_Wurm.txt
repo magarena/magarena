@@ -1,6 +1,6 @@
 name=Skeletal Wurm
 url=http://magiccards.info/roe/en/127.html
-image=http://magiccards.info/scans/en/roe/127.jpg
+image=http://mtgimage.com/card/skeletal%20wurm.jpg
 value=3.476
 rarity=U
 type=Creature

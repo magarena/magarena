@@ -1,6 +1,6 @@
 name=Telekinetic Sliver
 url=http://magiccards.info/ts/en/84.html
-image=http://magiccards.info/scans/en/ts/84.jpg
+image=http://mtgimage.com/card/telekinetic%20sliver.jpg
 value=3.862
 rarity=U
 type=Creature

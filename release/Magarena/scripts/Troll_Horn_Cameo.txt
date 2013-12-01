@@ -1,7 +1,7 @@
 name=Troll-Horn Cameo
 url=http://magiccards.info/in/en/316.html
-image=http://magiccards.info/scans/en/in/316.jpg
-value=2.700
+image=http://mtgimage.com/card/troll%2Dhorn%20cameo.jpg
+value=2.673
 rarity=U
 type=Artifact
 cost={3}

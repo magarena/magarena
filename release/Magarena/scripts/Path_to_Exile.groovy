@@ -13,19 +13,18 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
-                    game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                        event.getSource(),
-                        creature.getController(),
-                        new MagicMayChoice(
-                            "Search for a basic land card?",
-                            MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
-                        ),
-                        MagicPlayMod.TAPPED
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
+                game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                    event.getSource(),
+                    creature.getController(),
+                    new MagicMayChoice(
+                        "Search for a basic land card?",
+                        MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
+                    ),
+                    MagicPlayMod.TAPPED
+                ));
             });
         }
     }

@@ -1,6 +1,6 @@
 name=Battle Squadron
 url=http://magiccards.info/mm/en/174.html
-image=http://magiccards.info/scans/en/mm/174.jpg
+image=http://mtgimage.com/card/battle%20squadron.jpg
 value=4.044
 rarity=R
 type=Creature

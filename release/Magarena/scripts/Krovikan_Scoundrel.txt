@@ -1,6 +1,6 @@
 name=Krovikan Scoundrel
 url=http://magiccards.info/cs/en/64.html
-image=http://magiccards.info/scans/en/cs/64.jpg
+image=http://mtgimage.com/card/krovikan%20scoundrel.jpg
 value=1.552
 rarity=C
 type=Creature

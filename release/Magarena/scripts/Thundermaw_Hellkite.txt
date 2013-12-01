@@ -1,6 +1,6 @@
 name=Thundermaw Hellkite
 url=http://magiccards.info/m13/en/150.html
-image=http://magiccards.info/scans/en/m13/150.jpg
+image=http://mtgimage.com/card/thundermaw%20hellkite.jpg
 value=4.076
 rarity=M
 type=Creature

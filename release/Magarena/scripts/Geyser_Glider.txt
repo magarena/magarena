@@ -1,7 +1,7 @@
 name=Geyser Glider
 url=http://magiccards.info/zen/en/124.html
-image=http://magiccards.info/scans/en/zen/124.jpg
-value=1.955
+image=http://mtgimage.com/card/geyser%20glider.jpg
+value=1.958
 rarity=U
 type=Creature
 subtype=Elemental,Beast

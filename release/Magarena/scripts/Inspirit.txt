@@ -1,6 +1,6 @@
 name=Inspirit
 url=http://magiccards.info/9e/en/22.html
-image=http://magiccards.info/scans/en/9e/22.jpg
+image=http://mtgimage.com/card/inspirit.jpg
 value=2.804
 rarity=U
 type=Instant

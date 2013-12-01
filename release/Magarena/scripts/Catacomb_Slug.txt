@@ -1,6 +1,6 @@
 name=Catacomb Slug
 url=http://magiccards.info/rtr/en/58.html
-image=http://magiccards.info/scans/en/rtr/58.jpg
+image=http://mtgimage.com/card/catacomb%20slug.jpg
 value=1.920
 rarity=C
 type=Creature

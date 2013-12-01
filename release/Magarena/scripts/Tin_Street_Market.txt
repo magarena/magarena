@@ -1,0 +1,11 @@
+name=Tin Street Market
+url=http://magiccards.info/gtc/en/108.html
+image=http://mtgimage.com/card/tin%20street%20market.jpg
+value=1.220
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={4}{R}
+given_ability=pay {T},Discard a card:PN draws a card.
+enchant=pump,pos land
+timing=enchantment

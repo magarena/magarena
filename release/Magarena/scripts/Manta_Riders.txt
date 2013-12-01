@@ -1,6 +1,6 @@
 name=Manta Riders
 url=http://magiccards.info/tp/en/74.html
-image=http://magiccards.info/scans/en/tp/74.jpg
+image=http://mtgimage.com/card/manta%20riders.jpg
 value=2.641
 rarity=C
 type=Creature

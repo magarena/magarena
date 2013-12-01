@@ -1,6 +1,6 @@
 name=Predatory Sliver
 url=http://magiccards.info/m14/en/189.html
-image=http://magiccards.info/scans/en/m14/189.jpg
+image=http://mtgimage.com/card/predatory%20sliver.jpg
 value=3.955
 rarity=C
 type=Creature

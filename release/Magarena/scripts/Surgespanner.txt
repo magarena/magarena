@@ -1,6 +1,6 @@
 name=Surgespanner
 url=http://magiccards.info/lw/en/92.html
-image=http://magiccards.info/scans/en/lw/92.jpg
+image=http://mtgimage.com/card/surgespanner.jpg
 value=3.652
 rarity=R
 type=Creature

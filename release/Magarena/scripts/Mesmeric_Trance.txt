@@ -1,0 +1,9 @@
+name=Mesmeric Trance
+url=http://magiccards.info/me2/en/55.html
+image=http://mtgimage.com/card/mesmeric%20trance.jpg
+value=3.120
+rarity=R
+type=Enchantment
+cost={1}{U}{U}
+ability=cumulative upkeep {1};pay {U},Discard a card: PN draws a card.
+timing=enchantment

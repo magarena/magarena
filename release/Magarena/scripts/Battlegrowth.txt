@@ -1,6 +1,6 @@
 name=Battlegrowth
 url=http://magiccards.info/mi/en/113.html
-image=http://magiccards.info/scans/en/mi/113.jpg
+image=http://mtgimage.com/card/battlegrowth.jpg
 value=1.877
 rarity=C
 type=Instant

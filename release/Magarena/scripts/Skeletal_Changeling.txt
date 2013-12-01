@@ -1,6 +1,6 @@
 name=Skeletal Changeling
 url=http://magiccards.info/lw/en/140.html
-image=http://magiccards.info/scans/en/lw/140.jpg
+image=http://mtgimage.com/card/skeletal%20changeling.jpg
 value=2.750
 rarity=C
 type=Creature

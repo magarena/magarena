@@ -1,6 +1,6 @@
 name=Viridian Betrayers
 url=http://magiccards.info/nph/en/124.html
-image=http://magiccards.info/scans/en/nph/124.jpg
+image=http://mtgimage.com/card/viridian%20betrayers.jpg
 value=2.555
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Niblis of the Breath
 url=http://magiccards.info/dka/en/44.html
-image=http://magiccards.info/scans/en/dka/44.jpg
+image=http://mtgimage.com/card/niblis%20of%20the%20breath.jpg
 value=3.233
 rarity=U
 type=Creature

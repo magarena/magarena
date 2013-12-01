@@ -1,6 +1,6 @@
 name=Crucible of Fire
 url=http://magiccards.info/ala/en/96.html
-image=http://magiccards.info/scans/en/ala/96.jpg
+image=http://mtgimage.com/card/crucible%20of%20fire.jpg
 value=3.058
 rarity=R
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Rotlung Reanimator
 url=http://magiccards.info/on/en/164.html
-image=http://magiccards.info/scans/en/on/164.jpg
+image=http://mtgimage.com/card/rotlung%20reanimator.jpg
 value=4.250
 rarity=R
 type=Creature

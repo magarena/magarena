@@ -1,6 +1,6 @@
 name=Whispering Shade
 url=http://magiccards.info/od/en/167.html
-image=http://magiccards.info/scans/en/od/167.jpg
+image=http://mtgimage.com/card/whispering%20shade.jpg
 value=2.952
 rarity=C
 type=Creature

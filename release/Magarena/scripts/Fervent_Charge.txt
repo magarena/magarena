@@ -1,6 +1,6 @@
 name=Fervent Charge
 url=http://magiccards.info/ap/en/98.html
-image=http://magiccards.info/scans/en/ap/98.jpg
+image=http://mtgimage.com/card/fervent%20charge.jpg
 value=4.090
 rarity=R
 type=Enchantment

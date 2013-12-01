@@ -1,6 +1,6 @@
 name=Stronghold Zeppelin
 url=http://magiccards.info/ne/en/47.html
-image=http://magiccards.info/scans/en/ne/47.jpg
+image=http://mtgimage.com/card/stronghold%20zeppelin.jpg
 value=2.855
 rarity=U
 type=Creature

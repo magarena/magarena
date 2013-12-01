@@ -1,6 +1,6 @@
 name=Kabuto Moth
 url=http://magiccards.info/chk/en/20.html
-image=http://magiccards.info/scans/en/chk/20.jpg
+image=http://mtgimage.com/card/kabuto%20moth.jpg
 value=3.152
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Legacy's Allure
 url=http://magiccards.info/tp/en/71.html
-image=http://magiccards.info/scans/en/tp/71.jpg
-value=3.895
+image=http://mtgimage.com/card/legacy%27s%20allure.jpg
+value=3.910
 rarity=U
 type=Enchantment
 cost={U}{U}

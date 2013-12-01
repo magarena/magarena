@@ -1,7 +1,7 @@
 name=Ridge Rannet
 url=http://magiccards.info/ala/en/111.html
-image=http://magiccards.info/scans/en/ala/111.jpg
-value=2.009
+image=http://mtgimage.com/card/ridge%20rannet.jpg
+value=1.991
 rarity=C
 type=Creature
 subtype=Beast

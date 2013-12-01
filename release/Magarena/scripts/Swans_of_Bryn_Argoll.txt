@@ -1,6 +1,6 @@
 name=Swans of Bryn Argoll
 url=http://magiccards.info/shm/en/151.html
-image=http://magiccards.info/scans/en/shm/151.jpg
+image=http://mtgimage.com/card/swans%20of%20bryn%20argoll.jpg
 value=4.492
 rarity=R
 type=Creature

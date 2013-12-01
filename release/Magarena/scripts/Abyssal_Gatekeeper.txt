@@ -1,7 +1,7 @@
 name=Abyssal Gatekeeper
 url=http://magiccards.info/dvd/en/31.html
-image=http://magiccards.info/scans/en/dvd/31.jpg
-value=3.919
+image=http://mtgimage.com/card/abyssal%20gatekeeper.jpg
+value=3.921
 rarity=C
 type=Creature
 subtype=Horror

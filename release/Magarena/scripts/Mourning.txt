@@ -1,0 +1,12 @@
+name=Mourning
+url=http://magiccards.info/in/en/111.html
+image=http://mtgimage.com/card/mourning.jpg
+value=2.154
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+enchant=weaken,neg creature
+given_pt=-2/-0
+ability=pay {B}:Return SN to its owner's hand.
+timing=aura

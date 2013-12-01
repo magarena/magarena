@@ -1,6 +1,6 @@
 name=Esper Battlemage
 url=http://magiccards.info/ala/en/40.html
-image=http://magiccards.info/scans/en/ala/40.jpg
+image=http://mtgimage.com/card/esper%20battlemage.jpg
 value=3.015
 rarity=U
 type=Artifact,Creature

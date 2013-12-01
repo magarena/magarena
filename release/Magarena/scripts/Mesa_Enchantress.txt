@@ -1,7 +1,7 @@
 name=Mesa Enchantress
 url=http://magiccards.info/m12/en/25.html
-image=http://magiccards.info/scans/en/m12/25.jpg
-value=3.859
+image=http://mtgimage.com/card/mesa%20enchantress.jpg
+value=3.852
 rarity=R
 type=Creature
 subtype=Human,Druid

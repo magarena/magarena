@@ -1,6 +1,6 @@
 name=Greatbow Doyen
 url=http://magiccards.info/mt/en/125.html
-image=http://magiccards.info/scans/en/mt/125.jpg
+image=http://mtgimage.com/card/greatbow%20doyen.jpg
 value=4.038
 rarity=R
 type=Creature

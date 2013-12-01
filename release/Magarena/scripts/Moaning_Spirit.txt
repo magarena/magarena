@@ -1,6 +1,6 @@
 name=Moaning Spirit
 url=http://magiccards.info/po2/en/19.html
-image=http://magiccards.info/scans/en/po2/19.jpg
+image=http://mtgimage.com/card/moaning%20spirit.jpg
 value=2.667
 rarity=C
 type=Creature

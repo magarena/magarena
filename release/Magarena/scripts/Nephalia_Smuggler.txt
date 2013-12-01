@@ -1,7 +1,7 @@
 name=Nephalia Smuggler
 url=http://magiccards.info/avr/en/69.html
-image=http://magiccards.info/scans/en/avr/69.jpg
-value=2.983
+image=http://mtgimage.com/card/nephalia%20smuggler.jpg
+value=2.967
 rarity=U
 type=Creature
 subtype=Human,Rogue

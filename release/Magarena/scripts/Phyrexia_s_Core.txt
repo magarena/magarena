@@ -1,6 +1,6 @@
 name=Phyrexia's Core
 url=http://magiccards.info/nph/en/165.html
-image=http://magiccards.info/scans/en/nph/165.jpg
+image=http://mtgimage.com/card/phyrexia%27s%20core.jpg
 value=2.942
 rarity=U
 type=Land

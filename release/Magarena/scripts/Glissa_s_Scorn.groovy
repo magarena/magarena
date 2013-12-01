@@ -12,11 +12,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new MagicDestroyAction(permanent));
-                    game.doAction(new MagicChangeLifeAction(permanent.getController(),-1));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent permanent ->
+                game.doAction(new MagicDestroyAction(permanent));
+                game.doAction(new MagicChangeLifeAction(permanent.getController(),-1));
             });
         }
     }

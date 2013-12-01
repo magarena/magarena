@@ -1,6 +1,6 @@
 name=Regrowth
 url=http://magiccards.info/me4/en/163.html
-image=http://magiccards.info/scans/en/me4/163.jpg
+image=http://mtgimage.com/card/regrowth.jpg
 value=4.682
 rarity=U
 type=Sorcery

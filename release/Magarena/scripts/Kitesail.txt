@@ -1,6 +1,6 @@
 name=Kitesail
 url=http://magiccards.info/wwk/en/126.html
-image=http://magiccards.info/scans/en/wwk/126.jpg
+image=http://mtgimage.com/card/kitesail.jpg
 value=2.329
 rarity=C
 type=Artifact

@@ -1,6 +1,6 @@
 name=Veteran's Armaments
 url=http://magiccards.info/mt/en/146.html
-image=http://magiccards.info/scans/en/mt/146.jpg
+image=http://mtgimage.com/card/veteran%27s%20armaments.jpg
 value=3.538
 rarity=U
 type=Tribal,Artifact

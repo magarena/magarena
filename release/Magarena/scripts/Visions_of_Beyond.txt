@@ -1,6 +1,6 @@
 name=Visions of Beyond
 url=http://magiccards.info/m12/en/80.html
-image=http://magiccards.info/scans/en/m12/80.jpg
+image=http://mtgimage.com/card/visions%20of%20beyond.jpg
 value=4.125
 rarity=R
 type=Instant

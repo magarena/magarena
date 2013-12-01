@@ -1,0 +1,11 @@
+name=Limestone Golem
+url=http://magiccards.info/od/en/301.html
+image=http://mtgimage.com/card/limestone%20golem.jpg
+value=1.706
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=3/4
+ability=pay {2},{S}:Target player draws a card.
+timing=artifact

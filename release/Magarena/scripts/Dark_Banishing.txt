@@ -1,6 +1,6 @@
 name=Dark Banishing
 url=http://magiccards.info/tp/en/11.html
-image=http://magiccards.info/scans/en/tp/11.jpg
+image=http://mtgimage.com/card/dark%20banishing.jpg
 value=3.900
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Necrogen Censer
 url=http://magiccards.info/som/en/184.html
-image=http://magiccards.info/scans/en/som/184.jpg
-value=3.027
+image=http://mtgimage.com/card/necrogen%20censer.jpg
+value=2.991
 rarity=C
 type=Artifact
 cost={3}

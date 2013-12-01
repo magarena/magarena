@@ -41,10 +41,9 @@ def SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicTargetChoice(
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack targetSpell) {
-                    game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));  
-                }
+            event.processTargetCardOnStack(game, {
+                final MagicCardOnStack targetSpell ->
+                game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));  
             });
         }
     },
@@ -70,10 +69,9 @@ def SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicTargetChoice(
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack targetSpell) {
-                    game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));  
-                }
+            event.processTargetCardOnStack(game, {
+                final MagicCardOnStack targetSpell ->
+                game.doAction(new MagicCopyCardOnStackAction(event.getPlayer(),targetSpell));  
             });
         }
     }    

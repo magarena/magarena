@@ -1,6 +1,6 @@
 name=Annihilating Fire
 url=http://magiccards.info/rtr/en/85.html
-image=http://magiccards.info/scans/en/rtr/85.jpg
+image=http://mtgimage.com/card/annihilating%20fire.jpg
 value=2.435
 removal=3
 rarity=C

@@ -1,7 +1,7 @@
 name=Blinkmoth Nexus
 url=http://magiccards.info/ds/en/163.html
-image=http://magiccards.info/scans/en/ds/163.jpg
-value=4.038
+image=http://mtgimage.com/card/blinkmoth%20nexus.jpg
+value=4.071
 rarity=R
 type=Land
 ability=tap add mana {1};\

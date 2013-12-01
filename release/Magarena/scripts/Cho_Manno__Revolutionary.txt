@@ -1,6 +1,6 @@
 name=Cho-Manno, Revolutionary
 url=http://magiccards.info/10e/en/12.html
-image=http://magiccards.info/scans/en/10e/12.jpg
+image=http://mtgimage.com/card/cho%2Dmanno%2C%20revolutionary.jpg
 value=4.053
 rarity=R
 type=Legendary,Creature

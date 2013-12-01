@@ -12,12 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicTapAction(creature,true));
-                    final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower());
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicTapAction(creature,true));
+                final MagicDamage damage=new MagicDamage(creature,creature.getController(),creature.getPower());
+                game.doAction(new MagicDealDamageAction(damage));
             });
         }
     }

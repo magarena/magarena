@@ -1,6 +1,6 @@
 name=Ghitu Slinger
 url=http://magiccards.info/ul/en/77.html
-image=http://magiccards.info/scans/en/ul/77.jpg
+image=http://mtgimage.com/card/ghitu%20slinger.jpg
 value=3.500
 removal=2
 rarity=C

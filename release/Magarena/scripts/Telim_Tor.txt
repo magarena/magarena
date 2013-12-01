@@ -1,6 +1,6 @@
 name=Telim'Tor
 url=http://magiccards.info/mr/en/197.html
-image=http://magiccards.info/scans/en/mr/197.jpg
+image=http://mtgimage.com/card/telim%27tor.jpg
 value=3.016
 rarity=R
 type=Legendary,Creature

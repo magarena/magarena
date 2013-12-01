@@ -1,6 +1,6 @@
 name=Yavimaya Ants
 url=http://magiccards.info/ai/en/93.html
-image=http://magiccards.info/scans/en/ai/93.jpg
+image=http://mtgimage.com/card/yavimaya%20ants.jpg
 value=3.845
 rarity=U
 type=Creature

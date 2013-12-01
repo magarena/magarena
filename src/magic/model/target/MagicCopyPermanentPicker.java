@@ -4,13 +4,13 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicCopyTargetPicker extends MagicTargetPicker<MagicPermanent> {
+public class MagicCopyPermanentPicker extends MagicTargetPicker<MagicPermanent> {
 
-    private static final MagicCopyTargetPicker INSTANCE=new MagicCopyTargetPicker();
+    private static final MagicCopyPermanentPicker INSTANCE=new MagicCopyPermanentPicker();
 
-    private MagicCopyTargetPicker() {}
+    private MagicCopyPermanentPicker() {}
 
-    public static MagicCopyTargetPicker create() {
+    public static MagicCopyPermanentPicker create() {
         return INSTANCE;
     }
 

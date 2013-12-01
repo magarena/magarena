@@ -1,6 +1,6 @@
 name=Fusion Elemental
 url=http://magiccards.info/cfx/en/107.html
-image=http://magiccards.info/scans/en/cfx/107.jpg
+image=http://mtgimage.com/card/fusion%20elemental.jpg
 value=3.057
 rarity=U
 type=Creature

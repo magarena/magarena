@@ -1,7 +1,7 @@
 name=Darksteel Forge
 url=http://magiccards.info/pch/en/111.html
-image=http://magiccards.info/scans/en/pch/111.jpg
-value=3.636
+image=http://mtgimage.com/card/darksteel%20forge.jpg
+value=3.623
 rarity=R
 type=Artifact
 cost={9}

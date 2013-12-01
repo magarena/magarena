@@ -1,6 +1,6 @@
 name=Sudden Disappearance
 url=http://magiccards.info/dka/en/23.html
-image=http://magiccards.info/scans/en/dka/23.jpg
+image=http://mtgimage.com/card/sudden%20disappearance.jpg
 value=3.553
 rarity=R
 type=Sorcery

@@ -1,0 +1,11 @@
+name=Wizard Replica
+url=http://magiccards.info/pch/en/129.html
+image=http://mtgimage.com/card/wizard%20replica.jpg
+value=3.818
+rarity=C
+type=Artifact,Creature
+subtype=Wizard
+cost={3}
+pt=1/3
+ability=pay {U},{S}:Counter target spell unless its controller pays {2}.
+timing=artifact

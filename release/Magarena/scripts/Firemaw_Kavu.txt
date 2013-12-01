@@ -1,6 +1,6 @@
 name=Firemaw Kavu
 url=http://magiccards.info/ts/en/153.html
-image=http://magiccards.info/scans/en/ts/153.jpg
+image=http://mtgimage.com/card/firemaw%20kavu.jpg
 value=2.346
 removal=1
 rarity=U

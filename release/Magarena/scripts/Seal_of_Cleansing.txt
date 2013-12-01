@@ -1,0 +1,9 @@
+name=Seal of Cleansing
+url=http://magiccards.info/ne/en/18.html
+image=http://mtgimage.com/card/seal%20of%20cleansing.jpg
+value=3.990
+rarity=C
+type=Enchantment
+cost={1}{W}
+ability=pay {S}: Destroy target artifact or enchantment.
+timing=enchantment

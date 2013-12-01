@@ -1,6 +1,6 @@
 name=Bloodshot Cyclops
 url=http://magiccards.info/8e/en/179.html
-image=http://magiccards.info/scans/en/8e/179.jpg
+image=http://mtgimage.com/card/bloodshot%20cyclops.jpg
 value=3.846
 rarity=R
 type=Creature

@@ -12,7 +12,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
             return new MagicEvent(
                 cardOnStack,
                 new MagicMayChoice(MagicTargetChoice.CREATURE),
-                MagicCopyTargetPicker.create(),
+                MagicCopyPermanentPicker.create(),
                 this,
                 "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, " + 
                 "except it's an Illusion in addition to its other types and it gains \"When this creature becomes the target of a spell or ability, sacrifice it.\""
@@ -32,7 +32,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
                     final MagicPermanent perm = action.getPermanent();
                     game.doAction(new MagicAddStaticAction(perm, ST));
                     game.doAction(new MagicAddTriggerAction(perm, MagicWhenTargetedTrigger.SacWhenTargeted));
-                } as MagicPermanentAction);
+                });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
                     event.getCardOnStack()

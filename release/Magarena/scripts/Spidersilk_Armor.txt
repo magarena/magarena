@@ -1,6 +1,6 @@
 name=Spidersilk Armor
 url=http://magiccards.info/ddg/en/32.html
-image=http://magiccards.info/scans/en/ddg/32.jpg
+image=http://mtgimage.com/card/spidersilk%20armor.jpg
 value=4.262
 rarity=C
 type=Enchantment

@@ -1,0 +1,9 @@
+name=Zephyr Charge
+url=http://magiccards.info/m14/en/82.html
+image=http://mtgimage.com/card/zephyr%20charge.jpg
+value=3.520
+rarity=C
+type=Enchantment
+cost={1}{U}
+ability=pay {1}{U}:Target creature gains flying until end of turn.
+timing=enchantment

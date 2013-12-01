@@ -1,6 +1,6 @@
 name=Drake Hatchling
 url=http://magiccards.info/mm/en/76.html
-image=http://magiccards.info/scans/en/mm/76.jpg
+image=http://mtgimage.com/card/drake%20hatchling.jpg
 value=2.708
 rarity=C
 type=Creature

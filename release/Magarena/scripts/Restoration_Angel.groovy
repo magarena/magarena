@@ -19,20 +19,19 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicRemoveFromPlayAction(
-                            creature,
-                            MagicLocationType.Exile
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(new MagicRemoveFromPlayAction(
+                        creature,
+                        MagicLocationType.Exile
+                    ));
+                    final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(creature.getCard(), MagicLocationType.Exile);
+                    game.doAction(removeCard);
+                    if (removeCard.isValid()) {
+                        game.doAction(new MagicPlayCardAction(
+                            creature.getCard(),
+                            event.getPlayer()
                         ));
-                        final MagicRemoveCardAction removeCard = new MagicRemoveCardAction(creature.getCard(), MagicLocationType.Exile);
-                        game.doAction(removeCard);
-                        if (removeCard.isValid()) {
-                            game.doAction(new MagicPlayCardAction(
-                                creature.getCard(),
-                                event.getPlayer()
-                            ));
-                        }
                     }
                 });
             }

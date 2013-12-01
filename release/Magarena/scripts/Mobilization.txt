@@ -1,6 +1,6 @@
 name=Mobilization
 url=http://magiccards.info/10e/en/29.html
-image=http://magiccards.info/scans/en/10e/29.jpg
+image=http://mtgimage.com/card/mobilization.jpg
 value=4.254
 rarity=R
 type=Enchantment

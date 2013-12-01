@@ -1,6 +1,6 @@
 name=Leaden Myr
 url=http://magiccards.info/som/en/170.html
-image=http://magiccards.info/scans/en/som/170.jpg
+image=http://mtgimage.com/card/leaden%20myr.jpg
 value=3.058
 rarity=C
 type=Artifact,Creature

@@ -1,6 +1,6 @@
 name=Ghost Council of Orzhova
 url=http://magiccards.info/gp/en/114.html
-image=http://magiccards.info/scans/en/gp/114.jpg
+image=http://mtgimage.com/card/ghost%20council%20of%20orzhova.jpg
 value=3.936
 rarity=R
 type=Legendary,Creature

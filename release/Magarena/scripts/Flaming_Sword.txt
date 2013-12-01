@@ -1,6 +1,6 @@
 name=Flaming Sword
 url=http://magiccards.info/mm/en/190.html
-image=http://magiccards.info/scans/en/mm/190.jpg
+image=http://mtgimage.com/card/flaming%20sword.jpg
 value=3.481
 rarity=C
 type=Enchantment

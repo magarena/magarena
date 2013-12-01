@@ -1,7 +1,7 @@
 name=Battering Krasis
 url=http://magiccards.info/dgm/en/41.html
-image=http://magiccards.info/scans/en/dgm/41.jpg
-value=3.385
+image=http://mtgimage.com/card/battering%20krasis.jpg
+value=3.378
 rarity=C
 type=Creature
 subtype=Fish,Beast

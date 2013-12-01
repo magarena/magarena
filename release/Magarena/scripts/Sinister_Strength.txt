@@ -1,6 +1,6 @@
 name=Sinister Strength
 url=http://magiccards.info/ps/en/54.html
-image=http://magiccards.info/scans/en/ps/54.jpg
+image=http://mtgimage.com/card/sinister%20strength.jpg
 value=3.897
 rarity=C
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Kor Sanctifiers
 url=http://magiccards.info/zen/en/22.html
-image=http://magiccards.info/scans/en/zen/22.jpg
+image=http://mtgimage.com/card/kor%20sanctifiers.jpg
 value=3.766
 rarity=C
 type=Creature

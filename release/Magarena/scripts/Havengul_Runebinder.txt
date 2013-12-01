@@ -1,6 +1,6 @@
 name=Havengul Runebinder
 url=http://magiccards.info/dka/en/39.html
-image=http://magiccards.info/scans/en/dka/39.jpg
+image=http://mtgimage.com/card/havengul%20runebinder.jpg
 value=3.406
 rarity=R
 type=Creature

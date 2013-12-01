@@ -1,6 +1,6 @@
 name=Instill Infection
 url=http://magiccards.info/som/en/68.html
-image=http://magiccards.info/scans/en/som/68.jpg
+image=http://mtgimage.com/card/instill%20infection.jpg
 value=1.571
 removal=1
 rarity=C

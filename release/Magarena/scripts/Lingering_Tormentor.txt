@@ -1,6 +1,6 @@
 name=Lingering Tormentor
 url=http://magiccards.info/eve/en/36.html
-image=http://magiccards.info/scans/en/eve/36.jpg
+image=http://mtgimage.com/card/lingering%20tormentor.jpg
 value=2.176
 rarity=U
 type=Creature

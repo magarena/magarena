@@ -1,6 +1,6 @@
 name=Burn the Impure
 url=http://magiccards.info/mbs/en/59.html
-image=http://magiccards.info/scans/en/mbs/59.jpg
+image=http://mtgimage.com/card/burn%20the%20impure.jpg
 value=3.279
 removal=3
 rarity=C

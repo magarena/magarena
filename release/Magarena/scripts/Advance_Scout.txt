@@ -1,0 +1,11 @@
+name=Advance Scout
+url=http://magiccards.info/tp/en/213.html
+image=http://mtgimage.com/card/advance%20scout.jpg
+value=3.635
+rarity=C
+type=Creature
+subtype=Human,Soldier,Scout
+cost={1}{W}
+pt=1/1
+ability=first strike;pay {W}:Target creature gains first strike until end of turn.
+timing=main

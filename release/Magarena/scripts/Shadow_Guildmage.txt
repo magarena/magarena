@@ -1,6 +1,6 @@
 name=Shadow Guildmage
 url=http://magiccards.info/mr/en/38.html
-image=http://magiccards.info/scans/en/mr/38.jpg
+image=http://mtgimage.com/card/shadow%20guildmage.jpg
 value=3.630
 rarity=C
 type=Creature

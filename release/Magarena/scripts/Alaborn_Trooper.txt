@@ -1,6 +1,6 @@
 name=Alaborn Trooper
 url=http://magiccards.info/me4/en/2.html
-image=http://magiccards.info/scans/en/me4/2.jpg
+image=http://mtgimage.com/card/alaborn%20trooper.jpg
 value=2.062
 rarity=C
 type=Creature

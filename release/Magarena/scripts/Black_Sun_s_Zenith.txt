@@ -1,7 +1,7 @@
 name=Black Sun's Zenith
 url=http://magiccards.info/mbs/en/39.html
-image=http://magiccards.info/scans/en/mbs/39.jpg
-value=4.055
+image=http://mtgimage.com/card/black%20sun%27s%20zenith.jpg
+value=4.057
 removal=3
 rarity=R
 type=Sorcery

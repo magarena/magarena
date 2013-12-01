@@ -13,11 +13,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    game.doAction(new MagicDrawAction(player));
-                    game.doAction(new MagicChangeLifeAction(player,-1));
-                }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                game.doAction(new MagicDrawAction(player));
+                game.doAction(new MagicChangeLifeAction(player,-1));
             });
         }
     }

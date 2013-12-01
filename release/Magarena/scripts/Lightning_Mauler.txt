@@ -1,6 +1,6 @@
 name=Lightning Mauler
 url=http://magiccards.info/avr/en/144.html
-image=http://magiccards.info/scans/en/avr/144.jpg
+image=http://mtgimage.com/card/lightning%20mauler.jpg
 value=3.861
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Skywinder Drake
 url=http://magiccards.info/m12/en/75.html
-image=http://magiccards.info/scans/en/m12/75.jpg
+image=http://mtgimage.com/card/skywinder%20drake.jpg
 value=3.073
 rarity=C
 type=Creature

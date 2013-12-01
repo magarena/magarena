@@ -1,7 +1,7 @@
 name=Enlightened Tutor
 url=http://magiccards.info/mr/en/218.html
-image=http://magiccards.info/scans/en/mr/218.jpg
-value=4.647
+image=http://mtgimage.com/card/enlightened%20tutor.jpg
+value=4.646
 rarity=U
 type=Instant
 cost={W}

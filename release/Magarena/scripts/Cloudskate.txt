@@ -1,7 +1,7 @@
 name=Cloudskate
 url=http://magiccards.info/ne/en/29.html
-image=http://magiccards.info/scans/en/ne/29.jpg
-value=3.147
+image=http://mtgimage.com/card/cloudskate.jpg
+value=3.189
 rarity=C
 type=Creature
 subtype=Illusion

@@ -1,6 +1,6 @@
 name=Counterspell
 url=http://magiccards.info/jvc/en/24.html
-image=http://magiccards.info/scans/en/jvc/24.jpg
+image=http://mtgimage.com/card/counterspell.jpg
 value=4.652
 rarity=C
 type=Instant

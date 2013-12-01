@@ -161,7 +161,7 @@ public class DefaultDeckGenerator {
             }
         }
 
-        // Add non basic lands to deck.
+        // Add nonbasic lands to deck.
         addRequiredLands(condensedDeck);
 
         while (condensedDeck.getNumCards() < spells+lands && landCards.size() > 0) {

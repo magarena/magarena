@@ -1,0 +1,9 @@
+name=Compulsion
+url=http://magiccards.info/tr/en/34.html
+image=http://mtgimage.com/card/compulsion.jpg
+value=4.118
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=pay {1}{U},Discard a card:PN draws a card.;pay {1}{U},{S}:PN draws a card.
+timing=enchantment

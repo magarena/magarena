@@ -1,6 +1,6 @@
 name=Wall of Brambles
 url=http://magiccards.info/5e/en/200.html
-image=http://magiccards.info/scans/en/5e/200.jpg
+image=http://mtgimage.com/card/wall%20of%20brambles.jpg
 value=3.190
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Phyrexian Ghoul
 url=http://magiccards.info/us/en/148.html
-image=http://magiccards.info/scans/en/us/148.jpg
+image=http://mtgimage.com/card/phyrexian%20ghoul.jpg
 value=3.990
 rarity=C
 type=Creature

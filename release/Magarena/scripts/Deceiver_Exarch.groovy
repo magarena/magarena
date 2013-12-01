@@ -11,10 +11,9 @@ def TapTrigger = new MagicWhenComesIntoPlayTrigger() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetPermanent(game,new MagicPermanentAction() {
-            public void doAction(final MagicPermanent creature) {
-                game.doAction(new MagicUntapAction(creature));
-            }
+        event.processTargetPermanent(game, {
+            final MagicPermanent creature ->
+            game.doAction(new MagicUntapAction(creature));
         });
     }
 }
@@ -32,10 +31,9 @@ def UntapTrigger = new MagicWhenComesIntoPlayTrigger() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetPermanent(game,new MagicPermanentAction() {
-            public void doAction(final MagicPermanent creature) {
-                game.doAction(new MagicTapAction(creature, true));
-            }
+        event.processTargetPermanent(game, {
+            final MagicPermanent creature ->
+            game.doAction(new MagicTapAction(creature, true));
         });
     }
 }

@@ -1,6 +1,6 @@
 name=Mindwrack Liege
 url=http://magiccards.info/eve/en/104.html
-image=http://magiccards.info/scans/en/eve/104.jpg
+image=http://mtgimage.com/card/mindwrack%20liege.jpg
 value=3.850
 rarity=R
 type=Creature

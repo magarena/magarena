@@ -73,7 +73,7 @@ def A_SLIVER_CARD_FROM_LIBRARY = new MagicTargetChoice(
                     event.getPlayer(),
                     perm
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

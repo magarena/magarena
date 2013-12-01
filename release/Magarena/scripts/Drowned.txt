@@ -1,6 +1,6 @@
 name=Drowned
 url=http://magiccards.info/dk/en/23.html
-image=http://magiccards.info/scans/en/dk/23.jpg
+image=http://mtgimage.com/card/drowned.jpg
 value=3.386
 rarity=C
 type=Creature

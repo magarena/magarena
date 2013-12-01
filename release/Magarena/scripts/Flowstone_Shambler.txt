@@ -1,6 +1,6 @@
 name=Flowstone Shambler
 url=http://magiccards.info/9e/en/185.html
-image=http://magiccards.info/scans/en/9e/185.jpg
+image=http://mtgimage.com/card/flowstone%20shambler.jpg
 value=2.281
 rarity=C
 type=Creature

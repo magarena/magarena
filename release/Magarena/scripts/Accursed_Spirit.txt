@@ -1,6 +1,6 @@
 name=Accursed Spirit
 url=http://magiccards.info/m14/en/83.html
-image=http://magiccards.info/scans/en/m14/83.jpg
+image=http://mtgimage.com/card/accursed%20spirit.jpg
 value=3.117
 rarity=C
 type=Creature

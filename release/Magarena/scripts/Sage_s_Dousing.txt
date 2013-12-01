@@ -1,6 +1,6 @@
 name=Sage's Dousing
 url=http://magiccards.info/mt/en/48.html
-image=http://magiccards.info/scans/en/mt/48.jpg
+image=http://mtgimage.com/card/sage%27s%20dousing.jpg
 value=3.674
 rarity=U
 type=Tribal,Instant

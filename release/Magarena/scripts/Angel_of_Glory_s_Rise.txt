@@ -1,7 +1,7 @@
 name=Angel of Glory's Rise
 url=http://magiccards.info/avr/en/1.html
-image=http://magiccards.info/scans/en/avr/1.jpg
-value=3.575
+image=http://mtgimage.com/card/angel%20of%20glory%27s%20rise.jpg
+value=3.574
 removal=2
 rarity=R
 type=Creature

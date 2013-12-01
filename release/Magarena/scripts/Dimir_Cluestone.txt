@@ -1,0 +1,9 @@
+name=Dimir Cluestone
+url=http://magiccards.info/dgm/en/138.html
+image=http://mtgimage.com/card/dimir%20cluestone.jpg
+value=2.714
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {U} or {B};pay {U}{B},{S}: PN draws a card.
+timing=artifact

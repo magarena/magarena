@@ -1,6 +1,6 @@
 name=Hagra Crocodile
 url=http://magiccards.info/zen/en/94.html
-image=http://magiccards.info/scans/en/zen/94.jpg
+image=http://mtgimage.com/card/hagra%20crocodile.jpg
 value=2.000
 rarity=C
 type=Creature

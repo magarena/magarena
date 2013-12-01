@@ -1,6 +1,6 @@
 name=Armageddon
 url=http://magiccards.info/me4/en/5.html
-image=http://magiccards.info/scans/en/me4/5.jpg
+image=http://mtgimage.com/card/armageddon.jpg
 value=4.557
 removal=2
 rarity=R

@@ -1,7 +1,7 @@
 name=Brainstorm
 url=http://magiccards.info/cmd/en/40.html
-image=http://magiccards.info/scans/en/cmd/40.jpg
-value=4.682
+image=http://mtgimage.com/card/brainstorm.jpg
+value=4.686
 rarity=C
 type=Instant
 cost={U}

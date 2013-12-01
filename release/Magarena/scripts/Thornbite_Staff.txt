@@ -1,6 +1,6 @@
 name=Thornbite Staff
 url=http://magiccards.info/mt/en/145.html
-image=http://magiccards.info/scans/en/mt/145.jpg
+image=http://mtgimage.com/card/thornbite%20staff.jpg
 value=3.762
 rarity=U
 type=Tribal,Artifact

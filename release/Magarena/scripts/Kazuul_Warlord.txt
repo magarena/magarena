@@ -1,6 +1,6 @@
 name=Kazuul Warlord
 url=http://magiccards.info/zen/en/134.html
-image=http://magiccards.info/scans/en/zen/134.jpg
+image=http://mtgimage.com/card/kazuul%20warlord.jpg
 value=3.994
 rarity=R
 type=Creature

@@ -1,0 +1,9 @@
+name=Soaring Seacliff
+url=http://magiccards.info/ddi/en/37.html
+image=http://mtgimage.com/card/soaring%20seacliff.jpg
+value=2.472
+rarity=C
+type=Land
+mana=u3
+ability=enters tapped;enters effect Target creature gains flying until end of turn.;tap add mana {U}
+timing=fmain

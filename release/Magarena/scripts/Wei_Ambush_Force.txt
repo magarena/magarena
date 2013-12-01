@@ -1,6 +1,6 @@
 name=Wei Ambush Force
 url=http://magiccards.info/p3k/en/85.html
-image=http://magiccards.info/scans/en/p3k/85.jpg
+image=http://mtgimage.com/card/wei%20ambush%20force.jpg
 value=3.286
 rarity=C
 type=Creature

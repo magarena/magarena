@@ -1,6 +1,6 @@
 name=Tropical Island
 url=http://magiccards.info/me4/en/254.html
-image=http://magiccards.info/scans/en/me4/254.jpg
+image=http://mtgimage.com/card/tropical%20island.jpg
 value=4.679
 rarity=R
 type=Land

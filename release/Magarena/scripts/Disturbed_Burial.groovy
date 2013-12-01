@@ -14,13 +14,12 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard targetCard) {
-                    game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                    if (event.isBuyback()) {
-                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    }
+            event.processTargetCard(game, {
+                final MagicCard targetCard ->
+                game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                if (event.isBuyback()) {
+                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }
             });
         }

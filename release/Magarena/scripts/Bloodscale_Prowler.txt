@@ -1,6 +1,6 @@
 name=Bloodscale Prowler
 url=http://magiccards.info/gp/en/64.html
-image=http://magiccards.info/scans/en/gp/64.jpg
+image=http://mtgimage.com/card/bloodscale%20prowler.jpg
 value=2.362
 rarity=C
 type=Creature

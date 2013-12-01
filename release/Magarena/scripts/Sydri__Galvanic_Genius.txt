@@ -1,7 +1,7 @@
 name=Sydri, Galvanic Genius
 url=http://magiccards.info/c13/en/220.html
-image=http://magiccards.info/scans/en/c13/220.jpg
-value=4.423
+image=http://mtgimage.com/card/sydri%2C%20galvanic%20genius.jpg
+value=4.448
 rarity=M
 type=Legendary,Creature
 subtype=Human,Artificer

@@ -20,13 +20,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetCard(game,new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                        final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(),MagicPayedCost.NO_COST);
-                        cardOnStack.setMoveLocation(MagicLocationType.Exile);
-                        game.doAction(new MagicPutItemOnStackAction(cardOnStack));
-                    }
+                event.processTargetCard(game, {
+                    final MagicCard card ->
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+                    final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(),MagicPayedCost.NO_COST);
+                    cardOnStack.setMoveLocation(MagicLocationType.Exile);
+                    game.doAction(new MagicPutItemOnStackAction(cardOnStack));
                 });
             }
         }

@@ -1,6 +1,6 @@
 name=Nameless Inversion
 url=http://magiccards.info/lw/en/128.html
-image=http://magiccards.info/scans/en/lw/128.jpg
+image=http://mtgimage.com/card/nameless%20inversion.jpg
 value=4.211
 rarity=C
 type=Tribal,Instant

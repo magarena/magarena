@@ -1,7 +1,7 @@
 name=Deeptread Merrow
 url=http://magiccards.info/lw/en/57.html
-image=http://magiccards.info/scans/en/lw/57.jpg
-value=2.224
+image=http://mtgimage.com/card/deeptread%20merrow.jpg
+value=2.233
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

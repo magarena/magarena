@@ -1,6 +1,6 @@
 name=Jedit Ojanen
 url=http://magiccards.info/me3/en/153.html
-image=http://magiccards.info/scans/en/me3/153.jpg
+image=http://mtgimage.com/card/jedit%20ojanen.jpg
 value=1.205
 rarity=U
 type=Legendary,Creature

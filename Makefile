@@ -461,9 +461,9 @@ checks: \
 	check_requires_groovy_code \
 	check_script_name \
 	check_tokens \
-	check_unique_key \
+	check_unique_property \
+	check_required_property \
 	check_groovy_escape \
-	check_tokens \
 	check_url \
 	check_image \
 	check_meta \
@@ -526,8 +526,20 @@ check_decks:
 	<(grep "name=" -r release/Magarena/scripts/ | sed 's/.*name=//' | sort) \
 	<(cat release/Magarena/decks/*.dec | grep "^[0-9]" | sed 's/^[0-9]* //' | sort | uniq) | grep ">" | ${NO_OUTPUT}
 
-check_unique_key:
+check_unique_property:
 	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d | ${NO_OUTPUT}
+
+property_stats:
+	grep "^[a-z]*=" -hr release/Magarena/scripts/*.txt -o | sort | uniq -c | sort -n
+
+check_required_property:
+	grep image= -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep name=  -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep type=  -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep value= -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep rarity= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT} 
+	grep timing= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
+	grep url=    -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
@@ -642,3 +654,7 @@ common_actions:
 src/magic/MurmurHash3.java:
 	curl https://raw.github.com/infinispan/infinispan/master/commons/src/main/java/org/infinispan/commons/hash/MurmurHash3.java > $@
 	patch $@ src/magic/MurmurHash3.diff
+
+mtgimage:
+	grep mtgimage -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_image.awk {} '>' {.}.img
+	ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt

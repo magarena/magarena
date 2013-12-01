@@ -1,6 +1,6 @@
 name=Wall of Pine Needles
 url=http://magiccards.info/ia/en/162.html
-image=http://magiccards.info/scans/en/ia/162.jpg
+image=http://mtgimage.com/card/wall%20of%20pine%20needles.jpg
 value=3.176
 rarity=U
 type=Creature

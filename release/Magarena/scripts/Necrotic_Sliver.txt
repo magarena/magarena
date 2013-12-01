@@ -1,6 +1,6 @@
 name=Necrotic Sliver
 url=http://magiccards.info/pds/en/20.html
-image=http://magiccards.info/scans/en/pds/20.jpg
+image=http://mtgimage.com/card/necrotic%20sliver.jpg
 value=4.483
 rarity=U
 type=Creature

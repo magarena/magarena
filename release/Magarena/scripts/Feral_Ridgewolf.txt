@@ -1,6 +1,6 @@
 name=Feral Ridgewolf
 url=http://magiccards.info/isd/en/142.html
-image=http://magiccards.info/scans/en/isd/142.jpg
+image=http://mtgimage.com/card/feral%20ridgewolf.jpg
 value=2.956
 rarity=C
 type=Creature

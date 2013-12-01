@@ -1,6 +1,6 @@
 name=Repentant Blacksmith
 url=http://magiccards.info/5e/en/330.html
-image=http://magiccards.info/scans/en/5e/330.jpg
+image=http://mtgimage.com/card/repentant%20blacksmith.jpg
 value=3.074
 rarity=C
 type=Creature

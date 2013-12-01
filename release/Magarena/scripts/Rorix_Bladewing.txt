@@ -1,6 +1,6 @@
 name=Rorix Bladewing
 url=http://magiccards.info/pch/en/65.html
-image=http://magiccards.info/scans/en/pch/65.jpg
+image=http://mtgimage.com/card/rorix%20bladewing.jpg
 value=4.169
 rarity=R
 type=Legendary,Creature

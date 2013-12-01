@@ -1,6 +1,6 @@
 name=Constricting Tendrils
 url=http://magiccards.info/con/en/22.html
-image=http://magiccards.info/scans/en/con/22.jpg
+image=http://mtgimage.com/card/constricting%20tendrils.jpg
 value=1.554
 rarity=C
 type=Instant

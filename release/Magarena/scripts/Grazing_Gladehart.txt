@@ -1,7 +1,7 @@
 name=Grazing Gladehart
 url=http://magiccards.info/ddh/en/11.html
-image=http://magiccards.info/scans/en/ddh/11.jpg
-value=3.333
+image=http://mtgimage.com/card/grazing%20gladehart.jpg
+value=4.250
 rarity=C
 type=Creature
 subtype=Antelope

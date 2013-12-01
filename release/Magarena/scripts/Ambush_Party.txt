@@ -1,6 +1,6 @@
 name=Ambush Party
 url=http://magiccards.info/me2/en/115.html
-image=http://magiccards.info/scans/en/me2/115.jpg
+image=http://mtgimage.com/card/ambush%20party.jpg
 value=2.167
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Suq'Ata Assassin
 url=http://magiccards.info/vi/en/19.html
-image=http://magiccards.info/scans/en/vi/19.jpg
+image=http://mtgimage.com/card/suq%27ata%20assassin.jpg
 value=2.986
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Krosan Beast
 url=http://magiccards.info/od/en/248.html
-image=http://magiccards.info/scans/en/od/248.jpg
-value=4.438
+image=http://mtgimage.com/card/krosan%20beast.jpg
+value=4.439
 rarity=R
 type=Creature
 subtype=Squirrel,Beast

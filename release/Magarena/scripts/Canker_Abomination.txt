@@ -1,6 +1,6 @@
 name=Canker Abomination
 url=http://magiccards.info/eve/en/115.html
-image=http://magiccards.info/scans/en/eve/115.jpg
+image=http://mtgimage.com/card/canker%20abomination.jpg
 value=3.260
 rarity=U
 type=Creature

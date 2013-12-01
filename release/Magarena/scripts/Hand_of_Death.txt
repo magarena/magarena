@@ -1,6 +1,6 @@
 name=Hand of Death
 url=http://magiccards.info/st2k/en/6.html
-image=http://magiccards.info/scans/en/st2k/6.jpg
+image=http://mtgimage.com/card/hand%20of%20death.jpg
 value=2.014
 removal=4
 rarity=C

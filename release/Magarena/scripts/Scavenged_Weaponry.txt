@@ -1,6 +1,6 @@
 name=Scavenged Weaponry
 url=http://magiccards.info/in/en/123.html
-image=http://magiccards.info/scans/en/in/123.jpg
+image=http://mtgimage.com/card/scavenged%20weaponry.jpg
 value=2.655
 rarity=C
 type=Enchantment

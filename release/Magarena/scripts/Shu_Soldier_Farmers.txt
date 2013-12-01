@@ -1,6 +1,6 @@
 name=Shu Soldier-Farmers
 url=http://magiccards.info/p3k/en/27.html
-image=http://magiccards.info/scans/en/p3k/27.jpg
+image=http://mtgimage.com/card/shu%20soldier%2Dfarmers.jpg
 value=2.042
 rarity=C
 type=Creature

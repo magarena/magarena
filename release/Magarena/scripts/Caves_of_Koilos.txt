@@ -1,6 +1,6 @@
 name=Caves of Koilos
 url=http://magiccards.info/10e/en/350.html
-image=http://magiccards.info/scans/en/10e/350.jpg
+image=http://mtgimage.com/card/caves%20of%20koilos.jpg
 value=4.342
 rarity=R
 type=Land

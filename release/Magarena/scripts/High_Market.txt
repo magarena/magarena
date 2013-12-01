@@ -1,6 +1,6 @@
 name=High Market
 url=http://magiccards.info/v12/en/9.html
-image=http://magiccards.info/scans/en/v12/9.jpg
+image=http://mtgimage.com/card/high%20market.jpg
 value=3.766
 rarity=M
 type=Land

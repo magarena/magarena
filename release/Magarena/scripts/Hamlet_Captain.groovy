@@ -7,7 +7,7 @@ def Action = {
             game.doAction(new MagicChangeTurnPTAction(creature,1,1));
         }
     }
-} as MagicEventAction
+}
 
 def Event = {
     final MagicPermanent permanent ->

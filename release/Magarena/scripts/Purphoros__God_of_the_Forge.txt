@@ -1,7 +1,7 @@
 name=Purphoros, God of the Forge
 url=http://magiccards.info/ths/en/135.html
-image=http://magiccards.info/scans/en/ths/135.jpg
-value=4.518
+image=http://mtgimage.com/card/purphoros%2C%20god%20of%20the%20forge.jpg
+value=4.520
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

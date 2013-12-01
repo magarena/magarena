@@ -1,6 +1,6 @@
 name=Dormant Sliver
 url=http://magiccards.info/pc/en/156.html
-image=http://magiccards.info/scans/en/pc/156.jpg
+image=http://mtgimage.com/card/dormant%20sliver.jpg
 value=3.425
 rarity=U
 type=Creature

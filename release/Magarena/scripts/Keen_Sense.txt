@@ -1,7 +1,7 @@
 name=Keen Sense
 url=http://magiccards.info/pc/en/152.html
-image=http://magiccards.info/scans/en/pc/152.jpg
-value=3.961
+image=http://mtgimage.com/card/keen%20sense.jpg
+value=3.962
 rarity=U
 type=Enchantment
 subtype=Aura

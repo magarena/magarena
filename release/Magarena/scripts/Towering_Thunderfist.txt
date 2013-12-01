@@ -1,6 +1,6 @@
 name=Towering Thunderfist
 url=http://magiccards.info/gtc/en/109.html
-image=http://magiccards.info/scans/en/gtc/109.jpg
+image=http://mtgimage.com/card/towering%20thunderfist.jpg
 value=2.803
 rarity=C
 type=Creature

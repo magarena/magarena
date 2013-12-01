@@ -1,0 +1,9 @@
+name=Relic Barrier
+url=http://magiccards.info/5dn/en/147.html
+image=http://mtgimage.com/card/relic%20barrier.jpg
+value=3.286
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {T}:Tap target artifact.
+timing=artifact

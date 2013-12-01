@@ -25,7 +25,7 @@
                         perm
                     )
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

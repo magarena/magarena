@@ -1,6 +1,6 @@
 name=Might Sliver
 url=http://magiccards.info/pds/en/23.html
-image=http://magiccards.info/scans/en/pds/23.jpg
+image=http://mtgimage.com/card/might%20sliver.jpg
 value=3.990
 rarity=U
 type=Creature

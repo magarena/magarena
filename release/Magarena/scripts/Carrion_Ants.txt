@@ -1,6 +1,6 @@
 name=Carrion Ants
 url=http://magiccards.info/5e/en/12.html
-image=http://magiccards.info/scans/en/5e/12.jpg
+image=http://mtgimage.com/card/carrion%20ants.jpg
 value=3.210
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=White Shield Crusader
 url=http://magiccards.info/cs/en/24.html
-image=http://magiccards.info/scans/en/cs/24.jpg
+image=http://mtgimage.com/card/white%20shield%20crusader.jpg
 value=4.188
 rarity=U
 type=Creature

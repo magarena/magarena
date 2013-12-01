@@ -19,7 +19,7 @@
                     new MagicDamage(event.getSource(),target,2)
                 ));
                 game.doAction(new MagicGainAbilityAction(target, MagicAbility.CannotBlock));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

@@ -11,11 +11,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack targetSpell) {
-                    if (targetSpell.getController().getPoison() > 0) {
-                        game.doAction(new MagicCounterItemOnStackAction(targetSpell));
-                    }
+            event.processTargetCardOnStack(game, {
+                final MagicCardOnStack targetSpell ->
+                if (targetSpell.getController().getPoison() > 0) {
+                    game.doAction(new MagicCounterItemOnStackAction(targetSpell));
                 }
             });
         }

@@ -1,0 +1,10 @@
+name=1/1 white Pegasus creature token with flying
+token=Pegasus
+image=http://img.photobucket.com/albums/v237/Xand0r/pegasus-token_guildpact_300.jpg
+value=2
+type=Creature
+subtype=Pegasus
+color=w
+cost={0}
+pt=1/1
+ability=flying

@@ -1,6 +1,6 @@
 name=Shu Elite Infantry
 url=http://magiccards.info/p3k/en/22.html
-image=http://magiccards.info/scans/en/p3k/22.jpg
+image=http://mtgimage.com/card/shu%20elite%20infantry.jpg
 value=2.000
 rarity=C
 type=Creature

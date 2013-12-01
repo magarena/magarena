@@ -1,6 +1,6 @@
 name=Fire Diamond
 url=http://magiccards.info/7e/en/296.html
-image=http://magiccards.info/scans/en/7e/296.jpg
+image=http://mtgimage.com/card/fire%20diamond.jpg
 value=3.109
 rarity=U
 type=Artifact

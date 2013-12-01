@@ -1,0 +1,11 @@
+name=Presence of Gond
+url=http://magiccards.info/shm/en/125.html
+image=http://mtgimage.com/card/presence%20of%20gond.jpg
+value=4.000
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+given_ability=pay {T}:PN puts a 1/1 green Elf Warrior creature token onto the battlefield.
+enchant=pump,pos creature
+timing=aura

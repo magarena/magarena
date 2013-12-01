@@ -1,6 +1,6 @@
 name=Steel Overseer
 url=http://magiccards.info/ddf/en/44.html
-image=http://magiccards.info/scans/en/ddf/44.jpg
+image=http://mtgimage.com/card/steel%20overseer.jpg
 value=4.576
 rarity=R
 type=Artifact,Creature

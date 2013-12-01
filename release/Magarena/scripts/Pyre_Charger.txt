@@ -1,6 +1,6 @@
 name=Pyre Charger
 url=http://magiccards.info/shm/en/103.html
-image=http://magiccards.info/scans/en/shm/103.jpg
+image=http://mtgimage.com/card/pyre%20charger.jpg
 value=2.988
 rarity=U
 type=Creature

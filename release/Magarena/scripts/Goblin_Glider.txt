@@ -1,7 +1,7 @@
 name=Goblin Glider
 url=http://magiccards.info/8e/en/189.html
-image=http://magiccards.info/scans/en/8e/189.jpg
-value=1.894
+image=http://mtgimage.com/card/goblin%20glider.jpg
+value=1.912
 ability=flying;can't block
 rarity=U
 type=Creature

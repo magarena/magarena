@@ -1,6 +1,6 @@
 name=Homicidal Seclusion
 url=http://magiccards.info/avr/en/108.html
-image=http://magiccards.info/scans/en/avr/108.jpg
+image=http://mtgimage.com/card/homicidal%20seclusion.jpg
 value=3.065
 rarity=U
 type=Enchantment

@@ -1,7 +1,7 @@
 name=Ancestor's Chosen
 url=http://magiccards.info/10e/en/1.html
-image=http://magiccards.info/scans/en/10e/1.jpg
-value=3.167
+image=http://mtgimage.com/card/ancestor%27s%20chosen.jpg
+value=3.150
 rarity=U
 type=Creature
 subtype=Human,Cleric

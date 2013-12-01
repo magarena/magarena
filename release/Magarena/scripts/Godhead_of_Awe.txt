@@ -1,6 +1,6 @@
 name=Godhead of Awe
 url=http://magiccards.info/shm/en/142.html
-image=http://magiccards.info/scans/en/shm/142.jpg
+image=http://mtgimage.com/card/godhead%20of%20awe.jpg
 value=4.268
 removal=3
 rarity=R

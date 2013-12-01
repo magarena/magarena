@@ -1,6 +1,6 @@
 name=Sensory Deprivation
 url=http://magiccards.info/isd/en/74.html
-image=http://magiccards.info/scans/en/isd/74.jpg
+image=http://mtgimage.com/card/sensory%20deprivation.jpg
 value=2.079
 rarity=C
 type=Enchantment

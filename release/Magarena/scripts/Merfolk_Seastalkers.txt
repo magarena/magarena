@@ -1,6 +1,6 @@
 name=Merfolk Seastalkers
 url=http://magiccards.info/zen/en/55.html
-image=http://magiccards.info/scans/en/zen/55.jpg
+image=http://mtgimage.com/card/merfolk%20seastalkers.jpg
 value=3.034
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Skullcrack
 url=http://magiccards.info/gtc/en/106.html
-image=http://magiccards.info/scans/en/gtc/106.jpg
+image=http://mtgimage.com/card/skullcrack.jpg
 value=4.005
 rarity=U
 type=Instant

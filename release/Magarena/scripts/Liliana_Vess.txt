@@ -1,0 +1,11 @@
+name=Liliana Vess
+url=http://magiccards.info/m11/en/102.html
+image=http://mtgimage.com/card/liliana%20vess.jpg
+value=4.405
+rarity=M
+type=Planeswalker
+subtype=Liliana
+cost={3}{B}{B}
+timing=main
+ability=enters with counter charge 5
+requires_groovy_code

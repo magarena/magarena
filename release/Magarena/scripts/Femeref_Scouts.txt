@@ -1,6 +1,6 @@
 name=Femeref Scouts
 url=http://magiccards.info/mr/en/223.html
-image=http://magiccards.info/scans/en/mr/223.jpg
+image=http://mtgimage.com/card/femeref%20scouts.jpg
 value=2.300
 rarity=C
 type=Creature

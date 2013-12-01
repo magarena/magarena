@@ -1,6 +1,6 @@
 name=Cavern Thoctar
 url=http://magiccards.info/ala/en/125.html
-image=http://magiccards.info/scans/en/ala/125.jpg
+image=http://mtgimage.com/card/cavern%20thoctar.jpg
 value=2.035
 rarity=C
 type=Creature

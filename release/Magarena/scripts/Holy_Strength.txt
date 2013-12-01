@@ -1,6 +1,6 @@
 name=Holy Strength
 url=http://magiccards.info/m11/en/16.html
-image=http://magiccards.info/scans/en/m11/16.jpg
+image=http://mtgimage.com/card/holy%20strength.jpg
 value=3.161
 rarity=C
 type=Enchantment

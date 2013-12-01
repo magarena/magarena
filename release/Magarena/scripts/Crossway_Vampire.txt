@@ -1,7 +1,7 @@
 name=Crossway Vampire
 url=http://magiccards.info/isd/en/135.html
-image=http://magiccards.info/scans/en/isd/135.jpg
-value=3.345
+image=http://mtgimage.com/card/crossway%20vampire.jpg
+value=3.375
 rarity=C
 type=Creature
 subtype=Vampire

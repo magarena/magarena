@@ -1,6 +1,6 @@
 name=Python
 url=http://magiccards.info/6e/en/150.html
-image=http://magiccards.info/scans/en/6e/150.jpg
+image=http://mtgimage.com/card/python.jpg
 value=2.339
 rarity=C
 type=Creature

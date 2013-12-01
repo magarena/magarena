@@ -1,6 +1,6 @@
 name=Arcbound Slith
 url=http://magiccards.info/pch/en/106.html
-image=http://magiccards.info/scans/en/pch/106.jpg
+image=http://mtgimage.com/card/arcbound%20slith.jpg
 value=4.311
 rarity=U
 type=Artifact,Creature

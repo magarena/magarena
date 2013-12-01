@@ -1,6 +1,6 @@
 name=Jhovall Queen
 url=http://magiccards.info/mm/en/25.html
-image=http://magiccards.info/scans/en/mm/25.jpg
+image=http://mtgimage.com/card/jhovall%20queen.jpg
 value=3.571
 rarity=R
 type=Creature

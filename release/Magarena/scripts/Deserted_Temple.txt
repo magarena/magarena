@@ -1,6 +1,6 @@
 name=Deserted Temple
 url=http://magiccards.info/od/en/320.html
-image=http://magiccards.info/scans/en/od/320.jpg
+image=http://mtgimage.com/card/deserted%20temple.jpg
 value=4.009
 rarity=R
 type=Land

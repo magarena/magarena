@@ -1,6 +1,6 @@
 name=Shanodin Dryads
 url=http://magiccards.info/7e/en/269.html
-image=http://magiccards.info/scans/en/7e/269.jpg
+image=http://mtgimage.com/card/shanodin%20dryads.jpg
 value=2.603
 rarity=C
 type=Creature

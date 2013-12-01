@@ -1,6 +1,6 @@
 name=Torch Fiend
 url=http://magiccards.info/dka/en/106.html
-image=http://magiccards.info/scans/en/dka/106.jpg
+image=http://mtgimage.com/card/torch%20fiend.jpg
 value=3.706
 rarity=C
 type=Creature

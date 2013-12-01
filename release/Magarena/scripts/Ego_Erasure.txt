@@ -1,6 +1,6 @@
 name=Ego Erasure
 url=http://magiccards.info/lw/en/59.html
-image=http://magiccards.info/scans/en/lw/59.jpg
+image=http://mtgimage.com/card/ego%20erasure.jpg
 value=2.756
 rarity=U
 type=Tribal,Instant

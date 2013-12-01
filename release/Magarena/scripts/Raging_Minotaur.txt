@@ -1,6 +1,6 @@
 name=Raging Minotaur
 url=http://magiccards.info/me3/en/109.html
-image=http://magiccards.info/scans/en/me3/109.jpg
+image=http://mtgimage.com/card/raging%20minotaur.jpg
 value=3.562
 rarity=C
 type=Creature

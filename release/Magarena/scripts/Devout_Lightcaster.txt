@@ -1,7 +1,7 @@
 name=Devout Lightcaster
 url=http://magiccards.info/zen/en/10.html
-image=http://magiccards.info/scans/en/zen/10.jpg
-value=4.153
+image=http://mtgimage.com/card/devout%20lightcaster.jpg
+value=4.156
 rarity=R
 type=Creature
 subtype=Kor,Cleric

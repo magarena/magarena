@@ -1,6 +1,6 @@
 name=Llanowar Wastes
 url=http://magiccards.info/10e/en/355.html
-image=http://magiccards.info/scans/en/10e/355.jpg
+image=http://mtgimage.com/card/llanowar%20wastes.jpg
 value=4.075
 rarity=R
 type=Land

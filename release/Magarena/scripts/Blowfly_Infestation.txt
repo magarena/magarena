@@ -1,6 +1,6 @@
 name=Blowfly Infestation
 url=http://magiccards.info/shm/en/58.html
-image=http://magiccards.info/scans/en/shm/58.jpg
+image=http://mtgimage.com/card/blowfly%20infestation.jpg
 value=3.447
 rarity=U
 type=Enchantment

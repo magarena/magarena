@@ -1,6 +1,6 @@
 name=Terminus
 url=http://magiccards.info/avr/en/38.html
-image=http://magiccards.info/scans/en/avr/38.jpg
+image=http://mtgimage.com/card/terminus.jpg
 value=4.081
 removal=2
 rarity=R

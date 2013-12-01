@@ -1,0 +1,9 @@
+name=Noble Steeds
+url=http://magiccards.info/ai/en/140.html
+image=http://mtgimage.com/card/noble%20steeds.jpg
+value=1.621
+rarity=C
+type=Enchantment
+cost={2}{W}
+ability=pay {1}{W}: Target creature gains first strike until end of turn.
+timing=enchantment

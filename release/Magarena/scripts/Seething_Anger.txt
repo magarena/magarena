@@ -1,6 +1,6 @@
 name=Seething Anger
 url=http://magiccards.info/sh/en/96.html
-image=http://magiccards.info/scans/en/sh/96.jpg
+image=http://mtgimage.com/card/seething%20anger.jpg
 value=2.768
 rarity=C
 type=Sorcery

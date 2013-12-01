@@ -27,13 +27,12 @@ def NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent target) {
-                        game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                            event.getPermanent(), 
-                            target
-                        ));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent target ->
+                    game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                        event.getPermanent(), 
+                        target
+                    ));
                 });
             }
         }

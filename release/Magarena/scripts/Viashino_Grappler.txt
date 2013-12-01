@@ -1,6 +1,6 @@
 name=Viashino Grappler
 url=http://magiccards.info/in/en/179.html
-image=http://magiccards.info/scans/en/in/179.jpg
+image=http://mtgimage.com/card/viashino%20grappler.jpg
 value=2.259
 rarity=C
 type=Creature

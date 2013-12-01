@@ -1,6 +1,6 @@
 name=Erase
 url=http://magiccards.info/m13/en/13.html
-image=http://magiccards.info/scans/en/m13/13.jpg
+image=http://mtgimage.com/card/erase.jpg
 value=4.190
 rarity=C
 type=Instant

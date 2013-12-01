@@ -1,0 +1,11 @@
+name=Favor of the Overbeing
+url=http://magiccards.info/eve/en/151.html
+image=http://mtgimage.com/card/favor%20of%20the%20overbeing.jpg
+value=3.552
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G/U}
+timing=enchantment
+enchant=pump,pos creature
+requires_groovy_code

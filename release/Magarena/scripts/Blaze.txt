@@ -1,6 +1,6 @@
 name=Blaze
 url=http://magiccards.info/dpa/en/39.html
-image=http://magiccards.info/scans/en/pch/47.jpg
+image=http://mtgimage.com/card/blaze.jpg
 value=3.167
 removal=4
 rarity=U

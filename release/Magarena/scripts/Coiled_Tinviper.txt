@@ -1,6 +1,6 @@
 name=Coiled Tinviper
 url=http://magiccards.info/tp/en/269.html
-image=http://magiccards.info/scans/en/tp/269.jpg
+image=http://mtgimage.com/card/coiled%20tinviper.jpg
 value=2.458
 rarity=C
 type=Artifact,Creature

@@ -1,6 +1,6 @@
 name=Binding Grasp
 url=http://magiccards.info/ia/en/60.html
-image=http://magiccards.info/scans/en/ia/60.jpg
+image=http://mtgimage.com/card/binding%20grasp.jpg
 value=3.803
 rarity=U
 type=Enchantment

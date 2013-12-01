@@ -1,6 +1,6 @@
 name=Clinging Anemones
 url=http://magiccards.info/gtc/en/31.html
-image=http://magiccards.info/scans/en/gtc/31.jpg
+image=http://mtgimage.com/card/clinging%20anemones.jpg
 value=2.211
 rarity=C
 type=Creature

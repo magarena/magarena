@@ -1,6 +1,6 @@
 name=Springing Tiger
 url=http://magiccards.info/od/en/272.html
-image=http://magiccards.info/scans/en/od/272.jpg
+image=http://mtgimage.com/card/springing%20tiger.jpg
 value=3.661
 rarity=C
 type=Creature

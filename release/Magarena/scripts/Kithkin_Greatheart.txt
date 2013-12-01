@@ -1,6 +1,6 @@
 name=Kithkin Greatheart
 url=http://magiccards.info/lw/en/25.html
-image=http://magiccards.info/scans/en/lw/25.jpg
+image=http://mtgimage.com/card/kithkin%20greatheart.jpg
 value=3.321
 rarity=C
 type=Creature

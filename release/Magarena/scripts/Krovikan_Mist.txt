@@ -1,6 +1,6 @@
 name=Krovikan Mist
 url=http://magiccards.info/cs/en/38.html
-image=http://magiccards.info/scans/en/cs/38.jpg
+image=http://mtgimage.com/card/krovikan%20mist.jpg
 value=4.247
 rarity=C
 type=Creature

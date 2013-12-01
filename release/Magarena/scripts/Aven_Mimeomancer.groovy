@@ -56,7 +56,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
                     game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.Feather,1,true));
                     game.doAction(new MagicAddStaticAction(creature, PT));
                     game.doAction(new MagicAddStaticAction(creature, AB));
-                } as MagicPermanentAction);
+                });
             }
         }
     }

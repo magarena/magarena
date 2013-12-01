@@ -1,6 +1,6 @@
 name=Eyeblight's Ending
 url=http://magiccards.info/lw/en/110.html
-image=http://magiccards.info/scans/en/lw/110.jpg
+image=http://mtgimage.com/card/eyeblight%27s%20ending.jpg
 value=4.074
 rarity=C
 type=Tribal,Instant

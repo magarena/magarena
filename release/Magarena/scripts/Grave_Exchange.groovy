@@ -1,15 +1,14 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    event.processTargetPlayer(game,new MagicPlayerAction() {
-        public void doAction(final MagicPlayer opponent) {
-            game.addEvent(new MagicSacrificePermanentEvent(
-                event.getSource(),
-                opponent,
-                MagicTargetChoice.SACRIFICE_CREATURE
-            ));
-        }
+    event.processTargetPlayer(game, {
+        final MagicPlayer opponent ->
+        game.addEvent(new MagicSacrificePermanentEvent(
+            event.getSource(),
+            opponent,
+            MagicTargetChoice.SACRIFICE_CREATURE
+        ));
     });
-} as MagicEventAction
+}
 
 [
     new MagicSpellCardEvent() {
@@ -25,18 +24,17 @@ def action = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard targetCard) {
-                    game.doAction(new MagicRemoveCardAction(
-                        targetCard,
-                        MagicLocationType.Graveyard
-                    ));
-                    game.doAction(new MagicMoveCardAction(
-                        targetCard,
-                        MagicLocationType.Graveyard,
-                        MagicLocationType.OwnersHand
-                    ));
-                }
+            event.processTargetCard(game, {
+                final MagicCard targetCard ->
+                game.doAction(new MagicRemoveCardAction(
+                    targetCard,
+                    MagicLocationType.Graveyard
+                ));
+                game.doAction(new MagicMoveCardAction(
+                    targetCard,
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.OwnersHand
+                ));
             });
             game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(new MagicEvent(
                 event.getSource(),

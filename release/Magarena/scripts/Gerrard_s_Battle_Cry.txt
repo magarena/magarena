@@ -1,0 +1,9 @@
+name=Gerrard's Battle Cry
+url=http://magiccards.info/tp/en/233.html
+image=http://mtgimage.com/card/gerrard%27s%20battle%20cry.jpg
+value=4.025
+rarity=R
+type=Enchantment
+cost={W}
+ability=pay {2}{W}:Creatures you control get +1/+1 until end of turn.
+timing=enchantment

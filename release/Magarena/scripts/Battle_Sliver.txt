@@ -1,7 +1,7 @@
 name=Battle Sliver
 url=http://magiccards.info/m14/en/128.html
-image=http://magiccards.info/scans/en/m14/128.jpg
-value=2.535
+image=http://mtgimage.com/card/battle%20sliver.jpg
+value=2.591
 rarity=U
 type=Creature
 subtype=Sliver

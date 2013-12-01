@@ -1,6 +1,6 @@
 name=Phyrexian Arena
 url=http://magiccards.info/pvc/en/27.html
-image=http://magiccards.info/scans/en/pch/36.jpg
+image=http://mtgimage.com/card/phyrexian%20arena.jpg
 value=4.643
 rarity=R
 type=Enchantment

@@ -1,7 +1,7 @@
 name=Etherium-Horn Sorcerer
 url=http://magiccards.info/pc2/en/91.html
-image=http://magiccards.info/scans/en/pc2/91.jpg
-value=4.167
+image=http://mtgimage.com/card/etherium%2Dhorn%20sorcerer.jpg
+value=4.189
 rarity=R
 type=Artifact,Creature
 subtype=Minotaur,Wizard

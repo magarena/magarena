@@ -1,6 +1,6 @@
 name=Wildslayer Elves
 url=http://magiccards.info/shm/en/133.html
-image=http://magiccards.info/scans/en/shm/133.jpg
+image=http://mtgimage.com/card/wildslayer%20elves.jpg
 value=2.924
 ability=wither
 rarity=C

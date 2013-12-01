@@ -1,0 +1,11 @@
+name=Viridian Longbow
+url=http://magiccards.info/mi/en/270.html
+image=http://mtgimage.com/card/viridian%20longbow.jpg
+value=4.015
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={1}
+equip={3}
+given_ability=pay {T}:SN deals 1 damage to target creature or player.
+timing=artifact

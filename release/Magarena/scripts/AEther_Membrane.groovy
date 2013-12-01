@@ -20,7 +20,7 @@
                     permanent,
                     MagicAtEndOfCombatTrigger.Return
                 ))
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

@@ -1,6 +1,6 @@
 name=Tower of the Magistrate
 url=http://magiccards.info/mm/en/330.html
-image=http://magiccards.info/scans/en/mm/330.jpg
+image=http://mtgimage.com/card/tower%20of%20the%20magistrate.jpg
 value=3.875
 rarity=R
 type=Land

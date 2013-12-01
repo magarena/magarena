@@ -1,6 +1,6 @@
 name=Knight of Cliffhaven
 url=http://magiccards.info/roe/en/29.html
-image=http://magiccards.info/scans/en/roe/29.jpg
+image=http://mtgimage.com/card/knight%20of%20cliffhaven.jpg
 value=2.985
 rarity=C
 type=Creature

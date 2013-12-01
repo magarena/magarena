@@ -1,6 +1,6 @@
 name=Halimar Excavator
 url=http://magiccards.info/wwk/en/29.html
-image=http://magiccards.info/scans/en/wwk/29.jpg
+image=http://mtgimage.com/card/halimar%20excavator.jpg
 value=3.986
 rarity=C
 type=Creature

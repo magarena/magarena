@@ -1,6 +1,6 @@
 name=Fume Spitter
 url=http://magiccards.info/som/en/63.html
-image=http://magiccards.info/scans/en/som/63.jpg
+image=http://mtgimage.com/card/fume%20spitter.jpg
 value=3.880
 rarity=C
 type=Creature

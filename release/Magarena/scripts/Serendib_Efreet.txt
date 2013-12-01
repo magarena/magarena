@@ -1,7 +1,7 @@
 name=Serendib Efreet
 url=http://magiccards.info/fve/en/11.html
-image=http://magiccards.info/scans/en/fve/11.jpg
-value=4.409
+image=http://mtgimage.com/card/serendib%20efreet.jpg
+value=4.417
 rarity=R
 type=Creature
 subtype=Efreet

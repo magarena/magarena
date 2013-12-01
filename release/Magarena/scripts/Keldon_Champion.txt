@@ -1,6 +1,6 @@
 name=Keldon Champion
 url=http://magiccards.info/pch/en/58.html
-image=http://magiccards.info/scans/en/pch/58.jpg
+image=http://mtgimage.com/card/keldon%20champion.jpg
 value=4.411
 rarity=U
 type=Creature

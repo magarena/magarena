@@ -1,6 +1,6 @@
 name=Joraga Warcaller
 url=http://magiccards.info/wwk/en/106.html
-image=http://magiccards.info/scans/en/wwk/106.jpg
+image=http://mtgimage.com/card/joraga%20warcaller.jpg
 value=4.463
 rarity=R
 type=Creature

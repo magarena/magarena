@@ -1,6 +1,6 @@
 name=Sentinel Sliver
 url=http://magiccards.info/m14/en/30.html
-image=http://magiccards.info/scans/en/m14/30.jpg
+image=http://mtgimage.com/card/sentinel%20sliver.jpg
 value=3.667
 rarity=C
 type=Creature

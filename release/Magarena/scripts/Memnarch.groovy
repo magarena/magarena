@@ -24,10 +24,9 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicAddStaticAction(creature, MagicStatic.Artifact));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicAddStaticAction(creature, MagicStatic.Artifact));
             });
         }
     },
@@ -62,7 +61,7 @@
                     event.getPlayer(),
                     perm
                 ));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

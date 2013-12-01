@@ -1,6 +1,6 @@
 name=Knight Watch
 url=http://magiccards.info/gtc/en/19.html
-image=http://magiccards.info/scans/en/gtc/19.jpg
+image=http://mtgimage.com/card/knight%20watch.jpg
 value=2.875
 rarity=C
 type=Sorcery

@@ -1,6 +1,6 @@
 name=To Arms!
 url=http://magiccards.info/gp/en/20.html
-image=http://magiccards.info/scans/en/gp/20.jpg
+image=http://mtgimage.com/card/to%20arms%21.jpg
 value=4.156
 rarity=U
 type=Instant

@@ -1,6 +1,6 @@
 name=Windreaver
 url=http://magiccards.info/di/en/138.html
-image=http://magiccards.info/scans/en/di/138.jpg
+image=http://mtgimage.com/card/windreaver.jpg
 value=3.833
 rarity=R
 type=Creature

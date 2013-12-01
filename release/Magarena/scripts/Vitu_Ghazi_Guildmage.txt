@@ -1,6 +1,6 @@
 name=Vitu-Ghazi Guildmage
 url=http://magiccards.info/rtr/en/207.html
-image=http://magiccards.info/scans/en/rtr/207.jpg
+image=http://mtgimage.com/card/vitu%2Dghazi%20guildmage.jpg
 value=3.754
 rarity=U
 type=Creature

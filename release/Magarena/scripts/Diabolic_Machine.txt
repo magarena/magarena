@@ -1,0 +1,11 @@
+name=Diabolic Machine
+url=http://magiccards.info/me4/en/196.html
+image=http://mtgimage.com/card/diabolic%20machine.jpg
+value=2.220
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={7}
+pt=4/4
+ability=regenerate {3}
+timing=artifact

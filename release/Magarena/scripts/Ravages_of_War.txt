@@ -1,6 +1,6 @@
 name=Ravages of War
 url=http://magiccards.info/me2/en/27.html
-image=http://magiccards.info/scans/en/me2/27.jpg
+image=http://mtgimage.com/card/ravages%20of%20war.jpg
 value=4.462
 removal=2
 rarity=R

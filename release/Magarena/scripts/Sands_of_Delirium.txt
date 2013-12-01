@@ -1,6 +1,6 @@
 name=Sands of Delirium
 url=http://magiccards.info/m13/en/216.html
-image=http://magiccards.info/scans/en/m13/216.jpg
+image=http://mtgimage.com/card/sands%20of%20delirium.jpg
 value=3.828
 rarity=R
 type=Artifact

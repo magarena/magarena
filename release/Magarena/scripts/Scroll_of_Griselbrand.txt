@@ -1,6 +1,6 @@
 name=Scroll of Griselbrand
 url=http://magiccards.info/avr/en/221.html
-image=http://magiccards.info/scans/en/avr/221.jpg
+image=http://mtgimage.com/card/scroll%20of%20griselbrand.jpg
 value=3.138
 rarity=C
 type=Artifact

@@ -1,6 +1,6 @@
 name=Righteous War
 url=http://magiccards.info/vi/en/134.html
-image=http://magiccards.info/scans/en/vi/134.jpg
+image=http://mtgimage.com/card/righteous%20war.jpg
 value=3.602
 rarity=R
 type=Enchantment

@@ -1,0 +1,11 @@
+name=Body Double
+url=http://magiccards.info/plc/en/35.html
+image=http://mtgimage.com/card/body%20double.jpg
+value=4.258
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={4}{U}
+pt=0/0
+timing=main
+requires_groovy_code

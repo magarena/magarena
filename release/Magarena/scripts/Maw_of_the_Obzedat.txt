@@ -1,6 +1,6 @@
 name=Maw of the Obzedat
 url=http://magiccards.info/dgm/en/83.html
-image=http://magiccards.info/scans/en/dgm/83.jpg
+image=http://mtgimage.com/card/maw%20of%20the%20obzedat.jpg
 value=3.336
 rarity=U
 type=Creature

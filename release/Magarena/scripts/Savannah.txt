@@ -1,6 +1,6 @@
 name=Savannah
 url=http://magiccards.info/me4/en/250.html
-image=http://magiccards.info/scans/en/me4/250.jpg
+image=http://mtgimage.com/card/savannah.jpg
 value=4.653
 rarity=R
 type=Land

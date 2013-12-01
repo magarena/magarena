@@ -22,23 +22,22 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    final MagicPlayer player=event.getPlayer();
-                    game.doAction(new MagicRemoveCardAction(
-                        card,
-                        MagicLocationType.Graveyard
-                    ));
-                    game.doAction(new MagicMoveCardAction(
-                        card,
-                        MagicLocationType.Graveyard,
-                        MagicLocationType.Exile
-                    ));
-                    game.doAction(new MagicPlayTokenAction(
-                        player,
-                        TokenCardDefinitions.get("2/2 black Zombie creature token")
-                    ));
-                }
+            event.processTargetCard(game, {
+                final MagicCard card ->
+                final MagicPlayer player=event.getPlayer();
+                game.doAction(new MagicRemoveCardAction(
+                    card,
+                    MagicLocationType.Graveyard
+                ));
+                game.doAction(new MagicMoveCardAction(
+                    card,
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.Exile
+                ));
+                game.doAction(new MagicPlayTokenAction(
+                    player,
+                    TokenCardDefinitions.get("2/2 black Zombie creature token")
+                ));
             });
         }
     }

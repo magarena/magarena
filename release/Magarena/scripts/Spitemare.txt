@@ -1,6 +1,6 @@
 name=Spitemare
 url=http://magiccards.info/ddh/en/16.html
-image=http://magiccards.info/scans/en/eve/147.jpg
+image=http://mtgimage.com/card/spitemare.jpg
 value=3.631
 rarity=U
 type=Creature

@@ -1,0 +1,12 @@
+name=Crackling Club
+url=http://magiccards.info/tr/en/93.html
+image=http://mtgimage.com/card/crackling%20club.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+enchant=pump,pos creature
+ability=pay {S}:SN deals 1 damage to target creature.
+given_pt=+1/+0
+timing=enchantment

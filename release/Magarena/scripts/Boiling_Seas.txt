@@ -1,7 +1,7 @@
 name=Boiling Seas
 url=http://magiccards.info/9e/en/178.html
-image=http://magiccards.info/scans/en/9e/178.jpg
-value=3.771
+image=http://mtgimage.com/card/boiling%20seas.jpg
+value=3.806
 rarity=U
 type=Sorcery
 cost={3}{R}

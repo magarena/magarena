@@ -1,6 +1,6 @@
 name=Coast Watcher
 url=http://magiccards.info/sc/en/30.html
-image=http://magiccards.info/scans/en/sc/30.jpg
+image=http://mtgimage.com/card/coast%20watcher.jpg
 value=2.788
 ability=flying;protection from green
 rarity=C

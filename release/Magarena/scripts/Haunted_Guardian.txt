@@ -1,6 +1,6 @@
 name=Haunted Guardian
 url=http://magiccards.info/avr/en/216.html
-image=http://magiccards.info/scans/en/avr/216.jpg
+image=http://mtgimage.com/card/haunted%20guardian.jpg
 value=3.093
 rarity=U
 type=Artifact,Creature

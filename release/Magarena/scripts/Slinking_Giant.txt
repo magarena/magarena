@@ -1,6 +1,6 @@
 name=Slinking Giant
 url=http://magiccards.info/shm/en/106.html
-image=http://magiccards.info/scans/en/shm/106.jpg
+image=http://mtgimage.com/card/slinking%20giant.jpg
 value=2.092
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Bog Wreckage
 url=http://magiccards.info/od/en/314.html
-image=http://magiccards.info/scans/en/od/314.jpg
+image=http://mtgimage.com/card/bog%20wreckage.jpg
 value=2.229
 rarity=C
 type=Land

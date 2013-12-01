@@ -1,6 +1,6 @@
 name=Holy Mantle
 url=http://magiccards.info/gtc/en/17.html
-image=http://magiccards.info/scans/en/gtc/17.jpg
+image=http://mtgimage.com/card/holy%20mantle.jpg
 value=2.742
 rarity=U
 type=Enchantment

@@ -1,6 +1,6 @@
 name=Scavenger Drake
 url=http://magiccards.info/ala/en/85.html
-image=http://magiccards.info/scans/en/ala/85.jpg
+image=http://mtgimage.com/card/scavenger%20drake.jpg
 value=2.915
 rarity=U
 type=Creature

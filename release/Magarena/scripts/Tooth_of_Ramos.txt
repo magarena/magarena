@@ -1,6 +1,6 @@
 name=Tooth of Ramos
 url=http://magiccards.info/mm/en/313.html
-image=http://magiccards.info/scans/en/mm/313.jpg
+image=http://mtgimage.com/card/tooth%20of%20ramos.jpg
 ignore=77560
 value=3.222
 rarity=R

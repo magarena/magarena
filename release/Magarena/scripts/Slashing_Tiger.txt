@@ -1,6 +1,6 @@
 name=Slashing Tiger
 url=http://magiccards.info/me3/en/133.html
-image=http://magiccards.info/scans/en/me3/133.jpg
+image=http://mtgimage.com/card/slashing%20tiger.jpg
 value=3.022
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Soul Feast
 url=http://magiccards.info/10e/en/179.html
-image=http://magiccards.info/scans/en/10e/179.jpg
+image=http://mtgimage.com/card/soul%20feast.jpg
 value=3.125
 rarity=U
 type=Sorcery

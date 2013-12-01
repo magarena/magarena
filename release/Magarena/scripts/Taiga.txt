@@ -1,6 +1,6 @@
 name=Taiga
 url=http://magiccards.info/me4/en/253.html
-image=http://magiccards.info/scans/en/me4/253.jpg
+image=http://mtgimage.com/card/taiga.jpg
 value=4.685
 rarity=R
 type=Land

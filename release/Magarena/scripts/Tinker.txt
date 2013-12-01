@@ -1,7 +1,7 @@
 name=Tinker
 url=http://magiccards.info/fve/en/14.html
-image=http://magiccards.info/scans/en/fve/14.jpg
-value=4.640
+image=http://mtgimage.com/card/tinker.jpg
+value=4.643
 rarity=M
 type=Sorcery
 cost={2}{U}

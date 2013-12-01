@@ -13,15 +13,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicPlayTokensAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("1/1 green Saproling creature token"),
-                        permanent.getConvertedCost()
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent permanent ->
+                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
+                game.doAction(new MagicPlayTokensAction(
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("1/1 green Saproling creature token"),
+                    permanent.getConvertedCost()
+                ));
             });
         }
     }

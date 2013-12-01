@@ -1,0 +1,12 @@
+name=Pursuit of Flight
+url=http://magiccards.info/rtr/en/102.html
+image=http://mtgimage.com/card/pursuit%20of%20flight.jpg
+value=2.439
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+given_pt=+2/+2
+given_ability=pay {U}:SN gains flying until end of turn.
+enchant=pump,pos creature
+timing=aura

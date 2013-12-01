@@ -1,6 +1,6 @@
 name=Cruel Tutor
 url=http://magiccards.info/po/en/9.html
-image=http://magiccards.info/scans/en/po/9.jpg
+image=http://mtgimage.com/card/cruel%20tutor.jpg
 value=3.056
 rarity=R
 type=Sorcery

@@ -8,7 +8,7 @@ def action = {
             MagicTargetChoice.SACRIFICE_CREATURE
         ));
     }
-} as MagicEventAction
+}
 
 def event = {
     final MagicPermanent permanent ->

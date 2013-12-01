@@ -1,6 +1,6 @@
 name=Splatter Thug
 url=http://magiccards.info/rtr/en/105.html
-image=http://magiccards.info/scans/en/rtr/105.jpg
+image=http://mtgimage.com/card/splatter%20thug.jpg
 value=3.140
 rarity=C
 type=Creature

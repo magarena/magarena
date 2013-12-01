@@ -1,6 +1,6 @@
 name=Shifting Sliver
 url=http://magiccards.info/le/en/52.html
-image=http://magiccards.info/scans/en/le/52.jpg
+image=http://mtgimage.com/card/shifting%20sliver.jpg
 value=4.454
 rarity=U
 type=Creature

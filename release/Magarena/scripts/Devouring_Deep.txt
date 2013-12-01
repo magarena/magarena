@@ -1,6 +1,6 @@
 name=Devouring Deep
 url=http://magiccards.info/lg/en/50.html
-image=http://magiccards.info/scans/en/lg/50.jpg
+image=http://mtgimage.com/card/devouring%20deep.jpg
 value=1.620
 rarity=C
 type=Creature

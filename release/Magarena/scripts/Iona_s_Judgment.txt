@@ -1,6 +1,6 @@
 name=Iona's Judgment
 url=http://magiccards.info/wwk/en/8.html
-image=http://magiccards.info/scans/en/wwk/8.jpg
+image=http://mtgimage.com/card/iona%27s%20judgment.jpg
 value=2.355
 rarity=C
 type=Sorcery

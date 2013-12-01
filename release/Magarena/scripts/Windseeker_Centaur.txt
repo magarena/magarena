@@ -1,6 +1,6 @@
 name=Windseeker Centaur
 url=http://magiccards.info/mbp/en/7.html
-image=http://magiccards.info/scans/en/mbp/7.jpg
+image=http://mtgimage.com/card/windseeker%20centaur.jpg
 value=3.150
 rarity=R
 type=Creature

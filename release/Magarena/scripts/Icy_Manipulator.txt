@@ -1,6 +1,6 @@
 name=Icy Manipulator
 url=http://magiccards.info/ddh/en/64.html
-image=http://magiccards.info/scans/en/ddh/64.jpg
+image=http://mtgimage.com/card/icy%20manipulator.jpg
 value=4.250
 rarity=U
 type=Artifact

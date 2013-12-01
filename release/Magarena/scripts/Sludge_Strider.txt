@@ -1,6 +1,6 @@
 name=Sludge Strider
 url=http://magiccards.info/cfx/en/126.html
-image=http://magiccards.info/scans/en/cfx/126.jpg
+image=http://mtgimage.com/card/sludge%20strider.jpg
 value=3.011
 rarity=U
 type=Artifact,Creature

@@ -1,6 +1,6 @@
 name=Silkenfist Order
 url=http://magiccards.info/ne/en/20.html
-image=http://magiccards.info/scans/en/ne/20.jpg
+image=http://mtgimage.com/card/silkenfist%20order.jpg
 value=2.750
 rarity=U
 type=Creature

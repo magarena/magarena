@@ -1,7 +1,7 @@
 name=Phantasmal Abomination
 url=http://magiccards.info/roe/en/80.html
-image=http://magiccards.info/scans/en/roe/80.jpg
-value=2.607
+image=http://mtgimage.com/card/phantasmal%20abomination.jpg
+value=2.556
 rarity=U
 type=Creature
 subtype=Illusion

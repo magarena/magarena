@@ -1,7 +1,7 @@
 name=Phantom Beast
 url=http://magiccards.info/m11/en/69.html
-image=http://magiccards.info/scans/en/m11/69.jpg
-value=3.123
+image=http://mtgimage.com/card/phantom%20beast.jpg
+value=3.088
 rarity=C
 type=Creature
 subtype=Illusion,Beast

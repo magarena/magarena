@@ -1,6 +1,6 @@
 name=Bogardan Lancer
 url=http://magiccards.info/fut/en/95.html
-image=http://magiccards.info/scans/en/fut/95.jpg
+image=http://mtgimage.com/card/bogardan%20lancer.jpg
 value=3.177
 rarity=C
 type=Creature

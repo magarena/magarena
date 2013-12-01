@@ -1,0 +1,9 @@
+name=Fyndhorn Bow
+url=http://magiccards.info/ia/en/293.html
+image=http://mtgimage.com/card/fyndhorn%20bow.jpg
+value=1.771
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {3},{T}:Target creature gains first strike until end of turn.
+timing=artifact

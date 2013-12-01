@@ -1,6 +1,6 @@
 name=Drifting Djinn
 url=http://magiccards.info/us/en/71.html
-image=http://magiccards.info/scans/en/us/71.jpg
+image=http://mtgimage.com/card/drifting%20djinn.jpg
 value=2.880
 rarity=R
 type=Creature

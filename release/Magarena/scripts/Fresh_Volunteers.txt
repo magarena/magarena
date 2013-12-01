@@ -1,6 +1,6 @@
 name=Fresh Volunteers
 url=http://magiccards.info/mm/en/20.html
-image=http://magiccards.info/scans/en/mm/20.jpg
+image=http://mtgimage.com/card/fresh%20volunteers.jpg
 value=2.839
 rarity=C
 type=Creature

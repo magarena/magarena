@@ -1,0 +1,9 @@
+name=Magistrate's Veto
+url=http://magiccards.info/mm/en/204.html
+image=http://mtgimage.com/card/magistrate%27s%20veto.jpg
+value=3.879
+rarity=U
+type=Enchantment
+cost={2}{R}
+ability=lord white creatures have can't block;lord blue creatures have can't block
+timing=enchantment

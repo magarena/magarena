@@ -1,6 +1,6 @@
 name=Phantom Warrior
 url=http://magiccards.info/dpa/en/14.html
-image=http://magiccards.info/scans/en/dpa/14.jpg
+image=http://mtgimage.com/card/phantom%20warrior.jpg
 value=3.984
 ability=unblockable
 rarity=U

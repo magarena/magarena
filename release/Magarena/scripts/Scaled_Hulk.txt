@@ -1,6 +1,6 @@
 name=Scaled Hulk
 url=http://magiccards.info/bok/en/143.html
-image=http://magiccards.info/scans/en/bok/143.jpg
+image=http://mtgimage.com/card/scaled%20hulk.jpg
 value=2.435
 rarity=C
 type=Creature

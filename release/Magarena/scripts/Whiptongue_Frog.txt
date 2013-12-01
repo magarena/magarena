@@ -1,6 +1,6 @@
 name=Whiptongue Frog
 url=http://magiccards.info/ex/en/52.html
-image=http://magiccards.info/scans/en/ex/52.jpg
+image=http://mtgimage.com/card/whiptongue%20frog.jpg
 value=1.833
 rarity=C
 type=Creature

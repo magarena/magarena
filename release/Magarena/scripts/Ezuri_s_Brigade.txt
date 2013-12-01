@@ -1,7 +1,7 @@
 name=Ezuri's Brigade
 url=http://magiccards.info/som/en/121.html
-image=http://magiccards.info/scans/en/som/121.jpg
-value=3.968
+image=http://mtgimage.com/card/ezuri%27s%20brigade.jpg
+value=3.976
 rarity=R
 type=Creature
 subtype=Elf,Warrior

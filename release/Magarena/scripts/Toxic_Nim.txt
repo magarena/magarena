@@ -1,6 +1,6 @@
 name=Toxic Nim
 url=http://magiccards.info/nph/en/75.html
-image=http://magiccards.info/scans/en/nph/75.jpg
+image=http://mtgimage.com/card/toxic%20nim.jpg
 value=2.836
 rarity=C
 type=Creature

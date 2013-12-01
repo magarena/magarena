@@ -1,6 +1,6 @@
 name=Vines of Vastwood
 url=http://magiccards.info/zen/en/193.html
-image=http://magiccards.info/scans/en/zen/193.jpg
+image=http://mtgimage.com/card/vines%20of%20vastwood.jpg
 value=4.468
 rarity=C
 type=Instant

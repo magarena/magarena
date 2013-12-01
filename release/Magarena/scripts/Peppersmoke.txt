@@ -1,7 +1,7 @@
 name=Peppersmoke
 url=http://magiccards.info/lw/en/134.html
-image=http://magiccards.info/scans/en/lw/134.jpg
-value=3.346
+image=http://mtgimage.com/card/peppersmoke.jpg
+value=3.200
 rarity=C
 type=Tribal,Instant
 subtype=Faerie

@@ -1,6 +1,6 @@
 name=Thunderous Wrath
 url=http://magiccards.info/avr/en/160.html
-image=http://magiccards.info/scans/en/avr/160.jpg
+image=http://mtgimage.com/card/thunderous%20wrath.jpg
 value=3.886
 rarity=U
 type=Instant

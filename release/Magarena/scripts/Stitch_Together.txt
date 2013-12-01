@@ -1,6 +1,6 @@
 name=Stitch Together
 url=http://magiccards.info/cmd/en/102.html
-image=http://magiccards.info/scans/en/cmd/102.jpg
+image=http://mtgimage.com/card/stitch%20together.jpg
 value=4.200
 rarity=U
 type=Sorcery

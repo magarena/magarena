@@ -1,7 +1,7 @@
 name=Kessig Wolf Run
 url=http://magiccards.info/isd/en/243.html
-image=http://magiccards.info/scans/en/isd/243.jpg
-value=3.868
+image=http://mtgimage.com/card/kessig%20wolf%20run.jpg
+value=3.825
 rarity=R
 type=Land
 ability=tap add mana {1}

@@ -18,10 +18,9 @@
             if (event.isNo()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
             } else {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
                 });
             }
         }

@@ -1,0 +1,9 @@
+name=Sustenance
+url=http://magiccards.info/mm/en/278.html
+image=http://mtgimage.com/card/sustenance.jpg
+value=1.854
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=pay {1},Sacrifice a land:Target creature gets +1/+1 until end of turn.
+timing=enchantment

@@ -1,6 +1,6 @@
 name=Executioner's Hood
 url=http://magiccards.info/dka/en/148.html
-image=http://magiccards.info/scans/en/dka/148.jpg
+image=http://mtgimage.com/card/executioner%27s%20hood.jpg
 value=2.289
 rarity=C
 type=Artifact

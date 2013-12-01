@@ -1,6 +1,6 @@
 name=Putrid Leech
 url=http://magiccards.info/arb/en/95.html
-image=http://magiccards.info/scans/en/arb/95.jpg
+image=http://mtgimage.com/card/putrid%20leech.jpg
 value=4.333
 rarity=C
 type=Creature

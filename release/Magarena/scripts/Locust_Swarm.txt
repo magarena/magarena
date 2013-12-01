@@ -1,6 +1,6 @@
 name=Locust Swarm
 url=http://magiccards.info/mr/en/124.html
-image=http://magiccards.info/scans/en/mr/124.jpg
+image=http://mtgimage.com/card/locust%20swarm.jpg
 value=2.711
 rarity=U
 type=Creature

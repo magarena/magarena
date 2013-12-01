@@ -1,7 +1,7 @@
 name=Temple of Silence
 url=http://magiccards.info/ths/en/227.html
-image=http://magiccards.info/scans/en/ths/227.jpg
-value=3.792
+image=http://mtgimage.com/card/temple%20of%20silence.jpg
+value=3.468
 rarity=R
 type=Land
 mana=w3b3

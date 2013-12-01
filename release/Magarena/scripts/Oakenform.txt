@@ -1,7 +1,7 @@
 name=Oakenform
 url=http://magiccards.info/m10/en/197.html
-image=http://magiccards.info/scans/en/m10/197.jpg
-value=2.867
+image=http://mtgimage.com/card/oakenform.jpg
+value=2.846
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,6 @@
 name=Viashino Slaughtermaster
 url=http://magiccards.info/cfx/en/73.html
-image=http://magiccards.info/scans/en/cfx/73.jpg
+image=http://mtgimage.com/card/viashino%20slaughtermaster.jpg
 value=3.112
 rarity=U
 type=Creature

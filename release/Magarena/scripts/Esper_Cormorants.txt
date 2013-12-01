@@ -1,6 +1,6 @@
 name=Esper Cormorants
 url=http://magiccards.info/cfx/en/105.html
-image=http://magiccards.info/scans/en/cfx/105.jpg
+image=http://mtgimage.com/card/esper%20cormorants.jpg
 value=2.397
 ability=flying
 rarity=C

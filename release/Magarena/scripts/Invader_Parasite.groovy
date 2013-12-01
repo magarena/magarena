@@ -12,13 +12,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent target) {
-                    game.doAction(new MagicExileUntilThisLeavesPlayAction(
-                        event.getPermanent(),
-                        target
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent target ->
+                game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                    event.getPermanent(),
+                    target
+                ));
             });
             
         }

@@ -1,7 +1,7 @@
 name=Nature's Spiral
 url=http://magiccards.info/dpa/en/77.html
-image=http://magiccards.info/scans/en/dpa/77.jpg
-value=3.826
+image=http://mtgimage.com/card/nature%27s%20spiral.jpg
+value=3.840
 rarity=U
 type=Sorcery
 cost={1}{G}

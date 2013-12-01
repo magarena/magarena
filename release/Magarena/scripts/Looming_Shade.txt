@@ -1,6 +1,6 @@
 name=Looming Shade
 url=http://magiccards.info/m10/en/103.html
-image=http://magiccards.info/scans/en/m10/103.jpg
+image=http://mtgimage.com/card/looming%20shade.jpg
 value=3.071
 rarity=C
 type=Creature

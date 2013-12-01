@@ -1,6 +1,6 @@
 name=Welkin Tern
 url=http://magiccards.info/zen/en/76.html
-image=http://magiccards.info/scans/en/zen/76.jpg
+image=http://mtgimage.com/card/welkin%20tern.jpg
 value=2.622
 ability=flying;can't block creatures without flying
 rarity=C

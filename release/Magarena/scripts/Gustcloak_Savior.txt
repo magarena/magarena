@@ -1,6 +1,6 @@
 name=Gustcloak Savior
 url=http://magiccards.info/on/en/36.html
-image=http://magiccards.info/scans/en/on/36.jpg
+image=http://mtgimage.com/card/gustcloak%20savior.jpg
 value=3.897
 rarity=R
 type=Creature

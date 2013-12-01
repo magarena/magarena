@@ -1,0 +1,9 @@
+name=Rakdos Cluestone
+url=http://magiccards.info/dgm/en/143.html
+image=http://mtgimage.com/card/rakdos%20cluestone.jpg
+value=2.674
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {B} or {R};pay {B}{R},{S}: PN draws a card.
+timing=artifact

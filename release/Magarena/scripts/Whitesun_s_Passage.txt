@@ -1,6 +1,6 @@
 name=Whitesun's Passage
 url=http://magiccards.info/som/en/27.html
-image=http://magiccards.info/scans/en/som/27.jpg
+image=http://mtgimage.com/card/whitesun%27s%20passage.jpg
 value=2.169
 rarity=C
 type=Instant

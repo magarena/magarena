@@ -1,6 +1,6 @@
 name=Zof Shade
 url=http://magiccards.info/roe/en/132.html
-image=http://magiccards.info/scans/en/roe/132.jpg
+image=http://mtgimage.com/card/zof%20shade.jpg
 value=1.877
 rarity=C
 type=Creature

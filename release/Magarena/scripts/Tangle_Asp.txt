@@ -1,6 +1,6 @@
 name=Tangle Asp
 url=http://magiccards.info/5dn/en/94.html
-image=http://magiccards.info/scans/en/5dn/94.jpg
+image=http://mtgimage.com/card/tangle%20asp.jpg
 value=3.856
 rarity=C
 type=Creature

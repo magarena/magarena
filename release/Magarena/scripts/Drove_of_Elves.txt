@@ -1,6 +1,6 @@
 name=Drove of Elves
 url=http://magiccards.info/shm/en/112.html
-image=http://magiccards.info/scans/en/shm/112.jpg
+image=http://mtgimage.com/card/drove%20of%20elves.jpg
 value=3.924
 rarity=U
 type=Creature

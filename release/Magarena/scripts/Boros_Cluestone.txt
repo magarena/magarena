@@ -1,0 +1,9 @@
+name=Boros Cluestone
+url=http://magiccards.info/dgm/en/137.html
+image=http://mtgimage.com/card/boros%20cluestone.jpg
+value=2.891
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {R} or {W};pay {R}{W},{S}: PN draws a card.
+timing=artifact

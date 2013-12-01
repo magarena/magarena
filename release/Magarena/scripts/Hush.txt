@@ -1,6 +1,6 @@
 name=Hush
 url=http://magiccards.info/us/en/266.html
-image=http://magiccards.info/scans/en/us/266.jpg
+image=http://mtgimage.com/card/hush.jpg
 value=3.448
 rarity=C
 type=Sorcery

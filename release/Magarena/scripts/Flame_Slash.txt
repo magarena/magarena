@@ -1,7 +1,7 @@
 name=Flame Slash
 url=http://magiccards.info/roe/en/145.html
-image=http://magiccards.info/scans/en/roe/145.jpg
-value=4.479
+image=http://mtgimage.com/card/flame%20slash.jpg
+value=4.519
 rarity=C
 type=Sorcery
 cost={R}

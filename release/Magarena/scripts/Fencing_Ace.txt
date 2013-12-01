@@ -1,6 +1,6 @@
 name=Fencing Ace
 url=http://magiccards.info/rtr/en/11.html
-image=http://magiccards.info/scans/en/rtr/11.jpg
+image=http://mtgimage.com/card/fencing%20ace.jpg
 value=4.000
 ability=double strike
 rarity=U

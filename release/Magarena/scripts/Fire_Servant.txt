@@ -1,6 +1,6 @@
 name=Fire Servant
 url=http://magiccards.info/pd2/en/15.html
-image=http://magiccards.info/scans/en/m11/137.jpg
+image=http://mtgimage.com/card/fire%20servant.jpg
 value=4.363
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Bog Gnarr
 url=http://magiccards.info/ap/en/76.html
-image=http://magiccards.info/scans/en/ap/76.jpg
+image=http://mtgimage.com/card/bog%20gnarr.jpg
 value=2.484
 rarity=C
 type=Creature

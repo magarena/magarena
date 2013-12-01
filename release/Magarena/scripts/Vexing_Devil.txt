@@ -1,7 +1,7 @@
 name=Vexing Devil
 url=http://magiccards.info/avr/en/164.html
-image=http://magiccards.info/scans/en/avr/164.jpg
-value=4.140
+image=http://mtgimage.com/card/vexing%20devil.jpg
+value=4.146
 rarity=R
 type=Creature
 subtype=Devil

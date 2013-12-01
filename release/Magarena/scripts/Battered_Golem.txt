@@ -1,6 +1,6 @@
 name=Battered Golem
 url=http://magiccards.info/5dn/en/106.html
-image=http://magiccards.info/scans/en/5dn/106.jpg
+image=http://mtgimage.com/card/battered%20golem.jpg
 value=2.652
 rarity=C
 type=Artifact,Creature

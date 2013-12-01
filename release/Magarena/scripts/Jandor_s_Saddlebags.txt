@@ -1,0 +1,9 @@
+name=Jandor's Saddlebags
+url=http://magiccards.info/7e/en/304.html
+image=http://mtgimage.com/card/jandor%27s%20saddlebags.jpg
+value=1.964
+rarity=R
+type=Artifact
+cost={2}
+ability=pay {3},{T}:Untap target creature.
+timing=artifact

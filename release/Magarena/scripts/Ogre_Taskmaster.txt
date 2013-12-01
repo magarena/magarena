@@ -1,6 +1,6 @@
 name=Ogre Taskmaster
 url=http://magiccards.info/9e/en/205.html
-image=http://magiccards.info/scans/en/9e/205.jpg
+image=http://mtgimage.com/card/ogre%20taskmaster.jpg
 value=2.229
 ability=can't block
 rarity=U

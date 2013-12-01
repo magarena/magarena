@@ -1,6 +1,6 @@
 name=Nettle Swine
 url=http://magiccards.info/avr/en/186.html
-image=http://magiccards.info/scans/en/avr/186.jpg
+image=http://mtgimage.com/card/nettle%20swine.jpg
 value=2.000
 rarity=C
 type=Creature

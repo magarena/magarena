@@ -1,6 +1,6 @@
 name=Reckless Brute
 url=http://magiccards.info/m13/en/144.html
-image=http://magiccards.info/scans/en/m13/144.jpg
+image=http://mtgimage.com/card/reckless%20brute.jpg
 value=2.333
 rarity=C
 type=Creature

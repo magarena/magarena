@@ -1,6 +1,6 @@
 name=Guise of Fire
 url=http://magiccards.info/avr/en/137.html
-image=http://magiccards.info/scans/en/avr/137.jpg
+image=http://mtgimage.com/card/guise%20of%20fire.jpg
 value=1.500
 rarity=C
 type=Enchantment

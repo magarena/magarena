@@ -1,14 +1,13 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        event.processTargetPlayer(game,new MagicPlayerAction() {
-            public void doAction(final MagicPlayer player) {
-                game.doAction(new MagicChangeLifeAction(player,-1));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
-            }
+        event.processTargetPlayer(game, {
+            final MagicPlayer player ->
+            game.doAction(new MagicChangeLifeAction(player,-1));
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
         });
     }
-} as MagicEventAction
+}
 
 def event = {
     final MagicPermanent permanent ->

@@ -1,6 +1,6 @@
 name=Sulfur Falls
 url=http://magiccards.info/isd/en/248.html
-image=http://magiccards.info/scans/en/isd/248.jpg
+image=http://mtgimage.com/card/sulfur%20falls.jpg
 value=3.776
 rarity=R
 type=Land

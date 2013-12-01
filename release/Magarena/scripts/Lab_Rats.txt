@@ -1,6 +1,6 @@
 name=Lab Rats
 url=http://magiccards.info/sh/en/11.html
-image=http://magiccards.info/scans/en/sh/11.jpg
+image=http://mtgimage.com/card/lab%20rats.jpg
 value=3.130
 rarity=C
 type=Sorcery

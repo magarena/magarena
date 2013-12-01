@@ -1,7 +1,7 @@
 name=Vulpine Goliath
 url=http://magiccards.info/ths/en/183.html
-image=http://magiccards.info/scans/en/ths/183.jpg
-value=3.878
+image=http://mtgimage.com/card/vulpine%20goliath.jpg
+value=3.808
 rarity=C
 type=Creature
 subtype=Fox

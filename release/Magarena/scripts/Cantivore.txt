@@ -1,6 +1,6 @@
 name=Cantivore
 url=http://magiccards.info/od/en/13.html
-image=http://magiccards.info/scans/en/od/13.jpg
+image=http://mtgimage.com/card/cantivore.jpg
 value=3.061
 rarity=R
 type=Creature

@@ -1,7 +1,7 @@
 name=Flowstone Mauler
 url=http://magiccards.info/sh/en/85.html
-image=http://magiccards.info/scans/en/sh/85.jpg
-value=2.724
+image=http://mtgimage.com/card/flowstone%20mauler.jpg
+value=2.733
 rarity=R
 type=Creature
 subtype=Beast

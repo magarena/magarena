@@ -25,10 +25,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicSacrificeAction(creature));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(new MagicSacrificeAction(creature));
                 });
             } else {
                 game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));

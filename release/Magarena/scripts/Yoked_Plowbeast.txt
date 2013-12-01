@@ -1,6 +1,6 @@
 name=Yoked Plowbeast
 url=http://magiccards.info/ala/en/31.html
-image=http://magiccards.info/scans/en/ala/31.jpg
+image=http://mtgimage.com/card/yoked%20plowbeast.jpg
 value=2.020
 rarity=C
 type=Creature

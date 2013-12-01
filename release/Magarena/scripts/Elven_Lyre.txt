@@ -1,0 +1,9 @@
+name=Elven Lyre
+url=http://magiccards.info/me2/en/208.html
+image=http://mtgimage.com/card/elven%20lyre.jpg
+value=1.685
+rarity=C
+type=Artifact
+cost={2}
+ability=pay {1},{T},{S}:Target creature gets +2/+2 until end of turn.
+timing=artifact

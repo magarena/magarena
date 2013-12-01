@@ -1,7 +1,7 @@
 name=Starlit Sanctum
 url=http://magiccards.info/on/en/325.html
-image=http://magiccards.info/scans/en/on/325.jpg
-value=4.202
+image=http://mtgimage.com/card/starlit%20sanctum.jpg
+value=4.198
 rarity=U
 type=Land
 ability=tap add mana {1}

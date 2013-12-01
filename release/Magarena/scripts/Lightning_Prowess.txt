@@ -1,0 +1,11 @@
+name=Lightning Prowess
+url=http://magiccards.info/avr/en/145.html
+image=http://mtgimage.com/card/lightning%20prowess.jpg
+value=2.734
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+enchant=pump,pos creature
+given_ability=haste;pay {T}:SN deals 1 damage to target creature or player.
+timing=aura

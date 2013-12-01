@@ -1,6 +1,6 @@
 name=Scalebane's Elite
 url=http://magiccards.info/vi/en/135.html
-image=http://magiccards.info/scans/en/vi/135.jpg
+image=http://mtgimage.com/card/scalebane%27s%20elite.jpg
 value=3.043
 rarity=U
 type=Creature

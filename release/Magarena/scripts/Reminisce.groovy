@@ -11,20 +11,19 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                    for (final MagicCard card : graveyard) {
-                        game.doAction(new MagicRemoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard
-                        ));
-                        game.doAction(new MagicMoveCardAction(
-                            card,
-                            MagicLocationType.Graveyard,
-                            MagicLocationType.OwnersLibrary
-                        ));
-                    }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
+                for (final MagicCard card : graveyard) {
+                    game.doAction(new MagicRemoveCardAction(
+                        card,
+                        MagicLocationType.Graveyard
+                    ));
+                    game.doAction(new MagicMoveCardAction(
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.OwnersLibrary
+                    ));
                 }
             });
         }

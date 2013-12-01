@@ -1,6 +1,6 @@
 name=Battlefield Percher
 url=http://magiccards.info/ne/en/52.html
-image=http://magiccards.info/scans/en/ne/52.jpg
+image=http://mtgimage.com/card/battlefield%20percher.jpg
 value=1.476
 rarity=U
 type=Creature

@@ -22,10 +22,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent target) {
-                        game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,target));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent target ->
+                    game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,target));
                 });
             }
         }

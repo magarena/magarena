@@ -1,15 +1,14 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    event.processTargetCard(game,new MagicCardAction() {
-        public void doAction(final MagicCard card) {
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-            game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
-            if (card.hasType(MagicType.Creature)) {
-                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),2));
-            }
+    event.processTargetCard(game, {
+        final MagicCard card ->
+        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
+        game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.Exile));
+        if (card.hasType(MagicType.Creature)) {
+            game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),2));
         }
     });
-} as MagicEventAction
+}
 
 [
     new MagicPermanentActivation(
@@ -46,7 +45,7 @@ def action = {
                         "PN exiles a card\$ from his or her graveyard."
                     ));
                 }
-            } as MagicPlayerAction);
+            });
         }
     }
 ]

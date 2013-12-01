@@ -1,6 +1,6 @@
 name=Cursecatcher
 url=http://magiccards.info/shm/en/34.html
-image=http://magiccards.info/scans/en/shm/34.jpg
+image=http://mtgimage.com/card/cursecatcher.jpg
 value=4.277
 rarity=U
 type=Creature

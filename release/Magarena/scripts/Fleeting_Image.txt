@@ -1,6 +1,6 @@
 name=Fleeting Image
 url=http://magiccards.info/9e/en/78.html
-image=http://magiccards.info/scans/en/9e/78.jpg
+image=http://mtgimage.com/card/fleeting%20image.jpg
 value=3.173
 rarity=R
 type=Creature

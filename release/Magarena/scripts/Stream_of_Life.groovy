@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player ->
                 game.doAction(new MagicChangeLifeAction(player, event.getRefInt()));
-            } as MagicPlayerAction);
+            });
         }
     }
 ]

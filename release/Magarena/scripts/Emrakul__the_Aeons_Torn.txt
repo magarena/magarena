@@ -1,7 +1,7 @@
 name=Emrakul, the Aeons Torn
 url=http://magiccards.info/roe/en/4.html
-image=http://magiccards.info/scans/en/roe/4.jpg
-value=4.388
+image=http://mtgimage.com/card/emrakul%2C%20the%20aeons%20torn.jpg
+value=4.383
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi

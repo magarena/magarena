@@ -1,6 +1,6 @@
 name=Lumberknot
 url=http://magiccards.info/isd/en/191.html
-image=http://magiccards.info/scans/en/isd/191.jpg
+image=http://mtgimage.com/card/lumberknot.jpg
 value=3.571
 rarity=U
 type=Creature

@@ -17,7 +17,7 @@
                                 amount
                             )
                         ));
-                    } as MagicEventAction,
+                    },
                     "SN deals ${amount} damage to RN."
                 ):
                 MagicEvent.NONE;

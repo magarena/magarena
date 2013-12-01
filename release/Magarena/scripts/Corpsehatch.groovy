@@ -14,15 +14,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicPlayTokensAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("0/1 colorless Eldrazi Spawn creature token"),
-                        2
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicDestroyAction(creature));
+                game.doAction(new MagicPlayTokensAction(
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("0/1 colorless Eldrazi Spawn creature token"),
+                    2
+                ));
             });
         }
     }

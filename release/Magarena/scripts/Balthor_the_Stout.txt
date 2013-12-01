@@ -1,6 +1,6 @@
 name=Balthor the Stout
 url=http://magiccards.info/tr/en/91.html
-image=http://magiccards.info/scans/en/tr/91.jpg
+image=http://mtgimage.com/card/balthor%20the%20stout.jpg
 value=3.966
 rarity=R
 type=Legendary,Creature

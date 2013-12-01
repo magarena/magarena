@@ -1,6 +1,6 @@
 name=Wildsize
 url=http://magiccards.info/evg/en/23.html
-image=http://magiccards.info/scans/en/evg/23.jpg
+image=http://mtgimage.com/card/wildsize.jpg
 value=2.817
 rarity=C
 type=Instant

@@ -1,0 +1,9 @@
+name=Mental Discipline
+url=http://magiccards.info/ud/en/37.html
+image=http://mtgimage.com/card/mental%20discipline.jpg
+value=2.914
+rarity=C
+type=Enchantment
+cost={1}{U}{U}
+ability=pay {1}{U},Discard a card:PN draws a card.
+timing=enchantment

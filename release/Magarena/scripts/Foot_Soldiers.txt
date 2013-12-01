@@ -1,6 +1,6 @@
 name=Foot Soldiers
 url=http://magiccards.info/9e/en/14.html
-image=http://magiccards.info/scans/en/9e/14.jpg
+image=http://mtgimage.com/card/foot%20soldiers.jpg
 value=1.288
 rarity=C
 type=Creature

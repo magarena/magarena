@@ -17,7 +17,7 @@ def PulmonicTrigger = new MagicWouldBeMovedTrigger() {
                         //needs to be delayed so it occurs after trigger is remove
                         G.addDelayedAction(new MagicMoveCardAction(E.getRefCard(), act.fromLocation, MagicLocationType.Graveyard));
                     }
-                } as MagicEventAction,
+                },
                 "PN may\$ put SN on top of its owner's library."
             ));
         }

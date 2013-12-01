@@ -1,7 +1,7 @@
 name=Breeding Pit
 url=http://magiccards.info/dvd/en/53.html
-image=http://magiccards.info/scans/en/dvd/53.jpg
-value=3.292
+image=http://mtgimage.com/card/breeding%20pit.jpg
+value=3.301
 rarity=U
 type=Enchantment
 cost={3}{B}

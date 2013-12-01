@@ -1,6 +1,6 @@
 name=Qasali Pridemage
 url=http://magiccards.info/ddh/en/10.html
-image=http://magiccards.info/scans/en/arb/75.jpg
+image=http://mtgimage.com/card/qasali%20pridemage.jpg
 value=4.650
 rarity=C
 type=Creature

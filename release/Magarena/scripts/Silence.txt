@@ -1,6 +1,6 @@
 name=Silence
 url=http://magiccards.info/m11/en/30.html
-image=http://magiccards.info/scans/en/m11/30.jpg
+image=http://mtgimage.com/card/silence.jpg
 value=4.157
 rarity=R
 type=Instant

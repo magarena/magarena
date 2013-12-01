@@ -23,32 +23,31 @@
 
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
-            outerEvent.processTargetPlayer(outerGame,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer outerPlayer) {
-                    outerGame.addEvent(new MagicEvent(
-                        outerEvent.getSource(),
-                        MagicColorChoice.ALL_INSTANCE,
-                        outerPlayer,
-                        {
-                            final MagicGame game, final MagicEvent event ->
-                            final MagicColor color = event.getChosenColor();
-                            final MagicPlayer player = event.getRefPlayer();
-                            final int x = outerEvent.getRefInt();
-                            for (int i = 0; i < x && player.getLibrary().getCardAtTop() != MagicCard.NONE; i++) {
-                                final MagicCard card = player.getLibrary().getCardAtTop();
-                                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                                game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
-                                if (card.hasColor(color)) {
-                                    game.doAction(new MagicPlayTokenAction(
-                                        event.getPlayer(),
-                                        TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
-                                    ));
-                                }
+            outerEvent.processTargetPlayer(outerGame, {
+                final MagicPlayer outerPlayer ->
+                outerGame.addEvent(new MagicEvent(
+                    outerEvent.getSource(),
+                    MagicColorChoice.ALL_INSTANCE,
+                    outerPlayer,
+                    {
+                        final MagicGame game, final MagicEvent event ->
+                        final MagicColor color = event.getChosenColor();
+                        final MagicPlayer player = event.getRefPlayer();
+                        final int x = outerEvent.getRefInt();
+                        for (int i = 0; i < x && player.getLibrary().getCardAtTop() != MagicCard.NONE; i++) {
+                            final MagicCard card = player.getLibrary().getCardAtTop();
+                            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                            if (card.hasColor(color)) {
+                                game.doAction(new MagicPlayTokenAction(
+                                    event.getPlayer(),
+                                    TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
+                                ));
                             }
-                        } as MagicEventAction,
-                        "Chosen color\$."
-                    ));
-                }
+                        }
+                    },
+                    "Chosen color\$."
+                ));
             });
         }
     }

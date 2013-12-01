@@ -1,6 +1,6 @@
 name=Soltari Trooper
 url=http://magiccards.info/tp/en/259.html
-image=http://magiccards.info/scans/en/tp/259.jpg
+image=http://mtgimage.com/card/soltari%20trooper.jpg
 value=3.871
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Ashmouth Hound
 url=http://magiccards.info/isd/en/128.html
-image=http://magiccards.info/scans/en/isd/128.jpg
+image=http://mtgimage.com/card/ashmouth%20hound.jpg
 value=3.786
 rarity=C
 type=Creature

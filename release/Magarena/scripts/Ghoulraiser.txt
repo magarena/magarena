@@ -1,6 +1,6 @@
 name=Ghoulraiser
 url=http://magiccards.info/isd/en/102.html
-image=http://magiccards.info/scans/en/isd/102.jpg
+image=http://mtgimage.com/card/ghoulraiser.jpg
 value=3.120
 rarity=C
 type=Creature

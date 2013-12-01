@@ -1,6 +1,6 @@
 name=Trained Orgg
 url=http://magiccards.info/7e/en/224.html
-image=http://magiccards.info/scans/en/7e/224.jpg
+image=http://mtgimage.com/card/trained%20orgg.jpg
 value=1.466
 rarity=R
 type=Creature

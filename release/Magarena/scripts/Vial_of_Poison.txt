@@ -1,0 +1,9 @@
+name=Vial of Poison
+url=http://magiccards.info/m14/en/226.html
+image=http://mtgimage.com/card/vial%20of%20poison.jpg
+value=3.172
+rarity=U
+type=Artifact
+cost={1}
+ability=pay {1},{S}:Target creature gains deathtouch until end of turn.
+timing=artifact

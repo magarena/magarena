@@ -1,7 +1,7 @@
 name=Pouncing Wurm
 url=http://magiccards.info/pc/en/136.html
-image=http://magiccards.info/scans/en/pc/136.jpg
-value=2.810
+image=http://mtgimage.com/card/pouncing%20wurm.jpg
+value=2.850
 rarity=U
 type=Creature
 subtype=Wurm

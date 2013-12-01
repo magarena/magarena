@@ -1,6 +1,6 @@
 name=Geralf's Mindcrusher
 url=http://magiccards.info/dka/en/37.html
-image=http://magiccards.info/scans/en/dka/37.jpg
+image=http://mtgimage.com/card/geralf%27s%20mindcrusher.jpg
 value=3.744
 rarity=R
 type=Creature

@@ -21,18 +21,17 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        final MagicPlayer player = event.getPlayer();
-                        final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                        if (amount > 0) {
-                            final MagicDamage damage = new MagicDamage(
-                                event.getPermanent(),
-                                creature,
-                                amount
-                            );
-                            game.doAction(new MagicDealDamageAction(damage));
-                        }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    final MagicPlayer player = event.getPlayer();
+                    final int amount = player.getNrOfPermanents(MagicSubType.Ally);
+                    if (amount > 0) {
+                        final MagicDamage damage = new MagicDamage(
+                            event.getPermanent(),
+                            creature,
+                            amount
+                        );
+                        game.doAction(new MagicDealDamageAction(damage));
                     }
                 });
             }

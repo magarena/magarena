@@ -1,0 +1,9 @@
+name=Fodder Cannon
+url=http://magiccards.info/8e/en/302.html
+image=http://mtgimage.com/card/fodder%20cannon.jpg
+value=4.170
+rarity=U
+type=Artifact
+cost={4}
+ability=pay {4},{T},Sacrifice a creature:SN deals 4 damage to target creature.
+timing=artifact

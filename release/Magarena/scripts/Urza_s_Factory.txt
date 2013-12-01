@@ -1,0 +1,9 @@
+name=Urza's Factory
+url=http://magiccards.info/ts/en/280.html
+image=http://mtgimage.com/card/urza%27s%20factory.jpg
+value=2.636
+rarity=U
+type=Land
+subtype=Urza's
+ability=tap add mana {1};pay {T},{7}: PN puts a 2/2 colorless Assembly-Worker artifact creature token onto the battlefield.
+timing=land

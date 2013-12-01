@@ -1,6 +1,6 @@
 name=Hanweir Lancer
 url=http://magiccards.info/avr/en/138.html
-image=http://magiccards.info/scans/en/avr/138.jpg
+image=http://mtgimage.com/card/hanweir%20lancer.jpg
 value=3.029
 rarity=C
 type=Creature

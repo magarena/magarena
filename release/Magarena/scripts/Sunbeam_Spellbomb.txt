@@ -1,0 +1,9 @@
+name=Sunbeam Spellbomb
+url=http://magiccards.info/mrd/en/250.html
+image=http://mtgimage.com/card/sunbeam%20spellbomb.jpg
+value=3.394
+rarity=C
+type=Artifact
+cost={1}
+ability=pay {W},{S}:PN gains 5 life.;pay {1},{S}:PN draws a card.
+timing=artifact

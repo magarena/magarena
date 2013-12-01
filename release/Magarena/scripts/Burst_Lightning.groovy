@@ -13,12 +13,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final int amount = event.isKicked() ? 4 : 2;
-                    final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
+            event.processTarget(game, {
+                final MagicTarget target ->
+                final int amount = event.isKicked() ? 4 : 2;
+                final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                game.doAction(new MagicDealDamageAction(damage));
             });
         }
     }

@@ -1,6 +1,6 @@
 name=Gray Ogre
 url=http://magiccards.info/4e/en/218.html
-image=http://magiccards.info/scans/en/4e/218.jpg
+image=http://mtgimage.com/card/gray%20ogre.jpg
 value=1.346
 rarity=C
 type=Creature

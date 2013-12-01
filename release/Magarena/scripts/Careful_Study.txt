@@ -1,6 +1,6 @@
 name=Careful Study
 url=http://magiccards.info/od/en/70.html
-image=http://magiccards.info/scans/en/od/70.jpg
+image=http://mtgimage.com/card/careful%20study.jpg
 value=4.354
 rarity=C
 type=Sorcery

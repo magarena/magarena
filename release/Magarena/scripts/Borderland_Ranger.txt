@@ -1,6 +1,6 @@
 name=Borderland Ranger
 url=http://magiccards.info/avr/en/169.html
-image=http://magiccards.info/scans/en/avr/169.jpg
+image=http://mtgimage.com/card/borderland%20ranger.jpg
 value=3.567
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Frilled Oculus
 url=http://magiccards.info/gtc/en/35.html
-image=http://magiccards.info/scans/en/gtc/35.jpg
-value=2.918
+image=http://mtgimage.com/card/frilled%20oculus.jpg
+value=2.971
 rarity=C
 type=Creature
 subtype=Homunculus

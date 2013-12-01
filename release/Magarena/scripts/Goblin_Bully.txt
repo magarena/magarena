@@ -1,7 +1,7 @@
 name=Goblin Bully
 url=http://magiccards.info/me4/en/117.html
-image=http://magiccards.info/scans/en/me4/117.jpg
-value=2.190
+image=http://mtgimage.com/card/goblin%20bully.jpg
+value=2.217
 rarity=C
 type=Creature
 subtype=Goblin

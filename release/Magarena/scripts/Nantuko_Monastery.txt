@@ -1,6 +1,6 @@
 name=Nantuko Monastery
 url=http://magiccards.info/arc/en/131.html
-image=http://magiccards.info/scans/en/arc/131.jpg
+image=http://mtgimage.com/card/nantuko%20monastery.jpg
 value=4.368
 rarity=U
 type=Land

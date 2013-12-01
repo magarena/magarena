@@ -1,6 +1,6 @@
 name=Balshan Collaborator
 url=http://magiccards.info/tr/en/25.html
-image=http://magiccards.info/scans/en/tr/25.jpg
+image=http://mtgimage.com/card/balshan%20collaborator.jpg
 value=3.150
 rarity=U
 type=Creature

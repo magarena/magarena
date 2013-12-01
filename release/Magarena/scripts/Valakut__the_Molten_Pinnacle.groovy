@@ -21,15 +21,14 @@
             if (MagicCondition.LEAST_FIVE_OTHER_MOUNTAINS.accept(event.getRefPermanent()) == false || event.isNo()) {
                 return;
             }
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage(
-                        event.getSource(),
-                        target,
-                        3
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
+            event.processTarget(game, {
+                final MagicTarget target ->
+                final MagicDamage damage = new MagicDamage(
+                    event.getSource(),
+                    target,
+                    3
+                );
+                game.doAction(new MagicDealDamageAction(damage));
             });
         }
     }

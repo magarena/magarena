@@ -1,7 +1,7 @@
 name=Chant of the Skifsang
 url=http://magiccards.info/dka/en/31.html
-image=http://magiccards.info/scans/en/dka/31.jpg
-value=2.633
+image=http://mtgimage.com/card/chant%20of%20the%20skifsang.jpg
+value=2.650
 rarity=C
 type=Enchantment
 subtype=Aura

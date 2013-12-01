@@ -1,7 +1,7 @@
 name=Misty Rainforest
 url=http://magiccards.info/zen/en/220.html
-image=http://magiccards.info/scans/en/zen/220.jpg
-value=4.445
+image=http://mtgimage.com/card/misty%20rainforest.jpg
+value=4.449
 rarity=R
 type=Land
 timing=land

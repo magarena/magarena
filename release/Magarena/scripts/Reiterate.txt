@@ -1,7 +1,7 @@
 name=Reiterate
 url=http://magiccards.info/ts/en/175.html
-image=http://magiccards.info/scans/en/ts/175.jpg
-value=4.112
+image=http://mtgimage.com/card/reiterate.jpg
+value=4.103
 rarity=R
 type=Instant
 cost={1}{R}{R}

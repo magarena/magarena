@@ -1,6 +1,6 @@
 name=Thunder Dragon
 url=http://magiccards.info/ddg/en/61.html
-image=http://magiccards.info/scans/en/fvd/14.jpg
+image=http://mtgimage.com/card/thunder%20dragon.jpg
 value=4.264
 rarity=R
 type=Creature

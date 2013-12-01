@@ -1,6 +1,6 @@
 name=Mask of Memory
 url=http://magiccards.info/pch/en/119.html
-image=http://magiccards.info/scans/en/pch/119.jpg
+image=http://mtgimage.com/card/mask%20of%20memory.jpg
 value=4.186
 rarity=U
 type=Artifact

@@ -1,6 +1,6 @@
 name=Shizo, Death's Storehouse
 url=http://magiccards.info/chk/en/283.html
-image=http://magiccards.info/scans/en/chk/283.jpg
+image=http://mtgimage.com/card/shizo%2C%20death%27s%20storehouse.jpg
 value=4.227
 rarity=R
 type=Legendary,Land

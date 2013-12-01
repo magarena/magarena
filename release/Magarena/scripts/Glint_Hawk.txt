@@ -1,6 +1,6 @@
 name=Glint Hawk
 url=http://magiccards.info/som/en/10.html
-image=http://magiccards.info/scans/en/som/10.jpg
+image=http://mtgimage.com/card/glint%20hawk.jpg
 value=3.875
 rarity=C
 type=Creature

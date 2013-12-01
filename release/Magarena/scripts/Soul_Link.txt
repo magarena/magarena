@@ -1,7 +1,7 @@
 name=Soul Link
 url=http://magiccards.info/ap/en/120.html
-image=http://magiccards.info/scans/en/ap/120.jpg
-value=4.203
+image=http://mtgimage.com/card/soul%20link.jpg
+value=4.217
 removal=1
 rarity=C
 type=Enchantment

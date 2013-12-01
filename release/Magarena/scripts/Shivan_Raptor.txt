@@ -1,6 +1,6 @@
 name=Shivan Raptor
 url=http://magiccards.info/us/en/215.html
-image=http://magiccards.info/scans/en/us/215.jpg
+image=http://mtgimage.com/card/shivan%20raptor.jpg
 value=3.635
 rarity=U
 type=Creature

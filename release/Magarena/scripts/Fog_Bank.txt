@@ -1,7 +1,7 @@
 name=Fog Bank
 url=http://magiccards.info/m13/en/52.html
-image=http://magiccards.info/scans/en/m13/52.jpg
-value=4.250
+image=http://mtgimage.com/card/fog%20bank.jpg
+value=4.357
 rarity=U
 type=Creature
 subtype=Wall

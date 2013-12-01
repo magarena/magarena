@@ -1,7 +1,7 @@
 name=Spell Snip
 url=http://magiccards.info/ala/en/57.html
-image=http://magiccards.info/scans/en/ala/57.jpg
-value=1.225
+image=http://mtgimage.com/card/spell%20snip.jpg
+value=1.219
 rarity=C
 type=Instant
 cost={2}{U}

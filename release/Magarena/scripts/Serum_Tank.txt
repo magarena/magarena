@@ -1,6 +1,6 @@
 name=Serum Tank
 url=http://magiccards.info/pch/en/125.html
-image=http://magiccards.info/scans/en/pch/125.jpg
+image=http://mtgimage.com/card/serum%20tank.jpg
 value=3.312
 rarity=U
 type=Artifact

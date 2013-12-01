@@ -15,13 +15,12 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    game.doAction(new MagicReanimateAction(
-                        card,
-                        event.getPlayer()
-                    ));
-                }
+            event.processTargetCard(game, {
+                final MagicCard card ->
+                game.doAction(new MagicReanimateAction(
+                    card,
+                    event.getPlayer()
+                ));
             });
         }
     }

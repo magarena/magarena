@@ -1,6 +1,6 @@
 name=Fear
 url=http://magiccards.info/10e/en/142.html
-image=http://magiccards.info/scans/en/10e/142.jpg
+image=http://mtgimage.com/card/fear.jpg
 value=2.337
 rarity=C
 type=Enchantment

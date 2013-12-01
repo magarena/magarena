@@ -1,6 +1,6 @@
 name=Dark Favor
 url=http://magiccards.info/m12/en/89.html
-image=http://magiccards.info/scans/en/m12/89.jpg
+image=http://mtgimage.com/card/dark%20favor.jpg
 value=3.000
 rarity=C
 type=Enchantment

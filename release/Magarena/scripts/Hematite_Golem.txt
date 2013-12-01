@@ -1,6 +1,6 @@
 name=Hematite Golem
 url=http://magiccards.info/mi/en/185.html
-image=http://magiccards.info/scans/en/mi/185.jpg
+image=http://mtgimage.com/card/hematite%20golem.jpg
 value=2.647
 rarity=C
 type=Artifact,Creature

@@ -1,0 +1,11 @@
+name=Racecourse Fury
+url=http://magiccards.info/rtr/en/104.html
+image=http://mtgimage.com/card/racecourse%20fury.jpg
+value=2.615
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={R}
+given_ability=pay {T}:Target creature gains haste until end of turn.
+enchant=pump,pos land
+timing=aura

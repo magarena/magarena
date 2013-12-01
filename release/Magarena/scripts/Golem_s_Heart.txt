@@ -1,6 +1,6 @@
 name=Golem's Heart
 url=http://magiccards.info/som/en/161.html
-image=http://magiccards.info/scans/en/som/161.jpg
+image=http://mtgimage.com/card/golem%27s%20heart.jpg
 value=2.696
 rarity=U
 type=Artifact

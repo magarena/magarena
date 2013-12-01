@@ -12,16 +12,15 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack card) {
-                    game.doAction(new MagicCounterItemOnStackAction(card));
-                    game.doAction(new MagicChangeCountersAction(
-                        event.getPermanent(),
-                        MagicCounterType.PlusOne,
-                        card.getConvertedCost(),
-                        true
-                    ));
-                }
+            event.processTargetCardOnStack(game, {
+                final MagicCardOnStack card ->
+                game.doAction(new MagicCounterItemOnStackAction(card));
+                game.doAction(new MagicChangeCountersAction(
+                    event.getPermanent(),
+                    MagicCounterType.PlusOne,
+                    card.getConvertedCost(),
+                    true
+                ));
             });
         }
     }

@@ -1,6 +1,6 @@
 name=Bull Cerodon
 url=http://magiccards.info/pch/en/84.html
-image=http://magiccards.info/scans/en/pch/84.jpg
+image=http://mtgimage.com/card/bull%20cerodon.jpg
 value=3.360
 rarity=U
 type=Creature

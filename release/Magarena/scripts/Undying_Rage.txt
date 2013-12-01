@@ -1,6 +1,6 @@
 name=Undying Rage
 url=http://magiccards.info/ts/en/184.html
-image=http://magiccards.info/scans/en/ts/184.jpg
+image=http://mtgimage.com/card/undying%20rage.jpg
 value=2.833
 rarity=U
 type=Enchantment

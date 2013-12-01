@@ -1,6 +1,6 @@
 name=Temporal Isolation
 url=http://magiccards.info/ts/en/43.html
-image=http://magiccards.info/scans/en/ts/43.jpg
+image=http://mtgimage.com/card/temporal%20isolation.jpg
 value=4.054
 rarity=C
 type=Enchantment

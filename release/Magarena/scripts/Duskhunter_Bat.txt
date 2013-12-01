@@ -1,6 +1,6 @@
 name=Duskhunter Bat
 url=http://magiccards.info/m12/en/97.html
-image=http://magiccards.info/scans/en/m12/97.jpg
+image=http://mtgimage.com/card/duskhunter%20bat.jpg
 value=3.429
 rarity=C
 type=Creature

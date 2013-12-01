@@ -1,6 +1,6 @@
 name=Duskmantle Prowler
 url=http://magiccards.info/m13/en/91.html
-image=http://magiccards.info/scans/en/m13/91.jpg
+image=http://mtgimage.com/card/duskmantle%20prowler.jpg
 value=3.091
 rarity=U
 type=Creature

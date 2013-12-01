@@ -1,6 +1,6 @@
 name=Greenhilt Trainee
 url=http://magiccards.info/nph/en/112.html
-image=http://magiccards.info/scans/en/nph/112.jpg
+image=http://mtgimage.com/card/greenhilt%20trainee.jpg
 value=2.807
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Selenia, Dark Angel
 url=http://magiccards.info/tp/en/345.html
-image=http://magiccards.info/scans/en/tp/345.jpg
+image=http://mtgimage.com/card/selenia%2C%20dark%20angel.jpg
 value=3.900
 rarity=R
 type=Legendary,Creature

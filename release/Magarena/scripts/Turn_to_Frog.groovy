@@ -43,7 +43,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
                 //Does not lose static or triggers
                 game.doAction(new MagicGainAbilityAction(creature,MagicAbility.CantActivateAbilities));
                 game.doAction(new MagicBecomesCreatureAction(creature,PT,AB,ST,C));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

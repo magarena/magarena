@@ -1,6 +1,6 @@
 name=Genesis Chamber
 url=http://magiccards.info/ds/en/122.html
-image=http://magiccards.info/scans/en/ds/122.jpg
+image=http://mtgimage.com/card/genesis%20chamber.jpg
 value=4.479
 rarity=U
 type=Artifact

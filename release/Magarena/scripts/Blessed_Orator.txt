@@ -1,7 +1,7 @@
 name=Blessed Orator
 url=http://magiccards.info/9e/en/6.html
-image=http://magiccards.info/scans/en/9e/6.jpg
-value=2.736
+image=http://mtgimage.com/card/blessed%20orator.jpg
+value=2.797
 rarity=U
 type=Creature
 subtype=Human,Cleric

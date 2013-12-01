@@ -1,6 +1,6 @@
 name=Trip Noose
 url=http://magiccards.info/ddf/en/65.html
-image=http://magiccards.info/scans/en/shm/266.jpg
+image=http://mtgimage.com/card/trip%20noose.jpg
 value=3.722
 removal=2
 rarity=U

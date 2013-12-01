@@ -1,6 +1,6 @@
 name=Sightless Ghoul
 url=http://magiccards.info/dka/en/73.html
-image=http://magiccards.info/scans/en/dka/73.jpg
+image=http://mtgimage.com/card/sightless%20ghoul.jpg
 value=1.921
 rarity=C
 type=Creature

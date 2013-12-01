@@ -1,6 +1,6 @@
 name=Befoul
 url=http://magiccards.info/chk/en/102.html
-image=http://magiccards.info/scans/en/chk/102.jpg
+image=http://mtgimage.com/card/befoul.jpg
 value=3.500
 rarity=C
 type=Sorcery

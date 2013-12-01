@@ -1,7 +1,7 @@
 name=Killer Whale
 url=http://magiccards.info/bd/en/11.html
-image=http://magiccards.info/scans/en/bd/11.jpg
-value=3.360
+image=http://mtgimage.com/card/killer%20whale.jpg
+value=3.364
 rarity=U
 type=Creature
 subtype=Whale

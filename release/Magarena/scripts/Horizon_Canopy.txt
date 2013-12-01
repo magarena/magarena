@@ -1,6 +1,6 @@
 name=Horizon Canopy
 url=http://magiccards.info/fut/en/177.html
-image=http://magiccards.info/scans/en/fut/177.jpg
+image=http://mtgimage.com/card/horizon%20canopy.jpg
 value=4.305
 rarity=R
 type=Land

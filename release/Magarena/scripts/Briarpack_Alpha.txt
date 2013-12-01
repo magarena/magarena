@@ -1,6 +1,6 @@
 name=Briarpack Alpha
 url=http://magiccards.info/dka/en/108.html
-image=http://magiccards.info/scans/en/dka/108.jpg
+image=http://mtgimage.com/card/briarpack%20alpha.jpg
 value=3.740
 rarity=U
 type=Creature

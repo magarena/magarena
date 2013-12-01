@@ -1,6 +1,6 @@
 name=Blightsoil Druid
 url=http://magiccards.info/mt/en/59.html
-image=http://magiccards.info/scans/en/mt/59.jpg
+image=http://mtgimage.com/card/blightsoil%20druid.jpg
 value=1.939
 rarity=C
 type=Creature

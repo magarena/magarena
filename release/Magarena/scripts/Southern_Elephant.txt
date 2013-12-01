@@ -1,6 +1,6 @@
 name=Southern Elephant
 url=http://magiccards.info/me4/en/167.html
-image=http://magiccards.info/scans/en/me4/167.jpg
+image=http://mtgimage.com/card/southern%20elephant.jpg
 value=2.761
 rarity=C
 type=Creature

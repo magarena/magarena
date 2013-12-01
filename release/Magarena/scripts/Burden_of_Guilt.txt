@@ -1,6 +1,6 @@
 name=Burden of Guilt
 url=http://magiccards.info/dka/en/4.html
-image=http://magiccards.info/scans/en/dka/4.jpg
+image=http://mtgimage.com/card/burden%20of%20guilt.jpg
 value=2.946
 removal=2
 rarity=C

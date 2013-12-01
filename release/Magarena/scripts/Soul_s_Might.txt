@@ -1,6 +1,6 @@
 name=Soul's Might
 url=http://magiccards.info/ala/en/149.html
-image=http://magiccards.info/scans/en/ala/149.jpg
+image=http://mtgimage.com/card/soul%27s%20might.jpg
 value=3.000
 rarity=C
 type=Sorcery

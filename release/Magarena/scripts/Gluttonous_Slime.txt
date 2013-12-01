@@ -1,6 +1,6 @@
 name=Gluttonous Slime
 url=http://magiccards.info/cfx/en/83.html
-image=http://magiccards.info/scans/en/cfx/83.jpg
+image=http://mtgimage.com/card/gluttonous%20slime.jpg
 value=2.846
 rarity=U
 type=Creature

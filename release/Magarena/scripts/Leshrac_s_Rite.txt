@@ -1,6 +1,6 @@
 name=Leshrac's Rite
 url=http://magiccards.info/7e/en/144.html
-image=http://magiccards.info/scans/en/7e/144.jpg
+image=http://mtgimage.com/card/leshrac%27s%20rite.jpg
 value=2.227
 rarity=U
 type=Enchantment

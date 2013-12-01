@@ -1,6 +1,6 @@
 name=Darkslick Drake
 url=http://magiccards.info/som/en/30.html
-image=http://magiccards.info/scans/en/som/30.jpg
+image=http://mtgimage.com/card/darkslick%20drake.jpg
 value=3.372
 rarity=U
 type=Creature

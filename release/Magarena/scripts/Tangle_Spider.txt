@@ -1,6 +1,6 @@
 name=Tangle Spider
 url=http://magiccards.info/10e/en/303.html
-image=http://magiccards.info/scans/en/10e/303.jpg
+image=http://mtgimage.com/card/tangle%20spider.jpg
 value=2.136
 ability=flash;reach
 rarity=C

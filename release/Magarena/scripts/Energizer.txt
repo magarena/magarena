@@ -1,0 +1,11 @@
+name=Energizer
+url=http://magiccards.info/tp/en/275.html
+image=http://mtgimage.com/card/energizer.jpg
+value=2.625
+rarity=R
+type=Artifact,Creature
+subtype=Juggernaut
+cost={4}
+pt=2/2
+ability=pay {2},{T}:Put a +1/+1 counter on SN.
+timing=artifact

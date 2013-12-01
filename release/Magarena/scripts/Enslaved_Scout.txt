@@ -1,6 +1,6 @@
 name=Enslaved Scout
 url=http://magiccards.info/ai/en/104.html
-image=http://magiccards.info/scans/en/ai/104.jpg
+image=http://mtgimage.com/card/enslaved%20scout.jpg
 value=1.632
 rarity=C
 type=Creature

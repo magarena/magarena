@@ -1,6 +1,6 @@
 name=Personal Tutor
 url=http://magiccards.info/me2/en/58.html
-image=http://magiccards.info/scans/en/me2/58.jpg
+image=http://mtgimage.com/card/personal%20tutor.jpg
 value=3.950
 rarity=U
 type=Sorcery

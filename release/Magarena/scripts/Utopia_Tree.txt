@@ -1,6 +1,6 @@
 name=Utopia Tree
 url=http://magiccards.info/9e/en/277.html
-image=http://magiccards.info/scans/en/9e/277.jpg
+image=http://mtgimage.com/card/utopia%20tree.jpg
 value=4.118
 rarity=R
 type=Creature

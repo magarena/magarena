@@ -19,17 +19,16 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard targetCard) {
-                    if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                        game.doAction(new MagicReanimateAction(
-                            targetCard,
-                            player
-                        ));
-                    } else {
-                        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                        game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                    }
+            event.processTargetCard(game, {
+                final MagicCard targetCard ->
+                if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
+                    game.doAction(new MagicReanimateAction(
+                        targetCard,
+                        player
+                    ));
+                } else {
+                    game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                    game.doAction(new MagicMoveCardAction(targetCard,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
             });
         }

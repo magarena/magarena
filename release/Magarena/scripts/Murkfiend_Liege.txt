@@ -1,7 +1,7 @@
 name=Murkfiend Liege
 url=http://magiccards.info/eve/en/156.html
-image=http://magiccards.info/scans/en/eve/156.jpg
-value=4.344
+image=http://mtgimage.com/card/murkfiend%20liege.jpg
+value=4.750
 rarity=R
 type=Creature
 subtype=Horror

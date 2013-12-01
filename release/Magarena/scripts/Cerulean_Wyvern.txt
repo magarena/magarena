@@ -1,6 +1,6 @@
 name=Cerulean Wyvern
 url=http://magiccards.info/mr/en/57.html
-image=http://magiccards.info/scans/en/mr/57.jpg
+image=http://mtgimage.com/card/cerulean%20wyvern.jpg
 value=2.891
 rarity=U
 type=Creature

@@ -1,0 +1,9 @@
+name=Seal of Removal
+url=http://magiccards.info/ne/en/42.html
+image=http://mtgimage.com/card/seal%20of%20removal.jpg
+value=4.128
+rarity=C
+type=Enchantment
+cost={U}
+ability=pay {S}:Return target creature to its owner's hand.
+timing=enchantment

@@ -1,6 +1,6 @@
 name=Child of Alara
 url=http://magiccards.info/cfx/en/101.html
-image=http://magiccards.info/scans/en/cfx/101.jpg
+image=http://mtgimage.com/card/child%20of%20alara.jpg
 value=3.321
 rarity=M
 type=Legendary,Creature

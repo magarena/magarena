@@ -1,6 +1,6 @@
 name=Barktooth Warbeard
 url=http://magiccards.info/me3/en/144.html
-image=http://magiccards.info/scans/en/me3/144.jpg
+image=http://mtgimage.com/card/barktooth%20warbeard.jpg
 value=2.211
 rarity=C
 type=Legendary,Creature

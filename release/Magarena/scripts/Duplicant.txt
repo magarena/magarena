@@ -1,6 +1,6 @@
 name=Duplicant
 url=http://magiccards.info/arc/en/106.html
-image=http://magiccards.info/scans/en/arc/106.jpg
+image=http://mtgimage.com/card/duplicant.jpg
 value=4.396
 rarity=R
 type=Artifact,Creature

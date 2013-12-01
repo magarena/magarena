@@ -1,6 +1,6 @@
 name=Tel-Jilad Chosen
 url=http://magiccards.info/mi/en/132.html
-image=http://magiccards.info/scans/en/mi/132.jpg
+image=http://mtgimage.com/card/tel%2Djilad%20chosen.jpg
 value=3.067
 rarity=C
 type=Creature

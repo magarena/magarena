@@ -1,6 +1,6 @@
 name=Echoing Courage
 url=http://magiccards.info/ds/en/74.html
-image=http://magiccards.info/scans/en/ds/74.jpg
+image=http://mtgimage.com/card/echoing%20courage.jpg
 value=3.714
 rarity=C
 type=Instant

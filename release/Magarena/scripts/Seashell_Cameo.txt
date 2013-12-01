@@ -1,7 +1,7 @@
 name=Seashell Cameo
 url=http://magiccards.info/in/en/311.html
-image=http://magiccards.info/scans/en/in/311.jpg
-value=2.733
+image=http://mtgimage.com/card/seashell%20cameo.jpg
+value=2.710
 rarity=U
 type=Artifact
 cost={3}

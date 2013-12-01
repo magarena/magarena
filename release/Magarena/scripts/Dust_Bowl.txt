@@ -1,6 +1,6 @@
 name=Dust Bowl
 url=http://magiccards.info/mm/en/316.html
-image=http://magiccards.info/scans/en/mm/316.jpg
+image=http://mtgimage.com/card/dust%20bowl.jpg
 value=4.245
 rarity=R
 type=Land

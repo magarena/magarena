@@ -1,6 +1,6 @@
 name=Keldon Marauders
 url=http://magiccards.info/pc/en/102.html
-image=http://magiccards.info/scans/en/pc/102.jpg
+image=http://mtgimage.com/card/keldon%20marauders.jpg
 value=4.274
 rarity=C
 type=Creature

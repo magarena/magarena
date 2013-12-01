@@ -1,6 +1,6 @@
 name=Pestilence
 url=http://magiccards.info/us/en/147.html
-image=http://magiccards.info/scans/en/us/147.jpg
+image=http://mtgimage.com/card/pestilence.jpg
 value=4.396
 rarity=C
 type=Enchantment

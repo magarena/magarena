@@ -17,7 +17,12 @@ public enum MagicSubType {
     Mine,
     Power_Plant,
     Tower,
-    Urza_s,
+    Urza_s() {
+        @Override
+        public String toString() {
+            return "Urza's";
+        }
+    },
     Gate,
 
     //artifact subtypes

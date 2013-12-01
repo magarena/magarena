@@ -1,6 +1,6 @@
 name=Goblin Fireslinger
 url=http://magiccards.info/m12/en/139.html
-image=http://magiccards.info/scans/en/m12/139.jpg
+image=http://mtgimage.com/card/goblin%20fireslinger.jpg
 value=3.984
 rarity=C
 type=Creature

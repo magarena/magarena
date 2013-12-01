@@ -1,6 +1,6 @@
 name=Slith Firewalker
 url=http://magiccards.info/mi/en/107.html
-image=http://magiccards.info/scans/en/mi/107.jpg
+image=http://mtgimage.com/card/slith%20firewalker.jpg
 value=4.163
 rarity=U
 type=Creature

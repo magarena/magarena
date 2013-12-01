@@ -1,6 +1,6 @@
 name=Frontline Medic
 url=http://magiccards.info/gtc/en/12.html
-image=http://magiccards.info/scans/en/gtc/12.jpg
+image=http://mtgimage.com/card/frontline%20medic.jpg
 value=4.093
 rarity=R
 type=Creature

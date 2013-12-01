@@ -1,6 +1,6 @@
 name=Coral Merfolk
 url=http://magiccards.info/m12/en/49.html
-image=http://magiccards.info/scans/en/m10/47.jpg
+image=http://mtgimage.com/card/coral%20merfolk.jpg
 value=1.191
 rarity=C
 type=Creature

@@ -12,14 +12,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final int amount = event.isKicked() ? -2 : -1;
-                    final Collection<MagicPermanent> targets=
-                        game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicPermanent target : targets) {
-                        game.doAction(new MagicChangeTurnPTAction(target,amount,amount));
-                    }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final int amount = event.isKicked() ? -2 : -1;
+                final Collection<MagicPermanent> targets=
+                    game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                for (final MagicPermanent target : targets) {
+                    game.doAction(new MagicChangeTurnPTAction(target,amount,amount));
                 }
             });
         }

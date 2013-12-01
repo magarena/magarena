@@ -1,6 +1,6 @@
 name=Downsize
 url=http://magiccards.info/rtr/en/38.html
-image=http://magiccards.info/scans/en/rtr/38.jpg
+image=http://mtgimage.com/card/downsize.jpg
 value=2.709
 rarity=C
 type=Instant

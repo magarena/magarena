@@ -1,0 +1,11 @@
+name=Helm of the Ghastlord
+url=http://magiccards.info/shm/en/166.html
+image=http://mtgimage.com/card/helm%20of%20the%20ghastlord.jpg
+value=3.678
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{U/B}
+timing=enchantment
+enchant=pump,pos creature
+requires_groovy_code

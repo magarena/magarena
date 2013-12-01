@@ -1,6 +1,6 @@
 name=Carrion Call
 url=http://magiccards.info/som/en/115.html
-image=http://magiccards.info/scans/en/som/115.jpg
+image=http://mtgimage.com/card/carrion%20call.jpg
 value=3.079
 rarity=U
 type=Instant

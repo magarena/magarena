@@ -1,7 +1,7 @@
 name=Defensive Stance
 url=http://magiccards.info/nph/en/34.html
-image=http://magiccards.info/scans/en/nph/34.jpg
-value=0.909
+image=http://mtgimage.com/card/defensive%20stance.jpg
+value=0.906
 rarity=C
 type=Enchantment
 subtype=Aura

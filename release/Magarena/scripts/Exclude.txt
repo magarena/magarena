@@ -1,6 +1,6 @@
 name=Exclude
 url=http://magiccards.info/in/en/56.html
-image=http://magiccards.info/scans/en/in/56.jpg
+image=http://mtgimage.com/card/exclude.jpg
 value=4.190
 rarity=C
 type=Instant

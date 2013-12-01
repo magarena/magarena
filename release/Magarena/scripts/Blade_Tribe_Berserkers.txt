@@ -1,6 +1,6 @@
 name=Blade-Tribe Berserkers
 url=http://magiccards.info/som/en/84.html
-image=http://magiccards.info/scans/en/som/84.jpg
+image=http://mtgimage.com/card/blade%2Dtribe%20berserkers.jpg
 value=2.936
 rarity=C
 type=Creature

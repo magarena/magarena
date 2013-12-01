@@ -1,6 +1,6 @@
 name=Frontier Guide
 url=http://magiccards.info/zen/en/161.html
-image=http://magiccards.info/scans/en/zen/161.jpg
+image=http://mtgimage.com/card/frontier%20guide.jpg
 value=2.944
 rarity=U
 type=Creature

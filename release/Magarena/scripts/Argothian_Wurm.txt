@@ -1,6 +1,6 @@
 name=Argothian Wurm
 url=http://magiccards.info/us/en/236.html
-image=http://magiccards.info/scans/en/us/236.jpg
+image=http://mtgimage.com/card/argothian%20wurm.jpg
 value=3.890
 rarity=R
 type=Creature

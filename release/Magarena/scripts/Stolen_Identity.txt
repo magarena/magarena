@@ -1,7 +1,7 @@
 name=Stolen Identity
 url=http://magiccards.info/gtc/en/53.html
-image=http://magiccards.info/scans/en/gtc/53.jpg
-value=3.550
+image=http://mtgimage.com/card/stolen%20identity.jpg
+value=3.570
 rarity=R
 type=Sorcery
 cost={4}{U}{U}

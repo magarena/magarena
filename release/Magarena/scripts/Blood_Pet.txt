@@ -1,6 +1,6 @@
 name=Blood Pet
 url=http://magiccards.info/7e/en/121.html
-image=http://magiccards.info/scans/en/7e/121.jpg
+image=http://mtgimage.com/card/blood%20pet.jpg
 value=3.765
 rarity=C
 type=Creature

@@ -9,22 +9,14 @@ Starting Magarena:
   On Windows, double click on Magarena.exe
   On Linux, execute ./Magarena.sh. 
   On Mac, double click the Magarena icon
-  
-Keyboard Controls
-=================  
 
-General Screen Navigation
---------------------------
-Escape : pauses game and displays options for current screen.
-		 else if menu screen then closes screen.
-F11    : toggle full screen mode.
-F12    : hide UI so you can admire the background art in all its glory!		 
-
-Duel Screen
------------
-Right arrow, Space 				: action button
-Left arrow, Backspace, Delete 	: undo button
-s key                			: switch between player and AI view
+Magarena supports the following keyboard shortcuts:
+  Space   or Right key : action button
+  Escape  or Left key  : undo button
+  F11                  : fullscreen mode
+  Y key                : yes button
+  N key                : no button
+  S key                : switch between player and AI view
 
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).
@@ -48,9 +40,10 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
+  Lodici for improving the duel screen and general UI enhancements
   PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
   spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, Tyrael, hong yie,
-  ember hauler, Hector Marin, drooone, jericho.pumpkin, and Mike for implementing new cards
+  ember hauler, Hector Marin, drooone, jericho.pumpkin, Mike, Guest, and ShawnieBoy for implementing new cards
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
@@ -59,9 +52,157 @@ Thank you for your support and have fun!
 
 
 
+Release 1.45 (December 28, 2013)
+============
+includes contributions from:
 
 Release 1.44 (November 30, 2013)
 ============
+includes contributions from:
+ember hauler
+Guest
+hong yie
+Jericho Pumpkin
+Lodici
+melvin
+ShawnieBoy
+sponeta
+
+- message log is always visible above the stack
+
+- replace the up/down arrow with the actual avatar of the player whose turn it is
+
+- removed splash from main screen, version now displayed in titlebar
+
+- displays a message to user when the program crashes, a screen shot will also
+  be saved to "crash.png"
+
+- adds an F11 fullscreen option to the View menu.
+
+- added the following to the card script:
+  * ability: spirit or arcane effect <effect>
+  * ability: your end step effect <effect>
+  * ability: end step effect <effect>
+  * ability: your upkeep effect <effect>
+  * ability: enters kicked effect <effect>
+  * ability: enters with counter <counter type> <n>
+  * cost: Sacrifice a Cleric
+  * cost: Sacrifice a Human
+  * cost: {-1/-1}
+  * effect: put <amount> -1/-1 counter on <chosen>.
+  * effect: put <amount> +1/+1 counter on <chosen>.
+  * effect: <chosen> gets <pt change> and gains <ability> until end of turn.
+  * effect: <chosen> loses <amount> life and PN gains <amount> life.
+  * effect: <chosen> loses <amount> life.
+  * effect: <chosen> draws <amount> cards.
+  * effect: pay <mana cost>. If you don't, sacrifice SN.
+  * effect: return <chosen> card from your graveyard to your hand.
+  * effect: return <chosen> card from your graveyard to the battlefield.
+
+- fixed the following bugs:
+  * always pass draw and begin combat option only applies when stack is empty (issue 385)
+  * some spells were not moved to graveyard after resolution (issue 415)
+  * crash when selecting a folder while loading a deck (issue 416)
+  * deck description is not cleared correctly (issue 420)
+  * permanents with a tap mana ability and an activated ability that requires
+    tapping and mana were able to tap to pay for its own mana cost
+  * game duel screen not re-sizing gracefully
+  * cards that return to hand when put in the graveyard did not return to hand
+  * Diabolic Edict should target player not opponent
+  * choice of whether to take damage or lose the land should be made by the
+    controller of the land and not the controller of Dwarven Driller
+  * not checking for result of may choice in Ajani's Chosen
+  * Fabled Hero missing double strike
+  * effect of Angelic Edit should be 'target creature or enchantment' and not 'target artifact or enchantment'
+  * Cinder Elemental should not have ping ability
+
+- added the following premade decks:
+Big_Golems.dec, Disabler.dec, Esper2.dec, Green-Blue_Sorcerer.dec,
+Green_Populate_40.dec, Illusionists_Assault.dec, Illusionists_Bestiary.dec,
+Lord_of_Land.dec, Sliver_Defense.dec, Sliver_Horde.dec
+
+- added the following cards:
+Abbey Matron, Absolute Grace, Absolute Law, Adarkar Sentinel, Advance Scout,
+Aeolipile, Aerie Mystics, AEther Spellbomb, Agent of Shauku, Agoraphobia,
+Akki Avalanchers, Akki Drillmaster, Aladdin's Ring, Ali Baba, Aliban's Tower,
+Amulet of Kroog, Angelic Page, Annex, Anodet Lurker, Arcane Teachings,
+Archaeological Dig, Archaeomancer, Argothian Wurm, Ark of Blight,
+Armorer Guildmage, Army Ants, Arnjlot's Ascent, Aura Fracture,
+Auriok Transfixer, Aysen Highway, Azorius Cluestone, Back to Basics,
+Barbed Field, Barrage of Expendables, Barren Moor, Beckon Apparition, Bedlam,
+Blasted Landscape, Blinkmoth Well, Bloodhunter Bat, Blood Rites, Body Double,
+Bone Splinters, Book of Rass, Boros Cluestone, Braidwood Cup, Brass Secretary,
+Capashen Standard, Carnage Altar, Choke, Chosen by Heliod, Civic Guildmage,
+Clout of the Dominus, Compulsion, Conquer, Constricting Tendrils, Conviction,
+Courier's Capsule, Crackling Club, Crenellated Wall, Crop Rotation,
+Crown of Empires, Cruel Tutor, Culling Sun, Dark Depths, Daru Encampment,
+Deathpact Angel, Debtor's Pulpit, Demonic Tutor, Deserted Temple,
+Deviant Glee, Diabolic Intent, Diabolic Machine, Diabolic Tutor,
+Dimir Cluestone, Dimir Guildmage, Dispeller's Capsule, Disruptive Student,
+Domineer, Dragon Blood, Dragon Mantle, Dread of Night, Drifting Djinn,
+Duskmantle Guildmage, Dust Bowl, Dwarven Miner, Ego Erasure,
+Elixir of Vitality, Elven Fortress, Elven Lyre, Enatu Golem,
+Encroaching Wastes, Energizer, Enlightened Tutor, Etherium Astrolabe,
+Executioner's Capsule, Favor of the Overbeing, Feral Invocation,
+Filigree Sages, Fists of the Demigod, Flamecast Wheel, Fleetfeather Sandals,
+Flowering Field, Flowstone Surge, Flying Carpet, Fodder Cannon,
+Forbidden Lore, Fountain of Youth, Fyndhorn Bow, Fyndhorn Pollen,
+Galvanic Key, Gargoyle Castle, Gaze of Granite, Gerrard's Battle Cry,
+Ghitu War Cry, Goblin Replica, Goblin Trenches, Golem Artisan,
+Golgari Cluestone, Granger Guildmage, Grapeshot Catapult, Greed, Grim Tutor,
+Gruul Cluestone, Gruul Guildmage, Hatching Plans, Heart Warden,
+Heavy Arbalest, Helm of the Ghastlord, Henge Guardian, Hidden Path,
+High Market, High Priest of Penance, Hot Springs, Hypervolt Grasp,
+Hypochondria, Identity Crisis, Idyllic Tutor, Igneous Golem,
+Illuminated Wings, Immortal Servitude, Improvised Armor, Inertia Bubble,
+Innocent Blood, Iron Lance, Izzet Cluestone, Izzet Guildmage,
+Jandor's Saddlebags, Joiner Adept, Judge's Familiar, Kaalia of the Vast,
+Karakas, Kaysa, Keldon Necropolis, Korozda Guildmage, Leafdrake Roost,
+Legacy Weapon, Leonin Sun Standard, Lightning Prowess, Light of Day,
+Liliana Vess, Limestone Golem, Lonely Sandbar, Lull, Maelstrom Archangel,
+Magister Sphinx, Magistrate's Veto, Mana Chains, Manriki-Gusari,
+Marble Chalice, Maw of the Obzedat, Mental Discipline, Mesmeric Trance,
+Messenger's Speed, Midnight Covenant, Mindless Automaton, Mirari,
+Molten Frame, Mortarpod, Mourning, Mystical Tutor, Mystic Might,
+Nameless Inversion, Narcissism, Need for Speed, Neurok Replica, Nicol Bolas,
+Planeswalker, Nim Replica, Nissa's Chosen, Nivix Guildmage, Noble Steeds,
+Nuisance Engine, Oasis, Obelisk of Alara, Oblivion Crown, Oboro,
+Palace in the Clouds, One Thousand Lashes, Onulet, Orzhov Cluestone,
+Orzhov Guildmage, Overgrown Estate, Paradise Mantle, Peace of Mind,
+Pegasus Refuge, Pernicious Deed, Personal Tutor, Phyrexian Vault,
+Phyrexia's Core, Power of Fire, Predator, Flagship, Presence of Gond,
+Primal Visitation, Puppet Strings, Purge the Profane, Pursuit of Flight,
+Pyrite Spellbomb, Pyrrhic Revival, Racecourse Fury, Radiant's Judgment,
+Rakdos Cluestone, Rath's Edge, Relic Barrier, Remote Isle, Righteous War,
+Ring of Gix, Riot Gear, Riptide Laboratory, Rishadan Port, Rod of Ruin,
+Runes of the Deus, Rustspore Ram, Sarcomite Myr, Savage Hunger,
+Savage Silhouette, Scepter of Empires, Scepter of Insight, Scourgemark,
+Seal of Cleansing, Seal of Primordium, Seal of Removal, Seal of Strength,
+Secluded Steppe, Selenia, Dark Angel, Selesnya Cluestone, Selesnya Guildmage,
+Sentry of the Underworld, Shackles, Shadow Guildmage, Shaper Guildmage,
+Sharding Sphinx, Shield of the Oversoul, Shimmering Wings, Shivan Harvest,
+Shizo, Death's Storehouse, Sicken, Silverglade Elemental, Simic Cluestone,
+Skarrg Guildmage, Skeletal Grimace, Skull Catapult, Skullmead Cauldron,
+Slippery Karst, Smoldering Crater, Snake Cult Initiation, Soaring Seacliff,
+Soldevi Simulacrum, Soldier Replica, Spark Jolt, Spellbinder,
+Sphinx Sovereign, Squee's Toy, Squirrel Nest, Staff of Domination,
+Staff of Zegon, Steal Artifact, Steal Enchantment, Steel of the Godhead,
+Stormcaller's Boon, Storm Front, Sunbeam Spellbomb, Sunhome Guildmage,
+Sunken Field, Sustenance, Sword of the Chosen, Sydri, Galvanic Genius,
+Sylvan Tutor, Sylvok Replica, Talons of Falkenrath, Tanglebloom,
+Teetering Peaks, Tempered Steel, Temple of Abandon, Temple of Deceit,
+Temple of Mystery, Temple of Silence, Temple of Triumph, Teysa,
+Envoy of Ghosts, The Hive, Thermal Navigator, Thopter Foundry,
+Throne of Empires, Tinker, Tin Street Market, Titan Forge,
+Tower of Calamities, Tower of Champions, Tower of Eons, Tower of Fortunes,
+Tower of the Magistrate, Tranquil Thicket, Transguild Courier, Treasure Trove,
+Treasury Thrull, Trigon of Corruption, Trigon of Infestation, Trigon of Rage,
+Trigon of Thought, Trollhide, Turntimber Grove, Urza's Factory,
+Vampiric Tutor, Verdant Field, Vial of Poison, Violent Outburst,
+Viridian Longbow, Viscerid Armor, Vitu-Ghazi, the City-Tree,
+Vizkopa Guildmage, Voltaic Construct, Voltaic Key, Vulshok Gauntlets,
+Vulshok Replica, War Chariot, Warren Weirding, Whip Silk, Windwright Mage,
+Wizard Replica, Worldly Tutor, Wurmweaver Coil, Zephyr Charge
 
 Release 1.43 (October 26, 2013)
 ============

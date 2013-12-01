@@ -1,6 +1,6 @@
 name=Elvish Ranger
 url=http://magiccards.info/me2/en/158.html
-image=http://magiccards.info/scans/en/me2/158.jpg
+image=http://mtgimage.com/card/elvish%20ranger.jpg
 value=2.456
 rarity=C
 type=Creature

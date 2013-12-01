@@ -1,7 +1,7 @@
 name=Master of Etherium
 url=http://magiccards.info/ddf/en/48.html
-image=http://magiccards.info/scans/en/ddf/48.jpg
-value=4.552
+image=http://mtgimage.com/card/master%20of%20etherium.jpg
+value=4.556
 rarity=R
 type=Artifact,Creature
 subtype=Vedalken,Wizard

@@ -1,6 +1,6 @@
 name=Butcher's Cleaver
 url=http://magiccards.info/isd/en/217.html
-image=http://magiccards.info/scans/en/isd/217.jpg
+image=http://mtgimage.com/card/butcher%27s%20cleaver.jpg
 value=2.955
 rarity=U
 type=Artifact

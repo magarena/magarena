@@ -1,7 +1,7 @@
 name=Undead Executioner
 url=http://magiccards.info/avr/en/123.html
-image=http://magiccards.info/scans/en/avr/123.jpg
-value=2.300
+image=http://mtgimage.com/card/undead%20executioner.jpg
+value=2.274
 rarity=C
 type=Creature
 subtype=Zombie

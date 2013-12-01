@@ -1,7 +1,7 @@
 name=Cystbearer
 url=http://magiccards.info/som/en/117.html
-image=http://magiccards.info/scans/en/som/117.jpg
-value=3.653
+image=http://mtgimage.com/card/cystbearer.jpg
+value=3.608
 ability=infect
 rarity=C
 type=Creature

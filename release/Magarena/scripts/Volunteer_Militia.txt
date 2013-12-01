@@ -1,6 +1,6 @@
 name=Volunteer Militia
 url=http://magiccards.info/po2/en/148.html
-image=http://magiccards.info/scans/en/po2/148.jpg
+image=http://mtgimage.com/card/volunteer%20militia.jpg
 value=3.192
 rarity=C
 type=Creature

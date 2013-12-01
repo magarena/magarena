@@ -1,6 +1,6 @@
 name=Skyhunter Skirmisher
 url=http://magiccards.info/10e/en/43.html
-image=http://magiccards.info/scans/en/10e/43.jpg
+image=http://mtgimage.com/card/skyhunter%20skirmisher.jpg
 value=3.929
 rarity=U
 type=Creature

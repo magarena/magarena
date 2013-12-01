@@ -1,6 +1,6 @@
 name=Summer Bloom
 url=http://magiccards.info/9e/en/273.html
-image=http://magiccards.info/scans/en/9e/273.jpg
+image=http://mtgimage.com/card/summer%20bloom.jpg
 value=3.846
 rarity=U
 type=Sorcery

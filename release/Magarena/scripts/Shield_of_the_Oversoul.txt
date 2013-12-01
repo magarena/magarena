@@ -1,0 +1,11 @@
+name=Shield of the Oversoul
+url=http://magiccards.info/shm/en/242.html
+image=http://mtgimage.com/card/shield%20of%20the%20oversoul.jpg
+value=4.242
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G/W}
+timing=enchantment
+enchant=pump,pos creature
+requires_groovy_code

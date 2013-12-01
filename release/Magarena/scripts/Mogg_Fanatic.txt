@@ -1,6 +1,6 @@
 name=Mogg Fanatic
 url=http://magiccards.info/pd2/en/3.html
-image=http://magiccards.info/scans/en/10e/219.jpg
+image=http://mtgimage.com/card/mogg%20fanatic.jpg
 value=4.284
 rarity=U
 type=Creature

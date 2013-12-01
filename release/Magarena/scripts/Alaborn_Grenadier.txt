@@ -1,6 +1,6 @@
 name=Alaborn Grenadier
 url=http://magiccards.info/po2/en/122.html
-image=http://magiccards.info/scans/en/po2/122.jpg
+image=http://mtgimage.com/card/alaborn%20grenadier.jpg
 value=3.108
 rarity=C
 type=Creature

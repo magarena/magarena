@@ -1,7 +1,7 @@
 name=Admonition Angel
 url=http://magiccards.info/wwk/en/1.html
-image=http://magiccards.info/scans/en/wwk/1.jpg
-value=4.244
+image=http://mtgimage.com/card/admonition%20angel.jpg
+value=4.252
 rarity=M
 type=Creature
 subtype=Angel

@@ -1,6 +1,6 @@
 name=Dread Statuary
 url=http://magiccards.info/wwk/en/135.html
-image=http://magiccards.info/scans/en/wwk/135.jpg
+image=http://mtgimage.com/card/dread%20statuary.jpg
 value=4.070
 rarity=U
 type=Land

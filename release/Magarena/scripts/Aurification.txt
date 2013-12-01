@@ -1,6 +1,6 @@
 name=Aurification
 url=http://magiccards.info/on/en/6.html
-image=http://magiccards.info/scans/en/on/6.jpg
+image=http://mtgimage.com/card/aurification.jpg
 value=3.595
 rarity=R
 type=Enchantment

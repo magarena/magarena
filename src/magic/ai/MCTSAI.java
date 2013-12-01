@@ -218,8 +218,10 @@ public class MCTSAI implements MagicAI {
                    " cheat=" + CHEAT +
                    " index=" + scorePlayer.getIndex() +
                    " life=" + scorePlayer.getLife() +
-                   " time=" + duration +
-                   " sims=" + sims);
+                   " turn=" + scorePlayer.getGame().getTurn() +
+                   " phase=" + scorePlayer.getGame().getPhase().getType() +
+                   " sims=" + sims +
+                   " time=" + duration);
         out.append('\n');
 
         for (final MCTSGameTree node : root) {

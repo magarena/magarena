@@ -1,7 +1,7 @@
 name=Warclamp Mastiff
 url=http://magiccards.info/m13/en/40.html
-image=http://magiccards.info/scans/en/m13/40.jpg
-value=2.897
+image=http://mtgimage.com/card/warclamp%20mastiff.jpg
+value=2.900
 rarity=C
 type=Creature
 subtype=Hound

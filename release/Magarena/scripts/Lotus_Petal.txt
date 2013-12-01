@@ -1,6 +1,6 @@
 name=Lotus Petal
 url=http://magiccards.info/fve/en/7.html
-image=http://magiccards.info/scans/en/fve/7.jpg
+image=http://mtgimage.com/card/lotus%20petal.jpg
 value=4.618
 rarity=M
 type=Artifact

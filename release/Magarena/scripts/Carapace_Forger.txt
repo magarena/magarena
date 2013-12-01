@@ -1,6 +1,6 @@
 name=Carapace Forger
 url=http://magiccards.info/som/en/114.html
-image=http://magiccards.info/scans/en/som/114.jpg
+image=http://mtgimage.com/card/carapace%20forger.jpg
 value=3.639
 rarity=C
 type=Creature

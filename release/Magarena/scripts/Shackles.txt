@@ -1,0 +1,12 @@
+name=Shackles
+url=http://magiccards.info/in/en/37.html
+image=http://mtgimage.com/card/shackles.jpg
+value=3.989
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+enchant=tap,neg creature
+given_ability=doesn't untap during untap step
+ability=pay {W}:Return SN to its owner's hand.
+timing=enchantment

@@ -1,6 +1,6 @@
 name=Lance
 url=http://magiccards.info/ced/en/213.html
-image=http://magiccards.info/scans/en/ced/213.jpg
+image=http://mtgimage.com/card/lance.jpg
 value=2.341
 rarity=U
 type=Enchantment

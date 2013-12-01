@@ -9,7 +9,7 @@
                     new MagicMayChoice(
                         MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT
                     ),
-                    new MagicDestroyTargetPicker(false),
+                    MagicDestroyTargetPicker.Destroy,
                     this,
                     "Destroy target nonland permanent."
                 ):
@@ -18,10 +18,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if(event.isYes()){
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicDestroyAction(creature));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(new MagicDestroyAction(creature));
                 });
             }
         }

@@ -1,6 +1,6 @@
 name=Stitcher's Apprentice
 url=http://magiccards.info/isd/en/81.html
-image=http://magiccards.info/scans/en/isd/81.jpg
+image=http://mtgimage.com/card/stitcher%27s%20apprentice.jpg
 value=3.273
 rarity=C
 type=Creature

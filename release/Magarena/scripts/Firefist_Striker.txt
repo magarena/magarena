@@ -1,7 +1,7 @@
 name=Firefist Striker
 url=http://magiccards.info/gtc/en/90.html
-image=http://magiccards.info/scans/en/gtc/90.jpg
-value=2.944
+image=http://mtgimage.com/card/firefist%20striker.jpg
+value=2.946
 rarity=U
 type=Creature
 subtype=Human,Soldier

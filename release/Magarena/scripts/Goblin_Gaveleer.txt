@@ -1,6 +1,6 @@
 name=Goblin Gaveleer
 url=http://magiccards.info/som/en/92.html
-image=http://magiccards.info/scans/en/som/92.jpg
+image=http://mtgimage.com/card/goblin%20gaveleer.jpg
 value=3.810
 rarity=C
 type=Creature

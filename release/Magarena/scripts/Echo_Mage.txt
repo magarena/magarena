@@ -1,7 +1,7 @@
 name=Echo Mage
 url=http://magiccards.info/roe/en/64.html
-image=http://magiccards.info/scans/en/roe/64.jpg
-value=4.268
+image=http://mtgimage.com/card/echo%20mage.jpg
+value=4.125
 rarity=R
 type=Creature
 subtype=Human,Wizard

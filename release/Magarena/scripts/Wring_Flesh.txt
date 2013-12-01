@@ -1,6 +1,6 @@
 name=Wring Flesh
 url=http://magiccards.info/m12/en/118.html
-image=http://magiccards.info/scans/en/m12/118.jpg
+image=http://mtgimage.com/card/wring%20flesh.jpg
 value=3.075
 removal=2
 rarity=C

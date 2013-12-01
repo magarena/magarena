@@ -1,6 +1,6 @@
 name=Skyhunter Prowler
 url=http://magiccards.info/10e/en/42.html
-image=http://magiccards.info/scans/en/10e/42.jpg
+image=http://mtgimage.com/card/skyhunter%20prowler.jpg
 value=3.088
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Diabolic Edict
 url=http://magiccards.info/tp/en/22.html
-image=http://magiccards.info/scans/en/tp/22.jpg
-value=4.603
+image=http://mtgimage.com/card/diabolic%20edict.jpg
+value=4.602
 removal=3
 rarity=C
 type=Instant

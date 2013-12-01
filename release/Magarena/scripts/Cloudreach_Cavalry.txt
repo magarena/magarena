@@ -1,6 +1,6 @@
 name=Cloudreach Cavalry
 url=http://magiccards.info/le/en/7.html
-image=http://magiccards.info/scans/en/le/7.jpg
+image=http://mtgimage.com/card/cloudreach%20cavalry.jpg
 value=3.320
 rarity=U
 type=Creature

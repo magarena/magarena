@@ -1,6 +1,6 @@
 name=Highway Robber
 url=http://magiccards.info/10e/en/150.html
-image=http://magiccards.info/scans/en/10e/150.jpg
+image=http://mtgimage.com/card/highway%20robber.jpg
 value=3.081
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Stone-Throwing Devils
 url=http://magiccards.info/an/en/14.html
-image=http://magiccards.info/scans/en/an/14.jpg
+image=http://mtgimage.com/card/stone%2Dthrowing%20devils.jpg
 value=3.910
 rarity=C
 type=Creature

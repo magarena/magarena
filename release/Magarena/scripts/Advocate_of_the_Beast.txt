@@ -1,7 +1,7 @@
 name=Advocate of the Beast
 url=http://magiccards.info/m14/en/164.html
-image=http://magiccards.info/scans/en/m14/164.jpg
-value=3.561
+image=http://mtgimage.com/card/advocate%20of%20the%20beast.jpg
+value=3.603
 rarity=C
 type=Creature
 subtype=Elf,Shaman

@@ -1,6 +1,6 @@
 name=Celestial Colonnade
 url=http://magiccards.info/wwk/en/133.html
-image=http://magiccards.info/scans/en/wwk/133.jpg
+image=http://mtgimage.com/card/celestial%20colonnade.jpg
 value=4.491
 rarity=R
 type=Land

@@ -1,7 +1,7 @@
 name=Make a Wish
 url=http://magiccards.info/isd/en/192.html
-image=http://magiccards.info/scans/en/isd/192.jpg
-value=3.035
+image=http://mtgimage.com/card/make%20a%20wish.jpg
+value=3.034
 rarity=U
 type=Sorcery
 cost={3}{G}

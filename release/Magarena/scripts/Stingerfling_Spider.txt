@@ -1,6 +1,6 @@
 name=Stingerfling Spider
 url=http://magiccards.info/m12/en/197.html
-image=http://magiccards.info/scans/en/m12/197.jpg
+image=http://mtgimage.com/card/stingerfling%20spider.jpg
 value=3.654
 rarity=U
 type=Creature

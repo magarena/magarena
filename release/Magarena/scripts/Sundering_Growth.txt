@@ -1,6 +1,6 @@
 name=Sundering Growth
 url=http://magiccards.info/rtr/en/223.html
-image=http://magiccards.info/scans/en/rtr/223.jpg
+image=http://mtgimage.com/card/sundering%20growth.jpg
 value=3.954
 rarity=C
 type=Instant

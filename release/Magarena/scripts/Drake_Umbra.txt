@@ -1,6 +1,6 @@
 name=Drake Umbra
 url=http://magiccards.info/roe/en/63.html
-image=http://magiccards.info/scans/en/roe/63.jpg
+image=http://mtgimage.com/card/drake%20umbra.jpg
 value=3.509
 rarity=U
 type=Enchantment

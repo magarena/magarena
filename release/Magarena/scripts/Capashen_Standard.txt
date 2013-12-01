@@ -1,0 +1,12 @@
+name=Capashen Standard
+url=http://magiccards.info/ud/en/4.html
+image=http://mtgimage.com/card/capashen%20standard.jpg
+value=2.586
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+given_pt=+1/+1
+ability=pay {2},{S}:PN draws a card.
+enchant=pump,pos creature
+timing=enchantment

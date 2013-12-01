@@ -1,6 +1,6 @@
 name=Spectral Gateguards
 url=http://magiccards.info/avr/en/37.html
-image=http://magiccards.info/scans/en/avr/37.jpg
+image=http://mtgimage.com/card/spectral%20gateguards.jpg
 value=2.145
 rarity=C
 type=Creature

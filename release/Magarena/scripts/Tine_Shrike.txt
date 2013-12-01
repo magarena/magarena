@@ -1,6 +1,6 @@
 name=Tine Shrike
 url=http://magiccards.info/mbs/en/17.html
-image=http://magiccards.info/scans/en/mbs/17.jpg
+image=http://mtgimage.com/card/tine%20shrike.jpg
 value=2.676
 ability=flying;infect
 rarity=C

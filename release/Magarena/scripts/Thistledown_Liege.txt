@@ -1,6 +1,6 @@
 name=Thistledown Liege
 url=http://magiccards.info/shm/en/153.html
-image=http://magiccards.info/scans/en/shm/153.jpg
+image=http://mtgimage.com/card/thistledown%20liege.jpg
 value=3.246
 rarity=R
 type=Creature

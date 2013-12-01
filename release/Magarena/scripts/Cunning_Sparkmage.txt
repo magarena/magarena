@@ -1,6 +1,6 @@
 name=Cunning Sparkmage
 url=http://magiccards.info/wwk/en/79.html
-image=http://magiccards.info/scans/en/wwk/79.jpg
+image=http://mtgimage.com/card/cunning%20sparkmage.jpg
 value=4.146
 rarity=U
 type=Creature

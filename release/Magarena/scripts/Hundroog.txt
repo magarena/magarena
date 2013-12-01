@@ -1,6 +1,6 @@
 name=Hundroog
 url=http://magiccards.info/le/en/129.html
-image=http://magiccards.info/scans/en/le/129.jpg
+image=http://mtgimage.com/card/hundroog.jpg
 value=1.300
 rarity=C
 type=Creature

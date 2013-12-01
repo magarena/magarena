@@ -1,6 +1,6 @@
 name=Wanderwine Prophets
 url=http://magiccards.info/lw/en/95.html
-image=http://magiccards.info/scans/en/lw/95.jpg
+image=http://mtgimage.com/card/wanderwine%20prophets.jpg
 value=3.838
 removal=2
 rarity=R

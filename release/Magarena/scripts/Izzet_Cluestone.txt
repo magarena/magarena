@@ -1,0 +1,9 @@
+name=Izzet Cluestone
+url=http://magiccards.info/dgm/en/141.html
+image=http://mtgimage.com/card/izzet%20cluestone.jpg
+value=3.113
+rarity=C
+type=Artifact
+cost={3}
+ability=tap add mana {U} or {R};pay {U}{R},{S}: PN draws a card.
+timing=artifact

@@ -1,7 +1,7 @@
 name=Quirion Dryad
 url=http://magiccards.info/10e/en/287.html
-image=http://magiccards.info/scans/en/10e/287.jpg
-value=4.254
+image=http://mtgimage.com/card/quirion%20dryad.jpg
+value=4.261
 rarity=R
 type=Creature
 subtype=Dryad

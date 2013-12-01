@@ -1,6 +1,6 @@
 name=Faceless Butcher
 url=http://magiccards.info/tr/en/60.html
-image=http://magiccards.info/scans/en/tr/60.jpg
+image=http://mtgimage.com/card/faceless%20butcher.jpg
 value=4.333
 removal=2
 rarity=C

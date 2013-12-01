@@ -1,7 +1,7 @@
 name=Deathless Angel
 url=http://magiccards.info/roe/en/17.html
-image=http://magiccards.info/scans/en/roe/17.jpg
-value=4.048
+image=http://mtgimage.com/card/deathless%20angel.jpg
+value=4.052
 rarity=R
 type=Creature
 subtype=Angel

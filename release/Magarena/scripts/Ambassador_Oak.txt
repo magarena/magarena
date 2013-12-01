@@ -1,6 +1,6 @@
 name=Ambassador Oak
 url=http://magiccards.info/mt/en/113.html
-image=http://magiccards.info/scans/en/mt/113.jpg
+image=http://mtgimage.com/card/ambassador%20oak.jpg
 value=3.116
 rarity=C
 type=Creature

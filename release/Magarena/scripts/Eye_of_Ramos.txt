@@ -1,6 +1,6 @@
 name=Eye of Ramos
 url=http://magiccards.info/mm/en/294.html
-image=http://magiccards.info/scans/en/mm/294.jpg
+image=http://mtgimage.com/card/eye%20of%20ramos.jpg
 value=3.481
 rarity=R
 type=Artifact

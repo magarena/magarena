@@ -1,0 +1,9 @@
+name=Need for Speed
+url=http://magiccards.info/od/en/209.html
+image=http://mtgimage.com/card/need%20for%20speed.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={R}
+ability=pay Sacrifice a land:Target creature gains haste until end of turn.
+timing=enchantment

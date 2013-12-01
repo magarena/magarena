@@ -19,13 +19,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    for (final MagicCounterType counterType : MagicCounterType.values()) {
-                        final int amount=permanent.getCounters(counterType);
-                        if (amount>0) {
-                            game.doAction(new MagicChangeCountersAction(permanent,counterType,-amount,true));
-                        }
+            event.processTargetPermanent(game, {
+                final MagicPermanent permanent ->
+                for (final MagicCounterType counterType : MagicCounterType.values()) {
+                    final int amount=permanent.getCounters(counterType);
+                    if (amount>0) {
+                        game.doAction(new MagicChangeCountersAction(permanent,counterType,-amount,true));
                     }
                 }
             });

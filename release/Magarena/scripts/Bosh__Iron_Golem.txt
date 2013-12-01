@@ -1,6 +1,6 @@
 name=Bosh, Iron Golem
 url=http://magiccards.info/mi/en/147.html
-image=http://magiccards.info/scans/en/mi/147.jpg
+image=http://mtgimage.com/card/bosh%2C%20iron%20golem.jpg
 value=4.216
 rarity=R
 type=Legendary,Artifact,Creature

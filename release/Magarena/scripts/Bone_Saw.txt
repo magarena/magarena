@@ -1,6 +1,6 @@
 name=Bone Saw
 url=http://magiccards.info/cfx/en/135.html
-image=http://magiccards.info/scans/en/cfx/135.jpg
+image=http://mtgimage.com/card/bone%20saw.jpg
 value=2.917
 rarity=C
 type=Artifact

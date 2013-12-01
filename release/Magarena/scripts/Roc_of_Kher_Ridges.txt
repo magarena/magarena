@@ -1,6 +1,6 @@
 name=Roc of Kher Ridges
 url=http://magiccards.info/me4/en/132.html
-image=http://magiccards.info/scans/en/me4/132.jpg
+image=http://mtgimage.com/card/roc%20of%20kher%20ridges.jpg
 value=3.882
 ability=flying
 rarity=U

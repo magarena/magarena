@@ -1,6 +1,6 @@
 name=Ambassador Laquatus
 url=http://magiccards.info/10e/en/65.html
-image=http://magiccards.info/scans/en/10e/65.jpg
+image=http://mtgimage.com/card/ambassador%20laquatus.jpg
 value=4.030
 rarity=R
 type=Legendary,Creature

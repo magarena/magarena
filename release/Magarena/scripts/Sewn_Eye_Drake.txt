@@ -1,6 +1,6 @@
 name=Sewn-Eye Drake
 url=http://magiccards.info/arb/en/135.html
-image=http://magiccards.info/scans/en/arb/135.jpg
+image=http://mtgimage.com/card/sewn%2Deye%20drake.jpg
 value=2.942
 ability=flying;haste
 rarity=C

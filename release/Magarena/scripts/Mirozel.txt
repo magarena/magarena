@@ -1,6 +1,6 @@
 name=Mirozel
 url=http://magiccards.info/ex/en/41.html
-image=http://magiccards.info/scans/en/ex/41.jpg
+image=http://mtgimage.com/card/mirozel.jpg
 value=2.241
 rarity=U
 type=Creature

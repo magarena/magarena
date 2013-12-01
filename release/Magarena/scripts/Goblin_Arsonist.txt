@@ -1,6 +1,6 @@
 name=Goblin Arsonist
 url=http://magiccards.info/m12/en/136.html
-image=http://magiccards.info/scans/en/m12/136.jpg
+image=http://mtgimage.com/card/goblin%20arsonist.jpg
 value=3.955
 rarity=C
 type=Creature

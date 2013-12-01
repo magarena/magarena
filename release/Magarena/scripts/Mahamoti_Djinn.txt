@@ -1,6 +1,6 @@
 name=Mahamoti Djinn
 url=http://magiccards.info/dpa/en/10.html
-image=http://magiccards.info/scans/en/dpa/10.jpg
+image=http://mtgimage.com/card/mahamoti%20djinn.jpg
 value=3.459
 ability=flying
 rarity=R

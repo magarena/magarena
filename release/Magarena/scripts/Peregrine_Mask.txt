@@ -1,7 +1,7 @@
 name=Peregrine Mask
 url=http://magiccards.info/rav/en/268.html
-image=http://magiccards.info/scans/en/rav/268.jpg
-value=2.583
+image=http://mtgimage.com/card/peregrine%20mask.jpg
+value=2.590
 rarity=U
 type=Artifact
 subtype=Equipment

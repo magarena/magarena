@@ -50,7 +50,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
                 game.doAction(new MagicBecomesCreatureAction(creature,PT,ST));
-            } as MagicPermanentAction);
+            });
         }
     }
 ]

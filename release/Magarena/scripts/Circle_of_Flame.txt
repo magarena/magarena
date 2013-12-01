@@ -1,6 +1,6 @@
 name=Circle of Flame
 url=http://magiccards.info/m12/en/127.html
-image=http://magiccards.info/scans/en/m12/127.jpg
+image=http://mtgimage.com/card/circle%20of%20flame.jpg
 value=3.588
 rarity=U
 type=Enchantment

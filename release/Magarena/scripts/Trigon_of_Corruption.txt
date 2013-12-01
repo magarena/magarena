@@ -1,0 +1,9 @@
+name=Trigon of Corruption
+url=http://magiccards.info/som/en/213.html
+image=http://mtgimage.com/card/trigon%20of%20corruption.jpg
+value=2.750
+rarity=U
+type=Artifact
+cost={4}
+ability=enters with counter charge 3;pay {B}{B},{T}:Put a charge counter on SN.;pay {2},{T},{C}:Put a -1/-1 counter on target creature.
+timing=artifact

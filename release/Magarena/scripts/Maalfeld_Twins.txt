@@ -1,6 +1,6 @@
 name=Maalfeld Twins
 url=http://magiccards.info/avr/en/112.html
-image=http://magiccards.info/scans/en/avr/112.jpg
+image=http://mtgimage.com/card/maalfeld%20twins.jpg
 value=3.280
 rarity=U
 type=Creature

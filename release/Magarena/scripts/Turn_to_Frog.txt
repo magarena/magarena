@@ -1,6 +1,6 @@
 name=Turn to Frog
 url=http://magiccards.info/m12/en/78.html
-image=http://magiccards.info/scans/en/m12/78.jpg
+image=http://mtgimage.com/card/turn%20to%20frog.jpg
 value=4.390
 removal=3
 rarity=U

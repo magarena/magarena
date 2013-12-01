@@ -1,7 +1,7 @@
 name=Shivan Dragon
 url=http://magiccards.info/dpa/en/53.html
-image=http://magiccards.info/scans/en/dpa/53.jpg
-value=3.833
+image=http://mtgimage.com/card/shivan%20dragon.jpg
+value=3.850
 rarity=R
 type=Creature
 subtype=Dragon

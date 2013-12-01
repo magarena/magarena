@@ -1,6 +1,6 @@
 name=Clot Sliver
 url=http://magiccards.info/pds/en/5.html
-image=http://magiccards.info/scans/en/pds/5.jpg
+image=http://mtgimage.com/card/clot%20sliver.jpg
 value=3.812
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Mirrodin's Core
 url=http://magiccards.info/ds/en/165.html
-image=http://magiccards.info/scans/en/ds/165.jpg
-value=4.043
+image=http://mtgimage.com/card/mirrodin%27s%20core.jpg
+value=4.030
 rarity=U
 type=Land
 mana=b1g1r1u1w1

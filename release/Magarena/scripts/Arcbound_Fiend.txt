@@ -1,6 +1,6 @@
 name=Arcbound Fiend
 url=http://magiccards.info/ds/en/96.html
-image=http://magiccards.info/scans/en/ds/96.jpg
+image=http://mtgimage.com/card/arcbound%20fiend.jpg
 value=3.690
 rarity=U
 type=Artifact,Creature

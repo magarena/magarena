@@ -1,6 +1,6 @@
 name=Wings of Hope
 url=http://magiccards.info/in/en/289.html
-image=http://magiccards.info/scans/en/in/289.jpg
+image=http://mtgimage.com/card/wings%20of%20hope.jpg
 value=3.486
 rarity=C
 type=Enchantment

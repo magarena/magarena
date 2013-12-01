@@ -1,6 +1,6 @@
 name=Yavimaya Scion
 url=http://magiccards.info/ul/en/119.html
-image=http://magiccards.info/scans/en/ul/119.jpg
+image=http://mtgimage.com/card/yavimaya%20scion.jpg
 value=3.070
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Magma Sliver
 url=http://magiccards.info/le/en/107.html
-image=http://magiccards.info/scans/en/le/107.jpg
+image=http://mtgimage.com/card/magma%20sliver.jpg
 value=4.442
 rarity=R
 type=Creature

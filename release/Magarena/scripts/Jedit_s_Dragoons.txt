@@ -1,6 +1,6 @@
 name=Jedit's Dragoons
 url=http://magiccards.info/ts/en/25.html
-image=http://magiccards.info/scans/en/ts/25.jpg
+image=http://mtgimage.com/card/jedit%27s%20dragoons.jpg
 value=1.548
 rarity=C
 type=Creature

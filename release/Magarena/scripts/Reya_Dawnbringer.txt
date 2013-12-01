@@ -1,6 +1,6 @@
 name=Reya Dawnbringer
 url=http://magiccards.info/dvd/en/13.html
-image=http://magiccards.info/scans/en/10e/35.jpg
+image=http://mtgimage.com/card/reya%20dawnbringer.jpg
 value=4.419
 rarity=R
 type=Legendary,Creature

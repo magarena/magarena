@@ -1,6 +1,6 @@
 name=Bog Smugglers
 url=http://magiccards.info/mm/en/117.html
-image=http://magiccards.info/scans/en/mm/117.jpg
+image=http://mtgimage.com/card/bog%20smugglers.jpg
 value=2.609
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Death Stroke
 url=http://magiccards.info/sh/en/7.html
-image=http://magiccards.info/scans/en/sh/7.jpg
+image=http://mtgimage.com/card/death%20stroke.jpg
 value=4.000
 removal=3
 rarity=C

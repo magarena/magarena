@@ -1,6 +1,6 @@
 name=Giant Strength
 url=http://magiccards.info/6e/en/181.html
-image=http://magiccards.info/scans/en/6e/181.jpg
+image=http://mtgimage.com/card/giant%20strength.jpg
 value=2.978
 rarity=C
 type=Enchantment

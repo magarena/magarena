@@ -1,6 +1,6 @@
 name=Goldnight Redeemer
 url=http://magiccards.info/avr/en/23.html
-image=http://magiccards.info/scans/en/avr/23.jpg
+image=http://mtgimage.com/card/goldnight%20redeemer.jpg
 value=3.030
 rarity=U
 type=Creature

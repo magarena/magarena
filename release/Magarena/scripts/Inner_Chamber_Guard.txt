@@ -1,6 +1,6 @@
 name=Inner-Chamber Guard
 url=http://magiccards.info/sok/en/13.html
-image=http://magiccards.info/scans/en/sok/13.jpg
+image=http://mtgimage.com/card/inner%2Dchamber%20guard.jpg
 value=3.113
 rarity=U
 type=Creature

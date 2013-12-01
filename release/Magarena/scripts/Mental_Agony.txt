@@ -1,6 +1,6 @@
 name=Mental Agony
 url=http://magiccards.info/avr/en/114.html
-image=http://magiccards.info/scans/en/avr/114.jpg
+image=http://mtgimage.com/card/mental%20agony.jpg
 value=2.266
 rarity=C
 type=Sorcery

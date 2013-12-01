@@ -1,6 +1,6 @@
 name=Dragonmaster Outcast
 url=http://magiccards.info/wwk/en/81.html
-image=http://magiccards.info/scans/en/wwk/81.jpg
+image=http://mtgimage.com/card/dragonmaster%20outcast.jpg
 value=4.461
 rarity=M
 type=Creature

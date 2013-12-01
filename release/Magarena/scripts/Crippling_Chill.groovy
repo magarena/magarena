@@ -14,15 +14,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicTapAction(creature,true));
-                    game.doAction(MagicChangeStateAction.Set(
-                        creature,
-                        MagicPermanentState.DoesNotUntapDuringNext
-                    ));
-                    game.doAction(new MagicDrawAction(event.getPlayer()));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicTapAction(creature,true));
+                game.doAction(MagicChangeStateAction.Set(
+                    creature,
+                    MagicPermanentState.DoesNotUntapDuringNext
+                ));
+                game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }
     }

@@ -13,13 +13,12 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    game.doAction(new MagicChangeLifeAction(player,-2));
-                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
-                    if (event.isBuyback()) {
-                        game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
-                    }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                game.doAction(new MagicChangeLifeAction(player,-2));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
+                if (event.isBuyback()) {
+                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }
             });
         }

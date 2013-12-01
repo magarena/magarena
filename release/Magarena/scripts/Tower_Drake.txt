@@ -1,6 +1,6 @@
 name=Tower Drake
 url=http://magiccards.info/in/en/82.html
-image=http://magiccards.info/scans/en/in/82.jpg
+image=http://mtgimage.com/card/tower%20drake.jpg
 value=3.083
 rarity=C
 type=Creature

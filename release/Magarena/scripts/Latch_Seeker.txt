@@ -1,7 +1,7 @@
 name=Latch Seeker
 url=http://magiccards.info/avr/en/63.html
-image=http://magiccards.info/scans/en/avr/63.jpg
-value=3.857
+image=http://mtgimage.com/card/latch%20seeker.jpg
+value=3.875
 rarity=U
 type=Creature
 subtype=Spirit

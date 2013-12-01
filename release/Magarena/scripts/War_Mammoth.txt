@@ -1,6 +1,6 @@
 name=War Mammoth
 url=http://magiccards.info/5e/en/202.html
-image=http://magiccards.info/scans/en/5e/202.jpg
+image=http://mtgimage.com/card/war%20mammoth.jpg
 value=3.462
 rarity=C
 type=Creature

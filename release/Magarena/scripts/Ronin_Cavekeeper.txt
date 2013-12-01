@@ -1,7 +1,7 @@
 name=Ronin Cavekeeper
 url=http://magiccards.info/sok/en/111.html
-image=http://magiccards.info/scans/en/sok/111.jpg
-value=2.161
+image=http://mtgimage.com/card/ronin%20cavekeeper.jpg
+value=2.177
 rarity=C
 type=Creature
 subtype=Human,Samurai

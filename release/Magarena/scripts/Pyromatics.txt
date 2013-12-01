@@ -1,6 +1,6 @@
 name=Pyromatics
 url=http://magiccards.info/gp/en/72.html
-image=http://magiccards.info/scans/en/gp/72.jpg
+image=http://mtgimage.com/card/pyromatics.jpg
 value=2.647
 rarity=C
 type=Instant

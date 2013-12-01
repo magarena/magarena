@@ -1,6 +1,6 @@
 name=Electrickery
 url=http://magiccards.info/rtr/en/93.html
-image=http://magiccards.info/scans/en/rtr/93.jpg
+image=http://mtgimage.com/card/electrickery.jpg
 value=3.549
 rarity=C
 type=Instant

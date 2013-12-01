@@ -1,6 +1,6 @@
 name=Angelic Page
 url=http://magiccards.info/dvd/en/3.html
-image=http://magiccards.info/scans/en/dvd/3.jpg
+image=http://mtgimage.com/card/angelic%20page.jpg
 value=2.863
 rarity=C
 type=Creature

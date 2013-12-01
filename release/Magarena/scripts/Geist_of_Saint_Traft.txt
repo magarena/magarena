@@ -1,7 +1,7 @@
 name=Geist of Saint Traft
 url=http://magiccards.info/isd/en/213.html
-image=http://magiccards.info/scans/en/isd/213.jpg
-value=4.361
+image=http://mtgimage.com/card/geist%20of%20saint%20traft.jpg
+value=4.364
 rarity=M
 type=Legendary,Creature
 subtype=Spirit,Cleric

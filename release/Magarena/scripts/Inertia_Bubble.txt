@@ -1,0 +1,11 @@
+name=Inertia Bubble
+url=http://magiccards.info/mi/en/37.html
+image=http://mtgimage.com/card/inertia%20bubble.jpg
+value=2.117
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=doesn't untap during untap step
+enchant=tap,neg artifact
+timing=enchantment

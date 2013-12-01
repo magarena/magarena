@@ -1,6 +1,6 @@
 name=Elvish Lyrist
 url=http://magiccards.info/8e/en/242.html
-image=http://magiccards.info/scans/en/8e/242.jpg
+image=http://mtgimage.com/card/elvish%20lyrist.jpg
 value=3.297
 rarity=U
 type=Creature

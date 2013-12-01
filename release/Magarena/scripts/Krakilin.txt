@@ -1,7 +1,7 @@
 name=Krakilin
 url=http://magiccards.info/tp/en/129.html
-image=http://magiccards.info/scans/en/tp/129.jpg
-value=3.950
+image=http://mtgimage.com/card/krakilin.jpg
+value=3.952
 rarity=U
 type=Creature
 subtype=Beast

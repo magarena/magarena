@@ -18,10 +18,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent target) {
-                        game.doAction(new MagicDestroyAction(target));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent target ->
+                    game.doAction(new MagicDestroyAction(target));
                 });
                 game.doAction(MagicChangeStateAction.Set(
                     event.getPermanent(),
