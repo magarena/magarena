@@ -13,7 +13,7 @@ Starting Magarena:
 Magarena supports the following keyboard shortcuts:
   Space   or Right key : action button
   Escape  or Left key  : undo button
-  F1      or M key     : show or hide game messages
+  F11                  : fullscreen mode
   Y key                : yes button
   N key                : no button
   S key                : switch between player and AI view
@@ -40,13 +40,13 @@ Thanks to
   wait321 for creating a deck editor and other UI improvements
   missalexis for creating an application bundle to improve Mac installation
   goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
+  Lodici for improving the duel screen and general UI enhancements
   PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
   spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, Tyrael, hong yie,
-  ember hauler, Hector Marin, drooone, jericho.pumpkin, and Mike for implementing new cards
+  ember hauler, Hector Marin, drooone, jericho.pumpkin, Mike, Guest, and ShawnieBoy for implementing new cards
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
-
 
 
 
@@ -64,55 +64,53 @@ melvin
 ShawnieBoy
 sponeta
 
-- removed splash from main screen, version now displayed in titlebar
-
-- log and stack...
-
-- crash report will now also generate a screen shot of Magarena at the time the error occurred. This is saved to "crash.png".
-
-- displays a message to user when an exception occurs instead of just bombing out.
-
-- adds an F11 fullscreen option to the View menu.
+- game log is always visible above the stack
 
 - replace the up/down arrow with the actual avatar of the player whose turn it is
 
-- added the following to the ability property in card script:
-  * support 'Sacrifice a Cleric' as a cost
-  * support target loses and you gain life pattern
-  * support target loses life pattern
-  * support {-1/-1} as a cost
-  * support 'spirit or arcane effect <effect>'
-  * support 'put <amount> -1/-1 on <chosen>'
-  * support putting +1/+1 counter on chosen creature
-  * support 'your end step effect <effect>'
-  * support '<choise> draws <amount> cards.' effect
-  * replace 'return at end' with more general 'end step effect <effect>' ability
-  * added 'your upkeep effect <effect>'
-  * support 'return from your graveyard to your hand'
-  * add support for Sacrifice a Human cost
-  * add 'enters kicked effect <effect>' to ability
-  * support reanimate effect
-  * merge different 'enters with <counter type> <n>' into 'enters with counter <counter type> <n>'
-  * support for sacrifice unless pattern
-  * added MagicScryEvent
-  * support for pump and gain ability effect
+- removed splash from main screen, version now displayed in titlebar
+
+- displays a message to user when the program crashes, a screen shot will also
+  be saved to "crash.png"
+
+- adds an F11 fullscreen option to the View menu.
+
+- added the following to the card script:
+  * ability: spirit or arcane effect <effect>
+  * ability: your end step effect <effect>
+  * ability: end step effect <effect>
+  * ability: your upkeep effect <effect>
+  * ability: enters kicked effect <effect>
+  * ability: enters with counter <counter type> <n>
+  * cost: Sacrifice a Cleric
+  * cost: Sacrifice a Human
+  * cost: {-1/-1}
+  * effect: put <amount> -1/-1 counter on <chosen>.
+  * effect: put <amount> +1/+1 counter on <chosen>.
+  * effect: <chosen> gets <pt change> and gains <ability> until end of turn.
+  * effect: <chosen> loses <amount> life and PN gains <amount> life.
+  * effect: <chosen> loses <amount> life.
+  * effect: <chosen> draws <amount> cards.
+  * effect: pay <mana cost>. If you don't, sacrifice SN.
+  * effect: return <chosen> card from your graveyard to your hand.
+  * effect: return <chosen> card from your graveyard to the battlefield.
 
 - fixed the following bugs:
+  * always pass draw and begin combat option only applies when stack is empty (issue 385)
   * some spells were not moved to graveyard after resolution (issue 415)
+  * crash when selecting a folder while loading a deck (issue 416)
+  * deck description is not cleared correctly (issue 420)
+  * permanents with a tap mana ability and an activated ability that requires
+    tapping and mana were able to tap to pay for its own mana cost
+  * game duel screen not re-sizing gracefully
   * cards that return to hand when put in the graveyard did not return to hand
   * Diabolic Edict should target player not opponent
-  * game duel screen not re-sizing gracefully
   * choice of whether to take damage or lose the land should be made by the
     controller of the land and not the controller of Dwarven Driller
   * not checking for result of may choice in Ajani's Chosen
   * Fabled Hero missing double strike
   * effect of Angelic Edit should be 'target creature or enchantment' and not 'target artifact or enchantment'
-  * always pass draw and begin combat option only applies when stack is empty (issue 385)
   * Cinder Elemental should not have ping ability
-  * deck description is not cleared correctly (issue 420)
-  * crash when selecting a folder while loading a deck (issue 416)
-  * permanents with a tap mana ability and an activated ability that requires
-    tapping and mana were able to tap to pay for its own mana cost
 
 - added the following premade decks:
 Big_Golems.dec, Disabler.dec, Esper2.dec, Green-Blue_Sorcerer.dec,
