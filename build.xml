@@ -7,7 +7,7 @@
   <property name="target" value="1.7"/>
   <property name="source" value="1.7"/>
   <property name="lib" value="release/lib" />
-  <property name="groovy-version" value="2.2.0-indy" />
+  <property name="groovy-version" value="2.2.1-indy" />
 
   <path id="classpath">
       <fileset dir="${lib}">
@@ -22,7 +22,7 @@
   <!-- deps - Download dependencies -->
   <target name="deps" unless="skip.download">
       <echo message="downloading groovy to ${lib}"/>
-      <get src="http://search.maven.org/remotecontent?filepath=org/codehaus/groovy/groovy-all/2.2.0/groovy-all-${groovy-version}.jar" 
+      <get src="http://search.maven.org/remotecontent?filepath=org/codehaus/groovy/groovy-all/2.2.1/groovy-all-${groovy-version}.jar" 
            dest="${lib}/groovy-all-${groovy-version}.jar" 
            skipexisting="true" />
       <echo message="downloading MigLayout to ${lib}"/>
