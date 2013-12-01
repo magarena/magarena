@@ -44,13 +44,12 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo() == false) {
-                event.processTargetCard(game, new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        game.logAppendMessage(event.getPlayer(), "Found " + card + ".");
-                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
-                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.TopOfOwnersLibrary));
-                    }
+                event.processTargetCard(game, {
+                    final MagicCard card ->
+                    game.logAppendMessage(event.getPlayer(), "Found " + card + ".");
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                    game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.TopOfOwnersLibrary));
                 });
             }
         }

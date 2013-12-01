@@ -14,20 +14,19 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard targetCard) {
-                    game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
-                    final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer());
-                    game.doAction(action);
-                    final MagicPermanent permanent = action.getPermanent();
-                    if (permanent.hasSubType(MagicSubType.Angel)) {
-                        game.doAction(new MagicChangeCountersAction(
-                            permanent,
-                            MagicCounterType.PlusOne,
-                            2,
-                            true
-                        ));
-                    }
+            event.processTargetCard(game, {
+                final MagicCard targetCard ->
+                game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer());
+                game.doAction(action);
+                final MagicPermanent permanent = action.getPermanent();
+                if (permanent.hasSubType(MagicSubType.Angel)) {
+                    game.doAction(new MagicChangeCountersAction(
+                        permanent,
+                        MagicCounterType.PlusOne,
+                        2,
+                        true
+                    ));
                 }
             });
         }
