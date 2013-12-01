@@ -20,7 +20,7 @@ public class VersionPanel extends JPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
-    private static final String VERSION = "1.44";
+    private static final String VERSION = "1.45";
     private static final String VERSION_TEXT = "Magarena " + VERSION;
 
     private final MagicFrame frame;

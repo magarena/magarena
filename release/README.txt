@@ -52,6 +52,10 @@ Thank you for your support and have fun!
 
 
 
+Release 1.45 (December 28, 2013)
+============
+includes contributions from:
+
 Release 1.44 (November 30, 2013)
 ============
 includes contributions from:
