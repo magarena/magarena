@@ -11,14 +11,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer opponent) {
-                    game.addEvent(new MagicSacrificePermanentEvent(
-                        event.getSource(),
-                        opponent,
-                        MagicTargetChoice.SACRIFICE_CREATURE
-                    ));
-                }
+            event.processTargetPlayer(game, {
+                final MagicPlayer opponent ->
+                game.addEvent(new MagicSacrificePermanentEvent(
+                    event.getSource(),
+                    opponent,
+                    MagicTargetChoice.SACRIFICE_CREATURE
+                ));
             });
         }
     }
