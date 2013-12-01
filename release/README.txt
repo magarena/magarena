@@ -64,7 +64,7 @@ melvin
 ShawnieBoy
 sponeta
 
-- game log is always visible above the stack
+- message log is always visible above the stack
 
 - replace the up/down arrow with the actual avatar of the player whose turn it is
 
