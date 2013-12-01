@@ -12,13 +12,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack targetSpell) {
-                    game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{3}")));
-                    final MagicPlayer you = event.getPlayer();
-                    if (you.controlsPermanent(MagicSubType.Wizard)) {
-                        game.doAction(new MagicDrawAction(you));
-                    }
+            event.processTargetCardOnStack(game, {
+                final MagicCardOnStack targetSpell ->
+                game.addEvent(new MagicCounterUnlessEvent(event.getSource(),targetSpell,MagicManaCost.create("{3}")));
+                final MagicPlayer you = event.getPlayer();
+                if (you.controlsPermanent(MagicSubType.Wizard)) {
+                    game.doAction(new MagicDrawAction(you));
                 }
             });
         }

@@ -12,20 +12,18 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCardOnStack(game,new MagicCardOnStackAction() {
-                public void doAction(final MagicCardOnStack cardOnStack) {
-                    game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
-                    game.doAction(new MagicMoveCardAction(
-                        cardOnStack.getCard(),
-                        MagicLocationType.Stack,
-                        MagicLocationType.OwnersHand
-                    ));
-                }
+            event.processTargetCardOnStack(game, {
+                final MagicCardOnStack cardOnStack ->
+                game.doAction(new MagicRemoveItemFromStackAction(cardOnStack));
+                game.doAction(new MagicMoveCardAction(
+                    cardOnStack.getCard(),
+                    MagicLocationType.Stack,
+                    MagicLocationType.OwnersHand
+                ));
             });
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent perm) {
-                    game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.OwnersHand));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent perm ->
+                game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.OwnersHand));
             });
         }
     }

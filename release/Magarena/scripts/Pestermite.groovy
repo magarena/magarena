@@ -13,26 +13,25 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, new MagicPermanentAction() {
-                public void doAction(final MagicPermanent perm) {
-                    game.addEvent(new MagicEvent(
-                        event.getSource(),
-                        new MagicMayChoice((perm.isTapped() ? "Untap " : "Tap ") + perm + "?"),
-                        perm,
-                        {
-                            final MagicGame G, final MagicEvent E ->
-                            final MagicPermanent P = E.getRefPermanent();
-                            if (E.isYes()) {
-                                if (P.isTapped()) {
-                                    G.doAction(new MagicUntapAction(P));
-                                } else {
-                                    G.doAction(new MagicTapAction(P, true))
-                                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent perm ->
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    new MagicMayChoice((perm.isTapped() ? "Untap " : "Tap ") + perm + "?"),
+                    perm,
+                    {
+                        final MagicGame G, final MagicEvent E ->
+                        final MagicPermanent P = E.getRefPermanent();
+                        if (E.isYes()) {
+                            if (P.isTapped()) {
+                                G.doAction(new MagicUntapAction(P));
+                            } else {
+                                G.doAction(new MagicTapAction(P, true))
                             }
-                        },
-                        "PN may\$ " + (perm.isTapped() ? "untap" : "tap") + " RN."
-                    ));
-                }
+                        }
+                    },
+                    "PN may\$ " + (perm.isTapped() ? "untap" : "tap") + " RN."
+                ));
             });
         }
     }

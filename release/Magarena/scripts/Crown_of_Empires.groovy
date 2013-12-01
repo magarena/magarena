@@ -39,10 +39,9 @@
                     ));
                 });
             }else{
-                event.processTargetPermanent(game, new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.addEvent(new MagicTapEvent(creature));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.addEvent(new MagicTapEvent(creature));
                 });
             }
         }

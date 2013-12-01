@@ -21,11 +21,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTarget(game, new MagicTargetAction() {
-                    public void doAction(final MagicTarget target) {
-                        final MagicDamage damage = new MagicDamage(event.getSource(), target, 1);
-                        game.doAction( new MagicDealDamageAction(damage) );
-                    }
+                event.processTarget(game, {
+                    final MagicTarget target ->
+                    final MagicDamage damage = new MagicDamage(event.getSource(), target, 1);
+                    game.doAction( new MagicDealDamageAction(damage) );
                 });
             }
         }

@@ -65,14 +65,13 @@ def getEvent = {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicPermanent source=event.getPermanent();
-                    final int amount=source.getCounters(MagicCounterType.Charge);
-                    if (amount>0) {
-                        final MagicDamage damage=new MagicDamage(source,target,amount);
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
+            event.processTarget(game, {
+                final MagicTarget target ->
+                final MagicPermanent source=event.getPermanent();
+                final int amount=source.getCounters(MagicCounterType.Charge);
+                if (amount>0) {
+                    final MagicDamage damage=new MagicDamage(source,target,amount);
+                    game.doAction(new MagicDealDamageAction(damage));
                 }
             });
         }

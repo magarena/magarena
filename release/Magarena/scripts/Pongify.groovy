@@ -14,19 +14,18 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final MagicPlayer controller = creature.getController();
-                    game.doAction(MagicChangeStateAction.Set(
-                        creature,
-                        MagicPermanentState.CannotBeRegenerated
-                    ));
-                    game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicPlayTokenAction(
-                        controller,
-                        TokenCardDefinitions.get("3/3 green Ape creature token")
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                final MagicPlayer controller = creature.getController();
+                game.doAction(MagicChangeStateAction.Set(
+                    creature,
+                    MagicPermanentState.CannotBeRegenerated
+                ));
+                game.doAction(new MagicDestroyAction(creature));
+                game.doAction(new MagicPlayTokenAction(
+                    controller,
+                    TokenCardDefinitions.get("3/3 green Ape creature token")
+                ));
             });
         }
     }

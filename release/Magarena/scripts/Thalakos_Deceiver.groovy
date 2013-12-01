@@ -18,10 +18,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
-                    }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(new MagicGainControlAction(event.getPlayer(),creature));
                 });
             }
         }

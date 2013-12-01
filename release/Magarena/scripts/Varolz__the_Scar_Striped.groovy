@@ -27,17 +27,16 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    final int amt = event.getRefCard().genPowerToughness().getPositivePower();
-                    if (amt > 0) {
-                        game.doAction(new MagicChangeCountersAction(
-                            permanent,
-                            MagicCounterType.PlusOne,
-                            amt,
-                            true
-                        ));
-                    }
+            event.processTargetPermanent(game, {
+                final MagicPermanent permanent ->
+                final int amt = event.getRefCard().genPowerToughness().getPositivePower();
+                if (amt > 0) {
+                    game.doAction(new MagicChangeCountersAction(
+                        permanent,
+                        MagicCounterType.PlusOne,
+                        amt,
+                        true
+                    ));
                 }
             });
         }

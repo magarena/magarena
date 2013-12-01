@@ -13,14 +13,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
-                    game.doAction(new MagicPlayTokenAction(
-                        creature.getController(),
-                        TokenCardDefinitions.get("1/1 colorless Shapeshifter creature token with changeling")
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
+                game.doAction(new MagicPlayTokenAction(
+                    creature.getController(),
+                    TokenCardDefinitions.get("1/1 colorless Shapeshifter creature token with changeling")
+                ));
             });
         }
     }

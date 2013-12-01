@@ -30,15 +30,14 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPermanent permanent=event.getPermanent();
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicSacrificeAction(creature));
-                        game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,2,true));
-                        game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
-                        final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
-                        if (newEvent.isValid()) {
-                            game.addEvent(newEvent);
-                        }
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(new MagicSacrificeAction(creature));
+                    game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,2,true));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
+                    final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
+                    if (newEvent.isValid()) {
+                        game.addEvent(newEvent);
                     }
                 });
             }

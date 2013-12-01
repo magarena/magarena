@@ -1,18 +1,17 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    event.processTargetPermanent(game,new MagicPermanentAction() {
-        public void doAction(final MagicPermanent permanent) {
-            game.doAction(new MagicSacrificeAction(permanent));
-            if(permanent.hasSubType(MagicSubType.Goblin)){
-                for (int i = 0; i < 2; i++) {
-                    final MagicPlayTokenAction act = new MagicPlayTokenAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("1/1 black Goblin Rogue creature token")
-                    );
-                    game.doAction(act);
-                    final MagicPermanent token = act.getPermanent();
-                    game.doAction(new MagicGainAbilityAction( token, MagicAbility.Haste ));
-                }
+    event.processTargetPermanent(game, {
+        final MagicPermanent permanent ->
+        game.doAction(new MagicSacrificeAction(permanent));
+        if(permanent.hasSubType(MagicSubType.Goblin)){
+            for (int i = 0; i < 2; i++) {
+                final MagicPlayTokenAction act = new MagicPlayTokenAction(
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("1/1 black Goblin Rogue creature token")
+                );
+                game.doAction(act);
+                final MagicPermanent token = act.getPermanent();
+                game.doAction(new MagicGainAbilityAction( token, MagicAbility.Haste ));
             }
         }
     });

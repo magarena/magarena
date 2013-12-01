@@ -13,14 +13,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicPlayTokenAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicDestroyAction(creature));
+                game.doAction(new MagicPlayTokenAction(
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
+                ));
             });
         }
     }

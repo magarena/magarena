@@ -13,18 +13,17 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final MagicPlayer player = event.getPlayer();
-                    game.doAction(new MagicPlayCardAction(
-                        MagicCard.createTokenCard(creature, player),
-                        player
-                    ));
-                    game.doAction(new MagicCipherAction(
-                        event.getCardOnStack(), 
-                        event.getPlayer()
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                final MagicPlayer player = event.getPlayer();
+                game.doAction(new MagicPlayCardAction(
+                    MagicCard.createTokenCard(creature, player),
+                    player
+                ));
+                game.doAction(new MagicCipherAction(
+                    event.getCardOnStack(), 
+                    event.getPlayer()
+                ));
             });
         }
     }

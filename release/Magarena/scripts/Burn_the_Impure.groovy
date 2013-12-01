@@ -13,14 +13,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final MagicDamage damage1 = new MagicDamage(event.getSource(),creature,3);
-                    game.doAction(new MagicDealDamageAction(damage1));
-                    if (creature.hasAbility(MagicAbility.Infect)) {
-                        final MagicDamage damage2 = new MagicDamage(event.getSource(),creature.getController(),3);
-                        game.doAction(new MagicDealDamageAction(damage2));
-                    }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                final MagicDamage damage1 = new MagicDamage(event.getSource(),creature,3);
+                game.doAction(new MagicDealDamageAction(damage1));
+                if (creature.hasAbility(MagicAbility.Infect)) {
+                    final MagicDamage damage2 = new MagicDamage(event.getSource(),creature.getController(),3);
+                    game.doAction(new MagicDealDamageAction(damage2));
                 }
             });
         }

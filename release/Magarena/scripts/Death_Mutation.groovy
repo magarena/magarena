@@ -14,16 +14,15 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                    game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicPlayTokensAction(
-                        event.getPlayer(),
-                        TokenCardDefinitions.get("1/1 green Saproling creature token"),
-                        creature.getConvertedCost()
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new MagicDestroyAction(creature));
+                game.doAction(new MagicPlayTokensAction(
+                    event.getPlayer(),
+                    TokenCardDefinitions.get("1/1 green Saproling creature token"),
+                    creature.getConvertedCost()
+                ));
             });
         }
     }

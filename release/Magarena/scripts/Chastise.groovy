@@ -13,12 +13,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final int power=creature.getPower();
-                    game.doAction(new MagicDestroyAction(creature));
-                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),power));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                final int power=creature.getPower();
+                game.doAction(new MagicDestroyAction(creature));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),power));
             });
         }
     }

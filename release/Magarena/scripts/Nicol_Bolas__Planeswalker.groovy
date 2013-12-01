@@ -12,10 +12,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicDestroyAction(creature));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent creature ->
+                game.doAction(new MagicDestroyAction(creature));
             });
         }
     },
@@ -54,15 +53,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(), target, 7);
-                    final MagicPlayer player = damage.getTargetPlayer(); 
-                    game.doAction(new MagicDealDamageAction(damage));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(), player, 7));
-                    for (int i=7;i>0;i--) {
-                        game.addEvent(new MagicSacrificePermanentEvent( event.getSource(), player, MagicTargetChoice.SACRIFICE_PERMANENT ));
-                    }
+            event.processTarget(game, {
+                final MagicTarget target ->
+                final MagicDamage damage = new MagicDamage(event.getSource(), target, 7);
+                final MagicPlayer player = damage.getTargetPlayer(); 
+                game.doAction(new MagicDealDamageAction(damage));
+                game.addEvent(new MagicDiscardEvent(event.getSource(), player, 7));
+                for (int i=7;i>0;i--) {
+                    game.addEvent(new MagicSacrificePermanentEvent( event.getSource(), player, MagicTargetChoice.SACRIFICE_PERMANENT ));
                 }
             });
         }

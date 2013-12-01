@@ -22,12 +22,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTarget(game,new MagicTargetAction() {
-                    public void doAction(final MagicTarget target) {
-                        final MagicPayManaCostResult payedManaCost = event.getPaidMana();
-                        final MagicDamage damage=new MagicDamage(event.getPermanent(),target,payedManaCost.getX());
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
+                event.processTarget(game, {
+                    final MagicTarget target ->
+                    final MagicPayManaCostResult payedManaCost = event.getPaidMana();
+                    final MagicDamage damage=new MagicDamage(event.getPermanent(),target,payedManaCost.getX());
+                    game.doAction(new MagicDealDamageAction(damage));
                 });
             }
         }

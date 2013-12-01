@@ -29,15 +29,14 @@
             final MagicSource source = event.getSource();
             final MagicPlayer player = source.getController();
             final int amount = (player.controlsPermanent(crown) && player.controlsPermanent(throne))? 3 : 1;
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage = new MagicDamage(
-                        source,
-                        target,
-                        amount
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
+            event.processTarget(game, {
+                final MagicTarget target ->
+                final MagicDamage damage = new MagicDamage(
+                    source,
+                    target,
+                    amount
+                );
+                game.doAction(new MagicDealDamageAction(damage));
             });
         }
     }
