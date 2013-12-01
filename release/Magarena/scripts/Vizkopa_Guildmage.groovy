@@ -13,13 +13,12 @@ def T = new MagicWhenLifeIsGainedTrigger() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetPlayer(game,new MagicPlayerAction() {
-            public void doAction(final MagicPlayer player) {
-                game.doAction(new MagicChangeLifeAction(
-                    player,
-                    -event.getRefInt()
-                ));
-            }
+        event.processTargetPlayer(game, {
+            final MagicPlayer player ->
+            game.doAction(new MagicChangeLifeAction(
+                player,
+                -event.getRefInt()
+            ));
         });
     }
 };

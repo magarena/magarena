@@ -44,15 +44,14 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final MagicCard card = player.getLibrary().getCardAtTop();
-                    if (card != MagicCard.NONE) {
-                        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
-                        if (card.hasType(MagicType.Land)) {
-                            game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
-                        }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final MagicCard card = player.getLibrary().getCardAtTop();
+                if (card != MagicCard.NONE) {
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                    if (card.hasType(MagicType.Land)) {
+                        game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
                     }
                 }
             });

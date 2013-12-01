@@ -11,13 +11,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
-                    for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicChangeTurnPTAction(creature,0,1));
-                        game.doAction(new MagicAddStaticAction(creature,MagicStatic.AllCreatureTypesUntilEOT));
-                    }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                for (final MagicPermanent creature : targets) {
+                    game.doAction(new MagicChangeTurnPTAction(creature,0,1));
+                    game.doAction(new MagicAddStaticAction(creature,MagicStatic.AllCreatureTypesUntilEOT));
                 }
             });
         }

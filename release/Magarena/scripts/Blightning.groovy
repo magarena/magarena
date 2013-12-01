@@ -11,12 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),player,3);
-                    game.doAction(new MagicDealDamageAction(damage));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(),player,2));
-                }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final MagicDamage damage=new MagicDamage(event.getSource(),player,3);
+                game.doAction(new MagicDealDamageAction(damage));
+                game.addEvent(new MagicDiscardEvent(event.getSource(),player,2));
             });
         }
     }

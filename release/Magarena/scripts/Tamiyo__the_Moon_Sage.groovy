@@ -35,11 +35,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final int amt = game.filterPermanents(player, MagicTargetFilter.TARGET_TAPPED_CREATURE_YOU_CONTROL).size();
-                    game.doAction(new MagicDrawAction(event.getPlayer(),amt));
-                }
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final int amt = game.filterPermanents(player, MagicTargetFilter.TARGET_TAPPED_CREATURE_YOU_CONTROL).size();
+                game.doAction(new MagicDrawAction(event.getPlayer(),amt));
             });
         }
     },
