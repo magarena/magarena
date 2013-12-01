@@ -19,12 +19,11 @@
 
          @Override
          public void executeEvent(final MagicGame game, final MagicEvent event) {
-             event.processTargetPlayer(game,new MagicPlayerAction() {
-                public void doAction(final MagicPlayer player) {
-                    final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
-                    for (final MagicPermanent land : targets) {
-                        game.doAction(new MagicTapAction(land,true));
-                    }
+             event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
+                for (final MagicPermanent land : targets) {
+                    game.doAction(new MagicTapAction(land,true));
                 }
              });
         }
