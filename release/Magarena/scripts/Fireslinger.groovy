@@ -23,13 +23,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source=event.getSource();
-            event.processTarget(game,new MagicTargetAction() {
-                public void doAction(final MagicTarget target) {
-                    final MagicDamage damage1=new MagicDamage(source,target,1);
-                    game.doAction(new MagicDealDamageAction(damage1));
-                    final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),1);
-                    game.doAction(new MagicDealDamageAction(damage2));
-                }
+            event.processTarget(game, {
+                final MagicTarget target ->
+                final MagicDamage damage1=new MagicDamage(source,target,1);
+                game.doAction(new MagicDealDamageAction(damage1));
+                final MagicDamage damage2=new MagicDamage(source,event.getPlayer(),1);
+                game.doAction(new MagicDealDamageAction(damage2));
             });
         }
     }
