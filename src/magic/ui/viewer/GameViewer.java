@@ -116,6 +116,9 @@ public class GameViewer extends JPanel implements ActionListener {
     public void setTitle(final TitleBar titleBar) {
         titleBar.setText("Turn " + game.getTurn() + " : " + game.getPhase().getType().getName());
     }
+    public String getTurnCaption() {
+        return "Turn " + game.getTurn() + " : " + game.getPhase().getType().getName();
+    }
 
     public void clearContentPanel() {
         contentPanel.removeAll();

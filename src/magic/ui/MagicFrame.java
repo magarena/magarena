@@ -1,11 +1,9 @@
 package magic.ui;
 
-import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.OSXAdapter;
-import magic.data.URLUtils;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
@@ -13,144 +11,73 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
 import magic.test.TestGameBuilder;
-import magic.ui.viewer.DeckDescriptionPreview;
-import magic.ui.widget.ZoneBackgroundLabel;
+import net.miginfocom.swing.MigLayout;
 
-import javax.swing.ButtonGroup;
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
-import javax.swing.JFileChooser;
+import javax.swing.AbstractAction;
 import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JRadioButtonMenuItem;
 import javax.swing.KeyStroke;
 
-import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Frame;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
-import java.io.IOException;
-import java.util.LinkedList;
+import java.util.Stack;
 
-public class MagicFrame extends JFrame implements ActionListener {
+@SuppressWarnings("serial")
+public class MagicFrame extends JFrame {
 
-    private static final long serialVersionUID = 1L;
-
-    private boolean isFullScreen = false;
     private boolean ignoreWindowDeactivate = false;
+    private boolean confirmQuitToDesktop = true;
 
     private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
-    private static final String NAME = "Magarena";
-    private static final String SAVE_DUEL_ITEM = "Save";
-    private static final String RESTART_DUEL_ITEM = "Restart";
-    private static final String RESET_DUEL_ITEM = "ResetDuel";
-    private static final String NEW_DECK_ITEM = "NewDeck";
-    private static final String LOAD_DECK_ITEM = "LoadDeck";
-    private static final String SAVE_DECK_ITEM = "SaveDeck";
-    private static final String SWAP_DECKS_ITEM = "Swap";
-    private static final String PLAY_GAME_ITEM = "Play";
-    private static final String RESET_GAME_ITEM = "ResetGame";
-    private static final String CONCEDE_GAME_ITEM = "Concede";
-    private static final String CARD_EXPLORER_ITEM = "Explorer";
-    private static final String KEYWORDS_ITEM = "Keywords";
-    private static final String README_ITEM = "ReadMe";
-    private static final String DOCUMENTATION_ITEM = "Documentation";
-    private static final String ABOUT_ITEM = "About";
+
     //java -DtestGame=X to start with a specific game
     private static final String testGame = System.getProperty("testGame");
-    private static final String DOCUMENTATION_URL =
-            "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
+
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
     public static final boolean MAC_OS_X = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
 
     private final GeneralConfig config;
     private final JPanel contentPanel;
-    private JMenuItem newDuelItem;
-    private JMenuItem loadDuelItem;
-    private JMenuItem saveDuelItem;
-    private JMenuItem restartDuelItem;
-    private JMenuItem resetDuelItem;
-    private JMenuItem newDeckItem;
-    private JMenuItem loadDeckItem;
-    private JMenuItem saveDeckItem;
-    private JMenuItem swapDecksItem;
-    private JMenuItem playGameItem;
-    private JMenuItem resetGameItem;
-    private JMenuItem concedeGameItem;
-    private JMenuItem downloadImagesItem;
-    private JMenuItem preferencesItem;
-    private JMenuItem quitItem;
-    private JMenuItem updateItem;
-    private JMenuItem cardExplorerItem;
-    private JMenuItem keywordsItem;
-    private JMenuItem readMeItem;
-    private JMenuItem documentationItem;
-    private JMenuItem aboutItem;
-    private JRadioButtonMenuItem textModeItem;
-    private JRadioButtonMenuItem imageModeItem;
     private MagicDuel duel;
-    private DuelPanel duelPanel;
-    private ExplorerPanel explorerPanel;
-    private GamePanel gamePanel;
-    private final LinkedList<JComponent> contents;
+    private final Stack<MagScreen> screens;
     private boolean dontShowAgain = true;
 
-    public MagicFrame() {
-        this.explorerPanel = null;
+    public MagicFrame(final String frameTitle) {
 
-        config=GeneralConfig.getInstance();
+        // Load settings.
+        config = GeneralConfig.getInstance();
         config.load();
 
-        this.setTitle(NAME);
+        // Setup frame.
+        this.setTitle(frameTitle + "  [F11 : full screen]");
         this.setIconImage(IconImages.ARENA.getImage());
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        addWindowListeners();
+        registerForMacOSXEvents();
         setSizeAndPosition();
 
-        setMinimumSize(MIN_SIZE);
-
-        contentPanel=new JPanel(new BorderLayout());
+        // Setup content container with a painted background based on theme.
+        contentPanel = new BackgroundPanel(new MigLayout("insets 0, gap 0"));
         contentPanel.setOpaque(true);
         setContentPane(contentPanel);
+        setF11KeyInputMap();
+        setF12KeyInputMap();
 
-        contents=new LinkedList<JComponent>();
+        // First screen to display is the main menu.
+        screens = new Stack<MagScreen>();
+        showMainMenuScreen();
+        if (testGame != null) {
+            openGame(TestGameBuilder.buildGame(testGame));
+        }
 
-        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-
-        this.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(final WindowEvent event) {
-                onClose();
-            }
-        });
-
-        createMenuBar();
-        setInitialContent();
         setVisible(true);
-
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowDeactivated(WindowEvent e) {
-                if (isFullScreen && e.getOppositeWindow() == null && !ignoreWindowDeactivate) {
-                    setState(Frame.ICONIFIED);
-                }
-                ignoreWindowDeactivate = false;
-            }
-        });
-
-        // Set up our application to respond to the Mac OS X application menu
-        registerForMacOSXEvents();
 
         //in selfMode start game immediate based on configuration from duel.cfg
         if (Boolean.getBoolean("selfMode")) {
@@ -158,253 +85,96 @@ public class MagicFrame extends JFrame implements ActionListener {
             config.load();
             newDuel(config);
         }
+
     }
 
-    private void enableMenuItem(final String item,final boolean enabled) {
-        if (SAVE_DUEL_ITEM.equals(item)) {
-            saveDuelItem.setEnabled(enabled);
-        } else if (RESTART_DUEL_ITEM.equals(item)) {
-            restartDuelItem.setEnabled(enabled);
-        } else if (RESET_DUEL_ITEM.equals(item)) {
-            resetDuelItem.setEnabled(enabled);
-        } else if (NEW_DECK_ITEM.equals(item)) {
-            newDeckItem.setEnabled(enabled);
-        } else if (LOAD_DECK_ITEM.equals(item)) {
-            loadDeckItem.setEnabled(enabled);
-        } else if (SAVE_DECK_ITEM.equals(item)) {
-            saveDeckItem.setEnabled(enabled);
-        } else if (SWAP_DECKS_ITEM.equals(item)) {
-            swapDecksItem.setEnabled(enabled);
-        } else if (PLAY_GAME_ITEM.equals(item)) {
-            playGameItem.setEnabled(enabled);
-        } else if (RESET_GAME_ITEM.equals(item)) {
-            resetGameItem.setEnabled(enabled);
-        } else if (CONCEDE_GAME_ITEM.equals(item)) {
-            concedeGameItem.setEnabled(enabled);
-        } else if (CARD_EXPLORER_ITEM.equals(item)) {
-            cardExplorerItem.setEnabled(enabled);
-        } else if (KEYWORDS_ITEM.equals(item)) {
-            keywordsItem.setEnabled(enabled);
-        }else if (README_ITEM.equals(item)) {
-            readMeItem.setEnabled(enabled);
-        }else if (DOCUMENTATION_ITEM.equals(item)) {
-            documentationItem.setEnabled(enabled);
-        }else if (ABOUT_ITEM.equals(item)) {
-            aboutItem.setEnabled(enabled);
+    //
+    // The various (Mag)screens that can currently be displayed.
+    //
+    public void showDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
+        activateMagScreen(new DeckEditorScreen(this, ExplorerPanel.ALL, player, cube));
+    }
+    public void showCardExplorerScreen() {
+        activateMagScreen(new CardExplorerScreen(this));
+    }
+    public void showReadMeScreen() {
+        activateMagScreen(new ReadmeScreen(this));
+    }
+    public void showKeywordsScreen() {
+        activateMagScreen(new KeywordsScreen(this));
+    }
+    public void showHelpMenuScreen() {
+        activateMagScreen(new HelpMenuScreen(this));
+    }
+    public void showSettingsMenuScreen() {
+        activateMagScreen(new MagicSettingsScreen(this));
+    }
+    private void showDuelDecksScreen() {
+        if (screens.peek() instanceof DuelDecksScreen) {
+            screens.pop();
         }
+        activateMagScreen(new DuelDecksScreen(this, duel));
     }
-
-    private void setInitialContent() {
-        setContent(new VersionPanel(this));
-        if (testGame != null) {
-            openGame(TestGameBuilder.buildGame(testGame));
-        }
+    public void showMainMenuScreen() {
+        screens.clear();
+        activateMagScreen(new MainMenuScreen(this));
     }
-
-    private void showContent(final JComponent content) {
+    private void activateMagScreen(final MagScreen screen) {
+        showMagScreen(screen);
+        screens.push(screen);
+        screen.requestFocus();
+        System.out.println("screens stack size = " + screens.size() + ", [" + screens.peek().getClass().getName() + "]");
+    }
+    private void showMagScreen(final MagScreen screen) {
         contentPanel.removeAll();
-        //the following statement causes a
-        //Exception in thread "AWT-EventQueue-0" sun.awt.X11.XException: Cannot write XdndAware property
-        //on Java(TM) SE Runtime Environment (build 1.6.0_26-b03)
-        contentPanel.add(content,BorderLayout.CENTER);
+        contentPanel.add(screen, "w 100%, h 100%");
         contentPanel.revalidate();
         contentPanel.repaint();
     }
-
-    private void addContent(final JComponent content) {
-        contents.add(content);
-        showContent(content);
-    }
-
-    private void setContent(final JComponent content) {
-        if (duelPanel!=null) {
-            duelPanel.haltStrengthViewer();
-            duelPanel=null;
+    public void closeActiveScreen(final boolean isEscapeKeyAction) {
+        if (screens.size() == 1) {
+            quitToDesktop(isEscapeKeyAction);
+        } else {
+            final MagScreen activeScreen = screens.pop();
+            if (activeScreen.isScreenReadyToClose(screens.peek())) {
+                showMagScreen(screens.peek());
+            } else {
+                screens.push(activeScreen);
+            }
         }
-        contents.clear();
-        addContent(content);
-        enableMenuItem(SAVE_DUEL_ITEM,false);
-        enableMenuItem(RESTART_DUEL_ITEM,false);
-        enableMenuItem(RESET_DUEL_ITEM, false);
-        enableMenuItem(NEW_DECK_ITEM,false);
-        enableMenuItem(LOAD_DECK_ITEM,false);
-        enableMenuItem(SAVE_DECK_ITEM,false);
-        enableMenuItem(SWAP_DECKS_ITEM,false);
-        enableMenuItem(PLAY_GAME_ITEM,false);
-        enableMenuItem(RESET_GAME_ITEM,false);
-        enableMenuItem(CONCEDE_GAME_ITEM,false);
-        enableMenuItem(CARD_EXPLORER_ITEM,true);
-        enableMenuItem(KEYWORDS_ITEM,true);
-        enableMenuItem(README_ITEM,true);
-        enableMenuItem(DOCUMENTATION_ITEM,true);
-        enableMenuItem(ABOUT_ITEM,true);
+        System.out.println("screens stack size = " + screens.size() + ", [" + screens.peek().getClass().getName() + "]");
     }
 
-    private void closeContent() {
-        contents.removeLast();
-        showContent(contents.getLast());
-        if (gamePanel!=null) {
-            gamePanel.requestFocus();
-        }
-    }
-
-    private void createMenuBar() {
-        // arena menu
-        final JMenu arenaMenu=new JMenu("Arena");
-
-        newDuelItem=new JMenuItem("New duel");
-        newDuelItem.addActionListener(this);
-        arenaMenu.add(newDuelItem);
-
-        loadDuelItem=new JMenuItem("Load duel");
-        loadDuelItem.addActionListener(this);
-        arenaMenu.add(loadDuelItem);
-
-        saveDuelItem=new JMenuItem("Save duel");
-        saveDuelItem.addActionListener(this);
-        arenaMenu.add(saveDuelItem);
-
-        restartDuelItem=new JMenuItem("Restart duel");
-        restartDuelItem.addActionListener(this);
-        arenaMenu.add(restartDuelItem);
-
-        resetDuelItem=new JMenuItem("Reset duel");
-        resetDuelItem.addActionListener(this);
-        //arenaMenu.add(resetDuelItem);
-
-        arenaMenu.addSeparator();
-
-        downloadImagesItem = new JMenuItem("Download images");
-        downloadImagesItem.addActionListener(this);
-        arenaMenu.add(downloadImagesItem);
-
-        preferencesItem=new JMenuItem("Preferences");
-        preferencesItem.addActionListener(this);
-        arenaMenu.add(preferencesItem);
-
-        updateItem=new JMenuItem("Update");
-        updateItem.addActionListener(this);
-        //arenaMenu.add(updateItem);
-
-        quitItem=new JMenuItem("Quit");
-        quitItem.addActionListener(this);
-        arenaMenu.add(quitItem);
-
-        // duel menu
-        final JMenu duelMenu = new JMenu("Duel");
-
-        newDeckItem=new JMenuItem("New deck");
-        newDeckItem.addActionListener(this);
-        duelMenu.add(newDeckItem);
-
-        loadDeckItem=new JMenuItem("Load deck");
-        loadDeckItem.addActionListener(this);
-        duelMenu.add(loadDeckItem);
-
-        saveDeckItem=new JMenuItem("Save deck");
-        saveDeckItem.addActionListener(this);
-        duelMenu.add(saveDeckItem);
-
-        swapDecksItem=new JMenuItem("Swap decks");
-        swapDecksItem.addActionListener(this);
-        duelMenu.add(swapDecksItem);
-
-        duelMenu.addSeparator();
-
-        playGameItem=new JMenuItem("Start duel");
-        playGameItem.addActionListener(this);
-        duelMenu.add(playGameItem);
-
-        resetGameItem=new JMenuItem("Reset game");
-        resetGameItem.addActionListener(this);
-        duelMenu.add(resetGameItem);
-
-        concedeGameItem=new JMenuItem("Concede game");
-        concedeGameItem.addActionListener(this);
-        duelMenu.add(concedeGameItem);
-
-        // view menu
-        final JMenu viewMenu = new JMenu("View");
-        viewMenu.setMnemonic(KeyEvent.VK_V);
-
-        JMenuItem fullScreenMenuItem = new JMenuItem("Full Screen");
-        fullScreenMenuItem.setAccelerator(KeyStroke.getKeyStroke("F11"));
-        fullScreenMenuItem.addActionListener(new ActionListener() {
+    private void addWindowListeners() {
+        addWindowListener(new WindowAdapter() {
             @Override
-            public void actionPerformed(ActionEvent arg0) {
-                doFullScreenMode(!isFullScreen);
-                isFullScreen = !isFullScreen;
-                ignoreWindowDeactivate = true;
+            public void windowClosing(final WindowEvent event) {
+                onClose();
+            }
+            @Override
+            public void windowDeactivated(WindowEvent e) {
+                if (isFullScreen() && e.getOppositeWindow() == null && !ignoreWindowDeactivate) {
+                    setState(Frame.ICONIFIED);
+                }
+                ignoreWindowDeactivate = false;
             }
         });
-        viewMenu.add(fullScreenMenuItem);
-        viewMenu.addSeparator();
-
-        final ButtonGroup modeGroup = new ButtonGroup();
-
-        textModeItem = new JRadioButtonMenuItem("Text Mode");
-        textModeItem.setSelected(GeneralConfig.getInstance().getTextView());
-        textModeItem.addActionListener(this);
-        modeGroup.add(textModeItem);
-        viewMenu.add(textModeItem);
-
-        imageModeItem = new JRadioButtonMenuItem("Image Mode");
-        imageModeItem.setSelected(!GeneralConfig.getInstance().getTextView());
-        imageModeItem.addActionListener(this);
-        modeGroup.add(imageModeItem);
-        viewMenu.add(imageModeItem);
-
-        viewMenu.addSeparator();
-
-        keywordsItem=new JMenuItem("Keywords");
-        keywordsItem.addActionListener(this);
-        viewMenu.add(keywordsItem);
-
-        cardExplorerItem=new JMenuItem("Card Explorer");
-        cardExplorerItem.addActionListener(this);
-        viewMenu.add(cardExplorerItem);
-
-        // help menu
-        final JMenu helpMenu=new JMenu("Help");
-
-        readMeItem=new JMenuItem("Read Me");
-        readMeItem.addActionListener(this);
-        helpMenu.add(readMeItem);
-
-        documentationItem=new JMenuItem("Online Documentation");
-        documentationItem.addActionListener(this);
-        helpMenu.add(documentationItem);
-
-        aboutItem=new JMenuItem("About Magarena");
-        aboutItem.addActionListener(this);
-        helpMenu.add(aboutItem);
-
-        final JMenuBar menuBar=new JMenuBar();
-        menuBar.add(arenaMenu);
-        menuBar.add(duelMenu);
-        menuBar.add(viewMenu);
-        menuBar.add(helpMenu);
-
-        this.setJMenuBar(menuBar);
     }
 
     public void showDuel() {
-        gamePanel=null;
+
+//        gamePanel=null;
         if (duel!=null) {
-            final DuelPanel newDuelPanel=new DuelPanel(this,duel);
-            setContent(newDuelPanel);
-            duelPanel=newDuelPanel;
-            enableMenuItem(SAVE_DUEL_ITEM,true);
-            enableMenuItem(RESTART_DUEL_ITEM,true);
-            enableMenuItem(RESET_DUEL_ITEM,true);
-            enableMenuItem(NEW_DECK_ITEM,duel.isEditable());
-            enableMenuItem(LOAD_DECK_ITEM,duel.isEditable());
-            enableMenuItem(SAVE_DECK_ITEM,true);
-            enableMenuItem(SWAP_DECKS_ITEM,duel.isEditable());
-            enableMenuItem(PLAY_GAME_ITEM,!duel.isFinished());
-            playGameItem.setText((duel.getGamesPlayed() == 0 ?
-                        "Start duel" :
-                        "Continue duel"));
+
+//            final DuelPanel newDuelPanel = new DuelPanel(this,duel);
+//            setContent(newDuelPanel);
+//            duelPanel=newDuelPanel;
+            showDuelDecksScreen();
+
+
+//            playGameItem.setText((duel.getGamesPlayed() == 0 ?
+//                        "Start duel" :
+//                        "Continue duel"));
             if (Boolean.getBoolean("selfMode")) {
                 if (!duel.isFinished()) {
                     nextGame();
@@ -413,13 +183,13 @@ public class MagicFrame extends JFrame implements ActionListener {
                 }
             }
         } else {
-            setContent(new ZoneBackgroundLabel());
+            //setContent(new ZoneBackgroundLabel());
         }
     }
 
     public void showDuel(final int tab) {
         showDuel();
-        duelPanel.setSelectedTab(tab);
+//        duelPanel.setSelectedTab(tab);
     }
 
     public void showNewDuelDialog() {
@@ -427,7 +197,7 @@ public class MagicFrame extends JFrame implements ActionListener {
     }
 
     public void newDuel(final DuelConfig configuration) {
-        duel=new MagicDuel(configuration);
+        duel = new MagicDuel(configuration);
         duel.initialize();
         showDuel();
     }
@@ -442,12 +212,15 @@ public class MagicFrame extends JFrame implements ActionListener {
             duel=new MagicDuel();
             duel.load(duelFile);
             showDuel();
+        } else {
+            JOptionPane.showMessageDialog(this, "No saved duel found.", "Invalid Action", JOptionPane.WARNING_MESSAGE);
         }
     }
 
-    private void saveDuel() {
+    public void saveDuel() {
         if (duel!=null) {
             duel.save(MagicDuel.getDuelFile());
+            JOptionPane.showMessageDialog(this, "Duel saved. Use Load Duel option in Main Menu to restore.", "Save Duel", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
@@ -458,81 +231,20 @@ public class MagicFrame extends JFrame implements ActionListener {
         }
     }
 
-    private void newDeck() {
-        if (duelPanel!=null) {
-            final MagicPlayerDefinition player=duelPanel.getSelectedPlayer();
-            player.getDeck().clear();
-            duelPanel.updateDecksAfterEdit();
-            if(explorerPanel != null) {
-                explorerPanel.updateDeck();
-            }
-        }
+    public void newDeck() {
+        ((DeckEditorScreen)screens.peek()).createNewEmptyDeck();
     }
 
-    private void loadDeck() {
-        if (duelPanel!=null) {
-            final MagicPlayerDefinition player=duelPanel.getSelectedPlayer();
-            final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
-            fileChooser.setDialogTitle("Load deck");
-            fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
-            fileChooser.setAcceptAllFileFilterUsed(false);
-            // Add the description preview pane
-            fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
-
-            final int action=fileChooser.showOpenDialog(this);
-            if (action==JFileChooser.APPROVE_OPTION) {
-                final String filename=fileChooser.getSelectedFile().getAbsolutePath();
-                DeckUtils.loadDeck(filename,player);
-                duelPanel.updateDecksAfterEdit();
-                if(explorerPanel != null) {
-                    explorerPanel.updateDeck();
-                }
-            }
-        }
+    public void loadDeck() {
+        ((DeckEditorScreen)screens.peek()).loadDeck();
     }
 
-    private void saveDeck() {
-        if (duelPanel!=null) {
-            final MagicPlayerDefinition player=duelPanel.getSelectedPlayer();
-            final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
-            fileChooser.setDialogTitle("Save deck");
-            fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
-            fileChooser.setAcceptAllFileFilterUsed(false);
-            final int action=fileChooser.showSaveDialog(this);
-            if (action==JFileChooser.APPROVE_OPTION) {
-                String filename=fileChooser.getSelectedFile().getAbsolutePath();
-                if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
-                    filename+=DeckUtils.DECK_EXTENSION;
-                }
-                if(DeckUtils.saveDeck(filename,player)) {
-                    String shortFilename = fileChooser.getSelectedFile().getName();
-                    if (shortFilename.indexOf(".dec") == -1) {
-                        shortFilename += ".dec";
-                    }
-                    player.getDeck().setName(shortFilename);
-                    duelPanel.updateDecksAfterEdit();
-                    if(explorerPanel != null) {
-                        explorerPanel.updateDeck();
-                    }
-                }
-            }
-        }
+    public void saveDeck() {
+        ((DeckEditorScreen)screens.peek()).saveDeck();
     }
 
-    private void swapDecks() {
-        if (duel!=null) {
-            duel.restart();
-            final MagicPlayerDefinition[] players=duel.getPlayers();
-            final MagicPlayerProfile profile1=players[0].getProfile();
-            final MagicPlayerProfile profile2=players[1].getProfile();
-            final MagicDeck deck1 = new MagicDeck(players[0].getDeck());
-            final MagicDeck deck2 = new MagicDeck(players[1].getDeck());
-            players[0].setProfile(profile2);
-            players[0].setDeck(deck2);
-            players[1].setProfile(profile1);
-            players[1].setDeck(deck1);
-            showDuel();
-        }
+    public void swapDecks() {
+        ((DuelDecksScreen)screens.peek()).swapDecks();
     }
 
     public boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
@@ -551,74 +263,30 @@ public class MagicFrame extends JFrame implements ActionListener {
         return true;
     }
 
-    private void resetGame() {
-        if (gamePanel!=null) {
-            gamePanel.getController().resetGame();
-        }
+    public void resetGame() {
+        ((DuelScreen)screens.peek()).resetGame();
     }
 
-    private void concedeGame() {
-        if (gamePanel!=null) {
-            gamePanel.getController().concede();
-        }
+    public void concedeGame() {
+        ((DuelScreen)screens.peek()).concedeGame();
     }
 
     public void nextGame() {
         duel.updateDifficulty();
-
         final MagicPlayerDefinition[] players=duel.getPlayers();
-        if(isLegalDeckAndShowErrors(
-                players[0].getDeck(),
-                players[0].getName()) && isLegalDeckAndShowErrors(players[1].getDeck(),
-                players[1].getName())) {
+        if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
+           isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
             openGame(duel.nextGame(true));
         }
     }
 
     private void openGame(final MagicGame game) {
-        final ZoneBackgroundLabel backgroundLabel=new ZoneBackgroundLabel();
-        backgroundLabel.setGame(true);
-        gamePanel=new GamePanel(this,game,backgroundLabel);
-        final GameLayeredPane gamePane=new GameLayeredPane(gamePanel,backgroundLabel);
-        setContent(gamePane);
-        gamePanel.requestFocus();
-        enableMenuItem(RESET_GAME_ITEM,true);
-        enableMenuItem(CONCEDE_GAME_ITEM,true);
+        activateMagScreen(new DuelScreen(this, game));
     }
 
-    public void updateGameView() {
-        if(gamePanel != null) {
-            gamePanel.updateView();
-        }
-    }
-
-    private void openCardExplorer() {
-        enableMenuItem(CARD_EXPLORER_ITEM,false);
-        explorerPanel = new ExplorerPanel(this, ExplorerPanel.ALL, null, null);
-        addContent(explorerPanel);
-    }
-
-    public void openDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
-        enableMenuItem(CARD_EXPLORER_ITEM,false);
-        // final int mode=editDeckCard.getCard().isLand()?ExplorerPanel.LAND:ExplorerPanel.SPELL;
-        explorerPanel=new ExplorerPanel(this,ExplorerPanel.ALL,player, cube);
-        addContent(explorerPanel);
-    }
-
-    public void closeCardExplorer() {
-        closeContent();
-        enableMenuItem(CARD_EXPLORER_ITEM,true);
-    }
-
-    public void closeDeckEditor() {
-        if(isLegalDeckAndShowErrors(explorerPanel.getPlayer().getDeck(), explorerPanel.getPlayer().getName())) {
-            closeCardExplorer();
-            if (duelPanel != null) {
-                duelPanel.updateDecksAfterEdit();
-            }
-        }
-    }
-
+    /**
+     * Set up our application to respond to the Mac OS X application menu
+     */
     private void registerForMacOSXEvents() {
         if (MAC_OS_X) {
             try {
@@ -636,44 +304,38 @@ public class MagicFrame extends JFrame implements ActionListener {
     }
 
     public boolean onClose() {
-        if (!config.isConfirmExit()) {
-            exit();
+        if (!confirmQuitToDesktop) {
+            doShutdownMagarena();
         } else {
-            // show confirmation dialog
-            final JCheckBox checkbox =
-                    new JCheckBox("Do not show this message again.");
-            checkbox.setFont(new Font("dialog", Font.PLAIN, 11));
-            final String message =
-                    "Are you sure you want to quit Magarena?\n\n\n";
-            final Object[] params = {message, checkbox};
+            final String message = "Are you sure you want to quit Magarena?\n";
+            final Object[] params = {message};
             final int n = JOptionPane.showConfirmDialog(
                     contentPanel,
                     params,
-                    "Confirm Exit",
+                    "Confirm Quit to Desktop",
                     JOptionPane.YES_NO_OPTION);
-            dontShowAgain = checkbox.isSelected();
             if (n == JOptionPane.YES_OPTION) {
-                exit();
-            } else if (n == JOptionPane.NO_OPTION) {
-                config.setConfirmExit(!dontShowAgain);
-                config.save();
+                doShutdownMagarena();
             }
         }
         // set the ApplicationEvent as handled (for OS X)
         return false;
     }
 
-    private void exit() {
-        final boolean maximized =
-                (MagicFrame.this.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH;
-        if (maximized) {
-            config.setMaximized(true);
+    private void doShutdownMagarena() {
+        if (isFullScreen()) {
+            config.setFullScreen(true);
         } else {
-            config.setLeft(getX());
-            config.setTop(getY());
-            config.setWidth(getWidth());
-            config.setHeight(getHeight());
-            config.setMaximized(false);
+            final boolean maximized = (MagicFrame.this.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH;
+            if (maximized) {
+                config.setMaximized(true);
+            } else {
+                config.setLeft(getX());
+                config.setTop(getY());
+                config.setWidth(getWidth());
+                config.setHeight(getHeight());
+                config.setMaximized(false);
+            }
         }
         config.setConfirmExit(!dontShowAgain);
         config.save();
@@ -688,163 +350,102 @@ public class MagicFrame extends JFrame implements ActionListener {
         System.exit(0);
     }
 
-    private void openKeywords() {
-        enableMenuItem(KEYWORDS_ITEM,false);
-        final KeywordsPanel keywordsPanel=new KeywordsPanel(this);
-        addContent(keywordsPanel);
-    }
-
-    public void closeKeywords() {
-        closeContent();
-        enableMenuItem(KEYWORDS_ITEM,true);
-    }
-
-    private void openReadme() {
-        enableMenuItem(README_ITEM,false);
-        final ReadmePanel rmPanel = new ReadmePanel(this);
-        addContent(rmPanel);
-    }
-
-    public void closeReadme() {
-        closeContent();
-        enableMenuItem(README_ITEM,true);
+    public void quitToDesktop(final boolean confirmQuit) {
+        this.confirmQuitToDesktop = confirmQuit;
+        processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
     }
 
     public void setTextImageMode(final boolean isTextMode) {
         GeneralConfig.getInstance().setTextView(isTextMode);
-        if (gamePanel != null) {
-            gamePanel.updateView();
+        updateGameView();
+    }
+
+    public void updateGameView() {
+        if (screens.peek() instanceof DuelScreen) {
+            final DuelScreen screen = (DuelScreen)screens.peek();
+            screen.updateView();
         }
     }
 
-    @Override
-    public void actionPerformed(final ActionEvent event) {
+    public void openPreferencesDialog() {
+        new PreferencesDialog(this);
+    }
 
-        final Object source=event.getSource();
-        if (source==newDuelItem) {
-            showNewDuelDialog();
-        } else if (source==loadDuelItem) {
-            loadDuel();
-        } else if (source==saveDuelItem) {
-            saveDuel();
-        } else if (source==restartDuelItem) {
-            restartDuel();
-        } else if (source == resetDuelItem) {
-            resetDuel();
-        } else if (source==newDeckItem) {
-            newDeck();
-        } else if (source==loadDeckItem) {
-            loadDeck();
-        } else if (source==saveDeckItem) {
-            saveDeck();
-        } else if (source==swapDecksItem) {
-            swapDecks();
-        } else if (source==playGameItem) {
-            nextGame();
-        } else if (source==resetGameItem) {
-            resetGame();
-        } else if (source==concedeGameItem) {
-            concedeGame();
-        } else if (source==downloadImagesItem) {
-            new DownloadImagesDialog(this);
-        } else if (source==preferencesItem) {
-            new PreferencesDialog(this);
-        } else if (source==quitItem) {
-            processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-        } else if (source==updateItem) {
-            this.addWindowListener(new WindowAdapter() {
-                @Override
-                public void windowClosed(final WindowEvent event) {
-                    updateApp();
-                }
-            });
-            processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-        } else if (source==cardExplorerItem) {
-            openCardExplorer();
-        } else if (source==keywordsItem) {
-            openKeywords();
-        } else if (source==readMeItem) {
-            openReadme();
-        } else if (source==documentationItem) {
-            URLUtils.openURL(DOCUMENTATION_URL);;
-        } else if (source==aboutItem) {
-            new AboutDialog(this);
-        } else if (source == textModeItem) {
-            setTextImageMode(true);
-        } else if (source == imageModeItem) {
-            setTextImageMode(false);
+    private void setSizeAndPosition() {
+        setMinimumSize(MIN_SIZE);
+        if (config.isFullScreen()) {
+            setFullScreenMode(true);
+        } else {
+            this.setSize(config.getWidth(),config.getHeight());
+            if (config.getLeft()!=-1) {
+                this.setLocation(config.getLeft(),config.getTop());
+            } else {
+                this.setLocationRelativeTo(null);
+            }
+            if (config.isMaximized()) {
+                this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            }
         }
     }
 
-    private boolean updateApp() {
-        //check for new version
-
-
-        //if there is a new version, download the jar file
-
-
-        //restart the app
-        final String javaBin = System.getProperty("java.home") + "/bin/java";
-        final File jarFile;
-        try { //get File object of jar
-            jarFile = new File(this.getClass().
-                    getProtectionDomain().
-                    getCodeSource().
-                    getLocation().
-                    toURI());
-        } catch (final java.net.URISyntaxException ex) {
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-            return false;
-        }
-
-        /* is it a jar file? */
-        if ( !jarFile.getName().endsWith(".jar") ) {
-            //no, it's a .class probably
-            return false;
-        }
-
-        final String[] toExec = {javaBin, "-jar", jarFile.getPath()};
-        try { //restart the application
-            Runtime.getRuntime().exec(toExec);
-        } catch (final IOException ex) {
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-            return false;
-        }
-
-        System.exit(0);
-        return true;
+    /**
+     *
+     */
+    public void closeDuelScreen() {
+        closeActiveScreen(false);
+        showDuel();
     }
 
-    private void doFullScreenMode(boolean showFullScreen) {
+    public void toggleFullScreenMode() {
+        setFullScreenMode(!config.isFullScreen());
+    }
 
+    private void setFullScreenMode(final boolean isFullScreen) {
         this.dispose();
-
-        if (showFullScreen) {
+        if (isFullScreen) {
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
             this.setUndecorated(true);
             Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
             this.setSize(screenSize.width, screenSize.height);
+            config.setFullScreen(true);
         } else {
             this.setExtendedState(JFrame.NORMAL);
             this.setUndecorated(false);
+            config.setFullScreen(false);
             setSizeAndPosition();
         }
-
         setVisible(true);
+        ignoreWindowDeactivate = true;
+        config.save();
     }
 
-    private void setSizeAndPosition() {
-        this.setSize(config.getWidth(),config.getHeight());
-        if (config.getLeft()!=-1) {
-            this.setLocation(config.getLeft(),config.getTop());
-        } else {
-            this.setLocationRelativeTo(null);
-        }
-        if (config.isMaximized()) {
-            this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        }
+    private boolean isFullScreen() {
+        return (this.getExtendedState() == JFrame.MAXIMIZED_BOTH) && this.isUndecorated();
+    }
+
+    /**
+     * F11 key toggles full screen mode.
+     */
+    private void setF11KeyInputMap() {
+        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("F11"), "FullScreen");
+        contentPanel.getActionMap().put("FullScreen", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                toggleFullScreenMode();
+            }
+        });
+    }
+
+    private void setF12KeyInputMap() {
+        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("F12"), "HideMenu");
+        contentPanel.getActionMap().put("HideMenu", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //menuPanel.setVisible(!menuPanel.isVisible());
+                final MagScreen activeScreen = screens.peek();
+                activeScreen.setVisible(!activeScreen.isVisible());
+            }
+        });
     }
 
 }

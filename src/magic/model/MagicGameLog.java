@@ -1,8 +1,6 @@
 package magic.model;
 
 import magic.MagicMain;
-import magic.ui.VersionPanel;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -24,7 +22,7 @@ public class MagicGameLog {
             sb.append('\n');
             sb.append("CREATED ON " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
             sb.append('\n');
-            sb.append("MAGARENA VERSION " + VersionPanel.getVersion());
+            sb.append("MAGARENA VERSION " + MagicMain.VERSION);
             sb.append(", JRE " + System.getProperty("java.version"));
             sb.append(", OS " + System.getProperty("os.name"));
             sb.append("_" + System.getProperty("os.version"));

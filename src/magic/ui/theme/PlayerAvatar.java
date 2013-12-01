@@ -8,7 +8,7 @@ public class PlayerAvatar {
     private static final int LARGE_SIZE  = 120;
     private static final int MEDIUM_SIZE = LARGE_SIZE/2;
     private static final int SMALL_SIZE  = LARGE_SIZE/4;
-    private static final int CUSTOM_SIZE = 40;
+    private static final int CUSTOM_SIZE = 54;
 
     private final ImageIcon largeIcon;
     private final ImageIcon mediumIcon;

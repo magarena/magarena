@@ -5,8 +5,6 @@ import magic.data.FileIO;
 import magic.data.URLUtils;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
-import magic.ui.VersionPanel;
-
 import java.awt.Component;
 import java.awt.Desktop;
 import java.awt.Rectangle;
@@ -163,7 +161,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         sb.append('\n');
         sb.append("CREATED ON " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(new Date()));
         sb.append('\n');
-        sb.append("MAGARENA VERSION " + VersionPanel.getVersion());
+        sb.append("MAGARENA VERSION " + MagicMain.VERSION);
         sb.append(", JRE " + System.getProperty("java.version"));
         sb.append(", OS " + System.getProperty("os.name"));
         sb.append("_" + System.getProperty("os.version"));

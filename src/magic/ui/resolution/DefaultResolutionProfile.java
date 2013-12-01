@@ -14,7 +14,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
     private static final int PLAYER_VIEWER_WIDTH=300;
 //    private static final int PLAYER_VIEWER_HEIGHT=154;
     public static final int PLAYER_VIEWER_HEIGHT_SMALL=80;
-    public static final int GAME_VIEWER_HEIGHT=147;
+    public static final int GAME_VIEWER_HEIGHT=187;
     private static final int MIN_HAND_VIEWER_WIDTH=250;
     private static final int IMAGE_HAND_VIEWER_HEIGHT=145;
     private static final int MAX_LOGBOOK_VIEWER_WIDTH=1000;

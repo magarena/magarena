@@ -1,0 +1,315 @@
+package magic.ui;
+
+import magic.ai.MagicAIImpl;
+import magic.data.CubeDefinitions;
+import magic.data.DeckGenerators;
+import magic.data.DuelConfig;
+import magic.data.IconImages;
+import magic.model.MagicColor;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.SliderPanel;
+import magic.ui.widget.TexturedPanel;
+
+import java.util.Vector;
+
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.ListCellRenderer;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class DuelSetupPanel extends TexturedPanel {
+
+    private static final long serialVersionUID = 1L;
+
+    private static final String SEPARATOR = "----";
+
+    private final AvatarPanel avatarPanel;
+    private final JTextField nameTextField;
+    private final SliderPanel lifeSlider;
+    private final SliderPanel handSlider;
+    private final SliderPanel gameSlider;
+    private final ColorsChooser playerColorsChooser;
+    private final ColorsChooser opponentColorsChooser;
+    private final JComboBox<String> cubeComboBox;
+    private final JComboBox<String> aiComboBox;
+    private final Theme theme;
+
+    public DuelSetupPanel(final MagicFrame frame) {
+
+        theme=ThemeFactory.getInstance().getCurrentTheme();
+
+        final DuelConfig config=DuelConfig.getInstance();
+        config.load();
+
+        final JPanel mainPanel=new JPanel();
+        mainPanel.setOpaque(false);
+        mainPanel.setLayout(null);
+
+        nameTextField=new JTextField(config.getName());
+        nameTextField.setPreferredSize(new Dimension(0,25));
+        nameTextField.setBounds(35,20,120,25);
+        mainPanel.add(nameTextField);
+
+        avatarPanel=new AvatarPanel(config.getAvatar());
+        avatarPanel.setBounds(35,50,120,180);
+        mainPanel.add(avatarPanel);
+        avatarPanel.setOpaque(false);
+
+        lifeSlider=new SliderPanel("Life",theme.getIcon(Theme.ICON_LIFE),10,30,5,config.getStartLife());
+        lifeSlider.setBounds(190,25,270,50);
+        mainPanel.add(lifeSlider);
+        lifeSlider.setOpaque(false);
+
+        handSlider=new SliderPanel("Hand",theme.getIcon(Theme.ICON_HAND),6,8,1,config.getHandSize());
+        handSlider.setBounds(190,95,270,50);
+        mainPanel.add(handSlider);
+        handSlider.setOpaque(false);
+
+        gameSlider=new SliderPanel("Games",IconImages.NUMBER,3,11,2,config.getNrOfGames());
+        gameSlider.setBounds(190,165,270,50);
+        mainPanel.add(gameSlider);
+        gameSlider.setOpaque(false);
+
+        playerColorsChooser=new ColorsChooser(config.getPlayerColors());
+        playerColorsChooser.setBounds(55,255,130,50);
+        mainPanel.add(playerColorsChooser);
+
+        final JLabel versusLabel=new JLabel("versus");
+        versusLabel.setHorizontalAlignment(JLabel.CENTER);
+        versusLabel.setFont(FontsAndBorders.FONT4);
+        versusLabel.setBounds(185,255,120,50);
+        mainPanel.add(versusLabel);
+
+        opponentColorsChooser=new ColorsChooser(config.getOpponentColors());
+        opponentColorsChooser.setBounds(305,255,130,50);
+        mainPanel.add(opponentColorsChooser);
+
+        final JLabel cubeLabel=new JLabel("Cube");
+        cubeLabel.setIcon(IconImages.CUBE);
+        cubeLabel.setBounds(55,330,80,25);
+        mainPanel.add(cubeLabel);
+        cubeComboBox=new JComboBox<String>(CubeDefinitions.getCubeNames());
+        cubeComboBox.setFocusable(false);
+        cubeComboBox.setBounds(135,330,300,25);
+        cubeComboBox.setSelectedItem(config.getCube());
+        mainPanel.add(cubeComboBox);
+
+        final JLabel aiLabel=new JLabel("AI");
+        aiLabel.setBounds(55,365,80,25);
+        aiLabel.setIcon(IconImages.DIFFICULTY);
+        mainPanel.add(aiLabel);
+        aiComboBox=new JComboBox<String>(MagicAIImpl.getNames());
+        aiComboBox.setFocusable(false);
+        aiComboBox.setBounds(135,365,300,25);
+        aiComboBox.setSelectedItem(config.getAI());
+        mainPanel.add(aiComboBox);
+
+        setLayout(new BorderLayout());
+        add(mainPanel,BorderLayout.CENTER);
+
+    }
+
+    private class AvatarPanel extends JPanel implements ActionListener {
+
+        private static final long serialVersionUID = 1L;
+
+        private final JLabel avatarLabel;
+        private final JButton leftButton;
+        private final JButton rightButton;
+        private int avatar;
+
+        public AvatarPanel(final int avatar) {
+
+            this.avatar=avatar;
+
+            setLayout(new BorderLayout(0,5));
+
+            avatarLabel=new JLabel();
+            avatarLabel.setIcon(theme.getAvatarIcon(avatar,3));
+            add(avatarLabel,BorderLayout.CENTER);
+
+            final JPanel buttonPanel=new JPanel();
+            buttonPanel.setLayout(new GridLayout(1,2,10,0));
+            add(buttonPanel,BorderLayout.SOUTH);
+            buttonPanel.setOpaque(false);
+
+            leftButton=new JButton(IconImages.LEFT);
+            leftButton.setFocusable(false);
+            leftButton.addActionListener(this);
+            buttonPanel.add(leftButton,BorderLayout.WEST);
+
+            rightButton=new JButton(IconImages.RIGHT);
+            rightButton.setFocusable(false);
+            rightButton.addActionListener(this);
+            buttonPanel.add(rightButton,BorderLayout.EAST);
+        }
+
+        public int getAvatar() {
+
+            return avatar;
+        }
+
+        public void actionPerformed(final ActionEvent event) {
+
+            final Object source=event.getSource();
+            if (source==leftButton) {
+                avatar--;
+                if (avatar<0) {
+                    avatar=theme.getNumberOfAvatars()-1;
+                }
+            } else {
+                avatar++;
+                if (avatar==theme.getNumberOfAvatars()) {
+                    avatar=0;
+                }
+            }
+            avatarLabel.setIcon(theme.getAvatarIcon(avatar,3));
+        }
+    }
+
+    private static class ColorsChooser extends JComboBox<String> implements ListCellRenderer<String> {
+
+        private static final long serialVersionUID = 1L;
+
+        private String lastSelected;
+
+        public ColorsChooser(final String colors) {
+
+            setRenderer(this);
+
+            final Vector<String> items = new Vector<String>();
+            items.add("bug");
+            items.add("bur");
+            items.add("buw");
+            items.add("bgr");
+            items.add("bgw");
+            items.add("brw");
+            items.add("ugw");
+            items.add("ugr");
+            items.add("urw");
+            items.add("grw");
+            items.add("***");
+            items.add("bu");
+            items.add("bg");
+            items.add("br");
+            items.add("bw");
+            items.add("ug");
+            items.add("ur");
+            items.add("uw");
+            items.add("gr");
+            items.add("gw");
+            items.add("rw");
+            items.add("**");
+            items.add("b");
+            items.add("u");
+            items.add("g");
+            items.add("r");
+            items.add("w");
+            items.add("*");
+            items.add("@");
+
+            if (DeckGenerators.getInstance().getNrGenerators() > 0) {
+                items.add(SEPARATOR);
+                for(final String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
+                    items.add(generatorName);
+                }
+            }
+
+            setModel(new DefaultComboBoxModel<String>(items));
+            setSelectedItem(colors);
+            lastSelected = colors;
+            this.setFocusable(false);
+            addActionListener(this);
+        }
+
+        @Override
+        public String getSelectedItem() {
+            return getItemAt(getSelectedIndex());
+        }
+
+        @Override
+        public Component getListCellRendererComponent(
+                final JList<? extends String> list,
+                final String selectedVal,
+                final int index,
+                final boolean isSelected,
+                final boolean cellHasFocus) {
+            if(selectedVal == SEPARATOR) {
+                return new javax.swing.JSeparator(javax.swing.JSeparator.HORIZONTAL);
+            } else if(DeckGenerators.getInstance().getGeneratorNames().contains(selectedVal)) {
+                final JPanel panel=new JPanel(new GridLayout(1,1));
+                panel.setBorder(FontsAndBorders.EMPTY_BORDER);
+                if (isSelected) {
+                    panel.setBackground(Color.LIGHT_GRAY);
+                }
+
+                final JLabel label = new JLabel(selectedVal, JLabel.CENTER);
+                label.setFont(FontsAndBorders.FONT1);
+                panel.add(label);
+
+                return panel;
+            } else {
+                final JPanel panel=new JPanel(new GridLayout(1,3));
+                for (int i=0;i<selectedVal.length();i++) {
+
+                    final char ch = selectedVal.charAt(i);
+                    final ImageIcon icon;
+                    switch (ch) {
+                        case '*': icon=IconImages.ANY; break;
+                        case '@': icon=IconImages.FOLDER; break;
+                        default: icon=MagicColor.getColor(ch).getIcon(); break;
+                    }
+                    panel.add(new JLabel(icon));
+                }
+                panel.setBorder(FontsAndBorders.EMPTY_BORDER);
+                if (isSelected) {
+                    panel.setBackground(Color.LIGHT_GRAY);
+                }
+                return panel;
+            }
+        }
+
+        public void actionPerformed(final ActionEvent e) {
+            final String tempItem = getSelectedItem();
+
+            if (SEPARATOR.equals(tempItem)) {
+                // don't select separator
+                setSelectedItem(lastSelected);
+            } else {
+                lastSelected = tempItem;
+            }
+        }
+    }
+
+    public DuelConfig getNewDuelConfig() {
+        final DuelConfig config=DuelConfig.getInstance();
+        final String playerColors=playerColorsChooser.getSelectedItem();
+        final String opponentColors=opponentColorsChooser.getSelectedItem();
+        config.setAvatar(avatarPanel.getAvatar());
+        config.setName(nameTextField.getText());
+        config.setStartLife(lifeSlider.getValue());
+        config.setHandSize(handSlider.getValue());
+        config.setNrOfGames(gameSlider.getValue());
+        config.setPlayerColors(playerColors);
+        config.setOpponentColors(opponentColors);
+        config.setCube(cubeComboBox.getItemAt(cubeComboBox.getSelectedIndex()));
+        config.setAI(aiComboBox.getItemAt(aiComboBox.getSelectedIndex()));
+        config.save();
+        return config;
+    }
+}

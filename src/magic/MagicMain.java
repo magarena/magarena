@@ -18,6 +18,9 @@ import java.io.File;
 
 public class MagicMain {
 
+    public static final String VERSION = "1.44";
+    public static final String SOFTWARE_TITLE = "Magarena " + VERSION;
+
     public static JFrame rootFrame;
 
     private static final String GAME_FOLDER  = "Magarena";
@@ -65,7 +68,7 @@ public class MagicMain {
         System.err.println("Initalization of engine took " + duration + "s");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                rootFrame = new MagicFrame();
+                rootFrame = new MagicFrame(SOFTWARE_TITLE);
             }
         });
     }

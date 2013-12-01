@@ -2,9 +2,6 @@ package magic.data;
 
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
 
 public class IconImages {
     public static final BufferedImage MISSING=loadImage("icons/missing.png");
@@ -21,6 +18,8 @@ public class IconImages {
     public static final BufferedImage GRANITE2=loadImage("textures/granite2.jpg");
     public static final BufferedImage OPAL=loadImage("textures/opal.jpg");
     public static final BufferedImage OPAL2=loadImage("textures/opal2.jpg");
+    public static final BufferedImage HEADER_ICON=loadImage("icons/headerIcon.png");
+    public static final BufferedImage OPTIONS_ICON=loadImage("icons/book.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon CUBE=loadIcon("cube.png");

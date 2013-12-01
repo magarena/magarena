@@ -1,9 +1,7 @@
 package magic.ui;
 
 import magic.data.CardImagesProvider;
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
@@ -16,7 +14,7 @@ import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.viewer.DuelDifficultyViewer;
 import magic.ui.viewer.HistoryViewer;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.ZoneBackgroundLabel;
+import magic.ui.widget.TexturedPanel;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -26,37 +24,29 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
+
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class DuelPanel extends JPanel implements ActionListener {
+public class DuelPanel extends TexturedPanel {
 
     private static final long serialVersionUID = 1L;
 
     private static final int SPACING = 10;
-    private static final String PLAY_BUTTON_START_TEXT = "Start Duel";
-    private static final String PLAY_BUTTON_NEXT_TEXT = "Cont. Duel";
-    private static final String RESTART_BUTTON_TEXT = "Restart Duel";
-    private static final String NEW_BUTTON_TEXT = "New Duel";
-    private static final String EDIT_BUTTON_TEXT = "Edit Deck";
     private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
 
     private final MagicFrame frame;
     private final MagicDuel duel;
     private final JTabbedPane tabbedPane;
-    private final JButton newDuelButton;
-    private final JButton restartButton;
-    private final JButton playButton;
-    private final ZoneBackgroundLabel backgroundImage;
     private final DeckStrengthViewer strengthViewer;
     private final HistoryViewer historyViewer;
     private final DeckDescriptionViewer[] deckDescriptionViewers;
     private final CardViewer cardViewer;
     private final DuelDifficultyViewer duelDifficultyViewer;
     private final CardTable[] cardTables;
-    private final JButton[] editButtons;
     private final JButton[] generateButtons;
     private final DeckStatisticsViewer[] statsViewers;
 
@@ -65,6 +55,7 @@ public class DuelPanel extends JPanel implements ActionListener {
         this.frame=frame;
         this.duel=duel;
 
+        setBackground(new Color(255, 255, 255, 60));
         final SpringLayout springLayout = new SpringLayout();
         setLayout(springLayout);
 
@@ -72,41 +63,6 @@ public class DuelPanel extends JPanel implements ActionListener {
         final JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
         buttonsPanel.setOpaque(false);
-
-        // new duel button
-        newDuelButton = new JButton(NEW_BUTTON_TEXT);
-        newDuelButton.setFont(FontsAndBorders.FONT1);
-        newDuelButton.addActionListener(this);
-        newDuelButton.setFocusable(false);
-        buttonsPanel.add(newDuelButton);
-
-        //buttonsPanel.add(Box.createHorizontalStrut(SPACING));
-
-        // restart button
-        restartButton = new JButton(RESTART_BUTTON_TEXT);
-        restartButton.setFont(FontsAndBorders.FONT1);
-        restartButton.addActionListener(this);
-        restartButton.setFocusable(false);
-        restartButton.setEnabled(duel.getGamesPlayed() > 0);
-        buttonsPanel.add(restartButton);
-
-        //buttonsPanel.add(Box.createHorizontalStrut(SPACING));
-
-        // play button
-        playButton = new JButton(PLAY_BUTTON_START_TEXT);
-        playButton.setText((duel.getGamesPlayed() == 0) ?
-                PLAY_BUTTON_START_TEXT
-                :
-                PLAY_BUTTON_NEXT_TEXT);
-        playButton.setFont(FontsAndBorders.FONT1);
-        playButton.addActionListener(this);
-        playButton.setFocusable(false);
-        playButton.setEnabled(!duel.isFinished());
-        buttonsPanel.add(playButton);
-
-        // center buttons
-        // JPanel centeredButtonsPanel = new JPanel(new BorderLayout());
-
 
         add(buttonsPanel);
 
@@ -147,7 +103,6 @@ public class DuelPanel extends JPanel implements ActionListener {
         cardTables = new CardTable[players.length];
         deckDescriptionViewers = new DeckDescriptionViewer[players.length];
         statsViewers = new DeckStatisticsViewer[players.length];
-        editButtons = new JButton[players.length];
         generateButtons = new JButton[players.length];
 
         // deck strength tester
@@ -170,20 +125,6 @@ public class DuelPanel extends JPanel implements ActionListener {
             statsViewers[i].setPlayer(player);
             statsViewers[i].setAlignmentX(Component.LEFT_ALIGNMENT);
             statsViewers[i].setMaximumSize(DeckStatisticsViewer.PREFERRED_SIZE);
-
-            // edit deck button
-            final MagicCubeDefinition cubeDefinition=
-                CubeDefinitions.getCubeDefinition(duel.getConfiguration().getCube());
-
-            editButtons[i] = new JButton(EDIT_BUTTON_TEXT);
-            editButtons[i].setFont(FontsAndBorders.FONT2);
-            editButtons[i].setEnabled(duel.getGamesPlayed() == 0);
-            editButtons[i].addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(final ActionEvent event) {
-                    frame.openDeckEditor(player, cubeDefinition);
-                }
-            });
 
             // generate deck button
             generateButtons[i] = new JButton(GENERATE_BUTTON_TEXT);
@@ -224,7 +165,6 @@ public class DuelPanel extends JPanel implements ActionListener {
             buttonsRightPanel.setLayout(new BoxLayout(buttonsRightPanel, BoxLayout.X_AXIS));
             buttonsRightPanel.setOpaque(false);
             buttonsRightPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-            buttonsRightPanel.add(editButtons[i]);
             buttonsRightPanel.add(Box.createHorizontalStrut(SPACING));
             buttonsRightPanel.add(generateButtons[i]);
             rightPanel.add(buttonsRightPanel);
@@ -269,30 +209,14 @@ public class DuelPanel extends JPanel implements ActionListener {
 
         add(tabbedPane);
 
-        // background - must be added last (i.e., behind everything else)
-        backgroundImage=new ZoneBackgroundLabel();
-        backgroundImage.setBounds(0,0,0,0);
-        add(backgroundImage);
-
         // set sizes by defining gaps between components
         final Container contentPane = this;
 
-        // background's gaps with top left bottom and right are 0
-        // (i.e., it fills the window)
-        springLayout.putConstraint(SpringLayout.WEST, backgroundImage,
-                             0, SpringLayout.WEST, contentPane);
-        springLayout.putConstraint(SpringLayout.NORTH, backgroundImage,
-                             0, SpringLayout.NORTH, contentPane);
-        springLayout.putConstraint(SpringLayout.EAST, backgroundImage,
-                             0, SpringLayout.EAST, contentPane);
-        springLayout.putConstraint(SpringLayout.SOUTH, backgroundImage,
-                             0, SpringLayout.SOUTH, contentPane);
-
         // left side's gap (left top)
         springLayout.putConstraint(SpringLayout.NORTH, leftScrollPane,
-                             SPACING, SpringLayout.NORTH, backgroundImage);
+                             SPACING, SpringLayout.NORTH, contentPane);
         springLayout.putConstraint(SpringLayout.WEST, leftScrollPane,
-                             SPACING, SpringLayout.WEST, backgroundImage);
+                             SPACING, SpringLayout.WEST, contentPane);
 
         // left side's gap with tabbed pane
         springLayout.putConstraint(SpringLayout.WEST, tabbedPane,
@@ -302,9 +226,9 @@ public class DuelPanel extends JPanel implements ActionListener {
         springLayout.putConstraint(SpringLayout.NORTH, tabbedPane,
                              0, SpringLayout.NORTH, leftPanel);
         springLayout.putConstraint(SpringLayout.EAST, tabbedPane,
-                             -SPACING, SpringLayout.EAST, backgroundImage);
+                             -SPACING, SpringLayout.EAST, contentPane);
         springLayout.putConstraint(SpringLayout.SOUTH, tabbedPane,
-                             -SPACING, SpringLayout.SOUTH, backgroundImage);
+                             -SPACING, SpringLayout.SOUTH, contentPane);
 
         // buttons' gap (top left right bottom)
         springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
@@ -312,9 +236,9 @@ public class DuelPanel extends JPanel implements ActionListener {
         springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
                              SPACING, SpringLayout.WEST, tabbedPane);
         springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
-                             -SPACING, SpringLayout.SOUTH, backgroundImage);
+                             -SPACING, SpringLayout.SOUTH, contentPane);
         springLayout.putConstraint(SpringLayout.WEST, buttonsPanel,
-                             SPACING, SpringLayout.WEST, backgroundImage);
+                             SPACING, SpringLayout.WEST, contentPane);
 
     }
 
@@ -351,14 +275,4 @@ public class DuelPanel extends JPanel implements ActionListener {
         strengthViewer.halt();
     }
 
-    public void actionPerformed(final ActionEvent event) {
-        final Object source = event.getSource();
-        if (source == playButton) {
-            frame.nextGame();
-        } else if (source == restartButton) {
-            frame.restartDuel();
-        } else if (source == newDuelButton) {
-            frame.showNewDuelDialog();
-        }
-    }
 }

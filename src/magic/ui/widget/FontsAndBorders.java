@@ -26,6 +26,10 @@ public class FontsAndBorders {
 
     public static final Font FONT6=new Font("dialog",Font.BOLD,10);
 
+    public static final Font FONT_MENU_BUTTON = new Font("SansSerif", Font.PLAIN, 20);
+    public static final Font FONT_MENU_TITLE = new Font("Serif", Font.PLAIN, 32);
+    public static final Font FONT_README = new Font("Monospaced", Font.PLAIN, 14);
+
     public static final Border NO_BORDER = BorderFactory.createEmptyBorder();
 
     public static final Border NO_TARGET_BORDER=BorderFactory.createEmptyBorder(3,3,3,3);

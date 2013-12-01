@@ -9,14 +9,22 @@ Starting Magarena:
   On Windows, double click on Magarena.exe
   On Linux, execute ./Magarena.sh. 
   On Mac, double click the Magarena icon
+  
+Keyboard Controls
+=================  
 
-Magarena supports the following keyboard shortcuts:
-  Space   or Right key : action button
-  Escape  or Left key  : undo button
-  F1      or M key     : show or hide game messages
-  Y key                : yes button
-  N key                : no button
-  S key                : switch between player and AI view
+General Screen Navigation
+--------------------------
+Escape : pauses game and displays options for current screen.
+		 else if menu screen then closes screen.
+F11    : toggle full screen mode.
+F12    : hide UI so you can admire the background art in all its glory!		 
+
+Duel Screen
+-----------
+Right arrow, Space 				: action button
+Left arrow, Backspace, Delete 	: undo button
+s key                			: switch between player and AI view
 
 Selecting the AI to play against:
   The desired AI can be selected in the "New duel" dialog (Arena -> New duel).

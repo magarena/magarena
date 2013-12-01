@@ -36,6 +36,7 @@ public class GeneralConfig {
     private static final String MOUSEWHEEL_POPUP = "mousewheel";
     private static final String LOG_SCROLLBAR = "logScrollbar";
     private static final String LOG_TOPINSERT = "logTopInsert";
+    private static final String FULLSCREEN = "fullScreen";
 
     private static final int DEFAULT_LEFT=0;
     private static final int DEFAULT_TOP=0;
@@ -62,6 +63,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
     private static final boolean DEFAULT_LOG_SCROLLBAR = true;
     private static final boolean DEFAULT_LOG_TOPINSERT = false;
+    private static final boolean DEFAULT_FULLSCREEN = false;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -88,6 +90,7 @@ public class GeneralConfig {
     private boolean mouseWheelPopup = DEFAULT_MOUSEWHEEL_POPUP;
     private boolean isLogScrollbarVisible = DEFAULT_LOG_SCROLLBAR;
     private boolean isLogMessageAddedToTop = DEFAULT_LOG_TOPINSERT;
+    private boolean fullScreen = DEFAULT_FULLSCREEN;
 
     private GeneralConfig() {}
 
@@ -301,6 +304,13 @@ public class GeneralConfig {
         this.mouseWheelPopup = mouseWheelPopup;
     }
 
+    public boolean isFullScreen() {
+        return fullScreen;
+    }
+    public void setFullScreen(final boolean b) {
+        this.fullScreen = b;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -327,6 +337,7 @@ public class GeneralConfig {
         mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + DEFAULT_MOUSEWHEEL_POPUP));
         isLogScrollbarVisible = Boolean.parseBoolean(properties.getProperty(LOG_SCROLLBAR, "" + DEFAULT_LOG_SCROLLBAR));
         isLogMessageAddedToTop = Boolean.parseBoolean(properties.getProperty(LOG_TOPINSERT, "" + DEFAULT_LOG_TOPINSERT));
+        fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + DEFAULT_FULLSCREEN));
     }
 
     public void load() {
@@ -359,6 +370,7 @@ public class GeneralConfig {
         properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
         properties.setProperty(LOG_SCROLLBAR, String.valueOf(isLogScrollbarVisible));
         properties.setProperty(LOG_TOPINSERT, String.valueOf(isLogMessageAddedToTop));
+        properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
     }
 
     public void save() {
@@ -379,4 +391,5 @@ public class GeneralConfig {
     public static GeneralConfig getInstance() {
         return INSTANCE;
     }
+
 }

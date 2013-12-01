@@ -29,7 +29,6 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -38,14 +37,12 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
+@SuppressWarnings("serial")
 public final class GamePanel extends JPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private static final String ACTION_KEY="action";
     private static final String UNDO_KEY="undo";
     private static final String SWITCH_KEY="switch";
-    private static final String LOG_KEY="log";
     private static final String PASS_KEY="pass";
     private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
     private static final Color translucentPanelColor = new Color(255, 255, 255, 200);
@@ -164,9 +161,8 @@ public final class GamePanel extends JPanel {
         getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_RIGHT, InputEvent.SHIFT_MASK),PASS_KEY);
         getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, InputEvent.SHIFT_MASK),PASS_KEY);
         getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_LEFT, 0),UNDO_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),UNDO_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0),LOG_KEY);
-        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_M, 0),LOG_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_BACK_SPACE, 0),UNDO_KEY);
+        getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_DELETE, 0),UNDO_KEY);
         getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_S, 0),SWITCH_KEY);
     }
 
@@ -320,7 +316,8 @@ public final class GamePanel extends JPanel {
     }
 
     public void close() {
-        frame.showDuel();
+//        frame.closeActiveScreen(false); //.showDuel();
+        frame.closeDuelScreen();
     }
 
     public void resizeComponents() {
@@ -385,8 +382,8 @@ public final class GamePanel extends JPanel {
         int spacing = theme.getValue(Theme.VALUE_SPACING);
 
         String layoutConstraints =
-                "insets " + spacing + "," +             // margins determined by theme.
-                "gap 0 " + spacing + "," +              // vertical spacing determined by theme.
+                "insets " + 6 + "," +             // margins determined by theme.
+                "gap 0 " + 10 + "," +              // vertical spacing determined by theme.
                 "flowy" +                               // vertical layout.
                 "";                                     // add "debug" to show layout outlines.
         String columnConstraints = "[100%, fill]";      // each component fills width of LHS.
@@ -402,5 +399,77 @@ public final class GamePanel extends JPanel {
         logStackViewer.setLogStackLayout();
 
     }
+
+//    private void addStatusPanel() {
+//        final TexturedPanel p = new TexturedPanel();
+//        p.setMinimumSize(new Dimension(p.getPreferredSize().width, 40));
+//        p.setBackground(new Color(0, 0, 0, 220));
+//        p.removeAll();
+//        p.setLayout(new MigLayout("insets 0 0 0 10, gap 6, flowx, aligny 50%", "[][grow, fill][]"));
+//        p.add(getTitlePanel(
+//                "Game " + getGame().getDuel().getGameNr() +
+//                " of " + getGame().getDuel().getConfiguration().getNrOfGames()));
+//        p.add(getOptionsIconButton());
+//        p.add(getHelpIconButton());
+//        lhsPanel.add(p);
+//    }
+//
+//    private final static ImageIcon helpIcon = new ImageIcon(IconImages.HELP_ICON);
+//    private final static ImageIcon optionsIcon = new ImageIcon(IconImages.OPTIONS_ICON);
+//
+//    private JButton getOptionsIconButton() {
+//        JButton btn = new JButton(optionsIcon);
+//        btn.setHorizontalAlignment(SwingConstants.RIGHT);
+//        btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+//        btn.setToolTipText("Options [ESC]");
+//        setButtonTransparent(btn);
+//        btn.addActionListener(new AbstractAction() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                //provider.showOptionsMenuOverlay();
+//            }
+//        });
+//        return btn;
+//    }
+//
+//    private JButton getHelpIconButton() {
+//        JButton btn = new JButton(helpIcon);
+//        btn.setHorizontalAlignment(SwingConstants.RIGHT);
+//        btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+//        btn.setToolTipText("Help [F1]");
+//        setButtonTransparent(btn);
+//        btn.addActionListener(new AbstractAction() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                new MagicHelpOverlay(frame);
+//            }
+//        });
+//        return btn;
+//    }
+//
+//    private void setButtonTransparent(final JButton btn) {
+//        btn.setOpaque(false);
+//        btn.setContentAreaFilled(false);
+//        btn.setBorderPainted(false);
+//        btn.setBorder(null);
+//    }
+//
+//    private JPanel getTitlePanel(final String caption) {
+//        JPanel titlePanel = new JPanel(new MigLayout("insets 0 8 0 0 , gap 0, flowy"));
+//        titlePanel.setOpaque(false);
+//        JLabel version = new JLabel(MagicMain.SOFTWARE_TITLE);
+//        version.setFont(FontsAndBorders.FONT0);
+//        version.setForeground(Color.WHITE);
+//        titlePanel.add(version);
+//        titlePanel.add(getScreenCaptionLabel(caption));
+//        return titlePanel;
+//    }
+//
+//    private JLabel getScreenCaptionLabel(final String caption) {
+//        final JLabel lbl = new JLabel(caption);
+//        lbl.setFont(FontsAndBorders.FONT_MENU_BUTTON);
+//        lbl.setForeground(Color.WHITE);
+//        return lbl;
+//    }
 
 }

@@ -23,7 +23,7 @@ public class PhaseStepViewer extends JPanel {
     }
 
     private void setMyLayout() {
-        setLayout(new MigLayout("insets 3 5 0 5, gap 0"));
+        setLayout(new MigLayout("insets 1 5 0 5, gap 0"));
         setPhaseStepIndicator("UN", "Beginning Phase : Untap Step");
         setPhaseStepIndicator("UP", "Beginning Phase : Upkeep Step");
         setPhaseStepIndicator("DR", "Beginning Phase : Draw Step");
@@ -57,7 +57,7 @@ public class PhaseStepViewer extends JPanel {
         JLabel lbl = new JLabel(caption);
         lbl.setOpaque(false);
         lbl.setToolTipText(tooltip);
-        lbl.setFont(FontsAndBorders.FONT6);
+        lbl.setFont(FontsAndBorders.FONT1);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setForeground(Color.GRAY);
         add(lbl, "w 10:100%");

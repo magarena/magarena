@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.MagicMain;
 import magic.data.IconImages;
 import magic.data.URLUtils;
 
@@ -9,6 +10,7 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -20,7 +22,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-class AboutDialog extends JDialog implements ActionListener {
+public class AboutDialog extends JDialog implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -68,7 +70,7 @@ class AboutDialog extends JDialog implements ActionListener {
         descriptionLabel.setFont(FONT_BOLD12);
         aboutPanel.add(descriptionLabel);
 
-        final JLabel versionLabel = new JLabel("Version: " + VersionPanel.getVersion());
+        final JLabel versionLabel = new JLabel("Version: " + MagicMain.VERSION);
         versionLabel.setBounds(250, 105, 320, 25);
         versionLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(versionLabel);

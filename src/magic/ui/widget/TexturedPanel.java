@@ -20,7 +20,7 @@ public class TexturedPanel extends JPanel {
     private boolean isTranslucent = false;
 
     public TexturedPanel() {
-        setOpaque(false);
+        setOpaque(true);
         start=false;
     }
 
@@ -33,11 +33,16 @@ public class TexturedPanel extends JPanel {
         return start;
     }
 
+    @Override
     public void paintComponent(final Graphics g) {
-        if (isTranslucent) {
-            paintTranslucentBackground(g);
+        if (isOpaque() || isTranslucent) {
+            if (isTranslucent) {
+                paintTranslucentBackground(g);
+            } else {
+                paintTexturedBackground(g);
+            }
         } else {
-            paintTexturedBackground(g);
+            super.paintComponent(g);
         }
     }
 
@@ -77,6 +82,10 @@ public class TexturedPanel extends JPanel {
         if (bg.getAlpha() < 255) {
             isTranslucent = true;
             setOpaque(false);
+        } else {
+            isTranslucent = false;
+            setOpaque(true);
         }
     }
+
 }

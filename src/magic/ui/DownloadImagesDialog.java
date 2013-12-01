@@ -59,7 +59,6 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 
         final SpringLayout springLayout = new SpringLayout();
         this.setLayout(springLayout);
-        this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
@@ -288,6 +287,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.SOUTH, cancelButton);
 
         this.pack();
+        this.setLocationRelativeTo(frame);
         this.setVisible(true);
     }
 
