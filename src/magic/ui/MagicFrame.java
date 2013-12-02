@@ -200,10 +200,6 @@ public class MagicFrame extends JFrame {
         showDuel();
     }
 
-    public void resetDuel() {
-        newDuel(DuelConfig.getInstance());
-    }
-
     public void loadDuel() {
         final File duelFile=MagicDuel.getDuelFile();
         if (duelFile.exists()) {
