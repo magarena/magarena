@@ -21,10 +21,12 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
     private static Color MENUPANEL_COLOR = new Color(0, 0, 0, 230);
 
     private final MagicFrame frame;
+    private final DeckEditorScreen screen;
 
-    public DeckEditorScreenOptions(final MagicFrame frame0) {
+    public DeckEditorScreenOptions(final MagicFrame frame0, final DeckEditorScreen screen0) {
 
         this.frame = frame0;
+        this.screen = screen0;
 
         setBackground(BACKGROUND_COLOR);
         setLayout(new MigLayout("insets 0, gap 10, flowx, center, center"));
@@ -60,7 +62,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
         menu.addMenuItem("New empty deck", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frame.newDeck();
+                screen.createNewEmptyDeck();
                 hideOverlay();
             }
         });
@@ -74,7 +76,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
             @Override
             public void actionPerformed(ActionEvent e) {
                 hideAllMenuPanels();
-                frame.loadDeck();
+                screen.loadDeck();
                 hideOverlay();
             }
         });
@@ -82,7 +84,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
             @Override
             public void actionPerformed(ActionEvent e) {
                 hideAllMenuPanels();
-                frame.saveDeck();
+                screen.saveDeck();
                 hideOverlay();
             }
         });

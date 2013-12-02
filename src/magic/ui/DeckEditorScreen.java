@@ -76,7 +76,7 @@ public class DeckEditorScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-       new DeckEditorScreenOptions(frame);
+       new DeckEditorScreenOptions(frame, this);
     }
 
     public void createNewEmptyDeck() {

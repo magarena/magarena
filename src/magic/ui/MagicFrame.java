@@ -229,22 +229,6 @@ public class MagicFrame extends JFrame {
         }
     }
 
-    public void newDeck() {
-        ((DeckEditorScreen)screens.peek()).createNewEmptyDeck();
-    }
-
-    public void loadDeck() {
-        ((DeckEditorScreen)screens.peek()).loadDeck();
-    }
-
-    public void saveDeck() {
-        ((DeckEditorScreen)screens.peek()).saveDeck();
-    }
-
-    public void swapDecks() {
-        ((DuelDecksScreen)screens.peek()).swapDecks();
-    }
-
     public boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
         final String brokenRulesText =
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
