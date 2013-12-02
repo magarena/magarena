@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 import net.miginfocom.swing.MigLayout;
+import magic.ui.widget.MenuButton;
 import magic.ui.widget.MenuPanel;
 import magic.ui.widget.TexturedPanel;
 
@@ -48,6 +49,14 @@ public class CardExplorerScreenOptions extends TexturedPanel implements IMenuOve
 
     private MenuPanel getGeneralMenu() {
         final MenuPanel menuPanel = new GeneralMenuPanel(frame, this);
+        menuPanel.addBlankItem();
+        menuPanel.addMenuItem(new MenuButton("Close Menu", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                hideOverlay();
+            }
+        }));
+        menuPanel.refreshLayout();
         menuPanel.setBackground(MENUPANEL_COLOR);
         return menuPanel;
     }
