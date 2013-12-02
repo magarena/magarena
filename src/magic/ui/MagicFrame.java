@@ -211,13 +211,6 @@ public class MagicFrame extends JFrame {
         }
     }
 
-    public void saveDuel() {
-        if (duel!=null) {
-            duel.save(MagicDuel.getDuelFile());
-            JOptionPane.showMessageDialog(this, "Duel saved. Use Load Duel option in Main Menu to restore.", "Save Duel", JOptionPane.INFORMATION_MESSAGE);
-        }
-    }
-
     public void restartDuel() {
         if (duel!=null) {
             duel.restart();

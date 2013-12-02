@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import magic.data.CubeDefinitions;
@@ -68,7 +69,7 @@ public class DuelDecksScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new DuelDecksScreenOptions(frame);
+        new DuelDecksScreenOptions(frame, this);
     }
 
     /* (non-Javadoc)
@@ -158,6 +159,11 @@ public class DuelDecksScreen
 
     public int getGamesPlayed() {
         return screenContent.getDuel().getGamesPlayed();
+    }
+
+    public void saveDuel() {
+        screenContent.getDuel().save(MagicDuel.getDuelFile());
+        JOptionPane.showMessageDialog(this, "Duel saved. Use Load Duel option in Main Menu to restore.", "Save Duel", JOptionPane.INFORMATION_MESSAGE);
     }
 
 }

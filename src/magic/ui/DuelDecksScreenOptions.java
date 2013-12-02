@@ -21,10 +21,12 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
     private static Color MENUPANEL_COLOR = new Color(0, 0, 0, 230);
 
     private final MagicFrame frame;
+    private final DuelDecksScreen screen;
 
-    public DuelDecksScreenOptions(final MagicFrame frame0) {
+    public DuelDecksScreenOptions(final MagicFrame frame0, final DuelDecksScreen screen0) {
 
         this.frame = frame0;
+        this.screen = screen0;
 
         setBackground(BACKGROUND_COLOR);
         setLayout(new MigLayout("insets 0, gap 10, flowx, center, center"));
@@ -75,7 +77,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
         menu.addMenuItem("Save Duel", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frame.saveDuel();
+                screen.saveDuel();
                 hideOverlay();
             }
         });
