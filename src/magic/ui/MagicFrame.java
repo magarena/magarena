@@ -245,14 +245,6 @@ public class MagicFrame extends JFrame {
         return true;
     }
 
-    public void resetGame() {
-        ((DuelScreen)screens.peek()).resetGame();
-    }
-
-    public void concedeGame() {
-        ((DuelScreen)screens.peek()).concedeGame();
-    }
-
     public void nextGame() {
         duel.updateDifficulty();
         final MagicPlayerDefinition[] players=duel.getPlayers();
@@ -335,11 +327,6 @@ public class MagicFrame extends JFrame {
     public void quitToDesktop(final boolean confirmQuit) {
         this.confirmQuitToDesktop = confirmQuit;
         processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
-    }
-
-    public void setTextImageMode(final boolean isTextMode) {
-        GeneralConfig.getInstance().setTextView(isTextMode);
-        updateGameView();
     }
 
     public void updateGameView() {

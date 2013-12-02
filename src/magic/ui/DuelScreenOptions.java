@@ -22,10 +22,12 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
     private static Color MENUPANEL_COLOR = new Color(0, 0, 0, 230);
 
     private final MagicFrame frame;
+    private final DuelScreen screen;
 
-    public DuelScreenOptions(final MagicFrame frame0) {
+    public DuelScreenOptions(final MagicFrame frame0, final DuelScreen screen0) {
 
         this.frame = frame0;
+        this.screen = screen0;
 
         setBackground(BACKGROUND_COLOR);
         setLayout(new MigLayout("insets 0, gap 10, flowx, center, center"));
@@ -61,14 +63,14 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
         menu.addMenuItem("Concede game", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frame.concedeGame();
+                screen.concedeGame();
                 setVisible(false);
             }
         });
         menu.addMenuItem("Restart game", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frame.resetGame();
+                screen.resetGame();
                 setVisible(false);
             }
         });
@@ -76,7 +78,8 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
         menu.addMenuItem(isTextMode ? "Image mode" : "Text mode", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frame.setTextImageMode(!isTextMode);
+                GeneralConfig.getInstance().setTextView(!isTextMode);
+                screen.updateView();
                 setVisible(false);
             }
         });

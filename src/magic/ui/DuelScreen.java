@@ -32,7 +32,7 @@ public class DuelScreen extends MagScreen implements IMagScreenOptionsMenu {
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new DuelScreenOptions(frame);
+        new DuelScreenOptions(frame, this);
     }
 
     public void updateView() {
