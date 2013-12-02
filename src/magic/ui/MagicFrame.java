@@ -123,7 +123,6 @@ public class MagicFrame extends JFrame {
         showMagScreen(screen);
         screens.push(screen);
         screen.requestFocus();
-        System.out.println("screens stack size = " + screens.size() + ", [" + screens.peek().getClass().getName() + "]");
     }
     private void showMagScreen(final MagScreen screen) {
         contentPanel.removeAll();
@@ -142,7 +141,6 @@ public class MagicFrame extends JFrame {
                 screens.push(activeScreen);
             }
         }
-        System.out.println("screens stack size = " + screens.size() + ", [" + screens.peek().getClass().getName() + "]");
     }
 
     private void addWindowListeners() {

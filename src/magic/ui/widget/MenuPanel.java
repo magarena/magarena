@@ -2,7 +2,6 @@ package magic.ui.widget;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,12 +36,6 @@ public class MenuPanel extends TexturedPanel {
 
     public void addMenuItem(final MenuButton button) {
         menuItems.add(button);
-        button.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("button clicked!");
-            }
-        });
     }
     public void addMenuItem(final String caption, final AbstractAction action, final String tooltip) {
         addMenuItem(new MenuButton(caption, action, tooltip));
