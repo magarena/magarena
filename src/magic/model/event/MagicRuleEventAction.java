@@ -268,6 +268,27 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DiscardChosen(
+        "(?<choice>[^\\.]*) discards (?<amount2>[a-z]+) card(s)?.", 
+        MagicTargetHint.Negative, 
+        MagicTiming.Draw, 
+        "Discard"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
+                        }
+                    });
+                }
+            };
+        }
+    },
     GainLife(
         "(pn )?gain(s)? (?<amount>[0-9]+) life.", 
         MagicTiming.Removal, 
