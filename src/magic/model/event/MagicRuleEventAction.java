@@ -269,7 +269,7 @@ public enum MagicRuleEventAction {
         }
     },
     DiscardChosen(
-        "(?<choice>[^\\.]*) discards (?<amount2>[a-z]+) card(s)?(?<random> at random)?.", 
+        "(?<choice>[^\\.]*) discards (?<amount>[a-z]+) card(s)?(?<random> at random)?.", 
         MagicTargetHint.Negative, 
         MagicTiming.Draw, 
         "Discard"
@@ -277,7 +277,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
             final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
-            final boolean isRandom = matcher.group("random").isEmpty() == false;
+            final boolean isRandom = matcher.group("random") != null;
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
