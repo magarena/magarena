@@ -34,7 +34,7 @@ public class MagStatusBar extends TexturedPanel {
 
     private void layoutMagStatusBar() {
         removeAll();
-        setLayout(new MigLayout("insets 0 0 0 10, gap 6, flowx, aligny 50%", "[][grow, fill][]"));
+        setLayout(new MigLayout("insets 0 0 0 6, gap 6, flowx, aligny 50%", "[grow, fill][][]"));
         if (magScreen != null) {
             final IMagStatusBar screen = (IMagStatusBar)magScreen;
             add(new MagicScreenCaption(screen.getScreenCaption()));
