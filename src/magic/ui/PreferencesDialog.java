@@ -17,12 +17,14 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PreferencesDialog extends JDialog implements ActionListener {
 
     private static final long serialVersionUID = 1L;
+    private final static GeneralConfig config = GeneralConfig.getInstance();
 
     private final MagicFrame frame;
     private JComboBox<String> themeComboBox;
@@ -40,6 +42,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private SliderPanel messageDelaySlider;
     private JButton okButton;
     private JButton cancelButton;
+    private JCheckBox previewCardOnSelectCheckBox;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -52,26 +55,45 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
         this.frame=frame;
 
-        JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("General", getGeneralSettingsPanel());
-        tabbedPane.addTab("Theme", getThemeSettingsPanel());
-
         getContentPane().setLayout(new BorderLayout());
-        getContentPane().add(tabbedPane, BorderLayout.CENTER);
+        getContentPane().add(getTabbedSettingsPane(), BorderLayout.CENTER);
         getContentPane().add(getActionButtonsPanel(), BorderLayout.SOUTH);
 
         setVisible(true);
     }
 
-    /**
-     * @return
-     */
-    private JPanel getThemeSettingsPanel() {
+    private JTabbedPane getTabbedSettingsPane() {
+        final JTabbedPane tabbedPane = new JTabbedPane();
+        tabbedPane.addTab("General", getGeneralSettingsPanel());
+        tabbedPane.addTab("Theme", getThemeSettingsPanel());
+        tabbedPane.addTab("Deck Editor", getDeckEditorSettingsPanel());
+        return tabbedPane;
+    }
+
+    private Component getDeckEditorSettingsPanel() {
 
         final JPanel panel = new JPanel();
         panel.setLayout(null);
 
-        final GeneralConfig config=GeneralConfig.getInstance();
+        int Y=10;
+        final int X3=25;
+        final int H3=20;
+        final int W3=350;
+
+        previewCardOnSelectCheckBox =
+                new JCheckBox("Preview card on select (instead of mouse-over)",
+                config.isPreviewCardOnSelect());
+        previewCardOnSelectCheckBox.setBounds(X3,Y,W3,H3);
+        previewCardOnSelectCheckBox.setFocusable(false);
+        panel.add(previewCardOnSelectCheckBox);
+
+        return panel;
+    }
+
+    private JPanel getThemeSettingsPanel() {
+
+        final JPanel panel = new JPanel();
+        panel.setLayout(null);
 
         int Y=10;
         final int X=28;
@@ -117,32 +139,10 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
     }
 
-    private JPanel getActionButtonsPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout("insets 5, gapx 5, flowx"));
-        // Cancel button
-        cancelButton=new JButton("Cancel");
-        cancelButton.setFocusable(false);
-        cancelButton.setIcon(IconImages.CANCEL);
-        cancelButton.addActionListener(this);
-        buttonPanel.add(cancelButton, "w 100!, alignx right, pushx");
-        // Save button
-        okButton=new JButton("Save");
-        okButton.setFocusable(false);
-        okButton.setIcon(IconImages.OK);
-        okButton.addActionListener(this);
-        buttonPanel.add(okButton, "w 100!");
-        return buttonPanel;
-    }
-
-    /**
-     * @return
-     */
     private JPanel getGeneralSettingsPanel() {
 
         final JPanel mainPanel=new JPanel();
         mainPanel.setLayout(null);
-
-        final GeneralConfig config=GeneralConfig.getInstance();
 
         int Y=10;
         final int X3=25;
@@ -243,6 +243,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
             config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
             config.setPopupDelay(popupDelaySlider.getValue());
             config.setMessageDelay(messageDelaySlider.getValue());
+            config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
             config.save();
             ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
             frame.repaint();
@@ -250,6 +251,23 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         } else if (source==cancelButton) {
             dispose();
         }
+    }
+
+    private JPanel getActionButtonsPanel() {
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 5, gapx 5, flowx"));
+        // Cancel button
+        cancelButton=new JButton("Cancel");
+        cancelButton.setFocusable(false);
+        cancelButton.setIcon(IconImages.CANCEL);
+        cancelButton.addActionListener(this);
+        buttonPanel.add(cancelButton, "w 100!, alignx right, pushx");
+        // Save button
+        okButton=new JButton("Save");
+        okButton.setFocusable(false);
+        okButton.setIcon(IconImages.OK);
+        okButton.addActionListener(this);
+        buttonPanel.add(okButton, "w 100!");
+        return buttonPanel;
     }
 
 }

@@ -37,6 +37,7 @@ public class GeneralConfig {
     private static final String LOG_SCROLLBAR = "logScrollbar";
     private static final String LOG_TOPINSERT = "logTopInsert";
     private static final String FULLSCREEN = "fullScreen";
+    private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
 
     private static final int DEFAULT_LEFT=0;
     private static final int DEFAULT_TOP=0;
@@ -64,6 +65,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_LOG_SCROLLBAR = true;
     private static final boolean DEFAULT_LOG_TOPINSERT = false;
     private static final boolean DEFAULT_FULLSCREEN = false;
+    private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = false;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -91,6 +93,7 @@ public class GeneralConfig {
     private boolean isLogScrollbarVisible = DEFAULT_LOG_SCROLLBAR;
     private boolean isLogMessageAddedToTop = DEFAULT_LOG_TOPINSERT;
     private boolean fullScreen = DEFAULT_FULLSCREEN;
+    private boolean previewCardOnSelect = DEFAULT_PREVIEW_CARD_ON_SELECT;
 
     private GeneralConfig() {}
 
@@ -311,6 +314,14 @@ public class GeneralConfig {
         this.fullScreen = b;
     }
 
+    public boolean isPreviewCardOnSelect() {
+        return previewCardOnSelect;
+    }
+    public void setPreviewCardOnSelect(final boolean b) {
+        this.previewCardOnSelect = b;
+    }
+
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -338,6 +349,7 @@ public class GeneralConfig {
         isLogScrollbarVisible = Boolean.parseBoolean(properties.getProperty(LOG_SCROLLBAR, "" + DEFAULT_LOG_SCROLLBAR));
         isLogMessageAddedToTop = Boolean.parseBoolean(properties.getProperty(LOG_TOPINSERT, "" + DEFAULT_LOG_TOPINSERT));
         fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + DEFAULT_FULLSCREEN));
+        previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
     }
 
     public void load() {
@@ -371,6 +383,7 @@ public class GeneralConfig {
         properties.setProperty(LOG_SCROLLBAR, String.valueOf(isLogScrollbarVisible));
         properties.setProperty(LOG_TOPINSERT, String.valueOf(isLogMessageAddedToTop));
         properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
+        properties.setProperty(PREVIEW_CARD_ON_SELECT, String.valueOf(previewCardOnSelect));
     }
 
     public void save() {

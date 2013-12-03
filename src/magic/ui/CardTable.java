@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.ui.viewer.CardViewer;
@@ -19,6 +20,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -55,7 +57,9 @@ public class CardTable extends JPanel implements ListSelectionListener {
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
         table.setRowHeight(20);
         table.setGridColor(new Color(194, 197, 203));
-        table.addMouseMotionListener(new RowMouseOverListener());
+        if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
+            table.addMouseMotionListener(new RowMouseOverListener());
+        }
 
         // set column widths
         final TableColumnModel model = table.getColumnModel();
