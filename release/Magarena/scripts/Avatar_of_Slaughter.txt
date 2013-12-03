@@ -7,5 +7,5 @@ type=Creature
 subtype=Avatar
 cost={6}{R}{R}
 pt=8/8
-ability=lord All creatures have double strike.;lord All creatures have attacks each turn if able.
+ability=lord all creatures have double strike;lord all creatures have attacks each turn if able
 timing=main
