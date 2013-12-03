@@ -265,6 +265,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             deckDefs = getPlayer().getDeck();
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
+            statsViewer.setPlayer(getPlayer());
         }
     }
 
@@ -277,7 +278,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             }
 
             updateDeck();
-            statsViewer.setPlayer(getPlayer());
+
         } else {
             // display error
             JOptionPane.showMessageDialog(frame, "Select a valid card in the deck to remove it.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -293,7 +294,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             }
 
             updateDeck();
-            statsViewer.setPlayer(getPlayer());
+
         } else {
             // display error
             JOptionPane.showMessageDialog(frame, "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -343,7 +344,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
                             }
 
                             updateDeck();
-                            statsViewer.setPlayer(getPlayer());
+
                         }
                     }
                 }
