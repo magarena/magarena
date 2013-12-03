@@ -5,6 +5,7 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.SliderPanel;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JComboBox;
 import javax.swing.JButton;
@@ -13,9 +14,8 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
 import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,21 +24,21 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private static final long serialVersionUID = 1L;
 
     private final MagicFrame frame;
-    private final JComboBox<String> themeComboBox;
-    private final JComboBox<String> avatarComboBox;
-    private final JComboBox<String> highlightComboBox;
-    private final JCheckBox confirmExitCheckBox;
-    private final JCheckBox soundCheckBox;
-    private final JCheckBox touchscreenCheckBox;
-    private final JCheckBox highQualityCheckBox;
-    private final JCheckBox skipSingleCheckBox;
-    private final JCheckBox alwaysPassCheckBox;
-    private final JCheckBox smartTargetCheckBox;
-    private final JCheckBox mouseWheelPopupCheckBox;
-    private final SliderPanel popupDelaySlider;
-    private final SliderPanel messageDelaySlider;
-    private final JButton okButton;
-    private final JButton cancelButton;
+    private JComboBox<String> themeComboBox;
+    private JComboBox<String> avatarComboBox;
+    private JComboBox<String> highlightComboBox;
+    private JCheckBox confirmExitCheckBox;
+    private JCheckBox soundCheckBox;
+    private JCheckBox touchscreenCheckBox;
+    private JCheckBox highQualityCheckBox;
+    private JCheckBox skipSingleCheckBox;
+    private JCheckBox alwaysPassCheckBox;
+    private JCheckBox smartTargetCheckBox;
+    private JCheckBox mouseWheelPopupCheckBox;
+    private SliderPanel popupDelaySlider;
+    private SliderPanel messageDelaySlider;
+    private JButton okButton;
+    private JButton cancelButton;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -51,26 +51,44 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
         this.frame=frame;
 
-        final JPanel buttonPanel=new JPanel();
-        buttonPanel.setPreferredSize(new Dimension(0,45));
-        buttonPanel.setLayout(new FlowLayout(FlowLayout.RIGHT,15,0));
-        okButton=new JButton("OK");
-        okButton.setFocusable(false);
-        okButton.setIcon(IconImages.OK);
-        okButton.addActionListener(this);
-        buttonPanel.add(okButton);
+        JTabbedPane tabbedPane = new JTabbedPane();
+        tabbedPane.addTab("General", null, getGeneralSettingsPanel(), "General Settings");
+
+        getContentPane().setLayout(new BorderLayout());
+        getContentPane().add(tabbedPane, BorderLayout.CENTER);
+        getContentPane().add(getActionButtonsPanel(), BorderLayout.SOUTH);
+
+        setVisible(true);
+    }
+
+    private JPanel getActionButtonsPanel() {
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 5, gapx 5, flowx"));
+        // Cancel button
         cancelButton=new JButton("Cancel");
         cancelButton.setFocusable(false);
         cancelButton.setIcon(IconImages.CANCEL);
         cancelButton.addActionListener(this);
-        buttonPanel.add(cancelButton);
+        buttonPanel.add(cancelButton, "w 100!, alignx right, pushx");
+        // Save button
+        okButton=new JButton("Save");
+        okButton.setFocusable(false);
+        okButton.setIcon(IconImages.OK);
+        okButton.addActionListener(this);
+        buttonPanel.add(okButton, "w 100!");
+        return buttonPanel;
+    }
+
+    /**
+     * @return
+     */
+    private JPanel getGeneralSettingsPanel() {
 
         final JPanel mainPanel=new JPanel();
         mainPanel.setLayout(null);
 
         final GeneralConfig config=GeneralConfig.getInstance();
 
-        int Y=20;
+        int Y=10;
         final int X=28;
         final int W=70;
         final int H=25;
@@ -178,7 +196,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         popupDelaySlider.setBounds(50,Y,280,50);
         mainPanel.add(popupDelaySlider);
 
-        Y += 50;
+        Y += 40;
         messageDelaySlider = new SliderPanel("Message",
                 IconImages.DELAY,
                 0,
@@ -188,11 +206,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         messageDelaySlider.setBounds(50,Y,280,50);
         mainPanel.add(messageDelaySlider);
 
-        getContentPane().setLayout(new BorderLayout());
-        getContentPane().add(mainPanel,BorderLayout.CENTER);
-        getContentPane().add(buttonPanel,BorderLayout.SOUTH);
-
-        setVisible(true);
+        return mainPanel;
     }
 
     @Override
@@ -221,4 +235,5 @@ public class PreferencesDialog extends JDialog implements ActionListener {
             dispose();
         }
     }
+
 }
