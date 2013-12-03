@@ -149,7 +149,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             || cost.contains("{-1/-1}") 
             || cost.contains("{C}") 
             || cost.contains("{C3}")
-            || cost.contains("{O}")
+            || cost.contains("{Once}")
             || cost.contains("{R}")
         ) == false;
 
@@ -224,7 +224,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1));
             } else if (cost.equals("{C3}")) {
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3));
-            } else if (cost.equals("{O}")) {
+            } else if (cost.equals("{Once}")) {
                 events.add(new MagicPlayAbilityEvent(source));
             } else if (cost.equals("{Sorcery}")) {
                 events.add(new MagicSorceryConditionEvent(source));
