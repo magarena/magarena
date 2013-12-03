@@ -50,7 +50,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
         add(mainPanel,BorderLayout.CENTER);
 
-        topPanel=new JPanel(new FlowLayout(FlowLayout.LEFT,7,5));
+        topPanel=new JPanel(new FlowLayout(FlowLayout.LEFT,10,5));
         topPanel.setOpaque(false);
         mainPanel.add(topPanel,BorderLayout.NORTH);
 
@@ -98,14 +98,12 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         topPanel.removeAll();
         for (int index=0;index<CardStatistics.NR_OF_TYPES;index++) {
             final int total=statistics.totalTypes[index];
-            if (total>0) {
-                final JLabel label=new JLabel(Integer.toString(total));
-                label.setForeground(textColor);
-                label.setIcon(CardStatistics.TYPE_ICONS.get(index));
-                label.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
-                label.setIconTextGap(4);
-                topPanel.add(label);
-            }
+            final JLabel label = new JLabel(Integer.toString(total));
+            label.setForeground(textColor);
+            label.setIcon(CardStatistics.TYPE_ICONS.get(index));
+            label.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
+            label.setIconTextGap(4);
+            topPanel.add(label);
         }
         topPanel.revalidate();
 
