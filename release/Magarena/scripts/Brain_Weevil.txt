@@ -7,6 +7,6 @@ type=Creature
 subtype=Insect
 cost={3}{B}
 pt=1/1
-ability=intimidate
+ability=intimidate;\
+        pay {S}, {Sorcery}: Target player discards two cards.
 timing=main
-requires_groovy_code
