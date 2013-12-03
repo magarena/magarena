@@ -15,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -44,7 +45,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
         super(frame,true);
         this.setTitle("Preferences");
-        this.setSize(400,560);
+        this.setSize(400,500);
         this.setLocationRelativeTo(frame);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -52,13 +53,68 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         this.frame=frame;
 
         JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("General", null, getGeneralSettingsPanel(), "General Settings");
+        tabbedPane.addTab("General", getGeneralSettingsPanel());
+        tabbedPane.addTab("Theme", getThemeSettingsPanel());
 
         getContentPane().setLayout(new BorderLayout());
         getContentPane().add(tabbedPane, BorderLayout.CENTER);
         getContentPane().add(getActionButtonsPanel(), BorderLayout.SOUTH);
 
         setVisible(true);
+    }
+
+    /**
+     * @return
+     */
+    private JPanel getThemeSettingsPanel() {
+
+        final JPanel panel = new JPanel();
+        panel.setLayout(null);
+
+        final GeneralConfig config=GeneralConfig.getInstance();
+
+        int Y=10;
+        final int X=28;
+        final int W=70;
+        final int H=25;
+        final int X2=100;
+        final int W2=255;
+
+        final JLabel themeLabel=new JLabel("Theme");
+        themeLabel.setBounds(X,Y,W,H);
+        themeLabel.setIcon(IconImages.PICTURE);
+        panel.add(themeLabel);
+        themeComboBox=new JComboBox<String>(ThemeFactory.getInstance().getThemeNames());
+        themeComboBox.setFocusable(false);
+        themeComboBox.setBounds(X2,Y,W2,H);
+        themeComboBox.setSelectedItem(config.getTheme());
+        panel.add(themeComboBox);
+
+        Y += 35;
+        final JLabel avatarLabel=new JLabel("Avatar");
+        avatarLabel.setBounds(X,Y,W,H);
+        avatarLabel.setIcon(IconImages.AVATAR);
+        panel.add(avatarLabel);
+        avatarComboBox=new JComboBox<String>(AvatarImages.getInstance().getNames());
+        avatarComboBox.setFocusable(false);
+        avatarComboBox.setBounds(X2,Y,W2,H);
+        avatarComboBox.setSelectedItem(config.getAvatar());
+        panel.add(avatarComboBox);
+
+        Y += 35;
+        final JLabel highlightLabel = new JLabel("Highlight");
+        highlightLabel.setBounds(X,Y,W,H);
+        highlightLabel.setIcon(IconImages.PICTURE);
+        panel.add(highlightLabel);
+        final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
+        highlightComboBox = new JComboBox<String>(Highlightchoices);
+        highlightComboBox.setFocusable(false);
+        highlightComboBox.setBounds(X2,Y,W2,H);
+        highlightComboBox.setSelectedItem(config.getHighlight());
+        panel.add(highlightComboBox);
+
+        return panel;
+
     }
 
     private JPanel getActionButtonsPanel() {
@@ -89,50 +145,10 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         final GeneralConfig config=GeneralConfig.getInstance();
 
         int Y=10;
-        final int X=28;
-        final int W=70;
-        final int H=25;
-        final int X2=100;
-        final int W2=255;
         final int X3=25;
         final int H3=20;
         final int W3=350;
 
-        final JLabel themeLabel=new JLabel("Theme");
-        themeLabel.setBounds(X,Y,W,H);
-        themeLabel.setIcon(IconImages.PICTURE);
-        mainPanel.add(themeLabel);
-        themeComboBox=new JComboBox<String>(ThemeFactory.getInstance().getThemeNames());
-        themeComboBox.setFocusable(false);
-        themeComboBox.setBounds(X2,Y,W2,H);
-        themeComboBox.setSelectedItem(config.getTheme());
-        mainPanel.add(themeComboBox);
-
-
-        Y += 35;
-        final JLabel avatarLabel=new JLabel("Avatar");
-        avatarLabel.setBounds(X,Y,W,H);
-        avatarLabel.setIcon(IconImages.AVATAR);
-        mainPanel.add(avatarLabel);
-        avatarComboBox=new JComboBox<String>(AvatarImages.getInstance().getNames());
-        avatarComboBox.setFocusable(false);
-        avatarComboBox.setBounds(X2,Y,W2,H);
-        avatarComboBox.setSelectedItem(config.getAvatar());
-        mainPanel.add(avatarComboBox);
-
-        Y += 35;
-        final JLabel highlightLabel = new JLabel("Highlight");
-        highlightLabel.setBounds(X,Y,W,H);
-        highlightLabel.setIcon(IconImages.PICTURE);
-        mainPanel.add(highlightLabel);
-        final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
-        highlightComboBox = new JComboBox<String>(Highlightchoices);
-        highlightComboBox.setFocusable(false);
-        highlightComboBox.setBounds(X2,Y,W2,H);
-        highlightComboBox.setSelectedItem(config.getHighlight());
-        mainPanel.add(highlightComboBox);
-
-        Y += 35;
         confirmExitCheckBox = new JCheckBox("Show confirmation dialog on exit",
                 config.isConfirmExit());
         confirmExitCheckBox.setBounds(X3,Y,W3,H3);
