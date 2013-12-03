@@ -10,21 +10,30 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
+import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
+import javax.swing.KeyStroke;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 public class PreferencesDialog extends JDialog implements ActionListener {
 
     private static final long serialVersionUID = 1L;
     private final static GeneralConfig config = GeneralConfig.getInstance();
+
+    private final ActionListener actionListener = new ActionListener() {
+        public void actionPerformed(ActionEvent actionEvent) {
+            dispose();
+        }
+    };
 
     private final MagicFrame frame;
     private JComboBox<String> themeComboBox;
@@ -59,7 +68,14 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         getContentPane().add(getTabbedSettingsPane(), BorderLayout.CENTER);
         getContentPane().add(getActionButtonsPanel(), BorderLayout.SOUTH);
 
+        setEscapeKeyAsCancelAction();
+
         setVisible(true);
+    }
+
+    private void setEscapeKeyAsCancelAction() {
+        KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0);
+        getRootPane().registerKeyboardAction(actionListener, stroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
     }
 
     private JTabbedPane getTabbedSettingsPane() {
