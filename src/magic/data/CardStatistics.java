@@ -30,7 +30,7 @@ public class CardStatistics {
     ));
     public static final int MANA_CURVE_SIZE=MANA_CURVE_TEXT.size();
 
-    private static final List<String> TYPE_NAMES = Collections.unmodifiableList(Arrays.asList(
+    public static final List<String> TYPE_NAMES = Collections.unmodifiableList(Arrays.asList(
         "Land","Spell","Creature","Equipment","Aura","Enchantment","Artifact"));
     public static final List<ImageIcon> TYPE_ICONS = Collections.unmodifiableList(Arrays.asList(
         IconImages.LAND,

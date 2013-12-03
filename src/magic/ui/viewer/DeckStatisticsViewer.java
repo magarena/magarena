@@ -102,6 +102,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
                 final JLabel label=new JLabel(Integer.toString(total));
                 label.setForeground(textColor);
                 label.setIcon(CardStatistics.TYPE_ICONS.get(index));
+                label.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
                 label.setIconTextGap(4);
                 topPanel.add(label);
             }
