@@ -92,12 +92,10 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         lines=new ArrayList<JLabel>();
     }
 
-    public void setPlayer(final MagicPlayerDefinition player) {
-        titleBar.setText("Deck Statistics : "+player.getName());
-        final CardStatistics statistics=new CardStatistics(player.getDeck());
+    private void refreshCardTypeTotals(final CardStatistics statistics) {
         topPanel.removeAll();
-        for (int index=0;index<CardStatistics.NR_OF_TYPES;index++) {
-            final int total=statistics.totalTypes[index];
+        for (int index = 0; index < CardStatistics.NR_OF_TYPES; index++) {
+            final int total = statistics.totalTypes[index];
             final JLabel label = new JLabel(Integer.toString(total));
             label.setForeground(textColor);
             label.setIcon(CardStatistics.TYPE_ICONS.get(index));
@@ -106,6 +104,13 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
             topPanel.add(label);
         }
         topPanel.revalidate();
+    }
+
+    public void setPlayer(final MagicPlayerDefinition player) {
+        titleBar.setText("Deck Statistics : "+player.getName());
+
+        final CardStatistics statistics=new CardStatistics(player.getDeck());
+        refreshCardTypeTotals(statistics);
 
         lines.clear();
         final JLabel allLabel=new JLabel(
