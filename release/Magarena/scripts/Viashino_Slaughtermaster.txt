@@ -8,5 +8,5 @@ subtype=Viashino,Warrior
 cost={1}{R}
 pt=1/1
 ability=double strike;\
-        pay {B}{G}, {O}: SN gets +1/+1 until end of turn.
+        pay {B}{G}, {Once}: SN gets +1/+1 until end of turn.
 timing=main
