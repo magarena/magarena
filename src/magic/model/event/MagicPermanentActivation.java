@@ -150,6 +150,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             || cost.contains("{C}") 
             || cost.contains("{C3}")
             || cost.contains("{O}")
+            || cost.contains("{R}")
         ) == false;
 
         return new MagicPermanentActivation(
@@ -227,6 +228,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicPlayAbilityEvent(source));
             } else if (cost.equals("{Sorcery}")) {
                 events.add(new MagicSorceryConditionEvent(source));
+            } else if (cost.equals("{R}")) {
+                events.add(new MagicBouncePermanentEvent(source,source));
             } else {
                 events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
             }
