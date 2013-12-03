@@ -1,0 +1,11 @@
+name=Hoof Skulkin
+url=http://magiccards.info/eve/en/169.html
+image=http://mtgimage.com/card/hoof%20skulkin.jpg
+value=1.733
+rarity=C
+type=Artifact,Creature
+subtype=Scarecrow
+cost={3}
+pt=2/2
+ability=pay {3}:Target green creature gets +1/+1 until end of turn.
+timing=artifact

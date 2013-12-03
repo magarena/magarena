@@ -1,0 +1,9 @@
+name=Elven Cache
+url=http://magiccards.info/6e/en/224.html
+image=http://mtgimage.com/card/elven%20cache.jpg
+value=3.034
+rarity=C
+type=Sorcery
+cost={2}{G}{G}
+effect=Return target card from your graveyard to your hand.
+timing=main

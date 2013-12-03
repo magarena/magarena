@@ -1,0 +1,11 @@
+name=Ana Disciple
+url=http://magiccards.info/ap/en/73.html
+image=http://mtgimage.com/card/ana%20disciple.jpg
+value=3.258
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={G}
+pt=1/1
+ability=pay {U},{T}:Target creature gains flying until end of turn.;pay {B},{T}:Target creature gets -2/-0 until end of turn.
+timing=main

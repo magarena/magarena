@@ -1,0 +1,11 @@
+name=Aven Archer
+url=http://magiccards.info/od/en/6.html
+image=http://mtgimage.com/card/aven%20archer.jpg
+value=1.733
+rarity=U
+type=Creature
+subtype=Bird,Archer,Soldier
+cost={3}{W}{W}
+pt=2/2
+ability=flying;pay {2}{W},{T}:SN deals 2 damage to target attacking or blocking creature.
+timing=main

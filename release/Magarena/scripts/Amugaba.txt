@@ -1,0 +1,11 @@
+name=Amugaba
+url=http://magiccards.info/od/en/61.html
+image=http://mtgimage.com/card/amugaba.jpg
+value=2.756
+rarity=R
+type=Creature
+subtype=Illusion
+cost={5}{U}{U}
+pt=6/6
+ability=flying;pay {2}{U},Discard a card:Return SN to its owner's hand.
+timing=main

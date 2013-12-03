@@ -1,0 +1,9 @@
+name=Ritual of Restoration
+url=http://magiccards.info/ds/en/13.html
+image=http://mtgimage.com/card/ritual%20of%20restoration.jpg
+value=2.6
+rarity=C
+type=Sorcery
+cost={W}
+effect=Return target artifact card from your graveyard to your hand.
+timing=main

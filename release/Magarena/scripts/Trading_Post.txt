@@ -1,0 +1,9 @@
+name=Trading Post
+url=http://magiccards.info/m14/en/225.html
+image=http://mtgimage.com/card/trading%20post.jpg
+value=4.071
+rarity=R
+type=Artifact
+cost={4}
+ability=pay {1},{T},Discard a card:PN gains 4 life.;pay {1},{T},Pay 1 life:PN puts a 0/1 white Goat creature token onto the battlefield.;pay {1},{T},Sacrifice a creature:Return target creature card from your graveyard to your hand.;pay {1},{T},Sacrifice an artifact:PN draws a card.
+timing=artifact

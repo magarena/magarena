@@ -1,0 +1,11 @@
+name=Doomed Necromancer
+url=http://magiccards.info/10e/en/137.html
+image=http://mtgimage.com/card/doomed%20necromancer.jpg
+value=4.293
+rarity=R
+type=Creature
+subtype=Human,Cleric,Mercenary
+cost={2}{B}
+pt=2/2
+ability=pay {B},{T},{S}:Return target creature card from your graveyard to the battlefield.
+timing=main

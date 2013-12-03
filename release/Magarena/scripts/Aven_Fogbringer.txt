@@ -1,0 +1,11 @@
+name=Aven Fogbringer
+url=http://magiccards.info/ju/en/34.html
+image=http://mtgimage.com/card/aven%20fogbringer.jpg
+value=2.667
+rarity=C
+type=Creature
+subtype=Bird,Wizard
+cost={3}{U}
+pt=2/1
+ability=flying;enters effect Return target land to its owner's hand.
+timing=main

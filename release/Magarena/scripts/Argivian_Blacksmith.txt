@@ -1,0 +1,11 @@
+name=Argivian Blacksmith
+url=http://magiccards.info/aq/en/95.html
+image=http://mtgimage.com/card/argivian%20blacksmith.jpg
+value=2.868
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={1}{W}{W}
+pt=2/2
+ability=pay {T}:Prevent the next 2 damage that would be dealt to target artifact creature this turn.
+timing=main

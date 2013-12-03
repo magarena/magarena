@@ -1,0 +1,11 @@
+name=Baleful Force
+url=http://magiccards.info/c13/en/70.html
+image=http://mtgimage.com/card/baleful%20force.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental
+cost={5}{B}{B}{B}
+pt=7/7
+ability=each upkeep effect PN draws a card.;each upkeep effect PN loses 1 life.
+timing=main

@@ -1,0 +1,9 @@
+name=Lux Cannon
+url=http://magiccards.info/som/en/173.html
+image=http://mtgimage.com/card/lux%20cannon.jpg
+value=3.851
+rarity=M
+type=Artifact
+cost={4}
+ability=pay {T}:Put a charge counter on SN.;pay {T},{C3}:Destroy target permanent.
+timing=artifact

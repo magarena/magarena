@@ -1,0 +1,11 @@
+name=Avatar of Slaughter
+url=http://magiccards.info/cmd/en/111.html
+image=http://mtgimage.com/card/avatar%20of%20slaughter.jpg
+value=4.091
+rarity=R
+type=Creature
+subtype=Avatar
+cost={6}{R}{R}
+pt=8/8
+ability=lord All creatures have double strike.;lord All creatures have attacks each turn if able.
+timing=main

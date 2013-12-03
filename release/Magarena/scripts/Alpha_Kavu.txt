@@ -1,0 +1,11 @@
+name=Alpha Kavu
+url=http://magiccards.info/ps/en/77.html
+image=http://mtgimage.com/card/alpha%20kavu.jpg
+value=2.338
+rarity=U
+type=Creature
+subtype=Kavu
+cost={2}{G}
+pt=2/2
+ability=pay {1}{G}:Target Kavu creature gets +1/+1 until end of turn.
+timing=main

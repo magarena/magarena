@@ -1,0 +1,9 @@
+name=Sage's Knowledge
+url=http://magiccards.info/p3k/en/52.html
+image=http://mtgimage.com/card/sage's%20knowledge.jpg
+value=2.842
+rarity=C
+type=Sorcery
+cost={2}{U}
+effect=Return target sorcery card from your graveyard to your hand.
+timing=main

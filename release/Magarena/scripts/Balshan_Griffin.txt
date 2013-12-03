@@ -1,0 +1,11 @@
+name=Balshan Griffin
+url=http://magiccards.info/od/en/67.html
+image=http://mtgimage.com/card/balshan%20griffin.jpg
+value=1.406
+rarity=U
+type=Creature
+subtype=Griffin
+cost={3}{U}{U}
+pt=3/2
+ability=flying;pay {1}{U},Discard a card:Return SN to its owner's hand.
+timing=main

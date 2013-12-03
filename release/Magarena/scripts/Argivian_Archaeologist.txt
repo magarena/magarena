@@ -1,0 +1,11 @@
+name=Argivian Archaeologist
+url=http://magiccards.info/aq/en/94.html
+image=http://mtgimage.com/card/argivian%20archaeologist.jpg
+value=4.117
+rarity=R
+type=Creature
+subtype=Human,Artificer
+cost={1}{W}{W}
+pt=1/1
+ability=pay {W}{W},{T}:Return target artifact card from your graveyard to your hand.
+timing=main

@@ -1,0 +1,11 @@
+name=Tragic Poet
+url=http://magiccards.info/ul/en/24.html
+image=http://mtgimage.com/card/tragic%20poet.jpg
+value=3.576
+rarity=C
+type=Creature
+subtype=Human
+cost={W}
+pt=1/1
+ability=pay {T},{S}:Return target enchantment card from your graveyard to your hand.
+timing=main

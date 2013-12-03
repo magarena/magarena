@@ -1,0 +1,9 @@
+name=Protomatter Powder
+url=http://magiccards.info/ala/en/53.html
+image=http://mtgimage.com/card/protomatter%20powder.jpg
+value=2.589
+rarity=U
+type=Artifact
+cost={2}{U}
+ability=pay {4}{W},{T},{S}:Return target artifact card from your graveyard to the battlefield.
+timing=artifact

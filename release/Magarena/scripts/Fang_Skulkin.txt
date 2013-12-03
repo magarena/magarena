@@ -1,0 +1,11 @@
+name=Fang Skulkin
+url=http://magiccards.info/eve/en/168.html
+image=http://mtgimage.com/card/fang%20skulkin.jpg
+value=2.741
+rarity=C
+type=Artifact,Creature
+subtype=Scarecrow
+cost={2}
+pt=2/1
+ability=pay {2}:Target black creature gains wither until end of turn.
+timing=artifact

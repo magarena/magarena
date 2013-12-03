@@ -1,0 +1,9 @@
+name=Reconstruction
+url=http://magiccards.info/rv/en/77.html
+image=http://mtgimage.com/card/reconstruction.jpg
+value=4.045
+rarity=C
+type=Sorcery
+cost={U}
+effect=Return target artifact card from your graveyard to your hand.
+timing=main

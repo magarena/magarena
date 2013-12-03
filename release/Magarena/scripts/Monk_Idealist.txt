@@ -1,0 +1,11 @@
+name=Monk Idealist
+url=http://magiccards.info/us/en/20.html
+image=http://mtgimage.com/card/monk%20idealist.jpg
+value=3.763
+rarity=U
+type=Creature
+subtype=Human,Cleric,Monk
+cost={2}{W}
+pt=2/2
+ability=enters effect Return target enchantment card from your graveyard to your hand.
+timing=main
