@@ -1,0 +1,12 @@
+name=Abundant Growth
+url=http://magiccards.info/avr/en/167.html
+image=http://mtgimage.com/card/abundant%20growth.jpg
+value=3.792
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=enters effect PN draws a card.
+given_ability=tap add mana any
+enchant=pump,pos land
+timing=enchantment

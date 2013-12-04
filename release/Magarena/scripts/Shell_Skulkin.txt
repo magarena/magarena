@@ -1,0 +1,11 @@
+name=Shell Skulkin
+url=http://magiccards.info/eve/en/173.html
+image=http://mtgimage.com/card/shell%20skulkin.jpg
+value=2.431
+rarity=C
+type=Artifact,Creature
+subtype=Scarecrow
+cost={4}
+pt=3/2
+ability=pay {3}:Target blue creature gains shroud until end of turn.
+timing=artifact

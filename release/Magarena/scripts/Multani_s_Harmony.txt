@@ -1,0 +1,11 @@
+name=Multani's Harmony
+url=http://magiccards.info/ps/en/84.html
+image=http://mtgimage.com/card/multani's%20harmony.jpg
+value=3.855
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={G}
+enchant=pump,pos creature
+given_ability=tap add mana any
+timing=enchantment

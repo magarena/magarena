@@ -1,0 +1,11 @@
+name=Immobilizing Ink
+url=http://magiccards.info/od/en/87.html
+image=http://mtgimage.com/card/immobilizing%20ink.jpg
+value=2.717
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=doesn't untap during untap step;pay {1},Discard a card:Untap SN.
+timing=enchantment
+enchant=tap,creature

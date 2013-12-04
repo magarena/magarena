@@ -1,0 +1,11 @@
+name=Triskelavus
+url=http://magiccards.info/cmd/en/263.html
+image=http://mtgimage.com/card/triskelavus.jpg
+value=3.397
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={7}
+pt=1/1
+ability=flying;enters with +1/+1 3;pay {1},{+1/+1}:PN puts a 1/1 colorless Triskelavite artifact creature token with flying onto the battlefield.
+timing=artifact
