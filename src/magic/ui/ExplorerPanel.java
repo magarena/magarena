@@ -143,7 +143,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         if (isEditingDeck()) {
             profile=getPlayer().getProfile();
         }
-        filterPanel = new ExplorerFilterPanel(frame, this, mode, profile, cube);
+        filterPanel = new ExplorerFilterPanel(frame, this, mode, profile);
 
         final JScrollPane filterScrollPane = new JScrollPane(filterPanel);
         filterScrollPane.setBorder(FontsAndBorders.NO_BORDER);

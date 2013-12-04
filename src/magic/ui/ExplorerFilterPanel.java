@@ -3,7 +3,6 @@ package magic.ui;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicPlayerProfile;
 import magic.model.MagicRarity;
 import magic.model.MagicSubType;
@@ -73,23 +72,15 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final JRadioButton[] rarityFilterChoices;
     private final JTextField nameTextField;
     private final JButton resetButton;
-    private final int mode;
-    private final MagicPlayerProfile profile;
-    private final MagicCubeDefinition cube;
-
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
     public ExplorerFilterPanel(
             final JFrame frame,
             final ExplorerPanel explorerPanel,
             final int mode,
-            final MagicPlayerProfile profile,
-            final MagicCubeDefinition cube) {
+            final MagicPlayerProfile profile) {
         this.frame = frame;
         this.explorerPanel=explorerPanel;
-        this.mode=mode;
-        this.profile=profile;
-        this.cube=cube;
 
         disableUpdate = false;
 
@@ -282,27 +273,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         if (cardDefinition.isToken()) {
             return false;
         }
-
-        /* if (cube!=null&&!cube.containsCard(cardDefinition)) {
-            return false;
-        } */
-
-        /* switch (mode) {
-            case ExplorerPanel.LAND:
-                if (!cardDefinition.isLand()) {
-                    return false;
-                }
-                break;
-            case ExplorerPanel.SPELL:
-                if (cardDefinition.isLand()) {
-                    return false;
-                }
-                break;
-        } */
-
-        /* if (profile!=null&&!cardDefinition.isBasic()&&!cardDefinition.isPlayable(profile)) {
-            return false;
-        } */
 
         // search text in name, abilities, type, text, etc.
         final String filterString = nameTextField.getText();
