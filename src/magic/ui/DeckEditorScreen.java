@@ -9,7 +9,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import magic.data.DeckUtils;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicPlayerDefinition;
@@ -24,13 +23,13 @@ public class DeckEditorScreen
     private static ExplorerPanel content;
     private final MagicFrame frame;
 
-    public DeckEditorScreen(final MagicFrame frame0, final int mode, final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
-        super(getScreenContent(frame0, mode, player, cube), frame0);
+    public DeckEditorScreen(final MagicFrame frame0, final int mode, final MagicPlayerDefinition player) {
+        super(getScreenContent(frame0, mode, player), frame0);
         this.frame = frame0;
     }
 
-    private static JPanel getScreenContent(MagicFrame frame, final int mode, final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
-        content = new ExplorerPanel(frame, mode, player, cube);
+    private static JPanel getScreenContent(MagicFrame frame, final int mode, final MagicPlayerDefinition player) {
+        content = new ExplorerPanel(frame, mode, player);
         return content;
     }
 

@@ -265,7 +265,7 @@ public class DeckViewer extends JPanel {
 
         @Override
         public void actionPerformed(final ActionEvent event) {
-            frame.showDeckEditor(player, cubeDefinition);
+            frame.showDeckEditor(player);
         }
     }
 }

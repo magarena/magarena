@@ -2,7 +2,6 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
@@ -59,14 +58,13 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     private MagicDeck deckDefs;
 
     public ExplorerPanel(final MagicFrame frame) {
-        this(frame, ExplorerPanel.ALL, null, null);
+        this(frame, ExplorerPanel.ALL, null);
     }
 
     public ExplorerPanel(
             final MagicFrame frame,
             final int mode,
-            final MagicPlayerDefinition player,
-            final MagicCubeDefinition cube) {
+            final MagicPlayerDefinition player) {
 
         this.frame=frame;
         this.player=player;

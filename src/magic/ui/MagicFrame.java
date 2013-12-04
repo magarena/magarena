@@ -4,7 +4,6 @@ import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.OSXAdapter;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
@@ -91,8 +90,8 @@ public class MagicFrame extends JFrame {
     //
     // The various (Mag)screens that can currently be displayed.
     //
-    public void showDeckEditor(final MagicPlayerDefinition player, final MagicCubeDefinition cube) {
-        activateMagScreen(new DeckEditorScreen(this, ExplorerPanel.ALL, player, cube));
+    public void showDeckEditor(final MagicPlayerDefinition player) {
+        activateMagScreen(new DeckEditorScreen(this, ExplorerPanel.ALL, player));
     }
     public void showCardExplorerScreen() {
         activateMagScreen(new CardExplorerScreen(this));
