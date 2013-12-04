@@ -12,7 +12,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.List;
 
@@ -33,11 +32,11 @@ public class ReadmeScreen extends MagScreen implements IMagStatusBar, IMagAction
 
         final JPanel content = new TexturedPanel();
 
-        content.setBackground(new Color(255, 255, 255, 60));
+        content.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         content.setLayout(new MigLayout("insets 0, gap 0, center"));
 
         final JTextArea readMeTextArea = new JTextArea();
-        readMeTextArea.setBackground(new Color(255, 255, 255, 220));
+        readMeTextArea.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
         readMeTextArea.setEditable(false);
         readMeTextArea.setFont(FontsAndBorders.FONT_README);
 

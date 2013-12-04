@@ -23,13 +23,14 @@ import magic.ui.viewer.PlayerViewer;
 import magic.ui.viewer.StackCombatViewer;
 import magic.ui.viewer.StackViewer;
 import magic.ui.viewer.ViewerInfo;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-import java.awt.Color;
+
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
@@ -45,7 +46,6 @@ public final class GamePanel extends JPanel {
     private static final String SWITCH_KEY="switch";
     private static final String PASS_KEY="pass";
     private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
-    private static final Color translucentPanelColor = new Color(255, 255, 255, 200);
 
     private final MagicFrame frame;
     private final MagicGame game;
@@ -118,7 +118,7 @@ public final class GamePanel extends JPanel {
         opponentViewer=new PlayerViewer(viewerInfo,controller,true);
 
         gameDuelViewer=new GameDuelViewer(game,controller);
-        gameDuelViewer.setBackground(translucentPanelColor);
+        gameDuelViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         controller.setGameViewer(gameDuelViewer.getGameViewer());
 
@@ -131,7 +131,7 @@ public final class GamePanel extends JPanel {
         opponentPermanentViewer=new BattlefieldViewer(viewerInfo,controller,true);
         imageStackViewer=new StackViewer(viewerInfo,controller,true);
         logStackViewer = new LogStackViewer(logBookViewer, imageStackViewer);
-        logStackViewer.setBackground(translucentPanelColor);
+        logStackViewer.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         imageHandGraveyardViewer=new ImageHandGraveyardExileViewer(viewerInfo,controller);
         imagePlayerPermanentViewer=new ImageBattlefieldViewer(viewerInfo,controller,false);

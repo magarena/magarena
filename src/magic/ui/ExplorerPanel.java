@@ -23,7 +23,6 @@ import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
 
-import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -72,7 +71,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         this.frame=frame;
         this.player=player;
 
-        setBackground(new Color(255, 255, 255, 60));
+        setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
 
         final SpringLayout springLayout = new SpringLayout();
         setLayout(springLayout);

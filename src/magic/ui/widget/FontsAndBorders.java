@@ -7,6 +7,17 @@ import java.awt.Font;
 
 public class FontsAndBorders {
 
+    // Calling JTextArea.setOpaque(false) does not work with Nimbus LAF. This is a workaround.
+    // (http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6687960).
+    public static final Color TEXTAREA_TRANSPARENT_COLOR_HACK =  new Color(255, 255, 255, 0);
+
+    public static final Color MAGSCREEN_FADE_COLOR = new Color(255, 255, 255, 60);
+    public static final Color TRANSLUCENT_WHITE_STRONG = new Color(255, 255, 255, 220);
+    public static final Color MAGSCREEN_BAR_COLOR =  new Color(0, 0, 0, 220);
+    public static final Color MENUPANEL_COLOR = new Color(0, 0, 0, 200);
+    public static final Color IMENUOVERLAY_BACKGROUND_COLOR = new Color(0, 0, 0, 150);
+    public static final Color IMENUOVERLAY_MENUPANEL_COLOR = new Color(0, 0, 0, 230);
+
     public static final Color GRAY1=new Color(200,200,200);
     public static final Color GRAY2=new Color(210,210,210);
     public static final Color GRAY3=new Color(220,220,220);

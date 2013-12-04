@@ -25,7 +25,6 @@ import javax.swing.JTabbedPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
@@ -55,7 +54,7 @@ public class DuelPanel extends TexturedPanel {
         this.frame=frame;
         this.duel=duel;
 
-        setBackground(new Color(255, 255, 255, 60));
+        setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
         final SpringLayout springLayout = new SpringLayout();
         setLayout(springLayout);
 

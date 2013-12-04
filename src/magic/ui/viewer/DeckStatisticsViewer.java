@@ -40,7 +40,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
         setPreferredSize(PREFERRED_SIZE);
         setBorder(FontsAndBorders.UP_BORDER);
-        setBackground(new Color(255, 255, 255, 200));
+        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         setLayout(new BorderLayout());
 
