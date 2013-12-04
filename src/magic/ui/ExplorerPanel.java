@@ -176,7 +176,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             cardsPanel = cardsSplitPane;
 
             // update deck stats
-            statsViewer.setPlayer(getPlayer());
+            statsViewer.setDeck(getPlayer().getDeck());
         } else {
             // no deck
             cardPoolTable = new CardTable(cardPoolDefs, cardViewer);
@@ -264,7 +264,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             deckDefs = getPlayer().getDeck();
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
-            statsViewer.setPlayer(getPlayer());
+            statsViewer.setDeck(deckDefs);
         }
     }
 

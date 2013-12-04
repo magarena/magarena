@@ -140,7 +140,7 @@ public class DeckViewer extends JPanel {
     }
 
     public void updateAfterEdit() {
-        statisticsViewer.setPlayer(player);
+        statisticsViewer.setDeck(player.getDeck());
         update();
     }
 
