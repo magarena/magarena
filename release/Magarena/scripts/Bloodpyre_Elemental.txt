@@ -1,0 +1,11 @@
+name=Bloodpyre Elemental
+url=http://magiccards.info/ala/en/93.html
+image=http://mtgimage.com/card/bloodpyre%20elemental.jpg
+value=2.032
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{R}
+pt=4/1
+ability=pay {S},{Sorcery}:SN deals 4 damage to target creature.
+timing=main

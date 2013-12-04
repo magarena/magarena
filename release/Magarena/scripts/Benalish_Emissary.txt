@@ -1,0 +1,11 @@
+name=Benalish Emissary
+url=http://magiccards.info/in/en/5.html
+image=http://mtgimage.com/card/benalish%20emissary.jpg
+value=3.6
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}
+pt=1/4
+ability=kicker {1}{G};enters kicked effect Destroy target land.
+timing=main

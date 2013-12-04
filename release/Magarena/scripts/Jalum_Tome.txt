@@ -1,0 +1,9 @@
+name=Jalum Tome
+url=http://magiccards.info/7e/en/303.html
+image=http://mtgimage.com/card/jalum%20tome.jpg
+value=2.962
+rarity=R
+type=Artifact
+cost={3}
+ability=pay {2},{T}:PN draws a card, then discards a card.
+timing=artifact

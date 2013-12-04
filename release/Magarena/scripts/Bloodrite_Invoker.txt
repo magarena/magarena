@@ -1,0 +1,11 @@
+name=Bloodrite Invoker
+url=http://magiccards.info/roe/en/97.html
+image=http://mtgimage.com/card/bloodrite%20invoker.jpg
+value=2.188
+rarity=C
+type=Creature
+subtype=Vampire,Shaman
+cost={2}{B}
+pt=3/1
+ability=pay {8}:Target player loses 3 life and PN gains 3 life.
+timing=main

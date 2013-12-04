@@ -1,0 +1,9 @@
+name=Amulet of Unmaking
+url=http://magiccards.info/mr/en/258.html
+image=http://mtgimage.com/card/amulet%20of%20unmaking.jpg
+value=2.544
+rarity=R
+type=Artifact
+cost={5}
+ability=pay {5},{T},{E},{Sorcery}:Exile target artifact, creature, or land.
+timing=artifact

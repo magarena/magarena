@@ -1,0 +1,11 @@
+name=Umbral Mantle
+url=http://magiccards.info/shm/en/267.html
+image=http://mtgimage.com/card/umbral%20mantle.jpg
+value=4.136
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={3}
+equip={0}
+given_ability=pay {3},{Q}:SN gets +2/+2 until end of turn.
+timing=artifact
