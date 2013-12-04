@@ -1,0 +1,9 @@
+name=Jabari's Banner
+url=http://magiccards.info/wl/en/150.html
+image=http://mtgimage.com/card/jabari's%20banner.jpg
+value=3.014
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {1},{T}:Target creature gains flanking until end of turn.
+timing=artifact

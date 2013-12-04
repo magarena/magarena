@@ -1,0 +1,11 @@
+name=Acolyte of Xathrid
+url=http://magiccards.info/m10/en/83.html
+image=http://mtgimage.com/card/acolyte%20of%20xathrid.jpg
+value=1.258
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={B}
+pt=0/1
+ability=pay {1}{B},{T}:Target player loses 1 life.
+timing=main

@@ -1,0 +1,11 @@
+name=Blaster Mage
+url=http://magiccards.info/mm/en/175.html
+image=http://mtgimage.com/card/blaster%20mage.jpg
+value=2.533
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={2}{R}
+pt=2/2
+ability=pay {R},{T},Discard a card:Destroy target Wall.
+timing=main

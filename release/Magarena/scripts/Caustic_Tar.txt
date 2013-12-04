@@ -1,0 +1,11 @@
+name=Caustic Tar
+url=http://magiccards.info/od/en/122.html
+image=http://mtgimage.com/card/caustic%20tar.jpg
+value=3.288
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={4}{B}{B}
+enchant=pump,pos land
+given_ability=pay {T}:Target player loses 3 life.
+timing=enchantment

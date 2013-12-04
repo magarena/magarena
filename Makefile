@@ -489,7 +489,7 @@ check_url:
 
 # every image is to a jpg file or attachment
 check_image:
-	grep '^image=' -r release/Magarena/scripts | grep -v "jpg$$" | grep -v attachment.php | ${NO_OUTPUT}
+	grep '^image=' -r release/Magarena/scripts | grep -v "jpg$$" | grep -v "png$$" | grep -v attachment.php | ${NO_OUTPUT}
 
 # every aura must have an enchant property
 check_aura:

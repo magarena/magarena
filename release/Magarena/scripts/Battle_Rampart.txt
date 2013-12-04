@@ -1,0 +1,11 @@
+name=Battle Rampart
+url=http://magiccards.info/roe/en/135.html
+image=http://mtgimage.com/card/battle%20rampart.jpg
+value=3.4
+rarity=C
+type=Creature
+subtype=Wall
+cost={2}{R}
+pt=1/3
+ability=defender;pay {T}:Target creature gains haste until end of turn.
+timing=main

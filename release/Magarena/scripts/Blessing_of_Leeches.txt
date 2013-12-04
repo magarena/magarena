@@ -1,0 +1,12 @@
+name=Blessing of Leeches
+url=http://magiccards.info/bok/en/62.html
+image=http://mtgimage.com/card/blessing%20of%20leeches.jpg
+value=3.17
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=flash;your upkeep effect PN loses 1 life.
+given_ability=regenerate {0}
+enchant=pump,pos creature
+timing=flash

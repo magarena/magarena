@@ -1,0 +1,9 @@
+name=Razortip Whip
+url=http://magiccards.info/gtc/en/235.html
+image=http://mtgimage.com/card/razortip%20whip.jpg
+value=1.912
+rarity=C
+type=Artifact
+cost={2}
+ability=pay {1},{T}:SN deals 1 damage to target opponent.
+timing=artifact

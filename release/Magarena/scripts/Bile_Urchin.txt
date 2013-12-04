@@ -1,0 +1,11 @@
+name=Bile Urchin
+url=http://magiccards.info/bok/en/61.html
+image=http://mtgimage.com/card/bile%20urchin.jpg
+value=2.716
+rarity=C
+type=Creature
+subtype=Spirit
+cost={B}
+pt=1/1
+ability=pay {S}:Target player loses 1 life.
+timing=main

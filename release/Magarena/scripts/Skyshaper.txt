@@ -1,0 +1,9 @@
+name=Skyshaper
+url=http://magiccards.info/ex/en/137.html
+image=http://mtgimage.com/card/skyshaper.jpg
+value=3.074
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {S}:Creatures PN controls gain flying until end of turn.
+timing=artifact
