@@ -8,6 +8,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -26,7 +27,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
     private static final long serialVersionUID = 1L;
 
-    public static final Dimension PREFERRED_SIZE = new Dimension(300, 170);
+    public static final Dimension PREFERRED_SIZE = new Dimension(300, 190);
 
     private final TitleBar titleBar;
     private final JPanel topPanel;
@@ -54,7 +55,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
         mainPanel.setOpaque(false);
         add(mainPanel,BorderLayout.CENTER);
 
-        topPanel=new JPanel(new FlowLayout(FlowLayout.LEFT,10,5));
+        topPanel=new JPanel();
         topPanel.setOpaque(false);
         mainPanel.add(topPanel,BorderLayout.NORTH);
 
@@ -98,14 +99,25 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
     private void refreshCardTypeTotals(final CardStatistics statistics) {
         topPanel.removeAll();
-        for (int index = 0; index < CardStatistics.NR_OF_TYPES; index++) {
-            final int total = statistics.totalTypes[index];
-            final JLabel label = new JLabel(Integer.toString(total));
-            label.setForeground(textColor);
-            label.setIcon(CardStatistics.TYPE_ICONS.get(index));
-            label.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
-            label.setIconTextGap(4);
-            topPanel.add(label);
+        topPanel.setLayout(new MigLayout("insets 2, gap 6 0, wrap 7, center"));
+        for (int i = 0; i < 2; i++) {
+            for (int index = 0; index < CardStatistics.NR_OF_TYPES; index++) {
+                final double total = statistics.totalTypes[index];
+                final int percentage = (int)Math.round((total / statistics.totalCards) * 100);
+                final JLabel label = new JLabel(Integer.toString(i == 0 ? (int)total : percentage));
+                label.setForeground(textColor);
+                if (i == 0) {
+                    label.setIcon(CardStatistics.TYPE_ICONS.get(index));
+                    label.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
+                    label.setIconTextGap(4);
+                    topPanel.add(label, "w 35!");
+                } else {
+                    label.setText(label.getText() + "%");
+                    label.setFont(FontsAndBorders.FONT0);
+                    topPanel.add(label, "h 12!, center, top");
+                }
+
+            }
         }
         topPanel.revalidate();
     }
