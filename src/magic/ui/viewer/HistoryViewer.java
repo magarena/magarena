@@ -9,8 +9,8 @@ import magic.ui.widget.TitleBar;
 
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 
 public class HistoryViewer extends JPanel{
@@ -62,9 +62,7 @@ public class HistoryViewer extends JPanel{
         final JTextArea textArea = new JTextArea(8, 170);
         textArea.setEditable(false);
         textArea.setFocusable(false);
-        // set background to get transparent effect
-        // must be done this way because of use of TexturedPanel()
-        textArea.setBackground(new Color(255, 255, 255, 0));
+        textArea.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
         textArea.setForeground(ThemeFactory.getInstance().getCurrentTheme().getTextColor());
         textArea.setTabSize(16);
         textArea.setText("Games played:\t" + gamesPlayed +

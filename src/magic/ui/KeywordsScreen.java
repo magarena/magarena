@@ -39,7 +39,7 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
 
     private static JPanel getScreenContent(final MagicFrame frame0) {
         final JPanel content = new TexturedPanel();
-        content.setBackground(new Color(255, 255, 255, 220));
+        content.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         content.setLayout(new MigLayout("insets 0, gap 0"));
         createScrollablePanel();
         addNewScrollPane(content);
@@ -106,9 +106,7 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
             keywordPanel.add(nameLabel, "w 100%");
 
             final JTextArea descriptionLabel = new JTextArea(keywordDefinition.description.replace("<br>", " "));
-            descriptionLabel.setOpaque(false);
-            // Nimbus LAF opaque bug workaround (http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6687960).
-            descriptionLabel.setBackground(new Color(0,0,0,0));
+            descriptionLabel.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
             descriptionLabel.setBorder(null);
             descriptionLabel.setLineWrap(true);
             descriptionLabel.setWrapStyleWord(true);

@@ -1,6 +1,5 @@
 package magic.ui;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
@@ -11,6 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 import net.miginfocom.swing.MigLayout;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuButton;
 import magic.ui.widget.MenuPanel;
 import magic.ui.widget.TexturedPanel;
@@ -18,16 +18,13 @@ import magic.ui.widget.TexturedPanel;
 @SuppressWarnings("serial")
 public class CardExplorerScreenOptions extends TexturedPanel implements IMenuOverlay {
 
-    private static Color BACKGROUND_COLOR = new Color(0, 0, 0, 150);
-    private static Color MENUPANEL_COLOR = new Color(0, 0, 0, 230);
-
     private final MagicFrame frame;
 
     public CardExplorerScreenOptions(final MagicFrame frame0) {
 
         this.frame = frame0;
 
-        setBackground(BACKGROUND_COLOR);
+        setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
         setLayout(new MigLayout("insets 0, gap 10, flowx, center, center"));
         add(getGeneralMenu());
 
@@ -57,7 +54,7 @@ public class CardExplorerScreenOptions extends TexturedPanel implements IMenuOve
             }
         }));
         menuPanel.refreshLayout();
-        menuPanel.setBackground(MENUPANEL_COLOR);
+        menuPanel.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
         return menuPanel;
     }
 

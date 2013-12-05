@@ -1,14 +1,12 @@
 package magic.ui;
 
 import magic.data.IconImages;
-
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -48,7 +46,7 @@ public class DuelDialog extends JDialog implements ActionListener {
         buttonPanel.add(cancelButton);
 
         duelSetupPanel = new DuelSetupPanel(frame);
-        duelSetupPanel.setBackground(new Color(255, 255, 255, 0));
+        duelSetupPanel.setOpaque(false);
 
         getContentPane().setLayout(new BorderLayout());
         getContentPane().add(duelSetupPanel,BorderLayout.CENTER);

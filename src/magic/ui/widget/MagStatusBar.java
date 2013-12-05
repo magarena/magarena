@@ -1,6 +1,5 @@
 package magic.ui.widget;
 
-import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -20,7 +19,6 @@ import magic.ui.MagicFrame;
 @SuppressWarnings("serial")
 public class MagStatusBar extends TexturedPanel {
 
-    private final static Color TRANSLUCENT_COLOR = new Color(0, 0, 0, 220);
     private final static ImageIcon optionsIcon = new ImageIcon(IconImages.OPTIONS_ICON);
 
     private final MagScreen magScreen;
@@ -28,7 +26,7 @@ public class MagStatusBar extends TexturedPanel {
     public MagStatusBar(final MagScreen screen0, final MagicFrame frame0) {
         this.magScreen = screen0;
         setMinimumSize(new Dimension(getPreferredSize().width, 50));
-        setBackground(TRANSLUCENT_COLOR);
+        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
         layoutMagStatusBar();
     }
 

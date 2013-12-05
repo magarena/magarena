@@ -1,7 +1,5 @@
 package magic.ui.viewer;
 
-import magic.data.GeneralConfig;
-import magic.data.IconImages;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
 import magic.ui.widget.FontsAndBorders;
@@ -10,25 +8,15 @@ import magic.ui.widget.TitleBar;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
-import javax.swing.JCheckBoxMenuItem;
-import javax.swing.JLabel;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.border.CompoundBorder;
-import javax.swing.event.MouseInputAdapter;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
-import java.awt.event.MouseEvent;
 import java.util.ListIterator;
 
 public class LogBookViewer extends JPanel {
@@ -45,9 +33,8 @@ public class LogBookViewer extends JPanel {
     private final MagicLogBook logBook;
     private final JPanel messagePanel;
     private final JScrollPane scrollPane;
-    private final GeneralConfig config = GeneralConfig.getInstance();
-    private boolean isScrollbarVisible = false; //config.isLogScrollbarVisible();
-    private boolean isNewMessageAddedToTop = false; // config.isLogMessageAddedToTop();
+    private boolean isScrollbarVisible = false;
+    private boolean isNewMessageAddedToTop = false;
 
     public LogBookViewer(final MagicLogBook logBook) {
 
@@ -57,7 +44,6 @@ public class LogBookViewer extends JPanel {
 
         TitleBar tb = new TitleBar("Log");
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
-        //tb.add(getOptionsButton(), BorderLayout.EAST);
         add(tb, BorderLayout.NORTH);
 
         final JPanel centerPanel=new JPanel();
@@ -90,7 +76,6 @@ public class LogBookViewer extends JPanel {
         });
 
     }
-
 
     public MagicLogBook getLogBook() {
         return logBook;
@@ -135,57 +120,6 @@ public class LogBookViewer extends JPanel {
         panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);
         return panel;
-    }
-
-    private JLabel getOptionsButton() {
-        JLabel lbl = new JLabel(IconImages.PROGRESS);
-        lbl.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        lbl.addMouseListener(new MouseInputAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                doPopup(e);
-            }
-            private void doPopup(MouseEvent e){
-                JPopupMenu menu = getOptionsPopupMenu();
-                menu.show(e.getComponent(), e.getX(), e.getY());
-            }
-        });
-        return lbl;
-    }
-
-    private JPopupMenu getOptionsPopupMenu() {
-        JPopupMenu menu = new JPopupMenu();
-        menu.add(getMenuItem_ScrollbarVisibility());
-        menu.add(getMenuItem_TopInsert());
-        return menu;
-    }
-
-    private JMenuItem getMenuItem_TopInsert() {
-        JCheckBoxMenuItem item = new JCheckBoxMenuItem("Add new message to top", isNewMessageAddedToTop);
-        item.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                isNewMessageAddedToTop = !isNewMessageAddedToTop;
-                update();
-                config.setLogMessageAddedToTop(isNewMessageAddedToTop);
-                config.save();
-            }
-        });
-        return item;
-    }
-
-    private JCheckBoxMenuItem getMenuItem_ScrollbarVisibility() {
-        JCheckBoxMenuItem item = new JCheckBoxMenuItem("Show scroll-bar", isScrollbarVisible);
-        item.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                isScrollbarVisible = !isScrollbarVisible;
-                setVerticalScrollbarPolicy();
-                config.setLogScrollbarVisible(isScrollbarVisible);
-                config.save();
-            }
-        });
-        return item;
     }
 
     private void setVerticalScrollbarPolicy() {

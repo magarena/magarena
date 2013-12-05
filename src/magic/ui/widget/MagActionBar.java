@@ -14,14 +14,12 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class MagActionBar extends TexturedPanel {
 
-    private final static Color TRANSLUCENT_COLOR = new Color(0, 0, 0, 220);
-
     private IMagActionBar actionProvider;
 
     public MagActionBar(final IMagActionBar provider0) {
         actionProvider = provider0;
         setMinimumSize(new Dimension(getPreferredSize().width, 50));
-        setBackground(TRANSLUCENT_COLOR);
+        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
         setMagActionBarLayout();
     }
 

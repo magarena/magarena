@@ -21,7 +21,7 @@ import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeckStatisticsViewer extends JPanel implements ChangeListener {
+public class DeckStatisticsViewer extends TexturedPanel implements ChangeListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -35,19 +35,22 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private final Color textColor;
 
     public DeckStatisticsViewer() {
+
         textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
 
         setPreferredSize(PREFERRED_SIZE);
         setBorder(FontsAndBorders.UP_BORDER);
+        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         setLayout(new BorderLayout());
 
         titleBar=new TitleBar("Deck Statistics");
         add(titleBar,BorderLayout.NORTH);
 
-        final JPanel mainPanel=new TexturedPanel();
+        final JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
         mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
+        mainPanel.setOpaque(false);
         add(mainPanel,BorderLayout.CENTER);
 
         topPanel=new JPanel(new FlowLayout(FlowLayout.LEFT,10,5));

@@ -1,6 +1,5 @@
 package magic.ui;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
@@ -11,14 +10,12 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 import net.miginfocom.swing.MigLayout;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuPanel;
 import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverlay {
-
-    private static Color BACKGROUND_COLOR = new Color(0, 0, 0, 150);
-    private static Color MENUPANEL_COLOR = new Color(0, 0, 0, 230);
 
     private final MagicFrame frame;
     private final DuelDecksScreen screen;
@@ -28,7 +25,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
         this.frame = frame0;
         this.screen = screen0;
 
-        setBackground(BACKGROUND_COLOR);
+        setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
         setLayout(new MigLayout("insets 0, gap 10, flowx, center, center"));
         add(getScreenMenu());
         add(getGeneralMenu());
@@ -51,7 +48,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
 
     private MenuPanel getGeneralMenu() {
         final MenuPanel menuPanel = new GeneralMenuPanel(frame, this);
-        menuPanel.setBackground(MENUPANEL_COLOR);
+        menuPanel.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
         return menuPanel;
     }
 
@@ -90,7 +87,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
         });
 
         menu.refreshLayout();
-        menu.setBackground(MENUPANEL_COLOR);
+        menu.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
         return menu;
     }
 

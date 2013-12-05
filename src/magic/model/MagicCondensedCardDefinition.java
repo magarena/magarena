@@ -128,7 +128,7 @@ public class MagicCondensedCardDefinition {
     public static final Comparator<MagicCondensedCardDefinition> TOUGHNESS_COMPARATOR_ASC=new Comparator<MagicCondensedCardDefinition>() {
         @Override
         public int compare(final MagicCondensedCardDefinition cardDefinition1,final MagicCondensedCardDefinition cardDefinition2) {
-            return MagicCardDefinition.POWER_COMPARATOR_ASC.compare(cardDefinition1.getCard(), cardDefinition2.getCard());
+            return MagicCardDefinition.TOUGHNESS_COMPARATOR_ASC.compare(cardDefinition1.getCard(), cardDefinition2.getCard());
         }
     };
 }

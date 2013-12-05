@@ -28,7 +28,7 @@ public class MenuPanel extends TexturedPanel {
         setMaximumSize(new Dimension(300, 380));
 
         setBorder(FontsAndBorders.BLACK_BORDER);
-        setBackground(new Color(0, 0, 0, 200));
+        setBackground(FontsAndBorders.MENUPANEL_COLOR);
 
         setMenuPanelLayout();
 
