@@ -1,0 +1,11 @@
+name=Cephalid Scout
+url=http://magiccards.info/od/en/74.html
+image=http://mtgimage.com/card/cephalid%20scout.jpg
+value=1.554
+rarity=C
+type=Creature
+subtype=Cephalid,Scout,Wizard
+cost={1}{U}
+pt=1/1
+ability=flying;pay {2}{U},Sacrifice a land:PN draws a card.
+timing=main

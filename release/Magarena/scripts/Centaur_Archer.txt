@@ -1,0 +1,11 @@
+name=Centaur Archer
+url=http://magiccards.info/ia/en/360.html
+image=http://mtgimage.com/card/centaur%20archer.jpg
+value=3.333
+rarity=U
+type=Creature
+subtype=Archer,Centaur
+cost={1}{R}{G}
+pt=3/2
+ability=pay {T}:SN deals 1 damage to target creature with flying.
+timing=main

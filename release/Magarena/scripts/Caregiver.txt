@@ -1,0 +1,11 @@
+name=Caregiver
+url=http://magiccards.info/rav/en/6.html
+image=http://mtgimage.com/card/caregiver.jpg
+value=1.187
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability=pay {W},Sacrifice a creature:Prevent the next 1 damage that would be dealt to target creature or player this turn.
+timing=main

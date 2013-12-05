@@ -1,0 +1,11 @@
+name=Palladia-Mors
+url=http://magiccards.info/ch/en/117.html
+image=http://mtgimage.com/card/palladia-mors.jpg
+value=3.965
+rarity=R
+type=Legendary,Creature
+subtype=Dragon,Elder
+cost={2}{R}{R}{G}{G}{W}{W}
+pt=7/7
+ability=flying;trample;your upkeep effect PN may pay {R}{G}{W}. If you don't, sacrifice SN.
+timing=main

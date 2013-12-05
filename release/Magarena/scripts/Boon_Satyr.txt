@@ -1,0 +1,12 @@
+name=Boon Satyr
+url=http://magiccards.info/ths/en/152.html
+image=http://mtgimage.com/card/boon%20satyr.jpg
+value=3.922
+rarity=R
+type=Enchantment,Creature
+subtype=Satyr
+cost={1}{G}{G}
+pt=4/2
+ability=flash;bestow {3}{G}{G}
+given_pt=+4/+2
+timing=flash

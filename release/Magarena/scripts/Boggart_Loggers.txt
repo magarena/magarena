@@ -1,0 +1,11 @@
+name=Boggart Loggers
+url=http://magiccards.info/lw/en/103.html
+image=http://mtgimage.com/card/boggart%20loggers.jpg
+value=2.314
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={2}{B}
+pt=2/1
+ability=forestwalk;pay {2}{B},{S}:Destroy target Treefolk.;pay {2}{B},{S}:Destroy target Forest.
+timing=main

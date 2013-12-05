@@ -1,0 +1,13 @@
+name=Observant Alseid
+url=http://magiccards.info/ths/en/24.html
+image=http://mtgimage.com/card/observant%20alseid.jpg
+value=3.262
+rarity=C
+type=Enchantment,Creature
+subtype=Nymph
+cost={2}{W}
+pt=2/2
+ability=bestow {4}{W};vigilance
+given_ability=vigilance
+given_pt=+2/+2
+timing=main

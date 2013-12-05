@@ -1,0 +1,11 @@
+name=Citanul Hierophants
+url=http://magiccards.info/us/en/244.html
+image=http://mtgimage.com/card/citanul%20hierophants.jpg
+value=4.321
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={3}{G}
+pt=3/2
+ability=lord creatures you control have tap add mana {G}
+timing=main

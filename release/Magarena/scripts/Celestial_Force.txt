@@ -1,0 +1,11 @@
+name=Celestial Force
+url=http://magiccards.info/cmd/en/10.html
+image=http://mtgimage.com/card/celestial%20force.jpg
+value=3.717
+rarity=R
+type=Creature
+subtype=Elemental
+cost={5}{W}{W}{W}
+pt=7/7
+ability=each upkeep effect PN gains 3 life.
+timing=main

@@ -1,0 +1,11 @@
+name=Briarhorn
+url=http://magiccards.info/ddh/en/14.html
+image=http://mtgimage.com/card/briarhorn.jpg
+value=3.635
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{G}
+pt=3/3
+ability=flash;enters effect Target creature gets +3/+3 until end of turn.;evoke {1}{G}
+timing=flash

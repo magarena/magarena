@@ -1,0 +1,11 @@
+name=Cache Raiders
+url=http://magiccards.info/ddi/en/18.html
+image=http://mtgimage.com/card/cache%20raiders.jpg
+value=2.133
+rarity=U
+type=Creature
+subtype=Merfolk,Rogue
+cost={3}{U}{U}
+pt=4/4
+ability=your upkeep effect Return target permanent you control to its owner's hand.
+timing=main
