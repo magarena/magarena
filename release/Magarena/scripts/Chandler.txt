@@ -1,0 +1,11 @@
+name=Chandler
+url=http://magiccards.info/hl/en/88.html
+image=http://mtgimage.com/card/chandler.jpg
+value=2.833
+rarity=C
+type=Legendary,Creature
+subtype=Human,Rogue
+cost={4}{R}
+pt=3/3
+ability=pay {R}{R}{R},{T}:Destroy target artifact creature.
+timing=main

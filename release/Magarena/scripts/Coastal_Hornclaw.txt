@@ -1,0 +1,11 @@
+name=Coastal Hornclaw
+url=http://magiccards.info/8e/en/66.html
+image=http://mtgimage.com/card/coastal%20hornclaw.jpg
+value=1.26
+rarity=C
+type=Creature
+subtype=Bird
+cost={4}{U}
+pt=3/3
+ability=pay Sacrifice a land:SN gains flying until end of turn.
+timing=main

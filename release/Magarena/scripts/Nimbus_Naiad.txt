@@ -1,0 +1,13 @@
+name=Nimbus Naiad
+url=http://magiccards.info/ths/en/56.html
+image=http://mtgimage.com/card/nimbus%20naiad.jpg
+value=3.667
+rarity=C
+type=Enchantment,Creature
+subtype=Nymph
+cost={2}{U}
+pt=2/2
+ability=bestow {4}{U};flying
+given_pt=+2/+2
+given_ability=flying
+timing=main

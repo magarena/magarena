@@ -1,0 +1,11 @@
+name=Citanul Woodreaders
+url=http://magiccards.info/mma/en/140.html
+image=http://mtgimage.com/card/citanul%20woodreaders.jpg
+value=3.286
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={2}{G}
+pt=1/4
+ability=kicker {2}{G};enters kicked effect PN draws two cards.
+timing=main

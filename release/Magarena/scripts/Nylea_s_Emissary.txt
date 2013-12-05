@@ -1,0 +1,13 @@
+name=Nylea's Emissary
+url=http://magiccards.info/ths/en/168.html
+image=http://mtgimage.com/card/nylea's%20emissary.jpg
+value=3.583
+rarity=U
+type=Enchantment,Creature
+subtype=Cat
+cost={3}{G}
+pt=3/3
+ability=bestow {5}{G};trample
+given_ability=trample
+given_pt=+3/+3
+timing=main

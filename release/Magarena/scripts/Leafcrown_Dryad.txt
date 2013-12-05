@@ -1,0 +1,13 @@
+name=Leafcrown Dryad
+url=http://magiccards.info/ths/en/161.html
+image=http://mtgimage.com/card/leafcrown%20dryad.jpg
+value=3.75
+rarity=C
+type=Enchantment,Creature
+subtype=Nymph,Dryad
+cost={1}{G}
+pt=2/2
+ability=bestow {3}{G};reach
+given_ability=reach
+given_pt=+2/+2
+timing=main

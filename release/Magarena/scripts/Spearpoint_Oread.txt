@@ -1,0 +1,13 @@
+name=Spearpoint Oread
+url=http://magiccards.info/ths/en/141.html
+image=http://mtgimage.com/card/spearpoint%20oread.jpg
+value=3.159
+rarity=C
+type=Enchantment,Creature
+subtype=Nymph
+cost={2}{R}
+pt=2/2
+ability=bestow {5}{R};first strike
+given_ability=first strike
+given_pt=+2/+2
+timing=main

@@ -1,0 +1,11 @@
+name=Chromium
+url=http://magiccards.info/ch/en/109.html
+image=http://mtgimage.com/card/chromium.jpg
+value=3.18
+rarity=R
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={2}{W}{W}{U}{U}{B}{B}
+pt=7/7
+ability=flying;rampage 2;your upkeep effect PN may pay {W}{U}{B}. If you don't, sacrifice SN.
+timing=main

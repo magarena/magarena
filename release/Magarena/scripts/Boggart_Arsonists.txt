@@ -1,0 +1,11 @@
+name=Boggart Arsonists
+url=http://magiccards.info/shm/en/85.html
+image=http://mtgimage.com/card/boggart%20arsonists.jpg
+value=2.408
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={2}{R}
+pt=2/1
+ability=plainswalk;pay {2}{R},{S}:Destroy target Scarecrow.;pay {2}{R},{S}:Destroy target Plains.
+timing=main
