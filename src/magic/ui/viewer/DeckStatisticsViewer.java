@@ -99,25 +99,20 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
     private void refreshCardTypeTotals(final CardStatistics statistics) {
         topPanel.removeAll();
-        topPanel.setLayout(new MigLayout("insets 2, gap 6 0, wrap 7, center"));
-        for (int i = 0; i < 2; i++) {
-            for (int index = 0; index < CardStatistics.NR_OF_TYPES; index++) {
-                final double total = statistics.totalTypes[index];
-                final int percentage = (int)Math.round((total / statistics.totalCards) * 100);
-                final JLabel label = new JLabel(Integer.toString(i == 0 ? (int)total : percentage));
-                label.setForeground(textColor);
-                if (i == 0) {
-                    label.setIcon(CardStatistics.TYPE_ICONS.get(index));
-                    label.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
-                    label.setIconTextGap(4);
-                    topPanel.add(label, "w 35!");
-                } else {
-                    label.setText(label.getText() + "%");
-                    label.setFont(FontsAndBorders.FONT0);
-                    topPanel.add(label, "h 12!, center, top");
-                }
-
-            }
+        topPanel.setLayout(new MigLayout("insets 2, gap 6 0, wrap 2, flowy, center"));
+        for (int index = 0; index < CardStatistics.NR_OF_TYPES; index++) {
+            final int total = statistics.totalTypes[index];
+            // card count
+            final JLabel totalLabel = new JLabel(Integer.toString(total));
+            totalLabel.setIcon(CardStatistics.TYPE_ICONS.get(index));
+            totalLabel.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
+            totalLabel.setIconTextGap(4);
+            topPanel.add(totalLabel, "w 35!");
+            // card percentage
+            final int percentage = (int)Math.round(((double)total / statistics.totalCards) * 100);
+            final JLabel percentLabel = new JLabel(Integer.toString(percentage) + "%");
+            percentLabel.setFont(FontsAndBorders.FONT0);
+            topPanel.add(percentLabel, "h 12!, center, top");
         }
         topPanel.revalidate();
     }
