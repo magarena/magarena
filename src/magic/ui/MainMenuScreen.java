@@ -44,6 +44,12 @@ public class MainMenuScreen extends MagScreen {
                 frame.showCardExplorerScreen();
             }
         });
+        menuPanel.addMenuItem("Deck editor", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.showDeckEditor();
+            }
+        });
         menuPanel.addMenuItem("Settings", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {

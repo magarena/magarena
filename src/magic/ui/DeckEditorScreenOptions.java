@@ -56,7 +56,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
 
         final MenuPanel menu = new MenuPanel("Deck Options");
 
-        menu.addMenuItem("New empty deck", new AbstractAction() {
+        menu.addMenuItem("Clear deck", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 screen.createNewEmptyDeck();

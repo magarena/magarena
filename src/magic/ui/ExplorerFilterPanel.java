@@ -3,7 +3,6 @@ package magic.ui;
 import magic.data.CardDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicPlayerProfile;
 import magic.model.MagicRarity;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -77,8 +76,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     public ExplorerFilterPanel(
             final JFrame frame,
             final ExplorerPanel explorerPanel,
-            final int mode,
-            final MagicPlayerProfile profile) {
+            final int mode) {
         this.frame = frame;
         this.explorerPanel=explorerPanel;
 

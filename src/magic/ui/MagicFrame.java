@@ -90,6 +90,9 @@ public class MagicFrame extends JFrame {
     //
     // The various (Mag)screens that can currently be displayed.
     //
+    public void showDeckEditor() {
+        activateMagScreen(new DeckEditorScreen(this, ExplorerPanel.ALL));
+    }
     public void showDeckEditor(final MagicPlayerDefinition player) {
         activateMagScreen(new DeckEditorScreen(this, ExplorerPanel.ALL, player));
     }

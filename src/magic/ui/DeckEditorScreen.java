@@ -1,6 +1,7 @@
 package magic.ui;
 
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
@@ -8,6 +9,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import magic.MagicMain;
 import magic.data.DeckUtils;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
@@ -23,6 +25,11 @@ public class DeckEditorScreen
     private static ExplorerPanel content;
     private final MagicFrame frame;
 
+    // CTR
+    public DeckEditorScreen(final MagicFrame frame0, final int mode) {
+        super(getScreenContent(frame0, mode), frame0);
+        this.frame = frame0;
+    }
     public DeckEditorScreen(final MagicFrame frame0, final int mode, final MagicPlayerDefinition player) {
         super(getScreenContent(frame0, mode, player), frame0);
         this.frame = frame0;
@@ -30,6 +37,10 @@ public class DeckEditorScreen
 
     private static JPanel getScreenContent(MagicFrame frame, final int mode, final MagicPlayerDefinition player) {
         content = new ExplorerPanel(frame, mode, player);
+        return content;
+    }
+    private static JPanel getScreenContent(MagicFrame frame, final int mode) {
+        content = new ExplorerPanel(frame, mode, true);
         return content;
     }
 
@@ -59,7 +70,32 @@ public class DeckEditorScreen
      */
     @Override
     public List<MenuButton> getMiddleActions() {
-        return null;
+        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        buttons.add(new MenuButton("Load deck", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                loadDeck();
+            }
+        }, "Load deck from file"));
+        if (content.getPlayer() == null) {
+            buttons.add(new MenuButton("Save", new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    saveDeck();
+                }
+            }, "Save deck to file"));
+            buttons.add(new MenuButton("Clear", new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if (JOptionPane.showConfirmDialog(
+                            MagicMain.rootFrame,
+                            "Remove all cards from the deck?") == JOptionPane.YES_OPTION) {
+                        createNewEmptyDeck();
+                    }
+                }
+            }, "Clear all cards from deck"));
+        }
+        return buttons;
     }
 
     /* (non-Javadoc)
@@ -67,7 +103,11 @@ public class DeckEditorScreen
      */
     @Override
     public String getScreenCaption() {
-        return "Deck Editor : " + content.getPlayer().getName();
+        if (content.getPlayer() != null) {
+            return "Deck Editor : " + content.getPlayer().getName();
+        } else {
+            return "Deck Editor";
+        }
     }
 
     /* (non-Javadoc)
@@ -79,14 +119,16 @@ public class DeckEditorScreen
     }
 
     public void createNewEmptyDeck() {
-        final MagicPlayerDefinition player=content.getPlayer();
-        player.getDeck().clear();
-        //duelPanel.updateDecksAfterEdit();
-        content.updateDeck();
+        final MagicPlayerDefinition player = content.getPlayer();
+        if (player != null) {
+            player.getDeck().clear();
+            content.setDeck(player.getDeck());
+        } else {
+            content.setDeck(new MagicDeck());
+        }
     }
 
     public void loadDeck() {
-        final MagicPlayerDefinition player = content.getPlayer();
         final JFileChooser fileChooser=new JFileChooser(DeckUtils.getDeckFolder());
         fileChooser.setDialogTitle("Load deck");
         fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
@@ -96,16 +138,17 @@ public class DeckEditorScreen
         final int action=fileChooser.showOpenDialog(this);
         if (action==JFileChooser.APPROVE_OPTION) {
             final String filename=fileChooser.getSelectedFile().getAbsolutePath();
-            DeckUtils.loadDeck(filename,player);
-            content.updateDeck();
+            final MagicPlayerDefinition player = content.getPlayer();
+            if (player != null) {
+              DeckUtils.loadDeck(filename, player);
+              content.setDeck(player.getDeck());
+            } else {
+              content.setDeck(DeckUtils.loadDeckFromFile(filename));
+            }
         }
     }
 
-    /**
-     *
-     */
     public void saveDeck() {
-        final MagicPlayerDefinition player = content.getPlayer();
         final JFileChooser fileChooser = new JFileChooser(DeckUtils.getDeckFolder());
         fileChooser.setDialogTitle("Save deck");
         fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
@@ -116,13 +159,13 @@ public class DeckEditorScreen
             if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
                 filename += DeckUtils.DECK_EXTENSION;
             }
-            if (DeckUtils.saveDeck(filename, player)) {
+            if (DeckUtils.saveDeck(filename, content.getDeck())) {
                 String shortFilename = fileChooser.getSelectedFile().getName();
                 if (shortFilename.indexOf(".dec") == -1) {
                     shortFilename += ".dec";
                 }
-                player.getDeck().setName(shortFilename);
-                content.updateDeck();
+                content.getDeck().setName(shortFilename);
+                content.setDeck(content.getDeck());
             }
         }
     }
@@ -134,7 +177,11 @@ public class DeckEditorScreen
      */
     @Override
     public boolean isScreenReadyToClose(final MagScreen nextScreen) {
-        return validateDeck(content.getPlayer().getDeck(), nextScreen);
+        if (content.getPlayer() != null) {
+            return validateDeck(content.getPlayer().getDeck(), nextScreen);
+        } else {
+            return true;
+        }
     }
 
     //
