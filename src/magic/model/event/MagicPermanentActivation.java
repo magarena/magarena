@@ -150,7 +150,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             || cost.contains("{C}") 
             || cost.contains("{C3}")
             || cost.contains("{Once}")
-            || cost.contains("{R}")
+            || cost.contains("Return SN to its owner's hand")
         ) == false;
 
         return new MagicPermanentActivation(
@@ -228,7 +228,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicPlayAbilityEvent(source));
             } else if (cost.equals("{Sorcery}")) {
                 events.add(new MagicSorceryConditionEvent(source));
-            } else if (cost.equals("{R}")) {
+            } else if (cost.equals("Return SN to its owner's hand")) {
                 events.add(new MagicBouncePermanentEvent(source,source));
             } else {
                 events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
