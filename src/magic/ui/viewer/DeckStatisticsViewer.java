@@ -2,17 +2,19 @@ package magic.ui.viewer;
 
 import magic.data.CardStatistics;
 import magic.model.MagicColor;
+import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -25,7 +27,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
     private static final long serialVersionUID = 1L;
 
-    public static final Dimension PREFERRED_SIZE = new Dimension(300, 170);
+    public static final Dimension PREFERRED_SIZE = new Dimension(300, 190);
 
     private final TitleBar titleBar;
     private final JPanel topPanel;
@@ -53,7 +55,7 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
         mainPanel.setOpaque(false);
         add(mainPanel,BorderLayout.CENTER);
 
-        topPanel=new JPanel(new FlowLayout(FlowLayout.LEFT,10,5));
+        topPanel=new JPanel();
         topPanel.setOpaque(false);
         mainPanel.add(topPanel,BorderLayout.NORTH);
 
@@ -97,22 +99,29 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
 
     private void refreshCardTypeTotals(final CardStatistics statistics) {
         topPanel.removeAll();
+        topPanel.setLayout(new MigLayout("insets 2, gap 6 0, wrap 2, flowy, center"));
         for (int index = 0; index < CardStatistics.NR_OF_TYPES; index++) {
             final int total = statistics.totalTypes[index];
-            final JLabel label = new JLabel(Integer.toString(total));
-            label.setForeground(textColor);
-            label.setIcon(CardStatistics.TYPE_ICONS.get(index));
-            label.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
-            label.setIconTextGap(4);
-            topPanel.add(label);
+            // card count
+            final JLabel totalLabel = new JLabel(Integer.toString(total));
+            totalLabel.setIcon(CardStatistics.TYPE_ICONS.get(index));
+            totalLabel.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
+            totalLabel.setIconTextGap(4);
+            topPanel.add(totalLabel, "w 35!");
+            // card percentage
+            final int percentage = (int)Math.round(((double)total / statistics.totalCards) * 100);
+            final JLabel percentLabel = new JLabel(Integer.toString(percentage) + "%");
+            percentLabel.setFont(FontsAndBorders.FONT0);
+            topPanel.add(percentLabel, "h 12!, center, top");
         }
         topPanel.revalidate();
     }
 
-    public void setPlayer(final MagicPlayerDefinition player) {
-        titleBar.setText("Deck Statistics : "+player.getName());
+    public void setDeck(final MagicDeck deck) {
 
-        final CardStatistics statistics=new CardStatistics(player.getDeck());
+        final CardStatistics statistics = new CardStatistics(deck);
+        titleBar.setText("Deck Statistics : " + statistics.totalCards + " cards");
+
         refreshCardTypeTotals(statistics);
 
         lines.clear();
@@ -123,17 +132,18 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
         allLabel.setForeground(textColor);
         lines.add(allLabel);
 
-        final MagicPlayerProfile profile=player.getProfile();
-        for (final MagicColor color : profile.getColors()) {
-            final int index=color.ordinal();
-            final JLabel label=new JLabel(color.getManaType().getIcon(true));
-            label.setForeground(textColor);
-            label.setHorizontalAlignment(JLabel.LEFT);
-            label.setIconTextGap(5);
-            label.setText("Cards : "+statistics.colorCount[index]+
-                          "  Monocolor : "+statistics.colorMono[index]+
-                          "  Lands : "+statistics.colorLands[index]);
-            lines.add(label);
+        for (int i = 0; i < statistics.colorCount.length; i++) {
+            if (statistics.colorCount[i] > 0) {
+                final MagicColor color = MagicColor.values()[i];
+                final JLabel label=new JLabel(color.getManaType().getIcon(true));
+                label.setForeground(textColor);
+                label.setHorizontalAlignment(JLabel.LEFT);
+                label.setIconTextGap(5);
+                label.setText("Cards : "+statistics.colorCount[i]+
+                              "  Monocolor : "+statistics.colorMono[i]+
+                              "  Lands : "+statistics.colorLands[i]);
+                lines.add(label);
+            }
         }
 
         for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
@@ -148,10 +158,12 @@ public class DeckStatisticsViewer extends TexturedPanel implements ChangeListene
         }
         revalidate();
         repaint();
+
+
     }
 
     @Override
     public void stateChanged(final ChangeEvent event) {
-        setPlayer((MagicPlayerDefinition)event.getSource());
+        setDeck(((MagicPlayerDefinition)event.getSource()).getDeck());
     }
 }

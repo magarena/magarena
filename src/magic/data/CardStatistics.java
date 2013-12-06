@@ -45,7 +45,7 @@ public class CardStatistics {
 
     private final Collection<MagicCardDefinition> cards;
 
-    private int totalCards;
+    public int totalCards;
     public final int[] totalTypes=new int[NR_OF_TYPES];
 
     private final int[] totalRarity=new int[MagicRarity.length];

@@ -2,10 +2,8 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
 import magic.model.MagicRandom;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
@@ -46,30 +44,47 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
     protected final MagicFrame frame;
     private final MagicPlayerDefinition player;
-
     private final CardTable cardPoolTable;
-    private final CardTable deckTable;
+    private CardTable deckTable;
     private final CardViewer cardViewer;
     private final DeckStatisticsViewer statsViewer;
     private final ExplorerFilterPanel filterPanel;
     private final JButton addButton;
     private final JButton removeButton;
-
     private List<MagicCardDefinition> cardPoolDefs;
     private MagicDeck deckDefs;
+    private final boolean isDeckEditor;
+    private MagicDeck deck;
 
     public ExplorerPanel(final MagicFrame frame) {
-        this(frame, ExplorerPanel.ALL, null, null);
+        this(frame, ExplorerPanel.ALL, null, false);
+    }
+    public ExplorerPanel(final MagicFrame frame, final int mode, final boolean isDeckEditor) {
+        this(frame, mode, null, isDeckEditor);
+    }
+    public ExplorerPanel(final MagicFrame frame, final int mode, final MagicPlayerDefinition player) {
+        this(frame, mode, player, (player != null));
     }
 
-    public ExplorerPanel(
+    private ExplorerPanel(
             final MagicFrame frame,
             final int mode,
             final MagicPlayerDefinition player,
-            final MagicCubeDefinition cube) {
+            final boolean isDeckEditor0) {
 
         this.frame=frame;
         this.player=player;
+        this.isDeckEditor = isDeckEditor0;
+
+        if (isDeckEditor0) {
+            if (player != null) {
+                this.deck = player.getDeck();
+            } else {
+                this.deck = new MagicDeck();
+            }
+        } else {
+            this.deck = null;
+        }
 
         setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
 
@@ -138,12 +153,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         add(leftScrollPane);
 
-        // filters
-        MagicPlayerProfile profile=null;
-        if (isEditingDeck()) {
-            profile=getPlayer().getProfile();
-        }
-        filterPanel = new ExplorerFilterPanel(frame, this, mode, profile, cube);
+        filterPanel = new ExplorerFilterPanel(frame, this, mode);
 
         final JScrollPane filterScrollPane = new JScrollPane(filterPanel);
         filterScrollPane.setBorder(FontsAndBorders.NO_BORDER);
@@ -162,7 +172,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
             cardPoolTable.addMouseListener(new CardPoolMouseListener());
 
-            deckDefs = getPlayer().getDeck();
+            deckDefs = this.deck;
             deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs), true);
             deckTable.addMouseListener(new DeckMouseListener());
 
@@ -176,7 +186,8 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             cardsPanel = cardsSplitPane;
 
             // update deck stats
-            statsViewer.setPlayer(getPlayer());
+            statsViewer.setDeck(this.deck);
+
         } else {
             // no deck
             cardPoolTable = new CardTable(cardPoolDefs, cardViewer);
@@ -233,6 +244,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
              final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
              cardViewer.setCard(cardPoolDefs.get(index),0);
          }
+
     }
 
      private String generatePoolTitle() {
@@ -240,7 +252,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
      }
 
     private boolean isEditingDeck() {
-        return player != null;
+        return (player != null) || this.isDeckEditor;
     }
 
     public MagicPlayerDefinition getPlayer() {
@@ -261,10 +273,10 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
     public void updateDeck() {
         if(isEditingDeck()) {
-            deckDefs = getPlayer().getDeck();
+            deckDefs = this.deck;
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
-            statsViewer.setPlayer(getPlayer());
+            statsViewer.setDeck(deckDefs);
         }
     }
 
@@ -273,7 +285,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
         if (deckCards.size() > 0) {
             for(final MagicCardDefinition card : deckCards) {
-                getPlayer().getDeck().remove(card);
+                this.deck.remove(card);
             }
 
             updateDeck();
@@ -289,7 +301,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
         if (cardPoolCards.size() > 0) {
             for(final MagicCardDefinition card : cardPoolCards) {
-                getPlayer().getDeck().add(card);
+                this.deck.add(card);
             }
 
             updateDeck();
@@ -339,7 +351,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
                         final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
                         if (deckCards.size() > 0) {
                             for(final MagicCardDefinition card : deckCards) {
-                                getPlayer().getDeck().add(card);
+                                deck.add(card);
                             }
 
                             updateDeck();
@@ -355,6 +367,22 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
                 }
             }
         }
+    }
+
+    public void setDeck(final MagicDeck deck0) {
+        if (deck0 != null) {
+            this.deck = deck0;
+            if(isEditingDeck()) {
+                deckDefs = this.deck;
+                deckTable.setTitle(generateDeckTitle(deckDefs));
+                deckTable.setCards(deckDefs);
+                statsViewer.setDeck(deckDefs);
+            }
+        }
+    }
+
+    public MagicDeck getDeck() {
+        return this.deck;
     }
 
 }

@@ -8,8 +8,6 @@ import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import magic.data.CubeDefinitions;
-import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
@@ -112,8 +110,7 @@ public class DuelDecksScreen
             buttons.add(new MenuButton("Deck Editor", new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(screenContent.getDuel().getConfiguration().getCube());
-                    frame.showDeckEditor(screenContent.getSelectedPlayer(), cubeDefinition);
+                    frame.showDeckEditor(screenContent.getSelectedPlayer());
                 }
             }));
             buttons.add(new MenuButton("Swap Decks", new AbstractAction() {
