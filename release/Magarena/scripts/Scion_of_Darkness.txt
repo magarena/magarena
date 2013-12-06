@@ -1,0 +1,12 @@
+name=Scion of Darkness
+url=http://magiccards.info/arc/en/23.html
+image=http://magiccards.info/scans/en/arc/23.jpg
+value=4.317
+rarity=R
+type=Creature
+subtype=Avatar
+cost={5}{B}{B}{B}
+pt=6/6
+timing=main
+ability=trample;cycling {3}
+requires_groovy_code
