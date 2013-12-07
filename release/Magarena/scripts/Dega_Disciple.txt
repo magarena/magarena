@@ -1,0 +1,11 @@
+name=Dega Disciple
+url=http://magiccards.info/ap/en/4.html
+image=http://mtgimage.com/card/dega%20disciple.jpg
+value=3.727
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={W}
+pt=1/1
+ability=pay {B},{T}:Target creature gets -2/-0 until end of turn.;pay {R},{T}:Target creature gets +2/+0 until end of turn.
+timing=main

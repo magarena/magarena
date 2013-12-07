@@ -1,0 +1,11 @@
+name=Dauthi Jackal
+url=http://magiccards.info/ex/en/58.html
+image=http://mtgimage.com/card/dauthi%20jackal.jpg
+value=3.845
+rarity=C
+type=Creature
+subtype=Dauthi,Hound
+cost={2}{B}
+pt=2/1
+ability=shadow;pay {B}{B},{S}:Destroy target blocking creature.
+timing=main

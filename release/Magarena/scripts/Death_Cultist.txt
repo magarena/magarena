@@ -1,0 +1,11 @@
+name=Death Cultist
+url=http://magiccards.info/roe/en/105.html
+image=http://mtgimage.com/card/death%20cultist.jpg
+value=3.282
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={B}
+pt=1/1
+ability=pay {S}:Target player loses 1 life and PN gains 1 life.
+timing=main

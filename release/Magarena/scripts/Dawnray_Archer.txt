@@ -1,0 +1,11 @@
+name=Dawnray Archer
+url=http://magiccards.info/ala/en/39.html
+image=http://mtgimage.com/card/dawnray%20archer.jpg
+value=2.078
+rarity=U
+type=Creature
+subtype=Human,Archer
+cost={2}{U}
+pt=1/1
+ability=exalted;pay {W},{T}:SN deals 1 damage to target attacking or blocking creature.
+timing=main

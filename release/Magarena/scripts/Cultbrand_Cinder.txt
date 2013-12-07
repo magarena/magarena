@@ -1,0 +1,11 @@
+name=Cultbrand Cinder
+url=http://magiccards.info/shm/en/182.html
+image=http://mtgimage.com/card/cultbrand%20cinder.jpg
+value=1.968
+rarity=C
+type=Creature
+subtype=Elemental,Shaman
+cost={4}{B/R}
+pt=3/3
+ability=enters effect Put a -1/-1 counter on target creature.
+timing=main

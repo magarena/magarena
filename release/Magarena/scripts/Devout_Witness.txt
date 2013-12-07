@@ -1,0 +1,11 @@
+name=Devout Witness
+url=http://magiccards.info/mm/en/17.html
+image=http://mtgimage.com/card/devout%20witness.jpg
+value=3.783
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={2}{W}
+pt=2/2
+ability=pay {1}{W},{T},Discard a card:Destroy target artifact or enchantment.
+timing=main

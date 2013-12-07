@@ -1,0 +1,11 @@
+name=Daring Apprentice
+url=http://magiccards.info/9e/en/72.html
+image=http://mtgimage.com/card/daring%20apprentice.jpg
+value=3.289
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{U}
+pt=1/1
+ability=pay {T},{S}:Counter target spell.
+timing=main

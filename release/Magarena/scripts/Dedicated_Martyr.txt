@@ -1,0 +1,11 @@
+name=Dedicated Martyr
+url=http://magiccards.info/od/en/16.html
+image=http://mtgimage.com/card/dedicated%20martyr.jpg
+value=1.929
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability=pay {W},{S}:PN gains 3 life.
+timing=main

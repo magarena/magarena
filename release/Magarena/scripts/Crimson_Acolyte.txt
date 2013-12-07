@@ -1,0 +1,11 @@
+name=Crimson Acolyte
+url=http://magiccards.info/in/en/11.html
+image=http://mtgimage.com/card/crimson%20acolyte.jpg
+value=3.712
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/1
+ability=protection from red;pay {W}:Target creature gains protection from red until end of turn.
+timing=main

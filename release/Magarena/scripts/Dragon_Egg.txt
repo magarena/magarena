@@ -1,0 +1,11 @@
+name=Dragon Egg
+url=http://magiccards.info/m14/en/137.html
+image=http://mtgimage.com/card/dragon%20egg.jpg
+value=3.838
+rarity=U
+type=Creature
+subtype=Dragon
+cost={2}{R}
+pt=0/2
+ability=defender;dies effect PN puts a 2/2 red Dragon creature token with flying onto the battlefield.
+timing=main
