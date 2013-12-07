@@ -1,0 +1,11 @@
+name=Druid Lyrist
+url=http://magiccards.info/od/en/238.html
+image=http://mtgimage.com/card/druid%20lyrist.jpg
+value=3.238
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={G}
+pt=1/1
+ability=pay {G},{T},{S}:Destroy target enchantment.
+timing=main

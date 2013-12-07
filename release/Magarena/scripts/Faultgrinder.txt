@@ -1,0 +1,11 @@
+name=Faultgrinder
+url=http://magiccards.info/cmd/en/122.html
+image=http://mtgimage.com/card/faultgrinder.jpg
+value=1.828
+rarity=C
+type=Creature
+subtype=Elemental
+cost={6}{R}
+pt=4/4
+ability=trample;enters effect Destroy target land.;evoke {4}{R}
+timing=main

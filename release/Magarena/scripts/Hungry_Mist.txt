@@ -1,0 +1,11 @@
+name=Hungry Mist
+url=http://magiccards.info/5e/en/164.html
+image=http://mtgimage.com/card/hungry%20mist.jpg
+value=2.872
+rarity=C
+type=Creature
+subtype=Elemental
+cost={2}{G}{G}
+pt=6/2
+ability=your upkeep effect PN may pay {G}{G}. If you don't, sacrifice SN.
+timing=main

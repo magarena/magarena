@@ -1,0 +1,11 @@
+name=Guardian of Solitude
+url=http://magiccards.info/chk/en/64.html
+image=http://mtgimage.com/card/guardian%20of%20solitude.jpg
+value=2.2
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{U}
+pt=1/2
+ability=spirit or arcane effect Target creature gains flying until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Expendable Troops
+url=http://magiccards.info/ul/en/8.html
+image=http://mtgimage.com/card/expendable%20troops.jpg
+value=3.136
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/1
+ability=pay {T},{S}:SN deals 2 damage to target attacking or blocking creature.
+timing=main

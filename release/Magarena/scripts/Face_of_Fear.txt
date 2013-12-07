@@ -1,0 +1,11 @@
+name=Face of Fear
+url=http://magiccards.info/od/en/134.html
+image=http://mtgimage.com/card/face%20of%20fear.jpg
+value=0.796
+rarity=U
+type=Creature
+subtype=Horror
+cost={5}{B}
+pt=3/4
+ability=pay {2}{B},Discard a card:SN gains fear until end of turn.
+timing=main

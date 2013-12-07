@@ -1,0 +1,11 @@
+name=Flowstone Channeler
+url=http://magiccards.info/ts/en/155.html
+image=http://mtgimage.com/card/flowstone%20channeler.jpg
+value=2.318
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={2}{R}
+pt=2/2
+ability=pay {1}{R},{T},Discard a card:Target creature gets +1/-1 and gains haste until end of turn.
+timing=main

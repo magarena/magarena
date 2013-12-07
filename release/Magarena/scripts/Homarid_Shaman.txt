@@ -1,0 +1,11 @@
+name=Homarid Shaman
+url=http://magiccards.info/fe/en/42.html
+image=http://mtgimage.com/card/homarid%20shaman.jpg
+value=3.551
+rarity=R
+type=Creature
+subtype=Homarid,Shaman
+cost={2}{U}{U}
+pt=2/1
+ability=pay {U}:Tap target green creature.
+timing=main

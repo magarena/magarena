@@ -1,0 +1,11 @@
+name=Icatian Lieutenant
+url=http://magiccards.info/fe/en/151.html
+image=http://mtgimage.com/card/icatian%20lieutenant.jpg
+value=2.375
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}{W}
+pt=1/2
+ability=pay {1}{W}:Target Soldier creature gets +1/+0 until end of turn.
+timing=main

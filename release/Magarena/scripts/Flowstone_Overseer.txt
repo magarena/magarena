@@ -1,0 +1,11 @@
+name=Flowstone Overseer
+url=http://magiccards.info/ne/en/82.html
+image=http://mtgimage.com/card/flowstone%20overseer.jpg
+value=4.177
+rarity=R
+type=Creature
+subtype=Beast
+cost={2}{R}{R}{R}
+pt=4/4
+ability=pay {R}{R}:Target creature gets +1/-1 until end of turn.
+timing=main

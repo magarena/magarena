@@ -1,0 +1,11 @@
+name=Duergar Assailant
+url=http://magiccards.info/eve/en/136.html
+image=http://mtgimage.com/card/duergar%20assailant.jpg
+value=2.529
+rarity=C
+type=Creature
+subtype=Dwarf,Soldier
+cost={R/W}
+pt=1/1
+ability=pay {S}:SN deals 1 damage to target attacking or blocking creature.
+timing=main

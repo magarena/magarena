@@ -1,0 +1,11 @@
+name=Ghost Warden
+url=http://magiccards.info/10e/en/16.html
+image=http://mtgimage.com/card/ghost%20warden.jpg
+value=2.829
+rarity=C
+type=Creature
+subtype=Spirit
+cost={1}{W}
+pt=1/1
+ability=pay {T}:Target creature gets +1/+1 until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Horror of the Dim
+url=http://magiccards.info/gtc/en/68.html
+image=http://mtgimage.com/card/horror%20of%20the%20dim.jpg
+value=2.322
+rarity=C
+type=Creature
+subtype=Horror
+cost={4}{B}
+pt=3/4
+ability=pay {U}:SN gains hexproof until end of turn.
+timing=main

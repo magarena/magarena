@@ -1,0 +1,11 @@
+name=Haazda Exonerator
+url=http://magiccards.info/di/en/11.html
+image=http://mtgimage.com/card/haazda%20exonerator.jpg
+value=2.069
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability=pay {T},{S}:Destroy target Aura.
+timing=main

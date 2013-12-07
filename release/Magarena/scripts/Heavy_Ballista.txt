@@ -1,0 +1,11 @@
+name=Heavy Ballista
+url=http://magiccards.info/7e/en/19.html
+image=http://mtgimage.com/card/heavy%20ballista.jpg
+value=3.015
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=2/3
+ability=pay {T}:SN deals 2 damage to target attacking or bocking creature.
+timing=main

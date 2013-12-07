@@ -1,0 +1,11 @@
+name=Ephemeron
+url=http://magiccards.info/ex/pt/31.html
+image=http://mtgimage.com/card/ephemeron.jpg
+value=3.427
+rarity=R
+type=Creature
+subtype=Illusion
+cost={4}{U}{U}
+pt=4/4
+ability=flying;pay Discard a card:Return SN to its owner's hand.
+timing=main

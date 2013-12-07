@@ -1,0 +1,11 @@
+name=Fledgling Imp
+url=http://magiccards.info/od/en/137.html
+image=http://mtgimage.com/card/fledgling%20imp.jpg
+value=1.212
+rarity=C
+type=Creature
+subtype=Imp
+cost={2}{B}
+pt=2/2
+ability=pay {B},Discard a card:SN gains flying until end of turn.
+timing=main

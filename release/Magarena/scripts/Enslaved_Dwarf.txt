@@ -1,0 +1,11 @@
+name=Enslaved Dwarf
+url=http://magiccards.info/tr/en/96.html
+image=http://mtgimage.com/card/enslaved%20dwarf.jpg
+value=1.667
+rarity=C
+type=Creature
+subtype=Dwarf
+cost={R}
+pt=1/1
+ability=pay {R},{S}:Target black creature gets +1/+0 and gains first strike until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Fyndhorn Brownie
+url=http://magiccards.info/6e/en/231.html
+image=http://mtgimage.com/card/fyndhorn%20brownie.jpg
+value=1.676
+rarity=C
+type=Creature
+subtype=Ouphe
+cost={2}{G}
+pt=1/1
+ability=pay {2}{G},{T}:Untap target creature.
+timing=main

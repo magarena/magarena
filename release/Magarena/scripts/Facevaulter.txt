@@ -1,0 +1,11 @@
+name=Facevaulter
+url=http://magiccards.info/mma/en/85.html
+image=http://mtgimage.com/card/facevaulter.jpg
+value=2.85
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={B}
+pt=1/1
+ability=pay {B},Sacrifice a Goblin:SN gets +2/+2 until end of turn.
+timing=main

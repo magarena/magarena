@@ -1,0 +1,11 @@
+name=Goldmeadow Harrier
+url=http://magiccards.info/ddf/en/3.html
+image=http://mtgimage.com/card/goldmeadow%20harrier.jpg
+value=4.122
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={W}
+pt=1/1
+ability=pay {W},{T}:Tap target creature.
+timing=main

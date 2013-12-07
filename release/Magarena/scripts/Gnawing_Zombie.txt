@@ -1,0 +1,11 @@
+name=Gnawing Zombie
+url=http://magiccards.info/m14/en/99.html
+image=http://mtgimage.com/card/gnawing%20zombie.jpg
+value=3.32
+rarity=U
+type=Creature
+subtype=Zombie
+cost={1}{B}
+pt=1/3
+ability=pay {1}{B},Sacrifice a creature:Target player loses 1 life and PN  gains 1 life.
+timing=main

@@ -1,0 +1,11 @@
+name=Heartstabber Mosquito
+url=http://magiccards.info/zen/en/97.html
+image=http://mtgimage.com/card/heartstabber%20mosquito.jpg
+value=2.615
+rarity=C
+type=Creature
+subtype=Insect
+cost={3}{B}
+pt=2/2
+ability=kicker {2}{B};flying;enters kicked effect Destroy target creature.
+timing=main

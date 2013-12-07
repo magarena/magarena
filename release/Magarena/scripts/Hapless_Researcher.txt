@@ -1,0 +1,11 @@
+name=Hapless Researcher
+url=http://magiccards.info/ju/en/42.html
+image=http://mtgimage.com/card/hapless%20researcher.jpg
+value=2.791
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability=pay {S}:PN draws a card, then discards a card.
+timing=main
