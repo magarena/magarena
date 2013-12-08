@@ -1,0 +1,11 @@
+name=Goldmeadow Lookout
+url=http://magiccards.info/fut/en/22.html
+image=http://mtgimage.com/card/goldmeadow%20lookout.jpg
+value=2.737
+rarity=U
+type=Creature
+subtype=Kithkin,Spellshaper
+cost={3}{W}
+pt=2/2
+ability=pay {W},{T},Discard a card:PN puts a 1/1 white Kithkin Soldier creature token named Goldmeadow Harrier onto the battlefield.
+timing=main

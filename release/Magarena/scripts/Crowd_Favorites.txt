@@ -1,0 +1,11 @@
+name=Crowd Favorites
+url=http://magiccards.info/on/en/15.html
+image=http://mtgimage.com/card/crowd%20favorites.jpg
+value=2.067
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={6}{W}
+pt=4/4
+ability=pay {3}{W}:Tap target creature.;pay {3}{W}:SN gets +0/+5 until end of turn.
+timing=main

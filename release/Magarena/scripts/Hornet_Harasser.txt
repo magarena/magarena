@@ -1,0 +1,11 @@
+name=Hornet Harasser
+url=http://magiccards.info/lw/en/118.html
+image=http://mtgimage.com/card/hornet%20harasser.jpg
+value=2.62
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{B}{B}
+pt=2/2
+ability=dies effect Target creature gets -2/-2 until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Flame Spirit
+url=http://magiccards.info/6e/en/179.html
+image=http://mtgimage.com/card/flame%20spirit.jpg
+value=1.889
+rarity=U
+type=Creature
+subtype=Elemental,Spirit
+cost={4}{R}
+pt=2/3
+ability=pay {R}:SN gets +1/+0 until end of turn.
+timing=main

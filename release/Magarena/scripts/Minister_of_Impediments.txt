@@ -1,0 +1,11 @@
+name=Minister of Impediments
+url=http://magiccards.info/di/en/144.html
+image=http://mtgimage.com/card/minister%20of%20impediments.jpg
+value=3.118
+rarity=C
+type=Creature
+subtype=Human,Advisor
+cost={2}{W/U}
+pt=1/1
+ability=pay {T}: Tap target creature.
+timing=main

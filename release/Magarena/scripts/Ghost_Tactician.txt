@@ -1,0 +1,11 @@
+name=Ghost Tactician
+url=http://magiccards.info/pc/en/6.html
+image=http://mtgimage.com/card/ghost%20tactician.jpg
+value=1.183
+rarity=C
+type=Creature
+subtype=Spirit,Spellshaper
+cost={4}{W}
+pt=2/5
+ability=pay {W},Discard a card:Creatures PN controls get +1/+0 until end of turn.
+timing=main

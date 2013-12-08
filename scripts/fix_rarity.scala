@@ -49,6 +49,7 @@ for (card <- meta \ "card") {
         .replace("á","a")
         .replace("à","a")
         .replace("é","e")
+        .replace("ú","u")
     name2card += (name -> card)
 }
 

@@ -1,0 +1,9 @@
+name=2/2 red Dragon creature token with flying
+token=Dragon
+image=http://magiccards.info/extras/token/magic-2014/dragon.jpg
+value=2
+type=Creature
+Subtype=Dragon
+ability=flying;pay {R}:SN gets +1/+0 until end of turn.
+cost={0}
+pt=2/2

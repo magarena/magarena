@@ -1,0 +1,11 @@
+name=Goblin Sledder
+url=http://magiccards.info/evg/en/41.html
+image=http://mtgimage.com/card/goblin%20sledder.jpg
+value=3.963
+rarity=C
+type=Creature
+subtype=Goblin
+cost={R}
+pt=1/1
+ability=pay Sacrifice a Goblin:Target creature gets +1/+1 until end of turn.
+timing=main

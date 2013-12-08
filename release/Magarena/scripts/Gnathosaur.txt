@@ -1,0 +1,11 @@
+name=Gnathosaur
+url=http://magiccards.info/mbs/en/63.html
+image=http://mtgimage.com/card/gnathosaur.jpg
+value=2.009
+rarity=C
+type=Creature
+subtype=Lizard
+cost={4}{R}{R}
+pt=5/4
+ability=pay Sacrifice an artifact:SN gains trample until end of turn.
+timing=main

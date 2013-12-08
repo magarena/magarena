@@ -1,0 +1,11 @@
+name=Jacques le Vert
+url=http://magiccards.info/lg/en/272.html
+image=http://mtgimage.com/card/jacques%20le%20vert.jpg
+value=3.587
+rarity=R
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={1}{R}{G}{W}
+pt=3/2
+ability=lord green creatures you control get +0/+2
+timing=main

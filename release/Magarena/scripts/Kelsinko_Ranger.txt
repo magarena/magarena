@@ -1,0 +1,11 @@
+name=Kelsinko Ranger
+url=http://magiccards.info/ia/en/257.html
+image=http://mtgimage.com/card/kelsinko%20ranger.jpg
+value=2.433
+rarity=C
+type=Creature
+subtype=Human
+cost={W}
+pt=1/1
+ability=pay {1}{W}:Target green creature gains first strike until end of turn.
+timing=main

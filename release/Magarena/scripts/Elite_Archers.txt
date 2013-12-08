@@ -1,0 +1,11 @@
+name=Elite Archers
+url=http://magiccards.info/8e/en/18.html
+image=http://mtgimage.com/card/elite%20archers.jpg
+value=2.097
+rarity=R
+type=Creature
+subtype=Human,Soldier,Archer
+cost={5}{W}
+pt=3/3
+ability=pay {T}:SN deals 3 damage to target attacking or blocking creature.
+timing=main

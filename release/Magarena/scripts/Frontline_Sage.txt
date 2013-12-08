@@ -1,0 +1,11 @@
+name=Frontline Sage
+url=http://magiccards.info/cfx/en/28.html
+image=http://mtgimage.com/card/frontline%20sage.jpg
+value=2.081
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=0/1
+ability=exalted;pay {U},{T}:PN draws a card, then discards a card.
+timing=main

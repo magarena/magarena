@@ -1,0 +1,11 @@
+name=Death's-Head Buzzard
+url=http://magiccards.info/sc/en/63.html
+image=http://mtgimage.com/card/death's-head%20buzzard.jpg
+value=3.364
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{B}{B}
+pt=2/1
+ability=flying;dies effect all creatures get -1/-1 until end of turn.
+timing=main

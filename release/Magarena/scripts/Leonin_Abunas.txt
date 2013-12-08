@@ -1,0 +1,11 @@
+name=Leonin Abunas
+url=http://magiccards.info/arc/en/1.html
+image=http://mtgimage.com/card/leonin%20abunas.jpg
+value=4.017
+rarity=R
+type=Creature
+subtype=Cat,Cleric
+cost={3}{W}
+pt=2/5
+ability=lord artifacts you control have hexproof
+timing=main

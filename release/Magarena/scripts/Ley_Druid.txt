@@ -1,0 +1,11 @@
+name=Ley Druid
+url=http://magiccards.info/9e/en/251.html
+image=http://mtgimage.com/card/ley%20druid.jpg
+value=2.645
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={2}{G}
+pt=1/1
+ability=pay {T}:Untap target land.
+timing=main

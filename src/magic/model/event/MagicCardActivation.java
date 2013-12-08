@@ -68,7 +68,6 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
             if (usesStack) {
                 final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                     card,
-                    card.getController(),
                     MagicCardActivation.this,
                     game.getPayedCost()
                 );

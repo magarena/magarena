@@ -1,0 +1,11 @@
+name=Kithkin Daggerdare
+url=http://magiccards.info/lw/en/223.html
+image=http://mtgimage.com/card/kithkin%20daggerdare.jpg
+value=2.391
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={1}{G}
+pt=1/1
+ability=pay {G},{T}:Target attacking creature gets +2/+2 until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Master Decoy
+url=http://magiccards.info/9e/en/27.html
+image=http://mtgimage.com/card/master%20decoy.jpg
+value=3.869
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=1/2
+ability=pay {W}:Tap target creature.
+timing=main

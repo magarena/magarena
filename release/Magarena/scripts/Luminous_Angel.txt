@@ -1,0 +1,11 @@
+name=Luminous Angel
+url=http://magiccards.info/dvd/en/12.html
+image=http://mtgimage.com/card/luminous%20angel.jpg
+value=3.521
+rarity=R
+type=Creature
+subtype=Angel
+cost={4}{W}{W}{W}
+pt=4/4
+ability=flying;your upkeep effect PN may PN puts a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=main

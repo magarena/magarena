@@ -412,7 +412,55 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    GainPumpChosen(
+    PumpGroup(
+        "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
+        MagicTiming.Pump, 
+        "Pump"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
+                        event.getPlayer(),
+                        filter
+                    );
+                    for (final MagicPermanent creature : targets) {
+                        game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                    }
+                }
+            };
+        }
+    },
+    PumpGainSelf(
+        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) and gains (?<ability>[^\\.]*) until end of turn.", 
+        MagicTiming.Pump
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
+                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),ability));
+                }
+            };
+        }
+        public String getName(final String rule) {
+            final String ability = matched(rule).group("ability");
+            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+        }
+    },
+    PumpGainChosen(
         "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>[^\\.]*) until end of turn.", 
         MagicTargetHint.Positive
     ) {
@@ -471,11 +519,45 @@ public enum MagicRuleEventAction {
                     return MagicPumpTargetPicker.create(); 
             }
         }
+        public String getName(final String rule) {
+            final String ability = matched(rule).group("ability");
+            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+        }
     },
-    PumpGroup(
-        "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
-        MagicTiming.Pump, 
-        "Pump"
+    WeakenChosen(
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal, 
+        "Weaken"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        }
+                    });
+                }
+            };
+        }
+        public MagicTargetPicker<?> getPicker(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] args = matcher.group("pt").replace('+','0').split("/");
+            final int p = -Integer.parseInt(args[0]);
+            final int t = -Integer.parseInt(args[1]);
+            return new MagicWeakenTargetPicker(p, t);
+        }
+    },
+    WeakenGroup(
+        "(?<group>[^\\.]*) get (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        MagicTiming.Removal, 
+        "Weaken"
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
@@ -495,6 +577,55 @@ public enum MagicRuleEventAction {
                     }
                 }
             };
+        }
+    },
+    ModPTChosen(
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn.", 
+        MagicTiming.Removal, 
+        "Pump"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                        }
+                    });
+                }
+            };
+        }
+    },
+    ModPTGainChosen(
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>[^\\.]*) until end of turn.", 
+        MagicTiming.Removal
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new MagicGainAbilityAction(creature,ability));
+                        }
+                    });
+                }
+            };
+        }
+        public String getName(final String rule) {
+            final String ability = matched(rule).group("ability");
+            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
         }
     },
     GainSelf(
@@ -721,61 +852,6 @@ public enum MagicRuleEventAction {
                         amount,
                         true
                     ));
-                }
-            };
-        }
-    },
-    Weaken(
-        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
-        MagicTargetHint.Negative, 
-        MagicTiming.Removal, 
-        "Weaken"
-    ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
-            final String[] pt = matcher.group("pt").replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
-                        }
-                    });
-                }
-            };
-        }
-        public MagicTargetPicker<?> getPicker(final String rule) {
-            final Matcher matcher = matched(rule);
-            final String[] args = matcher.group("pt").replace('+','0').split("/");
-            final int p = -Integer.parseInt(args[0]);
-            final int t = -Integer.parseInt(args[1]);
-            return new MagicWeakenTargetPicker(p, t);
-        }
-    },
-    WeakenGroup(
-        "(?<group>[^\\.]*) get (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
-        MagicTiming.Removal, 
-        "Weaken"
-    ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
-            final String[] pt = matcher.group("pt").replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        filter
-                    );
-                    for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
-                    }
                 }
             };
         }
@@ -1017,6 +1093,10 @@ public enum MagicRuleEventAction {
     
     private MagicRuleEventAction(final String aPattern, final MagicTargetHint aHint) {
         this(aPattern, aHint, MagicDefaultTargetPicker.create(), MagicTiming.None, "", MagicEvent.NO_ACTION);
+    }
+    
+    private MagicRuleEventAction(final String aPattern, final MagicTiming timing) {
+        this(aPattern, MagicTargetHint.None, MagicDefaultTargetPicker.create(), timing, "", MagicEvent.NO_ACTION);
     }
     
     private MagicRuleEventAction(

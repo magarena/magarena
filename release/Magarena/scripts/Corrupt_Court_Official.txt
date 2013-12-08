@@ -1,0 +1,11 @@
+name=Corrupt Court Official
+url=http://magiccards.info/p3k/en/71.html
+image=http://mtgimage.com/card/corrupt%20court%20official.jpg
+value=3.625
+rarity=U
+type=Creature
+subtype=Human,Advisor
+cost={1}{B}
+pt=1/1
+ability=enters effect Target opponent discards a card.
+timing=main

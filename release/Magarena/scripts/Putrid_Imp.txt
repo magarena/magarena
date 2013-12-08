@@ -1,0 +1,12 @@
+name=Putrid Imp
+url=http://magiccards.info/pd3/en/1.html
+image=http://mtgimage.com/card/putrid%20imp.jpg
+value=4.191
+rarity=C
+type=Creature
+subtype=Zombie,Imp
+cost={B}
+pt=1/1
+timing=main
+ability=pay Discard a card: SN gains flying until end of turn.
+requires_groovy_code

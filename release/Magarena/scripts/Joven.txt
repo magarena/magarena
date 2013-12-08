@@ -1,0 +1,11 @@
+name=Joven
+url=http://magiccards.info/hl/pt/97.html
+image=http://mtgimage.com/card/joven.jpg
+value=2.918
+rarity=C
+type=Legendary,Creature
+subtype=Human,Rogue
+cost={3}{R}{R}
+pt=3/3
+ability=pay {R}{R}{R},{T}:Destroy target noncreature artifact.
+timing=main

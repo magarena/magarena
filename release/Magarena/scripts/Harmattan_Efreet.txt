@@ -1,0 +1,11 @@
+name=Harmattan Efreet
+url=http://magiccards.info/6e/en/73.html
+image=http://mtgimage.com/card/harmattan%20efreet.jpg
+value=2.217
+rarity=U
+type=Creature
+subtype=Efreet
+cost={2}{U}{U}
+pt=2/2
+ability=flying;pay {1}{U}{U}:Target creature gains flying until end of turn.
+timing=main

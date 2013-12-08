@@ -286,7 +286,7 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetChoice.Negative("target creature with power 4 or greater");
     
     public static final MagicTargetChoice NEG_TARGET_CREATURE_PLUSONE_COUNTER = 
-        MagicTargetChoice.Negative("target creature");
+        MagicTargetChoice.Negative("target creature with +1/+1 counter");
     
     public static final MagicTargetChoice TARGET_CREATURE_PLUSONE_COUNTER = 
         new MagicTargetChoice("target creature with +1/+1 counter");

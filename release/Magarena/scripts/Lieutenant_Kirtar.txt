@@ -1,0 +1,11 @@
+name=Lieutenant Kirtar
+url=http://magiccards.info/od/en/29.html
+image=http://mtgimage.com/card/lieutenant%20kirtar.jpg
+value=3.95
+rarity=R
+type=Legendary,Creature
+subtype=Bird,Soldier
+cost={1}{W}{W}
+pt=2/2
+ability=flying;pay {1}{W}:Exile target attacking creature.
+timing=main

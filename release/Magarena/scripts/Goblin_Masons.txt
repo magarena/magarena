@@ -1,0 +1,11 @@
+name=Goblin Masons
+url=http://magiccards.info/ud/en/86.html
+image=http://mtgimage.com/card/goblin%20masons.jpg
+value=2.639
+rarity=C
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=2/1
+ability=dies effect Destroy target Wall.
+timing=main

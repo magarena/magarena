@@ -1,0 +1,11 @@
+name=Krosan Constrictor
+url=http://magiccards.info/tr/en/129.html
+image=http://mtgimage.com/card/krosan%20constrictor.jpg
+value=1.575
+rarity=C
+type=Creature
+subtype=Snake
+cost={3}{G}
+pt=2/2
+ability=swampwalk;pay {T}:Target black creature gets -2/-0 until end of turn.
+timing=main

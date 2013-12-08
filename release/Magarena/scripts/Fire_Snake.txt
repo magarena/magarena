@@ -1,0 +1,11 @@
+name=Fire Snake
+url=http://magiccards.info/po/en/132.html
+image=http://mtgimage.com/card/fire%20snake.jpg
+value=2.768
+rarity=C
+type=Creature
+subtype=Snake
+cost={4}{R}
+pt=3/1
+ability=dies effect Destroy target land.
+timing=main

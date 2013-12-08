@@ -1,0 +1,11 @@
+name=Foul Familiar
+url=http://magiccards.info/me2/en/90.html
+image=http://mtgimage.com/card/foul%20familiar.jpg
+value=3.13
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{B}
+pt=3/1
+ability=can't block;pay {B},Pay 1 life:Return SN to its owner's hand.
+timing=main
