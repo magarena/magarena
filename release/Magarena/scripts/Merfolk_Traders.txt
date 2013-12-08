@@ -1,0 +1,11 @@
+name=Merfolk Traders
+url=http://magiccards.info/wl/en/43.html
+image=http://mtgimage.com/card/merfolk%20traders.jpg
+value=2.802
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={1}{U}
+pt=1/2
+ability=enters effect PN draws a card, then discards a card.
+timing=main

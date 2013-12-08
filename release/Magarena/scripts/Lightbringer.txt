@@ -1,0 +1,11 @@
+name=Lightbringer
+url=http://magiccards.info/ne/en/11.html
+image=http://mtgimage.com/card/lightbringer.jpg
+value=3.238
+rarity=C
+type=Creature
+subtype=Kor,Rebel
+cost={2}{W}
+pt=2/2
+ability=pay {T},{S}:Exile target black creature.
+timing=main

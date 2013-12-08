@@ -1,0 +1,11 @@
+name=Kris Mage
+url=http://magiccards.info/mm/en/195.html
+image=http://mtgimage.com/card/kris%20mage.jpg
+value=2.973
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={R}
+pt=1/1
+ability=pay {R},{T},Discard a card:SN deals 1 damage to target creature or player.
+timing=main

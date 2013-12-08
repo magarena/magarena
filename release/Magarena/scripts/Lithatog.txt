@@ -1,0 +1,11 @@
+name=Lithatog
+url=http://magiccards.info/od/en/289.html
+image=http://mtgimage.com/card/lithatog.jpg
+value=2.617
+rarity=U
+type=Creature
+subtype=Atog
+cost={1}{R}{G}
+pt=1/2
+ability=pay Sacrifice an artifact:SN gets +1/+1 until end of turn.;pay Sacrifice a land:SN gets +1/+1 until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Juniper Order Druid
+url=http://magiccards.info/ia/en/139.html
+image=http://mtgimage.com/card/juniper%20order%20druid.jpg
+value=3.161
+rarity=C
+type=Creature
+subtype=Human,Cleric,Druid
+cost={2}{G}
+pt=1/1
+ability=pay {T}:Untap target land.
+timing=main

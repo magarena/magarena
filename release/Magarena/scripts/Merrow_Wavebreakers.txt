@@ -1,0 +1,11 @@
+name=Merrow Wavebreakers
+url=http://magiccards.info/shm/en/44.html
+image=http://mtgimage.com/card/merrow%20wavebreakers.jpg
+value=1.955
+rarity=C
+type=Creature
+subtype=Merfolk,Soldier
+cost={4}{U}
+pt=3/3
+ability=pay {1}{U},{Q}:SN gains flying until end of turn.
+timing=main

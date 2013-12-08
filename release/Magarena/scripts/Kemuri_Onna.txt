@@ -1,0 +1,11 @@
+name=Kemuri-Onna
+url=http://magiccards.info/sok/en/76.html
+image=http://mtgimage.com/card/kemuri-onna.jpg
+value=2.268
+rarity=U
+type=Creature
+subtype=Spirit
+cost={4}{B}
+pt=3/3
+ability=enters effect Target player discards a card.;spirit or arcane effect PN may return SN to its owner's hand.
+timing=main

@@ -1,0 +1,11 @@
+name=Mindwarper
+url=http://magiccards.info/sh/en/14.html
+image=http://mtgimage.com/card/mindwarper.jpg
+value=2.956
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{B}{B}
+pt=0/0
+ability=enters with +1/+1 3;pay {2}{B},{+1/+1},{Sorcery}:Target player discards a card.
+timing=main

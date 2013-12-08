@@ -1,0 +1,11 @@
+name=Kami of the Waning Moon
+url=http://magiccards.info/chk/en/120.html
+image=http://mtgimage.com/card/kami%20of%20the%20waning%20moon.jpg
+value=2.086
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{B}
+pt=1/1
+ability=spirit or arcane effect Target creature gains fear until end of turn.
+timing=main

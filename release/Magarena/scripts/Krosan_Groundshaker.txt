@@ -1,0 +1,11 @@
+name=Krosan Groundshaker
+url=http://magiccards.info/on/en/271.html
+image=http://mtgimage.com/card/krosan%20groundshaker.jpg
+value=3.391
+rarity=U
+type=Creature
+subtype=Beast
+cost={4}{G}{G}{G}
+pt=6/6
+ability=pay {G}:Target Beast creature gains trample until end of turn.
+timing=main

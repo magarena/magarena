@@ -1,0 +1,11 @@
+name=Leonin Armorguard
+url=http://magiccards.info/arb/en/72.html
+image=http://mtgimage.com/card/leonin%20armorguard.jpg
+value=2.804
+rarity=C
+type=Creature
+subtype=Cat,Soldier
+cost={2}{G}{W}
+pt=3/3
+ability=enters effect Creatures PN control get +1/+1 until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Llanowar Vanguard
+url=http://magiccards.info/in/en/197.html
+image=http://mtgimage.com/card/llanowar%20vanguard.jpg
+value=1.595
+rarity=C
+type=Creature
+subtype=Dryad
+cost={2}{G}
+pt=1/1
+ability=pay {T}:SN gets +0/+4 until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Ivy Dancer
+url=http://magiccards.info/rav/en/171.html
+image=http://mtgimage.com/card/ivy%20dancer.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Dryad,Shaman
+cost={2}{G}
+pt=1/2
+ability=pay {T}:Target creature gains forestwalk until end of turn.
+timing=main
