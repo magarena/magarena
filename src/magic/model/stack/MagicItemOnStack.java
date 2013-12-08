@@ -27,7 +27,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
 
     private final MagicSource source;
     private final MagicPlayer controller;
-    private final MagicEvent event;
+    private final MagicEvent event;              //may be null
     private final MagicActivation<?> activation; //may be null
     private final long id;
 
@@ -44,14 +44,9 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent) {
         this(aSource, aController, aEvent, null);
     }
-
-    //hack for MagicCardOnStack
-    MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicCardEvent cardEvent, final MagicPayedCost payedCost) {
-        source = aSource;
-        controller = aController;
-        event = cardEvent.getEvent((MagicCardOnStack)this, payedCost);
-        activation = null;
-        id = aSource.getGame().getUniqueId();
+    
+    MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController) {
+        this(aSource, aController, null, null);
     }
 
     MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
@@ -95,7 +90,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
 
     public boolean hasChoice() {
-        return event.hasChoice();
+        return getEvent().hasChoice();
     }
 
     public void setChoiceResults(final Object[] choiceResults) {
@@ -122,7 +117,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
 
     public void resolve(final MagicGame game) {
-        game.executeEvent(event,choiceResults);
+        game.executeEvent(getEvent(),choiceResults);
     }
 
     @Override
@@ -131,7 +126,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
 
     public String getDescription() {
-        return event.getDescription(choiceResults);
+        return getEvent().getDescription(choiceResults);
     }
 
     @Override
@@ -210,7 +205,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
             source != null ?  source.getStateId() : -1L,
             controller != null ? controller.getId() : -1L,
             activation != null ? activation.hashCode() : -1L,
-            event != null ? event.getStateId() : -1L,
+            getEvent() != null ? getEvent().getStateId() : -1L,
             getStateId(choiceResults, 0),
             getStateId(choiceResults, 1),
             getStateId(choiceResults, 2),

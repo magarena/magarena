@@ -10,6 +10,8 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicType;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicObject;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicSourceActivation;
@@ -26,23 +28,32 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
     private final MagicPayedCost payedCost;
     private final MagicCardEvent cardEvent;
+    private final MagicEvent event;
+    private final MagicCardDefinition cardDef;
 
-    public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicCardEvent aCardEvent, final MagicPayedCost aPayedCost) {
-        super(card, controller, aCardEvent, aPayedCost);
+    public MagicCardOnStack(
+        final MagicCard card,
+        final MagicObject obj,
+        final MagicPlayer controller,
+        final MagicCardEvent aCardEvent, 
+        final MagicPayedCost aPayedCost) {
+        super(card, controller);
         payedCost = aPayedCost;
         cardEvent = aCardEvent;
+        cardDef = obj.getCardDefinition();
+        event = aCardEvent.getEvent(this, aPayedCost);
     }
 
     public MagicCardOnStack(final MagicCard card,final MagicCardEvent aCardEvent, final MagicPayedCost aPayedCost) {
-        this(card, card.getController(), aCardEvent, aPayedCost);
+        this(card, card, card.getController(), aCardEvent, aPayedCost);
     }
 
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost aPayedCost) {
-        this(card, controller, card.getCardDefinition().getCardEvent(), aPayedCost);
+        this(card, card, controller, card.getCardDefinition().getCardEvent(), aPayedCost);
     }
 
     public MagicCardOnStack(final MagicCard card,final MagicPayedCost aPayedCost) {
-        this(card, card.getController(), card.getCardDefinition().getCardEvent(), aPayedCost);
+        this(card, card.getCardDefinition().getCardEvent(), aPayedCost);
     }
 
     private MagicCardOnStack(final MagicCopyMap copyMap, final MagicCardOnStack cardOnStack) {
@@ -50,6 +61,8 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         payedCost = copyMap.copy(cardOnStack.payedCost);
         moveLocation = cardOnStack.moveLocation;
         cardEvent = cardOnStack.cardEvent;
+        cardDef = cardOnStack.cardDef;
+        event = cardOnStack.event;
     }
 
     public MagicCardOnStack copyCardOnStack(final MagicPlayer player) {
@@ -60,6 +73,16 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
             copyCardOnStack.setChoiceResults(Arrays.copyOf(choiceResults,choiceResults.length));
         }
         return copyCardOnStack;
+    }
+    
+    @Override
+    public MagicCardDefinition getCardDefinition() {
+        return cardDef;
+    }
+    
+    @Override
+    public MagicEvent getEvent() {
+        return event;
     }
     
     @Override
