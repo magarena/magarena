@@ -16,7 +16,6 @@ import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
@@ -52,7 +51,6 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 72);
     private static final Dimension SEARCH_HOLDER_PANEL_SIZE = new Dimension(150, 72);
 
-    private final JFrame frame;
     private final ExplorerPanel explorerPanel;
     private final ButtonControlledPopup typePopup;
     private final JCheckBox[] typeCheckBoxes;
@@ -73,11 +71,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final JButton resetButton;
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
-    public ExplorerFilterPanel(
-            final JFrame frame,
-            final ExplorerPanel explorerPanel,
-            final int mode) {
-        this.frame = frame;
+    public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
+
         this.explorerPanel=explorerPanel;
 
         disableUpdate = false;
@@ -192,7 +187,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         selectButton.setPreferredSize(BUTTON_SIZE);
         filterPanel.add(selectButton, BorderLayout.CENTER);
 
-        final ButtonControlledPopup pop = new ButtonControlledPopup(frame, selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
+        final ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
         pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
         selectButton.addActionListener(new PopupCloser(pop));
         return pop;

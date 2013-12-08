@@ -2,8 +2,10 @@ package magic.ui.widget;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
+
+import magic.MagicMain;
+
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -27,11 +29,11 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 
     private boolean popupJustToggled;
 
-    public ButtonControlledPopup(final JFrame frame, final JButton toggleButton, final String hidePopupButtonText, final String showPopupButtonText) {
+    public ButtonControlledPopup(JButton toggleButton, final String hidePopupButtonText, final String showPopupButtonText) {
         this.invokePopupButton = toggleButton;
         this.hidePopupButtonText = hidePopupButtonText;
         this.showPopupButtonText = showPopupButtonText;
-        this.dialog = new JDialog(frame);
+        this.dialog = new JDialog(MagicMain.rootFrame);
         this.timer = new Timer();
 
         setBorder(FontsAndBorders.UP_BORDER);

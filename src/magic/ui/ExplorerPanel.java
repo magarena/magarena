@@ -1,9 +1,10 @@
 package magic.ui;
 
+import magic.MagicMain;
 import magic.data.CardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.model.MagicPlayerDefinition;
+import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
@@ -33,57 +34,42 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
-    public static final int ALL = 0;
-    public static final int LAND = 1;
-    public static final int SPELL = 2;
-
     private static final String ADD_BUTTON_TEXT = "Add";
     private static final String REMOVE_BUTTON_TEXT = "Remove";
     private static final String CARD_POOL_TITLE = "Card Pool";
     private static final int SPACING=10;
 
-    protected final MagicFrame frame;
-    private final MagicPlayerDefinition player;
-    private final CardTable cardPoolTable;
+    private CardTable cardPoolTable;
     private CardTable deckTable;
-    private final CardViewer cardViewer;
-    private final DeckStatisticsViewer statsViewer;
-    private final ExplorerFilterPanel filterPanel;
-    private final JButton addButton;
-    private final JButton removeButton;
+    private CardViewer cardViewer;
+    private DeckStatisticsViewer statsViewer;
+    private ExplorerFilterPanel filterPanel;
+    private JButton addButton;
+    private JButton removeButton;
     private List<MagicCardDefinition> cardPoolDefs;
     private MagicDeck deckDefs;
     private final boolean isDeckEditor;
     private MagicDeck deck;
+    private MagicDeck originalDeck;
 
-    public ExplorerPanel(final MagicFrame frame) {
-        this(frame, ExplorerPanel.ALL, null, false);
+    // CTR - Card Explorer
+    public ExplorerPanel() {
+        this.isDeckEditor = false;
+        setupExplorerPanel(null);
     }
-    public ExplorerPanel(final MagicFrame frame, final int mode, final boolean isDeckEditor) {
-        this(frame, mode, null, isDeckEditor);
+    // CTR - Deck Editor
+    public ExplorerPanel(final MagicDeck deck) {
+        this.isDeckEditor = true;
+        setupExplorerPanel(deck);
     }
-    public ExplorerPanel(final MagicFrame frame, final int mode, final MagicPlayerDefinition player) {
-        this(frame, mode, player, (player != null));
-    }
 
-    private ExplorerPanel(
-            final MagicFrame frame,
-            final int mode,
-            final MagicPlayerDefinition player,
-            final boolean isDeckEditor0) {
+    private void setupExplorerPanel(final MagicDeck deck0) {
 
-        this.frame=frame;
-        this.player=player;
-        this.isDeckEditor = isDeckEditor0;
-
-        if (isDeckEditor0) {
-            if (player != null) {
-                this.deck = player.getDeck();
-            } else {
-                this.deck = new MagicDeck();
-            }
-        } else {
-            this.deck = null;
+        this.deck = new MagicDeck();
+        this.originalDeck = deck0;
+        if (deck0 != null) {
+            // work with a copy of the original deck so it is easy to cancel updates.
+            this.deck.setContent(deck0);
         }
 
         setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
@@ -97,7 +83,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         buttonsPanel.setOpaque(false);
 
         // create buttons for deck editing
-        if (isEditingDeck()) {
+        if (isDeckEditor()) {
             addButton = new JButton(ADD_BUTTON_TEXT);
             addButton.setFont(FontsAndBorders.FONT1);
             addButton.setFocusable(false);
@@ -132,7 +118,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         leftPanel.add(cardViewer);
 
         // deck statistics
-        if (isEditingDeck()) {
+        if (isDeckEditor()) {
             leftPanel.add(Box.createVerticalStrut(SPACING));
             statsViewer = new DeckStatisticsViewer();
             statsViewer.setMaximumSize(DeckStatisticsViewer.PREFERRED_SIZE);
@@ -153,7 +139,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         add(leftScrollPane);
 
-        filterPanel = new ExplorerFilterPanel(frame, this, mode);
+        filterPanel = new ExplorerFilterPanel(this);
 
         final JScrollPane filterScrollPane = new JScrollPane(filterPanel);
         filterScrollPane.setBorder(FontsAndBorders.NO_BORDER);
@@ -168,7 +154,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         // deck
         final Container cardsPanel; // reference panel holding both card pool and deck
 
-        if (isEditingDeck()) {
+        if (isDeckEditor()) {
             cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
             cardPoolTable.addMouseListener(new CardPoolMouseListener());
 
@@ -251,28 +237,24 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
          return CARD_POOL_TITLE + " - " + cardPoolDefs.size() + " cards";
      }
 
-    private boolean isEditingDeck() {
-        return (player != null) || this.isDeckEditor;
+    public boolean isDeckEditor() {
+        return this.isDeckEditor;
     }
 
-    public MagicPlayerDefinition getPlayer() {
-        return player;
-    }
-
-    String generateDeckTitle(final MagicDeck deck) {
+    private String generateDeckTitle(final MagicDeck deck) {
         return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
     }
 
     public void updateCardPool() {
         cardPoolDefs = filterPanel.getCardDefinitions();
         cardPoolTable.setCards(cardPoolDefs);
-        if(isEditingDeck()) {
+        if(isDeckEditor()) {
              cardPoolTable.setTitle(generatePoolTitle());
          }
     }
 
     public void updateDeck() {
-        if(isEditingDeck()) {
+        if(isDeckEditor()) {
             deckDefs = this.deck;
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
@@ -292,7 +274,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
         } else {
             // display error
-            JOptionPane.showMessageDialog(frame, "Select a valid card in the deck to remove it.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Select a valid card in the deck to remove it.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -308,7 +290,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
         } else {
             // display error
-            JOptionPane.showMessageDialog(frame, "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(MagicMain.rootFrame, "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -316,7 +298,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
 
-        if (isEditingDeck()) {
+        if (isDeckEditor()) {
             if(source == addButton) {
                 addSelectedToDeck();
             } else if(source == removeButton) {
@@ -334,7 +316,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     private class CardPoolMouseListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
-            if(isEditingDeck() && e.getClickCount() > 1) {
+            if(isDeckEditor() && e.getClickCount() > 1) {
                 addSelectedToDeck();
             }
         }
@@ -343,7 +325,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     private class DeckMouseListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
-            if(isEditingDeck()) {
+            if(isDeckEditor()) {
                 if (e.getClickCount() > 1) {
                     if (e.getButton() == MouseEvent.BUTTON1) {
                         removeSelectedFromDeck();
@@ -372,7 +354,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     public void setDeck(final MagicDeck deck0) {
         if (deck0 != null) {
             this.deck = deck0;
-            if(isEditingDeck()) {
+            if(isDeckEditor()) {
                 deckDefs = this.deck;
                 deckTable.setTitle(generateDeckTitle(deckDefs));
                 deckTable.setCards(deckDefs);
@@ -383,6 +365,49 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
     public MagicDeck getDeck() {
         return this.deck;
+    }
+
+    public boolean applyDeckUpdates() {
+        boolean updatesApplied = true;
+        if (isUpdatingExistingDeck()) {
+            if (validateDeck(false)) {
+                this.originalDeck.setContent(this.deck);
+            } else {
+                updatesApplied = false;
+            }
+        }
+        return updatesApplied;
+    }
+
+    private String getBrokenRules(final MagicDeck deck) {
+        return MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
+    }
+
+    private void notifyUser(final String brokenRules) {
+        JOptionPane.showMessageDialog(
+                this,
+                "This deck is illegal.\n\n" + brokenRules,
+                "Illegal Deck",
+                JOptionPane.WARNING_MESSAGE);
+    }
+
+    public boolean validateDeck(final boolean notifyUser) {
+        final String brokenRules = getBrokenRules(deck);
+        if (brokenRules.length() > 0) {
+            if (notifyUser) {
+                notifyUser(brokenRules);
+            }
+            return false;
+        }
+        return true;
+    }
+
+    public boolean isStandaloneDeckEditor() {
+        return isDeckEditor() && !isUpdatingExistingDeck();
+    }
+
+    private boolean isUpdatingExistingDeck() {
+        return this.originalDeck != null;
     }
 
 }

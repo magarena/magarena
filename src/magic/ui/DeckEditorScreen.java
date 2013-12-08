@@ -12,8 +12,6 @@ import javax.swing.JPanel;
 import magic.MagicMain;
 import magic.data.DeckUtils;
 import magic.model.MagicDeck;
-import magic.model.MagicDeckConstructionRule;
-import magic.model.MagicPlayerDefinition;
 import magic.ui.viewer.DeckDescriptionPreview;
 import magic.ui.widget.MenuButton;
 
@@ -25,23 +23,23 @@ public class DeckEditorScreen
     private static ExplorerPanel content;
     private final MagicFrame frame;
 
-    // CTR
-    public DeckEditorScreen(final MagicFrame frame0, final int mode) {
-        super(getScreenContent(frame0, mode), frame0);
+    // CTR : opens Deck Editor ready to update passed in deck.
+    public DeckEditorScreen(final MagicFrame frame0, final MagicDeck deck) {
+        super(getScreenContent(deck), frame0);
         this.frame = frame0;
     }
-    public DeckEditorScreen(final MagicFrame frame0, final int mode, final MagicPlayerDefinition player) {
-        super(getScreenContent(frame0, mode, player), frame0);
+    // CTR : open Deck Editor in standalone mode starting with an empty deck.
+    public DeckEditorScreen(final MagicFrame frame0) {
+        super(getScreenContent(), frame0);
         this.frame = frame0;
     }
 
-    private static JPanel getScreenContent(MagicFrame frame, final int mode, final MagicPlayerDefinition player) {
-        content = new ExplorerPanel(frame, mode, player);
+    private static JPanel getScreenContent(final MagicDeck deck) {
+        content = new ExplorerPanel(deck);
         return content;
     }
-    private static JPanel getScreenContent(MagicFrame frame, final int mode) {
-        content = new ExplorerPanel(frame, mode, true);
-        return content;
+    private static JPanel getScreenContent() {
+        return getScreenContent(null);
     }
 
     /* (non-Javadoc)
@@ -49,12 +47,21 @@ public class DeckEditorScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Close", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.closeActiveScreen(false);
-            }
-        });
+        if (!content.isStandaloneDeckEditor()) {
+            return new MenuButton("Cancel", new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    frame.closeActiveScreen(false);
+                }
+            });
+        } else {
+            return new MenuButton("Close", new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    frame.closeActiveScreen(false);
+                }
+            });
+        }
     }
 
     /* (non-Javadoc)
@@ -62,7 +69,18 @@ public class DeckEditorScreen
      */
     @Override
     public MenuButton getRightAction() {
-        return null;
+        if (!content.isStandaloneDeckEditor()) {
+            return new MenuButton("Update duel deck", new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if (content.validateDeck(true) && content.applyDeckUpdates()) {
+                        frame.closeActiveScreen(false);
+                    }
+                }
+            });
+        } else {
+            return null;
+        }
     }
 
     /* (non-Javadoc)
@@ -77,7 +95,7 @@ public class DeckEditorScreen
                 loadDeck();
             }
         }, "Load deck from file"));
-        if (content.getPlayer() == null) {
+        if (content.isStandaloneDeckEditor()) {
             buttons.add(new MenuButton("Save", new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -103,11 +121,7 @@ public class DeckEditorScreen
      */
     @Override
     public String getScreenCaption() {
-        if (content.getPlayer() != null) {
-            return "Deck Editor : " + content.getPlayer().getName();
-        } else {
-            return "Deck Editor";
-        }
+        return "Deck Editor";
     }
 
     /* (non-Javadoc)
@@ -119,13 +133,7 @@ public class DeckEditorScreen
     }
 
     public void createNewEmptyDeck() {
-        final MagicPlayerDefinition player = content.getPlayer();
-        if (player != null) {
-            player.getDeck().clear();
-            content.setDeck(player.getDeck());
-        } else {
-            content.setDeck(new MagicDeck());
-        }
+        content.setDeck(new MagicDeck());
     }
 
     public void loadDeck() {
@@ -138,13 +146,7 @@ public class DeckEditorScreen
         final int action=fileChooser.showOpenDialog(this);
         if (action==JFileChooser.APPROVE_OPTION) {
             final String filename=fileChooser.getSelectedFile().getAbsolutePath();
-            final MagicPlayerDefinition player = content.getPlayer();
-            if (player != null) {
-              DeckUtils.loadDeck(filename, player);
-              content.setDeck(player.getDeck());
-            } else {
-              content.setDeck(DeckUtils.loadDeckFromFile(filename));
-            }
+            content.setDeck(DeckUtils.loadDeckFromFile(filename));
         }
     }
 
@@ -177,39 +179,10 @@ public class DeckEditorScreen
      */
     @Override
     public boolean isScreenReadyToClose(final MagScreen nextScreen) {
-        if (content.getPlayer() != null) {
-            return validateDeck(content.getPlayer().getDeck(), nextScreen);
-        } else {
-            return true;
-        }
-    }
-
-    //
-    // FIXME: Should be able to discard changes if rules are broken and close screen anyway.
-    //        Currently cannot close screen if rules are broken. The problem is that any
-    //        changes made in the Deck Editor are reflected in the player duel deck screen.
-    //
-    private boolean validateDeck(final MagicDeck deck, final MagScreen nextScreen) {
-        final String brokenRules = getBrokenRules(deck);
-        if (brokenRules.length() > 0) {
-            notifyUser(brokenRules);
-            return false;
-        } else if (nextScreen instanceof DuelDecksScreen) {
+        if (content.isDeckEditor() && !content.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }
         return true;
-    }
-
-    private String getBrokenRules(final MagicDeck deck) {
-        return MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
-    }
-
-    private void notifyUser(final String brokenRules) {
-        JOptionPane.showMessageDialog(
-                this,
-                "This deck is illegal.\n\n" + brokenRules,
-                "Illegal Deck",
-                JOptionPane.WARNING_MESSAGE);
     }
 
 }

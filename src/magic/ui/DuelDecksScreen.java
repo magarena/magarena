@@ -110,7 +110,7 @@ public class DuelDecksScreen
             buttons.add(new MenuButton("Deck Editor", new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    frame.showDeckEditor(screenContent.getSelectedPlayer());
+                    frame.showDeckEditor(screenContent.getSelectedPlayer().getDeck());
                 }
             }));
             buttons.add(new MenuButton("Swap Decks", new AbstractAction() {

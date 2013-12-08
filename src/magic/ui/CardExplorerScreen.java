@@ -4,8 +4,6 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
 import magic.ui.widget.MenuButton;
 
 @SuppressWarnings("serial")
@@ -16,13 +14,8 @@ public class CardExplorerScreen
     private final MagicFrame frame;
 
     public CardExplorerScreen(final MagicFrame frame0) {
-        super(getScreenContent(frame0), frame0);
+        super(new ExplorerPanel(), frame0);
         frame = frame0;
-    }
-
-    private static JPanel getScreenContent(MagicFrame frame) {
-        final ExplorerPanel content = new ExplorerPanel(frame);
-        return content;
     }
 
     /* (non-Javadoc)

@@ -40,7 +40,7 @@ public class MagicFrame extends JFrame {
     private static final String testGame = System.getProperty("testGame");
 
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
-    public static final boolean MAC_OS_X = (System.getProperty("os.name").toLowerCase().startsWith("mac os x"));
+    public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
 
     private final GeneralConfig config;
     private final JPanel contentPanel;
@@ -91,10 +91,10 @@ public class MagicFrame extends JFrame {
     // The various (Mag)screens that can currently be displayed.
     //
     public void showDeckEditor() {
-        activateMagScreen(new DeckEditorScreen(this, ExplorerPanel.ALL));
+        activateMagScreen(new DeckEditorScreen(this));
     }
-    public void showDeckEditor(final MagicPlayerDefinition player) {
-        activateMagScreen(new DeckEditorScreen(this, ExplorerPanel.ALL, player));
+    public void showDeckEditor(final MagicDeck deck) {
+        activateMagScreen(new DeckEditorScreen(this, deck));
     }
     public void showCardExplorerScreen() {
         activateMagScreen(new CardExplorerScreen(this));
@@ -380,7 +380,11 @@ public class MagicFrame extends JFrame {
     }
 
     private boolean isFullScreen() {
-        return (this.getExtendedState() == JFrame.MAXIMIZED_BOTH) && this.isUndecorated();
+        return isMaximized() && this.isUndecorated();
+    }
+
+    private boolean isMaximized() {
+        return this.getExtendedState() == JFrame.MAXIMIZED_BOTH;
     }
 
     /**

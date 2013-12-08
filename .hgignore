@@ -24,3 +24,4 @@ release/lib/*
 .project
 release/Magarena/mods/
 release/Magarena/crash.png
+*.jpage
