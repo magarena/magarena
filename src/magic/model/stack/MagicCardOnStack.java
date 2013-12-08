@@ -62,7 +62,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         moveLocation = cardOnStack.moveLocation;
         cardEvent = cardOnStack.cardEvent;
         cardDef = cardOnStack.cardDef;
-        event = cardOnStack.event;
+        event = copyMap.copy(cardOnStack.event);
     }
 
     public MagicCardOnStack copyCardOnStack(final MagicPlayer player) {
