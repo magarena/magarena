@@ -1,6 +1,6 @@
 name=Putrid Imp
 url=http://magiccards.info/pd3/en/1.html
-image=http://magiccards.info/scans/en/pd3/1.jpg
+image=http://mtgimage.com/card/putrid%20imp.jpg
 value=4.191
 rarity=C
 type=Creature

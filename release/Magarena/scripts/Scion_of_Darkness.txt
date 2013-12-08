@@ -1,6 +1,6 @@
 name=Scion of Darkness
 url=http://magiccards.info/arc/en/23.html
-image=http://magiccards.info/scans/en/arc/23.jpg
+image=http://mtgimage.com/card/scion%20of%20darkness.jpg
 value=4.317
 rarity=R
 type=Creature
