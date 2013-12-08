@@ -1,0 +1,11 @@
+name=Halo Hunter
+url=http://magiccards.info/zen/en/96.html
+image=http://mtgimage.com/card/halo%20hunter.jpg
+value=3.45
+rarity=R
+type=Creature
+subtype=Demon
+cost={2}{B}{B}{B}
+pt=6/3
+ability=intimidate;enters effect Destroy target Angel.
+timing=main

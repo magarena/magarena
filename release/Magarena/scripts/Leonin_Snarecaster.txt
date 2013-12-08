@@ -1,0 +1,11 @@
+name=Leonin Snarecaster
+url=http://magiccards.info/ths/en/23.html
+image=http://mtgimage.com/card/leonin%20snarecaster.jpg
+value=2.957
+rarity=C
+type=Creature
+subtype=Cat,Soldier
+cost={1}{W}
+pt=2/1
+ability=enters effect Tap target creature.
+timing=main

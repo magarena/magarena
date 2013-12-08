@@ -1,0 +1,11 @@
+name=Flamewave Invoker
+url=http://magiccards.info/jvc/en/40.html
+image=http://mtgimage.com/card/flamewave%20invoker.jpg
+value=3.117
+rarity=U
+type=Creature
+subtype=Goblin,Mutant
+cost={2}{R}
+pt=2/2
+ability=pay {7}{R}:SN deals 5 damage to target player.
+timing=main

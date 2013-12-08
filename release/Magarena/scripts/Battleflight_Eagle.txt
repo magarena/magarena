@@ -1,0 +1,11 @@
+name=Battleflight Eagle
+url=http://magiccards.info/m13/en/7.html
+image=http://mtgimage.com/card/battleflight%20eagle.jpg
+value=1.719
+rarity=C
+type=Creature
+subtype=Bird
+cost={4}{W}
+pt=2/2
+ability=flying;enters effect Target creature gets +2/+2 and gains flying until end of turn.
+timing=main

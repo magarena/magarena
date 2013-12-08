@@ -1,0 +1,11 @@
+name=Crimson Manticore
+url=http://magiccards.info/5e/en/217.html
+image=http://mtgimage.com/card/crimson%20manticore.jpg
+value=2.404
+rarity=U
+type=Creature
+subtype=Manticore
+cost={2}{R}{R}
+pt=2/2
+ability=flying;pay {R},{T}:SN deals 1 damage to target attacking or blocking creature.
+timing=main

@@ -1,0 +1,11 @@
+name=Daraja Griffin
+url=http://magiccards.info/6e/en/14.html
+image=http://mtgimage.com/card/daraja%20griffin.jpg
+value=3.379
+rarity=U
+type=Creature
+subtype=Griffin
+cost={3}{W}
+pt=2/2
+ability=flying;pay {S}:Destroy target black creature.
+timing=main

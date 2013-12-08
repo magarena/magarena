@@ -1,0 +1,11 @@
+name=Darba
+url=http://magiccards.info/pr/en/111.html
+image=http://mtgimage.com/card/darba.jpg
+value=2.679
+rarity=U
+type=Creature
+subtype=Bird,Beast
+cost={3}{G}
+pt=5/4
+ability=your upkeep effect PN may pay {G}{G}. If you don't, sacrifice SN.
+timing=main

@@ -1,0 +1,11 @@
+name=Divebomber Griffin
+url=http://magiccards.info/rav/en/14.html
+image=http://mtgimage.com/card/divebomber%20griffin.jpg
+value=1.952
+rarity=U
+type=Creature
+subtype=Griffin
+cost={3}{W}{W}
+pt=3/2
+ability=flying;pay {T},{S}:SN deals 3 damage to target attacking or blocking creature.
+timing=main

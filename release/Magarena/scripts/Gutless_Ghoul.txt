@@ -1,0 +1,11 @@
+name=Gutless Ghoul
+url=http://magiccards.info/cs/en/60.html
+image=http://mtgimage.com/card/gutless%20ghoul.jpg
+value=3.026
+rarity=C
+type=Snow,Creature
+subtype=Zombie
+cost={2}{B}
+pt=2/2
+ability=pay {1},Sacrifice a creature:PN gains 2 life.
+timing=main

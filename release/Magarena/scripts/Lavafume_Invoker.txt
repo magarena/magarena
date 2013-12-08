@@ -1,0 +1,11 @@
+name=Lavafume Invoker
+url=http://magiccards.info/roe/en/155.html
+image=http://mtgimage.com/card/lavafume%20invoker.jpg
+value=2.758
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{R}
+pt=2/2
+ability=pay {8}:Creatures PN controls get +3/+0 until end of turn.
+timing=main

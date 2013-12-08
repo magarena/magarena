@@ -1,0 +1,11 @@
+name=Dragon Tyrant
+url=http://magiccards.info/sc/en/88.html
+image=http://mtgimage.com/card/dragon%20tyrant.jpg
+value=4.337
+rarity=R
+type=Creature
+subtype=Dragon
+cost={8}{R}{R}
+pt=6/6
+ability=flying,trample,double strike;your upkeep effect PN may pay {R}{R}{R}{R}. If you don't, sacrifice SN.;pay {R}:SN gets +1/+0 until end of turn.
+timing=main

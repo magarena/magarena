@@ -1,0 +1,11 @@
+name=Metropolis Sprite
+url=http://magiccards.info/gtc/en/42.html
+image=http://mtgimage.com/card/metropolis%20sprite.jpg
+value=2.784
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={1}{U}
+pt=1/2
+ability=flying;pay {U}:SN gets +1/-1 until end of turn.
+timing=main

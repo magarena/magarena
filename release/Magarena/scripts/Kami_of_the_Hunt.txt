@@ -1,0 +1,11 @@
+name=Kami of the Hunt
+url=http://magiccards.info/chk/en/219.html
+image=http://mtgimage.com/card/kami%20of%20the%20hunt.jpg
+value=2.118
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{G}
+pt=2/2
+ability=spirit or arcane effect SN gets +1/+1 until end of turn.
+timing=main

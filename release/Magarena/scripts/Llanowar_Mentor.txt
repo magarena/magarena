@@ -1,0 +1,11 @@
+name=Llanowar Mentor
+url=http://magiccards.info/fut/en/131.html
+image=http://mtgimage.com/card/llanowar%20mentor.jpg
+value=3.155
+rarity=U
+type=Creature
+subtype=Elf,Spellshaper
+cost={G}
+pt=1/1
+ability=pay {G},{T},Discard a card:PN puts a 1/1 green Elf Druid creature token named Llanowar Elves into play.
+timing=main

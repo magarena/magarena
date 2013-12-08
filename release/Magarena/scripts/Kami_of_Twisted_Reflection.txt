@@ -1,0 +1,11 @@
+name=Kami of Twisted Reflection
+url=http://magiccards.info/chk/en/71.html
+image=http://mtgimage.com/card/kami%20of%20twisted%20reflection.jpg
+value=1.407
+rarity=C
+type=Creature
+subtype=Spirit
+cost={1}{U}{U}
+pt=2/2
+ability=pay {S}:Return target creature you control to its owner's hand.
+timing=main

@@ -1,0 +1,11 @@
+name=Lady Caleria
+url=http://magiccards.info/lg/en/279.html
+image=http://mtgimage.com/card/lady%20caleria.jpg
+value=2.827
+rarity=U
+type=Legendary,Creature
+subtype=Human,Archer
+cost={3}{G}{G}{W}{W}
+pt=3/6
+ability=pay {T}:SN deals 3 damage to target attacking or blocking creature.
+timing=main

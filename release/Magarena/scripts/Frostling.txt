@@ -1,0 +1,11 @@
+name=Frostling
+url=http://magiccards.info/bok/en/103.html
+image=http://mtgimage.com/card/frostling.jpg
+value=3.514
+rarity=C
+type=Creature
+subtype=Spirit
+cost={R}
+pt=1/1
+ability=pay {S}:SN deals 1 damage to target creature.
+timing=main

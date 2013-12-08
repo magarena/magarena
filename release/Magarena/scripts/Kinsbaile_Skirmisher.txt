@@ -1,0 +1,11 @@
+name=Kinsbaile Skirmisher
+url=http://magiccards.info/lw/en/24.html
+image=http://mtgimage.com/card/kinsbaile%20skirmisher.jpg
+value=3.098
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={1}{W}
+pt=2/2
+ability=enters effect Target creature gets +1/+1 until end of turn.
+timing=main

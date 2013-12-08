@@ -1,0 +1,11 @@
+name=Liberated Dwarf
+url=http://magiccards.info/ju/en/95.html
+image=http://mtgimage.com/card/liberated%20dwarf.jpg
+value=2.143
+rarity=C
+type=Creature
+subtype=Dwarf
+cost={R}
+pt=1/1
+ability=pay {R},{S}:Target green creature gets +1/+0 and gains first strike until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Keening Apparition
+url=http://magiccards.info/rtr/en/12.html
+image=http://mtgimage.com/card/keening%20apparition.jpg
+value=3.698
+rarity=C
+type=Creature
+subtype=Spirit
+cost={1}{W}
+pt=2/2
+ability=pay {S}:Destroy target enchantment.
+timing=main

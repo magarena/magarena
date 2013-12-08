@@ -1,0 +1,11 @@
+name=Harrier Griffin
+url=http://magiccards.info/gp/en/9.html
+image=http://mtgimage.com/card/harrier%20griffin.jpg
+value=2.694
+rarity=U
+type=Creature
+subtype=Griffin
+cost={5}{W}
+pt=3/3
+ability=your upkeep effect Tap target creature.
+timing=main

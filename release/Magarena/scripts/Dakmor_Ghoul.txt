@@ -1,0 +1,11 @@
+name=Dakmor Ghoul
+url=http://magiccards.info/st/en/70.html
+image=http://mtgimage.com/card/dakmor%20ghoul.jpg
+value=3.3
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}{B}
+pt=2/2
+ability=enters effect Target opponent loses 2 life and PN gains 2 life.
+timing=main

@@ -1,0 +1,12 @@
+name=Galvanic Alchemist
+url=http://magiccards.info/avr/en/54.html
+image=http://mtgimage.com/card/galvanic%20alchemist.jpg
+value=2.871
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/4
+ability=soulbond
+given_ability=pay {2}{U}:Untap SN.
+timing=main

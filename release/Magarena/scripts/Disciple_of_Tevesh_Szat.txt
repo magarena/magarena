@@ -1,0 +1,11 @@
+name=Disciple of Tevesh Szat
+url=http://magiccards.info/cs/en/55.html
+image=http://mtgimage.com/card/disciple%20of%20tevesh%20szat.jpg
+value=2.96
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{B}{B}
+pt=3/1
+ability=pay {T}:Target creature gets -1/-1 until end of turn.;pay {4}{B}{B},{T},{S}:Target creature gets -6/-6 until end of turn.
+timing=main

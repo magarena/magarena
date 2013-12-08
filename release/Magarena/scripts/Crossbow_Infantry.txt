@@ -1,0 +1,11 @@
+name=Crossbow Infantry
+url=http://magiccards.info/9e/en/12.html
+image=http://mtgimage.com/card/crossbow%20infantry.jpg
+value=2.924
+rarity=C
+type=Creature
+subtype=Human,Archer,Soldier
+cost={1}{W}
+pt=1/1
+ability=pay {T}:SN deals 1 damage to target attacking or blocking creature.
+timing=main

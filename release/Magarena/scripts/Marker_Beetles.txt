@@ -1,0 +1,11 @@
+name=Marker Beetles
+url=http://magiccards.info/ud/en/112.html
+image=http://mtgimage.com/card/marker%20beetles.jpg
+value=3.759
+rarity=C
+type=Creature
+subtype=Insect
+cost={1}{G}{G}
+pt=2/3
+ability=dies effect Target creature gets +1/+1 until end of turn.;pay {2},{S}:PN draws a card.
+timing=main

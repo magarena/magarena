@@ -1,0 +1,11 @@
+name=Grimclaw Bats
+url=http://magiccards.info/ds/en/45.html
+image=http://mtgimage.com/card/grimclaw%20bats.jpg
+value=2.988
+rarity=C
+type=Creature
+subtype=Bat
+cost={1}{B}
+pt=1/1
+ability=flying;pay {B},Pay 1 life:SN gets +1/+1 until end of turn.
+timing=main

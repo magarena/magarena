@@ -1,0 +1,11 @@
+name=Kithkin Spellduster
+url=http://magiccards.info/eve/en/8.html
+image=http://mtgimage.com/card/kithkin%20spellduster.jpg
+value=2.179
+rarity=C
+type=Creature
+subtype=Kithkin,Wizard
+cost={4}{W}
+pt=2/3
+ability=flying;pay {1}{W},{S}:Destroy target enchantment.;persist
+timing=main

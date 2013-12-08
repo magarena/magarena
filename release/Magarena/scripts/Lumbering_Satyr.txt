@@ -1,0 +1,11 @@
+name=Lumbering Satyr
+url=http://magiccards.info/mm/en/257.html
+image=http://mtgimage.com/card/lumbering%20satyr.jpg
+value=2.19
+rarity=U
+type=Creature
+subtype=Satyr,Beast
+cost={2}{G}{G}
+pt=5/4
+ability=lord All creatures have forestwalk.
+timing=main
