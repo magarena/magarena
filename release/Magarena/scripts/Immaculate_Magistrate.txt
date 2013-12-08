@@ -1,0 +1,11 @@
+name=Immaculate Magistrate
+url=http://magiccards.info/lw/en/219.html
+image=http://magiccards.info/scans/en/lw/219.jpg
+value=4.245
+rarity=R
+type=Creature
+subtype=Elf,Shaman
+cost={3}{G}
+pt=2/2
+timing=main
+requires_groovy_code
