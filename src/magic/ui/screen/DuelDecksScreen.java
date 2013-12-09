@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
@@ -12,13 +12,19 @@ import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
+import magic.ui.DuelPanel;
+import magic.ui.MagicFrame;
+import magic.ui.ScreenOptionsOverlay;
+import magic.ui.interfaces.IMagActionBar;
+import magic.ui.interfaces.IMagScreenOptionsMenu;
+import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuButton;
 import magic.ui.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen
-    extends MagScreen
+    extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
     private final MagicFrame frame;
@@ -151,7 +157,7 @@ public class DuelDecksScreen
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         screenContent.haltStrengthViewer();
         return true;
     }

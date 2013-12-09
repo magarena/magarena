@@ -1,7 +1,10 @@
-package magic.ui;
+package magic.ui.screen;
 
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
+import magic.ui.MagicFrame;
+import magic.ui.interfaces.IMagActionBar;
+import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -26,7 +29,7 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActionBar {
+public class KeywordsScreen extends AbstractScreen implements IMagStatusBar, IMagActionBar {
 
     private static JScrollPane scrollPane;
     private static MyScrollablePanel scrollablePanel;
@@ -189,7 +192,7 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 

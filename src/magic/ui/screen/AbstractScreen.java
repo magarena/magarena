@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 
@@ -6,6 +6,10 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
+import magic.ui.MagicFrame;
+import magic.ui.interfaces.IMagActionBar;
+import magic.ui.interfaces.IMagScreenOptionsMenu;
+import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.widget.MagStatusBar;
 import magic.ui.widget.MagActionBar;
 import net.miginfocom.swing.MigLayout;
@@ -15,12 +19,12 @@ import net.miginfocom.swing.MigLayout;
  *
  */
 @SuppressWarnings("serial")
-public abstract class MagScreen extends JPanel {
+public abstract class AbstractScreen extends JPanel {
 
     private final JPanel content;
     private final MagicFrame frame;
 
-    public MagScreen(final JPanel content0, final MagicFrame frame0) {
+    public AbstractScreen(final JPanel content0, final MagicFrame frame0) {
         this.content = content0;
         this.frame = frame0;
         setOpaque(false);
@@ -81,6 +85,6 @@ public abstract class MagScreen extends JPanel {
     /**
      * Gives the active screen the chance to prevent closing.
      */
-    public abstract boolean isScreenReadyToClose(final MagScreen nextScreen);
+    public abstract boolean isScreenReadyToClose(final AbstractScreen nextScreen);
 
 }

@@ -1,16 +1,22 @@
-package magic.ui;
+package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import java.util.List;
 
 import javax.swing.AbstractAction;
 
+import magic.ui.ExplorerPanel;
+import magic.ui.MagicFrame;
+import magic.ui.ScreenOptionsOverlay;
+import magic.ui.interfaces.IMagActionBar;
+import magic.ui.interfaces.IMagScreenOptionsMenu;
+import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.widget.MenuButton;
 import magic.ui.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen
-    extends MagScreen
+    extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
     private final MagicFrame frame;
@@ -61,7 +67,7 @@ public class CardExplorerScreen
      * @see magic.ui.MagScreen#canScreenClose()
      */
     @Override
-    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 

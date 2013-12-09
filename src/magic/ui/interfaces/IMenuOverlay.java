@@ -1,7 +1,7 @@
 /**
  *
  */
-package magic.ui;
+package magic.ui.interfaces;
 
 /**
  * @author SPR

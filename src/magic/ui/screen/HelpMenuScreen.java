@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 
@@ -6,13 +6,17 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 
 import magic.data.URLUtils;
+import magic.ui.AboutDialog;
+import magic.ui.MagicFrame;
 import magic.ui.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class MagicSettingsScreen extends MagScreen {
+public class HelpMenuScreen extends AbstractScreen {
 
-    public MagicSettingsScreen(final MagicFrame frame0) {
+    private static final String DOCUMENTATION_URL = "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
+
+    public HelpMenuScreen(final MagicFrame frame0) {
         super(getScreenContent(frame0), frame0);
     }
 
@@ -24,30 +28,30 @@ public class MagicSettingsScreen extends MagScreen {
 
         final MenuPanel menu = new MenuPanel("Settings Menu");
 
-        menu.addMenuItem("Preferences", new AbstractAction() {
+        menu.addMenuItem("ReadMe", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.openPreferencesDialog();
+                frame0.showReadMeScreen();
             }
         });
-        menu.addMenuItem("Download images", new AbstractAction() {
+        menu.addMenuItem("Online help", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                new DownloadImagesDialog(frame0);
+                URLUtils.openURL(DOCUMENTATION_URL);
             }
         });
-        menu.addMenuItem("More themes online...", new AbstractAction() {
+        menu.addMenuItem("Keywords glossary", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                URLUtils.openURL("http://www.slightlymagic.net/forum/viewforum.php?f=89");
+                frame0.showKeywordsScreen();
             }
         });
-        menu.addMenuItem("Toggle full-screen", new AbstractAction() {
+        menu.addMenuItem("About Magarena", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.toggleFullScreenMode();
+                new AboutDialog(frame0);
             }
-        }, "Shortcut key: F11");
+        });
         menu.addBlankItem();
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
@@ -59,14 +63,13 @@ public class MagicSettingsScreen extends MagScreen {
         menu.refreshLayout();
         content.add(menu);
         return content;
-
     }
 
     /* (non-Javadoc)
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 

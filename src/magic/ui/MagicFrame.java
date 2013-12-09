@@ -11,6 +11,16 @@ import magic.model.MagicGame;
 import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.test.TestGameBuilder;
+import magic.ui.screen.CardExplorerScreen;
+import magic.ui.screen.DeckEditorScreen;
+import magic.ui.screen.DuelDecksScreen;
+import magic.ui.screen.DuelGameScreen;
+import magic.ui.screen.HelpMenuScreen;
+import magic.ui.screen.KeywordsScreen;
+import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.SettingsMenuScreen;
+import magic.ui.screen.MainMenuScreen;
+import magic.ui.screen.ReadmeScreen;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
@@ -45,7 +55,7 @@ public class MagicFrame extends JFrame {
     private final GeneralConfig config;
     private final JPanel contentPanel;
     private MagicDuel duel;
-    private final Stack<MagScreen> screens;
+    private final Stack<AbstractScreen> screens;
     private final boolean dontShowAgain = true;
 
     public MagicFrame(final String frameTitle) {
@@ -70,7 +80,7 @@ public class MagicFrame extends JFrame {
         setF12KeyInputMap();
 
         // First screen to display is the main menu.
-        screens = new Stack<MagScreen>();
+        screens = new Stack<AbstractScreen>();
         showMainMenuScreen();
         if (testGame != null) {
             openGame(TestGameBuilder.buildGame(testGame));
@@ -109,7 +119,7 @@ public class MagicFrame extends JFrame {
         activateMagScreen(new HelpMenuScreen(this));
     }
     public void showSettingsMenuScreen() {
-        activateMagScreen(new MagicSettingsScreen(this));
+        activateMagScreen(new SettingsMenuScreen(this));
     }
     private void showDuelDecksScreen() {
         if (screens.peek() instanceof DuelDecksScreen) {
@@ -121,12 +131,12 @@ public class MagicFrame extends JFrame {
         screens.clear();
         activateMagScreen(new MainMenuScreen(this));
     }
-    private void activateMagScreen(final MagScreen screen) {
+    private void activateMagScreen(final AbstractScreen screen) {
         showMagScreen(screen);
         screens.push(screen);
         screen.requestFocus();
     }
-    private void showMagScreen(final MagScreen screen) {
+    private void showMagScreen(final AbstractScreen screen) {
         contentPanel.removeAll();
         contentPanel.add(screen, "w 100%, h 100%");
         contentPanel.revalidate();
@@ -136,7 +146,7 @@ public class MagicFrame extends JFrame {
         if (screens.size() == 1) {
             quitToDesktop(isEscapeKeyAction);
         } else {
-            final MagScreen activeScreen = screens.pop();
+            final AbstractScreen activeScreen = screens.pop();
             if (activeScreen.isScreenReadyToClose(screens.peek())) {
                 showMagScreen(screens.peek());
             } else {
@@ -246,7 +256,7 @@ public class MagicFrame extends JFrame {
     }
 
     private void openGame(final MagicGame game) {
-        activateMagScreen(new DuelScreen(this, game));
+        activateMagScreen(new DuelGameScreen(this, game));
     }
 
     /**
@@ -321,8 +331,8 @@ public class MagicFrame extends JFrame {
     }
 
     public void updateGameView() {
-        if (screens.peek() instanceof DuelScreen) {
-            final DuelScreen screen = (DuelScreen)screens.peek();
+        if (screens.peek() instanceof DuelGameScreen) {
+            final DuelGameScreen screen = (DuelGameScreen)screens.peek();
             screen.updateView();
         }
     }
@@ -406,7 +416,7 @@ public class MagicFrame extends JFrame {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 //menuPanel.setVisible(!menuPanel.isVisible());
-                final MagScreen activeScreen = screens.peek();
+                final AbstractScreen activeScreen = screens.peek();
                 activeScreen.setVisible(!activeScreen.isVisible());
             }
         });

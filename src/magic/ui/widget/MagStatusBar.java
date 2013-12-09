@@ -11,19 +11,19 @@ import javax.swing.SwingConstants;
 
 import net.miginfocom.swing.MigLayout;
 import magic.data.IconImages;
-import magic.ui.IMagScreenOptionsMenu;
-import magic.ui.IMagStatusBar;
-import magic.ui.MagScreen;
 import magic.ui.MagicFrame;
+import magic.ui.interfaces.IMagScreenOptionsMenu;
+import magic.ui.interfaces.IMagStatusBar;
+import magic.ui.screen.AbstractScreen;
 
 @SuppressWarnings("serial")
 public class MagStatusBar extends TexturedPanel {
 
     private final static ImageIcon optionsIcon = new ImageIcon(IconImages.OPTIONS_ICON);
 
-    private final MagScreen magScreen;
+    private final AbstractScreen magScreen;
 
-    public MagStatusBar(final MagScreen screen0, final MagicFrame frame0) {
+    public MagStatusBar(final AbstractScreen screen0, final MagicFrame frame0) {
         this.magScreen = screen0;
         setMinimumSize(new Dimension(getPreferredSize().width, 50));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);

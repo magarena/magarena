@@ -1,7 +1,8 @@
-package magic.ui;
+package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 
+import magic.ui.MagicFrame;
 import magic.ui.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -9,7 +10,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
-public class MainMenuScreen extends MagScreen {
+public class MainMenuScreen extends AbstractScreen {
 
     private static MenuPanel menuPanel;
 
@@ -77,7 +78,7 @@ public class MainMenuScreen extends MagScreen {
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 

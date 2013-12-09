@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.interfaces;
 
 /**
  * A (Mag)screen that implements this interface will display MagStatusBar.

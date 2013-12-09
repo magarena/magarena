@@ -8,7 +8,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import magic.ui.IMagActionBar;
+import magic.ui.interfaces.IMagActionBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

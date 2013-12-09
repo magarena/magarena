@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 
@@ -8,17 +8,22 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 import magic.data.GeneralConfig;
 import magic.model.MagicGame;
+import magic.ui.GameLayeredPane;
+import magic.ui.GamePanel;
+import magic.ui.MagicFrame;
+import magic.ui.ScreenOptionsOverlay;
+import magic.ui.interfaces.IMagScreenOptionsMenu;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 @SuppressWarnings("serial")
-public class DuelScreen extends MagScreen implements IMagScreenOptionsMenu {
+public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsMenu {
 
     private final MagicFrame frame;
     private static GamePanel gamePanel;
 
-    public DuelScreen(final MagicFrame frame0, final MagicGame game) {
+    public DuelGameScreen(final MagicFrame frame0, final MagicGame game) {
         super(getScreenContent(frame0, game), frame0);
         this.frame = frame0;
     }
@@ -57,7 +62,7 @@ public class DuelScreen extends MagScreen implements IMagScreenOptionsMenu {
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
@@ -71,9 +76,9 @@ public class DuelScreen extends MagScreen implements IMagScreenOptionsMenu {
 
     private class ScreenOptions extends ScreenOptionsOverlay {
 
-        private final DuelScreen screen;
+        private final DuelGameScreen screen;
 
-        public ScreenOptions(final MagicFrame frame, final DuelScreen screen0) {
+        public ScreenOptions(final MagicFrame frame, final DuelGameScreen screen0) {
             super(frame);
             this.screen = screen0;
         }

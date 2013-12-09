@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.interfaces;
 
 public interface IMagicHelpOverlay {
 
