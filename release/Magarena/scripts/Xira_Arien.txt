@@ -1,5 +1,5 @@
 name=Xira Arien
-url=http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=2885
+url=http://magiccards.info/ch/en/125.html
 image=http://mtgimage.com/card/xira%20arien.jpg
 value=3.607
 rarity=R
