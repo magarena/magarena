@@ -154,8 +154,9 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         // deck
         final Container cardsPanel; // reference panel holding both card pool and deck
 
+        cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
+
         if (isDeckEditor()) {
-            cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
             cardPoolTable.addMouseListener(new CardPoolMouseListener());
 
             deckDefs = this.deck;
@@ -176,7 +177,6 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
         } else {
             // no deck
-            cardPoolTable = new CardTable(cardPoolDefs, cardViewer);
             deckDefs = null;
             deckTable = null;
 
@@ -248,9 +248,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     public void updateCardPool() {
         cardPoolDefs = filterPanel.getCardDefinitions();
         cardPoolTable.setCards(cardPoolDefs);
-        if(isDeckEditor()) {
-             cardPoolTable.setTitle(generatePoolTitle());
-         }
+        cardPoolTable.setTitle(generatePoolTitle());
     }
 
     public void updateDeck() {
