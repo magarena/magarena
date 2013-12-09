@@ -39,7 +39,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private static final long serialVersionUID = 1L;
 
-    private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"};
+    private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
     private static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
     private static final String FILTER_BUTTON_TEXT = "Filter";
     private static final String HIDE_BUTTON_TEXT = "Hide";
