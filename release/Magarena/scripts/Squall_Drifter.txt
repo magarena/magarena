@@ -1,0 +1,11 @@
+name=Squall Drifter
+url=http://magiccards.info/cs/en/17.html
+image=http://mtgimage.com/card/squall%20drifter.jpg
+value=3.547
+rarity=C
+type=Snow,Creature
+subtype=Elemental
+cost={1}{W}
+pt=1/1
+ability=flying;pay {W},{T}:Tap target creature.
+timing=main

@@ -1,0 +1,11 @@
+name=Somnomancer
+url=http://magiccards.info/shm/en/149.html
+image=http://mtgimage.com/card/somnomancer.jpg
+value=2.565
+rarity=C
+type=Creature
+subtype=Kithkin,Wizard
+cost={1}{W/U}
+pt=2/1
+ability=enters effect Tap target creature.
+timing=main

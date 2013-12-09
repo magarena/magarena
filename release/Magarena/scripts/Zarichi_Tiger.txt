@@ -1,0 +1,11 @@
+name=Zarichi Tiger
+url=http://magiccards.info/gtc/en/28.html
+image=http://mtgimage.com/card/zarichi%20tiger.jpg
+value=2.223
+rarity=C
+type=Creature
+subtype=Cat
+cost={3}{W}
+pt=2/3
+ability=pay {1}{W},{T}:PN gains 2 life.
+timing=main

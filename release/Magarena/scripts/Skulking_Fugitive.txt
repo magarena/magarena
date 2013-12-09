@@ -1,0 +1,11 @@
+name=Skulking Fugitive
+url=http://magiccards.info/mm/en/161.html
+image=http://mtgimage.com/card/skulking%20fugitive.jpg
+value=2.729
+rarity=C
+type=Creature
+subtype=Horror,Mercenary
+cost={2}{B}
+pt=3/4
+ability=sac when targeted
+timing=main

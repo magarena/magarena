@@ -1,0 +1,11 @@
+name=Tyrranax
+url=http://magiccards.info/som/pt/109.html
+image=http://mtgimage.com/card/tyrranax.jpg
+value=2.952
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{G}{G}
+pt=5/4
+ability=pay {1}{G}:SN gets -1/+1 until end of turn.
+timing=main

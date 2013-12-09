@@ -1,0 +1,11 @@
+name=Skyshroud Archer
+url=http://magiccards.info/sh/en/64.html
+image=http://mtgimage.com/card/skyshroud%20archer.jpg
+value=3.256
+rarity=C
+type=Creature
+subtype=Elf,Archer
+cost={G}
+pt=1/1
+ability=pay {T}:Target creature with flying gets -1/-1 until end of turn.
+timing=main

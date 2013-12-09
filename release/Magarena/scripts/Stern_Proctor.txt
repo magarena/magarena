@@ -1,0 +1,11 @@
+name=Stern Proctor
+url=http://magiccards.info/us/en/99.html
+image=http://mtgimage.com/card/stern%20proctor.jpg
+value=3.593
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={U}{U}
+pt=1/2
+ability=enters effect Return target artifact or enchantment to its owner's hand.
+timing=main

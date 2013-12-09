@@ -1,0 +1,11 @@
+name=Welkin Guide
+url=http://magiccards.info/ala/en/30.html
+image=http://mtgimage.com/card/welkin%20guide.jpg
+value=1.7
+rarity=C
+type=Creature
+subtype=Bird,Cleric
+cost={4}{W}
+pt=2/2
+ability=flying;enters effect Target creature gets +2/+2 and gains flying until end of turn.
+timing=main

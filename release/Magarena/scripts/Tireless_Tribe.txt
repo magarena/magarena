@@ -1,0 +1,11 @@
+name=Tireless Tribe
+url=http://magiccards.info/od/en/56.html
+image=http://mtgimage.com/card/tireless%20tribe.jpg
+value=3.814
+rarity=C
+type=Creature
+subtype=Human,Nomad
+cost={W}
+pt=1/1
+ability=pay Discard a card:SN gets +0/+4 until end of turn.
+timing=main

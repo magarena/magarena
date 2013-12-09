@@ -1,0 +1,11 @@
+name=Spiketail Drake
+url=http://magiccards.info/pr/pt/48.html
+image=http://mtgimage.com/card/spiketail%20drake.jpg
+value=3.269
+rarity=U
+type=Creature
+subtype=Drake
+cost={3}{U}{U}
+pt=3/3
+ability=flying;pay {S}:Counter target spell unless its controller pays {3}.
+timing=main

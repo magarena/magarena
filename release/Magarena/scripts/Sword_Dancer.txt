@@ -1,0 +1,11 @@
+name=Sword Dancer
+url=http://magiccards.info/8e/en/53.html
+image=http://mtgimage.com/card/sword%20dancer.jpg
+value=2.167
+rarity=U
+type=Creature
+subtype=Human,Rebel
+cost={1}{W}
+pt=1/2
+ability=pay {W}{W}:Target attacking creature gets -1/-0 until end of turn.
+timing=main

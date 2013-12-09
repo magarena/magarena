@@ -1,0 +1,11 @@
+name=Southern Paladin
+url=http://magiccards.info/7e/en/46.html
+image=http://mtgimage.com/card/southern%20paladin.jpg
+value=3.672
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={2}{W}{W}
+pt=3/3
+ability=pay {W}{W},{T}:Destroy target red permanent.
+timing=main

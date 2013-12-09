@@ -1,0 +1,11 @@
+name=Stalking Assassin
+url=http://magiccards.info/in/en/277.html
+image=http://mtgimage.com/card/stalking%20assassin.jpg
+value=1.87
+rarity=R
+type=Creature
+subtype=Human,Assassin
+cost={1}{U}{B}
+pt=1/1
+ability=pay {3}{U},{T}:Tap target creature.;pay {3}{B},{T}:Destroy target tapped creature.
+timing=main

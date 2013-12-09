@@ -1,0 +1,11 @@
+name=Young Wei Recruits
+url=http://magiccards.info/p3k/en/94.html
+image=http://mtgimage.com/card/young%20wei%20recruits.jpg
+value=2.326
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{B}
+pt=2/2
+ability=can't block
+timing=main

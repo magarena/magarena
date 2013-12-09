@@ -1,0 +1,11 @@
+name=Thunderscape Apprentice
+url=http://magiccards.info/in/en/174.html
+image=http://mtgimage.com/card/thunderscape%20apprentice.jpg
+value=3.105
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={R}
+pt=1/1
+ability=pay {B},{T}:Target player loses 1 life.;pay {G},{T}:Target creature gets +1/+1 until end of turn.
+timing=main

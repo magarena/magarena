@@ -1,0 +1,11 @@
+name=Tuknir Deathlock
+url=http://magiccards.info/lg/en/307.html
+image=http://mtgimage.com/card/tuknir%20deathlock.jpg
+value=2.032
+rarity=U
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={R}{R}{G}{G}
+pt=2/2
+ability=flying;pay {R}{G},{T}:Target creature gets +2/+2 until end of turn.
+timing=main

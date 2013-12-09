@@ -1,0 +1,11 @@
+name=Wyluli Wolf
+url=http://magiccards.info/6e/en/270.html
+image=http://mtgimage.com/card/wyluli%20wolf.jpg
+value=2.364
+rarity=C
+type=Creature
+subtype=Wolf
+cost={1}{G}
+pt=1/1
+ability=pay {T}:Target creature gets +1/+1 until end of turn.
+timing=main

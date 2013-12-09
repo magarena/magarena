@@ -1,0 +1,11 @@
+name=Unseen Walker
+url=http://magiccards.info/6e/en/262.html
+image=http://mtgimage.com/card/unseen%20walker.jpg
+value=2.855
+rarity=U
+type=Creature
+subtype=Dryad
+cost={1}{G}
+pt=1/1
+ability=forestwalk;pay {1}{G}{G}:Target creature gains forestwalk until end of turn.
+timing=main

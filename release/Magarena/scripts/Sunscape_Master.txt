@@ -1,0 +1,11 @@
+name=Sunscape Master
+url=http://magiccards.info/in/en/42.html
+image=http://mtgimage.com/card/sunscape%20master.jpg
+value=4.039
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}{W}
+pt=2/2
+ability=pay {G}{G},{T}:Creatures you control get +2/+2 until end of turn.;pay {U}{U},{T}:Return target creature to its owner's hand.
+timing=main

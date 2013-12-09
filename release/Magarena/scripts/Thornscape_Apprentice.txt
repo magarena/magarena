@@ -1,0 +1,11 @@
+name=Thornscape Apprentice
+url=http://magiccards.info/pvc/en/37.html
+image=http://mtgimage.com/card/thornscape%20apprentice.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={G}
+pt=1/1
+ability=pay {R},{T}:Target creature gains first strike until end of turn.;pay {W},{T}:Tap target creature.
+timing=main

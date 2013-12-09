@@ -1,0 +1,11 @@
+name=Wind Dancer
+url=http://magiccards.info/7e/en/113.html
+image=http://mtgimage.com/card/wind%20dancer.jpg
+value=3.603
+rarity=U
+type=Creature
+subtype=Faerie
+cost={1}{U}
+pt=1/1
+ability=flying;pay {T}:Target creature gains flying until end of turn.
+timing=main

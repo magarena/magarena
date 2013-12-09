@@ -1,0 +1,11 @@
+name=Spinal Villain
+url=http://magiccards.info/lg/en/161.html
+image=http://mtgimage.com/card/spinal%20villain.jpg
+value=3.771
+rarity=U
+type=Creature
+subtype=Beast
+cost={2}{R}
+pt=1/2
+ability=pay {T}:Destroy target blue creature.
+timing=main

@@ -1,0 +1,11 @@
+name=Surrakar Banisher
+url=http://magiccards.info/wwk/en/39.html
+image=http://mtgimage.com/card/surrakar%20banisher.jpg
+value=2.071
+rarity=C
+type=Creature
+subtype=Surrakar
+cost={4}{U}
+pt=3/3
+ability=enters effect PN may return target tapped creature to its owner's hand.
+timing=main

@@ -1,0 +1,11 @@
+name=Starved Rusalka
+url=http://magiccards.info/gp/en/97.html
+image=http://mtgimage.com/card/starved%20rusalka.jpg
+value=1.354
+rarity=U
+type=Creature
+subtype=Spirit
+cost={G}
+pt=1/1
+ability=pay {G},Sacrifice a creature:PN gains 1 life.
+timing=main

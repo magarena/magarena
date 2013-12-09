@@ -1,0 +1,11 @@
+name=Strongarm Thug
+url=http://magiccards.info/mm/en/165.html
+image=http://mtgimage.com/card/strongarm%20thug.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Human,Mercenary
+cost={2}{B}
+pt=1/1
+ability=enters effect Return target Mercenary card from your graveyard to your hand.
+timing=main

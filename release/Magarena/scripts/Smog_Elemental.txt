@@ -1,0 +1,11 @@
+name=Smog Elemental
+url=http://magiccards.info/gtc/en/79.html
+image=http://mtgimage.com/card/smog%20elemental.jpg
+value=2.796
+rarity=U
+type=Creature
+subtype=Elemental
+cost={4}{B}{B}
+pt=3/3
+ability=flying;lord creatures with flying your opponents control get -1/-1
+timing=main

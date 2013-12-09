@@ -1,0 +1,11 @@
+name=Storm Spirit
+url=http://magiccards.info/ia/en/381.html
+image=http://mtgimage.com/card/storm%20spirit.jpg
+value=2.917
+rarity=R
+type=Creature
+subtype=Elemental,Spirit
+cost={3}{G}{W}{U}
+pt=3/3
+ability=flying;pay {T}:SN deals 2 damage to target creature.
+timing=main

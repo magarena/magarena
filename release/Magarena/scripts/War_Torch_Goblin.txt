@@ -1,0 +1,11 @@
+name=War-Torch Goblin
+url=http://magiccards.info/rav/en/151.html
+image=http://mtgimage.com/card/war-torch%20goblin.jpg
+value=2.638
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={R}
+pt=1/1
+ability=pay {R},{S}:SN deals 2 damage to target blocking creature.
+timing=main

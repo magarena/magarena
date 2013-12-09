@@ -1,0 +1,11 @@
+name=Wydwen, the Biting Gale
+url=http://magiccards.info/lw/en/253.html
+image=http://mtgimage.com/card/wydwen,%20the%20biting%20gale.jpg
+value=3.435
+rarity=R
+type=Legendary,Creature
+subtype=Faerie,Wizard
+cost={2}{U}{B}
+pt=3/3
+ability=flying;flash;pay {U}{B},Pay 1 life:Return SN to its owner's hand.
+timing=flash

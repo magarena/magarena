@@ -1,0 +1,11 @@
+name=Viridian Zealot
+url=http://magiccards.info/ds/en/90.html
+image=http://mtgimage.com/card/viridian%20zealot.jpg
+value=3.962
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={G}{G}
+pt=2/1
+ability=pay {1}{G},{S}:Destroy target artifact or enchantment.
+timing=main

@@ -1,0 +1,9 @@
+name=1/1 green Spike creature token
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19987&amp;d=1143672156
+token=Spike
+value=1
+type=Creature
+subtype=Spike
+color=G
+cost={0}
+pt=1/1

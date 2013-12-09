@@ -1,0 +1,11 @@
+name=Stalking Bloodsucker
+url=http://magiccards.info/od/en/163.html
+image=http://mtgimage.com/card/stalking%20bloodsucker.jpg
+value=3.068
+rarity=R
+type=Creature
+subtype=Vampire
+cost={4}{B}{B}
+pt=4/4
+ability=flying;pay {1}{B},Discard a card:SN gets +2/+2 until end of turn.
+timing=main

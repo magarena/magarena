@@ -1,0 +1,11 @@
+name=Teardrop Kami
+url=http://magiccards.info/bok/en/55.html
+image=http://mtgimage.com/card/teardrop%20kami.jpg
+value=2.859
+rarity=C
+type=Creature
+subtype=Spirit
+cost={U}
+pt=1/1
+ability=pay {S}:Tap target creature.;pay {S}:Untap target creature.
+timing=main

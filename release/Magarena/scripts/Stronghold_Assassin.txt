@@ -1,0 +1,11 @@
+name=Stronghold Assassin
+url=http://magiccards.info/c13/en/93.html
+image=http://mtgimage.com/card/stronghold%20assassin.jpg
+value=3.222
+rarity=R
+type=Creature
+subtype=Zombie,Assassin
+cost={1}{B}{B}
+pt=2/1
+ability=pay {T},Sacrifice a creature:Destroy target nonblack creature.
+timing=main

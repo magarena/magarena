@@ -1,0 +1,11 @@
+name=Skulking Knight
+url=http://magiccards.info/ts/en/130.html
+image=http://mtgimage.com/card/skulking%20knight.jpg
+value=2.75
+rarity=C
+type=Creature
+subtype=Zombie,Knight
+cost={2}{B}
+pt=3/3
+ability=flanking;sac when targeted
+timing=main

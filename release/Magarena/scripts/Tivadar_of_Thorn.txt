@@ -1,0 +1,11 @@
+name=Tivadar of Thorn
+url=http://magiccards.info/ts/en/44.html
+image=http://mtgimage.com/card/tivadar%20of%20thorn.jpg
+value=3.564
+rarity=R
+type=Legendary,Creature
+subtype=Human,Knight
+cost={1}{W}{W}
+pt=2/2
+ability=first strike;protection from red;enters effect Destroy target Goblin.
+timing=main

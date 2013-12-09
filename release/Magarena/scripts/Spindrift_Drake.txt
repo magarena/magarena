@@ -1,0 +1,11 @@
+name=Spindrift Drake
+url=http://magiccards.info/sh/en/44.html
+image=http://mtgimage.com/card/spindrift%20drake.jpg
+value=3.341
+rarity=C
+type=Creature
+subtype=Drake
+cost={U}
+pt=2/1
+ability=flying;your upkeep effect PN may pay {U}. If you don't, sacrifice SN.
+timing=main

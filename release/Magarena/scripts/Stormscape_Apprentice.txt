@@ -1,0 +1,11 @@
+name=Stormscape Apprentice
+url=http://magiccards.info/in/en/75.html
+image=http://mtgimage.com/card/stormscape%20apprentice.jpg
+value=3.989
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability=pay {W},{T}:Tap target creature.;pay {B},{T}:Target player loses 1 life.
+timing=main

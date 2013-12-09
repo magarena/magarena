@@ -1,0 +1,11 @@
+name=Stonewood Invoker
+url=http://magiccards.info/evg/en/11.html
+image=http://mtgimage.com/card/stonewood%20invoker.jpg
+value=3.217
+rarity=C
+type=Creature
+subtype=Elf,Mutant
+cost={1}{G}
+pt=2/2
+ability=pay {7}{G}:SN gets +5/+5 until end of turn.
+timing=main
