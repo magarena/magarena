@@ -12,7 +12,9 @@ import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuButton;
+import magic.ui.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen
@@ -67,7 +69,7 @@ public class DuelDecksScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new DuelDecksScreenOptions(frame, this);
+        new ScreenOptions(frame, this);
     }
 
     /* (non-Javadoc)
@@ -161,6 +163,63 @@ public class DuelDecksScreen
     public void saveDuel() {
         screenContent.getDuel().save(MagicDuel.getDuelFile());
         JOptionPane.showMessageDialog(this, "Duel saved. Use Load Duel option in Main Menu to restore.", "Save Duel", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private class ScreenOptions extends ScreenOptionsOverlay {
+
+        private final MagicFrame frame;
+        private final DuelDecksScreen screen;
+
+        public ScreenOptions(final MagicFrame frame0, final DuelDecksScreen screen0) {
+            super(frame0);
+            this.frame = frame0;
+            this.screen = screen0;
+        }
+
+        /* (non-Javadoc)
+         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
+         */
+        @Override
+        protected MenuPanel getScreenMenu() {
+
+            final MenuPanel menu = new MenuPanel("Duel Options");
+
+            menu.addMenuItem("New Duel", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideAllMenuPanels();
+                    frame.showNewDuelDialog();
+                    hideOverlay();
+                }
+            });
+            menu.addMenuItem("Load Duel", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    frame.loadDuel();
+                    hideOverlay();
+                }
+            });
+            menu.addMenuItem("Save Duel", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    screen.saveDuel();
+                    hideOverlay();
+                }
+            });
+            menu.addBlankItem();
+            menu.addMenuItem("Close menu", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideOverlay();
+                }
+            });
+
+            menu.refreshLayout();
+            menu.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
+            return menu;
+
+        }
+
     }
 
 }

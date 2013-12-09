@@ -4,7 +4,9 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+
 import magic.ui.widget.MenuButton;
+import magic.ui.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen
@@ -68,7 +70,23 @@ public class CardExplorerScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new CardExplorerScreenOptions(frame);
+        new ScreenOptions(frame);
+    }
+
+    private class ScreenOptions extends ScreenOptionsOverlay {
+
+        public ScreenOptions(final MagicFrame frame) {
+            super(frame);
+        }
+
+        /* (non-Javadoc)
+         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
+         */
+        @Override
+        protected MenuPanel getScreenMenu() {
+            return null;
+        }
+
     }
 
 }

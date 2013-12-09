@@ -1,9 +1,15 @@
 package magic.ui;
 
+import java.awt.event.ActionEvent;
+
+import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 
 import net.miginfocom.swing.MigLayout;
+import magic.data.GeneralConfig;
 import magic.model.MagicGame;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.MenuPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 @SuppressWarnings("serial")
@@ -32,7 +38,7 @@ public class DuelScreen extends MagScreen implements IMagScreenOptionsMenu {
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new DuelScreenOptions(frame, this);
+        new ScreenOptions(frame, this);
     }
 
     public void updateView() {
@@ -61,6 +67,62 @@ public class DuelScreen extends MagScreen implements IMagScreenOptionsMenu {
     @Override
     public void requestFocus() {
         gamePanel.requestFocus();
+    }
+
+    private class ScreenOptions extends ScreenOptionsOverlay {
+
+        private final DuelScreen screen;
+
+        public ScreenOptions(final MagicFrame frame, final DuelScreen screen0) {
+            super(frame);
+            this.screen = screen0;
+        }
+
+        /* (non-Javadoc)
+         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
+         */
+        @Override
+        protected MenuPanel getScreenMenu() {
+
+            final MenuPanel menu = new MenuPanel("Game Options");
+
+            menu.addMenuItem("Concede game", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    screen.concedeGame();
+                    setVisible(false);
+                }
+            });
+            menu.addMenuItem("Restart game", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    screen.resetGame();
+                    setVisible(false);
+                }
+            });
+            final boolean isTextMode = GeneralConfig.getInstance().getTextView();
+            menu.addMenuItem(isTextMode ? "Image mode" : "Text mode", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    GeneralConfig.getInstance().setTextView(!isTextMode);
+                    screen.updateView();
+                    setVisible(false);
+                }
+            });
+            menu.addBlankItem();
+            menu.addMenuItem("Close menu", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideOverlay();
+                }
+            });
+
+            menu.refreshLayout();
+            menu.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
+            return menu;
+
+        }
+
     }
 
 }

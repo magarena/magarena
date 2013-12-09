@@ -13,7 +13,9 @@ import magic.MagicMain;
 import magic.data.DeckUtils;
 import magic.model.MagicDeck;
 import magic.ui.viewer.DeckDescriptionPreview;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuButton;
+import magic.ui.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen
@@ -129,7 +131,7 @@ public class DeckEditorScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-       new DeckEditorScreenOptions(frame, this);
+       new ScreenOptions(frame, this);
     }
 
     public void createNewEmptyDeck() {
@@ -183,6 +185,67 @@ public class DeckEditorScreen
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }
         return true;
+    }
+
+
+    private class ScreenOptions extends ScreenOptionsOverlay {
+
+        private final DeckEditorScreen screen;
+
+        public ScreenOptions(final MagicFrame frame0, final DeckEditorScreen screen0) {
+            super(frame0);
+            this.screen = screen0;
+        }
+
+        /* (non-Javadoc)
+         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
+         */
+        @Override
+        protected MenuPanel getScreenMenu() {
+
+            final MenuPanel menu = new MenuPanel("Deck Options");
+
+            menu.addMenuItem("Clear deck", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    screen.createNewEmptyDeck();
+                    hideOverlay();
+                }
+            });
+//            menu.addMenuItem("New random deck", new AbstractAction() {
+//                @Override
+//                public void actionPerformed(ActionEvent e) {
+//                    setVisible(false);
+//                }
+//            });
+            menu.addMenuItem("Load deck", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideAllMenuPanels();
+                    screen.loadDeck();
+                    hideOverlay();
+                }
+            });
+            menu.addMenuItem("Save deck", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideAllMenuPanels();
+                    screen.saveDeck();
+                    hideOverlay();
+                }
+            });
+            menu.addBlankItem();
+            menu.addMenuItem("Close menu", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    hideOverlay();
+                }
+            });
+
+            menu.refreshLayout();
+            menu.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
+            return menu;
+        }
     }
 
 }
