@@ -49,7 +49,7 @@ public class DuelSetupPanel extends TexturedPanel {
     private final JComboBox<String> aiComboBox;
     private final Theme theme;
 
-    public DuelSetupPanel(final MagicFrame frame) {
+    public DuelSetupPanel() {
 
         theme=ThemeFactory.getInstance().getCurrentTheme();
 
@@ -249,7 +249,7 @@ public class DuelSetupPanel extends TexturedPanel {
                 final int index,
                 final boolean isSelected,
                 final boolean cellHasFocus) {
-            if(selectedVal == SEPARATOR) {
+            if(selectedVal.equals(SEPARATOR)) {
                 return new javax.swing.JSeparator(javax.swing.JSeparator.HORIZONTAL);
             } else if(DeckGenerators.getInstance().getGeneratorNames().contains(selectedVal)) {
                 final JPanel panel=new JPanel(new GridLayout(1,1));

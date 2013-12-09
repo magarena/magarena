@@ -33,11 +33,11 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
     private final MagicFrame frame;
 
     public KeywordsScreen(final MagicFrame frame0) {
-        super(getScreenContent(frame0), frame0);
+        super(getScreenContent(), frame0);
         this.frame = frame0;
     }
 
-    private static JPanel getScreenContent(final MagicFrame frame0) {
+    private static JPanel getScreenContent() {
         final JPanel content = new TexturedPanel();
         content.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         content.setLayout(new MigLayout("insets 0, gap 0"));
@@ -81,7 +81,7 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
+                final JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
                 scrollbar.setValue(0);
             }
         });
@@ -126,11 +126,11 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
             return getPreferredSize();
         }
 
-        public int getScrollableUnitIncrement(Rectangle visibleRect, int orientation, int direction) {
+        public int getScrollableUnitIncrement(final Rectangle visibleRect, final int orientation, final int direction) {
             return getFont().getSize();
         }
 
-        public int getScrollableBlockIncrement(Rectangle visibleRect, int orientation, int direction) {
+        public int getScrollableBlockIncrement(final Rectangle visibleRect, final int orientation, final int direction) {
             return getFont().getSize();
         }
 
@@ -163,7 +163,7 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
     public MenuButton getLeftAction() {
         return new MenuButton("Close", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.closeActiveScreen(false);
             }
         });
@@ -189,7 +189,7 @@ public class KeywordsScreen extends MagScreen implements IMagStatusBar, IMagActi
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
         return true;
     }
 

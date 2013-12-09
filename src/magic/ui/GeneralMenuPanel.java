@@ -18,21 +18,21 @@ public class GeneralMenuPanel extends MenuPanel {
         // Help stuff.
         addMenuItem("ReadMe", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.showReadMeScreen();;
+            public void actionPerformed(final ActionEvent e) {
+                frame.showReadMeScreen();
                 overlay.hideOverlay();
             }
         });
         addMenuItem("Online help", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 URLUtils.openURL(DOCUMENTATION_URL);
                 overlay.hideOverlay();
             }
         });
         addMenuItem("Keywords glossary", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.showKeywordsScreen();
                 overlay.hideOverlay();
             }
@@ -42,7 +42,7 @@ public class GeneralMenuPanel extends MenuPanel {
         // System stuff.
         addMenuItem("Preferences", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 overlay.hideAllMenuPanels();
                 frame.openPreferencesDialog();
                 overlay.hideOverlay();
@@ -52,14 +52,14 @@ public class GeneralMenuPanel extends MenuPanel {
 
         addMenuItem("Quit to main menu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.showMainMenuScreen();
                 overlay.hideOverlay();
             }
         });
         addMenuItem("Quit to desktop", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.quitToDesktop(false);
             }
         });

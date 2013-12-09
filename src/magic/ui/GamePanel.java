@@ -8,8 +8,6 @@ import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;
 import magic.ui.resolution.ResolutionProfiles;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.viewer.BattlefieldViewer;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.GameDuelViewer;
@@ -45,7 +43,6 @@ public final class GamePanel extends JPanel {
     private static final String UNDO_KEY="undo";
     private static final String SWITCH_KEY="switch";
     private static final String PASS_KEY="pass";
-    private static final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
 
     private final MagicFrame frame;
     private final MagicGame game;
@@ -213,13 +210,6 @@ public final class GamePanel extends JPanel {
     private void switchKeyPressed() {
         game.setVisiblePlayer(game.getVisiblePlayer().getOpponent());
         updateView();
-        /*
-        if (textViewButton.isEnabled()) {
-            final boolean selected=!textViewButton.isSelected();
-            textViewButton.setSelected(selected);
-            frame.setTextImageMode(selected);
-        }
-         */
     }
 
     private static boolean isTextView() {
@@ -316,7 +306,6 @@ public final class GamePanel extends JPanel {
     }
 
     public void close() {
-//        frame.closeActiveScreen(false); //.showDuel();
         frame.closeDuelScreen();
     }
 
@@ -356,14 +345,8 @@ public final class GamePanel extends JPanel {
      */
     private void setGamePanelLayout() {
 
-        String layoutConstraints =
-                "insets 0," +           // no margins.
-                "gap 0," +              // no spacing between left & right panels.
-                "flowx," +              // horizontal layout.
-                "";                     // add "debug" to show layout outlines.
-
         removeAll();
-        setLayout(new MigLayout(layoutConstraints));
+        setLayout(new MigLayout("insets 0, gap 0, flowx"));
 
         add(lhsPanel, "w " + DefaultResolutionProfile.getPanelWidthLHS() +"!, h 100%");
         add(rhsPanel, "w 100%, h 100%");
@@ -379,17 +362,8 @@ public final class GamePanel extends JPanel {
      */
     private void setLeftSideLayout() {
 
-        int spacing = theme.getValue(Theme.VALUE_SPACING);
-
-        String layoutConstraints =
-                "insets " + 6 + "," +             // margins determined by theme.
-                "gap 0 " + 10 + "," +              // vertical spacing determined by theme.
-                "flowy" +                               // vertical layout.
-                "";                                     // add "debug" to show layout outlines.
-        String columnConstraints = "[100%, fill]";      // each component fills width of LHS.
-
         lhsPanel.removeAll();
-        lhsPanel.setLayout(new MigLayout(layoutConstraints, columnConstraints));
+        lhsPanel.setLayout(new MigLayout("insets 6, gap 0 10, flowy", "[100%, fill]"));
 
         lhsPanel.add(opponentViewer, "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
         lhsPanel.add(logStackViewer, "h 100%");
@@ -399,77 +373,5 @@ public final class GamePanel extends JPanel {
         logStackViewer.setLogStackLayout();
 
     }
-
-//    private void addStatusPanel() {
-//        final TexturedPanel p = new TexturedPanel();
-//        p.setMinimumSize(new Dimension(p.getPreferredSize().width, 40));
-//        p.setBackground(new Color(0, 0, 0, 220));
-//        p.removeAll();
-//        p.setLayout(new MigLayout("insets 0 0 0 10, gap 6, flowx, aligny 50%", "[][grow, fill][]"));
-//        p.add(getTitlePanel(
-//                "Game " + getGame().getDuel().getGameNr() +
-//                " of " + getGame().getDuel().getConfiguration().getNrOfGames()));
-//        p.add(getOptionsIconButton());
-//        p.add(getHelpIconButton());
-//        lhsPanel.add(p);
-//    }
-//
-//    private final static ImageIcon helpIcon = new ImageIcon(IconImages.HELP_ICON);
-//    private final static ImageIcon optionsIcon = new ImageIcon(IconImages.OPTIONS_ICON);
-//
-//    private JButton getOptionsIconButton() {
-//        JButton btn = new JButton(optionsIcon);
-//        btn.setHorizontalAlignment(SwingConstants.RIGHT);
-//        btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-//        btn.setToolTipText("Options [ESC]");
-//        setButtonTransparent(btn);
-//        btn.addActionListener(new AbstractAction() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                //provider.showOptionsMenuOverlay();
-//            }
-//        });
-//        return btn;
-//    }
-//
-//    private JButton getHelpIconButton() {
-//        JButton btn = new JButton(helpIcon);
-//        btn.setHorizontalAlignment(SwingConstants.RIGHT);
-//        btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-//        btn.setToolTipText("Help [F1]");
-//        setButtonTransparent(btn);
-//        btn.addActionListener(new AbstractAction() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                new MagicHelpOverlay(frame);
-//            }
-//        });
-//        return btn;
-//    }
-//
-//    private void setButtonTransparent(final JButton btn) {
-//        btn.setOpaque(false);
-//        btn.setContentAreaFilled(false);
-//        btn.setBorderPainted(false);
-//        btn.setBorder(null);
-//    }
-//
-//    private JPanel getTitlePanel(final String caption) {
-//        JPanel titlePanel = new JPanel(new MigLayout("insets 0 8 0 0 , gap 0, flowy"));
-//        titlePanel.setOpaque(false);
-//        JLabel version = new JLabel(MagicMain.SOFTWARE_TITLE);
-//        version.setFont(FontsAndBorders.FONT0);
-//        version.setForeground(Color.WHITE);
-//        titlePanel.add(version);
-//        titlePanel.add(getScreenCaptionLabel(caption));
-//        return titlePanel;
-//    }
-//
-//    private JLabel getScreenCaptionLabel(final String caption) {
-//        final JLabel lbl = new JLabel(caption);
-//        lbl.setFont(FontsAndBorders.FONT_MENU_BUTTON);
-//        lbl.setForeground(Color.WHITE);
-//        return lbl;
-//    }
 
 }

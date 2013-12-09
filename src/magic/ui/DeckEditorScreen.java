@@ -50,14 +50,14 @@ public class DeckEditorScreen
         if (!content.isStandaloneDeckEditor()) {
             return new MenuButton("Cancel", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     frame.closeActiveScreen(false);
                 }
             });
         } else {
             return new MenuButton("Close", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     frame.closeActiveScreen(false);
                 }
             });
@@ -72,7 +72,7 @@ public class DeckEditorScreen
         if (!content.isStandaloneDeckEditor()) {
             return new MenuButton("Update duel deck", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     if (content.validateDeck(true) && content.applyDeckUpdates()) {
                         frame.closeActiveScreen(false);
                     }
@@ -91,20 +91,20 @@ public class DeckEditorScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(new MenuButton("Load deck", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 loadDeck();
             }
         }, "Load deck from file"));
         if (content.isStandaloneDeckEditor()) {
             buttons.add(new MenuButton("Save", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     saveDeck();
                 }
             }, "Save deck to file"));
             buttons.add(new MenuButton("Clear", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     if (JOptionPane.showConfirmDialog(
                             MagicMain.rootFrame,
                             "Remove all cards from the deck?") == JOptionPane.YES_OPTION) {

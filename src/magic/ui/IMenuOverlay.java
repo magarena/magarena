@@ -8,6 +8,6 @@ package magic.ui;
  *
  */
 public interface IMenuOverlay {
-    public void hideOverlay();
-    public void hideAllMenuPanels();
+    void hideOverlay();
+    void hideAllMenuPanels();
 }

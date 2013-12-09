@@ -31,7 +31,7 @@ import java.util.Stack;
 @SuppressWarnings("serial")
 public class MagicFrame extends JFrame {
 
-    private boolean ignoreWindowDeactivate = false;
+    private boolean ignoreWindowDeactivate;
     private boolean confirmQuitToDesktop = true;
 
     private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
@@ -46,7 +46,7 @@ public class MagicFrame extends JFrame {
     private final JPanel contentPanel;
     private MagicDuel duel;
     private final Stack<MagScreen> screens;
-    private boolean dontShowAgain = true;
+    private final boolean dontShowAgain = true;
 
     public MagicFrame(final String frameTitle) {
 
@@ -152,7 +152,7 @@ public class MagicFrame extends JFrame {
                 onClose();
             }
             @Override
-            public void windowDeactivated(WindowEvent e) {
+            public void windowDeactivated(final WindowEvent e) {
                 if (isFullScreen() && e.getOppositeWindow() == null && !ignoreWindowDeactivate) {
                     setState(Frame.ICONIFIED);
                 }
@@ -182,8 +182,8 @@ public class MagicFrame extends JFrame {
                     newDuel(DuelConfig.getInstance());
                 }
             }
-        } else {
-            //setContent(new ZoneBackgroundLabel());
+//        } else {
+//            //setContent(new ZoneBackgroundLabel());
         }
     }
 
@@ -365,7 +365,7 @@ public class MagicFrame extends JFrame {
         if (isFullScreen) {
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
             this.setUndecorated(true);
-            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
             this.setSize(screenSize.width, screenSize.height);
             config.setFullScreen(true);
         } else {
@@ -394,7 +394,7 @@ public class MagicFrame extends JFrame {
         contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("F11"), "FullScreen");
         contentPanel.getActionMap().put("FullScreen", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 toggleFullScreenMode();
             }
         });
@@ -404,7 +404,7 @@ public class MagicFrame extends JFrame {
         contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("F12"), "HideMenu");
         contentPanel.getActionMap().put("HideMenu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 //menuPanel.setVisible(!menuPanel.isVisible());
                 final MagScreen activeScreen = screens.peek();
                 activeScreen.setVisible(!activeScreen.isVisible());

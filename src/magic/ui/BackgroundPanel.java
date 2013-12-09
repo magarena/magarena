@@ -14,12 +14,12 @@ import magic.ui.theme.ThemeFactory;
 @SuppressWarnings("serial")
 public class BackgroundPanel extends JPanel {
 
-    public BackgroundPanel(LayoutManager layout) {
+    public BackgroundPanel(final LayoutManager layout) {
         super(layout);
     }
 
     @Override
-    protected void paintComponent(Graphics g) {
+    protected void paintComponent(final Graphics g) {
         final Dimension size = getSize();
         final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
         final boolean stretchTexture = theme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1;

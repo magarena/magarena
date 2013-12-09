@@ -45,7 +45,7 @@ public class DuelDialog extends JDialog implements ActionListener {
         cancelButton.addActionListener(this);
         buttonPanel.add(cancelButton);
 
-        duelSetupPanel = new DuelSetupPanel(frame);
+        duelSetupPanel = new DuelSetupPanel();
         duelSetupPanel.setOpaque(false);
 
         getContentPane().setLayout(new BorderLayout());

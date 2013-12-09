@@ -26,32 +26,32 @@ public class MagicSettingsScreen extends MagScreen {
 
         menu.addMenuItem("Preferences", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame0.openPreferencesDialog();
             }
         });
         menu.addMenuItem("Download images", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 new DownloadImagesDialog(frame0);
             }
         });
         menu.addMenuItem("More themes online...", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 URLUtils.openURL("http://www.slightlymagic.net/forum/viewforum.php?f=89");
             }
         });
         menu.addMenuItem("Toggle full-screen", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame0.toggleFullScreenMode();
             }
         }, "Shortcut key: F11");
         menu.addBlankItem();
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame0.closeActiveScreen(false);
             }
         });
@@ -66,7 +66,7 @@ public class MagicSettingsScreen extends MagScreen {
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
         return true;
     }
 

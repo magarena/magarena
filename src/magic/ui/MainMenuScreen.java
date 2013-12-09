@@ -28,43 +28,43 @@ public class MainMenuScreen extends MagScreen {
 
         menuPanel.addMenuItem("New duel", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.showNewDuelDialog();
             }
         });
         menuPanel.addMenuItem("Load duel", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.loadDuel();
             }
         });
         menuPanel.addMenuItem("Card explorer", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.showCardExplorerScreen();
             }
         });
         menuPanel.addMenuItem("Deck editor", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.showDeckEditor();
             }
         });
         menuPanel.addMenuItem("Settings", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.showSettingsMenuScreen();
             }
         });
         menuPanel.addMenuItem("Help", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.showHelpMenuScreen();
             }
         });
         menuPanel.addMenuItem("Quit to desktop", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.closeActiveScreen(false);
             }
         });
@@ -77,7 +77,7 @@ public class MainMenuScreen extends MagScreen {
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
         return true;
     }
 

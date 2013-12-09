@@ -37,7 +37,7 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeMenu");
         getActionMap().put("closeMenu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 setVisible(false);
             }
         });
@@ -59,14 +59,14 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
 
         menu.addMenuItem("Concede game", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 screen.concedeGame();
                 setVisible(false);
             }
         });
         menu.addMenuItem("Restart game", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 screen.resetGame();
                 setVisible(false);
             }
@@ -74,7 +74,7 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
         final boolean isTextMode = GeneralConfig.getInstance().getTextView();
         menu.addMenuItem(isTextMode ? "Image mode" : "Text mode", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 GeneralConfig.getInstance().setTextView(!isTextMode);
                 screen.updateView();
                 setVisible(false);
@@ -83,7 +83,7 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
         menu.addBlankItem();
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
             }
         });
@@ -106,7 +106,7 @@ public class DuelScreenOptions extends TexturedPanel implements IMenuOverlay {
      */
     @Override
     public void hideAllMenuPanels() {
-        for (Component component : getComponents()) {
+        for (final Component component : getComponents()) {
             if (component instanceof MenuPanel) {
                 ((MenuPanel) component).setVisible(false);
             }

@@ -30,7 +30,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
     private final ActionListener actionListener = new ActionListener() {
-        public void actionPerformed(ActionEvent actionEvent) {
+        public void actionPerformed(final ActionEvent actionEvent) {
             dispose();
         }
     };
@@ -74,7 +74,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     }
 
     private void setEscapeKeyAsCancelAction() {
-        KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0);
+        final KeyStroke stroke = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0);
         getRootPane().registerKeyboardAction(actionListener, stroke, JComponent.WHEN_IN_FOCUSED_WINDOW);
     }
 
@@ -91,7 +91,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         final JPanel panel = new JPanel();
         panel.setLayout(null);
 
-        int Y=10;
+        final int Y=10;
         final int X3=25;
         final int H3=20;
         final int W3=350;

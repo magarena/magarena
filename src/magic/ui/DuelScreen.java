@@ -51,7 +51,7 @@ public class DuelScreen extends MagScreen implements IMagScreenOptionsMenu {
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
         return true;
     }
 

@@ -36,7 +36,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeMenu");
         getActionMap().put("closeMenu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
             }
         });
@@ -58,7 +58,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
 
         menu.addMenuItem("New Duel", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideAllMenuPanels();
                 frame.showNewDuelDialog();
                 hideOverlay();
@@ -66,14 +66,14 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
         });
         menu.addMenuItem("Load Duel", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.loadDuel();
                 hideOverlay();
             }
         });
         menu.addMenuItem("Save Duel", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 screen.saveDuel();
                 hideOverlay();
             }
@@ -81,7 +81,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
         menu.addBlankItem();
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
             }
         });
@@ -104,7 +104,7 @@ public class DuelDecksScreenOptions extends TexturedPanel implements IMenuOverla
      */
     @Override
     public void hideAllMenuPanels() {
-        for (Component component : getComponents()) {
+        for (final Component component : getComponents()) {
             if (component instanceof MenuPanel) {
                 ((MenuPanel) component).setVisible(false);
             }

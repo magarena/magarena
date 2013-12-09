@@ -24,11 +24,11 @@ public class ReadmeScreen extends MagScreen implements IMagStatusBar, IMagAction
     private static JScrollPane keywordsPane;
 
     public ReadmeScreen(final MagicFrame frame0) {
-        super(getScreenContent(frame0), frame0);
+        super(getScreenContent(), frame0);
         this.frame = frame0;
     }
 
-    private static JPanel getScreenContent(final MagicFrame frame0) {
+    private static JPanel getScreenContent() {
 
         final JPanel content = new TexturedPanel();
 
@@ -75,7 +75,7 @@ public class ReadmeScreen extends MagScreen implements IMagStatusBar, IMagAction
     public MenuButton getLeftAction() {
         return new MenuButton("Close", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 frame.closeActiveScreen(false);
             }
         });
@@ -109,7 +109,7 @@ public class ReadmeScreen extends MagScreen implements IMagStatusBar, IMagAction
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
         return true;
     }
 

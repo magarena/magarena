@@ -36,7 +36,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeMenu");
         getActionMap().put("closeMenu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
             }
         });
@@ -58,7 +58,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
 
         menu.addMenuItem("Clear deck", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 screen.createNewEmptyDeck();
                 hideOverlay();
             }
@@ -71,7 +71,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
 //        });
         menu.addMenuItem("Load deck", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideAllMenuPanels();
                 screen.loadDeck();
                 hideOverlay();
@@ -79,7 +79,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
         });
         menu.addMenuItem("Save deck", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideAllMenuPanels();
                 screen.saveDeck();
                 hideOverlay();
@@ -88,7 +88,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
         menu.addBlankItem();
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
             }
         });
@@ -111,7 +111,7 @@ public class DeckEditorScreenOptions extends TexturedPanel implements IMenuOverl
      */
     @Override
     public void hideAllMenuPanels() {
-        for (Component component : getComponents()) {
+        for (final Component component : getComponents()) {
             if (component instanceof MenuPanel) {
                 ((MenuPanel) component).setVisible(false);
             }

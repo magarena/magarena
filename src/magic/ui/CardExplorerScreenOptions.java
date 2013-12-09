@@ -34,7 +34,7 @@ public class CardExplorerScreenOptions extends TexturedPanel implements IMenuOve
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeMenu");
         getActionMap().put("closeMenu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
             }
         });
@@ -49,7 +49,7 @@ public class CardExplorerScreenOptions extends TexturedPanel implements IMenuOve
         menuPanel.addBlankItem();
         menuPanel.addMenuItem(new MenuButton("Close Menu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 hideOverlay();
             }
         }));
@@ -71,7 +71,7 @@ public class CardExplorerScreenOptions extends TexturedPanel implements IMenuOve
      */
     @Override
     public void hideAllMenuPanels() {
-        for (Component component : getComponents()) {
+        for (final Component component : getComponents()) {
             if (component instanceof MenuPanel) {
                 ((MenuPanel) component).setVisible(false);
             }

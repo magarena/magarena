@@ -52,7 +52,7 @@ public abstract class MagScreen extends JPanel {
         getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "OptionsMenu");
         getActionMap().put("OptionsMenu", new AbstractAction() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(final ActionEvent e) {
                 showOptionsMenuOrCloseScreen();
             }
         });
@@ -67,15 +67,15 @@ public abstract class MagScreen extends JPanel {
     }
 
     public boolean hasOptionsMenu() {
-       return (this instanceof IMagScreenOptionsMenu);
+       return this instanceof IMagScreenOptionsMenu;
     };
 
     private boolean hasActionBar() {
-        return (this instanceof IMagActionBar);
+        return this instanceof IMagActionBar;
     }
 
     private boolean hasStatusBar() {
-        return (this instanceof IMagStatusBar);
+        return this instanceof IMagStatusBar;
     }
 
     /**

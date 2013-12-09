@@ -48,14 +48,14 @@ public class DuelDecksScreen
         if (screenContent.getDuel().getGamesPlayed() == 0) {
             return new MenuButton("< Main menu", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     frame.closeActiveScreen(false);
                 }
             });
         } else {
             return new MenuButton("Restart duel", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     frame.restartDuel();
                 }
             });
@@ -78,14 +78,14 @@ public class DuelDecksScreen
         if (!screenContent.getDuel().isFinished()) {
             return new MenuButton(getStartDuelCaption() + " >", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     frame.nextGame();
                 }
             });
         } else {
             return new MenuButton("New Duel", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     frame.showNewDuelDialog();
                 }
             });
@@ -109,13 +109,13 @@ public class DuelDecksScreen
         if (screenContent.getDuel().getGamesPlayed() == 0) {
             buttons.add(new MenuButton("Deck Editor", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     frame.showDeckEditor(screenContent.getSelectedPlayer().getDeck());
                 }
             }));
             buttons.add(new MenuButton("Swap Decks", new AbstractAction() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
+                public void actionPerformed(final ActionEvent e) {
                     swapDecks();
                 }
             }));
@@ -149,7 +149,7 @@ public class DuelDecksScreen
      * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
      */
     @Override
-    public boolean isScreenReadyToClose(MagScreen nextScreen) {
+    public boolean isScreenReadyToClose(final MagScreen nextScreen) {
         screenContent.haltStrengthViewer();
         return true;
     }
