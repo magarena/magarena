@@ -70,7 +70,7 @@ public class DeckEditorScreen
     @Override
     public MenuButton getRightAction() {
         if (!content.isStandaloneDeckEditor()) {
-            return new MenuButton("Update duel deck", new AbstractAction() {
+            return new MenuButton("Use this deck", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     if (content.validateDeck(true) && content.applyDeckUpdates()) {
