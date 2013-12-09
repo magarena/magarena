@@ -1,0 +1,11 @@
+name=Setessan Griffin
+url=http://magiccards.info/ths/en/30.html
+image=http://mtgimage.com/card/setessan%20griffin.jpg
+value=2.173
+rarity=C
+type=Creature
+subtype=Griffin
+cost={4}{W}
+pt=3/2
+ability=flying;pay {2}{G}{G},{Once}:SN gets +2/+2 until end of turn.
+timing=main

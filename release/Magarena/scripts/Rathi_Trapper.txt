@@ -1,0 +1,11 @@
+name=Rathi Trapper
+url=http://magiccards.info/mma/en/94.html
+image=http://mtgimage.com/card/rathi%20trapper.jpg
+value=3.5
+rarity=C
+type=Creature
+subtype=Human,Rebel,Rogue
+cost={1}{B}
+pt=1/2
+ability=pay {B},{T}:Tap target creature.
+timing=main

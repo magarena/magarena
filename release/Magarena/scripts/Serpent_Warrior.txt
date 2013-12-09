@@ -1,0 +1,11 @@
+name=Serpent Warrior
+url=http://magiccards.info/9e/en/162.html
+image=http://mtgimage.com/card/serpent%20warrior.jpg
+value=1.64
+rarity=C
+type=Creature
+subtype=Snake,Warrior
+cost={2}{B}
+pt=3/3
+ability=enters effect PN loses 3 life.
+timing=main

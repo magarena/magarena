@@ -1,0 +1,11 @@
+name=Nikko-Onna
+url=http://magiccards.info/sok/en/21.html
+image=http://mtgimage.com/card/nikko-onna.jpg
+value=3.529
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{W}
+pt=2/2
+ability=enters effect Destroy target enchantment.;spirit or arcane effect PN may return SN to its owner's hand.
+timing=main

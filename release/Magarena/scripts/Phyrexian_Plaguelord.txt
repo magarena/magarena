@@ -1,0 +1,11 @@
+name=Phyrexian Plaguelord
+url=http://magiccards.info/pvc/en/13.html
+image=http://mtgimage.com/card/phyrexian%20plaguelord.jpg
+value=4.138
+rarity=R
+type=Creature
+subtype=Carrier
+cost={3}{B}{B}
+pt=4/4
+ability=pay {T},{S}:Target creature gets -4/-4 until end of turn.;pay Sacrifice a creature:Target creature gets -1/-1 until end of turn.
+timing=main

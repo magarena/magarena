@@ -1,0 +1,11 @@
+name=Phyrexian Defiler
+url=http://magiccards.info/pvc/en/12.html
+image=http://mtgimage.com/card/phyrexian%20defiler.jpg
+value=3.438
+rarity=U
+type=Creature
+subtype=Carrier
+cost={2}{B}{B}
+pt=3/3
+ability=pay {T},{S}:Target creature gets -3/-3 until end of turn.
+timing=main

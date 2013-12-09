@@ -1,0 +1,11 @@
+name=Orcish Bloodpainter
+url=http://magiccards.info/cs/en/94.html
+image=http://mtgimage.com/card/orcish%20bloodpainter.jpg
+value=1.156
+rarity=C
+type=Creature
+subtype=Orc,Shaman
+cost={2}{R}
+pt=2/1
+ability=pay {T},Sacrifice a creature:SN deals 1 damage to target creature or player.
+timing=main

@@ -1,0 +1,11 @@
+name=Molting Harpy
+url=http://magiccards.info/mm/en/148.html
+image=http://mtgimage.com/card/molting%20harpy.jpg
+value=2.125
+rarity=U
+type=Creature
+subtype=Harpy,Mercenary
+cost={B}
+pt=2/1
+ability=flying;your upkeep effect PN may pay {2}. If you don't, sacrifice SN.
+timing=main

@@ -1,0 +1,11 @@
+name=Mournwhelk
+url=http://magiccards.info/lw/en/127.html
+image=http://mtgimage.com/card/mournwhelk.jpg
+value=2.1
+rarity=C
+type=Creature
+subtype=Elemental
+cost={6}{B}
+pt=3/3
+ability=enters effect Target player discards two cards.;evoke {3}{B}
+timing=main

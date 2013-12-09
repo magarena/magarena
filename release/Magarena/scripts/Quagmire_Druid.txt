@@ -1,0 +1,11 @@
+name=Quagmire Druid
+url=http://magiccards.info/c13/en/90.html
+image=http://mtgimage.com/card/quagmire%20druid.jpg
+value=3.408
+rarity=C
+type=Creature
+subtype=Zombie,Druid
+cost={2}{B}
+pt=2/2
+ability=pay {G},{T}:Sacrifice a creature:Destroy target enchantment.
+timing=main

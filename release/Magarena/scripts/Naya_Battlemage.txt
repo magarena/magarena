@@ -1,0 +1,11 @@
+name=Naya Battlemage
+url=http://magiccards.info/ala/en/142.html
+image=http://mtgimage.com/card/naya%20battlemage.jpg
+value=3.063
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={2}{G}
+pt=2/2
+ability=pay {R},{T}:Target creature gets +2/+0 until end of turn.;pay {W},{T}:Tap target creature.
+timing=main

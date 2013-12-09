@@ -1,0 +1,11 @@
+name=Patrol Hound
+url=http://magiccards.info/od/en/38.html
+image=http://mtgimage.com/card/patrol%20hound.jpg
+value=2.812
+rarity=C
+type=Creature
+subtype=Hound
+cost={1}{W}
+pt=2/2
+ability=pay Discard a card:SN gains first strike until end of turn.
+timing=main

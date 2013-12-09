@@ -1,0 +1,10 @@
+name=3/1 red Elemental creature token with haste
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=20000&amp;d=1143672902
+value=3
+token=Elemental
+type=Creature
+subtype=Elemental
+color=R
+cost={0}
+pt=3/1
+ability=haste

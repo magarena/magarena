@@ -1,0 +1,11 @@
+name=Phantasmal Forces
+url=http://magiccards.info/5e/en/106.html
+image=http://mtgimage.com/card/phantasmal%20forces.jpg
+value=2.881
+rarity=C
+type=Creature
+subtype=Illusion
+cost={3}{U}
+pt=4/1
+ability=flying;your upkeep effect PN may pay {U}. If you don't, sacrifice SN.
+timing=main

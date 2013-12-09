@@ -1,0 +1,11 @@
+name=Phyrexian Broodlings
+url=http://magiccards.info/pvc/en/8.html
+image=http://mtgimage.com/card/phyrexian%20broodlings.jpg
+value=3.411
+rarity=C
+type=Creature
+subtype=Minion
+cost={1}{B}{B}
+pt=2/2
+ability=pay {1},Sacrifice a creature:Put a +1/+1 counter on SN.
+timing=main

@@ -1,0 +1,11 @@
+name=Plague Dogs
+url=http://magiccards.info/ud/en/66.html
+image=http://mtgimage.com/card/plague%20dogs.jpg
+value=3.5
+rarity=U
+type=Creature
+subtype=Zombie,Hound
+cost={4}{B}
+pt=3/3
+ability=dies effect All creatures get -1/-1 until end of turn.;pay {2},{S}:PN draws a card.
+timing=main

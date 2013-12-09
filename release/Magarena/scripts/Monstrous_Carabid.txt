@@ -1,0 +1,11 @@
+name=Monstrous Carabid
+url=http://magiccards.info/arb/en/43.html
+image=http://mtgimage.com/card/monstrous%20carabid.jpg
+value=2.219
+rarity=C
+type=Creature
+subtype=Insect
+cost={3}{B}{R}
+pt=4/4
+ability=attacks each turn if able;cycling {B/R}
+timing=main

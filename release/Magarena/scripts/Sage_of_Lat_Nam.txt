@@ -1,0 +1,11 @@
+name=Sage of Lat-Nam
+url=http://magiccards.info/8e/en/97.html
+image=http://mtgimage.com/card/sage%20of%20lat-nam.jpg
+value=3.484
+rarity=R
+type=Creature
+subtype=Human,Artificer
+cost={1}{U}
+pt=1/2
+ability=pay {T},Sacrifice an artifact:PN draws a card.
+timing=main

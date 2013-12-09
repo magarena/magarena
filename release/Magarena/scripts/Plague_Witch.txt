@@ -1,0 +1,11 @@
+name=Plague Witch
+url=http://magiccards.info/ne/en/66.html
+image=http://mtgimage.com/card/plague%20witch.jpg
+value=2.645
+rarity=C
+type=Creature
+subtype=Elf,Spellshaper
+cost={1}{B}
+pt=1/1
+ability=pay {B},{T},Discard a card:Target creature gets -1/-1 until end of turn.
+timing=main

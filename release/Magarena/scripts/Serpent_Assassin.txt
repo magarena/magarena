@@ -1,0 +1,11 @@
+name=Serpent Assassin
+url=http://magiccards.info/po/en/31.html
+image=http://mtgimage.com/card/serpent%20assassin.jpg
+value=2.648
+rarity=R
+type=Creature
+subtype=Snake,Assassin
+cost={3}{B}{B}
+pt=2/2
+ability=enters effect PN may Destroy target nonblack creature.
+timing=main

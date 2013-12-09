@@ -1,0 +1,11 @@
+name=Seismic Mage
+url=http://magiccards.info/mm/en/211.html
+image=http://mtgimage.com/card/seismic%20mage.jpg
+value=3.698
+rarity=R
+type=Creature
+subtype=Human,Spellshaper
+cost={3}{R}
+pt=1/1
+ability=pay {2}{R},{T},Discard a card:Destroy target land.
+timing=main

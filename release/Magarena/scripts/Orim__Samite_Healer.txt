@@ -1,0 +1,11 @@
+name=Orim, Samite Healer
+url=http://magiccards.info/tp/en/244.html
+image=http://mtgimage.com/card/orim,%20samite%20healer.jpg
+value=3.375
+rarity=R
+type=Legendary,Creature
+subtype=Human,Cleric
+cost={1}{W}{W}
+pt=1/3
+ability=pay {T}:Prevent the next 3 damage that would be dealt to target creature or player this turn.
+timing=main

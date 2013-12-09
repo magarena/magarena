@@ -1,0 +1,11 @@
+name=Screeching Drake
+url=http://magiccards.info/po2/en/44.html
+image=http://mtgimage.com/card/screeching%20drake.jpg
+value=2.727
+rarity=C
+type=Creature
+subtype=Drake
+cost={3}{U}
+pt=2/2
+ability=flying;enters effect PN draws a card, then discards a card.
+timing=main
