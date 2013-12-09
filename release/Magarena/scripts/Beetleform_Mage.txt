@@ -1,0 +1,11 @@
+name=Beetleform Mage
+url=http://magiccards.info/dgm/en/54.html
+image=http://mtgimage.com/card/beetleform%20mage.jpg
+value=3.46
+rarity=C
+type=Creature
+subtype=Insect,Human,Wizard
+cost={1}{G}{U}
+pt=2/2
+ability=pay {G}{B},{Once}:SN gets +2/+2 and gains flying until end of turn.
+timing=main

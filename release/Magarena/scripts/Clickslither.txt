@@ -1,0 +1,11 @@
+name=Clickslither
+url=http://magiccards.info/evg/en/34.html
+image=http://mtgimage.com/card/clickslither.jpg
+value=4.378
+rarity=R
+type=Creature
+subtype=Insect
+cost={1}{R}{R}{R}
+pt=3/3
+ability=haste;pay Sacrifice a Goblin:SN gets +2/+2 and gains trample until end of turn.
+timing=main

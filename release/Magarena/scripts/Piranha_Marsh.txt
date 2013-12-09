@@ -1,0 +1,9 @@
+name=Piranha Marsh
+url=http://magiccards.info/zen/en/222.html
+image=http://mtgimage.com/card/piranha%20marsh.jpg
+value=3.49
+rarity=C
+type=Land
+mana=b3
+ability=enters tapped;enters effect Target player loses 1 life.;tap add mana {B}
+timing=land
