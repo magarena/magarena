@@ -10,6 +10,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicDamage;
 import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
+import magic.model.MagicAbilityList;
 import magic.model.MagicManaCost;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
@@ -40,6 +41,7 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.action.MagicSacrificeAction;
+import magic.model.action.MagicAddStaticAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -67,11 +69,14 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
+import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 import magic.data.TokenCardDefinitions;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.util.Collection;
+import java.util.Set;
 
 public enum MagicRuleEventAction {
     Destroy(
@@ -250,7 +255,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DrawDiscard(
+    DrawDiscardSelf(
         "(pn )?draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?.", 
         MagicTiming.Draw, 
         "Draw"
@@ -264,6 +269,28 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicDrawAction(event.getPlayer(), amount1));
                     game.addEvent(new MagicDiscardEvent(event.getSource(), event.getPlayer(), amount2));
+                }
+            };
+        }
+    },
+    DrawDiscardChosen(
+        "(?<choice>[^\\.]*) draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?.", 
+        MagicTiming.Draw, 
+        "Draw"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount1 = MagicRuleEventAction.englishToInt(matcher.group("amount1"));
+            final int amount2 = MagicRuleEventAction.englishToInt(matcher.group("amount2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicDrawAction(player, amount1));
+                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount2));
+                        }
+                    });
                 }
             };
         }
@@ -294,6 +321,29 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    LoseGainLifeChosen(
+        "(?<choice>[^\\.]*) loses (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life.", 
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal, 
+        "-Life"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount1 = Integer.parseInt(matcher.group("amount1"));
+            final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicChangeLifeAction(player,-amount1));
+                            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount2));
+                        }
+                    });
+                }
+            };
+        }
+    },
     GainLife(
         "(pn )?gain(s)? (?<amount>[0-9]+) life.", 
         MagicTiming.Removal, 
@@ -306,6 +356,27 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicChangeLifeAction(event.getPlayer(), amount));
+                }
+            };
+        }
+    },
+    GainLifeChosen(
+        "(?<choice>[^\\.]*) gains (?<amount>[0-9]+) life.", 
+        MagicTargetHint.Positive, 
+        MagicTiming.Removal, 
+        "+Life"
+    ) {
+        public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicChangeLifeAction(player, amount));
+                        }
+                    });
                 }
             };
         }
@@ -341,29 +412,6 @@ public enum MagicRuleEventAction {
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
                             game.doAction(new MagicChangeLifeAction(player,-amount));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    LoseGainLifeChosen(
-        "(?<choice>[^\\.]*) loses (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life.", 
-        MagicTargetHint.Negative, 
-        MagicTiming.Removal, 
-        "-Life"
-    ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
-            final int amount1 = Integer.parseInt(matcher.group("amount1"));
-            final int amount2 = Integer.parseInt(matcher.group("amount2"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.doAction(new MagicChangeLifeAction(player,-amount1));
-                            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount2));
                         }
                     });
                 }
@@ -461,7 +509,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosen(
-        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>[^\\.]*) until end of turn.", 
+        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>.*) until end of turn.", 
         MagicTargetHint.Positive
     ) {
         public MagicEventAction getAction(final String rule) {
