@@ -38,16 +38,12 @@ public class DeckEditorScreen
     }
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
     public DeckEditorScreen(final MagicFrame frame0) {
-        super(getScreenContent(), frame0);
-        this.frame = frame0;
+        this(frame0, null);
     }
 
     private static JPanel getScreenContent(final MagicDeck deck) {
         content = new ExplorerPanel(deck);
         return content;
-    }
-    private static JPanel getScreenContent() {
-        return getScreenContent(null);
     }
 
     /* (non-Javadoc)
