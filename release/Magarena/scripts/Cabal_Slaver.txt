@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{B}
 pt=2/1
-ability=lord Goblins gain combat damage discard
+ability=lord all goblins have combat damage discard 1
 timing=main

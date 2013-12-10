@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={2}{B}{B}
 pt=3/3
-ability=enters effect All green creatures get -1/-1 until end of turn.
+ability=enters effect green creatures get -1/-1 until end of turn.
 timing=main
