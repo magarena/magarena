@@ -1,0 +1,11 @@
+name=Yeva's Forcemage
+url=http://magiccards.info/m13/en/198.html
+image=http://mtgimage.com/card/yeva's%20forcemage.jpg
+value=2.967
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={2}{G}
+pt=2/2
+ability=enters effect Target creature gets +2/+2 until end of turn.
+timing=main

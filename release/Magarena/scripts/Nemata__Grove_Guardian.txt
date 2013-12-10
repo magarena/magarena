@@ -1,0 +1,11 @@
+name=Nemata, Grove Guardian
+url=http://magiccards.info/ps/en/85.html
+image=http://mtgimage.com/card/nemata,%20grove%20guardian.jpg
+value=3.979
+rarity=R
+type=Legendary,Creature
+subtype=Treefolk
+cost={4}{G}{G}
+pt=4/5
+ability=pay {2}{G}:PN puts a 1/1 green Saproling creature token onto the battlefield.;pay Sacrifice a Saproling:Saproling creatures get +1/+1 until end of turn.
+timing=main

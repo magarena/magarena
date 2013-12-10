@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Cleric,Druid
 cost={3}{G}
 pt=2/2
-ability=pay {3}{G}, {T}: Tap target creature.;\
-        pay {3}{G}, {T}: Untap target creature.
+ability=pay {3}{G}, {T}: Tap target artifact, creature, or land.;\
+        pay {3}{G}, {T}: Untap target artifact, creature, or land.
 timing=main

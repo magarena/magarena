@@ -1,0 +1,11 @@
+name=Mountain Yeti
+url=http://magiccards.info/ch/en/53.html
+image=http://mtgimage.com/card/mountain%20yeti.jpg
+value=3.708
+rarity=C
+type=Creature
+subtype=Yeti
+cost={2}{R}{R}
+pt=3/3
+ability=mountainwalk;protection from white
+timing=main

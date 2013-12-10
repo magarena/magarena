@@ -1,0 +1,11 @@
+name=Soul of Magma
+url=http://magiccards.info/chk/en/189.html
+image=http://mtgimage.com/card/soul%20of%20magma.jpg
+value=1.724
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{R}{R}
+pt=2/2
+ability=spirit or arcane effect SN deals 1 damage to target creature.
+timing=main

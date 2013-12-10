@@ -1,0 +1,11 @@
+name=Vulshok Heartstoker
+url=http://magiccards.info/som/en/107.html
+image=http://mtgimage.com/card/vulshok%20heartstoker.jpg
+value=2.35
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={2}{R}
+pt=2/2
+ability=enters effect Target creature gets +2/+0 until end of turn.
+timing=main

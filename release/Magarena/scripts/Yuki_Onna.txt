@@ -1,0 +1,11 @@
+name=Yuki-Onna
+url=http://magiccards.info/sok/en/120.html
+image=http://mtgimage.com/card/yuki-onna.jpg
+value=2.897
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{R}
+pt=3/1
+ability=enters effect Destroy target artifact.;spirit or arcane effect PN may Return SN to its owner's hand.
+timing=main

@@ -1,0 +1,11 @@
+name=Seething Pathblazer
+url=http://magiccards.info/mt/en/101.html
+image=http://mtgimage.com/card/seething%20pathblazer.jpg
+value=2.456
+rarity=C
+type=Creature
+subtype=Elemental,Warrior
+cost={2}{R}
+pt=2/2
+ability=pay Sacrifice an Elemental:SN gets +2/+0 and gains first strike until end of turn.
+timing=main

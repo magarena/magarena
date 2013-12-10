@@ -1,0 +1,11 @@
+name=Wildheart Invoker
+url=http://magiccards.info/roe/en/213.html
+image=http://mtgimage.com/card/wildheart%20invoker.jpg
+value=3.528
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={2}{G}{G}
+pt=4/3
+ability=pay {8}:Target creature gets +5/+5 and gains trample until end of turn.
+timing=main

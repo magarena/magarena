@@ -1,0 +1,11 @@
+name=Megatog
+url=http://magiccards.info/mi/en/100.html
+image=http://mtgimage.com/card/megatog.jpg
+value=4.071
+rarity=R
+type=Creature
+subtype=Atog
+cost={4}{R}{R}
+pt=3/4
+ability=pay Sacrifice an artifact:SN gets +3/+3 and gains trample until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Shield Mate
+url=http://magiccards.info/avr/pt/50.html
+image=http://mtgimage.com/card/shield%20mate.jpg
+value=3.121
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability=pay {S}:Target creature gets +0/+4 until end of turn.
+timing=main

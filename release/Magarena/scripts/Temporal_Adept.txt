@@ -1,0 +1,11 @@
+name=Temporal Adept
+url=http://magiccards.info/9e/en/102.html
+image=http://mtgimage.com/card/temporal%20adept.jpg
+value=4.075
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{U}
+pt=1/1
+ability=pay {U}{U}{U,{T}:Return target permanent to its owner's hand.
+timing=main

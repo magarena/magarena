@@ -1,0 +1,11 @@
+name=Spire Tracer
+url=http://magiccards.info/gtc/en/135.html
+image=http://mtgimage.com/card/spire%20tracer.jpg
+value=3.164
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={G}
+pt=1/1
+ability=can't be blocked except by creatures with flying or reach
+timing=main

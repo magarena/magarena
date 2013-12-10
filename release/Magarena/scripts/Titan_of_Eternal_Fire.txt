@@ -1,0 +1,11 @@
+name=Titan of Eternal Fire
+url=http://magiccards.info/ths/en/144.html
+image=http://mtgimage.com/card/titan%20of%20eternal%20fire.jpg
+value=3.617
+rarity=R
+type=Creature
+subtype=Giant
+cost={5}{R}
+pt=5/6
+ability=lord Human creatures you control have "pay {R},{T}:SN deals 1 damage to target creature or player."
+timing=main

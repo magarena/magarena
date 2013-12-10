@@ -1,0 +1,11 @@
+name=Viashino Bladescout
+url=http://magiccards.info/ts/en/185.html
+image=http://mtgimage.com/card/viashino%20bladescout.jpg
+value=2.722
+rarity=C
+type=Creature
+subtype=Scout,Viashino
+cost={1}{R}{R}
+pt=2/1
+ability=flash;enters effect Target creature gains first strike until end of turn.
+timing=flash

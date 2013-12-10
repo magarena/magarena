@@ -1,0 +1,11 @@
+name=Whiptail Moloch
+url=http://magiccards.info/di/en/79.html
+image=http://mtgimage.com/card/whiptail%20moloch.jpg
+value=1.278
+rarity=C
+type=Creature
+subtype=Lizard
+cost={4}{R}
+pt=6/3
+ability=enters effect SN deals 3 damage to target creature you control.
+timing=main

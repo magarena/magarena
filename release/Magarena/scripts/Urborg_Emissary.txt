@@ -1,0 +1,11 @@
+name=Urborg Emissary
+url=http://magiccards.info/in/en/131.html
+image=http://mtgimage.com/card/urborg%20emissary.jpg
+value=2.5
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=3/1
+ability=kicker {1}{U};enters kicked effect Return target permanent to its owner's hand.
+timing=main

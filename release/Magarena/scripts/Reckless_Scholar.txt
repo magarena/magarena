@@ -1,0 +1,11 @@
+name=Reckless Scholar
+url=http://magiccards.info/zen/en/60.html
+image=http://mtgimage.com/card/reckless%20scholar.jpg
+value=3.267
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/1
+ability=pay {T}:Target player draws a card, then discards a card.
+timing=main

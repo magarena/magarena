@@ -1,0 +1,11 @@
+name=Glintwing Invoker
+url=http://magiccards.info/le/en/40.html
+image=http://mtgimage.com/card/glintwing%20invoker.jpg
+value=1.154
+rarity=C
+type=Creature
+subtype=Human,Mutant,Wizard
+cost={4}{U}
+pt=3/3
+ability=pay {7}{U}:SN gets +3/+3 and gains flying until end of turn.
+timing=main

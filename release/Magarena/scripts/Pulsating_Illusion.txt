@@ -1,0 +1,11 @@
+name=Pulsating Illusion
+url=http://magiccards.info/od/en/96.html
+image=http://mtgimage.com/card/pulsating%20illusion.jpg
+value=1.15
+rarity=U
+type=Creature
+subtype=Illusion
+cost={4}{U}
+pt=0/1
+ability=flying;pay Discard a card,{Once}:SN gets +4/+4 until end of turn.
+timing=main

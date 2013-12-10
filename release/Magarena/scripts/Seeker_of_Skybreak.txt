@@ -1,0 +1,11 @@
+name=Seeker of Skybreak
+url=http://magiccards.info/7e/en/268.html
+image=http://mtgimage.com/card/seeker%20of%20skybreak.jpg
+value=4.164
+rarity=C
+type=Creature
+subtype=Elf
+cost={1}{G}
+pt=2/1
+ability=pay {T}:Untap target creature.
+timing=main

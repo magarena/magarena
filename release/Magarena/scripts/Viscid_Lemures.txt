@@ -1,0 +1,11 @@
+name=Viscid Lemures
+url=http://magiccards.info/ts/en/141.html
+image=http://mtgimage.com/card/viscid%20lemures.jpg
+value=1.828
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{B}
+pt=4/3
+ability=pay {0}:SN gets -1/-0 and gains swampwalk until end of turn.
+timing=main

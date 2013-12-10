@@ -1,0 +1,11 @@
+name=Sylvan Safekeeper
+url=http://magiccards.info/ju/en/133.html
+image=http://mtgimage.com/card/sylvan%20safekeeper.jpg
+value=3.617
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={G}
+pt=1/1
+ability=pay Sacrifice a land:Target creature gains shroud until end of turn.
+timing=main

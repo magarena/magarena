@@ -1,0 +1,11 @@
+name=Veldrane of Sengir
+url=http://magiccards.info/hl/en/25.html
+image=http://mtgimage.com/card/veldrane%20of%20sengir.jpg
+value=1.275
+rarity=R
+type=Legendary,Creature
+subtype=Human,Rogue
+cost={5}{B}{B}
+pt=5/5
+ability=pay {1}{B}{B}:SN gets -3/-0 and gains forestwalk until end of turn.
+timing=main

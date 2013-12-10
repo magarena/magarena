@@ -1,0 +1,11 @@
+name=Wall of Kelp
+url=http://magiccards.info/hl/en/50.html
+image=http://mtgimage.com/card/wall%20of%20kelp.jpg
+value=3.276
+rarity=C
+type=Creature
+subtype=Plant,Wall
+cost={U}{U}
+pt=0/3
+ability=defender;pay {U}{U},{T}:PN puts a 0/1 blue Plant Wall creature with defender named Kelp onto the battlefield.
+timing=main

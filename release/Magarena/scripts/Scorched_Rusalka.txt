@@ -1,0 +1,11 @@
+name=Scorched Rusalka
+url=http://magiccards.info/ddk/en/43.html
+image=http://mtgimage.com/card/scorched%20rusalka.jpg
+value=3.389
+rarity=U
+type=Creature
+subtype=Spirit
+cost={R}
+pt=1/1
+ability=pay {R},Sacrifice a creature:SN deals 1 damage to target player.
+timing=main

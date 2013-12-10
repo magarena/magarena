@@ -1,0 +1,11 @@
+name=Leaping Lizard
+url=http://magiccards.info/hl/en/63.html
+image=http://mtgimage.com/card/leaping%20lizard.jpg
+value=3.04
+rarity=C
+type=Creature
+subtype=Lizard
+cost={1}{G}{G}
+pt=2/3
+ability=pay {1}{G}:SN gets -0/-1 and gains flying until end of turn.
+timing=main

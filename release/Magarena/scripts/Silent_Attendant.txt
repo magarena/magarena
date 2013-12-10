@@ -1,0 +1,11 @@
+name=Silent Attendant
+url=http://magiccards.info/us/en/51.html
+image=http://mtgimage.com/card/silent%20attendant.jpg
+value=2.629
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=0/2
+ability=pay {T}:PN gains 1 life.
+timing=main

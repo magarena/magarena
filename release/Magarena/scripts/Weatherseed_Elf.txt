@@ -1,0 +1,11 @@
+name=Weatherseed Elf
+url=http://magiccards.info/ul/en/115.html
+image=http://mtgimage.com/card/weatherseed%20elf.jpg
+value=2.641
+rarity=C
+type=Creature
+subtype=Elf
+cost={G}
+pt=1/1
+ability=pay {T}:Target creature gains forestwalk until end of turn.
+timing=main

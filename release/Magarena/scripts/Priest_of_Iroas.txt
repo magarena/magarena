@@ -1,0 +1,11 @@
+name=Priest of Iroas
+url=http://magiccards.info/ths/en/134.html
+image=http://mtgimage.com/card/priest%20of%20iroas.jpg
+value=2.283
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={R}
+pt=1/1
+ability=pay {3}{W},{S}:Destroy target enchantment.
+timing=main

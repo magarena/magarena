@@ -1,0 +1,11 @@
+name=Trenching Steed
+url=http://magiccards.info/pr/en/26.html
+image=http://mtgimage.com/card/trenching%20steed.jpg
+value=1.914
+rarity=C
+type=Creature
+subtype=Horse,Rebel
+cost={3}{W}
+pt=2/3
+ability=pay Sacrifice a land:SN gets +0/+3 until end of turn.
+timing=main

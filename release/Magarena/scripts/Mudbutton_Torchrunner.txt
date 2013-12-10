@@ -1,0 +1,11 @@
+name=Mudbutton Torchrunner
+url=http://magiccards.info/pc2/en/49.html
+image=http://mtgimage.com/card/mudbutton%20torchrunner.jpg
+value=3.06
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={2}{R}
+pt=1/1
+ability=dies effect SN deals 3 damage to target creature or player.
+timing=main

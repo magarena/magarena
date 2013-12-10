@@ -1,0 +1,9 @@
+name=Necrogen Spellbomb
+url=http://magiccards.info/mi/en/216.html
+image=http://mtgimage.com/card/necrogen%20spellbomb.jpg
+value=4.178
+rarity=C
+type=Artifact
+cost={1}
+ability=pay {B},{S}:Target player discards a card.;pay {1},{S}:PN draws a card.
+timing=artifact

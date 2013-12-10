@@ -1,0 +1,11 @@
+name=Hyalopterous Lemure
+url=http://magiccards.info/ia/en/21.html
+image=http://mtgimage.com/card/hyalopterous%20lemure.jpg
+value=3.41
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{B}
+pt=4/3
+ability=pay {0}:SN gets -1/-0 and gains flying until end of turn.
+timing=main

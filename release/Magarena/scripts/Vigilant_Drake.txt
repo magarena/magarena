@@ -1,0 +1,11 @@
+name=Vigilant Drake
+url=http://magiccards.info/7e/en/109.html
+image=http://mtgimage.com/card/vigilant%20drake.jpg
+value=2.596
+rarity=C
+type=Creature
+subtype=Drake
+cost={4}{U}
+pt=3/3
+ability=flying;pay {2}{U}:Untap SN.
+timing=main
