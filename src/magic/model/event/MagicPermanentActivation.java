@@ -129,7 +129,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     private static final String COMMA = "\\s*,\\s*";
 
     public static final MagicPermanentActivation create(final String act) {
-        final String[] token = act.split(COLON);
+        final String[] token = act.split(COLON, 2);
         final String cost = token[0];
         final String rule = token[1];
         
