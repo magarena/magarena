@@ -1,0 +1,9 @@
+name=Auger Spree
+url=http://magiccards.info/rtr/en/144.html
+image=http://mtgimage.com/card/auger%20spree.jpg
+value=3.145
+rarity=C
+type=Instant
+cost={1}{B}{R}
+effect=Target creature gets +4/+4 until end of turn.
+timing=pump

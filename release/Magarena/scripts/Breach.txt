@@ -1,0 +1,9 @@
+name=Breach
+url=http://magiccards.info/us/pt/120.html
+image=http://mtgimage.com/card/breach.jpg
+value=2.24
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Target creature gets +2/+0 and gains fear until end of turn.
+timing=pump

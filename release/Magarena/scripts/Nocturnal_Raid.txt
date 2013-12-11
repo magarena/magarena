@@ -1,0 +1,9 @@
+name=Nocturnal Raid
+url=http://magiccards.info/7e/en/151.html
+image=http://mtgimage.com/card/nocturnal%20raid.jpg
+value=2.788
+rarity=U
+type=Instant
+cost={2}{B}{B}
+effect=Black creatures get +2/+0 until end of turn.
+timing=pump

@@ -1,0 +1,11 @@
+name=Returned Centaur
+url=http://magiccards.info/ths/en/103.html
+image=http://mtgimage.com/card/returned%20centaur.jpg
+value=3.025
+rarity=C
+type=Creature
+subtype=Zombie,Centaur
+cost={3}{B}
+pt=2/4
+ability=enters effect Target player puts the top four cards of his or her library into his or her graveyard.
+timing=main

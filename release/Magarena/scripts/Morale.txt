@@ -1,0 +1,9 @@
+name=Morale
+url=http://magiccards.info/4e/en/286.html
+image=http://mtgimage.com/card/morale.jpg
+value=1.87
+rarity=C
+type=Instant
+cost={1}{W}{W}
+effect=Attacking creatures get +1/+1 until end of turn.
+timing=pump

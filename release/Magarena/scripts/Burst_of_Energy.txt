@@ -1,0 +1,9 @@
+name=Burst of Energy
+url=http://magiccards.info/ul/en/3.html
+image=http://mtgimage.com/card/burst%20of%20energy.jpg
+value=2.049
+rarity=C
+type=Instant
+cost={W}
+effect=Untap target permanent.
+timing=removal
