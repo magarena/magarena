@@ -20,6 +20,7 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
         clear();
         addAll(deck);
         name = deck.name;
+        description = deck.description;
     }
 
     public void setName(final String name) {
