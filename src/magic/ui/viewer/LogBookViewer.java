@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
 import magic.ui.widget.FontsAndBorders;
@@ -39,6 +40,7 @@ public class LogBookViewer extends JPanel {
     private final JScrollPane scrollPane;
     private boolean isScrollbarVisible;
     private boolean isNewMessageAddedToTop;
+    private final TitleBar tb;
 
     public LogBookViewer(final MagicLogBook logBook) {
 
@@ -46,7 +48,7 @@ public class LogBookViewer extends JPanel {
 
         setLayout(new BorderLayout());
 
-        final TitleBar tb = new TitleBar("Log");
+        tb = new TitleBar("Log");
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         tb.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         tb.setToolTipText("Click to hide log messages");
@@ -63,6 +65,7 @@ public class LogBookViewer extends JPanel {
         centerPanel.add(messagePanel,BorderLayout.NORTH);
 
         scrollPane=new JScrollPane();
+        scrollPane.setVisible(GeneralConfig.getInstance().isLogMessagesVisible());
         scrollPane.getViewport().setView(centerPanel);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
@@ -82,22 +85,25 @@ public class LogBookViewer extends JPanel {
         });
 
         tb.addMouseListener(new MouseAdapter() {
-            /* (non-Javadoc)
-             * @see java.awt.event.MouseAdapter#mouseClicked(java.awt.event.MouseEvent)
-             */
             @Override
             public void mouseClicked(final MouseEvent e) {
                 scrollPane.setVisible(!scrollPane.isVisible());
-                if (!scrollPane.isVisible()) {
-                    tb.setText("Click to show Log messages...");
-                    tb.setToolTipText(null);
-                } else {
-                    tb.setText("Log");
-                    tb.setToolTipText("Click to hide log messages");
-                }
+                updateTitlebarCaption();
             }
         });
 
+        updateTitlebarCaption();
+
+    }
+
+    private void updateTitlebarCaption() {
+        if (!scrollPane.isVisible()) {
+            tb.setText("Click to show Log messages...");
+            tb.setToolTipText(null);
+        } else {
+            tb.setText("Log");
+            tb.setToolTipText("Click to hide log messages");
+        }
     }
 
     public MagicLogBook getLogBook() {

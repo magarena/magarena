@@ -38,6 +38,7 @@ public class GeneralConfig {
     private static final String LOG_TOPINSERT = "logTopInsert";
     private static final String FULLSCREEN = "fullScreen";
     private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
+    private static final String SHOW_LOG_MESSAGES = "showLogMessages";
 
     private static final int DEFAULT_LEFT=0;
     private static final int DEFAULT_TOP=0;
@@ -66,6 +67,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_LOG_TOPINSERT = false;
     private static final boolean DEFAULT_FULLSCREEN = false;
     private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = false;
+    private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -94,6 +96,7 @@ public class GeneralConfig {
     private boolean isLogMessageAddedToTop = DEFAULT_LOG_TOPINSERT;
     private boolean fullScreen = DEFAULT_FULLSCREEN;
     private boolean previewCardOnSelect = DEFAULT_PREVIEW_CARD_ON_SELECT;
+    private boolean showLogMessages = DEFAULT_SHOW_LOG_MESSAGES;
 
     private GeneralConfig() {}
 
@@ -321,6 +324,13 @@ public class GeneralConfig {
         this.previewCardOnSelect = b;
     }
 
+    public boolean isLogMessagesVisible() {
+        return showLogMessages;
+    }
+    public void setLogMessagesVisible(final boolean b) {
+        showLogMessages = b;
+    }
+
 
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -350,6 +360,7 @@ public class GeneralConfig {
         isLogMessageAddedToTop = Boolean.parseBoolean(properties.getProperty(LOG_TOPINSERT, "" + DEFAULT_LOG_TOPINSERT));
         fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + DEFAULT_FULLSCREEN));
         previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
+        showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
     }
 
     public void load() {
@@ -384,6 +395,7 @@ public class GeneralConfig {
         properties.setProperty(LOG_TOPINSERT, String.valueOf(isLogMessageAddedToTop));
         properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
         properties.setProperty(PREVIEW_CARD_ON_SELECT, String.valueOf(previewCardOnSelect));
+        properties.setProperty(SHOW_LOG_MESSAGES, String.valueOf(showLogMessages));
     }
 
     public void save() {
