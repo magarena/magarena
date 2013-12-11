@@ -12,11 +12,15 @@ import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.border.CompoundBorder;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.Insets;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ListIterator;
 
 public class LogBookViewer extends JPanel {
@@ -44,6 +48,8 @@ public class LogBookViewer extends JPanel {
 
         final TitleBar tb = new TitleBar("Log");
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
+        tb.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        tb.setToolTipText("Click to hide log messages");
         add(tb, BorderLayout.NORTH);
 
         final JPanel centerPanel=new JPanel();
@@ -71,6 +77,23 @@ public class LogBookViewer extends JPanel {
             public void componentResized(final ComponentEvent arg0) {
                 if (!isNewMessageAddedToTop) {
                     forceVerticalScrollbarToMax();
+                }
+            }
+        });
+
+        tb.addMouseListener(new MouseAdapter() {
+            /* (non-Javadoc)
+             * @see java.awt.event.MouseAdapter#mouseClicked(java.awt.event.MouseEvent)
+             */
+            @Override
+            public void mouseClicked(final MouseEvent e) {
+                scrollPane.setVisible(!scrollPane.isVisible());
+                if (!scrollPane.isVisible()) {
+                    tb.setText("Click to show Log messages...");
+                    tb.setToolTipText(null);
+                } else {
+                    tb.setText("Log");
+                    tb.setToolTipText("Click to hide log messages");
                 }
             }
         });
