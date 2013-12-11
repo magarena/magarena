@@ -1,0 +1,11 @@
+name=Merrow Witsniper
+url=http://magiccards.info/mt/en/40.html
+image=http://mtgimage.com/card/merrow%20witsniper.jpg
+value=2.837
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+cost={U}
+pt=1/1
+ability=enters effect Target player puts the top a card of his or her library into his or her graveyard.
+timing=main

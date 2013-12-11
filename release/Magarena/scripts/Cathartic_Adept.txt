@@ -1,0 +1,11 @@
+name=Cathartic Adept
+url=http://magiccards.info/ala/en/34.html
+image=http://mtgimage.com/card/cathartic%20adept.jpg
+value=2.789
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability=pay {T}:Target player puts the top a card of his or her library into his or her graveyard.
+timing=main

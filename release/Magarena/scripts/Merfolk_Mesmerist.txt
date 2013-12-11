@@ -1,0 +1,11 @@
+name=Merfolk Mesmerist
+url=http://magiccards.info/m12/en/66.html
+image=http://mtgimage.com/card/merfolk%20mesmerist.jpg
+value=3.255
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=1/2
+ability=pay {U}:Target player puts the top two cards of his or her library into his or her graveyard.
+timing=main

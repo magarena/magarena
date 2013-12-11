@@ -1,0 +1,11 @@
+name=Tolarian Serpent
+url=http://magiccards.info/wl/en/57.html
+image=http://mtgimage.com/card/tolarian%20serpent.jpg
+value=2.625
+rarity=R
+type=Creature
+subtype=Serpent
+cost={5}{U}{U}
+pt=7/7
+ability=your upkeep effect PN puts the top seven cards of his or her library into his or her graveyard.
+timing=main

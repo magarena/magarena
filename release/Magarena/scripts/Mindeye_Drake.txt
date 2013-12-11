@@ -1,0 +1,11 @@
+name=Mindeye Drake
+url=http://magiccards.info/gtc/en/43.html
+image=http://mtgimage.com/card/mindeye%20drake.jpg
+value=2.068
+rarity=U
+type=Creature
+subtype=Drake
+cost={4}{U}
+pt=2/5
+ability=flying;dies effect Target player puts the top five cards of his or her library into his or her graveyard.
+timing=main
