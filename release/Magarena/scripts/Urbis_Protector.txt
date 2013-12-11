@@ -1,0 +1,11 @@
+name=Urbis Protector
+url=http://magiccards.info/gtc/en/27.html
+image=http://mtgimage.com/card/urbis%20protector.jpg
+value=2.716
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={4}{W}{W}
+pt=1/1
+ability=enters effect PN puts a 4/4 white Angel creature token with flying onto the battlefield.
+timing=main

@@ -129,7 +129,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     private static final String COMMA = "\\s*,\\s*";
 
     public static final MagicPermanentActivation create(final String act) {
-        final String[] token = act.split(COLON);
+        final String[] token = act.split(COLON, 2);
         final String cost = token[0];
         final String rule = token[1];
         
@@ -200,6 +200,10 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC));
             } else if (cost.equals("Sacrifice a Human")) {
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_HUMAN));
+            } else if (cost.equals("Sacrifice an Elemental")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELEMENTAL));
+            } else if (cost.equals("Sacrifice a Wall")) {
+                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_WALL));
             } else if (cost.equals("Discard a card")) {
                 events.add(new MagicDiscardEvent(source));
             } else if (cost.equals("Discard two cards")) {

@@ -1,0 +1,11 @@
+name=Phyrexian Denouncer
+url=http://magiccards.info/pvc/en/4.html
+image=http://mtgimage.com/card/phyrexian%20denouncer.jpg
+value=2.444
+rarity=C
+type=Creature
+subtype=Carrier
+cost={1}{B}
+pt=1/1
+ability=pay {T},{S}:Target creature gets -1/-1 until end of turn.
+timing=main

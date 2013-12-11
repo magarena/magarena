@@ -1,0 +1,11 @@
+name=Witch Hunter
+url=http://magiccards.info/tsts/en/17.html
+image=http://mtgimage.com/card/witch%20hunter.jpg
+value=3.662
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}{W}
+pt=1/1
+ability=pay {T}:SN deals 1 damage to target player.;pay {1}{W}{W},{T}:Return target creature an opponent controls to its owner's hand.
+timing=main

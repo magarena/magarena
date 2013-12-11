@@ -1,0 +1,11 @@
+name=Ridged Kusite
+url=http://magiccards.info/pc/en/78.html
+image=http://mtgimage.com/card/ridged%20kusite.jpg
+value=2.27
+rarity=C
+type=Creature
+subtype=Horror,Spellshaper
+cost={B}
+pt=1/1
+ability=pay {1}{B},{T},Discard a card:Target creature gets +1/+0 and gains first strike until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Waterfront Bouncer
+url=http://magiccards.info/mm/en/114.html
+image=http://mtgimage.com/card/waterfront%20bouncer.jpg
+value=4.385
+rarity=C
+type=Creature
+subtype=Merfolk,Spellshaper
+cost={1}{U}
+pt=1/1
+ability=pay {U},{T},Discard a card:Return target creature to its owner's hand.
+timing=main

@@ -1,0 +1,11 @@
+name=Spitting Hydra
+url=http://magiccards.info/sh/en/99.html
+image=http://mtgimage.com/card/spitting%20hydra.jpg
+value=2.5
+rarity=R
+type=Creature
+subtype=Hydra
+cost={3}{R}{R}
+pt=0/0
+ability=enters with +1/+1 4;pay {1}{R},{+1/+1}:SN deals 1 damage to target creature.
+timing=main

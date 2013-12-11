@@ -1,0 +1,11 @@
+name=Safehold Sentry
+url=http://magiccards.info/shm/en/22.html
+image=http://mtgimage.com/card/safehold%20sentry.jpg
+value=2.55
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={1}{W}
+pt=2/2
+ability=pay {2}{W},{Q}:SN gets +0/+2 until end of turn.
+timing=main

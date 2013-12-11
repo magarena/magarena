@@ -1,0 +1,11 @@
+name=Vodalian Mage
+url=http://magiccards.info/fe/en/59.html
+image=http://mtgimage.com/card/vodalian%20mage.jpg
+value=3.581
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{U}
+pt=1/1
+ability=pay {U},{T}:Counter target spell unless its controller pays {1}.
+timing=main

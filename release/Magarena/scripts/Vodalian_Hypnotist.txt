@@ -1,0 +1,11 @@
+name=Vodalian Hypnotist
+url=http://magiccards.info/in/en/84.html
+image=http://mtgimage.com/card/vodalian%20hypnotist.jpg
+value=2.978
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=1/1
+ability=pay {2}{B},{T},{Sorcery}:Target player discards a card.
+timing=main

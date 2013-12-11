@@ -1,0 +1,12 @@
+name=Hunter of Eyeblights
+url=http://magiccards.info/lw/en/119.html
+image=http://magiccards.info/scans/en/lw/119.jpg
+value=3.024
+rarity=U
+type=Creature
+subtype=Elf,Assassin
+cost={3}{B}{B}
+pt=3/3
+ability=enters effect Put a +1/+1 counter on target creature you don't control.
+timing=main
+requires_groovy_code

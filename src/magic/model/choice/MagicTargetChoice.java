@@ -470,6 +470,12 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice SACRIFICE_HUMAN = 
         new MagicTargetChoice("a Human to sacrifice");
+    
+    public static final MagicTargetChoice SACRIFICE_ELEMENTAL = 
+        new MagicTargetChoice("an Elemental to sacrifice");
+    
+    public static final MagicTargetChoice SACRIFICE_WALL = 
+        new MagicTargetChoice("a Wall to sacrifice");
 
     public static final MagicTargetChoice SACRIFICE_CLERIC = 
         new MagicTargetChoice("a Cleric creature to sacrifice");

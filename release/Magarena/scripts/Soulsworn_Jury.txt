@@ -1,0 +1,11 @@
+name=Soulsworn Jury
+url=http://magiccards.info/di/en/17.html
+image=http://mtgimage.com/card/soulsworn%20jury.jpg
+value=3.5
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{W}
+pt=1/4
+ability=defender;pay {1}{U},{S}:Counter target creature spell.
+timing=main

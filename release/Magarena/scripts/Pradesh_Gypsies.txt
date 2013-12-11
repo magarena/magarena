@@ -1,0 +1,11 @@
+name=Pradesh Gypsies
+url=http://magiccards.info/6e/en/244.html
+image=http://mtgimage.com/card/pradesh%20gypsies.jpg
+value=1.583
+rarity=C
+type=Creature
+subtype=Human,Nomad
+cost={2}{G}
+pt=1/1
+ability=pay {1}{G},{T}:Target creature gets -2/-0 until end of turn.
+timing=main

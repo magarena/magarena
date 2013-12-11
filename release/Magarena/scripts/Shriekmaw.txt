@@ -1,0 +1,11 @@
+name=Shriekmaw
+url=http://magiccards.info/ddh/en/54.html
+image=http://mtgimage.com/card/shriekmaw.jpg
+value=4.176
+rarity=U
+type=Creature
+subtype=Elemental
+cost={4}{B}
+pt=3/2
+ability=fear;enters effect Destroy target nonartifact, nonblack creature.;evoke {1}{B}
+timing=main

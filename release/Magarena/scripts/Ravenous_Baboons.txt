@@ -1,0 +1,11 @@
+name=Ravenous Baboons
+url=http://magiccards.info/ex/en/97.html
+image=http://mtgimage.com/card/ravenous%20baboons.jpg
+value=3.958
+rarity=R
+type=Creature
+subtype=Ape
+cost={3}{R}
+pt=2/2
+ability=enters effect Destroy target nonbasic land.
+timing=main

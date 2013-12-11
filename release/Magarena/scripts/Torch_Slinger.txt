@@ -1,0 +1,11 @@
+name=Torch Slinger
+url=http://magiccards.info/zen/en/151.html
+image=http://mtgimage.com/card/torch%20slinger.jpg
+value=2.647
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{R}
+pt=2/2
+ability=kicker {1}{R};enters kicked effect SN deals 2 damage to target creature.
+timing=main

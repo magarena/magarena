@@ -1,0 +1,11 @@
+name=Tonic Peddler
+url=http://magiccards.info/mm/en/54.html
+image=http://mtgimage.com/card/tonic%20peddler.jpg
+value=2.261
+rarity=U
+type=Creature
+subtype=Human,Spellshaper
+cost={1}{W}
+pt=1/1
+ability=pay {W},{T},Discard a card:Target player gains 3 life.
+timing=main

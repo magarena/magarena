@@ -1,0 +1,11 @@
+name=Sacellum Archers
+url=http://magiccards.info/cfx/en/89.html
+image=http://mtgimage.com/card/sacellum%20archers.jpg
+value=2.549
+rarity=U
+type=Creature
+subtype=Elf,Archer
+cost={2}{G}
+pt=2/3
+ability=pay {R}{W},{T}:SN deals 2 damage to target attacking or blocking creature.
+timing=main

@@ -1,0 +1,11 @@
+name=Princess Lucrezia
+url=http://magiccards.info/lg/en/289.html
+image=http://mtgimage.com/card/princess%20lucrezia.jpg
+value=1.342
+rarity=U
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={3}{U}{U}{B}
+pt=5/4
+ability=tap add mana {U}
+timing=main

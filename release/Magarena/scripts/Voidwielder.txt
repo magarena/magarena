@@ -1,0 +1,11 @@
+name=Voidwielder
+url=http://magiccards.info/rtr/en/56.html
+image=http://mtgimage.com/card/voidwielder.jpg
+value=1.921
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={4}{U}
+pt=1/4
+ability=enters effect PN may Return target creature to its owner's hand.
+timing=main

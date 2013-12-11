@@ -1,0 +1,11 @@
+name=Pit Raptor
+url=http://magiccards.info/pr/en/72.html
+image=http://mtgimage.com/card/pit%20raptor.jpg
+value=2.357
+rarity=U
+type=Creature
+subtype=Bird,Mercenary
+cost={2}{B}{B}
+pt=4/3
+ability=flying;first strike;your upkeep effect PN may pay {2}{B}{B}. If you don't, sacrifice SN.
+timing=main

@@ -1,0 +1,11 @@
+name=Nightscape Master
+url=http://magiccards.info/in/en/113.html
+image=http://mtgimage.com/card/nightscape%20master.jpg
+value=3.781
+rarity=R
+type=Creature
+subtype=Zombie,Wizard
+cost={2}{B}{B}
+pt=2/2
+ability=pay {U}{U},{T}:Return target creature to its owner's hand.;pay {R}{R},{T}:SN deals 2 damage to target creature.
+timing=main

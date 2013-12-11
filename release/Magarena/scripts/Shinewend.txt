@@ -1,0 +1,11 @@
+name=Shinewend
+url=http://magiccards.info/mt/en/23.html
+image=http://mtgimage.com/card/shinewend.jpg
+value=2.371
+rarity=C
+type=Creature
+subtype=Elemental
+cost={1}{W}
+pt=0/0
+ability=flying;enters with +1/+1 1;pay {1}{W},{+1/+1}:Destroy target enchantment.
+timing=main

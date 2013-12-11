@@ -1,0 +1,11 @@
+name=Viridian Scout
+url=http://magiccards.info/5dn/en/100.html
+image=http://mtgimage.com/card/viridian%20scout.jpg
+value=0.9
+rarity=C
+type=Creature
+subtype=Elf,Warrior,Scout
+cost={3}{G}
+pt=1/2
+ability=pay {2}{G},{S}:SN deals 2 damage to target creature with flying.
+timing=main

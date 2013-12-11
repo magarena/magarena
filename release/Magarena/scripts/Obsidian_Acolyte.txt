@@ -1,0 +1,11 @@
+name=Obsidian Acolyte
+url=http://magiccards.info/in/en/22.html
+image=http://mtgimage.com/card/obsidian%20acolyte.jpg
+value=3.75
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/1
+ability=protection from black;pay {W}:Target creature gains protection from black until end of turn.
+timing=main

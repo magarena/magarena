@@ -1,0 +1,12 @@
+name=Greater Stone Spirit
+url=http://magiccards.info/ddi/en/61.html
+image=http://mtgimage.com/card/greater%20stone%20spirit.jpg
+value=2.321
+rarity=U
+type=Creature
+subtype=Elemental,Spirit
+cost={4}{R}{R}
+pt=4/4
+ability=can't be blocked by creatures with flying;\
+        pay {2}{R}:Target creature gets +0/+2 and gains "pay {R}:SN gets +1/+0 until end of turn." until end of turn.
+timing=main

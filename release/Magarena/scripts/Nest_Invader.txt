@@ -1,0 +1,11 @@
+name=Nest Invader
+url=http://magiccards.info/pc2/en/69.html
+image=http://mtgimage.com/card/nest%20invader.jpg
+value=3.969
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{G}
+pt=2/2
+ability=enters effect PN puts a 0/1 colorless Eldrazi Spawn creature token onto the battlefield.
+timing=main

@@ -1,0 +1,12 @@
+name=Thorn Thallid
+url=http://magiccards.info/fe/en/96.html
+image=http://mtgimage.com/card/thorn%20thallid.jpg
+value=2.886
+rarity=C
+type=Creature
+subtype=Fungus
+cost={1}{G}{G}
+pt=2/2
+ability=your upkeep effect Put a spore counter on SN.;\
+        pay {C3}:SN deals 1 damage to target creature or player.
+timing=main

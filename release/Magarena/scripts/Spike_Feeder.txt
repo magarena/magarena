@@ -1,0 +1,11 @@
+name=Spike Feeder
+url=http://magiccards.info/cmd/en/172.html
+image=http://mtgimage.com/card/spike%20feeder.jpg
+value=3.148
+rarity=U
+type=Creature
+subtype=Spike
+cost={1}{G}{G}
+pt=0/0
+ability=enters with +1/+1 2;pay {2},{+1/+1}:Put a +1/+1 counter on target creature.;pay {+1/+1}:PN gains 2 life.
+timing=main

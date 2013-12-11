@@ -1,0 +1,11 @@
+name=Soulmender
+url=http://magiccards.info/m14/en/37.html
+image=http://mtgimage.com/card/soulmender.jpg
+value=2.654
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability=pay {T}:PN gains 1 life.
+timing=main

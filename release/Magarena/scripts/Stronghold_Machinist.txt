@@ -1,0 +1,11 @@
+name=Stronghold Machinist
+url=http://magiccards.info/ne/en/46.html
+image=http://mtgimage.com/card/stronghold%20machinist.jpg
+value=3.95
+rarity=U
+type=Creature
+subtype=Human,Spellshaper
+cost={2}{U}
+pt=1/1
+ability=pay {U}{U},{T},Discard a card:Counter target noncreature spell.
+timing=main

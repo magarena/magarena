@@ -1,0 +1,11 @@
+name=Squirrel Wrangler
+url=http://magiccards.info/pr/en/127.html
+image=http://mtgimage.com/card/squirrel%20wrangler.jpg
+value=4.065
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={2}{G}{G}
+pt=2/2
+ability=pay {1}{G},Sacrifice a land:PN puts two 1/1 green Squirrel creature tokens onto the battlefield.;pay {1}{G},Sacrifice a land:Squirrel creatures get +1/+1 until end of turn.
+timing=main

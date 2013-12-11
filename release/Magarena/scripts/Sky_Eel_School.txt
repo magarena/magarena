@@ -1,0 +1,11 @@
+name=Sky-Eel School
+url=http://magiccards.info/som/en/44.html
+image=http://mtgimage.com/card/sky-eel%20school.jpg
+value=2.138
+rarity=C
+type=Creature
+subtype=Fish
+cost={3}{U}{U}
+pt=3/3
+ability=flying;enters effect PN draws a card, then discards a card.
+timing=main

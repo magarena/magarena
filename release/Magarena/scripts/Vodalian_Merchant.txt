@@ -1,0 +1,11 @@
+name=Vodalian Merchant
+url=http://magiccards.info/in/en/85.html
+image=http://mtgimage.com/card/vodalian%20merchant.jpg
+value=3.145
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={1}{U}
+pt=1/2
+ability=enters effect PN draws a card, then discards a card.
+timing=main

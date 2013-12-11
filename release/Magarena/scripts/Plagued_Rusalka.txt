@@ -1,0 +1,11 @@
+name=Plagued Rusalka
+url=http://magiccards.info/ddj/en/46.html
+image=http://mtgimage.com/card/plagued%20rusalka.jpg
+value=3.688
+rarity=U
+type=Creature
+subtype=Spirit
+cost={B}
+pt=1/1
+ability=pay {B},Sacrifice a creature:Target creature gets -1/-1 until end of turn.
+timing=main

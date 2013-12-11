@@ -1,0 +1,11 @@
+name=Spike Drone
+url=http://magiccards.info/tp/en/152.html
+image=http://mtgimage.com/card/spike%20drone.jpg
+value=3.089
+rarity=C
+type=Creature
+subtype=Spike,Drone
+cost={G}
+pt=0/0
+ability=enters with +1/+1 1;pay {2},{+1/+1}:Put a +1/+1 counter on target creature.
+timing=main

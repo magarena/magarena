@@ -1,0 +1,9 @@
+name=Larceny
+url=http://magiccards.info/8e/en/139.html
+image=http://mtgimage.com/card/larceny.jpg
+value=3.083
+rarity=R
+type=Enchantment
+cost={3}{B}{B}
+ability=lord creatures you control have combat damage discard 1
+timing=enchantment

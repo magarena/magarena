@@ -1,0 +1,11 @@
+name=Phyrexian Debaser
+url=http://magiccards.info/pvc/en/10.html
+image=http://mtgimage.com/card/phyrexian%20debaser.jpg
+value=3.423
+rarity=C
+type=Creature
+subtype=Carrier
+cost={3}{B}
+pt=2/2
+ability=flying;pay {T},{S}:Target creature gets -2/-2 until end of turn.
+timing=main

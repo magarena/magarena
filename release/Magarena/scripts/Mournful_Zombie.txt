@@ -1,0 +1,11 @@
+name=Mournful Zombie
+url=http://magiccards.info/ap/en/43.html
+image=http://mtgimage.com/card/mournful%20zombie.jpg
+value=2.083
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=2/1
+ability=pay {W}:Target player gains 1 life.
+timing=main

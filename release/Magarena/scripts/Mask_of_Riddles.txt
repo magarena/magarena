@@ -7,6 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={U}{B}
 equip={2}
-given_ability=fear
+given_ability=fear;combat damage may draw card
 timing=equipment
-requires_groovy_code

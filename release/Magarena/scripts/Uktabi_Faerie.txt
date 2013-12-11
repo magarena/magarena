@@ -1,0 +1,11 @@
+name=Uktabi Faerie
+url=http://magiccards.info/mr/en/145.html
+image=http://mtgimage.com/card/uktabi%20faerie.jpg
+value=2.453
+rarity=C
+type=Creature
+subtype=Faerie
+cost={1}{G}
+pt=1/1
+ability=flying;pay {3}{G},{S}:Destroy target artifact.
+timing=main

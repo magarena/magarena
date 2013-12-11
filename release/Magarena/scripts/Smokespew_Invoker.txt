@@ -1,0 +1,11 @@
+name=Smokespew Invoker
+url=http://magiccards.info/le/en/81.html
+image=http://mtgimage.com/card/smokespew%20invoker.jpg
+value=2.145
+rarity=C
+type=Creature
+subtype=Zombie,Mutant
+cost={2}{B}
+pt=3/1
+ability=pay {7}{B}:Target creature gets -3/-3 until end of turn.
+timing=main

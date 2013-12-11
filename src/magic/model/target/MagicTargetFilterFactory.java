@@ -43,6 +43,7 @@ public class MagicTargetFilterFactory {
 
         factory.put("all sliver creatures", TARGET_SLIVER);
         factory.put("all slivers", TARGET_SLIVER_PERMANENT);
+        factory.put("all goblins", TARGET_GOBLIN_PERMANENT);
         factory.put("all creatures", TARGET_CREATURE);
         factory.put("creatures without flying", TARGET_CREATURE_WITHOUT_FLYING);
         factory.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
@@ -68,6 +69,8 @@ public class MagicTargetFilterFactory {
         single.put("noncreature spell", TARGET_NONCREATURE_SPELL);
         single.put("artifact spell", TARGET_ARTIFACT_SPELL);
         single.put("red or green spell", TARGET_RED_GREEN_SPELL);
+        single.put("black spell", TARGET_BLACK_SPELL);
+        single.put("white spell", TARGET_WHITE_SPELL);
         single.put("instant or sorcery spell", TARGET_INSTANT_OR_SORCERY_SPELL);
         single.put("instant spell", TARGET_INSTANT_SPELL);
         single.put("red or green creature you control", TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL);
@@ -212,6 +215,8 @@ public class MagicTargetFilterFactory {
             return matchPermanentPrefix(filter, " your opponents control", Control.Opp);
         } else if (filter.endsWith(" you don't control")) {
             return matchPermanentPrefix(filter, " you don't control", Control.Opp);
+        } else if (filter.endsWith(" permanent")) {
+            return matchPermanentPrefix(filter, " permanent", Control.Any);
         } else {
             return matchPermanentPrefix(filter, "", Control.Any);
         }
