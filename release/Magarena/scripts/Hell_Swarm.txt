@@ -1,0 +1,9 @@
+name=Hell Swarm
+url=http://magiccards.info/lg/en/17.html
+image=http://mtgimage.com/card/hell%20swarm.jpg
+value=1.373
+rarity=C
+type=Instant
+cost={B}
+effect=All creatures get -1/-0 until end of turn.
+timing=removal

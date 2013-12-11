@@ -1,0 +1,9 @@
+name=Disorient
+url=http://magiccards.info/m10/pt/48.html
+image=http://mtgimage.com/card/disorient.jpg
+value=1.147
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Target creature gets -7/-0 until end of turn.
+timing=removal

@@ -1,0 +1,11 @@
+name=Morgue Thrull
+url=http://magiccards.info/sh/en/15.html
+image=http://mtgimage.com/card/morgue%20thrull.jpg
+value=2.145
+rarity=C
+type=Creature
+subtype=Thrull
+cost={2}{B}
+pt=2/2
+ability=pay {S}:PN puts the top three cards of his or her library into his or her graveyard.
+timing=main

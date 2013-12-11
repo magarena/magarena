@@ -1,0 +1,12 @@
+name=Stern Mentor
+url=http://magiccards.info/avr/en/77.html
+image=http://mtgimage.com/card/stern%20mentor.jpg
+value=2.531
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/2
+ability=soulbond
+given_ability=pay {T}:Target player puts the top two cards of his or her library into his or her graveyard.
+timing=main

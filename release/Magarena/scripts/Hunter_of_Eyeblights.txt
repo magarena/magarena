@@ -1,6 +1,6 @@
 name=Hunter of Eyeblights
 url=http://magiccards.info/lw/en/119.html
-image=http://magiccards.info/scans/en/lw/119.jpg
+image=http://mtgimage.com/card/hunter%20of%20eyeblights.jpg
 value=3.024
 rarity=U
 type=Creature

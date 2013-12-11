@@ -1,0 +1,10 @@
+name=Path of Anger's Flame
+url=http://magiccards.info/sok/en/109.html
+image=http://mtgimage.com/card/path%20of%20anger's%20flame.jpg
+value=3.203
+rarity=C
+type=Instant
+subtype=Arcane
+cost={2}{R}
+effect=Creatures you control get +2/+0 until end of turn.
+timing=pump

@@ -1,0 +1,10 @@
+name=Pull Under
+url=http://magiccards.info/chk/en/137.html
+image=http://mtgimage.com/card/pull%20under.jpg
+value=1.238
+rarity=C
+type=Instant
+subtype=Arcane
+cost={5}{B}
+effect=Target creature gets -5/-5 until end of turn.
+timing=removal

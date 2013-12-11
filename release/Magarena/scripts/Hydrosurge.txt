@@ -1,0 +1,9 @@
+name=Hydrosurge
+url=http://magiccards.info/m13/en/54.html
+image=http://mtgimage.com/card/hydrosurge.jpg
+value=2.402
+rarity=C
+type=Instant
+cost={U}
+effect=Target creature gets -5/-0 until end of turn.
+timing=removal

@@ -1,0 +1,9 @@
+name=Bull Rush
+url=http://magiccards.info/wwk/en/73.html
+image=http://mtgimage.com/card/bull%20rush.jpg
+value=1.002
+rarity=C
+type=Instant
+cost={R}
+effect=Target creature gets +2/+0 until end of turn.
+timing=pump

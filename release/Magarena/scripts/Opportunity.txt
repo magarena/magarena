@@ -1,0 +1,9 @@
+name=Opportunity
+url=http://magiccards.info/c13/en/51.html
+image=http://mtgimage.com/card/opportunity.jpg
+value=3.61
+rarity=U
+type=Instant
+cost={4}{U}{U}
+effect=Target player draws four cards.
+timing=draw

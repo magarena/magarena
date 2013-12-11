@@ -1,0 +1,9 @@
+name=Crush
+url=http://magiccards.info/ds/it/95.html
+image=http://mtgimage.com/card/crush.jpg
+value=3.306
+rarity=C
+type=Instant
+cost={R}
+effect=Destroy target noncreature artifact.
+timing=removal

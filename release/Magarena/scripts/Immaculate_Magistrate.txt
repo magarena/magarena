@@ -1,6 +1,6 @@
 name=Immaculate Magistrate
 url=http://magiccards.info/lw/en/219.html
-image=http://magiccards.info/scans/en/lw/219.jpg
+image=http://mtgimage.com/card/immaculate%20magistrate.jpg
 value=4.245
 rarity=R
 type=Creature
