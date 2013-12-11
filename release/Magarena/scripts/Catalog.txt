@@ -1,0 +1,9 @@
+name=Catalog
+url=http://magiccards.info/8e/en/65.html
+image=http://mtgimage.com/card/catalog.jpg
+value=2.922
+rarity=C
+type=Instant
+cost={2}{U}
+effect=PN draws two cards, then discards a card.
+timing=draw

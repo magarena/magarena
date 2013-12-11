@@ -1,0 +1,9 @@
+name=Crossbow Ambush
+url=http://magiccards.info/sh/en/55.html
+image=http://mtgimage.com/card/crossbow%20ambush.jpg
+value=3.062
+rarity=C
+type=Instant
+cost={G}
+effect=Creatures you control gain reach until end of turn.
+timing=block

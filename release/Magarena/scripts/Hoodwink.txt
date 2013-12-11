@@ -1,0 +1,9 @@
+name=Hoodwink
+url=http://magiccards.info/mm/en/84.html
+image=http://mtgimage.com/card/hoodwink.jpg
+value=3.403
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Return target artifact, enchantment, or land to its owner's hand.
+timing=removal

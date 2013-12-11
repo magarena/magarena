@@ -1,0 +1,10 @@
+name=Mage's Guile
+url=http://magiccards.info/on/en/91.html
+image=http://mtgimage.com/card/mage's%20guile.jpg
+value=3.562
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Target creature gains shroud until end of turn.
+ability=cycling {U}
+timing=removal

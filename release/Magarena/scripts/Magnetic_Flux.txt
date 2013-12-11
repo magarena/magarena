@@ -1,0 +1,9 @@
+name=Magnetic Flux
+url=http://magiccards.info/ds/en/25.html
+image=http://mtgimage.com/card/magnetic%20flux.jpg
+value=1.809
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Artifact creatures you control gain flying until end of turn.
+timing=pump

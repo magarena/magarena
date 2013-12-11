@@ -1,0 +1,9 @@
+name=Lightning Blast
+url=http://magiccards.info/8e/en/200.html
+image=http://mtgimage.com/card/lightning%20blast.jpg
+value=3.216
+rarity=U
+type=Instant
+cost={3}{R}
+effect=SN deals 4 damage to target creature or player.
+timing=removal

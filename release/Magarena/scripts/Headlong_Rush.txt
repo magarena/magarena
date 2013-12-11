@@ -1,0 +1,9 @@
+name=Headlong Rush
+url=http://magiccards.info/us/en/198.html
+image=http://mtgimage.com/card/headlong%20rush.jpg
+value=3.226
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Attacking creatures gain first strike until end of turn.
+timing=pump

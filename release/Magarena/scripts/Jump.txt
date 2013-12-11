@@ -1,0 +1,9 @@
+name=Jump
+url=http://magiccards.info/m10/en/59.html
+image=http://mtgimage.com/card/jump.jpg
+value=1.337
+rarity=C
+type=Instant
+cost={U}
+effect=Target creature gains flying until end of turn.
+timing=pump

@@ -1,0 +1,9 @@
+name=Flash Counter
+url=http://magiccards.info/8e/en/78.html
+image=http://mtgimage.com/card/flash%20counter.jpg
+value=2.221
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Counter target instant spell.
+timing=counter

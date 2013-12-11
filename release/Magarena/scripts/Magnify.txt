@@ -1,0 +1,9 @@
+name=Magnify
+url=http://magiccards.info/ud/en/111.html
+image=http://mtgimage.com/card/magnify.jpg
+value=2.758
+rarity=C
+type=Instant
+cost={G}
+effect=All creatures get +1/+1 until end of turn.
+timing=pump

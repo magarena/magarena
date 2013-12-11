@@ -1,0 +1,10 @@
+name=Iron Will
+url=http://magiccards.info/ul/en/10.html
+image=http://mtgimage.com/card/iron%20will.jpg
+value=2.442
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature gets +0/+4 until end of turn.
+ability=cycling {2}
+timing=removal

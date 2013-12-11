@@ -1,0 +1,9 @@
+name=Artifact Blast
+url=http://magiccards.info/aq/en/87.html
+image=http://mtgimage.com/card/artifact%20blast.jpg
+value=3.917
+rarity=C
+type=Instant
+cost={R}
+effect=Counter target artifact spell.
+timing=counter

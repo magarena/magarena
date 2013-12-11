@@ -1,0 +1,9 @@
+name=Furious Resistance
+url=http://magiccards.info/gtc/en/93.html
+image=http://mtgimage.com/card/furious%20resistance.jpg
+value=2.51
+rarity=C
+type=Instant
+cost={R}
+effect=Target blocking creature gets +3/+0 and gains first strike until end of turn.
+timing=pump
