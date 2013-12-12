@@ -1,0 +1,9 @@
+name=Warrior's Charge
+url=http://magiccards.info/po/en/200.html
+image=http://mtgimage.com/card/warrior's%20charge.jpg
+value=2.136
+rarity=C
+type=Sorcery
+cost={2}{W}
+effect=Creatures you control get +1/+1 until end of turn.
+timing=fmain

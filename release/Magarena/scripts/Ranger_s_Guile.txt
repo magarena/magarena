@@ -1,0 +1,9 @@
+name=Ranger's Guile
+url=http://magiccards.info/m14/en/191.html
+image=http://mtgimage.com/card/ranger's%20guile.jpg
+value=3.58
+rarity=C
+type=Instant
+cost={G}
+effect=Target creature you control gets +1/+1 and gains hexproof until end of turn.
+timing=pump

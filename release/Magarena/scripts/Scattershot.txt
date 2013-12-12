@@ -1,0 +1,10 @@
+name=Scattershot
+url=http://magiccards.info/sc/pt/102.html
+image=http://mtgimage.com/card/scattershot.jpg
+value=2.1
+rarity=C
+type=Instant
+cost={2}{R}
+effect=SN deals 1 damage to target creature.
+ability=storm
+timing=removal

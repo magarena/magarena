@@ -1,0 +1,10 @@
+name=Volcanic Submersion
+url=http://magiccards.info/ala/en/121.html
+image=http://mtgimage.com/card/volcanic%20submersion.jpg
+value=1.76
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=Destroy target artifact or land.
+ability=cycling {2}
+timing=main

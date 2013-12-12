@@ -1,0 +1,11 @@
+name=Sanity Gnawers
+url=http://magiccards.info/arb/en/44.html
+image=http://mtgimage.com/card/sanity%20gnawers.jpg
+value=2.672
+rarity=U
+type=Creature
+subtype=Rat
+cost={1}{B}{R}
+pt=1/1
+ability=enters effect Target player discards a card at random.
+timing=main

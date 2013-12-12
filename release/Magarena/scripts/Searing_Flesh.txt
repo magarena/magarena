@@ -1,0 +1,9 @@
+name=Searing Flesh
+url=http://magiccards.info/on/en/225.html
+image=http://mtgimage.com/card/searing%20flesh.jpg
+value=1.5
+rarity=U
+type=Sorcery
+cost={6}{R}
+effect=SN deals 7 damage to target opponent.
+timing=main

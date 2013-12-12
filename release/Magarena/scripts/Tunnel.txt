@@ -1,0 +1,9 @@
+name=Tunnel
+url=http://magiccards.info/4e/en/245.html
+image=http://mtgimage.com/card/tunnel.jpg
+value=1.944
+rarity=U
+type=Instant
+cost={R}
+effect=Destroy target Wall. It can't be regenerated.
+timing=removal

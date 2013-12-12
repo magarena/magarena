@@ -1,0 +1,9 @@
+name=Wielding the Green Dragon
+url=http://magiccards.info/p3k/en/157.html
+image=http://mtgimage.com/card/wielding%20the%20green%20dragon.jpg
+value=1.889
+rarity=C
+type=Sorcery
+cost={1}{G}
+effect=Target creature gets +4/+4 until end of turn.
+timing=fmain

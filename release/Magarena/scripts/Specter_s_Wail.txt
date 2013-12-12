@@ -1,0 +1,9 @@
+name=Specter's Wail
+url=http://magiccards.info/mm/en/164.html
+image=http://mtgimage.com/card/specter's%20wail.jpg
+value=2.339
+rarity=C
+type=Sorcery
+cost={1}{B}
+effect=Target player discards a card at random.
+timing=main

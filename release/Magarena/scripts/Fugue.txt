@@ -1,0 +1,9 @@
+name=Fugue
+url=http://magiccards.info/7e/es/137.html
+image=http://mtgimage.com/card/fugue.jpg
+value=2.694
+rarity=U
+type=Sorcery
+cost={3}{B}{B}
+effect=Target player discards three cards.
+timing=main

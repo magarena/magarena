@@ -1,0 +1,9 @@
+name=Shriek of Dread
+url=http://magiccards.info/ps/en/53.html
+image=http://mtgimage.com/card/shriek%20of%20dread.jpg
+value=2.036
+rarity=C
+type=Instant
+cost={1}{B}
+effect=Target creature gains fear until end of turn.
+timing=pump

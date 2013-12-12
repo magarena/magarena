@@ -1,0 +1,9 @@
+name=Fire Ambush
+url=http://magiccards.info/p3k/en/111.html
+image=http://mtgimage.com/card/fire%20ambush.jpg
+value=2.579
+rarity=C
+type=Sorcery
+cost={1}{R}
+effect=SN deals 3 damage to target creature or player.
+timing=main

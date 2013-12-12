@@ -1,0 +1,9 @@
+name=Call to Mind
+url=http://magiccards.info/m11/en/47.html
+image=http://mtgimage.com/card/call%20to%20mind.jpg
+value=3.688
+rarity=U
+type=Sorcery
+cost={2}{U}
+effect=Return target instant or sorcery card from your graveyard to your hand.
+timing=main

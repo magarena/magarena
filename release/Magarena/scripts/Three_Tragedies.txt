@@ -1,0 +1,10 @@
+name=Three Tragedies
+url=http://magiccards.info/bok/en/87.html
+image=http://mtgimage.com/card/three%20tragedies.jpg
+value=1.675
+rarity=U
+type=Sorcery
+subtype=Arcane
+cost={3}{B}{B}
+effect=Target player discards three cards.
+timing=main

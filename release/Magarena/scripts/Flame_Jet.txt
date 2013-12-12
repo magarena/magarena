@@ -1,0 +1,10 @@
+name=Flame Jet
+url=http://magiccards.info/ud/en/81.html
+image=http://mtgimage.com/card/flame%20jet.jpg
+value=3.016
+rarity=C
+type=Sorcery
+cost={1}{R}
+effect=SN deals 3 damage to target player.
+ability=cycling {2}
+timing=main

@@ -1,0 +1,9 @@
+name=Soothing Balm
+url=http://magiccards.info/mm/en/48.html
+image=http://mtgimage.com/card/soothing%20balm.jpg
+value=2.529
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Target player gains 5 life.
+timing=main

@@ -1,0 +1,9 @@
+name=Serpent's Gift
+url=http://magiccards.info/m13/en/190.html
+image=http://mtgimage.com/card/serpent's%20gift.jpg
+value=1.545
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Target creature gains deathtouch until end of turn.
+timing=pump

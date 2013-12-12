@@ -1,0 +1,10 @@
+name=Unnatural Speed
+url=http://magiccards.info/chk/en/197.html
+image=http://mtgimage.com/card/unnatural%20speed.jpg
+value=1.333
+rarity=C
+type=Instant
+subtype=Arcane
+cost={R}
+effect=Target creature gains haste until end of turn.
+timing=pump

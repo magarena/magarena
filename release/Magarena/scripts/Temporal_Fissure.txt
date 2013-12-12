@@ -1,0 +1,10 @@
+name=Temporal Fissure
+url=http://magiccards.info/sc/en/53.html
+image=http://mtgimage.com/card/temporal%20fissure.jpg
+value=2.903
+rarity=C
+type=Sorcery
+cost={4}{U}
+effect=Return target permanent to its owner's hand.
+ability=storm
+timing=main

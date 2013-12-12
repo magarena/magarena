@@ -1,0 +1,9 @@
+name=Trailblazer
+url=http://magiccards.info/ia/en/160.html
+image=http://mtgimage.com/card/trailblazer.jpg
+value=1.875
+rarity=R
+type=Instant
+cost={2}{G}{G}
+effect=target creature gains unblockable until end of turn.
+timing=attack

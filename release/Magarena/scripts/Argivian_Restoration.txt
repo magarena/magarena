@@ -1,0 +1,9 @@
+name=Argivian Restoration
+url=http://magiccards.info/ddf/en/69.html
+image=http://mtgimage.com/card/argivian%20restoration.jpg
+value=4.368
+rarity=U
+type=Sorcery
+cost={2}{U}{U}
+effect=Return target artifact card from your graveyard to the battlefield.
+timing=main

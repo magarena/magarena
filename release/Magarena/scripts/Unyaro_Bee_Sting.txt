@@ -1,0 +1,9 @@
+name=Unyaro Bee Sting
+url=http://magiccards.info/mr/en/148.html
+image=http://mtgimage.com/card/unyaro%20bee%20sting.jpg
+value=3.02
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=SN deals 2 damage to target creature or player.
+timing=main

@@ -1,0 +1,9 @@
+name=Valorous Charge
+url=http://magiccards.info/po/en/196.html
+image=http://mtgimage.com/card/valorous%20charge.jpg
+value=1.69
+rarity=U
+type=Sorcery
+cost={1}{W}{W}
+effect=White creatures get +2/+0 until end of turn.
+timing=fmain

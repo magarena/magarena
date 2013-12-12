@@ -1,0 +1,10 @@
+name=Scrap
+url=http://magiccards.info/us/en/213.html
+image=http://mtgimage.com/card/scrap.jpg
+value=2.868
+rarity=C
+type=Instant
+cost={2}{R}
+effect=Destroy target artifact.
+ability=cycling {2}
+timing=removal

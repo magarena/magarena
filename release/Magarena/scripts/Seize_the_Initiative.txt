@@ -1,0 +1,9 @@
+name=Seize the Initiative
+url=http://magiccards.info/som/en/20.html
+image=http://mtgimage.com/card/seize%20the%20initiative.jpg
+value=2.562
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature gets +1/+1 and gains first strike until end of turn.
+timing=pump

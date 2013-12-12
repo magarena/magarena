@@ -1,0 +1,9 @@
+name=Solidarity
+url=http://magiccards.info/8e/en/46.html
+image=http://mtgimage.com/card/solidarity.jpg
+value=2.817
+rarity=C
+type=Instant
+cost={3}{W}
+effect=Creatures you control get +0/+5 until end of turn.
+timing=pump

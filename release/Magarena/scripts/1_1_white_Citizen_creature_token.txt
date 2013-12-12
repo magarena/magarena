@@ -1,0 +1,9 @@
+name=1/1 white Citizen creature token
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=32408&amp;stc=1&amp;d=1159618908
+value=1
+cost={0}
+token=Citizen
+type=Creature
+subtype=Citizen
+color=W
+pt=1/1

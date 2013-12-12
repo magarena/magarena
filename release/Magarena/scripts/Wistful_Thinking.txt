@@ -1,0 +1,9 @@
+name=Wistful Thinking
+url=http://magiccards.info/pc/en/53.html
+image=http://mtgimage.com/card/wistful%20thinking.jpg
+value=4.046
+rarity=C
+type=Sorcery
+cost={2}{U}
+effect=Target player draws two cards, then discards four cards.
+timing=main

@@ -1,0 +1,9 @@
+name=Vitalizing Wind
+url=http://magiccards.info/pr/en/133.html
+image=http://mtgimage.com/card/vitalizing%20wind.jpg
+value=3.373
+rarity=R
+type=Instant
+cost={8}{G}
+effect=Creatures you control get +7/+7 until end of turn.
+timing=pump

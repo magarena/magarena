@@ -1,0 +1,10 @@
+name=Spark Spray
+url=http://magiccards.info/sc/en/105.html
+image=http://mtgimage.com/card/spark%20spray.jpg
+value=2.735
+rarity=C
+type=Instant
+cost={R}
+effect=SN deals 1 damage to target creature or player.
+ability=cycling {R}
+timing=removal

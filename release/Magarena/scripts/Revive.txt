@@ -1,0 +1,9 @@
+name=Revive
+url=http://magiccards.info/m13/it/187.html
+image=http://mtgimage.com/card/revive.jpg
+value=4.207
+rarity=U
+type=Sorcery
+cost={1}{G}
+effect=Return target green card from your graveyard to your hand.
+timing=main

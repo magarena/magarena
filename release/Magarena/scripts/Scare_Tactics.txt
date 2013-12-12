@@ -1,0 +1,9 @@
+name=Scare Tactics
+url=http://magiccards.info/ex/en/73.html
+image=http://mtgimage.com/card/scare%20tactics.jpg
+value=3.086
+rarity=C
+type=Instant
+cost={B}
+effect=Creatures you control get +1/+0 until end of turn.
+timing=removal

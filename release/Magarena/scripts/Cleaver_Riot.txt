@@ -1,0 +1,9 @@
+name=Cleaver Riot
+url=http://magiccards.info/m13/en/125.html
+image=http://mtgimage.com/card/cleaver%20riot.jpg
+value=2.679
+rarity=U
+type=Sorcery
+cost={4}{R}
+effect=Creatures you control gain double strike until end of turn.
+timing=fmain

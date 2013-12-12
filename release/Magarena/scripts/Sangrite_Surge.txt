@@ -1,0 +1,9 @@
+name=Sangrite Surge
+url=http://magiccards.info/ala/en/190.html
+image=http://mtgimage.com/card/sangrite%20surge.jpg
+value=2.237
+rarity=U
+type=Sorcery
+cost={4}{R}{G}
+effect=Target creature gets +3/+3 and gains double strike until end of turn.
+timing=fmain

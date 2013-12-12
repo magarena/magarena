@@ -1,0 +1,9 @@
+name=Burning Fields
+url=http://magiccards.info/p3k/en/103.html
+image=http://mtgimage.com/card/burning%20fields.jpg
+value=2.708
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=SN deals 5 damage to target opponent.
+timing=main

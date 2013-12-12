@@ -1,0 +1,9 @@
+name=Sprout
+url=http://magiccards.info/ts/en/221.html
+image=http://mtgimage.com/card/sprout.jpg
+value=2.714
+rarity=C
+type=Instant
+cost={G}
+effect=PN puts a 1/1 green Saproling creature token onto the battlefield.
+timing=removal

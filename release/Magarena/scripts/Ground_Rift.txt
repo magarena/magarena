@@ -1,0 +1,10 @@
+name=Ground Rift
+url=http://magiccards.info/ts/en/162.html
+image=http://mtgimage.com/card/ground%20rift.jpg
+value=2.328
+rarity=C
+type=Sorcery
+cost={R}
+effect=Target creature without flying gains can't block until end of turn.
+ability=storm
+timing=main

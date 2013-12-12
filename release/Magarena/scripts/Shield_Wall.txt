@@ -1,0 +1,9 @@
+name=Shield Wall
+url=http://magiccards.info/7e/fr/44.html
+image=http://mtgimage.com/card/shield%20wall.jpg
+value=1.88
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Creatures you control get +0/+2 until end of turn.
+timing=pump

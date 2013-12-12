@@ -1,0 +1,11 @@
+name=Grixis Battlemage
+url=http://magiccards.info/ala/en/78.html
+image=http://mtgimage.com/card/grixis%20battlemage.jpg
+value=2.925
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=2/2
+ability=pay {U},{T}:PN draws a card, then discards a card.;pay {R},{T}:Target creature gains can't block until end of turn.
+timing=main

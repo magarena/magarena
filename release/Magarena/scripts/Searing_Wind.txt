@@ -1,0 +1,9 @@
+name=Searing Wind
+url=http://magiccards.info/8e/en/218.html
+image=http://mtgimage.com/card/searing%20wind.jpg
+value=3.81
+rarity=R
+type=Instant
+cost={8}{R}
+effect=SN deals 10 damage to target creature or player.
+timing=removal

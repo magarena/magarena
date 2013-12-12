@@ -1,0 +1,9 @@
+name=Unfulfilled Desires
+url=http://magiccards.info/mr/en/345.html
+image=http://mtgimage.com/card/unfulfilled%20desires.jpg
+value=3.264
+rarity=R
+type=Enchantment
+cost={1}{U}{B}
+ability=pay {1},Pay 1 life:PN draws a card, then discards a card.
+timing=enchantment

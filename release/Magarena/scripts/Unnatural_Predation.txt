@@ -1,0 +1,9 @@
+name=Unnatural Predation
+url=http://magiccards.info/mbs/en/93.html
+image=http://mtgimage.com/card/unnatural%20predation.jpg
+value=3.022
+rarity=C
+type=Instant
+cost={G}
+effect=Target creature gets +1/+1 and gains trample until end of turn.
+timing=pump

@@ -1,0 +1,9 @@
+name=Show of Valor
+url=http://magiccards.info/m14/en/33.html
+image=http://mtgimage.com/card/show%20of%20valor.jpg
+value=2.333
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Target creature gets +2/+4 until end of turn.
+timing=pump

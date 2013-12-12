@@ -1,0 +1,9 @@
+name=Nature's Cloak
+url=http://magiccards.info/st/en/135.html
+image=http://mtgimage.com/card/nature's%20cloak.jpg
+value=1.969
+rarity=R
+type=Sorcery
+cost={2}{G}
+effect=Green creatures you control gain forestwalk until end of turn.
+timing=main

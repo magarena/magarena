@@ -1,0 +1,9 @@
+name=Deception
+url=http://magiccards.info/p3k/en/73.html
+image=http://mtgimage.com/card/deception.jpg
+value=2.768
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Target opponent discards two cards.
+timing=main

@@ -1,0 +1,9 @@
+name=Goblin Scouts
+url=http://magiccards.info/mr/en/178.html
+image=http://mtgimage.com/card/goblin%20scouts.jpg
+value=3.241
+rarity=U
+type=Sorcery
+cost={3}{R}{R}
+effect=PN puts three 1/1 red Goblin Scout creature tokens with mountainwalk onto the battlefield.
+timing=main

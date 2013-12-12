@@ -1,0 +1,11 @@
+name=Magus of the Bazaar
+url=http://magiccards.info/pc/en/43.html
+image=http://mtgimage.com/card/magus%20of%20the%20bazaar.jpg
+value=3.883
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+ability=pay {T}:PN draws two cards, then discards three cards.
+pt=0/1
+timing=main

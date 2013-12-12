@@ -1,0 +1,9 @@
+name=Shrink
+url=http://magiccards.info/5e/en/188.html
+image=http://mtgimage.com/card/shrink.jpg
+value=3.077
+rarity=C
+type=Instant
+cost={G}
+effect=Target creature gets -5/-0 until end of turn.
+timing=removal

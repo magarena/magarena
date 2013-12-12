@@ -1,0 +1,11 @@
+name=Ill-Tempered Cyclops
+url=http://magiccards.info/ths/en/125.html
+image=http://mtgimage.com/card/ill-tempered%20cyclops.jpg
+value=3.808
+rarity=C
+type=Creature
+subtype=Cyclops
+cost={3}{R}
+pt=3/3
+ability=trample;monstrosity 3 {5}{R}
+timing=main

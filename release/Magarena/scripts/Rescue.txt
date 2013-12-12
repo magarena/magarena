@@ -1,0 +1,9 @@
+name=Rescue
+url=http://magiccards.info/rtr/pt/156.html
+image=http://mtgimage.com/card/rescue.jpg
+value=3.989
+rarity=C
+type=Instant
+cost={U}
+effect=Return target permanent you control to its owner's hand.
+timing=removal
