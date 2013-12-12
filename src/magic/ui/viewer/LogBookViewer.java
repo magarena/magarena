@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
 import magic.ui.widget.FontsAndBorders;
@@ -12,11 +13,15 @@ import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.border.CompoundBorder;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.Insets;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ListIterator;
 
 public class LogBookViewer extends JPanel {
@@ -33,8 +38,9 @@ public class LogBookViewer extends JPanel {
     private final MagicLogBook logBook;
     private final JPanel messagePanel;
     private final JScrollPane scrollPane;
-    private boolean isScrollbarVisible = false;
-    private boolean isNewMessageAddedToTop = false;
+    private boolean isScrollbarVisible;
+    private boolean isNewMessageAddedToTop;
+    private final TitleBar tb;
 
     public LogBookViewer(final MagicLogBook logBook) {
 
@@ -42,8 +48,10 @@ public class LogBookViewer extends JPanel {
 
         setLayout(new BorderLayout());
 
-        TitleBar tb = new TitleBar("Log");
+        tb = new TitleBar("Log");
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
+        tb.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        tb.setToolTipText("Click to hide log messages");
         add(tb, BorderLayout.NORTH);
 
         final JPanel centerPanel=new JPanel();
@@ -57,6 +65,7 @@ public class LogBookViewer extends JPanel {
         centerPanel.add(messagePanel,BorderLayout.NORTH);
 
         scrollPane=new JScrollPane();
+        scrollPane.setVisible(GeneralConfig.getInstance().isLogMessagesVisible());
         scrollPane.getViewport().setView(centerPanel);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
@@ -68,13 +77,33 @@ public class LogBookViewer extends JPanel {
 
         addComponentListener(new ComponentAdapter() {
             @Override
-            public void componentResized(ComponentEvent arg0) {
+            public void componentResized(final ComponentEvent arg0) {
                 if (!isNewMessageAddedToTop) {
                     forceVerticalScrollbarToMax();
                 }
             }
         });
 
+        tb.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(final MouseEvent e) {
+                scrollPane.setVisible(!scrollPane.isVisible());
+                updateTitlebarCaption();
+            }
+        });
+
+        updateTitlebarCaption();
+
+    }
+
+    private void updateTitlebarCaption() {
+        if (!scrollPane.isVisible()) {
+            tb.setText("Click to show Log messages...");
+            tb.setToolTipText(null);
+        } else {
+            tb.setText("Log");
+            tb.setToolTipText("Click to hide log messages");
+        }
     }
 
     public MagicLogBook getLogBook() {
@@ -86,13 +115,13 @@ public class LogBookViewer extends JPanel {
         synchronized (logBook) {
             if (!isNewMessageAddedToTop) {
                 // use the default order of messages in logBook list.
-                for (MagicMessage msg : logBook) {
+                for (final MagicMessage msg : logBook) {
                     messagePanel.add(getNewMessagePanel(msg));
                 }
                 forceVerticalScrollbarToMax();
             } else {
                 // display messages in reverse order.
-                ListIterator<MagicMessage> listIterator = logBook.listIterator(logBook.size());
+                final ListIterator<MagicMessage> listIterator = logBook.listIterator(logBook.size());
                 while(listIterator.hasPrevious()){
                     messagePanel.add(getNewMessagePanel(listIterator.previous()));
                 }
@@ -103,7 +132,7 @@ public class LogBookViewer extends JPanel {
         }
     }
 
-    public void addMagicMessage(MagicMessage magicMessage) {
+    public void addMagicMessage(final MagicMessage magicMessage) {
         if (isNewMessageAddedToTop) {
             messagePanel.add(getNewMessagePanel(magicMessage), 0);
             scrollPane.getVerticalScrollBar().setValue(0);
@@ -113,9 +142,9 @@ public class LogBookViewer extends JPanel {
         }
     }
 
-    private MessagePanel getNewMessagePanel(MagicMessage message) {
-        Insets s = SEPARATOR_BORDER.getInsideBorder().getBorderInsets(null);
-        final int maxWidth = getWidth() - (s.left + s.right);
+    private MessagePanel getNewMessagePanel(final MagicMessage message) {
+        final Insets s = SEPARATOR_BORDER.getInsideBorder().getBorderInsets(null);
+        final int maxWidth = getWidth() - s.left - s.right;
         final MessagePanel panel = new MessagePanel(message, maxWidth);
         panel.setOpaque(false);
         panel.setBorder(SEPARATOR_BORDER);
@@ -134,7 +163,7 @@ public class LogBookViewer extends JPanel {
 
     public void forceVerticalScrollbarToMax() {
         scrollPane.validate();
-        JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
+        final JScrollBar scrollbar = scrollPane.getVerticalScrollBar();
         scrollbar.setValue(scrollbar.getMaximum());
     }
 

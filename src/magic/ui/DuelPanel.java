@@ -142,10 +142,10 @@ public class DuelPanel extends TexturedPanel {
             rightPanel.setLayout(new BoxLayout(rightPanel, BoxLayout.Y_AXIS));
             rightPanel.setOpaque(false);
 
-            rightPanel.add(deckDescriptionViewers[i]);
+            rightPanel.add(statsViewers[i]);
             rightPanel.add(Box.createVerticalStrut(SPACING));
 
-            rightPanel.add(statsViewers[i]);
+            rightPanel.add(deckDescriptionViewers[i]);
             rightPanel.add(Box.createVerticalStrut(SPACING));
 
             if (!player.isArtificial()) {

@@ -127,6 +127,13 @@ public class DuelDecksScreen
                     swapDecks();
                 }
             }));
+        } else {
+            buttons.add(new MenuButton("Save Duel", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    saveDuel();
+                }
+            }));
         }
         return buttons;
     }

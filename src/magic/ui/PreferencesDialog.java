@@ -52,6 +52,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private JButton okButton;
     private JButton cancelButton;
     private JCheckBox previewCardOnSelectCheckBox;
+    private JCheckBox gameLogCheckBox;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -81,7 +82,8 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("General", getGeneralSettingsPanel());
-        tabbedPane.addTab("Theme", getThemeSettingsPanel());
+        tabbedPane.addTab("Duel", getDuelSettingsPanel());
+        tabbedPane.addTab("Look & Feel", getThemeSettingsPanel());
         tabbedPane.addTab("Deck Editor", getDeckEditorSettingsPanel());
         return tabbedPane;
     }
@@ -104,6 +106,85 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         panel.add(previewCardOnSelectCheckBox);
 
         return panel;
+    }
+
+    private JPanel getDuelSettingsPanel() {
+
+        final JPanel mainPanel=new JPanel();
+        mainPanel.setLayout(null);
+
+        int Y=10;
+        final int X3=25;
+        final int H3=20;
+        final int W3=350;
+
+        gameLogCheckBox = new JCheckBox("Show game log messages.", config.isLogMessagesVisible());
+        gameLogCheckBox.setToolTipText("<html>Clear this option if you would prefer the game log messages to be hidden by default.<br>You can still toggle visibility during a game by clicking on the log titlebar.</html>");
+        gameLogCheckBox.setBounds(X3,Y,W3,H3);
+        gameLogCheckBox.setFocusable(false);
+        mainPanel.add(gameLogCheckBox);
+
+        Y += 30;
+        soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
+        soundCheckBox.setBounds(X3,Y,W3,H3);
+        soundCheckBox.setFocusable(false);
+        mainPanel.add(soundCheckBox);
+
+        Y += 30;
+        touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
+        touchscreenCheckBox.setBounds(X3,Y,W3,H3);
+        touchscreenCheckBox.setFocusable(false);
+        mainPanel.add(touchscreenCheckBox);
+
+        Y += 30;
+        skipSingleCheckBox = new JCheckBox("Skip single option choices when appropriate",
+                config.getSkipSingle());
+        skipSingleCheckBox.setBounds(X3,Y,W3,H3);
+        skipSingleCheckBox.setFocusable(false);
+        mainPanel.add(skipSingleCheckBox);
+
+        Y += 30;
+        alwaysPassCheckBox = new JCheckBox("Always pass during draw and begin of combat step",
+                config.getAlwaysPass());
+        alwaysPassCheckBox.setBounds(X3,Y,W3,H3);
+        alwaysPassCheckBox.setFocusable(false);
+        mainPanel.add(alwaysPassCheckBox);
+
+        Y += 30;
+        smartTargetCheckBox=new JCheckBox("Remove unusual target choices",
+                config.getSmartTarget());
+        smartTargetCheckBox.setBounds(X3,Y,W3,H3);
+        smartTargetCheckBox.setFocusable(false);
+        mainPanel.add(smartTargetCheckBox);
+
+        Y += 30;
+        mouseWheelPopupCheckBox = new JCheckBox("Popup card image using mouse wheel (instead of delay)",
+                config.isMouseWheelPopup());
+        mouseWheelPopupCheckBox.setBounds(X3,Y,W3,H3);
+        mouseWheelPopupCheckBox.setFocusable(false);
+        mainPanel.add(mouseWheelPopupCheckBox);
+
+        Y += 30;
+        popupDelaySlider=new SliderPanel("Popup",
+                IconImages.DELAY,
+                0,
+                500,
+                50,
+                config.getPopupDelay());
+        popupDelaySlider.setBounds(50,Y,280,50);
+        mainPanel.add(popupDelaySlider);
+
+        Y += 40;
+        messageDelaySlider = new SliderPanel("Message",
+                IconImages.DELAY,
+                0,
+                3000,
+                500,
+                config.getMessageDelay());
+        messageDelaySlider.setBounds(50,Y,280,50);
+        mainPanel.add(messageDelaySlider);
+
+        return mainPanel;
     }
 
     private JPanel getThemeSettingsPanel() {
@@ -172,71 +253,11 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         mainPanel.add(confirmExitCheckBox);
 
         Y += 30;
-        soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
-        soundCheckBox.setBounds(X3,Y,W3,H3);
-        soundCheckBox.setFocusable(false);
-        mainPanel.add(soundCheckBox);
-
-        Y += 30;
-        touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
-        touchscreenCheckBox.setBounds(X3,Y,W3,H3);
-        touchscreenCheckBox.setFocusable(false);
-        mainPanel.add(touchscreenCheckBox);
-
-        Y += 30;
         highQualityCheckBox = new JCheckBox("Show card images in original size",
                 config.isHighQuality());
         highQualityCheckBox.setBounds(X3,Y,W3,H3);
         highQualityCheckBox.setFocusable(false);
         mainPanel.add(highQualityCheckBox);
-
-        Y += 30;
-        skipSingleCheckBox = new JCheckBox("Skip single option choices when appropriate",
-                config.getSkipSingle());
-        skipSingleCheckBox.setBounds(X3,Y,W3,H3);
-        skipSingleCheckBox.setFocusable(false);
-        mainPanel.add(skipSingleCheckBox);
-
-        Y += 30;
-        alwaysPassCheckBox = new JCheckBox("Always pass during draw and begin of combat step",
-                config.getAlwaysPass());
-        alwaysPassCheckBox.setBounds(X3,Y,W3,H3);
-        alwaysPassCheckBox.setFocusable(false);
-        mainPanel.add(alwaysPassCheckBox);
-
-        Y += 30;
-        smartTargetCheckBox=new JCheckBox("Remove unusual target choices",
-                config.getSmartTarget());
-        smartTargetCheckBox.setBounds(X3,Y,W3,H3);
-        smartTargetCheckBox.setFocusable(false);
-        mainPanel.add(smartTargetCheckBox);
-
-        Y += 30;
-        mouseWheelPopupCheckBox = new JCheckBox("Popup using mouse wheel (instead of delay)",
-                config.isMouseWheelPopup());
-        mouseWheelPopupCheckBox.setBounds(X3,Y,W3,H3);
-        mouseWheelPopupCheckBox.setFocusable(false);
-        mainPanel.add(mouseWheelPopupCheckBox);
-
-        Y += 30;
-        popupDelaySlider=new SliderPanel("Popup",
-                IconImages.DELAY,
-                0,
-                500,
-                50,
-                config.getPopupDelay());
-        popupDelaySlider.setBounds(50,Y,280,50);
-        mainPanel.add(popupDelaySlider);
-
-        Y += 40;
-        messageDelaySlider = new SliderPanel("Message",
-                IconImages.DELAY,
-                0,
-                3000,
-                500,
-                config.getMessageDelay());
-        messageDelaySlider.setBounds(50,Y,280,50);
-        mainPanel.add(messageDelaySlider);
 
         return mainPanel;
     }
@@ -260,6 +281,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
             config.setPopupDelay(popupDelaySlider.getValue());
             config.setMessageDelay(messageDelaySlider.getValue());
             config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
+            config.setLogMessagesVisible(gameLogCheckBox.isSelected());
             config.save();
             ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
             frame.repaint();
