@@ -45,6 +45,7 @@ public class MagicTargetFilterFactory {
         factory.put("all slivers", TARGET_SLIVER_PERMANENT);
         factory.put("all goblins", TARGET_GOBLIN_PERMANENT);
         factory.put("all creatures", TARGET_CREATURE);
+        factory.put("creatures", TARGET_CREATURE);
         factory.put("creatures without flying", TARGET_CREATURE_WITHOUT_FLYING);
         factory.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
         factory.put("artifacts", TARGET_ARTIFACT);
