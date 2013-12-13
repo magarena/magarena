@@ -1,6 +1,9 @@
 package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -155,21 +158,45 @@ public class DeckEditorScreen
     }
 
     public void saveDeck() {
-        final JFileChooser fileChooser = new JFileChooser(DeckUtils.getDeckFolder());
+
+        final JFileChooser fileChooser = new JFileChooser(DeckUtils.getDeckFolder()) {
+            @Override
+            public void approveSelection() {
+                // first ensure filename has "dec" extension
+                String filename = getSelectedFile().getAbsolutePath();
+                if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
+                    setSelectedFile(new File(filename + DeckUtils.DECK_EXTENSION));
+                }
+                final Path prebuiltDecksFolder = DeckUtils.getPrebuiltDecksFolder();
+                final Path saveFolder = getSelectedFile().toPath().getParent();
+                if (saveFolder.equals(prebuiltDecksFolder)) {
+                    JOptionPane.showMessageDialog(
+                            frame,
+                            "This directory is reserved for prebuilt decks.\nPlease choose a different directory.",
+                            "Invalid directory",
+                            JOptionPane.WARNING_MESSAGE);
+                } else if (Files.exists(getSelectedFile().toPath())) {
+                    int response = JOptionPane.showConfirmDialog(
+                            frame,
+                            "Overwrite existing deck file?",
+                            "Overwrite file",
+                            JOptionPane.YES_NO_OPTION);
+                    if (response == JOptionPane.YES_OPTION) {
+                        super.approveSelection();
+                    }
+                } else {
+                    super.approveSelection();
+                }
+            }
+        };
         fileChooser.setDialogTitle("Save deck");
         fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
         final int action = fileChooser.showSaveDialog(this);
         if (action == JFileChooser.APPROVE_OPTION) {
-            String filename = fileChooser.getSelectedFile().getAbsolutePath();
-            if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
-                filename += DeckUtils.DECK_EXTENSION;
-            }
+            final String filename = fileChooser.getSelectedFile().getAbsolutePath();
             if (DeckUtils.saveDeck(filename, content.getDeck())) {
-                String shortFilename = fileChooser.getSelectedFile().getName();
-                if (shortFilename.indexOf(".dec") == -1) {
-                    shortFilename += ".dec";
-                }
+                final String shortFilename = fileChooser.getSelectedFile().getName();
                 content.getDeck().setName(shortFilename);
                 content.setDeck(content.getDeck());
             } else {

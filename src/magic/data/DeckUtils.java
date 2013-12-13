@@ -15,6 +15,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -41,6 +43,11 @@ public class DeckUtils {
 
     public static String getDeckFolder() {
         return MagicMain.getGamePath()+File.separator+"decks";
+    }
+
+    public static Path getPrebuiltDecksFolder() {
+        final Path decksPath = Paths.get(getDeckFolder());
+        return decksPath.resolve("prebuilt");
     }
 
     public static void createDeckFolder() {
