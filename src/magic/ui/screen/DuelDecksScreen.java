@@ -61,10 +61,10 @@ public class DuelDecksScreen
                 }
             });
         } else {
-            return new MenuButton("Restart duel", new AbstractAction() {
+            return new MenuButton("< Quit duel", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.restartDuel();
+                    frame.closeActiveScreen(false);
                 }
             });
         }
@@ -104,7 +104,7 @@ public class DuelDecksScreen
         if (screenContent.getDuel().getGamesPlayed() == 0) {
             return "Start duel";
         } else {
-            return "Game " + (screenContent.getDuel().getGamesPlayed() + 1);
+            return "Start game " + (screenContent.getDuel().getGamesPlayed() + 1);
         }
     }
 
@@ -132,6 +132,12 @@ public class DuelDecksScreen
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     saveDuel();
+                }
+            }));
+            buttons.add(new MenuButton("Restart duel", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    frame.restartDuel();
                 }
             }));
         }
