@@ -1,0 +1,10 @@
+name=1/1 red Goblin creature token with haste
+token=Goblin
+image=http://s8.postimg.org/ljh9ebhed/GOBLIN.jpg
+value=1
+type=Creature
+subtype=Goblin
+color=r
+cost={0}
+ability=haste
+pt=1/1

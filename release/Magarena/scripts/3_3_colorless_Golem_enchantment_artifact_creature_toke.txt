@@ -1,0 +1,8 @@
+name=3/3 colorless Golem enchantment artifact creature token
+token=Golem
+image=http://magiccards.info/extra/token/theros/golem.html
+value=3
+type=Enchantment,Artifact,Creature
+subtype=Golem
+cost={0}
+pt=3/3

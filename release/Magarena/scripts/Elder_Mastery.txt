@@ -1,0 +1,12 @@
+name=Elder Mastery
+url=http://magiccards.info/ddh/en/68.html
+image=http://mtgimage.com/card/elder%20mastery.jpg
+value=2.7
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{U}{B}{R}
+enchant=pump,pos creature
+given_pt=+3/+3
+given_ability=flying;combat damage discard 2
+timing=enchantment
