@@ -172,6 +172,12 @@ public class DeckEditorScreen
                 }
                 content.getDeck().setName(shortFilename);
                 content.setDeck(content.getDeck());
+            } else {
+                JOptionPane.showMessageDialog(
+                        frame,
+                        "There was a problem saving the deck file!",
+                        "Deck not saved",
+                        JOptionPane.ERROR_MESSAGE);
             }
         }
     }
