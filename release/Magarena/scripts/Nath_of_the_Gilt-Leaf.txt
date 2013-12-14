@@ -1,0 +1,11 @@
+name=Nath of the Gilt-Leaf
+url=http://magiccards.info/lw/en/250.html
+image=http://magiccards.info/scans/en/lw/250.jpg
+value=3.991
+rarity=R
+type=Legendary,Creature
+subtype=Elf,Warrior
+cost={3}{B}{G}
+pt=4/4
+timing=main
+requires_groovy_code
