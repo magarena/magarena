@@ -1,0 +1,9 @@
+name=Goblin Assault
+url=http://magiccards.info/ala/en/101.html
+image=http://mtgimage.com/card/goblin%20assault.jpg
+value=3
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability=your upkeep effect PN puts a 1/1 red Goblin creature token with haste onto the battlefield.;lord Goblin creatures have "attacks each turn if able."
+timing=enchantment

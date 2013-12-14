@@ -1,0 +1,8 @@
+name=2/2 colorless Spawn artifact creature token
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19993&amp;d=1143672364
+token=Spawn
+type=Artifact,Creature
+subtype=Spawn
+cost={0}
+value=2
+pt=2/2

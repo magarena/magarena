@@ -1,0 +1,9 @@
+name=Shinka, the Bloodsoaked Keep
+url=http://magiccards.info/chk/en/282.html
+image=http://mtgimage.com/card/shinka,%20the%20bloodsoaked%20keep.jpg
+value=4.069
+rarity=R
+type=Legendary,Land
+mana=r2
+ability=tap add mana {R};pay {R},{T}:Target legendary creature gains first strike until end of turn.
+timing=land

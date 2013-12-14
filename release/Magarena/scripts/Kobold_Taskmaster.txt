@@ -1,0 +1,11 @@
+name=Kobold Taskmaster
+url=http://magiccards.info/tsts/en/65.html
+image=http://mtgimage.com/card/kobold%20taskmaster.jpg
+value=3.531
+rarity=C
+type=Creature
+subtype=Kobold
+cost={1}{R}
+pt=1/2
+ability=lord other Kobold creatures you control get +1/+0
+timing=main

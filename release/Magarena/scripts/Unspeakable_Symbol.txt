@@ -1,0 +1,9 @@
+name=Unspeakable Symbol
+url=http://magiccards.info/sc/en/79.html
+image=http://mtgimage.com/card/unspeakable%20symbol.jpg
+value=3.259
+rarity=U
+type=Enchantment
+cost={1}{B}{B}
+ability=pay Pay 3 life:Put a +1/+1 counter on target creature.
+timing=enchantment

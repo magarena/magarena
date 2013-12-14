@@ -218,6 +218,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicPayLifeEvent(source, 1));
             } else if (cost.equals("Pay 2 life")) {
                 events.add(new MagicPayLifeEvent(source, 2));
+			} else if (cost.equals("Pay 3 life")) {
+            	events.add(new MagicPayLifeEvent(source, 3));
             } else if (cost.equals("Pay 7 life")) {
                 events.add(new MagicPayLifeEvent(source, 7));
             } else if (cost.equals("{+1/+1}")) {
@@ -226,6 +228,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.MinusOne,1));
             } else if (cost.equals("{C}")) {
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1));
+			} else if (cost.equals("{C2}")) {
+            	events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,2));
             } else if (cost.equals("{C3}")) {
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3));
             } else if (cost.equals("{Once}")) {

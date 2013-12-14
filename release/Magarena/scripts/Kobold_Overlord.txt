@@ -1,0 +1,11 @@
+name=Kobold Overlord
+url=http://magiccards.info/lg/en/153.html
+image=http://mtgimage.com/card/kobold%20overlord.jpg
+value=3.743
+rarity=U
+type=Creature
+subtype=Kobold
+cost={1}{R}
+pt=1/2
+ability=first strike;lord other Kobold creatures you control have first strike.
+timing=main

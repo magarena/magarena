@@ -1,0 +1,11 @@
+name=Seshiro the Anointed
+url=http://magiccards.info/chk/en/241.html
+image=http://mtgimage.com/card/seshiro%20the%20anointed.jpg
+value=4.031
+rarity=R
+type=Legendary,Creature
+subtype=Snake,Monk
+cost={4}{G}{G}
+pt=3/4
+ability=lord other Snake creatures you control get +2/+2;lord Snake creatures you control have combat damage may draw card
+timing=main

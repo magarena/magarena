@@ -1,0 +1,11 @@
+name=Stronghold Taskmaster
+url=http://magiccards.info/sh/en/22.html
+image=http://mtgimage.com/card/stronghold%20taskmaster.jpg
+value=2.583
+rarity=U
+type=Creature
+subtype=Giant,Minion
+cost={2}{B}{B}
+pt=4/3
+ability=lord other black creatures get -1/-1
+timing=main

@@ -1,0 +1,9 @@
+name=Spawning Pit
+url=http://magiccards.info/ds/en/141.html
+image=http://mtgimage.com/card/spawning%20pit.jpg
+value=4.056
+rarity=U
+type=Artifact
+cost={2}
+ability=pay Sacrifice a creature:Put a charge counter on SN.;pay {1},{C2}:PN puts a 2/2 colorless Spawn artifact creature token onto the battlefield.
+timing=artifact

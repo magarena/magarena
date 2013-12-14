@@ -1,0 +1,9 @@
+name=Hammer of Purphoros
+url=http://magiccards.info/ths/en/124.html
+image=http://mtgimage.com/card/hammer%20of%20purphoros.jpg
+value=4.009
+rarity=R
+type=Legendary,Artifact,Enchantment
+cost={1}{R}{R}
+ability=lord Creatures you control have haste;pay {2}{R},{T},Sacrifice a land:PN puts a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.
+timing=artifact

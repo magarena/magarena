@@ -1,0 +1,11 @@
+name=Kongming, Sleeping Dragon
+url=http://magiccards.info/c13/en/16.html
+image=http://mtgimage.com/card/Kongming,%20Sleeping%20Dragon.jpg
+value=4.250
+rarity=R
+type=Legendary,Creature
+subtype=Human,Advisor
+cost={2}{W}{W}
+pt=2/2
+ability=lord other creatures you control get +1/+1
+timing=main

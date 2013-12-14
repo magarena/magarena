@@ -1,0 +1,12 @@
+name=Cessation
+url=http://magiccards.info/ul/pt/4.html
+image=http://mtgimage.com/card/cessation.jpg
+value=3.333
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+enchant=can't attack or block,neg creature
+given_ability=can't attack
+ability=dies effect Return SN to its owner's hand.
+timing=enchantment
