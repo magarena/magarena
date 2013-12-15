@@ -553,8 +553,8 @@ public class GameController implements ILogBookListener {
         running.set(false);
     }
 
-	@Override
-	public void messageLogged(final MagicLogBookEvent ev) {
+    @Override
+    public void messageLogged(final MagicLogBookEvent ev) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
@@ -565,5 +565,5 @@ public class GameController implements ILogBookListener {
                 }
             }
         });
-	}
+    }
 }

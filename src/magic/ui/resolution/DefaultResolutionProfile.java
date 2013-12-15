@@ -30,7 +30,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
     @Override
     public ResolutionProfileResult calculate(final Dimension size) {
 
-    	containerSize = size;
+        containerSize = size;
 
         final ResolutionProfileResult result=new ResolutionProfileResult();
         int spacing=theme.getValue(Theme.VALUE_SPACING);
@@ -61,31 +61,31 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         setLhsBounds(result);
 
         result.setBoundary(
-        		ResolutionProfileType.GameOpponentViewer,
+                ResolutionProfileType.GameOpponentViewer,
                 new Rectangle(-1, -1, PLAYER_VIEWER_WIDTH, playerHeight));
 
         result.setBoundary(
-        		ResolutionProfileType.GameLogBookButton,
+                ResolutionProfileType.GameLogBookButton,
                 new Rectangle(-1, -1, BUTTON_SIZE, BUTTON_SIZE));
         result.setBoundary(
-        		ResolutionProfileType.TextViewButton,
+                ResolutionProfileType.TextViewButton,
                 new Rectangle(-1, -1, BUTTON_SIZE, BUTTON_SIZE));
 
         final int logWidth = Math.min(MAX_LOGBOOK_VIEWER_WIDTH, size.width - (spacing * 3) - BUTTON_SIZE);
         result.setBoundary(
-        		ResolutionProfileType.GameLogBookViewer,
+                ResolutionProfileType.GameLogBookViewer,
                 new Rectangle(x + BUTTON_SIZE + 6, spacing, logWidth, size.height - spacing * 2));
 
         result.setBoundary(
-        		ResolutionProfileType.GameImageStackViewer,
+                ResolutionProfileType.GameImageStackViewer,
                 new Rectangle(-1, -1, PLAYER_VIEWER_WIDTH, cardHeight - BUTTON_Y_SPACING - BUTTON_SIZE));
 
         result.setBoundary(
-        		ResolutionProfileType.GameDuelViewer,
+                ResolutionProfileType.GameDuelViewer,
                 new Rectangle(-1, -1, PLAYER_VIEWER_WIDTH, GAME_VIEWER_HEIGHT));
 
         result.setBoundary(
-        		ResolutionProfileType.GamePlayerViewer,
+                ResolutionProfileType.GamePlayerViewer,
                 new Rectangle(-1 ,-1, PLAYER_VIEWER_WIDTH, playerHeight));
 
 
@@ -93,7 +93,7 @@ public class DefaultResolutionProfile implements ResolutionProfile {
         // RHS - this still uses absolute positioning (null layout).
         //
 
-    	// this is the gap between the edge of the RHS panel and its content.
+        // this is the gap between the edge of the RHS panel and its content.
         final int offset = theme.getValue(Theme.VALUE_GAME_OFFSET);
         x = offset;
 
@@ -104,11 +104,11 @@ public class DefaultResolutionProfile implements ResolutionProfile {
             final int x2=x+width2+spacing;
             y=spacing;
             result.setBoundary(
-            		ResolutionProfileType.GameOpponentPermanentViewer,
+                    ResolutionProfileType.GameOpponentPermanentViewer,
                     new Rectangle(x2, y, width2, height2));
             y+=height2+spacing;
             result.setBoundary(
-            		ResolutionProfileType.GamePlayerPermanentViewer,
+                    ResolutionProfileType.GamePlayerPermanentViewer,
                     new Rectangle(x2, y, width2, height2));
 
         } else {
@@ -116,35 +116,35 @@ public class DefaultResolutionProfile implements ResolutionProfile {
             int x2=x+width2+spacing;
             y = spacing;
             result.setBoundary(
-            		ResolutionProfileType.GamePlayerPermanentViewer,
+                    ResolutionProfileType.GamePlayerPermanentViewer,
                     new Rectangle(x2,y,width2,height3));
             x2 += width2 + spacing;
             result.setBoundary(
-            		ResolutionProfileType.GameOpponentPermanentViewer,
+                    ResolutionProfileType.GameOpponentPermanentViewer,
                     new Rectangle(x2,y,width2,height3));
         }
 
         final int height2=(size.height-spacing*3)/3;
         y=spacing;
         result.setBoundary(
-        		ResolutionProfileType.GameStackCombatViewer,
-        		new Rectangle(x, y, width2, 2*height2));
+                ResolutionProfileType.GameStackCombatViewer,
+                new Rectangle(x, y, width2, 2*height2));
 
         y+=2*height2+spacing;
         result.setBoundary(
-        		ResolutionProfileType.GameHandGraveyardViewer,
-        		new Rectangle(x, y, width2, height2));
+                ResolutionProfileType.GameHandGraveyardViewer,
+                new Rectangle(x, y, width2, height2));
 
         y = size.height - spacing - IMAGE_HAND_VIEWER_HEIGHT;
         result.setBoundary(
-        		ResolutionProfileType.GameZones,
-        		new Rectangle(-1, -1, getPanelWidthLHS(), y - offset));
+                ResolutionProfileType.GameZones,
+                new Rectangle(-1, -1, getPanelWidthLHS(), y - offset));
 
         final int width3=size.width-PLAYER_VIEWER_WIDTH-spacing*3-offset;
 
         result.setBoundary(
-        		ResolutionProfileType.GameImageHandGraveyardViewer,
-        		new Rectangle(x, y, width3, IMAGE_HAND_VIEWER_HEIGHT));
+                ResolutionProfileType.GameImageHandGraveyardViewer,
+                new Rectangle(x, y, width3, IMAGE_HAND_VIEWER_HEIGHT));
 
 
         final int height3=size.height-spacing*5-IMAGE_HAND_VIEWER_HEIGHT-offset;
@@ -153,31 +153,31 @@ public class DefaultResolutionProfile implements ResolutionProfile {
 
         y=spacing;
         result.setBoundary(
-        		ResolutionProfileType.GameImageOpponentPermanentViewer,
-        		new Rectangle(x, y, width3, height4));
+                ResolutionProfileType.GameImageOpponentPermanentViewer,
+                new Rectangle(x, y, width3, height4));
 
         y+=height4+spacing;
         result.setBoundary(
-        		ResolutionProfileType.GameImageCombatViewer,
-        		new Rectangle(x, y, width3, height5));
+                ResolutionProfileType.GameImageCombatViewer,
+                new Rectangle(x, y, width3, height5));
 
         y+=height5+spacing;
         result.setBoundary(
-        		ResolutionProfileType.GameImagePlayerPermanentViewer,
-        		new Rectangle(x, y, width3, height4));
+                ResolutionProfileType.GameImagePlayerPermanentViewer,
+                new Rectangle(x, y, width3, height4));
 
         return result;
     }
 
     private void setLhsBounds(final ResolutionProfileResult result) {
-    	Rectangle r = new Rectangle(
-    			0, 0,
-    			getPanelWidthLHS(),
-    			containerSize.height);
-    	result.setBoundary(ResolutionProfileType.GameLHS, r);
+        Rectangle r = new Rectangle(
+                0, 0,
+                getPanelWidthLHS(),
+                containerSize.height);
+        result.setBoundary(ResolutionProfileType.GameLHS, r);
     }
 
     public static int getPanelWidthLHS() {
-    	return LHS_CONTENT_WIDTH + (OUTER_MARGIN * 2);
+        return LHS_CONTENT_WIDTH + (OUTER_MARGIN * 2);
     }
 }

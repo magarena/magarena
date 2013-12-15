@@ -1,7 +1,7 @@
 package magic.ui.resolution;
 
 public enum ResolutionProfileType {
-	GameLHS,
+    GameLHS,
     GameZones,
     GamePlayerViewerSmall,
     GamePlayerViewer,
