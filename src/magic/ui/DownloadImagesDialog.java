@@ -61,6 +61,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         this.setLayout(springLayout);
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setLocationRelativeTo(frame);
 
         final Container contentPane = this.getContentPane();
 
