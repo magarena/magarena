@@ -1,0 +1,12 @@
+name=Lys Alana Bowmaster
+url=http://magiccards.info/mt/en/130.html
+image=http://magiccards.info/scans/en/mt/130.jpg
+value=2.971
+rarity=C
+type=Creature
+subtype=Elf,Archer
+cost={2}{G}
+pt=2/2
+ability=reach
+timing=main
+requires_groovy_code
