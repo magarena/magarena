@@ -1,0 +1,9 @@
+name=Codex Shredder
+url=http://magiccards.info/rtr/en/228.html
+image=http://mtgimage.com/card/codex%20shredder.jpg
+value=2.951
+rarity=U
+type=Artifact
+cost={1}
+ability=pay {T}:Target player puts the top a card of his or her library into his or her graveyard.;pay {5},{T},{S}:Return target card from your graveyard to your hand.
+timing=artifact

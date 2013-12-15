@@ -13,7 +13,7 @@ public class MagicLogBook extends ArrayList<MagicMessage> {
 
     @Override
     public boolean add(final MagicMessage msg) {
-    	notifyMessageLogged(msg);
+        notifyMessageLogged(msg);
         final String player = msg.getPlayer().getIndex() == 0 ? "P" : "C";
         MagicGameLog.log("LOG (" + player + "): " + msg.getText());
         if (Boolean.getBoolean("debug")) {

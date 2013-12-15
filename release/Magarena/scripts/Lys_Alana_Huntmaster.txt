@@ -1,0 +1,11 @@
+name=Lys Alana Huntmaster
+url=http://magiccards.info/evg/en/10.html
+image=http://magiccards.info/scans/en/evg/10.jpg
+value=4.086
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={2}{G}{G}
+pt=3/3
+timing=main
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Aegis of the Meek
+url=http://magiccards.info/ia/en/282.html
+image=http://mtgimage.com/card/aegis%20of%20the%20meek.jpg
+value=1.635
+rarity=R
+type=Artifact
+cost={3}
+ability=pay {1},{T}:Target 1/1 creature gets +1/+2 until end of turn.
+timing=artifact

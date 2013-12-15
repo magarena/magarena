@@ -769,6 +769,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             hasAbility(MagicAbility.ProtectionFromCreatures)) {
             return true;
         }
+        // from legendary creatures
+        if (creature.hasType(MagicType.Creature) &&
+            creature.hasType(MagicType.Legendary) &&
+            hasAbility(MagicAbility.ProtectionFromLegendaryCreatures)) {
+            return true;
+        }
         // from Artifacts
         if (creature.hasType(MagicType.Artifact) &&
             hasAbility(MagicAbility.ProtectionFromArtifacts)) {

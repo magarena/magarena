@@ -1,0 +1,11 @@
+name=Ivy Lane Denizen
+url=http://magiccards.info/gtc/en/125.html
+image=http://magiccards.info/scans/en/gtc/125.jpg
+value=3.17
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={3}{G}
+pt=2/3
+timing=main
+requires_groovy_code
