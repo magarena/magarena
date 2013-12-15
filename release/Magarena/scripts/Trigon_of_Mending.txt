@@ -1,0 +1,9 @@
+name=Trigon of Mending
+url=http://magiccards.info/som/en/215.html
+image=http://mtgimage.com/card/trigon%20of%20mending.jpg
+value=1.803
+rarity=U
+type=Artifact
+cost={2}
+ability=enters with counter charge 3;pay {W}{W},{T}:Put a charge counter on SN.;pay {2},{T},{C}:Target player gains 3 life.
+timing=artifact
