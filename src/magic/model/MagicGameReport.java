@@ -2,9 +2,9 @@ package magic.model;
 
 import magic.MagicMain;
 import magic.data.FileIO;
-import magic.data.URLUtils;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
+
 import java.awt.Component;
 import java.awt.Desktop;
 import java.awt.Rectangle;
@@ -41,32 +41,23 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 
             // By specifying a frame the JOptionPane will be shown in the taskbar.
             // Otherwise if the dialog is hidden it is easy to forget it is still open.
-            JFrame frame = new JFrame("Fatal Error");
+            final JFrame frame = new JFrame("Fatal Error");
             frame.setUndecorated(true);
             frame.setVisible(true);
             frame.setLocationRelativeTo(null);
 
-            // Custom option dialog.
-            Object[] options = {"Open logs folder", "Issue Tracker", "Close"};
-            int action = -1;
-            do {
-                action = JOptionPane.showOptionDialog(
-                        frame,
-                        "An unexpected error has occurred and Magarena will need to close.\n\n" +
-                        "Please consider posting the crash report (\"crash.log\") to the Magarena\n" +
-                        "forum or Issue Tracker so that the development team can investigate.\n\n",
-                        "Fatal Error",
-                        JOptionPane.YES_NO_CANCEL_OPTION,
-                        JOptionPane.ERROR_MESSAGE,
-                        null,
-                        options,
-                        options[2]);
+            String prompt = "An unexpected error has occurred and Magarena will need to close.";
+            if (Desktop.isDesktopSupported()) {
+                prompt +=
+                    "\n\nPlease consider submitting a crash report so that the development team can investigate.\n" +
+                    "Would you like to open the crash logs directory in file explorer?";
+                final int action = JOptionPane.showConfirmDialog(frame, prompt, "Fatal Error", JOptionPane.OK_OPTION, JOptionPane.ERROR_MESSAGE, null);
                 if (action == JOptionPane.YES_OPTION) {
-                    Desktop.getDesktop().open(new File(MagicMain.getGamePath()));
-                } else if (action == JOptionPane.NO_OPTION) {
-                    URLUtils.openURL("http://code.google.com/p/magarena/issues/list");
+                    Desktop.getDesktop().open(new File(MagicMain.getLogsPath()));
                 }
-            } while (action != JOptionPane.CANCEL_OPTION && action != -1);
+            } else {
+                JOptionPane.showMessageDialog(frame, prompt, "Fatal Error", JOptionPane.ERROR_MESSAGE);
+            }
 
         } catch (Exception e) {
             // do nothing - crash report has already been generated and app is about to exit anyway.
@@ -196,7 +187,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         System.err.println(sb.toString());
 
         //save a copy to a crash log file
-        final File clog = new File(MagicMain.getGamePath(), "crash.log");
+        final File clog = new File(MagicMain.getLogsPath(), "crash.log");
         try {
             FileIO.toFile(clog, sb.toString(), true);
         } catch (final IOException ex3) {
@@ -213,7 +204,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
                         Rectangle rec = container.getBounds();
                         BufferedImage capture = new BufferedImage(rec.width, rec.height,BufferedImage.TYPE_INT_ARGB);
                         container.paint(capture.getGraphics()); //capturing the components content in the capture object
-                        ImageIO.write(capture, "png", new File(MagicMain.getGamePath(), "crash.png"));
+                        ImageIO.write(capture, "png", new File(MagicMain.getLogsPath(), "crash.png"));
                     } catch (Exception e) {
                         System.err.println("grabScreenShot failed : " + e.toString());
                     }

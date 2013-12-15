@@ -15,6 +15,10 @@ import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class MagicMain {
 
@@ -26,6 +30,7 @@ public class MagicMain {
     private static final String GAME_FOLDER  = "Magarena";
     private static final String MODS_PATH    = "mods";
     private static final String SCRIPTS_PATH = "scripts";
+    private static final String LOGS_PATH = "logs";
     private static final String GAME_PATH    =
          (System.getProperty("magarena.dir") != null ?
           System.getProperty("magarena.dir") :
@@ -73,7 +78,6 @@ public class MagicMain {
         });
     }
 
-
     public static String getGamePath() {
         return GAME_PATH;
     }
@@ -88,6 +92,19 @@ public class MagicMain {
 
     public static String getScriptsPath() {
         return getGamePath()+File.separatorChar+SCRIPTS_PATH;
+    }
+
+    public static String getLogsPath() {
+        final Path path = Paths.get(getGamePath()).resolve(LOGS_PATH);
+        if (!Files.exists(path)) {
+            try {
+                Files.createDirectory(path);
+            } catch (IOException e) {
+                e.printStackTrace();
+                return Paths.get(getGamePath()).toString();
+            }
+        }
+        return path.toString();
     }
 
     static void initializeEngine() {
