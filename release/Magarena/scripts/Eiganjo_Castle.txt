@@ -1,0 +1,9 @@
+name=Eiganjo Castle
+url=http://magiccards.info/chk/en/275.html
+image=http://mtgimage.com/card/eiganjo%20castle.jpg
+value=4
+rarity=R
+type=Legendary,Land
+mana=w2
+ability=tap add mana {W};pay {W},{T}:Prevent the next 2 damage that would be dealt to target legendary creature this turn.
+timing=land
