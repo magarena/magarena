@@ -524,7 +524,7 @@ check_tokens:
 check_decks:
 	diff \
 	<(grep "name=" -r release/Magarena/scripts/ | sed 's/.*name=//' | sort) \
-	<(cat release/Magarena/decks/*.dec | grep "^[0-9]" | sed 's/^[0-9]* //' | sort | uniq) | grep ">" | ${NO_OUTPUT}
+	<(cat release/Magarena/decks/prebuilt/*.dec | grep "^[0-9]" | sed 's/^[0-9]* //' | sort | uniq) | grep ">" | ${NO_OUTPUT}
 
 check_unique_property:
 	grep "^[^=]*" -r release/Magarena/scripts/*.txt | sed 's/=.*//g' | sort | uniq -d | ${NO_OUTPUT}
@@ -620,7 +620,7 @@ bytes_per_card:
 reminder.txt: cards/cards.xml
 	grep 'reminder="[^"]*"' $^ -o | sed 's/reminder=//' | sort | uniq -c | sort -rn > $@
 
-FILES = release/Magarena/**/*.txt release/Magarena/**/*.groovy release/Magarena/**/*.dec src/**/*.java
+FILES = release/Magarena/**/*.txt release/Magarena/**/*.groovy release/Magarena/decks/**/*.dec src/**/*.java
 
 normalize_files:
 	# add newline at end of file
