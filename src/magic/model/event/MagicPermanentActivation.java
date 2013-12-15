@@ -205,6 +205,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELEMENTAL));
             } else if (cost.equals("Sacrifice a Wall")) {
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_WALL));
+    } else if (cost.equals("Sacrifice a permanent")) {
+	  events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_PERMANENT));
             } else if (cost.equals("Discard a card")) {
                 events.add(new MagicDiscardEvent(source));
             } else if (cost.equals("Discard two cards")) {
