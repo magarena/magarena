@@ -154,7 +154,7 @@ public enum MagicAbility {
     ProtectionFromGoblins("protection from Kavu",10),
     ProtectionFromKavu("protection from Goblins",10),
     ProtectionFromSnow("protection from snow",10),
-    ProtectionFromLegendary("protection from legendary",10),
+    ProtectionFromLegendaryCreatures("protection from legendary creatures",10),
     Reach("reach",20),
     Shadow("shadow",30),
     Shroud("shroud",60),
