@@ -6,7 +6,7 @@
             pt.set(amount,amount);
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {

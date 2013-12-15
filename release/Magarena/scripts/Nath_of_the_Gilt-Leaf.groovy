@@ -16,15 +16,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if(event.isYes()){
-				event.processTargetPlayer(game,new MagicPlayerAction() {
-					public void doAction(final MagicPlayer player) {
-						game.addEvent(MagicDiscardEvent.Random(event.getSource(),player));
-					}
-				});
-			}
+                event.processTargetPlayer(game,new MagicPlayerAction() {
+                    public void doAction(final MagicPlayer player) {
+                        game.addEvent(MagicDiscardEvent.Random(event.getSource(),player));
+                    }
+                });
+            }
         }
     },
-	new MagicWhenDiscardedTrigger() {
+    new MagicWhenDiscardedTrigger() {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent,final MagicCard card) {
             return permanent.isEnemy(card) ?

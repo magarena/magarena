@@ -7,11 +7,11 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
             new MagicEvent(
-				permanent,
-				new MagicMayChoice(),
-				this,
-				"PN may\$ put a 1/1 green Elf Warrior creature token onto the battlefield."
-			);
+                permanent,
+                new MagicMayChoice(),
+                this,
+                "PN may\$ put a 1/1 green Elf Warrior creature token onto the battlefield."
+            );
         }
 
         @Override
