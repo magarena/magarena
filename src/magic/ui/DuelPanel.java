@@ -37,7 +37,6 @@ public class DuelPanel extends TexturedPanel {
     private static final int SPACING = 10;
     private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
 
-    private final MagicFrame frame;
     private final MagicDuel duel;
     private final JTabbedPane tabbedPane;
     private final DeckStrengthViewer strengthViewer;
@@ -49,9 +48,8 @@ public class DuelPanel extends TexturedPanel {
     private final JButton[] generateButtons;
     private final DeckStatisticsViewer[] statsViewers;
 
-    public DuelPanel(final MagicFrame frame,final MagicDuel duel) {
+    public DuelPanel(final MagicDuel duel) {
 
-        this.frame=frame;
         this.duel=duel;
 
         setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
@@ -133,7 +131,7 @@ public class DuelPanel extends TexturedPanel {
                 @Override
                 public void actionPerformed(final ActionEvent event) {
                     duel.buildDeck(player);
-                    frame.showDuel(tabbedPane.getSelectedIndex());
+                    updateDecksAfterEdit();
                 }
             });
 
@@ -243,10 +241,6 @@ public class DuelPanel extends TexturedPanel {
 
     String generateTitle(final MagicDeck deck) {
         return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
-    }
-
-    public MagicFrame getFrame() {
-        return frame;
     }
 
     public MagicDuel getDuel() {

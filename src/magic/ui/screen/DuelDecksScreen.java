@@ -31,12 +31,12 @@ public class DuelDecksScreen
     private static DuelPanel screenContent;
 
     public DuelDecksScreen(final MagicFrame frame0, final MagicDuel duel0) {
-        super(getScreenContent(frame0, duel0), frame0);
+        super(getScreenContent(duel0), frame0);
         this.frame = frame0;
     }
 
-    private static JPanel getScreenContent(final MagicFrame frame, final MagicDuel duel) {
-        screenContent = new DuelPanel(frame, duel);
+    private static JPanel getScreenContent(final MagicDuel duel) {
+        screenContent = new DuelPanel(duel);
         return screenContent;
     }
 

@@ -172,19 +172,8 @@ public class MagicFrame extends JFrame {
     }
 
     public void showDuel() {
-
-//        gamePanel=null;
         if (duel!=null) {
-
-//            final DuelPanel newDuelPanel = new DuelPanel(this,duel);
-//            setContent(newDuelPanel);
-//            duelPanel=newDuelPanel;
             showDuelDecksScreen();
-
-
-//            playGameItem.setText((duel.getGamesPlayed() == 0 ?
-//                        "Start duel" :
-//                        "Continue duel"));
             if (Boolean.getBoolean("selfMode")) {
                 if (!duel.isFinished()) {
                     nextGame();
@@ -192,14 +181,7 @@ public class MagicFrame extends JFrame {
                     newDuel(DuelConfig.getInstance());
                 }
             }
-//        } else {
-//            //setContent(new ZoneBackgroundLabel());
         }
-    }
-
-    public void showDuel(final int tab) {
-        showDuel();
-//        duelPanel.setSelectedTab(tab);
     }
 
     public void showNewDuelDialog() {
