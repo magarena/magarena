@@ -1,5 +1,6 @@
 package magic.ui.screen;
 
+import java.awt.Frame;
 import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
@@ -13,6 +14,8 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class SettingsMenuScreen extends AbstractScreen {
+
+    private static DownloadImagesDialog downloadDialog;
 
     public SettingsMenuScreen(final MagicFrame frame0) {
         super(getScreenContent(frame0), frame0);
@@ -35,7 +38,11 @@ public class SettingsMenuScreen extends AbstractScreen {
         menu.addMenuItem("Download images", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                new DownloadImagesDialog(frame0);
+                if (downloadDialog == null || !downloadDialog.isDisplayable()) {
+                    downloadDialog = new DownloadImagesDialog(frame0);
+                }
+                downloadDialog.setState(Frame.NORMAL);
+                downloadDialog.setVisible(true);
             }
         });
         menu.addMenuItem("More themes online...", new AbstractAction() {
