@@ -1,0 +1,16 @@
+name=Crusher Zendikon
+url=http://magiccards.info/wwk/en/78.html
+image=http://mtgimage.com/card/crusher%20zendikon.jpg
+value=3.1
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+enchant=pump,pos land
+given_type=Creature
+given_subtype=Beast
+given_color=r
+given_ability=trample
+set_pt=4/2
+timing=enchantment
+requires_groovy_code Wind Zendikon

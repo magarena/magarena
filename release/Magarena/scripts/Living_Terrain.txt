@@ -1,0 +1,14 @@
+name=Living Terrain
+url=http://magiccards.info/8e/en/260.html
+image=http://mtgimage.com/card/living%20terrain.jpg
+value=3.528
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}{G}
+enchant=pump,pos land
+given_type=Creature
+given_subtype=Treefolk
+given_color=g
+set_pt=5/6
+timing=enchantment

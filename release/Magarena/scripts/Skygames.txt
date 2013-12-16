@@ -1,0 +1,11 @@
+name=Skygames
+url=http://magiccards.info/gtc/en/51.html
+image=http://mtgimage.com/card/skygames.jpg
+value=2.06
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+enchant=pump,pos land
+given_ability=pay {T},{Sorcery}:Target creature gains flying until end of turn.
+timing=enchantment

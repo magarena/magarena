@@ -1,0 +1,11 @@
+name=Utopia Vow
+url=http://magiccards.info/pc/en/142.html
+image=http://mtgimage.com/card/utopia%20vow.jpg
+value=3.426
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+enchant=pump,creature
+given_ability=tap add mana any;can't attack or block
+timing=enchantment
