@@ -1,0 +1,9 @@
+name=Mightstone
+url=http://magiccards.info/aq/en/20.html
+image=http://mtgimage.com/card/mightstone.jpg
+value=2.4
+rarity=C
+type=Artifact
+cost={4}
+ability=lord attacking creatures get +1/+0
+timing=artifact
