@@ -46,7 +46,8 @@ public class MagicFrame extends JFrame {
 
     private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
 
-    //java -DtestGame=X to start with a specific game
+    // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
+    // where X is one of the classes (without the .java) in "magic.test".
     private static final String testGame = System.getProperty("testGame");
 
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
@@ -88,7 +89,8 @@ public class MagicFrame extends JFrame {
 
         setVisible(true);
 
-        //in selfMode start game immediate based on configuration from duel.cfg
+        // add "-DselfMode=true" VM argument for AI vs AI mode.
+        // in selfMode start game immediately based on configuration from duel.cfg
         if (Boolean.getBoolean("selfMode")) {
             final DuelConfig config=DuelConfig.getInstance();
             config.load();
