@@ -31,6 +31,7 @@ public class MagicMain {
     private static final String MODS_PATH    = "mods";
     private static final String SCRIPTS_PATH = "scripts";
     private static final String LOGS_PATH = "logs";
+    private static final String SAVED_DUELS_PATH = "duels";
     private static final String GAME_PATH    =
          (System.getProperty("magarena.dir") != null ?
           System.getProperty("magarena.dir") :
@@ -95,7 +96,19 @@ public class MagicMain {
     }
 
     public static String getLogsPath() {
-        final Path path = Paths.get(getGamePath()).resolve(LOGS_PATH);
+        return getDataPath(LOGS_PATH);
+    }
+
+    public static String getSavedDuelsPath() {
+        return getDataPath(SAVED_DUELS_PATH);
+    }
+
+    /**
+     * Gets path to a specified data directory. If the directory does not exist it
+     * attempts to create it. If that fails then it uses the GAME_PATH directory instead.
+     */
+    private static String getDataPath(final String dataDirectory) {
+        final Path path = Paths.get(getGamePath()).resolve(dataDirectory);
         if (!Files.exists(path)) {
             try {
                 Files.createDirectory(path);

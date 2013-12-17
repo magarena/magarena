@@ -195,7 +195,7 @@ public class DuelConfig {
     }
 
     private static File getConfigFile() {
-        return new File(MagicMain.getGamePath(),CONFIG_FILENAME);
+        return new File(MagicMain.getSavedDuelsPath(), CONFIG_FILENAME);
     }
 
     public static DuelConfig getInstance() {

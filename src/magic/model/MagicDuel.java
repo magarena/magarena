@@ -245,7 +245,7 @@ public class MagicDuel {
     }
 
     public static final File getDuelFile() {
-        return new File(MagicMain.getGamePath(),"duel.txt");
+        return new File(MagicMain.getSavedDuelsPath(),"duel.txt");
     }
 
     private static String getPlayerPrefix(final int index) {

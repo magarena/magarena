@@ -25,3 +25,4 @@ release/Magarena/mods/
 release/Magarena/crash.png
 *.jpage
 release/Magarena/logs/crash.png
+duels/*
