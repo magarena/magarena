@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Main),
-        "Main"
+        "Search"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
@@ -11,20 +11,17 @@
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                permanent,
+                source,
                 this,
-                "PN may search his or her library for a Elf card, reveal it, put it into his or her hand, and shuffle his or her library."
+                "PN searches his or her library for a basic land card and put that card onto the battlefield. Then shuffle PN's library."
             );
         }
-
+        
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchIntoHandEvent(
+            game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
-                new MagicMayChoice(
-                    "Search for a Goblin card?",
-                    MagicTargetChoice.ELF_CARD_FROM_LIBRARY
-                )
+                MagicTargetChoice.ELF_CARD_FROM_LIBRARY
             ));
         }
     }

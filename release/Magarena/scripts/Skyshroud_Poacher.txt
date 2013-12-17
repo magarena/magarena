@@ -8,3 +8,4 @@ subtype=Human,Rebel
 cost={2}{G}{G}
 pt=2/2
 timing=main
+requires_groovy_code
