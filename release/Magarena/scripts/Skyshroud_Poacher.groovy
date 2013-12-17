@@ -13,7 +13,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN searches his or her library for a basic land card and put that card onto the battlefield. Then shuffle PN's library."
+                "PN searches his or her library for an Elf permanent card and puts that card onto the battlefield. Then shuffle PN's library."
             );
         }
         
