@@ -1,0 +1,11 @@
+name=Sakura-Tribe Elder
+url=http://magiccards.info/c13/en/168.html
+image=http://mtgimage.com/card/sakura-tribe%20elder.jpg
+value=4.188
+rarity=C
+type=Creature
+subtype=Snake,Shaman
+cost={1}{G}
+pt=1/1
+timing=main
+requires_groovy_code

@@ -5,15 +5,14 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN searches his or her library for a basic land card, reveals it, " + 
-                "puts it into his or her hand, then shuffles his or her library."
+                "PN searches his or her library for a basic land card and put that card onto the battlefield. Then shuffle PN's library."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchIntoHandEvent(
+            game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
-                MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
+                MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY,
             ));
         }
     }

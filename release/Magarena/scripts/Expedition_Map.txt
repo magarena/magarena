@@ -1,0 +1,9 @@
+name=Expedition Map
+url=http://magiccards.info/zen/en/201.html
+image=http://mtgimage.com/card/expedition%20map.jpg
+value=4.168
+rarity=C
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code

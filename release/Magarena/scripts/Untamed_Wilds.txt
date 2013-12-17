@@ -1,0 +1,9 @@
+name=Untamed Wilds
+url=http://magiccards.info/7e/en/279.html
+image=http://mtgimage.com/card/untamed%20wilds.jpg
+value=2.765
+rarity=U
+type=Sorcery
+cost={2}{G}
+timing=main
+requires_groovy_code

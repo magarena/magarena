@@ -1,0 +1,12 @@
+name=Pilgrim's Eye
+url=http://magiccards.info/c13/en/253.html
+image=http://mtgimage.com/card/pilgrim's%20eye.jpg
+value=2.875
+rarity=C
+type=Artifact,Creature
+subtype=Thopter
+cost={3}
+pt=1/1
+ability=flying
+timing=artifact
+requires_groovy_code=Civic Wayfinder

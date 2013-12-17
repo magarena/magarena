@@ -1,0 +1,12 @@
+name=Silkwing Scout
+url=http://magiccards.info/di/en/31.html
+image=http://mtgimage.com/card/silkwing%20scout.jpg
+value=2.468
+rarity=C
+type=Creature
+subtype=Faerie,Scout
+cost={2}{U}
+pt=2/1
+ability=flying
+timing=main
+requires_groovy_code=Dawntreader Elk
