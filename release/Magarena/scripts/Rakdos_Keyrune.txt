@@ -1,0 +1,10 @@
+name=Rakdos Keyrune
+url=http://magiccards.info/rtr/en/232.html
+image=http://mtgimage.com/card/rakdos%20keyrune.jpg
+value=3.364
+rarity=U
+type=Artifact
+cost={3}
+ability=tap add mana {B} or {R}
+timing=artifact
+requires_groovy_code

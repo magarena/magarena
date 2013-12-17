@@ -1,0 +1,11 @@
+name=Bequeathal
+url=http://magiccards.info/ex/en/106.html
+image=http://mtgimage.com/card/bequeathal.jpg
+value=4.026
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+enchant=pump,creature
+timing=enchantment
+requires_groovy_code

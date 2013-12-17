@@ -1,0 +1,10 @@
+name=Gruul Keyrune
+url=http://magiccards.info/gtc/en/230.html
+image=http://mtgimage.com/card/gruul%20keyrune.jpg
+value=3.085
+rarity=U
+type=Artifact
+cost={3}
+ability=tap add mana {R} or {G}
+timing=artifact
+requires_groovy_code
