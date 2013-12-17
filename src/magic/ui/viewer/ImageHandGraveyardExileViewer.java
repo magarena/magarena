@@ -34,10 +34,10 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         tabSelector=new TabSelector(this,true);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Hand : "+playerName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+playerName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+opponentName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
+        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Hand : "+opponentName);
+        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+opponentName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+opponentName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Other : "+playerName);
         add(tabSelector,BorderLayout.WEST);
 
         cardListViewer=new ImageCardListViewer(controller);
