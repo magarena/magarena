@@ -8,3 +8,4 @@ subtype=Elephant
 cost={6}{G}{G}
 pt=9/9
 timing=main
+requires_groovy_code
