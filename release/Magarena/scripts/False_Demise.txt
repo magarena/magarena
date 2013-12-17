@@ -8,4 +8,4 @@ subtype=Aura
 cost={2}{U}
 enchant=gain control,creature
 timing=enchantment
-requires_groovy_code Unhallowed Pact
+requires_groovy_code=Unhallowed Pact

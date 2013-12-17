@@ -12,4 +12,4 @@ given_type=Creature
 given_subtype=Ooze
 set_pt=3/3
 timing=enchantment
-requires_groovy_code Wind Zendikon
+requires_groovy_code=Wind Zendikon

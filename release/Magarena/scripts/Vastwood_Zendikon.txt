@@ -12,4 +12,4 @@ given_subtype=Elemental
 given_color=g
 set_pt=6/4
 timing=enchantment
-requires_groovy_code Wind Zendikon
+requires_groovy_code=Wind Zendikon

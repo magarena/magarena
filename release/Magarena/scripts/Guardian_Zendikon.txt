@@ -13,4 +13,4 @@ given_color=w
 given_ability=defender
 set_pt=2/6
 timing=enchantment
-requires_groovy_code Wind Zendikon
+requires_groovy_code=Wind Zendikon

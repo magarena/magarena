@@ -9,4 +9,4 @@ cost={4}{U}
 enchant=gain control,creature
 ability=dies effect Return SN from the graveyard to its owner's hand.
 timing=enchantment
-requires_groovy_code Unhallowed Pact
+requires_groovy_code=Unhallowed Pact

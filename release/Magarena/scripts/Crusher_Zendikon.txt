@@ -13,4 +13,4 @@ given_color=r
 given_ability=trample
 set_pt=4/2
 timing=enchantment
-requires_groovy_code Wind Zendikon
+requires_groovy_code=Wind Zendikon

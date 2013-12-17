@@ -9,4 +9,4 @@ cost={1}{B}{B}
 timing=enchantment
 enchant=pump,pos creature
 given_ability=pay {B}:SN gets +1/+1 until end of turn.
-requires_groovy_code Unhallowed Pact
+requires_groovy_code=Unhallowed Pact
