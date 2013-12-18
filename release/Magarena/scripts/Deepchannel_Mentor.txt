@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={5}{U}
 pt=2/2
-ability=lord blue creatures you control gain unblockable
+ability=lord blue creatures you control have unblockable
 timing=main
