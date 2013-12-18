@@ -8,7 +8,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{3}"),
-				new MagicTapEvent(source), 
+                new MagicTapEvent(source), 
             ];
         }
 

@@ -14,7 +14,7 @@
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY,
-				MagicPlayMod.TAPPED
+                MagicPlayMod.TAPPED
             ));
         }
     }
