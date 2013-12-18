@@ -1,0 +1,11 @@
+name=Talas Warrior
+url=http://magiccards.info/po2/en/53.html
+image=http://mtgimage.com/card/talas%20warrior.jpg
+value=4.351
+rarity=R
+type=Creature
+subtype=Human,Pirate,Warrior
+cost={1}{U}{U}
+pt=2/2
+ability=unblockable
+timing=main

@@ -1,0 +1,11 @@
+name=Deepchannel Mentor
+url=http://magiccards.info/shm/en/35.html
+image=http://mtgimage.com/card/deepchannel%20mentor.jpg
+value=3.6
+rarity=U
+type=Creature
+subtype=Merfolk,Rogue
+cost={5}{U}
+pt=2/2
+ability=lord blue creatures you control gain unblockable
+timing=main
