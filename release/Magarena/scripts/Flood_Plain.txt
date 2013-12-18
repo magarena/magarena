@@ -1,0 +1,9 @@
+name=Flood Plain
+url=http://magiccards.info/ddi/en/34.html
+image=http://mtgimage.com/card/flood%20plain.jpg
+value=4.033
+rarity=U
+type=Land
+ability=enters tapped
+timing=land
+requires_groovy_code
