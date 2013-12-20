@@ -1,0 +1,11 @@
+name=Llanowar Augur
+url=http://magiccards.info/fut/en/129.html
+image=http://magiccards.info/scans/en/fut/129.jpg
+value=3.683
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={G}
+pt=0/3
+timing=main
+requires_groovy_code
