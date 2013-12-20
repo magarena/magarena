@@ -5,6 +5,5 @@ value=4.149
 rarity=R
 type=Legendary,Artifact
 cost={7}
-ability=graveyard to library
+ability=graveyard to library;pay {W}{U}{B}{R}{G}:Exile target permanent.
 timing=artifact
-requires_groovy_code
