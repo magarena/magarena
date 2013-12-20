@@ -1,0 +1,11 @@
+name=Loam Dweller
+url=http://magiccards.info/bok/en/134.html
+image=http://mtgimage.com/card/loam%20dweller.jpg
+value=3.461
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{G}
+pt=2/2
+timing=main
+requires_groovy_code

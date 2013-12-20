@@ -1,0 +1,11 @@
+name=Undying Beast
+url=http://magiccards.info/po/en/36.html
+image=http://mtgimage.com/card/undying%20beast.jpg
+value=2.045
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{B}
+pt=3/2
+timing=main
+requires_groovy_code=Dark Revenant

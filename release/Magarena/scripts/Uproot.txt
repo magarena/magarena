@@ -1,0 +1,10 @@
+name=Uproot
+url=http://magiccards.info/bok/en/149.html
+image=http://mtgimage.com/card/uproot.jpg
+value=2.192
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={3}{G}
+timing=main
+requires_groovy_code
