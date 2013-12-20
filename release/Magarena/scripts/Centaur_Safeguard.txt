@@ -1,0 +1,11 @@
+name=Centaur Safeguard
+url=http://magiccards.info/rav/en/244.html
+image=http://mtgimage.com/card/centaur%20safeguard.jpg
+value=2.643
+rarity=C
+type=Creature
+subtype=Centaur,Warrior
+cost={2}{G/W}
+pt=3/1
+ability=dies effect PN may gain 3 life.
+timing=main
