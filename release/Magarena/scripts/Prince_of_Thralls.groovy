@@ -5,7 +5,7 @@
             return (otherPermanent.isEnemy(permanent)) ?
                 new MagicEvent(
                     permanent,
-					otherPermanent.getController(),
+                    otherPermanent.getController(),
                     new MagicMayChoice(),
                     otherPermanent.getCard(),
                     this,
@@ -18,8 +18,8 @@
             if (event.isYes()) {
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(),-3));
             }else{
-				game.doAction(new MagicReanimateAction(event.getRefCard(), event.getPermanent().getController()));
-			}
+                game.doAction(new MagicReanimateAction(event.getRefCard(), event.getPermanent().getController()));
+            }
         }
     }
 ]
