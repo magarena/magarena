@@ -2,7 +2,7 @@
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Main),
         "Card"
-	){
+    ){
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
