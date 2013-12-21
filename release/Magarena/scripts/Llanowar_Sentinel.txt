@@ -1,0 +1,11 @@
+name=Llanowar Sentinel
+url=http://magiccards.info/10e/en/275.html
+image=http://magiccards.info/scans/en/10e/275.jpg
+value=3.903
+rarity=C
+type=Creature
+subtype=Elf
+cost={2}{G}
+pt=2/3
+timing=main
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Faerie Harbinger
+url=http://magiccards.info/lw/en/61.html
+image=http://magiccards.info/scans/en/lw/61.jpg
+value=3.128
+rarity=U
+type=Creature
+subtype=Faerie,Wizard
+cost={3}{U}
+pt=2/2
+ability=flash;flying
+timing=main
+requires_groovy_code

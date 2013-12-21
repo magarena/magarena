@@ -1,0 +1,11 @@
+name=Flamekin Harbinger
+url=http://magiccards.info/pch/en/53.html
+image=http://magiccards.info/scans/en/pch/53.jpg
+value=3.947
+rarity=U
+type=Creature
+subtype=Elemental,Shaman
+cost={R}
+pt=1/1
+timing=main
+requires_groovy_code
