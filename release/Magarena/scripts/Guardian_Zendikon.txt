@@ -1,0 +1,16 @@
+name=Guardian Zendikon
+url=http://magiccards.info/wwk/en/6.html
+image=http://mtgimage.com/card/guardian%20zendikon.jpg
+value=2.509
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+enchant=pump,pos land
+given_type=Creature
+given_subtype=Wall
+given_color=w
+given_ability=defender
+set_pt=2/6
+timing=enchantment
+requires_groovy_code=Wind Zendikon

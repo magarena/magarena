@@ -1,0 +1,9 @@
+name=Moonlit Wake
+url=http://magiccards.info/mm/en/29.html
+image=http://mtgimage.com/card/moonlit%20wake.jpg
+value=3.054
+rarity=U
+type=Enchantment
+cost={2}{W}
+timing=enchantment
+requires_groovy_code

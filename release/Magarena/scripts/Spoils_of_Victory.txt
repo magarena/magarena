@@ -1,0 +1,9 @@
+name=Spoils of Victory
+url=http://magiccards.info/c13/en/172.html
+image=http://mtgimage.com/card/spoils%20of%20victory.jpg
+value=3.643
+rarity=C
+type=Sorcery
+cost={2}{G}
+timing=main
+requires_groovy_code

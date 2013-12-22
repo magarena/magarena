@@ -1,0 +1,11 @@
+name=Quirion Trailblazer
+url=http://magiccards.info/in/en/205.html
+image=http://mtgimage.com/card/quirion%20trailblazer.jpg
+value=2.423
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={3}{G}
+pt=1/2
+timing=main
+requires_groovy_code=Farhaven Elf

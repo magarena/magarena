@@ -1,0 +1,9 @@
+name=Reito Lantern
+url=http://magiccards.info/chk/en/267.html
+image=http://mtgimage.com/card/reito%20lantern.jpg
+value=2.855
+rarity=U
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code

@@ -1,4 +1,4 @@
-name=Kongming, "Sleeping Dragon"
+name=Kongming, Sleeping Dragon
 url=http://magiccards.info/c13/en/16.html
 image=http://mtgimage.com/card/Kongming,%20Sleeping%20Dragon.jpg
 value=4.250

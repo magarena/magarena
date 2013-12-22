@@ -1,0 +1,16 @@
+name=Wind Zendikon
+url=http://magiccards.info/wwk/en/46.html
+image=http://mtgimage.com/card/wind%20zendikon.jpg
+value=4.146
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+enchant=pump,pos land
+given_ability=flying
+given_color=u
+given_type=Creature
+given_subtype=Elemental
+set_pt=2/2
+timing=enchantment
+requires_groovy_code

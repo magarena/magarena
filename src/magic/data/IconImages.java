@@ -101,6 +101,17 @@ public class IconImages {
     public static final ImageIcon TRAMPLE=loadIcon("trample.png");
     public static final ImageIcon STRIKE=loadIcon("strike.png");
     public static final ImageIcon DEATHTOUCH=loadIcon("deathtouch.png");
+    public static final ImageIcon PROTARTIFACT=loadIcon("protartifact.png");
+    public static final ImageIcon PROTBLACK=loadIcon("protblack.png");
+    public static final ImageIcon PROTBLUE=loadIcon("protblue.png");
+    public static final ImageIcon PROTGREEN=loadIcon("protgreen.png");
+    public static final ImageIcon PROTLAND=loadIcon("protland.png");
+    public static final ImageIcon PROTRED=loadIcon("protred.png");
+    public static final ImageIcon PROTWHITE=loadIcon("protwhite.png");
+    public static final ImageIcon DEFENDER=loadIcon("defender.png");
+    public static final ImageIcon VIGILANCE=loadIcon("vigilance.png");
+    public static final ImageIcon DOUBLESTRIKE=loadIcon("doublestrike.png");
+    public static final ImageIcon INFECT=loadIcon("infect.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);

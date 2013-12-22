@@ -1,0 +1,11 @@
+name=Treefolk Harbinger
+url=http://magiccards.info/lw/en/239.html
+image=http://magiccards.info/scans/en/lw/239.jpg
+value=4.184
+rarity=U
+type=Creature
+subtype=Treefolk,Druid
+cost={G}
+pt=0/3
+timing=main
+requires_groovy_code

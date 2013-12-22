@@ -1,0 +1,9 @@
+name=Traveler's Amulet
+url=http://magiccards.info/ths/en/221.html
+image=http://mtgimage.com/card/traveler's%20amulet.jpg
+value=3.136
+rarity=C
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code

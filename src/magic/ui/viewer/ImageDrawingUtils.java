@@ -82,8 +82,7 @@ public class ImageDrawingUtils {
             g.drawImage(IconImages.FLYING.getImage(),ax,ay,observer);
             ax+=16;
         }
-        if (abilityFlags.contains(MagicAbility.FirstStrike)||
-            abilityFlags.contains(MagicAbility.DoubleStrike)) {
+        if (abilityFlags.contains(MagicAbility.FirstStrike)) {
             g.drawImage(IconImages.STRIKE.getImage(),ax,ay,observer);
             ax+=16;
         }
@@ -91,9 +90,52 @@ public class ImageDrawingUtils {
             g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,observer);
             ax+=16;
         }
-        if (abilityFlags.contains(MagicAbility.Deathtouch)||
-            abilityFlags.contains(MagicAbility.Wither)||
+        if (abilityFlags.contains(MagicAbility.Wither)||
             abilityFlags.contains(MagicAbility.Infect)) {
+            g.drawImage(IconImages.INFECT.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromBlack)) {
+            g.drawImage(IconImages.PROTBLACK.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromBlue)) {
+            g.drawImage(IconImages.PROTBLUE.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromGreen)) {
+            g.drawImage(IconImages.PROTGREEN.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromRed)) {
+            g.drawImage(IconImages.PROTRED.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromWhite)) {
+            g.drawImage(IconImages.PROTWHITE.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromArtifacts)) {
+            g.drawImage(IconImages.PROTARTIFACT.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromLands)) {
+            g.drawImage(IconImages.PROTLAND.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Defender)) {
+            g.drawImage(IconImages.DEFENDER.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Vigilance)) {
+            g.drawImage(IconImages.VIGILANCE.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.DoubleStrike)) {
+            g.drawImage(IconImages.DOUBLESTRIKE.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Deathtouch)) {
             g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,observer);
             ax+=16;
         }

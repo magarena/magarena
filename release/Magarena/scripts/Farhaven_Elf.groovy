@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN may search his or her library for a basic land card and put that card onto the battlefield tapped, then shuffle his or her library."
+                "PN may search his or her library for a basic land card and put that card onto the battlefield tapped, then shuffles his or her library."
             );
         }
         @Override

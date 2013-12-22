@@ -1,0 +1,12 @@
+name=Merrow Harbinger
+url=http://magiccards.info/lw/en/73.html
+image=http://magiccards.info/scans/en/lw/73.jpg
+value=3.194
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={3}{U}
+pt=2/3
+ability=islandwalk
+timing=main
+requires_groovy_code

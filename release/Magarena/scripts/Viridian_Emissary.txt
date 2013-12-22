@@ -1,0 +1,11 @@
+name=Viridian Emissary
+url=http://magiccards.info/pc2/en/80.html
+image=http://mtgimage.com/card/viridian%20emissary.jpg
+value=3.562
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={1}{G}
+pt=2/1
+timing=main
+requires_groovy_code

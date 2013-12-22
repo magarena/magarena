@@ -1,0 +1,11 @@
+name=False Demise
+url=http://magiccards.info/mm/en/80.html
+image=http://mtgimage.com/card/false%20demise.jpg
+value=4.181
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+enchant=gain control,creature
+timing=enchantment
+requires_groovy_code=Unhallowed Pact

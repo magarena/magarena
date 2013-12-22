@@ -134,6 +134,22 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
     
+    public static MagicStatic genPTSetStatic(final int givenPower, final int givenToughness) {
+        return new MagicStatic(MagicLayer.SetPT) {
+            @Override
+            public void modPowerToughness(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+                pt.set(givenPower, givenToughness);
+            }
+            @Override
+            public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return MagicStatic.acceptLinked(game, source, target);
+            }
+        };
+    }
+    
     public static MagicStatic genABStatic(final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
         return new MagicStatic(
             MagicLayer.Ability,

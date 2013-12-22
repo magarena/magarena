@@ -1,0 +1,11 @@
+name=Dawntreader Elk
+url=http://magiccards.info/dka/en/111.html
+image=http://mtgimage.com/card/dawntreader%20elk.jpg
+value=3.628
+rarity=C
+type=Creature
+subtype=Elk
+cost={1}{G}
+pt=2/2
+timing=main
+requires_groovy_code

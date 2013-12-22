@@ -1,0 +1,8 @@
+name=Bad River
+url=http://magiccards.info/mr/en/289.html
+image=http://mtgimage.com/card/bad%20river.jpg
+value=3.093
+rarity=U
+type=Land
+timing=land
+requires_groovy_code

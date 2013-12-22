@@ -1,0 +1,11 @@
+name=Vectis Agents
+url=http://magiccards.info/cfx/en/131.html
+image=http://mtgimage.com/card/vectis%20agents.jpg
+value=2.214
+rarity=C
+type=Artifact,Creature
+subtype=Human,Rogue
+cost={3}{U}{B}
+pt=4/3
+ability=pay {U}{B}:SN gets -2/-0 and gains unblockable until end of turn.
+timing=artifact

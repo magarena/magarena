@@ -1,0 +1,11 @@
+name=Skyshroud Poacher
+url=http://magiccards.info/ne/en/119.html
+image=http://magiccards.info/scans/en/ne/119.jpg
+value=4.367
+rarity=R
+type=Creature
+subtype=Human,Rebel
+cost={2}{G}{G}
+pt=2/2
+timing=main
+requires_groovy_code

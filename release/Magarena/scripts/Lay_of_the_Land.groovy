@@ -5,8 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN searches his or her library for a basic land card, reveal it, " + 
-                "put it into his or her hand, then shuffle his or her library."
+                "PN searches his or her library for a basic land card, reveals it, " + 
+                "puts it into his or her hand, then shuffles his or her library."
             );
         }
         @Override

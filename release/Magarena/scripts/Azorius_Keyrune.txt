@@ -1,0 +1,10 @@
+name=Azorius Keyrune
+url=http://magiccards.info/c13/en/236.html
+image=http://mtgimage.com/card/azorius%20keyrune.jpg
+value=3.049
+rarity=U
+type=Artifact
+cost={3}
+ability=tap add mana {W} or {U}
+timing=artifact
+requires_groovy_code

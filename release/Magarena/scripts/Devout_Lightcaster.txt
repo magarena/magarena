@@ -7,6 +7,5 @@ type=Creature
 subtype=Kor,Cleric
 cost={W}{W}{W}
 pt=2/2
-ability=protection from black
+ability=protection from black;enters effect Exile target black permanent.
 timing=main
-requires_groovy_code

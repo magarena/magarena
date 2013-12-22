@@ -1,13 +1,14 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Removal),
-        "Exile"
+        new MagicActivationHints(MagicTiming.Tapping),
+        "Untap"
     ) {
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source, "{W}{U}{B}{R}{G}")
+                new MagicTapEvent(source),
+                new MagicSacrificeEvent(source)
             ];
         }
 
@@ -15,19 +16,20 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PERMANENT,
-                MagicExileTargetPicker.create(),
                 this,
-                "Exile target permanent."
+                "Untap all forest."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
-            });
+            
+            final Collection<MagicPermanent> targets = game.filterPermanents(
+                    event.getPlayer(),
+                    MagicTargetFilter.TARGET_FOREST);
+            for (final MagicPermanent target : targets) {
+                game.doAction(new MagicUntapAction(target));
+            }
         }
     }
 ]

@@ -1,0 +1,15 @@
+name=Vastwood Zendikon
+url=http://magiccards.info/wwk/en/117.html
+image=http://mtgimage.com/card/vastwood%20zendikon.jpg
+value=2.587
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={4}{G}
+enchant=pump,pos land
+given_type=Creature
+given_subtype=Elemental
+given_color=g
+set_pt=6/4
+timing=enchantment
+requires_groovy_code=Wind Zendikon

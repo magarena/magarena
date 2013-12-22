@@ -1,0 +1,12 @@
+name=Dark Revenant
+url=http://magiccards.info/rtr/en/61.html
+image=http://mtgimage.com/card/dark%20revenant.jpg
+value=1.833
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{B}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code

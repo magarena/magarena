@@ -1,0 +1,11 @@
+name=Sylvan Ranger
+url=http://magiccards.info/ddh/en/8.html
+image=http://mtgimage.com/card/sylvan%20ranger.jpg
+value=3.472
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={1}{G}
+pt=1/1
+timing=main
+requires_groovy_code=Civic Wayfinder

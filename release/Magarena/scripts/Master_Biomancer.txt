@@ -1,0 +1,11 @@
+name=Master Biomancer
+url=http://magiccards.info/gtc/en/176.html
+image=http://magiccards.info/scans/en/gtc/176.jpg
+value=4.163
+rarity=M
+type=Creature
+subtype=Elf,Wizard
+cost={2}{G}{U}
+pt=2/4
+timing=main
+requires_groovy_code

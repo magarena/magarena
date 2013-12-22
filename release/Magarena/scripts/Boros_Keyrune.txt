@@ -1,0 +1,10 @@
+name=Boros Keyrune
+url=http://magiccards.info/gtc/en/227.html
+image=http://mtgimage.com/card/boros%20keyrune.jpg
+value=2.915
+rarity=U
+type=Artifact
+cost={3}
+ability=tap add mana {R} or {W}
+timing=artifact
+requires_groovy_code

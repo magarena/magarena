@@ -1,0 +1,11 @@
+name=Prince of Thralls
+url=http://magiccards.info/ala/en/182.html
+image=http://magiccards.info/scans/en/ala/182.jpg
+value=3.728
+rarity=M
+type=Creature
+subtype=Demon
+cost={4}{U}{B}{B}{R}
+pt=7/7
+timing=main
+requires_groovy_code

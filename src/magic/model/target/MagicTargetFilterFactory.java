@@ -168,6 +168,7 @@ public class MagicTargetFilterFactory {
         single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
         single.put("Goblin permanent card from your library", TARGET_GOBLIN_CARD_FROM_LIBRARY);
+        single.put("Elf permanent card from your library", TARGET_ELF_CARD_FROM_LIBRARY);
     }
 
     public static MagicTargetFilter<MagicPermanent> build(final String arg) {

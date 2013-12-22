@@ -18,9 +18,11 @@
                 event.processTargetCard(game, {
                     final MagicCard card ->
                     game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                    final MagicPlayCardAction action = new MagicPlayCardAction(card,event.getPlayer());
-                    game.doAction(action);
-                    game.doAction(new MagicTapAction(action.getPermanent(),false));
+                    game.doAction(new MagicPlayCardAction(
+                        card,
+                        event.getPlayer(),
+                        MagicPlayMod.TAPPED
+                    ));
                 });
             }
         }

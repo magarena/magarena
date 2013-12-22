@@ -1,0 +1,10 @@
+name=Simic Keyrune
+url=http://magiccards.info/gtc/en/237.html
+image=http://mtgimage.com/card/simic%20keyrune.jpg
+value=3.081
+rarity=U
+type=Artifact
+cost={3}
+ability=tap add mana {G} or {U}
+timing=artifact
+requires_groovy_code
