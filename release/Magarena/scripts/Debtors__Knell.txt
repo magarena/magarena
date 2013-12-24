@@ -5,5 +5,5 @@ value=4.490
 rarity=R
 type=Enchantment
 cost={4}{W/B}{W/B}{W/B}
+ability=your upkeep effect return target creature card from a graveyard to the battlefield. 
 timing=enchantment
-requires_groovy_code

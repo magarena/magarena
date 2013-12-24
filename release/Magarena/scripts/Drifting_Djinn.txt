@@ -7,6 +7,5 @@ type=Creature
 subtype=Djinn
 cost={4}{U}{U}
 pt=5/5
-ability=flying;cycling {2}
+ability=flying;cycling {2};your upkeep effect PN may pay {1}{U}. If you don't, sacrifice SN.
 timing=main
-requires_groovy_code

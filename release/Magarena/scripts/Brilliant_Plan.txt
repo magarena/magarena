@@ -5,5 +5,5 @@ value=2.462
 rarity=U
 type=Sorcery
 cost={4}{U}
+effect=PN draws three cards.
 timing=draw
-requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Dauthi,Minion
 cost={2}{B}
 pt=1/1
+ability=pay {T}:Target creature gains shadow until end of turn.
 timing=main
-requires_groovy_code
