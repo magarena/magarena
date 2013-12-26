@@ -112,6 +112,7 @@ public class IconImages {
     public static final ImageIcon VIGILANCE=loadIcon("vigilance.png");
     public static final ImageIcon DOUBLESTRIKE=loadIcon("doublestrike.png");
     public static final ImageIcon INFECT=loadIcon("infect.png");
+    public static final ImageIcon WITHER=loadIcon("wither.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
