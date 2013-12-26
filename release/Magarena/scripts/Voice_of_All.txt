@@ -1,0 +1,12 @@
+name=Voice of All
+url=http://magiccards.info/cmd/en/35.html
+image=http://mtgimage.com/card/voice%20of%20all.jpg
+value=4.115
+rarity=R
+type=Creature
+subtype=Angel
+cost={2}{W}{W}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code=Order of the Stars
