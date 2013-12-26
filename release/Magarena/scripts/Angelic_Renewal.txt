@@ -1,0 +1,9 @@
+name=Angelic Renewal
+url=http://magiccards.info/wl/en/120.html
+image=http://mtgimage.com/card/angelic%20renewal.jpg
+value=4.491
+rarity=C
+type=Enchantment
+cost={1}{W}
+timing=enchantment
+requires_groovy_code

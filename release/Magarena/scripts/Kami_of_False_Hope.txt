@@ -1,0 +1,11 @@
+name=Kami of False Hope
+url=http://magiccards.info/bok/en/10.html
+image=http://mtgimage.com/card/kami%20of%20false%20hope.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Spirit
+cost={W}
+pt=1/1
+timing=main
+requires_groovy_code

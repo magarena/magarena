@@ -1,0 +1,12 @@
+name=Order of the Stars
+url=http://magiccards.info/gp/en/13.html
+image=http://mtgimage.com/card/order%20of%20the%20stars.jpg
+value=3.727
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=0/1
+ability=defender
+timing=main
+requires_groovy_code

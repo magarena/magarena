@@ -1,0 +1,11 @@
+name=Mistveil Plains
+url=http://magiccards.info/shm/en/275.html
+image=http://mtgimage.com/card/mistveil%20plains.jpg
+value=3.009
+rarity=U
+type=Land
+subtype=Plains
+mana=w3
+ability=tap add mana {W};enters tapped
+timing=land
+requires_groovy_code
