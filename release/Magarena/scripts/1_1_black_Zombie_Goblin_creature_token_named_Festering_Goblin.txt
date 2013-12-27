@@ -1,0 +1,10 @@
+name=1/1 black Zombie Goblin creature token named Festering Goblin
+token=Festering Goblin
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=88009&amp;d=1239793138
+value=3.625
+type=Creature
+subtype=Goblin,Zombie
+color=b
+cost={0}
+ability=dies effect Target creature gets -1/-1 until end of turn.
+pt=1/1
