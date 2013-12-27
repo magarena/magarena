@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_P,
+                MagicTargetChoice.POS_TARGET_PERMANENT,
                 this,
                 "Regenerate target permanent\$."
             );
