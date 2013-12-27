@@ -1,0 +1,12 @@
+name=Skirk Ridge Exhumer
+url=http://magiccards.info/fut/en/77.html
+image=http://magiccards.info/scans/en/fut/77.jpg
+value=3.840
+rarity=U
+type=Creature
+subtype=Zombie,Spellshaper
+cost={1}{B}
+pt=1/1
+ability=pay {B}, {T}, Discard a card: PN puts a 1/1 black Zombie Goblin creature token named Festering Goblin onto the battlefield.
+timing=main
+
