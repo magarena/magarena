@@ -1,0 +1,12 @@
+name=Goldmeadow Harrier
+url=http://magiccards.info/ddf/en/3.html
+image=http://magiccards.info/scans/en/ddf/3.jpg
+value=4.134
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={W}
+pt=1/1
+ability=pay {W},{T}: Tap target creature.
+timing=main
+
