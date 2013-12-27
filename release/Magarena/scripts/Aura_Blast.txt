@@ -1,5 +1,5 @@
 name=Aura Blast
-url=http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=26382
+url=http://magiccards.info/ps/en/1.html
 image=http://mtgimage.com/card/aura%20blast.jpg
 value=3.2
 rarity=C
