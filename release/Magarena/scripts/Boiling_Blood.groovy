@@ -17,7 +17,6 @@
                 final MagicPermanent creature ->
                 game.doAction(new MagicGainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
                 game.doAction(new MagicDrawAction(event.getPlayer()));
-                }
             });
         }
     }
