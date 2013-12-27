@@ -1,0 +1,11 @@
+name=Brutal Nightstalker
+url=http://magiccards.info/po2/en/4.html
+image=http://mtgimage.com/card/brutal%20nightstalker.jpg
+value=1.78
+rarity=U
+type=Creature
+subtype=Nightstalker
+cost={3}{B}{B}
+pt=3/2
+ability=enters effect PN may have Target opponent discards a card.
+timing=main

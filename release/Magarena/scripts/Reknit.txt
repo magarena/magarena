@@ -1,0 +1,9 @@
+name=Reknit
+url=http://magiccards.info/shm/en/236.html
+image=http://mtgimage.com/card/reknit.jpg
+value=3.29
+rarity=U
+type=Instant
+cost={1}{G/W}
+timing=pump
+requires_groovy_code

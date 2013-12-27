@@ -6,4 +6,4 @@ rarity=U
 type=Instant
 cost={G}{W}
 timing=draw
-requires_groovy_code
+effect= Target player gains 7 life.

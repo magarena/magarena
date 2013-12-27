@@ -1,0 +1,9 @@
+name=Welding Jar
+url=http://magiccards.info/mi/en/274.html
+image=http://mtgimage.com/card/welding%20jar.jpg
+value=4.153
+rarity=C
+type=Artifact
+cost={0}
+timing=artifact
+requires_groovy_code=Pteron Ghost

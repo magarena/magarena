@@ -7,6 +7,5 @@ type=Creature
 subtype=Insect
 cost={3}{G}
 pt=1/1
-ability=flying;regenerate {G}
+ability=flying;regenerate {G};pay {G}{Once}:Untap SN.
 timing=main
-requires_groovy_code

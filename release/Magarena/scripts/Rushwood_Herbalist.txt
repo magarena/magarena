@@ -1,0 +1,11 @@
+name=Rushwood Herbalist
+url=http://magiccards.info/mm/en/265.html
+image=http://mtgimage.com/card/rushwood%20herbalist.jpg
+value=2.208
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={2}{G}
+pt=2/2
+timing=main
+requires_groovy_code

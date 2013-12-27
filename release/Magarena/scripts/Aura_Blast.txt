@@ -1,0 +1,9 @@
+name=Aura Blast
+url=http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=26382
+image=http://mtgimage.com/card/aura%20blast.jpg
+value=3.2
+rarity=C
+type=Instant
+cost={1}{W}
+timing=removal
+requires_groovy_code

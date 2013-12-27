@@ -1,0 +1,9 @@
+name=Molting Skin
+url=http://magiccards.info/sok/en/138.html
+image=http://mtgimage.com/card/molting%20skin.jpg
+value=3.129
+rarity=U
+type=Enchantment
+cost={2}{G}
+timing=enchantment
+requires_groovy_code=Broken Fall

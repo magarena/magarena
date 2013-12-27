@@ -1,0 +1,9 @@
+name=Disrupt
+url=http://magiccards.info/in/es/51.html
+image=http://mtgimage.com/card/disrupt.jpg
+value=4.314
+rarity=U
+type=Instant
+cost={U}
+timing=counter
+requires_groovy_code

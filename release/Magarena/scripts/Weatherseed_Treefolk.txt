@@ -8,5 +8,4 @@ subtype=Treefolk
 cost={2}{G}{G}{G}
 pt=5/3
 timing=main
-ability=trample
-requires_groovy_code
+ability=trample;dies effect Return SN from the graveyard to its owner's hand.

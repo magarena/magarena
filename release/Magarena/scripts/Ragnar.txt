@@ -1,0 +1,11 @@
+name=Ragnar
+url=http://magiccards.info/lg/en/290.html
+image=http://mtgimage.com/card/ragnar.jpg
+value=3.125
+rarity=U
+type=Legendary,Creature
+subtype=Human,Cleric
+cost={G}{W}{U}
+pt=2/2
+timing=main
+requires_groovy_code

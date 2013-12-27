@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
-                new MagicWeakenTargetPicker(1,1),
+                new MagicWeakenTargetPicker(1,0),
                 this,
                 "Target creature\$ gets -1/-0 until end of turn. Draw a card."
             );

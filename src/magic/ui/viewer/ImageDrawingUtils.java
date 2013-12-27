@@ -90,9 +90,12 @@ public class ImageDrawingUtils {
             g.drawImage(IconImages.TRAMPLE.getImage(),ax,ay,observer);
             ax+=16;
         }
-        if (abilityFlags.contains(MagicAbility.Wither)||
-            abilityFlags.contains(MagicAbility.Infect)) {
+        if (abilityFlags.contains(MagicAbility.Infect)) {
             g.drawImage(IconImages.INFECT.getImage(),ax,ay,observer);
+            ax+=16;
+        }
+        if (abilityFlags.contains(MagicAbility.Wither)) {
+            g.drawImage(IconImages.WITHER.getImage(),ax,ay,observer);
             ax+=16;
         }
         if (abilityFlags.contains(MagicAbility.ProtectionFromBlack)) {

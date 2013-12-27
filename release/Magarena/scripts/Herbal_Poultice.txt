@@ -1,0 +1,9 @@
+name=Herbal Poultice
+url=http://magiccards.info/lw/en/257.html
+image=http://mtgimage.com/card/herbal%20poultice.jpg
+value=2.203
+rarity=C
+type=Artifact
+cost={0}
+timing=artifact
+requires_groovy_code
