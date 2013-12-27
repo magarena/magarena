@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
             return new MagicEvent(
-                source,
+                permanent,
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicRegenerateTargetPicker.getInstance(),
                 this,
