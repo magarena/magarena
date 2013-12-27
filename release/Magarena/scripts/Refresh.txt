@@ -1,0 +1,9 @@
+name=Refresh
+url=http://magiccards.info/od/pt/264.html
+image=http://mtgimage.com/card/refresh.jpg
+value=1.889
+rarity=C
+type=Instant
+cost={2}{G}
+timing=pump
+requires_groovy_code

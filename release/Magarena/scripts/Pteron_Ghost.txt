@@ -1,0 +1,12 @@
+name=Pteron Ghost
+url=http://magiccards.info/ds/en/10.html
+image=http://mtgimage.com/card/pteron%20ghost.jpg
+value=2.361
+rarity=C
+type=Creature
+subtype=Spirit
+cost={1}{W}
+pt=1/1
+ability=flying
+timing=main
+requires_groovy_code

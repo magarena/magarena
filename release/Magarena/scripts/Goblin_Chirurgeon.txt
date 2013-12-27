@@ -1,0 +1,11 @@
+name=Goblin Chirurgeon
+url=http://magiccards.info/fe/en/110.html
+image=http://mtgimage.com/card/goblin%20chirurgeon.jpg
+value=3.882
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={R}
+pt=0/2
+timing=main
+requires_groovy_code

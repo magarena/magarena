@@ -1,0 +1,11 @@
+name=Niall Silvain
+url=http://magiccards.info/dk/en/45.html
+image=http://mtgimage.com/card/niall%20silvain.jpg
+value=1.218
+rarity=R
+type=Creature
+subtype=Ouphe
+cost={G}{G}{G}
+pt=2/2
+timing=main
+requires_groovy_code

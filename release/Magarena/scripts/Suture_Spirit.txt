@@ -1,0 +1,12 @@
+name=Suture Spirit
+url=http://magiccards.info/eve/en/16.html
+image=http://mtgimage.com/card/suture%20spirit.jpg
+value=2.946
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{W}
+pt=1/1
+ability=flying
+timing=main
+requires_groovy_code

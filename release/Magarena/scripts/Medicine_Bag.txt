@@ -1,0 +1,9 @@
+name=Medicine Bag
+url=http://magiccards.info/ex/en/133.html
+image=http://mtgimage.com/card/medicine%20bag.jpg
+value=1.978
+rarity=U
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code

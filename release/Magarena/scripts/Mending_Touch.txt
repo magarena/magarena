@@ -1,0 +1,9 @@
+name=Mending Touch
+url=http://magiccards.info/dgm/en/44.html
+image=http://mtgimage.com/card/mending%20touch.jpg
+value=2.9
+rarity=C
+type=Instant
+cost={G}
+timing=pump
+requires_groovy_code=Death Ward

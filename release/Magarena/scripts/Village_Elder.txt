@@ -1,0 +1,11 @@
+name=Village Elder
+url=http://magiccards.info/br/en/94.html
+image=http://mtgimage.com/card/village%20elder.jpg
+value=2.324
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code=Tel-Jilad Lifebreather

@@ -1,0 +1,11 @@
+name=Loxodon Mender
+url=http://magiccards.info/mi/en/12.html
+image=http://mtgimage.com/card/loxodon%20mender.jpg
+value=1.194
+rarity=C
+type=Creature
+subtype=Cleric,Elephant
+cost={5}{W}
+pt=3/3
+timing=main
+requires_groovy_code
