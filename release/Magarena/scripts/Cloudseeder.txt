@@ -1,0 +1,12 @@
+name=Cloudseeder
+url=http://magiccards.info/fut/en/33.html
+image=http://magiccards.info/scans/en/fut/33.jpg
+value=2.635
+rarity=U
+type=Creature
+subtype=Faerie,Spellshaper
+cost={1}{U}
+pt=1/1
+ability=flying;pay {U}, {T}, Discard a card: PN puts a 1/1 blue Faerie creature token named Cloud Sprite onto the battlefield.
+timing=main
+
