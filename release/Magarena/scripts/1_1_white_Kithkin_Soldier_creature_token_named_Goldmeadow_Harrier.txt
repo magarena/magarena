@@ -1,0 +1,10 @@
+name=1/1 white Kithkin Soldier creature token named Goldmeadow Harrier
+token=Goldmeadow Harrier
+image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSGoldmeadowHarrier.png
+value=4.134
+type=Creature
+subtype=Kithkin,Soldier
+color=w
+cost={0}
+ability=pay {W},{T}: Tap target creature.
+pt=1/1
