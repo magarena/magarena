@@ -1,6 +1,6 @@
 name=Flamekin Harbinger
 url=http://magiccards.info/pch/en/53.html
-image=http://magiccards.info/scans/en/pch/53.jpg
+image=http://mtgimage.com/card/flamekin%20harbinger.jpg
 value=3.947
 rarity=U
 type=Creature

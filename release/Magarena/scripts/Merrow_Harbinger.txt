@@ -1,6 +1,6 @@
 name=Merrow Harbinger
 url=http://magiccards.info/lw/en/73.html
-image=http://magiccards.info/scans/en/lw/73.jpg
+image=http://mtgimage.com/card/merrow%20harbinger.jpg
 value=3.194
 rarity=U
 type=Creature

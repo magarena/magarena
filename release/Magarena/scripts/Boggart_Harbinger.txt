@@ -1,6 +1,6 @@
 name=Boggart Harbinger
 url=http://magiccards.info/lw/en/102.html
-image=http://magiccards.info/scans/en/lw/102.jpg
+image=http://mtgimage.com/card/boggart%20harbinger.jpg
 value=3.200
 rarity=U
 type=Creature
