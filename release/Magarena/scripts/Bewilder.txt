@@ -1,0 +1,9 @@
+name=Bewilder
+url=http://magiccards.info/ts/en/49.html
+image=http://mtgimage.com/card/bewilder.jpg
+value=1.297
+rarity=C
+type=Instant
+cost={2}{U}
+timing=removal
+requires_groovy_code

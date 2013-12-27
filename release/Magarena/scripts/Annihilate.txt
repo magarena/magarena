@@ -1,0 +1,9 @@
+name=Annihilate
+url=http://magiccards.info/c13/es/68.html
+image=http://mtgimage.com/card/annihilate.jpg
+value=2.974
+rarity=U
+type=Instant
+cost={3}{B}{B}
+timing=removal
+requires_groovy_code
