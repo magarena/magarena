@@ -1,0 +1,9 @@
+name=Dosan's Oldest Chant
+url=http://magiccards.info/sok/en/127.html
+image=http://mtgimage.com/card/dosan's%20oldest%20chant.jpg
+value=2.111
+rarity=C
+type=Sorcery
+cost={4}{G}
+timing=main
+requires_groovy_code

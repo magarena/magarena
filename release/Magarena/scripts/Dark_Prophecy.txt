@@ -1,0 +1,9 @@
+name=Dark Prophecy
+url=http://magiccards.info/m14/en/93.html
+image=http://mtgimage.com/card/dark%20prophecy.jpg
+value=3.902
+rarity=R
+type=Enchantment
+cost={B}{B}{B}
+timing=enchantment
+requires_groovy_code

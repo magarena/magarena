@@ -1,0 +1,11 @@
+name=Femeref Enchantress
+url=http://magiccards.info/vi/en/129.html
+image=http://mtgimage.com/card/femeref%20enchantress.jpg
+value=4.012
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={G}{W}
+pt=1/2
+timing=main
+requires_groovy_code

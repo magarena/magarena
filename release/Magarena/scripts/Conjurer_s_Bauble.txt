@@ -1,0 +1,9 @@
+name=Conjurer's Bauble
+url=http://magiccards.info/5dn/en/112.html
+image=http://mtgimage.com/card/conjurer's%20bauble.jpg
+value=3.636
+rarity=C
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code
