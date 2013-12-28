@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE,
-                MagicShadowTargetPicker.getInstance(),
+                MagicHasteTargetPicker.getInstance(),
                 this,
                 "Target creature\$ gains haste until end of turn. Draw a card."
             );
