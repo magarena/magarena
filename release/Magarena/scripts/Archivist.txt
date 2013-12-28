@@ -1,0 +1,11 @@
+name=Archivist
+url=http://magiccards.info/9ed/en/60.html
+image=http://magiccards.info/scans/en/9ed/60.jpg
+value=3.881
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}{U}
+pt=1/1
+ability=tap : PN draws a card.
+timing=main
