@@ -1,0 +1,9 @@
+name=Remembrance
+url=http://magiccards.info/us/pt/34.html
+image=http://mtgimage.com/card/remembrance.jpg
+value=3.99
+rarity=R
+type=Enchantment
+cost={3}{W}
+timing=enchantment
+requires_groovy_code
