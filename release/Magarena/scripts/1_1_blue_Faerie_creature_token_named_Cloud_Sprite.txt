@@ -1,10 +1,10 @@
 name=1/1 blue Faerie creature token named Cloud Sprite
-image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSCloudSprite.png
 token=Cloud Sprite
-type=Creature
-Subtype=Faerie
-cost={0}
+image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSCloudSprite.png
 value=1
-color=B
-pt=1/1
+type=Creature
+subtype=Faerie
+color=u
+cost={0}
 ability=flying;can't block creatures without flying
+pt=1/1

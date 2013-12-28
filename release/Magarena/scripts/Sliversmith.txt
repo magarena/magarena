@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Spellshaper
 cost={2}
 pt=1/1
-ability=pay {1},{T},Discard a card:PN puts a 1/1 colorless Sliver artifact creature token named Metallic Sliver onto the battlefield.
+ability=pay {1}, {T}, Discard a card: PN puts a 1/1 colorless Sliver artifact creature token named Metallic Sliver onto the battlefield.
 timing=artifact

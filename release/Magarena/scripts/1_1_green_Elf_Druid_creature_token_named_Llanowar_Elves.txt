@@ -1,10 +1,10 @@
 name=1/1 green Elf Druid creature token named Llanowar Elves
+token=Llanowar Elves
 image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSLlanowarElves.png
 value=2
-token=Llanowar Elves
 type=Creature
 subtype=Elf,Druid
+color=g
 cost={0}
-color=G
 ability=tap add mana {G}
 pt=1/1
