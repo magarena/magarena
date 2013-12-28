@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
-                MagicPreventTargetPicker.getInstance(),
+                MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next 1 damage that would be dealt to target creature or player\$ this turn. " +
                 "If that creature is green, prevent 2 damage instead."

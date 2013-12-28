@@ -46,7 +46,7 @@ public class MagicShadowTargetPicker extends MagicTargetPicker<MagicPermanent> {
         return 10 + permanent.getPower();
     }
 
-    public static MagicShadowTargetPicker getInstance() {
+    public static MagicShadowTargetPicker create() {
         return INSTANCE;
     }
 }

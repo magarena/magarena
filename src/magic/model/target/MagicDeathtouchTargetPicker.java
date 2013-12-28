@@ -49,7 +49,7 @@ public class MagicDeathtouchTargetPicker extends MagicTargetPicker<MagicPermanen
         return permanent.getPower() + score;
     }
 
-    public static MagicDeathtouchTargetPicker getInstance() {
+    public static MagicDeathtouchTargetPicker create() {
         return INSTANCE;
     }
 }

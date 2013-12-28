@@ -15,7 +15,7 @@ public class MagicPowerTargetPicker extends MagicTargetPicker<MagicPermanent> {
         return permanent.getPower();
     }
 
-    public static MagicPowerTargetPicker getInstance() {
+    public static MagicPowerTargetPicker create() {
         return INSTANCE;
     }
 }

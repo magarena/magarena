@@ -20,7 +20,7 @@ public class MagicPreventTargetPicker extends MagicTargetPicker<MagicTarget> {
         return 10-permanent.getToughness()+permanent.getDamage()-permanent.getPreventDamage();
     }
 
-    public static MagicPreventTargetPicker getInstance() {
+    public static MagicPreventTargetPicker create() {
         return INSTANCE;
     }
 }

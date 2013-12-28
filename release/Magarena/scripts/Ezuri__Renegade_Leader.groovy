@@ -22,7 +22,7 @@
             return new MagicEvent(
                 source,
                 targetChoice,
-                MagicRegenerateTargetPicker.getInstance(),
+                MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate another target Elf\$."
             );

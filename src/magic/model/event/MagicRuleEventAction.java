@@ -215,7 +215,7 @@ public enum MagicRuleEventAction {
     PreventChosen(
         "prevent the next (?<amount>[0-9]+) damage that would be dealt to (?<choice>[^\\.]*) this turn.",
         MagicTargetHint.Positive, 
-        MagicPreventTargetPicker.getInstance(),
+        MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
         "Prevent"
     ) {
@@ -565,7 +565,7 @@ public enum MagicRuleEventAction {
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
             switch (ability) {
                 case Deathtouch: 
-                    return MagicDeathtouchTargetPicker.getInstance();
+                    return MagicDeathtouchTargetPicker.create();
                 case Lifelink:
                     return MagicLifelinkTargetPicker.create();
                 case FirstStrike:
@@ -768,7 +768,7 @@ public enum MagicRuleEventAction {
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
             switch (ability) {
                 case Deathtouch: 
-                    return MagicDeathtouchTargetPicker.getInstance();
+                    return MagicDeathtouchTargetPicker.create();
                 case Lifelink:
                     return MagicLifelinkTargetPicker.create();
                 case FirstStrike:

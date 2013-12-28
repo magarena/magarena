@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
-                MagicPowerTargetPicker.getInstance(),
+                MagicPowerTargetPicker.create(),
                 this,
                 "Target creature\$ an opponent controls deals damage equal to " +
                 "its power to each other creature that player controls, then " +

@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_GOLEM_YOU_CONTROL,
-                MagicRegenerateTargetPicker.getInstance(),
+                MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate target Golem\$ you control."
             );

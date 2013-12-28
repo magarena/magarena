@@ -19,7 +19,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_FUNGUS_CREATURE,
-                MagicRegenerateTargetPicker.getInstance(),
+                MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate target Fungus\$."
             );

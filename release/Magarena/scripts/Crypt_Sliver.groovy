@@ -16,7 +16,7 @@ def CryptRegen = new MagicPermanentActivation(
         return new MagicEvent(
             source,
             MagicTargetChoice.Positive("target Sliver"),
-            MagicRegenerateTargetPicker.getInstance(),
+            MagicRegenerateTargetPicker.create(),
             this,
             "Regenerate target Sliver\$."
         );

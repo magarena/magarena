@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE,
-                MagicShadowTargetPicker.getInstance(),
+                MagicShadowTargetPicker.create(),
                 this,
                 "Target creature\$ gains shadow until end of turn. Draw a card."
             );

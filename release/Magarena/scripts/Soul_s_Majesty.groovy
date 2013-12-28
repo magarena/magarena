@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                MagicPowerTargetPicker.getInstance(),
+                MagicPowerTargetPicker.create(),
                 this,
                 "Draw cards equal to the power of target creature\$ you control."
             );

@@ -38,7 +38,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_ZOMBIE,
-                MagicRegenerateTargetPicker.getInstance(),
+                MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate target Zombie\$."
             );

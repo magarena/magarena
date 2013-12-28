@@ -21,7 +21,7 @@ public class MagicCountersTargetPicker extends MagicTargetPicker<MagicPermanent>
         return permanent.getController()==player?-score:score;
     }
 
-    public static MagicCountersTargetPicker getInstance() {
+    public static MagicCountersTargetPicker create() {
         return INSTANCE;
     }
 }

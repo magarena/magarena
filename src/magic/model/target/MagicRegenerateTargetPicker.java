@@ -25,7 +25,7 @@ public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanen
         return 0;
     }
 
-    public static MagicRegenerateTargetPicker getInstance() {
+    public static MagicRegenerateTargetPicker create() {
         return INSTANCE;
     }
 }

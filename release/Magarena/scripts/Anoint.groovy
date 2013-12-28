@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_CREATURE,
-                MagicPreventTargetPicker.getInstance(),
+                MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next 3 damage that would be dealt to target creature\$ this turn. " +
                 "If the buyback cost was payed, return SN to its owner's hand as it resolves."

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_CREATURE,
-                MagicPowerTargetPicker.getInstance(),
+                MagicPowerTargetPicker.create(),
                 this,
                 "Put X +1/+1 counters on target creature\$, where X is that creature's power."
             );

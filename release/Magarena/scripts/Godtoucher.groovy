@@ -26,7 +26,7 @@ def CREATURE_POWER_5_OR_MORE = new MagicPermanentFilterImpl() {
                     MagicTargetHint.Positive,
                     "target creature with power 5 or greater"
                 ),
-                MagicPreventTargetPicker.getInstance(),
+                MagicPreventTargetPicker.create(),
                 this,
                 "Prevent all damage that would be dealt to target creature\$ with power 5 or greater this turn."
             );

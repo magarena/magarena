@@ -16,7 +16,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE,
-                MagicRegenerateTargetPicker.getInstance(),
+                MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate target artifact creature\$."
             );

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_CREATURE,
-                MagicDeathtouchTargetPicker.getInstance(),
+                MagicDeathtouchTargetPicker.create(),
                 this,
                 "Target creature\$ gains deathtouch until end of turn. " +
                 "Regenerate it."

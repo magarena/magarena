@@ -12,7 +12,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.TARGET_PERMANENT,
-                MagicCountersTargetPicker.getInstance(),
+                MagicCountersTargetPicker.create(),
                 this,
                 "Remove all counters from target permanent\$."
             );

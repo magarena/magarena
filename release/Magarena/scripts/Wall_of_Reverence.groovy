@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
-                    MagicPowerTargetPicker.getInstance(),
+                    MagicPowerTargetPicker.create(),
                     this,
                     "PN gains life equal to the power of target creature\$ he or she controls."
                 ):
