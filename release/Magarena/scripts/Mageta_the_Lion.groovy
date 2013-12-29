@@ -28,6 +28,9 @@
                     MagicTargetFilter.TARGET_CREATURE,permanent);
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(permanent.getController(),targetFilter);
+            for (final MagicPermanent target : targets) {
+                game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
+                }
             game.doAction(new MagicDestroyAction(targets));
         }
     }
