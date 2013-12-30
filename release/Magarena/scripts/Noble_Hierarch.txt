@@ -1,7 +1,7 @@
 name=Noble Hierarch
 url=http://magiccards.info/cfx/en/87.html
 image=http://mtgimage.com/card/noble%20hierarch.jpg
-value=4.646
+value=4.619
 rarity=R
 type=Creature
 subtype=Human,Druid

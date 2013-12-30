@@ -1,7 +1,7 @@
 name=Leaping Lizard
 url=http://magiccards.info/hl/en/63.html
 image=http://mtgimage.com/card/leaping%20lizard.jpg
-value=3.04
+value=3.040
 rarity=C
 type=Creature
 subtype=Lizard

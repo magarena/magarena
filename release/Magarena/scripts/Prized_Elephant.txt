@@ -1,7 +1,7 @@
 name=Prized Elephant
 url=http://magiccards.info/m13/en/27.html
 image=http://mtgimage.com/card/prized%20elephant.jpg
-value=3.147
+value=3.143
 rarity=U
 type=Creature
 subtype=Elephant

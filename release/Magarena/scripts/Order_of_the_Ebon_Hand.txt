@@ -1,7 +1,7 @@
 name=Order of the Ebon Hand
 url=http://magiccards.info/med/en/78.html
 image=http://mtgimage.com/card/order%20of%20the%20ebon%20hand.jpg
-value=4.311
+value=4.323
 rarity=C
 type=Creature
 subtype=Cleric,Knight

@@ -1,7 +1,7 @@
 name=Sunken Field
 url=http://magiccards.info/pr/en/51.html
 image=http://mtgimage.com/card/sunken%20field.jpg
-value=3.733
+value=3.739
 rarity=U
 type=Enchantment
 subtype=Aura

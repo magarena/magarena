@@ -1,7 +1,7 @@
 name=Bonesplitter Sliver
 url=http://magiccards.info/ts/en/149.html
 image=http://mtgimage.com/card/bonesplitter%20sliver.jpg
-value=3.694
+value=3.670
 rarity=C
 type=Creature
 subtype=Sliver

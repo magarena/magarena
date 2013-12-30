@@ -1,7 +1,7 @@
 name=Vaevictis Asmadi
 url=http://magiccards.info/ch/en/124.html
 image=http://mtgimage.com/card/vaevictis%20asmadi.jpg
-value=3.6
+value=3.596
 rarity=R
 type=Legendary,Creature
 subtype=Elder,Dragon

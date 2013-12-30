@@ -1,7 +1,7 @@
 name=Balshan Collaborator
 url=http://magiccards.info/tr/en/25.html
 image=http://mtgimage.com/card/balshan%20collaborator.jpg
-value=3.150
+value=3.129
 rarity=U
 type=Creature
 subtype=Bird,Soldier

@@ -1,7 +1,7 @@
 name=Halo Hunter
 url=http://magiccards.info/zen/en/96.html
 image=http://mtgimage.com/card/halo%20hunter.jpg
-value=3.45
+value=3.450
 rarity=R
 type=Creature
 subtype=Demon

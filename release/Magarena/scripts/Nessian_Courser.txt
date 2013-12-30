@@ -1,7 +1,7 @@
 name=Nessian Courser
 url=http://magiccards.info/fut/en/148.html
 image=http://mtgimage.com/card/nessian%20courser.jpg
-value=2.931
+value=2.932
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

@@ -1,7 +1,7 @@
 name=Dakmor Lancer
 url=http://magiccards.info/7e/en/126.html
 image=http://mtgimage.com/card/dakmor%20lancer.jpg
-value=2.19
+value=2.245
 rarity=U
 type=Creature
 subtype=Human,Knight

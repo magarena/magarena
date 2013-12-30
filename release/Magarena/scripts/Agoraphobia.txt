@@ -1,7 +1,7 @@
 name=Agoraphobia
 url=http://magiccards.info/gtc/en/30.html
 image=http://mtgimage.com/card/agoraphobia.jpg
-value=2.864
+value=2.858
 rarity=U
 type=Enchantment
 subtype=Aura

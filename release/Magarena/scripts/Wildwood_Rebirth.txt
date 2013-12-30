@@ -1,7 +1,7 @@
 name=Wildwood Rebirth
 url=http://magiccards.info/gtc/en/140.html
 image=http://mtgimage.com/card/wildwood%20rebirth.jpg
-value=2.35
+value=2.350
 rarity=C
 type=Instant
 cost={1}{G}

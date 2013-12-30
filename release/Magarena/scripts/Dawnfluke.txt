@@ -1,7 +1,7 @@
 name=Dawnfluke
 url=http://magiccards.info/lw/en/12.html
 image=http://mtgimage.com/card/dawnfluke.jpg
-value=2.662
+value=2.628
 rarity=C
 type=Creature
 subtype=Elemental

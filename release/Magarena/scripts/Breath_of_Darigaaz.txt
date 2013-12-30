@@ -1,7 +1,7 @@
 name=Breath of Darigaaz
 url=http://magiccards.info/cmd/en/112.html
 image=http://mtgimage.com/card/breath%20of%20darigaaz.jpg
-value=4.083
+value=4.048
 removal=3
 rarity=U
 type=Sorcery

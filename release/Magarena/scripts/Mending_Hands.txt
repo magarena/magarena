@@ -1,7 +1,7 @@
 name=Mending Hands
 url=http://magiccards.info/9e/en/29.html
 image=http://mtgimage.com/card/mending%20hands.jpg
-value=2.773
+value=2.757
 rarity=C
 type=Instant
 cost={W}

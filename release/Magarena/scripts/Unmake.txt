@@ -1,7 +1,7 @@
 name=Unmake
 url=http://magiccards.info/arc/en/98.html
 image=http://mtgimage.com/card/unmake.jpg
-value=4.400
+value=4.346
 removal=5
 rarity=C
 type=Instant

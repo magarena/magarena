@@ -1,7 +1,7 @@
 name=Unfulfilled Desires
 url=http://magiccards.info/mr/en/345.html
 image=http://mtgimage.com/card/unfulfilled%20desires.jpg
-value=3.264
+value=3.216
 rarity=R
 type=Enchantment
 cost={1}{U}{B}

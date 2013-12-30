@@ -1,7 +1,7 @@
 name=Great Furnace
 url=http://magiccards.info/pch/en/133.html
 image=http://mtgimage.com/card/great%20furnace.jpg
-value=4.533
+value=4.532
 rarity=C
 type=Artifact,Land
 mana=r4

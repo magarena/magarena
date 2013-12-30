@@ -1,7 +1,7 @@
 name=Searing Wind
 url=http://magiccards.info/8e/en/218.html
 image=http://mtgimage.com/card/searing%20wind.jpg
-value=3.81
+value=3.814
 rarity=R
 type=Instant
 cost={8}{R}

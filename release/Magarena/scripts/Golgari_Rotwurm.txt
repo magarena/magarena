@@ -1,7 +1,7 @@
 name=Golgari Rotwurm
 url=http://magiccards.info/ddj/en/63.html
 image=http://mtgimage.com/card/golgari%20rotwurm.jpg
-value=3.45
+value=3.409
 rarity=C
 type=Creature
 subtype=Zombie,Wurm

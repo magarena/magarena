@@ -1,7 +1,7 @@
 name=Dungeon Geists
 url=http://magiccards.info/dka/en/36.html
 image=http://mtgimage.com/card/dungeon%20geists.jpg
-value=4.000
+value=3.438
 rarity=R
 type=Creature
 subtype=Spirit

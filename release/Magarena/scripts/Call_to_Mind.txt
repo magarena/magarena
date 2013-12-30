@@ -1,7 +1,7 @@
 name=Call to Mind
 url=http://magiccards.info/m11/en/47.html
 image=http://mtgimage.com/card/call%20to%20mind.jpg
-value=3.688
+value=3.681
 rarity=U
 type=Sorcery
 cost={2}{U}

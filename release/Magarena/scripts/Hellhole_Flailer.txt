@@ -1,7 +1,7 @@
 name=Hellhole Flailer
 url=http://magiccards.info/rtr/en/167.html
 image=http://mtgimage.com/card/hellhole%20flailer.jpg
-value=3.813
+value=3.810
 rarity=U
 type=Creature
 subtype=Ogre,Warrior

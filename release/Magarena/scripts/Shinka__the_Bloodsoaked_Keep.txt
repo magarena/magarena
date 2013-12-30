@@ -1,7 +1,7 @@
 name=Shinka, the Bloodsoaked Keep
 url=http://magiccards.info/chk/en/282.html
 image=http://mtgimage.com/card/shinka,%20the%20bloodsoaked%20keep.jpg
-value=4.069
+value=4.098
 rarity=R
 type=Legendary,Land
 mana=r2

@@ -1,7 +1,7 @@
 name=Reknit
 url=http://magiccards.info/shm/en/236.html
 image=http://mtgimage.com/card/reknit.jpg
-value=3.29
+value=3.265
 rarity=U
 type=Instant
 cost={1}{G/W}

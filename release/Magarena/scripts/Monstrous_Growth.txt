@@ -1,7 +1,7 @@
 name=Monstrous Growth
 url=http://magiccards.info/8e/en/266.html
 image=http://mtgimage.com/card/monstrous%20growth.jpg
-value=1.444
+value=1.426
 rarity=C
 type=Sorcery
 cost={1}{G}

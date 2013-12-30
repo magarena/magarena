@@ -1,7 +1,7 @@
 name=Disciple of Malice
 url=http://magiccards.info/on/en/139.html
 image=http://mtgimage.com/card/disciple%20of%20malice.jpg
-value=2.978
+value=3.021
 rarity=C
 type=Creature
 subtype=Human,Cleric

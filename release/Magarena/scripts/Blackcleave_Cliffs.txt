@@ -1,7 +1,7 @@
 name=Blackcleave Cliffs
 url=http://magiccards.info/som/en/224.html
 image=http://mtgimage.com/card/blackcleave%20cliffs.jpg
-value=4.239
+value=4.246
 rarity=R
 type=Land
 mana=b3r3

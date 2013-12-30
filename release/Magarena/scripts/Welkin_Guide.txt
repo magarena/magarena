@@ -1,7 +1,7 @@
 name=Welkin Guide
 url=http://magiccards.info/ala/en/30.html
 image=http://mtgimage.com/card/welkin%20guide.jpg
-value=1.7
+value=1.697
 rarity=C
 type=Creature
 subtype=Bird,Cleric

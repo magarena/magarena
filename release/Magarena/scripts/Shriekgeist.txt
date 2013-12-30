@@ -1,7 +1,7 @@
 name=Shriekgeist
 url=http://magiccards.info/dka/en/49.html
 image=http://mtgimage.com/card/shriekgeist.jpg
-value=3.200
+value=3.207
 rarity=C
 type=Creature
 subtype=Spirit

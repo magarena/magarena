@@ -1,7 +1,7 @@
 name=Nantuko Shade
 url=http://magiccards.info/m11/en/106.html
 image=http://mtgimage.com/card/nantuko%20shade.jpg
-value=4.580
+value=4.557
 rarity=R
 type=Creature
 subtype=Insect,Shade

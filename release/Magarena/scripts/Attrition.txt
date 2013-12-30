@@ -1,7 +1,7 @@
 name=Attrition
 url=http://magiccards.info/cmd/en/72.html
 image=http://mtgimage.com/card/attrition.jpg
-value=4.220
+value=4.246
 rarity=R
 type=Enchantment
 cost={1}{B}{B}

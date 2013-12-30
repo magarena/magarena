@@ -1,7 +1,7 @@
 name=Benalish Emissary
 url=http://magiccards.info/in/en/5.html
 image=http://mtgimage.com/card/benalish%20emissary.jpg
-value=3.6
+value=3.600
 rarity=U
 type=Creature
 subtype=Human,Wizard

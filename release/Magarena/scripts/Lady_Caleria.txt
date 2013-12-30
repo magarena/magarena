@@ -1,7 +1,7 @@
 name=Lady Caleria
 url=http://magiccards.info/lg/en/279.html
 image=http://mtgimage.com/card/lady%20caleria.jpg
-value=2.827
+value=2.830
 rarity=U
 type=Legendary,Creature
 subtype=Human,Archer

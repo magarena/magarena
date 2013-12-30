@@ -1,7 +1,7 @@
 name=Blazing Specter
 url=http://magiccards.info/ddh/en/52.html
 image=http://mtgimage.com/card/blazing%20specter.jpg
-value=4.425
+value=4.439
 rarity=R
 type=Creature
 subtype=Specter

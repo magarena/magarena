@@ -1,7 +1,7 @@
 name=Claws of Gix
 url=http://magiccards.info/tsts/en/107.html
 image=http://mtgimage.com/card/claws%20of%20gix.jpg
-value=3.938
+value=3.929
 rarity=U
 type=Artifact
 cost={0}

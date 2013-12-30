@@ -1,7 +1,7 @@
 name=Razorverge Thicket
 url=http://magiccards.info/som/en/228.html
 image=http://mtgimage.com/card/razorverge%20thicket.jpg
-value=4.290
+value=4.305
 rarity=R
 type=Land
 mana=g3w3

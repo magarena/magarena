@@ -1,7 +1,7 @@
 name=Goldmeadow Harrier
 url=http://magiccards.info/ddf/en/3.html
 image=http://mtgimage.com/card/goldmeadow%20harrier.jpg
-value=4.122
+value=4.134
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

@@ -1,7 +1,7 @@
 name=Viashino Firstblade
 url=http://magiccards.info/dgm/en/113.html
 image=http://mtgimage.com/card/viashino%20firstblade.jpg
-value=4.083
+value=3.947
 rarity=C
 type=Creature
 subtype=Viashino,Soldier

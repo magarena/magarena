@@ -1,7 +1,7 @@
 name=Guard Duty
 url=http://magiccards.info/roe/en/23.html
 image=http://mtgimage.com/card/guard%20duty.jpg
-value=3.600
+value=3.604
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Dread of Night
 url=http://magiccards.info/6e/en/122.html
 image=http://mtgimage.com/card/dread%20of%20night.jpg
-value=4.037
+value=4.036
 rarity=U
 type=Enchantment
 cost={B}

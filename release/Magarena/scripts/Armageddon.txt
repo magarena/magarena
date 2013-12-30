@@ -1,7 +1,7 @@
 name=Armageddon
 url=http://magiccards.info/me4/en/5.html
 image=http://mtgimage.com/card/armageddon.jpg
-value=4.557
+value=4.535
 removal=2
 rarity=R
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Frostwind Invoker
 url=http://magiccards.info/roe/en/68.html
 image=http://mtgimage.com/card/frostwind%20invoker.jpg
-value=2.25
+value=2.250
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

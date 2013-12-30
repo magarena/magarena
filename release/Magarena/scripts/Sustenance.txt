@@ -1,7 +1,7 @@
 name=Sustenance
 url=http://magiccards.info/mm/en/278.html
 image=http://mtgimage.com/card/sustenance.jpg
-value=1.854
+value=1.860
 rarity=U
 type=Enchantment
 cost={1}{G}

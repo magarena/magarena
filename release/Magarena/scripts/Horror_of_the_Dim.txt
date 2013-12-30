@@ -1,7 +1,7 @@
 name=Horror of the Dim
 url=http://magiccards.info/gtc/en/68.html
 image=http://mtgimage.com/card/horror%20of%20the%20dim.jpg
-value=2.322
+value=2.304
 rarity=C
 type=Creature
 subtype=Horror

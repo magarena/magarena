@@ -1,7 +1,7 @@
 name=Abandoned Outpost
 url=http://magiccards.info/od/en/312.html
 image=http://mtgimage.com/card/abandoned%20outpost.jpg
-value=2.250
+value=2.266
 rarity=C
 type=Land
 mana=w3u1b1r1g1

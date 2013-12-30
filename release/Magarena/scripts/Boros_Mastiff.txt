@@ -1,7 +1,7 @@
 name=Boros Mastiff
 url=http://magiccards.info/dgm/en/1.html
 image=http://mtgimage.com/card/boros%20mastiff.jpg
-value=2.824
+value=2.829
 rarity=C
 type=Creature
 subtype=Hound

@@ -1,7 +1,7 @@
 name=Nightsky Mimic
 url=http://magiccards.info/eve/en/91.html
 image=http://mtgimage.com/card/nightsky%20mimic.jpg
-value=3.724
+value=3.728
 rarity=C
 type=Creature
 subtype=Shapeshifter

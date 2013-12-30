@@ -1,7 +1,7 @@
 name=Archangel's Light
 url=http://magiccards.info/dka/en/1.html
 image=http://mtgimage.com/card/archangel%27s%20light.jpg
-value=1.226
+value=1.240
 rarity=M
 type=Sorcery
 cost={7}{W}

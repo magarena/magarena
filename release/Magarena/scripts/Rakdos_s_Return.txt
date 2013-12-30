@@ -1,7 +1,7 @@
 name=Rakdos's Return
 url=http://magiccards.info/rtr/en/188.html
 image=http://mtgimage.com/card/rakdos%27s%20return.jpg
-value=3.995
+value=4.015
 rarity=M
 type=Sorcery
 cost={X}{B}{R}

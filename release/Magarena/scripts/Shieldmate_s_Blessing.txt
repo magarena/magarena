@@ -1,7 +1,7 @@
 name=Shieldmate's Blessing
 url=http://magiccards.info/zen/en/35.html
 image=http://mtgimage.com/card/shieldmate's%20blessing.jpg
-value=1.278
+value=1.262
 rarity=C
 type=Instant
 cost={W}

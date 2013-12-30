@@ -1,7 +1,7 @@
 name=Savage Thallid
 url=http://magiccards.info/ts/en/213.html
 image=http://mtgimage.com/card/savage%20thallid.jpg
-value=2.864
+value=2.897
 rarity=C
 type=Creature
 subtype=Fungus

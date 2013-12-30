@@ -1,7 +1,7 @@
 name=Voice of Resurgence
 url=http://magiccards.info/dgm/en/114.html
 image=http://mtgimage.com/card/voice%20of%20resurgence.jpg
-value=4.195
+value=4.213
 rarity=M
 type=Creature
 subtype=Elemental

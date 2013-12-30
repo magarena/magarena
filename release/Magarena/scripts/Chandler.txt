@@ -1,7 +1,7 @@
 name=Chandler
 url=http://magiccards.info/hl/en/88.html
 image=http://mtgimage.com/card/chandler.jpg
-value=2.833
+value=2.836
 rarity=C
 type=Legendary,Creature
 subtype=Human,Rogue

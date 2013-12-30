@@ -1,7 +1,7 @@
 name=Flowering Field
 url=http://magiccards.info/pr/en/9.html
 image=http://mtgimage.com/card/flowering%20field.jpg
-value=1.882
+value=1.857
 rarity=U
 type=Enchantment
 subtype=Aura

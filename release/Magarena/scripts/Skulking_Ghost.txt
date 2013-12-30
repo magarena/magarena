@@ -1,7 +1,7 @@
 name=Skulking Ghost
 url=http://magiccards.info/mr/en/41.html
 image=http://mtgimage.com/card/skulking%20ghost.jpg
-value=3.281
+value=3.245
 rarity=C
 type=Creature
 subtype=Spirit

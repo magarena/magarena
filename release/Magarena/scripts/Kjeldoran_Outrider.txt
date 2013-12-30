@@ -1,7 +1,7 @@
 name=Kjeldoran Outrider
 url=http://magiccards.info/cs/en/12.html
 image=http://mtgimage.com/card/kjeldoran%20outrider.jpg
-value=3.034
+value=3.044
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Foul Familiar
 url=http://magiccards.info/me2/en/90.html
 image=http://mtgimage.com/card/foul%20familiar.jpg
-value=3.13
+value=3.130
 rarity=C
 type=Creature
 subtype=Spirit

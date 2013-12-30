@@ -1,7 +1,7 @@
 name=Gift of Granite
 url=http://magiccards.info/fut/en/7.html
 image=http://mtgimage.com/card/gift%20of%20granite.jpg
-value=2.078
+value=2.087
 rarity=C
 type=Enchantment
 subtype=Aura

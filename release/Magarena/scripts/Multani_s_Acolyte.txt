@@ -1,7 +1,7 @@
 name=Multani's Acolyte
 url=http://magiccards.info/ul/en/108.html
 image=http://mtgimage.com/card/multani%27s%20acolyte.jpg
-value=3.708
+value=3.703
 rarity=C
 type=Creature
 subtype=Elf

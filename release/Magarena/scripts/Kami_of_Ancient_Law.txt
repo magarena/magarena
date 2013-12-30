@@ -1,7 +1,7 @@
 name=Kami of Ancient Law
 url=http://magiccards.info/chk/en/21.html
 image=http://mtgimage.com/card/kami%20of%20ancient%20law.jpg
-value=4.091
+value=4.089
 rarity=C
 type=Creature
 subtype=Spirit

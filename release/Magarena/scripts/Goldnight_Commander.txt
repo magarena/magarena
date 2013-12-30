@@ -1,7 +1,7 @@
 name=Goldnight Commander
 url=http://magiccards.info/avr/en/22.html
 image=http://mtgimage.com/card/goldnight%20commander.jpg
-value=3.786
+value=3.767
 rarity=U
 type=Creature
 subtype=Human,Cleric,Soldier

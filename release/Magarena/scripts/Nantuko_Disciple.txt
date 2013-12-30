@@ -1,7 +1,7 @@
 name=Nantuko Disciple
 url=http://magiccards.info/8e/en/268.html
 image=http://mtgimage.com/card/nantuko%20disciple.jpg
-value=2.696
+value=2.776
 rarity=C
 type=Creature
 subtype=Insect,Druid

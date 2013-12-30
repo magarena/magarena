@@ -1,7 +1,7 @@
 name=Loam Dweller
 url=http://magiccards.info/bok/en/134.html
 image=http://mtgimage.com/card/loam%20dweller.jpg
-value=3.461
+value=3.500
 rarity=U
 type=Creature
 subtype=Spirit

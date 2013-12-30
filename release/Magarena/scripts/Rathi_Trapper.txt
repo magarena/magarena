@@ -1,7 +1,7 @@
 name=Rathi Trapper
 url=http://magiccards.info/mma/en/94.html
 image=http://mtgimage.com/card/rathi%20trapper.jpg
-value=3.5
+value=3.536
 rarity=C
 type=Creature
 subtype=Human,Rebel,Rogue

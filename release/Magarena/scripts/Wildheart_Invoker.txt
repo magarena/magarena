@@ -1,7 +1,7 @@
 name=Wildheart Invoker
 url=http://magiccards.info/roe/en/213.html
 image=http://mtgimage.com/card/wildheart%20invoker.jpg
-value=3.528
+value=3.536
 rarity=C
 type=Creature
 subtype=Elf,Shaman

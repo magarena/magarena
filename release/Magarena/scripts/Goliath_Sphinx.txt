@@ -1,7 +1,7 @@
 name=Goliath Sphinx
 url=http://magiccards.info/wwk/en/28.html
 image=http://mtgimage.com/card/goliath%20sphinx.jpg
-value=3.753
+value=3.754
 rarity=R
 type=Creature
 subtype=Sphinx

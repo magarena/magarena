@@ -1,7 +1,7 @@
 name=Haze of Rage
 url=http://magiccards.info/fut/en/100.html
 image=http://mtgimage.com/card/haze%20of%20rage.jpg
-value=3.306
+value=3.284
 rarity=U
 type=Sorcery
 cost={1}{R}

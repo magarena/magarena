@@ -1,7 +1,7 @@
 name=Tranquil Thicket
 url=http://magiccards.info/ddj/en/82.html
 image=http://mtgimage.com/card/tranquil%20thicket.jpg
-value=3.333
+value=3.188
 rarity=C
 type=Land
 mana=g3

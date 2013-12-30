@@ -1,7 +1,7 @@
 name=Treefolk Healer
 url=http://magiccards.info/in/en/218.html
 image=http://mtgimage.com/card/treefolk%20healer.jpg
-value=1.7
+value=1.700
 rarity=U
 type=Creature
 subtype=Treefolk,Cleric

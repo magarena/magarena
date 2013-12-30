@@ -1,7 +1,7 @@
 name=Goblin Sledder
 url=http://magiccards.info/evg/en/41.html
 image=http://mtgimage.com/card/goblin%20sledder.jpg
-value=3.963
+value=3.948
 rarity=C
 type=Creature
 subtype=Goblin

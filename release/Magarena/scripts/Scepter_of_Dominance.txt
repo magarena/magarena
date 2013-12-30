@@ -1,7 +1,7 @@
 name=Scepter of Dominance
 url=http://magiccards.info/cfx/en/17.html
 image=http://mtgimage.com/card/scepter%20of%20dominance.jpg
-value=3.351
+value=3.375
 rarity=R
 type=Artifact
 cost={1}{W}{W}

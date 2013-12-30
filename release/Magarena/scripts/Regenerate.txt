@@ -1,7 +1,7 @@
 name=Regenerate
 url=http://magiccards.info/m10/en/202.html
 image=http://mtgimage.com/card/regenerate.jpg
-value=1.206
+value=1.204
 rarity=C
 type=Instant
 cost={1}{G}

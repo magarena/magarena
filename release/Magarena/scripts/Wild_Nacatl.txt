@@ -1,7 +1,7 @@
 name=Wild Nacatl
 url=http://magiccards.info/ddh/en/4.html
 image=http://mtgimage.com/card/wild%20nacatl.jpg
-value=4.377
+value=4.386
 rarity=C
 type=Creature
 subtype=Cat,Warrior

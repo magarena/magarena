@@ -1,7 +1,7 @@
 name=Briarhorn
 url=http://magiccards.info/ddh/en/14.html
 image=http://mtgimage.com/card/briarhorn.jpg
-value=3.635
+value=3.638
 rarity=U
 type=Creature
 subtype=Elemental

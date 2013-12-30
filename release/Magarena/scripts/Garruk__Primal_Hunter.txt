@@ -1,7 +1,7 @@
 name=Garruk, Primal Hunter
 url=http://magiccards.info/m13/en/174.html
 image=http://mtgimage.com/card/garruk%2C%20primal%20hunter.jpg
-value=3.889
+value=3.906
 rarity=M
 type=Planeswalker
 subtype=Garruk

@@ -1,7 +1,7 @@
 name=Undying Evil
 url=http://magiccards.info/dka/en/77.html
 image=http://mtgimage.com/card/undying%20evil.jpg
-value=3.882
+value=3.878
 rarity=C
 type=Instant
 cost={B}

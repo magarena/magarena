@@ -1,7 +1,7 @@
 name=Spike Soldier
 url=http://magiccards.info/sh/en/69.html
 image=http://mtgimage.com/card/spike%20soldier.jpg
-value=3.517
+value=3.532
 rarity=U
 type=Creature
 subtype=Spike,Soldier

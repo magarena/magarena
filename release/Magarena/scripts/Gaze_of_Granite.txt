@@ -1,7 +1,7 @@
 name=Gaze of Granite
 url=http://magiccards.info/dgm/en/72.html
 image=http://mtgimage.com/card/gaze%20of%20granite.jpg
-value=4.144
+value=4.149
 removal=2
 rarity=R
 type=Sorcery

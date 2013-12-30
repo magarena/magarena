@@ -1,7 +1,7 @@
 name=Adun Oakenshield
 url=http://magiccards.info/lg/en/256.html
 image=http://mtgimage.com/card/adun%20oakenshield.jpg
-value=3.88
+value=3.808
 rarity=R
 type=Legendary,Creature
 subtype=Human,Knight

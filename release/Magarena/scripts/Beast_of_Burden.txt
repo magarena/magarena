@@ -1,7 +1,7 @@
 name=Beast of Burden
 url=http://magiccards.info/ul/en/122.html
 image=http://mtgimage.com/card/beast%20of%20burden.jpg
-value=3.536
+value=3.544
 rarity=R
 type=Artifact,Creature
 subtype=Golem

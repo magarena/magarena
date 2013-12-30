@@ -1,7 +1,7 @@
 name=Smoldering Butcher
 url=http://magiccards.info/eve/en/42.html
 image=http://mtgimage.com/card/smoldering%20butcher.jpg
-value=3.131
+value=3.161
 ability=wither
 rarity=C
 type=Creature

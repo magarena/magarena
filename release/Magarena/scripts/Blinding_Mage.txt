@@ -1,7 +1,7 @@
 name=Blinding Mage
 url=http://magiccards.info/m11/en/8.html
 image=http://mtgimage.com/card/blinding%20mage.jpg
-value=3.266
+value=3.263
 rarity=C
 type=Creature
 subtype=Human,Wizard

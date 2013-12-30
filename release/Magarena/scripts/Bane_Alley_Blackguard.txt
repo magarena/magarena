@@ -1,7 +1,7 @@
 name=Bane Alley Blackguard
 url=http://magiccards.info/dgm/en/21.html
 image=http://mtgimage.com/card/bane%20alley%20blackguard.jpg
-value=2.286
+value=2.291
 rarity=C
 type=Creature
 subtype=Human,Rogue

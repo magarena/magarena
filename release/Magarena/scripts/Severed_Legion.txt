@@ -1,7 +1,7 @@
 name=Severed Legion
 url=http://magiccards.info/dpa/en/33.html
 image=http://mtgimage.com/card/severed%20legion.jpg
-value=3.545
+value=3.609
 ability=fear
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Soaring Seacliff
 url=http://magiccards.info/ddi/en/37.html
 image=http://mtgimage.com/card/soaring%20seacliff.jpg
-value=2.472
+value=2.526
 rarity=C
 type=Land
 mana=u3

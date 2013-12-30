@@ -1,7 +1,7 @@
 name=Kemuri-Onna
 url=http://magiccards.info/sok/en/76.html
 image=http://mtgimage.com/card/kemuri-onna.jpg
-value=2.268
+value=2.200
 rarity=U
 type=Creature
 subtype=Spirit

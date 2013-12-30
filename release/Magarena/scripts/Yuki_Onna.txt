@@ -1,7 +1,7 @@
 name=Yuki-Onna
 url=http://magiccards.info/sok/en/120.html
 image=http://mtgimage.com/card/yuki-onna.jpg
-value=2.897
+value=2.867
 rarity=U
 type=Creature
 subtype=Spirit

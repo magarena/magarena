@@ -1,7 +1,7 @@
 name=Buried Ruin
 url=http://magiccards.info/m12/en/224.html
 image=http://mtgimage.com/card/buried%20ruin.jpg
-value=4.07
+value=4.076
 rarity=U
 type=Land
 ability=tap add mana {1};pay {2},{T},{S}:Return target artifact card from your graveyard to your hand.

@@ -1,7 +1,7 @@
 name=Stronghold Taskmaster
 url=http://magiccards.info/sh/en/22.html
 image=http://mtgimage.com/card/stronghold%20taskmaster.jpg
-value=2.583
+value=2.597
 rarity=U
 type=Creature
 subtype=Giant,Minion

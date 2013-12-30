@@ -1,7 +1,7 @@
 name=Skirsdag Flayer
 url=http://magiccards.info/dka/en/74.html
 image=http://mtgimage.com/card/skirsdag%20flayer.jpg
-value=2.812
+value=2.866
 rarity=U
 type=Creature
 subtype=Human,Cleric

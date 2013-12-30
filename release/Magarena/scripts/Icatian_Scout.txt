@@ -1,7 +1,7 @@
 name=Icatian Scout
 url=http://magiccards.info/5e/en/313.html
 image=http://mtgimage.com/card/icatian%20scout.jpg
-value=3.109
+value=3.167
 rarity=C
 type=Creature
 subtype=Human,Soldier,Scout

@@ -1,7 +1,7 @@
 name=Treasure Hunter
 url=http://magiccards.info/10e/en/52.html
 image=http://mtgimage.com/card/treasure%20hunter.jpg
-value=3.607
+value=3.603
 rarity=U
 type=Creature
 subtype=Human

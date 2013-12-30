@@ -1,7 +1,7 @@
 name=Web
 url=http://magiccards.info/9e/en/281.html
 image=http://mtgimage.com/card/web.jpg
-value=2.733
+value=2.742
 rarity=R
 type=Enchantment
 subtype=Aura

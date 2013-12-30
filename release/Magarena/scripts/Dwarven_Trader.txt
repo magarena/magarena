@@ -1,7 +1,7 @@
 name=Dwarven Trader
 url=http://magiccards.info/hl/en/91.html
 image=http://mtgimage.com/card/dwarven%20trader.jpg
-value=2.039
+value=2.000
 rarity=C
 type=Creature
 subtype=Dwarf

@@ -1,7 +1,7 @@
 name=Fyndhorn Bow
 url=http://magiccards.info/ia/en/293.html
 image=http://mtgimage.com/card/fyndhorn%20bow.jpg
-value=1.771
+value=1.778
 rarity=U
 type=Artifact
 cost={2}

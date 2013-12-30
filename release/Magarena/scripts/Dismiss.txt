@@ -1,7 +1,7 @@
 name=Dismiss
 url=http://magiccards.info/c13/it/39.html
 image=http://mtgimage.com/card/dismiss.jpg
-value=4.361
+value=4.367
 rarity=U
 type=Instant
 cost={2}{U}{U}

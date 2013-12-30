@@ -1,7 +1,7 @@
 name=Chime of Night
 url=http://magiccards.info/ud/en/56.html
 image=http://mtgimage.com/card/chime%20of%20night.jpg
-value=2.984
+value=3.016
 rarity=C
 type=Enchantment
 subtype=Aura

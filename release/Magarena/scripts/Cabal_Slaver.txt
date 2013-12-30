@@ -1,7 +1,7 @@
 name=Cabal Slaver
 url=http://magiccards.info/on/en/131.html
 image=http://mtgimage.com/card/cabal%20slaver.jpg
-value=3
+value=3.000
 rarity=U
 type=Creature
 subtype=Human,Cleric

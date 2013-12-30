@@ -1,7 +1,7 @@
 name=Scarwood Treefolk
 url=http://magiccards.info/ts/en/214.html
 image=http://mtgimage.com/card/scarwood%20treefolk.jpg
-value=1.433
+value=1.463
 rarity=C
 type=Creature
 subtype=Treefolk

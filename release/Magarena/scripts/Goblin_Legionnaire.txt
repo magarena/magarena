@@ -1,7 +1,7 @@
 name=Goblin Legionnaire
 url=http://magiccards.info/ap/en/103.html
 image=http://mtgimage.com/card/goblin%20legionnaire.jpg
-value=4.167
+value=4.147
 rarity=C
 type=Creature
 subtype=Goblin,Soldier

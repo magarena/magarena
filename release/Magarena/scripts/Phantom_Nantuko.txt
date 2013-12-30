@@ -1,7 +1,7 @@
 name=Phantom Nantuko
 url=http://magiccards.info/ju/en/128.html
 image=http://mtgimage.com/card/phantom%20nantuko.jpg
-value=4.429
+value=4.375
 rarity=R
 type=Creature
 subtype=Insect,Spirit

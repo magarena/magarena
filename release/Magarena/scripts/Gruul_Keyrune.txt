@@ -1,7 +1,7 @@
 name=Gruul Keyrune
 url=http://magiccards.info/gtc/en/230.html
 image=http://mtgimage.com/card/gruul%20keyrune.jpg
-value=3.085
+value=3.105
 rarity=U
 type=Artifact
 cost={3}

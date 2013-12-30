@@ -1,7 +1,7 @@
 name=Stirring Wildwood
 url=http://magiccards.info/wwk/en/144.html
 image=http://mtgimage.com/card/stirring%20wildwood.jpg
-value=4.215
+value=4.218
 rarity=R
 type=Land
 mana=g3w3

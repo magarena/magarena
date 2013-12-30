@@ -1,7 +1,7 @@
 name=Shivan Wurm
 url=http://magiccards.info/ps/en/124.html
 image=http://mtgimage.com/card/shivan%20wurm.jpg
-value=4.561
+value=4.533
 rarity=R
 type=Creature
 subtype=Wurm

@@ -1,7 +1,7 @@
 name=Setessan Battle Priest
 url=http://magiccards.info/ths/en/29.html
 image=http://mtgimage.com/card/setessan%20battle%20priest.jpg
-value=2.923
+value=2.900
 rarity=C
 type=Creature
 subtype=Human,Cleric

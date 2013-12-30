@@ -1,7 +1,7 @@
 name=Adarkar Wastes
 url=http://magiccards.info/10e/en/347.html
 image=http://mtgimage.com/card/adarkar%20wastes.jpg
-value=4.279
+value=4.274
 rarity=R
 type=Land
 mana=w2u2

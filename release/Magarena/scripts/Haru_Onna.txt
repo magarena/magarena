@@ -1,7 +1,7 @@
 name=Haru-Onna
 url=http://magiccards.info/sok/en/132.html
 image=http://mtgimage.com/card/haru-onna.jpg
-value=2.862
+value=2.871
 rarity=U
 type=Creature
 subtype=Spirit

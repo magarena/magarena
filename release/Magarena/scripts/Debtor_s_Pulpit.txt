@@ -1,7 +1,7 @@
 name=Debtor's Pulpit
 url=http://magiccards.info/gtc/en/10.html
 image=http://mtgimage.com/card/debtor%27s%20pulpit.jpg
-value=1.788
+value=1.791
 rarity=U
 type=Enchantment
 subtype=Aura

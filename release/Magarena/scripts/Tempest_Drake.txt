@@ -1,7 +1,7 @@
 name=Tempest Drake
 url=http://magiccards.info/vi/en/139.html
 image=http://mtgimage.com/card/tempest%20drake.jpg
-value=3.578
+value=3.609
 rarity=U
 type=Creature
 subtype=Drake

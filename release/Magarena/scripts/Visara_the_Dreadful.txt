@@ -1,7 +1,7 @@
 name=Visara the Dreadful
 url=http://magiccards.info/fvl/en/15.html
 image=http://mtgimage.com/card/visara%20the%20dreadful.jpg
-value=4.458
+value=4.459
 rarity=M
 type=Legendary,Creature
 subtype=Gorgon

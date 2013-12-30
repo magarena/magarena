@@ -1,7 +1,7 @@
 name=Horncaller's Chant
 url=http://magiccards.info/rtr/en/128.html
 image=http://mtgimage.com/card/horncaller%27s%20chant.jpg
-value=2.222
+value=2.217
 rarity=C
 type=Sorcery
 cost={7}{G}

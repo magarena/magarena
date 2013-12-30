@@ -1,7 +1,7 @@
 name=Tortoise Formation
 url=http://magiccards.info/ala/en/61.html
 image=http://mtgimage.com/card/tortoise%20formation.jpg
-value=1.365
+value=1.362
 rarity=C
 type=Instant
 cost={3}{U}

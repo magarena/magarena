@@ -1,7 +1,7 @@
 name=Bonds of Quicksilver
 url=http://magiccards.info/som/en/29.html
 image=http://mtgimage.com/card/bonds%20of%20quicksilver.jpg
-value=2.255
+value=2.230
 removal=3
 rarity=C
 type=Enchantment

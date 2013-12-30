@@ -1,7 +1,7 @@
 name=Whipstitched Zombie
 url=http://magiccards.info/pr/en/81.html
 image=http://mtgimage.com/card/whipstitched%20zombie.jpg
-value=1.577
+value=1.550
 rarity=C
 type=Creature
 subtype=Zombie

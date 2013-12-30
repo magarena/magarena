@@ -1,7 +1,7 @@
 name=Brine Shaman
 url=http://magiccards.info/ia/en/3.html
 image=http://mtgimage.com/card/brine%20shaman.jpg
-value=3.781
+value=3.814
 rarity=C
 type=Creature
 subtype=Human,Cleric,Shaman

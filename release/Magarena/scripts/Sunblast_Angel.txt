@@ -1,7 +1,7 @@
 name=Sunblast Angel
 url=http://magiccards.info/som/en/22.html
 image=http://mtgimage.com/card/sunblast%20angel.jpg
-value=3.942
+value=3.963
 removal=2
 rarity=R
 type=Creature

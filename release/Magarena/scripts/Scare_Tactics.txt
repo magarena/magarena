@@ -1,7 +1,7 @@
 name=Scare Tactics
 url=http://magiccards.info/ex/en/73.html
 image=http://mtgimage.com/card/scare%20tactics.jpg
-value=3.086
+value=3.050
 rarity=C
 type=Instant
 cost={B}

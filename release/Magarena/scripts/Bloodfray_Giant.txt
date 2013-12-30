@@ -1,7 +1,7 @@
 name=Bloodfray Giant
 url=http://magiccards.info/rtr/en/89.html
 image=http://mtgimage.com/card/bloodfray%20giant.jpg
-value=3.493
+value=3.514
 rarity=U
 type=Creature
 subtype=Giant

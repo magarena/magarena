@@ -1,7 +1,7 @@
 name=Kitchen Finks
 url=http://magiccards.info/shm/en/229.html
 image=http://mtgimage.com/card/kitchen%20finks.jpg
-value=4.571
+value=4.489
 rarity=U
 type=Creature
 subtype=Ouphe

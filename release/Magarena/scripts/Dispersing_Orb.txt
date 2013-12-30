@@ -1,7 +1,7 @@
 name=Dispersing Orb
 url=http://magiccards.info/on/en/80.html
 image=http://mtgimage.com/card/dispersing%20orb.jpg
-value=1.441
+value=1.457
 rarity=U
 type=Enchantment
 cost={3}{U}{U}

@@ -1,7 +1,7 @@
 name=Gorgon Flail
 url=http://magiccards.info/m10/en/211.html
 image=http://mtgimage.com/card/gorgon%20flail.jpg
-value=4.184
+value=4.181
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,7 +1,7 @@
 name=Safehold Elite
 url=http://magiccards.info/shm/en/239.html
 image=http://mtgimage.com/card/safehold%20elite.jpg
-value=3.895
+value=3.888
 rarity=C
 type=Creature
 subtype=Elf,Scout

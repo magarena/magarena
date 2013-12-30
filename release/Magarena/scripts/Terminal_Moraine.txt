@@ -1,7 +1,7 @@
 name=Terminal Moraine
 url=http://magiccards.info/ps/en/142.html
 image=http://mtgimage.com/card/terminal%20moraine.jpg
-value=3.368
+value=3.329
 rarity=U
 type=Land
 ability=tap add mana {1}

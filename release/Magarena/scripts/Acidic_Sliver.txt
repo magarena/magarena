@@ -1,7 +1,7 @@
 name=Acidic Sliver
 url=http://magiccards.info/pds/en/13.html
 image=http://mtgimage.com/card/acidic%20sliver.jpg
-value=3.974
+value=3.975
 rarity=U
 type=Creature
 subtype=Sliver

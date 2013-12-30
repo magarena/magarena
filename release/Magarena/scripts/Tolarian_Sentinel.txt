@@ -1,7 +1,7 @@
 name=Tolarian Sentinel
 url=http://magiccards.info/ts/en/87.html
 image=http://mtgimage.com/card/tolarian%20sentinel.jpg
-value=2
+value=2.000
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

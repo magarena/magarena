@@ -1,7 +1,7 @@
 name=Serra Ascendant
 url=http://magiccards.info/m11/en/28.html
 image=http://mtgimage.com/card/serra%20ascendant.jpg
-value=4.194
+value=4.206
 rarity=R
 type=Creature
 subtype=Human,Monk

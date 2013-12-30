@@ -1,7 +1,7 @@
 name=Phyrexian Defiler
 url=http://magiccards.info/pvc/en/12.html
 image=http://mtgimage.com/card/phyrexian%20defiler.jpg
-value=3.438
+value=3.439
 rarity=U
 type=Creature
 subtype=Carrier

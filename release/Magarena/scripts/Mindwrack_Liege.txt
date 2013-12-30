@@ -1,7 +1,7 @@
 name=Mindwrack Liege
 url=http://magiccards.info/eve/en/104.html
 image=http://mtgimage.com/card/mindwrack%20liege.jpg
-value=3.850
+value=3.852
 rarity=R
 type=Creature
 subtype=Horror

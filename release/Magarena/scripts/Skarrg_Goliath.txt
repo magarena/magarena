@@ -1,7 +1,7 @@
 name=Skarrg Goliath
 url=http://magiccards.info/gtc/en/133.html
 image=http://mtgimage.com/card/skarrg%20goliath.jpg
-value=3.109
+value=3.138
 rarity=R
 type=Creature
 subtype=Beast

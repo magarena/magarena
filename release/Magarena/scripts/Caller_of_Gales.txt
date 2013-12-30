@@ -1,7 +1,7 @@
 name=Caller of Gales
 url=http://magiccards.info/zen/en/43.html
 image=http://mtgimage.com/card/caller%20of%20gales.jpg
-value=2.75
+value=2.750
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

@@ -1,7 +1,7 @@
 name=Promised Kannushi
 url=http://magiccards.info/sok/en/141.html
 image=http://mtgimage.com/card/promised%20kannushi.jpg
-value=3.511
+value=3.543
 rarity=C
 type=Creature
 subtype=Human,Druid

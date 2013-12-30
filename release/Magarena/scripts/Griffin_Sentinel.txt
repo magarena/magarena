@@ -1,7 +1,7 @@
 name=Griffin Sentinel
 url=http://magiccards.info/m12/en/21.html
 image=http://mtgimage.com/card/griffin%20sentinel.jpg
-value=3.460
+value=3.462
 ability=flying;vigilance
 rarity=C
 type=Creature

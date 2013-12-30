@@ -1,7 +1,7 @@
 name=AEther Adept
 url=http://magiccards.info/m12/en/41.html
 image=http://mtgimage.com/card/aether%20adept.jpg
-value=3.866
+value=3.872
 removal=2
 rarity=C
 type=Creature

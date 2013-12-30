@@ -1,7 +1,7 @@
 name=Mudbutton Torchrunner
 url=http://magiccards.info/pc2/en/49.html
 image=http://mtgimage.com/card/mudbutton%20torchrunner.jpg
-value=3.06
+value=3.058
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

@@ -1,7 +1,7 @@
 name=Skinbrand Goblin
 url=http://magiccards.info/gtc/en/105.html
 image=http://mtgimage.com/card/skinbrand%20goblin.jpg
-value=2.775
+value=2.732
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

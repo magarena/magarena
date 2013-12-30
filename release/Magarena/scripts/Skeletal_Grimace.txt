@@ -1,7 +1,7 @@
 name=Skeletal Grimace
 url=http://magiccards.info/isd/en/116.html
 image=http://mtgimage.com/card/skeletal%20grimace.jpg
-value=3.254
+value=3.282
 rarity=C
 type=Enchantment
 subtype=Aura

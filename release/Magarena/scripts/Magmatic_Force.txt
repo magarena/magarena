@@ -1,7 +1,7 @@
 name=Magmatic Force
 url=http://magiccards.info/cmd/en/128.html
 image=http://mtgimage.com/card/magmatic%20force.jpg
-value=4.007
+value=4.000
 rarity=R
 type=Creature
 subtype=Elemental

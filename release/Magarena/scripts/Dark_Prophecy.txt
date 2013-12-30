@@ -1,7 +1,7 @@
 name=Dark Prophecy
 url=http://magiccards.info/m14/en/93.html
 image=http://mtgimage.com/card/dark%20prophecy.jpg
-value=3.902
+value=3.767
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

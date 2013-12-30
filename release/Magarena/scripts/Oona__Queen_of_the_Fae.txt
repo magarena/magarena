@@ -1,7 +1,7 @@
 name=Oona, Queen of the Fae
 url=http://magiccards.info/shm/en/172.html
 image=http://mtgimage.com/card/oona%2C%20queen%20of%20the%20fae.jpg
-value=4.679
+value=4.500
 ability=flying
 rarity=R
 type=Legendary,Creature

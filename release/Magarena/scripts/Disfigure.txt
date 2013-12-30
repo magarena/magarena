@@ -1,7 +1,7 @@
 name=Disfigure
 url=http://magiccards.info/zen/en/87.html
 image=http://mtgimage.com/card/disfigure.jpg
-value=4.255
+value=4.260
 removal=2
 rarity=C
 type=Instant

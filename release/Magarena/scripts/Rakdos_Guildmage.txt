@@ -1,7 +1,7 @@
 name=Rakdos Guildmage
 url=http://magiccards.info/arc/en/92.html
 image=http://mtgimage.com/card/rakdos%20guildmage.jpg
-value=3.386
+value=3.375
 rarity=U
 type=Creature
 subtype=Zombie,Shaman

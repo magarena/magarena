@@ -1,7 +1,7 @@
 name=Arbor Elf
 url=http://magiccards.info/m13/en/160.html
 image=http://mtgimage.com/card/arbor%20elf.jpg
-value=4.054
+value=4.059
 rarity=C
 type=Creature
 subtype=Elf,Druid

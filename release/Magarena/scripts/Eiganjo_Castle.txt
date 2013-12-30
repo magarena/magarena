@@ -1,7 +1,7 @@
 name=Eiganjo Castle
 url=http://magiccards.info/chk/en/275.html
 image=http://mtgimage.com/card/eiganjo%20castle.jpg
-value=4
+value=4.000
 rarity=R
 type=Legendary,Land
 mana=w2

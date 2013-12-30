@@ -1,7 +1,7 @@
 name=Slagwurm Armor
 url=http://magiccards.info/mi/en/243.html
 image=http://mtgimage.com/card/slagwurm%20armor.jpg
-value=4.408
+value=4.416
 rarity=C
 type=Artifact
 subtype=Equipment

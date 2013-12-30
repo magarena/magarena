@@ -1,7 +1,7 @@
 name=Sidewinder Sliver
 url=http://magiccards.info/ts/en/41.html
 image=http://mtgimage.com/card/sidewinder%20sliver.jpg
-value=4.210
+value=4.225
 rarity=C
 type=Creature
 subtype=Sliver

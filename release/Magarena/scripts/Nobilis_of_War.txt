@@ -1,7 +1,7 @@
 name=Nobilis of War
 url=http://magiccards.info/ddl/en/15.html
 image=http://mtgimage.com/card/nobilis%20of%20war.jpg
-value=4.357
+value=4.167
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

@@ -1,7 +1,7 @@
 name=Selfless Cathar
 url=http://magiccards.info/isd/en/30.html
 image=http://mtgimage.com/card/selfless%20cathar.jpg
-value=2.886
+value=2.933
 rarity=C
 type=Creature
 subtype=Human,Cleric

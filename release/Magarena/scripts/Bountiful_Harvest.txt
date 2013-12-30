@@ -1,7 +1,7 @@
 name=Bountiful Harvest
 url=http://magiccards.info/m12/en/166.html
 image=http://mtgimage.com/card/bountiful%20harvest.jpg
-value=1.138
+value=1.136
 rarity=C
 type=Sorcery
 cost={4}{G}

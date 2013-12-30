@@ -1,7 +1,7 @@
 name=Silverstorm Samurai
 url=http://magiccards.info/bok/en/22.html
 image=http://mtgimage.com/card/silverstorm%20samurai.jpg
-value=1.702
+value=1.740
 rarity=C
 type=Creature
 subtype=Fox,Samurai

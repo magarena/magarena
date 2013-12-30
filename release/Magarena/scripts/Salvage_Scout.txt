@@ -1,7 +1,7 @@
 name=Salvage Scout
 url=http://magiccards.info/som/en/19.html
 image=http://mtgimage.com/card/salvage%20scout.jpg
-value=2.989
+value=3.021
 rarity=C
 type=Creature
 subtype=Human,Scout

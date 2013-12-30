@@ -1,7 +1,7 @@
 name=Skyshroud Troll
 url=http://magiccards.info/tp/en/151.html
 image=http://mtgimage.com/card/skyshroud%20troll.jpg
-value=3.429
+value=3.414
 rarity=C
 type=Creature
 subtype=Troll,Giant

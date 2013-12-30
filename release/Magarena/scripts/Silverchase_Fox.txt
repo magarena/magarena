@@ -1,7 +1,7 @@
 name=Silverchase Fox
 url=http://magiccards.info/isd/en/31.html
 image=http://mtgimage.com/card/silverchase%20fox.jpg
-value=3.211
+value=3.250
 rarity=C
 type=Creature
 subtype=Fox

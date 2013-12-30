@@ -1,7 +1,7 @@
 name=Seraph Sanctuary
 url=http://magiccards.info/avr/en/228.html
 image=http://mtgimage.com/card/seraph%20sanctuary.jpg
-value=2.880
+value=2.915
 rarity=C
 type=Land
 ability=enters effect PN gains 1 life.;tap add mana {1}

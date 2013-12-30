@@ -1,7 +1,7 @@
 name=Capashen Unicorn
 url=http://magiccards.info/in/en/10.html
 image=http://mtgimage.com/card/capashen%20unicorn.jpg
-value=2.97
+value=2.971
 rarity=C
 type=Creature
 subtype=Unicorn

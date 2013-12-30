@@ -1,7 +1,7 @@
 name=Brood Sliver
 url=http://magiccards.info/pds/en/22.html
 image=http://mtgimage.com/card/brood%20sliver.jpg
-value=4.429
+value=4.438
 rarity=R
 type=Creature
 subtype=Sliver

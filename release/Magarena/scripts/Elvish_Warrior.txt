@@ -1,7 +1,7 @@
 name=Elvish Warrior
 url=http://magiccards.info/dpa/en/64.html
 image=http://mtgimage.com/card/elvish%20warrior.jpg
-value=3.633
+value=3.640
 rarity=C
 type=Creature
 subtype=Elf,Warrior

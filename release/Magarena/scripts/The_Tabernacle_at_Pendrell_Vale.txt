@@ -1,7 +1,7 @@
 name=The Tabernacle at Pendrell Vale
 url=http://magiccards.info/me3/en/212.html
 image=http://mtgimage.com/card/the%20tabernacle%20at%20pendrell%20vale.jpg
-value=4.610
+value=4.627
 rarity=R
 type=Legendary,Land
 timing=land

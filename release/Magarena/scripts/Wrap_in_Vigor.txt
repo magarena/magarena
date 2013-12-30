@@ -1,7 +1,7 @@
 name=Wrap in Vigor
 url=http://magiccards.info/fut/en/141.html
 image=http://mtgimage.com/card/wrap%20in%20vigor.jpg
-value=3.809
+value=3.830
 rarity=C
 type=Instant
 cost={1}{G}

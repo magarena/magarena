@@ -1,7 +1,7 @@
 name=Lord of Extinction
 url=http://magiccards.info/arb/en/91.html
 image=http://mtgimage.com/card/lord%20of%20extinction.jpg
-value=4.149
+value=4.162
 rarity=M
 type=Creature
 subtype=Elemental

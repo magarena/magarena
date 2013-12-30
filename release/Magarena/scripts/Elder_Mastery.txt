@@ -1,7 +1,7 @@
 name=Elder Mastery
 url=http://magiccards.info/ddh/en/68.html
 image=http://mtgimage.com/card/elder%20mastery.jpg
-value=2.7
+value=2.788
 rarity=U
 type=Enchantment
 subtype=Aura

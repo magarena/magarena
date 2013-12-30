@@ -1,7 +1,7 @@
 name=Spinneret Sliver
 url=http://magiccards.info/ts/en/219.html
 image=http://mtgimage.com/card/spinneret%20sliver.jpg
-value=3.049
+value=3.085
 rarity=C
 type=Creature
 subtype=Sliver

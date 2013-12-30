@@ -1,7 +1,7 @@
 name=Spitting Hydra
 url=http://magiccards.info/sh/en/99.html
 image=http://mtgimage.com/card/spitting%20hydra.jpg
-value=2.5
+value=2.500
 rarity=R
 type=Creature
 subtype=Hydra

@@ -1,7 +1,7 @@
 name=Misshapen Fiend
 url=http://magiccards.info/mm/en/147.html
 image=http://mtgimage.com/card/misshapen%20fiend.jpg
-value=1.904
+value=1.852
 rarity=C
 type=Creature
 subtype=Horror,Mercenary

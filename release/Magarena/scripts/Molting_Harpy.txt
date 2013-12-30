@@ -1,7 +1,7 @@
 name=Molting Harpy
 url=http://magiccards.info/mm/en/148.html
 image=http://mtgimage.com/card/molting%20harpy.jpg
-value=2.125
+value=2.092
 rarity=U
 type=Creature
 subtype=Harpy,Mercenary

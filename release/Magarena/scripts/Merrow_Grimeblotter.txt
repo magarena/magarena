@@ -1,7 +1,7 @@
 name=Merrow Grimeblotter
 url=http://magiccards.info/shm/en/171.html
 image=http://mtgimage.com/card/merrow%20grimeblotter.jpg
-value=1.619
+value=1.651
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

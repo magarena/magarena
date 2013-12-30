@@ -1,7 +1,7 @@
 name=Tar Pitcher
 url=http://magiccards.info/mma/en/134.html
 image=http://mtgimage.com/card/tar%20pitcher.jpg
-value=3.35
+value=3.350
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

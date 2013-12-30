@@ -1,7 +1,7 @@
 name=Thraben Doomsayer
 url=http://magiccards.info/dka/en/25.html
 image=http://mtgimage.com/card/thraben%20doomsayer.jpg
-value=3.840
+value=3.842
 rarity=R
 type=Creature
 subtype=Human,Cleric

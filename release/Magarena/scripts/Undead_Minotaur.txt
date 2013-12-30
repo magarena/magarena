@@ -1,7 +1,7 @@
 name=Undead Minotaur
 url=http://magiccards.info/m14/en/119.html
 image=http://mtgimage.com/card/undead%20minotaur.jpg
-value=2.152
+value=2.146
 rarity=C
 type=Creature
 subtype=Zombie,Minotaur

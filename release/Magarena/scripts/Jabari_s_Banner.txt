@@ -1,7 +1,7 @@
 name=Jabari's Banner
 url=http://magiccards.info/wl/en/150.html
 image=http://mtgimage.com/card/jabari's%20banner.jpg
-value=3.014
+value=3.028
 rarity=U
 type=Artifact
 cost={2}

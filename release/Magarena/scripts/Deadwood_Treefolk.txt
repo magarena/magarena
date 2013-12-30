@@ -1,7 +1,7 @@
 name=Deadwood Treefolk
 url=http://magiccards.info/cmd/en/150.html
 image=http://mtgimage.com/card/deadwood%20treefolk.jpg
-value=4.333
+value=3.778
 rarity=U
 type=Creature
 subtype=Treefolk

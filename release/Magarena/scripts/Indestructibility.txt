@@ -1,7 +1,7 @@
 name=Indestructibility
 url=http://magiccards.info/m10/en/17.html
 image=http://mtgimage.com/card/indestructibility.jpg
-value=3.655
+value=3.617
 rarity=R
 type=Enchantment
 subtype=Aura

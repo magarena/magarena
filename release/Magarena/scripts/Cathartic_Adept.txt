@@ -1,7 +1,7 @@
 name=Cathartic Adept
 url=http://magiccards.info/ala/en/34.html
 image=http://mtgimage.com/card/cathartic%20adept.jpg
-value=2.789
+value=2.805
 rarity=C
 type=Creature
 subtype=Human,Wizard

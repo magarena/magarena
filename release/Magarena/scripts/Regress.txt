@@ -1,7 +1,7 @@
 name=Regress
 url=http://magiccards.info/roe/en/83.html
 image=http://mtgimage.com/card/regress.jpg
-value=2.671
+value=2.667
 rarity=C
 type=Instant
 cost={2}{U}

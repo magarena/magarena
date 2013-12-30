@@ -1,7 +1,7 @@
 name=Fog
 url=http://magiccards.info/m12/en/173.html
 image=http://mtgimage.com/card/fog.jpg
-value=4.000
+value=3.894
 rarity=C
 type=Instant
 cost={G}

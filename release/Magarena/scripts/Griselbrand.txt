@@ -1,7 +1,7 @@
 name=Griselbrand
 url=http://magiccards.info/avr/en/106.html
 image=http://mtgimage.com/card/griselbrand.jpg
-value=4.267
+value=4.271
 rarity=M
 type=Legendary,Creature
 subtype=Demon

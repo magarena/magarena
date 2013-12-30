@@ -1,7 +1,7 @@
 name=Splinter Twin
 url=http://magiccards.info/roe/en/165.html
 image=http://mtgimage.com/card/splinter%20twin.jpg
-value=4.466
+value=4.488
 rarity=R
 type=Enchantment
 subtype=Aura

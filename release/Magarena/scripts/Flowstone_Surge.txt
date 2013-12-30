@@ -1,7 +1,7 @@
 name=Flowstone Surge
 url=http://magiccards.info/ne/en/85.html
 image=http://mtgimage.com/card/flowstone%20surge.jpg
-value=3.486
+value=3.472
 rarity=U
 type=Enchantment
 cost={1}{R}

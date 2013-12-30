@@ -1,7 +1,7 @@
 name=Silverback Ape
 url=http://magiccards.info/8eb/en/7.html
 image=http://mtgimage.com/card/silverback%20ape.jpg
-value=3.225
+value=3.244
 rarity=U
 type=Creature
 subtype=Ape

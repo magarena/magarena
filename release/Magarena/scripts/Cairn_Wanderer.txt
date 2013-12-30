@@ -1,7 +1,7 @@
 name=Cairn Wanderer
 url=http://magiccards.info/lw/en/105.html
 image=http://mtgimage.com/card/cairn%20wanderer.jpg
-value=4.152
+value=4.162
 rarity=R
 type=Creature
 subtype=Shapeshifter

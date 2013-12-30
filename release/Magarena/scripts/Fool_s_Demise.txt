@@ -1,7 +1,7 @@
 name=Fool's Demise
 url=http://magiccards.info/ts/en/64.html
 image=http://mtgimage.com/card/fool's%20demise.jpg
-value=4.255
+value=4.250
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Galvanic Alchemist
 url=http://magiccards.info/avr/en/54.html
 image=http://mtgimage.com/card/galvanic%20alchemist.jpg
-value=2.871
+value=2.889
 rarity=C
 type=Creature
 subtype=Human,Wizard

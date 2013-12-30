@@ -1,7 +1,7 @@
 name=Pyrite Spellbomb
 url=http://magiccards.info/mma/en/212.html
 image=http://mtgimage.com/card/pyrite%20spellbomb.jpg
-value=4.344
+value=4.537
 rarity=C
 type=Artifact
 cost={1}

@@ -1,7 +1,7 @@
 name=Skullmulcher
 url=http://magiccards.info/ala/en/148.html
 image=http://mtgimage.com/card/skullmulcher.jpg
-value=3.109
+value=3.134
 rarity=R
 type=Creature
 subtype=Elemental

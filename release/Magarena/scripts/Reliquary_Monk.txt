@@ -1,7 +1,7 @@
 name=Reliquary Monk
 url=http://magiccards.info/ud/en/14.html
 image=http://mtgimage.com/card/reliquary%20monk.jpg
-value=3.152
+value=3.104
 rarity=C
 type=Creature
 subtype=Human,Monk,Cleric

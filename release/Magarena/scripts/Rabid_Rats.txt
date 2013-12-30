@@ -1,7 +1,7 @@
 name=Rabid Rats
 url=http://magiccards.info/sh/en/17.html
 image=http://mtgimage.com/card/rabid%20rats.jpg
-value=2.871
+value=2.861
 rarity=C
 type=Creature
 subtype=Rat

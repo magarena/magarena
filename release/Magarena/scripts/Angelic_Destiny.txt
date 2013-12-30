@@ -1,7 +1,7 @@
 name=Angelic Destiny
 url=http://magiccards.info/m12/en/3.html
 image=http://mtgimage.com/card/angelic%20destiny.jpg
-value=4.482
+value=4.489
 rarity=M
 type=Enchantment
 subtype=Aura

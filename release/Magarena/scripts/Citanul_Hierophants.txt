@@ -1,7 +1,7 @@
 name=Citanul Hierophants
 url=http://magiccards.info/us/en/244.html
 image=http://mtgimage.com/card/citanul%20hierophants.jpg
-value=4.321
+value=4.326
 rarity=R
 type=Creature
 subtype=Human,Druid

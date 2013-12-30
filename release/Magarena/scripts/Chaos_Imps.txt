@@ -1,7 +1,7 @@
 name=Chaos Imps
 url=http://magiccards.info/rtr/en/90.html
 image=http://mtgimage.com/card/chaos%20imps.jpg
-value=3.528
+value=3.541
 rarity=R
 type=Creature
 subtype=Imp

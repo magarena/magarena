@@ -1,7 +1,7 @@
 name=Basilisk Collar
 url=http://magiccards.info/wwk/en/122.html
 image=http://mtgimage.com/card/basilisk%20collar.jpg
-value=4.447
+value=4.444
 rarity=R
 type=Artifact
 subtype=Equipment

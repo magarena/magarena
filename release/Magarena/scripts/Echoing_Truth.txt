@@ -1,7 +1,7 @@
 name=Echoing Truth
 url=http://magiccards.info/ds/en/21.html
 image=http://mtgimage.com/card/echoing%20truth.jpg
-value=4.297
+value=4.294
 removal=3
 rarity=C
 type=Instant

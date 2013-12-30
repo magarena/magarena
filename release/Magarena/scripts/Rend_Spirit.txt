@@ -1,7 +1,7 @@
 name=Rend Spirit
 url=http://magiccards.info/chk/en/141.html
 image=http://mtgimage.com/card/rend%20spirit.jpg
-value=1.795
+value=1.761
 rarity=C
 type=Instant
 cost={2}{B}

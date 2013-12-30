@@ -1,7 +1,7 @@
 name=Gravetiller Wurm
 url=http://magiccards.info/dka/en/116.html
 image=http://mtgimage.com/card/gravetiller%20wurm.jpg
-value=3.402
+value=3.427
 rarity=U
 type=Creature
 subtype=Wurm

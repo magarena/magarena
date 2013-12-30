@@ -1,7 +1,7 @@
 name=Monstrous Carabid
 url=http://magiccards.info/arb/en/43.html
 image=http://mtgimage.com/card/monstrous%20carabid.jpg
-value=2.219
+value=2.192
 rarity=C
 type=Creature
 subtype=Insect

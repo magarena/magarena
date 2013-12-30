@@ -1,7 +1,7 @@
 name=Pillage
 url=http://magiccards.info/7e/en/207.html
 image=http://mtgimage.com/card/pillage.jpg
-value=4.569
+value=4.542
 rarity=U
 type=Sorcery
 cost={1}{R}{R}

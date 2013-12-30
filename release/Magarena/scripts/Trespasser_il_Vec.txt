@@ -1,7 +1,7 @@
 name=Trespasser il-Vec
 url=http://magiccards.info/ts/en/138.html
 image=http://mtgimage.com/card/trespasser%20il%2Dvec.jpg
-value=3.133
+value=3.129
 rarity=C
 type=Creature
 subtype=Human,Rogue

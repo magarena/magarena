@@ -1,7 +1,7 @@
 name=Joint Assault
 url=http://magiccards.info/avr/en/183.html
 image=http://mtgimage.com/card/joint%20assault.jpg
-value=2.975
+value=2.951
 rarity=C
 type=Instant
 cost={G}

@@ -1,7 +1,7 @@
 name=Recollect
 url=http://magiccards.info/10e/en/289.html
 image=http://mtgimage.com/card/recollect.jpg
-value=3.866
+value=3.869
 rarity=U
 type=Sorcery
 cost={2}{G}

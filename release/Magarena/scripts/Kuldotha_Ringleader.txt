@@ -1,7 +1,7 @@
 name=Kuldotha Ringleader
 url=http://magiccards.info/mbs/en/70.html
 image=http://mtgimage.com/card/kuldotha%20ringleader.jpg
-value=2.861
+value=2.839
 ability=battle cry;attacks each turn if able
 rarity=C
 type=Creature

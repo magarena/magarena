@@ -1,7 +1,7 @@
 name=Sanity Gnawers
 url=http://magiccards.info/arb/en/44.html
 image=http://mtgimage.com/card/sanity%20gnawers.jpg
-value=2.672
+value=2.643
 rarity=U
 type=Creature
 subtype=Rat

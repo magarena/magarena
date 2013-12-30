@@ -1,7 +1,7 @@
 name=Verdant Embrace
 url=http://magiccards.info/ts/en/232.html
 image=http://mtgimage.com/card/verdant%20embrace.jpg
-value=3.737
+value=3.744
 rarity=R
 type=Enchantment
 subtype=Aura

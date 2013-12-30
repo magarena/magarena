@@ -1,7 +1,7 @@
 name=Zodiac Dog
 url=http://magiccards.info/p3k/en/130.html
 image=http://mtgimage.com/card/zodiac%20dog.jpg
-value=3.300
+value=3.306
 rarity=C
 type=Creature
 subtype=Hound

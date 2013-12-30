@@ -1,7 +1,7 @@
 name=Rubblebelt Maaka
 url=http://magiccards.info/dgm/en/38.html
 image=http://mtgimage.com/card/rubblebelt%20maaka.jpg
-value=4.085
+value=4.018
 rarity=C
 type=Creature
 subtype=Cat

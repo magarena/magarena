@@ -1,7 +1,7 @@
 name=Nightscape Master
 url=http://magiccards.info/in/en/113.html
 image=http://mtgimage.com/card/nightscape%20master.jpg
-value=3.781
+value=3.786
 rarity=R
 type=Creature
 subtype=Zombie,Wizard

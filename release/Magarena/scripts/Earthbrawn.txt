@@ -1,7 +1,7 @@
 name=Earthbrawn
 url=http://magiccards.info/mt/en/119.html
 image=http://mtgimage.com/card/earthbrawn.jpg
-value=2.649
+value=2.658
 rarity=C
 type=Instant
 cost={1}{G}

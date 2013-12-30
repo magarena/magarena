@@ -1,7 +1,7 @@
 name=Dimir Keyrune
 url=http://magiccards.info/gtc/en/228.html
 image=http://mtgimage.com/card/dimir%20keyrune.jpg
-value=3.24
+value=3.245
 rarity=U
 type=Artifact
 cost={3}

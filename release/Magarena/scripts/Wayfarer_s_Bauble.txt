@@ -1,7 +1,7 @@
 name=Wayfarer's Bauble
 url=http://magiccards.info/c13/en/270.html
 image=http://mtgimage.com/card/wayfarer's%20bauble.jpg
-value=3.471
+value=3.500
 rarity=C
 type=Artifact
 cost={1}

@@ -1,7 +1,7 @@
 name=Glare of Heresy
 url=http://magiccards.info/ths/en/15.html
 image=http://mtgimage.com/card/glare%20of%20heresy.jpg
-value=3.3
+value=3.269
 rarity=U
 type=Sorcery
 cost={1}{W}

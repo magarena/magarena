@@ -1,7 +1,7 @@
 name=Encroaching Wastes
 url=http://magiccards.info/m14/en/227.html
 image=http://mtgimage.com/card/encroaching%20wastes.jpg
-value=3.069
+value=2.934
 rarity=U
 type=Land
 ability=tap add mana {1}; pay {4},{T},{S}: Destroy target nonbasic land.

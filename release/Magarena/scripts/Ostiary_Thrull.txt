@@ -1,7 +1,7 @@
 name=Ostiary Thrull
 url=http://magiccards.info/gp/en/55.html
 image=http://mtgimage.com/card/ostiary%20thrull.jpg
-value=1.412
+value=1.486
 rarity=C
 type=Creature
 subtype=Thrull

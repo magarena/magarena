@@ -1,7 +1,7 @@
 name=Woodlurker Mimic
 url=http://magiccards.info/eve/en/130.html
 image=http://mtgimage.com/card/woodlurker%20mimic.jpg
-value=3.357
+value=3.347
 rarity=C
 type=Creature
 subtype=Shapeshifter

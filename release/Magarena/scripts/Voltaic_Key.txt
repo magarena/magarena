@@ -1,7 +1,7 @@
 name=Voltaic Key
 url=http://magiccards.info/m11/en/219.html
 image=http://mtgimage.com/card/voltaic%20key.jpg
-value=4.664
+value=4.618
 rarity=U
 type=Artifact
 cost={1}

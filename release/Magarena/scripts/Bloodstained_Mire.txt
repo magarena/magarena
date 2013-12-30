@@ -1,7 +1,7 @@
 name=Bloodstained Mire
 url=http://magiccards.info/on/en/313.html
 image=http://mtgimage.com/card/bloodstained%20mire.jpg
-value=4.633
+value=4.576
 rarity=R
 type=Land
 timing=land

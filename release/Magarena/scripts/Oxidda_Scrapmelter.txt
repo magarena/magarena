@@ -1,7 +1,7 @@
 name=Oxidda Scrapmelter
 url=http://magiccards.info/som/en/101.html
 image=http://mtgimage.com/card/oxidda%20scrapmelter.jpg
-value=3.564
+value=3.580
 removal=1
 rarity=U
 type=Creature

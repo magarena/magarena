@@ -1,7 +1,7 @@
 name=Fiery Hellhound
 url=http://magiccards.info/m12/en/130.html
 image=http://mtgimage.com/card/fiery%20hellhound.jpg
-value=2.763
+value=2.775
 rarity=C
 type=Creature
 subtype=Elemental,Hound

@@ -1,7 +1,7 @@
 name=Aven Archer
 url=http://magiccards.info/od/en/6.html
 image=http://mtgimage.com/card/aven%20archer.jpg
-value=1.733
+value=1.742
 rarity=U
 type=Creature
 subtype=Bird,Soldier,Archer

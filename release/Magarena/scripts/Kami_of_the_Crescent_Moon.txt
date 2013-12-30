@@ -1,7 +1,7 @@
 name=Kami of the Crescent Moon
 url=http://magiccards.info/sok/en/42.html
 image=http://mtgimage.com/card/kami%20of%20the%20crescent%20moon.jpg
-value=3.873
+value=3.891
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

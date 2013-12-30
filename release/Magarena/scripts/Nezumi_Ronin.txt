@@ -1,7 +1,7 @@
 name=Nezumi Ronin
 url=http://magiccards.info/chk/en/130.html
 image=http://mtgimage.com/card/nezumi%20ronin.jpg
-value=2.861
+value=2.865
 rarity=C
 type=Creature
 subtype=Rat,Samurai

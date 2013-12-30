@@ -1,7 +1,7 @@
 name=Juniper Order Ranger
 url=http://magiccards.info/ddg/en/21.html
 image=http://mtgimage.com/card/juniper%20order%20ranger.jpg
-value=4.133
+value=4.137
 rarity=U
 type=Creature
 subtype=Human,Knight

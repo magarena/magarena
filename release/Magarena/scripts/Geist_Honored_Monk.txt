@@ -1,7 +1,7 @@
 name=Geist-Honored Monk
 url=http://magiccards.info/isd/en/17.html
 image=http://mtgimage.com/card/geist%2Dhonored%20monk.jpg
-value=3.869
+value=3.870
 rarity=R
 type=Creature
 subtype=Human,Monk

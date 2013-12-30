@@ -1,7 +1,7 @@
 name=Remembrance
 url=http://magiccards.info/us/pt/34.html
 image=http://mtgimage.com/card/remembrance.jpg
-value=3.99
+value=3.990
 rarity=R
 type=Enchantment
 cost={3}{W}

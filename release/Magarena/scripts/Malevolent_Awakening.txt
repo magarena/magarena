@@ -1,7 +1,7 @@
 name=Malevolent Awakening
 url=http://magiccards.info/od/en/147.html
 image=http://mtgimage.com/card/malevolent%20awakening.jpg
-value=2.922
+value=2.941
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

@@ -1,7 +1,7 @@
 name=Skygames
 url=http://magiccards.info/gtc/en/51.html
 image=http://mtgimage.com/card/skygames.jpg
-value=2.06
+value=2.019
 rarity=C
 type=Enchantment
 subtype=Aura

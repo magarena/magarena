@@ -1,7 +1,7 @@
 name=Flamekin Harbinger
 url=http://magiccards.info/pch/en/53.html
 image=http://mtgimage.com/card/flamekin%20harbinger.jpg
-value=3.947
+value=4.190
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

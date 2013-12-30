@@ -1,7 +1,7 @@
 name=Spindrift Drake
 url=http://magiccards.info/sh/en/44.html
 image=http://mtgimage.com/card/spindrift%20drake.jpg
-value=3.341
+value=3.420
 rarity=C
 type=Creature
 subtype=Drake

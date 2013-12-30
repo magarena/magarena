@@ -1,7 +1,7 @@
 name=Ebon Dragon
 url=http://magiccards.info/fvd/en/6.html
 image=http://mtgimage.com/card/ebon%20dragon.jpg
-value=3.15
+value=3.113
 rarity=R
 type=Creature
 subtype=Dragon

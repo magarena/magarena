@@ -1,7 +1,7 @@
 name=Fires of Yavimaya
 url=http://magiccards.info/arc/en/86.html
 image=http://mtgimage.com/card/fires%20of%20yavimaya.jpg
-value=4.350
+value=4.250
 rarity=U
 type=Enchantment
 cost={1}{R}{G}

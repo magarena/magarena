@@ -1,7 +1,7 @@
 name=Sosuke, Son of Seshiro
 url=http://magiccards.info/chk/en/244.html
 image=http://mtgimage.com/card/sosuke%2C%20son%20of%20seshiro.jpg
-value=4.044
+value=4.065
 rarity=U
 type=Legendary,Creature
 subtype=Snake,Warrior

@@ -1,7 +1,7 @@
 name=Cathars' Crusade
 url=http://magiccards.info/avr/en/10.html
 image=http://mtgimage.com/card/cathars%27%20crusade.jpg
-value=3.892
+value=3.875
 rarity=R
 type=Enchantment
 cost={3}{W}{W}

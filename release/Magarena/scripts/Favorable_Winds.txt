@@ -1,7 +1,7 @@
 name=Favorable Winds
 url=http://magiccards.info/avr/en/51.html
 image=http://mtgimage.com/card/favorable%20winds.jpg
-value=3.859
+value=3.879
 rarity=U
 type=Enchantment
 cost={1}{U}

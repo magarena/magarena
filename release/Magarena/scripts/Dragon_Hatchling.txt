@@ -1,7 +1,7 @@
 name=Dragon Hatchling
 url=http://magiccards.info/m13/en/128.html
 image=http://mtgimage.com/card/dragon%20hatchling.jpg
-value=3.420
+value=3.442
 rarity=C
 type=Creature
 subtype=Dragon

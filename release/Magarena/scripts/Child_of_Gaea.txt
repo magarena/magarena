@@ -1,7 +1,7 @@
 name=Child of Gaea
 url=http://magiccards.info/us/en/242.html
 image=http://mtgimage.com/card/child%20of%20gaea.jpg
-value=4.235
+value=4.240
 rarity=R
 type=Creature
 subtype=Elemental

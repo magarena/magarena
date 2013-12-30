@@ -1,7 +1,7 @@
 name=Shivan Zombie
 url=http://magiccards.info/in/en/271.html
 image=http://mtgimage.com/card/shivan%20zombie.jpg
-value=3.905
+value=3.919
 ability=protection from white
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Darksteel Myr
 url=http://magiccards.info/som/en/151.html
 image=http://mtgimage.com/card/darksteel%20myr.jpg
-value=3.023
+value=3.005
 ability=indestructible
 rarity=U
 type=Artifact,Creature

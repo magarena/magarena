@@ -1,7 +1,7 @@
 name=Aquus Steed
 url=http://magiccards.info/rtr/en/29.html
 image=http://mtgimage.com/card/aquus%20steed.jpg
-value=1.432
+value=1.402
 rarity=U
 type=Creature
 subtype=Beast

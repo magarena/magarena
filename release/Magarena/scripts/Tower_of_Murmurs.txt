@@ -1,7 +1,7 @@
 name=Tower of Murmurs
 url=http://magiccards.info/mi/en/268.html
 image=http://mtgimage.com/card/tower%20of%20murmurs.jpg
-value=2.671
+value=2.667
 rarity=R
 type=Artifact
 cost={4}

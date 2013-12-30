@@ -1,7 +1,7 @@
 name=Slippery Bogle
 url=http://magiccards.info/eve/en/160.html
 image=http://mtgimage.com/card/slippery%20bogle.jpg
-value=3.994
+value=4.022
 rarity=C
 type=Creature
 subtype=Beast

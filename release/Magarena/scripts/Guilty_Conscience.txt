@@ -1,7 +1,7 @@
 name=Guilty Conscience
 url=http://magiccards.info/sc/en/17.html
 image=http://mtgimage.com/card/guilty%20conscience.jpg
-value=4.120
+value=4.053
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Kithkin Spellduster
 url=http://magiccards.info/eve/en/8.html
 image=http://mtgimage.com/card/kithkin%20spellduster.jpg
-value=2.179
+value=2.250
 rarity=C
 type=Creature
 subtype=Kithkin,Wizard

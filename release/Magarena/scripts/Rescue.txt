@@ -1,7 +1,7 @@
 name=Rescue
 url=http://magiccards.info/rtr/pt/156.html
 image=http://mtgimage.com/card/rescue.jpg
-value=3.989
+value=3.979
 rarity=C
 type=Instant
 cost={U}

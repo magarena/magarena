@@ -1,7 +1,7 @@
 name=Sky-Eel School
 url=http://magiccards.info/som/en/44.html
 image=http://mtgimage.com/card/sky-eel%20school.jpg
-value=2.138
+value=2.161
 rarity=C
 type=Creature
 subtype=Fish

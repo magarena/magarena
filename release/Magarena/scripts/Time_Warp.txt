@@ -1,7 +1,7 @@
 name=Time Warp
 url=http://magiccards.info/m10/en/75.html
 image=http://mtgimage.com/card/time%20warp.jpg
-value=4.505
+value=4.500
 rarity=M
 type=Sorcery
 cost={3}{U}{U}

@@ -1,7 +1,7 @@
 name=Academy Ruins
 url=http://magiccards.info/ts/en/269.html
 image=http://mtgimage.com/card/academy%20ruins.jpg
-value=4.470
+value=4.471
 rarity=R
 type=Legendary,Land
 ability=tap add mana {1}

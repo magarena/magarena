@@ -1,7 +1,7 @@
 name=Isperia's Skywatch
 url=http://magiccards.info/rtr/en/43.html
 image=http://mtgimage.com/card/isperia%27s%20skywatch.jpg
-value=1.959
+value=1.940
 rarity=C
 type=Creature
 subtype=Vedalken,Knight

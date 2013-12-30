@@ -1,7 +1,7 @@
 name=Spineless Thug
 url=http://magiccards.info/10e/en/180.html
 image=http://mtgimage.com/card/spineless%20thug.jpg
-value=1.972
+value=1.945
 ability=can't block
 rarity=C
 type=Creature

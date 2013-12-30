@@ -1,7 +1,7 @@
 name=Thraben Valiant
 url=http://magiccards.info/avr/en/39.html
 image=http://mtgimage.com/card/thraben%20valiant.jpg
-value=2.778
+value=2.700
 rarity=C
 type=Creature
 subtype=Human,Soldier

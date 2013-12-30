@@ -1,7 +1,7 @@
 name=Heedless One
 url=http://magiccards.info/evg/en/7.html
 image=http://mtgimage.com/card/heedless%20one.jpg
-value=4.260
+value=4.255
 rarity=U
 type=Creature
 subtype=Elf,Avatar

@@ -1,7 +1,7 @@
 name=Samite Healer
 url=http://magiccards.info/10e/en/38.html
 image=http://mtgimage.com/card/samite%20healer.jpg
-value=2.417
+value=2.465
 rarity=C
 type=Creature
 subtype=Human,Cleric

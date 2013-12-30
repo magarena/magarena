@@ -1,7 +1,7 @@
 name=Caustic Tar
 url=http://magiccards.info/od/en/122.html
 image=http://mtgimage.com/card/caustic%20tar.jpg
-value=3.288
+value=3.314
 rarity=U
 type=Enchantment
 subtype=Aura

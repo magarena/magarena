@@ -1,7 +1,7 @@
 name=Shell Skulkin
 url=http://magiccards.info/eve/en/173.html
 image=http://mtgimage.com/card/shell%20skulkin.jpg
-value=2.431
+value=2.406
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

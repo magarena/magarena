@@ -1,7 +1,7 @@
 name=Combat Medic
 url=http://magiccards.info/me2/en/9.html
 image=http://mtgimage.com/card/combat%20medic.jpg
-value=2.549
+value=2.583
 rarity=C
 type=Creature
 subtype=Human,Cleric,Soldier

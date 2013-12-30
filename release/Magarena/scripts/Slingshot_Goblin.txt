@@ -1,7 +1,7 @@
 name=Slingshot Goblin
 url=http://magiccards.info/ps/en/72.html
 image=http://mtgimage.com/card/slingshot%20goblin.jpg
-value=2.717
+value=2.729
 rarity=C
 type=Creature
 subtype=Goblin

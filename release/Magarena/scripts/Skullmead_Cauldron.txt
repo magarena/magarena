@@ -1,7 +1,7 @@
 name=Skullmead Cauldron
 url=http://magiccards.info/di/en/167.html
 image=http://mtgimage.com/card/skullmead%20cauldron.jpg
-value=2.436
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

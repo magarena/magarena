@@ -1,7 +1,7 @@
 name=Dispeller's Capsule
 url=http://magiccards.info/mma/en/12.html
 image=http://mtgimage.com/card/dispeller%27s%20capsule.jpg
-value=3.333
+value=3.375
 rarity=C
 type=Artifact
 cost={W}

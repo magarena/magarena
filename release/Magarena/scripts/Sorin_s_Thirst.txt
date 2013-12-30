@@ -1,7 +1,7 @@
 name=Sorin's Thirst
 url=http://magiccards.info/m12/en/110.html
 image=http://mtgimage.com/card/sorin%27s%20thirst.jpg
-value=3.625
+value=3.441
 removal=2
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Flowstone Thopter
 url=http://magiccards.info/ne/en/132.html
 image=http://mtgimage.com/card/flowstone%20thopter.jpg
-value=1.929
+value=1.931
 rarity=U
 type=Artifact,Creature
 subtype=Thopter

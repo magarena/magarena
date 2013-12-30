@@ -1,7 +1,7 @@
 name=Soltari Champion
 url=http://magiccards.info/sh/en/118.html
 image=http://mtgimage.com/card/soltari%20champion.jpg
-value=4.488
+value=4.489
 rarity=R
 type=Creature
 subtype=Soltari,Soldier

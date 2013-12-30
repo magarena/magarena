@@ -1,7 +1,7 @@
 name=Runeclaw Bear
 url=http://magiccards.info/m12/en/193.html
 image=http://mtgimage.com/card/runeclaw%20bear.jpg
-value=1.981
+value=1.968
 rarity=C
 type=Creature
 subtype=Bear

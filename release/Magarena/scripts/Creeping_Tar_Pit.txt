@@ -1,7 +1,7 @@
 name=Creeping Tar Pit
 url=http://magiccards.info/wwk/en/134.html
 image=http://mtgimage.com/card/creeping%20tar%20pit.jpg
-value=4.440
+value=4.447
 rarity=R
 type=Land
 mana=u3b3

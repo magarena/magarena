@@ -1,7 +1,7 @@
 name=Smallpox
 url=http://magiccards.info/m12/en/108.html
 image=http://mtgimage.com/card/smallpox.jpg
-value=4.160
+value=4.167
 removal=4
 rarity=U
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Goblin War Paint
 url=http://magiccards.info/m12/en/143.html
 image=http://mtgimage.com/card/goblin%20war%20paint.jpg
-value=3.114
+value=3.141
 rarity=C
 type=Enchantment
 subtype=Aura

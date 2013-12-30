@@ -1,7 +1,7 @@
 name=Aven Trooper
 url=http://magiccards.info/tr/en/2.html
 image=http://mtgimage.com/card/aven%20trooper.jpg
-value=0.813
+value=0.808
 rarity=C
 type=Creature
 subtype=Bird,Soldier

@@ -1,7 +1,7 @@
 name=Slith Ascendant
 url=http://magiccards.info/mi/en/23.html
 image=http://mtgimage.com/card/slith%20ascendant.jpg
-value=3.614
+value=3.639
 rarity=U
 type=Creature
 subtype=Slith

@@ -1,7 +1,7 @@
 name=Skyfire Kirin
 url=http://magiccards.info/sok/en/113.html
 image=http://mtgimage.com/card/skyfire%20kirin.jpg
-value=3.397
+value=3.425
 rarity=R
 type=Legendary,Creature
 subtype=Kirin,Spirit

@@ -1,7 +1,7 @@
 name=Ronom Hulk
 url=http://magiccards.info/cs/en/119.html
 image=http://mtgimage.com/card/ronom%20hulk.jpg
-value=2.516
+value=2.578
 rarity=C
 type=Creature
 subtype=Beast

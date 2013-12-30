@@ -1,7 +1,7 @@
 name=Highborn Ghoul
 url=http://magiccards.info/dka/en/68.html
 image=http://mtgimage.com/card/highborn%20ghoul.jpg
-value=3.255
+value=3.260
 rarity=C
 type=Creature
 subtype=Zombie

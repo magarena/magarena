@@ -1,7 +1,7 @@
 name=Varolz, the Scar-Striped
 url=http://magiccards.info/dgm/en/112.html
 image=http://mtgimage.com/card/varolz%2C%20the%20scar%2Dstriped.jpg
-value=4.151
+value=4.135
 rarity=R
 type=Legendary,Creature
 subtype=Troll,Warrior

@@ -1,7 +1,7 @@
 name=Split-Tail Miko
 url=http://magiccards.info/bok/en/23.html
 image=http://mtgimage.com/card/split-tail%20miko.jpg
-value=2.1
+value=2.113
 rarity=C
 type=Creature
 subtype=Fox,Cleric

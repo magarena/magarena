@@ -1,7 +1,7 @@
 name=Commander's Authority
 url=http://magiccards.info/avr/en/13.html
 image=http://mtgimage.com/card/commander%27s%20authority.jpg
-value=2.058
+value=2.048
 rarity=U
 type=Enchantment
 subtype=Aura

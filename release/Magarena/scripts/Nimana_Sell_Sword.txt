@@ -1,7 +1,7 @@
 name=Nimana Sell-Sword
 url=http://magiccards.info/zen/en/106.html
 image=http://mtgimage.com/card/nimana%20sell%2Dsword.jpg
-value=2.167
+value=2.163
 rarity=C
 type=Creature
 subtype=Human,Warrior,Ally

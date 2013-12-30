@@ -1,7 +1,7 @@
 name=Horizon Seed
 url=http://magiccards.info/chk/en/15.html
 image=http://mtgimage.com/card/horizon%20seed.jpg
-value=0.965
+value=0.983
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,7 +1,7 @@
 name=Alluring Siren
 url=http://magiccards.info/m12/en/42.html
 image=http://mtgimage.com/card/alluring%20siren.jpg
-value=3.167
+value=3.183
 rarity=U
 type=Creature
 subtype=Siren

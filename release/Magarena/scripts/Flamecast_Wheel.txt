@@ -1,7 +1,7 @@
 name=Flamecast Wheel
 url=http://magiccards.info/ths/en/215.html
 image=http://mtgimage.com/card/flamecast%20wheel.jpg
-value=0.939
+value=1.696
 rarity=U
 type=Artifact
 cost={1}

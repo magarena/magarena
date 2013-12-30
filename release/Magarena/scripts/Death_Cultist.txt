@@ -1,7 +1,7 @@
 name=Death Cultist
 url=http://magiccards.info/roe/en/105.html
 image=http://mtgimage.com/card/death%20cultist.jpg
-value=3.282
+value=3.285
 rarity=C
 type=Creature
 subtype=Human,Wizard

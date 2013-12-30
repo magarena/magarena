@@ -1,7 +1,7 @@
 name=Akroan Crusader
 url=http://magiccards.info/ths/en/111.html
 image=http://mtgimage.com/card/akroan%20crusader.jpg
-value=4.032
+value=3.469
 rarity=C
 type=Creature
 subtype=Human,Soldier

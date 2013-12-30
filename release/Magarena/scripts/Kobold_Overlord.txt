@@ -1,7 +1,7 @@
 name=Kobold Overlord
 url=http://magiccards.info/lg/en/153.html
 image=http://mtgimage.com/card/kobold%20overlord.jpg
-value=3.743
+value=3.776
 rarity=U
 type=Creature
 subtype=Kobold

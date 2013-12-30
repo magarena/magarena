@@ -1,7 +1,7 @@
 name=Blind Obedience
 url=http://magiccards.info/gtc/en/6.html
 image=http://mtgimage.com/card/blind%20obedience.jpg
-value=4.155
+value=4.167
 rarity=R
 type=Enchantment
 cost={1}{W}

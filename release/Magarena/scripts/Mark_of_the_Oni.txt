@@ -1,7 +1,7 @@
 name=Mark of the Oni
 url=http://magiccards.info/bok/en/73.html
 image=http://mtgimage.com/card/mark%20of%20the%20oni.jpg
-value=3.690
+value=3.686
 rarity=U
 type=Enchantment
 subtype=Aura

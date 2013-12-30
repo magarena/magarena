@@ -1,7 +1,7 @@
 name=Serpent Warrior
 url=http://magiccards.info/9e/en/162.html
 image=http://mtgimage.com/card/serpent%20warrior.jpg
-value=1.64
+value=1.615
 rarity=C
 type=Creature
 subtype=Snake,Warrior

@@ -1,7 +1,7 @@
 name=Facevaulter
 url=http://magiccards.info/mma/en/85.html
 image=http://mtgimage.com/card/facevaulter.jpg
-value=2.85
+value=2.818
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

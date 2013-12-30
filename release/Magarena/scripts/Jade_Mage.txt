@@ -1,7 +1,7 @@
 name=Jade Mage
 url=http://magiccards.info/ddh/en/7.html
 image=http://mtgimage.com/card/jade%20mage.jpg
-value=4.300
+value=4.250
 rarity=U
 type=Creature
 subtype=Human,Shaman

@@ -1,7 +1,7 @@
 name=Dread Specter
 url=http://magiccards.info/mr/en/17.html
 image=http://mtgimage.com/card/dread%20specter.jpg
-value=2.576
+value=2.588
 rarity=U
 type=Creature
 subtype=Specter

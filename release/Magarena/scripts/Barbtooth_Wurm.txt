@@ -1,7 +1,7 @@
 name=Barbtooth Wurm
 url=http://magiccards.info/po2/en/62.html
 image=http://mtgimage.com/card/barbtooth%20wurm.jpg
-value=2.513
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm

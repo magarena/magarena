@@ -1,7 +1,7 @@
 name=Zombie Infestation
 url=http://magiccards.info/m12/en/120.html
 image=http://mtgimage.com/card/zombie%20infestation.jpg
-value=4.000
+value=4.012
 rarity=U
 type=Enchantment
 cost={1}{B}

@@ -1,7 +1,7 @@
 name=Stensia Bloodhall
 url=http://magiccards.info/isd/en/247.html
 image=http://mtgimage.com/card/stensia%20bloodhall.jpg
-value=2.948
+value=2.939
 rarity=R
 type=Land
 ability=tap add mana {1};\

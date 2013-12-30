@@ -1,7 +1,7 @@
 name=Bituminous Blast
 url=http://magiccards.info/pc2/en/83.html
 image=http://mtgimage.com/card/bituminous%20blast.jpg
-value=3.667
+value=3.750
 rarity=U
 type=Instant
 cost={3}{B}{R}

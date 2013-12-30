@@ -1,7 +1,7 @@
 name=School of Piranha
 url=http://magiccards.info/ex/en/45.html
 image=http://mtgimage.com/card/school%20of%20piranha.jpg
-value=1.856
+value=1.859
 rarity=C
 type=Creature
 subtype=Fish

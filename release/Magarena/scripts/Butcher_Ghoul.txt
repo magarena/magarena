@@ -1,7 +1,7 @@
 name=Butcher Ghoul
 url=http://magiccards.info/avr/en/89.html
 image=http://mtgimage.com/card/butcher%20ghoul.jpg
-value=2.976
+value=3.008
 rarity=C
 type=Creature
 subtype=Zombie

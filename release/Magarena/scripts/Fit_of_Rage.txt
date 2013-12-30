@@ -1,7 +1,7 @@
 name=Fit of Rage
 url=http://magiccards.info/6e/en/178.html
 image=http://mtgimage.com/card/fit%20of%20rage.jpg
-value=2.948
+value=2.950
 rarity=C
 type=Sorcery
 cost={1}{R}

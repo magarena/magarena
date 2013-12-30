@@ -1,7 +1,7 @@
 name=Phytoburst
 url=http://magiccards.info/dgm/en/46.html
 image=http://mtgimage.com/card/phytoburst.jpg
-value=3.608
+value=3.634
 rarity=C
 type=Sorcery
 cost={1}{G}

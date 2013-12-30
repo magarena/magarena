@@ -1,7 +1,7 @@
 name=Chandra's Outrage
 url=http://magiccards.info/m12/en/125.html
 image=http://mtgimage.com/card/chandra%27s%20outrage.jpg
-value=3.694
+value=3.524
 removal=4
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Leafdrake Roost
 url=http://magiccards.info/di/en/116.html
 image=http://mtgimage.com/card/leafdrake%20roost.jpg
-value=3.833
+value=3.786
 rarity=U
 type=Enchantment
 subtype=Aura

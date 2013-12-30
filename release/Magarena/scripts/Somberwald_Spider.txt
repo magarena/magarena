@@ -1,7 +1,7 @@
 name=Somberwald Spider
 url=http://magiccards.info/isd/en/202.html
 image=http://mtgimage.com/card/somberwald%20spider.jpg
-value=2.541
+value=2.605
 rarity=C
 type=Creature
 subtype=Spider

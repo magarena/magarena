@@ -1,7 +1,7 @@
 name=Briarpack Alpha
 url=http://magiccards.info/dka/en/108.html
 image=http://mtgimage.com/card/briarpack%20alpha.jpg
-value=3.740
+value=3.679
 rarity=U
 type=Creature
 subtype=Wolf

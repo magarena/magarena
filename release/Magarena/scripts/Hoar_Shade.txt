@@ -1,7 +1,7 @@
 name=Hoar Shade
 url=http://magiccards.info/ia/en/19.html
 image=http://mtgimage.com/card/hoar%20shade.jpg
-value=2.771
+value=2.819
 rarity=C
 type=Creature
 subtype=Shade

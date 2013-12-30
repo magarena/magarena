@@ -1,7 +1,7 @@
 name=Martial Law
 url=http://magiccards.info/rtr/en/14.html
 image=http://mtgimage.com/card/martial%20law.jpg
-value=3.812
+value=3.829
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

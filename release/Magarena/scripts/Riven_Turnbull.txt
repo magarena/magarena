@@ -1,7 +1,7 @@
 name=Riven Turnbull
 url=http://magiccards.info/lg/en/294.html
 image=http://mtgimage.com/card/riven%20turnbull.jpg
-value=1.445
+value=1.446
 rarity=U
 type=Legendary,Creature
 subtype=Human,Advisor

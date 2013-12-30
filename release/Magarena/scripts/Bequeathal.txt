@@ -1,7 +1,7 @@
 name=Bequeathal
 url=http://magiccards.info/ex/en/106.html
 image=http://mtgimage.com/card/bequeathal.jpg
-value=4.026
+value=4.034
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Ajani Goldmane
 url=http://magiccards.info/m11/en/1.html
 image=http://mtgimage.com/card/ajani%20goldmane.jpg
-value=3.923
+value=3.921
 rarity=M
 type=Planeswalker
 subtype=Ajani

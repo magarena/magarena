@@ -1,7 +1,7 @@
 name=Absorb
 url=http://magiccards.info/in/en/226.html
 image=http://mtgimage.com/card/absorb.jpg
-value=4.124
+value=4.111
 rarity=R
 type=Instant
 cost={W}{U}{U}

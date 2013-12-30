@@ -1,7 +1,7 @@
 name=Crowd Favorites
 url=http://magiccards.info/on/en/15.html
 image=http://mtgimage.com/card/crowd%20favorites.jpg
-value=2.067
+value=2.081
 rarity=U
 type=Creature
 subtype=Human,Soldier

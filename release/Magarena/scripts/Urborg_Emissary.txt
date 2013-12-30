@@ -1,7 +1,7 @@
 name=Urborg Emissary
 url=http://magiccards.info/in/en/131.html
 image=http://mtgimage.com/card/urborg%20emissary.jpg
-value=2.5
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

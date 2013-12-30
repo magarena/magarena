@@ -1,7 +1,7 @@
 name=Cage of Hands
 url=http://magiccards.info/pc2/en/4.html
 image=http://mtgimage.com/card/cage%20of%20hands.jpg
-value=3.1
+value=3.185
 rarity=C
 type=Enchantment
 subtype=Aura

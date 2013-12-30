@@ -1,7 +1,7 @@
 name=Fissure
 url=http://magiccards.info/med/en/93.html
 image=http://mtgimage.com/card/fissure.jpg
-value=3.756
+value=3.761
 rarity=C
 type=Instant
 cost={3}{R}{R}

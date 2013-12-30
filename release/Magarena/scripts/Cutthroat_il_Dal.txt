@@ -1,7 +1,7 @@
 name=Cutthroat il-Dal
 url=http://magiccards.info/fut/en/64.html
 image=http://mtgimage.com/card/cutthroat%20il%2Ddal.jpg
-value=2.689
+value=2.692
 rarity=C
 type=Creature
 subtype=Human,Rogue

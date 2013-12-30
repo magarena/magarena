@@ -1,7 +1,7 @@
 name=Brutal Nightstalker
 url=http://magiccards.info/po2/en/4.html
 image=http://mtgimage.com/card/brutal%20nightstalker.jpg
-value=1.78
+value=1.780
 rarity=U
 type=Creature
 subtype=Nightstalker

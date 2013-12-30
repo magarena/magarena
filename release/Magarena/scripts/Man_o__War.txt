@@ -1,7 +1,7 @@
 name=Man-o'-War
 url=http://magiccards.info/jvc/en/8.html
 image=http://mtgimage.com/card/man%2Do%27%2Dwar.jpg
-value=4.461
+value=4.466
 removal=2
 rarity=C
 type=Creature

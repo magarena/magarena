@@ -1,7 +1,7 @@
 name=Blessing of Leeches
 url=http://magiccards.info/bok/en/62.html
 image=http://mtgimage.com/card/blessing%20of%20leeches.jpg
-value=3.17
+value=3.122
 rarity=C
 type=Enchantment
 subtype=Aura

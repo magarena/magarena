@@ -1,7 +1,7 @@
 name=Radiant's Dragoons
 url=http://magiccards.info/ul/en/21.html
 image=http://mtgimage.com/card/radiant%27s%20dragoons.jpg
-value=3.286
+value=3.241
 rarity=U
 type=Creature
 subtype=Human,Soldier

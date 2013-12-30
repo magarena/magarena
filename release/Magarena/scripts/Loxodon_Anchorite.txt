@@ -1,7 +1,7 @@
 name=Loxodon Anchorite
 url=http://magiccards.info/5dn/en/10.html
 image=http://mtgimage.com/card/loxodon%20anchorite.jpg
-value=2.429
+value=2.486
 rarity=C
 type=Creature
 subtype=Elephant,Cleric

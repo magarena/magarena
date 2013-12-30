@@ -1,7 +1,7 @@
 name=Brindle Boar
 url=http://magiccards.info/m12/en/167.html
 image=http://mtgimage.com/card/brindle%20boar.jpg
-value=3.240
+value=3.125
 rarity=C
 type=Creature
 subtype=Boar

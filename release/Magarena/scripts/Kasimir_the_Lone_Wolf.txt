@@ -1,7 +1,7 @@
 name=Kasimir the Lone Wolf
 url=http://magiccards.info/lg/en/277.html
 image=http://mtgimage.com/card/kasimir%20the%20lone%20wolf.jpg
-value=1.029
+value=1.019
 rarity=U
 type=Legendary,Creature
 subtype=Human,Warrior

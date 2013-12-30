@@ -1,7 +1,7 @@
 name=Larceny
 url=http://magiccards.info/8e/en/139.html
 image=http://mtgimage.com/card/larceny.jpg
-value=3.083
+value=3.129
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

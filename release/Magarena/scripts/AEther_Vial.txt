@@ -1,7 +1,7 @@
 name=AEther Vial
 url=http://magiccards.info/ds/en/91.html
 image=http://mtgimage.com/card/aether%20vial.jpg
-value=4.546
+value=4.559
 rarity=U
 type=Artifact
 cost={1}

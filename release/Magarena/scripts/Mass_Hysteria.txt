@@ -1,7 +1,7 @@
 name=Mass Hysteria
 url=http://magiccards.info/mi/en/99.html
 image=http://mtgimage.com/card/mass%20hysteria.jpg
-value=3.957
+value=3.972
 rarity=R
 type=Enchantment
 cost={R}

@@ -1,7 +1,7 @@
 name=Aerie Mystics
 url=http://magiccards.info/cfx/en/1.html
 image=http://mtgimage.com/card/aerie%20mystics.jpg
-value=3.667
+value=3.214
 rarity=U
 type=Creature
 subtype=Bird,Wizard

@@ -1,7 +1,7 @@
 name=Soliton
 url=http://magiccards.info/som/en/204.html
 image=http://mtgimage.com/card/soliton.jpg
-value=3.024
+value=3.008
 rarity=C
 type=Artifact,Creature
 subtype=Construct

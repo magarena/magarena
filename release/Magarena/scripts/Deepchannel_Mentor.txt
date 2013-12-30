@@ -1,7 +1,7 @@
 name=Deepchannel Mentor
 url=http://magiccards.info/shm/en/35.html
 image=http://mtgimage.com/card/deepchannel%20mentor.jpg
-value=3.6
+value=3.600
 rarity=U
 type=Creature
 subtype=Merfolk,Rogue

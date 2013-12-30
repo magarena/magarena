@@ -1,7 +1,7 @@
 name=Crazed Goblin
 url=http://magiccards.info/ds/en/56.html
 image=http://mtgimage.com/card/crazed%20goblin.jpg
-value=0.871
+value=0.868
 ability=attacks each turn if able
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Charcoal Diamond
 url=http://magiccards.info/7e/en/289.html
 image=http://mtgimage.com/card/charcoal%20diamond.jpg
-value=2.867
+value=2.864
 rarity=U
 type=Artifact
 cost={2}

@@ -1,7 +1,7 @@
 name=Amugaba
 url=http://magiccards.info/od/en/61.html
 image=http://mtgimage.com/card/amugaba.jpg
-value=2.756
+value=2.739
 rarity=R
 type=Creature
 subtype=Illusion

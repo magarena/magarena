@@ -1,7 +1,7 @@
 name=Invisible Stalker
 url=http://magiccards.info/isd/en/60.html
 image=http://mtgimage.com/card/invisible%20stalker.jpg
-value=4.137
+value=4.135
 rarity=U
 type=Creature
 subtype=Human,Rogue

@@ -1,7 +1,7 @@
 name=Dwarven Pony
 url=http://magiccards.info/hl/en/89.html
 image=http://mtgimage.com/card/dwarven%20pony.jpg
-value=2.261
+value=2.246
 rarity=R
 type=Creature
 subtype=Horse

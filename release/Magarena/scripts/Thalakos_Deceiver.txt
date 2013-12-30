@@ -1,7 +1,7 @@
 name=Thalakos Deceiver
 url=http://magiccards.info/sh/en/45.html
 image=http://mtgimage.com/card/thalakos%20deceiver.jpg
-value=3.927
+value=3.930
 rarity=R
 type=Creature
 subtype=Thalakos,Wizard

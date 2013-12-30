@@ -1,7 +1,7 @@
 name=Master of the Pearl Trident
 url=http://magiccards.info/m13/en/59.html
 image=http://mtgimage.com/card/master%20of%20the%20pearl%20trident.jpg
-value=4.247
+value=4.255
 rarity=R
 type=Creature
 subtype=Merfolk

@@ -1,7 +1,7 @@
 name=Gladecover Scout
 url=http://magiccards.info/m12/en/178.html
 image=http://mtgimage.com/card/gladecover%20scout.jpg
-value=3.929
+value=3.343
 rarity=C
 type=Creature
 subtype=Elf,Scout

@@ -1,7 +1,7 @@
 name=Exclude
 url=http://magiccards.info/in/en/56.html
 image=http://mtgimage.com/card/exclude.jpg
-value=4.190
+value=4.196
 rarity=C
 type=Instant
 cost={2}{U}

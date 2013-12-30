@@ -1,7 +1,7 @@
 name=Trigon of Mending
 url=http://magiccards.info/som/en/215.html
 image=http://mtgimage.com/card/trigon%20of%20mending.jpg
-value=1.803
+value=1.799
 rarity=U
 type=Artifact
 cost={2}

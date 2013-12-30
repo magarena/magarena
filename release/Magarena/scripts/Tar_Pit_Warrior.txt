@@ -1,7 +1,7 @@
 name=Tar Pit Warrior
 url=http://magiccards.info/bd/en/32.html
 image=http://mtgimage.com/card/tar%20pit%20warrior.jpg
-value=3.162
+value=3.171
 rarity=C
 type=Creature
 subtype=Cyclops,Warrior

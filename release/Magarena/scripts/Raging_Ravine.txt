@@ -1,7 +1,7 @@
 name=Raging Ravine
 url=http://magiccards.info/wwk/en/141.html
 image=http://mtgimage.com/card/raging%20ravine.jpg
-value=4.296
+value=4.298
 rarity=R
 type=Land
 mana=r3g3

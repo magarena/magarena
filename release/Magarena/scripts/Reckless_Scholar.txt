@@ -1,7 +1,7 @@
 name=Reckless Scholar
 url=http://magiccards.info/zen/en/60.html
 image=http://mtgimage.com/card/reckless%20scholar.jpg
-value=3.267
+value=3.293
 rarity=C
 type=Creature
 subtype=Human,Wizard

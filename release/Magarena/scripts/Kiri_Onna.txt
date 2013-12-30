@@ -1,7 +1,7 @@
 name=Kiri-Onna
 url=http://magiccards.info/sok/en/43.html
 image=http://mtgimage.com/card/kiri-onna.jpg
-value=1.792
+value=1.671
 rarity=U
 type=Creature
 subtype=Spirit

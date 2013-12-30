@@ -1,7 +1,7 @@
 name=Squall Drifter
 url=http://magiccards.info/cs/en/17.html
 image=http://mtgimage.com/card/squall%20drifter.jpg
-value=3.547
+value=3.600
 rarity=C
 type=Snow,Creature
 subtype=Elemental

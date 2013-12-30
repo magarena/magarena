@@ -1,7 +1,7 @@
 name=Silkbind Faerie
 url=http://magiccards.info/shm/en/148.html
 image=http://mtgimage.com/card/silkbind%20faerie.jpg
-value=2.951
+value=2.965
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

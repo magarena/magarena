@@ -1,7 +1,7 @@
 name=Igneous Golem
 url=http://magiccards.info/mr/en/270.html
 image=http://mtgimage.com/card/igneous%20golem.jpg
-value=2.233
+value=2.226
 rarity=U
 type=Artifact,Creature
 subtype=Golem

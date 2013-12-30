@@ -1,7 +1,7 @@
 name=Leonin Abunas
 url=http://magiccards.info/arc/en/1.html
 image=http://mtgimage.com/card/leonin%20abunas.jpg
-value=4.017
+value=4.000
 rarity=R
 type=Creature
 subtype=Cat,Cleric

@@ -1,7 +1,7 @@
 name=Righteous Charge
 url=http://magiccards.info/gtc/en/23.html
 image=http://mtgimage.com/card/righteous%20charge.jpg
-value=2.905
+value=2.886
 rarity=U
 type=Sorcery
 cost={1}{W}{W}

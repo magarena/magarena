@@ -1,7 +1,7 @@
 name=Princess Lucrezia
 url=http://magiccards.info/lg/en/289.html
 image=http://mtgimage.com/card/princess%20lucrezia.jpg
-value=1.342
+value=1.320
 rarity=U
 type=Legendary,Creature
 subtype=Human,Wizard

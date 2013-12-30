@@ -1,7 +1,7 @@
 name=Lavafume Invoker
 url=http://magiccards.info/roe/en/155.html
 image=http://mtgimage.com/card/lavafume%20invoker.jpg
-value=2.758
+value=2.824
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

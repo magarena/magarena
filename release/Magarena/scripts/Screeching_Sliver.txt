@@ -1,7 +1,7 @@
 name=Screeching Sliver
 url=http://magiccards.info/ts/en/75.html
 image=http://mtgimage.com/card/screeching%20sliver.jpg
-value=3.229
+value=3.265
 rarity=C
 type=Creature
 subtype=Sliver

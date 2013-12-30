@@ -1,7 +1,7 @@
 name=Nightsoil Kami
 url=http://magiccards.info/sok/en/139.html
 image=http://mtgimage.com/card/nightsoil%20kami.jpg
-value=2.480
+value=2.481
 rarity=C
 type=Creature
 subtype=Spirit

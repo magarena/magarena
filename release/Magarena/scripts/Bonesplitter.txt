@@ -1,7 +1,7 @@
 name=Bonesplitter
 url=http://magiccards.info/mi/en/146.html
 image=http://mtgimage.com/card/bonesplitter.jpg
-value=4.407
+value=4.268
 rarity=C
 type=Artifact
 subtype=Equipment

@@ -1,7 +1,7 @@
 name=Spectral Flight
 url=http://magiccards.info/isd/en/79.html
 image=http://mtgimage.com/card/spectral%20flight.jpg
-value=3.747
+value=3.721
 rarity=C
 type=Enchantment
 subtype=Aura

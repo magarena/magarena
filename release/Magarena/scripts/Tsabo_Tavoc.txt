@@ -1,7 +1,7 @@
 name=Tsabo Tavoc
 url=http://magiccards.info/in/en/281.html
 image=http://mtgimage.com/card/tsabo%20tavoc.jpg
-value=4.019
+value=4.038
 rarity=R
 type=Legendary,Creature
 subtype=Horror

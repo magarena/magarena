@@ -1,7 +1,7 @@
 name=Oxidda Daredevil
 url=http://magiccards.info/som/en/100.html
 image=http://mtgimage.com/card/oxidda%20daredevil.jpg
-value=1.836
+value=1.833
 rarity=C
 type=Creature
 subtype=Goblin,Artificer

@@ -1,7 +1,7 @@
 name=Safehold Sentry
 url=http://magiccards.info/shm/en/22.html
 image=http://mtgimage.com/card/safehold%20sentry.jpg
-value=2.55
+value=2.550
 rarity=C
 type=Creature
 subtype=Elf,Warrior

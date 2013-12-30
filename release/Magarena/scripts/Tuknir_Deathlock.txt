@@ -1,7 +1,7 @@
 name=Tuknir Deathlock
 url=http://magiccards.info/lg/en/307.html
 image=http://mtgimage.com/card/tuknir%20deathlock.jpg
-value=2.032
+value=2.000
 rarity=U
 type=Legendary,Creature
 subtype=Human,Wizard

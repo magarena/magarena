@@ -1,7 +1,7 @@
 name=Abyssal Horror
 url=http://magiccards.info/7e/en/115.html
 image=http://mtgimage.com/card/abyssal%20horror.jpg
-value=2.7
+value=2.700
 rarity=R
 type=Creature
 subtype=Horror

@@ -1,7 +1,7 @@
 name=Vector Asp
 url=http://magiccards.info/som/en/219.html
 image=http://mtgimage.com/card/vector%20asp.jpg
-value=2.986
+value=2.979
 rarity=C
 type=Artifact,Creature
 subtype=Snake

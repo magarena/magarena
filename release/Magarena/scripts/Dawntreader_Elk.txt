@@ -1,7 +1,7 @@
 name=Dawntreader Elk
 url=http://magiccards.info/dka/en/111.html
 image=http://mtgimage.com/card/dawntreader%20elk.jpg
-value=3.628
+value=3.639
 rarity=C
 type=Creature
 subtype=Elk

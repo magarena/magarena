@@ -1,7 +1,7 @@
 name=Jawbone Skulkin
 url=http://magiccards.info/eve/en/170.html
 image=http://mtgimage.com/card/jawbone%20skulkin.jpg
-value=1.986
+value=2.027
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

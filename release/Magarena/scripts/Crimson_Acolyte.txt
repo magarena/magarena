@@ -1,7 +1,7 @@
 name=Crimson Acolyte
 url=http://magiccards.info/in/en/11.html
 image=http://mtgimage.com/card/crimson%20acolyte.jpg
-value=3.712
+value=3.696
 rarity=C
 type=Creature
 subtype=Human,Cleric

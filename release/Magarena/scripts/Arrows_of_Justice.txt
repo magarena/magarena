@@ -1,7 +1,7 @@
 name=Arrows of Justice
 url=http://magiccards.info/gtc/en/211.html
 image=http://mtgimage.com/card/arrows%20of%20justice.jpg
-value=2.882
+value=2.839
 rarity=U
 type=Instant
 cost={2}{R/W}

@@ -1,7 +1,7 @@
 name=Pestermite
 url=http://magiccards.info/lw/en/78.html
 image=http://mtgimage.com/card/pestermite.jpg
-value=4.132
+value=4.143
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

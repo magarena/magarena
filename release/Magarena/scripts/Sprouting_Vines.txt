@@ -1,7 +1,7 @@
 name=Sprouting Vines
 url=http://magiccards.info/c13/en/173.html
 image=http://mtgimage.com/card/sprouting%20vines.jpg
-value=3
+value=3.700
 rarity=C
 type=Instant
 cost={2}{G}

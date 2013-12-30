@@ -1,7 +1,7 @@
 name=Gryff Vanguard
 url=http://magiccards.info/avr/en/59.html
 image=http://mtgimage.com/card/gryff%20vanguard.jpg
-value=2.872
+value=2.862
 rarity=C
 type=Creature
 subtype=Human,Knight

@@ -1,7 +1,7 @@
 name=Hopping Automaton
 url=http://magiccards.info/us/en/297.html
 image=http://mtgimage.com/card/hopping%20automaton.jpg
-value=2.35
+value=2.306
 rarity=U
 type=Artifact,Creature
 subtype=Construct

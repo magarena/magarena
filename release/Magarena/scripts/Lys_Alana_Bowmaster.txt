@@ -1,7 +1,7 @@
 name=Lys Alana Bowmaster
 url=http://magiccards.info/mt/en/130.html
 image=http://mtgimage.com/card/lys%20alana%20bowmaster.jpg
-value=2.971
+value=2.917
 rarity=C
 type=Creature
 subtype=Elf,Archer

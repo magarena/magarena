@@ -1,7 +1,7 @@
 name=Torsten Von Ursus
 url=http://magiccards.info/me3/en/183.html
 image=http://mtgimage.com/card/torsten%20von%20ursus.jpg
-value=2.000
+value=2.075
 rarity=C
 type=Legendary,Creature
 subtype=Human,Soldier

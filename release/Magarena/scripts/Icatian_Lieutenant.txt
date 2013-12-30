@@ -1,7 +1,7 @@
 name=Icatian Lieutenant
 url=http://magiccards.info/fe/en/151.html
 image=http://mtgimage.com/card/icatian%20lieutenant.jpg
-value=2.375
+value=2.404
 rarity=C
 type=Creature
 subtype=Human,Soldier

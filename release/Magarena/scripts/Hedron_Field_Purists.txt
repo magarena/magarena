@@ -1,7 +1,7 @@
 name=Hedron-Field Purists
 url=http://magiccards.info/roe/en/25.html
 image=http://mtgimage.com/card/hedron%2Dfield%20purists.jpg
-value=3.494
+value=3.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

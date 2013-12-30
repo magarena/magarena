@@ -1,7 +1,7 @@
 name=Rhox
 url=http://magiccards.info/10e/en/291.html
 image=http://mtgimage.com/card/rhox.jpg
-value=4.420
+value=4.428
 rarity=R
 type=Creature
 subtype=Rhino,Beast

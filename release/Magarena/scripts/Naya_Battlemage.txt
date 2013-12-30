@@ -1,7 +1,7 @@
 name=Naya Battlemage
 url=http://magiccards.info/ala/en/142.html
 image=http://mtgimage.com/card/naya%20battlemage.jpg
-value=3.063
+value=3.090
 rarity=U
 type=Creature
 subtype=Human,Shaman

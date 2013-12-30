@@ -1,7 +1,7 @@
 name=Riddlekeeper
 url=http://magiccards.info/cmd/en/59.html
 image=http://mtgimage.com/card/riddlekeeper.jpg
-value=3.772
+value=3.777
 rarity=R
 type=Creature
 subtype=Homunculus

@@ -1,7 +1,7 @@
 name=Benalish Trapper
 url=http://magiccards.info/in/en/8.html
 image=http://mtgimage.com/card/benalish%20trapper.jpg
-value=3.833
+value=3.824
 rarity=C
 type=Creature
 subtype=Human,Soldier

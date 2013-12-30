@@ -1,7 +1,7 @@
 name=Mikaeus, the Unhallowed
 url=http://magiccards.info/dka/en/70.html
 image=http://mtgimage.com/card/mikaeus%2C%20the%20unhallowed.jpg
-value=3.868
+value=3.875
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Cleric

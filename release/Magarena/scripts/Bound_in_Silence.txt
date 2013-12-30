@@ -1,7 +1,7 @@
 name=Bound in Silence
 url=http://magiccards.info/fut/en/20.html
 image=http://mtgimage.com/card/bound%20in%20silence.jpg
-value=3.500
+value=3.324
 removal=3
 rarity=U
 type=Tribal,Enchantment

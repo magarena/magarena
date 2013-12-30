@@ -1,7 +1,7 @@
 name=Lord of Atlantis
 url=http://magiccards.info/tsts/en/24.html
 image=http://mtgimage.com/card/lord%20of%20atlantis.jpg
-value=4.546
+value=4.540
 rarity=R
 type=Creature
 subtype=Merfolk

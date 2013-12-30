@@ -1,7 +1,7 @@
 name=Wall of Wood
 url=http://magiccards.info/dpa/en/89.html
 image=http://mtgimage.com/card/wall%20of%20wood.jpg
-value=1.803
+value=1.812
 ability=defender
 rarity=C
 type=Creature

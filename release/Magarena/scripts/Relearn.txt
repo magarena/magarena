@@ -1,7 +1,7 @@
 name=Relearn
 url=http://magiccards.info/st/en/48.html
 image=http://mtgimage.com/card/relearn.jpg
-value=3.542
+value=3.420
 rarity=U
 type=Sorcery
 cost={1}{U}{U}

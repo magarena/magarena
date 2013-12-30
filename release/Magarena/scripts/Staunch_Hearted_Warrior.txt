@@ -1,7 +1,7 @@
 name=Staunch-Hearted Warrior
 url=http://magiccards.info/ths/en/179.html
 image=http://mtgimage.com/card/staunch%2Dhearted%20warrior.jpg
-value=3.700
+value=3.429
 rarity=C
 type=Creature
 subtype=Human,Warrior

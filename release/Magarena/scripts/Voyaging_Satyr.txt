@@ -1,7 +1,7 @@
 name=Voyaging Satyr
 url=http://magiccards.info/ths/en/182.html
 image=http://mtgimage.com/card/voyaging%20satyr.jpg
-value=3.978
+value=3.508
 rarity=C
 type=Creature
 subtype=Satyr,Druid

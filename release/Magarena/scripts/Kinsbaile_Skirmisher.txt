@@ -1,7 +1,7 @@
 name=Kinsbaile Skirmisher
 url=http://magiccards.info/lw/en/24.html
 image=http://mtgimage.com/card/kinsbaile%20skirmisher.jpg
-value=3.098
+value=3.103
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

@@ -1,7 +1,7 @@
 name=Living Terrain
 url=http://magiccards.info/8e/en/260.html
 image=http://mtgimage.com/card/living%20terrain.jpg
-value=3.528
+value=3.539
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Day of the Dragons
 url=http://magiccards.info/sc/en/31.html
 image=http://mtgimage.com/card/day%20of%20the%20dragons.jpg
-value=4.322
+value=4.331
 rarity=R
 type=Enchantment
 cost={4}{U}{U}{U}

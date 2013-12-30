@@ -1,7 +1,7 @@
 name=Perilous Shadow
 url=http://magiccards.info/rtr/en/74.html
 image=http://mtgimage.com/card/perilous%20shadow.jpg
-value=2.750
+value=2.798
 rarity=C
 type=Creature
 subtype=Insect,Shade

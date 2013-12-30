@@ -1,7 +1,7 @@
 name=Onyx Goblet
 url=http://magiccards.info/ala/en/81.html
 image=http://mtgimage.com/card/onyx%20goblet.jpg
-value=2.429
+value=2.456
 rarity=C
 type=Artifact
 cost={2}{B}

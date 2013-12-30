@@ -1,7 +1,7 @@
 name=Otherworld Atlas
 url=http://magiccards.info/avr/en/219.html
 image=http://mtgimage.com/card/otherworld%20atlas.jpg
-value=3.000
+value=3.017
 rarity=R
 type=Artifact
 cost={4}

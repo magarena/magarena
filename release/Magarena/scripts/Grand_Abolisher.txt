@@ -1,7 +1,7 @@
 name=Grand Abolisher
 url=http://magiccards.info/m12/en/19.html
 image=http://mtgimage.com/card/grand%20abolisher.jpg
-value=4.533
+value=4.538
 rarity=R
 type=Creature
 subtype=Human,Cleric

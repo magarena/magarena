@@ -1,7 +1,7 @@
 name=Breach
 url=http://magiccards.info/us/pt/120.html
 image=http://mtgimage.com/card/breach.jpg
-value=2.24
+value=2.300
 rarity=C
 type=Instant
 cost={2}{B}

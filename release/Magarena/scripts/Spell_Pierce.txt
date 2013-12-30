@@ -1,7 +1,7 @@
 name=Spell Pierce
 url=http://magiccards.info/zen/en/67.html
 image=http://mtgimage.com/card/spell%20pierce.jpg
-value=4.445
+value=4.452
 rarity=C
 type=Instant
 cost={U}

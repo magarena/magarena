@@ -1,7 +1,7 @@
 name=Kher Keep
 url=http://magiccards.info/ts/en/275.html
 image=http://mtgimage.com/card/kher%20keep.jpg
-value=4.458
+value=4.393
 rarity=R
 type=Legendary,Land
 ability=tap add mana {1};\

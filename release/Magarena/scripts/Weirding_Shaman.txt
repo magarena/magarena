@@ -1,7 +1,7 @@
 name=Weirding Shaman
 url=http://magiccards.info/mt/en/84.html
 image=http://mtgimage.com/card/weirding%20shaman.jpg
-value=3.048
+value=3.045
 rarity=R
 type=Creature
 subtype=Goblin,Shaman

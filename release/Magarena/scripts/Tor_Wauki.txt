@@ -1,7 +1,7 @@
 name=Tor Wauki
 url=http://magiccards.info/ch/en/123.html
 image=http://mtgimage.com/card/tor%20wauki.jpg
-value=3.086
+value=3.083
 rarity=U
 type=Legendary,Creature
 subtype=Human,Archer

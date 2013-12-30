@@ -1,7 +1,7 @@
 name=Talon Trooper
 url=http://magiccards.info/arb/en/14.html
 image=http://mtgimage.com/card/talon%20trooper.jpg
-value=2.720
+value=2.717
 ability=flying
 rarity=C
 type=Creature

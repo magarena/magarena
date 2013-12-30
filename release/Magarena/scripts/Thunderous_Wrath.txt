@@ -1,7 +1,7 @@
 name=Thunderous Wrath
 url=http://magiccards.info/avr/en/160.html
 image=http://mtgimage.com/card/thunderous%20wrath.jpg
-value=3.886
+value=3.898
 rarity=U
 type=Instant
 cost={4}{R}{R}

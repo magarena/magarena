@@ -1,7 +1,7 @@
 name=Silent Attendant
 url=http://magiccards.info/us/en/51.html
 image=http://mtgimage.com/card/silent%20attendant.jpg
-value=2.629
+value=2.641
 rarity=C
 type=Creature
 subtype=Human,Cleric

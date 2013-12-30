@@ -1,7 +1,7 @@
 name=Izzet Guildmage
 url=http://magiccards.info/ddj/en/4.html
 image=http://mtgimage.com/card/izzet%20guildmage.jpg
-value=4.341
+value=4.283
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,7 +1,7 @@
 name=Silverblade Paladin
 url=http://magiccards.info/avr/en/36.html
 image=http://mtgimage.com/card/silverblade%20paladin.jpg
-value=3.972
+value=3.980
 rarity=R
 type=Creature
 subtype=Human,Knight

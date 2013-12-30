@@ -1,7 +1,7 @@
 name=Dark Depths
 url=http://magiccards.info/cs/en/145.html
 image=http://mtgimage.com/card/dark%20depths.jpg
-value=4.573
+value=4.563
 rarity=R
 type=Legendary,Snow,Land
 ability=enters with counter ice 10

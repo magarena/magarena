@@ -1,7 +1,7 @@
 name=Inaction Injunction
 url=http://magiccards.info/rtr/en/41.html
 image=http://mtgimage.com/card/inaction%20injunction.jpg
-value=3.321
+value=3.331
 removal=1
 rarity=C
 type=Sorcery

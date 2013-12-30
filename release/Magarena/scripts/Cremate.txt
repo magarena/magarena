@@ -1,7 +1,7 @@
 name=Cremate
 url=http://magiccards.info/rtr/en/59.html
 image=http://mtgimage.com/card/cremate.jpg
-value=3.703
+value=3.712
 rarity=C
 type=Instant
 cost={B}

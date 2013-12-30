@@ -1,7 +1,7 @@
 name=Breathstealer
 url=http://magiccards.info/mr/en/7.html
 image=http://mtgimage.com/card/breathstealer.jpg
-value=2.586
+value=2.597
 rarity=C
 type=Creature
 subtype=Nightstalker

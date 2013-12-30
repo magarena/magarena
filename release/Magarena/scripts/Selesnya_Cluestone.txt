@@ -1,7 +1,7 @@
 name=Selesnya Cluestone
 url=http://magiccards.info/dgm/en/144.html
 image=http://mtgimage.com/card/selesnya%20cluestone.jpg
-value=2.655
+value=2.700
 rarity=C
 type=Artifact
 cost={3}

@@ -1,7 +1,7 @@
 name=Duskwalker
 url=http://magiccards.info/in/en/104.html
 image=http://mtgimage.com/card/duskwalker.jpg
-value=2.697
+value=2.765
 rarity=C
 type=Creature
 subtype=Human,Minion

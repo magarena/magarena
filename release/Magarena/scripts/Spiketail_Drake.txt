@@ -1,7 +1,7 @@
 name=Spiketail Drake
 url=http://magiccards.info/pr/pt/48.html
 image=http://mtgimage.com/card/spiketail%20drake.jpg
-value=3.269
+value=3.293
 rarity=U
 type=Creature
 subtype=Drake

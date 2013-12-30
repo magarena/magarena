@@ -1,7 +1,7 @@
 name=Escape Artist
 url=http://magiccards.info/od/en/84.html
 image=http://mtgimage.com/card/escape%20artist.jpg
-value=3.045
+value=3.059
 rarity=C
 type=Creature
 subtype=Human,Wizard

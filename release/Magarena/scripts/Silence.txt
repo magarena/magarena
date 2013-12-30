@@ -1,7 +1,7 @@
 name=Silence
 url=http://magiccards.info/m11/en/30.html
 image=http://mtgimage.com/card/silence.jpg
-value=4.157
+value=4.319
 rarity=R
 type=Instant
 cost={W}

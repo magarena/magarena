@@ -1,7 +1,7 @@
 name=Haazda Exonerator
 url=http://magiccards.info/di/en/11.html
 image=http://mtgimage.com/card/haazda%20exonerator.jpg
-value=2.069
+value=2.141
 rarity=C
 type=Creature
 subtype=Human,Cleric

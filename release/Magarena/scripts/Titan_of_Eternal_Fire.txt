@@ -1,7 +1,7 @@
 name=Titan of Eternal Fire
 url=http://magiccards.info/ths/en/144.html
 image=http://mtgimage.com/card/titan%20of%20eternal%20fire.jpg
-value=3.617
+value=3.471
 rarity=R
 type=Creature
 subtype=Giant

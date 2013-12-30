@@ -1,7 +1,7 @@
 name=Stalking Assassin
 url=http://magiccards.info/in/en/277.html
 image=http://mtgimage.com/card/stalking%20assassin.jpg
-value=1.87
+value=1.870
 rarity=R
 type=Creature
 subtype=Human,Assassin

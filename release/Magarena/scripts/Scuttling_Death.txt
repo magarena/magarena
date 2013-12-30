@@ -1,7 +1,7 @@
 name=Scuttling Death
 url=http://magiccards.info/chk/en/142.html
 image=http://mtgimage.com/card/scuttling%20death.jpg
-value=1.114
+value=1.122
 rarity=C
 type=Creature
 subtype=Spirit

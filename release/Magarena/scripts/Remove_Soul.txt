@@ -1,7 +1,7 @@
 name=Remove Soul
 url=http://magiccards.info/10e/en/100.html
 image=http://mtgimage.com/card/remove%20soul.jpg
-value=4.167
+value=4.163
 rarity=C
 type=Instant
 cost={1}{U}

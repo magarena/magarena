@@ -1,7 +1,7 @@
 name=Temporal Adept
 url=http://magiccards.info/9e/en/102.html
 image=http://mtgimage.com/card/temporal%20adept.jpg
-value=4.075
+value=4.057
 rarity=R
 type=Creature
 subtype=Human,Wizard

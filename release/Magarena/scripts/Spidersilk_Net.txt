@@ -1,7 +1,7 @@
 name=Spidersilk Net
 url=http://magiccards.info/zen/en/206.html
 image=http://mtgimage.com/card/spidersilk%20net.jpg
-value=3.611
+value=3.618
 rarity=C
 type=Artifact
 subtype=Equipment

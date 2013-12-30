@@ -1,7 +1,7 @@
 name=Wurmcoil Engine
 url=http://magiccards.info/som/en/223.html
 image=http://mtgimage.com/card/wurmcoil%20engine.jpg
-value=4.620
+value=4.616
 rarity=M
 type=Artifact,Creature
 subtype=Wurm

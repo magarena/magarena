@@ -1,7 +1,7 @@
 name=Army of Allah
 url=http://magiccards.info/an/en/56.html
 image=http://mtgimage.com/card/army%20of%20allah.jpg
-value=3.194
+value=3.176
 rarity=C
 type=Instant
 cost={1}{W}{W}

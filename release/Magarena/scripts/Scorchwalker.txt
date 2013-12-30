@@ -1,7 +1,7 @@
 name=Scorchwalker
 url=http://magiccards.info/gtc/en/104.html
 image=http://mtgimage.com/card/scorchwalker.jpg
-value=3.053
+value=3.041
 rarity=C
 type=Creature
 subtype=Elemental

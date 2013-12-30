@@ -1,7 +1,7 @@
 name=Slith Bloodletter
 url=http://magiccards.info/mi/en/77.html
 image=http://mtgimage.com/card/slith%20bloodletter.jpg
-value=3.962
+value=3.988
 rarity=U
 type=Creature
 subtype=Slith

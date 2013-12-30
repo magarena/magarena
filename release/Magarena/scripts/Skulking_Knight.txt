@@ -1,7 +1,7 @@
 name=Skulking Knight
 url=http://magiccards.info/ts/en/130.html
 image=http://mtgimage.com/card/skulking%20knight.jpg
-value=2.75
+value=2.730
 rarity=C
 type=Creature
 subtype=Zombie,Knight

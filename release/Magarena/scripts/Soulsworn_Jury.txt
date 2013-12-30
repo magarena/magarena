@@ -1,7 +1,7 @@
 name=Soulsworn Jury
 url=http://magiccards.info/di/en/17.html
 image=http://mtgimage.com/card/soulsworn%20jury.jpg
-value=3.5
+value=3.520
 rarity=C
 type=Creature
 subtype=Spirit

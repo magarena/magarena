@@ -1,7 +1,7 @@
 name=Mycologist
 url=http://magiccards.info/pc/en/27.html
 image=http://mtgimage.com/card/mycologist.jpg
-value=2.972
+value=2.959
 rarity=U
 type=Creature
 subtype=Human,Druid

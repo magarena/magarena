@@ -1,7 +1,7 @@
 name=Mogg War Marshal
 url=http://magiccards.info/ts/en/170.html
 image=http://mtgimage.com/card/mogg%20war%20marshal.jpg
-value=4.333
+value=4.316
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

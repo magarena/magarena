@@ -1,7 +1,7 @@
 name=Elvish Harbinger
 url=http://magiccards.info/evg/en/4.html
 image=http://mtgimage.com/card/elvish%20harbinger.jpg
-value=3.679
+value=3.944
 rarity=U
 type=Creature
 subtype=Elf,Druid

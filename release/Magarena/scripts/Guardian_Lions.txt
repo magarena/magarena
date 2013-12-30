@@ -1,7 +1,7 @@
 name=Guardian Lions
 url=http://magiccards.info/m13/en/17.html
 image=http://mtgimage.com/card/guardian%20lions.jpg
-value=1.841
+value=1.844
 rarity=C
 type=Creature
 subtype=Cat

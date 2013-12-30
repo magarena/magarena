@@ -1,7 +1,7 @@
 name=Steelform Sliver
 url=http://magiccards.info/m14/en/38.html
 image=http://mtgimage.com/card/steelform%20sliver.jpg
-value=1.963
+value=1.840
 rarity=U
 type=Creature
 subtype=Sliver

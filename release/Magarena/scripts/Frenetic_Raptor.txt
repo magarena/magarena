@@ -1,7 +1,7 @@
 name=Frenetic Raptor
 url=http://magiccards.info/le/en/93.html
 image=http://mtgimage.com/card/frenetic%20raptor.jpg
-value=1.821
+value=1.776
 rarity=U
 type=Creature
 subtype=Lizard,Beast

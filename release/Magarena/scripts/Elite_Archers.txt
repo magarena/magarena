@@ -1,7 +1,7 @@
 name=Elite Archers
 url=http://magiccards.info/8e/en/18.html
 image=http://mtgimage.com/card/elite%20archers.jpg
-value=2.097
+value=2.068
 rarity=R
 type=Creature
 subtype=Human,Soldier,Archer

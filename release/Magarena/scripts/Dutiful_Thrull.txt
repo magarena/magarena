@@ -1,7 +1,7 @@
 name=Dutiful Thrull
 url=http://magiccards.info/gtc/en/11.html
 image=http://mtgimage.com/card/dutiful%20thrull.jpg
-value=3.417
+value=3.438
 rarity=C
 type=Creature
 subtype=Thrull

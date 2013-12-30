@@ -1,7 +1,7 @@
 name=Viscid Lemures
 url=http://magiccards.info/ts/en/141.html
 image=http://mtgimage.com/card/viscid%20lemures.jpg
-value=1.828
+value=1.926
 rarity=C
 type=Creature
 subtype=Spirit

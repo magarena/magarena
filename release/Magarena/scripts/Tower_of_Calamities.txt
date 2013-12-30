@@ -1,7 +1,7 @@
 name=Tower of Calamities
 url=http://magiccards.info/som/en/212.html
 image=http://mtgimage.com/card/tower%20of%20calamities.jpg
-value=2.750
+value=2.732
 rarity=R
 type=Artifact
 cost={4}

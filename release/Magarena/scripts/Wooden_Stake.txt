@@ -1,7 +1,7 @@
 name=Wooden Stake
 url=http://magiccards.info/isd/en/237.html
 image=http://mtgimage.com/card/wooden%20stake.jpg
-value=2.824
+value=2.816
 rarity=C
 type=Artifact
 subtype=Equipment

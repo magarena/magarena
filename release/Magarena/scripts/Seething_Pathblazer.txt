@@ -1,7 +1,7 @@
 name=Seething Pathblazer
 url=http://magiccards.info/mt/en/101.html
 image=http://mtgimage.com/card/seething%20pathblazer.jpg
-value=2.456
+value=2.414
 rarity=C
 type=Creature
 subtype=Elemental,Warrior

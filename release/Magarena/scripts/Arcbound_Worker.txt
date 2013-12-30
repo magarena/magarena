@@ -1,7 +1,7 @@
 name=Arcbound Worker
 url=http://magiccards.info/ddf/en/40.html
 image=http://mtgimage.com/card/arcbound%20worker.jpg
-value=4.132
+value=4.125
 rarity=C
 type=Artifact,Creature
 subtype=Construct

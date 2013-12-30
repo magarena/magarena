@@ -1,7 +1,7 @@
 name=Tectonic Edge
 url=http://magiccards.info/wwk/en/145.html
 image=http://mtgimage.com/card/tectonic%20edge.jpg
-value=3.677
+value=3.689
 rarity=U
 type=Land
 ability=tap add mana {1}

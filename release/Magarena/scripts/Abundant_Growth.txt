@@ -1,7 +1,7 @@
 name=Abundant Growth
 url=http://magiccards.info/avr/en/167.html
 image=http://mtgimage.com/card/abundant%20growth.jpg
-value=3.792
+value=3.794
 rarity=C
 type=Enchantment
 subtype=Aura

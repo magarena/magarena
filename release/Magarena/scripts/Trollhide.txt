@@ -1,7 +1,7 @@
 name=Trollhide
 url=http://magiccards.info/m14/en/197.html
 image=http://mtgimage.com/card/trollhide.jpg
-value=3.300
+value=3.310
 rarity=C
 type=Enchantment
 subtype=Aura

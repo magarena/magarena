@@ -1,7 +1,7 @@
 name=Vampiric Spirit
 url=http://magiccards.info/8e/en/170.html
 image=http://mtgimage.com/card/vampiric%20spirit.jpg
-value=2.677
+value=2.688
 rarity=R
 type=Creature
 subtype=Spirit

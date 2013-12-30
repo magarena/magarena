@@ -1,7 +1,7 @@
 name=Talas Merchant
 url=http://magiccards.info/po2/en/50.html
 image=http://mtgimage.com/card/talas%20merchant.jpg
-value=2.583
+value=2.579
 rarity=C
 type=Creature
 subtype=Human,Pirate

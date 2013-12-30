@@ -1,7 +1,7 @@
 name=Greatbow Doyen
 url=http://magiccards.info/mt/en/125.html
 image=http://mtgimage.com/card/greatbow%20doyen.jpg
-value=4.038
+value=4.051
 rarity=R
 type=Creature
 subtype=Elf,Archer

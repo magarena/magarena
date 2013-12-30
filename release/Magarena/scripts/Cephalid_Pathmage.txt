@@ -1,7 +1,7 @@
 name=Cephalid Pathmage
 url=http://magiccards.info/le/en/31.html
 image=http://mtgimage.com/card/cephalid%20pathmage.jpg
-value=2.677
+value=2.750
 rarity=C
 type=Creature
 subtype=Cephalid,Wizard

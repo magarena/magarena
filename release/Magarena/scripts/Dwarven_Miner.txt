@@ -1,7 +1,7 @@
 name=Dwarven Miner
 url=http://magiccards.info/mr/en/169.html
 image=http://mtgimage.com/card/dwarven%20miner.jpg
-value=4.052
+value=4.067
 rarity=U
 type=Creature
 subtype=Dwarf

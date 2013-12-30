@@ -1,7 +1,7 @@
 name=Voice of All
 url=http://magiccards.info/cmd/en/35.html
 image=http://mtgimage.com/card/voice%20of%20all.jpg
-value=4.115
+value=4.112
 rarity=R
 type=Creature
 subtype=Angel

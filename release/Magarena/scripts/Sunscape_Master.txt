@@ -1,7 +1,7 @@
 name=Sunscape Master
 url=http://magiccards.info/in/en/42.html
 image=http://mtgimage.com/card/sunscape%20master.jpg
-value=4.039
+value=4.050
 rarity=R
 type=Creature
 subtype=Human,Wizard

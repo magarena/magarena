@@ -1,7 +1,7 @@
 name=Eyes of the Wisent
 url=http://magiccards.info/lw/en/210.html
 image=http://mtgimage.com/card/eyes%20of%20the%20wisent.jpg
-value=4.123
+value=4.130
 rarity=R
 type=Tribal,Enchantment
 subtype=Elemental

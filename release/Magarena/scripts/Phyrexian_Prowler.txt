@@ -1,7 +1,7 @@
 name=Phyrexian Prowler
 url=http://magiccards.info/ne/en/65.html
 image=http://mtgimage.com/card/phyrexian%20prowler.jpg
-value=2.417
+value=2.387
 rarity=U
 type=Creature
 subtype=Zombie,Mercenary

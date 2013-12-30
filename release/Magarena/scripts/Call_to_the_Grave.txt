@@ -1,7 +1,7 @@
 name=Call to the Grave
 url=http://magiccards.info/m12/en/85.html
 image=http://mtgimage.com/card/call%20to%20the%20grave.jpg
-value=4.075
+value=4.086
 rarity=R
 type=Enchantment
 cost={4}{B}

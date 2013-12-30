@@ -1,7 +1,7 @@
 name=Merrow Witsniper
 url=http://magiccards.info/mt/en/40.html
 image=http://mtgimage.com/card/merrow%20witsniper.jpg
-value=2.837
+value=2.875
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

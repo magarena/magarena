@@ -1,7 +1,7 @@
 name=Archweaver
 url=http://magiccards.info/rtr/en/114.html
 image=http://mtgimage.com/card/archweaver.jpg
-value=2.260
+value=2.273
 rarity=U
 type=Creature
 subtype=Spider

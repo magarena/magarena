@@ -1,7 +1,7 @@
 name=Vedalken Certarch
 url=http://magiccards.info/som/en/52.html
 image=http://mtgimage.com/card/vedalken%20certarch.jpg
-value=3.852
+value=3.854
 rarity=C
 type=Creature
 subtype=Vedalken,Wizard

@@ -1,7 +1,7 @@
 name=Vampiric Tutor
 url=http://magiccards.info/vi/en/22.html
 image=http://mtgimage.com/card/vampiric%20tutor.jpg
-value=4.639
+value=4.620
 rarity=R
 type=Instant
 cost={B}

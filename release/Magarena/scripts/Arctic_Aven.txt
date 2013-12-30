@@ -1,7 +1,7 @@
 name=Arctic Aven
 url=http://magiccards.info/m13/en/42.html
 image=http://mtgimage.com/card/arctic%20aven.jpg
-value=3.429
+value=3.453
 rarity=U
 type=Creature
 subtype=Bird,Wizard

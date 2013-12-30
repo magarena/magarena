@@ -1,7 +1,7 @@
 name=Darba
 url=http://magiccards.info/pr/en/111.html
 image=http://mtgimage.com/card/darba.jpg
-value=2.679
+value=2.672
 rarity=U
 type=Creature
 subtype=Bird,Beast

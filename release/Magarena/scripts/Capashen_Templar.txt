@@ -1,7 +1,7 @@
 name=Capashen Templar
 url=http://magiccards.info/ud/en/5.html
 image=http://mtgimage.com/card/capashen%20templar.jpg
-value=2.717
+value=2.708
 rarity=C
 type=Creature
 subtype=Human,Knight

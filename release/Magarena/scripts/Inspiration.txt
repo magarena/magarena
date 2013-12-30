@@ -1,7 +1,7 @@
 name=Inspiration
 url=http://magiccards.info/rtr/en/42.html
 image=http://mtgimage.com/card/inspiration.jpg
-value=3.582
+value=3.548
 rarity=C
 type=Instant
 cost={3}{U}

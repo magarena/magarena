@@ -1,7 +1,7 @@
 name=Scavenging Scarab
 url=http://magiccards.info/ds/en/51.html
 image=http://mtgimage.com/card/scavenging%20scarab.jpg
-value=1.030
+value=1.022
 ability=can't block
 rarity=C
 type=Creature

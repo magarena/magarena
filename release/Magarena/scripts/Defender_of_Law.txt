@@ -1,7 +1,7 @@
 name=Defender of Law
 url=http://magiccards.info/ul/en/5.html
 image=http://mtgimage.com/card/defender%20of%20law.jpg
-value=3.343
+value=3.351
 rarity=C
 type=Creature
 subtype=Human,Knight

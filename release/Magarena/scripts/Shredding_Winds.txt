@@ -1,7 +1,7 @@
 name=Shredding Winds
 url=http://magiccards.info/ths/en/178.html
 image=http://mtgimage.com/card/shredding%20winds.jpg
-value=1.942
+value=2.029
 rarity=C
 type=Instant
 cost={2}{G}

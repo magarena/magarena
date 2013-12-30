@@ -1,7 +1,7 @@
 name=Hobgoblin Dragoon
 url=http://magiccards.info/eve/en/142.html
 image=http://mtgimage.com/card/hobgoblin%20dragoon.jpg
-value=2.240
+value=2.255
 ability=flying;first strike
 rarity=C
 type=Creature

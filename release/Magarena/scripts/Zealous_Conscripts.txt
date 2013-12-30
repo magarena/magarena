@@ -1,7 +1,7 @@
 name=Zealous Conscripts
 url=http://magiccards.info/avr/en/166.html
 image=http://mtgimage.com/card/zealous%20conscripts.jpg
-value=3.883
+value=3.892
 ability=haste
 rarity=R
 type=Creature

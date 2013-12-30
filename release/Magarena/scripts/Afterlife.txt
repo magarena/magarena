@@ -1,7 +1,7 @@
 name=Afterlife
 url=http://magiccards.info/cmd/en/2.html
 image=http://mtgimage.com/card/afterlife.jpg
-value=4.041
+value=4.066
 removal=3
 rarity=U
 type=Instant

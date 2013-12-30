@@ -1,7 +1,7 @@
 name=Zuran Orb
 url=http://magiccards.info/fvr/en/15.html
 image=http://mtgimage.com/card/zuran%20orb.jpg
-value=4.511
+value=4.506
 rarity=U
 type=Artifact
 cost={0}

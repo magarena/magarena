@@ -1,7 +1,7 @@
 name=Edge of the Divinity
 url=http://magiccards.info/eve/en/87.html
 image=http://mtgimage.com/card/edge%20of%20the%20divinity.jpg
-value=4.186
+value=4.187
 rarity=C
 type=Enchantment
 subtype=Aura

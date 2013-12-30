@@ -1,7 +1,7 @@
 name=Hyalopterous Lemure
 url=http://magiccards.info/ia/en/21.html
 image=http://mtgimage.com/card/hyalopterous%20lemure.jpg
-value=3.41
+value=3.441
 rarity=C
 type=Creature
 subtype=Spirit

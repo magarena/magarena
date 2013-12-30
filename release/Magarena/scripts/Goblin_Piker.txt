@@ -1,7 +1,7 @@
 name=Goblin Piker
 url=http://magiccards.info/m12/en/141.html
 image=http://mtgimage.com/card/goblin%20piker.jpg
-value=1.447
+value=1.441
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

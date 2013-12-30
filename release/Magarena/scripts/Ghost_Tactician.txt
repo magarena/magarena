@@ -1,7 +1,7 @@
 name=Ghost Tactician
 url=http://magiccards.info/pc/en/6.html
 image=http://mtgimage.com/card/ghost%20tactician.jpg
-value=1.183
+value=1.190
 rarity=C
 type=Creature
 subtype=Spirit,Spellshaper

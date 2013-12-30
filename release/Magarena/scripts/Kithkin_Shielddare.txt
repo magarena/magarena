@@ -1,7 +1,7 @@
 name=Kithkin Shielddare
 url=http://magiccards.info/shm/en/10.html
 image=http://mtgimage.com/card/kithkin%20shielddare.jpg
-value=2.161
+value=2.259
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

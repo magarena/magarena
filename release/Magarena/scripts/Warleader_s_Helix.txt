@@ -1,7 +1,7 @@
 name=Warleader's Helix
 url=http://magiccards.info/dgm/en/116.html
 image=http://mtgimage.com/card/warleader%27s%20helix.jpg
-value=3.757
+value=3.770
 removal=4
 rarity=U
 type=Instant

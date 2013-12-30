@@ -1,7 +1,7 @@
 name=Faerie Conclave
 url=http://magiccards.info/10e/en/351.html
 image=http://mtgimage.com/card/faerie%20conclave.jpg
-value=4.300
+value=4.357
 rarity=U
 type=Land
 mana=u3

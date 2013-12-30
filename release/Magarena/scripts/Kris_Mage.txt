@@ -1,7 +1,7 @@
 name=Kris Mage
 url=http://magiccards.info/mm/en/195.html
 image=http://mtgimage.com/card/kris%20mage.jpg
-value=2.973
+value=2.947
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

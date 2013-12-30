@@ -1,7 +1,7 @@
 name=Wall of Reverence
 url=http://magiccards.info/cfx/en/20.html
 image=http://mtgimage.com/card/wall%20of%20reverence.jpg
-value=4.000
+value=4.062
 rarity=R
 type=Creature
 subtype=Spirit,Wall

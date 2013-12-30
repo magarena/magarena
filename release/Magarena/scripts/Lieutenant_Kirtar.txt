@@ -1,7 +1,7 @@
 name=Lieutenant Kirtar
 url=http://magiccards.info/od/en/29.html
 image=http://mtgimage.com/card/lieutenant%20kirtar.jpg
-value=3.95
+value=3.950
 rarity=R
 type=Legendary,Creature
 subtype=Bird,Soldier

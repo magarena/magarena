@@ -1,7 +1,7 @@
 name=Siege Mastodon
 url=http://magiccards.info/m12/en/34.html
 image=http://mtgimage.com/card/siege%20mastodon.jpg
-value=1.552
+value=1.500
 rarity=C
 type=Creature
 subtype=Elephant

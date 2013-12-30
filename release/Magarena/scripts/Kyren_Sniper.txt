@@ -1,7 +1,7 @@
 name=Kyren Sniper
 url=http://magiccards.info/mm/en/199.html
 image=http://mtgimage.com/card/kyren%20sniper.jpg
-value=2.438
+value=2.400
 rarity=C
 type=Creature
 subtype=Goblin

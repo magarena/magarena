@@ -1,7 +1,7 @@
 name=Zombie Apocalypse
 url=http://magiccards.info/dka/en/80.html
 image=http://mtgimage.com/card/zombie%20apocalypse.jpg
-value=3.868
+value=3.879
 removal=2
 rarity=R
 type=Sorcery

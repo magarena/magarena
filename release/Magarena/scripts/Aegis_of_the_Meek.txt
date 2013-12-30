@@ -1,7 +1,7 @@
 name=Aegis of the Meek
 url=http://magiccards.info/ia/en/282.html
 image=http://mtgimage.com/card/aegis%20of%20the%20meek.jpg
-value=1.635
+value=1.658
 rarity=R
 type=Artifact
 cost={3}

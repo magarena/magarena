@@ -1,7 +1,7 @@
 name=Vulshok Heartstoker
 url=http://magiccards.info/som/en/107.html
 image=http://mtgimage.com/card/vulshok%20heartstoker.jpg
-value=2.35
+value=2.368
 rarity=C
 type=Creature
 subtype=Human,Shaman

@@ -1,7 +1,7 @@
 name=Magus of the Tabernacle
 url=http://magiccards.info/pc/en/8.html
 image=http://mtgimage.com/card/magus%20of%20the%20tabernacle.jpg
-value=4.019
+value=4.091
 rarity=R
 type=Creature
 subtype=Human,Wizard

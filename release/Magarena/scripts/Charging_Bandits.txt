@@ -1,7 +1,7 @@
 name=Charging Bandits
 url=http://magiccards.info/po/en/6.html
 image=http://mtgimage.com/card/charging%20bandits.jpg
-value=2.146
+value=2.180
 rarity=U
 type=Creature
 subtype=Human,Rogue

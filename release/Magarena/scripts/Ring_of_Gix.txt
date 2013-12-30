@@ -1,7 +1,7 @@
 name=Ring of Gix
 url=http://magiccards.info/ul/en/131.html
 image=http://mtgimage.com/card/ring%20of%20gix.jpg
-value=3.779
+value=3.705
 rarity=R
 type=Artifact
 cost={3}

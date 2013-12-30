@@ -1,7 +1,7 @@
 name=Field of Souls
 url=http://magiccards.info/ddk/en/30.html
 image=http://mtgimage.com/card/field%20of%20souls.jpg
-value=4.333
+value=4.281
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

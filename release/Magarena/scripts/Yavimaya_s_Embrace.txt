@@ -1,7 +1,7 @@
 name=Yavimaya's Embrace
 url=http://magiccards.info/ap/en/127.html
 image=http://mtgimage.com/card/yavimaya%27s%20embrace.jpg
-value=3.174
+value=3.182
 rarity=R
 type=Enchantment
 subtype=Aura

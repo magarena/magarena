@@ -1,7 +1,7 @@
 name=Skyshroud Ranger
 url=http://magiccards.info/10e/en/297.html
 image=http://mtgimage.com/card/skyshroud%20ranger.jpg
-value=3.826
+value=3.851
 rarity=C
 type=Creature
 subtype=Elf

@@ -1,7 +1,7 @@
 name=Skullclamp
 url=http://magiccards.info/cmd/en/260.html
 image=http://mtgimage.com/card/skullclamp.jpg
-value=4.481
+value=4.485
 rarity=U
 type=Artifact
 subtype=Equipment

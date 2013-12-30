@@ -1,7 +1,7 @@
 name=Spirit Mantle
 url=http://magiccards.info/m12/en/35.html
 image=http://mtgimage.com/card/spirit%20mantle.jpg
-value=3.864
+value=3.903
 rarity=U
 type=Enchantment
 subtype=Aura

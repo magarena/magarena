@@ -1,7 +1,7 @@
 name=Goldmeadow Lookout
 url=http://magiccards.info/fut/en/22.html
 image=http://mtgimage.com/card/goldmeadow%20lookout.jpg
-value=2.737
+value=2.738
 rarity=U
 type=Creature
 subtype=Kithkin,Spellshaper

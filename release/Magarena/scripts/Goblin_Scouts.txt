@@ -1,7 +1,7 @@
 name=Goblin Scouts
 url=http://magiccards.info/mr/en/178.html
 image=http://mtgimage.com/card/goblin%20scouts.jpg
-value=3.241
+value=3.207
 rarity=U
 type=Sorcery
 cost={3}{R}{R}

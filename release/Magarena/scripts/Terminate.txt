@@ -1,7 +1,7 @@
 name=Terminate
 url=http://magiccards.info/cmd/en/231.html
 image=http://mtgimage.com/card/terminate.jpg
-value=4.726
+value=4.521
 removal=5
 rarity=C
 type=Instant

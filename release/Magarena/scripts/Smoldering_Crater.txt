@@ -1,7 +1,7 @@
 name=Smoldering Crater
 url=http://magiccards.info/c13/en/325.html
 image=http://mtgimage.com/card/smoldering%20crater.jpg
-value=3.333
+value=3.200
 rarity=C
 type=Land
 mana=r3

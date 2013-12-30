@@ -1,7 +1,7 @@
 name=Elvish Piper
 url=http://magiccards.info/m10/en/177.html
 image=http://mtgimage.com/card/elvish%20piper.jpg
-value=4.493
+value=4.486
 rarity=R
 type=Creature
 subtype=Elf,Shaman

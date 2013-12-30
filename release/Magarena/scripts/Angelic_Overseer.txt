@@ -1,7 +1,7 @@
 name=Angelic Overseer
 url=http://magiccards.info/isd/en/3.html
 image=http://mtgimage.com/card/angelic%20overseer.jpg
-value=3.882
+value=3.883
 rarity=M
 type=Creature
 subtype=Angel

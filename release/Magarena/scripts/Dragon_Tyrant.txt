@@ -1,7 +1,7 @@
 name=Dragon Tyrant
 url=http://magiccards.info/sc/en/88.html
 image=http://mtgimage.com/card/dragon%20tyrant.jpg
-value=4.337
+value=4.333
 rarity=R
 type=Creature
 subtype=Dragon

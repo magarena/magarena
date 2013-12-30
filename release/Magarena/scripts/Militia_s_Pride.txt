@@ -1,7 +1,7 @@
 name=Militia's Pride
 url=http://magiccards.info/lw/en/30.html
 image=http://mtgimage.com/card/militia%27s%20pride.jpg
-value=3.936
+value=3.938
 rarity=R
 type=Tribal,Enchantment
 subtype=Kithkin

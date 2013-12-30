@@ -1,7 +1,7 @@
 name=Grapeshot
 url=http://magiccards.info/ts/en/160.html
 image=http://mtgimage.com/card/grapeshot.jpg
-value=4.214
+value=4.208
 rarity=C
 type=Sorcery
 cost={1}{R}

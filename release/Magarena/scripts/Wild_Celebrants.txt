@@ -1,7 +1,7 @@
 name=Wild Celebrants
 url=http://magiccards.info/ths/en/147.html
 image=http://mtgimage.com/card/wild%20celebrants.jpg
-value=2.658
+value=2.792
 rarity=C
 type=Creature
 subtype=Satyr

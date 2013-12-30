@@ -1,7 +1,7 @@
 name=Drakewing Krasis
 url=http://magiccards.info/gtc/en/157.html
 image=http://mtgimage.com/card/drakewing%20krasis.jpg
-value=3.290
+value=3.293
 rarity=C
 type=Creature
 subtype=Lizard,Drake

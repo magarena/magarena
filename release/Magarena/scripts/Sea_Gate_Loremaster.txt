@@ -1,7 +1,7 @@
 name=Sea Gate Loremaster
 url=http://magiccards.info/zen/en/63.html
 image=http://mtgimage.com/card/sea%20gate%20loremaster.jpg
-value=3.956
+value=3.988
 rarity=R
 type=Creature
 subtype=Merfolk,Wizard,Ally

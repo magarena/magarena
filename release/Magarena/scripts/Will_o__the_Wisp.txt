@@ -1,7 +1,7 @@
 name=Will-o'-the-Wisp
 url=http://magiccards.info/9e/en/169.html
 image=http://mtgimage.com/card/will%2Do%27%2Dthe%2Dwisp.jpg
-value=4.605
+value=4.613
 rarity=R
 type=Creature
 subtype=Spirit

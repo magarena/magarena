@@ -1,7 +1,7 @@
 name=Armored Wolf-Rider
 url=http://magiccards.info/dgm/en/52.html
 image=http://mtgimage.com/card/armored%20wolf%2Drider.jpg
-value=2.823
+value=2.804
 rarity=C
 type=Creature
 subtype=Elf,Knight

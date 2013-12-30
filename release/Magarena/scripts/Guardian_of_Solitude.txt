@@ -1,7 +1,7 @@
 name=Guardian of Solitude
 url=http://magiccards.info/chk/en/64.html
 image=http://mtgimage.com/card/guardian%20of%20solitude.jpg
-value=2.2
+value=2.173
 rarity=U
 type=Creature
 subtype=Spirit

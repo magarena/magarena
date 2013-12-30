@@ -1,7 +1,7 @@
 name=Shriekhorn
 url=http://magiccards.info/mbs/en/130.html
 image=http://mtgimage.com/card/shriekhorn.jpg
-value=2.963
+value=2.914
 rarity=C
 type=Artifact
 cost={1}

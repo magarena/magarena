@@ -1,7 +1,7 @@
 name=Warmind Infantry
 url=http://magiccards.info/gtc/en/111.html
 image=http://mtgimage.com/card/warmind%20infantry.jpg
-value=2.735
+value=2.743
 rarity=C
 type=Creature
 subtype=Elemental,Soldier

@@ -1,7 +1,7 @@
 name=Gutless Ghoul
 url=http://magiccards.info/cs/en/60.html
 image=http://mtgimage.com/card/gutless%20ghoul.jpg
-value=3.026
+value=2.962
 rarity=C
 type=Snow,Creature
 subtype=Zombie

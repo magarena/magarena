@@ -1,7 +1,7 @@
 name=Skylasher
 url=http://magiccards.info/dgm/en/49.html
 image=http://mtgimage.com/card/skylasher.jpg
-value=4.014
+value=4.000
 rarity=R
 type=Creature
 subtype=Insect

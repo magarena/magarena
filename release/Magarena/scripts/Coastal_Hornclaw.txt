@@ -1,7 +1,7 @@
 name=Coastal Hornclaw
 url=http://magiccards.info/8e/en/66.html
 image=http://mtgimage.com/card/coastal%20hornclaw.jpg
-value=1.26
+value=1.260
 rarity=C
 type=Creature
 subtype=Bird

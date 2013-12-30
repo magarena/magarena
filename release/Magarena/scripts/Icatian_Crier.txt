@@ -1,7 +1,7 @@
 name=Icatian Crier
 url=http://magiccards.info/ts/en/23.html
 image=http://mtgimage.com/card/icatian%20crier.jpg
-value=2.974
+value=3.062
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

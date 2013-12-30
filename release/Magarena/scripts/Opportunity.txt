@@ -1,7 +1,7 @@
 name=Opportunity
 url=http://magiccards.info/c13/en/51.html
 image=http://mtgimage.com/card/opportunity.jpg
-value=3.61
+value=4.231
 rarity=U
 type=Instant
 cost={4}{U}{U}

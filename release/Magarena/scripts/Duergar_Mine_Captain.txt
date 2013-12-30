@@ -1,7 +1,7 @@
 name=Duergar Mine-Captain
 url=http://magiccards.info/eve/en/138.html
 image=http://mtgimage.com/card/duergar%20mine-captain.jpg
-value=2.8
+value=2.793
 rarity=U
 type=Creature
 subtype=Dwarf,Soldier

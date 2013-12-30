@@ -1,7 +1,7 @@
 name=Screaming Fury
 url=http://magiccards.info/5dn/en/78.html
 image=http://mtgimage.com/card/screaming%20fury.jpg
-value=2.8
+value=2.731
 rarity=C
 type=Sorcery
 cost={2}{R}
