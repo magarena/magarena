@@ -62,7 +62,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.45 (December 28, 2013)
+Release 1.45 (December 31, 2013)
 ============
 includes contributions from:
 ember hauler
@@ -71,6 +71,253 @@ Jericho Pumpkin
 Lodici
 melvin
 ShawnieBoy
+
+- complete UI revamp to present a simpler, more focused game-like UI. New look
+  should improve touch-screen access.
+  * Menubar removed and replaced with "menu" screens accessed using ESC or standard screen icon
+  * F12 toggles UI visibility for those want to view the background art in all its glory
+  * ESC is global key for displaying options/pause menu
+  * ESC can now be used to cancel preferences dialog.
+  * Backspace and Delete keys as undo action in duel screen in place of ESC
+
+- added additional ability icons
+
+- updated readme with latest keyboard controls.
+
+- moved duel.txt and duel.cfg into new "duels" directory with a view to
+  allowing multiple duels to be saved in future.
+
+- relocated preconstructed dec files from "Magarena/decks" directory to new
+  "Magarena/decks/prebuilt" directory. Magarena will prevent user saving new
+  decks to or overwriting existing decks in the "prebuilt" directory. "decks"
+  directory is still the default for saving user custom decks.
+
+- added new "Deck Editor/Explorer" preference setting that if set will only
+  refresh card preview image when actual table entry is selected instead of
+  when mouse cursor moves over it. Default is false so behaviour will remain
+  the same as before.
+
+- added new setting to show/hide game log messages by default. During a game
+  you can toggle visibility by clicking on the log header.
+
+- added the following to the card script:
+  * effect: <chosen> discards <amount> cards.
+  * effect: <chosen> discards <amount> cards at random.
+  * effect: <chosen> draws <amount> cards, then discards <amount> cards.
+  * effect: <chosen> gains <amount> life. 
+  * effect: prevent the next <amount> damage that would be dealt to SN this turn.
+  * cost: Sacrifice an Elemental
+  * cost: Sacrifice a Wall
+  * cost: Sacrifice a permanent
+  * cost: Return SN to its owner's hand
+  * cost: Pay 3 Life
+  * cost: {C2} - remove two charge counters
+  * activation restriction: {Sorcery} - activate only as Sorcery
+  * ability: protection from legendary creatures
+  * property: set_pt=<n>/<m> (for enchantments)
+
+- fixed the following bugs:
+  * sort by toughness actually sorts by power in deck builder (issue 398)
+  * deck statistics not updated when loading an existing deck in deck editor (issue 430)
+  * options icon hit area was extending the full length of the title bar
+  * open logs folder' option launches another instance of Magarena (issue 454)
+  * deck editor can only save changes to a deck once (issue 432)
+  * temporarily disabled Ability Mono deck generator as it causes a runtime exception (issue 446)
+  * deck editor/card explorer - mana cost filter does not show all possible costs (issue 440)
+  * card explorer - card pool table totals titlebar is missing (issue 439).
+  * deck description in duel setup not updated when loading new deck from deck editor (issue 450)
+  * unable to close Deck Editor if deck is invalid (issue 431)
+  * correct definition of target filter NEG_TARGET_CREATURE_PLUSONE_COUNTER
+  * Kodama of the South Tree should affect each other creature you control not each other creature
+  * Advance Scout's ability cost should be {W} instead of {1}{W}
+
+- added the following cards:
+Abundant Growth, Abyssal Horror, Accelerate, Acolyte of Xathrid,
+Adun Oakenshield, Aegis of the Meek, Alpha Kavu, Amugaba, Amulet of Unmaking,
+Ana Disciple, Anarchist, Angelic Renewal, Annihilate, Antler Skulkin,
+Aquus Steed, Archivist, Argivian Archaeologist, Argivian Blacksmith,
+Argivian Restoration, Arms Dealer, Army of Allah, Arrows of Justice,
+Artifact Blast, Asphodel Wanderer, Atog, Attunement, Auger Spree, Aura Blast,
+Avatar of Slaughter, Aven Archer, Aven Fogbringer, Avenging Angel,
+Aven Redeemer, Aven Trooper, Awaken the Ancient, Azorius Keyrune, Bad River,
+Baleful Eidolon, Baleful Force, Balloon Peddler, Balm of Restoration,
+Balshan Griffin, Bant Battlemage, Barbarian Lunatic, Barrin, Master Wizard,
+Battleflight Eagle, Battle Rampart, Bazaar of Baghdad, Beetleform Mage,
+Benalish Emissary, Benalish Heralds, Benalish Trapper, Benthic Djinn,
+Bequeathal, Bewilder, Bile Urchin, Blaster Mage, Blazing Archon,
+Blessing of Leeches, Blister Beetle, Blizzard Elemental, Bloodpyre Elemental,
+Bloodrite Invoker, Boa Constrictor, Bogardan Rager, Boggart Arsonists,
+Boggart Harbinger, Boggart Loggers, Boiling Blood, Bone Flute, Boon Satyr,
+Boris Devilboon, Boros Keyrune, Braidwood Sextant, Breach, Briarhorn,
+Brine Shaman, Broken Fall, Brutal Nightstalker, Bull Rush, Buried Ruin,
+Burning Fields, Burst of Energy, Cabal Slaver, Cabal Trainee, Cache Raiders,
+Cackling Imp, Cage of Hands, Caller of Gales, Call to Mind, Capashen Unicorn,
+Caregiver, Carrion Howler, Cartographer, Catalog, Cat Burglar,
+Cathartic Adept, Caustic Tar, Celestial Archon, Celestial Force,
+Centaur Archer, Centaur Safeguard, Cephalid Broker, Cephalid Looter,
+Cephalid Pathmage, Cephalid Retainer, Cephalid Scout, Cessation, Chandler,
+Child of Gaea, Child of Thorns, Chime of Night, Chorus of Woe, Chromium,
+Cinder Storm, Citanul Hierophants, Citanul Woodreaders, Claws of Gix, Clear,
+Cleaver Riot, Clickslither, Clockwork Gnomes, Cloudseeder, Coastal Drake,
+Coastal Hornclaw, Codex Shredder, Combat Medic, Conjurer's Bauble,
+Corrupt Court Official, Corrupted Zendikon, Crackling Triton, Craven Knight,
+Cremate, Crimson Acolyte, Crimson Manticore, Crossbow Ambush,
+Crossbow Infantry, Crowd Favorites, Crush, Crusher Zendikon, Cultbrand Cinder,
+Dakmor Ghoul, Dakmor Lancer, Daraja Griffin, Darba, Daring Apprentice,
+Dark Betrayal, Dark Prophecy, Dark Revenant, Dauthi Jackal, D'Avenant Archer,
+D'Avenant Healer, Dawnfluke, Dawnray Archer, Dawnstrider, Dawntreader Elk,
+Death Cultist, Death's-Head Buzzard, Death Ward, Deception, Dedicated Martyr,
+Deepchannel Mentor, Deepwood Drummer, Dega Disciple, Deja Vu, Demonic Dread,
+Desperate Charge, Devout Witness, Dimir Keyrune, Disciple of Tevesh Szat,
+Disease Carriers, Dismiss, Disorient, Dispersing Orb, Disrupt, Dive Bomber,
+Divebomber Griffin, Divine Verdict, Doomed Necromancer, Dosan's Oldest Chant,
+Dowsing Shaman, Dragon Egg, Dragon Tyrant, Druid Lyrist, Duergar Assailant,
+Duergar Mine-Captain, Duskmantle, House of Shadow, Dutiful Thrull,
+Dwarven Demolition Team, Dwarven Lieutenant, Dwarven Pony, Earthblighter,
+Earthbrawn, Eastern Paladin, Ebon Dragon, Eiganjo Castle, Elder Mastery,
+Elite Archers, Elven Cache, Elvish Harbinger, Elvish Pathcutter, Emmessi Tome,
+Enslaved Dwarf, Ephemeron, Escape Artist, Exorcist, Expedition Map,
+Expendable Troops, Face of Fear, Facevaulter, Faerie Harbinger,
+Fallen Ferromancer, Fallen Ideal, False Demise, Fanatical Devotion,
+Fanatical Fever, Fang Skulkin, Faultgrinder, Fault Riders,
+Femeref Enchantress, Field of Souls, Fire Ambush, Fire Snake, Fit of Rage,
+Flame Jet, Flamekin Harbinger, Flamekin Spitfire, Flame Spirit,
+Flamewave Invoker, Flash Counter, Fledgling Imp, Flood Plain,
+Flowstone Channeler, Flowstone Overseer, Flowstone Strike, Flowstone Thopter,
+Folk of the Pines, Fool's Demise, Foul Familiar, Frontline Sage, Frostling,
+Frostwind Invoker, Fugue, Furious Resistance, Fyndhorn Brownie,
+Galvanic Alchemist, Ghosts of the Damned, Ghost Tactician, Ghost Warden,
+Giant Harbinger, Glare of Heresy, Glintwing Invoker, Glowing Anemone,
+Gnathosaur, Gnawing Zombie, Goblin Assault, Goblin Chirurgeon,
+Goblin Digging Team, Goblin Legionnaire, Goblin Masons, Goblin Scouts,
+Goblin Sledder, Goldmeadow Harrier, Goldmeadow Lookout, Golgari Keyrune,
+Golgari Rotwurm, Grandmother Sengir, Grasslands, Greater Stone Spirit,
+Greenseeker, Grimclaw Bats, Grixis Battlemage, Ground Rift, Gruul Keyrune,
+Guardian of Solitude, Guardian Zendikon, Gutless Ghoul, Haazda Exonerator,
+Halo Hunter, Hammer of Purphoros, Hana Kami, Hapless Researcher,
+Harmattan Efreet, Harrier Griffin, Haru-Onna, Haze of Rage, Headlong Rush,
+Heartstabber Mosquito, Heavy Ballista, Hell Swarm, Herbal Poultice,
+Hero's Demise, Homarid Shaman, Hoodwink, Hoof Skulkin, Hopeful Eidolon,
+Hopping Automaton, Horizon Seed, Hornet Harasser, Horror of the Dim,
+Howling Fury, Hungry Mist, Hunter of Eyeblights, Hunting Pack,
+Hyalopterous Lemure, Hydrosurge, Icatian Crier, Icatian Lieutenant,
+Icatian Scout, Icatian Town, Ill-Tempered Cyclops, Immaculate Magistrate,
+Immobilizing Ink, Infectious Host, Infiltrate, Inner-Flame Acolyte,
+Innocence Kami, Inspiration, Iron Will, Ivy Dancer, Ivy Lane Denizen,
+Jabari's Banner, Jacques le Vert, Jagged-Scar Archers, Jalum Tome,
+Jawbone Skulkin, Jhoira's Toolbox, Jodah's Avenger, Journeyer's Kite, Joven,
+Jump, Jund Battlemage, Juniper Order Druid, Junun Efreet, Kami of Ancient Law,
+Kami of False Hope, Kami of the Hunt, Kami of the Waning Moon,
+Kami of Twisted Reflection, Keening Apparition, Kei Takahashi,
+Kelsinko Ranger, Kemuri-Onna, Kinsbaile Skirmisher, Kiri-Onna,
+Kithkin Daggerdare, Kithkin Harbinger, Kithkin Shielddare,
+Kithkin Spellduster, Kitsune Diviner, Kobold Overlord, Kobold Taskmaster,
+Kongming, "Sleeping Dragon", Krark-Clan Grunt, Kris Mage, Krosan Archer,
+Krosan Constrictor, Krosan Groundshaker, Kuro, Pitlord, Kyren Sniper,
+Lady Caleria, Larceny, Lash of the Whip, Lavafume Invoker, Lawbringer,
+Leafcrown Dryad, Leaping Lizard, Leonin Abunas, Leonin Armorguard,
+Leonin Snarecaster, Ley Druid, Liberated Dwarf, Lieutenant Kirtar,
+Lightbringer, Lightning Blast, Lightning Strike, Lithatog, Living Terrain,
+Llanowar Augur, Llanowar Druid, Llanowar Mentor, Llanowar Sentinel,
+Llanowar Vanguard, Loam Dweller, Loxodon Anchorite, Loxodon Mender,
+Lumbering Satyr, Luminous Angel, Lux Cannon, Lys Alana Bowmaster,
+Lys Alana Huntmaster, Mage's Guile, Mageta the Lion, Magmatic Force,
+Magnetic Flux, Magnify, Magus of the Bazaar, Magus of the Tabernacle,
+Malevolent Awakening, Marker Beetles, Marsh Gas, Master Biomancer,
+Master Decoy, Master Healer, Master's Call, Medicine Bag, Megatog,
+Mending Hands, Mending Touch, Merfolk Mesmerist, Merfolk Traders,
+Merrow Grimeblotter, Merrow Harbinger, Merrow Wavebreakers, Merrow Witsniper,
+Messenger Drake, Metallurgeon, Metropolis Sprite, Mightstone, Millstone,
+Minamo, School at Water's Edge, Mindeye Drake, Mind Knives, Mindwarper,
+Mine Bearer, Minister of Impediments, Mistveil Plains, Mogg Raider,
+Mold Shambler, Molting Harpy, Molting Skin, Monk Idealist, Monstrous Carabid,
+Monstrous Growth, Moonlit Wake, Morale, Morgue Thrull, Mountain Yeti,
+Mournful Zombie, Mournwhelk, Mudbutton Torchrunner, Multani's Harmony,
+Mycologist, Nantuko Disciple, Nath of the Gilt-Leaf, Nature's Cloak,
+Naya Battlemage, Neck Snap, Necrogen Spellbomb, Nemata, Grove Guardian,
+Nest Invader, Nezumi Bone-Reader, Niall Silvain, Nightscape Master,
+Nikko-Onna, Nimbus Naiad, Nobilis of War, Nocturnal Raid, Northern Paladin,
+Nylea's Emissary, Observant Alseid, Obsidian Acolyte, Onyx Goblet,
+Opportunity, Orcish Bloodpainter, Orcish Mechanics, Order of the Sacred Torch,
+Order of the Stars, Ore Gorger, Orim, Samite Healer,
+Orzhova, the Church of Deals, Orzhov Keyrune, Ostiary Thrull, Owl Familiar,
+Oxidda Daredevil, Oyobi, Who Split the Heavens, Palladia-Mors,
+Path of Anger's Flame, Patrol Hound, Patrol Signaler, Petrified Field,
+Phantasmal Forces, Phantom General, Phyrexian Broodlings, Phyrexian Debaser,
+Phyrexian Defiler, Phyrexian Denouncer, Phyrexian Plaguelord, Phytoburst,
+Pilgrim's Eye, Piranha Marsh, Pit Raptor, Pixie Queen, Plague Dogs,
+Plagued Rusalka, Plague Witch, Pradesh Gypsies, Predator's Strike,
+Priest of Iroas, Prince of Thralls, Princess Lucrezia, Protomatter Powder,
+Pteron Ghost, Pull Under, Pulsating Illusion, Putrid Imp, Quagmire Druid,
+Quirion Trailblazer, Rabid Rats, Ragnar, Rakdos Keyrune, Rakka Mar,
+Ranger's Guile, Rank and File, Rathi Trapper, Ravenous Baboons, Razortip Whip,
+Reaping the Graves, Reckless Scholar, Reconstruction, Refresh, Regenerate,
+Regress, Reito Lantern, Reknit, Relearn, Reliquary Monk, Remembrance, Rescind,
+Rescue, Resplendent Mentor, Restless Bones, Returned Centaur,
+Return to Battle, Revive, Ridged Kusite, Righteous Charge,
+Ritual of Restoration, Riven Turnbull, Rogue's Passage, Ronom Unicorn,
+Rootwater Diver, Rushwood Herbalist, Sacellum Archers, Sadistic Hypnotist,
+Safehold Sentry, Sage of Lat-Nam, Sage's Knowledge, Sakura-Tribe Elder,
+Saltfield Recluse, Salvage Scout, Sangrite Surge, Sanity Gnawers,
+Scare Tactics, Scattershot, School of Piranha, Scion of Darkness,
+Scorched Rusalka, Scorching Spear, Scrap, Screaming Fury, Screeching Drake,
+Scrivener, Searing Flesh, Searing Wind, Seeker of Skybreak,
+Seething Pathblazer, Seismic Mage, Seismic Stomp, Seize the Initiative,
+Selesnya Keyrune, Serpent Assassin, Serpent's Gift, Serpent Warrior,
+Serra Advocate, Serra Paladin, Seshiro the Anointed, Setessan Griffin,
+Shade's Form, Shauku's Minion, Shell Skulkin, Shield Mate,
+Shieldmate's Blessing, Shield Wall, Shinewend, Shinka, the Bloodsoaked Keep,
+Shock Troops, Show of Valor, Shredding Winds, Shriekhorn, Shriekmaw,
+Shriek of Dread, Shrink, Silent Attendant, Silk Net, Silkwing Scout,
+Simic Keyrune, Skirk Ridge Exhumer, Skulking Fugitive, Skulking Ghost,
+Skulking Knight, Skull of Orm, Skyblinder Staff, Sky-Eel School, Skygames,
+Skyshaper, Skyshroud Archer, Skyshroud Poacher, Skywing Aven,
+Slingshot Goblin, Slinking Skirge, Sliversmith, Slobad, Goblin Tinkerer,
+Smog Elemental, Smokespew Invoker, Snare the Skies, Solidarity, Somnomancer,
+Soothing Balm, Souldrinker, Soulmender, Soul of Magma, Soulsworn Jury,
+Southern Paladin, Sparkspitter, Spark Spray, Spawning Pit, Spearpoint Oread,
+Specter's Wail, Spiderwig Boggart, Spike Breeder, Spike Colony, Spike Drone,
+Spike Feeder, Spike Soldier, Spiketail Drake, Spiketail Drakeling,
+Spike Worker, Spinal Villain, Spindrift Drake, Spire Tracer, Spiteful Bully,
+Spitting Hydra, Split-Tail Miko, Spoils of Victory, Sporoloth Ancient, Sprout,
+Sprouting Vines, Squall Drifter, Squee's Embrace, Squirrel Wrangler,
+Stalking Assassin, Stalking Bloodsucker, Starved Rusalka, Steadfastness,
+Stern Mentor, Stern Proctor, Stinging Barrier, Stingmoggie, Stonewood Invoker,
+Stonewright, Stonybrook Angler, Stormscape Apprentice, Storm Spirit,
+Stormwatch Eagle, Stromgald Cabal, Strongarm Thug, Stronghold Assassin,
+Stronghold Biologist, Stronghold Machinist, Stronghold Taskmaster,
+Sunscape Master, Surrakar Banisher, Suture Spirit, Sword Dancer,
+Sylvan Ranger, Sylvan Safekeeper, Tainted Strike, Talas Warrior, Tar Pitcher,
+Tar Pit Warrior, Teardrop Kami, Tel-Jilad Lifebreather, Temporal Adept,
+Temporal Fissure, Tendrils of Agony, Terminal Moraine, Thassa's Emissary,
+Thornscape Apprentice, Thorn Thallid, Three Tragedies, Thriss, Nantuko Primus,
+Thunderscape Apprentice, Thunderscape Master, Tireless Tribe,
+Titan of Eternal Fire, Tivadar of Thorn, Tolarian Sentinel, Tolarian Serpent,
+Tonic Peddler, Torch Slinger, Tortoise Formation, Tor Wauki, Tower of Murmurs,
+Trading Post, Tragic Poet, Trailblazer, Traveler's Amulet, Treefolk Harbinger,
+Treefolk Healer, Trenching Steed, Trench Wurm, Trickster Mage,
+Trigon of Mending, Triskelavus, Troubled Healer, Tsabo Tavoc,
+Tuknir Deathlock, Tunnel, Tyrranax, Uktabi Faerie, Umbral Mantle, Unburden,
+Undertaker, Undying Beast, Undying Evil, Unfulfilled Desires,
+Unnatural Predation, Unnatural Speed, Unseen Walker, Unspeakable Symbol,
+Untamed Wilds, Unyaro Bee Sting, Uproot, Urbis Protector, Urborg Emissary,
+Urborg Shambler, Utopia Vow, Vaevictis Asmadi, Valorous Charge, Vanquish,
+Vaporkin, Vastwood Zendikon, Vectis Agents, Vedalken Entrancer,
+Veldrane of Sengir, Viashino Bladescout, Viashino Firstblade, Vigilant Drake,
+Village Elder, Viridian Emissary, Viridian Scout, Viridian Zealot,
+Virtuous Charge, Viscid Lemures, Vitalizing Wind, Vodalian Hypnotist,
+Vodalian Mage, Vodalian Merchant, Voice of All, Voidwielder,
+Volcanic Submersion, Vulshok Heartstoker, Waking Nightmare,
+Wall of Distortion, Wall of Kelp, Wall of Mulch, Wall of Water,
+Wanderer's Twig, Warrior's Charge, Warrior's Honor, War-Torch Goblin,
+Waterfront Bouncer, Wayfarer's Bauble, Weatherseed Elf, Weirding Shaman,
+Welding Jar, Welkin Guide, Welkin Hawk, Western Paladin, Whip Sergeant,
+Whipstitched Zombie, Whiptail Moloch, Wielding the Green Dragon,
+Wild Celebrants, Wildheart Invoker, Wild Leotau, Wildwood Rebirth,
+Wind Dancer, Wind Zendikon, Wispmare, Wistful Thinking, Witch Hunter,
+Wydwen, the Biting Gale, Wyluli Wolf, Xira Arien, Yavimaya Granger,
+Yellow Scarves Troops, Yeva's Forcemage, Young Wei Recruits, Yuki-Onna,
+Zarichi Tiger
 
 Release 1.44 (November 30, 2013)
 ============
