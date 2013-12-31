@@ -1024,6 +1024,7 @@ D'Avenant Archer
 D'Avenant Healer
 Dawnfluke
 Dawnray Archer
+Dawnstrider
 Dawnstrike Paladin
 Dawntreader Elk
 Day of Judgment
