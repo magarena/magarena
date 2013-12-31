@@ -171,7 +171,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public String getImageName() {
         return token ?
             CardDefinitions.getCanonicalName(fullName) :
-            fullName;
+            // replace Windows reserved characters with underscore
+            fullName.replaceAll("[<>:\"/\\\\|?*\\x00-\\x1F]", "_");
     }
 
     public void setImageCount(final int count) {
