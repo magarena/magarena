@@ -7,5 +7,6 @@ type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=2/3
+ability=fear
 timing=main
 requires_groovy_code
