@@ -23,13 +23,22 @@ import javax.swing.SwingUtilities;
 
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 
+    // Safeguard that ensures that if for some reason uncaughtException()
+    // is called multiple times (eg. from a timer running on a separate thread)
+    // only the first case is actually handled. This prevents multiple
+    // error notification dialogs being created.
+    private static boolean isRunning = false;
+
     public void uncaughtException(final Thread th, final Throwable ex) {
-        MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
-        if (MagicMain.rootFrame != null) {
-            grabScreenShot(MagicMain.rootFrame);
-            doNotifyUser();
+        if (!isRunning) {
+            isRunning = true;
+            MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
+            if (MagicMain.rootFrame != null) {
+                grabScreenShot(MagicMain.rootFrame);
+                doNotifyUser();
+            }
+            System.exit(1);
         }
-        System.exit(1);
     }
 
     /**
