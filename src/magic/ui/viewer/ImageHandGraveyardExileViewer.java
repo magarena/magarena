@@ -60,10 +60,11 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
             switch (tabSelector.getSelectedTab()) {
                 case 0: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).hand,true); break;
                 case 1: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).graveyard,false); break;
-                case 2: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).graveyard,false); break;
-                case 3: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).exile,false); break;
-                case 4: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).exile,false); break;
-                case 5: cardListViewer.setCardList(other,false); break;
+                case 2: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).exile,false); break;
+                case 3: cardListViewer.setCardList(other,false); break;
+                case 4: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).graveyard,false); break;
+                case 5: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).exile,false); break;
+
             }
             repaint();
         }
