@@ -1,0 +1,11 @@
+name=Assembly-Worker
+url=http://magiccards.info/ts/en/248.html
+image=http://mtgimage.com/card/Assembly-Worker.jpg
+value=2.853
+rarity=U
+type=Artifact,Creature
+subtype=Assembly-Worker
+cost={3}
+pt=2/2
+ability=pay {T}:Target Assembly-Worker gets +1/+1 until end of turn.
+timing=main
