@@ -1,0 +1,9 @@
+name=Aetherize
+url=http://magiccards.info/gtc/en/29.html
+image=http://mtgimage.com/card/aetherize.jpg
+value=3.711
+rarity=U
+type=Instant
+cost={3}{U}
+timing=removal
+requires_groovy_code

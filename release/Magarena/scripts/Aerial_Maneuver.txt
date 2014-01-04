@@ -1,0 +1,9 @@
+name=Aerial Maneuver
+url=http://magiccards.info/gtc/en/1.html
+image=http://mtgimage.com/card/aerial%20maneuver.jpg
+value=2.6
+rarity=C
+type=Instant
+cost={1}{W}
+timing=pump
+requires_groovy_code

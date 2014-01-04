@@ -1,0 +1,9 @@
+name=Argent Mutation
+url=http://magiccards.info/nph/en/27.html
+image=http://mtgimage.com/card/argent%20mutation.jpg
+value=1.766
+rarity=U
+type=Instant
+cost={2}{U}
+timing=pump
+requires_groovy_code

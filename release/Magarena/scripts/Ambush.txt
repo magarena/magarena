@@ -1,0 +1,9 @@
+name=Ambush
+url=http://magiccards.info/hl/en/78.html
+image=http://mtgimage.com/card/ambush.jpg
+value=1.817
+rarity=C
+type=Instant
+cost={3}{R}
+timing=pump
+requires_groovy_code
