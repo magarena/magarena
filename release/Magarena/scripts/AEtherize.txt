@@ -1,4 +1,4 @@
-name=Aetherize
+name=AEtherize
 url=http://magiccards.info/gtc/en/29.html
 image=http://mtgimage.com/card/aetherize.jpg
 value=3.711
