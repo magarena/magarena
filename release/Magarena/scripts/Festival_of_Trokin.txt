@@ -1,0 +1,9 @@
+name=Festival of Trokin
+url=http://magiccards.info/po2/en/136.html
+image=http://mtgimage.com/card/festival%20of%20trokin.jpg
+value=3.957
+rarity=C
+type=Sorcery
+cost={W}
+timing=main
+requires_groovy_code

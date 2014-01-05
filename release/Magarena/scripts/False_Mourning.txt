@@ -1,0 +1,9 @@
+name=False Mourning
+url=http://magiccards.info/p3k/en/134.html
+image=http://mtgimage.com/card/false%20mourning.jpg
+value=3.769
+rarity=U
+type=Sorcery
+cost={G}
+timing=main
+requires_groovy_code=Reclaim

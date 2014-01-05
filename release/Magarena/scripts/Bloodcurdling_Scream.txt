@@ -1,0 +1,9 @@
+name=Bloodcurdling Scream
+url=http://magiccards.info/po2/en/3.html
+image=http://mtgimage.com/card/bloodcurdling%20scream.jpg
+value=3.079
+rarity=U
+type=Sorcery
+cost={X}{B}
+timing=main
+requires_groovy_code

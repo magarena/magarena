@@ -1,0 +1,9 @@
+name=Leaf Arrow
+url=http://magiccards.info/roe/en/194.html
+image=http://mtgimage.com/card/leaf%20arrow.jpg
+value=3.34
+rarity=C
+type=Instant
+cost={G}
+effect=SN deals 3 damage to target creature with flying.
+timing=removal

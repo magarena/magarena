@@ -1,0 +1,9 @@
+name=Horrifying Revelation
+url=http://magiccards.info/mbs/en/45.html
+image=http://mtgimage.com/card/horrifying%20revelation.jpg
+value=2.939
+rarity=C
+type=Sorcery
+cost={B}
+timing=main
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Battlewise Valor
+url=http://magiccards.info/ths/en/1.html
+image=http://mtgimage.com/card/battlewise%20valor.jpg
+value=3.115
+rarity=C
+type=Instant
+cost={1}{W}
+timing=pump
+requires_groovy_code
