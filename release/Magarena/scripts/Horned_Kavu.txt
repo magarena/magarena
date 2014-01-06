@@ -1,0 +1,11 @@
+name=Horned Kavu
+url=http://magiccards.info/ps/en/110.html
+image=http://mtgimage.com/card/horned%20kavu.jpg
+value=4.214
+rarity=C
+type=Creature
+subtype=Kavu
+cost={R}{G}
+pt=3/4
+ability=enters effect Return a red or green creature you control to its owner's hand.
+timing=main

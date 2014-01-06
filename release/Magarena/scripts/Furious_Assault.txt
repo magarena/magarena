@@ -1,0 +1,9 @@
+name=Furious Assault
+url=http://magiccards.info/mm/en/191.html
+image=http://mtgimage.com/card/furious%20assault.jpg
+value=3.132
+rarity=C
+type=Enchantment
+cost={2}{R}
+timing=enchantment
+requires_groovy_code
