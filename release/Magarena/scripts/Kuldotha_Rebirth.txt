@@ -1,0 +1,10 @@
+name=Kuldotha Rebirth
+url=http://magiccards.info/som/en/96.html
+image=http://mtgimage.com/card/kuldotha%20rebirth.jpg
+value=3.931
+rarity=C
+type=Sorcery
+cost={R}
+effect=PN puts three 1/1 red Goblin creature tokens onto the battlefield.
+timing=main
+requires_groovy_code

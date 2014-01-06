@@ -1,0 +1,10 @@
+name=Tendrils of Despair
+url=http://magiccards.info/wl/en/25.html
+image=http://mtgimage.com/card/tendrils%20of%20despair.jpg
+value=3.868
+rarity=C
+type=Sorcery
+cost={B}
+effect=Target opponent discards two cards.
+timing=main
+requires_groovy_code=Bone Splinters

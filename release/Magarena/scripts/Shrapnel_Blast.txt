@@ -1,0 +1,10 @@
+name=Shrapnel Blast
+url=http://magiccards.info/mma/en/129.html
+image=http://mtgimage.com/card/shrapnel%20blast.jpg
+value=4.357
+rarity=U
+type=Instant
+cost={1}{R}
+effect=SN deals 5 damage to target creature or player.
+timing=removal
+requires_groovy_code=Kuldotha Rebirth

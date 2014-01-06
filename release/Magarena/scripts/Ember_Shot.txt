@@ -1,0 +1,9 @@
+name=Ember Shot
+url=http://magiccards.info/ju/en/87.html
+image=http://mtgimage.com/card/ember%20shot.jpg
+value=0.906
+rarity=C
+type=Instant
+cost={6}{R}
+timing=removal
+requires_groovy_code

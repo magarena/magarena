@@ -1,0 +1,9 @@
+name=Privileged Position
+url=http://magiccards.info/rav/en/251.html
+image=http://mtgimage.com/card/privileged%20position.jpg
+value=4.49
+rarity=R
+type=Enchantment
+cost={2}{G/W}{G/W}{G/W}
+ability=lord other permanents you control have hexproof.
+timing=enchantment
