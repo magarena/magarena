@@ -1,9 +1,0 @@
-name=Leap
-url=http://magiccards.info/sh/en/35.html
-image=http://mtgimage.com/card/leap.jpg
-value=4.057
-rarity=C
-type=Instant
-cost={U}
-timing=pump
-requires_groovy_code=Cloak of Feathers
