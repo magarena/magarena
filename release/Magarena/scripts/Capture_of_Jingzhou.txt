@@ -1,0 +1,9 @@
+name=Capture of Jingzhou
+url=http://magiccards.info/p3k/en/38.html
+image=http://mtgimage.com/card/capture%20of%20jingzhou.jpg
+value=4.409
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+timing=main
+requires_groovy_code=Time Walk

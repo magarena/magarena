@@ -1,0 +1,9 @@
+name=Temporal Manipulation
+url=http://magiccards.info/po2/en/54.html
+image=http://mtgimage.com/card/temporal%20manipulation.jpg
+value=4.361
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+timing=main
+requires_groovy_code=Time Walk

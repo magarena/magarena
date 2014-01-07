@@ -1,0 +1,11 @@
+name=Banshee's Blade
+url=http://magiccards.info/mi/en/144.html
+image=http://mtgimage.com/card/banshee's%20blade.jpg
+value=3.338
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={2}
+timing=equipment
+requires_groovy_code
