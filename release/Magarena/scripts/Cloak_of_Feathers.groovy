@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.TARGET_CREATURE,
-                MagicFlyingTargetPicker.getInstance(),
+                MagicFlyingTargetPicker.create(),
                 this,
                 "Target creature\$ gains flying until end of turn. Draw a card."
             );
