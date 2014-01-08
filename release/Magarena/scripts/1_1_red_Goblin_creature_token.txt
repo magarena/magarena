@@ -1,6 +1,6 @@
 name=1/1 red Goblin creature token
 token=Goblin
-image=http://img.photobucket.com/albums/v237/Xand0r/goblin-token_ravnica_300.jpg
+image=http://magiccards.info/extras/token/return-to-ravnica/goblin.jpg
 value=1
 type=Creature
 subtype=Goblin
