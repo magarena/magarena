@@ -1,0 +1,9 @@
+name=Haunted Fengraf
+url=http://magiccards.info/dka/en/157.html
+image=http://mtgimage.com/card/haunted%20fengraf.jpg
+value=3
+rarity=C
+type=Land
+ability=tap add mana {1}
+timing=land
+requires_groovy_code
