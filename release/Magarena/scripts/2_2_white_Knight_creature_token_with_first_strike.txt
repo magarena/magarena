@@ -1,0 +1,10 @@
+name=2/2 white Knight creature token with first strike
+token=Knight
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19969&amp;d=1143669873
+value=3
+type=Creature
+subtype=Knight
+color=w
+cost={0}
+pt=2/2
+ability=first strike

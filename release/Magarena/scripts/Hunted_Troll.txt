@@ -1,0 +1,12 @@
+name=Hunted Troll
+url=http://magiccards.info/c13/en/150.html
+image=http://mtgimage.com/card/hunted%20troll.jpg
+value=4.118
+rarity=R
+type=Creature
+subtype=Troll,Warrior
+cost={2}{G}{G}
+pt=8/4
+ability=regenerate {G}
+timing=main
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Hunted Dragon
+url=http://magiccards.info/rav/en/131.html
+image=http://mtgimage.com/card/hunted%20dragon.jpg
+value=3.897
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{R}{R}
+pt=6/6
+ability=flying;haste
+timing=main
+requires_groovy_code

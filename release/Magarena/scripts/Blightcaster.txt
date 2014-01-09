@@ -1,0 +1,11 @@
+name=Blightcaster
+url=http://magiccards.info/m14/en/86.html
+image=http://mtgimage.com/card/blightcaster.jpg
+value=3.407
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{B}
+pt=2/3
+timing=main
+requires_groovy_code

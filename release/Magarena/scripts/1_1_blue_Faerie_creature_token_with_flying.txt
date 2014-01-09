@@ -1,0 +1,10 @@
+name=1/1 blue Faerie creature token with flying
+token=Faerie
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19966&amp;d=1143669826
+value=1
+type=Creature
+subtype=Faerie
+color=u
+cost={0}
+ability=flying
+pt=1/1
