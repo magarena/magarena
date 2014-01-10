@@ -1,0 +1,9 @@
+name=Deprive
+url=http://magiccards.info/roe/en/59.html
+image=http://mtgimage.com/card/deprive.jpg
+value=4.04
+rarity=C
+type=Instant
+cost={U}{U}
+timing=counter
+requires_groovy_code

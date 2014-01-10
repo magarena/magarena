@@ -1,0 +1,11 @@
+name=Zo-Zu the Punisher
+url=http://magiccards.info/chk/en/200.html
+image=http://mtgimage.com/card/zo-zu%20the%20punisher.jpg
+value=3.991
+rarity=R
+type=Legendary,Creature
+subtype=Goblin,Warrior
+cost={1}{R}{R}
+pt=2/2
+timing=main
+requires_groovy_code=Anhk of Mishra

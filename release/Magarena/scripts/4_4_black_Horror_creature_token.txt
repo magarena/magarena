@@ -1,0 +1,9 @@
+name=4/4 black Horror creature token
+token=Horror
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19967&amp;d=1143669831
+value=4
+type=Creature
+subtype=Horror
+color=b
+cost={0}
+pt=4/4
