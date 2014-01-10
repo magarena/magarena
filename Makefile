@@ -660,4 +660,4 @@ mtgimage:
 	ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
 incoming:
-	grep -o https.* .hg/hgrc | tail -n+2 | parallel hg incoming {}
+	grep -o https.* .hg/hgrc | parallel -j0 -k hg incoming {}
