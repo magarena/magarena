@@ -1,0 +1,9 @@
+name=Slime Molding
+url=http://magiccards.info/rtr/en/135.html
+image=http://mtgimage.com/card/slime%20molding.jpg
+value=3.289
+rarity=U
+type=Sorcery
+cost={X}{G}
+timing=main
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Brave the Elements
+url=http://magiccards.info/m14/en/10.html
+image=http://mtgimage.com/card/brave%20the%20elements.jpg
+value=4.256
+rarity=U
+type=Instant
+cost={W}
+timing=pump
+requires_groovy_code

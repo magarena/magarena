@@ -1,0 +1,9 @@
+name=Animate Land
+url=http://magiccards.info/ne/en/101.html
+image=http://mtgimage.com/card/animate%20land.jpg
+value=3.961
+rarity=U
+type=Instant
+cost={G}
+timing=pump
+requires_groovy_code

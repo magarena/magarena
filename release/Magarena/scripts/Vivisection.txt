@@ -1,0 +1,10 @@
+name=Vivisection
+url=http://magiccards.info/mbs/en/38.html
+image=http://mtgimage.com/card/vivisection.jpg
+value=2.706
+rarity=C
+type=Sorcery
+cost={3}{U}
+effect=PN draws three cards.
+timing=main
+requires_groovy_code=Bone Splinters

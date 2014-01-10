@@ -1,0 +1,10 @@
+name=Aura Extraction
+url=http://magiccards.info/on/en/5.html
+image=http://mtgimage.com/card/aura%20extraction.jpg
+value=2.312
+rarity=U
+type=Instant
+cost={1}{W}
+ability=cycling {2}
+timing=removal
+requires_groovy_code

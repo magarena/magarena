@@ -1,0 +1,11 @@
+name=Cackling Witch
+url=http://magiccards.info/mm/en/119.html
+image=http://mtgimage.com/card/cackling%20witch.jpg
+value=3.037
+rarity=U
+type=Creature
+subtype=Human,Spellshaper
+cost={1}{B}
+pt=1/1
+timing=main
+requires_groovy_code

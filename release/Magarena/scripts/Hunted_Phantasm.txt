@@ -1,0 +1,12 @@
+name=Hunted Phantasm
+url=http://magiccards.info/rav/en/55.html
+image=http://mtgimage.com/card/hunted%20phantasm.jpg
+value=3.91
+rarity=R
+type=Creature
+subtype=Spirit
+cost={1}{U}{U}
+pt=4/6
+ability=unblockable
+timing=main
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Horizon Chimera
+url=http://magiccards.info/ths/en/194.html
+image=http://mtgimage.com/card/horizon%20chimera.jpg
+value=4.071
+rarity=U
+type=Creature
+subtype=Chimera
+cost={2}{G}{U}
+pt=3/2
+ability=flash;flying;trample
+timing=flash
+requires_groovy_code

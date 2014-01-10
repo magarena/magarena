@@ -1,0 +1,9 @@
+name=Memory Erosion
+url=http://magiccards.info/cmd/en/50.html
+image=http://mtgimage.com/card/memory%20erosion.jpg
+value=2.745
+rarity=R
+type=Enchantment
+cost={1}{U}{U}
+timing=enchantment
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Sparkcaster
+url=http://magiccards.info/ps/en/126.html
+image=http://mtgimage.com/card/sparkcaster.jpg
+value=3.776
+rarity=U
+type=Creature
+subtype=Kavu
+cost={2}{R}{G}
+pt=5/3
+ability=enters effect Return a red or green creature you control to its owner's hand.;enters effect SN deals 1 damage to target player.
+timing=main

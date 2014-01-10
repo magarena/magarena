@@ -1,0 +1,9 @@
+name=Goblin Lore
+url=http://magiccards.info/10e/en/208.html
+image=http://mtgimage.com/card/goblin%20lore.jpg
+value=3.556
+rarity=U
+type=Sorcery
+cost={1}{R}
+timing=main
+requires_groovy_code=Control of the Court

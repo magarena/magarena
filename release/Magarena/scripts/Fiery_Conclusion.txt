@@ -1,0 +1,10 @@
+name=Fiery Conclusion
+url=http://magiccards.info/pc2/en/42.html
+image=http://mtgimage.com/card/fiery%20conclusion.jpg
+value=1.98
+rarity=C
+type=Instant
+cost={1}{R}
+effect=SN deals 5 damage to target creature.
+timing=removal
+requires_groovy_code=Bone Splinters

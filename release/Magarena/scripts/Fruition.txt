@@ -1,0 +1,9 @@
+name=Fruition
+url=http://magiccards.info/lw/es/66.html
+image=http://mtgimage.com/card/fruition.jpg
+value=3.766
+rarity=C
+type=Sorcery
+cost={G}
+timing=main
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Contemplation
+url=http://magiccards.info/sh/pt/104.html
+image=http://mtgimage.com/card/contemplation.jpg
+value=3.2
+rarity=U
+type=Enchantment
+cost={1}{W}{W}
+timing=enchantment
+requires_groovy_code

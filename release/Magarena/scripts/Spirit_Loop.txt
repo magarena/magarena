@@ -1,0 +1,12 @@
+name=Spirit Loop
+url=http://magiccards.info/ts/en/42.html
+image=http://magiccards.info/scans/en/ts/42.jpg
+value=4
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_ability=lifelink
+timing=aura
+enchant=lifelink,pos creature
+ability=dies effect Return SN from the graveyard to its owner's hand.

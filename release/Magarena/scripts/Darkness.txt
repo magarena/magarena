@@ -1,0 +1,9 @@
+name=Darkness
+url=http://magiccards.info/tsts/en/40.html
+image=http://mtgimage.com/card/darkness.jpg
+value=4.538
+rarity=C
+type=Instant
+cost={B}
+timing=pump
+requires_groovy_code=Fog

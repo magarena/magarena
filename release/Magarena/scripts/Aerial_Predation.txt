@@ -1,0 +1,9 @@
+name=Aerial Predation
+url=http://magiccards.info/rtr/en/113.html
+image=http://mtgimage.com/card/aerial%20predation.jpg
+value=1.942
+rarity=C
+type=Instant
+cost={2}{G}
+timing=removal
+requires_groovy_code

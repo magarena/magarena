@@ -1,0 +1,9 @@
+name=Divine Offering
+url=http://magiccards.info/mbs/en/5.html
+image=http://mtgimage.com/card/divine%20offering.jpg
+value=3.94
+rarity=C
+type=Instant
+cost={1}{W}
+timing=removal
+requires_groovy_code

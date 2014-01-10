@@ -1,0 +1,9 @@
+name=Familiar's Ruse
+url=http://magiccards.info/lw/en/64.html
+image=http://mtgimage.com/card/familiar's%20ruse.jpg
+value=3.778
+rarity=U
+type=Instant
+cost={U}{U}
+timing=counter
+requires_groovy_code

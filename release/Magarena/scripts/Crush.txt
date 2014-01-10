@@ -1,5 +1,5 @@
 name=Crush
-url=http://magiccards.info/ds/it/95.html
+url=http://magiccards.info/mbs/en/61.html
 image=http://mtgimage.com/card/crush.jpg
 value=3.301
 rarity=C

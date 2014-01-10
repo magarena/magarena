@@ -1,0 +1,12 @@
+name=Hunted Horror
+url=http://magiccards.info/rav/en/90.html
+image=http://mtgimage.com/card/hunted%20horror.jpg
+value=4.327
+rarity=R
+type=Creature
+subtype=Horror
+cost={B}{B}
+pt=7/7
+ability=trample
+timing=main
+requires_groovy_code

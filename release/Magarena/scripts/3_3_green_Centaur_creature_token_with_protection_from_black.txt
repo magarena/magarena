@@ -1,0 +1,10 @@
+name=3/3 green Centaur creature token with protection from black
+token=Centaur
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19999&amp;d=1143672895
+value=3
+type=Creature
+subtype=Centaur
+color=g
+cost={0}
+pt=3/3
+ability=protection from black

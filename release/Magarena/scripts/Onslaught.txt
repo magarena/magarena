@@ -1,0 +1,9 @@
+name=Onslaught
+url=http://magiccards.info/ex/en/92.html
+image=http://mtgimage.com/card/onslaught.jpg
+value=3.933
+rarity=C
+type=Enchantment
+cost={R}
+timing=enchantment
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Pyrohemia
+url=http://magiccards.info/cmd/en/132.html
+image=http://mtgimage.com/card/pyrohemia.jpg
+value=3.94
+rarity=U
+type=Enchantment
+cost={2}{R}{R}
+timing=enchantment
+requires_groovy_code

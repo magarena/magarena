@@ -1,0 +1,11 @@
+name=Pontiff of Blight
+url=http://magiccards.info/dgm/en/27.html
+image=http://mtgimage.com/card/pontiff%20of%20blight.jpg
+value=4.117
+rarity=R
+type=Creature
+subtype=Zombie,Cleric
+cost={4}{B}{B}
+ability=extort;lord other creatures you control have extort
+pt=2/7
+timing=main

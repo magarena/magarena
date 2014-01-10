@@ -1,0 +1,11 @@
+name=Accursed Centaur
+url=http://magiccards.info/on/en/123.html
+image=http://mtgimage.com/card/accursed%20centaur.jpg
+value=1.563
+rarity=C
+type=Creature
+subtype=Zombie,Centaur
+cost={B}
+pt=2/2
+timing=main
+requires_groovy_code
