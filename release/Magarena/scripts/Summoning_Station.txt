@@ -1,0 +1,10 @@
+name=Summoning Station
+url=http://magiccards.info/5dn/en/158.html
+image=http://mtgimage.com/card/summoning%20station.jpg
+value=4.156
+rarity=R
+type=Artifact
+cost={7}
+ability=pay {T}:PN puts a 2/2 colorless Pincher creature token onto the battlefield.
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,10 @@
+name=Blasting Station
+url=http://magiccards.info/5dn/en/107.html
+image=http://mtgimage.com/card/blasting%20station.jpg
+value=3.711
+rarity=U
+type=Artifact
+cost={3}
+ability=pay {T},Sacrifice a creature:SN deals 1 damage to target creature or player.
+timing=artifact
+requires_groovy_code

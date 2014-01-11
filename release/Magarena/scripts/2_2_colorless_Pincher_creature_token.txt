@@ -1,0 +1,8 @@
+name=2/2 colorless Pincher creature token
+image=http://forums.mtgsalvation.com/attachment.php?attachmentid=20006&amp;d=1143673222
+token=Pincher
+type=Creature
+subtype=Pincher
+cost={0}
+value=2
+pt=2/2
