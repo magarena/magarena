@@ -144,6 +144,7 @@ public class CardDefinitions {
 
     public static void loadCardDefinitions() {
         //load all files in card directory
+        MagicMain.setSplashStatusMessage("Initializing cards database...");
         final File[] files = cardDir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
                 return name.toLowerCase().endsWith(".txt");
@@ -154,6 +155,7 @@ public class CardDefinitions {
         Arrays.sort(files);
 
         //load the card definitions
+        MagicMain.setSplashStatusMessage("Loading " + files.length + " card definitions...");
         for (final File file : files) {
             loadCardDefinition(file);
         }
