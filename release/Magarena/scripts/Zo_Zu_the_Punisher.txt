@@ -8,4 +8,4 @@ subtype=Goblin,Warrior
 cost={1}{R}{R}
 pt=2/2
 timing=main
-requires_groovy_code=Anhk of Mishra
+requires_groovy_code=Ankh of Mishra
