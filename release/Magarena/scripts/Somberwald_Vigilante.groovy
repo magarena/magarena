@@ -14,7 +14,7 @@
                 permanent,
                 plist,
                 this,
-                "SN deals 1 damage to each blocking creature."
+                "SN deals 1 damage to each creature blocking it."
             );
         }
         @Override
