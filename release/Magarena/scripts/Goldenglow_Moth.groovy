@@ -7,7 +7,7 @@
                     permanent,
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.GAIN_LIFE,
-                        3,
+                        4,
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
