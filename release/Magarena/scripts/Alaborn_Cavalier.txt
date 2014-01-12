@@ -1,0 +1,11 @@
+name=Alaborn Cavalier
+url=http://magiccards.info/ddg/en/18.html
+image=http://mtgimage.com/card/alaborn%20cavalier.jpg
+value=3.226
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={2}{W}{W}
+pt=2/2
+ability=attacks effect PN may Tap target creature.
+timing=main

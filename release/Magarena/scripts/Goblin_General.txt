@@ -1,0 +1,11 @@
+name=Goblin General
+url=http://magiccards.info/st/en/101.html
+image=http://mtgimage.com/card/goblin%20general.jpg
+value=3.115
+rarity=U
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}{R}
+pt=1/1
+ability=attacks effect Goblin creatures PN controls get +1/+1 until end of turn.
+timing=main

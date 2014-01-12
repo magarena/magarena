@@ -1,0 +1,11 @@
+name=Akki Coalflinger
+url=http://magiccards.info/evg/en/33.html
+image=http://mtgimage.com/card/akki%20coalflinger.jpg
+value=3.171
+rarity=U
+type=Creature
+subtype=Goblin,Shaman
+cost={1}{R}{R}
+pt=2/2
+ability=first strike;pay {R},{T}:Attacking creatures gain first strike until end of turn.
+timing=main

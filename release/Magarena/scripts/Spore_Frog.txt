@@ -1,0 +1,11 @@
+name=Spore Frog
+url=http://magiccards.info/pr/en/126.html
+image=http://mtgimage.com/card/spore%20frog.jpg
+value=4.482
+rarity=C
+type=Creature
+subtype=Frog
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code=Kami of False Hope

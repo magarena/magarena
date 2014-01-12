@@ -1,0 +1,11 @@
+name=Fangren Pathcutter
+url=http://magiccards.info/5dn/en/87.html
+image=http://mtgimage.com/card/fangren%20pathcutter.jpg
+value=3.55
+rarity=U
+type=Creature
+subtype=Beast
+cost={4}{G}{G}
+pt=4/6
+timing=main
+requires_groovy_code

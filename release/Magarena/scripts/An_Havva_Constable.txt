@@ -1,0 +1,11 @@
+name=An-Havva Constable
+url=http://magiccards.info/5e/en/139.html
+image=http://mtgimage.com/card/an-havva%20constable.jpg
+value=3.286
+rarity=R
+type=Creature
+subtype=Human
+cost={1}{G}{G}
+pt=2/1
+timing=main
+requires_groovy_code
