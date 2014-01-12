@@ -7,5 +7,5 @@ type=Creature
 subtype=Frog
 cost={2}{G}
 pt=1/1
-ability=bushido 2
+ability=blocks or blocked pump +2/+2
 timing=main
