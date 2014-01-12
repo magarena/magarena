@@ -377,12 +377,6 @@ public enum MagicAbility {
             card.add(MagicWhenTargetedTrigger.SacWhenTargeted);
         }
     },
-    ChargeAtUpkeep("charge at upkeep",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicAtUpkeepTrigger.MayCharge);
-        }
-    },
     TapSacAddMana("tap sac add mana",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);

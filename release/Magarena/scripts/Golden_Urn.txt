@@ -6,5 +6,5 @@ rarity=C
 type=Artifact
 cost={1}
 timing=artifact
-ability=charge at upkeep
+ability=your upkeep effect PN may put a charge counter on SN.
 requires_groovy_code
