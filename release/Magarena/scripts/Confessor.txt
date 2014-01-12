@@ -1,0 +1,11 @@
+name=Confessor
+url=http://magiccards.info/od/pt/15.html
+image=http://mtgimage.com/card/confessor.jpg
+value=2.776
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+timing=main
+requires_groovy_code

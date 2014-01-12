@@ -1,0 +1,11 @@
+name=Kinsbaile Balloonist
+url=http://magiccards.info/lw/en/23.html
+image=http://mtgimage.com/card/kinsbaile%20balloonist.jpg
+value=2.621
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={3}{W}
+pt=2/2
+ability=flying;attacks effect PN may Target creature gains flying until end of turn.
+timing=main

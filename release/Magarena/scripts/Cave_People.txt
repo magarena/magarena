@@ -1,0 +1,11 @@
+name=Cave People
+url=http://magiccards.info/5e/en/215.html
+image=http://mtgimage.com/card/cave%20people.jpg
+value=2.896
+rarity=U
+type=Creature
+subtype=Human
+cost={1}{R}{R}
+pt=1/4
+ability=attacks effect SN gets +1/-2 until end of turn.;pay {1}{R}{R},{T}:Target creature gains mountainwalk until end of turn.
+timing=main

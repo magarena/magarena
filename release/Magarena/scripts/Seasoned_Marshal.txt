@@ -1,0 +1,11 @@
+name=Seasoned Marshal
+url=http://magiccards.info/ddf/en/15.html
+image=http://mtgimage.com/card/seasoned%20marshal.jpg
+value=3.32
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=2/2
+ability=attacks effect PN may Tap target creature.
+timing=main

@@ -1,0 +1,11 @@
+name=Burrenton Shield-Bearers
+url=http://magiccards.info/mt/en/4.html
+image=http://mtgimage.com/card/burrenton%20shield-bearers.jpg
+value=2.081
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={4}{W}
+pt=3/3
+ability=attacks effect Target creature gets +0/+3 until end of turn.
+timing=main

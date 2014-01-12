@@ -1,0 +1,11 @@
+name=Flanking Troops
+url=http://magiccards.info/p3k/en/5.html
+image=http://mtgimage.com/card/flanking%20troops.jpg
+value=3.024
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=2/2
+ability=attacks effect PN may Tap target creature.
+timing=main

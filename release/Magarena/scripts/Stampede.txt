@@ -1,0 +1,9 @@
+name=Stampede
+url=http://magiccards.info/5e/en/189.html
+image=http://mtgimage.com/card/stampede.jpg
+value=3.239
+rarity=U
+type=Instant
+cost={1}{G}{G}
+timing=pump
+requires_groovy_code

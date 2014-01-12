@@ -1,0 +1,11 @@
+name=Chieftain en-Dal
+url=http://magiccards.info/ne/en/4.html
+image=http://mtgimage.com/card/chieftain%20en-dal.jpg
+value=3.558
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{W}{W}
+pt=2/2
+timing=main
+requires_groovy_code
