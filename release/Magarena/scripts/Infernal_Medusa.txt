@@ -1,0 +1,11 @@
+name=Infernal Medusa
+url=http://magiccards.info/lg/en/22.html
+image=http://mtgimage.com/card/infernal%20medusa.jpg
+value=3.517
+rarity=U
+type=Creature
+subtype=Gorgon
+cost={3}{B}{B}
+pt=2/4
+timing=main
+requires_groovy_code

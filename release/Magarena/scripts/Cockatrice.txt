@@ -1,0 +1,12 @@
+name=Cockatrice
+url=http://magiccards.info/ced/en/98.html
+image=http://mtgimage.com/card/cockatrice.jpg
+value=3.802
+rarity=R
+type=Creature
+subtype=Cockatrice
+cost={3}{G}{G}
+pt=2/4
+ability=flying
+timing=main
+requires_groovy_code=Rock Basilisk

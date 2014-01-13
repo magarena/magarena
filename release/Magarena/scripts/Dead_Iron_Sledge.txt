@@ -1,0 +1,11 @@
+name=Dead-Iron Sledge
+url=http://magiccards.info/mi/en/162.html
+image=http://mtgimage.com/card/dead-iron%20sledge.jpg
+value=3.3
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+equip={2}
+timing=artifact
+requires_groovy_code

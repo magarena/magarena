@@ -1,0 +1,9 @@
+name=Fallow Earth
+url=http://magiccards.info/6e/en/227.html
+image=http://mtgimage.com/card/fallow%20earth.jpg
+value=3.605
+rarity=U
+type=Sorcery
+cost={2}{G}
+timing=main
+requires_groovy_code=Uproot

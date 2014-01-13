@@ -1,0 +1,11 @@
+name=Abomination
+url=http://magiccards.info/4eb/es/1.html
+image=http://mtgimage.com/card/abomination.jpg
+value=2.833
+rarity=U
+type=Creature
+subtype=Horror
+cost={3}{B}{B}
+pt=2/6
+timing=main
+requires_groovy_code

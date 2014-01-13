@@ -1,0 +1,12 @@
+name=Ghost Hounds
+url=http://magiccards.info/hl/en/12.html
+image=http://mtgimage.com/card/ghost%20hounds.jpg
+value=2.81
+rarity=U
+type=Creature
+subtype=Hound,Spirit
+cost={1}{B}
+pt=1/1
+ability=vigilance
+timing=main
+requires_groovy_code

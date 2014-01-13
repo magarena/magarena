@@ -1,0 +1,9 @@
+name=Excommunicate
+url=http://magiccards.info/m11/en/14.html
+image=http://mtgimage.com/card/excommunicate.jpg
+value=2.644
+rarity=C
+type=Sorcery
+cost={2}{W}
+timing=main
+requires_groovy_code=Time Ebb

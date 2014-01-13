@@ -1,0 +1,12 @@
+name=Sunscape Apprentice
+url=http://magiccards.info/in/en/41.html
+image=http://mtgimage.com/card/sunscape%20apprentice.jpg
+value=3.107
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={W}
+pt=1/1
+ability=pay {G},{T}:Target creature gets +1/+1 until end of turn.
+timing=main
+requires_groovy_code=Civic Guildmage

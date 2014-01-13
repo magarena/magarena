@@ -1,0 +1,11 @@
+name=Serra Inquisitors
+url=http://magiccards.info/hl/en/120.html
+image=http://mtgimage.com/card/serra%20inquisitors.jpg
+value=1.667
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={4}{W}
+pt=3/3
+timing=main
+requires_groovy_code
