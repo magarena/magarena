@@ -1,0 +1,11 @@
+name=Dwarven Soldier
+url=http://magiccards.info/5e/en/221.html
+image=http://mtgimage.com/card/dwarven%20soldier.jpg
+value=2.133
+rarity=C
+type=Creature
+subtype=Dwarf,Soldier
+cost={1}{R}
+pt=2/1
+timing=main
+requires_groovy_code
