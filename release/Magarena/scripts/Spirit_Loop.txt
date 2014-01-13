@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 timing=aura
-enchant=lifelink,pos creature
+enchant=lifelink,creature
 ability=dies effect Return SN from the graveyard to its owner's hand.
 requires_groovy_code=Spirit Link
