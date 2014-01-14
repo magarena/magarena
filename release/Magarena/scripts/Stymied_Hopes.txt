@@ -1,0 +1,9 @@
+name=Stymied Hopes
+url=http://magiccards.info/ths/en/64.html
+image=http://mtgimage.com/card/stymied%20hopes.jpg
+value=2.521
+rarity=C
+type=Instant
+cost={1}{U}
+timing=counter
+requires_groovy_code

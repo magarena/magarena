@@ -1,0 +1,9 @@
+name=Titan's Strength
+url=http://magiccards.info/ths/en/145.html
+image=http://mtgimage.com/card/titan's%20strength.jpg
+value=3.976
+rarity=C
+type=Instant
+cost={R}
+timing=pump
+requires_groovy_code

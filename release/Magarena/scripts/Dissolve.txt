@@ -1,0 +1,9 @@
+name=Dissolve
+url=http://magiccards.info/ths/pt/47.html
+image=http://mtgimage.com/card/dissolve.jpg
+value=4.23
+rarity=U
+type=Instant
+cost={1}{U}{U}
+timing=counter
+requires_groovy_code

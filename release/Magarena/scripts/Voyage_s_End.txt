@@ -1,0 +1,9 @@
+name=Voyage's End
+url=http://magiccards.info/ths/en/73.html
+image=http://mtgimage.com/card/voyage's%20end.jpg
+value=3.8
+rarity=C
+type=Instant
+cost={1}{U}
+timing=removal
+requires_groovy_code

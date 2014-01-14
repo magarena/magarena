@@ -1,0 +1,9 @@
+name=Rage of Purphoros
+url=http://magiccards.info/ths/en/137.html
+image=http://mtgimage.com/card/rage%20of%20purphoros.jpg
+value=2.068
+rarity=C
+type=Sorcery
+cost={4}{R}
+timing=main
+requires_groovy_code
