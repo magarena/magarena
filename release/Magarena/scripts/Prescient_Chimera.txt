@@ -1,0 +1,12 @@
+name=Prescient Chimera
+url=http://magiccards.info/ths/en/59.html
+image=http://mtgimage.com/card/prescient%20chimera.jpg
+value=3.889
+rarity=C
+type=Creature
+subtype=Chimera
+cost={3}{U}{U}
+pt=3/4
+ability=flying
+timing=main
+requires_groovy_code

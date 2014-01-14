@@ -1,0 +1,11 @@
+name=Viscera Seer
+url=http://magiccards.info/c13/en/99.html
+image=http://mtgimage.com/card/viscera%20seer.jpg
+value=3.264
+rarity=C
+type=Creature
+subtype=Vampire,Wizard
+cost={B}
+pt=1/1
+timing=main
+requires_groovy_code

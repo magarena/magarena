@@ -1,0 +1,12 @@
+name=Reaper of the Wilds
+url=http://magiccards.info/ths/en/201.html
+image=http://mtgimage.com/card/reaper%20of%20the%20wilds.jpg
+value=4.057
+rarity=R
+type=Creature
+subtype=Gorgon
+cost={2}{B}{G}
+pt=4/5
+ability=pay {B}:SN gains deathtouch until end of turn.;pay {1}{G}:SN gains hexproof until end of turn.
+timing=main
+requires_groovy_code

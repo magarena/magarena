@@ -1,0 +1,10 @@
+name=New Benalia
+url=http://magiccards.info/c13/en/309.html
+image=http://mtgimage.com/card/new%20benalia.jpg
+value=3.45
+rarity=U
+type=Land
+ability=enters tapped;tap add mana {W}
+mana=w2
+timing=land
+requires_groovy_code=Temple of Silence
