@@ -1,0 +1,12 @@
+name=Crashing Centaur
+url=http://magiccards.info/od/en/235.html
+image=http://mtgimage.com/card/crashing%20centaur.jpg
+value=2.913
+rarity=U
+type=Creature
+subtype=Centaur
+cost={4}{G}{G}
+pt=3/4
+ability=pay {G},Discard a card:SN gains trample until end of turn.
+timing=main
+requires_groovy_code

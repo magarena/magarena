@@ -1,0 +1,12 @@
+name=Mystic Familiar
+url=http://magiccards.info/tr/en/11.html
+image=http://mtgimage.com/card/mystic%20familiar.jpg
+value=3.433
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{W}
+pt=1/2
+ability=flying
+timing=main
+requires_groovy_code

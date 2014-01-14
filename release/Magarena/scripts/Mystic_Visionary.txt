@@ -1,0 +1,11 @@
+name=Mystic Visionary
+url=http://magiccards.info/od/en/35.html
+image=http://mtgimage.com/card/mystic%20visionary.jpg
+value=1.531
+rarity=C
+type=Creature
+subtype=Human,Nomad,Mystic
+cost={1}{W}
+pt=2/1
+timing=main
+requires_groovy_code

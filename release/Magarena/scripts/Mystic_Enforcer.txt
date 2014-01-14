@@ -1,0 +1,12 @@
+name=Mystic Enforcer
+url=http://magiccards.info/tsts/en/96.html
+image=http://mtgimage.com/card/mystic%20enforcer.jpg
+value=4.436
+rarity=R
+type=Creature
+subtype=Human,Nomad,Mystic
+cost={2}{G}{W}
+pt=3/3
+ability=protection from black
+timing=main
+requires_groovy_code=Werebear;Mystic Visionary

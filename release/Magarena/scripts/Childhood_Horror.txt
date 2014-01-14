@@ -1,0 +1,12 @@
+name=Childhood Horror
+url=http://magiccards.info/od/en/123.html
+image=http://mtgimage.com/card/childhood%20horror.jpg
+value=2.461
+rarity=U
+type=Creature
+subtype=Horror
+cost={3}{B}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code

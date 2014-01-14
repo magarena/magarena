@@ -1,0 +1,10 @@
+name=Cephalid Coliseum
+url=http://magiccards.info/v12/en/3.html
+image=http://mtgimage.com/card/cephalid%20coliseum.jpg
+value=3.955
+rarity=M
+type=Land
+mana=u2
+ability=tap pain add mana {U}
+timing=land
+requires_groovy_code

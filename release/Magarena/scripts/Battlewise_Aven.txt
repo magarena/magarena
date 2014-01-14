@@ -1,0 +1,12 @@
+name=Battlewise Aven
+url=http://magiccards.info/ju/en/4.html
+image=http://mtgimage.com/card/battlewise%20aven.jpg
+value=2.75
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+cost={3}{W}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code

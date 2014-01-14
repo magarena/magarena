@@ -1,0 +1,12 @@
+name=Nantuko Calmer
+url=http://magiccards.info/tr/en/132.html
+image=http://mtgimage.com/card/nantuko%20calmer.jpg
+value=1.84
+rarity=C
+type=Creature
+subtype=Insect,Druid
+cost={2}{G}{G}
+pt=2/3
+ability=pay {G},{T},{S}:Destroy target enchantment.
+timing=main
+requires_groovy_code

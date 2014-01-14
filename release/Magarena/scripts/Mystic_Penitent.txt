@@ -1,0 +1,12 @@
+name=Mystic Penitent
+url=http://magiccards.info/od/en/34.html
+image=http://mtgimage.com/card/mystic%20penitent.jpg
+value=3.757
+rarity=U
+type=Creature
+subtype=Human,Nomad,Mystic
+cost={W}
+pt=1/1
+ability=vigilance
+timing=main
+requires_groovy_code=Nantuko Calmer;Mystic Visionary

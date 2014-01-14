@@ -1,0 +1,11 @@
+name=Infected Vermin
+url=http://magiccards.info/od/en/144.html
+image=http://mtgimage.com/card/infected%20vermin.jpg
+value=2.595
+rarity=U
+type=Creature
+subtype=Rat
+cost={2}{B}
+pt=1/1
+timing=main
+requires_groovy_code

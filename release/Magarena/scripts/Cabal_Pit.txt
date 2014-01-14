@@ -1,0 +1,10 @@
+name=Cabal Pit
+url=http://magiccards.info/od/pt/315.html
+image=http://mtgimage.com/card/cabal%20pit.jpg
+value=3.518
+rarity=U
+type=Land
+mana=b2
+ability=tap pain add mana {B}
+timing=land
+requires_groovy_code
