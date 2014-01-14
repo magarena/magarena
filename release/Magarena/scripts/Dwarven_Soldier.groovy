@@ -8,7 +8,7 @@
             final MagicPermanentList plist = permanent.getBlockingCreatures();
             boolean pump = false;
             for (final MagicPermanent blocker : plist) {
-                if (blocker.hasSubType(MagicSubType.Orc) {
+                if (blocker.hasSubType(MagicSubType.Orc)) {
                     pump = true;
                 }
             }
@@ -36,7 +36,7 @@
             final MagicPermanent blocked = permanent.getBlockedCreature();
             return (permanent == blocker &&
                     blocked.isValid() &&
-                    (blocked.hasSubType(MagicSubType.Orc)) ?
+                    (blocked.hasSubType(MagicSubType.Orc))) ?
                 new MagicEvent(
                     permanent,
                     this,
