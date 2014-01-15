@@ -1,0 +1,10 @@
+name=Notorious Assassin
+url=http://magiccards.info/mm/en/150.html
+image=http://magiccards.info/scans/en/mm/150.jpg
+value=3.153
+rarity=R
+type=Creature
+subtype=Human,Assassin,Spellshaper
+cost={3}{B}
+pt=2/2
+timing=main
