@@ -8,4 +8,4 @@ subtype=Human,Nomad,Mystic
 cost={3}{W}
 pt=2/4
 timing=main
-requires_groovy_code=Mystic Crusader
+requires_groovy_code=Nantuko Calmer;Mystic Visionary
