@@ -21,7 +21,7 @@
             return new MagicEvent(
                 source,
                 MagicTargetChoice.POS_TARGET_CREATURE,
-                new MagicPumpTargetPicker(2,2),
+                MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ gets +2/+2 until end of turn."
             );
