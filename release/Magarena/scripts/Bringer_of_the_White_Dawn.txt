@@ -1,0 +1,12 @@
+name=Bringer of the White Dawn
+url=http://magiccards.info/5dn/en/7.html
+image=http://mtgimage.com/card/bringer%20of%20the%20white%20dawn.jpg
+value=4.145
+rarity=R
+type=Creature
+subtype=Bringer
+cost={7}{W}{W}
+pt=5/5
+ability=trample;your upkeep effect PN may return target artifact card from your graveyard to the battlefield.
+timing=main
+requires_groovy_code=Bringer of the Blue Dawn

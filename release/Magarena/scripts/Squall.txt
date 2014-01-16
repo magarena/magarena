@@ -1,0 +1,9 @@
+name=Squall
+url=http://magiccards.info/7e/en/271.html
+image=http://mtgimage.com/card/squall.jpg
+value=2.957
+rarity=C
+type=Sorcery
+cost={2}{G}
+timing=main
+requires_groovy_code

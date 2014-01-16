@@ -1,0 +1,12 @@
+name=Bringer of the Blue Dawn
+url=http://magiccards.info/5dn/en/26.html
+image=http://mtgimage.com/card/bringer%20of%20the%20blue%20dawn.jpg
+value=4.245
+rarity=R
+type=Creature
+subtype=Bringer
+cost={7}{U}{U}
+pt=5/5
+ability=trample;your upkeep effect PN may draw two cards.
+timing=main
+requires_groovy_code

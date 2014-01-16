@@ -1,0 +1,9 @@
+name=Gale Force
+url=http://magiccards.info/chk/en/209.html
+image=http://mtgimage.com/card/gale%20force.jpg
+value=2.42
+rarity=U
+type=Sorcery
+cost={4}{G}
+timing=main
+requires_groovy_code

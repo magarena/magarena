@@ -1,0 +1,9 @@
+name=Squall Line
+url=http://magiccards.info/ts/en/222.html
+image=http://mtgimage.com/card/squall%20line.jpg
+value=3.943
+rarity=R
+type=Instant
+cost={X}{G}{G}
+timing=removal
+requires_groovy_code=Hurricane
