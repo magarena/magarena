@@ -2,18 +2,21 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {      
-            return new MagicEvent(
-                permanent,
-                this,
-                "When Elderscale Wurm enters the battlefield, if your life total is less than 7, your life total becomes 7."
-            );
+            return (permanent.getController().getLife() < 7) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "If your life total is less than 7, your life total becomes 7."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getplayer.getLife() < 7) {
-                event.getplayer.setLife(7);
+            final MagicPlayer player = event.getPlayer();
+            final int life = player.getLife();
+            if (life < 7) {
+                game.doAction(new MagicChangeLifeAction(player, 7 - life)) 
             }
-            return MagicEvent.NONE;
         }
     },
     new MagicWhenDamageIsDealtTrigger() {
