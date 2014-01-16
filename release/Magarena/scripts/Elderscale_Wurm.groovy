@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "If your life total is less than 7, your life total becomes 7."
+                    "If PN's life total is less than 7, PN's life total becomes 7."
                 ):
                 MagicEvent.NONE;
         }
