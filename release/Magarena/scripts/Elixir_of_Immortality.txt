@@ -1,0 +1,9 @@
+name=Elixir of Immortality
+url=http://magiccards.info/m14/en/209.html
+image=http://magiccards.info/scans/en/m14/209.jpg
+value=3.454
+rarity=U
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code
