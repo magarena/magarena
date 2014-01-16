@@ -1,0 +1,9 @@
+name=Unhinge
+url=http://magiccards.info/tr/en/87.html
+image=http://mtgimage.com/card/unhinge.jpg
+value=2.516
+rarity=C
+type=Sorcery
+cost={2}{B}
+timing=main
+requires_groovy_code

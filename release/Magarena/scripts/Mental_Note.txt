@@ -1,0 +1,9 @@
+name=Mental Note
+url=http://magiccards.info/ju/en/46.html
+image=http://mtgimage.com/card/mental%20note.jpg
+value=3.365
+rarity=C
+type=Instant
+cost={U}
+timing=draw
+requires_groovy_code

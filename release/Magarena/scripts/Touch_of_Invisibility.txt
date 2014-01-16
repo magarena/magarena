@@ -1,0 +1,9 @@
+name=Touch of Invisibility
+url=http://magiccards.info/od/en/109.html
+image=http://mtgimage.com/card/touch%20of%20invisibility.jpg
+value=1.444
+rarity=C
+type=Sorcery
+cost={3}{U}
+timing=main
+requires_groovy_code

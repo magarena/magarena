@@ -1,0 +1,10 @@
+name=Starstorm
+url=http://magiccards.info/c13/en/122.html
+image=http://mtgimage.com/card/starstorm.jpg
+value=4.426
+rarity=R
+type=Instant
+cost={X}{R}{R}
+ability=cycling {3}
+timing=removal
+requires_groovy_code

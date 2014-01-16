@@ -1,0 +1,10 @@
+name=Rebuild
+url=http://magiccards.info/ul/en/40.html
+image=http://mtgimage.com/card/rebuild.jpg
+value=3.986
+rarity=U
+type=Instant
+cost={2}{U}
+ability=cycling {2}
+timing=removal
+requires_groovy_code

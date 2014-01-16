@@ -1,0 +1,9 @@
+name=Collective Unconscious
+url=http://magiccards.info/8e/en/238.html
+image=http://mtgimage.com/card/collective%20unconscious.jpg
+value=3.526
+rarity=R
+type=Sorcery
+cost={4}{G}{G}
+timing=main
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Implode
+url=http://magiccards.info/ps/en/62.html
+image=http://mtgimage.com/card/implode.jpg
+value=3.375
+rarity=U
+type=Sorcery
+cost={4}{R}
+timing=main
+requires_groovy_code

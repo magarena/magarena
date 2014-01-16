@@ -1,0 +1,9 @@
+name=Flow of Ideas
+url=http://magiccards.info/shm/en/38.html
+image=http://mtgimage.com/card/flow%20of%20ideas.jpg
+value=3.022
+rarity=U
+type=Sorcery
+cost={5}{U}
+timing=main
+requires_groovy_code

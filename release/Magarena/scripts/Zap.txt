@@ -1,0 +1,9 @@
+name=Zap
+url=http://magiccards.info/in/pt/180.html
+image=http://mtgimage.com/card/zap.jpg
+value=1.691
+rarity=C
+type=Instant
+cost={2}{R}
+timing=removal
+requires_groovy_code
