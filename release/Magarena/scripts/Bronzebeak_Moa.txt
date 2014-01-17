@@ -1,0 +1,11 @@
+name=Bronzebeak Moa
+url=http://magiccards.info/dgm/en/60.html
+image=http://mtgimage.com/card/bronzebeak%20moa.jpg
+value=4.025
+rarity=U
+type=Creature
+subtype=Bird
+cost={2}{G}{W}
+pt=2/2
+timing=main
+requires_groovy_code
