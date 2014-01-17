@@ -7,14 +7,21 @@
                     permanent.isTapped()) ?
                 new MagicEvent(
                     permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.UNTAP,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
-                    "Untap SN."
+                    "PN may\$ Untap SN."
                 ) :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicUntapAction(event.getPermanent()));
+            if (event.isYes()) {
+                game.doAction(new MagicUntapAction(event.getPermanent()));
+            }
         }
     }
 ]

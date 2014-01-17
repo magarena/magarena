@@ -8,7 +8,11 @@
             return (otherPermanent.hasType(MagicType.Artifact)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(),
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.UNTAP,
+                        1,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     this,
                     "PN may\$ untap SN."
                 ) :
