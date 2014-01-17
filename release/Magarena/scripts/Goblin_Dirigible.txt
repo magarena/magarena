@@ -1,0 +1,12 @@
+name=Goblin Dirigible
+url=http://magiccards.info/mi/en/177.html
+image=http://mtgimage.com/card/goblin%20dirigible.jpg
+value=1.398
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={6}
+pt=4/4
+ability=flying;doesn't untap during untap step
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Brass Gnat
+url=http://magiccards.info/ts/en/249.html
+image=http://mtgimage.com/card/brass%20gnat.jpg
+value=1.708
+rarity=C
+type=Artifact,Creature
+subtype=Insect
+cost={1}
+pt=1/1
+ability=flying;doesn't untap during untap step
+timing=artifact
+requires_groovy_code
