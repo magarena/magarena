@@ -1,0 +1,11 @@
+name=Emberstrike Duo
+url=http://magiccards.info/shm/en/185.html
+image=http://magiccards.info/scans/en/shm/185.jpg
+value=2.716
+rarity=C
+type=Creature
+subtype=Elemental,Shaman,Warrior
+cost={1}{B/R}
+pt=1/1
+timing=main
+requires_groovy_code
