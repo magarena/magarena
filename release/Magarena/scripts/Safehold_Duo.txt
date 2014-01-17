@@ -1,0 +1,11 @@
+name=Safehold Duo
+url=http://magiccards.info/shm/en/238.html
+image=http://magiccards.info/scans/en/shm/238.jpg
+value=2.574
+rarity=C
+type=Creature
+subtype=Elf,Shaman,Warrior
+cost={3}{G/W}
+pt=2/4
+timing=main
+requires_groovy_code
