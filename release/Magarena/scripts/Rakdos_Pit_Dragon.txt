@@ -1,0 +1,12 @@
+name=Rakdos Pit Dragon
+url=http://magiccards.info/jvc/en/44.html
+image=http://mtgimage.com/card/rakdos%20pit%20dragon.jpg
+value=4.457
+rarity=R
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}
+pt=3/3
+ability=pay {R}{R}:SN gains flying until end of turn.;pay {R}:SN gets +1/+0 until end of turn.
+timing=main
+requires_groovy_code

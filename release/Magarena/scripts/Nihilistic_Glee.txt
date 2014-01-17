@@ -1,0 +1,10 @@
+name=Nihilistic Glee
+url=http://magiccards.info/di/en/50.html
+image=http://mtgimage.com/card/nihilistic%20glee.jpg
+value=1.91
+rarity=R
+type=Enchantment
+cost={2}{B}{B}
+ability=pay {2}{B},Discard a card:Target opponent loses 1 life and PN gains 1 life.
+timing=enchantment
+requires_groovy_code

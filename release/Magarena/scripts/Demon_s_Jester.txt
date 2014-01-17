@@ -1,0 +1,12 @@
+name=Demon's Jester
+url=http://magiccards.info/dvd/en/38.html
+image=http://mtgimage.com/card/demon's%20jester.jpg
+value=2.203
+rarity=C
+type=Creature
+subtype=Imp
+cost={3}{B}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code
