@@ -1,0 +1,11 @@
+name=Thistledown Duo
+url=http://magiccards.info/shm/en/152.html
+image=http://magiccards.info/scans/en/shm/152.jpg
+value=2.483
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier,Wizard
+cost={2}{W/U}
+pt=2/2
+timing=main
+requires_groovy_code
