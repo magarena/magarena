@@ -1,0 +1,12 @@
+name=Auspicious Ancestor
+url=http://magiccards.info/mr/en/207.html
+image=http://mtgimage.com/card/auspicious%20ancestor.jpg
+value=2.729
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}
+pt=2/3
+ability=dies effect PN gains 3 life.
+timing=main
+requires_groovy_code=Apothecary Initiate

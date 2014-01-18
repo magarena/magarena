@@ -1,0 +1,11 @@
+name=Drowner Initiate
+url=http://magiccards.info/shm/en/36.html
+image=http://mtgimage.com/card/drowner%20initiate.jpg
+value=3.452
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}
+pt=1/1
+timing=main
+requires_groovy_code

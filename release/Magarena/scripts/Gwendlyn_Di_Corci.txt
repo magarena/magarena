@@ -1,0 +1,11 @@
+name=Gwendlyn Di Corci
+url=http://magiccards.info/lg/en/268.html
+image=http://mtgimage.com/card/gwendlyn%20di%20corci.jpg
+value=4.038
+rarity=R
+type=Legendary,Creature
+subtype=Human,Rogue
+cost={U}{B}{B}{R}
+pt=3/5
+timing=main
+requires_groovy_code

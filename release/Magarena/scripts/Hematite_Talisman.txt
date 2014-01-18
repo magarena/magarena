@@ -1,0 +1,9 @@
+name=Hematite Talisman
+url=http://magiccards.info/ia/en/295.html
+image=http://mtgimage.com/card/hematite%20talisman.jpg
+value=1.778
+rarity=U
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code

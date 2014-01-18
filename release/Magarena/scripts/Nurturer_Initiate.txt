@@ -1,0 +1,11 @@
+name=Nurturer Initiate
+url=http://magiccards.info/shm/en/124.html
+image=http://mtgimage.com/card/nurturer%20initiate.jpg
+value=2.602
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code

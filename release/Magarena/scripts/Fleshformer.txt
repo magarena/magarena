@@ -1,0 +1,11 @@
+name=Fleshformer
+url=http://magiccards.info/cfx/en/45.html
+image=http://mtgimage.com/card/fleshformer.jpg
+value=2.238
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=2/2
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Zuran Enchanter
+url=http://magiccards.info/ia/en/110.html
+image=http://mtgimage.com/card/zuran%20enchanter.jpg
+value=2.583
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+timing=main
+requires_groovy_code
