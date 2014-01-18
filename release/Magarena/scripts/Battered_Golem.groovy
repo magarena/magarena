@@ -3,8 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (permanent != otherPermanent &&
-                    otherPermanent.isArtifact() &&
-                    permanent.isTapped()) ?
+                    otherPermanent.isArtifact()) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
