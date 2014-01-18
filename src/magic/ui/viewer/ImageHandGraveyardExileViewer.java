@@ -34,10 +34,10 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
         tabSelector=new TabSelector(this,true);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Hand : "+playerName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+playerName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Hand : "+opponentName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD),"Graveyard : "+opponentName);
+        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+playerName);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE),"Exile : "+opponentName);
+        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND),"Other : "+playerName);
         add(tabSelector,BorderLayout.WEST);
 
         cardListViewer=new ImageCardListViewer(controller);
@@ -60,11 +60,10 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
             switch (tabSelector.getSelectedTab()) {
                 case 0: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).hand,true); break;
                 case 1: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).graveyard,false); break;
-                case 2: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).exile,false); break;
-                case 3: cardListViewer.setCardList(other,false); break;
-                case 4: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).graveyard,false); break;
-                case 5: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).exile,false); break;
-
+                case 2: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).graveyard,false); break;
+                case 3: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).exile,false); break;
+                case 4: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).exile,false); break;
+                case 5: cardListViewer.setCardList(other,false); break;
             }
             repaint();
         }
