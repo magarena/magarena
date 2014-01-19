@@ -2,36 +2,52 @@
     new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
+            final int amount=permanent.getPower();
             return new MagicEvent(
                 permanent,
+                new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        amount,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                 this,
-                "PN gains life equal to SN's power."
+                "PN may\$ gain life equal to SN's power ("+amount+")."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getPermanent().getPower()));
+            if (event.isYes()) {
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getPermanent().getPower()));
+            }
         }
     },
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            final int amount=otherPermanent.getPower();
             return (otherPermanent!=permanent &&
                     otherPermanent.isCreature() &&
                     otherPermanent.hasAbility(MagicAbility.Flying) &&
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
+                    new MagicSimpleMayChoice(
+                        MagicSimpleMayChoice.GAIN_LIFE,
+                        amount,
+                        MagicSimpleMayChoice.DEFAULT_YES
+                    ),
                     otherPermanent,
                     this,
-                    "PN gains life equal to the power of "+otherPermanent+'.'
+                    "PN may\$ gain life equal to RN's power ("+amount+")."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent=event.getRefPermanent();
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),permanent.getPower()));
+            if (event.isYes()){
+                final MagicPermanent permanent=event.getRefPermanent();
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),permanent.getPower()));
+            }
         }
     }
 ]
