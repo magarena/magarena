@@ -1,0 +1,11 @@
+name=Gravelgill Duo
+url=http://magiccards.info/shm/en/165.html
+image=http://magiccards.info/scans/en/shm/165.jpg
+value=2.944
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue,Warrior
+cost={2}{U/B}
+pt=2/1
+timing=main
+requires_groovy_code
