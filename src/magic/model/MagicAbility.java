@@ -12,6 +12,7 @@ import magic.model.event.MagicSacrificeManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicPainTapManaActivation;
+import magic.model.event.MagicPayLifeTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
@@ -357,6 +358,12 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
             card.add(new MagicPainTapManaActivation(manatype));
+        }
+    },
+    TapPayLifeAddMana("tap pay 1 life add mana", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+            card.add(new MagicPayLifeTapManaActivation(manatype));
         }
     },
     SacAddMana("sac add mana",10) {
