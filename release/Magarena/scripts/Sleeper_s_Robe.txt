@@ -1,0 +1,12 @@
+name=Sleeper's Robe
+url=http://magiccards.info/in/en/273.html
+image=http://mtgimage.com/card/sleeper's%20robe.jpg
+value=3.974
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}{B}
+enchant=pump,pos creature
+given_ability=fear
+timing=aura
+requires_groovy_code

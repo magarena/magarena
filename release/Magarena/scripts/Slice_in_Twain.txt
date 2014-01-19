@@ -1,0 +1,9 @@
+name=Slice in Twain
+url=http://magiccards.info/c13/en/170.html
+image=http://mtgimage.com/card/slice%20in%20twain.jpg
+value=3.163
+rarity=U
+type=Instant
+cost={2}{G}{G}
+timing=removal
+requires_groovy_code

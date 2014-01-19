@@ -2,11 +2,11 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPermanent enchanted = permanent.getEnchantedCreature();
-            return (enchanted == damage.getSource() &&
-                    enchanted.isOpponent(damage.getTarget())) ?
+            return (damage.getSource() == permanent.getEnchantedCreature() &&
+                    permanent.isOpponent(damage.getTarget()) &&
+                    damage.isCombat()) ?
                 new MagicEvent(
-                    enchanted,
+                    permanent,
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,

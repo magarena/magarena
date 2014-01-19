@@ -1,0 +1,9 @@
+name=Last Thoughts
+url=http://magiccards.info/gtc/en/40.html
+image=http://mtgimage.com/card/last%20thoughts.jpg
+value=2.542
+rarity=C
+type=Sorcery
+cost={3}{U}
+timing=main
+requires_groovy_code

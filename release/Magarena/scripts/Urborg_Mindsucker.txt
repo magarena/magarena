@@ -1,0 +1,11 @@
+name=Urborg Mindsucker
+url=http://magiccards.info/vi/en/21.html
+image=http://mtgimage.com/card/urborg%20mindsucker.jpg
+value=2.667
+rarity=C
+type=Creature
+subtype=Horror
+cost={2}{B}
+pt=2/2
+ability=pay {B},{S},{Sorcery}:Target opponent discards a card at random.
+timing=main

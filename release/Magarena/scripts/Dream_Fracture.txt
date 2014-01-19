@@ -1,0 +1,9 @@
+name=Dream Fracture
+url=http://magiccards.info/eve/en/19.html
+image=http://mtgimage.com/card/dream%20fracture.jpg
+value=3.508
+rarity=U
+type=Instant
+cost={1}{U}{U}
+timing=counter
+requires_groovy_code

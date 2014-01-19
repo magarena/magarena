@@ -1,0 +1,9 @@
+name=Nighthaze
+url=http://magiccards.info/roe/en/118.html
+image=http://mtgimage.com/card/nighthaze.jpg
+value=2.235
+rarity=C
+type=Sorcery
+cost={B}
+timing=main
+requires_groovy_code

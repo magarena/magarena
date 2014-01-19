@@ -1,0 +1,9 @@
+name=Equilibrium
+url=http://magiccards.info/7e/en/71.html
+image=http://mtgimage.com/card/equilibrium.jpg
+value=4.576
+rarity=R
+type=Enchantment
+cost={1}{U}{U}
+timing=enchantment
+requires_groovy_code

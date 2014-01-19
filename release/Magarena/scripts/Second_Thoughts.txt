@@ -1,0 +1,9 @@
+name=Second Thoughts
+url=http://magiccards.info/od/en/45.html
+image=http://mtgimage.com/card/second%20thoughts.jpg
+value=2.844
+rarity=C
+type=Instant
+cost={4}{W}
+timing=removal
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Scepter of Fugue
+url=http://magiccards.info/cfx/en/53.html
+image=http://mtgimage.com/card/scepter%20of%20fugue.jpg
+value=3.387
+rarity=R
+type=Artifact
+cost={B}{B}
+timing=artifact
+requires_groovy_code

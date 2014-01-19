@@ -1,0 +1,9 @@
+name=Crystal Rod
+url=http://magiccards.info/8e/en/295.html
+image=http://mtgimage.com/card/crystal%20rod.jpg
+value=1.221
+rarity=U
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code

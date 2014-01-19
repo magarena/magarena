@@ -1,0 +1,9 @@
+name=Last Caress
+url=http://magiccards.info/ap/en/41.html
+image=http://mtgimage.com/card/last%20caress.jpg
+value=2.5
+rarity=C
+type=Sorcery
+cost={2}{B}
+timing=main
+requires_groovy_code

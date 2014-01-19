@@ -1,0 +1,9 @@
+name=Snakeform
+url=http://magiccards.info/eve/en/161.html
+image=http://mtgimage.com/card/snakeform.jpg
+value=4.331
+rarity=C
+type=Instant
+cost={2}{G/U}
+timing=removal
+requires_groovy_code

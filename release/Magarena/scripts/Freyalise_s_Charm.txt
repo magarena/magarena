@@ -1,0 +1,10 @@
+name=Freyalise's Charm
+url=http://magiccards.info/ia/en/128.html
+image=http://mtgimage.com/card/freyalise's%20charm.jpg
+value=2.265
+rarity=U
+type=Enchantment
+cost={G}{G}
+ability=pay {G}{G}:Return SN to its owner's hand.
+timing=enchantment
+requires_groovy_code

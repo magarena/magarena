@@ -1,0 +1,9 @@
+name=Tranquil Path
+url=http://magiccards.info/ap/en/89.html
+image=http://mtgimage.com/card/tranquil%20path.jpg
+value=3.08
+rarity=C
+type=Sorcery
+cost={4}{G}
+timing=main
+requires_groovy_code

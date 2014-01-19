@@ -1,0 +1,9 @@
+name=Tropical Storm
+url=http://magiccards.info/mr/en/144.html
+image=http://mtgimage.com/card/tropical%20storm.jpg
+value=3.44
+rarity=U
+type=Sorcery
+cost={X}{G}
+timing=main
+requires_groovy_code

@@ -1,0 +1,10 @@
+name=Keldon Megaliths
+url=http://magiccards.info/jvc/en/58.html
+image=http://mtgimage.com/card/keldon%20megaliths.jpg
+value=3.635
+rarity=U
+type=Land
+mana=r3
+ability=enters tapped;tap add mana {R}
+timing=land
+requires_groovy_code

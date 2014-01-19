@@ -1,0 +1,11 @@
+name=Vedalken Heretic
+url=http://magiccards.info/arb/en/104.html
+image=http://mtgimage.com/card/vedalken%20heretic.jpg
+value=2.946
+rarity=R
+type=Creature
+subtype=Rogue,Vedalken
+cost={G}{U}
+pt=1/1
+ability=damage opponent may draw card
+timing=main

@@ -3,8 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return (permanent.isFriend(cardOnStack) &&
-                    cardOnStack.hasColor(MagicColor.Green) &&
-                    permanent.isTapped()) ?
+                    cardOnStack.hasColor(MagicColor.Green)) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

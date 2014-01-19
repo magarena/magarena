@@ -142,6 +142,10 @@ public class ImageDrawingUtils {
             g.drawImage(IconImages.DEATHTOUCH.getImage(),ax,ay,observer);
             ax+=16;
         }
+        if (abilityFlags.contains(MagicAbility.Lifelink)) {
+            g.drawImage(IconImages.LIFELINK.getImage(),ax,ay,observer);
+            ax+=16;
+        }
         return ax;
     }
 

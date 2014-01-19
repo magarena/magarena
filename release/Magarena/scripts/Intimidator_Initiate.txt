@@ -1,0 +1,11 @@
+name=Intimidator Initiate
+url=http://magiccards.info/shm/en/96.html
+image=http://mtgimage.com/card/intimidator%20initiate.jpg
+value=3.189
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={R}
+pt=1/1
+timing=main
+requires_groovy_code
