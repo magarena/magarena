@@ -1,6 +1,6 @@
 name=Elderscale Wurm
 url=http://magiccards.info/m13/en/167.html
-image=http://magiccards.info/scans/en/m13/167.jpg
+image=http://mtgimage.com/card/elderscale%20wurm.jpg
 value=3.972
 rarity=M
 type=Creature

@@ -1,6 +1,6 @@
 name=Elixir of Immortality
 url=http://magiccards.info/m14/en/209.html
-image=http://magiccards.info/scans/en/m14/209.jpg
+image=http://mtgimage.com/card/elixir%20of%20immortality.jpg
 value=3.454
 rarity=U
 type=Artifact
