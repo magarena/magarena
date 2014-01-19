@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = game.filterCards(player, MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL).size();
+            final int amount = player.getNrOfPermanents(MagicType.Creature);
             game.doAction(new MagicDrawAction(player,amount));
         }
     }
