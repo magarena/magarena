@@ -796,6 +796,13 @@ public enum MagicAbility {
             ));
         }
     },
+    Graft("graft",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+            card.add(MagicWhenOtherComesIntoPlayTrigger.Graft);
+        }
+    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);

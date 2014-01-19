@@ -6,6 +6,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.model.MagicAbility;
 import magic.model.MagicCounterType;
+import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSoulbondEvent;
 import magic.model.action.MagicChangeCountersAction;
@@ -44,6 +45,41 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                 1,
                 true
             ));
+        }
+    };
+    
+    public static final MagicWhenOtherComesIntoPlayTrigger Graft = new MagicWhenOtherComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
+            return (otherPermanent.isCreature() &&
+            		otherPermanent != permanent &&
+            		permanent.getCounters(MagicCounterType.PlusOne)>0) ?
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(
+                        "Move a +1/+1 counter?"),
+                    otherPermanent,
+                    this,
+                    "PN may$ move a +1/+1 counter from SN onto RN."
+                    ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+        	if (event.isYes()) {
+        		game.doAction(new MagicChangeCountersAction(
+        			event.getPermanent(),
+        			MagicCounterType.PlusOne,
+        			-1,
+        			true
+        		));
+        		game.doAction(new MagicChangeCountersAction(
+        			event.getRefPermanent(),
+        			MagicCounterType.PlusOne,
+        			1,
+        			true
+        		));
+        	}
         }
     };
 
