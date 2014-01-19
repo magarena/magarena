@@ -3,7 +3,8 @@ url=http://magiccards.info/fut/en/177.html
 image=http://mtgimage.com/card/horizon%20canopy.jpg
 value=4.305
 rarity=R
+mana=w2g2
 type=Land
-ability=tap pain add mana {G} or {W};\
+ability=tap pay 1 life add mana {G} or {W};\
         pay {1}, {T}, {S}: PN draws a card.
 timing=land
