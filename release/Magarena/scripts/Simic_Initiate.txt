@@ -1,0 +1,11 @@
+name=Simic Initiate
+url=http://magiccards.info/di/en/92.html
+image=http://mtgimage.com/card/simic%20initiate.jpg
+value=3.193
+rarity=C
+type=Creature
+subtype=Human,Mutant
+cost={G}
+pt=0/0
+ability=graft 1
+timing=main

@@ -1,0 +1,9 @@
+name=Urza's Chalice
+url=http://magiccards.info/aq/en/40.html
+image=http://mtgimage.com/card/urza's%20chalice.jpg
+value=2.929
+rarity=C
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Haazda Snare Squad
+url=http://magiccards.info/dgm/en/2.html
+image=http://mtgimage.com/card/haazda%20snare%20squad.jpg
+value=3.317
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/4
+timing=main
+requires_groovy_code

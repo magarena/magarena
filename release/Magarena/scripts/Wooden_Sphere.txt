@@ -1,0 +1,9 @@
+name=Wooden Sphere
+url=http://magiccards.info/8e/en/321.html
+image=http://mtgimage.com/card/wooden%20sphere.jpg
+value=1.293
+rarity=U
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Aquastrand Spider
+url=http://magiccards.info/cmd/en/141.html
+image=http://mtgimage.com/card/aquastrand%20spider.jpg
+value=2.692
+rarity=C
+type=Creature
+subtype=Spider,Mutant
+cost={1}{G}
+pt=0/0
+ability=graft 2;pay {G}:Target creature with +1/+1 counter gains reach until end of turn.
+timing=main

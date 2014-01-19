@@ -1,0 +1,9 @@
+name=Malachite Talisman
+url=http://magiccards.info/ia/en/303.html
+image=http://mtgimage.com/card/malachite%20talisman.jpg
+value=2.317
+rarity=U
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code

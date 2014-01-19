@@ -1,0 +1,9 @@
+name=Ivory Cup
+url=http://magiccards.info/8e/en/305.html
+image=http://mtgimage.com/card/ivory%20cup.jpg
+value=1.417
+rarity=U
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code=Apothecary Initiate

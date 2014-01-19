@@ -1,0 +1,9 @@
+name=Lightning Cloud
+url=http://magiccards.info/vi/en/87.html
+image=http://mtgimage.com/card/lightning%20cloud.jpg
+value=3.083
+rarity=R
+type=Enchantment
+cost={3}{R}
+timing=enchantment
+requires_groovy_code

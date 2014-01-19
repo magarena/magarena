@@ -1,0 +1,9 @@
+name=Nacre Talisman
+url=http://magiccards.info/ia/en/304.html
+image=http://mtgimage.com/card/nacre%20talisman.jpg
+value=2.015
+rarity=U
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code

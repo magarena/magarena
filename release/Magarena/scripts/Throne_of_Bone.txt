@@ -1,0 +1,9 @@
+name=Throne of Bone
+url=http://magiccards.info/8e/en/317.html
+image=http://mtgimage.com/card/throne%20of%20bone.jpg
+value=1.389
+rarity=U
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code

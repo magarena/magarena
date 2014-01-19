@@ -1,0 +1,11 @@
+name=Grizzled Wolverine
+url=http://magiccards.info/ia/en/192.html
+image=http://mtgimage.com/card/grizzled%20wolverine.jpg
+value=3.125
+rarity=C
+type=Creature
+subtype=Wolverine
+cost={1}{R}{R}
+pt=2/2
+timing=main
+requires_groovy_code

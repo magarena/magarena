@@ -1,0 +1,11 @@
+name=Helium Squirter
+url=http://magiccards.info/di/en/26.html
+image=http://mtgimage.com/card/helium%20squirter.jpg
+value=2.816
+rarity=C
+type=Creature
+subtype=Beast,Mutant
+cost={4}{U}
+pt=0/0
+ability=graft 3;pay {1}:Target creature with +1/+1 counter gains flying until end of turn.
+timing=main

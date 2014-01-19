@@ -1,0 +1,11 @@
+name=Vigean Graftmage
+url=http://magiccards.info/di/en/35.html
+image=http://mtgimage.com/card/vigean%20graftmage.jpg
+value=3
+rarity=U
+type=Creature
+subtype=Mutant,Vedalken,Wizard
+cost={2}{U}
+pt=0/0
+ability=graft 2;pay {1}{U}:Untap target creature with +1/+1 counter.
+timing=main
