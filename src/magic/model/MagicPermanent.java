@@ -277,12 +277,15 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return cardDefinition.getConvertedCost();
     }
     
-    public int getDevotion(final MagicColor c) {
+    public int getDevotion(final MagicColor... colors) {
         int devotion = 0;
         final String costText = cardDefinition.getCost().getText();
         for (int i = 0; i < costText.length(); i++) {
-            if (costText.charAt(i) == c.getSymbol() - 32) {
-                devotion++;
+            for (final MagicColor c : colors) {
+                if (costText.charAt(i) == c.getSymbol() - 32) {
+                    devotion++;
+                    break;
+                }
             }
         }
         return devotion;
