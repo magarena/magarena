@@ -1,0 +1,11 @@
+name=Primalcrux
+url=http://magiccards.info/eve/en/73.html
+image=http://magiccards.info/scans/en/eve/73.jpg
+value=4.452
+rarity=R
+type=Creature
+subtype=Elemental
+cost={G}{G}{G}{G}{G}{G}
+ability=trample
+timing=main
+requires_groovy_code
