@@ -6,12 +6,12 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                         new MagicPayManaCostChoice(MagicManaCost.create("{W}"))
+                        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     ),
                     MagicTapTargetPicker.Tap,
                     this,
-                    "PN may\$ pay {W}\$. If PN does, tap target creature\$."
+                    "PN may\$ pay {W}\$. If PN does, tap target creature\$ an opponent controls."
                 )
         }
         @Override
