@@ -3,6 +3,7 @@ package magic.ui.viewer;
 import magic.MagicMain;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
+import magic.ui.MagicFrame;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
@@ -114,7 +115,8 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     }
 
     private void useCardZoneScreen(final MagicCardList aCardList, final String zoneName) {
-        MagicMain.rootFrame.showCardZoneScreen(aCardList, zoneName, false);
+        final MagicFrame frame = (MagicFrame)MagicMain.rootFrame;
+        frame.showCardZoneScreen(aCardList, zoneName, false);
     }
 
     @Override
