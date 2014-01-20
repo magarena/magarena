@@ -786,6 +786,10 @@ public enum MagicRuleEventAction {
                     return MagicPumpTargetPicker.create(); 
             }
         }
+        public String getName(final String rule) {
+            final String ability = matched(rule).group("ability");
+            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+        }
     },
     GainGroup(
         "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn."
