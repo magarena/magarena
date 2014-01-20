@@ -1,0 +1,12 @@
+name=Heartlash Cinder
+url=http://magiccards.info/eve/en/56.html
+image=http://magiccards.info/scans/en/eve/56.jpg
+value=2.925
+rarity=C
+type=Creature
+subtype=Elemental,Warrior
+cost={1}{R}
+pt=1/1
+ability=haste
+timing=main
+requires_groovy_code
