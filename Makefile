@@ -661,3 +661,7 @@ mtgimage:
 
 incoming:
 	grep -o https.* .hg/hgrc | parallel -j0 -k hg incoming {}
+
+properties.diff:
+	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
+	     <(sed '/^$$/d' cards/scriptable.txt) -d -u > $@
