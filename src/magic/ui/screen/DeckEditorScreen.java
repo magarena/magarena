@@ -109,18 +109,22 @@ public class DeckEditorScreen
                     saveDeck();
                 }
             }, "Save deck to file"));
-            buttons.add(new MenuButton("Clear", new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    if (JOptionPane.showConfirmDialog(
-                            MagicMain.rootFrame,
-                            "Remove all cards from the deck?") == JOptionPane.YES_OPTION) {
-                        createNewEmptyDeck();
-                    }
-                }
-            }, "Clear all cards from deck"));
         }
+        buttons.add(new MenuButton("Sample hand", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                if (content.getDeck().size() >= 7) {
+                    frame.showSampleHandGenerator(content.getDeck());
+                } else {
+                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
+                }
+            }
+        }, "Generate sample hands from this deck"));
         return buttons;
+    }
+
+    private void showInvalidActionMessage(final String message) {
+        JOptionPane.showMessageDialog(this, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
     }
 
     /* (non-Javadoc)
@@ -158,6 +162,11 @@ public class DeckEditorScreen
     }
 
     public void saveDeck() {
+
+        if (content.getDeck().size() == 0) {
+            showInvalidActionMessage("Deck is empty! Nothing to save.");
+            return;
+        }
 
         final JFileChooser fileChooser = new JFileChooser(DeckUtils.getDeckFolder()) {
             @Override

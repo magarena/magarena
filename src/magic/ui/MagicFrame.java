@@ -18,6 +18,7 @@ import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.ReadmeScreen;
@@ -102,6 +103,10 @@ public class MagicFrame extends JFrame {
     //
     // The various (Mag)screens that can currently be displayed.
     //
+
+    public void showSampleHandGenerator(final MagicDeck deck) {
+        activateMagScreen(new SampleHandScreen(this, deck));
+    }
     public void showDeckEditor() {
         activateMagScreen(new DeckEditorScreen(this));
     }
