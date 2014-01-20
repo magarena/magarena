@@ -146,6 +146,10 @@ public class ImageDrawingUtils {
             g.drawImage(IconImages.LIFELINK.getImage(),ax,ay,observer);
             ax+=16;
         }
+        if (abilityFlags.contains(MagicAbility.Reach)) {
+            g.drawImage(IconImages.REACH.getImage(),ax,ay,observer);
+            ax+=16;
+        }
         return ax;
     }
 

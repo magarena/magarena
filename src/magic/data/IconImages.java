@@ -114,6 +114,7 @@ public class IconImages {
     public static final ImageIcon INFECT=loadIcon("infect.png");
     public static final ImageIcon WITHER=loadIcon("wither.png");
     public static final ImageIcon LIFELINK=loadIcon("lifelink.png");
+    public static final ImageIcon REACH=loadIcon("reach.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
