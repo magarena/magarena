@@ -56,12 +56,11 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             		permanent.getCounters(MagicCounterType.PlusOne)>0) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        "Move a +1/+1 counter?"),
+                    new MagicMayChoice("Move a +1/+1 counter?"),
                     otherPermanent,
                     this,
                     "PN may$ move a +1/+1 counter from SN onto RN."
-                    ):
+                ):
                 MagicEvent.NONE;
         }
         @Override
