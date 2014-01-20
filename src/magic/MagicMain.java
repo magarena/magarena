@@ -9,7 +9,6 @@ import magic.data.KeywordDefinitions;
 import magic.model.MagicGameLog;
 import magic.ui.MagicFrame;
 
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
@@ -30,7 +29,7 @@ public class MagicMain {
     public static final String VERSION = "1.46";
     public static final String SOFTWARE_TITLE = "Magarena " + VERSION;
 
-    public static JFrame rootFrame;
+    public static MagicFrame rootFrame;
 
     private static final String GAME_FOLDER  = "Magarena";
     private static final String MODS_PATH    = "mods";

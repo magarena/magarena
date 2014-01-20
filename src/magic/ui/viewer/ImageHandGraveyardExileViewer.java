@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.MagicMain;
 import magic.model.MagicCardList;
 import magic.ui.GameController;
 import magic.ui.theme.Theme;
@@ -7,8 +8,10 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TabSelector;
 
 import javax.swing.JPanel;
+import javax.swing.JToggleButton;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import java.awt.BorderLayout;
 
 public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListener {
@@ -19,6 +22,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     private final TabSelector tabSelector;
     private final ImageCardListViewer cardListViewer;
     private final MagicCardList other = new MagicCardList();
+    private JToggleButton selectedTab = null;
 
     public ImageHandGraveyardExileViewer(final ViewerInfo aViewerInfo,final GameController controller) {
         viewerInfo = aViewerInfo;
@@ -56,21 +60,66 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     }
 
     public void update() {
+        update(false);
+    }
+
+    private void showCards(
+            final MagicCardList cards,
+            final boolean useCardZoneScreen,
+            final String cardZoneTitle,
+            final boolean aShowInfo) {
+        if (useCardZoneScreen) {
+            useCardZoneScreen(cards, cardZoneTitle);
+        } else {
+            cardListViewer.setCardList(cards, aShowInfo);
+        }
+    }
+
+    private void update(final boolean useCardZoneScreen) {
         if (cardListViewer!=null) {
             switch (tabSelector.getSelectedTab()) {
-                case 0: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).hand,true); break;
-                case 1: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).graveyard,false); break;
-                case 2: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).graveyard,false); break;
-                case 3: cardListViewer.setCardList(viewerInfo.getPlayerInfo(false).exile,false); break;
-                case 4: cardListViewer.setCardList(viewerInfo.getPlayerInfo(true).exile,false); break;
-                case 5: cardListViewer.setCardList(other,false); break;
+                case 0:
+                    showCards(
+                        viewerInfo.getPlayerInfo(false).hand,
+                        useCardZoneScreen, "Player Hand", true);
+                    break;
+                case 1:
+                    showCards(
+                            viewerInfo.getPlayerInfo(false).graveyard,
+                            useCardZoneScreen, "Player Graveyard", false);
+                    break;
+                case 2:
+                    showCards(
+                            viewerInfo.getPlayerInfo(true).graveyard,
+                            useCardZoneScreen, "Computer Graveyard", false);
+                    break;
+                case 3:
+                    showCards(
+                            viewerInfo.getPlayerInfo(false).exile,
+                            useCardZoneScreen, "Player Exile", false);
+                    break;
+                case 4:
+                    showCards(
+                            viewerInfo.getPlayerInfo(true).exile,
+                            useCardZoneScreen, "Computer Exile", false);
+                    break;
+                case 5:
+                    showCards(
+                            other,
+                            useCardZoneScreen, "Other", false);
+                    break;
             }
             repaint();
         }
     }
 
+    private void useCardZoneScreen(final MagicCardList aCardList, final String zoneName) {
+        MagicMain.rootFrame.showCardZoneScreen(aCardList, zoneName, false);
+    }
+
     @Override
     public void stateChanged(final ChangeEvent event) {
-        update();
+        update(event.getSource() == this.selectedTab && tabSelector.isUserClick());
+        this.selectedTab = (JToggleButton)event.getSource();
     }
 }
