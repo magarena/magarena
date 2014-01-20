@@ -4,6 +4,7 @@ import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.trigger.MagicTriggerType;
 
 // Must check if creature is tapped.
 public class MagicUntapAction extends MagicAction {
@@ -21,6 +22,7 @@ public class MagicUntapAction extends MagicAction {
         if (isTapped) {
             permanent.clearState(MagicPermanentState.Tapped);
             setScore(permanent.getController(),-ArtificialScoringSystem.getTappedScore(permanent));
+            game.executeTrigger(MagicTriggerType.WhenBecomesUntapped,permanent);
             game.setStateCheckRequired();
         }
     }

@@ -312,7 +312,7 @@ public enum MagicRuleEventAction {
         }
     },
     DiscardChosen(
-        "(?<choice>[^\\.]*) discards (?<amount>[a-z]+) card(s)?(?<random> at random)?.", 
+        "(?<choice>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?.", 
         MagicTargetHint.Negative, 
         MagicTiming.Draw, 
         "Discard"

@@ -83,6 +83,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicHeroicTrigger;
 import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
+import magic.model.trigger.MagicWhenSelfBecomesUntappedTrigger;
 import magic.model.trigger.MagicWhenYouCastSpiritOrArcaneTrigger;
 
 import java.util.EnumSet;
@@ -313,6 +314,13 @@ public enum MagicAbility {
     AttacksEffect("attacks effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenSelfAttacksTrigger.create(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    UntappedEffect("untapped effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenSelfBecomesUntappedTrigger.create(
                 MagicRuleEventAction.create(arg)
             ));
         }
