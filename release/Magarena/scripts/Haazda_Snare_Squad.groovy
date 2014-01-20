@@ -6,8 +6,8 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.create("{W}"))
-                        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                        new MagicPayManaCostChoice(MagicManaCost.create("{W}")),
+                        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS
                     ),
                     MagicTapTargetPicker.Tap,
                     this,
