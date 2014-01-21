@@ -4,6 +4,7 @@ import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.OSXAdapter;
+import magic.model.MagicCardList;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
@@ -12,12 +13,14 @@ import magic.model.MagicGameLog;
 import magic.model.MagicPlayerDefinition;
 import magic.test.TestGameBuilder;
 import magic.ui.screen.CardExplorerScreen;
+import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.ReadmeScreen;
@@ -102,6 +105,12 @@ public class MagicFrame extends JFrame {
     //
     // The various (Mag)screens that can currently be displayed.
     //
+    public void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
+        activateMagScreen(new CardZoneScreen(this, cards, zoneName, animateCards));
+    }
+    public void showSampleHandGenerator(final MagicDeck deck) {
+        activateMagScreen(new SampleHandScreen(this, deck));
+    }
     public void showDeckEditor() {
         activateMagScreen(new DeckEditorScreen(this));
     }

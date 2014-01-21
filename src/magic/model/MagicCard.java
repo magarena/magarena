@@ -1,22 +1,22 @@
 package magic.model;
 
+import magic.data.HighQualityCardImagesProvider;
 import magic.model.event.MagicActivation;
-import magic.model.event.MagicCardActivation;
 import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicPermanentStatic;
-import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
+import magic.ui.canvas.cards.ICardCanvas;
 
+import java.awt.image.BufferedImage;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.Collection;
-import java.util.Collections;
 
-public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
+public class MagicCard
+    extends MagicObjectImpl
+    implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard>,ICardCanvas {
 
     public static final MagicCard NONE = new MagicCard(MagicCardDefinition.UNKNOWN, MagicPlayer.NONE, 0) {
         @Override
@@ -33,7 +33,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     private final int imageIndex;
     private final boolean token;
     private boolean known=true;
-    
+
     public MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId) {
         this(aCardDefinition, aOwner, aId, false);
     }
@@ -41,7 +41,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public static MagicCard createTokenCard(final MagicCardDefinition cardDefinition, final MagicPlayer owner) {
         return new MagicCard(cardDefinition, owner, MagicCard.TOKEN_ID, true);
     }
-    
+
     public static MagicCard createTokenCard(final MagicObject obj, final MagicPlayer owner) {
         return new MagicCard(obj.getCardDefinition(), owner, MagicCard.TOKEN_ID, true);
     }
@@ -139,7 +139,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
         );
         return pt;
     }
-    
+
     public int getConvertedCost() {
         return getCost().getConvertedCost();
     }
@@ -163,7 +163,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public boolean isKnown() {
         return known;
     }
-    
+
     public boolean isInHand() {
         return getOwner().getHand().contains(this);
     }
@@ -171,7 +171,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public boolean isInGraveyard() {
         return getOwner().getGraveyard().contains(this);
     }
-    
+
     public boolean isInExile() {
         return getOwner().getExile().contains(this);
     }
@@ -190,7 +190,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public MagicPlayer getController() {
         return owner;
     }
-    
+
     @Override
     public int getPreventDamage() {
         return 0;
@@ -234,7 +234,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public boolean hasAbility(final MagicAbility ability) {
         return getCardDefinition().hasAbility(ability);
     }
-    
+
     public Set<MagicAbility> getAbilityFlags() {
         return getCardDefinition().genAbilityFlags();
     }
@@ -248,7 +248,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
     public boolean hasSubType(final MagicSubType subType) {
         return getCardDefinition().hasSubType(subType);
     }
-    
+
     public Set<MagicSubType> getSubTypeFlags() {
         return getCardDefinition().getSubTypeFlags();
     }
@@ -296,7 +296,7 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
             player.getHand().contains(this)) {
             return true;
         }
-        
+
         // Card in library
         if (targetFilter.acceptType(MagicTargetType.Library) &&
             player.getLibrary().contains(this)) {
@@ -304,5 +304,22 @@ public class MagicCard extends MagicObjectImpl implements MagicSource,MagicTarge
         }
 
         return false;
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.canvas.cards.ICardCanvas#getFrontImage()
+     */
+    @Override
+    public BufferedImage getFrontImage() {
+        return HighQualityCardImagesProvider.getInstance().getImage(
+                cardDefinition, getImageIndex(), true);
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.canvas.cards.ICardCanvas#getBackImage()
+     */
+    @Override
+    public BufferedImage getBackImage() {
+        return null;
     }
 }

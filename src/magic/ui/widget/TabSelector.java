@@ -29,6 +29,7 @@ public class TabSelector extends JPanel implements ActionListener {
     private int selectedTab;
     private final Dimension buttonDimension;
     private final Color backgroundColor;
+    private boolean isUserClick = false;
 
     public TabSelector(final ChangeListener listener, final boolean vertical, final Color backgroundColor0) {
 
@@ -96,7 +97,10 @@ public class TabSelector extends JPanel implements ActionListener {
 //    }
 
     private void showTab(final JToggleButton selectedButton) {
-
+        showTab(selectedButton, false);
+    }
+    private void showTab(final JToggleButton selectedButton, final boolean userClick) {
+        this.isUserClick = userClick;
         for (final JToggleButton button : buttons) {
 
             button.setSelected(button==selectedButton);
@@ -108,8 +112,11 @@ public class TabSelector extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(final ActionEvent event) {
+        showTab((JToggleButton)event.getSource(), true);
+    }
 
-        showTab((JToggleButton)event.getSource());
+    public boolean isUserClick() {
+        return isUserClick;
     }
 
 }
