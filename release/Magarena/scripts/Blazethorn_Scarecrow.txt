@@ -1,0 +1,11 @@
+name=Blazethorn Scarecrow
+url=http://magiccards.info/shm/en/246.html
+image=http://mtgimage.com/card/blazethorn%20scarecrow.jpg
+value=2.091
+rarity=C
+type=Artifact,Creature
+subtype=Scarecrow
+cost={5}
+pt=3/3
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Undercity Plague
+url=http://magiccards.info/gtc/en/83.html
+image=http://mtgimage.com/card/undercity%20plague.jpg
+value=3.145
+rarity=R
+type=Sorcery
+cost={4}{B}{B}
+timing=main
+requires_groovy_code

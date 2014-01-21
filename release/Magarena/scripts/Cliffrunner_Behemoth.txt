@@ -1,0 +1,11 @@
+name=Cliffrunner Behemoth
+url=http://magiccards.info/cfx/en/79.html
+image=http://mtgimage.com/card/cliffrunner%20behemoth.jpg
+value=3.431
+rarity=R
+type=Creature
+subtype=Rhino,Beast
+cost={3}{G}
+pt=5/3
+timing=main
+requires_groovy_code

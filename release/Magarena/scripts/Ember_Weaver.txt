@@ -1,0 +1,12 @@
+name=Ember Weaver
+url=http://magiccards.info/cfx/en/81.html
+image=http://mtgimage.com/card/ember%20weaver.jpg
+value=3.163
+rarity=C
+type=Creature
+subtype=Spider
+cost={2}{G}
+pt=2/3
+ability=reach
+timing=main
+requires_groovy_code

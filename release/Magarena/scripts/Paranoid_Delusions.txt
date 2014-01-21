@@ -1,0 +1,9 @@
+name=Paranoid Delusions
+url=http://magiccards.info/gtc/en/186.html
+image=http://mtgimage.com/card/paranoid%20delusions.jpg
+value=2.84
+rarity=C
+type=Sorcery
+cost={U}{B}
+timing=main
+requires_groovy_code

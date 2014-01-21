@@ -1,0 +1,11 @@
+name=Aladdin
+url=http://magiccards.info/4e/en/309.html
+image=http://mtgimage.com/card/aladdin.jpg
+value=3.909
+rarity=R
+type=Creature
+subtype=Human,Rogue
+cost={2}{R}{R}
+pt=1/1
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Drill-Skimmer
+url=http://magiccards.info/ds/en/118.html
+image=http://mtgimage.com/card/drill-skimmer.jpg
+value=2.104
+rarity=C
+type=Artifact,Creature
+subtype=Thopter
+cost={4}
+pt=2/1
+timing=artifact
+requires_groovy_code
