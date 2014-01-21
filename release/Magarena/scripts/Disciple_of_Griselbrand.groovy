@@ -1,33 +1,31 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
-        "Pump"
+        new MagicActivationHints(MagicTiming.Removal),
+        "Gain Life"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source,"{1}")
+                new MagicPayManaCostEvent(source,"{1}"),
+                new MagicSacrificePermanentEvent(
+                    source,
+                    MagicTargetChoice.SACRIFICE_CREATURE
+                )
             ];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.SACRIFICE_CREATURE,
-                MagicSacrificeTargetPicker.create(),
+                payedCost.getTarget(),
                 this,
-                "Sacrifice a creature. PN gains life " +
-                "equal to sacrificed creature's toughness."
+                "PN gains life equal to RN's toughness."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                final int toughness=creature.getToughness();
-                game.doAction(new MagicSacrificeAction(creature));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
-            });
+            final int sacrificed = event.getRefPermanent().getToughness();
+            game.doAction(new MagicChangeLifeAction(event.getPlayer(),sacrificed));
         }
     }
 ]
