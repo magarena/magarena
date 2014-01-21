@@ -1,6 +1,6 @@
 name=Springjack Shepherd
 url=http://magiccards.info/eve/en/15.html
-image=http://magiccards.info/scans/en/eve/15.jpg
+image=http://mtgimage.com/card/springjack%20shepherd.jpg
 value=3.681
 rarity=U
 type=Creature

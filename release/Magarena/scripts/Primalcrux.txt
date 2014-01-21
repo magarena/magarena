@@ -1,6 +1,6 @@
 name=Primalcrux
 url=http://magiccards.info/eve/en/73.html
-image=http://magiccards.info/scans/en/eve/73.jpg
+image=http://mtgimage.com/card/primalcrux.jpg
 value=4.452
 rarity=R
 type=Creature

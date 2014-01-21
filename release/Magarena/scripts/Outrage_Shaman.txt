@@ -1,6 +1,6 @@
 name=Outrage Shaman
 url=http://magiccards.info/eve/en/59.html
-image=http://magiccards.info/scans/en/eve/59.jpg
+image=http://mtgimage.com/card/outrage%20shaman.jpg
 value=2.645
 rarity=U
 type=Creature

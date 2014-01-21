@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-			final int amount = event.getPlayer().getDevotion(MagicColor.Red);
+            final int amount = event.getPlayer().getDevotion(MagicColor.Red);
             game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,0));
         }
     }
