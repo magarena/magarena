@@ -561,6 +561,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice FOREST_OR_ISLAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a Forest or Island card from your library");
     
+    public static final MagicTargetChoice CREATURE_CARD_FROM_LIBRARY = 
+        new MagicTargetChoice("a creature card from your library");
+    
     public static final MagicTargetChoice FOREST_OR_PLAINS_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a Forest or Plains card from your library");
     
