@@ -464,6 +464,7 @@ checks: \
 	check_unique_property \
 	check_required_property \
 	check_groovy_escape \
+	check_empty_return \
 	check_url \
 	check_image \
 	check_meta \
@@ -507,6 +508,10 @@ check_requires_groovy_code:
 # $ must be escaped as \$ in groovy script
 check_groovy_escape:
 	grep '[^\\]\$$' -r release/Magarena/scripts | grep -v '\$${' | ${NO_OUTPUT}
+
+# return should not be last token in groovy script
+check_empty_return:
+	grep "return[[:space:]]*$$" -r release/Magarena/scripts | ${NO_OUTPUT}
 
 # script name is canonical card name
 check_script_name:
