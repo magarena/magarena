@@ -1,0 +1,8 @@
+name=Diamond Valley
+url=http://magiccards.info/an/en/87.html
+image=http://mtgimage.com/card/diamond%20valley.jpg
+value=4.61
+rarity=R
+type=Land
+timing=land
+requires_groovy_code
