@@ -20,8 +20,8 @@ public class MagicManaCost {
 
     private static final Pattern PATTERN=Pattern.compile("\\{[A-Z\\d/]+\\}");
 
-    private static final int[] SINGLE_PENALTY={0,1,1,3,6,9};
-    private static final int[] DOUBLE_PENALTY={0,0,1,2,4,6};
+    private static final int[] SINGLE_PENALTY={0,1,1,3,6,9,12};
+    private static final int[] DOUBLE_PENALTY={0,0,1,2,4,6,8};
 
     private static final ImageIcon[] COLORLESS_ICONS={
         IconImages.COST_ZERO,
