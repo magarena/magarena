@@ -1,0 +1,11 @@
+name=Garruk, Caller of Beasts
+url=http://magiccards.info/m14/en/172.html
+image=http://mtgimage.com/card/garruk%2C%20caller%20of%20beasts.jpg
+value=3.906
+rarity=M
+type=Planeswalker
+subtype=Garruk
+cost={4}{G}{G}
+ability=enters with counter charge 4
+timing=main
+requires_groovy_code
