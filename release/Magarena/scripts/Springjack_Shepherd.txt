@@ -1,0 +1,11 @@
+name=Springjack Shepherd
+url=http://magiccards.info/eve/en/15.html
+image=http://magiccards.info/scans/en/eve/15.jpg
+value=3.681
+rarity=U
+type=Creature
+subtype=Kithkin,Wizard
+cost={3}{W}
+pt=1/2
+timing=main
+requires_groovy_code
