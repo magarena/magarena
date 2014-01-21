@@ -517,7 +517,7 @@ check_script_name:
 # check tokens used match tokens in scripts
 check_tokens:
 	diff \
-	<(grep token= -r release/Magarena/scripts -C 1 | grep -o "name=.*" | sed 's/name=//' | sort) \
+	<(grep -ho "name=.*" `grep token= -lr release/Magarena/scripts` | sed 's/name=//' | sort) \
 	<(grep 'TokenCardDefinitions.get("' -r release/Magarena/scripts src | grep -o '".*"' | sed 's/"//g' | sort | uniq) | grep ">" | ${NO_OUTPUT}
 
 # check that cards in decks exist in the game
