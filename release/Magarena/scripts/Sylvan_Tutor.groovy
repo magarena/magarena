@@ -1,17 +1,3 @@
-def CREATURE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-        return target.hasType(MagicType.Creature);
-    }
-    public boolean acceptType(final MagicTargetType targetType) {
-        return targetType == MagicTargetType.Library;
-    }
-};
-
-def A_CREATURE_CARD_FROM_LIBRARY = new MagicTargetChoice(
-    CREATURE_CARD_FROM_LIBRARY,
-    "a creature card"
-);
-
 def act = {
     final MagicGame game, final MagicEvent event ->
     if (event.isNo() == false) {
@@ -50,7 +36,7 @@ def evt = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(evt(
                 event,
-                A_CREATURE_CARD_FROM_LIBRARY
+                MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY
             ));
         }
     }
