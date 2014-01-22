@@ -1,7 +1,6 @@
 package magic.ui.screen;
 
 import magic.data.FileIO;
-import magic.ui.MagicFrame;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.widget.FontsAndBorders;
@@ -23,12 +22,10 @@ public class ReadmeScreen extends AbstractScreen implements IMagStatusBar, IMagA
 
     private static final String README_FILENAME="README.txt";
 
-    private final MagicFrame frame;
     private static JScrollPane keywordsPane;
 
-    public ReadmeScreen(final MagicFrame frame0) {
-        super(getScreenContent(), frame0);
-        this.frame = frame0;
+    public ReadmeScreen() {
+        super(getScreenContent());
     }
 
     private static JPanel getScreenContent() {
@@ -79,7 +76,7 @@ public class ReadmeScreen extends AbstractScreen implements IMagStatusBar, IMagA
         return new MenuButton("Close", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.closeActiveScreen(false);
+                getFrame().closeActiveScreen(false);
             }
         });
     }

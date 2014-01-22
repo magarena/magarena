@@ -6,6 +6,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
+import magic.MagicMain;
 import magic.ui.MagicFrame;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagScreenOptionsMenu;
@@ -24,9 +25,9 @@ public abstract class AbstractScreen extends JPanel {
     private final JPanel content;
     private final MagicFrame frame;
 
-    public AbstractScreen(final JPanel content0, final MagicFrame frame0) {
+    public AbstractScreen(final JPanel content0) {
         this.content = content0;
-        this.frame = frame0;
+        this.frame = (MagicFrame)MagicMain.rootFrame;
         setOpaque(false);
         doMagScreenLayout();
         setEscapeKeyInputMap();
@@ -87,4 +88,7 @@ public abstract class AbstractScreen extends JPanel {
      */
     public abstract boolean isScreenReadyToClose(final AbstractScreen nextScreen);
 
+    protected MagicFrame getFrame() {
+        return frame;
+    }
 }

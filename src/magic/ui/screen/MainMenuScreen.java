@@ -15,7 +15,7 @@ public class MainMenuScreen extends AbstractScreen {
     private static MenuPanel menuPanel;
 
     public MainMenuScreen(final MagicFrame frame) {
-        super(getScreenContent(frame), frame);
+        super(getScreenContent(frame));
     }
 
     private static JPanel getScreenContent(final MagicFrame frame) {

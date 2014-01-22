@@ -12,7 +12,6 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import magic.MagicMain;
 import magic.data.DeckUtils;
 import magic.model.MagicDeck;
 import magic.ui.ExplorerPanel;
@@ -32,16 +31,14 @@ public class DeckEditorScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
     private static ExplorerPanel content;
-    private final MagicFrame frame;
 
     // CTR : opens Deck Editor ready to update passed in deck.
-    public DeckEditorScreen(final MagicFrame frame0, final MagicDeck deck) {
-        super(getScreenContent(deck), frame0);
-        this.frame = frame0;
+    public DeckEditorScreen(final MagicDeck deck) {
+        super(getScreenContent(deck));
     }
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
-    public DeckEditorScreen(final MagicFrame frame0) {
-        this(frame0, null);
+    public DeckEditorScreen() {
+        this(null);
     }
 
     private static JPanel getScreenContent(final MagicDeck deck) {
@@ -58,14 +55,14 @@ public class DeckEditorScreen
             return new MenuButton("Cancel", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.closeActiveScreen(false);
+                    getFrame().closeActiveScreen(false);
                 }
             });
         } else {
             return new MenuButton("Close", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.closeActiveScreen(false);
+                    getFrame().closeActiveScreen(false);
                 }
             });
         }
@@ -81,7 +78,7 @@ public class DeckEditorScreen
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     if (content.validateDeck(true) && content.applyDeckUpdates()) {
-                        frame.closeActiveScreen(false);
+                        getFrame().closeActiveScreen(false);
                     }
                 }
             });
@@ -114,7 +111,7 @@ public class DeckEditorScreen
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (content.getDeck().size() >= 7) {
-                    frame.showSampleHandGenerator(content.getDeck());
+                    getFrame().showSampleHandGenerator(content.getDeck());
                 } else {
                     showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
                 }
@@ -140,7 +137,7 @@ public class DeckEditorScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-       new ScreenOptions(frame, this);
+       new ScreenOptions(getFrame(), this);
     }
 
     public void createNewEmptyDeck() {
@@ -180,13 +177,13 @@ public class DeckEditorScreen
                 final Path saveFolder = getSelectedFile().toPath().getParent();
                 if (saveFolder.equals(prebuiltDecksFolder)) {
                     JOptionPane.showMessageDialog(
-                            frame,
+                            getFrame(),
                             "This directory is reserved for prebuilt decks.\nPlease choose a different directory.",
                             "Invalid directory",
                             JOptionPane.WARNING_MESSAGE);
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
-                            frame,
+                            getFrame(),
                             "Overwrite existing deck file?",
                             "Overwrite file",
                             JOptionPane.YES_NO_OPTION);
@@ -210,7 +207,7 @@ public class DeckEditorScreen
                 content.setDeck(content.getDeck());
             } else {
                 JOptionPane.showMessageDialog(
-                        frame,
+                        getFrame(),
                         "There was a problem saving the deck file!",
                         "Deck not saved",
                         JOptionPane.ERROR_MESSAGE);

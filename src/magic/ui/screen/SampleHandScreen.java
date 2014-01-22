@@ -30,14 +30,12 @@ public class SampleHandScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
-    private final MagicFrame frame;
     private static CardsCanvas content;
     private final MagicDeck deck;
     private final static Dimension cardSize = new Dimension(480, 680);
 
-    public SampleHandScreen(final MagicFrame frame0, final MagicDeck deck) {
-        super(getScreenContent(deck), frame0);
-        frame = frame0;
+    public SampleHandScreen(final MagicDeck deck) {
+        super(getScreenContent(deck));
         this.deck = deck;
     }
 
@@ -79,7 +77,7 @@ public class SampleHandScreen
         return new MenuButton("Close", new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
-              frame.closeActiveScreen(false);
+              getFrame().closeActiveScreen(false);
           }
       });
     }
@@ -120,7 +118,7 @@ public class SampleHandScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new ScreenOptions(frame);
+        new ScreenOptions(getFrame());
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {

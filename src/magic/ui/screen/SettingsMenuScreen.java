@@ -18,7 +18,7 @@ public class SettingsMenuScreen extends AbstractScreen {
     private static DownloadImagesDialog downloadDialog;
 
     public SettingsMenuScreen(final MagicFrame frame0) {
-        super(getScreenContent(frame0), frame0);
+        super(getScreenContent(frame0));
     }
 
     private static JPanel getScreenContent(final MagicFrame frame0) {

@@ -2,7 +2,6 @@ package magic.ui.screen;
 
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
-import magic.ui.MagicFrame;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.theme.Theme;
@@ -33,11 +32,9 @@ public class KeywordsScreen extends AbstractScreen implements IMagStatusBar, IMa
 
     private static JScrollPane scrollPane;
     private static MyScrollablePanel scrollablePanel;
-    private final MagicFrame frame;
 
-    public KeywordsScreen(final MagicFrame frame0) {
-        super(getScreenContent(), frame0);
-        this.frame = frame0;
+    public KeywordsScreen() {
+        super(getScreenContent());
     }
 
     private static JPanel getScreenContent() {
@@ -167,7 +164,7 @@ public class KeywordsScreen extends AbstractScreen implements IMagStatusBar, IMa
         return new MenuButton("Close", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.closeActiveScreen(false);
+                getFrame().closeActiveScreen(false);
             }
         });
     }

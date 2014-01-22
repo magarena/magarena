@@ -17,7 +17,7 @@ public class HelpMenuScreen extends AbstractScreen {
     private static final String DOCUMENTATION_URL = "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
 
     public HelpMenuScreen(final MagicFrame frame0) {
-        super(getScreenContent(frame0), frame0);
+        super(getScreenContent(frame0));
     }
 
     private static JPanel getScreenContent(final MagicFrame frame0) {

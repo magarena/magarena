@@ -19,11 +19,8 @@ public class CardExplorerScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
-    private final MagicFrame frame;
-
-    public CardExplorerScreen(final MagicFrame frame0) {
-        super(new ExplorerPanel(), frame0);
-        frame = frame0;
+    public CardExplorerScreen() {
+        super(new ExplorerPanel());
     }
 
     /* (non-Javadoc)
@@ -42,7 +39,7 @@ public class CardExplorerScreen
         return new MenuButton("Close", new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
-              frame.closeActiveScreen(false);
+              getFrame().closeActiveScreen(false);
           }
       });
     }
@@ -76,7 +73,7 @@ public class CardExplorerScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new ScreenOptions(frame);
+        new ScreenOptions(getFrame());
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {

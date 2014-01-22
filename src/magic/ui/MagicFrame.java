@@ -106,25 +106,25 @@ public class MagicFrame extends JFrame {
     // The various (Mag)screens that can currently be displayed.
     //
     public void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
-        activateMagScreen(new CardZoneScreen(this, cards, zoneName, animateCards));
+        activateMagScreen(new CardZoneScreen(cards, zoneName, animateCards));
     }
     public void showSampleHandGenerator(final MagicDeck deck) {
-        activateMagScreen(new SampleHandScreen(this, deck));
+        activateMagScreen(new SampleHandScreen(deck));
     }
     public void showDeckEditor() {
-        activateMagScreen(new DeckEditorScreen(this));
+        activateMagScreen(new DeckEditorScreen());
     }
     public void showDeckEditor(final MagicDeck deck) {
-        activateMagScreen(new DeckEditorScreen(this, deck));
+        activateMagScreen(new DeckEditorScreen(deck));
     }
     public void showCardExplorerScreen() {
-        activateMagScreen(new CardExplorerScreen(this));
+        activateMagScreen(new CardExplorerScreen());
     }
     public void showReadMeScreen() {
-        activateMagScreen(new ReadmeScreen(this));
+        activateMagScreen(new ReadmeScreen());
     }
     public void showKeywordsScreen() {
-        activateMagScreen(new KeywordsScreen(this));
+        activateMagScreen(new KeywordsScreen());
     }
     public void showHelpMenuScreen() {
         activateMagScreen(new HelpMenuScreen(this));
@@ -136,7 +136,7 @@ public class MagicFrame extends JFrame {
         if (screens.peek() instanceof DuelDecksScreen) {
             screens.pop();
         }
-        activateMagScreen(new DuelDecksScreen(this, duel));
+        activateMagScreen(new DuelDecksScreen(duel));
     }
     public void showMainMenuScreen() {
         screens.clear();

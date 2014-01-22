@@ -10,7 +10,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 import magic.model.MagicCardList;
-import magic.ui.MagicFrame;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.interfaces.IMagActionBar;
@@ -22,18 +21,15 @@ public class CardZoneScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar {
 
-    private final MagicFrame frame;
     private static CardsCanvas content;
     private final static Dimension cardSize = new Dimension(480, 680);
     private static String screenCaption;
 
     public CardZoneScreen(
-            final MagicFrame frame0,
             final MagicCardList cards,
             final String zoneName,
             final boolean animateCards) {
-        super(getScreenContent(cards, zoneName, animateCards), frame0);
-        frame = frame0;
+        super(getScreenContent(cards, zoneName, animateCards));
     }
 
     private static JPanel getScreenContent(
@@ -71,7 +67,7 @@ public class CardZoneScreen
         return new MenuButton("Close", new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
-              frame.closeActiveScreen(false);
+              getFrame().closeActiveScreen(false);
           }
       });
     }
