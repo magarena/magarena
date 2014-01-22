@@ -17,7 +17,7 @@
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player));
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
-                    opponent,
+                    player,
                     MagicTargetChoice.SACRIFICE_PERMANENT
                 ));
                 game.doAction(new MagicCipherAction(event.getCardOnStack(),event.getPlayer()));
