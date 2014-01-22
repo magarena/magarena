@@ -9,7 +9,7 @@
     },
     new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             if (source.getController().controlsPermanent(MagicColor.Red)) {
                 pt.add(1,0);
             }
