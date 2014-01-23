@@ -10,7 +10,7 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.model.MagicPlayerDefinition;
+import magic.ui.choice.MulliganChoicePanel;
 import magic.ui.screen.CardExplorerScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorScreen;
@@ -19,6 +19,7 @@ import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.MulliganScreen;
 import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.MainMenuScreen;
@@ -86,6 +87,14 @@ public class MagicFrame extends JFrame {
     //
     // The various (Mag)screens that can currently be displayed.
     //
+    public void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
+        if (screens.peek() instanceof MulliganScreen) {
+            final MulliganScreen screen = (MulliganScreen)screens.peek();
+            screen.dealNewHand(choicePanel, hand);
+        } else {
+            activateMagScreen(new MulliganScreen(choicePanel, hand));
+        }
+    }
     public void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
         activateMagScreen(new CardZoneScreen(cards, zoneName, animateCards));
     }
@@ -221,12 +230,7 @@ public class MagicFrame extends JFrame {
     }
 
     public void nextGame() {
-        duel.updateDifficulty();
-        final MagicPlayerDefinition[] players=duel.getPlayers();
-        if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
-           isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
-            openGame(duel.nextGame(true));
-        }
+        activateMagScreen(new DuelGameScreen(duel));
     }
 
     public void openGame(final MagicGame game) {

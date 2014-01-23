@@ -22,6 +22,9 @@ public class CardsCanvas extends JPanel {
 		SCALE_TO_FIT
 	}
 
+	private int dealCardDelay = 80; // milliseconds
+    private int removeCardDelay = 50; // millseconds
+
 	private List<CardCanvas> cards = new CopyOnWriteArrayList<CardCanvas>();
 	public boolean showIndex = true;
 	private volatile boolean useAnimation = true;
@@ -76,7 +79,7 @@ public class CardsCanvas extends JPanel {
 			private void dealCardsAnimation() {
 				while (maxCardsVisible++ < cards.size()) {
 					repaint();
-					pause(80);
+					pause(dealCardDelay);
 				}
 				maxCardsVisible--;
 			}
@@ -91,7 +94,7 @@ public class CardsCanvas extends JPanel {
 				if (maxCardsVisible > 0) {
 					while (maxCardsVisible-- >= 0) {
 						repaint();
-						pause(50);
+						pause(removeCardDelay);
 					}
 				}
 			}
@@ -270,5 +273,14 @@ public class CardsCanvas extends JPanel {
 
 		cardCanvasScale = (double)cardWidth / preferredCardSize.width;
 	}
+
+    public int getCardsCount() {
+        return cards.size();
+    }
+
+    public void setAnimationDelay(final int dealCardDelay, final int removeCardDelay) {
+        this.dealCardDelay = dealCardDelay;
+        this.removeCardDelay = removeCardDelay;
+    }
 
 }

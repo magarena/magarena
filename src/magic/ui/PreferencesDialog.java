@@ -53,6 +53,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private JButton cancelButton;
     private JCheckBox previewCardOnSelectCheckBox;
     private JCheckBox gameLogCheckBox;
+    private JCheckBox mulliganScreenCheckbox;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -82,10 +83,29 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("General", getGeneralSettingsPanel());
-        tabbedPane.addTab("Duel", getDuelSettingsPanel());
+        tabbedPane.addTab("Gameplay", getDuelSettingsPanel());
         tabbedPane.addTab("Look & Feel", getThemeSettingsPanel());
         tabbedPane.addTab("Deck Editor", getDeckEditorSettingsPanel());
+        tabbedPane.addTab("Experimental", getExperimentalSettingsPanel());
         return tabbedPane;
+    }
+
+    private Component getExperimentalSettingsPanel() {
+
+        final JPanel panel = new JPanel();
+        panel.setLayout(null);
+
+        final int Y=10;
+        final int X3=25;
+        final int H3=20;
+        final int W3=350;
+
+        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
+        mulliganScreenCheckbox.setBounds(X3,Y,W3,H3);
+        mulliganScreenCheckbox.setFocusable(false);
+        panel.add(mulliganScreenCheckbox);
+
+        return panel;
     }
 
     private Component getDeckEditorSettingsPanel() {
@@ -282,6 +302,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
             config.setMessageDelay(messageDelaySlider.getValue());
             config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
             config.setLogMessagesVisible(gameLogCheckBox.isSelected());
+            config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
             config.save();
             ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
             frame.repaint();

@@ -2,6 +2,7 @@ package magic.data;
 
 import magic.MagicMain;
 
+import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
@@ -39,6 +40,10 @@ public class GeneralConfig {
     private static final String FULLSCREEN = "fullScreen";
     private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
     private static final String SHOW_LOG_MESSAGES = "showLogMessages";
+    private static final String MULLIGAN_SCREEN = "mulliganScreen";
+
+    // The most common size of card retrieved from http://mtgimage.com.
+    public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
 
     private static final int DEFAULT_LEFT=0;
     private static final int DEFAULT_TOP=0;
@@ -68,6 +73,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_FULLSCREEN = false;
     private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = false;
     private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
+    private static final boolean DEFAULT_MULLIGAN_SCREEN = true;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -97,6 +103,7 @@ public class GeneralConfig {
     private boolean fullScreen = DEFAULT_FULLSCREEN;
     private boolean previewCardOnSelect = DEFAULT_PREVIEW_CARD_ON_SELECT;
     private boolean showLogMessages = DEFAULT_SHOW_LOG_MESSAGES;
+    private boolean isMulliganScreenActive = DEFAULT_MULLIGAN_SCREEN;
 
     private GeneralConfig() {}
 
@@ -331,6 +338,12 @@ public class GeneralConfig {
         showLogMessages = b;
     }
 
+    public boolean showMulliganScreen() {
+        return isMulliganScreenActive;
+    }
+    public void setMulliganScreenActive(final boolean b) {
+        isMulliganScreenActive = b;
+    }
 
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
@@ -361,6 +374,7 @@ public class GeneralConfig {
         fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + DEFAULT_FULLSCREEN));
         previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
         showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
+        isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + DEFAULT_MULLIGAN_SCREEN));
     }
 
     public void load() {
@@ -396,6 +410,7 @@ public class GeneralConfig {
         properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
         properties.setProperty(PREVIEW_CARD_ON_SELECT, String.valueOf(previewCardOnSelect));
         properties.setProperty(SHOW_LOG_MESSAGES, String.valueOf(showLogMessages));
+        properties.setProperty(MULLIGAN_SCREEN, String.valueOf(isMulliganScreenActive));
     }
 
     public void save() {
@@ -416,5 +431,6 @@ public class GeneralConfig {
     public static GeneralConfig getInstance() {
         return INSTANCE;
     }
+
 
 }

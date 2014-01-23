@@ -118,4 +118,5 @@ public abstract class AbstractScreen extends JPanel {
       }
 
     }
+
 }

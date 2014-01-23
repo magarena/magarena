@@ -7,6 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+
+import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -28,7 +30,7 @@ public class SampleHandScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
-    private final static Dimension cardSize = new Dimension(480, 680);
+    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 
     private final CardsCanvas content;
     private final MagicDeck deck;

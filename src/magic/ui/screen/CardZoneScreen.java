@@ -8,6 +8,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.SwingUtilities;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
@@ -20,7 +21,7 @@ public class CardZoneScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar {
 
-    private final static Dimension cardSize = new Dimension(480, 680);
+    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 
     private final CardsCanvas content;
     private final String screenCaption;
