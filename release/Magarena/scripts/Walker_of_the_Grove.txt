@@ -1,0 +1,11 @@
+name=Walker of the Grove
+url=http://magiccards.info/c13/en/175.html
+image=http://mtgimage.com/card/walker%20of%20the%20grove.jpg
+value=3.273
+rarity=C
+type=Creature
+subtype=Elemental
+cost={6}{G}{G}
+pt=7/7
+ability=leaves effect PN puts a 4/4 green Elemental creature token onto the battlefield.;evoke {4}{G}
+timing=main

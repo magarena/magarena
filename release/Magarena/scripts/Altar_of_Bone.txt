@@ -1,0 +1,9 @@
+name=Altar of Bone
+url=http://magiccards.info/ia/en/359.html
+image=http://mtgimage.com/card/altar%20of%20bone.jpg
+value=2.713
+rarity=R
+type=Sorcery
+cost={G}{W}
+timing=main
+requires_groovy_code
