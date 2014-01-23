@@ -308,7 +308,7 @@ public class GameController implements ILogBookListener {
             }
         });
     }
-    
+
     public void clearCards() {
         showCards(new MagicCardList());
     }
@@ -329,7 +329,11 @@ public class GameController implements ILogBookListener {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 for (final ChoiceViewer choiceViewer : choiceViewers) {
-                    choiceViewer.showValidChoices(validChoices);
+                    try {
+                        choiceViewer.showValidChoices(validChoices);
+                    } catch (NullPointerException e) {
+                        System.err.println("GameController.showValidChoices : NPE in " + e.getStackTrace()[0]);
+                    }
                 }
             }
         });

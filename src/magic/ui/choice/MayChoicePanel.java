@@ -77,10 +77,18 @@ public class MayChoicePanel extends JPanel implements ActionListener {
     public boolean isYesClicked() {
         return yes;
     }
+    protected void setYesClicked(final boolean b) {
+        yes = b;
+    }
 
     @Override
     public void actionPerformed(final ActionEvent event) {
         yes = event.getSource() == yesButton;
         controller.actionClicked();
     }
+
+    public GameController getGameController() {
+        return controller;
+    }
+
 }

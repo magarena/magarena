@@ -6,8 +6,6 @@ import java.util.List;
 
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
@@ -27,17 +25,11 @@ public class DuelDecksScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
-    private final MagicFrame frame;
-    private static DuelPanel screenContent;
+    private final DuelPanel screenContent;
 
-    public DuelDecksScreen(final MagicFrame frame0, final MagicDuel duel0) {
-        super(getScreenContent(duel0), frame0);
-        this.frame = frame0;
-    }
-
-    private static JPanel getScreenContent(final MagicDuel duel) {
-        screenContent = new DuelPanel(duel);
-        return screenContent;
+    public DuelDecksScreen(final MagicDuel duel) {
+        this.screenContent = new DuelPanel(duel);
+        setContent(this.screenContent);
     }
 
     /* (non-Javadoc)
@@ -57,14 +49,14 @@ public class DuelDecksScreen
             return new MenuButton("< Main menu", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.closeActiveScreen(false);
+                    getFrame().closeActiveScreen(false);
                 }
             });
         } else {
             return new MenuButton("< Quit duel", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.closeActiveScreen(false);
+                    getFrame().closeActiveScreen(false);
                 }
             });
         }
@@ -75,7 +67,7 @@ public class DuelDecksScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new ScreenOptions(frame, this);
+        new ScreenOptions(getFrame(), this);
     }
 
     /* (non-Javadoc)
@@ -87,14 +79,14 @@ public class DuelDecksScreen
             return new MenuButton(getStartDuelCaption() + " >", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.nextGame();
+                    getFrame().nextGame();
                 }
             });
         } else {
             return new MenuButton("New Duel", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.showNewDuelDialog();
+                    getFrame().showNewDuelDialog();
                 }
             });
         }
@@ -118,7 +110,7 @@ public class DuelDecksScreen
             buttons.add(new MenuButton("Deck Editor", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.showDeckEditor(screenContent.getSelectedPlayer().getDeck());
+                    getFrame().showDeckEditor(screenContent.getSelectedPlayer().getDeck());
                 }
             }));
             buttons.add(new MenuButton("Swap Decks", new AbstractAction() {
@@ -137,7 +129,7 @@ public class DuelDecksScreen
             buttons.add(new MenuButton("Restart duel", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    frame.restartDuel();
+                    getFrame().restartDuel();
                 }
             }));
         }
@@ -162,8 +154,8 @@ public class DuelDecksScreen
         players[0].setDeck(deck2);
         players[1].setProfile(profile1);
         players[1].setDeck(deck1);
-        frame.closeActiveScreen(false);
-        frame.showDuel();
+        getFrame().closeActiveScreen(false);
+        getFrame().showDuel();
     }
 
     /* (non-Javadoc)

@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -30,25 +30,20 @@ public class SampleHandScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
-    private final MagicFrame frame;
-    private static CardsCanvas content;
+    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
+
+    private final CardsCanvas content;
     private final MagicDeck deck;
-    private final static Dimension cardSize = new Dimension(480, 680);
 
-    public SampleHandScreen(final MagicFrame frame0, final MagicDeck deck) {
-        super(getScreenContent(deck), frame0);
-        frame = frame0;
+    public SampleHandScreen(final MagicDeck deck) {
         this.deck = deck;
+        this.content = new CardsCanvas(cardSize);
+        this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
+        this.content.refresh(getHandCards(deck), cardSize);
+        setContent(this.content);
     }
 
-    private static JPanel getScreenContent(final MagicDeck deck) {
-        content = new CardsCanvas(cardSize);
-        content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        content.refresh(getHandCards(deck), cardSize);
-        return content;
-    }
-
-    private static List<? extends ICardCanvas> getHandCards(final MagicDeck deck) {
+    private List<? extends ICardCanvas> getHandCards(final MagicDeck deck) {
         final MagicCardList library = new MagicCardList();
         for (MagicCardDefinition magicCardDef : deck) {
             library.add(new MagicCard(magicCardDef, null, 0));
@@ -79,7 +74,7 @@ public class SampleHandScreen
         return new MenuButton("Close", new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
-              frame.closeActiveScreen(false);
+              getFrame().closeActiveScreen(false);
           }
       });
     }
@@ -120,7 +115,7 @@ public class SampleHandScreen
      */
     @Override
     public void showOptionsMenuOverlay() {
-        new ScreenOptions(frame);
+        new ScreenOptions(getFrame());
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {

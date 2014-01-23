@@ -8,7 +8,6 @@ import javax.swing.JPanel;
 
 import magic.data.URLUtils;
 import magic.ui.DownloadImagesDialog;
-import magic.ui.MagicFrame;
 import magic.ui.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -17,11 +16,11 @@ public class SettingsMenuScreen extends AbstractScreen {
 
     private static DownloadImagesDialog downloadDialog;
 
-    public SettingsMenuScreen(final MagicFrame frame0) {
-        super(getScreenContent(frame0), frame0);
+    public SettingsMenuScreen() {
+        setContent(getScreenContent());
     }
 
-    private static JPanel getScreenContent(final MagicFrame frame0) {
+    private JPanel getScreenContent() {
 
         final JPanel content = new JPanel();
         content.setOpaque(false);
@@ -32,14 +31,14 @@ public class SettingsMenuScreen extends AbstractScreen {
         menu.addMenuItem("Preferences", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.openPreferencesDialog();
+                getFrame().openPreferencesDialog();
             }
         });
         menu.addMenuItem("Download images", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (downloadDialog == null || !downloadDialog.isDisplayable()) {
-                    downloadDialog = new DownloadImagesDialog(frame0);
+                    downloadDialog = new DownloadImagesDialog(getFrame());
                 }
                 downloadDialog.setState(Frame.NORMAL);
                 downloadDialog.setVisible(true);
@@ -54,14 +53,14 @@ public class SettingsMenuScreen extends AbstractScreen {
         menu.addMenuItem("Toggle full-screen", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.toggleFullScreenMode();
+                getFrame().toggleFullScreenMode();
             }
         }, "Shortcut key: F11");
         menu.addBlankItem();
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.closeActiveScreen(false);
+                getFrame().closeActiveScreen(false);
             }
         });
 

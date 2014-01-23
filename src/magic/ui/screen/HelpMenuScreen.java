@@ -7,7 +7,6 @@ import javax.swing.JPanel;
 
 import magic.data.URLUtils;
 import magic.ui.AboutDialog;
-import magic.ui.MagicFrame;
 import magic.ui.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -16,11 +15,11 @@ public class HelpMenuScreen extends AbstractScreen {
 
     private static final String DOCUMENTATION_URL = "http://code.google.com/p/magarena/wiki/AboutMagarena?tm=6";
 
-    public HelpMenuScreen(final MagicFrame frame0) {
-        super(getScreenContent(frame0), frame0);
+    public HelpMenuScreen() {
+        setContent(getScreenContent());
     }
 
-    private static JPanel getScreenContent(final MagicFrame frame0) {
+    private JPanel getScreenContent() {
 
         final JPanel content = new JPanel();
         content.setOpaque(false);
@@ -31,7 +30,7 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem("ReadMe", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.showReadMeScreen();
+                getFrame().showReadMeScreen();
             }
         });
         menu.addMenuItem("Online help", new AbstractAction() {
@@ -43,20 +42,20 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem("Keywords glossary", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.showKeywordsScreen();
+                getFrame().showKeywordsScreen();
             }
         });
         menu.addMenuItem("About Magarena", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                new AboutDialog(frame0);
+                new AboutDialog(getFrame());
             }
         });
         menu.addBlankItem();
         menu.addMenuItem("Close menu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame0.closeActiveScreen(false);
+                getFrame().closeActiveScreen(false);
             }
         });
 

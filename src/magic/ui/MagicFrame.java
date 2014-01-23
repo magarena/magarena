@@ -10,8 +10,7 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.model.MagicPlayerDefinition;
-import magic.test.TestGameBuilder;
+import magic.ui.choice.MulliganChoicePanel;
 import magic.ui.screen.CardExplorerScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorScreen;
@@ -20,6 +19,7 @@ import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.MulliganScreen;
 import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.MainMenuScreen;
@@ -49,10 +49,6 @@ public class MagicFrame extends JFrame {
 
     private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
 
-    // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
-    // where X is one of the classes (without the .java) in "magic.test".
-    private static final String testGame = System.getProperty("testGame");
-
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
     public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
 
@@ -67,6 +63,8 @@ public class MagicFrame extends JFrame {
         // Load settings.
         config = GeneralConfig.getInstance();
         config.load();
+
+        screens = new Stack<AbstractScreen>();
 
         // Setup frame.
         this.setTitle(frameTitle + "  [F11 : full screen]");
@@ -83,60 +81,52 @@ public class MagicFrame extends JFrame {
         setF11KeyInputMap();
         setF12KeyInputMap();
 
-        // First screen to display is the main menu.
-        screens = new Stack<AbstractScreen>();
-        showMainMenuScreen();
-        if (testGame != null) {
-            openGame(TestGameBuilder.buildGame(testGame));
-        }
-
         setVisible(true);
-
-        // add "-DselfMode=true" VM argument for AI vs AI mode.
-        // in selfMode start game immediately based on configuration from duel.cfg
-        if (Boolean.getBoolean("selfMode")) {
-            final DuelConfig config=DuelConfig.getInstance();
-            config.load();
-            newDuel(config);
-        }
-
     }
 
     //
     // The various (Mag)screens that can currently be displayed.
     //
+    public void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
+        if (screens.peek() instanceof MulliganScreen) {
+            final MulliganScreen screen = (MulliganScreen)screens.peek();
+            screen.dealNewHand(choicePanel, hand);
+        } else {
+            activateMagScreen(new MulliganScreen(choicePanel, hand));
+        }
+    }
     public void showCardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
-        activateMagScreen(new CardZoneScreen(this, cards, zoneName, animateCards));
+        activateMagScreen(new CardZoneScreen(cards, zoneName, animateCards));
     }
     public void showSampleHandGenerator(final MagicDeck deck) {
-        activateMagScreen(new SampleHandScreen(this, deck));
+        activateMagScreen(new SampleHandScreen(deck));
     }
     public void showDeckEditor() {
-        activateMagScreen(new DeckEditorScreen(this));
+        activateMagScreen(new DeckEditorScreen());
     }
     public void showDeckEditor(final MagicDeck deck) {
-        activateMagScreen(new DeckEditorScreen(this, deck));
+        activateMagScreen(new DeckEditorScreen(deck));
     }
     public void showCardExplorerScreen() {
-        activateMagScreen(new CardExplorerScreen(this));
+        activateMagScreen(new CardExplorerScreen());
     }
     public void showReadMeScreen() {
-        activateMagScreen(new ReadmeScreen(this));
+        activateMagScreen(new ReadmeScreen());
     }
     public void showKeywordsScreen() {
-        activateMagScreen(new KeywordsScreen(this));
+        activateMagScreen(new KeywordsScreen());
     }
     public void showHelpMenuScreen() {
-        activateMagScreen(new HelpMenuScreen(this));
+        activateMagScreen(new HelpMenuScreen());
     }
     public void showSettingsMenuScreen() {
-        activateMagScreen(new SettingsMenuScreen(this));
+        activateMagScreen(new SettingsMenuScreen());
     }
     private void showDuelDecksScreen() {
         if (screens.peek() instanceof DuelDecksScreen) {
             screens.pop();
         }
-        activateMagScreen(new DuelDecksScreen(this, duel));
+        activateMagScreen(new DuelDecksScreen(duel));
     }
     public void showMainMenuScreen() {
         screens.clear();
@@ -240,16 +230,11 @@ public class MagicFrame extends JFrame {
     }
 
     public void nextGame() {
-        duel.updateDifficulty();
-        final MagicPlayerDefinition[] players=duel.getPlayers();
-        if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
-           isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
-            openGame(duel.nextGame(true));
-        }
+        activateMagScreen(new DuelGameScreen(duel));
     }
 
-    private void openGame(final MagicGame game) {
-        activateMagScreen(new DuelGameScreen(this, game));
+    public void openGame(final MagicGame game) {
+        activateMagScreen(new DuelGameScreen(game));
     }
 
     /**

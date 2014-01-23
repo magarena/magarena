@@ -14,26 +14,33 @@ import magic.ui.theme.ThemeFactory;
 @SuppressWarnings("serial")
 public class BackgroundPanel extends JPanel {
 
+    private Theme activeTheme;
+    private BufferedImage image;
+    private boolean stretchTexture;
+
     public BackgroundPanel(final LayoutManager layout) {
         super(layout);
+        setBackgroundImage();
     }
 
     @Override
     protected void paintComponent(final Graphics g) {
+        setBackgroundImage();
         final Dimension size = getSize();
-        final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
-        final boolean stretchTexture = theme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1;
-        paintZone(g,
-                theme.getTexture(Theme.TEXTURE_BACKGROUND),
-                new Rectangle(0, 0, size.width, size.height),
-                stretchTexture);
+        final Rectangle rect = new Rectangle(0, 0, size.width, size.height);
+        if (stretchTexture) {
+            paintZoneStretch(g, image, rect);
+        } else {
+            paintZoneTile(g, image, rect);
+        }
     }
 
-    private void paintZone(final Graphics g,final BufferedImage aImage,final Rectangle rect,final boolean stretch) {
-        if (stretch) {
-            paintZoneStretch(g, aImage, rect);
-        } else {
-            paintZoneTile(g, aImage, rect);
+    private void setBackgroundImage() {
+        final Theme currentTheme = ThemeFactory.getInstance().getCurrentTheme();
+        if (activeTheme != currentTheme) {
+            activeTheme = currentTheme;
+            image = activeTheme.getTexture(Theme.TEXTURE_BACKGROUND);
+            stretchTexture = activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1;
         }
     }
 

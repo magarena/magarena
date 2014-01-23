@@ -6,11 +6,10 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
-import magic.ui.MagicFrame;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.interfaces.IMagActionBar;
@@ -22,28 +21,16 @@ public class CardZoneScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar {
 
-    private final MagicFrame frame;
-    private static CardsCanvas content;
-    private final static Dimension cardSize = new Dimension(480, 680);
-    private static String screenCaption;
+    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 
-    public CardZoneScreen(
-            final MagicFrame frame0,
-            final MagicCardList cards,
-            final String zoneName,
-            final boolean animateCards) {
-        super(getScreenContent(cards, zoneName, animateCards), frame0);
-        frame = frame0;
-    }
+    private final CardsCanvas content;
+    private final String screenCaption;
 
-    private static JPanel getScreenContent(
-            final MagicCardList cards,
-            final String zoneName,
-            final boolean animateCards) {
-        screenCaption = zoneName;
-        content = new CardsCanvas(cardSize);
-        content.setAnimationEnabled(animateCards);
-        content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
+    public CardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
+        this.screenCaption = zoneName;
+        this.content = new CardsCanvas(cardSize);
+        this.content.setAnimationEnabled(animateCards);
+        this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
         Collections.sort(cards);
         // Important: uses Runnable so painting works properly.
         SwingUtilities.invokeLater(new Runnable() {
@@ -52,7 +39,7 @@ public class CardZoneScreen
                 content.refresh(cards, cardSize);
             }
         });
-        return content;
+        setContent(content);
     }
 
     /* (non-Javadoc)
@@ -71,7 +58,7 @@ public class CardZoneScreen
         return new MenuButton("Close", new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
-              frame.closeActiveScreen(false);
+              getFrame().closeActiveScreen(false);
           }
       });
     }

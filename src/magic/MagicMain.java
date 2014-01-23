@@ -4,9 +4,11 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
+import magic.data.DuelConfig;
 import magic.data.History;
 import magic.data.KeywordDefinitions;
 import magic.model.MagicGameLog;
+import magic.test.TestGameBuilder;
 import magic.ui.MagicFrame;
 
 import javax.swing.JFrame;
@@ -84,12 +86,32 @@ public class MagicMain {
         initialize();
         final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
         System.err.println("Initalization of engine took " + duration + "s");
+
         setSplashStatusMessage("Starting UI...");
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                rootFrame = new MagicFrame(SOFTWARE_TITLE);
+                startUI();
             }
         });
+    }
+
+    private static void startUI() {
+        rootFrame = new MagicFrame(SOFTWARE_TITLE);
+        final MagicFrame magicFrame = (MagicFrame)rootFrame;
+        magicFrame.showMainMenuScreen();
+        // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
+        // where X is one of the classes (without the .java) in "magic.test".
+        final String testGame = System.getProperty("testGame");
+        if (testGame != null) {
+            magicFrame.openGame(TestGameBuilder.buildGame(testGame));
+        }
+        // add "-DselfMode=true" VM argument for AI vs AI mode.
+        // in selfMode start game immediately based on configuration from duel.cfg
+        if (Boolean.getBoolean("selfMode")) {
+            final DuelConfig config = DuelConfig.getInstance();
+            config.load();
+            magicFrame.newDuel(config);
+        }
     }
 
     public static String getGamePath() {

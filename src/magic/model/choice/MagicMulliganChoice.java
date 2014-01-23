@@ -1,5 +1,6 @@
 package magic.model.choice;
 
+import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
@@ -9,6 +10,8 @@ import magic.model.event.MagicEvent;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
+import magic.ui.choice.MulliganChoicePanel;
+import magic.ui.screen.MulliganScreen;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -88,7 +91,14 @@ public class MagicMulliganChoice extends MagicChoice {
         controller.disableActionButton(false);
         final MayChoicePanel choicePanel = controller.waitForInput(new Callable<MayChoicePanel>() {
             public MayChoicePanel call() {
-                return new MayChoicePanel(controller,source,"You may take a mulligan.");
+                final boolean showMulliganScreen =
+                        MulliganScreen.isActive() ||
+                        (player.getHandSize() == 7 && GeneralConfig.getInstance().showMulliganScreen());
+                if (showMulliganScreen) {
+                    return new MulliganChoicePanel(controller, source, "You may take a mulligan.", player.getHand());
+                } else {
+                    return new MayChoicePanel(controller,source,"You may take a mulligan.");
+                }
             }
         });
         if (choicePanel.isYesClicked()) {
