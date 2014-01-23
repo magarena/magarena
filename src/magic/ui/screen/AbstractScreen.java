@@ -22,15 +22,19 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public abstract class AbstractScreen extends JPanel {
 
-    private final JPanel content;
+    private JPanel content;
     private final MagicFrame frame;
 
-    public AbstractScreen(final JPanel content0) {
-        this.content = content0;
+    // CTR
+    public AbstractScreen() {
         this.frame = (MagicFrame)MagicMain.rootFrame;
         setOpaque(false);
-        doMagScreenLayout();
         setEscapeKeyInputMap();
+    }
+
+    protected void setContent(final JPanel content) {
+        this.content = content;
+        doMagScreenLayout();
     }
 
     private void doMagScreenLayout() {

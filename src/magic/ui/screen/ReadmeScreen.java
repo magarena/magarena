@@ -22,13 +22,11 @@ public class ReadmeScreen extends AbstractScreen implements IMagStatusBar, IMagA
 
     private static final String README_FILENAME="README.txt";
 
-    private static JScrollPane keywordsPane;
-
     public ReadmeScreen() {
-        super(getScreenContent());
+        setContent(getScreenContent());
     }
 
-    private static JPanel getScreenContent() {
+    private JPanel getScreenContent() {
 
         final JPanel content = new TexturedPanel();
 
@@ -49,7 +47,7 @@ public class ReadmeScreen extends AbstractScreen implements IMagStatusBar, IMagA
         }
         readMeTextArea.setText(fileContents);
 
-        keywordsPane = new JScrollPane(readMeTextArea);
+        final JScrollPane keywordsPane = new JScrollPane(readMeTextArea);
         keywordsPane.setBorder(FontsAndBorders.BLACK_BORDER);
         keywordsPane.setOpaque(false);
         keywordsPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);

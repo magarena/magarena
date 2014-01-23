@@ -34,17 +34,13 @@ public class KeywordsScreen extends AbstractScreen implements IMagStatusBar, IMa
     private static MyScrollablePanel scrollablePanel;
 
     public KeywordsScreen() {
-        super(getScreenContent());
-    }
-
-    private static JPanel getScreenContent() {
         final JPanel content = new TexturedPanel();
         content.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         content.setLayout(new MigLayout("insets 0, gap 0"));
         createScrollablePanel();
         addNewScrollPane(content);
         createKeywordsPanel();
-        return content;
+        setContent(content);
     }
 
     /**

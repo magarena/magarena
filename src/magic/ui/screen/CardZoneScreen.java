@@ -6,7 +6,6 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 import magic.model.MagicCardList;
@@ -21,26 +20,18 @@ public class CardZoneScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar {
 
-    private static CardsCanvas content;
     private final static Dimension cardSize = new Dimension(480, 680);
-    private static String screenCaption;
 
-    public CardZoneScreen(
-            final MagicCardList cards,
-            final String zoneName,
-            final boolean animateCards) {
-        super(getScreenContent(cards, zoneName, animateCards));
-    }
+    private final CardsCanvas content;
+    private final String screenCaption;
 
-    private static JPanel getScreenContent(
-            final MagicCardList cards,
-            final String zoneName,
-            final boolean animateCards) {
-        screenCaption = zoneName;
-        content = new CardsCanvas(cardSize);
-        content.setAnimationEnabled(animateCards);
-        content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
+    public CardZoneScreen(final MagicCardList cards, final String zoneName, final boolean animateCards) {
+        this.screenCaption = zoneName;
+        this.content = new CardsCanvas(cardSize);
+        this.content.setAnimationEnabled(animateCards);
+        this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
         Collections.sort(cards);
+        setContent(content);
         // Important: uses Runnable so painting works properly.
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -48,7 +39,6 @@ public class CardZoneScreen
                 content.refresh(cards, cardSize);
             }
         });
-        return content;
     }
 
     /* (non-Javadoc)

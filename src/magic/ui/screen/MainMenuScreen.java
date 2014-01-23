@@ -12,61 +12,60 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen {
 
-    private static MenuPanel menuPanel;
-
     public MainMenuScreen(final MagicFrame frame) {
-        super(getScreenContent(frame));
+        setContent(getScreenContent());
     }
 
-    private static JPanel getScreenContent(final MagicFrame frame) {
+    private JPanel getScreenContent() {
 
         final JPanel content = new JPanel();
         content.setOpaque(false);
         content.setLayout(new MigLayout("insets 0, gap 0, center, center"));
 
-        menuPanel = new MenuPanel("Main Menu");
+        final MenuPanel menuPanel = new MenuPanel("Main Menu");
         content.add(menuPanel);
 
         menuPanel.addMenuItem("New duel", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showNewDuelDialog();
+                getFrame().showNewDuelDialog();
             }
         });
         menuPanel.addMenuItem("Load duel", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.loadDuel();
+                getFrame().loadDuel();
             }
         });
         menuPanel.addMenuItem("Card explorer", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showCardExplorerScreen();
+                System.out.println(getFrame());
+                getFrame().showCardExplorerScreen();
             }
         });
         menuPanel.addMenuItem("Deck editor", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showDeckEditor();
+                getFrame().showDeckEditor();
             }
         });
         menuPanel.addMenuItem("Settings", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showSettingsMenuScreen();
+                getFrame().showSettingsMenuScreen();
             }
         });
         menuPanel.addMenuItem("Help", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.showHelpMenuScreen();
+                getFrame().showHelpMenuScreen();
             }
         });
         menuPanel.addMenuItem("Quit to desktop", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                frame.closeActiveScreen(false);
+                getFrame().closeActiveScreen(false);
             }
         });
 

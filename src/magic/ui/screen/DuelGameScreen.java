@@ -20,20 +20,16 @@ import magic.ui.widget.ZoneBackgroundLabel;
 @SuppressWarnings("serial")
 public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsMenu {
 
-    private static GamePanel gamePanel;
+    private final GamePanel gamePanel;
 
-    public DuelGameScreen(final MagicFrame frame0, final MagicGame game) {
-        super(getScreenContent(frame0, game));
-    }
-
-    private static JPanel getScreenContent(final MagicFrame frame, final MagicGame game) {
+    public DuelGameScreen(final MagicGame game) {
         final ZoneBackgroundLabel backgroundLabel = new ZoneBackgroundLabel();
         backgroundLabel.setGame(true);
-        gamePanel = new GamePanel(frame, game, backgroundLabel);
+        gamePanel = new GamePanel(getFrame(), game, backgroundLabel);
         final GameLayeredPane gamePane = new GameLayeredPane(gamePanel, backgroundLabel);
         final JPanel container = new JPanel(new MigLayout("insets 0, gap 0"));
         container.add(gamePane, "w 100%, h 100%");
-        return container;
+        setContent(container);
     }
 
     /* (non-Javadoc)

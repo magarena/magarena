@@ -20,7 +20,7 @@ public class CardExplorerScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
     public CardExplorerScreen() {
-        super(new ExplorerPanel());
+        setContent(new ExplorerPanel());
     }
 
     /* (non-Javadoc)

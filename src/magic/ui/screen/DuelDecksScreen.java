@@ -6,8 +6,6 @@ import java.util.List;
 
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
@@ -27,15 +25,11 @@ public class DuelDecksScreen
     extends AbstractScreen
     implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
 
-    private static DuelPanel screenContent;
+    private final DuelPanel screenContent;
 
-    public DuelDecksScreen(final MagicDuel duel0) {
-        super(getScreenContent(duel0));
-    }
-
-    private static JPanel getScreenContent(final MagicDuel duel) {
-        screenContent = new DuelPanel(duel);
-        return screenContent;
+    public DuelDecksScreen(final MagicDuel duel) {
+        this.screenContent = new DuelPanel(duel);
+        setContent(this.screenContent);
     }
 
     /* (non-Javadoc)
