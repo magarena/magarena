@@ -1,13 +1,20 @@
 package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
+import java.util.concurrent.ExecutionException;
 
 import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.SwingWorker;
 
 import net.miginfocom.swing.MigLayout;
 import magic.data.GeneralConfig;
+import magic.model.MagicDeck;
+import magic.model.MagicDuel;
 import magic.model.MagicGame;
+import magic.model.MagicPlayerDefinition;
+import magic.model.MagicDeckConstructionRule;
 import magic.ui.GameLayeredPane;
 import magic.ui.GamePanel;
 import magic.ui.MagicFrame;
@@ -17,19 +24,59 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.MenuPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
 
+
 @SuppressWarnings("serial")
 public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsMenu {
 
-    private final GamePanel gamePanel;
+    private GamePanel gamePanel;
+
+    public DuelGameScreen(final MagicDuel duel) {
+
+        final SwingWorker worker = new SwingWorker<JPanel, Void> () {
+
+            @Override
+            protected JPanel doInBackground() throws Exception {
+                duel.updateDifficulty();
+                final MagicPlayerDefinition[] players=duel.getPlayers();
+                if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
+                   isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
+                    return getScreenContent(duel.nextGame(true));
+                } else {
+                    return null;
+                }
+            }
+
+            @Override
+            protected void done() {
+                try {
+                    setContent(get());
+                } catch (InterruptedException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+
+        };
+        worker.execute();
+
+    }
 
     public DuelGameScreen(final MagicGame game) {
+        setContent(getScreenContent(game));
+    }
+
+    private JPanel getScreenContent(final MagicGame game) {
         final ZoneBackgroundLabel backgroundLabel = new ZoneBackgroundLabel();
         backgroundLabel.setGame(true);
         gamePanel = new GamePanel(getFrame(), game, backgroundLabel);
         final GameLayeredPane gamePane = new GameLayeredPane(gamePanel, backgroundLabel);
         final JPanel container = new JPanel(new MigLayout("insets 0, gap 0"));
+        container.setOpaque(false);
         container.add(gamePane, "w 100%, h 100%");
-        setContent(container);
+        return container;
     }
 
     /* (non-Javadoc)
@@ -65,7 +112,9 @@ public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsM
      */
     @Override
     public void requestFocus() {
-        gamePanel.requestFocus();
+        if (gamePanel != null) {
+            gamePanel.requestFocus();
+        }
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {
@@ -122,6 +171,22 @@ public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsM
 
         }
 
+    }
+
+    private boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
+        final String brokenRulesText =
+                MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
+
+        if(brokenRulesText.length() > 0) {
+            JOptionPane.showMessageDialog(
+                    this,
+                    playerName + "'s deck is illegal.\n\n" + brokenRulesText,
+                    "Illegal Deck",
+                    JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+
+        return true;
     }
 
 }
