@@ -1,0 +1,11 @@
+name=AEthersnipe
+url=http://magiccards.info/jvc/en/17.html
+image=http://mtgimage.com/card/aethersnipe.jpg
+value=3.737
+rarity=C
+type=Creature
+subtype=Elemental
+cost={5}{U}
+pt=4/4
+ability=enters effect Return target nonland permanent to its owner's hand.;evoke {1}{U}{U}
+timing=main
