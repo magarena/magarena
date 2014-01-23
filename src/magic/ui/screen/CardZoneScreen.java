@@ -31,7 +31,6 @@ public class CardZoneScreen
         this.content.setAnimationEnabled(animateCards);
         this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
         Collections.sort(cards);
-        setContent(content);
         // Important: uses Runnable so painting works properly.
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -39,6 +38,7 @@ public class CardZoneScreen
                 content.refresh(cards, cardSize);
             }
         });
+        setContent(content);
     }
 
     /* (non-Javadoc)
