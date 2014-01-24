@@ -1,0 +1,9 @@
+name=1/0 blue Elemental creature token
+token=Elemental
+image=http://magiccards.info/extras/token/theros/elemental.jpg
+value=1
+type=Creature
+subtype=Elemental
+color=u
+cost={0}
+pt=1/0
