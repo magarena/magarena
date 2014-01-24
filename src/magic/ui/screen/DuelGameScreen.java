@@ -32,7 +32,7 @@ public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsM
 
     public DuelGameScreen(final MagicDuel duel) {
 
-        final SwingWorker worker = new SwingWorker<JPanel, Void> () {
+        final SwingWorker<JPanel, Void> worker = new SwingWorker<JPanel, Void> () {
 
             @Override
             protected JPanel doInBackground() throws Exception {
