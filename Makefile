@@ -636,6 +636,8 @@ normalize_files:
 	sed -i -e 's/\t/    /g' ${FILES}
 	# remove empty lines in scripts
 	sed -i -e '/^\s*$$/d' release/Magarena/scripts/*.txt
+	# use mtgimage
+	make mtgimage
 
 %.post:
 	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"
