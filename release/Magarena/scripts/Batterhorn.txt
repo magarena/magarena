@@ -1,0 +1,11 @@
+name=Batterhorn
+url=http://magiccards.info/rtr/en/87.html
+image=http://mtgimage.com/card/batterhorn.jpg
+value=2.17
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{R}
+pt=4/3
+ability=enters effect PN may destroy target artifact.
+timing=main

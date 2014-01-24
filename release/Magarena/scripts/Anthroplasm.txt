@@ -1,0 +1,12 @@
+name=Anthroplasm
+url=http://magiccards.info/ul/en/25.html
+image=http://mtgimage.com/card/anthroplasm.jpg
+value=3.88
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={2}{U}{U}
+pt=0/0
+ability=enters with +1/+1 2
+timing=main
+requires_groovy_code
