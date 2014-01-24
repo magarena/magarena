@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final MagicPlayer player ->
-                game.addEvent(MagicDiscardEvent.RANDOM(event.getSource, player, event.getCardOnStack().getX()));
+                game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, event.getCardOnStack().getX()));
             });
         }
     }
