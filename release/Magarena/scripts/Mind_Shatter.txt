@@ -1,0 +1,9 @@
+name=Mind Shatter
+url=http://magiccards.info/mt/en/66.html
+image=http://mtgimage.com/card/mind%20shatter.jpg
+value=3.738
+rarity=R
+type=Sorcery
+cost={X}{B}{B}
+timing=main
+requires_groovy_code

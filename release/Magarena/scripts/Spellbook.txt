@@ -1,0 +1,9 @@
+name=Spellbook
+url=http://magiccards.info/m10/en/220.html
+image=http://mtgimage.com/card/spellbook.jpg
+value=3.742
+rarity=U
+type=Artifact
+cost={0}
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Soul Bleed
+url=http://magiccards.info/m10/en/113.html
+image=http://mtgimage.com/card/soul%20bleed.jpg
+value=1.87
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+enchant=weaken,neg creature
+timing=aura
+requires_groovy_code=One Thousand Lashes

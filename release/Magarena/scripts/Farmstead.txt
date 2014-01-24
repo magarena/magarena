@@ -1,0 +1,11 @@
+name=Farmstead
+url=http://magiccards.info/rv/en/203.html
+image=http://mtgimage.com/card/farmstead.jpg
+value=1.221
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={W}{W}{W}
+enchant=pump,pos land
+timing=aura
+requires_groovy_code

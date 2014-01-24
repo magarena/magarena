@@ -1,0 +1,9 @@
+name=Reliquary Tower
+url=http://magiccards.info/m13/en/227.html
+image=http://mtgimage.com/card/reliquary%20tower.jpg
+value=3.35
+rarity=U
+type=Land
+ability=tap add mana {1}
+timing=land
+requires_groovy_code=Spellbook

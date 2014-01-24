@@ -1,0 +1,11 @@
+name=Mold Adder
+url=http://magiccards.info/m10/en/194.html
+image=http://mtgimage.com/card/mold%20adder.jpg
+value=3.786
+rarity=U
+type=Creature
+subtype=Snake,Fungus
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code

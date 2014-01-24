@@ -1,0 +1,12 @@
+name=Commander Greven il-Vec
+url=http://magiccards.info/tp/en/9.html
+image=http://mtgimage.com/card/commander%20greven%20il-vec.jpg
+value=3.993
+rarity=R
+type=Legendary,Creature
+subtype=Human,Warrior
+cost={3}{B}{B}{B}
+pt=7/5
+ability=fear
+timing=main
+requires_groovy_code=Accursed Centaur
