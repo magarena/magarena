@@ -1,0 +1,12 @@
+ name=Thassa, God of the Sea
+url=http://magiccards.info/ths/en/66.html
+image=http://magiccards.info/scans/en/ths/66.jpg
+value=4.000
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=God
+cost={2}{U}
+pt=5/5
+ability=indestructible
+timing=main
+requires_groovy_code
