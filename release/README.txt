@@ -64,6 +64,38 @@ Thank you for your support and have fun!
 
 Release 1.46 (January 25, 2014)
 ============
+includes contributions from:
+david
+ember hauler
+hong yie
+Jericho Pumpkin
+Lodici
+melvin
+ShawnieBoy
+
+- Added MulliganScreen.
+- MulliganScreen optional via new setting in experimental section in PreferencesDialog.
+- added status/progress message capability to splash screen.
+- new Sample Hand screen available via the Deck Editor.
+- Click on already selected hand, graveyard, exile or other icon to view cards in new CardZoneScreen.
+- added the following to the card script:
+Add 'damage opponent may draw card'
+Implement Graft <n>
+Add 'Tap pay 1 life add mana' ability
+support "untapped effect <effect>" ability
+
+- fixed the following bugs:
+Correct Minotaur_Tactician white creature not white perm, blue creature not blue perm
+Fix Disciple_of_Griselbrand - Sacrifice is part of cost, not effect
+fix missing activated ability name for GainChosen
+add missing fear to Woebearer (issue 460)
+fix [#461]:  the icon "exile:player" showing the wrong content of cards.
+Galvanic Arc Fix for Issue 145
+AEther Vial Fix for Issue 337
+Blightsoil Druid, Horizon Canpoy Update scripts for 'tap pay 1 life add mana'
+Add missing ping ability to Cinder Pyromancer r12473
+
+- added the following cards:
 
 Release 1.45 (December 31, 2013)
 ============
