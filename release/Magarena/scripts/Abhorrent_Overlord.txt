@@ -1,0 +1,12 @@
+name=Abhorrent Overlord
+url=http://magiccards.info/ths/en/75.html
+image=http://mtgimage.com/card/abhorrent%20overlord.jpg
+value=3.481
+rarity=R
+type=Creature
+subtype=Demon
+cost={5}{B}{B}
+pt=6/6
+ability=flying
+timing=main
+requires_groovy_code

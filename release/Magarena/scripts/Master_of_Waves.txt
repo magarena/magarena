@@ -1,0 +1,12 @@
+name=Master of Waves
+url=http://magiccards.info/ths/en/53.html
+image=http://mtgimage.com/card/master%20of%20waves.jpg
+value=3.543
+rarity=M
+type=Creature
+subtype=Merfolk,Wizard
+cost={3}{U}
+pt=2/1
+ability=protection from red;lord elemental creatures you control get +1/+1
+timing=main
+requires_groovy_code
