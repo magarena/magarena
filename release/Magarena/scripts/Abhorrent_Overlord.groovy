@@ -18,7 +18,7 @@
             game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_CREATURE));
         }
     },
-	new MagicWhenComesIntoPlayTrigger() {
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
