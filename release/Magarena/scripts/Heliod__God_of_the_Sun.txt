@@ -1,0 +1,14 @@
+name=Heliod, God of the Sun
+url=http://magiccards.info/ths/en/17.html
+image=http://magiccards.info/scans/en/ths/17.jpg
+value=3.708
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=God
+cost={3}{W}
+pt=5/6
+ability=indestructible;\
+		lord other creatures you control have vigilance;\
+		pay {2}{W}{W}: PN puts a 2/1 white Cleric enchantment creature token onto the battlefield.
+timing=main
+requires_groovy_code
