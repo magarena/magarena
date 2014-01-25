@@ -12,7 +12,7 @@
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
-                    "PN may\$ Untap SN."
+                    "PN may\$ untap SN."
                 ) :
                 MagicEvent.NONE;
         }
