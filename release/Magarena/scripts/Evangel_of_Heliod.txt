@@ -1,0 +1,11 @@
+name=Evangel of Heliod
+url=http://magiccards.info/ths/en/11.html
+image=http://magiccards.info/scans/en/ths/11.jpg
+value=3.471
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={4}{W}{W}
+pt=1/3
+timing=main
+requires_groovy_code
