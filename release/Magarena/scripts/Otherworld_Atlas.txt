@@ -6,5 +6,5 @@ rarity=R
 type=Artifact
 cost={4}
 timing=artifact
-ability=tap add charge
+ability=pay {T}:Put a charge counter on SN.
 requires_groovy_code
