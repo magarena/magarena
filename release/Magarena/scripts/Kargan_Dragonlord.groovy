@@ -2,10 +2,10 @@
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 8) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 8) {
                 pt.set(8,8);
-            } else if (charges >= 4) {
+            } else if (level >= 4) {
                 pt.set(4,4);
             }
         }
@@ -16,18 +16,18 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 8) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 8) {
                 flags.add(MagicAbility.Trample);
             }
-            if (charges >= 4) {
+            if (level >= 4) {
                 flags.add(MagicAbility.Flying);
             }
         }
     },
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ChargeCountersAtLeast(8),
+            MagicConditionFactory.CounterAtLeast(MagicCounterType.Level,8),
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "+1/+0"

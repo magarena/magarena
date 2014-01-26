@@ -2,17 +2,17 @@
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 3) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 3) {
                 pt.set(2,4);
-            } else if (charges >= 1) {
+            } else if (level >= 1) {
                 pt.set(2,3);
             }
         }
     },
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ChargeCountersAtLeast(1),
+            MagicConditionFactory.CounterAtLeast(MagicCounterType.Level,1),
         ],
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
@@ -25,7 +25,7 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final int amount = source.getCounters(MagicCounterType.Charge) >= 3 ? 3:1;
+            final int amount = source.getCounters(MagicCounterType.Level) >= 3 ? 3:1;
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
