@@ -185,7 +185,7 @@ public enum MagicAbility {
     Modular("modular", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(MagicModularTrigger.create());
         }
     },
@@ -241,17 +241,17 @@ public enum MagicAbility {
     Fading("fading",-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"fade",n));
-            card.add(new MagicFadeVanishCounterTrigger("fade"));
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Fade,n));
+            card.add(new MagicFadeVanishCounterTrigger(MagicCounterType.Fade));
         }
     },
     Vanishing("vanishing",-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
             if (n > 0) {
-                card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,"time",n));
+                card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Time,n));
             }
-            card.add(new MagicFadeVanishCounterTrigger("time"));
+            card.add(new MagicFadeVanishCounterTrigger(MagicCounterType.Time));
         }
     },
     CumulativeUpkeep("cumulative upkeep",-30) {
@@ -522,8 +522,9 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final String[] token = arg.split(" ");
             final String name = token[0];
+            // Need define counterType
             final int n = Integer.parseInt(token[1]);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,name,n));
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,n));
         }
     },
     EntersXPlus("enters with X +1/+1", 0) {
@@ -535,13 +536,13 @@ public enum MagicAbility {
     EntersPlus("enters with +1/+1", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
         }
     },
     EntersMinus("enters with -1/-1", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,"-1/-1",n));
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.MinusOne,n));
         }
     },
     EntersTappedUnlessTwo("enters tapped unless two", -10) {
@@ -814,7 +815,7 @@ public enum MagicAbility {
     Graft("graft",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,"+1/+1",n));
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(MagicWhenOtherComesIntoPlayTrigger.Graft);
         }
     },
