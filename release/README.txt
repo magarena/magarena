@@ -62,7 +62,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.46 (January 25, 2014)
+Release 1.46 (January 26, 2014)
 ============
 includes contributions from:
 david
@@ -73,29 +73,108 @@ Lodici
 melvin
 ShawnieBoy
 
-- Added MulliganScreen.
-- MulliganScreen optional via new setting in experimental section in PreferencesDialog.
-- added status/progress message capability to splash screen.
-- new Sample Hand screen available via the Deck Editor.
-- Click on already selected hand, graveyard, exile or other icon to view cards in new CardZoneScreen.
+- new mulligan screen that shows cards in your hand using the whole screen
+
+- new Sample Hand screen available via the Deck Editor
+
+- click on already selected hand, graveyard, exile or other icon to view cards
+  using the whole screen
+
+- show status/progress message on the splash screen
+
 - added the following to the card script:
-Add 'damage opponent may draw card'
-Implement Graft <n>
-Add 'Tap pay 1 life add mana' ability
-support "untapped effect <effect>" ability
+  * damage opponent may draw card
+  * graft <n>
+  * tap pay 1 life add mana <mana>
+  * untapped effect <effect>
 
 - fixed the following bugs:
-Correct Minotaur_Tactician white creature not white perm, blue creature not blue perm
-Fix Disciple_of_Griselbrand - Sacrifice is part of cost, not effect
-fix missing activated ability name for GainChosen
-add missing fear to Woebearer (issue 460)
-fix [#461]:  the icon "exile:player" showing the wrong content of cards.
-Galvanic Arc Fix for Issue 145
-AEther Vial Fix for Issue 337
-Blightsoil Druid, Horizon Canpoy Update scripts for 'tap pay 1 life add mana'
-Add missing ping ability to Cinder Pyromancer r12473
+  * Idyllic Tutor should put card in hand not on top of library
+  * Alpha Kavu ability should be -1/+1 not +1/+1
+  * Minotaur Tactician should check for white/blue creatures not white/blue permanents
+  * Disciple of Griselbrand's ability should have sacrifice as part of cost not part of the effect
+  * Activated ability where target gains an ability missing the description on its button
+  * correct Blightsoil Druid, and Horizon Canpoy to use 'tap pay 1 life add mana'
+  * Cinder Pyromancer missing ping ability
+  * Woebearer missing fear
+  * icon "player's exile" showing the wrong content of cards (issue 461)
+  * hint AI that Galvanic Arc should target its own permanents (issue 145)
+  * AEther Vial trigger should be optional (issue 337)
 
 - added the following cards:
+Abhorrent Overlord, Abomination, Abyssal Nocturnus, Accursed Centaur,
+Aerial Maneuver, Aerial Predation, AEther Flash, AEtherize, AEthersnipe,
+AEther Sting, Akki Coalflinger, Akroan Hoplite, Akroma's Blessing,
+Alaborn Cavalier, Aladdin, Altar of Bone, Altar's Reap, Ambush,
+An-Havva Constable, Animate Land, Anthroplasm, Apothecary Initiate,
+Aquastrand Spider, Argent Mutation, Armed Response, Assembly-Worker,
+Aura Extraction, Auspicious Ancestor, Banshee's Blade, Barbarian Ring,
+Batterhorn, Battlewise Aven, Battlewise Valor, Biomass Mutation,
+Blasting Station, Blazethorn Scarecrow, Blightcaster, Bloodcurdling Scream,
+Blood-Toll Harpy, Bog-Strider Ash, Boneshard Slasher, Boon of Erebos,
+Bottomless Pit, Brass Gnat, Brass Man, Brave the Elements,
+Bringer of the Blue Dawn, Bringer of the Green Dawn,
+Bringer of the White Dawn, Bronzebeak Moa, Burrenton Shield-Bearers,
+Cabal Pit, Cabal Torturer, Cackling Witch, Call of the Nightwing,
+Capture of Jingzhou, Cave People, Centaur Garden, Cephalid Coliseum,
+Chainflinger, Charging Griffin, Chieftain en-Dal, Childhood Horror,
+Claws of Wirewood, Cliffrunner Behemoth, Cloak of Feathers, Cloudthresher,
+Cockatrice, Collective Unconscious, Commander Greven il-Vec, Confessor,
+Consume the Meek, Contemplation, Control of the Court, Crashing Centaur,
+Crumble, Crystal Rod, Customs Depot, Cytospawn Shambler, Darkness,
+Dead-Iron Sledge, Death Bomb, Demon's Jester, Deprive, Diamond Valley,
+Dingus Staff, Disrupting Scepter, Dissolve, Divine Offering, Dream Fracture,
+Drill-Skimmer, Drowner Initiate, Dwarven Soldier, Elderscale Wurm,
+Elixir of Immortality, Ember Shot, Emberstrike Duo, Ember Weaver, Enrage,
+Equilibrium, Erebos, God of the Dead, Evangel of Heliod, Excommunicate,
+Fade from Memory, Fallow Earth, False Mourning, Familiar's Ruse,
+Fangren Pathcutter, Farmstead, Feral Animist, Festival of Trokin,
+Fiery Conclusion, Flanking Troops, Fleshformer, Flow of Ideas, Forced Retreat,
+Freyalise's Charm, Frightcrawler, Fruition, Furious Assault, Gale Force,
+Gallantry, Garruk, Caller of Beasts, Ghost Hounds, Gobhobbler Rats,
+Goblin Dirigible, Goblin General, Goblin Lore, Goblin War Wagon,
+Graceful Adept, Gravelgill Duo, Grinding Station, Grizzled Wolverine,
+Guided Strike, Gwendlyn Di Corci, Haazda Snare Squad, Hallowed Healer,
+Haunted Fengraf, Hearthcage Giant, Heartlash Cinder, Heat Ray,
+Heliod, God of the Sun, Helium Squirter, Hematite Talisman, Hollowsage,
+Horizon Chimera, Horned Kavu, Horrifying Revelation, Howl from Beyond,
+Howling Banshee, Hunted Dragon, Hunted Horror, Hunted Lammasu,
+Hunted Phantasm, Hunted Troll, Imperial Seal, Implode, Indestructible Aura,
+Infected Vermin, Infernal Medusa, Intimidator Initiate, Iron Star, Ivory Cup,
+Jace's Erasure, Keep Watch, Keldon Megaliths, Kinsbaile Balloonist,
+Kuldotha Rebirth, Lace with Moonglove, Lapis Lazuli Talisman, Last Caress,
+Last Thoughts, Launch Party, Leaf Arrow, Leap, Lightning Cloud,
+Llanowar Reborn, Lost in a Labyrinth, Maggot Carrier, Magma Rift,
+Malachite Talisman, Master of Waves, Meadowboon, Memory Erosion, Mental Note,
+Mental Vapors, Midnight Recovery, Miming Slime, Mind Shatter, Mind Twist,
+Miren, the Moaning Well, Mold Adder, Mystic Crusader, Mystic Enforcer,
+Mystic Familiar, Mystic Genesis, Mystic Penitent, Mystic Visionary,
+Mystic Zealot, Nacre Talisman, Nantuko Calmer, Needle Storm, New Benalia,
+Nighthaze, Nightscape Apprentice, Nihilistic Glee, Nomad Stadium,
+Notorious Assassin, Nurturer Initiate, Nylea, God of the Hunt, Onslaught,
+Onyx Talisman, Orcish Cannonade, Outrage Shaman, Paranoid Delusions,
+Phyrexian Lens, Pianna, Nomad Captain, Plaxcaster Frogling, Pontiff of Blight,
+Portent of Betrayal, Prescient Chimera, Primalcrux, Privileged Position,
+Pyrohemia, Rage of Purphoros, Rakdos Pit Dragon, Rattleblaze Scarecrow,
+Reaper of the Wilds, Rebuild, Reliquary Tower, Repel, Ruric Thar, the Unbowed,
+Safehold Duo, Scatter Arc, Scepter of Fugue, Seasoned Marshal,
+Second Thoughts, Security Blockade, Seeds of Innocence, Serra Inquisitors,
+Shadow Slice, Shrapnel Blast, Sigil of the Empty Throne, Simic Initiate,
+Skulltap, Skyshroud Blessing, Sleeper's Robe, Slice in Twain, Slime Molding,
+Smolder Initiate, Snakeform, Soul Bleed, Sparkcaster, Spellbook,
+Spell Contortion, Spirit Loop, Spitebellows, Spontaneous Combustion,
+Spore Frog, Springjack Shepherd, Squall, Squall Line, Stampede, Starstorm,
+Sterling Grove, Stymied Hopes, Sudden Strength, Summoning Station,
+Sunscape Apprentice, Tattermunge Duo, Tel-Jilad Defiance,
+Temporal Manipulation, Tendrils of Despair, Thassa, God of the Sea,
+Thistledown Duo, Thornwatch Scarecrow, Throne of Bone, Time Stretch,
+Titan's Strength, Touch of Invisibility, Tranquil Path, Trash for Treasure,
+Tropical Storm, Undercity Plague, Unhinge, Urborg Mindsucker, Urza's Chalice,
+Vedalken Heretic, Venser's Journal, Vesper Ghoul, Vigean Graftmage,
+Vigean Hydropon, Viscera Seer, Vivisection, Voyage's End, Walker of the Grove,
+Wall of Essence, Wall of Hope, Wall of Souls, Watchwing Scarecrow,
+Wicked Reward, Windstorm, Wingrattle Scarecrow, Wooden Sphere, Yavimaya Kavu,
+Zap, Zo-Zu the Punisher, Zuran Enchanter
 
 Release 1.45 (December 31, 2013)
 ============
