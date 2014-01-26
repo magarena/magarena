@@ -1,3 +1,4 @@
+Abhorrent Overlord
 Abrupt Decay
 Accorder's Shield
 Accursed Spirit
@@ -5,11 +6,16 @@ Act of Treason
 Adaptive Snapjaw
 Advent of the Wurm
 Advocate of the Beast
+Aerial Maneuver
+Aerial Predation
+AEtherize
 Agoraphobia
 Air Servant
 Ajani, Caller of the Pride
 Ajani's Chosen
 Akroan Crusader
+Akroan Hoplite
+Altar's Reap
 Angelic Edict
 Angelic Wall
 Anger of the Gods
@@ -44,20 +50,26 @@ Bane Alley Blackguard
 Barrage of Expendables
 Basilica Guards
 Basilica Screecher
+Batterhorn
 Battering Krasis
 Battle Sliver
+Battlewise Valor
 Beckon Apparition
 Beetleform Mage
 Bellows Lizard
 Benthic Giant
+Biomass Mutation
+Blightcaster
 Blind Obedience
 Blood Baron of Vizkopa
 Blood Crypt
 Bloodfray Giant
+Blood-Toll Harpy
 Blur Sliver
 Blustersquall
 Bomber Corps
 Bonescythe Sliver
+Boon of Erebos
 Boon Satyr
 Borderland Minotaur
 Boros Cluestone
@@ -67,12 +79,15 @@ Boros Keyrune
 Boros Mastiff
 Boros Reckoner
 Bramblecrush
+Brave the Elements
 Breeding Pool
 Briarpack Alpha
 Brindle Boar
+Bronzebeak Moa
 Bronze Sable
 Brushstrider
 Call of the Conclave
+Call of the Nightwing
 Cancel
 Canyon Minotaur
 Capashen Knight
@@ -86,6 +101,7 @@ Centaur Healer
 Centaur's Herald
 Chandra's Outrage
 Chaos Imps
+Charging Griffin
 Chemister's Trick
 Child of Night
 Chosen by Heliod
@@ -132,6 +148,7 @@ Disciple of the Old Ways
 Dismiss into Dream
 Dispel
 Disperse
+Dissolve
 Divination
 Divine Favor
 Divine Verdict
@@ -148,13 +165,16 @@ Duskmantle Guildmage
 Dutiful Thrull
 Dynacharge
 Electrickery
+Elixir of Immortality
 Elspeth, Sun's Champion
 Elusive Krasis
 Elvish Mystic
 Emmara Tandris
 Encroaching Wastes
+Erebos, God of the Dead
 Essence Scatter
 Ethereal Armor
+Evangel of Heliod
 Experiment One
 Explosive Impact
 Eyes in the Skies
@@ -163,6 +183,7 @@ Fade into Antiquity
 Fatal Fumes
 Felhide Minotaur
 Fencing Ace
+Feral Animist
 Feral Invocation
 Fiendslayer Paladin
 Firefist Striker
@@ -180,6 +201,7 @@ Frontline Medic
 Frostburn Weird
 Furious Resistance
 Galerider Sliver
+Garruk, Caller of Beasts
 Gaze of Granite
 Ghor-Clan Rampager
 Giant Adephage
@@ -210,10 +232,12 @@ Gruul Guildgate
 Gruul Keyrune
 Guardians of Meletis
 Gutter Skulk
+Haazda Snare Squad
 Hallowed Fountain
 Hammer of Purphoros
 Hands of Binding
 Haunter of Nightveil
+Heliod, God of the Sun
 Hellhole Flailer
 Hellraiser Goblin
 Heroes' Reunion
@@ -221,6 +245,7 @@ High Priest of Penance
 Hive Stirrings
 Holy Mantle
 Hopeful Eidolon
+Horizon Chimera
 Horncaller's Chant
 Horror of the Dim
 Hover Barrier
@@ -248,6 +273,8 @@ Kragma Warcaller
 Kraul Warrior
 Labyrinth Champion
 Lash of the Whip
+Last Thoughts
+Launch Party
 Lava Axe
 Lay of the Land
 Leafcrown Dryad
@@ -256,21 +283,26 @@ Leonin Snarecaster
 Lightning Strike
 Lightning Talons
 Liliana's Reaver
+Lost in a Labyrinth
 Loxodon Smiter
 Lyev Skyknight
 Manaweft Sliver
 Mark of the Vampire
 Martial Law
 Master Biomancer
+Master of Waves
 Maw of the Obzedat
 Megantic Sliver
 Mending Touch
+Mental Vapors
 Merfolk of the Depths
 Messenger Drake
 Messenger's Speed
 Metropolis Sprite
+Midnight Recovery
 Millennial Gargoyle
 Millstone
+Miming Slime
 Mindeye Drake
 Mind Rot
 Mindstatic
@@ -286,6 +318,7 @@ Mountain
 Mugging
 Murmuring Phantasm
 Mutavault
+Mystic Genesis
 Naturalize
 Nav Squad Commandos
 Negate
@@ -297,6 +330,7 @@ Nightmare
 Nightwing Shade
 Nimbus Naiad
 Nivix Guildmage
+Nylea, God of the Hunt
 Nylea's Emissary
 Observant Alseid
 Obzedat, Ghost Council
@@ -311,6 +345,7 @@ Orzhov Keyrune
 Overgrown Tomb
 Pacifism
 Paralyzing Grasp
+Paranoid Delusions
 Perilous Shadow
 Phantom General
 Phantom Warrior
@@ -320,8 +355,11 @@ Pillarfield Ox
 Pitchburn Devils
 Plains
 Plummet
+Pontiff of Blight
+Portent of Betrayal
 Precinct Captain
 Predatory Sliver
+Prescient Chimera
 Priest of Iroas
 Primal Visitation
 Progenitor Mimic
@@ -332,6 +370,7 @@ Pursuit of Flight
 Putrefy
 Racecourse Fury
 Rageblood Shaman
+Rage of Purphoros
 Rakdos Cackler
 Rakdos Cluestone
 Rakdos Drake
@@ -344,6 +383,7 @@ Rakdos's Return
 Ranger's Guile
 Ratchet Bomb
 Razortip Whip
+Reaper of the Wilds
 Regathan Firecat
 Render Silent
 Renounce the Guilds
@@ -363,15 +403,18 @@ Rubblehulk
 Ruination Wurm
 Rumbling Baloth
 Runewing
+Ruric Thar, the Unbowed
 Sacred Foundry
 Sanguine Bond
 Satyr Rambler
 Scab-Clan Charger
+Scatter Arc
 Scavenging Ooze
 Scorchwalker
 Scourgemark
 Scroll Thief
 Seacoast Drake
+Security Blockade
 Sedge Scorpion
 Seismic Stomp
 Selesnya Cluestone
@@ -386,6 +429,7 @@ Seraph of the Sword
 Serra Angel
 Setessan Battle Priest
 Setessan Griffin
+Shadow Slice
 Shambleshark
 Shattering Blow
 Shivan Dragon
@@ -408,6 +452,7 @@ Skyknight Legionnaire
 Skylasher
 Skyline Predator
 Slaughterhorn
+Slime Molding
 Sliver Construct
 Smelt
 Smite
@@ -433,6 +478,7 @@ Stomping Ground
 Stonefare Crocodile
 Street Spasm
 Striking Sliver
+Stymied Hopes
 Sundering Growth
 Sunhome Guildmage
 Sunspire Griffin
@@ -454,6 +500,7 @@ Temple of Silence
 Temple of Triumph
 Tenement Crasher
 Teysa, Envoy of Ghosts
+Thassa, God of the Sea
 Thassa's Emissary
 Thorncaster Sliver
 Thoughtflare
@@ -462,6 +509,7 @@ Thunder Strike
 Time Ebb
 Tin Street Market
 Titan of Eternal Fire
+Titan's Strength
 Tithe Drinker
 Tome Scour
 Totally Lost
@@ -484,6 +532,7 @@ Trostani's Judgment
 Truefire Paladin
 Two-Headed Cerberus
 Undead Minotaur
+Undercity Plague
 Underworld Connections
 Unflinching Courage
 Urban Evolution
@@ -499,6 +548,7 @@ Vitu-Ghazi Guildmage
 Vizkopa Guildmage
 Voice of Resurgence
 Voidwielder
+Voyage's End
 Voyaging Satyr
 Vraska the Unseen
 Vulpine Goliath
@@ -514,6 +564,7 @@ Wayfaring Temple
 Wild Celebrants
 Wildwood Rebirth
 Wind Drake
+Windstorm
 Wingsteed Rider
 Wojek Halberdiers
 Woodlot Crawler
