@@ -1,0 +1,9 @@
+name=Sterling Grove
+url=http://magiccards.info/in/en/278.html
+image=http://magiccards.info/scans/en/in/278.jpg
+value=4.500
+rarity=U
+type=Enchantment
+cost={G}{W}
+timing=enchantment
+requires_groovy_code
