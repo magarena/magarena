@@ -248,36 +248,6 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         return events;
     }
 
-    public static final MagicPermanentActivation TapAddCharge = new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
-        "Charge"
-    ) {
-
-        @Override
-        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-            return Arrays.asList(new MagicTapEvent(source));
-        }
-
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Put a charge counter on SN."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.Charge,
-                1,
-                true
-            ));
-        }
-    };
-
     public static final MagicPermanentActivation SwitchPT(final MagicManaCost cost) {
         return new MagicPermanentActivation(
             new MagicActivationHints(MagicTiming.Pump),
