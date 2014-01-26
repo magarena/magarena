@@ -1,0 +1,13 @@
+name=Erebos, God of the Dead
+url=http://magiccards.info/ths/en/85.html
+image=http://mtgimage.com/card/erebos%2C%20god%20of%20the%20dead.jpg
+value=3.708
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=God
+cost={3}{B}
+pt=5/7
+ability=indestructible;\
+        pay {1}{B}, Pay 2 life: PN draws a card.
+timing=main
+requires_groovy_code

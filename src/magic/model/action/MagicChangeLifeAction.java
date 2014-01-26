@@ -17,6 +17,10 @@ public class MagicChangeLifeAction extends MagicAction {
         lifeChange = aLifeChange;
     }
 
+    public MagicPlayer getPlayer() {
+        return player;
+    }
+
     public int getLifeChange() {
         return lifeChange;
     }
