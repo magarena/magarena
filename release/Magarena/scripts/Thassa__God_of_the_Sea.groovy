@@ -13,14 +13,14 @@
             return source.getController().getDevotion(MagicColor.Blue) < 5;
         }
     },
-	new MagicAtUpkeepTrigger() {
+    new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-					this,
-					"Look at the top card of your library. You may put that card on the bottom of your library."
+                    this,
+                    "Look at the top card of your library. You may put that card on the bottom of your library."
                 ):
                 MagicEvent.NONE;
         }
@@ -30,7 +30,7 @@
             game.addEvent(new MagicScryEvent(event));
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Attack),
         "Unblockable"
     ) {

@@ -49,7 +49,7 @@ def evt = {
             return source != target;
         }
     },
-	new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Draw),
         "Search"
     ) {
@@ -57,9 +57,9 @@ def evt = {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-				new MagicPayManaCostEvent(source,"{1}"),
-				new MagicSacrificeEvent(source)
-			];
+                new MagicPayManaCostEvent(source,"{1}"),
+                new MagicSacrificeEvent(source)
+            ];
         }
 
         @Override
