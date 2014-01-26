@@ -538,13 +538,13 @@ property_stats:
 	grep "^[a-z]*=" -hr release/Magarena/scripts/*.txt -o | sort | uniq -c | sort -n
 
 check_required_property:
-	grep image= -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
-	grep name=  -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
-	grep type=  -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
-	grep value= -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
-	grep rarity= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT} 
-	grep timing= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
-	grep url=    -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
+	grep ^image= -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep ^name=  -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep ^type=  -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep ^value= -L release/Magarena/scripts/*.txt | ${NO_OUTPUT}
+	grep ^rarity= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT} 
+	grep ^timing= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
+	grep ^url=    -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
