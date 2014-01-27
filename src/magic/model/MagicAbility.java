@@ -350,12 +350,6 @@ public enum MagicAbility {
             card.add(new MagicTapManaActivation(manatype));
         }
     },
-    TapAddCharge("tap add charge",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicPermanentActivation.TapAddCharge);
-        }
-    },
     TapDrainAddMana("tap drain add mana",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(arg);
