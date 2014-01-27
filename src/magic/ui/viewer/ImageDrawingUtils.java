@@ -193,6 +193,26 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.TIMECOUNTER.getImage(),ax,ay,observer);
                     drawStringWithOutline(g, str, ax+6, ay+14, observer);
                     ax+=inc;
+                } else if (counterType == MagicCounterType.Quest) {
+                    g.drawImage(IconImages.QUESTCOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Level) {
+                    g.drawImage(IconImages.LEVELCOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Hoofprint) {
+                    g.drawImage(IconImages.HOOFPRINTCOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Age) {
+                    g.drawImage(IconImages.AGECOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Ice) {
+                    g.drawImage(IconImages.ICECOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
                 }
             }
         }

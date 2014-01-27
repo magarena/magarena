@@ -118,6 +118,11 @@ public class IconImages {
     public static final ImageIcon BRIBECOUNTER=loadIcon("bribecounter.png");
     public static final ImageIcon TIMECOUNTER=loadIcon("time-counter.png");
     public static final ImageIcon FADECOUNTER=loadIcon("fade-counter.png");
+    public static final ImageIcon QUESTCOUNTER=loadIcon("quest-counter.png");
+    public static final ImageIcon LEVELCOUNTER=loadIcon("level-counter.png");
+    public static final ImageIcon HOOFPRINTCOUNTER=loadIcon("hoofprint-counter.png");
+    public static final ImageIcon AGECOUNTER=loadIcon("age-counter.png");
+    public static final ImageIcon ICECOUNTER=loadIcon("ice-counter.png");
     
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
