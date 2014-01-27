@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Warrior
 cost={G}{G}
 pt=2/1
-ability=pay {1}{G},{S}:Destroy target artifact or enchantment.
+ability=pay {1}{G},Sacrifice SN:Destroy target artifact or enchantment.
 timing=main

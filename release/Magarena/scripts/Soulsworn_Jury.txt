@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={2}{W}
 pt=1/4
-ability=defender;pay {1}{U},{S}:Counter target creature spell.
+ability=defender;pay {1}{U},Sacrifice SN:Counter target creature spell.
 timing=main
