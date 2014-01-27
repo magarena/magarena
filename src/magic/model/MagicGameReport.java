@@ -29,7 +29,12 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
     // error notification dialogs being created.
     private static boolean isRunning = false;
 
+    @Override
     public void uncaughtException(final Thread th, final Throwable ex) {
+        reportException(th, ex);
+    }
+
+    public static void reportException(final Thread th, final Throwable ex) {
         if (!isRunning) {
             isRunning = true;
             MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
@@ -45,7 +50,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
      * Displays a message to user in the event an unexpected exception occurs.
      * User can open logs folder and/or Issue tracker directly from this dialog.
      */
-    private void doNotifyUser() {
+    private static void doNotifyUser() {
         try {
 
             // By specifying a frame the JOptionPane will be shown in the taskbar.
@@ -204,7 +209,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         }
     }
 
-    private void grabScreenShot(final Component container) {
+    private static void grabScreenShot(final Component container) {
         if (container != null) {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override

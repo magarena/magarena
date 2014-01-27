@@ -13,6 +13,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
+import magic.model.MagicGameReport;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicDeckConstructionRule;
 import magic.ui.GameLayeredPane;
@@ -50,12 +51,9 @@ public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsM
             protected void done() {
                 try {
                     setContent(get());
-                } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                } catch (InterruptedException | ExecutionException e1) {
+                    e1.printStackTrace();
+                    MagicGameReport.reportException(Thread.currentThread(), e1);
                 }
             }
 
