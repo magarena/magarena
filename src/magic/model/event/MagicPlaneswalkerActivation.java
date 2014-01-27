@@ -43,12 +43,12 @@ public abstract class MagicPlaneswalkerActivation extends MagicPermanentActivati
             cost >= 0 ?
                 MagicPutCounterEvent.Self(
                     source,
-                    MagicCounterType.Charge,
+                    MagicCounterType.Loyalty,
                     cost
                 ):
                 new MagicRemoveCounterEvent(
                     source,
-                    MagicCounterType.Charge,
+                    MagicCounterType.Loyalty,
                     -cost
                 ),
             new MagicPlayAbilityEvent(source)

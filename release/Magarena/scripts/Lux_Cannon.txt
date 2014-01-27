@@ -5,5 +5,5 @@ value=3.846
 rarity=M
 type=Artifact
 cost={4}
-ability=pay {T}:Put a charge counter on SN.;pay {T},{C3}:Destroy target permanent.
+ability=pay {T}:Put a charge counter on SN.;pay {T},Remove three charge counters from SN:Destroy target permanent.
 timing=artifact

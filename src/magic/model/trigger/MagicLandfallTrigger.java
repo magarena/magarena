@@ -36,7 +36,7 @@ public abstract class MagicLandfallTrigger extends MagicWhenOtherComesIntoPlayTr
             return new MagicEvent(
                 permanent,
                 new MagicSimpleMayChoice(
-                    MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                    MagicSimpleMayChoice.ADD_POS_COUNTER,
                     1,
                     MagicSimpleMayChoice.DEFAULT_YES
                 ),
@@ -50,7 +50,7 @@ public abstract class MagicLandfallTrigger extends MagicWhenOtherComesIntoPlayTr
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
-                    MagicCounterType.Charge,
+                    MagicCounterType.Quest,
                     1,
                     true
                 ));

@@ -185,6 +185,42 @@ public class ImageDrawingUtils {
                 } else if (counterType == MagicCounterType.Bribery) {
                     g.drawImage(IconImages.BRIBECOUNTER.getImage(),ax,ay,observer);
                     ax+=16;
+                } else if (counterType == MagicCounterType.Fade) {
+                    g.drawImage(IconImages.FADECOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Time) {
+                    g.drawImage(IconImages.TIMECOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Quest) {
+                    g.drawImage(IconImages.QUESTCOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Level) {
+                    g.drawImage(IconImages.LEVELCOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Hoofprint) {
+                    g.drawImage(IconImages.HOOFPRINTCOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Age) {
+                    g.drawImage(IconImages.AGECOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Ice) {
+                    g.drawImage(IconImages.ICECOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
+                } else if (counterType == MagicCounterType.Spore) {
+                	g.drawImage(IconImages.SPORECOUNTER.getImage(),ax,ay,observer);
+                	drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                	ax+=inc;
+                } else if (counterType == MagicCounterType.Arrowhead) {
+                    g.drawImage(IconImages.ARROWHEADCOUNTER.getImage(),ax,ay,observer);
+                    drawStringWithOutline(g, str, ax+6, ay+14, observer);
+                    ax+=inc;
                 }
             }
         }

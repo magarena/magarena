@@ -5,10 +5,10 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-            final int charges=permanent.getCounters(MagicCounterType.Charge);
-            if (charges>=7) {
+            final int level=permanent.getCounters(MagicCounterType.Level);
+            if (level>=7) {
                 pt.set(4,4);
-            } else if (charges>=2) {
+            } else if (level>=2) {
                 pt.set(3,3);
             }
         }
@@ -19,10 +19,10 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-            final int charges=permanent.getCounters(MagicCounterType.Charge);
-            if (charges>=7) {
+            final int level=permanent.getCounters(MagicCounterType.Level);
+            if (level>=7) {
                 flags.add(MagicAbility.DoubleStrike);
-            } else if (charges>=2) {
+            } else if (level>=2) {
                 flags.add(MagicAbility.FirstStrike);
             }
         }

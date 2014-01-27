@@ -5,10 +5,10 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 5) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 5) {
                 pt.set(4,8);
-            } else if (charges >= 2) {
+            } else if (level >= 2) {
                 pt.set(3,6);
             }
         }
@@ -19,11 +19,11 @@
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int charges = source.getCounters(MagicCounterType.Charge);
+            final int level = source.getCounters(MagicCounterType.Level);
             int amount = 0;
-            if (charges >= 5) {
+            if (level >= 5) {
                 amount = 2;
-            } else if (charges >= 2) {
+            } else if (level >= 2) {
                 amount = 1;
             }
             pt.add(amount, amount);

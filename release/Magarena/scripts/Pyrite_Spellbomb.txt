@@ -5,5 +5,5 @@ value=4.537
 rarity=C
 type=Artifact
 cost={1}
-ability=pay {R},{S}:SN deals 2 damage to target creature or player.;pay {1},{S}:PN draws a card.
+ability=pay {R},Sacrifice SN:SN deals 2 damage to target creature or player.;pay {1},Sacrifice SN:PN draws a card.
 timing=artifact

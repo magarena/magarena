@@ -5,10 +5,10 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 4) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 4) {
                 pt.set(6,6);
-            } else if (charges >= 1) {
+            } else if (level >= 1) {
                 pt.set(4,4);
             }
         }
@@ -19,7 +19,7 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-            if (permanent.getCounters(MagicCounterType.Charge) >= 4) {
+            if (permanent.getCounters(MagicCounterType.Level) >= 4) {
                 flags.add(MagicAbility.Trample);
             }
         }

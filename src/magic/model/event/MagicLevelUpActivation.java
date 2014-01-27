@@ -49,7 +49,7 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
+        game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Level,1,true));
     }
 
     private static final class MaximumCondition implements MagicCondition {
@@ -62,7 +62,7 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
 
         @Override
         public boolean accept(final MagicSource source) {
-            return ((MagicPermanent)source).getCounters(MagicCounterType.Charge)<maximum;
+            return ((MagicPermanent)source).getCounters(MagicCounterType.Level)<maximum;
         }
     };
 }

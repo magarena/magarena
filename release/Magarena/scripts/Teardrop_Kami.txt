@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={U}
 pt=1/1
-ability=pay {S}:Tap target creature.;pay {S}:Untap target creature.
+ability=pay Sacrifice SN:Tap target creature.;pay Sacrifice SN:Untap target creature.
 timing=main

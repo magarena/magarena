@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Rogue
 cost={2}{B}
 pt=2/1
-ability=forestwalk;pay {2}{B},{S}:Destroy target Treefolk.;pay {2}{B},{S}:Destroy target Forest.
+ability=forestwalk;pay {2}{B},Sacrifice SN:Destroy target Treefolk.;pay {2}{B},Sacrifice SN:Destroy target Forest.
 timing=main
