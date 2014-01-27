@@ -512,13 +512,12 @@ public enum MagicAbility {
             card.add(MagicTappedIntoPlayTrigger.create());
         }
     },
-    EntersCharged("enters with counter", 0) {
+    EntersWithCounter("enters with counter", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final String[] token = arg.split(" ");
             final String name = token[0];
-            // Need define counterType
             final int n = Integer.parseInt(token[1]);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Charge,n));
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.getCounterRaw(name),n));
         }
     },
     EntersXPlus("enters with X +1/+1", 0) {
