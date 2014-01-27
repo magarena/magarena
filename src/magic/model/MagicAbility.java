@@ -812,6 +812,12 @@ public enum MagicAbility {
             card.add(MagicWhenOtherComesIntoPlayTrigger.Graft);
         }
     },
+    Loyalty("loyalty",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final int n = Integer.parseInt(arg);
+            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Loyalty,n));
+        }
+    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
