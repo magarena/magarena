@@ -123,7 +123,9 @@ public class IconImages {
     public static final ImageIcon HOOFPRINTCOUNTER=loadIcon("hoofprint-counter.png");
     public static final ImageIcon AGECOUNTER=loadIcon("age-counter.png");
     public static final ImageIcon ICECOUNTER=loadIcon("ice-counter.png");
-    
+    public static final ImageIcon SPORECOUNTER=loadIcon("spore-counter.png");
+    public static final ImageIcon ARROWHEADCOUNTER=loadIcon("arrowhead-counter.png");
+
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
     public static final ImageIcon ONE=loadSymbolIcon(1, true);
