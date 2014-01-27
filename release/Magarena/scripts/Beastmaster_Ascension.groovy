@@ -12,7 +12,7 @@
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target && source.getCounters(MagicCounterType.Charge) >= 7;
+            return source != target && source.getCounters(MagicCounterType.Quest) >= 7;
         }
     },
     new MagicWhenAttacksTrigger() {
@@ -22,7 +22,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        MagicSimpleMayChoice.ADD_POS_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
@@ -37,7 +37,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
-                    MagicCounterType.Charge,
+                    MagicCounterType.Quest,
                     1,
                     true
                 ));

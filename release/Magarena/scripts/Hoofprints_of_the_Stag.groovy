@@ -13,7 +13,7 @@ def YOUR_TURN_CONDITION = new MagicCondition() {
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        MagicSimpleMayChoice.ADD_POS_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
@@ -25,7 +25,7 @@ def YOUR_TURN_CONDITION = new MagicCondition() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Hoofprint,1,true));
             }
         }
     },
@@ -40,7 +40,7 @@ def YOUR_TURN_CONDITION = new MagicCondition() {
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{2}{W}"),
-                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,4)
+                new MagicRemoveCounterEvent(source,MagicCounterType.Hoofprint,4)
             ];
         }
         @Override
