@@ -1,11 +1,5 @@
 package magic.model;
 
-import java.util.EnumSet;
-import java.util.Set;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public enum MagicCounterType {
 
 	MinusZeroMinusOne("-0/-1","{0-}"),
