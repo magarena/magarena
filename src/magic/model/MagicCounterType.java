@@ -1,5 +1,11 @@
 package magic.model;
 
+import java.util.EnumSet;
+import java.util.Set;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public enum MagicCounterType {
 
 	MinusZeroMinusOne("-0/-1","{0-}"),
@@ -114,7 +120,7 @@ public enum MagicCounterType {
 	Winch("winch","{win}"),
 	Wind("wind","{wnd}"),
 	Wish("wish","{wsh}"),
-    ;
+	None("","");
 
     public static final int NR_COUNTERS=MagicCounterType.values().length;
 
@@ -132,5 +138,19 @@ public enum MagicCounterType {
 
     public String getText() {
         return text;
+    }
+    
+    public static MagicCounterType getCounterRaw(final String name) {
+        MagicCounterType match = None;
+        for (final MagicCounterType counter : values()) {
+            if (name.startsWith(counter.getName()) && counter.getName().length() > match.getName().length()) {
+                match = counter;
+            }
+        }
+        if (match == None) {
+            throw new RuntimeException("Unable to convert " + name + " to a type of counter");
+        } else {
+            return match;
+        }
     }
 }
