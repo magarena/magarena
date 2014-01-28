@@ -39,7 +39,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class GameController implements ILogBookListener {
 
-    private long MAX_TEST_MODE_DURATION=10000;
+    private long MAX_TEST_MODE_DURATION = 10000;
 
     private final GamePanel gamePanel;
     private final MagicGame game;
@@ -59,12 +59,14 @@ public class GameController implements ILogBookListener {
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private BlockingQueue<Boolean> input = new SynchronousQueue<Boolean>();
 
-    public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
+    public GameController(final GamePanel aGamePanel, final MagicGame aGame) {
         gamePanel = aGamePanel;
         game = aGame;
         testMode = false;
         clearValidChoices();
-        game.getLogBook().addListener(this);
+        if (!GeneralConfig.getInstance().isLogViewerDisabled()) {
+            game.getLogBook().addListener(this);
+        }
     }
 
     /** Fully artificial test game. */
@@ -106,16 +108,15 @@ public class GameController implements ILogBookListener {
 
     public void pause(final int t) {
         disableActionUndoButtons();
-        try { //sleep
+        try { // sleep
             Thread.sleep(t);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
         }
     }
 
-
     private static void invokeAndWait(final Runnable task) {
-        try { //invoke and wait
+        try { // invoke and wait
             SwingUtilities.invokeAndWait(task);
         } catch (final InterruptedException ex) {
             throw new RuntimeException(ex);
@@ -199,7 +200,7 @@ public class GameController implements ILogBookListener {
 
     @SuppressWarnings("unchecked")
     public <T> T getChoiceClicked() {
-        return (T)choiceClicked;
+        return (T) choiceClicked;
     }
 
     public void setMaxTestGameDuration(final long duration) {
@@ -207,86 +208,90 @@ public class GameController implements ILogBookListener {
     }
 
     public void setCardViewer(final CardViewer cardViewer) {
-        this.cardViewer=cardViewer;
+        this.cardViewer = cardViewer;
     }
 
     public void setImageCardViewer(final CardViewer cardViewer) {
-        this.imageCardViewer=cardViewer;
+        this.imageCardViewer = cardViewer;
     }
 
     public void setGameViewer(final GameViewer gameViewer) {
-        this.gameViewer=gameViewer;
+        this.gameViewer = gameViewer;
     }
 
     public void viewCard(final MagicCard card) {
-        cardViewer.setCard(card.getCardDefinition(),card.getImageIndex());
+        cardViewer.setCard(card.getCardDefinition(), card.getImageIndex());
     }
 
-    public void viewCard(final MagicCardDefinition cardDefinition,final int index) {
-        cardViewer.setCard(cardDefinition,index);
+    public void viewCard(final MagicCardDefinition cardDefinition,
+            final int index) {
+        cardViewer.setCard(cardDefinition, index);
     }
 
-    public void viewInfoAbove(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
-        final Dimension size=gamePanel.getSize();
-        final Point pointOnScreen=gamePanel.getLocationOnScreen();
-        rect.x-=pointOnScreen.x;
-        rect.y-=pointOnScreen.y;
-        final int imageWidth=imageCardViewer.getWidth();
-        final int imageHeight=imageCardViewer.getHeight();
-        int x=rect.x+(rect.width-imageWidth)/2;
-        final int y1=rect.y-imageHeight-6;
-        final int y2=rect.y+rect.height+6;
-        final int dy2=size.height-y2-imageHeight;
-        if (x+imageWidth>=size.width) {
-            x=rect.x+rect.width-imageWidth;
+    public void viewInfoAbove(final MagicCardDefinition cardDefinition,
+            final int index, final Rectangle rect) {
+        final Dimension size = gamePanel.getSize();
+        final Point pointOnScreen = gamePanel.getLocationOnScreen();
+        rect.x -= pointOnScreen.x;
+        rect.y -= pointOnScreen.y;
+        final int imageWidth = imageCardViewer.getWidth();
+        final int imageHeight = imageCardViewer.getHeight();
+        int x = rect.x + (rect.width - imageWidth) / 2;
+        final int y1 = rect.y - imageHeight - 6;
+        final int y2 = rect.y + rect.height + 6;
+        final int dy2 = size.height - y2 - imageHeight;
+        if (x + imageWidth >= size.width) {
+            x = rect.x + rect.width - imageWidth;
         }
         int y;
         // Position is next to card?
-        if (y1<10&&dy2<10) {
-            x=rect.x-6-imageWidth;
-            if (y1>=dy2) {
-                y=rect.y+rect.height-imageHeight;
-                if (y<10) {
-                    y=10;
+        if (y1 < 10 && dy2 < 10) {
+            x = rect.x - 6 - imageWidth;
+            if (y1 >= dy2) {
+                y = rect.y + rect.height - imageHeight;
+                if (y < 10) {
+                    y = 10;
                 }
             } else {
-                y=rect.y;
-                if (y+imageHeight+10>size.height) {
-                    y=size.height-10-imageHeight;
+                y = rect.y;
+                if (y + imageHeight + 10 > size.height) {
+                    y = size.height - 10 - imageHeight;
                 }
             }
-        // Position is above card?
-        } else if (y1>=10) {
-            y=y1;
-        // Position if beneath card.
+            // Position is above card?
+        } else if (y1 >= 10) {
+            y = y1;
+            // Position if beneath card.
         } else {
-            y=y2;
+            y = y2;
         }
-        imageCardViewer.setCard(cardDefinition,index);
-        imageCardViewer.setLocation(x,y);
+        imageCardViewer.setCard(cardDefinition, index);
+        imageCardViewer.setLocation(x, y);
         imageCardViewer.showDelayed(getPopupDelay());
     }
 
-    public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
-        final Dimension size=gamePanel.getSize();
-        final Point pointOnScreen=gamePanel.getLocationOnScreen();
-        rect.x-=pointOnScreen.x;
-        rect.y-=pointOnScreen.y;
-        final int x=rect.x+rect.width+10;
-        final int maxY=size.height-8-imageCardViewer.getHeight();
-        int y=rect.y+(rect.height-imageCardViewer.getHeight())/2;
-        if (y<10) {
-            y=10;
-        } else if (y>maxY) {
-            y=maxY;
+    public void viewInfoRight(final MagicCardDefinition cardDefinition,
+            final int index, final Rectangle rect) {
+        final Dimension size = gamePanel.getSize();
+        final Point pointOnScreen = gamePanel.getLocationOnScreen();
+        rect.x -= pointOnScreen.x;
+        rect.y -= pointOnScreen.y;
+        final int x = rect.x + rect.width + 10;
+        final int maxY = size.height - 8 - imageCardViewer.getHeight();
+        int y = rect.y + (rect.height - imageCardViewer.getHeight()) / 2;
+        if (y < 10) {
+            y = 10;
+        } else if (y > maxY) {
+            y = maxY;
         }
-        imageCardViewer.setCard(cardDefinition,index);
-        imageCardViewer.setLocation(x,y);
+        imageCardViewer.setCard(cardDefinition, index);
+        imageCardViewer.setLocation(x, y);
         imageCardViewer.showDelayed(getPopupDelay());
     }
 
     private int getPopupDelay() {
-        return GeneralConfig.getInstance().isMouseWheelPopup() ? 0 : GeneralConfig.getInstance().getPopupDelay();
+        return GeneralConfig.getInstance().isMouseWheelPopup() ? 0
+                : GeneralConfig.getInstance().getPopupDelay();
     }
 
     public void hideInfo() {
@@ -294,17 +299,17 @@ public class GameController implements ILogBookListener {
     }
 
     public void setSourceCardDefinition(final MagicSource source) {
-        sourceCardDefinition=source.getCardDefinition();
+        sourceCardDefinition = source.getCardDefinition();
     }
 
     public MagicCardDefinition getSourceCardDefinition() {
         return sourceCardDefinition;
     }
 
-    public void focusViewers(final int handGraveyard,final int stackCombat) {
+    public void focusViewers(final int handGraveyard, final int stackCombat) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                gamePanel.focusViewers(handGraveyard,stackCombat);
+                gamePanel.focusViewers(handGraveyard, stackCombat);
             }
         });
     }
@@ -332,7 +337,9 @@ public class GameController implements ILogBookListener {
                     try {
                         choiceViewer.showValidChoices(validChoices);
                     } catch (NullPointerException e) {
-                        System.err.println("GameController.showValidChoices : NPE in " + e.getStackTrace()[0]);
+                        System.err
+                                .println("GameController.showValidChoices : NPE in "
+                                        + e.getStackTrace()[0]);
                     }
                 }
             }
@@ -344,14 +351,15 @@ public class GameController implements ILogBookListener {
     }
 
     public void clearValidChoices() {
-        validChoices=Collections.emptySet();
-        combatChoice=false;
+        validChoices = Collections.emptySet();
+        combatChoice = false;
         showValidChoices();
     }
 
-    public void setValidChoices(final Set<?> aValidChoices,final boolean aCombatChoice) {
-        this.validChoices=aValidChoices;
-        this.combatChoice=aCombatChoice;
+    public void setValidChoices(final Set<?> aValidChoices,
+            final boolean aCombatChoice) {
+        this.validChoices = aValidChoices;
+        this.combatChoice = aCombatChoice;
         showValidChoices();
     }
 
@@ -368,26 +376,28 @@ public class GameController implements ILogBookListener {
         });
     }
 
-    public static String getMessageWithSource(final MagicSource source,final String message) {
+    public static String getMessageWithSource(final MagicSource source,
+            final String message) {
         if (source == null) {
             throw new RuntimeException("source is null");
         }
         if (source == MagicEvent.NO_SOURCE) {
             return message;
         } else {
-            return "("+source+")|"+message;
+            return "(" + source + ")|" + message;
         }
     }
 
-    public void showMessage(final MagicSource source,final String message) {
+    public void showMessage(final MagicSource source, final String message) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                gameViewer.showMessage(getMessageWithSource(source,message));
+                gameViewer.showMessage(getMessageWithSource(source, message));
             }
         });
     }
 
-    public <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
+    public <E extends JComponent> E waitForInput(final Callable<E> func)
+            throws UndoClickedException {
         final AtomicReference<E> ref = new AtomicReference<E>();
         final AtomicReference<Exception> except = new AtomicReference<Exception>();
         invokeAndWait(new Runnable() {
@@ -412,26 +422,28 @@ public class GameController implements ILogBookListener {
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
         if (!testMode) {
             disableActionButton(true);
-            showMessage(event.getSource(),event.getChoiceDescription());
+            showMessage(event.getSource(), event.getChoiceDescription());
             GameController.invokeAndWait(new Runnable() {
                 public void run() {
-                    //do nothing, ensure that event dispatch queue is cleared
+                    // do nothing, ensure that event dispatch queue is cleared
                 }
             });
         }
 
-        //dynamically get the AI based on the player's index
+        // dynamically get the AI based on the player's index
         final MagicPlayer player = event.getPlayer();
         final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
         return ai.findNextEventChoiceResults(game, player);
     }
 
-    private Object[] getPlayerNextEventChoiceResults(final MagicEvent event) throws UndoClickedException {
-        final MagicSource source=event.getSource();
+    private Object[] getPlayerNextEventChoiceResults(final MagicEvent event)
+            throws UndoClickedException {
+        final MagicSource source = event.getSource();
         setSourceCardDefinition(source);
         final Object[] choiceResults;
         try {
-            choiceResults = event.getChoice().getPlayerChoiceResults(this,game,event.getPlayer(),source);
+            choiceResults = event.getChoice().getPlayerChoiceResults(this,
+                    game, event.getPlayer(), source);
         } finally {
             clearValidChoices();
             setSourceCardDefinition(MagicEvent.NO_SOURCE);
@@ -441,7 +453,8 @@ public class GameController implements ILogBookListener {
 
     private void executeNextEventWithChoices(final MagicEvent event) {
         final Object[] choiceResults;
-        if (selfMode || testMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
+        if (selfMode || testMode
+                || event.getPlayer().getPlayerDefinition().isArtificial()) {
             choiceResults = getArtificialNextEventChoiceResults(event);
         } else {
             try {
@@ -460,7 +473,7 @@ public class GameController implements ILogBookListener {
 
     public void resetGame() {
         if (game.hasUndoPoints()) {
-            resetGame=true;
+            resetGame = true;
             undoClicked();
         }
     }
@@ -476,7 +489,7 @@ public class GameController implements ILogBookListener {
 
     private void performUndo() {
         if (resetGame) {
-            resetGame=false;
+            resetGame = false;
             while (game.hasUndoPoints()) {
                 game.gotoLastUndoPoint();
             }
@@ -490,7 +503,7 @@ public class GameController implements ILogBookListener {
     }
 
     public void runGame() {
-        final long startTime=System.currentTimeMillis();
+        final long startTime = System.currentTimeMillis();
 
         running.set(true);
         while (running.get()) {
@@ -502,11 +515,11 @@ public class GameController implements ILogBookListener {
 
                 game.logMessages();
                 clearValidChoices();
-                showMessage(MagicEvent.NO_SOURCE,
-                    "{L} " +
-                    game.getLosingPlayer() + " " +
-                    (gameConceded.get() ? "conceded" : "lost" ) +
-                    " the game.");
+                showMessage(
+                        MagicEvent.NO_SOURCE,
+                        "{L} " + game.getLosingPlayer() + " "
+                                + (gameConceded.get() ? "conceded" : "lost")
+                                + " the game.");
 
                 if (game.getLosingPlayer().getIndex() == 0) {
                     SoundEffects.playClip(SoundEffects.LOSE_SOUND);
@@ -532,7 +545,7 @@ public class GameController implements ILogBookListener {
             }
 
             if (game.hasNextEvent()) {
-                final MagicEvent event=game.getNextEvent();
+                final MagicEvent event = game.getNextEvent();
                 if (event instanceof MagicPriorityEvent) {
                     game.logMessages();
                 }
@@ -547,7 +560,8 @@ public class GameController implements ILogBookListener {
 
             if (testMode) {
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
-                    System.err.println("WARNING. Max time for AI game exceeded");
+                    System.err
+                            .println("WARNING. Max time for AI game exceeded");
                     break;
                 }
             } else {
@@ -565,7 +579,8 @@ public class GameController implements ILogBookListener {
                 if (ev.getMagicMessage() == null) {
                     gamePanel.getLogBookViewer().update();
                 } else {
-                    gamePanel.getLogBookViewer().addMagicMessage(ev.getMagicMessage());
+                    gamePanel.getLogBookViewer().addMagicMessage(
+                            ev.getMagicMessage());
                 }
             }
         });

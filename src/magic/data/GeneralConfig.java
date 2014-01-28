@@ -104,8 +104,16 @@ public class GeneralConfig {
     private boolean previewCardOnSelect = DEFAULT_PREVIEW_CARD_ON_SELECT;
     private boolean showLogMessages = DEFAULT_SHOW_LOG_MESSAGES;
     private boolean isMulliganScreenActive = DEFAULT_MULLIGAN_SCREEN;
+    private boolean isLogViewerDisabled = false;
 
     private GeneralConfig() {}
+
+    public boolean isLogViewerDisabled() {
+        return isLogViewerDisabled;
+    }
+    public void setLogViewerDisabled(boolean isLogViewerDisabled) {
+        this.isLogViewerDisabled = isLogViewerDisabled;
+    }
 
     public boolean isLogMessageAddedToTop() {
         return this.isLogMessageAddedToTop;
