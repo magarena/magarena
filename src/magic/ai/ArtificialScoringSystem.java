@@ -173,7 +173,7 @@ public class ArtificialScoringSystem {
     	int amount = 0;
     	for (final MagicCounterType counterType : MagicCounterType.values()) {
     		if (permanent.hasCounters() && permanent.getCounters(counterType)>0) {
-    			amount+=counterType.getScore();
+    			amount+=permanent.getCounters(counterType)*counterType.getScore();
     		}
     	}
     	return amount;
