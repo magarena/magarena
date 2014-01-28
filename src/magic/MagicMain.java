@@ -5,6 +5,7 @@ import magic.data.CubeDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
+import magic.data.GeneralConfig;
 import magic.data.History;
 import magic.data.KeywordDefinitions;
 import magic.model.MagicGameLog;
@@ -47,6 +48,7 @@ public class MagicMain {
     private static SplashScreen splash;
 
     public static void main(final String[] args) {
+
         // setup the handler for any uncaught exception
         Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
 
@@ -54,6 +56,8 @@ public class MagicMain {
         if (splash == null) {
             System.err.println("Error: no splash image specified on the command line");
         }
+
+        parseCommandline(args);
 
         // setup the game log
         setSplashStatusMessage("Initializing log...");
@@ -111,6 +115,16 @@ public class MagicMain {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
             magicFrame.newDuel(config);
+        }
+    }
+
+    private static void parseCommandline(final String[] args) {
+        for (String arg : args) {
+            switch (arg.toLowerCase()) {
+            case "disablelogviewer":
+                GeneralConfig.getInstance().setLogViewerDisabled(true);
+                break;
+            }
         }
     }
 

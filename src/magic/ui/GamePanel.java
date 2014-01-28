@@ -100,6 +100,7 @@ public final class GamePanel extends JPanel {
         rhsPanel.setOpaque(false);
 
         logBookViewer=new LogBookViewer(game.getLogBook());
+        logBookViewer.setVisible(!GeneralConfig.getInstance().isLogViewerDisabled());
 
         cardViewer=new CardViewer("Card",false,true);
         add(cardViewer, "w 100%, h 100%");
