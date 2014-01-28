@@ -2,17 +2,17 @@
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int charges=permanent.getCounters(MagicCounterType.Charge);
-            if (charges>=4) {
+            final int level=permanent.getCounters(MagicCounterType.Level);
+            if (level>=4) {
                 pt.set(2,5);
-            } else if (charges>=2) {
+            } else if (level>=2) {
                 pt.set(2,4);
             }
         }
     },
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ChargeCountersAtLeast(2),
+            MagicConditionFactory.CounterAtLeast(MagicCounterType.Level,2),
         ],
         new MagicActivationHints(MagicTiming.Spell),
         "Copy"
@@ -25,7 +25,7 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final int amount=source.getCounters(MagicCounterType.Charge)>=4?2:1;
+            final int amount=source.getCounters(MagicCounterType.Level)>=4?2:1;
             final String description = amount == 2 ?
                     "Copy target instant or sorcery spell\$ twice. You may choose new targets for the copies.":
                     "Copy target instant or sorcery spell\$. You may choose new targets for the copy.";

@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ChargeCountersAtLeast(1),
+            MagicConditionFactory.CounterAtLeast(MagicCounterType.Level,1),
         ],
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
@@ -14,7 +14,7 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final int amount = source.getCounters(MagicCounterType.Charge);
+            final int amount = source.getCounters(MagicCounterType.Level);
             final String description = amount >= 3 ?
                     "PN draws a card." :
                     "PN draws a card, then discards a card.";

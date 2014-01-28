@@ -31,8 +31,12 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
 
 import java.util.Arrays;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.LinkedList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.Set;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
 
@@ -142,16 +146,12 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
 
         final boolean isCostIndependent = (
                cost.contains("{T}") 
-            || cost.contains("{S}") 
+            || cost.contains("Sacrifice SN") 
             || cost.contains("{E}") 
             || cost.contains("{Q}") 
-            || cost.contains("{+1/+1}") 
-            || cost.contains("{-1/-1}") 
-            || cost.contains("{C}") 
-            || cost.contains("{C2}") 
-            || cost.contains("{C3}")
             || cost.contains("{Once}")
             || cost.contains("Return SN to its owner's hand")
+            || cost.contains(" counters from SN")
         ) == false;
 
         return new MagicPermanentActivation(
@@ -177,7 +177,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     private static final List<MagicEvent> englishToCostEvents(final String[] costs, final MagicPermanent source) {
         final List<MagicEvent> events = new LinkedList<MagicEvent>();
         for (String cost : costs) {
-            if (cost.equals("{S}")) {
+            if (cost.equals("Sacrifice SN")) {
                 events.add(new MagicSacrificeEvent(source));
             } else if (cost.equals("Sacrifice an artifact")) {
                 events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT));
@@ -225,58 +225,23 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicPayLifeEvent(source, 3));
             } else if (cost.equals("Pay 7 life")) {
                 events.add(new MagicPayLifeEvent(source, 7));
-            } else if (cost.equals("{+1/+1}")) {
-                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1));
-            } else if (cost.equals("{-1/-1}")) {
-                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.MinusOne,1));
-            } else if (cost.equals("{C}")) {
-                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1));
-            } else if (cost.equals("{C2}")) {
-                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,2));
-            } else if (cost.equals("{C3}")) {
-                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3));
             } else if (cost.equals("{Once}")) {
                 events.add(new MagicPlayAbilityEvent(source));
             } else if (cost.equals("{Sorcery}")) {
                 events.add(new MagicSorceryConditionEvent(source));
             } else if (cost.equals("Return SN to its owner's hand")) {
                 events.add(new MagicBouncePermanentEvent(source,source));
+            } else if (cost.contains("Remove ")) {
+            	final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
+            	final int amount = englishToInt(costText[0]);
+            	final String counterType = costText[1];
+                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.getCounterRaw(counterType),amount));
             } else {
                 events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
             }
         }
         return events;
     }
-
-    public static final MagicPermanentActivation TapAddCharge = new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump),
-        "Charge"
-    ) {
-
-        @Override
-        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-            return Arrays.asList(new MagicTapEvent(source));
-        }
-
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Put a charge counter on SN."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.Charge,
-                1,
-                true
-            ));
-        }
-    };
 
     public static final MagicPermanentActivation SwitchPT(final MagicManaCost cost) {
         return new MagicPermanentActivation(
@@ -300,5 +265,22 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 game.doAction(new MagicAddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
             }
         };
+    }
+    
+    public static int englishToInt(String num) {
+        switch (num) {
+            case "a": return 1;
+            case "an": return 1;
+            case "two": return 2;
+            case "three" : return 3;
+            case "four" : return 4;
+            case "five" : return 5;
+            case "six" : return 6;
+            case "seven" : return 7;
+            case "eight" : return 8;
+            case "nine" : return 9;
+            case "ten" : return 10;
+            default: throw new RuntimeException("Unknown count: " + num);
+        }
     }
 }

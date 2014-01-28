@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={R}
 pt=1/1
-ability=pay {T},{S}:Destroy target Wall.
+ability=pay {T},Sacrifice SN:Destroy target Wall.
 timing=main

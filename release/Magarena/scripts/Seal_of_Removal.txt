@@ -5,5 +5,5 @@ value=4.128
 rarity=C
 type=Enchantment
 cost={U}
-ability=pay {S}:Return target creature to its owner's hand.
+ability=pay Sacrifice SN:Return target creature to its owner's hand.
 timing=enchantment

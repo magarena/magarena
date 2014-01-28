@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/petrified%20field.jpg
 value=3.229
 rarity=R
 type=Land
-ability=tap add mana {1};pay {T},{S}:Return target land card from your graveyard to your hand.
+ability=tap add mana {1};pay {T},Sacrifice SN:Return target land card from your graveyard to your hand.
 timing=land

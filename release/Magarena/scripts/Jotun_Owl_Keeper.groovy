@@ -2,7 +2,7 @@
     new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicRemoveFromPlayAction act) {
-            final int amount = permanent.getCounters(MagicCounterType.Charge);
+            final int amount = permanent.getCounters(MagicCounterType.Age);
             return (act.isPermanent(permanent) && amount > 0) ?
                 new MagicEvent(
                     permanent,

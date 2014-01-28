@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ChargeCountersAtLeast(2),
+            MagicConditionFactory.CounterAtLeast(MagicCounterType.Level,2),
         ],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
@@ -14,7 +14,7 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final int amount = source.getCounters(MagicCounterType.Charge);
+            final int amount = source.getCounters(MagicCounterType.Level);
             return new MagicEvent(
                 source,
                 amount >= 6 ? 2 : 1,
