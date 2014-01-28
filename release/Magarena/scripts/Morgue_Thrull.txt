@@ -7,5 +7,5 @@ type=Creature
 subtype=Thrull
 cost={2}{B}
 pt=2/2
-ability=pay {S}:PN puts the top three cards of his or her library into his or her graveyard.
+ability=pay Sacrifice SN:PN puts the top three cards of his or her library into his or her graveyard.
 timing=main

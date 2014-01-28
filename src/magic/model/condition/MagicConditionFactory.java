@@ -16,24 +16,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicPermanentActivation;
 
 public class MagicConditionFactory {
-    public static MagicCondition ChargeCountersAtLeast(final int n) {
-        return new MagicCondition() {
-            public boolean accept(final MagicSource source) {
-                final MagicPermanent permanent = (MagicPermanent)source;
-                return permanent.getCounters(MagicCounterType.Charge) >= n;
-            }
-        };
-    }
-
-    public static MagicCondition PlusOneCounterAtLeast(final int n) {
-        return new MagicCondition() {
-            public boolean accept(final MagicSource source) {
-                final MagicPermanent permanent = (MagicPermanent)source;
-                return permanent.getCounters(MagicCounterType.PlusOne) >= n;
-            }
-        };
-    }
-
+    
     public static MagicCondition CounterAtLeast(final MagicCounterType counterType, final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {

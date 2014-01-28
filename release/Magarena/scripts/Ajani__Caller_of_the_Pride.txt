@@ -6,6 +6,6 @@ rarity=M
 type=Planeswalker
 subtype=Ajani
 cost={1}{W}{W}
-ability=enters with counter charge 4
+ability=loyalty 4
 timing=main
 requires_groovy_code

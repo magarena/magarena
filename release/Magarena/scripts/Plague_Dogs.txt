@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Hound
 cost={4}{B}
 pt=3/3
-ability=dies effect All creatures get -1/-1 until end of turn.;pay {2},{S}:PN draws a card.
+ability=dies effect All creatures get -1/-1 until end of turn.;pay {2},Sacrifice SN:PN draws a card.
 timing=main

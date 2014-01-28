@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_CHARGE_COUNTER,
+                        MagicSimpleMayChoice.ADD_POS_COUNTER,
                         1,
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
@@ -21,7 +21,7 @@
             if (event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(
                     event.getPermanent(),
-                    MagicCounterType.Charge,
+                    MagicCounterType.Quest,
                     1,
                     true
                 ));
@@ -32,7 +32,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return (permanent.isOpponent(upkeepPlayer) &&
-                    permanent.getCounters(MagicCounterType.Charge) >= 4) ?
+                    permanent.getCounters(MagicCounterType.Quest) >= 4) ?
                 new MagicEvent(
                     permanent,
                     this,

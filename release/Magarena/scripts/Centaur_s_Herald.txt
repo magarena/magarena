@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Scout
 cost={G}
 pt=0/1
-ability=pay {2}{G}, {S}: PN puts a 3/3 green Centaur creature token onto the battlefield.
+ability=pay {2}{G}, Sacrifice SN: PN puts a 3/3 green Centaur creature token onto the battlefield.
 timing=main

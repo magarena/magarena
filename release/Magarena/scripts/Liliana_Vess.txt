@@ -7,5 +7,5 @@ type=Planeswalker
 subtype=Liliana
 cost={3}{B}{B}
 timing=main
-ability=enters with counter charge 5
+ability=loyalty 5
 requires_groovy_code

@@ -8,5 +8,5 @@ subtype=Aura
 cost={4}{G}{G}
 enchant=pump,pos creature
 given_pt=+6/+6
-ability=pay {G}{G}{G},{S}:PN puts a 6/6 green Wurm creature token onto the battlefield.
+ability=pay {G}{G}{G},Sacrifice SN:PN puts a 6/6 green Wurm creature token onto the battlefield.
 timing=enchantment
