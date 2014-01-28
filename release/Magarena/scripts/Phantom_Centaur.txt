@@ -7,6 +7,6 @@ type=Creature
 subtype=Centaur,Spirit
 cost={2}{G}{G}
 pt=2/0
-ability=protection from black;enters with +1/+1 3
+ability=protection from black;enters with counter +1/+1 3
 timing=main
 requires_groovy_code=Phantom_Nomad
