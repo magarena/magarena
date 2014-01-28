@@ -37,9 +37,9 @@ function genName() {
     getline
 
     if ($8 == "0") {
-        C = "W"
+        C = "1"
     } else {
-        C = "B"
+        C = "0"
     }
     print ai1 "-" $3 " " ai2 "-" $6  " " C
 }

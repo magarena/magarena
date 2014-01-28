@@ -9,7 +9,13 @@ require 'whole_history_rating'
 # Handicap should generally be less than 500 elo
 ARGF.each do |line|
     tokens = line.split(' ')
-    @whr.create_game(tokens[0], tokens[1], tokens[2], 0, 0)
+    winner = 
+        if (tokens[2] == "0") 
+            "B" 
+        else 
+            "W"
+        end
+    @whr.create_game(tokens[0], tokens[1], winner, 0, 0)
 end
 
 # Iterate the WHR algorithm towards convergence with more players/games, more iterations are needed.
