@@ -125,7 +125,9 @@ public class IconImages {
     public static final ImageIcon ICECOUNTER=loadIcon("ice-counter.png");
     public static final ImageIcon SPORECOUNTER=loadIcon("spore-counter.png");
     public static final ImageIcon ARROWHEADCOUNTER=loadIcon("arrowhead-counter.png");
-    public static final ImageIcon LOYALTY=loadIcon("loyalty-counter.png");
+    public static final ImageIcon LOYALTYCOUNTER=loadIcon("loyalty-counter.png");
+    public static final ImageIcon KICOUNTER=loadIcon("ki-counter.png");
+    public static final ImageIcon DEPLETIONCOUNTER=loadIcon("depletion-counter.png")
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);

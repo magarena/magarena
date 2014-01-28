@@ -224,8 +224,16 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.ARROWHEADCOUNTER.getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
-                }  else if (counterType == MagicCounterType.Arrowhead) {
-                    g.drawImage(IconImages.LOYALTY.getImage(),ax,ay,observer);
+                }  else if (counterType == MagicCounterType.Loyalty) {
+                    g.drawImage(IconImages.LOYALTYCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                }  else if (counterType == MagicCounterType.Ki) {
+                    g.drawImage(IconImages.KICOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                }  else if (counterType == MagicCounterType.Depletion) {
+                    g.drawImage(IconImages.DEPLETIONCOUNTER.getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 }
