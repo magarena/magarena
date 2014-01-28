@@ -564,7 +564,7 @@ public enum MagicAbility {
             card.add(new MagicAnnihilatorTrigger(n));
         }
     },
-    Multicounter("enters with +1/+1 for each kick", 0) {
+    Multicounter("enters with counter +1/+1 for each kick", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final MagicManaCost manaCost = MagicManaCost.create(arg);
             card.add(new MagicPlayMulticounterEvent(manaCost));
