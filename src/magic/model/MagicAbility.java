@@ -520,10 +520,16 @@ public enum MagicAbility {
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.getCounterRaw(name),n));
         }
     },
-    EntersXPlus("enters with X +1/+1", 0) {
+    EntersXPlus("enters with counter +1/+1 X", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenComesIntoPlayTrigger.XPlusOneCounters);
+        }
+    },
+    EntersXCharge("enters with counter charge X", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicWhenComesIntoPlayTrigger.XChargeCounters);
         }
     },
     EntersTappedUnlessTwo("enters tapped unless two", -10) {
