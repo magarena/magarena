@@ -2,7 +2,7 @@
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            if (permanent.getCounters(MagicCounterType.Charge)>0) {
+            if (permanent.getCounters(MagicCounterType.Level)>0) {
                 pt.set(6,6);
             }
         }
@@ -10,7 +10,7 @@
     new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (permanent==creature&&permanent.getCounters(MagicCounterType.Charge)>=6) ?
+            return (permanent==creature&&permanent.getCounters(MagicCounterType.Level)>=6) ?
                 new MagicEvent(
                     permanent,
                     this,

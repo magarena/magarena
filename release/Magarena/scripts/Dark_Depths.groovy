@@ -23,11 +23,11 @@
             final MagicPermanent perm = event.getPermanent()
             game.doAction(new MagicChangeCountersAction(
                 perm,
-                MagicCounterType.Charge,
+                MagicCounterType.Ice,
                 -1,
                 true
             ));            
-            if (perm.getCounters(MagicCounterType.Charge) == 0) {
+            if (perm.getCounters(MagicCounterType.Ice) == 0) {
                 game.doAction(new MagicSacrificeAction(perm));
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(), 

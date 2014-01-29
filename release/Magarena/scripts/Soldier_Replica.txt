@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Soldier
 cost={3}
 pt=1/3
-ability=pay {1}{W},{S}:SN deals 3 damage to target attacking or blocking creature.
+ability=pay {1}{W},Sacrifice SN:SN deals 3 damage to target attacking or blocking creature.
 timing=artifact

@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ChargeCountersAtLeast(1)
+            MagicConditionFactory.CounterAtLeast(MagicCounterType.Charge,1)
         ],
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"

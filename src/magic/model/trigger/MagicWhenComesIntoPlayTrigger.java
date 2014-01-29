@@ -96,4 +96,17 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             return MagicEvent.NONE;
         }
     };
+    
+    public static final MagicWhenComesIntoPlayTrigger XChargeCounters = new MagicWhenComesIntoPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+            game.doAction(new MagicChangeCountersAction(
+                permanent,
+                MagicCounterType.Charge,
+                payedCost.getX(),
+                true
+            ));
+            return MagicEvent.NONE;
+        }
+    };
 }

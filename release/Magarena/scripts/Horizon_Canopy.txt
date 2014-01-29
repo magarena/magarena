@@ -6,5 +6,5 @@ rarity=R
 mana=w2g2
 type=Land
 ability=tap pay 1 life add mana {G} or {W};\
-        pay {1}, {T}, {S}: PN draws a card.
+        pay {1}, {T}, Sacrifice SN: PN draws a card.
 timing=land

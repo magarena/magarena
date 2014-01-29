@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental
 cost={3}{B/G}
 pt=6/6
-ability=wither;enters with -1/-1 4
+ability=wither;enters with counter -1/-1 4
 timing=main
 requires_groovy_code

@@ -6,7 +6,7 @@ rarity=M
 type=Legendary,Creature
 subtype=Human,Cleric
 cost={X}{W}
-ability=enters with X +1/+1;\
+ability=enters with counter +1/+1 X;\
         pay {T}: Put a +1/+1 counter on SN.
 timing=main
 requires_groovy_code

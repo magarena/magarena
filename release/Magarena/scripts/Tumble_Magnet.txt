@@ -6,5 +6,5 @@ rarity=C
 type=Artifact
 cost={3}
 ability=enters with counter charge 3;\
-        pay {T},{C}: Tap target artifact or creature.
+        pay {T},Remove a charge counter from SN: Tap target artifact or creature.
 timing=artifact

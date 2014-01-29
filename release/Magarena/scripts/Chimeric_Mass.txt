@@ -5,6 +5,6 @@ value=3.619
 rarity=R
 type=Artifact
 cost={X}
-ability=enters with X +1/+1
+ability=enters with counter charge X
 timing=artifact
 requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Scout
 cost={W}
 pt=1/1
-ability=pay {W},{S}:Return target artifact card from your graveyard to your hand.
+ability=pay {W},Sacrifice SN:Return target artifact card from your graveyard to your hand.
 timing=main

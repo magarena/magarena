@@ -7,5 +7,5 @@ type=Creature
 subtype=Boar
 cost={2}{G}
 pt=2/2
-ability=pay {S}: PN gains 4 life.
+ability=pay Sacrifice SN: PN gains 4 life.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={1}{G}
 pt=2/2
-ability=enters with +1/+1 for each kick {1}{G}
+ability=enters with counter +1/+1 for each kick {1}{G}
 timing=main

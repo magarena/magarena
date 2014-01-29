@@ -7,6 +7,6 @@ type=Creature
 subtype=Insect,Druid
 cost={2}{G}{G}
 pt=2/3
-ability=pay {G},{T},{S}:Destroy target enchantment.
+ability=pay {G},{T},Sacrifice SN:Destroy target enchantment.
 timing=main
 requires_groovy_code

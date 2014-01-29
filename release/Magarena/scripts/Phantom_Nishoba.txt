@@ -7,6 +7,6 @@ type=Creature
 subtype=Cat,Beast,Spirit
 cost={5}{G}{W}
 pt=0/0
-ability=trample;enters with +1/+1 7
+ability=trample;enters with counter +1/+1 7
 timing=main
 requires_groovy_code=Phantom_Nomad

@@ -2,17 +2,17 @@
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 4) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 4) {
                 pt.set(7,3);
-            } else if (charges >= 1) {
+            } else if (level >= 1) {
                 pt.set(4,2);
             }
         }
     },
     new MagicPermanentActivation(
         [
-            MagicConditionFactory.ChargeCountersAtLeast(4),
+            MagicConditionFactory.CounterAtLeast(MagicCounterType.Level,4),
         ],
         new MagicActivationHints(MagicTiming.Pump),
         "Regen"
