@@ -1,0 +1,11 @@
+name=Warchanter of Mogis
+url=http://magiccards.info/bng/en/85.html
+image=http://mtgimage.com/card/warchanter%20of%20mogis.jpg
+value=2.786
+rarity=C
+type=Creature
+subtype=Minotaur,Shaman
+cost={3}{B}{B}
+pt=3/3
+ability=untapped effect Target creature you control gains intimidate until end of turn.
+timing=main

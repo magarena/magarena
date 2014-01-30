@@ -1,0 +1,10 @@
+name=Temple of Enlightenment
+url=http://magiccards.info/bng/en/163.html
+image=http://mtgimage.com/card/temple%20of%20enlightenment.jpg
+value=3.962
+rarity=R
+type=Land
+ability=enters tapped;tap add mana {W} or {U} 
+mana=w3u3
+timing=tapland
+requires_groovy_code=Temple of Silence

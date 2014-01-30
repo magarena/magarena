@@ -1,0 +1,11 @@
+name=Setessan Oathsworn
+url=http://magiccards.info/bng/en/138.html
+image=http://mtgimage.com/card/setessan%20oathsworn.jpg
+value=3.889
+rarity=C
+type=Creature
+subtype=Satyr,Warrior
+cost={1}{G}{G}
+pt=1/1
+ability=heroic effect Put two +1/+1 counters on SN.
+timing=main

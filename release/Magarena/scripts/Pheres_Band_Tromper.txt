@@ -1,0 +1,11 @@
+name=Pheres-Band Tromper
+url=http://magiccards.info/bng/en/134.html
+image=http://mtgimage.com/card/pheres-band%20tromper.jpg
+value=3.818
+rarity=C
+type=Creature
+subtype=Centaur,Warrior
+cost={3}{G}
+pt=3/3
+ability=untapped effect Put a +1/+1 counter on SN.
+timing=main
