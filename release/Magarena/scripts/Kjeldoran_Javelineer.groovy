@@ -11,7 +11,7 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            final int amount = source.getCounters(MagicCounterType.Charge);
+            final int amount = source.getCounters(MagicCounterType.Age);
             return new MagicEvent(
                 source,
                 MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,

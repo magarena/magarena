@@ -11,7 +11,7 @@
 
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source.getCounters(MagicCounterType.Charge) >= 4 && source != target;
+            return source.getCounters(MagicCounterType.Level) >= 4 && source != target;
         }
     },
     new MagicStatic(MagicLayer.SetPT) {
@@ -20,10 +20,10 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 4) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 4) {
                 pt.set(4,4);
-            } else if (charges >= 2) {
+            } else if (level >= 2) {
                 pt.set(3,3);
             }
         }
@@ -34,8 +34,8 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-            final int charges = permanent.getCounters(MagicCounterType.Charge);
-            if (charges >= 2) {
+            final int level = permanent.getCounters(MagicCounterType.Level);
+            if (level >= 2) {
                 flags.add(MagicAbility.Flying);
             }
         }

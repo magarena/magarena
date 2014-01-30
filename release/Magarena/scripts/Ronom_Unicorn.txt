@@ -7,5 +7,5 @@ type=Creature
 subtype=Unicorn
 cost={1}{W}
 pt=2/2
-ability=pay {S}:Destroy target enchantment.
+ability=pay Sacrifice SN:Destroy target enchantment.
 timing=main
