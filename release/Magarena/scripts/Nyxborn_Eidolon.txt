@@ -1,0 +1,12 @@
+name=Nyxborn Eidolon
+url=http://magiccards.info/bng/en/78.html
+image=http://mtgimage.com/card/nyxborn%20eidolon.jpg
+value=2.033
+rarity=C
+type=Enchantment,Creature
+subtype=Spirit
+cost={1}{B}
+pt=2/1
+ability=bestow {4}{B}
+given_pt=+2/+1
+timing=main

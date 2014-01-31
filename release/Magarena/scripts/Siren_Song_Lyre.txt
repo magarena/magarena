@@ -1,0 +1,11 @@
+name=Siren Song Lyre
+url=http://magiccards.info/bng/en/161.html
+image=http://mtgimage.com/card/siren%20song%20lyre.jpg
+value=2.682
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={2}
+given_ability=pay {2},{T}:Tap target creature.
+timing=equipment

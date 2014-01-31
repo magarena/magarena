@@ -1,0 +1,12 @@
+name=Nyxborn Triton
+url=http://magiccards.info/bng/en/46.html
+image=http://mtgimage.com/card/nyxborn%20triton.jpg
+value=2.9
+rarity=C
+type=Enchantment,Creature
+subtype=Merfolk
+cost={2}{U}
+pt=2/3
+ability=bestow {4}{U}
+given_pt=+2/+3
+timing=main

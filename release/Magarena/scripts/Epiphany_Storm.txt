@@ -1,0 +1,11 @@
+name=Epiphany Storm
+url=http://magiccards.info/bng/en/91.html
+image=http://mtgimage.com/card/epiphany%20storm.jpg
+value=2.773
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+enchant=pump,pos creature
+given_ability=pay {R},{T},Discard a card:PN draws a card.
+timing=aura

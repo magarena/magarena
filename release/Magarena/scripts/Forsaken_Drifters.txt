@@ -1,0 +1,11 @@
+name=Forsaken Drifters
+url=http://magiccards.info/bng/en/72.html
+image=http://mtgimage.com/card/forsaken%20drifters.jpg
+value=2.458
+rarity=C
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=4/2
+ability=dies effect PN puts the top four cards of his or her library into his or her graveyard.
+timing=main

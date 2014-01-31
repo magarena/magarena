@@ -1,0 +1,11 @@
+name=Impetuous Sunchaser
+url=http://magiccards.info/bng/en/99.html
+image=http://mtgimage.com/card/impetuous%20sunchaser.jpg
+value=3.778
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{R}
+pt=1/1
+ability=flying;haste;attacks each turn if able
+timing=fmain

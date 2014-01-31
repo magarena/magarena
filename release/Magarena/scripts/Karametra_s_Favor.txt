@@ -1,0 +1,12 @@
+name=Karametra's Favor
+url=http://magiccards.info/bng/en/125.html
+image=http://mtgimage.com/card/karametra's%20favor.jpg
+value=3.9
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+enchant=pump,pos creature
+ability=enters effect PN draws a card
+given_ability=tap add mana any
+timing=aura
