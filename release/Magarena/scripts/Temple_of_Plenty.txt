@@ -1,10 +1,10 @@
 name=Temple of Plenty
-url=http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=378537
+url=http://magiccards.info/bng/en/165.html
 image=http://mtgimage.com/card/temple%20of%20plenty.jpg
 value=3.542
 rarity=R
 type=Land
-ability=enters tapped;Tap add mana {G} or {W}
+ability=enters tapped;tap add mana {G} or {W}
 mana=g3w3
 timing=tapland
 requires_groovy_code=Temple of Silence
