@@ -823,85 +823,6 @@ public enum MagicRuleEventAction {
             return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
         }
     },
-/*    GrowSelf(
-        "put (?<amount>[a-z]+) \\+1/\\+1 counter(s)? on sn.", 
-        MagicTiming.Pump, 
-        "Pump"
-    ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
-            final int amount = englishToInt(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeCountersAction(
-                        event.getPermanent(),
-                        MagicCounterType.PlusOne,
-                        amount,
-                        true
-                    ));
-                }
-            };
-        }
-    },
-    GrowChosen(
-        "put (?<amount>[a-z]+) \\+1/\\+1 counter(s)? on (?<choice>[^\\.]*).", 
-        MagicTargetHint.Positive,
-        MagicPumpTargetPicker.create(),
-        MagicTiming.Pump, 
-        "Pump"
-    ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
-            final int amount = englishToInt(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeCountersAction(
-                                creature,
-                                MagicCounterType.PlusOne,
-                                amount,
-                                true
-                            ));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    ShrinkChosen(
-        "put (?<amount>[a-z]+) -1/-1 counter(s)? on (?<choice>[^\\.]*).", 
-        MagicTargetHint.Negative,
-        MagicTiming.Removal, 
-        "Weaken"
-    ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
-            final int amount = englishToInt(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new MagicChangeCountersAction(
-                                creature,
-                                MagicCounterType.MinusOne,
-                                amount,
-                                true
-                            ));
-                        }
-                    });
-                }
-            };
-        }
-        public MagicTargetPicker<?> getPicker(final String rule) {
-            final Matcher matcher = matched(rule);
-            final int amount = englishToInt(matcher.group("amount"));
-            return new MagicWeakenTargetPicker(amount,amount);
-        }
-    },*/
     CounterOnSelf(
         "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.",
     	MagicTiming.Pump
@@ -1002,8 +923,7 @@ public enum MagicRuleEventAction {
            }
        }
      },
-        
-    BounceSelf(
+     BounceSelf(
         "return sn to its owner's hand.",
         MagicTiming.Removal,
         "Bounce",
