@@ -11,9 +11,9 @@ import magic.model.event.MagicEventAction;
 
 public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
 
-    private final String counterType;
+    private final MagicCounterType counterType;
 
-    public MagicFadeVanishCounterTrigger(final String counterType) {
+    public MagicFadeVanishCounterTrigger(final MagicCounterType counterType) {
         this.counterType = counterType;
     }
 
@@ -25,24 +25,35 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
         boolean sacrifice = false;
-        final int amount = permanent.getCounters(MagicCounterType.Charge);
-        if (counterType == "fade") {
+        final int amount = permanent.getCounters(counterType);
+        if (counterType == MagicCounterType.Fade) {
             sacrifice = amount == 0;
-        } else if (amount == 1){
-            sacrifice = true;
-            game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Charge,-1,true));
+            return sacrifice ?
+            	new MagicEvent(
+            			permanent,
+                		SAC_PERM,
+                		"PN sacrifices SN."
+            		):
+                new MagicEvent(
+                		permanent,
+            			REMOVE_FADE_COUNTER,
+            			"PN removes a fade counter from SN."
+                    );
+        } else if (counterType == MagicCounterType.Time){
+            sacrifice = amount == 1;
+            return sacrifice ?
+            	new MagicEvent(
+            			permanent,
+            			REMOVE_AND_SAC,
+            			"PN removes a time counter from SN. PN sacrifices SN."
+            		):
+            	new MagicEvent(
+            			permanent,
+            			REMOVE_TIME_COUNTER,
+            			"PN removes a time counter from SN."
+            		);
         }
-        return sacrifice ?
-            new MagicEvent(
-                permanent,
-                SAC_PERM,
-                "PN sacrifices SN."
-            ):
-            new MagicEvent(
-                permanent,
-                REMOVE_COUNTER,
-                "PN removes a " + counterType + " counter from SN."
-            );
+        return MagicEvent.NONE;
     }
 
     private static final MagicEventAction SAC_PERM = new MagicEventAction() {
@@ -52,12 +63,37 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
         }
     };
 
-    private static final MagicEventAction REMOVE_COUNTER = new MagicEventAction() {
+    private static final MagicEventAction REMOVE_TIME_COUNTER = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
-                MagicCounterType.Charge,
+                MagicCounterType.Time,
+                -1,
+                true
+            ));
+        }
+    };
+    
+    private static final MagicEventAction REMOVE_AND_SAC = new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.Time,
+                -1,
+                true
+            ));
+            game.doAction(new MagicSacrificeAction(event.getPermanent()));
+        }
+    };
+    
+    private static final MagicEventAction REMOVE_FADE_COUNTER = new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.Fade,
                 -1,
                 true
             ));

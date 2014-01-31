@@ -9,5 +9,5 @@ cost={1}{G}
 pt=0/5
 ability=defender;\
         your upkeep effect Put a spore counter on SN.;\
-        pay {C3}: PN puts a 1/1 green Saproling creature token onto the battlefield.
+        pay Remove three spore counters from SN: PN puts a 1/1 green Saproling creature token onto the battlefield.
 timing=main

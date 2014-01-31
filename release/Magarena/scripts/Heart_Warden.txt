@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=1/1
-ability=tap add mana {G};pay {2},{S}: PN draws a card.
+ability=tap add mana {G};pay {2},Sacrifice SN: PN draws a card.
 timing=main

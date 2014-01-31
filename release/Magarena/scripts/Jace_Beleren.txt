@@ -6,6 +6,6 @@ rarity=M
 type=Planeswalker
 subtype=Jace
 cost={1}{U}{U}
-ability=enters with counter charge 3
+ability=loyalty 3
 timing=main
 requires_groovy_code

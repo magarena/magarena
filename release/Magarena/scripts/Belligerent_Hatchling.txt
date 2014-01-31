@@ -6,7 +6,7 @@ rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{R/W}
-ability=first strike;enters with -1/-1 4
+ability=first strike;enters with counter -1/-1 4
 pt=6/6
 timing=main
 requires_groovy_code

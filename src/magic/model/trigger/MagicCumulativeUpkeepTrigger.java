@@ -33,10 +33,10 @@ public class MagicCumulativeUpkeepTrigger extends MagicAtUpkeepTrigger {
         if (permanent.isController(upkeepPlayer)) {
             game.doAction(new MagicChangeCountersAction(
                     permanent,
-                    MagicCounterType.Charge,
+                    MagicCounterType.Age,
                     1,
                     true));
-            final int amount = permanent.getCounters(MagicCounterType.Charge);
+            final int amount = permanent.getCounters(MagicCounterType.Age);
             final StringBuilder totalCost = new StringBuilder();
             for (int i=0;i<amount;i++) {
                 totalCost.append(manaCost.toString());
