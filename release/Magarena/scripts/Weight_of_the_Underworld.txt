@@ -1,0 +1,11 @@
+name=Weight of the Underworld
+url=http://magiccards.info/bng/en/86.html
+image=http://mtgimage.com/card/weight%20of%20the%20underworld.jpg
+value=1.833
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{B}
+enchant=weaken,neg creature
+given_pt=-3/-2
+timing=aura

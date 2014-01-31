@@ -1,0 +1,11 @@
+name=Deepwater Hypnotist
+url=http://magiccards.info/bng/en/35.html
+image=http://mtgimage.com/card/deepwater%20hypnotist.jpg
+value=3.625
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=2/1
+ability=untapped effect Target creature an opponent controls gets -3/-0 until end of turn.
+timing=main

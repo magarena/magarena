@@ -6,4 +6,4 @@ rarity=C
 type=Sorcery
 cost={R}
 effect=Target creature gains double strike until end of turn.
-timing=block
+timing=fmain

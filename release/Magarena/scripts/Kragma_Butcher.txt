@@ -1,0 +1,11 @@
+name=Kragma Butcher
+url=http://magiccards.info/bng/en/100.html
+image=http://mtgimage.com/card/kragma%20butcher.jpg
+value=3.864
+rarity=C
+type=Creature
+subtype=Minotaur,Warrior
+cost={2}{R}
+pt=2/3
+ability=untapped effect SN gets +2/+0 until end of turn.
+timing=main

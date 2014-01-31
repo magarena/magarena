@@ -1,0 +1,9 @@
+name=Excoriate
+url=http://magiccards.info/bng/en/10.html
+image=http://mtgimage.com/card/excoriate.jpg
+value=2.731
+rarity=C
+type=Sorcery
+cost={3}{W}
+effect=Exile target tapped creature.
+timing=main

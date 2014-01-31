@@ -1,0 +1,11 @@
+name=Claim of Erebos
+url=http://magiccards.info/bng/en/64.html
+image=http://mtgimage.com/card/claim%20of%20erebos.jpg
+value=3.25
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+enchant=pump,pos creature
+given_ability=pay {1}{B},{T}:Target player loses 2 life.
+timing=aura

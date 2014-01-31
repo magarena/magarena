@@ -1,0 +1,11 @@
+name=Akroan Skyguard
+url=http://magiccards.info/bng/en/3.html
+image=http://mtgimage.com/card/akroan%20skyguard.jpg
+value=3.769
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=1/1
+ability=flying;heroic effect Put a +1/+1 counter on SN.
+timing=main

@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature\$ gets +2/+ until end of turn. Regenerate it. PN loses 2 life."
+                "Target creature\$ gets +2/+0 until end of turn. Regenerate it. PN loses 2 life."
             );
         }
         @Override

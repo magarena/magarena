@@ -1,0 +1,9 @@
+name=Mortal's Ardor
+url=http://magiccards.info/bng/en/20.html
+image=http://mtgimage.com/card/mortal's%20ardor.jpg
+value=2.85
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature gets +1/+1 and gains lifelink until end of turn.
+timing=pumpFlash
