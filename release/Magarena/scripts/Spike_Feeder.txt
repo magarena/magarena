@@ -7,5 +7,5 @@ type=Creature
 subtype=Spike
 cost={1}{G}{G}
 pt=0/0
-ability=enters with counter +1/+1 2;pay {2},{+1/+1}:Put a +1/+1 counter on target creature.;pay {+1/+1}:PN gains 2 life.
+ability=enters with counter +1/+1 2;pay {2},Remove a +1/+1 counter from SN:Put a +1/+1 counter on target creature.;pay Remove a +1/+1 counter from SN:PN gains 2 life.
 timing=main
