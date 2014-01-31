@@ -1273,18 +1273,6 @@ public enum MagicRuleEventAction {
         return matcher;
     }
     
-    /*public static MagicCounterType englishToCounter(String counter) {
-        switch (counter) {
-            case "+1/+1": return MagicCounterType.PlusOne;
-            case "-1/-1": return MagicCounterType.MinusOne;
-            case "charge": 
-            case "strife":
-            case "spore":
-                return MagicCounterType.Charge;
-            default: throw new RuntimeException("Unknown type of counter: " + counter);
-        }
-    }*/
-
     public static int englishToInt(String num) {
         switch (num) {
             case "a": return 1;
