@@ -1,0 +1,11 @@
+name=Griffin Dreamfinder
+url=http://magiccards.info/bng/en/16.html
+image=http://mtgimage.com/card/griffin%20dreamfinder.jpg
+value=2.929
+rarity=C
+type=Creature
+subtype=Griffin
+cost={3}{W}{W}
+pt=1/4
+ability=flying;enters effect return target enchantment card from your graveyard to your hand.
+timing=main

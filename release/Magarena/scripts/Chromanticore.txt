@@ -1,0 +1,13 @@
+name=Chromanticore
+url=http://magiccards.info/bng/en/144.html
+image=http://mtgimage.com/card/chromanticore.jpg
+value=3.556
+rarity=M
+type=Enchantment,Creature
+subtype=Manticore
+cost={W}{U}{B}{R}{G}
+pt=4/4
+ability=bestow {2}{W}{U}{B}{R}{G};flying;first strike;vigilance;trample;lifelink
+given_pt=+4/+4
+given_ability=flying;first strike;vigilance;trample;lifelink
+timing=main

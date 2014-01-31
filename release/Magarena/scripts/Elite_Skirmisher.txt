@@ -1,0 +1,11 @@
+name=Elite Skirmisher
+url=http://magiccards.info/bng/en/8.html
+image=http://mtgimage.com/card/elite%20skirmisher.jpg
+value=3.2
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=3/1
+ability=heroic effect PN may Tap target creature.
+timing=main

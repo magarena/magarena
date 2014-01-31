@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+# read from stdin lines in the following format:
+# # <player0 name> <player1 name> <winner>
+# # where <winner> is 0 if player0 wins and 1 if player1 wins
+
 require 'whole_history_rating'
 
 # w = 0 for static ratings aka bayeselo
@@ -12,7 +16,7 @@ ARGF.each do |line|
     winner = 
         if (tokens[2] == "0") 
             "B" 
-        else 
+        else (tokens[2] == "1") 
             "W"
         end
     @whr.create_game(tokens[0], tokens[1], winner, 0, 0)

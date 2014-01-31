@@ -1,0 +1,9 @@
+name=Rise to the Challenge
+url=http://magiccards.info/bng/en/107.html
+image=http://mtgimage.com/card/rise%20to%20the%20challenge.jpg
+value=2.833
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Target creature gets +2/+0 and gains first strike until end of turn.
+timing=pumpFlash

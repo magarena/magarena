@@ -1,0 +1,13 @@
+name=Herald of Torment
+url=http://magiccards.info/bng/en/75.html
+image=http://mtgimage.com/card/herald%20of%20torment.jpg
+value=3.846
+rarity=R
+type=Enchantment,Creature
+subtype=Demon
+cost={1}{B}{B}
+pt=3/3
+ability=bestow {3}{B}{B};flying;your upkeep effect PN loses 1 life.
+given_pt=+3/+3
+given_ability=flying
+timing=main

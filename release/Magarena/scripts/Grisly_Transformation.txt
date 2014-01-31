@@ -1,0 +1,12 @@
+name=Grisly Transformation
+url=http://magiccards.info/bng/en/74.html
+image=http://mtgimage.com/card/grisly%20transformation.jpg
+value=2.75
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+enchant=pump,pos creature
+ability=enters effect PN draws a card.
+given_ability=intimidate
+timing=aura

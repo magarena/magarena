@@ -1,0 +1,12 @@
+name=Nyxborn Rollicker
+url=http://magiccards.info/bng/en/102.html
+image=http://mtgimage.com/card/nyxborn%20rollicker.jpg
+value=3.143
+rarity=C
+type=Enchantment,Creature
+subtype=Satyr
+cost={R}
+pt=1/1
+ability=bestow {1}{R}
+given_pt=+1/+1
+timing=main

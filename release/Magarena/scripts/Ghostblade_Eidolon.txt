@@ -1,0 +1,13 @@
+name=Ghostblade Eidolon
+url=http://magiccards.info/bng/en/12.html
+image=http://mtgimage.com/card/ghostblade%20eidolon.jpg
+value=3.375
+rarity=U
+type=Enchantment,Creature
+subtype=Spirit
+cost={2}{W}
+pt=1/1
+ability=bestow {5}{W};double strike
+given_pt=+1/+1
+given_ability=double strike
+timing=main
