@@ -9,3 +9,4 @@ cost={1}{U}
 ability=enters effect PN draws a card
 given_ability=flying;can't block creatures without flying
 timing=aura
+enchant=flying,creature
