@@ -1,5 +1,5 @@
 name=Temple of Plenty
-url=http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=378537
+url=http://magiccards.info/bng/en/165.html
 image=http://mtgimage.com/card/temple%20of%20plenty.jpg
 value=3.542
 rarity=R
