@@ -823,7 +823,7 @@ public enum MagicRuleEventAction {
             return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
         }
     },
-    GrowSelf(
+/*    GrowSelf(
         "put (?<amount>[a-z]+) \\+1/\\+1 counter(s)? on sn.", 
         MagicTiming.Pump, 
         "Pump"
@@ -901,16 +901,15 @@ public enum MagicRuleEventAction {
             final int amount = englishToInt(matcher.group("amount"));
             return new MagicWeakenTargetPicker(amount,amount);
         }
-    },
-    ChargeSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.", 
-        MagicTiming.Main, 
-        "Charge"
+    },*/
+    CounterOnSelf(
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.",
+    	MagicTiming.Pump
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
             final int amount = englishToInt(matcher.group("amount"));
-            final MagicCounterType counterType = englishToCounter(matcher.group("type"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -923,7 +922,87 @@ public enum MagicRuleEventAction {
                 }
             };
         }
+        public String getName(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            if (amount>1) {
+         	   final String name = "+Counters";
+         	   return name;
+            } else {
+         	   final String name = "+Counter";
+         	   return name;
+            }
+        }
     },
+    
+    CounterOnChosen(
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (?<choice>[^\\.]*)."
+    ) {
+       public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = englishToInt(matcher.group("amount"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent permanent) {
+                        	game.doAction(new MagicChangeCountersAction(
+                                permanent,
+                                counterType,
+                                amount,
+                                true
+                        	));
+                        }
+                    });
+                }
+            };
+        }
+       public MagicTargetHint getHint(final String rule) {
+           final Matcher matcher = matched(rule);
+           final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+           if (counterType.getName().contains("-") || counterType.getScore()<0) {
+        	   return MagicTargetHint.Negative;
+           } else {
+        	   return MagicTargetHint.Positive;
+           }
+       }
+       public MagicTargetPicker<?> getPicker(final String rule) {
+           final Matcher matcher = matched(rule);
+           final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+           if (counterType.getName().contains("-")) {
+        	   final String[] pt = counterType.getName().split("/");
+        	   return new MagicWeakenTargetPicker(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
+           } else if (counterType.getName().contains("+")) {
+        	   final String[] pt = counterType.getName().split("/");
+        	   return MagicPumpTargetPicker.create();
+           } else {
+        	   return null;
+           }
+       }
+       public MagicTiming getTiming(final String rule) {
+           final Matcher matcher = matched(rule);
+           final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+           if (counterType.getName().contains("-")) {
+        	   final String[] pt = counterType.getName().split("/");
+        	   return MagicTiming.Removal;
+           } else {
+        	   return MagicTiming.Pump;
+           }
+       }
+       public String getName(final String rule) {
+           final Matcher matcher = matched(rule);
+           final int amount = englishToInt(matcher.group("amount"));
+           if (amount>1) {
+        	   final String name = "+Counters";
+        	   return name;
+           } else {
+        	   final String name = "+Counter";
+        	   return name;
+           }
+       }
+     },
+        
     BounceSelf(
         "return sn to its owner's hand.",
         MagicTiming.Removal,
@@ -1274,7 +1353,7 @@ public enum MagicRuleEventAction {
         return matcher;
     }
     
-    public static MagicCounterType englishToCounter(String counter) {
+    /*public static MagicCounterType englishToCounter(String counter) {
         switch (counter) {
             case "+1/+1": return MagicCounterType.PlusOne;
             case "-1/-1": return MagicCounterType.MinusOne;
@@ -1284,7 +1363,7 @@ public enum MagicRuleEventAction {
                 return MagicCounterType.Charge;
             default: throw new RuntimeException("Unknown type of counter: " + counter);
         }
-    }
+    }*/
 
     public static int englishToInt(String num) {
         switch (num) {
