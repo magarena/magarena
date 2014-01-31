@@ -8,5 +8,5 @@ subtype=Treefolk,Shaman
 cost={3}{G}
 pt=4/4
 ability=enters with counter -1/-1 1;\
-        pay {G}, {-1/-1}: Destroy target artifact or enchantment.
+        pay {G}, Remove a -1/-1 counter from SN: Destroy target artifact or enchantment.
 timing=main
