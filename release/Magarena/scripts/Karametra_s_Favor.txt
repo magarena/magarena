@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 enchant=pump,pos creature
-ability=enters effect PN draws a card
+ability=enters effect PN draws a card.
 given_ability=tap add mana any
 timing=aura
