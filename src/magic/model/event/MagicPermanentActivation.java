@@ -151,7 +151,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             || cost.contains("{Q}") 
             || cost.contains("{Once}")
             || cost.contains("Return SN to its owner's hand")
-            || cost.contains(" counters from SN")
+            || cost.contains(" from SN")
         ) == false;
 
         return new MagicPermanentActivation(
@@ -231,7 +231,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicSorceryConditionEvent(source));
             } else if (cost.equals("Return SN to its owner's hand")) {
                 events.add(new MagicBouncePermanentEvent(source,source));
-            } else if (cost.contains(" counters from SN")) {
+            } else if (cost.contains(" from SN")) {
             	final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
             	final int amount = englishToInt(costText[0]);
             	final String counterType = costText[1];
