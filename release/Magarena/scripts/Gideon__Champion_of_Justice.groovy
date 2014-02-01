@@ -48,7 +48,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
             final int amt = event.getPlayer().getOpponent().getNrOfPermanents(MagicType.Creature);
             game.doAction(new MagicChangeCountersAction(
                 event.getPermanent(),
-                MagicCounterType.Charge,
+                MagicCounterType.Loyalty,
                 amt,
                 true
             ));
@@ -67,8 +67,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-
-            final int amt = event.getPermanent().getCounters(MagicCounterType.Charge);
+            final int amt = event.getPermanent().getCounters(MagicCounterType.Loyalty);
             def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 @Override
                 public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
