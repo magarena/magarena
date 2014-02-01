@@ -17,7 +17,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (permanent.getCounters(MagicCounterType.Level) >= 1) {
-                flags.add(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying);
             }
         }
     }

@@ -6,7 +6,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (MagicCondition.HELLBENT.accept(permanent)) {
-                flags.add(MagicAbility.DoubleStrike);
+                permanent.addAbility(MagicAbility.DoubleStrike);
             }
         }
     }

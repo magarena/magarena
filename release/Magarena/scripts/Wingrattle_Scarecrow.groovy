@@ -3,8 +3,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (source.getController().controlsPermanent(MagicTargetFilter.TARGET_BLACK_CREATURE_YOU_CONTROL)) {
-                permanent.addAbility(MagicPersistTrigger.create());
-                flags.add(MagicAbility.Persist);
+                permanent.addAbility(MagicAbility.Persist);
             }
         }
     },
@@ -12,7 +11,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (source.getController().controlsPermanent(MagicTargetFilter.TARGET_BLUE_CREATURE_YOU_CONTROL)) {
-                flags.add(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying);
             }
         }
     }

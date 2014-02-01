@@ -1,8 +1,8 @@
 [
     new MagicStatic(MagicLayer.Ability) {
         @Override
-        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent target, final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.CannotBeTheTarget(source.getOpponent()));
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
+            permanent.addAbility(MagicAbility.CannotBeTheTarget(source.getOpponent()));
         }
         @Override
         public boolean accept(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {

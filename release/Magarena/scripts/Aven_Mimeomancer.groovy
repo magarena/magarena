@@ -21,7 +21,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
         final MagicPermanent source,
         final MagicPermanent permanent,
         final Set<MagicAbility> flags) {
-        flags.add(MagicAbility.Flying);
+        permanent.addAbility(MagicAbility.Flying);
     }
     @Override
     public boolean condition(

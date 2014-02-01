@@ -21,7 +21,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (permanent.getController().getNrOfPermanents(MagicType.Creature) == 1) {
-                flags.add(MagicAbility.Lifelink);
+                permanent.addAbility(MagicAbility.Lifelink);
             }
         }
     }

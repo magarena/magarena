@@ -20,7 +20,7 @@ def event = {
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.AttacksEachTurnIfAble);
+            permanent.addAbility(MagicAbility.AttacksEachTurnIfAble);
         }
     },
     new MagicWhenBlocksTrigger() {

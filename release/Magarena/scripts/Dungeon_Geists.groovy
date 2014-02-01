@@ -6,7 +6,7 @@ def control = {
             final MagicPermanent source,
             final MagicPermanent permanent,
             final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.DoesNotUntap);
+            permanent.addAbility(MagicAbility.DoesNotUntap);
         }
         @Override
         public boolean condition(

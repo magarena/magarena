@@ -34,7 +34,7 @@ def Pump = MagicPermanentActivation.create("{R/W}: SN gets +1/+0 until end of tu
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.Lifelink);  
+            permanent.addAbility(MagicAbility.Lifelink);  
         }
 
         @Override

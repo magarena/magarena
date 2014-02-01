@@ -18,10 +18,10 @@
                 final Set<MagicAbility> flags) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 8) {
-                flags.add(MagicAbility.Trample);
+                permanent.addAbility(MagicAbility.Trample);
             }
             if (level >= 4) {
-                flags.add(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying);
             }
         }
     },

@@ -20,7 +20,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (permanent.getCounters(MagicCounterType.Level) >= 4) {
-                flags.add(MagicAbility.Trample);
+                permanent.addAbility(MagicAbility.Trample);
             }
         }
     }

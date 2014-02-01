@@ -237,6 +237,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return sorted;
     }
 
+    public void addAbility(final MagicAbility ability) {
+        final MagicAbilityList abilityList = new MagicAbilityList();
+        ability.addAbility(abilityList, ability.getName());
+        abilityList.giveAbility(this, cachedAbilityFlags);
+    }
+
     public void addAbility(final MagicActivation<MagicPermanent> act) {
         cachedActivations.add(act);
     }

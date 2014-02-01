@@ -18,10 +18,10 @@
                 final Set<MagicAbility> flags) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 12) {
-                flags.add(MagicAbility.Indestructible);
+                permanent.addAbility(MagicAbility.Indestructible);
             }
             if (level >= 6) {
-                flags.add(MagicAbility.Lifelink);
+                permanent.addAbility(MagicAbility.Lifelink);
             }
         }
     }

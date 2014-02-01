@@ -8,7 +8,7 @@ def PT1 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 def AB1 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        flags.add(MagicAbility.Trample);
+        permanent.addAbility(MagicAbility.Trample);
     }
 };
 def ST1 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
@@ -29,7 +29,7 @@ def PT2 = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 def AB2 = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        flags.add(MagicAbility.Flying);
+        permanent.addAbility(MagicAbility.Flying);
     }
 };
 def ST2 = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {

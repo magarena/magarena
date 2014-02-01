@@ -5,7 +5,7 @@
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.Indestructible);
+            permanent.addAbility(MagicAbility.Indestructible);
         }
     }
 ]

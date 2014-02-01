@@ -20,7 +20,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (permanent.getCounters(MagicCounterType.Level) >= 5) {
-                flags.add(MagicAbility.FirstStrike);
+                permanent.addAbility(MagicAbility.FirstStrike);
             }
         }
     }

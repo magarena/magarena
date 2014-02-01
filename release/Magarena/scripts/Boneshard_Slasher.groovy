@@ -19,7 +19,7 @@
                 final Set<MagicAbility> flags) {
             if (MagicCondition.THRESHOLD_CONDITION.accept(permanent)) {
                 permanent.addAbility(MagicWhenTargetedTrigger.SacWhenTargeted); 
-                flags.add(MagicAbility.SacWhenTargeted);
+                permanent.addAbility(MagicAbility.SacWhenTargeted);
             }
         }
     }

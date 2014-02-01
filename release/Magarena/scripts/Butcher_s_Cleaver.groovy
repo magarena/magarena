@@ -4,7 +4,7 @@
         MagicTargetFilter.TARGET_CREATURE) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            flags.add(MagicAbility.Lifelink);
+            permanent.addAbility(MagicAbility.Lifelink);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

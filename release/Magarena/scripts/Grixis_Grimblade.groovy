@@ -13,7 +13,7 @@
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             final MagicPermanentFilterImpl filter = new MagicOtherPermanentTargetFilter(MagicTargetFilter.TARGET_MULTICOLORED_PERMANENT, source);
             if (source.getController().controlsPermanent(filter)) {
-                flags.add(MagicAbility.Deathtouch);
+                permanent.addAbility(MagicAbility.Deathtouch);
             }
         }
     }

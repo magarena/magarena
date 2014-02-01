@@ -15,10 +15,10 @@
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 4) {
-                flags.add(MagicAbility.Vigilance);
+                permanent.addAbility(MagicAbility.Vigilance);
             }
             if (level >= 1) {
-                flags.add(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying);
             }
         }
     }

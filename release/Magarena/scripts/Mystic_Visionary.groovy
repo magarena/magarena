@@ -6,7 +6,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (MagicCondition.THRESHOLD_CONDITION.accept(permanent)) {
-                flags.add(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying);
             }
         }
     }

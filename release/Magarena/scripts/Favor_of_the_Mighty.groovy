@@ -14,7 +14,7 @@
                 }
             }
             if (permanent.getConvertedCost() == cmc) {
-                flags.add(MagicAbility.ProtectionFromAllColors);
+                permanent.addAbility(MagicAbility.ProtectionFromAllColors);
             }
         }
     }

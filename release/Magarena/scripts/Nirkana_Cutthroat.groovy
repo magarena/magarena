@@ -18,10 +18,10 @@
                 final Set<MagicAbility> flags) {
             final int level=permanent.getCounters(MagicCounterType.Level);
             if (level>=3) {
-                flags.add(MagicAbility.FirstStrike);
+                permanent.addAbility(MagicAbility.FirstStrike);
             }
             if (level>=1) {
-                flags.add(MagicAbility.Deathtouch);
+                permanent.addAbility(MagicAbility.Deathtouch);
             }
         }
     }
