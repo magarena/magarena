@@ -5,6 +5,6 @@ value=3.500
 rarity=R
 type=Creature
 subtype=Hydra
-ability=can't be countered;haste;protection from blue;enters with X +1/+1
+ability=can't be countered;haste;protection from blue;enters with counter +1/+1 X
 cost={X}{G}
 timing=main

@@ -6,6 +6,6 @@ rarity=M
 type=Creature
 subtype=Hydra
 cost={X}{G}{G}
-ability=enters with X +1/+1
+ability=enters with counter +1/+1 X
 timing=main
 requires_groovy_code

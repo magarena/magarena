@@ -51,12 +51,6 @@ public class IconImages {
     public static final ImageIcon ABILITY=loadIcon("ability.png");
     public static final ImageIcon TRIGGER=loadIcon("trigger.png");
     public static final ImageIcon TOKEN=loadIcon("token.png");
-    public static final ImageIcon PLUS=loadIcon("plus.png");
-    public static final ImageIcon MINUS=loadIcon("minus.png");
-    public static final ImageIcon CHARGE=loadIcon("charge.png");
-    public static final ImageIcon FEATHER=loadIcon("feather.gif");
-    public static final ImageIcon GOLDCOUNTER=loadIcon("goldcounter.png");
-    public static final ImageIcon BRIBECOUNTER=loadIcon("bribecounter.png");
     public static final ImageIcon LAND=loadIcon("land.gif");
     public static final ImageIcon LAND2=loadIcon("land2.gif");
     public static final ImageIcon LIFE=loadIcon("life.gif");
@@ -115,6 +109,25 @@ public class IconImages {
     public static final ImageIcon WITHER=loadIcon("wither.png");
     public static final ImageIcon LIFELINK=loadIcon("lifelink.png");
     public static final ImageIcon REACH=loadIcon("reach.png");
+
+    public static final ImageIcon PLUS=loadIcon("plus.png");
+    public static final ImageIcon MINUS=loadIcon("minus.png");
+    public static final ImageIcon CHARGE=loadIcon("charge.png");
+    public static final ImageIcon FEATHER=loadIcon("feather.gif");
+    public static final ImageIcon GOLDCOUNTER=loadIcon("goldcounter.png");
+    public static final ImageIcon BRIBECOUNTER=loadIcon("bribecounter.png");
+    public static final ImageIcon TIMECOUNTER=loadIcon("time-counter.png");
+    public static final ImageIcon FADECOUNTER=loadIcon("fade-counter.png");
+    public static final ImageIcon QUESTCOUNTER=loadIcon("quest-counter.png");
+    public static final ImageIcon LEVELCOUNTER=loadIcon("level-counter.png");
+    public static final ImageIcon HOOFPRINTCOUNTER=loadIcon("hoofprint-counter.png");
+    public static final ImageIcon AGECOUNTER=loadIcon("age-counter.png");
+    public static final ImageIcon ICECOUNTER=loadIcon("ice-counter.png");
+    public static final ImageIcon SPORECOUNTER=loadIcon("spore-counter.png");
+    public static final ImageIcon ARROWHEADCOUNTER=loadIcon("arrowhead-counter.png");
+    public static final ImageIcon LOYALTYCOUNTER=loadIcon("loyalty-counter.png");
+    public static final ImageIcon KICOUNTER=loadIcon("ki-counter.png");
+    public static final ImageIcon DEPLETIONCOUNTER=loadIcon("depletion-counter.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);

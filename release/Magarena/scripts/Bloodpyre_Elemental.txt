@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={4}{R}
 pt=4/1
-ability=pay {S},{Sorcery}:SN deals 4 damage to target creature.
+ability=pay Sacrifice SN,{Sorcery}:SN deals 4 damage to target creature.
 timing=main

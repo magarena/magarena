@@ -7,5 +7,5 @@ type=Creature
 subtype=Spike,Drone
 cost={G}
 pt=0/0
-ability=enters with +1/+1 1;pay {2},{+1/+1}:Put a +1/+1 counter on target creature.
+ability=enters with counter +1/+1 1;pay {2},Remove a +1/+1 counter from SN:Put a +1/+1 counter on target creature.
 timing=main

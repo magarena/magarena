@@ -7,7 +7,7 @@ type=Creature
 subtype=Elf,Warrior
 cost={G}
 pt=1/1
-ability=enters with +1/+1 for each kick {1}{G}
+ability=enters with counter +1/+1 for each kick {1}{G}
 static=player
 timing=fmain
 requires_groovy_code

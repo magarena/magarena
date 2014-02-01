@@ -6,7 +6,7 @@ rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{W/B}
-ability=lifelink;enters with -1/-1 4
+ability=lifelink;enters with counter -1/-1 4
 pt=6/6
 timing=main
 requires_groovy_code

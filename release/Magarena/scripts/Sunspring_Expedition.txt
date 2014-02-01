@@ -7,4 +7,4 @@ type=Enchantment
 cost={W}
 timing=enchantment
 ability=landfall quest;\
-        pay {C3},{S}: PN gains 8 life.
+        pay Remove three quest counters from SN,Sacrifice SN: PN gains 8 life.
