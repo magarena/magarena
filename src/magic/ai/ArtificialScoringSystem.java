@@ -101,7 +101,6 @@ public class ArtificialScoringSystem {
     }
 
     public static int getVariablePermanentScore(final MagicPermanent permanent) {
-       // int score=permanent.getCounters(MagicCounterType.Charge)*30;
     	int score = getAllCountersScore(permanent)*30;
         if (!permanent.canTap()) {
             score+=getTappedScore(permanent);
