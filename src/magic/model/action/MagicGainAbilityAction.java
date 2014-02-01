@@ -17,11 +17,19 @@ public class MagicGainAbilityAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicAbilityList abilityList;
     private final boolean duration;
+    
+    public MagicGainAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList, final boolean duration) {
+        this.permanent=permanent;
+        this.abilityList=abilityList;
+        this.duration=duration;
+    }
 
     public MagicGainAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities, final boolean duration) {
-        this.permanent=permanent;
-        this.abilityList=MagicAbility.getAbilityList(abilities);
-        this.duration=duration;
+        this(permanent,MagicAbility.getAbilityList(abilities), duration);
+    }
+    
+    public MagicGainAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList) {
+        this(permanent,abilityList,MagicStatic.UntilEOT);
     }
 
     public MagicGainAbilityAction(final MagicPermanent permanent,final List<MagicAbility> abilities) {
