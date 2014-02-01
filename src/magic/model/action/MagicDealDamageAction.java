@@ -106,7 +106,7 @@ public class MagicDealDamageAction extends MagicAction {
 
         if (target.isPlaneswalker()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
-            game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.Charge,-dealtAmount,true));
+            game.doAction(new MagicChangeCountersAction(targetPermanent,MagicCounterType.Loyalty,-dealtAmount,true));
         }
 
         if (target.isCreature()) {
