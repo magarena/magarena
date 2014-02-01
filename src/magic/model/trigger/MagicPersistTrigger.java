@@ -21,7 +21,7 @@ public class MagicPersistTrigger extends MagicWhenDiesTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
         return permanent.getCounters(MagicCounterType.MinusOne) == 0 ?
             new MagicEvent(
                 permanent,

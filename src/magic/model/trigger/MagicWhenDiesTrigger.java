@@ -14,12 +14,12 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicRemoveCardAction;
 
-public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public abstract class MagicWhenDiesTrigger extends MagicWhenOtherDiesTrigger {
     public static final MagicWhenDiesTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenDiesTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicMoveCardAction data) {
-                return sourceEvent.getEvent(permanent);
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent source, final MagicPermanent died) {
+                return sourceEvent.getEvent(source);
             }
         };
     }
@@ -31,7 +31,7 @@ public abstract class MagicWhenDiesTrigger extends MagicWhenPutIntoGraveyardTrig
     public MagicWhenDiesTrigger() {}
     
     @Override
-    public boolean accept(final MagicPermanent permanent, final MagicMoveCardAction act) {
-        return super.accept(permanent,act) && act.fromLocation == MagicLocationType.Play;
+    public boolean accept(final MagicPermanent source, final MagicPermanent died) {
+        return source == died;
     }
 }

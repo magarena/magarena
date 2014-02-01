@@ -10,7 +10,7 @@ def CARD_NAMED_WELKIN_HAWK = new MagicCardFilterImpl() {
 [
     new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction data) {      
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {      
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(),

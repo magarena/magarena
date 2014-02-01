@@ -22,7 +22,7 @@ def event = {
 [
     new MagicWhenDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction data) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return event(permanent);
         }
     },

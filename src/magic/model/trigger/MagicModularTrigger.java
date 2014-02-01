@@ -23,7 +23,7 @@ public class MagicModularTrigger extends MagicWhenDiesTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicMoveCardAction act) {
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
         final int amount = permanent.getCounters(MagicCounterType.PlusOne);
         return new MagicEvent(
             permanent,
