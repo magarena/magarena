@@ -20,7 +20,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
+            game.doAction(new MagicChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.Study,
+                1,
+                true
+            ));
         }
     },
     new MagicPermanentActivation(
@@ -31,7 +36,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
-                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,3),
+                new MagicRemoveCounterEvent(source,MagicCounterType.Study,3),
                 new MagicSacrificeEvent(source)
             ];
         }

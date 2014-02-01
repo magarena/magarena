@@ -2,7 +2,7 @@
     new MagicStatic(MagicLayer.SetPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int amount = permanent.getCounters(MagicCounterType.Charge);
+            final int amount = permanent.getCounters(MagicCounterType.Time);
             pt.set(amount,amount);
         }
     },
@@ -12,7 +12,7 @@
             final int amount = game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_ISLAND_YOU_CONTROL).size();
             game.doAction(new MagicChangeCountersAction(
                 permanent,
-                MagicCounterType.Charge,
+                MagicCounterType.Time,
                 amount,
                 true
             ));

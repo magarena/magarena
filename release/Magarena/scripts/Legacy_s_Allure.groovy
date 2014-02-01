@@ -14,7 +14,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
+                game.doAction(new MagicChangeCountersAction(
+                    event.getPermanent(),
+                    MagicCounterType.Treasure,
+                    1,
+                    true
+                ));
             }
         }
     },
@@ -33,7 +38,7 @@
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicTargetFilter.MagicPowerTargetFilter(
                     MagicTargetFilter.TARGET_CREATURE,
-                    source.getCounters(MagicCounterType.Charge)
+                    source.getCounters(MagicCounterType.Treasure)
                 ),
                 MagicTargetHint.Negative,
                 "target creature to gain control of"

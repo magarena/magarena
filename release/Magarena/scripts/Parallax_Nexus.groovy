@@ -22,7 +22,7 @@ def action = {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicRemoveCounterEvent(source,MagicCounterType.Charge,1)
+                new MagicRemoveCounterEvent(source,MagicCounterType.Fade,1)
             ];
         }
 

@@ -6,7 +6,7 @@
                 final MagicPlayer player,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-            final int amount = permanent.getCounters(MagicCounterType.Charge);
+            final int amount = permanent.getCounters(MagicCounterType.Fade);
             pt.set(amount,amount);
         }
     }

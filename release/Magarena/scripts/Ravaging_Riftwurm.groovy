@@ -8,7 +8,7 @@
             if (payedCost.isKicked()) {
                 game.doAction(new MagicChangeCountersAction(
                     permanent,
-                    MagicCounterType.Charge,
+                    MagicCounterType.Time,
                     3,
                     true
                 ));

@@ -6,7 +6,7 @@
                 final MagicPermanent permanent,
                 final MagicPlayer upkeepPlayer) {
             return (permanent.isController(upkeepPlayer) &&
-                    permanent.getCounters(MagicCounterType.Charge) == 0) ?
+                    permanent.getCounters(MagicCounterType.Arrowhead) == 0) ?
                 new MagicEvent(
                     permanent,
                     this,

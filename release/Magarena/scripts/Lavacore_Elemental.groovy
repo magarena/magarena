@@ -16,7 +16,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
+            game.doAction(new MagicChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.Time,
+                1,
+                true
+            ));
         }
     }
 ]

@@ -8,7 +8,7 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
-            final int amount = source.getCounters(MagicCounterType.Charge);
+            final int amount = source.getCounters(MagicCounterType.Strife);
             pt.add(amount,0);
         }
         @Override
