@@ -3,6 +3,7 @@ package magic.model.action;
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicAbilityList;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
@@ -14,12 +15,12 @@ import java.util.List;
 public class MagicGainAbilityAction extends MagicAction {
 
     private final MagicPermanent permanent;
-    private final Set<MagicAbility> abilities;
+    private final MagicAbilityList abilityList;
     private final boolean duration;
 
     public MagicGainAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities, final boolean duration) {
         this.permanent=permanent;
-        this.abilities=abilities;
+        this.abilityList=MagicAbility.getAbilityList(abilities);
         this.duration=duration;
     }
 
@@ -41,15 +42,13 @@ public class MagicGainAbilityAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(
-                MagicLayer.Ability,
-                duration) {
+        game.doAction(new MagicAddStaticAction(permanent, new MagicStatic(MagicLayer.Ability, duration) {
             @Override
             public void modAbilityFlags(
                     final MagicPermanent source,
                     final MagicPermanent permanent,
                     final Set<MagicAbility> flags) {
-                flags.addAll(abilities);
+                abilityList.giveAbility(permanent, flags);
             }
         }));
     }
@@ -60,6 +59,6 @@ public class MagicGainAbilityAction extends MagicAction {
 
     @Override
     public String toString() {
-        return super.toString() + " (" + permanent + "," + abilities + ')';
+        return super.toString() + " (" + permanent + "," + abilityList + ')';
     }
 }

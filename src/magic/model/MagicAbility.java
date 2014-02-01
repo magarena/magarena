@@ -884,6 +884,14 @@ public enum MagicAbility {
         }
         return abilityList;
     }
+    
+    public static MagicAbilityList getAbilityList(final Set<MagicAbility> abilities) {
+        final MagicAbilityList abilityList = new MagicAbilityList();
+        for (final MagicAbility ability : abilities) {
+            ability.addAbility(abilityList, ability.getName());
+        }
+        return abilityList;
+    }
 
     private static final Pattern SUB_ABILITY_LIST = Pattern.compile("\"([^\"]*)\"|([A-Za-z][^,]*)");
     
