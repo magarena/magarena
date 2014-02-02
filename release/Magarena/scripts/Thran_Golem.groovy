@@ -11,9 +11,9 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (permanent.isEnchanted()) {
-                permanent.addAbility(MagicAbility.Flying);
-                permanent.addAbility(MagicAbility.FirstStrike);
-                permanent.addAbility(MagicAbility.Trample);
+                permanent.addAbility(MagicAbility.Flying, flags);
+                permanent.addAbility(MagicAbility.FirstStrike, flags);
+                permanent.addAbility(MagicAbility.Trample, flags);
             }
         }
     }

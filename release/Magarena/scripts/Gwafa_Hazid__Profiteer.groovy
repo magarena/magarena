@@ -8,7 +8,7 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.CannotAttackOrBlock);
+            permanent.addAbility(MagicAbility.CannotAttackOrBlock, flags);
         }
         @Override
         public boolean condition(

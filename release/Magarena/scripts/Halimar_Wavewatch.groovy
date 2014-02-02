@@ -20,7 +20,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (permanent.getCounters(MagicCounterType.Level) >= 5) {
-                permanent.addAbility(MagicAbility.Islandwalk);
+                permanent.addAbility(MagicAbility.Islandwalk, flags);
             }
         }
     }

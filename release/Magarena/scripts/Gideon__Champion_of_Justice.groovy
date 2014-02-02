@@ -2,7 +2,7 @@
 def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Indestructible);
+        permanent.addAbility(MagicAbility.Indestructible, flags);
     }
 };
 

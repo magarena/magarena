@@ -10,7 +10,7 @@ def LEAST_ONE_ARTIFACT_IN_GRAVEYARD = new MagicCondition() {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (LEAST_ONE_ARTIFACT_IN_GRAVEYARD.accept(permanent)) {
-                permanent.addAbility(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying, flags);
             }
         }
     }

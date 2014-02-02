@@ -4,7 +4,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
             final MagicPermanent source,
             final MagicPermanent permanent,
             final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Defender);
+        permanent.addAbility(MagicAbility.Defender, flags);
     }
     @Override
     public boolean condition(

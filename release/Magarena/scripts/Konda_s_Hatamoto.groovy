@@ -4,7 +4,7 @@
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             final MagicGame game = source.getGame();
             if (game.filterPermanents(permanent.getController(), MagicTargetFilter.TARGET_LEGENDARY_SAMURAI_YOU_CONTROL).size() > 0) {
-                permanent.addAbility(MagicAbility.Vigilance);
+                permanent.addAbility(MagicAbility.Vigilance, flags);
             }
         }
     },

@@ -36,7 +36,7 @@
                 final Set<MagicAbility> flags) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 2) {
-                permanent.addAbility(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying, flags);
             }
         }
     }

@@ -18,7 +18,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (MagicCondition.THRESHOLD_CONDITION.accept(permanent)) {
-                permanent.addAbility(MagicAbility.ProtectionFromBlack);
+                permanent.addAbility(MagicAbility.ProtectionFromBlack, flags);
             }
         }
     }

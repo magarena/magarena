@@ -20,7 +20,7 @@
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
             if (permanent.getCounters(MagicCounterType.Level) >= 1) {
-                permanent.addAbility(MagicAbility.Vigilance);
+                permanent.addAbility(MagicAbility.Vigilance, flags);
             }
         }
     }

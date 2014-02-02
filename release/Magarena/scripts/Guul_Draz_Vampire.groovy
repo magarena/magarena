@@ -11,7 +11,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (permanent.getOpponent().getLife() <= 10) {
-                permanent.addAbility(MagicAbility.Intimidate);
+                permanent.addAbility(MagicAbility.Intimidate, flags);
             }
         }
     }

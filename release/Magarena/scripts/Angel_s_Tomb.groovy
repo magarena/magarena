@@ -19,7 +19,7 @@ def AB = new MagicStatic(
             final MagicPermanent source,
             final MagicPermanent permanent,
             final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Flying);
+        permanent.addAbility(MagicAbility.Flying, flags);
     }
 };
 def ST = new MagicStatic(

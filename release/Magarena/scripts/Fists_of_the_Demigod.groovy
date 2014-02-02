@@ -12,7 +12,7 @@
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.FirstStrike);
+            permanent.addAbility(MagicAbility.FirstStrike, flags);
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
@@ -32,7 +32,7 @@
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.Wither);  
+            permanent.addAbility(MagicAbility.Wither, flags);  
         }
 
         @Override

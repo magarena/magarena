@@ -51,8 +51,8 @@ def ST3 = new MagicStatic(MagicLayer.Type) {
 def AB3 = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Flying);
-        permanent.addAbility(MagicAbility.FirstStrike);
+        permanent.addAbility(MagicAbility.Flying, flags);
+        permanent.addAbility(MagicAbility.FirstStrike, flags);
     }
 };
 

@@ -12,7 +12,7 @@
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.Haste);
+            permanent.addAbility(MagicAbility.Haste, flags);
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
@@ -32,7 +32,7 @@
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.Shroud);  
+            permanent.addAbility(MagicAbility.Shroud, flags);  
         }
 
         @Override

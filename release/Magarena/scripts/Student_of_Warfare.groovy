@@ -21,9 +21,9 @@
                 final Set<MagicAbility> flags) {
             final int level=permanent.getCounters(MagicCounterType.Level);
             if (level>=7) {
-                permanent.addAbility(MagicAbility.DoubleStrike);
+                permanent.addAbility(MagicAbility.DoubleStrike, flags);
             } else if (level>=2) {
-                permanent.addAbility(MagicAbility.FirstStrike);
+                permanent.addAbility(MagicAbility.FirstStrike, flags);
             }
         }
     }

@@ -12,7 +12,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (source.getController().controlsPermanent(MagicSubType.Bird)) {
-                permanent.addAbility(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying, flags);
             }
         }
     }

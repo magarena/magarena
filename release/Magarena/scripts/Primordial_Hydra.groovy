@@ -7,7 +7,7 @@
                 final Set<MagicAbility> flags) {
             final int amount = permanent.getCounters(MagicCounterType.PlusOne);
             if (amount >= 10) {
-                permanent.addAbility(MagicAbility.Trample);
+                permanent.addAbility(MagicAbility.Trample, flags);
             }
         }
     },

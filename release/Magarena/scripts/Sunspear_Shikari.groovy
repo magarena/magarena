@@ -3,8 +3,8 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (permanent.isEquipped()) {
-                permanent.addAbility(MagicAbility.FirstStrike);
-                permanent.addAbility(MagicAbility.Lifelink);
+                permanent.addAbility(MagicAbility.FirstStrike, flags);
+                permanent.addAbility(MagicAbility.Lifelink, flags);
             }
         }
     }

@@ -237,10 +237,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return sorted;
     }
 
-    public void addAbility(final MagicAbility ability) {
+    public void addAbility(final MagicAbility ability, final Set<MagicAbility> flags) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         ability.addAbility(abilityList, ability.getName());
-        abilityList.giveAbility(this, cachedAbilityFlags);
+        abilityList.giveAbility(this, flags);
     }
 
     public void addAbility(final MagicActivation<MagicPermanent> act) {
@@ -1204,6 +1204,17 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
         @Override
         public void addAura(final MagicPermanent equipment) {
+            //do nothing
+        }
+        @Override
+        public void addAbility(final MagicActivation<MagicPermanent> act) {
+        }
+        @Override
+        public void addAbility(final MagicTrigger<?> trig) {
+            //do nothing
+        }
+        @Override
+        public void addAbility(final MagicManaActivation act) {
             //do nothing
         }
     };

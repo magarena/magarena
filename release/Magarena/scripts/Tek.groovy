@@ -21,7 +21,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (source.getController().controlsPermanent(MagicSubType.Island)) {
-                permanent.addAbility(MagicAbility.Flying);
+                permanent.addAbility(MagicAbility.Flying, flags);
             }
         }
     },
@@ -30,7 +30,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (source.getController().controlsPermanent(MagicSubType.Mountain)) {
-                permanent.addAbility(MagicAbility.FirstStrike);
+                permanent.addAbility(MagicAbility.FirstStrike, flags);
             }
         }
     },
@@ -39,7 +39,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             if (source.getController().controlsPermanent(MagicSubType.Forest)) {
-                permanent.addAbility(MagicAbility.Trample);
+                permanent.addAbility(MagicAbility.Trample, flags);
             }
         }
     }

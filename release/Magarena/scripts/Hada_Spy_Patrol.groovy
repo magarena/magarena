@@ -21,10 +21,10 @@
                 final Set<MagicAbility> flags) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 3) {
-                permanent.addAbility(MagicAbility.Shroud);
+                permanent.addAbility(MagicAbility.Shroud, flags);
             }
             if (level >= 1) {
-                permanent.addAbility(MagicAbility.Unblockable);
+                permanent.addAbility(MagicAbility.Unblockable, flags);
             }
         }
     }

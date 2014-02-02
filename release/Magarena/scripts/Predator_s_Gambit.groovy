@@ -7,7 +7,7 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.Intimidate);
+            permanent.addAbility(MagicAbility.Intimidate, flags);
         }
         @Override
         public boolean condition(

@@ -13,7 +13,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
             final MagicPermanent source,
             final MagicPermanent permanent,
             final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Reach);
+        permanent.addAbility(MagicAbility.Reach, flags);
     }
 };
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {

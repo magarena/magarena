@@ -5,7 +5,7 @@
             final MagicPermanent source,
             final MagicPermanent permanent,
             final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.Trample);
+            permanent.addAbility(MagicAbility.Trample, flags);
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {

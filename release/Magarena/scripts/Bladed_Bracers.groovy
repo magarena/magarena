@@ -7,7 +7,7 @@
                 final MagicPermanent source,
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.Vigilance);
+            permanent.addAbility(MagicAbility.Vigilance, flags);
         }
         @Override
         public boolean condition(
