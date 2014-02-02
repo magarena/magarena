@@ -507,7 +507,7 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -515,7 +515,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),power,toughness));
-                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),ability));
+                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),abilityList));
                 }
             };
         }
@@ -697,11 +697,11 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),ability));
+                    game.doAction(new MagicGainAbilityAction(event.getPermanent(),abilityList));
                 }
             };
         }
@@ -796,7 +796,7 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final String rule) {
             final Matcher matcher = matched(rule);
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
@@ -806,7 +806,7 @@ public enum MagicRuleEventAction {
                         filter
                     );
                     for (final MagicPermanent creature : targets) {
-                        game.doAction(new MagicGainAbilityAction(creature,ability));
+                        game.doAction(new MagicGainAbilityAction(creature,abilityList));
                     }
                 }
             };
