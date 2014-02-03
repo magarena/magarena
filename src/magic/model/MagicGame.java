@@ -1148,8 +1148,12 @@ public class MagicGame {
             addStatic(permanent, mstatic);
         }
     }
+    
+    public Collection<MagicPermanentStatic> removeSelfStatics(final MagicPermanent permanent) {
+        return statics.remove(permanent, permanent.getStatics());
+    }
 
-    public Collection<MagicPermanentStatic> removeStatics(final MagicPermanent permanent) {
+    public Collection<MagicPermanentStatic> removeAllStatics(final MagicPermanent permanent) {
         return statics.remove(permanent);
     }
 

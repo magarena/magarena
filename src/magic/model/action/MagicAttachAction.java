@@ -82,7 +82,7 @@ public class MagicAttachAction extends MagicAction {
             attach(creature);
 
             //update the timestamp of the attachable's effects
-            oldStatics = game.removeStatics(attachable);
+            oldStatics = game.removeSelfStatics(attachable);
             game.addStatics(attachable);
 
             score+=creature.getScore();
@@ -102,7 +102,7 @@ public class MagicAttachAction extends MagicAction {
 
         if (validCreature) {
             detach(creature);
-            game.removeStatics(attachable);
+            game.removeSelfStatics(attachable);
             game.addStatics(oldStatics);
         }
 
