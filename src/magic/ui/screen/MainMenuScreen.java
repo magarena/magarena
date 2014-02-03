@@ -3,7 +3,7 @@ package magic.ui.screen;
 import java.awt.event.ActionEvent;
 
 import magic.ui.MagicFrame;
-import magic.ui.widget.MenuPanel;
+import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;

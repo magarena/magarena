@@ -10,6 +10,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+
 import magic.data.DeckUtils;
 import magic.model.MagicDeck;
 import magic.ui.ExplorerPanel;
@@ -18,10 +19,10 @@ import magic.ui.ScreenOptionsOverlay;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagScreenOptionsMenu;
 import magic.ui.interfaces.IMagStatusBar;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.MenuPanel;
 import magic.ui.viewer.DeckDescriptionPreview;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.MenuButton;
-import magic.ui.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen

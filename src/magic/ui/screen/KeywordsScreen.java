@@ -4,10 +4,10 @@ import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagStatusBar;
+import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.MenuButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

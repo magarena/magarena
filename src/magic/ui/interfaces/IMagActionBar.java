@@ -2,7 +2,7 @@ package magic.ui.interfaces;
 
 import java.util.List;
 
-import magic.ui.widget.MenuButton;
+import magic.ui.screen.widget.MenuButton;
 
 public interface IMagActionBar {
     MenuButton getLeftAction();

@@ -17,7 +17,7 @@ import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.choice.MulliganChoicePanel;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagStatusBar;
-import magic.ui.widget.MenuButton;
+import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
 public class MulliganScreen

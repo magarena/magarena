@@ -10,7 +10,6 @@ import javax.swing.JPanel;
 
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.MenuButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

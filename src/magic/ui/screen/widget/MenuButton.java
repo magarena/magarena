@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.screen.widget;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -8,6 +8,8 @@ import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
+
+import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class MenuButton extends JButton {

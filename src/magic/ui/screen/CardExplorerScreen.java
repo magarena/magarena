@@ -11,8 +11,8 @@ import magic.ui.ScreenOptionsOverlay;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagScreenOptionsMenu;
 import magic.ui.interfaces.IMagStatusBar;
-import magic.ui.widget.MenuButton;
-import magic.ui.widget.MenuPanel;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen

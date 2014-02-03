@@ -6,13 +6,14 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagStatusBar;
-import magic.ui.widget.MenuButton;
+import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
 public class CardZoneScreen

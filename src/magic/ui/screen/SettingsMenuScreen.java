@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 import magic.data.URLUtils;
 import magic.ui.DownloadImagesDialog;
-import magic.ui.widget.MenuPanel;
+import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

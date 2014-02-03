@@ -8,9 +8,9 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 import magic.data.URLUtils;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.MenuButton;
-import magic.ui.widget.MenuPanel;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
