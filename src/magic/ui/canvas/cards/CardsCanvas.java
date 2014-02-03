@@ -8,8 +8,6 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import java.awt.image.BufferedImage;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -54,13 +52,6 @@ public class CardsCanvas extends JPanel {
 
 		this.imageHandler = new ImageHandler(null);
 
-		this.addComponentListener(new ComponentAdapter() {
-			@Override
-			public void componentResized(ComponentEvent e) {
-				refreshCardsLayout();
-			}
-		});
-
 	}
 
 	private Runnable getDealCardsRunnable(final List<? extends ICardCanvas> newCards) {
@@ -95,7 +86,6 @@ public class CardsCanvas extends JPanel {
 					clearCardsAnimation();
 				}
 				createListOfCardCanvasObjects(newCards);
-				refreshCardsLayout();
 			}
 			private void clearCardsAnimation() {
 				if (maxCardsVisible > 0) {
@@ -159,17 +149,15 @@ public class CardsCanvas extends JPanel {
 			if (useAnimation) {
 				executor.execute(getDealCardsRunnable(newCards));
 			} else {
-				createListOfCardCanvasObjects(newCards);
-				refreshCardsLayout();
-				maxCardsVisible = cards.size();
-				repaint();
+                createListOfCardCanvasObjects(newCards);
+                maxCardsVisible = cards.size();
+                repaint();
 			}
 		}
 	}
 
 	public void setScale(final double newScale) {
 		this.cardCanvasScale = newScale;
-		refreshCardsLayout();
 		repaint();
 	}
 	public double getScale() {
@@ -186,9 +174,12 @@ public class CardsCanvas extends JPanel {
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		for (int i = 0; i < maxCardsVisible; i++) {
-			final CardCanvas card = cards.get(i);
-			drawCard(g, card);
+		if (this.getWidth() > 0) {
+	        setScaleToFitLayout();
+		    for (int i = 0; i < maxCardsVisible; i++) {
+		        final CardCanvas card = cards.get(i);
+		        drawCard(g, card);
+		    }
 		}
 	}
 
@@ -196,7 +187,6 @@ public class CardsCanvas extends JPanel {
 		final int newWidth = preferredCardSize.width + 1;
 		final int newHeight = (int)(newWidth / aspectRatio);
 		preferredCardSize = new Dimension(newWidth, newHeight);
-		refreshCardsLayout();
 		repaint();
 	}
 
@@ -249,14 +239,11 @@ public class CardsCanvas extends JPanel {
         g.drawString(str,x,y);
     }
 
-    private void refreshCardsLayout() {
-        setScaleToFitLayout();
-	}
-
 	public void setLayoutMode(final LayoutMode layout) {
 		this.layoutMode = layout;
-		refreshCardsLayout();
-		repaint();
+		if (this.getWidth() > 0) {
+            repaint();
+		}
 	}
 	public LayoutMode getLayoutMode() {
 		return this.layoutMode;
