@@ -93,7 +93,7 @@ public class MulliganScreen
      */
     @Override
     public String getScreenCaption() {
-        return "Player Hand";
+        return "Confirm Hand or Take a Mulligan ";
     }
 
     /* (non-Javadoc)
