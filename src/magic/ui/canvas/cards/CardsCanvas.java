@@ -1,13 +1,18 @@
 package magic.ui.canvas.cards;
 
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.RenderingHints;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.image.BufferedImage;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
@@ -26,6 +31,7 @@ public class CardsCanvas extends JPanel {
     private int removeCardDelay = 50; // millseconds
 
 	private List<CardCanvas> cards = new CopyOnWriteArrayList<CardCanvas>();
+	private final HashMap<Integer, Integer> cardTypeCount = new HashMap<Integer, Integer>();
 	public boolean showIndex = true;
 	private volatile boolean useAnimation = true;
 	private volatile int maxCardsVisible = 0;
@@ -35,6 +41,7 @@ public class CardsCanvas extends JPanel {
 	private double cardCanvasScale = 1.0;
 	private LayoutMode layoutMode = LayoutMode.SCALE_TO_FIT;
 	private final double aspectRatio;
+	private boolean stackDuplicateCards = true;
 	private ExecutorService executor = Executors.newFixedThreadPool(1);
 
 	// CTR
@@ -122,9 +129,24 @@ public class CardsCanvas extends JPanel {
 
 	private void createListOfCardCanvasObjects(final List<? extends ICardCanvas> newCards) {
 		cards.clear();
+		cardTypeCount.clear();
 		if (newCards != null) {
+			CardCanvas lastCard = null;
 			for (ICardCanvas cardObject : newCards) {
-				cards.add(new CardCanvas(cardObject));
+				final CardCanvas card = new CardCanvas(cardObject);
+				if (stackDuplicateCards) {
+					final int cardHashCode = card.hashCode();
+					if (lastCard == null || cardHashCode != lastCard.hashCode()) {
+						cards.add(card);
+						cardTypeCount.put(cardHashCode, 1);
+					} else {
+						final int cardCount = cardTypeCount.get(cardHashCode);
+						cardTypeCount.put(cardHashCode, cardCount + 1);
+					}
+					lastCard = card;
+				} else {
+					cards.add(card);
+				}
 			}
 		}
 	}
@@ -132,8 +154,7 @@ public class CardsCanvas extends JPanel {
 	public void refresh(
 			final List<? extends ICardCanvas> newCards,
 			final Dimension preferredCardSize) {
-
-		if (cards != null) {
+		if (newCards != null) {
 			this.preferredCardSize = preferredCardSize;
 			if (useAnimation) {
 				executor.execute(getDealCardsRunnable(newCards));
@@ -194,9 +215,41 @@ public class CardsCanvas extends JPanel {
 
 		g.drawImage(image, X, Y, W, H, null);
 
+        if (stackDuplicateCards) {
+        	drawCardCount(g, X, Y, W, H, card);
+        }
 	}
 
-	private void refreshCardsLayout() {
+	private void drawCardCount(Graphics g, int X, int Y, int W, int H, final CardCanvas card) {
+		final int cardCount = cardTypeCount.get(card.hashCode());
+		if (cardCount > 1) {
+			g.setColor(Color.WHITE);
+			final String text = Integer.toString(cardCount);
+			int h = (int)(H * 0.15);
+			h = h > 8 ? (int)(H * 0.15) : 9;
+			final Font f = new Font("Dialog", Font.BOLD, h);
+			final int w = g.getFontMetrics(f).stringWidth(text);
+			g.setFont(f);
+			drawStringWithOutline(g, text, X + ((W - w) / 2), Y + ((H - h) / 3));
+		}
+	}
+
+    private void drawStringWithOutline(final Graphics g, final String str, int x, int y) {
+        Graphics2D g2d = (Graphics2D)g;
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g.setColor(Color.DARK_GRAY);
+        for (int i = 1; i <= 2; i++) {
+            g.drawString(str,x+i,y);
+            g.drawString(str,x-i,y);
+            g.drawString(str,x,y+i);
+            g.drawString(str,x,y-i);
+		}
+        g.setColor(Color.WHITE);
+        g.drawString(str,x,y);
+    }
+
+    private void refreshCardsLayout() {
         setScaleToFitLayout();
 	}
 
@@ -282,5 +335,9 @@ public class CardsCanvas extends JPanel {
         this.dealCardDelay = dealCardDelay;
         this.removeCardDelay = removeCardDelay;
     }
+
+	public void setStackDuplicateCards(boolean stackDuplicateCards) {
+		this.stackDuplicateCards = stackDuplicateCards;
+	}
 
 }
