@@ -7,9 +7,11 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
 import magic.model.MagicType;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.model.stack.MagicTriggerOnStack;
 
 public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger {
 
@@ -58,7 +60,7 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
                 true
             ));
         } else {
-            game.addEvent(getEvent(permanent));  
+            game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));
         }
     }
 }
