@@ -38,6 +38,7 @@ public class SampleHandScreen
     public SampleHandScreen(final MagicDeck deck) {
         this.deck = deck;
         this.content = new CardsCanvas(cardSize);
+        content.setAnimationDelay(50, 20);
         this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
         this.content.refresh(getHandCards(deck), cardSize);
         setContent(this.content);
@@ -96,7 +97,9 @@ public class SampleHandScreen
         buttons.add(new MenuButton("Deal new hand", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                content.refresh(getHandCards(deck), cardSize);
+                if (!content.isBusy()) {
+                    content.refresh(getHandCards(deck), cardSize);
+                }
             }
         }, "Generate a new sample hand"));
         return buttons;
