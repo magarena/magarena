@@ -8,7 +8,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 
-import magic.ui.screen.widget.MagicScreenCaption;
+import magic.ui.screen.widget.CaptionPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -66,8 +66,8 @@ public class MenuPanel extends TexturedPanel {
         }
     }
 
-    private MagicScreenCaption getMenuTitlePanel() {
-        final MagicScreenCaption p = new MagicScreenCaption(this.title);
+    private CaptionPanel getMenuTitlePanel() {
+        final CaptionPanel p = new CaptionPanel(this.title);
         p.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.GRAY));
         return p;
     }

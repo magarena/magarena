@@ -15,11 +15,11 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class MagActionBar extends TexturedPanel {
+public class ActionBar extends TexturedPanel {
 
     private IMagActionBar actionProvider;
 
-    public MagActionBar(final IMagActionBar provider0) {
+    public ActionBar(final IMagActionBar provider0) {
         actionProvider = provider0;
         setMinimumSize(new Dimension(getPreferredSize().width, 50));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);

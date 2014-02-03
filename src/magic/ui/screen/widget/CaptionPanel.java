@@ -17,13 +17,13 @@ import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class MagicScreenCaption extends JPanel {
+public class CaptionPanel extends JPanel {
 
     private final static ImageIcon wizardIcon = new ImageIcon(IconImages.HEADER_ICON);
 
     private final String screenCaption;
 
-    public MagicScreenCaption(final String screenCaption0) {
+    public CaptionPanel(final String screenCaption0) {
         this.screenCaption = screenCaption0;
         setLayout(new MigLayout("insets 0, gap 4, flowx"));
         setOpaque(false);

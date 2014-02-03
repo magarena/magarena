@@ -15,8 +15,8 @@ import magic.ui.MagicFrame;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagScreenOptionsMenu;
 import magic.ui.interfaces.IMagStatusBar;
-import magic.ui.screen.widget.MagActionBar;
-import magic.ui.screen.widget.MagStatusBar;
+import magic.ui.screen.widget.ActionBar;
+import magic.ui.screen.widget.StatusBar;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -53,13 +53,13 @@ public abstract class AbstractScreen extends JPanel {
 
     private void layoutMagStatusBar() {
         if (hasStatusBar()) {
-            add(new MagStatusBar(this, frame), "w 100%");
+            add(new StatusBar(this, frame), "w 100%");
         }
     }
 
     private void layoutMagActionBar() {
         if (hasActionBar()) {
-            add(new MagActionBar((IMagActionBar)this), "w 100%");
+            add(new ActionBar((IMagActionBar)this), "w 100%");
         }
     }
 

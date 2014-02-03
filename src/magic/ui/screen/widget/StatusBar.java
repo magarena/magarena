@@ -19,13 +19,13 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
-public class MagStatusBar extends TexturedPanel {
+public class StatusBar extends TexturedPanel {
 
     private final static ImageIcon optionsIcon = new ImageIcon(IconImages.OPTIONS_ICON);
 
     private final AbstractScreen magScreen;
 
-    public MagStatusBar(final AbstractScreen screen0, final MagicFrame frame0) {
+    public StatusBar(final AbstractScreen screen0, final MagicFrame frame0) {
         this.magScreen = screen0;
         setMinimumSize(new Dimension(getPreferredSize().width, 50));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
@@ -37,7 +37,7 @@ public class MagStatusBar extends TexturedPanel {
         setLayout(new MigLayout("insets 0 0 0 6, gap 6, flowx, aligny 50%", "[grow, fill][][]"));
         if (magScreen != null) {
             final IMagStatusBar screen = (IMagStatusBar)magScreen;
-            add(new MagicScreenCaption(screen.getScreenCaption()));
+            add(new CaptionPanel(screen.getScreenCaption()));
             if (magScreen.hasOptionsMenu()) {
                 add(getOptionsIconButton((IMagScreenOptionsMenu)magScreen));
             }
