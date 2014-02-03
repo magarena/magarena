@@ -8,14 +8,13 @@ import java.util.List;
 
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCardList;
 import magic.model.MagicDeck;
-import magic.model.MagicRandom;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.ICardCanvas;
@@ -25,34 +24,33 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
-public class SampleHandScreen
+public class DeckViewScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
     private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 
-    private final CardsCanvas content;
+    private CardsCanvas content;
     private final MagicDeck deck;
 
-    public SampleHandScreen(final MagicDeck deck) {
+    public DeckViewScreen(final MagicDeck deck) {
         this.deck = deck;
-        this.content = new CardsCanvas(cardSize);
-        content.setAnimationDelay(50, 20);
-        this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        this.content.refresh(getHandCards(deck), cardSize);
-        setContent(this.content);
+        content = new CardsCanvas(cardSize);
+        content.setAnimationEnabled(false);
+        content.setStackDuplicateCards(true);
+        content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
+        content.refresh(getDeckCards(deck), cardSize);
+        setContent(content);
     }
 
-    private List<? extends ICardCanvas> getHandCards(final MagicDeck deck) {
-        final MagicCardList library = new MagicCardList();
+    private List<? extends ICardCanvas> getDeckCards(final MagicDeck deck) {
+        final List<MagicCard> cards = new ArrayList<MagicCard>();
         for (MagicCardDefinition magicCardDef : deck) {
-            library.add(new MagicCard(magicCardDef, null, 0));
+            cards.add(new MagicCard(magicCardDef, null, 0));
         }
-        library.shuffle(MagicRandom.nextRNGInt(999999));
-        if (library.size() >= 7) {
-            final List<MagicCard> hand = library.subList(0, 7);
-            Collections.sort(hand);
-            return hand;
+        if (cards.size() > 0) {
+            Collections.sort(cards);
+            return cards;
         } else {
             return null;
         }
@@ -63,7 +61,7 @@ public class SampleHandScreen
      */
     @Override
     public String getScreenCaption() {
-        return "Sample Hand";
+        return "Deck View";
     }
 
     /* (non-Javadoc)
@@ -71,7 +69,7 @@ public class SampleHandScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Close", new AbstractAction() {
+        return new ActionBarButton("Close", new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
               getFrame().closeActiveScreen(false);
@@ -95,18 +93,24 @@ public class SampleHandScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
-                        new ImageIcon(IconImages.REFRESH_ICON),
-                        "Refresh", "Deal a new sample hand.",
+                        new ImageIcon(IconImages.HAND_ICON),
+                        "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
-                                if (!content.isBusy()) {
-                                    content.refresh(getHandCards(deck), cardSize);
+                                if (deck.size() >= 7) {
+                                    getFrame().showSampleHandGenerator(deck);
+                                } else {
+                                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
                                 }
                             }
                         })
                 );
         return buttons;
+    }
+
+    private void showInvalidActionMessage(final String message) {
+        JOptionPane.showMessageDialog(this, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
     }
 
     /* (non-Javadoc)

@@ -8,10 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 import magic.data.DeckUtils;
+import magic.data.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.ExplorerPanel;
 import magic.ui.MagicFrame;
@@ -19,6 +21,7 @@ import magic.ui.ScreenOptionsOverlay;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.viewer.DeckDescriptionPreview;
@@ -102,16 +105,37 @@ public class DeckEditorScreen
                 }
             }, "Save deck to file"));
         }
-        buttons.add(new MenuButton("Sample hand", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                if (screenContent.getDeck().size() >= 7) {
-                    getFrame().showSampleHandGenerator(screenContent.getDeck());
-                } else {
-                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
-                }
-            }
-        }, "Generate sample hands from this deck"));
+        buttons.add(
+                new ActionBarButton(
+                        new ImageIcon(IconImages.HAND_ICON),
+                        "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                if (screenContent.getDeck().size() >= 7) {
+                                    getFrame().showSampleHandGenerator(screenContent.getDeck());
+                                } else {
+                                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
+                                }
+                            }
+                        })
+                );
+		buttons.add(
+		        new ActionBarButton(
+		                new ImageIcon(IconImages.TILED_ICON),
+		                "Deck View", "Shows complete deck using tiled card images.",
+		                new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                if (screenContent.getDeck().size() > 0) {
+                                    getFrame().showDeckView(screenContent.getDeck());
+                                } else {
+                                    showInvalidActionMessage("Deck is empty! Nothing to show.");
+                                }
+                            }
+                        })
+		        );
+
         return buttons;
     }
 

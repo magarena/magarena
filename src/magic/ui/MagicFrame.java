@@ -14,6 +14,7 @@ import magic.ui.choice.MulliganChoicePanel;
 import magic.ui.screen.CardExplorerScreen;
 import magic.ui.screen.CardZoneScreen;
 import magic.ui.screen.DeckEditorScreen;
+import magic.ui.screen.DeckViewScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.HelpMenuScreen;
@@ -90,6 +91,9 @@ public class MagicFrame extends JFrame {
     //
     // The various (Mag)screens that can currently be displayed.
     //
+    public void showDeckView(final MagicDeck deck) {
+        activateMagScreen(new DeckViewScreen(deck));
+    }
     public void showMulliganScreen(final MulliganChoicePanel choicePanel, final MagicCardList hand) {
         if (screens.peek() instanceof MulliganScreen) {
             final MulliganScreen screen = (MulliganScreen)screens.peek();
