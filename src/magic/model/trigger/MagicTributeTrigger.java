@@ -53,7 +53,7 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
         return new MagicEvent(
             perm,
             perm.getOpponent(),
-            new MagicMayChoice("Put " + amt + " +1/+1 counters on " + perm),
+            new MagicMayChoice(),
             amt,
             action,
             "PN may$ put RN +1/+1 counters on SN."
