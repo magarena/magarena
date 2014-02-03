@@ -1,8 +1,8 @@
 package magic.ui.screen;
 
 import magic.data.FileIO;
-import magic.ui.interfaces.IMagActionBar;
-import magic.ui.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IMagActionBar;
+import magic.ui.screen.interfaces.IMagStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;

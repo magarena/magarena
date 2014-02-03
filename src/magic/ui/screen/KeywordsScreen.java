@@ -2,8 +2,8 @@ package magic.ui.screen;
 
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
-import magic.ui.interfaces.IMagActionBar;
-import magic.ui.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IMagActionBar;
+import magic.ui.screen.interfaces.IMagStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

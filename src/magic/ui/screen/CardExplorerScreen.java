@@ -8,9 +8,9 @@ import javax.swing.AbstractAction;
 import magic.ui.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.interfaces.IMagActionBar;
-import magic.ui.interfaces.IMagScreenOptionsMenu;
-import magic.ui.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IMagActionBar;
+import magic.ui.screen.interfaces.IMagScreenOptionsMenu;
+import magic.ui.screen.interfaces.IMagStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 

@@ -1,4 +1,4 @@
-package magic.ui.interfaces;
+package magic.ui.screen.interfaces;
 
 import java.util.List;
 

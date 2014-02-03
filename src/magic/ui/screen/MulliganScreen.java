@@ -15,8 +15,8 @@ import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.choice.MulliganChoicePanel;
-import magic.ui.interfaces.IMagActionBar;
-import magic.ui.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IMagActionBar;
+import magic.ui.screen.interfaces.IMagStatusBar;
 import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")

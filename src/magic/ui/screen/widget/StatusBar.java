@@ -12,9 +12,9 @@ import javax.swing.SwingConstants;
 import net.miginfocom.swing.MigLayout;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
-import magic.ui.interfaces.IMagScreenOptionsMenu;
-import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.interfaces.IMagScreenOptionsMenu;
+import magic.ui.screen.interfaces.IMagStatusBar;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 
