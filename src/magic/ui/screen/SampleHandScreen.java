@@ -19,16 +19,16 @@ import magic.ui.ScreenOptionsOverlay;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.ICardCanvas;
-import magic.ui.screen.interfaces.IMagActionBar;
-import magic.ui.screen.interfaces.IMagScreenOptionsMenu;
-import magic.ui.screen.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IOptionsMenu;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen
     extends AbstractScreen
-    implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
+    implements IStatusBar, IActionBar, IOptionsMenu {
 
     private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 

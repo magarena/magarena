@@ -8,7 +8,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import magic.ui.screen.interfaces.IMagActionBar;
+import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -16,9 +16,9 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class ActionBar extends TexturedPanel {
 
-    private IMagActionBar actionProvider;
+    private IActionBar actionProvider;
 
-    public ActionBar(final IMagActionBar provider0) {
+    public ActionBar(final IActionBar provider0) {
         actionProvider = provider0;
         setMinimumSize(new Dimension(getPreferredSize().width, 50));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);

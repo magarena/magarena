@@ -15,14 +15,14 @@ import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.choice.MulliganChoicePanel;
-import magic.ui.screen.interfaces.IMagActionBar;
-import magic.ui.screen.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
 public class MulliganScreen
     extends AbstractScreen
-    implements IMagStatusBar, IMagActionBar {
+    implements IStatusBar, IActionBar {
 
     private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 

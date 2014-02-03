@@ -14,9 +14,9 @@ import magic.model.MagicPlayerProfile;
 import magic.ui.DuelPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.screen.interfaces.IMagActionBar;
-import magic.ui.screen.interfaces.IMagScreenOptionsMenu;
-import magic.ui.screen.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IOptionsMenu;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.FontsAndBorders;
@@ -24,7 +24,7 @@ import magic.ui.widget.FontsAndBorders;
 @SuppressWarnings("serial")
 public class DuelDecksScreen
     extends AbstractScreen
-    implements IMagStatusBar, IMagActionBar, IMagScreenOptionsMenu {
+    implements IStatusBar, IActionBar, IOptionsMenu {
 
     private final DuelPanel screenContent;
 

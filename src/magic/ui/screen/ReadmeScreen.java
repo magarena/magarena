@@ -1,8 +1,8 @@
 package magic.ui.screen;
 
 import magic.data.FileIO;
-import magic.ui.screen.interfaces.IMagActionBar;
-import magic.ui.screen.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -18,7 +18,7 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class ReadmeScreen extends AbstractScreen implements IMagStatusBar, IMagActionBar {
+public class ReadmeScreen extends AbstractScreen implements IStatusBar, IActionBar {
 
     private static final String README_FILENAME="README.txt";
 

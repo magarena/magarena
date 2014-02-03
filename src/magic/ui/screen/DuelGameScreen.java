@@ -20,14 +20,14 @@ import magic.ui.GameLayeredPane;
 import magic.ui.GamePanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.screen.interfaces.IMagScreenOptionsMenu;
+import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 
 @SuppressWarnings("serial")
-public class DuelGameScreen extends AbstractScreen implements IMagScreenOptionsMenu {
+public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     private GamePanel gamePanel;
 

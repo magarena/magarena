@@ -1,5 +1,5 @@
 package magic.ui.screen.interfaces;
 
-public interface IMagScreenOptionsMenu {
+public interface IOptionsMenu {
     void showOptionsMenuOverlay();
 }

@@ -12,9 +12,9 @@ import javax.swing.SwingConstants;
 import magic.MagicMain;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
-import magic.ui.screen.interfaces.IMagActionBar;
-import magic.ui.screen.interfaces.IMagScreenOptionsMenu;
-import magic.ui.screen.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IOptionsMenu;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
 import net.miginfocom.swing.MigLayout;
@@ -59,7 +59,7 @@ public abstract class AbstractScreen extends JPanel {
 
     private void layoutMagActionBar() {
         if (hasActionBar()) {
-            add(new ActionBar((IMagActionBar)this), "w 100%");
+            add(new ActionBar((IActionBar)this), "w 100%");
         }
     }
 
@@ -75,22 +75,22 @@ public abstract class AbstractScreen extends JPanel {
 
     private void showOptionsMenuOrCloseScreen() {
         if (this.hasOptionsMenu()) {
-            ((IMagScreenOptionsMenu)this).showOptionsMenuOverlay();
+            ((IOptionsMenu)this).showOptionsMenuOverlay();
         } else {
             frame.closeActiveScreen(true);
         }
     }
 
     public boolean hasOptionsMenu() {
-       return this instanceof IMagScreenOptionsMenu;
+       return this instanceof IOptionsMenu;
     };
 
     private boolean hasActionBar() {
-        return this instanceof IMagActionBar;
+        return this instanceof IActionBar;
     }
 
     private boolean hasStatusBar() {
-        return this instanceof IMagStatusBar;
+        return this instanceof IStatusBar;
     }
 
     /**

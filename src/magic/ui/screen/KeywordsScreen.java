@@ -2,8 +2,8 @@ package magic.ui.screen;
 
 import magic.data.KeywordDefinitions;
 import magic.data.KeywordDefinitions.KeywordDefinition;
-import magic.ui.screen.interfaces.IMagActionBar;
-import magic.ui.screen.interfaces.IMagStatusBar;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -28,7 +28,7 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class KeywordsScreen extends AbstractScreen implements IMagStatusBar, IMagActionBar {
+public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActionBar {
 
     private static JScrollPane scrollPane;
     private static MyScrollablePanel scrollablePanel;
