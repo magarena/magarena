@@ -1,0 +1,11 @@
+name=Fanatic of Xenagos
+url=http://magiccards.info/bng/en/147.html
+image=http://mtgimage.com/card/fanatic%20of%20xenagos.jpg
+value=3.741
+rarity=U
+type=Creature
+subtype=Centaur,Warrior
+cost={1}{R}{G}
+ability=trample;tribute 1 effect SN gets +1/+1 and gains haste until end of turn.
+pt=3/3
+timing=main
