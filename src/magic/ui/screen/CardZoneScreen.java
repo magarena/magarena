@@ -6,8 +6,6 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.SwingUtilities;
-
 import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
@@ -32,13 +30,7 @@ public class CardZoneScreen
         this.content.setAnimationEnabled(animateCards);
         this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
         Collections.sort(cards);
-        // Important: uses Runnable so painting works properly.
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                content.refresh(cards, cardSize);
-            }
-        });
+        content.refresh(cards, cardSize);
         setContent(content);
     }
 
