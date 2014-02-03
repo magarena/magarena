@@ -21,7 +21,7 @@ import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
 
-    public static final MagicWhenComesIntoPlayTrigger create(final MagicSourceEvent sourceEvent) {
+    public static MagicWhenComesIntoPlayTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenComesIntoPlayTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {

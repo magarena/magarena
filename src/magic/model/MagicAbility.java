@@ -85,6 +85,7 @@ import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
 import magic.model.trigger.MagicWhenSelfBecomesUntappedTrigger;
 import magic.model.trigger.MagicWhenYouCastSpiritOrArcaneTrigger;
+import magic.model.trigger.MagicTributeTrigger;
 
 import java.util.EnumSet;
 import java.util.Set;
@@ -751,6 +752,14 @@ public enum MagicAbility {
             final int n = Integer.parseInt(token[0]);
             final MagicManaCost manaCost = MagicManaCost.create(token[1]);
             card.add(new MagicMonstrosityActivation(manaCost, n));
+        }
+    },
+    Tribute("tribute", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final String[] token = arg.split(" ", 2);
+            final int n = Integer.parseInt(token[0]);
+            final String effect  = token[1].replaceFirst("^effect ", "");
+            card.add(MagicTributeTrigger.create(n,  MagicRuleEventAction.create(effect)));
         }
     },
     Bestow("bestow", 10) {
