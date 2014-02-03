@@ -7,8 +7,10 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
 
 import magic.data.GeneralConfig;
+import magic.data.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
@@ -22,6 +24,7 @@ import magic.ui.canvas.cards.ICardCanvas;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 
@@ -94,14 +97,19 @@ public class SampleHandScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("Deal new hand", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                if (!content.isBusy()) {
-                    content.refresh(getHandCards(deck), cardSize);
-                }
-            }
-        }, "Generate a new sample hand"));
+        buttons.add(
+                new ActionBarButton(
+                        new ImageIcon(IconImages.REFRESH_ICON),
+                        "Refresh", "Deal a new sample hand.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                if (!content.isBusy()) {
+                                    content.refresh(getHandCards(deck), cardSize);
+                                }
+                            }
+                        })
+                );
         return buttons;
     }
 
