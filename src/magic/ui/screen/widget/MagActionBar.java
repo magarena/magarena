@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.screen.widget;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -9,6 +9,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import magic.ui.interfaces.IMagActionBar;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.MenuButton;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.screen.widget;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import magic.MagicMain;
 import magic.data.IconImages;
 import magic.ui.AboutDialog;
+import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

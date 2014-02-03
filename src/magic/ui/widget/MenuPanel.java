@@ -8,6 +8,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 
+import magic.ui.screen.widget.MagicScreenCaption;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

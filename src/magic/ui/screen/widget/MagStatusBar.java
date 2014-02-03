@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.screen.widget;
 
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -15,6 +15,8 @@ import magic.ui.MagicFrame;
 import magic.ui.interfaces.IMagScreenOptionsMenu;
 import magic.ui.interfaces.IMagStatusBar;
 import magic.ui.screen.AbstractScreen;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")
 public class MagStatusBar extends TexturedPanel {

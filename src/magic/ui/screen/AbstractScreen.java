@@ -15,8 +15,8 @@ import magic.ui.MagicFrame;
 import magic.ui.interfaces.IMagActionBar;
 import magic.ui.interfaces.IMagScreenOptionsMenu;
 import magic.ui.interfaces.IMagStatusBar;
-import magic.ui.widget.MagStatusBar;
-import magic.ui.widget.MagActionBar;
+import magic.ui.screen.widget.MagActionBar;
+import magic.ui.screen.widget.MagStatusBar;
 import net.miginfocom.swing.MigLayout;
 
 /**
