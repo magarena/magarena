@@ -97,14 +97,17 @@ public class DeckEditorScreen
                 loadDeck();
             }
         }, "Load deck from file"));
-        if (screenContent.isStandaloneDeckEditor()) {
-            buttons.add(new MenuButton("Save", new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    saveDeck();
-                }
-            }, "Save deck to file"));
-        }
+        buttons.add(
+                new ActionBarButton(
+                        new ImageIcon(IconImages.SAVE_ICON),
+                        "Save Deck", "Save deck to file.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                saveDeck();
+                            }
+                        })
+                );
         buttons.add(
                 new ActionBarButton(
                         new ImageIcon(IconImages.HAND_ICON),

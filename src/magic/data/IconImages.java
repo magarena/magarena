@@ -24,6 +24,7 @@ public class IconImages {
     public static final BufferedImage MULLIGAN_ICON=loadImage("icons/mulligan.png");
     public static final BufferedImage HAND_ICON=loadImage("icons/hand.png");
     public static final BufferedImage TILED_ICON=loadImage("icons/tiled.png");
+    public static final BufferedImage SAVE_ICON=loadImage("icons/save.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon CUBE=loadIcon("cube.png");
