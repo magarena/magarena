@@ -30,7 +30,7 @@ public class ActionBar extends TexturedPanel {
      */
     private void setMagActionBarLayout() {
         removeAll();
-        setLayout(new MigLayout("insets 0, gap 10, flowx, aligny 50%", "[][center,grow][]"));
+        setLayout(new MigLayout("insets 0, gap 10, flowx, aligny 50%", "[200][center,grow][200,right]"));
         addLeftAction();
         addMiddleActions();
         addRightAction();
@@ -52,7 +52,7 @@ public class ActionBar extends TexturedPanel {
         if (buttons != null) {
             boolean isFirstButton = true;
             for (MenuButton btn : buttons) {
-                panel.add(btn);
+                panel.add(btn, "w 60, h 40");
                 btn.setEnabled(btn.isRunnable());
                 btn.setBorder(BorderFactory.createCompoundBorder(
                         BorderFactory.createMatteBorder(0, isFirstButton ? 1 : 0, 0, 1, Color.LIGHT_GRAY),

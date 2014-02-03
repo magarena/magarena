@@ -6,17 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
 import magic.data.GeneralConfig;
+import magic.data.IconImages;
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.choice.MulliganChoicePanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 
 @SuppressWarnings("serial")
@@ -132,7 +135,12 @@ public class MulliganScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("Take a mulligan", takeMulliganAction, "Draw a new hand with one less card."));
+        buttons.add(
+                new ActionBarButton(
+                        new ImageIcon(IconImages.MULLIGAN_ICON),
+                        "Mulligan", "Draw a new hand with one less card.",
+                        takeMulliganAction)
+                );
         return buttons;
     }
 

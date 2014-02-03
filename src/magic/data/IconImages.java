@@ -20,6 +20,7 @@ public class IconImages {
     public static final BufferedImage OPAL2=loadImage("textures/opal2.jpg");
     public static final BufferedImage HEADER_ICON=loadImage("icons/headerIcon.png");
     public static final BufferedImage OPTIONS_ICON=loadImage("icons/book.png");
+    public static final BufferedImage MULLIGAN_ICON=loadImage("icons/mulligan.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon CUBE=loadIcon("cube.png");

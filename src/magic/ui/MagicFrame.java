@@ -31,6 +31,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
+import javax.swing.ToolTipManager;
 
 import java.awt.Dimension;
 import java.awt.Frame;
@@ -59,6 +60,8 @@ public class MagicFrame extends JFrame {
     private final boolean dontShowAgain = true;
 
     public MagicFrame(final String frameTitle) {
+
+        ToolTipManager.sharedInstance().setInitialDelay(400);
 
         // Load settings.
         config = GeneralConfig.getInstance();
