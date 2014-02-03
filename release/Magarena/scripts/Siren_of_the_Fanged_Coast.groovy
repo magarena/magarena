@@ -6,18 +6,19 @@
                 permanent,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
-                {
-                    final MagicGame game, final MagicEvent event ->
-                    event.processTargetPermanent(game, {
-                        final MagicPermanent perm ->
-                        game.doAction(new MagicGainControlAction(
-                            event.getPlayer(),
-                            perm
-                        ));
-                    });
-                },
+                this,
                 "PN gains control of target creature\$."
             );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPermanent(game, {
+                final MagicPermanent perm ->
+                game.doAction(new MagicGainControlAction(
+                    event.getPlayer(),
+                    perm
+                ));
+            });
         }
     }
 ]

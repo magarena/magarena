@@ -11,11 +11,29 @@ import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicTriggerOnStack;
 
 public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amt;
+
+    private final MagicEventAction action = new MagicEventAction() {
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPermanent permanent = event.getPermanent();
+            if (event.isYes()) {
+                game.doAction(new MagicChangeCountersAction(
+                    permanent,
+                    MagicCounterType.PlusOne,
+                    event.getRefInt(),
+                    true
+                ));
+            } else {
+                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));
+            }
+        }
+    };
 
     public MagicTributeTrigger(final int aAmt) {
         amt = aAmt;
@@ -37,7 +55,7 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
             perm.getOpponent(),
             new MagicMayChoice("Put " + amt + " +1/+1 counters on " + perm),
             amt,
-            this,
+            action,
             "PN may$ put RN +1/+1 counters on SN."
         );
     }
@@ -48,19 +66,4 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
     }
     
     public abstract MagicEvent getEvent(final MagicPermanent permanent);
-
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicPermanent permanent = event.getPermanent();
-        if (event.isYes()) {
-            game.doAction(new MagicChangeCountersAction(
-                permanent,
-                MagicCounterType.PlusOne,
-                event.getRefInt(),
-                true
-            ));
-        } else {
-            game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));
-        }
-    }
 }
