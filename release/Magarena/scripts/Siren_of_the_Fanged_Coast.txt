@@ -1,0 +1,12 @@
+name=Siren of the Fanged Coast
+url=http://magiccards.info/bng/en/50.html
+image=http://mtgimage.com/card/siren%20of%20the%20fanged%20coast.jpg
+value=3.741
+rarity=U
+type=Creature
+subtype=Siren
+cost={3}{U}{U}
+ability=flying
+pt=1/1
+timing=main
+requires_groovy_code

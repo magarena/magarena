@@ -36,8 +36,8 @@ class TestTribute extends TestGameBuilder {
         createPermanent(game,P, "Hollowsage", false, 1);
         addToHand(P, "Rupture Spire", 1);
         addToHand(P, "Fanatic of Xenagos", 1);
+        addToHand(P, "Siren of the Fanged Coast", 1);
         addToHand(P, "Lightning Bolt", 2);
-        addToHand(P, "Druid's Deliverance", 1);
 
         P = opponent;
 
