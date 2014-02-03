@@ -91,12 +91,17 @@ public class DeckEditorScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("Load deck", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                loadDeck();
-            }
-        }, "Load deck from file"));
+        buttons.add(
+                new ActionBarButton(
+                        new ImageIcon(IconImages.LOAD_ICON),
+                        "Load Deck", "Load saved or prebuilt deck from file.",
+                        new AbstractAction() {
+                            @Override
+                            public void actionPerformed(final ActionEvent e) {
+                                loadDeck();
+                            }
+                        })
+                );
         buttons.add(
                 new ActionBarButton(
                         new ImageIcon(IconImages.SAVE_ICON),
