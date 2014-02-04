@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -93,7 +92,7 @@ public class DeckEditorScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
-                        new ImageIcon(IconImages.LOAD_ICON),
+                        IconImages.LOAD_ICON,
                         "Load Deck", "Load saved or prebuilt deck from file.",
                         new AbstractAction() {
                             @Override
@@ -104,7 +103,7 @@ public class DeckEditorScreen
                 );
         buttons.add(
                 new ActionBarButton(
-                        new ImageIcon(IconImages.SAVE_ICON),
+                        IconImages.SAVE_ICON,
                         "Save Deck", "Save deck to file.",
                         new AbstractAction() {
                             @Override
@@ -115,7 +114,7 @@ public class DeckEditorScreen
                 );
         buttons.add(
                 new ActionBarButton(
-                        new ImageIcon(IconImages.HAND_ICON),
+                        IconImages.HAND_ICON,
                         "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
                         new AbstractAction() {
                             @Override
@@ -130,7 +129,7 @@ public class DeckEditorScreen
                 );
 		buttons.add(
 		        new ActionBarButton(
-		                new ImageIcon(IconImages.TILED_ICON),
+		                IconImages.TILED_ICON,
 		                "Deck View", "Shows complete deck using tiled card images.",
 		                new AbstractAction() {
                             @Override

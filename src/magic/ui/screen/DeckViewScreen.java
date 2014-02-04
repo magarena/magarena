@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 import magic.data.GeneralConfig;
@@ -93,7 +92,7 @@ public class DeckViewScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
-                        new ImageIcon(IconImages.HAND_ICON),
+                        IconImages.HAND_ICON,
                         "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
                         new AbstractAction() {
                             @Override

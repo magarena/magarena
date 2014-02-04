@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
@@ -137,7 +136,7 @@ public class MulliganScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
-                        new ImageIcon(IconImages.MULLIGAN_ICON),
+                        IconImages.MULLIGAN_ICON,
                         "Mulligan", "Draw a new hand with one less card.",
                         takeMulliganAction)
                 );

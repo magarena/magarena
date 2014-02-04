@@ -21,7 +21,7 @@ import magic.ui.widget.TexturedPanel;
 @SuppressWarnings("serial")
 public class StatusBar extends TexturedPanel {
 
-    private final static ImageIcon optionsIcon = new ImageIcon(IconImages.OPTIONS_ICON);
+    private final static ImageIcon optionsIcon = IconImages.OPTIONS_ICON;
 
     private final AbstractScreen magScreen;
 

@@ -138,7 +138,7 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         update();
     }
 
-    private final static ImageIcon optionsIcon = new ImageIcon(IconImages.OPTIONS_ICON);
+    private final static ImageIcon optionsIcon = IconImages.OPTIONS_ICON;
 
     private JButton getOptionsIconButton() {
         JButton btn = new JButton(optionsIcon);

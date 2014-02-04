@@ -19,7 +19,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class CaptionPanel extends JPanel {
 
-    private final static ImageIcon wizardIcon = new ImageIcon(IconImages.HEADER_ICON);
+    private final static ImageIcon wizardIcon = IconImages.HEADER_ICON;
 
     private final String screenCaption;
 

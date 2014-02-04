@@ -18,14 +18,16 @@ public class IconImages {
     public static final BufferedImage GRANITE2=loadImage("textures/granite2.jpg");
     public static final BufferedImage OPAL=loadImage("textures/opal.jpg");
     public static final BufferedImage OPAL2=loadImage("textures/opal2.jpg");
-    public static final BufferedImage HEADER_ICON=loadImage("icons/headerIcon.png");
-    public static final BufferedImage OPTIONS_ICON=loadImage("icons/book.png");
-    public static final BufferedImage REFRESH_ICON=loadImage("icons/refresh.png");
-    public static final BufferedImage MULLIGAN_ICON=loadImage("icons/mulligan.png");
-    public static final BufferedImage HAND_ICON=loadImage("icons/hand.png");
-    public static final BufferedImage TILED_ICON=loadImage("icons/tiled.png");
-    public static final BufferedImage SAVE_ICON=loadImage("icons/save.png");
-    public static final BufferedImage LOAD_ICON=loadImage("icons/load.png");
+
+    // Icons used by various components of AbstractScreen.
+    public static final ImageIcon HEADER_ICON = loadIcon("headerIcon.png");
+    public static final ImageIcon OPTIONS_ICON = loadIcon("book.png");
+    public static final ImageIcon REFRESH_ICON = loadIcon("refresh.png");
+    public static final ImageIcon MULLIGAN_ICON = loadIcon("mulligan.png");
+    public static final ImageIcon HAND_ICON = loadIcon("hand.png");
+    public static final ImageIcon TILED_ICON = loadIcon("tiled.png");
+    public static final ImageIcon SAVE_ICON = loadIcon("save.png");
+    public static final ImageIcon LOAD_ICON = loadIcon("load.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon CUBE=loadIcon("cube.png");

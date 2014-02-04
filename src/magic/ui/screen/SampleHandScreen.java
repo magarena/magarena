@@ -7,8 +7,6 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
-
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
@@ -95,7 +93,7 @@ public class SampleHandScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
-                        new ImageIcon(IconImages.REFRESH_ICON),
+                        IconImages.REFRESH_ICON,
                         "Refresh", "Deal a new sample hand.",
                         new AbstractAction() {
                             @Override
