@@ -34,9 +34,11 @@ public class DeckEditorScreen
     implements IStatusBar, IActionBar, IOptionsMenu {
 
     private final ExplorerPanel screenContent;
+    private final boolean isStandalone;
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorScreen(final MagicDeck deck) {
+        isStandalone = (deck == null);
         this.screenContent = new ExplorerPanel(deck);
         setContent(this.screenContent);
     }
@@ -194,8 +196,7 @@ public class DeckEditorScreen
         if (action==JFileChooser.APPROVE_OPTION) {
             final String filename=fileChooser.getSelectedFile().getAbsolutePath();
             screenContent.setDeck(DeckUtils.loadDeckFromFile(filename));
-            GeneralConfig.getInstance().setMostRecentDeckFilename(filename);
-            GeneralConfig.getInstance().save();
+            setMostRecentDeck(filename);
         }
     }
 
@@ -250,8 +251,7 @@ public class DeckEditorScreen
                 final String shortFilename = fileChooser.getSelectedFile().getName();
                 screenContent.getDeck().setName(shortFilename);
                 screenContent.setDeck(screenContent.getDeck());
-                GeneralConfig.getInstance().setMostRecentDeckFilename(filename);
-                GeneralConfig.getInstance().save();
+                setMostRecentDeck(filename);
             } else {
                 JOptionPane.showMessageDialog(
                         getFrame(),
@@ -259,6 +259,13 @@ public class DeckEditorScreen
                         "Deck not saved",
                         JOptionPane.ERROR_MESSAGE);
             }
+        }
+    }
+
+    private void setMostRecentDeck(final String filename) {
+        if (isStandalone) {
+            GeneralConfig.getInstance().setMostRecentDeckFilename(filename);
+            GeneralConfig.getInstance().save();
         }
     }
 
