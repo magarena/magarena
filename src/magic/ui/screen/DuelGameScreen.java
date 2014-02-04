@@ -33,15 +33,15 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     public DuelGameScreen(final MagicDuel duel) {
 
-        final SwingWorker<JPanel, Void> worker = new SwingWorker<JPanel, Void> () {
+        final SwingWorker<MagicGame, Void> worker = new SwingWorker<MagicGame, Void> () {
 
             @Override
-            protected JPanel doInBackground() throws Exception {
+            protected MagicGame doInBackground() throws Exception {
                 duel.updateDifficulty();
                 final MagicPlayerDefinition[] players=duel.getPlayers();
                 if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
                    isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
-                    return getScreenContent(duel.nextGame(true));
+                    return duel.nextGame(true);
                 } else {
                     return null;
                 }
@@ -50,7 +50,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             @Override
             protected void done() {
                 try {
-                    setContent(get());
+                    setContent(getScreenContent(get()));
                 } catch (InterruptedException | ExecutionException e1) {
                     e1.printStackTrace();
                     MagicGameReport.reportException(Thread.currentThread(), e1);
