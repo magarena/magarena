@@ -12,7 +12,13 @@ public class GameLayeredPane extends JLayeredPane {
 
     private static final long serialVersionUID = 1L;
 
+    final ZoneBackgroundLabel backgroundLabel;
+    final GamePanel gamePanel;
+
     public GameLayeredPane(final GamePanel gamePanel,final ZoneBackgroundLabel backgroundLabel) {
+
+        this.backgroundLabel = backgroundLabel;
+        this.gamePanel = gamePanel;
 
         setLayout(null);
 
@@ -29,16 +35,18 @@ public class GameLayeredPane extends JLayeredPane {
         setLayer(cardViewer,2);
 
         this.addComponentListener(new ComponentAdapter() {
-
             @Override
             public void componentResized(final ComponentEvent event) {
-
-                final Dimension size=getSize();
-                backgroundLabel.setSize(size);
-                gamePanel.setSize(size);
-                gamePanel.resizeComponents();
-                repaint();
+                updateView();
             }
         });
+    }
+
+    public void updateView() {
+        final Dimension size=getSize();
+        backgroundLabel.setSize(size);
+        gamePanel.setSize(size);
+        gamePanel.resizeComponents();
+        repaint();
     }
 }

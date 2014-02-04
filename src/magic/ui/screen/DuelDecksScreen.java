@@ -8,6 +8,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 
 import magic.model.MagicDeck;
+import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicPlayerProfile;
@@ -80,7 +81,11 @@ public class DuelDecksScreen
             return new MenuButton(getStartDuelCaption() + " >", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    getFrame().nextGame();
+                    final MagicPlayerDefinition[] players = screenContent.getDuel().getPlayers();
+                    if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
+                       isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
+                        getFrame().nextGame();
+                    }
                 }
             });
         } else {
@@ -232,6 +237,22 @@ public class DuelDecksScreen
 
         }
 
+    }
+
+    private boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
+        final String brokenRulesText =
+                MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
+
+        if(brokenRulesText.length() > 0) {
+            JOptionPane.showMessageDialog(
+                    this,
+                    playerName + "'s deck is illegal.\n\n" + brokenRulesText,
+                    "Illegal Deck",
+                    JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+
+        return true;
     }
 
 }

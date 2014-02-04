@@ -155,8 +155,12 @@ public class MagicFrame extends JFrame {
             quitToDesktop(isEscapeKeyAction);
         } else {
             final AbstractScreen activeScreen = screens.pop();
-            if (activeScreen.isScreenReadyToClose(screens.peek())) {
-                showMagScreen(screens.peek());
+            final AbstractScreen nextScreen = screens.peek();
+            if (activeScreen.isScreenReadyToClose(nextScreen)) {
+                showMagScreen(nextScreen);
+                if (nextScreen instanceof DuelGameScreen) {
+                    ((DuelGameScreen)nextScreen).updateView();
+                }
             } else {
                 screens.push(activeScreen);
             }
