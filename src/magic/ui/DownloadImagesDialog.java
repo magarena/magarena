@@ -4,6 +4,7 @@ import magic.MagicMain;
 import magic.data.CardDefinitions;
 import magic.data.DownloadMissingFiles;
 import magic.data.FileIO;
+import magic.data.GeneralConfig;
 import magic.data.History;
 import magic.data.IconImages;
 import magic.data.WebDownloader;
@@ -19,6 +20,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 import javax.swing.SwingUtilities;
+
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -374,6 +376,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         if (!cancelDownload) {
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
+                    GeneralConfig.getInstance().setIsMissingFiles(false);
                     dispose();
                 }
             });

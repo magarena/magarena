@@ -107,8 +107,16 @@ public class GeneralConfig {
     private boolean isMulliganScreenActive = DEFAULT_MULLIGAN_SCREEN;
     private boolean isLogViewerDisabled = false;
     private String mostRecentDeckFilename = "";
+    private boolean isMissingFiles = false;
 
     private GeneralConfig() {}
+
+    public boolean isMissingFiles() {
+        return isMissingFiles;
+    }
+    public void setIsMissingFiles(final boolean b) {
+        isMissingFiles = b;
+    }
 
     public String getMostRecentDeckFilename() {
         return mostRecentDeckFilename;
