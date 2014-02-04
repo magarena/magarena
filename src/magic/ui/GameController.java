@@ -331,11 +331,7 @@ public class GameController implements ILogBookListener {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 for (final ChoiceViewer choiceViewer : choiceViewers) {
-                    try {
-                        choiceViewer.showValidChoices(validChoices);
-                    } catch (NullPointerException e) {
-                        System.err.println("GameController.showValidChoices : NPE in " + e.getStackTrace()[0]);
-                    }
+                    choiceViewer.showValidChoices(validChoices);
                 }
             }
         });
