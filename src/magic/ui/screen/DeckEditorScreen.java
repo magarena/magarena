@@ -12,6 +12,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 import magic.data.DeckUtils;
+import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.ExplorerPanel;
@@ -32,15 +33,28 @@ public class DeckEditorScreen
     implements IStatusBar, IActionBar, IOptionsMenu {
 
     private final ExplorerPanel screenContent;
+    private final boolean isStandalone;
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorScreen(final MagicDeck deck) {
+        isStandalone = (deck == null);
         this.screenContent = new ExplorerPanel(deck);
         setContent(this.screenContent);
     }
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
     public DeckEditorScreen() {
         this(null);
+        loadMostRecentDeck();
+    }
+
+    private void loadMostRecentDeck() {
+        final String deckFilename = GeneralConfig.getInstance().getMostRecentDeckFilename();
+        if (!deckFilename.trim().isEmpty()) {
+            final MagicDeck recentDeck = DeckUtils.loadDeckFromFile(deckFilename);
+            if (recentDeck != null) {
+                this.screenContent.setDeck(recentDeck);
+            }
+        }
     }
 
     /* (non-Javadoc)
@@ -181,6 +195,7 @@ public class DeckEditorScreen
         if (action==JFileChooser.APPROVE_OPTION) {
             final String filename=fileChooser.getSelectedFile().getAbsolutePath();
             screenContent.setDeck(DeckUtils.loadDeckFromFile(filename));
+            setMostRecentDeck(filename);
         }
     }
 
@@ -221,9 +236,13 @@ public class DeckEditorScreen
                 }
             }
         };
+        final MagicDeck deck = screenContent.getDeck();
         fileChooser.setDialogTitle("Save deck");
         fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
+        if (deck != null) {
+            fileChooser.setSelectedFile(new File(deck.getName()));
+        }
         final int action = fileChooser.showSaveDialog(this);
         if (action == JFileChooser.APPROVE_OPTION) {
             final String filename = fileChooser.getSelectedFile().getAbsolutePath();
@@ -231,6 +250,7 @@ public class DeckEditorScreen
                 final String shortFilename = fileChooser.getSelectedFile().getName();
                 screenContent.getDeck().setName(shortFilename);
                 screenContent.setDeck(screenContent.getDeck());
+                setMostRecentDeck(filename);
             } else {
                 JOptionPane.showMessageDialog(
                         getFrame(),
@@ -238,6 +258,13 @@ public class DeckEditorScreen
                         "Deck not saved",
                         JOptionPane.ERROR_MESSAGE);
             }
+        }
+    }
+
+    private void setMostRecentDeck(final String filename) {
+        if (isStandalone) {
+            GeneralConfig.getInstance().setMostRecentDeckFilename(filename);
+            GeneralConfig.getInstance().save();
         }
     }
 
