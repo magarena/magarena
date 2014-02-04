@@ -41,6 +41,7 @@ public class GeneralConfig {
     private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
     private static final String SHOW_LOG_MESSAGES = "showLogMessages";
     private static final String MULLIGAN_SCREEN = "mulliganScreen";
+    private static final String RECENT_DECK = "MostRecentDeckFilename";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
@@ -105,8 +106,16 @@ public class GeneralConfig {
     private boolean showLogMessages = DEFAULT_SHOW_LOG_MESSAGES;
     private boolean isMulliganScreenActive = DEFAULT_MULLIGAN_SCREEN;
     private boolean isLogViewerDisabled = false;
+    private String mostRecentDeckFilename = "";
 
     private GeneralConfig() {}
+
+    public String getMostRecentDeckFilename() {
+        return mostRecentDeckFilename;
+    }
+    public void setMostRecentDeckFilename(final String filename) {
+        mostRecentDeckFilename = filename;
+    }
 
     public boolean isLogViewerDisabled() {
         return isLogViewerDisabled;
@@ -383,6 +392,7 @@ public class GeneralConfig {
         previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
         showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
         isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + DEFAULT_MULLIGAN_SCREEN));
+        mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "");
     }
 
     public void load() {
@@ -419,6 +429,7 @@ public class GeneralConfig {
         properties.setProperty(PREVIEW_CARD_ON_SELECT, String.valueOf(previewCardOnSelect));
         properties.setProperty(SHOW_LOG_MESSAGES, String.valueOf(showLogMessages));
         properties.setProperty(MULLIGAN_SCREEN, String.valueOf(isMulliganScreenActive));
+        properties.setProperty(RECENT_DECK, mostRecentDeckFilename);
     }
 
     public void save() {
