@@ -25,6 +25,8 @@ import magic.ui.widget.ZoneBackgroundLabel;
 @SuppressWarnings("serial")
 public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
+    private final static GeneralConfig config = GeneralConfig.getInstance();
+
     private GamePanel gamePanel;
     private GameLayeredPane gamePane;
     private JPanel container;
@@ -41,6 +43,9 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             protected void done() {
                 try {
                     setContent(getScreenContent(get()));
+                    if (!config.showMulliganScreen()) {
+                        container.setVisible(true);
+                    }
                 } catch (InterruptedException | ExecutionException e1) {
                     e1.printStackTrace();
                     MagicGameReport.reportException(Thread.currentThread(), e1);
@@ -51,8 +56,10 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     }
 
+    // CTR - called when using -DtestGame=X argument.
     public DuelGameScreen(final MagicGame game) {
         setContent(getScreenContent(game));
+        container.setVisible(true);
     }
 
     private JPanel getScreenContent(final MagicGame game) {
@@ -138,11 +145,11 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                     setVisible(false);
                 }
             });
-            final boolean isTextMode = GeneralConfig.getInstance().getTextView();
+            final boolean isTextMode = config.getTextView();
             menu.addMenuItem(isTextMode ? "Image mode" : "Text mode", new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    GeneralConfig.getInstance().setTextView(!isTextMode);
+                    config.setTextView(!isTextMode);
                     screen.updateView();
                     setVisible(false);
                 }
