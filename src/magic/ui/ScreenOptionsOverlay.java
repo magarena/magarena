@@ -2,6 +2,9 @@ package magic.ui;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseMotionAdapter;
 
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
@@ -38,6 +41,10 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel {
                 setVisible(false);
             }
         });
+
+        addMouseListener(new MouseAdapter() {});
+        addMouseMotionListener(new MouseMotionAdapter() {});
+        addKeyListener(new KeyAdapter() {});
 
         frame.setGlassPane(this);
         setVisible(true);
