@@ -120,8 +120,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Counter,
         "Counter"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicManaCost cost = MagicManaCost.create(matcher.group("cost"));
             return new MagicEventAction() {
                 @Override
@@ -180,8 +179,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal,
         "Damage"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -201,8 +199,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Pump,
         "Prevent"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -219,8 +216,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Pump,
         "Prevent"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -239,8 +235,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw, 
         "Draw"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -256,8 +251,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw, 
         "Draw"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -276,8 +270,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw, 
         "Draw"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount1 = MagicRuleEventAction.englishToInt(matcher.group("amount1"));
             final int amount2 = MagicRuleEventAction.englishToInt(matcher.group("amount2"));
             return new MagicEventAction() {
@@ -294,8 +287,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw, 
         "Draw"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount1 = MagicRuleEventAction.englishToInt(matcher.group("amount1"));
             final int amount2 = MagicRuleEventAction.englishToInt(matcher.group("amount2"));
             return new MagicEventAction() {
@@ -317,8 +309,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw, 
         "Discard"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
             final boolean isRandom = matcher.group("random") != null;
             return new MagicEventAction() {
@@ -343,8 +334,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "-Life"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount1 = Integer.parseInt(matcher.group("amount1"));
             final int amount2 = Integer.parseInt(matcher.group("amount2"));
             return new MagicEventAction() {
@@ -365,8 +355,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "+Life"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -382,8 +371,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "+Life"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -402,8 +390,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "-Life"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -419,8 +406,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "-Life"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -439,8 +425,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Pump, 
         "Pump"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -459,8 +444,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Pump, 
         "Pump"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -481,8 +465,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Pump, 
         "Pump"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -505,8 +488,7 @@ public enum MagicRuleEventAction {
         "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) and gains (?<ability>[^\\.]*) until end of turn.", 
         MagicTiming.Pump
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -519,16 +501,15 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public String getName(final String rule) {
-            return GainChosen.getName(rule);
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
         }
     },
     PumpGainChosen(
         "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>.*) until end of turn.", 
         MagicTargetHint.Positive
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -545,14 +526,14 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public MagicTiming getTiming(final String rule) {
-            return GainChosen.getTiming(rule);
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
         }
-        public MagicTargetPicker<?> getPicker(final String rule) {
-            return GainChosen.getPicker(rule);
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainChosen.getPicker(matcher);
         }
-        public String getName(final String rule) {
-            return GainChosen.getName(rule);
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
         }
     },
     WeakenChosen(
@@ -561,8 +542,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "Weaken"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -577,8 +557,7 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public MagicTargetPicker<?> getPicker(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final String[] args = matcher.group("pt").replace('+','0').split("/");
             final int p = -Integer.parseInt(args[0]);
             final int t = -Integer.parseInt(args[1]);
@@ -590,8 +569,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "Weaken"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -615,8 +593,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal, 
         "Pump"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
@@ -636,8 +613,7 @@ public enum MagicRuleEventAction {
         "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>[^\\.]*) until end of turn.", 
         MagicTiming.Removal
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final String[] pt = matcher.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -654,15 +630,14 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public String getName(final String rule) {
-            return GainChosen.getName(rule);
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
         }
     },
     GainSelf(
         "sn gains (?<ability>[^\\.]*) until end of turn."
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             return new MagicEventAction() {
                 @Override
@@ -671,14 +646,13 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public MagicTiming getTiming(final String rule) {
-            return GainChosen.getTiming(rule);
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
         }
-        public String getName(final String rule) {
-            return GainChosen.getName(rule);
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
         }
-        public MagicCondition[] getConditions(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicCondition[] getConditions(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
             return new MagicCondition[]{
                 MagicConditionFactory.NoAbility(ability)
@@ -689,8 +663,7 @@ public enum MagicRuleEventAction {
         "(?<choice>[^\\.]*) gains (?<ability>[^\\.]*) until end of turn.", 
         MagicTargetHint.Positive
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             return new MagicEventAction() {
                 @Override
@@ -703,8 +676,7 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public MagicTiming getTiming(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicTiming getTiming(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
             switch (ability) {
                 case Haste:
@@ -717,8 +689,7 @@ public enum MagicRuleEventAction {
                     return MagicTiming.Pump;
             }
         }
-        public MagicTargetPicker<?> getPicker(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
             switch (ability) {
                 case Deathtouch: 
@@ -740,16 +711,15 @@ public enum MagicRuleEventAction {
                     return MagicPumpTargetPicker.create(); 
             }
         }
-        public String getName(final String rule) {
-            final String ability = matched(rule).group("ability");
+        public String getName(final Matcher matcher) {
+            final String ability = matcher.group("ability");
             return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
         }
     },
     GainGroup(
         "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn."
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(matcher.group("group"));
             return new MagicEventAction() {
@@ -765,19 +735,18 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public MagicTiming getTiming(final String rule) {
-            return GainChosen.getTiming(rule);
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
         }
-        public String getName(final String rule) {
-            return GainChosen.getName(rule);
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
         }
     },
     CounterOnSelf(
         "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.",
     	MagicTiming.Pump
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             return new MagicEventAction() {
@@ -792,8 +761,7 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-        public String getName(final String rule) {
-            final Matcher matcher = matched(rule);
+        public String getName(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             if (amount>1) {
          	   final String name = "+Counters";
@@ -808,8 +776,7 @@ public enum MagicRuleEventAction {
     CounterOnChosen(
         "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (?<choice>[^\\.]*)."
     ) {
-       public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+       public MagicEventAction getAction(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             return new MagicEventAction() {
@@ -828,8 +795,7 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-       public MagicTargetHint getHint(final String rule) {
-           final Matcher matcher = matched(rule);
+       public MagicTargetHint getHint(final Matcher matcher) {
            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
            if (counterType.getName().contains("-") || counterType.getScore()<0) {
         	   return MagicTargetHint.Negative;
@@ -837,8 +803,7 @@ public enum MagicRuleEventAction {
         	   return MagicTargetHint.Positive;
            }
        }
-       public MagicTargetPicker<?> getPicker(final String rule) {
-           final Matcher matcher = matched(rule);
+       public MagicTargetPicker<?> getPicker(final Matcher matcher) {
            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
            if (counterType.getName().contains("-")) {
         	   final String[] pt = counterType.getName().split("/");
@@ -850,8 +815,7 @@ public enum MagicRuleEventAction {
         	   return null;
            }
        }
-       public MagicTiming getTiming(final String rule) {
-           final Matcher matcher = matched(rule);
+       public MagicTiming getTiming(final Matcher matcher) {
            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
            if (counterType.getName().contains("-")) {
         	   final String[] pt = counterType.getName().split("/");
@@ -860,8 +824,7 @@ public enum MagicRuleEventAction {
         	   return MagicTiming.Pump;
            }
        }
-       public String getName(final String rule) {
-           final Matcher matcher = matched(rule);
+       public String getName(final Matcher matcher) {
            final int amount = englishToInt(matcher.group("amount"));
            if (amount>1) {
         	   final String name = "+Counters";
@@ -973,7 +936,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Tapping, 
         "Untap"
     ) {
-        public MagicEventAction getAction(final String rule) {
+        public MagicEventAction getAction(final Matcher matcher) {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1004,8 +967,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Token,
         "Token"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final MagicCardDefinition tokenDef = TokenCardDefinitions.get(matcher.group("name"));
             return new MagicEventAction() {
                 @Override
@@ -1023,8 +985,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Token,
         "Token"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = TokenCardDefinitions.get(tokenName);
@@ -1045,8 +1006,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw, 
         "Mill"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -1061,8 +1021,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw, 
         "Mill"
     ) {
-        public MagicEventAction getAction(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -1081,11 +1040,10 @@ public enum MagicRuleEventAction {
         MagicTiming.None, 
         "Sacrifice"
     ) {
-        public MagicChoice getChoice(final String rule) {
-            final Matcher matcher = matched(rule);
+        public MagicChoice getChoice(final Matcher matcher) {
             return new MagicPayManaCostChoice(MagicManaCost.create(matcher.group("cost")));
         }
-        public MagicEventAction getNoAction(final String rule) {
+        public MagicEventAction getNoAction(final Matcher matcher) {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1167,32 +1125,31 @@ public enum MagicRuleEventAction {
         return pattern.matcher(rule).matches();
     }
     
-    public MagicTargetPicker<?> getPicker(final String rule) {
+    public MagicTargetPicker<?> getPicker(final Matcher matcher) {
         return picker;
     }
     
-    public MagicEventAction getAction(final String rule) {
+    public MagicEventAction getAction(final Matcher matcher) {
         return action;
     }
     
-    public MagicEventAction getNoAction(final String rule) {
+    public MagicEventAction getNoAction(final Matcher matcher) {
         return MagicEvent.NO_ACTION;
     }
     
-    public MagicTiming getTiming(final String rule) {
+    public MagicTiming getTiming(final Matcher matcher) {
         return timing;
     }
     
-    public String getName(final String rule) {
+    public String getName(final Matcher matcher) {
         return name;
     }
-
+    
     public boolean isIndependent() {
         return pattern.toString().contains("sn") == false;
     }
 
-    public MagicChoice getChoice(final String rule) {
-        final Matcher matcher = matched(rule);
+    public MagicChoice getChoice(final Matcher matcher) {
         try {
             return new MagicTargetChoice(hint, matcher.group("choice"));
         } catch (IllegalArgumentException e) {
@@ -1200,7 +1157,7 @@ public enum MagicRuleEventAction {
         }
     }
     
-    public MagicCondition[] getConditions(final String rule) {
+    public MagicCondition[] getConditions(final Matcher matcher) {
         return MagicActivation.NO_COND;
     }
 
@@ -1213,7 +1170,7 @@ public enum MagicRuleEventAction {
         throw new RuntimeException("unknown rule: " + rule);
     }
 
-    protected Matcher matched(final String rule) {
+    public Matcher matched(final String rule) {
         final Matcher matcher = pattern.matcher(rule);
         final boolean matches = matcher.matches();
         if (!matches) {
@@ -1243,13 +1200,14 @@ public enum MagicRuleEventAction {
         final String ruleWithoutMay = rule.replaceFirst("^PN may ", "");
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
-        final MagicEventAction action  = ruleAction.getAction(effect);
-        final MagicEventAction noAction  = ruleAction.getNoAction(effect);
-        final MagicTargetPicker<?> picker = ruleAction.getPicker(effect);
-        final MagicChoice choice = ruleAction.getChoice(effect);
+        final Matcher matcher = ruleAction.matched(effect);
+        final MagicEventAction action  = ruleAction.getAction(matcher);
+        final MagicEventAction noAction  = ruleAction.getNoAction(matcher);
+        final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
+        final MagicChoice choice = ruleAction.getChoice(matcher);
 
         return rule.startsWith("PN may ") ?
-            new MagicSourceEvent() {
+            new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
                     return new MagicEvent(
@@ -1269,12 +1227,8 @@ public enum MagicRuleEventAction {
                         "PN may$ " + ruleWithoutMay + "$"
                     );
                 }
-                @Override
-                public MagicRuleEventAction getRule() {
-                    return ruleAction;
-                }
             }:
-            new MagicSourceEvent() {
+            new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
                     return new MagicEvent(
@@ -1284,10 +1238,6 @@ public enum MagicRuleEventAction {
                         action,
                         rule + "$"
                     );
-                }
-                @Override
-                public MagicRuleEventAction getRule() {
-                    return ruleAction;
                 }
             };
     }
