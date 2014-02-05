@@ -27,6 +27,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     private GamePanel gamePanel;
     private GameLayeredPane gamePane;
+    private JPanel container;
 
     public DuelGameScreen(final MagicDuel duel) {
 
@@ -59,7 +60,8 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         backgroundLabel.setGame(true);
         gamePanel = new GamePanel(getFrame(), game, backgroundLabel);
         gamePane = new GameLayeredPane(gamePanel, backgroundLabel);
-        final JPanel container = new JPanel(new MigLayout("insets 0, gap 0"));
+        container = new JPanel(new MigLayout("insets 0, gap 0"));
+        container.setVisible(false);
         container.setOpaque(false);
         container.add(gamePane, "w 100%, h 100%");
         return container;
@@ -76,6 +78,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     public void updateView() {
         gamePanel.updateView();
         gamePane.updateView();
+        container.setVisible(true);
     }
 
     public void concedeGame() {
