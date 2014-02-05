@@ -25,7 +25,7 @@ public class HelpMenuScreen extends AbstractScreen {
         content.setOpaque(false);
         content.setLayout(new MigLayout("insets 0, gap 0, center, center"));
 
-        final MenuPanel menu = new MenuPanel("Settings Menu");
+        final MenuPanel menu = new MenuPanel("Help Menu");
 
         menu.addMenuItem("ReadMe", new AbstractAction() {
             @Override
