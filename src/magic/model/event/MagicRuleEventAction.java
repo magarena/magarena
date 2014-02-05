@@ -520,8 +520,7 @@ public enum MagicRuleEventAction {
             };
         }
         public String getName(final String rule) {
-            final String ability = matched(rule).group("ability");
-            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+            return GainChosen.getName(rule);
         }
     },
     PumpGainChosen(
@@ -547,45 +546,13 @@ public enum MagicRuleEventAction {
             };
         }
         public MagicTiming getTiming(final String rule) {
-            final Matcher matcher = matched(rule);
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
-            switch (ability) {
-                case Haste:
-                case Vigilance:
-                    return MagicTiming.FirstMain;
-                case FirstStrike:
-                case DoubleStrike:
-                    return MagicTiming.Block;
-                default:
-                    return MagicTiming.Pump;
-            }
+            return GainChosen.getTiming(rule);
         }
         public MagicTargetPicker<?> getPicker(final String rule) {
-            final Matcher matcher = matched(rule);
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
-            switch (ability) {
-                case Deathtouch: 
-                    return MagicDeathtouchTargetPicker.create();
-                case Lifelink:
-                    return MagicLifelinkTargetPicker.create();
-                case FirstStrike:
-                case DoubleStrike:
-                    return MagicFirstStrikeTargetPicker.create();
-                case Haste:
-                    return MagicHasteTargetPicker.create();
-                case Indestructible:
-                    return MagicIndestructibleTargetPicker.create();
-                case Trample:
-                    return MagicTrampleTargetPicker.create();
-                case Flying:
-                    return MagicFlyingTargetPicker.create();
-                default:
-                    return MagicPumpTargetPicker.create(); 
-            }
+            return GainChosen.getPicker(rule);
         }
         public String getName(final String rule) {
-            final String ability = matched(rule).group("ability");
-            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+            return GainChosen.getName(rule);
         }
     },
     WeakenChosen(
@@ -688,8 +655,7 @@ public enum MagicRuleEventAction {
             };
         }
         public String getName(final String rule) {
-            final String ability = matched(rule).group("ability");
-            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+            return GainChosen.getName(rule);
         }
     },
     GainSelf(
@@ -706,22 +672,10 @@ public enum MagicRuleEventAction {
             };
         }
         public MagicTiming getTiming(final String rule) {
-            final Matcher matcher = matched(rule);
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
-            switch (ability) {
-                case Haste:
-                case Vigilance:
-                    return MagicTiming.FirstMain;
-                case FirstStrike:
-                case DoubleStrike:
-                    return MagicTiming.Block;
-                default:
-                    return MagicTiming.Pump;
-            }
+            return GainChosen.getTiming(rule);
         }
         public String getName(final String rule) {
-            final String ability = matched(rule).group("ability");
-            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+            return GainChosen.getName(rule);
         }
         public MagicCondition[] getConditions(final String rule) {
             final Matcher matcher = matched(rule);
@@ -812,15 +766,10 @@ public enum MagicRuleEventAction {
             };
         }
         public MagicTiming getTiming(final String rule) {
-            final Matcher matcher = matched(rule);
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
-            return (ability == MagicAbility.Haste || ability == MagicAbility.Vigilance) ?
-                MagicTiming.FirstMain :
-                MagicTiming.Pump;
+            return GainChosen.getTiming(rule);
         }
         public String getName(final String rule) {
-            final String ability = matched(rule).group("ability");
-            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+            return GainChosen.getName(rule);
         }
     },
     CounterOnSelf(
