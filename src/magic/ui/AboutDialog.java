@@ -4,11 +4,15 @@ import magic.MagicMain;
 import magic.data.IconImages;
 import magic.data.URLUtils;
 
+import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JRootPane;
+import javax.swing.KeyStroke;
 import javax.swing.WindowConstants;
 
 import java.awt.BorderLayout;
@@ -155,7 +159,21 @@ public class AboutDialog extends JDialog implements ActionListener {
         getContentPane().add(aboutPanel, BorderLayout.CENTER);
         getContentPane().add(buttonPanel, BorderLayout.SOUTH);
 
+        setEscapeKeyAction();
+
         setVisible(true);
+    }
+
+    @SuppressWarnings("serial")
+    private void setEscapeKeyAction() {
+        JRootPane root = getRootPane();
+        root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
+        root.getActionMap().put("closeDialog", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                dispose();
+            }
+        });
     }
 
     @Override
