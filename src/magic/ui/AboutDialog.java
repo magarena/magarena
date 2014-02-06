@@ -139,6 +139,12 @@ public class AboutDialog extends JDialog implements ActionListener {
             }
         });
 
+        final JLabel memStatsLabel = new JLabel(MagicMain.getHeapUtilizationStats().replace("\n", ", "));
+        memStatsLabel.setBounds(210, 160, 367, 50);
+        memStatsLabel.setFont(FONT_SMALL);
+        memStatsLabel.setOpaque(false);
+        aboutPanel.add(memStatsLabel);
+
         final JLabel gnuLabel = new JLabel(GNU_TEXT);
         gnuLabel.setBounds(210, 190, 367, 50);
         gnuLabel.setFont(FONT_SMALL);

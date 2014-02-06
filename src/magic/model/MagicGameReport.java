@@ -40,8 +40,8 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
             MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
             if (MagicMain.rootFrame != null) {
                 grabScreenShot(MagicMain.rootFrame);
-                doNotifyUser();
             }
+            doNotifyUser();
             System.exit(1);
         }
     }
@@ -173,6 +173,10 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         sb.append(", OS " + System.getProperty("os.name"));
         sb.append("_" + System.getProperty("os.version"));
         sb.append(" " + System.getProperty("os.arch"));
+        sb.append("\n================================\n");
+        sb.append(MagicMain.getHeapUtilizationStats());
+        sb.append("\n================================\n");
+        sb.append(MagicMain.getRuntimeParameters());
         sb.append("\n\n");
         try {
             //buildReport might throw an exception
