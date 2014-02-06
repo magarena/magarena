@@ -1,0 +1,11 @@
+name=Decorated Griffin
+url=http://magiccards.info/ths/en/7.html
+image=http://mtgimage.com/card/decorated%20griffin.jpg
+value=2.518
+rarity=U
+type=Creature
+subtype=Griffin
+cost={4}{W}
+pt=2/3
+ability=flying;pay {1}{W}:Prevent the next 1 damage that would be dealt to PN this turn.
+timing=main
