@@ -1,0 +1,11 @@
+name=Reckless Reveler
+url=http://magiccards.info/bng/en/106.html
+image=http://mtgimage.com/card/reckless%20reveler.jpg
+value=4
+rarity=C
+type=Creature
+subtype=Satyr
+cost={1}{R}
+pt=2/1
+ability=pay {R}, Sacrifice SN: Destroy target artifact.
+timing=main

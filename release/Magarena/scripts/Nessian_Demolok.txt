@@ -1,0 +1,11 @@
+name=Nessian Demolok
+url=http://magiccards.info/bng/en/128.html
+image=http://mtgimage.com/card/nessian%20demolok.jpg
+value=2.958
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{G}{G}
+pt=3/3
+ability=tribute 3 effect Destroy target noncreature permanent.
+timing=main

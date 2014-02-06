@@ -1,0 +1,13 @@
+name=Heliod's Emissary
+url=http://magiccards.info/ths/en/18.html
+image=http://mtgimage.com/card/heliod's%20emissary.jpg
+value=3.375
+rarity=U
+type=Enchantment,Creature
+subtype=Elk
+cost={3}{W}
+ability=bestow {6}{W};attacks effect Tap target creature an opponent controls.
+given_pt=+3/+3
+given_ability=attacks effect Tap target creature an opponent controls.
+pt=3/3
+timing=main

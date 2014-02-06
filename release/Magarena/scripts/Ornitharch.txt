@@ -1,0 +1,11 @@
+name=Ornitharch
+url=http://magiccards.info/bng/en/23.html
+image=http://mtgimage.com/card/ornitharch.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Archon
+cost={3}{W}{W}
+pt=3/3
+ability=flying;tribute 2 effect PN puts two 1/1 white Bird creature tokens with flying onto the battlefield.
+timing=main

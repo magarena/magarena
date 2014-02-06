@@ -209,6 +209,22 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PreventOwner(
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to pn this turn.",
+        MagicTiming.Pump,
+        "Prevent"
+    ) {
+    	public MagicEventAction getAction(final String rule) {
+            final Matcher matcher = matched(rule);
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicPreventDamageAction(event.getPlayer(),amount));
+                }
+            };
+        }
+    },
     PreventChosen(
         "prevent the next (?<amount>[0-9]+) damage that would be dealt to (?<choice>[^\\.]*) this turn.",
         MagicTargetHint.Positive, 

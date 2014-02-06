@@ -1,0 +1,11 @@
+name=Thunder Brute
+url=http://magiccards.info/bng/en/113.html
+image=http://mtgimage.com/card/thunder%20brute.jpg
+value=3.938
+rarity=U
+type=Creature
+subtype=Cyclops
+cost={4}{R}{R}
+pt=5/5
+ability=trample;tribute 3 effect SN gains haste until end of turn.
+timing=main
