@@ -73,6 +73,7 @@ public enum MagicCounterType {
 	Loyalty("loyalty","{lyl}",1),
 	Luck("luck","{luc}",1),
 	Magnet("magnet","{mag}",0),
+    Manifestation("manifestation","{mft}",0),
 	Mannequin("mannequin","{mqn}",0),
 	Matrix("matrix","{mtx}",1),
 	Mine("mine","{mne}",0),
