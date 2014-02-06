@@ -1,0 +1,9 @@
+name=Festival of the Guildpact
+url=http://magiccards.info/rav/en/17.html
+image=http://mtgimage.com/card/festival%20of%20the%20guildpact.jpg
+value=3.312
+rarity=U
+type=Instant
+cost={X}{W}
+timing=pump
+requires_groovy_code

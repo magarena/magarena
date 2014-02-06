@@ -1,0 +1,12 @@
+name=Dragonlair Spider
+url=http://magiccards.info/cma/en/6.html
+image=http://mtgimage.com/card/dragonlair%20spider.jpg
+value=4.275
+rarity=R
+type=Creature
+subtype=Spider
+cost={2}{R}{R}{G}{G}
+pt=5/6
+ability=reach
+timing=main
+requires_groovy_code

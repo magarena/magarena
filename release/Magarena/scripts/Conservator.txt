@@ -1,0 +1,9 @@
+name=Conservator
+url=http://magiccards.info/4e/en/327.html
+image=http://mtgimage.com/card/conservator.jpg
+value=1.69
+rarity=U
+type=Artifact
+cost={4}
+ability=pay {3},{T}:Prevent the next 2 damage that would be dealt to PN this turn.
+timing=artifact

@@ -1,0 +1,11 @@
+name=Fate Unraveler
+url=http://magiccards.info/bng/en/68.html
+image=http://mtgimage.com/card/fate%20unraveler.jpg
+value=4.295
+rarity=R
+type=Enchantment,Creature
+subtype=Hag
+cost={3}{B}
+pt=3/4
+timing=main
+requires_groovy_code=Underworld Dreams
