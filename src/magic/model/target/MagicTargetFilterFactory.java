@@ -59,6 +59,8 @@ public class MagicTargetFilterFactory {
         single.put("noncreature", TARGET_NONCREATURE);
         single.put("noncreature permanent", TARGET_NONCREATURE);
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
+        single.put("basic land", TARGET_BASIC_LAND);
+        single.put("basic land you control", TARGET_BASIC_LAND_YOU_CONTROL);
         single.put("nonbasic land", TARGET_NONBASIC_LAND);
         single.put("spell", TARGET_SPELL);
         single.put("spell or permanent", TARGET_SPELL_OR_PERMANENT);
