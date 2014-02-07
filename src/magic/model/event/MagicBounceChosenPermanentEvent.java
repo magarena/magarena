@@ -32,7 +32,7 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
             targetChoice,
             MagicBounceTargetPicker.create(),
             EVENT_ACTION,
-            "Return "+targetChoice.getTargetDescription()+"$ to its owner’s hand."
+            "Return "+targetChoice.getTargetDescription()+"$ to its owner's hand."
         );
         conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
     }
