@@ -429,6 +429,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_CREATURE = 
         new MagicTargetChoice("a creature to sacrifice");
     
+    public static final MagicTargetChoice SACRIFICE_BLACK_CREATURE =
+    	new MagicTargetChoice("a black creature to sacrifice");
+    
     public static final MagicTargetChoice SACRIFICE_ARTIFACT = 
         new MagicTargetChoice("an artifact to sacrifice");
     
