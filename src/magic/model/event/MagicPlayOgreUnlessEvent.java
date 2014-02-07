@@ -30,7 +30,7 @@ public class MagicPlayOgreUnlessEvent extends MagicEvent {
             if (event.isYes()) {
                 event.payManaCost(game);
             } else {
-                game.doAction(new MagicPlayTokenAction(event.getRefPlayer(),TokenCardDefinitions.get("Ogre")));
+                game.doAction(new MagicPlayTokenAction(event.getRefPlayer(),TokenCardDefinitions.get("3/3 red Ogre creature token")));
             }
         }
     };
