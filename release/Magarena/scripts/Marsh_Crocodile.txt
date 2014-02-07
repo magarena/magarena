@@ -1,0 +1,12 @@
+name=Marsh Crocodile
+url=http://magiccards.info/ps/en/115.html
+image=http://mtgimage.com/card/marsh%20crocodile.jpg
+value=3.621
+rarity=U
+type=Creature
+subtype=Crocodile
+cost={2}{U}{B}
+pt=4/4
+ability=enters effect Return a blue or black creature you control to its owner's hand.
+timing=main
+requires_groovy_code

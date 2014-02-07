@@ -1,0 +1,12 @@
+name=Demon of Death's Gate
+url=http://magiccards.info/m11/en/92.html
+image=http://mtgimage.com/card/demon%20of%20death's%20gate.jpg
+value=4.344
+rarity=M
+type=Creature
+subtype=Demon
+cost={6}{B}{B}{B}
+pt=9/9
+ability=flying;trample
+timing=main
+requires_groovy_code

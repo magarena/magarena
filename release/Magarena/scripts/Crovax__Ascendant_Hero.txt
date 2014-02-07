@@ -1,0 +1,11 @@
+name=Crovax, Ascendant Hero
+url=http://magiccards.info/pc/en/3.html
+image=http://mtgimage.com/card/crovax,%20ascendant%20hero.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Human
+cost={4}{W}{W}
+pt=4/4
+ability=lord other white creatures get +1/+1;lord nonwhite creatures get -1/-1;pay Pay 2 life:Return SN to its owner's hand.
+timing=main
