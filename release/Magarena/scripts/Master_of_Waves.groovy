@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 1/0 blue Elemental creature token onto the battlefield for each blue mana symbol in the mana costs of permanents he or she controls."
+                "PN puts a 1/0 blue Elemental creature token onto the battlefield equal to PN's devotion to blue. ("+permanent.getController().getDevotion(MagicColor.Blue)+")"
             );
         }
         @Override
