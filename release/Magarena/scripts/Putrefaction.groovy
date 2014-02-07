@@ -8,7 +8,8 @@
                     cardOnStack.getController(),
                     this,
                     "PN discards a card."
-                );
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
