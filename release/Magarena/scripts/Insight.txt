@@ -1,0 +1,9 @@
+name=Insight
+url=http://magiccards.info/ju/pt/40.html
+image=http://mtgimage.com/card/insight.jpg
+value=3.317
+rarity=U
+type=Enchantment
+cost={2}{U}
+timing=enchantment
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Spellshock
+url=http://magiccards.info/ex/en/104.html
+image=http://mtgimage.com/card/spellshock.jpg
+value=3.903
+rarity=U
+type=Enchantment
+cost={2}{R}
+timing=enchantment
+requires_groovy_code

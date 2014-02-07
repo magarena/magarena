@@ -1,0 +1,12 @@
+name=Sol'kanar the Swamp King
+url=http://magiccards.info/tsts/en/100.html
+image=http://mtgimage.com/card/sol'kanar%20the%20swamp%20king.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Demon
+cost={2}{U}{B}{R}
+pt=5/5
+ability=swampwalk
+timing=main
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Warmth
+url=http://magiccards.info/6e/en/52.html
+image=http://mtgimage.com/card/warmth.jpg
+value=3.444
+rarity=U
+type=Enchantment
+cost={1}{W}
+timing=enchantment
+requires_groovy_code

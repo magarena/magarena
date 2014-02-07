@@ -1,0 +1,12 @@
+name=Mindsparker
+url=http://magiccards.info/m14/en/146.html
+image=http://mtgimage.com/card/mindsparker.jpg
+value=4.066
+rarity=R
+type=Creature
+subtype=Elemental
+cost={1}{R}{R}
+pt=3/2
+ability=first strike
+timing=main
+requires_groovy_code

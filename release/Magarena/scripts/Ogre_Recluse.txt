@@ -1,0 +1,11 @@
+name=Ogre Recluse
+url=http://magiccards.info/bok/en/113.html
+image=http://mtgimage.com/card/ogre%20recluse.jpg
+value=1.426
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={3}{R}
+pt=5/4
+timing=main
+requires_groovy_code

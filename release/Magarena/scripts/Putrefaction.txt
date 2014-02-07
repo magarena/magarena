@@ -1,0 +1,9 @@
+name=Putrefaction
+url=http://magiccards.info/mm/en/153.html
+image=http://mtgimage.com/card/putrefaction.jpg
+value=2.341
+rarity=U
+type=Enchantment
+cost={4}{B}
+timing=enchantment
+requires_groovy_code

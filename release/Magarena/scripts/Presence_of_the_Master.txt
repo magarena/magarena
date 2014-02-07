@@ -1,0 +1,9 @@
+name=Presence of the Master
+url=http://magiccards.info/us/en/32.html
+image=http://mtgimage.com/card/presence%20of%20the%20master.jpg
+value=3.695
+rarity=U
+type=Enchantment
+cost={3}{W}
+timing=enchantment
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Quill-Slinger Boggart
+url=http://magiccards.info/lw/en/137.html
+image=http://mtgimage.com/card/quill-slinger%20boggart.jpg
+value=2.281
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={3}{B}
+pt=3/2
+timing=main
+requires_groovy_code
