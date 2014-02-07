@@ -43,7 +43,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
             protected void done() {
                 try {
                     setContent(getScreenContent(get()));
-                    if (!config.showMulliganScreen()) {
+                    if (!config.showMulliganScreen() || Boolean.getBoolean("selfMode")) {
                         container.setVisible(true);
                     }
                 } catch (InterruptedException | ExecutionException e1) {
