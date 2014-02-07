@@ -1,0 +1,9 @@
+name=Overrule
+url=http://magiccards.info/ddi/en/32.html
+image=http://mtgimage.com/card/overrule.jpg
+value=2.981
+rarity=C
+type=Instant
+cost={X}{W}{U}
+timing=counter
+requires_groovy_code
