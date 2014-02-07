@@ -1,0 +1,12 @@
+name=Desecration Elemental
+url=http://magiccards.info/5dn/en/45.html
+image=http://mtgimage.com/card/desecration%20elemental.jpg
+value=3.531
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{B}
+pt=8/8
+ability=fear
+timing=main
+requires_groovy_code

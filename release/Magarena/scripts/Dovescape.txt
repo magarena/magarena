@@ -1,0 +1,9 @@
+name=Dovescape
+url=http://magiccards.info/di/en/143.html
+image=http://mtgimage.com/card/dovescape.jpg
+value=4.141
+rarity=R
+type=Enchantment
+cost={3}{W/U}{W/U}{W/U}
+timing=enchantment
+requires_groovy_code

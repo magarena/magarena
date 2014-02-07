@@ -1,0 +1,11 @@
+name=Predatory Hunger
+url=http://magiccards.info/ex/en/117.html
+image=http://mtgimage.com/card/predatory%20hunger.jpg
+value=3.758
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

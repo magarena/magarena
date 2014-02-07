@@ -1,0 +1,11 @@
+name=Spelltithe Enforcer
+url=http://magiccards.info/gp/en/18.html
+image=http://mtgimage.com/card/spelltithe%20enforcer.jpg
+value=3.284
+rarity=R
+type=Creature
+subtype=Elephant,Wizard
+cost={3}{W}{W}
+pt=3/3
+timing=main
+requires_groovy_code

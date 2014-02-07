@@ -1,0 +1,12 @@
+name=Soot Imp
+url=http://magiccards.info/dvd/en/37.html
+image=http://mtgimage.com/card/soot%20imp.jpg
+value=3.274
+rarity=U
+type=Creature
+subtype=Imp
+cost={1}{B}{B}
+pt=1/2
+ability=flying
+timing=main
+requires_groovy_code

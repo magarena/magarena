@@ -1,0 +1,10 @@
+name=Palliation Accord
+url=http://magiccards.info/di/en/122.html
+image=http://mtgimage.com/card/palliation%20accord.jpg
+value=3.547
+rarity=U
+type=Enchantment
+cost={3}{W}{U}
+ability=pay Remove a shield counter from SN:Prevent the next 1 damage that would be dealt to PN this turn.
+timing=enchantment
+requires_groovy_code

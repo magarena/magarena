@@ -1,0 +1,10 @@
+name=1/1 white and blue Bird creature token with flying
+token=Bird
+image=http://img.photobucket.com/albums/v60/PolarBearGod/Bird.jpg
+value=1
+type=Creature
+subtype=Bird
+color=wu
+cost={0}
+pt=1/1
+ability=flying

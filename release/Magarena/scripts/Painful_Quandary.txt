@@ -1,0 +1,9 @@
+name=Painful Quandary
+url=http://magiccards.info/som/en/73.html
+image=http://mtgimage.com/card/painful%20quandary.jpg
+value=4.022
+rarity=R
+type=Enchantment
+cost={3}{B}{B}
+timing=enchantment
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Unifying Theory
+url=http://magiccards.info/od/en/112.html
+image=http://mtgimage.com/card/unifying%20theory.jpg
+value=3.1
+rarity=R
+type=Enchantment
+cost={1}{U}
+timing=enchantment
+requires_groovy_code

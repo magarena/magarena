@@ -1,0 +1,12 @@
+name=Infested Roothold
+url=http://magiccards.info/ds/en/76.html
+image=http://mtgimage.com/card/infested%20roothold.jpg
+value=2.914
+rarity=U
+type=Creature
+subtype=Wall
+cost={4}{G}
+pt=0/3
+ability=defender;protection from artifacts
+timing=main
+requires_groovy_code

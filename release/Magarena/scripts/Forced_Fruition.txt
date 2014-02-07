@@ -1,0 +1,9 @@
+name=Forced Fruition
+url=http://magiccards.info/lw/en/66.html
+image=http://mtgimage.com/card/forced%20fruition.jpg
+value=4.144
+rarity=R
+type=Enchantment
+cost={4}{U}{U}
+timing=enchantment
+requires_groovy_code

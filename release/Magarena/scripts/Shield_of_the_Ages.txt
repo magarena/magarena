@@ -1,0 +1,9 @@
+name=Shield of the Ages
+url=http://magiccards.info/ia/en/310.html
+image=http://mtgimage.com/card/shield%20of%20the%20ages.jpg
+value=2.548
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {2}:Prevent the next 1 damage that would be dealt to PN this turn.
+timing=artifact
