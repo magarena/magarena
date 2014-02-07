@@ -76,6 +76,7 @@ public class MagicTargetFilterFactory {
         single.put("white spell", TARGET_WHITE_SPELL);
         single.put("instant or sorcery spell", TARGET_INSTANT_OR_SORCERY_SPELL);
         single.put("instant spell", TARGET_INSTANT_SPELL);
+        single.put("blue or black creature you control", TARGET_BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL);
         single.put("creature without flying you don't control", MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("nonartifact creature", TARGET_NONARTIFACT_CREATURE);
