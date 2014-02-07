@@ -216,21 +216,16 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicTapEvent(source));
             } else if (cost.equals("{Q}")) {
                 events.add(new MagicUntapEvent(source));
-            } else if (cost.equals("Pay 1 life")) {
-                events.add(new MagicPayLifeEvent(source, 1));
-            } else if (cost.equals("Pay 2 life")) {
-                events.add(new MagicPayLifeEvent(source, 2));
-            } else if (cost.equals("Pay 3 life")) {
-                events.add(new MagicPayLifeEvent(source, 3));
-            } else if (cost.equals("Pay 7 life")) {
-                events.add(new MagicPayLifeEvent(source, 7));
+            } else if (cost.contains("Pay ") && cost.contains(" life")) {
+            	final String costText=cost.replace("Pay ","").replace(" life","");
+                events.add(new MagicPayLifeEvent(source, Integer.parseInt(costText)));
             } else if (cost.equals("{Once}")) {
                 events.add(new MagicPlayAbilityEvent(source));
             } else if (cost.equals("{Sorcery}")) {
                 events.add(new MagicSorceryConditionEvent(source));
             } else if (cost.equals("Return SN to its owner's hand")) {
                 events.add(new MagicBouncePermanentEvent(source,source));
-            } else if (cost.contains(" from SN")) {
+            } else if (cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN")) {
             	final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
             	final int amount = englishToInt(costText[0]);
             	final String counterType = costText[1];
