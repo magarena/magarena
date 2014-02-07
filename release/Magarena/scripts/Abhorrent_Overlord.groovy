@@ -24,7 +24,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 1/1 black Harpy creature token with flying onto the battlefield for each black mana symbol in the mana costs of permanents he or she controls."
+                "PN puts a 1/1 black Harpy creature token with flying onto the battlefield equal to PN's devotion to black. ("+permanent.getController().getDevotion(MagicColor.Black)+")"
             );
         }
         @Override
