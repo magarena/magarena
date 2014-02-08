@@ -4,33 +4,38 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-public class MagicTapTargetPicker extends MagicTargetPicker<MagicPermanent> {
-
-    private final boolean toTap;
-
-    public static MagicTapTargetPicker Untap = new MagicTapTargetPicker(false);
-    public static MagicTapTargetPicker Tap = new MagicTapTargetPicker(true);
-
-    private MagicTapTargetPicker(final boolean aToTap) {
-        toTap = aToTap;
+public abstract class MagicTapTargetPicker extends MagicTargetPicker<MagicPermanent> {
+                
+    private static final int score(final MagicPermanent permanent) {
+        return 1 + permanent.getPower() + permanent.getActivations().size();
     }
 
-    @Override
-    protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-        final boolean isTapped = permanent.isTapped();
-        if (isTapped == toTap) {
-            return 0;
-        }
-        final boolean isController = permanent.isController(player);
-        return (isController == isTapped) ?
-            1 + permanent.getPower()+permanent.getActivations().size() :
-            0;
-    }
-    
-    public static MagicTapTargetPicker TapOrUntap = new MagicTapTargetPicker(false) {
+    public static MagicTapTargetPicker Tap = new MagicTapTargetPicker() {
         @Override
         protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
-            return 1 + permanent.getPower()+permanent.getActivations().size();
+            if (permanent.isTapped()) {
+                return 0;
+            } else {
+                return permanent.isController(player) ? -score(permanent) : score(permanent);
+            }
+        }
+    };
+    
+    public static MagicTapTargetPicker Untap = new MagicTapTargetPicker() {
+        @Override
+        protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            if (permanent.isUntapped()) {
+                return 0;
+            } else {
+                return permanent.isOpponent(player) ? -score(permanent) : score(permanent);
+            }
+        }
+    };
+
+    public static MagicTapTargetPicker TapOrUntap = new MagicTapTargetPicker() {
+        @Override
+        protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            return score(permanent);
         }
     };
 }
