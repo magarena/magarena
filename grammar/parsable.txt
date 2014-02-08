@@ -271,6 +271,7 @@
 {1}, {t}, sacrifice @: draw two cards, then put a card from your hand on top of your library.
 {1}, {t}, sacrifice @: put a 1/1 colorless myr artifact creature token onto the battlefield.
 {1}, {t}, sacrifice @: target creature gets +2/+2 until end of turn.
+{1}, {t}: scry 2.
 {1}, {t}, tap an untapped creature you control: put a 1/1 green saproling creature token onto the battlefield.
 {1}, {t}, tap an untapped creature you control: target creature gets +1/+1 until end of turn.
 {1}, {t}: tap target artifact, creature, or land.
@@ -309,6 +310,7 @@
 {1}{u}, sacrifice @: counter target creature spell.
 {1}{u}, sacrifice @: draw a card.
 {1}{u}, sacrifice @: return target creature to its owner's hand.
+{1}{u}: scry 1.
 {1}{u}: target creature gains flying until end of turn.
 {1}{u}: target creature you control can't be blocked this turn.
 {1}{u}, {t}: draw a card, then discard a card.
@@ -814,6 +816,7 @@ all creatures get +1/+1 until end of turn.
 all creatures get -2/-0 until end of turn.
 all creatures get +2/+2.
 all creatures get -2/-2 until end of turn.
+all creatures get -2/-2 until end of turn. scry 1.
 all creatures get -5/-0.
 all creatures get -x/-x until end of turn.
 all creatures get +x/-x until end of turn.
@@ -1016,6 +1019,7 @@ at the beginning of your upkeep, sacrifice @ unless you sacrifice a mountain.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice an enchantment.
 at the beginning of your upkeep, sacrifice @ unless you sacrifice a pegasus.
 at the beginning of your upkeep, sacrifice @ unless you tap an untapped creature you control.
+at the beginning of your upkeep, scry 1.
 at the beginning of your upkeep, tap target creature.
 at the beginning of your upkeep, target creature other than @ gets -1/-1 until end of turn.
 at the beginning of your upkeep, target player draws a card and loses 1 life.
@@ -1198,6 +1202,7 @@ buyback {5}
 @ can't be countered.
 @ can't block.
 @ can't block and can't be blocked.
+cascade
 champion a creature
 champion a faerie
 champion a goblin
@@ -1208,6 +1213,7 @@ champion an elemental
 champion an elf
 champion a treefolk or warrior
 changeling
+cipher
 cleric creatures have vigilance.
 counter target artifact or enchantment spell.
 counter target artifact spell.
@@ -1236,7 +1242,9 @@ counter target spell. its controller loses 3 life.
 counter target spell. its controller loses 3 life and you gain 3 life.
 counter target spell. its controller puts the top two cards of his or her library into his or her graveyard.
 counter target spell. return target permanent to its owner's hand.
+counter target spell. scry 1.
 counter target spell unless its controller pays {1}.
+counter target spell unless its controller pays {1}. scry 1.
 counter target spell unless its controller pays {1}. that player discards a card.
 counter target spell unless its controller pays {2}.
 counter target spell unless its controller pays {3}.
@@ -1388,10 +1396,12 @@ cycling {w}
 @ deals 1 damage to each creature with flying and each player.
 @ deals 1 damage to each creature without flying.
 @ deals 1 damage to each creature without flying and each player.
+@ deals 1 damage to each creature your opponents control. scry 1.
 @ deals 1 damage to target creature.
 @ deals 1 damage to target creature and 1 damage to target player.
 @ deals 1 damage to target creature and 1 damage to that creature's controller.
 @ deals 1 damage to target creature or player.
+@ deals 1 damage to target creature or player. scry 1.
 @ deals 1 damage to target creature. put a -1/-1 counter on that creature.
 @ deals 1 damage to target creature you don't control.
 @ deals 1 damage to target player and 1 damage to target creature that player controls.
@@ -1413,6 +1423,7 @@ cycling {w}
 @ deals 2 damage to target creature or player and 1 damage to another target creature or player.
 @ deals 2 damage to target creature or player and 3 damage to you.
 @ deals 2 damage to target creature or player. return @ to its owner's hand, then discard a card at random.
+@ deals 2 damage to target creature or player. scry 2.
 @ deals 2 damage to target creature. that creature can't block this turn.
 @ deals 2 damage to target creature with flying. that creature loses flying until end of turn.
 @ deals 2 damage to target opponent and you gain 2 life.
@@ -1424,6 +1435,7 @@ cycling {w}
 @ deals 3 damage to target creature.
 @ deals 3 damage to target creature or player.
 @ deals 3 damage to target creature or player and you gain 3 life.
+@ deals 3 damage to target creature or player. scry 1.
 @ deals 3 damage to target creature or player. you gain 3 life.
 @ deals 3 damage to target creature. other creatures can't attack this turn.
 @ deals 3 damage to target creature with flying.
@@ -1534,6 +1546,7 @@ destroy target artifact or creature. it can't be regenerated.
 destroy target artifact or enchantment.
 destroy target artifact or enchantment. @ deals 2 damage to that permanent's controller.
 destroy target artifact or enchantment. its controller gains 4 life.
+destroy target artifact or enchantment. scry 2.
 destroy target artifact or enchantment with converted mana cost x. it can't be regenerated. you gain x life.
 destroy target artifact or enchantment. you gain 3 life.
 destroy target artifact or enchantment. you gain 4 life.
@@ -1570,6 +1583,7 @@ destroy target creature with flying. you gain 2 life.
 destroy target creature with power 2 or less.
 destroy target creature with power 4 or greater.
 destroy target creature with power 4 or greater. it can't be regenerated.
+destroy target creature with power 4 or greater. scry 1.
 destroy target creature with power x or less.
 destroy target creature. you gain 4 life.
 destroy target enchanted permanent.
@@ -2058,6 +2072,7 @@ gain control of target creature. untap that creature. it gains haste until end o
 gain control of target creature until end of turn. put a +1/+1 counter on it and untap it. that creature gains haste until end of turn.
 gain control of target creature until end of turn. untap it. it gains trample and haste until end of turn.
 gain control of target creature until end of turn. untap that creature. it gains haste until end of turn.
+gain control of target creature until end of turn. untap that creature. it gains haste until end of turn. scry 1.
 gain control of target creature until end of turn. untap that creature. it gets +x/+0 and gains haste until end of turn.
 gain control of target creature until end of turn. untap that creature. until end of turn, it gets +2/+0 and gains haste.
 gain control of target creature with converted mana cost x or less.
@@ -2668,6 +2683,7 @@ return target creature card with converted mana cost x or less from your graveya
 return target creature to its owner's hand.
 return target creature to its owner's hand. its controller draws a card.
 return target creature to its owner's hand. its controller loses 1 life.
+return target creature to its owner's hand. scry 1.
 return target creature to its owner's hand. you gain 2 life.
 return target creature you don't control to its owner's hand.
 return target enchanted permanent to its owner's hand.
@@ -2791,6 +2807,7 @@ sacrifice a creature: regenerate @.
 sacrifice a creature: regenerate enchanted creature.
 sacrifice a creature: regenerate target creature.
 sacrifice a creature, return @ to its owner's hand: return target creature card from your graveyard to the battlefield. activate this ability only any time you could cast a sorcery.
+sacrifice a creature: scry 1.
 sacrifice a creature: target creature gets -1/-1 until end of turn.
 sacrifice @: add {b} to your mana pool.
 sacrifice @: add {g} to your mana pool.
@@ -2916,6 +2933,11 @@ sacrifice @: you may put a land card from your hand onto the battlefield.
 sacrifice @: you may tap or untap target creature.
 saproling creatures and other treefolk creatures get +1/+1.
 saproling creatures get +1/+1.
+scry 2.
+scry 2, then draw a card.
+scry 2, then draw two cards. you lose 2 life.
+scry 3.
+scry 4, then draw two cards.
 shadow
 shroud
 skeleton creatures you control and other zombie creatures you control get +1/+1 and have deathtouch.
@@ -3122,6 +3144,7 @@ target creature gets +2/+2 and gains trample until end of turn.
 target creature gets -2/-2 until end of turn.
 target creature gets +2/+2 until end of turn.
 target creature gets +2/+2 until end of turn. another target creature gets -2/-2 until end of turn.
+target creature gets +2/+2 until end of turn. scry 1.
 target creature gets +2/+2 until end of turn. untap that creature.
 target creature gets +2/+4 until end of turn.
 target creature gets +3/+0 and gains first strike until end of turn.
@@ -3129,8 +3152,10 @@ target creature gets +3/+0 and gains haste until end of turn.
 target creature gets +3/+0 and gains trample until end of turn.
 target creature gets -3/-0 until end of turn.
 target creature gets +3/+0 until end of turn.
+target creature gets -3/-0 until end of turn. scry 1.
 target creature gets +3/+1 and gains trample until end of turn.
 target creature gets -3/-1 until end of turn.
+target creature gets +3/+1 until end of turn. scry 1.
 target creature gets +3/+3 and gains double strike until end of turn.
 target creature gets +3/+3 and gains first strike until end of turn.
 target creature gets +3/+3 and gains flying until end of turn.
@@ -3929,6 +3954,10 @@ when @ enters the battlefield, sacrifice it unless you return an untapped swamp 
 when @ enters the battlefield, sacrifice it unless you sacrifice a forest.
 when @ enters the battlefield, sacrifice it unless you sacrifice a land.
 when @ enters the battlefield, sacrifice it unless you sacrifice an artifact.
+when @ enters the battlefield, scry 1.
+when @ enters the battlefield, scry 1, then scry 2, then scry 3.
+when @ enters the battlefield, scry 2.
+when @ enters the battlefield, scry 3.
 when @ enters the battlefield, tap all islands.
 when @ enters the battlefield, tap all lands target player controls.
 when @ enters the battlefield, tap all lands you control.
@@ -4141,6 +4170,7 @@ whenever another black creature you control dies, put a 1/1 white spirit creatur
 whenever another blue creature enters the battlefield under your control, target player puts the top two cards of his or her library into his or her graveyard.
 whenever another creature dies, @ deals 2 damage to target player.
 whenever another creature dies, put a +1/+1 counter on @.
+whenever another creature dies, scry 1.
 whenever another creature dies, tap @.
 whenever another creature dies, untap @.
 whenever another creature dies, you may draw a card. if you do, discard a card.
@@ -4274,6 +4304,7 @@ whenever @ attacks, put a +1/+1 counter on it.
 whenever @ attacks, return another creature you control to its owner's hand.
 whenever @ attacks, sacrifice it unless you sacrifice an island.
 whenever @ attacks, samurai creatures you control get +1/+1 until end of turn.
+whenever @ attacks, scry 3.
 whenever @ attacks, tap all artifacts.
 whenever @ attacks, target creature can't block this turn.
 whenever @ attacks, target creature gets +0/+3 until end of turn.
@@ -4458,6 +4489,8 @@ whenever you cast an instant or sorcery spell, @ gets +3/+0 until end of turn.
 whenever you cast an instant or sorcery spell, @ gets +4/+0 until end of turn.
 whenever you cast an instant or sorcery spell, put a 1/1 red elemental creature token onto the battlefield.
 whenever you cast an instant or sorcery spell, put a 2/2 blue drake creature token with flying onto the battlefield.
+whenever you cast an instant or sorcery spell, scry 1.
+whenever you cast an instant or sorcery spell, you may pay {1}. if you do, scry 2.
 whenever you cast an instant or sorcery spell, you may put a charge counter on @.
 whenever you cast an instant or sorcery spell, you may put a charge counter on @. if you do, @ deals damage equal to the number of charge counters on it to target creature or player.
 whenever you cast an instant or sorcery spell, you may untap @.

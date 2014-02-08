@@ -110,6 +110,7 @@ Action
     / AnimateActionReminder
     / ChangeLoyaltyAction
     / KickerAction
+    / ScryAction
     ;
 
 Keyword
@@ -181,6 +182,8 @@ Keyword
     / "unleash"
     / "evoke" SPACE ManaCost
     / "indestructible"
+    / "cipher"
+    / "cascade"
     ;
 
 ColorlessCost
@@ -298,6 +301,10 @@ IfCondition
 
 KickerAction
     = "if it was kicked, " Effect (" instead")?
+    ;
+
+ScryAction
+    = "scry " Number
     ;
 
 AnimateAction
