@@ -1,0 +1,9 @@
+name=Erratic Portal
+url=http://magiccards.info/ex/en/132.html
+image=http://mtgimage.com/card/erratic%20portal.jpg
+value=4.212
+rarity=R
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
