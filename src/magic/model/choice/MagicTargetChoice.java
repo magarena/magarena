@@ -459,6 +459,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_GOBLIN = 
         new MagicTargetChoice("a Goblin to sacrifice");
     
+    public static final MagicTargetChoice SACRIFICE_SWAMP = 
+        new MagicTargetChoice("a Swamp to sacrifice");
+    
     public static final MagicTargetChoice SACRIFICE_NON_ZOMBIE = 
         new MagicTargetChoice("a non-Zombie creature to sacrifice");
     
