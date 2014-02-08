@@ -1,0 +1,10 @@
+name=Mistvein Borderpost
+url=http://magiccards.info/arc/en/90.html
+image=http://mtgimage.com/card/mistvein%20borderpost.jpg
+value=2.909
+rarity=C
+type=Artifact
+cost={1}{U}{B}
+ability=enters tapped;tap add mana {U} or {B}
+timing=artifact
+requires_groovy_code=Fieldmist Borderpost

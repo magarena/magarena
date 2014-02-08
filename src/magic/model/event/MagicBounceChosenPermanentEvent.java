@@ -8,7 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicSacrificeTargetPicker;
+import magic.model.target.MagicBounceTargetPicker;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
@@ -30,9 +30,9 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
             source,
             player,
             targetChoice,
-            MagicSacrificeTargetPicker.create(),
+            MagicBounceTargetPicker.create(),
             EVENT_ACTION,
-            "Return "+targetChoice.getTargetDescription()+"$ to its owner’s hand."
+            "Return "+targetChoice.getTargetDescription()+"$ to its owner's hand."
         );
         conds = new MagicCondition[]{MagicConditionFactory.HasOptions(targetChoice)};
     }

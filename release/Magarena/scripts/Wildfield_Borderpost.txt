@@ -1,0 +1,10 @@
+name=Wildfield Borderpost
+url=http://magiccards.info/arb/en/80.html
+image=http://mtgimage.com/card/wildfield%20borderpost.jpg
+value=3
+rarity=C
+type=Artifact
+cost={1}{G}{W}
+ability=enters tapped;tap add mana {G} or {W}
+timing=artifact
+requires_groovy_code=Fieldmist Borderpost

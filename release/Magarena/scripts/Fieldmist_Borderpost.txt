@@ -1,0 +1,10 @@
+name=Fieldmist Borderpost
+url=http://magiccards.info/arc/en/85.html
+image=http://mtgimage.com/card/fieldmist%20borderpost.jpg
+value=2.821
+rarity=C
+type=Artifact
+cost={1}{W}{U}
+ability=enters tapped;tap add mana {W} or {U}
+timing=artifact
+requires_groovy_code

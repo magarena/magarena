@@ -1,0 +1,9 @@
+name=Essence Vortex
+url=http://magiccards.info/ia/en/365.html
+image=http://mtgimage.com/card/essence%20vortex.jpg
+value=3.353
+rarity=U
+type=Instant
+cost={1}{U}{B}
+timing=removal
+requires_groovy_code

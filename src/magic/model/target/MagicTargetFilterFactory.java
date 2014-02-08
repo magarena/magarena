@@ -48,6 +48,7 @@ public class MagicTargetFilterFactory {
         factory.put("creatures", TARGET_CREATURE);
         factory.put("creatures without flying", TARGET_CREATURE_WITHOUT_FLYING);
         factory.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
+        factory.put("nonwhite creatures", TARGET_NONWHITE_CREATURE);
         factory.put("artifacts", TARGET_ARTIFACT);
        
         // used by MagicTargetChoice
@@ -55,10 +56,13 @@ public class MagicTargetFilterFactory {
         single.put("player", TARGET_PLAYER);
         single.put("1/1 creature", TARGET_1_1_CREATURE);
         single.put("nonblack creature", TARGET_NONBLACK_CREATURE);
+        single.put("black creature you control", TARGET_BLACK_CREATURE_YOU_CONTROL);
         single.put("non-Angel creature you control", TARGET_NON_ANGEL_CREATURE_YOU_CONTROL);
         single.put("noncreature", TARGET_NONCREATURE);
         single.put("noncreature permanent", TARGET_NONCREATURE);
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
+        single.put("basic land", TARGET_BASIC_LAND);
+        single.put("basic land you control", TARGET_BASIC_LAND_YOU_CONTROL);
         single.put("nonbasic land", TARGET_NONBASIC_LAND);
         single.put("spell", TARGET_SPELL);
         single.put("spell or permanent", TARGET_SPELL_OR_PERMANENT);
@@ -74,6 +78,7 @@ public class MagicTargetFilterFactory {
         single.put("white spell", TARGET_WHITE_SPELL);
         single.put("instant or sorcery spell", TARGET_INSTANT_OR_SORCERY_SPELL);
         single.put("instant spell", TARGET_INSTANT_SPELL);
+        single.put("blue or black creature you control", TARGET_BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL);
         single.put("creature without flying you don't control", MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("nonartifact creature", TARGET_NONARTIFACT_CREATURE);

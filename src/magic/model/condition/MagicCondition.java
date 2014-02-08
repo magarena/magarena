@@ -128,6 +128,12 @@ public interface MagicCondition {
         }
     };
 
+    MagicCondition THREE_BLACK_CREATURES_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanents(MagicTargetFilter.TARGET_BLACK_CREATURE_YOU_CONTROL)>=3;
+        }
+    };
+    
     MagicCondition METALCRAFT_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanents(MagicType.Artifact)>=3;
@@ -147,6 +153,12 @@ public interface MagicCondition {
         }
     };
 
+    MagicCondition BASIC_LAND_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanents(MagicType.Basic)>=1;
+        }
+    };
+    
     MagicCondition TWO_MOUNTAINS_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanents(MagicSubType.Mountain)>=2;

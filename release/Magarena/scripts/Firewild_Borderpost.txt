@@ -1,0 +1,10 @@
+name=Firewild Borderpost
+url=http://magiccards.info/arb/en/54.html
+image=http://mtgimage.com/card/firewild%20borderpost.jpg
+value=3.027
+rarity=C
+type=Artifact
+cost={1}{R}{G}
+ability=enters tapped;tap add mana {R} or {G}
+timing=artifact
+requires_groovy_code=Fieldmist Borderpost

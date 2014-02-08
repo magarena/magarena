@@ -1,0 +1,11 @@
+name=Ethereal Champion
+url=http://magiccards.info/6e/en/20.html
+image=http://mtgimage.com/card/ethereal%20champion.jpg
+value=2.014
+rarity=R
+type=Creature
+subtype=Avatar
+cost={2}{W}{W}{W}
+pt=3/4
+ability=pay Pay 1 life:Prevent the next 1 damage that would be dealt to SN this turn.
+timing=main

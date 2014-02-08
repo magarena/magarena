@@ -1,0 +1,10 @@
+name=Veinfire Borderpost
+url=http://magiccards.info/arb/en/48.html
+image=http://mtgimage.com/card/veinfire%20borderpost.jpg
+value=2.978
+rarity=C
+type=Artifact
+cost={1}{B}{R}
+ability=enters tapped;tap add mana {B} or {R}
+timing=artifact
+requires_groovy_code=Fieldmist Borderpost
