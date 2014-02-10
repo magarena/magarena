@@ -1,0 +1,12 @@
+name=Dominus of Fealty
+url=http://magiccards.info/eve/en/102.html
+image=http://magiccards.info/scans/en/eve/102.jpg
+value=4.092
+rarity=R
+type=Creature
+subtype=Avatar,Spirit
+cost={U/R}{U/R}{U/R}{U/R}{U/R}
+pt=4/4
+ability=flying
+timing=main
+requires_groovy_code
