@@ -1,5 +1,6 @@
 package magic.model.choice;
 
+import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -93,7 +94,7 @@ public class MagicMulliganChoice extends MagicChoice {
             public MayChoicePanel call() {
                 final boolean showMulliganScreen =
                         MulliganScreen.isActive() ||
-                        (player.getHandSize() == 7 && GeneralConfig.getInstance().showMulliganScreen());
+                        (player.getHandSize() == DuelConfig.getInstance().getHandSize() && GeneralConfig.getInstance().showMulliganScreen());
                 if (showMulliganScreen) {
                     return new MulliganChoicePanel(controller, source, "You may take a mulligan.", player.getHand());
                 } else {
