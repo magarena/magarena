@@ -1,0 +1,12 @@
+name=Deity of Scars
+url=http://magiccards.info/eve/en/118.html
+image=http://magiccards.info/scans/en/eve/118.jpg
+value=4.056
+rarity=R
+type=Creature
+subtype=Avatar,Spirit
+cost={B/G}{B/G}{B/G}{B/G}{B/G}
+pt=7/7
+ability=trample;enters with -1/-1 2
+timing=main
+requires_groovy_code
