@@ -255,6 +255,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_NONBLACK_CREATURE = 
         MagicTargetChoice.Positive("target nonblack creature");
     
+    public static final MagicTargetChoice NEG_TARGET_WHITE_CREATURE =
+    	MagicTargetChoice.Negative("target white creature");
+    
     public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE = 
         MagicTargetChoice.Negative("target nonartifact creature");
     
@@ -566,6 +569,9 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice BASIC_LAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a basic land card from your library");
+    
+    public static final MagicTargetChoice FOREST_CARD_FROM_LIBRARY =
+    	new MagicTargetChoice("a Forest card from your library");
     
     public static final MagicTargetChoice FOREST_OR_ISLAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a Forest or Island card from your library");
