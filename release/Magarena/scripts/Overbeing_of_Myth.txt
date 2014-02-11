@@ -1,10 +1,10 @@
 name=Overbeing of Myth
 url=http://magiccards.info/eve/en/157.html
-image=http://magiccards.info/scans/en/eve/157.jpg
+image=http://mtgimage.com/card/overbeing%20of%20myth.jpg
 value=4.138
 rarity=R
 type=Creature
-subtype=Avatar,Spirit
+subtype=Spirit,Avatar
 cost={G/U}{G/U}{G/U}{G/U}{G/U}
 timing=main
 requires_groovy_code

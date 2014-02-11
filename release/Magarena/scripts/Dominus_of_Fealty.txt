@@ -1,10 +1,10 @@
 name=Dominus of Fealty
 url=http://magiccards.info/eve/en/102.html
-image=http://magiccards.info/scans/en/eve/102.jpg
+image=http://mtgimage.com/card/dominus%20of%20fealty.jpg
 value=4.092
 rarity=R
 type=Creature
-subtype=Avatar,Spirit
+subtype=Spirit,Avatar
 cost={U/R}{U/R}{U/R}{U/R}{U/R}
 pt=4/4
 ability=flying

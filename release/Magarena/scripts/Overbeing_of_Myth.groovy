@@ -6,7 +6,7 @@
             pt.set(amount,amount);
         }
     },
-	new MagicAtDrawTrigger() {
+    new MagicAtDrawTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return upkeepPlayer == permanent.getController() ?
