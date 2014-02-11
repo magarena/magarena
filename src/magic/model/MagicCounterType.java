@@ -2,23 +2,24 @@ package magic.model;
 
 public enum MagicCounterType {
 // scores: (All assume owner and controller of permanent with counters on it)
-// 0=Ignore (for stat adjusting counters or counters that are used positively and negatively, or counters that mark a rule change for that card while present)
+// 0=Ignore (for counters that are used positively and negatively, or counters that mark a rule change for that card while present)
 // 1=Count (counters that are only used positively (eg. Counting a spendable resource, negative impact if decreased to certain #, positive impact if increased to certain #))
 // -1=Count (counters that are only used negatively (eg. positive impact if decreased to certain #, negative impact if increased to certain #))
+// Stat adjusting counters use a value equal to the sum of the pt change
 	
-	PlusZeroPlusOne("+0/+1","{0+}",0),
-	PlusZeroPlusTwo("+0/+2","{0+2}",0),
-	PlusOnePlusZero("+1/+0","{+0}",0),
-	PlusOne("+1/+1","{++}",0),
-	PlusOnePlusTwo("+1/+2","{++2}",0),
-	PlusTwoPlusZero("+2/+0","{+2+0}",0),
-	PlusTwo("+2/+2","{+2+2}",0),
-	MinusZeroMinusOne("-0/-1","{0-}",0),
-	MinusZeroMinusTwo("-0/-2","{0-2}",0),
-	MinusOneMinusZero("-1/-0","{-0}",0),
-	MinusOne("-1/-1","{--}",0),
-	MinusTwoMinusOne("-2/-1","{-2-}",0),
-	MinusTwo("-2/-2","{-2-2}",0),
+	PlusZeroPlusOne("+0/+1","{0+}",1),
+	PlusZeroPlusTwo("+0/+2","{0+2}",2),
+	PlusOnePlusZero("+1/+0","{+0}",1),
+	PlusOne("+1/+1","{++}",2),
+	PlusOnePlusTwo("+1/+2","{++2}",3),
+	PlusTwoPlusZero("+2/+0","{+2+0}",2),
+	PlusTwo("+2/+2","{+2+2}",4),
+	MinusZeroMinusOne("-0/-1","{0-}",-1),
+	MinusZeroMinusTwo("-0/-2","{0-2}",-2),
+	MinusOneMinusZero("-1/-0","{-0}",-1),
+	MinusOne("-1/-1","{--}",-2),
+	MinusTwoMinusOne("-2/-1","{-2-}",-3),
+	MinusTwo("-2/-2","{-2-2}",-4),
 
 	Age("age","{age}",0),
 	Aim("aim","{aim}",1),
