@@ -136,6 +136,11 @@ public class IconImages {
     public static final ImageIcon LOYALTYCOUNTER=loadIcon("loyalty-counter.png");
     public static final ImageIcon KICOUNTER=loadIcon("ki-counter.png");
     public static final ImageIcon DEPLETIONCOUNTER=loadIcon("depletion-counter.png");
+    public static final ImageIcon MININGCOUNTER=loadIcon("mining-counter.png");
+    public static final ImageIcon MUSTERCOUNTER=loadIcon("muster-counter.png");
+    public static final ImageIcon TREASURECOUNTER=loadIcon("treasure-counter.png");
+    public static final ImageIcon STRIFECOUNTER=loadIcon("strike-counter.png");
+    public static final ImageIcon STUDYCOUNTER=loadIcon("study-counter.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);

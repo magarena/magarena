@@ -236,6 +236,26 @@ public class ImageDrawingUtils {
                     g.drawImage(IconImages.DEPLETIONCOUNTER.getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
+                }  else if (counterType == MagicCounterType.Mining) {
+                    g.drawImage(IconImages.MININGCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                }  else if (counterType == MagicCounterType.Muster) {
+                    g.drawImage(IconImages.MUSTERCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                }  else if (counterType == MagicCounterType.Treasure) {
+                    g.drawImage(IconImages.TREASURECOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                }  else if (counterType == MagicCounterType.Strife) {
+                    g.drawImage(IconImages.STRIFECOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
+                }   else if (counterType == MagicCounterType.Study) {
+                    g.drawImage(IconImages.STUDYCOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 }
             }
         }
