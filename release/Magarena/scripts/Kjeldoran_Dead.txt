@@ -1,0 +1,12 @@
+name=Kjeldoran Dead
+url=http://magiccards.info/5e/en/32.html
+image=http://mtgimage.com/card/kjeldoran%20dead.jpg
+value=3.66
+rarity=C
+type=Creature
+subtype=Skeleton
+cost={B}
+pt=3/1
+ability=regenerate {B}
+timing=main
+requires_groovy_code=Accursed_Centaur

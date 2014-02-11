@@ -1,0 +1,11 @@
+name=Goblin Turncoat
+url=http://magiccards.info/le/en/72.html
+image=http://mtgimage.com/card/goblin%20turncoat.jpg
+value=2.632
+rarity=C
+type=Creature
+subtype=Goblin,Mercenary
+cost={1}{B}
+pt=2/1
+timing=main
+requires_groovy_code

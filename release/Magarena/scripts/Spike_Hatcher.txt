@@ -1,0 +1,12 @@
+name=Spike Hatcher
+url=http://magiccards.info/ex/en/126.html
+image=http://mtgimage.com/card/spike%20hatcher.jpg
+value=3.29
+rarity=R
+type=Creature
+subtype=Spike
+cost={6}{G}
+pt=0/0
+ability=enters with counter +1/+1 6;pay {2},Remove a +1/+1 counter from SN:Put a +1/+1 counter on target creature.
+timing=main
+requires_groovy_code

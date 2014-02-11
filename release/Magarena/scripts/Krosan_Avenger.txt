@@ -1,0 +1,12 @@
+name=Krosan Avenger
+url=http://magiccards.info/od/en/247.html
+image=http://mtgimage.com/card/krosan%20avenger.jpg
+value=3.25
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={2}{G}
+pt=3/1
+ability=trample
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Rootwater Alligator
+url=http://magiccards.info/ex/en/122.html
+image=http://mtgimage.com/card/rootwater%20alligator.jpg
+value=2.571
+rarity=C
+type=Creature
+subtype=Crocodile
+cost={3}{G}
+pt=3/2
+timing=main
+requires_groovy_code

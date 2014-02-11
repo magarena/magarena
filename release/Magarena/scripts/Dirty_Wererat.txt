@@ -1,0 +1,11 @@
+name=Dirty Wererat
+url=http://magiccards.info/od/en/130.html
+image=http://mtgimage.com/card/dirty%20wererat.jpg
+value=2.828
+rarity=C
+type=Creature
+subtype=Rat,Human,Minion
+cost={3}{B}
+pt=2/3
+timing=main
+requires_groovy_code=Childhood Horror;Dirty Wererat

@@ -1,0 +1,12 @@
+name=Centaur Veteran
+url=http://magiccards.info/tr/en/123.html
+image=http://mtgimage.com/card/centaur%20veteran.jpg
+value=1.529
+rarity=C
+type=Creature
+subtype=Centaur
+cost={5}{G}
+pt=3/3
+ability=trample
+timing=main
+requires_groovy_code

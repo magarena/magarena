@@ -1,0 +1,12 @@
+name=Devouring Strossus
+url=http://magiccards.info/in/en/101.html
+image=http://mtgimage.com/card/devouring%20strossus.jpg
+value=4.218
+rarity=R
+type=Creature
+subtype=Horror
+cost={5}{B}{B}{B}
+pt=9/9
+ability=flying;trample
+timing=main
+requires_groovy_code
