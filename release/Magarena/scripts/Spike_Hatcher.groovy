@@ -7,7 +7,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}"),
-                new MagicRemoveCounterEvent(source,MagicCounterType.PLUSONE,1),
+                new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1),
                 new MagicRegenerationConditionsEvent(source,this)
             ];
         }
