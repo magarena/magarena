@@ -1,10 +1,10 @@
 name=Deus of Calamity
 url=http://magiccards.info/shm/en/204.html
-image=http://magiccards.info/scans/en/shm/204.jpg
+image=http://mtgimage.com/card/deus%20of%20calamity.jpg
 value=4.214
 rarity=R
 type=Creature
-subtype=Avatar,Spirit
+subtype=Spirit,Avatar
 cost={R/G}{R/G}{R/G}{R/G}{R/G}
 pt=6/6
 ability=trample
