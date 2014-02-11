@@ -617,6 +617,12 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice ELF_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("an Elf permanent card from your library");
+    
+    public static final MagicTargetChoice ARTIFACT_CARD_FROM_LIBRARY =
+    	new MagicTargetChoice("an artifact card from your library");
+    
+    public static final MagicTargetChoice EQUIPMENT_CARD_FROM_LIBRARY =
+    	new MagicTargetChoice("an equipment card from your library");
 
     public static final MagicTargetChoice TARGET_UNPAIRED_SOULBOND_CREATURE = 
         new MagicTargetChoice("an unpaired Soulbond creature");
