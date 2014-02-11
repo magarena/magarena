@@ -1,0 +1,9 @@
+name=Orcish Oriflamme
+url=http://magiccards.info/7e/en/206.html
+image=http://mtgimage.com/card/orcish%20oriflamme.jpg
+value=2.513
+rarity=U
+type=Enchantment
+cost={3}{R}
+ability=lord attacking creatures you control get +1/+0
+timing=enchantment

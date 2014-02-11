@@ -1,0 +1,12 @@
+name=Niv-Mizzet, the Firemind
+url=http://magiccards.info/ddj/en/1.html
+image=http://mtgimage.com/card/niv-mizzet,%20the%20firemind.jpg
+value=4.417
+rarity=M
+type=Legendary,Creature
+subtype=Dragon,Wizard
+cost={2}{U}{U}{R}{R}
+pt=4/4
+ability=flying;pay {T}:PN draws a card.
+timing=main
+requires_groovy_code

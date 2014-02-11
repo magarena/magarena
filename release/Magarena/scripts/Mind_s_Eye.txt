@@ -1,0 +1,9 @@
+name=Mind's Eye
+url=http://magiccards.info/cma/en/13.html
+image=http://mtgimage.com/card/mind's%20eye.jpg
+value=4.483
+rarity=R
+type=Artifact
+cost={5}
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Captain Sisay
+url=http://magiccards.info/fvl/en/2.html
+image=http://mtgimage.com/card/captain%20sisay.jpg
+value=4.135
+rarity=M
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={2}{G}{W}
+pt=2/2
+timing=main
+requires_groovy_code

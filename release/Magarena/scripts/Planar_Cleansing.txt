@@ -1,0 +1,9 @@
+name=Planar Cleansing
+url=http://magiccards.info/m14/en/29.html
+image=http://mtgimage.com/card/planar%20cleansing.jpg
+value=3.885
+rarity=R
+type=Sorcery
+cost={3}{W}{W}{W}
+timing=main
+requires_groovy_code
