@@ -1,0 +1,10 @@
+name=Akroma's Vengeance
+url=http://magiccards.info/v13/en/11.html
+image=http://mtgimage.com/card/akroma's%20vengeance.jpg
+value=4.25
+rarity=M
+type=Sorcery
+cost={4}{W}{W}
+ability=cycling {3}
+timing=removal
+requires_groovy_code

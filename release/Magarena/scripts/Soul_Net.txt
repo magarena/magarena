@@ -1,0 +1,9 @@
+name=Soul Net
+url=http://magiccards.info/7e/en/317.html
+image=http://mtgimage.com/card/soul%20net.jpg
+value=2
+rarity=U
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code
