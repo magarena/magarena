@@ -5,20 +5,19 @@
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
+                    new MagicMayChoice("Sacrifice an enchantment?"),
                     this,
-                    "Sacrifice SN unless you sacrifice an enchantment."
+                    "PN may\$ sacrifice an enchantment. If PN doesn't, sacrifice SN."
                 ):
                 MagicEvent.NONE;
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            final MagicPlayer player = event.getPlayer();
-            if (player.controlsPermanent(MagicType.Enchantment)) {
-                game.addEvent(new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_ENCHANTMENT));
+            if (player.controlsPermanent(MagicType.Enchantment) && event.isYes()) {
+                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_ENCHANTMENT));
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }
     }
