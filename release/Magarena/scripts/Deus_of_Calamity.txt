@@ -1,0 +1,12 @@
+name=Deus of Calamity
+url=http://magiccards.info/shm/en/204.html
+image=http://magiccards.info/scans/en/shm/204.jpg
+value=4.214
+rarity=R
+type=Creature
+subtype=Avatar,Spirit
+cost={R/G}{R/G}{R/G}{R/G}{R/G}
+pt=6/6
+ability=trample
+timing=main
+requires_groovy_code
