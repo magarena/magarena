@@ -1,0 +1,12 @@
+name=Wake of Vultures
+url=http://magiccards.info/vi/en/24.html
+image=http://mtgimage.com/card/wake%20of%20vultures.jpg
+value=3.479
+rarity=C
+type=Creature
+subtype=Bird
+cost={3}{B}
+pt=3/1
+ability=flying
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Nim Lasher
+url=http://magiccards.info/mi/en/71.html
+image=http://mtgimage.com/card/nim%20lasher.jpg
+value=2.712
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=1/1
+timing=main
+requires_groovy_code=Nim Grotesque

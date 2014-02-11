@@ -1,0 +1,11 @@
+name=Patchwork Gnomes
+url=http://magiccards.info/od/en/306.html
+image=http://mtgimage.com/card/patchwork%20gnomes.jpg
+value=2.625
+rarity=U
+type=Artifact,Creature
+subtype=Gnome
+cost={3}
+pt=2/1
+timing=artifact
+requires_groovy_code=Earsplitting Rats

@@ -1,0 +1,10 @@
+name=Uktabi Wildcats
+url=http://magiccards.info/7e/en/278.html
+image=http://mtgimage.com/card/uktabi%20wildcats.jpg
+value=3.792
+rarity=R
+type=Creature
+subtype=Cat
+cost={4}{G}
+timing=main
+requires_groovy_code=Dungrove Elder;Uktabi Wildcats

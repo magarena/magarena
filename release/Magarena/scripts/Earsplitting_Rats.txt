@@ -1,0 +1,11 @@
+name=Earsplitting Rats
+url=http://magiccards.info/ju/en/65.html
+image=http://mtgimage.com/card/earsplitting%20rats.jpg
+value=1.808
+rarity=C
+type=Creature
+subtype=Rat
+cost={3}{B}
+pt=2/1
+timing=main
+requires_groovy_code=Marsh Crocodile;Earsplitting Rats

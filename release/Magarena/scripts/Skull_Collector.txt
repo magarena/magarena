@@ -1,0 +1,11 @@
+name=Skull Collector
+url=http://magiccards.info/sok/en/90.html
+image=http://mtgimage.com/card/skull%20collector.jpg
+value=3.3
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={1}{B}{B}
+pt=3/3
+ability=your upkeep effect return a black creature you control to its owner's hand.;regenerate {1}{B}
+timing=main

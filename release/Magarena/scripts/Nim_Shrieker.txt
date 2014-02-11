@@ -1,0 +1,12 @@
+name=Nim Shrieker
+url=http://magiccards.info/mi/en/73.html
+image=http://mtgimage.com/card/nim%20shrieker.jpg
+value=3.383
+rarity=C
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=0/1
+ability=flying
+timing=main
+requires_groovy_code=Nim Grotesque
