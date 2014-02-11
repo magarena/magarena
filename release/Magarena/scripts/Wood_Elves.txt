@@ -1,0 +1,11 @@
+name=Wood Elves
+url=http://magiccards.info/evg/en/18.html
+image=http://mtgimage.com/card/wood%20elves.jpg
+value=4.12
+rarity=C
+type=Creature
+subtype=Elf,Scout
+cost={2}{G}
+pt=1/1
+timing=main
+requires_groovy_code

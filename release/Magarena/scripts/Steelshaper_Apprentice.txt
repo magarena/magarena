@@ -1,0 +1,11 @@
+name=Steelshaper Apprentice
+url=http://magiccards.info/ds/en/15.html
+image=http://mtgimage.com/card/steelshaper%20apprentice.jpg
+value=2.74
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=1/3
+timing=main
+requires_groovy_code

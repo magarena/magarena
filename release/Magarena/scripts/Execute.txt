@@ -1,0 +1,9 @@
+name=Execute
+url=http://magiccards.info/9e/en/128.html
+image=http://mtgimage.com/card/execute.jpg
+value=2
+rarity=U
+type=Instant
+cost={2}{B}
+timing=removal
+requires_groovy_code

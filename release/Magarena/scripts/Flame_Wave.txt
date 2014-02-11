@@ -1,0 +1,9 @@
+name=Flame Wave
+url=http://magiccards.info/9e/es/182.html
+image=http://mtgimage.com/card/flame%20wave.jpg
+value=4.054
+rarity=U
+type=Sorcery
+cost={3}{R}{R}{R}{R}
+timing=main
+requires_groovy_code

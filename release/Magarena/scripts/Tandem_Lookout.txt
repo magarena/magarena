@@ -1,0 +1,12 @@
+name=Tandem Lookout
+url=http://magiccards.info/avr/en/80.html
+image=http://mtgimage.com/card/tandem%20lookout.jpg
+value=3.802
+rarity=U
+type=Creature
+subtype=Human,Scout
+cost={2}{U}
+pt=2/1
+ability=soulbond
+given_ability=damage opponent draw card
+timing=main

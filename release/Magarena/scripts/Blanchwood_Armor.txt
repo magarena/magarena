@@ -1,0 +1,11 @@
+name=Blanchwood Armor
+url=http://magiccards.info/9e/en/232.html
+image=http://mtgimage.com/card/blanchwood%20armor.jpg
+value=4.474
+rarity=U
+type=Enchantment
+enchant=pump,pos creature
+subtype=Aura
+cost={2}{G}
+timing=enchantment
+requires_groovy_code
