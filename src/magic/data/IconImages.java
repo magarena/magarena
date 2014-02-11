@@ -139,7 +139,7 @@ public class IconImages {
     public static final ImageIcon MININGCOUNTER=loadIcon("mining-counter.png");
     public static final ImageIcon MUSTERCOUNTER=loadIcon("muster-counter.png");
     public static final ImageIcon TREASURECOUNTER=loadIcon("treasure-counter.png");
-    public static final ImageIcon STRIFECOUNTER=loadIcon("strike-counter.png");
+    public static final ImageIcon STRIFECOUNTER=loadIcon("strife-counter.png");
     public static final ImageIcon STUDYCOUNTER=loadIcon("study-counter.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
