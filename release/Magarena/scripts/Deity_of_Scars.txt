@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit,Avatar
 cost={B/G}{B/G}{B/G}{B/G}{B/G}
 pt=7/7
-ability=trample;enters with -1/-1 2
+ability=trample;enters with counter -1/-1 2
 timing=main
 requires_groovy_code
