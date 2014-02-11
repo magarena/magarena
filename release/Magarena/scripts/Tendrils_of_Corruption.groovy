@@ -21,7 +21,7 @@
                     amount
                 );
                 game.doAction(new MagicDealDamageAction(damage));
-                game.doAction(new MagicChangeLifeAction(player,amount);
+                game.doAction(new MagicChangeLifeAction(player,amount));
             });
         }
     }
