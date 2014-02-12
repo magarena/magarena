@@ -5,5 +5,5 @@ value=3.894
 rarity=C
 type=Instant
 cost={G}
-timing=pump
+timing=block
 requires_groovy_code

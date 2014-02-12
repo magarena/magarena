@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Main),
+        new MagicActivationHints(MagicTiming.Block),
         "Prevent"
     ) {
 

@@ -5,6 +5,6 @@ value=3.057
 rarity=C
 type=Instant
 cost={1}{W}
-timing=pump
+timing=block
 ability=cycling {2}
 requires_groovy_code=Fog
