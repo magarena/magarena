@@ -5,8 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN gains 1 life for each creature on the battlefield. " +
-                "Prevent all combat damage that would be dealt this turn."
+                "Prevent all combat damage that would be dealt this turn. PN gains 1 life for each attacking creature."
             );
         }
         @Override
