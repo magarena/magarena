@@ -1,5 +1,5 @@
 name=legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage
-token=Avatar
+token=Marit Lage
 image=http://magiccards.info/extras/token/coldsnap/marit-lage.jpg
 value=1
 type=Legendary,Creature
