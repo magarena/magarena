@@ -1,0 +1,11 @@
+name=Leery Fogbeast
+url=http://magiccards.info/on/en/273.html
+image=http://mtgimage.com/card/leery%20fogbeast.jpg
+value=2.75
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{G}
+pt=4/2
+timing=main
+requires_groovy_code

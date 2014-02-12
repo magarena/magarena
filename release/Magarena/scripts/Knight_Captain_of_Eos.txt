@@ -1,0 +1,12 @@
+name=Knight-Captain of Eos
+url=http://magiccards.info/ala/en/17.html
+image=http://mtgimage.com/card/knight-captain%20of%20eos.jpg
+value=3.083
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={4}{W}
+pt=2/2
+ability=enters effect PN puts two 1/1 white Soldier creature tokens onto the battlefield
+timing=main
+requires_groovy_code
