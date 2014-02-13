@@ -12,7 +12,7 @@ def TARGET_ATTACKING_CREATURE_YOU_CONTROL = new MagicTargetChoice(
 
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Tapping),
+        new MagicActivationHints(MagicTiming.Block),
         "Untap"
     ) {
         @Override
