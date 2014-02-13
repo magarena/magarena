@@ -7,4 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 timing=aura
+enchant=weaken +2/-2,creature
 requires_groovy_code
