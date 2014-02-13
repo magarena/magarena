@@ -7,6 +7,6 @@ type=Creature
 subtype=Fungus
 cost={G}{G}
 pt=0/1
-ability=your upkeep effect PN puts a spore counter on SN.
+ability=your upkeep effect Put a spore counter on SN.
 timing=main
 requires_groovy_code
