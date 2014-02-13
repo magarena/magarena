@@ -1,0 +1,11 @@
+name=Lone Wolf
+url=http://magiccards.info/8ed/en/262.html
+image=http://mtgimage.com/card/lone%20wolf.jpg
+value=3.850
+rarity=C
+type=Creature
+subtype=Wolf
+cost={2}{G}
+pt=2/2
+timing=main
+requires_groovy_code=Rhox
