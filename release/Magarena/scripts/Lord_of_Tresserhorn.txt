@@ -1,0 +1,12 @@
+name=Lord of Tresserhorn
+url=http://magiccards.info/ai/en/193.html
+image=http://mtgimage.com/card/lord%20of%20tresserhorn.jpg
+value=4
+rarity=R
+type=Legendary,Creature
+subtype=Zombie
+cost={1}{U}{B}{R}
+pt=10/4
+ability=regenerate {B}
+timing=main
+requires_groovy_code

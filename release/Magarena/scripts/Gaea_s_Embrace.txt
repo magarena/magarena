@@ -1,0 +1,13 @@
+name=Gaea's Embrace
+url=http://magiccards.info/us/en/255.html
+image=http://mtgimage.com/card/gaea's%20embrace.jpg
+value=4.236
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}{G}
+given_pt=+3/+3
+given_ability=trample
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code=Regeneration

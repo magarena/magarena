@@ -1,0 +1,11 @@
+name=Soul Channeling
+url=http://magiccards.info/mm/en/163.html
+image=http://mtgimage.com/card/soul%20channeling.jpg
+value=2.65
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

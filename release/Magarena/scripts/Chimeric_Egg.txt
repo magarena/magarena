@@ -1,0 +1,9 @@
+name=Chimeric Egg
+url=http://magiccards.info/ds/en/106.html
+image=http://mtgimage.com/card/chimeric%20egg.jpg
+value=3.232
+rarity=U
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code

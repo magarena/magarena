@@ -1,0 +1,9 @@
+name=Draconian Cylix
+url=http://magiccards.info/fe/en/171.html
+image=http://mtgimage.com/card/draconian%20cylix.jpg
+value=2.028
+rarity=R
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=The Brute
+url=http://magiccards.info/5e/en/272.html
+image=http://mtgimage.com/card/the%20brute.jpg
+value=1.758
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+given_pt=+1/+0
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

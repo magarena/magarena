@@ -1,0 +1,12 @@
+name=Jolrael's Favor
+url=http://magiccards.info/pr/en/116.html
+image=http://mtgimage.com/card/jolrael's%20favor.jpg
+value=2.636
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+ability=flash
+enchant=pump,pos creature
+timing=pumpFlash
+requires_groovy_code

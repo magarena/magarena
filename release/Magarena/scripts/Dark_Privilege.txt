@@ -1,0 +1,12 @@
+name=Dark Privilege
+url=http://magiccards.info/vi/en/6.html
+image=http://mtgimage.com/card/dark%20privilege.jpg
+value=2.569
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+given_pt=+1/+1
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

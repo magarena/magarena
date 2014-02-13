@@ -1,0 +1,11 @@
+name=Regeneration
+url=http://magiccards.info/5e/en/183.html
+image=http://mtgimage.com/card/regeneration.jpg
+value=3.018
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Strands of Undeath
+url=http://magiccards.info/rav/en/108.html
+image=http://mtgimage.com/card/strands%20of%20undeath.jpg
+value=2.9
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{B}
+ability=enters effect Target player discards two cards.
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code
