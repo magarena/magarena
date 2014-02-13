@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 ability=flash;your upkeep effect PN loses 1 life.
-given_ability=regenerate {0}
 enchant=pump,pos creature
-timing=flash
+timing=pumpFlash
+requires_groovy_code
