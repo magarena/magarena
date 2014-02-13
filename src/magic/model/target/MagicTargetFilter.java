@@ -162,6 +162,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
 
     MagicPermanentFilterImpl TARGET_BLACK_PERMANENT = Factory.permanent(MagicColor.Black, Control.Any);
+    
+    MagicPermanentFilterImpl TARGET_WHITE_PERMANENT = Factory.permanent(MagicColor.White, Control.Any);
 
     MagicPermanentFilterImpl TARGET_WHITE_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.White, Control.You);
 
