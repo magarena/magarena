@@ -132,7 +132,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return itemOnStack.isSpell(MagicType.Artifact);
         }
     };
-
+    
+    MagicStackFilterImpl TARGET_ENCHANTMENT_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Enchantment);
+        }
+    };
+    
     MagicPlayerFilterImpl TARGET_PLAYER=new MagicPlayerFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPlayer target) {
             return true;

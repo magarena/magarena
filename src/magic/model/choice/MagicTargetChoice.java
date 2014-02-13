@@ -78,6 +78,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT_SPELL = 
         MagicTargetChoice.Negative("target artifact spell");
 
+    public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT_SPELL = 
+            MagicTargetChoice.Negative("target enchantment spell");
+    
     public static final MagicTargetChoice TARGET_PLAYER = 
         new MagicTargetChoice("target player");
     

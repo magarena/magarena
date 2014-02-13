@@ -73,6 +73,7 @@ public class MagicTargetFilterFactory {
         single.put("creature spell", TARGET_CREATURE_SPELL);
         single.put("noncreature spell", TARGET_NONCREATURE_SPELL);
         single.put("artifact spell", TARGET_ARTIFACT_SPELL);
+        single.put("enchantment spell", TARGET_ENCHANTMENT_SPELL);
         single.put("red or green spell", TARGET_RED_GREEN_SPELL);
         single.put("black spell", TARGET_BLACK_SPELL);
         single.put("white spell", TARGET_WHITE_SPELL);
