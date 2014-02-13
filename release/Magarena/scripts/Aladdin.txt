@@ -1,5 +1,5 @@
 name=Aladdin
-url=http://magiccards.info/4e/en/309.html
+url=http://magiccards.info/ch/en/44.html
 image=http://mtgimage.com/card/aladdin.jpg
 value=3.909
 rarity=R
