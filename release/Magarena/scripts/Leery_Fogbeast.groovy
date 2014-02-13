@@ -5,7 +5,7 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
             return (permanent == attacker) ?
                 new MagicEvent(
-                    source,
+                    permanent,
                     this,
                     "Prevent all combat damage that would be dealt this turn."
                 ):
