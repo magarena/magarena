@@ -1,5 +1,5 @@
 name=Cessation
-url=http://magiccards.info/ul/pt/4.html
+url=http://magiccards.info/ul/en/4.html
 image=http://mtgimage.com/card/cessation.jpg
 value=3.333
 rarity=C
