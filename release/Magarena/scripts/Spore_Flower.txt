@@ -1,0 +1,12 @@
+name=Spore Flower
+url=http://magiccards.info/fe/en/86.html
+image=http://mtgimage.com/card/spore%20flower.jpg
+value=3.756
+rarity=U
+type=Creature
+subtype=Fungus
+cost={G}{G}
+pt=0/1
+ability=your upkeep effect PN puts a spore counter on SN.
+timing=main
+requires_groovy_code

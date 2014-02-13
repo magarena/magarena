@@ -15,10 +15,9 @@ public class MagicCountersTargetPicker extends MagicTargetPicker<MagicPermanent>
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
         int calculation = 0;
         for (final MagicCounterType counterType : MagicCounterType.values()) {
-            final int value = (counterType.getScore() == 0) ? 1 : counterType.getScore();
-            calculation += permanent.getCounters(counterType) * value;
+            calculation += (permanent.getCounters(counterType)*counterType.getScore());
         }
-
+        
         final int score=calculation;
         return permanent.getController()==player?-score:score;
     }

@@ -1,3 +1,14 @@
+def TARGET_PERMANENT_COUNTERS = new MagicPermanentFilterImpl() {
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.hasCounters();
+    }
+};
+
+def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
+    TARGET_PERMANENT_COUNTERS,
+    "target permanent with counters"
+)
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -11,7 +22,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PERMANENT,
+                TARGET_PERMANENT_WITH_COUNTERS,
                 MagicCountersTargetPicker.create(),
                 this,
                 "Remove all counters from target permanent\$."

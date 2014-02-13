@@ -476,6 +476,9 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice SACRIFICE_SAPROLING = 
         new MagicTargetChoice("a Saproling to sacrifice");
+   
+    public static final MagicTargetChoice SACRIFICE_SOLDIER = 
+            new MagicTargetChoice("a Soldier to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_MERFOLK = 
         new MagicTargetChoice("a Merfolk to sacrifice");

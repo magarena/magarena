@@ -1,13 +1,13 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Block),
+        new MagicActivationHints(MagicTiming.Block,1),
         "Prevent"
     ) {
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicSacrificeEvent(source)
+                new MagicRemoveCounterEvent(source,MagicCounterType.Spore,3)
             ];
         }
 
