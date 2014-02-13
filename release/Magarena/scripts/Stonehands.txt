@@ -1,0 +1,12 @@
+name=Stonehands
+url=http://magiccards.info/ia/en/219.html
+image=http://mtgimage.com/card/stonehands.jpg
+value=2.714
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+given_pt=+0/+2
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code=Firebreathing

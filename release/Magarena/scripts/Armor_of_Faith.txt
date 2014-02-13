@@ -1,0 +1,12 @@
+name=Armor of Faith
+url=http://magiccards.info/5e/en/284.html
+image=http://mtgimage.com/card/armor%20of%20faith.jpg
+value=2.94
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+given_pt=+1/+1
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

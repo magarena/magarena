@@ -1,0 +1,12 @@
+name=Fiery Mantle
+url=http://magiccards.info/us/en/186.html
+image=http://mtgimage.com/card/fiery%20mantle.jpg
+value=3.409
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=dies effect Return SN to its owner's hand.
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code=Firebreathing

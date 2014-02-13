@@ -1,0 +1,12 @@
+name=Holy Armor
+url=http://magiccards.info/4e/en/279.html
+image=http://mtgimage.com/card/holy%20armor.jpg
+value=2.27
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+given_pt=+0/+2
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code=Armor of Faith

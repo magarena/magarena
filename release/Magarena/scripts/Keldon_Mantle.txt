@@ -1,0 +1,11 @@
+name=Keldon Mantle
+url=http://magiccards.info/ps/en/65.html
+image=http://mtgimage.com/card/keldon%20mantle.jpg
+value=3.712
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code=Firebreathing;Strands of Undeath;Keldon Mantle

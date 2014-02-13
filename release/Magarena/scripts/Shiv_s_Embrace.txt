@@ -1,0 +1,13 @@
+name=Shiv's Embrace
+url=http://magiccards.info/m14/en/153.html
+image=http://mtgimage.com/card/shiv's%20embrace.jpg
+value=3.545
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{R}{R}
+given_ability=flying
+given_pt=+2/+2
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code=Firebreathing

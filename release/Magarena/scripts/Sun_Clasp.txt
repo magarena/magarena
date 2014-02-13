@@ -1,0 +1,12 @@
+name=Sun Clasp
+url=http://magiccards.info/br/en/83.html
+image=http://mtgimage.com/card/sun%20clasp.jpg
+value=2.773
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_pt=+1/+3
+enchant=pump,creature
+timing=aura
+requires_groovy_code

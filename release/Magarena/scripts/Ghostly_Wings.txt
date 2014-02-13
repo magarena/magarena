@@ -1,0 +1,13 @@
+name=Ghostly Wings
+url=http://magiccards.info/tr/en/38.html
+image=http://mtgimage.com/card/ghostly%20wings.jpg
+value=3.058
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+given_ability=flying
+given_pt=+1/+1
+enchant=pump,creature
+timing=aura
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Shadow Lance
+url=http://magiccards.info/gp/en/14.html
+image=http://mtgimage.com/card/shadow%20lance.jpg
+value=3.652
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=first strike
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

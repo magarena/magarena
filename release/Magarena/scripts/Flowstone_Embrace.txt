@@ -1,0 +1,10 @@
+name=Flowstone Embrace
+url=http://magiccards.info/fut/en/113.html
+image=http://mtgimage.com/card/flowstone%20embrace.jpg
+value=2.536
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+timing=aura
+requires_groovy_code
