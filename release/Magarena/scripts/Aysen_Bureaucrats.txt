@@ -1,0 +1,11 @@
+name=Aysen Bureaucrats
+url=http://magiccards.info/5e/en/285.html
+image=http://mtgimage.com/card/aysen%20bureaucrats.jpg
+value=2.118
+rarity=C
+type=Creature
+subtype=Human,Advisor
+cost={1}{W}
+pt=1/1
+ability=pay {T}:Tap target creature with power 2 or less.
+timing=main

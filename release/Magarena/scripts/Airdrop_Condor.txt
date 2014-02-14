@@ -1,0 +1,12 @@
+name=Airdrop Condor
+url=http://magiccards.info/on/en/186.html
+image=http://mtgimage.com/card/airdrop%20condor.jpg
+value=2.5
+rarity=U
+type=Creature
+subtype=Bird
+cost={4}{R}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code

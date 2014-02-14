@@ -1,0 +1,11 @@
+name=Dwarven Warriors
+url=http://magiccards.info/5e/en/222.html
+image=http://mtgimage.com/card/dwarven%20warriors.jpg
+value=2.589
+rarity=C
+type=Creature
+subtype=Dwarf,Warrior
+cost={2}{R}
+pt=1/1
+timing=main
+requires_groovy_code=Crafty Pathmage

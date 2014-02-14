@@ -1,0 +1,11 @@
+name=Soramaro, First to Dream
+url=http://magiccards.info/sok/en/58.html
+image=http://mtgimage.com/card/soramaro,%20first%20to%20dream.jpg
+value=3.424
+rarity=R
+type=Legendary,Creature
+subtype=Spirit
+cost={4}{U}{U}
+ability=flying;pay {4},Return a land you control to its owner's hand:PN draws a card.
+timing=main
+requires_groovy_code=Sturmgeist

@@ -1,0 +1,11 @@
+name=Dwarven Nomad
+url=http://magiccards.info/mr/en/170.html
+image=http://mtgimage.com/card/dwarven%20nomad.jpg
+value=3.106
+rarity=C
+type=Creature
+subtype=Dwarf,Nomad
+cost={2}{R}
+pt=1/1
+timing=main
+requires_groovy_code=Crafty Pathmage

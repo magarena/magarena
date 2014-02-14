@@ -1,0 +1,10 @@
+name=1/1 blue Illusion creature token with flying
+token=Illusion
+image=http://magiccards.info/extras/token/modern-masters/illusion.jpg
+value=1
+type=Creature
+subtype=Illusion
+color=u
+cost={0}
+pt=1/1
+ability=flying

@@ -1,0 +1,9 @@
+name=Tawnos's Wand
+url=http://magiccards.info/4e/en/366.html
+image=http://mtgimage.com/card/tawnos's%20wand.jpg
+value=3.159
+rarity=C
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code

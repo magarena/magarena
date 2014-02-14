@@ -1,0 +1,11 @@
+name=Noggle Bridgebreaker
+url=http://magiccards.info/eve/en/107.html
+image=http://mtgimage.com/card/noggle%20bridgebreaker.jpg
+value=2.231
+rarity=C
+type=Creature
+subtype=Noggle,Rogue
+cost={2}{U/R}{U/R}
+pt=4/3
+ability=enters effect Return a land you control to its owner's hand.
+timing=main

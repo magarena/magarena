@@ -1,0 +1,11 @@
+name=Soratami Savant
+url=http://magiccards.info/chk/en/90.html
+image=http://mtgimage.com/card/soratami%20savant.jpg
+value=3.025
+rarity=U
+type=Creature
+subtype=Moonfolk,Wizard
+cost={2}{U}{U}
+pt=2/2
+ability=flying;pay {3},Return a land you control to its owner's hand:Counter target spell unless its controller pays {3}.
+timing=main
