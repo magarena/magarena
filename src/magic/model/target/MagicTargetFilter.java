@@ -200,9 +200,21 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicPermanentFilterImpl TARGET_SNOW_LAND=new MagicPermanentFilterImpl() {
+    	public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    		return target.isLand() && target.hasType(MagicType.Snow);
+    	}
+    };
+    
     MagicPermanentFilterImpl TARGET_BASIC_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isLand() && target.hasType(MagicType.Basic) && target.isController(player);
+        }
+    };
+    
+    MagicPermanentFilterImpl TARGET_SNOW_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() && target.hasType(MagicType.Snow) && target.isController(player);
         }
     };
 
@@ -834,6 +846,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return target.isCreature() &&
                    target.isAttacking() &&
                    target.hasAbility(MagicAbility.Flying);
+        }
+    };
+    
+    MagicPermanentFilterImpl TARGET_ATTACKING_CREATURE_WITHOUT_FLYING=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.isAttacking() &&
+                   !target.hasAbility(MagicAbility.Flying);
         }
     };
 
