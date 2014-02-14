@@ -1,0 +1,11 @@
+name=Regeneration
+url=http://magiccards.info/10e/en/290.html
+image=http://mtgimage.com/card/regeneration.jpg
+value=2.667
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+enchant=pump,pos creature
+given_ability=regenerate {G}
+timing=aura
