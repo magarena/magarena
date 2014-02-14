@@ -1,0 +1,11 @@
+name=Thaumatog
+url=http://magiccards.info/od/en/295.html
+image=http://mtgimage.com/card/thaumatog.jpg
+value=2.531
+rarity=U
+type=Creature
+subtype=Atog
+cost={1}{G}{W}
+pt=1/2
+ability=pay Sacrifice a land:SN gets +1/+1 until end of turn.;pay Sacrifice an enchantment:SN gets +1/+1 until end of turn.
+timing=main

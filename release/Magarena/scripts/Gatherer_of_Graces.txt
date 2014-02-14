@@ -1,0 +1,11 @@
+name=Gatherer of Graces
+url=http://magiccards.info/gp/en/85.html
+image=http://mtgimage.com/card/gatherer%20of%20graces.jpg
+value=3.05
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=1/2
+timing=main
+requires_groovy_code

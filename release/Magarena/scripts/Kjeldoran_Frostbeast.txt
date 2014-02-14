@@ -1,0 +1,11 @@
+name=Kjeldoran Frostbeast
+url=http://magiccards.info/ia/en/374.html
+image=http://mtgimage.com/card/kjeldoran%20frostbeast.jpg
+value=3.375
+rarity=U
+type=Creature
+subtype=Elemental,Beast
+cost={3}{G}{W}
+pt=2/4
+timing=main
+requires_groovy_code

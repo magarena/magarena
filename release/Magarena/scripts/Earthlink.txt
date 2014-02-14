@@ -1,0 +1,10 @@
+name=Earthlink
+url=http://magiccards.info/ia/en/363.html
+image=http://mtgimage.com/card/earthlink.jpg
+value=3.4
+rarity=R
+type=Enchantment
+cost={3}{B}{R}{G}
+ability=your upkeep effect PN may pay {2}. If you don't, sacrifice SN.
+timing=enchantment
+requires_groovy_code
