@@ -20,7 +20,7 @@ public class MagicTargetFilterFactory {
         new TreeMap<String, MagicTargetFilter<?>>(String.CASE_INSENSITIVE_ORDER);
 
     static {
-        // used by lord ability
+        // used by lord ability/Target <group>
         factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
         factory.put("nonbasic lands", TARGET_NONBASIC_LAND);
         factory.put("islands", TARGET_ISLAND);
@@ -36,6 +36,7 @@ public class MagicTargetFilterFactory {
         factory.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
         factory.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
         factory.put("attacking creatures", TARGET_ATTACKING_CREATURE);
+        factory.put("blocking creatures", TARGET_BLOCKING_CREATURE);
         factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
         
         factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
@@ -115,6 +116,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact creature card from your graveyard", TARGET_ARTIFACT_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("attacking creature", TARGET_ATTACKING_CREATURE);
         single.put("attacking creature with flying", TARGET_ATTACKING_CREATURE_WITH_FLYING);
+        single.put("attacking creature without flying", TARGET_ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("attacking or blocking creature", TARGET_ATTACKING_OR_BLOCKING_CREATURE);
         single.put("attacking or blocking Spirit",  TARGET_ATTACKING_OR_BLOCKING_SPIRIT);
         single.put("basic land card from your hand", TARGET_BASIC_LAND_CARD_FROM_HAND);
