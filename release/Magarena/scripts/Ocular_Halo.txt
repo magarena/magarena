@@ -1,0 +1,12 @@
+name=Ocular Halo
+url=http://magiccards.info/di/en/28.html
+image=http://mtgimage.com/card/ocular%20halo.jpg
+value=3.455
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{U}
+given_ability=pay {T}:PN draws a card.
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

@@ -9,4 +9,4 @@ cost={5}{G}{W}
 pt=0/0
 ability=trample;enters with counter +1/+1 7
 timing=main
-requires_groovy_code=Phantom_Nomad
+requires_groovy_code=Phantom Nomad;Mourning Thrull

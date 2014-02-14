@@ -1,0 +1,9 @@
+name=Breath of Dreams
+url=http://magiccards.info/ia/en/62.html
+image=http://mtgimage.com/card/breath%20of%20dreams.jpg
+value=2.707
+rarity=U
+type=Enchantment
+cost={2}{U}{U}
+ability=cumulative upkeep {U};lord green creatures gain cumulative upkeep {1}
+timing=enchantment

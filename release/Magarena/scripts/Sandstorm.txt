@@ -1,0 +1,9 @@
+name=Sandstorm
+url=http://magiccards.info/br/en/64.html
+image=http://mtgimage.com/card/sandstorm.jpg
+value=3.442
+rarity=C
+type=Instant
+cost={G}
+timing=block
+requires_groovy_code

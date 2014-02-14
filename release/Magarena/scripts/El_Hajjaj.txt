@@ -1,0 +1,11 @@
+name=El-Hajjaj
+url=http://magiccards.info/4e/en/18.html
+image=http://mtgimage.com/card/el-hajjaj.jpg
+value=2.396
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{B}{B}
+pt=1/1
+timing=main
+requires_groovy_code=Mourning Thrull

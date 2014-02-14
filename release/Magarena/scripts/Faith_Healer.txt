@@ -1,0 +1,11 @@
+name=Faith Healer
+url=http://magiccards.info/us/en/14.html
+image=http://mtgimage.com/card/faith%20healer.jpg
+value=3.655
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/1
+timing=main
+requires_groovy_code

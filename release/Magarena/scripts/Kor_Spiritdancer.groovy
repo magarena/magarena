@@ -23,7 +23,7 @@
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_NONE
+                        MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
                     "PN may\$ draw a card."
