@@ -1,0 +1,11 @@
+name=Drift of the Dead
+url=http://magiccards.info/me2/en/86.html
+image=http://mtgimage.com/card/drift%20of%20the%20dead.jpg
+value=3.162
+rarity=C
+type=Creature
+subtype=Wall
+cost={3}{B}
+ability=defender
+timing=main
+requires_groovy_code

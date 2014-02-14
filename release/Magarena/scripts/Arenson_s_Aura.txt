@@ -1,0 +1,9 @@
+name=Arenson's Aura
+url=http://magiccards.info/5e/en/282.html
+image=http://mtgimage.com/card/arenson's%20aura.jpg
+value=2.679
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=pay {W},Sacrifice an enchantment:Destroy target enchantment.;pay {3}{U}{U}:Counter target enchantment spell.
+timing=enchantment
