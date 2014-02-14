@@ -332,6 +332,9 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE_WITH_FLYING = 
         MagicTargetChoice.Negative("target attacking creature with flying");
+    
+    public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE_WITHOUT_FLYING =
+    	MagicTargetChoice.Negative("target attacking creature without flying");
 
     public static final MagicTargetChoice NEG_TARGET_BLOCKED_CREATURE = 
         MagicTargetChoice.Negative("target blocked creature");
