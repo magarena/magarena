@@ -5,5 +5,5 @@ value=1.817
 rarity=C
 type=Instant
 cost={3}{R}
+effect=Blocking creatures gain first strike until end of turn.
 timing=block
-requires_groovy_code
