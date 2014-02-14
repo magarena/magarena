@@ -1,0 +1,9 @@
+name=Rally
+url=http://magiccards.info/ia/en/272.html
+image=http://mtgimage.com/card/rally.jpg
+value=2.047
+rarity=C
+type=Instant
+cost={W}{W}
+effect=Blocking creatures get +1/+1 until end of turn.
+timing=block
