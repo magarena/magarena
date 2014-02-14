@@ -1,0 +1,10 @@
+name=Time Bomb
+url=http://magiccards.info/5e/en/404.html
+image=http://mtgimage.com/card/time%20bomb.jpg
+value=3.521
+rarity=R
+type=Artifact
+cost={4}
+ability=your upkeep effect Put a time counter on SN.
+timing=artifact
+requires_groovy_code

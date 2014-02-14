@@ -1,0 +1,8 @@
+name=Quicksand
+url=http://magiccards.info/wwk/en/140.html
+image=http://mtgimage.com/card/quicksand.jpg
+value=4.165
+rarity=C
+type=Land
+ability=tap add mana {1};pay {T},Sacrifice SN:Target attacking creature without flying gets -1/-2 until end of turn.
+timing=land
