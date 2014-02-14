@@ -5,5 +5,5 @@ value=2.846
 rarity=C
 type=Instant
 cost={2}{R}
-timing=pump
+timing=attack
 requires_groovy_code
