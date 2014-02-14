@@ -1,6 +1,6 @@
 name=Agent of the Fates
 url=http://magiccards.info/ths/en/76.html
-image=http://magiccards.info/scans/en/ths/76.jpg
+image=http://mtgimage.com/card/agent%20of%20the%20fates.jpg
 value=3.537
 rarity=R
 type=Creature

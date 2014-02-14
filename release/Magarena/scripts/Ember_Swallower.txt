@@ -1,6 +1,6 @@
 name=Ember Swallower
 url=http://magiccards.info/ths/en/120.html
-image=http://magiccards.info/scans/en/ths/120.jpg
+image=http://mtgimage.com/card/ember%20swallower.jpg
 value=3.460
 rarity=R
 type=Creature
@@ -9,5 +9,3 @@ cost={2}{R}{R}
 pt=4/5
 ability=monstrosity 3 {5}{R}{R}
 timing=main
-
-
