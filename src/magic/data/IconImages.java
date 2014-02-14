@@ -141,6 +141,7 @@ public class IconImages {
     public static final ImageIcon TREASURECOUNTER=loadIcon("treasure-counter.png");
     public static final ImageIcon STRIFECOUNTER=loadIcon("strife-counter.png");
     public static final ImageIcon STUDYCOUNTER=loadIcon("study-counter.png");
+    public static final ImageIcon TRAPCOUNTER=loadIcon("trap-counter.png");
 
     public static final ImageIcon ANY_MANA=loadIcon("anymana.gif");
     public static final ImageIcon TAPPED=loadSymbolIcon(50, false);
