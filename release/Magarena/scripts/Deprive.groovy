@@ -1,9 +1,8 @@
-def LandYouControl = new MagicTargetChoice("a land you control");
 [
     new MagicAdditionalCost() {
         @Override
         public MagicEvent getEvent(final MagicSource source) {
-            return new MagicBounceChosenPermanentEvent(source, LandYouControl);
+            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.LAND_YOU_CONTROL);
         }
     },
 
