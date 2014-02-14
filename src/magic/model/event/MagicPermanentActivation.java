@@ -233,6 +233,8 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 events.add(new MagicSorceryConditionEvent(source));
             } else if (cost.equals("Return SN to its owner's hand")) {
                 events.add(new MagicBouncePermanentEvent(source,source));
+            } else if (cost.equals("Return a land you control to its owner's hand")) {
+                events.add(new MagicBounceChosenPermanentEvent(source,MagicTargetChoice.LAND_YOU_CONTROL));
             } else if (cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN")) {
             	final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
             	final int amount = englishToInt(costText[0]);
