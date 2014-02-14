@@ -6,4 +6,4 @@ rarity=C
 type=Instant
 cost={1}{W}{W}
 effect=Attacking creatures get +2/+0 until end of turn.
-timing=pump
+timing=attack

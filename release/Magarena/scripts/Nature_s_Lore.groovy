@@ -5,16 +5,15 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Blocking creatures get +0/+2 until end of turn."
+                "PN searches PN's library for Forest card and put that card onto the battlefield. Then shuffle PN's library."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_BLOCKING_CREATURE);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeTurnPTAction(target,0,2));
-            }
+            game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                event,
+                MagicTargetChoice.FOREST_CARD_FROM_LIBRARY,
+            ));
         }
     }
 ]

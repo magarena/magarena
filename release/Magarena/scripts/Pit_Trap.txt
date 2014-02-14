@@ -1,0 +1,9 @@
+name=Pit Trap
+url=http://magiccards.info/7e/it/313.html
+image=http://mtgimage.com/card/pit%20trap.jpg
+value=3.672
+rarity=U
+type=Artifact
+cost={2}
+ability=pay {2},{T},Sacrifice SN:Destroy target attacking creature without flying. It can't be regenerated.
+timing=artifact

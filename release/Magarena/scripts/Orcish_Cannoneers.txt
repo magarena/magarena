@@ -1,0 +1,11 @@
+name=Orcish Cannoneers
+url=http://magiccards.info/me2/en/138.html
+image=http://mtgimage.com/card/orcish%20cannoneers.jpg
+value=3.071
+rarity=U
+type=Creature
+subtype=Orc,Warrior
+cost={1}{R}{R}
+pt=1/3
+timing=main
+requires_groovy_code=Goblin Artillery
