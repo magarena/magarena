@@ -1,0 +1,9 @@
+name=Spitting Earth
+url=http://magiccards.info/ddg/en/67.html
+image=http://mtgimage.com/card/spitting%20earth.jpg
+value=3.771
+rarity=C
+type=Sorcery
+cost={1}{R}
+timing=main
+requires_groovy_code=Seismic Strike

@@ -1,0 +1,11 @@
+name=Stampeding Serow
+url=http://magiccards.info/sok/en/150.html
+image=http://mtgimage.com/card/stampeding%20serow.jpg
+value=3.591
+rarity=U
+type=Creature
+subtype=Antelope,Beast
+cost={2}{G}{G}
+pt=5/4
+ability=trample;your upkeep effect Return a green creature you control to its owner's hand.
+timing=main
