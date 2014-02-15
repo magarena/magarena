@@ -468,8 +468,8 @@ checks: \
 	check_url \
 	check_image \
 	check_meta \
-	check_rarity
-
+	check_rarity \
+	check_decks
 
 # check rarity using meta.xml
 check_rarity: scripts/fix_rarity.scala cards/meta.xml
