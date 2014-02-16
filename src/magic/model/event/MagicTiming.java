@@ -34,7 +34,7 @@ public enum MagicTiming {
     Block("block",8),               // Declare blockers
     Animate("animate",6),           // First main of your turn, declare attackers opponent's turn
     Token("token",6),               // First main of your turn, declare attackers or end of turn opponent, as response
-    NextTurn("nextturn",9),         // Second main
+    NextTurn("nextturn",9),         // Second main opponent's turn
     MustAttack("mustattack",8),     // First main opponent's turn
     Spell("spell",9),               // When there is a spell on stack
     Storm("storm",1),               // When a spell was played this turn, second main
