@@ -1,0 +1,9 @@
+name=Steelshaper's Gift
+url=http://magiccards.info/5dn/en/19.html
+image=http://mtgimage.com/card/steelshaper's%20gift.jpg
+value=4.157
+rarity=U
+type=Sorcery
+cost={W}
+timing=main
+requires_groovy_code

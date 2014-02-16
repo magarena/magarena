@@ -1,0 +1,11 @@
+name=Pariah's Shield
+url=http://magiccards.info/rav/en/267.html
+image=http://mtgimage.com/card/pariah's%20shield.jpg
+value=3.661
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={5}
+equip={3}
+timing=artifact
+requires_groovy_code
