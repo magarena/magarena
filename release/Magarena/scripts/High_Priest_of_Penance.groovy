@@ -11,7 +11,7 @@
                     ),
                     MagicDestroyTargetPicker.Destroy,
                     this,
-                    "Destroy target nonland permanent."
+                    "Destroy target nonland permanent\$."
                 ):
                 MagicEvent.NONE;
         }
