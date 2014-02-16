@@ -1,0 +1,9 @@
+name=Airborne Aid
+url=http://magiccards.info/on/en/62.html
+image=http://mtgimage.com/card/airborne%20aid.jpg
+value=2.91
+rarity=C
+type=Sorcery
+cost={3}{U}
+timing=main
+requires_groovy_code

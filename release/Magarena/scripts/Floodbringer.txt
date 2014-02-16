@@ -1,0 +1,11 @@
+name=Floodbringer
+url=http://magiccards.info/bok/en/34.html
+image=http://mtgimage.com/card/floodbringer.jpg
+value=2.631
+rarity=C
+type=Creature
+subtype=Moonfolk,Wizard
+cost={1}{U}
+pt=1/2
+ability=flying;pay {2},Return a land you control to its owner's hand:Tap target land.
+timing=main

@@ -1,0 +1,9 @@
+name=Rockslide Ambush
+url=http://magiccards.info/p3k/en/121.html
+image=http://mtgimage.com/card/rockslide%20ambush.jpg
+value=3.867
+rarity=C
+type=Sorcery
+cost={1}{R}
+timing=main
+requires_groovy_code=Seismic Strike

@@ -1,0 +1,11 @@
+name=Soratami Rainshaper
+url=http://magiccards.info/chk/en/89.html
+image=http://mtgimage.com/card/soratami%20rainshaper.jpg
+value=2.044
+rarity=C
+type=Creature
+subtype=Moonfolk,Wizard
+cost={2}{U}
+pt=2/1
+ability=flying;pay {3},Return a land you control to its owner's hand:Target creature you control gains shroud until end of turn.
+timing=main

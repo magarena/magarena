@@ -1,0 +1,12 @@
+name=Fire Dragon
+url=http://magiccards.info/isd/pt/129.html
+image=http://mtgimage.com/card/fire%20dragon.jpg
+value=3.5
+rarity=R
+type=Creature
+subtype=Dragon
+cost={6}{R}{R}{R}
+pt=6/6
+ability=flying
+timing=main
+requires_groovy_code

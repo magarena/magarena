@@ -1,0 +1,9 @@
+name=Eternal Flame
+url=http://magiccards.info/dk/en/60.html
+image=http://mtgimage.com/card/eternal%20flame.jpg
+value=2.786
+rarity=R
+type=Sorcery
+cost={2}{R}{R}
+timing=main
+requires_groovy_code
