@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Removal),
+        new MagicActivationHints(MagicTiming.NextTurn),
         "Damage"
     ) {
         @Override
