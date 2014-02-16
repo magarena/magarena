@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}
 timing=aura
-enchant=removal,creature
+enchant=destroy,creature
 requires_groovy_code
