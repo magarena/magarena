@@ -9,7 +9,6 @@ public class MagicDeclareBlockerAction extends MagicAction {
 
     private final MagicPermanent attacker;
     private final MagicPermanent blocker;
-    private boolean unblocked;
 
     MagicDeclareBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
         this.attacker=attacker;
@@ -18,23 +17,11 @@ public class MagicDeclareBlockerAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        attacker.addBlockingCreature(blocker);
-        blocker.setBlockedCreature(attacker);
-        blocker.setState(MagicPermanentState.Blocking);
-        unblocked=!attacker.hasState(MagicPermanentState.Blocked);
-        if (unblocked) {
-            attacker.setState(MagicPermanentState.Blocked);
-        }
+        game.doAction(new MagicSetBlockerAction(attacker, blocker));
         game.executeTrigger(MagicTriggerType.WhenBlocks,blocker);
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        attacker.removeBlockingCreature(blocker);
-        blocker.setBlockedCreature(MagicPermanent.NONE);
-        blocker.clearState(MagicPermanentState.Blocking);
-        if (unblocked) {
-            attacker.clearState(MagicPermanentState.Blocked);
-        }
     }
 }
