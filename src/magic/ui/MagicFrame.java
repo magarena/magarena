@@ -402,7 +402,7 @@ public class MagicFrame extends JFrame {
         contentPanel.getActionMap().put("Screenshot", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                doScreenShot();
+                doScreenshot();
             }
         });
     }
@@ -431,18 +431,27 @@ public class MagicFrame extends JFrame {
         });
     }
 
-    private void doScreenShot() {
+    private void doScreenshot() {
         try {
             final Path filePath = Paths.get(MagicMain.getLogsPath()).resolve("screenshot.png");
             final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
-            if (Desktop.isDesktopSupported()) {
-                Desktop.getDesktop().open(imageFile);
-            } else {
-                JOptionPane.showMessageDialog(this, "ScreenShot saved to...\n" + imageFile.getAbsolutePath());
-            }
+            viewScreenshotFile(imageFile);
         } catch (IOException e) {
             e.printStackTrace();
-            JOptionPane.showMessageDialog(this, "ScreenShot failed : " + e.toString());
+            JOptionPane.showMessageDialog(this, e.toString(), "Screenshot Failed", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private void viewScreenshotFile(final File imageFile) {
+        if (Desktop.isDesktopSupported()) {
+            try {
+                Desktop.getDesktop().open(imageFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(this, "Unable to open the following file using default application :\n" + imageFile.getAbsolutePath());
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "ScreenShot saved to...\n" + imageFile.getAbsolutePath());
         }
     }
 
