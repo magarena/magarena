@@ -9,4 +9,4 @@ cost={1}{R}
 ability=lord creatures you control have haste
 static=player
 timing=aura
-enchant=pump,pos creature
+enchant=pump,creature you control

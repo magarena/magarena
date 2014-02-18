@@ -8,5 +8,5 @@ subtype=Aura
 cost={U}
 ability=cumulative upkeep {1}{U}
 given_ability=pay {T}:Target creature gets +2/+2 until end of turn.
-enchant=pump,pos land
+enchant=pump,land you control
 timing=aura
