@@ -5,7 +5,7 @@ def TWO_OR_MORE_VAMPIRES_CONDITION = new MagicCondition() {
     };
 [
     new MagicCardActivation(
-        [TWO_OR_MORE_VAMPIRES_CONDITION],
+        [TWO_OR_MORE_VAMPIRES_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Removal,true),
         "Destroy"
     ) {
