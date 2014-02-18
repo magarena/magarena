@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_GREEN_CREATURE,
+                MagicTargetChoice.Positive("target green creature"),
                 MagicRegenerateTargetPicker.create(),
                 this,
                 "Regenerate target green creature\$."
