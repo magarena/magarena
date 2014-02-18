@@ -1,0 +1,12 @@
+name=Red Scarab
+url=http://magiccards.info/ia/en/273.html
+image=http://mtgimage.com/card/red%20scarab.jpg
+value=2.37
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=can't be blocked by red creatures
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code
