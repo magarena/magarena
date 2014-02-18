@@ -864,7 +864,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    target.hasSubType(MagicSubType.Goblin);
         }
     };
-
+    
+    MagicPermanentFilterImpl TARGET_ATTACKING_AUROCHS=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.isAttacking() &&
+                   target.hasSubType(MagicSubType.Aurochs);
+        }
+    };
+    
     MagicPermanentFilterImpl TARGET_ATTACKING_OR_BLOCKING_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
