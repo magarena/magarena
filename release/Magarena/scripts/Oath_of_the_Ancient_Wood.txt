@@ -1,0 +1,10 @@
+name=Oath of the Ancient Wood
+url=http://magiccards.info/m14/en/187.html
+image=http://mtgimage.com/card/oath%20of%20the%20ancient%20wood.jpg
+value=1.915
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=enters effect Put a +1/+1 counter on target creature.
+timing=enchantment
+requires_groovy_code
