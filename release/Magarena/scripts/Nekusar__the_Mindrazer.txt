@@ -1,0 +1,11 @@
+name=Nekusar, the Mindrazer
+url=http://magiccards.info/c13/en/201.html
+image=http://mtgimage.com/card/nekusar,%20the%20mindrazer.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Zombie,Wizard
+cost={2}{U}{B}{R}
+pt=2/4
+timing=main
+requires_groovy_code=Underworld Dreams;Kami of the Crescent Moon
