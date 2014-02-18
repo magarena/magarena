@@ -1,0 +1,12 @@
+name=White Scarab
+url=http://magiccards.info/ia/en/280.html
+image=http://mtgimage.com/card/white%20scarab.jpg
+value=1.984
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=can't be blocked by white creatures
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

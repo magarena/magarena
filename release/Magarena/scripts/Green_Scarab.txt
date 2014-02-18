@@ -1,0 +1,12 @@
+name=Green Scarab
+url=http://magiccards.info/ia/en/252.html
+image=http://mtgimage.com/card/green%20scarab.jpg
+value=2.185
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=can't be blocked by green creatures
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code
