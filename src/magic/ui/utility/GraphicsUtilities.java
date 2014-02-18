@@ -34,12 +34,20 @@
 
 package magic.ui.utility;
 
+import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+
+import javax.imageio.ImageIO;
 
 /**
  * <p><code>GraphicsUtilities</code> contains a set of tools to perform
@@ -49,7 +57,9 @@ import java.awt.image.BufferedImage;
  * @author rbair
  * @author Karl Schaefer
  */
-public class GraphicsUtilities {
+final public class GraphicsUtilities {
+
+    private GraphicsUtilities() {}
 
     public static BufferedImage scale(
             final BufferedImage img,
@@ -148,4 +158,28 @@ public class GraphicsUtilities {
     private static boolean isHeadless() {
         return GraphicsEnvironment.isHeadless();
     }
+
+    /**
+     * Creates an image of the contents of container and saves to file.
+     */
+    public static File doScreenshotToFile(final Component container, final Path filePath) throws IOException {
+        final File imageFile = new File(filePath.toString());
+        ImageIO.write(getScreenshotImage(container), "png", imageFile);
+        return imageFile;
+    }
+
+    private static BufferedImage getScreenshotImage(final Component container) {
+        final Rectangle rec = container.getBounds();
+        final BufferedImage capture = getCompatibleBufferedImage(rec.width, rec.height);
+        container.paint(capture.getGraphics());
+        return capture;
+    }
+
+    private static BufferedImage getCompatibleBufferedImage(final int width, final int height) {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gs = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gc = gs.getDefaultConfiguration();
+        return gc.createCompatibleImage(width, height, Transparency.OPAQUE);
+    }
+
 }

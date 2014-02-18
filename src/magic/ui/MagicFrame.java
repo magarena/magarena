@@ -1,5 +1,6 @@
 package magic.ui;
 
+import magic.MagicMain;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -25,6 +26,7 @@ import magic.ui.screen.SampleHandScreen;
 import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.ReadmeScreen;
+import magic.ui.utility.GraphicsUtilities;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
@@ -34,13 +36,18 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.ToolTipManager;
 
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Stack;
 
 @SuppressWarnings("serial")
@@ -82,6 +89,7 @@ public class MagicFrame extends JFrame {
         contentPanel = new BackgroundPanel(new MigLayout("insets 0, gap 0"));
         contentPanel.setOpaque(true);
         setContentPane(contentPanel);
+        setF10KeyInputMap();
         setF11KeyInputMap();
         setF12KeyInputMap();
 
@@ -387,10 +395,23 @@ public class MagicFrame extends JFrame {
     }
 
     /**
+     * F10 take a screen shot.
+     */
+    private void setF10KeyInputMap() {
+        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F10, 0), "Screenshot");
+        contentPanel.getActionMap().put("Screenshot", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                doScreenShot();
+            }
+        });
+    }
+
+    /**
      * F11 key toggles full screen mode.
      */
     private void setF11KeyInputMap() {
-        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("F11"), "FullScreen");
+        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F11, 0), "FullScreen");
         contentPanel.getActionMap().put("FullScreen", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
@@ -400,15 +421,29 @@ public class MagicFrame extends JFrame {
     }
 
     private void setF12KeyInputMap() {
-        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("F12"), "HideMenu");
+        contentPanel.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F12, 0), "HideMenu");
         contentPanel.getActionMap().put("HideMenu", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                //menuPanel.setVisible(!menuPanel.isVisible());
                 final AbstractScreen activeScreen = screens.peek();
                 activeScreen.setVisible(!activeScreen.isVisible());
             }
         });
+    }
+
+    private void doScreenShot() {
+        try {
+            final Path filePath = Paths.get(MagicMain.getLogsPath()).resolve("screenshot.png");
+            final File imageFile = GraphicsUtilities.doScreenshotToFile(this.getContentPane(), filePath);
+            if (Desktop.isDesktopSupported()) {
+                Desktop.getDesktop().open(imageFile);
+            } else {
+                JOptionPane.showMessageDialog(this, "ScreenShot saved to...\n" + imageFile.getAbsolutePath());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "ScreenShot failed : " + e.toString());
+        }
     }
 
 }
