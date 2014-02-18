@@ -700,6 +700,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void addCardAct(final MagicCardActivation activation) {
         cardActivations.add(activation);
     }
+    
+    public void setCardAct(final MagicCardActivation activation) {
+        cardActivations.clear();
+        cardActivations.add(activation);
+    }
 
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
         return permActivations;
