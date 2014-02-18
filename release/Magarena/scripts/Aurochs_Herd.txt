@@ -1,0 +1,12 @@
+name=Aurochs Herd
+url=http://magiccards.info/cs/en/103.html
+image=http://mtgimage.com/card/aurochs%20herd.jpg
+value=3.627
+rarity=C
+type=Creature
+subtype=Aurochs
+cost={5}{G}
+pt=4/4
+ability=trample
+timing=main
+requires_groovy_code=Aurochs;Aurochs Herd

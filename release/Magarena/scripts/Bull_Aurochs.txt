@@ -1,0 +1,12 @@
+name=Bull Aurochs
+url=http://magiccards.info/cs/en/107.html
+image=http://mtgimage.com/card/bull%20aurochs.jpg
+value=3.458
+rarity=C
+type=Creature
+subtype=Aurochs
+cost={1}{G}
+pt=2/1
+ability=trample
+timing=main
+requires_groovy_code=Aurochs
