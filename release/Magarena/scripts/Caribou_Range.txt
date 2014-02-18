@@ -1,0 +1,12 @@
+name=Caribou Range
+url=http://magiccards.info/5e/en/290.html
+image=http://mtgimage.com/card/caribou%20range.jpg
+value=3.303
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={2}{W}{W}
+given_ability=pay {W}{W},{T}:PN puts a 0/1 white Caribou creature token onto the battlefield.
+enchant=pump,land you control
+timing=aura
+requires_groovy_code
