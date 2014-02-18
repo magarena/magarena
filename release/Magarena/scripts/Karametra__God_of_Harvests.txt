@@ -1,0 +1,12 @@
+name=Karametra, God of Harvests
+url=http://magiccards.info/bng/en/148.html
+image=http://mtgimage.com/card/karametra%2C%20god%20of%20harvests.jpg
+value=3.331
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=God
+cost={3}{G}{W}
+pt=6/7
+ability=indestructible
+timing=main
+requires_groovy_code

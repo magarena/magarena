@@ -1,0 +1,12 @@
+name=Brimaz, King of Oreskos
+url=http://magiccards.info/bng/en/5.html
+image=http://mtgimage.com/card/brimaz%2C%20king%20of%20oreskos.jpg
+value=3.741
+rarity=M
+type=Legendary,Creature
+subtype=Cat,Soldier
+cost={1}{W}{W}
+ability=vigilance
+pt=3/4
+timing=main
+requires_groovy_code
