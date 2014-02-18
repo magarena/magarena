@@ -7,4 +7,4 @@ type=Creature
 subtype=Spirit,Avatar
 cost={G/U}{G/U}{G/U}{G/U}{G/U}
 timing=main
-requires_groovy_code
+requires_groovy_code=Maro;Overbeing of Myth

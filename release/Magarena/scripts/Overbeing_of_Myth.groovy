@@ -1,11 +1,4 @@
 [
-    new MagicCDA() {
-        @Override
-        public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
-            final int amount = player.getHandSize();
-            pt.set(amount,amount);
-        }
-    },
     new MagicAtDrawTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
