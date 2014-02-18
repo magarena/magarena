@@ -1,0 +1,10 @@
+name=1/1 white Cat Soldier creature token with vigilance
+token=Cat
+image=http://magiccards.info/extras/token/born-of-the-gods/cat-soldier.jpg
+value=1
+type=Creature
+subtype=Cat
+color=w
+cost={0}
+ability=vigilance
+pt=1/1
