@@ -79,6 +79,14 @@ public interface MagicCondition {
                    game.getTurnPlayer() == source.getController();
         }
     };
+    
+    MagicCondition DECLARE_ATTACKERS_BEEN_ATTACKED = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.DeclareAttackers) &&
+                   game.getTurnPlayer() == source.getController().getOpponent();
+        }
+    };
 
     MagicCondition END_OF_COMBAT_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
