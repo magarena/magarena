@@ -1,0 +1,11 @@
+name=Dark Hatchling
+url=http://magiccards.info/pc2/en/32.html
+image=http://mtgimage.com/card/dark%20hatchling.jpg
+value=3.81
+rarity=R
+type=Creature
+subtype=Horror
+cost={4}{B}{B}
+pt=3/3
+ability=flying;enters effect Destroy target nonblack creature. It can't be regenerated.
+timing=main
