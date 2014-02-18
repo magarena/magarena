@@ -57,7 +57,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
 
         if (!scaledImages.containsKey(filename)) {
             scaledImages.put(filename,
-                magic.GraphicsUtilities.scale(
+                magic.ui.utility.GraphicsUtilities.scale(
                     origImages.get(filename),
                     CARD_WIDTH,
                     CARD_HEIGHT

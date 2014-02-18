@@ -32,7 +32,7 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package magic;
+package magic.ui.utility;
 
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
