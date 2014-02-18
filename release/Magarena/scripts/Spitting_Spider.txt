@@ -1,0 +1,12 @@
+name=Spitting Spider
+url=http://magiccards.info/8e/en/280.html
+image=http://mtgimage.com/card/spitting%20spider.jpg
+value=3.362
+rarity=U
+type=Creature
+subtype=Spider
+cost={3}{G}{G}
+pt=3/5
+ability=reach
+timing=main
+requires_groovy_code

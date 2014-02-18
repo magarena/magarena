@@ -1,0 +1,9 @@
+name=Goblin Offensive
+url=http://magiccards.info/pch/en/56.html
+image=http://mtgimage.com/card/goblin%20offensive.jpg
+value=3.034
+rarity=U
+type=Sorcery
+cost={X}{1}{R}{R}
+timing=main
+requires_groovy_code
