@@ -1,0 +1,9 @@
+name=Aspect of Hydra
+url=http://magiccards.info/bng/en/117.html
+image=http://mtgimage.com/card/aspect%20of%20hydra.jpg
+value=4.184
+rarity=C
+type=Instant
+cost={G}
+timing=pump
+requires_groovy_code
