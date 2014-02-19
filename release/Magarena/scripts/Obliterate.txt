@@ -1,0 +1,10 @@
+name=Obliterate
+url=http://magiccards.info/8e/en/204.html
+image=http://mtgimage.com/card/obliterate.jpg
+value=4.3
+rarity=R
+type=Sorcery
+cost={6}{R}{R}
+ability=can't be countered
+timing=main
+requires_groovy_code=Jokulhaups

@@ -1,0 +1,9 @@
+name=Staff of the Death Magus
+url=http://magiccards.info/m14/en/219.html
+image=http://mtgimage.com/card/staff%20of%20the%20death%20magus.jpg
+value=1.833
+rarity=U
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code

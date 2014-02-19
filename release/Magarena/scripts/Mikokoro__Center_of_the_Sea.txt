@@ -1,0 +1,9 @@
+name=Mikokoro, Center of the Sea
+url=http://magiccards.info/sok/en/162.html
+image=http://mtgimage.com/card/mikokoro,%20center%20of%20the%20sea.jpg
+value=3.809
+rarity=R
+type=Legendary,Land
+ability=tap add mana {1}
+timing=land
+requires_groovy_code

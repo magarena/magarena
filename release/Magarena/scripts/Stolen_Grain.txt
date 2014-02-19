@@ -1,0 +1,9 @@
+name=Stolen Grain
+url=http://magiccards.info/p3k/en/83.html
+image=http://mtgimage.com/card/stolen%20grain.jpg
+value=2.762
+rarity=U
+type=Sorcery
+cost={4}{B}{B}
+timing=main
+requires_groovy_code

@@ -23,13 +23,15 @@ def CARD_NAMED_LLANOWAR_SENTINEL = new MagicCardFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                event,
-                new MagicTargetChoice(
-                    CARD_NAMED_LLANOWAR_SENTINEL, 
-                    "a card named Llanowar Sentinel"
-                )
-            ));
+            if (event.isYes()) {
+                game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                    event,
+                    new MagicTargetChoice(
+                        CARD_NAMED_LLANOWAR_SENTINEL, 
+                        "a card named Llanowar Sentinel"
+                    )
+                ));
+            }
         }
     }
 ]

@@ -1,0 +1,9 @@
+name=Prosperity
+url=http://magiccards.info/c13/en/54.html
+image=http://mtgimage.com/card/prosperity.jpg
+value=4
+rarity=U
+type=Sorcery
+cost={X}{U}
+timing=main
+requires_groovy_code

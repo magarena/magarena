@@ -118,6 +118,7 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature with flying", TARGET_ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking creature without flying", TARGET_ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("attacking or blocking creature", TARGET_ATTACKING_OR_BLOCKING_CREATURE);
+        single.put("attacking or blocking creature you control", TARGET_ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
         single.put("attacking or blocking Spirit",  TARGET_ATTACKING_OR_BLOCKING_SPIRIT);
         single.put("basic land card from your hand", TARGET_BASIC_LAND_CARD_FROM_HAND);
         single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);

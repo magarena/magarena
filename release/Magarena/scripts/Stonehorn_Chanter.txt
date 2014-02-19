@@ -1,0 +1,11 @@
+name=Stonehorn Chanter
+url=http://magiccards.info/m14/en/39.html
+image=http://mtgimage.com/card/stonehorn%20chanter.jpg
+value=1.395
+rarity=U
+type=Creature
+subtype=Rhino,Cleric
+cost={5}{W}
+pt=4/4
+ability=pay {5}{W}:SN gains vigilance, lifelink until end of turn.
+timing=main

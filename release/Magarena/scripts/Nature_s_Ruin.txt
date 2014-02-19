@@ -1,0 +1,9 @@
+name=Nature's Ruin
+url=http://magiccards.info/po/en/26.html
+image=http://mtgimage.com/card/nature's%20ruin.jpg
+value=3.864
+rarity=U
+type=Sorcery
+cost={2}{B}
+timing=main
+requires_groovy_code

@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Main),
-        "Card"
+        new MagicActivationHints(MagicTiming.Removal),
+        "Flicker"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {

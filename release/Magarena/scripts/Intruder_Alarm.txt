@@ -1,0 +1,10 @@
+name=Intruder Alarm
+url=http://magiccards.info/8e/en/86.html
+image=http://mtgimage.com/card/intruder%20alarm.jpg
+value=4.426
+rarity=R
+type=Enchantment
+cost={2}{U}
+ability=lord all creatures have doesn't untap during untap step
+timing=enchantment
+requires_groovy_code

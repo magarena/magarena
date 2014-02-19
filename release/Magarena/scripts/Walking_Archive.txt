@@ -1,0 +1,12 @@
+name=Walking Archive
+url=http://magiccards.info/di/en/169.html
+image=http://mtgimage.com/card/walking%20archive.jpg
+value=3.369
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={3}
+pt=1/1
+ability=defender;enters with counter +1/+1 1;pay {2}{W}{U}:Put a +1/+1 counter on SN.
+timing=artifact
+requires_groovy_code

@@ -14,9 +14,10 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets =
                 game.filterPermanents(player,MagicTargetFilter.TARGET_ENCHANTMENT);
-            game.doAction(new MagicDestroyAction(targets));
-            if (targets.size() > 0) {
-                game.doAction(new MagicChangeLifeAction(player,targets.size()));
+            final MagicDestroyAction destroy = new MagicDestroyAction(targets);
+            game.doAction(destroy);
+            if (destroy.getNumDestroyed() > 0) {
+                game.doAction(new MagicChangeLifeAction(player,destroy.getNumDestroyed()));
             }
         }
     }

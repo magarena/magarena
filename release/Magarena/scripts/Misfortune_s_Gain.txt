@@ -1,0 +1,9 @@
+name=Misfortune's Gain
+url=http://magiccards.info/p3k/en/13.html
+image=http://mtgimage.com/card/misfortune's%20gain.jpg
+value=2.674
+rarity=C
+type=Sorcery
+cost={3}{W}
+timing=main
+requires_groovy_code=Path of Peace

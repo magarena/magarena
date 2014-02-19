@@ -1,0 +1,10 @@
+name=Savageborn Hydra
+url=http://magiccards.info/dgm/en/100.html
+image=http://mtgimage.com/card/savageborn%20hydra.jpg
+value=4.16
+rarity=M
+type=Creature
+subtype=Hydra
+cost={X}{R}{G}
+ability=double strike;enters with counter +1/+1 X;pay {1}{R/G}, {Sorcery}:Put a +1/+1 counter on SN.
+timing=main
