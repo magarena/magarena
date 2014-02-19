@@ -1,0 +1,9 @@
+name=Devastation
+url=http://magiccards.info/po/es/128.html
+image=http://mtgimage.com/card/devastation.jpg
+value=3.8
+rarity=R
+type=Sorcery
+cost={5}{R}{R}
+timing=main
+requires_groovy_code

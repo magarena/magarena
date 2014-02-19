@@ -1,0 +1,9 @@
+name=Cleanse
+url=http://magiccards.info/lg/en/174.html
+image=http://mtgimage.com/card/cleanse.jpg
+value=3.82
+rarity=R
+type=Sorcery
+cost={2}{W}{W}
+timing=main
+requires_groovy_code

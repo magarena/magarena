@@ -1,0 +1,9 @@
+name=Guan Yu's 1,000-Li March
+url=http://magiccards.info/p3k/en/7.html
+image=http://mtgimage.com/card/guan%20yu's%201,000-li%20march.jpg
+value=3.273
+rarity=R
+type=Sorcery
+cost={4}{W}{W}
+timing=main
+requires_groovy_code
