@@ -1,6 +1,7 @@
 package magic.ui;
 
 import magic.MagicMain;
+import magic.MagicUtility;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
