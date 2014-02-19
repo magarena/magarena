@@ -40,7 +40,7 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
 
     public final boolean canPlay(final MagicGame game,final MagicPermanent source) {
         // Check if source can activate activated abilities
-        if (source.isPermanent() && ((MagicPermanent)source).hasAbility(MagicAbility.CantActivateAbilities)) {
+        if (source.hasAbility(MagicAbility.CantActivateAbilities)) {
             return false;
         }
         
