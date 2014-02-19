@@ -1,0 +1,9 @@
+name=Path of Peace
+url=http://magiccards.info/st/en/21.html
+image=http://mtgimage.com/card/path%20of%20peace.jpg
+value=2.562
+rarity=C
+type=Sorcery
+cost={3}{W}
+timing=main
+requires_groovy_code

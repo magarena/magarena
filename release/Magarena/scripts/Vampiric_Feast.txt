@@ -1,0 +1,9 @@
+name=Vampiric Feast
+url=http://magiccards.info/po/en/37.html
+image=http://mtgimage.com/card/vampiric%20feast.jpg
+value=1.144
+rarity=U
+type=Sorcery
+cost={5}{B}{B}
+timing=main
+requires_groovy_code=Warleader's Helix
