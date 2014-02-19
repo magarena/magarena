@@ -403,7 +403,9 @@ public class MagicFrame extends JFrame {
         contentPanel.getActionMap().put("Screenshot", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
+                MagicUtility.setBusyMouseCursor(true);
                 doScreenshot();
+                MagicUtility.setBusyMouseCursor(false);
             }
         });
     }
