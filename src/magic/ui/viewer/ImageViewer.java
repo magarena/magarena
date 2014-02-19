@@ -95,7 +95,7 @@ public class ImageViewer extends JPanel {
         zoomX=imageWidth/ZOOM_FACTOR;
         zoomY=imageHeight/ZOOM_FACTOR;
 
-        scaledImage=magic.GraphicsUtilities.scale(image,VIEWER_WIDTH,viewerHeight);
+        scaledImage=magic.ui.utility.GraphicsUtilities.scale(image,VIEWER_WIDTH,viewerHeight);
 
         timer = new Timer(DELAY, new ActionListener() {
             public void actionPerformed(ActionEvent evt) {

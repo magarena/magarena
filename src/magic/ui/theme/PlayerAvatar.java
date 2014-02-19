@@ -16,13 +16,13 @@ public class PlayerAvatar {
     private final ImageIcon turnIcon;
 
     public PlayerAvatar(final BufferedImage image) {
-        largeIcon  = new ImageIcon(magic.GraphicsUtilities.scale(
+        largeIcon  = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
                      image,LARGE_SIZE,LARGE_SIZE));
-        mediumIcon = new ImageIcon(magic.GraphicsUtilities.scale(
+        mediumIcon = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
                      image,MEDIUM_SIZE,MEDIUM_SIZE));
-        smallIcon  = new ImageIcon(magic.GraphicsUtilities.scale(
+        smallIcon  = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
                      image,SMALL_SIZE,SMALL_SIZE));
-        turnIcon   = new ImageIcon(magic.GraphicsUtilities.scale(
+        turnIcon   = new ImageIcon(magic.ui.utility.GraphicsUtilities.scale(
                      image,CUSTOM_SIZE,CUSTOM_SIZE));
     }
 

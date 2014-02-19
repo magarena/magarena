@@ -4,19 +4,19 @@ import magic.MagicMain;
 import magic.data.FileIO;
 import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
+import magic.ui.utility.GraphicsUtilities;
 
 import java.awt.Component;
 import java.awt.Desktop;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -39,7 +39,7 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
             isRunning = true;
             MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
             if (MagicMain.rootFrame != null) {
-                grabScreenShot(MagicMain.rootFrame);
+                doScreenShot(MagicMain.rootFrame.getContentPane());
             }
             doNotifyUser();
             System.exit(1);
@@ -213,18 +213,16 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
         }
     }
 
-    private static void grabScreenShot(final Component container) {
+    private static void doScreenShot(final Component container) {
         if (container != null) {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {
                     try {
-                        Rectangle rec = container.getBounds();
-                        BufferedImage capture = new BufferedImage(rec.width, rec.height,BufferedImage.TYPE_INT_ARGB);
-                        container.paint(capture.getGraphics()); //capturing the components content in the capture object
-                        ImageIO.write(capture, "png", new File(MagicMain.getLogsPath(), "crash.png"));
-                    } catch (Exception e) {
-                        System.err.println("grabScreenShot failed : " + e.toString());
+                        final Path filePath = Paths.get(MagicMain.getLogsPath()).resolve("crash.png");
+                        GraphicsUtilities.doScreenshotToFile(container, filePath);
+                     } catch (Exception e) {
+                        System.err.println("ScreenShot failed : " + e.toString());
                     }
                 }
             });

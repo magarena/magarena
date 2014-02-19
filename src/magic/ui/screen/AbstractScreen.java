@@ -1,5 +1,7 @@
 package magic.ui.screen;
 
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
@@ -17,6 +19,8 @@ import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBar;
 import magic.ui.screen.widget.StatusBar;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -60,6 +64,8 @@ public abstract class AbstractScreen extends JPanel {
     private void layoutMagActionBar() {
         if (hasActionBar()) {
             add(new ActionBar((IActionBar)this), "w 100%");
+        } else if (!(this instanceof DuelGameScreen)) {
+            add(getKeysStrip(), "w 100%");
         }
     }
 
@@ -117,6 +123,24 @@ public abstract class AbstractScreen extends JPanel {
           frame.getGlassPane().setVisible(false);
       }
 
+    }
+
+    private JPanel getKeysStrip() {
+        final JPanel p = new TexturedPanel();
+        p.setPreferredSize(new Dimension(0, 20));
+        p.setLayout(new MigLayout("gap 14, insets 2 6 2 6"));
+        p.setBackground(FontsAndBorders.MENUPANEL_COLOR);
+        p.add(getLabel("F10: Screenshot"));
+        p.add(getLabel("F11: Fullscreen"));
+        p.add(getLabel("F12: Background"));
+        p.add(getLabel("ESC: Options / Close"));
+        return p;
+    }
+
+    private JLabel getLabel(final String text) {
+        final JLabel lbl = new JLabel(text);
+        lbl.setForeground(Color.LIGHT_GRAY);
+        return lbl;
     }
 
 }
