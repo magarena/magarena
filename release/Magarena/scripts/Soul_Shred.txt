@@ -1,0 +1,9 @@
+name=Soul Shred
+url=http://magiccards.info/po/en/35.html
+image=http://mtgimage.com/card/soul%20shred.jpg
+value=2.308
+rarity=C
+type=Sorcery
+cost={3}{B}{B}
+timing=main
+requires_groovy_code

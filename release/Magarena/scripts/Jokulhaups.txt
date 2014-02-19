@@ -1,0 +1,9 @@
+name=Jokulhaups
+url=http://magiccards.info/5e/en/246.html
+image=http://mtgimage.com/card/jokulhaups.jpg
+value=4.52
+rarity=R
+type=Sorcery
+cost={4}{R}{R}
+timing=main
+requires_groovy_code

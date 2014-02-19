@@ -1,0 +1,9 @@
+name=Fire Tempest
+url=http://magiccards.info/st/en/97.html
+image=http://mtgimage.com/card/fire%20tempest.jpg
+value=3.029
+rarity=R
+type=Sorcery
+cost={5}{R}{R}
+timing=main
+requires_groovy_code
