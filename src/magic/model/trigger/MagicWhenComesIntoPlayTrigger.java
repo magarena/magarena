@@ -84,29 +84,18 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
         }
     };
     
-    public static final MagicWhenComesIntoPlayTrigger XPlusOneCounters = new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            game.doAction(new MagicChangeCountersAction(
-                permanent,
-                MagicCounterType.PlusOne,
-                payedCost.getX(),
-                true
-            ));
-            return MagicEvent.NONE;
-        }
-    };
-    
-    public static final MagicWhenComesIntoPlayTrigger XChargeCounters = new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            game.doAction(new MagicChangeCountersAction(
-                permanent,
-                MagicCounterType.Charge,
-                payedCost.getX(),
-                true
-            ));
-            return MagicEvent.NONE;
-        }
+    public static final MagicWhenComesIntoPlayTrigger XCounters(final MagicCounterType counterType) {
+        return new MagicWhenComesIntoPlayTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+                game.doAction(new MagicChangeCountersAction(
+                    permanent,
+                    counterType,
+                    payedCost.getX(),
+                    true
+                ));
+                return MagicEvent.NONE;
+            }
+        };
     };
 }

@@ -517,20 +517,13 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final String[] token = arg.split(" ");
             final String name = token[0];
-            final int n = Integer.parseInt(token[1]);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.getCounterRaw(name),n));
-        }
-    },
-    EntersXPlus("enters with counter +1/+1 X", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicWhenComesIntoPlayTrigger.XPlusOneCounters);
-        }
-    },
-    EntersXCharge("enters with counter charge X", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicWhenComesIntoPlayTrigger.XChargeCounters);
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(name);
+            if (token[1].equalsIgnoreCase("X")) {
+                card.add(MagicWhenComesIntoPlayTrigger.XCounters(counterType));
+            } else {
+                final int n = Integer.parseInt(token[1]);
+                card.add(new MagicComesIntoPlayWithCounterTrigger(counterType,n));
+            }
         }
     },
     EntersTappedUnlessTwo("enters tapped unless two", -10) {

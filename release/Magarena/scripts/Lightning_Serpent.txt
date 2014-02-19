@@ -1,0 +1,11 @@
+name=Lightning Serpent
+url=http://magiccards.info/cs/en/88.html
+image=http://mtgimage.com/card/lightning%20serpent.jpg
+value=3.923
+rarity=R
+type=Creature
+subtype=Elemental,Serpent
+cost={X}{R}
+pt=2/1
+ability=trample;haste;enters with counter +1/+0 X;sac at end
+timing=fmain
