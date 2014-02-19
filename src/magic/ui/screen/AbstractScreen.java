@@ -139,7 +139,7 @@ public abstract class AbstractScreen extends JPanel {
 
     private JLabel getLabel(final String text) {
         final JLabel lbl = new JLabel(text);
-        lbl.setForeground(Color.LIGHT_GRAY);
+        lbl.setForeground(Color.LIGHT_GRAY.darker());
         return lbl;
     }
 

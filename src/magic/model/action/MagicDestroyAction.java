@@ -12,6 +12,7 @@ import java.util.Collection;
 public class MagicDestroyAction extends MagicAction {
 
     private final Collection<MagicPermanent> targets = new ArrayList<MagicPermanent>();
+    private int numDestroyed = 0;
 
     public MagicDestroyAction(final MagicPermanent permanent) {
         this.targets.add(permanent);
@@ -64,11 +65,17 @@ public class MagicDestroyAction extends MagicAction {
             }
         }
 
+        numDestroyed = toBeDestroyed.size();
+
         for (final MagicPermanent permanent : toBeDestroyed) {
             // Destroyed
             game.logAppendMessage(permanent.getController(),permanent.getName()+" is destroyed.");
             game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Graveyard));
         }
+    }
+
+    public int getNumDestroyed() {
+        return numDestroyed;
     }
 
     @Override
