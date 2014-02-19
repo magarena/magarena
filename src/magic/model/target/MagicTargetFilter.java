@@ -319,6 +319,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
+    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() ||
+                   target.isArtifact() ||
+                   target.isEnchantment();
+        }
+    };
+    
     MagicPermanentFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isOpponent(player) &&
