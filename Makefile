@@ -477,7 +477,7 @@ check_rarity: scripts/fix_rarity.scala cards/meta.xml
 
 # check metadata using cards.xml
 check_meta: cards/scriptable.txt
-	diff <(cat `grep name= $^ | sed 's/[^A-Za-z]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
+	diff <(cat `grep name= $^ | sed 's/[^A-Za-z0-9]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' $^) -d  |\
 	grep ">" |\
 	grep -v "0/0" |\
@@ -670,5 +670,5 @@ incoming:
 	grep -o https.* .hg/hgrc | parallel -j0 -k hg incoming {}
 
 properties.diff:
-	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
+	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z0-9]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' cards/scriptable.txt) -d -u > $@
