@@ -445,7 +445,13 @@ public class MagicFrame extends JFrame {
     private void viewScreenshotFile(final File imageFile) {
         if (Desktop.isDesktopSupported()) {
             try {
-                Desktop.getDesktop().open(imageFile);
+                if (MagicUtility.IS_WINDOWS_OS) {
+                    // There is an issue in Windows where the open() method of getDesktop()
+                    // fails silently. The recommended solution is to use getRuntime().
+                    Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + imageFile.toString());
+                } else {
+                    Desktop.getDesktop().open(imageFile);
+                }
             } catch (IOException e) {
                 e.printStackTrace();
                 JOptionPane.showMessageDialog(this, "Unable to open the following file using default application :\n" + imageFile.getAbsolutePath());
