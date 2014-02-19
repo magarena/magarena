@@ -23,7 +23,7 @@ def CARD_NAMED_LLANOWAR_SENTINEL = new MagicCardFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if event.isYes {
+            if (event.isYes()) {
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event,
                     new MagicTargetChoice(
