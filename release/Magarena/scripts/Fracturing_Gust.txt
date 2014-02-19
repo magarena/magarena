@@ -1,0 +1,9 @@
+name=Fracturing Gust
+url=http://magiccards.info/shm/en/227.html
+image=http://mtgimage.com/card/fracturing%20gust.jpg
+value=3.913
+rarity=R
+type=Instant
+cost={2}{G/W}{G/W}{G/W}
+timing=removal
+requires_groovy_code

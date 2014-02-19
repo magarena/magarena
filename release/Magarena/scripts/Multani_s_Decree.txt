@@ -1,0 +1,9 @@
+name=Multani's Decree
+url=http://magiccards.info/ud/en/114.html
+image=http://mtgimage.com/card/multani's%20decree.jpg
+value=3.983
+rarity=C
+type=Sorcery
+cost={3}{G}
+timing=main
+requires_groovy_code
