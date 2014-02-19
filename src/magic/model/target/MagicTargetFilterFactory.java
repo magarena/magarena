@@ -93,6 +93,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment your opponents control", TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS);
         single.put("artifact or creature", TARGET_ARTIFACT_OR_CREATURE);
         single.put("artifact, creature, or land", TARGET_ARTIFACT_OR_CREATURE_OR_LAND);
+        single.put("artifact, creature, or enchantment",TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
         single.put("creature token you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
         single.put("unpaired Soulbond creature", TARGET_UNPAIRED_SOULBOND_CREATURE);
         single.put("nonland permanent", TARGET_NONLAND_PERMANENT);
