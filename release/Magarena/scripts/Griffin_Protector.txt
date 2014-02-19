@@ -1,0 +1,12 @@
+name=Griffin Protector
+url=http://magiccards.info/m13/en/16.html
+image=http://mtgimage.com/card/griffin%20protector.jpg
+value=2.814
+rarity=C
+type=Creature
+subtype=Griffin
+cost={3}{W}
+pt=2/3
+ability=flying
+timing=main
+requires_groovy_code

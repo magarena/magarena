@@ -1,0 +1,12 @@
+name=Liliana's Shade
+url=http://magiccards.info/m13/en/98.html
+image=http://mtgimage.com/card/liliana's%20shade.jpg
+value=3.588
+rarity=C
+type=Creature
+subtype=Shade
+cost={2}{B}{B}
+pt=1/1
+ability=pay {B}:SN gets +1/+1 until end of turn.
+timing=main
+requires_groovy_code

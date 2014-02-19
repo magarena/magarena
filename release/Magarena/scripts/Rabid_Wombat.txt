@@ -1,0 +1,12 @@
+name=Rabid Wombat
+url=http://magiccards.info/5e/en/181.html
+image=http://mtgimage.com/card/rabid%20wombat.jpg
+value=3.331
+rarity=U
+type=Creature
+subtype=Wombat
+cost={2}{G}{G}
+pt=0/1
+ability=vigilance
+timing=main
+requires_groovy_code
