@@ -1,0 +1,9 @@
+name=Rain of Daggers
+url=http://magiccards.info/po2/en/25.html
+image=http://mtgimage.com/card/rain%20of%20daggers.jpg
+value=3.477
+rarity=R
+type=Sorcery
+cost={4}{B}{B}
+timing=main
+requires_groovy_code

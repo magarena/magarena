@@ -1,0 +1,9 @@
+name=Righteous Fury
+url=http://magiccards.info/st/en/23.html
+image=http://mtgimage.com/card/righteous%20fury.jpg
+value=4.14
+rarity=R
+type=Sorcery
+cost={4}{W}{W}
+timing=main
+requires_groovy_code
