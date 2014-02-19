@@ -1,0 +1,9 @@
+name=Volcanic Geyser
+url=http://magiccards.info/m14/en/160.html
+image=http://mtgimage.com/card/volcanic%20geyser.jpg
+value=3.738
+rarity=U
+type=Instant
+cost={X}{R}{R}
+timing=removal
+requires_groovy_code=Blaze

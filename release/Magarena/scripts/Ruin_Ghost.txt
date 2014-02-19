@@ -1,0 +1,11 @@
+name=Ruin Ghost
+url=http://magiccards.info/wwk/en/19.html
+image=http://mtgimage.com/card/ruin%20ghost.jpg
+value=4.031
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{W}
+pt=1/1
+timing=main
+requires_groovy_code

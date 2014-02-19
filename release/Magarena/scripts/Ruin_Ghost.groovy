@@ -7,35 +7,32 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
-                new MagicPayManaCostEvent(source,"{3}{U}")
+                new MagicPayManaCostEvent(source,"{W}")
             ];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
-                    source
-                ),
+                MagicTargetFilter.TARGET_LAND_YOU_CONTROL,
                 MagicTargetHint.None,
-                "another target creature to exile"
+                "target land to exile"
             );
             return new MagicEvent(
                 source,
                 targetChoice,
                 MagicBounceTargetPicker.create(),
                 this,
-                "Exile another target creature you control\$, then " +
+                "Exile target land you control\$, then " +
                 "return that card to the battlefield under your control."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent creature ->
-                game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
-                game.doAction(new MagicRemoveCardAction(creature.getCard(),MagicLocationType.Exile));
-                game.doAction(new MagicPlayCardAction(creature.getCard(),event.getPlayer()));
+                final MagicPermanent land ->
+                game.doAction(new MagicRemoveFromPlayAction(land,MagicLocationType.Exile));
+                game.doAction(new MagicRemoveCardAction(land.getCard(),MagicLocationType.Exile));
+                game.doAction(new MagicPlayCardAction(land.getCard(),event.getPlayer()));
             });
         }
     }

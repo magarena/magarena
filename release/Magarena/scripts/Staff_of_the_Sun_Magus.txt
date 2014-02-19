@@ -1,0 +1,9 @@
+name=Staff of the Sun Magus
+url=http://magiccards.info/m14/en/222.html
+image=http://mtgimage.com/card/staff%20of%20the%20sun%20magus.jpg
+value=2.08
+rarity=U
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code

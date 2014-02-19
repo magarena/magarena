@@ -1,0 +1,9 @@
+name=Nausea
+url=http://magiccards.info/ala/pt/63.html
+image=http://mtgimage.com/card/nausea.jpg
+value=3
+rarity=C
+type=Sorcery
+cost={1}{B}
+timing=main
+requires_groovy_code

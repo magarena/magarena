@@ -1,0 +1,11 @@
+name=Lore Broker
+url=http://magiccards.info/rav/en/57.html
+image=http://mtgimage.com/card/lore%20broker.jpg
+value=3.306
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={1}{U}
+pt=1/2
+timing=main
+requires_groovy_code
