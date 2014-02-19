@@ -1,0 +1,9 @@
+name=Choking Fumes
+url=http://magiccards.info/mbs/en/4.html
+image=http://mtgimage.com/card/choking%20fumes.jpg
+value=3.303
+rarity=U
+type=Instant
+cost={2}{W}
+timing=block
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Fangren Marauder
+url=http://magiccards.info/mbs/en/79.html
+image=http://mtgimage.com/card/fangren%20marauder.jpg
+value=3.327
+rarity=C
+type=Creature
+subtype=Beast
+cost={5}{G}
+pt=5/5
+timing=main
+requires_groovy_code

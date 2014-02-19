@@ -1,0 +1,11 @@
+name=Vedalken Infuser
+url=http://magiccards.info/mbs/en/37.html
+image=http://mtgimage.com/card/vedalken%20infuser.jpg
+value=3.009
+rarity=U
+type=Creature
+subtype=Vedalken,Wizard
+cost={3}{U}
+pt=1/4
+ability=your upkeep effect PN may Put a charge counter on target artifact.
+timing=main

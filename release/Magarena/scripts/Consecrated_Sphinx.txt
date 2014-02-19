@@ -1,0 +1,12 @@
+name=Consecrated Sphinx
+url=http://magiccards.info/mbs/en/21.html
+image=http://mtgimage.com/card/consecrated%20sphinx.jpg
+value=4.258
+rarity=M
+type=Creature
+subtype=Sphinx
+cost={4}{U}{U}
+pt=4/6
+ability=flying
+timing=main
+requires_groovy_code

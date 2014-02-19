@@ -1,0 +1,9 @@
+name=Baku Altar
+url=http://magiccards.info/bok/en/152.html
+image=http://mtgimage.com/card/baku%20altar.jpg
+value=2.792
+rarity=R
+type=Artifact
+cost={2}
+ability=spirit or arcane effect PN may Put a ki counter on SN.;pay {2},{T},Remove a ki counter from SN:PN puts a 1/1 colorless Spirit creature token onto the battlefield.
+timing=artifact

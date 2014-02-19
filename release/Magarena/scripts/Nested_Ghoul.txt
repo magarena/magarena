@@ -1,0 +1,11 @@
+name=Nested Ghoul
+url=http://magiccards.info/mbs/en/48.html
+image=http://mtgimage.com/card/nested%20ghoul.jpg
+value=3.178
+rarity=U
+type=Creature
+subtype=Zombie,Warrior
+cost={3}{B}{B}
+pt=4/2
+timing=main
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Banishment Decree
+url=http://magiccards.info/mbs/en/3.html
+image=http://mtgimage.com/card/banishment%20decree.jpg
+value=1.968
+rarity=C
+type=Instant
+cost={3}{W}{W}
+timing=removal
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Serum Raker
+url=http://magiccards.info/mbs/en/31.html
+image=http://mtgimage.com/card/serum%20raker.jpg
+value=2.107
+rarity=C
+type=Creature
+subtype=Drake
+cost={2}{U}{U}
+pt=3/2
+ability=flying
+timing=main
+requires_groovy_code

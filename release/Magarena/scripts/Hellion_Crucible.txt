@@ -1,0 +1,8 @@
+name=Hellion Crucible
+url=http://magiccards.info/m13/en/226.html
+image=http://mtgimage.com/card/hellion%20crucible.jpg
+value=3.026
+rarity=R
+type=Land
+ability=tap add mana {1};pay {1}{R},{T}:Put a pressure counter on SN.;pay {1}{R},{T},Remove two pressure counters from SN,Sacrifice SN:PN puts a 4/4 red Hellion creature token with haste onto the battlefield.
+timing=land

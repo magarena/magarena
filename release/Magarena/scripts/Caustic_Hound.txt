@@ -1,0 +1,11 @@
+name=Caustic Hound
+url=http://magiccards.info/mbs/en/40.html
+image=http://mtgimage.com/card/caustic%20hound.jpg
+value=1.957
+rarity=C
+type=Creature
+subtype=Hound
+cost={5}{B}
+pt=4/4
+timing=main
+requires_groovy_code
