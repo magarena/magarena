@@ -74,7 +74,7 @@ public class MagicDestroyAction extends MagicAction {
         }
     }
 
-    int getNumDestroyed() {
+    public int getNumDestroyed() {
         return numDestroyed;
     }
 
