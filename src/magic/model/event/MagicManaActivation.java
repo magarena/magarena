@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.MagicAbility;
+import magic.model.MagicPlayerState;
 import magic.model.condition.MagicCondition;
 
 import java.util.List;
@@ -39,8 +40,9 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     }
 
     public final boolean canPlay(final MagicGame game,final MagicPermanent source) {
-        // Check if source can activate activated abilities
-        if (source.hasAbility(MagicAbility.CantActivateAbilities)) {
+        // Check if source or player has can't activate activated abilities
+        if (source.hasAbility(MagicAbility.CantActivateAbilities) ||
+            source.getController().hasState(MagicPlayerState.CantActivateAbilities)) {
             return false;
         }
         
