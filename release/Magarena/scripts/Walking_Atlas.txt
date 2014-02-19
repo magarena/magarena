@@ -1,0 +1,11 @@
+name=Walking Atlas
+url=http://magiccards.info/wwk/en/131.html
+image=http://mtgimage.com/card/walking%20atlas.jpg
+value=3.794
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=1/1
+timing=artifact
+requires_groovy_code

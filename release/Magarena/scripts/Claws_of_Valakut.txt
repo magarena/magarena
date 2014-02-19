@@ -1,0 +1,12 @@
+name=Claws of Valakut
+url=http://magiccards.info/ddg/en/72.html
+image=http://mtgimage.com/card/claws%20of%20valakut.jpg
+value=3.663
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}{R}
+enchant=pump,pos creature
+given_ability=first strike
+timing=aura
+requires_groovy_code
