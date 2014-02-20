@@ -52,8 +52,8 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() &&
-            		otherPermanent != permanent &&
-            		permanent.getCounters(MagicCounterType.PlusOne)>0) ?
+                    otherPermanent != permanent &&
+                    permanent.getCounters(MagicCounterType.PlusOne)>0) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice("Move a +1/+1 counter?"),
@@ -65,20 +65,20 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-        	if (event.isYes()) {
-        		game.doAction(new MagicChangeCountersAction(
-        			event.getPermanent(),
-        			MagicCounterType.PlusOne,
-        			-1,
-        			true
-        		));
-        		game.doAction(new MagicChangeCountersAction(
-        			event.getRefPermanent(),
-        			MagicCounterType.PlusOne,
-        			1,
-        			true
-        		));
-        	}
+            if (event.isYes()) {
+                game.doAction(new MagicChangeCountersAction(
+                    event.getPermanent(),
+                    MagicCounterType.PlusOne,
+                    -1,
+                    true
+                ));
+                game.doAction(new MagicChangeCountersAction(
+                    event.getRefPermanent(),
+                    MagicCounterType.PlusOne,
+                    1,
+                    true
+                ));
+            }
         }
     };
 

@@ -207,9 +207,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     };
     
     MagicPermanentFilterImpl TARGET_SNOW_LAND=new MagicPermanentFilterImpl() {
-    	public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-    		return target.isLand() && target.hasType(MagicType.Snow);
-    	}
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() && target.hasType(MagicType.Snow);
+        }
     };
     
     MagicPermanentFilterImpl TARGET_BASIC_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {

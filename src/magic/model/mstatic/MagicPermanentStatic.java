@@ -17,24 +17,24 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
                 final MagicPermanent permanent,
                 final MagicPowerToughness pt) {
                 final int amtP = permanent.getCounters(MagicCounterType.PlusOnePlusZero)
-                				+ permanent.getCounters(MagicCounterType.PlusOne)
-                				+ permanent.getCounters(MagicCounterType.PlusOnePlusTwo)
-                				+ (2 * permanent.getCounters(MagicCounterType.PlusTwoPlusZero))
-                				+ (2 * permanent.getCounters(MagicCounterType.PlusTwo))
-                				- permanent.getCounters(MagicCounterType.MinusOneMinusZero)
-                				- permanent.getCounters(MagicCounterType.MinusOne)
-                				- (2 * permanent.getCounters(MagicCounterType.MinusTwoMinusOne))
-                				- (2 * permanent.getCounters(MagicCounterType.MinusTwo));
+                                + permanent.getCounters(MagicCounterType.PlusOne)
+                                + permanent.getCounters(MagicCounterType.PlusOnePlusTwo)
+                                + (2 * permanent.getCounters(MagicCounterType.PlusTwoPlusZero))
+                                + (2 * permanent.getCounters(MagicCounterType.PlusTwo))
+                                - permanent.getCounters(MagicCounterType.MinusOneMinusZero)
+                                - permanent.getCounters(MagicCounterType.MinusOne)
+                                - (2 * permanent.getCounters(MagicCounterType.MinusTwoMinusOne))
+                                - (2 * permanent.getCounters(MagicCounterType.MinusTwo));
                 final int amtT = permanent.getCounters(MagicCounterType.PlusZeroPlusOne)
-                				+ (2 * permanent.getCounters(MagicCounterType.PlusZeroPlusTwo))
-                				+ permanent.getCounters(MagicCounterType.PlusOne)
-                				+ (2 * permanent.getCounters(MagicCounterType.PlusOnePlusTwo))
-                				+ (2 * permanent.getCounters(MagicCounterType.PlusTwo))
-                				- permanent.getCounters(MagicCounterType.MinusZeroMinusOne)
-                				- (2 * permanent.getCounters(MagicCounterType.MinusZeroMinusTwo))
-                				- permanent.getCounters(MagicCounterType.MinusOne)
-                				- permanent.getCounters(MagicCounterType.MinusTwoMinusOne)
-                				- (2 * permanent.getCounters(MagicCounterType.MinusTwo));
+                                + (2 * permanent.getCounters(MagicCounterType.PlusZeroPlusTwo))
+                                + permanent.getCounters(MagicCounterType.PlusOne)
+                                + (2 * permanent.getCounters(MagicCounterType.PlusOnePlusTwo))
+                                + (2 * permanent.getCounters(MagicCounterType.PlusTwo))
+                                - permanent.getCounters(MagicCounterType.MinusZeroMinusOne)
+                                - (2 * permanent.getCounters(MagicCounterType.MinusZeroMinusTwo))
+                                - permanent.getCounters(MagicCounterType.MinusOne)
+                                - permanent.getCounters(MagicCounterType.MinusTwoMinusOne)
+                                - (2 * permanent.getCounters(MagicCounterType.MinusTwo));
                 pt.add(amtP,amtT);
             }
         });
