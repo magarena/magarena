@@ -36,22 +36,16 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                A_CARD_FROM_LIBRARY,
                 this,
                 "PN may search his or her library for a card, shuffle his or her library, and put that card on top of it."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isNo() == false) {
-                event.processTargetCard(game, {
-                    final MagicCard card ->
-                    game.logAppendMessage(event.getPlayer(), "Found " + card + ".");
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                    game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.TopOfOwnersLibrary));
-                });
-            }
+            game.addEvent(new MagicSearchOntoLibraryEvent(
+                event,
+                A_CARD_FROM_LIBRARY
+            ));
         }
     },
     new MagicPlaneswalkerActivation(-8) {
