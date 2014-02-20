@@ -6,8 +6,8 @@
                     cardOnStack.hasColor(MagicColor.Red)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicTargetChoice.NEG_TARGET_CREATURE
-                    MagicNoCombatTargetPicker(false,true,false),
+                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    new MagicNoCombatTargetPicker(false,true,false),
                     this,
                     "Target creature\$ can't block this turn."
                 ) :
