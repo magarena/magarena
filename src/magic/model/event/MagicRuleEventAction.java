@@ -870,7 +870,7 @@ public enum MagicRuleEventAction {
         	   final String[] pt = counterType.getName().split("/");
         	   return MagicPumpTargetPicker.create();
            } else {
-        	   return null;
+               return MagicDefaultTargetPicker.create();
            }
        }
        @Override
