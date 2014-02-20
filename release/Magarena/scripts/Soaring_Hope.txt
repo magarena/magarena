@@ -1,0 +1,13 @@
+name=Soaring Hope
+url=http://magiccards.info/lw/en/40.html
+image=http://mtgimage.com/card/soaring%20hope.jpg
+value=1.509
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={4}{W}
+ability=enters effect PN gains 3 life.
+given_ability=flying
+enchant=pump,pos creature
+timing=aura
+requires_groovy_code

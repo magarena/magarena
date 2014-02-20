@@ -1,0 +1,11 @@
+name=Elite Javelineer
+url=http://magiccards.info/8e/en/19.html
+image=http://mtgimage.com/card/elite%20javelineer.jpg
+value=3.047
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=2/2
+timing=main
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Hunting Drake
+url=http://magiccards.info/ps/en/27.html
+image=http://mtgimage.com/card/hunting%20drake.jpg
+value=3.019
+rarity=C
+type=Creature
+subtype=Drake
+cost={4}{U}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code

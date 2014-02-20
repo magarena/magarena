@@ -1,0 +1,12 @@
+name=Fencer Clique
+url=http://magiccards.info/mt/en/33.html
+image=http://mtgimage.com/card/fencer%20clique.jpg
+value=2.95
+rarity=C
+type=Creature
+subtype=Faerie,Soldier
+cost={2}{U}{U}
+pt=3/2
+ability=flying
+timing=main
+requires_groovy_code=Thalakos Mistfolk

@@ -1,0 +1,11 @@
+name=Vedalken Dismisser
+url=http://magiccards.info/mma/en/69.html
+image=http://mtgimage.com/card/vedalken%20dismisser.jpg
+value=2.375
+rarity=C
+type=Creature
+subtype=Vedalken,Wizard
+cost={5}{U}
+pt=2/2
+timing=main
+requires_groovy_code

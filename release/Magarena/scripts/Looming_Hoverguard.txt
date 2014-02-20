@@ -1,0 +1,12 @@
+name=Looming Hoverguard
+url=http://magiccards.info/mi/en/38.html
+image=http://mtgimage.com/card/looming%20hoverguard.jpg
+value=2.341
+rarity=U
+type=Creature
+subtype=Drone
+cost={4}{U}{U}
+pt=3/3
+ability=flying
+timing=main
+requires_groovy_code

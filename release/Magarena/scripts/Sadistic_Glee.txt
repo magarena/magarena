@@ -1,0 +1,11 @@
+name=Sadistic Glee
+url=http://magiccards.info/br/en/61.html
+image=http://mtgimage.com/card/sadistic%20glee.jpg
+value=4.056
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+enchant=pump,pos creature
+timing=enchantment
+requires_groovy_code

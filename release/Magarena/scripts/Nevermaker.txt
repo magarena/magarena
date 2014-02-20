@@ -1,0 +1,12 @@
+name=Nevermaker
+url=http://magiccards.info/mt/en/44.html
+image=http://mtgimage.com/card/nevermaker.jpg
+value=3.411
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{U}
+pt=2/3
+ability=flying;evoke {3}{U}
+timing=main
+requires_groovy_code
