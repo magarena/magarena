@@ -107,6 +107,13 @@ public class MagicEvent implements MagicCopyable {
             final MagicCopyable ref,
             final MagicEventAction action,
             final String description) {
+        assert source != null : "source is null";
+        assert player != null : "player is null";
+        assert choice != null : "choice is null";
+        assert targetPicker != null : "targetPicker is null";
+        assert ref          != null : "ref is null";
+        assert action       != null : "action is null";
+        assert description  != null : "description is null";
         this.source=source;
         this.player=player;
         this.choice=choice;
