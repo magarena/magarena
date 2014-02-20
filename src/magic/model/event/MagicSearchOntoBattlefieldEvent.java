@@ -12,6 +12,7 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicPlayCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
 import magic.model.action.MagicCardAction;
+import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
     
@@ -24,6 +25,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
             source,
             player,
             choice,
+            MagicGraveyardTargetPicker.PutOntoBattlefield,
             EventAction(mods),
             ""
         );

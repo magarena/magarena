@@ -11,6 +11,7 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicShuffleLibraryAction;
 import magic.model.action.MagicCardAction;
+import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchOntoLibraryEvent extends MagicEvent {
     
@@ -23,6 +24,7 @@ public class MagicSearchOntoLibraryEvent extends MagicEvent {
             source,
             player,
             choice,
+            MagicGraveyardTargetPicker.ReturnToHand,
             EventAction,
             ""
         );
