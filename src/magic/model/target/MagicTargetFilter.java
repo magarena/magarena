@@ -496,6 +496,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                     target.hasColor(MagicColor.Green));
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_RED_OR_GREEN_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   (target.hasColor(MagicColor.Red) ||
+                    target.hasColor(MagicColor.Green));
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_GREEN_OR_WHITE_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
