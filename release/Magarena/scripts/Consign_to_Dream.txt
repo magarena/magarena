@@ -1,0 +1,9 @@
+name=Consign to Dream
+url=http://magiccards.info/shm/en/32.html
+image=http://mtgimage.com/card/consign%20to%20dream.jpg
+value=2.788
+rarity=C
+type=Instant
+cost={2}{U}
+timing=removal
+requires_groovy_code

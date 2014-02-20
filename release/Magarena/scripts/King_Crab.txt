@@ -1,0 +1,11 @@
+name=King Crab
+url=http://magiccards.info/ul/en/34.html
+image=http://mtgimage.com/card/king%20crab.jpg
+value=3.719
+rarity=U
+type=Creature
+subtype=Crab
+cost={4}{U}{U}
+pt=4/5
+timing=main
+requires_groovy_code

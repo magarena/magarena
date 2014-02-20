@@ -1,0 +1,11 @@
+name=Servant of Volrath
+url=http://magiccards.info/tp/en/50.html
+image=http://mtgimage.com/card/servant%20of%20volrath.jpg
+value=1.714
+rarity=C
+type=Creature
+subtype=Minion
+cost={2}{B}
+pt=3/3
+timing=main
+requires_groovy_code
