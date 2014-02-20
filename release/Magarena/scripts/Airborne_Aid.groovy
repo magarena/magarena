@@ -11,9 +11,10 @@
         
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final int amount = player.getNrOfPermanents(MagicSubType.Bird) + player.getOpponent().getNrOfPermanents(MagicSubType.Bird);
-            game.doAction(new MagicDrawAction(player,amount));
+            final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Bird) + event.getPlayer().getOpponent().getNrOfPermanents(MagicSubType.Bird);
+            if (amount>0){
+                game.doAction(new MagicDrawAction(event.getPlayer(),amount));
+            }
         }
     }
 ]

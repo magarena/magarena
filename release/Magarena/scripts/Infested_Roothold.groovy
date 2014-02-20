@@ -1,8 +1,9 @@
 [
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
-            return (spell.isEnemy(permanent) && spell.hasType(MagicType.Artifact)) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+            return (cardOnStack.isEnemy(permanent) && 
+                    cardOnStack.hasType(MagicType.Artifact)) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),

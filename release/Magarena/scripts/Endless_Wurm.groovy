@@ -14,12 +14,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicPermanent permanent = event.getPermanent();
-            if (player.controlsPermanent(MagicType.Enchantment) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(permanent, player, MagicTargetChoice.SACRIFICE_ENCHANTMENT));
+            if (event.getPlayer().controlsPermanent(MagicType.Enchantment) && event.isYes()) {
+                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_ENCHANTMENT));
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
             }
         }
     }
