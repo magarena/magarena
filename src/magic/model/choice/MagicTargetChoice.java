@@ -127,7 +127,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("target nonbasic land");
     
     public static final MagicTargetChoice TARGET_BASIC_LAND_YOU_CONTROL =
-    	new MagicTargetChoice("target basic land you control");
+        new MagicTargetChoice("target basic land you control");
     
     public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND = 
         MagicTargetChoice.Negative("target nonbasic land");
@@ -145,7 +145,7 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetChoice.Positive("target land");
     
     public static final MagicTargetChoice LAND_YOU_CONTROL =
-    	new MagicTargetChoice("a land you control");
+        new MagicTargetChoice("a land you control");
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT = 
         new MagicTargetChoice("target nonland permanent");
@@ -265,7 +265,7 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetChoice.Positive("target nonblack creature");
     
     public static final MagicTargetChoice NEG_TARGET_WHITE_CREATURE =
-    	MagicTargetChoice.Negative("target white creature");
+        MagicTargetChoice.Negative("target white creature");
     
     public static final MagicTargetChoice NEG_TARGET_NONARTIFACT_CREATURE = 
         MagicTargetChoice.Negative("target nonartifact creature");
@@ -340,7 +340,7 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetChoice.Negative("target attacking creature with flying");
     
     public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE_WITHOUT_FLYING =
-    	MagicTargetChoice.Negative("target attacking creature without flying");
+        MagicTargetChoice.Negative("target attacking creature without flying");
 
     public static final MagicTargetChoice NEG_TARGET_BLOCKED_CREATURE = 
         MagicTargetChoice.Negative("target blocked creature");
@@ -349,7 +349,7 @@ public class MagicTargetChoice extends MagicChoice {
         MagicTargetChoice.Negative("target green or white creature");
 
     public static final MagicTargetChoice NEG_TARGET_RED_OR_GREEN_CREATURE =
-    	MagicTargetChoice.Negative("target red or green creature");
+        MagicTargetChoice.Negative("target red or green creature");
     
     public static final MagicTargetChoice NEG_WHITE_OR_BLUE_CREATURE = 
         MagicTargetChoice.Negative("target white or blue creature");
@@ -358,7 +358,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("target white creature");
 
     public static final MagicTargetChoice NEG_TARGET_GREEN_CREATURE =
-    	MagicTargetChoice.Negative("target green creature");
+        MagicTargetChoice.Negative("target green creature");
     
     public static final MagicTargetChoice TARGET_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("target creature you control");
@@ -451,7 +451,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("a creature to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_BLACK_CREATURE =
-    	new MagicTargetChoice("a black creature to sacrifice");
+        new MagicTargetChoice("a black creature to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_ARTIFACT = 
         new MagicTargetChoice("an artifact to sacrifice");
@@ -463,7 +463,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("an enchantment to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_AURA =
-    	new MagicTargetChoice("an aura to sacrifice");
+        new MagicTargetChoice("an aura to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_MOUNTAIN = 
         new MagicTargetChoice("a Mountain to sacrifice");
@@ -595,7 +595,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("a basic land card from your library");
     
     public static final MagicTargetChoice FOREST_CARD_FROM_LIBRARY =
-    	new MagicTargetChoice("a Forest card from your library");
+        new MagicTargetChoice("a Forest card from your library");
     
     public static final MagicTargetChoice FOREST_OR_ISLAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a Forest or Island card from your library");
@@ -649,10 +649,10 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("an Elf permanent card from your library");
     
     public static final MagicTargetChoice ARTIFACT_CARD_FROM_LIBRARY =
-    	new MagicTargetChoice("an artifact card from your library");
+        new MagicTargetChoice("an artifact card from your library");
     
     public static final MagicTargetChoice EQUIPMENT_CARD_FROM_LIBRARY =
-    	new MagicTargetChoice("an equipment card from your library");
+        new MagicTargetChoice("an equipment card from your library");
 
     public static final MagicTargetChoice TARGET_UNPAIRED_SOULBOND_CREATURE = 
         new MagicTargetChoice("an unpaired Soulbond creature");

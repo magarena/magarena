@@ -216,7 +216,7 @@ public enum MagicRuleEventAction {
         "Prevent"
     ) {
         @Override
-    	public MagicEventAction getAction(final Matcher matcher) {
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
@@ -797,7 +797,7 @@ public enum MagicRuleEventAction {
     },
     CounterOnSelf(
         "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.",
-    	MagicTiming.Pump
+        MagicTiming.Pump
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -819,11 +819,11 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             if (amount>1) {
-         	   final String name = "+Counters";
-         	   return name;
+                final String name = "+Counters";
+                return name;
             } else {
-         	   final String name = "+Counter";
-         	   return name;
+                final String name = "+Counter";
+                return name;
             }
         }
     },
@@ -840,12 +840,12 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent permanent) {
-                        	game.doAction(new MagicChangeCountersAction(
+                            game.doAction(new MagicChangeCountersAction(
                                 permanent,
                                 counterType,
                                 amount,
                                 true
-                        	));
+                            ));
                         }
                     });
                 }
@@ -855,43 +855,43 @@ public enum MagicRuleEventAction {
        public MagicTargetHint getHint(final Matcher matcher) {
            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
            if (counterType.getName().contains("-") || counterType.getScore()<0) {
-        	   return MagicTargetHint.Negative;
+               return MagicTargetHint.Negative;
            } else {
-        	   return MagicTargetHint.Positive;
+               return MagicTargetHint.Positive;
            }
        }
        @Override
        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
            if (counterType.getName().contains("-")) {
-        	   final String[] pt = counterType.getName().split("/");
-        	   return new MagicWeakenTargetPicker(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
+               final String[] pt = counterType.getName().split("/");
+               return new MagicWeakenTargetPicker(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
            } else if (counterType.getName().contains("+")) {
-        	   final String[] pt = counterType.getName().split("/");
-        	   return MagicPumpTargetPicker.create();
+               final String[] pt = counterType.getName().split("/");
+               return MagicPumpTargetPicker.create();
            } else {
-        	   return null;
+               return MagicDefaultTargetPicker.create();
            }
        }
        @Override
        public MagicTiming getTiming(final Matcher matcher) {
            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
            if (counterType.getName().contains("-")) {
-        	   final String[] pt = counterType.getName().split("/");
-        	   return MagicTiming.Removal;
+               final String[] pt = counterType.getName().split("/");
+               return MagicTiming.Removal;
            } else {
-        	   return MagicTiming.Pump;
+               return MagicTiming.Pump;
            }
        }
        @Override
        public String getName(final Matcher matcher) {
            final int amount = englishToInt(matcher.group("amount"));
            if (amount>1) {
-        	   final String name = "+Counters";
-        	   return name;
+               final String name = "+Counters";
+               return name;
            } else {
-        	   final String name = "+Counter";
-        	   return name;
+               final String name = "+Counter";
+               return name;
            }
        }
      },

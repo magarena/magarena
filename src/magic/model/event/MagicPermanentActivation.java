@@ -225,7 +225,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             } else if (cost.equals("{Q}")) {
                 events.add(new MagicUntapEvent(source));
             } else if (cost.contains("Pay ") && cost.contains(" life")) {
-            	final String costText=cost.replace("Pay ","").replace(" life","");
+                final String costText=cost.replace("Pay ","").replace(" life","");
                 events.add(new MagicPayLifeEvent(source, Integer.parseInt(costText)));
             } else if (cost.equals("{Once}")) {
                 events.add(new MagicPlayAbilityEvent(source));
@@ -236,9 +236,9 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             } else if (cost.equals("Return a land you control to its owner's hand")) {
                 events.add(new MagicBounceChosenPermanentEvent(source,MagicTargetChoice.LAND_YOU_CONTROL));
             } else if (cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN")) {
-            	final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
-            	final int amount = englishToInt(costText[0]);
-            	final String counterType = costText[1];
+                final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
+                final int amount = englishToInt(costText[0]);
+                final String counterType = costText[1];
                 events.add(new MagicRemoveCounterEvent(source,MagicCounterType.getCounterRaw(counterType),amount));
             } else {
                 events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));

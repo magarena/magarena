@@ -217,9 +217,9 @@ public class ImageDrawingUtils {
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
                     ax+=inc;
                 } else if (counterType == MagicCounterType.Spore) {
-                	g.drawImage(IconImages.SPORECOUNTER.getImage(),ax,ay,observer);
-                	if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
-                	ax+=inc;
+                    g.drawImage(IconImages.SPORECOUNTER.getImage(),ax,ay,observer);
+                    if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}
+                    ax+=inc;
                 } else if (counterType == MagicCounterType.Arrowhead) {
                     g.drawImage(IconImages.ARROWHEADCOUNTER.getImage(),ax,ay,observer);
                     if (amount > 1){drawStringWithOutline(g, str, ax+6, ay+14, observer);}

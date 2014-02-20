@@ -29,29 +29,29 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
         if (counterType == MagicCounterType.Fade) {
             sacrifice = amount == 0;
             return sacrifice ?
-            	new MagicEvent(
-            			permanent,
-                		SAC_PERM,
-                		"PN sacrifices SN."
-            		):
                 new MagicEvent(
-                		permanent,
-            			REMOVE_FADE_COUNTER,
-            			"PN removes a fade counter from SN."
+                        permanent,
+                        SAC_PERM,
+                        "PN sacrifices SN."
+                    ):
+                new MagicEvent(
+                        permanent,
+                        REMOVE_FADE_COUNTER,
+                        "PN removes a fade counter from SN."
                     );
         } else if (counterType == MagicCounterType.Time){
             sacrifice = amount == 1;
             return sacrifice ?
-            	new MagicEvent(
-            			permanent,
-            			REMOVE_AND_SAC,
-            			"PN removes a time counter from SN. PN sacrifices SN."
-            		):
-            	new MagicEvent(
-            			permanent,
-            			REMOVE_TIME_COUNTER,
-            			"PN removes a time counter from SN."
-            		);
+                new MagicEvent(
+                        permanent,
+                        REMOVE_AND_SAC,
+                        "PN removes a time counter from SN. PN sacrifices SN."
+                    ):
+                new MagicEvent(
+                        permanent,
+                        REMOVE_TIME_COUNTER,
+                        "PN removes a time counter from SN."
+                    );
         }
         return MagicEvent.NONE;
     }

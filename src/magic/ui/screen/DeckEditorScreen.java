@@ -141,11 +141,11 @@ public class DeckEditorScreen
                             }
                         })
                 );
-		buttons.add(
-		        new ActionBarButton(
-		                IconImages.TILED_ICON,
-		                "Deck View", "Shows complete deck using tiled card images.",
-		                new AbstractAction() {
+        buttons.add(
+                new ActionBarButton(
+                        IconImages.TILED_ICON,
+                        "Deck View", "Shows complete deck using tiled card images.",
+                        new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (screenContent.getDeck().size() > 0) {
@@ -155,7 +155,7 @@ public class DeckEditorScreen
                                 }
                             }
                         })
-		        );
+                );
 
         return buttons;
     }
