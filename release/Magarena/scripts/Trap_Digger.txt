@@ -1,0 +1,12 @@
+name=Trap Digger
+url=http://magiccards.info/sc/en/24.html
+image=http://mtgimage.com/card/trap%20digger.jpg
+value=1.242
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=1/3
+ability=pay {2}{W},{T}:Put a trap counter on target land you control.
+timing=main
+requires_groovy_code

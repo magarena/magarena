@@ -1,0 +1,10 @@
+name=Leonin Bladetrap
+url=http://magiccards.info/c13/en/245.html
+image=http://mtgimage.com/card/leonin%20bladetrap.jpg
+value=2.306
+rarity=U
+type=Artifact
+cost={3}
+ability=flash
+timing=flash
+requires_groovy_code

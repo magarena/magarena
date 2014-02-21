@@ -1,0 +1,12 @@
+name=Witchstalker
+url=http://magiccards.info/m14/en/202.html
+image=http://mtgimage.com/card/witchstalker.jpg
+value=4.29
+rarity=R
+type=Creature
+subtype=Wolf
+cost={1}{G}{G}
+pt=3/3
+ability=hexproof
+timing=main
+requires_groovy_code

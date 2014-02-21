@@ -1,0 +1,12 @@
+name=Unstable Mutation
+url=http://magiccards.info/tsts/en/33.html
+image=http://mtgimage.com/card/unstable%20mutation.jpg
+value=4.273
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+given_pt=+3/+3
+enchant=pump,creature
+timing=enchantment
+requires_groovy_code
