@@ -8,4 +8,4 @@ subtype=Equipment
 cost={2}
 equip={2}
 given_ability=flying;haste
-timing=artifact
+timing=equipment

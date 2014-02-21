@@ -9,4 +9,4 @@ cost={2}
 equip={3}
 given_pt=+4/+2
 given_ability=doesn't untap during untap step
-timing=artifact
+timing=equipment

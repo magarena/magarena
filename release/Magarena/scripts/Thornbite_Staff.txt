@@ -8,5 +8,5 @@ subtype=Shaman,Equipment
 cost={2}
 equip={4}
 given_ability=pay {2},{T}: SN deals 1 damage to target creature or player.
-timing=artifact
+timing=equipment
 requires_groovy_code

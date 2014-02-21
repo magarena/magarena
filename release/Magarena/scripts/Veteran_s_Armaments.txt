@@ -7,5 +7,5 @@ type=Tribal,Artifact
 subtype=Soldier,Equipment
 cost={2}
 equip={2}
-timing=artifact
+timing=equipment
 requires_groovy_code

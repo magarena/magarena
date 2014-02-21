@@ -9,4 +9,4 @@ cost={1}
 equip={3}
 given_pt=+1/+0
 given_ability=can't be blocked by creatures with flying
-timing=artifact
+timing=equipment

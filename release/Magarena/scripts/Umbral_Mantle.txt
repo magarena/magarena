@@ -8,4 +8,4 @@ subtype=Equipment
 cost={3}
 equip={0}
 given_ability=pay {3},{Q}:SN gets +2/+2 until end of turn.
-timing=artifact
+timing=equipment

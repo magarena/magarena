@@ -8,4 +8,4 @@ subtype=Equipment
 cost={0}
 equip={1}
 given_ability=tap add mana any
-timing=artifact
+timing=equipment

@@ -8,4 +8,4 @@ subtype=Sheep
 cost={4}
 pt=1/3
 ability=enters effect Destroy target Equipment.
-timing=artifact
+timing=equipment

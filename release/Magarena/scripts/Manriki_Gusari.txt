@@ -9,4 +9,4 @@ cost={2}
 equip={1}
 given_pt=+1/+2
 given_ability=pay {T}:Destroy target equipment.
-timing=artifact
+timing=equipment

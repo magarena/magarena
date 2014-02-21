@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={3}
 equip={4}
-timing=artifact
+timing=equipment
 requires_groovy_code
