@@ -45,6 +45,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                     setContent(getScreenContent(get()));
                     if (!config.showMulliganScreen() || Boolean.getBoolean("selfMode")) {
                         container.setVisible(true);
+                        quickFixSpaceKeyShortcut();
                     }
                 } catch (InterruptedException | ExecutionException e1) {
                     e1.printStackTrace();
@@ -86,6 +87,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         gamePanel.updateView();
         gamePane.updateView();
         container.setVisible(true);
+        quickFixSpaceKeyShortcut();
     }
 
     public void concedeGame() {
@@ -168,6 +170,15 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
         }
 
+    }
+
+    /**
+     * This is a bit of a hack which ensures that the SPACE key works
+     * as expected in the duel/game screen. Addresses issue 481.
+     * TODO: look at implementing a more consistent focusing system.
+     */
+    private void quickFixSpaceKeyShortcut() {
+        gamePanel.requestFocusInWindow();
     }
 
 }
