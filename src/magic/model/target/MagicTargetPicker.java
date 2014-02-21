@@ -56,7 +56,7 @@ public abstract class MagicTargetPicker<T> {
         register("lose flying", MagicLoseFlyingTargetPicker.create());
         register("gain control", MagicExileTargetPicker.create());
         register("exile", MagicExileTargetPicker.create());
-        register("counter", null);
+        register("default", MagicDefaultPermanentTargetPicker.create());
     }
 
     public MagicTargetPicker<MagicPermanent> create(final String arg) {
