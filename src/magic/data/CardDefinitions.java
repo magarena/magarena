@@ -9,11 +9,10 @@ import magic.model.event.MagicCardActivation;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -24,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ImportCustomizer;
 import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
-import groovy.lang.GroovyClassLoader;
+
 import groovy.lang.GroovyShell;
 
 /**
@@ -150,22 +149,42 @@ public class CardDefinitions {
                 return name.toLowerCase().endsWith(".txt");
             }
         });
-        
+
         //sort files to ensure consistent order
         Arrays.sort(files);
 
         //load the card definitions
-        MagicMain.setSplashStatusMessage("Loading " + files.length + " card definitions...");
+        final int totalTxtCards = files.length;
+        final int totalNonTokenCards = getNonTokenCardsCount(files);
+        final int totalTokenCards = totalTxtCards - totalNonTokenCards;
+        MagicMain.setSplashStatusMessage("Loading " + totalNonTokenCards + " cards, " + totalTokenCards + " tokens...");
         for (final File file : files) {
             loadCardDefinition(file);
         }
-            
+
         filterCards();
         printStatistics();
 
         addDefinition(MagicCardDefinition.UNKNOWN);
 
         System.err.println(getNumberOfCards()+ " card definitions");
+    }
+
+    /**
+     * Returns the number of non-token cards.
+     * <p>
+     * Assumes that token card contains "token" in the file name.
+     */
+    private static int getNonTokenCardsCount(final File[] files) {
+        int count = 0;
+        final Iterator<File> filesIterator = Arrays.asList(files).iterator();
+        while (filesIterator.hasNext()) {
+            final File f = filesIterator.next();
+            if (!f.getName().toLowerCase().contains("token")) {
+                count++;
+            }
+        }
+        return count;
     }
 
     public static void loadCardAbilities() {
