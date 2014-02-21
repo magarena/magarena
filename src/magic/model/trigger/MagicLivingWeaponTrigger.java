@@ -37,7 +37,7 @@ public class MagicLivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
         //create the token
         final MagicPlayTokenAction play_token=new MagicPlayTokenAction(
             event.getPlayer(),
-            TokenCardDefinitions.get("Germ")
+            TokenCardDefinitions.get("0/0 black Germ creature token")
         );
         game.doAction(play_token);
 
