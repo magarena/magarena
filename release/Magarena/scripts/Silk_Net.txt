@@ -1,5 +1,5 @@
 name=Silk Net
-url=http://magiccards.info/ul/pt/112.html
+url=http://magiccards.info/ul/en/112.html
 image=http://mtgimage.com/card/silk%20net.jpg
 value=2.239
 rarity=C

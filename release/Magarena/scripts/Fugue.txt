@@ -1,5 +1,5 @@
 name=Fugue
-url=http://magiccards.info/7e/es/137.html
+url=http://magiccards.info/7e/en/137.html
 image=http://mtgimage.com/card/fugue.jpg
 value=2.694
 rarity=U

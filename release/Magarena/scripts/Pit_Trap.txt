@@ -1,5 +1,5 @@
 name=Pit Trap
-url=http://magiccards.info/7e/it/313.html
+url=http://magiccards.info/7e/en/313.html
 image=http://mtgimage.com/card/pit%20trap.jpg
 value=3.672
 rarity=U

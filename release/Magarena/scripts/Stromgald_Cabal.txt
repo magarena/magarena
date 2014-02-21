@@ -1,5 +1,5 @@
 name=Stromgald Cabal
-url=http://magiccards.info/6e/fr/157.html
+url=http://magiccards.info/6e/en/157.html
 image=http://mtgimage.com/card/stromgald%20cabal.jpg
 value=3.672
 rarity=R
