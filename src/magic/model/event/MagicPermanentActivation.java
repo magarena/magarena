@@ -141,16 +141,16 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         final String rule = token[1];
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
 
-        boolean isCostIndependent = true;
+        boolean isIndependent = sourceEvent.isIndependent();
         for (final MagicMatchedCostEvent matched : matchedCostEvents) {
-            isCostIndependent &= matched.isIndependent();
+            isIndependent &= matched.isIndependent();
         }
 
         return new MagicPermanentActivation(
             sourceEvent.getConditions(),
             new MagicActivationHints(
                 sourceEvent.getTiming(),
-                isCostIndependent && sourceEvent.isIndependent()
+                isIndependent
             ),
             sourceEvent.getName()
         ) {
