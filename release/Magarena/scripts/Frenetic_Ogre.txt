@@ -1,0 +1,11 @@
+name=Frenetic Ogre
+url=http://magiccards.info/od/en/195.html
+image=http://mtgimage.com/card/frenetic%20ogre.jpg
+value=1.875
+rarity=U
+type=Creature
+subtype=Ogre
+cost={4}{R}
+pt=2/3
+ability=pay {R},Discard a card at random:SN gets +3/+0 until end of turn.
+timing=main
