@@ -130,28 +130,21 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     }
     
     private static final String COLON = "\\s*:\\s*";
-    private static final String COMMA = "\\s*,\\s*";
 
     public static final MagicPermanentActivation create(final String act) {
         final String[] token = act.split(COLON, 2);
-        final String cost = token[0];
+        
+        final String costs = token[0];
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(costs);
+        assert matchedCostEvents.size() > 0;
+        
         final String rule = token[1];
-        
-        final String[] costs = cost.split(COMMA);
-        
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
 
-        assert englishToCostEvents(costs, MagicPermanent.NONE).size() > 0;
-
-        final boolean isCostIndependent = (
-               cost.contains("{T}") 
-            || cost.contains("Sacrifice SN") 
-            || cost.contains("{E}") 
-            || cost.contains("{Q}") 
-            || cost.contains("{Once}")
-            || cost.contains("Return SN to its owner's hand")
-            || cost.contains(" from SN")
-        ) == false;
+        boolean isCostIndependent = true;
+        for (final MagicMatchedCostEvent matched : matchedCostEvents) {
+            isCostIndependent &= matched.isIndependent();
+        }
 
         return new MagicPermanentActivation(
             sourceEvent.getConditions(),
@@ -163,7 +156,11 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         ) {
             @Override
             public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-                return englishToCostEvents(costs, source);
+                final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+                for (final MagicMatchedCostEvent matched : matchedCostEvents) {
+                    costEvents.add(matched.getEvent(source));
+                }
+                return costEvents;
             }
        
             @Override
@@ -171,80 +168,6 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 return sourceEvent.getEvent(source);
             }
         };
-    }
-    
-    private static final List<MagicEvent> englishToCostEvents(final String[] costs, final MagicPermanent source) {
-        final List<MagicEvent> events = new LinkedList<MagicEvent>();
-        for (String cost : costs) {
-            if (cost.equals("Sacrifice SN")) {
-                events.add(new MagicSacrificeEvent(source));
-            } else if (cost.equals("Sacrifice an artifact")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT));
-            } else if (cost.equals("Sacrifice an enchantment")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ENCHANTMENT));
-            } else if (cost.equals("Sacrifice an aura")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_AURA));
-            } else if (cost.equals("Sacrifice a creature")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE));
-            } else if (cost.equals("Sacrifice a Goblin")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN));
-            } else if (cost.equals("Sacrifice a Saproling")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAPROLING));
-            } else if (cost.equals("Sacrifice a Beast")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BEAST));
-            } else if (cost.equals("Sacrifice a land")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND));
-            } else if (cost.equals("Sacrifice a Swamp")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SWAMP));
-            } else if (cost.equals("Sacrifice an Elf")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELF));
-            } else if (cost.equals("Sacrifice a Bat")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BAT));
-            } else if (cost.equals("Sacrifice a Samurai")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAMURAI));
-            } else if (cost.equals("Sacrifice a Soldier")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SOLDIER));
-            } else if (cost.equals("Sacrifice a Cleric")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC));
-            } else if (cost.equals("Sacrifice a Human")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_HUMAN));
-            } else if (cost.equals("Sacrifice an Elemental")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELEMENTAL));
-            } else if (cost.equals("Sacrifice a Wall")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_WALL));
-            } else if (cost.equals("Sacrifice a permanent")) {
-                events.add(new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_PERMANENT));
-            } else if (cost.equals("Discard a card")) {
-                events.add(new MagicDiscardEvent(source));
-            } else if (cost.equals("Discard two cards")) {
-                events.add(new MagicDiscardEvent(source, 2));
-            } else if (cost.equals("{E}")) {
-                events.add(new MagicExileEvent(source));
-            } else if (cost.equals("{T}")) {
-                events.add(new MagicTapEvent(source));
-            } else if (cost.equals("{Q}")) {
-                events.add(new MagicUntapEvent(source));
-            } else if (cost.contains("Pay ") && cost.contains(" life")) {
-                final String costText=cost.replace("Pay ","").replace(" life","");
-                events.add(new MagicPayLifeEvent(source, Integer.parseInt(costText)));
-            } else if (cost.equals("{Once}")) {
-                events.add(new MagicPlayAbilityEvent(source));
-            } else if (cost.equals("{Sorcery}")) {
-                events.add(new MagicSorceryConditionEvent(source));
-            } else if (cost.equals("Return SN to its owner's hand")) {
-                events.add(new MagicBouncePermanentEvent(source,source));
-            } else if (cost.equals("Return a land you control to its owner's hand")) {
-                events.add(new MagicBounceChosenPermanentEvent(source,MagicTargetChoice.LAND_YOU_CONTROL));
-            } else if (cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN")) {
-                final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
-                final int amount = englishToInt(costText[0]);
-                final String counterType = costText[1];
-                events.add(new MagicRemoveCounterEvent(source,MagicCounterType.getCounterRaw(counterType),amount));
-            } else {
-                events.add(new MagicPayManaCostEvent(source, MagicManaCost.create(cost)));
-            }
-        }
-        return events;
     }
 
     public static final MagicPermanentActivation SwitchPT(final MagicManaCost cost) {
@@ -269,22 +192,5 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 game.doAction(new MagicAddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
             }
         };
-    }
-    
-    public static int englishToInt(String num) {
-        switch (num) {
-            case "a": return 1;
-            case "an": return 1;
-            case "two": return 2;
-            case "three" : return 3;
-            case "four" : return 4;
-            case "five" : return 5;
-            case "six" : return 6;
-            case "seven" : return 7;
-            case "eight" : return 8;
-            case "nine" : return 9;
-            case "ten" : return 10;
-            default: throw new RuntimeException("Unknown count: " + num);
-        }
     }
 }
