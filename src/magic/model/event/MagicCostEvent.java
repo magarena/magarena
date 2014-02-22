@@ -3,6 +3,7 @@ package magic.model.event;
 import magic.model.MagicPermanent;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
+import magic.model.event.MagicDiscardEvent;
 import magic.model.choice.MagicTargetChoice;
 import java.util.List;
 import java.util.LinkedList;
@@ -179,6 +180,14 @@ public enum MagicCostEvent {
         }
         public MagicEvent toEvent(final String cost, final MagicPermanent source) {
             return new MagicDiscardEvent(source, 2);
+        }
+    },
+    DiscardCardRandom() {
+        public boolean accept(final String cost) {
+            return cost.equals("Discard a card at random");
+        }
+        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+            return MagicDiscardEvent.Random(source);
         }
     },
     ExileSelf() {
