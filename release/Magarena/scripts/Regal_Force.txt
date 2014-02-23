@@ -1,7 +1,7 @@
 name=Regal Force
 url=http://magiccards.info/eve/en/74.html
 image=http://mtgimage.com/card/regal%20force.jpg
-value=4.246
+value=4.271
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,7 +1,7 @@
 name=Vaporkin
 url=http://magiccards.info/ths/en/72.html
 image=http://mtgimage.com/card/vaporkin.jpg
-value=3.400
+value=3.364
 rarity=C
 type=Creature
 subtype=Elemental

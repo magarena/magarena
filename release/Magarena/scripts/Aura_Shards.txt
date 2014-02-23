@@ -1,7 +1,7 @@
 name=Aura Shards
 url=http://magiccards.info/cmd/en/182.html
 image=http://mtgimage.com/card/aura%20shards.jpg
-value=4.279
+value=4.295
 rarity=U
 type=Enchantment
 cost={1}{G}{W}

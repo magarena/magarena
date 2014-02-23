@@ -1,7 +1,7 @@
 name=Abrupt Decay
 url=http://magiccards.info/rtr/en/141.html
 image=http://mtgimage.com/card/abrupt%20decay.jpg
-value=4.358
+value=4.372
 rarity=R
 type=Instant
 cost={B}{G}

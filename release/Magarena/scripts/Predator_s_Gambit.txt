@@ -1,7 +1,7 @@
 name=Predator's Gambit
 url=http://magiccards.info/avr/en/117.html
 image=http://mtgimage.com/card/predator%27s%20gambit.jpg
-value=3.043
+value=3.052
 rarity=C
 type=Enchantment
 subtype=Aura

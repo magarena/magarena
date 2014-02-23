@@ -1,7 +1,7 @@
 name=Maul Splicer
 url=http://magiccards.info/nph/en/114.html
 image=http://mtgimage.com/card/maul%20splicer.jpg
-value=2.979
+value=2.966
 rarity=C
 type=Creature
 subtype=Human,Artificer

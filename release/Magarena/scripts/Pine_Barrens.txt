@@ -1,7 +1,7 @@
 name=Pine Barrens
 url=http://magiccards.info/tp/en/323.html
 image=http://mtgimage.com/card/pine%20barrens.jpg
-value=2.379
+value=2.456
 rarity=R
 type=Land
 mana=b2g2

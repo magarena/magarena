@@ -1,7 +1,7 @@
 name=Neck Snap
 url=http://magiccards.info/lw/en/32.html
 image=http://mtgimage.com/card/neck%20snap.jpg
-value=2.202
+value=2.205
 rarity=C
 type=Instant
 cost={3}{W}

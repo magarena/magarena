@@ -1,7 +1,7 @@
 name=Goblin Matron
 url=http://magiccards.info/evg/en/39.html
 image=http://mtgimage.com/card/goblin%20matron.jpg
-value=4.326
+value=4.239
 rarity=U
 type=Creature
 subtype=Goblin

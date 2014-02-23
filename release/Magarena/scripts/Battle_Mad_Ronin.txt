@@ -1,7 +1,7 @@
 name=Battle-Mad Ronin
 url=http://magiccards.info/chk/en/156.html
 image=http://mtgimage.com/card/battle%2Dmad%20ronin.jpg
-value=2.779
+value=2.757
 rarity=C
 type=Creature
 subtype=Human,Samurai

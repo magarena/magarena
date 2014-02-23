@@ -1,7 +1,7 @@
 name=Mtenda Herder
 url=http://magiccards.info/mr/en/233.html
 image=http://mtgimage.com/card/mtenda%20herder.jpg
-value=3.837
+value=3.833
 rarity=C
 type=Creature
 subtype=Human,Scout

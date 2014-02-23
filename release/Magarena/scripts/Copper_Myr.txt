@@ -1,7 +1,7 @@
 name=Copper Myr
 url=http://magiccards.info/som/en/146.html
 image=http://mtgimage.com/card/copper%20myr.jpg
-value=2.915
+value=2.918
 rarity=C
 type=Artifact,Creature
 subtype=Myr

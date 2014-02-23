@@ -1,7 +1,7 @@
 name=Archaeological Dig
 url=http://magiccards.info/in/en/320.html
 image=http://mtgimage.com/card/archaeological%20dig.jpg
-value=3.486
+value=3.405
 rarity=U
 type=Land
 ability=tap add mana {1};tap sac add mana any

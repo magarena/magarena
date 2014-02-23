@@ -1,7 +1,7 @@
 name=Wild Colos
 url=http://magiccards.info/ud/en/100.html
 image=http://mtgimage.com/card/wild%20colos.jpg
-value=2.969
+value=2.970
 rarity=C
 type=Creature
 subtype=Goat,Beast

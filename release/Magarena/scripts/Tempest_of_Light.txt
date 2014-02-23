@@ -1,7 +1,7 @@
 name=Tempest of Light
 url=http://magiccards.info/m10/en/36.html
 image=http://mtgimage.com/card/tempest%20of%20light.jpg
-value=3.745
+value=3.750
 removal=2
 rarity=U
 type=Instant

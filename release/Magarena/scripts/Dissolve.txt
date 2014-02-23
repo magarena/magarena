@@ -1,7 +1,7 @@
 name=Dissolve
 url=http://magiccards.info/ths/pt/47.html
 image=http://mtgimage.com/card/dissolve.jpg
-value=4.23
+value=3.618
 rarity=U
 type=Instant
 cost={1}{U}{U}

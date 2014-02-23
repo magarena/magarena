@@ -1,7 +1,7 @@
 name=Brain Weevil
 url=http://magiccards.info/isd/en/91.html
 image=http://mtgimage.com/card/brain%20weevil.jpg
-value=2.250
+value=2.147
 rarity=C
 type=Creature
 subtype=Insect

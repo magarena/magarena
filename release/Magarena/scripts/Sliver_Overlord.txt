@@ -1,7 +1,7 @@
 name=Sliver Overlord
 url=http://magiccards.info/pds/en/24.html
 image=http://mtgimage.com/card/sliver%20overlord.jpg
-value=4.218
+value=4.220
 rarity=M
 type=Legendary,Creature
 subtype=Sliver,Mutant

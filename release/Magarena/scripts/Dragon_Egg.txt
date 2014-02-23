@@ -1,7 +1,7 @@
 name=Dragon Egg
 url=http://magiccards.info/m14/en/137.html
 image=http://mtgimage.com/card/dragon%20egg.jpg
-value=3.782
+value=3.605
 rarity=U
 type=Creature
 subtype=Dragon

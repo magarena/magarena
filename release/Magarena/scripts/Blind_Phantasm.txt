@@ -1,7 +1,7 @@
 name=Blind Phantasm
 url=http://magiccards.info/fut/en/49.html
 image=http://mtgimage.com/card/blind%20phantasm.jpg
-value=3.275
+value=3.271
 rarity=C
 type=Creature
 subtype=Illusion

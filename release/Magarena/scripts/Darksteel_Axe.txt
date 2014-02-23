@@ -1,7 +1,7 @@
 name=Darksteel Axe
 url=http://magiccards.info/som/en/149.html
 image=http://mtgimage.com/card/darksteel%20axe.jpg
-value=3.494
+value=3.500
 rarity=U
 type=Artifact
 subtype=Equipment

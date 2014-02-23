@@ -1,7 +1,7 @@
 name=Merrow Commerce
 url=http://magiccards.info/lw/en/72.html
 image=http://mtgimage.com/card/merrow%20commerce.jpg
-value=3.952
+value=3.953
 rarity=U
 type=Tribal,Enchantment
 subtype=Merfolk

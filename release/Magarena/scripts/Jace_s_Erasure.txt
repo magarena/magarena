@@ -1,7 +1,7 @@
 name=Jace's Erasure
 url=http://magiccards.info/m12/en/60.html
 image=http://mtgimage.com/card/jace's%20erasure.jpg
-value=3.712
+value=3.685
 rarity=C
 type=Enchantment
 cost={1}{U}

@@ -1,7 +1,7 @@
 name=Wall of Torches
 url=http://magiccards.info/m12/en/159.html
 image=http://mtgimage.com/card/wall%20of%20torches.jpg
-value=2.160
+value=2.182
 rarity=C
 type=Creature
 subtype=Wall

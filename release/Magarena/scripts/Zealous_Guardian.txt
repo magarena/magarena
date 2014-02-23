@@ -1,7 +1,7 @@
 name=Zealous Guardian
 url=http://magiccards.info/shm/en/157.html
 image=http://mtgimage.com/card/zealous%20guardian.jpg
-value=3.286
+value=3.312
 ability=flash
 rarity=C
 type=Creature

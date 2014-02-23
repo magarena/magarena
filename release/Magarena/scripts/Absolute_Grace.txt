@@ -1,7 +1,7 @@
 name=Absolute Grace
 url=http://magiccards.info/us/en/1.html
 image=http://mtgimage.com/card/absolute%20grace.jpg
-value=3.585
+value=3.615
 rarity=U
 type=Enchantment
 cost={1}{W}

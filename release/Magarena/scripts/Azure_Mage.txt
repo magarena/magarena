@@ -1,7 +1,7 @@
 name=Azure Mage
 url=http://magiccards.info/m12/en/45.html
 image=http://mtgimage.com/card/azure%20mage.jpg
-value=3.805
+value=3.802
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,7 +1,7 @@
 name=Roaring Primadox
 url=http://magiccards.info/m13/en/188.html
 image=http://mtgimage.com/card/roaring%20primadox.jpg
-value=3.627
+value=3.669
 rarity=U
 type=Creature
 subtype=Beast

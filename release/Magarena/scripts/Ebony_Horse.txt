@@ -1,7 +1,7 @@
 name=Ebony Horse
 url=http://magiccards.info/4e/en/336.html
 image=http://mtgimage.com/card/ebony%20horse.jpg
-value=2.406
+value=2.294
 rarity=C
 type=Artifact
 cost={3}

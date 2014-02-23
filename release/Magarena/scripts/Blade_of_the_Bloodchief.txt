@@ -1,7 +1,7 @@
 name=Blade of the Bloodchief
 url=http://magiccards.info/zen/en/196.html
 image=http://mtgimage.com/card/blade%20of%20the%20bloodchief.jpg
-value=4.231
+value=4.236
 rarity=R
 type=Artifact
 subtype=Equipment

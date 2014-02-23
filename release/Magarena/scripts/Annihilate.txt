@@ -1,7 +1,7 @@
 name=Annihilate
 url=http://magiccards.info/c13/es/68.html
 image=http://mtgimage.com/card/annihilate.jpg
-value=3.136
+value=3.286
 rarity=U
 type=Instant
 cost={3}{B}{B}

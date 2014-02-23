@@ -1,7 +1,7 @@
 name=Decorated Griffin
 url=http://magiccards.info/ths/en/7.html
 image=http://mtgimage.com/card/decorated%20griffin.jpg
-value=2.518
+value=2.557
 rarity=U
 type=Creature
 subtype=Griffin

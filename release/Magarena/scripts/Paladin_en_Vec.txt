@@ -1,7 +1,7 @@
 name=Paladin en-Vec
 url=http://magiccards.info/10e/en/32.html
 image=http://mtgimage.com/card/paladin%20en%2Dvec.jpg
-value=4.329
+value=4.331
 rarity=R
 type=Creature
 subtype=Human,Knight

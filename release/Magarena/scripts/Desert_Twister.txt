@@ -1,7 +1,7 @@
 name=Desert Twister
 url=http://magiccards.info/mm/en/243.html
 image=http://mtgimage.com/card/desert%20twister.jpg
-value=3.733
+value=3.746
 removal=5
 rarity=U
 type=Sorcery

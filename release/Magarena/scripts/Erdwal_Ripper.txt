@@ -1,7 +1,7 @@
 name=Erdwal Ripper
 url=http://magiccards.info/dka/en/86.html
 image=http://mtgimage.com/card/erdwal%20ripper.jpg
-value=2.637
+value=2.644
 rarity=C
 type=Creature
 subtype=Vampire

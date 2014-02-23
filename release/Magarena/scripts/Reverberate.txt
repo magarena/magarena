@@ -1,7 +1,7 @@
 name=Reverberate
 url=http://magiccards.info/m12/en/152.html
 image=http://mtgimage.com/card/reverberate.jpg
-value=3.981
+value=3.500
 rarity=R
 type=Instant
 cost={R}{R}

@@ -1,7 +1,7 @@
 name=Shield Wall
 url=http://magiccards.info/7e/fr/44.html
 image=http://mtgimage.com/card/shield%20wall.jpg
-value=1.885
+value=1.839
 rarity=C
 type=Instant
 cost={1}{W}

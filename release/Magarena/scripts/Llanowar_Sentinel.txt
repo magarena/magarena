@@ -1,7 +1,7 @@
 name=Llanowar Sentinel
 url=http://magiccards.info/10e/en/275.html
 image=http://mtgimage.com/card/llanowar%20sentinel.jpg
-value=3.903
+value=3.905
 rarity=C
 type=Creature
 subtype=Elf

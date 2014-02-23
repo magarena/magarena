@@ -1,7 +1,7 @@
 name=Maalfeld Twins
 url=http://magiccards.info/avr/en/112.html
 image=http://mtgimage.com/card/maalfeld%20twins.jpg
-value=3.280
+value=3.262
 rarity=U
 type=Creature
 subtype=Zombie

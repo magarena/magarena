@@ -1,7 +1,7 @@
 name=Painful Quandary
 url=http://magiccards.info/som/en/73.html
 image=http://mtgimage.com/card/painful%20quandary.jpg
-value=4.022
+value=4.030
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

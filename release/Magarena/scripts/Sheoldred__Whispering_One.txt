@@ -1,7 +1,7 @@
 name=Sheoldred, Whispering One
 url=http://magiccards.info/nph/en/73.html
 image=http://mtgimage.com/card/sheoldred%2C%20whispering%20one.jpg
-value=4.088
+value=3.920
 rarity=M
 type=Legendary,Creature
 subtype=Praetor

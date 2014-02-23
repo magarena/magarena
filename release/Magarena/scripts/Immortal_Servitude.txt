@@ -1,7 +1,7 @@
 name=Immortal Servitude
 url=http://magiccards.info/gtc/en/220.html
 image=http://mtgimage.com/card/immortal%20servitude.jpg
-value=3.650
+value=3.655
 rarity=R
 type=Sorcery
 cost={X}{W/B}{W/B}{W/B}

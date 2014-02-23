@@ -1,7 +1,7 @@
 name=Sporoloth Ancient
 url=http://magiccards.info/mma/en/163.html
 image=http://mtgimage.com/card/sporoloth%20ancient.jpg
-value=4.036
+value=3.875
 rarity=C
 type=Creature
 subtype=Fungus

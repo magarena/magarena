@@ -1,7 +1,7 @@
 name=Ridged Kusite
 url=http://magiccards.info/pc/en/78.html
 image=http://mtgimage.com/card/ridged%20kusite.jpg
-value=2.308
+value=2.292
 rarity=C
 type=Creature
 subtype=Horror,Spellshaper

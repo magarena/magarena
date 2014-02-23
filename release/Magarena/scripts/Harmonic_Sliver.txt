@@ -1,7 +1,7 @@
 name=Harmonic Sliver
 url=http://magiccards.info/ts/en/240.html
 image=http://mtgimage.com/card/harmonic%20sliver.jpg
-value=4.351
+value=4.358
 rarity=U
 type=Creature
 subtype=Sliver

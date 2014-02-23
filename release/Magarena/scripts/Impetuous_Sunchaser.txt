@@ -1,7 +1,7 @@
 name=Impetuous Sunchaser
 url=http://magiccards.info/bng/en/99.html
 image=http://mtgimage.com/card/impetuous%20sunchaser.jpg
-value=3.778
+value=3.773
 rarity=C
 type=Creature
 subtype=Human,Soldier

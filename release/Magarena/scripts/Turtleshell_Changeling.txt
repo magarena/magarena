@@ -1,7 +1,7 @@
 name=Turtleshell Changeling
 url=http://magiccards.info/lw/en/94.html
 image=http://mtgimage.com/card/turtleshell%20changeling.jpg
-value=2.500
+value=2.547
 rarity=U
 type=Creature
 subtype=Shapeshifter

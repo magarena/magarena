@@ -1,7 +1,7 @@
 name=Filthy Cur
 url=http://magiccards.info/od/en/136.html
 image=http://mtgimage.com/card/filthy%20cur.jpg
-value=1.03
+value=1.030
 rarity=C
 type=Creature
 subtype=Hound

@@ -1,7 +1,7 @@
 name=Arcbound Stinger
 url=http://magiccards.info/ds/en/103.html
 image=http://mtgimage.com/card/arcbound%20stinger.jpg
-value=3.706
+value=3.528
 rarity=C
 type=Artifact,Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Soot Imp
 url=http://magiccards.info/dvd/en/37.html
 image=http://mtgimage.com/card/soot%20imp.jpg
-value=3.274
+value=3.273
 rarity=U
 type=Creature
 subtype=Imp

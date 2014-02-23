@@ -1,7 +1,7 @@
 name=Immolation
 url=http://magiccards.info/4e/en/222.html
 image=http://mtgimage.com/card/immolation.jpg
-value=3.380
+value=3.407
 rarity=C
 type=Enchantment
 subtype=Aura

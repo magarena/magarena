@@ -1,7 +1,7 @@
 name=Leafcrown Dryad
 url=http://magiccards.info/ths/en/161.html
 image=http://mtgimage.com/card/leafcrown%20dryad.jpg
-value=3.429
+value=3.419
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph,Dryad

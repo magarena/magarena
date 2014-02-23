@@ -1,7 +1,7 @@
 name=Grim Roustabout
 url=http://magiccards.info/rtr/en/68.html
 image=http://mtgimage.com/card/grim%20roustabout.jpg
-value=2.623
+value=2.620
 rarity=C
 type=Creature
 subtype=Skeleton,Warrior

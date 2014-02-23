@@ -1,7 +1,7 @@
 name=Righteous Authority
 url=http://magiccards.info/rtr/en/189.html
 image=http://mtgimage.com/card/righteous%20authority.jpg
-value=3.331
+value=3.377
 rarity=R
 type=Enchantment
 subtype=Aura

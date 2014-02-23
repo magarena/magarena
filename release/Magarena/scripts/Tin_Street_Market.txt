@@ -1,7 +1,7 @@
 name=Tin Street Market
 url=http://magiccards.info/gtc/en/108.html
 image=http://mtgimage.com/card/tin%20street%20market.jpg
-value=1.220
+value=1.205
 rarity=C
 type=Enchantment
 subtype=Aura

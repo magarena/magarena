@@ -1,7 +1,7 @@
 name=Tibalt, the Fiend-Blooded
 url=http://magiccards.info/avr/en/161.html
 image=http://mtgimage.com/card/tibalt%2C%20the%20fiend%2Dblooded.jpg
-value=3.094
+value=3.010
 rarity=M
 type=Planeswalker
 subtype=Tibalt

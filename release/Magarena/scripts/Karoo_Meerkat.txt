@@ -1,7 +1,7 @@
 name=Karoo Meerkat
 url=http://magiccards.info/mr/en/123.html
 image=http://mtgimage.com/card/karoo%20meerkat.jpg
-value=3.588
+value=3.596
 rarity=U
 type=Creature
 subtype=Mongoose

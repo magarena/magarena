@@ -1,7 +1,7 @@
 name=AErathi Berserker
 url=http://magiccards.info/lg/en/131.html
 image=http://mtgimage.com/card/aerathi%20berserker.jpg
-value=2.370
+value=2.340
 rarity=U
 type=Creature
 subtype=Human,Berserker

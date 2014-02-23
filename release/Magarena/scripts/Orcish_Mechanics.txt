@@ -1,7 +1,7 @@
 name=Orcish Mechanics
 url=http://magiccards.info/aq/en/92.html
 image=http://mtgimage.com/card/orcish%20mechanics.jpg
-value=3.643
+value=3.567
 rarity=U
 type=Creature
 subtype=Orc

@@ -1,7 +1,7 @@
 name=Moonglove Extract
 url=http://magiccards.info/ddf/en/67.html
 image=http://mtgimage.com/card/moonglove%20extract.jpg
-value=2.938
+value=2.929
 removal=2
 rarity=C
 type=Artifact

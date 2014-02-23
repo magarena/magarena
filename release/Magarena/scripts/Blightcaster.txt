@@ -1,7 +1,7 @@
 name=Blightcaster
 url=http://magiccards.info/m14/en/86.html
 image=http://mtgimage.com/card/blightcaster.jpg
-value=3.407
+value=3.450
 rarity=U
 type=Creature
 subtype=Human,Wizard

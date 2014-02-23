@@ -1,7 +1,7 @@
 name=Imps' Taunt
 url=http://magiccards.info/tp/en/32.html
 image=http://mtgimage.com/card/imps%27%20taunt.jpg
-value=2.417
+value=2.432
 removal=1
 rarity=U
 type=Instant

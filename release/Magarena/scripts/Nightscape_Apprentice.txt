@@ -1,7 +1,7 @@
 name=Nightscape Apprentice
 url=http://magiccards.info/in/en/112.html
 image=http://mtgimage.com/card/nightscape%20apprentice.jpg
-value=3.135
+value=3.093
 rarity=C
 type=Creature
 subtype=Zombie,Wizard

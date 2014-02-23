@@ -1,7 +1,7 @@
 name=Boros Reckoner
 url=http://magiccards.info/gtc/en/215.html
 image=http://mtgimage.com/card/boros%20reckoner.jpg
-value=4.204
+value=4.038
 rarity=R
 type=Creature
 subtype=Minotaur,Wizard

@@ -1,7 +1,7 @@
 name=Volcanic Island
 url=http://magiccards.info/me4/en/260.html
 image=http://mtgimage.com/card/volcanic%20island.jpg
-value=4.625
+value=4.632
 rarity=R
 type=Land
 subtype=Island,Mountain

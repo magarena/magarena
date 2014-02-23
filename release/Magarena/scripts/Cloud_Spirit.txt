@@ -1,7 +1,7 @@
 name=Cloud Spirit
 url=http://magiccards.info/me4/en/42.html
 image=http://mtgimage.com/card/cloud%20spirit.jpg
-value=3.087
+value=3.104
 rarity=C
 type=Creature
 subtype=Spirit

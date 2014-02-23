@@ -1,7 +1,7 @@
 name=Sharding Sphinx
 url=http://magiccards.info/ala/en/55.html
 image=http://mtgimage.com/card/sharding%20sphinx.jpg
-value=4.227
+value=3.583
 rarity=R
 type=Artifact,Creature
 subtype=Sphinx

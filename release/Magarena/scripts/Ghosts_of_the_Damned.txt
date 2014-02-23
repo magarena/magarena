@@ -1,7 +1,7 @@
 name=Ghosts of the Damned
 url=http://magiccards.info/lg/en/12.html
 image=http://mtgimage.com/card/ghosts%20of%20the%20damned.jpg
-value=2.120
+value=2.058
 rarity=C
 type=Creature
 subtype=Spirit

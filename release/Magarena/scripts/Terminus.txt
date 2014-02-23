@@ -1,7 +1,7 @@
 name=Terminus
 url=http://magiccards.info/avr/en/38.html
 image=http://mtgimage.com/card/terminus.jpg
-value=4.086
+value=4.033
 removal=2
 rarity=R
 type=Sorcery

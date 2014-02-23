@@ -1,7 +1,7 @@
 name=Phantatog
 url=http://magiccards.info/od/en/291.html
 image=http://mtgimage.com/card/phantatog.jpg
-value=3.387
+value=3.375
 rarity=U
 type=Creature
 subtype=Atog

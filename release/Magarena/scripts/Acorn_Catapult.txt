@@ -1,7 +1,7 @@
 name=Acorn Catapult
 url=http://magiccards.info/cmd/en/241.html
 image=http://mtgimage.com/card/acorn%20catapult.jpg
-value=3.679
+value=3.694
 rarity=R
 type=Artifact
 cost={4}

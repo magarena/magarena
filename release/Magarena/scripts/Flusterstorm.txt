@@ -1,7 +1,7 @@
 name=Flusterstorm
 url=http://magiccards.info/cmd/en/46.html
 image=http://mtgimage.com/card/flusterstorm.jpg
-value=4.282
+value=4.313
 rarity=R
 type=Instant
 cost={U}

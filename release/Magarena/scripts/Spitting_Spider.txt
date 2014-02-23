@@ -1,7 +1,7 @@
 name=Spitting Spider
 url=http://magiccards.info/8e/en/280.html
 image=http://mtgimage.com/card/spitting%20spider.jpg
-value=3.362
+value=3.375
 rarity=U
 type=Creature
 subtype=Spider

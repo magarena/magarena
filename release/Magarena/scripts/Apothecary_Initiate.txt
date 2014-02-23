@@ -1,7 +1,7 @@
 name=Apothecary Initiate
 url=http://magiccards.info/shm/en/1.html
 image=http://mtgimage.com/card/apothecary%20initiate.jpg
-value=2
+value=2.037
 rarity=C
 type=Creature
 subtype=Kithkin,Cleric

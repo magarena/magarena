@@ -1,7 +1,7 @@
 name=Miren, the Moaning Well
 url=http://magiccards.info/sok/en/163.html
 image=http://mtgimage.com/card/miren,%20the%20moaning%20well.jpg
-value=3.637
+value=3.722
 rarity=R
 type=Legendary,Land
 ability=tap add mana {1}

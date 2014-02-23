@@ -1,7 +1,7 @@
 name=Lava Axe
 url=http://magiccards.info/m12/en/148.html
 image=http://mtgimage.com/card/lava%20axe.jpg
-value=2.379
+value=2.387
 rarity=C
 type=Sorcery
 cost={4}{R}

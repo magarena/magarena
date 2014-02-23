@@ -1,7 +1,7 @@
 name=Balm of Restoration
 url=http://magiccards.info/fe/en/167.html
 image=http://mtgimage.com/card/balm%20of%20restoration.jpg
-value=1.490
+value=1.471
 rarity=R
 type=Artifact
 cost={2}

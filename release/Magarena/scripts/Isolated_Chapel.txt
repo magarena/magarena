@@ -1,7 +1,7 @@
 name=Isolated Chapel
 url=http://magiccards.info/isd/en/242.html
 image=http://mtgimage.com/card/isolated%20chapel.jpg
-value=3.898
+value=3.920
 rarity=R
 type=Land
 mana=w3b3

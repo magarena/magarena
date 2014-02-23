@@ -1,7 +1,7 @@
 name=Grappler Spider
 url=http://magiccards.info/wwk/en/102.html
 image=http://mtgimage.com/card/grappler%20spider.jpg
-value=1.627
+value=1.648
 ability=reach
 rarity=C
 type=Creature

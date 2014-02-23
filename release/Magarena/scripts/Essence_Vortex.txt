@@ -1,7 +1,7 @@
 name=Essence Vortex
 url=http://magiccards.info/ia/en/365.html
 image=http://mtgimage.com/card/essence%20vortex.jpg
-value=3.353
+value=3.333
 rarity=U
 type=Instant
 cost={1}{U}{B}

@@ -1,7 +1,7 @@
 name=Copper Carapace
 url=http://magiccards.info/mbs/en/102.html
 image=http://mtgimage.com/card/copper%20carapace.jpg
-value=2.242
+value=2.238
 rarity=C
 type=Artifact
 subtype=Equipment

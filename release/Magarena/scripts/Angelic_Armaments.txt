@@ -1,7 +1,7 @@
 name=Angelic Armaments
 url=http://magiccards.info/avr/en/212.html
 image=http://mtgimage.com/card/angelic%20armaments.jpg
-value=2.395
+value=2.352
 rarity=U
 type=Artifact
 subtype=Equipment

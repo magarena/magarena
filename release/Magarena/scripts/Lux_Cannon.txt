@@ -1,7 +1,7 @@
 name=Lux Cannon
 url=http://magiccards.info/som/en/173.html
 image=http://mtgimage.com/card/lux%20cannon.jpg
-value=3.846
+value=3.852
 rarity=M
 type=Artifact
 cost={4}

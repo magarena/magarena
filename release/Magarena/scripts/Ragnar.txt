@@ -1,7 +1,7 @@
 name=Ragnar
 url=http://magiccards.info/lg/en/290.html
 image=http://mtgimage.com/card/ragnar.jpg
-value=3.145
+value=3.103
 rarity=U
 type=Legendary,Creature
 subtype=Human,Cleric

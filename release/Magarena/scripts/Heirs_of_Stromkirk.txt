@@ -1,7 +1,7 @@
 name=Heirs of Stromkirk
 url=http://magiccards.info/avr/en/140.html
 image=http://mtgimage.com/card/heirs%20of%20stromkirk.jpg
-value=3.012
+value=2.933
 rarity=C
 type=Creature
 subtype=Vampire

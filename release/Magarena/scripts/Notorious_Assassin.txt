@@ -1,7 +1,7 @@
 name=Notorious Assassin
 url=http://magiccards.info/mm/en/150.html
 image=http://mtgimage.com/card/notorious%20assassin.jpg
-value=3.153
+value=3.081
 rarity=R
 type=Creature
 subtype=Human,Spellshaper,Assassin

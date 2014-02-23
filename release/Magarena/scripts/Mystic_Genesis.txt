@@ -1,7 +1,7 @@
 name=Mystic Genesis
 url=http://magiccards.info/gtc/en/180.html
 image=http://mtgimage.com/card/mystic%20genesis.jpg
-value=3.35
+value=3.388
 rarity=R
 type=Instant
 cost={2}{G}{U}{U}

@@ -1,7 +1,7 @@
 name=Soratami Mindsweeper
 url=http://magiccards.info/bok/en/52.html
 image=http://mtgimage.com/card/soratami%20mindsweeper.jpg
-value=2.703
+value=2.773
 rarity=U
 type=Creature
 subtype=Moonfolk,Wizard

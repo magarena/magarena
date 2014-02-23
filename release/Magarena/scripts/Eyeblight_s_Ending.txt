@@ -1,7 +1,7 @@
 name=Eyeblight's Ending
 url=http://magiccards.info/lw/en/110.html
 image=http://mtgimage.com/card/eyeblight%27s%20ending.jpg
-value=4.074
+value=4.031
 rarity=C
 type=Tribal,Instant
 subtype=Elf

@@ -1,7 +1,7 @@
 name=Supreme Exemplar
 url=http://magiccards.info/mt/en/53.html
 image=http://mtgimage.com/card/supreme%20exemplar.jpg
-value=3.682
+value=3.700
 removal=2
 rarity=R
 type=Creature

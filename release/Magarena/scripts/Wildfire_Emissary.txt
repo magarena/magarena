@@ -1,7 +1,7 @@
 name=Wildfire Emissary
 url=http://magiccards.info/tsts/en/72.html
 image=http://mtgimage.com/card/wildfire%20emissary.jpg
-value=3.698
+value=3.722
 rarity=U
 type=Creature
 subtype=Efreet

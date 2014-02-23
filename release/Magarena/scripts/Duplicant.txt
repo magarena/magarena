@@ -1,7 +1,7 @@
 name=Duplicant
 url=http://magiccards.info/arc/en/106.html
 image=http://mtgimage.com/card/duplicant.jpg
-value=4.442
+value=4.464
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter

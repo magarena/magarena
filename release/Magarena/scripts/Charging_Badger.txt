@@ -1,7 +1,7 @@
 name=Charging Badger
 url=http://magiccards.info/bng/en/118.html
 image=http://mtgimage.com/card/charging%20badger.jpg
-value=3.904
+value=3.745
 rarity=C
 type=Creature
 subtype=Badger

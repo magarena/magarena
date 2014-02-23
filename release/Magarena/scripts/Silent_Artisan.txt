@@ -1,7 +1,7 @@
 name=Silent Artisan
 url=http://magiccards.info/ths/en/31.html
 image=http://mtgimage.com/card/silent%20artisan.jpg
-value=2.041
+value=2.026
 rarity=C
 type=Creature
 subtype=Giant

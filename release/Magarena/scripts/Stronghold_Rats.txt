@@ -1,7 +1,7 @@
 name=Stronghold Rats
 url=http://magiccards.info/fut/en/79.html
 image=http://mtgimage.com/card/stronghold%20rats.jpg
-value=3.222
+value=3.217
 rarity=U
 type=Creature
 subtype=Rat

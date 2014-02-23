@@ -1,7 +1,7 @@
 name=Myrsmith
 url=http://magiccards.info/som/en/16.html
 image=http://mtgimage.com/card/myrsmith.jpg
-value=3.719
+value=3.720
 rarity=U
 type=Creature
 subtype=Human,Artificer

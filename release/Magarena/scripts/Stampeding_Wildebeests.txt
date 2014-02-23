@@ -1,7 +1,7 @@
 name=Stampeding Wildebeests
 url=http://magiccards.info/gvl/en/9.html
 image=http://mtgimage.com/card/stampeding%20wildebeests.jpg
-value=4.2
+value=4.200
 rarity=U
 type=Creature
 subtype=Antelope,Beast

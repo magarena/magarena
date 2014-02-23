@@ -1,7 +1,7 @@
 name=Volcanic Awakening
 url=http://magiccards.info/ts/en/186.html
 image=http://mtgimage.com/card/volcanic%20awakening.jpg
-value=2.929
+value=2.884
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

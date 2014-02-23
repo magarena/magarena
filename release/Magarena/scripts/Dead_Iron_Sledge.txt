@@ -1,7 +1,7 @@
 name=Dead-Iron Sledge
 url=http://magiccards.info/mi/en/162.html
 image=http://mtgimage.com/card/dead-iron%20sledge.jpg
-value=3.3
+value=3.230
 rarity=U
 type=Artifact
 subtype=Equipment

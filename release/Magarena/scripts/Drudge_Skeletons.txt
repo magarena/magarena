@@ -1,7 +1,7 @@
 name=Drudge Skeletons
 url=http://magiccards.info/dpa/en/22.html
 image=http://mtgimage.com/card/drudge%20skeletons.jpg
-value=4.036
+value=4.014
 rarity=C
 type=Creature
 subtype=Skeleton

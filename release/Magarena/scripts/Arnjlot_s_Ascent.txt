@@ -1,7 +1,7 @@
 name=Arnjlot's Ascent
 url=http://magiccards.info/ia/en/57.html
 image=http://mtgimage.com/card/arnjlot%27s%20ascent.jpg
-value=1.824
+value=1.803
 rarity=C
 type=Enchantment
 cost={1}{U}{U}

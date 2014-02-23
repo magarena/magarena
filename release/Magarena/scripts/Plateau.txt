@@ -1,7 +1,7 @@
 name=Plateau
 url=http://magiccards.info/me4/en/249.html
 image=http://mtgimage.com/card/plateau.jpg
-value=4.624
+value=4.635
 rarity=R
 type=Land
 subtype=Mountain,Plains

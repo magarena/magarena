@@ -1,7 +1,7 @@
 name=Hornet Cobra
 url=http://magiccards.info/lg/en/104.html
 image=http://mtgimage.com/card/hornet%20cobra.jpg
-value=1.317
+value=1.303
 rarity=C
 type=Creature
 subtype=Snake

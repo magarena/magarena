@@ -1,7 +1,7 @@
 name=Rhystic Study
 url=http://magiccards.info/cma/en/15.html
 image=http://mtgimage.com/card/rhystic%20study.jpg
-value=4.67
+value=4.529
 rarity=C
 type=Enchantment
 cost={2}{U}

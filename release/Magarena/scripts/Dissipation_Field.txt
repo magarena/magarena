@@ -1,7 +1,7 @@
 name=Dissipation Field
 url=http://magiccards.info/som/en/32.html
 image=http://mtgimage.com/card/dissipation%20field.jpg
-value=3.576
+value=3.586
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

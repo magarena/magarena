@@ -1,7 +1,7 @@
 name=Solidarity
 url=http://magiccards.info/8e/en/46.html
 image=http://mtgimage.com/card/solidarity.jpg
-value=2.806
+value=2.875
 rarity=C
 type=Instant
 cost={3}{W}

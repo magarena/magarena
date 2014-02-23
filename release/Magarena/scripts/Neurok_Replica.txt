@@ -1,7 +1,7 @@
 name=Neurok Replica
 url=http://magiccards.info/som/en/186.html
 image=http://mtgimage.com/card/neurok%20replica.jpg
-value=2.725
+value=2.732
 rarity=C
 type=Artifact,Creature
 subtype=Wizard

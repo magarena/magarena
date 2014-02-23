@@ -1,7 +1,7 @@
 name=Thunder Strike
 url=http://magiccards.info/m11/en/157.html
 image=http://mtgimage.com/card/thunder%20strike.jpg
-value=3.184
+value=3.045
 rarity=C
 type=Instant
 cost={1}{R}

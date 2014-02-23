@@ -1,7 +1,7 @@
 name=Pyrostatic Pillar
 url=http://magiccards.info/sc/en/100.html
 image=http://mtgimage.com/card/pyrostatic%20pillar.jpg
-value=3.716
+value=3.737
 rarity=U
 type=Enchantment
 cost={1}{R}

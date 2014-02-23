@@ -1,7 +1,7 @@
 name=Marker Beetles
 url=http://magiccards.info/ud/en/112.html
 image=http://mtgimage.com/card/marker%20beetles.jpg
-value=3.759
+value=3.750
 rarity=C
 type=Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Beetleback Chief
 url=http://magiccards.info/pc2/en/40.html
 image=http://mtgimage.com/card/beetleback%20chief.jpg
-value=3.530
+value=3.443
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

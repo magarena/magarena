@@ -1,7 +1,7 @@
 name=Epiphany Storm
 url=http://magiccards.info/bng/en/91.html
 image=http://mtgimage.com/card/epiphany%20storm.jpg
-value=2.773
+value=3.029
 rarity=C
 type=Enchantment
 subtype=Aura

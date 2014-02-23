@@ -1,7 +1,7 @@
 name=Assault Strobe
 url=http://magiccards.info/som/en/82.html
 image=http://mtgimage.com/card/assault%20strobe.jpg
-value=3.836
+value=3.845
 rarity=C
 type=Sorcery
 cost={R}

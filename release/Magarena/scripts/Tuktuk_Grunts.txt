@@ -1,7 +1,7 @@
 name=Tuktuk Grunts
 url=http://magiccards.info/zen/en/152.html
 image=http://mtgimage.com/card/tuktuk%20grunts.jpg
-value=1.957
+value=1.926
 rarity=C
 type=Creature
 subtype=Goblin,Warrior,Ally

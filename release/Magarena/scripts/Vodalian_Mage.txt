@@ -1,7 +1,7 @@
 name=Vodalian Mage
 url=http://magiccards.info/fe/en/59.html
 image=http://mtgimage.com/card/vodalian%20mage.jpg
-value=3.581
+value=3.547
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

@@ -1,7 +1,7 @@
 name=Grasslands
 url=http://magiccards.info/ddg/en/35.html
 image=http://mtgimage.com/card/grasslands.jpg
-value=3.589
+value=3.606
 rarity=U
 type=Land
 ability=enters tapped

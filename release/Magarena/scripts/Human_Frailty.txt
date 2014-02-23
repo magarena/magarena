@@ -1,7 +1,7 @@
 name=Human Frailty
 url=http://magiccards.info/avr/en/109.html
 image=http://mtgimage.com/card/human%20frailty.jpg
-value=2.944
+value=2.946
 removal=2
 rarity=U
 type=Instant

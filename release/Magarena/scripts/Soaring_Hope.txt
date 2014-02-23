@@ -1,7 +1,7 @@
 name=Soaring Hope
 url=http://magiccards.info/lw/en/40.html
 image=http://mtgimage.com/card/soaring%20hope.jpg
-value=1.509
+value=1.475
 rarity=C
 type=Enchantment
 subtype=Aura

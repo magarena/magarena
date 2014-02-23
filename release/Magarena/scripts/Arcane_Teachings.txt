@@ -1,7 +1,7 @@
 name=Arcane Teachings
 url=http://magiccards.info/10e/en/188.html
 image=http://mtgimage.com/card/arcane%20teachings.jpg
-value=3.695
+value=3.619
 rarity=U
 type=Enchantment
 subtype=Aura

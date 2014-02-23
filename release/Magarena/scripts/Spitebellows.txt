@@ -1,7 +1,7 @@
 name=Spitebellows
 url=http://magiccards.info/c13/en/120.html
 image=http://mtgimage.com/card/spitebellows.jpg
-value=2.767
+value=3.550
 rarity=U
 type=Creature
 subtype=Elemental

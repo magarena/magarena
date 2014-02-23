@@ -1,7 +1,7 @@
 name=Brilliant Plan
 url=http://magiccards.info/me3/en/32.html
 image=http://mtgimage.com/card/brilliant%20plan.jpg
-value=2.321
+value=2.333
 rarity=U
 type=Sorcery
 cost={4}{U}

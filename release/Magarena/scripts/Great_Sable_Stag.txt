@@ -1,7 +1,7 @@
 name=Great Sable Stag
 url=http://magiccards.info/m10/en/186.html
 image=http://mtgimage.com/card/great%20sable%20stag.jpg
-value=4.457
+value=4.366
 rarity=R
 type=Creature
 subtype=Elk

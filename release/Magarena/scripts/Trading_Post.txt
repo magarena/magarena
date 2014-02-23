@@ -1,7 +1,7 @@
 name=Trading Post
 url=http://magiccards.info/m14/en/225.html
 image=http://mtgimage.com/card/trading%20post.jpg
-value=4.082
+value=3.690
 rarity=R
 type=Artifact
 cost={4}

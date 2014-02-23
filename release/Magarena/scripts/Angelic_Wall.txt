@@ -1,7 +1,7 @@
 name=Angelic Wall
 url=http://magiccards.info/10e/en/5.html
 image=http://mtgimage.com/card/angelic%20wall.jpg
-value=3.135
+value=3.148
 ability=defender;flying
 rarity=C
 type=Creature

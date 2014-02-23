@@ -1,7 +1,7 @@
 name=Hero's Demise
 url=http://magiccards.info/bok/en/68.html
 image=http://mtgimage.com/card/hero's%20demise.jpg
-value=2.566
+value=2.556
 rarity=R
 type=Instant
 cost={1}{B}

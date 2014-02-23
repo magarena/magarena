@@ -1,7 +1,7 @@
 name=Hellrider
 url=http://magiccards.info/dka/en/93.html
 image=http://mtgimage.com/card/hellrider.jpg
-value=4.436
+value=3.686
 rarity=R
 type=Creature
 subtype=Devil

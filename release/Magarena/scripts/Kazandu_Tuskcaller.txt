@@ -1,7 +1,7 @@
 name=Kazandu Tuskcaller
 url=http://magiccards.info/roe/en/191.html
 image=http://mtgimage.com/card/kazandu%20tuskcaller.jpg
-value=4.250
+value=3.536
 rarity=R
 type=Creature
 subtype=Human,Shaman

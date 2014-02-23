@@ -1,7 +1,7 @@
 name=Sleeper's Guile
 url=http://magiccards.info/ul/en/67.html
 image=http://mtgimage.com/card/sleeper%27s%20guile.jpg
-value=3.607
+value=3.621
 rarity=C
 type=Enchantment
 subtype=Aura

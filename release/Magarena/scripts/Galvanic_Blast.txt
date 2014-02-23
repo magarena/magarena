@@ -1,7 +1,7 @@
 name=Galvanic Blast
 url=http://magiccards.info/som/en/91.html
 image=http://mtgimage.com/card/galvanic%20blast.jpg
-value=4.308
+value=4.174
 removal=3
 rarity=C
 type=Instant

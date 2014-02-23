@@ -1,7 +1,7 @@
 name=One with Nothing
 url=http://magiccards.info/sok/en/84.html
 image=http://mtgimage.com/card/one%20with%20nothing.jpg
-value=2.873
+value=2.881
 rarity=R
 type=Instant
 cost={B}

@@ -1,7 +1,7 @@
 name=Demonic Rising
 url=http://magiccards.info/avr/en/94.html
 image=http://mtgimage.com/card/demonic%20rising.jpg
-value=3.100
+value=3.123
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

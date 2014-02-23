@@ -1,7 +1,7 @@
 name=Wizened Cenn
 url=http://magiccards.info/lw/en/49.html
 image=http://mtgimage.com/card/wizened%20cenn.jpg
-value=3.756
+value=3.767
 rarity=U
 type=Creature
 subtype=Kithkin,Cleric

@@ -1,7 +1,7 @@
 name=Murderous Redcap
 url=http://magiccards.info/shm/en/192.html
 image=http://mtgimage.com/card/murderous%20redcap.jpg
-value=4.143
+value=3.978
 removal=2
 rarity=U
 type=Creature

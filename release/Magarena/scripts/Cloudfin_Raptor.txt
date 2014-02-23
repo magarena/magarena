@@ -1,7 +1,7 @@
 name=Cloudfin Raptor
 url=http://magiccards.info/gtc/en/32.html
 image=http://mtgimage.com/card/cloudfin%20raptor.jpg
-value=3.891
+value=3.913
 rarity=C
 type=Creature
 subtype=Bird,Mutant

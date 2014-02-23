@@ -1,7 +1,7 @@
 name=Yavimaya Granger
 url=http://magiccards.info/ul/en/118.html
 image=http://mtgimage.com/card/yavimaya%20granger.jpg
-value=3.783
+value=3.774
 rarity=C
 type=Creature
 subtype=Elf

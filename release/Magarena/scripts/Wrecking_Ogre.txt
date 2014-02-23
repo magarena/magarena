@@ -1,7 +1,7 @@
 name=Wrecking Ogre
 url=http://magiccards.info/gtc/en/112.html
 image=http://mtgimage.com/card/wrecking%20ogre.jpg
-value=3.426
+value=3.464
 rarity=R
 type=Creature
 subtype=Ogre,Warrior

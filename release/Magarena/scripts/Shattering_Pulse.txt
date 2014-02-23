@@ -1,7 +1,7 @@
 name=Shattering Pulse
 url=http://magiccards.info/ex/en/102.html
 image=http://mtgimage.com/card/shattering%20pulse.jpg
-value=3.787
+value=3.860
 removal=1
 rarity=C
 type=Instant

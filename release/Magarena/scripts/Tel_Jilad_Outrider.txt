@@ -1,7 +1,7 @@
 name=Tel-Jilad Outrider
 url=http://magiccards.info/ds/en/87.html
 image=http://mtgimage.com/card/tel%2Djilad%20outrider.jpg
-value=1.729
+value=1.700
 rarity=C
 type=Creature
 subtype=Elf,Warrior

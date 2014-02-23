@@ -1,7 +1,7 @@
 name=Fruition
 url=http://magiccards.info/lw/es/66.html
 image=http://mtgimage.com/card/fruition.jpg
-value=3.766
+value=3.794
 rarity=C
 type=Sorcery
 cost={G}

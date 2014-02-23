@@ -1,7 +1,7 @@
 name=Brion Stoutarm
 url=http://magiccards.info/cmd/en/187.html
 image=http://mtgimage.com/card/brion%20stoutarm.jpg
-value=3.909
+value=3.937
 rarity=R
 type=Legendary,Creature
 subtype=Giant,Warrior

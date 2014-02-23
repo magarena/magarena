@@ -1,7 +1,7 @@
 name=Joraga Bard
 url=http://magiccards.info/zen/en/166.html
 image=http://mtgimage.com/card/joraga%20bard.jpg
-value=2.422
+value=2.413
 rarity=C
 type=Creature
 subtype=Elf,Rogue,Ally

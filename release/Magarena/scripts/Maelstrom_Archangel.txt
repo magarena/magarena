@@ -1,7 +1,7 @@
 name=Maelstrom Archangel
 url=http://magiccards.info/cfx/en/115.html
 image=http://mtgimage.com/card/maelstrom%20archangel.jpg
-value=4.099
+value=4.107
 rarity=M
 type=Creature
 subtype=Angel

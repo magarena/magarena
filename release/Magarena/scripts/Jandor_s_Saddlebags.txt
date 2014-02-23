@@ -1,7 +1,7 @@
 name=Jandor's Saddlebags
 url=http://magiccards.info/7e/en/304.html
 image=http://mtgimage.com/card/jandor%27s%20saddlebags.jpg
-value=1.964
+value=1.948
 rarity=R
 type=Artifact
 cost={2}

@@ -1,7 +1,7 @@
 name=Broodmate Dragon
 url=http://magiccards.info/ala/en/160.html
 image=http://mtgimage.com/card/broodmate%20dragon.jpg
-value=4.119
+value=4.086
 rarity=R
 type=Creature
 subtype=Dragon

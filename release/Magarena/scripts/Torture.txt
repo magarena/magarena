@@ -1,7 +1,7 @@
 name=Torture
 url=http://magiccards.info/tr/pt/53.html
 image=http://mtgimage.com/card/torture.jpg
-value=2.978
+value=2.958
 rarity=C
 type=Enchantment
 subtype=Aura

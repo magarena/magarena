@@ -1,7 +1,7 @@
 name=Surrakar Banisher
 url=http://magiccards.info/wwk/en/39.html
 image=http://mtgimage.com/card/surrakar%20banisher.jpg
-value=2.071
+value=2.090
 rarity=C
 type=Creature
 subtype=Surrakar

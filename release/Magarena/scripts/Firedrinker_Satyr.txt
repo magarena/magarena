@@ -1,7 +1,7 @@
 name=Firedrinker Satyr
 url=http://magiccards.info/ths/en/122.html
 image=http://mtgimage.com/card/firedrinker%20satyr.jpg
-value=3.357
+value=3.372
 rarity=R
 type=Creature
 subtype=Satyr,Shaman

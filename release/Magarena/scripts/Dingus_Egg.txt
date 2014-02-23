@@ -1,7 +1,7 @@
 name=Dingus Egg
 url=http://magiccards.info/8e/en/297.html
 image=http://mtgimage.com/card/dingus%20egg.jpg
-value=3.578
+value=3.585
 rarity=R
 type=Artifact
 cost={4}

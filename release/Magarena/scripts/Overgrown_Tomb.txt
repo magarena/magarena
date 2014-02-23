@@ -1,7 +1,7 @@
 name=Overgrown Tomb
 url=http://magiccards.info/rav/en/279.html
 image=http://mtgimage.com/card/overgrown%20tomb.jpg
-value=4.341
+value=4.284
 rarity=R
 type=Land
 subtype=Swamp,Forest

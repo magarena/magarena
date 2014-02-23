@@ -1,7 +1,7 @@
 name=Crush
 url=http://magiccards.info/mbs/en/61.html
 image=http://mtgimage.com/card/crush.jpg
-value=3.301
+value=3.326
 rarity=C
 type=Instant
 cost={R}

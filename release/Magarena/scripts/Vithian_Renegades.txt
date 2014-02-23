@@ -1,7 +1,7 @@
 name=Vithian Renegades
 url=http://magiccards.info/arb/en/64.html
 image=http://mtgimage.com/card/vithian%20renegades.jpg
-value=4.092
+value=4.110
 removal=1
 rarity=U
 type=Creature

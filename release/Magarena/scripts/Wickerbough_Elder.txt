@@ -1,7 +1,7 @@
 name=Wickerbough Elder
 url=http://magiccards.info/arc/en/74.html
 image=http://mtgimage.com/card/wickerbough%20elder.jpg
-value=4.083
+value=4.103
 rarity=C
 type=Creature
 subtype=Treefolk,Shaman

@@ -1,7 +1,7 @@
 name=Nylea, God of the Hunt
 url=http://magiccards.info/ths/en/166.html
 image=http://mtgimage.com/card/nylea%2C%20god%20of%20the%20hunt.jpg
-value=3.684
+value=3.595
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

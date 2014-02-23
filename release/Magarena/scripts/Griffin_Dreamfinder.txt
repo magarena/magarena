@@ -1,7 +1,7 @@
 name=Griffin Dreamfinder
 url=http://magiccards.info/bng/en/16.html
 image=http://mtgimage.com/card/griffin%20dreamfinder.jpg
-value=2.929
+value=2.674
 rarity=C
 type=Creature
 subtype=Griffin

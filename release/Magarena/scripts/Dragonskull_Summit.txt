@@ -1,7 +1,7 @@
 name=Dragonskull Summit
 url=http://magiccards.info/m12/en/225.html
 image=http://mtgimage.com/card/dragonskull%20summit.jpg
-value=3.853
+value=3.883
 rarity=R
 type=Land
 mana=b3r3

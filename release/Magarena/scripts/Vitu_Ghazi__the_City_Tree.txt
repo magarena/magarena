@@ -1,7 +1,7 @@
 name=Vitu-Ghazi, the City-Tree
 url=http://magiccards.info/arc/en/136.html
 image=http://mtgimage.com/card/vitu%2Dghazi%2C%20the%20city%2Dtree.jpg
-value=3.250
+value=3.643
 rarity=U
 type=Land
 ability=tap add mana {1};pay {2}{G}{W},{T}:PN puts a 1/1 green Saproling creature token onto the battlefield.

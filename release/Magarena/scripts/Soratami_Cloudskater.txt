@@ -1,7 +1,7 @@
 name=Soratami Cloudskater
 url=http://magiccards.info/chk/en/86.html
 image=http://mtgimage.com/card/soratami%20cloudskater.jpg
-value=2.594
+value=2.591
 rarity=C
 type=Creature
 subtype=Moonfolk,Rogue

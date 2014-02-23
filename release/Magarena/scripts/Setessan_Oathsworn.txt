@@ -1,7 +1,7 @@
 name=Setessan Oathsworn
 url=http://magiccards.info/bng/en/138.html
 image=http://mtgimage.com/card/setessan%20oathsworn.jpg
-value=3.889
+value=3.804
 rarity=C
 type=Creature
 subtype=Satyr,Warrior

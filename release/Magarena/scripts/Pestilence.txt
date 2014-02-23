@@ -1,7 +1,7 @@
 name=Pestilence
 url=http://magiccards.info/us/en/147.html
 image=http://mtgimage.com/card/pestilence.jpg
-value=4.378
+value=4.375
 rarity=C
 type=Enchantment
 cost={2}{B}{B}

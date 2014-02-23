@@ -1,7 +1,7 @@
 name=Seasoned Marshal
 url=http://magiccards.info/ddf/en/15.html
 image=http://mtgimage.com/card/seasoned%20marshal.jpg
-value=3.32
+value=3.320
 rarity=U
 type=Creature
 subtype=Human,Soldier

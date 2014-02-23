@@ -1,7 +1,7 @@
 name=Emerald Dragonfly
 url=http://magiccards.info/ch/en/35.html
 image=http://mtgimage.com/card/emerald%20dragonfly.jpg
-value=3.097
+value=3.041
 rarity=C
 type=Creature
 subtype=Insect

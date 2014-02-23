@@ -1,7 +1,7 @@
 name=Vivid Meadow
 url=http://magiccards.info/cmd/en/297.html
 image=http://mtgimage.com/card/vivid%20meadow.jpg
-value=3.864
+value=3.750
 rarity=U
 type=Land
 mana=b1g1r1u1w3

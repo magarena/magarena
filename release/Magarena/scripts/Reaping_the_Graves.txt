@@ -1,7 +1,7 @@
 name=Reaping the Graves
 url=http://magiccards.info/sc/en/72.html
 image=http://mtgimage.com/card/reaping%20the%20graves.jpg
-value=3.630
+value=3.679
 rarity=C
 type=Instant
 cost={2}{B}

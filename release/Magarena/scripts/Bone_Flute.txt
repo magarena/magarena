@@ -1,7 +1,7 @@
 name=Bone Flute
 url=http://magiccards.info/dk/en/94.html
 image=http://mtgimage.com/card/bone%20flute.jpg
-value=2.037
+value=2.017
 rarity=C
 type=Artifact
 cost={3}

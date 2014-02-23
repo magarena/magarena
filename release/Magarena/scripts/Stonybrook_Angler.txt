@@ -1,7 +1,7 @@
 name=Stonybrook Angler
 url=http://magiccards.info/lw/en/90.html
 image=http://mtgimage.com/card/stonybrook%20angler.jpg
-value=2.824
+value=2.885
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

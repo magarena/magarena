@@ -1,7 +1,7 @@
 name=Vampire Interloper
 url=http://magiccards.info/isd/en/123.html
 image=http://mtgimage.com/card/vampire%20interloper.jpg
-value=3.237
+value=3.142
 rarity=C
 type=Creature
 subtype=Vampire,Scout

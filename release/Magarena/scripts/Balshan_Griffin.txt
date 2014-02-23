@@ -1,7 +1,7 @@
 name=Balshan Griffin
 url=http://magiccards.info/od/en/67.html
 image=http://mtgimage.com/card/balshan%20griffin.jpg
-value=1.406
+value=1.379
 rarity=U
 type=Creature
 subtype=Griffin

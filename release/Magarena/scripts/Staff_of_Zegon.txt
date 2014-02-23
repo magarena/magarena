@@ -1,7 +1,7 @@
 name=Staff of Zegon
 url=http://magiccards.info/me4/en/229.html
 image=http://mtgimage.com/card/staff%20of%20zegon.jpg
-value=2.548
+value=2.455
 rarity=C
 type=Artifact
 cost={4}

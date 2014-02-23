@@ -1,7 +1,7 @@
 name=Caltrops
 url=http://magiccards.info/ud/en/129.html
 image=http://mtgimage.com/card/caltrops.jpg
-value=3.888
+value=3.869
 rarity=U
 type=Artifact
 cost={3}

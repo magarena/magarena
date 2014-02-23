@@ -1,7 +1,7 @@
 name=Titanium Golem
 url=http://magiccards.info/mi/en/263.html
 image=http://mtgimage.com/card/titanium%20golem.jpg
-value=1.353
+value=1.343
 rarity=C
 type=Artifact,Creature
 subtype=Golem

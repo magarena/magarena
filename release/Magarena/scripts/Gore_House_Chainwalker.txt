@@ -1,7 +1,7 @@
 name=Gore-House Chainwalker
 url=http://magiccards.info/rtr/en/96.html
 image=http://mtgimage.com/card/gore%2Dhouse%20chainwalker.jpg
-value=3.207
+value=3.224
 rarity=C
 type=Creature
 subtype=Human,Warrior

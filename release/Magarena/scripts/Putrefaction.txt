@@ -1,7 +1,7 @@
 name=Putrefaction
 url=http://magiccards.info/mm/en/153.html
 image=http://mtgimage.com/card/putrefaction.jpg
-value=2.341
+value=2.391
 rarity=U
 type=Enchantment
 cost={4}{B}

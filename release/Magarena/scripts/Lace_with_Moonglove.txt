@@ -1,7 +1,7 @@
 name=Lace with Moonglove
 url=http://magiccards.info/lw/en/225.html
 image=http://mtgimage.com/card/lace%20with%20moonglove.jpg
-value=3.361
+value=3.316
 rarity=C
 type=Instant
 cost={2}{G}

@@ -1,7 +1,7 @@
 name=Yew Spirit
 url=http://magiccards.info/avr/en/207.html
 image=http://mtgimage.com/card/yew%20spirit.jpg
-value=2.903
+value=2.878
 rarity=U
 type=Creature
 subtype=Spirit,Treefolk

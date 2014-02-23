@@ -1,7 +1,7 @@
 name=Righteous Avengers
 url=http://magiccards.info/med/en/25.html
 image=http://mtgimage.com/card/righteous%20avengers.jpg
-value=1.174
+value=1.164
 rarity=C
 type=Creature
 subtype=Human,Soldier

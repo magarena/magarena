@@ -1,7 +1,7 @@
 name=Ghitu Encampment
 url=http://magiccards.info/10e/en/353.html
 image=http://mtgimage.com/card/ghitu%20encampment.jpg
-value=4.167
+value=3.643
 rarity=U
 type=Land
 mana=r3

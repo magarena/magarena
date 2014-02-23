@@ -1,7 +1,7 @@
 name=Arrest
 url=http://magiccards.info/rtr/en/3.html
 image=http://mtgimage.com/card/arrest.jpg
-value=3.986
+value=3.959
 rarity=U
 type=Enchantment
 subtype=Aura

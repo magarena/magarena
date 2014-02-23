@@ -1,7 +1,7 @@
 name=White Scarab
 url=http://magiccards.info/ia/en/280.html
 image=http://mtgimage.com/card/white%20scarab.jpg
-value=1.984
+value=1.985
 rarity=U
 type=Enchantment
 subtype=Aura

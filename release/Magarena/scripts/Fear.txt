@@ -1,7 +1,7 @@
 name=Fear
 url=http://magiccards.info/10e/en/142.html
 image=http://mtgimage.com/card/fear.jpg
-value=2.337
+value=2.320
 rarity=C
 type=Enchantment
 subtype=Aura

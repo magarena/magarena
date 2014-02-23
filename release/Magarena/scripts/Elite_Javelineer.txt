@@ -1,7 +1,7 @@
 name=Elite Javelineer
 url=http://magiccards.info/8e/en/19.html
 image=http://mtgimage.com/card/elite%20javelineer.jpg
-value=3.047
+value=3.000
 rarity=U
 type=Creature
 subtype=Human,Soldier

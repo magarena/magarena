@@ -1,7 +1,7 @@
 name=Marrow Bats
 url=http://magiccards.info/c13/en/82.html
 image=http://mtgimage.com/card/marrow%20bats.jpg
-value=1.5
+value=1.562
 rarity=U
 type=Creature
 subtype=Bat,Skeleton

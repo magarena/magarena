@@ -1,7 +1,7 @@
 name=Stonewright
 url=http://magiccards.info/avr/en/157.html
 image=http://mtgimage.com/card/stonewright.jpg
-value=3.431
+value=3.453
 rarity=U
 type=Creature
 subtype=Human,Shaman

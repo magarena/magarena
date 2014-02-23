@@ -1,7 +1,7 @@
 name=Nightmare
 url=http://magiccards.info/m10/en/107.html
 image=http://mtgimage.com/card/nightmare.jpg
-value=4.010
+value=4.018
 rarity=R
 type=Creature
 subtype=Nightmare,Horse

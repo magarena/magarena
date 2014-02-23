@@ -1,7 +1,7 @@
 name=Hulking Cyclops
 url=http://magiccards.info/8e/en/195.html
 image=http://mtgimage.com/card/hulking%20cyclops.jpg
-value=2.500
+value=2.517
 ability=can't block
 rarity=U
 type=Creature

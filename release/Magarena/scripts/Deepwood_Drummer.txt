@@ -1,7 +1,7 @@
 name=Deepwood Drummer
 url=http://magiccards.info/mm/en/239.html
 image=http://mtgimage.com/card/deepwood%20drummer.jpg
-value=2.833
+value=2.857
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

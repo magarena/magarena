@@ -1,7 +1,7 @@
 name=Meadowboon
 url=http://magiccards.info/mma/en/22.html
 image=http://mtgimage.com/card/meadowboon.jpg
-value=3.65
+value=3.692
 rarity=U
 type=Creature
 subtype=Elemental

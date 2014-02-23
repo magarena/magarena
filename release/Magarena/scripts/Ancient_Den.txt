@@ -1,7 +1,7 @@
 name=Ancient Den
 url=http://magiccards.info/pch/en/130.html
 image=http://mtgimage.com/card/ancient%20den.jpg
-value=4.327
+value=4.339
 rarity=C
 type=Artifact,Land
 mana=w4

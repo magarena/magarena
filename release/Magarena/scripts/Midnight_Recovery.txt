@@ -1,7 +1,7 @@
 name=Midnight Recovery
 url=http://magiccards.info/gtc/en/73.html
 image=http://mtgimage.com/card/midnight%20recovery.jpg
-value=2.675
+value=2.756
 rarity=C
 type=Sorcery
 cost={3}{B}

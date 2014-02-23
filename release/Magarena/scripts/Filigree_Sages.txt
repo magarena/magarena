@@ -1,7 +1,7 @@
 name=Filigree Sages
 url=http://magiccards.info/ala/en/44.html
 image=http://mtgimage.com/card/filigree%20sages.jpg
-value=3.010
+value=2.991
 rarity=U
 type=Artifact,Creature
 subtype=Vedalken,Wizard

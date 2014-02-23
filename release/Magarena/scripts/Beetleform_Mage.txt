@@ -1,7 +1,7 @@
 name=Beetleform Mage
 url=http://magiccards.info/dgm/en/54.html
 image=http://mtgimage.com/card/beetleform%20mage.jpg
-value=3.460
+value=3.404
 rarity=C
 type=Creature
 subtype=Human,Insect,Wizard

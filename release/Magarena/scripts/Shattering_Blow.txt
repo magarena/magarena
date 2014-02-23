@@ -1,7 +1,7 @@
 name=Shattering Blow
 url=http://magiccards.info/gtc/en/225.html
 image=http://mtgimage.com/card/shattering%20blow.jpg
-value=3.891
+value=4.167
 rarity=C
 type=Instant
 cost={1}{R/W}

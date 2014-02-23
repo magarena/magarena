@@ -1,7 +1,7 @@
 name=Shrapnel Blast
 url=http://magiccards.info/mma/en/129.html
 image=http://mtgimage.com/card/shrapnel%20blast.jpg
-value=4.357
+value=4.020
 rarity=U
 type=Instant
 cost={1}{R}

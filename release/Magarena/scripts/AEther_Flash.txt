@@ -1,7 +1,7 @@
 name=AEther Flash
 url=http://magiccards.info/7e/en/172.html
 image=http://mtgimage.com/card/aether%20flash.jpg
-value=4.288
+value=4.274
 rarity=U
 type=Enchantment
 cost={2}{R}{R}

@@ -1,7 +1,7 @@
 name=Phantom General
 url=http://magiccards.info/ddk/en/14.html
 image=http://mtgimage.com/card/phantom%20general.jpg
-value=3.625
+value=3.385
 rarity=U
 type=Creature
 subtype=Spirit,Soldier

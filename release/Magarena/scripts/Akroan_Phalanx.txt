@@ -1,7 +1,7 @@
 name=Akroan Phalanx
 url=http://magiccards.info/bng/en/2.html
 image=http://mtgimage.com/card/akroan%20phalanx.jpg
-value=3.5
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

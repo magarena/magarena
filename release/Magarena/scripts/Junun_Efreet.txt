@@ -1,7 +1,7 @@
 name=Junun Efreet
 url=http://magiccards.info/4e/en/27.html
 image=http://mtgimage.com/card/junun%20efreet.jpg
-value=2.909
+value=2.938
 rarity=U
 type=Creature
 subtype=Efreet

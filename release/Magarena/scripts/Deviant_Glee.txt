@@ -1,7 +1,7 @@
 name=Deviant Glee
 url=http://magiccards.info/rtr/en/65.html
 image=http://mtgimage.com/card/deviant%20glee.jpg
-value=3.370
+value=3.372
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Tumble Magnet
 url=http://magiccards.info/som/en/218.html
 image=http://mtgimage.com/card/tumble%20magnet.jpg
-value=3.725
+value=3.697
 rarity=C
 type=Artifact
 cost={3}

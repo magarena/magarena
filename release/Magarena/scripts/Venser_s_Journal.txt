@@ -1,7 +1,7 @@
 name=Venser's Journal
 url=http://magiccards.info/som/en/220.html
 image=http://mtgimage.com/card/venser's%20journal.jpg
-value=3.412
+value=3.435
 rarity=R
 type=Artifact
 cost={5}

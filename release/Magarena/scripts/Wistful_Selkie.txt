@@ -1,7 +1,7 @@
 name=Wistful Selkie
 url=http://magiccards.info/eve/en/165.html
 image=http://mtgimage.com/card/wistful%20selkie.jpg
-value=3.389
+value=3.420
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

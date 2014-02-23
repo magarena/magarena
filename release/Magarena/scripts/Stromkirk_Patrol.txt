@@ -1,7 +1,7 @@
 name=Stromkirk Patrol
 url=http://magiccards.info/isd/en/118.html
 image=http://mtgimage.com/card/stromkirk%20patrol.jpg
-value=2.305
+value=2.307
 rarity=C
 type=Creature
 subtype=Vampire,Soldier

@@ -1,7 +1,7 @@
 name=Tunnel
 url=http://magiccards.info/4e/en/245.html
 image=http://mtgimage.com/card/tunnel.jpg
-value=1.944
+value=1.908
 rarity=U
 type=Instant
 cost={R}

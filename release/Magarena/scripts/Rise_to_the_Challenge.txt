@@ -1,7 +1,7 @@
 name=Rise to the Challenge
 url=http://magiccards.info/bng/en/107.html
 image=http://mtgimage.com/card/rise%20to%20the%20challenge.jpg
-value=2.833
+value=2.861
 rarity=C
 type=Instant
 cost={1}{R}

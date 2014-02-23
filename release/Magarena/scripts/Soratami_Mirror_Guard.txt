@@ -1,7 +1,7 @@
 name=Soratami Mirror-Guard
 url=http://magiccards.info/chk/en/87.html
 image=http://mtgimage.com/card/soratami%20mirror-guard.jpg
-value=2.191
+value=2.257
 rarity=C
 type=Creature
 subtype=Moonfolk,Wizard

@@ -1,7 +1,7 @@
 name=Devastation
 url=http://magiccards.info/st/en/94.html
 image=http://mtgimage.com/card/devastation.jpg
-value=3.8
+value=3.815
 rarity=R
 type=Sorcery
 cost={5}{R}{R}

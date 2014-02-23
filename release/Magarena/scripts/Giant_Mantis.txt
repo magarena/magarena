@@ -1,7 +1,7 @@
 name=Giant Mantis
 url=http://magiccards.info/mr/en/116.html
 image=http://mtgimage.com/card/giant%20mantis.jpg
-value=3.339
+value=3.362
 rarity=C
 type=Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Dwarven Soldier
 url=http://magiccards.info/5e/en/221.html
 image=http://mtgimage.com/card/dwarven%20soldier.jpg
-value=2.133
+value=2.113
 rarity=C
 type=Creature
 subtype=Dwarf,Soldier

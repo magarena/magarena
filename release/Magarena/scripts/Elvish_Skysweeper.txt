@@ -1,7 +1,7 @@
 name=Elvish Skysweeper
 url=http://magiccards.info/rav/en/162.html
 image=http://mtgimage.com/card/elvish%20skysweeper.jpg
-value=2.833
+value=3.056
 rarity=C
 type=Creature
 subtype=Elf,Warrior

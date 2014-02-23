@@ -1,7 +1,7 @@
 name=Centaur Courser
 url=http://magiccards.info/m10/en/172.html
 image=http://mtgimage.com/card/centaur%20courser.jpg
-value=2.885
+value=2.861
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

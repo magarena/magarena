@@ -1,7 +1,7 @@
 name=Goblin Wardriver
 url=http://magiccards.info/mbs/en/64.html
 image=http://mtgimage.com/card/goblin%20wardriver.jpg
-value=3.971
+value=3.852
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

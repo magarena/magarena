@@ -1,7 +1,7 @@
 name=Haunted Fengraf
 url=http://magiccards.info/dka/en/157.html
 image=http://mtgimage.com/card/haunted%20fengraf.jpg
-value=3
+value=3.056
 rarity=C
 type=Land
 ability=tap add mana {1}

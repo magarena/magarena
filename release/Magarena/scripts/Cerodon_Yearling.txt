@@ -1,7 +1,7 @@
 name=Cerodon Yearling
 url=http://magiccards.info/pch/en/86.html
 image=http://mtgimage.com/card/cerodon%20yearling.jpg
-value=3.818
+value=3.819
 rarity=C
 type=Creature
 subtype=Beast

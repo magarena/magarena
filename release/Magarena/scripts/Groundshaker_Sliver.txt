@@ -1,7 +1,7 @@
 name=Groundshaker Sliver
 url=http://magiccards.info/m14/en/177.html
 image=http://mtgimage.com/card/groundshaker%20sliver.jpg
-value=2.219
+value=2.176
 rarity=C
 type=Creature
 subtype=Sliver

@@ -1,7 +1,7 @@
 name=Alpha Tyrranax
 url=http://magiccards.info/som/en/109.html
 image=http://mtgimage.com/card/alpha%20tyrranax.jpg
-value=2.373
+value=2.399
 rarity=C
 type=Creature
 subtype=Beast

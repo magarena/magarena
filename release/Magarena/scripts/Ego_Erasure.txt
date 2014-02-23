@@ -1,7 +1,7 @@
 name=Ego Erasure
 url=http://magiccards.info/lw/en/59.html
 image=http://mtgimage.com/card/ego%20erasure.jpg
-value=2.756
+value=2.762
 rarity=U
 type=Tribal,Instant
 subtype=Shapeshifter

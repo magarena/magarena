@@ -1,7 +1,7 @@
 name=Jace's Ingenuity
 url=http://magiccards.info/m11/en/60.html
 image=http://mtgimage.com/card/jace%27s%20ingenuity.jpg
-value=3.577
+value=3.530
 rarity=U
 type=Instant
 cost={3}{U}{U}

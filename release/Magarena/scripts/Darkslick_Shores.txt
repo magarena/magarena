@@ -1,7 +1,7 @@
 name=Darkslick Shores
 url=http://magiccards.info/som/en/226.html
 image=http://mtgimage.com/card/darkslick%20shores.jpg
-value=4.271
+value=4.258
 rarity=R
 type=Land
 mana=u3b3

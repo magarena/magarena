@@ -1,7 +1,7 @@
 name=Leap
 url=http://magiccards.info/sh/en/35.html
 image=http://mtgimage.com/card/leap.jpg
-value=4.057
+value=4.076
 rarity=C
 type=Instant
 cost={U}

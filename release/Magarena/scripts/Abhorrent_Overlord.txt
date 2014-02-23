@@ -1,7 +1,7 @@
 name=Abhorrent Overlord
 url=http://magiccards.info/ths/en/75.html
 image=http://mtgimage.com/card/abhorrent%20overlord.jpg
-value=3.481
+value=3.470
 rarity=R
 type=Creature
 subtype=Demon

@@ -1,7 +1,7 @@
 name=Fiery Mantle
 url=http://magiccards.info/us/en/186.html
 image=http://mtgimage.com/card/fiery%20mantle.jpg
-value=3.409
+value=3.426
 rarity=C
 type=Enchantment
 subtype=Aura

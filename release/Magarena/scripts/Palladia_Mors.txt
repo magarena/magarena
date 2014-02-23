@@ -1,7 +1,7 @@
 name=Palladia-Mors
 url=http://magiccards.info/ch/en/117.html
 image=http://mtgimage.com/card/palladia-mors.jpg
-value=3.932
+value=3.878
 rarity=R
 type=Legendary,Creature
 subtype=Elder,Dragon

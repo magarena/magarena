@@ -1,7 +1,7 @@
 name=Chromanticore
 url=http://magiccards.info/bng/en/144.html
 image=http://mtgimage.com/card/chromanticore.jpg
-value=3.556
+value=3.707
 rarity=M
 type=Enchantment,Creature
 subtype=Manticore

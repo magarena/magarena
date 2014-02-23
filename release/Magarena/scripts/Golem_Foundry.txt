@@ -1,7 +1,7 @@
 name=Golem Foundry
 url=http://magiccards.info/som/en/160.html
 image=http://mtgimage.com/card/golem%20foundry.jpg
-value=3.262
+value=3.250
 rarity=C
 type=Artifact
 cost={3}

@@ -1,7 +1,7 @@
 name=Barbed Field
 url=http://magiccards.info/pr/en/83.html
 image=http://mtgimage.com/card/barbed%20field.jpg
-value=3.058
+value=2.946
 rarity=U
 type=Enchantment
 subtype=Aura

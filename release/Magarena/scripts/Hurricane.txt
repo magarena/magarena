@@ -1,7 +1,7 @@
 name=Hurricane
 url=http://magiccards.info/10e/en/270.html
 image=http://mtgimage.com/card/hurricane.jpg
-value=3.944
+value=3.959
 removal=2
 rarity=U
 type=Sorcery

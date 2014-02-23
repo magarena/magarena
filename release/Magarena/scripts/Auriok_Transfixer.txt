@@ -1,7 +1,7 @@
 name=Auriok Transfixer
 url=http://magiccards.info/mi/en/5.html
 image=http://mtgimage.com/card/auriok%20transfixer.jpg
-value=2.741
+value=2.750
 rarity=C
 type=Creature
 subtype=Human,Scout

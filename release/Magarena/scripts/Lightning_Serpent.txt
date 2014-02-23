@@ -1,7 +1,7 @@
 name=Lightning Serpent
 url=http://magiccards.info/cs/en/88.html
 image=http://mtgimage.com/card/lightning%20serpent.jpg
-value=3.923
+value=3.918
 rarity=R
 type=Creature
 subtype=Elemental,Serpent

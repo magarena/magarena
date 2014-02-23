@@ -1,7 +1,7 @@
 name=Awaken the Ancient
 url=http://magiccards.info/m14/en/126.html
 image=http://mtgimage.com/card/awaken%20the%20ancient.jpg
-value=3.783
+value=3.653
 rarity=R
 type=Enchantment
 subtype=Aura

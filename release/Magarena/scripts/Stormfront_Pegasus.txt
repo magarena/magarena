@@ -1,7 +1,7 @@
 name=Stormfront Pegasus
 url=http://magiccards.info/m12/en/38.html
 image=http://mtgimage.com/card/stormfront%20pegasus.jpg
-value=3.117
+value=3.098
 rarity=C
 type=Creature
 subtype=Pegasus

@@ -1,7 +1,7 @@
 name=Hoodwink
 url=http://magiccards.info/mm/en/84.html
 image=http://mtgimage.com/card/hoodwink.jpg
-value=3.403
+value=3.419
 rarity=C
 type=Instant
 cost={1}{U}

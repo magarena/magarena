@@ -1,7 +1,7 @@
 name=Vulshok Replica
 url=http://magiccards.info/som/en/221.html
 image=http://mtgimage.com/card/vulshok%20replica.jpg
-value=2.958
+value=2.961
 rarity=C
 type=Artifact,Creature
 subtype=Berserker

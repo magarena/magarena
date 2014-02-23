@@ -1,7 +1,7 @@
 name=Hunger of the Howlpack
 url=http://magiccards.info/dka/en/119.html
 image=http://mtgimage.com/card/hunger%20of%20the%20howlpack.jpg
-value=3.623
+value=3.569
 rarity=C
 type=Instant
 cost={G}

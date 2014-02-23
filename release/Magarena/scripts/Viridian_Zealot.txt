@@ -1,7 +1,7 @@
 name=Viridian Zealot
 url=http://magiccards.info/ds/en/90.html
 image=http://mtgimage.com/card/viridian%20zealot.jpg
-value=3.973
+value=3.964
 rarity=R
 type=Creature
 subtype=Elf,Warrior

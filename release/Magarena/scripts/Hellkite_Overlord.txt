@@ -1,7 +1,7 @@
 name=Hellkite Overlord
 url=http://magiccards.info/ala/en/172.html
 image=http://mtgimage.com/card/hellkite%20overlord.jpg
-value=4.583
+value=4.476
 rarity=R
 type=Creature
 subtype=Dragon

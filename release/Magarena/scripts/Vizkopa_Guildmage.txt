@@ -1,7 +1,7 @@
 name=Vizkopa Guildmage
 url=http://magiccards.info/gtc/en/206.html
 image=http://mtgimage.com/card/vizkopa%20guildmage.jpg
-value=4.045
+value=3.778
 rarity=U
 type=Creature
 subtype=Human,Wizard

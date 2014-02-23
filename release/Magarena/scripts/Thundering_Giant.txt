@@ -1,7 +1,7 @@
 name=Thundering Giant
 url=http://magiccards.info/10e/en/243.html
 image=http://mtgimage.com/card/thundering%20giant.jpg
-value=1.964
+value=2.188
 ability=haste
 rarity=U
 type=Creature

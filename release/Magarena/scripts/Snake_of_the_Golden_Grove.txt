@@ -1,7 +1,7 @@
 name=Snake of the Golden Grove
 url=http://magiccards.info/bng/en/141.html
 image=http://mtgimage.com/card/snake%20of%20the%20golden%20grove.jpg
-value=3
+value=3.185
 rarity=C
 type=Creature
 subtype=Snake

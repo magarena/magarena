@@ -1,7 +1,7 @@
 name=Canker Abomination
 url=http://magiccards.info/eve/en/115.html
 image=http://mtgimage.com/card/canker%20abomination.jpg
-value=3.260
+value=3.255
 rarity=U
 type=Creature
 subtype=Treefolk,Horror

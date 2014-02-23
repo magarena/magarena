@@ -1,7 +1,7 @@
 name=Equilibrium
 url=http://magiccards.info/7e/en/71.html
 image=http://mtgimage.com/card/equilibrium.jpg
-value=4.576
+value=4.552
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

@@ -1,7 +1,7 @@
 name=Plated Seastrider
 url=http://magiccards.info/som/en/38.html
 image=http://mtgimage.com/card/plated%20seastrider.jpg
-value=3.027
+value=3.033
 rarity=C
 type=Creature
 subtype=Beast

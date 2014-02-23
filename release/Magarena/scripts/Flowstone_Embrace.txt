@@ -1,7 +1,7 @@
 name=Flowstone Embrace
 url=http://magiccards.info/fut/en/113.html
 image=http://mtgimage.com/card/flowstone%20embrace.jpg
-value=2.536
+value=2.535
 rarity=C
 type=Enchantment
 subtype=Aura

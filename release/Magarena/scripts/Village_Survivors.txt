@@ -1,7 +1,7 @@
 name=Village Survivors
 url=http://magiccards.info/dka/en/130.html
 image=http://mtgimage.com/card/village%20survivors.jpg
-value=3.189
+value=3.197
 rarity=U
 type=Creature
 subtype=Human

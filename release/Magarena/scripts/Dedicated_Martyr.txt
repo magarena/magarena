@@ -1,7 +1,7 @@
 name=Dedicated Martyr
 url=http://magiccards.info/od/en/16.html
 image=http://mtgimage.com/card/dedicated%20martyr.jpg
-value=1.929
+value=1.955
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=Adarkar Sentinel
 url=http://magiccards.info/me2/en/201.html
 image=http://mtgimage.com/card/adarkar%20sentinel.jpg
-value=2.600
+value=2.573
 rarity=C
 type=Artifact,Creature
 subtype=Soldier

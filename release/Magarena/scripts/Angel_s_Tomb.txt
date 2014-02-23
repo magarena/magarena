@@ -1,7 +1,7 @@
 name=Angel's Tomb
 url=http://magiccards.info/avr/en/211.html
 image=http://mtgimage.com/card/angel%27s%20tomb.jpg
-value=3.108
+value=3.096
 rarity=U
 type=Artifact
 cost={3}

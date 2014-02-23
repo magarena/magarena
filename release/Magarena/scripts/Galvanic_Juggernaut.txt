@@ -1,7 +1,7 @@
 name=Galvanic Juggernaut
 url=http://magiccards.info/isd/en/222.html
 image=http://mtgimage.com/card/galvanic%20juggernaut.jpg
-value=3.000
+value=2.991
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

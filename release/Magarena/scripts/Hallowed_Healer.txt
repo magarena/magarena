@@ -1,7 +1,7 @@
 name=Hallowed Healer
 url=http://magiccards.info/od/en/25.html
 image=http://mtgimage.com/card/hallowed%20healer.jpg
-value=2.87
+value=2.850
 rarity=C
 type=Creature
 subtype=Human,Cleric

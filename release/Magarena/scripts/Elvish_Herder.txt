@@ -1,7 +1,7 @@
 name=Elvish Herder
 url=http://magiccards.info/us/en/247.html
 image=http://mtgimage.com/card/elvish%20herder.jpg
-value=4.064
+value=4.075
 rarity=C
 type=Creature
 subtype=Elf

@@ -1,7 +1,7 @@
 name=Sheltering Word
 url=http://magiccards.info/avr/en/192.html
 image=http://mtgimage.com/card/sheltering%20word.jpg
-value=3.396
+value=3.390
 rarity=C
 type=Instant
 cost={1}{G}

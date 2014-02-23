@@ -1,7 +1,7 @@
 name=Spearpoint Oread
 url=http://magiccards.info/ths/en/141.html
 image=http://mtgimage.com/card/spearpoint%20oread.jpg
-value=3.214
+value=3.161
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph

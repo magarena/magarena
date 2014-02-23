@@ -1,7 +1,7 @@
 name=Dawnstrider
 url=http://magiccards.info/mm/en/237.html
 image=http://mtgimage.com/card/dawnstrider.jpg
-value=4.038
+value=4.061
 rarity=R
 type=Creature
 subtype=Dryad,Spellshaper

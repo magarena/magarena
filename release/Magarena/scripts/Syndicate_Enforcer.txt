@@ -1,7 +1,7 @@
 name=Syndicate Enforcer
 url=http://magiccards.info/gtc/en/80.html
 image=http://mtgimage.com/card/syndicate%20enforcer.jpg
-value=2.384
+value=2.443
 rarity=C
 type=Creature
 subtype=Human,Rogue

@@ -1,7 +1,7 @@
 name=Boon of Erebos
 url=http://magiccards.info/ths/en/80.html
 image=http://mtgimage.com/card/boon%20of%20erebos.jpg
-value=3.538
+value=3.351
 rarity=C
 type=Instant
 cost={B}

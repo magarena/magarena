@@ -1,7 +1,7 @@
 name=Turntimber Ranger
 url=http://magiccards.info/zen/en/191.html
 image=http://mtgimage.com/card/turntimber%20ranger.jpg
-value=4.144
+value=4.148
 rarity=R
 type=Creature
 subtype=Elf,Scout,Ally

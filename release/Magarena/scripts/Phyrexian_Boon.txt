@@ -1,7 +1,7 @@
 name=Phyrexian Boon
 url=http://magiccards.info/ai/en/22.html
 image=http://mtgimage.com/card/phyrexian%20boon.jpg
-value=3.63
+value=3.630
 rarity=C
 type=Enchantment
 subtype=Aura

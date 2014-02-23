@@ -1,7 +1,7 @@
 name=Phyrexian Negator
 url=http://magiccards.info/pvc/en/1.html
 image=http://mtgimage.com/card/phyrexian%20negator.jpg
-value=3.656
+value=3.697
 rarity=M
 type=Creature
 subtype=Horror

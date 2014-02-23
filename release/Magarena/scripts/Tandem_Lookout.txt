@@ -1,7 +1,7 @@
 name=Tandem Lookout
 url=http://magiccards.info/avr/en/80.html
 image=http://mtgimage.com/card/tandem%20lookout.jpg
-value=3.802
+value=3.810
 rarity=U
 type=Creature
 subtype=Human,Scout

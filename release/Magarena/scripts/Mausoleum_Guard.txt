@@ -1,7 +1,7 @@
 name=Mausoleum Guard
 url=http://magiccards.info/isd/en/20.html
 image=http://mtgimage.com/card/mausoleum%20guard.jpg
-value=3.611
+value=3.364
 rarity=U
 type=Creature
 subtype=Human,Scout

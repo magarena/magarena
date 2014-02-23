@@ -1,7 +1,7 @@
 name=Ali from Cairo
 url=http://magiccards.info/an/en/44.html
 image=http://mtgimage.com/card/ali%20from%20cairo.jpg
-value=4.156
+value=4.133
 rarity=R
 type=Creature
 subtype=Human

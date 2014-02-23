@@ -1,7 +1,7 @@
 name=Dryad's Favor
 url=http://magiccards.info/m11/en/169.html
 image=http://mtgimage.com/card/dryad%27s%20favor.jpg
-value=1.243
+value=1.240
 rarity=C
 type=Enchantment
 subtype=Aura

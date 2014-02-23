@@ -1,7 +1,7 @@
 name=Vigilance
 url=http://magiccards.info/chk/en/49.html
 image=http://mtgimage.com/card/vigilance.jpg
-value=2.605
+value=2.578
 rarity=C
 type=Enchantment
 subtype=Aura

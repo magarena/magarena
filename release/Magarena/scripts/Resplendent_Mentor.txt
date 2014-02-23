@@ -1,7 +1,7 @@
 name=Resplendent Mentor
 url=http://magiccards.info/shm/en/19.html
 image=http://mtgimage.com/card/resplendent%20mentor.jpg
-value=2.600
+value=2.569
 rarity=U
 type=Creature
 subtype=Kithkin,Cleric

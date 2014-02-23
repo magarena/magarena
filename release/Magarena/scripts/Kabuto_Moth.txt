@@ -1,7 +1,7 @@
 name=Kabuto Moth
 url=http://magiccards.info/chk/en/20.html
 image=http://mtgimage.com/card/kabuto%20moth.jpg
-value=3.152
+value=3.147
 rarity=C
 type=Creature
 subtype=Spirit

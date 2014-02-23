@@ -1,7 +1,7 @@
 name=Disciple of Tevesh Szat
 url=http://magiccards.info/cs/en/55.html
 image=http://mtgimage.com/card/disciple%20of%20tevesh%20szat.jpg
-value=2.961
+value=3.000
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=Flensermite
 url=http://magiccards.info/mbs/en/41.html
 image=http://mtgimage.com/card/flensermite.jpg
-value=3.024
+value=3.031
 ability=infect;lifelink
 rarity=C
 type=Creature

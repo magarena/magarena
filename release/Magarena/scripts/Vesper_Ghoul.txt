@@ -1,7 +1,7 @@
 name=Vesper Ghoul
 url=http://magiccards.info/di/en/57.html
 image=http://mtgimage.com/card/vesper%20ghoul.jpg
-value=1.986
+value=1.946
 rarity=C
 type=Creature
 subtype=Zombie,Druid

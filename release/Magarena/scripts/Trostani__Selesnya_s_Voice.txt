@@ -1,7 +1,7 @@
 name=Trostani, Selesnya's Voice
 url=http://magiccards.info/rtr/en/206.html
 image=http://mtgimage.com/card/trostani%2C%20selesnya%27s%20voice.jpg
-value=4.012
+value=3.985
 rarity=M
 type=Legendary,Creature
 subtype=Dryad

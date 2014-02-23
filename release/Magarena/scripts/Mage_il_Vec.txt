@@ -1,7 +1,7 @@
 name=Mage il-Vec
 url=http://magiccards.info/ex/en/86.html
 image=http://mtgimage.com/card/mage%20il-vec.jpg
-value=1.42
+value=1.478
 rarity=C
 type=Creature
 subtype=Human,Wizard

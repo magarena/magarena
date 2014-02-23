@@ -1,7 +1,7 @@
 name=Vile Rebirth
 url=http://magiccards.info/m14/en/121.html
 image=http://mtgimage.com/card/vile%20rebirth.jpg
-value=3.62
+value=3.571
 rarity=C
 type=Instant
 cost={B}

@@ -1,7 +1,7 @@
 name=Hill Giant
 url=http://magiccards.info/dpa/en/47.html
 image=http://mtgimage.com/card/hill%20giant.jpg
-value=2.000
+value=1.988
 rarity=C
 type=Creature
 subtype=Giant

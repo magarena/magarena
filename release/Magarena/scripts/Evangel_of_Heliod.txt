@@ -1,7 +1,7 @@
 name=Evangel of Heliod
 url=http://magiccards.info/ths/en/11.html
 image=http://mtgimage.com/card/evangel%20of%20heliod.jpg
-value=3.471
+value=3.429
 rarity=U
 type=Creature
 subtype=Human,Cleric

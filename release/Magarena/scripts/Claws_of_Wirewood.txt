@@ -1,7 +1,7 @@
 name=Claws of Wirewood
 url=http://magiccards.info/sc/en/114.html
 image=http://mtgimage.com/card/claws%20of%20wirewood.jpg
-value=3.172
+value=3.091
 rarity=U
 type=Sorcery
 cost={3}{G}

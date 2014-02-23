@@ -1,7 +1,7 @@
 name=Squirrel Mob
 url=http://magiccards.info/od/en/273.html
 image=http://mtgimage.com/card/squirrel%20mob.jpg
-value=4.377
+value=4.380
 rarity=R
 type=Creature
 subtype=Squirrel

@@ -1,7 +1,7 @@
 name=Battlewise Aven
 url=http://magiccards.info/ju/en/4.html
 image=http://mtgimage.com/card/battlewise%20aven.jpg
-value=2.75
+value=2.710
 rarity=C
 type=Creature
 subtype=Bird,Soldier

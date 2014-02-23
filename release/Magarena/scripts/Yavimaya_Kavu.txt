@@ -1,7 +1,7 @@
 name=Yavimaya Kavu
 url=http://magiccards.info/in/en/291.html
 image=http://mtgimage.com/card/yavimaya%20kavu.jpg
-value=3.357
+value=3.375
 rarity=U
 type=Creature
 subtype=Kavu

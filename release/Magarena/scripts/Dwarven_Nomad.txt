@@ -1,7 +1,7 @@
 name=Dwarven Nomad
 url=http://magiccards.info/mr/en/170.html
 image=http://mtgimage.com/card/dwarven%20nomad.jpg
-value=3.106
+value=3.029
 rarity=C
 type=Creature
 subtype=Dwarf,Nomad

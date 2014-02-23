@@ -1,7 +1,7 @@
 name=Throne of Empires
 url=http://magiccards.info/m12/en/221.html
 image=http://mtgimage.com/card/throne%20of%20empires.jpg
-value=3.712
+value=3.735
 rarity=R
 type=Artifact
 cost={4}

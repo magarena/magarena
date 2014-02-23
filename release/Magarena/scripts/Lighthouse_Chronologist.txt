@@ -1,7 +1,7 @@
 name=Lighthouse Chronologist
 url=http://magiccards.info/roe/en/75.html
 image=http://mtgimage.com/card/lighthouse%20chronologist.jpg
-value=4.348
+value=4.328
 rarity=M
 type=Creature
 subtype=Human,Wizard

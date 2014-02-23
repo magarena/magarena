@@ -1,7 +1,7 @@
 name=Vastwood Gorger
 url=http://magiccards.info/m12/en/200.html
 image=http://mtgimage.com/card/vastwood%20gorger.jpg
-value=2.368
+value=2.400
 rarity=C
 type=Creature
 subtype=Wurm

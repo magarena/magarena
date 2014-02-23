@@ -1,7 +1,7 @@
 name=Stern Mentor
 url=http://magiccards.info/avr/en/77.html
 image=http://mtgimage.com/card/stern%20mentor.jpg
-value=2.531
+value=2.515
 rarity=U
 type=Creature
 subtype=Human,Wizard

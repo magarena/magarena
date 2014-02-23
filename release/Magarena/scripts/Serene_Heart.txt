@@ -1,7 +1,7 @@
 name=Serene Heart
 url=http://magiccards.info/mr/en/140.html
 image=http://mtgimage.com/card/serene%20heart.jpg
-value=3.017
+value=3.109
 rarity=C
 type=Instant
 cost={1}{G}

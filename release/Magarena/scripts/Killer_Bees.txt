@@ -1,7 +1,7 @@
 name=Killer Bees
 url=http://magiccards.info/me3/en/126.html
 image=http://mtgimage.com/card/killer%20bees.jpg
-value=4.134
+value=4.138
 rarity=U
 type=Creature
 subtype=Insect

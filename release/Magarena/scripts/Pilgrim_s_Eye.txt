@@ -1,7 +1,7 @@
 name=Pilgrim's Eye
 url=http://magiccards.info/c13/en/253.html
 image=http://mtgimage.com/card/pilgrim's%20eye.jpg
-value=4.062
+value=3.542
 rarity=C
 type=Artifact,Creature
 subtype=Thopter

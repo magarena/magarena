@@ -1,7 +1,7 @@
 name=Fade into Antiquity
 url=http://magiccards.info/ths/en/157.html
 image=http://mtgimage.com/card/fade%20into%20antiquity.jpg
-value=3.471
+value=3.512
 rarity=C
 type=Sorcery
 cost={2}{G}

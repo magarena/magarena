@@ -1,7 +1,7 @@
 name=Falkenrath Marauders
 url=http://magiccards.info/isd/en/141.html
 image=http://mtgimage.com/card/falkenrath%20marauders.jpg
-value=3.893
+value=3.856
 rarity=R
 type=Creature
 subtype=Vampire,Warrior

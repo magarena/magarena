@@ -1,7 +1,7 @@
 name=Vapor Snag
 url=http://magiccards.info/ddh/en/58.html
 image=http://mtgimage.com/card/vapor%20snag.jpg
-value=3.939
+value=3.864
 removal=2
 rarity=C
 type=Instant

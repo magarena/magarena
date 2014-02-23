@@ -1,7 +1,7 @@
 name=Teeka's Dragon
 url=http://magiccards.info/mr/en/285.html
 image=http://mtgimage.com/card/teeka%27s%20dragon.jpg
-value=3.908
+value=3.917
 rarity=R
 type=Artifact,Creature
 subtype=Dragon

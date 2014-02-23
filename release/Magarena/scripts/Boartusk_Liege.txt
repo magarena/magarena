@@ -1,7 +1,7 @@
 name=Boartusk Liege
 url=http://magiccards.info/shm/en/202.html
 image=http://mtgimage.com/card/boartusk%20liege.jpg
-value=4.007
+value=4.020
 rarity=R
 type=Creature
 subtype=Goblin,Knight

@@ -1,7 +1,7 @@
 name=Stream of Unconsciousness
 url=http://magiccards.info/mt/en/52.html
 image=http://mtgimage.com/card/stream%20of%20unconsciousness.jpg
-value=2.967
+value=2.926
 rarity=C
 type=Tribal,Instant
 subtype=Wizard

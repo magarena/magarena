@@ -1,7 +1,7 @@
 name=Seedborn Muse
 url=http://magiccards.info/10e/en/296.html
 image=http://mtgimage.com/card/seedborn%20muse.jpg
-value=4.489
+value=4.448
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,7 +1,7 @@
 name=Foundry Street Denizen
 url=http://magiccards.info/gtc/en/92.html
 image=http://mtgimage.com/card/foundry%20street%20denizen.jpg
-value=2.851
+value=3.000
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

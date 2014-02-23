@@ -1,7 +1,7 @@
 name=Lightning Talons
 url=http://magiccards.info/ala/en/107.html
 image=http://mtgimage.com/card/lightning%20talons.jpg
-value=3.150
+value=3.023
 rarity=C
 type=Enchantment
 subtype=Aura

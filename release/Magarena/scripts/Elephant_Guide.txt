@@ -1,7 +1,7 @@
 name=Elephant Guide
 url=http://magiccards.info/gvl/en/18.html
 image=http://mtgimage.com/card/elephant%20guide.jpg
-value=4.444
+value=4.438
 rarity=U
 type=Enchantment
 subtype=Aura

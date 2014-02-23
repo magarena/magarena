@@ -1,7 +1,7 @@
 name=Elvish Hunter
 url=http://magiccards.info/me2/en/157.html
 image=http://mtgimage.com/card/elvish%20hunter.jpg
-value=3.057
+value=3.042
 rarity=C
 type=Creature
 subtype=Elf,Archer

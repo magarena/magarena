@@ -1,7 +1,7 @@
 name=Cower in Fear
 url=http://magiccards.info/m13/en/84.html
 image=http://mtgimage.com/card/cower%20in%20fear.jpg
-value=2.663
+value=2.640
 rarity=U
 type=Instant
 cost={1}{B}{B}

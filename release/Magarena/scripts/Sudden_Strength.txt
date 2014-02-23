@@ -1,7 +1,7 @@
 name=Sudden Strength
 url=http://magiccards.info/ju/en/132.html
 image=http://mtgimage.com/card/sudden%20strength.jpg
-value=1.5
+value=1.500
 rarity=C
 type=Instant
 cost={3}{G}

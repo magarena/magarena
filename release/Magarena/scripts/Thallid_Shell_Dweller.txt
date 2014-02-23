@@ -1,7 +1,7 @@
 name=Thallid Shell-Dweller
 url=http://magiccards.info/ts/en/226.html
 image=http://mtgimage.com/card/thallid%20shell%2Ddweller.jpg
-value=3.867
+value=3.972
 rarity=C
 type=Creature
 subtype=Fungus

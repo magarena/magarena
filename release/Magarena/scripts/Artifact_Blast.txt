@@ -1,7 +1,7 @@
 name=Artifact Blast
 url=http://magiccards.info/aq/en/87.html
 image=http://mtgimage.com/card/artifact%20blast.jpg
-value=3.917
+value=3.880
 rarity=C
 type=Instant
 cost={R}

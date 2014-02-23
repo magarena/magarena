@@ -1,7 +1,7 @@
 name=Elvish Hexhunter
 url=http://magiccards.info/shm/en/226.html
 image=http://mtgimage.com/card/elvish%20hexhunter.jpg
-value=4.032
+value=4.038
 rarity=C
 type=Creature
 subtype=Elf,Shaman

@@ -1,7 +1,7 @@
 name=Divine Favor
 url=http://magiccards.info/m12/en/14.html
 image=http://mtgimage.com/card/divine%20favor.jpg
-value=2.929
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura

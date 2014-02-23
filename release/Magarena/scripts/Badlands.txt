@@ -1,7 +1,7 @@
 name=Badlands
 url=http://magiccards.info/me4/en/241.html
 image=http://mtgimage.com/card/badlands.jpg
-value=4.623
+value=4.629
 rarity=R
 type=Land
 subtype=Swamp,Mountain

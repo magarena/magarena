@@ -1,7 +1,7 @@
 name=Spell Contortion
 url=http://magiccards.info/wwk/en/38.html
 image=http://mtgimage.com/card/spell%20contortion.jpg
-value=2.466
+value=2.500
 rarity=U
 type=Instant
 cost={2}{U}

@@ -1,7 +1,7 @@
 name=Llanowar Druid
 url=http://magiccards.info/wl/en/75.html
 image=http://mtgimage.com/card/llanowar%20druid.jpg
-value=4.088
+value=4.110
 rarity=C
 type=Creature
 subtype=Elf,Druid

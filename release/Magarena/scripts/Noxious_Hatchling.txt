@@ -1,7 +1,7 @@
 name=Noxious Hatchling
 url=http://magiccards.info/eve/en/124.html
 image=http://mtgimage.com/card/noxious%20hatchling.jpg
-value=3.551
+value=3.524
 rarity=U
 type=Creature
 subtype=Elemental

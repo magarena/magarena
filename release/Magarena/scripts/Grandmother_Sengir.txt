@@ -1,7 +1,7 @@
 name=Grandmother Sengir
 url=http://magiccards.info/hl/en/13.html
 image=http://mtgimage.com/card/grandmother%20sengir.jpg
-value=2.733
+value=2.694
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

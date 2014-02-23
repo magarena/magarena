@@ -1,7 +1,7 @@
 name=Brass Gnat
 url=http://magiccards.info/ts/en/249.html
 image=http://mtgimage.com/card/brass%20gnat.jpg
-value=1.708
+value=1.700
 rarity=C
 type=Artifact,Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Deserted Temple
 url=http://magiccards.info/od/en/320.html
 image=http://mtgimage.com/card/deserted%20temple.jpg
-value=4.009
+value=4.057
 rarity=R
 type=Land
 ability=tap add mana {1};pay {1},{T}: Untap target land.

@@ -1,7 +1,7 @@
 name=Boros Elite
 url=http://magiccards.info/gtc/en/7.html
 image=http://mtgimage.com/card/boros%20elite.jpg
-value=3.351
+value=3.360
 rarity=U
 type=Creature
 subtype=Human,Soldier

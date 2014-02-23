@@ -1,7 +1,7 @@
 name=Tithe Drinker
 url=http://magiccards.info/dgm/en/109.html
 image=http://mtgimage.com/card/tithe%20drinker.jpg
-value=3.960
+value=3.782
 rarity=C
 type=Creature
 subtype=Vampire

@@ -1,7 +1,7 @@
 name=Cave People
 url=http://magiccards.info/5e/en/215.html
 image=http://mtgimage.com/card/cave%20people.jpg
-value=2.896
+value=2.926
 rarity=U
 type=Creature
 subtype=Human

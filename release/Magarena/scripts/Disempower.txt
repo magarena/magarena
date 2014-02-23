@@ -1,7 +1,7 @@
 name=Disempower
 url=http://magiccards.info/mr/en/213.html
 image=http://mtgimage.com/card/disempower.jpg
-value=3.372
+value=3.420
 rarity=C
 type=Instant
 cost={1}{W}

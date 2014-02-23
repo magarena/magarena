@@ -1,7 +1,7 @@
 name=Yawgmoth's Edict
 url=http://magiccards.info/7e/en/171.html
 image=http://mtgimage.com/card/yawgmoth's%20edict.jpg
-value=3.569
+value=3.550
 rarity=U
 type=Enchantment
 cost={1}{B}

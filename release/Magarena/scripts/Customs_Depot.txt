@@ -1,7 +1,7 @@
 name=Customs Depot
 url=http://magiccards.info/mm/en/71.html
 image=http://mtgimage.com/card/customs%20depot.jpg
-value=3.115
+value=3.161
 rarity=U
 type=Enchantment
 cost={1}{U}

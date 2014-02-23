@@ -1,7 +1,7 @@
 name=Dragon Engine
 url=http://magiccards.info/me4/en/197.html
 image=http://mtgimage.com/card/dragon%20engine.jpg
-value=3.167
+value=3.000
 rarity=C
 type=Artifact,Creature
 subtype=Construct

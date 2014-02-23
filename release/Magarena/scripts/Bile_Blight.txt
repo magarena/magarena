@@ -1,7 +1,7 @@
 name=Bile Blight
 url=http://magiccards.info/bng/en/61.html
 image=http://mtgimage.com/card/bile%20blight.jpg
-value=4.042
+value=3.844
 rarity=U
 type=Instant
 cost={B}{B}

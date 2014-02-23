@@ -1,7 +1,7 @@
 name=Dreadbore
 url=http://magiccards.info/rtr/en/157.html
 image=http://mtgimage.com/card/dreadbore.jpg
-value=3.938
+value=3.958
 rarity=R
 type=Sorcery
 cost={B}{R}

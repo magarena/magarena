@@ -1,7 +1,7 @@
 name=Gemstone Mine
 url=http://magiccards.info/tsts/en/119.html
 image=http://mtgimage.com/card/gemstone%20mine.jpg
-value=4.612
+value=4.619
 rarity=U
 type=Land
 mana=b3g3r3u3w3

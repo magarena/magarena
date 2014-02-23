@@ -1,7 +1,7 @@
 name=Elspeth Tirel
 url=http://magiccards.info/som/en/6.html
 image=http://mtgimage.com/card/elspeth%20tirel.jpg
-value=4.031
+value=4.023
 rarity=M
 type=Planeswalker
 subtype=Elspeth

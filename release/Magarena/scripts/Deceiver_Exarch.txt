@@ -1,7 +1,7 @@
 name=Deceiver Exarch
 url=http://magiccards.info/nph/en/33.html
 image=http://mtgimage.com/card/deceiver%20exarch.jpg
-value=3.812
+value=3.615
 rarity=U
 type=Creature
 subtype=Cleric

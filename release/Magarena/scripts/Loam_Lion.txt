@@ -1,7 +1,7 @@
 name=Loam Lion
 url=http://magiccards.info/ddh/en/5.html
 image=http://mtgimage.com/card/loam%20lion.jpg
-value=4.348
+value=4.365
 rarity=U
 type=Creature
 subtype=Cat

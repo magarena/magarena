@@ -1,7 +1,7 @@
 name=Hornet Harasser
 url=http://magiccards.info/lw/en/118.html
 image=http://mtgimage.com/card/hornet%20harasser.jpg
-value=2.615
+value=2.611
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

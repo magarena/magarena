@@ -1,7 +1,7 @@
 name=Smolder Initiate
 url=http://magiccards.info/shm/en/78.html
 image=http://mtgimage.com/card/smolder%20initiate.jpg
-value=2.987
+value=3.038
 rarity=C
 type=Creature
 subtype=Elemental,Shaman

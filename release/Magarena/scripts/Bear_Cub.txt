@@ -1,7 +1,7 @@
 name=Bear Cub
 url=http://magiccards.info/po2/en/63.html
 image=http://mtgimage.com/card/bear%20cub.jpg
-value=4.414
+value=4.388
 rarity=C
 type=Creature
 subtype=Bear

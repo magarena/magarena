@@ -1,7 +1,7 @@
 name=Relic of Progenitus
 url=http://magiccards.info/mma/en/213.html
 image=http://mtgimage.com/card/relic%20of%20progenitus.jpg
-value=4.271
+value=4.456
 rarity=C
 type=Artifact
 cost={1}

@@ -1,7 +1,7 @@
 name=Steam Spitter
 url=http://magiccards.info/cs/en/124.html
 image=http://mtgimage.com/card/steam%20spitter.jpg
-value=1.929
+value=1.903
 rarity=U
 type=Creature
 subtype=Spider

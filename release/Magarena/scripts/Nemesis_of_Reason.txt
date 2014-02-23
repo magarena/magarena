@@ -1,7 +1,7 @@
 name=Nemesis of Reason
 url=http://magiccards.info/arb/en/28.html
 image=http://mtgimage.com/card/nemesis%20of%20reason.jpg
-value=4.291
+value=4.272
 rarity=R
 type=Creature
 subtype=Leviathan,Horror

@@ -1,7 +1,7 @@
 name=Vigean Hydropon
 url=http://magiccards.info/di/en/135.html
 image=http://mtgimage.com/card/vigean%20hydropon.jpg
-value=3.3
+value=3.348
 rarity=C
 type=Creature
 subtype=Plant,Mutant

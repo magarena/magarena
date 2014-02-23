@@ -1,7 +1,7 @@
 name=Imposing Sovereign
 url=http://magiccards.info/m14/en/22.html
 image=http://mtgimage.com/card/imposing%20sovereign.jpg
-value=4.163
+value=3.646
 rarity=R
 type=Creature
 subtype=Human

@@ -1,7 +1,7 @@
 name=Cackling Witch
 url=http://magiccards.info/mm/en/119.html
 image=http://mtgimage.com/card/cackling%20witch.jpg
-value=3.037
+value=3.018
 rarity=U
 type=Creature
 subtype=Human,Spellshaper

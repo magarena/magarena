@@ -1,7 +1,7 @@
 name=Walking Archive
 url=http://magiccards.info/di/en/169.html
 image=http://mtgimage.com/card/walking%20archive.jpg
-value=3.369
+value=3.389
 rarity=R
 type=Artifact,Creature
 subtype=Golem

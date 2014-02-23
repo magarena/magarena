@@ -1,7 +1,7 @@
 name=Tragic Slip
 url=http://magiccards.info/dka/en/76.html
 image=http://mtgimage.com/card/tragic%20slip.jpg
-value=4.363
+value=4.273
 removal=2
 rarity=C
 type=Instant

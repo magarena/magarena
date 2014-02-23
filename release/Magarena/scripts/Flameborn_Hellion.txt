@@ -1,7 +1,7 @@
 name=Flameborn Hellion
 url=http://magiccards.info/som/en/89.html
 image=http://mtgimage.com/card/flameborn%20hellion.jpg
-value=2.938
+value=2.925
 ability=haste;attacks each turn if able
 rarity=C
 type=Creature

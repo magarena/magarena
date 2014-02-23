@@ -1,7 +1,7 @@
 name=Temporal Eddy
 url=http://magiccards.info/ts/en/85.html
 image=http://mtgimage.com/card/temporal%20eddy.jpg
-value=2.562
+value=2.580
 rarity=C
 type=Sorcery
 cost={2}{U}{U}

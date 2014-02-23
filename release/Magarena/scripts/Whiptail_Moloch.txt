@@ -1,7 +1,7 @@
 name=Whiptail Moloch
 url=http://magiccards.info/di/en/79.html
 image=http://mtgimage.com/card/whiptail%20moloch.jpg
-value=1.278
+value=1.311
 rarity=C
 type=Creature
 subtype=Lizard

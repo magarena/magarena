@@ -1,7 +1,7 @@
 name=Boneshard Slasher
 url=http://magiccards.info/tr/en/50.html
 image=http://mtgimage.com/card/boneshard%20slasher.jpg
-value=2.894
+value=2.882
 rarity=U
 type=Creature
 subtype=Horror

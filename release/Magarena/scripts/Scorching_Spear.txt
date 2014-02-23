@@ -1,7 +1,7 @@
 name=Scorching Spear
 url=http://magiccards.info/st/en/116.html
 image=http://mtgimage.com/card/scorching%20spear.jpg
-value=0.923
+value=0.921
 rarity=C
 type=Sorcery
 cost={R}

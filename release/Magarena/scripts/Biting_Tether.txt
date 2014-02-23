@@ -1,7 +1,7 @@
 name=Biting Tether
 url=http://magiccards.info/shm/en/29.html
 image=http://mtgimage.com/card/biting%20tether.jpg
-value=2.554
+value=2.564
 rarity=U
 type=Enchantment
 subtype=Aura

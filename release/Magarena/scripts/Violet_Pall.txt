@@ -1,7 +1,7 @@
 name=Violet Pall
 url=http://magiccards.info/mt/en/81.html
 image=http://mtgimage.com/card/violet%20pall.jpg
-value=2.750
+value=2.795
 rarity=C
 type=Tribal,Instant
 subtype=Faerie

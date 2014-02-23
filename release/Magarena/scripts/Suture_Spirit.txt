@@ -1,7 +1,7 @@
 name=Suture Spirit
 url=http://magiccards.info/eve/en/16.html
 image=http://mtgimage.com/card/suture%20spirit.jpg
-value=2.936
+value=2.979
 rarity=U
 type=Creature
 subtype=Spirit

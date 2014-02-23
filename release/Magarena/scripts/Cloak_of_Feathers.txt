@@ -1,7 +1,7 @@
 name=Cloak of Feathers
 url=http://magiccards.info/po/en/45.html
 image=http://mtgimage.com/card/cloak%20of%20feathers.jpg
-value=3.536
+value=3.550
 rarity=C
 type=Sorcery
 cost={U}

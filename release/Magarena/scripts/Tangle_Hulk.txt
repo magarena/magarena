@@ -1,7 +1,7 @@
 name=Tangle Hulk
 url=http://magiccards.info/mbs/en/139.html
 image=http://mtgimage.com/card/tangle%20hulk.jpg
-value=2.360
+value=2.378
 rarity=C
 type=Artifact,Creature
 subtype=Beast

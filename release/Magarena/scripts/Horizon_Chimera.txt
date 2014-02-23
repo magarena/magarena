@@ -1,7 +1,7 @@
 name=Horizon Chimera
 url=http://magiccards.info/ths/en/194.html
 image=http://mtgimage.com/card/horizon%20chimera.jpg
-value=4.071
+value=3.566
 rarity=U
 type=Creature
 subtype=Chimera

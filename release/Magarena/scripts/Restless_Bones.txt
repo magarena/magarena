@@ -1,7 +1,7 @@
 name=Restless Bones
 url=http://magiccards.info/gp/en/58.html
 image=http://mtgimage.com/card/restless%20bones.jpg
-value=1.649
+value=1.645
 rarity=C
 type=Creature
 subtype=Skeleton

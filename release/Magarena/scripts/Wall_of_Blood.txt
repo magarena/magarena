@@ -1,7 +1,7 @@
 name=Wall of Blood
 url=http://magiccards.info/mi/en/82.html
 image=http://mtgimage.com/card/wall%20of%20blood.jpg
-value=3.478
+value=3.435
 rarity=U
 type=Creature
 subtype=Wall

@@ -1,7 +1,7 @@
 name=Fanatical Devotion
 url=http://magiccards.info/ne/en/8.html
 image=http://mtgimage.com/card/fanatical%20devotion.jpg
-value=3.227
+value=3.217
 rarity=C
 type=Enchantment
 cost={2}{W}

@@ -1,7 +1,7 @@
 name=Corpse Dance
 url=http://magiccards.info/tp/en/10.html
 image=http://mtgimage.com/card/corpse%20dance.jpg
-value=4.041
+value=4.060
 rarity=R
 type=Instant
 cost={2}{B}

@@ -1,7 +1,7 @@
 name=Regeneration
 url=http://magiccards.info/5e/en/183.html
 image=http://mtgimage.com/card/regeneration.jpg
-value=3.018
+value=3.034
 rarity=U
 type=Enchantment
 subtype=Aura

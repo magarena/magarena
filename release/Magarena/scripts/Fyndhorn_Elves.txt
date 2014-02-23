@@ -1,7 +1,7 @@
 name=Fyndhorn Elves
 url=http://magiccards.info/med/en/118.html
 image=http://mtgimage.com/card/fyndhorn%20elves.jpg
-value=4.093
+value=4.074
 rarity=C
 type=Creature
 subtype=Elf,Druid

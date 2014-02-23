@@ -1,7 +1,7 @@
 name=Hundroog
 url=http://magiccards.info/le/en/129.html
 image=http://mtgimage.com/card/hundroog.jpg
-value=1.300
+value=1.327
 rarity=C
 type=Creature
 subtype=Beast

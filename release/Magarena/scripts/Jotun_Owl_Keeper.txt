@@ -1,7 +1,7 @@
 name=Jotun Owl Keeper
 url=http://magiccards.info/cs/en/9.html
 image=http://mtgimage.com/card/jotun%20owl%20keeper.jpg
-value=3.822
+value=3.783
 rarity=U
 type=Creature
 subtype=Giant

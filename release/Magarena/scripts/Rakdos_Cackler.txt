@@ -1,7 +1,7 @@
 name=Rakdos Cackler
 url=http://magiccards.info/rtr/en/220.html
 image=http://mtgimage.com/card/rakdos%20cackler.jpg
-value=4.245
+value=4.042
 rarity=U
 type=Creature
 subtype=Devil

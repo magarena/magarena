@@ -1,7 +1,7 @@
 name=Keldon Champion
 url=http://magiccards.info/pch/en/58.html
 image=http://mtgimage.com/card/keldon%20champion.jpg
-value=4.414
+value=3.647
 rarity=U
 type=Creature
 subtype=Human,Barbarian

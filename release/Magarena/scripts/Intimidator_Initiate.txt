@@ -1,7 +1,7 @@
 name=Intimidator Initiate
 url=http://magiccards.info/shm/en/96.html
 image=http://mtgimage.com/card/intimidator%20initiate.jpg
-value=3.189
+value=3.110
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

@@ -1,7 +1,7 @@
 name=Trigon of Rage
 url=http://magiccards.info/som/en/216.html
 image=http://mtgimage.com/card/trigon%20of%20rage.jpg
-value=3.057
+value=3.000
 rarity=U
 type=Artifact
 cost={2}

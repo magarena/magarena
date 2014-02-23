@@ -1,7 +1,7 @@
 name=Plaxcaster Frogling
 url=http://magiccards.info/di/en/123.html
 image=http://mtgimage.com/card/plaxcaster%20frogling.jpg
-value=4.009
+value=4.038
 rarity=U
 type=Creature
 subtype=Frog,Mutant

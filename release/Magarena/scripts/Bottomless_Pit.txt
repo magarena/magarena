@@ -1,7 +1,7 @@
 name=Bottomless Pit
 url=http://magiccards.info/sh/en/1.html
 image=http://mtgimage.com/card/bottomless%20pit.jpg
-value=3.744
+value=3.732
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

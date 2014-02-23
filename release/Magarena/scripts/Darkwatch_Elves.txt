@@ -1,7 +1,7 @@
 name=Darkwatch Elves
 url=http://magiccards.info/ul/en/99.html
 image=http://mtgimage.com/card/darkwatch%20elves.jpg
-value=3.404
+value=3.389
 rarity=U
 type=Creature
 subtype=Elf

@@ -1,7 +1,7 @@
 name=Cloudcrown Oak
 url=http://magiccards.info/lw/en/201.html
 image=http://mtgimage.com/card/cloudcrown%20oak.jpg
-value=3.058
+value=3.067
 ability=reach
 rarity=C
 type=Creature

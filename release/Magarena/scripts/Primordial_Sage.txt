@@ -1,7 +1,7 @@
 name=Primordial Sage
 url=http://magiccards.info/rav/en/177.html
 image=http://mtgimage.com/card/primordial%20sage.jpg
-value=4.066
+value=4.024
 rarity=R
 type=Creature
 subtype=Spirit

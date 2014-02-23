@@ -1,7 +1,7 @@
 name=Tel-Jilad Lifebreather
 url=http://magiccards.info/5dn/en/96.html
 image=http://mtgimage.com/card/tel-jilad%20lifebreather.jpg
-value=1.257
+value=1.250
 rarity=C
 type=Creature
 subtype=Troll,Shaman

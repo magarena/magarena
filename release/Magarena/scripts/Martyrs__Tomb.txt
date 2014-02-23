@@ -1,7 +1,7 @@
 name=Martyrs' Tomb
 url=http://magiccards.info/ap/en/110.html
 image=http://mtgimage.com/card/martyrs'%20tomb.jpg
-value=1.307
+value=1.333
 rarity=U
 type=Enchantment
 cost={2}{W}{B}

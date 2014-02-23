@@ -1,7 +1,7 @@
 name=Lay of the Land
 url=http://magiccards.info/m14/en/183.html
 image=http://mtgimage.com/card/lay%20of%20the%20land.jpg
-value=2.200
+value=2.346
 rarity=C
 type=Sorcery
 cost={G}

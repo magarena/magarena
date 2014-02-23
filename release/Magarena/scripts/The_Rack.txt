@@ -1,7 +1,7 @@
 name=The Rack
 url=http://magiccards.info/tsts/en/113.html
 image=http://mtgimage.com/card/the%20rack.jpg
-value=4.619
+value=4.538
 rarity=U
 type=Artifact
 cost={1}

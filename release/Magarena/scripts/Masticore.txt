@@ -1,7 +1,7 @@
 name=Masticore
 url=http://magiccards.info/fvr/en/7.html
 image=http://mtgimage.com/card/masticore.jpg
-value=4.211
+value=4.214
 rarity=M
 type=Artifact,Creature
 subtype=Masticore

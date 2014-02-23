@@ -1,7 +1,7 @@
 name=Orzhov Cluestone
 url=http://magiccards.info/dgm/en/142.html
 image=http://mtgimage.com/card/orzhov%20cluestone.jpg
-value=2.617
+value=2.629
 rarity=C
 type=Artifact
 cost={3}

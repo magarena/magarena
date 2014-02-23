@@ -1,7 +1,7 @@
 name=Reliquary Tower
 url=http://magiccards.info/m13/en/227.html
 image=http://mtgimage.com/card/reliquary%20tower.jpg
-value=3.35
+value=3.494
 rarity=U
 type=Land
 ability=tap add mana {1}

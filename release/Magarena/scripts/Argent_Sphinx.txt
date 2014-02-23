@@ -1,7 +1,7 @@
 name=Argent Sphinx
 url=http://magiccards.info/som/en/28.html
 image=http://mtgimage.com/card/argent%20sphinx.jpg
-value=3.796
+value=3.797
 rarity=R
 type=Creature
 subtype=Sphinx

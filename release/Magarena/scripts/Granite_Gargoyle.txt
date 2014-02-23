@@ -1,7 +1,7 @@
 name=Granite Gargoyle
 url=http://magiccards.info/med/en/99.html
 image=http://mtgimage.com/card/granite%20gargoyle.jpg
-value=3.650
+value=3.627
 ability=flying;pay {R}: SN gets +0/+1 until end of turn.
 rarity=R
 type=Creature

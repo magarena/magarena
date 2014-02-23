@@ -1,7 +1,7 @@
 name=Fire Whip
 url=http://magiccards.info/tsts/en/63.html
 image=http://mtgimage.com/card/fire%20whip.jpg
-value=4.21
+value=4.206
 rarity=C
 type=Enchantment
 subtype=Aura

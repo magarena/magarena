@@ -1,7 +1,7 @@
 name=Heroes' Reunion
 url=http://magiccards.info/ddg/en/29.html
 image=http://mtgimage.com/card/heroes%27%20reunion.jpg
-value=3.776
+value=3.725
 rarity=U
 type=Instant
 cost={G}{W}

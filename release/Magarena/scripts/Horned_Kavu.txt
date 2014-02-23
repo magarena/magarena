@@ -1,7 +1,7 @@
 name=Horned Kavu
 url=http://magiccards.info/ps/en/110.html
 image=http://mtgimage.com/card/horned%20kavu.jpg
-value=4.214
+value=4.274
 rarity=C
 type=Creature
 subtype=Kavu

@@ -1,7 +1,7 @@
 name=Disrupt
 url=http://magiccards.info/in/en/51.html
 image=http://mtgimage.com/card/disrupt.jpg
-value=4.317
+value=4.359
 rarity=U
 type=Instant
 cost={U}

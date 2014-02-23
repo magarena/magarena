@@ -1,7 +1,7 @@
 name=Chub Toad
 url=http://magiccards.info/5e/en/145.html
 image=http://mtgimage.com/card/chub%20toad.jpg
-value=2.729
+value=2.686
 rarity=C
 type=Creature
 subtype=Frog

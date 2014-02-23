@@ -1,7 +1,7 @@
 name=Nevinyrral's Disk
 url=http://magiccards.info/c13/en/248.html
 image=http://mtgimage.com/card/nevinyrral's%20disk.jpg
-value=4.617
+value=4.500
 rarity=M
 type=Artifact
 cost={4}

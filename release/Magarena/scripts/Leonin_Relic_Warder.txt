@@ -1,7 +1,7 @@
 name=Leonin Relic-Warder
 url=http://magiccards.info/mbs/en/10.html
 image=http://mtgimage.com/card/leonin%20relic%2Dwarder.jpg
-value=4.173
+value=4.295
 rarity=U
 type=Creature
 subtype=Cat,Cleric

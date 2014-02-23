@@ -1,7 +1,7 @@
 name=Utvara Scalper
 url=http://magiccards.info/di/en/76.html
 image=http://mtgimage.com/card/utvara%20scalper.jpg
-value=2.205
+value=2.171
 rarity=C
 type=Creature
 subtype=Goblin,Scout

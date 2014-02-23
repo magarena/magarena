@@ -1,7 +1,7 @@
 name=Icatian Priest
 url=http://magiccards.info/dvd/en/2.html
 image=http://mtgimage.com/card/icatian%20priest.jpg
-value=2.769
+value=2.714
 rarity=U
 type=Creature
 subtype=Human,Cleric

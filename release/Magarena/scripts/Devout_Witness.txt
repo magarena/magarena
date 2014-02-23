@@ -1,7 +1,7 @@
 name=Devout Witness
 url=http://magiccards.info/mm/en/17.html
 image=http://mtgimage.com/card/devout%20witness.jpg
-value=3.783
+value=3.823
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

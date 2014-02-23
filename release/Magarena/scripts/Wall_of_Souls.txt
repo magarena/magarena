@@ -1,7 +1,7 @@
 name=Wall of Souls
 url=http://magiccards.info/sh/en/25.html
 image=http://mtgimage.com/card/wall%20of%20souls.jpg
-value=4.245
+value=4.255
 rarity=U
 type=Creature
 subtype=Wall

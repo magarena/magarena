@@ -1,7 +1,7 @@
 name=Frightcrawler
 url=http://magiccards.info/od/en/138.html
 image=http://mtgimage.com/card/frightcrawler.jpg
-value=3.12
+value=3.058
 rarity=C
 type=Creature
 subtype=Horror

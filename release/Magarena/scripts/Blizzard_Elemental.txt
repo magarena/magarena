@@ -1,7 +1,7 @@
 name=Blizzard Elemental
 url=http://magiccards.info/bd/en/2.html
 image=http://mtgimage.com/card/blizzard%20elemental.jpg
-value=2.853
+value=2.857
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,7 +1,7 @@
 name=Stingmoggie
 url=http://magiccards.info/mt/en/106.html
 image=http://mtgimage.com/card/stingmoggie.jpg
-value=2.088
+value=2.159
 rarity=C
 type=Creature
 subtype=Elemental

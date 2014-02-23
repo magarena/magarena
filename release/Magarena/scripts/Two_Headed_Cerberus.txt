@@ -1,7 +1,7 @@
 name=Two-Headed Cerberus
 url=http://magiccards.info/ths/en/146.html
 image=http://mtgimage.com/card/two%2Dheaded%20cerberus.jpg
-value=3.424
+value=3.400
 rarity=C
 type=Creature
 subtype=Hound

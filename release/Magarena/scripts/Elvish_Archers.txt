@@ -1,7 +1,7 @@
 name=Elvish Archers
 url=http://magiccards.info/7e/en/239.html
 image=http://mtgimage.com/card/elvish%20archers.jpg
-value=3.759
+value=3.750
 ability=first strike
 rarity=R
 type=Creature

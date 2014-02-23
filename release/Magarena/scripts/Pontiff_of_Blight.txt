@@ -1,7 +1,7 @@
 name=Pontiff of Blight
 url=http://magiccards.info/dgm/en/27.html
 image=http://mtgimage.com/card/pontiff%20of%20blight.jpg
-value=4.117
+value=3.779
 rarity=R
 type=Creature
 subtype=Zombie,Cleric

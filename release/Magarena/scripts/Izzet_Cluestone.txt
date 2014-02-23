@@ -1,7 +1,7 @@
 name=Izzet Cluestone
 url=http://magiccards.info/dgm/en/141.html
 image=http://mtgimage.com/card/izzet%20cluestone.jpg
-value=3.113
+value=3.109
 rarity=C
 type=Artifact
 cost={3}

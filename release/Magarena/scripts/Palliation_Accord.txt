@@ -1,7 +1,7 @@
 name=Palliation Accord
 url=http://magiccards.info/di/en/122.html
 image=http://mtgimage.com/card/palliation%20accord.jpg
-value=3.547
+value=3.580
 rarity=U
 type=Enchantment
 cost={3}{W}{U}

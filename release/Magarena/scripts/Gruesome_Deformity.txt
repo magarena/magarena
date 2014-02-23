@@ -1,7 +1,7 @@
 name=Gruesome Deformity
 url=http://magiccards.info/isd/en/103.html
 image=http://mtgimage.com/card/gruesome%20deformity.jpg
-value=2.367
+value=2.352
 rarity=C
 type=Enchantment
 subtype=Aura

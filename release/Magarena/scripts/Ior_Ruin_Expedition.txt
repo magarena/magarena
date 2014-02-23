@@ -1,7 +1,7 @@
 name=Ior Ruin Expedition
 url=http://magiccards.info/zen/en/49.html
 image=http://mtgimage.com/card/ior%20ruin%20expedition.jpg
-value=3.088
+value=3.087
 rarity=C
 type=Enchantment
 cost={1}{U}

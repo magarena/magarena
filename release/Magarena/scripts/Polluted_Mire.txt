@@ -1,7 +1,7 @@
 name=Polluted Mire
 url=http://magiccards.info/pd3/en/26.html
 image=http://mtgimage.com/card/polluted%20mire.jpg
-value=3.400
+value=3.381
 rarity=C
 type=Land
 mana=b3

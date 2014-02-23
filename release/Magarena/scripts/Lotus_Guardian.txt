@@ -1,7 +1,7 @@
 name=Lotus Guardian
 url=http://magiccards.info/in/en/305.html
 image=http://mtgimage.com/card/lotus%20guardian.jpg
-value=2.156
+value=2.162
 rarity=R
 type=Artifact,Creature
 subtype=Dragon

@@ -1,7 +1,7 @@
 name=Wind Zendikon
 url=http://magiccards.info/wwk/en/46.html
 image=http://mtgimage.com/card/wind%20zendikon.jpg
-value=4.150
+value=4.158
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Sword of Vengeance
 url=http://magiccards.info/m11/en/216.html
 image=http://mtgimage.com/card/sword%20of%20vengeance.jpg
-value=4.415
+value=4.276
 rarity=R
 type=Artifact
 subtype=Equipment

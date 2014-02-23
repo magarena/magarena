@@ -1,7 +1,7 @@
 name=Citanul Woodreaders
 url=http://magiccards.info/mma/en/140.html
 image=http://mtgimage.com/card/citanul%20woodreaders.jpg
-value=3.286
+value=3.300
 rarity=C
 type=Creature
 subtype=Human,Druid

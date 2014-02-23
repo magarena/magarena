@@ -1,7 +1,7 @@
 name=Brimstone Mage
 url=http://magiccards.info/roe/en/137.html
 image=http://mtgimage.com/card/brimstone%20mage.jpg
-value=3.381
+value=3.338
 rarity=U
 type=Creature
 subtype=Human,Shaman

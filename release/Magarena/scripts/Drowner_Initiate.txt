@@ -1,7 +1,7 @@
 name=Drowner Initiate
 url=http://magiccards.info/shm/en/36.html
 image=http://mtgimage.com/card/drowner%20initiate.jpg
-value=3.452
+value=3.461
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

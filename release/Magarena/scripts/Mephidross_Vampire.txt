@@ -1,7 +1,7 @@
 name=Mephidross Vampire
 url=http://magiccards.info/5dn/en/53.html
 image=http://mtgimage.com/card/mephidross%20vampire.jpg
-value=4.273
+value=4.269
 rarity=R
 type=Creature
 subtype=Vampire

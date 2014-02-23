@@ -1,7 +1,7 @@
 name=Golden Bear
 url=http://magiccards.info/po2/en/67.html
 image=http://mtgimage.com/card/golden%20bear.jpg
-value=3.424
+value=3.333
 rarity=C
 type=Creature
 subtype=Bear

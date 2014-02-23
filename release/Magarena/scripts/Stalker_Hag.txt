@@ -1,7 +1,7 @@
 name=Stalker Hag
 url=http://magiccards.info/eve/en/129.html
 image=http://mtgimage.com/card/stalker%20hag.jpg
-value=3.535
+value=3.555
 rarity=U
 type=Creature
 subtype=Hag

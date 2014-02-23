@@ -1,7 +1,7 @@
 name=Deadly Recluse
 url=http://magiccards.info/cmd/en/149.html
 image=http://mtgimage.com/card/deadly%20recluse.jpg
-value=2.932
+value=3.133
 rarity=C
 type=Creature
 subtype=Spider

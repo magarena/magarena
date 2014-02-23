@@ -1,7 +1,7 @@
 name=Freed from the Real
 url=http://magiccards.info/sok/en/38.html
 image=http://mtgimage.com/card/freed%20from%20the%20real.jpg
-value=4.371
+value=4.370
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Contagious Nim
 url=http://magiccards.info/som/en/58.html
 image=http://mtgimage.com/card/contagious%20nim.jpg
-value=3.100
+value=3.083
 ability=infect
 rarity=C
 type=Creature

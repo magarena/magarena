@@ -1,7 +1,7 @@
 name=Phantom Tiger
 url=http://magiccards.info/ju/en/129.html
 image=http://mtgimage.com/card/phantom%20tiger.jpg
-value=3.197
+value=3.205
 rarity=C
 type=Creature
 subtype=Cat,Spirit

@@ -1,7 +1,7 @@
 name=Akroan Skyguard
 url=http://magiccards.info/bng/en/3.html
 image=http://mtgimage.com/card/akroan%20skyguard.jpg
-value=3.769
+value=3.707
 rarity=C
 type=Creature
 subtype=Human,Soldier

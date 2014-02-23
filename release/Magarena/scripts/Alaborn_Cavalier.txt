@@ -1,7 +1,7 @@
 name=Alaborn Cavalier
 url=http://magiccards.info/ddg/en/18.html
 image=http://mtgimage.com/card/alaborn%20cavalier.jpg
-value=3.226
+value=3.242
 rarity=U
 type=Creature
 subtype=Human,Knight

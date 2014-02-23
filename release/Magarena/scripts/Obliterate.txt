@@ -1,7 +1,7 @@
 name=Obliterate
 url=http://magiccards.info/8e/en/204.html
 image=http://mtgimage.com/card/obliterate.jpg
-value=4.3
+value=4.260
 rarity=R
 type=Sorcery
 cost={6}{R}{R}

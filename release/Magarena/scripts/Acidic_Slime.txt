@@ -1,7 +1,7 @@
 name=Acidic Slime
 url=http://magiccards.info/m12/en/161.html
 image=http://mtgimage.com/card/acidic%20slime.jpg
-value=3.727
+value=3.571
 removal=2
 rarity=U
 type=Creature

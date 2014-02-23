@@ -1,7 +1,7 @@
 name=Tahngarth, Talruum Hero
 url=http://magiccards.info/ps/en/74a.html
 image=http://mtgimage.com/card/tahngarth%2C%20talruum%20hero.jpg
-value=4.042
+value=4.057
 rarity=R
 type=Legendary,Creature
 subtype=Minotaur,Warrior

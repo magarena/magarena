@@ -1,7 +1,7 @@
 name=Dream Fracture
 url=http://magiccards.info/eve/en/19.html
 image=http://mtgimage.com/card/dream%20fracture.jpg
-value=3.508
+value=3.516
 rarity=U
 type=Instant
 cost={1}{U}{U}

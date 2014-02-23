@@ -1,7 +1,7 @@
 name=Door to Nothingness
 url=http://magiccards.info/m13/en/203.html
 image=http://mtgimage.com/card/door%20to%20nothingness.jpg
-value=3.871
+value=3.899
 rarity=R
 type=Artifact
 cost={5}

@@ -1,7 +1,7 @@
 name=Raka Disciple
 url=http://magiccards.info/ap/en/66.html
 image=http://mtgimage.com/card/raka%20disciple.jpg
-value=2.982
+value=2.983
 rarity=C
 type=Creature
 subtype=Minotaur,Wizard

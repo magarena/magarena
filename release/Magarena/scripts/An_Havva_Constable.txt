@@ -1,7 +1,7 @@
 name=An-Havva Constable
 url=http://magiccards.info/5e/en/139.html
 image=http://mtgimage.com/card/an-havva%20constable.jpg
-value=3.286
+value=3.276
 rarity=R
 type=Creature
 subtype=Human

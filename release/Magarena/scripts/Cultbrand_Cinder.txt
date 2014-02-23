@@ -1,7 +1,7 @@
 name=Cultbrand Cinder
 url=http://magiccards.info/shm/en/182.html
 image=http://mtgimage.com/card/cultbrand%20cinder.jpg
-value=1.968
+value=1.958
 rarity=C
 type=Creature
 subtype=Elemental,Shaman

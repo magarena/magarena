@@ -1,7 +1,7 @@
 name=Portent of Betrayal
 url=http://magiccards.info/ths/en/133.html
 image=http://mtgimage.com/card/portent%20of%20betrayal.jpg
-value=3.091
+value=3.056
 rarity=C
 type=Sorcery
 cost={3}{R}

@@ -1,7 +1,7 @@
 name=Scourge of the Nobilis
 url=http://magiccards.info/eve/en/146.html
 image=http://mtgimage.com/card/scourge%20of%20the%20nobilis.jpg
-value=4.053
+value=4.064
 rarity=C
 type=Enchantment
 subtype=Aura

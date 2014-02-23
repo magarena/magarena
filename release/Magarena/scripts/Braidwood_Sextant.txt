@@ -1,7 +1,7 @@
 name=Braidwood Sextant
 url=http://magiccards.info/ud/en/127.html
 image=http://mtgimage.com/card/braidwood%20sextant.jpg
-value=2.734
+value=2.667
 rarity=U
 type=Artifact
 cost={1}

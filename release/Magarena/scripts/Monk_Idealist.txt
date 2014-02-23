@@ -1,7 +1,7 @@
 name=Monk Idealist
 url=http://magiccards.info/us/en/20.html
 image=http://mtgimage.com/card/monk%20idealist.jpg
-value=3.763
+value=3.769
 rarity=U
 type=Creature
 subtype=Human,Monk,Cleric

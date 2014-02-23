@@ -1,7 +1,7 @@
 name=Heliod, God of the Sun
 url=http://magiccards.info/ths/en/17.html
 image=http://mtgimage.com/card/heliod%2C%20god%20of%20the%20sun.jpg
-value=3.708
+value=3.612
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God

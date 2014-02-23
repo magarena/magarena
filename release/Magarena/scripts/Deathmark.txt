@@ -1,7 +1,7 @@
 name=Deathmark
 url=http://magiccards.info/m12/en/90.html
 image=http://mtgimage.com/card/deathmark.jpg
-value=3.742
+value=3.746
 removal=3
 rarity=U
 type=Sorcery

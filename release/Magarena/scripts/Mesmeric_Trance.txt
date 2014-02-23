@@ -1,7 +1,7 @@
 name=Mesmeric Trance
 url=http://magiccards.info/me2/en/55.html
 image=http://mtgimage.com/card/mesmeric%20trance.jpg
-value=3.120
+value=3.140
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

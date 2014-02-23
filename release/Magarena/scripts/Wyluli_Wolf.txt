@@ -1,7 +1,7 @@
 name=Wyluli Wolf
 url=http://magiccards.info/6e/en/270.html
 image=http://mtgimage.com/card/wyluli%20wolf.jpg
-value=2.364
+value=2.344
 rarity=C
 type=Creature
 subtype=Wolf

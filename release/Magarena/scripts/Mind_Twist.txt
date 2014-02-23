@@ -1,7 +1,7 @@
 name=Mind Twist
 url=http://magiccards.info/4e/en/31.html
 image=http://mtgimage.com/card/mind%20twist.jpg
-value=4.66
+value=4.621
 rarity=R
 type=Sorcery
 cost={X}{B}

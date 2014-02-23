@@ -1,7 +1,7 @@
 name=Nim Shrieker
 url=http://magiccards.info/mi/en/73.html
 image=http://mtgimage.com/card/nim%20shrieker.jpg
-value=3.383
+value=3.258
 rarity=C
 type=Creature
 subtype=Zombie

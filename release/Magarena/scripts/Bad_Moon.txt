@@ -1,7 +1,7 @@
 name=Bad Moon
 url=http://magiccards.info/gvl/en/48.html
 image=http://mtgimage.com/card/bad%20moon.jpg
-value=4.130
+value=4.136
 rarity=R
 type=Enchantment
 cost={1}{B}

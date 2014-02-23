@@ -1,7 +1,7 @@
 name=Instill Infection
 url=http://magiccards.info/som/en/68.html
 image=http://mtgimage.com/card/instill%20infection.jpg
-value=1.559
+value=1.558
 removal=1
 rarity=C
 type=Instant

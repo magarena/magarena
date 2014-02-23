@@ -1,7 +1,7 @@
 name=Leonin Snarecaster
 url=http://magiccards.info/ths/en/23.html
 image=http://mtgimage.com/card/leonin%20snarecaster.jpg
-value=2.893
+value=2.897
 rarity=C
 type=Creature
 subtype=Cat,Soldier

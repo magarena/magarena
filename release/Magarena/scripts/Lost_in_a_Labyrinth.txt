@@ -1,7 +1,7 @@
 name=Lost in a Labyrinth
 url=http://magiccards.info/ths/en/52.html
 image=http://mtgimage.com/card/lost%20in%20a%20labyrinth.jpg
-value=1.935
+value=2.167
 rarity=C
 type=Instant
 cost={U}

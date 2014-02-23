@@ -1,7 +1,7 @@
 name=Rage Nimbus
 url=http://magiccards.info/roe/en/160.html
 image=http://mtgimage.com/card/rage%20nimbus.jpg
-value=4.139
+value=3.959
 rarity=R
 type=Creature
 subtype=Elemental

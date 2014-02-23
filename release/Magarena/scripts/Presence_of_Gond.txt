@@ -1,7 +1,7 @@
 name=Presence of Gond
 url=http://magiccards.info/shm/en/125.html
 image=http://mtgimage.com/card/presence%20of%20gond.jpg
-value=4.000
+value=3.700
 rarity=C
 type=Enchantment
 subtype=Aura

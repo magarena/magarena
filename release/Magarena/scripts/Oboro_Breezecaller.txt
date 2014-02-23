@@ -1,7 +1,7 @@
 name=Oboro Breezecaller
 url=http://magiccards.info/sok/en/48.html
 image=http://mtgimage.com/card/oboro%20breezecaller.jpg
-value=2.205
+value=2.200
 rarity=C
 type=Creature
 subtype=Moonfolk,Wizard

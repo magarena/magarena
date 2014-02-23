@@ -1,7 +1,7 @@
 name=Blood Seeker
 url=http://magiccards.info/m12/en/81.html
 image=http://mtgimage.com/card/blood%20seeker.jpg
-value=3.383
+value=3.386
 rarity=C
 type=Creature
 subtype=Vampire,Shaman

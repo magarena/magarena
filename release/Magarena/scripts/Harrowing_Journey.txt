@@ -1,7 +1,7 @@
 name=Harrowing Journey
 url=http://magiccards.info/dka/en/67.html
 image=http://mtgimage.com/card/harrowing%20journey.jpg
-value=2.602
+value=2.556
 rarity=U
 type=Sorcery
 cost={4}{B}

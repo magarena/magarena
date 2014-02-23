@@ -1,7 +1,7 @@
 name=Mortal's Resolve
 url=http://magiccards.info/bng/en/127.html
 image=http://mtgimage.com/card/mortal's%20resolve.jpg
-value=3.875
+value=3.760
 rarity=C
 type=Instant
 cost={1}{G}

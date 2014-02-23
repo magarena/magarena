@@ -1,7 +1,7 @@
 name=Awakening Zone
 url=http://magiccards.info/cmd/en/142.html
 image=http://mtgimage.com/card/awakening%20zone.jpg
-value=3.917
+value=3.919
 rarity=R
 type=Enchantment
 cost={2}{G}

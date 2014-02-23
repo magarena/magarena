@@ -1,7 +1,7 @@
 name=Demon of Death's Gate
 url=http://magiccards.info/m11/en/92.html
 image=http://mtgimage.com/card/demon%20of%20death's%20gate.jpg
-value=4.344
+value=4.262
 rarity=M
 type=Creature
 subtype=Demon

@@ -1,7 +1,7 @@
 name=Frenzied Tilling
 url=http://magiccards.info/gtc/en/166.html
 image=http://mtgimage.com/card/frenzied%20tilling.jpg
-value=3.309
+value=3.344
 removal=3
 rarity=U
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Nissa's Chosen
 url=http://magiccards.info/zen/en/171.html
 image=http://mtgimage.com/card/nissa%27s%20chosen.jpg
-value=4.049
+value=4.060
 rarity=C
 type=Creature
 subtype=Elf,Warrior

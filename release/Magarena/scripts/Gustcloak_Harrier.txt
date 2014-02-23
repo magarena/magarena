@@ -1,7 +1,7 @@
 name=Gustcloak Harrier
 url=http://magiccards.info/on/en/34.html
 image=http://mtgimage.com/card/gustcloak%20harrier.jpg
-value=3.350
+value=3.339
 rarity=C
 type=Creature
 subtype=Bird,Soldier

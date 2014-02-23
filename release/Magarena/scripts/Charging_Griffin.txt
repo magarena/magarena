@@ -1,7 +1,7 @@
 name=Charging Griffin
 url=http://magiccards.info/m14/en/13.html
 image=http://mtgimage.com/card/charging%20griffin.jpg
-value=2.109
+value=2.269
 rarity=C
 type=Creature
 subtype=Griffin

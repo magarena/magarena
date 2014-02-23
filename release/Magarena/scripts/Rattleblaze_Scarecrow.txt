@@ -1,7 +1,7 @@
 name=Rattleblaze Scarecrow
 url=http://magiccards.info/shm/en/259.html
 image=http://mtgimage.com/card/rattleblaze%20scarecrow.jpg
-value=2.238
+value=2.364
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

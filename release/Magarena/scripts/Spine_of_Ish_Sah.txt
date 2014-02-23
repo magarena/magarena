@@ -1,7 +1,7 @@
 name=Spine of Ish Sah
 url=http://magiccards.info/mbs/en/136.html
 image=http://mtgimage.com/card/spine%20of%20ish%20sah.jpg
-value=4.222
+value=3.594
 rarity=R
 type=Artifact
 cost={7}

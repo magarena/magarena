@@ -1,7 +1,7 @@
 name=Shard Volley
 url=http://magiccards.info/mt/en/103.html
 image=http://mtgimage.com/card/shard%20volley.jpg
-value=2.771
+value=2.781
 removal=3
 rarity=C
 type=Instant

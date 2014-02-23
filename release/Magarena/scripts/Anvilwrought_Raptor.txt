@@ -1,7 +1,7 @@
 name=Anvilwrought Raptor
 url=http://magiccards.info/ths/en/211.html
 image=http://mtgimage.com/card/anvilwrought%20raptor.jpg
-value=2.154
+value=2.122
 rarity=U
 type=Artifact,Creature
 subtype=Bird

@@ -1,7 +1,7 @@
 name=Ondu Giant
 url=http://magiccards.info/pc2/en/71.html
 image=http://mtgimage.com/card/ondu%20giant.jpg
-value=3.088
+value=3.083
 rarity=C
 type=Creature
 subtype=Giant,Druid

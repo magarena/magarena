@@ -1,7 +1,7 @@
 name=Ferrovore
 url=http://magiccards.info/som/en/88.html
 image=http://mtgimage.com/card/ferrovore.jpg
-value=2.855
+value=2.857
 rarity=C
 type=Creature
 subtype=Beast

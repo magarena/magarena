@@ -1,7 +1,7 @@
 name=Aysen Highway
 url=http://magiccards.info/hl/en/107.html
 image=http://mtgimage.com/card/aysen%20highway.jpg
-value=1.169
+value=1.160
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}

@@ -1,7 +1,7 @@
 name=Burrowing
 url=http://magiccards.info/ced/en/140.html
 image=http://mtgimage.com/card/burrowing.jpg
-value=1.641
+value=1.634
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Riptide Crab
 url=http://magiccards.info/in/en/266.html
 image=http://mtgimage.com/card/riptide%20crab.jpg
-value=3.886
+value=3.875
 rarity=U
 type=Creature
 subtype=Crab

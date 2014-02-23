@@ -1,7 +1,7 @@
 name=Soulmender
 url=http://magiccards.info/m14/en/37.html
 image=http://mtgimage.com/card/soulmender.jpg
-value=2.734
+value=2.742
 rarity=C
 type=Creature
 subtype=Human,Cleric

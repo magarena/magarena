@@ -1,7 +1,7 @@
 name=Kalonian Tusker
 url=http://magiccards.info/m14/en/182.html
 image=http://mtgimage.com/card/kalonian%20tusker.jpg
-value=3.790
+value=3.697
 rarity=U
 type=Creature
 subtype=Beast

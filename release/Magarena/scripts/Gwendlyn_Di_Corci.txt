@@ -1,7 +1,7 @@
 name=Gwendlyn Di Corci
 url=http://magiccards.info/lg/en/268.html
 image=http://mtgimage.com/card/gwendlyn%20di%20corci.jpg
-value=4.038
+value=4.047
 rarity=R
 type=Legendary,Creature
 subtype=Human,Rogue

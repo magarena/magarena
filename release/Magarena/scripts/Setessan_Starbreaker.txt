@@ -1,7 +1,7 @@
 name=Setessan Starbreaker
 url=http://magiccards.info/bng/en/139.html
 image=http://mtgimage.com/card/setessan%20starbreaker.jpg
-value=2.9
+value=2.545
 rarity=C
 type=Creature
 subtype=Human,Warrior

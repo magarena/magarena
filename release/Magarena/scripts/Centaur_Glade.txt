@@ -1,7 +1,7 @@
 name=Centaur Glade
 url=http://magiccards.info/on/en/251.html
 image=http://mtgimage.com/card/centaur%20glade.jpg
-value=4.100
+value=4.135
 rarity=U
 type=Enchantment
 cost={3}{G}{G}

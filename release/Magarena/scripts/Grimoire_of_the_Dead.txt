@@ -1,7 +1,7 @@
 name=Grimoire of the Dead
 url=http://magiccards.info/isd/en/226.html
 image=http://mtgimage.com/card/grimoire%20of%20the%20dead.jpg
-value=3.869
+value=3.848
 rarity=M
 type=Legendary,Artifact
 cost={4}

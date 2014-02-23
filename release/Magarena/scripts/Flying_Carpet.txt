@@ -1,7 +1,7 @@
 name=Flying Carpet
 url=http://magiccards.info/me4/en/201.html
 image=http://mtgimage.com/card/flying%20carpet.jpg
-value=2.262
+value=2.205
 rarity=C
 type=Artifact
 cost={4}

@@ -1,7 +1,7 @@
 name=Stingscourger
 url=http://magiccards.info/pc/en/107.html
 image=http://mtgimage.com/card/stingscourger.jpg
-value=3.654
+value=3.433
 removal=2
 rarity=C
 type=Creature

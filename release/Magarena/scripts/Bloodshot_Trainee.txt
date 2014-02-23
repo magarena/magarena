@@ -1,7 +1,7 @@
 name=Bloodshot Trainee
 url=http://magiccards.info/som/en/85.html
 image=http://mtgimage.com/card/bloodshot%20trainee.jpg
-value=2.907
+value=2.909
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

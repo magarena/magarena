@@ -1,7 +1,7 @@
 name=Eldrazi Conscription
 url=http://magiccards.info/roe/en/3.html
 image=http://mtgimage.com/card/eldrazi%20conscription.jpg
-value=4.349
+value=4.326
 rarity=R
 type=Tribal,Enchantment
 subtype=Eldrazi,Aura

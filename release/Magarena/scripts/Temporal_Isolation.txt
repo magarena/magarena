@@ -1,7 +1,7 @@
 name=Temporal Isolation
 url=http://magiccards.info/ts/en/43.html
 image=http://mtgimage.com/card/temporal%20isolation.jpg
-value=4.030
+value=3.985
 rarity=C
 type=Enchantment
 subtype=Aura

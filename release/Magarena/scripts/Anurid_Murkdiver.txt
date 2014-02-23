@@ -1,7 +1,7 @@
 name=Anurid Murkdiver
 url=http://magiccards.info/on/en/124.html
 image=http://mtgimage.com/card/anurid%20murkdiver.jpg
-value=1.710
+value=1.719
 ability=swampwalk
 rarity=C
 type=Creature

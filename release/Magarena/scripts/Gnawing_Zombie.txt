@@ -1,7 +1,7 @@
 name=Gnawing Zombie
 url=http://magiccards.info/m14/en/99.html
 image=http://mtgimage.com/card/gnawing%20zombie.jpg
-value=3.385
+value=3.293
 rarity=U
 type=Creature
 subtype=Zombie

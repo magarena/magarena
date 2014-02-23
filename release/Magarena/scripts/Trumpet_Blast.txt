@@ -1,7 +1,7 @@
 name=Trumpet Blast
 url=http://magiccards.info/m10/en/160.html
 image=http://mtgimage.com/card/trumpet%20blast.jpg
-value=3.081
+value=3.088
 rarity=C
 type=Instant
 cost={2}{R}

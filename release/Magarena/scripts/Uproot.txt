@@ -1,7 +1,7 @@
 name=Uproot
 url=http://magiccards.info/bok/en/149.html
 image=http://mtgimage.com/card/uproot.jpg
-value=2.192
+value=2.231
 rarity=C
 type=Sorcery
 subtype=Arcane

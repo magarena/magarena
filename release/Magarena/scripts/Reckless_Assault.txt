@@ -1,7 +1,7 @@
 name=Reckless Assault
 url=http://magiccards.info/in/en/263.html
 image=http://mtgimage.com/card/reckless%20assault.jpg
-value=2.65
+value=2.650
 rarity=R
 type=Enchantment
 cost={2}{B}{R}

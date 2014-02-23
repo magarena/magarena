@@ -1,7 +1,7 @@
 name=Phyrexia's Core
 url=http://magiccards.info/nph/en/165.html
 image=http://mtgimage.com/card/phyrexia%27s%20core.jpg
-value=2.943
+value=2.994
 rarity=U
 type=Land
 ability=tap add mana {1};pay {1},{T},Sacrifice an artifact:PN gains 1 life.

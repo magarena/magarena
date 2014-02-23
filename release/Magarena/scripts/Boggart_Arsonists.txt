@@ -1,7 +1,7 @@
 name=Boggart Arsonists
 url=http://magiccards.info/shm/en/85.html
 image=http://mtgimage.com/card/boggart%20arsonists.jpg
-value=2.408
+value=2.400
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

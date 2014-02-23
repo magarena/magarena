@@ -1,7 +1,7 @@
 name=Quagmire Druid
 url=http://magiccards.info/c13/en/90.html
 image=http://mtgimage.com/card/quagmire%20druid.jpg
-value=2.722
+value=2.773
 rarity=C
 type=Creature
 subtype=Zombie,Druid

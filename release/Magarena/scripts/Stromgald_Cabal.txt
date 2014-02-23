@@ -1,7 +1,7 @@
 name=Stromgald Cabal
 url=http://magiccards.info/6e/en/157.html
 image=http://mtgimage.com/card/stromgald%20cabal.jpg
-value=3.672
+value=3.683
 rarity=R
 type=Creature
 subtype=Human,Knight

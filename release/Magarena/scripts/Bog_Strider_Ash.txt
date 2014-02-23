@@ -1,7 +1,7 @@
 name=Bog-Strider Ash
 url=http://magiccards.info/lw/en/198.html
 image=http://mtgimage.com/card/bog-strider%20ash.jpg
-value=1.842
+value=1.850
 rarity=C
 type=Creature
 subtype=Treefolk,Shaman

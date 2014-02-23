@@ -1,7 +1,7 @@
 name=Font of Mythos
 url=http://magiccards.info/cfx/en/136.html
 image=http://mtgimage.com/card/font%20of%20mythos.jpg
-value=3.424
+value=3.432
 rarity=R
 type=Artifact
 cost={4}

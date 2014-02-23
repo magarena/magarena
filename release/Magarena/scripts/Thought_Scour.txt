@@ -1,7 +1,7 @@
 name=Thought Scour
 url=http://magiccards.info/dka/en/52.html
 image=http://mtgimage.com/card/thought%20scour.jpg
-value=3.826
+value=3.806
 rarity=C
 type=Instant
 cost={U}

@@ -1,7 +1,7 @@
 name=Aladdin's Ring
 url=http://magiccards.info/9e/en/286.html
 image=http://mtgimage.com/card/aladdin%27s%20ring.jpg
-value=1.483
+value=1.474
 rarity=R
 type=Artifact
 cost={8}

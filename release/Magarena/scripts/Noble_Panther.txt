@@ -1,7 +1,7 @@
 name=Noble Panther
 url=http://magiccards.info/in/en/257.html
 image=http://mtgimage.com/card/noble%20panther.jpg
-value=3.474
+value=3.458
 rarity=R
 type=Creature
 subtype=Cat

@@ -1,7 +1,7 @@
 name=Veteran Swordsmith
 url=http://magiccards.info/m10/en/39.html
 image=http://mtgimage.com/card/veteran%20swordsmith.jpg
-value=4.147
+value=4.145
 rarity=C
 type=Creature
 subtype=Human,Soldier

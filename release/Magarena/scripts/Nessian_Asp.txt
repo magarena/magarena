@@ -1,7 +1,7 @@
 name=Nessian Asp
 url=http://magiccards.info/ths/en/164.html
 image=http://mtgimage.com/card/nessian%20asp.jpg
-value=3.448
+value=3.546
 rarity=C
 type=Creature
 subtype=Snake

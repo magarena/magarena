@@ -1,7 +1,7 @@
 name=Judge of Currents
 url=http://magiccards.info/lw/en/22.html
 image=http://mtgimage.com/card/judge%20of%20currents.jpg
-value=3.439
+value=3.453
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

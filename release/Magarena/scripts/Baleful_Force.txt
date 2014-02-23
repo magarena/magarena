@@ -1,7 +1,7 @@
 name=Baleful Force
 url=http://magiccards.info/c13/en/70.html
 image=http://mtgimage.com/card/baleful%20force.jpg
-value=3.722
+value=3.725
 rarity=R
 type=Creature
 subtype=Elemental

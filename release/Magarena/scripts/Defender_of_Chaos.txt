@@ -1,7 +1,7 @@
 name=Defender of Chaos
 url=http://magiccards.info/ul/en/75.html
 image=http://mtgimage.com/card/defender%20of%20chaos.jpg
-value=4.050
+value=4.065
 rarity=C
 type=Creature
 subtype=Human,Knight

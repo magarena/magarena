@@ -1,7 +1,7 @@
 name=Skyshroud Troopers
 url=http://magiccards.info/sh/en/65.html
 image=http://mtgimage.com/card/skyshroud%20troopers.jpg
-value=2.318
+value=2.338
 rarity=C
 type=Creature
 subtype=Elf,Druid,Warrior

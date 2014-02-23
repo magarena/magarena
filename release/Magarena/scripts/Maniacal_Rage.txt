@@ -1,7 +1,7 @@
 name=Maniacal Rage
 url=http://magiccards.info/cfx/en/68.html
 image=http://mtgimage.com/card/maniacal%20rage.jpg
-value=2.716
+value=2.712
 rarity=C
 type=Enchantment
 subtype=Aura

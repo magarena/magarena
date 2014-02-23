@@ -1,7 +1,7 @@
 name=Elvish Vanguard
 url=http://magiccards.info/on/en/259.html
 image=http://mtgimage.com/card/elvish%20vanguard.jpg
-value=4.338
+value=4.354
 rarity=R
 type=Creature
 subtype=Elf,Warrior

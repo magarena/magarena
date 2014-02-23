@@ -1,7 +1,7 @@
 name=Lightning Reaver
 url=http://magiccards.info/arb/en/42.html
 image=http://mtgimage.com/card/lightning%20reaver.jpg
-value=3.812
+value=3.820
 rarity=R
 type=Creature
 subtype=Zombie,Beast

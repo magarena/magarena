@@ -1,7 +1,7 @@
 name=Elven Cache
 url=http://magiccards.info/6e/en/224.html
 image=http://mtgimage.com/card/elven%20cache.jpg
-value=2.989
+value=2.978
 rarity=C
 type=Sorcery
 cost={2}{G}{G}

@@ -1,7 +1,7 @@
 name=Pacifism
 url=http://magiccards.info/m12/en/28.html
 image=http://mtgimage.com/card/pacifism.jpg
-value=4.038
+value=4.048
 removal=3
 rarity=C
 type=Enchantment

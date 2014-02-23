@@ -1,7 +1,7 @@
 name=Death-Hood Cobra
 url=http://magiccards.info/nph/en/108.html
 image=http://mtgimage.com/card/death%2Dhood%20cobra.jpg
-value=2.978
+value=3.035
 rarity=C
 type=Creature
 subtype=Snake

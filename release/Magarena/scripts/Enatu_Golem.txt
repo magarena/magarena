@@ -1,7 +1,7 @@
 name=Enatu Golem
 url=http://magiccards.info/roe/en/217.html
 image=http://mtgimage.com/card/enatu%20golem.jpg
-value=1.971
+value=1.972
 rarity=U
 type=Artifact,Creature
 subtype=Golem

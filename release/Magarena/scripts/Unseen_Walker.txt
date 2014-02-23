@@ -1,7 +1,7 @@
 name=Unseen Walker
 url=http://magiccards.info/6e/en/262.html
 image=http://mtgimage.com/card/unseen%20walker.jpg
-value=2.855
+value=2.828
 rarity=U
 type=Creature
 subtype=Dryad

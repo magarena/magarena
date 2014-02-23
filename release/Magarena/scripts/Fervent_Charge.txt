@@ -1,7 +1,7 @@
 name=Fervent Charge
 url=http://magiccards.info/ap/en/98.html
 image=http://mtgimage.com/card/fervent%20charge.jpg
-value=4.090
+value=4.083
 rarity=R
 type=Enchantment
 cost={1}{W}{B}{R}

@@ -1,7 +1,7 @@
 name=Evacuation
 url=http://magiccards.info/dpa/en/9.html
 image=http://mtgimage.com/card/evacuation.jpg
-value=4.378
+value=4.388
 removal=1
 rarity=R
 type=Instant

@@ -1,7 +1,7 @@
 name=Noggle Bridgebreaker
 url=http://magiccards.info/eve/en/107.html
 image=http://mtgimage.com/card/noggle%20bridgebreaker.jpg
-value=2.231
+value=2.227
 rarity=C
 type=Creature
 subtype=Noggle,Rogue

@@ -1,7 +1,7 @@
 name=Phyrexian Bloodstock
 url=http://magiccards.info/ps/en/50.html
 image=http://mtgimage.com/card/phyrexian%20bloodstock.jpg
-value=2.887
+value=2.894
 rarity=C
 type=Creature
 subtype=Zombie

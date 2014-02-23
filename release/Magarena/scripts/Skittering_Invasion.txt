@@ -1,7 +1,7 @@
 name=Skittering Invasion
 url=http://magiccards.info/roe/en/10.html
 image=http://mtgimage.com/card/skittering%20invasion.jpg
-value=3.319
+value=3.331
 rarity=U
 type=Tribal,Sorcery
 subtype=Eldrazi

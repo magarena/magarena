@@ -1,7 +1,7 @@
 name=Yeva's Forcemage
 url=http://magiccards.info/m13/en/198.html
 image=http://mtgimage.com/card/yeva's%20forcemage.jpg
-value=2.968
+value=3.000
 rarity=C
 type=Creature
 subtype=Elf,Shaman

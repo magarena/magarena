@@ -1,7 +1,7 @@
 name=Nested Ghoul
 url=http://magiccards.info/mbs/en/48.html
 image=http://mtgimage.com/card/nested%20ghoul.jpg
-value=3.178
+value=3.175
 rarity=U
 type=Creature
 subtype=Zombie,Warrior

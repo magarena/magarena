@@ -1,7 +1,7 @@
 name=Grizzled Wolverine
 url=http://magiccards.info/ia/en/192.html
 image=http://mtgimage.com/card/grizzled%20wolverine.jpg
-value=3.125
+value=3.038
 rarity=C
 type=Creature
 subtype=Wolverine

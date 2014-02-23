@@ -1,7 +1,7 @@
 name=Firewild Borderpost
 url=http://magiccards.info/arb/en/54.html
 image=http://mtgimage.com/card/firewild%20borderpost.jpg
-value=3.027
+value=3.039
 rarity=C
 type=Artifact
 cost={1}{R}{G}

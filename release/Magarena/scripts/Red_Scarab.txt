@@ -1,7 +1,7 @@
 name=Red Scarab
 url=http://magiccards.info/ia/en/273.html
 image=http://mtgimage.com/card/red%20scarab.jpg
-value=2.37
+value=2.375
 rarity=U
 type=Enchantment
 subtype=Aura

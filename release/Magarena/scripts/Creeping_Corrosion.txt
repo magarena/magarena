@@ -1,7 +1,7 @@
 name=Creeping Corrosion
 url=http://magiccards.info/mbs/en/78.html
 image=http://mtgimage.com/card/creeping%20corrosion.jpg
-value=3.631
+value=3.646
 removal=2
 rarity=R
 type=Sorcery

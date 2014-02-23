@@ -1,7 +1,7 @@
 name=Blight
 url=http://magiccards.info/6e/en/113.html
 image=http://mtgimage.com/card/blight.jpg
-value=3.811
+value=3.780
 rarity=U
 type=Enchantment
 subtype=Aura

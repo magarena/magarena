@@ -1,7 +1,7 @@
 name=Akki Coalflinger
 url=http://magiccards.info/evg/en/33.html
 image=http://mtgimage.com/card/akki%20coalflinger.jpg
-value=3.171
+value=3.122
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

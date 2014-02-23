@@ -1,7 +1,7 @@
 name=Shadow Slice
 url=http://magiccards.info/gtc/en/77.html
 image=http://mtgimage.com/card/shadow%20slice.jpg
-value=2.479
+value=2.480
 rarity=C
 type=Sorcery
 cost={4}{B}

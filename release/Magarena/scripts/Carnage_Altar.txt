@@ -1,7 +1,7 @@
 name=Carnage Altar
 url=http://magiccards.info/zen/en/198.html
 image=http://mtgimage.com/card/carnage%20altar.jpg
-value=3.125
+value=3.100
 rarity=U
 type=Artifact
 cost={2}

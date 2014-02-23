@@ -1,7 +1,7 @@
 name=Wind Dancer
 url=http://magiccards.info/7e/en/113.html
 image=http://mtgimage.com/card/wind%20dancer.jpg
-value=3.603
+value=3.586
 rarity=U
 type=Creature
 subtype=Faerie

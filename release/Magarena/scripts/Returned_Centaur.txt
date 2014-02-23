@@ -1,7 +1,7 @@
 name=Returned Centaur
 url=http://magiccards.info/ths/en/103.html
 image=http://mtgimage.com/card/returned%20centaur.jpg
-value=2.980
+value=3.033
 rarity=C
 type=Creature
 subtype=Zombie,Centaur

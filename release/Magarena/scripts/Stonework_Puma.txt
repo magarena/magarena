@@ -1,7 +1,7 @@
 name=Stonework Puma
 url=http://magiccards.info/zen/en/207.html
 image=http://mtgimage.com/card/stonework%20puma.jpg
-value=2.537
+value=2.518
 rarity=C
 type=Artifact,Creature
 subtype=Cat,Ally

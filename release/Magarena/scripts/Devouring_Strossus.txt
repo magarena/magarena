@@ -1,7 +1,7 @@
 name=Devouring Strossus
 url=http://magiccards.info/in/en/101.html
 image=http://mtgimage.com/card/devouring%20strossus.jpg
-value=4.218
+value=4.197
 rarity=R
 type=Creature
 subtype=Horror

@@ -1,7 +1,7 @@
 name=Boggart Sprite-Chaser
 url=http://magiccards.info/lw/en/156.html
 image=http://mtgimage.com/card/boggart%20sprite%2Dchaser.jpg
-value=2.422
+value=2.439
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

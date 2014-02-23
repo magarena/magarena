@@ -1,7 +1,7 @@
 name=Windstorm
 url=http://magiccards.info/m14/en/201.html
 image=http://mtgimage.com/card/windstorm.jpg
-value=3.556
+value=3.362
 rarity=U
 type=Instant
 cost={X}{G}

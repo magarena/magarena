@@ -1,7 +1,7 @@
 name=D'Avenant Archer
 url=http://magiccards.info/6e/en/15.html
 image=http://mtgimage.com/card/d'avenant%20archer.jpg
-value=2.479
+value=2.420
 rarity=C
 type=Creature
 subtype=Human,Soldier,Archer

@@ -1,7 +1,7 @@
 name=Wild Griffin
 url=http://magiccards.info/m11/en/40.html
 image=http://mtgimage.com/card/wild%20griffin.jpg
-value=2.700
+value=2.694
 ability=flying
 rarity=C
 type=Creature

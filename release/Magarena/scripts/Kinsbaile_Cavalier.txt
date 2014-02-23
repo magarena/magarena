@@ -1,7 +1,7 @@
 name=Kinsbaile Cavalier
 url=http://magiccards.info/ddg/en/17.html
 image=http://mtgimage.com/card/kinsbaile%20cavalier.jpg
-value=4.227
+value=4.169
 rarity=R
 type=Creature
 subtype=Kithkin,Knight

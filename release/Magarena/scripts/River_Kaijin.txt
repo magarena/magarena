@@ -1,7 +1,7 @@
 name=River Kaijin
 url=http://magiccards.info/chk/en/83.html
 image=http://mtgimage.com/card/river%20kaijin.jpg
-value=2.014
+value=2.000
 rarity=C
 type=Creature
 subtype=Spirit

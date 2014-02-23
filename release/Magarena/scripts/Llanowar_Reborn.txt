@@ -1,7 +1,7 @@
 name=Llanowar Reborn
 url=http://magiccards.info/c13/en/304.html
 image=http://mtgimage.com/card/llanowar%20reborn.jpg
-value=4.15
+value=3.688
 rarity=U
 type=Land
 mana=g3

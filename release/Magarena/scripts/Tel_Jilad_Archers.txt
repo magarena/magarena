@@ -1,7 +1,7 @@
 name=Tel-Jilad Archers
 url=http://magiccards.info/mi/en/131.html
 image=http://mtgimage.com/card/tel%2Djilad%20archers.jpg
-value=2.577
+value=2.556
 rarity=C
 type=Creature
 subtype=Elf,Archer

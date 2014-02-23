@@ -1,7 +1,7 @@
 name=Clone
 url=http://magiccards.info/m13/en/45.html
 image=http://mtgimage.com/card/clone.jpg
-value=4.048
+value=4.106
 rarity=R
 type=Creature
 subtype=Shapeshifter

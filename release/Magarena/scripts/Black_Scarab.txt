@@ -1,7 +1,7 @@
 name=Black Scarab
 url=http://magiccards.info/ia/en/230.html
 image=http://mtgimage.com/card/black%20scarab.jpg
-value=2.21
+value=2.273
 rarity=U
 type=Enchantment
 subtype=Aura

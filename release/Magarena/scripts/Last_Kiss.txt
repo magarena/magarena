@@ -1,7 +1,7 @@
 name=Last Kiss
 url=http://magiccards.info/roe/en/116.html
 image=http://mtgimage.com/card/last%20kiss.jpg
-value=2.259
+value=2.232
 rarity=C
 type=Instant
 cost={2}{B}

@@ -1,7 +1,7 @@
 name=Vitalize
 url=http://magiccards.info/6e/en/265.html
 image=http://mtgimage.com/card/vitalize.jpg
-value=4.468
+value=4.476
 rarity=C
 type=Instant
 cost={G}

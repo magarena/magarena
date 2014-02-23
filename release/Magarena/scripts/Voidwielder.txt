@@ -1,7 +1,7 @@
 name=Voidwielder
 url=http://magiccards.info/rtr/en/56.html
 image=http://mtgimage.com/card/voidwielder.jpg
-value=1.914
+value=1.898
 rarity=C
 type=Creature
 subtype=Human,Wizard

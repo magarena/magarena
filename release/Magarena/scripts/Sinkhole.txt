@@ -1,7 +1,7 @@
 name=Sinkhole
 url=http://magiccards.info/me4/en/97.html
 image=http://mtgimage.com/card/sinkhole.jpg
-value=4.620
+value=4.629
 removal=3
 rarity=C
 type=Sorcery

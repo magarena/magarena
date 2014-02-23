@@ -1,7 +1,7 @@
 name=Master Healer
 url=http://magiccards.info/9e/en/28.html
 image=http://mtgimage.com/card/master%20healer.jpg
-value=3.208
+value=3.236
 rarity=R
 type=Creature
 subtype=Human,Cleric

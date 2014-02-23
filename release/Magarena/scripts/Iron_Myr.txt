@@ -1,7 +1,7 @@
 name=Iron Myr
 url=http://magiccards.info/som/en/168.html
 image=http://mtgimage.com/card/iron%20myr.jpg
-value=3.184
+value=3.186
 rarity=C
 type=Artifact,Creature
 subtype=Myr

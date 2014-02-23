@@ -1,7 +1,7 @@
 name=Tel-Jilad Defiance
 url=http://magiccards.info/som/en/129.html
 image=http://mtgimage.com/card/tel-jilad%20defiance.jpg
-value=2.737
+value=2.718
 rarity=C
 type=Instant
 cost={1}{G}

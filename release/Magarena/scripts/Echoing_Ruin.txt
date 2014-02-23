@@ -1,7 +1,7 @@
 name=Echoing Ruin
 url=http://magiccards.info/ds/en/59.html
 image=http://mtgimage.com/card/echoing%20ruin.jpg
-value=3.786
+value=3.776
 removal=3
 rarity=C
 type=Sorcery

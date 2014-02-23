@@ -1,7 +1,7 @@
 name=Serra's Embrace
 url=http://magiccards.info/dvd/en/21.html
 image=http://mtgimage.com/card/serra%27s%20embrace.jpg
-value=3.761
+value=3.766
 rarity=U
 type=Enchantment
 subtype=Aura

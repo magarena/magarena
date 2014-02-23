@@ -1,7 +1,7 @@
 name=Plated Spider
 url=http://magiccards.info/ud/en/116.html
 image=http://mtgimage.com/card/plated%20spider.jpg
-value=3.614
+value=3.611
 rarity=C
 type=Creature
 subtype=Spider

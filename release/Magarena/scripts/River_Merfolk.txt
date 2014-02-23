@@ -1,7 +1,7 @@
 name=River Merfolk
 url=http://magiccards.info/med/en/47.html
 image=http://mtgimage.com/card/river%20merfolk.jpg
-value=3.125
+value=3.113
 rarity=C
 type=Creature
 subtype=Merfolk

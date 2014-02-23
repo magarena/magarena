@@ -1,7 +1,7 @@
 name=Serra Inquisitors
 url=http://magiccards.info/hl/en/120.html
 image=http://mtgimage.com/card/serra%20inquisitors.jpg
-value=1.667
+value=1.644
 rarity=U
 type=Creature
 subtype=Human,Cleric

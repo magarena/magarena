@@ -1,7 +1,7 @@
 name=Arcbound Crusher
 url=http://magiccards.info/pch/en/105.html
 image=http://mtgimage.com/card/arcbound%20crusher.jpg
-value=4.476
+value=4.465
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

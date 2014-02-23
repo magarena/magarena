@@ -1,7 +1,7 @@
 name=Firefly
 url=http://magiccards.info/tp/en/172.html
 image=http://mtgimage.com/card/firefly.jpg
-value=2.109
+value=2.103
 rarity=U
 type=Creature
 subtype=Insect

@@ -1,7 +1,7 @@
 name=Gobhobbler Rats
 url=http://magiccards.info/di/en/111.html
 image=http://mtgimage.com/card/gobhobbler%20rats.jpg
-value=3.365
+value=3.346
 rarity=C
 type=Creature
 subtype=Rat

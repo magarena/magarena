@@ -1,7 +1,7 @@
 name=Haazda Snare Squad
 url=http://magiccards.info/dgm/en/2.html
 image=http://mtgimage.com/card/haazda%20snare%20squad.jpg
-value=3.317
+value=3.258
 rarity=C
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Pheres-Band Tromper
 url=http://magiccards.info/bng/en/134.html
 image=http://mtgimage.com/card/pheres-band%20tromper.jpg
-value=3.818
+value=3.825
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

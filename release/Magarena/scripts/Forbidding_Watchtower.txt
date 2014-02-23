@@ -1,7 +1,7 @@
 name=Forbidding Watchtower
 url=http://magiccards.info/10e/en/352.html
 image=http://mtgimage.com/card/forbidding%20watchtower.jpg
-value=3.964
+value=3.988
 rarity=U
 type=Land
 mana=w3

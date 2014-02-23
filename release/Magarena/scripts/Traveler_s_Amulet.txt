@@ -1,7 +1,7 @@
 name=Traveler's Amulet
 url=http://magiccards.info/ths/en/221.html
 image=http://mtgimage.com/card/traveler's%20amulet.jpg
-value=2.944
+value=3.065
 rarity=C
 type=Artifact
 cost={1}

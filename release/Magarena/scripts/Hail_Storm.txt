@@ -1,7 +1,7 @@
 name=Hail Storm
 url=http://magiccards.info/tsts/en/79.html
 image=http://mtgimage.com/card/hail%20storm.jpg
-value=3.312
+value=3.227
 rarity=U
 type=Instant
 cost={1}{G}{G}

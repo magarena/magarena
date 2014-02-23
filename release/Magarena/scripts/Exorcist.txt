@@ -1,7 +1,7 @@
 name=Exorcist
 url=http://magiccards.info/dk/en/79.html
 image=http://mtgimage.com/card/exorcist.jpg
-value=3.867
+value=3.839
 rarity=U
 type=Creature
 subtype=Human,Cleric

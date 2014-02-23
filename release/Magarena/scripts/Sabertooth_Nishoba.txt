@@ -1,7 +1,7 @@
 name=Sabertooth Nishoba
 url=http://magiccards.info/in/en/268.html
 image=http://mtgimage.com/card/sabertooth%20nishoba.jpg
-value=3.980
+value=3.981
 rarity=R
 type=Creature
 subtype=Cat,Beast,Warrior

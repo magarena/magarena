@@ -1,7 +1,7 @@
 name=Akroma's Vengeance
 url=http://magiccards.info/v13/en/11.html
 image=http://mtgimage.com/card/akroma's%20vengeance.jpg
-value=4.25
+value=4.023
 rarity=M
 type=Sorcery
 cost={4}{W}{W}

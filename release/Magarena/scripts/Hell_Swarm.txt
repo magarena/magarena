@@ -1,7 +1,7 @@
 name=Hell Swarm
 url=http://magiccards.info/lg/en/17.html
 image=http://mtgimage.com/card/hell%20swarm.jpg
-value=1.373
+value=1.357
 rarity=C
 type=Instant
 cost={B}

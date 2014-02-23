@@ -1,7 +1,7 @@
 name=Flamewave Invoker
 url=http://magiccards.info/jvc/en/40.html
 image=http://mtgimage.com/card/flamewave%20invoker.jpg
-value=3.117
+value=3.062
 rarity=U
 type=Creature
 subtype=Goblin,Mutant

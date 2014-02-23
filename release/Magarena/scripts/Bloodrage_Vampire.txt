@@ -1,7 +1,7 @@
 name=Bloodrage Vampire
 url=http://magiccards.info/m12/en/83.html
 image=http://mtgimage.com/card/bloodrage%20vampire.jpg
-value=2.750
+value=2.778
 rarity=C
 type=Creature
 subtype=Vampire

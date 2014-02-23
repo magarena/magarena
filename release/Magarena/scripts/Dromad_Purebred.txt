@@ -1,7 +1,7 @@
 name=Dromad Purebred
 url=http://magiccards.info/rav/en/15.html
 image=http://mtgimage.com/card/dromad%20purebred.jpg
-value=1.442
+value=1.435
 rarity=C
 type=Creature
 subtype=Camel,Beast

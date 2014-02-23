@@ -1,7 +1,7 @@
 name=Numai Outcast
 url=http://magiccards.info/chk/en/134.html
 image=http://mtgimage.com/card/numai%20outcast.jpg
-value=0.864
+value=0.858
 rarity=U
 type=Creature
 subtype=Human,Samurai

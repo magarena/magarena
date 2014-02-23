@@ -1,7 +1,7 @@
 name=Spore Frog
 url=http://magiccards.info/pr/en/126.html
 image=http://mtgimage.com/card/spore%20frog.jpg
-value=4.482
+value=4.471
 rarity=C
 type=Creature
 subtype=Frog

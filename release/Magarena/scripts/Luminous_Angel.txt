@@ -1,7 +1,7 @@
 name=Luminous Angel
 url=http://magiccards.info/dvd/en/12.html
 image=http://mtgimage.com/card/luminous%20angel.jpg
-value=3.520
+value=3.455
 rarity=R
 type=Creature
 subtype=Angel

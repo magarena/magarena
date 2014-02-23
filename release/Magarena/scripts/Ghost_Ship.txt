@@ -1,7 +1,7 @@
 name=Ghost Ship
 url=http://magiccards.info/4e/en/75.html
 image=http://mtgimage.com/card/ghost%20ship.jpg
-value=3.667
+value=3.650
 rarity=U
 type=Creature
 subtype=Spirit

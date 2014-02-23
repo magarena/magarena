@@ -1,7 +1,7 @@
 name=Soratami Rainshaper
 url=http://magiccards.info/chk/en/89.html
 image=http://mtgimage.com/card/soratami%20rainshaper.jpg
-value=2.044
+value=2.074
 rarity=C
 type=Creature
 subtype=Moonfolk,Wizard

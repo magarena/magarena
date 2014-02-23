@@ -1,7 +1,7 @@
 name=Walker of the Grove
 url=http://magiccards.info/c13/en/175.html
 image=http://mtgimage.com/card/walker%20of%20the%20grove.jpg
-value=3.273
+value=3.545
 rarity=C
 type=Creature
 subtype=Elemental

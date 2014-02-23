@@ -1,7 +1,7 @@
 name=Mesa Falcon
 url=http://magiccards.info/6e/en/31.html
 image=http://mtgimage.com/card/mesa%20falcon.jpg
-value=2.433
+value=2.450
 rarity=C
 type=Creature
 subtype=Bird

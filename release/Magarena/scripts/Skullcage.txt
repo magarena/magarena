@@ -1,7 +1,7 @@
 name=Skullcage
 url=http://magiccards.info/arc/en/115.html
 image=http://mtgimage.com/card/skullcage.jpg
-value=3.607
+value=3.600
 rarity=U
 type=Artifact
 cost={4}

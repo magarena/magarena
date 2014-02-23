@@ -1,7 +1,7 @@
 name=Soratami Savant
 url=http://magiccards.info/chk/en/90.html
 image=http://mtgimage.com/card/soratami%20savant.jpg
-value=3.025
+value=3.050
 rarity=U
 type=Creature
 subtype=Moonfolk,Wizard

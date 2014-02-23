@@ -1,7 +1,7 @@
 name=Slaughter Cry
 url=http://magiccards.info/m12/en/155.html
 image=http://mtgimage.com/card/slaughter%20cry.jpg
-value=2.233
+value=2.193
 rarity=C
 type=Instant
 cost={2}{R}

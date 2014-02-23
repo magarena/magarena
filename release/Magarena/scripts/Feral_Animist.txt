@@ -1,7 +1,7 @@
 name=Feral Animist
 url=http://magiccards.info/dgm/en/70.html
 image=http://mtgimage.com/card/feral%20animist.jpg
-value=3.351
+value=3.268
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

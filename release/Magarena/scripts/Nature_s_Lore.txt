@@ -1,7 +1,7 @@
 name=Nature's Lore
 url=http://magiccards.info/gvl/en/17.html
 image=http://mtgimage.com/card/nature's%20lore.jpg
-value=4.467
+value=4.451
 rarity=C
 type=Sorcery
 cost={1}{G}

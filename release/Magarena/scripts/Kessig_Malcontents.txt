@@ -1,7 +1,7 @@
 name=Kessig Malcontents
 url=http://magiccards.info/avr/en/142.html
 image=http://mtgimage.com/card/kessig%20malcontents.jpg
-value=3.464
+value=3.477
 rarity=U
 type=Creature
 subtype=Human,Warrior

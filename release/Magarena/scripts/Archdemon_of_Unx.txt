@@ -1,7 +1,7 @@
 name=Archdemon of Unx
 url=http://magiccards.info/ala/en/64.html
 image=http://mtgimage.com/card/archdemon%20of%20unx.jpg
-value=2.971
+value=2.961
 rarity=R
 type=Creature
 subtype=Demon

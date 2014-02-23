@@ -1,7 +1,7 @@
 name=Mightstone
 url=http://magiccards.info/aq/en/20.html
 image=http://mtgimage.com/card/mightstone.jpg
-value=2.404
+value=2.333
 rarity=C
 type=Artifact
 cost={4}

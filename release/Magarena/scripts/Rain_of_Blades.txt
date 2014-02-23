@@ -1,7 +1,7 @@
 name=Rain of Blades
 url=http://magiccards.info/m13/en/28.html
 image=http://mtgimage.com/card/rain%20of%20blades.jpg
-value=2.875
+value=2.829
 rarity=U
 type=Instant
 cost={W}

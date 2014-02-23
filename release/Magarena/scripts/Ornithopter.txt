@@ -1,7 +1,7 @@
 name=Ornithopter
 url=http://magiccards.info/m11/en/211.html
 image=http://mtgimage.com/card/ornithopter.jpg
-value=4.559
+value=4.319
 ability=flying
 rarity=C
 type=Artifact,Creature

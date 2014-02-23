@@ -1,7 +1,7 @@
 name=Leonin Sun Standard
 url=http://magiccards.info/mi/en/194.html
 image=http://mtgimage.com/card/leonin%20sun%20standard.jpg
-value=4.133
+value=4.127
 rarity=R
 type=Artifact
 cost={2}

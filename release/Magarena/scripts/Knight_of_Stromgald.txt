@@ -1,7 +1,7 @@
 name=Knight of Stromgald
 url=http://magiccards.info/me2/en/99.html
 image=http://mtgimage.com/card/knight%20of%20stromgald.jpg
-value=3.944
+value=3.973
 rarity=U
 type=Creature
 subtype=Human,Knight

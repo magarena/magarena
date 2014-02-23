@@ -1,7 +1,7 @@
 name=Claim of Erebos
 url=http://magiccards.info/bng/en/64.html
 image=http://mtgimage.com/card/claim%20of%20erebos.jpg
-value=3.25
+value=3.333
 rarity=C
 type=Enchantment
 subtype=Aura

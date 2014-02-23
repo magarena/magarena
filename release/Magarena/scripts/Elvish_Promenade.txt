@@ -1,7 +1,7 @@
 name=Elvish Promenade
 url=http://magiccards.info/dpa/en/62.html
 image=http://mtgimage.com/card/elvish%20promenade.jpg
-value=4.070
+value=4.083
 rarity=U
 type=Tribal,Sorcery
 subtype=Elf

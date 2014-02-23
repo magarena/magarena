@@ -1,7 +1,7 @@
 name=Thunder Spirit
 url=http://magiccards.info/med/en/27.html
 image=http://mtgimage.com/card/thunder%20spirit.jpg
-value=4.185
+value=4.183
 rarity=R
 type=Creature
 subtype=Elemental,Spirit

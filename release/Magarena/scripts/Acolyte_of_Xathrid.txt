@@ -1,7 +1,7 @@
 name=Acolyte of Xathrid
 url=http://magiccards.info/m10/en/83.html
 image=http://mtgimage.com/card/acolyte%20of%20xathrid.jpg
-value=1.252
+value=1.267
 rarity=C
 type=Creature
 subtype=Human,Cleric

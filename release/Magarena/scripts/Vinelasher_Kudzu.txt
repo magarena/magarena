@@ -1,7 +1,7 @@
 name=Vinelasher Kudzu
 url=http://magiccards.info/rav/en/189.html
 image=http://mtgimage.com/card/vinelasher%20kudzu.jpg
-value=4.478
+value=4.079
 rarity=R
 type=Creature
 subtype=Plant

@@ -1,7 +1,7 @@
 name=Choking Fumes
 url=http://magiccards.info/mbs/en/4.html
 image=http://mtgimage.com/card/choking%20fumes.jpg
-value=3.303
+value=3.295
 rarity=U
 type=Instant
 cost={2}{W}

@@ -1,7 +1,7 @@
 name=Magma Rift
 url=http://magiccards.info/zen/en/136.html
 image=http://mtgimage.com/card/magma%20rift.jpg
-value=1.872
+value=1.867
 rarity=C
 type=Sorcery
 cost={2}{R}

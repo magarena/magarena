@@ -1,7 +1,7 @@
 name=Zap
 url=http://magiccards.info/in/en/180.html
 image=http://mtgimage.com/card/zap.jpg
-value=1.691
+value=1.698
 rarity=C
 type=Instant
 cost={2}{R}

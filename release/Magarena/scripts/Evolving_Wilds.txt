@@ -1,7 +1,7 @@
 name=Evolving Wilds
 url=http://magiccards.info/ddk/en/33.html
 image=http://mtgimage.com/card/evolving%20wilds.jpg
-value=3.583
+value=3.350
 rarity=C
 type=Land
 timing=land

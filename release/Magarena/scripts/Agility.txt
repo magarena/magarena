@@ -1,7 +1,7 @@
 name=Agility
 url=http://magiccards.info/mr/en/154.html
 image=http://mtgimage.com/card/agility.jpg
-value=3.530
+value=3.574
 rarity=C
 type=Enchantment
 subtype=Aura

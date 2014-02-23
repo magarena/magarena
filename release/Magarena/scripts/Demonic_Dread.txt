@@ -1,7 +1,7 @@
 name=Demonic Dread
 url=http://magiccards.info/arb/en/38.html
 image=http://mtgimage.com/card/demonic%20dread.jpg
-value=2.873
+value=2.875
 rarity=C
 type=Sorcery
 cost={1}{B}{R}

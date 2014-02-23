@@ -1,7 +1,7 @@
 name=Earthlink
 url=http://magiccards.info/ia/en/363.html
 image=http://mtgimage.com/card/earthlink.jpg
-value=3.4
+value=3.283
 rarity=R
 type=Enchantment
 cost={3}{B}{R}{G}

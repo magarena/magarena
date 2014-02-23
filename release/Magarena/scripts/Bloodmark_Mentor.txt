@@ -1,7 +1,7 @@
 name=Bloodmark Mentor
 url=http://magiccards.info/ddg/en/50.html
 image=http://mtgimage.com/card/bloodmark%20mentor.jpg
-value=3.868
+value=3.822
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

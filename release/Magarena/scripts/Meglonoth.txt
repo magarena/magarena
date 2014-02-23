@@ -1,7 +1,7 @@
 name=Meglonoth
 url=http://magiccards.info/cfx/en/118.html
 image=http://mtgimage.com/card/meglonoth.jpg
-value=4.187
+value=4.192
 rarity=R
 type=Creature
 subtype=Beast

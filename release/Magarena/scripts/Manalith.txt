@@ -1,7 +1,7 @@
 name=Manalith
 url=http://magiccards.info/m12/en/212.html
 image=http://mtgimage.com/card/manalith.jpg
-value=3.585
+value=3.522
 rarity=C
 type=Artifact
 cost={3}

@@ -1,7 +1,7 @@
 name=Deep-Slumber Titan
 url=http://magiccards.info/shm/en/89.html
 image=http://mtgimage.com/card/deep%2Dslumber%20titan.jpg
-value=3.127
+value=3.133
 rarity=R
 type=Creature
 subtype=Giant,Warrior

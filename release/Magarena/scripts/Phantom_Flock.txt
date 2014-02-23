@@ -1,7 +1,7 @@
 name=Phantom Flock
 url=http://magiccards.info/ju/en/16.html
 image=http://mtgimage.com/card/phantom%20flock.jpg
-value=2.980
+value=2.981
 rarity=U
 type=Creature
 subtype=Bird,Soldier,Spirit

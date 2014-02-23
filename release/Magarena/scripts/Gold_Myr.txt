@@ -1,7 +1,7 @@
 name=Gold Myr
 url=http://magiccards.info/som/en/157.html
 image=http://mtgimage.com/card/gold%20myr.jpg
-value=3.078
+value=3.077
 rarity=C
 type=Artifact,Creature
 subtype=Myr

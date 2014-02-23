@@ -1,7 +1,7 @@
 name=Goblin Raider
 url=http://magiccards.info/9eb/en/8.html
 image=http://mtgimage.com/card/goblin%20raider.jpg
-value=2.045
+value=2.074
 ability=can't block
 rarity=C
 type=Creature

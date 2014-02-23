@@ -1,7 +1,7 @@
 name=Launch Party
 url=http://magiccards.info/rtr/en/69.html
 image=http://mtgimage.com/card/launch%20party.jpg
-value=2.051
+value=2.016
 rarity=C
 type=Instant
 cost={3}{B}

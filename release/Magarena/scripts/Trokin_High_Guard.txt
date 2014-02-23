@@ -1,7 +1,7 @@
 name=Trokin High Guard
 url=http://magiccards.info/po2/en/146.html
 image=http://mtgimage.com/card/trokin%20high%20guard.jpg
-value=3.089
+value=3.086
 rarity=C
 type=Creature
 subtype=Human,Knight

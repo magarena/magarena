@@ -1,7 +1,7 @@
 name=Grand Coliseum
 url=http://magiccards.info/on/en/319.html
 image=http://mtgimage.com/card/grand%20coliseum.jpg
-value=3.659
+value=3.689
 type=Land
 mana=b1g1r1u1w1
 rarity=R

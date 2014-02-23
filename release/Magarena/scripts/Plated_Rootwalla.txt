@@ -1,7 +1,7 @@
 name=Plated Rootwalla
 url=http://magiccards.info/br/en/52.html
 image=http://mtgimage.com/card/plated%20rootwalla.jpg
-value=2.125
+value=2.203
 rarity=C
 type=Creature
 subtype=Lizard

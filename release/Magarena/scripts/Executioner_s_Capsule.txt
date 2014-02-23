@@ -1,7 +1,7 @@
 name=Executioner's Capsule
 url=http://magiccards.info/mma/en/83.html
 image=http://mtgimage.com/card/executioner%27s%20capsule.jpg
-value=4.094
+value=4.286
 rarity=U
 type=Artifact
 cost={B}

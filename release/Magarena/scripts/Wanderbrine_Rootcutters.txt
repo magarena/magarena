@@ -1,7 +1,7 @@
 name=Wanderbrine Rootcutters
 url=http://magiccards.info/shm/en/178.html
 image=http://mtgimage.com/card/wanderbrine%20rootcutters.jpg
-value=2.143
+value=2.162
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

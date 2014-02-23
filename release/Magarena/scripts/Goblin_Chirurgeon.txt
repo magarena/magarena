@@ -1,7 +1,7 @@
 name=Goblin Chirurgeon
 url=http://magiccards.info/fe/en/110.html
 image=http://mtgimage.com/card/goblin%20chirurgeon.jpg
-value=3.919
+value=3.897
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

@@ -1,7 +1,7 @@
 name=Seismic Strike
 url=http://magiccards.info/ddi/en/70.html
 image=http://mtgimage.com/card/seismic%20strike.jpg
-value=2.55
+value=2.550
 rarity=C
 type=Instant
 cost={2}{R}

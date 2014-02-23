@@ -1,7 +1,7 @@
 name=Nighthaze
 url=http://magiccards.info/roe/en/118.html
 image=http://mtgimage.com/card/nighthaze.jpg
-value=2.235
+value=2.260
 rarity=C
 type=Sorcery
 cost={B}

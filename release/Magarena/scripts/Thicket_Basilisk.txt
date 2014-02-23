@@ -1,7 +1,7 @@
 name=Thicket Basilisk
 url=http://magiccards.info/6e/en/256.html
 image=http://mtgimage.com/card/thicket%20basilisk.jpg
-value=3.250
+value=3.195
 rarity=U
 type=Creature
 subtype=Basilisk

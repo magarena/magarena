@@ -1,7 +1,7 @@
 name=Corpse Cur
 url=http://magiccards.info/som/en/147.html
 image=http://mtgimage.com/card/corpse%20cur.jpg
-value=3.262
+value=3.256
 rarity=C
 type=Artifact,Creature
 subtype=Hound

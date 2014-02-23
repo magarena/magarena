@@ -1,7 +1,7 @@
 name=River Boa
 url=http://magiccards.info/dpa/en/80.html
 image=http://mtgimage.com/card/river%20boa.jpg
-value=4.367
+value=4.383
 rarity=U
 type=Creature
 subtype=Snake

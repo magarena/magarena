@@ -1,7 +1,7 @@
 name=Giant Octopus
 url=http://magiccards.info/9eb/en/4.html
 image=http://mtgimage.com/card/giant%20octopus.jpg
-value=2.146
+value=2.153
 rarity=C
 type=Creature
 subtype=Octopus

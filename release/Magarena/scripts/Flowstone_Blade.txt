@@ -1,7 +1,7 @@
 name=Flowstone Blade
 url=http://magiccards.info/sh/en/83.html
 image=http://mtgimage.com/card/flowstone%20blade.jpg
-value=2.531
+value=2.545
 rarity=C
 type=Enchantment
 subtype=Aura

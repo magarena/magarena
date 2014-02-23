@@ -1,7 +1,7 @@
 name=Daru Encampment
 url=http://magiccards.info/ddf/en/32.html
 image=http://mtgimage.com/card/daru%20encampment.jpg
-value=3.353
+value=3.357
 rarity=U
 type=Land
 ability=tap add mana {1};pay {W},{T}:Target Soldier creature gets +1/+1 until end of turn.

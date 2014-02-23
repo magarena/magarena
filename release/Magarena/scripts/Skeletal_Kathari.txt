@@ -1,7 +1,7 @@
 name=Skeletal Kathari
 url=http://magiccards.info/ala/en/88.html
 image=http://mtgimage.com/card/skeletal%20kathari.jpg
-value=1.835
+value=1.806
 rarity=C
 type=Creature
 subtype=Bird,Skeleton

@@ -1,7 +1,7 @@
 name=Berserkers of Blood Ridge
 url=http://magiccards.info/m11/en/124.html
 image=http://mtgimage.com/card/berserkers%20of%20blood%20ridge.jpg
-value=1.026
+value=1.056
 ability=attacks each turn if able
 rarity=C
 type=Creature

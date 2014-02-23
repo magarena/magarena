@@ -1,7 +1,7 @@
 name=Traitorous Blood
 url=http://magiccards.info/isd/en/166.html
 image=http://mtgimage.com/card/traitorous%20blood.jpg
-value=3.804
+value=3.813
 removal=5
 rarity=C
 type=Sorcery

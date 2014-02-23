@@ -1,7 +1,7 @@
 name=Staff of the Flame Magus
 url=http://magiccards.info/m14/en/220.html
 image=http://mtgimage.com/card/staff%20of%20the%20flame%20magus.jpg
-value=1.857
+value=1.853
 rarity=U
 type=Artifact
 cost={3}

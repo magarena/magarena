@@ -1,7 +1,7 @@
 name=Wake of Vultures
 url=http://magiccards.info/vi/en/24.html
 image=http://mtgimage.com/card/wake%20of%20vultures.jpg
-value=3.479
+value=3.540
 rarity=C
 type=Creature
 subtype=Bird

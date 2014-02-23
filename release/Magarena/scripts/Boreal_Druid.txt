@@ -1,7 +1,7 @@
 name=Boreal Druid
 url=http://magiccards.info/cs/en/105.html
 image=http://mtgimage.com/card/boreal%20druid.jpg
-value=3.288
+value=3.270
 rarity=C
 type=Snow,Creature
 subtype=Elf,Druid

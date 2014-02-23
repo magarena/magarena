@@ -1,7 +1,7 @@
 name=Ruric Thar, the Unbowed
 url=http://magiccards.info/dgm/en/99.html
 image=http://mtgimage.com/card/ruric%20thar,%20the%20unbowed.jpg
-value=4.135
+value=3.792
 rarity=R
 type=Legendary,Creature
 subtype=Ogre,Warrior

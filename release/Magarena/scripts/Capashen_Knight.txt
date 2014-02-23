@@ -1,7 +1,7 @@
 name=Capashen Knight
 url=http://magiccards.info/ud/en/3.html
 image=http://mtgimage.com/card/capashen%20knight.jpg
-value=3.288
+value=3.257
 rarity=C
 type=Creature
 subtype=Human,Knight

@@ -1,7 +1,7 @@
 name=Claustrophobia
 url=http://magiccards.info/isd/en/48.html
 image=http://mtgimage.com/card/claustrophobia.jpg
-value=3.797
+value=3.611
 removal=2
 rarity=C
 type=Enchantment

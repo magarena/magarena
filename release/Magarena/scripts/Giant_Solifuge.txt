@@ -1,7 +1,7 @@
 name=Giant Solifuge
 url=http://magiccards.info/gp/en/143.html
 image=http://mtgimage.com/card/giant%20solifuge.jpg
-value=4.093
+value=4.092
 ability=trample;haste;shroud
 rarity=R
 type=Creature

@@ -1,7 +1,7 @@
 name=Firemane Avenger
 url=http://magiccards.info/gtc/en/163.html
 image=http://mtgimage.com/card/firemane%20avenger.jpg
-value=4.106
+value=4.000
 rarity=R
 type=Creature
 subtype=Angel

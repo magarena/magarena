@@ -1,7 +1,7 @@
 name=Serpent Skin
 url=http://magiccards.info/chk/en/240.html
 image=http://mtgimage.com/card/serpent%20skin.jpg
-value=3.029
+value=3.014
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Cyclops of One-Eyed Pass
 url=http://magiccards.info/bng/en/90.html
 image=http://mtgimage.com/card/cyclops%20of%20one-eyed%20pass.jpg
-value=3.05
+value=3.158
 rarity=C
 type=Creature
 subtype=Cyclops

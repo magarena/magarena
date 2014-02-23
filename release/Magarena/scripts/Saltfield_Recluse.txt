@@ -1,7 +1,7 @@
 name=Saltfield Recluse
 url=http://magiccards.info/mma/en/27.html
 image=http://mtgimage.com/card/saltfield%20recluse.jpg
-value=2.132
+value=2.150
 rarity=C
 type=Creature
 subtype=Human,Rebel,Cleric

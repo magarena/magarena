@@ -1,7 +1,7 @@
 name=Wandering Ones
 url=http://magiccards.info/chk/en/100.html
 image=http://mtgimage.com/card/wandering%20ones.jpg
-value=3.138
+value=3.174
 rarity=C
 type=Creature
 subtype=Spirit

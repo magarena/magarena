@@ -1,7 +1,7 @@
 name=Dingus Staff
 url=http://magiccards.info/wl/en/149.html
 image=http://mtgimage.com/card/dingus%20staff.jpg
-value=3.471
+value=3.458
 rarity=U
 type=Artifact
 cost={4}

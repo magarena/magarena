@@ -1,7 +1,7 @@
 name=Ogre Berserker
 url=http://magiccards.info/po2/en/111.html
 image=http://mtgimage.com/card/ogre%20berserker.jpg
-value=2.318
+value=2.326
 rarity=C
 type=Creature
 subtype=Ogre,Berserker

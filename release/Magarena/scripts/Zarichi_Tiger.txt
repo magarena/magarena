@@ -1,7 +1,7 @@
 name=Zarichi Tiger
 url=http://magiccards.info/gtc/en/28.html
 image=http://mtgimage.com/card/zarichi%20tiger.jpg
-value=2.245
+value=2.275
 rarity=C
 type=Creature
 subtype=Cat

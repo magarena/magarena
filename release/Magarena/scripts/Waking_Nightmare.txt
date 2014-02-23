@@ -1,7 +1,7 @@
 name=Waking Nightmare
 url=http://magiccards.info/chk/en/149.html
 image=http://mtgimage.com/card/waking%20nightmare.jpg
-value=3.297
+value=3.294
 rarity=C
 type=Sorcery
 subtype=Arcane

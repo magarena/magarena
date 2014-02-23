@@ -1,7 +1,7 @@
 name=Vizzerdrix
 url=http://magiccards.info/9eb/en/7.html
 image=http://mtgimage.com/card/vizzerdrix.jpg
-value=2.219
+value=2.210
 rarity=R
 type=Creature
 subtype=Rabbit,Beast

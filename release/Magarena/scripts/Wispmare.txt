@@ -1,7 +1,7 @@
 name=Wispmare
 url=http://magiccards.info/lw/en/48.html
 image=http://mtgimage.com/card/wispmare.jpg
-value=4.013
+value=4.060
 rarity=C
 type=Creature
 subtype=Elemental

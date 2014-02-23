@@ -1,7 +1,7 @@
 name=Mirror Entity
 url=http://magiccards.info/lw/en/31.html
 image=http://mtgimage.com/card/mirror%20entity.jpg
-value=4.115
+value=4.094
 rarity=R
 type=Creature
 subtype=Shapeshifter

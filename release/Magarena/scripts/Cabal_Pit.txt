@@ -1,7 +1,7 @@
 name=Cabal Pit
 url=http://magiccards.info/od/pt/315.html
 image=http://mtgimage.com/card/cabal%20pit.jpg
-value=3.518
+value=3.569
 rarity=U
 type=Land
 mana=b2

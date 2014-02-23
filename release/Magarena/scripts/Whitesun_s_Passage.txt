@@ -1,7 +1,7 @@
 name=Whitesun's Passage
 url=http://magiccards.info/som/en/27.html
 image=http://mtgimage.com/card/whitesun%27s%20passage.jpg
-value=2.199
+value=2.216
 rarity=C
 type=Instant
 cost={1}{W}

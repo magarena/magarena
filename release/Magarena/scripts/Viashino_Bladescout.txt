@@ -1,7 +1,7 @@
 name=Viashino Bladescout
 url=http://magiccards.info/ts/en/185.html
 image=http://mtgimage.com/card/viashino%20bladescout.jpg
-value=2.722
+value=2.786
 rarity=C
 type=Creature
 subtype=Viashino,Scout

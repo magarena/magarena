@@ -1,7 +1,7 @@
 name=Nessian Demolok
 url=http://magiccards.info/bng/en/128.html
 image=http://mtgimage.com/card/nessian%20demolok.jpg
-value=2.958
+value=3.023
 rarity=U
 type=Creature
 subtype=Beast

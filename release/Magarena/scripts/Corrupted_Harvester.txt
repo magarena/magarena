@@ -1,7 +1,7 @@
 name=Corrupted Harvester
 url=http://magiccards.info/som/en/59.html
 image=http://mtgimage.com/card/corrupted%20harvester.jpg
-value=1.955
+value=1.937
 rarity=U
 type=Creature
 subtype=Horror

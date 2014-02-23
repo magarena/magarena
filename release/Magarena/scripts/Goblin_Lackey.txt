@@ -1,7 +1,7 @@
 name=Goblin Lackey
 url=http://magiccards.info/fve/en/5.html
 image=http://mtgimage.com/card/goblin%20lackey.jpg
-value=4.596
+value=4.603
 rarity=M
 type=Creature
 subtype=Goblin

@@ -1,7 +1,7 @@
 name=Hold at Bay
 url=http://magiccards.info/bng/en/18.html
 image=http://mtgimage.com/card/hold%20at%20bay.jpg
-value=1.824
+value=1.852
 rarity=C
 type=Instant
 cost={1}{W}

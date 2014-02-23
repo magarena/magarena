@@ -1,7 +1,7 @@
 name=Phyrexian Reclamation
 url=http://magiccards.info/c13/en/88.html
 image=http://mtgimage.com/card/phyrexian%20reclamation.jpg
-value=4.223
+value=4.167
 rarity=U
 type=Enchantment
 cost={B}

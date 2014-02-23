@@ -1,7 +1,7 @@
 name=Jalum Tome
 url=http://magiccards.info/7e/en/303.html
 image=http://mtgimage.com/card/jalum%20tome.jpg
-value=2.962
+value=2.875
 rarity=R
 type=Artifact
 cost={3}

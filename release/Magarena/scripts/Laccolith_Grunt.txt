@@ -1,7 +1,7 @@
 name=Laccolith Grunt
 url=http://magiccards.info/ne/en/87.html
 image=http://mtgimage.com/card/laccolith%20grunt.jpg
-value=3.156
+value=3.182
 rarity=C
 type=Creature
 subtype=Beast

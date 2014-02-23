@@ -1,7 +1,7 @@
 name=Skull Collector
 url=http://magiccards.info/sok/en/90.html
 image=http://mtgimage.com/card/skull%20collector.jpg
-value=3.3
+value=3.234
 rarity=U
 type=Creature
 subtype=Ogre,Warrior

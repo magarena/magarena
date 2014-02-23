@@ -1,7 +1,7 @@
 name=Glimmering Angel
 url=http://magiccards.info/in/en/17.html
 image=http://mtgimage.com/card/glimmering%20angel.jpg
-value=2.743
+value=2.750
 rarity=C
 type=Creature
 subtype=Angel

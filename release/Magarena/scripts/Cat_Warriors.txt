@@ -1,7 +1,7 @@
 name=Cat Warriors
 url=http://magiccards.info/6e/en/219.html
 image=http://mtgimage.com/card/cat%20warriors.jpg
-value=2.586
+value=2.550
 rarity=C
 type=Creature
 subtype=Cat,Warrior

@@ -1,7 +1,7 @@
 name=Scarland Thrinax
 url=http://magiccards.info/cfx/en/123.html
 image=http://mtgimage.com/card/scarland%20thrinax.jpg
-value=3.562
+value=3.318
 rarity=U
 type=Creature
 subtype=Lizard

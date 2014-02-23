@@ -1,7 +1,7 @@
 name=Lim-Dul's High Guard
 url=http://magiccards.info/ai/en/18.html
 image=http://mtgimage.com/card/lim%2Ddul%27s%20high%20guard.jpg
-value=3.525
+value=3.561
 rarity=C
 type=Creature
 subtype=Skeleton

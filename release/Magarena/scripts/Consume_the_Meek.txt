@@ -1,7 +1,7 @@
 name=Consume the Meek
 url=http://magiccards.info/roe/en/100.html
 image=http://mtgimage.com/card/consume%20the%20meek.jpg
-value=4.314
+value=4.311
 rarity=R
 type=Instant
 cost={3}{B}{B}

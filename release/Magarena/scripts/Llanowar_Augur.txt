@@ -1,7 +1,7 @@
 name=Llanowar Augur
 url=http://magiccards.info/fut/en/129.html
 image=http://mtgimage.com/card/llanowar%20augur.jpg
-value=3.683
+value=3.720
 rarity=C
 type=Creature
 subtype=Elf,Shaman

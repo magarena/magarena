@@ -1,7 +1,7 @@
 name=Starlight Invoker
 url=http://magiccards.info/10e/en/47.html
 image=http://mtgimage.com/card/starlight%20invoker.jpg
-value=2.604
+value=2.700
 rarity=C
 type=Creature
 subtype=Human,Cleric,Mutant

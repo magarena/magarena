@@ -1,7 +1,7 @@
 name=Nameless Inversion
 url=http://magiccards.info/lw/en/128.html
 image=http://mtgimage.com/card/nameless%20inversion.jpg
-value=4.211
+value=4.208
 rarity=C
 type=Tribal,Instant
 subtype=Shapeshifter

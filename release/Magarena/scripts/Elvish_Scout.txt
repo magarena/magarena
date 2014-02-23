@@ -1,7 +1,7 @@
 name=Elvish Scout
 url=http://magiccards.info/fe/en/76.html
 image=http://mtgimage.com/card/elvish%20scout.jpg
-value=3.750
+value=3.765
 rarity=C
 type=Creature
 subtype=Elf,Scout

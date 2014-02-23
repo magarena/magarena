@@ -1,7 +1,7 @@
 name=Farbog Explorer
 url=http://magiccards.info/avr/en/21.html
 image=http://mtgimage.com/card/farbog%20explorer.jpg
-value=2.485
+value=2.542
 rarity=C
 type=Creature
 subtype=Human,Scout

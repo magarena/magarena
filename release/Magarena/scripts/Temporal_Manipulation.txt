@@ -1,7 +1,7 @@
 name=Temporal Manipulation
 url=http://magiccards.info/po2/en/54.html
 image=http://mtgimage.com/card/temporal%20manipulation.jpg
-value=4.361
+value=4.342
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

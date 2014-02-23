@@ -1,7 +1,7 @@
 name=Rank and File
 url=http://magiccards.info/ul/en/65.html
 image=http://mtgimage.com/card/rank%20and%20file.jpg
-value=2.958
+value=2.960
 rarity=U
 type=Creature
 subtype=Zombie

@@ -1,7 +1,7 @@
 name=Ghost Hounds
 url=http://magiccards.info/hl/en/12.html
 image=http://mtgimage.com/card/ghost%20hounds.jpg
-value=2.81
+value=2.807
 rarity=U
 type=Creature
 subtype=Hound,Spirit

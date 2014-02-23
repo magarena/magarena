@@ -1,7 +1,7 @@
 name=Zombie Goliath
 url=http://magiccards.info/m12/en/119.html
 image=http://mtgimage.com/card/zombie%20goliath.jpg
-value=0.977
+value=0.978
 rarity=C
 type=Creature
 subtype=Zombie,Giant

@@ -1,7 +1,7 @@
 name=Ajani Vengeant
 url=http://magiccards.info/ala/en/154.html
 image=http://mtgimage.com/card/ajani%20vengeant.jpg
-value=4.066
+value=4.078
 rarity=M
 type=Planeswalker
 subtype=Ajani

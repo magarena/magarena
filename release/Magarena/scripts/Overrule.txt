@@ -1,7 +1,7 @@
 name=Overrule
 url=http://magiccards.info/ddi/en/32.html
 image=http://mtgimage.com/card/overrule.jpg
-value=2.981
+value=3.036
 rarity=C
 type=Instant
 cost={X}{W}{U}

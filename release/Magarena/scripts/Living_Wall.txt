@@ -1,7 +1,7 @@
 name=Living Wall
 url=http://magiccards.info/rv/en/262.html
 image=http://mtgimage.com/card/living%20wall.jpg
-value=3.887
+value=3.812
 rarity=U
 type=Artifact,Creature
 subtype=Wall

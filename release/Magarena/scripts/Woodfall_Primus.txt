@@ -1,7 +1,7 @@
 name=Woodfall Primus
 url=http://magiccards.info/shm/en/135.html
 image=http://mtgimage.com/card/woodfall%20primus.jpg
-value=4.136
+value=4.200
 rarity=R
 type=Creature
 subtype=Treefolk,Shaman

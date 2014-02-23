@@ -1,7 +1,7 @@
 name=Needle Storm
 url=http://magiccards.info/9e/en/259.html
 image=http://mtgimage.com/card/needle%20storm.jpg
-value=3.633
+value=3.613
 rarity=U
 type=Sorcery
 cost={2}{G}

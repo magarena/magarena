@@ -1,7 +1,7 @@
 name=Sage of Lat-Nam
 url=http://magiccards.info/8e/en/97.html
 image=http://mtgimage.com/card/sage%20of%20lat-nam.jpg
-value=3.455
+value=3.441
 rarity=R
 type=Creature
 subtype=Human,Artificer

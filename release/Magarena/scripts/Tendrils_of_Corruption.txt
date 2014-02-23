@@ -1,7 +1,7 @@
 name=Tendrils of Corruption
 url=http://magiccards.info/pvc/en/30.html
 image=http://mtgimage.com/card/tendrils%20of%20corruption.jpg
-value=4.167
+value=4.179
 rarity=C
 type=Instant
 cost={3}{B}

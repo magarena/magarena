@@ -1,7 +1,7 @@
 name=Trostani's Judgment
 url=http://magiccards.info/rtr/en/28.html
 image=http://mtgimage.com/card/trostani%27s%20judgment.jpg
-value=2.509
+value=2.500
 rarity=C
 type=Instant
 cost={5}{W}

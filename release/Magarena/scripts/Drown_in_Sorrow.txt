@@ -1,7 +1,7 @@
 name=Drown in Sorrow
 url=http://magiccards.info/bng/en/65.html
 image=http://mtgimage.com/card/drown%20in%20sorrow.jpg
-value=4.062
+value=3.892
 rarity=U
 type=Sorcery
 cost={1}{B}{B}

@@ -1,7 +1,7 @@
 name=Mystic Penitent
 url=http://magiccards.info/od/en/34.html
 image=http://mtgimage.com/card/mystic%20penitent.jpg
-value=3.757
+value=3.763
 rarity=U
 type=Creature
 subtype=Human,Nomad,Mystic

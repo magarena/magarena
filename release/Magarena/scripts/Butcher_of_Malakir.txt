@@ -1,7 +1,7 @@
 name=Butcher of Malakir
 url=http://magiccards.info/cmd/en/75.html
 image=http://mtgimage.com/card/butcher%20of%20malakir.jpg
-value=4.023
+value=3.635
 rarity=R
 type=Creature
 subtype=Vampire,Warrior

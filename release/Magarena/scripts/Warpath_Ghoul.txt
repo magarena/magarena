@@ -1,7 +1,7 @@
 name=Warpath Ghoul
 url=http://magiccards.info/m12/en/117.html
 image=http://mtgimage.com/card/warpath%20ghoul.jpg
-value=2.123
+value=2.093
 rarity=C
 type=Creature
 subtype=Zombie

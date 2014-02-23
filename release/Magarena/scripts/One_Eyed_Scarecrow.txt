@@ -1,7 +1,7 @@
 name=One-Eyed Scarecrow
 url=http://magiccards.info/isd/en/230.html
 image=http://mtgimage.com/card/one%2Deyed%20scarecrow.jpg
-value=2.830
+value=2.831
 removal=1
 rarity=C
 type=Artifact,Creature

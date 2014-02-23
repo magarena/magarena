@@ -1,7 +1,7 @@
 name=Infest
 url=http://magiccards.info/arc/en/19.html
 image=http://mtgimage.com/card/infest.jpg
-value=4.278
+value=4.000
 removal=2
 rarity=U
 type=Sorcery

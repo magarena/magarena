@@ -1,7 +1,7 @@
 name=Inspirit
 url=http://magiccards.info/9e/en/22.html
 image=http://mtgimage.com/card/inspirit.jpg
-value=2.804
+value=2.810
 rarity=U
 type=Instant
 cost={2}{W}

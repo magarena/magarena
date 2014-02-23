@@ -1,7 +1,7 @@
 name=Reviving Dose
 url=http://magiccards.info/10e/en/34.html
 image=http://mtgimage.com/card/reviving%20dose.jpg
-value=2.804
+value=2.798
 rarity=C
 type=Instant
 cost={2}{W}

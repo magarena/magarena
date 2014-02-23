@@ -1,7 +1,7 @@
 name=Tangle Mantis
 url=http://magiccards.info/mbs/en/91.html
 image=http://mtgimage.com/card/tangle%20mantis.jpg
-value=2.983
+value=2.959
 ability=trample
 rarity=C
 type=Creature

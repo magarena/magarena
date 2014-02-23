@@ -1,7 +1,7 @@
 name=Piety
 url=http://magiccards.info/4e/en/291.html
 image=http://mtgimage.com/card/piety.jpg
-value=1.463
+value=1.452
 rarity=C
 type=Instant
 cost={2}{W}

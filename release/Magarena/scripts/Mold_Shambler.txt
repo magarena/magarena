@@ -1,7 +1,7 @@
 name=Mold Shambler
 url=http://magiccards.info/c13/en/156.html
 image=http://mtgimage.com/card/mold%20shambler.jpg
-value=4.000
+value=3.833
 rarity=C
 type=Creature
 subtype=Fungus,Beast

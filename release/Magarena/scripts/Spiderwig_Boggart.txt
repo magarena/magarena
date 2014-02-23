@@ -1,7 +1,7 @@
 name=Spiderwig Boggart
 url=http://magiccards.info/lw/en/141.html
 image=http://mtgimage.com/card/spiderwig%20boggart.jpg
-value=2.250
+value=2.208
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

@@ -1,7 +1,7 @@
 name=Furnace Spirit
 url=http://magiccards.info/sh/en/87.html
 image=http://mtgimage.com/card/furnace%20spirit.jpg
-value=2.071
+value=2.086
 rarity=C
 type=Creature
 subtype=Spirit

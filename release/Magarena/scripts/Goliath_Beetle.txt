@@ -1,7 +1,7 @@
 name=Goliath Beetle
 url=http://magiccards.info/ud/en/107.html
 image=http://mtgimage.com/card/goliath%20beetle.jpg
-value=3.037
+value=3.054
 rarity=C
 type=Creature
 subtype=Insect

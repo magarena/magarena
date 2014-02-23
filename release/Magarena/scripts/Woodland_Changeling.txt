@@ -1,7 +1,7 @@
 name=Woodland Changeling
 url=http://magiccards.info/lw/en/242.html
 image=http://mtgimage.com/card/woodland%20changeling.jpg
-value=3.267
+value=3.273
 ability=changeling
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Hearthcage Giant
 url=http://magiccards.info/lw/en/174.html
 image=http://mtgimage.com/card/hearthcage%20giant.jpg
-value=3.018
+value=3.086
 rarity=U
 type=Creature
 subtype=Giant,Warrior

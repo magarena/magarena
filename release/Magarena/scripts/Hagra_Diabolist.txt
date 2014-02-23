@@ -1,7 +1,7 @@
 name=Hagra Diabolist
 url=http://magiccards.info/zen/en/95.html
 image=http://mtgimage.com/card/hagra%20diabolist.jpg
-value=3.825
+value=3.802
 rarity=U
 type=Creature
 subtype=Ogre,Shaman,Ally

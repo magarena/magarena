@@ -1,7 +1,7 @@
 name=Kavu Aggressor
 url=http://magiccards.info/in/en/148.html
 image=http://mtgimage.com/card/kavu%20aggressor.jpg
-value=1.765
+value=1.779
 rarity=C
 type=Creature
 subtype=Kavu

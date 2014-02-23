@@ -1,7 +1,7 @@
 name=Symbol of Unsummoning
 url=http://magiccards.info/me4/en/65.html
 image=http://mtgimage.com/card/symbol%20of%20unsummoning.jpg
-value=3.000
+value=3.029
 removal=2
 rarity=C
 type=Sorcery

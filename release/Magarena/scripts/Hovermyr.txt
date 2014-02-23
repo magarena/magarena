@@ -1,7 +1,7 @@
 name=Hovermyr
 url=http://magiccards.info/nph/en/138.html
 image=http://mtgimage.com/card/hovermyr.jpg
-value=3.858
+value=3.737
 ability=flying;vigilance
 rarity=C
 type=Artifact,Creature

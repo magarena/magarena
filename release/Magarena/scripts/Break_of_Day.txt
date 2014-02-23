@@ -1,7 +1,7 @@
 name=Break of Day
 url=http://magiccards.info/dka/en/3.html
 image=http://mtgimage.com/card/break%20of%20day.jpg
-value=3.071
+value=3.070
 rarity=C
 type=Instant
 cost={1}{W}

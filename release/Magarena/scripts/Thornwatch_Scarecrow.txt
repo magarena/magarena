@@ -1,7 +1,7 @@
 name=Thornwatch Scarecrow
 url=http://magiccards.info/shm/en/265.html
 image=http://mtgimage.com/card/thornwatch%20scarecrow.jpg
-value=2.048
+value=2.068
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

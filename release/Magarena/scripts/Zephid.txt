@@ -1,7 +1,7 @@
 name=Zephid
 url=http://magiccards.info/us/en/113.html
 image=http://mtgimage.com/card/zephid.jpg
-value=3.256
+value=3.250
 rarity=R
 type=Creature
 subtype=Illusion

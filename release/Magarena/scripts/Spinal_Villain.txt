@@ -1,7 +1,7 @@
 name=Spinal Villain
 url=http://magiccards.info/lg/en/161.html
 image=http://mtgimage.com/card/spinal%20villain.jpg
-value=3.771
+value=3.743
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,7 +1,7 @@
 name=Chimeric Egg
 url=http://magiccards.info/ds/en/106.html
 image=http://mtgimage.com/card/chimeric%20egg.jpg
-value=3.232
+value=3.167
 rarity=U
 type=Artifact
 cost={3}

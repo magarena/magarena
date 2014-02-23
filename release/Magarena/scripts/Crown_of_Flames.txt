@@ -1,7 +1,7 @@
 name=Crown of Flames
 url=http://magiccards.info/in/en/142.html
 image=http://mtgimage.com/card/crown%20of%20flames.jpg
-value=4.162
+value=4.171
 rarity=C
 type=Enchantment
 subtype=Aura

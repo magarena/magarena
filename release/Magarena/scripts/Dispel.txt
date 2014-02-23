@@ -1,7 +1,7 @@
 name=Dispel
 url=http://magiccards.info/rtr/en/36.html
 image=http://mtgimage.com/card/dispel.jpg
-value=3.536
+value=3.563
 rarity=C
 type=Instant
 cost={U}

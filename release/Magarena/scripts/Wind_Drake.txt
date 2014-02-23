@@ -1,7 +1,7 @@
 name=Wind Drake
 url=http://magiccards.info/m10/en/81.html
 image=http://mtgimage.com/card/wind%20drake.jpg
-value=2.829
+value=2.833
 ability=flying
 rarity=C
 type=Creature

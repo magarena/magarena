@@ -1,7 +1,7 @@
 name=Blade Splicer
 url=http://magiccards.info/nph/en/4.html
 image=http://mtgimage.com/card/blade%20splicer.jpg
-value=3.857
+value=3.774
 rarity=R
 type=Creature
 subtype=Human,Artificer

@@ -1,7 +1,7 @@
 name=Kaalia of the Vast
 url=http://magiccards.info/cma/en/9.html
 image=http://mtgimage.com/card/kaalia%20of%20the%20vast.jpg
-value=4.118
+value=4.089
 rarity=M
 type=Legendary,Creature
 subtype=Human,Cleric

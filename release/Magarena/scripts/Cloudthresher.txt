@@ -1,7 +1,7 @@
 name=Cloudthresher
 url=http://magiccards.info/lw/en/202.html
 image=http://mtgimage.com/card/cloudthresher.jpg
-value=4.125
+value=4.145
 rarity=R
 type=Creature
 subtype=Elemental

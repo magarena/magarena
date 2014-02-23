@@ -1,7 +1,7 @@
 name=Skarrg Guildmage
 url=http://magiccards.info/gtc/en/196.html
 image=http://mtgimage.com/card/skarrg%20guildmage.jpg
-value=3.885
+value=3.902
 rarity=U
 type=Creature
 subtype=Human,Shaman

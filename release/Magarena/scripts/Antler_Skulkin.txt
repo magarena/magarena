@@ -1,7 +1,7 @@
 name=Antler Skulkin
 url=http://magiccards.info/eve/en/167.html
 image=http://mtgimage.com/card/antler%20skulkin.jpg
-value=2.105
+value=2.102
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

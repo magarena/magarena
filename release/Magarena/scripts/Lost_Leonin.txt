@@ -1,7 +1,7 @@
 name=Lost Leonin
 url=http://magiccards.info/nph/en/13.html
 image=http://mtgimage.com/card/lost%20leonin.jpg
-value=3.146
+value=3.110
 ability=infect
 rarity=C
 type=Creature

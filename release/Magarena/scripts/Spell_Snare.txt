@@ -1,7 +1,7 @@
 name=Spell Snare
 url=http://magiccards.info/di/en/33.html
 image=http://mtgimage.com/card/spell%20snare.jpg
-value=4.029
+value=4.417
 rarity=U
 type=Instant
 cost={U}

@@ -1,7 +1,7 @@
 name=Divine Verdict
 url=http://magiccards.info/ths/en/8.html
 image=http://mtgimage.com/card/divine%20verdict.jpg
-value=3.000
+value=3.015
 rarity=C
 type=Instant
 cost={3}{W}

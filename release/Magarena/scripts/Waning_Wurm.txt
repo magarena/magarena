@@ -1,7 +1,7 @@
 name=Waning Wurm
 url=http://magiccards.info/pc/en/83.html
 image=http://mtgimage.com/card/waning%20wurm.jpg
-value=3.222
+value=3.174
 rarity=U
 type=Creature
 subtype=Zombie,Wurm

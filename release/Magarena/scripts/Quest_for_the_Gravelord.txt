@@ -1,7 +1,7 @@
 name=Quest for the Gravelord
 url=http://magiccards.info/zen/en/108.html
 image=http://mtgimage.com/card/quest%20for%20the%20gravelord.jpg
-value=4.160
+value=4.165
 rarity=U
 type=Enchantment
 cost={B}

@@ -1,7 +1,7 @@
 name=Fists of the Demigod
 url=http://magiccards.info/shm/en/187.html
 image=http://mtgimage.com/card/fists%20of%20the%20demigod.jpg
-value=4.043
+value=4.036
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Vampire Warlord
 url=http://magiccards.info/m14/en/120.html
 image=http://mtgimage.com/card/vampire%20warlord.jpg
-value=1.648
+value=1.694
 rarity=U
 type=Creature
 subtype=Vampire,Warrior

@@ -1,7 +1,7 @@
 name=Sands of Delirium
 url=http://magiccards.info/m13/en/216.html
 image=http://mtgimage.com/card/sands%20of%20delirium.jpg
-value=3.828
+value=3.831
 rarity=R
 type=Artifact
 cost={3}

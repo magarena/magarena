@@ -1,7 +1,7 @@
 name=Aquastrand Spider
 url=http://magiccards.info/cmd/en/141.html
 image=http://mtgimage.com/card/aquastrand%20spider.jpg
-value=2.692
+value=2.741
 rarity=C
 type=Creature
 subtype=Spider,Mutant

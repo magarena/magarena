@@ -1,7 +1,7 @@
 name=Horseshoe Crab
 url=http://magiccards.info/10e/en/87.html
 image=http://mtgimage.com/card/horseshoe%20crab.jpg
-value=4.396
+value=4.398
 rarity=C
 type=Creature
 subtype=Crab

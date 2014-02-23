@@ -1,7 +1,7 @@
 name=Caregiver
 url=http://magiccards.info/rav/en/6.html
 image=http://mtgimage.com/card/caregiver.jpg
-value=1.193
+value=1.184
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=Stonebrow, Krosan Hero
 url=http://magiccards.info/ts/en/247.html
 image=http://mtgimage.com/card/stonebrow%2C%20krosan%20hero.jpg
-value=4.050
+value=4.014
 rarity=R
 type=Legendary,Creature
 subtype=Centaur,Warrior

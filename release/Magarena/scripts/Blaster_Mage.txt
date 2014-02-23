@@ -1,7 +1,7 @@
 name=Blaster Mage
 url=http://magiccards.info/mm/en/175.html
 image=http://mtgimage.com/card/blaster%20mage.jpg
-value=2.533
+value=2.547
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

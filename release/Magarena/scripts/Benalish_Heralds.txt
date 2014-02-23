@@ -1,7 +1,7 @@
 name=Benalish Heralds
 url=http://magiccards.info/in/en/6.html
 image=http://mtgimage.com/card/benalish%20heralds.jpg
-value=2.516
+value=2.547
 rarity=U
 type=Creature
 subtype=Human,Soldier

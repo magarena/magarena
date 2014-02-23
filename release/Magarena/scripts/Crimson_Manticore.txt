@@ -1,7 +1,7 @@
 name=Crimson Manticore
 url=http://magiccards.info/5e/en/217.html
 image=http://mtgimage.com/card/crimson%20manticore.jpg
-value=2.404
+value=2.375
 rarity=U
 type=Creature
 subtype=Manticore

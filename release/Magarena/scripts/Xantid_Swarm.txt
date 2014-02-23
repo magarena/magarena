@@ -1,7 +1,7 @@
 name=Xantid Swarm
 url=http://magiccards.info/sc/en/135.html
 image=http://mtgimage.com/card/xantid%20swarm.jpg
-value=4.591
+value=4.607
 rarity=R
 type=Creature
 subtype=Insect

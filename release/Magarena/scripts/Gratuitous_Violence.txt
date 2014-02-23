@@ -1,7 +1,7 @@
 name=Gratuitous Violence
 url=http://magiccards.info/on/en/212.html
 image=http://mtgimage.com/card/gratuitous%20violence.jpg
-value=4.222
+value=4.245
 rarity=R
 type=Enchantment
 cost={2}{R}{R}{R}

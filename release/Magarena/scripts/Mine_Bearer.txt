@@ -1,7 +1,7 @@
 name=Mine Bearer
 url=http://magiccards.info/pr/en/16.html
 image=http://mtgimage.com/card/mine%20bearer.jpg
-value=3.567
+value=3.548
 rarity=C
 type=Creature
 subtype=Human,Soldier

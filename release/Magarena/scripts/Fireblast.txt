@@ -1,7 +1,7 @@
 name=Fireblast
 url=http://magiccards.info/jvc/en/55.html
 image=http://mtgimage.com/card/fireblast.jpg
-value=4.537
+value=4.428
 rarity=C
 type=Instant
 cost={4}{R}{R}

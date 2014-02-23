@@ -1,7 +1,7 @@
 name=Birds of Paradise
 url=http://magiccards.info/m12/en/165.html
 image=http://mtgimage.com/card/birds%20of%20paradise.jpg
-value=4.606
+value=4.446
 rarity=R
 type=Creature
 subtype=Bird

@@ -1,7 +1,7 @@
 name=Smoldering Spires
 url=http://magiccards.info/wwk/en/143.html
 image=http://mtgimage.com/card/smoldering%20spires.jpg
-value=3.231
+value=3.250
 rarity=C
 type=Land
 mana=r3

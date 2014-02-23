@@ -1,7 +1,7 @@
 name=Phantom Monster
 url=http://magiccards.info/med/en/43.html
 image=http://mtgimage.com/card/phantom%20monster.jpg
-value=3.754
+value=3.733
 rarity=U
 type=Creature
 subtype=Illusion

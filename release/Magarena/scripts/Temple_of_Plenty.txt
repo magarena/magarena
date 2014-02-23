@@ -1,7 +1,7 @@
 name=Temple of Plenty
 url=http://magiccards.info/bng/en/165.html
 image=http://mtgimage.com/card/temple%20of%20plenty.jpg
-value=3.542
+value=3.891
 rarity=R
 type=Land
 ability=enters tapped;tap add mana {G} or {W}

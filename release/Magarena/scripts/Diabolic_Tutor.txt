@@ -1,7 +1,7 @@
 name=Diabolic Tutor
 url=http://magiccards.info/m14/en/95.html
 image=http://mtgimage.com/card/diabolic%20tutor.jpg
-value=3.800
+value=3.656
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

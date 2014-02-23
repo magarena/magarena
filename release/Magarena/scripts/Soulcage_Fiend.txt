@@ -1,7 +1,7 @@
 name=Soulcage Fiend
 url=http://magiccards.info/avr/en/120.html
 image=http://mtgimage.com/card/soulcage%20fiend.jpg
-value=3.079
+value=3.064
 rarity=C
 type=Creature
 subtype=Demon

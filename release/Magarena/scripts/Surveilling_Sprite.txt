@@ -1,7 +1,7 @@
 name=Surveilling Sprite
 url=http://magiccards.info/ddh/en/43.html
 image=http://mtgimage.com/card/surveilling%20sprite.jpg
-value=3.119
+value=3.114
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

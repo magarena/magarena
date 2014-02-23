@@ -1,7 +1,7 @@
 name=Zuran Enchanter
 url=http://magiccards.info/ia/en/110.html
 image=http://mtgimage.com/card/zuran%20enchanter.jpg
-value=2.583
+value=2.581
 rarity=C
 type=Creature
 subtype=Human,Wizard

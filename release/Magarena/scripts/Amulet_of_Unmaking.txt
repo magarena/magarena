@@ -1,7 +1,7 @@
 name=Amulet of Unmaking
 url=http://magiccards.info/mr/en/258.html
 image=http://mtgimage.com/card/amulet%20of%20unmaking.jpg
-value=2.544
+value=2.557
 rarity=R
 type=Artifact
 cost={5}

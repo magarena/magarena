@@ -1,7 +1,7 @@
 name=Withering Boon
 url=http://magiccards.info/mr/en/50.html
 image=http://mtgimage.com/card/withering%20boon.jpg
-value=3.447
+value=3.471
 rarity=U
 type=Instant
 cost={1}{B}

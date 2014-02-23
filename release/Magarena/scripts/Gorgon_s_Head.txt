@@ -1,7 +1,7 @@
 name=Gorgon's Head
 url=http://magiccards.info/bng/en/158.html
 image=http://mtgimage.com/card/gorgon's%20head.jpg
-value=3
+value=3.158
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,7 +1,7 @@
 name=Dirty Wererat
 url=http://magiccards.info/od/en/130.html
 image=http://mtgimage.com/card/dirty%20wererat.jpg
-value=2.828
+value=2.823
 rarity=C
 type=Creature
 subtype=Human,Rat,Minion

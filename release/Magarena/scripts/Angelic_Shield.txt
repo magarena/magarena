@@ -1,7 +1,7 @@
 name=Angelic Shield
 url=http://magiccards.info/in/en/228.html
 image=http://mtgimage.com/card/angelic%20shield.jpg
-value=3.864
+value=3.891
 removal=1
 rarity=U
 type=Enchantment

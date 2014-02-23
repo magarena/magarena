@@ -1,7 +1,7 @@
 name=Soltari Lancer
 url=http://magiccards.info/tp/en/256.html
 image=http://mtgimage.com/card/soltari%20lancer.jpg
-value=3.417
+value=3.453
 rarity=C
 type=Creature
 subtype=Soltari,Knight

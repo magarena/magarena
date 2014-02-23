@@ -1,7 +1,7 @@
 name=Divination
 url=http://magiccards.info/m12/en/50.html
 image=http://mtgimage.com/card/divination.jpg
-value=3.017
+value=3.900
 rarity=C
 type=Sorcery
 cost={2}{U}

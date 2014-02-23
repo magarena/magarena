@@ -1,7 +1,7 @@
 name=Icatian Town
 url=http://magiccards.info/6e/en/25.html
 image=http://mtgimage.com/card/icatian%20town.jpg
-value=3.524
+value=3.500
 rarity=U
 type=Sorcery
 cost={5}{W}

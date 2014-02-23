@@ -1,7 +1,7 @@
 name=Ghoulraiser
 url=http://magiccards.info/isd/en/102.html
 image=http://mtgimage.com/card/ghoulraiser.jpg
-value=3.120
+value=3.154
 rarity=C
 type=Creature
 subtype=Zombie

@@ -1,7 +1,7 @@
 name=Asceticism
 url=http://magiccards.info/som/en/110.html
 image=http://mtgimage.com/card/asceticism.jpg
-value=4.190
+value=4.163
 rarity=R
 type=Enchantment
 cost={3}{G}{G}

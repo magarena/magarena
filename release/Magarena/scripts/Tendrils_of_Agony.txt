@@ -1,7 +1,7 @@
 name=Tendrils of Agony
 url=http://magiccards.info/sc/en/75.html
 image=http://mtgimage.com/card/tendrils%20of%20agony.jpg
-value=4.544
+value=4.556
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

@@ -1,7 +1,7 @@
 name=Nylea's Emissary
 url=http://magiccards.info/ths/en/168.html
 image=http://mtgimage.com/card/nylea's%20emissary.jpg
-value=3.438
+value=3.407
 rarity=U
 type=Enchantment,Creature
 subtype=Cat

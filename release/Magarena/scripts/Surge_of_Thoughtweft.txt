@@ -1,7 +1,7 @@
 name=Surge of Thoughtweft
 url=http://magiccards.info/lw/en/43.html
 image=http://mtgimage.com/card/surge%20of%20thoughtweft.jpg
-value=3.132
+value=3.085
 rarity=C
 type=Tribal,Instant
 subtype=Kithkin

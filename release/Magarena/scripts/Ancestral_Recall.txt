@@ -1,7 +1,7 @@
 name=Ancestral Recall
 url=http://magiccards.info/un/en/48.html
 image=http://mtgimage.com/card/ancestral%20recall.jpg
-value=4.877
+value=4.879
 rarity=R
 type=Instant
 cost={U}

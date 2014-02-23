@@ -1,7 +1,7 @@
 name=Triskelavus
 url=http://magiccards.info/cmd/en/263.html
 image=http://mtgimage.com/card/triskelavus.jpg
-value=3.397
+value=3.452
 rarity=R
 type=Artifact,Creature
 subtype=Construct

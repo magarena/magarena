@@ -1,7 +1,7 @@
 name=Accursed Centaur
 url=http://magiccards.info/on/en/123.html
 image=http://mtgimage.com/card/accursed%20centaur.jpg
-value=1.563
+value=1.547
 rarity=C
 type=Creature
 subtype=Zombie,Centaur

@@ -1,7 +1,7 @@
 name=Aven Fogbringer
 url=http://magiccards.info/ju/en/34.html
 image=http://mtgimage.com/card/aven%20fogbringer.jpg
-value=2.667
+value=2.676
 rarity=C
 type=Creature
 subtype=Bird,Wizard

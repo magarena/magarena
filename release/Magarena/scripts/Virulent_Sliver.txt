@@ -1,7 +1,7 @@
 name=Virulent Sliver
 url=http://magiccards.info/pds/en/2.html
 image=http://mtgimage.com/card/virulent%20sliver.jpg
-value=4.434
+value=4.442
 rarity=C
 type=Creature
 subtype=Sliver

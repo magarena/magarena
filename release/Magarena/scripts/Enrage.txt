@@ -1,7 +1,7 @@
 name=Enrage
 url=http://magiccards.info/gtc/pt/147.html
 image=http://mtgimage.com/card/enrage.jpg
-value=3.122
+value=3.053
 rarity=U
 type=Instant
 cost={X}{R}

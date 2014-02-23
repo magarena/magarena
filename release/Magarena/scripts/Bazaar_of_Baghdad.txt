@@ -1,7 +1,7 @@
 name=Bazaar of Baghdad
 url=http://magiccards.info/an/en/84.html
 image=http://mtgimage.com/card/bazaar%20of%20baghdad.jpg
-value=4.509
+value=4.521
 rarity=R
 type=Land
 ability=pay {T}:PN draws two cards, then discards three cards.

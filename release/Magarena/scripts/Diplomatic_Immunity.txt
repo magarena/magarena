@@ -1,7 +1,7 @@
 name=Diplomatic Immunity
 url=http://magiccards.info/mm/en/75.html
 image=http://mtgimage.com/card/diplomatic%20immunity.jpg
-value=4.607
+value=4.575
 rarity=C
 type=Enchantment
 subtype=Aura

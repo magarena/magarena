@@ -1,7 +1,7 @@
 name=Death Baron
 url=http://magiccards.info/pch/en/25.html
 image=http://mtgimage.com/card/death%20baron.jpg
-value=4.139
+value=4.145
 rarity=R
 type=Creature
 subtype=Zombie,Wizard

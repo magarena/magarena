@@ -1,7 +1,7 @@
 name=Elvish Lookout
 url=http://magiccards.info/ud/en/103.html
 image=http://mtgimage.com/card/elvish%20lookout.jpg
-value=2.774
+value=2.812
 rarity=C
 type=Creature
 subtype=Elf

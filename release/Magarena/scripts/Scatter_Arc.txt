@@ -1,7 +1,7 @@
 name=Scatter Arc
 url=http://magiccards.info/gtc/pt/48.html
 image=http://mtgimage.com/card/scatter%20arc.jpg
-value=2.345
+value=2.360
 rarity=C
 type=Instant
 cost={3}{U}

@@ -1,7 +1,7 @@
 name=Goblin War Wagon
 url=http://magiccards.info/mi/en/179.html
 image=http://mtgimage.com/card/goblin%20war%20wagon.jpg
-value=0.918
+value=0.905
 rarity=C
 type=Artifact,Creature
 subtype=Juggernaut

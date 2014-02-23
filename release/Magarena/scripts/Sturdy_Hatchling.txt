@@ -1,7 +1,7 @@
 name=Sturdy Hatchling
 url=http://magiccards.info/eve/en/163.html
 image=http://mtgimage.com/card/sturdy%20hatchling.jpg
-value=3.234
+value=3.214
 rarity=U
 type=Creature
 subtype=Elemental

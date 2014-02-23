@@ -1,7 +1,7 @@
 name=Urza's Guilt
 url=http://magiccards.info/ps/en/130.html
 image=http://mtgimage.com/card/urza's%20guilt.jpg
-value=3.6
+value=3.600
 rarity=R
 type=Sorcery
 cost={2}{U}{B}

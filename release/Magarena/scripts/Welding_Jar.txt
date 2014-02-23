@@ -1,7 +1,7 @@
 name=Welding Jar
 url=http://magiccards.info/mi/en/274.html
 image=http://mtgimage.com/card/welding%20jar.jpg
-value=4.164
+value=4.144
 rarity=C
 type=Artifact
 cost={0}

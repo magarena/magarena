@@ -1,7 +1,7 @@
 name=Lumberknot
 url=http://magiccards.info/isd/en/191.html
 image=http://mtgimage.com/card/lumberknot.jpg
-value=3.571
+value=3.569
 rarity=U
 type=Creature
 subtype=Treefolk

@@ -1,7 +1,7 @@
 name=Mageta's Boon
 url=http://magiccards.info/pr/en/14.html
 image=http://mtgimage.com/card/mageta%27s%20boon.jpg
-value=2.981
+value=2.963
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Kjeldoran Javelineer
 url=http://magiccards.info/cs/en/11.html
 image=http://mtgimage.com/card/kjeldoran%20javelineer.jpg
-value=2.776
+value=2.677
 rarity=C
 type=Creature
 subtype=Human,Soldier

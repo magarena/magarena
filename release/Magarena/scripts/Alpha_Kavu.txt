@@ -1,7 +1,7 @@
 name=Alpha Kavu
 url=http://magiccards.info/ps/en/77.html
 image=http://mtgimage.com/card/alpha%20kavu.jpg
-value=2.338
+value=2.343
 rarity=U
 type=Creature
 subtype=Kavu

@@ -1,7 +1,7 @@
 name=Sphinx Sovereign
 url=http://magiccards.info/ala/en/196.html
 image=http://mtgimage.com/card/sphinx%20sovereign.jpg
-value=3.027
+value=3.035
 rarity=M
 type=Artifact,Creature
 subtype=Sphinx

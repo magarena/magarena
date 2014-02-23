@@ -1,7 +1,7 @@
 name=Necrobite
 url=http://magiccards.info/avr/en/115.html
 image=http://mtgimage.com/card/necrobite.jpg
-value=3.174
+value=3.261
 rarity=C
 type=Instant
 cost={2}{B}

@@ -1,7 +1,7 @@
 name=Perilous Myr
 url=http://magiccards.info/som/en/192.html
 image=http://mtgimage.com/card/perilous%20myr.jpg
-value=4.099
+value=4.105
 rarity=C
 type=Artifact,Creature
 subtype=Myr

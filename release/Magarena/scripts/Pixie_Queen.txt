@@ -1,7 +1,7 @@
 name=Pixie Queen
 url=http://magiccards.info/lg/en/110.html
 image=http://mtgimage.com/card/pixie%20queen.jpg
-value=2.070
+value=2.056
 rarity=R
 type=Creature
 subtype=Faerie

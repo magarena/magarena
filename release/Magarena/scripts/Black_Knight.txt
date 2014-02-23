@@ -1,7 +1,7 @@
 name=Black Knight
 url=http://magiccards.info/m11/en/83.html
 image=http://mtgimage.com/card/black%20knight.jpg
-value=4.298
+value=4.281
 rarity=U
 type=Creature
 subtype=Human,Knight

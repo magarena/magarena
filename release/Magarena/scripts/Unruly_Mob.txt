@@ -1,7 +1,7 @@
 name=Unruly Mob
 url=http://magiccards.info/isd/en/39.html
 image=http://mtgimage.com/card/unruly%20mob.jpg
-value=3.388
+value=3.415
 rarity=C
 type=Creature
 subtype=Human

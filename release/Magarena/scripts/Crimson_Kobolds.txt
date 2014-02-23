@@ -1,7 +1,7 @@
 name=Crimson Kobolds
 url=http://magiccards.info/me3/en/93.html
 image=http://mtgimage.com/card/crimson%20kobolds.jpg
-value=4.224
+value=4.154
 rarity=C
 type=Creature
 subtype=Kobold

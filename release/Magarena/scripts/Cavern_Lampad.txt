@@ -1,7 +1,7 @@
 name=Cavern Lampad
 url=http://magiccards.info/ths/en/81.html
 image=http://mtgimage.com/card/cavern%20lampad.jpg
-value=2.969
+value=2.986
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph

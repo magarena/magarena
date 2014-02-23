@@ -1,7 +1,7 @@
 name=Gallantry
 url=http://magiccards.info/od/en/23.html
 image=http://mtgimage.com/card/gallantry.jpg
-value=3.205
+value=3.200
 rarity=U
 type=Instant
 cost={1}{W}

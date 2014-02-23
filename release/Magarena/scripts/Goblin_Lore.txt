@@ -1,7 +1,7 @@
 name=Goblin Lore
 url=http://magiccards.info/10e/en/208.html
 image=http://mtgimage.com/card/goblin%20lore.jpg
-value=3.556
+value=3.461
 rarity=U
 type=Sorcery
 cost={1}{R}

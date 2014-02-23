@@ -1,7 +1,7 @@
 name=Great Hart
 url=http://magiccards.info/bng/en/15.html
 image=http://mtgimage.com/card/great%20hart.jpg
-value=1.75
+value=1.615
 rarity=C
 type=Creature
 subtype=Elk

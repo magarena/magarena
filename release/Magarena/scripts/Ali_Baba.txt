@@ -1,7 +1,7 @@
 name=Ali Baba
 url=http://magiccards.info/4e/en/193.html
 image=http://mtgimage.com/card/ali%20baba.jpg
-value=2.407
+value=2.389
 rarity=U
 type=Creature
 subtype=Human,Rogue

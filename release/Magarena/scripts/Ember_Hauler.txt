@@ -1,7 +1,7 @@
 name=Ember Hauler
 url=http://magiccards.info/m11/en/135.html
 image=http://mtgimage.com/card/ember%20hauler.jpg
-value=4.022
+value=3.972
 rarity=U
 type=Creature
 subtype=Goblin

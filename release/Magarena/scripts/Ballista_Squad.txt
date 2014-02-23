@@ -1,7 +1,7 @@
 name=Ballista Squad
 url=http://magiccards.info/10e/en/8.html
 image=http://mtgimage.com/card/ballista%20squad.jpg
-value=3.972
+value=3.946
 rarity=U
 type=Creature
 subtype=Human,Rebel

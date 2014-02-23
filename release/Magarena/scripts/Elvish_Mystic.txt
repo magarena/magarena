@@ -1,7 +1,7 @@
 name=Elvish Mystic
 url=http://magiccards.info/m14/en/169.html
 image=http://mtgimage.com/card/elvish%20mystic.jpg
-value=3.934
+value=3.843
 rarity=C
 type=Creature
 subtype=Elf,Druid

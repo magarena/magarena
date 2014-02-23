@@ -1,7 +1,7 @@
 name=Titanic Growth
 url=http://magiccards.info/m12/en/198.html
 image=http://mtgimage.com/card/titanic%20growth.jpg
-value=3.383
+value=3.330
 rarity=C
 type=Instant
 cost={1}{G}

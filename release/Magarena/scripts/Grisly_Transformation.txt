@@ -1,7 +1,7 @@
 name=Grisly Transformation
 url=http://magiccards.info/bng/en/74.html
 image=http://mtgimage.com/card/grisly%20transformation.jpg
-value=2.75
+value=2.529
 rarity=C
 type=Enchantment
 subtype=Aura

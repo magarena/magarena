@@ -1,7 +1,7 @@
 name=Phyrexian Lens
 url=http://magiccards.info/in/en/307.html
 image=http://mtgimage.com/card/phyrexian%20lens.jpg
-value=1.528
+value=1.518
 rarity=R
 type=Artifact
 cost={3}

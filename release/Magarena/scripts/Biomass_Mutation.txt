@@ -1,7 +1,7 @@
 name=Biomass Mutation
 url=http://magiccards.info/gtc/en/213.html
 image=http://mtgimage.com/card/biomass%20mutation.jpg
-value=3.459
+value=3.453
 rarity=R
 type=Instant
 cost={X}{G/U}{G/U}

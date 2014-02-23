@@ -1,7 +1,7 @@
 name=Illusionary Servant
 url=http://magiccards.info/m10/en/57.html
 image=http://mtgimage.com/card/illusionary%20servant.jpg
-value=3.593
+value=3.612
 rarity=C
 type=Creature
 subtype=Illusion

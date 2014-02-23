@@ -1,7 +1,7 @@
 name=Turn to Mist
 url=http://magiccards.info/shm/en/155.html
 image=http://mtgimage.com/card/turn%20to%20mist.jpg
-value=3.436
+value=3.393
 removal=1
 rarity=C
 type=Instant

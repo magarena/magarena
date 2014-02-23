@@ -1,7 +1,7 @@
 name=Goblin Chieftain
 url=http://magiccards.info/m12/en/138.html
 image=http://mtgimage.com/card/goblin%20chieftain.jpg
-value=3.994
+value=3.977
 rarity=R
 type=Creature
 subtype=Goblin

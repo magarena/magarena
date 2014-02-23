@@ -1,7 +1,7 @@
 name=Powerstone Minefield
 url=http://magiccards.info/ap/en/115.html
 image=http://mtgimage.com/card/powerstone%20minefield.jpg
-value=4.319
+value=4.224
 rarity=R
 type=Enchantment
 cost={2}{R}{W}

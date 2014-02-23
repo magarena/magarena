@@ -1,7 +1,7 @@
 name=Fabricate
 url=http://magiccards.info/pch/en/9.html
 image=http://mtgimage.com/card/fabricate.jpg
-value=4.41
+value=4.413
 rarity=U
 type=Sorcery
 cost={2}{U}

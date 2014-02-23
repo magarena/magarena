@@ -1,7 +1,7 @@
 name=Reckless Reveler
 url=http://magiccards.info/bng/en/106.html
 image=http://mtgimage.com/card/reckless%20reveler.jpg
-value=4
+value=4.044
 rarity=C
 type=Creature
 subtype=Satyr

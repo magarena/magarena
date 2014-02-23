@@ -1,7 +1,7 @@
 name=Nim Lasher
 url=http://magiccards.info/mi/en/71.html
 image=http://mtgimage.com/card/nim%20lasher.jpg
-value=2.712
+value=2.662
 rarity=C
 type=Creature
 subtype=Zombie

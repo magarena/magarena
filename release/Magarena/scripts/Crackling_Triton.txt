@@ -1,7 +1,7 @@
 name=Crackling Triton
 url=http://magiccards.info/ths/en/45.html
 image=http://mtgimage.com/card/crackling%20triton.jpg
-value=2.889
+value=2.893
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

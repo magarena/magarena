@@ -1,7 +1,7 @@
 name=Pariah
 url=http://magiccards.info/10e/en/33.html
 image=http://mtgimage.com/card/pariah.jpg
-value=4.539
+value=4.533
 rarity=R
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Graceful Adept
 url=http://magiccards.info/chk/en/63.html
 image=http://mtgimage.com/card/graceful%20adept.jpg
-value=3.148
+value=3.133
 rarity=U
 type=Creature
 subtype=Human,Wizard

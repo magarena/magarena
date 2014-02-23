@@ -1,7 +1,7 @@
 name=Wall of Kelp
 url=http://magiccards.info/hl/en/50.html
 image=http://mtgimage.com/card/wall%20of%20kelp.jpg
-value=3.276
+value=3.290
 rarity=C
 type=Creature
 subtype=Plant,Wall

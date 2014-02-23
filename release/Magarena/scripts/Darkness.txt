@@ -1,7 +1,7 @@
 name=Darkness
 url=http://magiccards.info/tsts/en/40.html
 image=http://mtgimage.com/card/darkness.jpg
-value=4.538
+value=4.443
 rarity=C
 type=Instant
 cost={B}

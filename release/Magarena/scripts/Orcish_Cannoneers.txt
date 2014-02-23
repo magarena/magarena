@@ -1,7 +1,7 @@
 name=Orcish Cannoneers
 url=http://magiccards.info/me2/en/138.html
 image=http://mtgimage.com/card/orcish%20cannoneers.jpg
-value=3.071
+value=3.136
 rarity=U
 type=Creature
 subtype=Orc,Warrior

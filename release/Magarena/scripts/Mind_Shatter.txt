@@ -1,7 +1,7 @@
 name=Mind Shatter
 url=http://magiccards.info/mt/en/66.html
 image=http://mtgimage.com/card/mind%20shatter.jpg
-value=3.738
+value=3.731
 rarity=R
 type=Sorcery
 cost={X}{B}{B}

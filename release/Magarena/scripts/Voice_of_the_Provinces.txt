@@ -1,7 +1,7 @@
 name=Voice of the Provinces
 url=http://magiccards.info/avr/en/40.html
 image=http://mtgimage.com/card/voice%20of%20the%20provinces.jpg
-value=1.596
+value=1.594
 rarity=C
 type=Creature
 subtype=Angel

@@ -1,7 +1,7 @@
 name=Merfolk Sovereign
 url=http://magiccards.info/m11/en/65.html
 image=http://mtgimage.com/card/merfolk%20sovereign.jpg
-value=4.309
+value=4.153
 rarity=R
 type=Creature
 subtype=Merfolk

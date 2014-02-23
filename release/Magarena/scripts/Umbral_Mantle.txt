@@ -1,7 +1,7 @@
 name=Umbral Mantle
 url=http://magiccards.info/shm/en/267.html
 image=http://mtgimage.com/card/umbral%20mantle.jpg
-value=4.136
+value=4.142
 rarity=U
 type=Artifact
 subtype=Equipment

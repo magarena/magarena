@@ -1,7 +1,7 @@
 name=Show of Valor
 url=http://magiccards.info/m14/en/33.html
 image=http://mtgimage.com/card/show%20of%20valor.jpg
-value=2.543
+value=2.562
 rarity=C
 type=Instant
 cost={1}{W}

@@ -1,7 +1,7 @@
 name=Seascape Aerialist
 url=http://magiccards.info/zen/en/64.html
 image=http://mtgimage.com/card/seascape%20aerialist.jpg
-value=2.551
+value=2.525
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard,Ally

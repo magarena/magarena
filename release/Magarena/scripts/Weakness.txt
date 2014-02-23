@@ -1,7 +1,7 @@
 name=Weakness
 url=http://magiccards.info/m10/en/121.html
 image=http://mtgimage.com/card/weakness.jpg
-value=3.241
+value=3.167
 removal=1
 rarity=C
 type=Enchantment

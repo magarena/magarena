@@ -1,7 +1,7 @@
 name=Wakedancer
 url=http://magiccards.info/dka/en/79.html
 image=http://mtgimage.com/card/wakedancer.jpg
-value=3.333
+value=3.364
 rarity=U
 type=Creature
 subtype=Human,Shaman

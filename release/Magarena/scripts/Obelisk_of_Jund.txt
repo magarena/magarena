@@ -1,7 +1,7 @@
 name=Obelisk of Jund
 url=http://magiccards.info/ala/en/215.html
 image=http://mtgimage.com/card/obelisk%20of%20jund.jpg
-value=2.833
+value=2.786
 rarity=C
 type=Artifact
 cost={3}

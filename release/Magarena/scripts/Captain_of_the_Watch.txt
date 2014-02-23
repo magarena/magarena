@@ -1,7 +1,7 @@
 name=Captain of the Watch
 url=http://magiccards.info/m10/en/6.html
 image=http://mtgimage.com/card/captain%20of%20the%20watch.jpg
-value=3.948
+value=3.970
 rarity=R
 type=Creature
 subtype=Human,Soldier

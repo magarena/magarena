@@ -1,7 +1,7 @@
 name=Umara Raptor
 url=http://magiccards.info/zen/en/75.html
 image=http://mtgimage.com/card/umara%20raptor.jpg
-value=3.869
+value=3.823
 rarity=C
 type=Creature
 subtype=Bird,Ally

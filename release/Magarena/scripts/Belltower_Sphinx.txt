@@ -1,7 +1,7 @@
 name=Belltower Sphinx
 url=http://magiccards.info/m12/en/46.html
 image=http://mtgimage.com/card/belltower%20sphinx.jpg
-value=3.658
+value=3.662
 rarity=U
 type=Creature
 subtype=Sphinx

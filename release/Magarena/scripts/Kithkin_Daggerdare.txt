@@ -1,7 +1,7 @@
 name=Kithkin Daggerdare
 url=http://magiccards.info/lw/en/223.html
 image=http://mtgimage.com/card/kithkin%20daggerdare.jpg
-value=2.470
+value=2.455
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

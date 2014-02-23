@@ -1,7 +1,7 @@
 name=Kithkin Harbinger
 url=http://magiccards.info/lw/en/26.html
 image=http://mtgimage.com/card/kithkin%20harbinger.jpg
-value=3.014
+value=3.027
 rarity=U
 type=Creature
 subtype=Kithkin,Wizard

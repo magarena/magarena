@@ -1,7 +1,7 @@
 name=Threaten
 url=http://magiccards.info/10e/en/242.html
 image=http://mtgimage.com/card/threaten.jpg
-value=4.042
+value=4.068
 removal=5
 rarity=U
 type=Sorcery

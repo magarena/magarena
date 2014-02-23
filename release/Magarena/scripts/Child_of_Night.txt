@@ -1,7 +1,7 @@
 name=Child of Night
 url=http://magiccards.info/m12/en/87.html
 image=http://mtgimage.com/card/child%20of%20night.jpg
-value=3.161
+value=3.229
 ability=lifelink
 rarity=C
 type=Creature

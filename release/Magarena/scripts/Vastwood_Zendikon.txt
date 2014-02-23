@@ -1,7 +1,7 @@
 name=Vastwood Zendikon
 url=http://magiccards.info/wwk/en/117.html
 image=http://mtgimage.com/card/vastwood%20zendikon.jpg
-value=2.587
+value=2.575
 rarity=C
 type=Enchantment
 subtype=Aura

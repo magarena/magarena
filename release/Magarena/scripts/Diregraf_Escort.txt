@@ -1,7 +1,7 @@
 name=Diregraf Escort
 url=http://magiccards.info/avr/en/174.html
 image=http://mtgimage.com/card/diregraf%20escort.jpg
-value=1.530
+value=1.529
 rarity=C
 type=Creature
 subtype=Human,Cleric

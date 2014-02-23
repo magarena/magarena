@@ -1,7 +1,7 @@
 name=Saberclaw Golem
 url=http://magiccards.info/som/en/200.html
 image=http://mtgimage.com/card/saberclaw%20golem.jpg
-value=2.381
+value=2.360
 rarity=C
 type=Artifact,Creature
 subtype=Golem

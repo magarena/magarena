@@ -1,7 +1,7 @@
 name=Experiment One
 url=http://magiccards.info/gtc/en/119.html
 image=http://mtgimage.com/card/experiment%20one.jpg
-value=3.817
+value=3.837
 rarity=U
 type=Creature
 subtype=Human,Ooze

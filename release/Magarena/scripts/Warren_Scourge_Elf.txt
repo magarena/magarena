@@ -1,7 +1,7 @@
 name=Warren-Scourge Elf
 url=http://magiccards.info/lw/en/241.html
 image=http://mtgimage.com/card/warren%2Dscourge%20elf.jpg
-value=2.014
+value=1.986
 rarity=C
 type=Creature
 subtype=Elf,Warrior

@@ -1,7 +1,7 @@
 name=Tidewalker
 url=http://magiccards.info/pc/en/49.html
 image=http://mtgimage.com/card/tidewalker.jpg
-value=3.243
+value=3.167
 rarity=U
 type=Creature
 subtype=Elemental

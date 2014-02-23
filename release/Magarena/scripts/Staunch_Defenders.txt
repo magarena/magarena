@@ -1,7 +1,7 @@
 name=Staunch Defenders
 url=http://magiccards.info/8e/en/49.html
 image=http://mtgimage.com/card/staunch%20defenders.jpg
-value=3.229
+value=3.180
 rarity=U
 type=Creature
 subtype=Human,Soldier

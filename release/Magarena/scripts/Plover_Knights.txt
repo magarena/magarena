@@ -1,7 +1,7 @@
 name=Plover Knights
 url=http://magiccards.info/ddg/en/20.html
 image=http://mtgimage.com/card/plover%20knights.jpg
-value=2.707
+value=2.700
 ability=flying;first strike
 rarity=C
 type=Creature

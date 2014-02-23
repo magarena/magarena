@@ -1,7 +1,7 @@
 name=Thoughtflare
 url=http://magiccards.info/rtr/en/203.html
 image=http://mtgimage.com/card/thoughtflare.jpg
-value=3.053
+value=3.017
 rarity=U
 type=Instant
 cost={3}{U}{R}

@@ -1,7 +1,7 @@
 name=Fortitude
 url=http://magiccards.info/us/en/253.html
 image=http://mtgimage.com/card/fortitude.jpg
-value=1.932
+value=1.895
 rarity=C
 type=Enchantment
 subtype=Aura

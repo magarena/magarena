@@ -1,7 +1,7 @@
 name=Goblin Sharpshooter
 url=http://magiccards.info/on/en/207.html
 image=http://mtgimage.com/card/goblin%20sharpshooter.jpg
-value=4.515
+value=4.528
 rarity=R
 type=Creature
 subtype=Goblin

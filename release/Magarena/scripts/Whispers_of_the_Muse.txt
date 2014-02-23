@@ -1,7 +1,7 @@
 name=Whispers of the Muse
 url=http://magiccards.info/tp/en/103.html
 image=http://mtgimage.com/card/whispers%20of%20the%20muse.jpg
-value=3.493
+value=3.486
 rarity=U
 type=Instant
 cost={U}

@@ -1,7 +1,7 @@
 name=Wirewood Lodge
 url=http://magiccards.info/evg/en/26.html
 image=http://mtgimage.com/card/wirewood%20lodge.jpg
-value=4.433
+value=4.358
 rarity=U
 type=Land
 ability=tap add mana {1};\

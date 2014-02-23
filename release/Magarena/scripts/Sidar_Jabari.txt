@@ -1,7 +1,7 @@
 name=Sidar Jabari
 url=http://magiccards.info/mr/en/243.html
 image=http://mtgimage.com/card/sidar%20jabari.jpg
-value=3.850
+value=3.855
 rarity=R
 type=Legendary,Creature
 subtype=Human,Knight

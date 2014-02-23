@@ -1,7 +1,7 @@
 name=Frightful Delusion
 url=http://magiccards.info/isd/en/57.html
 image=http://mtgimage.com/card/frightful%20delusion.jpg
-value=3.134
+value=3.097
 rarity=C
 type=Instant
 cost={2}{U}

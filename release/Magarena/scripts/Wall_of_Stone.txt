@@ -1,7 +1,7 @@
 name=Wall of Stone
 url=http://magiccards.info/8e/en/232.html
 image=http://mtgimage.com/card/wall%20of%20stone.jpg
-value=3.660
+value=3.609
 ability=defender
 rarity=U
 type=Creature

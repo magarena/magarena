@@ -1,7 +1,7 @@
 name=Cemetery Reaper
 url=http://magiccards.info/m12/en/86.html
 image=http://mtgimage.com/card/cemetery%20reaper.jpg
-value=4.143
+value=4.162
 rarity=R
 type=Creature
 subtype=Zombie

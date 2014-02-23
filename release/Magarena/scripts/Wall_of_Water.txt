@@ -1,7 +1,7 @@
 name=Wall of Water
 url=http://magiccards.info/4e/en/114.html
 image=http://mtgimage.com/card/wall%20of%20water.jpg
-value=3.106
+value=3.074
 rarity=U
 type=Creature
 subtype=Wall

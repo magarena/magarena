@@ -1,7 +1,7 @@
 name=Kongming, "Sleeping Dragon"
 url=http://magiccards.info/c13/en/16.html
 image=http://mtgimage.com/card/Kongming,%20Sleeping%20Dragon.jpg
-value=4.133
+value=3.722
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor

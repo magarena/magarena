@@ -1,7 +1,7 @@
 name=Unnatural Speed
 url=http://magiccards.info/chk/en/197.html
 image=http://mtgimage.com/card/unnatural%20speed.jpg
-value=1.333
+value=1.347
 rarity=C
 type=Instant
 subtype=Arcane

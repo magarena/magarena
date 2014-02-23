@@ -1,7 +1,7 @@
 name=Spike Hatcher
 url=http://magiccards.info/ex/en/126.html
 image=http://mtgimage.com/card/spike%20hatcher.jpg
-value=3.29
+value=3.290
 rarity=R
 type=Creature
 subtype=Spike

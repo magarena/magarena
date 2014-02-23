@@ -1,7 +1,7 @@
 name=Untamed Might
 url=http://magiccards.info/som/en/131.html
 image=http://mtgimage.com/card/untamed%20might.jpg
-value=3.089
+value=3.078
 rarity=C
 type=Instant
 cost={X}{G}

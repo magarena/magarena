@@ -1,7 +1,7 @@
 name=Heat Ray
 url=http://magiccards.info/roe/en/150.html
 image=http://mtgimage.com/card/heat%20ray.jpg
-value=3.232
+value=3.219
 rarity=C
 type=Instant
 cost={X}{R}

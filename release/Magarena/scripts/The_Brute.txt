@@ -1,7 +1,7 @@
 name=The Brute
 url=http://magiccards.info/5e/en/272.html
 image=http://mtgimage.com/card/the%20brute.jpg
-value=1.758
+value=1.712
 rarity=C
 type=Enchantment
 subtype=Aura

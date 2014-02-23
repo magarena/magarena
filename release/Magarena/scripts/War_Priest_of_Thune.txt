@@ -1,7 +1,7 @@
 name=War Priest of Thune
 url=http://magiccards.info/m13/en/39.html
 image=http://mtgimage.com/card/war%20priest%20of%20thune.jpg
-value=4.184
+value=4.217
 removal=1
 rarity=U
 type=Creature

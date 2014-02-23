@@ -1,7 +1,7 @@
 name=Havengul Vampire
 url=http://magiccards.info/avr/en/139.html
 image=http://mtgimage.com/card/havengul%20vampire.jpg
-value=3.733
+value=3.754
 rarity=U
 type=Creature
 subtype=Vampire

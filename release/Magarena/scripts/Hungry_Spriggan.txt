@@ -1,7 +1,7 @@
 name=Hungry Spriggan
 url=http://magiccards.info/shm/en/120.html
 image=http://mtgimage.com/card/hungry%20spriggan.jpg
-value=3.357
+value=3.307
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

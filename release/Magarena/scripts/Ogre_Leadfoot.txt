@@ -1,7 +1,7 @@
 name=Ogre Leadfoot
 url=http://magiccards.info/mi/en/102.html
 image=http://mtgimage.com/card/ogre%20leadfoot.jpg
-value=2.739
+value=2.729
 rarity=C
 type=Creature
 subtype=Ogre

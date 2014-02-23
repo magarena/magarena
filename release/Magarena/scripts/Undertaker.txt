@@ -1,7 +1,7 @@
 name=Undertaker
 url=http://magiccards.info/tsts/en/53.html
 image=http://mtgimage.com/card/undertaker.jpg
-value=4.034
+value=4.023
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

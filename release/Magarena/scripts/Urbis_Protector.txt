@@ -1,7 +1,7 @@
 name=Urbis Protector
 url=http://magiccards.info/gtc/en/27.html
 image=http://mtgimage.com/card/urbis%20protector.jpg
-value=2.716
+value=2.722
 rarity=U
 type=Creature
 subtype=Human,Cleric

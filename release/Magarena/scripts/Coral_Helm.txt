@@ -1,7 +1,7 @@
 name=Coral Helm
 url=http://magiccards.info/5e/fr/359.html
 image=http://mtgimage.com/card/coral%20helm.jpg
-value=1.786
+value=1.674
 rarity=U
 type=Artifact
 cost={3}

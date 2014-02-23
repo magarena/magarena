@@ -1,7 +1,7 @@
 name=Banshee's Blade
 url=http://magiccards.info/mi/en/144.html
 image=http://mtgimage.com/card/banshee's%20blade.jpg
-value=3.338
+value=3.263
 rarity=U
 type=Artifact
 subtype=Equipment

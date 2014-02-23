@@ -1,7 +1,7 @@
 name=Goblin Settler
 url=http://magiccards.info/st/en/106.html
 image=http://mtgimage.com/card/goblin%20settler.jpg
-value=3.657
+value=3.667
 removal=1
 rarity=U
 type=Creature

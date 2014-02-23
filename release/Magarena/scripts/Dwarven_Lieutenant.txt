@@ -1,7 +1,7 @@
 name=Dwarven Lieutenant
 url=http://magiccards.info/fe/en/106.html
 image=http://mtgimage.com/card/dwarven%20lieutenant.jpg
-value=2.606
+value=2.657
 rarity=U
 type=Creature
 subtype=Dwarf,Soldier

@@ -1,7 +1,7 @@
 name=Obsidian Battle-Axe
 url=http://magiccards.info/mt/en/144.html
 image=http://mtgimage.com/card/obsidian%20battle%2Daxe.jpg
-value=3.733
+value=3.754
 rarity=U
 type=Tribal,Artifact
 subtype=Warrior,Equipment

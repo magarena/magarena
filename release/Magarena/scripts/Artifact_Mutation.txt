@@ -1,7 +1,7 @@
 name=Artifact Mutation
 url=http://magiccards.info/in/en/231.html
 image=http://mtgimage.com/card/artifact%20mutation.jpg
-value=4.418
+value=4.427
 removal=1
 rarity=R
 type=Instant

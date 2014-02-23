@@ -1,7 +1,7 @@
 name=Trash for Treasure
 url=http://magiccards.info/mi/en/109.html
 image=http://mtgimage.com/card/trash%20for%20treasure.jpg
-value=4.027
+value=4.026
 rarity=R
 type=Sorcery
 cost={2}{R}

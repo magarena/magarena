@@ -1,7 +1,7 @@
 name=Dwarven Demolition Team
 url=http://magiccards.info/8e/en/184.html
 image=http://mtgimage.com/card/dwarven%20demolition%20team.jpg
-value=2.132
+value=2.100
 rarity=U
 type=Creature
 subtype=Dwarf

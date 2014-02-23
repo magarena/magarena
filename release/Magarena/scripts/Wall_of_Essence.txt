@@ -1,7 +1,7 @@
 name=Wall of Essence
 url=http://magiccards.info/sh/en/122.html
 image=http://mtgimage.com/card/wall%20of%20essence.jpg
-value=4.156
+value=4.182
 rarity=U
 type=Creature
 subtype=Wall

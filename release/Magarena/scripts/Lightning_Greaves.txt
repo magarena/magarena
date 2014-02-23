@@ -1,7 +1,7 @@
 name=Lightning Greaves
 url=http://magiccards.info/cmd/en/253.html
 image=http://mtgimage.com/card/lightning%20greaves.jpg
-value=4.539
+value=4.549
 rarity=U
 type=Artifact
 subtype=Equipment

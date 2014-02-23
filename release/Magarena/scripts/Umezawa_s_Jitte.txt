@@ -1,7 +1,7 @@
 name=Umezawa's Jitte
 url=http://magiccards.info/gpx/en/4.html
 image=http://mtgimage.com/card/umezawa%27s%20jitte.jpg
-value=4.602
+value=4.603
 rarity=R
 type=Legendary,Artifact
 subtype=Equipment

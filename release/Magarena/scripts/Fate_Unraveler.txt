@@ -1,7 +1,7 @@
 name=Fate Unraveler
 url=http://magiccards.info/bng/en/68.html
 image=http://mtgimage.com/card/fate%20unraveler.jpg
-value=4.295
+value=3.845
 rarity=R
 type=Enchantment,Creature
 subtype=Hag

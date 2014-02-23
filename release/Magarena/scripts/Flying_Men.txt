@@ -1,7 +1,7 @@
 name=Flying Men
 url=http://magiccards.info/tsts/en/20.html
 image=http://mtgimage.com/card/flying%20men.jpg
-value=3.935
+value=3.955
 rarity=C
 type=Creature
 subtype=Human

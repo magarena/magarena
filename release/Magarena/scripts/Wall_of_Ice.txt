@@ -1,7 +1,7 @@
 name=Wall of Ice
 url=http://magiccards.info/4e/en/167.html
 image=http://mtgimage.com/card/wall%20of%20ice.jpg
-value=3.100
+value=3.061
 rarity=U
 type=Creature
 subtype=Wall

@@ -1,7 +1,7 @@
 name=Frost Giant
 url=http://magiccards.info/lg/en/146.html
 image=http://mtgimage.com/card/frost%20giant.jpg
-value=2.630
+value=2.640
 rarity=U
 type=Creature
 subtype=Giant

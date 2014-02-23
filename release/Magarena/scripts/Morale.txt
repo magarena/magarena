@@ -1,7 +1,7 @@
 name=Morale
 url=http://magiccards.info/4e/en/286.html
 image=http://mtgimage.com/card/morale.jpg
-value=1.870
+value=1.821
 rarity=C
 type=Instant
 cost={1}{W}{W}

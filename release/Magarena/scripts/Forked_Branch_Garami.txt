@@ -1,7 +1,7 @@
 name=Forked-Branch Garami
 url=http://magiccards.info/bok/en/125.html
 image=http://mtgimage.com/card/forked%2Dbranch%20garami.jpg
-value=3.462
+value=3.500
 rarity=U
 type=Creature
 subtype=Spirit

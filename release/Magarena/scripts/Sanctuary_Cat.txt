@@ -1,7 +1,7 @@
 name=Sanctuary Cat
 url=http://magiccards.info/dka/en/19.html
 image=http://mtgimage.com/card/sanctuary%20cat.jpg
-value=3.840
+value=3.845
 rarity=C
 type=Creature
 subtype=Cat

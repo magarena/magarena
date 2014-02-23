@@ -1,7 +1,7 @@
 name=Rabid Wombat
 url=http://magiccards.info/5e/en/181.html
 image=http://mtgimage.com/card/rabid%20wombat.jpg
-value=3.331
+value=3.325
 rarity=U
 type=Creature
 subtype=Wombat

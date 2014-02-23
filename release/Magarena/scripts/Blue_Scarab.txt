@@ -1,7 +1,7 @@
 name=Blue Scarab
 url=http://magiccards.info/ia/en/233.html
 image=http://mtgimage.com/card/blue%20scarab.jpg
-value=2.321
+value=2.417
 rarity=U
 type=Enchantment
 subtype=Aura

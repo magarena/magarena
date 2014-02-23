@@ -1,7 +1,7 @@
 name=AEther Membrane
 url=http://magiccards.info/pc/en/93.html
 image=http://mtgimage.com/card/aether%20membrane.jpg
-value=3.750
+value=3.712
 rarity=U
 type=Creature
 subtype=Wall

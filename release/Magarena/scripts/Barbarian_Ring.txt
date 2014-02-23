@@ -1,7 +1,7 @@
 name=Barbarian Ring
 url=http://magiccards.info/pd2/en/28.html
 image=http://mtgimage.com/card/barbarian%20ring.jpg
-value=2.854
+value=3.688
 rarity=U
 type=Land
 mana=r2

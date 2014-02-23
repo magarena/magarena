@@ -1,7 +1,7 @@
 name=Seraph of the Sword
 url=http://magiccards.info/m14/en/31.html
 image=http://mtgimage.com/card/seraph%20of%20the%20sword.jpg
-value=3.750
+value=3.635
 rarity=R
 type=Creature
 subtype=Angel

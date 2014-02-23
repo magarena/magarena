@@ -1,7 +1,7 @@
 name=Eastern Paladin
 url=http://magiccards.info/8e/en/131.html
 image=http://mtgimage.com/card/eastern%20paladin.jpg
-value=3.588
+value=3.639
 rarity=R
 type=Creature
 subtype=Zombie,Knight

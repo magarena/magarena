@@ -1,7 +1,7 @@
 name=Shore Snapper
 url=http://magiccards.info/ala/en/87.html
 image=http://mtgimage.com/card/shore%20snapper.jpg
-value=1.988
+value=1.966
 rarity=C
 type=Creature
 subtype=Beast

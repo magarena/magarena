@@ -1,7 +1,7 @@
 name=Silkwing Scout
 url=http://magiccards.info/di/en/31.html
 image=http://mtgimage.com/card/silkwing%20scout.jpg
-value=2.547
+value=2.576
 rarity=C
 type=Creature
 subtype=Faerie,Scout

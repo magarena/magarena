@@ -1,7 +1,7 @@
 name=Sedge Troll
 url=http://magiccards.info/me4/en/135.html
 image=http://mtgimage.com/card/sedge%20troll.jpg
-value=4.167
+value=4.188
 rarity=R
 type=Creature
 subtype=Troll

@@ -1,7 +1,7 @@
 name=Pestilent Kathari
 url=http://magiccards.info/cfx/en/50.html
 image=http://mtgimage.com/card/pestilent%20kathari.jpg
-value=2.967
+value=3.000
 rarity=C
 type=Creature
 subtype=Bird,Warrior

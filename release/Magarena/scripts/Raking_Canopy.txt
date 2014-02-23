@@ -1,7 +1,7 @@
 name=Raking Canopy
 url=http://magiccards.info/shm/en/127.html
 image=http://mtgimage.com/card/raking%20canopy.jpg
-value=3.593
+value=3.591
 rarity=U
 type=Enchantment
 cost={1}{G}{G}

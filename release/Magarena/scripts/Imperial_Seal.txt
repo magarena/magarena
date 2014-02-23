@@ -1,7 +1,7 @@
 name=Imperial Seal
 url=http://magiccards.info/p3k/en/78.html
 image=http://mtgimage.com/card/imperial%20seal.jpg
-value=4.581
+value=4.633
 rarity=R
 type=Sorcery
 cost={B}

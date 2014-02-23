@@ -1,7 +1,7 @@
 name=Howl from Beyond
 url=http://magiccards.info/7e/en/142.html
 image=http://mtgimage.com/card/howl%20from%20beyond.jpg
-value=3.339
+value=3.333
 rarity=C
 type=Instant
 cost={X}{B}

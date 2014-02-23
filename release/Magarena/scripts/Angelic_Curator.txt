@@ -1,7 +1,7 @@
 name=Angelic Curator
 url=http://magiccards.info/ul/en/1.html
 image=http://mtgimage.com/card/angelic%20curator.jpg
-value=3.000
+value=3.033
 rarity=C
 type=Creature
 subtype=Angel,Spirit

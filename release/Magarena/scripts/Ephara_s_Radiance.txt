@@ -1,7 +1,7 @@
 name=Ephara's Radiance
 url=http://magiccards.info/bng/en/9.html
 image=http://mtgimage.com/card/ephara's%20radiance.jpg
-value=2.333
+value=2.119
 rarity=C
 type=Enchantment
 subtype=Aura

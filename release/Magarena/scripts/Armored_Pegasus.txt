@@ -1,7 +1,7 @@
 name=Armored Pegasus
 url=http://magiccards.info/6e/en/5.html
 image=http://mtgimage.com/card/armored%20pegasus.jpg
-value=2.625
+value=2.635
 ability=flying
 rarity=C
 type=Creature

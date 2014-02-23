@@ -1,7 +1,7 @@
 name=Vanguard of Brimaz
 url=http://magiccards.info/bng/en/29.html
 image=http://mtgimage.com/card/vanguard%20of%20brimaz.jpg
-value=3.741
+value=3.800
 rarity=U
 type=Creature
 subtype=Cat,Soldier

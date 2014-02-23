@@ -1,7 +1,7 @@
 name=Pearled Unicorn
 url=http://magiccards.info/5e/en/326.html
 image=http://mtgimage.com/card/pearled%20unicorn.jpg
-value=1.750
+value=1.732
 rarity=C
 type=Creature
 subtype=Unicorn

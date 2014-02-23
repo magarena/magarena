@@ -1,7 +1,7 @@
 name=Farhaven Elf
 url=http://magiccards.info/shm/en/113.html
 image=http://mtgimage.com/card/farhaven%20elf.jpg
-value=3.375
+value=3.182
 rarity=C
 type=Creature
 subtype=Elf,Druid

@@ -1,7 +1,7 @@
 name=Wall of Opposition
 url=http://magiccards.info/ch/en/56.html
 image=http://mtgimage.com/card/wall%20of%20opposition.jpg
-value=2.773
+value=2.735
 rarity=U
 type=Creature
 subtype=Wall

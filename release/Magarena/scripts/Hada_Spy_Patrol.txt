@@ -1,7 +1,7 @@
 name=Hada Spy Patrol
 url=http://magiccards.info/roe/en/71.html
 image=http://mtgimage.com/card/hada%20spy%20patrol.jpg
-value=3.333
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Rogue

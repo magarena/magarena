@@ -1,7 +1,7 @@
 name=Kiss of the Amesha
 url=http://magiccards.info/ala/en/177.html
 image=http://mtgimage.com/card/kiss%20of%20the%20amesha.jpg
-value=3.007
+value=3.021
 rarity=U
 type=Sorcery
 cost={4}{W}{U}

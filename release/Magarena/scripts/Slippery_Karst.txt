@@ -1,7 +1,7 @@
 name=Slippery Karst
 url=http://magiccards.info/ddd/en/26.html
 image=http://mtgimage.com/card/slippery%20karst.jpg
-value=2.625
+value=2.900
 rarity=C
 type=Land
 mana=g3

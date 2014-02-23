@@ -1,7 +1,7 @@
 name=Indestructible Aura
 url=http://magiccards.info/ch/en/63.html
 image=http://mtgimage.com/card/indestructible%20aura.jpg
-value=3.111
+value=3.041
 rarity=C
 type=Instant
 cost={W}

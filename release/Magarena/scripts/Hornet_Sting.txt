@@ -1,7 +1,7 @@
 name=Hornet Sting
 url=http://magiccards.info/m11/en/181.html
 image=http://mtgimage.com/card/hornet%20sting.jpg
-value=3.000
+value=3.007
 removal=1
 rarity=C
 type=Instant

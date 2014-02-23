@@ -1,7 +1,7 @@
 name=Vandalblast
 url=http://magiccards.info/rtr/en/111.html
 image=http://mtgimage.com/card/vandalblast.jpg
-value=3.774
+value=3.781
 rarity=U
 type=Sorcery
 cost={R}

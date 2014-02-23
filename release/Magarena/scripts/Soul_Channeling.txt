@@ -1,7 +1,7 @@
 name=Soul Channeling
 url=http://magiccards.info/mm/en/163.html
 image=http://mtgimage.com/card/soul%20channeling.jpg
-value=2.65
+value=2.650
 rarity=C
 type=Enchantment
 subtype=Aura

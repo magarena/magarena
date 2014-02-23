@@ -1,7 +1,7 @@
 name=Mountain Bandit
 url=http://magiccards.info/p3k/en/117.html
 image=http://mtgimage.com/card/mountain%20bandit.jpg
-value=3.828
+value=3.864
 rarity=C
 type=Creature
 subtype=Human,Soldier,Rogue

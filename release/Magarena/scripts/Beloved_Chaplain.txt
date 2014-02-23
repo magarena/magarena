@@ -1,7 +1,7 @@
 name=Beloved Chaplain
 url=http://magiccards.info/od/en/11.html
 image=http://mtgimage.com/card/beloved%20chaplain.jpg
-value=4.458
+value=4.452
 rarity=U
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=Infested Roothold
 url=http://magiccards.info/ds/en/76.html
 image=http://mtgimage.com/card/infested%20roothold.jpg
-value=2.914
+value=2.855
 rarity=U
 type=Creature
 subtype=Wall

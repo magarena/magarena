@@ -1,7 +1,7 @@
 name=Blister Beetle
 url=http://magiccards.info/ala/en/66.html
 image=http://mtgimage.com/card/blister%20beetle.jpg
-value=2.271
+value=2.254
 rarity=C
 type=Creature
 subtype=Insect

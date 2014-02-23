@@ -1,7 +1,7 @@
 name=Arid Mesa
 url=http://magiccards.info/zen/en/211.html
 image=http://mtgimage.com/card/arid%20mesa.jpg
-value=4.435
+value=4.453
 rarity=R
 type=Land
 timing=land

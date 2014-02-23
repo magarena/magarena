@@ -1,7 +1,7 @@
 name=Ornitharch
 url=http://magiccards.info/bng/en/23.html
 image=http://mtgimage.com/card/ornitharch.jpg
-value=4
+value=3.912
 rarity=U
 type=Creature
 subtype=Archon

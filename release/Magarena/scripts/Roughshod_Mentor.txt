@@ -1,7 +1,7 @@
 name=Roughshod Mentor
 url=http://magiccards.info/dpa/en/81.html
 image=http://mtgimage.com/card/roughshod%20mentor.jpg
-value=3.293
+value=3.173
 rarity=U
 type=Creature
 subtype=Giant,Warrior

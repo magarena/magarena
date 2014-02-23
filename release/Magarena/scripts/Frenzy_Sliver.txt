@@ -1,7 +1,7 @@
 name=Frenzy Sliver
 url=http://magiccards.info/pds/en/6.html
 image=http://mtgimage.com/card/frenzy%20sliver.jpg
-value=2.817
+value=2.821
 rarity=C
 type=Creature
 subtype=Sliver

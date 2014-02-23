@@ -1,7 +1,7 @@
 name=Novablast Wurm
 url=http://magiccards.info/wwk/en/119.html
 image=http://mtgimage.com/card/novablast%20wurm.jpg
-value=4.463
+value=4.352
 rarity=M
 type=Creature
 subtype=Wurm

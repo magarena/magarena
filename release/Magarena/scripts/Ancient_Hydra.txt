@@ -1,7 +1,7 @@
 name=Ancient Hydra
 url=http://magiccards.info/ne/en/76.html
 image=http://mtgimage.com/card/ancient%20hydra.jpg
-value=3.217
+value=3.213
 rarity=U
 type=Creature
 subtype=Hydra

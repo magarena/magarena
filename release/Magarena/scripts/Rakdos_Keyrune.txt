@@ -1,7 +1,7 @@
 name=Rakdos Keyrune
 url=http://magiccards.info/rtr/en/232.html
 image=http://mtgimage.com/card/rakdos%20keyrune.jpg
-value=3.375
+value=3.385
 rarity=U
 type=Artifact
 cost={3}

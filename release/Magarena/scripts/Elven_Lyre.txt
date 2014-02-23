@@ -1,7 +1,7 @@
 name=Elven Lyre
 url=http://magiccards.info/me2/en/208.html
 image=http://mtgimage.com/card/elven%20lyre.jpg
-value=1.685
+value=1.661
 rarity=C
 type=Artifact
 cost={2}

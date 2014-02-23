@@ -1,7 +1,7 @@
 name=Blistering Dieflyn
 url=http://magiccards.info/shm/en/82.html
 image=http://mtgimage.com/card/blistering%20dieflyn.jpg
-value=1.579
+value=1.596
 rarity=C
 type=Creature
 subtype=Imp

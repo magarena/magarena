@@ -1,7 +1,7 @@
 name=Isolation Cell
 url=http://magiccards.info/nph/en/141.html
 image=http://mtgimage.com/card/isolation%20cell.jpg
-value=3.032
+value=3.048
 rarity=U
 type=Artifact
 cost={4}

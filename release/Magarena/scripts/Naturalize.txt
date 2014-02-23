@@ -1,7 +1,7 @@
 name=Naturalize
 url=http://magiccards.info/isd/en/197.html
 image=http://mtgimage.com/card/naturalize.jpg
-value=3.476
+value=3.889
 removal=1
 rarity=C
 type=Instant

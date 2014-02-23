@@ -1,7 +1,7 @@
 name=Highland Weald
 url=http://magiccards.info/cs/en/147.html
 image=http://mtgimage.com/card/highland%20weald.jpg
-value=3.882
+value=3.885
 rarity=U
 type=Snow,Land
 mana=r3g3

@@ -1,7 +1,7 @@
 name=Plummet
 url=http://magiccards.info/m12/en/187.html
 image=http://mtgimage.com/card/plummet.jpg
-value=3.381
+value=3.409
 removal=3
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Hematite Talisman
 url=http://magiccards.info/ia/en/295.html
 image=http://mtgimage.com/card/hematite%20talisman.jpg
-value=1.778
+value=1.724
 rarity=U
 type=Artifact
 cost={2}

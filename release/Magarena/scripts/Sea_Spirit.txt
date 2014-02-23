@@ -1,7 +1,7 @@
 name=Sea Spirit
 url=http://magiccards.info/me2/en/65.html
 image=http://mtgimage.com/card/sea%20spirit.jpg
-value=2.455
+value=2.457
 rarity=U
 type=Creature
 subtype=Elemental,Spirit

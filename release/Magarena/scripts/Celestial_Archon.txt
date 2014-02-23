@@ -1,7 +1,7 @@
 name=Celestial Archon
 url=http://magiccards.info/ths/en/3.html
 image=http://mtgimage.com/card/celestial%20archon.jpg
-value=3.509
+value=3.517
 rarity=R
 type=Enchantment,Creature
 subtype=Archon

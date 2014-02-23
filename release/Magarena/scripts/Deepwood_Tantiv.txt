@@ -1,7 +1,7 @@
 name=Deepwood Tantiv
 url=http://magiccards.info/mm/en/241.html
 image=http://mtgimage.com/card/deepwood%20tantiv.jpg
-value=2.150
+value=2.129
 rarity=U
 type=Creature
 subtype=Beast

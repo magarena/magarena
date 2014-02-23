@@ -1,7 +1,7 @@
 name=Serra Advocate
 url=http://magiccards.info/dvd/en/7.html
 image=http://mtgimage.com/card/serra%20advocate.jpg
-value=3.685
+value=3.691
 rarity=U
 type=Creature
 subtype=Angel

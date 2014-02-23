@@ -1,7 +1,7 @@
 name=Sunscape Apprentice
 url=http://magiccards.info/in/en/41.html
 image=http://mtgimage.com/card/sunscape%20apprentice.jpg
-value=3.107
+value=3.117
 rarity=C
 type=Creature
 subtype=Human,Wizard

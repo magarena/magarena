@@ -1,7 +1,7 @@
 name=Infernal Medusa
 url=http://magiccards.info/lg/en/22.html
 image=http://mtgimage.com/card/infernal%20medusa.jpg
-value=3.517
+value=3.391
 rarity=U
 type=Creature
 subtype=Gorgon

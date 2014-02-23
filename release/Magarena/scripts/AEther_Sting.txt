@@ -1,7 +1,7 @@
 name=AEther Sting
 url=http://magiccards.info/ud/en/76.html
 image=http://mtgimage.com/card/aether%20sting.jpg
-value=3.538
+value=3.589
 rarity=U
 type=Enchantment
 cost={3}{R}

@@ -1,7 +1,7 @@
 name=Cadaver Imp
 url=http://magiccards.info/roe/en/99.html
 image=http://mtgimage.com/card/cadaver%20imp.jpg
-value=2.875
+value=2.941
 rarity=C
 type=Creature
 subtype=Imp

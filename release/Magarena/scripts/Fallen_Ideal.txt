@@ -1,7 +1,7 @@
 name=Fallen Ideal
 url=http://magiccards.info/ts/en/109.html
 image=http://mtgimage.com/card/fallen%20ideal.jpg
-value=3.750
+value=3.735
 rarity=U
 type=Enchantment
 subtype=Aura

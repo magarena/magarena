@@ -1,7 +1,7 @@
 name=Caustic Crawler
 url=http://magiccards.info/wwk/en/54.html
 image=http://mtgimage.com/card/caustic%20crawler.jpg
-value=2.894
+value=2.896
 rarity=U
 type=Creature
 subtype=Insect

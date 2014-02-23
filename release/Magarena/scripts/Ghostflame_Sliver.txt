@@ -1,7 +1,7 @@
 name=Ghostflame Sliver
 url=http://magiccards.info/ts/en/239.html
 image=http://mtgimage.com/card/ghostflame%20sliver.jpg
-value=3.132
+value=3.120
 rarity=U
 type=Creature
 subtype=Sliver

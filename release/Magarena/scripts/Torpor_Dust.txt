@@ -1,7 +1,7 @@
 name=Torpor Dust
 url=http://magiccards.info/shm/en/177.html
 image=http://mtgimage.com/card/torpor%20dust.jpg
-value=1.308
+value=1.300
 rarity=C
 type=Enchantment
 subtype=Aura

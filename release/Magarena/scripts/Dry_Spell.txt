@@ -1,7 +1,7 @@
 name=Dry Spell
 url=http://magiccards.info/6e/en/124.html
 image=http://mtgimage.com/card/dry%20spell.jpg
-value=3.029
+value=3.083
 rarity=C
 type=Sorcery
 cost={1}{B}

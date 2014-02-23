@@ -1,7 +1,7 @@
 name=AEther Spellbomb
 url=http://magiccards.info/mma/en/196.html
 image=http://mtgimage.com/card/aether%20spellbomb.jpg
-value=4.258
+value=4.329
 rarity=C
 type=Artifact
 cost={1}

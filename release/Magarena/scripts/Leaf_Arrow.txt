@@ -1,7 +1,7 @@
 name=Leaf Arrow
 url=http://magiccards.info/roe/en/194.html
 image=http://mtgimage.com/card/leaf%20arrow.jpg
-value=3.34
+value=3.287
 rarity=C
 type=Instant
 cost={G}

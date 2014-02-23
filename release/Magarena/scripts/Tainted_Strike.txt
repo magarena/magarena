@@ -1,7 +1,7 @@
 name=Tainted Strike
 url=http://magiccards.info/som/en/80.html
 image=http://mtgimage.com/card/tainted%20strike.jpg
-value=3.769
+value=3.721
 rarity=C
 type=Instant
 cost={B}

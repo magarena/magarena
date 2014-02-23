@@ -1,7 +1,7 @@
 name=Goblin General
 url=http://magiccards.info/st/en/101.html
 image=http://mtgimage.com/card/goblin%20general.jpg
-value=3.115
+value=3.019
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

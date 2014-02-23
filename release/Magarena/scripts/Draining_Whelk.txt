@@ -1,7 +1,7 @@
 name=Draining Whelk
 url=http://magiccards.info/ts/en/57.html
 image=http://mtgimage.com/card/draining%20whelk.jpg
-value=4.209
+value=4.212
 rarity=R
 type=Creature
 subtype=Illusion

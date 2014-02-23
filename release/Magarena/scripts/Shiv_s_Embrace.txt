@@ -1,7 +1,7 @@
 name=Shiv's Embrace
 url=http://magiccards.info/m14/en/153.html
 image=http://mtgimage.com/card/shiv's%20embrace.jpg
-value=3.545
+value=3.554
 rarity=U
 type=Enchantment
 subtype=Aura

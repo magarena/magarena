@@ -1,7 +1,7 @@
 name=Wingrattle Scarecrow
 url=http://magiccards.info/shm/en/270.html
 image=http://mtgimage.com/card/wingrattle%20scarecrow.jpg
-value=2.397
+value=2.516
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

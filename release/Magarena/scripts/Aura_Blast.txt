@@ -1,7 +1,7 @@
 name=Aura Blast
 url=http://magiccards.info/ps/en/1.html
 image=http://mtgimage.com/card/aura%20blast.jpg
-value=3.222
+value=3.197
 rarity=C
 type=Instant
 cost={1}{W}

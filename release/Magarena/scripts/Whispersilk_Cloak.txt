@@ -1,7 +1,7 @@
 name=Whispersilk Cloak
 url=http://magiccards.info/m11/en/221.html
 image=http://mtgimage.com/card/whispersilk%20cloak.jpg
-value=4.258
+value=3.944
 rarity=C
 type=Artifact
 subtype=Equipment

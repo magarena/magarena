@@ -1,7 +1,7 @@
 name=Tariel, Reckoner of Souls
 url=http://magiccards.info/cmd/en/229.html
 image=http://mtgimage.com/card/tariel%2C%20reckoner%20of%20souls.jpg
-value=4.017
+value=3.989
 rarity=M
 type=Legendary,Creature
 subtype=Angel

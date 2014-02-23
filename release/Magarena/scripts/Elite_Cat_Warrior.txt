@@ -1,7 +1,7 @@
 name=Elite Cat Warrior
 url=http://magiccards.info/me4/en/151.html
 image=http://mtgimage.com/card/elite%20cat%20warrior.jpg
-value=3.320
+value=3.327
 rarity=C
 type=Creature
 subtype=Cat,Warrior

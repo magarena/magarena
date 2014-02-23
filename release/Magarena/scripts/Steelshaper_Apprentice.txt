@@ -1,7 +1,7 @@
 name=Steelshaper Apprentice
 url=http://magiccards.info/ds/en/15.html
 image=http://mtgimage.com/card/steelshaper%20apprentice.jpg
-value=2.74
+value=2.740
 rarity=R
 type=Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Boros Guildmage
 url=http://magiccards.info/cmd/en/186.html
 image=http://mtgimage.com/card/boros%20guildmage.jpg
-value=3.672
+value=3.750
 rarity=U
 type=Creature
 subtype=Human,Wizard

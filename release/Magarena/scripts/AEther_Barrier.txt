@@ -1,7 +1,7 @@
 name=AEther Barrier
 url=http://magiccards.info/ne/en/27.html
 image=http://mtgimage.com/card/aether%20barrier.jpg
-value=3.764
+value=3.829
 rarity=R
 type=Enchantment
 cost={2}{U}

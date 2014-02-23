@@ -1,7 +1,7 @@
 name=Looming Hoverguard
 url=http://magiccards.info/mi/en/38.html
 image=http://mtgimage.com/card/looming%20hoverguard.jpg
-value=2.341
+value=2.261
 rarity=U
 type=Creature
 subtype=Drone

@@ -1,7 +1,7 @@
 name=Death Bomb
 url=http://magiccards.info/ps/en/41.html
 image=http://mtgimage.com/card/death%20bomb.jpg
-value=1.878
+value=1.837
 rarity=C
 type=Instant
 cost={3}{B}

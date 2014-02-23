@@ -1,7 +1,7 @@
 name=Shield of the Ages
 url=http://magiccards.info/ia/en/310.html
 image=http://mtgimage.com/card/shield%20of%20the%20ages.jpg
-value=2.548
+value=2.588
 rarity=U
 type=Artifact
 cost={2}

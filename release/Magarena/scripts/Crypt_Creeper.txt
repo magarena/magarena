@@ -1,7 +1,7 @@
 name=Crypt Creeper
 url=http://magiccards.info/avr/en/91.html
 image=http://mtgimage.com/card/crypt%20creeper.jpg
-value=3.059
+value=3.028
 rarity=C
 type=Creature
 subtype=Zombie

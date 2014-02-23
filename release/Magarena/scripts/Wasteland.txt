@@ -1,7 +1,7 @@
 name=Wasteland
 url=http://magiccards.info/tp/en/340.html
 image=http://mtgimage.com/card/wasteland.jpg
-value=4.609
+value=4.621
 rarity=U
 type=Land
 ability=tap add mana {1};\

@@ -1,7 +1,7 @@
 name=Favor of the Mighty
 url=http://magiccards.info/lw/en/14.html
 image=http://mtgimage.com/card/favor%20of%20the%20mighty.jpg
-value=3.047
+value=3.091
 rarity=R
 type=Tribal,Enchantment
 subtype=Giant

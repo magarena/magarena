@@ -1,7 +1,7 @@
 name=Corrupted Conscience
 url=http://magiccards.info/mbs/en/22.html
 image=http://mtgimage.com/card/corrupted%20conscience.jpg
-value=3.754
+value=3.705
 rarity=U
 type=Enchantment
 subtype=Aura

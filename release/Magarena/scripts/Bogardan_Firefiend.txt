@@ -1,7 +1,7 @@
 name=Bogardan Firefiend
 url=http://magiccards.info/pch/en/48.html
 image=http://mtgimage.com/card/bogardan%20firefiend.jpg
-value=3.328
+value=3.333
 rarity=C
 type=Creature
 subtype=Elemental,Spirit

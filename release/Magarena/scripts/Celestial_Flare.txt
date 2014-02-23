@@ -1,7 +1,7 @@
 name=Celestial Flare
 url=http://magiccards.info/m14/en/12.html
 image=http://mtgimage.com/card/celestial%20flare.jpg
-value=3.947
+value=3.580
 rarity=C
 type=Instant
 cost={W}{W}

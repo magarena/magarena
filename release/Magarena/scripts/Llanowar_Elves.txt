@@ -1,7 +1,7 @@
 name=Llanowar Elves
 url=http://magiccards.info/m12/en/182.html
 image=http://mtgimage.com/card/llanowar%20elves.jpg
-value=4.583
+value=4.426
 rarity=C
 type=Creature
 subtype=Elf,Druid

@@ -1,7 +1,7 @@
 name=Brass Man
 url=http://magiccards.info/4e/en/320.html
 image=http://mtgimage.com/card/brass%20man.jpg
-value=3.444
+value=3.423
 rarity=C
 type=Artifact,Creature
 subtype=Construct

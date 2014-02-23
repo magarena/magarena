@@ -1,7 +1,7 @@
 name=Blightsteel Colossus
 url=http://magiccards.info/mbs/en/99.html
 image=http://mtgimage.com/card/blightsteel%20colossus.jpg
-value=4.078
+value=4.099
 rarity=M
 type=Artifact,Creature
 subtype=Golem

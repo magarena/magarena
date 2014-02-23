@@ -1,7 +1,7 @@
 name=Black Vise
 url=http://magiccards.info/fvr/en/2.html
 image=http://mtgimage.com/card/black%20vise.jpg
-value=4.582
+value=4.588
 rarity=U
 type=Artifact
 cost={1}

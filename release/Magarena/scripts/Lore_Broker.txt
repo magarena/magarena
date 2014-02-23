@@ -1,7 +1,7 @@
 name=Lore Broker
 url=http://magiccards.info/rav/en/57.html
 image=http://mtgimage.com/card/lore%20broker.jpg
-value=3.306
+value=3.230
 rarity=U
 type=Creature
 subtype=Human,Rogue

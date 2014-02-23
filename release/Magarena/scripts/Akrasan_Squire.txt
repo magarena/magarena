@@ -1,7 +1,7 @@
 name=Akrasan Squire
 url=http://magiccards.info/ala/en/1.html
 image=http://mtgimage.com/card/akrasan%20squire.jpg
-value=3.631
+value=3.634
 rarity=C
 type=Creature
 subtype=Human,Soldier

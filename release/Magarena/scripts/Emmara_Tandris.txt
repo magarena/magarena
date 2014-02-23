@@ -1,7 +1,7 @@
 name=Emmara Tandris
 url=http://magiccards.info/dgm/en/68.html
 image=http://mtgimage.com/card/emmara%20tandris.jpg
-value=1.502
+value=1.512
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Shaman

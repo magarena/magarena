@@ -1,7 +1,7 @@
 name=Anaconda
 url=http://magiccards.info/9e/en/229.html
 image=http://mtgimage.com/card/anaconda.jpg
-value=3.258
+value=3.273
 ability=swampwalk
 rarity=U
 type=Creature
