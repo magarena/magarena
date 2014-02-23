@@ -72,6 +72,11 @@ melvin
 ShawnieBoy
 tiagoruback
 
+- added support for all counter types, correct cards to use the correct counter type
+
+- increase maximum memory usage from 256M to 512M to avoid out of memory
+  errors when playing the game for a long period of time
+
 - on startup checks for new images and displays a message on the main menu
   screen if there are new downloads available
 
@@ -83,11 +88,6 @@ tiagoruback
 - full screen card view will stack duplicate cards and display the count as an overlay
 
 - F10 takes a screen shot and displays it in the default application associated with "png" files if available
-
-- increase maximum memory usage from 256M to 512M to avoid out of memory
-  errors when playing the game for a long period of time
-
-- added support for all counter types, correct cards to use the correct counter type
   
 - added the following to the card script:
   * ability: tribute <n> effect <effect>
@@ -126,8 +126,10 @@ tiagoruback
   * game panel not shown if mulligan screen option is disabled (issue 477)
 
 - added the following premade decks:
-add four theme decks
-added theme deck 'Teeth of the Predator'
+Theme-Deck_10E_R_40_Kamahls-Temper.dec
+Theme-Deck_10E_W_40_Cho-Mannos-Resolve.dec
+Theme-Deck_9E_W_40_Army-of-Justice.dec
+Theme-Deck_DPA_G_60_Teeth-of-the-Predator.dec
 
 - added the following cards:
 AEther Barrier, Aftershock, Airborne Aid, Airdrop Condor,
