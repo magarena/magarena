@@ -1,0 +1,11 @@
+name=Shinka Gatekeeper
+url=http://magiccards.info/bok/en/117.html
+image=http://mtgimage.com/card/shinka%20gatekeeper.jpg
+value=0.884
+rarity=C
+type=Creature
+subtype=Ogre,Warrior
+cost={2}{R}
+pt=3/2
+timing=main
+requires_groovy_code=Jackal Pup

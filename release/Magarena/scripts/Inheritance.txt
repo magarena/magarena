@@ -1,0 +1,9 @@
+name=Inheritance
+url=http://magiccards.info/ai/en/130.html
+image=http://mtgimage.com/card/inheritance.jpg
+value=3.662
+rarity=U
+type=Enchantment
+cost={W}
+timing=enchantment
+requires_groovy_code

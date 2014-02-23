@@ -1,0 +1,11 @@
+name=Firedrinker Satyr
+url=http://magiccards.info/ths/en/122.html
+image=http://mtgimage.com/card/firedrinker%20satyr.jpg
+value=3.357
+rarity=R
+type=Creature
+subtype=Satyr,Shaman
+cost={R}
+pt=2/1
+timing=main
+requires_groovy_code=Jackal Pup;Firedrinker Satyr

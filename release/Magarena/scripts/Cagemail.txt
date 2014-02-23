@@ -1,0 +1,12 @@
+name=Cagemail
+url=http://magiccards.info/ju/en/7.html
+image=http://mtgimage.com/card/cagemail.jpg
+value=2.87
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+given_pt=+2/+2
+given_ability=can't attack
+enchant=default,creature
+timing=aura
