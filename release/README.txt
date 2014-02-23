@@ -62,9 +62,165 @@ Thank you for your support and have fun!
 
 
 
-Release 1.47 (February 22, 2014)
+Release 1.47 (February 23, 2014)
 ============
 includes contributions from:
+hong yie
+Jericho Pumpkin
+Lodici
+melvin
+ShawnieBoy
+tiagoruback
+
+- on startup checks for new images and displays a message on the main menu
+  screen if there are new downloads available
+
+- remember the last deck loaded or saved in the Deck Editor and auto load this
+  deck the next time the standalone deck editor is opened
+
+- added help strip to bottom of main menu screens
+
+- full screen card view will stack duplicate cards and display the count as an overlay
+
+- F10 takes a screen shot and displays it in the default application associated with "png" files if available
+
+- increase maximum memory usage from 256M to 512M to avoid out of memory
+  errors when playing the game for a long period of time
+
+- added support for all counter types, correct cards to use the correct counter type
+  
+- added the following to the card script:
+  * ability: tribute <n> effect <effect>
+  * ability: enters with counter <counter type> <amount/X>
+  * cost: Discard a card at random
+  * cost: Sacrifice SN (previously using {S})
+  * cost: Remove <amount> <counterType> counters from SN (previously using {C})
+  * cost: Pay <n> life
+  * cost: Sacrifice a Swamp
+  * cost: Sacrifice a Soldier
+  * cost: Sacrifice an aura
+  * cost: Sacrifice an enchantment
+  * cost: Return a land you control to its owner's hand
+  * cost: Remove a <counter type> counter from SN
+  * effect: Put <amount> <counter type> on <chosen/SN>.
+  * effect: Prevent the next <n> damage that would be dealt to PN this turn.
+
+- fixed the following bugs:
+  * attaching an equipment causes all continous effects affecting equipment to be removed (issue 456)
+  * Llanowar Sentinel trigger should be optional (issue 484)
+  * Stony Silence should stop mana abilities on artifacts from being activated
+  * Endless Wurm's enchantment sacrifice should be optional
+  * cards that use the template 'for each destroyed this way' should count only destroyed permanents
+  * Blessing of Leeches should regenerate enchanted, not give ability
+  * Phantom Nishoba was missing lifelink-type effect
+  * Protection from artifacts not working (issue 470)
+  * Master Decoy ability missing tap cost
+  * activated ability of Lieutenant Kirtar missing sacrifice cost
+  * correct discrepancy between card count in splash and card explorer/deck editor (issue 487)
+  * expect crash, get hang on mulligan screen (issue 468)
+  * hitting spacebar to pass does not work (issue 481)
+  * set player's hand to 6 or 8 during duel setup and the mulligan screen does not show (issue 480)
+  * game screen not appearing after closing mulligan screen (issue 472)
+  * options overlay now prevents access to underlying screen while it is open (issue 473)
+  * Escape key should close About dialog (issue 475)
+  * game panel not shown if mulligan screen option is disabled (issue 477)
+
+- added the following premade decks:
+add four theme decks
+added theme deck 'Teeth of the Predator'
+
+- added the following cards:
+AEther Barrier, Aftershock, Airborne Aid, Airdrop Condor,
+Akki Blizzard-Herder, Akroan Phalanx, Akroan Skyguard, Akroma's Vengeance,
+Ali from Cairo, Amok, Anarchy, Arenson's Aura, Armor of Faith,
+Aspect of Hydra, Aspect of Wolf, Asphyxiate, Auratog, Aurochs, Aurochs Herd,
+Aysen Bureaucrats, Baku Altar, Balduvian Horde, Bane of Progress,
+Banishment Decree, Bile Blight, Binding Agony, Black Scarab, Blanchwood Armor,
+Blessing, Blight, Blood Bairn, Blue Scarab, Bolt of Keranos, Breath of Dreams,
+Brimaz, King of Oreskos, Bull Aurochs, Cagemail, Canyon Drake, Captain Sisay,
+Caribou Range, Caustic Hound, Cavern Harpy, Celestial Flare, Centaur Veteran,
+Chandra's Fury, Charging Badger, Chimeric Egg, Choking Fumes, Chromanticore,
+Claim of Erebos, Claws of Valakut, Cleanse, Consecrated Sphinx, Conservator,
+Consign to Dream, Coral Helm, Cower in Fear, Crovax, Ascendant Hero,
+Crown of Flames, Cyclops of One-Eyed Pass, Dark Hatchling, Dark Privilege,
+Decorated Griffin, Deepwater Hypnotist, Deepwood Ghoul, Deity of Scars,
+Demon of Death's Gate, Desecration Elemental, Deus of Calamity, Devastation,
+Devouring Strossus, Dirty Wererat, Disempower, Dominus of Fealty,
+Door to Nothingness, Dovescape, Draconian Cylix, Dragonlair Spider,
+Drastic Revelation, Drift of the Dead, Dromad Purebred, Drown in Sorrow,
+Dry Spell, Dwarven Nomad, Dwarven Warriors, Earsplitting Rats, Earthlink,
+Ebon Drake, Ebony Horse, El-Hajjaj, Elite Javelineer, Elite Skirmisher,
+Ember Swallower, Ephara's Radiance, Epiphany Storm, Erratic Portal,
+Essence Vortex, Eternal Flame, Ethereal Champion, Evanescent Intellect,
+Excoriate, Execute, Fabricate, Faith Healer, Fanatic of Xenagos,
+Fangren Marauder, Fate Unraveler, Feast of Blood, Fencer Clique,
+Feral Thallid, Festival of the Guildpact, Fieldmist Borderpost, Fiery Mantle,
+Filthy Cur, Firebreathing, Fire Dragon, Firedrinker Satyr, Fire Tempest,
+Fire Whip, Firewild Borderpost, Flame Wave, Fling, Flitterstep Eidolon,
+Floodbringer, Flowstone Blade, Flowstone Embrace, Font of Mythos,
+Forced Fruition, Forsaken Drifters, Fortitude, Fracturing Gust,
+Freed from the Real, Frenetic Ogre, Gaea's Embrace, Gatherer of Graces,
+Ghostblade Eidolon, Ghostly Wings, Goblin Battle Jester, Goblin Offensive,
+Goblin Turncoat, Gorgon's Head, Great Hart, Green Scarab, Griffin Dreamfinder,
+Griffin Protector, Grisly Transformation, Guan Yu's 1,000-Li March,
+Hail Storm, Havoc, Heliod's Emissary, Hellion Crucible, Herald of Torment,
+Hold at Bay, Holy Armor, Howl of the Night Pack, Hunting Drake,
+Hymn of Rebirth, Impetuous Sunchaser, Imposing Sovereign, Infested Roothold,
+Inheritance, Insight, Intruder Alarm, Isolation Cell, Jackal Pup, Jokulhaups,
+Jolrael's Favor, Karametra, God of Harvests, Karametra's Favor, Keldon Mantle,
+King Crab, Kiss of Death, Kjeldoran Dead, Kjeldoran Frostbeast,
+Knight-Captain of Eos, Kragma Butcher, Krosan Avenger, Leery Fogbeast,
+Leonin Bladetrap, Lightning Serpent, Liliana's Shade, Lone Wolf,
+Looming Hoverguard, Lord of Tresserhorn, Lore Broker, Mage il-Vec,
+Marrow Bats, Marsh Crocodile, Martyrs' Tomb, Master of Diversion, Masticore,
+Meloku the Clouded Mirror, Metallic Mastery, Mikokoro, Center of the Sea,
+Mindcrank, Mind's Eye, Mindsparker, Mirran Spy, Mischievous Poltergeist,
+Misfortune's Gain, Mistvein Borderpost, Mobilize, Mortal's Ardor,
+Mortal's Resolve, Multani's Decree, Nature's Lore, Nature's Ruin, Nausea,
+Nekusar, the Mindrazer, Nessian Demolok, Nested Ghoul, Nevermaker,
+Nevinyrral's Disk, Nim Grotesque, Nim Lasher, Nim Shambler, Nim Shrieker,
+Niv-Mizzet, the Firemind, Noggle Bridgebreaker, Numai Outcast,
+Nyxborn Eidolon, Nyxborn Rollicker, Nyxborn Shieldmate, Nyxborn Triton,
+Nyxborn Wolf, Oath of the Ancient Wood, Obliterate, Oboro Breezecaller,
+Ocular Halo, Ogre Recluse, Ogre Shaman, Oppression, Orcish Cannoneers,
+Orcish Oriflamme, Oreskos Sun Guide, Ornitharch, Overbeing of Myth, Overrule,
+Overwhelming Forces, Painful Quandary, Palliation Accord, Pardic Lancer,
+Pardic Swordsmith, Pariah's Shield, Patchwork Gnomes, Path of Peace,
+Phantatog, Pheres-Band Tromper, Phyrexian Boon, Phyrexian Reclamation, Piety,
+Pillaging Horde, Pious Warrior, Pit Trap, Planar Cleansing, Predatory Hunger,
+Presence of the Master, Prosperity, Putrefaction, Pyromania,
+Pyrostatic Pillar, Quag Sickness, Quicksand, Quill-Slinger Boggart,
+Rabid Wombat, Rain of Blades, Rain of Daggers, Rally, Reckless Assault,
+Reckless Reveler, Red Scarab, Regeneration, Respite, Rhystic Study,
+Righteous Authority, Righteous Fury, Rise to the Challenge, Rockslide Ambush,
+Rootwater Alligator, Ruin Ghost, Sadistic Glee, Sandstorm, Savageborn Hydra,
+Scouring Sands, Seismic Strike, Serpent Skin, Serum Raker, Servant of Volrath,
+Setessan Oathsworn, Setessan Starbreaker, Shadow Lance, Sheltering Word,
+Shield of the Ages, Shinka Gatekeeper, Shiv's Embrace, Shrivel,
+Silent Sentinel, Siren of the Fanged Coast, Siren Song Lyre, Skeletal Kathari,
+Skeleton Shard, Skull Collector, Snake of the Golden Grove, Soaring Hope,
+Sol'kanar the Swamp King, Soot Imp, Soramaro, First to Dream,
+Soratami Cloudskater, Soratami Mindsweeper, Soratami Mirror-Guard,
+Soratami Rainshaper, Soratami Savant, Soul Channeling, Soul Net, Soul Shred,
+Spellshock, Spelltithe Enforcer, Sphinx's Disciple, Spike Hatcher,
+Spike Weaver, Spined Fluke, Spire Barrage, Spitting Earth, Spitting Spider,
+Spore Flower, Staff of the Death Magus, Staff of the Flame Magus,
+Staff of the Mind Magus, Staff of the Sun Magus, Staff of the Wild Magus,
+Stampeding Serow, Stampeding Wildebeests, Steelshaper Apprentice,
+Steelshaper's Gift, Stolen Grain, Stonehands, Stonehorn Chanter, Stormbind,
+Strands of Night, Strands of Undeath, Stratus Walk, Sun Clasp, Sun Droplet,
+Swat, Swordwise Centaur, Tandem Lookout, Tawnos's Wand, Teferi's Care,
+Temple Bell, Temple of Enlightenment, Temple of Malice, Temple of Plenty,
+Temporal Eddy, Temporal Spring, Tendrils of Corruption, Thalakos Mistfolk,
+Thaumatog, The Brute, Thunder Brute, Timberpack Wolf, Time Bomb, Torture,
+Trap Digger, Trolls of Tel-Jilad, Trostani's Summoner, Tunneler Wurm,
+Uktabi Wildcats, Unifying Theory, Unstable Mutation, Urza's Guilt,
+Vampire Warlord, Vampiric Feast, Vampiric Touch, Vanguard of Brimaz,
+Vedalken Dismisser, Vedalken Infuser, Veinfire Borderpost, Viashino Skeleton,
+Vile Consumption, Vile Rebirth, Virtue's Ruin, Vitalize, Volcanic Geyser,
+Wake of Vultures, Walking Archive, Walking Atlas, Warchanter of Mogis, Warmth,
+Wayward Soul, Weight of the Underworld, White Scarab, Wildfield Borderpost,
+Witchstalker, Withering Boon, Wood Elves, Yawgmoth's Edict
 
 Release 1.46 (January 26, 2014)
 ============
