@@ -1,0 +1,11 @@
+name=Jackal Pup
+url=http://magiccards.info/pd2/en/2.html
+image=http://mtgimage.com/card/jackal%20pup.jpg
+value=3.869
+rarity=U
+type=Creature
+subtype=Hound
+cost={R}
+pt=2/1
+timing=main
+requires_groovy_code
