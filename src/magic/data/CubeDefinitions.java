@@ -60,14 +60,15 @@ public class CubeDefinitions {
             ex.printStackTrace();
             return;
         }
-        final Scanner sc = new Scanner(content);
         final MagicCubeDefinition cubeDefinition = new MagicCubeDefinition(name);
-        while (sc.hasNextLine()) {
-            final String cardName = sc.nextLine().trim();
-            if (!cardName.isEmpty()) {
-                cubeDefinition.add(cardName);
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String cardName = sc.nextLine().trim();
+                if (!cardName.isEmpty()) {
+                    cubeDefinition.add(cardName);
+                }
             }
-        }
+        };
         cubeDefinitions.add(cubeDefinition);
     }
 
