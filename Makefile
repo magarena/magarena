@@ -56,7 +56,7 @@ release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 
 cards/standard_all.out:
 	touch $@
-	for p in `seq 37`; do \
+	for p in `seq 43`; do \
 		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b31&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
 	done
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
@@ -64,7 +64,7 @@ cards/standard_all.out:
 
 cards/extended_all.out:
 	touch $@
-	for p in `seq 88`; do \
+	for p in `seq 93`; do \
 		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b32&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
 	done
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
@@ -72,7 +72,7 @@ cards/extended_all.out:
 
 cards/modern_all.out:
 	touch $@
-	for p in `seq 264`; do \
+	for p in `seq 269`; do \
 		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b35&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
 	done
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
