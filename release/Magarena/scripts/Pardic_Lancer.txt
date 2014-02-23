@@ -1,0 +1,11 @@
+name=Pardic Lancer
+url=http://magiccards.info/tr/en/107.html
+image=http://mtgimage.com/card/pardic%20lancer.jpg
+value=1.667
+rarity=C
+type=Creature
+subtype=Human,Barbarian
+cost={4}{R}
+pt=3/2
+ability=pay Discard a card at random:SN gets +1/+0 and gains first strike until end of turn.
+timing=main

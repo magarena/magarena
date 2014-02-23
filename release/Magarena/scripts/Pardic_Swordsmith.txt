@@ -1,0 +1,11 @@
+name=Pardic Swordsmith
+url=http://magiccards.info/od/en/213.html
+image=http://mtgimage.com/card/pardic%20swordsmith.jpg
+value=1.455
+rarity=C
+type=Creature
+subtype=Dwarf
+cost={2}{R}
+pt=1/1
+ability=pay {R},Discard a card at random:SN gets +2/+0 until end of turn.
+timing=main

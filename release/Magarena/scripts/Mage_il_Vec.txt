@@ -1,0 +1,11 @@
+name=Mage il-Vec
+url=http://magiccards.info/ex/en/86.html
+image=http://mtgimage.com/card/mage%20il-vec.jpg
+value=1.42
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{R}
+pt=2/2
+ability=pay {T},Discard a card at random:SN deals 1 damage to target creature or player.
+timing=main

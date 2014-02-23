@@ -1,0 +1,9 @@
+name=Amok
+url=http://magiccards.info/sh/en/76.html
+image=http://mtgimage.com/card/amok.jpg
+value=2.517
+rarity=R
+type=Enchantment
+cost={1}{R}
+ability=pay {1},Discard a card at random:Put a +1/+1 counter on target creature.
+timing=enchantment

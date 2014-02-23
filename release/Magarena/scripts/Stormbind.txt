@@ -1,0 +1,9 @@
+name=Stormbind
+url=http://magiccards.info/tsts/en/102.html
+image=http://mtgimage.com/card/stormbind.jpg
+value=3.736
+rarity=R
+type=Enchantment
+cost={1}{R}{G}
+ability=pay {2},Discard a card at random:SN deals 2 damage to target creature or player.
+timing=enchantment
