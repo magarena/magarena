@@ -1,0 +1,11 @@
+name=Blood Hound
+url=http://magiccards.info/mm/en/176.html
+image=http://mtgimage.com/card/blood%20hound.jpg
+value=2.571
+rarity=R
+type=Creature
+subtype=Hound
+cost={2}{R}
+pt=1/1
+timing=main
+requires_groovy_code

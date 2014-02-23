@@ -1,0 +1,11 @@
+name=Saber Ants
+url=http://magiccards.info/mm/en/267.html
+image=http://mtgimage.com/card/saber%20ants.jpg
+value=3.922
+rarity=U
+type=Creature
+subtype=Insect
+cost={3}{G}
+pt=2/3
+timing=main
+requires_groovy_code
