@@ -1,6 +1,6 @@
 name=4/4 black Horror creature token
 token=Horror
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19967&amp;d=1143669831
+image=http://cdn.staticneo.com/w/mtg/e/e6/Horror2.jpg
 value=4
 type=Creature
 subtype=Horror

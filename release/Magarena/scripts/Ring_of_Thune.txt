@@ -1,0 +1,12 @@
+name=Ring of Thune
+url=http://magiccards.info/m13/en/213.html
+image=http://mtgimage.com/card/ring%20of%20thune.jpg
+value=3.737
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={1}
+given_ability=vigilance
+timing=equipment
+requires_groovy_code

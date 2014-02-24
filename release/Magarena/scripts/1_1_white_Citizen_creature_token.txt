@@ -1,5 +1,5 @@
 name=1/1 white Citizen creature token
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=32408&amp;stc=1&amp;d=1159618908
+image=http://cdn.staticneo.com/w/mtg/1/15/Citizen.jpg
 value=1
 cost={0}
 token=Citizen

@@ -1,0 +1,11 @@
+name=Pheres-Band Raiders
+url=http://magiccards.info/bng/en/133.html
+image=http://mtgimage.com/card/pheres-band%20raiders.jpg
+value=3.938
+rarity=U
+type=Creature
+subtype=Centaur,Warrior
+cost={5}{G}
+pt=5/5
+timing=main
+requires_groovy_code

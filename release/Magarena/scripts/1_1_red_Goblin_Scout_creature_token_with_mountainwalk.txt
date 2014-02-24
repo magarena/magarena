@@ -1,5 +1,5 @@
 name=1/1 red Goblin Scout creature token with mountainwalk
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=88008&amp;d=1239793138
+image=http://cdn.staticneo.com/w/mtg/b/bd/Goblin_Scout.jpg
 token=Goblin Scout
 type=Creature
 subtype=Goblin,Scout

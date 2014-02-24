@@ -672,3 +672,10 @@ incoming:
 properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z0-9]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' cards/scriptable.txt) -d -u > $@
+
+github-releases.json:
+	curl https://api.github.com/repos/magarena/magarena/releases > $@
+
+correct-release-label:
+	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/80545 -H"Content-Type: application/json" -d'{"name": "Magarena-1.47.app.zip", "label":"Magarena-1.47.app.zip for Mac"}' -u ${username}
+	curl -XPATCH https://api.github.com/repos/magarena/magarena/releases/assets/80544 -H"Content-Type: application/json" -d'{"name": "Magarena-1.47.zip", "label":"Magarena-1.47.zip for Linux/Windows"}' -u ${username}

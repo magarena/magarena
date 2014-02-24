@@ -1,0 +1,11 @@
+name=Aerie Worshippers
+url=http://magiccards.info/bng/en/30.html
+image=http://mtgimage.com/card/aerie%20worshippers.jpg
+value=3.75
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={3}{U}
+pt=2/4
+timing=main
+requires_groovy_code

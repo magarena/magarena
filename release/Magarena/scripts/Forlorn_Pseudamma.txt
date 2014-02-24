@@ -1,0 +1,12 @@
+name=Forlorn Pseudamma
+url=http://magiccards.info/bng/en/71.html
+image=http://mtgimage.com/card/forlorn%20pseudamma.jpg
+value=2.909
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=2/1
+ability=intimidate
+timing=main
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Ring of Valkas
+url=http://magiccards.info/m13/en/214.html
+image=http://mtgimage.com/card/ring%20of%20valkas.jpg
+value=3.731
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={1}
+given_ability=haste
+timing=equipment
+requires_groovy_code

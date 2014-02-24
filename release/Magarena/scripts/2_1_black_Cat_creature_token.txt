@@ -1,6 +1,6 @@
 name=2/1 black Cat creature token
 token=Cat
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19957&amp;d=1143667949
+image=http://cdn.staticneo.com/w/mtg/0/08/Cat2.jpg
 value=2
 type=Creature
 subtype=Cat
