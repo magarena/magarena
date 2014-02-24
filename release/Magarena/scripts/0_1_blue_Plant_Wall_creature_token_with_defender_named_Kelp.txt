@@ -1,5 +1,5 @@
 name=0/1 blue Plant Wall creature token with defender named Kelp
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=95758&amp;d=1253425264
+image=http://cdn.staticneo.com/w/mtg/a/a6/Kelp.jpg
 token=Kelp
 value=1
 type=Creature

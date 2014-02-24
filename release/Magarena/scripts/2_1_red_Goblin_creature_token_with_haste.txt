@@ -1,6 +1,6 @@
 name=2/1 red Goblin creature token with haste
 token=Goblin
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=30596&d=1157620938
+image=http://cdn.staticneo.com/w/mtg/8/80/Goblin4.jpg
 value=1
 type=Creature
 subtype=Goblin

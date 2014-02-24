@@ -1,6 +1,6 @@
 name=1/1 black Zombie Goblin creature token named Festering Goblin
 token=Festering Goblin
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=88009&amp;d=1239793138
+image=http://cdn.staticneo.com/w/mtg/2/24/Festering_Goblin.jpg
 value=1
 type=Creature
 subtype=Zombie,Goblin

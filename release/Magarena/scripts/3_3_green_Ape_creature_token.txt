@@ -1,6 +1,6 @@
 name=3/3 green Ape creature token
 token=Ape
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=42431&stc=1&d=1173951187
+image=http://cdn.staticneo.com/w/mtg/d/db/Ape.jpg
 value=3
 type=Creature
 subtype=Ape

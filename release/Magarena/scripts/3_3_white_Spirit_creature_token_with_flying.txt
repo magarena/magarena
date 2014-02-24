@@ -1,5 +1,5 @@
 name=3/3 white Spirit creature token with flying
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19972&amp;d=1143669910
+image=http://cdn.staticneo.com/w/mtg/6/6a/Spirit3.jpg
 value=3
 token=Spirit
 type=Creature

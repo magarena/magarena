@@ -1,5 +1,5 @@
 name=2/2 colorless Spawn artifact creature token
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19993&amp;d=1143672364
+image=http://cdn.staticneo.com/w/mtg/d/d3/Spawn.jpg
 token=Spawn
 type=Artifact,Creature
 subtype=Spawn

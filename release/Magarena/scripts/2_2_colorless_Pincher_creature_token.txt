@@ -1,5 +1,5 @@
 name=2/2 colorless Pincher creature token
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=20006&amp;d=1143673222
+image=http://cdn.staticneo.com/w/mtg/8/88/Pincher.jpg
 token=Pincher
 type=Creature
 subtype=Pincher

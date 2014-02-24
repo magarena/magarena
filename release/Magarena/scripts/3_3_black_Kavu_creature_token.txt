@@ -1,6 +1,6 @@
 name=3/3 black Kavu creature token
 token=Kavu
-image=http://forums.mtgsalvation.com/attachment.php?attachmentid=19958&amp;d=1143667953
+image=http://cdn.staticneo.com/w/mtg/4/42/Kavu.jpg
 value=3
 type=Creature
 subtype=Kavu
