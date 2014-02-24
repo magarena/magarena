@@ -1,6 +1,6 @@
 name=3/3 green Boar creature token
 token=Boar
-image=http://www.slightlymagic.net/forum/download/file.php?id=8904&mode=view
+image=http://media-dominaria.cursecdn.com/attachments/102/31/635032498723573408.jpg
 value=3
 type=Creature
 subtype=Boar
