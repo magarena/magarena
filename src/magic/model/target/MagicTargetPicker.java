@@ -49,6 +49,8 @@ public abstract class MagicTargetPicker<T> {
         register("destroy no regen", MagicDestroyTargetPicker.DestroyNoRegen);
         register("shroud", MagicShroudTargetPicker.create());
         register("can't attack or block", new MagicNoCombatTargetPicker(true,true,true));
+        register("can't attack", new MagicNoCombatTargetPicker(true,false,true));
+        register("can't block", new MagicNoCombatTargetPicker(false,true,true));
         register("defender", new MagicNoCombatTargetPicker(true,false,true));
         register("tap", new MagicNoCombatTargetPicker(true,true,false));
         register("indestructible", MagicIndestructibleTargetPicker.create());
