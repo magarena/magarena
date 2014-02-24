@@ -1,0 +1,11 @@
+name=Ring of Evos Isle
+url=http://magiccards.info/m13/en/211.html
+image=http://mtgimage.com/card/ring%20of%20evos%20isle.jpg
+value=3.686
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={1}
+timing=equipment
+requires_groovy_code
