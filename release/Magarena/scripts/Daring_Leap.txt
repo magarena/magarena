@@ -1,0 +1,9 @@
+name=Daring Leap
+url=http://magiccards.info/ps/en/101.html
+image=http://mtgimage.com/card/daring%20leap.jpg
+value=2.345
+rarity=C
+type=Instant
+cost={1}{W}{U}
+timing=pump
+requires_groovy_code=Aerial Maneuver

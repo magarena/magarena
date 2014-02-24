@@ -1,0 +1,9 @@
+name=Destructive Flow
+url=http://magiccards.info/ps/en/102.html
+image=http://mtgimage.com/card/destructive%20flow.jpg
+value=3.216
+rarity=R
+type=Enchantment
+cost={B}{R}{G}
+timing=enchantment
+requires_groovy_code
