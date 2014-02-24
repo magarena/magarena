@@ -1,0 +1,11 @@
+name=God-Favored General
+url=http://magiccards.info/bng/en/14.html
+image=http://mtgimage.com/card/god-favored%20general.jpg
+value=2.909
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=1/1
+timing=main
+requires_groovy_code

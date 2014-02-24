@@ -1,0 +1,12 @@
+name=Avatar of Discord
+url=http://magiccards.info/arc/en/79.html
+image=http://mtgimage.com/card/avatar%20of%20discord.jpg
+value=3.844
+rarity=R
+type=Creature
+subtype=Avatar
+cost={B/R}{B/R}{B/R}
+pt=5/3
+ability=flying
+timing=main
+requires_groovy_code
