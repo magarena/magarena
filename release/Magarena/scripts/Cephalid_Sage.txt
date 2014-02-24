@@ -1,0 +1,11 @@
+name=Cephalid Sage
+url=http://magiccards.info/tr/en/29.html
+image=http://mtgimage.com/card/cephalid%20sage.jpg
+value=2.5
+rarity=U
+type=Creature
+subtype=Cephalid
+cost={3}{U}
+pt=2/3
+timing=main
+requires_groovy_code

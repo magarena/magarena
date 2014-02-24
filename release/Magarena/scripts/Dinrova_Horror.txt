@@ -1,0 +1,11 @@
+name=Dinrova Horror
+url=http://magiccards.info/gtc/en/155.html
+image=http://mtgimage.com/card/dinrova%20horror.jpg
+value=3.186
+rarity=U
+type=Creature
+subtype=Horror
+cost={4}{U}{B}
+pt=4/4
+timing=main
+requires_groovy_code

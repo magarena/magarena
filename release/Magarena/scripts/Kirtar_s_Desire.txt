@@ -1,0 +1,12 @@
+name=Kirtar's Desire
+url=http://magiccards.info/od/en/27.html
+image=http://mtgimage.com/card/kirtar's%20desire.jpg
+value=3.641
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+given_ability=can't attack
+enchant=can't attack,neg creature
+timing=aura
+requires_groovy_code

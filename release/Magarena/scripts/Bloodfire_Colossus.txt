@@ -1,0 +1,11 @@
+name=Bloodfire Colossus
+url=http://magiccards.info/ddi/en/62.html
+image=http://mtgimage.com/card/bloodfire%20colossus.jpg
+value=3.974
+rarity=R
+type=Creature
+subtype=Giant
+cost={6}{R}{R}
+pt=6/6
+timing=main
+requires_groovy_code

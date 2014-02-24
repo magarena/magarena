@@ -1,0 +1,11 @@
+name=Pardic Arsonist
+url=http://magiccards.info/tr/en/105.html
+image=http://mtgimage.com/card/pardic%20arsonist.jpg
+value=3.32
+rarity=U
+type=Creature
+subtype=Human,Barbarian
+cost={2}{R}{R}
+pt=3/3
+timing=main
+requires_groovy_code

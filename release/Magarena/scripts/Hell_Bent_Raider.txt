@@ -1,0 +1,11 @@
+name=Hell-Bent Raider
+url=http://magiccards.info/tr/en/101.html
+image=http://mtgimage.com/card/hell-bent%20raider.jpg
+value=3.786
+rarity=R
+type=Creature
+subtype=Human,Barbarian
+cost={1}{R}{R}
+pt=2/2
+ability=first strike;haste;pay Discard a card at random:SN gains protection from white until end of turn.
+timing=main

@@ -1,0 +1,12 @@
+name=Aboshan's Desire
+url=http://magiccards.info/od/en/59.html
+image=http://mtgimage.com/card/aboshan's%20desire.jpg
+value=3.128
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+given_ability=flying
+enchant=flying,pos creature
+timing=aura
+requires_groovy_code

@@ -1,0 +1,12 @@
+name=Gloomdrifter
+url=http://magiccards.info/tr/en/61.html
+image=http://mtgimage.com/card/gloomdrifter.jpg
+value=3.409
+rarity=U
+type=Creature
+subtype=Zombie,Minion
+cost={3}{B}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code

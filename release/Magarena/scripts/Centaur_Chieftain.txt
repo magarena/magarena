@@ -1,0 +1,12 @@
+name=Centaur Chieftain
+url=http://magiccards.info/tr/en/122.html
+image=http://mtgimage.com/card/centaur%20chieftain.jpg
+value=4.136
+rarity=U
+type=Creature
+subtype=Centaur
+cost={3}{G}
+pt=3/3
+ability=haste
+timing=main
+requires_groovy_code

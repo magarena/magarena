@@ -1,0 +1,9 @@
+name=Slay
+url=http://magiccards.info/pvc/en/25.html
+image=http://mtgimage.com/card/slay.jpg
+value=3.333
+rarity=U
+type=Instant
+cost={2}{B}
+timing=removal
+requires_groovy_code

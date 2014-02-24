@@ -1,0 +1,12 @@
+name=Patriarch's Desire
+url=http://magiccards.info/od/en/156.html
+image=http://mtgimage.com/card/patriarch's%20desire.jpg
+value=1.162
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{B}
+given_pt=+2/-2
+enchant=weaken +2/-2,creature
+timing=aura
+requires_groovy_code

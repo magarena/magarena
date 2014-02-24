@@ -1,0 +1,12 @@
+name=Parasitic Strix
+url=http://magiccards.info/cfx/en/32.html
+image=http://mtgimage.com/card/parasitic%20strix.jpg
+value=2.985
+rarity=C
+type=Artifact,Creature
+subtype=Bird
+cost={2}{U}
+pt=2/2
+ability=flying
+timing=main
+requires_groovy_code

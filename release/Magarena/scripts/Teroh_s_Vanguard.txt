@@ -1,0 +1,12 @@
+name=Teroh's Vanguard
+url=http://magiccards.info/tr/en/19.html
+image=http://mtgimage.com/card/teroh's%20vanguard.jpg
+value=2.417
+rarity=U
+type=Creature
+subtype=Human,Nomad
+cost={3}{W}
+pt=2/3
+ability=flash
+timing=pumpFlash
+requires_groovy_code
