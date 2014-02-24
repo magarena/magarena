@@ -9,4 +9,4 @@ cost={1}{R}
 given_ability=can't block
 ability=dies effect Return SN from the graveyard to its owner's hand.
 timing=aura
-enchant=can't attack or block,neg creature
+enchant=can't block,neg creature

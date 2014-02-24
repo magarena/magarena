@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 timing=aura
-enchant=can't attack or block,neg creature
+enchant=can't attack,neg creature
 requires_groovy_code=Defang
