@@ -122,6 +122,10 @@ public class ImageDrawingUtils {
             g.drawImage(IconImages.PROTARTIFACT.getImage(),ax,ay,observer);
             ax+=16;
         }
+        if (abilityFlags.contains(MagicAbility.ProtectionFromAllColors)) {
+            g.drawImage(IconImages.PROTALLCOLORS.getImage(),ax,ay,observer);
+            ax+=16;
+        }
         if (abilityFlags.contains(MagicAbility.ProtectionFromLands)) {
             g.drawImage(IconImages.PROTLAND.getImage(),ax,ay,observer);
             ax+=16;

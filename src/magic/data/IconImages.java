@@ -110,6 +110,7 @@ public class IconImages {
     public static final ImageIcon PROTLAND=loadIcon("protland.png");
     public static final ImageIcon PROTRED=loadIcon("protred.png");
     public static final ImageIcon PROTWHITE=loadIcon("protwhite.png");
+    public static final ImageIcon PROTALLCOLORS=loadIons("protallcolors.png");
     public static final ImageIcon DEFENDER=loadIcon("defender.png");
     public static final ImageIcon VIGILANCE=loadIcon("vigilance.png");
     public static final ImageIcon DOUBLESTRIKE=loadIcon("doublestrike.png");
