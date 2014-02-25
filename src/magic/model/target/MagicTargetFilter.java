@@ -69,6 +69,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicStackFilterImpl TARGET_SPELL_WITH_CMC_EQ_1 = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.isSpell() && target.getConvertedCost() == 1;
+        }
+    };
+    
     MagicStackFilterImpl TARGET_SPELL_WITH_CMC_EQ_2 = new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() == 2;

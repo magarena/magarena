@@ -69,6 +69,7 @@ public class MagicTargetFilterFactory {
         single.put("spell", TARGET_SPELL);
         single.put("spell or permanent", TARGET_SPELL_OR_PERMANENT);
         single.put("spell you don't control", TARGET_SPELL_YOU_DONT_CONTROL);
+        single.put("spell with converted mana cost 1", TARGET_SPELL_WITH_CMC_EQ_1);
         single.put("spell with converted mana cost 2", TARGET_SPELL_WITH_CMC_EQ_2);
         single.put("spell that targets a player", TARGET_SPELL_THAT_TARGETS_PLAYER);
         single.put("spell with {X} in its mana cost", TARGET_SPELL_WITH_X_COST);

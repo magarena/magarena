@@ -1,0 +1,10 @@
+name=Mental Misstep
+url=http://magiccards.info/nph/en/38.html
+image=http://mtgimage.com/card/mental%20misstep.jpg
+value=4.626
+rarity=U
+type=Instant
+cost={U}
+effect=Counter target spell with converted mana cost 1.
+timing=counter
+requires_groovy_code
