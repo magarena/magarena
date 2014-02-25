@@ -22,6 +22,11 @@ public enum MagicCostManaType {
     RedWhite("red/white","{R/W}",Arrays.asList(MagicManaType.Red,MagicManaType.White)),
     GreenWhite("green/white","{G/W}",Arrays.asList(MagicManaType.Green,MagicManaType.White)),
     GreenBlue("green/blue","{G/U}",Arrays.asList(MagicManaType.Green,MagicManaType.Blue)),
+    PhyrexianWhite("phyrexian white","{P/W}",Arrays.asList(MagicManaType.White)),
+    PhyrexianBlue("phyrexian blue","{P/U}",Arrays.asList(MagicManaType.Blue)),
+    PhyrexianBlack("phyrexian black","{P/B}",Arrays.asList(MagicManaType.Black)),
+    PhyrexianRed("phyrexian red","{P/R}",Arrays.asList(MagicManaType.Red)),
+    PhyrexianGreen("phyrexian green","{P/G}",Arrays.asList(MagicManaType.Green)),
     White("white","{W}",Arrays.asList(MagicManaType.White)),
     Blue("blue","{U}",Arrays.asList(MagicManaType.Blue)),
     Black("black","{B}",Arrays.asList(MagicManaType.Black)),
@@ -30,9 +35,8 @@ public enum MagicCostManaType {
     ;
 
     public static final int NR_OF_TYPES=values().length;
-    public static final EnumSet<MagicCostManaType> HYBRID = EnumSet.range(WhiteBlue, GreenBlue);
     public static final EnumSet<MagicCostManaType> MONO = EnumSet.range(White, Green);
-    public static final EnumSet<MagicCostManaType> NON_MONO = EnumSet.range(Colorless, GreenBlue);
+    public static final EnumSet<MagicCostManaType> NON_MONO = EnumSet.complementOf(MONO);
 
     private final String name;
     private final String text;
