@@ -1,0 +1,10 @@
+name=Psychosis Crawler
+url=http://magiccards.info/mbs/en/126.html
+image=http://mtgimage.com/card/psychosis%20crawler.jpg
+value=3.815
+rarity=R
+type=Artifact,Creature
+subtype=Horror
+cost={5}
+timing=artifact
+requires_groovy_code=Maro;Psychosis Crawler

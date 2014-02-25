@@ -1,0 +1,10 @@
+name=Royal Decree
+url=http://magiccards.info/ai/en/146.html
+image=http://mtgimage.com/card/royal%20decree.jpg
+value=3.385
+rarity=R
+type=Enchantment
+cost={2}{W}{W}
+ability=cumulative upkeep {W}
+timing=enchantment
+requires_groovy_code
