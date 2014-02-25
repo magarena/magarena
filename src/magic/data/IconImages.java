@@ -158,6 +158,11 @@ public class IconImages {
     public static final ImageIcon COST_BLACK=loadSymbolIcon(26, false);
     public static final ImageIcon COST_RED=loadSymbolIcon(27, false);
     public static final ImageIcon COST_GREEN=loadSymbolIcon(28, false);
+    public static final ImageIcon COST_PHYREXIAN_WHITE=loadSymbolIcon(45, false);
+    public static final ImageIcon COST_PHYREXIAN_BLUE=loadSymbolIcon(46, false);
+    public static final ImageIcon COST_PHYREXIAN_BLACK=loadSymbolIcon(47, false);
+    public static final ImageIcon COST_PHYREXIAN_RED=loadSymbolIcon(48, false);
+    public static final ImageIcon COST_PHYREXIAN_GREEN=loadSymbolIcon(49, false);
     public static final ImageIcon COST_WHITE_BLUE=loadSymbolIcon(30, false);
     public static final ImageIcon COST_WHITE_BLACK=loadSymbolIcon(31, false);
     public static final ImageIcon COST_BLUE_BLACK=loadSymbolIcon(32, false);

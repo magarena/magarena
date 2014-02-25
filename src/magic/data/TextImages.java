@@ -28,11 +28,16 @@ public class TextImages {
         TEXT_ICONS.put("{16}",IconImages.COST_SIXTEEN);
         TEXT_ICONS.put("{X}",IconImages.COST_X);
 
-        TEXT_ICONS.put("{B}",IconImages.COST_BLACK);
-        TEXT_ICONS.put("{U}",IconImages.COST_BLUE);
-        TEXT_ICONS.put("{G}",IconImages.COST_GREEN);
-        TEXT_ICONS.put("{R}",IconImages.COST_RED);
         TEXT_ICONS.put("{W}",IconImages.COST_WHITE);
+        TEXT_ICONS.put("{U}",IconImages.COST_BLUE);
+        TEXT_ICONS.put("{B}",IconImages.COST_BLACK);
+        TEXT_ICONS.put("{R}",IconImages.COST_RED);
+        TEXT_ICONS.put("{G}",IconImages.COST_GREEN);
+        TEXT_ICONS.put("{P/W}",IconImages.COST_PHYREXIAN_WHITE);
+        TEXT_ICONS.put("{P/U}",IconImages.COST_PHYREXIAN_BLUE);
+        TEXT_ICONS.put("{P/B}",IconImages.COST_PHYREXIAN_BLACK);
+        TEXT_ICONS.put("{P/R}",IconImages.COST_PHYREXIAN_RED);
+        TEXT_ICONS.put("{P/G}",IconImages.COST_PHYREXIAN_GREEN);
         TEXT_ICONS.put("{B/G}",IconImages.COST_BLACK_GREEN);
         TEXT_ICONS.put("{B/R}",IconImages.COST_BLACK_RED);
         TEXT_ICONS.put("{U/B}",IconImages.COST_BLUE_BLACK);
