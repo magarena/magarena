@@ -56,30 +56,24 @@ release/Magarena/mods/%_cube.txt: cards/existing_tip.txt cards/%_all.txt
 
 cards/standard_all.out:
 	touch $@
-	for p in `seq 43`; do \
-		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b31&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
-	done
+	seq 43 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b31&p={}" -O - | grep "deckbox.org/mtg/" >> $@
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
+	sed -i 's/Aether/AEther/' $@
 
 cards/extended_all.out:
 	touch $@
-	for p in `seq 93`; do \
-		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b32&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
-	done
+	seq 93 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b32&p={}" -O - | grep "deckbox.org/mtg/" >> $@
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
+	sed -i 's/Aether/AEther/' $@
 
 cards/modern_all.out:
 	touch $@
-	for p in `seq 269`; do \
-		echo $$p; curl --compressed "http://deckbox.org/games/mtg/cards?f=b35&p=$$p" | grep "deckbox.org/mtg/" >> $@; \
-	done
+	seq 269 | parallel -q -j 20 -k wget "http://deckbox.org/games/mtg/cards?f=b35&p={}" -O - | grep "deckbox.org/mtg/" >> $@
 	sed -i 's/<[^>]*>//g;s/^[ ]*//g' $@
-	sed -i 's/Æ/AE/;s/â/a/;s/ö/o/;s/û/u/;s/é/e/;s/Aether/AEther/' $@
+	sed -i 's/Aether/AEther/' $@
 
 cards/%_all.txt: cards/%_all.out
-	cat $^ | recode html..ascii | sort | uniq > $@
+	cat $^ | unaccent utf-8 | recode html..ascii | sort | uniq > $@
 
 cards/new.txt: cards/existing_tip.txt
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
