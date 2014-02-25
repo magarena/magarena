@@ -7,6 +7,8 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.choice.MagicTargetChoice;
 import java.util.List;
 import java.util.LinkedList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public enum MagicCostEvent {
             
@@ -158,6 +160,14 @@ public enum MagicCostEvent {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_WALL);
         }
     },
+    SacrificeZombie() {
+        public boolean accept(final String cost) {
+            return cost.equals("Sacrifice a Zombie");
+        }
+        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+            return new MagicSacrificePermanentEvent(source, new MagicTargetChoice("a Zombie to sacrifice"));
+        }
+    },
     SacrificePermanent() {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a permanent");
@@ -291,8 +301,10 @@ public enum MagicCostEvent {
         }
     },
     PayMana() {
+        private final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d/]+\\})+");
         public boolean accept(final String cost) {
-            return true;
+            final Matcher m = PATTERN.matcher(cost);
+            return m.matches();
         }
         public MagicEvent toEvent(final String cost, final MagicPermanent source) {
             return new MagicPayManaCostEvent(source, MagicManaCost.create(cost));
