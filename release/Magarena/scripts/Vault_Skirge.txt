@@ -1,0 +1,12 @@
+name=Vault Skirge
+url=http://magiccards.info/nph/en/76.html
+image=http://mtgimage.com/card/vault%20skirge.jpg
+value=3.723
+rarity=C
+type=Artifact,Creature
+subtype=Imp
+cost={1}{P/B}
+pt=1/1
+ability=flying;lifelink
+timing=main
+requires_groovy_code
