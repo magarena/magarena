@@ -1,0 +1,11 @@
+name=Gristle Grinner
+url=http://magiccards.info/cs/en/59.html
+image=http://mtgimage.com/card/gristle%20grinner.jpg
+value=3.015
+rarity=U
+type=Creature
+subtype=Zombie
+cost={4}{B}
+pt=3/3
+timing=main
+requires_groovy_code

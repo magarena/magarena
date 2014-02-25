@@ -1,0 +1,11 @@
+name=Lorescale Coatl
+url=http://magiccards.info/arb/en/101.html
+image=http://mtgimage.com/card/lorescale%20coatl.jpg
+value=4.439
+rarity=U
+type=Creature
+subtype=Snake
+cost={1}{G}{U}
+pt=2/2
+timing=main
+requires_groovy_code
