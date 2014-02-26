@@ -66,6 +66,7 @@ public class MagicTargetFilterFactory {
         single.put("basic land", TARGET_BASIC_LAND);
         single.put("basic land you control", TARGET_BASIC_LAND_YOU_CONTROL);
         single.put("nonbasic land", TARGET_NONBASIC_LAND);
+        single.put("nonbasic land you control", TARGET_NONBASIC_LAND_YOU_CONTROL);
         single.put("spell", TARGET_SPELL);
         single.put("spell or permanent", TARGET_SPELL_OR_PERMANENT);
         single.put("spell you don't control", TARGET_SPELL_YOU_DONT_CONTROL);
