@@ -762,8 +762,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final String ability = matcher.group("ability");
-            return Character.toUpperCase(ability.charAt(0)) + ability.substring(1);
+            return capitalize(matcher.group("ability"));
         }
     },
     GainGroup(
@@ -1241,6 +1240,10 @@ public enum MagicRuleEventAction {
         throw new RuntimeException("unknown rule: " + rule);
     }
 
+    private static String capitalize(final String text) {
+        return Character.toUpperCase(text.charAt(0)) + text.substring(1);
+    }
+
     public Matcher matched(final String rule) {
         final Matcher matcher = pattern.matcher(rule);
         final boolean matches = matcher.matches();
@@ -1283,7 +1286,10 @@ public enum MagicRuleEventAction {
                 public MagicEvent getEvent(final MagicSource source) {
                     return new MagicEvent(
                         source,
-                        new MagicMayChoice(choice),
+                        new MagicMayChoice(
+                            capitalize(ruleWithoutMay).replace('.', '?'),
+                            choice
+                        ),
                         picker,
                         new MagicEventAction() {
                             @Override
