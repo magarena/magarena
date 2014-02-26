@@ -1,0 +1,12 @@
+name=Anax and Cymede
+url=http://magiccards.info/ths/en/186.html
+image=http://mtgimage.com/card/anax%20and%20cymede.jpg
+value=3.935
+rarity=R
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={1}{R}{W}
+pt=3/2
+ability=first strike;vigilance
+timing=main
+requires_groovy_code

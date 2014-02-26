@@ -1,0 +1,9 @@
+name=Lich's Mirror
+url=http://magiccards.info/ala/en/210.html
+image=http://mtgimage.com/card/lich's%20mirror.jpg
+value=3.261
+rarity=M
+type=Artifact
+cost={5}
+timing=artifact
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Congregate
+url=http://magiccards.info/m14/en/14.html
+image=http://mtgimage.com/card/congregate.jpg
+value=3.673
+rarity=U
+type=Instant
+cost={3}{W}
+timing=pump
+requires_groovy_code

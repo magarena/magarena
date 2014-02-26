@@ -1,0 +1,12 @@
+name=Cavalry Pegasus
+url=http://magiccards.info/ths/en/2.html
+image=http://mtgimage.com/card/cavalry%20pegasus.jpg
+value=4.036
+rarity=C
+type=Creature
+subtype=Pegasus
+cost={1}{W}
+pt=1/1
+ability=flying
+timing=main
+requires_groovy_code

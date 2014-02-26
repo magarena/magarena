@@ -1,0 +1,9 @@
+name=Last Breath
+url=http://magiccards.info/ths/en/22.html
+image=http://mtgimage.com/card/last%20breath.jpg
+value=2.185
+rarity=C
+type=Instant
+cost={1}{W}
+timing=removal
+requires_groovy_code
