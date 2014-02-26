@@ -19,12 +19,9 @@ def ATTACKING_HUMANS=new MagicPermanentFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicPermanent> targets = game.filterPermanents(ATTACKING_HUMANS);
             for (final MagicPermanent creature : targets) {
-                if (creature != permanent && creature.isAttacking()) {
-                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Flying));
-                }
+                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Flying));
             }
         }
     }
