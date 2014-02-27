@@ -5,6 +5,7 @@ value=3.039
 rarity=C
 type=Artifact
 cost={1}{R}{G}
-ability=enters tapped;tap add mana {R} or {G}
+ability=alt cost {1}, Return a basic land you control to its owner's hand named Alt;\
+        enters tapped;\
+        tap add mana {R} or {G}
 timing=artifact
-requires_groovy_code=Fieldmist Borderpost

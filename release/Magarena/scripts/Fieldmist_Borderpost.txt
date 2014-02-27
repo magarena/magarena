@@ -5,6 +5,7 @@ value=2.841
 rarity=C
 type=Artifact
 cost={1}{W}{U}
-ability=enters tapped;tap add mana {W} or {U}
+ability=alt cost {1}, Return a basic land you control to its owner's hand named Alt;\
+        enters tapped;\
+        tap add mana {W} or {U}
 timing=artifact
-requires_groovy_code
