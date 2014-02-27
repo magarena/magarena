@@ -7,6 +7,7 @@ type=Creature
 subtype=Bringer
 cost={7}{W}{W}
 pt=5/5
-ability=trample;your upkeep effect PN may return target artifact card from your graveyard to the battlefield.
+ability=alt cost {W}{U}{B}{R}{G} named Alt;\
+        trample;\
+        your upkeep effect PN may return target artifact card from your graveyard to the battlefield.
 timing=main
-requires_groovy_code=Bringer of the Blue Dawn

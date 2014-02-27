@@ -7,6 +7,7 @@ type=Creature
 subtype=Bringer
 cost={7}{U}{U}
 pt=5/5
-ability=trample;your upkeep effect PN may draw two cards.
+ability=alt cost {W}{U}{B}{R}{G} named Alt;\
+        trample;\
+        your upkeep effect PN may draw two cards.
 timing=main
-requires_groovy_code
