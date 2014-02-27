@@ -6,5 +6,5 @@ rarity=U
 type=Instant
 cost={P/U}
 effect=Counter target spell with converted mana cost 1.
+ability=alt cost Pay 2 life named Pay 2 life
 timing=counter
-requires_groovy_code
