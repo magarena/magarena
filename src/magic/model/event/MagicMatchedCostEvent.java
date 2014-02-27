@@ -1,6 +1,6 @@
 package magic.model.event;
 
-import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import java.util.List;
 import java.util.LinkedList;
 
@@ -16,7 +16,7 @@ public class MagicMatchedCostEvent {
         costEvent = MagicCostEvent.build(cost);
     }
 
-    public MagicEvent getEvent(final MagicPermanent source) {
+    public MagicEvent getEvent(final MagicSource source) {
         return costEvent.toEvent(cost, source);
     }
 

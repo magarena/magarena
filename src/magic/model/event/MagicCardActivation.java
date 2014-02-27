@@ -14,15 +14,17 @@ import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 
+import java.util.List;
+import java.util.LinkedList;
+
 public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
 
+    private static final MagicCondition[] CARD_CONDITION = new MagicCondition[]{MagicCondition.CARD_CONDITION};
     final boolean usesStack;
 
     public MagicCardActivation(final MagicCardDefinition cdef) {
         super(
-            new MagicCondition[]{
-                MagicCondition.CARD_CONDITION,
-            },
+            CARD_CONDITION,
             cdef.getActivationHints(),
             "Cast"
         );
@@ -97,5 +99,20 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addCardAct(this);
+    }
+    
+    public static final MagicCardActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(costs);
+        assert matchedCostEvents.size() > 0;
+
+        return new MagicCardActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {
+            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+                final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+                for (final MagicMatchedCostEvent matched : matchedCostEvents) {
+                    costEvents.add(matched.getEvent(source));
+                }
+                return costEvents;
+            }
+        };
     }
 }

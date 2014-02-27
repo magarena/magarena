@@ -1,5 +1,6 @@
 package magic.model.event;
 
+import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
@@ -16,8 +17,8 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice SN");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
-            return new MagicSacrificeEvent(source);
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicSacrificeEvent((MagicPermanent)source);
         }
         @Override
         public boolean isIndependent() {
@@ -28,7 +29,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice an artifact");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT);
         }
     },
@@ -36,7 +37,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice an enchantment");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ENCHANTMENT);
         }
     },
@@ -44,7 +45,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice an aura");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_AURA);
         }
     },
@@ -52,7 +53,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a creature");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE);
         }
     },
@@ -60,7 +61,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Goblin");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN);
         }
     },
@@ -68,7 +69,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Saproling");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAPROLING);
         }
     },
@@ -76,7 +77,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Beast");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BEAST);
         }
     },
@@ -84,7 +85,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a land");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND);
         }
     },
@@ -92,7 +93,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Swamp");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SWAMP);
         }
     },
@@ -100,7 +101,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice an Elf");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELF);
         }
     },
@@ -108,7 +109,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Bat");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BAT);
         }
     },
@@ -116,7 +117,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Samurai");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAMURAI);
         }
     },
@@ -124,7 +125,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Soldier");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SOLDIER);
         }
     },
@@ -132,7 +133,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Cleric");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC);
         }
     },
@@ -140,7 +141,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Human");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_HUMAN);
         }
     },
@@ -148,7 +149,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice an Elemental");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELEMENTAL);
         }
     },
@@ -156,7 +157,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Wall");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_WALL);
         }
     },
@@ -164,7 +165,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Zombie");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source, new MagicTargetChoice("a Zombie to sacrifice"));
         }
     },
@@ -172,7 +173,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a permanent");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_PERMANENT);
         }
     },
@@ -180,7 +181,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Discard a card");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicDiscardEvent(source);
         }
     },
@@ -188,7 +189,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Discard two cards");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicDiscardEvent(source, 2);
         }
     },
@@ -196,7 +197,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Discard a card at random");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return MagicDiscardEvent.Random(source);
         }
     },
@@ -204,8 +205,8 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("{E}");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
-            return new MagicExileEvent(source);
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicExileEvent((MagicPermanent)source);
         }
         @Override
         public boolean isIndependent() {
@@ -216,8 +217,8 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("{T}");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
-            return new MagicTapEvent(source);
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicTapEvent((MagicPermanent)source);
         }
         @Override
         public boolean isIndependent() {
@@ -228,8 +229,8 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("{Q}");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
-            return new MagicUntapEvent(source);
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicUntapEvent((MagicPermanent)source);
         }
         @Override
         public boolean isIndependent() {
@@ -240,7 +241,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.contains("Pay ") && cost.contains(" life");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             final String costText=cost.replace("Pay ","").replace(" life","");
             return new MagicPayLifeEvent(source, Integer.parseInt(costText));
         }
@@ -249,8 +250,8 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("{Once}");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
-            return new MagicPlayAbilityEvent(source);
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicPlayAbilityEvent((MagicPermanent)source);
         }
         @Override
         public boolean isIndependent() {
@@ -261,7 +262,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("{Sorcery}");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSorceryConditionEvent(source);
         }
     },
@@ -269,8 +270,8 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Return SN to its owner's hand");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
-            return new MagicBouncePermanentEvent(source, source);
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicBouncePermanentEvent(source, (MagicPermanent)source);
         }
         @Override
         public boolean isIndependent() {
@@ -281,7 +282,7 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.equals("Return a land you control to its owner's hand");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.LAND_YOU_CONTROL);
         }
     },
@@ -289,11 +290,11 @@ public enum MagicCostEvent {
         public boolean accept(final String cost) {
             return cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN");
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
             final int amount = englishToInt(costText[0]);
             final String counterType = costText[1];
-            return new MagicRemoveCounterEvent(source,MagicCounterType.getCounterRaw(counterType),amount);
+            return new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.getCounterRaw(counterType),amount);
         }
         @Override
         public boolean isIndependent() {
@@ -306,7 +307,7 @@ public enum MagicCostEvent {
             final Matcher m = PATTERN.matcher(cost);
             return m.matches();
         }
-        public MagicEvent toEvent(final String cost, final MagicPermanent source) {
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicPayManaCostEvent(source, MagicManaCost.create(cost));
         }
     };
@@ -317,7 +318,7 @@ public enum MagicCostEvent {
 
     public abstract boolean accept(final String cost);
     
-    public abstract MagicEvent toEvent(final String cost, final MagicPermanent source);
+    public abstract MagicEvent toEvent(final String cost, final MagicSource source);
     
     public static int englishToInt(String num) {
         switch (num) {

@@ -16,6 +16,7 @@ import magic.model.event.MagicPayLifeTapManaActivation;
 import magic.model.event.MagicTiming;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.event.MagicCardActivation;
 import magic.model.event.MagicCyclingActivation;
 import magic.model.event.MagicReinforceActivation;
 import magic.model.event.MagicNinjutsuActivation;
@@ -764,6 +765,13 @@ public enum MagicAbility {
     ActivatedAbility("cost", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicPermanentActivation.create(arg));
+        }
+    },
+    AlternateCost("alt cost", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            final String[] tokens = arg.split(" named ");
+            card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
     HeroicEffect("heroic effect", 10) {
