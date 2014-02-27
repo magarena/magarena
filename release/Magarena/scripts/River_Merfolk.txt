@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk
 cost={U}{U}
 pt=2/1
-ability=pay {U}: SN gains mountainwalk until end of turn.
+ability=cost {U}: SN gains mountainwalk until end of turn.
 timing=main

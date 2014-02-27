@@ -5,5 +5,5 @@ value=3.777
 rarity=U
 type=Artifact
 cost={3}
-ability=pay {2},{T}:PN puts a 0/1 colorless Pest artifact creature token onto the battlefield.
+ability=cost {2},{T}:PN puts a 0/1 colorless Pest artifact creature token onto the battlefield.
 timing=artifact

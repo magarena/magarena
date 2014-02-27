@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=2/1
-ability=pay {T}: Untap target Gate.
+ability=cost {T}: Untap target Gate.
 timing=main

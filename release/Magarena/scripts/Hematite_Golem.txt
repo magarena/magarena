@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=1/4
-ability=pay {1}{R}: SN gets +2/+0 until end of turn.
+ability=cost {1}{R}: SN gets +2/+0 until end of turn.
 timing=main

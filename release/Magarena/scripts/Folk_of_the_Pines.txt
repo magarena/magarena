@@ -7,5 +7,5 @@ type=Creature
 subtype=Dryad
 cost={4}{G}
 pt=2/5
-ability=pay {1}{G}:SN gets +1/+0 until end of turn.
+ability=cost {1}{G}:SN gets +1/+0 until end of turn.
 timing=main

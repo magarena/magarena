@@ -5,5 +5,5 @@ value=1.661
 rarity=C
 type=Artifact
 cost={2}
-ability=pay {1},{T},Sacrifice SN:Target creature gets +2/+2 until end of turn.
+ability=cost {1},{T},Sacrifice SN:Target creature gets +2/+2 until end of turn.
 timing=artifact

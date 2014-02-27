@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Shaman
 cost={2}{R}
 pt=2/2
-ability=pay {8}:Creatures PN controls get +3/+0 until end of turn.
+ability=cost {8}:Creatures PN controls get +3/+0 until end of turn.
 timing=main

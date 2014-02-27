@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={4}{B}{B}
 enchant=pump,pos land
-given_ability=pay {T}:Target player loses 3 life.
+given_ability=cost {T}:Target player loses 3 life.
 timing=enchantment

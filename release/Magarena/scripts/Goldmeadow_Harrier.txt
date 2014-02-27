@@ -7,5 +7,5 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={W}
 pt=1/1
-ability=pay {W},{T}:Tap target creature.
+ability=cost {W},{T}:Tap target creature.
 timing=main

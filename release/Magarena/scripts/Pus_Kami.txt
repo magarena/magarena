@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={5}{B}{B}
 pt=3/3
-ability=pay {B},Sacrifice SN: Destroy target nonblack creature.;\
+ability=cost {B},Sacrifice SN: Destroy target nonblack creature.;\
         soulshift 6
 timing=main

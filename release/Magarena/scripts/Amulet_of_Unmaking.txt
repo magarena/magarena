@@ -5,5 +5,5 @@ value=2.557
 rarity=R
 type=Artifact
 cost={5}
-ability=pay {5},{T},{E},{Sorcery}:Exile target artifact, creature, or land.
+ability=cost {5},{T},{E},{Sorcery}:Exile target artifact, creature, or land.
 timing=artifact

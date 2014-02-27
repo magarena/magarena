@@ -6,5 +6,5 @@ rarity=M
 type=Creature
 subtype=Hydra
 cost={X}{R}{G}
-ability=double strike;enters with counter +1/+1 X;pay {1}{R/G}, {Sorcery}:Put a +1/+1 counter on SN.
+ability=double strike;enters with counter +1/+1 X;cost {1}{R/G}, {Sorcery}:Put a +1/+1 counter on SN.
 timing=main

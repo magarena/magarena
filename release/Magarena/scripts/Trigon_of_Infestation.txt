@@ -5,5 +5,5 @@ value=3.019
 rarity=U
 type=Artifact
 cost={4}
-ability=enters with counter charge 3;pay {G}{G},{T}:Put a charge counter on SN.;pay {2},{T},Remove a charge counter from SN:PN puts a 1/1 green Insect creature token with infect onto the battlefield.
+ability=enters with counter charge 3;cost {G}{G},{T}:Put a charge counter on SN.;cost {2},{T},Remove a charge counter from SN:PN puts a 1/1 green Insect creature token with infect onto the battlefield.
 timing=artifact

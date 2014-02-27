@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Hound
 cost={4}
 pt=3/3
-ability=pay {2}{B}: SN gets +1/+1 until end of turn.
+ability=cost {2}{B}: SN gets +1/+1 until end of turn.
 timing=main

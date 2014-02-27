@@ -7,6 +7,6 @@ type=Creature
 subtype=Gorgon
 cost={2}{B}{G}
 pt=4/5
-ability=pay {B}:SN gains deathtouch until end of turn.;pay {1}{G}:SN gains hexproof until end of turn.
+ability=cost {B}:SN gains deathtouch until end of turn.;cost {1}{G}:SN gains hexproof until end of turn.
 timing=main
 requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/2
-ability=flanking;pay {R}{R}: SN gains first strike until end of turn.
+ability=flanking;cost {R}{R}: SN gains first strike until end of turn.
 timing=main

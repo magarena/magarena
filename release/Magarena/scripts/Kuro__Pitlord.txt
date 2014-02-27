@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Demon,Spirit
 cost={6}{B}{B}{B}
 pt=9/9
-ability=your upkeep effect PN may pay {B}{B}{B}{B}. If you don't, sacrifice SN.;pay Pay 1 life:Target creature gets -1/-1 until end of turn.
+ability=your upkeep effect PN may pay {B}{B}{B}{B}. If you don't, sacrifice SN.;cost Pay 1 life:Target creature gets -1/-1 until end of turn.
 timing=main

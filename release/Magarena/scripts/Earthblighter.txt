@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{B}
 pt=1/1
-ability=pay {2}{B},{T},Sacrifice a Goblin:Destroy target land.
+ability=cost {2}{B},{T},Sacrifice a Goblin:Destroy target land.
 timing=main

@@ -5,5 +5,5 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={R}
-ability=pay Sacrifice a land:Target creature gains haste until end of turn.
+ability=cost Sacrifice a land:Target creature gains haste until end of turn.
 timing=enchantment

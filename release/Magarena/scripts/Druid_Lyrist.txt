@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Druid
 cost={G}
 pt=1/1
-ability=pay {G},{T},Sacrifice SN:Destroy target enchantment.
+ability=cost {G},{T},Sacrifice SN:Destroy target enchantment.
 timing=main

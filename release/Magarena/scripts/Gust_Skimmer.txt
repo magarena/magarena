@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Insect
 cost={2}
 pt=2/1
-ability=pay {U}: SN gains flying until end of turn.
+ability=cost {U}: SN gains flying until end of turn.
 timing=main

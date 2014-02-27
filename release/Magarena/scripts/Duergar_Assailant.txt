@@ -7,5 +7,5 @@ type=Creature
 subtype=Dwarf,Soldier
 cost={R/W}
 pt=1/1
-ability=pay Sacrifice SN:SN deals 1 damage to target attacking or blocking creature.
+ability=cost Sacrifice SN:SN deals 1 damage to target attacking or blocking creature.
 timing=main

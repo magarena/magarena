@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={1}{B}
 pt=2/1
-ability=pay {1}{U}: SN gains flying until end of turn.
+ability=cost {1}{U}: SN gains flying until end of turn.
 timing=main

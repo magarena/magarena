@@ -7,5 +7,5 @@ type=Creature
 subtype=Atog
 cost={1}{G}{W}
 pt=1/2
-ability=pay Sacrifice a land:SN gets +1/+1 until end of turn.;pay Sacrifice an enchantment:SN gets +1/+1 until end of turn.
+ability=cost Sacrifice a land:SN gets +1/+1 until end of turn.;cost Sacrifice an enchantment:SN gets +1/+1 until end of turn.
 timing=main

@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/bazaar%20of%20baghdad.jpg
 value=4.521
 rarity=R
 type=Land
-ability=pay {T}:PN draws two cards, then discards three cards.
+ability=cost {T}:PN draws two cards, then discards three cards.
 timing=land

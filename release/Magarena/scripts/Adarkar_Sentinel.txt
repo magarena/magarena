@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Soldier
 cost={5}
 pt=3/3
-ability=pay {1}:SN gets +0/+1 until end of turn.
+ability=cost {1}:SN gets +0/+1 until end of turn.
 timing=artifact

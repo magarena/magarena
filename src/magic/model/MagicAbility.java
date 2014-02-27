@@ -766,11 +766,6 @@ public enum MagicAbility {
             card.add(MagicPermanentActivation.create(arg));
         }
     },
-    ActivatedAbilityOld("pay", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicPermanentActivation.create(arg));
-        }
-    },
     HeroicEffect("heroic effect", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicHeroicTrigger.create(

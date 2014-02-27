@@ -7,6 +7,6 @@ rarity=U
 type=Enchantment
 cost={W}{U}
 ability=lord creatures you control get +0/+1;\
-        pay Sacrifice SN: Return target creature to its owner's hand.
+        cost Sacrifice SN: Return target creature to its owner's hand.
 static=player
 timing=enchantment

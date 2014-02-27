@@ -7,5 +7,5 @@ type=Creature
 subtype=Centaur,Archer
 cost={1}{R}{G}
 pt=3/2
-ability=pay {T}:SN deals 1 damage to target creature with flying.
+ability=cost {T}:SN deals 1 damage to target creature with flying.
 timing=main

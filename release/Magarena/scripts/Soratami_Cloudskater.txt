@@ -7,5 +7,5 @@ type=Creature
 subtype=Moonfolk,Rogue
 cost={1}{U}
 pt=1/1
-ability=flying;pay {2},Return a land you control to its owner's hand:PN draws a card, then discards a card.
+ability=flying;cost {2},Return a land you control to its owner's hand:PN draws a card, then discards a card.
 timing=main

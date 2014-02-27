@@ -7,5 +7,5 @@ type=Creature
 subtype=Homarid,Shaman
 cost={2}{U}{U}
 pt=2/1
-ability=pay {U}:Tap target green creature.
+ability=cost {U}:Tap target green creature.
 timing=main

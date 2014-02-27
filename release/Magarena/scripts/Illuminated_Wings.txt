@@ -8,5 +8,5 @@ subtype=Aura
 cost={1}{U}
 enchant=pump,pos creature
 given_ability=flying
-ability=pay {2},Sacrifice SN:PN draws a card.
+ability=cost {2},Sacrifice SN:PN draws a card.
 timing=aura

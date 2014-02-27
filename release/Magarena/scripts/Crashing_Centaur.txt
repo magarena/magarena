@@ -7,6 +7,6 @@ type=Creature
 subtype=Centaur
 cost={4}{G}{G}
 pt=3/4
-ability=pay {G},Discard a card:SN gains trample until end of turn.
+ability=cost {G},Discard a card:SN gains trample until end of turn.
 timing=main
 requires_groovy_code

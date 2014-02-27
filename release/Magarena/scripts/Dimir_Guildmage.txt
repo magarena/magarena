@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={U/B}{U/B}
 pt=2/2
-ability=pay {3}{U}, {Sorcery}: Target player draws a card.;\
-        pay {3}{B}, {Sorcery}: Target player discards a card.
+ability=cost {3}{U}, {Sorcery}: Target player draws a card.;\
+        cost {3}{B}, {Sorcery}: Target player discards a card.
 timing=main

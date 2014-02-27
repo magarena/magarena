@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Spellshaper
 cost={2}{U}
 pt=2/2
-ability=pay {U},{T},Discard a card:Target creature gains flying until end of turn.
+ability=cost {U},{T},Discard a card:Target creature gains flying until end of turn.
 timing=main

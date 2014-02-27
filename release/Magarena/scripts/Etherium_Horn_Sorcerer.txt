@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Minotaur,Wizard
 cost={4}{U}{R}
 pt=3/6
-ability=cascade;pay {1}{U}{R}: Return SN to its owner's hand.
+ability=cascade;cost {1}{U}{R}: Return SN to its owner's hand.
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Wizard
 cost={G/W}{G/W}
 pt=2/2
-ability=pay {3}{G}: PN puts a 1/1 green Saproling creature token onto the battlefield.;\
-        pay {3}{W}: Creatures PN controls get +1/+1 until end of turn.
+ability=cost {3}{G}: PN puts a 1/1 green Saproling creature token onto the battlefield.;\
+        cost {3}{W}: Creatures PN controls get +1/+1 until end of turn.
 timing=main

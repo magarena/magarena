@@ -5,5 +5,5 @@ value=1.682
 rarity=U
 type=Artifact
 cost={1}
-ability=pay {5},{T},Sacrifice SN:SN deals 3 damage to target creature.
+ability=cost {5},{T},Sacrifice SN:SN deals 3 damage to target creature.
 timing=artifact

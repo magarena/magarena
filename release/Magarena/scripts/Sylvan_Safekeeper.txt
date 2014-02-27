@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={G}
 pt=1/1
-ability=pay Sacrifice a land:Target creature gains shroud until end of turn.
+ability=cost Sacrifice a land:Target creature gains shroud until end of turn.
 timing=main

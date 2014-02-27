@@ -5,5 +5,5 @@ value=2.740
 rarity=R
 type=Artifact
 cost={4}
-ability=pay {8},{T}:SN deals 12 damage to target creature.
+ability=cost {8},{T}:SN deals 12 damage to target creature.
 timing=artifact

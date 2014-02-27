@@ -5,5 +5,5 @@ value=4.066
 rarity=U
 type=Artifact
 cost={2}
-ability=pay Sacrifice a creature:Put a charge counter on SN.;pay {1},Remove two charge counters from SN:PN puts a 2/2 colorless Spawn artifact creature token onto the battlefield.
+ability=cost Sacrifice a creature:Put a charge counter on SN.;cost {1},Remove two charge counters from SN:PN puts a 2/2 colorless Spawn artifact creature token onto the battlefield.
 timing=artifact

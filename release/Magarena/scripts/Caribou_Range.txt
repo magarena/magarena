@@ -6,7 +6,7 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{W}{W}
-given_ability=pay {W}{W},{T}:PN puts a 0/1 white Caribou creature token onto the battlefield.
+given_ability=cost {W}{W},{T}:PN puts a 0/1 white Caribou creature token onto the battlefield.
 enchant=pump,land you control
 timing=aura
 requires_groovy_code

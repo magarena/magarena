@@ -6,6 +6,6 @@ rarity=R
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}
-ability=pay {T}:PN draws two cards, then discards three cards.
+ability=cost {T}:PN draws two cards, then discards three cards.
 pt=0/1
 timing=main

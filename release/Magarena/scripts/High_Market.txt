@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/high%20market.jpg
 value=3.773
 rarity=M
 type=Land
-ability=tap add mana {1};pay {T},Sacrifice a creature:PN gain 1 life.
+ability=tap add mana {1};cost {T},Sacrifice a creature:PN gain 1 life.
 timing=land

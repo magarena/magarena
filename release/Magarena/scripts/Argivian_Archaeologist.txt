@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Artificer
 cost={1}{W}{W}
 pt=1/1
-ability=pay {W}{W},{T}:Return target artifact card from your graveyard to your hand.
+ability=cost {W}{W},{T}:Return target artifact card from your graveyard to your hand.
 timing=main

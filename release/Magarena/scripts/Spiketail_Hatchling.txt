@@ -8,5 +8,5 @@ subtype=Drake
 cost={1}{U}
 pt=1/1
 ability=flying;\
-        pay Sacrifice SN: Counter target spell unless its controller pays {1}.
+        cost Sacrifice SN: Counter target spell unless its controller pays {1}.
 timing=main

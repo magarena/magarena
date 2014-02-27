@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk
 cost={U}
 pt=1/1
-ability=pay {T},Sacrifice SN:Return target artifact card from your graveyard to your hand.
+ability=cost {T},Sacrifice SN:Return target artifact card from your graveyard to your hand.
 timing=main

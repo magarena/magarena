@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Human,Artificer
 cost={W}{U}{B}
 pt=2/2
-ability=pay {W}{B}:Target artifact creature gains deathtouch, lifelink until end of turn.
+ability=cost {W}{B}:Target artifact creature gains deathtouch, lifelink until end of turn.
 timing=main
 requires_groovy_code

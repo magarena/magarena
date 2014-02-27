@@ -7,5 +7,5 @@ type=Creature
 subtype=Centaur,Archer
 cost={3}{G}
 pt=2/3
-ability=reach;pay {G},Discard a card:SN gets +0/+2 until end of turn.
+ability=reach;cost {G},Discard a card:SN gets +0/+2 until end of turn.
 timing=main

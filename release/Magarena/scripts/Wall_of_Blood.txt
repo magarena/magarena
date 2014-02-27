@@ -7,5 +7,5 @@ type=Creature
 subtype=Wall
 cost={2}{B}
 pt=0/2
-ability=defender;pay Pay 1 life: SN gets +1/+1 until end of turn.
+ability=defender;cost Pay 1 life: SN gets +1/+1 until end of turn.
 timing=main

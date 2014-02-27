@@ -7,5 +7,5 @@ type=Creature
 subtype=Drake
 cost={2}{U}
 pt=2/1
-ability=flying;pay {1}{U},{T}:Return target Kavu to its owner's hand.
+ability=flying;cost {1}{U},{T}:Return target Kavu to its owner's hand.
 timing=main

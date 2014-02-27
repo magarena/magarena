@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={3}{G}{G}
 pt=5/5
-ability=pay {1}{G}: PN puts a 1/1 green Insect creature token onto the battlefield.
+ability=cost {1}{G}: PN puts a 1/1 green Insect creature token onto the battlefield.
 timing=main

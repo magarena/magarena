@@ -8,6 +8,6 @@ subtype=God
 cost={3}{R}
 pt=6/5
 ability=indestructible;\
-        pay {2}{R}: Creatures PN controls get +1/+0 until end of turn.
+        cost {2}{R}: Creatures PN controls get +1/+0 until end of turn.
 timing=main
 requires_groovy_code

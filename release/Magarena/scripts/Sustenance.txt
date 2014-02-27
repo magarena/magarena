@@ -5,5 +5,5 @@ value=1.860
 rarity=U
 type=Enchantment
 cost={1}{G}
-ability=pay {1},Sacrifice a land:Target creature gets +1/+1 until end of turn.
+ability=cost {1},Sacrifice a land:Target creature gets +1/+1 until end of turn.
 timing=enchantment

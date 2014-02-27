@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-given_ability=pay {T}:PN puts a 1/1 green Elf Warrior creature token onto the battlefield.
+given_ability=cost {T}:PN puts a 1/1 green Elf Warrior creature token onto the battlefield.
 enchant=pump,pos creature
 timing=aura

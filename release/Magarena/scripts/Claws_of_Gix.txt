@@ -5,5 +5,5 @@ value=3.929
 rarity=U
 type=Artifact
 cost={0}
-ability=pay {1},Sacrifice a permanent:PN gains 1 life.
+ability=cost {1},Sacrifice a permanent:PN gains 1 life.
 timing=artifact

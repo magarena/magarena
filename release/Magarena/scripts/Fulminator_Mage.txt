@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Shaman
 cost={1}{B/R}{B/R}
 pt=2/2
-ability=pay Sacrifice SN: Destroy target nonbasic land.
+ability=cost Sacrifice SN: Destroy target nonbasic land.
 timing=main

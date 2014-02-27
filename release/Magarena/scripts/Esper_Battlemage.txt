@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=2/2
-ability=pay {W},{T}:Prevent the next 2 damage that would be dealt to PN this turn.;pay {B},{T}:Target creature gets -1/-1 until end of turn.
+ability=cost {W},{T}:Prevent the next 2 damage that would be dealt to PN this turn.;cost {B},{T}:Target creature gets -1/-1 until end of turn.
 timing=main

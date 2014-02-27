@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={G}
 pt=1/1
-ability=pay Sacrifice SN:Target creature gets +1/+1 until end of turn.
+ability=cost Sacrifice SN:Target creature gets +1/+1 until end of turn.
 timing=main

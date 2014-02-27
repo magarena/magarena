@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={W}
 pt=1/1
-ability=pay {W},Sacrifice SN:PN gains 3 life.
+ability=cost {W},Sacrifice SN:PN gains 3 life.
 timing=main

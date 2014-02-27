@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Scout
 cost={2}{R}
 pt=2/2
-ability=pay {2}: SN gains mountainwalk until end of turn.
+ability=cost {2}: SN gains mountainwalk until end of turn.
 timing=main

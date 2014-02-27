@@ -7,5 +7,5 @@ type=Creature
 subtype=Devil
 cost={1}{R}
 pt=1/1
-ability=pay {2}{R}: SN deals 1 damage to target player.
+ability=cost {2}{R}: SN deals 1 damage to target player.
 timing=main

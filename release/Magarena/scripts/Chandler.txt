@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Rogue
 cost={4}{R}
 pt=3/3
-ability=pay {R}{R}{R},{T}:Destroy target artifact creature.
+ability=cost {R}{R}{R},{T}:Destroy target artifact creature.
 timing=main

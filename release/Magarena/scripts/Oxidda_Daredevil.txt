@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Artificer
 cost={1}{R}
 pt=2/1
-ability=pay Sacrifice an artifact:SN gains haste until end of turn.
+ability=cost Sacrifice an artifact:SN gains haste until end of turn.
 timing=main

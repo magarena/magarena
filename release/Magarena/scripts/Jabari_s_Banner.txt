@@ -5,5 +5,5 @@ value=3.028
 rarity=U
 type=Artifact
 cost={2}
-ability=pay {1},{T}:Target creature gains flanking until end of turn.
+ability=cost {1},{T}:Target creature gains flanking until end of turn.
 timing=artifact

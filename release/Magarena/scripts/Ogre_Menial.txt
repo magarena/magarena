@@ -7,5 +7,5 @@ type=Creature
 subtype=Ogre
 cost={3}{R}
 pt=0/4
-ability=infect;pay {R}: SN gets +1/+0 until end of turn.
+ability=infect;cost {R}: SN gets +1/+0 until end of turn.
 timing=main

@@ -5,5 +5,5 @@ value=4.134
 rarity=U
 type=Enchantment
 cost={1}{U}
-ability=pay {1}{U},Discard a card:PN draws a card.;pay {1}{U},Sacrifice SN:PN draws a card.
+ability=cost {1}{U},Discard a card:PN draws a card.;cost {1}{U},Sacrifice SN:PN draws a card.
 timing=enchantment

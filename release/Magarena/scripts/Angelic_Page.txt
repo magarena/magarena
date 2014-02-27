@@ -7,5 +7,5 @@ type=Creature
 subtype=Angel,Spirit
 cost={1}{W}
 pt=1/1
-ability=flying; pay {T}:Target attacking or blocking creature gets +1/+1 until end of turn.
+ability=flying;cost {T}:Target attacking or blocking creature gets +1/+1 until end of turn.
 timing=main

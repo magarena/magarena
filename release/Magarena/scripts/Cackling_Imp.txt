@@ -7,5 +7,5 @@ type=Creature
 subtype=Imp
 cost={2}{B}{B}
 pt=2/2
-ability=flying;pay {T}:Target player loses 1 life.
+ability=flying;cost {T}:Target player loses 1 life.
 timing=main

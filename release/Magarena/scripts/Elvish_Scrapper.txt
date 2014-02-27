@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
-ability=pay {G}, {T}, Sacrifice SN: Destroy target artifact.
+ability=cost {G}, {T}, Sacrifice SN: Destroy target artifact.
 timing=main

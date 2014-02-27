@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{W}
 pt=1/1
-ability=exalted;pay {U}: SN gains shroud until end of turn.
+ability=exalted;cost {U}: SN gains shroud until end of turn.
 timing=main

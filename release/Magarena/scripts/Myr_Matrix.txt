@@ -7,6 +7,6 @@ type=Artifact
 cost={5}
 ability=indestructible;\
         lord myr creatures get +1/+1;\
-        pay {5}: PN puts a 1/1 colorless Myr artifact creature token onto the battlefield.
+        cost {5}: PN puts a 1/1 colorless Myr artifact creature token onto the battlefield.
 static=all
 timing=main

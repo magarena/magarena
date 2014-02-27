@@ -7,6 +7,6 @@ type=Creature
 subtype=Elephant
 cost={3}{W}
 pt=3/3
-ability=pay {G}: SN gains trample until end of turn.
+ability=cost {G}: SN gains trample until end of turn.
 timing=main
 requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Vedalken,Wizard,Mutant
 cost={2}{U}
 pt=0/0
-ability=graft 2;pay {1}{U}:Untap target creature with +1/+1 counter.
+ability=graft 2;cost {1}{U}:Untap target creature with +1/+1 counter.
 timing=main

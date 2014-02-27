@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={R}
 pt=1/1
-ability=pay Sacrifice SN:SN deals 1 damage to target creature.
+ability=cost Sacrifice SN:SN deals 1 damage to target creature.
 timing=main

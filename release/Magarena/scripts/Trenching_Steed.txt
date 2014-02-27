@@ -7,5 +7,5 @@ type=Creature
 subtype=Horse,Rebel
 cost={3}{W}
 pt=2/3
-ability=pay Sacrifice a land:SN gets +0/+3 until end of turn.
+ability=cost Sacrifice a land:SN gets +0/+3 until end of turn.
 timing=main

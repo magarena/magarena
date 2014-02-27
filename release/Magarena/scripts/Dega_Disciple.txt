@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={W}
 pt=1/1
-ability=pay {B},{T}:Target creature gets -2/-0 until end of turn.;pay {R},{T}:Target creature gets +2/+0 until end of turn.
+ability=cost {B},{T}:Target creature gets -2/-0 until end of turn.;cost {R},{T}:Target creature gets +2/+0 until end of turn.
 timing=main

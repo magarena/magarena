@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Spellshaper
 cost={R}
 pt=1/1
-ability=pay {R},{T},Discard a card:SN deals 1 damage to target creature or player.
+ability=cost {R},{T},Discard a card:SN deals 1 damage to target creature or player.
 timing=main

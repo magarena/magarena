@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/hellion%20crucible.jpg
 value=3.092
 rarity=R
 type=Land
-ability=tap add mana {1};pay {1}{R},{T}:Put a pressure counter on SN.;pay {1}{R},{T},Remove two pressure counters from SN,Sacrifice SN:PN puts a 4/4 red Hellion creature token with haste onto the battlefield.
+ability=tap add mana {1};cost {1}{R},{T}:Put a pressure counter on SN.;cost {1}{R},{T},Remove two pressure counters from SN,Sacrifice SN:PN puts a 4/4 red Hellion creature token with haste onto the battlefield.
 timing=land

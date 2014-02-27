@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=0/2
-ability=pay {T}:PN gains 1 life.
+ability=cost {T}:PN gains 1 life.
 timing=main

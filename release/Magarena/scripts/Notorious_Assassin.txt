@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Spellshaper,Assassin
 cost={3}{B}
 pt=2/2
-ability=pay {2}{B}, {T}, Discard a card: Destroy target nonblack creature. It can't be regenerated.
+ability=cost {2}{B}, {T}, Discard a card: Destroy target nonblack creature. It can't be regenerated.
 timing=main

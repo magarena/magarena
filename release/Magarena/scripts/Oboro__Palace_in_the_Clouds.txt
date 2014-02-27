@@ -5,5 +5,5 @@ value=4.379
 rarity=R
 type=Legendary,Land
 mana=b1
-ability=tap add mana {U};pay {1}:Return SN to its owner's hand.
+ability=tap add mana {U};cost {1}:Return SN to its owner's hand.
 timing=land

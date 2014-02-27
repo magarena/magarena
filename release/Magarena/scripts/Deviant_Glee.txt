@@ -8,5 +8,5 @@ subtype=Aura
 cost={B}
 enchant=pump,pos creature
 given_pt=+2/+1
-given_ability=pay {R}:SN gains trample until end of turn.
+given_ability=cost {R}:SN gains trample until end of turn.
 timing=enchantment

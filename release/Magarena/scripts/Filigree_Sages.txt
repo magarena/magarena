@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Vedalken,Wizard
 cost={3}{U}
 pt=2/3
-ability=pay {2}{U}:Untap target artifact.
+ability=cost {2}{U}:Untap target artifact.
 timing=artifact

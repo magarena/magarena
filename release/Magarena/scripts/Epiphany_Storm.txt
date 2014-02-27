@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={R}
 enchant=pump,pos creature
-given_ability=pay {R},{T},Discard a card:PN draws a card.
+given_ability=cost {R},{T},Discard a card:PN draws a card.
 timing=aura

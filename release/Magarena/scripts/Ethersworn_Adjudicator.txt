@@ -8,6 +8,6 @@ subtype=Vedalken,Knight
 cost={4}{U}
 pt=4/4
 ability=flying;\
-        pay {1}{W}{B},{T}: Destroy target creature or enchantment.;\
-        pay {2}{U}: Untap SN.
+        cost {1}{W}{B},{T}: Destroy target creature or enchantment.;\
+        cost {2}{U}: Untap SN.
 timing=main

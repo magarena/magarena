@@ -5,5 +5,5 @@ value=3.216
 rarity=R
 type=Enchantment
 cost={1}{U}{B}
-ability=pay {1},Pay 1 life:PN draws a card, then discards a card.
+ability=cost {1},Pay 1 life:PN draws a card, then discards a card.
 timing=enchantment

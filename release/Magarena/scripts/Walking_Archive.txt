@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={3}
 pt=1/1
-ability=defender;enters with counter +1/+1 1;pay {2}{W}{U}:Put a +1/+1 counter on SN.
+ability=defender;enters with counter +1/+1 1;cost {2}{W}{U}:Put a +1/+1 counter on SN.
 timing=artifact
 requires_groovy_code

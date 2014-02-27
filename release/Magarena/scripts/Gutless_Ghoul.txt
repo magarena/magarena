@@ -7,5 +7,5 @@ type=Snow,Creature
 subtype=Zombie
 cost={2}{B}
 pt=2/2
-ability=pay {1},Sacrifice a creature:PN gains 2 life.
+ability=cost {1},Sacrifice a creature:PN gains 2 life.
 timing=main

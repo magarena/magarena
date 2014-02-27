@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/dust%20bowl.jpg
 value=4.290
 rarity=R
 type=Land
-ability=tap add mana {1};pay {3},{T},Sacrifice a land: Destroy target nonbasic land.
+ability=tap add mana {1};cost {3},{T},Sacrifice a land: Destroy target nonbasic land.
 timing=land

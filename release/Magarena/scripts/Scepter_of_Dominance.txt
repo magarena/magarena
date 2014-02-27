@@ -5,5 +5,5 @@ value=3.377
 rarity=R
 type=Artifact
 cost={1}{W}{W}
-ability=pay {W},{T}: Tap target permanent.
+ability=cost {W},{T}: Tap target permanent.
 timing=artifact

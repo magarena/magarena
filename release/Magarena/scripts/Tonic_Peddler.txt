@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Spellshaper
 cost={1}{W}
 pt=1/1
-ability=pay {W},{T},Discard a card:Target player gains 3 life.
+ability=cost {W},{T},Discard a card:Target player gains 3 life.
 timing=main

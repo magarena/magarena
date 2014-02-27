@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Assembly-Worker
 cost={3}
 pt=2/2
-ability=pay {T}:Target Assembly-Worker gets +1/+1 until end of turn.
+ability=cost {T}:Target Assembly-Worker gets +1/+1 until end of turn.
 timing=main

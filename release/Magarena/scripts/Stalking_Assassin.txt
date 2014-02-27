@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Assassin
 cost={1}{U}{B}
 pt=1/1
-ability=pay {3}{U},{T}:Tap target creature.;pay {3}{B},{T}:Destroy target tapped creature.
+ability=cost {3}{U},{T}:Tap target creature.;cost {3}{B},{T}:Destroy target tapped creature.
 timing=main

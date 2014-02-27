@@ -5,5 +5,5 @@ value=2.467
 rarity=R
 type=Enchantment
 cost={1}{R}
-ability=pay {1},Discard a card at random:Put a +1/+1 counter on target creature.
+ability=cost {1},Discard a card at random:Put a +1/+1 counter on target creature.
 timing=enchantment

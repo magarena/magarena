@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/orzhova,%20the%20church%20of%20deals.jpg
 value=2.919
 rarity=U
 type=Land
-ability=tap add mana {1};pay {3}{W}{B},{T}:Target player loses 1 life and PN gains 1 life.
+ability=tap add mana {1};cost {3}{W}{B},{T}:Target player loses 1 life and PN gains 1 life.
 timing=land

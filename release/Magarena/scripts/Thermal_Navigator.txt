@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/2
-ability=pay Sacrifice an artifact:SN gains flying until end of turn.
+ability=cost Sacrifice an artifact:SN gains flying until end of turn.
 timing=artifact

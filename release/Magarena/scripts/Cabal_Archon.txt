@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{B}
 pt=2/2
-ability=pay {B}, Sacrifice a Cleric: Target player loses 2 life and PN gains 2 life.
+ability=cost {B}, Sacrifice a Cleric: Target player loses 2 life and PN gains 2 life.
 timing=main

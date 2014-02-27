@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={2}
 equip={2}
-given_ability=pay {2},{T}:Tap target creature.
+given_ability=cost {2},{T}:Tap target creature.
 timing=equipment

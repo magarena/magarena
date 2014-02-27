@@ -8,6 +8,6 @@ subtype=Human,Knight
 cost={W}{W}
 pt=2/1
 ability=protection from black;\
-        pay {W}: SN gains first strike until end of turn.;\
-        pay {W}{W}: SN gets +1/+0 until end of turn.
+        cost {W}: SN gains first strike until end of turn.;\
+        cost {W}{W}: SN gets +1/+0 until end of turn.
 timing=main

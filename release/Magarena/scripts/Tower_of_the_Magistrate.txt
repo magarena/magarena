@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/tower%20of%20the%20magistrate.jpg
 value=3.934
 rarity=R
 type=Land
-ability=tap add mana {1};pay {T},{1}: Target creature gains protection from artifacts until end of turn.
+ability=tap add mana {1};cost {T},{1}: Target creature gains protection from artifacts until end of turn.
 timing=land

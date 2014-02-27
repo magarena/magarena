@@ -8,5 +8,5 @@ subtype=Human,Wizard
 cost={3}{U}
 pt=2/2
 ability=soulbond
-given_ability=pay {T}:Target player puts the top two cards of his or her library into his or her graveyard.
+given_ability=cost {T}:Target player puts the top two cards of his or her library into his or her graveyard.
 timing=main

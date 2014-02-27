@@ -5,5 +5,5 @@ value=2.625
 rarity=U
 type=Artifact
 cost={2}{U}
-ability=pay {4}{W},{T},Sacrifice SN:Return target artifact card from your graveyard to the battlefield.
+ability=cost {4}{W},{T},Sacrifice SN:Return target artifact card from your graveyard to the battlefield.
 timing=artifact

@@ -7,5 +7,5 @@ type=Creature
 subtype=Illusion
 cost={5}{U}{U}
 pt=6/6
-ability=flying;pay {2}{U},Discard a card:Return SN to its owner's hand.
+ability=flying;cost {2}{U},Discard a card:Return SN to its owner's hand.
 timing=main

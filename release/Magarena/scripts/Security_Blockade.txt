@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=enters effect PN puts a 2/2 white Knight creature token with vigilance onto the battlefield.
-given_ability=pay {T}:Prevent the next 1 damage that would be dealt to PN this turn.
+given_ability=cost {T}:Prevent the next 1 damage that would be dealt to PN this turn.
 enchant=pump,pos land
 timing=aura

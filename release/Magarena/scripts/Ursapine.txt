@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=3/3
-ability=pay {G}: Target creature gets +1/+1 until end of turn.
+ability=cost {G}: Target creature gets +1/+1 until end of turn.
 timing=main

@@ -5,5 +5,5 @@ value=4.329
 rarity=C
 type=Artifact
 cost={1}
-ability=pay {U},Sacrifice SN:Return target creature to its owner's hand.;pay {1},Sacrifice SN:PN draws a card.
+ability=cost {U},Sacrifice SN:Return target creature to its owner's hand.;cost {1},Sacrifice SN:PN draws a card.
 timing=artifact

@@ -7,9 +7,9 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{U}{U}
 pt=3/3
-ability=pay {U}: Untap SN.;\
-        pay {U}: SN gains flying until end of turn.;\
-        pay {U}: SN gains shroud until end of turn.;\
-        pay {1}: SN gets +1/-1 until end of turn.;\
-        pay {1}: SN gets -1/+1 until end of turn.
+ability=cost {U}: Untap SN.;\
+        cost {U}: SN gains flying until end of turn.;\
+        cost {U}: SN gains shroud until end of turn.;\
+        cost {1}: SN gets +1/-1 until end of turn.;\
+        cost {1}: SN gets -1/+1 until end of turn.
 timing=main

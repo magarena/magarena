@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={6}
 pt=3/4
-ability=pay {2},Sacrifice SN:Target player draws a card.
+ability=cost {2},Sacrifice SN:Target player draws a card.
 timing=artifact

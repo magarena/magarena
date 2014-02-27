@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Wizard
 cost={3}{U}{U}{U}
 pt=3/4
-ability=pay {T}: PN draws three cards.;\
-        pay {2}{U}{U}: Return SN to its owner's hand.
+ability=cost {T}: PN draws three cards.;\
+        cost {2}{U}{U}: Return SN to its owner's hand.
 timing=main

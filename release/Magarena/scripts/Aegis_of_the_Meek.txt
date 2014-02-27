@@ -5,5 +5,5 @@ value=1.641
 rarity=R
 type=Artifact
 cost={3}
-ability=pay {1},{T}:Target 1/1 creature gets +1/+2 until end of turn.
+ability=cost {1},{T}:Target 1/1 creature gets +1/+2 until end of turn.
 timing=artifact

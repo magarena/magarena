@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird
 cost={3}{U}
 pt=2/1
-ability=flying;pay Sacrifice a land:Return SN to its owner's hand.
+ability=flying;cost Sacrifice a land:Return SN to its owner's hand.
 timing=main

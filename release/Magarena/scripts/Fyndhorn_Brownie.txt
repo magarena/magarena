@@ -7,5 +7,5 @@ type=Creature
 subtype=Ouphe
 cost={2}{G}
 pt=1/1
-ability=pay {2}{G},{T}:Untap target creature.
+ability=cost {2}{G},{T}:Untap target creature.
 timing=main

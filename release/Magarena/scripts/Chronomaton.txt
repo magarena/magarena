@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={1}
 pt=1/1
-ability=pay {1}, {T}: Put a +1/+1 counter on SN.
+ability=cost {1}, {T}: Put a +1/+1 counter on SN.
 timing=main

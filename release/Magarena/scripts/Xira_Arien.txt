@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Insect,Wizard
 cost={B}{R}{G}
 pt=1/2
-ability=flying;pay {B}{R}{G},{T}:Target player draws a card.
+ability=flying;cost {B}{R}{G},{T}:Target player draws a card.
 timing=main

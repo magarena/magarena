@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Mutant
 cost={2}{B}
 pt=3/1
-ability=pay {7}{B}:Target creature gets -3/-3 until end of turn.
+ability=cost {7}{B}:Target creature gets -3/-3 until end of turn.
 timing=main

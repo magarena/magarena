@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Spellshaper
 cost={2}{W}
 pt=2/2
-ability=pay {1}{W},{T},Discard a card:Destroy target artifact or enchantment.
+ability=cost {1}{W},{T},Discard a card:Destroy target artifact or enchantment.
 timing=main

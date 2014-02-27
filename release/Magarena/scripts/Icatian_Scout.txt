@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier,Scout
 cost={W}
 pt=1/1
-ability=pay {1},{T}:Target creature gains first strike until end of turn.
+ability=cost {1},{T}:Target creature gains first strike until end of turn.
 timing=main

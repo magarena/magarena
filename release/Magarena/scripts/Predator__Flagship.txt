@@ -5,5 +5,5 @@ value=3.919
 rarity=R
 type=Legendary,Artifact
 cost={5}
-ability=pay {2}:Target creature gains flying until end of turn.;pay {5},{T}:Destroy target creature with flying.
+ability=cost {2}:Target creature gains flying until end of turn.;cost {5},{T}:Destroy target creature with flying.
 timing=artifact

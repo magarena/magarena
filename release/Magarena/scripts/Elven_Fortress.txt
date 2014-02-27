@@ -5,5 +5,5 @@ value=2.297
 rarity=C
 type=Enchantment
 cost={G}
-ability=pay {1}{G}: Target blocking creature gets +0/+1 until end of turn.
+ability=cost {1}{G}: Target blocking creature gets +0/+1 until end of turn.
 timing=enchantment

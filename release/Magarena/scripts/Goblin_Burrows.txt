@@ -5,5 +5,5 @@ value=4.015
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        pay {1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.
+        cost {1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.
 timing=land

@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 given_pt=+1/+1
-ability=pay {1}{U}:Return SN to its owner's hand.
+ability=cost {1}{U}:Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura

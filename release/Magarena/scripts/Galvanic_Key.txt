@@ -5,5 +5,5 @@ value=2.568
 rarity=C
 type=Artifact
 cost={2}
-ability=flash; pay {3},{T}:Untap target artifact.
+ability=flash;cost {3},{T}:Untap target artifact.
 timing=flash

@@ -7,5 +7,5 @@ type=Creature
 subtype=Kavu
 cost={3}{B}
 pt=2/2
-ability=pay {R}: SN gets +1/+0 until end of turn.
+ability=cost {R}: SN gets +1/+0 until end of turn.
 timing=main

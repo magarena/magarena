@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=flash
-given_ability=pay {1}{R}:SN gets +2/+0 until end of turn.
+given_ability=cost {1}{R}:SN gets +2/+0 until end of turn.
 enchant=pump,pos creature
 timing=aura

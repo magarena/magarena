@@ -5,5 +5,5 @@ value=3.438
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=pay {W},Discard a card:PN gains 3 life.
+ability=cost {W},Discard a card:PN gains 3 life.
 timing=enchantment

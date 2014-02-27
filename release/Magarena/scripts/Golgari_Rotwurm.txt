@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Wurm
 cost={3}{B}{G}
 pt=5/4
-ability=pay {B},Sacrifice a creature:Target player loses 1 life.
+ability=cost {B},Sacrifice a creature:Target player loses 1 life.
 timing=main

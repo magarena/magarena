@@ -7,5 +7,5 @@ type=Creature
 subtype=Griffin
 cost={3}{W}{W}
 pt=3/2
-ability=flying;pay {T},Sacrifice SN:SN deals 3 damage to target attacking or blocking creature.
+ability=flying;cost {T},Sacrifice SN:SN deals 3 damage to target attacking or blocking creature.
 timing=main

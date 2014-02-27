@@ -5,5 +5,5 @@ value=3.426
 rarity=U
 type=Enchantment
 cost={1}{R}
-ability=pay {1}{R},Sacrifice a creature:Destroy target nonbasic land.
+ability=cost {1}{R},Sacrifice a creature:Destroy target nonbasic land.
 timing=enchantment

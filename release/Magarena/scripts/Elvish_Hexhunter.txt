@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Shaman
 cost={G/W}
 pt=1/1
-ability=pay {G/W}, {T}, Sacrifice SN: Destroy target enchantment.
+ability=cost {G/W}, {T}, Sacrifice SN: Destroy target enchantment.
 timing=main

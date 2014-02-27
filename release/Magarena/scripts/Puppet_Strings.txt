@@ -5,5 +5,5 @@ value=3.828
 rarity=U
 type=Artifact
 cost={3}
-ability=pay {2},{T}:Tap target creature.;pay {2},{T}:Untap target creature.
+ability=cost {2},{T}:Tap target creature.;cost {2},{T}:Untap target creature.
 timing=artifact

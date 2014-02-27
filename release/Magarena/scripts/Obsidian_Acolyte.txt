@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=1/1
-ability=protection from black;pay {W}:Target creature gains protection from black until end of turn.
+ability=protection from black;cost {W}:Target creature gains protection from black until end of turn.
 timing=main

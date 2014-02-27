@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={1}{B}{B}
 pt=2/2
-ability=pay {T},Pay 1 life:Counter target white spell.
+ability=cost {T},Pay 1 life:Counter target white spell.
 timing=main

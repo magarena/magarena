@@ -7,5 +7,5 @@ type=Creature
 subtype=Thrull
 cost={3}{W}{B}
 pt=3/3
-ability=pay Sacrifice a creature: Creatures PN controls get +1/+1 until end of turn.
+ability=cost Sacrifice a creature: Creatures PN controls get +1/+1 until end of turn.
 timing=main

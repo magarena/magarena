@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Soldier,Archer
 cost={3}{W}{W}
 pt=2/2
-ability=flying;pay {2}{W},{T}:SN deals 2 damage to target attacking or blocking creature.
+ability=flying;cost {2}{W},{T}:SN deals 2 damage to target attacking or blocking creature.
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf
 cost={3}{G}{G}
 pt=2/2
-ability=pay {1}{G}, Sacrifice an Elf: Target creature gets +3/+3 until end of turn.
+ability=cost {1}{G}, Sacrifice an Elf: Target creature gets +3/+3 until end of turn.
 timing=main
 requires_groovy_code

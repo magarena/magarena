@@ -5,5 +5,5 @@ value=2.038
 rarity=U
 type=Artifact
 cost={5}
-ability=enters with counter charge 3;pay {U}{U},{T}:Put a charge counter on SN.;pay {2},{T},Remove a charge counter from SN:PN draws a card.
+ability=enters with counter charge 3;cost {U}{U},{T}:Put a charge counter on SN.;cost {2},{T},Remove a charge counter from SN:PN draws a card.
 timing=artifact

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Barbarian
 cost={4}{R}
 pt=3/3
-ability=pay {R},Sacrifice SN: Destroy target land.
+ability=cost {R},Sacrifice SN: Destroy target land.
 timing=main

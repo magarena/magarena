@@ -7,5 +7,5 @@ type=Creature
 subtype=Kor,Rebel
 cost={2}{W}
 pt=2/2
-ability=pay {T},Sacrifice SN:Exile target black creature.
+ability=cost {T},Sacrifice SN:Exile target black creature.
 timing=main

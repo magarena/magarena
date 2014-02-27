@@ -7,5 +7,5 @@ type=Creature
 subtype=Horror
 cost={5}{B}
 pt=3/4
-ability=pay {2}{B},Discard a card:SN gains fear until end of turn.
+ability=cost {2}{B},Discard a card:SN gains fear until end of turn.
 timing=main

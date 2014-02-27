@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}
 given_ability=can't attack or block
-ability=pay {1}{W}:Return SN to its owner's hand.
+ability=cost {1}{W}:Return SN to its owner's hand.
 enchant=can't attack or block,neg creature
 timing=enchantment

@@ -5,5 +5,5 @@ value=3.742
 rarity=R
 type=Land
 ability=tap add mana {1};\
-        pay {5},{T},Sacrifice SN:PN puts a 3/4 colorless Gargoyle artifact creature token with flying onto the battlefield.
+        cost {5},{T},Sacrifice SN:PN puts a 3/4 colorless Gargoyle artifact creature token with flying onto the battlefield.
 timing=land

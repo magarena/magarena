@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={4}{B}
 pt=3/3
-ability=pay {1}{B},{T}:Target creature gets -1/-1 until end of turn.
+ability=cost {1}{B},{T}:Target creature gets -1/-1 until end of turn.
 timing=main

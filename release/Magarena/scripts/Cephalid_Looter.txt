@@ -6,6 +6,6 @@ rarity=C
 type=Creature
 subtype=Cephalid,Rogue
 cost={2}{U}
-ability=pay {T}:Target player draws a card, then discards a card.
+ability=cost {T}:Target player draws a card, then discards a card.
 pt=2/1
 timing=main

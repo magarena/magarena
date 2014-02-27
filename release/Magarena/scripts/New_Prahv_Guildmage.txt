@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={W}{U}
 pt=2/2
-ability=pay {W}{U}: Target creature gains flying until end of turn.
+ability=cost {W}{U}: Target creature gains flying until end of turn.
 timing=main
 requires_groovy_code

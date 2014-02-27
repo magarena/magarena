@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{U}
 pt=2/2
-ability=flying;pay {B}: SN gets +1/+1 until end of turn.
+ability=flying;cost {B}: SN gets +1/+1 until end of turn.
 timing=main

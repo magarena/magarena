@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/riptide%20laboratory.jpg
 value=4.112
 rarity=R
 type=Land
-ability=tap add mana {1};pay {T},{1}{U}:Return target Wizard you control to its owner's hand.
+ability=tap add mana {1};cost {T},{1}{U}:Return target Wizard you control to its owner's hand.
 timing=land

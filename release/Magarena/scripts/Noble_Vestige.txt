@@ -8,5 +8,5 @@ subtype=Spirit
 cost={2}{W}
 pt=1/2
 ability=flying;\
-        pay {T}: Prevent the next 1 damage that would be dealt to target player this turn.
+        cost {T}: Prevent the next 1 damage that would be dealt to target player this turn.
 timing=main

@@ -5,5 +5,5 @@ value=1.714
 rarity=R
 type=Artifact
 cost={5}
-ability=pay {5},{T}:PN puts a 1/1 colorless Insect artifact creature token with flying named Wasp onto the battlefield.
+ability=cost {5},{T}:PN puts a 1/1 colorless Insect artifact creature token with flying named Wasp onto the battlefield.
 timing=artifact

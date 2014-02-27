@@ -7,5 +7,5 @@ type=Creature
 subtype=Dryad
 cost={1}{G}
 pt=1/1
-ability=forestwalk;pay {1}{G}{G}:Target creature gains forestwalk until end of turn.
+ability=forestwalk;cost {1}{G}{G}:Target creature gains forestwalk until end of turn.
 timing=main

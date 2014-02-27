@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Wolf
 cost={3}{B}
 pt=2/2
-ability=pay Pay 1 life:SN gets +2/-1 until end of turn.
+ability=cost Pay 1 life:SN gets +2/-1 until end of turn.
 timing=main

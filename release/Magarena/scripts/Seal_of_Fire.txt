@@ -6,5 +6,5 @@ removal=2
 rarity=C
 type=Enchantment
 cost={R}
-ability=pay Sacrifice SN: SN deals 2 damage to target creature or player.
+ability=cost Sacrifice SN: SN deals 2 damage to target creature or player.
 timing=enchantment

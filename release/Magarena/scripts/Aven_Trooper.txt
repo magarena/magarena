@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{W}
 pt=1/1
-ability=flying;pay {2}{W},Discard a card:SN gets +1/+2 until end of turn.
+ability=flying;cost {2}{W},Discard a card:SN gets +1/+2 until end of turn.
 timing=main

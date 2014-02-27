@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={1}{U}
 pt=2/1
-ability=pay {U}: SN gains islandwalk until end of turn.
+ability=cost {U}: SN gains islandwalk until end of turn.
 timing=main

@@ -5,5 +5,5 @@ value=2.130
 rarity=U
 type=Artifact
 cost={4}
-ability=pay {4}, {T}: Put a -1/-1 counter on target creature.
+ability=cost {4}, {T}: Put a -1/-1 counter on target creature.
 timing=main

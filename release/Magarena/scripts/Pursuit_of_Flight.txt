@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 given_pt=+2/+2
-given_ability=pay {U}:SN gains flying until end of turn.
+given_ability=cost {U}:SN gains flying until end of turn.
 enchant=pump,pos creature
 timing=aura

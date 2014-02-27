@@ -8,5 +8,5 @@ subtype=Human,Wizard
 cost={2}{U}
 pt=1/4
 ability=soulbond
-given_ability=pay {2}{U}:Untap SN.
+given_ability=cost {2}{U}:Untap SN.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Skeleton
 cost={2}{B}
 pt=1/1
-ability=pay {3}{B},{T}:Target creature gains swampwalk until end of turn.;regenerate {1}{B}
+ability=cost {3}{B},{T}:Target creature gains swampwalk until end of turn.;regenerate {1}{B}
 timing=main

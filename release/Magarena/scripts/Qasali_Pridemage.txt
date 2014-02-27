@@ -8,5 +8,5 @@ subtype=Cat,Wizard
 cost={G}{W}
 pt=2/2
 ability=exalted;\
-        pay {1},Sacrifice SN: Destroy target artifact or enchantment.
+        cost {1},Sacrifice SN: Destroy target artifact or enchantment.
 timing=main

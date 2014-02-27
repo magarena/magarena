@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={3}{W}
 pt=2/2
-ability=pay {0}: Return SN to its owner's hand.
+ability=cost {0}: Return SN to its owner's hand.
 timing=main

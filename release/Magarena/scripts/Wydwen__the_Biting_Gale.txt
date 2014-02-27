@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Faerie,Wizard
 cost={2}{U}{B}
 pt=3/3
-ability=flying;flash;pay {U}{B},Pay 1 life:Return SN to its owner's hand.
+ability=flying;flash;cost {U}{B},Pay 1 life:Return SN to its owner's hand.
 timing=flash

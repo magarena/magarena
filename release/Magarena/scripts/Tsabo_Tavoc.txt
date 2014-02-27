@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Horror
 cost={5}{B}{R}
 pt=7/4
-ability=first strike;protection from legendary creatures;pay {B}{B},{T}:Destroy target legendary creature. It can't be regenerated.
+ability=first strike;protection from legendary creatures;cost {B}{B},{T}:Destroy target legendary creature. It can't be regenerated.
 timing=main

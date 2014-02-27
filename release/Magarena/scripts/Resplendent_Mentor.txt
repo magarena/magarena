@@ -7,5 +7,5 @@ type=Creature
 subtype=Kithkin,Cleric
 cost={4}{W}
 pt=2/2
-ability=lord white creatures you control have "pay {T}:PN gains 1 life."
+ability=lord white creatures you control have "cost {T}:PN gains 1 life."
 timing=main

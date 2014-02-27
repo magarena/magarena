@@ -6,6 +6,6 @@ rarity=U
 type=Creature
 subtype=Cephalid
 cost={3}{U}
-ability=pay {T}:Target player draws two cards, then discards two cards.
+ability=cost {T}:Target player draws two cards, then discards two cards.
 pt=2/2
 timing=main

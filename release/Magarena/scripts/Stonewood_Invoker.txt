@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Mutant
 cost={1}{G}
 pt=2/2
-ability=pay {7}{G}:SN gets +5/+5 until end of turn.
+ability=cost {7}{G}:SN gets +5/+5 until end of turn.
 timing=main

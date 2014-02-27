@@ -7,5 +7,5 @@ type=Creature
 subtype=Atog
 cost={4}{R}{R}
 pt=3/4
-ability=pay Sacrifice an artifact:SN gets +3/+3 and gains trample until end of turn.
+ability=cost Sacrifice an artifact:SN gets +3/+3 and gains trample until end of turn.
 timing=main

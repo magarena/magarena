@@ -6,6 +6,6 @@ rarity=U
 type=Creature
 subtype=Treefolk
 cost={3}{G}{G}
-ability=pay {G}: SN gets +1/-2 until end of turn.
+ability=cost {G}: SN gets +1/-2 until end of turn.
 pt=2/7
 timing=main

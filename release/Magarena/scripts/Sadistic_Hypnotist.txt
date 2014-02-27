@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Minion
 cost={3}{B}{B}
 pt=2/2
-ability=pay Sacrifice a creature,{Sorcery}:Target player discards two cards.
+ability=cost Sacrifice a creature,{Sorcery}:Target player discards two cards.
 timing=main

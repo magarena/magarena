@@ -7,5 +7,5 @@ type=Creature
 subtype=Soltari,Knight
 cost={2}{W}
 pt=2/1
-ability=shadow;pay {1}{W}: SN gets +1/+0 until end of turn.
+ability=shadow;cost {1}{W}: SN gets +1/+0 until end of turn.
 timing=main

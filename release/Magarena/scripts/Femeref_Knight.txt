@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}
 pt=2/2
-ability=flanking;pay {W}: SN gains vigilance until end of turn.
+ability=flanking;cost {W}: SN gains vigilance until end of turn.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Dwarf
 cost={2}{R}
 pt=1/1
-ability=pay {T}:Destroy target Wall.
+ability=cost {T}:Destroy target Wall.
 timing=main

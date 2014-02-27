@@ -5,5 +5,5 @@ value=2.571
 rarity=U
 type=Artifact
 cost={6}
-ability=pay {2},Pay 2 life:PN draws a card.
+ability=cost {2},Pay 2 life:PN draws a card.
 timing=artifact

@@ -5,6 +5,6 @@ value=4.160
 rarity=R
 type=Artifact
 cost={7}
-ability=pay {T}:PN puts a 2/2 colorless Pincher creature token onto the battlefield.
+ability=cost {T}:PN puts a 2/2 colorless Pincher creature token onto the battlefield.
 timing=artifact
 requires_groovy_code

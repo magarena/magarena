@@ -5,5 +5,5 @@ value=3.103
 rarity=U
 type=Enchantment
 cost={G}
-ability=pay {G}{G}:Tap target creature with flying.
+ability=cost {G}{G}:Tap target creature with flying.
 timing=enchantment

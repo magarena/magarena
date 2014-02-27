@@ -7,5 +7,5 @@ type=Creature
 subtype=Cephalid
 cost={2}{U}{U}
 pt=2/3
-ability=pay {U}{U}:Tap target creature without flying.
+ability=cost {U}{U}:Tap target creature without flying.
 timing=main

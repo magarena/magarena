@@ -6,6 +6,6 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={1}{B}{B}
-given_ability=pay {T}, Pay 1 life: PN draws a card.
+given_ability=cost {T}, Pay 1 life: PN draws a card.
 enchant=sacrifice,pos land
 timing=aura

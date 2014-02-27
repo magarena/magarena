@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Warrior
 cost={2}{R}
 pt=2/2
-ability=pay Sacrifice an artifact:SN gets +1/+0 and gains first strike until end of turn.
+ability=cost Sacrifice an artifact:SN gets +1/+0 and gains first strike until end of turn.
 timing=main

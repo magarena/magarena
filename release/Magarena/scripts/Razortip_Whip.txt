@@ -5,5 +5,5 @@ value=1.903
 rarity=C
 type=Artifact
 cost={2}
-ability=pay {1},{T}:SN deals 1 damage to target opponent.
+ability=cost {1},{T}:SN deals 1 damage to target opponent.
 timing=artifact

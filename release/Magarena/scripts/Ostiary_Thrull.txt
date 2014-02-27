@@ -7,5 +7,5 @@ type=Creature
 subtype=Thrull
 cost={3}{B}
 pt=2/2
-ability=pay {W},{T}:Tap target creature.
+ability=cost {W},{T}:Tap target creature.
 timing=main

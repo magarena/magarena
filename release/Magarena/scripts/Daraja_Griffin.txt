@@ -7,5 +7,5 @@ type=Creature
 subtype=Griffin
 cost={3}{W}
 pt=2/2
-ability=flying;pay Sacrifice SN:Destroy target black creature.
+ability=flying;cost Sacrifice SN:Destroy target black creature.
 timing=main

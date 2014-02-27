@@ -7,5 +7,5 @@ type=Creature
 subtype=Fox
 cost={1}{W}
 pt=2/2
-ability=pay {1}{W},Sacrifice SN: Exile target enchantment.
+ability=cost {1}{W},Sacrifice SN: Exile target enchantment.
 timing=main

@@ -8,6 +8,6 @@ subtype=Sliver
 cost={1}{R}{G}
 pt=1/1
 ability=lord all sliver creatures have haste;\
-        lord all Slivers have "pay {1}, Sacrifice SN: Target Sliver creature gets +2/+2 until end of turn."
+        lord all Slivers have "cost {1}, Sacrifice SN: Target Sliver creature gets +2/+2 until end of turn."
 static=all
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Shade
 cost={4}{B}
 pt=1/1
-ability=fear;pay {B}: SN gets +1/+1 until end of turn.
+ability=fear;cost {B}: SN gets +1/+1 until end of turn.
 timing=main

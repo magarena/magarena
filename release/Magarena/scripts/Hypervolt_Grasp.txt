@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-given_ability:pay {T}:SN deals 1 damage to target creature or player.
-ability=pay {1}{U}:Return SN to its owner's hand.
+given_ability:cost {T}:SN deals 1 damage to target creature or player.
+ability=cost {1}{U}:Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura

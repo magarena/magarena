@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Mutant
 cost={2}{R}
 pt=2/2
-ability=pay {7}{R}:SN deals 5 damage to target player.
+ability=cost {7}{R}:SN deals 5 damage to target player.
 timing=main

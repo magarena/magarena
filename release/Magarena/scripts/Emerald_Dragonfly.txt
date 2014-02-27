@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={1}{G}
 pt=1/1
-ability=flying;pay {G}{G}: SN gains first strike until end of turn.
+ability=flying;cost {G}{G}: SN gains first strike until end of turn.
 timing=main

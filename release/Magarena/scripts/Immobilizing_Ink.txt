@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=doesn't untap during untap step;pay {1},Discard a card:Untap SN.
+given_ability=doesn't untap during untap step;cost {1},Discard a card:Untap SN.
 timing=enchantment
 enchant=tap,creature

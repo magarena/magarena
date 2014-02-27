@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Wizard
 cost={2}{B}{B}
 pt=2/2
-ability=pay {U}{U},{T}:Return target creature to its owner's hand.;pay {R}{R},{T}:SN deals 2 damage to target creature.
+ability=cost {U}{U},{T}:Return target creature to its owner's hand.;cost {R}{R},{T}:SN deals 2 damage to target creature.
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental
 cost={2}{U}{U}
 pt=3/4
-ability=pay {U}: SN gets +1/-1 until end of turn.;\
-        pay {U}: SN gets -1/+1 until end of turn.
+ability=cost {U}: SN gets +1/-1 until end of turn.;\
+        cost {U}: SN gets -1/+1 until end of turn.
 timing=main

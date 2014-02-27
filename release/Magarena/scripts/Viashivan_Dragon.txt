@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}{G}{G}
 pt=4/4
-ability=flying;pay {R}: SN gets +1/+0 until end of turn.;pay {G}: SN gets +0/+1 until end of turn.
+ability=flying;cost {R}: SN gets +1/+0 until end of turn.;cost {G}: SN gets +0/+1 until end of turn.
 timing=main

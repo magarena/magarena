@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={1}{U}
 pt=1/1
-ability=pay {2}{B},{T},{Sorcery}:Target player discards a card.
+ability=cost {2}{B},{T},{Sorcery}:Target player discards a card.
 timing=main

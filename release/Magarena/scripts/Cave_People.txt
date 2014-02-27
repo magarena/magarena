@@ -7,5 +7,5 @@ type=Creature
 subtype=Human
 cost={1}{R}{R}
 pt=1/4
-ability=attacks effect SN gets +1/-2 until end of turn.;pay {1}{R}{R},{T}:Target creature gains mountainwalk until end of turn.
+ability=attacks effect SN gets +1/-2 until end of turn.;cost {1}{R}{R},{T}:Target creature gains mountainwalk until end of turn.
 timing=main

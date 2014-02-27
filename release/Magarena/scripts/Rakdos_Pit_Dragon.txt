@@ -7,6 +7,6 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=3/3
-ability=pay {R}{R}:SN gains flying until end of turn.;pay {R}:SN gets +1/+0 until end of turn.
+ability=cost {R}{R}:SN gains flying until end of turn.;cost {R}:SN gets +1/+0 until end of turn.
 timing=main
 requires_groovy_code
