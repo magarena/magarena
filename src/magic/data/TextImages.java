@@ -1,5 +1,6 @@
 package magic.data;
 
+import magic.model.MagicCounterType;
 import javax.swing.ImageIcon;
 import java.util.HashMap;
 import java.util.Map;
@@ -60,8 +61,8 @@ public class TextImages {
         TEXT_ICONS.put("{D}",IconImages.DAMAGE);
         TEXT_ICONS.put("{P}",IconImages.PREVENT);
         TEXT_ICONS.put("{t}",IconImages.TOKEN);
-        TEXT_ICONS.put("{+}",IconImages.PLUS);
-        TEXT_ICONS.put("{-}",IconImages.MINUS);
+        TEXT_ICONS.put(MagicCounterType.PlusOne.getText() ,IconImages.PLUS);
+        TEXT_ICONS.put(MagicCounterType.MinusOne.getText(),IconImages.MINUS);
         TEXT_ICONS.put("{C}",IconImages.CHARGE);
         TEXT_ICONS.put("{F}",IconImages.FEATHER);
         TEXT_ICONS.put("{g}",IconImages.GOLDCOUNTER);
