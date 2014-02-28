@@ -1,0 +1,11 @@
+name=Gray Merchant of Asphodel                                                  
+url=http://magiccards.info/ths/en/89.html                                       
+image=http://mtgimage.com/card/gray%20merchant%20of%20asphodel.jpg              
+value=.19                                                                       
+rarity=U                                                                        
+type=Creature                                                                   
+subtype=Zombie                                                                  
+cost={3}{B}{B}                                                                  
+pt=2/4                                                                          
+timing=main                                                                     
+requires_groovy_code
