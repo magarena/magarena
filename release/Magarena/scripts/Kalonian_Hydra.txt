@@ -1,0 +1,11 @@
+name=Kalonian Hydra
+url=http://magiccards.info/m14/en/181.html
+image=http://mtgimage.com/card/kalonian%20hydra.jpg
+value=4.346
+rarity=M
+type=Creature
+subtype=Hydra
+cost={3}{G}{G}
+ability=trample;enters with counter +1/+1 4
+timing=main
+requires_groovy_code
