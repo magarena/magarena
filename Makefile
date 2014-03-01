@@ -159,8 +159,6 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 $(MAG): $(SRC)
 	ant -f build.xml
 
-class: $(BUILD)/javac.last
-
 tags: $(SRC)
 	ctags -R src
 
@@ -172,7 +170,6 @@ $(EXE): $(MAG)
 
 clean:
 	-ant clean
-	-rm -f $(BUILD)/javac.last
 	-rm -f $(MAG)
 
 clean/%: Magarena-%.zip Magarena-%.app.zip 
@@ -188,7 +185,7 @@ inf: $(MAG)
 	-while true; do make debug=true 0`date +%s`.t; done
 
 buildhive:
-	make games=100 ai1=MMABC ai2=MCTS `date +%s`.t
+	make clean games=100 ai1=MMABC ai2=MCTS `date +%s`.t
 	touch cards/standard_all.out cards/extended_all.out cards/modern_all.out
 	touch cards/standard_all.txt cards/extended_all.txt cards/modern_all.txt
 	make zips
