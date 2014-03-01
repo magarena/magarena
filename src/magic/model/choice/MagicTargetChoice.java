@@ -411,6 +411,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_NONHUMAN_CREATURE = 
         MagicTargetChoice.Negative("target non-Human creature");
     
+    public static final MagicTargetChoice NEG_TARGET_NON_DEMON =
+        MagicTargetChoice.Negative("target non-Demon creature");
+    
     public static final MagicTargetChoice POS_TARGET_GOLEM_YOU_CONTROL = 
         new MagicTargetChoice("target Golem you control");
     
