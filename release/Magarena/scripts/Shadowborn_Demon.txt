@@ -1,0 +1,12 @@
+name=Shadowborn Demon
+url=http://magiccards.info/m14/en/115.html
+image=http://mtgimage.com/card/shadowborn%20demon.jpg
+value=3.941
+rarity=M
+type=Creature
+subtype=Demon
+cost={3}{B}{B}
+pt=5/6
+ability=flying;enters effect Destroy target non-Demon creature.
+timing=main
+requires_groovy_code

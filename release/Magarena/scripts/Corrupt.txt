@@ -1,0 +1,9 @@
+name=Corrupt
+url=http://magiccards.info/m14/en/91.html
+image=http://mtgimage.com/card/corrupt.jpg
+value=4.145
+rarity=U
+type=Sorcery
+cost={5}{B}
+timing=main
+requires_groovy_code

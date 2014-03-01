@@ -1,0 +1,12 @@
+name=Scourge of Valkas
+url=http://magiccards.info/m14/en/151.html
+image=http://mtgimage.com/card/scourge%20of%20valkas.jpg
+value=4.04
+rarity=M
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}{R}
+pt=4/4
+ability=flying;cost {R}:SN gets +1/+0 until end of turn.
+timing=main
+requires_groovy_code
