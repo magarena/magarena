@@ -1,0 +1,12 @@
+name=Snapcaster Mage
+url=http://magiccards.info/isd/en/78.html
+image=http://mtgimage.com/card/snapcaster%20mage.jpg
+value=3.723
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=2/1
+ability=flash
+timing=main
+requires_groovy_code
