@@ -5,7 +5,7 @@ value=3.462
 rarity=R
 type=Land
 mana=w3b3
-ability=tap add mana {W} or {B};\
-        enters tapped
+ability=enters tapped;\
+        enters effect PN scry 1.;\
+        tap add mana {W} or {B}
 timing=tapland
-requires_groovy_code

@@ -5,7 +5,7 @@ value=3.540
 rarity=R
 type=Land
 mana=u3b3
-ability=tap add mana {U} or {B};\
-        enters tapped
+ability=enters tapped;\
+        enters effect PN scry 1.;\
+        tap add mana {U} or {B}
 timing=tapland
-requires_groovy_code=Temple of Silence

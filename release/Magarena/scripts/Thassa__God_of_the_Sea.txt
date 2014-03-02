@@ -7,6 +7,7 @@ type=Legendary,Enchantment,Creature
 subtype=God
 cost={2}{U}
 pt=5/5
-ability=indestructible
+ability=indestructible;\
+        your upkeep effect PN scry 1.
 timing=main
 requires_groovy_code

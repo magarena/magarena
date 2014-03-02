@@ -4,7 +4,8 @@ image=http://mtgimage.com/card/temple%20of%20malice.jpg
 value=3.841
 rarity=R
 type=Land
-ability=enters tapped;tap add mana {B} or {R}
 mana=b3r3
+ability=enters tapped;\
+        enters effect PN scry 1.;\
+        tap add mana {B} or {R}
 timing=tapland
-requires_groovy_code=Temple of Silence

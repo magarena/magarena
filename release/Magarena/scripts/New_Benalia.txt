@@ -4,7 +4,8 @@ image=http://mtgimage.com/card/new%20benalia.jpg
 value=2.500
 rarity=U
 type=Land
-ability=enters tapped;tap add mana {W}
 mana=w2
+ability=enters tapped;\
+        enters effect PN scry 1.;\
+        tap add mana {W}
 timing=land
-requires_groovy_code=Temple of Silence
