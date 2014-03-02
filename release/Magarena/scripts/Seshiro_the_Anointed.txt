@@ -7,5 +7,6 @@ type=Legendary,Creature
 subtype=Snake,Monk
 cost={4}{G}{G}
 pt=3/4
-ability=lord other Snake creatures you control get +2/+2;lord Snake creatures you control have combat damage may draw card
+ability=lord other Snake creatures you control get +2/+2;\
+        lord Snake creatures you control have deals combat damage to a player effect PN may draw a card.
 timing=main

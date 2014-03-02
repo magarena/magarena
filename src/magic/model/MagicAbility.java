@@ -445,18 +445,6 @@ public enum MagicAbility {
             card.add(new MagicThiefTrigger(Type.Any, Choice.May, Player.Opponent));
         }
     },
-    CombatDamageDrawCard("combat damage draw card",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicThiefTrigger(Type.Combat, Choice.Must, Player.Any));
-        }
-    },
-    CombatDamageMayDrawCard("combat damage may draw card",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicThiefTrigger(Type.Combat, Choice.May, Player.Any));
-        }
-    },
     DamagePlayerGrow("damage player grow",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
