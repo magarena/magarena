@@ -9,6 +9,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicChangePoisonAction;
 import magic.model.action.MagicCastFreeCopyAction;
@@ -26,6 +27,41 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenDamageIsDealt;
+    }
+
+    public static MagicWhenDamageIsDealtTrigger DamageToPlayer(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDamageIsDealtTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                return (damage.getSource() == permanent &&
+                        damage.getTarget().isPlayer()) ?
+                    sourceEvent.getEvent(permanent) :MagicEvent.NONE;
+            }
+        };
+    }
+    
+    public static MagicWhenDamageIsDealtTrigger DamageToOpponent(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDamageIsDealtTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                return (damage.getSource() == permanent &&
+                        damage.getTarget().isPlayer() &&
+                        permanent.isOpponent(damage.getTarget())) ?
+                    sourceEvent.getEvent(permanent) :MagicEvent.NONE;
+            }
+        };
+    }
+    
+    public static MagicWhenDamageIsDealtTrigger CombatDamageToPlayer(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenDamageIsDealtTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
+                return (damage.getSource() == permanent &&
+                        damage.isCombat() &&
+                        damage.getTarget().isPlayer()) ?
+                    sourceEvent.getEvent(permanent) :MagicEvent.NONE;
+            }
+        };
     }
 
     public static MagicWhenDamageIsDealtTrigger Cipher(final MagicCardDefinition cardDef) {

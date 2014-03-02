@@ -394,6 +394,27 @@ public enum MagicAbility {
             card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
+    DamageToOpponent("deals damage to an opponent effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    DamageToPlayer("deals damage to a player effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
+    CombatDamageToPlayer("deals combat damage to a player effect", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToPlayer(
+                MagicRuleEventAction.create(arg)
+            ));
+        }
+    },
     DamageDiscardCard("damage discard",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
@@ -416,12 +437,6 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final int n = Integer.parseInt(arg);
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
-        }
-    },
-    DamageOpponentDrawCard("damage opponent draw card",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicThiefTrigger(Type.Any, Choice.Must, Player.Opponent));
         }
     },
     DamageOpponentMayDrawCard("damage opponent may draw card",10) {
@@ -875,7 +890,7 @@ public enum MagicAbility {
             }
         }
         if (match == None) {
-            throw new RuntimeException("Unable to convert " + name + " to an ability");
+            throw new RuntimeException("Unable to convert \"" + name + "\" to an ability");
         } else {
             return match;
         }
