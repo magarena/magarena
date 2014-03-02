@@ -17,6 +17,8 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -89,7 +91,13 @@ public class GameViewer extends JPanel implements ActionListener {
         contentPanel=new JPanel();
         contentPanel.setOpaque(false);
         contentPanel.setLayout(new BorderLayout());
-        add(contentPanel,BorderLayout.CENTER);
+
+        final JScrollPane scroller = new JScrollPane();
+        scroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
+        scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        scroller.getViewport().setOpaque(false);
+        scroller.getViewport().add(contentPanel);
+        add(scroller, BorderLayout.CENTER);
 
         disableButton(false);
 
