@@ -7,5 +7,5 @@ type=Creature
 subtype=Vedalken,Rogue
 cost={G}{U}
 pt=1/1
-ability=damage opponent may draw card
+ability=deals damage to an opponent effect PN may draw a card.
 timing=main
