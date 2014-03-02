@@ -41,6 +41,7 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicReanimateAction;
 import magic.model.action.MagicSacrificeAction;
+import magic.model.action.MagicScryAction;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
@@ -1114,6 +1115,21 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                }
+            };
+        }
+    },
+    Scry(
+        "PN scry 1.",
+        MagicTiming.Draw,
+        "Scry"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicScryEvent(event.getSource(),event.getPlayer()));
                 }
             };
         }
