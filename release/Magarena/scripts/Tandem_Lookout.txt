@@ -8,5 +8,5 @@ subtype=Human,Scout
 cost={2}{U}
 pt=2/1
 ability=soulbond
-given_ability=damage opponent draw card
+given_ability=deals damage to an opponent effect PN draw a card.
 timing=main
