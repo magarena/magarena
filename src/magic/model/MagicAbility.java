@@ -439,22 +439,10 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DamagePlayerGrow("damage player grow",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicDamageGrowTrigger(false, true));
-        }
-    },
     DamageCreatureGrow("damage creature grow",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(new MagicDamageGrowTrigger(false, false));
-        }
-    },
-    CombatDamagePlayerGrow("combat damage player grow",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(new MagicDamageGrowTrigger(true, true));
         }
     },
     CombatDamageCreatureGrow("combat damage creature grow",10) {

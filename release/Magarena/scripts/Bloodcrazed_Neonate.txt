@@ -7,5 +7,6 @@ type=Creature
 subtype=Vampire
 cost={1}{R}
 pt=2/1
-ability=attacks each turn if able;combat damage player grow
+ability=attacks each turn if able;\
+        deals combat damage to a player effect Put a +1/+1 counter on SN.
 timing=main

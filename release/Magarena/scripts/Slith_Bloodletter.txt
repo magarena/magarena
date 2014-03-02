@@ -7,5 +7,6 @@ type=Creature
 subtype=Slith
 cost={B}{B}
 pt=1/1
-ability=combat damage player grow;regenerate {1}{B}
+ability=deals combat damage to a player effect Put a +1/+1 counter on SN.;\
+        regenerate {1}{B}
 timing=main

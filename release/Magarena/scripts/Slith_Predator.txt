@@ -7,5 +7,5 @@ type=Creature
 subtype=Slith
 cost={G}{G}
 pt=1/1
-ability=trample;combat damage player grow
+ability=trample;deals combat damage to a player effect Put a +1/+1 counter on SN.
 timing=main
