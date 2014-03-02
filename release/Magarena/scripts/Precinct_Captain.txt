@@ -7,6 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
-ability=first strike
+ability=first strike;deals combat damage to a player effect PN puts a 1/1 white Soldier creature token onto the battlefield. 
 timing=main
-requires_groovy_code

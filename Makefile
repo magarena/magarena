@@ -658,7 +658,7 @@ src/magic/MurmurHash3.java:
 
 mtgimage:
 	grep mtgimage -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_image.awk {} '>' {.}.img
-	ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
+	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
 incoming:
 	grep -o https.* .hg/hgrc | parallel -j0 -k hg incoming {}
