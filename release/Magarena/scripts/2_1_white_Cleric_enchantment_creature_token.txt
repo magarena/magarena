@@ -5,6 +5,6 @@ ignore=244131
 value=2
 type=Enchantment,Creature
 subtype=Cleric
-color=u
+color=w
 cost={0}
 pt=2/1
