@@ -1,0 +1,11 @@
+name=Witches' Eye
+url=http://magiccards.info/ths/en/222.html
+image=http://mtgimage.com/card/witches'%20eye.jpg
+value=2.5
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+equip={1}
+given_ability=cost {1},{T}:PN scry 1.
+timing=artifact

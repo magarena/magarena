@@ -1,0 +1,11 @@
+name=Stormcaller of Keranos
+url=http://magiccards.info/bng/en/112.html
+image=http://mtgimage.com/card/stormcaller%20of%20keranos.jpg
+value=3.929
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={2}{R}
+pt=2/2
+ability=haste;cost {1}{U}:PN scry 1.
+timing=main
