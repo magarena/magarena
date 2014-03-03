@@ -697,18 +697,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
 
         if (isAura()) {
-            final MagicPlayAuraEvent auraEvent = cardDefinition.isAura() ?
-                (MagicPlayAuraEvent)cardDefinition.getCardEvent() :
-                MagicBestowActivation.BestowEvent;
-
             //not targeting since Aura is already attached
-            final MagicTargetChoice tchoice = new MagicTargetChoice(auraEvent.getTargetChoice(), false);
+            final MagicTargetChoice tchoice = new MagicTargetChoice(getAuraTargetChoice(), false);
             if (!enchantedCreature.isValid() ||
                 !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
                 enchantedCreature.hasProtectionFrom(this)) {
                 // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
                 // This is an exception to rule 704.5n.
-                if (auraEvent == MagicBestowActivation.BestowEvent) {
+                if (hasAbility(MagicAbility.Bestow)) {
                     game.logAppendMessage(getController(),getName()+" becomes unattached.");
                     game.addDelayedAction(new MagicAttachAction(this, MagicPermanent.NONE));
                 } else {
@@ -1069,6 +1065,17 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     public boolean isAura() {
         return isEnchantment() && hasSubType(MagicSubType.Aura);
+    }
+            
+    public MagicTargetChoice getAuraTargetChoice() {
+        if (isAura()) {
+            final MagicPlayAuraEvent auraEvent = cardDefinition.isAura() ?
+                (MagicPlayAuraEvent)cardDefinition.getCardEvent() :
+                MagicBestowActivation.BestowEvent;
+            return auraEvent.getTargetChoice();
+        } else {
+            return MagicTargetChoice.NONE;
+        }
     }
 
     @Override

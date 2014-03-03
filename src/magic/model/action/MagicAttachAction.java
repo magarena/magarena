@@ -3,6 +3,7 @@ package magic.model.action;
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.mstatic.MagicPermanentStatic;
 
 import java.util.Collection;
@@ -56,6 +57,20 @@ public class MagicAttachAction extends MagicAction {
         if (!validAttachable) {
             return;
         }
+
+        if (attachable.isEquipment() && creature.isValid() && !creature.isCreature()) {
+            validAttachable = false;
+            return;
+        }
+
+        if (attachable.isAura() && creature.isValid()) {
+            final MagicTargetChoice tchoice = new MagicTargetChoice(attachable.getAuraTargetChoice(), false);
+            if (game.isLegalTarget(attachable.getController(),attachable,tchoice,creature) == false) {
+                validAttachable = false;
+                return;
+            }
+        }
+
         int score = ArtificialScoringSystem.getTurnScore(game);
 
         oldAttachedCreature = getAttached();
