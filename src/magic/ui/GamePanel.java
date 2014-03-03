@@ -363,13 +363,16 @@ public final class GamePanel extends JPanel {
      */
     private void setLeftSideLayout() {
 
-        lhsPanel.removeAll();
-        lhsPanel.setLayout(new MigLayout("insets 6, gap 0 10, flowy", "[100%, fill]"));
+        final int insets = 6;
+        final int maxWidth = DefaultResolutionProfile.getPanelWidthLHS() - (insets * 2);
 
-        lhsPanel.add(opponentViewer, "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
-        lhsPanel.add(logStackViewer, "h 100%");
-        lhsPanel.add(gameDuelViewer, "h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
-        lhsPanel.add(playerViewer,   "h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        lhsPanel.removeAll();
+        lhsPanel.setLayout(new MigLayout("insets " + insets + ", gap 0 10, flowy"));
+
+        lhsPanel.add(opponentViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
+        lhsPanel.add(logStackViewer, "w " + maxWidth + "!, h 100%");
+        lhsPanel.add(gameDuelViewer, "w " + maxWidth + "!, h " + DefaultResolutionProfile.GAME_VIEWER_HEIGHT + "!");
+        lhsPanel.add(playerViewer,   "w " + maxWidth + "!, h " + DefaultResolutionProfile.PLAYER_VIEWER_HEIGHT_SMALL + "!");
 
         logStackViewer.setLogStackLayout();
 
