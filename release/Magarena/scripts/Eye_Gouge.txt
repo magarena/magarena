@@ -1,0 +1,9 @@
+name=Eye Gouge
+url=http://magiccards.info/bng/en/67.html
+image=http://mtgimage.com/card/eye%20gouge.jpg
+value=3.053
+rarity=C
+type=Instant
+cost={B}
+timing=main
+requires_groovy_code
