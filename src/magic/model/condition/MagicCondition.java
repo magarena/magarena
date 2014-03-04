@@ -211,7 +211,7 @@ public interface MagicCondition {
     MagicCondition ENCHANTED_IS_UNTAPPED_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.getEnchantedCreature().isUntapped();
+            return permanent.getEnchantedPermanent().isUntapped();
         }
     };
     

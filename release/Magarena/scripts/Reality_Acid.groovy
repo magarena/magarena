@@ -2,7 +2,7 @@
     new MagicWhenLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicRemoveFromPlayAction act) {
-            final MagicPermanent enchantedPermanent = permanent.getEnchantedCreature();
+            final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
             return (act.isPermanent(permanent) && enchantedPermanent.isValid()) ?
                 new MagicEvent(
                     permanent,

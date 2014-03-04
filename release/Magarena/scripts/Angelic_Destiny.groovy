@@ -2,7 +2,7 @@
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
-            return (permanent.getEnchantedCreature() == died) ?
+            return (permanent.getEnchantedPermanent() == died) ?
                 new MagicEvent(
                     permanent,
                     this,

@@ -48,7 +48,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private final MagicPlayer firstController;
     private MagicPermanent equippedCreature = MagicPermanent.NONE;
     private final MagicPermanentSet equipmentPermanents;
-    private MagicPermanent enchantedCreature = MagicPermanent.NONE;
+    private MagicPermanent enchantedPermanent = MagicPermanent.NONE;
     private final MagicPermanentSet auraPermanents;
     private MagicPermanent blockedCreature = MagicPermanent.NONE;
     private final MagicPermanentList blockingCreatures;
@@ -115,7 +115,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
         equippedCreature=copyMap.copy(sourcePermanent.equippedCreature);
         equipmentPermanents=new MagicPermanentSet(copyMap,sourcePermanent.equipmentPermanents);
-        enchantedCreature=copyMap.copy(sourcePermanent.enchantedCreature);
+        enchantedPermanent=copyMap.copy(sourcePermanent.enchantedPermanent);
         auraPermanents=new MagicPermanentSet(copyMap,sourcePermanent.auraPermanents);
         blockedCreature=copyMap.copy(sourcePermanent.blockedCreature);
         blockingCreatures=new MagicPermanentList(copyMap,sourcePermanent.blockingCreatures);
@@ -170,7 +170,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             damage,
             preventDamage,
             equippedCreature.getStateId(),
-            enchantedCreature.getStateId(),
+            enchantedPermanent.getStateId(),
             blockedCreature.getStateId(),
             //pairedCreature.getStateId(),
             exiledCards.getUnorderedStateId(),
@@ -699,9 +699,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         if (isAura()) {
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(getAuraTargetChoice(), false);
-            if (!enchantedCreature.isValid() ||
-                !game.isLegalTarget(getController(),this,tchoice,enchantedCreature) ||
-                enchantedCreature.hasProtectionFrom(this)) {
+            if (!enchantedPermanent.isValid() ||
+                !game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) ||
+                enchantedPermanent.hasProtectionFrom(this)) {
                 // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
@@ -995,12 +995,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return equipmentPermanents.size()>0;
     }
 
-    public MagicPermanent getEnchantedCreature() {
-        return enchantedCreature;
+    public MagicPermanent getEnchantedPermanent() {
+        return enchantedPermanent;
     }
 
-    public void setEnchantedCreature(final MagicPermanent creature) {
-        enchantedCreature=creature;
+    public void setEnchantedPermanent(final MagicPermanent perm) {
+        enchantedPermanent=perm;
     }
 
     public MagicPermanentSet getAuraPermanents() {

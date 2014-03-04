@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPermanent died) {
-            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            final MagicPermanent enchanted = permanent.getEnchantedPermanent();
             return (enchanted == died) ?
                 new MagicEvent(
                     permanent,

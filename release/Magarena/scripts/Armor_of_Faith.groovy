@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getEnchantedCreature(),
+                source.getEnchantedPermanent(),
                 this,
                 "RN gets +0/+1 until end of turn."
             );

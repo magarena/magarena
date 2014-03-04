@@ -8,7 +8,7 @@
         }
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
-            return target == source.getEnchantedCreature() &&
+            return target == source.getEnchantedPermanent() &&
                    source.getController().getOpponent().getNrOfPermanents(MagicTargetFilter.TARGET_BLACK_PERMANENT) >= 1;
         }
     }

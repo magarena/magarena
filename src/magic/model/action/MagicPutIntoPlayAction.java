@@ -26,7 +26,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
         if (enchantedPermanent.isValid()) {
             enchantedPermanent.addAura(permanent);
-            permanent.setEnchantedCreature(enchantedPermanent);
+            permanent.setEnchantedPermanent(enchantedPermanent);
         }
 
         game.addStatics(permanent);
@@ -52,7 +52,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
     public void undoAction(final MagicGame game) {
         if (enchantedPermanent.isValid()) {
             enchantedPermanent.removeAura(permanent);
-            permanent.setEnchantedCreature(MagicPermanent.NONE);
+            permanent.setEnchantedPermanent(MagicPermanent.NONE);
         }
         permanent.getFirstController().removePermanent(permanent);
         game.removeTriggers(permanent);

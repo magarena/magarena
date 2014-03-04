@@ -96,9 +96,9 @@ public class PermanentViewerInfo {
             (permanent.isArtifact() && permanent.getEquippedCreature().isInvalid());
 
         enchantment=permanent.isEnchanted() ||
-            (permanent.isEnchantment() && permanent.getEnchantedCreature().isInvalid());
+            (permanent.isEnchantment() && permanent.getEnchantedPermanent().isInvalid());
 
-        root=permanent.getEnchantedCreature().isInvalid() && permanent.getEquippedCreature().isInvalid();
+        root=permanent.getEnchantedPermanent().isInvalid() && permanent.getEquippedCreature().isInvalid();
 
         tapped=permanent.isTapped();
 
@@ -118,8 +118,8 @@ public class PermanentViewerInfo {
             return true;
         } else if (permanent.getEquippedCreature().isValid()) {
             return isLowered(permanent.getEquippedCreature());
-        } else if (permanent.getEnchantedCreature().isValid()) {
-            return isLowered(permanent.getEnchantedCreature());
+        } else if (permanent.getEnchantedPermanent().isValid()) {
+            return isLowered(permanent.getEnchantedPermanent());
         } else {
             return false;
         }

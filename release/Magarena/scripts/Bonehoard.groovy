@@ -14,7 +14,7 @@
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return (source.isEquipment()) ?
                 source.getEquippedCreature() == target :
-                source.getEnchantedCreature() == target;
+                source.getEnchantedPermanent() == target;
         }
     }
 ]

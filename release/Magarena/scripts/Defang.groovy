@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            if (damage.getSource() == permanent.getEnchantedCreature()) {
+            if (damage.getSource() == permanent.getEnchantedPermanent()) {
                 // Replacement effect. Generates no event or action.
                 damage.prevent();
             }

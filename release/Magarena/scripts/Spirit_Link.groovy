@@ -2,7 +2,7 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return permanent.getEnchantedCreature() == damage.getSource() ?
+            return permanent.getEnchantedPermanent() == damage.getSource() ?
                 new MagicEvent(
                     permanent,
                     damage.getDealtAmount(),

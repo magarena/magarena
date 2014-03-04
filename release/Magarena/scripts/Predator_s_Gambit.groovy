@@ -14,7 +14,7 @@
                 final MagicGame game,
                 final MagicPermanent source,
                 final MagicPermanent target) {
-            return target == source.getEnchantedCreature() &&
+            return target == source.getEnchantedPermanent() &&
                    source.getController().getNrOfPermanents(MagicType.Creature) == 1;
         }
     }

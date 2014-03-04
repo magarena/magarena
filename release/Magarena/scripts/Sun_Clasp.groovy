@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                source.getEnchantedCreature(),
+                source.getEnchantedPermanent(),
                 this,
                 "Return RN to its owner's hand."
             );
