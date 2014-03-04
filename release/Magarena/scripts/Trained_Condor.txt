@@ -1,0 +1,11 @@
+name=Trained Condor
+url=http://magiccards.info/m14/en/76.html
+image=http://mtgimage.com/card/trained%20condor.jpg
+value=3.696
+rarity=C
+type=Creature
+subtype=Bird
+cost={2}{U}
+pt=2/1
+ability=flying;attacks effect Target creature you control gains flying until end of turn.
+timing=main

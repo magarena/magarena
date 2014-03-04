@@ -1,0 +1,12 @@
+name=Domestication
+url=http://magiccards.info/m14/en/53.html
+image=http://mtgimage.com/card/domestication.jpg
+value=2.189
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+ability=control enchanted
+enchant=gain control,neg creature
+timing=aura
+requires_groovy_code

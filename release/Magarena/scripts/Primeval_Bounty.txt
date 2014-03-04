@@ -1,0 +1,9 @@
+name=Primeval Bounty
+url=http://magiccards.info/m14/en/190.html
+image=http://mtgimage.com/card/primeval%20bounty.jpg
+value=4.258
+rarity=M
+type=Enchantment
+cost={5}{G}
+timing=enchantment
+requires_groovy_code

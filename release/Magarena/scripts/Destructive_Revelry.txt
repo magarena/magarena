@@ -1,0 +1,9 @@
+name=Destructive Revelry
+url=http://magiccards.info/ths/en/192.html
+image=http://mtgimage.com/card/destructive%20revelry.jpg
+value=3.909
+rarity=U
+type=Instant
+cost={R}{G}
+timing=removal
+requires_groovy_code

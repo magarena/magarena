@@ -1,0 +1,11 @@
+name=Windreader Sphinx
+url=http://magiccards.info/m14/en/81.html
+image=http://mtgimage.com/card/windreader%20sphinx.jpg
+value=3.98
+rarity=M
+type=Creature
+subtype=Sphinx
+cost={5}{U}{U}
+pt=3/7
+timing=main
+requires_groovy_code
