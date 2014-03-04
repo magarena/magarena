@@ -333,12 +333,6 @@ public enum MagicAbility {
             card.add(MagicAllyGrowTrigger.create());
         }
     },
-    LandfallQuest("landfall quest",0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
-            card.add(MagicLandfallTrigger.Quest);
-        }
-    },
     LandfallEffect("landfall effect",0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicLandfallTrigger.create(
