@@ -393,6 +393,7 @@ unique_property:
 cards/scored_by_dec.tsv: cards/existing_tip.txt cards/unimplementable.tsv $(wildcard decks/*.dec)
 	./scripts/score_card.awk decks/*.dec |\
 	sort -rg |\
+	unaccent iso-8859-15 |\
 	./scripts/keep_unimplemented.awk $(word 1,$^) /dev/stdin |\
 	./scripts/keep_unimplemented.awk <(cut -f1 $(word 2,$^)) /dev/stdin > $@
 	
