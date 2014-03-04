@@ -376,6 +376,12 @@ public enum MagicAbility {
             card.add(MagicAtEndOfTurnTrigger.Sacrifice);
         }
     },
+    ExileAtEnd("exile at end",-100) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+            card.add(MagicAtEndOfTurnTrigger.ExileAtEnd);
+        }
+    },
     SacWhenTargeted("sac when targeted",-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
