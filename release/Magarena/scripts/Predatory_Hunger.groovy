@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            final MagicPermanent enchanted = permanent.getEnchantedPermanent();
             return (cardOnStack.isEnemy(permanent) && cardOnStack.hasType(MagicType.Creature) && enchanted.isValid()) ?
                 new MagicEvent(
                     permanent,
@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicPermanent enchanted=permanent.getEnchantedCreature();
+            final MagicPermanent enchanted=permanent.getEnchantedPermanent();
             if (enchanted.isValid()) {
                 game.doAction(new MagicChangeCountersAction(enchanted, MagicCounterType.PlusOne, 1, true));
             }

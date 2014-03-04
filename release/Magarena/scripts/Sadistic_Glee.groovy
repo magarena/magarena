@@ -6,9 +6,9 @@
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getEnchantedCreature(),
+                    permanent.getEnchantedPermanent(),
                     this,
-                    "Put a +1/+1 counter on "+permanent.getEnchantedCreature().toString()+"."
+                    "Put a +1/+1 counter on "+permanent.getEnchantedPermanent().toString()+"."
                 ):
                 MagicEvent.NONE;
         }

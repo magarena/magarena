@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicPlayer upkeepPlayer) {
-            final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
+            final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             return (permanent.isController(upkeepPlayer) && enchantedCreature.isCreature()) ?
                 new MagicEvent(
                     enchantedCreature,

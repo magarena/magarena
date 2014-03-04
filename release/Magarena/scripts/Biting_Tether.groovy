@@ -5,10 +5,10 @@
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getEnchantedCreature(),
+                    permanent.getEnchantedPermanent(),
                     this,
                     "PN puts a -1/-1 counter on " +
-                    permanent.getEnchantedCreature() + "."
+                    permanent.getEnchantedPermanent() + "."
                 ) :
                 MagicEvent.NONE;
         }

@@ -2,7 +2,7 @@
     new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
+            final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             final MagicPermanent blocked = blocker.getBlockedCreature();
             final MagicPermanent target = enchantedCreature == blocker ? blocker.getBlockedCreature() : blocker;
             final boolean isInvolved = enchantedCreature == blocker || enchantedCreature == blocked

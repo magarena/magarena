@@ -30,7 +30,7 @@ public class MagicAttachAction extends MagicAction {
     private MagicPermanent getAttached() {
         return attachable.isEquipment() ?
             attachable.getEquippedCreature() :
-            attachable.getEnchantedCreature();
+            attachable.getEnchantedPermanent();
     }
 
     private void detach(final MagicPermanent old) {
@@ -47,7 +47,7 @@ public class MagicAttachAction extends MagicAction {
             attachable.setEquippedCreature(perm);
         } else {
             perm.addAura(attachable);
-            attachable.setEnchantedCreature(perm);
+            attachable.setEnchantedPermanent(perm);
         }
     }
 

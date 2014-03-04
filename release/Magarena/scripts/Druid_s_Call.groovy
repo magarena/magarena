@@ -6,7 +6,7 @@
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
             final int amount = damage.getDealtAmount();
-            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            final MagicPermanent enchanted = permanent.getEnchantedPermanent();
             return damage.getTarget() == enchanted ?
                 new MagicEvent(
                     permanent,

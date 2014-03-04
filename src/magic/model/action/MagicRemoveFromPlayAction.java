@@ -72,11 +72,11 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         }
 
         // Aura
-        if (permanent.getEnchantedCreature().isValid()) {
-            permanent.getEnchantedCreature().removeAura(permanent);
+        if (permanent.getEnchantedPermanent().isValid()) {
+            permanent.getEnchantedPermanent().removeAura(permanent);
         }
         for (final MagicPermanent aura : permanent.getAuraPermanents()) {
-            aura.setEnchantedCreature(MagicPermanent.NONE);
+            aura.setEnchantedPermanent(MagicPermanent.NONE);
         }
 
         // Soulbond
@@ -113,11 +113,11 @@ public class MagicRemoveFromPlayAction extends MagicAction {
         }
 
         // Aura
-        if (permanent.getEnchantedCreature().isValid()) {
-            permanent.getEnchantedCreature().addAura(permanent);
+        if (permanent.getEnchantedPermanent().isValid()) {
+            permanent.getEnchantedPermanent().addAura(permanent);
         }
         for (final MagicPermanent aura : permanent.getAuraPermanents()) {
-            aura.setEnchantedCreature(permanent);
+            aura.setEnchantedPermanent(permanent);
         }
     }
 

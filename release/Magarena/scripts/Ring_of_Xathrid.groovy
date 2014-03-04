@@ -41,7 +41,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicPermanent equipped=permanent.getEnchantedCreature();
+            final MagicPermanent equipped=permanent.getEnchantedPermanent();
             if (equipped.isValid() && equipped.hasColor(MagicColor.Black)) {
                 game.doAction(new MagicChangeCountersAction(equipped,MagicCounterType.PlusOne,1,true));
             }

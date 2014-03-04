@@ -2,7 +2,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final MagicPermanent enchanted = permanent.getEnchantedCreature();
+            final MagicPermanent enchanted = permanent.getEnchantedPermanent();
             return enchanted.isController(upkeepPlayer) ?
                 new MagicEvent(
                     enchanted,

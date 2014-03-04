@@ -5,7 +5,7 @@
                 final MagicGame game,
                 final MagicPermanent permanent,
                 final MagicDamage damage) {
-            MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
+            MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             return (damage.getSource() == enchantedCreature && permanent.isController(damage.getTarget())) ?
                 new MagicEvent(
                     permanent,

@@ -77,7 +77,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         if (source.isEquipment()) {
             return source.getEquippedCreature() == target;
         } else if (source.isEnchantment()) {
-            return source.getEnchantedCreature() == target;
+            return source.getEnchantedPermanent() == target;
         } else {
             return source.getPairedCreature() == target ||
                 (source == target && source.isPaired());
@@ -271,7 +271,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicGame game,
                 final MagicPermanent source,
                 final MagicPermanent target) {
-            return source.getEnchantedCreature() == target;
+            return source.getEnchantedPermanent() == target;
         }
     };
 
@@ -372,7 +372,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source.getEnchantedCreature().isValid();
+            return source.getEnchantedPermanent().isValid();
         }
     };
 }

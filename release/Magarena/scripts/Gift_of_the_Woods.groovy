@@ -18,14 +18,14 @@ def event = {
     new MagicWhenBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
+            final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             return (creature == enchantedCreature) ?  event(permanent, enchantedCreature) : MagicEvent.NONE;
         }
     },
     new MagicWhenBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            final MagicPermanent enchantedCreature = permanent.getEnchantedCreature();
+            final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
             return (creature == enchantedCreature) ? event(permanent, enchantedCreature) : MagicEvent.NONE;
         }
     }
