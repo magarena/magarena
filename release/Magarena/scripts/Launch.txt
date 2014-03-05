@@ -1,5 +1,5 @@
 name=Launch
-url=http://magiccards.info/us/en/82.html
+url=http://magiccards.info/query?q=%21launch
 image=http://mtgimage.com/card/launch.jpg
 value=3.766
 rarity=C

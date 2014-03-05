@@ -1,5 +1,5 @@
 name=Brilliant Halo
-url=http://magiccards.info/us/en/5.html
+url=http://magiccards.info/query?q=%21brilliant%20halo
 image=http://mtgimage.com/card/brilliant%20halo.jpg
 value=3.385
 rarity=C

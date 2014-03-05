@@ -1,5 +1,5 @@
 name=Aggressive Urge
-url=http://magiccards.info/10e/en/250.html
+url=http://magiccards.info/query?q=%21aggressive%20urge
 image=http://mtgimage.com/card/aggressive%20urge.jpg
 value=2.950
 rarity=C

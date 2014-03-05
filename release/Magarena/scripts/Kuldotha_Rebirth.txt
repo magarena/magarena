@@ -1,5 +1,5 @@
 name=Kuldotha Rebirth
-url=http://magiccards.info/som/en/96.html
+url=http://magiccards.info/query?q=%21kuldotha%20rebirth
 image=http://mtgimage.com/card/kuldotha%20rebirth.jpg
 value=3.936
 rarity=C

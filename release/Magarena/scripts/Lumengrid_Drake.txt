@@ -1,5 +1,5 @@
 name=Lumengrid Drake
-url=http://magiccards.info/som/en/36.html
+url=http://magiccards.info/query?q=%21lumengrid%20drake
 image=http://mtgimage.com/card/lumengrid%20drake.jpg
 value=2.184
 rarity=C

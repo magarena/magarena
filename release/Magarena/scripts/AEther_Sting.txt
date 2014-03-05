@@ -1,5 +1,5 @@
 name=AEther Sting
-url=http://magiccards.info/ud/en/76.html
+url=http://magiccards.info/query?q=%21aether%20sting
 image=http://mtgimage.com/card/aether%20sting.jpg
 value=3.589
 rarity=U

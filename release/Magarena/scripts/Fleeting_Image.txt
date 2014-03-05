@@ -1,5 +1,5 @@
 name=Fleeting Image
-url=http://magiccards.info/9e/en/78.html
+url=http://magiccards.info/query?q=%21fleeting%20image
 image=http://mtgimage.com/card/fleeting%20image.jpg
 value=3.189
 rarity=R

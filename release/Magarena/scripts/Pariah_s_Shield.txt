@@ -1,5 +1,5 @@
 name=Pariah's Shield
-url=http://magiccards.info/rav/en/267.html
+url=http://magiccards.info/query?q=%21pariah%27s%20shield
 image=http://mtgimage.com/card/pariah's%20shield.jpg
 value=3.703
 rarity=R

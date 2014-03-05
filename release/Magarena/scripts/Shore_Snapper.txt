@@ -1,5 +1,5 @@
 name=Shore Snapper
-url=http://magiccards.info/ala/en/87.html
+url=http://magiccards.info/query?q=%21shore%20snapper
 image=http://mtgimage.com/card/shore%20snapper.jpg
 value=1.966
 rarity=C

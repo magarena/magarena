@@ -1,5 +1,5 @@
 name=Rotting Fensnake
-url=http://magiccards.info/isd/en/113.html
+url=http://magiccards.info/query?q=%21rotting%20fensnake
 image=http://mtgimage.com/card/rotting%20fensnake.jpg
 value=2.371
 rarity=C

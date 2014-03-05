@@ -1,5 +1,5 @@
 name=Fleshbag Marauder
-url=http://magiccards.info/ala/en/76.html
+url=http://magiccards.info/query?q=%21fleshbag%20marauder
 image=http://mtgimage.com/card/fleshbag%20marauder.jpg
 value=4.072
 rarity=U

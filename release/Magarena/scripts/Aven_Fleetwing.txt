@@ -1,5 +1,5 @@
 name=Aven Fleetwing
-url=http://magiccards.info/m12/en/44.html
+url=http://magiccards.info/query?q=%21aven%20fleetwing
 image=http://mtgimage.com/card/aven%20fleetwing.jpg
 value=3.373
 rarity=C

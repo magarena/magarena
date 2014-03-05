@@ -1,5 +1,5 @@
 name=Carapace Forger
-url=http://magiccards.info/som/en/114.html
+url=http://magiccards.info/query?q=%21carapace%20forger
 image=http://mtgimage.com/card/carapace%20forger.jpg
 value=3.651
 rarity=C

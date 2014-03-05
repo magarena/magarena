@@ -1,5 +1,5 @@
 name=Goblin Bombardment
-url=http://magiccards.info/tp/en/179.html
+url=http://magiccards.info/query?q=%21goblin%20bombardment
 image=http://mtgimage.com/card/goblin%20bombardment.jpg
 value=4.167
 rarity=U

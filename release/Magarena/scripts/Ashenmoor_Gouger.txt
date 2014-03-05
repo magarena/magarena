@@ -1,5 +1,5 @@
 name=Ashenmoor Gouger
-url=http://magiccards.info/shm/en/180.html
+url=http://magiccards.info/query?q=%21ashenmoor%20gouger
 image=http://mtgimage.com/card/ashenmoor%20gouger.jpg
 value=4.085
 rarity=U

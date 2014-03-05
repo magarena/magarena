@@ -1,5 +1,5 @@
 name=Woodfall Primus
-url=http://magiccards.info/shm/en/135.html
+url=http://magiccards.info/query?q=%21woodfall%20primus
 image=http://mtgimage.com/card/woodfall%20primus.jpg
 value=4.200
 rarity=R

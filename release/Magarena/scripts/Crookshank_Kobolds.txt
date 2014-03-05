@@ -1,5 +1,5 @@
 name=Crookshank Kobolds
-url=http://magiccards.info/med/en/90.html
+url=http://magiccards.info/query?q=%21crookshank%20kobolds
 image=http://mtgimage.com/card/crookshank%20kobolds.jpg
 value=3.896
 rarity=C

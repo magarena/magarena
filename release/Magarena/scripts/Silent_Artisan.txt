@@ -1,5 +1,5 @@
 name=Silent Artisan
-url=http://magiccards.info/ths/en/31.html
+url=http://magiccards.info/query?q=%21silent%20artisan
 image=http://mtgimage.com/card/silent%20artisan.jpg
 value=2.026
 rarity=C

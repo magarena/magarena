@@ -1,5 +1,5 @@
 name=Lord of Atlantis
-url=http://magiccards.info/tsts/en/24.html
+url=http://magiccards.info/query?q=%21lord%20of%20atlantis
 image=http://mtgimage.com/card/lord%20of%20atlantis.jpg
 value=4.549
 rarity=R

@@ -1,5 +1,5 @@
 name=Tendrils of Agony
-url=http://magiccards.info/sc/en/75.html
+url=http://magiccards.info/query?q=%21tendrils%20of%20agony
 image=http://mtgimage.com/card/tendrils%20of%20agony.jpg
 value=4.556
 rarity=U

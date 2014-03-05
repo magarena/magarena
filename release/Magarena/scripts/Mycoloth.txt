@@ -1,5 +1,5 @@
 name=Mycoloth
-url=http://magiccards.info/ala/en/140.html
+url=http://magiccards.info/query?q=%21mycoloth
 image=http://mtgimage.com/card/mycoloth.jpg
 value=3.545
 rarity=R

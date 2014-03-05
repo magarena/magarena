@@ -1,5 +1,5 @@
 name=Howling Banshee
-url=http://magiccards.info/m11/en/100.html
+url=http://magiccards.info/query?q=%21howling%20banshee
 image=http://mtgimage.com/card/howling%20banshee.jpg
 value=2.890
 rarity=U

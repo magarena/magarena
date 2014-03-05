@@ -1,5 +1,5 @@
 name=Highland Weald
-url=http://magiccards.info/cs/en/147.html
+url=http://magiccards.info/query?q=%21highland%20weald
 image=http://mtgimage.com/card/highland%20weald.jpg
 value=3.885
 rarity=U

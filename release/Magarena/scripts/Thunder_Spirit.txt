@@ -1,5 +1,5 @@
 name=Thunder Spirit
-url=http://magiccards.info/med/en/27.html
+url=http://magiccards.info/query?q=%21thunder%20spirit
 image=http://mtgimage.com/card/thunder%20spirit.jpg
 value=4.183
 rarity=R

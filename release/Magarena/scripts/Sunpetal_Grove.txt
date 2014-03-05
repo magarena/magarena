@@ -1,5 +1,5 @@
 name=Sunpetal Grove
-url=http://magiccards.info/m12/en/229.html
+url=http://magiccards.info/query?q=%21sunpetal%20grove
 image=http://mtgimage.com/card/sunpetal%20grove.jpg
 value=3.759
 rarity=R

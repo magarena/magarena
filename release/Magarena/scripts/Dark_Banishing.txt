@@ -1,5 +1,5 @@
 name=Dark Banishing
-url=http://magiccards.info/tp/en/11.html
+url=http://magiccards.info/query?q=%21dark%20banishing
 image=http://mtgimage.com/card/dark%20banishing.jpg
 value=3.897
 rarity=C

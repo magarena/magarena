@@ -1,5 +1,5 @@
 name=Orim's Thunder
-url=http://magiccards.info/cmd/en/24.html
+url=http://magiccards.info/query?q=%21orim%27s%20thunder
 image=http://mtgimage.com/card/orim%27s%20thunder.jpg
 value=3.860
 removal=2

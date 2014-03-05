@@ -1,5 +1,5 @@
 name=Anoint
-url=http://magiccards.info/tp/en/215.html
+url=http://magiccards.info/query?q=%21anoint
 image=http://mtgimage.com/card/anoint.jpg
 value=1.953
 rarity=C

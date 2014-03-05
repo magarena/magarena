@@ -1,5 +1,5 @@
 name=Arachnoid
-url=http://magiccards.info/5dn/en/102.html
+url=http://magiccards.info/query?q=%21arachnoid
 image=http://mtgimage.com/card/arachnoid.jpg
 value=1.371
 ability=reach

@@ -1,5 +1,5 @@
 name=Leafdrake Roost
-url=http://magiccards.info/di/en/116.html
+url=http://magiccards.info/query?q=%21leafdrake%20roost
 image=http://mtgimage.com/card/leafdrake%20roost.jpg
 value=3.450
 rarity=U

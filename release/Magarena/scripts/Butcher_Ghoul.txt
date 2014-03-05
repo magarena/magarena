@@ -1,5 +1,5 @@
 name=Butcher Ghoul
-url=http://magiccards.info/avr/en/89.html
+url=http://magiccards.info/query?q=%21butcher%20ghoul
 image=http://mtgimage.com/card/butcher%20ghoul.jpg
 value=3.038
 rarity=C

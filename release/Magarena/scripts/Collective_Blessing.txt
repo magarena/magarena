@@ -1,5 +1,5 @@
 name=Collective Blessing
-url=http://magiccards.info/rtr/en/150.html
+url=http://magiccards.info/query?q=%21collective%20blessing
 image=http://mtgimage.com/card/collective%20blessing.jpg
 value=3.639
 rarity=R

@@ -1,5 +1,5 @@
 name=Vedalken Heretic
-url=http://magiccards.info/arb/en/104.html
+url=http://magiccards.info/query?q=%21vedalken%20heretic
 image=http://mtgimage.com/card/vedalken%20heretic.jpg
 value=2.947
 rarity=R

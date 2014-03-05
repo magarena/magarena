@@ -1,5 +1,5 @@
 name=Hammer of Purphoros
-url=http://magiccards.info/ths/en/124.html
+url=http://magiccards.info/query?q=%21hammer%20of%20purphoros
 image=http://mtgimage.com/card/hammer%20of%20purphoros.jpg
 value=3.571
 rarity=R

@@ -1,5 +1,5 @@
 name=Spinal Villain
-url=http://magiccards.info/lg/en/161.html
+url=http://magiccards.info/query?q=%21spinal%20villain
 image=http://mtgimage.com/card/spinal%20villain.jpg
 value=3.743
 rarity=U

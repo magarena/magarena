@@ -1,5 +1,5 @@
 name=Claws of Gix
-url=http://magiccards.info/tsts/en/107.html
+url=http://magiccards.info/query?q=%21claws%20of%20gix
 image=http://mtgimage.com/card/claws%20of%20gix.jpg
 value=3.929
 rarity=U

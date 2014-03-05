@@ -1,5 +1,5 @@
 name=Sanctum Custodian
-url=http://magiccards.info/br/en/62.html
+url=http://magiccards.info/query?q=%21sanctum%20custodian
 image=http://mtgimage.com/card/sanctum%20custodian.jpg
 value=3.143
 rarity=C

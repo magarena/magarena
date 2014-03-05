@@ -1,5 +1,5 @@
 name=Assault Strobe
-url=http://magiccards.info/som/en/82.html
+url=http://magiccards.info/query?q=%21assault%20strobe
 image=http://mtgimage.com/card/assault%20strobe.jpg
 value=3.845
 rarity=C

@@ -1,5 +1,5 @@
 name=Goblin Bully
-url=http://magiccards.info/me4/en/117.html
+url=http://magiccards.info/query?q=%21goblin%20bully
 image=http://mtgimage.com/card/goblin%20bully.jpg
 value=2.194
 rarity=C

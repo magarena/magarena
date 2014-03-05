@@ -1,5 +1,5 @@
 name=Dungeon Geists
-url=http://magiccards.info/dka/en/36.html
+url=http://magiccards.info/query?q=%21dungeon%20geists
 image=http://mtgimage.com/card/dungeon%20geists.jpg
 value=3.545
 rarity=R

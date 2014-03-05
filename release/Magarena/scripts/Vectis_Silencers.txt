@@ -1,5 +1,5 @@
 name=Vectis Silencers
-url=http://magiccards.info/ala/en/62.html
+url=http://magiccards.info/query?q=%21vectis%20silencers
 image=http://mtgimage.com/card/vectis%20silencers.jpg
 value=1.448
 rarity=C

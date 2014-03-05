@@ -1,5 +1,5 @@
 name=Elderscale Wurm
-url=http://magiccards.info/m13/en/167.html
+url=http://magiccards.info/query?q=%21elderscale%20wurm
 image=http://mtgimage.com/card/elderscale%20wurm.jpg
 value=3.984
 rarity=M

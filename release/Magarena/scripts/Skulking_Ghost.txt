@@ -1,5 +1,5 @@
 name=Skulking Ghost
-url=http://magiccards.info/mr/en/41.html
+url=http://magiccards.info/query?q=%21skulking%20ghost
 image=http://mtgimage.com/card/skulking%20ghost.jpg
 value=3.245
 rarity=C

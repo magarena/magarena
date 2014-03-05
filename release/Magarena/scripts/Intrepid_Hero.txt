@@ -1,5 +1,5 @@
 name=Intrepid Hero
-url=http://magiccards.info/m13/en/20.html
+url=http://magiccards.info/query?q=%21intrepid%20hero
 image=http://mtgimage.com/card/intrepid%20hero.jpg
 value=4.224
 rarity=R

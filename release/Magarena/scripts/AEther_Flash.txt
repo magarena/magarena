@@ -1,5 +1,5 @@
 name=AEther Flash
-url=http://magiccards.info/7e/en/172.html
+url=http://magiccards.info/query?q=%21aether%20flash
 image=http://mtgimage.com/card/aether%20flash.jpg
 value=4.274
 rarity=U

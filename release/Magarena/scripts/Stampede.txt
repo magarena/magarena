@@ -1,5 +1,5 @@
 name=Stampede
-url=http://magiccards.info/5e/en/189.html
+url=http://magiccards.info/query?q=%21stampede
 image=http://mtgimage.com/card/stampede.jpg
 value=3.239
 rarity=U

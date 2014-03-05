@@ -1,5 +1,5 @@
 name=Undercity Plague
-url=http://magiccards.info/gtc/en/83.html
+url=http://magiccards.info/query?q=%21undercity%20plague
 image=http://mtgimage.com/card/undercity%20plague.jpg
 value=3.123
 rarity=R

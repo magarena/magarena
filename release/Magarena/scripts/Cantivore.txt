@@ -1,5 +1,5 @@
 name=Cantivore
-url=http://magiccards.info/od/en/13.html
+url=http://magiccards.info/query?q=%21cantivore
 image=http://mtgimage.com/card/cantivore.jpg
 value=3.061
 rarity=R

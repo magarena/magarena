@@ -1,5 +1,5 @@
 name=Sanguine Bond
-url=http://magiccards.info/m10/en/111.html
+url=http://magiccards.info/query?q=%21sanguine%20bond
 image=http://mtgimage.com/card/sanguine%20bond.jpg
 value=2.825
 rarity=R

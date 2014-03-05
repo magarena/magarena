@@ -1,5 +1,5 @@
 name=Stampeding Wildebeests
-url=http://magiccards.info/gvl/en/9.html
+url=http://magiccards.info/query?q=%21stampeding%20wildebeests
 image=http://mtgimage.com/card/stampeding%20wildebeests.jpg
 value=4.200
 rarity=U

@@ -1,5 +1,5 @@
 name=Lace with Moonglove
-url=http://magiccards.info/lw/en/225.html
+url=http://magiccards.info/query?q=%21lace%20with%20moonglove
 image=http://mtgimage.com/card/lace%20with%20moonglove.jpg
 value=3.316
 rarity=C

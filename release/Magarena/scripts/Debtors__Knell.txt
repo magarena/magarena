@@ -1,5 +1,5 @@
 name=Debtors' Knell
-url=http://magiccards.info/gp/en/141.html
+url=http://magiccards.info/query?q=%21debtors%27%20knell
 image=http://mtgimage.com/card/debtors%27%20knell.jpg
 value=4.173
 rarity=R

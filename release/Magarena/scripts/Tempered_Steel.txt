@@ -1,5 +1,5 @@
 name=Tempered Steel
-url=http://magiccards.info/som/en/24.html
+url=http://magiccards.info/query?q=%21tempered%20steel
 image=http://mtgimage.com/card/tempered%20steel.jpg
 value=4.090
 rarity=R

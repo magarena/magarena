@@ -1,5 +1,5 @@
 name=Fate Unraveler
-url=http://magiccards.info/bng/en/68.html
+url=http://magiccards.info/query?q=%21fate%20unraveler
 image=http://mtgimage.com/card/fate%20unraveler.jpg
 value=3.845
 rarity=R

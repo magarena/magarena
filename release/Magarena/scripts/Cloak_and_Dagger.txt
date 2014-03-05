@@ -1,5 +1,5 @@
 name=Cloak and Dagger
-url=http://magiccards.info/mt/en/141.html
+url=http://magiccards.info/query?q=%21cloak%20and%20dagger
 image=http://mtgimage.com/card/cloak%20and%20dagger.jpg
 value=3.694
 rarity=U

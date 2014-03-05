@@ -1,5 +1,5 @@
 name=Talas Merchant
-url=http://magiccards.info/po2/en/50.html
+url=http://magiccards.info/query?q=%21talas%20merchant
 image=http://mtgimage.com/card/talas%20merchant.jpg
 value=2.579
 rarity=C

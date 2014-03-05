@@ -1,5 +1,5 @@
 name=Brimaz, King of Oreskos
-url=http://magiccards.info/bng/en/5.html
+url=http://magiccards.info/query?q=%21brimaz%2C%20king%20of%20oreskos
 image=http://mtgimage.com/card/brimaz%2C%20king%20of%20oreskos.jpg
 value=4.004
 rarity=M

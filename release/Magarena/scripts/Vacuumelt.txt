@@ -1,5 +1,5 @@
 name=Vacuumelt
-url=http://magiccards.info/gp/en/40.html
+url=http://magiccards.info/query?q=%21vacuumelt
 image=http://mtgimage.com/card/vacuumelt.jpg
 value=1.821
 removal=2

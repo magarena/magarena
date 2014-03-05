@@ -1,5 +1,5 @@
 name=Inaction Injunction
-url=http://magiccards.info/rtr/en/41.html
+url=http://magiccards.info/query?q=%21inaction%20injunction
 image=http://mtgimage.com/card/inaction%20injunction.jpg
 value=3.331
 removal=1

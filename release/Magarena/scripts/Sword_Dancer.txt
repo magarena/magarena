@@ -1,5 +1,5 @@
 name=Sword Dancer
-url=http://magiccards.info/8e/en/53.html
+url=http://magiccards.info/query?q=%21sword%20dancer
 image=http://mtgimage.com/card/sword%20dancer.jpg
 value=2.268
 rarity=U

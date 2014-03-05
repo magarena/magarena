@@ -1,5 +1,5 @@
 name=Thought Scour
-url=http://magiccards.info/dka/en/52.html
+url=http://magiccards.info/query?q=%21thought%20scour
 image=http://mtgimage.com/card/thought%20scour.jpg
 value=3.806
 rarity=C

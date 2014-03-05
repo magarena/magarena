@@ -1,5 +1,5 @@
 name=Corrupted Zendikon
-url=http://magiccards.info/wwk/en/55.html
+url=http://magiccards.info/query?q=%21corrupted%20zendikon
 image=http://mtgimage.com/card/corrupted%20zendikon.jpg
 value=3.024
 rarity=C

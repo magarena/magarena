@@ -1,5 +1,5 @@
 name=Annex
-url=http://magiccards.info/9e/en/59.html
+url=http://magiccards.info/query?q=%21annex
 image=http://mtgimage.com/card/annex.jpg
 value=3.607
 rarity=U

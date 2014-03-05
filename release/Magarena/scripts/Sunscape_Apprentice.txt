@@ -1,5 +1,5 @@
 name=Sunscape Apprentice
-url=http://magiccards.info/in/en/41.html
+url=http://magiccards.info/query?q=%21sunscape%20apprentice
 image=http://mtgimage.com/card/sunscape%20apprentice.jpg
 value=3.117
 rarity=C

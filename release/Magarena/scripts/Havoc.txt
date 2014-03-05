@@ -1,5 +1,5 @@
 name=Havoc
-url=http://magiccards.info/tp/en/181.html
+url=http://magiccards.info/query?q=%21havoc
 image=http://mtgimage.com/card/havoc.jpg
 value=3.214
 rarity=U

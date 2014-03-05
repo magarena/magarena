@@ -1,5 +1,5 @@
 name=Thornling
-url=http://magiccards.info/cfx/en/95.html
+url=http://magiccards.info/query?q=%21thornling
 image=http://mtgimage.com/card/thornling.jpg
 value=3.591
 rarity=M

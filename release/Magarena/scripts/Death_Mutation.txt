@@ -1,5 +1,5 @@
 name=Death Mutation
-url=http://magiccards.info/cmd/en/192.html
+url=http://magiccards.info/query?q=%21death%20mutation
 image=http://mtgimage.com/card/death%20mutation.jpg
 value=3.029
 rarity=U

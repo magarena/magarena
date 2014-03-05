@@ -1,5 +1,5 @@
 name=Clear
-url=http://magiccards.info/us/en/7.html
+url=http://magiccards.info/query?q=%21clear
 image=http://mtgimage.com/card/clear.jpg
 value=3.452
 rarity=U

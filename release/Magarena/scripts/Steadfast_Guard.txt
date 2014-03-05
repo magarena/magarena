@@ -1,5 +1,5 @@
 name=Steadfast Guard
-url=http://magiccards.info/10e/en/48.html
+url=http://magiccards.info/query?q=%21steadfast%20guard
 image=http://mtgimage.com/card/steadfast%20guard.jpg
 value=3.850
 ability=vigilance

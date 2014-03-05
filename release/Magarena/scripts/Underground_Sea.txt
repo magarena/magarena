@@ -1,5 +1,5 @@
 name=Underground Sea
-url=http://magiccards.info/me4/en/256.html
+url=http://magiccards.info/query?q=%21underground%20sea
 image=http://mtgimage.com/card/underground%20sea.jpg
 value=4.639
 rarity=R

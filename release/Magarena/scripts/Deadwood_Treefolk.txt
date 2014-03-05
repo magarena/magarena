@@ -1,5 +1,5 @@
 name=Deadwood Treefolk
-url=http://magiccards.info/cmd/en/150.html
+url=http://magiccards.info/query?q=%21deadwood%20treefolk
 image=http://mtgimage.com/card/deadwood%20treefolk.jpg
 value=3.458
 rarity=U

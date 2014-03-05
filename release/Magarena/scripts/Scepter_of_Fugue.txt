@@ -1,5 +1,5 @@
 name=Scepter of Fugue
-url=http://magiccards.info/cfx/en/53.html
+url=http://magiccards.info/query?q=%21scepter%20of%20fugue
 image=http://mtgimage.com/card/scepter%20of%20fugue.jpg
 value=3.399
 rarity=R

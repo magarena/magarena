@@ -1,5 +1,5 @@
 name=Blitz Hellion
-url=http://magiccards.info/arb/en/49.html
+url=http://magiccards.info/query?q=%21blitz%20hellion
 image=http://mtgimage.com/card/blitz%20hellion.jpg
 value=3.303
 rarity=R

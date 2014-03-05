@@ -1,5 +1,5 @@
 name=Argentum Armor
-url=http://magiccards.info/som/en/137.html
+url=http://magiccards.info/query?q=%21argentum%20armor
 image=http://mtgimage.com/card/argentum%20armor.jpg
 value=3.895
 rarity=R

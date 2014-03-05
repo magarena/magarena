@@ -1,5 +1,5 @@
 name=Blightwidow
-url=http://magiccards.info/mbs/en/77.html
+url=http://magiccards.info/query?q=%21blightwidow
 image=http://mtgimage.com/card/blightwidow.jpg
 value=3.433
 ability=reach;infect

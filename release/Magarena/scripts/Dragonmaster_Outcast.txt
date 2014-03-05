@@ -1,5 +1,5 @@
 name=Dragonmaster Outcast
-url=http://magiccards.info/wwk/en/81.html
+url=http://magiccards.info/query?q=%21dragonmaster%20outcast
 image=http://mtgimage.com/card/dragonmaster%20outcast.jpg
 value=4.354
 rarity=M

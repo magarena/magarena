@@ -1,5 +1,5 @@
 name=Requiem Angel
-url=http://magiccards.info/dka/en/18.html
+url=http://magiccards.info/query?q=%21requiem%20angel
 image=http://mtgimage.com/card/requiem%20angel.jpg
 value=3.605
 rarity=R

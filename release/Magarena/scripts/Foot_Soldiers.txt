@@ -1,5 +1,5 @@
 name=Foot Soldiers
-url=http://magiccards.info/9e/en/14.html
+url=http://magiccards.info/query?q=%21foot%20soldiers
 image=http://mtgimage.com/card/foot%20soldiers.jpg
 value=1.308
 rarity=C

@@ -1,5 +1,5 @@
 name=Grasslands
-url=http://magiccards.info/ddg/en/35.html
+url=http://magiccards.info/query?q=%21grasslands
 image=http://mtgimage.com/card/grasslands.jpg
 value=3.606
 rarity=U

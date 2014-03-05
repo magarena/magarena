@@ -1,5 +1,5 @@
 name=Labyrinth Champion
-url=http://magiccards.info/ths/en/126.html
+url=http://magiccards.info/query?q=%21labyrinth%20champion
 image=http://mtgimage.com/card/labyrinth%20champion.jpg
 value=3.449
 rarity=R

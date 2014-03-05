@@ -1,5 +1,5 @@
 name=Agent of Shauku
-url=http://magiccards.info/pr/en/55.html
+url=http://magiccards.info/query?q=%21agent%20of%20shauku
 image=http://mtgimage.com/card/agent%20of%20shauku.jpg
 value=2.230
 rarity=C

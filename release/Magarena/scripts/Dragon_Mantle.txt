@@ -1,5 +1,5 @@
 name=Dragon Mantle
-url=http://magiccards.info/ths/en/119.html
+url=http://magiccards.info/query?q=%21dragon%20mantle
 image=http://mtgimage.com/card/dragon%20mantle.jpg
 value=3.537
 rarity=C

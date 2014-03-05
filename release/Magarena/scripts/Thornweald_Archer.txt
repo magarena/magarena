@@ -1,5 +1,5 @@
 name=Thornweald Archer
-url=http://magiccards.info/fut/en/154.html
+url=http://magiccards.info/query?q=%21thornweald%20archer
 image=http://mtgimage.com/card/thornweald%20archer.jpg
 value=4.207
 ability=reach;deathtouch

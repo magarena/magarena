@@ -1,5 +1,5 @@
 name=Fallen Askari
-url=http://magiccards.info/vi/en/9.html
+url=http://magiccards.info/query?q=%21fallen%20askari
 image=http://mtgimage.com/card/fallen%20askari.jpg
 value=3.674
 rarity=C

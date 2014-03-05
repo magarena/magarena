@@ -1,5 +1,5 @@
 name=Treva, the Renewer
-url=http://magiccards.info/pvc/en/49.html
+url=http://magiccards.info/query?q=%21treva%2C%20the%20renewer
 image=http://mtgimage.com/card/treva%2C%20the%20renewer.jpg
 value=4.054
 rarity=R

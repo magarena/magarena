@@ -1,5 +1,5 @@
 name=Goblin Legionnaire
-url=http://magiccards.info/ap/en/103.html
+url=http://magiccards.info/query?q=%21goblin%20legionnaire
 image=http://mtgimage.com/card/goblin%20legionnaire.jpg
 value=4.147
 rarity=C

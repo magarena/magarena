@@ -1,5 +1,5 @@
 name=Worship
-url=http://magiccards.info/9e/en/55.html
+url=http://magiccards.info/query?q=%21worship
 image=http://mtgimage.com/card/worship.jpg
 value=4.512
 rarity=R

@@ -1,5 +1,5 @@
 name=Wicked Reward
-url=http://magiccards.info/vi/en/25.html
+url=http://magiccards.info/query?q=%21wicked%20reward
 image=http://mtgimage.com/card/wicked%20reward.jpg
 value=3.048
 rarity=C

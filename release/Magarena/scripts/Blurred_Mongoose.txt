@@ -1,5 +1,5 @@
 name=Blurred Mongoose
-url=http://magiccards.info/in/en/183.html
+url=http://magiccards.info/query?q=%21blurred%20mongoose
 image=http://mtgimage.com/card/blurred%20mongoose.jpg
 value=4.088
 ability=can't be countered;shroud

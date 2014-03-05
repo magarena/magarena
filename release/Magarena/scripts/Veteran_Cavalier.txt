@@ -1,5 +1,5 @@
 name=Veteran Cavalier
-url=http://magiccards.info/9e/en/52.html
+url=http://magiccards.info/query?q=%21veteran%20cavalier
 image=http://mtgimage.com/card/veteran%20cavalier.jpg
 value=3.500
 ability=vigilance

@@ -1,5 +1,5 @@
 name=Wall of Vines
-url=http://magiccards.info/m11/en/199.html
+url=http://magiccards.info/query?q=%21wall%20of%20vines
 image=http://mtgimage.com/card/wall%20of%20vines.jpg
 value=2.769
 ability=defender;reach

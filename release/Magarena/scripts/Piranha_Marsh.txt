@@ -1,5 +1,5 @@
 name=Piranha Marsh
-url=http://magiccards.info/zen/en/222.html
+url=http://magiccards.info/query?q=%21piranha%20marsh
 image=http://mtgimage.com/card/piranha%20marsh.jpg
 value=3.519
 rarity=C

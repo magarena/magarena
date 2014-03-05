@@ -1,5 +1,5 @@
 name=Fog
-url=http://magiccards.info/m12/en/173.html
+url=http://magiccards.info/query?q=%21fog
 image=http://mtgimage.com/card/fog.jpg
 value=3.842
 rarity=C

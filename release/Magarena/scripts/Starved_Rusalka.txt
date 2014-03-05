@@ -1,5 +1,5 @@
 name=Starved Rusalka
-url=http://magiccards.info/gp/en/97.html
+url=http://magiccards.info/query?q=%21starved%20rusalka
 image=http://mtgimage.com/card/starved%20rusalka.jpg
 value=1.477
 rarity=U

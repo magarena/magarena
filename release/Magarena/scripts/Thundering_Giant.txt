@@ -1,5 +1,5 @@
 name=Thundering Giant
-url=http://magiccards.info/10e/en/243.html
+url=http://magiccards.info/query?q=%21thundering%20giant
 image=http://mtgimage.com/card/thundering%20giant.jpg
 value=2.188
 ability=haste

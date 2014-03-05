@@ -1,5 +1,5 @@
 name=Fabricate
-url=http://magiccards.info/pch/en/9.html
+url=http://magiccards.info/query?q=%21fabricate
 image=http://mtgimage.com/card/fabricate.jpg
 value=4.413
 rarity=U

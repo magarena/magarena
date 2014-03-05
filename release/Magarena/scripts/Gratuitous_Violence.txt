@@ -1,5 +1,5 @@
 name=Gratuitous Violence
-url=http://magiccards.info/on/en/212.html
+url=http://magiccards.info/query?q=%21gratuitous%20violence
 image=http://mtgimage.com/card/gratuitous%20violence.jpg
 value=4.245
 rarity=R

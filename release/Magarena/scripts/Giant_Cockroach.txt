@@ -1,5 +1,5 @@
 name=Giant Cockroach
-url=http://magiccards.info/9e/en/133.html
+url=http://magiccards.info/query?q=%21giant%20cockroach
 image=http://mtgimage.com/card/giant%20cockroach.jpg
 value=1.770
 rarity=C

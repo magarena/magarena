@@ -1,5 +1,5 @@
 name=Restless Bones
-url=http://magiccards.info/gp/en/58.html
+url=http://magiccards.info/query?q=%21restless%20bones
 image=http://mtgimage.com/card/restless%20bones.jpg
 value=1.645
 rarity=C

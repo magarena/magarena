@@ -1,5 +1,5 @@
 name=Elite Javelineer
-url=http://magiccards.info/8e/en/19.html
+url=http://magiccards.info/query?q=%21elite%20javelineer
 image=http://mtgimage.com/card/elite%20javelineer.jpg
 value=3.000
 rarity=U

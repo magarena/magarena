@@ -1,5 +1,5 @@
 name=Woebearer
-url=http://magiccards.info/mi/en/83.html
+url=http://magiccards.info/query?q=%21woebearer
 image=http://mtgimage.com/card/woebearer.jpg
 value=3.833
 rarity=U

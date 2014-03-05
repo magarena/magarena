@@ -1,5 +1,5 @@
 name=Monstrous Carabid
-url=http://magiccards.info/arb/en/43.html
+url=http://magiccards.info/query?q=%21monstrous%20carabid
 image=http://mtgimage.com/card/monstrous%20carabid.jpg
 value=2.192
 rarity=C

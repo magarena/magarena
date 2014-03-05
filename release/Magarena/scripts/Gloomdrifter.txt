@@ -1,5 +1,5 @@
 name=Gloomdrifter
-url=http://magiccards.info/tr/en/61.html
+url=http://magiccards.info/query?q=%21gloomdrifter
 image=http://mtgimage.com/card/gloomdrifter.jpg
 value=3.409
 rarity=U

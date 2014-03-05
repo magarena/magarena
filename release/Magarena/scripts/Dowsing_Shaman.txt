@@ -1,5 +1,5 @@
 name=Dowsing Shaman
-url=http://magiccards.info/pc2/en/63.html
+url=http://magiccards.info/query?q=%21dowsing%20shaman
 image=http://mtgimage.com/card/dowsing%20shaman.jpg
 value=2.977
 rarity=U

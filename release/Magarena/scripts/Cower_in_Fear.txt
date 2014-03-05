@@ -1,5 +1,5 @@
 name=Cower in Fear
-url=http://magiccards.info/m13/en/84.html
+url=http://magiccards.info/query?q=%21cower%20in%20fear
 image=http://mtgimage.com/card/cower%20in%20fear.jpg
 value=2.640
 rarity=U

@@ -1,5 +1,5 @@
 name=Azorius Guildgate
-url=http://magiccards.info/rtr/en/237.html
+url=http://magiccards.info/query?q=%21azorius%20guildgate
 image=http://mtgimage.com/card/azorius%20guildgate.jpg
 value=3.567
 rarity=C

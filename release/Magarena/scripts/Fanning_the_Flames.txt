@@ -1,5 +1,5 @@
 name=Fanning the Flames
-url=http://magiccards.info/sh/en/80.html
+url=http://magiccards.info/query?q=%21fanning%20the%20flames
 image=http://mtgimage.com/card/fanning%20the%20flames.jpg
 value=3.757
 removal=3

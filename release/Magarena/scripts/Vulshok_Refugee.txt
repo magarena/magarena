@@ -1,5 +1,5 @@
 name=Vulshok Refugee
-url=http://magiccards.info/nph/en/101.html
+url=http://magiccards.info/query?q=%21vulshok%20refugee
 image=http://mtgimage.com/card/vulshok%20refugee.jpg
 value=3.247
 ability=protection from red

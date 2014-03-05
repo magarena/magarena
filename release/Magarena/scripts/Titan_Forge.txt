@@ -1,5 +1,5 @@
 name=Titan Forge
-url=http://magiccards.info/mbs/en/141.html
+url=http://magiccards.info/query?q=%21titan%20forge
 image=http://mtgimage.com/card/titan%20forge.jpg
 value=3.484
 rarity=R

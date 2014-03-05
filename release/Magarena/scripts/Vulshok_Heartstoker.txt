@@ -1,5 +1,5 @@
 name=Vulshok Heartstoker
-url=http://magiccards.info/som/en/107.html
+url=http://magiccards.info/query?q=%21vulshok%20heartstoker
 image=http://mtgimage.com/card/vulshok%20heartstoker.jpg
 value=2.333
 rarity=C

@@ -1,5 +1,5 @@
 name=Pillar of Flame
-url=http://magiccards.info/avr/en/149.html
+url=http://magiccards.info/query?q=%21pillar%20of%20flame
 image=http://mtgimage.com/card/pillar%20of%20flame.jpg
 value=3.816
 removal=2

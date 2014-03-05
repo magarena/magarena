@@ -1,5 +1,5 @@
 name=Cackling Fiend
-url=http://magiccards.info/us/en/121.html
+url=http://magiccards.info/query?q=%21cackling%20fiend
 image=http://mtgimage.com/card/cackling%20fiend.jpg
 value=2.540
 rarity=C

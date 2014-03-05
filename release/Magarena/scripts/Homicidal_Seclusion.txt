@@ -1,5 +1,5 @@
 name=Homicidal Seclusion
-url=http://magiccards.info/avr/en/108.html
+url=http://magiccards.info/query?q=%21homicidal%20seclusion
 image=http://mtgimage.com/card/homicidal%20seclusion.jpg
 value=3.091
 rarity=U

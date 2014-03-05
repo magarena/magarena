@@ -1,5 +1,5 @@
 name=Orochi Sustainer
-url=http://magiccards.info/chk/en/236.html
+url=http://magiccards.info/query?q=%21orochi%20sustainer
 image=http://mtgimage.com/card/orochi%20sustainer.jpg
 value=2.518
 rarity=C

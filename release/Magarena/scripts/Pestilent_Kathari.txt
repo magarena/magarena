@@ -1,5 +1,5 @@
 name=Pestilent Kathari
-url=http://magiccards.info/cfx/en/50.html
+url=http://magiccards.info/query?q=%21pestilent%20kathari
 image=http://mtgimage.com/card/pestilent%20kathari.jpg
 value=3.000
 rarity=C

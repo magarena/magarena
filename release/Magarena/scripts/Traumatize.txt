@@ -1,5 +1,5 @@
 name=Traumatize
-url=http://magiccards.info/m14/en/77.html
+url=http://magiccards.info/query?q=%21traumatize
 image=http://mtgimage.com/card/traumatize.jpg
 value=3.727
 rarity=R

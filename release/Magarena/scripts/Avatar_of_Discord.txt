@@ -1,5 +1,5 @@
 name=Avatar of Discord
-url=http://magiccards.info/arc/en/79.html
+url=http://magiccards.info/query?q=%21avatar%20of%20discord
 image=http://mtgimage.com/card/avatar%20of%20discord.jpg
 value=3.844
 rarity=R

@@ -1,5 +1,5 @@
 name=Spell Snare
-url=http://magiccards.info/di/en/33.html
+url=http://magiccards.info/query?q=%21spell%20snare
 image=http://mtgimage.com/card/spell%20snare.jpg
 value=4.417
 rarity=U

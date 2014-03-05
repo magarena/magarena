@@ -1,5 +1,5 @@
 name=Skulking Knight
-url=http://magiccards.info/ts/en/130.html
+url=http://magiccards.info/query?q=%21skulking%20knight
 image=http://mtgimage.com/card/skulking%20knight.jpg
 value=2.730
 rarity=C

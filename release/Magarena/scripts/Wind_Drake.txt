@@ -1,5 +1,5 @@
 name=Wind Drake
-url=http://magiccards.info/m10/en/81.html
+url=http://magiccards.info/query?q=%21wind%20drake
 image=http://mtgimage.com/card/wind%20drake.jpg
 value=2.833
 ability=flying

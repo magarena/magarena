@@ -1,5 +1,5 @@
 name=Carven Caryatid
-url=http://magiccards.info/rav/en/155.html
+url=http://magiccards.info/query?q=%21carven%20caryatid
 image=http://mtgimage.com/card/carven%20caryatid.jpg
 value=4.006
 rarity=U

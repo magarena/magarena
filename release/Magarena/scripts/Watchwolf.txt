@@ -1,5 +1,5 @@
 name=Watchwolf
-url=http://magiccards.info/arc/en/100.html
+url=http://magiccards.info/query?q=%21watchwolf
 image=http://mtgimage.com/card/watchwolf.jpg
 value=4.086
 rarity=U

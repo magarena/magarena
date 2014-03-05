@@ -1,5 +1,5 @@
 name=Soul's Majesty
-url=http://magiccards.info/cfx/en/92.html
+url=http://magiccards.info/query?q=%21soul%27s%20majesty
 image=http://mtgimage.com/card/soul%27s%20majesty.jpg
 value=3.101
 rarity=R

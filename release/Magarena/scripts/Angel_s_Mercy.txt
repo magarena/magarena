@@ -1,5 +1,5 @@
 name=Angel's Mercy
-url=http://magiccards.info/m12/en/4.html
+url=http://magiccards.info/query?q=%21angel%27s%20mercy
 image=http://mtgimage.com/card/angel%27s%20mercy.jpg
 value=1.350
 rarity=C

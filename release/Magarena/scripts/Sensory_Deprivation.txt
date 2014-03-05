@@ -1,5 +1,5 @@
 name=Sensory Deprivation
-url=http://magiccards.info/isd/en/74.html
+url=http://magiccards.info/query?q=%21sensory%20deprivation
 image=http://mtgimage.com/card/sensory%20deprivation.jpg
 value=2.152
 rarity=C

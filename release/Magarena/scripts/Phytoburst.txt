@@ -1,5 +1,5 @@
 name=Phytoburst
-url=http://magiccards.info/dgm/en/46.html
+url=http://magiccards.info/query?q=%21phytoburst
 image=http://mtgimage.com/card/phytoburst.jpg
 value=3.593
 rarity=C

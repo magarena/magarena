@@ -1,5 +1,5 @@
 name=Erase
-url=http://magiccards.info/m13/en/13.html
+url=http://magiccards.info/query?q=%21erase
 image=http://mtgimage.com/card/erase.jpg
 value=4.201
 rarity=C

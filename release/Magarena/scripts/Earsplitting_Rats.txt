@@ -1,5 +1,5 @@
 name=Earsplitting Rats
-url=http://magiccards.info/ju/en/65.html
+url=http://magiccards.info/query?q=%21earsplitting%20rats
 image=http://mtgimage.com/card/earsplitting%20rats.jpg
 value=1.776
 rarity=C

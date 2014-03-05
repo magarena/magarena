@@ -1,5 +1,5 @@
 name=Righteous Fury
-url=http://magiccards.info/st/en/23.html
+url=http://magiccards.info/query?q=%21righteous%20fury
 image=http://mtgimage.com/card/righteous%20fury.jpg
 value=4.136
 rarity=R

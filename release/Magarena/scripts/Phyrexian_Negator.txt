@@ -1,5 +1,5 @@
 name=Phyrexian Negator
-url=http://magiccards.info/pvc/en/1.html
+url=http://magiccards.info/query?q=%21phyrexian%20negator
 image=http://mtgimage.com/card/phyrexian%20negator.jpg
 value=3.697
 rarity=M

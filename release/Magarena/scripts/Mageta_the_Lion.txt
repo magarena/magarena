@@ -1,5 +1,5 @@
 name=Mageta the Lion
-url=http://magiccards.info/pr/en/13.html
+url=http://magiccards.info/query?q=%21mageta%20the%20lion
 image=http://mtgimage.com/card/mageta%20the%20lion.jpg
 value=4.265
 rarity=R

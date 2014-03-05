@@ -1,5 +1,5 @@
 name=Viscid Lemures
-url=http://magiccards.info/ts/en/141.html
+url=http://magiccards.info/query?q=%21viscid%20lemures
 image=http://mtgimage.com/card/viscid%20lemures.jpg
 value=1.957
 rarity=C

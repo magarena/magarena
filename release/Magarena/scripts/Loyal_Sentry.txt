@@ -1,5 +1,5 @@
 name=Loyal Sentry
-url=http://magiccards.info/ddf/en/5.html
+url=http://magiccards.info/query?q=%21loyal%20sentry
 image=http://mtgimage.com/card/loyal%20sentry.jpg
 value=4.292
 rarity=R

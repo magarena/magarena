@@ -1,5 +1,5 @@
 name=Kitesail Apprentice
-url=http://magiccards.info/wwk/en/10.html
+url=http://magiccards.info/query?q=%21kitesail%20apprentice
 image=http://mtgimage.com/card/kitesail%20apprentice.jpg
 value=3.399
 rarity=C

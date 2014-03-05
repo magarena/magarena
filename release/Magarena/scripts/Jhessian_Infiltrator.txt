@@ -1,5 +1,5 @@
 name=Jhessian Infiltrator
-url=http://magiccards.info/ala/en/174.html
+url=http://magiccards.info/query?q=%21jhessian%20infiltrator
 image=http://mtgimage.com/card/jhessian%20infiltrator.jpg
 value=3.730
 rarity=U

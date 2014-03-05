@@ -1,5 +1,5 @@
 name=Maelstrom Wanderer
-url=http://magiccards.info/pc2/en/101.html
+url=http://magiccards.info/query?q=%21maelstrom%20wanderer
 image=http://mtgimage.com/card/maelstrom%20wanderer.jpg
 value=4.092
 rarity=M

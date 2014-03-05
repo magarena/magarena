@@ -1,5 +1,5 @@
 name=Equilibrium
-url=http://magiccards.info/7e/en/71.html
+url=http://magiccards.info/query?q=%21equilibrium
 image=http://mtgimage.com/card/equilibrium.jpg
 value=4.552
 rarity=R

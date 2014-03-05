@@ -1,5 +1,5 @@
 name=Lightning Crafter
-url=http://magiccards.info/mt/en/93.html
+url=http://magiccards.info/query?q=%21lightning%20crafter
 image=http://mtgimage.com/card/lightning%20crafter.jpg
 value=4.221
 removal=2

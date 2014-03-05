@@ -1,5 +1,5 @@
 name=Treetop Sentinel
-url=http://magiccards.info/od/en/111.html
+url=http://magiccards.info/query?q=%21treetop%20sentinel
 image=http://mtgimage.com/card/treetop%20sentinel.jpg
 value=3.053
 ability=flying;protection from green

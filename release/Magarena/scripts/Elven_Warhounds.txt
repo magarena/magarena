@@ -1,5 +1,5 @@
 name=Elven Warhounds
-url=http://magiccards.info/tp/en/119.html
+url=http://magiccards.info/query?q=%21elven%20warhounds
 image=http://mtgimage.com/card/elven%20warhounds.jpg
 value=4.244
 rarity=R

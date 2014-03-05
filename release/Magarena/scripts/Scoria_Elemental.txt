@@ -1,5 +1,5 @@
 name=Scoria Elemental
-url=http://magiccards.info/som/en/102.html
+url=http://magiccards.info/query?q=%21scoria%20elemental
 image=http://mtgimage.com/card/scoria%20elemental.jpg
 value=1.496
 rarity=C

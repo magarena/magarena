@@ -1,5 +1,5 @@
 name=Loxodon Stalwart
-url=http://magiccards.info/5dn/en/11.html
+url=http://magiccards.info/query?q=%21loxodon%20stalwart
 image=http://mtgimage.com/card/loxodon%20stalwart.jpg
 value=2.905
 rarity=U

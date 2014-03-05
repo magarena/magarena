@@ -1,5 +1,5 @@
 name=Salt Flats
-url=http://magiccards.info/tp/en/330.html
+url=http://magiccards.info/query?q=%21salt%20flats
 image=http://mtgimage.com/card/salt%20flats.jpg
 value=2.833
 rarity=R

@@ -1,5 +1,5 @@
 name=Mask of Memory
-url=http://magiccards.info/pch/en/119.html
+url=http://magiccards.info/query?q=%21mask%20of%20memory
 image=http://mtgimage.com/card/mask%20of%20memory.jpg
 value=4.186
 rarity=U

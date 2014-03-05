@@ -1,5 +1,5 @@
 name=Skirk Outrider
-url=http://magiccards.info/le/en/114.html
+url=http://magiccards.info/query?q=%21skirk%20outrider
 image=http://mtgimage.com/card/skirk%20outrider.jpg
 value=2.273
 rarity=C

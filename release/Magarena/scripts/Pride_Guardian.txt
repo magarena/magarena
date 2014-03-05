@@ -1,5 +1,5 @@
 name=Pride Guardian
-url=http://magiccards.info/m12/en/31.html
+url=http://magiccards.info/query?q=%21pride%20guardian
 image=http://mtgimage.com/card/pride%20guardian.jpg
 value=3.157
 rarity=C

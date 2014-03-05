@@ -1,5 +1,5 @@
 name=Frost Marsh
-url=http://magiccards.info/cs/en/146.html
+url=http://magiccards.info/query?q=%21frost%20marsh
 image=http://mtgimage.com/card/frost%20marsh.jpg
 value=3.651
 rarity=U

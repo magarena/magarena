@@ -1,5 +1,5 @@
 name=Memory Lapse
-url=http://magiccards.info/7e/en/88.html
+url=http://magiccards.info/query?q=%21memory%20lapse
 image=http://mtgimage.com/card/memory%20lapse.jpg
 value=4.089
 rarity=C

@@ -1,5 +1,5 @@
 name=Wrath of God
-url=http://magiccards.info/10e/en/61.html
+url=http://magiccards.info/query?q=%21wrath%20of%20god
 image=http://mtgimage.com/card/wrath%20of%20god.jpg
 value=4.542
 removal=2

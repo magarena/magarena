@@ -1,5 +1,5 @@
 name=Talruum Minotaur
-url=http://magiccards.info/6e/en/210.html
+url=http://magiccards.info/query?q=%21talruum%20minotaur
 image=http://mtgimage.com/card/talruum%20minotaur.jpg
 value=3.688
 rarity=C

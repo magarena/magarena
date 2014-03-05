@@ -1,5 +1,5 @@
 name=Unstoppable Ash
-url=http://magiccards.info/mt/en/137.html
+url=http://magiccards.info/query?q=%21unstoppable%20ash
 image=http://mtgimage.com/card/unstoppable%20ash.jpg
 value=4.053
 removal=2

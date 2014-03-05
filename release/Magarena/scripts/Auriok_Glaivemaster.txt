@@ -1,5 +1,5 @@
 name=Auriok Glaivemaster
-url=http://magiccards.info/ds/en/1.html
+url=http://magiccards.info/query?q=%21auriok%20glaivemaster
 image=http://mtgimage.com/card/auriok%20glaivemaster.jpg
 value=3.268
 rarity=C

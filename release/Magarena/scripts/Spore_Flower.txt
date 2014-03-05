@@ -1,5 +1,5 @@
 name=Spore Flower
-url=http://magiccards.info/fe/en/86.html
+url=http://magiccards.info/query?q=%21spore%20flower
 image=http://mtgimage.com/card/spore%20flower.jpg
 value=3.767
 rarity=U

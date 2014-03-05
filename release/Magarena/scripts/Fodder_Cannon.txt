@@ -1,5 +1,5 @@
 name=Fodder Cannon
-url=http://magiccards.info/8e/en/302.html
+url=http://magiccards.info/query?q=%21fodder%20cannon
 image=http://mtgimage.com/card/fodder%20cannon.jpg
 value=4.170
 rarity=U

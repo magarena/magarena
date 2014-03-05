@@ -1,5 +1,5 @@
 name=Daring Skyjek
-url=http://magiccards.info/gtc/en/9.html
+url=http://magiccards.info/query?q=%21daring%20skyjek
 image=http://mtgimage.com/card/daring%20skyjek.jpg
 value=3.345
 rarity=C

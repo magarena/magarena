@@ -1,5 +1,5 @@
 name=Disrupting Scepter
-url=http://magiccards.info/9e/en/295.html
+url=http://magiccards.info/query?q=%21disrupting%20scepter
 image=http://mtgimage.com/card/disrupting%20scepter.jpg
 value=3.094
 rarity=R

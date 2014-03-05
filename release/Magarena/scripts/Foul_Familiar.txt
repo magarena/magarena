@@ -1,5 +1,5 @@
 name=Foul Familiar
-url=http://magiccards.info/me2/en/90.html
+url=http://magiccards.info/query?q=%21foul%20familiar
 image=http://mtgimage.com/card/foul%20familiar.jpg
 value=3.130
 rarity=C

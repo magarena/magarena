@@ -1,5 +1,5 @@
 name=Man-o'-War
-url=http://magiccards.info/jvc/en/8.html
+url=http://magiccards.info/query?q=%21man%2Do%27%2Dwar
 image=http://mtgimage.com/card/man%2Do%27%2Dwar.jpg
 value=4.466
 removal=2

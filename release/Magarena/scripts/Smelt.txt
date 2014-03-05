@@ -1,5 +1,5 @@
 name=Smelt
-url=http://magiccards.info/m13/en/149.html
+url=http://magiccards.info/query?q=%21smelt
 image=http://mtgimage.com/card/smelt.jpg
 value=4.250
 removal=1

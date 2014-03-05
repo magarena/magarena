@@ -1,5 +1,5 @@
 name=Demigod of Revenge
-url=http://magiccards.info/shm/en/183.html
+url=http://magiccards.info/query?q=%21demigod%20of%20revenge
 image=http://mtgimage.com/card/demigod%20of%20revenge.jpg
 value=4.192
 rarity=R

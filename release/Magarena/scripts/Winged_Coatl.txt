@@ -1,5 +1,5 @@
 name=Winged Coatl
-url=http://magiccards.info/arb/en/105.html
+url=http://magiccards.info/query?q=%21winged%20coatl
 image=http://mtgimage.com/card/winged%20coatl.jpg
 value=3.676
 removal=2

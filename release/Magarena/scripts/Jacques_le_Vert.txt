@@ -1,5 +1,5 @@
 name=Jacques le Vert
-url=http://magiccards.info/lg/en/272.html
+url=http://magiccards.info/query?q=%21jacques%20le%20vert
 image=http://mtgimage.com/card/jacques%20le%20vert.jpg
 value=3.574
 rarity=R

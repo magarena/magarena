@@ -1,5 +1,5 @@
 name=Twincast
-url=http://magiccards.info/m10/en/78.html
+url=http://magiccards.info/query?q=%21twincast
 image=http://mtgimage.com/card/twincast.jpg
 value=4.361
 rarity=R

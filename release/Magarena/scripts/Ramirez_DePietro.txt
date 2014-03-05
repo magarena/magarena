@@ -1,5 +1,5 @@
 name=Ramirez DePietro
-url=http://magiccards.info/me3/en/168.html
+url=http://magiccards.info/query?q=%21ramirez%20depietro
 image=http://mtgimage.com/card/ramirez%20depietro.jpg
 value=3.270
 rarity=C

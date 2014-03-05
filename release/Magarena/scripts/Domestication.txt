@@ -1,5 +1,5 @@
 name=Domestication
-url=http://magiccards.info/m14/en/53.html
+url=http://magiccards.info/query?q=%21domestication
 image=http://mtgimage.com/card/domestication.jpg
 value=2.189
 rarity=R

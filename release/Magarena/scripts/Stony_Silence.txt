@@ -1,5 +1,5 @@
 name=Stony Silence
-url=http://magiccards.info/isd/en/36.html
+url=http://magiccards.info/query?q=%21stony%20silence
 image=http://mtgimage.com/card/stony%20silence.jpg
 value=4.227
 rarity=R

@@ -1,5 +1,5 @@
 name=Followed Footsteps
-url=http://magiccards.info/rav/en/51.html
+url=http://magiccards.info/query?q=%21followed%20footsteps
 image=http://mtgimage.com/card/followed%20footsteps.jpg
 value=4.081
 rarity=R

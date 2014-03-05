@@ -1,5 +1,5 @@
 name=Jwar Isle Refuge
-url=http://magiccards.info/cmd/en/279.html
+url=http://magiccards.info/query?q=%21jwar%20isle%20refuge
 image=http://mtgimage.com/card/jwar%20isle%20refuge.jpg
 value=3.357
 rarity=U

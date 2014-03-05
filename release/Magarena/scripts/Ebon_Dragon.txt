@@ -1,5 +1,5 @@
 name=Ebon Dragon
-url=http://magiccards.info/fvd/en/6.html
+url=http://magiccards.info/query?q=%21ebon%20dragon
 image=http://mtgimage.com/card/ebon%20dragon.jpg
 value=3.113
 rarity=R

@@ -1,5 +1,5 @@
 name=Saltfield Recluse
-url=http://magiccards.info/mma/en/27.html
+url=http://magiccards.info/query?q=%21saltfield%20recluse
 image=http://mtgimage.com/card/saltfield%20recluse.jpg
 value=2.150
 rarity=C

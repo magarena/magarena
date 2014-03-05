@@ -1,5 +1,5 @@
 name=Field of Souls
-url=http://magiccards.info/ddk/en/30.html
+url=http://magiccards.info/query?q=%21field%20of%20souls
 image=http://mtgimage.com/card/field%20of%20souls.jpg
 value=3.714
 rarity=R

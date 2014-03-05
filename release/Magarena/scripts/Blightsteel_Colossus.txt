@@ -1,5 +1,5 @@
 name=Blightsteel Colossus
-url=http://magiccards.info/mbs/en/99.html
+url=http://magiccards.info/query?q=%21blightsteel%20colossus
 image=http://mtgimage.com/card/blightsteel%20colossus.jpg
 value=4.099
 rarity=M

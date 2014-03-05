@@ -1,5 +1,5 @@
 name=Troll Ascetic
-url=http://magiccards.info/cmd/en/176.html
+url=http://magiccards.info/query?q=%21troll%20ascetic
 image=http://mtgimage.com/card/troll%20ascetic.jpg
 value=4.425
 rarity=R

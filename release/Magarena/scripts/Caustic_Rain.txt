@@ -1,5 +1,5 @@
 name=Caustic Rain
-url=http://magiccards.info/gp/en/44.html
+url=http://magiccards.info/query?q=%21caustic%20rain
 image=http://mtgimage.com/card/caustic%20rain.jpg
 value=3.059
 rarity=U

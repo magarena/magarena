@@ -1,5 +1,5 @@
 name=Temple of Enlightenment
-url=http://magiccards.info/bng/en/163.html
+url=http://magiccards.info/query?q=%21temple%20of%20enlightenment
 image=http://mtgimage.com/card/temple%20of%20enlightenment.jpg
 value=3.760
 rarity=R

@@ -1,5 +1,5 @@
 name=Guiltfeeder
-url=http://magiccards.info/ju/en/68.html
+url=http://magiccards.info/query?q=%21guiltfeeder
 image=http://mtgimage.com/card/guiltfeeder.jpg
 value=4.328
 rarity=R

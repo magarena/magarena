@@ -1,5 +1,5 @@
 name=Great Sable Stag
-url=http://magiccards.info/m10/en/186.html
+url=http://magiccards.info/query?q=%21great%20sable%20stag
 image=http://mtgimage.com/card/great%20sable%20stag.jpg
 value=4.366
 rarity=R

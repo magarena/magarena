@@ -1,5 +1,5 @@
 name=Combust
-url=http://magiccards.info/m12/en/128.html
+url=http://magiccards.info/query?q=%21combust
 image=http://mtgimage.com/card/combust.jpg
 value=3.236
 removal=4

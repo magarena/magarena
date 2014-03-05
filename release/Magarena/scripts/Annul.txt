@@ -1,5 +1,5 @@
 name=Annul
-url=http://magiccards.info/ths/it/38.html
+url=http://magiccards.info/query?q=%21annul
 image=http://mtgimage.com/card/annul.jpg
 value=3.671
 rarity=C

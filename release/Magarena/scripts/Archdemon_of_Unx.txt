@@ -1,5 +1,5 @@
 name=Archdemon of Unx
-url=http://magiccards.info/ala/en/64.html
+url=http://magiccards.info/query?q=%21archdemon%20of%20unx
 image=http://mtgimage.com/card/archdemon%20of%20unx.jpg
 value=2.961
 rarity=R

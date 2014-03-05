@@ -1,5 +1,5 @@
 name=Stromkirk Captain
-url=http://magiccards.info/dka/en/143.html
+url=http://magiccards.info/query?q=%21stromkirk%20captain
 image=http://mtgimage.com/card/stromkirk%20captain.jpg
 value=3.885
 rarity=U

@@ -1,5 +1,5 @@
 name=Pygmy Pyrosaur
-url=http://magiccards.info/ddi/en/46.html
+url=http://magiccards.info/query?q=%21pygmy%20pyrosaur
 image=http://mtgimage.com/card/pygmy%20pyrosaur.jpg
 value=3.154
 rarity=C

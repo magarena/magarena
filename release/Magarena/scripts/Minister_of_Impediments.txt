@@ -1,5 +1,5 @@
 name=Minister of Impediments
-url=http://magiccards.info/di/en/144.html
+url=http://magiccards.info/query?q=%21minister%20of%20impediments
 image=http://mtgimage.com/card/minister%20of%20impediments.jpg
 value=3.175
 rarity=C

@@ -1,5 +1,5 @@
 name=Draining Whelk
-url=http://magiccards.info/ts/en/57.html
+url=http://magiccards.info/query?q=%21draining%20whelk
 image=http://mtgimage.com/card/draining%20whelk.jpg
 value=4.212
 rarity=R

@@ -1,5 +1,5 @@
 name=Sharding Sphinx
-url=http://magiccards.info/ala/en/55.html
+url=http://magiccards.info/query?q=%21sharding%20sphinx
 image=http://mtgimage.com/card/sharding%20sphinx.jpg
 value=3.583
 rarity=R

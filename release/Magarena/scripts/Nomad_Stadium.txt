@@ -1,5 +1,5 @@
 name=Nomad Stadium
-url=http://magiccards.info/od/en/322.html
+url=http://magiccards.info/query?q=%21nomad%20stadium
 image=http://mtgimage.com/card/nomad%20stadium.jpg
 value=1.000
 rarity=U

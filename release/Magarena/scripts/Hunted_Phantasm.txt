@@ -1,5 +1,5 @@
 name=Hunted Phantasm
-url=http://magiccards.info/rav/en/55.html
+url=http://magiccards.info/query?q=%21hunted%20phantasm
 image=http://mtgimage.com/card/hunted%20phantasm.jpg
 value=3.919
 rarity=R

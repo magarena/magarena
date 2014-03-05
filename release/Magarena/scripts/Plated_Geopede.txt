@@ -1,5 +1,5 @@
 name=Plated Geopede
-url=http://magiccards.info/zen/en/141.html
+url=http://magiccards.info/query?q=%21plated%20geopede
 image=http://mtgimage.com/card/plated%20geopede.jpg
 value=3.855
 rarity=C

@@ -1,5 +1,5 @@
 name=Spike Drone
-url=http://magiccards.info/tp/en/152.html
+url=http://magiccards.info/query?q=%21spike%20drone
 image=http://mtgimage.com/card/spike%20drone.jpg
 value=3.089
 rarity=C

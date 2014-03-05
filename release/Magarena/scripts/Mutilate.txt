@@ -1,5 +1,5 @@
 name=Mutilate
-url=http://magiccards.info/m13/en/102.html
+url=http://magiccards.info/query?q=%21mutilate
 image=http://mtgimage.com/card/mutilate.jpg
 value=4.254
 removal=3

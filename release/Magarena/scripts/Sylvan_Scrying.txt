@@ -1,5 +1,5 @@
 name=Sylvan Scrying
-url=http://magiccards.info/10e/en/302.html
+url=http://magiccards.info/query?q=%21sylvan%20scrying
 image=http://mtgimage.com/card/sylvan%20scrying.jpg
 value=4.315
 rarity=U

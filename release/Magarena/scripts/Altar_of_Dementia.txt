@@ -1,5 +1,5 @@
 name=Altar of Dementia
-url=http://magiccards.info/tp/en/266.html
+url=http://magiccards.info/query?q=%21altar%20of%20dementia
 image=http://mtgimage.com/card/altar%20of%20dementia.jpg
 value=4.599
 rarity=R

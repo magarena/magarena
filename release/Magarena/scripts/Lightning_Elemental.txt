@@ -1,5 +1,5 @@
 name=Lightning Elemental
-url=http://magiccards.info/m12/en/149.html
+url=http://magiccards.info/query?q=%21lightning%20elemental
 image=http://mtgimage.com/card/lightning%20elemental.jpg
 value=3.125
 ability=haste

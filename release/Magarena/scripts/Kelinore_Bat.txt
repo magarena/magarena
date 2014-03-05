@@ -1,5 +1,5 @@
 name=Kelinore Bat
-url=http://magiccards.info/m10/en/101.html
+url=http://magiccards.info/query?q=%21kelinore%20bat
 image=http://mtgimage.com/card/kelinore%20bat.jpg
 value=1.904
 ability=flying

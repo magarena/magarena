@@ -1,5 +1,5 @@
 name=Plated Sliver
-url=http://magiccards.info/le/en/19.html
+url=http://magiccards.info/query?q=%21plated%20sliver
 image=http://mtgimage.com/card/plated%20sliver.jpg
 value=4.058
 rarity=C

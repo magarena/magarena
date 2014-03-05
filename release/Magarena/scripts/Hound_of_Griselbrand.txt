@@ -1,5 +1,5 @@
 name=Hound of Griselbrand
-url=http://magiccards.info/avr/en/141.html
+url=http://magiccards.info/query?q=%21hound%20of%20griselbrand
 image=http://mtgimage.com/card/hound%20of%20griselbrand.jpg
 value=3.876
 rarity=R

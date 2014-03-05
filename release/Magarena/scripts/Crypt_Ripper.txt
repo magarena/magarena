@@ -1,5 +1,5 @@
 name=Crypt Ripper
-url=http://magiccards.info/zen/en/85.html
+url=http://magiccards.info/query?q=%21crypt%20ripper
 image=http://mtgimage.com/card/crypt%20ripper.jpg
 value=3.508
 rarity=C

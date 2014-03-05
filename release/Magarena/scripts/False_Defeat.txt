@@ -1,5 +1,5 @@
 name=False Defeat
-url=http://magiccards.info/me3/en/11.html
+url=http://magiccards.info/query?q=%21false%20defeat
 image=http://mtgimage.com/card/false%20defeat.jpg
 value=4.129
 rarity=U

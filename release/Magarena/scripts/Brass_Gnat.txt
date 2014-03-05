@@ -1,5 +1,5 @@
 name=Brass Gnat
-url=http://magiccards.info/ts/en/249.html
+url=http://magiccards.info/query?q=%21brass%20gnat
 image=http://mtgimage.com/card/brass%20gnat.jpg
 value=1.700
 rarity=C

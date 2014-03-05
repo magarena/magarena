@@ -1,5 +1,5 @@
 name=Smite
-url=http://magiccards.info/roe/en/43.html
+url=http://magiccards.info/query?q=%21smite
 image=http://mtgimage.com/card/smite.jpg
 value=3.958
 removal=3

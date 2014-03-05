@@ -1,5 +1,5 @@
 name=Wydwen, the Biting Gale
-url=http://magiccards.info/lw/en/253.html
+url=http://magiccards.info/query?q=%21wydwen%2C%20the%20biting%20gale
 image=http://mtgimage.com/card/wydwen,%20the%20biting%20gale.jpg
 value=3.397
 rarity=R

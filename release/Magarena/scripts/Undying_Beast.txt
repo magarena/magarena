@@ -1,5 +1,5 @@
 name=Undying Beast
-url=http://magiccards.info/po/en/36.html
+url=http://magiccards.info/query?q=%21undying%20beast
 image=http://mtgimage.com/card/undying%20beast.jpg
 value=2.045
 rarity=C

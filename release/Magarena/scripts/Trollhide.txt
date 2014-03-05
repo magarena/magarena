@@ -1,5 +1,5 @@
 name=Trollhide
-url=http://magiccards.info/m14/en/197.html
+url=http://magiccards.info/query?q=%21trollhide
 image=http://mtgimage.com/card/trollhide.jpg
 value=3.370
 rarity=C

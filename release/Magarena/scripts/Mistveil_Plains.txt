@@ -1,5 +1,5 @@
 name=Mistveil Plains
-url=http://magiccards.info/shm/en/275.html
+url=http://magiccards.info/query?q=%21mistveil%20plains
 image=http://mtgimage.com/card/mistveil%20plains.jpg
 value=3.055
 rarity=U

@@ -1,5 +1,5 @@
 name=Mire Kavu
-url=http://magiccards.info/ps/en/67.html
+url=http://magiccards.info/query?q=%21mire%20kavu
 image=http://mtgimage.com/card/mire%20kavu.jpg
 value=2.706
 rarity=C

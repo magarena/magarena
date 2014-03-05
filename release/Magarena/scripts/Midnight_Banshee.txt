@@ -1,5 +1,5 @@
 name=Midnight Banshee
-url=http://magiccards.info/shm/en/72.html
+url=http://magiccards.info/query?q=%21midnight%20banshee
 image=http://mtgimage.com/card/midnight%20banshee.jpg
 value=4.054
 rarity=R

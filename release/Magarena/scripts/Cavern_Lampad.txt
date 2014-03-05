@@ -1,5 +1,5 @@
 name=Cavern Lampad
-url=http://magiccards.info/ths/en/81.html
+url=http://magiccards.info/query?q=%21cavern%20lampad
 image=http://mtgimage.com/card/cavern%20lampad.jpg
 value=2.986
 rarity=C

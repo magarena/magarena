@@ -1,5 +1,5 @@
 name=Darkslick Drake
-url=http://magiccards.info/som/en/30.html
+url=http://magiccards.info/query?q=%21darkslick%20drake
 image=http://mtgimage.com/card/darkslick%20drake.jpg
 value=3.373
 rarity=U

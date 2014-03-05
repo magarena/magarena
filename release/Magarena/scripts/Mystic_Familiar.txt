@@ -1,5 +1,5 @@
 name=Mystic Familiar
-url=http://magiccards.info/tr/en/11.html
+url=http://magiccards.info/query?q=%21mystic%20familiar
 image=http://mtgimage.com/card/mystic%20familiar.jpg
 value=3.435
 rarity=C

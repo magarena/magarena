@@ -1,5 +1,5 @@
 name=Surgespanner
-url=http://magiccards.info/lw/en/92.html
+url=http://magiccards.info/query?q=%21surgespanner
 image=http://mtgimage.com/card/surgespanner.jpg
 value=3.656
 rarity=R

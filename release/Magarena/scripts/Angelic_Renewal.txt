@@ -1,5 +1,5 @@
 name=Angelic Renewal
-url=http://magiccards.info/wl/en/120.html
+url=http://magiccards.info/query?q=%21angelic%20renewal
 image=http://mtgimage.com/card/angelic%20renewal.jpg
 value=4.492
 rarity=C

@@ -1,5 +1,5 @@
 name=Angelheart Vial
-url=http://magiccards.info/roe/en/215.html
+url=http://magiccards.info/query?q=%21angelheart%20vial
 image=http://mtgimage.com/card/angelheart%20vial.jpg
 value=2.701
 rarity=R

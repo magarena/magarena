@@ -1,5 +1,5 @@
 name=Whitesun's Passage
-url=http://magiccards.info/som/en/27.html
+url=http://magiccards.info/query?q=%21whitesun%27s%20passage
 image=http://mtgimage.com/card/whitesun%27s%20passage.jpg
 value=2.216
 rarity=C

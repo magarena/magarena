@@ -1,5 +1,5 @@
 name=Cloudchaser Eagle
-url=http://magiccards.info/7e/en/11.html
+url=http://magiccards.info/query?q=%21cloudchaser%20eagle
 image=http://mtgimage.com/card/cloudchaser%20eagle.jpg
 value=3.167
 rarity=C

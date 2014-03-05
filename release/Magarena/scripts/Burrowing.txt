@@ -1,5 +1,5 @@
 name=Burrowing
-url=http://magiccards.info/ced/en/140.html
+url=http://magiccards.info/query?q=%21burrowing
 image=http://mtgimage.com/card/burrowing.jpg
 value=1.634
 rarity=U

@@ -1,5 +1,5 @@
 name=Arrest
-url=http://magiccards.info/rtr/en/3.html
+url=http://magiccards.info/query?q=%21arrest
 image=http://mtgimage.com/card/arrest.jpg
 value=3.959
 rarity=U

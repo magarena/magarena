@@ -1,5 +1,5 @@
 name=Kiki-Jiki, Mirror Breaker
-url=http://magiccards.info/fvl/en/4.html
+url=http://magiccards.info/query?q=%21kiki%2Djiki%2C%20mirror%20breaker
 image=http://mtgimage.com/card/kiki%2Djiki%2C%20mirror%20breaker.jpg
 value=4.361
 rarity=R

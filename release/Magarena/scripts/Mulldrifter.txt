@@ -1,5 +1,5 @@
 name=Mulldrifter
-url=http://magiccards.info/lw/en/76.html
+url=http://magiccards.info/query?q=%21mulldrifter
 image=http://mtgimage.com/card/mulldrifter.jpg
 value=4.303
 rarity=C

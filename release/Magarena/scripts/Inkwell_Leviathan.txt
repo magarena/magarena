@@ -1,5 +1,5 @@
 name=Inkwell Leviathan
-url=http://magiccards.info/cfx/en/30.html
+url=http://magiccards.info/query?q=%21inkwell%20leviathan
 image=http://mtgimage.com/card/inkwell%20leviathan.jpg
 value=4.611
 ability=islandwalk;trample;shroud

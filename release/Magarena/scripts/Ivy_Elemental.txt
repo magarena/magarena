@@ -1,5 +1,5 @@
 name=Ivy Elemental
-url=http://magiccards.info/pch/en/74.html
+url=http://magiccards.info/query?q=%21ivy%20elemental
 image=http://mtgimage.com/card/ivy%20elemental.jpg
 value=3.356
 rarity=R

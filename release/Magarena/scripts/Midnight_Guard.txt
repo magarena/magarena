@@ -1,5 +1,5 @@
 name=Midnight Guard
-url=http://magiccards.info/dka/en/14.html
+url=http://magiccards.info/query?q=%21midnight%20guard
 image=http://mtgimage.com/card/midnight%20guard.jpg
 value=3.356
 rarity=C

@@ -1,5 +1,5 @@
 name=Kranioceros
-url=http://magiccards.info/cfx/en/67.html
+url=http://magiccards.info/query?q=%21kranioceros
 image=http://mtgimage.com/card/kranioceros.jpg
 value=2.078
 rarity=C

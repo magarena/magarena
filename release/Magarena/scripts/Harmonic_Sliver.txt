@@ -1,5 +1,5 @@
 name=Harmonic Sliver
-url=http://magiccards.info/ts/en/240.html
+url=http://magiccards.info/query?q=%21harmonic%20sliver
 image=http://mtgimage.com/card/harmonic%20sliver.jpg
 value=4.358
 rarity=U

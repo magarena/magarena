@@ -1,5 +1,5 @@
 name=Compulsion
-url=http://magiccards.info/tr/en/34.html
+url=http://magiccards.info/query?q=%21compulsion
 image=http://mtgimage.com/card/compulsion.jpg
 value=4.134
 rarity=U

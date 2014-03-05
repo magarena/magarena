@@ -1,5 +1,5 @@
 name=Blighted Agent
-url=http://magiccards.info/nph/en/29.html
+url=http://magiccards.info/query?q=%21blighted%20agent
 image=http://mtgimage.com/card/blighted%20agent.jpg
 value=3.808
 rarity=C

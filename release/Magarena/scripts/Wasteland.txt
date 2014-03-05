@@ -1,5 +1,5 @@
 name=Wasteland
-url=http://magiccards.info/tp/en/340.html
+url=http://magiccards.info/query?q=%21wasteland
 image=http://mtgimage.com/card/wasteland.jpg
 value=4.621
 rarity=U

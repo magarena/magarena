@@ -1,5 +1,5 @@
 name=Scepter of Insight
-url=http://magiccards.info/cfx/en/33.html
+url=http://magiccards.info/query?q=%21scepter%20of%20insight
 image=http://mtgimage.com/card/scepter%20of%20insight.jpg
 value=2.550
 rarity=R

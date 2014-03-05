@@ -1,5 +1,5 @@
 name=Plague Dogs
-url=http://magiccards.info/ud/en/66.html
+url=http://magiccards.info/query?q=%21plague%20dogs
 image=http://mtgimage.com/card/plague%20dogs.jpg
 value=3.485
 rarity=U

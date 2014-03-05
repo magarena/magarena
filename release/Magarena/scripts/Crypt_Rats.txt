@@ -1,5 +1,5 @@
 name=Crypt Rats
-url=http://magiccards.info/7e/en/125.html
+url=http://magiccards.info/query?q=%21crypt%20rats
 image=http://mtgimage.com/card/crypt%20rats.jpg
 value=4.255
 rarity=U

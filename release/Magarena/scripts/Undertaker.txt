@@ -1,5 +1,5 @@
 name=Undertaker
-url=http://magiccards.info/tsts/en/53.html
+url=http://magiccards.info/query?q=%21undertaker
 image=http://mtgimage.com/card/undertaker.jpg
 value=4.023
 rarity=C

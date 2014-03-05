@@ -1,5 +1,5 @@
 name=Rootwater Diver
-url=http://magiccards.info/tp/en/81.html
+url=http://magiccards.info/query?q=%21rootwater%20diver
 image=http://mtgimage.com/card/rootwater%20diver.jpg
 value=3.833
 rarity=U

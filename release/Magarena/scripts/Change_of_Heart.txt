@@ -1,5 +1,5 @@
 name=Change of Heart
-url=http://magiccards.info/sh/en/103.html
+url=http://magiccards.info/query?q=%21change%20of%20heart
 image=http://mtgimage.com/card/change%20of%20heart.jpg
 value=3.419
 rarity=C

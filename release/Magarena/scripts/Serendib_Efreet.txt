@@ -1,5 +1,5 @@
 name=Serendib Efreet
-url=http://magiccards.info/fve/en/11.html
+url=http://magiccards.info/query?q=%21serendib%20efreet
 image=http://mtgimage.com/card/serendib%20efreet.jpg
 value=4.395
 rarity=R

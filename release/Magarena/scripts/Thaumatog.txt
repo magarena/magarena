@@ -1,5 +1,5 @@
 name=Thaumatog
-url=http://magiccards.info/od/en/295.html
+url=http://magiccards.info/query?q=%21thaumatog
 image=http://mtgimage.com/card/thaumatog.jpg
 value=2.531
 rarity=U

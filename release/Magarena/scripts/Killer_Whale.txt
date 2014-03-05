@@ -1,5 +1,5 @@
 name=Killer Whale
-url=http://magiccards.info/bd/en/11.html
+url=http://magiccards.info/query?q=%21killer%20whale
 image=http://mtgimage.com/card/killer%20whale.jpg
 value=3.364
 rarity=U

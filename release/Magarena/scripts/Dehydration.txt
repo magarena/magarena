@@ -1,5 +1,5 @@
 name=Dehydration
-url=http://magiccards.info/10e/en/78.html
+url=http://magiccards.info/query?q=%21dehydration
 image=http://mtgimage.com/card/dehydration.jpg
 value=2.078
 rarity=C

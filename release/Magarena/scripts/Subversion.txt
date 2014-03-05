@@ -1,5 +1,5 @@
 name=Subversion
-url=http://magiccards.info/ul/en/68.html
+url=http://magiccards.info/query?q=%21subversion
 image=http://mtgimage.com/card/subversion.jpg
 value=4.016
 rarity=R

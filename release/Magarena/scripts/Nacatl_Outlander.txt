@@ -1,5 +1,5 @@
 name=Nacatl Outlander
-url=http://magiccards.info/cfx/en/119.html
+url=http://magiccards.info/query?q=%21nacatl%20outlander
 image=http://mtgimage.com/card/nacatl%20outlander.jpg
 value=2.827
 ability=protection from blue

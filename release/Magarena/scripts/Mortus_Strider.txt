@@ -1,5 +1,5 @@
 name=Mortus Strider
-url=http://magiccards.info/gtc/en/179.html
+url=http://magiccards.info/query?q=%21mortus%20strider
 image=http://mtgimage.com/card/mortus%20strider.jpg
 value=3.070
 rarity=C

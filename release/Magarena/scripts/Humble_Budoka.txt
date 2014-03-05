@@ -1,5 +1,5 @@
 name=Humble Budoka
-url=http://magiccards.info/chk/en/214.html
+url=http://magiccards.info/query?q=%21humble%20budoka
 image=http://mtgimage.com/card/humble%20budoka.jpg
 value=3.480
 ability=shroud

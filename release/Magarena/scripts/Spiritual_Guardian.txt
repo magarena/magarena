@@ -1,5 +1,5 @@
 name=Spiritual Guardian
-url=http://magiccards.info/po/en/189.html
+url=http://magiccards.info/query?q=%21spiritual%20guardian
 image=http://mtgimage.com/card/spiritual%20guardian.jpg
 value=2.824
 rarity=R

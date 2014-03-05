@@ -1,5 +1,5 @@
 name=Disempower
-url=http://magiccards.info/mr/en/213.html
+url=http://magiccards.info/query?q=%21disempower
 image=http://mtgimage.com/card/disempower.jpg
 value=3.420
 rarity=C

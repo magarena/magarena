@@ -1,5 +1,5 @@
 name=Arcbound Worker
-url=http://magiccards.info/ddf/en/40.html
+url=http://magiccards.info/query?q=%21arcbound%20worker
 image=http://mtgimage.com/card/arcbound%20worker.jpg
 value=3.955
 rarity=C

@@ -1,5 +1,5 @@
 name=Vandalblast
-url=http://magiccards.info/rtr/en/111.html
+url=http://magiccards.info/query?q=%21vandalblast
 image=http://mtgimage.com/card/vandalblast.jpg
 value=3.781
 rarity=U

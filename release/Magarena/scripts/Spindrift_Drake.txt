@@ -1,5 +1,5 @@
 name=Spindrift Drake
-url=http://magiccards.info/sh/en/44.html
+url=http://magiccards.info/query?q=%21spindrift%20drake
 image=http://mtgimage.com/card/spindrift%20drake.jpg
 value=3.420
 rarity=C

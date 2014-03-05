@@ -1,5 +1,5 @@
 name=Aura Blast
-url=http://magiccards.info/ps/en/1.html
+url=http://magiccards.info/query?q=%21aura%20blast
 image=http://mtgimage.com/card/aura%20blast.jpg
 value=3.197
 rarity=C

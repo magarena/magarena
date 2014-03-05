@@ -1,5 +1,5 @@
 name=Inferno Elemental
-url=http://magiccards.info/m10/en/142.html
+url=http://magiccards.info/query?q=%21inferno%20elemental
 image=http://mtgimage.com/card/inferno%20elemental.jpg
 value=3.094
 rarity=U

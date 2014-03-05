@@ -1,5 +1,5 @@
 name=Wirewood Savage
-url=http://magiccards.info/gvl/en/6.html
+url=http://magiccards.info/query?q=%21wirewood%20savage
 image=http://mtgimage.com/card/wirewood%20savage.jpg
 value=4.085
 rarity=C

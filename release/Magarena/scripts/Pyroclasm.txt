@@ -1,5 +1,5 @@
 name=Pyroclasm
-url=http://magiccards.info/m11/en/154.html
+url=http://magiccards.info/query?q=%21pyroclasm
 image=http://mtgimage.com/card/pyroclasm.jpg
 value=4.589
 removal=2

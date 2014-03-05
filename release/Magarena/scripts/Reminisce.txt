@@ -1,5 +1,5 @@
 name=Reminisce
-url=http://magiccards.info/10e/en/99.html
+url=http://magiccards.info/query?q=%21reminisce
 image=http://mtgimage.com/card/reminisce.jpg
 value=3.533
 rarity=U

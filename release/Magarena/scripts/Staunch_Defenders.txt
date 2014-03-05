@@ -1,5 +1,5 @@
 name=Staunch Defenders
-url=http://magiccards.info/8e/en/49.html
+url=http://magiccards.info/query?q=%21staunch%20defenders
 image=http://mtgimage.com/card/staunch%20defenders.jpg
 value=3.180
 rarity=U

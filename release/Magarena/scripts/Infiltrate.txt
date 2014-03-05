@@ -1,5 +1,5 @@
 name=Infiltrate
-url=http://magiccards.info/ne/en/33.html
+url=http://magiccards.info/query?q=%21infiltrate
 image=http://mtgimage.com/card/infiltrate.jpg
 value=3.155
 rarity=C

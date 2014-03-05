@@ -1,5 +1,5 @@
 name=Werebear
-url=http://magiccards.info/od/en/282.html
+url=http://magiccards.info/query?q=%21werebear
 image=http://mtgimage.com/card/werebear.jpg
 value=4.552
 rarity=C

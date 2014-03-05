@@ -1,5 +1,5 @@
 name=Heart Sliver
-url=http://magiccards.info/pds/en/7.html
+url=http://magiccards.info/query?q=%21heart%20sliver
 image=http://mtgimage.com/card/heart%20sliver.jpg
 value=4.433
 rarity=C

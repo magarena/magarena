@@ -1,5 +1,5 @@
 name=Thunder-Thrash Elder
-url=http://magiccards.info/pc2/en/53.html
+url=http://magiccards.info/query?q=%21thunder%2Dthrash%20elder
 image=http://mtgimage.com/card/thunder%2Dthrash%20elder.jpg
 value=2.737
 rarity=U

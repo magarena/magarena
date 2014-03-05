@@ -1,5 +1,5 @@
 name=Vampire Aristocrat
-url=http://magiccards.info/m10/en/117.html
+url=http://magiccards.info/query?q=%21vampire%20aristocrat
 image=http://mtgimage.com/card/vampire%20aristocrat.jpg
 value=3.445
 rarity=C

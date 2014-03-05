@@ -1,5 +1,5 @@
 name=Ant Queen
-url=http://magiccards.info/m10/en/166.html
+url=http://magiccards.info/query?q=%21ant%20queen
 image=http://mtgimage.com/card/ant%20queen.jpg
 value=4.097
 rarity=R

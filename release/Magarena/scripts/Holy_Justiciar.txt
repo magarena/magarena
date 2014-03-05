@@ -1,5 +1,5 @@
 name=Holy Justiciar
-url=http://magiccards.info/avr/en/25.html
+url=http://magiccards.info/query?q=%21holy%20justiciar
 image=http://mtgimage.com/card/holy%20justiciar.jpg
 value=1.487
 rarity=U

@@ -1,5 +1,5 @@
 name=Pteron Ghost
-url=http://magiccards.info/ds/en/10.html
+url=http://magiccards.info/query?q=%21pteron%20ghost
 image=http://mtgimage.com/card/pteron%20ghost.jpg
 value=2.351
 rarity=C

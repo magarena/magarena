@@ -1,5 +1,5 @@
 name=Vines of Vastwood
-url=http://magiccards.info/zen/en/193.html
+url=http://magiccards.info/query?q=%21vines%20of%20vastwood
 image=http://mtgimage.com/card/vines%20of%20vastwood.jpg
 value=4.331
 rarity=C

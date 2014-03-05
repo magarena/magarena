@@ -1,5 +1,5 @@
 name=Regress
-url=http://magiccards.info/roe/en/83.html
+url=http://magiccards.info/query?q=%21regress
 image=http://mtgimage.com/card/regress.jpg
 value=2.667
 rarity=C

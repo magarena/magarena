@@ -1,5 +1,5 @@
 name=Disruptive Student
-url=http://magiccards.info/br/en/21.html
+url=http://magiccards.info/query?q=%21disruptive%20student
 image=http://mtgimage.com/card/disruptive%20student.jpg
 value=4.127
 rarity=C

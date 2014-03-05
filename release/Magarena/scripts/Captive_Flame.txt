@@ -1,5 +1,5 @@
 name=Captive Flame
-url=http://magiccards.info/ddg/en/68.html
+url=http://magiccards.info/query?q=%21captive%20flame
 image=http://mtgimage.com/card/captive%20flame.jpg
 value=3.592
 rarity=U

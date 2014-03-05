@@ -1,5 +1,5 @@
 name=Stinging Barrier
-url=http://magiccards.info/mm/en/107.html
+url=http://magiccards.info/query?q=%21stinging%20barrier
 image=http://mtgimage.com/card/stinging%20barrier.jpg
 value=3.333
 rarity=C

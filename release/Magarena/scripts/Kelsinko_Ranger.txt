@@ -1,5 +1,5 @@
 name=Kelsinko Ranger
-url=http://magiccards.info/ia/en/257.html
+url=http://magiccards.info/query?q=%21kelsinko%20ranger
 image=http://mtgimage.com/card/kelsinko%20ranger.jpg
 value=2.419
 rarity=C

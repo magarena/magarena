@@ -1,5 +1,5 @@
 name=Repel
-url=http://magiccards.info/od/pt/98.html
+url=http://magiccards.info/query?q=%21repel
 image=http://mtgimage.com/card/repel.jpg
 value=2.173
 rarity=C

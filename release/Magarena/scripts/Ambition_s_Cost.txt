@@ -1,5 +1,5 @@
 name=Ambition's Cost
-url=http://magiccards.info/8e/en/118.html
+url=http://magiccards.info/query?q=%21ambition%27s%20cost
 image=http://mtgimage.com/card/ambition%27s%20cost.jpg
 value=3.581
 rarity=U

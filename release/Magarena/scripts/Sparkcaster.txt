@@ -1,5 +1,5 @@
 name=Sparkcaster
-url=http://magiccards.info/ps/en/126.html
+url=http://magiccards.info/query?q=%21sparkcaster
 image=http://mtgimage.com/card/sparkcaster.jpg
 value=3.776
 rarity=U

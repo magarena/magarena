@@ -1,5 +1,5 @@
 name=Blanchwood Armor
-url=http://magiccards.info/9e/en/232.html
+url=http://magiccards.info/query?q=%21blanchwood%20armor
 image=http://mtgimage.com/card/blanchwood%20armor.jpg
 value=4.435
 rarity=U

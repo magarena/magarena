@@ -1,5 +1,5 @@
 name=Savannah Lions
-url=http://magiccards.info/me4/en/24.html
+url=http://magiccards.info/query?q=%21savannah%20lions
 image=http://mtgimage.com/card/savannah%20lions.jpg
 value=4.051
 rarity=U

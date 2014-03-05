@@ -1,5 +1,5 @@
 name=Hellhole Flailer
-url=http://magiccards.info/rtr/en/167.html
+url=http://magiccards.info/query?q=%21hellhole%20flailer
 image=http://mtgimage.com/card/hellhole%20flailer.jpg
 value=3.810
 rarity=U

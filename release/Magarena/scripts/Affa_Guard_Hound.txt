@@ -1,5 +1,5 @@
 name=Affa Guard Hound
-url=http://magiccards.info/roe/en/14.html
+url=http://magiccards.info/query?q=%21affa%20guard%20hound
 image=http://mtgimage.com/card/affa%20guard%20hound.jpg
 value=2.976
 rarity=U

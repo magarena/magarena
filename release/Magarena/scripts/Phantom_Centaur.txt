@@ -1,5 +1,5 @@
 name=Phantom Centaur
-url=http://magiccards.info/ju/en/127.html
+url=http://magiccards.info/query?q=%21phantom%20centaur
 image=http://mtgimage.com/card/phantom%20centaur.jpg
 value=4.448
 rarity=U

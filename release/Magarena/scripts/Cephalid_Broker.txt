@@ -1,5 +1,5 @@
 name=Cephalid Broker
-url=http://magiccards.info/od/en/71.html
+url=http://magiccards.info/query?q=%21cephalid%20broker
 image=http://mtgimage.com/card/cephalid%20broker.jpg
 value=3.579
 rarity=U

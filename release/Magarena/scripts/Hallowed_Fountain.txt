@@ -1,5 +1,5 @@
 name=Hallowed Fountain
-url=http://magiccards.info/di/en/174.html
+url=http://magiccards.info/query?q=%21hallowed%20fountain
 image=http://mtgimage.com/card/hallowed%20fountain.jpg
 value=4.298
 rarity=R

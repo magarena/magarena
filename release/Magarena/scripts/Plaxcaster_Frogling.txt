@@ -1,5 +1,5 @@
 name=Plaxcaster Frogling
-url=http://magiccards.info/di/en/123.html
+url=http://magiccards.info/query?q=%21plaxcaster%20frogling
 image=http://mtgimage.com/card/plaxcaster%20frogling.jpg
 value=4.038
 rarity=U

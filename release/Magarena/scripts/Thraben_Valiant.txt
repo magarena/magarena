@@ -1,5 +1,5 @@
 name=Thraben Valiant
-url=http://magiccards.info/avr/en/39.html
+url=http://magiccards.info/query?q=%21thraben%20valiant
 image=http://mtgimage.com/card/thraben%20valiant.jpg
 value=2.727
 rarity=C

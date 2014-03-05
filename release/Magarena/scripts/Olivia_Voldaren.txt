@@ -1,5 +1,5 @@
 name=Olivia Voldaren
-url=http://magiccards.info/isd/en/215.html
+url=http://magiccards.info/query?q=%21olivia%20voldaren
 image=http://mtgimage.com/card/olivia%20voldaren.jpg
 value=3.959
 rarity=M

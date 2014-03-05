@@ -1,5 +1,5 @@
 name=Immolation
-url=http://magiccards.info/4e/en/222.html
+url=http://magiccards.info/query?q=%21immolation
 image=http://mtgimage.com/card/immolation.jpg
 value=3.407
 rarity=C

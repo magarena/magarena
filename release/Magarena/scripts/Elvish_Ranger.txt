@@ -1,5 +1,5 @@
 name=Elvish Ranger
-url=http://magiccards.info/me2/en/158.html
+url=http://magiccards.info/query?q=%21elvish%20ranger
 image=http://mtgimage.com/card/elvish%20ranger.jpg
 value=2.456
 rarity=C

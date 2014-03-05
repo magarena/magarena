@@ -1,5 +1,5 @@
 name=Shriek of Dread
-url=http://magiccards.info/ps/en/53.html
+url=http://magiccards.info/query?q=%21shriek%20of%20dread
 image=http://mtgimage.com/card/shriek%20of%20dread.jpg
 value=2.036
 rarity=C

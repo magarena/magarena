@@ -1,5 +1,5 @@
 name=Sigil of the Empty Throne
-url=http://magiccards.info/pc2/en/11.html
+url=http://magiccards.info/query?q=%21sigil%20of%20the%20empty%20throne
 image=http://mtgimage.com/card/sigil%20of%20the%20empty%20throne.jpg
 value=4.064
 rarity=R

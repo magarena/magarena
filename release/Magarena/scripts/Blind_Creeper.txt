@@ -1,5 +1,5 @@
 name=Blind Creeper
-url=http://magiccards.info/5dn/en/42.html
+url=http://magiccards.info/query?q=%21blind%20creeper
 image=http://mtgimage.com/card/blind%20creeper.jpg
 value=2.949
 rarity=C

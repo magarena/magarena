@@ -1,5 +1,5 @@
 name=Corpse Dance
-url=http://magiccards.info/tp/en/10.html
+url=http://magiccards.info/query?q=%21corpse%20dance
 image=http://mtgimage.com/card/corpse%20dance.jpg
 value=4.060
 rarity=R

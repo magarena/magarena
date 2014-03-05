@@ -1,5 +1,5 @@
 name=Raised by Wolves
-url=http://magiccards.info/bng/en/135.html
+url=http://magiccards.info/query?q=%21raised%20by%20wolves
 image=http://mtgimage.com/card/raised%20by%20wolves.jpg
 value=4.25
 rarity=U

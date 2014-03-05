@@ -1,5 +1,5 @@
 name=Dawnfluke
-url=http://magiccards.info/lw/en/12.html
+url=http://magiccards.info/query?q=%21dawnfluke
 image=http://mtgimage.com/card/dawnfluke.jpg
 value=2.628
 rarity=C

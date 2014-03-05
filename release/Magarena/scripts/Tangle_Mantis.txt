@@ -1,5 +1,5 @@
 name=Tangle Mantis
-url=http://magiccards.info/mbs/en/91.html
+url=http://magiccards.info/query?q=%21tangle%20mantis
 image=http://mtgimage.com/card/tangle%20mantis.jpg
 value=2.959
 ability=trample

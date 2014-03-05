@@ -1,5 +1,5 @@
 name=Knight of Meadowgrain
-url=http://magiccards.info/ddg/en/5.html
+url=http://magiccards.info/query?q=%21knight%20of%20meadowgrain
 image=http://mtgimage.com/card/knight%20of%20meadowgrain.jpg
 value=4.077
 rarity=U

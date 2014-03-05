@@ -1,5 +1,5 @@
 name=Last Gasp
-url=http://magiccards.info/rav/en/93.html
+url=http://magiccards.info/query?q=%21last%20gasp
 image=http://mtgimage.com/card/last%20gasp.jpg
 value=4.048
 removal=2

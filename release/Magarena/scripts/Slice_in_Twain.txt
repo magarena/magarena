@@ -1,5 +1,5 @@
 name=Slice in Twain
-url=http://magiccards.info/c13/en/170.html
+url=http://magiccards.info/query?q=%21slice%20in%20twain
 image=http://mtgimage.com/card/slice%20in%20twain.jpg
 value=3.722
 rarity=U

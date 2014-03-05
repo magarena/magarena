@@ -1,5 +1,5 @@
 name=Sigiled Behemoth
-url=http://magiccards.info/arb/en/79.html
+url=http://magiccards.info/query?q=%21sigiled%20behemoth
 image=http://mtgimage.com/card/sigiled%20behemoth.jpg
 value=2.158
 ability=exalted

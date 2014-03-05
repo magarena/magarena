@@ -1,5 +1,5 @@
 name=Shifting Sliver
-url=http://magiccards.info/le/en/52.html
+url=http://magiccards.info/query?q=%21shifting%20sliver
 image=http://mtgimage.com/card/shifting%20sliver.jpg
 value=4.454
 rarity=U

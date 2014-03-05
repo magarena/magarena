@@ -1,5 +1,5 @@
 name=Kargan Dragonlord
-url=http://magiccards.info/roe/en/152.html
+url=http://magiccards.info/query?q=%21kargan%20dragonlord
 image=http://mtgimage.com/card/kargan%20dragonlord.jpg
 value=4.387
 rarity=M

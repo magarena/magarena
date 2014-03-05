@@ -1,5 +1,5 @@
 name=Restoration Angel
-url=http://magiccards.info/avr/en/32.html
+url=http://magiccards.info/query?q=%21restoration%20angel
 image=http://mtgimage.com/card/restoration%20angel.jpg
 value=4.447
 rarity=R

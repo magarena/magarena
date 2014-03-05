@@ -1,5 +1,5 @@
 name=Eladamri, Lord of Leaves
-url=http://magiccards.info/tp/en/117.html
+url=http://magiccards.info/query?q=%21eladamri%2C%20lord%20of%20leaves
 image=http://mtgimage.com/card/eladamri%2C%20lord%20of%20leaves.jpg
 value=4.237
 rarity=R

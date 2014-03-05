@@ -1,5 +1,5 @@
 name=Caribou Range
-url=http://magiccards.info/5e/en/290.html
+url=http://magiccards.info/query?q=%21caribou%20range
 image=http://mtgimage.com/card/caribou%20range.jpg
 value=3.265
 rarity=R

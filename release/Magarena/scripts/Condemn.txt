@@ -1,5 +1,5 @@
 name=Condemn
-url=http://magiccards.info/m11/en/11.html
+url=http://magiccards.info/query?q=%21condemn
 image=http://mtgimage.com/card/condemn.jpg
 value=4.406
 removal=3

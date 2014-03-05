@@ -1,5 +1,5 @@
 name=Dread
-url=http://magiccards.info/lw/en/107.html
+url=http://magiccards.info/query?q=%21dread
 image=http://mtgimage.com/card/dread.jpg
 value=4.417
 rarity=R

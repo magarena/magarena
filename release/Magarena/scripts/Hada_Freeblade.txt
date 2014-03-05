@@ -1,5 +1,5 @@
 name=Hada Freeblade
-url=http://magiccards.info/wwk/en/7.html
+url=http://magiccards.info/query?q=%21hada%20freeblade
 image=http://mtgimage.com/card/hada%20freeblade.jpg
 value=4.272
 rarity=U

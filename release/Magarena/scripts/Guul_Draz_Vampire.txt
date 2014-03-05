@@ -1,5 +1,5 @@
 name=Guul Draz Vampire
-url=http://magiccards.info/zen/en/93.html
+url=http://magiccards.info/query?q=%21guul%20draz%20vampire
 image=http://mtgimage.com/card/guul%20draz%20vampire.jpg
 value=4.040
 rarity=C

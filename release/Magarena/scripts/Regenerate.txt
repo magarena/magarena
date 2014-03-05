@@ -1,5 +1,5 @@
 name=Regenerate
-url=http://magiccards.info/m10/en/202.html
+url=http://magiccards.info/query?q=%21regenerate
 image=http://mtgimage.com/card/regenerate.jpg
 value=1.204
 rarity=C

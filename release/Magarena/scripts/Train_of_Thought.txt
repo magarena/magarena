@@ -1,5 +1,5 @@
 name=Train of Thought
-url=http://magiccards.info/gp/en/39.html
+url=http://magiccards.info/query?q=%21train%20of%20thought
 image=http://mtgimage.com/card/train%20of%20thought.jpg
 value=3.450
 rarity=C

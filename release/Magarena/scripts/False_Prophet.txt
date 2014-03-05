@@ -1,5 +1,5 @@
 name=False Prophet
-url=http://magiccards.info/cmd/en/13.html
+url=http://magiccards.info/query?q=%21false%20prophet
 image=http://mtgimage.com/card/false%20prophet.jpg
 value=4.256
 rarity=R

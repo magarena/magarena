@@ -1,5 +1,5 @@
 name=Vesper Ghoul
-url=http://magiccards.info/di/en/57.html
+url=http://magiccards.info/query?q=%21vesper%20ghoul
 image=http://mtgimage.com/card/vesper%20ghoul.jpg
 value=1.946
 rarity=C

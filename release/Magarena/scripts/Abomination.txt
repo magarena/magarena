@@ -1,5 +1,5 @@
 name=Abomination
-url=http://magiccards.info/4e/en/1.html
+url=http://magiccards.info/query?q=%21abomination
 image=http://mtgimage.com/card/abomination.jpg
 value=2.830
 rarity=U

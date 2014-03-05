@@ -1,5 +1,5 @@
 name=Hero's Demise
-url=http://magiccards.info/bok/en/68.html
+url=http://magiccards.info/query?q=%21hero%27s%20demise
 image=http://mtgimage.com/card/hero's%20demise.jpg
 value=2.556
 rarity=R

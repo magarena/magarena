@@ -1,5 +1,5 @@
 name=Izzet Guildgate
-url=http://magiccards.info/rtr/en/242.html
+url=http://magiccards.info/query?q=%21izzet%20guildgate
 image=http://mtgimage.com/card/izzet%20guildgate.jpg
 value=3.056
 rarity=C

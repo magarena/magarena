@@ -1,5 +1,5 @@
 name=Amok
-url=http://magiccards.info/sh/en/76.html
+url=http://magiccards.info/query?q=%21amok
 image=http://mtgimage.com/card/amok.jpg
 value=2.467
 rarity=R

@@ -1,5 +1,5 @@
 name=Hapless Researcher
-url=http://magiccards.info/ju/en/42.html
+url=http://magiccards.info/query?q=%21hapless%20researcher
 image=http://mtgimage.com/card/hapless%20researcher.jpg
 value=2.791
 rarity=C

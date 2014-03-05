@@ -1,5 +1,5 @@
 name=Assemble the Legion
-url=http://magiccards.info/gtc/en/142.html
+url=http://magiccards.info/query?q=%21assemble%20the%20legion
 image=http://mtgimage.com/card/assemble%20the%20legion.jpg
 value=3.790
 rarity=R

@@ -1,5 +1,5 @@
 name=Aerial Maneuver
-url=http://magiccards.info/gtc/en/1.html
+url=http://magiccards.info/query?q=%21aerial%20maneuver
 image=http://mtgimage.com/card/aerial%20maneuver.jpg
 value=2.598
 rarity=C

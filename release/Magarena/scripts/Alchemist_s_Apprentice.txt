@@ -1,5 +1,5 @@
 name=Alchemist's Apprentice
-url=http://magiccards.info/avr/en/42.html
+url=http://magiccards.info/query?q=%21alchemist%27s%20apprentice
 image=http://mtgimage.com/card/alchemist%27s%20apprentice.jpg
 value=2.697
 rarity=C

@@ -1,5 +1,5 @@
 name=Bonds of Quicksilver
-url=http://magiccards.info/som/en/29.html
+url=http://magiccards.info/query?q=%21bonds%20of%20quicksilver
 image=http://mtgimage.com/card/bonds%20of%20quicksilver.jpg
 value=2.225
 removal=3

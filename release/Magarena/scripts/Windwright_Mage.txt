@@ -1,5 +1,5 @@
 name=Windwright Mage
-url=http://magiccards.info/ala/en/208.html
+url=http://magiccards.info/query?q=%21windwright%20mage
 image=http://mtgimage.com/card/windwright%20mage.jpg
 value=2.988
 rarity=C

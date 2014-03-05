@@ -1,5 +1,5 @@
 name=Serra Ascendant
-url=http://magiccards.info/m11/en/28.html
+url=http://magiccards.info/query?q=%21serra%20ascendant
 image=http://mtgimage.com/card/serra%20ascendant.jpg
 value=4.160
 rarity=R

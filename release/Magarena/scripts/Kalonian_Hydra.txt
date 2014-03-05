@@ -1,5 +1,5 @@
 name=Kalonian Hydra
-url=http://magiccards.info/m14/en/181.html
+url=http://magiccards.info/query?q=%21kalonian%20hydra
 image=http://mtgimage.com/card/kalonian%20hydra.jpg
 value=4.346
 rarity=M

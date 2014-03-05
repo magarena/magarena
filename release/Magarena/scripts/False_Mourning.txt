@@ -1,5 +1,5 @@
 name=False Mourning
-url=http://magiccards.info/p3k/en/134.html
+url=http://magiccards.info/query?q=%21false%20mourning
 image=http://mtgimage.com/card/false%20mourning.jpg
 value=3.769
 rarity=U

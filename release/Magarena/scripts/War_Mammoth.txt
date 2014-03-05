@@ -1,5 +1,5 @@
 name=War Mammoth
-url=http://magiccards.info/5e/en/202.html
+url=http://magiccards.info/query?q=%21war%20mammoth
 image=http://mtgimage.com/card/war%20mammoth.jpg
 value=3.370
 rarity=C

@@ -1,5 +1,5 @@
 name=Lightning Hounds
-url=http://magiccards.info/mm/en/201.html
+url=http://magiccards.info/query?q=%21lightning%20hounds
 image=http://mtgimage.com/card/lightning%20hounds.jpg
 value=3.160
 rarity=C

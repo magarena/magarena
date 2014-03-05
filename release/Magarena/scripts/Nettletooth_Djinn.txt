@@ -1,5 +1,5 @@
 name=Nettletooth Djinn
-url=http://magiccards.info/mr/en/130.html
+url=http://magiccards.info/query?q=%21nettletooth%20djinn
 image=http://mtgimage.com/card/nettletooth%20djinn.jpg
 value=2.288
 rarity=U

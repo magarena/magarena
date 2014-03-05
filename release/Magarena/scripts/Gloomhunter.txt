@@ -1,5 +1,5 @@
 name=Gloomhunter
-url=http://magiccards.info/roe/en/111.html
+url=http://magiccards.info/query?q=%21gloomhunter
 image=http://mtgimage.com/card/gloomhunter.jpg
 value=1.673
 ability=flying

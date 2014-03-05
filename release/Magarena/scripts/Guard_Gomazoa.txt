@@ -1,5 +1,5 @@
 name=Guard Gomazoa
-url=http://magiccards.info/cmd/en/49.html
+url=http://magiccards.info/query?q=%21guard%20gomazoa
 image=http://mtgimage.com/card/guard%20gomazoa.jpg
 value=3.767
 rarity=U

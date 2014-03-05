@@ -1,5 +1,5 @@
 name=Army Ants
-url=http://magiccards.info/vi/en/126.html
+url=http://magiccards.info/query?q=%21army%20ants
 image=http://mtgimage.com/card/army%20ants.jpg
 value=4.164
 rarity=U

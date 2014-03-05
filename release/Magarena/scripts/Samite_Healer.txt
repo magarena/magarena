@@ -1,5 +1,5 @@
 name=Samite Healer
-url=http://magiccards.info/10e/en/38.html
+url=http://magiccards.info/query?q=%21samite%20healer
 image=http://mtgimage.com/card/samite%20healer.jpg
 value=2.455
 rarity=C

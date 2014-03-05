@@ -1,5 +1,5 @@
 name=Nezumi Bone-Reader
-url=http://magiccards.info/chk/en/127.html
+url=http://magiccards.info/query?q=%21nezumi%20bone%2Dreader
 image=http://mtgimage.com/card/nezumi%20bone-reader.jpg
 value=2.279
 rarity=U

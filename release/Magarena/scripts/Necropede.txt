@@ -1,5 +1,5 @@
 name=Necropede
-url=http://magiccards.info/som/en/185.html
+url=http://magiccards.info/query?q=%21necropede
 image=http://mtgimage.com/card/necropede.jpg
 value=3.619
 rarity=U

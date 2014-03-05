@@ -1,5 +1,5 @@
 name=Ethercaste Knight
-url=http://magiccards.info/arb/en/3.html
+url=http://magiccards.info/query?q=%21ethercaste%20knight
 image=http://mtgimage.com/card/ethercaste%20knight.jpg
 value=3.062
 rarity=C

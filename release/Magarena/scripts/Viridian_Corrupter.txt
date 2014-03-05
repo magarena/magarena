@@ -1,5 +1,5 @@
 name=Viridian Corrupter
-url=http://magiccards.info/mbs/en/94.html
+url=http://magiccards.info/query?q=%21viridian%20corrupter
 image=http://mtgimage.com/card/viridian%20corrupter.jpg
 value=3.979
 removal=1

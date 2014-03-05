@@ -1,5 +1,5 @@
 name=Shiv's Embrace
-url=http://magiccards.info/m14/en/153.html
+url=http://magiccards.info/query?q=%21shiv%27s%20embrace
 image=http://mtgimage.com/card/shiv's%20embrace.jpg
 value=3.554
 rarity=U

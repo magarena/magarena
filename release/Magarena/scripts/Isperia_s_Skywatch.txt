@@ -1,5 +1,5 @@
 name=Isperia's Skywatch
-url=http://magiccards.info/rtr/en/43.html
+url=http://magiccards.info/query?q=%21isperia%27s%20skywatch
 image=http://mtgimage.com/card/isperia%27s%20skywatch.jpg
 value=1.940
 rarity=C

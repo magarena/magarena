@@ -1,5 +1,5 @@
 name=Elvish Lookout
-url=http://magiccards.info/ud/en/103.html
+url=http://magiccards.info/query?q=%21elvish%20lookout
 image=http://mtgimage.com/card/elvish%20lookout.jpg
 value=2.812
 rarity=C

@@ -1,5 +1,5 @@
 name=Favor of the Mighty
-url=http://magiccards.info/lw/en/14.html
+url=http://magiccards.info/query?q=%21favor%20of%20the%20mighty
 image=http://mtgimage.com/card/favor%20of%20the%20mighty.jpg
 value=3.091
 rarity=R

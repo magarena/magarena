@@ -1,5 +1,5 @@
 name=Basilica Guards
-url=http://magiccards.info/gtc/en/5.html
+url=http://magiccards.info/query?q=%21basilica%20guards
 image=http://mtgimage.com/card/basilica%20guards.jpg
 value=2.877
 rarity=C

@@ -1,5 +1,5 @@
 name=Temporal Spring
-url=http://magiccards.info/ap/en/125.html
+url=http://magiccards.info/query?q=%21temporal%20spring
 image=http://mtgimage.com/card/temporal%20spring.jpg
 value=4.029
 rarity=C

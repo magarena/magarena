@@ -1,5 +1,5 @@
 name=Gustcloak Runner
-url=http://magiccards.info/on/en/35.html
+url=http://magiccards.info/query?q=%21gustcloak%20runner
 image=http://mtgimage.com/card/gustcloak%20runner.jpg
 value=3.048
 rarity=C

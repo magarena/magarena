@@ -1,5 +1,5 @@
 name=Alert Shu Infantry
-url=http://magiccards.info/p3k/en/1.html
+url=http://magiccards.info/query?q=%21alert%20shu%20infantry
 image=http://mtgimage.com/card/alert%20shu%20infantry.jpg
 value=2.737
 rarity=U

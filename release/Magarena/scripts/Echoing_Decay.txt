@@ -1,5 +1,5 @@
 name=Echoing Decay
-url=http://magiccards.info/ds/en/41.html
+url=http://magiccards.info/query?q=%21echoing%20decay
 image=http://mtgimage.com/card/echoing%20decay.jpg
 value=3.837
 removal=3

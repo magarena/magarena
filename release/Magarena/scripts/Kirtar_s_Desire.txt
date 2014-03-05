@@ -1,5 +1,5 @@
 name=Kirtar's Desire
-url=http://magiccards.info/od/en/27.html
+url=http://magiccards.info/query?q=%21kirtar%27s%20desire
 image=http://mtgimage.com/card/kirtar's%20desire.jpg
 value=3.641
 rarity=C

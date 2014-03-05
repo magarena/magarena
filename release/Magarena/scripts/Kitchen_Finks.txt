@@ -1,5 +1,5 @@
 name=Kitchen Finks
-url=http://magiccards.info/shm/en/229.html
+url=http://magiccards.info/query?q=%21kitchen%20finks
 image=http://mtgimage.com/card/kitchen%20finks.jpg
 value=4.300
 rarity=U

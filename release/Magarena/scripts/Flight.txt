@@ -1,5 +1,5 @@
 name=Flight
-url=http://magiccards.info/m12/en/53.html
+url=http://magiccards.info/query?q=%21flight
 image=http://mtgimage.com/card/flight.jpg
 value=2.269
 rarity=C

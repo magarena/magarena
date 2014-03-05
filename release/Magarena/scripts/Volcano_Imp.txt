@@ -1,5 +1,5 @@
 name=Volcano Imp
-url=http://magiccards.info/ps/en/56.html
+url=http://magiccards.info/query?q=%21volcano%20imp
 image=http://mtgimage.com/card/volcano%20imp.jpg
 value=1.783
 rarity=C

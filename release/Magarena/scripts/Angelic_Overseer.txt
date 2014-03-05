@@ -1,5 +1,5 @@
 name=Angelic Overseer
-url=http://magiccards.info/isd/en/3.html
+url=http://magiccards.info/query?q=%21angelic%20overseer
 image=http://mtgimage.com/card/angelic%20overseer.jpg
 value=3.886
 rarity=M

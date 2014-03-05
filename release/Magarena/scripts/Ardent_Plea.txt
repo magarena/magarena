@@ -1,5 +1,5 @@
 name=Ardent Plea
-url=http://magiccards.info/arb/en/1.html
+url=http://magiccards.info/query?q=%21ardent%20plea
 image=http://mtgimage.com/card/ardent%20plea.jpg
 value=3.390
 rarity=U

@@ -1,5 +1,5 @@
 name=Bramblecrush
-url=http://magiccards.info/isd/en/172.html
+url=http://magiccards.info/query?q=%21bramblecrush
 image=http://mtgimage.com/card/bramblecrush.jpg
 value=3.638
 removal=3

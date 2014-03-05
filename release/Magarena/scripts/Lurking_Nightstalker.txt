@@ -1,5 +1,5 @@
 name=Lurking Nightstalker
-url=http://magiccards.info/po2/en/17.html
+url=http://magiccards.info/query?q=%21lurking%20nightstalker
 image=http://mtgimage.com/card/lurking%20nightstalker.jpg
 value=3.552
 rarity=C

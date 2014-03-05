@@ -1,5 +1,5 @@
 name=Pyrohemia
-url=http://magiccards.info/cmd/en/132.html
+url=http://magiccards.info/query?q=%21pyrohemia
 image=http://mtgimage.com/card/pyrohemia.jpg
 value=3.933
 rarity=U

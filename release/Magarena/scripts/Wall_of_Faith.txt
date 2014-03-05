@@ -1,5 +1,5 @@
 name=Wall of Faith
-url=http://magiccards.info/m10/en/40.html
+url=http://magiccards.info/query?q=%21wall%20of%20faith
 image=http://mtgimage.com/card/wall%20of%20faith.jpg
 value=1.917
 rarity=C

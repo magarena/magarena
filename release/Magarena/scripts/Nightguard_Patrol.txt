@@ -1,5 +1,5 @@
 name=Nightguard Patrol
-url=http://magiccards.info/rav/en/26.html
+url=http://magiccards.info/query?q=%21nightguard%20patrol
 image=http://mtgimage.com/card/nightguard%20patrol.jpg
 value=2.851
 ability=first strike;vigilance

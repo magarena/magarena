@@ -1,5 +1,5 @@
 name=Aspect of Hydra
-url=http://magiccards.info/bng/en/117.html
+url=http://magiccards.info/query?q=%21aspect%20of%20hydra
 image=http://mtgimage.com/card/aspect%20of%20hydra.jpg
 value=3.733
 rarity=C

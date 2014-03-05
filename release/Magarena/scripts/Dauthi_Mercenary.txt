@@ -1,5 +1,5 @@
 name=Dauthi Mercenary
-url=http://magiccards.info/tp/en/18.html
+url=http://magiccards.info/query?q=%21dauthi%20mercenary
 image=http://mtgimage.com/card/dauthi%20mercenary.jpg
 value=4.042
 rarity=U

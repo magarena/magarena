@@ -1,5 +1,5 @@
 name=Embersmith
-url=http://magiccards.info/som/en/87.html
+url=http://magiccards.info/query?q=%21embersmith
 image=http://mtgimage.com/card/embersmith.jpg
 value=3.018
 rarity=U

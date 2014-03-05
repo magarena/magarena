@@ -1,5 +1,5 @@
 name=Dispense Justice
-url=http://magiccards.info/som/en/5.html
+url=http://magiccards.info/query?q=%21dispense%20justice
 image=http://mtgimage.com/card/dispense%20justice.jpg
 value=3.620
 removal=4

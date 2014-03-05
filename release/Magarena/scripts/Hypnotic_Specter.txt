@@ -1,5 +1,5 @@
 name=Hypnotic Specter
-url=http://magiccards.info/m10/en/100.html
+url=http://magiccards.info/query?q=%21hypnotic%20specter
 image=http://mtgimage.com/card/hypnotic%20specter.jpg
 value=4.587
 rarity=U

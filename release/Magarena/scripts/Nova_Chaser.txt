@@ -1,5 +1,5 @@
 name=Nova Chaser
-url=http://magiccards.info/lw/en/187.html
+url=http://magiccards.info/query?q=%21nova%20chaser
 image=http://mtgimage.com/card/nova%20chaser.jpg
 value=4.209
 removal=2

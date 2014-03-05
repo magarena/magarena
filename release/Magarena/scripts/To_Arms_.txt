@@ -1,5 +1,5 @@
 name=To Arms!
-url=http://magiccards.info/gp/en/20.html
+url=http://magiccards.info/query?q=%21to%20arms%21
 image=http://mtgimage.com/card/to%20arms%21.jpg
 value=4.143
 rarity=U

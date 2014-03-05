@@ -1,5 +1,5 @@
 name=Kraken's Eye
-url=http://magiccards.info/m12/en/211.html
+url=http://magiccards.info/query?q=%21kraken%27s%20eye
 image=http://mtgimage.com/card/kraken%27s%20eye.jpg
 value=1.860
 rarity=U

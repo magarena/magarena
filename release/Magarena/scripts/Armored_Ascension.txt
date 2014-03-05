@@ -1,5 +1,5 @@
 name=Armored Ascension
-url=http://magiccards.info/m11/en/5.html
+url=http://magiccards.info/query?q=%21armored%20ascension
 image=http://mtgimage.com/card/armored%20ascension.jpg
 value=3.837
 rarity=U

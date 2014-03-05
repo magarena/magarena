@@ -1,5 +1,5 @@
 name=Agility
-url=http://magiccards.info/mr/en/154.html
+url=http://magiccards.info/query?q=%21agility
 image=http://mtgimage.com/card/agility.jpg
 value=3.574
 rarity=C

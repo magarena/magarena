@@ -1,5 +1,5 @@
 name=Duergar Assailant
-url=http://magiccards.info/eve/en/136.html
+url=http://magiccards.info/query?q=%21duergar%20assailant
 image=http://mtgimage.com/card/duergar%20assailant.jpg
 value=2.529
 rarity=C

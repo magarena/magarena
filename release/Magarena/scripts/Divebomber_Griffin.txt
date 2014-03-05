@@ -1,5 +1,5 @@
 name=Divebomber Griffin
-url=http://magiccards.info/rav/en/14.html
+url=http://magiccards.info/query?q=%21divebomber%20griffin
 image=http://mtgimage.com/card/divebomber%20griffin.jpg
 value=1.952
 rarity=U

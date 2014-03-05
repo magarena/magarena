@@ -1,5 +1,5 @@
 name=The Hive
-url=http://magiccards.info/10e/en/324.html
+url=http://magiccards.info/query?q=%21the%20hive
 image=http://mtgimage.com/card/the%20hive.jpg
 value=1.714
 rarity=R

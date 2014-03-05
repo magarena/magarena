@@ -1,5 +1,5 @@
 name=Spirit Away
-url=http://magiccards.info/avr/en/76.html
+url=http://magiccards.info/query?q=%21spirit%20away
 image=http://mtgimage.com/card/spirit%20away.jpg
 value=2.905
 rarity=R

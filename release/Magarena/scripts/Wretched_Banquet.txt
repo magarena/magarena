@@ -1,5 +1,5 @@
 name=Wretched Banquet
-url=http://magiccards.info/cfx/en/56.html
+url=http://magiccards.info/query?q=%21wretched%20banquet
 image=http://mtgimage.com/card/wretched%20banquet.jpg
 value=2.933
 removal=4

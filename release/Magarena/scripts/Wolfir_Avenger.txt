@@ -1,5 +1,5 @@
 name=Wolfir Avenger
-url=http://magiccards.info/avr/en/205.html
+url=http://magiccards.info/query?q=%21wolfir%20avenger
 image=http://mtgimage.com/card/wolfir%20avenger.jpg
 value=3.921
 rarity=U

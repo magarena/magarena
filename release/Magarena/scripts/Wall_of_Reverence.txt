@@ -1,5 +1,5 @@
 name=Wall of Reverence
-url=http://magiccards.info/cfx/en/20.html
+url=http://magiccards.info/query?q=%21wall%20of%20reverence
 image=http://mtgimage.com/card/wall%20of%20reverence.jpg
 value=3.917
 rarity=R

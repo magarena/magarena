@@ -1,5 +1,5 @@
 name=Last Thoughts
-url=http://magiccards.info/gtc/en/40.html
+url=http://magiccards.info/query?q=%21last%20thoughts
 image=http://mtgimage.com/card/last%20thoughts.jpg
 value=2.563
 rarity=C

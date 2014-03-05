@@ -1,5 +1,5 @@
 name=Draconian Cylix
-url=http://magiccards.info/fe/en/171.html
+url=http://magiccards.info/query?q=%21draconian%20cylix
 image=http://mtgimage.com/card/draconian%20cylix.jpg
 value=2.000
 rarity=R

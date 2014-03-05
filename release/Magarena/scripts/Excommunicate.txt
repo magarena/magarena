@@ -1,5 +1,5 @@
 name=Excommunicate
-url=http://magiccards.info/m11/en/14.html
+url=http://magiccards.info/query?q=%21excommunicate
 image=http://mtgimage.com/card/excommunicate.jpg
 value=2.719
 rarity=C

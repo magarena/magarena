@@ -1,5 +1,5 @@
 name=Immobilizing Ink
-url=http://magiccards.info/od/en/87.html
+url=http://magiccards.info/query?q=%21immobilizing%20ink
 image=http://mtgimage.com/card/immobilizing%20ink.jpg
 value=2.712
 rarity=C

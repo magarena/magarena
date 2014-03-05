@@ -1,5 +1,5 @@
 name=Skarrg Goliath
-url=http://magiccards.info/gtc/en/133.html
+url=http://magiccards.info/query?q=%21skarrg%20goliath
 image=http://mtgimage.com/card/skarrg%20goliath.jpg
 value=3.125
 rarity=R

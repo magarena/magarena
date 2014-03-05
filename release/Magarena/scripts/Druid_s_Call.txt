@@ -1,5 +1,5 @@
 name=Druid's Call
-url=http://magiccards.info/od/en/239.html
+url=http://magiccards.info/query?q=%21druid%27s%20call
 image=http://mtgimage.com/card/druid%27s%20call.jpg
 value=4.060
 rarity=U

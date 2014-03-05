@@ -1,5 +1,5 @@
 name=Palliation Accord
-url=http://magiccards.info/di/en/122.html
+url=http://magiccards.info/query?q=%21palliation%20accord
 image=http://mtgimage.com/card/palliation%20accord.jpg
 value=3.580
 rarity=U

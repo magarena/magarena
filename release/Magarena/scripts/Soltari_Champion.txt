@@ -1,5 +1,5 @@
 name=Soltari Champion
-url=http://magiccards.info/sh/en/118.html
+url=http://magiccards.info/query?q=%21soltari%20champion
 image=http://mtgimage.com/card/soltari%20champion.jpg
 value=4.489
 rarity=R

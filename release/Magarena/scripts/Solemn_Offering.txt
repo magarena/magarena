@@ -1,5 +1,5 @@
 name=Solemn Offering
-url=http://magiccards.info/m11/en/32.html
+url=http://magiccards.info/query?q=%21solemn%20offering
 image=http://mtgimage.com/card/solemn%20offering.jpg
 value=3.396
 removal=1

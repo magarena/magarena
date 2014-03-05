@@ -1,5 +1,5 @@
 name=Temporal Eddy
-url=http://magiccards.info/ts/en/85.html
+url=http://magiccards.info/query?q=%21temporal%20eddy
 image=http://mtgimage.com/card/temporal%20eddy.jpg
 value=2.580
 rarity=C

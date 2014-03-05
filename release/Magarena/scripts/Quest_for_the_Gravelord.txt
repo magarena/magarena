@@ -1,5 +1,5 @@
 name=Quest for the Gravelord
-url=http://magiccards.info/zen/en/108.html
+url=http://magiccards.info/query?q=%21quest%20for%20the%20gravelord
 image=http://mtgimage.com/card/quest%20for%20the%20gravelord.jpg
 value=4.165
 rarity=U

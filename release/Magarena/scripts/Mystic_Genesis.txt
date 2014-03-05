@@ -1,5 +1,5 @@
 name=Mystic Genesis
-url=http://magiccards.info/gtc/en/180.html
+url=http://magiccards.info/query?q=%21mystic%20genesis
 image=http://mtgimage.com/card/mystic%20genesis.jpg
 value=3.388
 rarity=R

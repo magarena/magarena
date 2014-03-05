@@ -1,5 +1,5 @@
 name=Godhead of Awe
-url=http://magiccards.info/shm/en/142.html
+url=http://magiccards.info/query?q=%21godhead%20of%20awe
 image=http://mtgimage.com/card/godhead%20of%20awe.jpg
 value=4.272
 removal=3

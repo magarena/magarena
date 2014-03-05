@@ -1,5 +1,5 @@
 name=Sunhome Guildmage
-url=http://magiccards.info/gtc/en/200.html
+url=http://magiccards.info/query?q=%21sunhome%20guildmage
 image=http://mtgimage.com/card/sunhome%20guildmage.jpg
 value=3.365
 rarity=U

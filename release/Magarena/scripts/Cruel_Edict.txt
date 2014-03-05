@@ -1,5 +1,5 @@
 name=Cruel Edict
-url=http://magiccards.info/dvd/en/48.html
+url=http://magiccards.info/query?q=%21cruel%20edict
 image=http://mtgimage.com/card/cruel%20edict.jpg
 value=4.029
 removal=2

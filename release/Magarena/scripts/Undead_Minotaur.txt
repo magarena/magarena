@@ -1,5 +1,5 @@
 name=Undead Minotaur
-url=http://magiccards.info/m14/en/119.html
+url=http://magiccards.info/query?q=%21undead%20minotaur
 image=http://mtgimage.com/card/undead%20minotaur.jpg
 value=2.037
 rarity=C

@@ -1,5 +1,5 @@
 name=Crippling Blight
-url=http://magiccards.info/m13/en/85.html
+url=http://magiccards.info/query?q=%21crippling%20blight
 image=http://mtgimage.com/card/crippling%20blight.jpg
 value=2.709
 removal=1

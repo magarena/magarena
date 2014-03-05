@@ -1,5 +1,5 @@
 name=Spire Monitor
-url=http://magiccards.info/nph/en/46.html
+url=http://magiccards.info/query?q=%21spire%20monitor
 image=http://mtgimage.com/card/spire%20monitor.jpg
 value=2.880
 ability=flash;flying

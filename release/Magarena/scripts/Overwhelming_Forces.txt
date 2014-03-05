@@ -1,5 +1,5 @@
 name=Overwhelming Forces
-url=http://magiccards.info/p3k/en/79.html
+url=http://magiccards.info/query?q=%21overwhelming%20forces
 image=http://mtgimage.com/card/overwhelming%20forces.jpg
 value=4.449
 rarity=R

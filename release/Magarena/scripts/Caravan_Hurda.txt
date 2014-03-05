@@ -1,5 +1,5 @@
 name=Caravan Hurda
-url=http://magiccards.info/zen/en/5.html
+url=http://magiccards.info/query?q=%21caravan%20hurda
 image=http://mtgimage.com/card/caravan%20hurda.jpg
 value=1.207
 ability=lifelink

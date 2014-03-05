@@ -1,5 +1,5 @@
 name=Akroma's Memorial
-url=http://magiccards.info/fut/en/159.html
+url=http://magiccards.info/query?q=%21akroma%27s%20memorial
 image=http://mtgimage.com/card/akroma%27s%20memorial.jpg
 value=3.996
 rarity=R

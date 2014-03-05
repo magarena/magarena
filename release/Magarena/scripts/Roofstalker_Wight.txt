@@ -1,5 +1,5 @@
 name=Roofstalker Wight
-url=http://magiccards.info/rav/en/102.html
+url=http://magiccards.info/query?q=%21roofstalker%20wight
 image=http://mtgimage.com/card/roofstalker%20wight.jpg
 value=2.273
 rarity=C

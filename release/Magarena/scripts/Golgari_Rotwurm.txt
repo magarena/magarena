@@ -1,5 +1,5 @@
 name=Golgari Rotwurm
-url=http://magiccards.info/ddj/en/63.html
+url=http://magiccards.info/query?q=%21golgari%20rotwurm
 image=http://mtgimage.com/card/golgari%20rotwurm.jpg
 value=3.409
 rarity=C

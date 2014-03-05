@@ -1,5 +1,5 @@
 name=Azure Mage
-url=http://magiccards.info/m12/en/45.html
+url=http://magiccards.info/query?q=%21azure%20mage
 image=http://mtgimage.com/card/azure%20mage.jpg
 value=3.802
 rarity=U

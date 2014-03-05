@@ -1,5 +1,5 @@
 name=Slith Strider
-url=http://magiccards.info/mi/en/50.html
+url=http://magiccards.info/query?q=%21slith%20strider
 image=http://mtgimage.com/card/slith%20strider.jpg
 value=3.500
 rarity=U

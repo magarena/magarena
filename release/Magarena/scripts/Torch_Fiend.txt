@@ -1,5 +1,5 @@
 name=Torch Fiend
-url=http://magiccards.info/dka/en/106.html
+url=http://magiccards.info/query?q=%21torch%20fiend
 image=http://mtgimage.com/card/torch%20fiend.jpg
 value=3.890
 rarity=C

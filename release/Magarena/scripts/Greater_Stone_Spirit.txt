@@ -1,5 +1,5 @@
 name=Greater Stone Spirit
-url=http://magiccards.info/ddi/en/61.html
+url=http://magiccards.info/query?q=%21greater%20stone%20spirit
 image=http://mtgimage.com/card/greater%20stone%20spirit.jpg
 value=2.321
 rarity=U

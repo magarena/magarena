@@ -1,5 +1,5 @@
 name=Karmic Guide
-url=http://magiccards.info/ul/en/11.html
+url=http://magiccards.info/query?q=%21karmic%20guide
 image=http://mtgimage.com/card/karmic%20guide.jpg
 value=4.500
 rarity=R

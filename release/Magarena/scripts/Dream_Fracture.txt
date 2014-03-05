@@ -1,5 +1,5 @@
 name=Dream Fracture
-url=http://magiccards.info/eve/en/19.html
+url=http://magiccards.info/query?q=%21dream%20fracture
 image=http://mtgimage.com/card/dream%20fracture.jpg
 value=3.516
 rarity=U

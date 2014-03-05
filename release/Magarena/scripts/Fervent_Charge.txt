@@ -1,5 +1,5 @@
 name=Fervent Charge
-url=http://magiccards.info/ap/en/98.html
+url=http://magiccards.info/query?q=%21fervent%20charge
 image=http://mtgimage.com/card/fervent%20charge.jpg
 value=4.083
 rarity=R

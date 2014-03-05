@@ -1,5 +1,5 @@
 name=Augur il-Vec
-url=http://magiccards.info/fut/en/2.html
+url=http://magiccards.info/query?q=%21augur%20il%2Dvec
 image=http://mtgimage.com/card/augur%20il%2Dvec.jpg
 value=2.811
 rarity=C

@@ -1,5 +1,5 @@
 name=Aura Extraction
-url=http://magiccards.info/on/en/5.html
+url=http://magiccards.info/query?q=%21aura%20extraction
 image=http://mtgimage.com/card/aura%20extraction.jpg
 value=2.346
 rarity=U

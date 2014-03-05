@@ -1,5 +1,5 @@
 name=Sandstorm
-url=http://magiccards.info/br/en/64.html
+url=http://magiccards.info/query?q=%21sandstorm
 image=http://mtgimage.com/card/sandstorm.jpg
 value=3.389
 rarity=C

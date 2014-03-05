@@ -1,5 +1,5 @@
 name=Hidden Path
-url=http://magiccards.info/dk/en/41.html
+url=http://magiccards.info/query?q=%21hidden%20path
 image=http://mtgimage.com/card/hidden%20path.jpg
 value=1.238
 rarity=R

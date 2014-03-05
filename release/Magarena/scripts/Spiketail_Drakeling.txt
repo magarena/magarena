@@ -1,5 +1,5 @@
 name=Spiketail Drakeling
-url=http://magiccards.info/ts/en/80.html
+url=http://magiccards.info/query?q=%21spiketail%20drakeling
 image=http://mtgimage.com/card/spiketail%20drakeling.jpg
 value=4.105
 rarity=C

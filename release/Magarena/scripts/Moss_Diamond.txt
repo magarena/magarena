@@ -1,5 +1,5 @@
 name=Moss Diamond
-url=http://magiccards.info/7e/en/309.html
+url=http://magiccards.info/query?q=%21moss%20diamond
 image=http://mtgimage.com/card/moss%20diamond.jpg
 value=2.609
 rarity=U

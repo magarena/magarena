@@ -1,5 +1,5 @@
 name=Dragon Hatchling
-url=http://magiccards.info/m13/en/128.html
+url=http://magiccards.info/query?q=%21dragon%20hatchling
 image=http://mtgimage.com/card/dragon%20hatchling.jpg
 value=3.464
 rarity=C

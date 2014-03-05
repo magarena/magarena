@@ -1,5 +1,5 @@
 name=Deathrender
-url=http://magiccards.info/lw/en/255.html
+url=http://magiccards.info/query?q=%21deathrender
 image=http://mtgimage.com/card/deathrender.jpg
 value=4.353
 rarity=R

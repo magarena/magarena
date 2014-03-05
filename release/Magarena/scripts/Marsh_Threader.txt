@@ -1,5 +1,5 @@
 name=Marsh Threader
-url=http://magiccards.info/wwk/en/14.html
+url=http://magiccards.info/query?q=%21marsh%20threader
 image=http://mtgimage.com/card/marsh%20threader.jpg
 value=2.675
 ability=swampwalk

@@ -1,5 +1,5 @@
 name=Ashcoat Bear
-url=http://magiccards.info/ts/en/190.html
+url=http://magiccards.info/query?q=%21ashcoat%20bear
 image=http://mtgimage.com/card/ashcoat%20bear.jpg
 value=4.115
 ability=flash

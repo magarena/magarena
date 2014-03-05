@@ -1,5 +1,5 @@
 name=Crackling Club
-url=http://magiccards.info/tr/en/93.html
+url=http://magiccards.info/query?q=%21crackling%20club
 image=http://mtgimage.com/card/crackling%20club.jpg
 value=2.500
 rarity=C

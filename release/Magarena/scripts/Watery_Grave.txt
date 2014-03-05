@@ -1,5 +1,5 @@
 name=Watery Grave
-url=http://magiccards.info/rav/en/286.html
+url=http://magiccards.info/query?q=%21watery%20grave
 image=http://mtgimage.com/card/watery%20grave.jpg
 value=4.113
 rarity=R

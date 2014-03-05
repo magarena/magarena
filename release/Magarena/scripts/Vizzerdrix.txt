@@ -1,5 +1,5 @@
 name=Vizzerdrix
-url=http://magiccards.info/9eb/en/7.html
+url=http://magiccards.info/query?q=%21vizzerdrix
 image=http://mtgimage.com/card/vizzerdrix.jpg
 value=2.210
 rarity=R

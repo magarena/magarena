@@ -1,5 +1,5 @@
 name=Obelisk of Naya
-url=http://magiccards.info/ala/en/216.html
+url=http://magiccards.info/query?q=%21obelisk%20of%20naya
 image=http://mtgimage.com/card/obelisk%20of%20naya.jpg
 value=2.342
 rarity=C

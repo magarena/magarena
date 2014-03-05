@@ -1,5 +1,5 @@
 name=Goblin Piledriver
-url=http://magiccards.info/on/en/205.html
+url=http://magiccards.info/query?q=%21goblin%20piledriver
 image=http://mtgimage.com/card/goblin%20piledriver.jpg
 value=4.575
 rarity=R

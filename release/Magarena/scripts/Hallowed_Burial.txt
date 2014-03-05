@@ -1,5 +1,5 @@
 name=Hallowed Burial
-url=http://magiccards.info/eve/en/7.html
+url=http://magiccards.info/query?q=%21hallowed%20burial
 image=http://mtgimage.com/card/hallowed%20burial.jpg
 value=4.156
 rarity=R

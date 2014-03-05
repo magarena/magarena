@@ -1,5 +1,5 @@
 name=Batterhorn
-url=http://magiccards.info/rtr/en/87.html
+url=http://magiccards.info/query?q=%21batterhorn
 image=http://mtgimage.com/card/batterhorn.jpg
 value=2.188
 rarity=C

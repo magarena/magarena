@@ -1,5 +1,5 @@
 name=Thassa, God of the Sea
-url=http://magiccards.info/ths/en/66.html
+url=http://magiccards.info/query?q=%21thassa%2C%20god%20of%20the%20sea
 image=http://mtgimage.com/card/thassa%2C%20god%20of%20the%20sea.jpg
 value=3.833
 rarity=M

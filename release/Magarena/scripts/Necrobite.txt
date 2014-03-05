@@ -1,5 +1,5 @@
 name=Necrobite
-url=http://magiccards.info/avr/en/115.html
+url=http://magiccards.info/query?q=%21necrobite
 image=http://mtgimage.com/card/necrobite.jpg
 value=3.261
 rarity=C

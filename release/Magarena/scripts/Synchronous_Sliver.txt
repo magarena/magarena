@@ -1,5 +1,5 @@
 name=Synchronous Sliver
-url=http://magiccards.info/pc/en/48.html
+url=http://magiccards.info/query?q=%21synchronous%20sliver
 image=http://mtgimage.com/card/synchronous%20sliver.jpg
 value=3.212
 rarity=C

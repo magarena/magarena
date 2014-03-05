@@ -1,5 +1,5 @@
 name=Dissipate
-url=http://magiccards.info/isd/en/53.html
+url=http://magiccards.info/query?q=%21dissipate
 image=http://mtgimage.com/card/dissipate.jpg
 value=4.398
 rarity=U

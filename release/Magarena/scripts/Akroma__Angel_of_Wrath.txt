@@ -1,5 +1,5 @@
 name=Akroma, Angel of Wrath
-url=http://magiccards.info/dvd/en/1.html
+url=http://magiccards.info/query?q=%21akroma%2C%20angel%20of%20wrath
 image=http://mtgimage.com/card/akroma%2C%20angel%20of%20wrath.jpg
 value=4.610
 rarity=M

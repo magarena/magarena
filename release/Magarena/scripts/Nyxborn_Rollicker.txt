@@ -1,5 +1,5 @@
 name=Nyxborn Rollicker
-url=http://magiccards.info/bng/en/102.html
+url=http://magiccards.info/query?q=%21nyxborn%20rollicker
 image=http://mtgimage.com/card/nyxborn%20rollicker.jpg
 value=3.404
 rarity=C

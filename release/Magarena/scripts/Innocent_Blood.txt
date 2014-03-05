@@ -1,5 +1,5 @@
 name=Innocent Blood
-url=http://magiccards.info/pch/en/33.html
+url=http://magiccards.info/query?q=%21innocent%20blood
 image=http://mtgimage.com/card/innocent%20blood.jpg
 value=4.538
 removal=2

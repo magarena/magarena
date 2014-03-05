@@ -1,5 +1,5 @@
 name=Gruul Guildmage
-url=http://magiccards.info/gp/en/144.html
+url=http://magiccards.info/query?q=%21gruul%20guildmage
 image=http://mtgimage.com/card/gruul%20guildmage.jpg
 value=2.942
 rarity=U

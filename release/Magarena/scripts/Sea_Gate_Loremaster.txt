@@ -1,5 +1,5 @@
 name=Sea Gate Loremaster
-url=http://magiccards.info/zen/en/63.html
+url=http://magiccards.info/query?q=%21sea%20gate%20loremaster
 image=http://mtgimage.com/card/sea%20gate%20loremaster.jpg
 value=3.988
 rarity=R

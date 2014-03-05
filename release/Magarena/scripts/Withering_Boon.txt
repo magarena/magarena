@@ -1,5 +1,5 @@
 name=Withering Boon
-url=http://magiccards.info/mr/en/50.html
+url=http://magiccards.info/query?q=%21withering%20boon
 image=http://mtgimage.com/card/withering%20boon.jpg
 value=3.471
 rarity=U

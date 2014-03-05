@@ -1,5 +1,5 @@
 name=Plagued Rusalka
-url=http://magiccards.info/ddj/en/46.html
+url=http://magiccards.info/query?q=%21plagued%20rusalka
 image=http://mtgimage.com/card/plagued%20rusalka.jpg
 value=3.688
 rarity=U

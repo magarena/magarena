@@ -1,5 +1,5 @@
 name=Mountain
-url=http://magiccards.info/isd/en/259.html
+url=http://magiccards.info/query?q=%21mountain
 image=http://mtgimage.com/set/ZEN/mountain1.jpg
 num_images=2
 value=4.125

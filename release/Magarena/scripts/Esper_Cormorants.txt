@@ -1,5 +1,5 @@
 name=Esper Cormorants
-url=http://magiccards.info/cfx/en/105.html
+url=http://magiccards.info/query?q=%21esper%20cormorants
 image=http://mtgimage.com/card/esper%20cormorants.jpg
 value=2.407
 ability=flying

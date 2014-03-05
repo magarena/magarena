@@ -1,5 +1,5 @@
 name=Prosperity
-url=http://magiccards.info/c13/en/54.html
+url=http://magiccards.info/query?q=%21prosperity
 image=http://mtgimage.com/card/prosperity.jpg
 value=4.389
 rarity=U

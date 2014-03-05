@@ -1,5 +1,5 @@
 name=Glimpse the Unthinkable
-url=http://magiccards.info/rav/en/208.html
+url=http://magiccards.info/query?q=%21glimpse%20the%20unthinkable
 image=http://mtgimage.com/card/glimpse%20the%20unthinkable.jpg
 value=4.334
 rarity=R

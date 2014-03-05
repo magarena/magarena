@@ -1,5 +1,5 @@
 name=Demonlord of Ashmouth
-url=http://magiccards.info/avr/en/96.html
+url=http://magiccards.info/query?q=%21demonlord%20of%20ashmouth
 image=http://mtgimage.com/card/demonlord%20of%20ashmouth.jpg
 value=3.796
 rarity=R

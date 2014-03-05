@@ -1,5 +1,5 @@
 name=Madrush Cyclops
-url=http://magiccards.info/arb/en/119.html
+url=http://magiccards.info/query?q=%21madrush%20cyclops
 image=http://mtgimage.com/card/madrush%20cyclops.jpg
 value=3.435
 rarity=R

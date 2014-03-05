@@ -1,5 +1,5 @@
 name=Kragma Butcher
-url=http://magiccards.info/bng/en/100.html
+url=http://magiccards.info/query?q=%21kragma%20butcher
 image=http://mtgimage.com/card/kragma%20butcher.jpg
 value=3.827
 rarity=C

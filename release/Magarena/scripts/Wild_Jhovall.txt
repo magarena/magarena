@@ -1,5 +1,5 @@
 name=Wild Jhovall
-url=http://magiccards.info/mm/en/227.html
+url=http://magiccards.info/query?q=%21wild%20jhovall
 image=http://mtgimage.com/card/wild%20jhovall.jpg
 value=2.104
 rarity=C

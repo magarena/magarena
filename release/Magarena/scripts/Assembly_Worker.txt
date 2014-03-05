@@ -1,5 +1,5 @@
 name=Assembly-Worker
-url=http://magiccards.info/ts/en/248.html
+url=http://magiccards.info/query?q=%21assembly%2Dworker
 image=http://mtgimage.com/card/Assembly-Worker.jpg
 value=2.847
 rarity=U

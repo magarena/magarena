@@ -1,5 +1,5 @@
 name=Mind Twist
-url=http://magiccards.info/4e/en/31.html
+url=http://magiccards.info/query?q=%21mind%20twist
 image=http://mtgimage.com/card/mind%20twist.jpg
 value=4.621
 rarity=R

@@ -1,5 +1,5 @@
 name=Laccolith Whelp
-url=http://magiccards.info/ne/en/91.html
+url=http://magiccards.info/query?q=%21laccolith%20whelp
 image=http://mtgimage.com/card/laccolith%20whelp.jpg
 value=4.013
 rarity=C

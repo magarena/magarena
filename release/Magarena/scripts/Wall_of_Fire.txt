@@ -1,5 +1,5 @@
 name=Wall of Fire
-url=http://magiccards.info/m10/en/162.html
+url=http://magiccards.info/query?q=%21wall%20of%20fire
 image=http://mtgimage.com/card/wall%20of%20fire.jpg
 value=3.350
 ability=defender;cost {R}: SN gets +1/+0 until end of turn.

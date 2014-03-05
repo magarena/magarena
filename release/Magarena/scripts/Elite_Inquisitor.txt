@@ -1,5 +1,5 @@
 name=Elite Inquisitor
-url=http://magiccards.info/isd/en/13.html
+url=http://magiccards.info/query?q=%21elite%20inquisitor
 image=http://mtgimage.com/card/elite%20inquisitor.jpg
 value=3.930
 rarity=R

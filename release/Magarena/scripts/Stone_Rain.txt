@@ -1,5 +1,5 @@
 name=Stone Rain
-url=http://magiccards.info/9e/en/221.html
+url=http://magiccards.info/query?q=%21stone%20rain
 image=http://mtgimage.com/card/stone%20rain.jpg
 value=4.061
 removal=3

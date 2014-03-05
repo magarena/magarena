@@ -1,5 +1,5 @@
 name=Avenger of Zendikar
-url=http://magiccards.info/wwk/en/96.html
+url=http://magiccards.info/query?q=%21avenger%20of%20zendikar
 image=http://mtgimage.com/card/avenger%20of%20zendikar.jpg
 value=3.740
 rarity=M

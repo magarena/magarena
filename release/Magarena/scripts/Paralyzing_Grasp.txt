@@ -1,5 +1,5 @@
 name=Paralyzing Grasp
-url=http://magiccards.info/zen/en/58.html
+url=http://magiccards.info/query?q=%21paralyzing%20grasp
 image=http://mtgimage.com/card/paralyzing%20grasp.jpg
 value=2.536
 rarity=C

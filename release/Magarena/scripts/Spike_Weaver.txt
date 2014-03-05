@@ -1,5 +1,5 @@
 name=Spike Weaver
-url=http://magiccards.info/br/en/79.html
+url=http://magiccards.info/query?q=%21spike%20weaver
 image=http://mtgimage.com/card/spike%20weaver.jpg
 value=4.298
 rarity=R

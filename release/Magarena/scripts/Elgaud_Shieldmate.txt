@@ -1,5 +1,5 @@
 name=Elgaud Shieldmate
-url=http://magiccards.info/avr/en/50.html
+url=http://magiccards.info/query?q=%21elgaud%20shieldmate
 image=http://mtgimage.com/card/elgaud%20shieldmate.jpg
 value=3.841
 rarity=C

@@ -1,5 +1,5 @@
 name=Frenetic Raptor
-url=http://magiccards.info/le/en/93.html
+url=http://magiccards.info/query?q=%21frenetic%20raptor
 image=http://mtgimage.com/card/frenetic%20raptor.jpg
 value=1.776
 rarity=U

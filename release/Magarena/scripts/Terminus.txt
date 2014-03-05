@@ -1,5 +1,5 @@
 name=Terminus
-url=http://magiccards.info/avr/en/38.html
+url=http://magiccards.info/query?q=%21terminus
 image=http://mtgimage.com/card/terminus.jpg
 value=4.033
 removal=2

@@ -1,5 +1,5 @@
 name=Quiet Purity
-url=http://magiccards.info/chk/en/39.html
+url=http://magiccards.info/query?q=%21quiet%20purity
 image=http://mtgimage.com/card/quiet%20purity.jpg
 value=3.621
 removal=1

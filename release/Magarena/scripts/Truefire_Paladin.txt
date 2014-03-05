@@ -1,5 +1,5 @@
 name=Truefire Paladin
-url=http://magiccards.info/gtc/en/202.html
+url=http://magiccards.info/query?q=%21truefire%20paladin
 image=http://mtgimage.com/card/truefire%20paladin.jpg
 value=3.800
 rarity=U

@@ -1,5 +1,5 @@
 name=Ball Lightning
-url=http://magiccards.info/pd2/en/12.html
+url=http://magiccards.info/query?q=%21ball%20lightning
 image=http://mtgimage.com/card/ball%20lightning.jpg
 value=4.182
 rarity=R

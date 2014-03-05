@@ -1,5 +1,5 @@
 name=Grand Coliseum
-url=http://magiccards.info/on/en/319.html
+url=http://magiccards.info/query?q=%21grand%20coliseum
 image=http://mtgimage.com/card/grand%20coliseum.jpg
 value=3.689
 type=Land

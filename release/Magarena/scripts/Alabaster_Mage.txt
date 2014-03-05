@@ -1,5 +1,5 @@
 name=Alabaster Mage
-url=http://magiccards.info/m12/en/2.html
+url=http://magiccards.info/query?q=%21alabaster%20mage
 image=http://mtgimage.com/card/alabaster%20mage.jpg
 value=3.068
 rarity=U

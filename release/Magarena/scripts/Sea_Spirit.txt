@@ -1,5 +1,5 @@
 name=Sea Spirit
-url=http://magiccards.info/me2/en/65.html
+url=http://magiccards.info/query?q=%21sea%20spirit
 image=http://mtgimage.com/card/sea%20spirit.jpg
 value=2.457
 rarity=U

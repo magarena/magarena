@@ -1,5 +1,5 @@
 name=Skeletal Grimace
-url=http://magiccards.info/isd/en/116.html
+url=http://magiccards.info/query?q=%21skeletal%20grimace
 image=http://mtgimage.com/card/skeletal%20grimace.jpg
 value=3.270
 rarity=C

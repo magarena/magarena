@@ -1,5 +1,5 @@
 name=Devour Flesh
-url=http://magiccards.info/gtc/en/63.html
+url=http://magiccards.info/query?q=%21devour%20flesh
 image=http://mtgimage.com/card/devour%20flesh.jpg
 value=0.100
 removal=3

@@ -1,5 +1,5 @@
 name=Shinewend
-url=http://magiccards.info/mt/en/23.html
+url=http://magiccards.info/query?q=%21shinewend
 image=http://mtgimage.com/card/shinewend.jpg
 value=2.439
 rarity=C

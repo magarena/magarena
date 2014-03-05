@@ -1,5 +1,5 @@
 name=Nightsky Mimic
-url=http://magiccards.info/eve/en/91.html
+url=http://magiccards.info/query?q=%21nightsky%20mimic
 image=http://mtgimage.com/card/nightsky%20mimic.jpg
 value=3.728
 rarity=C

@@ -1,5 +1,5 @@
 name=Thran Golem
-url=http://magiccards.info/m12/en/220.html
+url=http://magiccards.info/query?q=%21thran%20golem
 image=http://mtgimage.com/card/thran%20golem.jpg
 value=4.250
 rarity=U

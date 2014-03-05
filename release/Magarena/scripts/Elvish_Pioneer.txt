@@ -1,5 +1,5 @@
 name=Elvish Pioneer
-url=http://magiccards.info/8e/en/243.html
+url=http://magiccards.info/query?q=%21elvish%20pioneer
 image=http://mtgimage.com/card/elvish%20pioneer.jpg
 value=3.807
 rarity=C

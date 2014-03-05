@@ -1,5 +1,5 @@
 name=Rogue's Passage
-url=http://magiccards.info/rtr/en/245.html
+url=http://magiccards.info/query?q=%21rogue%27s%20passage
 image=http://mtgimage.com/card/rogue's%20passage.jpg
 value=3.896
 rarity=U

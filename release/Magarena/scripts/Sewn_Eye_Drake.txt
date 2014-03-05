@@ -1,5 +1,5 @@
 name=Sewn-Eye Drake
-url=http://magiccards.info/arb/en/135.html
+url=http://magiccards.info/query?q=%21sewn%2Deye%20drake
 image=http://mtgimage.com/card/sewn%2Deye%20drake.jpg
 value=2.926
 ability=flying;haste

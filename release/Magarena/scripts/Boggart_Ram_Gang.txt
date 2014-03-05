@@ -1,5 +1,5 @@
 name=Boggart Ram-Gang
-url=http://magiccards.info/pd2/en/13.html
+url=http://magiccards.info/query?q=%21boggart%20ram%2Dgang
 image=http://mtgimage.com/card/boggart%20ram%2Dgang.jpg
 value=3.604
 rarity=U

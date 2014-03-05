@@ -1,5 +1,5 @@
 name=Phobian Phantasm
-url=http://magiccards.info/cs/en/66.html
+url=http://magiccards.info/query?q=%21phobian%20phantasm
 image=http://mtgimage.com/card/phobian%20phantasm.jpg
 value=2.694
 rarity=U

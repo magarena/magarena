@@ -1,5 +1,5 @@
 name=Midnight Recovery
-url=http://magiccards.info/gtc/en/73.html
+url=http://magiccards.info/query?q=%21midnight%20recovery
 image=http://mtgimage.com/card/midnight%20recovery.jpg
 value=2.756
 rarity=C

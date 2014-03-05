@@ -1,5 +1,5 @@
 name=Aqueous Form
-url=http://magiccards.info/ths/en/39.html
+url=http://magiccards.info/query?q=%21aqueous%20form
 image=http://mtgimage.com/card/aqueous%20form.jpg
 value=4.035
 rarity=C

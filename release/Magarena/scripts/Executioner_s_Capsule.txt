@@ -1,5 +1,5 @@
 name=Executioner's Capsule
-url=http://magiccards.info/mma/en/83.html
+url=http://magiccards.info/query?q=%21executioner%27s%20capsule
 image=http://mtgimage.com/card/executioner%27s%20capsule.jpg
 value=4.286
 rarity=U

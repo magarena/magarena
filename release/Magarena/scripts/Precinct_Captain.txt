@@ -1,5 +1,5 @@
 name=Precinct Captain
-url=http://magiccards.info/rtr/en/17.html
+url=http://magiccards.info/query?q=%21precinct%20captain
 image=http://mtgimage.com/card/precinct%20captain.jpg
 value=3.795
 rarity=R

@@ -1,5 +1,5 @@
 name=Grave Pact
-url=http://magiccards.info/cmd/en/85.html
+url=http://magiccards.info/query?q=%21grave%20pact
 image=http://mtgimage.com/card/grave%20pact.jpg
 value=4.475
 rarity=R

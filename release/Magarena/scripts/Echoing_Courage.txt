@@ -1,5 +1,5 @@
 name=Echoing Courage
-url=http://magiccards.info/ds/en/74.html
+url=http://magiccards.info/query?q=%21echoing%20courage
 image=http://mtgimage.com/card/echoing%20courage.jpg
 value=3.500
 rarity=C

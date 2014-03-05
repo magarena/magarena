@@ -1,5 +1,5 @@
 name=Inertia Bubble
-url=http://magiccards.info/mi/en/37.html
+url=http://magiccards.info/query?q=%21inertia%20bubble
 image=http://mtgimage.com/card/inertia%20bubble.jpg
 value=2.117
 rarity=C

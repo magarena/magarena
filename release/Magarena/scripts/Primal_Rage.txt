@@ -1,5 +1,5 @@
 name=Primal Rage
-url=http://magiccards.info/10e/en/286.html
+url=http://magiccards.info/query?q=%21primal%20rage
 image=http://mtgimage.com/card/primal%20rage.jpg
 value=4.196
 rarity=U

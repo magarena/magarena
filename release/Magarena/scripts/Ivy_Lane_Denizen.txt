@@ -1,5 +1,5 @@
 name=Ivy Lane Denizen
-url=http://magiccards.info/gtc/en/125.html
+url=http://magiccards.info/query?q=%21ivy%20lane%20denizen
 image=http://mtgimage.com/card/ivy%20lane%20denizen.jpg
 value=3.153
 rarity=C

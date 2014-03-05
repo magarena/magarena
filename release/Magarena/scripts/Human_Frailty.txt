@@ -1,5 +1,5 @@
 name=Human Frailty
-url=http://magiccards.info/avr/en/109.html
+url=http://magiccards.info/query?q=%21human%20frailty
 image=http://mtgimage.com/card/human%20frailty.jpg
 value=2.946
 removal=2

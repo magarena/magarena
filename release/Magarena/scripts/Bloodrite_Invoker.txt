@@ -1,5 +1,5 @@
 name=Bloodrite Invoker
-url=http://magiccards.info/roe/en/97.html
+url=http://magiccards.info/query?q=%21bloodrite%20invoker
 image=http://mtgimage.com/card/bloodrite%20invoker.jpg
 value=2.188
 rarity=C

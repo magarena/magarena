@@ -1,5 +1,5 @@
 name=Symbiotic Elf
-url=http://magiccards.info/on/en/288.html
+url=http://magiccards.info/query?q=%21symbiotic%20elf
 image=http://mtgimage.com/card/symbiotic%20elf.jpg
 value=2.860
 rarity=C

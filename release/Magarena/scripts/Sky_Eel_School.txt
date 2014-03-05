@@ -1,5 +1,5 @@
 name=Sky-Eel School
-url=http://magiccards.info/som/en/44.html
+url=http://magiccards.info/query?q=%21sky%2Deel%20school
 image=http://mtgimage.com/card/sky-eel%20school.jpg
 value=2.161
 rarity=C

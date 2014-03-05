@@ -1,5 +1,5 @@
 name=Sliver Queen
-url=http://magiccards.info/sh/en/141.html
+url=http://magiccards.info/query?q=%21sliver%20queen
 image=http://mtgimage.com/card/sliver%20queen.jpg
 value=4.603
 rarity=R

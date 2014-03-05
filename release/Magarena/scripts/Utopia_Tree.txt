@@ -1,5 +1,5 @@
 name=Utopia Tree
-url=http://magiccards.info/9e/en/277.html
+url=http://magiccards.info/query?q=%21utopia%20tree
 image=http://mtgimage.com/card/utopia%20tree.jpg
 value=4.118
 rarity=R

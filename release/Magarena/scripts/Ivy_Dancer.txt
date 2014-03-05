@@ -1,5 +1,5 @@
 name=Ivy Dancer
-url=http://magiccards.info/rav/en/171.html
+url=http://magiccards.info/query?q=%21ivy%20dancer
 image=http://mtgimage.com/card/ivy%20dancer.jpg
 value=2.107
 rarity=U

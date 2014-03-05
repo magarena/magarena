@@ -1,5 +1,5 @@
 name=Welkin Tern
-url=http://magiccards.info/zen/en/76.html
+url=http://magiccards.info/query?q=%21welkin%20tern
 image=http://mtgimage.com/card/welkin%20tern.jpg
 value=2.640
 ability=flying;can't block creatures without flying

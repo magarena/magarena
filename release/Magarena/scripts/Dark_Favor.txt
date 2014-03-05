@@ -1,5 +1,5 @@
 name=Dark Favor
-url=http://magiccards.info/m12/en/89.html
+url=http://magiccards.info/query?q=%21dark%20favor
 image=http://mtgimage.com/card/dark%20favor.jpg
 value=2.907
 rarity=C

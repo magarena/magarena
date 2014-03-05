@@ -1,5 +1,5 @@
 name=Dust Bowl
-url=http://magiccards.info/mm/en/316.html
+url=http://magiccards.info/query?q=%21dust%20bowl
 image=http://mtgimage.com/card/dust%20bowl.jpg
 value=4.290
 rarity=R

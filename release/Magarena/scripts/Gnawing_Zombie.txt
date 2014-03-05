@@ -1,5 +1,5 @@
 name=Gnawing Zombie
-url=http://magiccards.info/m14/en/99.html
+url=http://magiccards.info/query?q=%21gnawing%20zombie
 image=http://mtgimage.com/card/gnawing%20zombie.jpg
 value=3.293
 rarity=U

@@ -1,5 +1,5 @@
 name=Benalish Emissary
-url=http://magiccards.info/in/en/5.html
+url=http://magiccards.info/query?q=%21benalish%20emissary
 image=http://mtgimage.com/card/benalish%20emissary.jpg
 value=3.600
 rarity=U

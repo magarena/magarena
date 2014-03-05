@@ -1,5 +1,5 @@
 name=Nightmare
-url=http://magiccards.info/m10/en/107.html
+url=http://magiccards.info/query?q=%21nightmare
 image=http://mtgimage.com/card/nightmare.jpg
 value=4.018
 rarity=R

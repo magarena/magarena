@@ -1,5 +1,5 @@
 name=Anax and Cymede
-url=http://magiccards.info/ths/en/186.html
+url=http://magiccards.info/query?q=%21anax%20and%20cymede
 image=http://mtgimage.com/card/anax%20and%20cymede.jpg
 value=3.935
 rarity=R

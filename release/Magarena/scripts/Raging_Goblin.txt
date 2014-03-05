@@ -1,5 +1,5 @@
 name=Raging Goblin
-url=http://magiccards.info/m10/en/153.html
+url=http://magiccards.info/query?q=%21raging%20goblin
 image=http://mtgimage.com/card/raging%20goblin.jpg
 value=3.979
 ability=haste

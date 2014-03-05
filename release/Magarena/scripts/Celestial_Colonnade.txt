@@ -1,5 +1,5 @@
 name=Celestial Colonnade
-url=http://magiccards.info/wwk/en/133.html
+url=http://magiccards.info/query?q=%21celestial%20colonnade
 image=http://mtgimage.com/card/celestial%20colonnade.jpg
 value=4.338
 rarity=R

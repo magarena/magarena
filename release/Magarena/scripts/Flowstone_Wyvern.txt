@@ -1,5 +1,5 @@
 name=Flowstone Wyvern
-url=http://magiccards.info/tp/en/176.html
+url=http://magiccards.info/query?q=%21flowstone%20wyvern
 image=http://mtgimage.com/card/flowstone%20wyvern.jpg
 value=2.530
 rarity=R

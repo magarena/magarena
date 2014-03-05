@@ -1,5 +1,5 @@
 name=Vulshok Sorcerer
-url=http://magiccards.info/ddi/en/50.html
+url=http://magiccards.info/query?q=%21vulshok%20sorcerer
 image=http://mtgimage.com/card/vulshok%20sorcerer.jpg
 value=3.176
 rarity=C
