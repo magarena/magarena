@@ -3,7 +3,7 @@ url=http://magiccards.info/bng/en/143.html
 image=http://mtgimage.com/card/unravel%20the%20aether.jpg
 value=3.2
 rarity=U
-type=instant
+type=Instant
 cost={1}{G}
 timing=removal
 requires_groovy_code
