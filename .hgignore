@@ -29,3 +29,4 @@ duels/*
 release/Magarena/logs
 notes/
 release/Magarena/players
+release/Magarena/decks/*.dec
