@@ -117,6 +117,7 @@ public class MagicTargetFilterFactory {
         single.put("black permanent", TARGET_BLACK_PERMANENT);
         single.put("black or red permanent", TARGET_BLACK_RED_PERMANENT);
         single.put("multicolored permanent you control", TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL);
+        single.put("monocolored creature", TARGET_MONOCOLORED_CREATURE);
 
         single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
         single.put("card from your hand", TARGET_CARD_FROM_HAND);

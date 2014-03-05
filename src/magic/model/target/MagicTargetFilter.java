@@ -1167,6 +1167,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicPermanentFilterImpl TARGET_MONOCOLORED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
+            return MagicColor.isMono(permanent) && permanent.isCreature();
+        }
+    };
+    
     MagicPermanentFilterImpl TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
             return MagicColor.isMulti(permanent) && permanent.isController(player);
