@@ -8,3 +8,4 @@ subtype=Aura
 cost={U}
 given_ability=unblockable;attacks effect PN scry 1.
 timing=aura
+enchant=unblockable,pos creature
