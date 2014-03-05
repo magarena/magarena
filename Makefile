@@ -631,8 +631,10 @@ normalize_files:
 	sed -i -e 's/\t/    /g' ${FILES}
 	# remove empty lines in scripts
 	sed -i -e '/^\s*$$/d' release/Magarena/scripts/*.txt
-	# use mtgimage
-	make mtgimage
+	# use mtgimage for image
+	make img-mtgimage
+	# use magiccard.info query for text
+	make url-magiccard
 
 %.post:
 	@echo "[img]"`grep -o "http.*jpg" release/Magarena/scripts/$*.txt`"[/img]"
@@ -657,11 +659,11 @@ src/magic/MurmurHash3.java:
 	curl https://raw.github.com/infinispan/infinispan/master/commons/src/main/java/org/infinispan/commons/hash/MurmurHash3.java > $@
 	patch $@ src/magic/MurmurHash3.diff
 
-mtgimage:
+img-mtgimage:
 	grep mtgimage -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_image.awk {} '>' {.}.img
 	-ls -1 release/Magarena/scripts/*.img | parallel mv {} {.}.txt
 
-magiccard:
+url-magiccard:
 	grep query -L `grep token= -L release/Magarena/scripts/*.txt` | parallel awk -f scripts/set_url.awk {} '>' {.}.url
 	-ls -1 release/Magarena/scripts/*.url | parallel mv {} {.}.txt
 
