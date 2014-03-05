@@ -1,0 +1,7 @@
+name=1/1 colorless Myr artifact creature token
+token=Gold
+image=http://magiccards.info/extras/token/born-of-the-gods/gold.jpg
+value=1
+type=Artifact
+cost={0}
+ability=sac add mana any

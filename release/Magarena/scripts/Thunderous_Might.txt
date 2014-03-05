@@ -1,0 +1,11 @@
+name=Thunderous Might
+url=http://magiccards.info/bng/en/114.html
+image=http://mtgimage.com/card/thunderous%20might.jpg
+value=4
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+enchant=pump,pos creature
+timing=main
+requires_groovy_code

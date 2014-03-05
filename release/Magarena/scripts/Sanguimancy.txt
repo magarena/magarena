@@ -1,0 +1,9 @@
+name=Sanguimancy
+url=http://magiccards.info/bng/en/81.html
+image=http://mtgimage.com/card/sanguimancy.jpg
+value=3.893
+rarity=U
+type=Sorcery
+cost={4}{B}
+timing=main
+requires_groovy_code

@@ -1,0 +1,43 @@
+name=Reaper King
+url=http://magiccards.info/shm/en/260.html
+image=http://mtgimage.com/card/reaper%20king.jpg
+value=4.162
+rarity=R
+type=Legendary,Artifact,Creature
+subtype=Scarecrow
+cost={2/W}{2/U}{2/B}{2/R}{2/G}
+pt=6/6
+ability=alt cost {2}{W}{U}{B}{R} named {2}{W}{U}{B}{R};\
+        alt cost {2}{U}{B}{R}{G} named {2}{U}{B}{R}{G};\
+        alt cost {2}{B}{R}{G}{W} named {2}{B}{R}{G}{W};\
+        alt cost {2}{R}{G}{W}{U} named {2}{R}{G}{W}{U};\
+        alt cost {2}{G}{W}{U}{B} named {2}{G}{W}{U}{B};\
+        alt cost {4}{W}{U}{B} named {4}{W}{U}{B};\
+        alt cost {4}{W}{B}{R} named {4}{W}{B}{R};\
+        alt cost {4}{W}{B}{G} named {4}{W}{B}{G};\
+        alt cost {4}{U}{B}{R} named {4}{U}{B}{R};\
+        alt cost {4}{U}{R}{G} named {4}{U}{R}{G};\
+        alt cost {4}{B}{R}{G} named {4}{B}{R}{G};\
+        alt cost {4}{R}{G}{W} named {4}{R}{G}{W};\
+        alt cost {4}{R}{W}{U} named {4}{R}{W}{U};\
+        alt cost {4}{G}{W}{U} named {4}{G}{W}{U};\
+        alt cost {4}{G}{U}{B} named {4}{G}{U}{B};\
+        alt cost {6}{W}{U} named {6}{W}{U};\
+        alt cost {6}{W}{B} named [6}{W}{B};\
+        alt cost {6}{U}{B} named {6}{U}{B};\
+        alt cost {6}{U}{R} named {6}{U}{R};\
+        alt cost {6}{B}{R} named {6}{B}{R};\
+        alt cost {6}{B}{G} named {6}{B}{G};\
+        alt cost {6}{W}{R} named {6}{R}{W};\
+        alt cost {6}{R}{G} named {6}{R}{G};\
+        alt cost {6}{G}{W} named {6}{G}{W};\
+        alt cost {6}{G}{U} named {6}{G}{U};\
+        alt cost {8}{W} named {8}{W};\
+        alt cost {8}{U} named {8}{U};\
+        alt cost {8}{B} named {8}{B};\
+        alt cost {8}{R} named {8}{R};\
+        alt cost {8}{G} named {8}{G};\
+        alt cost {10} named {10};\
+        lord other Scarecrow creatures you control get +1/+1
+timing=main
+requires_groovy_code

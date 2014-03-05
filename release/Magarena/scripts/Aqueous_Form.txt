@@ -1,0 +1,10 @@
+name=Aqueous Form
+url=http://magiccards.info/ths/en/39.html
+image=http://mtgimage.com/card/aqueous%20form.jpg
+value=4.035
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}
+given_ability=unblockable;attacks effect PN scry 1.
+timing=aura

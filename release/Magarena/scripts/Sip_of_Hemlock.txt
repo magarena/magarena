@@ -1,0 +1,9 @@
+name=Sip of Hemlock
+url=http://magiccards.info/ths/en/106.html
+image=http://mtgimage.com/card/sip%20of%20hemlock.jpg
+value=1.621
+rarity=C
+type=Sorcery
+cost={4}{B}{B}
+timing=main
+requires_groovy_code

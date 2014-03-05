@@ -1,0 +1,10 @@
+name=7/1 red Elemental creature token with trample and haste
+token=Elemental
+image=http://magiccards.info/extras/token/zendikar/elemental.jpg
+value=3
+type=Creature
+subtype=Elemental
+color=R
+cost={0}
+pt=7/1
+ability=trample;haste;exile at end

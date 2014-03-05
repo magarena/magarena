@@ -1,0 +1,11 @@
+name=Felhide Brawler
+url=http://magiccards.info/bng/en/70.html
+image=http://mtgimage.com/card/felhide%20brawler.jpg
+value=2.25
+rarity=C
+type=Creature
+subtype=Minotaur
+cost={1}{B}
+pt=2/2
+timing=main
+requires_groovy_code

@@ -1,0 +1,11 @@
+name=Fleshmad Steed
+url=http://magiccards.info/ths/en/88.html
+image=http://mtgimage.com/card/fleshmad%20steed.jpg
+value=0.91
+rarity=C
+type=Creature
+subtype=Horse
+cost={1}{B}
+pt=2/2
+timing=main
+requires_groovy_code

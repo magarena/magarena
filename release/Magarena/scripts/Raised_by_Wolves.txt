@@ -1,0 +1,12 @@
+name=Raised by Wolves
+url=http://magiccards.info/bng/en/135.html
+image=http://mtgimage.com/card/raised%20by%20wolves.jpg
+value=4.25
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{G}{G}
+ability=enters effect PN puts two 2/2 green Wolf creature tokens onto the battlefield.
+enchant=pump,pos creature
+timing=main
+requires_groovy_code

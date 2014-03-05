@@ -1,0 +1,12 @@
+name=Eater of Hope
+url=http://magiccards.info/bng/en/66.html
+image=http://mtgimage.com/card/eater%20of%20hope.jpg
+value=3.318
+rarity=R
+type=Creature
+subtype=Demon
+cost={5}{B}{B}
+pt=6/4
+ability=flying
+timing=main
+requires_groovy_code

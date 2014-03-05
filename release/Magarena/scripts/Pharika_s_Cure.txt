@@ -1,0 +1,9 @@
+name=Pharika's Cure
+url=http://magiccards.info/ths/en/100.html
+image=http://mtgimage.com/card/pharika's%20cure.jpg
+value=3.396
+rarity=C
+type=Instant
+cost={B}{B}
+timing=removal
+requires_groovy_code=Douse in Gloom

@@ -1,0 +1,12 @@
+name=Viper's Kiss
+url=http://magiccards.info/ths/en/109.html
+image=http://mtgimage.com/card/viper's%20kiss.jpg
+value=3.136
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+given_ability=can't activate abilities
+given_pt=-1/-1
+enchant=weaken -1/-1,neg creature
+timing=aura
