@@ -36,7 +36,7 @@ public class MagicMoveCardAction extends MagicAction {
         this(card,MagicPermanent.NONE,fromLocation,toLocation);
     }
 
-    MagicMoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
+    public MagicMoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
         this(permanent.getCard(),permanent,MagicLocationType.Play,toLocation);
     }
 
