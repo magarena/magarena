@@ -1,0 +1,10 @@
+name=Ultimate Price
+url=http://magiccards.info/rtr/en/82.html
+image=http://mtgimage.com/card/ultimate%20price.jpg
+value=4.176
+removal=3
+rarity=U
+type=Instant
+cost={1}{B}
+timing=removal
+effect=Destroy target monocolored creature.
