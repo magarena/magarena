@@ -1,6 +1,6 @@
 name=Devour Flesh
 url=http://magiccards.info/gtc/en/63.html
-image=http://magiccards.info/scans/en/gtc/63.jpg
+image=http://mtgimage.com/card/devour%20flesh.jpg
 value=0.100
 removal=3
 rarity=C
