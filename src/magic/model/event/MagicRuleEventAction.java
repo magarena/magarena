@@ -81,7 +81,7 @@ import java.util.Set;
 
 public enum MagicRuleEventAction {
     Destroy(
-        "destroy (?<choice>[^\\.]*).", 
+        "destroy (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Negative,
         MagicDestroyTargetPicker.Destroy,
         MagicTiming.Removal,
@@ -98,7 +98,7 @@ public enum MagicRuleEventAction {
         }
     ),
     DestroyNoRegen(
-        "destroy (?<choice>[^\\.]*). it can't be regenerated.", 
+        "destroy (?<choice>[^\\.]*)\\. it can't be regenerated\\.", 
         MagicTargetHint.Negative, 
         MagicDestroyTargetPicker.DestroyNoRegen,
         MagicTiming.Removal,
@@ -116,7 +116,7 @@ public enum MagicRuleEventAction {
         }
     ),
     CounterUnless(
-        "counter (?<choice>[^\\.]*) unless its controller pays (?<cost>[^\\.]*).", 
+        "counter (?<choice>[^\\.]*) unless its controller pays (?<cost>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Counter,
         "Counter"
@@ -140,7 +140,7 @@ public enum MagicRuleEventAction {
         }
     },
     Counter(
-        "counter (?<choice>[^\\.]*).", 
+        "counter (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
         MagicDefaultTargetPicker.create(), 
         MagicTiming.Counter,
@@ -157,7 +157,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Exile(
-        "exile (?<choice>[^\\.]*).", 
+        "exile (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
         MagicExileTargetPicker.create(), 
         MagicTiming.Removal,
@@ -174,7 +174,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Deals(
-        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*).",
+        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(1), 
         MagicTiming.Removal,
@@ -196,7 +196,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventSelf(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to sn this turn.",
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to sn this turn\\.",
         MagicTiming.Pump,
         "Prevent"
     ) {
@@ -212,7 +212,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventOwner(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to pn this turn.",
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to pn this turn\\.",
         MagicTiming.Pump,
         "Prevent"
     ) {
@@ -228,7 +228,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventChosen(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to (?<choice>[^\\.]*) this turn.",
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to (?<choice>[^\\.]*) this turn\\.",
         MagicTargetHint.Positive, 
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
@@ -250,7 +250,7 @@ public enum MagicRuleEventAction {
         }
     },
     Draw(
-        "(pn )?draw(s)? (?<amount>[a-z]+) card(s)?.", 
+        "(pn )?draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
@@ -266,7 +266,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawChosen(
-        "(?<choice>[^\\.]*) draws (?<amount>[a-z]+) card(s)?.",
+        "(?<choice>[^\\.]*) draws (?<amount>[a-z]+) card(s)?\\.",
         MagicTargetHint.Positive, 
         MagicTiming.Draw, 
         "Draw"
@@ -287,7 +287,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawDiscardSelf(
-        "(pn )?draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?.", 
+        "(pn )?draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
@@ -305,7 +305,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawDiscardChosen(
-        "(?<choice>[^\\.]*) draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?.", 
+        "(?<choice>[^\\.]*) draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
@@ -327,7 +327,7 @@ public enum MagicRuleEventAction {
         }
     },
     DiscardChosen(
-        "(?<choice>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?.", 
+        "(?<choice>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Draw, 
         "Discard"
@@ -353,7 +353,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseGainLifeChosen(
-        "(?<choice>[^\\.]*) loses (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life.", 
+        "(?<choice>[^\\.]*) loses (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "-Life"
@@ -376,7 +376,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainLife(
-        "(pn )?gain(s)? (?<amount>[0-9]+) life.", 
+        "(pn )?gain(s)? (?<amount>[0-9]+) life\\.", 
         MagicTiming.Removal, 
         "+Life"
     ) {
@@ -392,7 +392,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainLifeChosen(
-        "(?<choice>[^\\.]*) gains (?<amount>[0-9]+) life.", 
+        "(?<choice>[^\\.]*) gains (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Positive, 
         MagicTiming.Removal, 
         "+Life"
@@ -413,7 +413,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLifeSelf(
-        "(pn )?lose(s)? (?<amount>[0-9]+) life.", 
+        "(pn )?lose(s)? (?<amount>[0-9]+) life\\.", 
         MagicTiming.Removal, 
         "-Life"
     ) {
@@ -429,7 +429,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLifeChosen(
-        "(?<choice>[^\\.]*) loses (?<amount>[0-9]+) life.", 
+        "(?<choice>[^\\.]*) loses (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "-Life"
@@ -450,7 +450,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpSelf(
-        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn.", 
+        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn\\.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -468,7 +468,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpChosen(
-        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
+        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
         MagicTargetHint.Positive, 
         MagicPumpTargetPicker.create(), 
         MagicTiming.Pump, 
@@ -492,7 +492,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGroup(
-        "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) until end of turn.", 
+        "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -517,7 +517,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainSelf(
-        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) and gains (?<ability>[^\\.]*) until end of turn.", 
+        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) and gains (?<ability>[^\\.]*) until end of turn\\.", 
         MagicTiming.Pump
     ) {
         @Override
@@ -539,7 +539,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosen(
-        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>.*) until end of turn.", 
+        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>.*) until end of turn\\.", 
         MagicTargetHint.Positive
     ) {
         @Override
@@ -574,7 +574,7 @@ public enum MagicRuleEventAction {
         }
     },
     WeakenChosen(
-        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "Weaken"
@@ -604,7 +604,7 @@ public enum MagicRuleEventAction {
         }
     },
     WeakenGroup(
-        "(?<group>[^\\.]*) get (?<pt>[0-9-]+/[0-9-]+) until end of turn.", 
+        "(?<group>[^\\.]*) get (?<pt>[0-9-]+/[0-9-]+) until end of turn\\.", 
         MagicTiming.Removal, 
         "Weaken"
     ) {
@@ -629,7 +629,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTChosen(
-        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn.", 
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn\\.", 
         MagicTiming.Removal, 
         "Pump"
     ) {
@@ -651,7 +651,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTGainChosen(
-        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>[^\\.]*) until end of turn.", 
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>[^\\.]*) until end of turn\\.", 
         MagicTiming.Removal
     ) {
         @Override
@@ -678,7 +678,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainSelf(
-        "sn gains (?<ability>[^\\.]*) until end of turn."
+        "sn gains (?<ability>[^\\.]*) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -707,7 +707,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainChosen(
-        "(?<choice>[^\\.]*) gains (?<ability>[^\\.]*) until end of turn.", 
+        "(?<choice>[^\\.]*) gains (?<ability>[^\\.]*) until end of turn\\.", 
         MagicTargetHint.Positive
     ) {
         @Override
@@ -767,7 +767,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainGroup(
-        "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn."
+        "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -796,7 +796,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn.",
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn\\.",
         MagicTiming.Pump
     ) {
         @Override
@@ -829,7 +829,7 @@ public enum MagicRuleEventAction {
     },
     
     CounterOnChosen(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (?<choice>[^\\.]*)."
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (?<choice>[^\\.]*)\\."
     ) {
        @Override
        public MagicEventAction getAction(final Matcher matcher) {
@@ -896,7 +896,7 @@ public enum MagicRuleEventAction {
        }
      },
      BounceSelf(
-        "return sn to its owner's hand.",
+        "return sn to its owner's hand\\.",
         MagicTiming.Removal,
         "Bounce",
         new MagicEventAction() {
@@ -907,7 +907,7 @@ public enum MagicRuleEventAction {
         }
     ),
     RecoverSelf(
-        "return sn from the graveyard to its owner's hand.",
+        "return sn from the graveyard to its owner's hand\\.",
         MagicTiming.Draw,
         "Return",
         new MagicEventAction() {
@@ -920,7 +920,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Bounce(
-        "return (?<choice>[^\\.]*) to its owner's hand.",
+        "return (?<choice>[^\\.]*) to its owner's hand\\.",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -937,7 +937,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Recover(
-        "return (?<choice>[^\\.]*from your graveyard) to your hand.",
+        "return (?<choice>[^\\.]*from your graveyard) to your hand\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
@@ -955,7 +955,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Reanimate(
-        "return (?<choice>[^\\.]*) to the battlefield.",
+        "return (?<choice>[^\\.]*) to the battlefield\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Pump,
@@ -975,7 +975,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Tap(
-        "tap (?<choice>[^\\.]*).",
+        "tap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
         MagicTiming.Tapping,
@@ -992,7 +992,7 @@ public enum MagicRuleEventAction {
         }
     ),
     UntapSelf(
-        "untap sn.", 
+        "untap sn\\.", 
         MagicTiming.Tapping, 
         "Untap"
     ) {
@@ -1007,7 +1007,7 @@ public enum MagicRuleEventAction {
         }
     },
     Untap(
-        "untap (?<choice>[^\\.]*).",
+        "untap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Positive,
         MagicTapTargetPicker.Untap,
         MagicTiming.Tapping,
@@ -1024,7 +1024,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TokenSingle(
-        "pn puts (a|an) (?<name>[^\\.]*) onto the battlefield.",
+        "pn puts (a|an) (?<name>[^\\.]*) onto the battlefield\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1043,7 +1043,7 @@ public enum MagicRuleEventAction {
         }
     },
     TokenMany(
-        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield.",
+        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1065,7 +1065,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillSelf(
-        "PN puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard.",
+        "PN puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard\\.",
         MagicTiming.Draw, 
         "Mill"
     ) {
@@ -1081,7 +1081,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillChosen(
-        "(?<choice>[^\\.]*) puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard.", 
+        "(?<choice>[^\\.]*) puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard\\.", 
         MagicTiming.Draw, 
         "Mill"
     ) {
@@ -1101,7 +1101,7 @@ public enum MagicRuleEventAction {
         }
     },
     SacrificeUnless(
-        "pay (?<cost>[^\\.]*). If you don't, sacrifice SN.", 
+        "pay (?<cost>[^\\.]*)\\. If you don't, sacrifice SN\\.", 
         MagicTiming.None, 
         "Sacrifice"
     ) {
@@ -1120,7 +1120,7 @@ public enum MagicRuleEventAction {
         }
     },
     Scry(
-        "PN scry 1.",
+        "PN scry 1\\.",
         MagicTiming.Draw,
         "Scry"
     ) {
