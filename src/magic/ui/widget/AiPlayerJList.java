@@ -102,7 +102,6 @@ public class AiPlayerJList
             panel.setOpaque(false);
             panel.setForeground(foreColor);
             panel.add(getPlayerNameLabel(), "gapbottom 4");
-            //            panel.add(getAiTypeLabel());
             panel.add(getTimestampLabel());
             return panel;
         }
@@ -118,7 +117,6 @@ public class AiPlayerJList
             lbl.setFont(FontsAndBorders.FONT2);
             lbl.setForeground(foreColor);
             lbl.setVerticalAlignment(SwingConstants.TOP);
-            //            lbl.setBorder(BorderFactory.createDashedBorder(null));
             return lbl;
         }
 

@@ -51,26 +51,10 @@ public class HumanPlayerJList
 
             panel.add(getAvatarPortrait(), "w 70!, h 70!");
             panel.add(getNamePanel(), "w 100%");
-//            panel.add(getDefaultDuelSettingsPanel(), "w 100%");
             panel.add(getMiniStatsPanel());
 
             return panel;
         }
-
-//        private JPanel getDefaultDuelSettingsPanel() {
-//            final JPanel panel = new JPanel(new MigLayout("debug, insets 0 20 0 0, flowy"));
-//            panel.setOpaque(false);
-//            panel.add(getLabel("Life: " + profile.getPlayerLife()), "w 100%");
-//            panel.add(getLabel("Hand: " + profile.getHandSize()), "w 100%");
-//            panel.add(getLabel("Win: " + profile.getGamesToWin()), "w 100%");
-//            return panel;
-//        }
-
-//        private JLabel getLabel(final String caption) {
-//            final JLabel lbl = new JLabel(caption);
-//            lbl.setForeground(foreColor);
-//            return lbl;
-//        }
 
         private JLabel getAvatarPortrait() {
             return new JLabel(profile.getAvatar().getIcon(2));
