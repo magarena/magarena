@@ -116,7 +116,7 @@ public class MulliganScreen
      */
     @Override
     public MenuButton getRightAction() {
-        return new MenuButton("Play this hand >", new AbstractAction() {
+        return new MenuButton("Play this hand", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (!content.isBusy()) {
