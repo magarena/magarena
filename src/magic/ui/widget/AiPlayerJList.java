@@ -108,9 +108,8 @@ public class AiPlayerJList
         }
 
         private JLabel getTimestampLabel() {
-            final JLabel lbl = new JLabel("Last played: Never");
+            final JLabel lbl = new JLabel("Last played: " + profile.getStats().getLastPlayed());
             lbl.setForeground(foreColor);
-            //            lbl.setBorder(BorderFactory.createDashedBorder(null));
             return lbl;
         }
 
