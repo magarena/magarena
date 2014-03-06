@@ -479,9 +479,9 @@ check_meta: cards/scriptable.txt
 	grep -v "\*" |\
 	${NO_OUTPUT}
 
-# every url is to a HTML page
+# every url contains the string query
 check_url:
-	grep '^url=' -r release/Magarena/scripts | grep -v "html$$" | ${NO_OUTPUT}
+	grep '^url=' -r release/Magarena/scripts | grep -v "query" | ${NO_OUTPUT}
 
 # every image is to a jpg file or attachment
 check_image:
@@ -506,7 +506,7 @@ check_groovy_escape:
 
 # return should not be last token in groovy script
 check_empty_return:
-	grep "return[[:space:]]*$$" -r release/Magarena/scripts | ${NO_OUTPUT}
+	grep "return[[:space:]]*$$" -r release/Magarena/scripts/*.groovy | ${NO_OUTPUT}
 
 # script name is canonical card name
 check_script_name:
