@@ -8,7 +8,6 @@ import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import magic.MagicUtility;
 import magic.data.DuelConfig;
 import magic.data.IconImages;
 import magic.model.MagicDeck;

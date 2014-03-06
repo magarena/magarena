@@ -6,7 +6,6 @@ import magic.data.HighQualityCardImagesProvider;
 import magic.model.MagicCardDefinition;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import magic.ui.widget.TransparentImagePanel;
 
