@@ -39,7 +39,6 @@ public class MainMenuScreen extends AbstractScreen {
         menuPanel.addMenuItem("New duel", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-
                 getFrame().showDuelPlayersScreen();
             }
         });

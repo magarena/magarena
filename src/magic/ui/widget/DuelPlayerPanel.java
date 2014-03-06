@@ -90,7 +90,6 @@ public class DuelPlayerPanel
             public void mouseExited(MouseEvent e) { DuelPlayerPanel.this.dispatchEvent(e); }
         });
         panel.add(textArea, "w 100%, h 100%");
-//        MagicUtility.setDebugBorder(panel);
         return panel;
     }
 
