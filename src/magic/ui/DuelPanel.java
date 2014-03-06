@@ -12,7 +12,6 @@ import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckDescriptionViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
-import magic.ui.viewer.DuelDifficultyViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PlayerDetailsPanel;
 import magic.ui.widget.TexturedPanel;
@@ -49,7 +48,6 @@ public class DuelPanel extends TexturedPanel {
     private final DeckStrengthViewer strengthViewer;
     private final DeckDescriptionViewer[] deckDescriptionViewers;
     private final CardViewer cardViewer;
-    private final DuelDifficultyViewer duelDifficultyViewer;
     private final CardTable[] cardTables;
     private final JButton[] generateButtons;
     private final DeckStatisticsViewer[] statsViewers;
@@ -83,9 +81,6 @@ public class DuelPanel extends TexturedPanel {
         leftPanel.add(cardViewer);
 
         leftPanel.add(Box.createVerticalStrut(SPACING));
-
-        // games won info
-        duelDifficultyViewer=new DuelDifficultyViewer(duel);
 
         // add scrolling to left side
         final JScrollPane leftScrollPane = new JScrollPane(leftPanel);
