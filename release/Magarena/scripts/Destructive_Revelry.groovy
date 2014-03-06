@@ -15,7 +15,8 @@
             event.processTargetPermanent(game, {
                 final MagicPermanent permanent ->
                 game.doAction(new MagicDestroyAction(permanent));
-                game.doAction(new MagicChangeLifeAction(permanent.getController(),2));
+                final MagicDamage damage = new MagicDamage(event.getSource(),permanent.getController(),2);
+                game.doAction(new MagicDealDamageAction(damage));
             });
         }
     }
