@@ -1,9 +1,9 @@
 name=Desecration Demon
-url=http://magiccards.info/rtr/en/63.html
+url=http://magiccards.info/query?q=%21desecration%20demon
 image=http://mtgimage.com/card/Desecration%20Demon.jpg
 value=4.291
-rarity=M
-type=Legendary,Creature
+rarity=R
+type=Creature
 subtype=Demon
 cost={2}{B}{B}
 pt=6/6
