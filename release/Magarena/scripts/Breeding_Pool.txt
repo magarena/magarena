@@ -1,5 +1,5 @@
 name=Breeding Pool
-url=http://magiccards.info/di/en/172.html
+url=http://magiccards.info/query?q=%21breeding%20pool
 image=http://mtgimage.com/card/breeding%20pool.jpg
 value=4.100
 rarity=R

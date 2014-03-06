@@ -1,5 +1,5 @@
 name=Strider Harness
-url=http://magiccards.info/som/en/207.html
+url=http://magiccards.info/query?q=%21strider%20harness
 image=http://mtgimage.com/card/strider%20harness.jpg
 value=3.000
 rarity=C

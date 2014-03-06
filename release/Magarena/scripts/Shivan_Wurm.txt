@@ -1,5 +1,5 @@
 name=Shivan Wurm
-url=http://magiccards.info/ps/en/124.html
+url=http://magiccards.info/query?q=%21shivan%20wurm
 image=http://mtgimage.com/card/shivan%20wurm.jpg
 value=4.506
 rarity=R

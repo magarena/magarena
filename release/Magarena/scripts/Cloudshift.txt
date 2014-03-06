@@ -1,5 +1,5 @@
 name=Cloudshift
-url=http://magiccards.info/avr/en/12.html
+url=http://magiccards.info/query?q=%21cloudshift
 image=http://mtgimage.com/card/cloudshift.jpg
 value=3.925
 rarity=C

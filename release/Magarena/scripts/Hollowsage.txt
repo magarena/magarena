@@ -1,5 +1,5 @@
 name=Hollowsage
-url=http://magiccards.info/shm/en/69.html
+url=http://magiccards.info/query?q=%21hollowsage
 image=http://mtgimage.com/card/hollowsage.jpg
 value=2.930
 rarity=U

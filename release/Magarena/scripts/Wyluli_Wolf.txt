@@ -1,5 +1,5 @@
 name=Wyluli Wolf
-url=http://magiccards.info/6e/en/270.html
+url=http://magiccards.info/query?q=%21wyluli%20wolf
 image=http://mtgimage.com/card/wyluli%20wolf.jpg
 value=2.344
 rarity=C

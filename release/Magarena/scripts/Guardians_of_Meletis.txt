@@ -1,5 +1,5 @@
 name=Guardians of Meletis
-url=http://magiccards.info/ths/en/217.html
+url=http://magiccards.info/query?q=%21guardians%20of%20meletis
 image=http://mtgimage.com/card/guardians%20of%20meletis.jpg
 value=3.365
 rarity=C

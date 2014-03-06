@@ -1,5 +1,5 @@
 name=Hobgoblin Dragoon
-url=http://magiccards.info/eve/en/142.html
+url=http://magiccards.info/query?q=%21hobgoblin%20dragoon
 image=http://mtgimage.com/card/hobgoblin%20dragoon.jpg
 value=2.287
 ability=flying;first strike

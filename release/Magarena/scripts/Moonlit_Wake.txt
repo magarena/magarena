@@ -1,5 +1,5 @@
 name=Moonlit Wake
-url=http://magiccards.info/mm/en/29.html
+url=http://magiccards.info/query?q=%21moonlit%20wake
 image=http://mtgimage.com/card/moonlit%20wake.jpg
 value=3.017
 rarity=U

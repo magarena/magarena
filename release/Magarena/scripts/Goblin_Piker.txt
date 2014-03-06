@@ -1,5 +1,5 @@
 name=Goblin Piker
-url=http://magiccards.info/m12/en/141.html
+url=http://magiccards.info/query?q=%21goblin%20piker
 image=http://mtgimage.com/card/goblin%20piker.jpg
 value=1.441
 rarity=C

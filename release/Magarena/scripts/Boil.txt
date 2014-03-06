@@ -1,5 +1,5 @@
 name=Boil
-url=http://magiccards.info/8e/en/180.html
+url=http://magiccards.info/query?q=%21boil
 image=http://mtgimage.com/card/boil.jpg
 value=4.095
 rarity=U

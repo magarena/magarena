@@ -1,5 +1,5 @@
 name=Civic Wayfinder
-url=http://magiccards.info/rav/en/157.html
+url=http://magiccards.info/query?q=%21civic%20wayfinder
 image=http://mtgimage.com/card/civic%20wayfinder.jpg
 value=3.523
 rarity=C

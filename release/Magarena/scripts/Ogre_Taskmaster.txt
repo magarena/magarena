@@ -1,5 +1,5 @@
 name=Ogre Taskmaster
-url=http://magiccards.info/9e/en/205.html
+url=http://magiccards.info/query?q=%21ogre%20taskmaster
 image=http://mtgimage.com/card/ogre%20taskmaster.jpg
 value=2.250
 ability=can't block

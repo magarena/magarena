@@ -1,5 +1,5 @@
 name=Phyresis
-url=http://magiccards.info/mbs/en/49.html
+url=http://magiccards.info/query?q=%21phyresis
 image=http://mtgimage.com/card/phyresis.jpg
 value=3.335
 rarity=C

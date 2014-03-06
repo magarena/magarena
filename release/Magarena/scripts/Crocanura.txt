@@ -1,5 +1,5 @@
 name=Crocanura
-url=http://magiccards.info/gtc/en/116.html
+url=http://magiccards.info/query?q=%21crocanura
 image=http://mtgimage.com/card/crocanura.jpg
 value=3.148
 rarity=C

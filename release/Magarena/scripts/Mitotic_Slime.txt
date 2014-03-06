@@ -1,5 +1,5 @@
 name=Mitotic Slime
-url=http://magiccards.info/m11/en/185.html
+url=http://magiccards.info/query?q=%21mitotic%20slime
 image=http://mtgimage.com/card/mitotic%20slime.jpg
 value=3.829
 rarity=R

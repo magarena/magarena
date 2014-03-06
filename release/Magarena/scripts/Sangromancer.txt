@@ -1,5 +1,5 @@
 name=Sangromancer
-url=http://magiccards.info/mbs/en/53.html
+url=http://magiccards.info/query?q=%21sangromancer
 image=http://mtgimage.com/card/sangromancer.jpg
 value=3.828
 rarity=R

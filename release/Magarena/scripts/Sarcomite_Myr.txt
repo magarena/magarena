@@ -1,5 +1,5 @@
 name=Sarcomite Myr
-url=http://magiccards.info/pch/en/13.html
+url=http://magiccards.info/query?q=%21sarcomite%20myr
 image=http://mtgimage.com/card/sarcomite%20myr.jpg
 value=2.707
 rarity=C

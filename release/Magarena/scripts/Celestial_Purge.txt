@@ -1,5 +1,5 @@
 name=Celestial Purge
-url=http://magiccards.info/m12/en/11.html
+url=http://magiccards.info/query?q=%21celestial%20purge
 image=http://mtgimage.com/card/celestial%20purge.jpg
 value=3.576
 removal=4

@@ -1,5 +1,5 @@
 name=Meloku the Clouded Mirror
-url=http://magiccards.info/mma/en/52.html
+url=http://magiccards.info/query?q=%21meloku%20the%20clouded%20mirror
 image=http://mtgimage.com/card/meloku%20the%20clouded%20mirror.jpg
 value=4.419
 rarity=R

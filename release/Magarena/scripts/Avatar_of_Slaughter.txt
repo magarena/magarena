@@ -1,5 +1,5 @@
 name=Avatar of Slaughter
-url=http://magiccards.info/cmd/en/111.html
+url=http://magiccards.info/query?q=%21avatar%20of%20slaughter
 image=http://mtgimage.com/card/avatar%20of%20slaughter.jpg
 value=4.070
 rarity=R

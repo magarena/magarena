@@ -1,5 +1,5 @@
 name=Kavu Climber
-url=http://magiccards.info/10e/en/273.html
+url=http://magiccards.info/query?q=%21kavu%20climber
 image=http://mtgimage.com/card/kavu%20climber.jpg
 value=3.111
 rarity=C

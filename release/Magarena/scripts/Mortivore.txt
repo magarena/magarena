@@ -1,5 +1,5 @@
 name=Mortivore
-url=http://magiccards.info/cmd/en/89.html
+url=http://magiccards.info/query?q=%21mortivore
 image=http://mtgimage.com/card/mortivore.jpg
 value=4.385
 rarity=R

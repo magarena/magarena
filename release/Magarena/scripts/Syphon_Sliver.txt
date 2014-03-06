@@ -1,5 +1,5 @@
 name=Syphon Sliver
-url=http://magiccards.info/m14/en/117.html
+url=http://magiccards.info/query?q=%21syphon%20sliver
 image=http://mtgimage.com/card/syphon%20sliver.jpg
 value=3.078
 rarity=R

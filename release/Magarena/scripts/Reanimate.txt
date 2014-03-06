@@ -1,5 +1,5 @@
 name=Reanimate
-url=http://magiccards.info/arc/en/21.html
+url=http://magiccards.info/query?q=%21reanimate
 image=http://mtgimage.com/card/reanimate.jpg
 value=4.601
 rarity=U

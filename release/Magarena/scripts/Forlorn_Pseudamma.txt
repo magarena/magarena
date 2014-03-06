@@ -1,5 +1,5 @@
 name=Forlorn Pseudamma
-url=http://magiccards.info/bng/en/71.html
+url=http://magiccards.info/query?q=%21forlorn%20pseudamma
 image=http://mtgimage.com/card/forlorn%20pseudamma.jpg
 value=2.909
 rarity=U

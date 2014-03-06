@@ -1,5 +1,5 @@
 name=Lizard Warrior
-url=http://magiccards.info/po/en/144.html
+url=http://magiccards.info/query?q=%21lizard%20warrior
 image=http://mtgimage.com/card/lizard%20warrior.jpg
 value=1.972
 rarity=C

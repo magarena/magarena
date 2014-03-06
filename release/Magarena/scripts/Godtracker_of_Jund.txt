@@ -1,5 +1,5 @@
 name=Godtracker of Jund
-url=http://magiccards.info/arb/en/55.html
+url=http://magiccards.info/query?q=%21godtracker%20of%20jund
 image=http://mtgimage.com/card/godtracker%20of%20jund.jpg
 value=2.240
 rarity=C

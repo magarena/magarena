@@ -1,5 +1,5 @@
 name=Copper Carapace
-url=http://magiccards.info/mbs/en/102.html
+url=http://magiccards.info/query?q=%21copper%20carapace
 image=http://mtgimage.com/card/copper%20carapace.jpg
 value=2.238
 rarity=C

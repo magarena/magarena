@@ -1,5 +1,5 @@
 name=Cat Burglar
-url=http://magiccards.info/ex/en/54.html
+url=http://magiccards.info/query?q=%21cat%20burglar
 image=http://mtgimage.com/card/cat%20burglar.jpg
 value=3.012
 rarity=C

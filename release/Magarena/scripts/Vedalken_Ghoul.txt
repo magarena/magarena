@@ -1,5 +1,5 @@
 name=Vedalken Ghoul
-url=http://magiccards.info/arb/en/32.html
+url=http://magiccards.info/query?q=%21vedalken%20ghoul
 image=http://mtgimage.com/card/vedalken%20ghoul.jpg
 value=2.988
 rarity=C

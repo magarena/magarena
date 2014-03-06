@@ -1,5 +1,5 @@
 name=Ward Sliver
-url=http://magiccards.info/le/en/25.html
+url=http://magiccards.info/query?q=%21ward%20sliver
 image=http://mtgimage.com/card/ward%20sliver.jpg
 value=4.161
 rarity=U

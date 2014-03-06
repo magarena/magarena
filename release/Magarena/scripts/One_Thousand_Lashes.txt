@@ -1,5 +1,5 @@
 name=One Thousand Lashes
-url=http://magiccards.info/gtc/en/183.html
+url=http://magiccards.info/query?q=%21one%20thousand%20lashes
 image=http://mtgimage.com/card/one%20thousand%20lashes.jpg
 value=3.078
 rarity=U

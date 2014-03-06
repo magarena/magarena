@@ -1,5 +1,5 @@
 name=Flensermite
-url=http://magiccards.info/mbs/en/41.html
+url=http://magiccards.info/query?q=%21flensermite
 image=http://mtgimage.com/card/flensermite.jpg
 value=3.031
 ability=infect;lifelink

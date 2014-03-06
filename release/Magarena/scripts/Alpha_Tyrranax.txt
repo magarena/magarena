@@ -1,5 +1,5 @@
 name=Alpha Tyrranax
-url=http://magiccards.info/som/en/109.html
+url=http://magiccards.info/query?q=%21alpha%20tyrranax
 image=http://mtgimage.com/card/alpha%20tyrranax.jpg
 value=2.399
 rarity=C

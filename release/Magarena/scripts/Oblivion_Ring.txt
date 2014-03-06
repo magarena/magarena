@@ -1,5 +1,5 @@
 name=Oblivion Ring
-url=http://magiccards.info/m12/en/27.html
+url=http://magiccards.info/query?q=%21oblivion%20ring
 image=http://mtgimage.com/card/oblivion%20ring.jpg
 value=4.354
 removal=2

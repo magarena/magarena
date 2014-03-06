@@ -1,5 +1,5 @@
 name=Soratami Cloudskater
-url=http://magiccards.info/chk/en/86.html
+url=http://magiccards.info/query?q=%21soratami%20cloudskater
 image=http://mtgimage.com/card/soratami%20cloudskater.jpg
 value=2.591
 rarity=C

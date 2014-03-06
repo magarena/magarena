@@ -1,5 +1,5 @@
 name=Execute
-url=http://magiccards.info/9e/en/128.html
+url=http://magiccards.info/query?q=%21execute
 image=http://mtgimage.com/card/execute.jpg
 value=2.000
 rarity=U

@@ -1,5 +1,5 @@
 name=Platinum Angel
-url=http://magiccards.info/m11/en/212.html
+url=http://magiccards.info/query?q=%21platinum%20angel
 image=http://mtgimage.com/card/platinum%20angel.jpg
 value=4.405
 rarity=M

@@ -1,5 +1,5 @@
 name=Vivid Creek
-url=http://magiccards.info/cmd/en/294.html
+url=http://magiccards.info/query?q=%21vivid%20creek
 image=http://mtgimage.com/card/vivid%20creek.jpg
 value=3.556
 rarity=U

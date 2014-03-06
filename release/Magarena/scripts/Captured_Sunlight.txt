@@ -1,5 +1,5 @@
 name=Captured Sunlight
-url=http://magiccards.info/arb/en/66.html
+url=http://magiccards.info/query?q=%21captured%20sunlight
 image=http://mtgimage.com/card/captured%20sunlight.jpg
 value=2.820
 rarity=C

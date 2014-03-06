@@ -1,5 +1,5 @@
 name=Argothian Enchantress
-url=http://magiccards.info/us/en/234.html
+url=http://magiccards.info/query?q=%21argothian%20enchantress
 image=http://mtgimage.com/card/argothian%20enchantress.jpg
 value=4.577
 rarity=R

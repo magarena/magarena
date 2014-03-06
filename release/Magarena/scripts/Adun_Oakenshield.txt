@@ -1,5 +1,5 @@
 name=Adun Oakenshield
-url=http://magiccards.info/lg/en/256.html
+url=http://magiccards.info/query?q=%21adun%20oakenshield
 image=http://mtgimage.com/card/adun%20oakenshield.jpg
 value=3.806
 rarity=R

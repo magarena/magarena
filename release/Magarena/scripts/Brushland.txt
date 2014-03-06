@@ -1,5 +1,5 @@
 name=Brushland
-url=http://magiccards.info/10e/en/349.html
+url=http://magiccards.info/query?q=%21brushland
 image=http://mtgimage.com/card/brushland.jpg
 value=4.240
 rarity=R

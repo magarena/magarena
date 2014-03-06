@@ -1,5 +1,5 @@
 name=Vivid Meadow
-url=http://magiccards.info/cmd/en/297.html
+url=http://magiccards.info/query?q=%21vivid%20meadow
 image=http://mtgimage.com/card/vivid%20meadow.jpg
 value=3.750
 rarity=U

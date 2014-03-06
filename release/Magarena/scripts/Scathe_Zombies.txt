@@ -1,5 +1,5 @@
 name=Scathe Zombies
-url=http://magiccards.info/10e/en/175.html
+url=http://magiccards.info/query?q=%21scathe%20zombies
 image=http://mtgimage.com/card/scathe%20zombies.jpg
 value=1.819
 rarity=C

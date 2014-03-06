@@ -1,5 +1,5 @@
 name=Reckless Scholar
-url=http://magiccards.info/zen/en/60.html
+url=http://magiccards.info/query?q=%21reckless%20scholar
 image=http://mtgimage.com/card/reckless%20scholar.jpg
 value=3.298
 rarity=C

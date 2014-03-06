@@ -1,5 +1,5 @@
 name=Demonic Taskmaster
-url=http://magiccards.info/avr/en/95.html
+url=http://magiccards.info/query?q=%21demonic%20taskmaster
 image=http://mtgimage.com/card/demonic%20taskmaster.jpg
 value=3.715
 rarity=U

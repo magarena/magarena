@@ -1,5 +1,5 @@
 name=Imperial Seal
-url=http://magiccards.info/p3k/en/78.html
+url=http://magiccards.info/query?q=%21imperial%20seal
 image=http://mtgimage.com/card/imperial%20seal.jpg
 value=4.633
 rarity=R

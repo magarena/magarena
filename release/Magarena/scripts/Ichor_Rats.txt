@@ -1,5 +1,5 @@
 name=Ichor Rats
-url=http://magiccards.info/som/en/67.html
+url=http://magiccards.info/query?q=%21ichor%20rats
 image=http://mtgimage.com/card/ichor%20rats.jpg
 value=3.611
 rarity=U

@@ -1,5 +1,5 @@
 name=Kaysa
-url=http://magiccards.info/ai/en/80.html
+url=http://magiccards.info/query?q=%21kaysa
 image=http://mtgimage.com/card/kaysa.jpg
 value=3.851
 rarity=R

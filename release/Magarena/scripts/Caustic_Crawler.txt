@@ -1,5 +1,5 @@
 name=Caustic Crawler
-url=http://magiccards.info/wwk/en/54.html
+url=http://magiccards.info/query?q=%21caustic%20crawler
 image=http://mtgimage.com/card/caustic%20crawler.jpg
 value=2.896
 rarity=U

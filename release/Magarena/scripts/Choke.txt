@@ -1,5 +1,5 @@
 name=Choke
-url=http://magiccards.info/8e/en/237.html
+url=http://magiccards.info/query?q=%21choke
 image=http://mtgimage.com/card/choke.jpg
 value=3.833
 rarity=U

@@ -1,5 +1,5 @@
 name=Blasting Station
-url=http://magiccards.info/5dn/en/107.html
+url=http://magiccards.info/query?q=%21blasting%20station
 image=http://mtgimage.com/card/blasting%20station.jpg
 value=3.762
 rarity=U

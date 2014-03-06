@@ -1,5 +1,5 @@
 name=Skywatcher Adept
-url=http://magiccards.info/roe/en/88.html
+url=http://magiccards.info/query?q=%21skywatcher%20adept
 image=http://mtgimage.com/card/skywatcher%20adept.jpg
 value=3.109
 rarity=C

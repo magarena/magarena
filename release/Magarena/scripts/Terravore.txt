@@ -1,5 +1,5 @@
 name=Terravore
-url=http://magiccards.info/od/en/278.html
+url=http://magiccards.info/query?q=%21terravore
 image=http://mtgimage.com/card/terravore.jpg
 value=4.291
 rarity=R

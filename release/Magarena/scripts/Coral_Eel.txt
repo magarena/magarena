@@ -1,5 +1,5 @@
 name=Coral Eel
-url=http://magiccards.info/9eb/en/3.html
+url=http://magiccards.info/query?q=%21coral%20eel
 image=http://mtgimage.com/card/coral%20eel.jpg
 value=2.250
 rarity=C

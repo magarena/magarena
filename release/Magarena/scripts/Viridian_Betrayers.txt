@@ -1,5 +1,5 @@
 name=Viridian Betrayers
-url=http://magiccards.info/nph/en/124.html
+url=http://magiccards.info/query?q=%21viridian%20betrayers
 image=http://mtgimage.com/card/viridian%20betrayers.jpg
 value=2.545
 rarity=C

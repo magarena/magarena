@@ -1,5 +1,5 @@
 name=Stratozeppelid
-url=http://magiccards.info/gp/en/36.html
+url=http://magiccards.info/query?q=%21stratozeppelid
 image=http://mtgimage.com/card/stratozeppelid.jpg
 value=2.000
 ability=flying;can't block creatures without flying

@@ -1,5 +1,5 @@
 name=Bayou
-url=http://magiccards.info/me4/en/242.html
+url=http://magiccards.info/query?q=%21bayou
 image=http://mtgimage.com/card/bayou.jpg
 value=4.636
 rarity=R

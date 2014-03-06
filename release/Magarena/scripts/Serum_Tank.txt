@@ -1,5 +1,5 @@
 name=Serum Tank
-url=http://magiccards.info/pch/en/125.html
+url=http://magiccards.info/query?q=%21serum%20tank
 image=http://mtgimage.com/card/serum%20tank.jpg
 value=3.280
 rarity=U

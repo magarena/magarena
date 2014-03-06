@@ -1,5 +1,5 @@
 name=Obliterate
-url=http://magiccards.info/8e/en/204.html
+url=http://magiccards.info/query?q=%21obliterate
 image=http://mtgimage.com/card/obliterate.jpg
 value=4.260
 rarity=R

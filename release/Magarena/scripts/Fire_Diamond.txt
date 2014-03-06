@@ -1,5 +1,5 @@
 name=Fire Diamond
-url=http://magiccards.info/7e/en/296.html
+url=http://magiccards.info/query?q=%21fire%20diamond
 image=http://mtgimage.com/card/fire%20diamond.jpg
 value=3.109
 rarity=U

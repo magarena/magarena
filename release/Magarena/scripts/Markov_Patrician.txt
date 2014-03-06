@@ -1,5 +1,5 @@
 name=Markov Patrician
-url=http://magiccards.info/isd/en/107.html
+url=http://magiccards.info/query?q=%21markov%20patrician
 image=http://mtgimage.com/card/markov%20patrician.jpg
 value=3.098
 rarity=C

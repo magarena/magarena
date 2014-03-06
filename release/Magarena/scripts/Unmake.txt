@@ -1,5 +1,5 @@
 name=Unmake
-url=http://magiccards.info/arc/en/98.html
+url=http://magiccards.info/query?q=%21unmake
 image=http://mtgimage.com/card/unmake.jpg
 value=3.707
 removal=5

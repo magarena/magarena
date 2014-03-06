@@ -1,5 +1,5 @@
 name=Archangel of Thune
-url=http://magiccards.info/m14/en/5.html
+url=http://magiccards.info/query?q=%21archangel%20of%20thune
 image=http://mtgimage.com/card/archangel%20of%20thune.jpg
 value=3.861
 rarity=M

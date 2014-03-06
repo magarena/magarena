@@ -1,5 +1,5 @@
 name=Ambush Viper
-url=http://magiccards.info/isd/en/169.html
+url=http://magiccards.info/query?q=%21ambush%20viper
 image=http://mtgimage.com/card/ambush%20viper.jpg
 value=3.961
 removal=2

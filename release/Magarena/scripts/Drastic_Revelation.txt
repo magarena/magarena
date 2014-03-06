@@ -1,5 +1,5 @@
 name=Drastic Revelation
-url=http://magiccards.info/arb/en/111.html
+url=http://magiccards.info/query?q=%21drastic%20revelation
 image=http://mtgimage.com/card/drastic%20revelation.jpg
 value=2.957
 rarity=U

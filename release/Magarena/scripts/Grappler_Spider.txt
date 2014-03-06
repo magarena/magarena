@@ -1,5 +1,5 @@
 name=Grappler Spider
-url=http://magiccards.info/wwk/en/102.html
+url=http://magiccards.info/query?q=%21grappler%20spider
 image=http://mtgimage.com/card/grappler%20spider.jpg
 value=1.648
 ability=reach

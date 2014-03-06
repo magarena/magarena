@@ -1,5 +1,5 @@
 name=Armageddon
-url=http://magiccards.info/me4/en/5.html
+url=http://magiccards.info/query?q=%21armageddon
 image=http://mtgimage.com/card/armageddon.jpg
 value=4.514
 removal=2

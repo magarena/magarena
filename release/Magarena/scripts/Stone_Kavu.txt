@@ -1,5 +1,5 @@
 name=Stone Kavu
-url=http://magiccards.info/ps/en/93.html
+url=http://magiccards.info/query?q=%21stone%20kavu
 image=http://mtgimage.com/card/stone%20kavu.jpg
 value=2.840
 rarity=C

@@ -1,5 +1,5 @@
 name=Inkfathom Infiltrator
-url=http://magiccards.info/shm/en/167.html
+url=http://magiccards.info/query?q=%21inkfathom%20infiltrator
 image=http://mtgimage.com/card/inkfathom%20infiltrator.jpg
 value=4.070
 rarity=U

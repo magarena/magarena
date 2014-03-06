@@ -1,5 +1,5 @@
 name=Misty Rainforest
-url=http://magiccards.info/zen/en/220.html
+url=http://magiccards.info/query?q=%21misty%20rainforest
 image=http://mtgimage.com/card/misty%20rainforest.jpg
 value=4.468
 rarity=R

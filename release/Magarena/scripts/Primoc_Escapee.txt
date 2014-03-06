@@ -1,5 +1,5 @@
 name=Primoc Escapee
-url=http://magiccards.info/le/en/49.html
+url=http://magiccards.info/query?q=%21primoc%20escapee
 image=http://mtgimage.com/card/primoc%20escapee.jpg
 value=2.053
 rarity=U

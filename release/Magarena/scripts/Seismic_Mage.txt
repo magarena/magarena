@@ -1,5 +1,5 @@
 name=Seismic Mage
-url=http://magiccards.info/mm/en/211.html
+url=http://magiccards.info/query?q=%21seismic%20mage
 image=http://mtgimage.com/card/seismic%20mage.jpg
 value=3.698
 rarity=R

@@ -1,5 +1,5 @@
 name=Jolrael's Favor
-url=http://magiccards.info/pr/en/116.html
+url=http://magiccards.info/query?q=%21jolrael%27s%20favor
 image=http://mtgimage.com/card/jolrael's%20favor.jpg
 value=2.609
 rarity=C

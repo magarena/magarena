@@ -1,5 +1,5 @@
 name=Saber Ants
-url=http://magiccards.info/mm/en/267.html
+url=http://magiccards.info/query?q=%21saber%20ants
 image=http://mtgimage.com/card/saber%20ants.jpg
 value=3.922
 rarity=U

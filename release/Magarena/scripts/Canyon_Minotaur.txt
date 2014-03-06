@@ -1,5 +1,5 @@
 name=Canyon Minotaur
-url=http://magiccards.info/m11/en/126.html
+url=http://magiccards.info/query?q=%21canyon%20minotaur
 image=http://mtgimage.com/card/canyon%20minotaur.jpg
 value=2.183
 rarity=C

@@ -1,5 +1,5 @@
 name=Manalith
-url=http://magiccards.info/m12/en/212.html
+url=http://magiccards.info/query?q=%21manalith
 image=http://mtgimage.com/card/manalith.jpg
 value=3.522
 rarity=C

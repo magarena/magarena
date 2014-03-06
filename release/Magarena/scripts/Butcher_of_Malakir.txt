@@ -1,5 +1,5 @@
 name=Butcher of Malakir
-url=http://magiccards.info/cmd/en/75.html
+url=http://magiccards.info/query?q=%21butcher%20of%20malakir
 image=http://mtgimage.com/card/butcher%20of%20malakir.jpg
 value=3.635
 rarity=R

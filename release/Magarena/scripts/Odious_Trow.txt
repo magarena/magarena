@@ -1,5 +1,5 @@
 name=Odious Trow
-url=http://magiccards.info/eve/en/125.html
+url=http://magiccards.info/query?q=%21odious%20trow
 image=http://mtgimage.com/card/odious%20trow.jpg
 value=3.064
 rarity=C

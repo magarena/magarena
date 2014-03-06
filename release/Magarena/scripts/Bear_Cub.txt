@@ -1,5 +1,5 @@
 name=Bear Cub
-url=http://magiccards.info/po2/en/63.html
+url=http://magiccards.info/query?q=%21bear%20cub
 image=http://mtgimage.com/card/bear%20cub.jpg
 value=4.388
 rarity=C

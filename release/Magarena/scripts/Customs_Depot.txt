@@ -1,5 +1,5 @@
 name=Customs Depot
-url=http://magiccards.info/mm/en/71.html
+url=http://magiccards.info/query?q=%21customs%20depot
 image=http://mtgimage.com/card/customs%20depot.jpg
 value=3.161
 rarity=U

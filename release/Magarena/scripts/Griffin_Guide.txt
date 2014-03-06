@@ -1,5 +1,5 @@
 name=Griffin Guide
-url=http://magiccards.info/ddh/en/25.html
+url=http://magiccards.info/query?q=%21griffin%20guide
 image=http://mtgimage.com/card/griffin%20guide.jpg
 value=4.125
 rarity=U

@@ -1,5 +1,5 @@
 name=Stormcaller of Keranos
-url=http://magiccards.info/bng/en/112.html
+url=http://magiccards.info/query?q=%21stormcaller%20of%20keranos
 image=http://mtgimage.com/card/stormcaller%20of%20keranos.jpg
 value=3.929
 rarity=U

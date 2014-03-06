@@ -1,5 +1,5 @@
 name=Dawnray Archer
-url=http://magiccards.info/ala/en/39.html
+url=http://magiccards.info/query?q=%21dawnray%20archer
 image=http://mtgimage.com/card/dawnray%20archer.jpg
 value=2.074
 rarity=U

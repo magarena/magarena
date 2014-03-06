@@ -1,5 +1,5 @@
 name=Scatter Arc
-url=http://magiccards.info/gtc/pt/48.html
+url=http://magiccards.info/query?q=%21scatter%20arc
 image=http://mtgimage.com/card/scatter%20arc.jpg
 value=2.360
 rarity=C

@@ -1,5 +1,5 @@
 name=Weatherseed Elf
-url=http://magiccards.info/ul/en/115.html
+url=http://magiccards.info/query?q=%21weatherseed%20elf
 image=http://mtgimage.com/card/weatherseed%20elf.jpg
 value=2.652
 rarity=C

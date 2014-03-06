@@ -1,5 +1,5 @@
 name=Kithkin Daggerdare
-url=http://magiccards.info/lw/en/223.html
+url=http://magiccards.info/query?q=%21kithkin%20daggerdare
 image=http://mtgimage.com/card/kithkin%20daggerdare.jpg
 value=2.455
 rarity=C

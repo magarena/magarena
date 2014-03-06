@@ -1,5 +1,5 @@
 name=God-Favored General
-url=http://magiccards.info/bng/en/14.html
+url=http://magiccards.info/query?q=%21god%2Dfavored%20general
 image=http://mtgimage.com/card/god-favored%20general.jpg
 value=2.909
 rarity=U

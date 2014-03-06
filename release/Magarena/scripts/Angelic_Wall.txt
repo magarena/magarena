@@ -1,5 +1,5 @@
 name=Angelic Wall
-url=http://magiccards.info/10e/en/5.html
+url=http://magiccards.info/query?q=%21angelic%20wall
 image=http://mtgimage.com/card/angelic%20wall.jpg
 value=3.148
 ability=defender;flying

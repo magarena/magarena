@@ -1,5 +1,5 @@
 name=Horizon Chimera
-url=http://magiccards.info/ths/en/194.html
+url=http://magiccards.info/query?q=%21horizon%20chimera
 image=http://mtgimage.com/card/horizon%20chimera.jpg
 value=3.566
 rarity=U

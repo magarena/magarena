@@ -1,5 +1,5 @@
 name=Arcane Teachings
-url=http://magiccards.info/10e/en/188.html
+url=http://magiccards.info/query?q=%21arcane%20teachings
 image=http://mtgimage.com/card/arcane%20teachings.jpg
 value=3.619
 rarity=U

@@ -1,5 +1,5 @@
 name=AEther Web
-url=http://magiccards.info/ts/en/189.html
+url=http://magiccards.info/query?q=%21aether%20web
 image=http://mtgimage.com/card/aether%20web.jpg
 value=3.289
 rarity=C

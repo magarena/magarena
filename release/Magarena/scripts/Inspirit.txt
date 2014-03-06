@@ -1,5 +1,5 @@
 name=Inspirit
-url=http://magiccards.info/9e/en/22.html
+url=http://magiccards.info/query?q=%21inspirit
 image=http://mtgimage.com/card/inspirit.jpg
 value=2.810
 rarity=U

@@ -1,5 +1,5 @@
 name=Sol'kanar the Swamp King
-url=http://magiccards.info/tsts/en/100.html
+url=http://magiccards.info/query?q=%21sol%27kanar%20the%20swamp%20king
 image=http://mtgimage.com/card/sol'kanar%20the%20swamp%20king.jpg
 value=4.006
 rarity=R

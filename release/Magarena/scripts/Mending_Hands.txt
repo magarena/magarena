@@ -1,5 +1,5 @@
 name=Mending Hands
-url=http://magiccards.info/9e/en/29.html
+url=http://magiccards.info/query?q=%21mending%20hands
 image=http://mtgimage.com/card/mending%20hands.jpg
 value=2.757
 rarity=C

@@ -1,5 +1,5 @@
 name=Gargoyle Castle
-url=http://magiccards.info/m10/en/225.html
+url=http://magiccards.info/query?q=%21gargoyle%20castle
 image=http://mtgimage.com/card/gargoyle%20castle.jpg
 value=3.742
 rarity=R

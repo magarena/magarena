@@ -1,5 +1,5 @@
 name=Loam Lion
-url=http://magiccards.info/ddh/en/5.html
+url=http://magiccards.info/query?q=%21loam%20lion
 image=http://mtgimage.com/card/loam%20lion.jpg
 value=4.365
 rarity=U

@@ -1,5 +1,5 @@
 name=Smoldering Crater
-url=http://magiccards.info/c13/en/325.html
+url=http://magiccards.info/query?q=%21smoldering%20crater
 image=http://mtgimage.com/card/smoldering%20crater.jpg
 value=3.188
 rarity=C

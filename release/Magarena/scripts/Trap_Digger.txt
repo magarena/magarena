@@ -1,5 +1,5 @@
 name=Trap Digger
-url=http://magiccards.info/sc/en/24.html
+url=http://magiccards.info/query?q=%21trap%20digger
 image=http://mtgimage.com/card/trap%20digger.jpg
 value=1.219
 rarity=R

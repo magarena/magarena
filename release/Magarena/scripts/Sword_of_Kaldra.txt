@@ -1,5 +1,5 @@
 name=Sword of Kaldra
-url=http://magiccards.info/mi/en/251.html
+url=http://magiccards.info/query?q=%21sword%20of%20kaldra
 image=http://mtgimage.com/card/sword%20of%20kaldra.jpg
 value=4.348
 rarity=R

@@ -1,5 +1,5 @@
 name=Ashen Monstrosity
-url=http://magiccards.info/bok/en/93.html
+url=http://magiccards.info/query?q=%21ashen%20monstrosity
 image=http://mtgimage.com/card/ashen%20monstrosity.jpg
 value=2.853
 ability=haste;attacks each turn if able

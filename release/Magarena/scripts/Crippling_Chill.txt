@@ -1,5 +1,5 @@
 name=Crippling Chill
-url=http://magiccards.info/avr/en/46.html
+url=http://magiccards.info/query?q=%21crippling%20chill
 image=http://mtgimage.com/card/crippling%20chill.jpg
 value=3.012
 rarity=C

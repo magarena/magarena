@@ -1,5 +1,5 @@
 name=Crimson Acolyte
-url=http://magiccards.info/in/en/11.html
+url=http://magiccards.info/query?q=%21crimson%20acolyte
 image=http://mtgimage.com/card/crimson%20acolyte.jpg
 value=3.696
 rarity=C

@@ -1,5 +1,5 @@
 name=Returned Centaur
-url=http://magiccards.info/ths/en/103.html
+url=http://magiccards.info/query?q=%21returned%20centaur
 image=http://mtgimage.com/card/returned%20centaur.jpg
 value=3.033
 rarity=C

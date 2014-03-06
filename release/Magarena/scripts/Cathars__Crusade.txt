@@ -1,5 +1,5 @@
 name=Cathars' Crusade
-url=http://magiccards.info/avr/en/10.html
+url=http://magiccards.info/query?q=%21cathars%27%20crusade
 image=http://mtgimage.com/card/cathars%27%20crusade.jpg
 value=3.876
 rarity=R

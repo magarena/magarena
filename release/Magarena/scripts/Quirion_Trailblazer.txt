@@ -1,5 +1,5 @@
 name=Quirion Trailblazer
-url=http://magiccards.info/in/en/205.html
+url=http://magiccards.info/query?q=%21quirion%20trailblazer
 image=http://mtgimage.com/card/quirion%20trailblazer.jpg
 value=2.423
 rarity=C

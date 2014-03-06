@@ -1,5 +1,5 @@
 name=Gang of Elk
-url=http://magiccards.info/7e/en/247.html
+url=http://magiccards.info/query?q=%21gang%20of%20elk
 image=http://mtgimage.com/card/gang%20of%20elk.jpg
 value=3.583
 rarity=U

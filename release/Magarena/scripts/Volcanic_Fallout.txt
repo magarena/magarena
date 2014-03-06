@@ -1,5 +1,5 @@
 name=Volcanic Fallout
-url=http://magiccards.info/arc/en/51.html
+url=http://magiccards.info/query?q=%21volcanic%20fallout
 image=http://mtgimage.com/card/volcanic%20fallout.jpg
 value=4.406
 removal=2

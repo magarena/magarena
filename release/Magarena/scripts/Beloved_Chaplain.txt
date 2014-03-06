@@ -1,5 +1,5 @@
 name=Beloved Chaplain
-url=http://magiccards.info/od/en/11.html
+url=http://magiccards.info/query?q=%21beloved%20chaplain
 image=http://mtgimage.com/card/beloved%20chaplain.jpg
 value=4.452
 rarity=U

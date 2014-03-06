@@ -1,5 +1,5 @@
 name=Grand Abolisher
-url=http://magiccards.info/m12/en/19.html
+url=http://magiccards.info/query?q=%21grand%20abolisher
 image=http://mtgimage.com/card/grand%20abolisher.jpg
 value=4.545
 rarity=R

@@ -1,5 +1,5 @@
 name=Kite Shield
-url=http://magiccards.info/m12/en/210.html
+url=http://magiccards.info/query?q=%21kite%20shield
 image=http://mtgimage.com/card/kite%20shield.jpg
 value=1.004
 rarity=U

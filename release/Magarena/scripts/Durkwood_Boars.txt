@@ -1,5 +1,5 @@
 name=Durkwood Boars
-url=http://magiccards.info/itp/en/12.html
+url=http://magiccards.info/query?q=%21durkwood%20boars
 image=http://mtgimage.com/card/durkwood%20boars.jpg
 value=2.070
 rarity=C

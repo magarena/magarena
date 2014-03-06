@@ -1,5 +1,5 @@
 name=Crossbow Ambush
-url=http://magiccards.info/sh/en/55.html
+url=http://magiccards.info/query?q=%21crossbow%20ambush
 image=http://mtgimage.com/card/crossbow%20ambush.jpg
 value=3.147
 rarity=C

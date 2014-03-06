@@ -1,5 +1,5 @@
 name=Conservator
-url=http://magiccards.info/4e/en/327.html
+url=http://magiccards.info/query?q=%21conservator
 image=http://mtgimage.com/card/conservator.jpg
 value=1.650
 rarity=U

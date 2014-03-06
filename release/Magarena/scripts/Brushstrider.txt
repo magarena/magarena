@@ -1,5 +1,5 @@
 name=Brushstrider
-url=http://magiccards.info/rtr/en/117.html
+url=http://magiccards.info/query?q=%21brushstrider
 image=http://mtgimage.com/card/brushstrider.jpg
 value=3.058
 rarity=U

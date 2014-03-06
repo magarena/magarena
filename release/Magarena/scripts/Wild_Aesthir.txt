@@ -1,5 +1,5 @@
 name=Wild Aesthir
-url=http://magiccards.info/me4/en/34.html
+url=http://magiccards.info/query?q=%21wild%20aesthir
 image=http://mtgimage.com/card/wild%20aesthir.jpg
 value=2.841
 rarity=C

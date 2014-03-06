@@ -1,5 +1,5 @@
 name=Spellbook
-url=http://magiccards.info/m10/en/220.html
+url=http://magiccards.info/query?q=%21spellbook
 image=http://mtgimage.com/card/spellbook.jpg
 value=3.769
 rarity=U

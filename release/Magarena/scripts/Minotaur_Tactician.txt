@@ -1,5 +1,5 @@
 name=Minotaur Tactician
-url=http://magiccards.info/ap/en/65.html
+url=http://magiccards.info/query?q=%21minotaur%20tactician
 image=http://mtgimage.com/card/minotaur%20tactician.jpg
 value=1.325
 rarity=C

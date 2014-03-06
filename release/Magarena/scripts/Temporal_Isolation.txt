@@ -1,5 +1,5 @@
 name=Temporal Isolation
-url=http://magiccards.info/ts/en/43.html
+url=http://magiccards.info/query?q=%21temporal%20isolation
 image=http://mtgimage.com/card/temporal%20isolation.jpg
 value=3.985
 rarity=C

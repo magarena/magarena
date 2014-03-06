@@ -1,5 +1,5 @@
 name=Mark of the Vampire
-url=http://magiccards.info/m13/en/99.html
+url=http://magiccards.info/query?q=%21mark%20of%20the%20vampire
 image=http://mtgimage.com/card/mark%20of%20the%20vampire.jpg
 value=3.292
 rarity=C

@@ -1,5 +1,5 @@
 name=Ageless Entity
-url=http://magiccards.info/ddh/en/18.html
+url=http://magiccards.info/query?q=%21ageless%20entity
 image=http://mtgimage.com/card/ageless%20entity.jpg
 value=4.297
 rarity=R

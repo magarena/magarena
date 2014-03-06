@@ -1,5 +1,5 @@
 name=Scrubland
-url=http://magiccards.info/me4/en/251.html
+url=http://magiccards.info/query?q=%21scrubland
 image=http://mtgimage.com/card/scrubland.jpg
 value=4.635
 rarity=R

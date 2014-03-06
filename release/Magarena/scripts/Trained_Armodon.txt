@@ -1,5 +1,5 @@
 name=Trained Armodon
-url=http://magiccards.info/dpa/en/85.html
+url=http://magiccards.info/query?q=%21trained%20armodon
 image=http://mtgimage.com/card/trained%20armodon.jpg
 value=2.938
 rarity=C

@@ -1,5 +1,5 @@
 name=Bountiful Harvest
-url=http://magiccards.info/m12/en/166.html
+url=http://magiccards.info/query?q=%21bountiful%20harvest
 image=http://mtgimage.com/card/bountiful%20harvest.jpg
 value=1.136
 rarity=C

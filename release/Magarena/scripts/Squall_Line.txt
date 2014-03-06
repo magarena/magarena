@@ -1,5 +1,5 @@
 name=Squall Line
-url=http://magiccards.info/ts/en/222.html
+url=http://magiccards.info/query?q=%21squall%20line
 image=http://mtgimage.com/card/squall%20line.jpg
 value=3.924
 rarity=R

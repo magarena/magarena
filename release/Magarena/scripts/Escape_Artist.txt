@@ -1,5 +1,5 @@
 name=Escape Artist
-url=http://magiccards.info/od/en/84.html
+url=http://magiccards.info/query?q=%21escape%20artist
 image=http://mtgimage.com/card/escape%20artist.jpg
 value=3.059
 rarity=C

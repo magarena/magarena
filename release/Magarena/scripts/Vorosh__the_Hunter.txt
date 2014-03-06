@@ -1,5 +1,5 @@
 name=Vorosh, the Hunter
-url=http://magiccards.info/cmd/en/235.html
+url=http://magiccards.info/query?q=%21vorosh%2C%20the%20hunter
 image=http://mtgimage.com/card/vorosh%2C%20the%20hunter.jpg
 value=4.174
 rarity=R

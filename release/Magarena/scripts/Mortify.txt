@@ -1,5 +1,5 @@
 name=Mortify
-url=http://magiccards.info/cmd/en/211.html
+url=http://magiccards.info/query?q=%21mortify
 image=http://mtgimage.com/card/mortify.jpg
 value=4.250
 removal=5

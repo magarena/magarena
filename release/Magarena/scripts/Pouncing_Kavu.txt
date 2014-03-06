@@ -1,5 +1,5 @@
 name=Pouncing Kavu
-url=http://magiccards.info/in/en/158.html
+url=http://magiccards.info/query?q=%21pouncing%20kavu
 image=http://mtgimage.com/card/pouncing%20kavu.jpg
 value=3.167
 rarity=C

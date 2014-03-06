@@ -1,5 +1,5 @@
 name=Kobold Taskmaster
-url=http://magiccards.info/tsts/en/65.html
+url=http://magiccards.info/query?q=%21kobold%20taskmaster
 image=http://mtgimage.com/card/kobold%20taskmaster.jpg
 value=3.500
 rarity=C

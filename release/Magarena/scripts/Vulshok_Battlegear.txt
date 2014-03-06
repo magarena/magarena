@@ -1,5 +1,5 @@
 name=Vulshok Battlegear
-url=http://magiccards.info/mi/en/272.html
+url=http://magiccards.info/query?q=%21vulshok%20battlegear
 image=http://mtgimage.com/card/vulshok%20battlegear.jpg
 value=3.769
 rarity=U

@@ -1,5 +1,5 @@
 name=Skyline Predator
-url=http://magiccards.info/rtr/en/50.html
+url=http://magiccards.info/query?q=%21skyline%20predator
 image=http://mtgimage.com/card/skyline%20predator.jpg
 value=2.050
 ability=flying;flash

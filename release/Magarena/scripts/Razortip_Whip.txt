@@ -1,5 +1,5 @@
 name=Razortip Whip
-url=http://magiccards.info/gtc/en/235.html
+url=http://magiccards.info/query?q=%21razortip%20whip
 image=http://mtgimage.com/card/razortip%20whip.jpg
 value=1.903
 rarity=C

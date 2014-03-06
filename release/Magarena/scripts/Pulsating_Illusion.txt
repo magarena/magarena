@@ -1,5 +1,5 @@
 name=Pulsating Illusion
-url=http://magiccards.info/od/en/96.html
+url=http://magiccards.info/query?q=%21pulsating%20illusion
 image=http://mtgimage.com/card/pulsating%20illusion.jpg
 value=1.138
 rarity=U

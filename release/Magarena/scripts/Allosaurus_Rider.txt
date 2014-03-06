@@ -1,5 +1,5 @@
 name=Allosaurus Rider
-url=http://magiccards.info/evg/en/2.html
+url=http://magiccards.info/query?q=%21allosaurus%20rider
 image=http://mtgimage.com/card/allosaurus%20rider.jpg
 value=4.057
 rarity=R

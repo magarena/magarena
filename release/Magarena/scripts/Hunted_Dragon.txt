@@ -1,5 +1,5 @@
 name=Hunted Dragon
-url=http://magiccards.info/rav/en/131.html
+url=http://magiccards.info/query?q=%21hunted%20dragon
 image=http://mtgimage.com/card/hunted%20dragon.jpg
 value=3.905
 rarity=R

@@ -1,5 +1,5 @@
 name=Devout Monk
-url=http://magiccards.info/st/en/14.html
+url=http://magiccards.info/query?q=%21devout%20monk
 image=http://mtgimage.com/card/devout%20monk.jpg
 value=2.015
 rarity=C

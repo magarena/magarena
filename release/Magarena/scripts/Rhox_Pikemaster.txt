@@ -1,5 +1,5 @@
 name=Rhox Pikemaster
-url=http://magiccards.info/m10/en/26.html
+url=http://magiccards.info/query?q=%21rhox%20pikemaster
 image=http://mtgimage.com/card/rhox%20pikemaster.jpg
 value=3.806
 rarity=U

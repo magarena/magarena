@@ -1,5 +1,5 @@
 name=Triskelion
-url=http://magiccards.info/ddf/en/57.html
+url=http://magiccards.info/query?q=%21triskelion
 image=http://mtgimage.com/card/triskelion.jpg
 value=4.076
 rarity=R

@@ -1,5 +1,5 @@
 name=Captain of the Mists
-url=http://magiccards.info/avr/en/45.html
+url=http://magiccards.info/query?q=%21captain%20of%20the%20mists
 image=http://mtgimage.com/card/captain%20of%20the%20mists.jpg
 value=3.144
 rarity=R

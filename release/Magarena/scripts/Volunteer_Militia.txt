@@ -1,5 +1,5 @@
 name=Volunteer Militia
-url=http://magiccards.info/po2/en/148.html
+url=http://magiccards.info/query?q=%21volunteer%20militia
 image=http://mtgimage.com/card/volunteer%20militia.jpg
 value=3.192
 rarity=C

@@ -1,5 +1,5 @@
 name=Elvish Pathcutter
-url=http://magiccards.info/on/en/256.html
+url=http://magiccards.info/query?q=%21elvish%20pathcutter
 image=http://mtgimage.com/card/elvish%20pathcutter.jpg
 value=0.977
 rarity=C

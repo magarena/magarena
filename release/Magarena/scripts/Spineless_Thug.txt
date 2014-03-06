@@ -1,5 +1,5 @@
 name=Spineless Thug
-url=http://magiccards.info/10e/en/180.html
+url=http://magiccards.info/query?q=%21spineless%20thug
 image=http://mtgimage.com/card/spineless%20thug.jpg
 value=1.945
 ability=can't block

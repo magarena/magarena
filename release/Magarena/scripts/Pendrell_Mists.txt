@@ -1,5 +1,5 @@
 name=Pendrell Mists
-url=http://magiccards.info/wl/en/47.html
+url=http://magiccards.info/query?q=%21pendrell%20mists
 image=http://mtgimage.com/card/pendrell%20mists.jpg
 value=4.172
 rarity=R

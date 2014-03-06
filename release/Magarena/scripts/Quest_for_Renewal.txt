@@ -1,5 +1,5 @@
 name=Quest for Renewal
-url=http://magiccards.info/wwk/en/110.html
+url=http://magiccards.info/query?q=%21quest%20for%20renewal
 image=http://mtgimage.com/card/quest%20for%20renewal.jpg
 value=4.210
 rarity=U

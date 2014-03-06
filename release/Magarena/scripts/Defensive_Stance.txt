@@ -1,5 +1,5 @@
 name=Defensive Stance
-url=http://magiccards.info/nph/en/34.html
+url=http://magiccards.info/query?q=%21defensive%20stance
 image=http://mtgimage.com/card/defensive%20stance.jpg
 value=0.899
 rarity=C

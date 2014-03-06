@@ -1,5 +1,5 @@
 name=Goblin Artillery
-url=http://magiccards.info/m10/en/138.html
+url=http://magiccards.info/query?q=%21goblin%20artillery
 image=http://mtgimage.com/card/goblin%20artillery.jpg
 value=2.831
 rarity=U

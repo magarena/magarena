@@ -1,5 +1,5 @@
 name=Plumeveil
-url=http://magiccards.info/cmd/en/218.html
+url=http://magiccards.info/query?q=%21plumeveil
 image=http://mtgimage.com/card/plumeveil.jpg
 value=3.977
 rarity=U

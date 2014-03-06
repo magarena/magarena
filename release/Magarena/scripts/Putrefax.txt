@@ -1,5 +1,5 @@
 name=Putrefax
-url=http://magiccards.info/som/en/126.html
+url=http://magiccards.info/query?q=%21putrefax
 image=http://mtgimage.com/card/putrefax.jpg
 value=4.017
 rarity=R

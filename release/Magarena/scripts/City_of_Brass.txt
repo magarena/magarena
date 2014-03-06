@@ -1,5 +1,5 @@
 name=City of Brass
-url=http://magiccards.info/me4/en/243.html
+url=http://magiccards.info/query?q=%21city%20of%20brass
 image=http://mtgimage.com/card/city%20of%20brass.jpg
 value=4.447
 rarity=R

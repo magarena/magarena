@@ -1,5 +1,5 @@
 name=Halberdier
-url=http://magiccards.info/od/en/196.html
+url=http://magiccards.info/query?q=%21halberdier
 image=http://mtgimage.com/card/halberdier.jpg
 value=2.676
 ability=first strike

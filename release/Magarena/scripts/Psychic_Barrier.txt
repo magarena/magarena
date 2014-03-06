@@ -1,5 +1,5 @@
 name=Psychic Barrier
-url=http://magiccards.info/nph/en/43.html
+url=http://magiccards.info/query?q=%21psychic%20barrier
 image=http://mtgimage.com/card/psychic%20barrier.jpg
 value=3.470
 rarity=C

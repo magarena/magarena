@@ -1,5 +1,5 @@
 name=Battle Hurda
-url=http://magiccards.info/wwk/en/4.html
+url=http://magiccards.info/query?q=%21battle%20hurda
 image=http://mtgimage.com/card/battle%20hurda.jpg
 value=1.652
 ability=first strike

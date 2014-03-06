@@ -1,5 +1,5 @@
 name=Protomatter Powder
-url=http://magiccards.info/ala/en/53.html
+url=http://magiccards.info/query?q=%21protomatter%20powder
 image=http://mtgimage.com/card/protomatter%20powder.jpg
 value=2.625
 rarity=U

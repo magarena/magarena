@@ -1,5 +1,5 @@
 name=Faerie Conclave
-url=http://magiccards.info/10e/en/351.html
+url=http://magiccards.info/query?q=%21faerie%20conclave
 image=http://mtgimage.com/card/faerie%20conclave.jpg
 value=4.607
 rarity=U

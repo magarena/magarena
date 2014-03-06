@@ -1,5 +1,5 @@
 name=Dakkon Blackblade
-url=http://magiccards.info/med/en/143.html
+url=http://magiccards.info/query?q=%21dakkon%20blackblade
 image=http://mtgimage.com/card/dakkon%20blackblade.jpg
 value=3.912
 rarity=R

@@ -1,5 +1,5 @@
 name=Heliod's Emissary
-url=http://magiccards.info/ths/en/18.html
+url=http://magiccards.info/query?q=%21heliod%27s%20emissary
 image=http://mtgimage.com/card/heliod's%20emissary.jpg
 value=3.438
 rarity=U

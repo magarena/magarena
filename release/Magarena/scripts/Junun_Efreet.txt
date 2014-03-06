@@ -1,5 +1,5 @@
 name=Junun Efreet
-url=http://magiccards.info/4e/en/27.html
+url=http://magiccards.info/query?q=%21junún%20efreet
 image=http://mtgimage.com/card/junun%20efreet.jpg
 value=2.938
 rarity=U

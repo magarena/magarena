@@ -1,5 +1,5 @@
 name=Aven Fogbringer
-url=http://magiccards.info/ju/en/34.html
+url=http://magiccards.info/query?q=%21aven%20fogbringer
 image=http://mtgimage.com/card/aven%20fogbringer.jpg
 value=2.676
 rarity=C

@@ -1,5 +1,5 @@
 name=Forsaken Drifters
-url=http://magiccards.info/bng/en/72.html
+url=http://magiccards.info/query?q=%21forsaken%20drifters
 image=http://mtgimage.com/card/forsaken%20drifters.jpg
 value=2.525
 rarity=C

@@ -1,5 +1,5 @@
 name=Call of the Conclave
-url=http://magiccards.info/rtr/en/146.html
+url=http://magiccards.info/query?q=%21call%20of%20the%20conclave
 image=http://mtgimage.com/card/call%20of%20the%20conclave.jpg
 value=3.923
 rarity=U

@@ -1,5 +1,5 @@
 name=Narwhal
-url=http://magiccards.info/me2/en/57.html
+url=http://magiccards.info/query?q=%21narwhal
 image=http://mtgimage.com/card/narwhal.jpg
 value=3.833
 rarity=R

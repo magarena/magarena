@@ -1,5 +1,5 @@
 name=Striped Bears
-url=http://magiccards.info/wl/en/82.html
+url=http://magiccards.info/query?q=%21striped%20bears
 image=http://mtgimage.com/card/striped%20bears.jpg
 value=3.059
 rarity=C

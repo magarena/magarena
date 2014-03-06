@@ -1,5 +1,5 @@
 name=Cursed Flesh
-url=http://magiccards.info/in/en/98.html
+url=http://magiccards.info/query?q=%21cursed%20flesh
 image=http://mtgimage.com/card/cursed%20flesh.jpg
 value=2.912
 rarity=C

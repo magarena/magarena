@@ -1,5 +1,5 @@
 name=Progenitus
-url=http://magiccards.info/mma/en/182.html
+url=http://magiccards.info/query?q=%21progenitus
 image=http://mtgimage.com/card/progenitus.jpg
 value=4.492
 rarity=M

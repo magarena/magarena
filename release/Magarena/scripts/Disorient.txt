@@ -1,5 +1,5 @@
 name=Disorient
-url=http://magiccards.info/m10/pt/48.html
+url=http://magiccards.info/query?q=%21disorient
 image=http://mtgimage.com/card/disorient.jpg
 value=1.139
 rarity=C

@@ -1,5 +1,5 @@
 name=Talus Paladin
-url=http://magiccards.info/wwk/en/21.html
+url=http://magiccards.info/query?q=%21talus%20paladin
 image=http://mtgimage.com/card/talus%20paladin.jpg
 value=3.962
 rarity=R

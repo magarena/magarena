@@ -1,5 +1,5 @@
 name=Sliver Legion
-url=http://magiccards.info/fut/en/158.html
+url=http://magiccards.info/query?q=%21sliver%20legion
 image=http://mtgimage.com/card/sliver%20legion.jpg
 value=4.221
 rarity=R

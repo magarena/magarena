@@ -1,5 +1,5 @@
 name=Arcbound Overseer
-url=http://magiccards.info/ds/en/99.html
+url=http://magiccards.info/query?q=%21arcbound%20overseer
 image=http://mtgimage.com/card/arcbound%20overseer.jpg
 value=4.167
 rarity=R

@@ -1,5 +1,5 @@
 name=Crowd of Cinders
-url=http://magiccards.info/shm/en/63.html
+url=http://magiccards.info/query?q=%21crowd%20of%20cinders
 image=http://mtgimage.com/card/crowd%20of%20cinders.jpg
 value=3.488
 rarity=U

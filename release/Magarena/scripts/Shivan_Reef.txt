@@ -1,5 +1,5 @@
 name=Shivan Reef
-url=http://magiccards.info/10e/en/357.html
+url=http://magiccards.info/query?q=%21shivan%20reef
 image=http://mtgimage.com/card/shivan%20reef.jpg
 value=4.456
 rarity=R

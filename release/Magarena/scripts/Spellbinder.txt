@@ -1,5 +1,5 @@
 name=Spellbinder
-url=http://magiccards.info/ds/en/143.html
+url=http://magiccards.info/query?q=%21spellbinder
 image=http://mtgimage.com/card/spellbinder.jpg
 value=3.188
 rarity=R

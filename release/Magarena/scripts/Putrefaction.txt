@@ -1,5 +1,5 @@
 name=Putrefaction
-url=http://magiccards.info/mm/en/153.html
+url=http://magiccards.info/query?q=%21putrefaction
 image=http://mtgimage.com/card/putrefaction.jpg
 value=2.391
 rarity=U

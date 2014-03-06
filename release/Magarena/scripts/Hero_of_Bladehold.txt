@@ -1,5 +1,5 @@
 name=Hero of Bladehold
-url=http://magiccards.info/mbs/en/8.html
+url=http://magiccards.info/query?q=%21hero%20of%20bladehold
 image=http://mtgimage.com/card/hero%20of%20bladehold.jpg
 value=4.282
 rarity=M

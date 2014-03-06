@@ -1,5 +1,5 @@
 name=Goblin Brigand
-url=http://magiccards.info/9e/en/190.html
+url=http://magiccards.info/query?q=%21goblin%20brigand
 image=http://mtgimage.com/card/goblin%20brigand.jpg
 value=2.293
 ability=attacks each turn if able

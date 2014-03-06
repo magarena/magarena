@@ -1,5 +1,5 @@
 name=Copperhorn Scout
-url=http://magiccards.info/som/en/116.html
+url=http://magiccards.info/query?q=%21copperhorn%20scout
 image=http://mtgimage.com/card/copperhorn%20scout.jpg
 value=3.820
 rarity=C

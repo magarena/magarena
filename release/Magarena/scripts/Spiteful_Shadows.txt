@@ -1,5 +1,5 @@
 name=Spiteful Shadows
-url=http://magiccards.info/dka/en/75.html
+url=http://magiccards.info/query?q=%21spiteful%20shadows
 image=http://mtgimage.com/card/spiteful%20shadows.jpg
 value=2.140
 rarity=C

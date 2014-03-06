@@ -1,5 +1,5 @@
 name=Fangren Marauder
-url=http://magiccards.info/mbs/en/79.html
+url=http://magiccards.info/query?q=%21fangren%20marauder
 image=http://mtgimage.com/card/fangren%20marauder.jpg
 value=3.329
 rarity=C

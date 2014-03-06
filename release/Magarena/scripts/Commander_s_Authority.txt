@@ -1,5 +1,5 @@
 name=Commander's Authority
-url=http://magiccards.info/avr/en/13.html
+url=http://magiccards.info/query?q=%21commander%27s%20authority
 image=http://mtgimage.com/card/commander%27s%20authority.jpg
 value=2.048
 rarity=U

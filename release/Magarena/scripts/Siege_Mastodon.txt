@@ -1,5 +1,5 @@
 name=Siege Mastodon
-url=http://magiccards.info/m12/en/34.html
+url=http://magiccards.info/query?q=%21siege%20mastodon
 image=http://mtgimage.com/card/siege%20mastodon.jpg
 value=1.484
 rarity=C

@@ -1,5 +1,5 @@
 name=Volcanic Submersion
-url=http://magiccards.info/ala/en/121.html
+url=http://magiccards.info/query?q=%21volcanic%20submersion
 image=http://mtgimage.com/card/volcanic%20submersion.jpg
 value=1.735
 rarity=C

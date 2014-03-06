@@ -1,5 +1,5 @@
 name=Witherscale Wurm
-url=http://magiccards.info/shm/en/134.html
+url=http://magiccards.info/query?q=%21witherscale%20wurm
 image=http://mtgimage.com/card/witherscale%20wurm.jpg
 value=3.594
 rarity=R

@@ -1,5 +1,5 @@
 name=Karplusan Forest
-url=http://magiccards.info/10e/en/354.html
+url=http://magiccards.info/query?q=%21karplusan%20forest
 image=http://mtgimage.com/card/karplusan%20forest.jpg
 value=4.349
 rarity=R

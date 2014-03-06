@@ -1,5 +1,5 @@
 name=Mystic Zealot
-url=http://magiccards.info/od/en/36.html
+url=http://magiccards.info/query?q=%21mystic%20zealot
 image=http://mtgimage.com/card/mystic%20zealot.jpg
 value=3.396
 rarity=C

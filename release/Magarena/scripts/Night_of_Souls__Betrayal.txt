@@ -1,5 +1,5 @@
 name=Night of Souls' Betrayal
-url=http://magiccards.info/chk/en/133.html
+url=http://magiccards.info/query?q=%21night%20of%20souls%27%20betrayal
 image=http://mtgimage.com/card/night%20of%20souls%27%20betrayal.jpg
 value=3.918
 rarity=R

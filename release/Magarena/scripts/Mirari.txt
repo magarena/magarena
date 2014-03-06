@@ -1,5 +1,5 @@
 name=Mirari
-url=http://magiccards.info/fvr/en/9.html
+url=http://magiccards.info/query?q=%21mirari
 image=http://mtgimage.com/card/mirari.jpg
 value=3.600
 rarity=M

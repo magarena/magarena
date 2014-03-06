@@ -1,5 +1,5 @@
 name=Veldrane of Sengir
-url=http://magiccards.info/hl/en/25.html
+url=http://magiccards.info/query?q=%21veldrane%20of%20sengir
 image=http://mtgimage.com/card/veldrane%20of%20sengir.jpg
 value=1.275
 rarity=R

@@ -1,5 +1,5 @@
 name=Mask of Law and Grace
-url=http://magiccards.info/ud/en/11.html
+url=http://magiccards.info/query?q=%21mask%20of%20law%20and%20grace
 image=http://mtgimage.com/card/mask%20of%20law%20and%20grace.jpg
 value=3.379
 rarity=C

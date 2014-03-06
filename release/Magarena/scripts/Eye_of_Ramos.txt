@@ -1,5 +1,5 @@
 name=Eye of Ramos
-url=http://magiccards.info/mm/en/294.html
+url=http://magiccards.info/query?q=%21eye%20of%20ramos
 image=http://mtgimage.com/card/eye%20of%20ramos.jpg
 value=3.481
 rarity=R

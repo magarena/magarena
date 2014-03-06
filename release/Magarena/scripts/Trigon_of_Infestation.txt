@@ -1,5 +1,5 @@
 name=Trigon of Infestation
-url=http://magiccards.info/som/en/214.html
+url=http://magiccards.info/query?q=%21trigon%20of%20infestation
 image=http://mtgimage.com/card/trigon%20of%20infestation.jpg
 value=3.019
 rarity=U

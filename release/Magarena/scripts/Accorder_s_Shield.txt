@@ -1,5 +1,5 @@
 name=Accorder's Shield
-url=http://magiccards.info/som/en/136.html
+url=http://magiccards.info/query?q=%21accorder%27s%20shield
 image=http://mtgimage.com/card/accorder%27s%20shield.jpg
 value=3.381
 rarity=C

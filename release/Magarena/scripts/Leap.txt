@@ -1,5 +1,5 @@
 name=Leap
-url=http://magiccards.info/sh/en/35.html
+url=http://magiccards.info/query?q=%21leap
 image=http://mtgimage.com/card/leap.jpg
 value=4.076
 rarity=C

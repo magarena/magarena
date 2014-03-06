@@ -1,5 +1,5 @@
 name=Kami of the Hunt
-url=http://magiccards.info/chk/en/219.html
+url=http://magiccards.info/query?q=%21kami%20of%20the%20hunt
 image=http://mtgimage.com/card/kami%20of%20the%20hunt.jpg
 value=2.118
 rarity=C

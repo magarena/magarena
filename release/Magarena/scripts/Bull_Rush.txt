@@ -1,5 +1,5 @@
 name=Bull Rush
-url=http://magiccards.info/wwk/en/73.html
+url=http://magiccards.info/query?q=%21bull%20rush
 image=http://mtgimage.com/card/bull%20rush.jpg
 value=0.998
 rarity=C

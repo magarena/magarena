@@ -1,5 +1,5 @@
 name=Kindled Fury
-url=http://magiccards.info/m10/en/144.html
+url=http://magiccards.info/query?q=%21kindled%20fury
 image=http://mtgimage.com/card/kindled%20fury.jpg
 value=2.265
 rarity=C

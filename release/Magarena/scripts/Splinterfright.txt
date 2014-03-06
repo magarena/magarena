@@ -1,5 +1,5 @@
 name=Splinterfright
-url=http://magiccards.info/isd/en/205.html
+url=http://magiccards.info/query?q=%21splinterfright
 image=http://mtgimage.com/card/splinterfright.jpg
 value=3.879
 rarity=R

@@ -1,5 +1,5 @@
 name=Glowing Anemone
-url=http://magiccards.info/mm/en/81.html
+url=http://magiccards.info/query?q=%21glowing%20anemone
 image=http://mtgimage.com/card/glowing%20anemone.jpg
 value=2.917
 rarity=U

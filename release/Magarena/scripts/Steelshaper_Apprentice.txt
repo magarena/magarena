@@ -1,5 +1,5 @@
 name=Steelshaper Apprentice
-url=http://magiccards.info/ds/en/15.html
+url=http://magiccards.info/query?q=%21steelshaper%20apprentice
 image=http://mtgimage.com/card/steelshaper%20apprentice.jpg
 value=2.740
 rarity=R

@@ -1,5 +1,5 @@
 name=Dryad Arbor
-url=http://magiccards.info/v12/en/5.html
+url=http://magiccards.info/query?q=%21dryad%20arbor
 image=http://mtgimage.com/card/dryad%20arbor.jpg
 value=4.379
 rarity=M

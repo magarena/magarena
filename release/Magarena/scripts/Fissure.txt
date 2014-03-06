@@ -1,5 +1,5 @@
 name=Fissure
-url=http://magiccards.info/med/en/93.html
+url=http://magiccards.info/query?q=%21fissure
 image=http://mtgimage.com/card/fissure.jpg
 value=3.750
 rarity=C

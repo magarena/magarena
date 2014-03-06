@@ -1,5 +1,5 @@
 name=Loch Korrigan
-url=http://magiccards.info/shm/en/71.html
+url=http://magiccards.info/query?q=%21loch%20korrigan
 image=http://mtgimage.com/card/loch%20korrigan.jpg
 value=1.639
 rarity=C

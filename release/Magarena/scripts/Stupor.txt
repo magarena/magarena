@@ -1,5 +1,5 @@
 name=Stupor
-url=http://magiccards.info/tsts/en/48.html
+url=http://magiccards.info/query?q=%21stupor
 image=http://mtgimage.com/card/stupor.jpg
 value=4.267
 rarity=U

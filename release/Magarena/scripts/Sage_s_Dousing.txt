@@ -1,5 +1,5 @@
 name=Sage's Dousing
-url=http://magiccards.info/mt/en/48.html
+url=http://magiccards.info/query?q=%21sage%27s%20dousing
 image=http://mtgimage.com/card/sage%27s%20dousing.jpg
 value=3.674
 rarity=U

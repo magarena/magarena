@@ -1,5 +1,5 @@
 name=Venerable Kumo
-url=http://magiccards.info/chk/en/248.html
+url=http://magiccards.info/query?q=%21venerable%20kumo
 image=http://mtgimage.com/card/venerable%20kumo.jpg
 value=2.076
 rarity=C

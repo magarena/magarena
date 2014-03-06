@@ -1,5 +1,5 @@
 name=Mind's Eye
-url=http://magiccards.info/cma/en/13.html
+url=http://magiccards.info/query?q=%21mind%27s%20eye
 image=http://mtgimage.com/card/mind's%20eye.jpg
 value=4.109
 rarity=R

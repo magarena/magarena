@@ -1,5 +1,5 @@
 name=Silkwing Scout
-url=http://magiccards.info/di/en/31.html
+url=http://magiccards.info/query?q=%21silkwing%20scout
 image=http://mtgimage.com/card/silkwing%20scout.jpg
 value=2.576
 rarity=C

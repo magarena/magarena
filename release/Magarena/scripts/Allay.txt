@@ -1,5 +1,5 @@
 name=Allay
-url=http://magiccards.info/ex/en/1.html
+url=http://magiccards.info/query?q=%21allay
 image=http://mtgimage.com/card/allay.jpg
 value=2.986
 removal=1

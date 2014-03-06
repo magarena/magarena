@@ -1,5 +1,5 @@
 name=Golden Urn
-url=http://magiccards.info/som/en/158.html
+url=http://magiccards.info/query?q=%21golden%20urn
 image=http://mtgimage.com/card/golden%20urn.jpg
 value=2.683
 rarity=C

@@ -1,5 +1,5 @@
 name=Vitalizing Wind
-url=http://magiccards.info/pr/en/133.html
+url=http://magiccards.info/query?q=%21vitalizing%20wind
 image=http://mtgimage.com/card/vitalizing%20wind.jpg
 value=3.373
 rarity=R

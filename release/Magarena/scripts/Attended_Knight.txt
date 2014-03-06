@@ -1,5 +1,5 @@
 name=Attended Knight
-url=http://magiccards.info/m13/en/5.html
+url=http://magiccards.info/query?q=%21attended%20knight
 image=http://mtgimage.com/card/attended%20knight.jpg
 value=3.700
 rarity=C

@@ -1,5 +1,5 @@
 name=Bestial Menace
-url=http://magiccards.info/cmd/en/144.html
+url=http://magiccards.info/query?q=%21bestial%20menace
 image=http://mtgimage.com/card/bestial%20menace.jpg
 value=3.618
 rarity=U

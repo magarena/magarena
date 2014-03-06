@@ -1,5 +1,5 @@
 name=Armored Griffin
-url=http://magiccards.info/pc2/en/1.html
+url=http://magiccards.info/query?q=%21armored%20griffin
 image=http://mtgimage.com/card/armored%20griffin.jpg
 value=3.474
 rarity=U

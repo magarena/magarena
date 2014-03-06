@@ -1,5 +1,5 @@
 name=Livewire Lash
-url=http://magiccards.info/som/en/172.html
+url=http://magiccards.info/query?q=%21livewire%20lash
 image=http://mtgimage.com/card/livewire%20lash.jpg
 value=3.926
 rarity=R

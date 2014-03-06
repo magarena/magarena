@@ -1,5 +1,5 @@
 name=Wildfield Borderpost
-url=http://magiccards.info/arb/en/80.html
+url=http://magiccards.info/query?q=%21wildfield%20borderpost
 image=http://mtgimage.com/card/wildfield%20borderpost.jpg
 value=3.056
 rarity=C

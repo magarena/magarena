@@ -1,5 +1,5 @@
 name=Magmatic Force
-url=http://magiccards.info/cmd/en/128.html
+url=http://magiccards.info/query?q=%21magmatic%20force
 image=http://mtgimage.com/card/magmatic%20force.jpg
 value=4.014
 rarity=R

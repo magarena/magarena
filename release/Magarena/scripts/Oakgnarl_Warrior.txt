@@ -1,5 +1,5 @@
 name=Oakgnarl Warrior
-url=http://magiccards.info/lw/en/232.html
+url=http://magiccards.info/query?q=%21oakgnarl%20warrior
 image=http://mtgimage.com/card/oakgnarl%20warrior.jpg
 value=3.050
 ability=vigilance;trample

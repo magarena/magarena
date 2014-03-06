@@ -1,5 +1,5 @@
 name=Duskmantle Guildmage
-url=http://magiccards.info/gtc/en/158.html
+url=http://magiccards.info/query?q=%21duskmantle%20guildmage
 image=http://mtgimage.com/card/duskmantle%20guildmage.jpg
 value=3.884
 rarity=U

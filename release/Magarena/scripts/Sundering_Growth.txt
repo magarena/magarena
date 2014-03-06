@@ -1,5 +1,5 @@
 name=Sundering Growth
-url=http://magiccards.info/rtr/en/223.html
+url=http://magiccards.info/query?q=%21sundering%20growth
 image=http://mtgimage.com/card/sundering%20growth.jpg
 value=3.925
 rarity=C

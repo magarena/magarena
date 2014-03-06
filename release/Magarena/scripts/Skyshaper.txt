@@ -1,5 +1,5 @@
 name=Skyshaper
-url=http://magiccards.info/ex/en/137.html
+url=http://magiccards.info/query?q=%21skyshaper
 image=http://mtgimage.com/card/skyshaper.jpg
 value=3.056
 rarity=U

@@ -1,5 +1,5 @@
 name=Zuberi, Golden Feather
-url=http://magiccards.info/mr/en/255.html
+url=http://magiccards.info/query?q=%21zuberi%2C%20golden%20feather
 image=http://mtgimage.com/card/zuberi%2C%20golden%20feather.jpg
 value=3.926
 rarity=R

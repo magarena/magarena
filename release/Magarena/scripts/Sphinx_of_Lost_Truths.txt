@@ -1,5 +1,5 @@
 name=Sphinx of Lost Truths
-url=http://magiccards.info/zen/en/69.html
+url=http://magiccards.info/query?q=%21sphinx%20of%20lost%20truths
 image=http://mtgimage.com/card/sphinx%20of%20lost%20truths.jpg
 value=4.035
 rarity=R

@@ -1,5 +1,5 @@
 name=Scabland
-url=http://magiccards.info/tp/en/331.html
+url=http://magiccards.info/query?q=%21scabland
 image=http://mtgimage.com/card/scabland.jpg
 value=2.600
 rarity=R

@@ -1,5 +1,5 @@
 name=Kor Aeronaut
-url=http://magiccards.info/ddf/en/10.html
+url=http://magiccards.info/query?q=%21kor%20aeronaut
 image=http://mtgimage.com/card/kor%20aeronaut.jpg
 value=4.050
 rarity=U

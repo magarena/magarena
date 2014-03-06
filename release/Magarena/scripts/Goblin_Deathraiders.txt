@@ -1,5 +1,5 @@
 name=Goblin Deathraiders
-url=http://magiccards.info/ala/en/169.html
+url=http://magiccards.info/query?q=%21goblin%20deathraiders
 image=http://mtgimage.com/card/goblin%20deathraiders.jpg
 value=3.146
 rarity=C

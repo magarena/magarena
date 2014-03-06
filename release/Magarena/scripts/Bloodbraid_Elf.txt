@@ -1,5 +1,5 @@
 name=Bloodbraid Elf
-url=http://magiccards.info/pc2/en/84.html
+url=http://magiccards.info/query?q=%21bloodbraid%20elf
 image=http://mtgimage.com/card/bloodbraid%20elf.jpg
 value=4.342
 rarity=U

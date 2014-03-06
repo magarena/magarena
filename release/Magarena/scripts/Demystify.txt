@@ -1,5 +1,5 @@
 name=Demystify
-url=http://magiccards.info/m12/en/13.html
+url=http://magiccards.info/query?q=%21demystify
 image=http://mtgimage.com/card/demystify.jpg
 value=2.947
 removal=1

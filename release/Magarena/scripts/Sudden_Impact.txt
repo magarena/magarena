@@ -1,5 +1,5 @@
 name=Sudden Impact
-url=http://magiccards.info/pd2/en/25.html
+url=http://magiccards.info/query?q=%21sudden%20impact
 image=http://mtgimage.com/card/sudden%20impact.jpg
 value=3.484
 rarity=U

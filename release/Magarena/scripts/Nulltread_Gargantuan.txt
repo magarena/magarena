@@ -1,5 +1,5 @@
 name=Nulltread Gargantuan
-url=http://magiccards.info/arb/en/102.html
+url=http://magiccards.info/query?q=%21nulltread%20gargantuan
 image=http://mtgimage.com/card/nulltread%20gargantuan.jpg
 value=3.811
 rarity=U

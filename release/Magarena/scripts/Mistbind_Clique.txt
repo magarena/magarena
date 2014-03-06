@@ -1,5 +1,5 @@
 name=Mistbind Clique
-url=http://magiccards.info/lw/en/75.html
+url=http://magiccards.info/query?q=%21mistbind%20clique
 image=http://mtgimage.com/card/mistbind%20clique.jpg
 value=4.069
 removal=2

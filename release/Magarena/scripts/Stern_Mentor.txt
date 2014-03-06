@@ -1,5 +1,5 @@
 name=Stern Mentor
-url=http://magiccards.info/avr/en/77.html
+url=http://magiccards.info/query?q=%21stern%20mentor
 image=http://mtgimage.com/card/stern%20mentor.jpg
 value=2.515
 rarity=U

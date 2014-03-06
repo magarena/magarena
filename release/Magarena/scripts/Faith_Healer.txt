@@ -1,5 +1,5 @@
 name=Faith Healer
-url=http://magiccards.info/us/en/14.html
+url=http://magiccards.info/query?q=%21faith%20healer
 image=http://mtgimage.com/card/faith%20healer.jpg
 value=3.655
 rarity=R

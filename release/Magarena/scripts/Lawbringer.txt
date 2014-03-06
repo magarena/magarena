@@ -1,5 +1,5 @@
 name=Lawbringer
-url=http://magiccards.info/ne/en/10.html
+url=http://magiccards.info/query?q=%21lawbringer
 image=http://mtgimage.com/card/lawbringer.jpg
 value=2.550
 rarity=C

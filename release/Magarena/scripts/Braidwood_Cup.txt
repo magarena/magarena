@@ -1,5 +1,5 @@
 name=Braidwood Cup
-url=http://magiccards.info/ud/en/126.html
+url=http://magiccards.info/query?q=%21braidwood%20cup
 image=http://mtgimage.com/card/braidwood%20cup.jpg
 value=2.842
 rarity=U

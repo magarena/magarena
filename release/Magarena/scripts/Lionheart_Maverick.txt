@@ -1,5 +1,5 @@
 name=Lionheart Maverick
-url=http://magiccards.info/ddg/en/3.html
+url=http://magiccards.info/query?q=%21lionheart%20maverick
 image=http://mtgimage.com/card/lionheart%20maverick.jpg
 value=3.250
 rarity=C

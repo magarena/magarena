@@ -1,5 +1,5 @@
 name=Disciple of Grace
-url=http://magiccards.info/on/en/25.html
+url=http://magiccards.info/query?q=%21disciple%20of%20grace
 image=http://mtgimage.com/card/disciple%20of%20grace.jpg
 value=3.018
 rarity=C

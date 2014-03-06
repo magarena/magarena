@@ -1,5 +1,5 @@
 name=Vile Rebirth
-url=http://magiccards.info/m14/en/121.html
+url=http://magiccards.info/query?q=%21vile%20rebirth
 image=http://mtgimage.com/card/vile%20rebirth.jpg
 value=3.571
 rarity=C

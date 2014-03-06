@@ -1,5 +1,5 @@
 name=Ironroot Treefolk
-url=http://magiccards.info/5e/en/167.html
+url=http://magiccards.info/query?q=%21ironroot%20treefolk
 image=http://mtgimage.com/card/ironroot%20treefolk.jpg
 value=1.593
 rarity=C

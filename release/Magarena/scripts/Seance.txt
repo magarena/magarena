@@ -1,5 +1,5 @@
 name=Seance
-url=http://magiccards.info/dka/en/20.html
+url=http://magiccards.info/query?q=%21seance
 image=http://mtgimage.com/card/seance.jpg
 value=3.294
 rarity=R

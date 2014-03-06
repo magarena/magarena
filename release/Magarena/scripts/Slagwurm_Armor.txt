@@ -1,5 +1,5 @@
 name=Slagwurm Armor
-url=http://magiccards.info/mi/en/243.html
+url=http://magiccards.info/query?q=%21slagwurm%20armor
 image=http://mtgimage.com/card/slagwurm%20armor.jpg
 value=4.423
 rarity=C

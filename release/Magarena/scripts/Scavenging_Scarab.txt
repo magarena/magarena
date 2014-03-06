@@ -1,5 +1,5 @@
 name=Scavenging Scarab
-url=http://magiccards.info/ds/en/51.html
+url=http://magiccards.info/query?q=%21scavenging%20scarab
 image=http://mtgimage.com/card/scavenging%20scarab.jpg
 value=1.022
 ability=can't block

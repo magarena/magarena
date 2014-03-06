@@ -1,5 +1,5 @@
 name=Voidwielder
-url=http://magiccards.info/rtr/en/56.html
+url=http://magiccards.info/query?q=%21voidwielder
 image=http://mtgimage.com/card/voidwielder.jpg
 value=1.898
 rarity=C

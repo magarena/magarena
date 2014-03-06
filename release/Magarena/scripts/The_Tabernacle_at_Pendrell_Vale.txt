@@ -1,5 +1,5 @@
 name=The Tabernacle at Pendrell Vale
-url=http://magiccards.info/me3/en/212.html
+url=http://magiccards.info/query?q=%21the%20tabernacle%20at%20pendrell%20vale
 image=http://mtgimage.com/card/the%20tabernacle%20at%20pendrell%20vale.jpg
 value=4.630
 rarity=R

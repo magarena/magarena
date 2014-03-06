@@ -1,5 +1,5 @@
 name=Invader Parasite
-url=http://magiccards.info/nph/en/87.html
+url=http://magiccards.info/query?q=%21invader%20parasite
 image=http://mtgimage.com/card/invader%20parasite.jpg
 value=3.347
 rarity=R

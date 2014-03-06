@@ -1,5 +1,5 @@
 name=Alaborn Musketeer
-url=http://magiccards.info/me4/en/1.html
+url=http://magiccards.info/query?q=%21alaborn%20musketeer
 image=http://mtgimage.com/card/alaborn%20musketeer.jpg
 value=2.550
 ability=reach

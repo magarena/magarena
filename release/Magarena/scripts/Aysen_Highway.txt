@@ -1,5 +1,5 @@
 name=Aysen Highway
-url=http://magiccards.info/hl/en/107.html
+url=http://magiccards.info/query?q=%21aysen%20highway
 image=http://mtgimage.com/card/aysen%20highway.jpg
 value=1.160
 rarity=R

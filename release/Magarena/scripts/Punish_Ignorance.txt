@@ -1,5 +1,5 @@
 name=Punish Ignorance
-url=http://magiccards.info/ala/en/183.html
+url=http://magiccards.info/query?q=%21punish%20ignorance
 image=http://mtgimage.com/card/punish%20ignorance.jpg
 value=3.193
 rarity=R

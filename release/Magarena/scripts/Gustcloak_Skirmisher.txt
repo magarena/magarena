@@ -1,5 +1,5 @@
 name=Gustcloak Skirmisher
-url=http://magiccards.info/on/en/38.html
+url=http://magiccards.info/query?q=%21gustcloak%20skirmisher
 image=http://mtgimage.com/card/gustcloak%20skirmisher.jpg
 value=3.262
 rarity=U

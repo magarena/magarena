@@ -1,5 +1,5 @@
 name=Tonic Peddler
-url=http://magiccards.info/mm/en/54.html
+url=http://magiccards.info/query?q=%21tonic%20peddler
 image=http://mtgimage.com/card/tonic%20peddler.jpg
 value=2.261
 rarity=U

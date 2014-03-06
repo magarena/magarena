@@ -1,5 +1,5 @@
 name=Temple Garden
-url=http://magiccards.info/rav/en/284.html
+url=http://magiccards.info/query?q=%21temple%20garden
 image=http://mtgimage.com/card/temple%20garden.jpg
 value=4.258
 rarity=R

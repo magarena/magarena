@@ -1,5 +1,5 @@
 name=Crowned Ceratok
-url=http://magiccards.info/ddl/en/51.html
+url=http://magiccards.info/query?q=%21crowned%20ceratok
 image=http://mtgimage.com/card/Crowned%20Ceratok.jpg
 value=3.341
 rarity=U

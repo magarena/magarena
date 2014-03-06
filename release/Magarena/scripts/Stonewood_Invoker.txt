@@ -1,5 +1,5 @@
 name=Stonewood Invoker
-url=http://magiccards.info/evg/en/11.html
+url=http://magiccards.info/query?q=%21stonewood%20invoker
 image=http://mtgimage.com/card/stonewood%20invoker.jpg
 value=3.217
 rarity=C

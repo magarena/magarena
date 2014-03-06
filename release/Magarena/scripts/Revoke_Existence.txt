@@ -1,5 +1,5 @@
 name=Revoke Existence
-url=http://magiccards.info/som/en/18.html
+url=http://magiccards.info/query?q=%21revoke%20existence
 image=http://mtgimage.com/card/revoke%20existence.jpg
 value=4.392
 rarity=C

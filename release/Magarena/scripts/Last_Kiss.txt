@@ -1,5 +1,5 @@
 name=Last Kiss
-url=http://magiccards.info/roe/en/116.html
+url=http://magiccards.info/query?q=%21last%20kiss
 image=http://mtgimage.com/card/last%20kiss.jpg
 value=2.232
 rarity=C

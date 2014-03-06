@@ -1,5 +1,5 @@
 name=Hypervolt Grasp
-url=http://magiccards.info/gp/en/67.html
+url=http://magiccards.info/query?q=%21hypervolt%20grasp
 image=http://mtgimage.com/card/hypervolt%20grasp.jpg
 value=2.907
 rarity=U

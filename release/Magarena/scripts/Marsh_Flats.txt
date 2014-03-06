@@ -1,5 +1,5 @@
 name=Marsh Flats
-url=http://magiccards.info/zen/en/219.html
+url=http://magiccards.info/query?q=%21marsh%20flats
 image=http://mtgimage.com/card/marsh%20flats.jpg
 value=4.529
 rarity=R

@@ -1,5 +1,5 @@
 name=Bloodfire Colossus
-url=http://magiccards.info/ddi/en/62.html
+url=http://magiccards.info/query?q=%21bloodfire%20colossus
 image=http://mtgimage.com/card/bloodfire%20colossus.jpg
 value=3.974
 rarity=R

@@ -1,5 +1,5 @@
 name=D'Avenant Healer
-url=http://magiccards.info/ts/en/11.html
+url=http://magiccards.info/query?q=%21d%27avenant%20healer
 image=http://mtgimage.com/card/d'avenant%20healer.jpg
 value=2.625
 rarity=C

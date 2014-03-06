@@ -1,5 +1,5 @@
 name=Tsunami
-url=http://magiccards.info/me4/en/171.html
+url=http://magiccards.info/query?q=%21tsunami
 image=http://mtgimage.com/card/tsunami.jpg
 value=3.957
 rarity=R

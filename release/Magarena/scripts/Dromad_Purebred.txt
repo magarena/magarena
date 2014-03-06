@@ -1,5 +1,5 @@
 name=Dromad Purebred
-url=http://magiccards.info/rav/en/15.html
+url=http://magiccards.info/query?q=%21dromad%20purebred
 image=http://mtgimage.com/card/dromad%20purebred.jpg
 value=1.435
 rarity=C

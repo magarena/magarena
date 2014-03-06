@@ -19,20 +19,7 @@ public class MagicTappedIntoPlayTrigger extends MagicWhenComesIntoPlayTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        return new MagicEvent(
-            permanent,
-            this,
-            "SN enters the battlefield tapped."
-        );
-    }
-
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicTapAction(event.getPermanent(),false));
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
+        game.doAction(new MagicTapAction(permanent, false));
+        return MagicEvent.NONE;
     }
 }

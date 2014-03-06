@@ -1,5 +1,5 @@
 name=Court Archers
-url=http://magiccards.info/ala/en/126.html
+url=http://magiccards.info/query?q=%21court%20archers
 image=http://mtgimage.com/card/court%20archers.jpg
 value=2.512
 ability=reach;exalted

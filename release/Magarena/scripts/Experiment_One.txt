@@ -1,5 +1,5 @@
 name=Experiment One
-url=http://magiccards.info/gtc/en/119.html
+url=http://magiccards.info/query?q=%21experiment%20one
 image=http://mtgimage.com/card/experiment%20one.jpg
 value=3.837
 rarity=U

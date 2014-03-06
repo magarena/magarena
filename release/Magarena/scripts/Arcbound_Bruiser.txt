@@ -1,5 +1,5 @@
 name=Arcbound Bruiser
-url=http://magiccards.info/ds/en/94.html
+url=http://magiccards.info/query?q=%21arcbound%20bruiser
 image=http://mtgimage.com/card/arcbound%20bruiser.jpg
 value=2.676
 rarity=C

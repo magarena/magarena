@@ -1,5 +1,5 @@
 name=Dovescape
-url=http://magiccards.info/di/en/143.html
+url=http://magiccards.info/query?q=%21dovescape
 image=http://mtgimage.com/card/dovescape.jpg
 value=4.145
 rarity=R

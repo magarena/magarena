@@ -1,5 +1,5 @@
 name=Lab Rats
-url=http://magiccards.info/sh/en/11.html
+url=http://magiccards.info/query?q=%21lab%20rats
 image=http://mtgimage.com/card/lab%20rats.jpg
 value=3.130
 rarity=C

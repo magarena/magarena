@@ -1,5 +1,5 @@
 name=Tranquility
-url=http://magiccards.info/tp/en/155.html
+url=http://magiccards.info/query?q=%21tranquility
 image=http://mtgimage.com/card/tranquility.jpg
 value=3.417
 rarity=C

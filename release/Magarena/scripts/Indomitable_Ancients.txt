@@ -1,5 +1,5 @@
 name=Indomitable Ancients
-url=http://magiccards.info/mt/en/13.html
+url=http://magiccards.info/query?q=%21indomitable%20ancients
 image=http://mtgimage.com/card/indomitable%20ancients.jpg
 value=4.107
 rarity=R

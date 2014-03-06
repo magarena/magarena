@@ -1,5 +1,5 @@
 name=Goblin Assault
-url=http://magiccards.info/ala/en/101.html
+url=http://magiccards.info/query?q=%21goblin%20assault
 image=http://mtgimage.com/card/goblin%20assault.jpg
 value=3.000
 rarity=R

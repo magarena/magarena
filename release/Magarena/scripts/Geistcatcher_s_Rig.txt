@@ -1,5 +1,5 @@
 name=Geistcatcher's Rig
-url=http://magiccards.info/isd/en/223.html
+url=http://magiccards.info/query?q=%21geistcatcher%27s%20rig
 image=http://mtgimage.com/card/geistcatcher%27s%20rig.jpg
 value=2.612
 rarity=U

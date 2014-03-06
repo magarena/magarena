@@ -1,5 +1,5 @@
 name=Geyser Glider
-url=http://magiccards.info/zen/en/124.html
+url=http://magiccards.info/query?q=%21geyser%20glider
 image=http://mtgimage.com/card/geyser%20glider.jpg
 value=1.958
 rarity=U

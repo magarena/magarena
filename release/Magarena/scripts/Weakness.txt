@@ -1,5 +1,5 @@
 name=Weakness
-url=http://magiccards.info/m10/en/121.html
+url=http://magiccards.info/query?q=%21weakness
 image=http://mtgimage.com/card/weakness.jpg
 value=3.167
 removal=1

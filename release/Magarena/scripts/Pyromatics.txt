@@ -1,5 +1,5 @@
 name=Pyromatics
-url=http://magiccards.info/gp/en/72.html
+url=http://magiccards.info/query?q=%21pyromatics
 image=http://mtgimage.com/card/pyromatics.jpg
 value=2.647
 rarity=C

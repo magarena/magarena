@@ -1,5 +1,5 @@
 name=Death Grasp
-url=http://magiccards.info/ap/en/95.html
+url=http://magiccards.info/query?q=%21death%20grasp
 image=http://mtgimage.com/card/death%20grasp.jpg
 value=3.821
 removal=4

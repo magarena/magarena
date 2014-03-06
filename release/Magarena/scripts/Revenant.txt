@@ -1,5 +1,5 @@
 name=Revenant
-url=http://magiccards.info/sh/en/18.html
+url=http://magiccards.info/query?q=%21revenant
 image=http://mtgimage.com/card/revenant.jpg
 value=3.708
 rarity=R

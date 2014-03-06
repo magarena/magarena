@@ -1,5 +1,5 @@
 name=Isochron Scepter
-url=http://magiccards.info/ddj/en/16.html
+url=http://magiccards.info/query?q=%21isochron%20scepter
 image=http://mtgimage.com/card/isochron%20scepter.jpg
 value=4.588
 rarity=U

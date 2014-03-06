@@ -1,5 +1,5 @@
 name=Razorclaw Bear
-url=http://magiccards.info/po2/en/82.html
+url=http://magiccards.info/query?q=%21razorclaw%20bear
 image=http://mtgimage.com/card/razorclaw%20bear.jpg
 value=3.548
 rarity=R

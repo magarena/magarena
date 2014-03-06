@@ -1,5 +1,5 @@
 name=Spike Colony
-url=http://magiccards.info/br/en/77.html
+url=http://magiccards.info/query?q=%21spike%20colony
 image=http://mtgimage.com/card/spike%20colony.jpg
 value=2.917
 rarity=C

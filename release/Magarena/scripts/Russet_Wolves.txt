@@ -1,5 +1,5 @@
 name=Russet Wolves
-url=http://magiccards.info/dka/en/102.html
+url=http://magiccards.info/query?q=%21russet%20wolves
 image=http://mtgimage.com/card/russet%20wolves.jpg
 value=1.645
 rarity=C

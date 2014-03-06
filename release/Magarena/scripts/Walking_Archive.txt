@@ -1,5 +1,5 @@
 name=Walking Archive
-url=http://magiccards.info/di/en/169.html
+url=http://magiccards.info/query?q=%21walking%20archive
 image=http://mtgimage.com/card/walking%20archive.jpg
 value=3.389
 rarity=R

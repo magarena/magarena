@@ -1,5 +1,5 @@
 name=Nature's Spiral
-url=http://magiccards.info/dpa/en/77.html
+url=http://magiccards.info/query?q=%21nature%27s%20spiral
 image=http://mtgimage.com/card/nature%27s%20spiral.jpg
 value=3.844
 rarity=U

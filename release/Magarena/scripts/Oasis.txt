@@ -1,5 +1,5 @@
 name=Oasis
-url=http://magiccards.info/me4/en/248.html
+url=http://magiccards.info/query?q=%21oasis
 image=http://mtgimage.com/card/oasis.jpg
 value=2.062
 rarity=C

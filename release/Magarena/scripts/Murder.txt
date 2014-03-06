@@ -1,5 +1,5 @@
 name=Murder
-url=http://magiccards.info/m13/en/101.html
+url=http://magiccards.info/query?q=%21murder
 image=http://mtgimage.com/card/murder.jpg
 value=3.755
 removal=5

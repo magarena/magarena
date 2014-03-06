@@ -1,5 +1,5 @@
 name=Stronghold Rats
-url=http://magiccards.info/fut/en/79.html
+url=http://magiccards.info/query?q=%21stronghold%20rats
 image=http://mtgimage.com/card/stronghold%20rats.jpg
 value=3.217
 rarity=U

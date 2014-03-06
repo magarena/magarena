@@ -1,5 +1,5 @@
 name=Venser's Journal
-url=http://magiccards.info/som/en/220.html
+url=http://magiccards.info/query?q=%21venser%27s%20journal
 image=http://mtgimage.com/card/venser's%20journal.jpg
 value=3.435
 rarity=R

@@ -1,5 +1,5 @@
 name=Dwarven Berserker
-url=http://magiccards.info/wl/en/97.html
+url=http://magiccards.info/query?q=%21dwarven%20berserker
 image=http://mtgimage.com/card/dwarven%20berserker.jpg
 value=3.589
 rarity=C

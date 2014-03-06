@@ -1,5 +1,5 @@
 name=Goblin Shortcutter
-url=http://magiccards.info/zen/en/128.html
+url=http://magiccards.info/query?q=%21goblin%20shortcutter
 image=http://mtgimage.com/card/goblin%20shortcutter.jpg
 value=3.462
 rarity=C

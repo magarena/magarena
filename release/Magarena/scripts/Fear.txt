@@ -1,5 +1,5 @@
 name=Fear
-url=http://magiccards.info/10e/en/142.html
+url=http://magiccards.info/query?q=%21fear
 image=http://mtgimage.com/card/fear.jpg
 value=2.320
 rarity=C

@@ -1,5 +1,5 @@
 name=Pheres-Band Tromper
-url=http://magiccards.info/bng/en/134.html
+url=http://magiccards.info/query?q=%21pheres%2Dband%20tromper
 image=http://mtgimage.com/card/pheres-band%20tromper.jpg
 value=3.825
 rarity=C

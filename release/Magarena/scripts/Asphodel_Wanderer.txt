@@ -1,5 +1,5 @@
 name=Asphodel Wanderer
-url=http://magiccards.info/ths/en/77.html
+url=http://magiccards.info/query?q=%21asphodel%20wanderer
 image=http://mtgimage.com/card/asphodel%20wanderer.jpg
 value=2.179
 rarity=C

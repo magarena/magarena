@@ -1,5 +1,5 @@
 name=Skull Catapult
-url=http://magiccards.info/cstd/en/46.html
+url=http://magiccards.info/query?q=%21skull%20catapult
 image=http://mtgimage.com/card/skull%20catapult.jpg
 value=2.789
 rarity=U

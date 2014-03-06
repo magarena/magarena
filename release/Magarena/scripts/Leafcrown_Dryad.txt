@@ -1,5 +1,5 @@
 name=Leafcrown Dryad
-url=http://magiccards.info/ths/en/161.html
+url=http://magiccards.info/query?q=%21leafcrown%20dryad
 image=http://mtgimage.com/card/leafcrown%20dryad.jpg
 value=3.419
 rarity=C

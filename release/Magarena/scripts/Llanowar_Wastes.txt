@@ -1,5 +1,5 @@
 name=Llanowar Wastes
-url=http://magiccards.info/10e/en/355.html
+url=http://magiccards.info/query?q=%21llanowar%20wastes
 image=http://mtgimage.com/card/llanowar%20wastes.jpg
 value=4.075
 rarity=R

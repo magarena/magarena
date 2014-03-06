@@ -1,5 +1,5 @@
 name=Ogre Warrior
-url=http://magiccards.info/st2k/en/12.html
+url=http://magiccards.info/query?q=%21ogre%20warrior
 image=http://mtgimage.com/card/ogre%20warrior.jpg
 value=1.700
 rarity=C

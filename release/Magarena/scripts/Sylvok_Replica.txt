@@ -1,5 +1,5 @@
 name=Sylvok Replica
-url=http://magiccards.info/som/en/210.html
+url=http://magiccards.info/query?q=%21sylvok%20replica
 image=http://mtgimage.com/card/sylvok%20replica.jpg
 value=3.440
 rarity=C

@@ -1,5 +1,5 @@
 name=Aeolipile
-url=http://magiccards.info/me2/en/202.html
+url=http://magiccards.info/query?q=%21aeolipile
 image=http://mtgimage.com/card/aeolipile.jpg
 value=3.370
 rarity=C

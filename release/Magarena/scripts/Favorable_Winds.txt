@@ -1,5 +1,5 @@
 name=Favorable Winds
-url=http://magiccards.info/avr/en/51.html
+url=http://magiccards.info/query?q=%21favorable%20winds
 image=http://mtgimage.com/card/favorable%20winds.jpg
 value=3.879
 rarity=U

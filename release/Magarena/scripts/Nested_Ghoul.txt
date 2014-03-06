@@ -1,5 +1,5 @@
 name=Nested Ghoul
-url=http://magiccards.info/mbs/en/48.html
+url=http://magiccards.info/query?q=%21nested%20ghoul
 image=http://mtgimage.com/card/nested%20ghoul.jpg
 value=3.175
 rarity=U

@@ -1,5 +1,5 @@
 name=Hagra Crocodile
-url=http://magiccards.info/zen/en/94.html
+url=http://magiccards.info/query?q=%21hagra%20crocodile
 image=http://mtgimage.com/card/hagra%20crocodile.jpg
 value=2.000
 rarity=C

@@ -1,5 +1,5 @@
 name=Nirkana Cutthroat
-url=http://magiccards.info/roe/en/119.html
+url=http://magiccards.info/query?q=%21nirkana%20cutthroat
 image=http://mtgimage.com/card/nirkana%20cutthroat.jpg
 value=4.030
 rarity=U

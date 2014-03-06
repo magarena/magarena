@@ -1,5 +1,5 @@
 name=Squirrel Nest
-url=http://magiccards.info/od/en/274.html
+url=http://magiccards.info/query?q=%21squirrel%20nest
 image=http://mtgimage.com/card/squirrel%20nest.jpg
 value=4.478
 rarity=U

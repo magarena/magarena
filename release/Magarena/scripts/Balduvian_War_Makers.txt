@@ -1,5 +1,5 @@
 name=Balduvian War-Makers
-url=http://magiccards.info/ai/en/98.html
+url=http://magiccards.info/query?q=%21balduvian%20war%2Dmakers
 image=http://mtgimage.com/card/balduvian%20war%2Dmakers.jpg
 value=2.449
 rarity=C

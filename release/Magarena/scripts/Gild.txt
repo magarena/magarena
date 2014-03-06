@@ -1,5 +1,5 @@
 name=Gild
-url=http://magiccards.info/bng/fr/73.html
+url=http://magiccards.info/query?q=%21gild
 image=http://mtgimage.com/card/gild.jpg
 value=4.179
 rarity=R

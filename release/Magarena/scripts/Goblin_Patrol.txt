@@ -1,5 +1,5 @@
 name=Goblin Patrol
-url=http://magiccards.info/us/en/193.html
+url=http://magiccards.info/query?q=%21goblin%20patrol
 image=http://mtgimage.com/card/goblin%20patrol.jpg
 value=3.424
 rarity=C

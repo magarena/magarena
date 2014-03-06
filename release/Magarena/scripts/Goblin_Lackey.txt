@@ -1,5 +1,5 @@
 name=Goblin Lackey
-url=http://magiccards.info/fve/en/5.html
+url=http://magiccards.info/query?q=%21goblin%20lackey
 image=http://mtgimage.com/card/goblin%20lackey.jpg
 value=4.603
 rarity=M

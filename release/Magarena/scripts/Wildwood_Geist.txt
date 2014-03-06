@@ -1,5 +1,5 @@
 name=Wildwood Geist
-url=http://magiccards.info/avr/en/204.html
+url=http://magiccards.info/query?q=%21wildwood%20geist
 image=http://mtgimage.com/card/wildwood%20geist.jpg
 value=1.453
 rarity=C

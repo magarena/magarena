@@ -1,5 +1,5 @@
 name=Barbarian Ring
-url=http://magiccards.info/pd2/en/28.html
+url=http://magiccards.info/query?q=%21barbarian%20ring
 image=http://mtgimage.com/card/barbarian%20ring.jpg
 value=3.688
 rarity=U

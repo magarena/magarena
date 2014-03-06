@@ -1,5 +1,5 @@
 name=Admonition Angel
-url=http://magiccards.info/wwk/en/1.html
+url=http://magiccards.info/query?q=%21admonition%20angel
 image=http://mtgimage.com/card/admonition%20angel.jpg
 value=4.256
 rarity=M

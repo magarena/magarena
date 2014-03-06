@@ -1,5 +1,5 @@
 name=Sturmgeist
-url=http://magiccards.info/isd/en/82.html
+url=http://magiccards.info/query?q=%21sturmgeist
 image=http://mtgimage.com/card/sturmgeist.jpg
 value=3.477
 rarity=R

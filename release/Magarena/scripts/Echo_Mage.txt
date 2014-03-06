@@ -1,5 +1,5 @@
 name=Echo Mage
-url=http://magiccards.info/roe/en/64.html
+url=http://magiccards.info/query?q=%21echo%20mage
 image=http://mtgimage.com/card/echo%20mage.jpg
 value=3.714
 rarity=R

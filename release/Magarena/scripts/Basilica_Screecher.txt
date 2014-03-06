@@ -1,5 +1,5 @@
 name=Basilica Screecher
-url=http://magiccards.info/gtc/en/58.html
+url=http://magiccards.info/query?q=%21basilica%20screecher
 image=http://mtgimage.com/card/basilica%20screecher.jpg
 value=3.127
 rarity=C

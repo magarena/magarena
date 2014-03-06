@@ -1,5 +1,5 @@
 name=Coma Veil
-url=http://magiccards.info/ala/en/36.html
+url=http://magiccards.info/query?q=%21coma%20veil
 image=http://mtgimage.com/card/coma%20veil.jpg
 value=0.938
 rarity=C

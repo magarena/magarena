@@ -1,5 +1,5 @@
 name=Shoreline Raider
-url=http://magiccards.info/in/en/73.html
+url=http://magiccards.info/query?q=%21shoreline%20raider
 image=http://mtgimage.com/card/shoreline%20raider.jpg
 value=2.662
 rarity=C

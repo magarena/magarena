@@ -1,5 +1,5 @@
 name=Thorn Elemental
-url=http://magiccards.info/8e/en/283.html
+url=http://magiccards.info/query?q=%21thorn%20elemental
 image=http://mtgimage.com/card/thorn%20elemental.jpg
 value=4.491
 rarity=R

@@ -1,5 +1,5 @@
 name=Holy Mantle
-url=http://magiccards.info/gtc/en/17.html
+url=http://magiccards.info/query?q=%21holy%20mantle
 image=http://mtgimage.com/card/holy%20mantle.jpg
 value=2.778
 rarity=U

@@ -1,5 +1,5 @@
 name=Staff of Domination
-url=http://magiccards.info/5dn/en/156.html
+url=http://magiccards.info/query?q=%21staff%20of%20domination
 image=http://mtgimage.com/card/staff%20of%20domination.jpg
 value=4.424
 rarity=R

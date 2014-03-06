@@ -1,5 +1,5 @@
 name=Drowned
-url=http://magiccards.info/dk/en/23.html
+url=http://magiccards.info/query?q=%21drowned
 image=http://mtgimage.com/card/drowned.jpg
 value=3.347
 rarity=C

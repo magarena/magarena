@@ -1,5 +1,5 @@
 name=Chromanticore
-url=http://magiccards.info/bng/en/144.html
+url=http://magiccards.info/query?q=%21chromanticore
 image=http://mtgimage.com/card/chromanticore.jpg
 value=3.707
 rarity=M

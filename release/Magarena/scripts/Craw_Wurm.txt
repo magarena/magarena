@@ -1,5 +1,5 @@
 name=Craw Wurm
-url=http://magiccards.info/m10/en/173.html
+url=http://magiccards.info/query?q=%21craw%20wurm
 image=http://mtgimage.com/card/craw%20wurm.jpg
 value=2.308
 rarity=C

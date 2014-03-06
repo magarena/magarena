@@ -1,5 +1,5 @@
 name=Fleshformer
-url=http://magiccards.info/cfx/en/45.html
+url=http://magiccards.info/query?q=%21fleshformer
 image=http://mtgimage.com/card/fleshformer.jpg
 value=2.238
 rarity=U

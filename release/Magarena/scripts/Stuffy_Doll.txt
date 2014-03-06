@@ -1,5 +1,5 @@
 name=Stuffy Doll
-url=http://magiccards.info/ts/en/264.html
+url=http://magiccards.info/query?q=%21stuffy%20doll
 image=http://mtgimage.com/card/stuffy%20doll.jpg
 value=4.013
 rarity=R

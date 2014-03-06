@@ -1,5 +1,5 @@
 name=Skullcage
-url=http://magiccards.info/arc/en/115.html
+url=http://magiccards.info/query?q=%21skullcage
 image=http://mtgimage.com/card/skullcage.jpg
 value=3.600
 rarity=U

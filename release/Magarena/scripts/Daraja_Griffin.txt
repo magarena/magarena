@@ -1,5 +1,5 @@
 name=Daraja Griffin
-url=http://magiccards.info/6e/en/14.html
+url=http://magiccards.info/query?q=%21daraja%20griffin
 image=http://mtgimage.com/card/daraja%20griffin.jpg
 value=3.353
 rarity=U

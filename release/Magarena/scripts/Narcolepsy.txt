@@ -1,5 +1,5 @@
 name=Narcolepsy
-url=http://magiccards.info/roe/en/79.html
+url=http://magiccards.info/query?q=%21narcolepsy
 image=http://mtgimage.com/card/narcolepsy.jpg
 value=3.914
 removal=2

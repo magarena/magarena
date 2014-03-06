@@ -1,5 +1,5 @@
 name=Femeref Scouts
-url=http://magiccards.info/mr/en/223.html
+url=http://magiccards.info/query?q=%21femeref%20scouts
 image=http://mtgimage.com/card/femeref%20scouts.jpg
 value=2.300
 rarity=C

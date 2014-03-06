@@ -1,5 +1,5 @@
 name=Phantasmal Fiend
-url=http://magiccards.info/cstd/en/30.html
+url=http://magiccards.info/query?q=%21phantasmal%20fiend
 image=http://mtgimage.com/card/phantasmal%20fiend.jpg
 value=2.883
 rarity=C

@@ -1,5 +1,5 @@
 name=Black Cat
-url=http://magiccards.info/dka/en/54.html
+url=http://magiccards.info/query?q=%21black%20cat
 image=http://mtgimage.com/card/black%20cat.jpg
 value=3.915
 rarity=C

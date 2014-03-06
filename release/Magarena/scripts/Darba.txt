@@ -1,5 +1,5 @@
 name=Darba
-url=http://magiccards.info/pr/en/111.html
+url=http://magiccards.info/query?q=%21darba
 image=http://mtgimage.com/card/darba.jpg
 value=2.672
 rarity=U

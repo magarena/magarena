@@ -1,5 +1,5 @@
 name=Kabira Crossroads
-url=http://magiccards.info/ddf/en/33.html
+url=http://magiccards.info/query?q=%21kabira%20crossroads
 image=http://mtgimage.com/card/kabira%20crossroads.jpg
 value=3.432
 rarity=C

@@ -1,5 +1,5 @@
 name=Respite
-url=http://magiccards.info/tp/en/143.html
+url=http://magiccards.info/query?q=%21respite
 image=http://mtgimage.com/card/respite.jpg
 value=4.333
 rarity=C

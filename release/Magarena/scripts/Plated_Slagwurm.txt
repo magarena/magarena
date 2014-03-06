@@ -1,5 +1,5 @@
 name=Plated Slagwurm
-url=http://magiccards.info/gvl/en/12.html
+url=http://magiccards.info/query?q=%21plated%20slagwurm
 image=http://mtgimage.com/card/plated%20slagwurm.jpg
 value=4.439
 rarity=R

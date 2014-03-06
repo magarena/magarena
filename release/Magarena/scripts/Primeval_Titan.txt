@@ -1,5 +1,5 @@
 name=Primeval Titan
-url=http://magiccards.info/m12/en/188.html
+url=http://magiccards.info/query?q=%21primeval%20titan
 image=http://mtgimage.com/card/primeval%20titan.jpg
 value=4.295
 rarity=M

@@ -1,5 +1,5 @@
 name=Vitaspore Thallid
-url=http://magiccards.info/pc/en/143.html
+url=http://magiccards.info/query?q=%21vitaspore%20thallid
 image=http://mtgimage.com/card/vitaspore%20thallid.jpg
 value=2.028
 rarity=C

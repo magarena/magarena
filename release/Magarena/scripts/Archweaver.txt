@@ -1,5 +1,5 @@
 name=Archweaver
-url=http://magiccards.info/rtr/en/114.html
+url=http://magiccards.info/query?q=%21archweaver
 image=http://mtgimage.com/card/archweaver.jpg
 value=2.273
 rarity=U

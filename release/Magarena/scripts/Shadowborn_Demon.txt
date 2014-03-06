@@ -1,5 +1,5 @@
 name=Shadowborn Demon
-url=http://magiccards.info/m14/en/115.html
+url=http://magiccards.info/query?q=%21shadowborn%20demon
 image=http://mtgimage.com/card/shadowborn%20demon.jpg
 value=3.941
 rarity=M

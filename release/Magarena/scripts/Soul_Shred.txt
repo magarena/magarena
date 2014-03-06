@@ -1,5 +1,5 @@
 name=Soul Shred
-url=http://magiccards.info/po/en/35.html
+url=http://magiccards.info/query?q=%21soul%20shred
 image=http://mtgimage.com/card/soul%20shred.jpg
 value=2.308
 rarity=C

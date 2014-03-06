@@ -1,5 +1,5 @@
 name=Salvage Scout
-url=http://magiccards.info/som/en/19.html
+url=http://magiccards.info/query?q=%21salvage%20scout
 image=http://mtgimage.com/card/salvage%20scout.jpg
 value=3.020
 rarity=C

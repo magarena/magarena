@@ -1,5 +1,5 @@
 name=Ember Weaver
-url=http://magiccards.info/cfx/en/81.html
+url=http://magiccards.info/query?q=%21ember%20weaver
 image=http://mtgimage.com/card/ember%20weaver.jpg
 value=3.163
 rarity=C

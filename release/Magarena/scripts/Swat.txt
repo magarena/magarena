@@ -1,5 +1,5 @@
 name=Swat
-url=http://magiccards.info/fut/es/104.html
+url=http://magiccards.info/query?q=%21swat
 image=http://mtgimage.com/card/swat.jpg
 value=3.014
 rarity=C

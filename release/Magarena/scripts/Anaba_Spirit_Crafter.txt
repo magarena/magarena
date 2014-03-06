@@ -1,5 +1,5 @@
 name=Anaba Spirit Crafter
-url=http://magiccards.info/me3/en/87.html
+url=http://magiccards.info/query?q=%21anaba%20spirit%20crafter
 image=http://mtgimage.com/card/anaba%20spirit%20crafter.jpg
 value=2.817
 rarity=R

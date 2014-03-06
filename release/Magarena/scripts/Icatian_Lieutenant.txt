@@ -1,5 +1,5 @@
 name=Icatian Lieutenant
-url=http://magiccards.info/fe/en/151.html
+url=http://magiccards.info/query?q=%21icatian%20lieutenant
 image=http://mtgimage.com/card/icatian%20lieutenant.jpg
 value=2.407
 rarity=C

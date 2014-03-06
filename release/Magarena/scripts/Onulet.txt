@@ -1,5 +1,5 @@
 name=Onulet
-url=http://magiccards.info/me4/en/219.html
+url=http://magiccards.info/query?q=%21onulet
 image=http://mtgimage.com/card/onulet.jpg
 value=3.167
 rarity=C

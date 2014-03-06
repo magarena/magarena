@@ -1,5 +1,5 @@
 name=Kjeldoran Gargoyle
-url=http://magiccards.info/cs/en/10.html
+url=http://magiccards.info/query?q=%21kjeldoran%20gargoyle
 image=http://mtgimage.com/card/kjeldoran%20gargoyle.jpg
 value=2.647
 rarity=U

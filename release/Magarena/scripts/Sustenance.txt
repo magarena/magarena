@@ -1,5 +1,5 @@
 name=Sustenance
-url=http://magiccards.info/mm/en/278.html
+url=http://magiccards.info/query?q=%21sustenance
 image=http://mtgimage.com/card/sustenance.jpg
 value=1.860
 rarity=U

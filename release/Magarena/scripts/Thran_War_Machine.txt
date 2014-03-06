@@ -1,5 +1,5 @@
 name=Thran War Machine
-url=http://magiccards.info/ul/en/134.html
+url=http://magiccards.info/query?q=%21thran%20war%20machine
 image=http://mtgimage.com/card/thran%20war%20machine.jpg
 value=2.352
 rarity=U

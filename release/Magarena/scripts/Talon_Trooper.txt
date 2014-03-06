@@ -1,5 +1,5 @@
 name=Talon Trooper
-url=http://magiccards.info/arb/en/14.html
+url=http://magiccards.info/query?q=%21talon%20trooper
 image=http://mtgimage.com/card/talon%20trooper.jpg
 value=2.730
 ability=flying

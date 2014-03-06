@@ -1,5 +1,5 @@
 name=Luminous Angel
-url=http://magiccards.info/dvd/en/12.html
+url=http://magiccards.info/query?q=%21luminous%20angel
 image=http://mtgimage.com/card/luminous%20angel.jpg
 value=3.455
 rarity=R

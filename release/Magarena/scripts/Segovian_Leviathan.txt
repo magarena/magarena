@@ -1,5 +1,5 @@
 name=Segovian Leviathan
-url=http://magiccards.info/6e/en/97.html
+url=http://magiccards.info/query?q=%21segovian%20leviathan
 image=http://mtgimage.com/card/segovian%20leviathan.jpg
 value=2.267
 rarity=U

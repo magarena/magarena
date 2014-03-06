@@ -1,5 +1,5 @@
 name=Expunge
-url=http://magiccards.info/us/en/135.html
+url=http://magiccards.info/query?q=%21expunge
 image=http://mtgimage.com/card/expunge.jpg
 value=3.825
 removal=2

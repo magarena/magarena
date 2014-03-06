@@ -1,5 +1,5 @@
 name=Explore
-url=http://magiccards.info/wwk/en/99.html
+url=http://magiccards.info/query?q=%21explore
 image=http://mtgimage.com/card/explore.jpg
 value=4.023
 rarity=C

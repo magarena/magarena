@@ -1,5 +1,5 @@
 name=Sluggishness
-url=http://magiccards.info/ul/en/92.html
+url=http://magiccards.info/query?q=%21sluggishness
 image=http://mtgimage.com/card/sluggishness.jpg
 value=2.685
 rarity=C

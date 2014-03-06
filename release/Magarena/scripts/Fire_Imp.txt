@@ -1,5 +1,5 @@
 name=Fire Imp
-url=http://magiccards.info/po/en/131.html
+url=http://magiccards.info/query?q=%21fire%20imp
 image=http://mtgimage.com/card/fire%20imp.jpg
 value=3.735
 rarity=U

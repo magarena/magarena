@@ -1,5 +1,5 @@
 name=Death Ward
-url=http://magiccards.info/5e/en/301.html
+url=http://magiccards.info/query?q=%21death%20ward
 image=http://mtgimage.com/card/death%20ward.jpg
 value=3.188
 rarity=C

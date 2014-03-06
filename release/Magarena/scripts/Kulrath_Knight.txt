@@ -1,5 +1,5 @@
 name=Kulrath Knight
-url=http://magiccards.info/shm/en/190.html
+url=http://magiccards.info/query?q=%21kulrath%20knight
 image=http://mtgimage.com/card/kulrath%20knight.jpg
 value=4.330
 rarity=U

@@ -1,5 +1,5 @@
 name=Necrogen Scudder
-url=http://magiccards.info/som/en/71.html
+url=http://magiccards.info/query?q=%21necrogen%20scudder
 image=http://mtgimage.com/card/necrogen%20scudder.jpg
 value=3.169
 rarity=U

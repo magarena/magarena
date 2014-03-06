@@ -1,5 +1,5 @@
 name=Virtue's Ruin
-url=http://magiccards.info/po/en/39.html
+url=http://magiccards.info/query?q=%21virtue%27s%20ruin
 image=http://mtgimage.com/card/virtue's%20ruin.jpg
 value=4.013
 rarity=U

@@ -1,5 +1,5 @@
 name=Offering to Asha
-url=http://magiccards.info/arb/en/9.html
+url=http://magiccards.info/query?q=%21offering%20to%20asha
 image=http://mtgimage.com/card/offering%20to%20asha.jpg
 value=2.993
 rarity=C

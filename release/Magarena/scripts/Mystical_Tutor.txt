@@ -1,5 +1,5 @@
 name=Mystical Tutor
-url=http://magiccards.info/fve/en/8.html
+url=http://magiccards.info/query?q=%21mystical%20tutor
 image=http://mtgimage.com/card/mystical%20tutor.jpg
 value=4.617
 rarity=M

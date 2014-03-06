@@ -1,5 +1,5 @@
 name=Aerie Mystics
-url=http://magiccards.info/cfx/en/1.html
+url=http://magiccards.info/query?q=%21aerie%20mystics
 image=http://mtgimage.com/card/aerie%20mystics.jpg
 value=2.850
 rarity=U

@@ -1,5 +1,5 @@
 name=Petravark
-url=http://magiccards.info/tr/en/109.html
+url=http://magiccards.info/query?q=%21petravark
 image=http://mtgimage.com/card/petravark.jpg
 value=2.826
 removal=2

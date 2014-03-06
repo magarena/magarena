@@ -1,5 +1,5 @@
 name=Claws of Valakut
-url=http://magiccards.info/ddg/en/72.html
+url=http://magiccards.info/query?q=%21claws%20of%20valakut
 image=http://mtgimage.com/card/claws%20of%20valakut.jpg
 value=3.677
 rarity=C

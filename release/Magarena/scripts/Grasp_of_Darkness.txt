@@ -1,5 +1,5 @@
 name=Grasp of Darkness
-url=http://magiccards.info/som/en/65.html
+url=http://magiccards.info/query?q=%21grasp%20of%20darkness
 image=http://mtgimage.com/card/grasp%20of%20darkness.jpg
 value=4.026
 removal=3

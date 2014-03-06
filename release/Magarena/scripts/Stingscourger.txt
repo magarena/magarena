@@ -1,5 +1,5 @@
 name=Stingscourger
-url=http://magiccards.info/pc/en/107.html
+url=http://magiccards.info/query?q=%21stingscourger
 image=http://mtgimage.com/card/stingscourger.jpg
 value=3.433
 removal=2

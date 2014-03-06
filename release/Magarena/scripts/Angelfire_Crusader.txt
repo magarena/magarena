@@ -1,5 +1,5 @@
 name=Angelfire Crusader
-url=http://magiccards.info/ap/en/1.html
+url=http://magiccards.info/query?q=%21angelfire%20crusader
 image=http://mtgimage.com/card/angelfire%20crusader.jpg
 value=2.013
 rarity=C

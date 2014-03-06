@@ -1,5 +1,5 @@
 name=Frost Titan
-url=http://magiccards.info/m12/en/55.html
+url=http://magiccards.info/query?q=%21frost%20titan
 image=http://mtgimage.com/card/frost%20titan.jpg
 value=4.134
 rarity=M

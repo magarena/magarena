@@ -1,5 +1,5 @@
 name=Crystalline Sliver
-url=http://magiccards.info/pds/en/11.html
+url=http://magiccards.info/query?q=%21crystalline%20sliver
 image=http://mtgimage.com/card/crystalline%20sliver.jpg
 value=4.511
 rarity=U

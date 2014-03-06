@@ -1,5 +1,5 @@
 name=Peace of Mind
-url=http://magiccards.info/9e/en/33.html
+url=http://magiccards.info/query?q=%21peace%20of%20mind
 image=http://mtgimage.com/card/peace%20of%20mind.jpg
 value=3.438
 rarity=U

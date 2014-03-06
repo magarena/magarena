@@ -1,5 +1,5 @@
 name=Shivan Harvest
-url=http://magiccards.info/in/en/167.html
+url=http://magiccards.info/query?q=%21shivan%20harvest
 image=http://mtgimage.com/card/shivan%20harvest.jpg
 value=3.426
 rarity=U

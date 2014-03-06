@@ -1,5 +1,5 @@
 name=Odylic Wraith
-url=http://magiccards.info/wl/en/19.html
+url=http://magiccards.info/query?q=%21odylic%20wraith
 image=http://mtgimage.com/card/odylic%20wraith.jpg
 value=2.862
 rarity=U

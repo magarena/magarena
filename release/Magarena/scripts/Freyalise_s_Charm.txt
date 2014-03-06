@@ -1,5 +1,5 @@
 name=Freyalise's Charm
-url=http://magiccards.info/ia/en/128.html
+url=http://magiccards.info/query?q=%21freyalise%27s%20charm
 image=http://mtgimage.com/card/freyalise's%20charm.jpg
 value=2.265
 rarity=U

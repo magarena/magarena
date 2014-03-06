@@ -1,5 +1,5 @@
 name=Curiosity
-url=http://magiccards.info/isd/en/49.html
+url=http://magiccards.info/query?q=%21curiosity
 image=http://mtgimage.com/card/curiosity.jpg
 value=4.057
 rarity=U

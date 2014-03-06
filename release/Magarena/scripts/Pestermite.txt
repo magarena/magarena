@@ -1,5 +1,5 @@
 name=Pestermite
-url=http://magiccards.info/lw/en/78.html
+url=http://magiccards.info/query?q=%21pestermite
 image=http://mtgimage.com/card/pestermite.jpg
 value=4.152
 rarity=C

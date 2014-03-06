@@ -1,5 +1,5 @@
 name=Cinderbones
-url=http://magiccards.info/shm/en/59.html
+url=http://magiccards.info/query?q=%21cinderbones
 image=http://mtgimage.com/card/cinderbones.jpg
 value=2.500
 rarity=C

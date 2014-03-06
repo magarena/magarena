@@ -1,5 +1,5 @@
 name=Pouncing Wurm
-url=http://magiccards.info/pc/en/136.html
+url=http://magiccards.info/query?q=%21pouncing%20wurm
 image=http://mtgimage.com/card/pouncing%20wurm.jpg
 value=2.855
 rarity=U

@@ -1,5 +1,5 @@
 name=Bitterblossom
-url=http://magiccards.info/mt/en/58.html
+url=http://magiccards.info/query?q=%21bitterblossom
 image=http://mtgimage.com/card/bitterblossom.jpg
 value=4.628
 rarity=R

@@ -1,5 +1,5 @@
 name=Favor of the Overbeing
-url=http://magiccards.info/eve/en/151.html
+url=http://magiccards.info/query?q=%21favor%20of%20the%20overbeing
 image=http://mtgimage.com/card/favor%20of%20the%20overbeing.jpg
 value=3.582
 rarity=C

@@ -1,5 +1,5 @@
 name=Canopy Cover
-url=http://magiccards.info/wwk/en/98.html
+url=http://magiccards.info/query?q=%21canopy%20cover
 image=http://mtgimage.com/card/canopy%20cover.jpg
 value=4.008
 rarity=U

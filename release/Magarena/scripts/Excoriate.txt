@@ -1,5 +1,5 @@
 name=Excoriate
-url=http://magiccards.info/bng/en/10.html
+url=http://magiccards.info/query?q=%21excoriate
 image=http://mtgimage.com/card/excoriate.jpg
 value=2.804
 rarity=C

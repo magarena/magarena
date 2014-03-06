@@ -1,5 +1,5 @@
 name=Restless Dead
-url=http://magiccards.info/mr/en/36.html
+url=http://magiccards.info/query?q=%21restless%20dead
 image=http://mtgimage.com/card/restless%20dead.jpg
 value=3.576
 rarity=C

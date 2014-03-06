@@ -1,5 +1,5 @@
 name=Urbis Protector
-url=http://magiccards.info/gtc/en/27.html
+url=http://magiccards.info/query?q=%21urbis%20protector
 image=http://mtgimage.com/card/urbis%20protector.jpg
 value=2.722
 rarity=U

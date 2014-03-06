@@ -1,5 +1,5 @@
 name=Absorb
-url=http://magiccards.info/in/en/226.html
+url=http://magiccards.info/query?q=%21absorb
 image=http://mtgimage.com/card/absorb.jpg
 value=4.111
 rarity=R

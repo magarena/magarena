@@ -1,5 +1,5 @@
 name=Lightning Strike
-url=http://magiccards.info/ths/en/127.html
+url=http://magiccards.info/query?q=%21lightning%20strike
 image=http://mtgimage.com/card/lightning%20strike.jpg
 value=3.539
 rarity=C

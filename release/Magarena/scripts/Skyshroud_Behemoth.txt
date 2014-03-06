@@ -1,5 +1,5 @@
 name=Skyshroud Behemoth
-url=http://magiccards.info/ne/en/116.html
+url=http://magiccards.info/query?q=%21skyshroud%20behemoth
 image=http://mtgimage.com/card/skyshroud%20behemoth.jpg
 value=2.000
 rarity=R

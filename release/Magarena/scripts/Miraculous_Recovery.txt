@@ -1,5 +1,5 @@
 name=Miraculous Recovery
-url=http://magiccards.info/ddl/en/30.html
+url=http://magiccards.info/query?q=%21miraculous%20recovery
 image=http://mtgimage.com/card/miraculous%20recovery.jpg
 value=4.381
 rarity=U

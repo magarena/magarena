@@ -1,5 +1,5 @@
 name=Violent Outburst
-url=http://magiccards.info/arb/en/63.html
+url=http://magiccards.info/query?q=%21violent%20outburst
 image=http://mtgimage.com/card/violent%20outburst.jpg
 value=3.031
 rarity=C

@@ -1,5 +1,5 @@
 name=Dungeon Shade
-url=http://magiccards.info/sh/en/8.html
+url=http://magiccards.info/query?q=%21dungeon%20shade
 image=http://mtgimage.com/card/dungeon%20shade.jpg
 value=3.526
 rarity=C

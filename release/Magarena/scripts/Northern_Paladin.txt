@@ -1,5 +1,5 @@
 name=Northern Paladin
-url=http://magiccards.info/7e/en/28.html
+url=http://magiccards.info/query?q=%21northern%20paladin
 image=http://mtgimage.com/card/northern%20paladin.jpg
 value=3.962
 rarity=R

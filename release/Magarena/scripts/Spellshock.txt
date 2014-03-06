@@ -1,5 +1,5 @@
 name=Spellshock
-url=http://magiccards.info/ex/en/104.html
+url=http://magiccards.info/query?q=%21spellshock
 image=http://mtgimage.com/card/spellshock.jpg
 value=3.932
 rarity=U

@@ -1,5 +1,5 @@
 name=Jungle Weaver
-url=http://magiccards.info/ala/en/134.html
+url=http://magiccards.info/query?q=%21jungle%20weaver
 image=http://mtgimage.com/card/jungle%20weaver.jpg
 value=2.664
 rarity=C

@@ -1,5 +1,5 @@
 name=Seal of Doom
-url=http://magiccards.info/di/en/53.html
+url=http://magiccards.info/query?q=%21seal%20of%20doom
 image=http://mtgimage.com/card/seal%20of%20doom.jpg
 value=3.976
 removal=3

@@ -1,5 +1,5 @@
 name=Thopter Foundry
-url=http://magiccards.info/arb/en/133.html
+url=http://magiccards.info/query?q=%21thopter%20foundry
 image=http://mtgimage.com/card/thopter%20foundry.jpg
 value=4.333
 rarity=U

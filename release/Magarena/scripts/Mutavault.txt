@@ -1,5 +1,5 @@
 name=Mutavault
-url=http://magiccards.info/mt/en/148.html
+url=http://magiccards.info/query?q=%21mutavault
 image=http://mtgimage.com/card/mutavault.jpg
 value=4.357
 rarity=R

@@ -1,5 +1,5 @@
 name=Karametra's Favor
-url=http://magiccards.info/bng/en/125.html
+url=http://magiccards.info/query?q=%21karametra%27s%20favor
 image=http://mtgimage.com/card/karametra's%20favor.jpg
 value=3.700
 rarity=C

@@ -1,5 +1,5 @@
 name=Sun Clasp
-url=http://magiccards.info/br/en/83.html
+url=http://magiccards.info/query?q=%21sun%20clasp
 image=http://mtgimage.com/card/sun%20clasp.jpg
 value=2.773
 rarity=C

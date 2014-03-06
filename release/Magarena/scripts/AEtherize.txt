@@ -1,5 +1,5 @@
 name=AEtherize
-url=http://magiccards.info/gtc/en/29.html
+url=http://magiccards.info/query?q=%21aetherize
 image=http://mtgimage.com/card/aetherize.jpg
 value=3.740
 rarity=U

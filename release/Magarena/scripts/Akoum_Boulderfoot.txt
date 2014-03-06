@@ -1,5 +1,5 @@
 name=Akoum Boulderfoot
-url=http://magiccards.info/roe/en/134.html
+url=http://magiccards.info/query?q=%21akoum%20boulderfoot
 image=http://mtgimage.com/card/akoum%20boulderfoot.jpg
 value=1.527
 rarity=U

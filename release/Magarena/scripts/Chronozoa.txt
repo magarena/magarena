@@ -1,5 +1,5 @@
 name=Chronozoa
-url=http://magiccards.info/pc/en/37.html
+url=http://magiccards.info/query?q=%21chronozoa
 image=http://mtgimage.com/card/chronozoa.jpg
 value=4.297
 rarity=R

@@ -1,5 +1,5 @@
 name=Flowstone Strike
-url=http://magiccards.info/ne/en/84.html
+url=http://magiccards.info/query?q=%21flowstone%20strike
 image=http://mtgimage.com/card/flowstone%20strike.jpg
 value=2.065
 rarity=C

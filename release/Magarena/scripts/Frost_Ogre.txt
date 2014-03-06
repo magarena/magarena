@@ -1,5 +1,5 @@
 name=Frost Ogre
-url=http://magiccards.info/bok/en/102.html
+url=http://magiccards.info/query?q=%21frost%20ogre
 image=http://mtgimage.com/card/frost%20ogre.jpg
 value=2.197
 rarity=C

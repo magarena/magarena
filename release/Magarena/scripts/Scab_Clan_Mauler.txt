@@ -1,5 +1,5 @@
 name=Scab-Clan Mauler
-url=http://magiccards.info/gp/en/128.html
+url=http://magiccards.info/query?q=%21scab%2Dclan%20mauler
 image=http://mtgimage.com/card/scab%2Dclan%20mauler.jpg
 value=4.246
 rarity=C

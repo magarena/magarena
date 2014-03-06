@@ -1,5 +1,5 @@
 name=Vector Asp
-url=http://magiccards.info/som/en/219.html
+url=http://magiccards.info/query?q=%21vector%20asp
 image=http://mtgimage.com/card/vector%20asp.jpg
 value=3.000
 rarity=C

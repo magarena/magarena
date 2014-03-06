@@ -1,5 +1,5 @@
 name=Indestructibility
-url=http://magiccards.info/m10/en/17.html
+url=http://magiccards.info/query?q=%21indestructibility
 image=http://mtgimage.com/card/indestructibility.jpg
 value=3.636
 rarity=R

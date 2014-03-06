@@ -1,5 +1,5 @@
 name=Vigilante Justice
-url=http://magiccards.info/avr/en/165.html
+url=http://magiccards.info/query?q=%21vigilante%20justice
 image=http://mtgimage.com/card/vigilante%20justice.jpg
 value=3.000
 rarity=U

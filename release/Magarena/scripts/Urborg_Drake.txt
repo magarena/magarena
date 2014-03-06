@@ -1,5 +1,5 @@
 name=Urborg Drake
-url=http://magiccards.info/in/en/283.html
+url=http://magiccards.info/query?q=%21urborg%20drake
 image=http://mtgimage.com/card/urborg%20drake.jpg
 value=3.500
 ability=flying;attacks each turn if able

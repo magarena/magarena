@@ -1,5 +1,5 @@
 name=Ondu Cleric
-url=http://magiccards.info/zen/en/30.html
+url=http://magiccards.info/query?q=%21ondu%20cleric
 image=http://mtgimage.com/card/ondu%20cleric.jpg
 value=4.016
 rarity=C

@@ -1,5 +1,5 @@
 name=Fire Drake
-url=http://magiccards.info/me3/en/98.html
+url=http://magiccards.info/query?q=%21fire%20drake
 image=http://mtgimage.com/card/fire%20drake.jpg
 value=2.122
 rarity=U

@@ -1,5 +1,5 @@
 name=Snapping Creeper
-url=http://magiccards.info/wwk/en/112.html
+url=http://magiccards.info/query?q=%21snapping%20creeper
 image=http://mtgimage.com/card/snapping%20creeper.jpg
 value=2.857
 rarity=C

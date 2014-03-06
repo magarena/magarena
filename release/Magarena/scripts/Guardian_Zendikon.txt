@@ -1,5 +1,5 @@
 name=Guardian Zendikon
-url=http://magiccards.info/wwk/en/6.html
+url=http://magiccards.info/query?q=%21guardian%20zendikon
 image=http://mtgimage.com/card/guardian%20zendikon.jpg
 value=2.518
 rarity=C

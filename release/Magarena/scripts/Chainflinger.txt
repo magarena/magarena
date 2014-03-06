@@ -1,5 +1,5 @@
 name=Chainflinger
-url=http://magiccards.info/od/en/181.html
+url=http://magiccards.info/query?q=%21chainflinger
 image=http://mtgimage.com/card/chainflinger.jpg
 value=2.071
 rarity=C

@@ -1,5 +1,5 @@
 name=Goblin Roughrider
-url=http://magiccards.info/wwk/en/82.html
+url=http://magiccards.info/query?q=%21goblin%20roughrider
 image=http://mtgimage.com/card/goblin%20roughrider.jpg
 value=2.964
 rarity=C

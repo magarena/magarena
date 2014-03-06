@@ -1,5 +1,5 @@
 name=Dramatic Entrance
-url=http://magiccards.info/shm/en/111.html
+url=http://magiccards.info/query?q=%21dramatic%20entrance
 image=http://mtgimage.com/card/dramatic%20entrance.jpg
 value=4.253
 rarity=R

@@ -1,5 +1,5 @@
 name=Lightning Prowess
-url=http://magiccards.info/avr/en/145.html
+url=http://magiccards.info/query?q=%21lightning%20prowess
 image=http://mtgimage.com/card/lightning%20prowess.jpg
 value=2.734
 rarity=U

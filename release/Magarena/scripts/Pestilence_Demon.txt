@@ -1,5 +1,5 @@
 name=Pestilence Demon
-url=http://magiccards.info/roe/en/124.html
+url=http://magiccards.info/query?q=%21pestilence%20demon
 image=http://mtgimage.com/card/pestilence%20demon.jpg
 value=4.168
 rarity=R

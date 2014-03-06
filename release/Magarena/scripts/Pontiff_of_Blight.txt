@@ -1,5 +1,5 @@
 name=Pontiff of Blight
-url=http://magiccards.info/dgm/en/27.html
+url=http://magiccards.info/query?q=%21pontiff%20of%20blight
 image=http://mtgimage.com/card/pontiff%20of%20blight.jpg
 value=3.779
 rarity=R

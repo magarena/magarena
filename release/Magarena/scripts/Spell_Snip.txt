@@ -1,5 +1,5 @@
 name=Spell Snip
-url=http://magiccards.info/ala/en/57.html
+url=http://magiccards.info/query?q=%21spell%20snip
 image=http://mtgimage.com/card/spell%20snip.jpg
 value=1.206
 rarity=C

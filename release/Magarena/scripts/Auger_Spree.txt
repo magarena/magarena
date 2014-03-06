@@ -1,5 +1,5 @@
 name=Auger Spree
-url=http://magiccards.info/rtr/en/144.html
+url=http://magiccards.info/query?q=%21auger%20spree
 image=http://mtgimage.com/card/auger%20spree.jpg
 value=3.153
 rarity=C

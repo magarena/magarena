@@ -1,5 +1,5 @@
 name=Repulse
-url=http://magiccards.info/cmd/en/58.html
+url=http://magiccards.info/query?q=%21repulse
 image=http://mtgimage.com/card/repulse.jpg
 value=3.770
 removal=2

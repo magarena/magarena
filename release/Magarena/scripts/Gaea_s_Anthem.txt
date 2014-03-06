@@ -1,5 +1,5 @@
 name=Gaea's Anthem
-url=http://magiccards.info/pc/en/147.html
+url=http://magiccards.info/query?q=%21gaea%27s%20anthem
 image=http://mtgimage.com/card/gaea%27s%20anthem.jpg
 value=4.212
 rarity=R

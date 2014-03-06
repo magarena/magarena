@@ -1,5 +1,5 @@
 name=Spiritmonger
-url=http://magiccards.info/ap/en/121.html
+url=http://magiccards.info/query?q=%21spiritmonger
 image=http://mtgimage.com/card/spiritmonger.jpg
 value=4.534
 rarity=R

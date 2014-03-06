@@ -1,5 +1,5 @@
 name=Accelerate
-url=http://magiccards.info/tr/pt/90.html
+url=http://magiccards.info/query?q=%21accelerate
 image=http://mtgimage.com/card/accelerate.jpg
 value=1.768
 rarity=C

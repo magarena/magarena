@@ -1,5 +1,5 @@
 name=Leonin Scimitar
-url=http://magiccards.info/10e/en/331.html
+url=http://magiccards.info/query?q=%21leonin%20scimitar
 image=http://mtgimage.com/card/leonin%20scimitar.jpg
 value=2.936
 rarity=C

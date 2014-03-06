@@ -1,5 +1,5 @@
 name=Diabolic Intent
-url=http://magiccards.info/ps/en/42.html
+url=http://magiccards.info/query?q=%21diabolic%20intent
 image=http://mtgimage.com/card/diabolic%20intent.jpg
 value=4.470
 rarity=R

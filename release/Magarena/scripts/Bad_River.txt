@@ -1,5 +1,5 @@
 name=Bad River
-url=http://magiccards.info/mr/en/289.html
+url=http://magiccards.info/query?q=%21bad%20river
 image=http://mtgimage.com/card/bad%20river.jpg
 value=3.105
 rarity=U

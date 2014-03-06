@@ -1,5 +1,5 @@
 name=Armored Cancrix
-url=http://magiccards.info/m11/en/44.html
+url=http://magiccards.info/query?q=%21armored%20cancrix
 image=http://mtgimage.com/card/armored%20cancrix.jpg
 value=1.304
 rarity=C

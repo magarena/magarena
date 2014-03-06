@@ -1,5 +1,5 @@
 name=Flowering Field
-url=http://magiccards.info/pr/en/9.html
+url=http://magiccards.info/query?q=%21flowering%20field
 image=http://mtgimage.com/card/flowering%20field.jpg
 value=1.857
 rarity=U

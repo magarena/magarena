@@ -1,5 +1,5 @@
 name=Bloodstained Mire
-url=http://magiccards.info/on/en/313.html
+url=http://magiccards.info/query?q=%21bloodstained%20mire
 image=http://mtgimage.com/card/bloodstained%20mire.jpg
 value=4.600
 rarity=R

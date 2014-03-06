@@ -1,5 +1,5 @@
 name=Dragon Egg
-url=http://magiccards.info/m14/en/137.html
+url=http://magiccards.info/query?q=%21dragon%20egg
 image=http://mtgimage.com/card/dragon%20egg.jpg
 value=3.605
 rarity=U

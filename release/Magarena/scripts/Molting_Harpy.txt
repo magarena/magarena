@@ -1,5 +1,5 @@
 name=Molting Harpy
-url=http://magiccards.info/mm/en/148.html
+url=http://magiccards.info/query?q=%21molting%20harpy
 image=http://mtgimage.com/card/molting%20harpy.jpg
 value=2.092
 rarity=U

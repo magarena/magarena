@@ -1,5 +1,5 @@
 name=Desert Twister
-url=http://magiccards.info/mm/en/243.html
+url=http://magiccards.info/query?q=%21desert%20twister
 image=http://mtgimage.com/card/desert%20twister.jpg
 value=3.746
 removal=5

@@ -1,5 +1,5 @@
 name=Regrowth
-url=http://magiccards.info/me4/en/163.html
+url=http://magiccards.info/query?q=%21regrowth
 image=http://mtgimage.com/card/regrowth.jpg
 value=4.536
 rarity=U

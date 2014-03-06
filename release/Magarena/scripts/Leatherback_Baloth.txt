@@ -1,5 +1,5 @@
 name=Leatherback Baloth
-url=http://magiccards.info/wwk/en/107.html
+url=http://magiccards.info/query?q=%21leatherback%20baloth
 image=http://mtgimage.com/card/leatherback%20baloth.jpg
 value=4.365
 rarity=U

@@ -1,5 +1,5 @@
 name=Joiner Adept
-url=http://magiccards.info/10e/en/271.html
+url=http://magiccards.info/query?q=%21joiner%20adept
 image=http://mtgimage.com/card/joiner%20adept.jpg
 value=4.438
 rarity=R

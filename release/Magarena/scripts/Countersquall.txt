@@ -1,5 +1,5 @@
 name=Countersquall
-url=http://magiccards.info/ddh/en/59.html
+url=http://magiccards.info/query?q=%21countersquall
 image=http://mtgimage.com/card/countersquall.jpg
 value=4.035
 rarity=U

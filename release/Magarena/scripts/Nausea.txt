@@ -1,5 +1,5 @@
 name=Nausea
-url=http://magiccards.info/8e/en/148.html
+url=http://magiccards.info/query?q=%21nausea
 image=http://mtgimage.com/card/nausea.jpg
 value=3.038
 rarity=C

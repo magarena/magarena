@@ -1,5 +1,5 @@
 name=Runewing
-url=http://magiccards.info/rtr/en/48.html
+url=http://magiccards.info/query?q=%21runewing
 image=http://mtgimage.com/card/runewing.jpg
 value=2.317
 ability=flying;dies effect PN draws a card.

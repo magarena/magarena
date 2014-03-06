@@ -1,5 +1,5 @@
 name=Goblin Grenade
-url=http://magiccards.info/m12/en/140.html
+url=http://magiccards.info/query?q=%21goblin%20grenade
 image=http://mtgimage.com/card/goblin%20grenade.jpg
 value=4.329
 rarity=U

@@ -1,5 +1,5 @@
 name=Master Thief
-url=http://magiccards.info/m12/en/64.html
+url=http://magiccards.info/query?q=%21master%20thief
 image=http://mtgimage.com/card/master%20thief.jpg
 value=3.734
 rarity=U

@@ -1,5 +1,5 @@
 name=Crashing Centaur
-url=http://magiccards.info/od/en/235.html
+url=http://magiccards.info/query?q=%21crashing%20centaur
 image=http://mtgimage.com/card/crashing%20centaur.jpg
 value=2.913
 rarity=U

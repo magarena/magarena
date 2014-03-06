@@ -1,5 +1,5 @@
 name=Krenko, Mob Boss
-url=http://magiccards.info/m13/en/138.html
+url=http://magiccards.info/query?q=%21krenko%2C%20mob%20boss
 image=http://mtgimage.com/card/krenko%2C%20mob%20boss.jpg
 value=4.088
 rarity=R

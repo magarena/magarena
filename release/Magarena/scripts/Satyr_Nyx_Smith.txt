@@ -1,5 +1,5 @@
 name=Satyr Nyx-Smith
-url=http://magiccards.info/bng/en/109.html
+url=http://magiccards.info/query?q=%21satyr%20nyx%2Dsmith
 image=http://mtgimage.com/card/satyr%20nyx-smith.jpg
 value=3.938
 rarity=U

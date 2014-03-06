@@ -1,5 +1,5 @@
 name=Vastwood Zendikon
-url=http://magiccards.info/wwk/en/117.html
+url=http://magiccards.info/query?q=%21vastwood%20zendikon
 image=http://mtgimage.com/card/vastwood%20zendikon.jpg
 value=2.575
 rarity=C

@@ -1,5 +1,5 @@
 name=Horseshoe Crab
-url=http://magiccards.info/10e/en/87.html
+url=http://magiccards.info/query?q=%21horseshoe%20crab
 image=http://mtgimage.com/card/horseshoe%20crab.jpg
 value=4.398
 rarity=C

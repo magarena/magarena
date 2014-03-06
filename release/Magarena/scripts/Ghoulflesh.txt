@@ -1,5 +1,5 @@
 name=Ghoulflesh
-url=http://magiccards.info/avr/en/103.html
+url=http://magiccards.info/query?q=%21ghoulflesh
 image=http://mtgimage.com/card/ghoulflesh.jpg
 value=1.484
 removal=1

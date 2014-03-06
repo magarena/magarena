@@ -1,5 +1,5 @@
 name=Merrow Grimeblotter
-url=http://magiccards.info/shm/en/171.html
+url=http://magiccards.info/query?q=%21merrow%20grimeblotter
 image=http://mtgimage.com/card/merrow%20grimeblotter.jpg
 value=1.651
 rarity=U

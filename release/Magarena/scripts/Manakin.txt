@@ -1,5 +1,5 @@
 name=Manakin
-url=http://magiccards.info/tp/en/286.html
+url=http://magiccards.info/query?q=%21manakin
 image=http://mtgimage.com/card/manakin.jpg
 value=3.233
 rarity=C

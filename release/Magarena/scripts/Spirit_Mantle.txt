@@ -1,5 +1,5 @@
 name=Spirit Mantle
-url=http://magiccards.info/m12/en/35.html
+url=http://magiccards.info/query?q=%21spirit%20mantle
 image=http://mtgimage.com/card/spirit%20mantle.jpg
 value=3.934
 rarity=U

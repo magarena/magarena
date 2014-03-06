@@ -1,5 +1,5 @@
 name=Spirit Loop
-url=http://magiccards.info/ts/en/42.html
+url=http://magiccards.info/query?q=%21spirit%20loop
 image=http://mtgimage.com/card/spirit%20loop.jpg
 value=4.010
 rarity=U

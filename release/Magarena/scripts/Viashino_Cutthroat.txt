@@ -1,5 +1,5 @@
 name=Viashino Cutthroat
-url=http://magiccards.info/ul/en/94.html
+url=http://magiccards.info/query?q=%21viashino%20cutthroat
 image=http://mtgimage.com/card/viashino%20cutthroat.jpg
 value=3.797
 rarity=U

@@ -1,5 +1,5 @@
 name=Concentrate
-url=http://magiccards.info/pc2/en/16.html
+url=http://magiccards.info/query?q=%21concentrate
 image=http://mtgimage.com/card/concentrate.jpg
 value=3.939
 rarity=U

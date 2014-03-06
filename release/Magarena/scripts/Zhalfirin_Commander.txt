@@ -1,5 +1,5 @@
 name=Zhalfirin Commander
-url=http://magiccards.info/ddg/en/13.html
+url=http://magiccards.info/query?q=%21zhalfirin%20commander
 image=http://mtgimage.com/card/zhalfirin%20commander.jpg
 value=3.690
 rarity=U

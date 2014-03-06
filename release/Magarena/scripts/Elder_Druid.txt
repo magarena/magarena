@@ -1,5 +1,5 @@
 name=Elder Druid
-url=http://magiccards.info/7e/en/238.html
+url=http://magiccards.info/query?q=%21elder%20druid
 image=http://mtgimage.com/card/elder%20druid.jpg
 value=2.405
 rarity=R

@@ -1,5 +1,5 @@
 name=Ghost Council of Orzhova
-url=http://magiccards.info/gp/en/114.html
+url=http://magiccards.info/query?q=%21ghost%20council%20of%20orzhova
 image=http://mtgimage.com/card/ghost%20council%20of%20orzhova.jpg
 value=3.942
 rarity=R

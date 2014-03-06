@@ -1,5 +1,5 @@
 name=Onslaught
-url=http://magiccards.info/ex/en/92.html
+url=http://magiccards.info/query?q=%21onslaught
 image=http://mtgimage.com/card/onslaught.jpg
 value=3.935
 rarity=C

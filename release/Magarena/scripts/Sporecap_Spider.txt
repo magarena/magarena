@@ -1,5 +1,5 @@
 name=Sporecap Spider
-url=http://magiccards.info/roe/en/209.html
+url=http://magiccards.info/query?q=%21sporecap%20spider
 image=http://mtgimage.com/card/sporecap%20spider.jpg
 value=3.246
 ability=reach

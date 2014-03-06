@@ -1,5 +1,5 @@
 name=Vexing Devil
-url=http://magiccards.info/avr/en/164.html
+url=http://magiccards.info/query?q=%21vexing%20devil
 image=http://mtgimage.com/card/vexing%20devil.jpg
 value=4.065
 rarity=R

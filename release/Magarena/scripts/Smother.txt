@@ -1,5 +1,5 @@
 name=Smother
-url=http://magiccards.info/wwk/en/68.html
+url=http://magiccards.info/query?q=%21smother
 image=http://mtgimage.com/card/smother.jpg
 value=4.412
 removal=2

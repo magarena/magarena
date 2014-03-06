@@ -1,5 +1,5 @@
 name=Warren Weirding
-url=http://magiccards.info/mt/en/82.html
+url=http://magiccards.info/query?q=%21warren%20weirding
 image=http://mtgimage.com/card/warren%20weirding.jpg
 value=4.154
 removal=2

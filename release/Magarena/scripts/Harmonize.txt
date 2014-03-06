@@ -1,5 +1,5 @@
 name=Harmonize
-url=http://magiccards.info/cmd/en/158.html
+url=http://magiccards.info/query?q=%21harmonize
 image=http://mtgimage.com/card/harmonize.jpg
 value=3.500
 rarity=U

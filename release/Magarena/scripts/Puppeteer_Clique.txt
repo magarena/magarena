@@ -1,5 +1,5 @@
 name=Puppeteer Clique
-url=http://magiccards.info/shm/en/75.html
+url=http://magiccards.info/query?q=%21puppeteer%20clique
 image=http://mtgimage.com/card/puppeteer%20clique.jpg
 value=3.670
 rarity=R

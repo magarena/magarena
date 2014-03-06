@@ -1,5 +1,5 @@
 name=Tunnel
-url=http://magiccards.info/4e/en/245.html
+url=http://magiccards.info/query?q=%21tunnel
 image=http://mtgimage.com/card/tunnel.jpg
 value=1.908
 rarity=U
