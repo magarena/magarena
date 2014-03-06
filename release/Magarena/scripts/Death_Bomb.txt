@@ -1,9 +1,9 @@
 name=Death Bomb
-url=http://magiccards.info/query?q=%21death%20bomb
+url=http://magiccards.info/ps/en/41.html
 image=http://mtgimage.com/card/death%20bomb.jpg
 value=1.837
 rarity=C
 type=Instant
 cost={3}{B}
 timing=removal
-requires_groovy_code
+requires_groovy_code=Bone Splinters;Death Bomb

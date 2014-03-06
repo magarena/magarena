@@ -8,4 +8,4 @@ subtype=Goblin
 cost={3}{B}
 timing=removal
 removal=5
-requires_groovy_code
+requires_groovy_code=Goblin Grenade;Fodder Launch

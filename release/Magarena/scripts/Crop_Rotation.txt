@@ -6,4 +6,4 @@ rarity=C
 type=Instant
 cost={G}
 timing=removal
-requires_groovy_code
+requires_groovy_code=Shard Volley;Crop Rotation

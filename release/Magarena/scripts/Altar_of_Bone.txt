@@ -6,4 +6,4 @@ rarity=R
 type=Sorcery
 cost={G}{W}
 timing=main
-requires_groovy_code
+requires_groovy_code=Bone Splinters;Altar of Bone
