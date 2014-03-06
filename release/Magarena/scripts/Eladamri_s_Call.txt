@@ -1,0 +1,9 @@
+name=Eladamri's Call
+url=http://magiccards.info/ps/en/106.html
+image=http://mtgimage.com/card/eladamri's%20call.jpg
+value=4.541
+rarity=R
+type=Instant
+cost={G}{W}
+timing=draw
+requires_groovy_code=Altar of Bone
