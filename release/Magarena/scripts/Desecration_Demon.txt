@@ -1,0 +1,12 @@
+name=Desecration Demon
+url=http://magiccards.info/rtr/en/63.html
+image=http://mtgimage.com/card/Desecration%20Demon.jpg
+value=4.291
+rarity=M
+type=Legendary,Creature
+subtype=Demon
+cost={2}{B}{B}
+pt=6/6
+timing=main
+ability=flying
+requires_groovy_code
