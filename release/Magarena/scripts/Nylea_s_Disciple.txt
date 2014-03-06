@@ -1,0 +1,11 @@
+name=Nylea's Disciple
+url=http://www.magiccards.info/query?q=%21nylea%27s%20disciple
+image=http://mtgimage.com/card/nylea's%20disciple.jpg
+value=3.659
+rarity=C
+type=Creature
+subtype=Archer,Centaur
+cost={2}{G}{G}
+pt=3/3
+timing=main
+requires_groovy_code

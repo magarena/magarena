@@ -1,0 +1,9 @@
+name=Vanquish the Foul
+url=http://www.magiccards.info/query?q=%21vanquish%20the%20foul
+image=http://mtgimage.com/card/vanquish%20the%20foul.jpg
+value=1.212
+rarity=U
+type=Sorcery
+cost={5}{W}
+timing=main
+requires_groovy_code
