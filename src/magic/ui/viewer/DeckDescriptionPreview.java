@@ -47,13 +47,13 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
             return;
         }
 
-        final Scanner sc = new Scanner(content);
-
-        while (sc.hasNextLine()) {
-            final String line = sc.nextLine().trim();
-            if (line.startsWith(">")) {
-                description = line.substring(1);
-                break;
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String line = sc.nextLine().trim();
+                if (line.startsWith(">")) {
+                    description = line.substring(1);
+                    break;
+                }
             }
         }
 
