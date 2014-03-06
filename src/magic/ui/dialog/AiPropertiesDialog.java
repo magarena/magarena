@@ -43,7 +43,7 @@ public class AiPropertiesDialog extends JDialog {
 
         this.playerProfile = profile == null ? new AiPlayer() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());
-        lifeSliderPanel = new SliderPanel("Life+", null, 0, 10, 1, playerProfile.getExtraLife());
+        lifeSliderPanel = new SliderPanel("Extra Life", null, 0, 10, 1, playerProfile.getExtraLife());
         aiLevelSliderPanel = new SliderPanel("AI Level", null, 1, 8, 1, playerProfile.getAiLevel());
 
         aiComboBox = new JComboBox<MagicAIImpl>();
