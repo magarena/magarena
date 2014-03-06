@@ -102,6 +102,7 @@ public class MagicGame {
     private long[] keys;
     private long stateId;
     private long time = 1000000;
+    private boolean isConceded = false;
 
 
     public static MagicGame getInstance() {
@@ -1288,5 +1289,12 @@ public class MagicGame {
             final MagicTrigger<T> trigger = (MagicTrigger<T>)permanentTrigger.getTrigger();
             executeTrigger(trigger,permanent,permanent,data);
         }
+    }
+
+    public void setConceded(final boolean b) {
+        isConceded = true;
+    }
+    public boolean isConceded() {
+        return isConceded;
     }
 }

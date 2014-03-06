@@ -32,6 +32,7 @@ public abstract class AbstractScreen extends JPanel {
 
     private JPanel content;
     private final MagicFrame frame;
+    private ActionBar actionbar;
 
     // CTR
     public AbstractScreen() {
@@ -41,13 +42,19 @@ public abstract class AbstractScreen extends JPanel {
         setEscapeKeyInputMap();
     }
 
+    protected void refreshActionBar() {
+        actionbar.refreshLayout();
+    }
+
     protected void setContent(final JPanel content) {
         this.content = content;
-        doMagScreenLayout();
+        doMigLayout();
+        revalidate();
+        repaint();
         setBusy(false);
     }
 
-    private void doMagScreenLayout() {
+    private void doMigLayout() {
         removeAll();
         setLayout(new MigLayout("insets 0, gap 0, flowy"));
         layoutMagStatusBar();
@@ -63,7 +70,8 @@ public abstract class AbstractScreen extends JPanel {
 
     private void layoutMagActionBar() {
         if (hasActionBar()) {
-            add(new ActionBar((IActionBar)this), "w 100%");
+            this.actionbar = new ActionBar((IActionBar)this);
+            add(actionbar, "w 100%");
         } else if (!(this instanceof DuelGameScreen)) {
             add(getKeysStrip(), "w 100%");
         }

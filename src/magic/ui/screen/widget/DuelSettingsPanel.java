@@ -1,0 +1,170 @@
+package magic.ui.screen.widget;
+
+import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+import net.miginfocom.swing.MigLayout;
+import magic.MagicUtility;
+import magic.data.CubeDefinitions;
+import magic.data.DuelConfig;
+import magic.data.IconImages;
+import magic.ui.MagicFrame;
+import magic.ui.dialog.DuelPropertiesDialog;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+
+@SuppressWarnings("serial")
+public class DuelSettingsPanel extends TexturedPanel {
+
+    private final MagicFrame frame;
+    private final DuelConfig config;
+    private int startLife;
+    private int handSize;
+    private int maxGames = 7;
+    private String cube = CubeDefinitions.getCubeNames()[0];
+    private final MouseAdapter mouseAdapter = getMouseAdapter();
+
+    public DuelSettingsPanel(final MagicFrame frame, final DuelConfig config) {
+
+        this.frame = frame;
+        this.config = config;
+
+        startLife = config.getStartLife();
+        handSize = config.getHandSize();
+        maxGames = config.getNrOfGames();
+        cube = config.getCube();
+
+        setBorder(FontsAndBorders.BLACK_BORDER);
+        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+
+        addMouseListener(mouseAdapter);
+
+        setLayout(new MigLayout("insets 0 5 0 0, gap 30, center"));
+        refreshDisplay();
+
+    }
+
+    @Override
+    public void setEnabled(boolean enabled) {
+        removeMouseListener(mouseAdapter);
+        if (enabled) {
+            addMouseListener(mouseAdapter);
+        } else {
+            setBorder(null);
+            setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
+            final StringBuilder sb = new StringBuilder();
+            sb.append("<html><b>Duel Settings</b><br>");
+            sb.append("Initial Player life: ").append(startLife).append("<br>");
+            sb.append("Initial Hand size: ").append(handSize).append("<br>");
+            sb.append("Maximum games: ").append(maxGames).append(" (first to ").append(getGamesRequiredToWinDuel()).append(")<br>");
+            sb.append("Cube: ").append(cube).append("</html>");
+            setToolTipText(sb.toString());
+        }
+    }
+
+    private int getGamesRequiredToWinDuel() {
+        return (int)Math.ceil(maxGames/2.0);
+    }
+
+    private void refreshDisplay() {
+        removeAll();
+        add(getDuelSettingsLabel(IconImages.LIFE_ICON, "" + startLife), "h 100%");
+        add(getDuelSettingsLabel(IconImages.HAND_ICON, "" + handSize), "h 100%");
+        add(getDuelSettingsLabel(IconImages.TARGET_ICON, "" + maxGames), "h 100%");
+        add(getDuelSettingsLabel(IconImages.CUBE_ICON, " " + getCubeNameWithoutSize()), "h 100%");
+        revalidate();
+        repaint();
+    }
+
+    private MouseAdapter getMouseAdapter() {
+        return new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                MagicUtility.setBusyMouseCursor(true);
+                updateDuelSettings();
+                MagicUtility.setBusyMouseCursor(false);
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+                setBorder(BorderFactory.createLineBorder(Color.YELLOW, 2));
+                setBackground(FontsAndBorders.MENUPANEL_COLOR);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+                setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
+                setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+            }
+        };
+    }
+
+    private JLabel getDuelSettingsLabel(final ImageIcon icon, final String text) {
+        final JLabel lbl = new JLabel(text);
+        lbl.setIcon(icon);
+        lbl.setForeground(Color.WHITE);
+        lbl.setFont(new Font("Dialog", Font.PLAIN, 18));
+        lbl.setHorizontalAlignment(SwingConstants.CENTER);
+        return lbl;
+    }
+
+    public void updateDuelSettings() {
+        final DuelPropertiesDialog dialog =
+                new DuelPropertiesDialog(frame, handSize, startLife, maxGames, cube);
+        if (!dialog.isCancelled()) {
+            startLife = dialog.getStartLife();
+            handSize = dialog.getHandSize();
+            maxGames = dialog.getNrOfGames();
+            cube = dialog.getCube();
+            saveSettings();
+            refreshDisplay();
+        }
+    }
+
+    private void saveSettings() {
+        config.setStartLife(startLife);
+        config.setHandSize(handSize);
+        config.setNrOfGames(maxGames);
+        config.setCube(cube);
+        config.save();
+    }
+
+    public String getCube() {
+        return cube;
+    }
+
+    public int getStartLife() {
+        return startLife;
+    }
+
+    public int getHandSize() {
+        return handSize;
+    }
+
+    public int getNrOfGames() {
+        return maxGames;
+    }
+
+    private String getCubeNameWithoutSize() {
+        String verboseCubeName = toTitleCase(cube);
+        final int toIndex = verboseCubeName.indexOf("(");
+        if (toIndex == -1) {
+            return verboseCubeName;
+        } else {
+            return verboseCubeName.substring(0, toIndex).trim();
+        }
+    }
+
+    private String toTitleCase(final String text) {
+        return text.substring(0, 1).toUpperCase() + text.substring(1);
+    }
+
+}

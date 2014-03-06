@@ -10,6 +10,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
@@ -340,6 +341,14 @@ public class DeckEditorScreen
             menu.setBackground(FontsAndBorders.IMENUOVERLAY_MENUPANEL_COLOR);
             return menu;
         }
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
+     */
+    @Override
+    public JPanel getStatusPanel() {
+        return null;
     }
 
 }

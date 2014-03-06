@@ -5,7 +5,6 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.border.Border;
 import java.awt.BorderLayout;
@@ -77,15 +76,14 @@ public class PlayerAvatarPanel extends TexturedPanel {
 
     private void update() {
         if (playerDefinition != null) {
-            final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-            final ImageIcon faceIcon=theme.getAvatarIcon(playerDefinition.getFace(),small?2:3);
-            faceLabel.setIcon(faceIcon);
+
+            faceLabel.setIcon(playerDefinition.getAvatar().getIcon(small?2:3));
+
             titleBar.setText(playerDefinition.getName());
             if (small) {
                 titleBar.setVisible(false);
                 setPreferredSize(new Dimension(72,80));
             } else {
-                new JLabel(faceIcon);
                 titleBar.setVisible(true);
                 setPreferredSize(new Dimension(132,150));
             }

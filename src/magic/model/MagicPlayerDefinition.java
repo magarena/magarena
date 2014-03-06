@@ -3,7 +3,7 @@ package magic.model;
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.generator.DefaultDeckGenerator;
-
+import magic.ui.theme.PlayerAvatar;
 import java.util.Properties;
 
 public class MagicPlayerDefinition {
@@ -14,21 +14,24 @@ public class MagicPlayerDefinition {
     private static final String NAME="name";
     private static final String ARTIFICIAL="artificial";
     private static final String COLORS="colors";
-    private static final String FACE="face";
 
     private String name;
     private boolean artificial;
     private MagicPlayerProfile profile;
-    private int face;
     private final MagicDeck deck = new MagicDeck();
+    private PlayerAvatar avatar;
 
-    MagicPlayerDefinition() {}
+    MagicPlayerDefinition() {
 
-    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile,final int face) {
+    }
+    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile) {
         this.name=name;
         this.artificial=artificial;
         this.profile=profile;
-        this.face=face;
+    }
+    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile,final int face) {
+        this(name, artificial, profile);
+        this.avatar = new PlayerAvatar(face);
     }
 
     public String getName() {
@@ -49,10 +52,6 @@ public class MagicPlayerDefinition {
 
     public MagicPlayerProfile getProfile() {
         return profile;
-    }
-
-    public int getFace() {
-        return face;
     }
 
     private void addBasicLandsToDeck() {
@@ -140,7 +139,6 @@ public class MagicPlayerDefinition {
         artificial=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
         final String colors=properties.getProperty(prefix+COLORS,"");
         profile=new MagicPlayerProfile(colors);
-        face=Integer.parseInt(properties.getProperty(prefix+FACE));
 
         final MagicDeck unsupported = new MagicDeck();
         deck.clear();
@@ -164,11 +162,18 @@ public class MagicPlayerDefinition {
         properties.setProperty(prefix+NAME,name);
         properties.setProperty(prefix+ARTIFICIAL,Boolean.toString(artificial));
         properties.setProperty(prefix+COLORS,getProfile().getColorText());
-        properties.setProperty(prefix+FACE,Integer.toString(face));
 
         int index=1;
         for (final MagicCardDefinition cardDefinition : deck) {
             properties.setProperty(getDeckPrefix(prefix,index++),cardDefinition.getFullName());
         }
     }
+
+    public void setAvatar(final PlayerAvatar avatar) {
+        this.avatar = avatar;
+    }
+    public PlayerAvatar getAvatar() {
+        return avatar;
+    }
+
 }

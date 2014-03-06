@@ -7,7 +7,9 @@ import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
+import magic.data.IconImages;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -36,11 +38,20 @@ public class ActionBar extends TexturedPanel {
         addRightAction();
 
     }
+    public void refreshLayout() {
+        setMagActionBarLayout();
+        validate();
+        repaint();
+    }
 
     private void addRightAction() {
         MenuButton action = actionProvider.getRightAction();
         if (action != null) {
             action.setEnabled(action.isRunnable());
+            if (action.getIcon() == null) {
+                action.setIcon(IconImages.NEXT_ICON);
+            }
+            action.setHorizontalTextPosition(SwingConstants.LEFT);
             add(action);
         }
     }
@@ -68,6 +79,8 @@ public class ActionBar extends TexturedPanel {
         MenuButton action = actionProvider.getLeftAction();
         if (action != null) {
             action.setEnabled(action.isRunnable());
+            action.setIcon(IconImages.BACK_ICON);
+            action.setHorizontalTextPosition(SwingConstants.RIGHT);
             add(action);
         } else {
             JLabel lbl = new JLabel();

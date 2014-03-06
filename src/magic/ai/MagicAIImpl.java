@@ -14,7 +14,7 @@ public enum MagicAIImpl {
     MCTSC2("monte carlo tree search (cheat)", new MCTSAI2(true)),
     ;
 
-    private static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTS, MCTSC, VEGAS, VEGASC};
+    public static final MagicAIImpl[] SUPPORTED_AIS = {MMAB, MMABC, MCTS, MCTSC, VEGAS, VEGASC};
 
     private final String name;
     private final MagicAI ai;
@@ -49,4 +49,10 @@ public enum MagicAIImpl {
         }
         return names;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
 }

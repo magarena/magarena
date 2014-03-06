@@ -19,15 +19,22 @@ public class IconImages {
     public static final BufferedImage OPAL=loadImage("textures/opal.jpg");
     public static final BufferedImage OPAL2=loadImage("textures/opal2.jpg");
 
-    // Icons used by various components of AbstractScreen.
-    public static final ImageIcon HEADER_ICON = loadIcon("headerIcon.png");
-    public static final ImageIcon OPTIONS_ICON = loadIcon("book.png");
-    public static final ImageIcon REFRESH_ICON = loadIcon("refresh.png");
-    public static final ImageIcon MULLIGAN_ICON = loadIcon("mulligan.png");
-    public static final ImageIcon HAND_ICON = loadIcon("hand.png");
-    public static final ImageIcon TILED_ICON = loadIcon("tiled.png");
-    public static final ImageIcon SAVE_ICON = loadIcon("save.png");
-    public static final ImageIcon LOAD_ICON = loadIcon("load.png");
+    // White transparent icons used by various components of AbstractScreen.
+    public static final ImageIcon HEADER_ICON       = loadIcon("headerIcon.png");
+    public static final ImageIcon OPTIONS_ICON      = loadIcon("w_book.png");
+    public static final ImageIcon REFRESH_ICON      = loadIcon("w_refresh.png");
+    public static final ImageIcon MULLIGAN_ICON     = loadIcon("w_mulligan.png");
+    public static final ImageIcon HAND_ICON         = loadIcon("w_hand.png");
+    public static final ImageIcon TILED_ICON        = loadIcon("w_tiled.png");
+    public static final ImageIcon SAVE_ICON         = loadIcon("w_save.png");
+    public static final ImageIcon LOAD_ICON         = loadIcon("w_load.png");
+    public static final ImageIcon SWAP_ICON         = loadIcon("w_swap.png");
+    public static final ImageIcon DECK_ICON         = loadIcon("w_deck.png");
+    public static final ImageIcon NEXT_ICON         = loadIcon("w_next.png");
+    public static final ImageIcon BACK_ICON         = loadIcon("w_back.png");
+    public static final ImageIcon LIFE_ICON         = loadIcon("w_life.png");
+    public static final ImageIcon TARGET_ICON       = loadIcon("w_target.png");
+    public static final ImageIcon CUBE_ICON         = loadIcon("w_cube.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon CUBE=loadIcon("cube.png");

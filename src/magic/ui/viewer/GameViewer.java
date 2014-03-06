@@ -6,8 +6,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TextLabel;
 import magic.ui.widget.TitleBar;
 
@@ -47,7 +45,6 @@ public class GameViewer extends JPanel implements ActionListener {
     private final CardLayout actionCardLayout;
     private final JPanel contentPanel;
     private boolean actionEnabled;
-    private final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
 
     public GameViewer(final MagicGame game,final GameController controller) {
 
@@ -196,7 +193,7 @@ public class GameViewer extends JPanel implements ActionListener {
      * for use with the GameDuelViewer component.
      */
     public ImageIcon getTurnSizedPlayerAvatar() {
-        return theme.getAvatarIcon(game.getTurnPlayer().getPlayerDefinition().getFace(), 4);
+        return game.getTurnPlayer().getPlayerDefinition().getAvatar().getIcon(4);
     }
 
 }

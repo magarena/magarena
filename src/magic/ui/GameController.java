@@ -466,6 +466,7 @@ public class GameController implements ILogBookListener {
     public void concede() {
         if (!gameConceded.get() && !game.isFinished()) {
             game.setLosingPlayer(game.getPlayer(0));
+            game.setConceded(true);
             game.clearUndoPoints();
             gameConceded.set(true);
             resume(true);

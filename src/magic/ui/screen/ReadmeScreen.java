@@ -111,4 +111,12 @@ public class ReadmeScreen extends AbstractScreen implements IStatusBar, IActionB
         return true;
     }
 
+    /* (non-Javadoc)
+     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
+     */
+    @Override
+    public JPanel getStatusPanel() {
+        return null;
+    }
+
 }

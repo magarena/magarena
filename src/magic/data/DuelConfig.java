@@ -5,6 +5,8 @@ import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicColor;
 import magic.model.MagicPlayerProfile;
+import magic.model.player.PlayerProfile;
+import magic.model.player.PlayerProfiles;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,9 +21,7 @@ public class DuelConfig {
     private static final String ANY_TWO="**";
     private static final String ANY_ONE="*";
 
-    private static final String CONFIG_FILENAME="duel.cfg";
-    private static final String AVATAR="avatar";
-    private static final String NAME="name";
+    private static final String CONFIG_FILENAME="newduel.cfg";
     private static final String START_LIFE="life";
     private static final String HAND_SIZE="hand";
     private static final String GAMES="games";
@@ -30,44 +30,46 @@ public class DuelConfig {
     private static final String CUBE="cube";
     private static final String AI="ai";
 
-    private int avatar;
-    private String name="Player";
-    private int startLife=20;
-    private int handSize=7;
-    private int games=7;
-    private String playerColors=ANY_THREE;
-    private String opponentColors=ANY_THREE;
-    private String cube=CubeDefinitions.DEFAULT_NAME;
-    private String ai="minimax";
+    // default values.
+    private int startLife = 20;
+    private int handSize = 7;
+    private int games = 7;
+    private String playerOneDeckGenerator = ANY_THREE;
+    private String playerTwoDeckGenerator = ANY_THREE;
+    private String cube = CubeDefinitions.getCubeNames()[0];
+    private String ai = "minimax";
+    private PlayerProfile playerOne = null;
+    private PlayerProfile playerTwo = null;
 
+    // CTR
     public DuelConfig() {
-
+        // Ensure DuelConfig has valid PlayerProfile references.
+        // If missing then creates default profiles.
+        PlayerProfiles.refreshMap();
     }
 
+    // CTR: copy constructor - a common way of creating a copy of an existing object.
     public DuelConfig(final DuelConfig duelConfig) {
-        avatar=duelConfig.avatar;
         startLife=duelConfig.startLife;
         handSize=duelConfig.handSize;
         games=duelConfig.games;
-        playerColors=duelConfig.playerColors;
-        opponentColors=duelConfig.opponentColors;
+        playerOneDeckGenerator=duelConfig.playerOneDeckGenerator;
+        playerTwoDeckGenerator=duelConfig.playerTwoDeckGenerator;
         ai=duelConfig.ai;
     }
 
-    public int getAvatar() {
-        return avatar;
+    public PlayerProfile getPlayerOneProfile() {
+        return playerOne;
+    }
+    public void setPlayerOneProfile(PlayerProfile playerProfile) {
+        this.playerOne = playerProfile;
     }
 
-    public void setAvatar(final int avatar) {
-        this.avatar = avatar;
+    public PlayerProfile getPlayerTwoProfile() {
+        return playerTwo;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(final String name) {
-        this.name=name;
+    public void setPlayerTwoProfile(PlayerProfile playerProfile) {
+        this.playerTwo = playerProfile;
     }
 
     public int getStartLife() {
@@ -94,7 +96,7 @@ public class DuelConfig {
         return games;
     }
 
-    private static MagicPlayerProfile getProfile(final String colorText) {
+    private static MagicPlayerProfile getMagicPlayerProfile(final String colorText) {
         if (ANY_DECK.equals(colorText)) {
             return new MagicPlayerProfile("");
         } else if (ANY_THREE.equals(colorText)) {
@@ -110,28 +112,28 @@ public class DuelConfig {
         return new MagicPlayerProfile(colorText);
     }
 
-    public String getPlayerColors() {
-        return playerColors;
+    public MagicPlayerProfile getMagicPlayerProfile() {
+        return getMagicPlayerProfile(playerOneDeckGenerator);
     }
 
-    public void setPlayerColors(final String colors) {
-        playerColors=colors;
+    public String getPlayerOneDeckGenerator() {
+        return playerOneDeckGenerator;
     }
 
-    public MagicPlayerProfile getPlayerProfile() {
-        return getProfile(playerColors);
+    public void setPlayerOneDeckGenerator(final String deckGenerator) {
+        playerOneDeckGenerator = deckGenerator;
     }
 
-    public String getOpponentColors() {
-        return opponentColors;
+    public String getPlayerTwoDeckGenerator() {
+        return playerTwoDeckGenerator;
     }
 
-    public void setOpponentColors(final String colors) {
-        opponentColors=colors;
+    public void setPlayerTwoDeckGenerator(final String deckGenerator) {
+        playerTwoDeckGenerator = deckGenerator;
     }
 
-    public MagicPlayerProfile getOpponentProfile() {
-        return getProfile(opponentColors);
+    public MagicPlayerProfile getMagicOpponentProfile() {
+        return getMagicPlayerProfile(playerTwoDeckGenerator);
     }
 
     public String getCube() {
@@ -156,31 +158,33 @@ public class DuelConfig {
     }
 
     public void load(final Properties properties) {
-        avatar=Integer.parseInt(properties.getProperty(AVATAR,Integer.toString(avatar)));
-        name=properties.getProperty(NAME,name);
+        setPlayerOneProfile(PlayerProfile.getHumanPlayer(properties.getProperty("HumanPlayer")));
+        setPlayerTwoProfile(PlayerProfile.getAiPlayer(properties.getProperty("AiPlayer")));
         startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
         handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
         games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
-        playerColors=properties.getProperty(PLAYER,playerColors);
-        opponentColors=properties.getProperty(OPPONENT,opponentColors);
+        playerOneDeckGenerator=properties.getProperty(PLAYER,playerOneDeckGenerator);
+        playerTwoDeckGenerator=properties.getProperty(OPPONENT,playerTwoDeckGenerator);
         cube=properties.getProperty(CUBE,cube);
         ai=properties.getProperty(AI,ai);
     }
 
     public void load() {
-        load(FileIO.toProp(getConfigFile()));
+        final File configFile = getConfigFile();
+        final Properties properties = configFile.exists() ? FileIO.toProp(configFile) : new Properties();
+        load(properties);
     }
 
     public void save(final Properties properties) {
-        properties.setProperty(AVATAR,Integer.toString(avatar));
-        properties.setProperty(NAME,name);
-        properties.setProperty(START_LIFE,Integer.toString(startLife));
-        properties.setProperty(HAND_SIZE,Integer.toString(handSize));
+        properties.setProperty("HumanPlayer", getPlayerOneProfile().getId());
+        properties.setProperty("AiPlayer", getPlayerTwoProfile().getId());
+        properties.setProperty(START_LIFE, Integer.toString(startLife));
+        properties.setProperty(HAND_SIZE, Integer.toString(handSize));
         properties.setProperty(GAMES, Integer.toString(games));
-        properties.setProperty(PLAYER,playerColors);
-        properties.setProperty(OPPONENT,opponentColors);
-        properties.setProperty(CUBE,cube);
-        properties.setProperty(AI,ai);
+        properties.setProperty(PLAYER, playerOneDeckGenerator);
+        properties.setProperty(OPPONENT, playerTwoDeckGenerator);
+        properties.setProperty(CUBE, cube);
+        properties.setProperty(AI, ai);
     }
 
     public void save() {

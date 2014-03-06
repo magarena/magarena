@@ -1,0 +1,243 @@
+package magic.model.player;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Properties;
+
+import magic.data.FileIO;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicDeck;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.model.player.PlayerProfile;
+
+public class PlayerStatistics {
+
+    private static final String TIMESTAMP = "timestamp";
+    private static final String GAMES_PLAYED = "gamesPlayed";
+    private static final String GAMES_WON = "gamesWon";
+    private static final String GAMES_CONCEDED = "gamesConceded";
+    private static final String DUELS_PLAYED = "duelsPlayed";
+    private static final String DUELS_WON = "duelsWon";
+    private static final String TURNS_PLAYED = "turnsPlayed";
+    private static final String COLOR_BLACK = "colorBlack";
+    private static final String COLOR_BLUE = "colorBlue";
+    private static final String COLOR_GREEN = "colorGreen";
+    private static final String COLOR_RED = "colorRed";
+    private static final String COLOR_WHITE = "colorWhite";
+
+    private long millisecTimestamp;
+    private final Path statsFilePath;
+    private final PlayerProfile playerProfile;
+
+    public int gamesPlayed;
+    public int gamesWon;
+    public int gamesConceded;
+    public int turnsPlayed;
+    public int duelsPlayed;
+    public int duelsWon;
+    public int colorBlack;
+    public int colorBlue;
+    public int colorGreen;
+    public int colorRed;
+    public int colorWhite;
+
+    public PlayerStatistics(final PlayerProfile playerProfile) {
+        this.playerProfile = playerProfile;
+        statsFilePath = playerProfile.getProfilePath().resolve("player.stats");
+        loadStats();
+    }
+
+    private void loadStats() {
+        final File statsFile = new File(statsFilePath.toString());
+        final Properties properties = statsFile.exists() ? FileIO.toProp(statsFile) : new Properties();
+        gamesPlayed = Integer.parseInt(properties.getProperty(GAMES_PLAYED,"0"));
+        gamesWon = Integer.parseInt(properties.getProperty(GAMES_WON,"0"));
+        gamesConceded = Integer.parseInt(properties.getProperty(GAMES_CONCEDED,"0"));
+        turnsPlayed = Integer.parseInt(properties.getProperty(TURNS_PLAYED,"0"));
+        duelsPlayed = Integer.parseInt(properties.getProperty(DUELS_PLAYED,"0"));
+        duelsWon = Integer.parseInt(properties.getProperty(DUELS_WON,"0"));
+        colorBlack = Integer.parseInt(properties.getProperty(COLOR_BLACK,"0"));
+        colorBlue = Integer.parseInt(properties.getProperty(COLOR_BLUE,"0"));
+        colorGreen = Integer.parseInt(properties.getProperty(COLOR_GREEN,"0"));
+        colorRed = Integer.parseInt(properties.getProperty(COLOR_RED,"0"));
+        colorWhite = Integer.parseInt(properties.getProperty(COLOR_WHITE,"0"));
+        millisecTimestamp = Long.parseLong(properties.getProperty(TIMESTAMP, "0"));
+    }
+
+    public void save() {
+
+        final Properties properties = new Properties();
+        properties.setProperty(GAMES_PLAYED, String.valueOf(gamesPlayed));
+        properties.setProperty(GAMES_WON, String.valueOf(gamesWon));
+        properties.setProperty(GAMES_CONCEDED, String.valueOf(gamesConceded));
+        properties.setProperty(TURNS_PLAYED, String.valueOf(turnsPlayed));
+        properties.setProperty(DUELS_PLAYED, String.valueOf(duelsPlayed));
+        properties.setProperty(DUELS_WON, String.valueOf(duelsWon));
+        properties.setProperty(COLOR_BLACK, String.valueOf(colorBlack));
+        properties.setProperty(COLOR_BLUE, String.valueOf(colorBlue));
+        properties.setProperty(COLOR_GREEN, String.valueOf(colorGreen));
+        properties.setProperty(COLOR_RED, String.valueOf(colorRed));
+        properties.setProperty(COLOR_WHITE, String.valueOf(colorWhite));
+        properties.setProperty(TIMESTAMP, String.valueOf(System.currentTimeMillis()));
+
+        final File file = new File(statsFilePath.toString());
+        try {
+            FileIO.toFile(file, properties, "Player Statistics");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    public void update(
+            final boolean isPlayerWinner,
+            final MagicPlayer player,
+            final MagicGame game) {
+
+        gamesPlayed++;
+
+        if (isPlayerWinner) {
+            gamesWon++;
+        }
+
+        if (!player.getPlayerDefinition().isArtificial()) {
+            if (game.isConceded()) {
+                gamesConceded++;
+            }
+        }
+
+        turnsPlayed += game.getTurn();
+        if (game.getDuel().isFinished()) {
+            duelsPlayed++;
+            if (isPlayerWinner) {
+                    duelsWon++;
+            }
+        }
+
+        final int[] colorCount = new int[MagicColor.NR_COLORS];
+        final MagicDeck deck = player.getPlayerDefinition().getDeck();
+        for (final MagicCardDefinition card : deck) {
+            if (!card.isLand()) {
+                for (final MagicColor color : MagicColor.values()) {
+                    if (color.hasColor(card.getColorFlags())) {
+                        colorCount[color.ordinal()]++;
+                        switch (color) {
+                        case Black:
+                            colorBlack++;
+                            break;
+                        case Blue:
+                            colorBlue++;
+                            break;
+                        case Green:
+                            colorGreen++;
+                            break;
+                        case Red:
+                            colorRed++;
+                            break;
+                        case White:
+                            colorWhite++;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        save();
+    }
+
+    @Override
+    public String toString() {
+
+        final int gamesLost = gamesPlayed - gamesWon;
+        final int gamesWinPercentage = getPercentage(gamesWon, gamesPlayed);
+        final int averageTurns = (gamesPlayed > 0) ? turnsPlayed / gamesPlayed : 0;
+        final int duelsLost = duelsPlayed - duelsWon;
+        final int duelsWinPercentage = getPercentage(duelsWon, duelsPlayed);
+
+        final int[] colorCount = new int[MagicColor.NR_COLORS];
+        colorCount[0] = colorWhite;
+        colorCount[1] = colorBlue;
+        colorCount[2] = colorBlack;
+        colorCount[3] = colorGreen;
+        colorCount[4] = colorRed;
+        int mostCount = Integer.MIN_VALUE;
+        MagicColor mostColor = null;
+        for (final MagicColor color : MagicColor.values()) {
+            final int count = colorCount[color.ordinal()];
+            if (count > mostCount) {
+                mostCount = count;
+                mostColor = color;
+            }
+        }
+
+        final boolean showStatValues = (gamesPlayed > 0);
+        final StatsFormatter f = new StatsFormatter(showStatValues);
+        final StringBuilder sb = new StringBuilder();
+        sb.append(f.getStatLine("Last played:\t", f.getTimestampString(millisecTimestamp)));
+        sb.append(f.getStatLine("\nDuels completed:\t", duelsPlayed));
+        sb.append(f.getStatLine("\nDuels won / lost:\t", duelsWon, " / ", duelsLost, " (", duelsWinPercentage, "%)"));
+        sb.append(f.getStatLine("\nGames played:\t", gamesPlayed));
+        sb.append(f.getStatLine("\nGames won / lost\t", gamesWon, " / ", gamesLost, " (", gamesWinPercentage, "%)"));
+        sb.append(f.getStatLine("\nGames conceded:\t", playerProfile instanceof HumanPlayer ? gamesConceded : StatsFormatter.NO_VALUE));
+        sb.append(f.getStatLine("\nTurns played:\t", turnsPlayed));
+        sb.append(f.getStatLine("\nAverage turns per game:\t", averageTurns));
+        sb.append(f.getStatLine("\nMost used color:\t", mostColor.getName()));
+
+        return sb.toString();
+
+    }
+
+    private static final int getPercentage(final int value, final int total) {
+        return total>0 ? (value*100)/total : 0;
+    }
+
+    public String getLastPlayed() {
+        final StatsFormatter f = new StatsFormatter(gamesPlayed > 0);
+        return f.getTimestampString(millisecTimestamp);
+    }
+
+    private class StatsFormatter {
+
+        public static final String NO_VALUE = "---";
+
+        private final boolean showValues;
+
+        public StatsFormatter(final boolean showValues) {
+            this.showValues = showValues;
+        }
+
+        public String getStatLine(final String stat, final Object...values) {
+            final StringBuilder sb = new StringBuilder(stat);
+            if (showValues) {
+                for (Object obj : values) {
+                    sb.append(obj);
+                }
+            } else {
+                sb.append(NO_VALUE);
+            }
+            return sb.toString();
+        }
+
+        public String getTimestampString(final long millisecs) {
+            if (millisecs > 0) {
+                final Date timestampDate = new Date(millisecTimestamp);
+                String timestampString = new SimpleDateFormat("yyyy-MM-dd").format(timestampDate);
+                final String currentString = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
+                if (timestampString.equals(currentString)) {
+                    timestampString = new SimpleDateFormat("HH:mm").format(timestampDate);
+                }
+                return timestampString;
+            } else {
+                return NO_VALUE;
+            }
+        }
+
+    }
+
+}

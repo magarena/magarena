@@ -39,10 +39,11 @@ public class MainMenuScreen extends AbstractScreen {
         menuPanel.addMenuItem("New duel", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                getFrame().showNewDuelDialog();
+
+                getFrame().showDuelPlayersScreen();
             }
         });
-        menuPanel.addMenuItem("Load duel", new AbstractAction() {
+        menuPanel.addMenuItem("Resume duel", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 getFrame().loadDuel();
@@ -51,7 +52,6 @@ public class MainMenuScreen extends AbstractScreen {
         menuPanel.addMenuItem("Card explorer", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                System.out.println(getFrame());
                 getFrame().showCardExplorerScreen();
             }
         });

@@ -28,8 +28,8 @@ public class MenuButton extends JButton {
         setButtonTransparent();
         setFocusable(true);
         setToolTipText(tooltip);
-        setMouseAdapter();
         if (isRunnable) {
+            setMouseAdapter();
             setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             addActionListener(action);
         }

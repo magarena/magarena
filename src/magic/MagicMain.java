@@ -6,7 +6,6 @@ import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.data.History;
 import magic.data.KeywordDefinitions;
 import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
@@ -43,6 +42,8 @@ public class MagicMain {
     private static final String SCRIPTS_PATH = "scripts";
     private static final String LOGS_PATH = "logs";
     private static final String SAVED_DUELS_PATH = "duels";
+    private static final String PLAYER_PROFILES_PATH = "players";
+    private static final String AVATAR_SETS_PATH = "avatars";
     private static final String GAME_PATH =
             (System.getProperty("magarena.dir") != null ?
                     System.getProperty("magarena.dir") :
@@ -113,9 +114,7 @@ public class MagicMain {
         if (testGame != null) {
             magicFrame.openGame(TestGameBuilder.buildGame(testGame));
         }
-        // add "-DselfMode=true" VM argument for AI vs AI mode.
-        // in selfMode start game immediately based on configuration from duel.cfg
-        if (Boolean.getBoolean("selfMode")) {
+        if (MagicUtility.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
             magicFrame.newDuel(config);
@@ -154,6 +153,14 @@ public class MagicMain {
 
     public static String getSavedDuelsPath() {
         return getDataPath(SAVED_DUELS_PATH);
+    }
+
+    public static String getPlayerProfilesPath() {
+        return getDataPath(PLAYER_PROFILES_PATH);
+    }
+
+    public static String getAvatarSetsPath() {
+        return getDataPath(AVATAR_SETS_PATH);
     }
 
     /**
@@ -201,7 +208,6 @@ public class MagicMain {
         }
 
         DeckUtils.createDeckFolder();
-        History.createHistoryFolder();
         initializeEngine();
     }
 

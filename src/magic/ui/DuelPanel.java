@@ -1,32 +1,39 @@
 package magic.ui;
 
 import magic.data.CardImagesProvider;
+import magic.data.DuelConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
+import magic.model.player.HumanPlayer;
+import magic.model.player.PlayerProfile;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckDescriptionViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.viewer.DuelDifficultyViewer;
-import magic.ui.viewer.HistoryViewer;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.PlayerDetailsPanel;
 import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
+import javax.swing.SwingConstants;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -40,7 +47,6 @@ public class DuelPanel extends TexturedPanel {
     private final MagicDuel duel;
     private final JTabbedPane tabbedPane;
     private final DeckStrengthViewer strengthViewer;
-    private final HistoryViewer historyViewer;
     private final DeckDescriptionViewer[] deckDescriptionViewers;
     private final CardViewer cardViewer;
     private final DuelDifficultyViewer duelDifficultyViewer;
@@ -80,9 +86,6 @@ public class DuelPanel extends TexturedPanel {
 
         // games won info
         duelDifficultyViewer=new DuelDifficultyViewer(duel);
-        duelDifficultyViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-        duelDifficultyViewer.setMaximumSize(DuelDifficultyViewer.PREFERRED_SIZE);
-        leftPanel.add(duelDifficultyViewer);
 
         // add scrolling to left side
         final JScrollPane leftScrollPane = new JScrollPane(leftPanel);
@@ -94,7 +97,6 @@ public class DuelPanel extends TexturedPanel {
 
         // create tabs for each player
         tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
 
         final MagicPlayerDefinition[] players = duel.getPlayers();
         cardTables = new CardTable[players.length];
@@ -106,11 +108,15 @@ public class DuelPanel extends TexturedPanel {
         strengthViewer=new DeckStrengthViewer(duel);
         strengthViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
-        historyViewer = new HistoryViewer();
-        historyViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-
         for(int i = 0; i < players.length; i++) {
+
             final MagicPlayerDefinition player = players[i];
+
+            if (player.isArtificial()) {
+                player.setAvatar(duel.getConfiguration().getPlayerTwoProfile().getAvatar());
+            } else {
+                player.setAvatar(duel.getConfiguration().getPlayerOneProfile().getAvatar());
+            }
 
             // deck description
             deckDescriptionViewers[i] = new DeckDescriptionViewer();
@@ -148,9 +154,6 @@ public class DuelPanel extends TexturedPanel {
 
             if (!player.isArtificial()) {
                 rightPanel.add(strengthViewer);
-                rightPanel.add(Box.createVerticalStrut(SPACING));
-
-                rightPanel.add(historyViewer);
                 rightPanel.add(Box.createVerticalStrut(SPACING));
 
                 // show card
@@ -201,7 +204,10 @@ public class DuelPanel extends TexturedPanel {
                                  -SPACING, SpringLayout.SOUTH, tabPanel);
 
             // add as a tab
-            tabbedPane.addTab(player.getName() + "   ", theme.getAvatarIcon(player.getFace(), 2), tabPanel);
+            tabbedPane.addTab(null, tabPanel);
+            final DuelConfig duelConfig = duel.getConfiguration();
+            final PlayerProfile profile = (i == 0 ? duelConfig.getPlayerOneProfile() : duelConfig.getPlayerTwoProfile());
+            tabbedPane.setTabComponentAt(i, new PlayerPanel(profile));
         }
 
         add(tabbedPane);
@@ -266,6 +272,35 @@ public class DuelPanel extends TexturedPanel {
 
     public void haltStrengthViewer() {
         strengthViewer.halt();
+    }
+
+    @SuppressWarnings("serial")
+    private class PlayerPanel extends JPanel {
+
+        public PlayerPanel(final PlayerProfile profile) {
+            setLayout(new MigLayout("insets 0"));
+            setOpaque(false);
+            add(new JLabel(profile.getAvatar().getIcon(4)));
+            add(new PlayerDetailsPanel(profile, Color.BLACK), "w 100%");
+            add(getScoreLabel(getScore(profile)), "w 100%");
+            setPreferredSize(new Dimension(250, 54));
+        }
+
+        private int getScore(final PlayerProfile profile) {
+            if (profile instanceof HumanPlayer) {
+                return duel.getGamesWon();
+            } else {
+                return duel.getGamesPlayed() - duel.getGamesWon();
+            }
+        }
+
+        private JLabel getScoreLabel(final int score) {
+            final JLabel lbl = new JLabel(Integer.toString(score));
+            lbl.setFont(new Font("Dialog", Font.PLAIN, 24));
+            lbl.setHorizontalAlignment(SwingConstants.RIGHT);
+            return lbl;
+        }
+
     }
 
 }

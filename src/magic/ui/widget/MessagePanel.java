@@ -2,8 +2,6 @@ package magic.ui.widget;
 
 import magic.data.IconImages;
 import magic.model.MagicMessage;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JLabel;
@@ -100,8 +98,6 @@ public class MessagePanel extends JPanel {
     }
 
     private JLabel getPlayerAvatar() {
-        final Theme theme = ThemeFactory.getInstance().getCurrentTheme();
-        final int face = message.getPlayer().getPlayerDefinition().getFace();
-        return new JLabel(theme.getAvatarIcon(face,1));
+        return new JLabel(message.getPlayer().getPlayerDefinition().getAvatar().getIcon(1));
     }
 }

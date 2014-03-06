@@ -1,8 +1,8 @@
-package magic.ui;
+package magic.ui.dialog;
 
-import magic.data.AvatarImages;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
+import magic.ui.MagicFrame;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
@@ -37,7 +37,6 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
     private final MagicFrame frame;
     private JComboBox<String> themeComboBox;
-    private JComboBox<String> avatarComboBox;
     private JComboBox<String> highlightComboBox;
     private JCheckBox confirmExitCheckBox;
     private JCheckBox soundCheckBox;
@@ -230,17 +229,6 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         panel.add(themeComboBox);
 
         Y += 35;
-        final JLabel avatarLabel=new JLabel("Avatar");
-        avatarLabel.setBounds(X,Y,W,H);
-        avatarLabel.setIcon(IconImages.AVATAR);
-        panel.add(avatarLabel);
-        avatarComboBox=new JComboBox<String>(AvatarImages.getInstance().getNames());
-        avatarComboBox.setFocusable(false);
-        avatarComboBox.setBounds(X2,Y,W2,H);
-        avatarComboBox.setSelectedItem(config.getAvatar());
-        panel.add(avatarComboBox);
-
-        Y += 35;
         final JLabel highlightLabel = new JLabel("Highlight");
         highlightLabel.setBounds(X,Y,W,H);
         highlightLabel.setIcon(IconImages.PICTURE);
@@ -288,7 +276,6 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         if (source==okButton) {
             final GeneralConfig config=GeneralConfig.getInstance();
             config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
-            config.setAvatar(avatarComboBox.getItemAt(avatarComboBox.getSelectedIndex()));
             config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
             config.setConfirmExit(confirmExitCheckBox.isSelected());
             config.setSound(soundCheckBox.isSelected());

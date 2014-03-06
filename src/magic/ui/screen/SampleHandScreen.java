@@ -7,6 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
@@ -113,6 +115,14 @@ public class SampleHandScreen
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
+     */
+    @Override
+    public JPanel getStatusPanel() {
+        return null;
     }
 
 }

@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
 import net.miginfocom.swing.MigLayout;
@@ -34,10 +35,15 @@ public class StatusBar extends TexturedPanel {
 
     private void layoutMagStatusBar() {
         removeAll();
-        setLayout(new MigLayout("insets 0 0 0 6, gap 6, flowx, aligny 50%", "[grow, fill][][]"));
+        setLayout(new MigLayout("insets 0 0 0 6, gap 6, flowx, aligny 50%", "[32%][36%, center][32%, right]"));
         if (magScreen != null) {
             final IStatusBar screen = (IStatusBar)magScreen;
             add(new CaptionPanel(screen.getScreenCaption()));
+            if (screen.getStatusPanel() != null) {
+                add(screen.getStatusPanel());
+            } else {
+                add(new JLabel());
+            }
             if (magScreen.hasOptionsMenu()) {
                 add(getOptionsIconButton((IOptionsMenu)magScreen));
             }

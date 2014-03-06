@@ -1,23 +1,23 @@
 package magic.model;
 
 import magic.MagicMain;
+import magic.MagicUtility;
 import magic.ai.MagicAI;
 import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.data.History;
 import magic.generator.DefaultDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
+import magic.model.player.PlayerProfile;
 import magic.ui.viewer.DeckStrengthViewer;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
+import java.util.Enumeration;
 import java.util.Properties;
+import java.util.TreeSet;
 
 public class MagicDuel {
 
@@ -26,10 +26,8 @@ public class MagicDuel {
     private static final String PLAYED="played";
     private static final String WON="won";
     private static final String START="start";
-    private static final String COMPUTER="Computer";
 
     private final DuelConfig configuration;
-    private final History history;
     private MagicPlayerDefinition[] playerDefinitions;
     private MagicAI[] ais;
     private int opponentIndex;
@@ -41,7 +39,6 @@ public class MagicDuel {
 
     public MagicDuel(final DuelConfig configuration) {
         this.configuration=configuration;
-        history = new History(this);
         ais=configuration.getPlayerAIs();
         restart();
     }
@@ -57,10 +54,6 @@ public class MagicDuel {
 
     public DuelConfig getConfiguration() {
         return configuration;
-    }
-
-    private MagicPlayerDefinition getOpponent() {
-        return playerDefinitions[opponentIndex];
     }
 
     public int getGameNr() {
@@ -85,10 +78,6 @@ public class MagicDuel {
 
     public void setStartPlayer(final int startPlayer) {
         this.startPlayer=startPlayer;
-    }
-
-    private int getStartPlayer() {
-        return startPlayer;
     }
 
     public void setAIs(final MagicAI[] aAIs) {
@@ -126,7 +115,16 @@ public class MagicDuel {
     }
 
     public boolean isFinished() {
-        return getGamesPlayed()==getGamesTotal();
+        if (MagicUtility.isAiVersusAi()) {
+            return getGamesPlayed()==getGamesTotal();
+        } else {
+            // if a duel consists of a total of X games, then in an interactive
+            // game it should be "best of" X games, not first to X.
+            final int player1GamesWon = getGamesWon();
+            final int player2GamesWon = getGamesPlayed() - player1GamesWon;
+            final int gamesRequiredToWin = (int)Math.ceil(getGamesTotal()/2.0);
+            return (player1GamesWon >= gamesRequiredToWin) || (player2GamesWon >= gamesRequiredToWin);
+        }
     }
 
     void advance(final boolean won, final MagicGame game) {
@@ -143,35 +141,17 @@ public class MagicDuel {
             opponentIndex++;
             determineStartPlayer();
         }
-        if (!DeckStrengthViewer.isRunning()) {
-            history.update(won,game,configuration);
-        }
-    }
 
-    private static List<Integer> getAvatarIndices(final int avatars) {
-        final List<Integer> indices=new ArrayList<Integer>();
-        for (int index=0;index<avatars;index++) {
-
-            indices.add(index);
+        if (!DeckStrengthViewer.isRunning() && !MagicUtility.isTestGame()) {
+            configuration.getPlayerOneProfile().getStats().update(won, game.getPlayer(0), game);
+            configuration.getPlayerTwoProfile().getStats().update(!won, game.getPlayer(1), game);
         }
-        return indices;
     }
 
     private MagicPlayerDefinition[] createPlayers() {
-        final Theme theme=ThemeFactory.getInstance().getCurrentTheme();
-        final List<Integer> avatars=getAvatarIndices(theme.getNumberOfAvatars());
-
         final MagicPlayerDefinition[] players=new MagicPlayerDefinition[2];
-
-        final int playerFace=configuration.getAvatar()%theme.getNumberOfAvatars();
-        final MagicPlayerDefinition player=new MagicPlayerDefinition(configuration.getName(),false,configuration.getPlayerProfile(),playerFace);
-        players[0]=player;
-        avatars.remove(playerFace);
-
-        final int findex=MagicRandom.nextRNGInt(avatars.size());
-        final Integer computerFace=avatars.get(findex);
-        players[1]=new MagicPlayerDefinition(COMPUTER,true,configuration.getOpponentProfile(),computerFace);
-
+        players[0] = new MagicPlayerDefinition(configuration.getPlayerOneProfile().getPlayerName(), false, configuration.getMagicPlayerProfile());
+        players[1] = new MagicPlayerDefinition(configuration.getPlayerTwoProfile().getPlayerName(), true,configuration.getMagicOpponentProfile());
         return players;
     }
 
@@ -212,6 +192,7 @@ public class MagicDuel {
         return playerDefinitions;
     }
 
+    // only used by magic.test classes.
     public void setPlayers(final MagicPlayerDefinition[] aPlayerDefinitions) {
         this.playerDefinitions=aPlayerDefinitions;
     }
@@ -241,11 +222,13 @@ public class MagicDuel {
     public void initialize() {
         playerDefinitions=createPlayers();
         buildDecks();
-        history.loadHistory(configuration.getName());
     }
 
+    public static final File getDuelFile(final String filename) {
+        return new File(MagicMain.getSavedDuelsPath(), filename);
+    }
     public static final File getDuelFile() {
-        return new File(MagicMain.getSavedDuelsPath(),"duel.txt");
+        return getDuelFile("saved.duel");
     }
 
     private static String getPlayerPrefix(final int index) {
@@ -267,14 +250,23 @@ public class MagicDuel {
     }
 
     public void save(final File file) {
-        final Properties properties=new Properties();
+        final Properties properties = getNewSortedProperties();
         save(properties);
-        try { //save to file
+        try {
             magic.data.FileIO.toFile(file, properties, "Duel");
-            System.err.println("Saved duel");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable save duel to " + file);
         }
+    }
+
+    @SuppressWarnings("serial")
+    private Properties getNewSortedProperties() {
+       return new Properties() {
+           @Override
+           public synchronized Enumeration<Object> keys() {
+               return Collections.enumeration(new TreeSet<Object>(super.keySet()));
+           }
+       };
     }
 
     private void load(final Properties properties) {
@@ -291,7 +283,6 @@ public class MagicDuel {
             playerDefinitions[index]=new MagicPlayerDefinition();
             playerDefinitions[index].load(properties,getPlayerPrefix(index));
         }
-        history.loadHistory(configuration.getName());
     }
 
     public void load(final File file) {
@@ -304,5 +295,19 @@ public class MagicDuel {
         gamesPlayed=0;
         gamesWon=0;
         determineStartPlayer();
+    }
+
+    public PlayerProfile getWinningPlayerProfile() {
+        if (!isFinished()) {
+            return null;
+        } else {
+            final int playerOneGamesWon = getGamesWon();
+            final int playerTwoGamesWon = getGamesPlayed() - playerOneGamesWon;
+            if (playerOneGamesWon > playerTwoGamesWon) {
+                return getConfiguration().getPlayerOneProfile();
+            } else {
+                return getConfiguration().getPlayerTwoProfile();
+            }
+        }
     }
 }

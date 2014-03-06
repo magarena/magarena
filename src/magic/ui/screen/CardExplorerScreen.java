@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.JPanel;
 
 import magic.ui.ExplorerPanel;
 import magic.ui.MagicFrame;
@@ -90,6 +91,14 @@ public class CardExplorerScreen
             return null;
         }
 
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
+     */
+    @Override
+    public JPanel getStatusPanel() {
+        return null;
     }
 
 }
