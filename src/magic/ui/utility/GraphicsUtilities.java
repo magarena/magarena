@@ -149,16 +149,6 @@ final public class GraphicsUtilities {
         return ret;
     }
 
-    // Returns the graphics configuration for the primary screen
-    private static GraphicsConfiguration getGraphicsConfiguration() {
-        return GraphicsEnvironment.getLocalGraphicsEnvironment().
-                    getDefaultScreenDevice().getDefaultConfiguration();
-    }
-
-    private static boolean isHeadless() {
-        return GraphicsEnvironment.isHeadless();
-    }
-
     /**
      * Creates an image of the contents of container and saves to file.
      */

@@ -20,14 +20,12 @@ public class CardButton extends PanelButton implements ChoiceViewer {
     private final GameController controller;
     private final MagicCard card;
     private final boolean showCost;
-    private final int lineHeight;
     private final JLabel nameLabel;
 
     public CardButton(final GameController controller, final MagicCard card, final int lineHeight, final boolean showCost) {
         super();
         this.controller = controller;
         this.card       = card;
-        this.lineHeight = lineHeight;
         this.showCost   = showCost;
 
         final JPanel mainPanel = new JPanel();
