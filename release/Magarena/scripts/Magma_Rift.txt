@@ -5,6 +5,6 @@ value=1.867
 rarity=C
 type=Sorcery
 cost={2}{R}
+ability=add cost Sacrifice a land
 effect=SN deals 5 damage to target creature.
 timing=main
-requires_groovy_code=Shard Volley

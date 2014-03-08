@@ -6,6 +6,6 @@ removal=3
 rarity=C
 type=Instant
 cost={R}
-timing=removal
+ability=add cost Sacrifice a land
 effect=SN deals 3 damage to target creature or player.
-requires_groovy_code
+timing=removal

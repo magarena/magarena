@@ -294,6 +294,14 @@ public enum MagicCostEvent {
             return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.TARGET_BASIC_LAND_YOU_CONTROL);
         }
     },
+    BounceCreature() {
+        public boolean accept(final String cost) {
+            return cost.equals("Return a creature you control to its owner's hand");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.CREATURE_YOU_CONTROL);
+        }
+    },
     RemoveCounter() {
         public boolean accept(final String cost) {
             return cost.contains("Remove ") && cost.contains(" counter") && cost.contains(" from SN");
