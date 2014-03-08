@@ -46,6 +46,8 @@ public class DuelConfig {
         // Ensure DuelConfig has valid PlayerProfile references.
         // If missing then creates default profiles.
         PlayerProfiles.refreshMap();
+        playerOne = PlayerProfiles.getDefaultHumanPlayer();
+        playerTwo = PlayerProfiles.getDefaultAiPlayer();
     }
 
     // CTR: copy constructor - a common way of creating a copy of an existing object.
