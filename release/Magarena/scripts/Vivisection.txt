@@ -5,6 +5,6 @@ value=2.655
 rarity=C
 type=Sorcery
 cost={3}{U}
+ability=add cost Sacrifice a creature
 effect=PN draws three cards.
 timing=main
-requires_groovy_code=Bone Splinters
