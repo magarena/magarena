@@ -185,7 +185,7 @@ public class DeckStrCal {
         );
 
         int played = 0;
-        while (!testDuel.isFinished()) {
+        while (testDuel.getGamesPlayed() < testDuel.getGamesTotal()) {
             final MagicGame game=testDuel.nextGame(false);
             game.setArtificial(true);
             final GameController controller=new GameController(game);

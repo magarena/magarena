@@ -115,16 +115,12 @@ public class MagicDuel {
     }
 
     public boolean isFinished() {
-        if (MagicUtility.isAiVersusAi()) {
-            return getGamesPlayed()==getGamesTotal();
-        } else {
-            // if a duel consists of a total of X games, then in an interactive
-            // game it should be "best of" X games, not first to X.
-            final int player1GamesWon = getGamesWon();
-            final int player2GamesWon = getGamesPlayed() - player1GamesWon;
-            final int gamesRequiredToWin = (int)Math.ceil(getGamesTotal()/2.0);
-            return (player1GamesWon >= gamesRequiredToWin) || (player2GamesWon >= gamesRequiredToWin);
-        }
+        // if a duel consists of a total of X games, then in an interactive
+        // game it should be "best of" X games, not first to X.
+        final int player1GamesWon = getGamesWon();
+        final int player2GamesWon = getGamesPlayed() - player1GamesWon;
+        final int gamesRequiredToWin = (int)Math.ceil(getGamesTotal()/2.0);
+        return (player1GamesWon >= gamesRequiredToWin) || (player2GamesWon >= gamesRequiredToWin);
     }
 
     void advance(final boolean won, final MagicGame game) {
