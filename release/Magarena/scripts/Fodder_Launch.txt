@@ -6,6 +6,7 @@ rarity=U
 type=Tribal,Sorcery
 subtype=Goblin
 cost={3}{B}
+ability=add cost Sacrifice a Goblin
 timing=removal
 removal=5
-requires_groovy_code=Goblin Grenade;Fodder Launch
+requires_groovy_code
