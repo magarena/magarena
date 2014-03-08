@@ -6,4 +6,5 @@ rarity=U
 type=Instant
 cost={U}{U}
 ability=add cost Return a creature you control to its owner's hand
+effect=Counter target spell.
 timing=counter
