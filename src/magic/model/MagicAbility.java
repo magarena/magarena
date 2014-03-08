@@ -26,6 +26,8 @@ import magic.model.event.MagicMultikickerCost;
 import magic.model.event.MagicMonstrosityActivation;
 import magic.model.event.MagicBestowActivation;
 import magic.model.event.MagicRuleEventAction;
+import magic.model.event.MagicMatchedCostEvent;
+import magic.model.event.MagicAdditionalCost;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
@@ -757,6 +759,11 @@ public enum MagicAbility {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             final String[] tokens = arg.split(" named ");
             card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
+        }
+    },
+    AdditionalCost("add cost", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            card.add(MagicAdditionalCost.create(new MagicMatchedCostEvent(arg)));
         }
     },
     HeroicEffect("heroic effect", 10) {
