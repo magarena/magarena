@@ -1,11 +1,4 @@
 [
-    new MagicAdditionalCost() {
-        @Override
-        public MagicEvent getEvent(final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_CREATURE);
-        }
-    },
-
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {

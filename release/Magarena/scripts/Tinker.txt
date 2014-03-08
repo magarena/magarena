@@ -6,4 +6,4 @@ rarity=M
 type=Sorcery
 cost={2}{U}
 timing=main
-requires_groovy_code
+requires_groovy_code=Kuldotha Rebirth;Tinker

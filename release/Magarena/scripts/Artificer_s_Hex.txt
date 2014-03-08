@@ -1,0 +1,11 @@
+name=Artificer's Hex
+url=http://www.magiccards.info/query?q=%21artificer%27s%20hex
+image=http://mtgimage.com/card/artificer's%20hex.jpg
+value=3.083
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={B}
+enchant=destroy,neg equipment
+timing=aura
+requires_groovy_code

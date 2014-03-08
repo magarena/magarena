@@ -4,19 +4,18 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
+                MagicTargetChoice.NEG_TARGET_CREATURE_POWER_4_OR_MORE,
                 MagicDestroyTargetPicker.Destroy,
                 this,
-                "Destroy target nonblack creature\$. It can't be regenerated. Its controller loses 2 life."
+                "Destroy target creature with power 4 or greater\$. Scry 1."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent permanent ->
-                game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.CannotBeRegenerated));
                 game.doAction(new MagicDestroyAction(permanent));
-                game.doAction(new MagicChangeLifeAction(permanent.getController(),-2));
+                game.addEvent(new MagicScryEvent(event.getSource(),event.getPlayer()));
             });
         }
     }

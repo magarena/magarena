@@ -1,0 +1,12 @@
+name=Hythonia the Cruel
+url=http://www.magiccards.info/query?q=%21hythonia%20the%20cruel
+image=http://mtgimage.com/card/hythonia%20the%20cruel.jpg
+value=4.009
+rarity=M
+type=Legendary,Creature
+subtype=Gorgon
+cost={4}{B}{B}
+pt=4/6
+ability=deathtouch;monstrosity 3 {6}{B}{B}
+timing=main
+requires_groovy_code

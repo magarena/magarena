@@ -1,0 +1,11 @@
+name=Keymaster Rogue
+url=http://www.magiccards.info/query?q=%21keymaster%20rogue
+image=http://mtgimage.com/card/keymaster%20rogue.jpg
+value=2.939
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={3}{U}
+pt=3/2
+ability=unblockable;enters effect Return a creature you control to its owner's hand.
+timing=main

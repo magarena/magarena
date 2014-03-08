@@ -1,0 +1,11 @@
+name=Marauding Maulhorn
+url=http://www.magiccards.info/query?q=%21marauding%20maulhorn
+image=http://mtgimage.com/card/marauding%20maulhorn.jpg
+value=3.104
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{R}{R}
+pt=5/3
+timing=main
+requires_groovy_code

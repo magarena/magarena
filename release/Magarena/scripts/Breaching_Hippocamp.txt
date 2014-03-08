@@ -1,0 +1,12 @@
+name=Breaching Hippocamp
+url=http://www.magiccards.info/query?q=%21breaching%20hippocamp
+image=http://mtgimage.com/card/breaching%20hippocamp.jpg
+value=3.683
+rarity=C
+type=Creature
+subtype=Fish,Horse
+cost={3}{U}
+pt=3/2
+ability=flash
+timing=flash
+requires_groovy_code
