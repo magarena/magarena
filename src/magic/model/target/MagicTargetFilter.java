@@ -859,6 +859,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    target.getConvertedCost() <= 3;
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_CREATURE_CONVERTED_2_OR_LESS=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.getConvertedCost() <= 2;
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_CREATURE_POWER_2_OR_LESS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
