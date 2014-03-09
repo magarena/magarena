@@ -83,6 +83,7 @@ public class MagicTargetFilterFactory {
         single.put("red or green spell", TARGET_RED_GREEN_SPELL);
         single.put("black spell", TARGET_BLACK_SPELL);
         single.put("white spell", TARGET_WHITE_SPELL);
+        single.put("red spell", TARGET_RED_SPELL);
         single.put("blue spell", TARGET_BLUE_SPELL);
         single.put("green spell", TARGET_GREEN_SPELL);
         single.put("nonblue spell", TARGET_NONBLUE_SPELL);
