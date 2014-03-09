@@ -1,0 +1,12 @@
+name=Act of Aggression
+url=http://magiccards.info/query?q=%21act%20of%20aggression
+image=http://mtgimage.com/card/act%20of%20aggression.jpg
+value=3.609
+removal=5
+rarity=U
+type=Instant
+cost={3}{P/R}{P/R}
+ability=alt cost {3}{P/R}, Pay 2 life named Pay 2 life;\
+        alt cost {3}, Pay 4 life named Pay 4 life
+timing=main
+requires_groovy_code
