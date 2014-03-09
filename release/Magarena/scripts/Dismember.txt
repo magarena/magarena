@@ -1,0 +1,12 @@
+name=Dismember
+url=http://magiccards.info/query?q=%21dismember
+image=http://mtgimage.com/card/dismember.jpg
+value=3.068
+removal=5
+rarity=U
+type=Instant
+cost={1}{P/B}{P/B}
+ability=alt cost {1}{P/B}, Pay 2 life named Pay 2 life;\
+        alt cost {1}, Pay 4 life named Pay 4 life
+effect=Target creature gets -5/-5 until end of turn.
+timing=removal
