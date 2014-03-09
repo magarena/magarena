@@ -553,6 +553,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicPermanentFilterImpl TARGET_FOREST_OR_PLAINS_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && 
+                   (target.hasSubType(MagicSubType.Forest) ||
+                    target.hasSubType(MagicSubType.Plains));
+        }
+    };
+    
     MagicPermanentFilterImpl TARGET_RED_OR_GREEN_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1137,6 +1145,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    targetType==MagicTargetType.OpponentsGraveyard;
         }
     };
+    
+    MagicCardFilterImpl LAND_CARD_FROM_YOUR_GRAVEYARD=Factory.card(MagicTargetType.Graveyard, MagicType.Land);
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
