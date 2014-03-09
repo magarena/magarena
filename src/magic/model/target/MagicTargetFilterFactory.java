@@ -39,6 +39,7 @@ public class MagicTargetFilterFactory {
         factory.put("attacking creatures", TARGET_ATTACKING_CREATURE);
         factory.put("blocking creatures", TARGET_BLOCKING_CREATURE);
         factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
+        factory.put("nonland permanents", TARGET_NONLAND_PERMANENT);
         
         factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
         factory.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
