@@ -1,11 +1,4 @@
 [
-        new MagicStatic(MagicLayer.Player) {
-        @Override
-        public void modPlayer(final MagicPermanent source, final MagicPlayer player) {
-            player.noMaxHandSize();
-        }
-    },
-    
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {

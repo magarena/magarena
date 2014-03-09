@@ -6,4 +6,4 @@ rarity=R
 type=Artifact
 cost={5}
 timing=artifact
-requires_groovy_code
+requires_groovy_code=Spellbook;Venser's Journal
