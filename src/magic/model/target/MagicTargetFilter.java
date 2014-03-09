@@ -113,6 +113,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicStackFilterImpl TARGET_NONBLUE_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
+        }
+    };
+    
     MagicStackFilterImpl TARGET_CREATURE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature);
@@ -122,6 +128,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicStackFilterImpl TARGET_CREATURE_OR_AURA_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature) || itemOnStack.isSpell(MagicSubType.Aura);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_CREATURE_OR_SORCERY_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature) || itemOnStack.isSpell(MagicType.Sorcery);
         }
     };
 
@@ -142,6 +154,19 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicStackFilterImpl TARGET_INSTANT_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Instant);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_SORCERY_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Sorcery);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_SPIRIT_OR_ARCANE_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicSubType.Spirit) ||
+                   itemOnStack.isSpell(MagicSubType.Arcane);
         }
     };
 
