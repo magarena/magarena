@@ -465,6 +465,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice SACRIFICE_LAND = 
         new MagicTargetChoice("a land to sacrifice");
     
+    public static final MagicTargetChoice SACRIFICE_FOREST_OR_PLAINS = 
+        new MagicTargetChoice("a Forest or Plains to sacrifice");
+    
     public static final MagicTargetChoice SACRIFICE_ENCHANTMENT = 
         new MagicTargetChoice("an enchantment to sacrifice");
     
