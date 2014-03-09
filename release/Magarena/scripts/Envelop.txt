@@ -1,0 +1,9 @@
+name=Envelop
+url=http://www.magiccards.info/query?q=%21envelop
+image=http://mtgimage.com/card/envelop.jpg
+value=3.029
+rarity=C
+type=Instant
+cost={U}
+effect=Counter target sorcery spell.
+timing=counter

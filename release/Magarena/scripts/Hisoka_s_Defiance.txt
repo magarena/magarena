@@ -1,0 +1,9 @@
+name=Hisoka's Defiance
+url=http://www.magiccards.info/query?q=%21hisoka%27s%20defiance
+image=http://mtgimage.com/card/hisoka's%20defiance.jpg
+value=1.077
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Counter target Spirit or Arcane spell.
+timing=counter

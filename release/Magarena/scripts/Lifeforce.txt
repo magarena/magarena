@@ -1,0 +1,9 @@
+name=Lifeforce
+url=http://www.magiccards.info/query?q=%21lifeforce
+image=http://mtgimage.com/card/lifeforce.jpg
+value=3.761
+rarity=R
+type=Enchantment
+cost={G}{G}
+ability=cost {G}{G}:Counter target black spell.
+timing=enchantment
