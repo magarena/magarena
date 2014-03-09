@@ -1,0 +1,10 @@
+name=Mutagenic Growth
+url=http://magiccards.info/query?q=%21mutagenic%20growth
+image=http://mtgimage.com/card/mutagenic%20growth.jpg
+value=4.193
+rarity=C
+type=Instant
+cost={P/G}
+ability=alt cost Pay 2 life named Pay 2 life
+effect=Target creature gets +2/+2 until end of turn.
+timing=pump
