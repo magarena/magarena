@@ -259,4 +259,12 @@ public class SelectAiPlayerScreen
         return null;
     }
 
+    /* (non-Javadoc)
+     * @see magic.ui.screen.SelectPlayerAbstractScreen#getPreferredWidth()
+     */
+    @Override
+    protected int getPreferredWidth() {
+        return 540;
+    }
+
 }
