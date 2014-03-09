@@ -112,9 +112,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return itemOnStack.isSpell() && itemOnStack.hasColor(MagicColor.Blue);
         }
     };
+    
     MagicStackFilterImpl TARGET_CREATURE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_CREATURE_OR_AURA_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature) || itemOnStack.isSpell(MagicSubType.Aura);
         }
     };
 

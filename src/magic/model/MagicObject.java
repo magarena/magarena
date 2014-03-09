@@ -4,6 +4,7 @@ public interface MagicObject extends MagicCopyable {
     boolean     isToken();
     boolean     isSpell();
     boolean     isSpell(MagicType type);
+    boolean     isSpell(MagicSubType subType);
     boolean     isInstantOrSorcerySpell();
     boolean     isPlayer();
     boolean     isPermanent();

@@ -5,5 +5,5 @@ value=3.671
 rarity=C
 type=Instant
 cost={U}
+effect=Counter target artifact or enchantment spell.
 timing=counter
-requires_groovy_code
