@@ -1,0 +1,10 @@
+name=Birthing Pod
+url=http://magiccards.info/query?q=%21birthing%20pod
+image=http://mtgimage.com/card/birthing%20pod.jpg
+value=4.588
+rarity=R
+type=Artifact
+cost={3}{P/G}
+ability=alt cost {3}, Pay 2 life named Pay 2 life
+timing=artifact
+requires_groovy_code
