@@ -49,6 +49,7 @@ public abstract class SelectPlayerAbstractScreen
     protected abstract String getPlayerType();
     protected abstract void createDefaultPlayerProfiles() throws IOException;
     protected abstract void doNextAction();
+    protected abstract int getPreferredWidth();
 
     // CTR
     protected SelectPlayerAbstractScreen() {
@@ -73,7 +74,7 @@ public abstract class SelectPlayerAbstractScreen
         final JPanel content = new JPanel();
         content.setLayout(new MigLayout("insets 2, center, center"));
         content.setOpaque(false);
-        content.add(getProfilesListPanel(), "w 460!, h 400!");
+        content.add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
         return content;
     }
 
