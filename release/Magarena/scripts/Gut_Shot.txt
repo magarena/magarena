@@ -1,0 +1,11 @@
+name=Gut Shot
+url=http://magiccards.info/query?q=%21gut%20shot
+image=http://mtgimage.com/card/gut%20shot.jpg
+value=4.617
+removal=1
+rarity=U
+type=Instant
+cost={P/R}
+ability=alt cost Pay 2 life named Pay 2 life
+effect=SN deals 1 damage to target creature or player.
+timing=removal
