@@ -113,6 +113,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicStackFilterImpl TARGET_GREEN_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && itemOnStack.hasColor(MagicColor.Green);
+        }
+    };
+    
     MagicStackFilterImpl TARGET_NONBLUE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
