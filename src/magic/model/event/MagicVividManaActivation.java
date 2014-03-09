@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class MagicVividManaActivation extends MagicManaActivation {
 
     public MagicVividManaActivation(final List<MagicManaType> manaTypes) {
-        super(manaTypes,manaTypes.size() -1);
+        super(manaTypes);
     }
 
     @Override
