@@ -458,6 +458,7 @@ checks: \
 	check_tokens \
 	check_unique_property \
 	check_required_property \
+	check_spells \
 	check_groovy_escape \
 	check_empty_return \
 	check_url \
@@ -540,6 +541,11 @@ check_required_property:
 	grep ^rarity= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT} 
 	grep ^timing= -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
 	grep ^url=    -L `grep token= -L release/Magarena/scripts/*.txt` | ${NO_OUTPUT}
+
+# Instant and Sorcery must have either effect or requires_groovy_code
+check_spells:
+	 grep requires_groovy_code -L $$(grep effect -L $$(grep "^type.*Instant" -lr release/Magarena/scripts)) | ${NO_OUTPUT}
+	 grep requires_groovy_code -L $$(grep effect -L $$(grep "^type.*Sorcery" -lr release/Magarena/scripts)) | ${NO_OUTPUT}
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
