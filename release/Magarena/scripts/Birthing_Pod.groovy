@@ -17,7 +17,12 @@ def action = {
 }
 
 def event = {
-    final MagicPermanent source, final int cmc ->
+    final MagicPermanent source, final MagicPayedCost payedCost ->
+    // canPlay check uses NO_COST
+    if (payedCost == MagicPayedCost.NO_COST) {
+        return MagicEvent.NONE;
+    }
+    final int cmc = ((MagicPermanent)payedCost.getTarget()).getConvertedCost() + 1;
     return new MagicEvent(
         source,
         cmc,
@@ -44,12 +49,7 @@ def event = {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            // canPlay check uses NO_COST
-            if (payedCost == MagicPayedCost.NO_COST) {
-                return MagicEvent.NONE;
-            }
-            final int cmc = ((MagicPermanent)payedCost.getTarget()).getConvertedCost() + 1;
-            return event(source, cmc);
+            return event(source, payedCost);
         }
     },
     new MagicPermanentActivation(
@@ -70,12 +70,7 @@ def event = {
     
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            // canPlay check uses NO_COST
-            if (payedCost == MagicPayedCost.NO_COST) {
-                return MagicEvent.NONE;
-            }
-            final int cmc = ((MagicPermanent)payedCost.getTarget()).getConvertedCost() + 1;
-            return event(source, cmc);
+            return event(source, payedCost);
         }
     }
 ]
