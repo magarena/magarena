@@ -218,8 +218,10 @@ public class MCTSAI2 implements MagicAI {
                    " cheat=" + CHEAT +
                    " index=" + scorePlayer.getIndex() +
                    " life=" + scorePlayer.getLife() +
-                   " time=" + duration +
-                   " sims=" + sims);
+                   " turn=" + scorePlayer.getGame().getTurn() +
+                   " phase=" + scorePlayer.getGame().getPhase().getType() +
+                   " sims=" + sims +
+                   " time=" + duration);
         out.append('\n');
 
         for (final MCTSGameTree node : root) {
@@ -282,7 +284,7 @@ public class MCTSAI2 implements MagicAI {
             //look for first non root AI node along this path and add it to cache
             if (!found && curr != root && curr.isAI()) {
                 found = true;
-                assert curr.isCached() || printPath(path);
+                //assert curr.isCached() || printPath(path);
                 MCTSGameTree.addNode(CACHE, game, curr);
             }
 
@@ -307,9 +309,7 @@ public class MCTSAI2 implements MagicAI {
                 MCTSGameTree next = null;
                 double bestS = Double.NEGATIVE_INFINITY ;
                 for (final MCTSGameTree child : curr) {
-                    final double raw =
-                            child.getAvg() * (curr.isAI() ? 1 : -1) +
-                            MCTSAI.UCB1_C * Math.sqrt(Math.log(curr.getNumSim()) / child.getNumSim());
+                    final double raw = child.getUCT();
                     final double S = child.modify(raw);
                     if (S > bestS) {
                         bestS = S;
@@ -456,7 +456,7 @@ public class MCTSAI2 implements MagicAI {
         for (final MCTSGameTree p : path) {
             sb.append(" -> ").append(p.desc);
         }
-        log(sb.toString());
+        System.err.println(sb.toString());
         return true;
     }
 }
