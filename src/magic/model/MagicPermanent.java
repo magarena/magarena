@@ -942,12 +942,29 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return false;
         }
 
+        // Horsemanship
+        
+        if (attacker.hasAbility(MagicAbility.Horsemanship) &&
+            !hasAbility(MagicAbility.Horsemanship)) {
+            return false;
+        }
+        
         // Subtype
         if (attacker.hasAbility(MagicAbility.CannotBeBlockedByHumans) &&
             hasSubType(MagicSubType.Human)) {
             return false;
         }
+        
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedByWalls) &&
+            hasSubType(MagicSubType.Wall)) {
+            return false;
+        }
 
+        if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptByWalls) &&
+            !hasSubType(MagicSubType.Wall)) {
+            return false;
+        }
+        
         if (attacker.hasAbility(MagicAbility.CannotBeBlockedExceptBySliver) &&
             !hasSubType(MagicSubType.Sliver)) {
             return false;
