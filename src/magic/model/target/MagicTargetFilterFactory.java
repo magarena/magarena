@@ -22,6 +22,7 @@ public class MagicTargetFilterFactory {
     static {
         // used by lord ability/Target <group>
         factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
+        factory.put("lands",TARGET_LAND);
         factory.put("nonbasic lands", TARGET_NONBASIC_LAND);
         factory.put("islands", TARGET_ISLAND);
         factory.put("permanents you control", TARGET_PERMANENT_YOU_CONTROL);
@@ -67,6 +68,7 @@ public class MagicTargetFilterFactory {
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
         single.put("basic land", TARGET_BASIC_LAND);
         single.put("basic land you control", TARGET_BASIC_LAND_YOU_CONTROL);
+        single.put("Island you control", TARGET_ISLAND_YOU_CONTROL);
         single.put("nonbasic land", TARGET_NONBASIC_LAND);
         single.put("nonbasic land you control", TARGET_NONBASIC_LAND_YOU_CONTROL);
         single.put("spell", TARGET_SPELL);
