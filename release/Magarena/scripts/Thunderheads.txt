@@ -1,0 +1,10 @@
+name=Thunderheads
+url=http://www.magiccards.info/query?q=%21thunderheads
+image=http://mtgimage.com/card/thunderheads.jpg
+value=3.5
+rarity=U
+type=Instant
+cost={2}{U}
+ability=replicate {2}{U}
+effect=PN puts a 3/3 blue Weird creature token with defender and flying onto the battlefield.
+timing=block

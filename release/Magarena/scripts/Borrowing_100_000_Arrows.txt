@@ -1,0 +1,9 @@
+name=Borrowing 100,000 Arrows
+url=http://www.magiccards.info/query?q=%21borrowing%20100%2C000%20arrows
+image=http://mtgimage.com/card/borrowing%20100,000%20arrows.jpg
+value=4.048
+rarity=U
+type=Sorcery
+cost={2}{U}
+timing=draw
+requires_groovy_code=Theft of Dreams

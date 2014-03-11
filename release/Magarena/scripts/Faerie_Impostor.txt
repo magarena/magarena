@@ -1,0 +1,12 @@
+name=Faerie Impostor
+url=http://www.magiccards.info/query?q=%21faerie%20impostor
+image=http://mtgimage.com/card/faerie%20impostor.jpg
+value=3.286
+rarity=U
+type=Creature
+subtype=Faerie,Rogue
+cost={U}
+pt=2/1
+ability=flying
+timing=main
+requires_groovy_code

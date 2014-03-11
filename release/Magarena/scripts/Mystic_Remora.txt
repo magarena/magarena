@@ -1,0 +1,10 @@
+name=Mystic Remora
+url=http://www.magiccards.info/query?q=%21mystic%20remora
+image=http://mtgimage.com/card/mystic%20remora.jpg
+value=4.55
+rarity=U
+type=Enchantment
+cost={U}
+ability=cumulative upkeep {1}
+timing=enchantment
+requires_groovy_code

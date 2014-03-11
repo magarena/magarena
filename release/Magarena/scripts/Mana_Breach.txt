@@ -1,0 +1,9 @@
+name=Mana Breach
+url=http://www.magiccards.info/query?q=%21mana%20breach
+image=http://mtgimage.com/card/mana%20breach.jpg
+value=3.75
+rarity=U
+type=Enchantment
+cost={2}{U}
+timing=enchantment
+requires_groovy_code
