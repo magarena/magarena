@@ -1,0 +1,11 @@
+name=Tidebinder Mage
+url=http://magiccards.info/query?q=%21tidebinder%20mage
+image=http://mtgimage.com/card/tidebinder%20mage.jpg
+value=3.723
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}{U}
+pt=2/2
+timing=main
+requires_groovy_code
