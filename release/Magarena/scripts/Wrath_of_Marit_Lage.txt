@@ -1,0 +1,10 @@
+name=Wrath of Marit Lage
+url=http://www.magiccards.info/query?q=%21wrath%20of%20marit%20lage
+image=http://mtgimage.com/card/wrath%20of%20marit%20lage.jpg
+value=3.232
+rarity=U
+type=Enchantment
+cost={3}{U}{U}
+ability=lord red creatures have doesn't untap during untap step
+timing=enchantment
+requires_groovy_code

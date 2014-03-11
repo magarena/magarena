@@ -1,0 +1,10 @@
+name=Embargo
+url=http://www.magiccards.info/query?q=%21embargo
+image=http://mtgimage.com/card/embargo.jpg
+value=3.82
+rarity=R
+type=Enchantment
+cost={3}{U}
+ability=lord nonland permanents have doesn't untap during untap step;\
+        your upkeep effect PN loses 2 life.
+timing=enchantment
