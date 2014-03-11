@@ -622,8 +622,16 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     boolean isSolved() {
         return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
+    
+    synchronized void updateVirtualLoss() {
+        sum = (sum * numSim) / (numSim + 1);
+    }
+    
+    synchronized void updateVirtualWin() {
+        sum = (sum * (numSim + 1)) / numSim;
+    }
 
-    void updateScore(final MCTSGameTree child, final double delta) {
+    synchronized void updateScore(final MCTSGameTree child, final double delta) {
         final double oldMean = (numSim > 0) ? sum/numSim : 0;
         sum += delta;
         numSim += 1;

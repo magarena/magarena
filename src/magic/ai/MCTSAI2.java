@@ -13,6 +13,12 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.TimeUnit;
+
 /*
 AI using Monte Carlo Tree Search
 
@@ -61,6 +67,8 @@ public class MCTSAI2 implements MagicAI {
     private static final int MAX_ACTIONS = 10000;
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
+    
+    private static final int THREADS = Runtime.getRuntime().availableProcessors();
 
     static {
         if (System.getProperty("min_sim") != null) {
@@ -135,6 +143,15 @@ public class MCTSAI2 implements MagicAI {
 
         log("MCTS cached=" + root.getNumSim());
 
+        final ExecutorService executor = new ThreadPoolExecutor(
+            THREADS - 1, 
+            THREADS - 1, 
+            0L, 
+            TimeUnit.MILLISECONDS,
+            new SynchronousQueue<Runnable>(),
+            new ThreadPoolExecutor.CallerRunsPolicy()
+        );
+            
         //end simulations once root is AI win or time is up
         int sims;
         for (sims = 0;
@@ -158,31 +175,49 @@ public class MCTSAI2 implements MagicAI {
 
             // play a simulated game to get score
             // update all nodes along the path from root to new node
-            final double score = randomPlay(path.getLast(), rootGame);
 
-            // update score and game theoretic value along the chosen path
+            //submit random play to executor
+            executor.execute(new Runnable() {
+                @Override
+                public void run() {
+                    final double score = randomPlay(path.getLast(), rootGame);
+                    // update score and game theoretic value along the chosen path
+                    MCTSGameTree child = null;
+                    MCTSGameTree parent = null;
+                    while (!path.isEmpty()) {
+                        child = parent;
+                        parent = path.removeLast();
+
+                        parent.updateVirtualWin();
+                        parent.updateScore(child, score);
+
+                        if (child != null && child.isSolved()) {
+                            final int steps = child.getSteps() + 1;
+                            if (parent.isAI() && child.isAIWin()) {
+                                parent.setAIWin(steps);
+                            } else if (parent.isOpp() && child.isAILose()) {
+                                parent.setAILose(steps);
+                            } else if (parent.isAI() && child.isAILose()) {
+                                parent.incLose(steps);
+                            } else if (parent.isOpp() && child.isAIWin()) {
+                                parent.incLose(steps);
+                            }
+                        }
+                    }
+                }
+            });
+            
+            //virtual loss
             MCTSGameTree child = null;
             MCTSGameTree parent = null;
             while (!path.isEmpty()) {
                 child = parent;
                 parent = path.removeLast();
-
-                parent.updateScore(child, score);
-
-                if (child != null && child.isSolved()) {
-                    final int steps = child.getSteps() + 1;
-                    if (parent.isAI() && child.isAIWin()) {
-                        parent.setAIWin(steps);
-                    } else if (parent.isOpp() && child.isAILose()) {
-                        parent.setAILose(steps);
-                    } else if (parent.isAI() && child.isAILose()) {
-                        parent.incLose(steps);
-                    } else if (parent.isOpp() && child.isAIWin()) {
-                        parent.incLose(steps);
-                    }
-                }
+                parent.updateVirtualLoss();
             }
         }
+
+        executor.shutdown();
 
         assert root.size() > 0 : "ERROR! Root has no children but there are " + size + " choices";
 
