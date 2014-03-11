@@ -1,0 +1,11 @@
+name=Wei Scout
+url=http://www.magiccards.info/query?q=%21wei%20scout
+image=http://mtgimage.com/card/wei%20scout.jpg
+value=2.481
+rarity=C
+type=Creature
+subtype=Human,Scout,Soldier
+cost={1}{B}
+pt=1/1
+ability=horsemanship
+timing=main

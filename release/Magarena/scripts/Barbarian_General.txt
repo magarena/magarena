@@ -1,0 +1,11 @@
+name=Barbarian General
+url=http://www.magiccards.info/query?q=%21barbarian%20general
+image=http://mtgimage.com/card/barbarian%20general.jpg
+value=2.433
+rarity=U
+type=Creature
+subtype=Human,Barbarian,Soldier
+cost={4}{R}
+pt=3/2
+ability=horsemanship
+timing=main

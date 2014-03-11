@@ -1,0 +1,11 @@
+name=Shu Cavalry
+url=http://www.magiccards.info/query?q=%21shu%20cavalry
+image=http://mtgimage.com/card/shu%20cavalry.jpg
+value=3.545
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=2/2
+ability=horsemanship
+timing=main

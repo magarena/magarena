@@ -1,0 +1,11 @@
+name=Wei Elite Companions
+url=http://www.magiccards.info/query?q=%21wei%20elite%20companions
+image=http://mtgimage.com/card/wei%20elite%20companions.jpg
+value=2.75
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{B}
+pt=3/3
+ability=horsemanship
+timing=main

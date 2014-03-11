@@ -1,0 +1,11 @@
+name=Yellow Scarves General
+url=http://www.magiccards.info/query?q=%21yellow%20scarves%20general
+image=http://mtgimage.com/card/yellow%20scarves%20general.jpg
+value=1.879
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{R}
+pt=2/2
+ability=horsemanship;can't block
+timing=main

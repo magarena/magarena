@@ -1,0 +1,11 @@
+name=Yellow Scarves Cavalry
+url=http://www.magiccards.info/query?q=%21yellow%20scarves%20cavalry
+image=http://mtgimage.com/card/yellow%20scarves%20cavalry.jpg
+value=2.242
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{R}
+pt=1/1
+ability=horsemanship;can't block
+timing=main
