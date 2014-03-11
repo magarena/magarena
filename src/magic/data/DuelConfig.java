@@ -5,6 +5,7 @@ import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicColor;
 import magic.model.MagicPlayerProfile;
+import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 
@@ -28,7 +29,6 @@ public class DuelConfig {
     private static final String PLAYER="player";
     private static final String OPPONENT="opponent";
     private static final String CUBE="cube";
-    private static final String AI="ai";
 
     // default values.
     private int startLife = 20;
@@ -37,7 +37,6 @@ public class DuelConfig {
     private String playerOneDeckGenerator = ANY_THREE;
     private String playerTwoDeckGenerator = ANY_THREE;
     private String cube = CubeDefinitions.getCubeNames()[0];
-    private String ai = "minimax";
     private PlayerProfile playerOne = null;
     private PlayerProfile playerTwo = null;
 
@@ -57,7 +56,6 @@ public class DuelConfig {
         games=duelConfig.games;
         playerOneDeckGenerator=duelConfig.playerOneDeckGenerator;
         playerTwoDeckGenerator=duelConfig.playerTwoDeckGenerator;
-        ai=duelConfig.ai;
     }
 
     public PlayerProfile getPlayerOneProfile() {
@@ -147,16 +145,14 @@ public class DuelConfig {
     }
 
     public MagicAI[] getPlayerAIs() {
-        final MagicAI playerAI = MagicAIImpl.getAI(ai).getAI();
+        final MagicAI playerAI;
+        if (playerTwo instanceof AiPlayer) {
+            final AiPlayer aiPlayer = (AiPlayer)playerTwo;
+            playerAI = MagicAIImpl.getAI(aiPlayer.getAiType().toString()).getAI();
+        } else {
+            playerAI = MagicAIImpl.getAI(MagicAIImpl.MMAB.toString()).getAI();
+        }
         return new MagicAI[]{playerAI, playerAI};
-    }
-
-    public String getAI() {
-        return ai;
-    }
-
-    public void setAI(final String ai) {
-        this.ai=ai;
     }
 
     public void load(final Properties properties) {
@@ -168,7 +164,6 @@ public class DuelConfig {
         playerOneDeckGenerator=properties.getProperty(PLAYER,playerOneDeckGenerator);
         playerTwoDeckGenerator=properties.getProperty(OPPONENT,playerTwoDeckGenerator);
         cube=properties.getProperty(CUBE,cube);
-        ai=properties.getProperty(AI,ai);
     }
 
     public void load() {
@@ -186,7 +181,6 @@ public class DuelConfig {
         properties.setProperty(PLAYER, playerOneDeckGenerator);
         properties.setProperty(OPPONENT, playerTwoDeckGenerator);
         properties.setProperty(CUBE, cube);
-        properties.setProperty(AI, ai);
     }
 
     public void save() {
@@ -207,4 +201,30 @@ public class DuelConfig {
     public static DuelConfig getInstance() {
         return INSTANCE;
     }
+
+
+    /**
+     * Dependent on AI type, but approximately the maximum number of
+     * seconds the AI has to to make a decision.
+     * <p>
+     * Currently, this a user-adjustable setting from 1 to 8 seconds.
+     */
+    public int getAiDifficulty() {
+        if (playerTwo instanceof AiPlayer) {
+            final AiPlayer player = (AiPlayer)playerTwo;
+            return player.getAiLevel();
+        } else {
+            return 6;
+        }
+    }
+
+    public int getAiExtraLife() {
+        if (playerTwo instanceof AiPlayer) {
+            final AiPlayer aiPlayer = (AiPlayer)playerTwo;
+            return aiPlayer.getExtraLife();
+        } else {
+            return 0;
+        }
+    }
+
 }

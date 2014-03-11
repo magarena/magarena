@@ -24,8 +24,6 @@ public class GeneralConfig {
     private static final String SKIP_SINGLE="single";
     private static final String ALWAYS_PASS="pass";
     private static final String SMART_TARGET="target";
-    private static final String DIFFICULTY="difficulty";
-    private static final String EXTRA_LIFE="extra";
     private static final String POPUP_DELAY="popup";
     private static final String MESSAGE_DELAY = "message";
     private static final String STRENGTH_DIFFICULTY="strengthDifficulty";
@@ -58,8 +56,6 @@ public class GeneralConfig {
     private static final boolean DEFAULT_SINGLE=true;
     private static final boolean DEFAULT_PASS=true;
     private static final boolean DEFAULT_TARGET=true;
-    private static final int DEFAULT_DIFFICULTY=6;
-    private static final int DEFAULT_EXTRA_LIFE=0;
     private static final int DEFAULT_POPUP_DELAY=300;
     private static final int DEFAULT_MESSAGE_DELAY = 2000;
     private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
@@ -88,8 +84,6 @@ public class GeneralConfig {
     private boolean skipSingle=DEFAULT_SINGLE;
     private boolean alwaysPass=DEFAULT_PASS;
     private boolean smartTarget=DEFAULT_TARGET;
-    private int difficulty=DEFAULT_DIFFICULTY;
-    private int extraLife=DEFAULT_EXTRA_LIFE;
     private int popupDelay=DEFAULT_POPUP_DELAY;
     private int messageDelay = DEFAULT_MESSAGE_DELAY;
     private int strengthDifficulty=DEFAULT_STRENGTH_DIFFICULTY;
@@ -254,22 +248,6 @@ public class GeneralConfig {
         this.smartTarget=smartTarget;
     }
 
-    public int getDifficulty() {
-        return difficulty;
-    }
-
-    public void setDifficulty(final int difficulty) {
-        this.difficulty=difficulty;
-    }
-
-    public int getExtraLife() {
-        return extraLife;
-    }
-
-    public void setExtraLife(final int extraLife) {
-        this.extraLife=extraLife;
-    }
-
     public int getPopupDelay() {
         return popupDelay;
     }
@@ -383,8 +361,6 @@ public class GeneralConfig {
         skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
         alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+DEFAULT_PASS));
         smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+DEFAULT_TARGET));
-        difficulty=Integer.parseInt(properties.getProperty(DIFFICULTY,""+DEFAULT_DIFFICULTY));
-        extraLife=Integer.parseInt(properties.getProperty(EXTRA_LIFE,""+DEFAULT_EXTRA_LIFE));
         popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+DEFAULT_POPUP_DELAY));
         messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + DEFAULT_MESSAGE_DELAY));
         strengthDifficulty=Integer.parseInt(properties.getProperty(STRENGTH_DIFFICULTY,""+DEFAULT_STRENGTH_DIFFICULTY));
@@ -420,8 +396,6 @@ public class GeneralConfig {
         properties.setProperty(SKIP_SINGLE,String.valueOf(skipSingle));
         properties.setProperty(ALWAYS_PASS,String.valueOf(alwaysPass));
         properties.setProperty(SMART_TARGET,String.valueOf(smartTarget));
-        properties.setProperty(DIFFICULTY,String.valueOf(difficulty));
-        properties.setProperty(EXTRA_LIFE,String.valueOf(extraLife));
         properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
         properties.setProperty(MESSAGE_DELAY,String.valueOf(messageDelay));
         properties.setProperty(STRENGTH_DIFFICULTY,String.valueOf(strengthDifficulty));
