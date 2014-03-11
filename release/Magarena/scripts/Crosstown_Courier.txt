@@ -1,0 +1,11 @@
+name=Crosstown Courier
+url=http://www.magiccards.info/query?q=%21crosstown%20courier
+image=http://mtgimage.com/card/crosstown%20courier.jpg
+value=2.561
+rarity=C
+type=Creature
+subtype=Vedalken
+cost={1}{U}
+pt=2/1
+timing=main
+requires_groovy_code

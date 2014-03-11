@@ -1,0 +1,9 @@
+name=Call to Heel
+url=http://www.magiccards.info/query?q=%21call%20to%20heel
+image=http://mtgimage.com/card/call%20to%20heel.jpg
+value=2.375
+rarity=C
+type=Instant
+cost={1}{U}
+timing=removal
+requires_groovy_code

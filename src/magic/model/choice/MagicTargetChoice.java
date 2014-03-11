@@ -149,6 +149,9 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice LAND_YOU_CONTROL =
         new MagicTargetChoice("a land you control");
+    
+    public static final MagicTargetChoice ISLAND_YOU_CONTROL =
+        new MagicTargetChoice("an Island you control");
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT = 
         new MagicTargetChoice("target nonland permanent");
@@ -464,6 +467,9 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice SACRIFICE_LAND = 
         new MagicTargetChoice("a land to sacrifice");
+    
+    public static final MagicTargetChoice SACRIFICE_FOREST_OR_PLAINS = 
+        new MagicTargetChoice("a Forest or Plains to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_ENCHANTMENT = 
         new MagicTargetChoice("an enchantment to sacrifice");

@@ -1,0 +1,9 @@
+name=Deathgrip
+url=http://www.magiccards.info/query?q=%21deathgrip
+image=http://mtgimage.com/card/deathgrip.jpg
+value=3.593
+rarity=R
+type=Enchantment
+cost={B}{B}
+ability=cost {B}{B}:Counter target green spell.
+timing=enchantment

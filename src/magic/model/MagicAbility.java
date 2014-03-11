@@ -106,7 +106,9 @@ public enum MagicAbility {
     CannotBeBlockedByFlying("can't be blocked by creatures with flying",20),
     CannotBeBlockedExceptWithFlying("can't be blocked except by creatures with flying",30),
     CannotBeBlockedExceptWithFlyingOrReach("can't be blocked except by creatures with flying or reach",25),
-    CannotBeBlockedExceptBySliver("can't be blocked except by slivers", 90),
+    CannotBeBlockedExceptBySliver("can't be blocked except by slivers",90),
+    CannotBeBlockedExceptByWalls("can't be blocked except by walls",80),
+    CannotBeBlockedByWalls("can't be blocked by walls",10),
     CannotBeBlockedByHumans("can't be blocked by humans",10),
     CannotBeBlockedByBlack("can't be blocked by black creatures",10),
     CannotBeBlockedByBlue("can't be blocked by blue creatures",10),
@@ -171,6 +173,7 @@ public enum MagicAbility {
     TotemArmor("totem armor",0),
     Intimidate("intimidate",45),
     Infect("infect",35),
+    Horsemanship("horsemanship",60),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities",-20),
 

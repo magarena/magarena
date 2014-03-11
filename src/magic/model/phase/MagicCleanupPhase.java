@@ -23,6 +23,13 @@ public class MagicCleanupPhase extends MagicPhase {
     }
 
     private static void cleanup(final MagicGame game) {
+        final MagicPlayer turnPlayer=game.getTurnPlayer();
+        // discard excess cards
+        if (turnPlayer.getNumExcessCards() > 0) {
+            final int amount = turnPlayer.getNumExcessCards();
+            game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount));
+        }
+        // remove until EOT triggers/static, clean up player and permanents
         game.doAction(new MagicCleanupTurnTriggersAction());
         for (final MagicPlayer player : game.getPlayers()) {
             game.doAction(new MagicCleanupPlayerAction(player));
@@ -32,22 +39,16 @@ public class MagicCleanupPhase extends MagicPhase {
     }
 
     private static void nextTurn(final MagicGame game) {
-        MagicPlayer turnPlayer=game.getTurnPlayer();
-        // discard excess cards
-        if (turnPlayer.getNumExcessCards() > 0) {
-            final int amount = turnPlayer.getNumExcessCards();
-            game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount));
+        final MagicPlayer turnPlayer=game.getTurnPlayer();
+        if (!turnPlayer.getBuilderCost().isEmpty()) {
+            game.doAction(new MagicPayDelayedCostsAction(turnPlayer));
         }
         if (turnPlayer.getExtraTurns()>0) {
             game.doAction(new MagicChangeExtraTurnsAction(turnPlayer,-1));
             final String playerName = turnPlayer.getName();
             game.logMessage(turnPlayer,playerName + " takes an extra turn.");
         } else {
-            turnPlayer=turnPlayer.getOpponent();
-            game.setTurnPlayer(turnPlayer);
-        }
-        if (!turnPlayer.getBuilderCost().isEmpty()) {
-            game.doAction(new MagicPayDelayedCostsAction(turnPlayer));
+            game.setTurnPlayer(turnPlayer.getOpponent());
         }
         game.setTurn(game.getTurn()+1);
         game.resetLandPlayed();
@@ -59,7 +60,15 @@ public class MagicCleanupPhase extends MagicPhase {
     @Override
     public void executeBeginStep(final MagicGame game) {
         cleanup(game);
+        if (game.getStack().isEmpty()) {
+            game.setStep(MagicStep.NextPhase);
+        } else {
+            game.setStep(MagicStep.ActivePlayer);
+        }
+    }
+    
+    @Override
+    public void executeEndOfPhase(final MagicGame game) {
         nextTurn(game);
-        game.setStep(MagicStep.NextPhase);
     }
 }

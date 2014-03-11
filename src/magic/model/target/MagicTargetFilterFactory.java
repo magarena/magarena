@@ -22,6 +22,7 @@ public class MagicTargetFilterFactory {
     static {
         // used by lord ability/Target <group>
         factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
+        factory.put("lands",TARGET_LAND);
         factory.put("nonbasic lands", TARGET_NONBASIC_LAND);
         factory.put("islands", TARGET_ISLAND);
         factory.put("permanents you control", TARGET_PERMANENT_YOU_CONTROL);
@@ -39,6 +40,7 @@ public class MagicTargetFilterFactory {
         factory.put("attacking creatures", TARGET_ATTACKING_CREATURE);
         factory.put("blocking creatures", TARGET_BLOCKING_CREATURE);
         factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
+        factory.put("nonland permanents", TARGET_NONLAND_PERMANENT);
         
         factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
         factory.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
@@ -66,6 +68,7 @@ public class MagicTargetFilterFactory {
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
         single.put("basic land", TARGET_BASIC_LAND);
         single.put("basic land you control", TARGET_BASIC_LAND_YOU_CONTROL);
+        single.put("Island you control", TARGET_ISLAND_YOU_CONTROL);
         single.put("nonbasic land", TARGET_NONBASIC_LAND);
         single.put("nonbasic land you control", TARGET_NONBASIC_LAND_YOU_CONTROL);
         single.put("spell", TARGET_SPELL);
@@ -83,12 +86,20 @@ public class MagicTargetFilterFactory {
         single.put("red or green spell", TARGET_RED_GREEN_SPELL);
         single.put("black spell", TARGET_BLACK_SPELL);
         single.put("white spell", TARGET_WHITE_SPELL);
+        single.put("red spell", TARGET_RED_SPELL);
         single.put("blue spell", TARGET_BLUE_SPELL);
+        single.put("green spell", TARGET_GREEN_SPELL);
+        single.put("nonblue spell", TARGET_NONBLUE_SPELL);
         single.put("instant or sorcery spell", TARGET_INSTANT_OR_SORCERY_SPELL);
         single.put("instant spell", TARGET_INSTANT_SPELL);
+        single.put("sorcery spell", TARGET_SORCERY_SPELL);
         single.put("creature or Aura spell", TARGET_CREATURE_OR_AURA_SPELL);
+        single.put("creature or sorcery spell", TARGET_CREATURE_OR_SORCERY_SPELL);
+        single.put("Spirit or Arcane spell", TARGET_SPIRIT_OR_ARCANE_SPELL);
         single.put("blue or black creature you control", TARGET_BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", TARGET_RED_OR_GREEN_CREATURE_YOU_CONTROL);
+        single.put("red or green creature an opponent controls", TARGET_RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS);
+        single.put("Forest or Plains you control", TARGET_FOREST_OR_PLAINS_YOU_CONTROL);
         single.put("red or green creature",TARGET_RED_OR_GREEN_CREATURE);
         single.put("creature without flying you don't control", MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("nonartifact creature", TARGET_NONARTIFACT_CREATURE);

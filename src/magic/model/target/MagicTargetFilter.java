@@ -113,6 +113,24 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicStackFilterImpl TARGET_GREEN_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && itemOnStack.hasColor(MagicColor.Green);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_RED_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && itemOnStack.hasColor(MagicColor.Red);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_NONBLUE_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
+        }
+    };
+    
     MagicStackFilterImpl TARGET_CREATURE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature);
@@ -122,6 +140,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicStackFilterImpl TARGET_CREATURE_OR_AURA_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature) || itemOnStack.isSpell(MagicSubType.Aura);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_CREATURE_OR_SORCERY_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature) || itemOnStack.isSpell(MagicType.Sorcery);
         }
     };
 
@@ -142,6 +166,19 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicStackFilterImpl TARGET_INSTANT_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Instant);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_SORCERY_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Sorcery);
+        }
+    };
+    
+    MagicStackFilterImpl TARGET_SPIRIT_OR_ARCANE_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicSubType.Spirit) ||
+                   itemOnStack.isSpell(MagicSubType.Arcane);
         }
     };
 
@@ -525,6 +562,23 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    target.isCreature() &&
                    (target.hasColor(MagicColor.Red) ||
                     target.hasColor(MagicColor.Green));
+        }
+    };
+    
+    MagicPermanentFilterImpl TARGET_RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isOpponent(player) &&
+                   target.isCreature() &&
+                   (target.hasColor(MagicColor.Red) ||
+                    target.hasColor(MagicColor.Green));
+        }
+    };
+    
+    MagicPermanentFilterImpl TARGET_FOREST_OR_PLAINS_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && 
+                   (target.hasSubType(MagicSubType.Forest) ||
+                    target.hasSubType(MagicSubType.Plains));
         }
     };
     
@@ -1112,6 +1166,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    targetType==MagicTargetType.OpponentsGraveyard;
         }
     };
+    
+    MagicCardFilterImpl LAND_CARD_FROM_YOUR_GRAVEYARD=Factory.card(MagicTargetType.Graveyard, MagicType.Land);
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {

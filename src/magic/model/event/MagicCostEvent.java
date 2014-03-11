@@ -294,6 +294,14 @@ public enum MagicCostEvent {
             return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.TARGET_BASIC_LAND_YOU_CONTROL);
         }
     },
+    BounceIsland() {
+        public boolean accept(final String cost) {
+            return cost.equals("Return an Island you control to its owner's hand");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.ISLAND_YOU_CONTROL);
+        }
+    },
     BounceCreature() {
         public boolean accept(final String cost) {
             return cost.equals("Return a creature you control to its owner's hand");

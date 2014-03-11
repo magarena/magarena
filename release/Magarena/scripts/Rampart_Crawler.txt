@@ -1,0 +1,11 @@
+name=Rampart Crawler
+url=http://www.magiccards.info/query?q=%21rampart%20crawler
+image=http://mtgimage.com/card/rampart%20crawler.jpg
+value=2.243
+rarity=C
+type=Creature
+subtype=Lizard,Mercenary
+cost={B}
+pt=1/1
+ability=can't be blocked by walls
+timing=main

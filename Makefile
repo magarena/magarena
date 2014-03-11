@@ -212,8 +212,7 @@ selfMode ?= false
 	--games 1 \
 	--repeat ${games} >> $*.log 2>&1
 
-test: $(MAG)
-	-make 100.d
+test: 100.d
 
 debug: $(MAG)
 	-make test debug=true

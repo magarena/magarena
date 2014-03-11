@@ -1,0 +1,11 @@
+name=Invisibility
+url=http://www.magiccards.info/query?q=%21invisibility
+image=http://mtgimage.com/card/invisibility.jpg
+value=3.122
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}{U}
+given_ability=can't be blocked except by walls
+enchant=unblockable,pos creature
+timing=aura

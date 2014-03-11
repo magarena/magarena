@@ -2,7 +2,8 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.isController(upkeepPlayer)) ?
+            return (permanent.isController(upkeepPlayer) &&
+                    permanent.isTapped()) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(

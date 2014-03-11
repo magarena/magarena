@@ -1,0 +1,11 @@
+name=Prowler's Helm
+url=http://www.magiccards.info/query?q=%21prowler%27s%20helm
+image=http://mtgimage.com/card/prowler's%20helm.jpg
+value=3.34
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+equip={2}
+given_ability=can't be blocked except by walls
+timing=artifact

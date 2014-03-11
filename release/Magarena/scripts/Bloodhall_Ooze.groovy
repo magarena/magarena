@@ -3,11 +3,7 @@ def trigger = {
     return new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return (permanent.isController(upkeepPlayer) &&
-                    game.filterPermanents(
-                        upkeepPlayer,
-                        filter
-                    ).size() > 0) ?
+            return (permanent.isController(upkeepPlayer) && upkeepPlayer.controlsPermanent(filter)) ?
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(

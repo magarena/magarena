@@ -1,0 +1,11 @@
+name=Wilderness Hypnotist
+url=http://www.magiccards.info/query?q=%21wilderness%20hypnotist
+image=http://mtgimage.com/card/wilderness%20hypnotist.jpg
+value=1
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{U}{U}
+pt=1/3
+ability=cost {T}:Target red or green creature gets -2/-0 until end of turn.
+timing=main
