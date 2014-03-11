@@ -148,9 +148,9 @@ public class DuelConfig {
         final MagicAI playerAI;
         if (playerTwo instanceof AiPlayer) {
             final AiPlayer aiPlayer = (AiPlayer)playerTwo;
-            playerAI = MagicAIImpl.getAI(aiPlayer.getAiType().toString()).getAI();
+            playerAI = aiPlayer.getAiType().getAI();
         } else {
-            playerAI = MagicAIImpl.getAI(MagicAIImpl.MMAB.toString()).getAI();
+            playerAI = MagicAIImpl.MMAB.getAI();
         }
         return new MagicAI[]{playerAI, playerAI};
     }
