@@ -22,7 +22,7 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
                 final MagicPermanent creature ->
                 game.doAction(new MagicUntapAction(creature));
                 game.doAction(new MagicAddStaticAction(creature,color));
-                game.doAction(new MagicDrawAction(event.getPlayer());
+                game.doAction(new MagicDrawAction(event.getPlayer()));
             });
         }
     }
