@@ -6,7 +6,6 @@ import magic.ai.MagicAI;
 import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
-import magic.data.GeneralConfig;
 import magic.generator.DefaultDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
@@ -106,8 +105,9 @@ public class MagicDuel {
     }
 
     public void updateDifficulty() {
-        difficulty[0] = GeneralConfig.getInstance().getDifficulty();
-        difficulty[1] = GeneralConfig.getInstance().getDifficulty();
+        final int aiDifficulty = configuration.getAiDifficulty();
+        difficulty[0] = aiDifficulty;
+        difficulty[1] = aiDifficulty;
     }
 
     public boolean isEditable() {
@@ -157,7 +157,7 @@ public class MagicDuel {
         final MagicPlayer opponent = new MagicPlayer(configuration.getStartLife(),playerDefinitions[opponentIndex],1);
 
         //give the AI player extra life
-        opponent.setLife(opponent.getLife() + GeneralConfig.getInstance().getExtraLife());
+        opponent.setLife(opponent.getLife() + configuration.getAiExtraLife());
 
         //determine who starts first
         final MagicPlayer start    = startPlayer == 0 ? player : opponent;
