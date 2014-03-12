@@ -6,4 +6,4 @@ rarity=C
 type=Sorcery
 cost={1}{G}
 timing=main
-requries_groovy_code=Nature's Lore
+requires_groovy_code=Nature's Lore
