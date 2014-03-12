@@ -1,0 +1,11 @@
+name=Sun Quan, Lord of Wu
+url=http://www.magiccards.info/query?q=%21sun%20quan%2C%20lord%20of%20wu
+image=http://mtgimage.com/card/sun%20quan,%20lord%20of%20wu.jpg
+value=4.372
+rarity=M
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={4}{U}{U}
+pt=4/4
+ability=lord creatures you control have horsemanship
+timing=main

@@ -1,0 +1,9 @@
+name=Peach Garden Oath
+url=http://www.magiccards.info/query?q=%21peach%20garden%20oath
+image=http://mtgimage.com/card/peach%20garden%20oath.jpg
+value=3.532
+rarity=C
+type=Sorcery
+cost={W}
+timing=main
+requires_groovy_code=Festival of Trokin

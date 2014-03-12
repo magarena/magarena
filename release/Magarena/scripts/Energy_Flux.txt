@@ -1,0 +1,9 @@
+name=Energy Flux
+url=http://www.magiccards.info/query?q=%21energy%20flux
+image=http://mtgimage.com/card/energy%20flux.jpg
+value=4.45
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=lord artifacts have "your upkeep effect PN may pay {2}. If you don't, sacrifice SN." 
+timing=enchantment

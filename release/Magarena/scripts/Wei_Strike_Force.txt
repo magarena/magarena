@@ -1,0 +1,11 @@
+name=Wei Strike Force
+url=http://www.magiccards.info/query?q=%21wei%20strike%20force
+image=http://mtgimage.com/card/wei%20strike%20force.jpg
+value=2.932
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{B}
+pt=2/1
+ability=horsemanship
+timing=main

@@ -1,0 +1,10 @@
+name=Rising Waters
+url=http://www.magiccards.info/query?q=%21rising%20waters
+image=http://mtgimage.com/card/rising%20waters.jpg
+value=4.143
+rarity=R
+type=Enchantment
+cost={3}{U}
+ability=lord lands have "doesn't untap during untap step"
+timing=enchantment
+requires_groovy_code

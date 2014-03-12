@@ -1,0 +1,11 @@
+name=Wu Elite Cavalry
+url=http://www.magiccards.info/query?q=%21wu%20elite%20cavalry
+image=http://mtgimage.com/card/wu%20elite%20cavalry.jpg
+value=3.023
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={3}{U}
+pt=2/3
+ability=horsemanship
+timing=main

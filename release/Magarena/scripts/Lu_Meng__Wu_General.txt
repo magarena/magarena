@@ -1,0 +1,11 @@
+name=Lu Meng, Wu General
+url=http://www.magiccards.info/query?q=%21lu%20meng%2C%20wu%20general
+image=http://mtgimage.com/card/lu%20meng,%20wu%20general.jpg
+value=3.88
+rarity=U
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={3}{U}{U}
+pt=4/4
+ability=horsemanship
+timing=main
