@@ -1,0 +1,9 @@
+name=Crimson Wisps
+url=http://www.magiccards.info/query?q=%21crimson%20wisps
+image=http://mtgimage.com/card/crimson%20wisps.jpg
+value=3.256
+rarity=C
+type=Instant
+cost={R}
+timing=tapping
+requires_groovy_code
