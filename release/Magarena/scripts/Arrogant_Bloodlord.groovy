@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {          
             event.processPermanent(game, {
                 final MagicPermanent permanent ->
-                game.doAction(new MagicAddTriggerAction(
+                game.doAction(new MagicAddTurnTriggerAction(
                     permanent,
                     MagicAtEndOfCombatTrigger.Destroy
                 ))
