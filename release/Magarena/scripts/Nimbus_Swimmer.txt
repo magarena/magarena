@@ -1,0 +1,10 @@
+name=Nimbus Swimmer
+url=http://www.magiccards.info/query?q=%21nimbus%20swimmer
+image=http://mtgimage.com/card/nimbus%20swimmer.jpg
+value=3.078
+rarity=U
+type=Creature
+subtype=Leviathan
+cost={X}{G}{U}
+ability=flying;enters with counter +1/+1 X
+timing=main

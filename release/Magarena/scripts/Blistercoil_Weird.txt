@@ -1,0 +1,11 @@
+name=Blistercoil Weird
+url=http://www.magiccards.info/query?q=%21blistercoil%20weird
+image=http://mtgimage.com/card/blistercoil%20weird.jpg
+value=3.417
+rarity=U
+type=Creature
+subtype=Weird
+cost={U/R}
+pt=1/1
+timing=main
+requires_groovy_code
