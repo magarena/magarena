@@ -18,7 +18,6 @@ public class MMAB implements MagicAI {
     private static final long SEC_TO_NANO=1000000000L;
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
 
-    private final boolean LOGGING = Boolean.getBoolean("debug");
     private final boolean CHEAT;
     private final boolean DECKSTR;
 
@@ -37,9 +36,7 @@ public class MMAB implements MagicAI {
 
     private void log(final String message) {
         MagicGameLog.log(message);
-        if (LOGGING) {
-            System.err.println(message);
-        }
+        System.err.println(message);
     }
 
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {

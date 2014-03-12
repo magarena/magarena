@@ -94,7 +94,6 @@ public class MCTSAI implements MagicAI {
         }
     }
 
-    private final boolean LOGGING = Boolean.getBoolean("debug");
     private final boolean CHEAT;
 
     //cache the set of choices at the root to avoid recomputing it all the time
@@ -109,9 +108,7 @@ public class MCTSAI implements MagicAI {
 
     private void log(final String message) {
         MagicGameLog.log(message);
-        if (LOGGING) {
-            System.err.println(message);
-        }
+        System.err.println(message);
     }
 
     public Object[] findNextEventChoiceResults(
