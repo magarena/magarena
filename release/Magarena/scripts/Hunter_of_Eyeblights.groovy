@@ -21,7 +21,7 @@ def TARGET_CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.Negative(TARGET_CREATURE_WITH_COUNTER, "target creature with a counter on it"),
+                new MagicTargetChoice(TARGET_CREATURE_WITH_COUNTER, MagicTargetHint.Negative, "target creature with a counter on it"),
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature\$ with a counter on it."
