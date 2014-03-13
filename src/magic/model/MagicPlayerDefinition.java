@@ -101,6 +101,10 @@ public class MagicPlayerDefinition {
                     }
                 }
             }
+            // fix for issue 446 (http://code.google.com/p/magarena/issues/detail?id=446).
+            if (bestColor == null) {
+                bestColor = MagicColor.getColor(MagicColor.getRandomColors(1).charAt(0));
+            }
             final MagicCardDefinition landCard = CardDefinitions.getBasicLand(bestColor);
             colorSource[bestColor.ordinal()] += landCard.getManaSource(bestColor);
             deck.add(landCard);

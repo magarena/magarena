@@ -34,18 +34,14 @@ public class DeckGenerators {
         // find class
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         try {
-            // Temporarily disable troublesome generators.
-            // - Ability_Mono causes an exception (issue 446).
-            final boolean isGeneratorValid = !cname.equalsIgnoreCase("ability_mono");
-            if (isGeneratorValid) {
-                generatorsMap.put(
-                        name,
-                        Class.forName("magic.generator." + cname + "_DeckGenerator")
-                             .asSubclass(RandomDeckGenerator.class)
-                             .newInstance()
+            generatorsMap.put(
+                    name,
+                    Class.forName("magic.generator." + cname + "_DeckGenerator")
+                    .asSubclass(RandomDeckGenerator.class)
+                    .newInstance()
                     );
-                System.err.println("added deck generator " + name);
-            }
+            System.err.println("added deck generator " + name);
+
         } catch (final ClassNotFoundException ex) {
             System.err.println("WARNING. Unable to find deck generator class for " + name);
         } catch (final ClassCastException ex) {
