@@ -200,6 +200,7 @@ public class MagicDuel {
         this.playerDefinitions=aPlayerDefinitions;
     }
 
+    // Used by the "Generate Deck" button in DuelPanel.
     public void buildDeck(final MagicPlayerDefinition player) {
         DeckGenerators.setRandomDeck(player);
     }
@@ -211,21 +212,22 @@ public class MagicDuel {
                 DeckGenerators.setRandomDeck(player);
                 break;
             case Preconstructed:
-                final String deckFilename = player.getDeckProfile().getDeckValue() + ".dec";
-                final Path deckPath = DeckUtils.getPrebuiltDecksFolder().resolve(deckFilename);
-                final MagicDeck deck = DeckUtils.loadDeckFromFile(deckPath.toString());
-                player.setDeck(deck);
+                setDeckFromFile(player, DeckUtils.getPrebuiltDecksFolder());
                 break;
             case Custom:
-                final String deckFilename2 = player.getDeckProfile().getDeckValue() + ".dec";
-                final Path deckPath2 = Paths.get(DeckUtils.getDeckFolder()).resolve(deckFilename2);
-                final MagicDeck deck2 = DeckUtils.loadDeckFromFile(deckPath2.toString());
-                player.setDeck(deck2);
+                setDeckFromFile(player, Paths.get(DeckUtils.getDeckFolder()));
                 break;
             default:
                 break;
             }
         }
+    }
+
+    private void setDeckFromFile(final MagicPlayerDefinition player, final Path deckFolder) {
+        final String deckFilename = player.getDeckProfile().getDeckValue() + ".dec";
+        final Path deckPath = deckFolder.resolve(deckFilename);
+        final MagicDeck deck = DeckUtils.loadDeckFromFile(deckPath.toString());
+        player.setDeck(deck);
     }
 
     public void initialize() {
