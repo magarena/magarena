@@ -166,13 +166,13 @@ public class DuelDecksScreen
     public void swapDecks() {
         screenContent.getDuel().restart();
         final MagicPlayerDefinition[] players = screenContent.getDuel().getPlayers();
-        final MagicDeckProfile profile1 = players[0].getProfile();
-        final MagicDeckProfile profile2 = players[1].getProfile();
+        final MagicDeckProfile deckProfile1 = players[0].getDeckProfile();
+        final MagicDeckProfile deckProfile2 = players[1].getDeckProfile();
         final MagicDeck deck1 = new MagicDeck(players[0].getDeck());
         final MagicDeck deck2 = new MagicDeck(players[1].getDeck());
-        players[0].setProfile(profile2);
+        players[0].setDeckProfile(deckProfile2);
         players[0].setDeck(deck2);
-        players[1].setProfile(profile1);
+        players[1].setDeckProfile(deckProfile1);
         players[1].setDeck(deck1);
         getFrame().closeActiveScreen(false);
         getFrame().showDuel();

@@ -3,7 +3,10 @@ package magic.model;
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.generator.DefaultDeckGenerator;
+import magic.model.player.AiPlayer;
+import magic.model.player.PlayerProfile;
 import magic.ui.theme.PlayerAvatar;
+
 import java.util.Properties;
 
 public class MagicPlayerDefinition {
@@ -15,43 +18,47 @@ public class MagicPlayerDefinition {
     private static final String ARTIFICIAL="artificial";
     private static final String COLORS="colors";
 
-    private String name;
-    private boolean artificial;
-    private MagicDeckProfile profile;
+    private String playerName;
+    private boolean isAi;
+    private MagicDeckProfile deckProfile;
     private final MagicDeck deck = new MagicDeck();
     private PlayerAvatar avatar;
 
-    MagicPlayerDefinition() {
-
-    }
+    // CTR
+    MagicPlayerDefinition() { }
+    // CTR
     public MagicPlayerDefinition(final String name,final boolean artificial,final MagicDeckProfile profile) {
-        this.name=name;
-        this.artificial=artificial;
-        this.profile=profile;
+        this.playerName=name;
+        this.isAi=artificial;
+        this.deckProfile=profile;
     }
+    // CTR
     public MagicPlayerDefinition(final String name,final boolean artificial,final MagicDeckProfile profile,final int face) {
         this(name, artificial, profile);
         this.avatar = new PlayerAvatar(face);
     }
+    // CTR
+    public MagicPlayerDefinition(final PlayerProfile playerProfile, final MagicDeckProfile deckProfile) {
+        this(playerProfile.getPlayerName(), (playerProfile instanceof AiPlayer), deckProfile);
+    }
 
     public String getName() {
-        return name;
+        return playerName;
     }
 
     public void setArtificial(final boolean art) {
-        this.artificial=art;
+        this.isAi=art;
     }
 
     public boolean isArtificial() {
-        return artificial;
+        return isAi;
     }
 
-    public void setProfile(final MagicDeckProfile profile) {
-        this.profile=profile;
+    public void setDeckProfile(final MagicDeckProfile profile) {
+        this.deckProfile=profile;
     }
-
-    public MagicDeckProfile getProfile() {
-        return profile;
+    public MagicDeckProfile getDeckProfile() {
+        return deckProfile;
     }
 
     private void addBasicLandsToDeck() {
@@ -65,7 +72,7 @@ public class MagicPlayerDefinition {
                 }
             } else {
                 final int colorFlags=cardDefinition.getColorFlags();
-                for (final MagicColor color : profile.getColors()) {
+                for (final MagicColor color : deckProfile.getColors()) {
                     if (color.hasColor(colorFlags)) {
                         colorCount[color.ordinal()]++;
                     }
@@ -109,7 +116,7 @@ public class MagicPlayerDefinition {
     }
 
     public DefaultDeckGenerator getDeckGenerator() {
-        final String name = getProfile().getDeckGeneratorName();
+        final String name = getDeckProfile().getDeckGeneratorName();
 
         if (name == null) {
             return null;
@@ -122,9 +129,9 @@ public class MagicPlayerDefinition {
         final DefaultDeckGenerator customGenerator =  getDeckGenerator();
 
         if(customGenerator == null) {
-            defaultGenerator.generateDeck(DECK_SIZE, profile, deck);
+            defaultGenerator.generateDeck(DECK_SIZE, deckProfile, deck);
         } else {
-            customGenerator.generateDeck(DECK_SIZE, profile, deck);
+            customGenerator.generateDeck(DECK_SIZE, deckProfile, deck);
         }
 
         addBasicLandsToDeck();
@@ -135,10 +142,10 @@ public class MagicPlayerDefinition {
     }
 
     void load(final Properties properties,final String prefix) {
-        name=properties.getProperty(prefix+NAME,"");
-        artificial=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
+        playerName=properties.getProperty(prefix+NAME,"");
+        isAi=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
         final String colors=properties.getProperty(prefix+COLORS,"");
-        profile=new MagicDeckProfile(colors);
+        deckProfile=new MagicDeckProfile(colors);
 
         final MagicDeck unsupported = new MagicDeck();
         deck.clear();
@@ -159,9 +166,8 @@ public class MagicPlayerDefinition {
     }
 
     void save(final Properties properties,final String prefix) {
-        properties.setProperty(prefix+NAME,name);
-        properties.setProperty(prefix+ARTIFICIAL,Boolean.toString(artificial));
-        properties.setProperty(prefix+COLORS,getProfile().getColorText());
+        properties.setProperty(prefix+NAME,playerName);
+        properties.setProperty(prefix+ARTIFICIAL,Boolean.toString(isAi));
 
         int index=1;
         for (final MagicCardDefinition cardDefinition : deck) {

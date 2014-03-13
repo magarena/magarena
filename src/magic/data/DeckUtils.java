@@ -254,7 +254,7 @@ public class DeckUtils {
         }
         final MagicDeckProfile profile = new MagicDeckProfile(colorText.toString());
         profile.setPreConstructed();
-        player.setProfile(profile);
+        player.setDeckProfile(profile);
     }
 
     public static void showUnsupportedCards(final MagicDeck unsupported) {
@@ -319,7 +319,7 @@ public class DeckUtils {
             for (int count=16;count>0;count--) {
                 deck.add(land);
             }
-            player.setProfile(new MagicDeckProfile("w"));
+            player.setDeckProfile(new MagicDeckProfile("w"));
         } else {
             loadDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
         }
