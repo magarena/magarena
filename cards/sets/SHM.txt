@@ -1,5 +1,5 @@
 Advice from the Fae
-Æthertow
+AEthertow
 Aphotic Wisps
 Apothecary Initiate
 Armored Ascension
@@ -161,7 +161,7 @@ Mystic Gate
 Niveous Wisps
 Nurturer Initiate
 Old Ghastbark
-"Oona, Queen of the Fae"
+Oona, Queen of the Fae
 Oona's Gatewarden
 Oracle of Nectars
 Order of Whiteclay
@@ -240,7 +240,7 @@ Strip Bare
 Sunken Ruins
 Swamp
 Swans of Bryn Argoll
-"Sygg, River Cutthroat"
+Sygg, River Cutthroat
 Tatterkite
 Tattermunge Duo
 Tattermunge Maniac
@@ -281,6 +281,6 @@ Woeleecher
 Wooded Bastion
 Woodfall Primus
 Worldpurge
-"Wort, the Raidmother"
+Wort, the Raidmother
 Wound Reflection
 Zealous Guardian

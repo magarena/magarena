@@ -1,6 +1,6 @@
 Aeon Chronicler
-Æther Membrane
-"Akroma, Angel of Fury"
+AEther Membrane
+Akroma, Angel of Fury
 Ana Battlemage
 Aquamorph Entity
 Auramancer's Guise
@@ -13,7 +13,7 @@ Blood Knight
 Body Double
 Bog Serpent
 Boom // Bust
-"Braids, Conjurer Adept"
+Braids, Conjurer Adept
 Brain Gorgers
 Brute Force
 Calciderm
@@ -22,7 +22,7 @@ Chronozoa
 Circle of Affliction
 Citanul Woodreaders
 Cradle to Grave
-"Crovax, Ascendant Hero"
+Crovax, Ascendant Hero
 Damnation
 Darkheart Sliver
 Dash Hopes
@@ -47,7 +47,7 @@ Fa'adiyah Seer
 Fatal Frenzy
 Firefright Mage
 Frenetic Sliver
-Frozen Æther
+Frozen AEther
 Fungal Behemoth
 Fury Charm
 Gaea's Anthem
@@ -62,7 +62,7 @@ Hedge Troll
 Heroes Remembered
 Hunting Wilds
 Imp's Mischief
-"Intet, the Dreamer"
+Intet, the Dreamer
 Jedit Ojanen of Efrava
 Jodah's Avenger
 Kavu Predator
@@ -91,8 +91,8 @@ Mycologist
 Necrotic Sliver
 Needlepeak Spider
 Null Profusion
-"Numot, the Devastator"
-"Oros, the Avenger"
+Numot, the Devastator
+Oros, the Avenger
 Ovinize
 Pallid Mycoderm
 Phantasmagorian
@@ -105,7 +105,7 @@ Primal Plasma
 Prodigal Pyromancer
 Psychotrope Thallid
 Pyrohemia
-"Radha, Heir to Keld"
+Radha, Heir to Keld
 Rathi Trapper
 Reality Acid
 Rebuff the Wicked
@@ -142,7 +142,7 @@ Sulfur Elemental
 Sunlance
 Synchronous Sliver
 Temporal Extortion
-"Teneb, the Harvester"
+Teneb, the Harvester
 Tidewalker
 Timbermare
 Timebender
@@ -150,7 +150,7 @@ Timecrafting
 Torchling
 Treacherous Urge
 Uktabi Drake
-"Urborg, Tomb of Yawgmoth"
+Urborg, Tomb of Yawgmoth
 Utopia Vow
 Vampiric Link
 Veiling Oddity
@@ -158,7 +158,7 @@ Venarian Glimmer
 Vitaspore Thallid
 Voidstone Gargoyle
 Volcano Hellion
-"Vorosh, the Hunter"
+Vorosh, the Hunter
 Waning Wurm
 Whitemane Lion
 Wild Pair

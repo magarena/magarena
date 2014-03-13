@@ -53,12 +53,12 @@ Gruul Turf
 Guard Gomazoa
 Hellion Eruption
 Hellkite Hatchling
-"Higure, the Still Wind"
+Higure, the Still Wind
 Hissing Iguanar
 Hyena Umbra
 Illusory Angel
 Indrik Umbra
-"Ink-Eyes, Servant of Oni"
+Ink-Eyes, Servant of Oni
 Inkfathom Witch
 Island
 Jwar Isle Refuge
@@ -108,7 +108,7 @@ Shimmering Grotto
 Sigil of the Empty Throne
 Silent-Blade Oni
 Silhana Ledgewalker
-"Skarrg, the Rage Pits"
+Skarrg, the Rage Pits
 Skullsnatcher
 Snake Umbra
 Spirit Mantle
@@ -126,7 +126,7 @@ Tormented Soul
 Tukatongue Thallid
 Vela the Night-Clad
 Viridian Emissary
-"Vitu-Ghazi, the City-Tree"
+Vitu-Ghazi, the City-Tree
 Vivid Creek
 Walker of Secret Ways
 Wall of Blossoms

@@ -1,7 +1,7 @@
 Acidic Slime
 Act of Authority
 Aerie Mystics
-Æthermage's Touch
+AEthermage's Touch
 Ajani's Pridemate
 Akoum Refuge
 Angel of Finality
@@ -15,7 +15,7 @@ Army of the Damned
 Augur of Bolas
 Augury Adept
 Avenger of Zendikar
-"Azami, Lady of Scrolls"
+Azami, Lady of Scrolls
 Azorius Chancery
 Azorius Guildgate
 Azorius Herald
@@ -34,7 +34,7 @@ Bojuka Bog
 Boros Charm
 Boros Garrison
 Boros Guildgate
-"Borrowing 100,000 Arrows"
+Borrowing 100,000 Arrows
 Brilliant Plan
 Brooding Saurian
 Capricious Efreet
@@ -66,7 +66,7 @@ Deceiver Exarch
 Decree of Pain
 Deep Analysis
 Deepfire Elemental
-"Derevi, Empyrial Tactician"
+Derevi, Empyrial Tactician
 Dimir Guildgate
 Dirge of Dread
 Disciple of Griselbrand
@@ -82,7 +82,7 @@ Dungeon Geists
 Echo Mage
 Elvish Skysweeper
 Endless Cockroaches
-"Endrek Sahr, Master Breeder"
+Endrek Sahr, Master Breeder
 Esper Panorama
 Eternal Dragon
 Evolving Wilds
@@ -106,7 +106,7 @@ Forgotten Cave
 Foster
 From the Ashes
 Furnace Celebration
-"Gahiji, Honored One"
+Gahiji, Honored One
 Goblin Bombardment
 Goblin Sharpshooter
 Golgari Guildgate
@@ -124,7 +124,7 @@ Hada Spy Patrol
 Harmonize
 Homeward Path
 Hooded Horror
-"Hua Tuo, Honored Physician"
+Hua Tuo, Honored Physician
 Hull Breach
 Hunted Troll
 Illusionist's Gambit
@@ -137,7 +137,7 @@ Izzet Guildgate
 Jace's Archivist
 Jade Mage
 Jar of Eyeballs
-"Jeleva, Nephalia's Scourge"
+Jeleva, Nephalia's Scourge
 Jund Charm
 Jund Panorama
 Jungle Shrine
@@ -148,7 +148,7 @@ Kazandu Tuskcaller
 Khalni Garden
 Kher Keep
 Kirtar's Wrath
-"Kongming, ""Sleeping Dragon"""
+Kongming, "Sleeping Dragon"
 Krosan Grip
 Krosan Tusker
 Krosan Warchief
@@ -157,9 +157,9 @@ Leonin Bladetrap
 Lim-Dûl's Vault
 Llanowar Reborn
 Lonely Sandbar
-"Lu Xun, Scholar General"
+Lu Xun, Scholar General
 Magus of the Arena
-"Marath, Will of the Wild"
+Marath, Will of the Wild
 Marrow Bats
 Mass Mutiny
 Mayael the Anima
@@ -178,7 +178,7 @@ Mystic Barrier
 Naya Charm
 Naya Panorama
 Naya Soulbeast
-"Nekusar, the Mindrazer"
+Nekusar, the Mindrazer
 Nevinyrral's Disk
 New Benalia
 Night Soil
@@ -188,7 +188,7 @@ Nivix Guildmage
 Obelisk of Esper
 Obelisk of Grixis
 Obelisk of Jund
-"Oloro, Ageless Ascetic"
+Oloro, Ageless Ascetic
 One Dozen Eyes
 Opal Palace
 Ophiomancer
@@ -210,7 +210,7 @@ Primal Vigor
 Pristine Talisman
 Propaganda
 Prosperity
-"Prossh, Skyraider of Kher"
+Prossh, Skyraider of Kher
 Quagmire Druid
 Rain of Thorns
 Rakdos Carnarium
@@ -237,7 +237,7 @@ Seaside Citadel
 Secluded Steppe
 Seer's Sundial
 Sejiri Refuge
-"Sek'Kuar, Deathkeeper"
+Sek'Kuar, Deathkeeper
 Selesnya Charm
 Selesnya Guildgate
 Selesnya Guildmage
@@ -285,7 +285,7 @@ Survival Cache
 Swamp
 Swiftfoot Boots
 Sword of the Paruns
-"Sydri, Galvanic Genius"
+Sydri, Galvanic Genius
 Temple Bell
 Temple of the False God
 Tempt with Discovery
@@ -311,14 +311,14 @@ Transguild Promenade
 True-Name Nemesis
 Unexpectedly Absent
 Urza's Factory
-"Uyo, Silent Prophet"
+Uyo, Silent Prophet
 Valley Rannet
 Vampire Nighthawk
 Vile Requiem
 Viscera Seer
 Viseling
 Vision Skeins
-"Vitu-Ghazi, the City-Tree"
+Vitu-Ghazi, the City-Tree
 Vivid Crag
 Vivid Creek
 Vivid Grove

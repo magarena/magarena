@@ -1,5 +1,5 @@
-Æther Snap
-Æther Vial
+AEther Snap
+AEther Vial
 Ageless Entity
 Angel's Feather
 Arcane Spyglass
@@ -122,7 +122,7 @@ Shield of Kaldra
 Shriveling Rot
 Shunt
 Skullclamp
-"Slobad, Goblin Tinkerer"
+Slobad, Goblin Tinkerer
 Soulscour
 Spawning Pit
 Specter's Shroud

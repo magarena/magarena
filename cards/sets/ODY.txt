@@ -1,9 +1,9 @@
 Abandoned Outpost
-"Aboshan, Cephalid Emperor"
+Aboshan, Cephalid Emperor
 Aboshan's Desire
 Acceptable Losses
 Aegis of Honor
-Æther Burst
+AEther Burst
 Afflict
 Amugaba
 Anarchist
@@ -38,7 +38,7 @@ Blessed Orator
 Bloodcurdler
 Bog Wreckage
 Bomb Squad
-"Braids, Cabal Minion"
+Braids, Cabal Minion
 Buried Alive
 Burning Sands
 Cabal Inquisitor
@@ -145,7 +145,7 @@ Iridescent Angel
 Island
 Ivy Elemental
 Junk Golem
-"Kamahl, Pit Fighter"
+Kamahl, Pit Fighter
 Kamahl's Desire
 Karmic Justice
 Kirtar's Desire
@@ -219,7 +219,7 @@ Persuasion
 Petrified Field
 Phantatog
 Phantom Whelp
-"Pianna, Nomad Captain"
+Pianna, Nomad Captain
 Pilgrim of Justice
 Pilgrim of Virtue
 Piper's Melody
@@ -256,7 +256,7 @@ Scrivener
 Seafloor Debris
 Second Thoughts
 Seize the Day
-"Seton, Krosan Protector"
+Seton, Krosan Protector
 Seton's Desire
 Shadowblood Egg
 Shadowblood Ridge

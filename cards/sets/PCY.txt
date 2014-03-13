@@ -1,6 +1,6 @@
 Abolish
 Agent of Shauku
-"Alexi, Zephyr Mage"
+Alexi, Zephyr Mage
 Alexi's Cloak
 Aura Fracture
 Avatar of Fury
@@ -44,7 +44,7 @@ Foil
 Forgotten Harvest
 Glittering Lion
 Glittering Lynx
-"Greel, Mind Raker"
+Greel, Mind Raker
 Greel's Caress
 Gulf Squid
 Hazy Homunculus
@@ -53,13 +53,13 @@ Hollow Warrior
 Infernal Genesis
 Inflame
 Jeweled Spirit
-"Jolrael, Empress of Beasts"
+Jolrael, Empress of Beasts
 Jolrael's Favor
 Keldon Arsonist
 Keldon Battlewagon
 Keldon Berserker
 Keldon Firebombers
-"Latulla, Keldon Overseer"
+Latulla, Keldon Overseer
 Latulla's Orders
 Lesser Gargadon
 Living Terrain

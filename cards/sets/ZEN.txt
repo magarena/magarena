@@ -1,5 +1,5 @@
 Adventuring Gear
-Æther Figment
+AEther Figment
 Akoum Refuge
 Archive Trap
 Archmage Ascension
@@ -43,7 +43,7 @@ Eldrazi Monument
 Electropotence
 Elemental Appeal
 Emeria Angel
-"Emeria, the Sky Ruin"
+Emeria, the Sky Ruin
 Eternity Vessel
 Expedition Map
 Explorer's Scope
@@ -81,7 +81,7 @@ Hideous End
 Highland Berserker
 Inferno Trap
 Into the Roil
-"Iona, Shield of Emeria"
+Iona, Shield of Emeria
 Ior Ruin Expedition
 Island
 Joraga Bard
@@ -89,7 +89,7 @@ Journey to Nowhere
 Jwar Isle Refuge
 Kabira Crossroads
 Kabira Evangel
-"Kalitas, Bloodchief of Ghet"
+Kalitas, Bloodchief of Ghet
 Kazandu Blademaster
 Kazandu Refuge
 Kazuul Warlord
@@ -107,12 +107,12 @@ Landbind Ritual
 Lavaball Trap
 Lethargy Trap
 Living Tsunami
-"Lorthos, the Tidemaker"
+Lorthos, the Tidemaker
 Lotus Cobra
 Lullmage Mentor
 Luminarch Ascension
 Magma Rift
-"Magosi, the Waterveil"
+Magosi, the Waterveil
 Makindi Shieldmate
 Malakir Bloodwitch
 Mark of Mutiny
@@ -136,13 +136,13 @@ Nimbus Wings
 Nissa Revane
 Nissa's Chosen
 Noble Vestige
-"Ob Nixilis, the Fallen"
+Ob Nixilis, the Fallen
 Obsidian Fireheart
 Ondu Cleric
 Oracle of Mul Daya
 Oran-Rief Recluse
 Oran-Rief Survivalist
-"Oran-Rief, the Vastwood"
+Oran-Rief, the Vastwood
 Paralyzing Grasp
 Pillarfield Ox
 Piranha Marsh
@@ -216,7 +216,7 @@ Turntimber Grove
 Turntimber Ranger
 Umara Raptor
 Unstable Footing
-"Valakut, the Molten Pinnacle"
+Valakut, the Molten Pinnacle
 Vampire Hexmage
 Vampire Lacerator
 Vampire Nighthawk

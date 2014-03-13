@@ -1,10 +1,10 @@
-Æthermage's Touch
+AEthermage's Touch
 Anthem of Rakdos
 Aquastrand Spider
 Assault Zeppelid
 Aurora Eidolon
 Avatar of Discord
-Azorius Æthermage
+Azorius AEthermage
 Azorius Chancery
 Azorius First-Wing
 Azorius Guildmage
@@ -77,19 +77,19 @@ Kill-Suit Cultist
 Kindle the Carnage
 Leafdrake Roost
 Loaming Shaman
-"Lyzolda, the Blood Witch"
+Lyzolda, the Blood Witch
 Macabre Waltz
 Magewright's Stone
 Might of the Nephilim
 Minister of Impediments
 Mistral Charger
-"Momir Vig, Simic Visionary"
+Momir Vig, Simic Visionary
 Muse Vessel
 Nettling Curse
 Nightcreep
 Nihilistic Glee
 Novijen Sages
-"Novijen, Heart of Progress"
+Novijen, Heart of Progress
 Ocular Halo
 Ogre Gatecrasher
 Omnibian
@@ -102,7 +102,7 @@ Pillar of the Paruns
 Plaxcaster Frogling
 Plaxmanta
 Plumes of Peace
-"Prahv, Spires of Order"
+Prahv, Spires of Order
 Pride of the Clouds
 Proclamation of Rebirth
 Proper Burial
@@ -122,7 +122,7 @@ Rakdos Signet
 Rakdos the Defiler
 Ratcatcher
 Riot Spikes
-"Rix Maadi, Dungeon Palace"
+Rix Maadi, Dungeon Palace
 Sandstorm Eidolon
 Seal of Doom
 Seal of Fire

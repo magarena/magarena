@@ -16,7 +16,7 @@ Astral Cornucopia
 Bile Blight
 Black Oak of Odunos
 Bolt of Keranos
-"Brimaz, King of Oreskos"
+Brimaz, King of Oreskos
 Champion of Stray Souls
 Charging Badger
 Chorus of the Tides
@@ -33,7 +33,7 @@ Drown in Sorrow
 Eater of Hope
 Eidolon of Countless Battles
 Elite Skirmisher
-"Ephara, God of the Polis"
+Ephara, God of the Polis
 Ephara's Enlightenment
 Ephara's Radiance
 Epiphany Storm
@@ -75,9 +75,9 @@ Heroes' Podium
 Hold at Bay
 Hunter's Prowess
 Impetuous Sunchaser
-"Karametra, God of Harvests"
+Karametra, God of Harvests
 Karametra's Favor
-"Kiora, the Crashing Wave"
+Kiora, the Crashing Wave
 Kiora's Follower
 Kragma Butcher
 Kraken of the Straits
@@ -87,7 +87,7 @@ Marshmist Titan
 Meletis Astronomer
 Mindreaver
 Mischief and Mayhem
-"Mogis, God of Slaughter"
+Mogis, God of Slaughter
 Mortal's Ardor
 Mortal's Resolve
 Necrobite
@@ -109,7 +109,7 @@ Pain Seer
 Peregrination
 Perplexing Chimera
 Pharagax Giant
-"Phenax, God of Deception"
+Phenax, God of Deception
 Pheres-Band Raiders
 Pheres-Band Tromper
 Pillar of War
@@ -155,11 +155,11 @@ Thassa's Rebuff
 Thunder Brute
 Thunderous Might
 Tromokratis
-Unravel the Æther
+Unravel the AEther
 Vanguard of Brimaz
 Vortex Elemental
 Warchanter of Mogis
 Weight of the Underworld
 Whelming Wave
 Whims of the Fates
-"Xenagos, God of Revels"
+Xenagos, God of Revels

@@ -1,5 +1,5 @@
 Acidic Slime
-"Ajani, Caller of the Pride"
+Ajani, Caller of the Pride
 Ajani's Sunstriker
 Akroma's Memorial
 Angelic Benediction
@@ -25,7 +25,7 @@ Captain of the Watch
 Captain's Call
 Cathedral of War
 Centaur Courser
-"Chandra, the Firebrand"
+Chandra, the Firebrand
 Chandra's Fury
 Chronomaton
 Cleaver Riot
@@ -76,7 +76,7 @@ Fog Bank
 Forest
 Fungal Sprouting
 Furnace Whelp
-"Garruk, Primal Hunter"
+Garruk, Primal Hunter
 Garruk's Packleader
 Gem of Becoming
 Giant Scorpion
@@ -98,7 +98,7 @@ Hydrosurge
 Index
 Intrepid Hero
 Island
-"Jace, Memory Adept"
+Jace, Memory Adept
 Jace's Phantasm
 Jayemdae Tome
 Kindled Fury
@@ -106,7 +106,7 @@ Kitesail
 Knight of Glory
 Knight of Infamy
 Kraken Hatchling
-"Krenko, Mob Boss"
+Krenko, Mob Boss
 Krenko's Command
 Liliana of the Dark Realms
 Liliana's Shade
@@ -124,11 +124,11 @@ Murder
 Mutilate
 Mwonvuli Beast Tracker
 Naturalize
-"Nefarox, Overlord of Grixis"
+Nefarox, Overlord of Grixis
 Negate
-"Nicol Bolas, Planeswalker"
+Nicol Bolas, Planeswalker
 Oblivion Ring
-"Odric, Master Tactician"
+Odric, Master Tactician
 Omniscience
 Pacifism
 Phylactery Lich
@@ -193,7 +193,7 @@ Sublime Archangel
 Sunpetal Grove
 Swamp
 Switcheroo
-"Talrand, Sky Summoner"
+Talrand, Sky Summoner
 Talrand's Invocation
 Thragtusk
 Thundermaw Hellkite
@@ -229,6 +229,6 @@ Wind Drake
 Wit's End
 Worldfire
 Xathrid Gorgon
-"Yeva, Nature's Herald"
+Yeva, Nature's Herald
 Yeva's Forcemage
 Zombie Goliath

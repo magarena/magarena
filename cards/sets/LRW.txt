@@ -1,5 +1,5 @@
 Adder-Staff Boggart
-Æthersnipe
+AEthersnipe
 Ajani Goldmane
 Amoeboid Changeling
 Ancient Amphitheater
@@ -27,7 +27,7 @@ Boggart Shenanigans
 Boggart Sprite-Chaser
 Bog-Strider Ash
 Briarhorn
-"Brigid, Hero of Kinsbaile"
+Brigid, Hero of Kinsbaile
 Brion Stoutarm
 Broken Ambitions
 Burrenton Forge-Tender
@@ -54,7 +54,7 @@ Dawnfluke
 Deathrender
 Deeptread Merrow
 Dolmen Gate
-"Doran, the Siege Tower"
+Doran, the Siege Tower
 Dread
 Dreamspoiler Witches
 Drowner of Secrets
@@ -240,7 +240,7 @@ Sunrise Sovereign
 Surge of Thoughtweft
 Surgespanner
 Swamp
-"Sygg, River Guide"
+Sygg, River Guide
 Sylvan Echoes
 Tar Pitcher
 Tarfire
@@ -279,8 +279,8 @@ Wispmare
 Wizened Cenn
 Woodland Changeling
 Woodland Guidance
-"Wort, Boggart Auntie"
+Wort, Boggart Auntie
 Wren's Run Packmaster
 Wren's Run Vanquisher
-"Wydwen, the Biting Gale"
+Wydwen, the Biting Gale
 Zephyr Net

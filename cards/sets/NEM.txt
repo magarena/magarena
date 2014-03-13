@@ -1,5 +1,5 @@
 Accumulated Knowledge
-Æther Barrier
+AEther Barrier
 Air Bladder
 Ancient Hydra
 Angelic Favor
@@ -55,7 +55,7 @@ Laccolith Whelp
 Lashknife
 Lawbringer
 Lightbringer
-"Lin Sivvi, Defiant Hero"
+Lin Sivvi, Defiant Hero
 Mana Cache
 Massacre
 Mind Slash
@@ -83,7 +83,7 @@ Parallax Wave
 Phyrexian Driver
 Phyrexian Prowler
 Plague Witch
-"Predator, Flagship"
+Predator, Flagship
 Rackling
 Rathi Assassin
 Rathi Fiend

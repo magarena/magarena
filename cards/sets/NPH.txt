@@ -2,7 +2,7 @@ Act of Aggression
 Alloy Myr
 Apostle's Blessing
 Argent Mutation
-Arm with Æther
+Arm with AEther
 Artillerize
 Auriok Survivors
 Batterskull
@@ -35,7 +35,7 @@ Despise
 Dismember
 Dispatch
 Due Respect
-"Elesh Norn, Grand Cenobite"
+Elesh Norn, Grand Cenobite
 Enslave
 Entomber Exarch
 Etched Monstrosity
@@ -67,8 +67,8 @@ Insatiable Souleater
 Invader Parasite
 Island
 Isolation Cell
-"Jin-Gitaxias, Core Augur"
-"Jor Kadeen, the Prevailer"
+Jin-Gitaxias, Core Augur
+Jor Kadeen, the Prevailer
 Karn Liberated
 Kiln Walker
 Lashwrithe
@@ -79,7 +79,7 @@ Loxodon Convert
 Marrow Shards
 Master Splicer
 Maul Splicer
-"Melira, Sylvok Outcast"
+Melira, Sylvok Outcast
 Mental Misstep
 Mindcrank
 Mindculling
@@ -124,7 +124,7 @@ Ruthless Invasion
 Scrapyard Salvo
 Sensor Splicer
 Shattered Angel
-"Sheoldred, Whispering One"
+Sheoldred, Whispering One
 Shriek Raptor
 Shrine of Boundless Growth
 Shrine of Burning Rage
@@ -161,7 +161,7 @@ Viridian Betrayers
 Viridian Harvest
 Vital Splicer
 Volt Charge
-"Vorinclex, Voice of Hunger"
+Vorinclex, Voice of Hunger
 Vulshok Refugee
 War Report
 Whipflare

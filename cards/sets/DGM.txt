@@ -1,5 +1,5 @@
 Advent of the Wurm
-Ætherling
+AEtherling
 Alive // Well
 Armed // Dangerous
 Armored Wolf-Rider
@@ -39,7 +39,7 @@ Down // Dirty
 Dragonshift
 Drown in Filth
 Emmara Tandris
-"Exava, Rakdos Blood Witch"
+Exava, Rakdos Blood Witch
 Fatal Fumes
 Feral Animist
 Fluxcharger
@@ -74,10 +74,10 @@ Maze Glider
 Maze Rusher
 Maze Sentinel
 Maze's End
-"Melek, Izzet Paragon"
+Melek, Izzet Paragon
 Mending Touch
 Mindstatic
-"Mirko Vosk, Mind Drinker"
+Mirko Vosk, Mind Drinker
 Morgue Burst
 Murmuring Phantasm
 Mutant's Prey
@@ -112,7 +112,7 @@ Riot Piker
 Rot Farm Skeleton
 Rubblebelt Maaka
 Runner's Bane
-"Ruric Thar, the Unbowed"
+Ruric Thar, the Unbowed
 Saruli Gatekeepers
 Savageborn Hydra
 Scab-Clan Giant
@@ -131,9 +131,9 @@ Species Gorger
 Spike Jester
 Steeple Roc
 Sunspire Gatekeepers
-"Tajic, Blade of the Legion"
+Tajic, Blade of the Legion
 Wear // Tear
-"Teysa, Envoy of Ghosts"
+Teysa, Envoy of Ghosts
 Thrashing Mossdog
 Tithe Drinker
 Toil // Trouble
@@ -142,7 +142,7 @@ Trostani's Summoner
 Ubul Sar Gatekeepers
 Uncovered Clues
 Unflinching Courage
-"Varolz, the Scar-Striped"
+Varolz, the Scar-Striped
 Viashino Firstblade
 Voice of Resurgence
 Vorel of the Hull Clade

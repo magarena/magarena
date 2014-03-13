@@ -55,7 +55,7 @@ Dreg Reaver
 Dregscape Zombie
 Druid of the Anima
 Drumhunter
-"Elspeth, Knight-Errant"
+Elspeth, Knight-Errant
 Elvish Visionary
 Empyrial Archangel
 Esper Battlemage
@@ -178,7 +178,7 @@ Scourge Devil
 Scourglass
 Seaside Citadel
 Sedraxis Specter
-"Sedris, the Traitor King"
+Sedris, the Traitor King
 Shadowfeed
 Sharding Sphinx
 Sharuum the Hegemon

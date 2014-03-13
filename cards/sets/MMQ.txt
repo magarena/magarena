@@ -49,7 +49,7 @@ Charmed Griffin
 Cho-Arrim Alchemist
 Cho-Arrim Bruiser
 Cho-Arrim Legate
-"Cho-Manno, Revolutionary"
+Cho-Manno, Revolutionary
 Cho-Manno's Blessing
 Cinder Elemental
 Clear the Land
@@ -278,7 +278,7 @@ Spiritual Focus
 Spontaneous Generation
 Squall
 Squallmonger
-"Squee, Goblin Nabob"
+Squee, Goblin Nabob
 Squeeze
 Stamina
 Statecraft

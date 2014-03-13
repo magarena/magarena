@@ -4,14 +4,14 @@ Balance of Power
 Barbarian General
 Barbarian Horde
 Blaze
-"Borrowing 100,000 Arrows"
+Borrowing 100,000 Arrows
 Borrowing the East Wind
 Brilliant Plan
 Broken Dam
 Burning Fields
 Burning of Xinye
-"Cao Cao, Lord of Wei"
-"Cao Ren, Wei Commander"
+Cao Cao, Lord of Wei
+Cao Ren, Wei Commander
 Capture of Jingzhou
 Champion's Victory
 Coercion
@@ -24,8 +24,8 @@ Cunning Advisor
 Deception
 Desert Sandstorm
 Desperate Charge
-"Diaochan, Artful Beauty"
-"Dong Zhou, the Tyrant"
+Diaochan, Artful Beauty
+Dong Zhou, the Tyrant
 Eightfold Maze
 Empty City Ruse
 Eunuchs' Intrigues
@@ -41,38 +41,38 @@ Forced Retreat
 Forest
 Forest Bear
 Ghostly Visit
-"Guan Yu, Sainted Warrior"
-"Guan Yu's 1,000-Li March"
+Guan Yu, Sainted Warrior
+Guan Yu's 1,000-Li March
 Heavy Fog
-"Hua Tuo, Honored Physician"
-"Huang Zhong, Shu General"
+Hua Tuo, Honored Physician
+Huang Zhong, Shu General
 Hunting Cheetah
 Imperial Edict
 Imperial Recruiter
 Imperial Seal
 Independent Troops
 Island
-"Kongming, ""Sleeping Dragon"""
+Kongming, "Sleeping Dragon"
 Kongming's Contraptions
 Lady Sun
-"Lady Zhurong, Warrior Queen"
-"Liu Bei, Lord of Shu"
+Lady Zhurong, Warrior Queen
+Liu Bei, Lord of Shu
 Lone Wolf
 Loyal Retainers
-"Lu Bu, Master-at-Arms"
-"Lu Meng, Wu General"
-"Lu Su, Wu Advisor"
-"Lu Xun, Scholar General"
-"Ma Chao, Western Warrior"
+Lu Bu, Master-at-Arms
+Lu Meng, Wu General
+Lu Su, Wu Advisor
+Lu Xun, Scholar General
+Ma Chao, Western Warrior
 Marshaling the Troops
-"Meng Huo, Barbarian King"
+Meng Huo, Barbarian King
 Meng Huo's Horde
 Misfortune's Gain
 Mountain
 Mountain Bandit
 Mystic Denial
 Overwhelming Forces
-"Pang Tong, ""Young Phoenix"""
+Pang Tong, "Young Phoenix"
 Peach Garden Oath
 Plains
 Poison Arrow
@@ -98,7 +98,7 @@ Shu Foot Soldiers
 Shu General
 Shu Grain Caravan
 Shu Soldier-Farmers
-"Sima Yi, Wei Field Marshal"
+Sima Yi, Wei Field Marshal
 Slashing Tiger
 Southern Elephant
 Spoils of Victory
@@ -109,8 +109,8 @@ Stone Catapult
 Stone Rain
 Strategic Planning
 Straw Soldiers
-"Sun Ce, Young Conquerer"
-"Sun Quan, Lord of Wu"
+Sun Ce, Young Conquerer
+Sun Quan, Lord of Wu
 Swamp
 Taoist Hermit
 Taoist Mystic
@@ -141,20 +141,20 @@ Wu Longbowman
 Wu Scout
 Wu Spy
 Wu Warship
-"Xiahou Dun, the One-Eyed"
-"Xun Yu, Wei Advisor"
+Xiahou Dun, the One-Eyed
+Xun Yu, Wei Advisor
 Yellow Scarves Cavalry
 Yellow Scarves General
 Yellow Scarves Troops
 Young Wei Recruits
-"Yuan Shao, the Indecisive"
+Yuan Shao, the Indecisive
 Yuan Shao's Infantry
-"Zhang Fei, Fierce Warrior"
-"Zhang He, Wei General"
-"Zhang Liao, Hero of Hefei"
-"Zhao Zilong, Tiger General"
-"Zhou Yu, Chief Commander"
-"Zhuge Jin, Wu Strategist"
+Zhang Fei, Fierce Warrior
+Zhang He, Wei General
+Zhang Liao, Hero of Hefei
+Zhao Zilong, Tiger General
+Zhou Yu, Chief Commander
+Zhuge Jin, Wu Strategist
 Zodiac Dog
 Zodiac Dragon
 Zodiac Goat
@@ -167,4 +167,4 @@ Zodiac Rat
 Zodiac Rooster
 Zodiac Snake
 Zodiac Tiger
-"Zuo Ci, the Mocking Sage"
+Zuo Ci, the Mocking Sage

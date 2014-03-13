@@ -1,6 +1,6 @@
 Abbey Gargoyles
 Abbey Matron
-Æther Storm
+AEther Storm
 Aliban's Tower
 Ambush
 Ambush Party
@@ -85,7 +85,7 @@ Rashka the Slayer
 Reef Pirates
 Renewal
 Retribution
-"Reveka, Wizard Savant"
+Reveka, Wizard Savant
 Root Spider
 Roots
 Roterothopter

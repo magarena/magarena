@@ -1,4 +1,4 @@
-Æther Spellbomb
+AEther Spellbomb
 Alpha Myr
 Altar of Shadows
 Altar's Light
@@ -21,7 +21,7 @@ Blinkmoth Urn
 Blinkmoth Well
 Bloodscent
 Bonesplitter
-"Bosh, Iron Golem"
+Bosh, Iron Golem
 Bottle Gnomes
 Broodstar
 Brown Ouphe
@@ -75,7 +75,7 @@ Forge Armor
 Fractured Loyalty
 Frogmite
 Galvanic Key
-Gate to the Æther
+Gate to the AEther
 Gilded Lotus
 Glimmervoid
 Glissa Sunseeker

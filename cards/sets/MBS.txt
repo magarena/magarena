@@ -34,7 +34,7 @@ Forest
 Frantic Salvage
 Fuel for the Cause
 Galvanoth
-"Glissa, the Traitor"
+Glissa, the Traitor
 Glissa's Courier
 Gnathosaur
 Go for the Throat
@@ -130,9 +130,9 @@ Swamp
 Sword of Feast and Famine
 Tangle Hulk
 Tangle Mantis
-"Tezzeret, Agent of Bolas"
+Tezzeret, Agent of Bolas
 Thopter Assembly
-"Thrun, the Last Troll"
+Thrun, the Last Troll
 Tine Shrike
 Titan Forge
 Training Drone

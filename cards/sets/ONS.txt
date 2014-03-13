@@ -1,5 +1,5 @@
 Accursed Centaur
-Æther Charge
+AEther Charge
 Aggravated Assault
 Airborne Aid
 Airdrop Condor
@@ -168,11 +168,11 @@ Insurrection
 Invigorating Boon
 Ironfist Crusher
 Island
-"Ixidor, Reality Sculptor"
+Ixidor, Reality Sculptor
 Ixidor's Will
-"Jareth, Leonine Titan"
+Jareth, Leonine Titan
 Kaboom!
-"Kamahl, Fist of Krosa"
+Kamahl, Fist of Krosa
 Kamahl's Summons
 Krosan Colossus
 Krosan Groundshaker
@@ -254,7 +254,7 @@ Shock
 Sigil of the New Dawn
 Silent Specter
 Silklash Spider
-"Silvos, Rogue Elemental"
+Silvos, Rogue Elemental
 Skirk Commando
 Skirk Fire Marshal
 Skirk Prospector

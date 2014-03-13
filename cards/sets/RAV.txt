@@ -1,4 +1,4 @@
-"Agrus Kos, Wojek Veteran"
+Agrus Kos, Wojek Veteran
 Auratouched Mage
 Autochthon Wurm
 Barbarian Riftcutter
@@ -31,7 +31,7 @@ Chant of Vitu-Ghazi
 Char
 Chord of Calling
 Chorus of the Conclave
-"Circu, Dimir Lobotomist"
+Circu, Dimir Lobotomist
 Civic Wayfinder
 Cleansing Beam
 Clinging Darkness
@@ -74,7 +74,7 @@ Drift of Phantasms
 Dromad Purebred
 Drooling Groodion
 Dryad's Caress
-"Duskmantle, House of Shadow"
+Duskmantle, House of Shadow
 Elves of Deep Shadow
 Elvish Skysweeper
 Empty the Catacombs
@@ -192,7 +192,7 @@ Putrefy
 Quickchange
 Rain of Embers
 Rally the Righteous
-"Razia, Boros Archangel"
+Razia, Boros Archangel
 Razia's Purification
 Recollect
 Remand
@@ -205,7 +205,7 @@ Sabertooth Alley Cat
 Sacred Foundry
 Sadistic Augermage
 Sandsower
-"Savra, Queen of the Golgari"
+Savra, Queen of the Golgari
 Scatter the Seeds
 Scion of the Wild
 Screeching Griffin
@@ -240,13 +240,13 @@ Strands of Undeath
 Sundering Vitae
 Sunforger
 Sunhome Enforcer
-"Sunhome, Fortress of the Legion"
+Sunhome, Fortress of the Legion
 Suppression Field
 Surge of Zeal
 Surveilling Sprite
-"Svogthos, the Restless Tomb"
+Svogthos, the Restless Tomb
 Swamp
-"Szadek, Lord of Secrets"
+Szadek, Lord of Secrets
 Tattered Drake
 Telling Time
 Temple Garden
@@ -273,7 +273,7 @@ Viashino Slasher
 Vigor Mortis
 Vindictive Mob
 Vinelasher Kudzu
-"Vitu-Ghazi, the City-Tree"
+Vitu-Ghazi, the City-Tree
 Votary of the Conclave
 Voyager Staff
 Vulturous Zombie

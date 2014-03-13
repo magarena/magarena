@@ -13,7 +13,7 @@ Budoka Pupil
 Call for Blood
 Callow Jushi
 Child of Thorns
-"Chisei, Heart of Oceans"
+Chisei, Heart of Oceans
 Clash of Realities
 Crack the Earth
 Crawling Filth
@@ -40,40 +40,40 @@ Genju of the Realm
 Genju of the Spires
 Gnarled Mass
 Goblin Cohort
-"Gods' Eye, Gate to the Reikai"
+Gods' Eye, Gate to the Reikai
 Goryo's Vengeance
 Harbinger of Spring
 Heart of Light
 Heartless Hidetsugu
 Heed the Mists
 Hero's Demise
-"Higure, the Still Wind"
+Higure, the Still Wind
 Hired Muscle
-"Hokori, Dust Drinker"
+Hokori, Dust Drinker
 Horobi's Whisper
 Hundred-Talon Strike
 In the Web of War
 Indebted Samurai
-"Ink-Eyes, Servant of Oni"
+Ink-Eyes, Servant of Oni
 Ire of Kaminari
-"Isao, Enlightened Bushi"
-"Ishi-Ishi, Akki Crackshot"
+Isao, Enlightened Bushi
+Ishi-Ishi, Akki Crackshot
 Iwamori of the Open Fist
 Jetting Glasskite
 Kaijin of the Vanishing Touch
 Kami of False Hope
 Kami of Tattered Shoji
 Kami of the Honored Dead
-"Kentaro, the Smiling Cat"
-"Kira, Great Glass-Spinner"
+Kentaro, the Smiling Cat
+Kira, Great Glass-Spinner
 Kitsune Palliator
 Kodama of the Center Tree
 Kumano's Blessing
-"Kyoki, Sanity's Eclipse"
+Kyoki, Sanity's Eclipse
 Lifegift
 Lifespinner
 Loam Dweller
-"Mannichi, the Fevered Dream"
+Mannichi, the Fevered Dream
 Mark of Sakiko
 Mark of the Oni
 Matsu-Tribe Sniper
@@ -90,11 +90,11 @@ Nourishing Shoal
 Ogre Marauder
 Ogre Recluse
 Okiba-Gang Shinobi
-"Opal-Eye, Konda's Yojimbo"
+Opal-Eye, Konda's Yojimbo
 Orb of Dreams
 Ornate Kanzashi
 Overblaze
-"Oyobi, Who Split the Heavens"
+Oyobi, Who Split the Heavens
 Patron of the Akki
 Patron of the Kitsune
 Patron of the Moon
@@ -111,7 +111,7 @@ Ribbons of the Reikai
 Roar of Jukai
 Ronin Cliffrider
 Ronin Warclub
-"Sakiko, Mother of Summer"
+Sakiko, Mother of Summer
 Sakura-Tribe Springcaller
 Scaled Hulk
 Scour
@@ -119,8 +119,8 @@ Scourge of Numai
 Shimmering Glasskite
 Shining Shoal
 Shinka Gatekeeper
-"Shirei, Shizo's Caretaker"
-"Shizuko, Caller of Autumn"
+Shirei, Shizo's Caretaker
+Shizuko, Caller of Autumn
 Shuko
 Shuriken
 Sickening Shoal
@@ -148,7 +148,7 @@ Threads of Disloyalty
 Three Tragedies
 Throat Slitter
 Toils of Night and Day
-"Tomorrow, Azami's Familiar"
+Tomorrow, Azami's Familiar
 Torrent of Stone
 Toshiro Umezawa
 Traproot Kami
@@ -161,5 +161,5 @@ Vital Surge
 Walker of Secret Ways
 Ward of Piety
 Waxmane Baku
-"Yomiji, Who Bars the Way"
-"Yukora, the Prisoner"
+Yomiji, Who Bars the Way
+Yukora, the Prisoner

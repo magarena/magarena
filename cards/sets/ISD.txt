@@ -86,7 +86,7 @@ Furor of the Bitten
 Gallows Warden
 Galvanic Juggernaut
 Garruk Relentless
-"Garruk, the Veil-Cursed"
+Garruk, the Veil-Cursed
 Gatstaf Howler
 Gatstaf Shepherd
 Gavony Township
@@ -103,7 +103,7 @@ Gnaw to the Bone
 Grasp of Phantoms
 Grave Bramble
 Graveyard Shovel
-"Grimgrin, Corpse-Born"
+Grimgrin, Corpse-Born
 Grimoire of the Dead
 Grizzled Outcasts
 Gruesome Deformity
@@ -156,7 +156,7 @@ Memory's Journey
 Mentor of the Meek
 Merciless Predator
 Midnight Haunting
-"Mikaeus, the Lunarch"
+Mikaeus, the Lunarch
 Mindshrieker
 Mirror-Mad Phantasm
 Moan of the Unhallowed

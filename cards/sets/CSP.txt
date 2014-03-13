@@ -25,7 +25,7 @@ Controvert
 Counterbalance
 Cover of Winter
 Cryoclasm
-"Darien, King of Kjeldor"
+Darien, King of Kjeldor
 Dark Depths
 Deathmark
 Deepfire Elemental
@@ -42,7 +42,7 @@ Frost Raptor
 Frostweb Spider
 Frozen Solid
 Fury of the Horde
-"Garza Zol, Plague Queen"
+Garza Zol, Plague Queen
 Garza's Assassin
 Gelid Shackles
 Glacial Plating
@@ -52,8 +52,8 @@ Greater Stone Spirit
 Grim Harvest
 Gristle Grinner
 Gutless Ghoul
-"Haakon, Stromgald Scourge"
-"Heidar, Rimewind Master"
+Haakon, Stromgald Scourge
+Heidar, Rimewind Master
 Herald of Leshrac
 Hibernation's End
 Highland Weald
@@ -112,7 +112,7 @@ Ronom Serpent
 Ronom Unicorn
 Rune Snag
 Scrying Sheets
-"Sek'Kuar, Deathkeeper"
+Sek'Kuar, Deathkeeper
 Shape of the Wiitigo
 Sheltering Ancient
 Simian Brawler
@@ -130,7 +130,7 @@ Steam Spitter
 Stromgald Crusader
 Sun's Bounty
 Sunscour
-Surging Æther
+Surging AEther
 Surging Dementia
 Surging Flame
 Surging Might

@@ -54,11 +54,11 @@ Identity Crisis
 Igneous Pouncer
 Illusory Demon
 Intimidation Bolt
-"Jenara, Asura of War"
+Jenara, Asura of War
 Jhessian Zombies
 Jund Hackblade
 Jund Sojourners
-"Karrthus, Tyrant of Jund"
+Karrthus, Tyrant of Jund
 Kathari Bomber
 Kathari Remnant
 Knight of New Alara
@@ -128,8 +128,8 @@ Thraximundar
 Time Sieve
 Trace of Abundance
 Unbender Tine
-"Unscythe, Killer of Kings"
-"Uril, the Miststalker"
+Unscythe, Killer of Kings
+Uril, the Miststalker
 Valley Rannet
 Vectis Dominator
 Vedalken Ghoul

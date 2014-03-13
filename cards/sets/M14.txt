@@ -4,7 +4,7 @@ Accursed Spirit
 Act of Treason
 Advocate of the Beast
 Air Servant
-"Ajani, Caller of the Pride"
+Ajani, Caller of the Pride
 Ajani's Chosen
 Altar's Reap
 Angelic Accord
@@ -34,7 +34,7 @@ Cancel
 Canyon Minotaur
 Capashen Knight
 Celestial Flare
-"Chandra, Pyromaster"
+Chandra, Pyromaster
 Chandra's Outrage
 Chandra's Phoenix
 Charging Griffin
@@ -83,7 +83,7 @@ Forest
 Fortify
 Frost Breath
 Galerider Sliver
-"Garruk, Caller of Beasts"
+Garruk, Caller of Beasts
 Garruk's Horde
 Giant Growth
 Giant Spider
@@ -105,7 +105,7 @@ Imposing Sovereign
 Indestructibility
 Into the Wilds
 Island
-"Jace, Memory Adept"
+Jace, Memory Adept
 Jace's Mindseeker
 Kalonian Hydra
 Kalonian Tusker

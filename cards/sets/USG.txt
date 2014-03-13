@@ -19,7 +19,7 @@ Argothian Swine
 Argothian Wurm
 Attunement
 Back to Basics
-"Barrin, Master Wizard"
+Barrin, Master Wizard
 Barrin's Codex
 Bedlam
 Befoul
@@ -149,7 +149,7 @@ Imaginary Pet
 Intrepid Hero
 Island
 Jagged Lightning
-"Karn, Silver Golem"
+Karn, Silver Golem
 Launch
 Lay Waste
 Lifeline
@@ -276,7 +276,7 @@ Sulfuric Vapors
 Sunder
 Swamp
 Symbiosis
-Tainted Æther
+Tainted AEther
 Telepathy
 Temporal Aperture
 Thran Quarry

@@ -1,7 +1,7 @@
 Act of Treason
 Adaptive Snapjaw
 Aerial Maneuver
-Ætherize
+AEtherize
 Agoraphobia
 Alms Beast
 Alpha Authority
@@ -11,7 +11,7 @@ Armored Transport
 Arrows of Justice
 Assault Griffin
 Assemble the Legion
-"Aurelia, the Warleader"
+Aurelia, the Warleader
 Aurelia's Fury
 Balustrade Spy
 Bane Alley Broker
@@ -85,7 +85,7 @@ Furious Resistance
 Gateway Shade
 Ghor-Clan Rampager
 Giant Adephage
-"Gideon, Champion of Justice"
+Gideon, Champion of Justice
 Gift of Orzhova
 Glaring Spotlight
 Godless Shrine
@@ -122,7 +122,7 @@ Kingpin's Pet
 Knight of Obligation
 Knight Watch
 Last Thoughts
-"Lazav, Dimir Mastermind"
+Lazav, Dimir Mastermind
 Legion Loyalist
 Leyline Phantom
 Lord of the Void
@@ -150,7 +150,7 @@ Naturalize
 Nav Squad Commandos
 Nightveil Specter
 Nimbus Swimmer
-"Obzedat, Ghost Council"
+Obzedat, Ghost Council
 Ogre Slumlord
 One Thousand Lashes
 Ooze Flux

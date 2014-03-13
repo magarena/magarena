@@ -78,7 +78,7 @@ Dregs of Sorrow
 Duplicity
 Earthcraft
 Echo Chamber
-"Eladamri, Lord of Leaves"
+Eladamri, Lord of Leaves
 Eladamri's Vineyard
 Elite Javelineer
 Elven Warhounds
@@ -192,7 +192,7 @@ No Quarter
 Nurturing Licid
 Opportunist
 Oracle en-Vec
-"Orim, Samite Healer"
+Orim, Samite Healer
 Orim's Prayer
 Overrun
 Pacifism
@@ -254,7 +254,7 @@ Sea Monster
 Searing Touch
 Seeker of Skybreak
 Segmented Wurm
-"Selenia, Dark Angel"
+Selenia, Dark Angel
 Serene Offering
 Servant of Volrath
 Shadow Rift

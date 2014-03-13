@@ -1,10 +1,10 @@
 Abyssal Persecutor
 Admonition Angel
-Æther Tradewinds
+AEther Tradewinds
 Agadeem Occultist
 Akoum Battlesinger
 Amulet of Vigor
-"Anowon, the Ruin Sage"
+Anowon, the Ruin Sage
 Apex Hawks
 Arbor Elf
 Archon of Redemption
@@ -59,13 +59,13 @@ Harabaz Druid
 Hedron Rover
 Horizon Drake
 Iona's Judgment
-"Jace, the Mind Sculptor"
+Jace, the Mind Sculptor
 Jagwasp Swarm
 Join the Ranks
 Joraga Warcaller
 Jwari Shapeshifter
 Kalastria Highborn
-"Kazuul, Tyrant of the Cliffs"
+Kazuul, Tyrant of the Cliffs
 Khalni Garden
 Kitesail
 Kitesail Apprentice
@@ -83,7 +83,7 @@ Mysteries of the Deep
 Nature's Claim
 Nemesis Trap
 Novablast Wurm
-"Omnath, Locus of Mana"
+Omnath, Locus of Mana
 Perimeter Captain
 Permafrost Trap
 Pilgrim's Eye
@@ -127,7 +127,7 @@ Talus Paladin
 Tectonic Edge
 Terastodon
 Terra Eternal
-"Thada Adel, Acquisitor"
+Thada Adel, Acquisitor
 Tideforce Elemental
 Tomb Hex
 Treasure Hunt
@@ -142,4 +142,4 @@ Voyager Drake
 Walking Atlas
 Wind Zendikon
 Wolfbriar Elemental
-"Wrexial, the Risen Deep"
+Wrexial, the Risen Deep

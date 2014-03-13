@@ -1,12 +1,12 @@
-"Adamaro, First to Desire"
-Æther Shockwave
+Adamaro, First to Desire
+AEther Shockwave
 Akki Drillmaster
 Akki Underling
-"Akuta, Born of Ash"
+Akuta, Born of Ash
 Araba Mothrider
-"Arashi, the Sky Asunder"
+Arashi, the Sky Asunder
 Ashes of the Fallen
-"Ayumi, the Last Visitor"
+Ayumi, the Last Visitor
 Barrel Down Sokenzan
 Blood Clock
 Bounteous Kirin
@@ -35,7 +35,7 @@ Eiganjo Free-Riders
 Elder Pine of Jukai
 Endless Swarm
 Enduring Ideal
-"Erayo, Soratami Ascendant"
+Erayo, Soratami Ascendant
 Eternal Dominion
 Evermind
 Exile into Darkness
@@ -57,45 +57,45 @@ Hand of Cruelty
 Hand of Honor
 Haru-Onna
 Hidetsugu's Second Rite
-"Homura, Human Ascendant"
+Homura, Human Ascendant
 Ideas Unbound
 Iizuka the Ruthless
 Iname as One
 Infernal Kirin
-"Inner Calm, Outer Strength"
+Inner Calm, Outer Strength
 Inner Fire
 Inner-Chamber Guard
 Into the Fray
 Ivory Crane Netsuke
-"Jiwari, the Earth Aflame"
-"Kagemaro, First to Suffer"
+Jiwari, the Earth Aflame
+Kagemaro, First to Suffer
 Kagemaro's Clutch
-"Kaho, Minamo Historian"
+Kaho, Minamo Historian
 Kami of Empty Graves
 Kami of the Crescent Moon
 Kami of the Tended Garden
 Kashi-Tribe Elite
-"Kataki, War's Wage"
+Kataki, War's Wage
 Kemuri-Onna
 Kiku's Shadow
 Kiri-Onna
 Kitsune Bonesetter
 Kitsune Dawnblade
 Kitsune Loreweaver
-"Kiyomaro, First to Stand"
-"Kuon, Ogre Ascendant"
+Kiyomaro, First to Stand
+Kuon, Ogre Ascendant
 Kuro's Taken
 Locust Miser
-"Maga, Traitor to Mortals"
+Maga, Traitor to Mortals
 Manriki-Gusari
-"Masumaro, First to Live"
+Masumaro, First to Live
 Matsu-Tribe Birdstalker
 Measure of Wickedness
-"Meishin, the Mind Cage"
-"Michiko Konda, Truth Seeker"
-"Mikokoro, Center of the Sea"
+Meishin, the Mind Cage
+Michiko Konda, Truth Seeker
+Mikokoro, Center of the Sea
 Minamo Scrollkeeper
-"Miren, the Moaning Well"
+Miren, the Moaning Well
 Molting Skin
 Moonbow Illusionist
 Moonwing Moth
@@ -105,7 +105,7 @@ Nightsoil Kami
 Nikko-Onna
 Oboro Breezecaller
 Oboro Envoy
-"Oboro, Palace in the Clouds"
+Oboro, Palace in the Clouds
 Okina Nightwatch
 O-Naginata
 One with Nothing
@@ -123,20 +123,20 @@ Pure Intentions
 Rally the Horde
 Raving Oni-Slave
 Razorjaw Oni
-"Reki, the History of Kamigawa"
+Reki, the History of Kamigawa
 Rending Vines
 Reverence
 Ronin Cavekeeper
-"Rune-Tail, Kitsune Ascendant"
+Rune-Tail, Kitsune Ascendant
 Rushing-Tide Zubera
 Sakashima the Impostor
 Sakura-Tribe Scout
-"Sasaya, Orochi Ascendant"
+Sasaya, Orochi Ascendant
 Scroll of Origins
 Secretkeeper
 Seed the Land
 Seek the Horizon
-"Sekki, Seasons' Guide"
+Sekki, Seasons' Guide
 Shape Stealer
 Shifting Borders
 Shinen of Fear's Chill
@@ -149,7 +149,7 @@ Skull Collector
 Skyfire Kirin
 Sokenzan Renegade
 Sokenzan Spellblade
-"Soramaro, First to Dream"
+Soramaro, First to Dream
 Soratami Cloud Chariot
 Spiraling Embers
 Spiritual Visit

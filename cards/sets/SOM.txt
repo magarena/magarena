@@ -57,7 +57,7 @@ Embersmith
 Engulfing Slagwurm
 Etched Champion
 Exsanguinate
-"Ezuri, Renegade Leader"
+Ezuri, Renegade Leader
 Ezuri's Archers
 Ezuri's Brigade
 Ferrovore
@@ -70,7 +70,7 @@ Fume Spitter
 Furnace Celebration
 Galvanic Blast
 Genesis Wave
-"Geth, Lord of the Vault"
+Geth, Lord of the Vault
 Ghalma's Warden
 Glimmerpoint Stag
 Glimmerpost
@@ -99,7 +99,7 @@ Infiltration Lens
 Instill Infection
 Iron Myr
 Island
-"Kemba, Kha Regent"
+Kemba, Kha Regent
 Kemba's Skyguard
 Koth of the Hammer
 Kuldotha Forgemaster
@@ -178,7 +178,7 @@ Shape Anew
 Shatter
 Silver Myr
 Skinrender
-"Skithiryx, the Blight Dragon"
+Skithiryx, the Blight Dragon
 Sky-Eel School
 Slice in Twain
 Snapsail Glider
@@ -220,7 +220,7 @@ Untamed Might
 Vault Skyward
 Vector Asp
 Vedalken Certarch
-"Venser, the Sojourner"
+Venser, the Sojourner
 Venser's Journal
 Vigil for the Lost
 Viridian Revel

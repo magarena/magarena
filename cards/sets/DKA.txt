@@ -37,7 +37,7 @@ Divination
 Drogskol Captain
 Drogskol Reaver
 Dungeon Geists
-"Elbrus, the Binding Blade"
+Elbrus, the Binding Blade
 Elgaud Inquisitor
 Erdwal Ripper
 Evolving Wilds
@@ -101,7 +101,7 @@ Markov Blademaster
 Markov Warlord
 Markov's Servant
 Midnight Guard
-"Mikaeus, the Unhallowed"
+Mikaeus, the Unhallowed
 Mondronen Shaman
 Moonscarred Werewolf
 Moonveil Dragon
@@ -135,7 +135,7 @@ Silverpelt Werewolf
 Skillful Lunge
 Skirsdag Flayer
 Somberwald Dryad
-"Sorin, Lord of Innistrad"
+Sorin, Lord of Innistrad
 Soul Seizer
 Spiteful Shadows
 Stormbound Geist
@@ -143,7 +143,7 @@ Strangleroot Geist
 Stromkirk Captain
 Sudden Disappearance
 Talons of Falkenrath
-"Thalia, Guardian of Thraben"
+Thalia, Guardian of Thraben
 Thought Scour
 Thraben Doomsayer
 Thraben Heretic

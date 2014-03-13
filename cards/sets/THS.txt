@@ -7,7 +7,7 @@ Akroan Horse
 Anax and Cymede
 Anger of the Gods
 Annul
-"Anthousa, Setessan Hero"
+Anthousa, Setessan Hero
 Anvilwrought Raptor
 Aqueous Form
 Arbor Colossus
@@ -15,7 +15,7 @@ Arena Athlete
 Artisan of Forms
 Artisan's Sorrow
 Ashen Rider
-"Ashiok, Nightmare Weaver"
+Ashiok, Nightmare Weaver
 Asphodel Wanderer
 Baleful Eidolon
 Battlewise Hoplite
@@ -57,10 +57,10 @@ Disciple of Phenax
 Dissolve
 Divine Verdict
 Dragon Mantle
-"Elspeth, Sun's Champion"
+Elspeth, Sun's Champion
 Ember Swallower
 Ephara's Warden
-"Erebos, God of the Dead"
+Erebos, God of the Dead
 Erebos's Emissary
 Evangel of Heliod
 Fabled Hero
@@ -85,7 +85,7 @@ Gray Merchant of Asphodel
 Griptide
 Guardians of Meletis
 Hammer of Purphoros
-"Heliod, God of the Sun"
+Heliod, God of the Sun
 Heliod's Emissary
 Hero's Downfall
 Hopeful Eidolon
@@ -125,8 +125,8 @@ Nessian Asp
 Nessian Courser
 Nighthowler
 Nimbus Naiad
-"Nykthos, Shrine to Nyx"
-"Nylea, God of the Hunt"
+Nykthos, Shrine to Nyx
+Nylea, God of the Hunt
 Nylea's Disciple
 Nylea's Emissary
 Nylea's Presence
@@ -145,7 +145,7 @@ Pharika's Mender
 Pheres-Band Centaurs
 Plains
 Polis Crusher
-"Polukranos, World Eater"
+Polukranos, World Eater
 Portent of Betrayal
 Prescient Chimera
 Priest of Iroas
@@ -153,7 +153,7 @@ Prognostic Sphinx
 Prophet of Kruphix
 Prowler's Helm
 Psychic Intrusion
-"Purphoros, God of the Forge"
+Purphoros, God of the Forge
 Purphoros's Emissary
 Pyxis of Pandemonium
 Rage of Purphoros
@@ -200,7 +200,7 @@ Temple of Deceit
 Temple of Mystery
 Temple of Silence
 Temple of Triumph
-"Thassa, God of the Sea"
+Thassa, God of the Sea
 Thassa's Bounty
 Thassa's Emissary
 Thoughtseize
@@ -215,7 +215,7 @@ Triton Fortune Hunter
 Triton Shorethief
 Triton Tactics
 Two-Headed Cerberus
-"Tymaret, the Murder King"
+Tymaret, the Murder King
 Underworld Cerberus
 Unknown Shores
 Vanquish the Foul
@@ -230,5 +230,5 @@ Whip of Erebos
 Wild Celebrants
 Wingsteed Rider
 Witches' Eye
-"Xenagos, the Reveler"
+Xenagos, the Reveler
 Yoked Ox

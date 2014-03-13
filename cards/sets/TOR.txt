@@ -26,7 +26,7 @@ Cephalid Illusionist
 Cephalid Sage
 Cephalid Snitch
 Cephalid Vandal
-"Chainer, Dementia Master"
+Chainer, Dementia Master
 Chainer's Edict
 Churning Eddy
 Circular Logic
@@ -71,7 +71,7 @@ Krosan Restorer
 Laquatus's Champion
 Last Laugh
 Liquify
-"Llawan, Cephalid Empress"
+Llawan, Cephalid Empress
 Longhorn Firebeast
 Major Teroh
 Mesmeric Fiend

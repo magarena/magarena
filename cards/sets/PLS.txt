@@ -29,7 +29,7 @@ Dralnu's Pet
 Dromar's Cavern
 Dromar's Charm
 Eladamri's Call
-"Ertai, the Corrupted"
+Ertai, the Corrupted
 Ertai's Trickery
 Escape Routes
 Exotic Disease
@@ -73,7 +73,7 @@ Mogg Sentry
 Morgue Toad
 Multani's Harmony
 Natural Emergence
-"Nemata, Grove Guardian"
+Nemata, Grove Guardian
 Nightscape Battlemage
 Nightscape Familiar
 Noxious Vapors
@@ -127,7 +127,7 @@ Sunken Hope
 Sunscape Battlemage
 Sunscape Familiar
 Surprise Deployment
-"Tahngarth, Talruum Hero"
+Tahngarth, Talruum Hero
 Terminal Moraine
 Terminate
 Thornscape Battlemage

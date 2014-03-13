@@ -115,14 +115,14 @@ Hypersonic Dragon
 Inaction Injunction
 Inspiration
 Island
-"Isperia, Supreme Judge"
+Isperia, Supreme Judge
 Isperia's Skywatch
 Izzet Charm
 Izzet Guildgate
 Izzet Keyrune
 Izzet Staticaster
-"Jace, Architect of Thought"
-"Jarad, Golgari Lich Lord"
+Jace, Architect of Thought
+Jarad, Golgari Lich Lord
 Jarad's Orders
 Judge's Familiar
 Keening Apparition
@@ -146,7 +146,7 @@ Necropolis Regent
 New Prahv Guildmage
 Nivix Guildmage
 Nivmagus Elemental
-"Niv-Mizzet, Dracogenius"
+Niv-Mizzet, Dracogenius
 Oak Street Innkeeper
 Ogre Jailbreaker
 Overgrown Tomb
@@ -169,7 +169,7 @@ Rakdos Keyrune
 Rakdos Ragemutt
 Rakdos Ringleader
 Rakdos Shred-Freak
-"Rakdos, Lord of Riots"
+Rakdos, Lord of Riots
 Rakdos's Return
 Rest in Peace
 Righteous Authority
@@ -235,7 +235,7 @@ Traitorous Instinct
 Transguild Promenade
 Treasured Find
 Trestle Troll
-"Trostani, Selesnya's Voice"
+Trostani, Selesnya's Voice
 Trostani's Judgment
 Ultimate Price
 Underworld Connections

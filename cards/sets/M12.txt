@@ -2,7 +2,7 @@ Acidic Slime
 Act of Treason
 Adaptive Automaton
 Aegis Angel
-Æther Adept
+AEther Adept
 Alabaster Mage
 Alluring Siren
 Amphin Cutthroat
@@ -36,7 +36,7 @@ Cancel
 Carnage Wurm
 Celestial Purge
 Cemetery Reaper
-"Chandra, the Firebrand"
+Chandra, the Firebrand
 Chandra's Outrage
 Chandra's Phoenix
 Chasm Drake
@@ -85,7 +85,7 @@ Forest
 Frost Breath
 Frost Titan
 Furyborn Hellkite
-"Garruk, Primal Hunter"
+Garruk, Primal Hunter
 Garruk's Companion
 Garruk's Horde
 Giant Spider
@@ -120,7 +120,7 @@ Ice Cage
 Incinerate
 Inferno Titan
 Island
-"Jace, Memory Adept"
+Jace, Memory Adept
 Jace's Archivist
 Jace's Erasure
 Jade Mage

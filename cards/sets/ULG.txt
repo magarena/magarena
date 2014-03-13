@@ -66,7 +66,7 @@ Might of Oaks
 Miscalculation
 Molten Hydra
 Mother of Runes
-"Multani, Maro-Sorcerer"
+Multani, Maro-Sorcerer
 Multani's Acolyte
 Multani's Presence
 No Mercy
@@ -90,7 +90,7 @@ Pygmy Pyrosaur
 Pyromancy
 Quicksilver Amulet
 Rack and Ruin
-"Radiant, Archangel"
+Radiant, Archangel
 Radiant's Dragoons
 Radiant's Judgment
 Rancor

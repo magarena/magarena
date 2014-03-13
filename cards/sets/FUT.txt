@@ -7,7 +7,7 @@ Augur of Skulls
 Aven Augur
 Aven Mindcensor
 Barren Glory
-"Baru, Fist of Krosa"
+Baru, Fist of Krosa
 Bitter Ordeal
 Blade of the Sixth Pride
 Blind Phantasm
@@ -73,9 +73,9 @@ Judge Unworthy
 Kavu Primarch
 Keldon Megaliths
 Knight of Sursi
-"Korlash, Heir to Blackblade"
+Korlash, Heir to Blackblade
 Leaden Fists
-"Linessa, Zephyr Mage"
+Linessa, Zephyr Mage
 Llanowar Augur
 Llanowar Empath
 Llanowar Mentor
@@ -108,7 +108,7 @@ Nihilith
 Nimbus Maze
 Nix
 Oblivion Crown
-"Oriss, Samite Guardian"
+Oriss, Samite Guardian
 Pact of Negation
 Pact of the Titan
 Patrician's Scorn
@@ -167,9 +167,9 @@ Tolaria West
 Tombstalker
 Unblinking Bleb
 Utopia Mycon
-Vedalken Æthermage
+Vedalken AEthermage
 Veilstone Amulet
-"Venser, Shaper Savant"
+Venser, Shaper Savant
 Venser's Diffusion
 Virulent Sliver
 Whetwheel

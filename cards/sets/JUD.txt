@@ -64,7 +64,7 @@ Harvester Druid
 Hunting Grounds
 Infectious Rage
 Ironshell Beetle
-"Jeska, Warrior Adept"
+Jeska, Warrior Adept
 Keep Watch
 Krosan Reclamation
 Krosan Verge
@@ -122,7 +122,7 @@ Swirling Sandstorm
 Sylvan Safekeeper
 Telekinetic Bonds
 Test of Endurance
-"Thriss, Nantuko Primus"
+Thriss, Nantuko Primus
 Toxic Stench
 Trained Pronghorn
 Treacherous Vampire

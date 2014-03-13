@@ -13,7 +13,7 @@ Appetite for Brains
 Arcane Melee
 Archangel
 Archwing Dragon
-"Avacyn, Angel of Hope"
+Avacyn, Angel of Hope
 Banishing Stroke
 Banners Raised
 Barter in Blood
@@ -26,7 +26,7 @@ Bone Splinters
 Bonfire of the Damned
 Borderland Ranger
 Bower Passage
-"Bruna, Light of Alabaster"
+Bruna, Light of Alabaster
 Builder's Blessing
 Burn at the Stake
 Butcher Ghoul
@@ -91,7 +91,7 @@ Ghostform
 Ghostly Flicker
 Ghostly Touch
 Ghoulflesh
-"Gisela, Blade of Goldnight"
+Gisela, Blade of Goldnight
 Gloom Surgeon
 Gloomwidow
 Goldnight Commander
@@ -180,7 +180,7 @@ Second Guess
 Seraph of Dawn
 Seraph Sanctuary
 Sheltering Word
-"Sigarda, Host of Herons"
+Sigarda, Host of Herons
 Silverblade Paladin
 Slayers' Stronghold
 Snare the Skies
@@ -195,7 +195,7 @@ Stern Mentor
 Stolen Goods
 Stonewright
 Swamp
-"Tamiyo, the Moon Sage"
+Tamiyo, the Moon Sage
 Tandem Lookout
 Temporal Mastery
 Terminus
@@ -204,7 +204,7 @@ Thatcher Revolt
 Thraben Valiant
 Thunderbolt
 Thunderous Wrath
-"Tibalt, the Fiend-Blooded"
+Tibalt, the Fiend-Blooded
 Timberland Guide
 Tormentor's Trident
 Treacherous Pit-Dweller

@@ -45,7 +45,7 @@ Canopy Spider
 Caves of Koilos
 Cephalid Constable
 Chimeric Staff
-"Cho-Manno, Revolutionary"
+Cho-Manno, Revolutionary
 Chromatic Star
 Citanul Flute
 Civic Wayfinder
@@ -151,7 +151,7 @@ Island
 Jayemdae Tome
 Joiner Adept
 Juggernaut
-"Kamahl, Pit Fighter"
+Kamahl, Pit Fighter
 Karplusan Forest
 Karplusan Strider
 Kavu Climber
@@ -189,10 +189,10 @@ Millstone
 Mind Bend
 Mind Rot
 Mind Stone
-"Mirri, Cat Warrior"
+Mirri, Cat Warrior
 Mobilization
 Mogg Fanatic
-"Molimo, Maro-Sorcerer"
+Molimo, Maro-Sorcerer
 Mortal Combat
 Mortivore
 Mountain
@@ -299,7 +299,7 @@ Spineless Thug
 Spirit Link
 Spirit Weaver
 Spitting Earth
-"Squee, Goblin Nabob"
+Squee, Goblin Nabob
 Stalking Tiger
 Stampeding Wildebeests
 Starlight Invoker

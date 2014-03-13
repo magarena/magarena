@@ -1,6 +1,6 @@
 Absolver Thrull
 Abyssal Nocturnus
-Ætherplasm
+AEtherplasm
 Agent of Masks
 Angel of Despair
 Battering Wurm
@@ -85,8 +85,8 @@ Moratorium Stone
 Mortify
 Mourning Thrull
 Necromancer's Magemark
-"Nivix, Aerie of the Firemind"
-"Niv-Mizzet, the Firemind"
+Nivix, Aerie of the Firemind
+Niv-Mizzet, the Firemind
 Ogre Savant
 Order of the Stars
 Orzhov Basilica
@@ -94,7 +94,7 @@ Orzhov Euthanist
 Orzhov Guildmage
 Orzhov Pontiff
 Orzhov Signet
-"Orzhova, the Church of Deals"
+Orzhova, the Church of Deals
 Ostiary Thrull
 Parallectric Feedback
 Petrahydrox
@@ -125,7 +125,7 @@ Siege of Towers
 Silhana Ledgewalker
 Silhana Starfletcher
 Sinstriker's Will
-"Skarrg, the Rage Pits"
+Skarrg, the Rage Pits
 Skarrgan Firebird
 Skarrgan Pit-Skulk
 Skarrgan Skybreaker
@@ -144,14 +144,14 @@ Storm Herd
 Stratozeppelid
 Streetbreaker Wurm
 Sword of the Paruns
-"Teysa, Orzhov Scion"
+Teysa, Orzhov Scion
 Thunderheads
 Tibor and Lumia
 Tin Street Hooligan
 To Arms!
 Torch Drake
 Train of Thought
-"Ulasht, the Hate Seed"
+Ulasht, the Hate Seed
 Vacuumelt
 Vedalken Plotter
 Vertigo Spawn

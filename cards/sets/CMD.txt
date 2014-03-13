@@ -1,15 +1,15 @@
 Acidic Slime
 Acorn Catapult
-Æthersnipe
+AEthersnipe
 Afterlife
 Akoum Refuge
-"Akroma, Angel of Fury"
+Akroma, Angel of Fury
 Akroma's Vengeance
 Alliance of Arms
 Angel of Despair
 Angelic Arbiter
 Anger
-"Animar, Soul of Elements"
+Animar, Soul of Elements
 Aquastrand Spider
 Arbiter of Knollridge
 Archangel of Strife
@@ -26,7 +26,7 @@ Azorius Chancery
 Azorius Guildmage
 Baloth Woodcrasher
 Barren Moor
-"Basandra, Battle Seraph"
+Basandra, Battle Seraph
 Bathe in Light
 Bestial Menace
 Bladewing the Risen
@@ -59,7 +59,7 @@ Conundrum Sphinx
 Court Hussar
 Crescendo of War
 Cultivate
-"Damia, Sage of Stone"
+Damia, Sage of Stone
 Dark Hatchling
 Darksteel Ingot
 Deadly Recluse
@@ -80,7 +80,7 @@ Dreamborn Muse
 Dreamstone Hedron
 Duergar Hedge-Mage
 Earthquake
-"Edric, Spymaster of Trest"
+Edric, Spymaster of Trest
 Electrolyze
 Elvish Aberration
 Eternal Witness
@@ -108,7 +108,7 @@ Forgotten Cave
 Fungal Reaches
 Furnace Whelp
 Garruk Wildspeaker
-"Ghave, Guru of Spores"
+Ghave, Guru of Spores
 Ghostly Prison
 Goblin Cadets
 Golgari Guildmage
@@ -131,7 +131,7 @@ Hull Breach
 Hunting Pack
 Hydra Omnivore
 Insurrection
-"Intet, the Dreamer"
+Intet, the Dreamer
 Invigorate
 Island
 Izzet Boilerworks
@@ -141,7 +141,7 @@ Jötun Grunt
 Journey to Nowhere
 Jwar Isle Refuge
 Kaalia of the Vast
-"Karador, Ghost Chieftain"
+Karador, Ghost Chieftain
 Kazandu Refuge
 Kodama's Reach
 Krosan Tusker
@@ -171,15 +171,15 @@ Nantuko Husk
 Necrogenesis
 Nemesis Trap
 Nezumi Graverobber
-"Nin, the Pain Artist"
+Nin, the Pain Artist
 Nucklavee
-"Numot, the Devastator"
+Numot, the Devastator
 Oblation
 Oblivion Ring
 Oblivion Stone
 Oni of Wild Places
 Orim's Thunder
-"Oros, the Avenger"
+Oros, the Avenger
 Orzhov Basilica
 Orzhov Guildmage
 Orzhov Signet
@@ -233,7 +233,7 @@ Sign in Blood
 Simic Growth Chamber
 Simic Signet
 Simic Sky Swallower
-"Skullbriar, the Walking Grave"
+Skullbriar, the Walking Grave
 Skullclamp
 Skyscribing
 Slipstream Eel
@@ -250,15 +250,15 @@ Stitch Together
 Storm Herd
 Stranglehold
 Sulfurous Blast
-"Svogthos, the Restless Tomb"
+Svogthos, the Restless Tomb
 Swamp
 Symbiotic Wurm
 Syphon Flesh
 Syphon Mind
-"Szadek, Lord of Secrets"
-"Tariel, Reckoner of Souls"
+Szadek, Lord of Secrets
+Tariel, Reckoner of Souls
 Temple of the False God
-"Teneb, the Harvester"
+Teneb, the Harvester
 Terminate
 Terramorphic Expanse
 The Mimeoplasm
@@ -274,7 +274,7 @@ Vampire Nighthawk
 Vedalken Plotter
 Vengeful Rebirth
 Veteran Explorer
-"Vish Kal, Blood Arbiter"
+Vish Kal, Blood Arbiter
 Vision Skeins
 Vivid Crag
 Vivid Creek
@@ -282,7 +282,7 @@ Vivid Grove
 Vivid Marsh
 Vivid Meadow
 Voice of All
-"Vorosh, the Hunter"
+Vorosh, the Hunter
 Vow of Duty
 Vow of Flight
 Vow of Lightning
@@ -297,7 +297,7 @@ Windborn Muse
 Windfall
 Wonder
 Wrecking Ball
-"Wrexial, the Risen Deep"
+Wrexial, the Risen Deep
 Yavimaya Elder
 Zedruu the Greathearted
 Zoetic Cavern

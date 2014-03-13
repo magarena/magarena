@@ -1,5 +1,5 @@
 Academy Rector
-Æther Sting
+AEther Sting
 Ancient Silverback
 Apprentice Necromancer
 Archery Training
@@ -92,13 +92,13 @@ Private Research
 Quash
 Rapid Decay
 Ravenous Rats
-"Rayne, Academy Chancellor"
+Rayne, Academy Chancellor
 Reckless Abandon
 Reliquary Monk
 Repercussion
 Replenish
 Rescue
-"Rofellos, Llanowar Emissary"
+Rofellos, Llanowar Emissary
 Rofellos's Gift
 Sanctimony
 Scent of Brine

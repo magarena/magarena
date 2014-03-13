@@ -46,7 +46,7 @@ Distortion Strike
 Domestication
 Dormant Gomazoa
 Drake Umbra
-"Drana, Kalastria Bloodchief"
+Drana, Kalastria Bloodchief
 Dread Drone
 Dreamstone Hedron
 Echo Mage
@@ -55,7 +55,7 @@ Eland Umbra
 Eldrazi Conscription
 Eldrazi Temple
 Emerge Unscathed
-"Emrakul, the Aeons Torn"
+Emrakul, the Aeons Torn
 Emrakul's Hatcher
 Enatu Golem
 Enclave Cryptologist
@@ -112,7 +112,7 @@ Kiln Fiend
 Knight of Cliffhaven
 Kor Line-Slinger
 Kor Spiritdancer
-"Kozilek, Butcher of Truth"
+Kozilek, Butcher of Truth
 Kozilek's Predator
 Lagac Lizard
 Last Kiss
@@ -121,7 +121,7 @@ Lay Bare
 Leaf Arrow
 Lighthouse Chronologist
 Lightmine Field
-"Linvala, Keeper of Silence"
+Linvala, Keeper of Silence
 Living Destiny
 Lone Missionary
 Lord of Shatterskull Pass
@@ -214,7 +214,7 @@ Training Grounds
 Traitorous Instinct
 Transcendent Master
 Tuktuk the Explorer
-"Ulamog, the Infinite Gyre"
+Ulamog, the Infinite Gyre
 Ulamog's Crusher
 Umbra Mystic
 Unified Will

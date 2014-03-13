@@ -1,4 +1,4 @@
-Æther Tide
+AEther Tide
 Allay
 Anarchist
 Angelic Blessing
@@ -30,7 +30,7 @@ Entropic Specter
 Ephemeron
 Equilibrium
 Erratic Portal
-"Ertai, Wizard Adept"
+Ertai, Wizard Adept
 Exalted Dragon
 Fade Away
 Fighting Chance
@@ -61,7 +61,7 @@ Mind Maggots
 Mind Over Matter
 Mindless Automaton
 Mirozel
-"Mirri, Cat Warrior"
+Mirri, Cat Warrior
 Mogg Assassin
 Monstrous Hound
 Nausea

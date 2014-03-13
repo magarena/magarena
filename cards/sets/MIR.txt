@@ -11,7 +11,7 @@ Ancestral Memories
 Armor of Thorns
 Armorer Guildmage
 Ashen Powder
-"Asmira, Holy Avenger"
+Asmira, Holy Avenger
 Auspicious Ancestor
 Azimaet Drake
 Bad River
@@ -129,7 +129,7 @@ Grave Servitude
 Gravebane Zombie
 Grim Feast
 Grinning Totem
-"Hakim, Loreweaver"
+Hakim, Loreweaver
 Hall of Gemstone
 Hammer of Bogardan
 Harbinger of Night
@@ -256,7 +256,7 @@ Shadow Guildmage
 Shadowbane
 Shallow Grave
 Shaper Guildmage
-"Shauku, Endbringer"
+Shauku, Endbringer
 Shauku's Minion
 Shimmer
 Sidar Jabari
@@ -332,4 +332,4 @@ Zhalfirin Commander
 Zhalfirin Knight
 Zirilan of the Claw
 Zombie Mob
-"Zuberi, Golden Feather"
+Zuberi, Golden Feather

@@ -1,6 +1,6 @@
 Academy Ruins
-Æther Web
-Ætherflame Wall
+AEther Web
+AEtherflame Wall
 Amrou Scout
 Amrou Seekers
 Ancestral Vision
@@ -53,7 +53,7 @@ Demonic Collusion
 Detainment Spell
 Divine Congregation
 Draining Whelk
-"Dralnu, Lich Lord"
+Dralnu, Lich Lord
 Dread Return
 Dreadship Reef
 Dream Stalker
@@ -63,7 +63,7 @@ Durkwood Baloth
 Durkwood Tracker
 Duskrider Peregrine
 Empty the Warrens
-"Endrek Sahr, Master Breeder"
+Endrek Sahr, Master Breeder
 Errant Doomsayers
 Errant Ephemeron
 Eternity Snare
@@ -110,15 +110,15 @@ Havenwood Wurm
 Herd Gnarr
 Hivestone
 Hypergenesis
-"Ib Halfheart, Goblin Tactician"
+Ib Halfheart, Goblin Tactician
 Icatian Crier
 Ignite Memories
 Ironclaw Buzzardiers
 Island
-"Ith, High Arcanist"
+Ith, High Arcanist
 Ivory Giant
 Ixidron
-"Jaya Ballard, Task Mage"
+Jaya Ballard, Task Mage
 Jedit's Dragoons
 Jhoira's Timebug
 Kaervek the Merciless
@@ -144,7 +144,7 @@ Might of Old Krosa
 Might Sliver
 Mindlash Sliver
 Mindstab
-"Mishra, Artificer Prodigy"
+Mishra, Artificer Prodigy
 Mogg War Marshal
 Molder
 Molten Slagheap
@@ -194,7 +194,7 @@ Saffi Eriksdotter
 Sage of Epityr
 Saltcrusted Steppe
 Sangrophage
-"Sarpadian Empires, Vol. VII"
+Sarpadian Empires, Vol. VII
 Savage Thallid
 Scarwood Treefolk
 Scion of the Ur-Dragon
@@ -221,7 +221,7 @@ Sporesower Thallid
 Sprite Noble
 Sprout
 Squall Line
-"Stonebrow, Krosan Hero"
+Stonebrow, Krosan Hero
 Stonewood Invocation
 Stormcloud Djinn
 Strangling Soot
@@ -236,7 +236,7 @@ Sulfurous Blast
 Swamp
 Swarmyard
 Tectonic Fiend
-"Teferi, Mage of Zhalfir"
+Teferi, Mage of Zhalfir
 Telekinetic Sliver
 Temporal Eddy
 Temporal Isolation

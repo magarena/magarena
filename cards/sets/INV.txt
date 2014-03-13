@@ -1,6 +1,6 @@
 Absorb
 Addle
-Æther Rift
+AEther Rift
 Aggressive Urge
 Agonizing Demise
 Alabaster Leech
@@ -17,7 +17,7 @@ Armadillo Cloak
 Armored Guardian
 Artifact Mutation
 Assault // Battery
-"Atalya, Samite Master"
+Atalya, Samite Master
 Aura Mutation
 Aura Shards
 Backlash
@@ -52,14 +52,14 @@ Collapsing Borders
 Collective Restraint
 Cremate
 Crimson Acolyte
-"Crosis, the Purger"
+Crosis, the Purger
 Crosis's Attendant
 Crown of Flames
 Crusading Knight
 Crypt Angel
 Crystal Spray
 Cursed Flesh
-"Darigaaz, the Igniter"
+Darigaaz, the Igniter
 Darigaaz's Attendant
 Death or Glory
 Defiling Tears
@@ -74,7 +74,7 @@ Do or Die
 Drake-Skull Cameo
 Dream Thrush
 Dredge
-"Dromar, the Banisher"
+Dromar, the Banisher
 Dromar's Attendant
 Dueling Grounds
 Duskwalker
@@ -103,7 +103,7 @@ Global Ruin
 Goblin Spy
 Goham Djinn
 Halam Djinn
-"Hanna, Ship's Navigator"
+Hanna, Ship's Navigator
 Harrow
 Harsh Judgment
 Hate Weaver
@@ -117,7 +117,7 @@ Irrigation Ditch
 Island
 Jade Leech
 Juntu Stakes
-"Kangee, Aerie Keeper"
+Kangee, Aerie Keeper
 Kavu Aggressor
 Kavu Chameleon
 Kavu Climber
@@ -147,7 +147,7 @@ Metathran Transport
 Metathran Zombie
 Meteor Storm
 Might Weaver
-"Molimo, Maro-Sorcerer"
+Molimo, Maro-Sorcerer
 Mountain
 Mourning
 Nightscape Apprentice
@@ -207,7 +207,7 @@ Reviving Vapors
 Rewards of Diversity
 Reya Dawnbringer
 Riptide Crab
-"Rith, the Awakener"
+Rith, the Awakener
 Rith's Attendant
 Rogue Kavu
 Rooting Kavu
@@ -286,7 +286,7 @@ Tranquility
 Traveler's Cloak
 Treefolk Healer
 Trench Wurm
-"Treva, the Renewer"
+Treva, the Renewer
 Treva's Attendant
 Tribal Flames
 Troll-Horn Cameo
