@@ -141,7 +141,7 @@ public class MCTSAI implements MagicAI {
         //root represents the start state
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, RCHOICES);
 
-        log("MCTS cached=" + root.getNumSim());
+        log("MCTS2 cached=" + root.getNumSim());
 
         final int capacity = THREADS - 1;
         final ExecutorService executor = new ThreadPoolExecutor(
