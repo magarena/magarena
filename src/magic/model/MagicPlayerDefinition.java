@@ -125,7 +125,7 @@ public class MagicPlayerDefinition {
         return DeckGenerators.getInstance().getDeckGenerator(name);
     }
 
-    void generateDeck(final RandomDeckGenerator defaultGenerator) {
+    public void generateDeck(final RandomDeckGenerator defaultGenerator) {
         final RandomDeckGenerator customGenerator =  getDeckGenerator();
 
         if(customGenerator == null) {

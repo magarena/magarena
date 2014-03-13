@@ -53,7 +53,7 @@ public class MagicDeckProfile {
         return colors;
     }
 
-    int getNrOfColors() {
+    public int getNrOfColors() {
         return colors.length;
     }
 
