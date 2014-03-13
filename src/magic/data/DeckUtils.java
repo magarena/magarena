@@ -5,7 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicRandom;
 
 import javax.swing.JOptionPane;
@@ -252,7 +252,7 @@ public class DeckUtils {
             colorText.append(MagicColor.values()[index].getSymbol());
             colorCount[index]=0;
         }
-        final MagicPlayerProfile profile = new MagicPlayerProfile(colorText.toString());
+        final MagicDeckProfile profile = new MagicDeckProfile(colorText.toString());
         profile.setPreConstructed();
         player.setProfile(profile);
     }
@@ -319,7 +319,7 @@ public class DeckUtils {
             for (int count=16;count>0;count--) {
                 deck.add(land);
             }
-            player.setProfile(new MagicPlayerProfile("w"));
+            player.setProfile(new MagicDeckProfile("w"));
         } else {
             loadDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
         }

@@ -17,19 +17,19 @@ public class MagicPlayerDefinition {
 
     private String name;
     private boolean artificial;
-    private MagicPlayerProfile profile;
+    private MagicDeckProfile profile;
     private final MagicDeck deck = new MagicDeck();
     private PlayerAvatar avatar;
 
     MagicPlayerDefinition() {
 
     }
-    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile) {
+    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicDeckProfile profile) {
         this.name=name;
         this.artificial=artificial;
         this.profile=profile;
     }
-    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicPlayerProfile profile,final int face) {
+    public MagicPlayerDefinition(final String name,final boolean artificial,final MagicDeckProfile profile,final int face) {
         this(name, artificial, profile);
         this.avatar = new PlayerAvatar(face);
     }
@@ -46,11 +46,11 @@ public class MagicPlayerDefinition {
         return artificial;
     }
 
-    public void setProfile(final MagicPlayerProfile profile) {
+    public void setProfile(final MagicDeckProfile profile) {
         this.profile=profile;
     }
 
-    public MagicPlayerProfile getProfile() {
+    public MagicDeckProfile getProfile() {
         return profile;
     }
 
@@ -138,7 +138,7 @@ public class MagicPlayerDefinition {
         name=properties.getProperty(prefix+NAME,"");
         artificial=Boolean.parseBoolean(properties.getProperty(prefix+ARTIFICIAL,"true"));
         final String colors=properties.getProperty(prefix+COLORS,"");
-        profile=new MagicPlayerProfile(colors);
+        profile=new MagicDeckProfile(colors);
 
         final MagicDeck unsupported = new MagicDeck();
         deck.clear();

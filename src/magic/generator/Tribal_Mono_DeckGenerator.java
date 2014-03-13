@@ -4,7 +4,7 @@ import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
 
 import java.util.ArrayList;
@@ -107,7 +107,7 @@ public class Tribal_Mono_DeckGenerator extends DefaultDeckGenerator {
         }
     }
 
-    public void setColors(final MagicPlayerProfile profile) {
+    public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }
 

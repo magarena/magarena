@@ -4,7 +4,7 @@ import magic.MagicMain;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicColor;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
@@ -96,23 +96,23 @@ public class DuelConfig {
         return games;
     }
 
-    private static MagicPlayerProfile getMagicPlayerProfile(final String colorText) {
+    private static MagicDeckProfile getMagicPlayerProfile(final String colorText) {
         if (ANY_DECK.equals(colorText)) {
-            return new MagicPlayerProfile("");
+            return new MagicDeckProfile("");
         } else if (ANY_THREE.equals(colorText)) {
-            return new MagicPlayerProfile(MagicColor.getRandomColors(3));
+            return new MagicDeckProfile(MagicColor.getRandomColors(3));
         } else if (ANY_TWO.equals(colorText)) {
-            return new MagicPlayerProfile(MagicColor.getRandomColors(2));
+            return new MagicDeckProfile(MagicColor.getRandomColors(2));
         } else if (ANY_ONE.equals(colorText)) {
-            return new MagicPlayerProfile(MagicColor.getRandomColors(1));
+            return new MagicDeckProfile(MagicColor.getRandomColors(1));
         } else if (DeckGenerators.getInstance().getGeneratorNames().contains(colorText)) {
             // custom deck generator
-            return new MagicPlayerProfile("", colorText);
+            return new MagicDeckProfile("", colorText);
         }
-        return new MagicPlayerProfile(colorText);
+        return new MagicDeckProfile(colorText);
     }
 
-    public MagicPlayerProfile getMagicPlayerProfile() {
+    public MagicDeckProfile getMagicPlayerProfile() {
         return getMagicPlayerProfile(playerOneDeckGenerator);
     }
 
@@ -132,7 +132,7 @@ public class DuelConfig {
         playerTwoDeckGenerator = deckGenerator;
     }
 
-    public MagicPlayerProfile getMagicOpponentProfile() {
+    public MagicDeckProfile getMagicOpponentProfile() {
         return getMagicPlayerProfile(playerTwoDeckGenerator);
     }
 

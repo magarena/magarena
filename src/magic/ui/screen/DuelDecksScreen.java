@@ -14,7 +14,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.ui.DuelPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
@@ -166,8 +166,8 @@ public class DuelDecksScreen
     public void swapDecks() {
         screenContent.getDuel().restart();
         final MagicPlayerDefinition[] players = screenContent.getDuel().getPlayers();
-        final MagicPlayerProfile profile1 = players[0].getProfile();
-        final MagicPlayerProfile profile2 = players[1].getProfile();
+        final MagicDeckProfile profile1 = players[0].getProfile();
+        final MagicDeckProfile profile2 = players[1].getProfile();
         final MagicDeck deck1 = new MagicDeck(players[0].getDeck());
         final MagicDeck deck2 = new MagicDeck(players[1].getDeck());
         players[0].setProfile(profile2);

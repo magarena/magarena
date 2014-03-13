@@ -4,7 +4,7 @@ import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.phase.MagicMainPhase;
 
 class TestAILandSkip extends TestGameBuilder {
@@ -12,8 +12,8 @@ class TestAILandSkip extends TestGameBuilder {
     final MagicDuel duel = new MagicDuel();
     duel.setDifficulty(8);
 
-    final MagicPlayerProfile profile1 = new MagicPlayerProfile("bu");
-    final MagicPlayerProfile profile2 = new MagicPlayerProfile("br");
+    final MagicDeckProfile profile1 = new MagicDeckProfile("bu");
+    final MagicDeckProfile profile2 = new MagicDeckProfile("br");
     final MagicPlayerDefinition player1 = new MagicPlayerDefinition("Tyreal", false, profile1, 15);
     final MagicPlayerDefinition player2 = new MagicPlayerDefinition("Computer", true, profile2, 14);
     duel.setPlayers(new MagicPlayerDefinition[] { player1, player2 });

@@ -1,17 +1,17 @@
 package magic.model;
 
-public class MagicPlayerProfile {
+public class MagicDeckProfile {
 
     private String deckGeneratorName;
     private String colorText;
     private MagicColor[] colors;
     private boolean isPreConstructed;
 
-    public MagicPlayerProfile(final String colorText) {
+    public MagicDeckProfile(final String colorText) {
         this(colorText, null);
     }
 
-    public MagicPlayerProfile(final String colorText, final String deckGeneratorName) {
+    public MagicDeckProfile(final String colorText, final String deckGeneratorName) {
         setColors(colorText);
         setDeckGeneratorName(deckGeneratorName);
     }

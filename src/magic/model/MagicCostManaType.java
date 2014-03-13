@@ -87,7 +87,7 @@ public enum MagicCostManaType {
         return types;
     }
 
-    public MagicManaType[] getTypes(final MagicPlayerProfile profile) {
+    public MagicManaType[] getTypes(final MagicDeckProfile profile) {
         int count=0;
         final MagicManaType[] profileTypes=new MagicManaType[types.size()];
         for (final MagicManaType manaType : types) {
