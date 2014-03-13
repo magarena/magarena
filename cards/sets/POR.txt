@@ -1,0 +1,341 @@
+Alabaster Dragon
+Alluring Scent
+Anaconda
+Ancestral Memories
+Angelic Blessing
+Archangel
+Ardent Militia
+Armageddon
+Armored Pegasus
+Arrogant Vampire
+Assassin's Blade
+Balance of Power
+Baleful Stare
+Bee Sting
+Blaze
+Blessed Reversal
+Blinding Light
+Bog Imp
+Bog Raiders
+Bog Wraith
+Boiling Seas
+Border Guard
+Breath of Life
+Bull Hippo
+Burning Cloak
+Capricious Sorcerer
+Charging Bandits
+Charging Paladin
+Charging Rhino
+Cloak of Feathers
+Cloud Dragon
+Cloud Pirates
+Cloud Spirit
+Command of Unsummoning
+Coral Eel
+Craven Giant
+Craven Knight
+Cruel Bargain
+Cruel Fate
+Cruel Tutor
+Deep Wood
+Deep-Sea Serpent
+Defiant Stand
+Déjà Vu
+Desert Drake
+Devastation
+Devoted Hero
+Djinn of the Lamp
+Dread Charge
+Dread Reaper
+Dry Spell
+Earthquake
+Ebon Dragon
+Elite Cat Warrior
+Elven Cache
+Elvish Ranger
+Endless Cockroaches
+Exhaustion
+False Peace
+Feral Shadow
+Final Strike
+Fire Dragon
+Fire Imp
+Fire Snake
+Fire Tempest
+Flashfires
+Fleet-Footed Monk
+Flux
+Foot Soldiers
+Forest
+Forked Lightning
+Fruition
+Giant Octopus
+Giant Spider
+Gift of Estates
+Goblin Bully
+Gorilla Warrior
+Gravedigger
+Grizzly Bears
+Hand of Death
+Harsh Justice
+Highland Giant
+Hill Giant
+Horned Turtle
+Howling Fury
+Hulking Cyclops
+Hulking Goblin
+Hurricane
+Ingenious Thief
+Island
+Jungle Lion
+Keen-Eyed Archers
+King's Assassin
+Knight Errant
+Last Chance
+Lava Axe
+Lava Flow
+Lizard Warrior
+Man-o'-War
+Mercenary Knight
+Merfolk of the Pearl Trident
+Mind Knives
+Mind Rot
+Minotaur Warrior
+Mobilize
+Monstrous Growth
+Moon Sprite
+Mountain
+Mountain Goat
+Muck Rats
+Mystic Denial
+Natural Order
+Natural Spring
+Nature's Cloak
+Nature's Lore
+Nature's Ruin
+Needle Storm
+Noxious Toad
+Omen
+Owl Familiar
+Panther Warriors
+Path of Peace
+Personal Tutor
+Phantom Warrior
+Pillaging Horde
+Plains
+Plant Elemental
+Primeval Force
+Prosperity
+Pyroclasm
+Python
+Raging Cougar
+Raging Goblin
+Raging Minotaur
+Rain of Salt
+Rain of Tears
+Raise Dead
+Redwood Treefolk
+Regal Unicorn
+Renewing Dawn
+Rowan Treefolk
+Sacred Knight
+Sacred Nectar
+Scorching Spear
+Scorching Winds
+Seasoned Marshal
+Serpent Assassin
+Serpent Warrior
+Skeletal Crocodile
+Skeletal Snake
+Snapping Drake
+Sorcerous Sight
+Soul Shred
+Spined Wurm
+Spiritual Guardian
+Spitting Earth
+Spotted Griffin
+Stalking Tiger
+Starlight
+Starlit Angel
+Steadfastness
+Stern Marshal
+Stone Rain
+Storm Crow
+Summer Bloom
+Swamp
+Sylvan Tutor
+Symbol of Unsummoning
+Taunt
+Temporary Truce
+Theft of Dreams
+Thing from the Deep
+Thundering Wurm
+Thundermare
+Tidal Surge
+Time Ebb
+Touch of Brilliance
+Treetop Defense
+Undying Beast
+Untamed Wilds
+Valorous Charge
+Vampiric Feast
+Vampiric Touch
+Venerable Monk
+Vengeance
+Virtue's Ruin
+Volcanic Dragon
+Volcanic Hammer
+Wall of Granite
+Wall of Swords
+Warrior's Charge
+Whiptail Wurm
+Wicked Pact
+Willow Dryad
+Wind Drake
+Winds of Change
+Winter's Grasp
+Withering Gaze
+Wood Elves
+Wrath of God
+Rapacious One
+Ray of Command
+Razorjaw Oni
+Reins of Power
+Reiver Demon
+Relic Crush
+Repulse
+Return to Dust
+Riddlekeeper
+Righteous Cause
+Riku of Two Reflections
+Rise from the Grave
+Ruhan of the Fomori
+Ruination
+Rupture Spire
+Sakura-Tribe Elder
+Savage Twister
+Scattering Stroke
+Scavenging Ooze
+Scythe Specter
+Secluded Steppe
+Selesnya Evangel
+Selesnya Guildmage
+Selesnya Sanctuary
+Selesnya Signet
+Serra Angel
+Sewer Nemesis
+Shared Trauma
+Shattered Angel
+Shriekmaw
+Sigil Captain
+Sign in Blood
+Simic Growth Chamber
+Simic Signet
+Simic Sky Swallower
+"Skullbriar, the Walking Grave"
+Skullclamp
+Skyscribing
+Slipstream Eel
+Sol Ring
+Solemn Simulacrum
+Soul Snare
+Spawnwrithe
+Spell Crumple
+Spike Feeder
+Spitebellows
+Spurnmage Advocate
+Squallmonger
+Stitch Together
+Storm Herd
+Stranglehold
+Sulfurous Blast
+"Svogthos, the Restless Tomb"
+Swamp
+Symbiotic Wurm
+Syphon Flesh
+Syphon Mind
+"Szadek, Lord of Secrets"
+"Tariel, Reckoner of Souls"
+Temple of the False God
+"Teneb, the Harvester"
+Terminate
+Terramorphic Expanse
+The Mimeoplasm
+Trade Secrets
+Tranquil Thicket
+Trench Gorger
+Tribute to the Wild
+Triskelavus
+Troll Ascetic
+Unnerve
+Valley Rannet
+Vampire Nighthawk
+Vedalken Plotter
+Vengeful Rebirth
+Veteran Explorer
+"Vish Kal, Blood Arbiter"
+Vision Skeins
+Vivid Crag
+Vivid Creek
+Vivid Grove
+Vivid Marsh
+Vivid Meadow
+Voice of All
+"Vorosh, the Hunter"
+Vow of Duty
+Vow of Flight
+Vow of Lightning
+Vow of Malice
+Vow of Wildness
+Vulturous Zombie
+Wall of Denial
+Wall of Omens
+Whirlpool Whelm
+Wild Ricochet
+Windborn Muse
+Windfall
+Wonder
+Wrecking Ball
+"Wrexial, the Risen Deep"
+Yavimaya Elder
+Zedruu the Greathearted
+Zoetic Cavern
+Tidehollow Strix
+Tooth and Claw
+Tower Gargoyle
+Tower of Fortunes
+Toxic Deluge
+Tranquil Thicket
+Transguild Promenade
+True-Name Nemesis
+Unexpectedly Absent
+Urza's Factory
+"Uyo, Silent Prophet"
+Valley Rannet
+Vampire Nighthawk
+Vile Requiem
+Viscera Seer
+Viseling
+Vision Skeins
+"Vitu-Ghazi, the City-Tree"
+Vivid Crag
+Vivid Creek
+Vivid Grove
+Vivid Marsh
+Vizkopa Guildmage
+Walker of the Grove
+Wall of Reverence
+War Cadence
+Warstorm Surge
+Wash Out
+Wayfarer's Bauble
+Well of Lost Dreams
+Where Ancients Tread
+Widespread Panic
+Wight of Precinct Six
+Wild Ricochet
+Winged Coatl
+Witch Hunt
+Wonder
+Wrath of God

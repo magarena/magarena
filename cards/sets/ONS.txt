@@ -1,0 +1,434 @@
+Accursed Centaur
+Æther Charge
+Aggravated Assault
+Airborne Aid
+Airdrop Condor
+Akroma's Blessing
+Akroma's Vengeance
+Ancestor's Prophet
+Animal Magnetism
+Annex
+Anurid Murkdiver
+Aphetto Alchemist
+Aphetto Dredging
+Aphetto Grifter
+Aphetto Vulture
+Arcanis the Omnipotent
+Artificial Evolution
+Ascending Aven
+Astral Slide
+Aura Extraction
+Aurification
+Avarax
+Aven Brigadier
+Aven Fateshaper
+Aven Soulgazer
+Backslide
+Barkhide Mauler
+Barren Moor
+Battering Craghorn
+Battlefield Medic
+Biorhythm
+Birchlore Rangers
+Blackmail
+Blatant Thievery
+Blistering Firecat
+Bloodline Shaman
+Bloodstained Mire
+Boneknitter
+Break Open
+Brightstone Ritual
+Broodhatch Nantuko
+Butcher Orgg
+Cabal Archon
+Cabal Executioner
+Cabal Slaver
+Callous Oppressor
+Catapult Master
+Catapult Squad
+Centaur Glade
+Chain of Acid
+Chain of Plasma
+Chain of Silence
+Chain of Smog
+Chain of Vapor
+Charging Slateback
+Choking Tethers
+Circle of Solace
+Clone
+Commando Raid
+Complicate
+Contested Cliffs
+Convalescent Care
+Cover of Darkness
+Crafty Pathmage
+Crowd Favorites
+Crown of Ascension
+Crown of Awe
+Crown of Fury
+Crown of Suspicion
+Crown of Vigor
+Crude Rampart
+Cruel Revival
+Cryptic Gateway
+Custody Battle
+Daru Cavalier
+Daru Encampment
+Daru Healer
+Daru Lancer
+Daunting Defender
+Dawning Purist
+Death Match
+Death Pulse
+Defensive Maneuvers
+Demystify
+Dirge of Dread
+Disciple of Grace
+Disciple of Malice
+Discombobulate
+Dispersing Orb
+Disruptive Pitmage
+Dive Bomber
+Doom Cannon
+Doomed Necromancer
+Doubtless One
+Dragon Roost
+Dream Chisel
+Dwarven Blastminer
+Ebonblade Reaper
+Elven Riders
+Elvish Guidance
+Elvish Pathcutter
+Elvish Pioneer
+Elvish Scrapper
+Elvish Vanguard
+Elvish Warrior
+Embermage Goblin
+Enchantress's Presence
+Endemic Plague
+Entrails Feaster
+Erratic Explosion
+Essence Fracture
+Everglove Courier
+Exalted Angel
+Explosive Vegetation
+Fade from Memory
+Fallen Cleric
+False Cure
+Feeding Frenzy
+Festering Goblin
+Fever Charm
+Flamestick Courier
+Fleeting Aven
+Flooded Strand
+Foothill Guide
+Forest
+Forgotten Cave
+Frightshroud Courier
+Future Sight
+Gangrenous Goliath
+Ghosthelm Courier
+Gigapede
+Glarecaster
+Glory Seeker
+Gluttonous Zombie
+Goblin Burrows
+Goblin Machinist
+Goblin Piledriver
+Goblin Pyromancer
+Goblin Sharpshooter
+Goblin Sky Raider
+Goblin Sledder
+Goblin Taskmaster
+Grand Coliseum
+Grand Melee
+Grassland Crusader
+Gratuitous Violence
+Gravel Slinger
+Gravespawn Sovereign
+Graxiplon
+Grinning Demon
+Gustcloak Harrier
+Gustcloak Runner
+Gustcloak Savior
+Gustcloak Sentinel
+Gustcloak Skirmisher
+Harsh Mercy
+Haunted Cadaver
+Head Games
+Headhunter
+Heedless One
+Hystrodon
+Imagecrafter
+Improvised Armor
+Infest
+Information Dealer
+Inspirit
+Insurrection
+Invigorating Boon
+Ironfist Crusher
+Island
+"Ixidor, Reality Sculptor"
+Ixidor's Will
+"Jareth, Leonine Titan"
+Kaboom!
+"Kamahl, Fist of Krosa"
+Kamahl's Summons
+Krosan Colossus
+Krosan Groundshaker
+Krosan Tusker
+Lavamancer's Skill
+Lay Waste
+Leery Fogbeast
+Lightning Rift
+Lonely Sandbar
+Mage's Guile
+Mana Echoes
+Meddle
+Menacing Ogre
+Misery Charm
+Mistform Dreamer
+Mistform Mask
+Mistform Mutant
+Mistform Shrieker
+Mistform Skyreaver
+Mistform Stalker
+Mistform Wall
+Mobilization
+Mountain
+Mythic Proportions
+Nameless One
+Nantuko Husk
+Naturalize
+Nosy Goblin
+Nova Cleric
+Oblation
+Oversold Cemetery
+Overwhelming Instinct
+Pacifism
+Patriarch's Bidding
+Pearlspear Courier
+Peer Pressure
+Piety Charm
+Pinpoint Avalanche
+Plains
+Polluted Delta
+Primal Boost
+Profane Prayers
+Prowling Pangolin
+Psychic Trance
+Quicksilver Dragon
+Ravenous Baloth
+Read the Runes
+Reckless One
+Reminisce
+Renewed Faith
+Righteous Cause
+Riptide Biologist
+Riptide Chronologist
+Riptide Entrancer
+Riptide Laboratory
+Riptide Replicator
+Riptide Shapeshifter
+Risky Move
+Rorix Bladewing
+Rotlung Reanimator
+Rummaging Wizard
+Run Wild
+Sage Aven
+Sandskin
+Screaming Seahawk
+Screeching Buzzard
+Searing Flesh
+Sea's Claim
+Seaside Haven
+Secluded Steppe
+Serpentine Basilisk
+Severed Legion
+Shade's Breath
+Shaleskin Bruiser
+Shared Triumph
+Shepherd of Rot
+Shieldmage Elder
+Shock
+Sigil of the New Dawn
+Silent Specter
+Silklash Spider
+"Silvos, Rogue Elemental"
+Skirk Commando
+Skirk Fire Marshal
+Skirk Prospector
+Skittish Valesk
+Slate of Ancestry
+Slice and Dice
+Slipstream Eel
+Smother
+Snapping Thragg
+Snarling Undorak
+Solar Blast
+Soulless One
+Sparksmith
+Spined Basher
+Spitfire Handler
+Spitting Gourna
+Spurred Wolverine
+Spy Network
+Stag Beetle
+Standardize
+Starlit Sanctum
+Starstorm
+Steely Resolve
+Strongarm Tactics
+Sunfire Balm
+Supreme Inquisitor
+Swamp
+Swat
+Symbiotic Beast
+Symbiotic Elf
+Symbiotic Wurm
+Syphon Mind
+Syphon Soul
+Taunting Elf
+Tempting Wurm
+Tephraderm
+Thoughtbound Primoc
+Thrashing Mudspawn
+Threaten
+Thunder of Hooves
+Towering Baloth
+Trade Secrets
+Tranquil Thicket
+Treespring Lorian
+Tribal Golem
+Tribal Unity
+Trickery Charm
+True Believer
+Undead Gladiator
+Unholy Grotto
+Unified Strike
+Venomspout Brackus
+Visara the Dreadful
+Vitality Charm
+Voice of the Woods
+Voidmage Prodigy
+Walking Desecration
+Wall of Mulch
+Wave of Indifference
+Weathered Wayfarer
+Weird Harvest
+Wellwisher
+Wheel and Deal
+Whipcorder
+Windswept Heath
+Wirewood Elf
+Wirewood Herald
+Wirewood Lodge
+Wirewood Pride
+Wirewood Savage
+Withering Hex
+Wooded Foothills
+Words of War
+Words of Waste
+Words of Wilding
+Words of Wind
+Words of Worship
+Wretched Anurid
+Tor Giant
+Total War
+Touch of Death
+Touch of Vitae
+Trailblazer
+Underground River
+Updraft
+Urza's Bauble
+Veldt
+Venomous Breath
+Vertigo
+Vexing Arcanix
+Vibrating Sphere
+Walking Wall
+Wall of Lava
+Wall of Pine Needles
+Wall of Shields
+War Chariot
+Warning
+Whalebone Glider
+White Scarab
+Whiteout
+Wiitigo
+Wild Growth
+Wind Spirit
+Wings of Aesthir
+Winter's Chill
+Withering Wisps
+Woolly Mammoths
+Woolly Spider
+Word of Blasting
+Word of Undoing
+Wrath of Marit Lage
+Yavimaya Gnats
+Zuran Enchanter
+Zuran Orb
+Zuran Spellcaster
+Zur's Weirding
+Tarpan
+Tawnos's Weaponry
+Terror
+The Brute
+The Hive
+The Wretched
+Thicket Basilisk
+Throne of Bone
+Thrull Retainer
+Time Bomb
+Time Elemental
+Titania's Song
+Torture
+Touch of Death
+Tranquility
+Truce
+Tsunami
+Tundra Wolves
+Twiddle
+Underground River
+Unholy Strength
+Unstable Mutation
+Unsummon
+Untamed Wilds
+Updraft
+Urza's Avenger
+Urza's Bauble
+Urza's Mine
+Urza's Power Plant
+Urza's Tower
+Vampire Bats
+Venom
+Verduran Enchantress
+Vodalian Soldiers
+Wall of Air
+Wall of Bone
+Wall of Brambles
+Wall of Fire
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Wanderlust
+War Mammoth
+Warp Artifact
+Weakness
+Whirling Dervish
+White Knight
+Wild Growth
+Wind Spirit
+Winds of Change
+Winter Blast
+Winter Orb
+Wolverine Pack
+Wooden Sphere
+Word of Blasting
+Wrath of God
+Wyluli Wolf
+Xenic Poltergeist
+Zephyr Falcon
+Zombie Master
+Zur's Weirding

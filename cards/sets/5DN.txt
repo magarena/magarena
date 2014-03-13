@@ -1,0 +1,335 @@
+Abuna's Chant
+Acquire
+Advanced Hoverguard
+All Suns' Dawn
+Anodet Lurker
+Arachnoid
+Arcbound Wanderer
+Armed Response
+Artificer's Intuition
+Auriok Champion
+Auriok Salvagers
+Auriok Windwalker
+Avarice Totem
+Baton of Courage
+Battered Golem
+Beacon of Creation
+Beacon of Destruction
+Beacon of Immortality
+Beacon of Tomorrows
+Beacon of Unrest
+Blasting Station
+Blind Creeper
+Blinkmoth Infusion
+Bringer of the Black Dawn
+Bringer of the Blue Dawn
+Bringer of the Green Dawn
+Bringer of the Red Dawn
+Bringer of the White Dawn
+Cackling Imp
+Channel the Suns
+Chimeric Coils
+Circle of Protection: Artifacts
+Clearwater Goblet
+Clock of Omens
+Composite Golem
+Condescend
+Conjurer's Bauble
+Cosmic Larva
+Cranial Plating
+Crucible of Worlds
+Dawn's Reflection
+Desecration Elemental
+Devour in Shadow
+Disruption Aura
+Door to Nothingness
+Doubling Cube
+Dross Crocodile
+Early Frost
+Ebon Drake
+Endless Whispers
+Energy Chamber
+Engineered Explosives
+Ensouled Scimitar
+Eon Hub
+Etched Oracle
+Eternal Witness
+Eyes of the Watcher
+Fangren Pathcutter
+Feedback Bolt
+Ferocious Charge
+Ferropede
+Fill with Fright
+Fist of Suns
+Fleshgrafter
+Fold into Æther
+Furnace Whelp
+Gemstone Array
+Goblin Brawler
+Goblin Cannon
+Grafted Wargear
+Granulate
+Grinding Station
+Guardian Idol
+Healer's Headdress
+Heliophial
+Helm of Kaldra
+Horned Helm
+Hoverguard Sweepers
+Infused Arrows
+Into Thin Air
+Ion Storm
+Iron-Barb Hellion
+Joiner Adept
+Krark-Clan Engineers
+Krark-Clan Ironworks
+Krark-Clan Ogre
+Lantern of Insight
+Leonin Squire
+Lose Hope
+Loxodon Anchorite
+Loxodon Stalwart
+Lunar Avenger
+Magma Giant
+Magma Jet
+Magnetic Theft
+Mana Geyser
+Mephidross Vampire
+Moriok Rigger
+Mycosynth Golem
+Myr Quadropod
+Myr Servitor
+Neurok Stealthsuit
+Night's Whisper
+Nim Grotesque
+Opaline Bracers
+Ouphe Vandals
+Paradise Mantle
+Pentad Prism
+Plasma Elemental
+Plunge into Darkness
+Possessed Portal
+Qumulox
+Rain of Rust
+Raksha Golden Cub
+Razorgrass Screen
+Razormane Masticore
+Relentless Rats
+Relic Barrier
+Retaliate
+Reversal of Fortune
+Rite of Passage
+Roar of Reclamation
+Rude Awakening
+Salvaging Station
+Sawtooth Thresher
+Screaming Fury
+Serum Visions
+Shattered Dreams
+Silent Arbiter
+Skullcage
+Skyhunter Prowler
+Skyhunter Skirmisher
+Skyreach Manta
+Solarion
+Spark Elemental
+Sparring Collar
+Spectral Shift
+Spinal Parasite
+Staff of Domination
+Stand Firm
+Stasis Cocoon
+Steelshaper's Gift
+Summoner's Egg
+Summoning Station
+Suncrusher
+Suntouched Myr
+Sylvok Explorer
+Synod Centurion
+Tangle Asp
+Tel-Jilad Justice
+Tel-Jilad Lifebreather
+Thermal Navigator
+Thought Courier
+Tornado Elemental
+Trinket Mage
+Tyrranax
+Vanquish
+Vedalken Mastermind
+Vedalken Orrery
+Vedalken Shackles
+Vicious Betrayal
+Viridian Lorebearers
+Viridian Scout
+Vulshok Sorcerer
+Wayfarer's Bauble
+Twilight Mire
+Twinblade Slasher
+Umbra Stalker
+Unmake
+Unnerving Assault
+Unwilling Recruit
+Voracious Hatchling
+Wake Thrasher
+Ward of Bones
+Waves of Aggression
+Wickerbough Elder
+Wilderness Hypnotist
+Wistful Selkie
+Woodlurker Mimic
+Worm Harvest
+Mountain
+Murderous Betrayal
+Nantuko Disciple
+Natural Affinity
+Naturalize
+Nausea
+Nekrataal
+Nightmare
+Noble Purpose
+Norwood Ranger
+Obliterate
+Ogre Taskmaster
+Okk
+Oracle's Attendants
+Orcish Artillery
+Orcish Spy
+Pacifism
+Panic Attack
+Patagia Golem
+Peach Garden Oath
+Persecute
+Phantom Warrior
+Phyrexian Arena
+Phyrexian Colossus
+Phyrexian Hulk
+Phyrexian Plaguelord
+Plague Beetle
+Plague Wind
+Plains
+Planar Portal
+Plow Under
+Primeval Force
+Primeval Shambler
+Puppeteer
+Pyroclasm
+Pyrotechnics
+Raging Goblin
+Rain of Blades
+Raise Dead
+Rampant Growth
+Ravenous Rats
+Razorfoot Griffin
+Redeem
+Reflexes
+Regeneration
+Relentless Assault
+Remove Soul
+Revive
+Rewind
+Rhox
+Ridgeline Rager
+Rod of Ruin
+Rolling Stones
+Royal Assassin
+Rukh Egg
+Rushwood Dryad
+Sabretooth Tiger
+Sacred Ground
+Sacred Nectar
+Sage of Lat-Nam
+Sage Owl
+Salt Marsh
+Samite Healer
+Sanctimony
+Savannah Lions
+Scathe Zombies
+Sea Monster
+Searing Wind
+Seasoned Marshal
+Seismic Assault
+Serpent Warrior
+Serra Angel
+Sever Soul
+Severed Legion
+Shatter
+Shifting Sky
+Shivan Dragon
+Shivan Oasis
+Shock
+Shock Troops
+Sizzle
+Skull of Orm
+Slay
+Sneaky Homunculus
+Solidarity
+Soul Feast
+Spellbook
+Spiketail Hatchling
+Spined Wurm
+Spineless Thug
+Spirit Link
+Spitting Spider
+Spreading Algae
+Standing Troops
+Star Compass
+Staunch Defenders
+Steal Artifact
+Stone Rain
+Storm Crow
+Story Circle
+Stream of Life
+Sudden Impact
+Suntail Hawk
+Sunweb
+Swamp
+Swarm of Rats
+Sword Dancer
+Teferi's Puzzle Box
+Telepathy
+Temporal Adept
+Thieves' Auction
+Thieving Magpie
+Thorn Elemental
+Throne of Bone
+Tidal Kraken
+Trade Routes
+Trained Armodon
+Treasure Trove
+Tremor
+Tundra Wolves
+Twiddle
+Two-Headed Dragon
+Underworld Dreams
+Unholy Strength
+Unsummon
+Urborg Volcano
+Urza's Armor
+Urza's Mine
+Urza's Power Plant
+Urza's Tower
+Vampiric Spirit
+Venerable Monk
+Verduran Enchantress
+Vernal Bloom
+Vexing Arcanix
+Viashino Sandstalker
+Vicious Hunger
+Vine Trellis
+Volcanic Hammer
+Wall of Air
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Warped Devotion
+Western Paladin
+Wind Drake
+Wing Snare
+Wood Elves
+Wooden Sphere
+Worship
+Wrath of God
+Wrath of Marit Lage
+Yavimaya Enchantress
+Zombify
+Zur's Weirding

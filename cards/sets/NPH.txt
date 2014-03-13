@@ -1,0 +1,434 @@
+Act of Aggression
+Alloy Myr
+Apostle's Blessing
+Argent Mutation
+Arm with Æther
+Artillerize
+Auriok Survivors
+Batterskull
+Beast Within
+Birthing Pod
+Blade Splicer
+Blighted Agent
+Blind Zealot
+Blinding Souleater
+Bludgeon Brawl
+Brutalizer Exarch
+Caged Sun
+Caress of Phyrexia
+Cathedral Membrane
+Chained Throatseeker
+Chancellor of the Annex
+Chancellor of the Dross
+Chancellor of the Forge
+Chancellor of the Spires
+Chancellor of the Tangle
+Conversion Chamber
+Corrosive Gale
+Corrupted Resolve
+Darksteel Relic
+Death-Hood Cobra
+Deceiver Exarch
+Defensive Stance
+Dementia Bat
+Despise
+Dismember
+Dispatch
+Due Respect
+"Elesh Norn, Grand Cenobite"
+Enslave
+Entomber Exarch
+Etched Monstrosity
+Evil Presence
+Exclusion Ritual
+Fallen Ferromancer
+Flameborn Viron
+Forced Worship
+Forest
+Fresh Meat
+Furnace Scamp
+Geosurge
+Geth's Verdict
+Gitaxian Probe
+Glissa's Scorn
+Glistener Elf
+Glistening Oil
+Greenhilt Trainee
+Gremlin Mine
+Grim Affliction
+Gut Shot
+Hex Parasite
+Hovermyr
+Ichor Explosion
+Immolating Souleater
+Impaler Shrike
+Inquisitor Exarch
+Insatiable Souleater
+Invader Parasite
+Island
+Isolation Cell
+"Jin-Gitaxias, Core Augur"
+"Jor Kadeen, the Prevailer"
+Karn Liberated
+Kiln Walker
+Lashwrithe
+Leeching Bite
+Life's Finale
+Lost Leonin
+Loxodon Convert
+Marrow Shards
+Master Splicer
+Maul Splicer
+"Melira, Sylvok Outcast"
+Mental Misstep
+Mindcrank
+Mindculling
+Moltensteel Dragon
+Mortis Dogs
+Mountain
+Mutagenic Growth
+Mycosynth Fiend
+Mycosynth Wellspring
+Myr Superion
+Necropouncer
+Norn's Annex
+Noxious Revival
+Numbing Dose
+Ogre Menial
+Omen Machine
+Parasitic Implant
+Pestilent Souleater
+Phyrexian Hulk
+Phyrexian Ingester
+Phyrexian Metamorph
+Phyrexian Obliterator
+Phyrexian Swarmlord
+Phyrexian Unlife
+Phyrexia's Core
+Pith Driller
+Plains
+Porcelain Legionnaire
+Postmortem Lunge
+Praetor's Grasp
+Priest of Urabrask
+Pristine Talisman
+Psychic Barrier
+Psychic Surgery
+Puresteel Paladin
+Rage Extractor
+Razor Swine
+Reaper of Sheoldred
+Remember the Fallen
+Rotted Hystrix
+Ruthless Invasion
+Scrapyard Salvo
+Sensor Splicer
+Shattered Angel
+"Sheoldred, Whispering One"
+Shriek Raptor
+Shrine of Boundless Growth
+Shrine of Burning Rage
+Shrine of Limitless Power
+Shrine of Loyal Legions
+Shrine of Piercing Vision
+Sickleslicer
+Slag Fiend
+Slash Panther
+Soul Conduit
+Spellskite
+Spinebiter
+Spined Thopter
+Spire Monitor
+Surge Node
+Surgical Extraction
+Suture Priest
+Swamp
+Sword of War and Peace
+Tezzeret's Gambit
+Thundering Tanadon
+Tormentor Exarch
+Torpor Orb
+Toxic Nim
+Trespassing Souleater
+Triumph of the Hordes
+Unwinding Clock
+Urabrask the Hidden
+Vapor Snag
+Vault Skirge
+Victorious Destruction
+Viral Drake
+Viridian Betrayers
+Viridian Harvest
+Vital Splicer
+Volt Charge
+"Vorinclex, Voice of Hunger"
+Vulshok Refugee
+War Report
+Whipflare
+Whispering Specter
+Wing Splicer
+Xenograft
+One Dozen Eyes
+Ornithopter
+Override
+Pearl Shard
+Pentavus
+Pewter Golem
+Plains
+Plated Slagwurm
+Platinum Angel
+Power Conduit
+Predator's Strike
+Promise of Power
+Proteus Staff
+Psychic Membrane
+Psychogenic Probe
+Pyrite Spellbomb
+Quicksilver Elemental
+Quicksilver Fountain
+Raise the Alarm
+Razor Barrier
+Regress
+Reiver Demon
+Relic Bane
+Roar of the Kha
+Rule of Law
+Rust Elemental
+Rustmouth Ogre
+Rustspore Ram
+Scale of Chiss-Goria
+Scrabbling Claws
+Sculpting Steel
+Scythe of the Wretched
+Seat of the Synod
+Second Sunrise
+Seething Song
+Serum Tank
+Shared Fate
+Shatter
+Shrapnel Blast
+Silver Myr
+Skeleton Shard
+Skyhunter Cub
+Skyhunter Patrol
+Slagwurm Armor
+Slith Ascendant
+Slith Bloodletter
+Slith Firewalker
+Slith Predator
+Slith Strider
+Solar Tide
+Soldier Replica
+Solemn Simulacrum
+Somber Hoverguard
+Soul Foundry
+Soul Nova
+Spellweaver Helix
+Sphere of Purity
+Spikeshot Goblin
+Spoils of the Vault
+Stalking Stones
+Steel Wall
+Sun Droplet
+Sunbeam Spellbomb
+Swamp
+Sword of Kaldra
+Sylvan Scrying
+Synod Sanctum
+Taj-Nar Swordsmith
+Talisman of Dominance
+Talisman of Impulse
+Talisman of Indulgence
+Talisman of Progress
+Talisman of Unity
+Tanglebloom
+Tangleroot
+Tel-Jilad Archers
+Tel-Jilad Chosen
+Tel-Jilad Exile
+Tel-Jilad Stylus
+Tempest of Light
+Temporal Cascade
+Terror
+Thirst for Knowledge
+Thought Prison
+Thoughtcast
+Timesifter
+Titanium Golem
+Tooth and Nail
+Tooth of Chiss-Goria
+Tower of Champions
+Tower of Eons
+Tower of Fortunes
+Tower of Murmurs
+Trash for Treasure
+Tree of Tales
+Triskelion
+Troll Ascetic
+Trolls of Tel-Jilad
+Turn to Dust
+Vault of Whispers
+Vedalken Archmage
+Vermiculos
+Viridian Joiner
+Viridian Longbow
+Viridian Shaman
+Vorrac Battlehorns
+Vulshok Battlegear
+Vulshok Battlemaster
+Vulshok Berserker
+Vulshok Gauntlets
+Wail of the Nim
+Wall of Blood
+Wanderguard Sentry
+War Elemental
+Welding Jar
+Wizard Replica
+Woebearer
+Worldslayer
+Wrench Mind
+Wurmskin Forger
+Yotian Soldier
+Telim'Tor's Edict
+Teremko Griffin
+Thirst
+Tidal Wave
+Tombstone Stairwell
+Torrent of Lava
+Tranquil Domain
+Tropical Storm
+Uktabi Faerie
+Uktabi Wildcats
+Unerring Sling
+Unfulfilled Desires
+Unseen Walker
+Unyaro Bee Sting
+Unyaro Griffin
+Urborg Panther
+Vaporous Djinn
+Ventifact Bottle
+Viashino Warrior
+Vigilant Martyr
+Village Elder
+Vitalizing Cascade
+Volcanic Dragon
+Volcanic Geyser
+Waiting in the Weeds
+Wall of Corpses
+Wall of Resistance
+Wall of Roots
+Ward of Lights
+Warping Wurm
+Wave Elemental
+Wellspring
+Wild Elephant
+Wildfire Emissary
+Windreaper Falcon
+Withering Boon
+Worldly Tutor
+Yare
+Zebra Unicorn
+Zhalfirin Commander
+Zhalfirin Knight
+Zirilan of the Claw
+Zombie Mob
+"Zuberi, Golden Feather"
+Tor Giant
+Total War
+Touch of Death
+Touch of Vitae
+Trailblazer
+Underground River
+Updraft
+Urza's Bauble
+Veldt
+Venomous Breath
+Vertigo
+Vexing Arcanix
+Vibrating Sphere
+Walking Wall
+Wall of Lava
+Wall of Pine Needles
+Wall of Shields
+War Chariot
+Warning
+Whalebone Glider
+White Scarab
+Whiteout
+Wiitigo
+Wild Growth
+Wind Spirit
+Wings of Aesthir
+Winter's Chill
+Withering Wisps
+Woolly Mammoths
+Woolly Spider
+Word of Blasting
+Word of Undoing
+Wrath of Marit Lage
+Yavimaya Gnats
+Zuran Enchanter
+Zuran Orb
+Zuran Spellcaster
+Zur's Weirding
+Tarpan
+Tawnos's Weaponry
+Terror
+The Brute
+The Hive
+The Wretched
+Thicket Basilisk
+Throne of Bone
+Thrull Retainer
+Time Bomb
+Time Elemental
+Titania's Song
+Torture
+Touch of Death
+Tranquility
+Truce
+Tsunami
+Tundra Wolves
+Twiddle
+Underground River
+Unholy Strength
+Unstable Mutation
+Unsummon
+Untamed Wilds
+Updraft
+Urza's Avenger
+Urza's Bauble
+Urza's Mine
+Urza's Power Plant
+Urza's Tower
+Vampire Bats
+Venom
+Verduran Enchantress
+Vodalian Soldiers
+Wall of Air
+Wall of Bone
+Wall of Brambles
+Wall of Fire
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Wanderlust
+War Mammoth
+Warp Artifact
+Weakness
+Whirling Dervish
+White Knight
+Wild Growth
+Wind Spirit
+Winds of Change
+Winter Blast
+Winter Orb
+Wolverine Pack
+Wooden Sphere
+Word of Blasting
+Wrath of God
+Wyluli Wolf
+Xenic Poltergeist
+Zephyr Falcon
+Zombie Master
+Zur's Weirding

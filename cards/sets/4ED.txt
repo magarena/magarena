@@ -1,0 +1,434 @@
+Abomination
+Air Elemental
+Alabaster Potion
+Aladdin's Lamp
+Aladdin's Ring
+Ali Baba
+Amrou Kithkin
+Amulet of Kroog
+Angry Mob
+Animate Artifact
+Animate Dead
+Animate Wall
+Ankh of Mishra
+Apprentice Wizard
+Armageddon
+Armageddon Clock
+Ashes to Ashes
+Ashnod's Battle Gear
+Aspect of Wolf
+Backfire
+Bad Moon
+Balance
+Ball Lightning
+Battering Ram
+Benalish Hero
+Bird Maiden
+Birds of Paradise
+Black Knight
+Black Mana Battery
+Black Vise
+Black Ward
+Blessing
+Blight
+Blood Lust
+Blue Elemental Blast
+Blue Mana Battery
+Blue Ward
+Bog Imp
+Bog Wraith
+Bottle of Suleiman
+Brainwash
+Brass Man
+Bronze Tablet
+Brothers of Fire
+Burrowing
+Carnivorous Plant
+Carrion Ants
+Castle
+Cave People
+Celestial Prism
+Channel
+Chaoslace
+Circle of Protection: Artifacts
+Circle of Protection: Black
+Circle of Protection: Blue
+Circle of Protection: Green
+Circle of Protection: Red
+Circle of Protection: White
+Clay Statue
+Clockwork Avian
+Clockwork Beast
+Cockatrice
+Colossus of Sardia
+Conservator
+Control Magic
+Conversion
+Coral Helm
+Cosmic Horror
+Counterspell
+Craw Wurm
+Creature Bond
+Crimson Manticore
+Crumble
+Crusade
+Crystal Rod
+Cursed Land
+Cursed Rack
+Cyclopean Mummy
+Dancing Scimitar
+Dark Ritual
+Death Ward
+Deathgrip
+Deathlace
+Desert Twister
+Detonate
+Diabolic Machine
+Dingus Egg
+Disenchant
+Disintegrate
+Disrupting Scepter
+Divine Transformation
+Dragon Engine
+Dragon Whelp
+Drain Life
+Drain Power
+Drudge Skeletons
+Durkwood Boars
+Dwarven Warriors
+Earth Elemental
+Earthquake
+Ebony Horse
+Elder Land Wurm
+El-Hajjâj
+Elven Riders
+Elvish Archers
+Energy Flux
+Energy Tap
+Erg Raiders
+Erosion
+Eternal Warrior
+Evil Presence
+Eye for an Eye
+Fear
+Feedback
+Fellwar Stone
+Fire Elemental
+Fireball
+Firebreathing
+Fissure
+Flashfires
+Flight
+Flood
+Flying Carpet
+Fog
+Force of Nature
+Forest
+Fortified Area
+Frozen Shade
+Fungusaur
+Gaea's Liege
+Gaseous Form
+Ghost Ship
+Giant Growth
+Giant Spider
+Giant Strength
+Giant Tortoise
+Glasses of Urza
+Gloom
+Goblin Balloon Brigade
+Goblin King
+Goblin Rock Sled
+Grapeshot Catapult
+Gray Ogre
+Greed
+Green Mana Battery
+Green Ward
+Grizzly Bears
+Healing Salve
+Helm of Chatzuk
+Hill Giant
+Holy Armor
+Holy Strength
+Howl from Beyond
+Howling Mine
+Hurkyl's Recall
+Hurloon Minotaur
+Hurr Jackal
+Hurricane
+Hypnotic Specter
+Immolation
+Inferno
+Instill Energy
+Iron Star
+Ironclaw Orcs
+Ironroot Treefolk
+Island
+Island Fish Jasconius
+Island Sanctuary
+Ivory Cup
+Ivory Tower
+Jade Monolith
+Jandor's Saddlebags
+Jayemdae Tome
+Jump
+Junún Efreet
+Karma
+Keldon Warlord
+Killer Bees
+Kismet
+Kormus Bell
+Land Leeches
+Land Tax
+Leviathan
+Ley Druid
+Library of Leng
+Lifeforce
+Lifelace
+Lifetap
+Lightning Bolt
+Living Artifact
+Living Lands
+Llanowar Elves
+Lord of Atlantis
+Lord of the Pit
+Lost Soul
+Lure
+Magical Hack
+Magnetic Mountain
+Mahamoti Djinn
+Mana Clash
+Mana Flare
+Mana Short
+Mana Vault
+Manabarbs
+Marsh Gas
+Marsh Viper
+Meekstone
+Merfolk of the Pearl Trident
+Mesa Pegasus
+Millstone
+Mind Bomb
+Mind Twist
+Mishra's Factory
+Mishra's War Machine
+Mons's Goblin Raiders
+Morale
+Mountain
+Murk Dwellers
+Nafs Asp
+Nether Shadow
+Nevinyrral's Disk
+Nightmare
+Northern Paladin
+Oasis
+Obsianus Golem
+Onulet
+Orcish Artillery
+Orcish Oriflamme
+Ornithopter
+Osai Vultures
+Paralyze
+Pearled Unicorn
+Personal Incarnation
+Pestilence
+Phantasmal Forces
+Phantasmal Terrain
+Phantom Monster
+Piety
+Pikemen
+Pirate Ship
+Pit Scorpion
+Plague Rats
+Plains
+Power Leak
+Power Sink
+Power Surge
+Pradesh Gypsies
+Primal Clay
+Prodigal Sorcerer
+Psionic Entity
+Psychic Venom
+Purelace
+Pyrotechnics
+Radjan Spirit
+Rag Man
+Raise Dead
+Rebirth
+Red Elemental Blast
+Red Mana Battery
+Red Ward
+Regeneration
+Relic Bind
+Reverse Damage
+Righteousness
+Rod of Ruin
+Royal Assassin
+Samite Healer
+Sandstorm
+Savannah Lions
+Scathe Zombies
+Scavenging Ghoul
+Scryb Sprites
+Sea Serpent
+Seeker
+Segovian Leviathan
+Sengir Vampire
+Serra Angel
+Shanodin Dryads
+Shapeshifter
+Shatter
+Shivan Dragon
+Simulacrum
+Sindbad
+Siren's Call
+Sisters of the Flame
+Sleight of Mind
+Smoke
+Sorceress Queen
+Soul Net
+Spell Blast
+Spirit Link
+Spirit Shackle
+Stasis
+Steal Artifact
+Stone Giant
+Stone Rain
+Stream of Life
+Strip Mine
+Sunglasses of Urza
+Sunken City
+Swamp
+Swords to Plowshares
+Sylvan Library
+Tawnos's Wand
+Tawnos's Weaponry
+Tempest Efreet
+Terror
+Tetravus
+The Brute
+The Hive
+The Rack
+Thicket Basilisk
+Thoughtlace
+Throne of Bone
+Timber Wolves
+Time Elemental
+Titania's Song
+Tranquility
+Triskelion
+Tsunami
+Tundra Wolves
+Tunnel
+Twiddle
+Uncle Istvan
+Unholy Strength
+Unstable Mutation
+Unsummon
+Untamed Wilds
+Urza's Avenger
+Uthden Troll
+Vampire Bats
+Venom
+Verduran Enchantress
+Visions
+Volcanic Eruption
+Wall of Air
+Wall of Bone
+Wall of Brambles
+Wall of Dust
+Wall of Fire
+Wall of Ice
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Wall of Water
+Wall of Wood
+Wanderlust
+War Mammoth
+Warp Artifact
+Water Elemental
+Weakness
+Web
+Whirling Dervish
+White Knight
+White Mana Battery
+White Ward
+Wild Growth
+Will-o'-the-Wisp
+Winds of Change
+Winter Blast
+Winter Orb
+Wooden Sphere
+Word of Binding
+Wrath of God
+Xenic Poltergeist
+Yotian Soldier
+Zephyr Falcon
+Zombie Master
+Stromgald Cabal
+Sulfurous Springs
+Svyelunite Temple
+Swamp
+Sylvan Library
+Tarpan
+Tawnos's Weaponry
+Terror
+The Brute
+The Hive
+The Wretched
+Thicket Basilisk
+Throne of Bone
+Thrull Retainer
+Time Bomb
+Time Elemental
+Titania's Song
+Torture
+Touch of Death
+Tranquility
+Truce
+Tsunami
+Tundra Wolves
+Twiddle
+Underground River
+Unholy Strength
+Unstable Mutation
+Unsummon
+Untamed Wilds
+Updraft
+Urza's Avenger
+Urza's Bauble
+Urza's Mine
+Urza's Power Plant
+Urza's Tower
+Vampire Bats
+Venom
+Verduran Enchantress
+Vodalian Soldiers
+Wall of Air
+Wall of Bone
+Wall of Brambles
+Wall of Fire
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Wanderlust
+War Mammoth
+Warp Artifact
+Weakness
+Whirling Dervish
+White Knight
+Wild Growth
+Wind Spirit
+Winds of Change
+Winter Blast
+Winter Orb
+Wolverine Pack
+Wooden Sphere
+Word of Blasting
+Wrath of God
+Wyluli Wolf
+Xenic Poltergeist
+Zephyr Falcon
+Zombie Master
+Zur's Weirding

@@ -1,0 +1,335 @@
+Æther Snap
+Æther Vial
+Ageless Entity
+Angel's Feather
+Arcane Spyglass
+Arcbound Bruiser
+Arcbound Crusher
+Arcbound Fiend
+Arcbound Hybrid
+Arcbound Lancer
+Arcbound Overseer
+Arcbound Ravager
+Arcbound Reclaimer
+Arcbound Slith
+Arcbound Stinger
+Arcbound Worker
+Auriok Glaivemaster
+Auriok Siege Sled
+Barbed Lightning
+Blinkmoth Nexus
+Burden of Greed
+Carry Away
+Chimeric Egg
+Chittering Rats
+Chromescale Drake
+Coretapper
+Crazed Goblin
+Darksteel Brute
+Darksteel Citadel
+Darksteel Colossus
+Darksteel Forge
+Darksteel Gargoyle
+Darksteel Ingot
+Darksteel Pendant
+Darksteel Reactor
+Death Cloud
+Death-Mask Duplicant
+Demon's Horn
+Dismantle
+Dragon's Claw
+Drill-Skimmer
+Drooling Ogre
+Dross Golem
+Eater of Days
+Echoing Calm
+Echoing Courage
+Echoing Decay
+Echoing Ruin
+Echoing Truth
+Emissary of Despair
+Emissary of Hope
+Essence Drain
+Fangren Firstborn
+Fireball
+Flamebreak
+Furnace Dragon
+Gemini Engine
+Genesis Chamber
+Geth's Grimoire
+Goblin Archaeologist
+Greater Harvester
+Grimclaw Bats
+Hallow
+Heartseeker
+Hoverguard Observer
+Hunger of the Nim
+Infested Roothold
+Inflame
+Juggernaut
+Karstoderm
+Kraken's Eye
+Krark-Clan Stoker
+Last Word
+Leonin Battlemage
+Leonin Bola
+Leonin Shikari
+Lich's Tomb
+Loxodon Mystic
+Machinate
+Magnetic Flux
+Memnarch
+Mephitic Ooze
+Metal Fatigue
+Mirrodin's Core
+Murderous Spoils
+Mycosynth Lattice
+Myr Landshaper
+Myr Matrix
+Myr Moonvessel
+Nemesis Mask
+Neurok Prodigy
+Neurok Transmuter
+Nim Abomination
+Nourish
+Oxidda Golem
+Oxidize
+Panoptic Mirror
+Pristine Angel
+Psychic Overload
+Pteron Ghost
+Pulse of the Dross
+Pulse of the Fields
+Pulse of the Forge
+Pulse of the Grid
+Pulse of the Tangle
+Purge
+Quicksilver Behemoth
+Razor Golem
+Reap and Sow
+Rebuking Ceremony
+Reshape
+Retract
+Ritual of Restoration
+Roaring Slagwurm
+Savage Beating
+Scavenging Scarab
+Screams from Within
+Scrounge
+Second Sight
+Serum Powder
+Shield of Kaldra
+Shriveling Rot
+Shunt
+Skullclamp
+"Slobad, Goblin Tinkerer"
+Soulscour
+Spawning Pit
+Specter's Shroud
+Spellbinder
+Spincrusher
+Spire Golem
+Stand Together
+Steelshaper Apprentice
+Stir the Pride
+Sundering Titan
+Surestrike Trident
+Sword of Fire and Ice
+Sword of Light and Shadow
+Synod Artificer
+Talon of Pain
+Tangle Golem
+Tangle Spider
+Tanglewalker
+Tears of Rage
+Tel-Jilad Outrider
+Tel-Jilad Wolf
+Test of Faith
+Thought Dissector
+Thunderstaff
+Trinisphere
+Turn the Tables
+Unforge
+Ur-Golem's Eye
+Vedalken Engineer
+Vex
+Viridian Acolyte
+Viridian Zealot
+Voltaic Construct
+Vulshok Morningstar
+Vulshok War Boar
+Wand of the Elements
+Well of Lost Dreams
+Whispersilk Cloak
+Wirefly Hive
+Wurm's Tooth
+Withengar Unbound
+Wolfbitten Captive
+Wolfhunter's Quiver
+Wrack with Madness
+Young Wolf
+Zombie Apocalypse
+Light of Day
+Lightning Blast
+Living Lands
+Llanowar Elves
+Longbow Archer
+Lord of Atlantis
+Lost Soul
+Lure
+Mana Prism
+Mana Short
+Manabarbs
+Marble Diamond
+Maro
+Meekstone
+Memory Lapse
+Merfolk of the Pearl Trident
+Mesa Falcon
+Millstone
+Mind Warp
+Mischievous Poltergeist
+Moss Diamond
+Mountain
+Mountain Goat
+Mystic Compass
+Mystical Tutor
+Nature's Resurgence
+Necrosavant
+Nightmare
+Obsianus Golem
+Orcish Artillery
+Orcish Oriflamme
+Order of the Sacred Torch
+Ornithopter
+Pacifism
+Painful Memories
+Panther Warriors
+Patagia Golem
+Pearl Dragon
+Pentagram of the Ages
+Perish
+Pestilence
+Phantasmal Terrain
+Phantom Warrior
+Phyrexian Vault
+Pillage
+Plains
+Polymorph
+Power Sink
+Pradesh Gypsies
+Primal Clay
+Prodigal Sorcerer
+Prosperity
+Psychic Transfer
+Psychic Venom
+Pyrotechnics
+Python
+Radjan Spirit
+Rag Man
+Raging Goblin
+Raise Dead
+Rampant Growth
+Razortooth Rats
+Recall
+Reckless Embermage
+Redwood Treefolk
+Regal Unicorn
+Regeneration
+Relearn
+Relentless Assault
+Remedy
+Remove Soul
+Reprisal
+Resistance Fighter
+Reverse Damage
+River Boa
+Rod of Ruin
+Rowen
+Ruins of Trokair
+Sabretooth Tiger
+Sage Owl
+Samite Healer
+Scaled Wurm
+Scathe Zombies
+Sea Monster
+Segovian Leviathan
+Sengir Autocrat
+Serenity
+Serra's Blessing
+Shanodin Dryads
+Shatter
+Shatterstorm
+Shock
+Sibilant Spirit
+Skull Catapult
+Sky Diamond
+Snake Basket
+Soldevi Sage
+Soul Net
+Spell Blast
+Spirit Link
+Spitting Drake
+Spitting Earth
+Stalking Tiger
+Standing Troops
+Staunch Defenders
+Stone Rain
+Storm Cauldron
+Storm Crow
+Strands of Night
+Stream of Life
+Stromgald Cabal
+Stupor
+Sulfurous Springs
+Summer Bloom
+Sunweb
+Svyelunite Temple
+Swamp
+Syphon Soul
+Talruum Minotaur
+Tariff
+Teferi's Puzzle Box
+Terror
+The Hive
+Thicket Basilisk
+Throne of Bone
+Tidal Surge
+Trained Armodon
+Tranquil Grove
+Tranquility
+Tremor
+Tundra Wolves
+Uktabi Orangutan
+Uktabi Wildcats
+Underground River
+Unseen Walker
+Unsummon
+Untamed Wilds
+Unyaro Griffin
+Vampiric Tutor
+Venerable Monk
+Verduran Enchantress
+Vertigo
+Viashino Warrior
+Vitalize
+Vodalian Soldiers
+Volcanic Dragon
+Volcanic Geyser
+Waiting in the Weeds
+Wall of Air
+Wall of Fire
+Wall of Swords
+Wand of Denial
+Warmth
+Warrior's Honor
+Warthog
+Wild Growth
+Wind Drake
+Wind Spirit
+Wooden Sphere
+Worldly Tutor
+Wrath of God
+Wyluli Wolf
+Zombie Master
+Zur's Weirding

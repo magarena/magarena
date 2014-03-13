@@ -1,0 +1,434 @@
+Abyssal Horror
+Abyssal Specter
+Adarkar Wastes
+Æther Flash
+Agonizing Memories
+Air Elemental
+Aladdin's Ring
+Anaconda
+Ancestral Memories
+Ancient Silverback
+Angelic Page
+Arcane Laboratory
+Archivist
+Ardent Militia
+Balduvian Barbarians
+Baleful Stare
+Beast of Burden
+Bedlam
+Befoul
+Bellowing Fiend
+Benthic Behemoth
+Bereavement
+Birds of Paradise
+Blanchwood Armor
+Blaze
+Blessed Reversal
+Blood Pet
+Bloodshot Cyclops
+Bog Imp
+Bog Wraith
+Boil
+Boomerang
+Breath of Life
+Brushland
+Bull Hippo
+Caltrops
+Canopy Spider
+Castle
+Charcoal Diamond
+Circle of Protection: Black
+Circle of Protection: Blue
+Circle of Protection: Green
+Circle of Protection: Red
+Circle of Protection: White
+City of Brass
+Cloudchaser Eagle
+Coat of Arms
+Compost
+Confiscate
+Coral Merfolk
+Corrupt
+Counterspell
+Creeping Mold
+Crimson Hellkite
+Crossbow Infantry
+Crypt Rats
+Crystal Rod
+Dakmor Lancer
+Daring Apprentice
+Dark Banishing
+Darkest Hour
+Deflection
+Delusions of Mediocrity
+Dingus Egg
+Disenchant
+Disorder
+Disrupting Scepter
+Dregs of Sorrow
+Drudge Skeletons
+Duress
+Eager Cadet
+Early Harvest
+Earthquake
+Eastern Paladin
+Elder Druid
+Elite Archers
+Elvish Archers
+Elvish Champion
+Elvish Lyrist
+Elvish Piper
+Engineered Plague
+Ensnaring Bridge
+Equilibrium
+Evacuation
+Fallen Angel
+Familiar Ground
+Fear
+Femeref Archers
+Feroz's Ban
+Fervor
+Fighting Drake
+Final Fortune
+Fire Diamond
+Fire Elemental
+Fleeting Image
+Flight
+Flying Carpet
+Fog
+Force Spike
+Forest
+Foul Imp
+Fugue
+Fyndhorn Elder
+Gang of Elk
+Gerrard's Wisdom
+Ghitu Fire-Eater
+Giant Cockroach
+Giant Growth
+Giant Octopus
+Giant Spider
+Glacial Wall
+Glorious Anthem
+Goblin Chariot
+Goblin Digging Team
+Goblin Elite Infantry
+Goblin Gardener
+Goblin Glider
+Goblin King
+Goblin Matron
+Goblin Raider
+Goblin Spelunkers
+Goblin War Drums
+Gorilla Chieftain
+Grafted Skullcap
+Granite Grip
+Grapeshot Catapult
+Gravedigger
+Greed
+Grizzly Bears
+Healing Salve
+Heavy Ballista
+Hibernation
+Hill Giant
+Hollow Dogs
+Holy Strength
+Honor Guard
+Horned Turtle
+Howl from Beyond
+Howling Mine
+Hurricane
+Impatience
+Infernal Contract
+Inferno
+Inspiration
+Intrepid Hero
+Iron Star
+Island
+Ivory Cup
+Jalum Tome
+Jandor's Saddlebags
+Jayemdae Tome
+Karplusan Forest
+Kjeldoran Royal Guard
+Knight Errant
+Knighthood
+Lava Axe
+Leshrac's Rite
+Levitation
+Lightning Blast
+Lightning Elemental
+Llanowar Elves
+Lone Wolf
+Longbow Archer
+Looming Shade
+Lord of Atlantis
+Lure
+Mahamoti Djinn
+Mana Breach
+Mana Clash
+Mana Short
+Marble Diamond
+Maro
+Master Healer
+Mawcor
+Meekstone
+Megrim
+Memory Lapse
+Merfolk Looter
+Merfolk of the Pearl Trident
+Might of Oaks
+Millstone
+Mind Rot
+Monstrous Growth
+Moss Diamond
+Mountain
+Nature's Resurgence
+Nature's Revolt
+Nausea
+Necrologia
+Nightmare
+Nocturnal Raid
+Northern Paladin
+Ogre Taskmaster
+Okk
+Opportunity
+Opposition
+Oppression
+Orcish Artillery
+Orcish Oriflamme
+Ostracize
+Pacifism
+Pariah
+Patagia Golem
+Persecute
+Phantom Warrior
+Phyrexian Colossus
+Phyrexian Hulk
+Pillage
+Pit Trap
+Plague Beetle
+Plains
+Pride of Lions
+Prodigal Sorcerer
+Purify
+Pygmy Pyrosaur
+Pyroclasm
+Pyrotechnics
+Rag Man
+Raging Goblin
+Raise Dead
+Rampant Growth
+Razorfoot Griffin
+Razortooth Rats
+Reckless Embermage
+Reclaim
+Redwood Treefolk
+Reflexes
+Regeneration
+Relentless Assault
+Remove Soul
+Reprisal
+Reprocess
+Revenant
+Reverse Damage
+Rod of Ruin
+Rolling Stones
+Rowen
+Sabretooth Tiger
+Sacred Ground
+Sacred Nectar
+Sage Owl
+Samite Healer
+Sanctimony
+Scathe Zombies
+Scavenger Folk
+Sea Monster
+Seasoned Marshal
+Seeker of Skybreak
+Seismic Assault
+Serpent Warrior
+Serra Advocate
+Serra Angel
+Serra's Embrace
+Shanodin Dryads
+Shatter
+Shield Wall
+Shivan Dragon
+Shock
+Sisay's Ring
+Sky Diamond
+Skyshroud Falcon
+Sleight of Hand
+Soul Feast
+Soul Net
+Southern Paladin
+Spellbook
+Spined Wurm
+Spineless Thug
+Spirit Link
+Spitting Earth
+Squall
+Standing Troops
+Starlight
+Static Orb
+Staunch Defenders
+Steal Artifact
+Stone Rain
+Storm Cauldron
+Storm Crow
+Storm Shaman
+Strands of Night
+Stream of Life
+Stronghold Assassin
+Sudden Impact
+Sulfurous Springs
+Sunweb
+Sustainer of the Realm
+Swamp
+Tainted Æther
+Teferi's Puzzle Box
+Telepathic Spies
+Telepathy
+Temporal Adept
+Thieving Magpie
+Thorn Elemental
+Thoughtleech
+Throne of Bone
+Tolarian Winds
+Trained Armodon
+Trained Orgg
+Tranquility
+Treasure Trove
+Treefolk Seedlings
+Tremor
+Twiddle
+Uktabi Wildcats
+Underground River
+Unholy Strength
+Unsummon
+Untamed Wilds
+Venerable Monk
+Vengeance
+Verduran Enchantress
+Vernal Bloom
+Vigilant Drake
+Vizzerdrix
+Volcanic Hammer
+Wall of Air
+Wall of Bone
+Wall of Fire
+Wall of Spears
+Wall of Swords
+Wall of Wonder
+Western Paladin
+Wild Growth
+Wildfire
+Wind Dancer
+Wind Drake
+Wing Snare
+Wood Elves
+Wooden Sphere
+Worship
+Wrath of God
+Yavimaya Enchantress
+Yawgmoth's Edict
+Tor Giant
+Total War
+Touch of Death
+Touch of Vitae
+Trailblazer
+Underground River
+Updraft
+Urza's Bauble
+Veldt
+Venomous Breath
+Vertigo
+Vexing Arcanix
+Vibrating Sphere
+Walking Wall
+Wall of Lava
+Wall of Pine Needles
+Wall of Shields
+War Chariot
+Warning
+Whalebone Glider
+White Scarab
+Whiteout
+Wiitigo
+Wild Growth
+Wind Spirit
+Wings of Aesthir
+Winter's Chill
+Withering Wisps
+Woolly Mammoths
+Woolly Spider
+Word of Blasting
+Word of Undoing
+Wrath of Marit Lage
+Yavimaya Gnats
+Zuran Enchanter
+Zuran Orb
+Zuran Spellcaster
+Zur's Weirding
+Tarpan
+Tawnos's Weaponry
+Terror
+The Brute
+The Hive
+The Wretched
+Thicket Basilisk
+Throne of Bone
+Thrull Retainer
+Time Bomb
+Time Elemental
+Titania's Song
+Torture
+Touch of Death
+Tranquility
+Truce
+Tsunami
+Tundra Wolves
+Twiddle
+Underground River
+Unholy Strength
+Unstable Mutation
+Unsummon
+Untamed Wilds
+Updraft
+Urza's Avenger
+Urza's Bauble
+Urza's Mine
+Urza's Power Plant
+Urza's Tower
+Vampire Bats
+Venom
+Verduran Enchantress
+Vodalian Soldiers
+Wall of Air
+Wall of Bone
+Wall of Brambles
+Wall of Fire
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Wanderlust
+War Mammoth
+Warp Artifact
+Weakness
+Whirling Dervish
+White Knight
+Wild Growth
+Wind Spirit
+Winds of Change
+Winter Blast
+Winter Orb
+Wolverine Pack
+Wooden Sphere
+Word of Blasting
+Wrath of God
+Wyluli Wolf
+Xenic Poltergeist
+Zephyr Falcon
+Zombie Master
+Zur's Weirding

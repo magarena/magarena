@@ -1,0 +1,434 @@
+Act of Treason
+Adaptive Snapjaw
+Aerial Maneuver
+Ætherize
+Agoraphobia
+Alms Beast
+Alpha Authority
+Angelic Edict
+Angelic Skirmisher
+Armored Transport
+Arrows of Justice
+Assault Griffin
+Assemble the Legion
+"Aurelia, the Warleader"
+Aurelia's Fury
+Balustrade Spy
+Bane Alley Broker
+Basilica Guards
+Basilica Screecher
+Beckon Apparition
+Biomass Mutation
+Bioshift
+Biovisionary
+Blind Obedience
+Bomber Corps
+Borborygmos Enraged
+Boros Charm
+Boros Elite
+Boros Guildgate
+Boros Keyrune
+Boros Reckoner
+Breeding Pool
+Burning-Tree Emissary
+Burst of Strength
+Call of the Nightwing
+Cartel Aristocrat
+Cinder Elemental
+Clan Defiance
+Clinging Anemones
+Cloudfin Raptor
+Coerced Confession
+Consuming Aberration
+Contaminated Ground
+Corpse Blockade
+Court Street Denizen
+Crackling Perimeter
+Crocanura
+Crowned Ceratok
+Crypt Ghast
+Daring Skyjek
+Deathcult Rogue
+Deathpact Angel
+Death's Approach
+Debtor's Pulpit
+Devour Flesh
+Diluvian Primordial
+Dimir Charm
+Dimir Guildgate
+Dimir Keyrune
+Dinrova Horror
+Disciple of the Old Ways
+Domri Rade
+Drakewing Krasis
+Duskmantle Guildmage
+Duskmantle Seer
+Dutiful Thrull
+Dying Wish
+Elusive Krasis
+Ember Beast
+Enter the Infinite
+Executioner's Swing
+Experiment One
+Fathom Mage
+Firefist Striker
+Firemane Avenger
+Five-Alarm Fire
+Forced Adaptation
+Fortress Cyclops
+Foundry Champion
+Foundry Street Denizen
+Frenzied Tilling
+Frilled Oculus
+Frontline Medic
+Furious Resistance
+Gateway Shade
+Ghor-Clan Rampager
+Giant Adephage
+"Gideon, Champion of Justice"
+Gift of Orzhova
+Glaring Spotlight
+Godless Shrine
+Greenside Watcher
+Gridlock
+Grisly Spectacle
+Ground Assault
+Gruul Charm
+Gruul Guildgate
+Gruul Keyrune
+Gruul Ragebeast
+Guardian of the Gateless
+Guildscorn Ward
+Gutter Skulk
+Gyre Sage
+Hands of Binding
+Hellkite Tyrant
+Hellraiser Goblin
+High Priest of Penance
+Hindervines
+Hold the Gates
+Holy Mantle
+Homing Lightning
+Horror of the Dim
+Hydroform
+Illness in the Ranks
+Illusionist's Bracers
+Immortal Servitude
+Incursion Specialist
+Ivy Lane Denizen
+Keymaster Rogue
+Killing Glare
+Kingpin's Pet
+Knight of Obligation
+Knight Watch
+Last Thoughts
+"Lazav, Dimir Mastermind"
+Legion Loyalist
+Leyline Phantom
+Lord of the Void
+Luminate Primordial
+Madcap Skills
+Mark for Death
+Martial Glory
+Massive Raid
+Master Biomancer
+Mental Vapors
+Merciless Eviction
+Merfolk of the Depths
+Metropolis Sprite
+Midnight Recovery
+Millennial Gargoyle
+Miming Slime
+Mind Grind
+Mindeye Drake
+Molten Primordial
+Mortus Strider
+Mugging
+Murder Investigation
+Mystic Genesis
+Naturalize
+Nav Squad Commandos
+Nightveil Specter
+Nimbus Swimmer
+"Obzedat, Ghost Council"
+Ogre Slumlord
+One Thousand Lashes
+Ooze Flux
+Ordruun Veteran
+Orzhov Charm
+Orzhov Guildgate
+Orzhov Keyrune
+Paranoid Delusions
+Pit Fight
+Predator's Rapport
+Primal Visitation
+Prime Speaker Zegana
+Prophetic Prism
+Psychic Strike
+Purge the Profane
+Rapid Hybridization
+Razortip Whip
+Realmwright
+Righteous Charge
+Riot Gear
+Ripscale Predator
+Rubblebelt Raiders
+Rubblehulk
+Ruination Wurm
+Rust Scarab
+Sacred Foundry
+Sage's Row Denizen
+Sapphire Drake
+Scab-Clan Charger
+Scatter Arc
+Scorchwalker
+Sepulchral Primordial
+Serene Remembrance
+Shadow Alley Denizen
+Shadow Slice
+Shambleshark
+Shattering Blow
+Shielded Passage
+Signal the Clans
+Simic Charm
+Simic Fluxmage
+Simic Guildgate
+Simic Keyrune
+Simic Manipulator
+Skarrg Goliath
+Skarrg Guildmage
+Skinbrand Goblin
+Skullcrack
+Skyblinder Staff
+Skygames
+Skyknight Legionnaire
+Slate Street Ruffian
+Slaughterhorn
+Smite
+Smog Elemental
+Soul Ransom
+Spark Trooper
+Spell Rupture
+Spire Tracer
+Stolen Identity
+Stomping Ground
+Structural Collapse
+Sunhome Guildmage
+Sylvan Primordial
+Syndic of Tithes
+Syndicate Enforcer
+Thespian's Stage
+Thrull Parasite
+Tin Street Market
+Totally Lost
+Tower Defense
+Towering Thunderfist
+Treasury Thrull
+Truefire Paladin
+Undercity Informer
+Undercity Plague
+Unexpected Results
+Urban Evolution
+Urbis Protector
+Verdant Haven
+Viashino Shanktail
+Vizkopa Confessor
+Vizkopa Guildmage
+Voidwalk
+Warmind Infantry
+Wasteland Viper
+Watery Grave
+Way of the Thief
+Whispering Madness
+Wight of Precinct Six
+Wildwood Rebirth
+Wojek Halberdiers
+Wrecking Ogre
+Zameck Guildmage
+Zarichi Tiger
+Zhur-Taa Swine
+Psionic Entity
+Psychic Venom
+Purelace
+Pyrotechnics
+Radjan Spirit
+Rag Man
+Raise Dead
+Rebirth
+Red Elemental Blast
+Red Mana Battery
+Red Ward
+Regeneration
+Relic Bind
+Reverse Damage
+Righteousness
+Rod of Ruin
+Royal Assassin
+Samite Healer
+Sandstorm
+Savannah Lions
+Scathe Zombies
+Scavenging Ghoul
+Scryb Sprites
+Sea Serpent
+Seeker
+Segovian Leviathan
+Sengir Vampire
+Serra Angel
+Shanodin Dryads
+Shapeshifter
+Shatter
+Shivan Dragon
+Simulacrum
+Sindbad
+Siren's Call
+Sisters of the Flame
+Sleight of Mind
+Smoke
+Sorceress Queen
+Soul Net
+Spell Blast
+Spirit Link
+Spirit Shackle
+Stasis
+Steal Artifact
+Stone Giant
+Stone Rain
+Stream of Life
+Strip Mine
+Sunglasses of Urza
+Sunken City
+Swamp
+Swords to Plowshares
+Sylvan Library
+Tawnos's Wand
+Tawnos's Weaponry
+Tempest Efreet
+Terror
+Tetravus
+The Brute
+The Hive
+The Rack
+Thicket Basilisk
+Thoughtlace
+Throne of Bone
+Timber Wolves
+Time Elemental
+Titania's Song
+Tranquility
+Triskelion
+Tsunami
+Tundra Wolves
+Tunnel
+Twiddle
+Uncle Istvan
+Unholy Strength
+Unstable Mutation
+Unsummon
+Untamed Wilds
+Urza's Avenger
+Uthden Troll
+Vampire Bats
+Venom
+Verduran Enchantress
+Visions
+Volcanic Eruption
+Wall of Air
+Wall of Bone
+Wall of Brambles
+Wall of Dust
+Wall of Fire
+Wall of Ice
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Wall of Water
+Wall of Wood
+Wanderlust
+War Mammoth
+Warp Artifact
+Water Elemental
+Weakness
+Web
+Whirling Dervish
+White Knight
+White Mana Battery
+White Ward
+Wild Growth
+Will-o'-the-Wisp
+Winds of Change
+Winter Blast
+Winter Orb
+Wooden Sphere
+Word of Binding
+Wrath of God
+Xenic Poltergeist
+Yotian Soldier
+Zephyr Falcon
+Zombie Master
+Stromgald Cabal
+Sulfurous Springs
+Svyelunite Temple
+Swamp
+Sylvan Library
+Tarpan
+Tawnos's Weaponry
+Terror
+The Brute
+The Hive
+The Wretched
+Thicket Basilisk
+Throne of Bone
+Thrull Retainer
+Time Bomb
+Time Elemental
+Titania's Song
+Torture
+Touch of Death
+Tranquility
+Truce
+Tsunami
+Tundra Wolves
+Twiddle
+Underground River
+Unholy Strength
+Unstable Mutation
+Unsummon
+Untamed Wilds
+Updraft
+Urza's Avenger
+Urza's Bauble
+Urza's Mine
+Urza's Power Plant
+Urza's Tower
+Vampire Bats
+Venom
+Verduran Enchantress
+Vodalian Soldiers
+Wall of Air
+Wall of Bone
+Wall of Brambles
+Wall of Fire
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Wanderlust
+War Mammoth
+Warp Artifact
+Weakness
+Whirling Dervish
+White Knight
+Wild Growth
+Wind Spirit
+Winds of Change
+Winter Blast
+Winter Orb
+Wolverine Pack
+Wooden Sphere
+Word of Blasting
+Wrath of God
+Wyluli Wolf
+Xenic Poltergeist
+Zephyr Falcon
+Zombie Master
+Zur's Weirding

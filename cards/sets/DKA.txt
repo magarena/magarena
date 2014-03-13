@@ -1,0 +1,335 @@
+Afflicted Deserter
+Alpha Brawl
+Altar of the Lost
+Archangel's Light
+Archdemon of Greed
+Artful Dodge
+Avacyn's Collar
+Bar the Door
+Beguiler of Wills
+Black Cat
+Blood Feud
+Bone to Ash
+Break of Day
+Briarpack Alpha
+Burden of Guilt
+Burning Oil
+Call to the Kindred
+Chalice of Death
+Chalice of Life
+Chant of the Skifsang
+Chill of Foreboding
+Chosen of Markov
+Clinging Mists
+Counterlash
+Crushing Vines
+Curse of Bloodletting
+Curse of Echoes
+Curse of Exhaustion
+Curse of Misfortunes
+Curse of Thirst
+Dawntreader Elk
+Deadly Allure
+Death's Caress
+Deranged Outcast
+Diregraf Captain
+Divination
+Drogskol Captain
+Drogskol Reaver
+Dungeon Geists
+"Elbrus, the Binding Blade"
+Elgaud Inquisitor
+Erdwal Ripper
+Evolving Wilds
+Executioner's Hood
+Faithless Looting
+Faith's Shield
+Falkenrath Aristocrat
+Falkenrath Torturer
+Farbog Boneflinger
+Favor of the Woods
+Feed the Pack
+Fiend of the Shadows
+Fires of Undeath
+Flayer of the Hatebound
+Fling
+Forge Devil
+Gather the Townsfolk
+Gavony Ironwright
+Geralf's Messenger
+Geralf's Mindcrusher
+Ghastly Haunting
+Ghoultree
+Grafdigger's Cage
+Gravecrawler
+Gravepurge
+Gravetiller Wurm
+Grim Backwoods
+Grim Flowering
+Griptide
+Gruesome Discovery
+Harrowing Journey
+Haunted Fengraf
+Havengul Lich
+Havengul Runebinder
+Headless Skaab
+Heavy Mattock
+Heckling Fiends
+Hellrider
+Helvault
+Highborn Ghoul
+Hinterland Hermit
+Hinterland Scourge
+Hollowhenge Beast
+Hollowhenge Spirit
+Hunger of the Howlpack
+Huntmaster of the Fells
+Immerwolf
+Increasing Ambition
+Increasing Confusion
+Increasing Devotion
+Increasing Savagery
+Increasing Vengeance
+Jar of Eyeballs
+Kessig Recluse
+Krallenhorde Killer
+Lambholt Elder
+Lingering Souls
+Lost in the Woods
+Loyal Cathar
+Markov Blademaster
+Markov Warlord
+Markov's Servant
+Midnight Guard
+"Mikaeus, the Unhallowed"
+Mondronen Shaman
+Moonscarred Werewolf
+Moonveil Dragon
+Mystic Retrieval
+Nearheath Stalker
+Nephalia Seakite
+Niblis of the Breath
+Niblis of the Mist
+Niblis of the Urn
+Predator Ooze
+Pyreheart Wolf
+Ravager of the Fells
+Ravenous Demon
+Ray of Revelation
+Reap the Seagraf
+Relentless Skaabs
+Requiem Angel
+Russet Wolves
+Sanctuary Cat
+Saving Grasp
+Scorch the Fields
+Scorned Villager
+Screeching Skaab
+Séance
+Secrets of the Dead
+Shattered Perception
+Shriekgeist
+Sightless Ghoul
+Silverclaw Griffin
+Silverpelt Werewolf
+Skillful Lunge
+Skirsdag Flayer
+Somberwald Dryad
+"Sorin, Lord of Innistrad"
+Soul Seizer
+Spiteful Shadows
+Stormbound Geist
+Strangleroot Geist
+Stromkirk Captain
+Sudden Disappearance
+Talons of Falkenrath
+"Thalia, Guardian of Thraben"
+Thought Scour
+Thraben Doomsayer
+Thraben Heretic
+Torch Fiend
+Tovolar's Magehunter
+Tower Geist
+Tracker's Instincts
+Tragic Slip
+Ulvenwald Bear
+Undying Evil
+Unhallowed Cathar
+Vault of the Archangel
+Vengeful Vampire
+Village Survivors
+Vorapede
+Wakedancer
+Warden of the Wall
+Werewolf Ransacker
+Wild Hunger
+Withengar Unbound
+Wolfbitten Captive
+Wolfhunter's Quiver
+Wrack with Madness
+Young Wolf
+Zombie Apocalypse
+Light of Day
+Lightning Blast
+Living Lands
+Llanowar Elves
+Longbow Archer
+Lord of Atlantis
+Lost Soul
+Lure
+Mana Prism
+Mana Short
+Manabarbs
+Marble Diamond
+Maro
+Meekstone
+Memory Lapse
+Merfolk of the Pearl Trident
+Mesa Falcon
+Millstone
+Mind Warp
+Mischievous Poltergeist
+Moss Diamond
+Mountain
+Mountain Goat
+Mystic Compass
+Mystical Tutor
+Nature's Resurgence
+Necrosavant
+Nightmare
+Obsianus Golem
+Orcish Artillery
+Orcish Oriflamme
+Order of the Sacred Torch
+Ornithopter
+Pacifism
+Painful Memories
+Panther Warriors
+Patagia Golem
+Pearl Dragon
+Pentagram of the Ages
+Perish
+Pestilence
+Phantasmal Terrain
+Phantom Warrior
+Phyrexian Vault
+Pillage
+Plains
+Polymorph
+Power Sink
+Pradesh Gypsies
+Primal Clay
+Prodigal Sorcerer
+Prosperity
+Psychic Transfer
+Psychic Venom
+Pyrotechnics
+Python
+Radjan Spirit
+Rag Man
+Raging Goblin
+Raise Dead
+Rampant Growth
+Razortooth Rats
+Recall
+Reckless Embermage
+Redwood Treefolk
+Regal Unicorn
+Regeneration
+Relearn
+Relentless Assault
+Remedy
+Remove Soul
+Reprisal
+Resistance Fighter
+Reverse Damage
+River Boa
+Rod of Ruin
+Rowen
+Ruins of Trokair
+Sabretooth Tiger
+Sage Owl
+Samite Healer
+Scaled Wurm
+Scathe Zombies
+Sea Monster
+Segovian Leviathan
+Sengir Autocrat
+Serenity
+Serra's Blessing
+Shanodin Dryads
+Shatter
+Shatterstorm
+Shock
+Sibilant Spirit
+Skull Catapult
+Sky Diamond
+Snake Basket
+Soldevi Sage
+Soul Net
+Spell Blast
+Spirit Link
+Spitting Drake
+Spitting Earth
+Stalking Tiger
+Standing Troops
+Staunch Defenders
+Stone Rain
+Storm Cauldron
+Storm Crow
+Strands of Night
+Stream of Life
+Stromgald Cabal
+Stupor
+Sulfurous Springs
+Summer Bloom
+Sunweb
+Svyelunite Temple
+Swamp
+Syphon Soul
+Talruum Minotaur
+Tariff
+Teferi's Puzzle Box
+Terror
+The Hive
+Thicket Basilisk
+Throne of Bone
+Tidal Surge
+Trained Armodon
+Tranquil Grove
+Tranquility
+Tremor
+Tundra Wolves
+Uktabi Orangutan
+Uktabi Wildcats
+Underground River
+Unseen Walker
+Unsummon
+Untamed Wilds
+Unyaro Griffin
+Vampiric Tutor
+Venerable Monk
+Verduran Enchantress
+Vertigo
+Viashino Warrior
+Vitalize
+Vodalian Soldiers
+Volcanic Dragon
+Volcanic Geyser
+Waiting in the Weeds
+Wall of Air
+Wall of Fire
+Wall of Swords
+Wand of Denial
+Warmth
+Warrior's Honor
+Warthog
+Wild Growth
+Wind Drake
+Wind Spirit
+Wooden Sphere
+Worldly Tutor
+Wrath of God
+Wyluli Wolf
+Zombie Master
+Zur's Weirding
