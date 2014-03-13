@@ -8,7 +8,7 @@
                     new MagicMayChoice(MagicTargetChoice.NEG_TARGET_PERMANENT),
                     MagicExileTargetPicker.create(),
                     this,
-                    "Gain control of target creature\$ until end of turn. Untap it. " +
+                    "Gain control of target permanent\$ until end of turn. Untap it. " +
                     "It gains haste until end of turn."
                 ):
                 MagicEvent.NONE;
