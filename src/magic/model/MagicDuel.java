@@ -205,8 +205,7 @@ public class MagicDuel {
         final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(duelConfig.getCube());
         final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
         if (player.getDeckProfile().isPreConstructed()) {
-            // use a deck randomly chosen from the "prebuilt" directory.
-            DeckUtils.loadRandomDeck(player);
+            DeckUtils.loadRandomDeckFile(player);
         } else {
             player.generateDeck(generator);
         }
@@ -238,7 +237,7 @@ public class MagicDuel {
 
     private void createRandomDeck(final MagicPlayerDefinition player) {
         if(player.getDeckGenerator() == null && player.getDeckProfile().getNrOfColors() == 0) {
-            DeckUtils.loadRandomDeck(player);
+            DeckUtils.loadRandomDeckFile(player);
         } else {
             final MagicCubeDefinition cubeDefinition=CubeDefinitions.getCubeDefinition(duelConfig.getCube());
             final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);

@@ -302,7 +302,11 @@ public class DeckUtils {
         }
     }
 
-    public static void loadRandomDeck(final MagicPlayerDefinition player) {
+    /**
+     *  Load a deck randomly chosen from the "decks" directory.
+     *  (includes both custom & prebuilt decks).
+     */
+    public static void loadRandomDeckFile(final MagicPlayerDefinition player) {
         final File deckFile=new File(getDeckFolder());
         final List<File> deckFiles=new ArrayList<File>();
         retrieveDeckFiles(deckFile,deckFiles);
