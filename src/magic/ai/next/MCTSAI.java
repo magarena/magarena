@@ -19,6 +19,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -142,12 +143,13 @@ public class MCTSAI implements MagicAI {
 
         log("MCTS cached=" + root.getNumSim());
 
+        final int capacity = THREADS - 1;
         final ExecutorService executor = new ThreadPoolExecutor(
-            THREADS - 1, 
-            THREADS - 1, 
+            capacity, 
+            capacity, 
             0L, 
             TimeUnit.MILLISECONDS,
-            new SynchronousQueue<Runnable>(),
+            new ArrayBlockingQueue<Runnable>(capacity),
             new ThreadPoolExecutor.CallerRunsPolicy()
         );
             
