@@ -5,5 +5,5 @@ value=2.583
 rarity=C
 type=Artifact
 cost={3}
-ability=tap add mana {W} or {U};cost {W}{U},Sacrifice SN: PN draws a card.
+ability=tap add mana {W} or {U};cost {W}{U},{T},Sacrifice SN: PN draws a card.
 timing=artifact
