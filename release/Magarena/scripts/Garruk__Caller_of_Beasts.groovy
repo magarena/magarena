@@ -63,9 +63,9 @@
                 new MagicWhenOtherSpellIsCastTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
-                        return (cardOnStack.isFriend(permanent) && cardOnStack.hasType(MagicType.Creature)) ?
+                        return (cardOnStack.getController().getId() == you.getId() && cardOnStack.hasType(MagicType.Creature)) ?
                             new MagicEvent(
-                                permanent,
+                                cardOnStack,
                                 this,
                                 "PN searches his or her library for creature card and puts that card onto the battlefield. Then shuffle PN's library."
                             ):

@@ -356,7 +356,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
             final MagicPlayer curr = perm.getController();
-            if (!curr.controlsPermanent(perm)) {
+            if (curr != player) {
                 game.addDelayedAction(new MagicChangeControlAction(curr, perm, perm.getScore()));
             }
             perm.updateScore();
