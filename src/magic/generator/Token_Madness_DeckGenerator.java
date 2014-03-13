@@ -5,7 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
 
-public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
+public class Token_Madness_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "wg";
     private static final String[] spells = {

@@ -6,7 +6,7 @@ import magic.ai.MagicAI;
 import magic.data.CubeDefinitions;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
-import magic.generator.DefaultDeckGenerator;
+import magic.generator.RandomDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
 import magic.ui.viewer.DeckStrengthViewer;
@@ -202,11 +202,21 @@ public class MagicDuel {
     }
 
     public void buildDeck(final MagicPlayerDefinition player) {
-        final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(duelConfig.getCube());
-        final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
         if (player.getDeckProfile().isPreConstructed()) {
             DeckUtils.loadRandomDeckFile(player);
         } else {
+            final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(duelConfig.getCube());
+            final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
+            player.generateDeck(generator);
+        }
+    }
+
+    private void createRandomDeck(final MagicPlayerDefinition player) {
+        if(player.getDeckGenerator() == null && player.getDeckProfile().getNrOfColors() == 0) {
+            DeckUtils.loadRandomDeckFile(player);
+        } else {
+            final MagicCubeDefinition cubeDefinition=CubeDefinitions.getCubeDefinition(duelConfig.getCube());
+            final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
             player.generateDeck(generator);
         }
     }
@@ -232,16 +242,6 @@ public class MagicDuel {
             default:
                 break;
             }
-        }
-    }
-
-    private void createRandomDeck(final MagicPlayerDefinition player) {
-        if(player.getDeckGenerator() == null && player.getDeckProfile().getNrOfColors() == 0) {
-            DeckUtils.loadRandomDeckFile(player);
-        } else {
-            final MagicCubeDefinition cubeDefinition=CubeDefinitions.getCubeDefinition(duelConfig.getCube());
-            final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
-            player.generateDeck(generator);
         }
     }
 

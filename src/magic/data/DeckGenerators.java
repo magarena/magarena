@@ -1,6 +1,6 @@
 package magic.data;
 
-import magic.generator.DefaultDeckGenerator;
+import magic.generator.RandomDeckGenerator;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,10 +18,10 @@ public class DeckGenerators {
 
     private static final String FILENAME = "deckgenerators.txt";
 
-    private final Map<String, DefaultDeckGenerator> generatorsMap;
+    private final Map<String, RandomDeckGenerator> generatorsMap;
 
     private DeckGenerators() {
-        generatorsMap = new TreeMap<String, DefaultDeckGenerator>();
+        generatorsMap = new TreeMap<String, RandomDeckGenerator>();
     }
 
     public Set<String> getGeneratorNames() {
@@ -39,7 +39,7 @@ public class DeckGenerators {
                 generatorsMap.put(
                         name,
                         Class.forName("magic.generator." + cname + "_DeckGenerator")
-                             .asSubclass(DefaultDeckGenerator.class)
+                             .asSubclass(RandomDeckGenerator.class)
                              .newInstance()
                     );
                 System.err.println("added deck generator " + name);
@@ -55,7 +55,7 @@ public class DeckGenerators {
         }
     }
 
-    public DefaultDeckGenerator getDeckGenerator(final String name) {
+    public RandomDeckGenerator getDeckGenerator(final String name) {
         return generatorsMap.get(name);
     }
 

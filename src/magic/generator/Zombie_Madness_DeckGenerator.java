@@ -6,7 +6,7 @@ import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
 
-public class Zombie_Madness_DeckGenerator extends DefaultDeckGenerator {
+public class Zombie_Madness_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "b";
     private static final String[] cards = {

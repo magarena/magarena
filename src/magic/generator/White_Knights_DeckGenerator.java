@@ -6,7 +6,7 @@ import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
 
-public class White_Knights_DeckGenerator extends DefaultDeckGenerator {
+public class White_Knights_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "w";
     private static final String[] cards = {

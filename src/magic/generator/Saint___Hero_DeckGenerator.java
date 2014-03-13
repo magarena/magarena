@@ -4,7 +4,7 @@ import magic.data.CubeDefinitions;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
 
-public class Saint___Hero_DeckGenerator extends DefaultDeckGenerator {
+public class Saint___Hero_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "wu";
     private static final String[] spells = {

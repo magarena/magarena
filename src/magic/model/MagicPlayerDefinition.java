@@ -2,7 +2,7 @@ package magic.model;
 
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
-import magic.generator.DefaultDeckGenerator;
+import magic.generator.RandomDeckGenerator;
 import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
 import magic.ui.theme.PlayerAvatar;
@@ -115,7 +115,7 @@ public class MagicPlayerDefinition {
         deck.setContent(aDeck);
     }
 
-    public DefaultDeckGenerator getDeckGenerator() {
+    public RandomDeckGenerator getDeckGenerator() {
         final String name = getDeckProfile().getDeckGeneratorName();
 
         if (name == null) {
@@ -125,8 +125,8 @@ public class MagicPlayerDefinition {
         return DeckGenerators.getInstance().getDeckGenerator(name);
     }
 
-    void generateDeck(final DefaultDeckGenerator defaultGenerator) {
-        final DefaultDeckGenerator customGenerator =  getDeckGenerator();
+    void generateDeck(final RandomDeckGenerator defaultGenerator) {
+        final RandomDeckGenerator customGenerator =  getDeckGenerator();
 
         if(customGenerator == null) {
             defaultGenerator.generateDeck(DECK_SIZE, deckProfile, deck);

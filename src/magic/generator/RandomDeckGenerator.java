@@ -11,14 +11,14 @@ import magic.model.MagicRandom;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DefaultDeckGenerator {
+public class RandomDeckGenerator {
 
     private final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
 
     private MagicCubeDefinition cubeDefinition;
 
-    public DefaultDeckGenerator(final MagicCubeDefinition cubeDefinition) {
+    public RandomDeckGenerator(final MagicCubeDefinition cubeDefinition) {
         this.cubeDefinition = cubeDefinition;
     }
 

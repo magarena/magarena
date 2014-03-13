@@ -6,7 +6,7 @@ import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
 
-public class Vampire_Rage_DeckGenerator extends DefaultDeckGenerator {
+public class Vampire_Rage_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "br";
     private static final String[] spells = {

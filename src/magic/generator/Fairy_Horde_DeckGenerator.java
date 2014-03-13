@@ -6,7 +6,7 @@ import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
 
-public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
+public class Fairy_Horde_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "bu";
     private static final String[] spells = {

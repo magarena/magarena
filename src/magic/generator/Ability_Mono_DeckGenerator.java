@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class Ability_Mono_DeckGenerator extends DefaultDeckGenerator {
+public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
 
     private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 30;
 
