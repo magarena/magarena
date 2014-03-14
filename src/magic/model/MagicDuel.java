@@ -3,16 +3,17 @@ package magic.model;
 import magic.MagicMain;
 import magic.MagicUtility;
 import magic.ai.MagicAI;
-import magic.data.CubeDefinitions;
+import magic.data.DeckGenerators;
 import magic.data.DeckUtils;
 import magic.data.DuelConfig;
-import magic.generator.DefaultDeckGenerator;
 import magic.model.phase.MagicDefaultGameplay;
 import magic.model.player.PlayerProfile;
 import magic.ui.viewer.DeckStrengthViewer;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Properties;
@@ -26,7 +27,7 @@ public class MagicDuel {
     private static final String WON="won";
     private static final String START="start";
 
-    private final DuelConfig configuration;
+    private final DuelConfig duelConfig;
     private MagicPlayerDefinition[] playerDefinitions;
     private MagicAI[] ais;
     private int opponentIndex;
@@ -37,7 +38,7 @@ public class MagicDuel {
     private final int[] difficulty = new int[2];
 
     public MagicDuel(final DuelConfig configuration) {
-        this.configuration=configuration;
+        this.duelConfig=configuration;
         ais=configuration.getPlayerAIs();
         restart();
     }
@@ -52,7 +53,7 @@ public class MagicDuel {
     }
 
     public DuelConfig getConfiguration() {
-        return configuration;
+        return duelConfig;
     }
 
     public int getGameNr() {
@@ -64,7 +65,7 @@ public class MagicDuel {
     }
 
     public int getGamesTotal() {
-        return (playerDefinitions.length-1)*configuration.getNrOfGames();
+        return (playerDefinitions.length-1)*duelConfig.getNrOfGames();
     }
 
     public int getGamesWon() {
@@ -105,7 +106,7 @@ public class MagicDuel {
     }
 
     public void updateDifficulty() {
-        final int aiDifficulty = configuration.getAiDifficulty();
+        final int aiDifficulty = duelConfig.getAiDifficulty();
         difficulty[0] = aiDifficulty;
         difficulty[1] = aiDifficulty;
     }
@@ -132,32 +133,38 @@ public class MagicDuel {
             startPlayer=0;
         }
         gameNr++;
-        if (gameNr>configuration.getNrOfGames()) {
+        if (gameNr>duelConfig.getNrOfGames()) {
             gameNr=1;
             opponentIndex++;
             determineStartPlayer();
         }
 
         if (!DeckStrengthViewer.isRunning() && !MagicUtility.isTestGame()) {
-            configuration.getPlayerOneProfile().getStats().update(won, game.getPlayer(0), game);
-            configuration.getPlayerTwoProfile().getStats().update(!won, game.getPlayer(1), game);
+            duelConfig.getPlayerProfile(0).getStats().update(won, game.getPlayer(0), game);
+            duelConfig.getPlayerProfile(1).getStats().update(!won, game.getPlayer(1), game);
         }
     }
 
     private MagicPlayerDefinition[] createPlayers() {
-        final MagicPlayerDefinition[] players=new MagicPlayerDefinition[2];
-        players[0] = new MagicPlayerDefinition(configuration.getPlayerOneProfile().getPlayerName(), false, configuration.getMagicPlayerProfile());
-        players[1] = new MagicPlayerDefinition(configuration.getPlayerTwoProfile().getPlayerName(), true,configuration.getMagicOpponentProfile());
+        final MagicPlayerDefinition[] players = new MagicPlayerDefinition[DuelConfig.MAX_PLAYERS];
+        players[0] =
+                new MagicPlayerDefinition(
+                        duelConfig.getPlayerProfile(0),
+                        duelConfig.getPlayerDeckProfile(0));
+        players[1] =
+                new MagicPlayerDefinition(
+                        duelConfig.getPlayerProfile(1),
+                        duelConfig.getPlayerDeckProfile(1));
         return players;
     }
 
     public MagicGame nextGame(final boolean sound) {
         //create players
-        final MagicPlayer player   = new MagicPlayer(configuration.getStartLife(),playerDefinitions[0],0);
-        final MagicPlayer opponent = new MagicPlayer(configuration.getStartLife(),playerDefinitions[opponentIndex],1);
+        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[0],0);
+        final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(),playerDefinitions[opponentIndex],1);
 
         //give the AI player extra life
-        opponent.setLife(opponent.getLife() + configuration.getAiExtraLife());
+        opponent.setLife(opponent.getLife() + duelConfig.getAiExtraLife());
 
         //determine who starts first
         final MagicPlayer start    = startPlayer == 0 ? player : opponent;
@@ -171,8 +178,8 @@ public class MagicDuel {
                 sound);
 
         //create hand and library
-        player.createHandAndLibrary(configuration.getHandSize());
-        opponent.createHandAndLibrary(configuration.getHandSize());
+        player.createHandAndLibrary(duelConfig.getHandSize());
+        opponent.createHandAndLibrary(duelConfig.getHandSize());
         return game;
     }
 
@@ -193,26 +200,34 @@ public class MagicDuel {
         this.playerDefinitions=aPlayerDefinitions;
     }
 
+    // Used by the "Generate Deck" button in DuelPanel.
     public void buildDeck(final MagicPlayerDefinition player) {
-        final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(configuration.getCube());
-        final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
-        if (player.getProfile().isPreConstructed()) {
-            DeckUtils.loadRandomDeck(player);
-        } else {
-            player.generateDeck(generator);
-        }
+        DeckGenerators.setRandomDeck(player);
     }
 
     private void buildDecks() {
-        final MagicCubeDefinition cubeDefinition=CubeDefinitions.getCubeDefinition(configuration.getCube());
-        final DefaultDeckGenerator generator = new DefaultDeckGenerator(cubeDefinition);
         for (final MagicPlayerDefinition player : playerDefinitions) {
-            if(player.getDeckGenerator() == null && player.getProfile().getNrOfColors() == 0) {
-                DeckUtils.loadRandomDeck(player);
-            } else {
-                player.generateDeck(generator);
+            switch (player.getDeckProfile().getDeckType()) {
+            case Random:
+                DeckGenerators.setRandomDeck(player);
+                break;
+            case Preconstructed:
+                setDeckFromFile(player, DeckUtils.getPrebuiltDecksFolder());
+                break;
+            case Custom:
+                setDeckFromFile(player, Paths.get(DeckUtils.getDeckFolder()));
+                break;
+            default:
+                break;
             }
         }
+    }
+
+    private void setDeckFromFile(final MagicPlayerDefinition player, final Path deckFolder) {
+        final String deckFilename = player.getDeckProfile().getDeckValue() + ".dec";
+        final Path deckPath = deckFolder.resolve(deckFilename);
+        final MagicDeck deck = DeckUtils.loadDeckFromFile(deckPath.toString());
+        player.setDeck(deck);
     }
 
     public void initialize() {
@@ -232,7 +247,7 @@ public class MagicDuel {
     }
 
     private void save(final Properties properties) {
-        configuration.save(properties);
+        duelConfig.save(properties);
 
         properties.setProperty(OPPONENT,Integer.toString(opponentIndex));
         properties.setProperty(GAME,Integer.toString(gameNr));
@@ -266,7 +281,7 @@ public class MagicDuel {
     }
 
     private void load(final Properties properties) {
-        configuration.load(properties);
+        duelConfig.load(properties);
 
         opponentIndex=Integer.parseInt(properties.getProperty(OPPONENT,"1"));
         gameNr=Integer.parseInt(properties.getProperty(GAME,"1"));
@@ -300,9 +315,9 @@ public class MagicDuel {
             final int playerOneGamesWon = getGamesWon();
             final int playerTwoGamesWon = getGamesPlayed() - playerOneGamesWon;
             if (playerOneGamesWon > playerTwoGamesWon) {
-                return getConfiguration().getPlayerOneProfile();
+                return getConfiguration().getPlayerProfile(0);
             } else {
-                return getConfiguration().getPlayerTwoProfile();
+                return getConfiguration().getPlayerProfile(1);
             }
         }
     }

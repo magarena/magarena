@@ -106,12 +106,7 @@ public class DuelPanel extends TexturedPanel {
         for(int i = 0; i < players.length; i++) {
 
             final MagicPlayerDefinition player = players[i];
-
-            if (player.isArtificial()) {
-                player.setAvatar(duel.getConfiguration().getPlayerTwoProfile().getAvatar());
-            } else {
-                player.setAvatar(duel.getConfiguration().getPlayerOneProfile().getAvatar());
-            }
+            player.setAvatar(duel.getConfiguration().getPlayerProfile(i).getAvatar());
 
             // deck description
             deckDescriptionViewers[i] = new DeckDescriptionViewer();
@@ -201,7 +196,7 @@ public class DuelPanel extends TexturedPanel {
             // add as a tab
             tabbedPane.addTab(null, tabPanel);
             final DuelConfig duelConfig = duel.getConfiguration();
-            final PlayerProfile profile = (i == 0 ? duelConfig.getPlayerOneProfile() : duelConfig.getPlayerTwoProfile());
+            final PlayerProfile profile = duelConfig.getPlayerProfile(i);
             tabbedPane.setTabComponentAt(i, new PlayerPanel(profile));
         }
 

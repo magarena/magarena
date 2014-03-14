@@ -3,9 +3,9 @@ package magic.generator;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 
-public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
+public class Token_Madness_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "wg";
     private static final String[] spells = {
@@ -66,7 +66,7 @@ public class Token_Madness_DeckGenerator extends DefaultDeckGenerator {
         addRequiredCards(deck, lands);
     }
 
-    public void setColors(final MagicPlayerProfile profile) {
+    public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }
 }

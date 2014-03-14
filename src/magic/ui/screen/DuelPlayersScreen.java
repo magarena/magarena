@@ -7,6 +7,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 
 import net.miginfocom.swing.MigLayout;
+import magic.data.DeckType;
 import magic.data.DuelConfig;
 import magic.model.player.PlayerProfile;
 import magic.ui.MagicFrame;
@@ -15,7 +16,7 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.DeckComboPanel;
+import magic.ui.widget.DuelPlayerDeckPanel;
 import magic.ui.widget.DuelPlayerPanel;
 
 @SuppressWarnings("serial")
@@ -75,10 +76,10 @@ public class DuelPlayersScreen
         duelConfig.setHandSize(content.getHandSize());
         duelConfig.setNrOfGames(content.getNrOfGames());
         duelConfig.setCube(content.getCube());
-        duelConfig.setPlayerOneProfile(content.getPlayerProfile(0));
-        duelConfig.setPlayerTwoProfile(content.getPlayerProfile(1));
-        duelConfig.setPlayerOneDeckGenerator(content.getPlayerDeckGenerator(0));
-        duelConfig.setPlayerTwoDeckGenerator(content.getPlayerDeckGenerator(1));
+        duelConfig.setPlayerProfile(0, content.getPlayerProfile(0));
+        duelConfig.setPlayerProfile(1, content.getPlayerProfile(1));
+        duelConfig.setPlayerDeckProfile(0, content.getDeckType(0), content.getDeckValue(0));
+        duelConfig.setPlayerDeckProfile(1, content.getDeckType(1), content.getDeckValue(1));
         duelConfig.save();
     }
 
@@ -103,16 +104,15 @@ public class DuelPlayersScreen
 
         private final DuelSettingsPanel duelSettingsPanel;
         private final DuelPlayerPanel[] playerPanels = new DuelPlayerPanel[2];
-        private final DeckComboPanel[] playerDeckPanels = new DeckComboPanel[2];
+        private final DuelPlayerDeckPanel[] newPlayerDeckPanels = new DuelPlayerDeckPanel[2];
 
         public ScreenContent(final DuelConfig config, final MagicFrame frame) {
-
-            duelSettingsPanel = new DuelSettingsPanel(frame, config);
-            playerPanels[0] = new DuelPlayerPanel(frame, config.getPlayerOneProfile());
-            playerPanels[1] = new DuelPlayerPanel(frame, config.getPlayerTwoProfile());
-            playerDeckPanels[0] = new DeckComboPanel(config.getPlayerOneDeckGenerator());
-            playerDeckPanels[1] = new DeckComboPanel(config.getPlayerTwoDeckGenerator());
-
+            // create screen components.
+            this.duelSettingsPanel = new DuelSettingsPanel(frame, config);
+            for (int i = 0; i < DuelConfig.MAX_PLAYERS; i++) {
+                playerPanels[i] = new DuelPlayerPanel(frame, config.getPlayerProfile(i));
+                newPlayerDeckPanels[i] = new DuelPlayerDeckPanel(frame, config.getPlayerDeckProfile(i));
+            }
             setOpaque(false);
             doMigLayout();
         }
@@ -133,8 +133,11 @@ public class DuelPlayersScreen
             return duelSettingsPanel.getStartLife();
         }
 
-        public String getPlayerDeckGenerator(final int index) {
-            return playerDeckPanels[index].getDeckGenerator();
+        public String getDeckValue(final int playerIndex) {
+            return newPlayerDeckPanels[playerIndex].getDeckValue();
+        }
+        public DeckType getDeckType(final int playerIndex) {
+            return newPlayerDeckPanels[playerIndex].getDeckType();
         }
 
         public PlayerProfile getPlayerProfile(final int index) {
@@ -145,18 +148,17 @@ public class DuelPlayersScreen
             setLayout(new MigLayout("insets 0, center, center, wrap 2"));
             add(duelSettingsPanel, "w 548!, h 40!, span 2, gapbottom 4");
             layoutPlayerPanels();
-            layoutPlayerDeckPanels();
+            layoutNewPlayerDeckPanels();
+        }
+
+        private void layoutNewPlayerDeckPanels() {
+            add(newPlayerDeckPanels[0], "w 270!, h 60!");
+            add(newPlayerDeckPanels[1], "w 270!, h 60!");
         }
 
         private void layoutPlayerPanels() {
             for (final DuelPlayerPanel panel : playerPanels) {
                 add(panel, "w 270!, h 270!, gapright 4");
-            }
-        }
-
-        private void layoutPlayerDeckPanels() {
-            for (final DeckComboPanel panel : playerDeckPanels) {
-                add(panel, "w 270!");
             }
         }
 

@@ -5,20 +5,20 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicCubeDefinition;
 import magic.model.MagicDeck;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicRandom;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DefaultDeckGenerator {
+public class RandomDeckGenerator {
 
     private final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
 
     private MagicCubeDefinition cubeDefinition;
 
-    public DefaultDeckGenerator(final MagicCubeDefinition cubeDefinition) {
+    public RandomDeckGenerator(final MagicCubeDefinition cubeDefinition) {
         this.cubeDefinition = cubeDefinition;
     }
 
@@ -76,7 +76,7 @@ public class DefaultDeckGenerator {
         return true;
     }
 
-    public void generateDeck(final int size, final MagicPlayerProfile profile, final MagicDeck deck) {
+    public void generateDeck(final int size, final MagicDeckProfile profile, final MagicDeck deck) {
         setColors(profile);
 
         final MagicCondensedDeck condensedDeck = new MagicCondensedDeck();
@@ -192,7 +192,7 @@ public class DefaultDeckGenerator {
 
     public void addRequiredLands(final MagicCondensedDeck deck) { }
 
-    public void setColors(final MagicPlayerProfile profile) {    }
+    public void setColors(final MagicDeckProfile profile) {    }
 
     public boolean ignoreMaxColorless() {
         return false;

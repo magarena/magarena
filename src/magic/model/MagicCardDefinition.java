@@ -513,7 +513,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return costEvent;
     }
 
-    public boolean isPlayable(final MagicPlayerProfile profile) {
+    public boolean isPlayable(final MagicDeckProfile profile) {
         if (isLand()) {
             int source = 0;
             for (final MagicColor color : profile.getColors()) {

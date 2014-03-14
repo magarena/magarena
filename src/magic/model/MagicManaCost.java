@@ -266,7 +266,7 @@ public class MagicManaCost {
         return icons;
     }
 
-    int getCostScore(final MagicPlayerProfile profile) {
+    int getCostScore(final MagicDeckProfile profile) {
         final int[] singleCounts=new int[MagicManaType.NR_OF_TYPES];
         int doubleCount=0;
         int maxSingleCount=0;

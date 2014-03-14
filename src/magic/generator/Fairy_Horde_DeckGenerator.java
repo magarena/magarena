@@ -3,10 +3,10 @@ package magic.generator;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
 
-public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
+public class Fairy_Horde_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "bu";
     private static final String[] spells = {
@@ -59,7 +59,7 @@ public class Fairy_Horde_DeckGenerator extends DefaultDeckGenerator {
         addRequiredCards(deck, lands);
     }
 
-    public void setColors(final MagicPlayerProfile profile) {
+    public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }
 

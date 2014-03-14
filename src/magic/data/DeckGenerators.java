@@ -1,6 +1,8 @@
 package magic.data;
 
-import magic.generator.DefaultDeckGenerator;
+import magic.generator.RandomDeckGenerator;
+import magic.model.MagicCubeDefinition;
+import magic.model.MagicPlayerDefinition;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,10 +20,10 @@ public class DeckGenerators {
 
     private static final String FILENAME = "deckgenerators.txt";
 
-    private final Map<String, DefaultDeckGenerator> generatorsMap;
+    private final Map<String, RandomDeckGenerator> generatorsMap;
 
     private DeckGenerators() {
-        generatorsMap = new TreeMap<String, DefaultDeckGenerator>();
+        generatorsMap = new TreeMap<String, RandomDeckGenerator>();
     }
 
     public Set<String> getGeneratorNames() {
@@ -32,18 +34,14 @@ public class DeckGenerators {
         // find class
         final String cname = name.replaceAll("[^A-Za-z0-9]", "_");
         try {
-            // Temporarily disable troublesome generators.
-            // - Ability_Mono causes an exception (issue 446).
-            final boolean isGeneratorValid = !cname.equalsIgnoreCase("ability_mono");
-            if (isGeneratorValid) {
-                generatorsMap.put(
-                        name,
-                        Class.forName("magic.generator." + cname + "_DeckGenerator")
-                             .asSubclass(DefaultDeckGenerator.class)
-                             .newInstance()
+            generatorsMap.put(
+                    name,
+                    Class.forName("magic.generator." + cname + "_DeckGenerator")
+                    .asSubclass(RandomDeckGenerator.class)
+                    .newInstance()
                     );
-                System.err.println("added deck generator " + name);
-            }
+            System.err.println("added deck generator " + name);
+
         } catch (final ClassNotFoundException ex) {
             System.err.println("WARNING. Unable to find deck generator class for " + name);
         } catch (final ClassCastException ex) {
@@ -55,7 +53,7 @@ public class DeckGenerators {
         }
     }
 
-    public DefaultDeckGenerator getDeckGenerator(final String name) {
+    public RandomDeckGenerator getDeckGenerator(final String name) {
         return generatorsMap.get(name);
     }
 
@@ -93,5 +91,31 @@ public class DeckGenerators {
 
     public static DeckGenerators getInstance() {
         return INSTANCE;
+    }
+
+    /**
+     * Generates a cube-limited random deck for the specified player.
+     * <p>
+     * This also includes the various random theme decks (like "Fairy Horde", "Token Madness", etc).
+     */
+    private static void setRandomColorDeck(final MagicPlayerDefinition player) {
+        final MagicCubeDefinition cubeDefinition = CubeDefinitions.getCubeDefinition(DuelConfig.getInstance().getCube());
+        final RandomDeckGenerator generator = new RandomDeckGenerator(cubeDefinition);
+        player.generateDeck(generator);
+    }
+
+    /**
+     * Assigns a random deck to the specified player.
+     * <p>
+     * This can be generated from scratch or an existing deck (.dec) file.
+     */
+    public static void setRandomDeck(final MagicPlayerDefinition player) {
+        final boolean isUnspecifiedGenerator = (player.getDeckGenerator() == null) && (player.getDeckProfile().getNrOfColors() == 0);
+        final boolean loadRandomDeckFile = player.getDeckProfile().isPreConstructed() || isUnspecifiedGenerator;
+        if (loadRandomDeckFile) {
+            DeckUtils.loadRandomDeckFile(player);
+        } else {
+            setRandomColorDeck(player);
+        }
     }
 }

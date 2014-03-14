@@ -5,7 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicRandom;
 
 import javax.swing.JOptionPane;
@@ -252,9 +252,9 @@ public class DeckUtils {
             colorText.append(MagicColor.values()[index].getSymbol());
             colorCount[index]=0;
         }
-        final MagicPlayerProfile profile = new MagicPlayerProfile(colorText.toString());
+        final MagicDeckProfile profile = new MagicDeckProfile(colorText.toString());
         profile.setPreConstructed();
-        player.setProfile(profile);
+        player.setDeckProfile(profile);
     }
 
     public static void showUnsupportedCards(final MagicDeck unsupported) {
@@ -302,7 +302,11 @@ public class DeckUtils {
         }
     }
 
-    public static void loadRandomDeck(final MagicPlayerDefinition player) {
+    /**
+     *  Load a deck randomly chosen from the "decks" directory.
+     *  (includes both custom & prebuilt decks).
+     */
+    public static void loadRandomDeckFile(final MagicPlayerDefinition player) {
         final File deckFile=new File(getDeckFolder());
         final List<File> deckFiles=new ArrayList<File>();
         retrieveDeckFiles(deckFile,deckFiles);
@@ -319,7 +323,7 @@ public class DeckUtils {
             for (int count=16;count>0;count--) {
                 deck.add(land);
             }
-            player.setProfile(new MagicPlayerProfile("w"));
+            player.setDeckProfile(new MagicDeckProfile("w"));
         } else {
             loadDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
         }

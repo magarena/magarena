@@ -3,8 +3,7 @@ package magic.data;
 import magic.MagicMain;
 import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
-import magic.model.MagicColor;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.player.AiPlayer;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
@@ -13,40 +12,50 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * Represents the default settings when starting a new duel.
+ * <p>
+ * The settings are saved to "newduel.cfg" and are loaded
+ * whenever the user starts a new duel.
+ * <p>
+ * Note that references to decks are specifically to deck
+ * profiles and not actual decks (which are generated later).
+ */
 public class DuelConfig {
 
     private static final DuelConfig INSTANCE=new DuelConfig();
 
-    private static final String ANY_DECK="@";
-    private static final String ANY_THREE="***";
-    private static final String ANY_TWO="**";
-    private static final String ANY_ONE="*";
+    // Properties file.
+    private static final String CONFIG_FILENAME     = "newduel.cfg";
+    // Properties file keys.
+    private static final String START_LIFE          = "life";
+    private static final String HAND_SIZE           = "hand";
+    private static final String GAMES               = "games";
+    private static final String CUBE                = "cube";
+    private static final String PLAYER_ONE          = "playerOne";
+    private static final String PLAYER_TWO          = "playerTwo";
+    private static final String PLAYER_ONE_DECK     = "playerOneDeck";
+    private static final String PLAYER_TWO_DECK     = "playerTwoDeck";
 
-    private static final String CONFIG_FILENAME="newduel.cfg";
-    private static final String START_LIFE="life";
-    private static final String HAND_SIZE="hand";
-    private static final String GAMES="games";
-    private static final String PLAYER="player";
-    private static final String OPPONENT="opponent";
-    private static final String CUBE="cube";
+    public static final int MAX_PLAYERS = 2;
 
     // default values.
     private int startLife = 20;
     private int handSize = 7;
     private int games = 7;
-    private String playerOneDeckGenerator = ANY_THREE;
-    private String playerTwoDeckGenerator = ANY_THREE;
     private String cube = CubeDefinitions.getCubeNames()[0];
-    private PlayerProfile playerOne = null;
-    private PlayerProfile playerTwo = null;
+    private PlayerProfile[] players = new PlayerProfile[MAX_PLAYERS];
+    private MagicDeckProfile[] playerDeckProfiles = new MagicDeckProfile[MAX_PLAYERS];
 
     // CTR
     public DuelConfig() {
         // Ensure DuelConfig has valid PlayerProfile references.
         // If missing then creates default profiles.
         PlayerProfiles.refreshMap();
-        playerOne = PlayerProfiles.getDefaultHumanPlayer();
-        playerTwo = PlayerProfiles.getDefaultAiPlayer();
+        players[0] = PlayerProfiles.getDefaultHumanPlayer();
+        players[1] = PlayerProfiles.getDefaultAiPlayer();
+        playerDeckProfiles[0] = MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE);
+        playerDeckProfiles[1] = MagicDeckProfile.getDeckProfile(MagicDeckProfile.ANY_THREE);
     }
 
     // CTR: copy constructor - a common way of creating a copy of an existing object.
@@ -54,28 +63,13 @@ public class DuelConfig {
         startLife=duelConfig.startLife;
         handSize=duelConfig.handSize;
         games=duelConfig.games;
-        playerOneDeckGenerator=duelConfig.playerOneDeckGenerator;
-        playerTwoDeckGenerator=duelConfig.playerTwoDeckGenerator;
-    }
-
-    public PlayerProfile getPlayerOneProfile() {
-        return playerOne;
-    }
-    public void setPlayerOneProfile(PlayerProfile playerProfile) {
-        this.playerOne = playerProfile;
-    }
-
-    public PlayerProfile getPlayerTwoProfile() {
-        return playerTwo;
-    }
-    public void setPlayerTwoProfile(PlayerProfile playerProfile) {
-        this.playerTwo = playerProfile;
+        playerDeckProfiles[0] = duelConfig.getPlayerDeckProfile(0);
+        playerDeckProfiles[1] = duelConfig.getPlayerDeckProfile(1);
     }
 
     public int getStartLife() {
         return startLife;
     }
-
     public void setStartLife(final int startLife) {
         this.startLife = startLife;
     }
@@ -83,7 +77,6 @@ public class DuelConfig {
     public int getHandSize() {
         return handSize;
     }
-
     public void setHandSize(final int handSize) {
         this.handSize = handSize;
     }
@@ -91,63 +84,35 @@ public class DuelConfig {
     public void setNrOfGames(final int aGames) {
         this.games = aGames;
     }
-
     public int getNrOfGames() {
         return games;
-    }
-
-    private static MagicPlayerProfile getMagicPlayerProfile(final String colorText) {
-        if (ANY_DECK.equals(colorText)) {
-            return new MagicPlayerProfile("");
-        } else if (ANY_THREE.equals(colorText)) {
-            return new MagicPlayerProfile(MagicColor.getRandomColors(3));
-        } else if (ANY_TWO.equals(colorText)) {
-            return new MagicPlayerProfile(MagicColor.getRandomColors(2));
-        } else if (ANY_ONE.equals(colorText)) {
-            return new MagicPlayerProfile(MagicColor.getRandomColors(1));
-        } else if (DeckGenerators.getInstance().getGeneratorNames().contains(colorText)) {
-            // custom deck generator
-            return new MagicPlayerProfile("", colorText);
-        }
-        return new MagicPlayerProfile(colorText);
-    }
-
-    public MagicPlayerProfile getMagicPlayerProfile() {
-        return getMagicPlayerProfile(playerOneDeckGenerator);
-    }
-
-    public String getPlayerOneDeckGenerator() {
-        return playerOneDeckGenerator;
-    }
-
-    public void setPlayerOneDeckGenerator(final String deckGenerator) {
-        playerOneDeckGenerator = deckGenerator;
-    }
-
-    public String getPlayerTwoDeckGenerator() {
-        return playerTwoDeckGenerator;
-    }
-
-    public void setPlayerTwoDeckGenerator(final String deckGenerator) {
-        playerTwoDeckGenerator = deckGenerator;
-    }
-
-    public MagicPlayerProfile getMagicOpponentProfile() {
-        return getMagicPlayerProfile(playerTwoDeckGenerator);
     }
 
     public String getCube() {
         return cube;
     }
-
     public void setCube(final String cube) {
         this.cube=cube;
     }
 
+    public PlayerProfile getPlayerProfile(final int playerIndex) {
+        return players[playerIndex];
+    }
+    public void setPlayerProfile(final int playerIndex, final PlayerProfile playerProfile) {
+        players[playerIndex] = playerProfile;
+    }
+
+    public MagicDeckProfile getPlayerDeckProfile(final int playerIndex) {
+        return playerDeckProfiles[playerIndex];
+    }
+    public void setPlayerDeckProfile(final int playerIndex, final DeckType deckType, final String deckValue) {
+        playerDeckProfiles[playerIndex] = MagicDeckProfile.getDeckProfile(deckType, deckValue);
+    }
+
     public MagicAI[] getPlayerAIs() {
         final MagicAI playerAI;
-        if (playerTwo instanceof AiPlayer) {
-            final AiPlayer aiPlayer = (AiPlayer)playerTwo;
+        if (players[1] instanceof AiPlayer) {
+            final AiPlayer aiPlayer = (AiPlayer)players[1];
             playerAI = aiPlayer.getAiType().getAI();
         } else {
             playerAI = MagicAIImpl.MMAB.getAI();
@@ -156,14 +121,20 @@ public class DuelConfig {
     }
 
     public void load(final Properties properties) {
-        setPlayerOneProfile(PlayerProfile.getHumanPlayer(properties.getProperty("HumanPlayer")));
-        setPlayerTwoProfile(PlayerProfile.getAiPlayer(properties.getProperty("AiPlayer")));
         startLife=Integer.parseInt(properties.getProperty(START_LIFE,Integer.toString(startLife)));
         handSize=Integer.parseInt(properties.getProperty(HAND_SIZE,Integer.toString(handSize)));
         games=Integer.parseInt(properties.getProperty(GAMES,Integer.toString(games)));
-        playerOneDeckGenerator=properties.getProperty(PLAYER,playerOneDeckGenerator);
-        playerTwoDeckGenerator=properties.getProperty(OPPONENT,playerTwoDeckGenerator);
         cube=properties.getProperty(CUBE,cube);
+        setPlayerProfile(0, PlayerProfile.getHumanPlayer(properties.getProperty(PLAYER_ONE)));
+        setPlayerProfile(1, PlayerProfile.getAiPlayer(properties.getProperty(PLAYER_TWO)));
+        setPlayerDeckProfile(0, properties.getProperty(PLAYER_ONE_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
+        setPlayerDeckProfile(1, properties.getProperty(PLAYER_TWO_DECK, DeckType.Random + ";" + MagicDeckProfile.ANY_THREE));
+    }
+
+    private void setPlayerDeckProfile(final int playerIndex, final String deckPropertyValue) {
+        final DeckType deckType = DeckType.valueOf(deckPropertyValue.split(";", 0)[0]);
+        final String deckValue = deckPropertyValue.split(";", 0)[1];
+        setPlayerDeckProfile(playerIndex, deckType, deckValue);
     }
 
     public void load() {
@@ -173,20 +144,20 @@ public class DuelConfig {
     }
 
     public void save(final Properties properties) {
-        properties.setProperty("HumanPlayer", getPlayerOneProfile().getId());
-        properties.setProperty("AiPlayer", getPlayerTwoProfile().getId());
+        properties.setProperty(PLAYER_ONE, players[0].getId());
+        properties.setProperty(PLAYER_TWO, players[1].getId());
         properties.setProperty(START_LIFE, Integer.toString(startLife));
         properties.setProperty(HAND_SIZE, Integer.toString(handSize));
         properties.setProperty(GAMES, Integer.toString(games));
-        properties.setProperty(PLAYER, playerOneDeckGenerator);
-        properties.setProperty(OPPONENT, playerTwoDeckGenerator);
+        properties.setProperty(PLAYER_ONE_DECK, playerDeckProfiles[0].getDeckType().name() + ";" + playerDeckProfiles[0].getDeckValue());
+        properties.setProperty(PLAYER_TWO_DECK, playerDeckProfiles[1].getDeckType().name() + ";" + playerDeckProfiles[1].getDeckValue());
         properties.setProperty(CUBE, cube);
     }
 
     public void save() {
         final Properties properties=new Properties();
         save(properties);
-        try { //save config
+        try {
             FileIO.toFile(getConfigFile(), properties, "Duel configuration");
             System.err.println("Saved duel config");
         } catch (final IOException ex) {
@@ -210,8 +181,8 @@ public class DuelConfig {
      * Currently, this a user-adjustable setting from 1 to 8 seconds.
      */
     public int getAiDifficulty() {
-        if (playerTwo instanceof AiPlayer) {
-            final AiPlayer player = (AiPlayer)playerTwo;
+        if (players[1] instanceof AiPlayer) {
+            final AiPlayer player = (AiPlayer)players[1];
             return player.getAiLevel();
         } else {
             return 6;
@@ -219,8 +190,8 @@ public class DuelConfig {
     }
 
     public int getAiExtraLife() {
-        if (playerTwo instanceof AiPlayer) {
-            final AiPlayer aiPlayer = (AiPlayer)playerTwo;
+        if (players[1] instanceof AiPlayer) {
+            final AiPlayer aiPlayer = (AiPlayer)players[1];
             return aiPlayer.getExtraLife();
         } else {
             return 0;

@@ -3,10 +3,10 @@ package magic.generator;
 import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
-import magic.model.MagicPlayerProfile;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicSubType;
 
-public class Elf_Horde_DeckGenerator extends DefaultDeckGenerator {
+public class Elf_Horde_DeckGenerator extends RandomDeckGenerator {
 
     private static final String colorText = "g";
     private static final String[] cards = {
@@ -45,7 +45,7 @@ public class Elf_Horde_DeckGenerator extends DefaultDeckGenerator {
         addRequiredCards(deck, cards);
     }
 
-    public void setColors(final MagicPlayerProfile profile) {
+    public void setColors(final MagicDeckProfile profile) {
         profile.setColors(getColorText());
     }
 

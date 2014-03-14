@@ -113,9 +113,9 @@ public class DuelPlayerPanel
         if (selectedPlayerProfile != null) {
             playerProfile = selectedPlayerProfile;
             if (selectedPlayerProfile instanceof HumanPlayer) {
-                DuelConfig.getInstance().setPlayerOneProfile(selectedPlayerProfile);
+                DuelConfig.getInstance().setPlayerProfile(0, selectedPlayerProfile);
             } else {
-                DuelConfig.getInstance().setPlayerTwoProfile(selectedPlayerProfile);
+                DuelConfig.getInstance().setPlayerProfile(1, selectedPlayerProfile);
             }
             DuelConfig.getInstance().save();
         }
