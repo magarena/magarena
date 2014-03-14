@@ -144,14 +144,17 @@ public class MCTSAI implements MagicAI {
         log("MCTS2 cached=" + root.getNumSim());
 
         final int workers = THREADS - 1;
-        final ExecutorService executor = new ThreadPoolExecutor(
-            workers, 
-            workers, 
-            0L, 
-            TimeUnit.MILLISECONDS,
-            new ArrayBlockingQueue<Runnable>(workers),
-            new ThreadPoolExecutor.CallerRunsPolicy()
-        );
+        final ExecutorService executor = 
+            workers > 0 ?
+            new ThreadPoolExecutor(
+                workers, 
+                workers, 
+                0L, 
+                TimeUnit.MILLISECONDS,
+                new ArrayBlockingQueue<Runnable>(workers),
+                new ThreadPoolExecutor.CallerRunsPolicy()
+            ):
+            null;
             
         //end simulations once root is AI win or time is up
         int sims;
@@ -180,7 +183,7 @@ public class MCTSAI implements MagicAI {
             // update all nodes along the path from root to new node
 
             // submit random play to executor
-            executor.execute(new Runnable() {
+            final Runnable task = new Runnable() {
                 @Override
                 public void run() {
                     final double score = randomPlay(path.getLast(), rootGame);
@@ -208,7 +211,13 @@ public class MCTSAI implements MagicAI {
                         }
                     }
                 }
-            });
+            };
+
+            if (executor != null) {
+                executor.submit(task);
+            } else {
+                task.run();
+            }
             
             //virtual loss
             MCTSGameTree child = null;
@@ -220,7 +229,9 @@ public class MCTSAI implements MagicAI {
             }
         }
 
-        executor.shutdown();
+        if (executor != null) {
+            executor.shutdown();
+        }
 
         assert root.size() > 0 : "ERROR! Root has no children but there are " + size + " choices";
 
