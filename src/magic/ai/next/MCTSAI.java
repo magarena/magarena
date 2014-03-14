@@ -194,21 +194,8 @@ public class MCTSAI implements MagicAI {
                         child = parent;
                         parent = path.removeLast();
 
-                        parent.updateVirtualWin();
+                        parent.removeVirtualLoss();
                         parent.updateScore(child, score);
-
-                        if (child != null && child.isSolved()) {
-                            final int steps = child.getSteps() + 1;
-                            if (parent.isAI() && child.isAIWin()) {
-                                parent.setAIWin(steps);
-                            } else if (parent.isOpp() && child.isAILose()) {
-                                parent.setAILose(steps);
-                            } else if (parent.isAI() && child.isAILose()) {
-                                parent.incLose(steps);
-                            } else if (parent.isOpp() && child.isAIWin()) {
-                                parent.incLose(steps);
-                            }
-                        }
                     }
                 }
             };
@@ -219,13 +206,27 @@ public class MCTSAI implements MagicAI {
                 task.run();
             }
             
-            //virtual loss
+            // virtual loss + game theoretic value propagation
             MCTSGameTree child = null;
             MCTSGameTree parent = null;
             while (!links.isEmpty()) {
                 child = parent;
                 parent = links.removeLast();
-                parent.updateVirtualLoss();
+
+                parent.recordVirtualLoss();
+
+                if (child != null && child.isSolved()) {
+                    final int steps = child.getSteps() + 1;
+                    if (parent.isAI() && child.isAIWin()) {
+                        parent.setAIWin(steps);
+                    } else if (parent.isOpp() && child.isAILose()) {
+                        parent.setAILose(steps);
+                    } else if (parent.isAI() && child.isAILose()) {
+                        parent.incLose(steps);
+                    } else if (parent.isOpp() && child.isAIWin()) {
+                        parent.incLose(steps);
+                    }
+                }
             }
         }
 
@@ -672,11 +673,11 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
     
-    synchronized void updateVirtualLoss() {
+    synchronized void recordVirtualLoss() {
         numSim++;
     }
     
-    synchronized void updateVirtualWin() {
+    synchronized void removeVirtualLoss() {
         numSim--;
     }
 
