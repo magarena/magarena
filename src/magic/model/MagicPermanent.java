@@ -36,6 +36,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.Map;
+import java.util.EnumMap;
 import java.util.Collections;
 
 public class MagicPermanent extends MagicObjectImpl implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent> {
@@ -55,7 +57,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private MagicPermanent pairedCreature = MagicPermanent.NONE;
     private final MagicCardList exiledCards;
     private MagicPlayer chosenPlayer = MagicPlayer.NONE;
-    private int[] counters=new int[MagicCounterType.NR_COUNTERS];
+    private Map<MagicCounterType, Integer> counters;
     private int stateFlags =
             MagicPermanentState.Summoned.getMask() |
             MagicPermanentState.MustPayEchoCost.getMask();
@@ -92,6 +94,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         cardDefinition = aCardDef;
         firstController = aController;
 
+        counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
         equipmentPermanents=new MagicPermanentSet();
         auraPermanents=new MagicPermanentSet();
         blockingCreatures=new MagicPermanentList();
@@ -111,7 +114,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         card = copyMap.copy(sourcePermanent.card);
         firstController = copyMap.copy(sourcePermanent.firstController);
         stateFlags=sourcePermanent.stateFlags;
-        counters=Arrays.copyOf(sourcePermanent.counters,MagicCounterType.NR_COUNTERS);
+        counters=new EnumMap<MagicCounterType,Integer>(sourcePermanent.counters);
         abilityPlayedThisTurn=sourcePermanent.abilityPlayedThisTurn;
         equippedCreature=copyMap.copy(sourcePermanent.equippedCreature);
         equipmentPermanents=new MagicPermanentSet(copyMap,sourcePermanent.equipmentPermanents);
@@ -175,12 +178,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             //pairedCreature.getStateId(),
             exiledCards.getUnorderedStateId(),
             chosenPlayer.getId(),
-            counters[0],
-            counters[1],
-            counters[2],
-            counters[3],
-            counters[4],
-            counters[5],
+            getCountersHash(),
             abilityPlayedThisTurn,
             cachedTypeFlags,
             cachedSubTypeFlags.hashCode(),
@@ -194,7 +192,18 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             etbTriggers.hashCode()
         });
         return stateId;
-     }
+    }
+
+    private long getCountersHash() {
+        final long[] keys = new long[counters.size() * 2];
+        int idx = 0;
+        for (final Map.Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
+            keys[idx+0] = entry.getKey().ordinal();
+            keys[idx+1] = entry.getValue();
+            idx += 2;
+        }
+        return magic.MurmurHash3.hash(keys);
+    }
 
     /** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */
     public int getManaId() {
@@ -473,20 +482,22 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public void changeCounters(final MagicCounterType counterType,final int amount) {
-        counters[counterType.ordinal()]+=amount;
+        final int oldAmt = getCounters(counterType);
+        final int newAmt = oldAmt + amount;
+        if (newAmt == 0) {
+            counters.remove(counterType);
+        } else {
+            counters.put(counterType, newAmt);
+        }
     }
 
     public int getCounters(final MagicCounterType counterType) {
-        return counters[counterType.ordinal()];
+        final Integer cnt = counters.get(counterType);
+        return cnt != null ? cnt : 0;
     }
 
     public boolean hasCounters() {
-        for (final int amount : counters) {
-            if (amount>0) {
-                return true;
-            }
-        }
-        return false;
+        return counters.size() > 0; 
     }
 
     public boolean hasSubType(final MagicSubType subType) {
@@ -1221,6 +1232,18 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         @Override
         public long getStateId() {
             return hashCode();
+        }
+        @Override
+        public int getCounters(final MagicCounterType counterType) {
+            return 0;
+        }
+        @Override
+        public boolean hasCounters() {
+            return false;
+        }
+        @Override
+        public void changeCounters(final MagicCounterType counterType,final int amount) {
+            //do nothing
         }
         @Override
         public void addEquipment(final MagicPermanent equipment) {
