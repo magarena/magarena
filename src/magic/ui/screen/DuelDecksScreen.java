@@ -124,7 +124,7 @@ public class DuelDecksScreen
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
-                                    getFrame().showDeckEditor(screenContent.getSelectedPlayer().getDeck());
+                                    getFrame().showDeckEditor(getActiveDeck());
                                 }
                             })
                     );
@@ -146,8 +146,7 @@ public class DuelDecksScreen
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
-                                    final MagicDeck playerDeck = screenContent.getSelectedPlayer().getDeck();
-                                    getFrame().showSampleHandGenerator(playerDeck);
+                                    getFrame().showSampleHandGenerator(getActiveDeck());
                                 }
                             })
                     );
@@ -158,8 +157,7 @@ public class DuelDecksScreen
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
-                                    final MagicDeck playerDeck = screenContent.getSelectedPlayer().getDeck();
-                                    getFrame().showDeckView(playerDeck);
+                                    getFrame().showDeckView(getActiveDeck());
                                 }
                             })
                     );
@@ -263,6 +261,10 @@ public class DuelDecksScreen
         final DuelSettingsPanel panel = new DuelSettingsPanel(getFrame(), config);
         panel.setEnabled(false);
         return panel;
+    }
+
+    private MagicDeck getActiveDeck() {
+        return screenContent.getSelectedPlayer().getDeck();
     }
 
 }
