@@ -1,0 +1,234 @@
+Academy Raider
+Accorder's Shield
+Accursed Spirit
+Act of Treason
+Advocate of the Beast
+Air Servant
+Ajani, Caller of the Pride
+Ajani's Chosen
+Altar's Reap
+Angelic Accord
+Angelic Wall
+Archaeomancer
+Archangel of Thune
+Armored Cancrix
+Artificer's Hex
+Auramancer
+Awaken the Ancient
+Banisher Priest
+Barrage of Expendables
+Battle Sliver
+Blessing
+Blightcaster
+Blood Bairn
+Blur Sliver
+Bogbrew Witch
+Bonescythe Sliver
+Bramblecrush
+Brave the Elements
+Briarpack Alpha
+Brindle Boar
+Bubbling Cauldron
+Burning Earth
+Cancel
+Canyon Minotaur
+Capashen Knight
+Celestial Flare
+Chandra, Pyromaster
+Chandra's Outrage
+Chandra's Phoenix
+Charging Griffin
+Child of Night
+Claustrophobia
+Clone
+Colossal Whale
+Congregate
+Coral Merfolk
+Corpse Hauler
+Corrupt
+Cyclops Tyrant
+Dark Favor
+Dark Prophecy
+Darksteel Forge
+Darksteel Ingot
+Dawnstrike Paladin
+Deadly Recluse
+Deathgaze Cockatrice
+Demolish
+Devout Invocation
+Diabolic Tutor
+Dismiss into Dream
+Disperse
+Divination
+Divine Favor
+Domestication
+Doom Blade
+Door of Destinies
+Dragon Egg
+Dragon Hatchling
+Duress
+Elite Arcanist
+Elixir of Immortality
+Elvish Mystic
+Encroaching Wastes
+Enlarge
+Essence Scatter
+Festering Newt
+Fiendslayer Paladin
+Fireshrieker
+Flames of the Firebrand
+Fleshpulper Giant
+Fog
+Forest
+Fortify
+Frost Breath
+Galerider Sliver
+Garruk, Caller of Beasts
+Garruk's Horde
+Giant Growth
+Giant Spider
+Gladecover Scout
+Glimpse the Future
+Gnawing Zombie
+Goblin Diplomats
+Goblin Shortcutter
+Griffin Sentinel
+Grim Return
+Groundshaker Sliver
+Guardian of the Ages
+Haunted Plate Mail
+Hive Stirrings
+Howl of the Night Pack
+Hunt the Weak
+Illusionary Armor
+Imposing Sovereign
+Indestructibility
+Into the Wilds
+Island
+Jace, Memory Adept
+Jace's Mindseeker
+Kalonian Hydra
+Kalonian Tusker
+Lava Axe
+Lay of the Land
+Lifebane Zombie
+Lightning Talons
+Liliana of the Dark Realms
+Liliana's Reaver
+Liturgy of Blood
+Manaweft Sliver
+Marauding Maulhorn
+Mark of the Vampire
+Master of Diversion
+Megantic Sliver
+Merfolk Spy
+Messenger Drake
+Millstone
+Mind Rot
+Mindsparker
+Minotaur Abomination
+Molten Birth
+Mountain
+Mutavault
+Naturalize
+Negate
+Nephalia Seakite
+Nightmare
+Nightwing Shade
+Oath of the Ancient Wood
+Ogre Battledriver
+Opportunity
+Pacifism
+Path of Bravery
+Pay No Heed
+Phantom Warrior
+Pillarfield Ox
+Pitchburn Devils
+Plains
+Planar Cleansing
+Plummet
+Predatory Sliver
+Primeval Bounty
+Pyromancer's Gauntlet
+Quag Sickness
+Quicken
+Ranger's Guile
+Ratchet Bomb
+Regathan Firecat
+Ring of Three Wishes
+Rise of the Dark Realms
+Rod of Ruin
+Rootwalla
+Rumbling Baloth
+Sanguine Bond
+Savage Summoning
+Scavenging Ooze
+Scourge of Valkas
+Scroll Thief
+Seacoast Drake
+Seismic Stomp
+Sengir Vampire
+Sensory Deprivation
+Sentinel Sliver
+Seraph of the Sword
+Serra Angel
+Shadowborn Apostle
+Shadowborn Demon
+Shimmering Grotto
+Shivan Dragon
+Shiv's Embrace
+Shock
+Show of Valor
+Shrivel
+Siege Mastodon
+Silence
+Sliver Construct
+Smelt
+Solemn Offering
+Soulmender
+Spell Blast
+Sporemound
+Staff of the Death Magus
+Staff of the Flame Magus
+Staff of the Mind Magus
+Staff of the Sun Magus
+Staff of the Wild Magus
+Steelform Sliver
+Stonehorn Chanter
+Striking Sliver
+Strionic Resonator
+Suntail Hawk
+Swamp
+Syphon Sliver
+Tenacious Dead
+Thorncaster Sliver
+Thunder Strike
+Tidebinder Mage
+Time Ebb
+Tome Scour
+Trading Post
+Trained Condor
+Traumatize
+Trollhide
+Undead Minotaur
+Vampire Warlord
+Vastwood Hydra
+Verdant Haven
+Vial of Poison
+Vile Rebirth
+Volcanic Geyser
+Voracious Wurm
+Wall of Frost
+Wall of Swords
+Warden of Evos Isle
+Water Servant
+Wild Guess
+Wild Ricochet
+Windreader Sphinx
+Windstorm
+Witchstalker
+Woodborn Behemoth
+Wring Flesh
+Xathrid Necromancer
+Young Pyromancer
+Zephyr Charge

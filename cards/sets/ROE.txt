@@ -1,0 +1,233 @@
+Affa Guard Hound
+Akoum Boulderfoot
+All Is Dust
+Ancient Stirrings
+Angelheart Vial
+Arrogant Bloodlord
+Artisan of Kozilek
+Aura Finesse
+Aura Gnarlid
+Awakening Zone
+Bala Ged Scorpion
+Baneful Omen
+Battle Rampart
+Battle-Rattle Shaman
+Bear Umbra
+Beastbreaker of Bala Ged
+Bloodrite Invoker
+Bloodthrone Vampire
+Boar Umbra
+Bramblesnap
+Brimstone Mage
+Brood Birthing
+Broodwarden
+Cadaver Imp
+Caravan Escort
+Cast Through Time
+Champion's Drake
+Conquering Manticore
+Consume the Meek
+Consuming Vapors
+Contaminated Ground
+Coralhelm Commander
+Corpsehatch
+Crab Umbra
+Curse of Wizardry
+Daggerback Basilisk
+Dawnglare Invoker
+Death Cultist
+Deathless Angel
+Demonic Appetite
+Demystify
+Deprive
+Devastating Summons
+Disaster Radius
+Distortion Strike
+Domestication
+Dormant Gomazoa
+Drake Umbra
+Drana, Kalastria Bloodchief
+Dread Drone
+Dreamstone Hedron
+Echo Mage
+Eel Umbra
+Eland Umbra
+Eldrazi Conscription
+Eldrazi Temple
+Emerge Unscathed
+Emrakul, the Aeons Torn
+Emrakul's Hatcher
+Enatu Golem
+Enclave Cryptologist
+Escaped Null
+Essence Feed
+Evolving Wilds
+Explosive Revelation
+Fissure Vent
+Flame Slash
+Fleeting Distraction
+Forest
+Forked Bolt
+Frostwind Invoker
+Gelatinous Genesis
+Gideon Jura
+Gigantomancer
+Gloomhunter
+Glory Seeker
+Goblin Arsonist
+Goblin Tunneler
+Gravitational Shift
+Gravity Well
+Grotag Siege-Runner
+Growth Spasm
+Guard Duty
+Guard Gomazoa
+Guul Draz Assassin
+Hada Spy Patrol
+Halimar Wavewatch
+Hand of Emrakul
+Harmless Assault
+Haze Frog
+Heat Ray
+Hedron Matrix
+Hedron-Field Purists
+Hellcarver Demon
+Hellion Eruption
+Hyena Umbra
+Ikiral Outrider
+Induce Despair
+Inquisition of Kozilek
+Irresistible Prey
+Island
+It That Betrays
+Jaddi Lifestrider
+Joraga Treespeaker
+Jwari Scuttler
+Kabira Vindicator
+Kargan Dragonlord
+Kazandu Tuskcaller
+Keening Stone
+Khalni Hydra
+Kiln Fiend
+Knight of Cliffhaven
+Kor Line-Slinger
+Kor Spiritdancer
+Kozilek, Butcher of Truth
+Kozilek's Predator
+Lagac Lizard
+Last Kiss
+Lavafume Invoker
+Lay Bare
+Leaf Arrow
+Lighthouse Chronologist
+Lightmine Field
+Linvala, Keeper of Silence
+Living Destiny
+Lone Missionary
+Lord of Shatterskull Pass
+Luminous Wake
+Lust for War
+Magmaw
+Makindi Griffin
+Mammoth Umbra
+Merfolk Observer
+Merfolk Skyscout
+Might of the Masses
+Mnemonic Wall
+Momentous Fall
+Mortician Beetle
+Mountain
+Mul Daya Channelers
+Narcolepsy
+Naturalize
+Near-Death Experience
+Nema Siltlurker
+Nest Invader
+Nighthaze
+Nirkana Cutthroat
+Nirkana Revenant
+Nomads' Assembly
+Not of This World
+Null Champion
+Ogre Sentry
+Ogre's Cleaver
+Ondu Giant
+Oust
+Overgrown Battlement
+Pathrazer of Ulamog
+Pawn of Ulamog
+Pelakka Wurm
+Pennon Blade
+Perish the Thought
+Pestilence Demon
+Phantasmal Abomination
+Plains
+Prey's Vengeance
+Prophetic Prism
+Puncturing Light
+Rage Nimbus
+Raid Bombardment
+Rapacious One
+Reality Spasm
+Realms Uncharted
+Recurring Insight
+Regress
+Reinforced Bulwark
+Renegade Doppelganger
+Repay in Kind
+Repel the Darkness
+Runed Servitor
+Sarkhan the Mad
+Sea Gate Oracle
+See Beyond
+Shared Discovery
+Shrivel
+Skeletal Wurm
+Skittering Invasion
+Skywatcher Adept
+Smite
+Snake Umbra
+Soulbound Guardians
+Soul's Attendant
+Soulsurge Elemental
+Spawning Breath
+Spawnsire of Ulamog
+Sphinx of Magosi
+Sphinx-Bone Wand
+Spider Umbra
+Splinter Twin
+Sporecap Spider
+Staggershock
+Stalwart Shield-Bearers
+Stomper Cub
+Student of Warfare
+Suffer the Past
+Surrakar Spellblade
+Surreal Memoir
+Survival Cache
+Swamp
+Tajuru Preserver
+Thought Gorger
+Time of Heroes
+Totem-Guide Hartebeest
+Training Grounds
+Traitorous Instinct
+Transcendent Master
+Tuktuk the Explorer
+Ulamog, the Infinite Gyre
+Ulamog's Crusher
+Umbra Mystic
+Unified Will
+Valakut Fireboar
+Vendetta
+Venerated Teacher
+Vengevine
+Vent Sentinel
+Virulent Swipe
+Wall of Omens
+Warmonger's Chariot
+Wildheart Invoker
+World at War
+Wrap in Flames
+Zof Shade
+Zulaport Enforcer

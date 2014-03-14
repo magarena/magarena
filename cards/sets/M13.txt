@@ -1,0 +1,234 @@
+Acidic Slime
+Ajani, Caller of the Pride
+Ajani's Sunstriker
+Akroma's Memorial
+Angelic Benediction
+Angel's Mercy
+Arbor Elf
+Archaeomancer
+Arctic Aven
+Arms Dealer
+Attended Knight
+Augur of Bolas
+Aven Squire
+Battle of Wits
+Battleflight Eagle
+Bladetusk Boar
+Blood Reckoning
+Bloodhunter Bat
+Bloodthrone Vampire
+Bond Beetle
+Boundless Realms
+Bountiful Harvest
+Canyon Minotaur
+Captain of the Watch
+Captain's Call
+Cathedral of War
+Centaur Courser
+Chandra, the Firebrand
+Chandra's Fury
+Chronomaton
+Cleaver Riot
+Clock of Omens
+Clone
+Courtly Provocateur
+Cower in Fear
+Craterize
+Crimson Muckwader
+Crippling Blight
+Crusader of Odric
+Dark Favor
+Deadly Recluse
+Diabolic Revelation
+Disciple of Bolas
+Disentomb
+Divination
+Divine Favor
+Divine Verdict
+Door to Nothingness
+Downpour
+Dragon Hatchling
+Dragonskull Summit
+Drowned Catacomb
+Duress
+Duskdale Wurm
+Duskmantle Prowler
+Duty-Bound Dead
+Elderscale Wurm
+Elixir of Immortality
+Elvish Archdruid
+Elvish Visionary
+Encrust
+Erase
+Essence Drain
+Essence Scatter
+Evolving Wilds
+Faerie Invaders
+Faith's Reward
+Farseek
+Fervor
+Fire Elemental
+Firewing Phoenix
+Flames of the Firebrand
+Flinthoof Boar
+Fog
+Fog Bank
+Forest
+Fungal Sprouting
+Furnace Whelp
+Garruk, Primal Hunter
+Garruk's Packleader
+Gem of Becoming
+Giant Scorpion
+Gilded Lotus
+Glacial Fortress
+Glorious Charge
+Goblin Arsonist
+Goblin Battle Jester
+Griffin Protector
+Ground Seal
+Guardian Lions
+Guardians of Akrasa
+Hamletback Goliath
+Harbor Bandit
+Harbor Serpent
+Healer of the Pride
+Hellion Crucible
+Hydrosurge
+Index
+Intrepid Hero
+Island
+Jace, Memory Adept
+Jace's Phantasm
+Jayemdae Tome
+Kindled Fury
+Kitesail
+Knight of Glory
+Knight of Infamy
+Kraken Hatchling
+Krenko, Mob Boss
+Krenko's Command
+Liliana of the Dark Realms
+Liliana's Shade
+Magmaquake
+Mark of Mutiny
+Mark of the Vampire
+Master of the Pearl Trident
+Merfolk of the Pearl Trident
+Mind Rot
+Mind Sculpt
+Mindclaw Shaman
+Mogg Flunkies
+Mountain
+Murder
+Mutilate
+Mwonvuli Beast Tracker
+Naturalize
+Nefarox, Overlord of Grixis
+Negate
+Nicol Bolas, Planeswalker
+Oblivion Ring
+Odric, Master Tactician
+Omniscience
+Pacifism
+Phylactery Lich
+Phyrexian Hulk
+Pillarfield Ox
+Plains
+Planar Cleansing
+Plummet
+Predatory Rampage
+Prey Upon
+Primal Clay
+Primal Huntbeast
+Primordial Hydra
+Prized Elephant
+Public Execution
+Quirion Dryad
+Rain of Blades
+Rancor
+Ranger's Path
+Ravenous Rats
+Reckless Brute
+Redirect
+Reliquary Tower
+Reverberate
+Revive
+Rewind
+Rhox Faithmender
+Ring of Evos Isle
+Ring of Kalonia
+Ring of Thune
+Ring of Valkas
+Ring of Xathrid
+Rise from the Grave
+Roaring Primadox
+Rootbound Crag
+Rummaging Goblin
+Safe Passage
+Sands of Delirium
+Scroll Thief
+Searing Spear
+Sentinel Spider
+Serpent's Gift
+Serra Angel
+Serra Avatar
+Serra Avenger
+Servant of Nefarox
+Shimian Specter
+Show of Valor
+Sign in Blood
+Silklash Spider
+Silvercoat Lion
+Sleep
+Slumbering Dragon
+Smelt
+Spelltwine
+Sphinx of Uthuun
+Spiked Baloth
+Staff of Nin
+Stormtide Leviathan
+Stuffy Doll
+Sublime Archangel
+Sunpetal Grove
+Swamp
+Switcheroo
+Talrand, Sky Summoner
+Talrand's Invocation
+Thragtusk
+Thundermaw Hellkite
+Timberpack Wolf
+Titanic Growth
+Torch Fiend
+Tormented Soul
+Tormod's Crypt
+Touch of the Eternal
+Trading Post
+Tricks of the Trade
+Trumpet Blast
+Turn to Slag
+Unsummon
+Vampire Nighthawk
+Vampire Nocturnus
+Vastwood Gorger
+Vedalken Entrancer
+Veilborn Ghoul
+Vile Rebirth
+Void Stalker
+Volcanic Geyser
+Volcanic Strength
+Walking Corpse
+Wall of Fire
+War Falcon
+War Priest of Thune
+Warclamp Mastiff
+Watercourser
+Welkin Tern
+Wild Guess
+Wind Drake
+Wit's End
+Worldfire
+Xathrid Gorgon
+Yeva, Nature's Herald
+Yeva's Forcemage
+Zombie Goliath

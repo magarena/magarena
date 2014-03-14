@@ -7,4 +7,4 @@ subtype=Elemental
 color=R
 cost={0}
 pt=7/1
-ability=trample;haste;exile at end
+ability=trample;haste

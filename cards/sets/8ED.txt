@@ -1,0 +1,335 @@
+Abyssal Specter
+Air Elemental
+Aladdin's Ring
+Ambition's Cost
+Anaba Shaman
+Angel of Mercy
+Angelic Page
+Archivist
+Ardent Militia
+Avatar of Hope
+Aven Cloudchaser
+Aven Fisher
+Aven Flock
+Balance of Power
+Balduvian Barbarians
+Beast of Burden
+Birds of Paradise
+Blanchwood Armor
+Blaze
+Blessed Reversal
+Blinding Angel
+Blood Moon
+Bloodshot Cyclops
+Bog Imp
+Bog Wraith
+Boil
+Boomerang
+Brass Herald
+Bribery
+Call of the Wild
+Canopy Spider
+Canyon Wildcat
+Carrion Wall
+Catalog
+Chastise
+Choke
+Cinder Wall
+Circle of Protection: Black
+Circle of Protection: Blue
+Circle of Protection: Green
+Circle of Protection: Red
+Circle of Protection: White
+City of Brass
+Coastal Hornclaw
+Coastal Piracy
+Coastal Tower
+Coat of Arms
+Coercion
+Collective Unconscious
+Concentrate
+Confiscate
+Coral Eel
+Cowardice
+Craw Wurm
+Creeping Mold
+Crossbow Infantry
+Crystal Rod
+Curiosity
+Daring Apprentice
+Dark Banishing
+Death Pit Offering
+Death Pits of Rath
+Deathgazer
+Deepwood Ghoul
+Defense Grid
+Deflection
+Dehydration
+Demolish
+Demystify
+Diabolic Tutor
+Dingus Egg
+Disrupting Scepter
+Distorting Lens
+Diving Griffin
+Drudge Skeletons
+Dusk Imp
+Dwarven Demolition Team
+Eastern Paladin
+Elfhame Palace
+Elite Archers
+Elite Javelineer
+Elvish Champion
+Elvish Lyrist
+Elvish Pioneer
+Elvish Piper
+Elvish Scrapper
+Emperor Crocodile
+Enrage
+Ensnaring Bridge
+Evacuation
+Execute
+Fallen Angel
+Fear
+Fecundity
+Fertile Ground
+Fighting Drake
+Flash Counter
+Flashfires
+Fleeting Image
+Flight
+Flying Carpet
+Fodder Cannon
+Foratog
+Forest
+Fugitive Wizard
+Fungusaur
+Furnace of Rath
+Fyndhorn Elder
+Gaea's Herald
+Giant Badger
+Giant Cockroach
+Giant Growth
+Giant Spider
+Glorious Anthem
+Glory Seeker
+Gluttonous Zombie
+Goblin Chariot
+Goblin Glider
+Goblin King
+Goblin Raider
+Grave Pact
+Gravedigger
+Grizzly Bears
+Guerrilla Tactics
+Hammer of Bogardan
+Healing Salve
+Hibernation
+Hill Giant
+Holy Day
+Holy Strength
+Honor Guard
+Horned Troll
+Horned Turtle
+Howling Mine
+Hulking Cyclops
+Hunted Wumpus
+Index
+Inferno
+Inspiration
+Intrepid Hero
+Intruder Alarm
+Invisibility
+Iron Star
+Island
+Ivory Cup
+Ivory Mask
+Jayemdae Tome
+Karma
+Larceny
+Lava Axe
+Lava Hounds
+Lesser Gargadon
+Lhurgoyf
+Lightning Blast
+Lightning Elemental
+Living Terrain
+Llanowar Behemoth
+Lone Wolf
+Looming Shade
+Lord of the Undead
+Lure
+Maggot Carrier
+Mahamoti Djinn
+Mana Clash
+Mana Leak
+Maro
+Master Decoy
+Master Healer
+Megrim
+Merchant of Secrets
+Merchant Scroll
+Might of Oaks
+Millstone
+Mind Bend
+Mind Rot
+Mind Slash
+Mind Sludge
+Mogg Sentry
+Monstrous Growth
+Moss Monster
+Mountain
+Murderous Betrayal
+Nantuko Disciple
+Natural Affinity
+Naturalize
+Nausea
+Nekrataal
+Nightmare
+Noble Purpose
+Norwood Ranger
+Obliterate
+Ogre Taskmaster
+Okk
+Oracle's Attendants
+Orcish Artillery
+Orcish Spy
+Pacifism
+Panic Attack
+Patagia Golem
+Peach Garden Oath
+Persecute
+Phantom Warrior
+Phyrexian Arena
+Phyrexian Colossus
+Phyrexian Hulk
+Phyrexian Plaguelord
+Plague Beetle
+Plague Wind
+Plains
+Planar Portal
+Plow Under
+Primeval Force
+Primeval Shambler
+Puppeteer
+Pyroclasm
+Pyrotechnics
+Raging Goblin
+Rain of Blades
+Raise Dead
+Rampant Growth
+Ravenous Rats
+Razorfoot Griffin
+Redeem
+Reflexes
+Regeneration
+Relentless Assault
+Remove Soul
+Revive
+Rewind
+Rhox
+Ridgeline Rager
+Rod of Ruin
+Rolling Stones
+Royal Assassin
+Rukh Egg
+Rushwood Dryad
+Sabretooth Tiger
+Sacred Ground
+Sacred Nectar
+Sage of Lat-Nam
+Sage Owl
+Salt Marsh
+Samite Healer
+Sanctimony
+Savannah Lions
+Scathe Zombies
+Sea Monster
+Searing Wind
+Seasoned Marshal
+Seismic Assault
+Serpent Warrior
+Serra Angel
+Sever Soul
+Severed Legion
+Shatter
+Shifting Sky
+Shivan Dragon
+Shivan Oasis
+Shock
+Shock Troops
+Sizzle
+Skull of Orm
+Slay
+Sneaky Homunculus
+Solidarity
+Soul Feast
+Spellbook
+Spiketail Hatchling
+Spined Wurm
+Spineless Thug
+Spirit Link
+Spitting Spider
+Spreading Algae
+Standing Troops
+Star Compass
+Staunch Defenders
+Steal Artifact
+Stone Rain
+Storm Crow
+Story Circle
+Stream of Life
+Sudden Impact
+Suntail Hawk
+Sunweb
+Swamp
+Swarm of Rats
+Sword Dancer
+Teferi's Puzzle Box
+Telepathy
+Temporal Adept
+Thieves' Auction
+Thieving Magpie
+Thorn Elemental
+Throne of Bone
+Tidal Kraken
+Trade Routes
+Trained Armodon
+Treasure Trove
+Tremor
+Tundra Wolves
+Twiddle
+Two-Headed Dragon
+Underworld Dreams
+Unholy Strength
+Unsummon
+Urborg Volcano
+Urza's Armor
+Urza's Mine
+Urza's Power Plant
+Urza's Tower
+Vampiric Spirit
+Venerable Monk
+Verduran Enchantress
+Vernal Bloom
+Vexing Arcanix
+Viashino Sandstalker
+Vicious Hunger
+Vine Trellis
+Volcanic Hammer
+Wall of Air
+Wall of Spears
+Wall of Stone
+Wall of Swords
+Warped Devotion
+Western Paladin
+Wind Drake
+Wing Snare
+Wood Elves
+Wooden Sphere
+Worship
+Wrath of God
+Wrath of Marit Lage
+Yavimaya Enchantress
+Zombify
+Zur's Weirding

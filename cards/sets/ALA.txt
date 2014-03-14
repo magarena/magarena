@@ -1,0 +1,234 @@
+Ad Nauseam
+Agony Warp
+Ajani Vengeant
+Akrasan Squire
+Algae Gharial
+Angelic Benediction
+Angel's Herald
+Angelsong
+Arcane Sanctum
+Archdemon of Unx
+Banewasp Affliction
+Bant Battlemage
+Bant Charm
+Bant Panorama
+Battlegrace Angel
+Behemoth's Herald
+Blightning
+Blister Beetle
+Blood Cultist
+Bloodpyre Elemental
+Bloodthorn Taunter
+Bone Splinters
+Branching Bolt
+Brilliant Ultimatum
+Broodmate Dragon
+Bull Cerodon
+Caldera Hellion
+Call to Heel
+Cancel
+Carrion Thrash
+Cathartic Adept
+Cavern Thoctar
+Clarion Ultimatum
+Cloudheath Drake
+Coma Veil
+Corpse Connoisseur
+Courier's Capsule
+Court Archers
+Covenant of Minds
+Cradle of Vitality
+Crucible of Fire
+Cruel Ultimatum
+Crumbling Necropolis
+Cunning Lethemancer
+Cylian Elf
+Dawnray Archer
+Death Baron
+Deathgreeter
+Deft Duelist
+Demon's Herald
+Dispeller's Capsule
+Dragon Fodder
+Dragon's Herald
+Dreg Reaver
+Dregscape Zombie
+Druid of the Anima
+Drumhunter
+Elspeth, Knight-Errant
+Elvish Visionary
+Empyrial Archangel
+Esper Battlemage
+Esper Charm
+Esper Panorama
+Etherium Astrolabe
+Etherium Sculptor
+Ethersworn Canonist
+Excommunicate
+Executioner's Capsule
+Exuberant Firestoker
+Fatestitcher
+Feral Hydra
+Filigree Sages
+Fire-Field Ogre
+Flameblast Dragon
+Fleshbag Marauder
+Forest
+Gather Specimens
+Gift of the Gargantuan
+Glaze Fiend
+Goblin Assault
+Goblin Deathraiders
+Goblin Mountaineer
+Godsire
+Godtoucher
+Grixis Battlemage
+Grixis Charm
+Grixis Panorama
+Guardians of Akrasa
+Gustrider Exuberant
+Hellkite Overlord
+Hell's Thunder
+Hindering Light
+Hissing Iguanar
+Immortal Coil
+Incurable Ogre
+Infest
+Invincible Hymn
+Island
+Jhessian Infiltrator
+Jhessian Lookout
+Jund Battlemage
+Jund Charm
+Jund Panorama
+Jungle Shrine
+Jungle Weaver
+Kathari Screecher
+Kederekt Creeper
+Kederekt Leviathan
+Keeper of Progenitus
+Kiss of the Amesha
+Knight of the Skyward Eye
+Knight of the White Orchid
+Knight-Captain of Eos
+Kresh the Bloodbraided
+Lich's Mirror
+Lightning Talons
+Lush Growth
+Magma Spray
+Manaplasm
+Marble Chalice
+Master of Etherium
+Mayael the Anima
+Memory Erosion
+Metallurgeon
+Mighty Emergence
+Mindlock Orb
+Minion Reflector
+Mosstodon
+Mountain
+Mycoloth
+Naturalize
+Naya Battlemage
+Naya Charm
+Naya Panorama
+Necrogenesis
+Obelisk of Bant
+Obelisk of Esper
+Obelisk of Grixis
+Obelisk of Jund
+Obelisk of Naya
+Oblivion Ring
+Onyx Goblet
+Ooze Garden
+Outrider of Jhess
+Plains
+Predator Dragon
+Prince of Thralls
+Protomatter Powder
+Punish Ignorance
+Puppet Conjurer
+Qasali Ambusher
+Quietus Spike
+Rafiq of the Many
+Rakeclaw Gargantuan
+Ranger of Eos
+Realm Razer
+Relic of Progenitus
+Resounding Roar
+Resounding Scream
+Resounding Silence
+Resounding Thunder
+Resounding Wave
+Rhox Charger
+Rhox War Monk
+Ridge Rannet
+Rip-Clan Crasher
+Rockcaster Platoon
+Rockslide Elemental
+Sacellum Godspeaker
+Salvage Titan
+Sanctum Gargoyle
+Sangrite Surge
+Sarkhan Vol
+Savage Hunger
+Savage Lands
+Scavenger Drake
+Scourge Devil
+Scourglass
+Seaside Citadel
+Sedraxis Specter
+Sedris, the Traitor King
+Shadowfeed
+Sharding Sphinx
+Sharuum the Hegemon
+Shore Snapper
+Sighted-Caste Sorcerer
+Sigil Blessing
+Sigil of Distinction
+Sigiled Paladin
+Skeletal Kathari
+Skeletonize
+Skill Borrower
+Skullmulcher
+Soul's Fire
+Soul's Grace
+Soul's Might
+Spearbreaker Behemoth
+Spell Snip
+Sphinx Sovereign
+Sphinx's Herald
+Sprouting Thrinax
+Steelclad Serpent
+Steward of Valeron
+Stoic Angel
+Sunseed Nurturer
+Swamp
+Swerve
+Tar Fiend
+Tezzeret the Seeker
+Thorn-Thrash Viashino
+Thoughtcutter Agent
+Thunder-Thrash Elder
+Tidehollow Sculler
+Tidehollow Strix
+Titanic Ultimatum
+Topan Ascetic
+Tortoise Formation
+Tower Gargoyle
+Undead Leotau
+Vectis Silencers
+Vein Drinker
+Viashino Skeleton
+Vicious Shadows
+Violent Ultimatum
+Viscera Dragger
+Vithian Stinger
+Volcanic Submersion
+Waveskimmer Aven
+Welkin Guide
+Where Ancients Tread
+Wild Nacatl
+Windwright Mage
+Woolly Thoctar
+Yoked Plowbeast

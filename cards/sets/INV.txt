@@ -1,0 +1,335 @@
+Absorb
+Addle
+AEther Rift
+Aggressive Urge
+Agonizing Demise
+Alabaster Leech
+Alloy Golem
+Ancient Kavu
+Ancient Spring
+Andradite Leech
+Angel of Mercy
+Angelic Shield
+Annihilate
+Archaeological Dig
+Ardent Soldier
+Armadillo Cloak
+Armored Guardian
+Artifact Mutation
+Assault // Battery
+Atalya, Samite Master
+Aura Mutation
+Aura Shards
+Backlash
+Barrin's Spite
+Barrin's Unmaking
+Benalish Emissary
+Benalish Heralds
+Benalish Lancer
+Benalish Trapper
+Bend or Break
+Bind
+Blazing Specter
+Blind Seer
+Blinding Light
+Bloodstone Cameo
+Blurred Mongoose
+Bog Initiate
+Breaking Wave
+Breath of Darigaaz
+Callous Giant
+Canopy Surge
+Capashen Unicorn
+Captain Sisay
+Cauldron Dance
+Chaotic Strike
+Charging Troll
+Chromatic Sphere
+Cinder Shade
+Coalition Victory
+Coastal Tower
+Collapsing Borders
+Collective Restraint
+Cremate
+Crimson Acolyte
+Crosis, the Purger
+Crosis's Attendant
+Crown of Flames
+Crusading Knight
+Crypt Angel
+Crystal Spray
+Cursed Flesh
+Darigaaz, the Igniter
+Darigaaz's Attendant
+Death or Glory
+Defiling Tears
+Stand // Deliver
+Desperate Research
+Devouring Strossus
+Dismantling Blow
+Disrupt
+Distorting Wake
+Divine Presence
+Do or Die
+Drake-Skull Cameo
+Dream Thrush
+Dredge
+Dromar, the Banisher
+Dromar's Attendant
+Dueling Grounds
+Duskwalker
+Elfhame Palace
+Elfhame Sanctuary
+Elvish Champion
+Empress Galina
+Essence Leak
+Exclude
+Exotic Curse
+Explosive Growth
+Fact or Fiction
+Faerie Squadron
+Fertile Ground
+Fight or Flight
+Firebrand Ranger
+Fires of Yavimaya
+Firescreamer
+Forest
+Frenzied Tilling
+Galina's Knight
+Geothermal Crevice
+Ghitu Fire
+Glimmering Angel
+Global Ruin
+Goblin Spy
+Goham Djinn
+Halam Djinn
+Hanna, Ship's Navigator
+Harrow
+Harsh Judgment
+Hate Weaver
+Heroes' Reunion
+Holy Day
+Hooded Kavu
+Horned Cheetah
+Hunting Kavu
+Hypnotic Cloud
+Irrigation Ditch
+Island
+Jade Leech
+Juntu Stakes
+Kangee, Aerie Keeper
+Kavu Aggressor
+Kavu Chameleon
+Kavu Climber
+Kavu Lair
+Kavu Monarch
+Kavu Runner
+Kavu Scout
+Kavu Titan
+Keldon Necropolis
+Liberate
+Lightning Dart
+Llanowar Cavalry
+Llanowar Elite
+Llanowar Knight
+Llanowar Vanguard
+Loafing Giant
+Lobotomy
+Lotus Guardian
+Mages' Contest
+Spite // Malice
+Mana Maze
+Maniacal Rage
+Manipulate Fate
+Marauding Knight
+Metathran Aerostat
+Metathran Transport
+Metathran Zombie
+Meteor Storm
+Might Weaver
+Molimo, Maro-Sorcerer
+Mountain
+Mourning
+Nightscape Apprentice
+Nightscape Master
+Noble Panther
+Nomadic Elf
+Obliterate
+Obsidian Acolyte
+Opt
+Ordered Migration
+Orim's Touch
+Overabundance
+Overload
+Pain // Suffering
+Phantasmal Terrain
+Phyrexian Altar
+Phyrexian Battleflies
+Phyrexian Delver
+Phyrexian Infiltrator
+Phyrexian Lens
+Phyrexian Reaper
+Phyrexian Slayer
+Pincer Spider
+Plague Spitter
+Plague Spores
+Plains
+Planar Portal
+Pledge of Loyalty
+Pouncing Kavu
+Power Armor
+Prison Barricade
+Probe
+Prohibit
+Protective Sphere
+Psychic Battle
+Pulse of Llanowar
+Pure Reflection
+Pyre Zombie
+Quirion Elves
+Quirion Sentinel
+Quirion Trailblazer
+Rage Weaver
+Raging Kavu
+Rainbow Crow
+Rampant Elephant
+Ravenous Rats
+Razorfoot Griffin
+Reckless Assault
+Reckless Spite
+Recoil
+Recover
+Repulse
+Restock
+Restrain
+Reviving Dose
+Reviving Vapors
+Rewards of Diversity
+Reya Dawnbringer
+Riptide Crab
+Rith, the Awakener
+Rith's Attendant
+Rogue Kavu
+Rooting Kavu
+Rout
+Ruby Leech
+Ruham Djinn
+Sabertooth Nishoba
+Salt Marsh
+Samite Archer
+Samite Ministration
+Sapphire Leech
+Saproling Infestation
+Saproling Symbiosis
+Savage Offensive
+Scarred Puma
+Scavenged Weaponry
+Scorching Lava
+Scouting Trek
+Searing Rays
+Seashell Cameo
+Seer's Vision
+Serpentine Kavu
+Shackles
+Shimmering Wings
+Shivan Emissary
+Shivan Harvest
+Shivan Oasis
+Shivan Zombie
+Shoreline Raider
+Simoon
+Skittish Kavu
+Skizzik
+Sky Weaver
+Sleeper's Robe
+Slimy Kavu
+Slinking Serpent
+Smoldering Tar
+Soul Burn
+Sparring Golem
+Spinal Embrace
+Spirit of Resistance
+Spirit Weaver
+Spreading Plague
+Stalking Assassin
+Stand or Fall
+Sterling Grove
+Stormscape Apprentice
+Stormscape Master
+Strength of Unity
+Stun
+Sulam Djinn
+Sulfur Vent
+Sunscape Apprentice
+Sunscape Master
+Swamp
+Sway of Illusion
+Tainted Well
+Tangle
+Tectonic Instability
+Teferi's Care
+Teferi's Moat
+Teferi's Response
+Tek
+Temporal Distortion
+Thicket Elemental
+Thornscape Apprentice
+Thornscape Master
+Thunderscape Apprentice
+Thunderscape Master
+Tidal Visionary
+Tigereye Cameo
+Tinder Farm
+Tolarian Emissary
+Tower Drake
+Tranquility
+Traveler's Cloak
+Treefolk Healer
+Trench Wurm
+Treva, the Renewer
+Treva's Attendant
+Tribal Flames
+Troll-Horn Cameo
+Tsabo Tavoc
+Tsabo's Assassin
+Tsabo's Decree
+Tsabo's Web
+Turf Wound
+Twilight's Call
+Undermine
+Urborg Drake
+Urborg Emissary
+Urborg Phantom
+Urborg Shambler
+Urborg Skeleton
+Urborg Volcano
+Urza's Filter
+Urza's Rage
+Utopia Tree
+Verdeloth the Ancient
+Verduran Emissary
+Viashino Grappler
+Vicious Kavu
+Vigorous Charge
+Vile Consumption
+Vodalian Hypnotist
+Vodalian Merchant
+Vodalian Serpent
+Vodalian Zombie
+Void
+Voracious Cobra
+Wallop
+Wandering Stream
+Wax // Wane
+Wash Out
+Wayfaring Giant
+Well-Laid Plans
+Whip Silk
+Wings of Hope
+Winnow
+Worldly Counsel
+Yavimaya Barbarian
+Yavimaya Kavu
+Yawgmoth's Agenda
+Zanam Djinn
+Zap

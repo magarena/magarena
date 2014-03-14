@@ -1,0 +1,335 @@
+Abduction
+Abyssal Hunter
+Abyssal Specter
+Adarkar Wastes
+AEther Flash
+Agonizing Memories
+Air Elemental
+Aladdin's Ring
+Amber Prison
+Anaba Bodyguard
+Anaba Shaman
+Ancestral Memories
+Animate Wall
+Ankh of Mishra
+Archangel
+Ardent Militia
+Armageddon
+Armored Pegasus
+Ashen Powder
+Ashnod's Altar
+Balduvian Barbarians
+Balduvian Horde
+Birds of Paradise
+Blaze
+Blight
+Blighted Shaman
+Blood Pet
+Bog Imp
+Bog Rats
+Bog Wraith
+Boil
+Boomerang
+Bottle of Suleiman
+Browse
+Brushland
+Burrowing
+Call of the Wild
+Castle
+Cat Warriors
+Celestial Dawn
+Charcoal Diamond
+Chill
+Circle of Protection: Black
+Circle of Protection: Blue
+Circle of Protection: Green
+Circle of Protection: Red
+Circle of Protection: White
+City of Brass
+Coercion
+Conquer
+Counterspell
+Creeping Mold
+Crimson Hellkite
+Crusade
+Crystal Rod
+Crystal Vein
+Cursed Totem
+Dancing Scimitar
+Daraja Griffin
+Daring Apprentice
+D'Avenant Archer
+Deflection
+Dense Foliage
+Derelor
+Desertion
+Diminishing Returns
+Dingus Egg
+Disenchant
+Disrupting Scepter
+Divine Transformation
+Doomsday
+Dragon Engine
+Dragon Mask
+Dread of Night
+Dream Cache
+Drudge Skeletons
+Dry Spell
+Dwarven Ruins
+Early Harvest
+Earthquake
+Ebon Stronghold
+Ekundu Griffin
+Elder Druid
+Elven Cache
+Elven Riders
+Elvish Archers
+Enfeeblement
+Enlightened Tutor
+Ethereal Champion
+Evil Eye of Orms-by-Gore
+Exile
+Fallen Angel
+Fallow Earth
+Familiar Ground
+Fatal Blow
+Fear
+Feast of the Unicorn
+Femeref Archers
+Feral Shadow
+Fervor
+Final Fortune
+Fire Diamond
+Fire Elemental
+Firebreathing
+Fit of Rage
+Flame Spirit
+Flash
+Flashfires
+Flight
+Flying Carpet
+Fog
+Fog Elemental
+Forbidden Crypt
+Forest
+Forget
+Fountain of Youth
+Fyndhorn Brownie
+Fyndhorn Elder
+Gaseous Form
+Giant Growth
+Giant Spider
+Giant Strength
+Glacial Wall
+Glasses of Urza
+Goblin Digging Team
+Goblin Elite Infantry
+Goblin Hero
+Goblin King
+Goblin Recruiter
+Goblin Warrens
+Gorilla Chieftain
+Gravebane Zombie
+Gravedigger
+Greed
+Grinning Totem
+Grizzly Bears
+Hammer of Bogardan
+Harmattan Efreet
+Havenwood Battleground
+Healing Salve
+Heavy Ballista
+Hecatomb
+Hero's Resolve
+Hidden Horror
+Horned Turtle
+Howl from Beyond
+Howling Mine
+Hulking Cyclops
+Hurricane
+Icatian Town
+Illicit Auction
+Infantry Veteran
+Infernal Contract
+Inferno
+Insight
+Inspiration
+Iron Star
+Island
+Ivory Cup
+Jade Monolith
+Jalum Tome
+Jayemdae Tome
+Jokulhaups
+Juxtapose
+Karplusan Forest
+Kismet
+Kjeldoran Dead
+Kjeldoran Royal Guard
+Lead Golem
+Leshrac's Rite
+Library of Lat-Nam
+Light of Day
+Lightning Blast
+Living Lands
+Llanowar Elves
+Longbow Archer
+Lord of Atlantis
+Lost Soul
+Lure
+Mana Prism
+Mana Short
+Manabarbs
+Marble Diamond
+Maro
+Meekstone
+Memory Lapse
+Merfolk of the Pearl Trident
+Mesa Falcon
+Millstone
+Mind Warp
+Mischievous Poltergeist
+Moss Diamond
+Mountain
+Mountain Goat
+Mystic Compass
+Mystical Tutor
+Nature's Resurgence
+Necrosavant
+Nightmare
+Obsianus Golem
+Orcish Artillery
+Orcish Oriflamme
+Order of the Sacred Torch
+Ornithopter
+Pacifism
+Painful Memories
+Panther Warriors
+Patagia Golem
+Pearl Dragon
+Pentagram of the Ages
+Perish
+Pestilence
+Phantasmal Terrain
+Phantom Warrior
+Phyrexian Vault
+Pillage
+Plains
+Polymorph
+Power Sink
+Pradesh Gypsies
+Primal Clay
+Prodigal Sorcerer
+Prosperity
+Psychic Transfer
+Psychic Venom
+Pyrotechnics
+Python
+Radjan Spirit
+Rag Man
+Raging Goblin
+Raise Dead
+Rampant Growth
+Razortooth Rats
+Recall
+Reckless Embermage
+Redwood Treefolk
+Regal Unicorn
+Regeneration
+Relearn
+Relentless Assault
+Remedy
+Remove Soul
+Reprisal
+Resistance Fighter
+Reverse Damage
+River Boa
+Rod of Ruin
+Rowen
+Ruins of Trokair
+Sabretooth Tiger
+Sage Owl
+Samite Healer
+Scaled Wurm
+Scathe Zombies
+Sea Monster
+Segovian Leviathan
+Sengir Autocrat
+Serenity
+Serra's Blessing
+Shanodin Dryads
+Shatter
+Shatterstorm
+Shock
+Sibilant Spirit
+Skull Catapult
+Sky Diamond
+Snake Basket
+Soldevi Sage
+Soul Net
+Spell Blast
+Spirit Link
+Spitting Drake
+Spitting Earth
+Stalking Tiger
+Standing Troops
+Staunch Defenders
+Stone Rain
+Storm Cauldron
+Storm Crow
+Strands of Night
+Stream of Life
+Stromgald Cabal
+Stupor
+Sulfurous Springs
+Summer Bloom
+Sunweb
+Svyelunite Temple
+Swamp
+Syphon Soul
+Talruum Minotaur
+Tariff
+Teferi's Puzzle Box
+Terror
+The Hive
+Thicket Basilisk
+Throne of Bone
+Tidal Surge
+Trained Armodon
+Tranquil Grove
+Tranquility
+Tremor
+Tundra Wolves
+Uktabi Orangutan
+Uktabi Wildcats
+Underground River
+Unseen Walker
+Unsummon
+Untamed Wilds
+Unyaro Griffin
+Vampiric Tutor
+Venerable Monk
+Verduran Enchantress
+Vertigo
+Viashino Warrior
+Vitalize
+Vodalian Soldiers
+Volcanic Dragon
+Volcanic Geyser
+Waiting in the Weeds
+Wall of Air
+Wall of Fire
+Wall of Swords
+Wand of Denial
+Warmth
+Warrior's Honor
+Warthog
+Wild Growth
+Wind Drake
+Wind Spirit
+Wooden Sphere
+Worldly Tutor
+Wrath of God
+Wyluli Wolf
+Zombie Master
+Zur's Weirding

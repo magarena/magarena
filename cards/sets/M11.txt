@@ -1,0 +1,234 @@
+Acidic Slime
+Act of Treason
+AEther Adept
+Air Servant
+Ajani Goldmane
+Ajani's Mantra
+Ajani's Pridemate
+Alluring Siren
+Ancient Hellkite
+Angelic Arbiter
+Angel's Feather
+Arc Runner
+Armored Ascension
+Armored Cancrix
+Assassinate
+Assault Griffin
+Augury Owl
+Autumn's Veil
+Awakener Druid
+Azure Drake
+Back to Nature
+Baneslayer Angel
+Barony Vampire
+Berserkers of Blood Ridge
+Birds of Paradise
+Black Knight
+Blinding Mage
+Blood Tithe
+Bloodcrazed Goblin
+Bloodthrone Vampire
+Bog Raiders
+Brindle Boar
+Brittle Effigy
+Call to Mind
+Cancel
+Canyon Minotaur
+Captivating Vampire
+Celestial Purge
+Chandra Nalaar
+Chandra's Outrage
+Chandra's Spitfire
+Child of Night
+Clone
+Cloud Crusader
+Cloud Elemental
+Combust
+Condemn
+Conundrum Sphinx
+Corrupt
+Crystal Ball
+Cudgel Troll
+Cultivate
+Cyclops Gladiator
+Dark Tutelage
+Day of Judgment
+Deathmark
+Demolish
+Demon of Death's Gate
+Demon's Horn
+Destructive Force
+Diabolic Tutor
+Diminish
+Disentomb
+Doom Blade
+Dragon's Claw
+Dragonskull Summit
+Drowned Catacomb
+Dryad's Favor
+Duress
+Duskdale Wurm
+Earth Servant
+Elite Vanguard
+Elixir of Immortality
+Elvish Archdruid
+Ember Hauler
+Excommunicate
+Fauna Shaman
+Fiery Hellhound
+Fire Servant
+Fireball
+Flashfreeze
+Fling
+Fog
+Foresee
+Forest
+Frost Titan
+Gaea's Revenge
+Gargoyle Sentinel
+Garruk Wildspeaker
+Garruk's Companion
+Garruk's Packleader
+Giant Growth
+Giant Spider
+Glacial Fortress
+Goblin Balloon Brigade
+Goblin Chieftain
+Goblin Piker
+Goblin Tunneler
+Goldenglow Moth
+Grave Titan
+Gravedigger
+Greater Basilisk
+Harbor Serpent
+Haunting Echoes
+Hoarding Dragon
+Holy Strength
+Honor of the Pure
+Hornet Sting
+Howling Banshee
+Hunters' Feast
+Ice Cage
+Incite
+Infantry Veteran
+Inferno Titan
+Inspired Charge
+Island
+Jace Beleren
+Jace's Erasure
+Jace's Ingenuity
+Jinxed Idol
+Juggernaut
+Knight Exemplar
+Kraken's Eye
+Lava Axe
+Leyline of Anticipation
+Leyline of Punishment
+Leyline of Sanctity
+Leyline of the Void
+Leyline of Vitality
+Lightning Bolt
+Liliana Vess
+Liliana's Caress
+Liliana's Specter
+Llanowar Elves
+Magma Phoenix
+Mana Leak
+Manic Vandal
+Maritime Guard
+Mass Polymorph
+Merfolk Sovereign
+Merfolk Spy
+Mighty Leap
+Mind Control
+Mind Rot
+Mitotic Slime
+Mountain
+Mystifying Maze
+Nantuko Shade
+Naturalize
+Nature's Spiral
+Necrotic Plague
+Negate
+Nether Horror
+Nightwing Shade
+Obstinate Baloth
+Ornithopter
+Overwhelming Stampede
+Pacifism
+Palace Guard
+Phantom Beast
+Phylactery Lich
+Plains
+Platinum Angel
+Plummet
+Preordain
+Primal Cocoon
+Primeval Titan
+Prized Unicorn
+Prodigal Pyromancer
+Protean Hydra
+Pyretic Ritual
+Pyroclasm
+Quag Sickness
+Reassembling Skeleton
+Redirect
+Relentless Rats
+Reverberate
+Rise from the Grave
+Roc Egg
+Rootbound Crag
+Rotting Legion
+Royal Assassin
+Runeclaw Bear
+Sacred Wolf
+Safe Passage
+Scroll Thief
+Serra Angel
+Serra Ascendant
+Shiv's Embrace
+Siege Mastodon
+Sign in Blood
+Silence
+Silvercoat Lion
+Sleep
+Solemn Offering
+Sorcerer's Strongbox
+Spined Wurm
+Squadron Hawk
+Stabbing Pain
+Steel Overseer
+Stone Golem
+Stormfront Pegasus
+Stormtide Leviathan
+Sun Titan
+Sunpetal Grove
+Swamp
+Sword of Vengeance
+Sylvan Ranger
+Temple Bell
+Terramorphic Expanse
+Thunder Strike
+Time Reversal
+Tireless Missionaries
+Tome Scour
+Traumatize
+Triskelion
+Unholy Strength
+Unsummon
+Vengeful Archon
+Viscera Seer
+Volcanic Strength
+Voltaic Key
+Vulshok Berserker
+Wall of Frost
+Wall of Vines
+War Priest of Thune
+Warlord's Axe
+Water Servant
+Whispersilk Cloak
+White Knight
+Wild Evocation
+Wild Griffin
+Wurm's Tooth
+Yavimaya Wurm
