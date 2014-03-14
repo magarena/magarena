@@ -542,6 +542,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getStaticScore() {
         return cardDefinition.getStaticType().getScore(this);
     }
+    
+    public int getCountersScore() {
+        int amount = 0;
+        for (final Map.Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
+            amount += entry.getKey().getScore() * entry.getValue();
+        }
+        return amount;
+    }
 
     public int getCardScore() {
         return cardDefinition.getScore();

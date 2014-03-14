@@ -103,7 +103,7 @@ public class ArtificialScoringSystem {
     }
 
     public static int getVariablePermanentScore(final MagicPermanent permanent) {
-        int score = getAllCountersScore(permanent)*30;
+        int score = permanent.getCountersScore()*30;
         if (!permanent.canTap()) {
             score+=getTappedScore(permanent);
         }
@@ -168,15 +168,5 @@ public class ArtificialScoringSystem {
 
     public static int getMillScore(final int amount) {
         return -amount;
-    }
-    
-    public static int getAllCountersScore(final MagicPermanent permanent) {
-        int amount = 0;
-        for (final MagicCounterType counterType : MagicCounterType.values()) {
-            if (permanent.hasCounters() && permanent.getCounters(counterType)>0) {
-                amount+=permanent.getCounters(counterType)*counterType.getScore();
-            }
-        }
-        return amount;
     }
 }
