@@ -1,3 +1,4 @@
+[
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Token),
         "Token"
@@ -21,11 +22,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = MagicCard.createTokenCard(TokenCardDefinitions.get("7/1 red Elemental creature token with trample and haste"),event.getPlayer());
-            game.doAction(new MagicCardAction(
+            game.doAction(new MagicPlayCardAction(
                 card,
                 event.getPlayer(),
                 [MagicPlayMod.EXILE_AT_END_OF_TURN]
-            )));
+            ));
         }
     }
 ]
