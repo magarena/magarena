@@ -139,6 +139,30 @@ public class DuelDecksScreen
                                 }
                             })
                     );
+            buttons.add(
+                    new ActionBarButton(
+                            IconImages.HAND_ICON,
+                            "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
+                            new AbstractAction() {
+                                @Override
+                                public void actionPerformed(final ActionEvent e) {
+                                    final MagicDeck playerDeck = screenContent.getSelectedPlayer().getDeck();
+                                    getFrame().showSampleHandGenerator(playerDeck);
+                                }
+                            })
+                    );
+            buttons.add(
+                    new ActionBarButton(
+                            IconImages.TILED_ICON,
+                            "Deck View", "Shows complete deck using tiled card images.",
+                            new AbstractAction() {
+                                @Override
+                                public void actionPerformed(final ActionEvent e) {
+                                    final MagicDeck playerDeck = screenContent.getSelectedPlayer().getDeck();
+                                    getFrame().showDeckView(playerDeck);
+                                }
+                            })
+                    );
         } else {
             if (screenContent.getDuel().isFinished()) {
                 final MagicDuel duel = screenContent.getDuel();
