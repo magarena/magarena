@@ -143,13 +143,13 @@ public class MCTSAI implements MagicAI {
 
         log("MCTS2 cached=" + root.getNumSim());
 
-        final int capacity = THREADS - 1;
+        final int workers = THREADS - 1;
         final ExecutorService executor = new ThreadPoolExecutor(
-            capacity, 
-            capacity, 
+            workers, 
+            workers, 
             0L, 
             TimeUnit.MILLISECONDS,
-            new ArrayBlockingQueue<Runnable>(capacity),
+            new ArrayBlockingQueue<Runnable>(workers),
             new ThreadPoolExecutor.CallerRunsPolicy()
         );
             
