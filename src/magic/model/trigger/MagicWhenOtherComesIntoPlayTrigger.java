@@ -33,18 +33,22 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                      otherPermanent.getToughness() > permanent.getToughness())) ?
                 new MagicEvent(
                     permanent,
+                    otherPermanent,
                     this,
                     "PN put a +1/+1 counter on SN.") :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.PlusOne,
-                1,
-                true
-            ));
+            if (event.getRefPermanent().getPower() > event.getPermanent().getPower() ||
+                event.getRefPermanent().getToughness() > event.getPermanent().getToughness()) {
+                    game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        MagicCounterType.PlusOne,
+                        1,
+                        true
+                        ));
+            }
         }
     };
     

@@ -32,6 +32,8 @@ class TestEvolve extends TestGameBuilder {
         addToHand(P, "Clinging Anemones", 1);
         addToHand(P, "Elusive Krasis", 1);
         addToHand(P, "Experiment One", 1);
+        addToHand(P, "Dragon Fodder", 1);
+        addToHand(P, "Giant Growth", 1);
 
         P = opponent;
 
