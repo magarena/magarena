@@ -6,5 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
+ability=control enchanted
 enchant=gain control,neg artifact creature
 timing=enchantment
