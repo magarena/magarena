@@ -1,0 +1,10 @@
+name=Loxodon Gatekeeper
+url=http://magiccards.info/rav/en/25.html
+image=http://magiccards.info/scans/en/rav/25.jpg
+value=3.921
+rarity=R
+type=Creature
+subtype=Elephant,Soldier
+cost={2}{W}{W}
+pt=2/3
+timing=main
