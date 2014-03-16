@@ -1,5 +1,5 @@
 name=Agent of the Fates
-url=http://magiccards.info/ths/en/76.html
+url=http://magiccards.info/query?q=%21agent%20of%20the%20fates
 image=http://mtgimage.com/card/agent%20of%20the%20fates.jpg
 value=3.537
 rarity=R
@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Assassin
 cost={1}{B}{B}
 pt=3/2
-ability=heroic effect Opponents sacrifice a creature
 timing=main
+requires_groovy_code
