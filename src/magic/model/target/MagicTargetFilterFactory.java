@@ -35,6 +35,7 @@ public class MagicTargetFilterFactory {
         factory.put("creatures PN's opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
         factory.put("creatures with flying your opponents control", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         factory.put("creatures you control with flying", TARGET_CREATURE_WITH_FLYING_YOU_CONTROL);
+        factory.put("enchanted creatures you control", TARGET_ENCHANTED_CREATURE_YOU_CONTROL);
         factory.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
         factory.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
         factory.put("attacking creatures", TARGET_ATTACKING_CREATURE);

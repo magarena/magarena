@@ -1,10 +1,10 @@
 name=Greater Auramancy
-url=http://magiccards.info/shm/en/7.html
-image=http://magiccards.info/scans/en/shm/7.jpg
+url=http://magiccards.info/query?q=%21greater%20auramancy
+image=http://mtgimage.com/card/greater%20auramancy.jpg
 value=4.090
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=lord other enchantments you control have shroud
+ability=lord other enchantments you control have shroud;\
+        lord enchanted creatures you control have shroud
 timing=enchantment
-

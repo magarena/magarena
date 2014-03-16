@@ -765,6 +765,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    !target.hasSubType(MagicSubType.Human);
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_ENCHANTED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&
+                   target.isCreature() &&
+                   target.isEnchanted(); 
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_NONHUMAN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
