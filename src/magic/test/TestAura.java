@@ -28,7 +28,9 @@ class TestAura extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(game,P,"Plains",false,8);
+        createPermanent(game,P,"Chromatic Lantern",false,1);
+        addToHand(P,"Annex",1);
         addToHand(P,"Chimeric Mass",1);
         addToHand(P,"Rancor",1);
         addToHand(P,"Lightning Greaves",1);
