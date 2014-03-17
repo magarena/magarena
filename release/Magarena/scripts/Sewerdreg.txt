@@ -1,0 +1,12 @@
+name=Sewerdreg
+url=http://www.magiccards.info/query?q=%21sewerdreg
+image=http://mtgimage.com/card/sewerdreg.jpg
+value=1.071
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{B}{B}
+pt=3/3
+ability=swampwalk;\
+        cost Sacrifice SN:Exile target card from a graveyard.
+timing=main

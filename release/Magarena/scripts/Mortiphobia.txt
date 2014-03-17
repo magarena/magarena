@@ -1,0 +1,10 @@
+name=Mortiphobia
+url=http://www.magiccards.info/query?q=%21mortiphobia
+image=http://mtgimage.com/card/mortiphobia.jpg
+value=1.8
+rarity=U
+type=Enchantment
+cost={1}{B}{B}
+ability=cost {1}{B},Discard a card:Exile target card from a graveyard.;\
+        cost {1}{B},Sacrifice SN:Exile target card from a graveyard.
+timing=enchantment

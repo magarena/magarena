@@ -1,0 +1,11 @@
+name=Withered Wretch
+url=http://www.magiccards.info/query?q=%21withered%20wretch
+image=http://mtgimage.com/card/withered%20wretch.jpg
+value=4.25
+rarity=U
+type=Creature
+subtype=Zombie,Cleric
+cost={B}{B}
+pt=2/2
+ability=cost {1}:Exile target card from a graveyard.
+timing=main

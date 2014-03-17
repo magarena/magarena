@@ -1,0 +1,13 @@
+name=Stonecloaker
+url=http://www.magiccards.info/query?q=%21stonecloaker
+image=http://mtgimage.com/card/stonecloaker.jpg
+value=4.03
+rarity=U
+type=Creature
+subtype=Gargoyle
+cost={2}{W}
+pt=3/2
+ability=flash;flying;\
+        enters effect Return a creature you control to its owner's hand.;\
+        enters effect Exile target card from a graveyard.
+timing=main

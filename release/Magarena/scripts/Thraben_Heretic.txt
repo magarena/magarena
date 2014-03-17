@@ -1,0 +1,11 @@
+name=Thraben Heretic
+url=http://www.magiccards.info/query?q=%21thraben%20heretic
+image=http://mtgimage.com/card/thraben%20heretic.jpg
+value=3.321
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{W}
+pt=2/2
+ability=cost {T}:Exile target creature card from a graveyard.
+timing=main
