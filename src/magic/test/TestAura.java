@@ -33,6 +33,7 @@ class TestAura extends TestGameBuilder {
         addToHand(P,"Annex",1);
         addToHand(P,"Chimeric Mass",1);
         addToHand(P,"Rancor",1);
+        addToHand(P,"Control Magic",1);
         addToHand(P,"Lightning Greaves",1);
         addToHand(P,"Sword of Feast and Famine",1);
 

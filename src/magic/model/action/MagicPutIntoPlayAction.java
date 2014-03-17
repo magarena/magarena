@@ -15,6 +15,7 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
     private MagicPermanent permanent = MagicPermanent.NONE;
     private MagicPermanent enchantedPermanent = MagicPermanent.NONE;
     private MagicPayedCost payedCost = MagicPayedCost.NO_COST;
+    private boolean validEnchanted = false;
 
     @Override
     public void doAction(final MagicGame game) {
@@ -24,7 +25,8 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
         final int score=ArtificialScoringSystem.getTurnScore(game)-permanent.getStaticScore();
 
-        if (enchantedPermanent.isValid()) {
+        validEnchanted = enchantedPermanent.isValid();
+        if (validEnchanted) {
             enchantedPermanent.addAura(permanent);
             permanent.setEnchantedPermanent(enchantedPermanent);
         }
@@ -50,7 +52,10 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (enchantedPermanent.isValid()) {
+        // for change of control Auras, enchantedPermanent.isValid is false as
+        // change of control action is undone. Thus we store the validity in
+        // variable validEnchanted during doAction.
+        if (validEnchanted) {
             enchantedPermanent.removeAura(permanent);
             permanent.setEnchantedPermanent(MagicPermanent.NONE);
         }
