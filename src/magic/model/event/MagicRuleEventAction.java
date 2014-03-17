@@ -156,7 +156,40 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    Exile(
+    ExileCard(
+        "exile (?<choice>[^\\.]*from[^\\.]*)\\.", 
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal,
+        "Exile",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCard(game,new MagicCardAction() {
+                    public void doAction(final MagicCard card) {
+                        game.doAction(new MagicRemoveCardAction(
+                            card,
+                            MagicLocationType.Graveyard
+                        ));
+                        game.doAction(new MagicMoveCardAction(
+                            card,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.Exile
+                        ));
+                    }
+                });
+            }
+        }
+    ) {
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            if (matcher.group("choice").contains("your")) {
+                return MagicGraveyardTargetPicker.ExileOwn;
+            } else {
+                return MagicGraveyardTargetPicker.ExileOpp;
+            }
+        }
+    },
+    ExilePermanent(
         "exile (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
         MagicExileTargetPicker.create(), 
@@ -1186,7 +1219,15 @@ public enum MagicRuleEventAction {
             final String aName) {
         this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, MagicEvent.NO_ACTION);
     }
-
+    
+    private MagicRuleEventAction(
+            final String aPattern, 
+            final MagicTargetHint aHint, 
+            final MagicTiming aTiming, 
+            final String aName,
+            final MagicEventAction aAction) {
+        this(aPattern, aHint, MagicDefaultTargetPicker.create(), aTiming, aName, aAction);
+    }
 
     private MagicRuleEventAction(
             final String aPattern, 
