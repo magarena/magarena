@@ -1295,7 +1295,7 @@ public enum MagicRuleEventAction {
         final MagicEventAction noAction  = ruleAction.getNoAction(matcher);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
         final MagicChoice choice = ruleAction.getChoice(matcher);
-        final String pnMayChoice = capitalize(ruleWithoutMay).replace('.','?');
+        final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
 
         return rule.startsWith("PN may ") ?
             new MagicSourceEvent(ruleAction, matcher) {
@@ -1304,7 +1304,7 @@ public enum MagicRuleEventAction {
                     return new MagicEvent(
                         source,
                         new MagicMayChoice(
-                            pnMayChoice.replace("SN?",source.toString()+"."),
+                            pnMayChoice.replaceAll("SN",source.toString()),
                             choice
                         ),
                         picker,
