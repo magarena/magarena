@@ -13,20 +13,24 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.LAND_CARD_FROM_HAND,
+                new MagicMayChoice(
+                    MagicTargetChoice.LAND_CARD_FROM_HAND
+                ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN puts a land card\$ from PN's hand onto the battlefield."
+                "PN may\$ put a land card\$ from PN's hand onto the battlefield."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game, {
-                final MagicCard card ->
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                game.doAction(new MagicPlayCardAction(card,event.getPlayer()));
-            });
+            if (event.isYes()) {
+                event.processTargetCard(game, {
+                    final MagicCard card ->
+                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+                    game.doAction(new MagicPlayCardAction(card,event.getPlayer()));
+                });
+            }
         }
     }
 ]

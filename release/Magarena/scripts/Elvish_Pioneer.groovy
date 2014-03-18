@@ -9,7 +9,7 @@
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ put a basic land card\$ from his or her hand into play tapped."
+                "PN may\$ put a basic land card\$ from his or her hand onto the battlefield tapped."
             );
         }
         @Override

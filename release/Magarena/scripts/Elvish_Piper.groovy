@@ -15,10 +15,12 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.CREATURE_CARD_FROM_HAND,
+                new MagicMayChoice(
+                    MagicTargetChoice.CREATURE_CARD_FROM_HAND
+                ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN puts a creature card\$ from his or her hand onto the battlefield."
+                "PN may\$ put a creature card\$ from his or her hand onto the battlefield."
             );
         }
 
