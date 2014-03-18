@@ -47,6 +47,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return true;
         }
     };
+    
+    MagicStackFilterImpl SPELL_OR_ABILITY_WITH_TARGET =new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
+            return target.getEvent().getTargetChoice().isValid();
+        }
+    };
 
     MagicStackFilterImpl TARGET_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {

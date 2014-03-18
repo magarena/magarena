@@ -19,6 +19,7 @@ import magic.model.MagicPayedCost;
 import magic.model.condition.MagicCondition;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
+import magic.model.action.MagicItemOnStackAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayerAction;
@@ -553,6 +554,16 @@ public class MagicEvent implements MagicCopyable {
         final MagicTarget target = getLegalTarget(game);
         if (target.isSpell()) {
             effect.doAction((MagicCardOnStack)target);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public final boolean processTargetItemOnStack(final MagicGame game, final MagicItemOnStackAction effect) {
+        final MagicTarget target = getLegalTarget(game);
+        if (target instanceof MagicItemOnStack) {
+            effect.doAction((MagicItemOnStack)target);
             return true;
         } else {
             return false;

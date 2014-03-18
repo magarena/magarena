@@ -73,6 +73,7 @@ public class MagicTargetFilterFactory {
         single.put("nonbasic land", TARGET_NONBASIC_LAND);
         single.put("nonbasic land you control", TARGET_NONBASIC_LAND_YOU_CONTROL);
         single.put("spell", TARGET_SPELL);
+        single.put("spell or ability", TARGET_SPELL_OR_PERMANENT);
         single.put("spell or permanent", TARGET_SPELL_OR_PERMANENT);
         single.put("spell you don't control", TARGET_SPELL_YOU_DONT_CONTROL);
         single.put("spell with converted mana cost 1", TARGET_SPELL_WITH_CMC_EQ_1);
