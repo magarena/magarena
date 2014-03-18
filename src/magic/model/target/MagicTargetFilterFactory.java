@@ -22,6 +22,7 @@ public class MagicTargetFilterFactory {
     static {
         // used by lord ability/Target <group>
         factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
+        factory.put("lands PN controls", TARGET_LAND_YOU_CONTROL);
         factory.put("lands",TARGET_LAND);
         factory.put("nonbasic lands", TARGET_NONBASIC_LAND);
         factory.put("islands", TARGET_ISLAND);
