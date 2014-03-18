@@ -27,13 +27,15 @@ class TestClone extends TestGameBuilder {
 
         P.setLife(6);
         addToLibrary(P, "Swamp", 20);
+        addToGraveyard(P, "Body Double", 1);
         createPermanent(game,P,"Island",false,4);
         createPermanent(game,P,"Swamp",false,4);
         createPermanent(game,P,"Glorious Anthem",false,1);
         createPermanent(game,P,"Chromatic Lantern",false,1);
         createPermanent(game,P,"Young Wolf",false,1);
         addToHand(P, "Phantasmal Image", 1);
-        addToHand(P, "Clone", 2);
+        addToHand(P, "Clone", 1);
+        addToHand(P, "Body Double", 1);
         addToHand(P, "Evil Twin", 1);
         addToHand(P, "Progenitor Mimic", 1);
         addToHand(P, "Lightning Bolt", 3);
