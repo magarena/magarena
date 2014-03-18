@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Put an X/X green Ooze creature tokens onto the battlefield. Where X is the greatest power among creatures you control."
+                "Put an X/X green Ooze creature token onto the battlefield, where X is the greatest power among creatures you control."
             );
         }
         @Override
@@ -23,7 +23,7 @@
             final MagicPlayTokenAction act = new MagicPlayTokenAction(event.getPlayer(),oozeDef)
             game.doAction(act);
 
-            final MagicStatic PT = new MagicStatic(MagicLayer.SetPT){
+            final MagicStatic PT = new MagicStatic(MagicLayer.SetPT) {
                 @Override
                 public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
                     pt.set(x,x);
