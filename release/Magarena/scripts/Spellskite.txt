@@ -1,0 +1,11 @@
+name=Spellskite
+url=http://magiccards.info/query?q=%21spellskite
+image=http://mtgimage.com/card/spellskite.jpg
+value=3.723
+rarity=R
+type=Artifact,Creature
+subtype=Horror
+cost={2}
+pt=0/4
+timing=main
+requires_groovy_code
