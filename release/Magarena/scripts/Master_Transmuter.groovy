@@ -16,20 +16,20 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.ARTIFACT_CARD_FROM_HAND,
-                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN puts an artifact card\$ from his or her hand onto the battlefield."
+                "PN may put an artifact card from his or her hand onto the battlefield."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game, {
-                final MagicCard card ->
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                game.doAction(new MagicPlayCardAction(card,event.getPlayer()));
-            });
+            game.addEvent(new MagicPutOntoBattlefieldEvent(
+                event,
+                new MagicMayChoice(
+                    "Put an artifact card onto the battlefield?",
+                    MagicTargetChoice.ARTIFACT_CARD_FROM_HAND,
+                )
+            ));
         }
     }
 ]

@@ -6,12 +6,8 @@
                     damage.getTarget().isPlayer()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        MagicTargetChoice.GOBLIN_CARD_FROM_HAND
-                    ),
-                    MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
-                    "PN may\$ put a Goblin permanent card\$ from " +
+                    "PN may put a Goblin permanent card from " +
                     "his or her hand onto the battlefield."
                 ):
                 MagicEvent.NONE;
@@ -19,19 +15,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                event.processTargetCard(game, {
-                    final MagicCard card ->
-                    game.doAction(new MagicRemoveCardAction(
-                        card,
-                        MagicLocationType.OwnersHand
-                    ));
-                    game.doAction(new MagicPlayCardAction(
-                        card,
-                        event.getPlayer()
-                    ));
-                });
-            }
+            game.addEvent(new MagicPutOntoBattlefieldEvent(
+                event,
+                new MagicMayChoice(
+                    "Put a Goblin card onto the battlefield?",
+                    MagicTargetChoice.GOBLIN_CARD_FROM_HAND
+                )
+            ));
         }
     }
 ]

@@ -21,28 +21,21 @@ def ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicTargetChoice(
             return permanent == attacker ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(
-                        ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND
-                    ),
-                    MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
-                    "PN may\$ put an Angel, Demon or Dragon creature card\$ from his or her hand onto the battlefield tapped and attacking."
+                    "PN may put an Angel, Demon or Dragon creature card from his or her hand onto the battlefield tapped and attacking."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if(event.isYes()){
-                event.processTargetCard(game, {
-                    final MagicCard card ->
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicPlayCardAction(
-                        card,
-                        event.getPlayer(), 
-                        [MagicPlayMod.TAPPED, MagicPlayMod.ATTACKING]
-                    ));
-                });
-            }
+            game.addEvent(new MagicPutOntoBattlefieldEvent(
+                event,
+                new MagicMayChoice(
+                    "Put an Angel, Demon or Dragon card onto the battlefield?",
+                    ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND,
+                    [MagicPlayMod.TAPPED,MagicPlayMod.ATTACKING]
+                )
+            ));
         }
     }
 ]

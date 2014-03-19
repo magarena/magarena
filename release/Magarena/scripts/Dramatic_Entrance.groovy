@@ -4,19 +4,19 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_GREEN_CREATURE_CARD_FROM_HAND,
-                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "Put a green creature card\$ from your hand onto the battlefield."
+                "PN may put a green creature card from PN's hand onto the battlefield."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game, {
-                final MagicCard card ->
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                game.doAction(new MagicPlayCardAction(card,event.getPlayer()));
-            });
+            game.addEvent(new MagicPutOntoBattlefieldEvent(
+                event,
+                new MagicMayChoice(
+                    "Put a green creature card onto the battlefield?",
+                    MagicTargetChoice.TARGET_GREEN_CREATURE_CARD_FROM_HAND
+                )
+            ));
         }
     }
 ]
