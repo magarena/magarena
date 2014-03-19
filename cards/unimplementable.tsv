@@ -1,195 +1,844 @@
-Gravecrawler	from graveyard
-Deadbridge Goliath	from graveyard
-Dreg Mangler	from graveyard
-Sever the Bloodline	from graveyard
-Faithless Looting	from graveyard
-Unburial Rites	from graveyard
-Bump in the Night	from graveyard
-Life from the Loam	from graveyard
-Vengevine	from graveyard
-Bloodghast	from graveyard
-Snapcaster Mage	flashback
-Ancient Grudge	flashback
-Lingering Souls	flashback
-Think Twice	flashback
-Devil's Play	flashback
-Desperate Ravings	flashback
-Cavern of Souls	restricted mana
-Ponder	reveal
-Duress	reveal
-Forbidden Alchemy	reveal
-Dark Confidant	reveal
-Vendilion Clique	reveal
-Inquisition of Kozilek	reveal
-Metalworker	reveal
-Sensei's Divining Top	reveal
-Goblin Ringleader	reveal
-Grisly Salvage	reveal
-Mulch	reveal
-Appetite for Brains	reveal
-Selesnya Sanctuary	mana pool
-Ancient Tomb	mana pool
-Grim Monolith	mana pool
-Sol Ring	mana pool
-City of Traitors	mana pool
-Burning-Tree Emissary	mana pool
-Selesnya Charm	choose
-Crushing Vines	choose
-Cryptic Command	choose
-Red Elemental Blast	choose
-Azorius Charm	choose
-Golgari Charm	choose
-Inferno Titan	divided damage
-Revenge of the Hunted	all block
-Yosei, the Morning Star	multiple targets
-Feeling of Dread	multiple targets
-Kuldotha Forgemaster	multiple targets
-Goblin Welder	multiple targets
-Grim Lavamancer	multiple targets
-Pyrokinesis	multiple targets
-Angel of Serenity	multiple targets
-Skirsdag High Priest	multiple targets
-Curse of Death's Hold	enchant player
-Torpor Orb	don't cause abilities to trigger
-Grafdigger's Cage	can't enter/cast
-Delver of Secrets	transform
-Huntmaster of the Fells	transform
-Phyrexian Revoker	name a card
-Pithing Needle	name a card
-Thalia, Guardian of Thraben	cost modification
-Trinisphere	cost modification
-Goblin Warchief	cost modification
-Blasphemous Act	cost modification
-Rakdos, Lord of Riots	cost modification
-Mayor of Avabruck	transform
-Boros Charm	choose
-Domri Rade	reveal
-Garruk Relentless	transform
-Sorin, Lord of Innistrad	multiple targets
-Gyre Sage	mana pool
-Flames of the Firebrand	divided damage
-Orzhov Charm	choose
-Purify the Grave	from graveyard
-Mana Drain	mana pool
-Oath of Druids	reveal
-Thoughtseize	reveal
-Gruul Charm	choose
-Thorn of Amethyst	cost modification
-Mishra's Workshop	mana pool
-Lodestone Golem	cost modification
-Black Lotus	mana pool
-Augur of Bolas	reveal
-Tezzeret the Seeker	multiple targets
-Sphere of Resistance	cost modification
-Mana Crypt	mana pool
-Goblin Guide	reveal
-Tolarian Academy	mana pool
-Phyrexian Colossus	blocking restriction
-Leyline of Vitality	begin the game with it
-Infernal Kirin	reveal
-Imperiosaur	mana restriction
-Gibbering Hyenas	blocking restriction
-Dragonspeaker Shaman	cost modification
-Slaughter Games	name card
-Pyroblast	choose
-Izzet Charm	choose
-Leyline of the Void	begin the game with it
-Skullbriar, the Walking Grave	counters remain
-Living Destiny	reveal
-Sin Collector	reveal
-Deathrite Shaman	mana pool
-Electrolyze	divided damage
+Abuna's Chant	choose
+Acorn Harvest	flashback
+Active Volcano	choose
+Adarkar Unicorn	mana pool
+Aether Burst	multiple targets
+Aether Shockwave	choose
+Agent of Stromhald	mana pool
+Akki Rockspeaker	mana pool
+Alabaster Potion	choose
+All Sun's Dawn	multiple targets
+Altar of Shadows	mana pool
+Altar of the Lost	mana pool
+Alter Reality	flashback
+An-Havva Township	mana pool
+Ancestral Tribute	flashback
 Ancestral Vision	suspend
-Jace, the Mind Sculptor	reveal
-Darksteel Colossus	reveal
-Blightsteel Colossus	reveal
-Searing Blaze	multiple targets
-Rift Bolt	suspend
-Chord of Calling	convoke
-Serum Visions	reveal
-Nightveil Specter	from exile
-Sleight of Hand	reveal
-Sarpadian Empires, Vol. VII	enters choose color
-Phage the Untouchable	cast from hand
-Muraganda Petroglyphs	no abilities
-Grafted Wargear	becomes unattached
-Doubling Season	counters replacement
-Melira, Sylvok Outcast	counters replacement
-Viscera Seer	reveal
-Liliana of the Veil	separate permanents
-Spreading Seas	becomes basic land
-Blood Moon	becomes basic land
-Rakdos Charm	choose
-Slagstorm	choose
-Madcap Skills	blocking restriction
-Jund Charm	choose
-Lion's Eye Diamond	mana pool
-Cabal Therapy	flashback
-Rite of Flame	mana pool
-Dark Ritual	mana pool
-Burning Wish	reveal
-Punishing Fire	from graveyard
-Lush Growth	becomes basic land
-Ray of Revelation	from graveyard
-Lifebane Zombie	reveal
-Ral Zarek	multiple targets
-Urza's Tower	mana pool
-Urza's Power Plant	mana pool
-Urza's Mine	mana pool
-Karn Liberated	restart the game
+Ancient Grudge	flashback
+Ancient Spring	mana pool
 Ancient Stirrings	reveal
-Defense Grid	cost modification
-Pyretic Ritual	mana pool
-Manamorphose	mana pool
-Goblin Electromancer	cost modification
-Desperate Ritual	mana pool
-Peek	reveal
-Past in Flames	from graveyard
-Silvergill Adept	reveal
-Thoughtcast	cost modification
-Preordain	reveal
-Twilight Mire	mana pool
-Martyr of Sands	reveal
-Garruk, Caller of Beasts	reveal
-Frogmite	cost modification
-Izzet Signet	mana pool
-Leyline of Sanctity	begin the game with it
-Mishra's Bauble	look
-Windbrisk Heights	look
-Chandra's Phoenix	from graveyard
-Pyreheart Wolf	blocking restriction
-Riftwing Cloudskate	suspend
-Restore Balance	suspend
-Keldon Halberdier	suspend
-Greater Gargadon	suspend
-Errant Ephemeron	suspend
-Lotus Bloom	suspend
-Shivan Sand-Mage	suspend
-Eye of Ugin	cost modification
-Rolling Temblor	flashback
-Mystical Teachings	flashback
-Chromatic Star	mana pool
-Chromatic Sphere	mana pool
-Jace, Architect of Thought	separate into piles
-Suppression Field	cost modification
-Fact or Fiction	separate into piles
-Simic Growth Chamber	mana pool
-Golgari Rot Farm	mana pool
-Nykthos, Shrine to Nyx	mana pool
-Magma Jet	scry 2
-Omenspeaker	scry 2
-Read the Bones	scry 2
-Xenagos, the Reveler	mana pool
-Condescend	scry 2
-Cloudpost	mana pool
-Polukranos, World Eater	divided damage
-Cabal Ritual	mana pool
-Courser of Kruphix	reveal
-Spellskite	change target
+Ancient Tomb	mana pool
+Angel of Serenity	multiple targets
+Anthousa, Setassan Hero	multiple targets
+Aphetto Dredging	multiple targets
+Appetite for Brains	reveal
+Apprentice Wizard	mana pool
+Archon of the Triumvirate	multiple targets
+Army of the Damned	flashback
+Artful Dodge	flashback
 Ash Zealot	from graveyard
+Ashnod's Altar	mana pool
+Astral Cornucopia	mana pool
+Astrolabe	mana pool
+Atalya, Samite Healer	choose
+Augur of Bolas	reveal
+Austere Command	choose
+Aven Augur	multiple targets
+Axebane Guardian	mana pool
+Aysen Abbey	mana pool
+Azorius Chancery	mana pool
+Azorius Charm	choose
+Azorius Justicar	multiple targets
+Azorius Signet	mana pool
+Balduvian Trading Post	mana pool
+Bamboozle	multiple targets
+Bant Charm	choose
+Barbed Lightning	choose
+Barrin's Spite	multiple targets
+Basal Sliver	mana pool
+Basal Thrull	mana pool
+Basalt Monolith	mana pool
+Bash to Bits	flashback
+Battle Hymn	mana pool
+Battle Screech	flashback
+Beast Attack	flashback
+Betrayal of Flesh	choose
+Black Lotus	mana pool
+Black Mana Battery	mana pool
+Black Market	mana pool
+Blades of Velis Vel	multiple targets
+Blasphemous Act	cost modification
+Blightsteel Colossus	reveal
+Blinding Beam	choose
+Blinkmoth Urn	mana pool
+Blood Celebrant	mana pool
+Blood Moon	becomes basic land
+Blood Vassal	mana pool
+Bloodghast	from graveyard
+Bloom Tender	mana pool
+Blue Elemental Blast	choose
+Blue Mana Battery	mana pool
+Bog Initiate	mana pool
+Bog Witch	mana pool
+Boros Battleshaper	multiple targets
+Boros Charm	choose
+Boros Garrison	mana pool
+Boros Signet	mana pool
+Bottomless Vault	mana pool
+Bow of Nylea	choose
+Braid of Fire	mana pool
+Branching Bolt	choose
+Brightstone Ritual	mana pool
+Brutalizer Exarch	choose
+Bubbling Muck	mana pool
+Bump in the Night	from graveyard
+Burning Oil	flashback
+Burning Wish	reveal
+Burning-Tree Emissary	mana pool
+Burnt Offering	mana pool
+Cabal Coffers	mana pool
+Cabal Ritual	mana pool
+Cabal Therapy	flashback
+Cackling Counterpart	flashback
+Cadaverous Bloom	mana pool
+Caged Sun	mana pool
+Calciform Pools	mana pool
+Call of the Herd	flashback
+Cannibalize	multiple targets
+Canopy Claws	flashback
+Capricious Efreet	multiple targets
+Carnival of Souls	mana pool
+Carpet of Flowers	mana pool
+Carrion Beetles	multiple targets
+Cascade Bluffs	mana pool
+Castle Sengir	mana pool
+Cathodian	mana pool
+Cauldron Haze	multiple targets
+Cauldron of Souls	multiple targets
+Cavern of Souls	restricted mana
+Celestial Gatekeeper	multiple targets
+Celestial Prism	mana pool
+Cephalid Constable	multiple targets
+Ceta Disciple	mana pool
+Chainer's Edict	flashback
+Chancellor of the Tangle	mana pool
+Chandra Pyromaster	multiple targets
+Chandra's Phoenix	from graveyard
+Channel	mana pool
+Channel the Suns	mana pool
+Chaos Charm	choose
+Chaos Moon	mana pool
+Charmed Pendant	mana pool
+Chatter of the Squirrel	flashback
+Chill of Forboding	flashback
+Cho-Arrim Bruiser	multiple targets
+Chord of Calling	convoke
+Chromatic Sphere	mana pool
+Chromatic Star	mana pool
+City of Shadows	mana pool
+City of Traitors	mana pool
+Clan Defiance	choose
+Cloudpost	mana pool
+Coal Golem	mana pool
+Coal Stoker	mana pool
+Coalition Relic	mana pool
+Coffin Purge	flashback
+Composite Golem	mana pool
+Condescend	scry 2
+Conflagrate	flashback
+Consult the Necrosages	choose
+Consuming Bonfire	choose
+Contagion Clasp	multiple targets
+Contagion Engine	multiple targets
+Coordinated Assault	multiple targets
+Coral Atoll	mana pool
+Core Prowler	multiple targets
+Courser of Kruphix	reveal
+Creeping Renaissance	flashback
+Crippling Fatigue	flashback
+Crosis's Attendant	mana pool
+Crosis's Charm	choose
+Cruel Revival	multiple targets
+Crush of Wurms	flashback
+Crushing Vines	choose
+Crypt Ghast	mana pool
+Crypt of Agadeem	mana pool
+Cryptic Command	choose
+Crystal Quarry	mana pool
+Crystal Vein	mana pool
+Culling of the Weak	mana pool
+Cultural Exchange	multiple targets
+Curse of Death's Hold	enchant player
+Cutthroat Maneuver	multiple targets
+Darigaaz's Attendant	mana pool
+Darigaaz's Charm	choose
+Dark Confidant	reveal
+Dark Ritual	mana pool
+Darksteel Colossus	reveal
+Darkwater Catacombs	mana pool
+Darkwater Egg	mana pool
+Dauntless Onslaught	multiple targets
+Dawn Charm	choose
+Dawn to Dusk	choose
+Dawn's Reflection	mana pool
+Deadbridge Goliath	from graveyard
+Deadly Allure	flashback
+Deathrite Shaman	mana pool
+Decompose	multiple targets
+Deconstruct	mana pool
+Deep Analysis	flashback
+Deep Reconnaissance	flashback
+Defense Grid	cost modification
+Defy Gravity	flashback
+Delver of Secrets	transform
+Dematerialize	flashback
+Denying Wind	multiple targets
+Desperate Ravings	flashback
+Desperate Ritual	mana pool
+Devil's Play	flashback
+Dimir Aqueduct	mana pool
+Dimir Charm	choose
+Dimir Signet	mana pool
+Divine Reckoning	flashback
+Domri Rade	reveal
+Dormant Volcano	mana pool
+Double Negatice	multiple targets
+Doubling Cube	mana pool
+Doubling Season	counters replacement
+Downpour	multiple targets
+Dragonspeaker Shaman	cost modification
+Drain Power	mana pool
+Dread Return	flashback
+Dreadship Reef	mana pool
+Dream Tides	multiple targets
+Dream Twist	flashback
+Dream's Grip	choose
+Dreg Mangler	from graveyard
+Dromar's Attendant	mana pool
+Dromar's Charm	choose
+Druid's Repository	mana pool
+Duress	reveal
+Dust of Moments	choose
+Dwarven Hold	mana pool
+Dwarven Ruins	mana pool
+Dwell on the Past	multiple targets
+Early Frost	multiple targets
+Earth Rift	flashback
+Ebon Stronghold	mana pool
+Ebony Charm	choose
+Eladamri's Vineyard	mana pool
+Eldrazi Temple	mana pool
+Electrolyze	divided damage
+Elemental Resonance	mana pool
+Elephant Ambush	flashback
+Elvish Aberration	mana pool
+Elvish Archdruid	mana pool
+Elvish Guidance	mana pool
+Elvish Spirit Guide	mana pool
+Embolden	flashback
+Emerald Charm	choose
+Energy Bolt	choose
+Energy Chamber	choose
+Energy Tap	mana pool
+Engulfing Flames	flashback
+Entomber Exarch	choose
+Errant Ephemeron	suspend
+Esper Charm	choose
+Etherwrought Page	choose
+Everflowing Chalice	mana pool
+Everglades	mana pool
+Evolution Charm	choose
+Extraplanar Lens	mana pool
+Eye of Ugin	cost modification
+Fact or Fiction	separate into piles
+Faerie Macabre	multiple targets
+Faithless Looting	from graveyard
+Famished Ghoul	multiple targets
+Farrelite Priest	mana pool
+Fatal Lore	multiple targets
 Fated Retribution	scry 2
-Notion Thief	draw replacement
+Feast of Famine	choose
+Feeling of Dread	multiple targets
+Fendeep Summoner	multiple targets
+Fertile Ground	mana pool
+Fervant Denial	flashback
+Fetid Heath	mana pool
+Fever Charm	choose
+Final Revels	choose
+Fire Sprites	mana pool
+Fire-Lit Thicket	mana pool
+Firebolt	flashback
+Firecat Blitz	flashback
+Fires of Undeath	flashback
+Fissure Vent	choose
+Flames of the Firebrand	divided damage
+Flaming Gambit	flashback
+Flaring Pain	flashback
+Flash Flood	choose
+Flash of Defiance	flashback
+Flash of Insight	flashback
+Flooded Grove	mana pool
+Folk Medicine	flashback
+Food Chain	mana pool
+Forbidden Alchemy	reveal
+Fortify	choose
+Fountain of Cho	mana pool
+Frogmite	cost modification
+Frost Breath	multiple targets
+Fuel for the Cause	multiple targets
+Fulgent Distraction	multiple targets
+Funeral Charm	choose
+Fungal Reaches	mana pool
+Fury Charm	choose
+Fyndhorn Elder	mana pool
+Gaea's Blessing	multiple targets
+Gaea's Cradle	mana pool
+Gaea's Touch	mana pool
+Garruk Relentless	transform
+Garruk, Caller of Beasts	reveal
+Gauntlet of Might	mana pool
+Gauntlet of Power	mana pool
+Gaze of Justic	flashback
+Geistflame	flashback
+Gemstone Array	mana pool
+Geosurge	mana pool
+Geothermal Crevice	mana pool
+Ghostform	multiple targets
+Ghoulcaller's Chant	choose
+Gibbering Hyenas	blocking restriction
+Gilded Lotus	mana pool
 Gitaxian Probe	reveal
+Glarewielder	multiple targets
+Glissa Sunseeker	mana pool
+Gnaw to the Bone	flashback
+Goblin Clearcutter	mana pool
+Goblin Electromancer	cost modification
+Goblin Guide	reveal
+Goblin Ringleader	reveal
+Goblin Warchief	cost modification
+Goblin Welder	multiple targets
+Golgari Charm	choose
+Golgari Rot Farm	mana pool
+Golgari Signer	mana pool
+Grab the Reins	choose
+Grafdigger's Cage	can't enter/cast
+Grafted Wargear	becomes unattached
+Grand Architect	mana pool
+Grasp of Phantoms	flashback
+Gravecrawler	from graveyard
+Gravegouger	multiple targets
+Graven Cairns	mana pool
+Greater Gargadon	suspend
+Green Mana Battery	mana pool
+Greenweaver Druid	mana pool
+Grim Affliction	multiple targets
+Grim Discovery	choose
+Grim Lavamancer	multiple targets
+Grim Monolith	mana pool
+Grinning Ignus	mana pool
+Grisly Salvage	reveal
+Grixis Charm	choose
+Grizzly Fate	flashback
+Gruul Charm	choose
+Gruul Signet	mana pool
+Gruul Turf	mana pool
+Gyre Sage	mana pool
+Hall of the Bandit Lord	mana pool
+Harabaz Druid	mana pool
+Harrow	multiple targets
+Havenwood Battleground	mana pool
+Healing Leaves	choose
+Healing Salve	choose
+Heartbeat of Spring	mana pool
+Hearth Charm	choose
+Helionaut	mana pool
+Henge of Ramos	mana pool
+Heritage Druid	mana pool
+Hickory Woodlot	mana pool
+High Tide	mana pool
+Hollow Trees	mana pool
+Hope Charm	choose
+Hoverguard Sweepers	multiple targets
+Howling Gale	flashback
+Hull Breach	choose
+Huntmaster of the Fells	transform
+Hurly-Burly	choose
+Hydroblast	choose
+Icatian Store	mana pool
+Ice Cauldron	mana pool
+Iceberg	mana pool
+Imperiosaur	mana restriction
+Implements of Sacrifice	mana pool
+Incendiary Command	choose
+Incite War	choose
+Increasing Ambition	flashback
+Increasing Confusion	flashback
+Increasing Devotion	flashback
+Increasing Savagery	flashback
+Increasing Vengeance	flashback
+Inexorable Tide	multiple targets
+Infernal Kirin	reveal
+Infernal Plunge	mana pool
+Inferno Titan	divided damage
+Initiates of the Ebon Hand	mana pool
+Inner Fire	mana pool
+Inquisition of Kozilek	reveal
+Inquisitor Exarch	choose
+Into the Void	multiple targets
+Invoke the Firemind	choose
+Irrigation Ditch	mana pool
+Ivory Charm	choose
+Izzet Boilerworks	mana pool
+Izzet Charm	choose
+Izzet Signet	mana pool
+Jace, Architect of Thought	separate into piles
 Jace, Memory Adept	multiple targets
-Soul Ransom	opponent activate
+Jace, the Mind Sculptor	reveal
+Jorage Treespeaker	mana pool
+Journey of Discovery	multiple targets
+Journey of Discovery	choose
+Jund Charm	choose
+Jungle Basin	mana pool
+Kaleidostone	mana pool
+Karametra's Acolyte	mana pool
+Karn Liberated	restart the game
+Karoo	mana pool
+Keeper of Progenitus	mana pool
+Keldon Halberdier	suspend
+Khalni Gem	mana pool
+Knotvine Mystic	mana pool
+Koskun Keep	mana pool
+Koth of the Hammer	mana pool
+Krark-Clan Ironworks	mana pool
+Krark-Clan Stoker	mana pool
+Krosan Restoration	flashback
+Krosan Restorer	multiple targets
+Kuldotha Forgemaster	multiple targets
+Kyren Toy	mana pool
+Lake of the Dead	mana pool
+Land Tax	multiple targets
+Lava Dart	flashback
+Lead Astray	multiple targets
+Leyline of Sanctity	begin the game with it
+Leyline of the Void	begin the game with it
+Leyline of Vitality	begin the game with it
+Liege of the Tangle	multiple targets
+Life from the Loam	from graveyard
+Lifebane Zombie	reveal
+Lightning Surge	flashback
+Liliana of the Dark Realms	mana pool
+Liliana of the Veil	separate permanents
+Lingering Souls	flashback
+Lion's Eye Diamond	mana pool
+Liturgy of Blood	mana pool
+Living Destiny	reveal
+Lodestone Bauble	multiple targets
+Lodestone Golem	cost modification
+Lorthos, the Tidemaker	multiple targets
+Lotus Bloom	suspend
+Lotus Bloom	mana pool
+Lotus Blossom	mana pool
+Lotus Cobra	mana pool
+Lotus Vale	mana pool
+Lush Growth	becomes basic land
+Lyev Decree	multiple targets
+Macabre Waltz	multiple targets
+Madcap Skills	blocking restriction
+Magma Jet	scry 2
+Magnetic Mountain	multiple targets
+Magus of the Coffers	mana pool
+Magus of the Vineyard	mana pool
+Mana Bloom	mana pool
+Mana Crypt	mana pool
+Mana Cylix	mana pool
+Mana Drain	mana pool
+Mana Echoes	mana pool
+Mana Flare	mana pool
+Mana Geyser	mana pool
+Mana Prism	mana pool
+Mana Seism	mana pool
+Mana Short	mana pool
+Mana Vault	mana pool
+Manaforge Cinder	mana pool
+Manamorphose	mana pool
+Marath, Will of the Wild	choose
+March of the Returned	multiple targets
+Mark of Sakiko	mana pool
+Markov Warlord	multiple targets
+Marshal's Anthem	multiple targets
+Marshaling Cry	flashback
+Martyr of Bones	multiple targets
+Martyr of Sands	reveal
+Mayor of Avabruck	transform
+Melira, Sylvok Outcast	counters replacement
+Memory's Journey	flashback
+Mercadian Bazaar	mana pool
+Merciless Eviction	choose
+Metalworker	reveal
+Metalworker	mana pool
+Metamorphosis	mana pool
+Midnight Charm	choose
+Mirari's Wake	mana pool
+Mischief and Mayhem	multiple targets
+Misery Charm	choose
+Mishra's Bauble	look
+Mishra's Workshop	mana pool
+Misinformation	multiple targets
+Moan of the Unhallowed	flashback
+Mogis's Marauder	multiple targets
+Molten Slagheap	mana pool
+Moment's Peace	flashback
+Momentary Blink	flashback
+Morbid Hunger	flashback
+Morbid Plunder	multiple targets
+Morgue Theft	flashback
+Morgue Toad	mana pool
+Morselhoarder	mana pool
+Mossfire Egg	mana pool
+Mossfire Valley	mana pool
+Mudslide	multiple targets
+Mul Daya Channelers	mana pool
+Mulch	reveal
+Muraganda Petroglyphs	no abilities
+Myr Moonvessel	mana pool
+Myr Reservoir	mana pool
+Mystic Gate	mana pool
+Mystic Retrieval	flashback
+Mystical Teachings	flashback
+Nantuko Elder	mana pool
+Naya Charm	choose
+Necra Disciple	mana pool
+Nefashu	multiple targets
+Nightbird's Clutches	flashback
+Nightmare Incursion	multiple targets
+Nightscape Battlemage	multiple targets
+Nightveil Specter	from exile
+Nirkana Revenant	mana pool
+Noggin Whack	multiple targets
+Nomadic Elf	mana pool
+Notion Thief	draw replacement
+Numot, the Devastator	multiple targets
+Nykthos, Shrine to Nyx	mana pool
+Oath of Druids	reveal
+Omenspeaker	scry 2
+Omnath, Locus of Mana	mana pool
+One Dozen Eyes	choose
+Orcish Lumberjack	mana pool
+Orochi Leafcaller	mana pool
+Orzhov Basilica	mana pool
+Orzhov Charm	choose
+Orzhov Pontiff	choose
+Orzhov Signet	mana pool
+Overabundance	mana pool
+Overeager Apprentice	mana pool
+Overgrown Battlement	mana pool
+Overgrowth	mana pool
+Overlaid Terrain	mana pool
+Pack Hunt	multiple targets
+Palladium Myr	mana pool
+Panic Attack	multiple targets
+Parallel Evolution	flashback
+Parch	choose
+Past in Flames	from graveyard
+Peat Bog	mana pool
+Peek	reveal
+Pentad Prism	mana pool
+Permafrost Trap	multiple targets
+Petalmane Baku	mana pool
+Phage the Untouchable	cast from hand
+Phyrexian Altar	mana pool
+Phyrexian Colossus	blocking restriction
+Phyrexian Revoker	name a card
+Phyrexian Splicer	choose
+Phyrexian Tower	mana pool
+Piety Charm	choose
+Pili-Pala	mana pool
+Piracy Charm	choose
+Pithing Needle	name a card
+Plaguemaw Beast	multiple targets
+Plasm Capture	mana pool
+Plunge into Darkness	choose
+Polukranos, World Eater	divided damage
+Ponder	reveal
+Power Conduit	choose
+Preordain	reveal
+Priest of Gix	mana pool
+Priest of Titania	mana pool
+Priest of Urabrask	mana pool
+Priest of Yawgmoth	mana pool
+Primal Command	choose
+Prismatic Lens	mana pool
+Prismatic Strands	flashback
+Proclamation of Rebirth	multiple targets
+Profane Command	choose
+Promise of Power	choose
+Prophetic Prism	mana pool
+Punishing Fire	from graveyard
+Purify the Grave	from graveyard
+Putrid Warrior	choose
+Pygmy Hippo	mana pool
+Pyramids	choose
+Pyreheart Wolf	blocking restriction
+Pyretic Ritual	mana pool
+Pyroblast	choose
+Pyrokinesis	multiple targets
+Quicksilver Geyser	multiple targets
+Quiet Disrepair	choose
+Quirion Sentinel	mana pool
+Radha, Heir to Keld	mana pool
+Rag Dealer	multiple targets
+Rain of Rust	choose
+Rain of Thorns	choose
+Rakdos Carnarium	mana pool
+Rakdos Charm	choose
+Rakdos Signet	mana pool
+Rakdos, Lord of Riots	cost modification
+Ral Zarek	multiple targets
+Rally the Peasants	flashback
+Rapid Decay	multiple targets
+Rasputin, Dreamweaver	mana pool
+Ray of Distortion	flashback
+Ray of Revelation	from graveyard
+Read the Bones	scry 2
+Reality Spasm	choose
+Reap	multiple targets
+Reap and Sow	choose
+Reap Intellect	multiple targets
+Reap the Seagraf	flashback
+Reap What Is Sown	multiple targets
+Recantation	multiple targets
+Reckless Charge	flashback
+Recoup	flashback
+Recuperate	choose
+Red Elemental Blast	choose
+Red Mana Battery	mana pool
+Redeem	multiple targets
+Reign of Chaos	choose
+Reinforcements	multiple targets
+Relic Bind	choose
+Relic Crush	multiple targets
+Remember the Fallen	choose
+Remote Farm	mana pool
+Repel the Darkness	multiple targets
+Restore Balance	suspend
+Retribution	multiple targets
+Return to Dust	multiple targets
+Return to Dust	mana pool
+Reveillark	multiple targets
+Revenge of the Hunted	all block
+Rift Bolt	suspend
+Riftwing Cloudskate	suspend
+Rite of Flame	mana pool
+Rith's Attendant	mana pool
+Rith's Charm	choose
+Roar of the Kha	choose
+Roar of the Wurm	flashback
+Rofellos, Llanowar Emissary	mana pool
+Rolling Temblor	flashback
+Rosheen Meanderer	mana pool
+Rude Awakening	choose
+Rugged Prairie	mana pool
+Ruins of Trokair	mana pool
+Rumbling Crescendo	multiple targets
+Rushwood Grove	mana pool
+Rysorian Badger	multiple targets
+Sacellum Godspeaker	mana pool
+Sachi, Daughter of Seshiro	mana pool
+Sacrifice	mana pool
+Sakiko, Mother of Summer	mana pool
+Sakura-Tribe Springcaller	mana pool
+Saltcrusted Steppe	mana pool
+Sand Silos	mana pool
+Sandstone Needle	mana pool
+Sapphire Charm	choose
+Saprazzan Cove	mana pool
+Saprazzan Skerry	mana pool
+Sarpadian Empires, Vol. VII	enters choose color
+Satyr Hedonist	mana pool
+Savage Beating	choose
+Saving Grasp	flashback
+Scattering Stroke	mana pool
+School of the Unseen	mana pool
+Scorched Ruins	mana pool
+Scorching Missile	flashback
+Sea God's Revenge	multiple targets
+Sea Scryer	mana pool
 Search for Tomorrow	suspend
+Searing Blaze	multiple targets
+Second Sight	choose
+Seedling Charm	choose
+Seething Song	mana pool
+Seismic Spike	mana pool
+Seize the Day	flashback
+Selesnya Charm	choose
+Selesnya Sanctuary	mana pool
+Selesnya Signet	mana pool
+Sensei's Divining Top	reveal
+Serene Remembrance	multiple targets
+Serra's Liturgy	multiple targets
+Serra's Sanctum	mana pool
+Serum Visions	reveal
+Sever the Bloodline	from graveyard
+Shadowblood Egg	mana pool
+Shadowblood Ridge	mana pool
+Shattered Perception	flashback
+Shimmering Grotto	mana pool
+Shipbreaker Kraken	multiple targets
+Shivan Sand-Mage	suspend
+Shizuko, Caller of Autumn	mana pool
+Showe of Coals	multiple targets
+Shred Memory	multiple targets
+Shrine of Boundless Growth	mana pool
+Shriveling Rot	choose
+Silent Departure	flashback
+Silvergill Adept	reveal
+Simian Spirit Guide	mana pool
+Simic Charm	choose
+Simic Growth Chamber	mana pool
+Simic Signet	mana pool
+Sin Collector	reveal
+Sisay's Ring	mana pool
+Skirge Familiar	mana pool
+Skirk Prospector	mana pool
+Skirsdag High Priest	multiple targets
+Skull Fracture	flashback
+Skullbriar, the Walking Grave	counters remain
+Skullsnatcher	multiple targets
+Skycloud Egg	mana pool
+Skycloud Expanse	mana pool
+Skyshroud Elf	mana pool
+Slagstorm	choose
+Slaughter Games	name card
+Sleight of Hand	reveal
+Smokebraider	mana pool
+Snapcaster Mage	flashback
+Snowfall	mana pool
+Sol Ring	mana pool
+Solar Tide	choose
+Soldevi Adnate	mana pool
+Soldevi Excavations	mana pool
+Soldevi Machinist	mana pool
+Songs of the Damned	mana pool
+Sorin, Lord of Innistrad	multiple targets
+Sorrow's Path	multiple targets
+Soul Manipulation	choose
+Soul Ransom	opponent activate
+Soul Stair Expedition	multiple targets
+Soulbright Flamekin	mana pool
+Spectral Searchlight	mana pool
+Spectral Shift	choose
+Spellskite	change target
+Sphere of Resistance	cost modification
+Spider Spawning	flashback
+Spirit Flare	flashback
+Splitting Headache	choose
+Spoils of Evil	mana pool
+Spread the Sickness	multiple targets
+Spreading Seas	becomes basic land
+Springjack Pasture	mana pool
+Standing Stones	mana pool
+Steady Progress	multiple targets
+Steel Sabotage	choose
+Stir the Pride	choose
+Strangling Soot	flashback
+Stream of Consciousness	multiple targets
+Su-Chi	mana pool
+Subterranean Hanger	mana pool
+Sudden Storm	multiple targets
+Sulfur Vent	mana pool
+Sunastian Falconer	mana pool
+Sungrass Egg	mana pool
+Sungrass Prairie	mana pool
+Sunken Ruins	mana pool
+Suppression Field	cost modification
+Svyelunite Temple	mana pool
+Sylvan Library	choose
+Sylvan Might	flashback
+Tablet of the Guilds	multiple targets
+Tangleroot	mana pool
+Teferi's Isle	mana pool
+Tempest Owl	multiple targets
+Temple of the False God	mana pool
+Temporal Cascade	choose
+Terashi's Cry	multiple targets
+Terastodon	multiple targets
+Terrarion	mana pool
+Tezzeret the Seeker	multiple targets
+Tezzeret's Gambit	multiple targets
+Thalia, Guardian of Thraben	cost modification
+Thelon's Curse	multiple targets
+Thermopod	mana pool
+Think Twice	flashback
+Thorn of Amethyst	cost modification
+Thoughtcast	cost modification
+Thoughtseize	reveal
+Thran Dynamo	mana pool
+Thran Turbine	mana pool
+Thrill of the Hunt	flashback
+Throne of Geth	multiple targets
+Thrummingbird	multiple targets
+Thunderbolt	choose
+Tidal Surge	multiple targets
+Tilling Treefolk	multiple targets
+Timebender	choose
+Timecrafting	choose
+Tinder Farm	mana pool
+Tinder Wall	mana pool
+Tolarian Academy	mana pool
+Tooth and Nail	choose
+Torpor Orb	don't cause abilities to trigger
+Trace of Abundance	mana pool
+Tracker's Instincts	flashback
+Traitor's Clutch	flashback
+Travel Preparations	flashback
+Treva's Attendant	mana pool
+Treva's Charm	choose
+Triassic Egg	choose
+Trickery Charm	choose
+Trinisphere	cost modification
+Triton Tactics	multiple targets
+Twilight Mire	mana pool
+Ulasht, the Hate Seed	choose
+Unburial Rites	from graveyard
+Unearthly Blizzard	multiple targets
+Unknown Shores	mana pool
+Untaidake, the Cloud Keeper	mana pool
+Upwelling	mana pool
+Ur-Golem's Eye	mana pool
+Urborg Uprising	multiple targets
+Urza's Mine	mana pool
+Urza's Power Plant	mana pool
+Urza's Tower	mana pool
+Utopia Mycon	mana pool
+Utopia Sprawl	mana pool
+Valleymaker	mana pool
+Vedalken Engineer	mana pool
+Vendilion Clique	reveal
+Vengevine	from graveyard
+Ventifact Bottle	mana pool
+Verdant Eidolon	mana pool
+Verdant Haven	mana pool
+Vernal Bloom	mana pool
+Victimize	multiple targets
+Vile Requiem	multiple targets
+Viral Drake	multiple targets
+Viridian Acolyte	mana pool
+Viridian Joiner	mana pool
+Viscera Seer	reveal
+Vision Charm	choose
+Vitality Charm	choose
+Volcanic Spray	flashback
+Volley of Boulders	flashback
+Volt Charge	multiple targets
+Vorinclex, Voice of Hunger	mana pool
+Voyager Drake	multiple targets
+Wail of the Nym	choose
+Warrior's Lesson	multiple targets
+Wave Elemental	multiple targets
+White Mana Battery	mana pool
+Wild Growth	mana pool
+Wild Hunger	flashback
+Windbrisk Heights	look
+Winter's Night	mana pool
+Wintermoon Mesa	multiple targets
+Wirewood Channeler	mana pool
+Witch Engine	mana pool
+Wizard's School	mana pool
+Wooded Bastion	mana pool
+Workhorse	mana pool
+Worldpurge	mana pool
+Worn Powerstone	mana pool
+Wrap in Flames	multiple targets
+Xenagos, the Reveler	mana pool
+Yosei, the Morning Star	multiple targets
+Zhur-Taa Ancient	mana pool
