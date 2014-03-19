@@ -33,8 +33,8 @@ def ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicTargetChoice(
                 new MagicMayChoice(
                     "Put an Angel, Demon or Dragon card onto the battlefield?",
                     ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND,
-                    [MagicPlayMod.TAPPED,MagicPlayMod.ATTACKING]
-                )
+                ),
+                [MagicPlayMod.TAPPED,MagicPlayMod.ATTACKING]
             ));
         }
     }

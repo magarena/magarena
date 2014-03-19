@@ -15,8 +15,8 @@
                 new MagicMayChoice(
                     "Put a basic land card onto the battlefield?",
                     MagicTargetChoice.BASIC_LAND_CARD_FROM_HAND,
-                    MagicPlayMod.TAPPED
-                )
+                ),
+                MagicPlayMod.TAPPED
             ));
         }
     }

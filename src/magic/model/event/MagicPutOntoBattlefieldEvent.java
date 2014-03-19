@@ -1,5 +1,8 @@
 package magic.model.event;
 
+import java.util.List;
+import java.util.Arrays;
+
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
@@ -15,11 +18,15 @@ import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicPutOntoBattlefieldEvent extends MagicEvent {
     
-    public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPlayMod... mods) {
+    public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final List<MagicPlayMod> mods) {
         this(event.getSource(), event.getPlayer(), choice, mods);
     }
-
-    public MagicPutOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final MagicPlayMod... mods) {
+    
+    public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPlayMod... mods) {
+        this(event.getSource(), event.getPlayer(), choice, Arrays.asList(mods));
+    }
+    
+    public MagicPutOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final List<MagicPlayMod> mods) {
         super(
             source,
             player,
@@ -30,7 +37,7 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EventAction(final MagicPlayMod... mods) {
+    private static final MagicEventAction EventAction(final List<MagicPlayMod> mods) {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
