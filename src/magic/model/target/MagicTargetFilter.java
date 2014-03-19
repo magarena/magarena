@@ -48,9 +48,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicStackFilterImpl SPELL_OR_ABILITY_WITH_TARGET =new MagicStackFilterImpl() {
+    MagicStackFilterImpl SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS =new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
-            return target.getEvent().getTargetChoice().isValid();
+            final MagicTargetChoice tchoice = target.getEvent().getTargetChoice();
+            return tchoice.isValid() && 
+                   tchoice.isTargeted() &&
+                   tchoice.getTargetFilter().acceptType(MagicTargetType.Permanent);
         }
     };
 
@@ -64,7 +67,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
             final MagicTargetChoice tchoice = target.getEvent().getTargetChoice();
             return target.isSpell() &&
-                   tchoice != null && tchoice.isTargeted() &&
+                   tchoice.isValid() &&
+                   tchoice.isTargeted() &&
                    tchoice.getTargetFilter().acceptType(MagicTargetType.Player);
         }
     };
