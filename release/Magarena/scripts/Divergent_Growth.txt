@@ -1,0 +1,9 @@
+name=Divergent Growth
+url=http://www.magiccards.info/query?q=%21divergent%20growth
+image=http://mtgimage.com/card/divergent%20growth.jpg
+value=2.909
+rarity=C
+type=Instant
+cost={G}
+effect=Lands PN controls gain tap add mana any until end of turn.
+timing=pump
