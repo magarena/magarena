@@ -8,7 +8,6 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,7 +41,6 @@ public abstract class SelectPlayerAbstractScreen
     extends AbstractScreen
     implements IAvatarImageConsumer {
 
-    protected final Path playersPath;
     protected HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
     protected final IPlayerProfileConsumer consumer;
 
@@ -57,7 +55,6 @@ public abstract class SelectPlayerAbstractScreen
     // CTR
     protected SelectPlayerAbstractScreen(final IPlayerProfileConsumer consumer) {
         this.consumer = consumer;
-        this.playersPath = Paths.get(MagicMain.getPlayerProfilesPath()).resolve(getPlayerType());
         setContent(new ScreenContent());
         setEnterKeyInputMap();
     }
@@ -132,34 +129,6 @@ public abstract class SelectPlayerAbstractScreen
         }
     }
 
-    private class ScreenContent extends JPanel {
-        public ScreenContent() {
-            setOpaque(false);
-            setLayout(new MigLayout("insets 2, center, center"));
-            add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
-        }
-    }
-
-    protected class ContainerPanel extends TexturedPanel {
-
-        public ContainerPanel(final JList<? extends PlayerProfile> profilesJList) {
-            profilesJList.setOpaque(false);
-            setBorder(FontsAndBorders.BLACK_BORDER);
-            setBackground(FontsAndBorders.MENUPANEL_COLOR);
-            setLayout(new MigLayout("insets 0, gap 0, flowy"));
-            add(new ScrollPane(profilesJList), "w 100%, h 100%");
-        }
-
-        private class ScrollPane extends JScrollPane {
-            public ScrollPane(final JList<? extends PlayerProfile> profilesJList) {
-                setViewportView(profilesJList);
-                setBorder(BorderFactory.createEmptyBorder());
-                setOpaque(false);
-                getViewport().setOpaque(false);
-            }
-        }
-
-    }
 
     protected class DeletePlayerAction extends AbstractAction {
 
@@ -214,6 +183,34 @@ public abstract class SelectPlayerAbstractScreen
 
     }
 
+    private class ScreenContent extends JPanel {
+        public ScreenContent() {
+            setOpaque(false);
+            setLayout(new MigLayout("insets 2, center, center"));
+            add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
+        }
+    }
+
+    protected class ContainerPanel extends TexturedPanel {
+
+        public ContainerPanel(final JList<? extends PlayerProfile> profilesJList) {
+            profilesJList.setOpaque(false);
+            setBorder(FontsAndBorders.BLACK_BORDER);
+            setBackground(FontsAndBorders.MENUPANEL_COLOR);
+            setLayout(new MigLayout("insets 0, gap 0, flowy"));
+            add(new ScrollPane(profilesJList), "w 100%, h 100%");
+        }
+
+        private class ScrollPane extends JScrollPane {
+            public ScrollPane(final JList<? extends PlayerProfile> profilesJList) {
+                setViewportView(profilesJList);
+                setBorder(BorderFactory.createEmptyBorder());
+                setOpaque(false);
+                getViewport().setOpaque(false);
+            }
+        }
+
+    }
     protected void doNextAction() {
         consumer.setPlayerProfile(getSelectedPlayer());
         getFrame().closeActiveScreen(false);
