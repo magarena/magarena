@@ -141,16 +141,7 @@ public class SelectAiPlayerScreen
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(new MenuButton("New", new NewPlayerAction(), "Create a new player profile."));
-        buttons.add(new MenuButton("Edit", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new AiPropertiesDialog(getFrame(), getSelectedPlayerProfile());
-                profilesJList.repaint();
-                if (getSelectedPlayerProfile().equals(playerProfile)) {
-                    consumer.setPlayerProfile(getSelectedPlayerProfile());
-                }
-            }
-        }, "Update name and duel settings for selected player."));
+        buttons.add(new MenuButton("Edit", new EditPlayerAction(), "Update name and duel settings for selected player."));
         buttons.add(new MenuButton("Delete", new DeletePlayerAction(), "Delete selected player profile."));
         buttons.add(getAvatarActionButton());
         return buttons;
@@ -229,6 +220,18 @@ public class SelectAiPlayerScreen
             }
         }
 
+    }
+
+    private class EditPlayerAction extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            final AiPlayer profile = (AiPlayer)getSelectedPlayer();
+            new AiPropertiesDialog(getFrame(), profile);
+            profilesJList.repaint();
+            if (profile.equals(consumer.getPlayer())) {
+                consumer.setPlayerProfile(profile);
+            }
+        }
     }
 
     @Override
