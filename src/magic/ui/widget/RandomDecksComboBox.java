@@ -19,13 +19,13 @@ import magic.data.IconImages;
 import magic.model.MagicColor;
 
 @SuppressWarnings("serial")
-public class DecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {
+public class RandomDecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {
 
     private static final String SEPARATOR = "----";
 
     private String lastSelected;
 
-    public DecksComboBox(final String colors) {
+    public RandomDecksComboBox(final String colors) {
 
         setRenderer(this);
 

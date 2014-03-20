@@ -11,11 +11,11 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class DeckComboPanel extends TexturedPanel {
 
-    private final DecksComboBox decksComboBox;
+    private final RandomDecksComboBox decksComboBox;
 
     public DeckComboPanel(final String deckGenerator) {
 
-        this.decksComboBox = new DecksComboBox(deckGenerator);
+        this.decksComboBox = new RandomDecksComboBox(deckGenerator);
 
         setBorder(FontsAndBorders.BLACK_BORDER);
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);

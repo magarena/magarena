@@ -3,7 +3,7 @@ package magic.ui.dialog;
 import magic.data.DeckType;
 import magic.data.DeckUtils;
 import magic.ui.MagicFrame;
-import magic.ui.widget.DecksComboBox;
+import magic.ui.widget.RandomDecksComboBox;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -145,7 +145,7 @@ public class DeckChooserDialog extends JDialog {
         private JComboBox getDecksCombo(final DeckType deckType) {
             switch (deckType) {
             case Random:
-                deckValueCombo = new DecksComboBox("");
+                deckValueCombo = new RandomDecksComboBox("");
                 break;
             case Preconstructed:
                 deckValueCombo = new PrebuiltDecksComboBox();
