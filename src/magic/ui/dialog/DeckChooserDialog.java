@@ -141,8 +141,7 @@ public class DeckChooserDialog extends JDialog {
             repaint();
         }
 
-        @SuppressWarnings("rawtypes")
-        private JComboBox getDecksCombo(final DeckType deckType) {
+        private JComboBox<String> getDecksCombo(final DeckType deckType) {
             switch (deckType) {
             case Random:
                 deckValueCombo = new DecksComboBox("");
