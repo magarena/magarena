@@ -13,8 +13,8 @@ import magic.ui.viewer.DeckDescriptionViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.viewer.DeckStrengthViewer;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.PlayerDetailsPanel;
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.player.PlayerDetailsPanel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.Box;

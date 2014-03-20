@@ -1,12 +1,15 @@
-package magic.ui.widget;
+package magic.ui.widget.player;
 
 import magic.model.MagicPlayerDefinition;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.TitleBar;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.border.Border;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 

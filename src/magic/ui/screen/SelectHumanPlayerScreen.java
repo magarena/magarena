@@ -22,7 +22,7 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IPlayerProfileConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.HumanPlayerJList;
+import magic.ui.widget.player.HumanPlayerJList;
 
 @SuppressWarnings("serial")
 public class SelectHumanPlayerScreen

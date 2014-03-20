@@ -16,8 +16,8 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.DuelPlayerDeckPanel;
-import magic.ui.widget.DuelPlayerPanel;
+import magic.ui.widget.player.DuelPlayerDeckPanel;
+import magic.ui.widget.player.DuelPlayerPanel;
 
 @SuppressWarnings("serial")
 public class DuelPlayersScreen

@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.widget.player;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -18,6 +18,7 @@ import magic.model.player.HumanPlayer;
 import magic.model.player.PlayerProfile;
 import magic.ui.MagicFrame;
 import magic.ui.screen.interfaces.IPlayerProfileConsumer;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 
 @SuppressWarnings("serial")

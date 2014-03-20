@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.widget.player;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -12,6 +12,7 @@ import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
 
 import magic.model.player.HumanPlayer;
+import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

@@ -6,12 +6,13 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
-import magic.ui.widget.PlayerAvatarPanel;
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.player.PlayerAvatarPanel;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
