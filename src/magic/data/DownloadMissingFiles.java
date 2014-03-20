@@ -46,29 +46,30 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
             return;
         }
 
-        final Scanner sc = new Scanner(content);
         final File gamePathFile=new File(MagicMain.getGamePath());
         File imagesPathFile = null;
 
-        while (sc.hasNextLine()) {
-            final String line = sc.nextLine();
-            if (line.startsWith(">")) {
-                imagesPathFile=new File(gamePathFile,line.substring(1).trim());
-                if (!imagesPathFile.exists() && !imagesPathFile.mkdir()) {
-                    System.err.println("WARNING. Unable to create " + imagesPathFile);
-                }
-            } else {
-                final String[] parts=line.trim().split(";");
-                if (parts.length==2&&!parts[1].isEmpty()) {
-                    final File imageFile=new File(imagesPathFile,parts[0]);
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String line = sc.nextLine();
+                if (line.startsWith(">")) {
+                    imagesPathFile=new File(gamePathFile,line.substring(1).trim());
+                    if (!imagesPathFile.exists() && !imagesPathFile.mkdir()) {
+                        System.err.println("WARNING. Unable to create " + imagesPathFile);
+                    }
+                } else {
+                    final String[] parts=line.trim().split(";");
+                    if (parts.length==2&&!parts[1].isEmpty()) {
+                        final File imageFile=new File(imagesPathFile,parts[0]);
 
-                    try { //create URL
-                        final WebDownloader dl = new DownloadImageFile(imageFile,new URL(parts[1]));
-                        if (!dl.exists()) {
-                            add(dl);
+                        try { //create URL
+                            final WebDownloader dl = new DownloadImageFile(imageFile,new URL(parts[1]));
+                            if (!dl.exists()) {
+                                add(dl);
+                            }
+                        } catch (final java.net.MalformedURLException ex) {
+                            System.err.println("ERROR! URL malformed " + parts[1]);
                         }
-                    } catch (final java.net.MalformedURLException ex) {
-                        System.err.println("ERROR! URL malformed " + parts[1]);
                     }
                 }
             }
