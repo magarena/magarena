@@ -177,8 +177,6 @@ public class MCTSAI implements MagicAI {
 
             assert path.size() >= 2 : "ERROR! length of MCTS path is " + path.size();
             
-            final LinkedList<MCTSGameTree> links = new LinkedList<MCTSGameTree>(path);
-
             // play a simulated game to get score
             // update all nodes along the path from root to new node
 
@@ -186,13 +184,14 @@ public class MCTSAI implements MagicAI {
             final Runnable task = new Runnable() {
                 @Override
                 public void run() {
+                    // propagate result of random play up the path
                     final double score = randomPlay(path.getLast(), rootGame);
-                    // update score and game theoretic value along the chosen path
+                    final Iterator<MCTSGameTree> iter = path.descendingIterator();
                     MCTSGameTree child = null;
                     MCTSGameTree parent = null;
-                    while (!path.isEmpty()) {
+                    while (iter.hasNext()) {
                         child = parent;
-                        parent = path.removeLast();
+                        parent = iter.next();
 
                         parent.removeVirtualLoss();
                         parent.updateScore(child, score);
@@ -207,11 +206,12 @@ public class MCTSAI implements MagicAI {
             }
             
             // virtual loss + game theoretic value propagation
+            final Iterator<MCTSGameTree> iter = path.descendingIterator();
             MCTSGameTree child = null;
             MCTSGameTree parent = null;
-            while (!links.isEmpty()) {
+            while (iter.hasNext()) {
                 child = parent;
-                parent = links.removeLast();
+                parent = iter.next();
 
                 parent.recordVirtualLoss();
 
