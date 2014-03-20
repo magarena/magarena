@@ -22,6 +22,7 @@ import magic.ui.dialog.AiPropertiesDialog;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IPlayerProfileConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.player.AiPlayerJList;
 
@@ -138,10 +139,20 @@ public class SelectAiPlayerScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("New", new NewPlayerAction(), "Create a new player profile."));
-        buttons.add(new MenuButton("Edit", new EditPlayerAction(), "Update name and duel settings for selected player."));
-        buttons.add(new MenuButton("Delete", new DeletePlayerAction(), "Delete selected player profile."));
-        buttons.add(new SelectAvatarActionButton());
+        buttons.add(
+                new ActionBarButton(
+                        "New", "Create a new AI player profile.",
+                        new NewPlayerAction()));
+        buttons.add(
+                new ActionBarButton(
+                        "Edit", "Update selected AI player's properties.",
+                        new EditPlayerAction()));
+        buttons.add(
+                new ActionBarButton(
+                        "Delete", "Delete selected AI player profile.",
+                        new DeletePlayerAction()));
+        buttons.add(
+                new SelectAvatarActionButton());
         return buttons;
     }
 
