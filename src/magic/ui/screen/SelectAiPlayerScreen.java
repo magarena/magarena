@@ -141,10 +141,6 @@ public class SelectAiPlayerScreen
         return buttons;
     }
 
-    private AiPlayer getSelectedPlayerProfile() {
-        return profilesJList.getSelectedValue();
-    }
-
     /* (non-Javadoc)
      * @see magic.ui.MagScreen#canScreenClose()
      */
@@ -158,11 +154,11 @@ public class SelectAiPlayerScreen
      */
     @Override
     public void setSelectedAvatarPath(final Path imagePath) {
-        final PlayerProfile profile = getSelectedPlayerProfile();
+        final PlayerProfile profile = getSelectedPlayer();
         updateAvatarImage(imagePath, profile);
         PlayerProfiles.refreshMap();
         refreshProfilesJList(profile);
-        consumer.setPlayerProfile(getSelectedPlayerProfile());
+        consumer.setPlayerProfile(getSelectedPlayer());
     }
 
     /* (non-Javadoc)
