@@ -1,0 +1,11 @@
+name=Marsh Lurker
+url=http://www.magiccards.info/query?q=%21marsh%20lurker
+image=http://mtgimage.com/card/marsh%20lurker.jpg
+value=1.457
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{B}
+pt=3/2
+ability=cost Sacrifice a Swamp:SN gains fear until end of turn.
+timing=main
