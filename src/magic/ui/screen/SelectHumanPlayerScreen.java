@@ -47,7 +47,7 @@ public class SelectHumanPlayerScreen
     protected JPanel getProfilesListPanel() {
         profilesJList = new HumanPlayerJList();
         profilesJList.addMouseListener(getMouseAdapter());
-        return getContainerPanel(profilesJList);
+        return new ContainerPanel(profilesJList);
     }
 
     private MouseAdapter getMouseAdapter() {

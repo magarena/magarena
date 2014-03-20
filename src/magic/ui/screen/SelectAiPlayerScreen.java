@@ -48,7 +48,7 @@ public class SelectAiPlayerScreen
     protected JPanel getProfilesListPanel() {
       profilesJList = new AiPlayerJList();
       profilesJList.addMouseListener(getMouseAdapter());
-      return getContainerPanel(profilesJList);
+      return new ContainerPanel(profilesJList);
     }
 
     private MouseAdapter getMouseAdapter() {

@@ -70,25 +70,6 @@ public abstract class SelectPlayerAbstractScreen
         });
     }
 
-    protected JPanel getContainerPanel(final JList<? extends PlayerProfile> profilesJList) {
-        profilesJList.setOpaque(false);
-        final JPanel container = new TexturedPanel();
-        container.setLayout(new MigLayout("insets 0, gap 0, flowy"));
-        container.setBorder(FontsAndBorders.BLACK_BORDER);
-        container.setBackground(FontsAndBorders.MENUPANEL_COLOR);
-        container.add(getScrollPane(profilesJList), "w 100%, h 100%");
-        return container;
-    }
-
-    private JScrollPane getScrollPane(final JList<? extends PlayerProfile> profilesJList) {
-        final JScrollPane scrollPane = new JScrollPane();
-        scrollPane.setViewportView(profilesJList);
-        scrollPane.setBorder(BorderFactory.createEmptyBorder());
-        scrollPane.setOpaque(false);
-        scrollPane.getViewport().setOpaque(false);
-        return scrollPane;
-    }
-
     protected void setFocusInProfilesJList(final JList<? extends PlayerProfile> profilesJList) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -203,6 +184,27 @@ public abstract class SelectPlayerAbstractScreen
             setLayout(new MigLayout("insets 2, center, center"));
             add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
         }
+    }
+
+    protected class ContainerPanel extends TexturedPanel {
+
+        public ContainerPanel(final JList<? extends PlayerProfile> profilesJList) {
+            profilesJList.setOpaque(false);
+            setBorder(FontsAndBorders.BLACK_BORDER);
+            setBackground(FontsAndBorders.MENUPANEL_COLOR);
+            setLayout(new MigLayout("insets 0, gap 0, flowy"));
+            add(new ScrollPane(profilesJList), "w 100%, h 100%");
+        }
+
+        private class ScrollPane extends JScrollPane {
+            public ScrollPane(final JList<? extends PlayerProfile> profilesJList) {
+                setViewportView(profilesJList);
+                setBorder(BorderFactory.createEmptyBorder());
+                setOpaque(false);
+                getViewport().setOpaque(false);
+            }
+        }
+
     }
 
 }
