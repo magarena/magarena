@@ -2,8 +2,6 @@ package magic.ui.screen;
 
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -45,21 +43,8 @@ public class SelectAiPlayerScreen
     @Override
     protected JPanel getProfilesListPanel() {
       profilesJList = new AiPlayerJList();
-      profilesJList.addMouseListener(getMouseAdapter());
+      profilesJList.addMouseListener(new DoubleClickAdapter());
       return new ContainerPanel(profilesJList);
-    }
-
-    private MouseAdapter getMouseAdapter() {
-        return new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (e.getClickCount() == 2) {
-                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    doNextAction();
-                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                }
-            }
-        };
     }
 
     private void refreshProfilesJList(final PlayerProfile playerProfile) {
@@ -186,15 +171,6 @@ public class SelectAiPlayerScreen
     @Override
     protected String getPlayerType() {
         return "ai";
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerAbstractScreen#doNextAction()
-     */
-    @Override
-    protected void doNextAction() {
-        consumer.setPlayerProfile(getSelectedPlayerProfile());
-        getFrame().closeActiveScreen(false);
     }
 
     /* (non-Javadoc)

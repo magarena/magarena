@@ -3,6 +3,8 @@ package magic.ui.screen;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -47,7 +49,6 @@ public abstract class SelectPlayerAbstractScreen
     protected abstract JPanel getProfilesListPanel();
     protected abstract String getPlayerType();
     protected abstract void createDefaultPlayerProfiles() throws IOException;
-    protected abstract void doNextAction();
     protected abstract int getPreferredWidth();
     protected abstract JList<? extends PlayerProfile> getProfilesJList();
     protected abstract void refreshProfilesJList();
@@ -211,6 +212,22 @@ public abstract class SelectPlayerAbstractScreen
             return (action == JOptionPane.YES_OPTION);
         }
 
+    }
+
+    protected void doNextAction() {
+        consumer.setPlayerProfile(getSelectedPlayer());
+        getFrame().closeActiveScreen(false);
+    }
+
+    protected class DoubleClickAdapter extends MouseAdapter {
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            if (e.getClickCount() == 2) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                doNextAction();
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            }
+        }
     }
 
 }
