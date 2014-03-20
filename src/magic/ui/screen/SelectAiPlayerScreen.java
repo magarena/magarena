@@ -31,12 +31,10 @@ public class SelectAiPlayerScreen
     implements IStatusBar, IActionBar {
 
     private AiPlayerJList profilesJList;
-    private final PlayerProfile playerProfile;
 
     // CTR
     public SelectAiPlayerScreen(final IPlayerProfileConsumer consumer, final PlayerProfile playerProfile) {
         super(consumer);
-        this.playerProfile = playerProfile;
         refreshProfilesJList(playerProfile);
     }
 
