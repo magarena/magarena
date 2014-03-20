@@ -1127,6 +1127,7 @@ public class MagicGame {
             final MagicTargetChoice targetChoice,
             final T target) {
 
+        @SuppressWarnings("unchecked")
         MagicTargetFilter<T> targetFilter = (MagicTargetFilter<T>)targetChoice.getTargetFilter();
 
         if (target==null ||
@@ -1286,6 +1287,7 @@ public class MagicGame {
         final Collection<MagicPermanentTrigger> copiedTriggers=new ArrayList<MagicPermanentTrigger>(typeTriggers);
         for (final MagicPermanentTrigger permanentTrigger : copiedTriggers) {
             final MagicPermanent permanent = permanentTrigger.getPermanent();
+            @SuppressWarnings("unchecked")
             final MagicTrigger<T> trigger = (MagicTrigger<T>)permanentTrigger.getTrigger();
             executeTrigger(trigger,permanent,permanent,data);
         }

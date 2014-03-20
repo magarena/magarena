@@ -807,6 +807,7 @@ public class MagicTargetChoice extends MagicChoice {
             final MagicSource source) {
         Collection<MagicTarget> targets = game.getLegalTargets(player,source,this,targetHint);
         if (game.getFastChoices()) {
+            @SuppressWarnings("unchecked")
             final MagicTargetPicker<MagicTarget> targetPicker = (MagicTargetPicker<MagicTarget>)event.getTargetPicker();
             targets = targetPicker.pickTargets(game,player,targets);
         }
