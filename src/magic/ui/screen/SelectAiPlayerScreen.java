@@ -12,6 +12,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.JList;
 import javax.swing.JPanel;
 
 import magic.ai.MagicAIImpl;
@@ -265,6 +266,11 @@ public class SelectAiPlayerScreen
     @Override
     protected int getPreferredWidth() {
         return 540;
+    }
+
+    @Override
+    protected JList<? extends PlayerProfile> getProfilesJList() {
+        return profilesJList;
     }
 
 }

@@ -12,6 +12,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -275,6 +276,11 @@ public class SelectHumanPlayerScreen
     @Override
     protected int getPreferredWidth() {
         return 420;
+    }
+
+    @Override
+    protected JList<? extends PlayerProfile> getProfilesJList() {
+        return profilesJList;
     }
 
 }

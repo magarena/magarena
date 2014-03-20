@@ -50,6 +50,7 @@ public abstract class SelectPlayerAbstractScreen
     protected abstract void createDefaultPlayerProfiles() throws IOException;
     protected abstract void doNextAction();
     protected abstract int getPreferredWidth();
+    protected abstract JList<? extends PlayerProfile> getProfilesJList();
 
     // CTR
     protected SelectPlayerAbstractScreen() {
@@ -112,6 +113,10 @@ public abstract class SelectPlayerAbstractScreen
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    protected PlayerProfile getSelectedPlayer() {
+        return getProfilesJList().getSelectedValue();
     }
 
     protected boolean deleteSelectedPlayerProfile(final PlayerProfile playerProfile) {
