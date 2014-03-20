@@ -37,7 +37,7 @@ public class SelectHumanPlayerScreen
     public SelectHumanPlayerScreen(final IPlayerProfileConsumer consumer, final PlayerProfile playerProfile) {
         this.consumer = consumer;
         this.playerProfile = playerProfile;
-        refreshProfilesJList(playerProfile.getId());
+        refreshProfilesJList(playerProfile);
     }
 
     /* (non-Javadoc)
@@ -63,21 +63,13 @@ public class SelectHumanPlayerScreen
         };
     }
 
-    private void refreshProfilesJList(final String selectedProfileId) {
+    private void refreshProfilesJList(final PlayerProfile playerProfile) {
         profilesJList.setListData(getPlayerProfilesArray());
-        setSelectedListItem(selectedProfileId);
-    }
-    private void refreshProfilesJList() {
-        refreshProfilesJList(null);
+        setSelectedListItem(playerProfile);
     }
 
-    private void setSelectedListItem(final String selectedProfileId) {
-        if (selectedProfileId == null || selectedProfileId.isEmpty()) {
-            profilesJList.setSelectedIndex(0);
-        } else {
-            profilesJList.setSelectedValue(profilesMap.get(selectedProfileId), true);
-        }
-        setFocusInProfilesJList(profilesJList);
+    private void refreshProfilesJList() {
+        refreshProfilesJList(null);
     }
 
     private HumanPlayer[] getPlayerProfilesArray() {
@@ -177,7 +169,7 @@ public class SelectHumanPlayerScreen
             newProfile.setPlayerName(newName);
             newProfile.save();
             PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
-            refreshProfilesJList(newProfile.getId());
+            refreshProfilesJList(newProfile);
         }
     }
 
@@ -229,7 +221,7 @@ public class SelectHumanPlayerScreen
         final PlayerProfile profile = getSelectedPlayerProfile();
         updateAvatarImage(imagePath, profile);
         PlayerProfiles.refreshMap();
-        refreshProfilesJList(profile.getId());
+        refreshProfilesJList(profile);
         consumer.setPlayerProfile(getSelectedPlayerProfile());
     }
 

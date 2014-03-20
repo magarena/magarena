@@ -83,6 +83,15 @@ public abstract class SelectPlayerAbstractScreen
         });
     }
 
+    protected void setSelectedListItem(final PlayerProfile playerProfile) {
+        if (playerProfile == null) {
+            getProfilesJList().setSelectedIndex(0);
+        } else {
+            getProfilesJList().setSelectedValue(profilesMap.get(playerProfile.getId()), true);
+        }
+        setFocusInProfilesJList(getProfilesJList());
+    }
+
     protected List<PlayerProfile> getSortedPlayersList() {
         profilesMap = getPlayerProfilesMap();
         final List<PlayerProfile> profilesByName = new ArrayList<PlayerProfile>(profilesMap.values());
