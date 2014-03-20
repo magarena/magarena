@@ -1,10 +1,11 @@
 package magic.ui.dialog;
 
 import magic.data.DeckType;
-import magic.data.DeckUtils;
 import magic.ui.MagicFrame;
-import magic.ui.widget.RandomDecksComboBox;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.RandomDecksComboBox;
+import magic.ui.widget.deck.CustomDecksComboxBox;
+import magic.ui.widget.deck.PrebuiltDecksComboxBox;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
@@ -22,13 +23,6 @@ import javax.swing.SwingUtilities;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.io.IOException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 @SuppressWarnings("serial")
 public class DeckChooserDialog extends JDialog {
@@ -141,80 +135,20 @@ public class DeckChooserDialog extends JDialog {
             repaint();
         }
 
-        @SuppressWarnings("rawtypes")
-        private JComboBox getDecksCombo(final DeckType deckType) {
+        private JComboBox<String> getDecksCombo(final DeckType deckType) {
             switch (deckType) {
             case Random:
                 deckValueCombo = new RandomDecksComboBox("");
                 break;
             case Preconstructed:
-                deckValueCombo = new PrebuiltDecksComboBox();
+                deckValueCombo = new PrebuiltDecksComboxBox();
                 break;
             case Custom:
-                deckValueCombo = new CustomUserDecksComboBox();
-                break;
-            default:
-                deckValueCombo = new JComboBox<String>();
+                deckValueCombo = new CustomDecksComboxBox();
                 break;
             }
             saveButton.setEnabled(deckValueCombo.getItemCount() > 0);
             return deckValueCombo;
-        }
-
-    }
-
-    private class PrebuiltDecksComboBox extends JComboBox<String> {
-
-        public PrebuiltDecksComboBox() {
-            this.setModel(
-                    new DefaultComboBoxModel<String>(
-                            getArrayOfDeckNamesUsingDirectoryStream(
-                                    DeckUtils.getPrebuiltDecksFolder())));
-        }
-
-        private String[] getArrayOfDeckNamesUsingDirectoryStream(final Path decksDirectory) {
-            final List<String> deckNamesList = new ArrayList<String>();
-            try (DirectoryStream<Path> ds =
-                    Files.newDirectoryStream(decksDirectory, "*.dec")) {
-              for (Path p : ds) {
-                  String filename = p.getFileName().toString();
-                  if (filename.indexOf(".dec") > 0) {
-                      filename = filename.substring(0, filename.lastIndexOf(".dec"));
-                      deckNamesList.add(filename);
-                  }
-              }
-          } catch (IOException e) {
-              e.printStackTrace();
-          }
-          return deckNamesList.toArray(new String[deckNamesList.size()]);
-        }
-
-    }
-
-    private class CustomUserDecksComboBox extends JComboBox<String> {
-
-        public CustomUserDecksComboBox() {
-            this.setModel(
-                    new DefaultComboBoxModel<String>(
-                            getArrayOfDeckNamesUsingDirectoryStream(
-                                    Paths.get(DeckUtils.getDeckFolder()))));
-        }
-
-        private String[] getArrayOfDeckNamesUsingDirectoryStream(final Path decksDirectory) {
-            final List<String> deckNamesList = new ArrayList<String>();
-            try (DirectoryStream<Path> ds =
-                    Files.newDirectoryStream(decksDirectory, "*.dec")) {
-              for (Path p : ds) {
-                  String filename = p.getFileName().toString();
-                  if (filename.indexOf(".dec") > 0) {
-                      filename = filename.substring(0, filename.lastIndexOf(".dec"));
-                      deckNamesList.add(filename);
-                  }
-              }
-          } catch (IOException e) {
-              e.printStackTrace();
-          }
-          return deckNamesList.toArray(new String[deckNamesList.size()]);
         }
 
     }
