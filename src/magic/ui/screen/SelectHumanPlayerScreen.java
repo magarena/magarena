@@ -30,12 +30,10 @@ public class SelectHumanPlayerScreen
     implements IStatusBar, IActionBar {
 
     private HumanPlayerJList profilesJList;
-    private final PlayerProfile playerProfile;
 
     // CTR
     public SelectHumanPlayerScreen(final IPlayerProfileConsumer consumer, final PlayerProfile playerProfile) {
         super(consumer);
-        this.playerProfile = playerProfile;
         refreshProfilesJList(playerProfile);
     }
 
