@@ -2,12 +2,10 @@ package magic.ui.widget.player;
 
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.BorderFactory;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
@@ -135,26 +133,6 @@ public class DuelPlayerPanel
             public void mouseExited(MouseEvent e) { DuelPlayerPanel.this.dispatchEvent(e); }
         });
         return panel;
-    }
-
-    private class PlayerProfilePanel extends JPanel {
-
-        private PlayerProfile profile;
-
-        public PlayerProfilePanel(final PlayerProfile profile) {
-            this.profile = profile;
-            setPreferredSize(new Dimension(0, 70));
-            setOpaque(false);
-            doMigLayout();
-        }
-
-        private void doMigLayout() {
-            removeAll();
-            setLayout(new MigLayout("insets 0 0 0 6, gap 0"));
-            add(new JLabel(profile.getAvatar().getIcon(2)), "w 70!, h 70!");
-            add(new PlayerDetailsPanel(profile), "w 100%");
-        }
-
     }
 
 }
