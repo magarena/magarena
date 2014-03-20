@@ -31,6 +31,7 @@ import magic.model.player.HumanPlayer;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
+import magic.ui.screen.interfaces.IPlayerProfileConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -44,6 +45,7 @@ public abstract class SelectPlayerAbstractScreen
 
     protected final Path playersPath;
     protected HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
+    protected final IPlayerProfileConsumer consumer;
 
     protected abstract JPanel getProfilesListPanel();
     protected abstract String getPlayerType();
@@ -54,7 +56,8 @@ public abstract class SelectPlayerAbstractScreen
     protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
 
     // CTR
-    protected SelectPlayerAbstractScreen() {
+    protected SelectPlayerAbstractScreen(final IPlayerProfileConsumer consumer) {
+        this.consumer = consumer;
         this.playersPath = Paths.get(MagicMain.getPlayerProfilesPath()).resolve(getPlayerType());
         setContent(new ScreenContent());
         setEnterKeyInputMap();
