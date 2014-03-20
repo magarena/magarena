@@ -27,22 +27,24 @@ public class KeywordDefinitions {
             return;
         }
 
-        final Scanner sc = new Scanner(content);
         KeywordDefinition current = null;
-        while (sc.hasNextLine()) {
-            final String line=sc.nextLine();
-            if (line.startsWith("*")) {
-                current = new KeywordDefinition();
-                current.name=line.substring(1).trim();
-                keywordDefinitions.add(current);
-            } else {
-                if (current.description.length() > 0) {
-                    current.description=current.description+"<br>"+line.trim();
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String line=sc.nextLine();
+                if (line.startsWith("*")) {
+                    current = new KeywordDefinition();
+                    current.name=line.substring(1).trim();
+                    keywordDefinitions.add(current);
                 } else {
-                    current.description=line.trim();
+                    if (current.description.length() > 0) {
+                        current.description=current.description+"<br>"+line.trim();
+                    } else {
+                        current.description=line.trim();
+                    }
                 }
             }
         }
+
     }
 
     public List<KeywordDefinition> getKeywordDefinitions() {
