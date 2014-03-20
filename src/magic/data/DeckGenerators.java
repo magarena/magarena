@@ -109,7 +109,7 @@ public class DeckGenerators {
     /**
      * Assigns a random deck to the specified player.
      * <p>
-     * This can be generated from scratch or an existing deck (.dec) file.
+     * This can be generated from scratch or an existing deck file.
      */
     public static void setRandomDeck(final MagicPlayerDefinition player) {
         final boolean isUnspecifiedGenerator = (player.getDeckGenerator() == null) && (player.getDeckProfile().getNrOfColors() == 0);
