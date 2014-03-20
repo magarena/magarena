@@ -139,5 +139,7 @@ public abstract class PlayerProfile {
         }
     }
 
-
+    public static boolean isAiPlayer(final PlayerProfile player) {
+        return player instanceof AiPlayer;
+    }
 }
