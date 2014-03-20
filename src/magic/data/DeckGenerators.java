@@ -68,15 +68,17 @@ public class DeckGenerators {
         }
 
         // add entries
-        final Scanner sc = new Scanner(content);
-        while (sc.hasNextLine()) {
-            final String line = sc.nextLine().trim();
-            if (line.length() == 0) {
-                // blank line
-            } else {
-                addDeckGenerator(line);
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String line = sc.nextLine().trim();
+                if (line.length() == 0) {
+                    // blank line
+                } else {
+                    addDeckGenerator(line);
+                }
             }
         }
+
     }
 
     public void loadDeckGenerators() {
