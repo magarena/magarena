@@ -14,6 +14,8 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
@@ -51,6 +53,7 @@ public abstract class SelectPlayerAbstractScreen
     protected abstract void doNextAction();
     protected abstract int getPreferredWidth();
     protected abstract JList<? extends PlayerProfile> getProfilesJList();
+    protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
 
     // CTR
     protected SelectPlayerAbstractScreen() {
@@ -78,6 +81,18 @@ public abstract class SelectPlayerAbstractScreen
                 profilesJList.requestFocusInWindow();
             }
         });
+    }
+
+    protected List<PlayerProfile> getSortedPlayersList() {
+        profilesMap = getPlayerProfilesMap();
+        final List<PlayerProfile> profilesByName = new ArrayList<PlayerProfile>(profilesMap.values());
+        Collections.sort(profilesByName, new Comparator<PlayerProfile>() {
+            @Override
+            public int compare(PlayerProfile o1, PlayerProfile o2) {
+                return o1.getPlayerName().toLowerCase().compareTo(o2.getPlayerName().toLowerCase());
+            }
+        });
+        return profilesByName;
     }
 
     protected void updateAvatarImage(final Path imagePath, final PlayerProfile playerProfile) {

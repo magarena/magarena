@@ -7,8 +7,7 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.AbstractAction;
@@ -83,19 +82,8 @@ public class SelectAiPlayerScreen
     }
 
     private AiPlayer[] getPlayerProfilesArray() {
-        setProfilesMap();
-        final List<PlayerProfile> profilesByName = new ArrayList<PlayerProfile>(profilesMap.values());
-        Collections.sort(profilesByName, new Comparator<PlayerProfile>() {
-            @Override
-            public int compare(PlayerProfile o1, PlayerProfile o2) {
-                return o1.getPlayerName().toLowerCase().compareTo(o2.getPlayerName().toLowerCase());
-            }
-        });
-        return profilesByName.toArray(new AiPlayer[profilesByName.size()]);
-    }
-
-    private void setProfilesMap() {
-        profilesMap = PlayerProfiles.getAiPlayerProfiles();
+        final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
+        return sortedPlayersList.toArray(new AiPlayer[sortedPlayersList.size()]);
     }
 
     /* (non-Javadoc)
@@ -271,6 +259,11 @@ public class SelectAiPlayerScreen
     @Override
     protected JList<? extends PlayerProfile> getProfilesJList() {
         return profilesJList;
+    }
+
+    @Override
+    protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
+        return PlayerProfiles.getAiPlayerProfiles();
     }
 
 }
