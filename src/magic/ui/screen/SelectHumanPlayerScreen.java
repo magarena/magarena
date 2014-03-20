@@ -130,7 +130,7 @@ public class SelectHumanPlayerScreen
         buttons.add(new MenuButton("New", new NewPlayerAction(), "Create a new player profile."));
         buttons.add(new MenuButton("Edit", new EditPlayerAction(), "Update name and duel settings for selected player."));
         buttons.add(new MenuButton("Delete", new DeletePlayerAction(), "Delete selected player profile."));
-        buttons.add(getAvatarActionButton());
+        buttons.add(new SelectAvatarActionButton());
         return buttons;
     }
 

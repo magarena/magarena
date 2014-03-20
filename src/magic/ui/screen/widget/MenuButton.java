@@ -18,10 +18,12 @@ public class MenuButton extends JButton {
     private final static Color COLOR_DISABLED = Color.GRAY;
 
     private final boolean isRunnable;
+    private final boolean showSeparator;
 
-    public MenuButton(final String caption, final AbstractAction action, final String tooltip) {
+    public MenuButton(final String caption, final AbstractAction action, final String tooltip, final boolean showSeparator) {
         super(caption);
-        isRunnable = (action != null);
+        this.isRunnable = (action != null);
+        this.showSeparator = showSeparator;
         setFont(FontsAndBorders.FONT_MENU_BUTTON);
         setHorizontalAlignment(SwingConstants.CENTER);
         setForeground(COLOR_NORMAL);
@@ -33,6 +35,9 @@ public class MenuButton extends JButton {
             setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             addActionListener(action);
         }
+    }
+    public MenuButton(final String caption, final AbstractAction action, final String tooltip) {
+        this(caption, action, tooltip, true);
     }
     public MenuButton(final String caption, final AbstractAction action) {
         this(caption, action, null);
@@ -79,6 +84,10 @@ public class MenuButton extends JButton {
     public void setEnabled(boolean b) {
         super.setEnabled(b);
         setForeground(b ? COLOR_NORMAL : COLOR_DISABLED);
+    }
+
+    public boolean showSeparator() {
+        return showSeparator;
     }
 
 }

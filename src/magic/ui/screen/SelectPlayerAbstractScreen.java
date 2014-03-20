@@ -30,7 +30,7 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IPlayerProfileConsumer;
-import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -117,14 +117,18 @@ public abstract class SelectPlayerAbstractScreen
         return getProfilesJList().getSelectedValue();
     }
 
-    protected MenuButton getAvatarActionButton() {
-        return new MenuButton("Avatar", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                getFrame().showAvatarImagesScreen(SelectPlayerAbstractScreen.this);
-            }
-        }, "Update avatar image of selected player profile.");
+    protected class SelectAvatarActionButton extends ActionBarButton {
+        public SelectAvatarActionButton() {
+            super("Avatar", "Choose an avatar image for the selected player profile.",
+                    new SelectAvatarAction());
+        }
+    }
 
+    private class SelectAvatarAction extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            getFrame().showAvatarImagesScreen(SelectPlayerAbstractScreen.this);
+        }
     }
 
     private class ScreenContent extends JPanel {
