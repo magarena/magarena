@@ -156,7 +156,7 @@ public class SelectAiPlayerScreen
             public void actionPerformed(ActionEvent e) {
                 new AiPropertiesDialog(getFrame(), getSelectedPlayerProfile());
                 profilesJList.repaint();
-                if (getSelectedPlayerProfile().getId().equals(playerProfile.getId())) {
+                if (getSelectedPlayerProfile().equals(playerProfile)) {
                     consumer.setPlayerProfile(getSelectedPlayerProfile());
                 }
             }
@@ -176,7 +176,7 @@ public class SelectAiPlayerScreen
         if (deleteSelectedPlayerProfile(profile)) {
             PlayerProfiles.getPlayerProfiles().remove(profile.getId());
             refreshProfilesJList();
-            if (profile.getId().equals(playerProfile.getId())) {
+            if (profile.equals(playerProfile)) {
                 consumer.setPlayerProfile(getSelectedPlayerProfile());
             }
         }

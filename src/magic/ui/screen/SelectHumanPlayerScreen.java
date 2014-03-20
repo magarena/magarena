@@ -184,7 +184,7 @@ public class SelectHumanPlayerScreen
         if (newName != null && !newName.trim().isEmpty()) {
             profile.setPlayerName(newName.trim());
             profile.save();
-            if (profile.getId().equals(playerProfile.getId())) {
+            if (profile.equals(playerProfile)) {
                 consumer.setPlayerProfile(getSelectedPlayerProfile());
             }
         }
@@ -195,7 +195,7 @@ public class SelectHumanPlayerScreen
         if (deleteSelectedPlayerProfile(profile)) {
             PlayerProfiles.getPlayerProfiles().remove(profile.getId());
             refreshProfilesJList();
-            if (profile.getId().equals(playerProfile.getId())) {
+            if (profile.equals(playerProfile)) {
                 consumer.setPlayerProfile(getSelectedPlayerProfile());
             }
         }
