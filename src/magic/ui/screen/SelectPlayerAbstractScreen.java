@@ -5,14 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
-import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.SimpleFileVisitor;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.DirectoryStream.Filter;
-import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -37,6 +34,7 @@ import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicFiles;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -114,31 +112,6 @@ public abstract class SelectPlayerAbstractScreen
         }
     }
 
-    /**
-     * Deletes all directory contents and then directory itself.
-     */
-    protected void deleteDirectory(final Path root) {
-        try {
-            Files.walkFileTree(root, new SimpleFileVisitor<Path>() {
-                @Override
-                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                    Files.delete(file);
-                    return FileVisitResult.CONTINUE;
-                }
-                @Override
-                public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-                    if(exc == null){
-                        Files.delete(dir);
-                        return FileVisitResult.CONTINUE;
-                    }
-                    throw exc;
-                }
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     protected PlayerProfile getSelectedPlayer() {
         return getProfilesJList().getSelectedValue();
     }
@@ -172,7 +145,7 @@ public abstract class SelectPlayerAbstractScreen
                 new String[] {"Delete", "Cancel"}, "Cancel");
         if (action == JOptionPane.YES_OPTION) {
             final Path profilePath = playersPath.resolve(playerProfile.getId());
-            deleteDirectory(profilePath);
+            MagicFiles.deleteDirectory(profilePath);
             return true;
         } else {
             return false;
