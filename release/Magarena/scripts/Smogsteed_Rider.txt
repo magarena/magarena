@@ -1,0 +1,11 @@
+name=Smogsteed Rider
+url=http://www.magiccards.info/query?q=%21smogsteed%20rider
+image=http://mtgimage.com/card/smogsteed%20rider.jpg
+value=3.411
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}{B}
+pt=2/2
+timing=main
+requires_groovy_code

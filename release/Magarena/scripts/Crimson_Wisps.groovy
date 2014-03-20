@@ -10,8 +10,8 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
-                MagicTapTargetPicker.Untap,
+                MagicTargetChoice.POS_TARGET_CREATURE,
+                MagicHasteTargetPicker.create(),
                 this,
                 "Target creature\$ becomes Red and gains haste until end of turn. PN draws a card."
             );

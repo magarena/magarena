@@ -1,0 +1,9 @@
+name=Niveous Wisps
+url=http://www.magiccards.info/query?q=%21niveous%20wisps
+image=http://mtgimage.com/card/niveous%20wisps.jpg
+value=3
+rarity=C
+type=Instant
+cost={W}
+timing=tapping
+requires_groovy_code
