@@ -54,7 +54,7 @@ public abstract class SelectPlayerAbstractScreen
     // CTR
     protected SelectPlayerAbstractScreen() {
         this.playersPath = Paths.get(MagicMain.getPlayerProfilesPath()).resolve(getPlayerType());
-        setContent(getScreenContent());
+        setContent(new ScreenContent());
         setEnterKeyInputMap();
     }
 
@@ -68,14 +68,6 @@ public abstract class SelectPlayerAbstractScreen
                 setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
         });
-    }
-
-    private JPanel getScreenContent() {
-        final JPanel content = new JPanel();
-        content.setLayout(new MigLayout("insets 2, center, center"));
-        content.setOpaque(false);
-        content.add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
-        return content;
     }
 
     protected JPanel getContainerPanel(final JList<? extends PlayerProfile> profilesJList) {
@@ -203,6 +195,14 @@ public abstract class SelectPlayerAbstractScreen
             }
         }, "Update avatar image of selected player profile.");
 
+    }
+
+    private class ScreenContent extends JPanel {
+        public ScreenContent() {
+            setOpaque(false);
+            setLayout(new MigLayout("insets 2, center, center"));
+            add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
+        }
     }
 
 }
