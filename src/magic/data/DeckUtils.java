@@ -329,4 +329,22 @@ public class DeckUtils {
             loadDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
         }
     }
+
+    /**
+     * Extracts the name of a deck from its filename.
+     */
+    public static String getDeckNameFromFilename(final String deckFilename) {
+        if (deckFilename.indexOf(DECK_EXTENSION) > 0) {
+            return deckFilename.substring(0, deckFilename.lastIndexOf(DECK_EXTENSION));
+        } else {
+            return deckFilename;
+        }
+    }
+    /**
+     * Gets the name of a deck file without the extension.
+     */
+    public static String getDeckNameFromFile(final Path deckFile) {
+        return getDeckNameFromFilename(deckFile.getFileName().toString());
+    }
+
 }

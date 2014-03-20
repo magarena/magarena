@@ -236,7 +236,7 @@ public class DuelPanel extends TexturedPanel {
     }
 
     String generateTitle(final MagicDeck deck) {
-        return "Deck (" + deck.getFilename() + ") - " + deck.size() + " cards";
+        return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
     }
 
     public MagicDuel getDuel() {

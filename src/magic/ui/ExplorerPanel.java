@@ -242,7 +242,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     }
 
     private String generateDeckTitle(final MagicDeck deck) {
-        return "Deck (" + deck.getFilename() + ") - " + deck.size() + " cards";
+        return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
     }
 
     public void updateCardPool() {

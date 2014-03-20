@@ -2,6 +2,8 @@ package magic.model;
 
 import java.util.ArrayList;
 
+import magic.data.DeckUtils;
+
 public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     private static final long serialVersionUID = 1L;
@@ -28,6 +30,10 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     }
     public String getFilename() {
         return filename;
+    }
+
+    public String getName() {
+        return DeckUtils.getDeckNameFromFilename(filename);
     }
 
     public String getDescription() {
