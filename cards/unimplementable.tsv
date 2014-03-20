@@ -23,8 +23,8 @@ Andradite Leech	cost modification
 Angel of Salvation	convoke
 Angel of Serenity	multiple targets
 An-Havva Township	mana pool
-"Animar, Soul of the Elements"	cost modification
-"Anthousa, Setassan Hero"	multiple targets
+Animar, Soul of the Elements	cost modification
+Anthousa, Setassan Hero	multiple targets
 Aphetto Dredging	multiple targets
 Appetite for Brains	reveal
 Apprentice Wizard	mana pool
@@ -37,7 +37,7 @@ Ash Zealot	from graveyard
 Ashnod's Altar	mana pool
 Astral Cornucopia	mana pool
 Astrolabe	mana pool
-"Atalya, Samite Healer"	choose
+Atalya, Samite Healer	choose
 Augur of Bolas	reveal
 Augury Owl	scry > 1
 Aura of Silence	cost modification
@@ -253,7 +253,7 @@ Ebon Stronghold	mana pool
 Ebony Charm	choose
 Edgewalker	cost modification
 Eladamri's Vineyard	mana pool
-"Elbrus, the Binding Blade"	transform
+Elbrus, the Binding Blade	transform
 Elderwood Scion	cost modification
 Eldrazi Temple	mana pool
 Electrolyze	divided damage
@@ -336,7 +336,7 @@ Gaea's Blessing	multiple targets
 Gaea's Cradle	mana pool
 Gaea's Touch	mana pool
 Garruk Relentless	transform
-"Garruk, Caller of Beasts"	reveal
+Garruk, Caller of Beasts	reveal
 Gather Courage	convoke
 Gatstaf Howler	transform
 Gatstaf Shepherd	transform
@@ -457,9 +457,9 @@ Ivory Charm	choose
 Izzet Boilerworks	mana pool
 Izzet Charm	choose
 Izzet Signet	mana pool
-"Jace, Architect of Thought"	separate into piles
-"Jace, Memory Adept"	multiple targets
-"Jace, the Mind Sculptor"	reveal
+Jace, Architect of Thought	separate into piles
+Jace, Memory Adept	multiple targets
+Jace, the Mind Sculptor	reveal
 Jade Leech	cost modification
 Jet Medallion	cost modification
 Jorage Treespeaker	mana pool
@@ -513,7 +513,7 @@ Locket of Yesterdays	cost modification
 Lodestone Bauble	multiple targets
 Lodestone Golem	cost modification
 Long-Forgotten Gohei	cost modification
-"Lorthos, the Tidemaker"	multiple targets
+Lorthos, the Tidemaker	multiple targets
 Lose Hope	scry > 1
 Lotus Bloom	mana pool
 Lotus Blossom	mana pool
@@ -542,7 +542,7 @@ Mana Short	mana pool
 Mana Vault	mana pool
 Manaforge Cinder	mana pool
 Manamorphose	mana pool
-"Marath, Will of the Wild"	choose
+Marath, Will of the Wild	choose
 March of the Returned	multiple targets
 Mark of Sakiko	mana pool
 Markov Warlord	multiple targets
@@ -551,7 +551,7 @@ Marshal's Anthem	multiple targets
 Martyr of Bones	multiple targets
 Martyr of Sands	reveal
 Mayor of Avabruck	transform
-"Melira, Sylvok Outcast"	counters replacement
+Melira, Sylvok Outcast	counters replacement
 Memory's Journey	flashback
 Mercadian Bazaar	mana pool
 Merciless Eviction	choose
@@ -605,11 +605,11 @@ Nirkana Revenant	mana pool
 Noggin Whack	multiple targets
 Nomadic Elf	mana pool
 Notion Thief	draw replacement
-"Numot, the Devastator"	multiple targets
-"Nykthos, Shrine to Nyx"	mana pool
+Numot, the Devastator	multiple targets
+Nykthos, Shrine to Nyx	mana pool
 Oath of Druids	reveal
 Omenspeaker	scry > 1
-"Omnath, Locus of Mana"	mana pool
+Omnath, Locus of Mana	mana pool
 One Dozen Eyes	choose
 Orcish Lumberjack	mana pool
 Orochi Leafcaller	mana pool
@@ -649,7 +649,7 @@ Plaguemaw Beast	multiple targets
 Planar Gate	cost modification
 Plasm Capture	mana pool
 Plunge into Darkness	choose
-"Polukranos, World Eater"	divided damage
+Polukranos, World Eater	divided damage
 Ponder	reveal
 Power Conduit	choose
 Preordain	reveal
@@ -677,7 +677,7 @@ Pyrokinesis	multiple targets
 Quicksilver Geyser	multiple targets
 Quiet Disrepair	choose
 Quirion Sentinel	mana pool
-"Radha, Heir to Keld"	mana pool
+Radha, Heir to Keld	mana pool
 Rag Dealer	multiple targets
 Ragemonger	cost modification
 Rain of Rust	choose
@@ -685,12 +685,12 @@ Rain of Thorns	choose
 Rakdos Carnarium	mana pool
 Rakdos Charm	choose
 Rakdos Signet	mana pool
-"Rakdos, Lord of Riots"	cost modification
+Rakdos, Lord of Riots	cost modification
 Ral Zarek	multiple targets
 Rally the Peasants	flashback
 Rampaging Werewolf	transform
 Rapid Decay	multiple targets
-"Rasputin, Dreamweaver"	mana pool
+Rasputin, Dreamweaver	mana pool
 Ravager of the Fells	transform
 Ravenous Demon	transform
 Ray of Distortion	flashback
@@ -730,7 +730,7 @@ Rith's Attendant	mana pool
 Rith's Charm	choose
 Roar of the Kha	choose
 Roar of the Wurm	flashback
-"Rofellos, Llanowar Emissary"	mana pool
+Rofellos, Llanowar Emissary	mana pool
 Rolling Temblor	flashback
 Root-Kin Ally	convoke
 Rosheen Meanderer	mana pool
@@ -743,9 +743,9 @@ Rumbling Crescendo	multiple targets
 Rushwood Grove	mana pool
 Rysorian Badger	multiple targets
 Sacellum Godspeaker	mana pool
-"Sachi, Daughter of Seshiro"	mana pool
+Sachi, Daughter of Seshiro	mana pool
 Sacrifice	mana pool
-"Sakiko, Mother of Summer"	mana pool
+Sakiko, Mother of Summer	mana pool
 Sakura-Tribe Springcaller	mana pool
 Saltcrusted Steppe	mana pool
 Sand Silos	mana pool
@@ -755,7 +755,7 @@ Sapphire Leech	cost modification
 Sapphire Medallion	cost modification
 Saprazzan Cove	mana pool
 Saprazzan Skerry	mana pool
-"Sarpadian Empires, Vol. VII"	enters choose color
+Sarpadian Empires, Vol. VII	enters choose color
 Satyr Hedonist	mana pool
 Savage Beating	choose
 Saving Grasp	flashback
@@ -791,7 +791,7 @@ Shattered Perception	flashback
 Shimmering Grotto	mana pool
 Shipbreaker Kraken	multiple targets
 Shivan Sand-Mage	suspend
-"Shizuko, Caller of Autumn"	mana pool
+Shizuko, Caller of Autumn	mana pool
 Showe of Coals	multiple targets
 Shred Memory	multiple targets
 Shrine of Boundless Growth	mana pool
@@ -810,7 +810,7 @@ Skirge Familiar	mana pool
 Skirk Prospector	mana pool
 Skirsdag High Priest	multiple targets
 Skull Fracture	flashback
-"Skullbriar, the Walking Grave"	counters remain
+Skullbriar, the Walking Grave	counters remain
 Skullsnatcher	multiple targets
 Skycloud Egg	mana pool
 Skycloud Expanse	mana pool
@@ -827,7 +827,7 @@ Soldevi Adnate	mana pool
 Soldevi Excavations	mana pool
 Soldevi Machinist	mana pool
 Songs of the Damned	mana pool
-"Sorin, Lord of Innistrad"	multiple targets
+Sorin, Lord of Innistrad	multiple targets
 Sorrow's Path	multiple targets
 Soul Manipulation	choose
 Soul Ransom	opponent activate
@@ -887,7 +887,7 @@ Terrarion	mana pool
 Terror of Kruin Pass	transform
 Tezzeret the Seeker	multiple targets
 Tezzeret's Gambit	multiple targets
-"Thalia, Guardian of Thraben"	cost modification
+Thalia, Guardian of Thraben	cost modification
 Thelon's Curse	multiple targets
 Thermopod	mana pool
 Think Twice	flashback
@@ -925,7 +925,7 @@ Trickery Charm	choose
 Trinisphere	cost modification
 Triton Tactics	multiple targets
 Twilight Mire	mana pool
-"Ulasht, the Hate Seed"	choose
+Ulasht, the Hate Seed	choose
 Ulvenwald Mystics	transform
 Ulvenwald Primordials	transform
 Unblinking Bleb	scry > 1
@@ -933,7 +933,7 @@ Unburial Rites	from graveyard
 Undead Warchief	cost modification
 Unearthly Blizzard	multiple targets
 Unknown Shores	mana pool
-"Untaidake, the Cloud Keeper"	mana pool
+Untaidake, the Cloud Keeper	mana pool
 Upwelling	mana pool
 Urborg Uprising	multiple targets
 Ur-Golem's Eye	mana pool
@@ -965,7 +965,7 @@ Vitality Charm	choose
 Volcanic Spray	flashback
 Volley of Boulders	flashback
 Volt Charge	multiple targets
-"Vorinclex, Voice of Hunger"	mana pool
+Vorinclex, Voice of Hunger	mana pool
 Voyager Drake	multiple targets
 Wail of the Nym	choose
 Warden of Evos Isle	cost modification
@@ -988,6 +988,6 @@ Workhorse	mana pool
 Worldpurge	mana pool
 Worn Powerstone	mana pool
 Wrap in Flames	multiple targets
-"Xenagos, the Reveler"	mana pool
-"Yosei, the Morning Star"	multiple targets
+Xenagos, the Reveler	mana pool
+Yosei, the Morning Star	multiple targets
 Zhur-Taa Ancient	mana pool
