@@ -89,7 +89,7 @@ public abstract class PlayerProfile {
         return avatar;
     }
 
-    private void loadAvatar() {
+    public void loadAvatar() {
         final File file = new File(profilePath.resolve("player.avatar").toString());
         if (file.exists()) {
             avatar = new PlayerAvatar(FileIO.toImg(file, IconImages.MISSING));

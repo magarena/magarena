@@ -3,7 +3,6 @@ package magic.ui.screen;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,11 +13,11 @@ import javax.swing.JPanel;
 
 import magic.ai.MagicAIImpl;
 import magic.model.player.AiPlayer;
+import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.dialog.AiPropertiesDialog;
 import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IPlayerProfileConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
@@ -32,8 +31,11 @@ public class SelectAiPlayerScreen
     private AiPlayerJList profilesJList;
 
     // CTR
-    public SelectAiPlayerScreen(final IPlayerProfileConsumer consumer, final PlayerProfile playerProfile) {
-        super(consumer);
+    public SelectAiPlayerScreen(final PlayerProfile playerProfile) {
+        refreshProfilesJList(playerProfile);
+    }
+    public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
+        addListener(listener);
         refreshProfilesJList(playerProfile);
     }
 
@@ -45,11 +47,6 @@ public class SelectAiPlayerScreen
       profilesJList = new AiPlayerJList();
       profilesJList.addMouseListener(new DoubleClickAdapter());
       return new ContainerPanel(profilesJList);
-    }
-
-    private void refreshProfilesJList(final PlayerProfile playerProfile) {
-        profilesJList.setListData(getPlayerProfilesArray());
-        setSelectedListItem(playerProfile);
     }
 
     private AiPlayer[] getPlayerProfilesArray() {
@@ -150,26 +147,6 @@ public class SelectAiPlayerScreen
     }
 
     /* (non-Javadoc)
-     * @see magic.ui.screen.IAvatarImageConsumer#setSelectedAvatarPath(java.nio.file.Path)
-     */
-    @Override
-    public void setSelectedAvatarPath(final Path imagePath) {
-        final PlayerProfile profile = getSelectedPlayer();
-        updateAvatarImage(imagePath, profile);
-        PlayerProfiles.refreshMap();
-        refreshProfilesJList(profile);
-        consumer.setPlayerProfile(getSelectedPlayer());
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerScreen#getPlayerType()
-     */
-    @Override
-    protected String getPlayerType() {
-        return "ai";
-    }
-
-    /* (non-Javadoc)
      * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
      */
     @Override
@@ -209,9 +186,7 @@ public class SelectAiPlayerScreen
             final AiPlayer profile = (AiPlayer)getSelectedPlayer();
             new AiPropertiesDialog(getFrame(), profile);
             profilesJList.repaint();
-            if (profile.equals(consumer.getPlayer())) {
-                consumer.setPlayerProfile(profile);
-            }
+            notifyPlayerUpdated(profile);
         }
     }
 
@@ -221,13 +196,18 @@ public class SelectAiPlayerScreen
     }
 
     @Override
-    protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
-        return PlayerProfiles.getAiPlayerProfiles();
+    protected void refreshProfilesJList() {
+        refreshProfilesJList(null);
+    }
+    @Override
+    protected void refreshProfilesJList(PlayerProfile playerProfile) {
+        profilesJList.setListData(getPlayerProfilesArray());
+        setSelectedListItem(playerProfile);
     }
 
     @Override
-    protected void refreshProfilesJList() {
-        refreshProfilesJList(null);
+    protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
+        return PlayerProfiles.getAiPlayerProfiles();
     }
 
 }

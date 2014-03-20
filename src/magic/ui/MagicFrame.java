@@ -12,6 +12,7 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
+import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.ui.choice.MulliganChoicePanel;
 import magic.ui.dialog.PreferencesDialog;
@@ -34,7 +35,6 @@ import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.MainMenuScreen;
 import magic.ui.screen.ReadmeScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.interfaces.IPlayerProfileConsumer;
 import magic.ui.utility.GraphicsUtilities;
 import net.miginfocom.swing.MigLayout;
 
@@ -111,14 +111,14 @@ public class MagicFrame extends JFrame {
     public void showDuelPlayersScreen() {
         activateMagScreen(new NewDuelSettingsScreen());
     }
-    public void showSelectAiProfileScreen(final IPlayerProfileConsumer consumer, final PlayerProfile profile) {
-        activateMagScreen(new SelectAiPlayerScreen(consumer, profile));
-    }
     public void showAvatarImagesScreen(final IAvatarImageConsumer consumer) {
         activateMagScreen(new AvatarImagesScreen(consumer));
     }
-    public void showSelectHumanPlayerScreen(final IPlayerProfileConsumer consumer, final PlayerProfile profile) {
-        activateMagScreen(new SelectHumanPlayerScreen(consumer, profile));
+    public void showSelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
+        activateMagScreen(new SelectHumanPlayerScreen(listener, profile));
+    }
+    public void showSelectAiProfileScreen(final IPlayerProfileListener listener, final PlayerProfile profile) {
+        activateMagScreen(new SelectAiPlayerScreen(listener, profile));
     }
     public void showDeckView(final MagicDeck deck) {
         activateMagScreen(new DeckViewScreen(deck));

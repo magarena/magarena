@@ -3,7 +3,6 @@ package magic.ui.screen;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,10 +13,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import magic.model.player.HumanPlayer;
+import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IPlayerProfileConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
@@ -31,8 +30,11 @@ public class SelectHumanPlayerScreen
     private HumanPlayerJList profilesJList;
 
     // CTR
-    public SelectHumanPlayerScreen(final IPlayerProfileConsumer consumer, final PlayerProfile playerProfile) {
-        super(consumer);
+    public SelectHumanPlayerScreen(final PlayerProfile playerProfile) {
+        refreshProfilesJList(playerProfile);
+    }
+    public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
+        addListener(listener);
         refreshProfilesJList(playerProfile);
     }
 
@@ -44,11 +46,6 @@ public class SelectHumanPlayerScreen
         profilesJList = new HumanPlayerJList();
         profilesJList.addMouseListener(new DoubleClickAdapter());
         return new ContainerPanel(profilesJList);
-    }
-
-    private void refreshProfilesJList(final PlayerProfile playerProfile) {
-        profilesJList.setListData(getPlayerProfilesArray());
-        setSelectedListItem(playerProfile);
     }
 
     private HumanPlayer[] getPlayerProfilesArray() {
@@ -139,26 +136,6 @@ public class SelectHumanPlayerScreen
     }
 
     /* (non-Javadoc)
-     * @see magic.ui.screen.IAvatarImageConsumer#setSelectedAvatarPath(java.nio.file.Path)
-     */
-    @Override
-    public void setSelectedAvatarPath(final Path imagePath) {
-        final PlayerProfile profile = getSelectedPlayer();
-        updateAvatarImage(imagePath, profile);
-        PlayerProfiles.refreshMap();
-        refreshProfilesJList(profile);
-        consumer.setPlayerProfile(getSelectedPlayer());
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerScreen#getPlayerType()
-     */
-    @Override
-    protected String getPlayerType() {
-        return "human";
-    }
-
-    /* (non-Javadoc)
      * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
      */
     @Override
@@ -172,21 +149,6 @@ public class SelectHumanPlayerScreen
     @Override
     protected int getPreferredWidth() {
         return 420;
-    }
-
-    @Override
-    protected JList<? extends PlayerProfile> getProfilesJList() {
-        return profilesJList;
-    }
-
-    @Override
-    protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
-        return PlayerProfiles.getHumanPlayerProfiles();
-    }
-
-    @Override
-    protected void refreshProfilesJList() {
-        refreshProfilesJList(null);
     }
 
     private class NewPlayerAction extends AbstractAction {
@@ -233,12 +195,30 @@ public class SelectHumanPlayerScreen
             if (newName != null && !newName.trim().isEmpty()) {
                 profile.setPlayerName(newName.trim());
                 profile.save();
-                if (profile.equals(consumer.getPlayer())) {
-                    consumer.setPlayerProfile(getSelectedPlayer());
-                }
+                notifyPlayerUpdated(getSelectedPlayer());
             }
         }
 
+    }
+
+    @Override
+    protected JList<? extends PlayerProfile> getProfilesJList() {
+        return profilesJList;
+    }
+
+    @Override
+    protected void refreshProfilesJList() {
+        refreshProfilesJList(null);
+    }
+    @Override
+    protected void refreshProfilesJList(PlayerProfile playerProfile) {
+        profilesJList.setListData(getPlayerProfilesArray());
+        setSelectedListItem(playerProfile);
+    }
+
+    @Override
+    protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
+        return PlayerProfiles.getHumanPlayerProfiles();
     }
 
 }

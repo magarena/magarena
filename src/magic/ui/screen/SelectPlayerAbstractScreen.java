@@ -27,10 +27,10 @@ import javax.swing.SwingUtilities;
 import magic.MagicMain;
 import magic.model.player.AiPlayer;
 import magic.model.player.HumanPlayer;
+import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
-import magic.ui.screen.interfaces.IPlayerProfileConsumer;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -41,20 +41,20 @@ public abstract class SelectPlayerAbstractScreen
     extends AbstractScreen
     implements IAvatarImageConsumer {
 
+    private List<IPlayerProfileListener> listeners = new ArrayList<>();
+
     protected HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
-    protected final IPlayerProfileConsumer consumer;
 
     protected abstract JPanel getProfilesListPanel();
-    protected abstract String getPlayerType();
     protected abstract void createDefaultPlayerProfiles() throws IOException;
     protected abstract int getPreferredWidth();
     protected abstract JList<? extends PlayerProfile> getProfilesJList();
     protected abstract void refreshProfilesJList();
+    protected abstract void refreshProfilesJList(final PlayerProfile playerProfile);
     protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
 
     // CTR
-    protected SelectPlayerAbstractScreen(final IPlayerProfileConsumer consumer) {
-        this.consumer = consumer;
+    protected SelectPlayerAbstractScreen() {
         setContent(new ScreenContent());
         setEnterKeyInputMap();
     }
@@ -109,6 +109,15 @@ public abstract class SelectPlayerAbstractScreen
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        playerProfile.loadAvatar();
+    }
+
+    @Override
+    public void setSelectedAvatarPath(final Path imagePath) {
+        final PlayerProfile profile = getSelectedPlayer();
+        updateAvatarImage(imagePath, profile);
+        refreshProfilesJList(profile);
+        notifyPlayerUpdated(profile);
     }
 
     protected PlayerProfile getSelectedPlayer() {
@@ -129,7 +138,6 @@ public abstract class SelectPlayerAbstractScreen
         }
     }
 
-
     protected class DeletePlayerAction extends AbstractAction {
 
         @Override
@@ -143,9 +151,7 @@ public abstract class SelectPlayerAbstractScreen
                 if (isDeletePlayerConfirmedByUser(condemnedPlayer)) {
                     PlayerProfiles.deletePlayer(condemnedPlayer);
                     refreshProfilesJList();
-                    if (condemnedPlayer.equals(consumer.getPlayer())) {
-                        consumer.setPlayerProfile(getSelectedPlayer());
-                    }
+                    notifyPlayerDeleted(condemnedPlayer);
                 }
             }
         }
@@ -212,7 +218,7 @@ public abstract class SelectPlayerAbstractScreen
 
     }
     protected void doNextAction() {
-        consumer.setPlayerProfile(getSelectedPlayer());
+        notifyPlayerSelected(getSelectedPlayer());
         getFrame().closeActiveScreen(false);
     }
 
@@ -224,6 +230,32 @@ public abstract class SelectPlayerAbstractScreen
                 doNextAction();
                 setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
+        }
+    }
+
+    public synchronized void addListener(IPlayerProfileListener obj) {
+        listeners.add(obj);
+    }
+
+    public synchronized void removeListener(IPlayerProfileListener obj) {
+        listeners.remove(obj);
+    }
+
+    protected synchronized void notifyPlayerUpdated(final PlayerProfile player) {
+        for (final IPlayerProfileListener listener : listeners) {
+            listener.PlayerProfileUpdated(player);
+        }
+    }
+
+    private synchronized void notifyPlayerDeleted(final PlayerProfile player) {
+        for (final IPlayerProfileListener listener : listeners) {
+            listener.PlayerProfileDeleted(player);
+        }
+    }
+
+    private synchronized void notifyPlayerSelected(final PlayerProfile player) {
+        for (final IPlayerProfileListener listener : listeners) {
+            listener.PlayerProfileSelected(player);
         }
     }
 
