@@ -22,7 +22,7 @@ import magic.ui.screen.DeckEditorScreen;
 import magic.ui.screen.DeckViewScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
-import magic.ui.screen.DuelPlayersScreen;
+import magic.ui.screen.NewDuelSettingsScreen;
 import magic.ui.screen.HelpMenuScreen;
 import magic.ui.screen.KeywordsScreen;
 import magic.ui.screen.AbstractScreen;
@@ -109,7 +109,7 @@ public class MagicFrame extends JFrame {
     // The various (Mag)screens that can currently be displayed.
     //
     public void showDuelPlayersScreen() {
-        activateMagScreen(new DuelPlayersScreen());
+        activateMagScreen(new NewDuelSettingsScreen());
     }
     public void showSelectAiProfileScreen(final IPlayerProfileConsumer consumer, final PlayerProfile profile) {
         activateMagScreen(new SelectAiPlayerScreen(consumer, profile));

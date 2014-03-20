@@ -20,7 +20,7 @@ import magic.ui.widget.player.DuelPlayerDeckPanel;
 import magic.ui.widget.player.DuelPlayerPanel;
 
 @SuppressWarnings("serial")
-public class DuelPlayersScreen
+public class NewDuelSettingsScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
@@ -28,7 +28,7 @@ public class DuelPlayersScreen
 
     private ScreenContent content;
 
-    public DuelPlayersScreen() {
+    public NewDuelSettingsScreen() {
         duelConfig.load();
         content = new ScreenContent(duelConfig, getFrame());
         setContent(content);
