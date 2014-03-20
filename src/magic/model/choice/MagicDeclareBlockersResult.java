@@ -54,7 +54,7 @@ public class MagicDeclareBlockersResult extends LinkedList<MagicCombatCreature[]
     @Override
     public String toString() {
         final StringBuilder builder=new StringBuilder();
-        //builder.append(score);
+        builder.append(score);
         for (final MagicCombatCreature[] creatures : this) {
             if (creatures.length>1) {
                 builder.append(' ');
