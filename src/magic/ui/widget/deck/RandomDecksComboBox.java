@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.widget.deck;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -17,6 +17,7 @@ import javax.swing.ListCellRenderer;
 import magic.data.DeckGenerators;
 import magic.data.IconImages;
 import magic.model.MagicColor;
+import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class RandomDecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {

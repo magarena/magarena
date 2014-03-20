@@ -6,6 +6,7 @@ import java.awt.Font;
 import javax.swing.JLabel;
 
 import magic.ui.widget.TexturedPanel;
+import magic.ui.widget.deck.RandomDecksComboBox;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

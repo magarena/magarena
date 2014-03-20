@@ -3,9 +3,9 @@ package magic.ui.dialog;
 import magic.data.DeckType;
 import magic.ui.MagicFrame;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.RandomDecksComboBox;
 import magic.ui.widget.deck.CustomDecksComboxBox;
 import magic.ui.widget.deck.PrebuiltDecksComboxBox;
+import magic.ui.widget.deck.RandomDecksComboBox;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
