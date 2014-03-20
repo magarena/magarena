@@ -92,10 +92,6 @@ public class DuelPlayerPanel
         return panel;
     }
 
-    public PlayerProfile getPlayerProfile() {
-        return playerProfile;
-    }
-
     public void selectNewProfile() {
         if (playerProfile instanceof HumanPlayer) {
             frame.showSelectHumanPlayerScreen(this, playerProfile);
@@ -133,6 +129,11 @@ public class DuelPlayerPanel
             public void mouseExited(MouseEvent e) { DuelPlayerPanel.this.dispatchEvent(e); }
         });
         return panel;
+    }
+
+    @Override
+    public PlayerProfile getPlayer() {
+        return playerProfile;
     }
 
 }

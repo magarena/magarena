@@ -15,6 +15,7 @@ import java.util.List;
 import magic.MagicMain;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicGameReport;
+import magic.utility.MagicFiles;
 
 public final class PlayerProfiles {
     private PlayerProfiles() {}
@@ -175,5 +176,18 @@ public final class PlayerProfiles {
     public static HashMap<String, PlayerProfile> getPlayerProfiles() {
         return profilesMap;
     }
+
+    public static void deletePlayer(final PlayerProfile playerProfile) {
+        MagicFiles.deleteDirectory(getPlayerProfileDirectory(playerProfile));
+        profilesMap.remove(playerProfile.getId());
+    }
+
+    private static Path getPlayerProfileDirectory(final PlayerProfile playerProfile) {
+        return Paths.get(MagicMain.getPlayerProfilesPath())
+               .resolve(playerProfile.getPlayerType())
+               .resolve(playerProfile.getId());
+    }
+
+
 
 }

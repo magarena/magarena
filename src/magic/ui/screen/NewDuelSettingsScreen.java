@@ -141,7 +141,7 @@ public class NewDuelSettingsScreen
         }
 
         public PlayerProfile getPlayerProfile(final int index) {
-            return playerPanels[index].getPlayerProfile();
+            return playerPanels[index].getPlayer();
         }
 
         private void doMigLayout() {

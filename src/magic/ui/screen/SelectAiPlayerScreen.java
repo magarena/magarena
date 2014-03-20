@@ -68,10 +68,6 @@ public class SelectAiPlayerScreen
         setSelectedListItem(playerProfile);
     }
 
-    private void refreshProfilesJList() {
-        refreshProfilesJList(null);
-    }
-
     private AiPlayer[] getPlayerProfilesArray() {
         final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
         return sortedPlayersList.toArray(new AiPlayer[sortedPlayersList.size()]);
@@ -160,25 +156,9 @@ public class SelectAiPlayerScreen
                 }
             }
         }, "Update name and duel settings for selected player."));
-        buttons.add(new MenuButton("Delete", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                deleteSelectedPlayerProfile();
-            }
-        }, "Delete selected player profile."));
+        buttons.add(new MenuButton("Delete", new DeletePlayerAction(), "Delete selected player profile."));
         buttons.add(getAvatarActionButton());
         return buttons;
-    }
-
-    private void deleteSelectedPlayerProfile() {
-        final PlayerProfile profile = getSelectedPlayerProfile();
-        if (deleteSelectedPlayerProfile(profile)) {
-            PlayerProfiles.getPlayerProfiles().remove(profile.getId());
-            refreshProfilesJList();
-            if (profile.equals(playerProfile)) {
-                consumer.setPlayerProfile(getSelectedPlayerProfile());
-            }
-        }
     }
 
     private void createNewPlayerProfile() {
@@ -255,6 +235,11 @@ public class SelectAiPlayerScreen
     @Override
     protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
         return PlayerProfiles.getAiPlayerProfiles();
+    }
+
+    @Override
+    protected void refreshProfilesJList() {
+        refreshProfilesJList(null);
     }
 
 }

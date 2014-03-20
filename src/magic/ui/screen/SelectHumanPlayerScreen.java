@@ -67,10 +67,6 @@ public class SelectHumanPlayerScreen
         setSelectedListItem(playerProfile);
     }
 
-    private void refreshProfilesJList() {
-        refreshProfilesJList(null);
-    }
-
     private HumanPlayer[] getPlayerProfilesArray() {
         final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
         return sortedPlayersList.toArray(new HumanPlayer[sortedPlayersList.size()]);
@@ -146,12 +142,7 @@ public class SelectHumanPlayerScreen
                 profilesJList.repaint();
             }
         }, "Update name and duel settings for selected player."));
-        buttons.add(new MenuButton("Delete", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                deleteSelectedPlayerProfile();
-            }
-        }, "Delete selected player profile."));
+        buttons.add(new MenuButton("Delete", new DeletePlayerAction(), "Delete selected player profile."));
         buttons.add(getAvatarActionButton());
         return buttons;
     }
@@ -183,17 +174,6 @@ public class SelectHumanPlayerScreen
         if (newName != null && !newName.trim().isEmpty()) {
             profile.setPlayerName(newName.trim());
             profile.save();
-            if (profile.equals(playerProfile)) {
-                consumer.setPlayerProfile(getSelectedPlayerProfile());
-            }
-        }
-    }
-
-    private void deleteSelectedPlayerProfile() {
-        final PlayerProfile profile = getSelectedPlayerProfile();
-        if (deleteSelectedPlayerProfile(profile)) {
-            PlayerProfiles.getPlayerProfiles().remove(profile.getId());
-            refreshProfilesJList();
             if (profile.equals(playerProfile)) {
                 consumer.setPlayerProfile(getSelectedPlayerProfile());
             }
@@ -265,6 +245,11 @@ public class SelectHumanPlayerScreen
     @Override
     protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
         return PlayerProfiles.getHumanPlayerProfiles();
+    }
+
+    @Override
+    protected void refreshProfilesJList() {
+        refreshProfilesJList(null);
     }
 
 }
