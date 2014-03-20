@@ -129,12 +129,7 @@ public class SelectHumanPlayerScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("New", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                doNewPlayerProfile();
-            }
-        }, "Create a new player profile."));
+        buttons.add(new MenuButton("New", new NewPlayerAction(), "Create a new player profile."));
         buttons.add(new MenuButton("Edit", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -145,22 +140,6 @@ public class SelectHumanPlayerScreen
         buttons.add(new MenuButton("Delete", new DeletePlayerAction(), "Delete selected player profile."));
         buttons.add(getAvatarActionButton());
         return buttons;
-    }
-
-    private void doNewPlayerProfile() {
-        final String newName = (String)JOptionPane.showInputDialog(
-                getFrame(),
-                "<html><b>Player Name</b><br></html>",
-                "New Player",
-                JOptionPane.PLAIN_MESSAGE,
-                null, null, null);
-        if (newName != null && !newName.trim().isEmpty()) {
-            final PlayerProfile newProfile = new HumanPlayer();
-            newProfile.setPlayerName(newName);
-            newProfile.save();
-            PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
-            refreshProfilesJList(newProfile);
-        }
     }
 
     private void doEditPlayerProfile() {
@@ -250,6 +229,31 @@ public class SelectHumanPlayerScreen
     @Override
     protected void refreshProfilesJList() {
         refreshProfilesJList(null);
+    }
+
+    private class NewPlayerAction extends AbstractAction {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            doNewPlayerProfile();
+        }
+
+        private void doNewPlayerProfile() {
+            final String newName = (String)JOptionPane.showInputDialog(
+                    getFrame(),
+                    "<html><b>Player Name</b><br></html>",
+                    "New Player",
+                    JOptionPane.PLAIN_MESSAGE,
+                    null, null, null);
+            if (newName != null && !newName.trim().isEmpty()) {
+                final PlayerProfile newProfile = new HumanPlayer();
+                newProfile.setPlayerName(newName);
+                newProfile.save();
+                PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
+                refreshProfilesJList(newProfile);
+            }
+        }
+
     }
 
 }
