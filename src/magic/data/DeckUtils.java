@@ -179,7 +179,7 @@ public class DeckUtils {
         if (content != "") {
             try {
                 deck = parseDeckFileContent(content);
-                deck.setName(new File(filename).getName());
+                deck.setFilename(new File(filename).getName());
             } catch (Exception e) {
                 System.err.println("Invalid deck file (" + filename + ") - " + e.toString());
                 JOptionPane.showMessageDialog(
@@ -201,7 +201,7 @@ public class DeckUtils {
         final MagicDeck deck = player.getDeck();
         final MagicDeck unsupported = new MagicDeck();
 
-        deck.setName(new File(filename).getName());
+        deck.setFilename(new File(filename).getName());
         deck.clear(); // remove previous cards
 
         try (final Scanner sc = new Scanner(content)) {
@@ -315,7 +315,7 @@ public class DeckUtils {
         if (size==0) {
             // Creates a simple default deck.
             final MagicDeck deck = player.getDeck();
-            deck.setName("Default.dec");
+            deck.setFilename("Default.dec");
             final MagicCardDefinition creature=CardDefinitions.getCard("Elite Vanguard");
             final MagicCardDefinition land=CardDefinitions.getCard("Plains");
             for (int count=24;count>0;count--) {

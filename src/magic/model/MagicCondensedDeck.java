@@ -22,7 +22,7 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
     public MagicCondensedDeck(final MagicDeck list) {
         this((List<MagicCardDefinition>) list);
 
-        name = list.getName();
+        name = list.getFilename();
     }
 
     public MagicCondensedDeck(final List<MagicCardDefinition> list) {

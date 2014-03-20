@@ -242,14 +242,14 @@ public class DeckEditorScreen
         fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
         if (deck != null) {
-            fileChooser.setSelectedFile(new File(deck.getName()));
+            fileChooser.setSelectedFile(new File(deck.getFilename()));
         }
         final int action = fileChooser.showSaveDialog(this);
         if (action == JFileChooser.APPROVE_OPTION) {
             final String filename = fileChooser.getSelectedFile().getAbsolutePath();
             if (DeckUtils.saveDeck(filename, screenContent.getDeck())) {
                 final String shortFilename = fileChooser.getSelectedFile().getName();
-                screenContent.getDeck().setName(shortFilename);
+                screenContent.getDeck().setFilename(shortFilename);
                 screenContent.setDeck(screenContent.getDeck());
                 setMostRecentDeck(filename);
             } else {
