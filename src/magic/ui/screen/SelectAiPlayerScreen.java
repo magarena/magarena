@@ -140,12 +140,7 @@ public class SelectAiPlayerScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("New", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                createNewPlayerProfile();
-            }
-        }, "Create a new player profile."));
+        buttons.add(new MenuButton("New", new NewPlayerAction(), "Create a new player profile."));
         buttons.add(new MenuButton("Edit", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -159,15 +154,6 @@ public class SelectAiPlayerScreen
         buttons.add(new MenuButton("Delete", new DeletePlayerAction(), "Delete selected player profile."));
         buttons.add(getAvatarActionButton());
         return buttons;
-    }
-
-    private void createNewPlayerProfile() {
-        final AiPropertiesDialog dialog = new AiPropertiesDialog(getFrame());
-        final PlayerProfile newProfile = dialog.getPlayerProfile();
-        if (newProfile != null) {
-            PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
-            refreshProfilesJList(newProfile);
-        }
     }
 
     private AiPlayer getSelectedPlayerProfile() {
@@ -225,6 +211,24 @@ public class SelectAiPlayerScreen
     @Override
     protected int getPreferredWidth() {
         return 540;
+    }
+
+    private class NewPlayerAction extends AbstractAction {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            createNewPlayerProfile();
+        }
+
+        private void createNewPlayerProfile() {
+            final AiPropertiesDialog dialog = new AiPropertiesDialog(getFrame());
+            final PlayerProfile newProfile = dialog.getPlayerProfile();
+            if (newProfile != null) {
+                PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
+                refreshProfilesJList(newProfile);
+            }
+        }
+
     }
 
     @Override
