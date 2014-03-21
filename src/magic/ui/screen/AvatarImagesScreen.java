@@ -54,6 +54,7 @@ import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtilities;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class AvatarImagesScreen
@@ -270,7 +271,7 @@ public class AvatarImagesScreen
                 JList<? extends AvatarImageSet> list, AvatarImageSet value, int index,
                 boolean isSelected, boolean cellHasFocus) {
 
-            final Color foreColor = isSelected ? Color.YELLOW : Color.WHITE;
+            final Color foreColor = isSelected ? MagicStyle.HIGHLIGHT_COLOR : Color.WHITE;
 
             final JLabel setNameLabel = new JLabel(value.getName());
             setNameLabel.setFont(FontsAndBorders.FONT2);
@@ -286,7 +287,7 @@ public class AvatarImagesScreen
             itemPanel.setPreferredSize(new Dimension(0, 70));
             itemPanel.setOpaque(false);
             itemPanel.setForeground(foreColor);
-            itemPanel.setBorder(isSelected ? BorderFactory.createLineBorder(Color.YELLOW, 1) : null);
+            itemPanel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.HIGHLIGHT_COLOR, 1) : null);
             itemPanel.add(new JLabel(value.getSampleImage()), "w 70!, h 70!");
             itemPanel.add(infoPanel, "w 100%");
             return itemPanel;

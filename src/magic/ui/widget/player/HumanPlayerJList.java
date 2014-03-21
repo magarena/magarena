@@ -13,6 +13,7 @@ import javax.swing.SwingConstants;
 
 import magic.model.player.HumanPlayer;
 import magic.ui.widget.FontsAndBorders;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -42,13 +43,13 @@ public class HumanPlayerJList
                 boolean cellHasFocus) {
 
             this.profile = profile;
-            foreColor = isSelected ? Color.YELLOW : Color.WHITE;
+            foreColor = isSelected ? MagicStyle.HIGHLIGHT_COLOR: Color.WHITE;
 
             final JPanel panel = new JPanel(new MigLayout("insets 0 0 0 6, gap 0"));
             panel.setPreferredSize(new Dimension(0, 70));
             panel.setOpaque(false);
             panel.setForeground(foreColor);
-            panel.setBorder(isSelected ? BorderFactory.createLineBorder(Color.YELLOW, 1) : null);
+            panel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.HIGHLIGHT_COLOR, 1) : null);
 
             panel.add(getAvatarPortrait(), "w 70!, h 70!");
             panel.add(getNamePanel(), "w 100%");

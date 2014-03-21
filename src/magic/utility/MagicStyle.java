@@ -14,7 +14,7 @@ import magic.ui.widget.FontsAndBorders;
 public final class MagicStyle {
     private MagicStyle() {}
 
-    private static Color HIGHLIGHT_COLOR = Color.YELLOW;
+    public static Color HIGHLIGHT_COLOR = Color.YELLOW;
 
     /**
      * Changes border color, background and mouse cursor for the specified component
