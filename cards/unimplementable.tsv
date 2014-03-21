@@ -8,6 +8,7 @@ Advice from the Fae	look
 Aeon Chronicler	suspend
 AEther Burst	multiple targets
 AEther Shockwave	choose
+AEther Storm	opponent activate
 Afflicted Deserter	transform
 Agent of Stromhald	mana pool
 Agonizing Memories	look
@@ -49,6 +50,7 @@ Arc Mage	divided damage
 Arcane Melee	cost modification
 Architects of Will	look
 Archon of the Triumvirate	multiple targets
+Armageddon Clock	opponent activate
 Army of the Damned	flashback
 Arrow Volley Trap	divided damage
 Artful Dodge	flashback
@@ -423,6 +425,7 @@ Emblazoned Golem	mana restriction
 Embolden	flashback
 Emeral Medallion	cost modification
 Emerald Charm	choose
+Endbringer's Revel	opponent activate
 Energy Bolt	choose
 Energy Chamber	choose
 Energy Tap	mana pool
@@ -443,6 +446,7 @@ Evershrike	from graveyard
 Evil Presence	becomes basic land
 Evolution Charm	choose
 Exalted Angel	morph
+Excavation	opponent activate
 Exile into Darkness	from graveyard
 Exiled Doomsayer	cost modification
 Extinction	creature type choice
@@ -467,6 +471,7 @@ Fathom Seer	morph
 Feast of Famine	choose
 Feeling of Dread	multiple targets
 Fendeep Summoner	multiple targets
+Feral Hydra	opponent activate
 Ferocious Charge	scry > 1
 Feroz's Ban	cost modification
 Fertile Ground	mana pool
@@ -488,6 +493,9 @@ Firemane Angel	from graveyard
 Fires of Undeath	flashback
 Firewing Phoenix	from graveyard
 Fissure Vent	choose
+Flailing Manticore	opponent activate
+Flailing Ogre	opponent activate
+Flailing Soldier	opponent activate
 Flames of the Firebrand	divided damage
 Flameshot	divided damage
 Flaming Gambit	flashback
@@ -552,6 +560,8 @@ Gitaxian Probe	reveal
 Glarewielder	multiple targets
 Glasses of Urza	look
 Glissa Sunseeker	mana pool
+Glittering Lion	opponent activate
+Glittering Lynx	opponent activate
 Gloom	cost modification
 Glowrider	cost modification
 Gnaw to the Bone	flashback
@@ -646,6 +656,7 @@ Icatian Store	mana pool
 Ice Cauldron	mana pool
 Iceberg	mana pool
 Ichorid	from graveyard
+Ifh-Biff Efreet	opponent activate
 Ignite Disorder	divided damage
 Imagecrafter	creature type choice
 Immerwolf	transform
@@ -669,6 +680,7 @@ Infernal Kirin	reveal
 Infernal Plunge	mana pool
 Inferno Titan	divided damage
 Infiltrator il-Kor	suspend
+Infintite Hourglass	opponent activate
 Information Dealer	look
 Ingenious Thief	look
 Initiates of the Ebon Hand	mana pool
@@ -743,12 +755,14 @@ Lambholt Elder	transform
 Lammastide Weave	name a card
 Land Grant	reveal
 Land Tax	multiple targets
+Land's Edge	opponent activate
 Laquatus's Disdain	from graveyard
 Lava Dart	flashback
 Lay Bare	look
 Lead Astray	multiple targets
 Lead the Stampede	look
 Leshrac's Sigil	look
+Lethal Vapors	opponent activate
 Leyline of Anticipation	begin the game with it
 Leyline of Lifeforce	begin the game with it
 Leyline of Lightning	begin the game with it
@@ -765,6 +779,7 @@ Liege of the Tangle	multiple targets
 Life and Limb	becomes basic land
 Life from the Loam	from graveyard
 Lifebane Zombie	reveal
+Lightning Storm	opponent activate
 Lightning Surge	flashback
 Liliana of the Dark Realms	mana pool
 Liliana of the Veil	separate permanents
@@ -807,6 +822,7 @@ Magus of the Coffers	mana pool
 Magus of the Scroll	name a card
 Magus of the Vineyard	mana pool
 Mana Bloom	mana pool
+Mana Cache	opponent activate
 Mana Crypt	mana pool
 Mana Cylix	mana pool
 Mana Drain	mana pool
@@ -839,9 +855,11 @@ Melira, Sylvok Outcast	counters replacement
 Memoricide	name a card
 Memory's Journey	flashback
 Mercadian Bazaar	mana pool
+Mercenaries	opponent activate
 Merciless Eviction	choose
 Merciless Predator	transform
 Merfolk Observer	look
+Merseine	opponent activate
 Metalworker	mana pool
 Metamorphosis	mana pool
 Meteor Shower	divided damage
@@ -937,6 +955,7 @@ Omenspeaker	scry > 1
 Omnath, Locus of Mana	mana pool
 One Dozen Eyes	choose
 Onslaught	divided damage
+Oona's Prowler	opponent activate
 Opal Palace	mana restriction
 Orcish Farmer	becomes basic land
 Orcish Librarian	look
@@ -1039,6 +1058,7 @@ Quicksilver Dragon	morph
 Quicksilver Elemental	mana restriction
 Quicksilver Fountain	becomes basic land
 Quicksilver Geyser	multiple targets
+Quicksilver Wall	opponent activate
 Quiet Disrepair	choose
 Quirion Sentinel	mana pool
 Radha, Heir to Keld	mana pool
@@ -1096,6 +1116,7 @@ Retribution	multiple targets
 Return to Dust	mana pool
 Reveillark	multiple targets
 Revenge of the Hunted	all block
+Ribbon Snake	opponent activate
 Riddle of Lightning	scry > 1
 Riders of Gavony	creature type choice
 Rift Bolt	suspend
@@ -1141,10 +1162,12 @@ Sacrifice	mana pool
 Sage Aven	look
 Sage of Epityr	look
 Sage Owl	look
+Sailmonger	opponent activate
 Sakiko, Mother of Summer	mana pool
 Sakura-Tribe Springcaller	mana pool
 Saltcrusted Steppe	mana pool
 Salvage Titan	from graveyard
+Samite Sanctuart	opponent activate
 Sand Silos	mana pool
 Sandstone Needle	mana pool
 Sandstorm Eidolon	from graveyard
@@ -1153,10 +1176,12 @@ Sapphire Leech	cost modification
 Sapphire Medallion	cost modification
 Saprazzan Cove	mana pool
 Saprazzan Skerry	mana pool
+Saproling Cluster	opponent activate
 Sarpadian Empires, Vol. VII	enters choose color
 Satyr Hedonist	mana pool
 Savage Beating	choose
 Saving Grasp	flashback
+Scandalmonger	opponent activate
 Scatter the Seeds	convoke
 Scattering Stroke	mana pool
 School of the Unseen	mana pool
@@ -1296,6 +1321,7 @@ Spreading Seas	becomes basic land
 Springjack Pasture	mana pool
 Sprout Swarm	convoke
 Spy Network	look
+Squallmonger	opponent activate
 Squee, Goblin Nabob	from graveyard
 Squeeze	cost modification
 Stalking Vampire	transform
@@ -1338,6 +1364,7 @@ Tainted Well	becomes basic land
 Talas Explorer	look
 Talruum Piper	all block
 Tangleroot	mana pool
+Task Mage Assembly	opponent activate
 Taunting Challenge	all block
 Taunting Elf	all block
 Teferi's Isle	mana pool
@@ -1378,6 +1405,7 @@ Thrull Surgeon	look
 Thrummingbird	multiple targets
 Thunderbolt	choose
 Thunderscape Familiar	cost modification
+Tidal Control	opponent activate
 Tidal Surge	multiple targets
 Tidal Warrior	becomes basic land
 Tideshaper Mystic	becomes basic land
@@ -1454,6 +1482,7 @@ Victimize	multiple targets
 Vile Requiem	multiple targets
 Village Ironsmith	transform
 Villagers of Estwald	transform
+Vintara Elephant	opponent activate
 Viral Drake	multiple targets
 Viridian Acolyte	mana pool
 Viridian Joiner	mana pool
@@ -1468,6 +1497,7 @@ Voidstone Gargoyle	name a card
 Volcanic Spray	flashback
 Volcanic Wind	divided damage
 Volley of Boulders	flashback
+Volrath's Dungeon	opponent activate
 Volrath's Laboratory	creature type choice
 Volt Charge	multiple targets
 Vorinclex, Voice of Hunger	mana pool
@@ -1476,13 +1506,16 @@ Wail of the Nym	choose
 Walker of Secret Ways	look
 Walking Desecration	creature type choice
 Wall of Deceit	morph
+Wall of Vipers	opponent activate
 Wanderguard Sentry	look
 Warbreak Trumpeter	morph
 Warden of Evos Isle	cost modification
+Warmonger	opponent activate
 Warrior's Lesson	multiple targets
 Wave Elemental	multiple targets
 Weathered Bodyguards	morph
 Weaver of Lies	morph
+Well of Knowledge	opponent activate
 Werewolf Ransacker	transform
 Wheel of Fate	suspend
 Wheel of Sun and Moon	enchant player
@@ -1500,6 +1533,7 @@ Wingbeat Warrior	morph
 Winter's Night	mana pool
 Wintermoon Mesa	multiple targets
 Wirewood Channeler	mana pool
+Wishmonger	opponent activate
 Witch Engine	mana pool
 Wizard's School	mana pool
 Wolfbitten Captive	transform
@@ -1517,6 +1551,7 @@ Wu Spy	look
 Xenagos, the Reveler	mana pool
 Xenograft	creature type choice
 Yosei, the Morning Star	multiple targets
+Zerapa Minotaur	opponent activate
 Zhur-Taa Ancient	mana pool
 Zoetic Cavern	morph
 Zombie Cutthroat	morph
