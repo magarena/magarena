@@ -150,6 +150,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice LAND_YOU_CONTROL =
         new MagicTargetChoice("a land you control");
     
+    public static final MagicTargetChoice FOREST_YOU_CONTROL =
+            new MagicTargetChoice("a Forest you control");
+    
     public static final MagicTargetChoice ISLAND_YOU_CONTROL =
         new MagicTargetChoice("an Island you control");
 

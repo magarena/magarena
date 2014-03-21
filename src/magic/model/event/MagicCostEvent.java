@@ -89,6 +89,14 @@ public enum MagicCostEvent {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND);
         }
     },
+    SacrificeForest() {
+        public boolean accept(final String cost) {
+            return cost.equals("Sacrifice a Forest");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_FOREST);
+        }
+    },
     SacrificeSwamp() {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Swamp");
@@ -300,6 +308,14 @@ public enum MagicCostEvent {
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.ISLAND_YOU_CONTROL);
+        }
+    },
+    BounceForest() {
+        public boolean accept(final String cost) {
+            return cost.equals("Return a Forest you control to its owner's hand");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.FOREST_YOU_CONTROL);
         }
     },
     BounceCreature() {

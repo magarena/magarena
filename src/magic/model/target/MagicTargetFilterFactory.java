@@ -70,6 +70,7 @@ public class MagicTargetFilterFactory {
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
         single.put("basic land", TARGET_BASIC_LAND);
         single.put("basic land you control", TARGET_BASIC_LAND_YOU_CONTROL);
+        single.put("Forest you control", TARGET_FOREST_YOU_CONTROL);
         single.put("Island you control", TARGET_ISLAND_YOU_CONTROL);
         single.put("nonbasic land", TARGET_NONBASIC_LAND);
         single.put("nonbasic land you control", TARGET_NONBASIC_LAND_YOU_CONTROL);
