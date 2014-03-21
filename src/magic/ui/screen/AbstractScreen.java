@@ -36,7 +36,7 @@ public abstract class AbstractScreen extends JPanel {
 
     // CTR
     public AbstractScreen() {
-        this.frame = (MagicFrame)MagicMain.rootFrame;
+        this.frame = MagicMain.rootFrame;
         setBusy(true);
         setOpaque(false);
         setEscapeKeyInputMap();

@@ -29,7 +29,7 @@ public class MulliganChoicePanel extends MayChoicePanel {
 
     private void showMulliganScreen(final MagicCardList hand) {
         Collections.sort(hand);
-        final MagicFrame frame = (MagicFrame)MagicMain.rootFrame;
+        final MagicFrame frame = MagicMain.rootFrame;
         frame.showMulliganScreen(MulliganChoicePanel.this, hand);
     }
 

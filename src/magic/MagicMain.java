@@ -35,7 +35,7 @@ public class MagicMain {
     public static final String VERSION = "1.48";
     public static final String SOFTWARE_TITLE = "Magarena " + VERSION;
 
-    public static JFrame rootFrame;
+    public static MagicFrame rootFrame;
 
     private static final String GAME_FOLDER  = "Magarena";
     private static final String MODS_PATH    = "mods";
@@ -106,18 +106,17 @@ public class MagicMain {
 
     private static void startUI() {
         rootFrame = new MagicFrame(SOFTWARE_TITLE);
-        final MagicFrame magicFrame = (MagicFrame)rootFrame;
-        magicFrame.showMainMenuScreen();
+        rootFrame.showMainMenuScreen();
         // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
         // where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");
         if (testGame != null) {
-            magicFrame.openGame(TestGameBuilder.buildGame(testGame));
+            rootFrame.openGame(TestGameBuilder.buildGame(testGame));
         }
         if (MagicUtility.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
-            magicFrame.newDuel(config);
+            rootFrame.newDuel(config);
         }
     }
 

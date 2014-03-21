@@ -115,7 +115,7 @@ public class ImageHandGraveyardExileViewer extends JPanel implements ChangeListe
     }
 
     private void useCardZoneScreen(final MagicCardList aCardList, final String zoneName) {
-        final MagicFrame frame = (MagicFrame)MagicMain.rootFrame;
+        final MagicFrame frame = MagicMain.rootFrame;
         frame.showCardZoneScreen(aCardList, zoneName, false);
     }
 
