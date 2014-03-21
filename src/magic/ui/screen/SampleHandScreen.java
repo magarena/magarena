@@ -23,6 +23,7 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen
@@ -33,6 +34,7 @@ public class SampleHandScreen
 
     private final CardsCanvas content;
     private final MagicDeck deck;
+    private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     public SampleHandScreen(final MagicDeck deck) {
         this.deck = deck;
@@ -122,7 +124,8 @@ public class SampleHandScreen
      */
     @Override
     public JPanel getStatusPanel() {
-        return null;
+        deckStatusPanel.setDeck(deck, false);
+        return deckStatusPanel;
     }
 
 }
