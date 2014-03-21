@@ -8,7 +8,7 @@ import javax.swing.JComponent;
 import magic.ui.widget.FontsAndBorders;
 
 /**
- * Utility class for implementing consistent UI effects.
+ * Utility class for implementing consistent UI style/effects.
  *
  */
 public final class MagicStyle {
