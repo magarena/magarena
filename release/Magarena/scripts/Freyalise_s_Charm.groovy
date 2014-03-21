@@ -10,7 +10,7 @@
                         new MagicPayManaCostChoice(MagicManaCost.create("{G}{G}"))
                     ),
                     this,
-                    "PN may\$ pay {1}\$. If PN does, PN draws a card."
+                    "PN may\$ pay {G}{G}\$. If PN does, PN draws a card."
                 ):
                 MagicEvent.NONE;
         }
