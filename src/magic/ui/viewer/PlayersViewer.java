@@ -3,12 +3,13 @@ package magic.ui.viewer;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.PlayerAvatarPanel;
+import magic.ui.widget.player.PlayerAvatarPanel;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;

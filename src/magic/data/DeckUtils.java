@@ -179,7 +179,7 @@ public class DeckUtils {
         if (content != "") {
             try {
                 deck = parseDeckFileContent(content);
-                deck.setName(new File(filename).getName());
+                deck.setFilename(new File(filename).getName());
             } catch (Exception e) {
                 System.err.println("Invalid deck file (" + filename + ") - " + e.toString());
                 JOptionPane.showMessageDialog(
@@ -197,36 +197,37 @@ public class DeckUtils {
         final String content = getDeckFileContent(filename);
         if (content == "") { return; }
 
-        final Scanner sc = new Scanner(content);
         final int[] colorCount = new int[MagicColor.NR_COLORS];
         final MagicDeck deck = player.getDeck();
         final MagicDeck unsupported = new MagicDeck();
 
-        deck.setName(new File(filename).getName());
+        deck.setFilename(new File(filename).getName());
         deck.clear(); // remove previous cards
 
-        while (sc.hasNextLine()) {
-            final String line = sc.nextLine().trim();
-            if (!line.isEmpty()&&!line.startsWith("#")) {
-                if (line.startsWith(">")) {
-                    deck.setDescription(line.substring(1));
-                } else {
-                    final int index = line.indexOf(' ');
-                    final int amount = Integer.parseInt(line.substring(0,index));
-                    final String name=line.substring(index+1).trim();
-                    final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
-                    for (int count=amount;count>0;count--) {
-                        final int colorFlags=cardDefinition.getColorFlags();
-                        for (final MagicColor color : MagicColor.values()) {
-                            if (color.hasColor(colorFlags)) {
-                                colorCount[color.ordinal()]++;
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String line = sc.nextLine().trim();
+                if (!line.isEmpty()&&!line.startsWith("#")) {
+                    if (line.startsWith(">")) {
+                        deck.setDescription(line.substring(1));
+                    } else {
+                        final int index = line.indexOf(' ');
+                        final int amount = Integer.parseInt(line.substring(0,index));
+                        final String name=line.substring(index+1).trim();
+                        final MagicCardDefinition cardDefinition = CardDefinitions.getCard(name);
+                        for (int count=amount;count>0;count--) {
+                            final int colorFlags=cardDefinition.getColorFlags();
+                            for (final MagicColor color : MagicColor.values()) {
+                                if (color.hasColor(colorFlags)) {
+                                    colorCount[color.ordinal()]++;
+                                }
                             }
-                        }
-                        if (cardDefinition.isValid()) {
-                            deck.add(cardDefinition);
-                        } else {
-                            unsupported.add(cardDefinition);
-                            break; // multiple copies of unsupported card -> ignore other copies
+                            if (cardDefinition.isValid()) {
+                                deck.add(cardDefinition);
+                            } else {
+                                unsupported.add(cardDefinition);
+                                break; // multiple copies of unsupported card -> ignore other copies
+                            }
                         }
                     }
                 }
@@ -314,7 +315,7 @@ public class DeckUtils {
         if (size==0) {
             // Creates a simple default deck.
             final MagicDeck deck = player.getDeck();
-            deck.setName("Default.dec");
+            deck.setFilename("Default.dec");
             final MagicCardDefinition creature=CardDefinitions.getCard("Elite Vanguard");
             final MagicCardDefinition land=CardDefinitions.getCard("Plains");
             for (int count=24;count>0;count--) {
@@ -328,4 +329,22 @@ public class DeckUtils {
             loadDeck(deckFiles.get(MagicRandom.nextRNGInt(size)).toString(),player);
         }
     }
+
+    /**
+     * Extracts the name of a deck from its filename.
+     */
+    public static String getDeckNameFromFilename(final String deckFilename) {
+        if (deckFilename.indexOf(DECK_EXTENSION) > 0) {
+            return deckFilename.substring(0, deckFilename.lastIndexOf(DECK_EXTENSION));
+        } else {
+            return deckFilename;
+        }
+    }
+    /**
+     * Gets the name of a deck file without the extension.
+     */
+    public static String getDeckNameFromFile(final Path deckFile) {
+        return getDeckNameFromFilename(deckFile.getFileName().toString());
+    }
+
 }

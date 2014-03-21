@@ -2,33 +2,38 @@ package magic.model;
 
 import java.util.ArrayList;
 
+import magic.data.DeckUtils;
+
 public class MagicDeck extends ArrayList<MagicCardDefinition> {
 
     private static final long serialVersionUID = 1L;
 
-    private String name="Unsaved Deck";
+    private String filename="Unsaved Deck";
     private String description;
 
     public MagicDeck() {}
 
     public MagicDeck(final MagicDeck deck) {
         super(deck);
-        name = deck.name;
+        filename = deck.filename;
     }
 
     public void setContent(final MagicDeck deck) {
         clear();
         addAll(deck);
-        name = deck.name;
+        filename = deck.filename;
         description = deck.description;
     }
 
-    public void setName(final String name) {
-        this.name=name;
+    public void setFilename(final String name) {
+        this.filename = name;
+    }
+    public String getFilename() {
+        return filename;
     }
 
     public String getName() {
-        return name;
+        return DeckUtils.getDeckNameFromFilename(filename);
     }
 
     public String getDescription() {

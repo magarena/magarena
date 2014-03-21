@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.widget.deck;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -17,15 +17,16 @@ import javax.swing.ListCellRenderer;
 import magic.data.DeckGenerators;
 import magic.data.IconImages;
 import magic.model.MagicColor;
+import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
-public class DecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {
+public class RandomDecksComboBox extends JComboBox<String> implements ListCellRenderer<String> {
 
     private static final String SEPARATOR = "----";
 
     private String lastSelected;
 
-    public DecksComboBox(final String colors) {
+    public RandomDecksComboBox(final String colors) {
 
         setRenderer(this);
 

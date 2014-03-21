@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.widget.player;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -16,6 +16,8 @@ import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
 import magic.ui.MagicFrame;
 import magic.ui.dialog.DeckChooserDialog;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 

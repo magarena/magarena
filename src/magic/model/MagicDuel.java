@@ -224,7 +224,7 @@ public class MagicDuel {
     }
 
     private void setDeckFromFile(final MagicPlayerDefinition player, final Path deckFolder) {
-        final String deckFilename = player.getDeckProfile().getDeckValue() + ".dec";
+        final String deckFilename = player.getDeckProfile().getDeckValue() + DeckUtils.DECK_EXTENSION;
         final Path deckPath = deckFolder.resolve(deckFilename);
         final MagicDeck deck = DeckUtils.loadDeckFromFile(deckPath.toString());
         player.setDeck(deck);
