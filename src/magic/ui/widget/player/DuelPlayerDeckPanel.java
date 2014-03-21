@@ -33,7 +33,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
         this.frame = frame;
         this.deckType = deckProfile.getDeckType();
         this.deckValue = deckProfile.getDeckValue();
-        setBorder(FontsAndBorders.BLACK_BORDER);
+        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
         setOpaque(false);
         addMouseListener(mouseAdapter);
