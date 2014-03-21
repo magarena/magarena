@@ -20,13 +20,20 @@
                 player,
                 MagicTargetFilter.TARGET_CREATURE
             );
-            MagicPermanent highest = MagicPermanent.NONE;
-            for (final MagicPermanent creature : targets) {
-                if (creature.getPower() > highest.getPower()) {
-                    highest = creature;
+            int highestPower = 0;
+            boolean controlHighest = false;
+            for (final MagicPermanent creature:targets) {
+                if (creature.getPower() > highestPower) {
+                    highestPower = creature.getPower();
                 }
             }
-            if (highest.isController(player)) {
+            for (final MagicPermanent highCreature:targets) {
+                if (highCreature.getPower() == highestPower && highCreature.isController(player)) {
+                    controlHighest=true;
+                    break;
+                }
+            }
+            if (controlHighest) {
                 game.addEvent(new MagicDiscardEvent(
                     event.getSource(),
                     event.getRefPlayer()
