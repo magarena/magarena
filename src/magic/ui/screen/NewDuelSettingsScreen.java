@@ -1,15 +1,11 @@
 package magic.ui.screen;
 
-import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 import net.miginfocom.swing.MigLayout;
@@ -26,9 +22,9 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.player.DuelPlayerDeckPanel;
 import magic.ui.widget.player.DuelPlayerPanel;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class NewDuelSettingsScreen
@@ -163,25 +159,13 @@ public class NewDuelSettingsScreen
                 }
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    setHightlight(panel, true);
+                    MagicStyle.setHightlight(panel, true);
                 }
                 @Override
                 public void mouseExited(MouseEvent e) {
-                    setHightlight(panel, false);
+                    MagicStyle.setHightlight(panel, false);
                 }
             };
-        }
-
-        private void setHightlight(final JComponent component, final boolean value) {
-            if (value == true) {
-                component.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                component.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 2));
-                component.setBackground(FontsAndBorders.MENUPANEL_COLOR);
-            } else {
-                component.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                component.setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-                component.setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
-            }
         }
 
         private void selectNewProfile(final PlayerProfile playerProfile) {

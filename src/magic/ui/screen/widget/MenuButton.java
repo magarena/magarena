@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.SwingConstants;
 
 import magic.ui.widget.FontsAndBorders;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class MenuButton extends JButton {
@@ -60,7 +61,7 @@ public class MenuButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                setForeground(Color.YELLOW);
+                setForeground(MagicStyle.HIGHLIGHT_COLOR);
             }
             @Override
             public void mouseExited(MouseEvent e) {
@@ -68,7 +69,7 @@ public class MenuButton extends JButton {
             }
             @Override
             public void mousePressed(MouseEvent e) {
-                setForeground(Color.YELLOW.darker());
+                setForeground(MagicStyle.HIGHLIGHT_COLOR.darker());
                 setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 
             }

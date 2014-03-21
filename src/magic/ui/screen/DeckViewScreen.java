@@ -9,7 +9,6 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
@@ -22,6 +21,7 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen
@@ -32,6 +32,7 @@ public class DeckViewScreen
 
     private CardsCanvas content;
     private final MagicDeck deck;
+    private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     public DeckViewScreen(final MagicDeck deck) {
         this.deck = deck;
@@ -69,7 +70,7 @@ public class DeckViewScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new ActionBarButton("Close", new AbstractAction() {
+        return new MenuButton("Close", new AbstractAction() {
           @Override
           public void actionPerformed(final ActionEvent e) {
               getFrame().closeActiveScreen(false);
@@ -126,7 +127,8 @@ public class DeckViewScreen
      */
     @Override
     public JPanel getStatusPanel() {
-        return null;
+        deckStatusPanel.setDeck(deck, true);
+        return deckStatusPanel;
     }
 
 }

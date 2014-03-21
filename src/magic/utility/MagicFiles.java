@@ -7,6 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
+/**
+ * Utility class for useful or common file-system related tasks.
+ *
+ */
 public final class MagicFiles {
     private MagicFiles() {}
 

@@ -1,7 +1,6 @@
 package magic.ui.widget.player;
 
 import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -18,41 +17,73 @@ import magic.ui.MagicFrame;
 import magic.ui.dialog.DeckChooserDialog;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 
+/**
+ * Displays the deck type and name.
+ *
+ */
 @SuppressWarnings("serial")
 public class DuelPlayerDeckPanel extends TexturedPanel {
 
-    private final MouseAdapter mouseAdapter = getMouseAdapter();
+    // ui
+    private final MigLayout migLayout = new MigLayout();
+    private final MagicFrame frame;
+    private final JLabel deckTypeLabel = new JLabel();
+    private final JLabel deckValueLabel = new JLabel();
+    // properties
     private DeckType deckType = DeckType.Random;
     private String deckValue = MagicDeckProfile.ANY_THREE;
-    private MagicFrame frame;
 
     public DuelPlayerDeckPanel(final MagicFrame frame, final MagicDeckProfile deckProfile) {
         this.frame = frame;
-        this.deckType = deckProfile.getDeckType();
-        this.deckValue = deckProfile.getDeckValue();
-        setBorder(FontsAndBorders.BLACK_BORDER);
-        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
-        setOpaque(false);
-        addMouseListener(mouseAdapter);
-        doMigLayout();
+        setDeckType(deckProfile.getDeckType());
+        setDeckValue(deckProfile.getDeckValue());
+        addMouseListener(getMouseAdapter());
+        setLookAndFeel();
+        refreshLayout();
     }
 
+    private void setLookAndFeel() {
+        setOpaque(false);
+        setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
+        setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+        setLayout(migLayout);
+        // deck type label
+        deckTypeLabel.setForeground(Color.WHITE);
+        deckTypeLabel.setFont(new Font("Dialog", Font.ITALIC, 14));
+        deckTypeLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        // deck value label
+        deckValueLabel.setForeground(Color.WHITE);
+        deckValueLabel.setFont(new Font("Dialog", Font.PLAIN, 16));
+        deckValueLabel.setHorizontalAlignment(SwingConstants.CENTER);
+    }
+
+    private void refreshLayout() {
+        removeAll();
+        migLayout.setLayoutConstraints("flowy, insets 6 0 0 0, gap 4");
+        add(deckValueLabel, "w 100%");
+        add(deckTypeLabel, "w 100%");
+    }
+
+
+    private void setDeckType(final DeckType value) {
+        deckType = value;
+        deckTypeLabel.setText(deckType + " deck");
+        deckValueLabel.setText(getFormattedDeckValue());
+    }
     public DeckType getDeckType() {
         return deckType;
     }
 
+    private void setDeckValue(final String value) {
+        deckValue = value;
+        deckValueLabel.setText(getFormattedDeckValue());
+    }
     public String getDeckValue() {
         return deckValue;
-    }
-
-    private void doMigLayout() {
-        removeAll();
-        setLayout(new MigLayout("flowy, insets 6 0 0 0, gap 4"));
-        add(getLabel(getFormattedDeckValue(), 16, Font.PLAIN), "w 100%");
-        add(getLabel(deckType + " deck", 14, Font.ITALIC), "w 100%");
     }
 
     private String getFormattedDeckValue() {
@@ -86,14 +117,6 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
         return colors.trim().substring(0, colors.trim().length() - 1);
     }
 
-    private JLabel getLabel(final String text, final int fontSize, final int fontStyle) {
-        final JLabel lbl = new JLabel(text);
-        lbl.setForeground(Color.WHITE);
-        lbl.setFont(new Font("Dialog", fontStyle, fontSize));
-        lbl.setHorizontalAlignment(SwingConstants.CENTER);
-        return lbl;
-    }
-
     private MouseAdapter getMouseAdapter() {
         return new MouseAdapter() {
             @Override
@@ -104,15 +127,11 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
             }
             @Override
             public void mouseEntered(MouseEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                setBorder(BorderFactory.createLineBorder(Color.YELLOW, 2));
-                setBackground(FontsAndBorders.MENUPANEL_COLOR);
+                MagicStyle.setHightlight(DuelPlayerDeckPanel.this, true);
             }
             @Override
             public void mouseExited(MouseEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-                setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+                MagicStyle.setHightlight(DuelPlayerDeckPanel.this, false);
             }
         };
     }
@@ -120,11 +139,9 @@ public class DuelPlayerDeckPanel extends TexturedPanel {
     public void setDeckProfile() {
         final DeckChooserDialog dialog = new DeckChooserDialog(frame);
         if (!dialog.isCancelled()) {
-            deckType = dialog.getDeckType();
-            deckValue = dialog.getDeckValue();
-            doMigLayout();
-            revalidate();
-            repaint();
+            setDeckType(dialog.getDeckType());
+            setDeckValue(dialog.getDeckValue());
+            refreshLayout();
         }
     }
 
