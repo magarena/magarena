@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/swarmyard.jpg
 value=4.473
 rarity=R
 type=Land
-ability=tap add mana {1}
+ability=tap add mana {1};\
+        cost {T}: Regenerate target Insect, Rat, Spider, or Squirrel.
 timing=land
-requires_groovy_code
