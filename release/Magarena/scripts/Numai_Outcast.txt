@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Samurai
 cost={3}{B}
 pt=1/1
-ability=bushido 2
+ability=bushido 2;\
+        cost {B}, Pay 5 life: Regenerate SN.
 timing=main
-requires_groovy_code
