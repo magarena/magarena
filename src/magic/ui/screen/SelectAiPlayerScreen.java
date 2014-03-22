@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,7 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JList;
 import javax.swing.JPanel;
 
 import magic.ai.MagicAIImpl;
@@ -23,30 +21,20 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.player.AiPlayerJList;
 
+/**
+ * @author SPR
+ *
+ */
 @SuppressWarnings("serial")
 public class SelectAiPlayerScreen
-    extends SelectPlayerAbstractScreen
+    extends SelectPlayerScreen
     implements IStatusBar, IActionBar {
 
-    private AiPlayerJList profilesJList;
-
     // CTR
-    public SelectAiPlayerScreen(final PlayerProfile playerProfile) {
-        refreshProfilesJList(playerProfile);
-    }
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
+        super(new AiPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.PlayerScreenUtil#getProfilesListPanel()
-     */
-    @Override
-    protected JPanel getProfilesListPanel() {
-      profilesJList = new AiPlayerJList();
-      profilesJList.addMouseListener(new DoubleClickAdapter());
-      return new ContainerPanel(profilesJList);
     }
 
     private AiPlayer[] getPlayerProfilesArray() {
@@ -92,12 +80,7 @@ public class SelectAiPlayerScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Cancel", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
-            }
-        });
+        return super.getLeftAction();
     }
 
     /* (non-Javadoc)
@@ -105,14 +88,7 @@ public class SelectAiPlayerScreen
      */
     @Override
     public MenuButton getRightAction() {
-        return new MenuButton("Select", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                doNextAction();
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
+        return super.getRightAction();
     }
 
     /* (non-Javadoc)
@@ -185,14 +161,9 @@ public class SelectAiPlayerScreen
         public void actionPerformed(ActionEvent e) {
             final AiPlayer profile = (AiPlayer)getSelectedPlayer();
             new AiPropertiesDialog(getFrame(), profile);
-            profilesJList.repaint();
+            getJList().repaint();
             notifyPlayerUpdated(profile);
         }
-    }
-
-    @Override
-    protected JList<? extends PlayerProfile> getProfilesJList() {
-        return profilesJList;
     }
 
     @Override
@@ -201,7 +172,7 @@ public class SelectAiPlayerScreen
     }
     @Override
     protected void refreshProfilesJList(PlayerProfile playerProfile) {
-        profilesJList.setListData(getPlayerProfilesArray());
+        ((AiPlayerJList)getJList()).setListData(getPlayerProfilesArray());
         setSelectedListItem(playerProfile);
     }
 

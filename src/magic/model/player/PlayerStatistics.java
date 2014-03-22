@@ -52,6 +52,30 @@ public class PlayerStatistics {
         loadStats();
     }
 
+    public Integer getDuelsPlayed() {
+        return duelsPlayed;
+    }
+
+    public Integer getDuelsWon() {
+        return duelsWon;
+    }
+
+    public Integer getDuelsLost() {
+        return duelsPlayed - duelsWon;
+    }
+
+    public Integer getGamesPlayed() {
+        return gamesPlayed;
+    }
+
+    public Integer getGamesWon() {
+        return gamesWon;
+    }
+
+    public Integer getGamesLost() {
+        return gamesPlayed - gamesWon;
+    }
+
     private void loadStats() {
         final File statsFile = new File(statsFilePath.toString());
         final Properties properties = statsFile.exists() ? FileIO.toProp(statsFile) : new Properties();

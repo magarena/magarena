@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,7 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -24,28 +22,14 @@ import magic.ui.widget.player.HumanPlayerJList;
 
 @SuppressWarnings("serial")
 public class SelectHumanPlayerScreen
-    extends SelectPlayerAbstractScreen
+    extends SelectPlayerScreen
     implements IStatusBar, IActionBar {
 
-    private HumanPlayerJList profilesJList;
-
     // CTR
-    public SelectHumanPlayerScreen(final PlayerProfile playerProfile) {
-        refreshProfilesJList(playerProfile);
-    }
     public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
+        super(new HumanPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.PlayerScreenUtil#getProfilesListPanel()
-     */
-    @Override
-    protected JPanel getProfilesListPanel() {
-        profilesJList = new HumanPlayerJList();
-        profilesJList.addMouseListener(new DoubleClickAdapter());
-        return new ContainerPanel(profilesJList);
     }
 
     private HumanPlayer[] getPlayerProfilesArray() {
@@ -81,12 +65,7 @@ public class SelectHumanPlayerScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Cancel", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
-            }
-        });
+        return super.getLeftAction();
     }
 
     /* (non-Javadoc)
@@ -94,14 +73,7 @@ public class SelectHumanPlayerScreen
      */
     @Override
     public MenuButton getRightAction() {
-        return new MenuButton("Select", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                doNextAction();
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
+        return super.getRightAction();
     }
 
     /* (non-Javadoc)
@@ -181,7 +153,7 @@ public class SelectHumanPlayerScreen
         @Override
         public void actionPerformed(ActionEvent e) {
             doEditPlayerProfile();
-            profilesJList.repaint();
+            getJList().repaint();
         }
 
         private void doEditPlayerProfile() {
@@ -202,17 +174,12 @@ public class SelectHumanPlayerScreen
     }
 
     @Override
-    protected JList<? extends PlayerProfile> getProfilesJList() {
-        return profilesJList;
-    }
-
-    @Override
     protected void refreshProfilesJList() {
         refreshProfilesJList(null);
     }
     @Override
     protected void refreshProfilesJList(PlayerProfile playerProfile) {
-        profilesJList.setListData(getPlayerProfilesArray());
+        ((HumanPlayerJList)getJList()).setListData(getPlayerProfilesArray());
         setSelectedListItem(playerProfile);
     }
 
