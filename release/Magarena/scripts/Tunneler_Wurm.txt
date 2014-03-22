@@ -7,6 +7,6 @@ type=Creature
 subtype=Wurm
 cost={6}{G}{G}
 pt=6/6
-ability=trample
+ability=trample;\
+        cost Discard a card: Regenerate SN.
 timing=main
-requires_groovy_code=Earsplitting Rats
