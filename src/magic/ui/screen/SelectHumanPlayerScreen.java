@@ -22,7 +22,7 @@ import magic.ui.widget.player.HumanPlayerJList;
 
 @SuppressWarnings("serial")
 public class SelectHumanPlayerScreen
-    extends SelectPlayerAbstractScreen
+    extends SelectPlayerScreen
     implements IStatusBar, IActionBar {
 
     // CTR

@@ -27,7 +27,7 @@ import magic.ui.widget.player.AiPlayerJList;
  */
 @SuppressWarnings("serial")
 public class SelectAiPlayerScreen
-    extends SelectPlayerAbstractScreen
+    extends SelectPlayerScreen
     implements IStatusBar, IActionBar {
 
     // CTR

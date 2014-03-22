@@ -38,7 +38,7 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class SelectPlayerAbstractScreen
+public abstract class SelectPlayerScreen
     extends AbstractScreen
     implements IAvatarImageConsumer {
 
@@ -54,7 +54,7 @@ public abstract class SelectPlayerAbstractScreen
     protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
 
     // CTR
-    protected SelectPlayerAbstractScreen(final JList<? extends PlayerProfile> playersJList) {
+    protected SelectPlayerScreen(final JList<? extends PlayerProfile> playersJList) {
         this.playersJList = playersJList;
         this.playersJList.addMouseListener(new DoubleClickAdapter());
         setContent(new ScreenContent());
@@ -136,7 +136,7 @@ public abstract class SelectPlayerAbstractScreen
     private class SelectAvatarAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
-            getFrame().showAvatarImagesScreen(SelectPlayerAbstractScreen.this);
+            getFrame().showAvatarImagesScreen(SelectPlayerScreen.this);
         }
     }
 
