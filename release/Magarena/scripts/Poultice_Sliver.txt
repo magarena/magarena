@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{W}
 pt=2/2
+ability=lord all Slivers have "cost {2}, {T}: Regenerate target Sliver."
 static=all
 timing=main
-requires_groovy_code
