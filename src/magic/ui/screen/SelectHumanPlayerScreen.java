@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
