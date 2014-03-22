@@ -110,6 +110,7 @@ public class MagicTargetFilterFactory {
         single.put("nonartifact, nonblack creature", TARGET_NONARTIFACT_NONBLACK_CREATURE);
         single.put("tapped creature", TARGET_TAPPED_CREATURE);
         single.put("untapped creature", TARGET_UNTAPPED_CREATURE);
+        single.put("untapped creature you control", TARGET_UNTAPPED_CREATURE_YOU_CONTROL);
         single.put("artifact or land", TARGET_ARTIFACT_OR_LAND);
         single.put("artifact or enchantment", TARGET_ARTIFACT_OR_ENCHANTMENT);
         single.put("artifact, enchantment, or land", TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND);

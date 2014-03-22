@@ -245,6 +245,15 @@ public enum MagicCostEvent {
             return false;
         }
     },
+    TapOther() {
+        final MagicTargetChoice choice = new MagicTargetChoice("an untapped creature you control");
+        public boolean accept(final String cost) {
+            return cost.equals("Tap an untapped creature you control");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicTapPermanentEvent(source, choice);
+        }
+    },
     PayLife() {
         public boolean accept(final String cost) {
             return cost.contains("Pay ") && cost.contains(" life");

@@ -864,6 +864,14 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    !target.isTapped();
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_UNTAPPED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.isTapped() &&
+                   target.isController(player);
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_NONWHITE_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
