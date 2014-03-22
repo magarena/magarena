@@ -133,7 +133,6 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         leftScrollPane.setBackground(java.awt.Color.green);
         leftPanel.setOpaque(false);
         leftPanel.setBorder(FontsAndBorders.NO_BORDER);
-        leftPanel.setBackground(java.awt.Color.yellow);
         leftScrollPane.setOpaque(false);
         leftScrollPane.getViewport().setOpaque(false);
         leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);

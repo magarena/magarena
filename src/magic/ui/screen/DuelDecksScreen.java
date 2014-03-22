@@ -150,6 +150,26 @@ public class DuelDecksScreen
                                 }
                             })
                     );
+        } else {
+            if (screenContent.getDuel().isFinished()) {
+                final MagicDuel duel = screenContent.getDuel();
+                buttons.add(new MenuButton(duel.getWinningPlayerProfile().getPlayerName() + " wins the duel", null));
+            } else {
+                buttons.add(
+                        new ActionBarButton(
+                                IconImages.REFRESH_ICON,
+                                "Restart Duel", "Same players, same decks, same duel settings. Same result...?",
+                                new AbstractAction() {
+                                    @Override
+                                    public void actionPerformed(final ActionEvent e) {
+                                        getFrame().restartDuel();
+                                    }
+                                })
+                        );
+            }
+        }
+
+        if (!screenContent.getDuel().isFinished()) {
             buttons.add(
                     new ActionBarButton(
                             IconImages.TILED_ICON,
@@ -161,18 +181,6 @@ public class DuelDecksScreen
                                 }
                             })
                     );
-        } else {
-            if (screenContent.getDuel().isFinished()) {
-                final MagicDuel duel = screenContent.getDuel();
-                buttons.add(new MenuButton(duel.getWinningPlayerProfile().getPlayerName() + " wins the duel", null));
-            } else {
-                buttons.add(new MenuButton("Restart duel", new AbstractAction() {
-                    @Override
-                    public void actionPerformed(final ActionEvent e) {
-                        getFrame().restartDuel();
-                    }
-                }));
-            }
         }
 
         return buttons;

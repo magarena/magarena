@@ -1,12 +1,10 @@
 package magic.ui.screen.widget;
 
 import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -20,6 +18,7 @@ import magic.ui.MagicFrame;
 import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class DuelSettingsPanel extends TexturedPanel {
@@ -94,15 +93,11 @@ public class DuelSettingsPanel extends TexturedPanel {
             }
             @Override
             public void mouseEntered(MouseEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                setBorder(BorderFactory.createLineBorder(Color.YELLOW, 2));
-                setBackground(FontsAndBorders.MENUPANEL_COLOR);
+                MagicStyle.setHightlight(DuelSettingsPanel.this, true);
             }
             @Override
             public void mouseExited(MouseEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
-                setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
+                MagicStyle.setHightlight(DuelSettingsPanel.this, false);
             }
         };
     }

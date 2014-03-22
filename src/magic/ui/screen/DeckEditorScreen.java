@@ -27,6 +27,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.viewer.DeckDescriptionPreview;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen
@@ -35,6 +36,7 @@ public class DeckEditorScreen
 
     private final ExplorerPanel screenContent;
     private final boolean isStandalone;
+    private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorScreen(final MagicDeck deck) {
@@ -54,6 +56,7 @@ public class DeckEditorScreen
             final MagicDeck recentDeck = DeckUtils.loadDeckFromFile(deckFilename);
             if (recentDeck != null) {
                 this.screenContent.setDeck(recentDeck);
+                deckStatusPanel.setDeck(recentDeck, false);
             }
         }
     }
@@ -197,6 +200,7 @@ public class DeckEditorScreen
             final String filename=fileChooser.getSelectedFile().getAbsolutePath();
             screenContent.setDeck(DeckUtils.loadDeckFromFile(filename));
             setMostRecentDeck(filename);
+            deckStatusPanel.setDeck(screenContent.getDeck(), false);
         }
     }
 
@@ -348,7 +352,7 @@ public class DeckEditorScreen
      */
     @Override
     public JPanel getStatusPanel() {
-        return null;
+        return deckStatusPanel;
     }
 
 }
