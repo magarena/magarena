@@ -7,7 +7,7 @@
                 cardOnStack,
                 this,
                 "PN returns each creature card with converted mana cost " + amount + 
-                "from his or her graveyard to the battlefield."
+                " from his or her graveyard to the battlefield."
             );
         }
 
