@@ -7,5 +7,6 @@ type=Creature
 subtype=Wall
 cost={W}
 pt=0/3
+ability=defender
 timing=main
 requires_groovy_code
