@@ -39,15 +39,10 @@ public class VegasWorker implements Runnable {
 
             if (!event.hasChoice()) {
                 game.executeNextEvent();
-                continue;
+            } else {
+                final Object[] choice = event.getSimulationChoiceResult(game);
+                game.executeNextEvent(choice);
             }
-
-            final List<Object[]> choiceResultsList=event.getArtificialChoiceResults(game);
-            final int nrOfChoices=choiceResultsList.size();
-
-            assert nrOfChoices != 0 : "ERROR: no choices available for VegasWorker";
-
-            game.executeNextEvent(choiceResultsList.get(random.nextInt(nrOfChoices)));
         }
     }
 
