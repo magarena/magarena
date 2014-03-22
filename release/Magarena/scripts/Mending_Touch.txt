@@ -5,5 +5,5 @@ value=2.895
 rarity=C
 type=Instant
 cost={G}
+effect=Regenerate target creature.
 timing=pump
-requires_groovy_code=Death Ward

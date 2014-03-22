@@ -5,5 +5,5 @@ value=2.150
 rarity=C
 type=Artifact
 cost={0}
-ability=cost {3}, Sacrifice Herbal Poultice: Regenerate target creature.
+ability=cost {3}, Sacrifice SN: Regenerate target creature.
 timing=artifact

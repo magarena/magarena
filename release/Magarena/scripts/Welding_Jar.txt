@@ -5,5 +5,5 @@ value=4.144
 rarity=C
 type=Artifact
 cost={0}
+ability=cost Sacrifice SN: Regenerate target artifact.
 timing=artifact
-requires_groovy_code=Pteron Ghost

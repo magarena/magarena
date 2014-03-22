@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Druid
 cost={G}
 pt=1/1
+ability=cost {G}, {T}, Sacrifice a Forest: Regenerate target creature.
 timing=main
-requires_groovy_code=Tel-Jilad Lifebreather
