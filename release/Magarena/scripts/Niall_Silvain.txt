@@ -7,5 +7,5 @@ type=Creature
 subtype=Ouphe
 cost={G}{G}{G}
 pt=2/2
+ability=cost {G}{G}{G}{G}, {T}: Regenerate target creature.
 timing=main
-requires_groovy_code
