@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={2}{B}
 pt=1/1
-ability=flying
+ability=flying;\
+        cost Pay 1 life: Regenerate SN.
 timing=main
-requires_groovy_code
