@@ -7,6 +7,6 @@ type=Creature
 subtype=Fungus
 cost={3}{G}{G}{G}
 pt=6/3
-ability=your upkeep effect Put a spore counter on SN.
+ability=your upkeep effect Put a spore counter on SN.;\
+        cost Remove three spore counters from SN: Regenerate SN.
 timing=main
-requires_groovy_code
