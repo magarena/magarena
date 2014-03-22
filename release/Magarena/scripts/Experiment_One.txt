@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Ooze
 cost={G}
 pt=1/1
-ability=evolve
+ability=evolve;\
+        cost Remove two +1/+1 counters from SN: Regenerate SN.
 timing=main
-requires_groovy_code
