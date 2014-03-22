@@ -46,7 +46,6 @@ public abstract class SelectPlayerAbstractScreen
 
     protected HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
 
-    protected abstract JPanel getProfilesListPanel();
     protected abstract void createDefaultPlayerProfiles() throws IOException;
     protected abstract int getPreferredWidth();
     protected abstract JList<? extends PlayerProfile> getProfilesJList();
@@ -218,6 +217,13 @@ public abstract class SelectPlayerAbstractScreen
         }
 
     }
+
+    private JPanel getProfilesListPanel() {
+        JList<? extends PlayerProfile> playersList = getProfilesJList();
+        playersList.addMouseListener(new DoubleClickAdapter());
+        return new ContainerPanel(playersList);
+    }
+
     protected void doNextAction() {
         notifyPlayerSelected(getSelectedPlayer());
         getFrame().closeActiveScreen(false);

@@ -34,16 +34,6 @@ public class SelectHumanPlayerScreen
         refreshProfilesJList(playerProfile);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.PlayerScreenUtil#getProfilesListPanel()
-     */
-    @Override
-    protected JPanel getProfilesListPanel() {
-        profilesJList = new HumanPlayerJList();
-        profilesJList.addMouseListener(new DoubleClickAdapter());
-        return new ContainerPanel(profilesJList);
-    }
-
     private HumanPlayer[] getPlayerProfilesArray() {
         final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
         return sortedPlayersList.toArray(new HumanPlayer[sortedPlayersList.size()]);
@@ -187,6 +177,9 @@ public class SelectHumanPlayerScreen
 
     @Override
     protected JList<? extends PlayerProfile> getProfilesJList() {
+        if (profilesJList == null) {
+            profilesJList = new HumanPlayerJList();
+        }
         return profilesJList;
     }
 

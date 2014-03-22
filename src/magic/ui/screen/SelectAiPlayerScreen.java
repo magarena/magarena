@@ -22,6 +22,10 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.player.AiPlayerJList;
 
+/**
+ * @author SPR
+ *
+ */
 @SuppressWarnings("serial")
 public class SelectAiPlayerScreen
     extends SelectPlayerAbstractScreen
@@ -33,16 +37,6 @@ public class SelectAiPlayerScreen
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
         addListener(listener);
         refreshProfilesJList(playerProfile);
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.PlayerScreenUtil#getProfilesListPanel()
-     */
-    @Override
-    protected JPanel getProfilesListPanel() {
-      profilesJList = new AiPlayerJList();
-      profilesJList.addMouseListener(new DoubleClickAdapter());
-      return new ContainerPanel(profilesJList);
     }
 
     private AiPlayer[] getPlayerProfilesArray() {
@@ -176,6 +170,9 @@ public class SelectAiPlayerScreen
 
     @Override
     protected JList<? extends PlayerProfile> getProfilesJList() {
+        if (profilesJList == null) {
+            profilesJList = new AiPlayerJList();
+        }
         return profilesJList;
     }
 
