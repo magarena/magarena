@@ -29,9 +29,6 @@ public class SelectHumanPlayerScreen
     private HumanPlayerJList profilesJList;
 
     // CTR
-    public SelectHumanPlayerScreen(final PlayerProfile playerProfile) {
-        refreshProfilesJList(playerProfile);
-    }
     public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
         addListener(listener);
         refreshProfilesJList(playerProfile);

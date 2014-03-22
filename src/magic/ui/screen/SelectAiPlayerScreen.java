@@ -30,9 +30,6 @@ public class SelectAiPlayerScreen
     private AiPlayerJList profilesJList;
 
     // CTR
-    public SelectAiPlayerScreen(final PlayerProfile playerProfile) {
-        refreshProfilesJList(playerProfile);
-    }
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
         addListener(listener);
         refreshProfilesJList(playerProfile);
