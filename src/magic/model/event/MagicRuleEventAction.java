@@ -43,6 +43,7 @@ import magic.model.action.MagicReanimateAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicScryAction;
 import magic.model.action.MagicAddStaticAction;
+import magic.model.action.MagicRegenerateAction;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -1164,6 +1165,27 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.addEvent(new MagicScryEvent(event.getSource(),event.getPlayer()));
                 }
+            };
+        }
+    },
+    RegenerateSelf(
+        "regenerate sn\\.", 
+        MagicTiming.Pump, 
+        "Regen"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicRegenerateAction(event.getPermanent()));
+                }
+            };
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return new MagicCondition[] {
+                MagicCondition.CAN_REGENERATE_CONDITION,
             };
         }
     },
