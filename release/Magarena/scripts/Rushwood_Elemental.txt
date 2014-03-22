@@ -1,0 +1,12 @@
+name=Rushwood Elemental
+url=http://www.magiccards.info/query?q=%21rushwood%20elemental
+image=http://mtgimage.com/card/rushwood%20elemental.jpg
+value=4.224
+rarity=R
+type=Creature
+subtype=Elemental
+cost={G}{G}{G}{G}{G}
+pt=4/4
+ability=trample;\
+        your upkeep effect PN may Put a +1/+1 counter on SN.
+timing=main

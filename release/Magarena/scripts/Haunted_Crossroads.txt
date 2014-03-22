@@ -1,0 +1,9 @@
+name=Haunted Crossroads
+url=http://www.magiccards.info/query?q=%21haunted%20crossroads
+image=http://mtgimage.com/card/haunted%20crossroads.jpg
+value=4.236
+rarity=U
+type=Enchantment
+cost={2}{B}
+timing=enchantment
+requires_groovy_code

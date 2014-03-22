@@ -1,0 +1,11 @@
+name=Revered Elder
+url=http://www.magiccards.info/query?q=%21revered%20elder
+image=http://mtgimage.com/card/revered%20elder.jpg
+value=2.121
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=1/2
+ability=cost {1}:Prevent the next 1 damage that would be dealt to SN this turn.
+timing=main

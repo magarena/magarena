@@ -1,0 +1,12 @@
+name=Fountain Watch
+url=http://www.magiccards.info/query?q=%21fountain%20watch
+image=http://mtgimage.com/card/fountain%20watch.jpg
+value=3.892
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}{W}
+pt=2/4
+ability=lord artifacts you control have shroud;\
+        lord enchantments you control have shroud
+timing=main
