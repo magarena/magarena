@@ -5,5 +5,5 @@ value=3.188
 rarity=C
 type=Instant
 cost={W}
+effect=Regenerate target creature.
 timing=pump
-requires_groovy_code
