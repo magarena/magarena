@@ -271,4 +271,13 @@ public abstract class SelectPlayerAbstractScreen
         });
     }
 
+    protected MenuButton getLeftAction() {
+        return new MenuButton("Cancel", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                getFrame().closeActiveScreen(false);
+            }
+        });
+    }
+
 }
