@@ -48,7 +48,8 @@ public class MagicCardChoice extends MagicChoice {
             return;
         }
 
-        if (index == hand.size()) {
+        final int left = hand.size() - index;
+        if (count + left < aAmount) {
             return;
         }
 
