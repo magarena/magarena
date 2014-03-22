@@ -32,6 +32,7 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -257,6 +258,17 @@ public abstract class SelectPlayerAbstractScreen
         for (final IPlayerProfileListener listener : listeners) {
             listener.PlayerProfileSelected(player);
         }
+    }
+
+    protected MenuButton getRightAction() {
+        return new MenuButton("Select", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                doNextAction();
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            }
+        });
     }
 
 }

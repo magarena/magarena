@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -105,14 +104,7 @@ public class SelectAiPlayerScreen
      */
     @Override
     public MenuButton getRightAction() {
-        return new MenuButton("Select", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                doNextAction();
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
+        return super.getRightAction();
     }
 
     /* (non-Javadoc)
