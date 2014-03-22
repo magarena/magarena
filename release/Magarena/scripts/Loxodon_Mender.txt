@@ -7,5 +7,5 @@ type=Creature
 subtype=Elephant,Cleric
 cost={5}{W}
 pt=3/3
+ability=cost {W}, {T}: Regenerate target artifact.
 timing=main
-requires_groovy_code
