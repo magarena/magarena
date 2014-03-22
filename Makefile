@@ -679,6 +679,9 @@ properties.diff:
 	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z0-9]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' cards/scriptable.txt) -d -u > $@
 
+common_costs:
+	 grep "[^\"]*:" grammar/rules.txt -o | sed 's/>//;s/, /\n/g;s/://' | sort | uniq -c | sort -n | grep -v "{" > $@
+
 github-releases.json:
 	curl https://api.github.com/repos/magarena/magarena/releases > $@
 
