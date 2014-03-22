@@ -7,6 +7,6 @@ type=Creature
 subtype=Bird,Skeleton
 cost={4}{B}
 pt=3/2
-ability=flying
+ability=flying;\
+        cost Sacrifice a creature: Regenerate SN.
 timing=main
-requires_groovy_code=Corrupted Harvester

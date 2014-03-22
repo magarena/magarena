@@ -45,7 +45,7 @@ public enum MagicCostEvent {
     },
     SacrificeAura() {
         public boolean accept(final String cost) {
-            return cost.equals("Sacrifice an aura");
+            return cost.equals("Sacrifice an Aura");
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_AURA);

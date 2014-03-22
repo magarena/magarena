@@ -7,5 +7,6 @@ type=Creature
 subtype=Rat
 cost={3}{B}
 pt=2/1
+ability=cost Discard a card: Regenerate SN.
 timing=main
-requires_groovy_code=Marsh Crocodile;Earsplitting Rats
+requires_groovy_code=Marsh Crocodile
