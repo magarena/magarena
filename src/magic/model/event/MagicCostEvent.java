@@ -6,6 +6,8 @@ import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.regex.Matcher;
@@ -55,6 +57,23 @@ public enum MagicCostEvent {
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE);
+        }
+    },
+    SacrificeAnotherCreature() {
+        public boolean accept(final String cost) {
+            return cost.equals("Sacrifice another creature");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicSacrificePermanentEvent(
+                source,
+                new MagicTargetChoice(
+                    new MagicOtherPermanentTargetFilter(
+                        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                        (MagicPermanent)source
+                    ),
+                    "another creature to sacrifice"
+                )
+            );
         }
     },
     SacrificeGoblin() {
