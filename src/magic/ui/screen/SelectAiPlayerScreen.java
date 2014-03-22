@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.AbstractAction;
-import javax.swing.JList;
 import javax.swing.JPanel;
 
 import magic.ai.MagicAIImpl;
@@ -31,10 +30,9 @@ public class SelectAiPlayerScreen
     extends SelectPlayerAbstractScreen
     implements IStatusBar, IActionBar {
 
-    private AiPlayerJList profilesJList;
-
     // CTR
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
+        super(new AiPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
     }
@@ -163,17 +161,9 @@ public class SelectAiPlayerScreen
         public void actionPerformed(ActionEvent e) {
             final AiPlayer profile = (AiPlayer)getSelectedPlayer();
             new AiPropertiesDialog(getFrame(), profile);
-            profilesJList.repaint();
+            getJList().repaint();
             notifyPlayerUpdated(profile);
         }
-    }
-
-    @Override
-    protected JList<? extends PlayerProfile> getProfilesJList() {
-        if (profilesJList == null) {
-            profilesJList = new AiPlayerJList();
-        }
-        return profilesJList;
     }
 
     @Override
@@ -182,7 +172,7 @@ public class SelectAiPlayerScreen
     }
     @Override
     protected void refreshProfilesJList(PlayerProfile playerProfile) {
-        profilesJList.setListData(getPlayerProfilesArray());
+        ((AiPlayerJList)getJList()).setListData(getPlayerProfilesArray());
         setSelectedListItem(playerProfile);
     }
 

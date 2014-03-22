@@ -26,10 +26,9 @@ public class SelectHumanPlayerScreen
     extends SelectPlayerAbstractScreen
     implements IStatusBar, IActionBar {
 
-    private HumanPlayerJList profilesJList;
-
     // CTR
     public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
+        super(new HumanPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
     }
@@ -155,7 +154,7 @@ public class SelectHumanPlayerScreen
         @Override
         public void actionPerformed(ActionEvent e) {
             doEditPlayerProfile();
-            profilesJList.repaint();
+            getJList().repaint();
         }
 
         private void doEditPlayerProfile() {
@@ -176,20 +175,12 @@ public class SelectHumanPlayerScreen
     }
 
     @Override
-    protected JList<? extends PlayerProfile> getProfilesJList() {
-        if (profilesJList == null) {
-            profilesJList = new HumanPlayerJList();
-        }
-        return profilesJList;
-    }
-
-    @Override
     protected void refreshProfilesJList() {
         refreshProfilesJList(null);
     }
     @Override
     protected void refreshProfilesJList(PlayerProfile playerProfile) {
-        profilesJList.setListData(getPlayerProfilesArray());
+        ((HumanPlayerJList)getJList()).setListData(getPlayerProfilesArray());
         setSelectedListItem(playerProfile);
     }
 

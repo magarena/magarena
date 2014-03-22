@@ -43,18 +43,19 @@ public abstract class SelectPlayerAbstractScreen
     implements IAvatarImageConsumer {
 
     private List<IPlayerProfileListener> listeners = new ArrayList<>();
+    private final JList<? extends PlayerProfile> playersJList;
 
     protected HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
 
     protected abstract void createDefaultPlayerProfiles() throws IOException;
     protected abstract int getPreferredWidth();
-    protected abstract JList<? extends PlayerProfile> getProfilesJList();
     protected abstract void refreshProfilesJList();
     protected abstract void refreshProfilesJList(final PlayerProfile playerProfile);
     protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
 
     // CTR
-    protected SelectPlayerAbstractScreen() {
+    protected SelectPlayerAbstractScreen(final JList<? extends PlayerProfile> playersJList) {
+        this.playersJList = playersJList;
         setContent(new ScreenContent());
         setEnterKeyInputMap();
     }
@@ -82,11 +83,11 @@ public abstract class SelectPlayerAbstractScreen
 
     protected void setSelectedListItem(final PlayerProfile playerProfile) {
         if (playerProfile == null) {
-            getProfilesJList().setSelectedIndex(0);
+            playersJList.setSelectedIndex(0);
         } else {
-            getProfilesJList().setSelectedValue(profilesMap.get(playerProfile.getId()), true);
+            playersJList.setSelectedValue(profilesMap.get(playerProfile.getId()), true);
         }
-        setFocusInProfilesJList(getProfilesJList());
+        setFocusInProfilesJList(playersJList);
     }
 
     protected List<PlayerProfile> getSortedPlayersList() {
@@ -121,7 +122,7 @@ public abstract class SelectPlayerAbstractScreen
     }
 
     protected PlayerProfile getSelectedPlayer() {
-        return getProfilesJList().getSelectedValue();
+        return playersJList.getSelectedValue();
     }
 
     protected class SelectAvatarActionButton extends ActionBarButton {
@@ -219,7 +220,7 @@ public abstract class SelectPlayerAbstractScreen
     }
 
     private JPanel getProfilesListPanel() {
-        JList<? extends PlayerProfile> playersList = getProfilesJList();
+        JList<? extends PlayerProfile> playersList = playersJList;
         playersList.addMouseListener(new DoubleClickAdapter());
         return new ContainerPanel(playersList);
     }
@@ -284,6 +285,10 @@ public abstract class SelectPlayerAbstractScreen
                 getFrame().closeActiveScreen(false);
             }
         });
+    }
+
+    protected JList<? extends PlayerProfile> getJList() {
+        return playersJList;
     }
 
 }
