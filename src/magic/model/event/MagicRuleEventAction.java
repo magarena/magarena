@@ -67,6 +67,7 @@ import magic.model.target.MagicIndestructibleTargetPicker;
 import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.target.MagicFlyingTargetPicker;
 import magic.model.target.MagicGraveyardTargetPicker;
+import magic.model.target.MagicRegenerateTargetPicker;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
@@ -1186,6 +1187,27 @@ public enum MagicRuleEventAction {
         public MagicCondition[] getConditions(final Matcher matcher) {
             return new MagicCondition[] {
                 MagicCondition.CAN_REGENERATE_CONDITION,
+            };
+        }
+    },
+    RegenerateChosen(
+        "regenerate (?<choice>[^\\.]*)\\.", 
+        MagicTargetHint.Positive,
+        MagicRegenerateTargetPicker.create(),
+        MagicTiming.Pump, 
+        "Regen"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicRegenerateAction(event.getPermanent()));
+                        }
+                    });
+                }
             };
         }
     },
