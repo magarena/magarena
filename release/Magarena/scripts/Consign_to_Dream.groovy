@@ -19,12 +19,12 @@
                 if (permanent.hasColor(MagicColor.Red) || permanent.hasColor(MagicColor.Green)) {
                     game.doAction(new MagicRemoveFromPlayAction(
                         permanent,
-                        MagicLocationType.OwnersHand
+                        MagicLocationType.TopOfOwnersLibrary
                     ));
                 } else {
                     game.doAction(new MagicRemoveFromPlayAction(
                         permanent,
-                        MagicLocationType.TopOfOwnersLibrary
+                        MagicLocationType.OwnersHand
                     ));
                 }
             });
