@@ -10,7 +10,6 @@
             }
         }
     },
-    
     new MagicPermanentActivation(
         [
             MagicCondition.HELLBENT,
