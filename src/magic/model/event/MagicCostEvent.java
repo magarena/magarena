@@ -116,6 +116,14 @@ public enum MagicCostEvent {
             return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_FOREST);
         }
     },
+    SacrificeMountain() {
+        public boolean accept(final String cost) {
+            return cost.equals("Sacrifice a Mountain");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_MOUNTAIN);
+        }
+    },
     SacrificeSwamp() {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice a Swamp");
