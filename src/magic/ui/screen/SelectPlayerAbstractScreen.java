@@ -56,6 +56,7 @@ public abstract class SelectPlayerAbstractScreen
     // CTR
     protected SelectPlayerAbstractScreen(final JList<? extends PlayerProfile> playersJList) {
         this.playersJList = playersJList;
+        this.playersJList.addMouseListener(new DoubleClickAdapter());
         setContent(new ScreenContent());
         setEnterKeyInputMap();
     }
@@ -194,7 +195,7 @@ public abstract class SelectPlayerAbstractScreen
         public ScreenContent() {
             setOpaque(false);
             setLayout(new MigLayout("insets 2, center, center"));
-            add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
+            add(new ContainerPanel(playersJList), "w " + getPreferredWidth() + "!, h 80%");
         }
     }
 
@@ -217,12 +218,6 @@ public abstract class SelectPlayerAbstractScreen
             }
         }
 
-    }
-
-    private JPanel getProfilesListPanel() {
-        JList<? extends PlayerProfile> playersList = playersJList;
-        playersList.addMouseListener(new DoubleClickAdapter());
-        return new ContainerPanel(playersList);
     }
 
     protected void doNextAction() {
