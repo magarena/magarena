@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Cleric
 cost={G}{W}{U}
 pt=2/2
+ability=cost {G}{W}{U}, {T}: Regenerate target creature.
 timing=main
-requires_groovy_code
