@@ -5,5 +5,5 @@ value=3.217
 rarity=C
 type=Enchantment
 cost={2}{W}
+ability=cost Sacrifice a creature: Regenerate target creature.
 timing=enchantment
-requires_groovy_code
