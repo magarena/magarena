@@ -1,0 +1,9 @@
+name=Opposition
+url=http://www.magiccards.info/query?q=%21opposition
+image=http://mtgimage.com/card/opposition.jpg
+value=4.452
+rarity=R
+type=Enchantment
+cost={2}{U}{U}
+ability=cost Tap an untapped creature you control:Tap target artifact, creature, or land.
+timing=enchantment

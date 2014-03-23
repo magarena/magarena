@@ -1,0 +1,9 @@
+name=Revelsong Horn
+url=http://www.magiccards.info/query?q=%21revelsong%20horn
+image=http://mtgimage.com/card/revelsong%20horn.jpg
+value=1.536
+rarity=U
+type=Artifact
+cost={2}
+ability=cost {1},{T},Tap an untapped creature you control:Target creature gets +1/+1 until end of turn.
+timing=artifact

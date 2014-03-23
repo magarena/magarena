@@ -1,0 +1,9 @@
+name=Volrath's Gardens
+url=http://www.magiccards.info/query?q=%21volrath%27s%20gardens
+image=http://mtgimage.com/card/volrath's%20gardens.jpg
+value=2.289
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability=cost {Sorcery},{2},Tap an untapped creature you control:PN gains 2 life.
+timing=enchantment

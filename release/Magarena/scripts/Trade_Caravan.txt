@@ -1,0 +1,12 @@
+name=Trade Caravan
+url=http://www.magiccards.info/query?q=%21trade%20caravan
+image=http://mtgimage.com/card/trade%20caravan.jpg
+value=2.524
+rarity=C
+type=Creature
+subtype=Human,Nomad
+cost={W}
+pt=1/1
+ability=your upkeep effect Put a currency counter on SN.;\
+        cost {YourUpkeep},Remove two currency counters from SN:Untap target basic land.
+timing=main

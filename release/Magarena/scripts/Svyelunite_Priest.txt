@@ -1,0 +1,11 @@
+name=Svyelunite Priest
+url=http://www.magiccards.info/query?q=%21svyelunite%20priest
+image=http://mtgimage.com/card/svyelunite%20priest.jpg
+value=1.712
+rarity=U
+type=Creature
+subtype=Merfolk,Cleric
+cost={1}{U}
+pt=1/1
+ability=cost {YourUpkeep},{U}{U},{T}:Target creature gains shroud until end of turn.
+timing=main

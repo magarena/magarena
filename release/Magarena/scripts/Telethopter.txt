@@ -1,0 +1,11 @@
+name=Telethopter
+url=http://www.magiccards.info/query?q=%21telethopter
+image=http://mtgimage.com/card/telethopter.jpg
+value=1.569
+rarity=U
+type=Artifact,Creature
+subtype=Thopter
+cost={4}
+pt=3/1
+ability=cost Tap an untapped creature you control:SN gains flying until end of turn.
+timing=artifact

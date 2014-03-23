@@ -1,0 +1,11 @@
+name=Hanna, Ship's Navigator
+url=http://www.magiccards.info/query?q=%21hanna%2C%20ship%27s%20navigator
+image=http://mtgimage.com/card/hanna,%20ship's%20navigator.jpg
+value=4.016
+rarity=R
+type=Legendary,Creature
+subtype=Human,Artificer
+cost={1}{W}{U}
+pt=1/2
+ability=cost {1}{W}{B},{T}:Return target artifact or enchantment card from your graveyard to your hand.
+timing=main

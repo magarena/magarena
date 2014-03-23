@@ -1,0 +1,9 @@
+name=Kyren Negotiations
+url=http://www.magiccards.info/query?q=%21kyren%20negotiations
+image=http://mtgimage.com/card/kyren%20negotiations.jpg
+value=3.938
+rarity=U
+type=Enchantment
+cost={2}{R}{R}
+ability=cost Tap an untapped creature you control:SN deals 1 damage to target player.
+timing=enchantment

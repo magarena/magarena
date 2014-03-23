@@ -1,0 +1,12 @@
+name=Mothdust Changeling
+url=http://www.magiccards.info/query?q=%21mothdust%20changeling
+image=http://mtgimage.com/card/mothdust%20changeling.jpg
+value=2.567
+rarity=C
+type=Creature
+subtype=Shapeshifter
+cost={U}
+pt=1/1
+ability=changeling;\
+        cost Tap an untapped creature you control:SN gains flying until end of turn.
+timing=main
