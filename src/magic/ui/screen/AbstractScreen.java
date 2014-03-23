@@ -136,7 +136,7 @@ public abstract class AbstractScreen extends JPanel {
     private JPanel getKeysStrip() {
         final JPanel p = new TexturedPanel();
         p.setPreferredSize(new Dimension(0, 20));
-        p.setLayout(new MigLayout("gap 14, insets 2 6 2 6"));
+        p.setLayout(new MigLayout("gap 14, insets 2 6 2 6, center"));
         p.setBackground(FontsAndBorders.MENUPANEL_COLOR);
         p.add(getLabel("F10: Screenshot"));
         p.add(getLabel("F11: Fullscreen"));
