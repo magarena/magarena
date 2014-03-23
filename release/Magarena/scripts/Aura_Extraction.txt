@@ -5,6 +5,6 @@ value=2.346
 rarity=U
 type=Instant
 cost={1}{W}
+effect=Put target enchantment on top of its owner's library.
 ability=cycling {2}
 timing=removal
-requires_groovy_code
