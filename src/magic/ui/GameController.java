@@ -501,14 +501,8 @@ public class GameController implements ILogBookListener {
 
                 game.logMessages();
                 clearValidChoices();
-                showMessage(MagicEvent.NO_SOURCE,
-                    "{L} " +
-                    game.getLosingPlayer() + " " +
-                    (gameConceded.get() ? "conceded" : "lost" ) +
-                    " the game.");
-
+                showEndGameMessage();
                 playEndGameSoundEffect();
-
                 enableForwardButton();
 
                 if (!selfMode && waitForInputOrUndo()) {
@@ -550,6 +544,14 @@ public class GameController implements ILogBookListener {
             }
         }
         running.set(false);
+    }
+
+    private void showEndGameMessage() {
+        showMessage(MagicEvent.NO_SOURCE,
+                "{L} " +
+                game.getLosingPlayer() + " " +
+                (gameConceded.get() ? "conceded" : "lost" ) +
+                " the game.");
     }
 
     private void playEndGameSoundEffect() {
