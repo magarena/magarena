@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={1}{G}{U}
 pt=5/6
+ability=enters effect Put a creature you control on top of its owner's library.
 timing=smain
-requires_groovy_code
