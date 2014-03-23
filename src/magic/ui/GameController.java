@@ -43,7 +43,8 @@ public class GameController implements ILogBookListener {
 
     private final GamePanel gamePanel;
     private final MagicGame game;
-    private final boolean testMode;
+    // isDeckStrMode is true when game is run via DeckStrengthViewer or DeckStrCal.
+    private final boolean isDeckStrMode;
     private final boolean selfMode = Boolean.getBoolean("selfMode");
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
@@ -62,7 +63,7 @@ public class GameController implements ILogBookListener {
     public GameController(final GamePanel aGamePanel,final MagicGame aGame) {
         gamePanel = aGamePanel;
         game = aGame;
-        testMode = false;
+        isDeckStrMode = false;
         clearValidChoices();
         if (!GeneralConfig.getInstance().isLogViewerDisabled()) {
             game.getLogBook().addListener(this);
@@ -73,7 +74,7 @@ public class GameController implements ILogBookListener {
     public GameController(final MagicGame aGame) {
         gamePanel = null;
         game = aGame;
-        testMode = true;
+        isDeckStrMode = true;
         clearValidChoices();
     }
 
@@ -408,7 +409,7 @@ public class GameController implements ILogBookListener {
     }
 
     private Object[] getArtificialNextEventChoiceResults(final MagicEvent event) {
-        if (!testMode) {
+        if (!isDeckStrMode) {
             disableActionButton(true);
             showMessage(event.getSource(),event.getChoiceDescription());
             GameController.invokeAndWait(new Runnable() {
@@ -439,7 +440,7 @@ public class GameController implements ILogBookListener {
 
     private void executeNextEventWithChoices(final MagicEvent event) {
         final Object[] choiceResults;
-        if (selfMode || testMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
+        if (selfMode || isDeckStrMode || event.getPlayer().getPlayerDefinition().isArtificial()) {
             choiceResults = getArtificialNextEventChoiceResults(event);
         } else {
             try {
@@ -488,13 +489,17 @@ public class GameController implements ILogBookListener {
         running.set(false);
     }
 
+    /**
+     * Main game loop runs on separate thread.
+     */
     public void runGame() {
         final long startTime=System.currentTimeMillis();
 
         running.set(true);
         while (running.get()) {
             if (game.isFinished()) {
-                if (testMode) {
+
+                if (isDeckStrMode) {
                     game.advanceDuel();
                     return;
                 }
@@ -534,7 +539,7 @@ public class GameController implements ILogBookListener {
                 game.executePhase();
             }
 
-            if (testMode) {
+            if (isDeckStrMode) {
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
                     System.err.println("WARNING. Max time for AI game exceeded");
                     break;
