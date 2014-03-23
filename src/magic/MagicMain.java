@@ -11,7 +11,6 @@ import magic.model.MagicGameLog;
 import magic.test.TestGameBuilder;
 import magic.ui.MagicFrame;
 
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
@@ -33,7 +32,9 @@ import java.util.List;
 public class MagicMain {
 
     public static final String VERSION = "1.48";
-    public static final String SOFTWARE_TITLE = "Magarena " + VERSION;
+    public static final String SOFTWARE_TITLE =
+            "Magarena " + VERSION +
+            (MagicUtility.isDevMode() ? " [DEV MODE]" : "");
 
     public static MagicFrame rootFrame;
 
