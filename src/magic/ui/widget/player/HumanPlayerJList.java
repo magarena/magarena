@@ -53,32 +53,13 @@ public class HumanPlayerJList
 
             panel.add(getAvatarPortrait(), "w 70!, h 70!");
             panel.add(getNamePanel(), "w 100%");
-            panel.add(getMiniStatsPanel());
+            panel.add(new PlayerMiniStatsPanel(profile.getStats(), foreColor));
 
             return panel;
         }
 
         private JLabel getAvatarPortrait() {
             return new JLabel(profile.getAvatar().getIcon(2));
-        }
-
-        private JPanel getMiniStatsPanel() {
-            final JPanel panel = new JPanel(new MigLayout("insets 0, gap 0, wrap 4", "[][30!]"));
-            panel.setOpaque(false);
-            panel.setForeground(foreColor);
-            panel.add(new JLabel());
-            panel.add(getStatsLabel("P", foreColor), "w 100%");
-            panel.add(getStatsLabel("W", foreColor), "w 100%");
-            panel.add(getStatsLabel("L", foreColor), "w 100%");
-            panel.add(getStatsLabel("Duels", foreColor), "w 60!");
-            panel.add(getStatsLabel(Integer.toString(profile.getStats().duelsPlayed), foreColor), "w 100%");
-            panel.add(getStatsLabel(Integer.toString(profile.getStats().duelsWon), foreColor), "w 100%");
-            panel.add(getStatsLabel(Integer.toString(profile.getStats().duelsPlayed - profile.getStats().duelsWon), foreColor), "w 100%");
-            panel.add(getStatsLabel("Games", foreColor), "w 60!");
-            panel.add(getStatsLabel(Integer.toString(profile.getStats().gamesPlayed), foreColor), "w 100%");
-            panel.add(getStatsLabel(Integer.toString(profile.getStats().gamesWon), foreColor), "w 100%");
-            panel.add(getStatsLabel(Integer.toString(profile.getStats().gamesPlayed - profile.getStats().gamesWon), foreColor), "w 100%");
-            return panel;
         }
 
         private JPanel getNamePanel() {
@@ -101,15 +82,6 @@ public class HumanPlayerJList
             lbl.setFont(FontsAndBorders.FONT2);
             lbl.setForeground(foreColor);
             lbl.setVerticalAlignment(SwingConstants.TOP);
-            return lbl;
-        }
-
-        private JLabel getStatsLabel(final String text, final Color foreColor) {
-            final JLabel lbl = new JLabel(text);
-            lbl.setHorizontalAlignment(SwingConstants.CENTER);
-            lbl.setBorder(BorderFactory.createDashedBorder(null));
-            lbl.setFont(FontsAndBorders.FONT0);
-            lbl.setForeground(foreColor);
             return lbl;
         }
 

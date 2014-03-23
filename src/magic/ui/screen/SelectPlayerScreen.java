@@ -32,29 +32,31 @@ import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public abstract class SelectPlayerAbstractScreen
+public abstract class SelectPlayerScreen
     extends AbstractScreen
     implements IAvatarImageConsumer {
 
     private List<IPlayerProfileListener> listeners = new ArrayList<>();
+    private final JList<? extends PlayerProfile> playersJList;
 
     protected HashMap<String, PlayerProfile> profilesMap = new HashMap<String, PlayerProfile>();
 
-    protected abstract JPanel getProfilesListPanel();
     protected abstract void createDefaultPlayerProfiles() throws IOException;
     protected abstract int getPreferredWidth();
-    protected abstract JList<? extends PlayerProfile> getProfilesJList();
     protected abstract void refreshProfilesJList();
     protected abstract void refreshProfilesJList(final PlayerProfile playerProfile);
     protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
 
     // CTR
-    protected SelectPlayerAbstractScreen() {
+    protected SelectPlayerScreen(final JList<? extends PlayerProfile> playersJList) {
+        this.playersJList = playersJList;
+        this.playersJList.addMouseListener(new DoubleClickAdapter());
         setContent(new ScreenContent());
         setEnterKeyInputMap();
     }
@@ -82,11 +84,11 @@ public abstract class SelectPlayerAbstractScreen
 
     protected void setSelectedListItem(final PlayerProfile playerProfile) {
         if (playerProfile == null) {
-            getProfilesJList().setSelectedIndex(0);
+            playersJList.setSelectedIndex(0);
         } else {
-            getProfilesJList().setSelectedValue(profilesMap.get(playerProfile.getId()), true);
+            playersJList.setSelectedValue(profilesMap.get(playerProfile.getId()), true);
         }
-        setFocusInProfilesJList(getProfilesJList());
+        setFocusInProfilesJList(playersJList);
     }
 
     protected List<PlayerProfile> getSortedPlayersList() {
@@ -121,7 +123,7 @@ public abstract class SelectPlayerAbstractScreen
     }
 
     protected PlayerProfile getSelectedPlayer() {
-        return getProfilesJList().getSelectedValue();
+        return playersJList.getSelectedValue();
     }
 
     protected class SelectAvatarActionButton extends ActionBarButton {
@@ -134,7 +136,7 @@ public abstract class SelectPlayerAbstractScreen
     private class SelectAvatarAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
-            getFrame().showAvatarImagesScreen(SelectPlayerAbstractScreen.this);
+            getFrame().showAvatarImagesScreen(SelectPlayerScreen.this);
         }
     }
 
@@ -193,7 +195,7 @@ public abstract class SelectPlayerAbstractScreen
         public ScreenContent() {
             setOpaque(false);
             setLayout(new MigLayout("insets 2, center, center"));
-            add(getProfilesListPanel(), "w " + getPreferredWidth() + "!, h 80%");
+            add(new ContainerPanel(playersJList), "w " + getPreferredWidth() + "!, h 80%");
         }
     }
 
@@ -217,6 +219,7 @@ public abstract class SelectPlayerAbstractScreen
         }
 
     }
+
     protected void doNextAction() {
         notifyPlayerSelected(getSelectedPlayer());
         getFrame().closeActiveScreen(false);
@@ -257,6 +260,30 @@ public abstract class SelectPlayerAbstractScreen
         for (final IPlayerProfileListener listener : listeners) {
             listener.PlayerProfileSelected(player);
         }
+    }
+
+    protected MenuButton getRightAction() {
+        return new MenuButton("Select", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                doNextAction();
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            }
+        });
+    }
+
+    protected MenuButton getLeftAction() {
+        return new MenuButton("Cancel", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                getFrame().closeActiveScreen(false);
+            }
+        });
+    }
+
+    protected JList<? extends PlayerProfile> getJList() {
+        return playersJList;
     }
 
 }
