@@ -11,18 +11,19 @@ import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
-public class MagicSorceryConditionEvent extends MagicEvent {
+public class MagicConditionEvent extends MagicEvent {
 
-    private final MagicCondition[] conds = new MagicCondition[]{
-        MagicCondition.SORCERY_CONDITION
-    };
+    private final MagicCondition[] conds;
 
-    public MagicSorceryConditionEvent(final MagicSource source) {
+    public MagicConditionEvent(final MagicSource source, final MagicCondition condition) {
         super(
             source,
             MagicEvent.NO_ACTION,
             ""
         );
+        conds = new MagicCondition[]{
+            MagicCondition.SORCERY_CONDITION
+        };
     }
 
     @Override

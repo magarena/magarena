@@ -8,6 +8,7 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
+import magic.model.condition.MagicCondition;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.regex.Matcher;
@@ -307,7 +308,15 @@ public enum MagicCostEvent {
             return cost.equals("{Sorcery}");
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSorceryConditionEvent(source);
+            return new MagicConditionEvent(source, MagicCondition.SORCERY_CONDITION);
+        }
+    },
+    YourUpkeep() {
+        public boolean accept(final String cost) {
+            return cost.equals("{YourUpkeep}");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicConditionEvent(source, MagicCondition.YOUR_UPKEEP_CONDITION);
         }
     },
     BounceSelf() {
