@@ -5,5 +5,5 @@ value=3.420
 rarity=C
 type=Instant
 cost={1}{W}
+effect=Put target artifact or enchantment on top of its owner's library.
 timing=removal
-requires_groovy_code
