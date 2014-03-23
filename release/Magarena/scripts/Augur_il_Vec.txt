@@ -8,5 +8,5 @@ subtype=Human,Cleric
 cost={1}{W}
 pt=1/3
 ability=shadow;\
-        cost {YourUpkeep}, Sacrifice Augur il-Vec: PN gains 4 life.
+        cost {YourUpkeep}, Sacrifice SN: PN gains 4 life.
 timing=main
