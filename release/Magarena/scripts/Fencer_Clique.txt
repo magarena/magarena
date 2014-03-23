@@ -7,6 +7,6 @@ type=Creature
 subtype=Faerie,Soldier
 cost={2}{U}{U}
 pt=3/2
-ability=flying
+ability=flying;\
+        cost {U}: Put SN on top of its owner's library.
 timing=main
-requires_groovy_code=Thalakos Mistfolk
