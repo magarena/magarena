@@ -3,7 +3,6 @@ package magic.ui.viewer;
 import magic.data.IconImages;
 import magic.model.MagicGame;
 import magic.ui.GameController;
-import magic.ui.widget.TabSelector;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
@@ -34,7 +33,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
     private final JPanel cardPanel;
     private final CardLayout cardLayout;
     private final TitleBar titleBar;
-    private final TabSelector tabSelector;
     private final PhaseStepViewer phaseStepViewer;
     private final JLabel playerAvatar = new JLabel();
     private final MagicGame game;
@@ -64,11 +62,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         cardPanel.setOpaque(false);
         cardPanel.add(gameViewer,"0");
         add(cardPanel,BorderLayout.CENTER);
-
-        tabSelector=new TabSelector(this, false, titleBar.getBackground());
-        tabSelector.addTab(IconImages.MESSAGE,"Message");
-        tabSelector.addTab(IconImages.PROGRESS,"Progress");
-        titleBar.add(tabSelector,BorderLayout.EAST);
 
         JPanel mainTitlePanel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
         mainTitlePanel.setOpaque(false);
@@ -106,23 +99,16 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
     }
 
     public void update() {
-        switch (tabSelector.getSelectedTab()) {
-            case 0:
-                gameViewer.setTitle(titleBar);
-                turnLabel.setText(gameViewer.getTurnCaption());
-                playerLabel.setText(game.getTurnPlayer().getName());
-                phaseStepViewer.setPhaseStep(gameViewer.getMagicPhaseType());
-                playerAvatar.setIcon(gameViewer.getTurnSizedPlayerAvatar());
-                break;
-            case 1:
-                break;
-        }
+        gameViewer.setTitle(titleBar);
+        turnLabel.setText(gameViewer.getTurnCaption());
+        playerLabel.setText(game.getTurnPlayer().getName());
+        phaseStepViewer.setPhaseStep(gameViewer.getMagicPhaseType());
+        playerAvatar.setIcon(gameViewer.getTurnSizedPlayerAvatar());
     }
 
     @Override
     public void stateChanged(final ChangeEvent e) {
-        final int selectedTab=tabSelector.getSelectedTab();
-        cardLayout.show(cardPanel,Integer.toString(selectedTab));
+        cardLayout.show(cardPanel, Integer.toString(0));
         update();
     }
 
