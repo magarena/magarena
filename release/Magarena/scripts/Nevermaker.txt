@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental
 cost={3}{U}
 pt=2/3
-ability=flying;evoke {3}{U}
+ability=flying;evoke {3}{U};\
+        leaves effect Put target nonland permanent on top of its owner's library.
 timing=main
-requires_groovy_code
