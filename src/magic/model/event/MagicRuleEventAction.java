@@ -866,8 +866,8 @@ public enum MagicRuleEventAction {
     CounterOnChosen(
         "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (?<choice>[^\\.]*)\\."
     ) {
-       @Override
-       public MagicEventAction getAction(final Matcher matcher) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
             final int amount = englishToInt(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             return new MagicEventAction() {
@@ -885,62 +885,51 @@ public enum MagicRuleEventAction {
                     });
                 }
             };
-       } 
-       @Override
-       public MagicTargetHint getHint(final Matcher matcher) {
-           final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
-           if (counterType.getName().contains("-") || counterType.getScore()<0) {
-               return MagicTargetHint.Negative;
-           } else {
-               return MagicTargetHint.Positive;
-           }
-       }
-       @Override
-       public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-           final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
-           if (counterType.getName().contains("-")) {
-               final String[] pt = counterType.getName().split("/");
-               return new MagicWeakenTargetPicker(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
-           } else if (counterType.getName().contains("+")) {
-               final String[] pt = counterType.getName().split("/");
-               return MagicPumpTargetPicker.create();
-           } else {
-               return MagicDefaultTargetPicker.create();
-           }
-       }
-       @Override
-       public MagicTiming getTiming(final Matcher matcher) {
-           final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
-           if (counterType.getName().contains("-")) {
-               final String[] pt = counterType.getName().split("/");
-               return MagicTiming.Removal;
-           } else {
-               return MagicTiming.Pump;
-           }
-       }
-       @Override
-       public String getName(final Matcher matcher) {
-           final int amount = englishToInt(matcher.group("amount"));
-           if (amount>1) {
-               final String name = "+Counters";
-               return name;
-           } else {
-               final String name = "+Counter";
-               return name;
-           }
-       }
-     },
-     BounceSelf(
-        "return sn to its owner's hand\\.",
-        MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+        } 
+        @Override
+        public MagicTargetHint getHint(final Matcher matcher) {
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            if (counterType.getName().contains("-") || counterType.getScore()<0) {
+                return MagicTargetHint.Negative;
+            } else {
+                return MagicTargetHint.Positive;
             }
         }
-    ),
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            if (counterType.getName().contains("-")) {
+                final String[] pt = counterType.getName().split("/");
+                return new MagicWeakenTargetPicker(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
+            } else if (counterType.getName().contains("+")) {
+                final String[] pt = counterType.getName().split("/");
+                return MagicPumpTargetPicker.create();
+            } else {
+                return MagicDefaultTargetPicker.create();
+            }
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            if (counterType.getName().contains("-")) {
+                final String[] pt = counterType.getName().split("/");
+                return MagicTiming.Removal;
+            } else {
+                return MagicTiming.Pump;
+            }
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            final int amount = englishToInt(matcher.group("amount"));
+            if (amount>1) {
+                final String name = "+Counters";
+                return name;
+            } else {
+                final String name = "+Counter";
+                return name;
+            }
+        }
+    },
     RecoverSelf(
         "return sn from the graveyard to its owner's hand\\.",
         MagicTiming.Draw,
@@ -951,6 +940,17 @@ public enum MagicRuleEventAction {
                 final MagicCard card = event.getPermanent().getCard();
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+            }
+        }
+    ),
+    BounceSelf(
+        "return sn to its owner's hand\\.",
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             }
         }
     ),
