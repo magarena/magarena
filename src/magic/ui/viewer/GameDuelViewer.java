@@ -72,23 +72,19 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
 
         JPanel mainTitlePanel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
         mainTitlePanel.setOpaque(false);
-        //mainTitlePanel.setBackground(titleBar.getBackground());
 
         JPanel titlePanel = new JPanel(new MigLayout("insets 0, gap 0"));
         titlePanel.setOpaque(true);
         titlePanel.setBackground(titleBar.getBackground());
         titlePanel.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
-        //titlePanel.add(getStatusPanel(), "w 100%, h 40px!, cell 1 1 2 1");
         titlePanel.add(playerAvatar, "w 54px!, h 54px!, cell 1 1 1 3, gapright 4");
         titlePanel.add(getGameCaption(), "w 100%, h 17px!, cell 2 1");
         titlePanel.add(playerLabel, "w 100%, h 18px!, cell 2 2");
         titlePanel.add(turnLabel, "w 100%, h 17px!, cell 2 3, top");
         titlePanel.add(getOptionsIconButton(), "w 32!, h 32!, cell 3 1 1 3, gapright 10");
-//        titlePanel.add(getHelpIconButton(), "w 32!, h 32!, cell 4 1 1 3, gapright 6");
-        //titlePanel.add(titleBar, "w 100%, h 20px!, cell 2 3");
 
         mainTitlePanel.add(titlePanel);
-        mainTitlePanel.add(phaseStepViewer); //, "w 100%, h 20px!, cell 1 4 4");
+        mainTitlePanel.add(phaseStepViewer);
 
         add(mainTitlePanel, BorderLayout.NORTH);
 
@@ -99,7 +95,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         lbl.setText(
                 "Game " + game.getDuel().getGameNr() +
                 " of " + game.getDuel().getConfiguration().getNrOfGames());
-        //lbl.setFont(FontsAndBorders.FONT0);
         lbl.setForeground(Color.WHITE);
         lbl.setOpaque(true);
         lbl.setBackground(titleBar.getBackground());
@@ -142,7 +137,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //provider.showOptionsMenuOverlay();
                 showOptionsMenu();
             }
         });
