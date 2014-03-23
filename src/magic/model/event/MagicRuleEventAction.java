@@ -989,6 +989,17 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    BounceLibTopSelf(
+        "put sn on top of its owner's library\\.",
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.TopOfOwnersLibrary));
+            }
+        }
+    ),
     BounceLibTopChosen(
         "put (?<choice>[^\\.]*) on top of its owner's library\\.",
         MagicTargetHint.None,
