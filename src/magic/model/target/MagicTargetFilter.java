@@ -1144,6 +1144,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = Factory.card(MagicTargetType.OpponentsGraveyard, MagicType.Creature);
 
     MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Instant, MagicType.Sorcery);
+    
+    MagicCardFilterImpl ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Enchantment);
 
     MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = Factory.card(MagicTargetType.OpponentsGraveyard, MagicType.Instant, MagicType.Sorcery);
 

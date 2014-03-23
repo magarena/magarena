@@ -174,6 +174,7 @@ public class MagicTargetFilterFactory {
         single.put("green or white creature", TARGET_GREEN_OR_WHITE_CREATURE);
         single.put("Insect, Rat, Spider, or Squirrel", TARGET_INSECT_RAT_SPIDER_OR_SQUIRREL);
         single.put("instant or sorcery card from your graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
+        single.put("artifact or enchantment card from your graveyard", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
