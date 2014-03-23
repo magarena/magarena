@@ -55,8 +55,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         phaseStepViewer.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.BLACK));
         phaseStepViewer.setOpaque(false);
 
-        playerAvatar.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.BLACK));
-
         setLayout(new BorderLayout());
 
         titleBar=new TitleBar("");
