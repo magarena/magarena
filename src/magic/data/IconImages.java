@@ -10,7 +10,6 @@ public class IconImages {
     public static final ImageIcon MISSING_ICON=loadIcon("missing2.png");
 
     private static final BufferedImage MANA = loadImage("icons/Mana.png");
-    public static final BufferedImage LOGO=loadImage("textures/logo.jpg");
     public static final BufferedImage WIZARD=loadImage("icons/wizard.png");
     public static final BufferedImage WOOD=loadImage("textures/wood.jpg");
     public static final BufferedImage MARBLE=loadImage("textures/marble.jpg");
@@ -37,23 +36,17 @@ public class IconImages {
     public static final ImageIcon CUBE_ICON         = loadIcon("w_cube.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
-    public static final ImageIcon CUBE=loadIcon("cube.png");
     public static final ImageIcon ANY=loadIcon("any.png");
     public static final ImageIcon FOLDER=loadIcon("folder.png");
     public static final ImageIcon LOG=loadIcon("log.png");
-    public static final ImageIcon TEXT=loadIcon("text.png");
     public static final ImageIcon OK=loadIcon("ok.gif");
     public static final ImageIcon CANCEL=loadIcon("cancel.gif");
-    public static final ImageIcon CLOSE=loadIcon("close.png");
     public static final ImageIcon FORWARD=loadIcon("forward.png");
     public static final ImageIcon FORWARD2=loadIcon("forward2.png");
     public static final ImageIcon START=loadIcon("start.png");
     public static final ImageIcon STOP=loadIcon("stop.png");
     public static final ImageIcon UNDO=loadIcon("undo.png");
     public static final ImageIcon BUSY=loadIcon("busy.gif");
-    public static final ImageIcon YOU=loadIcon("you.gif");
-    public static final ImageIcon OPPONENT=loadIcon("opponent.gif");
-    public static final ImageIcon DISABLED=loadIcon("disabled.gif");
     public static final ImageIcon ALL=loadIcon("all.gif");
     public static final ImageIcon LEFT=loadIcon("left.gif");
     public static final ImageIcon RIGHT=loadIcon("right.gif");
@@ -74,14 +67,11 @@ public class IconImages {
     public static final ImageIcon POISON=loadIcon("poison.png");
     public static final ImageIcon HAND=loadIcon("hand.gif");
     public static final ImageIcon HAND2=loadIcon("hand2.png");
-    public static final ImageIcon LIBRARY=loadIcon("library.gif");
     public static final ImageIcon LIBRARY2=loadIcon("library2.gif");
     public static final ImageIcon GRAVEYARD=loadIcon("graveyard.gif");
     public static final ImageIcon GRAVEYARD2=loadIcon("graveyard2.gif");
     public static final ImageIcon EXILE=loadIcon("exile.png");
-    public static final ImageIcon NUMBER=loadIcon("number.png");
     public static final ImageIcon DIFFICULTY=loadIcon("difficulty.png");
-    public static final ImageIcon DIFFICULTY2=loadIcon("difficulty2.gif");
     public static final ImageIcon CANNOTTAP=loadIcon("cannottap.png");
     public static final ImageIcon SLEEP=loadIcon("sleep.gif");
     public static final ImageIcon REGENERATED=loadIcon("regenerated.gif");
@@ -101,10 +91,8 @@ public class IconImages {
     public static final ImageIcon TARGET=loadIcon("target.gif");
     public static final ImageIcon VALID=loadIcon("valid.gif");
     public static final ImageIcon STRENGTH=loadIcon("strength.png");
-    public static final ImageIcon EDIT=loadIcon("edit.png");
     public static final ImageIcon DELAY=loadIcon("delay.png");
     public static final ImageIcon PICTURE=loadIcon("picture.png");
-    public static final ImageIcon AVATAR=loadIcon("avatar.gif");
 
     public static final ImageIcon FLYING=loadIcon("flying.png");
     public static final ImageIcon TRAMPLE=loadIcon("trample.png");
