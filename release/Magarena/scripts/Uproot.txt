@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 subtype=Arcane
 cost={3}{G}
+effect=Put target land on top of its owner's library.
 timing=main
-requires_groovy_code
