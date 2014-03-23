@@ -943,35 +943,7 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    BounceSelf(
-        "return sn to its owner's hand\\.",
-        MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
-            }
-        }
-    ),
-    Bounce(
-        "return (?<choice>[^\\.]*) to its owner's hand\\.",
-        MagicTargetHint.None,
-        MagicBounceTargetPicker.create(),
-        MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                    }
-                });
-            }
-        }
-    ),
-    Recover(
+    RecoverChosen(
         "return (?<choice>[^\\.]*from your graveyard) to your hand\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.ReturnToHand,
@@ -984,6 +956,34 @@ public enum MagicRuleEventAction {
                     public void doAction(final MagicCard card) {
                         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                         game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    }
+                });
+            }
+        }
+    ),
+    BounceSelf(
+        "return sn to its owner's hand\\.",
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+            }
+        }
+    ),
+    BounceChosen(
+        "return (?<choice>[^\\.]*) to its owner's hand\\.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent permanent) {
+                        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                     }
                 });
             }
