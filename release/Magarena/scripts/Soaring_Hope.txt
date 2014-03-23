@@ -6,8 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={4}{W}
-ability=enters effect PN gains 3 life.
+ability=enters effect PN gains 3 life.;\
+        cost {W}: Put SN on top of its owner's library.
 given_ability=flying
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
