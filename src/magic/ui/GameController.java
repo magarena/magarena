@@ -507,11 +507,7 @@ public class GameController implements ILogBookListener {
                     (gameConceded.get() ? "conceded" : "lost" ) +
                     " the game.");
 
-                if (game.getLosingPlayer().getIndex() == 0) {
-                    SoundEffects.playClip(SoundEffects.LOSE_SOUND);
-                } else {
-                    SoundEffects.playClip(SoundEffects.WIN_SOUND);
-                }
+                playEndGameSoundEffect();
 
                 enableForwardButton();
 
@@ -554,6 +550,14 @@ public class GameController implements ILogBookListener {
             }
         }
         running.set(false);
+    }
+
+    private void playEndGameSoundEffect() {
+        if (game.getLosingPlayer().getIndex() == 0) {
+            SoundEffects.playClip(SoundEffects.LOSE_SOUND);
+        } else {
+            SoundEffects.playClip(SoundEffects.WIN_SOUND);
+        }
     }
 
     @Override
