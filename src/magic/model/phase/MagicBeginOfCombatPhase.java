@@ -1,6 +1,7 @@
 package magic.model.phase;
 
 import magic.model.MagicGame;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicBeginOfCombatPhase extends MagicPhase {
 
@@ -16,6 +17,9 @@ public class MagicBeginOfCombatPhase extends MagicPhase {
 
     @Override
     public void executeBeginStep(final MagicGame game) {
+        // Begin of combat triggers
+        game.executeTrigger(MagicTriggerType.AtBeginOfCombat,game.getTurnPlayer());
+        
         game.setStep(MagicStep.ActivePlayer);
     }
 }

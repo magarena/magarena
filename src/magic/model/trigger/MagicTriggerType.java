@@ -4,6 +4,7 @@ public enum MagicTriggerType {
     AtUpkeep,               // player
     AtDraw,                 // player
     AtEndOfTurn,            // player
+    AtBeginOfCombat,        // player
     AtEndOfCombat,          // player
     WhenDamageIsDealt,      // damage
     WhenOtherSpellIsCast,   // card on stack

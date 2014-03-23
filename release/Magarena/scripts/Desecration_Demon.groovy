@@ -1,17 +1,15 @@
 [
-    new MagicAtUpkeepTrigger() {
+    new MagicAtBeginOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                new MagicEvent(
-                    permanent,
-                    upkeepPlayer.opponent, //should be player.opponent
-                    new MagicMayChoice(MagicTargetChoice.SACRIFICE_CREATURE),
-                    MagicSacrificeTargetPicker.create(),
-                    this,
-                    "PN may\$ sacrifice a creature\$. If you do, tap SN and put a +1/+1 counter on it."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                permanent.getOpponent(),
+                new MagicMayChoice(MagicTargetChoice.SACRIFICE_CREATURE),
+                MagicSacrificeTargetPicker.create(),
+                this,
+                "PN may\$ sacrifice a creature\$. If you do, tap SN and put a +1/+1 counter on it."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
