@@ -989,6 +989,23 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    BounceLibTopChosen(
+        "put (?<choice>[^\\.]*) on top of its owner's library\\.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Bounce",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent permanent) {
+                        game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.TopOfOwnersLibrary));
+                    }
+                });
+            }
+        }
+    ),
     Reanimate(
         "return (?<choice>[^\\.]*) to the battlefield\\.",
         MagicTargetHint.None,
