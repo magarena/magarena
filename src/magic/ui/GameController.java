@@ -501,18 +501,8 @@ public class GameController implements ILogBookListener {
 
                 game.logMessages();
                 clearValidChoices();
-                showMessage(MagicEvent.NO_SOURCE,
-                    "{L} " +
-                    game.getLosingPlayer() + " " +
-                    (gameConceded.get() ? "conceded" : "lost" ) +
-                    " the game.");
-
-                if (game.getLosingPlayer().getIndex() == 0) {
-                    SoundEffects.playClip(SoundEffects.LOSE_SOUND);
-                } else {
-                    SoundEffects.playClip(SoundEffects.WIN_SOUND);
-                }
-
+                showEndGameMessage();
+                playEndGameSoundEffect();
                 enableForwardButton();
 
                 if (!selfMode && waitForInputOrUndo()) {
@@ -554,6 +544,22 @@ public class GameController implements ILogBookListener {
             }
         }
         running.set(false);
+    }
+
+    private void showEndGameMessage() {
+        showMessage(MagicEvent.NO_SOURCE,
+                "{L} " +
+                game.getLosingPlayer() + " " +
+                (gameConceded.get() ? "conceded" : "lost" ) +
+                " the game.");
+    }
+
+    private void playEndGameSoundEffect() {
+        if (game.getLosingPlayer().getIndex() == 0) {
+            SoundEffects.playClip(SoundEffects.LOSE_SOUND);
+        } else {
+            SoundEffects.playClip(SoundEffects.WIN_SOUND);
+        }
     }
 
     @Override

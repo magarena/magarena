@@ -1128,7 +1128,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillSelf(
-        "PN puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard\\.",
+        "PN puts the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
         MagicTiming.Draw, 
         "Mill"
     ) {
@@ -1144,7 +1144,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillChosen(
-        "(?<choice>[^\\.]*) puts the top (?<amount>[a-z]+) card(s)? of his or her library into his or her graveyard\\.", 
+        "(?<choice>[^\\.]*) puts the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.", 
         MagicTiming.Draw, 
         "Mill"
     ) {
@@ -1383,6 +1383,9 @@ public enum MagicRuleEventAction {
     }
     
     public static int englishToInt(String num) {
+        if (num == null) {
+            return 1;
+        }
         switch (num) {
             case "a": return 1;
             case "an": return 1;

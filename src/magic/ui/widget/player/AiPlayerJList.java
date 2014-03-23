@@ -62,7 +62,7 @@ public class AiPlayerJList
         }
 
         private JPanel getDefaultDuelSettingsPanel() {
-            final JPanel panel = new JPanel(new MigLayout("debug, insets 0 20 0 0, flowy"));
+            final JPanel panel = new JPanel(new MigLayout("insets 0 20 0 0, flowy"));
             panel.setOpaque(false);
             panel.add(getLabel("AI: " + profile.getAiType().name()), "w 100%");
             panel.add(getLabel("Level: " + profile.getAiLevel() + " / 8"), "w 100%");
