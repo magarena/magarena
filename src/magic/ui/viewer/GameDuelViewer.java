@@ -19,7 +19,6 @@ import javax.swing.event.ChangeListener;
 
 import java.awt.AWTException;
 import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Robot;
@@ -30,8 +29,6 @@ import java.awt.event.KeyEvent;
 public class GameDuelViewer extends TexturedPanel implements ChangeListener {
 
     private final GameViewer gameViewer;
-    private final JPanel cardPanel;
-    private final CardLayout cardLayout;
     private final TitleBar titleBar;
     private final PhaseStepViewer phaseStepViewer;
     private final JLabel playerAvatar = new JLabel();
@@ -57,11 +54,7 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         turnLabel.setForeground(Color.WHITE);
         playerLabel.setForeground(Color.WHITE);
 
-        cardLayout=new CardLayout();
-        cardPanel=new JPanel(cardLayout);
-        cardPanel.setOpaque(false);
-        cardPanel.add(gameViewer,"0");
-        add(cardPanel,BorderLayout.CENTER);
+        add(gameViewer, BorderLayout.CENTER);
 
         JPanel mainTitlePanel = new JPanel(new MigLayout("insets 0, gap 0, flowy"));
         mainTitlePanel.setOpaque(false);
@@ -108,7 +101,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
 
     @Override
     public void stateChanged(final ChangeEvent e) {
-        cardLayout.show(cardPanel, Integer.toString(0));
         update();
     }
 
