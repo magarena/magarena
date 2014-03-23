@@ -31,7 +31,6 @@ import java.awt.event.KeyEvent;
 public class GameDuelViewer extends TexturedPanel implements ChangeListener {
 
     private final GameViewer gameViewer;
-    private final DuelViewer duelViewer;
     private final JPanel cardPanel;
     private final CardLayout cardLayout;
     private final TitleBar titleBar;
@@ -47,9 +46,7 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         this.game = game0;
 
         gameViewer=new GameViewer(game0,controller);
-        duelViewer=new DuelViewer(game0.getDuel());
         gameViewer.setOpaque(false);
-        duelViewer.setOpaque(false);
 
         phaseStepViewer = new PhaseStepViewer();
         phaseStepViewer.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 1, Color.BLACK));
@@ -66,7 +63,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
         cardPanel=new JPanel(cardLayout);
         cardPanel.setOpaque(false);
         cardPanel.add(gameViewer,"0");
-        cardPanel.add(duelViewer,"1");
         add(cardPanel,BorderLayout.CENTER);
 
         tabSelector=new TabSelector(this, false, titleBar.getBackground());
@@ -124,7 +120,6 @@ public class GameDuelViewer extends TexturedPanel implements ChangeListener {
                 playerAvatar.setIcon(gameViewer.getTurnSizedPlayerAvatar());
                 break;
             case 1:
-                DuelViewer.setTitle(titleBar);
                 break;
         }
     }
