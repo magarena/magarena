@@ -103,6 +103,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private String abilityProperty;
     private String requiresGroovy;
 
+    private Set<MagicType> cardType = EnumSet.noneOf(MagicType.class);
+
     public MagicCardDefinition() {
         initialize();
     }
@@ -281,6 +283,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
                 assert colorFlags != 0 : "redundant color declaration: " + colorFlags; 
             }
         }
+        cardType.add(type);
+    }
+
+    public Set<MagicType> getCardType() {
+        return cardType;
     }
 
     public boolean hasType(final MagicType type) {

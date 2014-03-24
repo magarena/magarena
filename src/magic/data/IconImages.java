@@ -34,6 +34,9 @@ public class IconImages {
     public static final ImageIcon LIFE_ICON         = loadIcon("w_life.png");
     public static final ImageIcon TARGET_ICON       = loadIcon("w_target.png");
     public static final ImageIcon CUBE_ICON         = loadIcon("w_cube.png");
+    public static final ImageIcon LANDS_ICON        = loadIcon("w_lands.png");
+    public static final ImageIcon CREATURES_ICON    = loadIcon("w_creatures.png");
+    public static final ImageIcon SPELLS_ICON       = loadIcon("w_spells.png");
 
     public static final ImageIcon ARENA=loadIcon("arena.png");
     public static final ImageIcon ANY=loadIcon("any.png");

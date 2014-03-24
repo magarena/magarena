@@ -1,19 +1,28 @@
 package magic.ui.screen;
 
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 import javax.swing.AbstractAction;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+
+import net.miginfocom.swing.MigLayout;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.model.MagicType;
+import magic.ui.MagicFrame;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.ICardCanvas;
@@ -21,21 +30,36 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.widget.deck.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
+    private enum CardTypeFilter {
+        ALL("All cards"),
+        CREATURES("Creatures"),
+        LANDS("Lands"),
+        OTHER("Other Spells");
+        private String caption;
+        private CardTypeFilter(final String caption) {
+            this.caption = caption;
+        }
+        @Override
+        public String toString() {
+            return caption;
+        }
+    }
+
     private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
 
     private CardsCanvas content;
     private final MagicDeck deck;
-    private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
+    private final StatusPanel statusPanel;
 
     public DeckViewScreen(final MagicDeck deck) {
         this.deck = deck;
+        this.statusPanel = new StatusPanel(deck.getName(), getCardTypeCaption(CardTypeFilter.ALL, deck.size()));
         content = new CardsCanvas(cardSize);
         content.setAnimationEnabled(false);
         content.setStackDuplicateCards(true);
@@ -44,10 +68,35 @@ public class DeckViewScreen
         setContent(content);
     }
 
-    private List<? extends ICardCanvas> getDeckCards(final MagicDeck deck) {
+    private List<? extends ICardCanvas> getDeckCards(final MagicDeck deck, final CardTypeFilter filterType) {
+
         final List<MagicCard> cards = new ArrayList<MagicCard>();
-        for (MagicCardDefinition magicCardDef : deck) {
-            cards.add(new MagicCard(magicCardDef, null, 0));
+
+        for (MagicCardDefinition cardDef : deck) {
+
+            final Set<MagicType> cardType = cardDef.getCardType();
+
+            switch (filterType) {
+            case CREATURES:
+                if (cardType.contains(MagicType.Creature)) {
+                    cards.add(new MagicCard(cardDef, null, 0));
+                }
+                break;
+            case LANDS:
+                if (cardType.contains(MagicType.Land)) {
+                    cards.add(new MagicCard(cardDef, null, 0));
+                }
+                break;
+            case OTHER:
+                if (!cardType.contains(MagicType.Creature) && !cardType.contains(MagicType.Land)) {
+                    cards.add(new MagicCard(cardDef, null, 0));
+                }
+                break;
+            default: // ALL
+                cards.add(new MagicCard(cardDef, null, 0));
+                break;
+            }
+
         }
         if (cards.size() > 0) {
             Collections.sort(cards);
@@ -55,6 +104,10 @@ public class DeckViewScreen
         } else {
             return null;
         }
+
+    }
+    private List<? extends ICardCanvas> getDeckCards(final MagicDeck deck) {
+        return getDeckCards(deck, CardTypeFilter.ALL);
     }
 
     /* (non-Javadoc)
@@ -94,24 +147,33 @@ public class DeckViewScreen
         final List<MenuButton> buttons = new ArrayList<MenuButton>();
         buttons.add(
                 new ActionBarButton(
+                        "All", "Display all cards in deck.",
+                        new ShowCardsAction(CardTypeFilter.ALL), false));
+        buttons.add(
+                new ActionBarButton(
+                        IconImages.CREATURES_ICON,
+                        "Creatures", "Display only creature cards.",
+                        new ShowCardsAction(CardTypeFilter.CREATURES), false)
+                );
+        buttons.add(
+                new ActionBarButton(
+                        IconImages.LANDS_ICON,
+                        "Lands", "Display only land cards.",
+                        new ShowCardsAction(CardTypeFilter.LANDS), false)
+                );
+        buttons.add(
+                new ActionBarButton(
+                        IconImages.SPELLS_ICON,
+                        "Other Spells", "Display any other card that is not a creature or land.",
+                        new ShowCardsAction(CardTypeFilter.OTHER), true)
+                );
+        buttons.add(
+                new ActionBarButton(
                         IconImages.HAND_ICON,
-                        "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                if (deck.size() >= 7) {
-                                    getFrame().showSampleHandGenerator(deck);
-                                } else {
-                                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
-                                }
-                            }
-                        })
+                        "Sample Hand", "Generate sample Hands from this deck.",
+                        new SampleHandAction(deck, getFrame()))
                 );
         return buttons;
-    }
-
-    private void showInvalidActionMessage(final String message) {
-        JOptionPane.showMessageDialog(this, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
     }
 
     /* (non-Javadoc)
@@ -127,8 +189,103 @@ public class DeckViewScreen
      */
     @Override
     public JPanel getStatusPanel() {
-        deckStatusPanel.setDeck(deck, true);
-        return deckStatusPanel;
+        return statusPanel;
+    }
+
+    private class ShowCardsAction extends AbstractAction {
+
+        private final CardTypeFilter filter;
+
+        public ShowCardsAction(final CardTypeFilter filter) {
+            this.filter = filter;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            showCards(filter);
+        }
+
+        private void showCards(final CardTypeFilter filterType) {
+            final List<? extends ICardCanvas> cards = getDeckCards(deck, filterType);
+            content.refresh(cards, cardSize);
+            statusPanel.setContent(deck.getName(), getCardTypeCaption(filterType, cards.size()));
+        }
+
+    }
+
+    private String getCardTypeCaption(final CardTypeFilter cardType, final int cardCount) {
+        if (cardType != CardTypeFilter.ALL) {
+            final int percentage = (int)((cardCount / (double)deck.size()) * 100);
+            return cardType + " (" + cardCount + " cards, " + percentage + "%)";
+        } else {
+            return cardType + " (" + cardCount + " cards)";
+        }
+    }
+
+    private class SampleHandAction extends AbstractAction {
+
+        private final MagicDeck deck;
+        private final MagicFrame frame;
+
+        public SampleHandAction(final MagicDeck deck, final MagicFrame frame) {
+            this.deck = deck;
+            this.frame = frame;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (deck.size() >= 7) {
+                getFrame().showSampleHandGenerator(deck);
+            } else {
+                showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
+            }
+        }
+
+        private void showInvalidActionMessage(final String message) {
+            JOptionPane.showMessageDialog(
+                    frame, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+    }
+
+    private class StatusPanel extends JPanel {
+
+        // ui
+        private final MigLayout migLayout = new MigLayout();
+        private final JLabel deckNameLabel = new JLabel();
+        private final JLabel filterLabel = new JLabel();
+
+        public StatusPanel(final String deckName, final String filterCaption) {
+            setLookAndFeel();
+            setContent(deckName, filterCaption);
+        }
+
+        private void setLookAndFeel() {
+            setOpaque(false);
+            setLayout(migLayout);
+            // deck name label
+            deckNameLabel.setForeground(Color.WHITE);
+            deckNameLabel.setFont(new Font("Dialog", Font.PLAIN, 16));
+            deckNameLabel.setHorizontalAlignment(SwingConstants.CENTER);
+            // filter label
+            filterLabel.setForeground(Color.WHITE);
+            filterLabel.setFont(new Font("Dialog", Font.ITALIC, 14));
+            filterLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        }
+
+        private void refreshLayout() {
+            removeAll();
+            migLayout.setLayoutConstraints("insets 0, gap 2, flowy");
+            add(deckNameLabel, "w 100%");
+            add(filterLabel, "w 100%");
+        }
+
+        public void setContent(final String deckName, final String filterCaption) {
+            deckNameLabel.setText(deckName);
+            filterLabel.setText(filterCaption);
+            refreshLayout();
+        }
+
     }
 
 }
