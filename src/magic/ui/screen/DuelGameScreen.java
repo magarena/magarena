@@ -156,6 +156,12 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                     setVisible(false);
                 }
             });
+            menu.addMenuItem("Game Log", new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    getFrame().showGameLogScreen();
+                }
+            });
             menu.addBlankItem();
             menu.addMenuItem("Close menu", new AbstractAction() {
                 @Override
