@@ -17,7 +17,7 @@ def CARD_NAMED_LLANOWAR_SENTINEL = new MagicCardFilterImpl() {
                     new MagicPayManaCostChoice(MagicManaCost.create("{1}{G}"))
                 ),
                 this,
-                "When SN enters the battlefield, you may\$ pay {1}{G}\$. If you do, search your library for a card named Llanowar Sentinel" + 
+                "When SN enters the battlefield, you may\$ pay {1}{G}\$. If you do, search your library for a card named Llanowar Sentinel " + 
                 "and put that card onto the battlefield. Then shuffle your library."
             );
         }
