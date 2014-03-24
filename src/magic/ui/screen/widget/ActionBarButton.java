@@ -29,6 +29,7 @@ public class ActionBarButton extends MenuButton {
     public ActionBarButton(final String caption, final AbstractAction action) {
         this(caption, null, action);
     }
+    protected ActionBarButton() {}
 
     @Override
     public Point getToolTipLocation(MouseEvent event) {

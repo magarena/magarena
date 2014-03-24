@@ -43,6 +43,10 @@ public class MenuButton extends JButton {
     public MenuButton(final String caption, final AbstractAction action) {
         this(caption, action, null);
     }
+    protected MenuButton() {
+        isRunnable = false;
+        showSeparator = false;
+    }
 
     public boolean isRunnable() {
         return isRunnable;

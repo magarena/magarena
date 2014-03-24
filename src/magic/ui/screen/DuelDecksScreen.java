@@ -25,6 +25,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
+import magic.ui.screen.widget.SampleHandActionButton;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen
@@ -139,17 +140,7 @@ public class DuelDecksScreen
                                 }
                             })
                     );
-            buttons.add(
-                    new ActionBarButton(
-                            IconImages.HAND_ICON,
-                            "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
-                            new AbstractAction() {
-                                @Override
-                                public void actionPerformed(final ActionEvent e) {
-                                    getFrame().showSampleHandGenerator(getActiveDeck());
-                                }
-                            })
-                    );
+            buttons.add(SampleHandActionButton.createInstance(getActiveDeck(), getFrame()));
         } else {
             if (screenContent.getDuel().isFinished()) {
                 final MagicDuel duel = screenContent.getDuel();

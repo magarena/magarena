@@ -11,7 +11,6 @@ import java.util.Set;
 
 import javax.swing.AbstractAction;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
@@ -22,7 +21,6 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicType;
-import magic.ui.MagicFrame;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.ICardCanvas;
@@ -30,6 +28,7 @@ import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.SampleHandActionButton;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen
@@ -167,12 +166,7 @@ public class DeckViewScreen
                         "Other Spells", "Display any other card that is not a creature or land.",
                         new ShowCardsAction(CardTypeFilter.OTHER), true)
                 );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.HAND_ICON,
-                        "Sample Hand", "Generate sample Hands from this deck.",
-                        new SampleHandAction(deck, getFrame()))
-                );
+        buttons.add(SampleHandActionButton.createInstance(deck, getFrame()));
         return buttons;
     }
 
@@ -222,33 +216,7 @@ public class DeckViewScreen
         }
     }
 
-    private class SampleHandAction extends AbstractAction {
-
-        private final MagicDeck deck;
-        private final MagicFrame frame;
-
-        public SampleHandAction(final MagicDeck deck, final MagicFrame frame) {
-            this.deck = deck;
-            this.frame = frame;
-        }
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if (deck.size() >= 7) {
-                getFrame().showSampleHandGenerator(deck);
-            } else {
-                showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
-            }
-        }
-
-        private void showInvalidActionMessage(final String message) {
-            JOptionPane.showMessageDialog(
-                    frame, message, "Invalid Action", JOptionPane.INFORMATION_MESSAGE);
-        }
-
-    }
-
-    private class StatusPanel extends JPanel {
+     private class StatusPanel extends JPanel {
 
         // ui
         private final MigLayout migLayout = new MigLayout();
