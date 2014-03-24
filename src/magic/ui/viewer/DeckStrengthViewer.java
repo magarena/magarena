@@ -208,7 +208,7 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             progressBar.setValue(0);
             setStrength(0);
 
-            while (running.get()&&!testDuel.isFinished()) {
+            while (running.get() && !isDeckStrengthTestFinished(testDuel)) {
                 gameLabel.setText("Game "+(testDuel.getGamesPlayed()+1));
                 final MagicGame game=testDuel.nextGame(false);
                 controller=new GameController(game);
@@ -224,6 +224,10 @@ public class DeckStrengthViewer extends JPanel implements ActionListener {
             startButton.setEnabled(true);
             startButton.repaint();
             calculateThread=null;
+        }
+
+        private boolean isDeckStrengthTestFinished(final MagicDuel testDuel) {
+            return testDuel.getGamesPlayed() >= testDuel.getGamesTotal();
         }
 
         public void halt() {
