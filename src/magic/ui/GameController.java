@@ -494,40 +494,12 @@ public class GameController implements ILogBookListener {
      */
     public void runGame() {
         final long startTime=System.currentTimeMillis();
-
         running.set(true);
         while (running.get()) {
-
             if (game.isFinished()) {
-
-                if (isDeckStrMode) {
-                    game.advanceDuel();
-                    running.set(false);
-                } else {
-                    game.logMessages();
-                    clearValidChoices();
-                    showEndGameMessage();
-                    playEndGameSoundEffect();
-                    enableForwardButton();
-
-                    if (!selfMode && waitForInputOrUndo()) {
-                        performUndo();
-                        update();
-                    } else {
-                        game.advanceDuel();
-                        SwingUtilities.invokeLater(new Runnable() {
-                            public void run() {
-                                gamePanel.close();
-                            }
-                        });
-                        running.set(false);
-                    }
-                }
-
+                doNextActionOnGameFinished();
             } else {
-
                 executeNextEventOrPhase();
-
                 if (isDeckStrMode) {
                     if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
                         System.err.println("WARNING. Max time for AI game exceeded");
@@ -536,11 +508,41 @@ public class GameController implements ILogBookListener {
                 } else {
                     update();
                 }
-
             }
         }
-
     }
+
+    /**
+     * Once a game has finished determine what happens next.
+     * <p>
+     * If running an automated game then automatically start next game/duel.
+     * If an interactive game then wait for input from user.
+     */
+    private void doNextActionOnGameFinished() {
+        if (isDeckStrMode) {
+            game.advanceDuel();
+            running.set(false);
+        } else {
+            game.logMessages();
+            clearValidChoices();
+            showEndGameMessage();
+            playEndGameSoundEffect();
+            enableForwardButton();
+            if (!selfMode && waitForInputOrUndo()) {
+                performUndo();
+                update();
+            } else {
+                game.advanceDuel();
+                SwingUtilities.invokeLater(new Runnable() {
+                    public void run() {
+                        gamePanel.close();
+                    }
+                });
+                running.set(false);
+            }
+        }
+    }
+
 
     private void executeNextEventOrPhase() {
         if (game.hasNextEvent()) {
