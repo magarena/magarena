@@ -525,19 +525,7 @@ public class GameController implements ILogBookListener {
                 }
             }
 
-            if (game.hasNextEvent()) {
-                final MagicEvent event=game.getNextEvent();
-                if (event instanceof MagicPriorityEvent) {
-                    game.logMessages();
-                }
-                if (event.hasChoice()) {
-                    executeNextEventWithChoices(event);
-                } else {
-                    game.executeNextEvent();
-                }
-            } else {
-                game.executePhase();
-            }
+            executeNextEventOrPhase();
 
             if (isDeckStrMode) {
                 if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
@@ -549,6 +537,26 @@ public class GameController implements ILogBookListener {
             }
         }
         running.set(false);
+    }
+
+    private void executeNextEventOrPhase() {
+        if (game.hasNextEvent()) {
+            executeNextEvent();
+        } else {
+            game.executePhase();
+        }
+    }
+
+    private void executeNextEvent() {
+        final MagicEvent event=game.getNextEvent();
+        if (event instanceof MagicPriorityEvent) {
+            game.logMessages();
+        }
+        if (event.hasChoice()) {
+            executeNextEventWithChoices(event);
+        } else {
+            game.executeNextEvent();
+        }
     }
 
     private void showEndGameMessage() {
