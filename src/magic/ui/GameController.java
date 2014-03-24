@@ -497,46 +497,49 @@ public class GameController implements ILogBookListener {
 
         running.set(true);
         while (running.get()) {
+
             if (game.isFinished()) {
 
                 if (isDeckStrMode) {
                     game.advanceDuel();
-                    return;
-                }
-
-                game.logMessages();
-                clearValidChoices();
-                showEndGameMessage();
-                playEndGameSoundEffect();
-                enableForwardButton();
-
-                if (!selfMode && waitForInputOrUndo()) {
-                    performUndo();
-                    update();
-                    continue;
+                    running.set(false);
                 } else {
-                    game.advanceDuel();
-                    SwingUtilities.invokeLater(new Runnable() {
-                        public void run() {
-                            gamePanel.close();
-                        }
-                    });
-                    return;
-                }
-            }
+                    game.logMessages();
+                    clearValidChoices();
+                    showEndGameMessage();
+                    playEndGameSoundEffect();
+                    enableForwardButton();
 
-            executeNextEventOrPhase();
-
-            if (isDeckStrMode) {
-                if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
-                    System.err.println("WARNING. Max time for AI game exceeded");
-                    break;
+                    if (!selfMode && waitForInputOrUndo()) {
+                        performUndo();
+                        update();
+                    } else {
+                        game.advanceDuel();
+                        SwingUtilities.invokeLater(new Runnable() {
+                            public void run() {
+                                gamePanel.close();
+                            }
+                        });
+                        running.set(false);
+                    }
                 }
+
             } else {
-                update();
+
+                executeNextEventOrPhase();
+
+                if (isDeckStrMode) {
+                    if (System.currentTimeMillis() - startTime > MAX_TEST_MODE_DURATION) {
+                        System.err.println("WARNING. Max time for AI game exceeded");
+                        running.set(false);
+                    }
+                } else {
+                    update();
+                }
+
             }
         }
-        running.set(false);
+
     }
 
     private void executeNextEventOrPhase() {
