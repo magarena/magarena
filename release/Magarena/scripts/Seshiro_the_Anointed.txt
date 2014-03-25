@@ -8,5 +8,5 @@ subtype=Snake,Monk
 cost={4}{G}{G}
 pt=3/4
 ability=lord other Snake creatures you control get +2/+2;\
-        lord Snake creatures you control have deals combat damage to a player effect PN may draw a card.
+        lord Snake creatures you control have deals combat damage to a player effect You may draw a card.
 timing=main

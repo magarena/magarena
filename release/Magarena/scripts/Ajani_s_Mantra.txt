@@ -5,5 +5,5 @@ value=2.941
 rarity=C
 type=Enchantment
 cost={1}{W}
-ability=your upkeep effect PN may gain 1 life.
+ability=your upkeep effect You may gain 1 life.
 timing=enchantment

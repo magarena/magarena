@@ -7,5 +7,5 @@ type=Creature
 subtype=Harpy,Mercenary
 cost={B}
 pt=2/1
-ability=flying;your upkeep effect PN may pay {2}. If you don't, sacrifice SN.
+ability=flying;your upkeep effect You may pay {2}. If you don't, sacrifice SN.
 timing=main

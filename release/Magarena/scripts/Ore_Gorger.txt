@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={3}{R}{R}
 pt=3/1
-ability=spirit or arcane effect PN may Destroy target nonbasic land.
+ability=spirit or arcane effect You may Destroy target nonbasic land.
 timing=main

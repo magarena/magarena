@@ -8,5 +8,5 @@ subtype=Spirit
 cost={4}{U}
 pt=2/2
 ability=enters effect Return target creature to its owner's hand.;\
-        spirit or arcane effect PN may return SN to its owner's hand.
+        spirit or arcane effect You may return SN to its owner's hand.
 timing=main

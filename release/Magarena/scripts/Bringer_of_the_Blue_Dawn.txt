@@ -9,5 +9,5 @@ cost={7}{U}{U}
 pt=5/5
 ability=alt cost {W}{U}{B}{R}{G} named Alt;\
         trample;\
-        your upkeep effect PN may draw two cards.
+        your upkeep effect You may draw two cards.
 timing=main

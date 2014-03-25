@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=2/2
-ability=enters effect PN may destroy target enchantment.
+ability=enters effect You may destroy target enchantment.
 timing=main

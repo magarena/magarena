@@ -7,5 +7,5 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={3}{W}
 pt=2/2
-ability=flying;attacks effect PN may Target creature gains flying until end of turn.
+ability=flying;attacks effect You may Target creature gains flying until end of turn.
 timing=main

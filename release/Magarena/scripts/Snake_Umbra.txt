@@ -8,6 +8,6 @@ subtype=Aura
 cost={2}{G}
 given_pt=1/1
 ability=totem armor
-given_ability=deals damage to an opponent effect PN may draw a card.
+given_ability=deals damage to an opponent effect You may draw a card.
 timing=aura
 enchant=pump,pos creature

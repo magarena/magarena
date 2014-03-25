@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={3}{B}
 pt=2/2
-ability=untapped effect PN may have target player discard a card.
+ability=untapped effect You may have target player discard a card.
 timing=main

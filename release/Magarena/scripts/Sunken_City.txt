@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 cost={U}{U}
 ability=lord blue creatures get +1/+1;\
-        your upkeep effect PN may pay {U}{U}. If you don't, sacrifice SN.
+        your upkeep effect You may pay {U}{U}. If you don't, sacrifice SN.
 static=all
 timing=enchantment
