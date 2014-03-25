@@ -7,5 +7,5 @@ type=Creature
 subtype=Minotaur,Shaman
 cost={3}{B}{B}
 pt=3/3
-ability=untapped effect Target creature you control gains intimidate until end of turn.
+ability=Whenever SN becomes untapped, target creature you control gains intimidate until end of turn.
 timing=main

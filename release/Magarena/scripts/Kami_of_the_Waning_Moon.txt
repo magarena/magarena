@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={2}{B}
 pt=1/1
-ability=spirit or arcane effect Target creature gains fear until end of turn.
+ability=Whenever you cast a Spirit or Arcane spell, target creature gains fear until end of turn.
 timing=main

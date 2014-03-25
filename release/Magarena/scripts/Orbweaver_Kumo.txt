@@ -8,5 +8,5 @@ subtype=Spirit
 cost={4}{G}{G}
 pt=3/4
 ability=reach;\
-        spirit or arcane effect SN gains forestwalk until end of turn.
+        Whenever you cast a Spirit or Arcane spell, SN gains forestwalk until end of turn.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={1}{U}
 pt=2/1
-ability=untapped effect Target creature an opponent controls gets -3/-0 until end of turn.
+ability=Whenever SN becomes untapped, target creature an opponent controls gets -3/-0 until end of turn.
 timing=main

@@ -325,7 +325,7 @@ public enum MagicAbility {
             ));
         }
     },
-    UntappedEffect("untapped effect", 10) {
+    UntappedEffect("Whenever SN becomes untapped,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenSelfBecomesUntappedTrigger.create(
                 MagicRuleEventAction.create(arg)
@@ -797,7 +797,7 @@ public enum MagicAbility {
             ));
         }
     },
-    SpiritOrArcaneEffect("spirit or arcane effect", 10) {
+    SpiritOrArcaneEffect("Whenever you cast a Spirit or Arcane spell,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenYouCastSpiritOrArcaneTrigger.create(
                 MagicRuleEventAction.create(arg)

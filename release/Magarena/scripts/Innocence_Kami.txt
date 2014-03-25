@@ -7,5 +7,6 @@ type=Creature
 subtype=Spirit
 cost={3}{W}{W}
 pt=2/3
-ability=cost {W},{T}:Tap target creature.;spirit or arcane effect Untap SN.
+ability=cost {W},{T}:Tap target creature.;\
+        Whenever you cast a Spirit or Arcane spell, untap SN.
 timing=main
