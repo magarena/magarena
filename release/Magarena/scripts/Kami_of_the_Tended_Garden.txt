@@ -8,5 +8,5 @@ subtype=Spirit
 cost={3}{G}
 pt=4/4
 ability=soulshift 3;\
-        At the beginning of your upkeep, you may pay {G}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {G}.
 timing=main

@@ -7,5 +7,7 @@ type=Creature
 subtype=Elemental
 cost={3}{G}{G}{G}
 pt=7/7
-ability=At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.;trample;regenerate {1}{G}
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {G}{G}.;\
+        trample;\
+        regenerate {1}{G}
 timing=main

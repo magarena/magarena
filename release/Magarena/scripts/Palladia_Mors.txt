@@ -9,5 +9,5 @@ cost={2}{R}{R}{G}{G}{W}{W}
 pt=7/7
 ability=flying;\
         trample;\
-        At the beginning of your upkeep, you may pay {R}{G}{W}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {R}{G}{W}.
 timing=main

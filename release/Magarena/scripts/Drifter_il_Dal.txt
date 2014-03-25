@@ -8,5 +8,5 @@ subtype=Human,Wizard
 cost={U}
 pt=2/1
 ability=shadow;\
-        At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, sacrifice SN unless you pay {U}.
 timing=main
