@@ -1031,12 +1031,13 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.addEvent(new MagicSearchIntoHandEvent(
                         event,
-                        new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library")
+                        choice
                     ));      
                 }
             };
@@ -1055,19 +1056,20 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     if (matcher.group("tapped").contains("tapped")) {
                         game.addEvent(new MagicSearchOntoBattlefieldEvent(
                             event,
-                            new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library"),
+                            choice,
                             MagicPlayMod.TAPPED
                         ));
                     } else {
                         game.addEvent(new MagicSearchOntoBattlefieldEvent(
                             event,
-                            new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library")
+                            choice
                         ));
                     }
                 }
