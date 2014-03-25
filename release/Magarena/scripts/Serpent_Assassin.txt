@@ -7,5 +7,5 @@ type=Creature
 subtype=Snake,Assassin
 cost={3}{B}{B}
 pt=2/2
-ability=enters effect PN may Destroy target nonblack creature.
+ability=enters effect You may Destroy target nonblack creature.
 timing=main

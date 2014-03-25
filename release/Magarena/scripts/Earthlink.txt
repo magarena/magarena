@@ -5,6 +5,6 @@ value=3.283
 rarity=R
 type=Enchantment
 cost={3}{B}{R}{G}
-ability=your upkeep effect PN may pay {2}. If you don't, sacrifice SN.
+ability=your upkeep effect You may pay {2}. If you don't, sacrifice SN.
 timing=enchantment
 requires_groovy_code

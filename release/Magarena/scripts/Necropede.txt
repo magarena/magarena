@@ -8,5 +8,5 @@ subtype=Insect
 cost={2}
 pt=1/1
 ability=infect;\
-        dies effect PN may put a -1/-1 counter on target creature.
+        dies effect You may put a -1/-1 counter on target creature.
 timing=main

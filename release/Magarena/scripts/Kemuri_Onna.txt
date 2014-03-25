@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=3/3
-ability=enters effect Target player discards a card.;spirit or arcane effect PN may return SN to its owner's hand.
+ability=enters effect Target player discards a card.;spirit or arcane effect You may return SN to its owner's hand.
 timing=main

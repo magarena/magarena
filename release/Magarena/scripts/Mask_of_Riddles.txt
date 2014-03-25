@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={U}{B}
 equip={2}
-given_ability=fear;deals combat damage to a player effect PN may draw a card.
+given_ability=fear;deals combat damage to a player effect You may draw a card.
 timing=equipment

@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={3}{G}
 pt=2/1
-ability=enters effect PN draws a card.;spirit or arcane effect PN may return SN to its owner's hand.
+ability=enters effect PN draws a card.;spirit or arcane effect You may return SN to its owner's hand.
 timing=main

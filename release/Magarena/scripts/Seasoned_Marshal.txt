@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}{W}
 pt=2/2
-ability=attacks effect PN may Tap target creature.
+ability=attacks effect You may Tap target creature.
 timing=main

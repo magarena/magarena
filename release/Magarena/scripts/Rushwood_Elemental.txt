@@ -8,5 +8,5 @@ subtype=Elemental
 cost={G}{G}{G}{G}{G}
 pt=4/4
 ability=trample;\
-        your upkeep effect PN may Put a +1/+1 counter on SN.
+        your upkeep effect You may Put a +1/+1 counter on SN.
 timing=main
