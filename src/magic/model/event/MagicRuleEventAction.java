@@ -1144,7 +1144,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TokenSingle(
-        "pn puts (a|an) (?<name>[^\\.]*) onto the battlefield\\.",
+        "(pn )?put(s)? (a|an) (?<name>[^\\.]*) onto the battlefield\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1163,7 +1163,7 @@ public enum MagicRuleEventAction {
         }
     },
     TokenMany(
-        "pn puts (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield\\.",
+        "(pn )?put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1185,7 +1185,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillSelf(
-        "PN puts the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
+        "(pn )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
         MagicTiming.Draw, 
         "Mill"
     ) {
@@ -1240,7 +1240,7 @@ public enum MagicRuleEventAction {
         }
     },
     Scry(
-        "PN scry 1\\.",
+        "(pn )?scry 1\\.",
         MagicTiming.Draw,
         "Scry"
     ) {
