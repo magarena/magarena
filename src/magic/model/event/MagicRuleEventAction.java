@@ -1469,6 +1469,7 @@ public enum MagicRuleEventAction {
         final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
+        final String contextRule = ruleWithoutMay.replace("your"," PN's").replace("you","PN");
 
         return rule.startsWith("PN may ") ?
             new MagicSourceEvent(ruleAction, matcher) {
@@ -1491,7 +1492,7 @@ public enum MagicRuleEventAction {
                                 }
                             }
                         },
-                        "PN may$ " + ruleWithoutMay + "$"
+                        "PN may$ " + contextRule + "$"
                     );
                 }
             }:
