@@ -30,6 +30,7 @@ class TestSelfSac extends TestGameBuilder {
         addToLibrary(P,"Swamp",10);
         createPermanent(game,P,"Swamp",false,4);
         createPermanent(game,P,"Fallen Angel",false,1);
+        createPermanent(game,P,"Breeding Pit",false,1);
 
         P = player;
 
