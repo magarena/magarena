@@ -7,6 +7,7 @@ import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicRandom;
+import magic.model.MagicGameReport;
 import magic.ui.GameController;
 
 import java.io.File;
@@ -149,7 +150,9 @@ public class DeckStrCal {
 
     public static void main(final String[] args) {
         // setup the handler for any uncaught exception
-        Thread.setDefaultUncaughtExceptionHandler(new magic.model.MagicGameReport());
+        final MagicGameReport reporter = new MagicGameReport();
+        reporter.disableNotification();
+        Thread.setDefaultUncaughtExceptionHandler(reporter);
 
         if (!parseArguments(args)) {
             System.err.println("Usage: java -cp <path to Magarena.jar/exe> magic.DeckStrCal --deck1 <.dec file> --deck2 <.dec file> [options]");

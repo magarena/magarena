@@ -27,19 +27,26 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
     // is called multiple times (eg. from a timer running on a separate thread)
     // only the first case is actually handled. This prevents multiple
     // error notification dialogs being created.
-    private static boolean isRunning = false;
+    private boolean isRunning = false;
+    private boolean notifyUser = true;
 
     @Override
     public void uncaughtException(final Thread th, final Throwable ex) {
         reportException(th, ex);
     }
 
-    public static void reportException(final Thread th, final Throwable ex) {
+    public void disableNotification() {
+        notifyUser = false;
+    }
+
+    public void reportException(final Thread th, final Throwable ex) {
         if (!isRunning) {
             isRunning = true;
             MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
             if (MagicMain.rootFrame != null) {
                 doScreenShot(MagicMain.rootFrame.getContentPane());
+            }
+            if (notifyUser) {
                 doNotifyUser();
             }
             System.exit(1);
