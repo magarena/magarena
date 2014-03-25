@@ -7,5 +7,8 @@ type=Creature
 subtype=Bird,Rebel,Soldier
 cost={2}{W}
 pt=2/3
-ability=flying;vanishing 3;enters effect PN gains 2 life.;leaves effect PN gains 2 life.
+ability=flying;\
+        vanishing 3;\
+        enters effect PN gains 2 life.;\
+        When SN leaves the battlefield, gain 2 life.
 timing=main

@@ -10,5 +10,5 @@ cost={5}{R}
 pt=4/2
 ability=echo {5}{R};\
         enters effect SN deals 2 damage to target creature.;\
-        leaves effect SN deals 4 damage to target creature.;
+        When SN leaves the battlefield, SN deals 4 damage to target creature.
 timing=main

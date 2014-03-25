@@ -627,7 +627,7 @@ public enum MagicAbility {
             ));
         }
     },
-    LeavesEffect("leaves effect", 10) {
+    LeavesEffect("When SN leaves the battlefield,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenSelfLeavesPlayTrigger.create(
                 MagicRuleEventAction.create(arg)

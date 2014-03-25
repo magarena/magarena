@@ -9,5 +9,5 @@ cost={1}{R}
 pt=3/3
 ability=vanishing 2;\
         enters effect SN deals 1 damage to target player.;\
-        leaves effect SN deals 1 damage to target player.
+        When SN leaves the battlefield, SN deals 1 damage to target player.
 timing=main

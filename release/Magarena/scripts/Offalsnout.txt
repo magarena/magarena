@@ -8,6 +8,6 @@ subtype=Elemental
 cost={2}{B}
 pt=2/2
 ability=flash;\
-        leaves effect Exile target card from a graveyard.;\
+        When SN leaves the battlefield, exile target card from a graveyard.;\
         evoke {B}
 timing=main

@@ -7,5 +7,6 @@ type=Creature
 subtype=Elemental
 cost={5}{R}
 pt=6/1
-ability=leaves effect SN deals 6 damage to target creature.;evoke {1}{G}{G}
+ability=When SN leaves the battlefield, SN deals 6 damage to target creature.;\
+        evoke {1}{G}{G}
 timing=main
