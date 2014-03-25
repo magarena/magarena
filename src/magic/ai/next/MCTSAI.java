@@ -117,10 +117,12 @@ public class MCTSAI implements MagicAI {
             final MagicPlayer scorePlayer) {
 
         // Determine possible choices
-        MagicGame choiceGame = new MagicGame(startGame, scorePlayer);
-        final MagicEvent event = choiceGame.getNextEvent();
-        RCHOICES = event.getArtificialChoiceResults(choiceGame);
-        choiceGame = null;
+        final MagicGame aiGame = new MagicGame(startGame, scorePlayer);
+        if (!CHEAT) {
+            aiGame.hideHiddenCards();
+        }
+        final MagicEvent event = aiGame.getNextEvent();
+        RCHOICES = event.getArtificialChoiceResults(aiGame);
 
         final int size = RCHOICES.size();
 
@@ -133,13 +135,13 @@ public class MCTSAI implements MagicAI {
         }
 
         //normal: max time is 1000 * level
-        int MAX_TIME = 1000 * startGame.getArtificialLevel(scorePlayer.getIndex());
+        int MAX_TIME = 1000 * aiGame.getArtificialLevel(scorePlayer.getIndex());
         int MAX_SIM = Integer.MAX_VALUE;
 
         final long START_TIME = System.currentTimeMillis();
 
         //root represents the start state
-        final MCTSGameTree root = MCTSGameTree.getNode(CACHE, startGame, RCHOICES);
+        final MCTSGameTree root = MCTSGameTree.getNode(CACHE, aiGame, RCHOICES);
 
         log("MCTS2 cached=" + root.getNumSim());
 
@@ -165,10 +167,7 @@ public class MCTSAI implements MagicAI {
              sims++) {
 
             //clone the MagicGame object for simulation
-            final MagicGame rootGame = new MagicGame(startGame, scorePlayer);
-            if (!CHEAT) {
-                rootGame.hideHiddenCards();
-            }
+            final MagicGame rootGame = new MagicGame(aiGame, scorePlayer);
 
             //pass in a clone of the state,
             //genNewTreeNode grows the tree by one node
