@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Scout
 cost={1}{G}
 pt=2/1
-ability=dies effect PN may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability=dies effect You may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main
