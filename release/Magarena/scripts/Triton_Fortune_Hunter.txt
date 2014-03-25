@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Soldier
 cost={2}{U}
 pt=2/2
-ability=heroic effect PN draws a card.
+ability=heroic effect Draw a card.
 timing=main

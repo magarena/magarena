@@ -6,6 +6,7 @@ rarity=R
 type=Legendary,Creature
 subtype=Spirit
 cost={4}{U}{U}
-ability=flying;cost {4},Return a land you control to its owner's hand:PN draws a card.
+ability=flying;\
+        cost {4},Return a land you control to its owner's hand: Draw a card.
 timing=main
 requires_groovy_code=Maro

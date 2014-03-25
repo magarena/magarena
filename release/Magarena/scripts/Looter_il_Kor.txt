@@ -7,5 +7,5 @@ type=Creature
 subtype=Kor,Rogue
 cost={1}{U}
 pt=1/1
-ability=shadow;deals damage to an opponent effect PN draws a card, then discards a card.
+ability=shadow;deals damage to an opponent effect draw a card, then discard a card.
 timing=main

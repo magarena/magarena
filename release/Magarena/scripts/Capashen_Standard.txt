@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={W}
 given_pt=+1/+1
-ability=cost {2},Sacrifice SN:PN draws a card.
+ability=cost {2},Sacrifice SN: Draw a card.
 enchant=pump,pos creature
 timing=enchantment

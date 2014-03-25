@@ -7,5 +7,6 @@ type=Artifact,Creature
 subtype=Myr
 cost={2}{U}
 pt=2/1
-ability=cost {2}:SN gains flying until end of turn.;cost {2},Sacrifice SN:PN draws a card.
+ability=cost {2}: SN gains flying until end of turn.;\
+        cost {2},Sacrifice SN: Draw a card.
 timing=artifact

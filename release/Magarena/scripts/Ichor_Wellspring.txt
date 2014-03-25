@@ -5,6 +5,6 @@ value=3.829
 rarity=C
 type=Artifact
 cost={2}
-ability=When SN enters the battlefield, PN draws a card.;\
+ability=When SN enters the battlefield, draw a card.;\
         When SN dies, draw a card.
 timing=artifact

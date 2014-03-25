@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=0/1
-ability=exalted;cost {U},{T}:PN draws a card, then discards a card.
+ability=exalted;\
+        cost {U},{T}: Draw a card, then discard a card.
 timing=main

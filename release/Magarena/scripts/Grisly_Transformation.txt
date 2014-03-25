@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 enchant=unblockable,pos creature
-ability=When SN enters the battlefield, PN draws a card.
+ability=When SN enters the battlefield, draw a card.
 given_ability=intimidate
 timing=aura

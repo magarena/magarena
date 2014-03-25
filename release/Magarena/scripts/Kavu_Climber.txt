@@ -7,5 +7,5 @@ type=Creature
 subtype=Kavu
 cost={3}{G}{G}
 pt=3/3
-ability=When SN enters the battlefield, PN draws a card.
+ability=When SN enters the battlefield, draw a card.
 timing=main

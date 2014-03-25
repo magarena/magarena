@@ -8,5 +8,5 @@ subtype=Wolf
 cost={3}{G}{G}
 pt=4/5
 ability=cumulative upkeep {2};\
-        When SN enters the battlefield, PN draws a card.
+        When SN enters the battlefield, draw a card.
 timing=main

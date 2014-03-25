@@ -8,5 +8,5 @@ subtype=Human,Knight
 cost={4}{U}
 pt=3/2
 ability=flying;\
-        When SN enters the battlefield, PN draws a card.
+        When SN enters the battlefield, draw a card.
 timing=main

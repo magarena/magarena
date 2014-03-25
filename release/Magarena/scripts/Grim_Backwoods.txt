@@ -5,5 +5,5 @@ value=3.500
 rarity=R
 type=Land
 ability=tap add mana {1};\
-        cost {2}{B}{G}, {T}, Sacrifice a creature: PN draws a card.
+        cost {2}{B}{G}, {T}, Sacrifice a creature: Draw a card.
 timing=land

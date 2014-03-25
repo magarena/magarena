@@ -9,5 +9,5 @@ cost={U}{B}
 pt=1/1
 ability=flying;\
         deathtouch;\
-        When SN enters the battlefield, PN draws a card.
+        When SN enters the battlefield, draw a card.
 timing=main

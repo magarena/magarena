@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=1/1
-ability=cost Sacrifice SN: PN draws a card.
+ability=cost Sacrifice SN: Draw a card.
 timing=main

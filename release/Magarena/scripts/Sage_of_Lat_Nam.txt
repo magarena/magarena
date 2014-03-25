@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Artificer
 cost={1}{U}
 pt=1/2
-ability=cost {T},Sacrifice an artifact:PN draws a card.
+ability=cost {T},Sacrifice an artifact: Draw a card.
 timing=main
