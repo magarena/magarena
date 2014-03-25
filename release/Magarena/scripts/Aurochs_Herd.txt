@@ -8,6 +8,6 @@ subtype=Aurochs
 cost={5}{G}
 pt=4/4
 ability=trample;\
-    enters effect PN may search your library for an Aurochs card, reveal it, and put it into your hand. Then shuffle your library.
+    enters effect You may search your library for an Aurochs card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
 requires_groovy_code=Aurochs
