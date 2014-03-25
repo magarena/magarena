@@ -1,0 +1,11 @@
+name=Ramosian Sergeant
+url=http://magiccards.info/mm/en/39.html
+image=http://mtgimage.com/card/ramosian%20sergeant.jpg
+value=2.372
+rarity=C
+type=Creature
+subtype=Human,Rebel
+cost={W}
+pt=1/1
+timing=main
+requires_groovy_code
