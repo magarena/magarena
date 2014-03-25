@@ -1,0 +1,10 @@
+name=Cateran Enforcer
+url=http://magiccards.info/mm/en/121.html
+image=http://magiccards.info/scans/en/mm/121.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Horror,Mercenary
+cost={3}{B}{B}
+pt=4/3
+timing=main
