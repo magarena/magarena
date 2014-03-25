@@ -1,0 +1,11 @@
+name=Ramosian Commander
+url=http://magiccards.info/mm/en/36.html
+image=http://mtgimage.com/card/ramosian%20commander.jpg
+value=2.372
+rarity=U
+type=Creature
+subtype=Human,Rebel
+cost={2}{W}{W}
+pt=2/4
+timing=main
+requires_groovy_code
