@@ -599,7 +599,7 @@ public enum MagicAbility {
             ));
         }
     },
-    EndStepEffect("end step effect", 0) {
+    EndStepEffect("At the beginning of the end step,", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicAtEndOfTurnTrigger.create(
                 MagicRuleEventAction.create(arg)
