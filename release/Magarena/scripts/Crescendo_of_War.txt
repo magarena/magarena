@@ -5,7 +5,7 @@ value=3.529
 rarity=R
 type=Enchantment
 cost={3}{W}
-ability=each upkeep effect Put a strife counter on SN.
+ability=At the beginning of each upkeep, put a strife counter on SN.
 static=all
 timing=enchantment
 requires_groovy_code

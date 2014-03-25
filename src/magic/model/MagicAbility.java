@@ -776,7 +776,7 @@ public enum MagicAbility {
             ));
         }
     },
-    EachUpkeepEffect("each upkeep effect", 10) {
+    EachUpkeepEffect("At the beginning of each upkeep,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicAtUpkeepTrigger.create(
                 MagicRuleEventAction.create(arg)
