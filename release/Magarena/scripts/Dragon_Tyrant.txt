@@ -7,5 +7,9 @@ type=Creature
 subtype=Dragon
 cost={8}{R}{R}
 pt=6/6
-ability=flying;trample;double strike;your upkeep effect You may pay {R}{R}{R}{R}. If you don't, sacrifice SN.;cost {R}:SN gets +1/+0 until end of turn.
+ability=flying;\
+        trample;\
+        double strike;\
+        At the beginning of your upkeep, you may pay {R}{R}{R}{R}. If you don't, sacrifice SN.;\
+        cost {R}:SN gets +1/+0 until end of turn.
 timing=main

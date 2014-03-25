@@ -7,5 +7,6 @@ type=Creature
 subtype=Illusion
 cost={3}{U}
 pt=4/1
-ability=flying;your upkeep effect You may pay {U}. If you don't, sacrifice SN.
+ability=flying;\
+        At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
 timing=main

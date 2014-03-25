@@ -5,6 +5,6 @@ value=3.773
 rarity=R
 type=Artifact
 cost={6}
-ability=your upkeep effect PN draws a card.;\
+ability=At the beginning of your upkeep, draw a card.;\
         cost {T}: SN deals 1 damage to target creature or player.
 timing=artifact

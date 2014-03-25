@@ -7,5 +7,5 @@ type=Creature
 subtype=Vedalken,Wizard
 cost={3}{U}
 pt=1/4
-ability=your upkeep effect You may put a charge counter on target artifact.
+ability=At the beginning of your upkeep, you may put a charge counter on target artifact.
 timing=main

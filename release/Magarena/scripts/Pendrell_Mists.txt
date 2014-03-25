@@ -5,6 +5,6 @@ value=4.172
 rarity=R
 type=Enchantment
 cost={3}{U}
-ability=lord all creatures have "your upkeep effect You may pay {1}. If you don't, sacrifice SN."
+ability=lord all creatures have "At the beginning of your upkeep, you may pay {1}. If you don't, sacrifice SN."
 static=all
 timing=enchantment

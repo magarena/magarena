@@ -8,5 +8,5 @@ subtype=Vampire
 cost={2}{U}{B}
 pt=4/4
 ability=flying;\
-        your upkeep effect PN loses 1 life.
+        At the beginning of your upkeep, lose 1 life.
 timing=main

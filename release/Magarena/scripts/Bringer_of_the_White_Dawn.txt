@@ -9,5 +9,5 @@ cost={7}{W}{W}
 pt=5/5
 ability=alt cost {W}{U}{B}{R}{G} named Alt;\
         trample;\
-        your upkeep effect You may return target artifact card from your graveyard to the battlefield.
+        At the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 timing=main

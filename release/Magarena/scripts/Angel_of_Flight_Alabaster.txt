@@ -8,5 +8,5 @@ subtype=Angel
 cost={4}{W}
 pt=4/4
 ability=flying;\
-        your upkeep effect Return target Spirit card from your graveyard to your hand.
+        At the beginning of your upkeep, return target Spirit card from your graveyard to your hand.
 timing=main

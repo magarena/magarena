@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=flash;your upkeep effect PN loses 1 life.
+ability=flash;\
+        At the beginning of your upkeep, lose 1 life.
 enchant=pump,pos creature
 timing=pumpFlash
 requires_groovy_code

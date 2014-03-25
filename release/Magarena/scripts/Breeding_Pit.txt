@@ -5,6 +5,6 @@ value=3.297
 rarity=U
 type=Enchantment
 cost={3}{B}
-ability=your upkeep effect You may pay {B}{B}. If you don't, sacrifice SN.;\
+ability=At the beginning of your upkeep, you may pay {B}{B}. If you don't, sacrifice SN.;\
         your end step effect PN puts a 0/1 black Thrull creature token onto the battlefield.
 timing=enchantment

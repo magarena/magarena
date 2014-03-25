@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={3}{W}
 pt=2/6
-ability=lord all creatures have "your upkeep effect You may pay {1}. If you don't, sacrifice SN."
+ability=lord all creatures have "At the beginning of your upkeep, you may pay {1}. If you don't, sacrifice SN."
 static=all
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Griffin
 cost={5}{W}
 pt=3/3
-ability=your upkeep effect Tap target creature.
+ability=At the beginning of your upkeep, tap target creature.
 timing=main
