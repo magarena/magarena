@@ -16,8 +16,8 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicCDA;
 
 public class MagicAbilityList implements MagicAbilityStore {
-    private Set<MagicAbility> abilities = 
-        EnumSet.noneOf(MagicAbility.class);
+    private List<MagicAbility> abilities = 
+        new LinkedList<MagicAbility>();
 
     private List<MagicTrigger<?>> triggers = 
         new LinkedList<MagicTrigger<?>>();
@@ -38,6 +38,10 @@ public class MagicAbilityList implements MagicAbilityStore {
         } else {
             throw new RuntimeException("Unable to convert " + ccd + " to a given ability");
         }
+    }
+
+    public MagicAbility getFirst() {
+        return abilities.get(0);
     }
     
     public void addAbility(final MagicAbility ability) {

@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={R}
 given_ability=haste
-ability=end step effect Return SN to its owner's hand.
+ability=At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
 enchant=haste,pos creature

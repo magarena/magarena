@@ -7,4 +7,4 @@ subtype=Ooze
 color=g
 cost={0}
 pt=2/2
-ability=dies effect PN puts two 1/1 green Ooze creature tokens onto the battlefield.
+ability=When SN dies, put two 1/1 green Ooze creature tokens onto the battlefield.

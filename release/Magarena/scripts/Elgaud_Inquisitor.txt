@@ -8,5 +8,5 @@ subtype=Human,Cleric
 cost={3}{W}
 pt=2/2
 ability=lifelink;\
-        dies effect PN puts a 1/1 white Spirit creature token with flying onto the battlefield.
+        When SN dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=main

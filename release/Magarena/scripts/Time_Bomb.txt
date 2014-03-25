@@ -5,6 +5,6 @@ value=3.521
 rarity=R
 type=Artifact
 cost={4}
-ability=your upkeep effect Put a time counter on SN.
+ability=At the beginning of your upkeep, put a time counter on SN.
 timing=artifact
 requires_groovy_code

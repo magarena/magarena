@@ -7,5 +7,9 @@ type=Legendary,Creature
 subtype=Elder,Dragon
 cost={2}{B}{B}{R}{R}{G}{G}
 pt=7/7
-ability=flying;cost {B}:SN gets +1/+0 until end of turn.;cost {R}:SN gets +1/+0 until end of turn.;cost {G}:SN gets +1/+0 until end of turn.;your upkeep effect You may pay {B}{R}{G}. If you don't, sacrifice SN.
+ability=flying;\
+        cost {B}: SN gets +1/+0 until end of turn.;\
+        cost {R}: SN gets +1/+0 until end of turn.;\
+        cost {G}:SN gets +1/+0 until end of turn.;\
+        At the beginning of your upkeep, sacrifice SN unless you pay {B}{R}{G}.
 timing=main

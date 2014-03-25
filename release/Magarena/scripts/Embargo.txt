@@ -6,5 +6,5 @@ rarity=R
 type=Enchantment
 cost={3}{U}
 ability=lord nonland permanents have doesn't untap during untap step;\
-        your upkeep effect PN loses 2 life.
+        At the beginning of your upkeep, lose 2 life.
 timing=enchantment

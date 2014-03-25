@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={3}{G}
 pt=4/4
-ability=your upkeep effect Return a creature you control to its owner's hand.
+ability=At the beginning of your upkeep, return a creature you control to its owner's hand.
 timing=main

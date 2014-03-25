@@ -736,7 +736,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             return new MagicCondition[]{
                 MagicConditionFactory.NoAbility(ability)
             };
@@ -762,7 +762,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             switch (ability) {
                 case Haste:
                 case Vigilance:
@@ -776,7 +776,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             switch (ability) {
                 case Deathtouch: 
                     return MagicDeathtouchTargetPicker.create();
@@ -1031,12 +1031,13 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.addEvent(new MagicSearchIntoHandEvent(
                         event,
-                        new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library")
+                        choice
                     ));      
                 }
             };
@@ -1055,19 +1056,20 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     if (matcher.group("tapped").contains("tapped")) {
                         game.addEvent(new MagicSearchOntoBattlefieldEvent(
                             event,
-                            new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library"),
+                            choice,
                             MagicPlayMod.TAPPED
                         ));
                     } else {
                         game.addEvent(new MagicSearchOntoBattlefieldEvent(
                             event,
-                            new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library")
+                            choice
                         ));
                     }
                 }
@@ -1221,7 +1223,7 @@ public enum MagicRuleEventAction {
         }
     },
     SacrificeUnless(
-        "pay (?<cost>[^\\.]*)\\. If you don't, sacrifice SN\\.", 
+        "sacrifice SN unless you pay (?<cost>[^\\.]*)\\.", 
         MagicTiming.None, 
         "Sacrifice"
     ) {
@@ -1460,7 +1462,7 @@ public enum MagicRuleEventAction {
     }
 
     public static MagicSourceEvent create(final String rule) {
-        final String ruleWithoutMay = rule.replaceFirst("^You may ", "");
+        final String ruleWithoutMay = rule.replaceFirst("^(Y|y)ou may ", "");
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final Matcher matcher = ruleAction.matched(effect);
@@ -1471,7 +1473,7 @@ public enum MagicRuleEventAction {
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
         final String contextRule = ruleWithoutMay.replace("your"," PN's").replace("you","PN");
 
-        return rule.startsWith("You may ") ?
+        return rule.startsWith("You may ") || rule.startsWith("you may ") ?
             new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
@@ -1504,7 +1506,7 @@ public enum MagicRuleEventAction {
                         choice,
                         picker,
                         action,
-                        rule + "$"
+                        capitalize(rule) + "$"
                     );
                 }
             };

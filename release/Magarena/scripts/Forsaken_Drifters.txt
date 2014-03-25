@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=4/2
-ability=dies effect PN puts the top four cards of his or her library into his or her graveyard.
+ability=When SN dies, put the top four cards of his or her library into his or her graveyard.
 timing=main

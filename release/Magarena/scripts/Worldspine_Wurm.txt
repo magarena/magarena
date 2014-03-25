@@ -7,6 +7,7 @@ type=Creature
 subtype=Wurm
 cost={8}{G}{G}{G}
 pt=15/15
-ability=trample;graveyard to library;\
-        dies effect PN puts three 5/5 green Wurm creature tokens with trample onto the battlefield.
+ability=trample;\
+        graveyard to library;\
+        When SN dies, put three 5/5 green Wurm creature tokens with trample onto the battlefield.
 timing=main

@@ -5,5 +5,5 @@ value=3.706
 rarity=R
 type=Enchantment
 cost={1}{U}
-ability=dies effect PN draws three cards.
+ability=When SN dies, draw three cards.
 timing=enchantment

@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.addEvent(MagicRuleEventAction.create("PN may draw a card.").getEvent(event.getSource()));
+                game.addEvent(MagicRuleEventAction.create("You may draw a card.").getEvent(event.getSource()));
             }
         }
     }

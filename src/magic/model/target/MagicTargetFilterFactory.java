@@ -177,6 +177,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment card from your graveyard", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
+        single.put("Plains, Island, Swamp, Mountain or Forest card from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
         single.put("non-Demon creature", TARGET_NON_DEMON);
         single.put("non-Human creature", TARGET_NONHUMAN_CREATURE);

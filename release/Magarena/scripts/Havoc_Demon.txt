@@ -8,5 +8,5 @@ subtype=Demon
 cost={5}{B}{B}
 pt=5/5
 ability=flying;\
-        dies effect All creatures get -5/-5 until end of turn.
+        When SN dies, all creatures get -5/-5 until end of turn.
 timing=main

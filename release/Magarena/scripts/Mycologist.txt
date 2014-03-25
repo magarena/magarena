@@ -7,5 +7,7 @@ type=Creature
 subtype=Human,Druid
 cost={1}{W}
 pt=0/2
-ability=your upkeep effect Put a spore counter on SN.;cost Remove three spore counters from SN:PN puts a 1/1 green Saproling creature token onto the battlefield.;cost Sacrifice a Saproling:PN gains 2 life.
+ability=At the beginning of your upkeep, put a spore counter on SN.;\
+        cost Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.;\
+        cost Sacrifice a Saproling: Gain 2 life.
 timing=main

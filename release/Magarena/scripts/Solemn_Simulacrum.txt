@@ -8,5 +8,5 @@ subtype=Golem
 cost={4}
 pt=2/2
 ability=enters effect You may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.;\
-        dies effect You may draw a card.
+        When SN dies, you may draw a card.
 timing=main

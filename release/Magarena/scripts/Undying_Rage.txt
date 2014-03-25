@@ -8,6 +8,6 @@ subtype=Aura
 cost={2}{R}
 given_pt=2/2
 given_ability=can't block
-ability=dies effect Return SN from the graveyard to its owner's hand.
+ability=When SN dies, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,creature

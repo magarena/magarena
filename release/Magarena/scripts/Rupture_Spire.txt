@@ -7,5 +7,5 @@ type=Land
 mana=b3g3r3u3w3
 ability=tap add mana any;\
         enters tapped;\
-        enters effect You may pay {1}. If you don't, sacrifice SN.
+        enters effect sacrifice SN unless you pay {1}.
 timing=land

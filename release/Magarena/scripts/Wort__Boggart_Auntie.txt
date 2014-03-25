@@ -8,5 +8,5 @@ subtype=Goblin,Shaman
 cost={2}{B}{R}
 pt=3/3
 ability=fear;\
-        your upkeep effect You may return target Goblin card from your graveyard to your hand.
+        At the beginning of your upkeep, you may return target Goblin card from your graveyard to your hand.
 timing=main
