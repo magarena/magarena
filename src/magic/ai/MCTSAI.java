@@ -1,5 +1,7 @@
 package magic.ai;
 
+import magic.ai.MagicAI;
+
 import magic.data.LRUCache;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
@@ -12,6 +14,13 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 /*
 AI using Monte Carlo Tree Search
@@ -61,6 +70,8 @@ public class MCTSAI implements MagicAI {
     private static final int MAX_ACTIONS = 10000;
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
+    
+    private static final int THREADS = Runtime.getRuntime().availableProcessors();
 
     static {
         if (System.getProperty("min_sim") != null) {
@@ -132,6 +143,19 @@ public class MCTSAI implements MagicAI {
 
         log("MCTS cached=" + root.getNumSim());
 
+        final int workers = THREADS - 1;
+        final ExecutorService executor = 
+            workers > 0 ?
+            new ThreadPoolExecutor(
+                workers, 
+                workers, 
+                0L, 
+                TimeUnit.MILLISECONDS,
+                new ArrayBlockingQueue<Runnable>(workers),
+                new ThreadPoolExecutor.CallerRunsPolicy()
+            ):
+            null;
+            
         //end simulations once root is AI win or time is up
         int sims;
         for (sims = 0;
@@ -152,19 +176,44 @@ public class MCTSAI implements MagicAI {
             final LinkedList<MCTSGameTree> path = growTree(root, rootGame);
 
             assert path.size() >= 2 : "ERROR! length of MCTS path is " + path.size();
-
+            
             // play a simulated game to get score
             // update all nodes along the path from root to new node
-            final double score = randomPlay(path.getLast(), rootGame);
 
-            // update score and game theoretic value along the chosen path
+            // submit random play to executor
+            final Runnable task = new Runnable() {
+                @Override
+                public void run() {
+                    // propagate result of random play up the path
+                    final double score = randomPlay(path.getLast(), rootGame);
+                    final Iterator<MCTSGameTree> iter = path.descendingIterator();
+                    MCTSGameTree child = null;
+                    MCTSGameTree parent = null;
+                    while (iter.hasNext()) {
+                        child = parent;
+                        parent = iter.next();
+
+                        parent.removeVirtualLoss();
+                        parent.updateScore(child, score);
+                    }
+                }
+            };
+
+            if (executor != null) {
+                executor.submit(task);
+            } else {
+                task.run();
+            }
+            
+            // virtual loss + game theoretic value propagation
+            final Iterator<MCTSGameTree> iter = path.descendingIterator();
             MCTSGameTree child = null;
             MCTSGameTree parent = null;
-            while (!path.isEmpty()) {
+            while (iter.hasNext()) {
                 child = parent;
-                parent = path.removeLast();
+                parent = iter.next();
 
-                parent.updateScore(child, score);
+                parent.recordVirtualLoss();
 
                 if (child != null && child.isSolved()) {
                     final int steps = child.getSteps() + 1;
@@ -179,6 +228,10 @@ public class MCTSAI implements MagicAI {
                     }
                 }
             }
+        }
+
+        if (executor != null) {
+            executor.shutdown();
         }
 
         assert root.size() > 0 : "ERROR! Root has no children but there are " + size + " choices";
@@ -620,7 +673,15 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
     
-    void updateScore(final MCTSGameTree child, final double delta) {
+    synchronized void recordVirtualLoss() {
+        numSim++;
+    }
+    
+    synchronized void removeVirtualLoss() {
+        numSim--;
+    }
+
+    synchronized void updateScore(final MCTSGameTree child, final double delta) {
         final double oldMean = (numSim > 0) ? sum/numSim : 0;
         sum += delta;
         numSim += 1;
