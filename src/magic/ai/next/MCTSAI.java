@@ -167,7 +167,7 @@ public class MCTSAI implements MagicAI {
              sims++) {
 
             //clone the MagicGame object for simulation
-            final MagicGame rootGame = new MagicGame(aiGame, scorePlayer);
+            final MagicGame rootGame = new MagicGame(aiGame, aiGame.getScorePlayer());
 
             //pass in a clone of the state,
             //genNewTreeNode grows the tree by one node
