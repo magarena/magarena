@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/grasslands.jpg
 value=3.606
 rarity=U
 type=Land
-ability=enters tapped
+ability=enters tapped;\
+        cost {T},Sacrifice SN:Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.
 timing=land
-requires_groovy_code

@@ -6,5 +6,5 @@ rarity=C
 type=Instant
 cost={G}
 ability=add cost Sacrifice a land
+effect=Search your library for a land card and put it onto the battlefield. Then shuffle your library.
 timing=removal
-requires_groovy_code

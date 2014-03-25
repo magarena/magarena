@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/windswept%20heath.jpg
 value=4.568
 rarity=R
 type=Land
+ability=cost {T},Pay 1 life,Sacrifice SN:Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.
 timing=land
-requires_groovy_code

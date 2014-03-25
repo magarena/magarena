@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Rebel
 cost={2}{G}{G}
 pt=2/2
+ability=cost {3},{T}:Search your library for an Elf card and put it onto the battlefield. Then shuffle your library.
 timing=main
-requires_groovy_code

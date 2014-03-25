@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/terramorphic%20expanse.jpg
 value=3.429
 rarity=C
 type=Land
+ability=cost {T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=land
-requires_groovy_code=Evolving_Wilds

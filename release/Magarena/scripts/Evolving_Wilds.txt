@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/evolving%20wilds.jpg
 value=3.350
 rarity=C
 type=Land
+ability=cost {T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=land
-requires_groovy_code

@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/scalding%20tarn.jpg
 value=4.450
 rarity=R
 type=Land
+ability=cost {T},Pay 1 life,Sacrifice SN:Search your library for an Island or Mountain card and put it onto the battlefield. Then shuffle your library.
 timing=land
-requires_groovy_code
