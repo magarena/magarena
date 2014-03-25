@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{U}
 pt=2/2
-ability=flying;dies effect You may draw a card.
+ability=flying;When SN dies, you may draw a card.
 timing=main

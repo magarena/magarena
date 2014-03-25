@@ -7,5 +7,6 @@ type=Creature
 subtype=Phoenix
 cost={4}{R}{R}
 pt=3/4
-ability=dies effect Return SN from the graveyard to its owner's hand.;flying
+ability=When SN dies, return SN from the graveyard to its owner's hand.;\
+        flying
 timing=main

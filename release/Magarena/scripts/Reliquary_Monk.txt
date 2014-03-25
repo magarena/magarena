@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Monk,Cleric
 cost={2}{W}
 pt=2/2
-ability=dies effect Destroy target artifact or enchantment.
+ability=When SN dies, destroy target artifact or enchantment.
 timing=main

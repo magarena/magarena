@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/2
-ability=dies effect PN gain 2 life.
+ability=When SN dies, gain 2 life.
 timing=artifact

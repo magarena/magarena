@@ -5,5 +5,6 @@ value=3.829
 rarity=C
 type=Artifact
 cost={2}
+ability=enters effect PN draws a card.;\
+        When SN dies, draw a card.
 timing=artifact
-ability=enters effect PN draws a card.;dies effect PN draws a card.

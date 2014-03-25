@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=2/1
-ability=dies effect Destroy target land.
+ability=When SN dies, destroy target land.
 timing=main

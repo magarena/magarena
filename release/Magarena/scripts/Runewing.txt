@@ -2,10 +2,11 @@ name=Runewing
 url=http://magiccards.info/query?q=%21runewing
 image=http://mtgimage.com/card/runewing.jpg
 value=2.317
-ability=flying;dies effect PN draws a card.
 rarity=C
 type=Creature
 subtype=Bird
 cost={3}{U}
 pt=2/2
+ability=flying;\
+        When SN dies, draw a card.
 timing=main

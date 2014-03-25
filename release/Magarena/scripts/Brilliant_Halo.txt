@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 given_pt=1/2
-ability=dies effect Return SN from the graveyard to its owner's hand.
+ability=When SN dies, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,pos creature

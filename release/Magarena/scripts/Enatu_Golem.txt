@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={6}
 pt=3/5
-ability=dies effect PN gain 4 life.
+ability=When SN dies, gain 4 life.
 timing=artifact
