@@ -7,5 +7,5 @@ type=Creature
 subtype=Nightstalker
 cost={3}{B}{B}
 pt=3/2
-ability=enters effect You may have target opponent discards a card.
+ability=enters effect You may have target opponent discard a card.
 timing=main
