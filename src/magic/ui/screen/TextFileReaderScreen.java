@@ -2,14 +2,12 @@ package magic.ui.screen;
 
 import magic.data.FileIO;
 import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
@@ -20,52 +18,81 @@ import java.nio.file.Path;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class TextFileReaderScreen extends AbstractScreen implements IStatusBar, IActionBar {
+public abstract class TextFileReaderScreen extends AbstractScreen implements IActionBar {
 
-    private final Path textFilePath;
+    private Path textFilePath;
+    private final ScreenContent screenContent = new ScreenContent();
 
-    public TextFileReaderScreen(final Path textFilePath) {
-        this.textFilePath = textFilePath;
-        setContent(getScreenContent());
+    /**
+     * A subclass can use this method to manipulate the file contents before they are displayed.
+     */
+    protected abstract String reprocessFileContents(final String fileContent);
+
+    public TextFileReaderScreen() {
+        setContent(screenContent);
     }
 
-    private JPanel getScreenContent() {
+    protected void setTextFile(final Path textFilePath) {
+        this.textFilePath = textFilePath;
+        screenContent.setContent(textFilePath);
+    }
 
-        final JPanel content = new TexturedPanel();
+    private class ScreenContent extends TexturedPanel {
 
-        content.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
-        content.setLayout(new MigLayout("insets 0, gap 0, center"));
+        private final MigLayout migLayout = new MigLayout();
+        private final JTextArea textArea = new JTextArea();
+        private final JScrollPane scrollPane = new JScrollPane(textArea);
 
-        final JTextArea readMeTextArea = new JTextArea();
-        readMeTextArea.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
-        readMeTextArea.setEditable(false);
-        readMeTextArea.setFont(FontsAndBorders.FONT_README);
-
-        String fileContents = "";
-        try {
-            fileContents = FileIO.toStr(new File(textFilePath.toString()));
-        } catch (final java.io.IOException ex) {
-            System.err.println("Invalid file path : " + textFilePath.toAbsolutePath().toString());
+        public ScreenContent() {
+            setLookAndFeel();
+            refreshLayout();
         }
-        readMeTextArea.setText(fileContents);
 
-        final JScrollPane keywordsPane = new JScrollPane(readMeTextArea);
-        keywordsPane.setBorder(FontsAndBorders.BLACK_BORDER);
-        keywordsPane.setOpaque(false);
-        keywordsPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        keywordsPane.getVerticalScrollBar().setUnitIncrement(50);
-        keywordsPane.getVerticalScrollBar().setBlockIncrement(50);
-        keywordsPane.getViewport().setOpaque(false);
-        content.add(keywordsPane, "w 100%, h 100%");
+        private void setLookAndFeel() {
+            setLayout(migLayout);
+            setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
+            // file contents text area
+            textArea.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
+            textArea.setEditable(false);
+            textArea.setFont(FontsAndBorders.FONT_README);
+            // scroll pane
+            scrollPane.setBorder(FontsAndBorders.BLACK_BORDER);
+            scrollPane.setOpaque(false);
+            scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+            scrollPane.getVerticalScrollBar().setUnitIncrement(50);
+            scrollPane.getVerticalScrollBar().setBlockIncrement(50);
+            scrollPane.getViewport().setOpaque(false);
+        }
 
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run()
-            {
-                keywordsPane.getVerticalScrollBar().setValue(0);
+        private void refreshLayout() {
+            removeAll();
+            migLayout.setLayoutConstraints("insets 0, gap 0, center");
+            add(scrollPane, "w 100%, h 100%");
+        }
+
+        public void setContent(final Path textFilePath) {
+            textArea.setText(getFileContents());
+            refreshLayout();
+            resetVerticalScrollbar();
+        }
+
+        private String getFileContents() {
+            try {
+                final String fileContents = FileIO.toStr(new File(textFilePath.toString()));
+                return reprocessFileContents(fileContents);
+            } catch (final java.io.IOException ex) {
+                return textFilePath.toAbsolutePath().toString() + "\n" + ex.toString();
             }
-        });
+        }
 
-        return content;
+        private void resetVerticalScrollbar() {
+            SwingUtilities.invokeLater(new Runnable() {
+                public void run() {
+                    scrollPane.getVerticalScrollBar().setValue(0);
+                }
+            });
+        }
+
     }
 
     /* (non-Javadoc)
@@ -79,14 +106,6 @@ public class TextFileReaderScreen extends AbstractScreen implements IStatusBar, 
                 getFrame().closeActiveScreen(false);
             }
         });
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagScreenStatusBar#getScreenCaption()
-     */
-    @Override
-    public String getScreenCaption() {
-        return textFilePath.getFileName().toString();
     }
 
     /* (non-Javadoc)
@@ -111,14 +130,6 @@ public class TextFileReaderScreen extends AbstractScreen implements IStatusBar, 
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
-    @Override
-    public JPanel getStatusPanel() {
-        return null;
     }
 
 }
