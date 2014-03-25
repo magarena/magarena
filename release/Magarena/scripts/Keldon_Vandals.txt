@@ -8,5 +8,6 @@ type=Creature
 subtype=Human,Rogue
 cost={2}{R}
 pt=4/1
-ability=echo {2}{R};enters effect Destroy target artifact.
+ability=echo {2}{R};\
+        When SN enters the battlefield, destroy target artifact.
 timing=main

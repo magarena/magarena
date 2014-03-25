@@ -7,5 +7,5 @@ type=Creature
 subtype=Noggle,Rogue
 cost={2}{U/R}{U/R}
 pt=4/3
-ability=enters effect Return a land you control to its owner's hand.
+ability=When SN enters the battlefield, return a land you control to its owner's hand.
 timing=main

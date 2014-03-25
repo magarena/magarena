@@ -7,5 +7,6 @@ type=Creature
 subtype=Snake
 cost={1}{G}{U}{U}
 pt=2/2
-ability=flash;enters effect Counter target spell.
+ability=flash;\
+        When SN enters the battlefield, counter target spell.
 timing=counterflash

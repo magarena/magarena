@@ -8,5 +8,5 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=1/1
-ability=enters effect Destroy target land.
+ability=When SN enters the battlefield, destroy target land.
 timing=main

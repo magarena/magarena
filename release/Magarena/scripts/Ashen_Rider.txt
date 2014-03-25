@@ -8,6 +8,6 @@ subtype=Archon
 cost={4}{W}{W}{B}{B}
 pt=5/5
 ability=flying;\
-        enters effect Exile target permanent.;\
+        When SN enters the battlefield, Exile target permanent.;\
         When SN dies, exile target permanent.
 timing=main

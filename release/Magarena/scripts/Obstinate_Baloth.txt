@@ -7,5 +7,6 @@ type=Creature
 subtype=Beast
 cost={2}{G}{G}
 pt=4/4
-ability=enters effect PN gains 4 life.;opponent discard onto battlefield
+ability=When SN enters the battlefield, gain 4 life.;\
+        opponent discard onto battlefield
 timing=main

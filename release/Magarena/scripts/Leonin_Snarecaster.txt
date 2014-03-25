@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat,Soldier
 cost={1}{W}
 pt=2/1
-ability=enters effect Tap target creature.
+ability=When SN enters the battlefield, tap target creature.
 timing=main

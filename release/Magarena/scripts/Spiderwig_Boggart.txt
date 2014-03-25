@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Shaman
 cost={2}{B}
 pt=2/2
-ability=enters effect Target creature gains fear until end of turn.
+ability=When SN enters the battlefield, target creature gains fear until end of turn.
 timing=main

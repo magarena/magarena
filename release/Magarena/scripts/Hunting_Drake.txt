@@ -8,5 +8,5 @@ subtype=Drake
 cost={4}{U}
 pt=2/2
 ability=flying;\
-        enters effect Put target red or green creature on top of its owner's library.
+        When SN enters the battlefield, put target red or green creature on top of its owner's library.
 timing=main

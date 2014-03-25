@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Monk,Cleric
 cost={2}{W}
 pt=2/2
-ability=enters effect Return target enchantment card from your graveyard to your hand.
+ability=When SN enters the battlefield, return target enchantment card from your graveyard to your hand.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={W}
 pt=1/1
-ability=enters effect PN gains 3 life.
+ability=When SN enters the battlefield, PN gains 3 life.
 timing=main

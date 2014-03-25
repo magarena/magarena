@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={U}{U}
 pt=1/2
-ability=enters effect Return target artifact or enchantment to its owner's hand.
+ability=When SN enters the battlefield, return target artifact or enchantment to its owner's hand.
 timing=main

@@ -8,5 +8,5 @@ subtype=Spirit
 cost={2}{W}
 pt=2/1
 ability=flying;\
-        enters effect You may tap target creature.
+        When SN enters the battlefield, you may tap target creature.
 timing=main

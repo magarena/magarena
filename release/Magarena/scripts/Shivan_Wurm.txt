@@ -8,5 +8,5 @@ subtype=Wurm
 cost={3}{R}{G}
 pt=7/7
 ability=trample;\
-        enters effect Return a red or green creature you control to its owner's hand.
+        When SN enters the battlefield, return a red or green creature you control to its owner's hand.
 timing=main

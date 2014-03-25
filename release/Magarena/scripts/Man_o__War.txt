@@ -8,5 +8,5 @@ type=Creature
 subtype=Jellyfish
 cost={2}{U}
 pt=2/2
-ability=enters effect Return target creature to its owner's hand.
+ability=When SN enters the battlefield, return target creature to its owner's hand.
 timing=fmain

@@ -7,5 +7,5 @@ type=Creature
 subtype=Lizard
 cost={4}{R}
 pt=6/3
-ability=enters effect SN deals 3 damage to target creature you control.
+ability=When SN enters the battlefield, SN deals 3 damage to target creature you control.
 timing=main

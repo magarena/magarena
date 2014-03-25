@@ -7,5 +7,5 @@ type=Creature
 subtype=Ape
 cost={3}{R}
 pt=2/2
-ability=enters effect Destroy target nonbasic land.
+ability=When SN enters the battlefield, destroy target nonbasic land.
 timing=main

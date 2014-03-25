@@ -7,5 +7,6 @@ type=Creature
 subtype=Elemental
 cost={5}{U}
 pt=4/4
-ability=enters effect Return target nonland permanent to its owner's hand.;evoke {1}{U}{U}
+ability=When SN enters the battlefield, return target nonland permanent to its owner's hand.;\
+        evoke {1}{U}{U}
 timing=main

@@ -8,6 +8,6 @@ subtype=Goblin,Warrior
 cost={1}{R}
 pt=1/1
 ability=echo {1}{R};\
-        enters effect PN puts a 1/1 red Goblin creature token onto the battlefield.;\
+        When SN enters the battlefield, put a 1/1 red Goblin creature token onto the battlefield.;\
         When SN dies, put a 1/1 red Goblin creature token onto the battlefield.
 timing=main

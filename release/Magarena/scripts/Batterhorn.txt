@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={4}{R}
 pt=4/3
-ability=enters effect You may destroy target artifact.
+ability=When SN enters the battlefield, you may destroy target artifact.
 timing=main

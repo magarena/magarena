@@ -7,5 +7,6 @@ type=Creature
 subtype=Kor,Cleric
 cost={W}{W}{W}
 pt=2/2
-ability=protection from black;enters effect Exile target black permanent.
+ability=protection from black;\
+        When SN enters the battlefield, exile target black permanent.
 timing=main

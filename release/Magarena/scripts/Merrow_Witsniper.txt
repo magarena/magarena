@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={U}
 pt=1/1
-ability=enters effect Target player puts the top card of his or her library into his or her graveyard.
+ability=When SN enters the battlefield, target player puts the top card of his or her library into his or her graveyard.
 timing=main

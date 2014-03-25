@@ -7,5 +7,6 @@ type=Creature
 subtype=Griffin
 cost={3}{W}{W}
 pt=1/4
-ability=flying;enters effect return target enchantment card from your graveyard to your hand.
+ability=flying;\
+        When SN enters the battlefield, return target enchantment card from your graveyard to your hand.
 timing=main

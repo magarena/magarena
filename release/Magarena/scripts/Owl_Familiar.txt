@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird
 cost={1}{U}
 pt=1/1
-ability=enters effect PN draws a card, then discards a card.
+ability=When SN enters the battlefield, draw a card, then discards a card.
 timing=main

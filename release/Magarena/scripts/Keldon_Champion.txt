@@ -7,5 +7,7 @@ type=Creature
 subtype=Human,Barbarian
 cost={2}{R}{R}
 pt=3/2
-ability=haste;echo {2}{R}{R};enters effect SN deals 3 damage to target player.
+ability=haste;\
+        echo {2}{R}{R};\
+        When SN enters the battlefield, SN deals 3 damage to target player.
 timing=fmain

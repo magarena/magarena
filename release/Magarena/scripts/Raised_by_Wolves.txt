@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{G}{G}
-ability=enters effect PN puts two 2/2 green Wolf creature tokens onto the battlefield.
+ability=When SN enters the battlefield, put two 2/2 green Wolf creature tokens onto the battlefield.
 enchant=pump,pos creature
 timing=main
 requires_groovy_code

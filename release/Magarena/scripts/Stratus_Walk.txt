@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=enters effect PN draws a card.
-given_ability=flying;can't block creatures without flying
+ability=When SN enters the battlefield, draw a card.
+given_ability=flying;\
+        can't block creatures without flying
 timing=aura
 enchant=flying,creature

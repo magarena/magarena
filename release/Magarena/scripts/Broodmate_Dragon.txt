@@ -8,5 +8,5 @@ subtype=Dragon
 cost={3}{B}{R}{G}
 pt=4/4
 ability=flying;\
-        enters effect PN puts a 4/4 red Dragon creature token with flying onto the battlefield.
+        When SN enters the battlefield, PN puts a 4/4 red Dragon creature token with flying onto the battlefield.
 timing=main

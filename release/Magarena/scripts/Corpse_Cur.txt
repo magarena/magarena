@@ -8,5 +8,5 @@ subtype=Hound
 cost={4}
 pt=2/2
 ability=infect;\
-        enters effect You may return target creature card with infect from your graveyard to your hand.
+        When SN enters the battlefield, you may return target creature card with infect from your graveyard to your hand.
 timing=main

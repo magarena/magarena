@@ -7,5 +7,6 @@ type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={2}{B}{B}
 pt=3/3
-ability=horsemanship;enters effect PN loses 3 life.
+ability=horsemanship;\
+        When SN enters the battlefield, PN loses 3 life.
 timing=main

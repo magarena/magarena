@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Shaman
 cost={2}{G}
 pt=2/2
-ability=enters effect Target creature gets +2/+2 until end of turn.
+ability=When SN enters the battlefield, target creature gets +2/+2 until end of turn.
 timing=main

@@ -7,5 +7,7 @@ type=Legendary,Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=first strike;protection from red;enters effect Destroy target Goblin.
+ability=first strike;\
+        protection from red;\
+        When SN enters the battlefield, destroy target Goblin.
 timing=main

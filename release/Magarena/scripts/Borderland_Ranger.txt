@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Scout
 cost={2}{G}
 pt=2/2
-ability=enters effect You may search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
+ability=When SN enters the battlefield, you may search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main

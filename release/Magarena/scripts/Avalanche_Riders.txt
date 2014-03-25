@@ -8,5 +8,7 @@ type=Creature
 subtype=Human,Nomad
 cost={3}{R}
 pt=2/2
-ability=haste;echo {3}{R};enters effect Destroy target land.
+ability=haste;\
+        echo {3}{R};\
+        When SN enters the battlefield, destroy target land.
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Elephant,Cleric
 cost={2}{G}{W}
 pt=4/4
-ability=enters effect PN gains 4 life.
+ability=When SN enters the battlefield, gain 4 life.
 timing=fmain
 requires_groovy_code

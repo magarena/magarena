@@ -7,5 +7,6 @@ type=Creature
 subtype=Cat,Soldier
 cost={5}{W}
 pt=2/5
-ability=vigilance;enters effect PN gains 4 life.
+ability=vigilance;\
+        When SN enters the battlefield, gain 4 life.
 timing=main

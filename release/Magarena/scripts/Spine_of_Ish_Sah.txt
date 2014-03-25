@@ -7,4 +7,4 @@ type=Artifact
 cost={7}
 timing=artifact
 ability=When SN dies, return SN from the graveyard to its owner's hand.;\
-        enters effect Destroy target permanent.
+        When SN enters the battlefield, destroy target permanent.

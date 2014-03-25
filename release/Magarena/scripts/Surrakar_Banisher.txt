@@ -7,5 +7,5 @@ type=Creature
 subtype=Surrakar
 cost={4}{U}
 pt=3/3
-ability=enters effect You may return target tapped creature to its owner's hand.
+ability=When SN enters the battlefield, you may return target tapped creature to its owner's hand.
 timing=main

@@ -8,5 +8,6 @@ type=Creature
 subtype=Elf,Shaman
 cost={1}{G}{G}
 pt=2/2
-ability=infect;enters effect Destroy target artifact.
+ability=infect;\
+        When SN enters the battlefield, destroy target artifact.
 timing=main

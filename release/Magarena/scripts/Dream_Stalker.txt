@@ -7,5 +7,5 @@ type=Creature
 subtype=Illusion
 cost={1}{U}
 pt=1/5
-ability=enters effect Return a permanent you control to its owner's hand.
+ability=When SN enters the battlefield, return a permanent you control to its owner's hand.
 timing=main

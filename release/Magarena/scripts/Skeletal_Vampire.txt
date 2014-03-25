@@ -8,7 +8,7 @@ subtype=Vampire,Skeleton
 cost={4}{B}{B}
 pt=3/3
 ability=flying;\
-        enters effect PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.;\
-        cost {3}{B}{B}, Sacrifice a Bat: PN puts two 1/1 black Bat creature tokens with flying onto the battlefield.;\
+        When SN enters the battlefield, put two 1/1 black Bat creature tokens with flying onto the battlefield.;\
+        cost {3}{B}{B}, Sacrifice a Bat: put two 1/1 black Bat creature tokens with flying onto the battlefield.;\
         cost Sacrifice a Bat: Regenerate SN.
 timing=main

@@ -7,5 +7,6 @@ type=Creature
 subtype=Horror
 cost={3}{B}{B}{B}
 pt=6/5
-ability=flying;enters effect PN loses 5 life.
+ability=flying;\
+        When SN enters the battlefield, PN loses 5 life.
 timing=main

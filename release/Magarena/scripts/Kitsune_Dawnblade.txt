@@ -8,5 +8,5 @@ subtype=Fox,Samurai
 cost={4}{W}
 pt=2/3
 ability=bushido 1;\
-        enters effect You may tap target creature.
+        When SN enters the battlefield, you may tap target creature.
 timing=main

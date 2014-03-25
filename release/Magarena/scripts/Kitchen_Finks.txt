@@ -7,5 +7,5 @@ type=Creature
 subtype=Ouphe
 cost={1}{G/W}{G/W}
 pt=3/2
-ability=persist;enters effect PN gains 2 life.
+ability=persist;When SN enters the battlefield, gain 2 life.
 timing=main

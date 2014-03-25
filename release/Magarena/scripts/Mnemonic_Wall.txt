@@ -8,5 +8,5 @@ subtype=Wall
 cost={4}{U}
 pt=0/4
 ability=defender;\
-        enters effect You may return target instant or sorcery card from your graveyard to your hand.
+        When SN enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
 timing=main

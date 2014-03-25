@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={3}{R}
 pt=3/1
-ability=enters effect Destroy target artifact.;\
+ability=When SN enters the battlefield, destroy target artifact.;\
         Whenever you cast a Spirit or Arcane spell, you may return SN to its owner's hand.
 timing=main

@@ -8,5 +8,5 @@ type=Creature
 subtype=Ogre
 cost={4}{R}
 pt=3/3
-ability=enters effect Destroy target land.
+ability=When SN enters the battlefield, destroy target land.
 timing=main

@@ -5,7 +5,7 @@ value=4.424
 rarity=R
 type=Enchantment
 cost={3}{U}
-ability=enters effect PN gains 20 life.;\
+ability=When SN enters the battlefield, PN gains 20 life.;\
         When SN leaves the battlefield, lose 20 life.;\
         cumulative upkeep {2}
 timing=enchantment

@@ -6,6 +6,6 @@ rarity=U
 type=Creature
 subtype=Merfolk,Wizard
 cost={G/U}{G/U}{G/U}
-ability=enters effect PN draws a card.
+ability=When SN enters the battlefield, draw a card.
 pt=2/2
 timing=main

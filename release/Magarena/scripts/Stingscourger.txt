@@ -9,5 +9,5 @@ subtype=Goblin,Warrior
 cost={1}{R}
 pt=2/2
 ability=echo {3}{R};\
-        enters effect Return target creature an opponent controls to its owner's hand.
+        When SN enters the battlefield, return target creature an opponent controls to its owner's hand.
 timing=main

@@ -7,5 +7,6 @@ type=Creature
 subtype=Kavu
 cost={2}{R}{G}
 pt=5/3
-ability=enters effect Return a red or green creature you control to its owner's hand.;enters effect SN deals 1 damage to target player.
+ability=When SN enters the battlefield, return a red or green creature you control to its owner's hand.;\
+        When SN enters the battlefield, SN deals 1 damage to target player.
 timing=main

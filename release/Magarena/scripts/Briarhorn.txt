@@ -7,5 +7,7 @@ type=Creature
 subtype=Elemental
 cost={3}{G}
 pt=3/3
-ability=flash;enters effect Target creature gets +3/+3 until end of turn.;evoke {1}{G}
+ability=flash;\
+        When SN enters the battlefield, target creature gets +3/+3 until end of turn.;\
+        evoke {1}{G}
 timing=flash

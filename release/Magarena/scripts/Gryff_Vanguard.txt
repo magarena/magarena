@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Knight
 cost={4}{U}
 pt=3/2
-ability=flying;enters effect PN draws a card.
+ability=flying;\
+        When SN enters the battlefield, PN draws a card.
 timing=main

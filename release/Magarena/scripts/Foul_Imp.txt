@@ -7,5 +7,6 @@ type=Creature
 subtype=Imp
 cost={B}{B}
 pt=2/2
-ability=flying;enters effect PN loses 2 life.
+ability=flying;\
+        When SN enters the battlefield, PN loses 2 life.
 timing=smain

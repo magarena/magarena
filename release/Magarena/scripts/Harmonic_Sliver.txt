@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={1}{G}{W}
 pt=1/1
-ability=lord all sliver creatures have enters effect Destroy target artifact or enchantment.
+ability=lord all sliver creatures have "When SN enters the battlefield, destroy target artifact or enchantment."
 static=all
 timing=main

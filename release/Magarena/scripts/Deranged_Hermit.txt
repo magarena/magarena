@@ -8,6 +8,7 @@ subtype=Elf
 cost={3}{G}{G}
 pt=1/1
 timing=main
-ability=echo {3}{G}{G};lord squirrel creatures get +1/+1;\
-        enters effect PN puts four 1/1 green Squirrel creature tokens onto the battlefield.
+ability=echo {3}{G}{G};\
+        lord squirrel creatures get +1/+1;\
+        When SN enters the battlefield, PN puts four 1/1 green Squirrel creature tokens onto the battlefield.
 static=all

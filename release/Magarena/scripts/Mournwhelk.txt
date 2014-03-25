@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={6}{B}
 pt=3/3
-ability=enters effect Target player discards two cards.;evoke {3}{B}
+ability=When SN enters the battlefield, target player discards two cards.;evoke {3}{B}
 timing=main

@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Gargoyle
 cost={3}{W}
 pt=2/3
-ability=enters effect You may return target artifact card from your graveyard to your hand.
+ability=When SN enters the battlefield, you may return target artifact card from your graveyard to your hand.
 timing=main

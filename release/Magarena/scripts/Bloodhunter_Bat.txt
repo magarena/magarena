@@ -7,5 +7,6 @@ type=Creature
 subtype=Bat
 cost={3}{B}
 pt=2/2
-ability=flying;enters effect Target opponent loses 2 life and PN gains 2 life.
+ability=flying;\
+        When SN enters the battlefield, target opponent loses 2 life and PN gains 2 life.
 timing=main

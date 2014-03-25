@@ -592,7 +592,7 @@ public enum MagicAbility {
             card.add(MagicReplicateTrigger.create());
         }
     },
-    EntersEffect("enters effect", 10) {
+    EntersEffect("When SN enters the battlefield,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.create(
                 MagicRuleEventAction.create(arg)

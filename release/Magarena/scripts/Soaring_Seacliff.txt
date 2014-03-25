@@ -5,5 +5,7 @@ value=2.526
 rarity=C
 type=Land
 mana=u3
-ability=enters tapped;enters effect Target creature gains flying until end of turn.;tap add mana {U}
+ability=enters tapped;\
+        When SN enters the battlefield, target creature gains flying until end of turn.;\
+        tap add mana {U}
 timing=fmain

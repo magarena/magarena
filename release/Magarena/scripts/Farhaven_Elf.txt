@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Druid
 cost={2}{G}
 pt=1/1
-ability=enters effect You may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability=When SN enters the battlefield, you may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main

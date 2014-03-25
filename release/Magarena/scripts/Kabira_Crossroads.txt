@@ -7,5 +7,5 @@ type=Land
 mana=w4
 ability=tap add mana {W};\
         enters tapped;\
-        enters effect PN gains 2 life.
+        When SN enters the battlefield, gain 2 life.
 timing=land

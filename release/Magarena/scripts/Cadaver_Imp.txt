@@ -8,5 +8,5 @@ subtype=Imp
 cost={1}{B}{B}
 pt=1/1
 ability=flying;\
-        enters effect You may return target creature card from your graveyard to your hand.
+        When SN enters the battlefield, you may return target creature card from your graveyard to your hand.
 timing=main

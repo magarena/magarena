@@ -7,5 +7,7 @@ type=Creature
 subtype=Elemental
 cost={4}{B}
 pt=3/2
-ability=fear;enters effect Destroy target nonartifact, nonblack creature.;evoke {1}{B}
+ability=fear;\
+        When SN enters the battlefield, destroy target nonartifact, nonblack creature.;\
+        evoke {1}{B}
 timing=main

@@ -7,5 +7,6 @@ type=Creature
 subtype=Horror
 cost={3}{B}{B}
 pt=5/5
-ability=protection from white;enters effect PN loses 5 life.
+ability=protection from white;\
+        When SN enters the battlefield, PN loses 5 life.
 timing=main

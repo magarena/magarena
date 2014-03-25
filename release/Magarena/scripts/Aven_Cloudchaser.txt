@@ -7,5 +7,5 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{W}
 pt=2/2
-ability=flying;enters effect Destroy target enchantment.
+ability=flying;When SN enters the battlefield, destroy target enchantment.
 timing=main

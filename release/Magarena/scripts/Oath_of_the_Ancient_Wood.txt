@@ -5,6 +5,6 @@ value=1.740
 rarity=R
 type=Enchantment
 cost={2}{G}
-ability=enters effect Put a +1/+1 counter on target creature.
+ability=When SN enters the battlefield, put a +1/+1 counter on target creature.
 timing=enchantment
 requires_groovy_code

@@ -8,6 +8,6 @@ subtype=Wurm
 cost={4}{G}{G}{G}
 pt=7/7
 ability=trample;\
-        enters effect PN gains 7 life.;\
+        When SN enters the battlefield, gain 7 life.;\
         When SN dies, draw a card.
 timing=fmain

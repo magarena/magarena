@@ -8,5 +8,5 @@ type=Creature
 subtype=Human,Monk,Cleric
 cost={1}{W}
 pt=1/1
-ability=enters effect Destroy target enchantment.
+ability=When SN enters the battlefield, destroy target enchantment.
 timing=main

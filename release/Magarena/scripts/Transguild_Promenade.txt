@@ -5,6 +5,7 @@ value=3.350
 rarity=C
 type=Land
 mana=w3u3b3r3g3
-ability=enters tapped;tap add mana any;\
-        enters effect sacrifice SN unless you pay {1}.
+ability=enters tapped;\
+        tap add mana any;\
+        When SN enters the battlefield, sacrifice SN unless you pay {1}.
 timing=land

@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Boar,Beast
 cost={5}{R}
 pt=2/2
-ability=enters effect SN deals 4 damage to target player.
+ability=When SN enters the battlefield, SN deals 4 damage to target player.
 timing=main

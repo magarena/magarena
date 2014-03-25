@@ -6,6 +6,6 @@ rarity=R
 type=Land
 mana=b3r3
 ability=enters tapped;\
-        enters effect PN scry 1.;\
+        When SN enters the battlefield, scry 1.;\
         tap add mana {B} or {R}
 timing=tapland

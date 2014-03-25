@@ -7,6 +7,6 @@ type=Creature
 subtype=Crocodile
 cost={2}{U}{B}
 pt=4/4
-ability=enters effect Return a blue or black creature you control to its owner's hand.
+ability=When SN enters the battlefield, return a blue or black creature you control to its owner's hand.
 timing=main
 requires_groovy_code

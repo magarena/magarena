@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Centaur
 cost={3}{B}
 pt=2/4
-ability=enters effect Target player puts the top four cards of his or her library into his or her graveyard.
+ability=When SN enters the battlefield, target player puts the top four cards of his or her library into his or her graveyard.
 timing=main

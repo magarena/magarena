@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={4}{B}{B}
 pt=3/3
-ability=enters effect Destroy target nonblack creature.
+ability=When SN enters the battlefield, destroy target nonblack creature.
 timing=main

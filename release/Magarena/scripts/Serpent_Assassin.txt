@@ -7,5 +7,5 @@ type=Creature
 subtype=Snake,Assassin
 cost={3}{B}{B}
 pt=2/2
-ability=enters effect You may destroy target nonblack creature.
+ability=When SN enters the battlefield, you may destroy target nonblack creature.
 timing=main

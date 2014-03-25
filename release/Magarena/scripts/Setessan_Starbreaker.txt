@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Warrior
 cost={3}{G}
 pt=2/1
-ability=enters effect You may destroy target Aura.
+ability=When SN enters the battlefield, you may destroy target Aura.
 timing=main

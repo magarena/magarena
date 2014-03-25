@@ -7,5 +7,6 @@ type=Creature
 subtype=Hound
 cost={2}{W}
 pt=2/2
-ability=flash;enters effect Target creature gets +0/+3 until end of turn.
+ability=flash;\
+        When SN enters the battlefield, target creature gets +0/+3 until end of turn.
 timing=pumpflash
