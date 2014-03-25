@@ -1,0 +1,12 @@
+name=Ramosian Sky Marshal
+url=http://magiccards.info/query?q=%21ramosian%20sky%20marshal
+image=http://mtgimage.com/card/ramosian%20sky%20marshal.jpg
+value=2.372
+rarity=R
+type=Creature
+subtype=Human,Rebel
+cost={3}{W}{W}
+pt=3/3
+ability=flying
+timing=main
+requires_groovy_code

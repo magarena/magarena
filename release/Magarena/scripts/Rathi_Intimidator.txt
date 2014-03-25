@@ -1,0 +1,12 @@
+name=Rathi Intimidator
+url=http://magiccards.info/query?q=%21rathi%20intimidator
+image=http://mtgimage.com/card/rathi%20intimidator.jpg
+value=2.372
+rarity=C
+type=Creature
+subtype=Horror,Mercenary
+cost={1}{B}{B}
+pt=2/1
+ability=fear
+timing=main
+requires_groovy_code=Cateran Brute

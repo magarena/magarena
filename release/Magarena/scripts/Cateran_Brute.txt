@@ -1,0 +1,11 @@
+name=Cateran Brute
+url=http://magiccards.info/query?q=%21cateran%20brute
+image=http://mtgimage.com/card/cateran%20brute.jpg
+value=1.917
+rarity=C
+type=Creature
+subtype=Horror,Mercenary
+cost={2}{B}
+pt=2/2
+timing=main
+requires_groovy_code
