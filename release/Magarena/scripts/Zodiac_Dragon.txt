@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={7}{R}{R}
 pt=8/8
-ability=dies effect You may Return SN from the graveyard to its owner's hand.
+ability=dies effect You may return SN from the graveyard to its owner's hand.
 timing=main

@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{U}{U}
 pt=3/3
-ability=horsemanship;enters effect You may Return target creature to its owner's hand.
+ability=horsemanship;enters effect You may return target creature to its owner's hand.
 timing=main

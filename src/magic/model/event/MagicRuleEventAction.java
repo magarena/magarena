@@ -302,7 +302,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawChosen(
-        "(?<choice>[^\\.]*) draws (?<amount>[a-z]+) card(s)?\\.",
+        "(?<choice>[^\\.]*) draw(s)? (?<amount>[a-z]+) card(s)?\\.",
         MagicTargetHint.Positive, 
         MagicTiming.Draw, 
         "Draw"
@@ -389,7 +389,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseGainLifeChosen(
-        "(?<choice>[^\\.]*) loses (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life\\.", 
+        "(?<choice>[^\\.]*) lose(s)? (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "-Life"
@@ -428,7 +428,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainLifeChosen(
-        "(?<choice>[^\\.]*) gains (?<amount>[0-9]+) life\\.", 
+        "(?<choice>[^\\.]*) gain(s)? (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Positive, 
         MagicTiming.Removal, 
         "+Life"
@@ -465,7 +465,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLifeChosen(
-        "(?<choice>[^\\.]*) loses (?<amount>[0-9]+) life\\.", 
+        "(?<choice>[^\\.]*) lose(s)? (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "-Life"
@@ -486,7 +486,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpSelf(
-        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn\\.", 
+        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn\\.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -504,7 +504,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpChosen(
-        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
+        "(?<choice>[^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
         MagicTargetHint.Positive, 
         MagicPumpTargetPicker.create(), 
         MagicTiming.Pump, 
@@ -553,7 +553,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainSelf(
-        "sn gets (?<pt>[+-][0-9]+/[+-][0-9]+) and gains (?<ability>[^\\.]*) until end of turn\\.", 
+        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>[^\\.]*) until end of turn\\.", 
         MagicTiming.Pump
     ) {
         @Override
@@ -575,7 +575,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosen(
-        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) and gains (?<ability>.*) until end of turn\\.", 
+        "(?<choice>[^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) and gain(s)? (?<ability>.*) until end of turn\\.", 
         MagicTargetHint.Positive
     ) {
         @Override
@@ -714,7 +714,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainSelf(
-        "sn gains (?<ability>[^\\.]*) until end of turn\\."
+        "sn gain(s)? (?<ability>[^\\.]*) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -743,7 +743,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainChosen(
-        "(?<choice>[^\\.]*) gains (?<ability>[^\\.]*) until end of turn\\.", 
+        "(?<choice>[^\\.]*) gain(s)? (?<ability>[^\\.]*) until end of turn\\.", 
         MagicTargetHint.Positive
     ) {
         @Override

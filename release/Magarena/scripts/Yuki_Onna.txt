@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={3}{R}
 pt=3/1
-ability=enters effect Destroy target artifact.;spirit or arcane effect You may Return SN to its owner's hand.
+ability=enters effect Destroy target artifact.;spirit or arcane effect You may return SN to its owner's hand.
 timing=main

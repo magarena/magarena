@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=3/1
-ability=heroic effect You may Tap target creature.
+ability=heroic effect You may tap target creature.
 timing=main
