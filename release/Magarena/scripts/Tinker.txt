@@ -5,6 +5,6 @@ value=4.619
 rarity=M
 type=Sorcery
 cost={2}{U}
-ability=add cost Sacrifice an artifact;\
+ability=add cost Sacrifice an artifact
 effect=Search your library for an artifact card and put it onto the battlefield. Then shuffle your library.
 timing=main
