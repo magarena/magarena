@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Shaman
 cost={2}{G}
 pt=2/3
-ability=your end step effect Put a +1/+1 counter on target Beast creature you control.
+ability=At the beginning of your end step, put a +1/+1 counter on target Beast creature you control.
 timing=main
