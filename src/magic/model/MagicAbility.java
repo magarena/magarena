@@ -620,7 +620,7 @@ public enum MagicAbility {
             ));
         }
     },
-    DiesEffect("dies effect", 10) {
+    DiesEffect("When SN dies,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenDiesTrigger.create(
                 MagicRuleEventAction.create(arg)
