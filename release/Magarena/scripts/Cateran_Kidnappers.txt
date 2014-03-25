@@ -1,0 +1,11 @@
+name=Cateran Kidnappers
+url=http://magiccards.info/mm/en/122.html
+image=http://mtgimage.com/card/cateran%20kidnappers.jpg
+value=2.917
+rarity=U
+type=Creature
+subtype=Human,Mercenary
+cost={2}{B}{B}
+pt=4/2
+timing=main
+requires_groovy_code
