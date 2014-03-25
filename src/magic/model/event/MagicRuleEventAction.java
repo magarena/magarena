@@ -1460,7 +1460,7 @@ public enum MagicRuleEventAction {
     }
 
     public static MagicSourceEvent create(final String rule) {
-        final String ruleWithoutMay = rule.replaceFirst("^PN may ", "");
+        final String ruleWithoutMay = rule.replaceFirst("^You may ", "");
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final Matcher matcher = ruleAction.matched(effect);
@@ -1471,7 +1471,7 @@ public enum MagicRuleEventAction {
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
         final String contextRule = ruleWithoutMay.replace("your"," PN's").replace("you","PN");
 
-        return rule.startsWith("PN may ") ?
+        return rule.startsWith("You may ") ?
             new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
