@@ -110,7 +110,7 @@ public class MainMenuScreen extends AbstractScreen {
                     GeneralConfig.getInstance().setIsMissingFiles(get());
                     repaint();
                 } catch (InterruptedException | ExecutionException e1) {
-                    MagicGameReport.reportException(Thread.currentThread(), e1);
+                    throw new RuntimeException(e1);
                 }
             }
         };

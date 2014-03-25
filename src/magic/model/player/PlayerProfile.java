@@ -47,7 +47,7 @@ public abstract class PlayerProfile {
             try {
                 Files.createDirectory(profilePath);
             } catch (IOException e) {
-                MagicGameReport.reportException(Thread.currentThread(), e);
+                throw new RuntimeException(e);
             }
         }
     }
@@ -59,8 +59,8 @@ public abstract class PlayerProfile {
         try {
             FileIO.toFile(file, properties, "Player profile settings");
         } catch (IOException e) {
-            MagicGameReport.reportException(Thread.currentThread(), e);
-      }
+            throw new RuntimeException(e);
+        }
     }
 
     protected Properties loadPlayerProperties() {

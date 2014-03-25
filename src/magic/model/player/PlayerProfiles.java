@@ -61,7 +61,7 @@ public final class PlayerProfiles {
                 }
                 profilePaths = getDirectoryPaths(playersPath);
             } catch (IOException e) {
-                MagicGameReport.reportException(Thread.currentThread(), e);
+                throw new RuntimeException(e);
             }
         }
         return profilePaths;

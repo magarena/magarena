@@ -48,8 +48,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                         quickFixSpaceKeyShortcut();
                     }
                 } catch (InterruptedException | ExecutionException e1) {
-                    e1.printStackTrace();
-                    MagicGameReport.reportException(Thread.currentThread(), e1);
+                    throw new RuntimeException(e1);
                 }
             }
         };
