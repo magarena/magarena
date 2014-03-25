@@ -1,0 +1,11 @@
+name=Amrou Scout
+url=http://magiccards.info/mma/en/2.html
+image=http://mtgimage.com/card/amrou%20scout.jpg
+value=3.372
+rarity=C
+type=Creature
+subtype=Human,Rebel,Scout
+cost={1}{W}
+pt=2/1
+timing=main
+requires_groovy_code
