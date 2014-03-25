@@ -1,0 +1,12 @@
+name=Cateran Slaver
+url=http://magiccards.info/mm/en/125.html
+image=http://mtgimage.com/card/cateran%20slaver.jpg
+value=2.917
+rarity=R
+type=Creature
+subtype=Horror,Mercenary
+cost={4}{B}{B}
+pt=5/5
+ability=swampwalk
+timing=main
+requires_groovy_code
