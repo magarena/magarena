@@ -5,5 +5,5 @@ value=4.541
 rarity=R
 type=Instant
 cost={G}{W}
+effect=Search your library for a creature card, reveal it, and put it into your hand. Then shuffle your library.
 timing=draw
-requires_groovy_code=Altar of Bone

@@ -5,5 +5,5 @@ value=2.346
 rarity=C
 type=Sorcery
 cost={G}
+effect=Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
-requires_groovy_code

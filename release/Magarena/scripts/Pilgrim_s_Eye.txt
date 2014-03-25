@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Thopter
 cost={3}
 pt=1/1
-ability=flying
+ability=flying;\
+        enters effect PN may search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=artifact
-requires_groovy_code=Civic Wayfinder
