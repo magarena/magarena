@@ -40,8 +40,8 @@ public class MagicGameReport implements Thread.UncaughtExceptionHandler {
             MagicGameReport.buildReport(MagicGame.getInstance(), th, ex);
             if (MagicMain.rootFrame != null) {
                 doScreenShot(MagicMain.rootFrame.getContentPane());
+                doNotifyUser();
             }
-            doNotifyUser();
             System.exit(1);
         }
     }
