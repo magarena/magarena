@@ -7,5 +7,5 @@ type=Creature
 subtype=Plant
 cost={2}{G}
 pt=2/3
-ability=landfall effect SN gains vigilance until end of turn.
+ability=Whenever a land enters the battlefield under your control, SN gains vigilance until end of turn.
 timing=main

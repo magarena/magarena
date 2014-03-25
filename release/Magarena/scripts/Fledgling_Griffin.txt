@@ -7,5 +7,5 @@ type=Creature
 subtype=Griffin
 cost={1}{W}
 pt=2/2
-ability=landfall effect SN gains flying until end of turn.
+ability=Whenever a land enters the battlefield under your control, SN gains flying until end of turn.
 timing=main

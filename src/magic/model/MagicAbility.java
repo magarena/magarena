@@ -338,7 +338,7 @@ public enum MagicAbility {
             card.add(MagicAllyGrowTrigger.create());
         }
     },
-    LandfallEffect("landfall effect",0) {
+    LandfallEffect("Whenever a land enters the battlefield under your control,",0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicLandfallTrigger.create(
                 MagicRuleEventAction.create(arg)

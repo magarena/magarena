@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={1}{R}
 pt=1/1
-ability=first strike;landfall effect SN gets +2/+2 until end of turn.
+ability=first strike;Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
