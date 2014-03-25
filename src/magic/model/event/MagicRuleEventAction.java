@@ -32,6 +32,7 @@ import magic.model.action.MagicChangeLifeAction;
 import magic.model.action.MagicTapAction;
 import magic.model.action.MagicUntapAction;
 import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicPlayMod;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.action.MagicPlayTokensAction;
 import magic.model.action.MagicPreventDamageAction;
@@ -1017,6 +1018,62 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    SearchLibraryToHand(
+        "search your library for (?<choice>[^\\.]*), reveal it, and put it into your hand. Then shuffle your library\\.",
+        MagicTargetHint.None,
+        MagicGraveyardTargetPicker.ReturnToHand,
+        MagicTiming.Draw,
+        "Search"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            return MagicChoice.NONE;
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicSearchIntoHandEvent(
+                        event,
+                        new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library")
+                    ));      
+                }
+            };
+        }
+    },
+    SearchLibraryToBattlefield(
+        "search your library for (?<choice>[^\\.]*) and put it onto the battlefield(?<tapped>[^\\.]*). Then shuffle your library\\.",
+        MagicTargetHint.None,
+        MagicGraveyardTargetPicker.PutOntoBattlefield,
+        MagicTiming.Pump,
+        "Search"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            return MagicChoice.NONE;
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    if (matcher.group("tapped").contains("tapped")) {
+                        game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                            event,
+                            new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library"),
+                            MagicPlayMod.TAPPED
+                        ));
+                    } else {
+                        game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                            event,
+                            new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library")
+                        ));
+                    }
+                }
+            };
+        }
+    },
     Reanimate(
         "return (?<choice>[^\\.]*) to the battlefield\\.",
         MagicTargetHint.None,
