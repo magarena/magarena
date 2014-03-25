@@ -8,5 +8,5 @@ subtype=Thopter
 cost={3}
 pt=1/1
 ability=flying;\
-        enters effect PN may search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
+        enters effect You may search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=artifact
