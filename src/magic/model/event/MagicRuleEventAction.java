@@ -504,7 +504,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpChosen(
-        "(?<choice>[^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
+        "(?<choice>[^\\.]*) gets (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.", 
         MagicTargetHint.Positive, 
         MagicPumpTargetPicker.create(), 
         MagicTiming.Pump, 
@@ -610,7 +610,7 @@ public enum MagicRuleEventAction {
         }
     },
     WeakenChosen(
-        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn\\.", 
+        "(?<choice>target[^\\.]*) gets (?<pt>[0-9-]+/[0-9-]+) until end of turn\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "Weaken"
@@ -743,7 +743,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainChosen(
-        "(?<choice>[^\\.]*) gain(s)? (?<ability>[^\\.]*) until end of turn\\.", 
+        "(?<choice>[^\\.]*) gains (?<ability>[^\\.]*) until end of turn\\.", 
         MagicTargetHint.Positive
     ) {
         @Override
