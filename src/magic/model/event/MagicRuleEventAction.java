@@ -736,7 +736,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             return new MagicCondition[]{
                 MagicConditionFactory.NoAbility(ability)
             };
@@ -762,7 +762,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             switch (ability) {
                 case Haste:
                 case Vigilance:
@@ -776,7 +776,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             switch (ability) {
                 case Deathtouch: 
                     return MagicDeathtouchTargetPicker.create();

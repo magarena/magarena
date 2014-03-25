@@ -862,7 +862,7 @@ public enum MagicAbility {
         return score;
     }
 
-    private static MagicAbility getAbilityRaw(final String name) {
+    public static MagicAbility getAbility(final String name) {
         MagicAbility match = None;
         for (final MagicAbility ability : values()) {
             if (name.startsWith(ability.getName()) && ability.getName().length() > match.getName().length()) {
@@ -879,7 +879,7 @@ public enum MagicAbility {
     public static MagicAbilityList getAbilityList(final String[] names) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         for (final String name : names) {
-            getAbilityRaw(name).addAbility(abilityList, name);
+            getAbility(name).addAbility(abilityList, name);
         }
         return abilityList;
     }
@@ -894,22 +894,12 @@ public enum MagicAbility {
 
     private static final Pattern SUB_ABILITY_LIST = Pattern.compile("\"([^\"]*)\"|([A-Za-z][^,]*)");
     
-    public static MagicAbility getAbility(final String names) {
-        final Matcher m = SUB_ABILITY_LIST.matcher(names);
-        if (m.find()) {
-            final String name = m.group(1) != null ? m.group(1) : m.group(2);
-            return getAbilityRaw(name);
-        } else {
-            throw new RuntimeException("Unable to convert " + names + " to an ability");
-        }
-    }
-    
     public static MagicAbilityList getAbilityList(final String names) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         final Matcher m = SUB_ABILITY_LIST.matcher(names);
         while (m.find()) {
             final String name = m.group(1) != null ? m.group(1) : m.group(2);
-            getAbilityRaw(name).addAbility(abilityList, name);
+            getAbility(name).addAbility(abilityList, name);
         }
         return abilityList;
     }
