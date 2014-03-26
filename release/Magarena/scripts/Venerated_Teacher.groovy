@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN places two level tokens on each creature with level up he or she controls."
+                "PN puts two level counters on each creature with level up he or she controls."
             );
         }
         @Override
