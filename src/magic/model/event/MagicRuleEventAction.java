@@ -1187,7 +1187,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillSelf(
-        "(pn )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
+        "(pn )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of your library into your graveyard\\.",
         MagicTiming.Draw, 
         "Mill"
     ) {
