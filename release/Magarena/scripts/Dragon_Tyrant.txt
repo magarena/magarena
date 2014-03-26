@@ -10,6 +10,6 @@ pt=6/6
 ability=flying;\
         trample;\
         double strike;\
-        At the beginning of your upkeep, sacrifice SN unless you pay {R}{R}{R}{R}.;\
+        At the beginning of your upkeep, you may pay {R}{R}{R}{R}. If you don't, sacrifice SN.;\
         cost {R}:SN gets +1/+0 until end of turn.
 timing=main
