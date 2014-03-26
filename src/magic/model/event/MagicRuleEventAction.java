@@ -1223,7 +1223,7 @@ public enum MagicRuleEventAction {
         }
     },
     SacrificeUnless(
-        "sacrifice SN unless you pay (?<cost>[^\\.]*)\\.", 
+        "pay (?<cost>[^\\.]*)\\. If you don't, sacrifice SN\\.", 
         MagicTiming.None, 
         "Sacrifice"
     ) {
@@ -1506,7 +1506,7 @@ public enum MagicRuleEventAction {
                         choice,
                         picker,
                         action,
-                        capitalize(rule) + "$"
+                        rule + "$"
                     );
                 }
             };
