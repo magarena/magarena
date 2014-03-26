@@ -8,5 +8,5 @@ subtype=Rhino,Monk,Soldier
 cost={3}{G}{W}
 pt=2/3
 ability=exalted;\
-        When SN enters the battlefield, gain 3 life.
+        When SN enters the battlefield, you gain 3 life.
 timing=main

@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/seraph%20sanctuary.jpg
 value=2.915
 rarity=C
 type=Land
-ability=When SN enters the battlefield, gain 1 life.;\
+ability=When SN enters the battlefield, you gain 1 life.;\
         tap add mana {1}
 timing=land
 requires_groovy_code

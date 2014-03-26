@@ -5,5 +5,5 @@ value=3.587
 rarity=C
 type=Instant
 cost={G}{G}
-effect=Gain 6 life.
+effect=You gain 6 life.
 timing=removal

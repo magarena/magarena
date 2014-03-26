@@ -5,5 +5,5 @@ value=1.342
 rarity=C
 type=Sorcery
 cost={1}{W}
-effect=Gain 4 life.
+effect=You gain 4 life.
 timing=main

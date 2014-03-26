@@ -8,5 +8,5 @@ subtype=Cat,Soldier
 cost={5}{W}
 pt=2/5
 ability=vigilance;\
-        When SN enters the battlefield, gain 4 life.
+        When SN enters the battlefield, you gain 4 life.
 timing=main

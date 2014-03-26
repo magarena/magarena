@@ -8,5 +8,5 @@ subtype=Djinn
 cost={2}{U}{B}
 pt=5/3
 ability=islandwalk;\
-        At the beginning of your upkeep, lose 2 life.
+        At the beginning of your upkeep, you lose 2 life.
 timing=main

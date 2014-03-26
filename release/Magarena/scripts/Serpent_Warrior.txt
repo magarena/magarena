@@ -7,5 +7,5 @@ type=Creature
 subtype=Snake,Warrior
 cost={2}{B}
 pt=3/3
-ability=When SN enters the battlefield, lose 3 life.
+ability=When SN enters the battlefield, you lose 3 life.
 timing=main

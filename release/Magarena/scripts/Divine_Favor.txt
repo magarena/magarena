@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 given_pt=1/3
-ability=When SN enters the battlefield, gain 3 life.
+ability=When SN enters the battlefield, you gain 3 life.
 timing=aura
 enchant=pump,pos creature

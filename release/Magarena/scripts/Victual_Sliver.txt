@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={G}{W}
 pt=2/2
-ability=lord all slivers have "cost {2},Sacrifice SN: Gain 4 life."
+ability=lord all slivers have "cost {2},Sacrifice SN: You gain 4 life."
 static=all
 timing=main

@@ -5,7 +5,7 @@ value=3.463
 rarity=R
 type=Artifact
 cost={6}
-ability=cost {1}{W},{T}: Gain 5 life.;\
+ability=cost {1}{W},{T}: You gain 5 life.;\
         cost {1}{U},{T}: Draw a card, then discard a card.;\
         cost {1}{B},{T}: Target creature gets -2/-2 until end of turn.;\
         cost {1}{R},{T}: SN deals 3 damage to target player.;\

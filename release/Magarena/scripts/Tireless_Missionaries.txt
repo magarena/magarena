@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={4}{W}
 pt=2/3
-ability=When SN enters the battlefield, gain 3 life.
+ability=When SN enters the battlefield, you gain 3 life.
 timing=main

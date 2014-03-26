@@ -7,5 +7,5 @@ type=Land
 mana=b3r3
 ability=tap add mana {B} or {R};\
         SN enters the battlefield tapped.;\
-        When SN enters the battlefield, gain 1 life.
+        When SN enters the battlefield, you gain 1 life.
 timing=tapland

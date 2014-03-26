@@ -8,5 +8,5 @@ subtype=Horror
 cost={2}{B}
 pt=3/3
 ability=flying;\
-        When SN enters the battlefield, lose 3 life.
+        When SN enters the battlefield, you lose 3 life.
 timing=main

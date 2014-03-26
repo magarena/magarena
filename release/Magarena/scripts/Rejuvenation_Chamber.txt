@@ -6,5 +6,5 @@ rarity=U
 type=Artifact
 cost={3}
 ability=fading 2;\
-        cost {T}: Gain 2 life.
+        cost {T}: You gain 2 life.
 timing=main

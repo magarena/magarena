@@ -412,7 +412,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainLife(
-        "(pn )?gain(s)? (?<amount>[0-9]+) life\\.", 
+        "((Y|y)ou)?( )?gain (?<amount>[0-9]+) life\\.", 
         MagicTiming.Removal, 
         "+Life"
     ) {
@@ -428,7 +428,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainLifeChosen(
-        "(?<choice>[^\\.]*) gain(s)? (?<amount>[0-9]+) life\\.", 
+        "(?<choice>[^\\.]*) gains (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Positive, 
         MagicTiming.Removal, 
         "+Life"
@@ -449,7 +449,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLifeSelf(
-        "(pn )?lose(s)? (?<amount>[0-9]+) life\\.", 
+        "((Y|y)ou)?( )?lose (?<amount>[0-9]+) life\\.", 
         MagicTiming.Removal, 
         "-Life"
     ) {
@@ -465,7 +465,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLifeChosen(
-        "(?<choice>[^\\.]*) lose(s)? (?<amount>[0-9]+) life\\.", 
+        "(?<choice>[^\\.]*) loses (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "-Life"
