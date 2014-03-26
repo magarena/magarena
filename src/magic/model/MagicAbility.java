@@ -456,25 +456,25 @@ public enum MagicAbility {
             card.add(new MagicDamageGrowTrigger(true, false));
         }
     },
-    OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard",10) {
+    OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
         }
     },
-    RecoverGraveyard("When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library",10) {
+    RecoverGraveyard("When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard);
         }
     },
-    GraveyardToLibrary("When SN is put into a graveyard from anywhere, shuffle it into its owner's library",10) {
+    GraveyardToLibrary("When SN is put into a graveyard from anywhere, shuffle it into its owner's library.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicFromGraveyardToLibraryTrigger.create());
         }
     },
-    LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead",10) {
+    LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);
