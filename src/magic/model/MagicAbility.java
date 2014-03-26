@@ -300,7 +300,7 @@ public enum MagicAbility {
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
         }
     },
-    ShockLand("As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped", -10) {
+    ShockLand("As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicRavnicaLandTrigger.create());
@@ -375,7 +375,7 @@ public enum MagicAbility {
             card.add(new MagicSacrificeManaActivation(manatype));
         }
     },
-    SacAtEnd("At the beginning of the end step, sacrifice SN",-100) {
+    SacAtEnd("At the beginning of the end step, sacrifice SN.",-100) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicAtEndOfTurnTrigger.Sacrifice);
