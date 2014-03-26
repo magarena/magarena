@@ -11,5 +11,5 @@ ability=flying;\
         cost {B}: SN gets +1/+0 until end of turn.;\
         cost {R}: SN gets +1/+0 until end of turn.;\
         cost {G}:SN gets +1/+0 until end of turn.;\
-        At the beginning of your upkeep, sacrifice SN unless you pay {B}{R}{G}.
+        At the beginning of your upkeep, you may pay {B}{R}{G}. If you don't, sacrifice SN.
 timing=main
