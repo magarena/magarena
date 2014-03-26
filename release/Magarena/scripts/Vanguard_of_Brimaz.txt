@@ -7,6 +7,6 @@ type=Creature
 subtype=Cat,Soldier
 cost={W}{W}
 ability=vigilance;\
-        heroic effect PN puts a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.
+        heroic effect Put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.
 pt=2/2
 timing=main

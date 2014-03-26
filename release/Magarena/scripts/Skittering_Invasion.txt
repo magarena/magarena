@@ -7,4 +7,4 @@ type=Tribal,Sorcery
 subtype=Eldrazi
 cost={7}
 timing=token
-effect=PN puts five 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield.
+effect=Put five 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield.

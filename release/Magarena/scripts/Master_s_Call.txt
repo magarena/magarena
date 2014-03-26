@@ -5,5 +5,5 @@ value=3.511
 rarity=C
 type=Instant
 cost={2}{W}
-effect=PN puts two 1/1 colorless Myr artifact creature tokens onto the battlefield.
+effect=Put two 1/1 colorless Myr artifact creature tokens onto the battlefield.
 timing=token

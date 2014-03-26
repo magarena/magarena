@@ -6,6 +6,6 @@ rarity=U
 type=Creature
 subtype=Elf,Spellshaper
 cost={G}
-ability=cost {G}, {T}, Discard a card: PN puts a 1/1 green Elf Druid creature token named Llanowar Elves onto the battlefield.
+ability=cost {G}, {T}, Discard a card: Put a 1/1 green Elf Druid creature token named Llanowar Elves onto the battlefield.
 pt=1/1
 timing=main

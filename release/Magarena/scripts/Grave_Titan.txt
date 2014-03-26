@@ -8,6 +8,6 @@ subtype=Giant
 cost={4}{B}{B}
 pt=6/6
 ability=deathtouch;\
-        When SN enters the battlefield, PN puts two 2/2 black Zombie creature tokens onto the battlefield.;\
-        attacks effect PN puts two 2/2 black Zombie creature tokens onto the battlefield.
+        When SN enters the battlefield, Put two 2/2 black Zombie creature tokens onto the battlefield.;\
+        attacks effect Put two 2/2 black Zombie creature tokens onto the battlefield.
 timing=main

@@ -6,7 +6,7 @@ rarity=R
 type=Artifact
 cost={4}
 ability=cost {1},{T},Discard a card: Gain 4 life.;\
-        cost {1},{T},Pay 1 life: PN puts a 0/1 white Goat creature token onto the battlefield.;\
+        cost {1},{T},Pay 1 life: Put a 0/1 white Goat creature token onto the battlefield.;\
         cost {1},{T},Sacrifice a creature: Return target creature card from your graveyard to your hand.;\
         cost {1},{T},Sacrifice an artifact: Draw a card.
 timing=artifact

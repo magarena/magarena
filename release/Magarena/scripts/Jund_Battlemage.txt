@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Shaman
 cost={2}{R}
 pt=2/2
-ability=cost {B},{T}:Target player loses 1 life.;cost {G},{T}:PN puts a 1/1 green Saproling creature token onto the battlefield.
+ability=cost {B},{T}: Target player loses 1 life.;\
+        cost {G},{T}: Put a 1/1 green Saproling creature token onto the battlefield.
 timing=main

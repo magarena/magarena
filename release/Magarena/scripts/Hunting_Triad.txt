@@ -6,6 +6,6 @@ rarity=U
 type=Tribal,Sorcery
 subtype=Elf
 cost={3}{G}
-effect=PN puts three 1/1 green Elf Warrior creature tokens onto the battlefield.
+effect=Put three 1/1 green Elf Warrior creature tokens onto the battlefield.
 ability=reinforce 3 {3}{G}
 timing=token

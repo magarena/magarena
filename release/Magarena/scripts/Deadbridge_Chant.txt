@@ -5,6 +5,6 @@ value=3.794
 rarity=M
 type=Enchantment
 cost={4}{B}{G}
-ability=When SN enters the battlefield, PN puts the top ten cards of his or her library into his or her graveyard.
+ability=When SN enters the battlefield, put the top ten cards of his or her library into his or her graveyard.
 timing=main
 requires_groovy_code

@@ -7,5 +7,6 @@ type=Legendary,Creature
 subtype=Human,Shaman
 cost={2}{R}{R}
 pt=2/2
-ability=haste;cost {R},{T}:PN puts a 3/1 red Elemental creature token with haste onto the battlefield.
+ability=haste;\
+        cost {R},{T}: Put a 3/1 red Elemental creature token with haste onto the battlefield.
 timing=main

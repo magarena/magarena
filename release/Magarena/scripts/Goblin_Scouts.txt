@@ -5,5 +5,5 @@ value=3.032
 rarity=U
 type=Sorcery
 cost={3}{R}{R}
-effect=PN puts three 1/1 red Goblin Scout creature tokens with mountainwalk onto the battlefield.
+effect=Put three 1/1 red Goblin Scout creature tokens with mountainwalk onto the battlefield.
 timing=main
