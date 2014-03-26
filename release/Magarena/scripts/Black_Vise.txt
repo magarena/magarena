@@ -6,5 +6,5 @@ rarity=U
 type=Artifact
 cost={1}
 timing=smain
-ability=enters choose opponent
+ability=As SN enters the battlefield, choose an opponent.
 requires_groovy_code

@@ -8,5 +8,5 @@ subtype=Elemental
 cost={1}{B}{B}
 pt=7/7
 timing=main
-ability=enters choose opponent
+ability=As SN enters the battlefield, choose an opponent.
 requires_groovy_code

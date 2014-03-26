@@ -7,6 +7,7 @@ type=Artifact,Creature
 subtype=Construct
 cost={5}
 pt=0/1
-ability=indestructible;enters choose opponent
+ability=As SN enters the battlefield, choose an opponent.;\
+        indestructible;
 timing=smain
 requires_groovy_code

@@ -492,7 +492,7 @@ public enum MagicAbility {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
-    EntersChooseOpponent("enters choose opponent", 0) {
+    EntersChooseOpponent("As SN enters the battlefield, choose an opponent", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenComesIntoPlayTrigger.ChooseOpponent);
