@@ -5,5 +5,6 @@ value=4.153
 rarity=R
 type=Legendary,Artifact
 cost={7}
-ability=graveyard to library;cost {W}{U}{B}{R}{G}:Exile target permanent.
+ability=When SN is put into a graveyard from anywhere, shuffle it into its owner's library.;\
+        cost {W}{U}{B}{R}{G}: Exile target permanent.
 timing=artifact

@@ -6,6 +6,6 @@ rarity=M
 type=Creature
 subtype=Avatar
 cost={4}{W}{W}{W}
-ability=graveyard to library
+ability=When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=main
 requires_groovy_code

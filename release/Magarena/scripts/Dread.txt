@@ -7,6 +7,7 @@ type=Creature
 subtype=Elemental,Incarnation
 cost={3}{B}{B}{B}
 pt=6/6
-ability=fear;graveyard to library
+ability=fear;\
+        When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=fmain
 requires_groovy_code
