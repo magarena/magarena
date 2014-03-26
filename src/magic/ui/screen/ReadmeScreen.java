@@ -1,12 +1,34 @@
 package magic.ui.screen;
 
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import javax.swing.JPanel;
+
+import magic.ui.screen.interfaces.IStatusBar;
+
 @SuppressWarnings("serial")
-public class ReadmeScreen extends TextFileReaderScreen {
+public class ReadmeScreen extends TextFileReaderScreen implements IStatusBar {
+
+    private static final Path TEXT_FILE = Paths.get("README.txt");
 
     public ReadmeScreen() {
-        super(Paths.get("README.txt"));
+        setTextFile(TEXT_FILE);
+    }
+
+    @Override
+    protected String reprocessFileContents(String fileContent) {
+        return fileContent;
+    }
+
+    @Override
+    public String getScreenCaption() {
+        return TEXT_FILE.getFileName().toString();
+    }
+
+    @Override
+    public JPanel getStatusPanel() {
+        return null;
     }
 
 }

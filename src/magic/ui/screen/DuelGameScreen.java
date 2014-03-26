@@ -11,7 +11,6 @@ import net.miginfocom.swing.MigLayout;
 import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.model.MagicGameReport;
 import magic.ui.GameLayeredPane;
 import magic.ui.GamePanel;
 import magic.ui.MagicFrame;

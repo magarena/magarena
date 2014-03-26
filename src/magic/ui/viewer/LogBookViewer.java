@@ -1,5 +1,6 @@
 package magic.ui.viewer;
 
+import magic.MagicMain;
 import magic.data.GeneralConfig;
 import magic.model.MagicLogBook;
 import magic.model.MagicMessage;
@@ -42,6 +43,15 @@ public class LogBookViewer extends JPanel {
     private boolean isNewMessageAddedToTop;
     private final TitleBar tb;
 
+    private final MouseAdapter mouseDispatcher = new MouseAdapter() {
+        @Override
+        public void mouseClicked(MouseEvent e) { dispatchEvent(e); }
+        @Override
+        public void mouseEntered(MouseEvent e) { dispatchEvent(e); }
+        @Override
+        public void mouseExited(MouseEvent e) { dispatchEvent(e); }
+    };
+
     public LogBookViewer(final MagicLogBook logBook) {
 
         this.logBook=logBook;
@@ -51,7 +61,7 @@ public class LogBookViewer extends JPanel {
         tb = new TitleBar("Log");
         tb.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         tb.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        tb.setToolTipText("Click to hide log messages");
+        tb.addMouseListener(mouseDispatcher);
         add(tb, BorderLayout.NORTH);
 
         final JPanel centerPanel=new JPanel();
@@ -73,7 +83,33 @@ public class LogBookViewer extends JPanel {
         scrollPane.getVerticalScrollBar().setUnitIncrement(INCREMENT);
         scrollPane.getVerticalScrollBar().setBlockIncrement(INCREMENT);
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
+        scrollPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        scrollPane.addMouseListener(mouseDispatcher);
         add(scrollPane,BorderLayout.CENTER);
+
+        setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 1) {
+                    if (e.getButton() == MouseEvent.BUTTON3) {
+                        MagicMain.rootFrame.showGameLogScreen();
+                        updateTitlebarCaption(false);
+                    } else if (e.getButton() == MouseEvent.BUTTON1) {
+                        scrollPane.setVisible(!scrollPane.isVisible());
+                        updateTitlebarCaption(true);
+                    }
+                }
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                updateTitlebarCaption(false);
+            }
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                updateTitlebarCaption(true);
+            }
+        });
 
         addComponentListener(new ComponentAdapter() {
             @Override
@@ -84,26 +120,13 @@ public class LogBookViewer extends JPanel {
             }
         });
 
-        tb.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(final MouseEvent e) {
-                scrollPane.setVisible(!scrollPane.isVisible());
-                updateTitlebarCaption();
-            }
-        });
-
-        updateTitlebarCaption();
+        updateTitlebarCaption(false);
 
     }
 
-    private void updateTitlebarCaption() {
-        if (!scrollPane.isVisible()) {
-            tb.setText("Click to show Log messages...");
-            tb.setToolTipText(null);
-        } else {
-            tb.setText("Log");
-            tb.setToolTipText("Click to hide log messages");
-        }
+    private void updateTitlebarCaption(final boolean showHelpHints) {
+        final boolean isHidden = !scrollPane.isVisible();
+        tb.setText("Log " + (isHidden ? " OFF" : "") + (showHelpHints ? "   [ LMB: On/Off   RMB: Full Log File ]" : ""));
     }
 
     public MagicLogBook getLogBook() {
