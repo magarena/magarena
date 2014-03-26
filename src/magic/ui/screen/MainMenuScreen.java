@@ -10,8 +10,6 @@ import java.util.concurrent.ExecutionException;
 
 import magic.data.DownloadMissingFiles;
 import magic.data.GeneralConfig;
-import magic.model.MagicGameReport;
-import magic.ui.MagicFrame;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -22,7 +20,7 @@ import javax.swing.SwingWorker;
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen {
 
-    public MainMenuScreen(final MagicFrame frame) {
+    public MainMenuScreen() {
         setContent(getScreenContent());
         checkForMissingFiles();
     }

@@ -170,7 +170,7 @@ public class MagicFrame extends JFrame {
     }
     public void showMainMenuScreen() {
         screens.clear();
-        activateMagScreen(new MainMenuScreen(this));
+        activateMagScreen(new MainMenuScreen());
     }
     private void activateMagScreen(final AbstractScreen screen) {
         showMagScreen(screen);
