@@ -125,7 +125,7 @@ public enum MagicAbility {
     CannotBeTheTargetOfBlackOrRedOpponentSpell("can't be the target of black or red spells your opponents control",10),
     Deathtouch("deathtouch",60),
     Defender("defender",-100),
-    DoesNotUntap("SN doesn't untap during your untap step",-30),
+    DoesNotUntap("SN doesn't untap during your untap step.",-30),
     DoubleStrike("double strike",100),
     Fear("fear",50),
     Flash("flash",0),
@@ -444,13 +444,13 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DamageCreatureGrow("Whenever SN deals damage to a creature, put a +1/+1 counter on SN",10) {
+    DamageCreatureGrow("Whenever SN deals damage to a creature, put a +1/+1 counter on SN.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(new MagicDamageGrowTrigger(false, false));
         }
     },
-    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a +1/+1 counter on SN",10) {
+    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a +1/+1 counter on SN.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(new MagicDamageGrowTrigger(true, false));
@@ -492,13 +492,13 @@ public enum MagicAbility {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
-    EntersChooseOpponent("As SN enters the battlefield, choose an opponent", 0) {
+    EntersChooseOpponent("As SN enters the battlefield, choose an opponent.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenComesIntoPlayTrigger.ChooseOpponent);
         }
     },
-    EntersTapped("SN enters the battlefield tapped", -10) {
+    EntersTapped("SN enters the battlefield tapped.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicTappedIntoPlayTrigger.create());
@@ -517,7 +517,7 @@ public enum MagicAbility {
             }
         }
     },
-    EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands", -10) {
+    EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
