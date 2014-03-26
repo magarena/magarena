@@ -474,7 +474,7 @@ public enum MagicAbility {
             card.add(MagicFromGraveyardToLibraryTrigger.create());
         }
     },
-    LibraryInteadOfGraveyard("library instead of graveyard",10) {
+    LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);

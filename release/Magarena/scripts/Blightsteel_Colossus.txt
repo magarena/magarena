@@ -7,5 +7,8 @@ type=Artifact,Creature
 subtype=Golem
 cost={12}
 pt=11/11
-ability=trample;infect;indestructible;library instead of graveyard
+ability=trample;\
+        infect;\
+        indestructible;\
+        If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.
 timing=main
