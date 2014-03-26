@@ -6,5 +6,5 @@ rarity=R
 type=Land
 mana=w3u3
 ability=tap add mana {W} or {U};\
-        enters tapped unless plains island
+        SN enters the battlefield tapped unless you control a plains island
 timing=land

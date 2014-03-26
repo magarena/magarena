@@ -6,5 +6,5 @@ rarity=R
 type=Land
 mana=g3u3
 ability=tap add mana {G} or {U};\
-        enters tapped unless forest island
+        SN enters the battlefield tapped unless you control a forest island
 timing=land

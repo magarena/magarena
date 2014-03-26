@@ -6,5 +6,5 @@ rarity=R
 type=Land
 mana=u3r3
 ability=tap add mana {U} or {R};\
-        enters tapped unless island mountain
+        SN enters the battlefield tapped unless you control a island mountain
 timing=land

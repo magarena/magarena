@@ -5,7 +5,7 @@ value=3.519
 rarity=C
 type=Land
 mana=b3
-ability=enters tapped;\
+ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target player loses 1 life.;\
         tap add mana {B}
 timing=land

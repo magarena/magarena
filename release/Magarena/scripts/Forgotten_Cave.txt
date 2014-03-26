@@ -5,5 +5,7 @@ value=3.000
 rarity=C
 type=Land
 mana=r3
-ability=enters tapped;tap add mana {R};cycling {R}
+ability=SN enters the battlefield tapped.;\
+        tap add mana {R};\
+        cycling {R}
 timing=tapland

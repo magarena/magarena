@@ -6,6 +6,6 @@ rarity=C
 type=Land
 mana=g4
 timing=land
-ability=enters tapped;\
+ability=SN enters the battlefield tapped.;\
         tap add mana {G};\
         When SN enters the battlefield, put a 0/1 green Plant creature token onto the battlefield.

@@ -5,6 +5,6 @@ value=3.899
 rarity=R
 type=Artifact
 cost={5}
-ability=enters tapped
+ability=SN enters the battlefield tapped.
 timing=artifact
 requires_groovy_code

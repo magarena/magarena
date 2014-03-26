@@ -7,6 +7,7 @@ type=Creature
 subtype=Zombie
 cost={B}{B}{B}
 pt=3/2
-ability=enters tapped;undying;\
+ability=SN enters the battlefield tapped.;\
+        undying;\
         When SN enters the battlefield, target opponent loses 2 life.
 timing=main

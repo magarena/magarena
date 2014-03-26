@@ -7,7 +7,7 @@ type=Creature
 subtype=Giant,Warrior
 cost={2}{R}{R}
 pt=7/7
-ability=enters tapped;\
+ability=SN enters the battlefield tapped.;\
         SN doesn't untap during your untap step.
 timing=main
 requires_groovy_code

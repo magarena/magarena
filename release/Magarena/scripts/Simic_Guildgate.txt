@@ -7,5 +7,5 @@ type=Land
 subtype=Gate
 mana=g3u3
 ability=tap add mana {G} or {U};\
-        enters tapped
+        SN enters the battlefield tapped.
 timing=tapland

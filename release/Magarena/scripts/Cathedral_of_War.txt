@@ -5,6 +5,6 @@ value=3.811
 rarity=R
 type=Land
 ability=tap add mana {1};\
-        enters tapped;\
+        SN enters the battlefield tapped.;\
         exalted
 timing=land

@@ -6,5 +6,5 @@ rarity=R
 type=Land
 mana=b3g3
 ability=tap add mana {B} or {G};\
-        enters tapped unless swamp forest
+        SN enters the battlefield tapped unless you control a swamp forest
 timing=land

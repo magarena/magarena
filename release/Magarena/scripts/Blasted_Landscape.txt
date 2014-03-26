@@ -4,5 +4,7 @@ image=http://mtgimage.com/card/blasted%20landscape.jpg
 value=3.585
 rarity=U
 type=Land
-ability=enters tapped;tap add mana {1};cycling {2}
+ability=SN enters the battlefield tapped.;\
+        tap add mana {1};\
+        cycling {2}
 timing=tapland

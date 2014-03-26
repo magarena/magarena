@@ -6,6 +6,6 @@ rarity=C
 type=Land
 mana=w4
 ability=tap add mana {W};\
-        enters tapped;\
+        SN enters the battlefield tapped.;\
         When SN enters the battlefield, gain 2 life.
 timing=land

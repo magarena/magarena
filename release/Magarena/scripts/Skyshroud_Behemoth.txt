@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={5}{G}{G}
 pt=10/10
-ability=enters tapped;fading 2
+ability=SN enters the battlefield tapped.;fading 2
 timing=main

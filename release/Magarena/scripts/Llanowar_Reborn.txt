@@ -5,5 +5,5 @@ value=3.688
 rarity=U
 type=Land
 mana=g3
-ability=enters tapped;tap add mana {G};graft 1
+ability=SN enters the battlefield tapped.;tap add mana {G};graft 1
 timing=land

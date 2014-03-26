@@ -8,4 +8,4 @@ subtype=Zombie
 cost={4}{B}
 pt=4/5
 timing=main
-ability=enters tapped
+ability=SN enters the battlefield tapped.

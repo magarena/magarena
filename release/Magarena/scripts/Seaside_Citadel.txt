@@ -6,5 +6,5 @@ rarity=U
 type=Land
 mana=g3w3u3
 ability=tap add mana {G} or {W} or {U};\
-        enters tapped
+        SN enters the battlefield tapped.
 timing=tapland

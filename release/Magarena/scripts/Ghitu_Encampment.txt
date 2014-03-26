@@ -6,6 +6,7 @@ rarity=U
 type=Land
 mana=r3
 timing=land
-ability=enters tapped;tap add mana {R}
+ability=SN enters the battlefield tapped.;\
+        tap add mana {R}
 mana_or_combat
 requires_groovy_code

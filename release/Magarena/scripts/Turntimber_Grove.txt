@@ -5,5 +5,5 @@ value=3.095
 rarity=C
 type=Land
 mana=g3
-ability=enters tapped;When SN enters the battlefield, target creature gets +1/+1 until end of turn.;tap add mana {G}
+ability=SN enters the battlefield tapped.;When SN enters the battlefield, target creature gets +1/+1 until end of turn.;tap add mana {G}
 timing=fmain

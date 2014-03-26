@@ -5,5 +5,5 @@ value=3.200
 rarity=U
 type=Land
 mana=b3g1r1u1w1
-ability=enters tapped;enters with counter charge 2;tap add mana {B};tap drain add mana any
+ability=SN enters the battlefield tapped.;enters with counter charge 2;tap add mana {B};tap drain add mana any
 timing=tapland

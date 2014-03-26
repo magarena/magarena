@@ -5,5 +5,6 @@ value=3.651
 rarity=U
 type=Snow,Land
 mana=b3u3
-ability=enters tapped;tap add mana {U} or {B}
+ability=SN enters the battlefield tapped.;\
+        tap add mana {U} or {B}
 timing=tapland

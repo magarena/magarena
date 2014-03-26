@@ -6,6 +6,6 @@ rarity=U
 type=Land
 subtype=Plains
 mana=w3
-ability=tap add mana {W};enters tapped
+ability=tap add mana {W};SN enters the battlefield tapped.
 timing=land
 requires_groovy_code

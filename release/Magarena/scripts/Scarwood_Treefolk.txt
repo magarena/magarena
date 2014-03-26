@@ -7,5 +7,5 @@ type=Creature
 subtype=Treefolk
 cost={3}{G}
 pt=3/5
-ability=enters tapped
+ability=SN enters the battlefield tapped.
 timing=main

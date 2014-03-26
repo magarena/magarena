@@ -498,7 +498,7 @@ public enum MagicAbility {
             card.add(MagicWhenComesIntoPlayTrigger.ChooseOpponent);
         }
     },
-    EntersTapped("enters tapped", -10) {
+    EntersTapped("SN enters the battlefield tapped", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicTappedIntoPlayTrigger.create());
@@ -517,13 +517,13 @@ public enum MagicAbility {
             }
         }
     },
-    EntersTappedUnlessTwo("enters tapped unless two", -10) {
+    EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
         }
     },
-    EntersTappedUnless("enters tapped unless", -10) {
+    EntersTappedUnless("SN enters the battlefield tapped unless you control a", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             final String[] token = arg.split(" ");
             final MagicSubType t1 = MagicSubType.getSubType(token[0]);
