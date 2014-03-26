@@ -769,7 +769,7 @@ public enum MagicAbility {
             card.add(MagicAdditionalCost.create(new MagicMatchedCostEvent(arg)));
         }
     },
-    HeroicEffect("heroic effect", 10) {
+    HeroicEffect("Whenever you cast a spell that targets SN,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicHeroicTrigger.create(
                 MagicRuleEventAction.create(arg)

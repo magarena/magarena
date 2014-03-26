@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{W}
 pt=1/1
-ability=flying;heroic effect Put a +1/+1 counter on SN.
+ability=flying;Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main

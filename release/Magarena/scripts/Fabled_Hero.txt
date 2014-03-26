@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{W}{W}
 pt=2/2
-ability=double strike;heroic effect Put a +1/+1 counter on SN.
+ability=double strike;Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main

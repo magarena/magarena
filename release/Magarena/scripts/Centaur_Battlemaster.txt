@@ -7,5 +7,5 @@ type=Creature
 subtype=Centaur,Warrior
 cost={3}{G}{G}
 pt=3/3
-ability=heroic effect Put three +1/+1 counters on SN.
+ability=Whenever you cast a spell that targets SN, put three +1/+1 counters on SN.
 timing=main
