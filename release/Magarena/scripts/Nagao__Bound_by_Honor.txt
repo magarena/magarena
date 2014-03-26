@@ -8,5 +8,5 @@ subtype=Human,Samurai
 cost={3}{W}
 pt=3/3
 ability=bushido 1;\
-        attacks effect Samurai creatures PN controls get +1/+1 until end of turn.
+        attacks effect Samurai creatures you control get +1/+1 until end of turn.
 timing=main

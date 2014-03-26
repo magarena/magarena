@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=3/3
-ability=battalion effect Creatures PN controls gain indestructible until end of turn.;\
+ability=battalion effect Creatures you control gain indestructible until end of turn.;\
         cost Sacrifice SN: Counter target spell with {X} in its mana cost unless its controller pays {3}.
 timing=main

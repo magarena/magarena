@@ -5,5 +5,5 @@ value=2.909
 rarity=C
 type=Instant
 cost={G}
-effect=Lands PN controls gain tap add mana any until end of turn.
+effect=Lands you control gain tap add mana any until end of turn.
 timing=pump

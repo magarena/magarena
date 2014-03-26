@@ -5,6 +5,6 @@ value=3.944
 rarity=R
 type=Enchantment
 cost={R/W}{R/W}
-ability=cost {R/W}: Red creatures and white creatures PN controls gain first strike until end of turn.
+ability=cost {R/W}: Red creatures and white creatures you control gain first strike until end of turn.
 timing=enchantment
 requires_groovy_code

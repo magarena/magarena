@@ -8,5 +8,5 @@ subtype=Elf,Wizard
 cost={G/W}{G/W}
 pt=2/2
 ability=cost {3}{G}: Put a 1/1 green Saproling creature token onto the battlefield.;\
-        cost {3}{W}: Creatures PN controls get +1/+1 until end of turn.
+        cost {3}{W}: Creatures you control get +1/+1 until end of turn.
 timing=main

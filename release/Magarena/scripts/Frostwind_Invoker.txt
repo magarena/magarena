@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={4}{U}
 pt=3/3
-ability=flying;cost {8}:Creatures PN controls gain flying until end of turn.
+ability=flying;cost {8}: Creatures you control gain flying until end of turn.
 timing=main

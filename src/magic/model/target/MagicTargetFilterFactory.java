@@ -30,10 +30,8 @@ public class MagicTargetFilterFactory {
         factory.put("artifacts you control", TARGET_ARTIFACT_YOU_CONTROL);
         factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
         factory.put("enchantments you control", TARGET_ENCHANTMENT_YOU_CONTROL);
-        factory.put("creatures PN controls", TARGET_CREATURE_YOU_CONTROL);
-        factory.put("red creatures and white creatures PN controls", TARGET_RED_OR_WHITE_CREATURE_YOU_CONTROL);
+        factory.put("red creatures and white creatures you control", TARGET_RED_OR_WHITE_CREATURE_YOU_CONTROL);
         factory.put("creatures your opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
-        factory.put("creatures PN's opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
         factory.put("creatures with flying your opponents control", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         factory.put("creatures you control with flying", TARGET_CREATURE_WITH_FLYING_YOU_CONTROL);
         factory.put("enchanted creatures you control", TARGET_ENCHANTED_CREATURE_YOU_CONTROL);

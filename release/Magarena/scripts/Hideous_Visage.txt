@@ -5,5 +5,5 @@ value=2.703
 rarity=C
 type=Sorcery
 cost={2}{B}
-effect=Creatures PN controls gain intimidate until end of turn.
+effect=Creatures you control gain intimidate until end of turn.
 timing=pump
