@@ -1,6 +1,6 @@
 name=Venerated Teacher
-url=http://magiccards.info/roe/en/93.html
-image=http://magiccards.info/scans/en/roe/93.jpg
+url=http://magiccards.info/query?q=%21venerated%20teacher
+image=http://mtgimage.com/card/venerated%20teacher.jpg
 value=2.500
 rarity=C
 type=Creature
