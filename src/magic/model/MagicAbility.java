@@ -613,7 +613,7 @@ public enum MagicAbility {
             ));
         }
     },
-    EntersKickedEffect("enters kicked effect", 10) {
+    EntersKickedEffect("When SN enters the battlefield, if it was kicked,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenComesIntoPlayTrigger.createKicked(
                 MagicRuleEventAction.create(arg)

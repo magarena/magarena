@@ -7,6 +7,7 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=1/2
-ability=flying;kicker {1}{W};\
-        enters kicked effect Destroy target enchantment.
+ability=kicker {1}{W};\
+        flying;\
+        When SN enters the battlefield, if it was kicked, destroy target enchantment.
 timing=main

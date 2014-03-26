@@ -8,5 +8,5 @@ subtype=Kor,Cleric
 cost={2}{W}
 pt=2/3
 ability=kicker {W};\
-        enters kicked effect Destroy target artifact or enchantment.
+        When SN enters the battlefield, if it was kicked, destroy target artifact or enchantment.
 timing=main
