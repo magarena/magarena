@@ -1,0 +1,11 @@
+name=Venerated Teacher
+url=http://magiccards.info/roe/en/93.html
+image=http://magiccards.info/scans/en/roe/93.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/2
+timing=main
+requires_groovy_code
