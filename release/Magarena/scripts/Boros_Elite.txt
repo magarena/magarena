@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/1
-ability=battalion effect SN gets +2/+2 until end of turn.
+ability=Whenever SN and at least two other creatures attack, SN gets +2/+2 until end of turn.
 timing=main

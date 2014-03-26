@@ -7,5 +7,5 @@ type=Creature
 subtype=Minotaur,Soldier
 cost={2}{R}{W}
 pt=3/1
-ability=battalion effect SN gains double strike until end of turn.
+ability=Whenever SN and at least two other creatures attack, SN gains double strike until end of turn.
 timing=main

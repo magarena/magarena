@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={R}{W}
 pt=3/2
-ability=battalion effect SN gains first strike until end of turn.
+ability=Whenever SN and at least two other creatures attack, SN gains first strike until end of turn.
 timing=main
