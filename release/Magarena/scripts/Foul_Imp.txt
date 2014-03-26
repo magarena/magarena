@@ -8,5 +8,5 @@ subtype=Imp
 cost={B}{B}
 pt=2/2
 ability=flying;\
-        When SN enters the battlefield, PN loses 2 life.
+        When SN enters the battlefield, lose 2 life.
 timing=smain

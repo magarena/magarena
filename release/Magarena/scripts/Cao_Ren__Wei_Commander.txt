@@ -8,5 +8,5 @@ subtype=Human,Soldier,Warrior
 cost={2}{B}{B}
 pt=3/3
 ability=horsemanship;\
-        When SN enters the battlefield, PN loses 3 life.
+        When SN enters the battlefield, lose 3 life.
 timing=main
