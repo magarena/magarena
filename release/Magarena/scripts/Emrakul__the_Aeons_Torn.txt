@@ -11,6 +11,6 @@ ability=can't be countered;\
         flying;\
         protection from colored spells;\
         annihilator 6;\
-        dead recover graveyard
+        When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
 requires_groovy_code

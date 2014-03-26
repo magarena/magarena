@@ -8,6 +8,8 @@ type=Legendary,Creature
 subtype=Eldrazi
 cost={11}
 pt=10/10
-ability=annihilator 4;indestructible;dead recover graveyard
+ability=annihilator 4;\
+        indestructible;\
+        When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
 requires_groovy_code

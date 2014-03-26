@@ -456,13 +456,13 @@ public enum MagicAbility {
             card.add(new MagicDamageGrowTrigger(true, false));
         }
     },
-    OpponentDiscardOntoBattlefield("opponent discard onto battlefield",10) {
+    OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
         }
     },
-    RecoverGraveyard("dead recover graveyard",10) {
+    RecoverGraveyard("When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard);
