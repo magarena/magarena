@@ -248,7 +248,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventOwner(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to pn this turn\\.",
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to you this turn\\.",
         MagicTiming.Pump,
         "Prevent"
     ) {

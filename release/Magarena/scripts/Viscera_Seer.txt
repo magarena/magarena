@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire,Wizard
 cost={B}
 pt=1/1
-ability=cost Sacrifice a creature:PN scry 1.
+ability=cost Sacrifice a creature: Scry 1.
 timing=main

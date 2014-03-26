@@ -8,6 +8,6 @@ subtype=God
 cost={2}{U}
 pt=5/5
 ability=indestructible;\
-        At the beginning of your upkeep, PN scry 1.
+        At the beginning of your upkeep, scry 1.
 timing=main
 requires_groovy_code
