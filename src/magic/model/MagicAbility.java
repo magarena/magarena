@@ -318,7 +318,7 @@ public enum MagicAbility {
             card.add(new MagicRampageTrigger(n));
         }
     },
-    AttacksEffect("attacks effect", 10) {
+    AttacksEffect("Whenever SN attacks,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenSelfAttacksTrigger.create(
                 MagicRuleEventAction.create(arg)

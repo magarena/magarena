@@ -8,6 +8,6 @@ subtype=Human,Knight
 cost={3}{W}{W}
 pt=2/2
 ability=flanking;\
-        attacks effect You may tap target creature.
+        Whenever SN attacks, you may tap target creature.
 timing=main
 requires_groovy_code=Gustcloak Skirmisher

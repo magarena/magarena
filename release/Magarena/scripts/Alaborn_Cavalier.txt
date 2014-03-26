@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=2/2
-ability=attacks effect You may tap target creature.
+ability=Whenever SN attacks, you may tap target creature.
 timing=main

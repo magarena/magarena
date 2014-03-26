@@ -7,5 +7,6 @@ type=Creature
 subtype=Bird
 cost={2}{U}
 pt=2/1
-ability=flying;attacks effect Target creature you control gains flying until end of turn.
+ability=flying;\
+        Whenever SN attacks, target creature you control gains flying until end of turn.
 timing=main

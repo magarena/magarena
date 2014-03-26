@@ -8,5 +8,5 @@ subtype=Spirit
 cost={1}{W}
 pt=1/1
 ability=flying;\
-        attacks effect You may tap target creature.
+        Whenever SN attacks, you may tap target creature.
 timing=main

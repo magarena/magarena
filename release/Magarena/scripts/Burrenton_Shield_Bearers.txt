@@ -7,5 +7,5 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={4}{W}
 pt=3/3
-ability=attacks effect Target creature gets +0/+3 until end of turn.
+ability=Whenever SN attacks, target creature gets +0/+3 until end of turn.
 timing=main
