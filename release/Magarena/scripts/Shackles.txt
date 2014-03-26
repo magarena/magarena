@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}
 enchant=tap,neg creature
-given_ability=doesn't untap during untap step
+given_ability=SN doesn't untap during your untap step.
 ability=cost {W}:Return SN to its owner's hand.
 timing=enchantment

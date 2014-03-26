@@ -8,6 +8,6 @@ subtype=Golem
 cost={9}
 pt=9/9
 ability=trample;\
-        doesn't untap during untap step;\
+        SN doesn't untap during your untap step.;\
         cost {YourUpkeep}, {9}: Untap SN.
 timing=main

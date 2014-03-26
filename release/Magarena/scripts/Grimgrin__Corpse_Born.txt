@@ -7,6 +7,7 @@ type=Legendary,Creature
 subtype=Zombie,Warrior
 cost={3}{U}{B}
 pt=5/5
-ability=doesn't untap during untap step;enters tapped
+ability=enters tapped;\
+        SN doesn't untap during your untap step.
 timing=main
 requires_groovy_code

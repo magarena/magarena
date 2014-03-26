@@ -8,6 +8,6 @@ subtype=Horse
 cost={3}{B}{B}
 pt=4/4
 ability=trample;\
-        doesn't untap during untap step;\
-        cost {YourUpkeep},Sacrifice a creature:Untap SN.
+        SN doesn't untap during your untap step.;\
+        cost {YourUpkeep},Sacrifice a creature: Untap SN.
 timing=main

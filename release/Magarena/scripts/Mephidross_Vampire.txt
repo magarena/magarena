@@ -7,6 +7,6 @@ type=Creature
 subtype=Vampire
 cost={4}{B}{B}
 pt=3/4
-ability=flying;lord creatures you control have damage creature grow
+ability=flying;lord creatures you control have "Whenever SN deals damage to a creature, put a +1/+1 counter on SN."
 timing=main
 requires_groovy_code

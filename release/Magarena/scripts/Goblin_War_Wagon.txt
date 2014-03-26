@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
 pt=3/3
-ability=doesn't untap during untap step
+ability=SN doesn't untap during your untap step.
 timing=artifact
 requires_groovy_code

@@ -5,6 +5,6 @@ value=4.143
 rarity=R
 type=Enchantment
 cost={3}{U}
-ability=lord lands have "doesn't untap during untap step"
+ability=lord lands have "SN doesn't untap during your untap step."
 timing=enchantment
 requires_groovy_code

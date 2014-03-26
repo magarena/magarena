@@ -5,6 +5,6 @@ value=4.446
 rarity=R
 type=Enchantment
 cost={2}{U}
-ability=lord all creatures have doesn't untap during untap step
+ability=lord all creatures have "SN doesn't untap during your untap step."
 timing=enchantment
 requires_groovy_code

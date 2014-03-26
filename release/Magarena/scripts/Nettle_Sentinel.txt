@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={G}
 pt=2/2
-ability=doesn't untap during untap step
+ability=SN doesn't untap during your untap step.
 timing=main
 requires_groovy_code

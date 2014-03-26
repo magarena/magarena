@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=doesn't untap during untap step
+given_ability=SN doesn't untap during your untap step.
 enchant=tap,neg artifact
 timing=enchantment
