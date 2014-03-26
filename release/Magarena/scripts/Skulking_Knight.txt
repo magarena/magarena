@@ -7,5 +7,6 @@ type=Creature
 subtype=Zombie,Knight
 cost={2}{B}
 pt=3/3
-ability=flanking;sac when targeted
+ability=flanking;\
+        When SN becomes the target of a spell or ability, sacrifice it.
 timing=main

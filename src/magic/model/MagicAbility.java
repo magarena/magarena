@@ -375,7 +375,7 @@ public enum MagicAbility {
             card.add(new MagicSacrificeManaActivation(manatype));
         }
     },
-    SacAtEnd("sac at end",-100) {
+    SacAtEnd("At the beginning of the end step, sacrifice SN",-100) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicAtEndOfTurnTrigger.Sacrifice);
@@ -387,7 +387,7 @@ public enum MagicAbility {
             card.add(MagicAtEndOfTurnTrigger.ExileAtEnd);
         }
     },
-    SacWhenTargeted("sac when targeted",-10) {
+    SacWhenTargeted("When SN becomes the target of a spell or ability, sacrifice it.",-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             assert arg.isEmpty() : this + " does not accept arg = " + arg;
             card.add(MagicWhenTargetedTrigger.SacWhenTargeted);

@@ -7,5 +7,5 @@ type=Creature
 subtype=Bear,Illusion
 cost={U}
 pt=2/2
-ability=sac when targeted
+ability=When SN becomes the target of a spell or ability, sacrifice it.
 timing=main

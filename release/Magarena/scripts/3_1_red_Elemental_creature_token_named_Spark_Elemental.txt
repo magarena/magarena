@@ -6,5 +6,7 @@ type=Creature
 subtype=Elemental
 color=r
 cost={0}
-ability=trample;haste;sac at end
+ability=trample;\
+        haste;\
+        At the beginning of the end step, sacrifice SN.
 pt=3/1

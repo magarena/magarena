@@ -7,5 +7,7 @@ type=Creature
 subtype=Elemental
 cost={R}{R}{R}
 pt=6/1
-ability=trample;haste;sac at end
+ability=trample;\
+        haste;\
+        At the beginning of the end step, sacrifice SN.
 timing=fmain

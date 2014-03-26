@@ -7,5 +7,6 @@ type=Creature
 subtype=Illusion
 cost={1}{U}{U}
 pt=5/5
-ability=defender;sac when targeted
+ability=defender;\
+        When SN becomes the target of a spell or ability, sacrifice it.
 timing=main

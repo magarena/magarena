@@ -7,5 +7,6 @@ type=Creature
 subtype=Dragon,Illusion
 cost={2}{U}{U}
 pt=5/5
-ability=flying;sac when targeted
+ability=flying;\
+        When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
