@@ -7,5 +7,5 @@ type=Land
 subtype=Swamp,Forest
 mana=b3g3
 ability=tap add mana {B} or {G};\
-        shock land
+        As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.
 timing=land
