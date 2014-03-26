@@ -399,7 +399,7 @@ public enum MagicAbility {
             card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
-    DamageToOpponent("deals damage to an opponent effect", 10) {
+    DamageToOpponent("Whenever SN deals damage to an opponent,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
                 MagicRuleEventAction.create(arg)
