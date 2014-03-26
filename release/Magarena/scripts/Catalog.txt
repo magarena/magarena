@@ -5,5 +5,5 @@ value=2.922
 rarity=C
 type=Instant
 cost={2}{U}
-effect=PN draws two cards, then discards a card.
+effect=Draw two cards, then discard a card.
 timing=draw

@@ -5,5 +5,5 @@ value=4.289
 rarity=R
 type=Enchantment
 cost={3}{B}
-ability=cost {B},Pay 2 life: PN draw a card.
+ability=cost {B},Pay 2 life: Draw a card.
 timing=enchantment

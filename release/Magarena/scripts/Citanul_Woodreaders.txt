@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Druid
 cost={2}{G}
 pt=1/4
-ability=kicker {2}{G};enters kicked effect PN draws two cards.
+ability=kicker {2}{G};\
+        enters kicked effect Draw two cards.
 timing=main

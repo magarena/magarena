@@ -389,7 +389,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseGainLifeChosen(
-        "(?<choice>[^\\.]*) lose(s)? (?<amount1>[0-9]+) life and PN gains (?<amount2>[0-9]+) life\\.", 
+        "(?<choice>[^\\.]*) lose(s)? (?<amount1>[0-9]+) life and you gain (?<amount2>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "-Life"

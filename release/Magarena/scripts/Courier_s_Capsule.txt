@@ -5,5 +5,5 @@ value=3.944
 rarity=C
 type=Artifact
 cost={1}{U}
-ability=cost {1}{U},{T},Sacrifice SN:PN draws two cards.
+ability=cost {1}{U},{T},Sacrifice SN: Draw two cards.
 timing=artifact

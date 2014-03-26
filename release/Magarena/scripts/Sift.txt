@@ -5,5 +5,5 @@ value=3.170
 rarity=C
 type=Sorcery
 cost={3}{U}
-effect=PN draws three cards, then discards a card.
+effect=Draw three cards, then discard a card.
 timing=draw

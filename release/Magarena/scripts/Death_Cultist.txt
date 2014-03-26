@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={B}
 pt=1/1
-ability=cost Sacrifice SN:Target player loses 1 life and PN gains 1 life.
+ability=cost Sacrifice SN: Target player loses 1 life and you gain 1 life.
 timing=main

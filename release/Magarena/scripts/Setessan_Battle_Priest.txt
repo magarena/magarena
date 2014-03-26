@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=1/3
-ability=heroic effect PN gains 2 life.
+ability=heroic effect Gain 2 life.
 timing=main

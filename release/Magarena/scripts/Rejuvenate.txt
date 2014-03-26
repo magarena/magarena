@@ -5,6 +5,6 @@ value=2.446
 rarity=C
 type=Sorcery
 cost={3}{G}
-effect=PN gains 6 life.
+effect=Gain 6 life.
 ability=cycling {2}
 timing=draw

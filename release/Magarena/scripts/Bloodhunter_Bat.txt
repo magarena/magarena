@@ -8,5 +8,5 @@ subtype=Bat
 cost={3}{B}
 pt=2/2
 ability=flying;\
-        When SN enters the battlefield, target opponent loses 2 life and PN gains 2 life.
+        When SN enters the battlefield, target opponent loses 2 life and you gain 2 life.
 timing=main

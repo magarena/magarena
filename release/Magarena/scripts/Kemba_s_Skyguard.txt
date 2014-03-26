@@ -8,5 +8,5 @@ subtype=Cat,Knight
 cost={1}{W}{W}
 pt=2/2
 ability=flying;\
-        When SN enters the battlefield, PN gains 2 life.
+        When SN enters the battlefield, gain 2 life.
 timing=main

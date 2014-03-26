@@ -4,5 +4,6 @@ image=http://mtgimage.com/card/phyrexia%27s%20core.jpg
 value=2.994
 rarity=U
 type=Land
-ability=tap add mana {1};cost {1},{T},Sacrifice an artifact:PN gains 1 life.
+ability=tap add mana {1};\
+        cost {1},{T},Sacrifice an artifact: Gain 1 life.
 timing=land

@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat
 cost={3}{W}
 pt=2/3
-ability=cost {1}{W},{T}:PN gains 2 life.
+ability=cost {1}{W},{T}: Gain 2 life.
 timing=main

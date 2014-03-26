@@ -7,4 +7,4 @@ type=Enchantment
 cost={1}{U}
 timing=enchantment
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
-        cost Remove three quest counters from SN,Sacrifice SN: PN draws two cards.
+        cost Remove three quest counters from SN,Sacrifice SN: Draw two cards.

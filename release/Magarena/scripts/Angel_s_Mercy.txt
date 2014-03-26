@@ -5,5 +5,5 @@ value=1.350
 rarity=C
 type=Instant
 cost={2}{W}{W}
-effect=PN gains 7 life.
+effect=Gain 7 life.
 timing=draw

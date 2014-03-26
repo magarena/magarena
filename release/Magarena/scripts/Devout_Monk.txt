@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Monk,Cleric
 cost={W}
 pt=1/1
-ability=When SN enters the battlefield, PN gains 1 life.
+ability=When SN enters the battlefield, gain 1 life.
 timing=main

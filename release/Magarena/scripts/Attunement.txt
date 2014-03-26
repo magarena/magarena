@@ -5,5 +5,5 @@ value=3.657
 rarity=R
 type=Enchantment
 cost={2}{U}
-ability=cost Return SN to its owner's hand:PN draws three cards, then discards four cards.
+ability=cost Return SN to its owner's hand: Draw three cards, then discard four cards.
 timing=enchantment

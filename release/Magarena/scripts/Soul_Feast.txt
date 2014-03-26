@@ -5,5 +5,5 @@ value=3.143
 rarity=U
 type=Sorcery
 cost={3}{B}{B}
-effect=Target player loses 4 life and PN gains 4 life.
+effect=Target player loses 4 life and you gain 4 life.
 timing=removal

@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 cost={2}{G}{W}
 ability=cascade
-effect=PN gains 4 life.
+effect=Gain 4 life.
 timing=removal

@@ -5,5 +5,5 @@ value=1.559
 rarity=C
 type=Sorcery
 cost={3}{G}{G}
-effect=PN gains 8 life.
+effect=Gain 8 life.
 timing=main

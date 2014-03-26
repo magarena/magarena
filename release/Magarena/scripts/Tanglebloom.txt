@@ -5,5 +5,5 @@ value=1.970
 rarity=U
 type=Artifact
 cost={1}
-ability=cost {1},{T}:PN gains 1 life.
+ability=cost {1},{T}: Gain 1 life.
 timing=artifact

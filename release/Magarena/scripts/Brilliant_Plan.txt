@@ -5,5 +5,5 @@ value=2.333
 rarity=U
 type=Sorcery
 cost={4}{U}
-effect=PN draws three cards.
+effect=Draw three cards.
 timing=draw
