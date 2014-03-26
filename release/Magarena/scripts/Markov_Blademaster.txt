@@ -7,5 +7,6 @@ type=Creature
 subtype=Vampire,Warrior
 cost={1}{R}{R}
 pt=1/1
-ability=double strike;deals combat damage to a player effect Put a +1/+1 counter on SN.
+ability=double strike;\
+        Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main

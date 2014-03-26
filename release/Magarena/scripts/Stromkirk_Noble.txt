@@ -8,5 +8,5 @@ subtype=Vampire
 cost={R}
 pt=1/1
 ability=can't be blocked by humans;\
-        deals combat damage to a player effect Put a +1/+1 counter on SN.
+        Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main

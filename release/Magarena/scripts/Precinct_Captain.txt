@@ -8,5 +8,5 @@ subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
 ability=first strike;\
-        deals combat damage to a player effect Put a 1/1 white Soldier creature token onto the battlefield. 
+        Whenever SN deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield. 
 timing=main

@@ -413,7 +413,7 @@ public enum MagicAbility {
             ));
         }
     },
-    CombatDamageToPlayer("deals combat damage to a player effect", 10) {
+    CombatDamageToPlayer("Whenever SN deals combat damage to a player,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToPlayer(
                 MagicRuleEventAction.create(arg)

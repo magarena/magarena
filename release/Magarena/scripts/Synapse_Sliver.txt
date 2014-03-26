@@ -7,5 +7,5 @@ type=Creature
 subtype=Sliver
 cost={4}{U}
 pt=3/3
-ability=lord Sliver creatures have "deals combat damage to a player effect You may draw a card."
+ability=lord Sliver creatures have "Whenever SN deals combat damage to a player, you may draw a card."
 timing=main
