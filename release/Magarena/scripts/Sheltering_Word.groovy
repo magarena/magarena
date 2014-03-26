@@ -4,10 +4,10 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                 MagicShroudTargetPicker.create(),
                 this,
-                "Target creature\$ gains hexproof until end of turn. PN gains life equal to RN's toughness."
+                "Target creature you control\$ gains hexproof until end of turn. PN gains life equal to that creature's toughness."
             );
         }
 
