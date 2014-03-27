@@ -2,7 +2,6 @@ package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -15,10 +14,7 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.dialog.AiPropertiesDialog;
-import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.player.AiPlayerJList;
 
 /**
@@ -28,7 +24,7 @@ import magic.ui.widget.player.AiPlayerJList;
 @SuppressWarnings("serial")
 public class SelectAiPlayerScreen
     extends SelectPlayerScreen
-    implements IStatusBar, IActionBar {
+    implements IStatusBar {
 
     // CTR
     public SelectAiPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
@@ -73,45 +69,6 @@ public class SelectAiPlayerScreen
     @Override
     public String getScreenCaption() {
         return "Select AI Player";
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
-    @Override
-    public MenuButton getLeftAction() {
-        return super.getLeftAction();
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
-    @Override
-    public MenuButton getRightAction() {
-        return super.getRightAction();
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(
-                new ActionBarButton(
-                        "New", "Create a new AI player profile.",
-                        new NewPlayerAction()));
-        buttons.add(
-                new ActionBarButton(
-                        "Edit", "Update selected AI player's properties.",
-                        new EditPlayerAction()));
-        buttons.add(
-                new ActionBarButton(
-                        "Delete", "Delete selected AI player profile.",
-                        new DeletePlayerAction()));
-        buttons.add(
-                new SelectAvatarActionButton());
-        return buttons;
     }
 
     /* (non-Javadoc)
@@ -179,6 +136,22 @@ public class SelectAiPlayerScreen
     @Override
     protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
         return PlayerProfiles.getAiPlayerProfiles();
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.SelectPlayerScreen#getNewPlayerAction()
+     */
+    @Override
+    protected AbstractAction getNewPlayerAction() {
+        return new NewPlayerAction();
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.SelectPlayerScreen#getEditPlayerAction()
+     */
+    @Override
+    protected AbstractAction getEditPlayerAction() {
+        return new EditPlayerAction();
     }
 
 }
