@@ -1,0 +1,12 @@
+name=Kavu Chameleon
+url=http://magiccards.info/in/en/191.html
+image=http://mtgimage.com/card/kavu%20chameleon.jpg
+value=3.180
+rarity=U
+type=Creature
+subtype=Kavu
+cost={3}{G}{G}
+pt=4/4
+ability=can't be countered
+timing=fmain
+requires_groovy_code=Spiritmonger
