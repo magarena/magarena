@@ -1,0 +1,10 @@
+name=Simoon
+url=http://magiccards.info/in/en/272.html
+image=http://mtgimage.com/card/simoon.jpg
+value=2.250
+removal=2
+rarity=U
+type=Instant
+cost={R}{G}
+timing=removal
+requires_groovy_code
