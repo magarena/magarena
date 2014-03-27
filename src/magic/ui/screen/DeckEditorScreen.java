@@ -66,21 +66,8 @@ public class DeckEditorScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        if (!screenContent.isStandaloneDeckEditor()) {
-            return new MenuButton("Cancel", new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    getFrame().closeActiveScreen(false);
-                }
-            });
-        } else {
-            return new MenuButton("Close", new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    getFrame().closeActiveScreen(false);
-                }
-            });
-        }
+        final String caption = (!screenContent.isStandaloneDeckEditor() ? "Cancel" : "Close");
+        return MenuButton.getCloseScreenButton(caption);
     }
 
     /* (non-Javadoc)

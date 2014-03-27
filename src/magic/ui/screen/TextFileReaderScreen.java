@@ -7,12 +7,10 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
-import javax.swing.AbstractAction;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 
-import java.awt.event.ActionEvent;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.List;
@@ -100,12 +98,7 @@ public abstract class TextFileReaderScreen extends AbstractScreen implements IAc
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Close", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
-            }
-        });
+        return MenuButton.getCloseScreenButton("Close");
     }
 
     /* (non-Javadoc)

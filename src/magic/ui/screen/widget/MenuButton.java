@@ -2,6 +2,7 @@ package magic.ui.screen.widget;
 
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -9,6 +10,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 
+import magic.MagicMain;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicStyle;
 
@@ -93,6 +95,22 @@ public class MenuButton extends JButton {
 
     public boolean showSeparator() {
         return showSeparator;
+    }
+
+
+    //
+    // Static convenience methods.
+    //
+
+    private final static AbstractAction closeScreenAction = new AbstractAction() {
+        @Override
+        public void actionPerformed(final ActionEvent e) {
+            MagicMain.rootFrame.closeActiveScreen(false);
+        }
+    };
+
+    public static MenuButton getCloseScreenButton(final String caption) {
+        return new MenuButton(caption, closeScreenAction);
     }
 
 }

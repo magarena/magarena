@@ -309,12 +309,7 @@ public class AvatarImagesScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Cancel", new AbstractAction() {
-          @Override
-          public void actionPerformed(final ActionEvent e) {
-              getFrame().closeActiveScreen(false);
-          }
-      });
+        return MenuButton.getCloseScreenButton("Cancel");
     }
 
     /* (non-Javadoc)
