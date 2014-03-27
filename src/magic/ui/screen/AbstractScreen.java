@@ -64,7 +64,7 @@ public abstract class AbstractScreen extends JPanel {
 
     private void layoutMagStatusBar() {
         if (hasStatusBar()) {
-            add(new StatusBar(this, frame), "w 100%");
+            add(new StatusBar(this), "w 100%");
         }
     }
 
