@@ -5,6 +5,6 @@ value=3.734
 rarity=R
 type=Enchantment
 cost={3}{U}
-ability=When SN enters the battlefield, gain 10 life.;\
-        When SN leaves the battlefield, lose 10 life.
+ability=When SN enters the battlefield, you gain 10 life.;\
+        When SN leaves the battlefield, you lose 10 life.
 timing=enchantment

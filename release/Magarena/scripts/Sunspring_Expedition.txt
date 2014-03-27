@@ -7,4 +7,4 @@ type=Enchantment
 cost={W}
 timing=enchantment
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
-        cost Remove three quest counters from SN,Sacrifice SN: Gain 8 life.
+        cost Remove three quest counters from SN,Sacrifice SN: You gain 8 life.

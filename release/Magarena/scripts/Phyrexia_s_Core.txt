@@ -5,5 +5,5 @@ value=2.994
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        cost {1},{T},Sacrifice an artifact: Gain 1 life.
+        cost {1},{T},Sacrifice an artifact: You gain 1 life.
 timing=land

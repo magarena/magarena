@@ -9,7 +9,7 @@ cost={1}{B}{B}
 pt=3/3
 ability=bestow {3}{B}{B};\
         flying;\
-        At the beginning of your upkeep, lose 1 life.
+        At the beginning of your upkeep, you lose 1 life.
 given_pt=+3/+3
 given_ability=flying
 timing=main

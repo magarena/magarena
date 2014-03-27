@@ -7,5 +7,5 @@ type=Creature
 subtype=Snake
 cost={4}{G}
 pt=4/4
-ability=tribute 3 effect Gain 4 life.
+ability=tribute 3 effect You gain 4 life.
 timing=main

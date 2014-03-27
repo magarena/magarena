@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={5}{W}{W}{W}
 pt=7/7
-ability=At the beginning of each upkeep, gain 3 life.
+ability=At the beginning of each upkeep, you gain 3 life.
 timing=main

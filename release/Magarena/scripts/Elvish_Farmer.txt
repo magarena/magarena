@@ -9,5 +9,5 @@ cost={1}{G}
 pt=0/2
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
         cost Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.;\
-        cost Sacrifice a Saproling: Gain 2 life.
+        cost Sacrifice a Saproling: You gain 2 life.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={2}{G}{G}
 pt=4/4
-ability=cost Sacrifice a Beast: Gain 4 life.
+ability=cost Sacrifice a Beast: You gain 4 life.
 timing=main

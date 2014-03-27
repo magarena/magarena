@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 enchant=pump,pos creature
 cost={W}
-given_ability=cost {1}{W},{T}: Gain 3 life.
+given_ability=cost {1}{W},{T}: You gain 3 life.
 timing=aura

@@ -8,5 +8,5 @@ subtype=Angel
 cost={4}{W}
 pt=3/3
 ability=flying;\
-    When SN enters the battlefield, gain 3 life.
+        When SN enters the battlefield, you gain 3 life.
 timing=main

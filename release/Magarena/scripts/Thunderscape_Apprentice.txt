@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={R}
 pt=1/1
-ability=cost {B},{T}:Target player loses 1 life.;cost {G},{T}:Target creature gets +1/+1 until end of turn.
+ability=cost {B},{T}: Target player loses 1 life.;\
+        cost {G},{T}: Target creature gets +1/+1 until end of turn.
 timing=main

@@ -6,7 +6,7 @@ rarity=R
 type=Artifact
 cost={3}
 ability=cost {1}: Untap SN.;\
-        cost {2},{T}: Gain 1 life.;\
+        cost {2},{T}: You gain 1 life.;\
         cost {3},{T}: Untap target creature.;\
         cost {4},{T}: Tap target creature.;\
         cost {5},{T}: Draw a card.

@@ -624,7 +624,7 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public String toString() {
-        return "EVENT: " + player.getIndex() + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
+        return "EVENT: " + source + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }
 
     private long getStateId(final Object obj) {
