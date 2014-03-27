@@ -90,7 +90,7 @@ public abstract class MagicChoice {
         final Collection<?> options=getArtificialOptions(game,event,player,source);
         final int size=options.size();
         if (size == 0) {
-            throw new RuntimeException("no artificial choice result");
+            throw new RuntimeException("no artificial choice result for " + event);
         } else if (size == 1) {
             return Collections.singletonList(new Object[]{options.iterator().next()});
         } else {
