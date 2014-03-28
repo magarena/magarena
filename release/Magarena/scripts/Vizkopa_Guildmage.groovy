@@ -1,27 +1,28 @@
-def T = new MagicWhenLifeIsGainedTrigger() {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
-        return permanent.isController(lifeChange.player) ?
-            new MagicEvent(
-                permanent,
-                MagicTargetChoice.TARGET_OPPONENT,
-                lifeChange.amount,
-                this,
-                "Target opponent\$ loses RN life."
-            ):
-            MagicEvent.NONE;
-    }
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetPlayer(game, {
-            final MagicPlayer player ->
+def DelayedTrigger = {
+    final MagicSource source, final MagicPlayer player ->
+    return new MagicWhenLifeIsGainedTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
+            return player.getId() == lifeChange.player.getId() ?
+                new MagicEvent(
+                    game.createDelayedSource(source, player),
+                    lifeChange.player.getOpponent(),
+                    lifeChange.amount,
+                    this,
+                    "PN loses RN life."
+                ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicChangeLifeAction(
-                player,
+                event.getPlayer(),
                 -event.getRefInt()
             ));
-        });
-    }
-};
+        }
+    };
+}
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -44,22 +45,8 @@ def T = new MagicWhenLifeIsGainedTrigger() {
             );
         }
         @Override
-        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
-            final MagicWhenLifeIsGainedTrigger trigger = T;
-            outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), trigger));
-            // remove the trigger at player's end of the turn
-            MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
-                @Override
-                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-                    if (upkeepPlayer.getId() != outerEvent.getPlayer().getId()) {
-                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, trigger));
-                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
-                    }
-                    return MagicEvent.NONE;
-                }
-            };
-            outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), cleanup));
-
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new MagicAddTurnTriggerAction(DelayedTrigger(event.getSource(), event.getPlayer())));
         }
     }
 ]
