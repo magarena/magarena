@@ -11,6 +11,8 @@ import magic.ui.canvas.cards.ICardCanvas;
 
 import java.awt.image.BufferedImage;
 import java.util.Set;
+import java.util.List;
+import java.util.LinkedList;
 import java.util.TreeSet;
 import java.util.Collection;
 
@@ -255,11 +257,11 @@ public class MagicCard
 
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
-        Set<MagicSourceActivation<? extends MagicSource>> sorted = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
+        List<MagicSourceActivation<? extends MagicSource>> sourceActs = new LinkedList<>();
         for (final MagicActivation<MagicCard> act : getCardDefinition().getCardActivations()) {
-            sorted.add(MagicSourceActivation.create(this, act));
+            sourceActs.add(MagicSourceActivation.create(this, act));
         }
-        return sorted;
+        return sourceActs;
     }
 
     @Override

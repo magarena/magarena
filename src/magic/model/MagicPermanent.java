@@ -75,7 +75,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     private int cachedColorFlags;
     private Set<MagicAbility> cachedAbilityFlags;
     private MagicPowerToughness cachedPowerToughness;
-    private Set<MagicActivation<MagicPermanent>> cachedActivations;
+    private List<MagicActivation<MagicPermanent>> cachedActivations;
     private List<MagicManaActivation> cachedManaActivations;
     private List<MagicTrigger<?>> cachedTriggers;
     private List<MagicWhenComesIntoPlayTrigger> etbTriggers;
@@ -99,7 +99,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         auraPermanents=new MagicPermanentSet();
         blockingCreatures=new MagicPermanentList();
         exiledCards = new MagicCardList();
-        cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>();
+        cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>();
         cachedManaActivations = new LinkedList<MagicManaActivation>();
         cachedTriggers    = new LinkedList<MagicTrigger<?>>();
         etbTriggers       = new LinkedList<MagicWhenComesIntoPlayTrigger>();
@@ -137,7 +137,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         cachedColorFlags     = sourcePermanent.cachedColorFlags;
         cachedAbilityFlags   = sourcePermanent.cachedAbilityFlags;
         cachedPowerToughness = sourcePermanent.cachedPowerToughness;
-        cachedActivations    = new TreeSet<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
+        cachedActivations    = new LinkedList<MagicActivation<MagicPermanent>>(sourcePermanent.cachedActivations);
         cachedManaActivations = new LinkedList<MagicManaActivation>(sourcePermanent.cachedManaActivations);
         cachedTriggers       = new LinkedList<MagicTrigger<?>>(sourcePermanent.cachedTriggers);
         etbTriggers          = new LinkedList<MagicWhenComesIntoPlayTrigger>(sourcePermanent.etbTriggers);
@@ -239,11 +239,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
-        Set<MagicSourceActivation<? extends MagicSource>> sorted = new TreeSet<MagicSourceActivation<? extends MagicSource>>();
+        List<MagicSourceActivation<? extends MagicSource>> sourceActs = new LinkedList<>();
         for (final MagicActivation<MagicPermanent> act : cachedActivations) {
-            sorted.add(MagicSourceActivation.create(this, act));
+            sourceActs.add(MagicSourceActivation.create(this, act));
         }
-        return sorted;
+        return sourceActs;
     }
 
     public void addAbility(final MagicAbility ability, final Set<MagicAbility> flags) {
@@ -401,7 +401,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 cachedColorFlags = cardDefinition.getColorFlags();
                 cachedAbilityFlags = cardDefinition.genAbilityFlags();
                 cachedPowerToughness = cardDefinition.genPowerToughness();
-                cachedActivations = new TreeSet<MagicActivation<MagicPermanent>>(cardDefinition.getActivations());
+                cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(cardDefinition.getActivations());
                 cachedManaActivations = new LinkedList<MagicManaActivation>(cardDefinition.getManaActivations());
                 cachedTriggers = new LinkedList<MagicTrigger<?>>(cardDefinition.getTriggers());
                 etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>(cardDefinition.getComeIntoPlayTriggers());
