@@ -1,0 +1,9 @@
+name=Perish
+url=http://magiccards.info/query?q=%21perish
+image=http://mtgimage.com/card/perish.jpg
+value=3.397
+rarity=U
+type=Sorcery
+cost={2}{B}
+timing=main
+requires_groovy_code

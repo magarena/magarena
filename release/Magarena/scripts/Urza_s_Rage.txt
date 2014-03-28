@@ -1,0 +1,11 @@
+name=Urza's Rage
+url=http://magiccards.info/query?q=%21urza%27s%20rage
+image=http://mtgimage.com/card/Urza%27s%20Rage.jpg
+value=4.082
+removal=3
+rarity=R
+type=Instant
+cost={2}{R}
+timing=removal
+ability=can't be countered,kicker {8}{R}
+requires_groovy_code
