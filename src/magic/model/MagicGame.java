@@ -549,7 +549,7 @@ public class MagicGame {
         for (final MagicPlayer player : players) {
         for (final MagicPermanent perm : player.getPermanents()) {
         for (final MagicTrigger<?> trigger : perm.getTriggers()) {
-            triggers.add(new MagicPermanentTrigger(perm.getId(), perm, trigger));
+            triggers.add(new MagicPermanentTrigger(getUniqueId(), perm, trigger));
         }}}
 
         MagicPlayer.update(this);
