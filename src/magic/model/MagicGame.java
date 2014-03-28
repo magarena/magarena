@@ -930,6 +930,10 @@ public class MagicGame {
     public int getPriorityPassedCount() {
         return priorityPassedCount;
     }
+    
+    public MagicSource createDelayedSource(final MagicObject obj, final MagicPlayer controller) {
+        return new MagicCard(obj.getCardDefinition(), controller.map(this), getUniqueId());
+    }
 
     public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
         return new MagicPermanent(getUniqueId(),card,controller);
