@@ -6,6 +6,6 @@ removal=3
 rarity=C
 type=Sorcery
 cost={R}
-ability=add cost Sacrifice a land
+ability=As an additional cost to cast SN, sacrifice a land.
 effect=Destroy target land.
 timing=removal

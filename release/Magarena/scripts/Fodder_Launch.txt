@@ -6,7 +6,7 @@ rarity=U
 type=Tribal,Sorcery
 subtype=Goblin
 cost={3}{B}
-ability=add cost Sacrifice a Goblin
+ability=As an additional cost to cast SN, sacrifice a Goblin.
 timing=removal
 removal=5
 requires_groovy_code

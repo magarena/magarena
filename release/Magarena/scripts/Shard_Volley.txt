@@ -6,6 +6,6 @@ removal=3
 rarity=C
 type=Instant
 cost={R}
-ability=add cost Sacrifice a land
+ability=As an additional cost to cast SN, sacrifice a land.
 effect=SN deals 3 damage to target creature or player.
 timing=removal
