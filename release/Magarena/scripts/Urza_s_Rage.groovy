@@ -19,8 +19,8 @@
                 final int amount = event.isKicked() ? 10 : 3;
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                 if (event.isKicked()) {
-             damage.setUnpreventable();
-                 }
+                    damage.setUnpreventable();
+                }
                 game.doAction(new MagicDealDamageAction(damage));
             });
         }

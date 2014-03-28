@@ -7,5 +7,5 @@ rarity=R
 type=Instant
 cost={2}{R}
 timing=removal
-ability=can't be countered,kicker {8}{R}
+ability=can't be countered;kicker {8}{R}
 requires_groovy_code
