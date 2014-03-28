@@ -1,15 +1,15 @@
 def DelayedTrigger = {
-    final MagicCard origCard, final MagicPlayer origPlayer ->
+    final MagicCard staleCard, final MagicPlayer stalePlayer ->
     return new MagicAtUpkeepTrigger() {
         @Override
         public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return origPlayer.getId() == upkeepPlayer.getId();
+            return stalePlayer.getId() == upkeepPlayer.getId();
         }
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             game.addDelayedAction(new MagicRemoveTriggerAction(this));
             
-            final MagicCard mappedCard = origCard.getOwner().map(game).getExile().getCard(origCard.getId());
+            final MagicCard mappedCard = staleCard.getOwner().map(game).getExile().getCard(staleCard.getId());
             
             return mappedCard.isInExile() ?
                 new MagicEvent(

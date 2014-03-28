@@ -1,12 +1,12 @@
 def DelayedTrigger = {
-    final MagicSource source, final MagicPlayer player ->
+    final MagicSource staleSource, final MagicPlayer stalePlayer ->
     return new MagicWhenOtherPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
             final MagicPlayer owner = act.card.getOwner();
-            return owner.getId() != player.getId() ?
+            return owner.getId() != stalePlayer.getId() ?
                 new MagicEvent(
-                    game.createDelayedSource(source, player),
+                    game.createDelayedSource(staleSource, stalePlayer),
                     owner,
                     this,
                     "PN loses 1 life."
