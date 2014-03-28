@@ -22,7 +22,7 @@ public class MagicConditionEvent extends MagicEvent {
             ""
         );
         conds = new MagicCondition[]{
-            MagicCondition.SORCERY_CONDITION
+            condition
         };
     }
 
