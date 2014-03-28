@@ -54,12 +54,7 @@ public class NewDuelSettingsScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Main Menu", new AbstractAction() {
-          @Override
-          public void actionPerformed(final ActionEvent e) {
-              getFrame().closeActiveScreen(false);
-          }
-      });
+        return MenuButton.getCloseScreenButton("Main Menu");
     }
 
     /* (non-Javadoc)

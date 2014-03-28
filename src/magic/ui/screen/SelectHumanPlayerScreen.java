@@ -2,7 +2,6 @@ package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -14,16 +13,13 @@ import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.player.HumanPlayerJList;
 
 @SuppressWarnings("serial")
 public class SelectHumanPlayerScreen
     extends SelectPlayerScreen
-    implements IStatusBar, IActionBar {
+    implements IStatusBar {
 
     // CTR
     public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
@@ -58,45 +54,6 @@ public class SelectHumanPlayerScreen
     @Override
     public String getScreenCaption() {
         return "Select Player";
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
-    @Override
-    public MenuButton getLeftAction() {
-        return super.getLeftAction();
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
-    @Override
-    public MenuButton getRightAction() {
-        return super.getRightAction();
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
-    @Override
-    public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(
-                new ActionBarButton(
-                        "New", "Create a new player profile.",
-                        new NewPlayerAction()));
-        buttons.add(
-                new ActionBarButton(
-                        "Edit", "Update selected player's name.",
-                        new EditPlayerAction()));
-        buttons.add(
-                new ActionBarButton(
-                        "Delete", "Delete selected player profile.",
-                        new DeletePlayerAction()));
-        buttons.add(
-                new SelectAvatarActionButton());
-        return buttons;
     }
 
     /* (non-Javadoc)
@@ -186,6 +143,22 @@ public class SelectHumanPlayerScreen
     @Override
     protected HashMap<String, PlayerProfile> getPlayerProfilesMap() {
         return PlayerProfiles.getHumanPlayerProfiles();
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.SelectPlayerScreen#getNewPlayerAction()
+     */
+    @Override
+    protected AbstractAction getNewPlayerAction() {
+        return new NewPlayerAction();
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.SelectPlayerScreen#getEditPlayerAction()
+     */
+    @Override
+    protected AbstractAction getEditPlayerAction() {
+        return new EditPlayerAction();
     }
 
 }

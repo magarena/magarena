@@ -56,12 +56,7 @@ public class DuelDecksScreen
     @Override
     public MenuButton getLeftAction() {
         if (screenContent.getDuel().getGamesPlayed() == 0) {
-            return new MenuButton("Main menu", new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    getFrame().closeActiveScreen(false);
-                }
-            });
+            return MenuButton.getCloseScreenButton("Main menu");
         } else {
             return new MenuButton("Main Menu", new AbstractAction() {
                 @Override

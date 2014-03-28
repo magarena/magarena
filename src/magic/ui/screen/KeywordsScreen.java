@@ -11,7 +11,6 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
-import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
@@ -24,7 +23,6 @@ import javax.swing.SwingUtilities;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
 import java.util.List;
 
 @SuppressWarnings("serial")
@@ -157,12 +155,7 @@ public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActio
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Close", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
-            }
-        });
+        return MenuButton.getCloseScreenButton("Close");
     }
 
     /* (non-Javadoc)

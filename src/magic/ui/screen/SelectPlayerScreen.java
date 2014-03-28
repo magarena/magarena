@@ -30,6 +30,7 @@ import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
+import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
@@ -40,7 +41,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public abstract class SelectPlayerScreen
     extends AbstractScreen
-    implements IAvatarImageConsumer {
+    implements IAvatarImageConsumer, IActionBar {
 
     private List<IPlayerProfileListener> listeners = new ArrayList<>();
     private final JList<? extends PlayerProfile> playersJList;
@@ -52,6 +53,8 @@ public abstract class SelectPlayerScreen
     protected abstract void refreshProfilesJList();
     protected abstract void refreshProfilesJList(final PlayerProfile playerProfile);
     protected abstract HashMap<String, PlayerProfile> getPlayerProfilesMap();
+    protected abstract AbstractAction getNewPlayerAction();
+    protected abstract AbstractAction getEditPlayerAction();
 
     // CTR
     protected SelectPlayerScreen(final JList<? extends PlayerProfile> playersJList) {
@@ -262,28 +265,54 @@ public abstract class SelectPlayerScreen
         }
     }
 
-    protected MenuButton getRightAction() {
-        return new MenuButton("Select", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                doNextAction();
-                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }
-        });
-    }
-
-    protected MenuButton getLeftAction() {
-        return new MenuButton("Cancel", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                getFrame().closeActiveScreen(false);
-            }
-        });
-    }
-
     protected JList<? extends PlayerProfile> getJList() {
         return playersJList;
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.interfaces.IActionBar#getLeftAction()
+     */
+    @Override
+    public MenuButton getLeftAction() {
+        return MenuButton.getCloseScreenButton("Cancel");
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.interfaces.IActionBar#getRightAction()
+     */
+    @Override
+    public MenuButton getRightAction() {
+        return new MenuButton("Select", new AbstractAction() {
+          @Override
+          public void actionPerformed(final ActionEvent e) {
+              setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+              doNextAction();
+              setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+          }
+      });
+    }
+
+    /* (non-Javadoc)
+     * @see magic.ui.screen.interfaces.IActionBar#getMiddleActions()
+     */
+    @Override
+    public List<MenuButton> getMiddleActions() {
+        final List<MenuButton> buttons = new ArrayList<MenuButton>();
+        buttons.add(
+                new ActionBarButton(
+                        "New", "Create a new player profile.",
+                        getNewPlayerAction()));
+        buttons.add(
+                new ActionBarButton(
+                        "Edit", "Update selected player's name.",
+                        getEditPlayerAction()));
+        buttons.add(
+                new ActionBarButton(
+                        "Delete", "Delete selected player profile.",
+                        new DeletePlayerAction()));
+        buttons.add(
+                new SelectAvatarActionButton());
+        return buttons;
     }
 
 }

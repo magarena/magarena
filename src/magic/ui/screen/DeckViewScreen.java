@@ -122,12 +122,7 @@ public class DeckViewScreen
      */
     @Override
     public MenuButton getLeftAction() {
-        return new MenuButton("Close", new AbstractAction() {
-          @Override
-          public void actionPerformed(final ActionEvent e) {
-              getFrame().closeActiveScreen(false);
-          }
-      });
+        return MenuButton.getCloseScreenButton("Close");
     }
 
     /* (non-Javadoc)

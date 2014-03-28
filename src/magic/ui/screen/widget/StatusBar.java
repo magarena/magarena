@@ -12,7 +12,6 @@ import javax.swing.SwingConstants;
 
 import net.miginfocom.swing.MigLayout;
 import magic.data.IconImages;
-import magic.ui.MagicFrame;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -26,7 +25,7 @@ public class StatusBar extends TexturedPanel {
 
     private final AbstractScreen magScreen;
 
-    public StatusBar(final AbstractScreen screen0, final MagicFrame frame0) {
+    public StatusBar(final AbstractScreen screen0) {
         this.magScreen = screen0;
         setMinimumSize(new Dimension(getPreferredSize().width, 50));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
