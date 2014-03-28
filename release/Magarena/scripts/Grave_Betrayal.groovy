@@ -3,20 +3,13 @@ def DelayedTrigger = {
     return new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
-            final MagicPlayer mappedPlayer = player.map(game);
-            final MagicCard mappedCard = card.getOwner().map(game).getGraveyard().getCard(card.getId());
-            final MagicCard mappedSource = new MagicCard(
-                source.getCardDefinition(), 
-                source.getOwner().map(game), 
-                source.getCard().getId()
-            );
-
             game.addDelayedAction(new MagicRemoveTriggerAction(this));
+            
+            final MagicCard mappedCard = card.getOwner().map(game).getGraveyard().getCard(card.getId());
             
             return mappedCard.isInGraveyard() ?
                 new MagicEvent(
-                    mappedSource,
-                    mappedPlayer,
+                    game.createDelayedSource(source, player)
                     mappedCard,
                     this,
                     "Return RN to the battlefield under PN's control with an additional +1/+1 counter on it. " +
