@@ -764,7 +764,7 @@ public enum MagicAbility {
             card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
-    AdditionalCost("add cost", 10) {
+    AdditionalCost("As an additional cost to cast SN,", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
             card.add(MagicAdditionalCost.create(new MagicMatchedCostEvent(arg)));
         }
