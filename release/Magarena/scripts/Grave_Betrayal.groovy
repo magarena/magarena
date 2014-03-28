@@ -9,7 +9,7 @@ def DelayedTrigger = {
             
             return mappedCard.isInGraveyard() ?
                 new MagicEvent(
-                    game.createDelayedSource(source, player)
+                    game.createDelayedSource(source, player),
                     mappedCard,
                     this,
                     "Return RN to the battlefield under PN's control with an additional +1/+1 counter on it. " +
