@@ -1,0 +1,13 @@
+name=Dross Harvester
+url=http://www.magiccards.info/query?q=%21dross%20harvester
+image=http://mtgimage.com/card/dross%20harvester.jpg
+value=3.745
+rarity=R
+type=Creature
+subtype=Horror
+cost={1}{B}{B}
+pt=4/4
+ability=protection from white;\
+        At the beginning of your end step, you lose 4 life.
+timing=main
+requires_groovy_code

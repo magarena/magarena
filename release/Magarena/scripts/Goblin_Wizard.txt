@@ -1,0 +1,12 @@
+name=Goblin Wizard
+url=http://www.magiccards.info/query?q=%21goblin%20wizard
+image=http://mtgimage.com/card/goblin%20wizard.jpg
+value=4.117
+rarity=R
+type=Creature
+subtype=Goblin,Wizard
+cost={2}{R}{R}
+pt=1/1
+ability=cost {R}: Target Goblin gains protection from white until end of turn.
+timing=main
+requires_groovy_code
