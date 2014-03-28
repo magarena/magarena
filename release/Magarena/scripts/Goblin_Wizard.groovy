@@ -14,12 +14,8 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                new MagicMayChoice(
-                    MagicTargetChoice.GOBLIN_CARD_FROM_HAND
-                ),
-                MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ put a Goblin permanent card\$ from his or her hand onto the battlefield."
+                "PN may put a Goblin permanent card from his or her hand onto the battlefield."
             );
         }
 
