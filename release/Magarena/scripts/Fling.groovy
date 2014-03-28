@@ -14,9 +14,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final MagicTarget target ->
-                final MagicPermanent sacrificed=event.getRefPermanent();
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,sacrificed.getPower());
-                game.doAction(new MagicDealDamageAction(damage));
+                // temp fix for case where additional cost is not payed when spell is not cast form hand
+                event.processRefPermanent(game, {
+                    final MagicPermanent sacrificed ->
+                    final MagicDamage damage=new MagicDamage(event.getSource(),target,sacrificed.getPower());
+                    game.doAction(new MagicDealDamageAction(damage));
+                });
             });
         }
     }
