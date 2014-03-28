@@ -423,11 +423,17 @@ public enum MagicCostEvent {
     }
     
     public static final MagicCostEvent build(final String cost) {
+        final String cleanCost=capitalize(cost.replaceAll("\\.*",""));
         for (final MagicCostEvent rule : values()) {
-            if (rule.accept(cost)) {
+            if (rule.accept(cleanCost)) {
                 return rule;
             }
         }
         throw new RuntimeException("Unable to match " + cost + " to a rule");
     }
+    
+    private static String capitalize(final String text) {
+        return Character.toUpperCase(text.charAt(0)) + text.substring(1);
+    }
+    
 }
