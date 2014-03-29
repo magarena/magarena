@@ -1,0 +1,10 @@
+name=Feedback Bolt
+url=http://magiccards.info/5dn/en/64.html
+image=http://mtgimage.com/card/feedback%20bolt.jpg
+value=1.854
+removal=3
+rarity=U
+type=Instant
+cost={4}{R}
+timing=removal
+requires_groovy_code
