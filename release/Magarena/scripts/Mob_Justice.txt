@@ -1,5 +1,5 @@
 name=Mob Justice
-url=http://magiccards.info/sh/en/90.html
+url=http://magiccards.info/query?q=%21mob%20justice
 image=http://mtgimage.com/card/mob%20justice.jpg
 value=1.854
 removal=3

@@ -1,8 +1,9 @@
 name=Fecundity
-url=http://magiccards.info/8ed/en/247.html
-image=http://magiccards.info/scans/en/8ed/247.jpg
+url=http://magiccards.info/query?q=%21fecundity
+image=http://mtgimage.com/card/fecundity.jpg
 value=4.433
 rarity=U
 type=Enchantment
 cost={2}{G}
 timing=enchantment
+requires_groovy_code

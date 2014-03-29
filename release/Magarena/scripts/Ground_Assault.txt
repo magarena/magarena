@@ -1,5 +1,5 @@
 name=Ground Assault
-url=http://magiccards.info/gtc/en/168.html
+url=http://magiccards.info/query?q=%21ground%20assault
 image=http://mtgimage.com/card/ground%20assault.jpg
 value=1.854
 removal=3

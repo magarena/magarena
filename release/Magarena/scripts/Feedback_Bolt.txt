@@ -1,5 +1,5 @@
 name=Feedback Bolt
-url=http://magiccards.info/5dn/en/64.html
+url=http://magiccards.info/query?q=%21feedback%20bolt
 image=http://mtgimage.com/card/feedback%20bolt.jpg
 value=1.854
 removal=3

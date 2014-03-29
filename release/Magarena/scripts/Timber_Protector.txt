@@ -1,5 +1,5 @@
 name=Timber Protector
-url=http://magiccards.info/lw/en/238.html
+url=http://magiccards.info/query?q=%21timber%20protector
 image=http://mtgimage.com/card/Timber%20Protector.jpg
 value=4.102
 rarity=R
@@ -8,7 +8,7 @@ subtype=Treefolk,Warrior
 cost={4}{G}
 pt=4/6
 ability=lord other treefolk creatures you control get +1/+1;\
-        lord other treefolk creatures you control have indestructible;\
-        lord other forests you control have indestructible
+        lord other treefolk you control have indestructible;\
+        lord other forest you control have indestructible
 static=player
 timing=main
