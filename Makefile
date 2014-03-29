@@ -81,6 +81,9 @@ cards/new.txt: cards/existing_tip.txt
 	mv cards/new_$(LAST).txt $@
 	make wiki/UpcomingCards.wiki
 
+cards/fmt.txt: cards/new.txt
+	cat $^ | tr " " "@" | tr "\n" "#" | sed 's/#/, /g' | fmt | sed 's/@/ /g' > $@
+
 changelog:
 	$(eval LAST := $(shell hg tags | grep "^[[:digit:]]" | head -1 | cut -d' ' -f1))
 	hg log -v | awk '{print}; /Added tag ${LAST}/ {exit 0}' > changelog
