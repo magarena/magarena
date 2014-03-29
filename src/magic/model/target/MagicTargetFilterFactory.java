@@ -133,6 +133,7 @@ public class MagicTargetFilterFactory {
         single.put("black permanent", TARGET_BLACK_PERMANENT);
         single.put("black or red permanent", TARGET_BLACK_RED_PERMANENT);
         single.put("multicolored permanent you control", TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL);
+        single.put("blue permanent you control", TARGET_BLUE_PERMANENT_YOU_CONTROL);
         single.put("monocolored creature", TARGET_MONOCOLORED_CREATURE);
 
         single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
@@ -188,6 +189,7 @@ public class MagicTargetFilterFactory {
         single.put("non-Zombie creature you control", TARGET_NON_ZOMBIE_YOU_CONTROL);
         single.put("non-Vampire creature you control", TARGET_NON_VAMPIRE_YOU_CONTROL);
         single.put("nonland permanent you control", TARGET_NONLAND_PERMANENT_YOU_CONTROL);
+        single.put("nontoken permanent you control", TARGET_NONTOKEN_PERMANENT_YOU_CONTROL);
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
         single.put("creature card with converted mana cost 2 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
