@@ -2,8 +2,7 @@
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() &&
-                    permanent.isTapped()) ?
+            return (otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
                     this,
