@@ -6,5 +6,5 @@ rarity=U
 type=Creature
 subtype=Treefolk
 cost={2}{G}
-pt=2/*
 timing=main
+requires_groovy_code
