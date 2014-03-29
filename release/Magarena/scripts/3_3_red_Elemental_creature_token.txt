@@ -1,0 +1,9 @@
+name=3/3 red Elemental creature token
+token=Elemental
+image=http://cdn.staticneo.com/w/mtg/0/0a/Elemental8.jpg
+value=3
+type=Creature
+subtype=Elemental
+color=r
+cost={0}
+pt=3/3

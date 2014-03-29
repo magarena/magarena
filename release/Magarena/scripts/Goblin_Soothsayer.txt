@@ -1,0 +1,11 @@
+name=Goblin Soothsayer
+url=http://www.magiccards.info/query?q=%21goblin%20soothsayer
+image=http://mtgimage.com/card/goblin%20soothsayer.jpg
+value=3.691
+rarity=U
+type=Creature
+subtype=Goblin,Shaman
+cost={R}
+pt=1/1
+ability=cost {R}, {T}, Sacrifice a Goblin: Red creatures get +1/+1 until end of turn.
+timing=main

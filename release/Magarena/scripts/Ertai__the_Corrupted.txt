@@ -1,0 +1,11 @@
+name=Ertai, the Corrupted
+url=http://www.magiccards.info/query?q=%21ertai%2C%20the%20corrupted
+image=http://mtgimage.com/card/ertai,%20the%20corrupted.jpg
+value=3.951
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{W}{U}{B}
+pt=3/4
+ability=cost {U}, {T}, Sacrifice a creature or enchantment: Counter target spell.
+timing=main

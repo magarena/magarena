@@ -1,0 +1,10 @@
+name=Wand of the Elements
+url=http://www.magiccards.info/query?q=%21wand%20of%20the%20elements
+image=http://mtgimage.com/card/wand%20of%20the%20elements.jpg
+value=3.605
+rarity=R
+type=Artifact
+cost={4}
+ability=cost {T}, Sacrifice an Island: Put a 2/2 blue Elemental creature token with flying onto the battlefield.;\
+        cost {T}, Sacrifice a Mountain: Put a 3/3 red Elemental creature token onto the battlefield.
+timing=artifact

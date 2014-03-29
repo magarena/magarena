@@ -1,0 +1,10 @@
+name=Abjure
+url=http://www.magiccards.info/query?q=%21abjure
+image=http://mtgimage.com/card/abjure.jpg
+value=2.795
+rarity=C
+type=Instant
+cost={U}
+ability=As an additional cost to cast SN, sacrifice a blue permanent.
+effect=Counter target spell.
+timing=counter

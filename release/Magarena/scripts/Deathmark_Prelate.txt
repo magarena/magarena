@@ -1,0 +1,11 @@
+name=Deathmark Prelate
+url=http://www.magiccards.info/query?q=%21deathmark%20prelate
+image=http://mtgimage.com/card/deathmark%20prelate.jpg
+value=3.293
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={3}{B}
+pt=2/3
+ability=cost {2}{B}, {T}, Sacrifice a Zombie, {Sorcery}: Destroy target non-Zombie creature. It can't be regenerated.
+timing=main

@@ -1,0 +1,12 @@
+name=Scarecrone
+url=http://www.magiccards.info/query?q=%21scarecrone
+image=http://mtgimage.com/card/scarecrone.jpg
+value=4.494
+rarity=R
+type=Artifact,Creature
+subtype=Scarecrow
+cost={3}
+pt=1/2
+ability=cost {1}, Sacrifice a Scarecrow: Draw a card.;\
+        cost {4}, {T}: Return target artifact creature card from your graveyard to the battlefield.
+timing=artifact

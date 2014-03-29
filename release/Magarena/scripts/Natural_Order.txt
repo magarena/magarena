@@ -1,0 +1,10 @@
+name=Natural Order
+url=http://www.magiccards.info/query?q=%21natural%20order
+image=http://mtgimage.com/set/vis/natural%20order.jpg
+value=4.608
+rarity=R
+type=Sorcery
+cost={2}{G}{G}
+ability=As an additional cost to cast SN, sacrifice a green creature.
+effect=Search your library for a green creature card and put it onto the battlefield. Then shuffle your library.
+timing=main

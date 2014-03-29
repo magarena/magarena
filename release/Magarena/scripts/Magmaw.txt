@@ -1,0 +1,11 @@
+name=Magmaw
+url=http://www.magiccards.info/query?q=%21magmaw
+image=http://mtgimage.com/card/magmaw.jpg
+value=2.964
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{R}{R}
+pt=4/4
+ability=cost {1}, Sacrifice a nonland permanent: SN deals 1 damage to target creature or player.
+timing=main
