@@ -1,0 +1,10 @@
+name=Soulsurge Elemental
+url=http://magiccards.info/query?q=%21soulsurge%20elemental
+image=http://mtgimage.com/card/soulsurge%20elemental.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=*/1
+timing=main
