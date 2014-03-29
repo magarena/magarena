@@ -65,6 +65,231 @@ Thank you for your support and have fun!
 Release 1.48 (March 29, 2014)
 ============
 includes contributions from:
+a. benedict balbuena
+Grundomu
+Guest
+hong yie
+Lodici
+melvin 
+mlkrime
+ShawnieBoy
+tiagoruback
+woggle
+
+enhance MTCS to use multiple cores with tree parallelization
+
+Cards in DeckViewScreen can be filtered by Creatures, Lands and Other Spells.
+
+can now view the "game.log" from within Magarena using new menu option available from main game screen.
+Game log file viewer can display log with or without AI diagnostics.
+
+Show scroll bar in GameViewer if required.
+
+replaced DuelDialog with new DuelPlayersScreen which improves managment of player profiles (both human and AI).
+can now choose preconstructed (prebuilt) and custom decks as well as random when starting a new duel. This setting will be restored
+
+- added the following to the card script:
+  * activation restriction: {YourUpkeep} - activate only during your upkeep
+  * cost: Sacrifice a Zombie
+  * cost: Sacrifice a Mountain
+  * cost: Sacrifice a Forest
+  * cost: Sacrifice another creature
+  * cost: Tap an untapped creature you control
+  * cost: Return an Island
+  * effect: Regenerate SN.
+  * effect: Regenerate <chosen>.
+  * effect: Exile <chosen card>.
+  * effect: Scry 1.
+  * effect: Search into hand
+  * effect: Search onto battlefield (tapped)
+  * effect: Put SN on top of its owner's library.
+  * effect: Put <chosen> on top of its owner's library.
+  * ability: exile at end
+  * ability: add cost <cost> - additional casting cost
+  * ability: alt cost <comma separated costs> named <name> - alternate casting cost
+  * ability: horsemanship
+  * ability: cannot be blocked by walls
+  * ability: cannot be blocked except by walls
+
+- changed the following card script (old -> new):
+  * pay <comma separate costs>: <effect>
+    -> cost <comma separate costs>: <effect>
+  * combat damage player grow 
+    -> Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
+  * damage opponent draw card 
+    -> Whenever SN deals damage to an opponent, draw a card.
+  * damage opponent may draw card 
+    -> Whenever SN deals damage to an opponent, you may draw a card.
+  * combat damage draw card 
+    -> Whenever SN deals combat damage to a player, draw a card. 
+  * combat damage may draw card 
+    -> Whenever SN deals combat damage to a player, you may draw a card.
+  * enters effect <effect> 
+    -> When SN enters the battlefield, <effect>
+  * leaves effect
+    -> When SN leaves the battlefield, <effect>
+  * your upkeep effect <effect> 
+    -> At the beginning of your upkeep, <effect>
+  * landfall effect <effect>
+    -> Whenever a land enters the battlefield under your control, <effect>
+  * attacks effect <effect> 
+    -> Whenever SN attacks, <effect>
+  * battalion effect <effect>
+    -> Whenever SN and at least two other creatures attack, <effect>
+  * spirit or arcane effect <effect>
+    -> Whenever you cast a Spirit or Arcane spell, <effect>
+  * heroic effect <effect>
+    -> Whenever you cast a spell that targets SN, <effect>
+  * dies effect <effect>
+    -> When SN dies, <effect
+  * each upkeep effect <effect>
+    -> At the beginning of each upkeep, <effect>
+  * end step effect <effect>
+    -> At the beginning of the end step, <effect>
+  * your end step effect <effect>
+    -> At the beginning of your end step, <effect>
+  * enters kicked effect <effect>
+    -> When SN enters the battlefield, if it was kicked, <effect>
+  * graveyard to library
+    -> When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
+  * library instead of graveyard
+    -> If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.
+  * enters choose opponent
+    -> As SN enters the battlefield, choose an opponent.
+  * doesn't untap during untap step
+    -> SN doesn't untap during your untap step.
+  * deals damage to an opponent effect <effect>
+    -> Whenever SN deals damage to an opponent, <effect>
+  * deals combat damage to a player effect <effect>
+    -> Whenever SN deals combat damage to a player, <effect>
+  * shock land
+    -> As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.
+  * sac at end
+    -> At the beginning of the end step, sacrifice SN.
+  * sac when targeted
+    -> When SN becomes the target of a spell or ability, sacrifice it.
+  * dead recover graveyard
+    -> If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.
+  * opponent discard onto battlefield
+    -> When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
+  * enters tapped
+    -> SN enters the battlefield tapped.
+  * enters tapped two
+    -> SN enters the battlefield tapped unless you control two or fewer other lands.
+  * enters tapped unless
+    -> SN enters the battlefield tapped unless you control a <subtype> <subtype>
+
+- fixed the following bugs:
+  * missing first strike on Sandstone Warrior
+  * correct broken links to token images
+  * Desecration Demon's trigger should start at begin of each combat
+  * add missing delayed trigger for Ray of Command
+  * undo enchant change control does not remove the card
+  * "you have no maximum hand size" also causes opponent to have no maximum hand size
+  * Nefarox missing flying
+  * destroy at end of combat should only apply this turn
+  * Rings did not put +1/+1 counter on equipped creature
+  * Destructive Revelry to deal damage, not lose life
+  * AI life reduced to -1287867 causes Next Duel button to disappear
+  * Mournful Zombie ability missing tap cost
+  * missing Tap ability for Cluestones
+  * Hunter of Eyeblights not targeting
+  * deck strength tester only playing best of 100 games instead of total 100 games.
+  * Garruk's emblem not triggering
+  * Fix Coral Helm url ref
+  * correct mapping from text to image for +1/+1 and -1/-1 counters
+  * correct name of Gold token
+  * fix for issue 446: Ability Mono always causing crash. "Ability Mono" generates an initial deck of colorless cards so there is no "best color" for choosing basic lands. In this case the best color is chosen randomly from one of the five colors.
+  * Fix issue 515 Has target creature in log
+  * Add check during resolution for Evolve (fix issue 522)
+  * Add ability to Domineer 'fix issue 514'
+  * fix mill parser to support "top card", replace "top a card" with "top card"
+  * Fix issue 550
+  * Fix Issue 544 - Format issue
+  * Fix Issue 540 - Attacking Walls
+  * Fix Issue 537 - Swap effects of Consign to Dream
+  * Fix Issue 531 - Triumph of Cruelty now views ties
+  * Fix Issue 535 - Freyalise's Charm mana prompt
+  * Fix targeting for Wisps
+  * Fix SN reference for PN may... sacrifice SN (fix Issue 527)
+  * Add missing multikicker to Spell Contortion (fix issue 524)
+  * Dakkon Blackblade image fix
+  * Fix issue 554 and fix other errors
+  * correct color, image for 2/1 white Cleric enchantment creature token
+
+- added the following cards:
+Aboshan's Desire, Act of Aggression, Aerie Worshippers, Agent of Horizons,
+Agent of the Fates, Amrou Scout, Amulet of Vigor, Anax and Cymede,
+Annul, Aphotic Wisps, Aqueous Form, Argivian Find, Artificer's Hex,
+Augur of Skulls, Avatar of Discord, Barbarian General, Beacon Hawk,
+Birthing Pod, Black Carriage, Blightspeaker, Blistercoil Weird,
+Bloodfire Colossus, Blood Hound, Blue Sun's Zenith, Bog Rats,
+Borrowing 100,000 Arrows, Bramblesnap, Breaching Hippocamp,
+Call to Heel, Cao Ren, Wei Commander, Cateran Brute, Cateran Enforcer,
+Cateran Kidnappers, Cateran Persuader, Cateran Slaver, Cavalry Pegasus,
+Centaur Chieftain, Cephalid Sage, Cerulean Wisps, Chorus of the Tides,
+Congregate, Controlled Instincts, Corpse Blockade, Corpse Hauler,
+Corrupt, Crack the Earth, Crash, Crimson Wisps, Crosstown Courier,
+Crowned Ceratok, Curfew, Curse of Marit Lage, Dakmor Sorceress,
+Dance of Shadows, Darien, King of Kjeldor, Daring Leap, Daze, Deadapult,
+Deathgrip, Defiant Falcon, Desecration Demon, Destructive Flow,
+Destructive Revelry, Detention Sphere, Devour Flesh, Dinrova Horror,
+Dismember, Divergent Growth, Domestication, Douse, Dream Stalker,
+Dross Harvester, Dwarven Weaponsmith, Eater of Hope, Eladamri's Call,
+Elephant Graveyard, Embargo, Emberwilde Augur, Energy Flux, Envelop,
+Extinguish, Eye Gouge, Faerie Impostor, Fecundity, Feedback Bolt,
+Felhide Brawler, Fiddlehead Kami, Field Surgeon, Fleshmad Steed,
+Forlorn Pseudamma, Fountain Watch, Frazzle, Gainsay, Gate to Phyrexia,
+Gerrard's Command, Gift of the Woods, Gild, Glare of Subdual,
+Gloomdrifter, Goblin War Strike, Goblin Wizard, God-Favored General,
+Gray Merchant of Asphodel, Greater Auramancy, Gristle Grinner,
+Ground Assault, Gut Shot, Hair-Strung Koto, Hanna, Ship's Navigator,
+Haunted Crossroads, Heap Doll, Hell-Bent Raider, Hell's Caretaker,
+Hero's Downfall, Hisoka's Defiance, Hobble, Horror of Horrors,
+Hurkyl's Recall, Hythonia the Cruel, Idle Thoughts, Inundate,
+Invisibility, Juggernaut, Kalonian Hydra, Kamahl's Desire,
+Kavu Chameleon, Kavu Lair, Keymaster Rogue, Kirtar's Desire,
+Kjeldoran Gargoyle, Knight of the Reliquary, Kyren Negotiations,
+Lady Zhurong, Warrior Queen, Lagonna-Band Elder, Last Breath,
+Lich's Mirror, Lifeforce, Linvala, Keeper of Silence, Llanowar Behemoth,
+Lorescale Coatl, Loxodon Gatekeeper, Lu Bu, Master-at-Arms,
+Lu Meng, Wu General, Lu Xun, Scholar General, Mana Breach,
+Marauding Maulhorn, Marsh Lurker, Massive Raid, Mental Misstep,
+Merrow Levitator, Mob Justice, Mortiphobia, Mothdust Changeling,
+Mutagenic Growth, Mystic Denial, Mystic Remora, Nimbus Swimmer,
+Niveous Wisps, Nullify, Nylea's Disciple, Nylea's Presence,
+Offalsnout, Opposition, Opt, Overtaker, Overwhelming Intellect,
+Pack Rat, Parasitic Strix, Pardic Arsonist, Patriarch's Desire,
+Peach Garden Oath, Peak Eruption, People of the Woods, Perilous Research,
+Perish, Pharika's Cure, Pheres-Band Raiders, Pox, Primeval Bounty,
+Prowler's Helm, Psychosis Crawler, Raised by Wolves, Ramosian Captain,
+Ramosian Commander, Ramosian Sergeant, Ramosian Sky Marshal,
+Rampart Crawler, Rathi Intimidator, Ray of Dissolution, Revelsong Horn,
+Revered Elder, Riding Red Hare, Ring of Evos Isle, Ring of Kalonia,
+Ring of Three Wishes, Ring of Thune, Ring of Valkas, Ring of Xathrid,
+Rise of the Dark Realms, Rising Waters, Royal Decree, Rushwood Elemental,
+Saber Ants, Sanguimancy, Satyr Nyx-Smith, Savage Surge,
+Scourge of Valkas, Selesnya Evangel, Sewerdreg, Shadowborn Apostle,
+Shadowborn Demon, Shivan Wumpus, Shu Cavalry, Shu Elite Companions,
+Shu General, Simoon, Simplify, Sip of Hemlock, Skyreaping, Slay,
+Smogsteed Rider, Smoldering Tar, Snapcaster Mage, Soulsurge Elemental,
+Spellskite, Sporemound, Steamclaw, Stonecloaker, Stormbreath Dragon,
+Stormcaller of Keranos, Sun Ce, Young Conquerer, Sunken Hope,
+Sun Quan, Lord of Wu, Svyelunite Priest, Swarm of Rats, Telethopter,
+Teroh's Vanguard, Terrain Generator, Thassa's Bounty, Theft of Dreams,
+Thraben Heretic, Thrashing Wumpus, Threads of Disloyalty, Three Visits,
+Thunderclap, Thunderheads, Thunderous Might, Tidebinder Mage,
+Tidespout Tyrant, Timber Protector, Topan Ascetic, Trade Caravan,
+Trained Condor, Traitorous Instinct, Treefolk Seedlings, Tremble,
+Ultimate Price, Undead Slayer, Unravel the AEther, Urza's Rage,
+Vanquish the Foul, Vault Skirge, Venerated Teacher, Vicious Hunger,
+Viper's Kiss, Viridescent Wisps, Volrath's Gardens, Volrath's Stronghold,
+Wei Elite Companions, Wei Night Raiders, Wei Scout, Wei Strike Force,
+Whelming Wave, Wilderness Hypnotist, Windreader Sphinx, Witches' Eye,
+Withered Wretch, Wolf Pack, Woodborn Behemoth, Wrath of Marit Lage,
+Wu Elite Cavalry, Wu Light Cavalry, Yellow Scarves Cavalry,
+Yellow Scarves General, Zektar Shrine Expedition,
+Zhang Fei, Fierce Warrior, Zhang He, Wei General
 
 Release 1.47 (February 23, 2014)
 ============
