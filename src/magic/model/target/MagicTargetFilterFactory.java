@@ -157,6 +157,7 @@ public class MagicTargetFilterFactory {
         single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("green creature card from your library", TARGET_GREEN_CREATURE_CARD_FROM_LIBRARY);
         single.put("creature or enchantment", TARGET_CREATURE_OR_ENCHANTMENT);
+        single.put("creature or enchantment you control", TARGET_CREATURE_OR_ENCHANTMENT_YOU_CONTROL);
         single.put("creature or land", TARGET_CREATURE_OR_LAND);
         single.put("creature or planeswalker", TARGET_CREATURE_OR_PLANESWALKER);
         single.put("creature or player", TARGET_CREATURE_OR_PLAYER); 

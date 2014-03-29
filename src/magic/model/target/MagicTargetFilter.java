@@ -480,6 +480,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    target.isEnchantment();
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && 
+                    (target.isCreature() || target.isEnchantment());
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_OR_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
