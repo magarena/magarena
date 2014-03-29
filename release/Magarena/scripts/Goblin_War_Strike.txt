@@ -1,0 +1,10 @@
+name=Goblin War Strike
+url=http://magiccards.info/sc/en/96.html
+image=http://mtgimage.com/card/goblin%20war%20strike.jpg
+value=1.854
+removal=3
+rarity=C
+type=Sorcery
+cost={R}
+timing=removal
+requires_groovy_code
