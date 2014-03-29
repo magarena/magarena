@@ -54,10 +54,10 @@ Thanks to
   PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a. benedict balbuena,
   spartan vi, Braullynn, mecheng, pcastellazzi, rasdel, Tyrael, hong yie,
   ember hauler, Hector Marin, drooone, jericho.pumpkin, Mike, Guest, and ShawnieBoy for implementing new cards
+  frank for extensive play testing and bug reporting
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
-
 
 
 
