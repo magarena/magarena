@@ -76,17 +76,15 @@ ShawnieBoy
 tiagoruback
 woggle
 
-enhance MTCS to use multiple cores with tree parallelization
+- MTCS able to use use all CPU cores for processing simulations
 
-Cards in DeckViewScreen can be filtered by Creatures, Lands and Other Spells.
+- introduce concept of player profiles for both human and AI players
 
-can now view the "game.log" from within Magarena using new menu option available from main game screen.
-Game log file viewer can display log with or without AI diagnostics.
+- preconstructed, custom, or random decks can be selected when starting a new duel
 
-Show scroll bar in GameViewer if required.
+- cards in Deck View can be filtered by Creatures, Lands and Other Spells.
 
-replaced DuelDialog with new DuelPlayersScreen which improves managment of player profiles (both human and AI).
-can now choose preconstructed (prebuilt) and custom decks as well as random when starting a new duel. This setting will be restored
+- "game.log" can be view from within Magarena using new menu option available from main game screen
 
 - added the following to the card script:
   * activation restriction: {YourUpkeep} - activate only during your upkeep
