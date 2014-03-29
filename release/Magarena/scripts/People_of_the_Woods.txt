@@ -1,0 +1,10 @@
+name=People of the Woods
+url=http://magiccards.info/dk/en/46.html
+image=http://mtgimage.com/card/people%20of%20the%20woods.jpg
+value=2.204
+rarity=R
+type=Creature
+subtype=Human
+cost={G}{G}
+timing=smain
+requires_groovy_code
