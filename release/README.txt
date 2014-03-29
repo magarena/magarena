@@ -84,7 +84,8 @@ woggle
 
 - cards in Deck View can be filtered by Creatures, Lands and Other Spells.
 
-- "game.log" can be view from within Magarena using new menu option available from main game screen
+- full "game.log" file can be view from within Magarena using new menu option available
+  from main game screen or by right clicking on in-game log viewer
 
 - added the following to the card script:
   * activation restriction: {YourUpkeep} - activate only during your upkeep
