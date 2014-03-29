@@ -1,0 +1,10 @@
+name=Ground Assault
+url=http://magiccards.info/gtc/en/168.html
+image=http://mtgimage.com/card/ground%20assault.jpg
+value=1.854
+removal=3
+rarity=U
+type=Sorcery
+cost={R}{G}
+timing=removal
+requires_groovy_code
