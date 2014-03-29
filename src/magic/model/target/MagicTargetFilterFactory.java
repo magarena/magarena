@@ -137,6 +137,7 @@ public class MagicTargetFilterFactory {
         single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
         single.put("card from your hand", TARGET_CARD_FROM_HAND);
         single.put("artifact or creature card from a graveyard", TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("artifact or creature you control", TARGET_ARTIFACT_OR_CREATURE_YOU_CONTROL);
         single.put("artifact creature card from your graveyard", TARGET_ARTIFACT_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("attacking creature", TARGET_ATTACKING_CREATURE);
         single.put("attacking creature with flying", TARGET_ATTACKING_CREATURE_WITH_FLYING);
@@ -153,6 +154,7 @@ public class MagicTargetFilterFactory {
         single.put("creature card from a graveyard", TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
+        single.put("green creature card from your library", TARGET_GREEN_CREATURE_CARD_FROM_LIBRARY);
         single.put("creature or enchantment", TARGET_CREATURE_OR_ENCHANTMENT);
         single.put("creature or land", TARGET_CREATURE_OR_LAND);
         single.put("creature or planeswalker", TARGET_CREATURE_OR_PLANESWALKER);

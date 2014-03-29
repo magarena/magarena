@@ -366,6 +366,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return target.isArtifact()||target.isCreature();
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) && 
+                    (target.isArtifact() || target.isCreature());
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE_OR_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1246,6 +1253,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
+        }
+    };
+    
+    MagicCardFilterImpl TARGET_GREEN_CREATURE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Creature) &&
+                   target.hasColor(MagicColor.Green);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
         }
     };
 

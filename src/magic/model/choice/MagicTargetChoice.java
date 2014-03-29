@@ -590,6 +590,9 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice TARGET_GREEN_CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a green creature card from your hand");
+    
+    public static final MagicTargetChoice TARGET_GREEN_CREATURE_CARD_FROM_LIBRARY =
+        new MagicTargetChoice("a green creature card from your library");
 
     public static final MagicTargetChoice ARTIFACT_CARD_FROM_HAND = 
         new MagicTargetChoice("an artifact card from your hand");
