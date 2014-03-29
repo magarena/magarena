@@ -423,7 +423,7 @@ public enum MagicCostEvent {
     }
     
     public static final MagicCostEvent build(final String cost) {
-        final String cleanCost=capitalize(cost.replaceAll("\\.*",""));
+        final String cleanCost=capitalize(cost.replaceAll("\\.$",""));
         for (final MagicCostEvent rule : values()) {
             if (rule.accept(cleanCost)) {
                 return rule;
