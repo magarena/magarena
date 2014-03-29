@@ -1,0 +1,10 @@
+name=Soulsurge Elemental
+url=http://magiccards.info/roe/en/163.html
+image=http://magiccards.info/scans/en/roe/163.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=*/1
+timing=main
