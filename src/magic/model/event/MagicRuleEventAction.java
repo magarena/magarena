@@ -323,7 +323,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawDiscardSelf(
-        "(pn )?draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
+        "draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
@@ -1146,7 +1146,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TokenSingle(
-        "(pn )?put(s)? (a|an) (?<name>[^\\.]*) onto the battlefield\\.",
+        "put (a|an) (?<name>[^\\.]*) onto the battlefield\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1165,7 +1165,7 @@ public enum MagicRuleEventAction {
         }
     },
     TokenMany(
-        "(pn )?put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield\\.",
+        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*tokens[^\\.]*) onto the battlefield\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1187,7 +1187,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillSelf(
-        "(pn )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of your library into your graveyard\\.",
+        "put the top (?<amount>[a-z]+)?( )?card(s)? of your library into your graveyard\\.",
         MagicTiming.Draw, 
         "Mill"
     ) {
@@ -1473,12 +1473,14 @@ public enum MagicRuleEventAction {
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
         final String contextRule = ruleWithoutMay.replace("your"," PN's").replace("you","PN");
         final String playerRule = rule
+            .replaceAll("(S|s)earch your ", "PN searches PN's ")
             .replaceAll("discard ","discards ")
             .replaceAll("(D|d)raw ","PN draws ")
-            .replaceAll("(Y|y)ou gain","PN gains")
-            .replaceAll("(Y|y)ou lose","PN loses")
+            .replaceAll("(Y|y)ou gain ","PN gains ")
+            .replaceAll("(Y|y)ou lose ","PN loses ")
             .replaceAll("(Y|y)our ","PN's ")
-            .replaceAll("(Y|y)ou ","PN");
+            .replaceAll("(Y|y)ou ","PN ")
+            .replaceAll("(P|p)ut ","PN puts ");
 
         return rule.startsWith("You may ") || rule.startsWith("you may ") ?
             new MagicSourceEvent(ruleAction, matcher) {
