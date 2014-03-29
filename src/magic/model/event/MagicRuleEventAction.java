@@ -1471,13 +1471,14 @@ public enum MagicRuleEventAction {
         final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
-        final String contextRule = ruleWithoutMay.replace("your"," PN's").replace("you","PN");
+        final String contextRule = ruleWithoutMay.replace("your ","PN's ").replace("you ","PN ");
         final String playerRule = rule
             .replaceAll("(S|s)earch your ", "PN searches PN's ")
             .replaceAll("discard ","discards ")
             .replaceAll("(D|d)raw ","PN draws ")
             .replaceAll("(Y|y)ou gain ","PN gains ")
             .replaceAll("(Y|y)ou lose ","PN loses ")
+            .replaceAll("Y|you control ","PN controls ")
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("(P|p)ut ","PN puts ");
