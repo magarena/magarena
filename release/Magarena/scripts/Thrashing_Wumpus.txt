@@ -1,0 +1,11 @@
+name=Thrashing Wumpus
+url=http://magiccards.info/mm/en/166.html
+image=http://mtgimage.com/card/thrashing%20wumpus.jpg
+value=4.168
+rarity=R
+type=Creature
+subtype=Beast
+cost={3}{B}{B}
+pt=3/3
+timing=main
+requires_groovy_code=Pestilence Demon
