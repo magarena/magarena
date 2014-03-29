@@ -1,7 +1,7 @@
 name=Boggart Shenanigans
 url=http://magiccards.info/query?q=%21boggart%20shenanigans
 image=http://mtgimage.com/card/boggart%20shenanigans.jpg
-value=3.543
+value=3.521
 rarity=U
 type=Tribal,Enchantment
 subtype=Goblin

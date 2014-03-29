@@ -1,7 +1,7 @@
 name=Treasury Thrull
 url=http://magiccards.info/query?q=%21treasury%20thrull
 image=http://mtgimage.com/card/treasury%20thrull.jpg
-value=3.435
+value=3.429
 rarity=R
 type=Creature
 subtype=Thrull

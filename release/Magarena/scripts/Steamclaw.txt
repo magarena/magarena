@@ -1,7 +1,7 @@
 name=Steamclaw
 url=http://www.magiccards.info/query?q=%21steamclaw
 image=http://mtgimage.com/card/steamclaw.jpg
-value=1.65
+value=1.810
 rarity=U
 type=Artifact
 cost={2}

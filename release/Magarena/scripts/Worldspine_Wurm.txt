@@ -1,7 +1,7 @@
 name=Worldspine Wurm
 url=http://magiccards.info/query?q=%21worldspine%20wurm
 image=http://mtgimage.com/card/worldspine%20wurm.jpg
-value=3.944
+value=3.952
 rarity=M
 type=Creature
 subtype=Wurm

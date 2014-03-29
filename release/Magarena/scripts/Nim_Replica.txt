@@ -1,7 +1,7 @@
 name=Nim Replica
 url=http://magiccards.info/query?q=%21nim%20replica
 image=http://mtgimage.com/card/nim%20replica.jpg
-value=1.641
+value=1.667
 rarity=C
 type=Artifact,Creature
 subtype=Zombie

@@ -1,7 +1,7 @@
 name=Racecourse Fury
 url=http://magiccards.info/query?q=%21racecourse%20fury
 image=http://mtgimage.com/card/racecourse%20fury.jpg
-value=2.615
+value=2.659
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Cessation
 url=http://magiccards.info/query?q=%21cessation
 image=http://mtgimage.com/card/cessation.jpg
-value=3.333
+value=3.370
 rarity=C
 type=Enchantment
 subtype=Aura

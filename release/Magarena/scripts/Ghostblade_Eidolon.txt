@@ -1,7 +1,7 @@
 name=Ghostblade Eidolon
 url=http://magiccards.info/query?q=%21ghostblade%20eidolon
 image=http://mtgimage.com/card/ghostblade%20eidolon.jpg
-value=3.595
+value=3.591
 rarity=U
 type=Enchantment,Creature
 subtype=Spirit

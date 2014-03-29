@@ -1,7 +1,7 @@
 name=Sewerdreg
 url=http://www.magiccards.info/query?q=%21sewerdreg
 image=http://mtgimage.com/card/sewerdreg.jpg
-value=1.071
+value=1.117
 rarity=C
 type=Creature
 subtype=Spirit

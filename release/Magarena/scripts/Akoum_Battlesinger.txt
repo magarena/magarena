@@ -1,7 +1,7 @@
 name=Akoum Battlesinger
 url=http://magiccards.info/query?q=%21akoum%20battlesinger
 image=http://mtgimage.com/card/akoum%20battlesinger.jpg
-value=3.062
+value=2.975
 rarity=C
 type=Creature
 subtype=Human,Berserker,Ally

@@ -1,7 +1,7 @@
 name=Hamlet Captain
 url=http://magiccards.info/query?q=%21hamlet%20captain
 image=http://mtgimage.com/card/hamlet%20captain.jpg
-value=3.812
+value=3.814
 rarity=U
 type=Creature
 subtype=Human,Warrior

@@ -1,7 +1,7 @@
 name=Sangromancer
 url=http://magiccards.info/query?q=%21sangromancer
 image=http://mtgimage.com/card/sangromancer.jpg
-value=3.828
+value=3.830
 rarity=R
 type=Creature
 subtype=Vampire,Shaman

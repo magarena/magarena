@@ -1,7 +1,7 @@
 name=Towering Thunderfist
 url=http://magiccards.info/query?q=%21towering%20thunderfist
 image=http://mtgimage.com/card/towering%20thunderfist.jpg
-value=2.803
+value=2.782
 rarity=C
 type=Creature
 subtype=Giant,Soldier

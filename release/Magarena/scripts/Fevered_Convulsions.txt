@@ -1,7 +1,7 @@
 name=Fevered Convulsions
 url=http://magiccards.info/query?q=%21fevered%20convulsions
 image=http://mtgimage.com/card/fevered%20convulsions.jpg
-value=3.032
+value=3.016
 rarity=R
 type=Enchantment
 cost={B}{B}

@@ -1,7 +1,7 @@
 name=Meglonoth
 url=http://magiccards.info/query?q=%21meglonoth
 image=http://mtgimage.com/card/meglonoth.jpg
-value=4.192
+value=4.171
 rarity=R
 type=Creature
 subtype=Beast

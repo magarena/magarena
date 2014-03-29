@@ -1,7 +1,7 @@
 name=Evernight Shade
 url=http://magiccards.info/query?q=%21evernight%20shade
 image=http://mtgimage.com/card/evernight%20shade.jpg
-value=3.156
+value=3.144
 rarity=U
 type=Creature
 subtype=Shade

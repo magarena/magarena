@@ -1,7 +1,7 @@
 name=Swarm of Rats
 url=http://magiccards.info/query?q=%21swarm%20of%20rats
 image=http://mtgimage.com/card/swarm%20of%20rats.jpg
-value=3.050
+value=3.349
 rarity=U
 type=Creature
 subtype=Rat

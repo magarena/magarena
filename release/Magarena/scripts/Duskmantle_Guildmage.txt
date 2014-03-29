@@ -1,7 +1,7 @@
 name=Duskmantle Guildmage
 url=http://magiccards.info/query?q=%21duskmantle%20guildmage
 image=http://mtgimage.com/card/duskmantle%20guildmage.jpg
-value=3.884
+value=3.857
 rarity=U
 type=Creature
 subtype=Human,Wizard

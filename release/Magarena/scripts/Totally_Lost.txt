@@ -1,7 +1,7 @@
 name=Totally Lost
 url=http://magiccards.info/query?q=%21totally%20lost
 image=http://mtgimage.com/card/totally%20lost.jpg
-value=2.905
+value=2.913
 removal=3
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Countersquall
 url=http://magiccards.info/query?q=%21countersquall
 image=http://mtgimage.com/card/countersquall.jpg
-value=4.035
+value=3.974
 rarity=U
 type=Instant
 cost={U}{B}

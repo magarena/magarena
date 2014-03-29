@@ -1,7 +1,7 @@
 name=Pheres-Band Centaurs
 url=http://magiccards.info/query?q=%21pheres%2Dband%20centaurs
 image=http://mtgimage.com/card/pheres%2Dband%20centaurs.jpg
-value=2.853
+value=2.861
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

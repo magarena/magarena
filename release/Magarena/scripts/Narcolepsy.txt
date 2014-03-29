@@ -1,7 +1,7 @@
 name=Narcolepsy
 url=http://magiccards.info/query?q=%21narcolepsy
 image=http://mtgimage.com/card/narcolepsy.jpg
-value=3.914
+value=3.921
 removal=2
 rarity=C
 type=Enchantment

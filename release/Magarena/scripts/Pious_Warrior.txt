@@ -1,7 +1,7 @@
 name=Pious Warrior
 url=http://magiccards.info/query?q=%21pious%20warrior
 image=http://mtgimage.com/card/pious%20warrior.jpg
-value=2.800
+value=2.788
 rarity=C
 type=Creature
 subtype=Human,Rebel,Warrior

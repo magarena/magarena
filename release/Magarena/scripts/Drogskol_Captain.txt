@@ -1,7 +1,7 @@
 name=Drogskol Captain
 url=http://magiccards.info/query?q=%21drogskol%20captain
 image=http://mtgimage.com/card/drogskol%20captain.jpg
-value=3.877
+value=3.884
 rarity=U
 type=Creature
 subtype=Spirit,Soldier

@@ -1,7 +1,7 @@
 name=Rotting Fensnake
 url=http://magiccards.info/query?q=%21rotting%20fensnake
 image=http://mtgimage.com/card/rotting%20fensnake.jpg
-value=2.371
+value=2.373
 rarity=C
 type=Creature
 subtype=Zombie,Snake

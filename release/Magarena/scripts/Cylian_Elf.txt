@@ -1,7 +1,7 @@
 name=Cylian Elf
 url=http://magiccards.info/query?q=%21cylian%20elf
 image=http://mtgimage.com/card/cylian%20elf.jpg
-value=2.158
+value=2.129
 rarity=C
 type=Creature
 subtype=Elf,Scout

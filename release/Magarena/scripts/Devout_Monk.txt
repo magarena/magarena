@@ -1,7 +1,7 @@
 name=Devout Monk
 url=http://magiccards.info/query?q=%21devout%20monk
 image=http://mtgimage.com/card/devout%20monk.jpg
-value=2.015
+value=1.971
 rarity=C
 type=Creature
 subtype=Human,Monk,Cleric

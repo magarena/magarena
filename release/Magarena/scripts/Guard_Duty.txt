@@ -1,7 +1,7 @@
 name=Guard Duty
 url=http://magiccards.info/query?q=%21guard%20duty
 image=http://mtgimage.com/card/guard%20duty.jpg
-value=3.603
+value=3.595
 rarity=C
 type=Enchantment
 subtype=Aura

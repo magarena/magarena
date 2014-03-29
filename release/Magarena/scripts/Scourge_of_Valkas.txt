@@ -1,7 +1,7 @@
 name=Scourge of Valkas
 url=http://magiccards.info/query?q=%21scourge%20of%20valkas
 image=http://mtgimage.com/card/scourge%20of%20valkas.jpg
-value=4.04
+value=3.623
 rarity=M
 type=Creature
 subtype=Dragon

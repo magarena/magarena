@@ -1,7 +1,7 @@
 name=Essence Warden
 url=http://magiccards.info/query?q=%21essence%20warden
 image=http://mtgimage.com/card/essence%20warden.jpg
-value=4.226
+value=4.233
 rarity=C
 type=Creature
 subtype=Elf,Shaman

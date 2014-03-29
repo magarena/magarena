@@ -1,7 +1,7 @@
 name=Peace of Mind
 url=http://magiccards.info/query?q=%21peace%20of%20mind
 image=http://mtgimage.com/card/peace%20of%20mind.jpg
-value=3.438
+value=3.394
 rarity=U
 type=Enchantment
 cost={1}{W}

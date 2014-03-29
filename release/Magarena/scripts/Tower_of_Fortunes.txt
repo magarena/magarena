@@ -1,7 +1,7 @@
 name=Tower of Fortunes
 url=http://magiccards.info/query?q=%21tower%20of%20fortunes
 image=http://mtgimage.com/card/tower%20of%20fortunes.jpg
-value=3.167
+value=2.962
 rarity=R
 type=Artifact
 cost={4}

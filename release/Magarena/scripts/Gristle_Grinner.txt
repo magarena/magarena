@@ -1,7 +1,7 @@
 name=Gristle Grinner
 url=http://magiccards.info/query?q=%21gristle%20grinner
 image=http://mtgimage.com/card/gristle%20grinner.jpg
-value=3.015
+value=2.946
 rarity=U
 type=Creature
 subtype=Zombie

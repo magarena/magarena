@@ -1,7 +1,7 @@
 name=Ball Lightning
 url=http://magiccards.info/query?q=%21ball%20lightning
 image=http://mtgimage.com/card/ball%20lightning.jpg
-value=4.182
+value=4.143
 rarity=R
 type=Creature
 subtype=Elemental

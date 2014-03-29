@@ -1,7 +1,7 @@
 name=Contemplation
 url=http://magiccards.info/query?q=%21contemplation
 image=http://mtgimage.com/card/contemplation.jpg
-value=3.258
+value=3.266
 rarity=U
 type=Enchantment
 cost={1}{W}{W}

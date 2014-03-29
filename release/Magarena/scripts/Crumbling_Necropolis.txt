@@ -1,7 +1,7 @@
 name=Crumbling Necropolis
 url=http://magiccards.info/query?q=%21crumbling%20necropolis
 image=http://mtgimage.com/card/crumbling%20necropolis.jpg
-value=3.708
+value=3.808
 rarity=U
 type=Land
 mana=u3b3r3

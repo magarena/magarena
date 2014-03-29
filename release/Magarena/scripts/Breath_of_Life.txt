@@ -1,7 +1,7 @@
 name=Breath of Life
 url=http://magiccards.info/query?q=%21breath%20of%20life
 image=http://mtgimage.com/card/breath%20of%20life.jpg
-value=4.289
+value=4.109
 rarity=U
 type=Sorcery
 cost={3}{W}

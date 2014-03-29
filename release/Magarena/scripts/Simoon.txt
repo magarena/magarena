@@ -1,7 +1,7 @@
 name=Simoon
 url=http://magiccards.info/query?q=%21simoon
 image=http://mtgimage.com/card/simoon.jpg
-value=2.250
+value=3.755
 removal=2
 rarity=U
 type=Instant

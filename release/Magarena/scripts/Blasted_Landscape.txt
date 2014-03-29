@@ -1,7 +1,7 @@
 name=Blasted Landscape
 url=http://magiccards.info/query?q=%21blasted%20landscape
 image=http://mtgimage.com/card/blasted%20landscape.jpg
-value=3.585
+value=3.593
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

@@ -1,7 +1,7 @@
 name=Blowfly Infestation
 url=http://magiccards.info/query?q=%21blowfly%20infestation
 image=http://mtgimage.com/card/blowfly%20infestation.jpg
-value=3.447
+value=3.398
 rarity=U
 type=Enchantment
 cost={2}{B}

@@ -1,7 +1,7 @@
 name=Mind Spring
 url=http://magiccards.info/query?q=%21mind%20spring
 image=http://mtgimage.com/card/mind%20spring.jpg
-value=3.823
+value=3.719
 rarity=R
 type=Sorcery
 cost={X}{U}{U}

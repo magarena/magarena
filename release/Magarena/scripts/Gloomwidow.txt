@@ -1,7 +1,7 @@
 name=Gloomwidow
 url=http://magiccards.info/query?q=%21gloomwidow
 image=http://mtgimage.com/card/gloomwidow.jpg
-value=2.662
+value=2.600
 rarity=U
 type=Creature
 subtype=Spider

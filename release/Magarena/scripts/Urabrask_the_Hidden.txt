@@ -1,7 +1,7 @@
 name=Urabrask the Hidden
 url=http://magiccards.info/query?q=%21urabrask%20the%20hidden
 image=http://mtgimage.com/card/urabrask%20the%20hidden.jpg
-value=4.049
+value=4.038
 rarity=M
 type=Legendary,Creature
 subtype=Praetor

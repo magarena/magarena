@@ -1,7 +1,7 @@
 name=Lightning Crafter
 url=http://magiccards.info/query?q=%21lightning%20crafter
 image=http://mtgimage.com/card/lightning%20crafter.jpg
-value=4.221
+value=3.767
 removal=2
 rarity=R
 type=Creature

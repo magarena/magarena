@@ -1,7 +1,7 @@
 name=Dread Statuary
 url=http://magiccards.info/query?q=%21dread%20statuary
 image=http://mtgimage.com/card/dread%20statuary.jpg
-value=4.080
+value=3.676
 rarity=U
 type=Land
 ability=tap add mana {1}

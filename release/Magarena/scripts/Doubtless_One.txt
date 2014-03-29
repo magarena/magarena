@@ -1,7 +1,7 @@
 name=Doubtless One
 url=http://magiccards.info/query?q=%21doubtless%20one
 image=http://mtgimage.com/card/doubtless%20one.jpg
-value=4.122
+value=4.109
 rarity=U
 type=Creature
 subtype=Cleric,Avatar

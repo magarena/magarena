@@ -1,7 +1,7 @@
 name=Lumengrid Drake
 url=http://magiccards.info/query?q=%21lumengrid%20drake
 image=http://mtgimage.com/card/lumengrid%20drake.jpg
-value=2.184
+value=2.180
 rarity=C
 type=Creature
 subtype=Drake

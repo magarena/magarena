@@ -1,7 +1,7 @@
 name=Mystic Remora
 url=http://www.magiccards.info/query?q=%21mystic%20remora
 image=http://mtgimage.com/card/mystic%20remora.jpg
-value=4.55
+value=4.569
 rarity=U
 type=Enchantment
 cost={U}

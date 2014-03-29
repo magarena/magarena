@@ -1,7 +1,7 @@
 name=Shrivel
 url=http://magiccards.info/query?q=%21shrivel
 image=http://mtgimage.com/card/shrivel.jpg
-value=3.167
+value=3.188
 rarity=C
 type=Sorcery
 cost={1}{B}

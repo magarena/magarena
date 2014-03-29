@@ -1,7 +1,7 @@
 name=Wildwood Geist
 url=http://magiccards.info/query?q=%21wildwood%20geist
 image=http://mtgimage.com/card/wildwood%20geist.jpg
-value=1.453
+value=1.485
 rarity=C
 type=Creature
 subtype=Spirit

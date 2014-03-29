@@ -1,7 +1,7 @@
 name=Hythonia the Cruel
 url=http://www.magiccards.info/query?q=%21hythonia%20the%20cruel
 image=http://mtgimage.com/card/hythonia%20the%20cruel.jpg
-value=4.009
+value=3.448
 rarity=M
 type=Legendary,Creature
 subtype=Gorgon

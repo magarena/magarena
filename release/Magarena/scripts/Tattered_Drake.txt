@@ -1,7 +1,7 @@
 name=Tattered Drake
 url=http://magiccards.info/query?q=%21tattered%20drake
 image=http://mtgimage.com/card/tattered%20drake.jpg
-value=1.634
+value=1.643
 rarity=C
 type=Creature
 subtype=Zombie,Drake

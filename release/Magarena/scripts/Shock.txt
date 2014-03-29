@@ -1,7 +1,7 @@
 name=Shock
 url=http://magiccards.info/query?q=%21shock
 image=http://mtgimage.com/card/shock.jpg
-value=3.636
+value=3.643
 rarity=C
 type=Instant
 cost={R}

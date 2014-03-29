@@ -1,7 +1,7 @@
 name=Howling Fury
 url=http://magiccards.info/query?q=%21howling%20fury
 image=http://mtgimage.com/card/howling%20fury.jpg
-value=2.026
+value=1.975
 rarity=U
 type=Sorcery
 cost={2}{B}

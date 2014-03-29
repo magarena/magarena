@@ -1,7 +1,7 @@
 name=Vectis Silencers
 url=http://magiccards.info/query?q=%21vectis%20silencers
 image=http://mtgimage.com/card/vectis%20silencers.jpg
-value=1.448
+value=1.442
 rarity=C
 type=Artifact,Creature
 subtype=Human,Rogue

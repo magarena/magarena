@@ -1,7 +1,7 @@
 name=Segovian Leviathan
 url=http://magiccards.info/query?q=%21segovian%20leviathan
 image=http://mtgimage.com/card/segovian%20leviathan.jpg
-value=2.267
+value=2.284
 rarity=U
 type=Creature
 subtype=Leviathan

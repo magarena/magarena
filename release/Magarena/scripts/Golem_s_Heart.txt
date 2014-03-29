@@ -1,7 +1,7 @@
 name=Golem's Heart
 url=http://magiccards.info/query?q=%21golem%27s%20heart
 image=http://mtgimage.com/card/golem%27s%20heart.jpg
-value=2.670
+value=2.657
 rarity=U
 type=Artifact
 cost={2}

@@ -1,7 +1,7 @@
 name=Seize the Initiative
 url=http://magiccards.info/query?q=%21seize%20the%20initiative
 image=http://mtgimage.com/card/seize%20the%20initiative.jpg
-value=2.512
+value=2.511
 rarity=C
 type=Instant
 cost={W}

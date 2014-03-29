@@ -1,7 +1,7 @@
 name=Shriekmaw
 url=http://magiccards.info/query?q=%21shriekmaw
 image=http://mtgimage.com/card/shriekmaw.jpg
-value=4.192
+value=4.179
 rarity=U
 type=Creature
 subtype=Elemental

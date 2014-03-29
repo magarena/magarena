@@ -1,7 +1,7 @@
 name=Dragon Arch
 url=http://magiccards.info/query?q=%21dragon%20arch
 image=http://mtgimage.com/card/dragon%20arch.jpg
-value=4.509
+value=4.425
 rarity=U
 type=Artifact
 cost={5}

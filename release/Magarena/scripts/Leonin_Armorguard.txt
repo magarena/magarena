@@ -1,7 +1,7 @@
 name=Leonin Armorguard
 url=http://magiccards.info/query?q=%21leonin%20armorguard
 image=http://mtgimage.com/card/leonin%20armorguard.jpg
-value=2.807
+value=2.819
 rarity=C
 type=Creature
 subtype=Cat,Soldier

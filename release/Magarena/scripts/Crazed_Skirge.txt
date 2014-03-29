@@ -1,7 +1,7 @@
 name=Crazed Skirge
 url=http://magiccards.info/query?q=%21crazed%20skirge
 image=http://mtgimage.com/card/crazed%20skirge.jpg
-value=2.677
+value=2.688
 rarity=U
 type=Creature
 subtype=Imp

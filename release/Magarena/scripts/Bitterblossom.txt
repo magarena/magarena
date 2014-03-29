@@ -1,7 +1,7 @@
 name=Bitterblossom
 url=http://magiccards.info/query?q=%21bitterblossom
 image=http://mtgimage.com/card/bitterblossom.jpg
-value=4.628
+value=4.392
 rarity=R
 type=Tribal,Enchantment
 subtype=Faerie

@@ -1,7 +1,7 @@
 name=Ashenmoor Gouger
 url=http://magiccards.info/query?q=%21ashenmoor%20gouger
 image=http://mtgimage.com/card/ashenmoor%20gouger.jpg
-value=4.085
+value=4.015
 rarity=U
 type=Creature
 subtype=Elemental,Warrior

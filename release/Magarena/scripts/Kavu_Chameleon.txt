@@ -1,7 +1,7 @@
 name=Kavu Chameleon
 url=http://magiccards.info/query?q=%21kavu%20chameleon
 image=http://mtgimage.com/card/kavu%20chameleon.jpg
-value=3.180
+value=4.061
 rarity=U
 type=Creature
 subtype=Kavu

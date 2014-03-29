@@ -1,7 +1,7 @@
 name=Memnarch
 url=http://magiccards.info/query?q=%21memnarch
 image=http://mtgimage.com/card/memnarch.jpg
-value=4.519
+value=4.539
 rarity=R
 type=Legendary,Artifact,Creature
 subtype=Wizard

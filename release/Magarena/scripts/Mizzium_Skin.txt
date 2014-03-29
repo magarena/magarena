@@ -1,7 +1,7 @@
 name=Mizzium Skin
 url=http://magiccards.info/query?q=%21mizzium%20skin
 image=http://mtgimage.com/card/mizzium%20skin.jpg
-value=3.254
+value=3.272
 rarity=C
 type=Instant
 cost={U}

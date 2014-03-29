@@ -1,7 +1,7 @@
 name=Isochron Scepter
 url=http://magiccards.info/query?q=%21isochron%20scepter
 image=http://mtgimage.com/card/isochron%20scepter.jpg
-value=4.588
+value=4.482
 rarity=U
 type=Artifact
 cost={2}

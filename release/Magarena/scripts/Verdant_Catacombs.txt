@@ -1,7 +1,7 @@
 name=Verdant Catacombs
 url=http://magiccards.info/query?q=%21verdant%20catacombs
 image=http://mtgimage.com/card/verdant%20catacombs.jpg
-value=4.509
+value=4.476
 rarity=R
 type=Land
 ability=cost {T},Pay 1 life,Sacrifice SN:Search your library for a Swamp or Forest card and put it onto the battlefield. Then shuffle your library.

@@ -1,7 +1,7 @@
 name=Kyren Negotiations
 url=http://www.magiccards.info/query?q=%21kyren%20negotiations
 image=http://mtgimage.com/card/kyren%20negotiations.jpg
-value=3.938
+value=3.929
 rarity=U
 type=Enchantment
 cost={2}{R}{R}

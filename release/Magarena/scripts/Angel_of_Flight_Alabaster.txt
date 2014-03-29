@@ -1,7 +1,7 @@
 name=Angel of Flight Alabaster
 url=http://magiccards.info/query?q=%21angel%20of%20flight%20alabaster
 image=http://mtgimage.com/card/angel%20of%20flight%20alabaster.jpg
-value=3.816
+value=3.799
 rarity=R
 type=Creature
 subtype=Angel

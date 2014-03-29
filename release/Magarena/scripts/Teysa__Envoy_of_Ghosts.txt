@@ -1,7 +1,7 @@
 name=Teysa, Envoy of Ghosts
 url=http://magiccards.info/query?q=%21teysa%2C%20envoy%20of%20ghosts
 image=http://mtgimage.com/card/teysa%2C%20envoy%20of%20ghosts.jpg
-value=3.806
+value=3.822
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor

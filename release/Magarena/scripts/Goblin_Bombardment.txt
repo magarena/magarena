@@ -1,7 +1,7 @@
 name=Goblin Bombardment
 url=http://magiccards.info/query?q=%21goblin%20bombardment
 image=http://mtgimage.com/card/goblin%20bombardment.jpg
-value=4.167
+value=4.227
 rarity=U
 type=Enchantment
 cost={1}{R}

@@ -1,7 +1,7 @@
 name=Memory Lapse
 url=http://magiccards.info/query?q=%21memory%20lapse
 image=http://mtgimage.com/card/memory%20lapse.jpg
-value=4.089
+value=4.515
 rarity=C
 type=Instant
 cost={1}{U}

@@ -1,7 +1,7 @@
 name=Blood Artist
 url=http://magiccards.info/query?q=%21blood%20artist
 image=http://mtgimage.com/card/blood%20artist.jpg
-value=3.929
+value=3.942
 rarity=U
 type=Creature
 subtype=Vampire

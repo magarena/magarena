@@ -1,7 +1,7 @@
 name=Noxious Ghoul
 url=http://magiccards.info/query?q=%21noxious%20ghoul
 image=http://mtgimage.com/card/noxious%20ghoul.jpg
-value=4.256
+value=4.186
 rarity=U
 type=Creature
 subtype=Zombie

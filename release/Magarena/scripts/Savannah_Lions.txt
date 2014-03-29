@@ -1,7 +1,7 @@
 name=Savannah Lions
 url=http://magiccards.info/query?q=%21savannah%20lions
 image=http://mtgimage.com/card/savannah%20lions.jpg
-value=4.051
+value=4.075
 rarity=U
 type=Creature
 subtype=Cat

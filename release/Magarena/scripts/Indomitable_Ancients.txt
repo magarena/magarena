@@ -1,7 +1,7 @@
 name=Indomitable Ancients
 url=http://magiccards.info/query?q=%21indomitable%20ancients
 image=http://mtgimage.com/card/indomitable%20ancients.jpg
-value=4.107
+value=3.730
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior

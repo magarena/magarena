@@ -1,7 +1,7 @@
 name=Chimeric Mass
 url=http://magiccards.info/query?q=%21chimeric%20mass
 image=http://mtgimage.com/card/chimeric%20mass.jpg
-value=3.608
+value=3.624
 rarity=R
 type=Artifact
 cost={X}

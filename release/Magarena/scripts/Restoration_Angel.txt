@@ -1,7 +1,7 @@
 name=Restoration Angel
 url=http://magiccards.info/query?q=%21restoration%20angel
 image=http://mtgimage.com/card/restoration%20angel.jpg
-value=4.447
+value=4.450
 rarity=R
 type=Creature
 subtype=Angel

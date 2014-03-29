@@ -1,7 +1,7 @@
 name=Blanchwood Armor
 url=http://magiccards.info/query?q=%21blanchwood%20armor
 image=http://mtgimage.com/card/blanchwood%20armor.jpg
-value=4.435
+value=4.327
 rarity=U
 type=Enchantment
 enchant=pump,pos creature

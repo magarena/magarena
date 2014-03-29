@@ -1,7 +1,7 @@
 name=Nezumi Bone-Reader
 url=http://magiccards.info/query?q=%21nezumi%20bone%2Dreader
 image=http://mtgimage.com/card/nezumi%20bone-reader.jpg
-value=2.279
+value=2.319
 rarity=U
 type=Creature
 subtype=Rat,Shaman

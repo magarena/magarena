@@ -1,7 +1,7 @@
 name=Skeleton Shard
 url=http://magiccards.info/query?q=%21skeleton%20shard
 image=http://mtgimage.com/card/skeleton%20shard.jpg
-value=4.409
+value=4.411
 rarity=U
 type=Artifact
 cost={3}

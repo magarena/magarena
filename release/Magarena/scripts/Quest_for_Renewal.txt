@@ -1,7 +1,7 @@
 name=Quest for Renewal
 url=http://magiccards.info/query?q=%21quest%20for%20renewal
 image=http://mtgimage.com/card/quest%20for%20renewal.jpg
-value=4.210
+value=3.792
 rarity=U
 type=Enchantment
 cost={1}{G}

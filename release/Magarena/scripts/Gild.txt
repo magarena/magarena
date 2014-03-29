@@ -1,7 +1,7 @@
 name=Gild
 url=http://magiccards.info/query?q=%21gild
 image=http://mtgimage.com/card/gild.jpg
-value=4.179
+value=3.848
 rarity=R
 type=Sorcery
 cost={3}{B}

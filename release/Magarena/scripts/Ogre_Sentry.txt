@@ -1,7 +1,7 @@
 name=Ogre Sentry
 url=http://magiccards.info/query?q=%21ogre%20sentry
 image=http://mtgimage.com/card/ogre%20sentry.jpg
-value=2.622
+value=2.640
 ability=defender
 rarity=C
 type=Creature

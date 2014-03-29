@@ -1,7 +1,7 @@
 name=Swat
 url=http://magiccards.info/query?q=%21swat
 image=http://mtgimage.com/card/swat.jpg
-value=3.014
+value=3.027
 rarity=C
 type=Instant
 cost={1}{B}{B}

@@ -1,7 +1,7 @@
 name=Melt Terrain
 url=http://magiccards.info/query?q=%21melt%20terrain
 image=http://mtgimage.com/card/melt%20terrain.jpg
-value=2.969
+value=2.970
 removal=3
 rarity=C
 type=Sorcery

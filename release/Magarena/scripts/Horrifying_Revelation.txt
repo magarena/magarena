@@ -1,7 +1,7 @@
 name=Horrifying Revelation
 url=http://magiccards.info/query?q=%21horrifying%20revelation
 image=http://mtgimage.com/card/horrifying%20revelation.jpg
-value=2.941
+value=2.961
 rarity=C
 type=Sorcery
 cost={B}

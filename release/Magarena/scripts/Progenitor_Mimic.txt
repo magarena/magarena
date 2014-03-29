@@ -1,7 +1,7 @@
 name=Progenitor Mimic
 url=http://magiccards.info/query?q=%21progenitor%20mimic
 image=http://mtgimage.com/card/progenitor%20mimic.jpg
-value=3.803
+value=3.814
 rarity=M
 type=Creature
 subtype=Shapeshifter

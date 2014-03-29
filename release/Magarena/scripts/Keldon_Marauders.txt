@@ -1,7 +1,7 @@
 name=Keldon Marauders
 url=http://magiccards.info/query?q=%21keldon%20marauders
 image=http://mtgimage.com/card/keldon%20marauders.jpg
-value=3.635
+value=3.662
 rarity=C
 type=Creature
 subtype=Human,Warrior

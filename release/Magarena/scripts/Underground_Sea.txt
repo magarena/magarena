@@ -1,7 +1,7 @@
 name=Underground Sea
 url=http://magiccards.info/query?q=%21underground%20sea
 image=http://mtgimage.com/card/underground%20sea.jpg
-value=4.639
+value=4.606
 rarity=R
 type=Land
 subtype=Island,Swamp

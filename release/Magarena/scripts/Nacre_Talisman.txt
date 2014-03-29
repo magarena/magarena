@@ -1,7 +1,7 @@
 name=Nacre Talisman
 url=http://magiccards.info/query?q=%21nacre%20talisman
 image=http://mtgimage.com/card/nacre%20talisman.jpg
-value=2.015
+value=2.029
 rarity=U
 type=Artifact
 cost={2}

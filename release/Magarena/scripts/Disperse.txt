@@ -1,7 +1,7 @@
 name=Disperse
 url=http://magiccards.info/query?q=%21disperse
 image=http://mtgimage.com/card/disperse.jpg
-value=3.681
+value=3.762
 rarity=C
 type=Instant
 cost={1}{U}

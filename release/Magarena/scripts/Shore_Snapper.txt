@@ -1,7 +1,7 @@
 name=Shore Snapper
 url=http://magiccards.info/query?q=%21shore%20snapper
 image=http://mtgimage.com/card/shore%20snapper.jpg
-value=1.966
+value=1.957
 rarity=C
 type=Creature
 subtype=Beast

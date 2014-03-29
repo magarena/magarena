@@ -1,7 +1,7 @@
 name=Armament Master
 url=http://magiccards.info/query?q=%21armament%20master
 image=http://mtgimage.com/card/armament%20master.jpg
-value=4.081
+value=3.898
 rarity=R
 type=Creature
 subtype=Kor,Soldier

@@ -1,7 +1,7 @@
 name=People of the Woods
 url=http://magiccards.info/query?q=%21people%20of%20the%20woods
 image=http://mtgimage.com/card/people%20of%20the%20woods.jpg
-value=2.204
+value=3.326
 rarity=U
 type=Creature
 subtype=Human

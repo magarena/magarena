@@ -1,7 +1,7 @@
 name=Personal Tutor
 url=http://magiccards.info/query?q=%21personal%20tutor
 image=http://mtgimage.com/card/personal%20tutor.jpg
-value=3.950
+value=4.182
 rarity=U
 type=Sorcery
 cost={U}

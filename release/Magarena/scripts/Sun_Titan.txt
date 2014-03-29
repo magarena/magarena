@@ -1,7 +1,7 @@
 name=Sun Titan
 url=http://magiccards.info/query?q=%21sun%20titan
 image=http://mtgimage.com/card/sun%20titan.jpg
-value=4.311
+value=4.282
 rarity=M
 type=Creature
 subtype=Giant

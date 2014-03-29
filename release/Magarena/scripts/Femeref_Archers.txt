@@ -1,7 +1,7 @@
 name=Femeref Archers
 url=http://magiccards.info/query?q=%21femeref%20archers
 image=http://mtgimage.com/card/femeref%20archers.jpg
-value=3.614
+value=3.583
 rarity=U
 type=Creature
 subtype=Human,Archer

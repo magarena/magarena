@@ -1,7 +1,7 @@
 name=Folk of the Pines
 url=http://magiccards.info/query?q=%21folk%20of%20the%20pines
 image=http://mtgimage.com/card/folk%20of%20the%20pines.jpg
-value=2.500
+value=2.459
 rarity=C
 type=Creature
 subtype=Dryad

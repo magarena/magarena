@@ -1,7 +1,7 @@
 name=Spellbook
 url=http://magiccards.info/query?q=%21spellbook
 image=http://mtgimage.com/card/spellbook.jpg
-value=3.769
+value=3.777
 rarity=U
 type=Artifact
 cost={0}

@@ -1,7 +1,7 @@
 name=Paranoid Delusions
 url=http://magiccards.info/query?q=%21paranoid%20delusions
 image=http://mtgimage.com/card/paranoid%20delusions.jpg
-value=2.864
+value=2.850
 rarity=C
 type=Sorcery
 cost={U}{B}

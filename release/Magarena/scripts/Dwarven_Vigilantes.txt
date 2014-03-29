@@ -1,7 +1,7 @@
 name=Dwarven Vigilantes
 url=http://magiccards.info/query?q=%21dwarven%20vigilantes
 image=http://mtgimage.com/card/dwarven%20vigilantes.jpg
-value=3.161
+value=3.529
 rarity=C
 type=Creature
 subtype=Dwarf

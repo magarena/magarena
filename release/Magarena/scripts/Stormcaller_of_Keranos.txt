@@ -1,7 +1,7 @@
 name=Stormcaller of Keranos
 url=http://magiccards.info/query?q=%21stormcaller%20of%20keranos
 image=http://mtgimage.com/card/stormcaller%20of%20keranos.jpg
-value=3.929
+value=3.707
 rarity=U
 type=Creature
 subtype=Human,Shaman

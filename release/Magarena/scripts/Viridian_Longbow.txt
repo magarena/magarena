@@ -1,7 +1,7 @@
 name=Viridian Longbow
 url=http://magiccards.info/query?q=%21viridian%20longbow
 image=http://mtgimage.com/card/viridian%20longbow.jpg
-value=3.963
+value=3.978
 rarity=C
 type=Artifact
 subtype=Equipment

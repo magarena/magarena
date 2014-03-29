@@ -1,7 +1,7 @@
 name=Rebuke
 url=http://magiccards.info/query?q=%21rebuke
 image=http://mtgimage.com/card/rebuke.jpg
-value=3.606
+value=3.604
 removal=4
 rarity=C
 type=Instant

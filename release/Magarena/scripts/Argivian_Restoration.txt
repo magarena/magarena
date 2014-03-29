@@ -1,7 +1,7 @@
 name=Argivian Restoration
 url=http://magiccards.info/query?q=%21argivian%20restoration
 image=http://mtgimage.com/card/argivian%20restoration.jpg
-value=4.368
+value=4.317
 rarity=U
 type=Sorcery
 cost={2}{U}{U}

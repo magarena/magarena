@@ -1,7 +1,7 @@
 name=Cloudheath Drake
 url=http://magiccards.info/query?q=%21cloudheath%20drake
 image=http://mtgimage.com/card/cloudheath%20drake.jpg
-value=1.942
+value=1.962
 rarity=C
 type=Artifact,Creature
 subtype=Drake

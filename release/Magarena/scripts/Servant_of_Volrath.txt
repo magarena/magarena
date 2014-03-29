@@ -1,7 +1,7 @@
 name=Servant of Volrath
 url=http://magiccards.info/query?q=%21servant%20of%20volrath
 image=http://mtgimage.com/card/servant%20of%20volrath.jpg
-value=1.730
+value=1.737
 rarity=C
 type=Creature
 subtype=Minion

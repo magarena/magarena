@@ -1,7 +1,7 @@
 name=Jhessian Balmgiver
 url=http://magiccards.info/query?q=%21jhessian%20balmgiver
 image=http://mtgimage.com/card/jhessian%20balmgiver.jpg
-value=3.119
+value=3.118
 rarity=U
 type=Creature
 subtype=Human,Cleric

@@ -1,7 +1,7 @@
 name=Scathe Zombies
 url=http://magiccards.info/query?q=%21scathe%20zombies
 image=http://mtgimage.com/card/scathe%20zombies.jpg
-value=1.819
+value=1.815
 rarity=C
 type=Creature
 subtype=Zombie

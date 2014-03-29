@@ -1,7 +1,7 @@
 name=Pyrrhic Revival
 url=http://magiccards.info/query?q=%21pyrrhic%20revival
 image=http://mtgimage.com/card/pyrrhic%20revival.jpg
-value=3.611
+value=3.609
 rarity=R
 type=Sorcery
 cost={3}{W/B}{W/B}{W/B}

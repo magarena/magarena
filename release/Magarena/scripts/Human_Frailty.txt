@@ -1,7 +1,7 @@
 name=Human Frailty
 url=http://magiccards.info/query?q=%21human%20frailty
 image=http://mtgimage.com/card/human%20frailty.jpg
-value=2.946
+value=2.896
 removal=2
 rarity=U
 type=Instant

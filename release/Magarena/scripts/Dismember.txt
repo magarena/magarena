@@ -1,7 +1,7 @@
 name=Dismember
 url=http://magiccards.info/query?q=%21dismember
 image=http://mtgimage.com/card/dismember.jpg
-value=3.068
+value=4.438
 removal=5
 rarity=U
 type=Instant

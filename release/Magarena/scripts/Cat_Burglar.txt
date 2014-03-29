@@ -1,7 +1,7 @@
 name=Cat Burglar
 url=http://magiccards.info/query?q=%21cat%20burglar
 image=http://mtgimage.com/card/cat%20burglar.jpg
-value=3.012
+value=3.057
 rarity=C
 type=Creature
 subtype=Kor,Rogue,Minion

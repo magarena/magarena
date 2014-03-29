@@ -1,7 +1,7 @@
 name=Hive Stirrings
 url=http://magiccards.info/query?q=%21hive%20stirrings
 image=http://mtgimage.com/card/hive%20stirrings.jpg
-value=3.367
+value=3.371
 rarity=C
 type=Sorcery
 cost={2}{W}

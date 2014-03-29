@@ -1,7 +1,7 @@
 name=Goblin Offensive
 url=http://magiccards.info/query?q=%21goblin%20offensive
 image=http://mtgimage.com/card/goblin%20offensive.jpg
-value=3.076
+value=3.062
 rarity=U
 type=Sorcery
 cost={X}{1}{R}{R}

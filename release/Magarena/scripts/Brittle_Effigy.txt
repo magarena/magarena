@@ -1,7 +1,7 @@
 name=Brittle Effigy
 url=http://magiccards.info/query?q=%21brittle%20effigy
 image=http://mtgimage.com/card/brittle%20effigy.jpg
-value=4.035
+value=4.034
 removal=4
 rarity=R
 type=Artifact

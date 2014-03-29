@@ -1,7 +1,7 @@
 name=Cerulean Wisps
 url=http://www.magiccards.info/query?q=%21cerulean%20wisps
 image=http://mtgimage.com/card/cerulean%20wisps.jpg
-value=3.026
+value=2.976
 rarity=C
 type=Instant
 cost={U}

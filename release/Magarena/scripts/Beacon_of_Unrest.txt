@@ -1,7 +1,7 @@
 name=Beacon of Unrest
 url=http://magiccards.info/query?q=%21beacon%20of%20unrest
 image=http://mtgimage.com/card/beacon%20of%20unrest.jpg
-value=4.386
+value=4.319
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

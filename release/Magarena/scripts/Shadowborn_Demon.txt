@@ -1,7 +1,7 @@
 name=Shadowborn Demon
 url=http://magiccards.info/query?q=%21shadowborn%20demon
 image=http://mtgimage.com/card/shadowborn%20demon.jpg
-value=3.941
+value=3.645
 rarity=M
 type=Creature
 subtype=Demon

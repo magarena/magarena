@@ -1,7 +1,7 @@
 name=Cunning Sparkmage
 url=http://magiccards.info/query?q=%21cunning%20sparkmage
 image=http://mtgimage.com/card/cunning%20sparkmage.jpg
-value=4.145
+value=3.840
 rarity=U
 type=Creature
 subtype=Human,Shaman

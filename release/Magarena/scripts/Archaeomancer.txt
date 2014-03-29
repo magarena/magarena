@@ -1,7 +1,7 @@
 name=Archaeomancer
 url=http://magiccards.info/query?q=%21archaeomancer
 image=http://mtgimage.com/card/archaeomancer.jpg
-value=3.581
+value=4.000
 rarity=C
 type=Creature
 subtype=Human,Wizard

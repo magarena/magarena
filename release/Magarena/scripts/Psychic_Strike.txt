@@ -1,7 +1,7 @@
 name=Psychic Strike
 url=http://magiccards.info/query?q=%21psychic%20strike
 image=http://mtgimage.com/card/psychic%20strike.jpg
-value=3.703
+value=3.706
 rarity=C
 type=Instant
 cost={1}{U}{B}

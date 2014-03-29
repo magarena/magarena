@@ -1,7 +1,7 @@
 name=Wall of Vines
 url=http://magiccards.info/query?q=%21wall%20of%20vines
 image=http://mtgimage.com/card/wall%20of%20vines.jpg
-value=2.769
+value=2.803
 ability=defender;reach
 rarity=C
 type=Creature

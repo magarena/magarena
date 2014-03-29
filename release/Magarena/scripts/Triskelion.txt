@@ -1,7 +1,7 @@
 name=Triskelion
 url=http://magiccards.info/query?q=%21triskelion
 image=http://mtgimage.com/card/triskelion.jpg
-value=4.076
+value=4.075
 rarity=R
 type=Artifact,Creature
 subtype=Construct

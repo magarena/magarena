@@ -1,7 +1,7 @@
 name=Devoted Hero
 url=http://magiccards.info/query?q=%21devoted%20hero
 image=http://mtgimage.com/card/devoted%20hero.jpg
-value=3.135
+value=3.079
 rarity=C
 type=Creature
 subtype=Elf,Soldier

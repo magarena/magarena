@@ -1,7 +1,7 @@
 name=Dragon's Claw
 url=http://magiccards.info/query?q=%21dragon%27s%20claw
 image=http://mtgimage.com/card/dragon%27s%20claw.jpg
-value=2.405
+value=2.398
 rarity=U
 type=Artifact
 cost={2}

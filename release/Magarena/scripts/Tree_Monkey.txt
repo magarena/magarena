@@ -1,7 +1,7 @@
 name=Tree Monkey
 url=http://magiccards.info/query?q=%21tree%20monkey
 image=http://mtgimage.com/card/tree%20monkey.jpg
-value=2.814
+value=2.875
 ability=reach
 rarity=C
 type=Creature

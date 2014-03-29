@@ -1,7 +1,7 @@
 name=Rites of Flourishing
 url=http://magiccards.info/query?q=%21rites%20of%20flourishing
 image=http://mtgimage.com/card/rites%20of%20flourishing.jpg
-value=3.661
+value=3.675
 rarity=R
 type=Enchantment
 cost={2}{G}

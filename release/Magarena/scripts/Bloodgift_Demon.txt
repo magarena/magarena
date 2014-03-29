@@ -1,7 +1,7 @@
 name=Bloodgift Demon
 url=http://magiccards.info/query?q=%21bloodgift%20demon
 image=http://mtgimage.com/card/bloodgift%20demon.jpg
-value=4.052
+value=3.995
 rarity=R
 type=Creature
 subtype=Demon

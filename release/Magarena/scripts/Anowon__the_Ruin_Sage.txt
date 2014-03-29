@@ -1,7 +1,7 @@
 name=Anowon, the Ruin Sage
 url=http://magiccards.info/query?q=%21anowon%2C%20the%20ruin%20sage
 image=http://mtgimage.com/card/anowon%2C%20the%20ruin%20sage.jpg
-value=3.964
+value=3.735
 rarity=R
 type=Legendary,Creature
 subtype=Vampire,Shaman

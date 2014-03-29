@@ -1,7 +1,7 @@
 name=Sage's Dousing
 url=http://magiccards.info/query?q=%21sage%27s%20dousing
 image=http://mtgimage.com/card/sage%27s%20dousing.jpg
-value=3.674
+value=3.533
 rarity=U
 type=Tribal,Instant
 subtype=Wizard

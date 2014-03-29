@@ -1,7 +1,7 @@
 name=Force of Will
 url=http://magiccards.info/query?q=%21force%20of%20will
 image=http://mtgimage.com/card/force%20of%20will.jpg
-value=4.720
+value=4.734
 rarity=R
 type=Instant
 cost={3}{U}{U}

@@ -1,7 +1,7 @@
 name=Capsize
 url=http://magiccards.info/query?q=%21capsize
 image=http://mtgimage.com/card/capsize.jpg
-value=4.545
+value=4.550
 rarity=C
 type=Instant
 cost={1}{U}{U}

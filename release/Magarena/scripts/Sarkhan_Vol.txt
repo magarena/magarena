@@ -1,7 +1,7 @@
 name=Sarkhan Vol
 url=http://magiccards.info/query?q=%21sarkhan%20vol
 image=http://mtgimage.com/card/sarkhan%20vol.jpg
-value=4.064
+value=4.077
 rarity=M
 type=Planeswalker
 subtype=Sarkhan

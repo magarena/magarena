@@ -1,7 +1,7 @@
 name=Liliana's Caress
 url=http://magiccards.info/query?q=%21liliana%27s%20caress
 image=http://mtgimage.com/card/liliana%27s%20caress.jpg
-value=3.921
+value=3.925
 rarity=U
 type=Enchantment
 cost={1}{B}

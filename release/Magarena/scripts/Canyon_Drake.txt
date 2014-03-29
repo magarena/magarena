@@ -1,7 +1,7 @@
 name=Canyon Drake
 url=http://magiccards.info/query?q=%21canyon%20drake
 image=http://mtgimage.com/card/canyon%20drake.jpg
-value=2.583
+value=2.602
 rarity=R
 type=Creature
 subtype=Drake

@@ -1,7 +1,7 @@
 name=Birthing Pod
 url=http://magiccards.info/query?q=%21birthing%20pod
 image=http://mtgimage.com/card/birthing%20pod.jpg
-value=4.588
+value=3.793
 rarity=R
 type=Artifact
 cost={3}{P/G}

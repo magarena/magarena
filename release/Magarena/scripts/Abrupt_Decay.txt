@@ -1,7 +1,7 @@
 name=Abrupt Decay
 url=http://magiccards.info/query?q=%21abrupt%20decay
 image=http://mtgimage.com/card/abrupt%20decay.jpg
-value=4.372
+value=4.384
 rarity=R
 type=Instant
 cost={B}{G}

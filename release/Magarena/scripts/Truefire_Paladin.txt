@@ -1,7 +1,7 @@
 name=Truefire Paladin
 url=http://magiccards.info/query?q=%21truefire%20paladin
 image=http://mtgimage.com/card/truefire%20paladin.jpg
-value=3.800
+value=3.853
 rarity=U
 type=Creature
 subtype=Human,Knight

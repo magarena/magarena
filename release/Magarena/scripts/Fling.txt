@@ -1,7 +1,7 @@
 name=Fling
 url=http://magiccards.info/query?q=%21fling
 image=http://mtgimage.com/card/fling.jpg
-value=4.516
+value=4.523
 rarity=C
 type=Instant
 cost={1}{R}

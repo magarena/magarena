@@ -1,7 +1,7 @@
 name=Azure Drake
 url=http://magiccards.info/query?q=%21azure%20drake
 image=http://mtgimage.com/card/azure%20drake.jpg
-value=2.716
+value=2.724
 ability=flying
 rarity=U
 type=Creature

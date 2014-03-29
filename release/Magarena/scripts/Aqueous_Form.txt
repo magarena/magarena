@@ -1,7 +1,7 @@
 name=Aqueous Form
 url=http://magiccards.info/query?q=%21aqueous%20form
 image=http://mtgimage.com/card/aqueous%20form.jpg
-value=4.035
+value=3.608
 rarity=C
 type=Enchantment
 subtype=Aura

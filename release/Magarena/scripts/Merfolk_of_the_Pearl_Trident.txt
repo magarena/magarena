@@ -1,7 +1,7 @@
 name=Merfolk of the Pearl Trident
 url=http://magiccards.info/query?q=%21merfolk%20of%20the%20pearl%20trident
 image=http://mtgimage.com/card/merfolk%20of%20the%20pearl%20trident.jpg
-value=2.200
+value=2.180
 rarity=C
 type=Creature
 subtype=Merfolk

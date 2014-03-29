@@ -1,7 +1,7 @@
 name=Cateran Enforcer
 url=http://magiccards.info/query?q=%21cateran%20enforcer
 image=http://mtgimage.com/card/cateran%20enforcer.jpg
-value=2.500
+value=4.104
 rarity=U
 type=Creature
 subtype=Horror,Mercenary

@@ -1,7 +1,7 @@
 name=Groundbreaker
 url=http://magiccards.info/query?q=%21groundbreaker
 image=http://mtgimage.com/card/groundbreaker.jpg
-value=4.393
+value=4.213
 rarity=R
 type=Creature
 subtype=Elemental

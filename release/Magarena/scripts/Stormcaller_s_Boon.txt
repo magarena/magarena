@@ -1,7 +1,7 @@
 name=Stormcaller's Boon
 url=http://magiccards.info/query?q=%21stormcaller%27s%20boon
 image=http://mtgimage.com/card/stormcaller%27s%20boon.jpg
-value=2.654
+value=2.686
 rarity=C
 type=Enchantment
 cost={2}{W}{U}

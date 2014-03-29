@@ -1,7 +1,7 @@
 name=Hair-Strung Koto
 url=http://www.magiccards.info/query?q=%21hair%2Dstrung%20koto
 image=http://mtgimage.com/card/hair-strung%20koto.jpg
-value=2.712
+value=2.726
 rarity=R
 type=Artifact
 cost={6}

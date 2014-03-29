@@ -1,7 +1,7 @@
 name=Talas Warrior
 url=http://magiccards.info/query?q=%21talas%20warrior
 image=http://mtgimage.com/card/talas%20warrior.jpg
-value=4.351
+value=3.976
 rarity=R
 type=Creature
 subtype=Human,Pirate,Warrior

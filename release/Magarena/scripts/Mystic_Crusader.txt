@@ -1,7 +1,7 @@
 name=Mystic Crusader
 url=http://magiccards.info/query?q=%21mystic%20crusader
 image=http://mtgimage.com/card/mystic%20crusader.jpg
-value=3.557
+value=3.556
 rarity=R
 type=Creature
 subtype=Human,Nomad,Mystic

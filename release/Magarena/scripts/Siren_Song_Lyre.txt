@@ -1,7 +1,7 @@
 name=Siren Song Lyre
 url=http://magiccards.info/query?q=%21siren%20song%20lyre
 image=http://mtgimage.com/card/siren%20song%20lyre.jpg
-value=2.520
+value=2.611
 rarity=U
 type=Artifact
 subtype=Equipment

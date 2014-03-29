@@ -1,7 +1,7 @@
 name=Golem Artisan
 url=http://magiccards.info/query?q=%21golem%20artisan
 image=http://mtgimage.com/card/golem%20artisan.jpg
-value=3.432
+value=3.425
 rarity=U
 type=Artifact,Creature
 subtype=Golem

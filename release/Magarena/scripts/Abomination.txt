@@ -1,7 +1,7 @@
 name=Abomination
 url=http://magiccards.info/query?q=%21abomination
 image=http://mtgimage.com/card/abomination.jpg
-value=2.830
+value=2.865
 rarity=U
 type=Creature
 subtype=Horror

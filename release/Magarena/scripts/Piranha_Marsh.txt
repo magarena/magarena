@@ -1,7 +1,7 @@
 name=Piranha Marsh
 url=http://magiccards.info/query?q=%21piranha%20marsh
 image=http://mtgimage.com/card/piranha%20marsh.jpg
-value=3.519
+value=3.509
 rarity=C
 type=Land
 mana=b3

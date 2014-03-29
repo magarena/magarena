@@ -1,7 +1,7 @@
 name=Wolfbriar Elemental
 url=http://magiccards.info/query?q=%21wolfbriar%20elemental
 image=http://mtgimage.com/card/wolfbriar%20elemental.jpg
-value=4.350
+value=4.138
 rarity=R
 type=Creature
 subtype=Elemental

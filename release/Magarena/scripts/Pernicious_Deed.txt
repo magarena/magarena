@@ -1,7 +1,7 @@
 name=Pernicious Deed
 url=http://magiccards.info/query?q=%21pernicious%20deed
 image=http://mtgimage.com/card/pernicious%20deed.jpg
-value=4.525
+value=4.500
 rarity=R
 type=Enchantment
 cost={1}{B}{G}

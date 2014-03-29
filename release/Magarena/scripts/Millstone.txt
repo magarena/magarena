@@ -1,7 +1,7 @@
 name=Millstone
 url=http://magiccards.info/query?q=%21millstone
 image=http://mtgimage.com/card/millstone.jpg
-value=3.656
+value=3.630
 rarity=U
 type=Artifact
 cost={2}

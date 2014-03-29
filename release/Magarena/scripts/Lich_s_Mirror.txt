@@ -1,7 +1,7 @@
 name=Lich's Mirror
 url=http://magiccards.info/query?q=%21lich%27s%20mirror
 image=http://mtgimage.com/card/lich's%20mirror.jpg
-value=3.261
+value=3.279
 rarity=M
 type=Artifact
 cost={5}

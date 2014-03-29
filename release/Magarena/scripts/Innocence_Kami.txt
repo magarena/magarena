@@ -1,7 +1,7 @@
 name=Innocence Kami
 url=http://magiccards.info/query?q=%21innocence%20kami
 image=http://mtgimage.com/card/innocence%20kami.jpg
-value=1.931
+value=1.933
 rarity=U
 type=Creature
 subtype=Spirit

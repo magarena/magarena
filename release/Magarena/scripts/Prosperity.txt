@@ -1,7 +1,7 @@
 name=Prosperity
 url=http://magiccards.info/query?q=%21prosperity
 image=http://mtgimage.com/card/prosperity.jpg
-value=4.389
+value=4.425
 rarity=U
 type=Sorcery
 cost={X}{U}

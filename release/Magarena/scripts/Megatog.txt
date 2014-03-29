@@ -1,7 +1,7 @@
 name=Megatog
 url=http://magiccards.info/query?q=%21megatog
 image=http://mtgimage.com/card/megatog.jpg
-value=4.071
+value=4.088
 rarity=R
 type=Creature
 subtype=Atog

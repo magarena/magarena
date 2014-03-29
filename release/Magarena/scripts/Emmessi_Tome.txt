@@ -1,7 +1,7 @@
 name=Emmessi Tome
 url=http://magiccards.info/query?q=%21emmessi%20tome
 image=http://mtgimage.com/card/emmessi%20tome.jpg
-value=1.500
+value=1.512
 rarity=R
 type=Artifact
 cost={4}

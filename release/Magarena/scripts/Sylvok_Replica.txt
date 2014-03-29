@@ -1,7 +1,7 @@
 name=Sylvok Replica
 url=http://magiccards.info/query?q=%21sylvok%20replica
 image=http://mtgimage.com/card/sylvok%20replica.jpg
-value=3.440
+value=3.441
 rarity=C
 type=Artifact,Creature
 subtype=Shaman

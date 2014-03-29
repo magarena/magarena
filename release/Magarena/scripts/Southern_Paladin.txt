@@ -1,7 +1,7 @@
 name=Southern Paladin
 url=http://magiccards.info/query?q=%21southern%20paladin
 image=http://mtgimage.com/card/southern%20paladin.jpg
-value=3.672
+value=3.683
 rarity=R
 type=Creature
 subtype=Human,Knight

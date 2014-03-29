@@ -1,7 +1,7 @@
 name=Mortivore
 url=http://magiccards.info/query?q=%21mortivore
 image=http://mtgimage.com/card/mortivore.jpg
-value=4.385
+value=4.159
 rarity=R
 type=Creature
 subtype=Lhurgoyf

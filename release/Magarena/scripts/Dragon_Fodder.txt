@@ -1,7 +1,7 @@
 name=Dragon Fodder
 url=http://magiccards.info/query?q=%21dragon%20fodder
 image=http://mtgimage.com/card/dragon%20fodder.jpg
-value=3.457
+value=3.450
 rarity=C
 type=Sorcery
 cost={1}{R}

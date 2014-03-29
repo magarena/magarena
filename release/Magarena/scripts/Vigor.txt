@@ -1,7 +1,7 @@
 name=Vigor
 url=http://magiccards.info/query?q=%21vigor
 image=http://mtgimage.com/card/vigor.jpg
-value=4.368
+value=4.259
 rarity=R
 type=Creature
 subtype=Elemental,Incarnation

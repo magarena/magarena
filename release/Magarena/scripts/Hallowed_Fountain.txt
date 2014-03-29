@@ -1,7 +1,7 @@
 name=Hallowed Fountain
 url=http://magiccards.info/query?q=%21hallowed%20fountain
 image=http://mtgimage.com/card/hallowed%20fountain.jpg
-value=4.298
+value=4.271
 rarity=R
 type=Land
 subtype=Plains,Island

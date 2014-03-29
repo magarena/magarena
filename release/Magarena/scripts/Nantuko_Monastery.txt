@@ -1,7 +1,7 @@
 name=Nantuko Monastery
 url=http://magiccards.info/query?q=%21nantuko%20monastery
 image=http://mtgimage.com/card/nantuko%20monastery.jpg
-value=4.368
+value=4.257
 rarity=U
 type=Land
 ability=tap add mana {1}

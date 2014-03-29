@@ -1,7 +1,7 @@
 name=Kindercatch
 url=http://magiccards.info/query?q=%21kindercatch
 image=http://mtgimage.com/card/kindercatch.jpg
-value=2.669
+value=2.674
 rarity=C
 type=Creature
 subtype=Spirit

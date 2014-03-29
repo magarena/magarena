@@ -1,7 +1,7 @@
 name=Forced Fruition
 url=http://magiccards.info/query?q=%21forced%20fruition
 image=http://mtgimage.com/card/forced%20fruition.jpg
-value=4.145
+value=4.118
 rarity=R
 type=Enchantment
 cost={4}{U}{U}

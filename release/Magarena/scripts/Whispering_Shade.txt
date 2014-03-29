@@ -1,7 +1,7 @@
 name=Whispering Shade
 url=http://magiccards.info/query?q=%21whispering%20shade
 image=http://mtgimage.com/card/whispering%20shade.jpg
-value=2.952
+value=2.984
 rarity=C
 type=Creature
 subtype=Shade

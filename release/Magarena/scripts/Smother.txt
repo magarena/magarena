@@ -1,7 +1,7 @@
 name=Smother
 url=http://magiccards.info/query?q=%21smother
 image=http://mtgimage.com/card/smother.jpg
-value=4.412
+value=4.425
 removal=2
 rarity=U
 type=Instant

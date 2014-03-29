@@ -1,7 +1,7 @@
 name=Kor Aeronaut
 url=http://magiccards.info/query?q=%21kor%20aeronaut
 image=http://mtgimage.com/card/kor%20aeronaut.jpg
-value=4.050
+value=3.935
 rarity=U
 type=Creature
 subtype=Kor,Soldier

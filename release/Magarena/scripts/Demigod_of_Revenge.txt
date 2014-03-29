@@ -1,7 +1,7 @@
 name=Demigod of Revenge
 url=http://magiccards.info/query?q=%21demigod%20of%20revenge
 image=http://mtgimage.com/card/demigod%20of%20revenge.jpg
-value=4.192
+value=4.038
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

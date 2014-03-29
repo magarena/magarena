@@ -1,7 +1,7 @@
 name=Nyxborn Shieldmate
 url=http://magiccards.info/query?q=%21nyxborn%20shieldmate
 image=http://mtgimage.com/card/nyxborn%20shieldmate.jpg
-value=3.875
+value=3.797
 rarity=C
 type=Enchantment,Creature
 subtype=Human,Soldier

@@ -1,7 +1,7 @@
 name=Foxfire Oak
 url=http://magiccards.info/query?q=%21foxfire%20oak
 image=http://mtgimage.com/card/foxfire%20oak.jpg
-value=2.147
+value=2.100
 rarity=C
 type=Creature
 subtype=Treefolk,Shaman

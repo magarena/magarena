@@ -1,7 +1,7 @@
 name=Augur of Skulls
 url=http://www.magiccards.info/query?q=%21augur%20of%20skulls
 image=http://mtgimage.com/card/augur%20of%20skulls.jpg
-value=4.069
+value=4.097
 rarity=C
 type=Creature
 subtype=Skeleton,Wizard

@@ -1,7 +1,7 @@
 name=Quicksand
 url=http://magiccards.info/query?q=%21quicksand
 image=http://mtgimage.com/card/quicksand.jpg
-value=4.163
+value=3.907
 rarity=C
 type=Land
 ability=tap add mana {1};cost {T},Sacrifice SN:Target attacking creature without flying gets -1/-2 until end of turn.

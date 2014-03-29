@@ -1,7 +1,7 @@
 name=Razorfield Rhino
 url=http://magiccards.info/query?q=%21razorfield%20rhino
 image=http://mtgimage.com/card/razorfield%20rhino.jpg
-value=2.046
+value=2.038
 rarity=C
 type=Artifact,Creature
 subtype=Rhino

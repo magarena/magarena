@@ -1,7 +1,7 @@
 name=Triumph of Ferocity
 url=http://magiccards.info/query?q=%21triumph%20of%20ferocity
 image=http://mtgimage.com/card/triumph%20of%20ferocity.jpg
-value=3.638
+value=3.676
 rarity=U
 type=Enchantment
 cost={2}{G}

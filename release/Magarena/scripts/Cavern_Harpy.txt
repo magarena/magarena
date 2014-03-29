@@ -1,7 +1,7 @@
 name=Cavern Harpy
 url=http://magiccards.info/query?q=%21cavern%20harpy
 image=http://mtgimage.com/card/cavern%20harpy.jpg
-value=4.130
+value=4.149
 rarity=C
 type=Creature
 subtype=Harpy,Beast

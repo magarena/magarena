@@ -1,7 +1,7 @@
 name=Fangren Marauder
 url=http://magiccards.info/query?q=%21fangren%20marauder
 image=http://mtgimage.com/card/fangren%20marauder.jpg
-value=3.329
+value=3.331
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,7 +1,7 @@
 name=Offering to Asha
 url=http://magiccards.info/query?q=%21offering%20to%20asha
 image=http://mtgimage.com/card/offering%20to%20asha.jpg
-value=2.993
+value=2.986
 rarity=C
 type=Instant
 cost={2}{W}{U}

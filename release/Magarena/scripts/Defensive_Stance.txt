@@ -1,7 +1,7 @@
 name=Defensive Stance
 url=http://magiccards.info/query?q=%21defensive%20stance
 image=http://mtgimage.com/card/defensive%20stance.jpg
-value=0.899
+value=0.895
 rarity=C
 type=Enchantment
 subtype=Aura

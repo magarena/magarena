@@ -1,7 +1,7 @@
 name=Mosquito Guard
 url=http://magiccards.info/query?q=%21mosquito%20guard
 image=http://mtgimage.com/card/mosquito%20guard.jpg
-value=3.274
+value=3.103
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

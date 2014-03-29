@@ -1,7 +1,7 @@
 name=Gelectrode
 url=http://magiccards.info/query?q=%21gelectrode
 image=http://mtgimage.com/card/gelectrode.jpg
-value=4.132
+value=3.993
 rarity=U
 type=Creature
 subtype=Weird

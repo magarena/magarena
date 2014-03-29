@@ -1,7 +1,7 @@
 name=Flailing Drake
 url=http://magiccards.info/query?q=%21flailing%20drake
 image=http://mtgimage.com/card/flailing%20drake.jpg
-value=1.263
+value=1.259
 rarity=U
 type=Creature
 subtype=Drake

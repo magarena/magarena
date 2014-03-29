@@ -1,7 +1,7 @@
 name=Curse of Marit Lage
 url=http://www.magiccards.info/query?q=%21curse%20of%20marit%20lage
 image=http://mtgimage.com/card/curse%20of%20marit%20lage.jpg
-value=3.622
+value=3.605
 rarity=R
 type=Enchantment
 cost={3}{R}{R}

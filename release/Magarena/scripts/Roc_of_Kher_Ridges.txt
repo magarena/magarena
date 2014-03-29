@@ -1,7 +1,7 @@
 name=Roc of Kher Ridges
 url=http://magiccards.info/query?q=%21roc%20of%20kher%20ridges
 image=http://mtgimage.com/card/roc%20of%20kher%20ridges.jpg
-value=3.875
+value=3.878
 ability=flying
 rarity=U
 type=Creature

@@ -1,7 +1,7 @@
 name=Naya Hushblade
 url=http://magiccards.info/query?q=%21naya%20hushblade
 image=http://mtgimage.com/card/naya%20hushblade.jpg
-value=3.364
+value=3.360
 rarity=C
 type=Creature
 subtype=Elf,Rogue

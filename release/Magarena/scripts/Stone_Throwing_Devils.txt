@@ -1,7 +1,7 @@
 name=Stone-Throwing Devils
 url=http://magiccards.info/query?q=%21stone%2Dthrowing%20devils
 image=http://mtgimage.com/card/stone%2Dthrowing%20devils.jpg
-value=3.897
+value=3.899
 rarity=C
 type=Creature
 subtype=Devil

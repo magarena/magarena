@@ -1,7 +1,7 @@
 name=Misty Rainforest
 url=http://magiccards.info/query?q=%21misty%20rainforest
 image=http://mtgimage.com/card/misty%20rainforest.jpg
-value=4.468
+value=4.510
 rarity=R
 type=Land
 ability=cost {T},Pay 1 life,Sacrifice SN:Search your library for a Forest or Island card and put it onto the battlefield. Then shuffle your library.

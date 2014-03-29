@@ -1,7 +1,7 @@
 name=Ashen Rider
 url=http://magiccards.info/query?q=%21ashen%20rider
 image=http://mtgimage.com/card/ashen%20rider.jpg
-value=4.022
+value=4.038
 rarity=M
 type=Creature
 subtype=Archon

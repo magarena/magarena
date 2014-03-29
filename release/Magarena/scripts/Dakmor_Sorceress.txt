@@ -1,7 +1,7 @@
 name=Dakmor Sorceress
 url=http://magiccards.info/query?q=%21dakmor%20sorceress
 image=http://mtgimage.com/card/dakmor%20sorceress.jpg
-value=3.018
+value=3.197
 rarity=R
 type=Creature
 subtype=Human,Wizard

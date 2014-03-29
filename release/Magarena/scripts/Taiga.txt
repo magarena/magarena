@@ -1,7 +1,7 @@
 name=Taiga
 url=http://magiccards.info/query?q=%21taiga
 image=http://mtgimage.com/card/taiga.jpg
-value=4.635
+value=4.602
 rarity=R
 type=Land
 subtype=Mountain,Forest

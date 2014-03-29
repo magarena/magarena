@@ -1,7 +1,7 @@
 name=Anoint
 url=http://magiccards.info/query?q=%21anoint
 image=http://mtgimage.com/card/anoint.jpg
-value=1.953
+value=1.955
 rarity=C
 type=Instant
 cost={W}

@@ -1,7 +1,7 @@
 name=Oreskos Sun Guide
 url=http://magiccards.info/query?q=%21oreskos%20sun%20guide
 image=http://mtgimage.com/card/oreskos%20sun%20guide.jpg
-value=3.263
+value=3.370
 rarity=C
 type=Creature
 subtype=Cat,Monk

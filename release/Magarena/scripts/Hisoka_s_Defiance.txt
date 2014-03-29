@@ -1,7 +1,7 @@
 name=Hisoka's Defiance
 url=http://www.magiccards.info/query?q=%21hisoka%27s%20defiance
 image=http://mtgimage.com/card/hisoka's%20defiance.jpg
-value=1.077
+value=1.056
 rarity=C
 type=Instant
 cost={1}{U}

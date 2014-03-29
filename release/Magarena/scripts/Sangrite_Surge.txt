@@ -1,7 +1,7 @@
 name=Sangrite Surge
 url=http://magiccards.info/query?q=%21sangrite%20surge
 image=http://mtgimage.com/card/sangrite%20surge.jpg
-value=2.205
+value=2.194
 rarity=U
 type=Sorcery
 cost={4}{R}{G}

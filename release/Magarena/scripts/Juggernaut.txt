@@ -1,7 +1,7 @@
 name=Juggernaut
 url=http://www.magiccards.info/query?q=%21juggernaut
 image=http://mtgimage.com/card/juggernaut.jpg
-value=3.656
+value=3.629
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

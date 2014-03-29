@@ -1,7 +1,7 @@
 name=Bloodfire Colossus
 url=http://magiccards.info/query?q=%21bloodfire%20colossus
 image=http://mtgimage.com/card/bloodfire%20colossus.jpg
-value=3.974
+value=3.975
 rarity=R
 type=Creature
 subtype=Giant

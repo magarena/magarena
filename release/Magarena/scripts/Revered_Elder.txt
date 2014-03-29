@@ -1,7 +1,7 @@
 name=Revered Elder
 url=http://www.magiccards.info/query?q=%21revered%20elder
 image=http://mtgimage.com/card/revered%20elder.jpg
-value=2.121
+value=2.117
 rarity=C
 type=Creature
 subtype=Human,Cleric

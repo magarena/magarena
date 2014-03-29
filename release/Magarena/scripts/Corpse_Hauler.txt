@@ -1,7 +1,7 @@
 name=Corpse Hauler
 url=http://www.magiccards.info/query?q=%21corpse%20hauler
 image=http://mtgimage.com/card/corpse%20hauler.jpg
-value=2.88
+value=2.946
 rarity=C
 type=Creature
 subtype=Human,Rogue

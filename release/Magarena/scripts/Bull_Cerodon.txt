@@ -1,7 +1,7 @@
 name=Bull Cerodon
 url=http://magiccards.info/query?q=%21bull%20cerodon
 image=http://mtgimage.com/card/bull%20cerodon.jpg
-value=3.325
+value=3.345
 rarity=U
 type=Creature
 subtype=Beast

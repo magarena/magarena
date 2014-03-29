@@ -1,7 +1,7 @@
 name=Razortooth Rats
 url=http://magiccards.info/query?q=%21razortooth%20rats
 image=http://mtgimage.com/card/razortooth%20rats.jpg
-value=2.857
+value=2.862
 ability=fear
 rarity=C
 type=Creature

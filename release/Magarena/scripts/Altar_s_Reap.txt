@@ -1,7 +1,7 @@
 name=Altar's Reap
 url=http://magiccards.info/query?q=%21altar%27s%20reap
 image=http://mtgimage.com/card/altar's%20reap.jpg
-value=3.628
+value=3.570
 rarity=C
 type=Instant
 cost={1}{B}

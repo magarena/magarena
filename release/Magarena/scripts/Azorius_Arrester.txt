@@ -1,7 +1,7 @@
 name=Azorius Arrester
 url=http://magiccards.info/query?q=%21azorius%20arrester
 image=http://mtgimage.com/card/azorius%20arrester.jpg
-value=3.235
+value=3.232
 rarity=C
 type=Creature
 subtype=Human,Soldier

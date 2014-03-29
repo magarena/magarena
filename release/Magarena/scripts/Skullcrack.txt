@@ -1,7 +1,7 @@
 name=Skullcrack
 url=http://magiccards.info/query?q=%21skullcrack
 image=http://mtgimage.com/card/skullcrack.jpg
-value=4.000
+value=3.964
 rarity=U
 type=Instant
 cost={1}{R}

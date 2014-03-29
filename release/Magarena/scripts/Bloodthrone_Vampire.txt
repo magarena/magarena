@@ -1,7 +1,7 @@
 name=Bloodthrone Vampire
 url=http://magiccards.info/query?q=%21bloodthrone%20vampire
 image=http://mtgimage.com/card/bloodthrone%20vampire.jpg
-value=3.009
+value=2.963
 rarity=C
 type=Creature
 subtype=Vampire

@@ -1,7 +1,7 @@
 name=Benthic Giant
 url=http://magiccards.info/query?q=%21benthic%20giant
 image=http://mtgimage.com/card/benthic%20giant.jpg
-value=3.095
+value=3.090
 rarity=C
 type=Creature
 subtype=Giant

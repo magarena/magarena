@@ -1,7 +1,7 @@
 name=Stonecloaker
 url=http://www.magiccards.info/query?q=%21stonecloaker
 image=http://mtgimage.com/card/stonecloaker.jpg
-value=4.03
+value=3.615
 rarity=U
 type=Creature
 subtype=Gargoyle

@@ -1,7 +1,7 @@
 name=Defy Death
 url=http://magiccards.info/query?q=%21defy%20death
 image=http://mtgimage.com/card/defy%20death.jpg
-value=3.805
+value=3.800
 rarity=U
 type=Sorcery
 cost={3}{W}{W}

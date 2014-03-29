@@ -1,7 +1,7 @@
 name=Geth's Verdict
 url=http://magiccards.info/query?q=%21geth%27s%20verdict
 image=http://mtgimage.com/card/geth%27s%20verdict.jpg
-value=3.822
+value=3.808
 removal=1
 rarity=C
 type=Instant

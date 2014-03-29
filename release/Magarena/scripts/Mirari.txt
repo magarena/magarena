@@ -1,7 +1,7 @@
 name=Mirari
 url=http://magiccards.info/query?q=%21mirari
 image=http://mtgimage.com/card/mirari.jpg
-value=3.600
+value=4.000
 rarity=M
 type=Legendary,Artifact
 cost={5}

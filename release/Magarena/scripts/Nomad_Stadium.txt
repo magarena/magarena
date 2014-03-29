@@ -1,7 +1,7 @@
 name=Nomad Stadium
 url=http://magiccards.info/query?q=%21nomad%20stadium
 image=http://mtgimage.com/card/nomad%20stadium.jpg
-value=1.000
+value=1.012
 rarity=U
 type=Land
 mana=w2

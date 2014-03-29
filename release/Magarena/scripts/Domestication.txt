@@ -1,7 +1,7 @@
 name=Domestication
 url=http://magiccards.info/query?q=%21domestication
 image=http://mtgimage.com/card/domestication.jpg
-value=2.189
+value=2.298
 rarity=R
 type=Enchantment
 subtype=Aura

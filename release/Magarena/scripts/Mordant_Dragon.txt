@@ -1,7 +1,7 @@
 name=Mordant Dragon
 url=http://magiccards.info/query?q=%21mordant%20dragon
 image=http://mtgimage.com/card/mordant%20dragon.jpg
-value=3.819
+value=3.442
 rarity=R
 type=Creature
 subtype=Dragon

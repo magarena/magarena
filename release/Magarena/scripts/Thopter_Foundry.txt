@@ -1,7 +1,7 @@
 name=Thopter Foundry
 url=http://magiccards.info/query?q=%21thopter%20foundry
 image=http://mtgimage.com/card/thopter%20foundry.jpg
-value=4.333
+value=4.115
 rarity=U
 type=Artifact
 cost={W/B}{U}

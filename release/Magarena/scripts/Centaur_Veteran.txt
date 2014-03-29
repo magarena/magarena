@@ -1,7 +1,7 @@
 name=Centaur Veteran
 url=http://magiccards.info/query?q=%21centaur%20veteran
 image=http://mtgimage.com/card/centaur%20veteran.jpg
-value=1.529
+value=1.542
 rarity=C
 type=Creature
 subtype=Centaur

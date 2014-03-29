@@ -1,7 +1,7 @@
 name=Ramosian Captain
 url=http://magiccards.info/query?q=%21ramosian%20captain
 image=http://mtgimage.com/card/ramosian%20captain.jpg
-value=2.372
+value=3.950
 rarity=U
 type=Creature
 subtype=Human,Rebel

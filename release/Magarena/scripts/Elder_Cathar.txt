@@ -1,7 +1,7 @@
 name=Elder Cathar
 url=http://magiccards.info/query?q=%21elder%20cathar
 image=http://mtgimage.com/card/elder%20cathar.jpg
-value=3.422
+value=3.424
 rarity=C
 type=Creature
 subtype=Human,Soldier

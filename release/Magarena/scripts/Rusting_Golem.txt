@@ -1,7 +1,7 @@
 name=Rusting Golem
 url=http://magiccards.info/query?q=%21rusting%20golem
 image=http://mtgimage.com/card/rusting%20golem.jpg
-value=2.667
+value=2.679
 rarity=U
 type=Artifact,Creature
 subtype=Golem

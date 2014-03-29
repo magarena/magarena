@@ -1,7 +1,7 @@
 name=Mitotic Slime
 url=http://magiccards.info/query?q=%21mitotic%20slime
 image=http://mtgimage.com/card/mitotic%20slime.jpg
-value=3.829
+value=3.872
 rarity=R
 type=Creature
 subtype=Ooze

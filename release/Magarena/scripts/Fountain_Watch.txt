@@ -1,7 +1,7 @@
 name=Fountain Watch
 url=http://www.magiccards.info/query?q=%21fountain%20watch
 image=http://mtgimage.com/card/fountain%20watch.jpg
-value=3.892
+value=3.882
 rarity=R
 type=Creature
 subtype=Human,Cleric

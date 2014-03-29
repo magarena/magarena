@@ -1,7 +1,7 @@
 name=Dust Bowl
 url=http://magiccards.info/query?q=%21dust%20bowl
 image=http://mtgimage.com/card/dust%20bowl.jpg
-value=4.290
+value=4.318
 rarity=R
 type=Land
 ability=tap add mana {1};cost {3},{T},Sacrifice a land: Destroy target nonbasic land.

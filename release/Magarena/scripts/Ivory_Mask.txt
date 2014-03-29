@@ -1,7 +1,7 @@
 name=Ivory Mask
 url=http://magiccards.info/query?q=%21ivory%20mask
 image=http://mtgimage.com/card/ivory%20mask.jpg
-value=4.268
+value=4.198
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

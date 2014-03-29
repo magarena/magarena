@@ -1,7 +1,7 @@
 name=Zombie Apocalypse
 url=http://magiccards.info/query?q=%21zombie%20apocalypse
 image=http://mtgimage.com/card/zombie%20apocalypse.jpg
-value=3.853
+value=3.846
 removal=2
 rarity=R
 type=Sorcery

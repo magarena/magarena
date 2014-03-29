@@ -1,7 +1,7 @@
 name=Spike Jester
 url=http://magiccards.info/query?q=%21spike%20jester
 image=http://mtgimage.com/card/spike%20jester.jpg
-value=3.787
+value=3.793
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

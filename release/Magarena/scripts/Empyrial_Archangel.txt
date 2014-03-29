@@ -1,7 +1,7 @@
 name=Empyrial Archangel
 url=http://magiccards.info/query?q=%21empyrial%20archangel
 image=http://mtgimage.com/card/empyrial%20archangel.jpg
-value=4.007
+value=4.014
 rarity=M
 type=Creature
 subtype=Angel

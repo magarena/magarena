@@ -1,7 +1,7 @@
 name=Chandra's Spitfire
 url=http://magiccards.info/query?q=%21chandra%27s%20spitfire
 image=http://mtgimage.com/card/chandra%27s%20spitfire.jpg
-value=4.193
+value=4.195
 rarity=U
 type=Creature
 subtype=Elemental

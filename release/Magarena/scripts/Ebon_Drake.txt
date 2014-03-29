@@ -1,7 +1,7 @@
 name=Ebon Drake
 url=http://magiccards.info/query?q=%21ebon%20drake
 image=http://mtgimage.com/card/ebon%20drake.jpg
-value=1.853
+value=1.913
 rarity=U
 type=Creature
 subtype=Drake

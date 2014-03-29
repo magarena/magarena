@@ -1,7 +1,7 @@
 name=Tel-Jilad Fallen
 url=http://magiccards.info/query?q=%21tel%2Djilad%20fallen
 image=http://mtgimage.com/card/tel%2Djilad%20fallen.jpg
-value=3.027
+value=3.009
 rarity=C
 type=Creature
 subtype=Elf,Warrior

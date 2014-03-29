@@ -1,7 +1,7 @@
 name=Unravel the AEther
 url=http://magiccards.info/query?q=%21unravel%20the%20aether
 image=http://mtgimage.com/card/unravel%20the%20aether.jpg
-value=3.2
+value=4.492
 rarity=U
 type=Instant
 cost={1}{G}

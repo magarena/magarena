@@ -1,7 +1,7 @@
 name=Expedition Map
 url=http://magiccards.info/query?q=%21expedition%20map
 image=http://mtgimage.com/card/expedition%20map.jpg
-value=4.178
+value=3.874
 rarity=C
 type=Artifact
 cost={1}

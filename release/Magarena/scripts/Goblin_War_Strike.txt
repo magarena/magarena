@@ -1,7 +1,7 @@
 name=Goblin War Strike
 url=http://magiccards.info/query?q=%21goblin%20war%20strike
 image=http://mtgimage.com/card/goblin%20war%20strike.jpg
-value=1.854
+value=4.140
 removal=3
 rarity=C
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Platinum Angel
 url=http://magiccards.info/query?q=%21platinum%20angel
 image=http://mtgimage.com/card/platinum%20angel.jpg
-value=4.405
+value=4.408
 rarity=M
 type=Artifact,Creature
 subtype=Angel

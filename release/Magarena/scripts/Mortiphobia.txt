@@ -1,7 +1,7 @@
 name=Mortiphobia
 url=http://www.magiccards.info/query?q=%21mortiphobia
 image=http://mtgimage.com/card/mortiphobia.jpg
-value=1.8
+value=1.790
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

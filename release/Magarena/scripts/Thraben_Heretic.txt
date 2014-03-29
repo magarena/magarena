@@ -1,7 +1,7 @@
 name=Thraben Heretic
 url=http://www.magiccards.info/query?q=%21thraben%20heretic
 image=http://mtgimage.com/card/thraben%20heretic.jpg
-value=3.321
+value=3.333
 rarity=U
 type=Creature
 subtype=Human,Wizard

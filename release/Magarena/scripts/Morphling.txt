@@ -1,7 +1,7 @@
 name=Morphling
 url=http://magiccards.info/query?q=%21morphling
 image=http://mtgimage.com/card/morphling.jpg
-value=4.472
+value=4.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

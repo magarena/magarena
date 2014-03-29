@@ -1,7 +1,7 @@
 name=Deathless Angel
 url=http://magiccards.info/query?q=%21deathless%20angel
 image=http://mtgimage.com/card/deathless%20angel.jpg
-value=4.037
+value=4.032
 rarity=R
 type=Creature
 subtype=Angel

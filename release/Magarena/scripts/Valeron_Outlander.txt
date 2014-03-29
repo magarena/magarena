@@ -1,7 +1,7 @@
 name=Valeron Outlander
 url=http://magiccards.info/query?q=%21valeron%20outlander
 image=http://mtgimage.com/card/valeron%20outlander.jpg
-value=2.904
+value=2.906
 ability=protection from black
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Slay
 url=http://magiccards.info/query?q=%21slay
 image=http://mtgimage.com/card/slay.jpg
-value=3.333
+value=3.350
 rarity=U
 type=Instant
 cost={2}{B}

@@ -1,7 +1,7 @@
 name=Salt Flats
 url=http://magiccards.info/query?q=%21salt%20flats
 image=http://mtgimage.com/card/salt%20flats.jpg
-value=2.833
+value=2.838
 rarity=R
 type=Land
 mana=w2b2

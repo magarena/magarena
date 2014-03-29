@@ -1,7 +1,7 @@
 name=Crowd of Cinders
 url=http://magiccards.info/query?q=%21crowd%20of%20cinders
 image=http://mtgimage.com/card/crowd%20of%20cinders.jpg
-value=3.488
+value=3.417
 rarity=U
 type=Creature
 subtype=Elemental

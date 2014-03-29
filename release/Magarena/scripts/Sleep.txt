@@ -1,7 +1,7 @@
 name=Sleep
 url=http://magiccards.info/query?q=%21sleep
 image=http://mtgimage.com/card/sleep.jpg
-value=3.849
+value=3.867
 removal=1
 rarity=U
 type=Sorcery

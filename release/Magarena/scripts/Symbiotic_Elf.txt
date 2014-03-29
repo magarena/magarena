@@ -1,7 +1,7 @@
 name=Symbiotic Elf
 url=http://magiccards.info/query?q=%21symbiotic%20elf
 image=http://mtgimage.com/card/symbiotic%20elf.jpg
-value=2.860
+value=2.827
 rarity=C
 type=Creature
 subtype=Elf

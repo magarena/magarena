@@ -1,7 +1,7 @@
 name=Soulsurge Elemental
 url=http://magiccards.info/query?q=%21soulsurge%20elemental
 image=http://mtgimage.com/card/soulsurge%20elemental.jpg
-value=2.500
+value=3.583
 rarity=U
 type=Creature
 subtype=Elemental

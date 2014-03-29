@@ -1,7 +1,7 @@
 name=Deus of Calamity
 url=http://magiccards.info/query?q=%21deus%20of%20calamity
 image=http://mtgimage.com/card/deus%20of%20calamity.jpg
-value=4.214
+value=3.824
 rarity=R
 type=Creature
 subtype=Spirit,Avatar

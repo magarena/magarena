@@ -1,7 +1,7 @@
 name=Boil
 url=http://magiccards.info/query?q=%21boil
 image=http://mtgimage.com/card/boil.jpg
-value=4.095
+value=4.184
 rarity=U
 type=Instant
 cost={3}{R}

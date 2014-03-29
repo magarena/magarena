@@ -1,7 +1,7 @@
 name=Seat of the Synod
 url=http://magiccards.info/query?q=%21seat%20of%20the%20synod
 image=http://mtgimage.com/card/seat%20of%20the%20synod.jpg
-value=4.579
+value=4.516
 rarity=C
 type=Artifact,Land
 mana=u4

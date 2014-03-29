@@ -1,7 +1,7 @@
 name=Idyllic Tutor
 url=http://magiccards.info/query?q=%21idyllic%20tutor
 image=http://mtgimage.com/card/idyllic%20tutor.jpg
-value=3.612
+value=3.559
 rarity=R
 type=Sorcery
 cost={2}{W}

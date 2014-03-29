@@ -1,7 +1,7 @@
 name=Mad Auntie
 url=http://magiccards.info/query?q=%21mad%20auntie
 image=http://mtgimage.com/card/mad%20auntie.jpg
-value=3.952
+value=3.955
 rarity=R
 type=Creature
 subtype=Goblin,Shaman

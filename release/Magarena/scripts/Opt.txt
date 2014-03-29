@@ -1,7 +1,7 @@
 name=Opt
 url=http://magiccards.info/query?q=%21opt
 image=http://mtgimage.com/card/opt.jpg
-value=3.024
+value=4.158
 rarity=C
 type=Instant
 cost={U}

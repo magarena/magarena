@@ -1,7 +1,7 @@
 name=Nyxborn Wolf
 url=http://magiccards.info/query?q=%21nyxborn%20wolf
 image=http://mtgimage.com/card/nyxborn%20wolf.jpg
-value=2.580
+value=2.596
 rarity=C
 type=Enchantment,Creature
 subtype=Wolf

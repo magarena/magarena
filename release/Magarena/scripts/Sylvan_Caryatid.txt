@@ -1,7 +1,7 @@
 name=Sylvan Caryatid
 url=http://magiccards.info/query?q=%21sylvan%20caryatid
 image=http://mtgimage.com/card/sylvan%20caryatid.jpg
-value=3.589
+value=3.609
 rarity=R
 type=Creature
 subtype=Plant

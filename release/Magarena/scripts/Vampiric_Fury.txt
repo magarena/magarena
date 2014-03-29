@@ -1,7 +1,7 @@
 name=Vampiric Fury
 url=http://magiccards.info/query?q=%21vampiric%20fury
 image=http://mtgimage.com/card/vampiric%20fury.jpg
-value=3.532
+value=3.521
 rarity=C
 type=Instant
 cost={1}{R}

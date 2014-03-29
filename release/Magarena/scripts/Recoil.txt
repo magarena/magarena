@@ -1,7 +1,7 @@
 name=Recoil
 url=http://magiccards.info/query?q=%21recoil
 image=http://mtgimage.com/card/recoil.jpg
-value=4.482
+value=4.271
 rarity=C
 type=Instant
 cost={1}{U}{B}

@@ -1,7 +1,7 @@
 name=Rath's Edge
 url=http://magiccards.info/query?q=%21rath%27s%20edge
 image=http://mtgimage.com/card/rath%27s%20edge.jpg
-value=2.541
+value=2.590
 rarity=R
 type=Legendary,Land
 ability=tap add mana {1};cost {4},{T},Sacrifice a land:SN deals 1 damage to target creature or player.

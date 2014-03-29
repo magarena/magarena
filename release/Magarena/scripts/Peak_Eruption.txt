@@ -1,7 +1,7 @@
 name=Peak Eruption
 url=http://www.magiccards.info/query?q=%21peak%20eruption
 image=http://mtgimage.com/card/peak%20eruption.jpg
-value=3.31
+value=3.269
 rarity=U
 type=Sorcery
 cost={2}{R}

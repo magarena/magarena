@@ -1,7 +1,7 @@
 name=Faerie Swarm
 url=http://magiccards.info/query?q=%21faerie%20swarm
 image=http://mtgimage.com/card/faerie%20swarm.jpg
-value=3.024
+value=2.964
 rarity=U
 type=Creature
 subtype=Faerie

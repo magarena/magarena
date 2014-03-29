@@ -1,7 +1,7 @@
 name=Howl of the Night Pack
 url=http://magiccards.info/query?q=%21howl%20of%20the%20night%20pack
 image=http://mtgimage.com/card/howl%20of%20the%20night%20pack.jpg
-value=2.771
+value=2.895
 rarity=U
 type=Sorcery
 cost={6}{G}

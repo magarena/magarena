@@ -1,7 +1,7 @@
 name=Giant Spider
 url=http://magiccards.info/query?q=%21giant%20spider
 image=http://mtgimage.com/card/giant%20spider.jpg
-value=3.340
+value=3.327
 ability=reach
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Thresher Beast
 url=http://magiccards.info/query?q=%21thresher%20beast
 image=http://mtgimage.com/card/thresher%20beast.jpg
-value=4.058
+value=3.944
 rarity=C
 type=Creature
 subtype=Beast

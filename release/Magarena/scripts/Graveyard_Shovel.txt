@@ -1,7 +1,7 @@
 name=Graveyard Shovel
 url=http://magiccards.info/query?q=%21graveyard%20shovel
 image=http://mtgimage.com/card/graveyard%20shovel.jpg
-value=1.904
+value=1.906
 rarity=U
 type=Artifact
 cost={2}

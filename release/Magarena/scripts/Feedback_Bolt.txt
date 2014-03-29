@@ -1,7 +1,7 @@
 name=Feedback Bolt
 url=http://magiccards.info/query?q=%21feedback%20bolt
 image=http://mtgimage.com/card/feedback%20bolt.jpg
-value=1.854
+value=3.117
 removal=3
 rarity=U
 type=Instant

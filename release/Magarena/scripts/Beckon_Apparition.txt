@@ -1,7 +1,7 @@
 name=Beckon Apparition
 url=http://magiccards.info/query?q=%21beckon%20apparition
 image=http://mtgimage.com/card/beckon%20apparition.jpg
-value=4.034
+value=4.067
 rarity=C
 type=Instant
 cost={W/B}

@@ -1,7 +1,7 @@
 name=Goblin Roughrider
 url=http://magiccards.info/query?q=%21goblin%20roughrider
 image=http://mtgimage.com/card/goblin%20roughrider.jpg
-value=2.964
+value=2.914
 rarity=C
 type=Creature
 subtype=Goblin,Knight

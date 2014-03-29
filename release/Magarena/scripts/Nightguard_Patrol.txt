@@ -1,7 +1,7 @@
 name=Nightguard Patrol
 url=http://magiccards.info/query?q=%21nightguard%20patrol
 image=http://mtgimage.com/card/nightguard%20patrol.jpg
-value=2.851
+value=2.854
 ability=first strike;vigilance
 rarity=C
 type=Creature

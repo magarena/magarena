@@ -1,7 +1,7 @@
 name=Spectral Rider
 url=http://magiccards.info/query?q=%21spectral%20rider
 image=http://mtgimage.com/card/spectral%20rider.jpg
-value=3.831
+value=3.833
 rarity=U
 type=Creature
 subtype=Spirit,Knight

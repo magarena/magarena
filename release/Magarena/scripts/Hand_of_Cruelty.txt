@@ -1,7 +1,7 @@
 name=Hand of Cruelty
 url=http://magiccards.info/query?q=%21hand%20of%20cruelty
 image=http://mtgimage.com/card/hand%20of%20cruelty.jpg
-value=4.210
+value=3.933
 rarity=U
 type=Creature
 subtype=Human,Samurai

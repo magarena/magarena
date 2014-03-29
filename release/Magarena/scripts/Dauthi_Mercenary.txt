@@ -1,7 +1,7 @@
 name=Dauthi Mercenary
 url=http://magiccards.info/query?q=%21dauthi%20mercenary
 image=http://mtgimage.com/card/dauthi%20mercenary.jpg
-value=4.042
+value=4.041
 rarity=U
 type=Creature
 subtype=Dauthi,Knight,Mercenary

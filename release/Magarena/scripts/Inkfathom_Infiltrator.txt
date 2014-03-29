@@ -1,7 +1,7 @@
 name=Inkfathom Infiltrator
 url=http://magiccards.info/query?q=%21inkfathom%20infiltrator
 image=http://mtgimage.com/card/inkfathom%20infiltrator.jpg
-value=4.070
+value=3.989
 rarity=U
 type=Creature
 subtype=Merfolk,Rogue

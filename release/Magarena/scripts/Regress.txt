@@ -1,7 +1,7 @@
 name=Regress
 url=http://magiccards.info/query?q=%21regress
 image=http://mtgimage.com/card/regress.jpg
-value=2.667
+value=2.665
 rarity=C
 type=Instant
 cost={2}{U}

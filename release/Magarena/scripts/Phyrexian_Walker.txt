@@ -1,7 +1,7 @@
 name=Phyrexian Walker
 url=http://magiccards.info/query?q=%21phyrexian%20walker
 image=http://mtgimage.com/card/phyrexian%20walker.jpg
-value=4.463
+value=4.397
 rarity=C
 type=Artifact,Creature
 subtype=Construct

@@ -1,7 +1,7 @@
 name=Primordial Hydra
 url=http://magiccards.info/query?q=%21primordial%20hydra
 image=http://mtgimage.com/card/primordial%20hydra.jpg
-value=4.176
+value=4.193
 rarity=M
 type=Creature
 subtype=Hydra

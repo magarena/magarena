@@ -1,7 +1,7 @@
 name=Snapcaster Mage
 url=http://magiccards.info/query?q=%21snapcaster%20mage
 image=http://mtgimage.com/card/snapcaster%20mage.jpg
-value=3.723
+value=4.354
 rarity=R
 type=Creature
 subtype=Human,Wizard

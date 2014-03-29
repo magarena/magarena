@@ -1,7 +1,7 @@
 name=Hunting Pack
 url=http://magiccards.info/query?q=%21hunting%20pack
 image=http://mtgimage.com/card/hunting%20pack.jpg
-value=3.667
+value=3.680
 rarity=U
 type=Instant
 cost={5}{G}{G}

@@ -1,7 +1,7 @@
 name=Dovescape
 url=http://magiccards.info/query?q=%21dovescape
 image=http://mtgimage.com/card/dovescape.jpg
-value=4.145
+value=4.068
 rarity=R
 type=Enchantment
 cost={3}{W/U}{W/U}{W/U}

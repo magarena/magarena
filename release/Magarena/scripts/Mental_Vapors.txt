@@ -1,7 +1,7 @@
 name=Mental Vapors
 url=http://magiccards.info/query?q=%21mental%20vapors
 image=http://mtgimage.com/card/mental%20vapors.jpg
-value=2.367
+value=2.415
 rarity=U
 type=Sorcery
 cost={3}{B}

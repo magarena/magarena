@@ -1,7 +1,7 @@
 name=Phyresis
 url=http://magiccards.info/query?q=%21phyresis
 image=http://mtgimage.com/card/phyresis.jpg
-value=3.335
+value=3.341
 rarity=C
 type=Enchantment
 subtype=Aura

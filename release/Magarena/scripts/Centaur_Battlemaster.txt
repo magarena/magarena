@@ -1,7 +1,7 @@
 name=Centaur Battlemaster
 url=http://magiccards.info/query?q=%21centaur%20battlemaster
 image=http://mtgimage.com/card/centaur%20battlemaster.jpg
-value=3.472
+value=3.482
 rarity=U
 type=Creature
 subtype=Centaur,Warrior

@@ -1,7 +1,7 @@
 name=Opposition
 url=http://www.magiccards.info/query?q=%21opposition
 image=http://mtgimage.com/card/opposition.jpg
-value=4.452
+value=4.462
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

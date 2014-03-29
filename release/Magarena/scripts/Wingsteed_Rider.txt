@@ -1,7 +1,7 @@
 name=Wingsteed Rider
 url=http://magiccards.info/query?q=%21wingsteed%20rider
 image=http://mtgimage.com/card/wingsteed%20rider.jpg
-value=3.530
+value=3.559
 rarity=C
 type=Creature
 subtype=Human,Knight

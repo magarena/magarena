@@ -1,7 +1,7 @@
 name=Hedron Crab
 url=http://magiccards.info/query?q=%21hedron%20crab
 image=http://mtgimage.com/card/hedron%20crab.jpg
-value=4.320
+value=4.214
 rarity=U
 type=Creature
 subtype=Crab

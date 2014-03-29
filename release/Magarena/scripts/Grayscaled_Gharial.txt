@@ -1,7 +1,7 @@
 name=Grayscaled Gharial
 url=http://magiccards.info/query?q=%21grayscaled%20gharial
 image=http://mtgimage.com/card/grayscaled%20gharial.jpg
-value=2.582
+value=2.627
 ability=islandwalk
 rarity=C
 type=Creature

@@ -1,7 +1,7 @@
 name=Memory Erosion
 url=http://magiccards.info/query?q=%21memory%20erosion
 image=http://mtgimage.com/card/memory%20erosion.jpg
-value=2.792
+value=2.806
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

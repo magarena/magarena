@@ -1,7 +1,7 @@
 name=Temple of Enlightenment
 url=http://magiccards.info/query?q=%21temple%20of%20enlightenment
 image=http://mtgimage.com/card/temple%20of%20enlightenment.jpg
-value=3.760
+value=3.875
 rarity=R
 type=Land
 mana=w3u3

@@ -1,7 +1,7 @@
 name=Fulminator Mage
 url=http://magiccards.info/query?q=%21fulminator%20mage
 image=http://mtgimage.com/card/fulminator%20mage.jpg
-value=4.063
+value=4.019
 rarity=R
 type=Creature
 subtype=Elemental,Shaman

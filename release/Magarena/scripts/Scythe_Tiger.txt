@@ -1,7 +1,7 @@
 name=Scythe Tiger
 url=http://magiccards.info/query?q=%21scythe%20tiger
 image=http://mtgimage.com/card/scythe%20tiger.jpg
-value=3.788
+value=3.795
 rarity=C
 type=Creature
 subtype=Cat

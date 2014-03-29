@@ -1,7 +1,7 @@
 name=Wall of Blossoms
 url=http://magiccards.info/query?q=%21wall%20of%20blossoms
 image=http://mtgimage.com/card/wall%20of%20blossoms.jpg
-value=4.310
+value=4.333
 rarity=U
 type=Creature
 subtype=Plant,Wall

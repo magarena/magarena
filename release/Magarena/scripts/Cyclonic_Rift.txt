@@ -1,7 +1,7 @@
 name=Cyclonic Rift
 url=http://magiccards.info/query?q=%21cyclonic%20rift
 image=http://mtgimage.com/card/cyclonic%20rift.jpg
-value=4.034
+value=4.043
 rarity=R
 type=Instant
 cost={1}{U}

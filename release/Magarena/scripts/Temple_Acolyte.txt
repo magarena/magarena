@@ -1,7 +1,7 @@
 name=Temple Acolyte
 url=http://magiccards.info/query?q=%21temple%20acolyte
 image=http://mtgimage.com/card/temple%20acolyte.jpg
-value=3.548
+value=3.531
 rarity=C
 type=Creature
 subtype=Human,Cleric

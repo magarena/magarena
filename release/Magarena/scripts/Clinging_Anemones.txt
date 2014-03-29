@@ -1,7 +1,7 @@
 name=Clinging Anemones
 url=http://magiccards.info/query?q=%21clinging%20anemones
 image=http://mtgimage.com/card/clinging%20anemones.jpg
-value=2.211
+value=2.246
 rarity=C
 type=Creature
 subtype=Jellyfish

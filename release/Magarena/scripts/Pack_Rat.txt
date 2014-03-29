@@ -1,7 +1,7 @@
 name=Pack Rat
 url=http://magiccards.info/query?q=%21pack%20rat
 image=http://mtgimage.com/card/pack%20rat.jpg
-value=4.035
+value=4.021
 rarity=R
 type=Creature
 subtype=Rat
