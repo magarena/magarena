@@ -28,38 +28,6 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    SacrificeArtifact() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice an artifact");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ARTIFACT);
-        }
-    },
-    SacrificeEnchantment() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice an enchantment");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ENCHANTMENT);
-        }
-    },
-    SacrificeAura() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice an Aura");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_AURA);
-        }
-    },
-    SacrificeCreature() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a creature");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE);
-        }
-    },
     SacrificeAnotherCreature() {
         public boolean accept(final String cost) {
             return cost.equals("Sacrifice another creature");
@@ -77,140 +45,13 @@ public enum MagicCostEvent {
             );
         }
     },
-    SacrificeGoblin() {
+    SacrificeChosen() {
         public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Goblin");
+            return cost.startsWith("Sacrifice ");
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_GOBLIN);
-        }
-    },
-    SacrificeSaproling() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Saproling");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAPROLING);
-        }
-    },
-    SacrificeBeast() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Beast");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BEAST);
-        }
-    },
-    SacrificeLand() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a land");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_LAND);
-        }
-    },
-    SacrificeForest() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Forest");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_FOREST);
-        }
-    },
-    SacrificeMountain() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Mountain");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_MOUNTAIN);
-        }
-    },
-    SacrificeSwamp() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Swamp");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SWAMP);
-        }
-    },
-    SacrificeElf() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice an Elf");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELF);
-        }
-    },
-    SacrificeBat() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Bat");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_BAT);
-        }
-    },
-    SacrificeSamurai() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Samurai");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SAMURAI);
-        }
-    },
-    SacrificeSoldier() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Soldier");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_SOLDIER);
-        }
-    },
-    SacrificeCleric() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Cleric");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC);
-        }
-    },
-    SacrificeHuman() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Human");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_HUMAN);
-        }
-    },
-    SacrificeElemental() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice an Elemental");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ELEMENTAL);
-        }
-    },
-    SacrificeWall() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Wall");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_WALL);
-        }
-    },
-    SacrificeZombie() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a Zombie");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source, new MagicTargetChoice("a Zombie to sacrifice"));
-        }
-    },
-    SacrificePermanent() {
-        public boolean accept(final String cost) {
-            return cost.equals("Sacrifice a permanent");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_PERMANENT);
+            final String chosen = cost.replace("Sacrifice ", "") + " to sacrifice";
+            return new MagicSacrificePermanentEvent(source, new MagicTargetChoice(chosen));
         }
     },
     DiscardCard1() {
@@ -331,44 +172,13 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    BounceLand() {
+    BounceChosen() {
         public boolean accept(final String cost) {
-            return cost.equals("Return a land you control to its owner's hand");
+            return cost.startsWith("Return ") && cost.endsWith(" to its owner's hand");
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.LAND_YOU_CONTROL);
-        }
-    },
-    BounceBasicLand() {
-        public boolean accept(final String cost) {
-            return cost.equals("Return a basic land you control to its owner's hand");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.TARGET_BASIC_LAND_YOU_CONTROL);
-        }
-    },
-    BounceIsland() {
-        public boolean accept(final String cost) {
-            return cost.equals("Return an Island you control to its owner's hand");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.ISLAND_YOU_CONTROL);
-        }
-    },
-    BounceForest() {
-        public boolean accept(final String cost) {
-            return cost.equals("Return a Forest you control to its owner's hand");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.FOREST_YOU_CONTROL);
-        }
-    },
-    BounceCreature() {
-        public boolean accept(final String cost) {
-            return cost.equals("Return a creature you control to its owner's hand");
-        }
-        public MagicEvent toEvent(final String cost, final MagicSource source) {
-            return new MagicBounceChosenPermanentEvent(source, MagicTargetChoice.CREATURE_YOU_CONTROL);
+            final String chosen = cost.replace("Return ", "").replace(" to its owner's hand", "");
+            return new MagicBounceChosenPermanentEvent(source, new MagicTargetChoice(chosen));
         }
     },
     RemoveCounter() {
@@ -423,17 +233,11 @@ public enum MagicCostEvent {
     }
     
     public static final MagicCostEvent build(final String cost) {
-        final String cleanCost=capitalize(cost.replaceAll("\\.$",""));
         for (final MagicCostEvent rule : values()) {
-            if (rule.accept(cleanCost)) {
+            if (rule.accept(cost)) {
                 return rule;
             }
         }
         throw new RuntimeException("Unable to match " + cost + " to a rule");
     }
-    
-    private static String capitalize(final String text) {
-        return Character.toUpperCase(text.charAt(0)) + text.substring(1);
-    }
-    
 }

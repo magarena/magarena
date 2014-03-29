@@ -12,7 +12,7 @@ public class MagicMatchedCostEvent {
     private final MagicCostEvent costEvent;
 
     public MagicMatchedCostEvent(final String aCost) {
-        cost = aCost;
+        cost = capitalize(aCost.replaceAll("\\.$",""));
         costEvent = MagicCostEvent.build(cost);
     }
 
@@ -31,5 +31,9 @@ public class MagicMatchedCostEvent {
             matched.add(new MagicMatchedCostEvent(cost));
         }
         return matched;
+    }
+    
+    private static String capitalize(final String text) {
+        return Character.toUpperCase(text.charAt(0)) + text.substring(1);
     }
 }
