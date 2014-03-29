@@ -63,6 +63,7 @@ public class MagicTargetFilterFactory {
         single.put("black creature you control", TARGET_BLACK_CREATURE_YOU_CONTROL);
         single.put("non-Angel creature you control", TARGET_NON_ANGEL_CREATURE_YOU_CONTROL);
         single.put("non-Demon creature", TARGET_NON_DEMON);
+        single.put("non-Zombie creature", TARGET_NONZOMBIE_CREATURE);
         single.put("noncreature", TARGET_NONCREATURE);
         single.put("noncreature permanent", TARGET_NONCREATURE);
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
