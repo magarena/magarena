@@ -1,0 +1,12 @@
+name=Shivan Wumpus
+url=http://magiccards.info/pc/en/121.html
+image=http://mtgimage.com/card/shivan%20wumpus.jpg
+value=3.890
+rarity=R
+type=Creature
+subtype=Beast
+cost={3}{R}
+pt=6/6
+ability=trample
+timing=main
+requires_groovy_code=Argothian Wurm
