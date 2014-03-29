@@ -1,0 +1,10 @@
+name=Mob Justice
+url=http://magiccards.info/sh/en/90.html
+image=http://mtgimage.com/card/mob%20justice.jpg
+value=1.854
+removal=3
+rarity=C
+type=Sorcery
+cost={1}{R}
+timing=removal
+requires_groovy_code
