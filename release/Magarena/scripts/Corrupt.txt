@@ -2,8 +2,9 @@ name=Corrupt
 url=http://magiccards.info/query?q=%21corrupt
 image=http://mtgimage.com/card/corrupt.jpg
 value=4.145
+removal=3
 rarity=U
 type=Sorcery
 cost={5}{B}
-timing=main
+timing=removal
 requires_groovy_code

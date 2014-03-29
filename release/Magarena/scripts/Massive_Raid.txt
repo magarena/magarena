@@ -1,0 +1,10 @@
+name=Massive Raid
+url=http://magiccards.info/gtc/en/100.html
+image=http://mtgimage.com/card/massive%20raid.jpg
+value=2.854
+removal=3
+rarity=C
+type=Instant
+cost={1}{R}{R}
+timing=removal
+requires_groovy_code
