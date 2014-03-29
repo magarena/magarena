@@ -8,7 +8,10 @@ Advent of the Wurm
 Advocate of the Beast
 Aerial Maneuver
 Aerial Predation
+Aerie Worshippers
 AEtherize
+Agent of Horizons
+Agent of the Fates
 Agoraphobia
 Air Servant
 Ajani, Caller of the Pride
@@ -18,11 +21,14 @@ Akroan Hoplite
 Akroan Phalanx
 Akroan Skyguard
 Altar's Reap
+Anax and Cymede
 Angelic Edict
 Angelic Wall
 Anger of the Gods
 Annihilating Fire
+Annul
 Anvilwrought Raptor
+Aqueous Form
 Aquus Steed
 Arbor Colossus
 Archaeomancer
@@ -34,6 +40,7 @@ Armored Wolf-Rider
 Armory Guard
 Arrest
 Arrows of Justice
+Artificer's Hex
 Ascended Lawmage
 Ashen Rider
 Aspect of Hydra
@@ -67,6 +74,7 @@ Biomass Mutation
 Blessing
 Blightcaster
 Blind Obedience
+Blistercoil Weird
 Blood Bairn
 Blood Baron of Vizkopa
 Blood Crypt
@@ -88,6 +96,7 @@ Boros Mastiff
 Boros Reckoner
 Bramblecrush
 Brave the Elements
+Breaching Hippocamp
 Breeding Pool
 Briarpack Alpha
 Brimaz, King of Oreskos
@@ -103,6 +112,7 @@ Capashen Knight
 Carnival Hellsteed
 Cartel Aristocrat
 Catacomb Slug
+Cavalry Pegasus
 Cavern Lampad
 Celestial Archon
 Celestial Flare
@@ -115,6 +125,7 @@ Charging Badger
 Charging Griffin
 Chemister's Trick
 Child of Night
+Chorus of the Tides
 Chosen by Heliod
 Chromanticore
 Chromatic Lantern
@@ -128,12 +139,18 @@ Cobblebrute
 Codex Shredder
 Collective Blessing
 Concordia Pegasus
+Congregate
 Coral Merfolk
+Corpse Blockade
+Corpse Hauler
+Corrupt
 Counterflux
 Coursers' Accord
 Crackling Triton
 Cremate
 Crocanura
+Crosstown Courier
+Crowned Ceratok
 Cyclonic Rift
 Cyclops of One-Eyed Pass
 Daggerdrome Imp
@@ -155,11 +172,16 @@ Debtor's Pulpit
 Decorated Griffin
 Deepwater Hypnotist
 Demolish
+Desecration Demon
+Destructive Revelry
+Detention Sphere
 Deviant Glee
+Devour Flesh
 Diabolic Tutor
 Dimir Cluestone
 Dimir Guildgate
 Dimir Keyrune
+Dinrova Horror
 Disciple of the Old Ways
 Dismiss into Dream
 Dispel
@@ -168,6 +190,7 @@ Dissolve
 Divination
 Divine Favor
 Divine Verdict
+Domestication
 Doom Blade
 Downsize
 Dragon Egg
@@ -181,6 +204,7 @@ Dryad Militant
 Duskmantle Guildmage
 Dutiful Thrull
 Dynacharge
+Eater of Hope
 Electrickery
 Elite Skirmisher
 Elixir of Immortality
@@ -201,12 +225,15 @@ Evangel of Heliod
 Excoriate
 Experiment One
 Explosive Impact
+Eye Gouge
 Eyes in the Skies
 Fabled Hero
 Fade into Antiquity
+Faerie Impostor
 Fanatic of Xenagos
 Fatal Fumes
 Fate Unraveler
+Felhide Brawler
 Felhide Minotaur
 Fencing Ace
 Feral Animist
@@ -218,10 +245,12 @@ Firemane Avenger
 Fireshrieker
 Flamecast Wheel
 Fleetfeather Sandals
+Fleshmad Steed
 Flitterstep Eidolon
 Fog
 Forced Adaptation
 Forest
+Forlorn Pseudamma
 Forsaken Drifters
 Foundry Street Denizen
 Frenzied Tilling
@@ -229,6 +258,7 @@ Frilled Oculus
 Frontline Medic
 Frostburn Weird
 Furious Resistance
+Gainsay
 Galerider Sliver
 Garruk, Caller of Beasts
 Gaze of Granite
@@ -239,11 +269,13 @@ Giant Growth
 Giant Spider
 Gideon, Champion of Justice
 Gift of Orzhova
+Gild
 Gladecover Scout
 Glare of Heresy
 Gnawing Zombie
 Goblin Rally
 Goblin Shortcutter
+God-Favored General
 Godless Shrine
 Golgari Cluestone
 Golgari Guildgate
@@ -252,6 +284,7 @@ Golgari Longlegs
 Gore-House Chainwalker
 Gorgon's Head
 Grave Betrayal
+Gray Merchant of Asphodel
 Great Hart
 Greenside Watcher
 Griffin Dreamfinder
@@ -259,6 +292,7 @@ Griffin Sentinel
 Grim Roustabout
 Griptide
 Grisly Transformation
+Ground Assault
 Groundshaker Sliver
 Growing Ranks
 Gruul Cluestone
@@ -277,6 +311,7 @@ Hellhole Flailer
 Hellraiser Goblin
 Herald of Torment
 Heroes' Reunion
+Hero's Downfall
 High Priest of Penance
 Hive Stirrings
 Hold at Bay
@@ -288,6 +323,7 @@ Horror of the Dim
 Hover Barrier
 Howl of the Night Pack
 Hussar Patrol
+Hythonia the Cruel
 Ill-Tempered Cyclops
 Immortal Servitude
 Impetuous Sunchaser
@@ -302,10 +338,12 @@ Ivy Lane Denizen
 Izzet Cluestone
 Izzet Guildgate
 Judge's Familiar
+Kalonian Hydra
 Kalonian Tusker
 Karametra, God of Harvests
 Karametra's Favor
 Keening Apparition
+Keymaster Rogue
 Kingpin's Pet
 Knightly Valor
 Knight of Obligation
@@ -315,7 +353,9 @@ Kragma Butcher
 Kragma Warcaller
 Kraul Warrior
 Labyrinth Champion
+Lagonna-Band Elder
 Lash of the Whip
+Last Breath
 Last Thoughts
 Launch Party
 Lava Axe
@@ -330,8 +370,10 @@ Lost in a Labyrinth
 Loxodon Smiter
 Lyev Skyknight
 Manaweft Sliver
+Marauding Maulhorn
 Mark of the Vampire
 Martial Law
+Massive Raid
 Master Biomancer
 Master of Diversion
 Master of Waves
@@ -378,9 +420,13 @@ New Prahv Guildmage
 Nightmare
 Nightwing Shade
 Nimbus Naiad
+Nimbus Swimmer
 Nivix Guildmage
+Nullify
 Nylea, God of the Hunt
+Nylea's Disciple
 Nylea's Emissary
+Nylea's Presence
 Nyxborn Eidolon
 Nyxborn Rollicker
 Nyxborn Shieldmate
@@ -401,12 +447,16 @@ Orzhov Guildgate
 Orzhov Keyrune
 Overgrown Tomb
 Pacifism
+Pack Rat
 Paralyzing Grasp
 Paranoid Delusions
+Peak Eruption
 Perilous Shadow
 Phantom General
 Phantom Warrior
+Pharika's Cure
 Pheres-Band Centaurs
+Pheres-Band Raiders
 Pheres-Band Tromper
 Phytoburst
 Pillarfield Ox
@@ -421,7 +471,9 @@ Predatory Sliver
 Prescient Chimera
 Priest of Iroas
 Primal Visitation
+Primeval Bounty
 Progenitor Mimic
+Prowler's Helm
 Psychic Strike
 Purge the Profane
 Purphoros, God of the Forge
@@ -431,6 +483,7 @@ Quag Sickness
 Racecourse Fury
 Rageblood Shaman
 Rage of Purphoros
+Raised by Wolves
 Rakdos Cackler
 Rakdos Cluestone
 Rakdos Drake
@@ -442,6 +495,7 @@ Rakdos Shred-Freak
 Rakdos's Return
 Ranger's Guile
 Ratchet Bomb
+Ray of Dissolution
 Razortip Whip
 Reaper of the Wilds
 Reckless Reveler
@@ -453,9 +507,11 @@ Returned Centaur
 Revoke Existence
 Righteous Authority
 Righteous Charge
+Ring of Three Wishes
 Riot Gear
 Riot Piker
 Risen Sanctuary
+Rise of the Dark Realms
 Rise to the Challenge
 Rod of Ruin
 Rogue's Passage
@@ -469,14 +525,18 @@ Rumbling Baloth
 Runewing
 Ruric Thar, the Unbowed
 Sacred Foundry
+Sanguimancy
 Sanguine Bond
+Satyr Nyx-Smith
 Satyr Rambler
 Savageborn Hydra
+Savage Surge
 Scab-Clan Charger
 Scatter Arc
 Scavenging Ooze
 Scorchwalker
 Scourgemark
+Scourge of Valkas
 Scouring Sands
 Scroll Thief
 Seacoast Drake
@@ -497,6 +557,8 @@ Setessan Battle Priest
 Setessan Griffin
 Setessan Oathsworn
 Setessan Starbreaker
+Shadowborn Apostle
+Shadowborn Demon
 Shadow Slice
 Shambleshark
 Shattering Blow
@@ -513,6 +575,7 @@ Silent Sentinel
 Simic Cluestone
 Simic Guildgate
 Simic Keyrune
+Sip of Hemlock
 Siren of the Fanged Coast
 Siren Song Lyre
 Skarrg Goliath
@@ -524,6 +587,7 @@ Skygames
 Skyknight Legionnaire
 Skylasher
 Skyline Predator
+Skyreaping
 Slaughterhorn
 Slime Molding
 Sliver Construct
@@ -543,6 +607,7 @@ Sphinx's Revelation
 Spike Jester
 Spire Tracer
 Splatter Thug
+Sporemound
 Staff of the Death Magus
 Staff of the Flame Magus
 Staff of the Mind Magus
@@ -557,6 +622,8 @@ Stolen Identity
 Stomping Ground
 Stonefare Crocodile
 Stonehorn Chanter
+Stormbreath Dragon
+Stormcaller of Keranos
 Stratus Walk
 Street Spasm
 Striking Sliver
@@ -587,12 +654,15 @@ Temple of Triumph
 Tenement Crasher
 Teysa, Envoy of Ghosts
 Thassa, God of the Sea
+Thassa's Bounty
 Thassa's Emissary
 Thorncaster Sliver
 Thoughtflare
 Thrill-Kill Assassin
 Thunder Brute
+Thunderous Might
 Thunder Strike
+Tidebinder Mage
 Time Ebb
 Tin Street Market
 Titan of Eternal Fire
@@ -605,6 +675,8 @@ Towering Indrik
 Towering Thunderfist
 Trading Post
 Trained Caracal
+Trained Condor
+Traitorous Instinct
 Transguild Promenade
 Traumatize
 Traveler's Amulet
@@ -619,15 +691,18 @@ Trostani's Judgment
 Trostani's Summoner
 Truefire Paladin
 Two-Headed Cerberus
+Ultimate Price
 Undead Minotaur
 Undercity Plague
 Underworld Connections
 Unflinching Courage
+Unravel the AEther
 Urban Evolution
 Urbis Protector
 Vampire Warlord
 Vandalblast
 Vanguard of Brimaz
+Vanquish the Foul
 Vaporkin
 Varolz, the Scar-Striped
 Vassal Soul
@@ -635,6 +710,7 @@ Vial of Poison
 Viashino Firstblade
 Viashino Shanktail
 Vile Rebirth
+Viper's Kiss
 Vitu-Ghazi Guildmage
 Vizkopa Guildmage
 Voice of Resurgence
@@ -655,13 +731,17 @@ Water Servant
 Watery Grave
 Wayfaring Temple
 Weight of the Underworld
+Whelming Wave
 Wild Celebrants
 Wildwood Rebirth
 Wind Drake
+Windreader Sphinx
 Windstorm
 Wingsteed Rider
+Witches' Eye
 Witchstalker
 Wojek Halberdiers
+Woodborn Behemoth
 Woodlot Crawler
 Worldspine Wurm
 Wrecking Ogre
