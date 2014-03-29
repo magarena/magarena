@@ -321,6 +321,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return !target.isLand();
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_NONLAND_PERMANENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isLand() && target.isController(player);
+        }
+    };
+    
 
     MagicPermanentFilterImpl TARGET_NONLAND_NONTOKEN_PERMANENT=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {

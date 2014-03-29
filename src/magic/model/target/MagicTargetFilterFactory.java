@@ -186,6 +186,7 @@ public class MagicTargetFilterFactory {
         single.put("non-Vampire, non-Werewolf, non-Zombie creature", TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
         single.put("non-Zombie creature you control", TARGET_NON_ZOMBIE_YOU_CONTROL);
         single.put("non-Vampire creature you control", TARGET_NON_VAMPIRE_YOU_CONTROL);
+        single.put("nonland permanent you control", TARGET_NONLAND_PERMANENT_YOU_CONTROL);
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
         single.put("creature card with converted mana cost 2 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
