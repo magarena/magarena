@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Myr
 cost={2}
 pt=1/1
-ability=infect;blocked pump +2/+2
+ability=infect;Whenever SN becomes blocked, it gets +2/+2 until end of turn.
 timing=main
