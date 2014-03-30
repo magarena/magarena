@@ -275,9 +275,9 @@ public enum MagicAbility {
             card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
     },
-    BlockedPump("blocked pump", 10) {
+    BlockedPump("Whenever SN becomes blocked, it gets ", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace("+","").split("/");
+            final String[] pt = arg.replace(" until end of turn.","").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
