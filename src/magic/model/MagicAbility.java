@@ -291,13 +291,21 @@ public enum MagicAbility {
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,true));
         }
     },
-    BlocksOrBlockedPump("blocks or blocked pump", 20) {
+    BlocksOrBlockedPump("Whenever SN blocks or becomes blocked, it gets ", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace("+","").split("/");
+            final String[] pt = arg.replace(" until end of turn.","").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
+        }
+    },
+    BlocksPump("Whenever SN blocks, it gets ", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+            final String[] pt = arg.replace(" until end of turn.","").replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
         }
     },
     ShockLand("As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.", -10) {
