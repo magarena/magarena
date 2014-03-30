@@ -160,7 +160,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("target nonland permanent");
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS = 
-        new MagicTargetChoice("target nonland permanent your opponents control");
+        new MagicTargetChoice("target nonland permanent an opponent controls");
 
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOU_DONT_CONTROL =
         new MagicTargetChoice("target nonland permanent you don't control");
@@ -214,7 +214,7 @@ public class MagicTargetChoice extends MagicChoice {
             MagicTargetChoice.Negative("target artifact, creature, or enchantment");
     
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = 
-        new MagicTargetChoice("target artifact or enchantment your opponents control");
+        new MagicTargetChoice("target artifact or enchantment an opponent controls");
     
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND = 
         new MagicTargetChoice("target artifact, enchantment, or land");
@@ -232,7 +232,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("target enchantment you control");
     
     public static final MagicTargetChoice TARGET_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = 
-        new MagicTargetChoice("target enchantment your opponents control");
+        new MagicTargetChoice("target enchantment an opponent controls");
     
     public static final MagicTargetChoice NEG_TARGET_ENCHANTMENT = 
         MagicTargetChoice.Negative("target enchantment");
@@ -553,13 +553,13 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("target permanent card with converted mana cost 3 or less from your graveyard");
 
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = 
-        new MagicTargetChoice("target creature card from your opponent's graveyard");
+        new MagicTargetChoice("target creature card from an opponent's graveyard");
 
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD = 
         new MagicTargetChoice("target instant or sorcery card from your graveyard");
 
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = 
-        new MagicTargetChoice("target instant or sorcery card from your opponent's graveyard");
+        new MagicTargetChoice("target instant or sorcery card from an opponent's graveyard");
 
     public static final MagicTargetChoice TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD = 
         new MagicTargetChoice("target enchantment card from your graveyard");
@@ -679,10 +679,10 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("a creature token you control");
 
     public static final MagicTargetChoice PLANESWALKER_YOUR_OPPONENT_CONTROLS = 
-        new MagicTargetChoice("a planeswalker your opponents control");
+        new MagicTargetChoice("a planeswalker an opponent controls");
 
     public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS = 
-        new MagicTargetChoice("target creature your opponents control");
+        new MagicTargetChoice("target creature an opponent controls");
 
     public static final MagicTargetChoice TARGET_CREATURE_YOU_DONT_CONTROL = 
         new MagicTargetChoice("target creature you don't control");
@@ -691,7 +691,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("target creature without flying you don't control");
 
     public static final MagicTargetChoice TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS = 
-        new MagicTargetChoice("target artifact your opponents control");
+        new MagicTargetChoice("target artifact an opponent controls");
 
     public static final MagicTargetChoice TARGET_ARTIFACT_YOU_DONT_CONTROL = 
         new MagicTargetChoice("target artifact you don't control");
