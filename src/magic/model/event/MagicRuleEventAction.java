@@ -1096,6 +1096,26 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    Reanimate2(
+            "put (?<choice>[^\\.]*from a graveyard) onto the battlefield under your control\\.",
+            MagicTargetHint.None,
+            MagicGraveyardTargetPicker.PutOntoBattlefield,
+            MagicTiming.Pump,
+            "Return",
+            new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetCard(game,new MagicCardAction() {
+                        public void doAction(final MagicCard card) {
+                            game.doAction(new MagicReanimateAction(
+                                card,
+                                event.getPlayer()
+                            ));
+                        }
+                    });
+                }
+            }
+        ),
     Tap(
         "tap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative,
