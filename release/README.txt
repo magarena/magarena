@@ -105,7 +105,9 @@ woggle
   * effect: Search your library for <chosen> and put it onto the battlefield. Then shuffle your library.
   * effect: Put SN on top of its owner's library.
   * effect: Put <chosen> on top of its owner's library.
+  * effect: Put <chosen card> onto the battlefield under your control.
   * ability: As an additional cost to cast SN, <cost>.
+  * ability: Whenever SN blocks, it gets <pt change> until end of turn.
   * ability: exile at end
   * ability: alt cost <comma separated costs> named <name> - alternate casting cost
   * ability: horsemanship
@@ -179,6 +181,10 @@ woggle
     -> SN enters the battlefield tapped unless you control two or fewer other lands.
   * enters tapped unless
     -> SN enters the battlefield tapped unless you control a <subtype> <subtype>
+  * blocks or blocked pump
+    -> Whenever SN blocks or becomes blocked, it gets <pt change> until end of turn.
+  * blocked pump
+    -> henever SN becomes blocked, it gets <pt change> until end of turn.
 
 - fixed the following bugs:
   * Sandstone Warrior missing first strike
@@ -227,27 +233,27 @@ woggle
 Abjure, Aboshan's Desire, Act of Aggression, Aerie Worshippers,
 Agent of Horizons, Agent of the Fates, Amrou Scout, Amulet of Vigor,
 Anax and Cymede, Annul, Aphotic Wisps, Aqueous Form, Argivian Find,
-Artificer's Hex, Artillerize, Augur of Skulls, Avatar of Discord,
-Barbarian General, Beacon Hawk, Birthing Pod, Black Carriage,
-Blighted Shaman, Blightspeaker, Blistercoil Weird, Bloodfire Colossus,
-Blood Hound, Blue Sun's Zenith, Bog Rats, Borrowing 100,000 Arrows,
-Bramblesnap, Breaching Hippocamp, Call to Heel, Cao Ren, Wei Commander,
-Cateran Brute, Cateran Enforcer, Cateran Kidnappers, Cateran Persuader,
-Cateran Slaver, Cavalry Pegasus, Centaur Chieftain, Cephalid Sage,
-Cerulean Wisps, Chorus of the Tides, Congregate, Controlled Instincts,
-Corpse Blockade, Corpse Hauler, Corrupt, Crack the Earth, Crash,
-Crimson Wisps, Crosstown Courier, Crowned Ceratok, Curfew,
-Curse of Marit Lage, Dakmor Sorceress, Dance of Shadows,
-Darien, King of Kjeldor, Daring Leap, Daze, Deadapult,
-Deathgrip, Deathmark Prelate, Defiant Falcon, Desecration Demon,
-Destructive Flow, Destructive Revelry, Detention Sphere, Devour Flesh,
-Dinrova Horror, Dismember, Divergent Growth, Domestication, Douse,
-Dream Stalker, Dross Harvester, Dwarven Weaponsmith, Eater of Hope,
-Eladamri's Call, Elephant Graveyard, Embargo, Emberwilde Augur,
-Encrust, Energy Flux, Envelop, Ertai, the Corrupted, Extinguish,
-Eye Gouge, Faerie Impostor, Fecundity, Feedback Bolt, Felhide Brawler,
-Fiddlehead Kami, Field Surgeon, Fleshmad Steed, Forlorn Pseudamma,
-Fountain Watch, Frazzle, Gainsay, Gate to Phyrexia, Gerrard's Command,
+Artificer's Hex, Artillerize, Ashen Powder, Augur of Skulls,
+Avatar of Discord, Barbarian General, Beacon Hawk, Birthing Pod,
+Black Carriage, Blighted Shaman, Blightspeaker, Blistercoil Weird,
+Bloodfire Colossus, Blood Hound, Blue Sun's Zenith, Bog Rats,
+Borrowing 100,000 Arrows, Bramblesnap, Breaching Hippocamp,
+Call to Heel, Cao Ren, Wei Commander, Cateran Brute, Cateran Enforcer,
+Cateran Kidnappers, Cateran Persuader, Cateran Slaver, Cavalry Pegasus,
+Centaur Chieftain, Cephalid Sage, Cerulean Wisps, Chorus of the Tides,
+Congregate, Controlled Instincts, Corpse Blockade, Corpse Hauler, Corrupt,
+Crack the Earth, Crash, Crimson Wisps, Crosstown Courier, Crowned Ceratok,
+Curfew, Curse of Marit Lage, Dakmor Sorceress, Dance of Shadows,
+Darien, King of Kjeldor, Daring Leap, Daze, Deadapult, Deathgrip,
+Deathmark Prelate, Defiant Falcon, Desecration Demon, Destructive Flow,
+Destructive Revelry, Detention Sphere, Devour Flesh, Dinrova Horror,
+Dismember, Divergent Growth, Domestication, Douse, Dream Stalker,
+Dross Harvester, Dwarven Weaponsmith, Eater of Hope, Eladamri's Call,
+Elephant Graveyard, Embargo, Emberwilde Augur, Encrust, Energy Flux,
+Envelop, Ertai, the Corrupted, Extinguish, Eye Gouge, Faerie Impostor,
+Fecundity, Feedback Bolt, Felhide Brawler, Fiddlehead Kami, Field Surgeon,
+Fleshmad Steed, Folk of An-Havva, Forlorn Pseudamma, Fountain Watch,
+Frazzle, Gainsay, Gate to Phyrexia, Gerrard's Command, Giant Badger,
 Gift of the Woods, Gild, Glare of Subdual, Gloomdrifter, Gobbling Ooze,
 Goblin Lookout, Goblin Soothsayer, Goblin War Strike, Goblin Wizard,
 God-Favored General, Gray Merchant of Asphodel, Greater Auramancy,
@@ -273,32 +279,35 @@ Peak Eruption, Pentavus, People of the Woods, Perilous Research,
 Perish, Pharika's Cure, Pheres-Band Raiders, Pox, Primeval Bounty,
 Prowler's Helm, Psychosis Crawler, Raised by Wolves, Ramosian Captain,
 Ramosian Commander, Ramosian Sergeant, Ramosian Sky Marshal,
-Rampart Crawler, Rathi Intimidator, Ray of Dissolution, Revelsong Horn,
-Revered Elder, Riding Red Hare, Ring of Evos Isle, Ring of Kalonia,
-Ring of Three Wishes, Ring of Thune, Ring of Valkas, Ring of Xathrid,
-Rise of the Dark Realms, Rising Waters, Royal Decree, Rushwood Elemental,
-Saber Ants, Sanguimancy, Satyr Nyx-Smith, Savage Surge, Scarecrone,
-Scourge of Valkas, Seaside Haven, Selesnya Evangel, Sewerdreg,
-Shadowborn Apostle, Shadowborn Demon, Shivan Wumpus, Shu Cavalry,
+Rampart Crawler, Rathi Intimidator, Ray of Dissolution, Restore,
+Revelsong Horn, Revered Elder, Riding Red Hare, Ring of Evos Isle,
+Ring of Kalonia, Ring of Three Wishes, Ring of Thune, Ring of Valkas,
+Ring of Xathrid, Rise of the Dark Realms, Rising Waters, Royal Decree,
+Royal Trooper, Rushwood Elemental, Saber Ants, Sanguimancy,
+Satyr Nyx-Smith, Savage Surge, Scarecrone, Scourge of Valkas,
+Seaside Haven, Selesnya Evangel, Sewerdreg, Shadowborn Apostle,
+Shadowborn Demon, Shivan Wumpus, Shu Cavalry, Shu Defender,
 Shu Elite Companions, Shu General, Simoon, Simplify, Sip of Hemlock,
 Skyreaping, Slay, Smogsteed Rider, Smoldering Tar, Snapcaster Mage,
-Soulsurge Elemental, Spellskite, Sporemound, Steamclaw, Stonecloaker,
-Stormbreath Dragon, Stormcaller of Keranos, Sun Ce, Young Conquerer,
-Sunken Hope, Sun Quan, Lord of Wu, Svyelunite Priest, Swarm of Rats,
-Telethopter, Teroh's Vanguard, Terrain Generator, Thassa's Bounty,
-Theft of Dreams, Thraben Heretic, Thrashing Wumpus, Threads of Disloyalty,
-Three Visits, Thunderclap, Thunderheads, Thunderous Might,
-Tidebinder Mage, Tidespout Tyrant, Timber Protector, Topan Ascetic,
+Soulsurge Elemental, Spellskite, Sporemound, Steam Blast, Steamclaw,
+Stonecloaker, Stormbreath Dragon, Stormcaller of Keranos,
+Sun Ce, Young Conquerer, Sunken Hope, Sun Quan, Lord of Wu,
+Sustainer of the Realm, Svyelunite Priest, Swarm of Rats, Telethopter,
+Teroh's Vanguard, Terrain Generator, Thassa's Bounty, Theft of Dreams,
+Thraben Heretic, Thrashing Wumpus, Threads of Disloyalty, Three Visits,
+Thunderclap, Thunderheads, Thunderous Might, Tidebinder Mage,
+Tidespout Tyrant, Timber Protector, Topan Ascetic, Town Sentry,
 Trade Caravan, Trained Condor, Traitorous Instinct, Treefolk Seedlings,
-Tremble, Ultimate Price, Undead Slayer, Unravel the AEther, Urza's Rage,
-Vanquish the Foul, Vault Skirge, Venerated Teacher, Vicious Hunger,
-Viper's Kiss, Viridescent Wisps, Volrath's Gardens, Volrath's Stronghold,
-Wand of the Elements, Wei Elite Companions, Wei Night Raiders, Wei Scout,
-Wei Strike Force, Whelming Wave, Wilderness Hypnotist, Windreader Sphinx,
-Witches' Eye, Withered Wretch, Wolf Pack, Woodborn Behemoth,
-Wrath of Marit Lage, Wu Elite Cavalry, Wu Light Cavalry,
-Yellow Scarves Cavalry, Yellow Scarves General, Zektar Shrine Expedition,
-Zhang Fei, Fierce Warrior, Zhang He, Wei General
+Tremble, Ultimate Price, Undead Slayer, Unravel the AEther,
+Urza's Rage, Vanquish the Foul, Vault Skirge, Venerated Teacher,
+Vicious Hunger, Viper's Kiss, Viridescent Wisps, Volrath's Gardens,
+Volrath's Stronghold, Wand of the Elements, Wei Elite Companions,
+Wei Night Raiders, Wei Scout, Wei Strike Force, Whelming Wave,
+Wilderness Hypnotist, Windreader Sphinx, Witches' Eye, Withered Wretch,
+Wolf Pack, Woodborn Behemoth, Wrath of Marit Lage, Wu Elite Cavalry,
+Wu Light Cavalry, Yellow Scarves Cavalry, Yellow Scarves General,
+Zektar Shrine Expedition, Zhang Fei, Fierce Warrior,
+Zhang He, Wei General, Zhao Zilong, Tiger General
 
 Release 1.47 (February 23, 2014)
 ============
