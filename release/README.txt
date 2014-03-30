@@ -62,7 +62,7 @@ Thank you for your support and have fun!
 
 
 
-Release 1.48 (March 29, 2014)
+Release 1.48 (March 30, 2014)
 ============
 includes contributions from:
 a. benedict balbuena
@@ -76,9 +76,11 @@ ShawnieBoy
 tiagoruback
 woggle
 
-- MTCS able to use use all CPU cores for processing simulations
+- MTCS AI able to use use all CPU cores to increase the number of simulations
+  it can run for a given level
 
-- introduce concept of player profiles for both human and AI players
+- introduce concept of player profiles for both human and AI players that are
+  selected when starting a new duel
 
 - preconstructed, custom, or random decks can be selected when starting a new duel
 
@@ -99,8 +101,8 @@ woggle
   * effect: Regenerate <chosen>.
   * effect: Exile <chosen card>.
   * effect: Scry 1.
-  * effect: Search into hand
-  * effect: Search onto battlefield (tapped)
+  * effect: Search your library for <chosen>, reveal it, and put it into your hand. Then shuffle your library.
+  * effect: Search your library for <chosen> and put it onto the battlefield. Then shuffle your library.
   * effect: Put SN on top of its owner's library.
   * effect: Put <chosen> on top of its owner's library.
   * ability: As an additional cost to cast SN, <cost>.
@@ -110,7 +112,7 @@ woggle
   * ability: cannot be blocked by walls
   * ability: cannot be blocked except by walls
 
-- changed the following card script (old -> new):
+- changed the following card script syntax (old -> new):
   * pay <comma separate costs>: <effect>
     -> cost <comma separate costs>: <effect>
   * combat damage player grow 
@@ -179,47 +181,47 @@ woggle
     -> SN enters the battlefield tapped unless you control a <subtype> <subtype>
 
 - fixed the following bugs:
-  * missing first strike on Sandstone Warrior
+  * Sandstone Warrior missing first strike
   * correct broken links to token images
   * Desecration Demon's trigger should start at begin of each combat
-  * add missing delayed trigger for Ray of Command
+  * Ray of Command missing delayed trigger
   * undo enchant change control does not remove the card
   * "you have no maximum hand size" also causes opponent to have no maximum hand size
   * Nefarox missing flying
   * destroy at end of combat should only apply this turn
   * Rings did not put +1/+1 counter on equipped creature
   * Destructive Revelry to deal damage, not lose life
-  * AI life reduced to -1287867 causes Next Duel button to disappear
+  * life reduced to -1287867 causes Next Duel button to disappear
   * Mournful Zombie ability missing tap cost
-  * missing Tap ability for Cluestones
+  * Cluestones missing tap ability
   * Hunter of Eyeblights not targeting
-  * deck strength tester only playing best of 100 games instead of total 100 games.
+  * deck strength tester only playing best of 100 games instead of total 100 games
   * Garruk's emblem not triggering
-  * Fix Coral Helm url ref
+  * Coral Helm has wrong url in card script
   * correct mapping from text to image for +1/+1 and -1/-1 counters
   * correct name of Gold token
-  * fix for issue 446: Ability Mono always causing crash. "Ability Mono" generates an initial deck of colorless cards so there is no "best color" for choosing basic lands. In this case the best color is chosen randomly from one of the five colors.
-  * Fix issue 515 Has target creature in log
-  * Add check during resolution for Evolve (fix issue 522)
-  * Add ability to Domineer 'fix issue 514'
-  * fix mill parser to support "top card", replace "top a card" with "top card"
-  * Fix issue 550
-  * Fix Issue 544 - Format issue
-  * Fix Issue 540 - Attacking Walls
-  * Fix Issue 537 - Swap effects of Consign to Dream
-  * Fix Issue 531 - Triumph of Cruelty now views ties
-  * Fix Issue 535 - Freyalise's Charm mana prompt
-  * Fix targeting for Wisps
-  * Fix SN reference for PN may... sacrifice SN (fix Issue 527)
-  * Add missing multikicker to Spell Contortion (fix issue 524)
-  * Dakkon Blackblade image fix
-  * Fix issue 554 and fix other errors
+  * mill effect support "top card"
+  * ability mono deck generator always causing crash (issue 446)
+  * Dominus of Fealty's trigger says creature instead of permanent (issue 515)
+  * Evolve missing check on resolution (issue 522)
+  * Domineer missing ability(issue 514)
+  * Llanowar Sentinel's trigger description missing space(issue 550)
+  * Immortal Servitude's spell description missing space(issue 550)
+  * Walls missing defender (540)
+  * Consign to Dream's effect was swapped (issue 547)
+  * Triumph of Cruelty did not account for ties (issue 531)
+  * Freyalise's Charm showing incorrect mana cost in description (issue 535)
+  * improve targeting for Crimson Wisps
+  * SN showing in may choice instead of name of source (issue 527)
+  * Spell Contortion missing multikicker (issue 524)
+  * Dakkon Blackblade had wrong card image
+  * Sheltering Word should only target creature you control (issue 554)
   * correct color, image for 2/1 white Cleric enchantment creature token
-  * fix Haazda Snare Squad should only trigger when it attacks
-  * Fix issue 557 - Sadistic Glee only triggered with your creatures
-  * fix {YourUpkeep} condition behaving as {Sorcery} condition (issue 556)
-  * fixed unleash description missing result of choice (issue 562)
-  * Fix issue 564 - Missing space between 'you' and 'control' when converted to PN
+  * Haazda Snare Squad should only trigger when it attacks
+  * Sadistic Glee only triggered with your creatures (issue 557)
+  * {YourUpkeep} condition behaving as {Sorcery} condition (issue 556)
+  * unleash description missing result of choice (issue 562)
+  * missing space between 'you' and 'control' when converted to PN
 
 - added the following cards:
 Abjure, Aboshan's Desire, Act of Aggression, Aerie Worshippers,
