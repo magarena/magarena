@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "Return target artifact or creature card\$ from a graveyard onto the battlefield under your control. "+
+                "Put target artifact or creature card from a graveyard\$ onto the battlefield under PN's control. "+
                 "Shuffle SN into its owner's library."
             );
         }

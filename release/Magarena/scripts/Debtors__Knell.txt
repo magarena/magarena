@@ -5,5 +5,5 @@ value=4.134
 rarity=R
 type=Enchantment
 cost={4}{W/B}{W/B}{W/B}
-ability=At the beginning of your upkeep, return target creature card from a graveyard to the battlefield. 
+ability=At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control. 
 timing=enchantment

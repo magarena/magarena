@@ -46,7 +46,7 @@
                 source,
                 this,
                 "Put all creature cards from all graveyards onto the " +
-                "battlefield under your control. They're black Zombies " +
+                "battlefield under PN's control. They're black Zombies " +
                 "in addition to their other colors and types."
             );
         }

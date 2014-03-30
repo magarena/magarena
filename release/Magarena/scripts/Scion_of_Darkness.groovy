@@ -13,7 +13,7 @@
                         MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
                     MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
-                    "Return target creature card\$ from ${target.toString()}'s graveyard to the battlefield under PN's control."
+                    "PN may put target creature card from ${target.toString()}'s graveyard\$ onto the battlefield under PN's control."
                 ):
                 MagicEvent.NONE;
         }

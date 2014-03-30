@@ -9,7 +9,7 @@
                     new MagicMayChoice(),
                     otherPermanent.getCard(),
                     this,
-                    "PN may\$ pay 3 life. If he or she does not, return RN to the battlefield under your control."
+                    "PN may\$ pay 3 life. If PN does not, put RN onto the battlefield under your control."
                 ):
                 MagicEvent.NONE;
         }

@@ -54,7 +54,7 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
             return new MagicEvent(
                 source,
                 this,
-                "Put all creature cards from all graveyards onto the battlefield under your control."
+                "Put all creature cards from all graveyards onto the battlefield under PN's control."
             );
         }
         @Override

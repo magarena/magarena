@@ -15,7 +15,7 @@
                 source,
                 MagicTargetChoice.TARGET_OPPONENT,
                 this,
-                "Return a creature card at random from target opponent's\$ graveyard to the battlefield under your control."
+                "PN chooses a creature card at random from target opponent's\$ graveyard. PN puts that card onto the battlefield under PN's control."
             );
         }
 

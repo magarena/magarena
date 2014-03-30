@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "Put target creature\$ card from a graveyard onto the battlefield under your control. " +
+                "Put target creature card from a graveyard\$ onto the battlefield under PN's control. " +
                 "That creature is a black Zombie in addition to its other colors and types."
             );
         }

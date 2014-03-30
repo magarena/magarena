@@ -5,5 +5,5 @@ value=4.263
 rarity=U
 type=Sorcery
 cost={3}{G}{W}
-effect=return target creature card from a graveyard to the battlefield.
+effect=Put target creature card from a graveyard onto the battlefield under your control.
 timing=main

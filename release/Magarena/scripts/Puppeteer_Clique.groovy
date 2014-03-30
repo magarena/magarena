@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "Put target creature card\$ in an opponent's graveyard onto the battlefield under your control. "+
+                "Put target creature card in an opponent's graveyard\$ onto the battlefield under PN's control. "+
                 "It has haste. At the end of your turn, exile it."
             );
         }
