@@ -47,7 +47,8 @@ public enum MagicCostEvent {
     },
     SacrificeChosen() {
         public boolean accept(final String cost) {
-            return cost.startsWith("Sacrifice ");
+            return cost.startsWith("Sacrifice ") &&
+                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             final String chosen = cost.replace("Sacrifice ", "") + " to sacrifice";
@@ -174,7 +175,8 @@ public enum MagicCostEvent {
     },
     BounceChosen() {
         public boolean accept(final String cost) {
-            return cost.startsWith("Return ") && cost.endsWith(" to its owner's hand");
+            return cost.startsWith("Return ") && cost.endsWith(" to its owner's hand") &&
+                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             final String chosen = cost.replace("Return ", "").replace(" to its owner's hand", "");
