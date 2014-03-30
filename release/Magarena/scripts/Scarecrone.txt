@@ -1,7 +1,7 @@
 name=Scarecrone
 url=http://www.magiccards.info/query?q=%21scarecrone
 image=http://mtgimage.com/card/scarecrone.jpg
-value=4.494
+value=4.482
 rarity=R
 type=Artifact,Creature
 subtype=Scarecrow

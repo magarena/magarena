@@ -3,6 +3,7 @@ Abbey Gargoyles
 Abbey Griffin
 Abbey Matron
 Abhorrent Overlord
+Abjure
 Abomination
 Aboshan's Desire
 Abrupt Decay
@@ -293,6 +294,7 @@ Arrows of Justice
 Artifact Blast
 Artifact Mutation
 Artificer's Hex
+Artillerize
 Artisan of Kozilek
 Ascendant Evincar
 Ascended Lawmage
@@ -542,6 +544,7 @@ Blessing of Leeches
 Blight
 Blightcaster
 Blighted Agent
+Blighted Shaman
 Blight Mamba
 Blightning
 Blight Sickle
@@ -1253,6 +1256,7 @@ Death-Hood Cobra
 Deathknell Kami
 Deathless Angel
 Deathmark
+Deathmark Prelate
 Death Mutation
 Deathpact Angel
 Death Pits of Rath
@@ -1633,6 +1637,7 @@ Enchantress's Presence
 Enclave Cryptologist
 Enclave Elite
 Encroaching Wastes
+Encrust
 Endless Cockroaches
 Endless Ranks of the Dead
 Endless Wurm
@@ -1660,6 +1665,7 @@ Erdwal Ripper
 Erebos, God of the Dead
 Eron the Relentless
 Erratic Portal
+Ertai, the Corrupted
 Ertai, Wizard Adept
 Escape Artist
 Escaped Null
@@ -2134,6 +2140,7 @@ Gnarlid Pack
 Gnat Alley Creeper
 Gnathosaur
 Gnawing Zombie
+Gobbling Ooze
 Gobhobbler Rats
 Goblin Arsonist
 Goblin Artillery
@@ -2165,6 +2172,7 @@ Goblin Hero
 Goblin King
 Goblin Lackey
 Goblin Legionnaire
+Goblin Lookout
 Goblin Lore
 Goblin Marshal
 Goblin Masons
@@ -2186,6 +2194,7 @@ Goblin Sharpshooter
 Goblin Shortcutter
 Goblin Sky Raider
 Goblin Sledder
+Goblin Soothsayer
 Goblin Spelunkers
 Goblin Striker
 Goblin Trenches
@@ -2317,6 +2326,7 @@ Guan Yu's 1,000-Li March
 Guard Duty
 Guard Gomazoa
 Guardian Lions
+Guardian of Cloverdell
 Guardian of Solitude
 Guardian of the Guildpact
 Guardian Seraph
@@ -2610,6 +2620,7 @@ Infantry Veteran
 Infected Vermin
 Infectious Host
 Infernal Medusa
+Infernal Tribute
 Inferno Elemental
 Infest
 Infested Roothold
@@ -3115,6 +3126,7 @@ Magistrate's Veto
 Magma Rift
 Magma Sliver
 Magmatic Force
+Magmaw
 Magnetic Flux
 Magnify
 Magnivore
@@ -3456,6 +3468,7 @@ Nath of the Gilt-Leaf
 Nath's Buffoon
 Natural End
 Naturalize
+Natural Order
 Natural Spring
 Nature's Claim
 Nature's Cloak
@@ -3575,6 +3588,7 @@ Null Champion
 Nullify
 Nulltread Gargantuan
 Numai Outcast
+Numbing Dose
 Nurturer Initiate
 Nut Collector
 Nylea, God of the Hunt
@@ -3751,6 +3765,7 @@ Pelakka Wurm
 Pendelhaven
 Pendrell Drake
 Pendrell Mists
+Pentavus
 Penumbra Bobcat
 Penumbra Kavu
 Penumbra Spider
@@ -4351,6 +4366,7 @@ Scalebane's Elite
 Scaled Hulk
 Scaled Wurm
 Scar
+Scarecrone
 Scare Tactics
 Scarland Thrinax
 Scarwood Goblins
@@ -4425,6 +4441,7 @@ Searing Wind
 Seascape Aerialist
 Seashell Cameo
 Seaside Citadel
+Seaside Haven
 Seasoned Marshal
 Sea Spirit
 Sea Sprite
@@ -5817,6 +5834,7 @@ Wanderbrine Rootcutters
 Wanderer's Twig
 Wandering Ones
 Wanderwine Prophets
+Wand of the Elements
 Waning Wurm
 Warchanter of Mogis
 War Chariot

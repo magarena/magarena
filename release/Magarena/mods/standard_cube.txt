@@ -273,6 +273,7 @@ Gild
 Gladecover Scout
 Glare of Heresy
 Gnawing Zombie
+Gobbling Ooze
 Goblin Rally
 Goblin Shortcutter
 God-Favored General

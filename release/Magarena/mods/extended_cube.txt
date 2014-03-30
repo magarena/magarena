@@ -83,6 +83,7 @@ Arms Dealer
 Arrest
 Arrows of Justice
 Artificer's Hex
+Artillerize
 Ascended Lawmage
 Asceticism
 Ashen Rider
@@ -470,6 +471,7 @@ Embersmith
 Ember Swallower
 Emmara Tandris
 Encroaching Wastes
+Encrust
 Endless Ranks of the Dead
 Engulfing Slagwurm
 Enslave
@@ -626,6 +628,7 @@ Gloomwidow
 Glorious Charge
 Gnathosaur
 Gnawing Zombie
+Gobbling Ooze
 Goblin Arsonist
 Goblin Battle Jester
 Goblin Chieftain
@@ -1015,6 +1018,7 @@ Nimbus Naiad
 Nimbus Swimmer
 Nivix Guildmage
 Nullify
+Numbing Dose
 Nylea, God of the Hunt
 Nylea's Disciple
 Nylea's Emissary
@@ -1060,6 +1064,7 @@ Paraselene
 Pathbreaker Wurm
 Peace Strider
 Peak Eruption
+Pentavus
 Peregrine Griffin
 Perilous Myr
 Perilous Shadow

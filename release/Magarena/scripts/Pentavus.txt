@@ -1,7 +1,7 @@
 name=Pentavus
 url=http://www.magiccards.info/query?q=%21pentavus
 image=http://mtgimage.com/card/pentavus.jpg
-value=4.189
+value=4.253
 rarity=R
 type=Artifact,Creature
 subtype=Construct

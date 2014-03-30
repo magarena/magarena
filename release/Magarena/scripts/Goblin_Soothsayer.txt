@@ -1,7 +1,7 @@
 name=Goblin Soothsayer
 url=http://www.magiccards.info/query?q=%21goblin%20soothsayer
 image=http://mtgimage.com/card/goblin%20soothsayer.jpg
-value=3.691
+value=4.053
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

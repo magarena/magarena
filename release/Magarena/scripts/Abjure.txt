@@ -1,7 +1,7 @@
 name=Abjure
 url=http://www.magiccards.info/query?q=%21abjure
 image=http://mtgimage.com/card/abjure.jpg
-value=2.795
+value=3.012
 rarity=C
 type=Instant
 cost={U}
