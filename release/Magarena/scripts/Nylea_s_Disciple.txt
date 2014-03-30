@@ -1,0 +1,11 @@
+name=Nylea's Disciple
+url=http://magiccards.info/ths/en/167.html
+image=http://magiccards.info/scans/en/ths/167.jpg
+value=2.395
+rarity=C
+type=Creature
+subtype=Centaur,Archer
+cost={2}{G}{G}
+pt=3/3
+timing=main
+requires_groovy_code
