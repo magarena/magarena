@@ -243,6 +243,7 @@ public class MagicTargetFilterFactory {
         single.put("card from a graveyard", TARGET_CARD_FROM_ALL_GRAVEYARDS);
         single.put("artifact or creature card from a graveyard", TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("creature card from a graveyard", TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("land card from a graveyard", TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS);
     }
 
     public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
