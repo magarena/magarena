@@ -21,6 +21,14 @@ public class MagicTargetFilterFactory {
 
     static {
         // used by lord ability/target <group>
+        /* reconized by multiple factory method
+        <color|type|subtype> creatures you controls
+        <color|type|subtype> creatures your opponents control
+        <color|type|subtype> creatures
+        <color|type|subtype> you control
+        <color|type|subtype> your opponents control
+        <color|type|subtype> 
+        */
         multiple.put("lands you control", TARGET_LAND_YOU_CONTROL);
         multiple.put("lands",TARGET_LAND);
         multiple.put("nonbasic lands", TARGET_NONBASIC_LAND);
@@ -53,16 +61,22 @@ public class MagicTargetFilterFactory {
         multiple.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
         multiple.put("nonwhite creatures", TARGET_NONWHITE_CREATURE);
         multiple.put("artifacts", TARGET_ARTIFACT);
-        /* reconized by multiple constructor
-        <color|type|subtype> creatures you controls
-        <color|type|subtype> creatures your opponents control
-        <color|type|subtype> creatures
-        <color|type|subtype> you control
-        <color|type|subtype> your opponents control
-        <color|type|subtype> 
-        */
        
         // used by MagicTargetChoice
+        /* reconized by single factory method
+         <color|type|subtype> card from your graveyard
+         <color|type|subtype> card from your opponent's graveyard
+         <color|type|subtype> card from your hand
+         <color|type|subtype> card from your library
+         <color|type|subtype> creature you control
+         <color|type|subtype> creature your opponents control
+         <color|type|subtype> creature
+         <color|type|subtype> you control
+         <color|type|subtype> you opponents control
+         <color|type|subtype> you don't control
+         <color|type|subtype> permanent
+         <color|type|subtype>
+        */
         single.put("opponent", TARGET_OPPONENT);
         single.put("player", TARGET_PLAYER);
         single.put("1/1 creature", TARGET_1_1_CREATURE);
@@ -137,7 +151,6 @@ public class MagicTargetFilterFactory {
         single.put("permanent you own", TARGET_PERMANENT_YOU_OWN);
         single.put("permanent an opponent controls", TARGET_PERMANENT_AN_OPPONENT_CONTROLS);
         single.put("creature an opponent controls", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
-        single.put("black permanent", TARGET_BLACK_PERMANENT);
         single.put("black or red permanent", TARGET_BLACK_RED_PERMANENT);
         single.put("multicolored permanent you control", TARGET_MULTICOLORED_PERMANENT_YOU_CONTROL);
         single.put("blue permanent you control", TARGET_BLUE_PERMANENT_YOU_CONTROL);
@@ -214,13 +227,10 @@ public class MagicTargetFilterFactory {
         single.put("Mountain or Forest card from your library", TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY); 
         single.put("Mountain or Plains card from your library", TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY); 
         single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
-        single.put("Forest card from your library", TARGET_FOREST_CARD_FROM_LIBRARY);
         single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
         single.put("Goblin permanent card from your library", TARGET_GOBLIN_CARD_FROM_LIBRARY);
         single.put("Elf permanent card from your library", TARGET_ELF_CARD_FROM_LIBRARY);
-        single.put("artifact card from your library", TARGET_ARTIFACT_CARD_FROM_LIBRARY);
-        single.put("equipment card from your library", TARGET_EQUIPMENT_CARD_FROM_LIBRARY);
     }
 
     public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
