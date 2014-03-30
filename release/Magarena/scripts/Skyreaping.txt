@@ -1,0 +1,9 @@
+name=Skyreaping
+url=http://magiccards.info/bng/en/140.html
+image=http://magiccards.info/scans/en/bng/140.jpg
+value=2.581
+rarity=U
+type=Sorcery
+cost={1}{G}
+timing=main
+requires_groovy_code
