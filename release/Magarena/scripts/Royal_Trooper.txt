@@ -1,0 +1,11 @@
+name=Royal Trooper
+url=http://www.magiccards.info/query?q=%21royal%20trooper
+image=http://mtgimage.com/card/royal%20trooper.jpg
+value=2.955
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=2/2
+ability=Whenever SN blocks, it gets +2/+2 until end of turn.
+timing=main

@@ -1,0 +1,11 @@
+name=Folk of An-Havva
+url=http://magiccards.info/query?q=%21folk%20of%20an-havva
+image=http://mtgimage.com/card/folk%20of%20an-havva.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={G}
+pt=1/1
+ability=Whenever SN blocks, it gets +2/+0 until end of turn.
+timing=main

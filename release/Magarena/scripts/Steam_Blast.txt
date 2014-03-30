@@ -1,0 +1,9 @@
+name=Steam Blast
+url=http://www.magiccards.info/query?q=%21steam%20blast
+image=http://mtgimage.com/card/steam%20blast.jpg
+value=3.333
+rarity=U
+type=Sorcery
+cost={2}{R}
+timing=main
+requires_groovy_code=Volcanic_Fallout

@@ -1,0 +1,12 @@
+name=Sustainer of the Realm
+url=http://www.magiccards.info/query?q=%21sustainer%20of%20the%20realm
+image=http://mtgimage.com/card/sustainer%20of%20the%20realm.jpg
+value=3.519
+rarity=U
+type=Creature
+subtype=Angel
+cost={2}{W}{W}
+pt=2/3
+ability=flying;\
+        Whenever SN blocks, it gets +0/+2 until end of turn.
+timing=main

@@ -1,0 +1,12 @@
+name=Zhao Zilong, Tiger General
+url=http://www.magiccards.info/query?q=%21zhao%20zilong%2C%20tiger%20general
+image=http://mtgimage.com/card/zhao%20zilong,%20tiger%20general.jpg
+value=3.083
+rarity=R
+type=Legendary,Creature
+subtype=Human,Soldier,Warrior
+cost={3}{W}{W}
+pt=3/3
+ability=horsemanship;\
+        Whenever SN blocks, it gets +1/+1 until end of turn.
+timing=main

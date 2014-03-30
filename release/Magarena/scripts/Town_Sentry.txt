@@ -1,0 +1,11 @@
+name=Town Sentry
+url=http://www.magiccards.info/query?q=%21town%20sentry
+image=http://mtgimage.com/card/town%20sentry.jpg
+value=2.283
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=2/2
+ability=Whenever SN blocks, it gets +0/+2 until end of turn.
+timing=main
