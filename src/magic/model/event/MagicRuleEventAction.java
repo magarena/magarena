@@ -1077,7 +1077,7 @@ public enum MagicRuleEventAction {
         }
     },
     Reanimate(
-        "return (?<choice>[^\\.]*) to the battlefield\\.",
+        "return (?<choice>[^\\.]*graveyard) to the battlefield\\.",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Pump,
@@ -1097,7 +1097,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Reanimate2(
-            "put (?<choice>[^\\.]*from a graveyard) onto the battlefield under your control\\.",
+            "put (?<choice>[^\\.]*graveyard) onto the battlefield under your control\\.",
             MagicTargetHint.None,
             MagicGraveyardTargetPicker.PutOntoBattlefield,
             MagicTiming.Pump,
