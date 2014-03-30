@@ -1,0 +1,12 @@
+name=Sakashima's Student
+url=http://magiccards.info/pc2/en/24.html
+image=http://mtgimage.com/set/pc2/sakashima%27s%20student.jpg
+value=3.395
+rarity=R
+type=Creature
+subtype=Human,Ninja
+cost={2}{U}{U}
+pt=0/0
+ability=ninjutsu {1}{U}
+timing=main
+requires_groovy_code
