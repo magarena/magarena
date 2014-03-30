@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(
-                MagicTargetFilterFactory.build("merfolk you control")
+                MagicTargetFilterFactory.multiple("merfolk you control")
             );
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicUntapAction(creature));

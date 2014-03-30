@@ -704,7 +704,7 @@ public enum MagicAbility {
             final boolean other = arg.startsWith(prefix);
             final String rest = arg.replaceFirst(prefix, "");
             final String[] tokens = rest.split(" get | have | has ");
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.build(tokens[0]);
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(tokens[0]);
             if (rest.contains(" get ")) {
                 final String[] pt = tokens[1].replace('+','0').split("/");
                 final int power = Integer.parseInt(pt[0]);

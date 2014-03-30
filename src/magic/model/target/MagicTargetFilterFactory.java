@@ -13,47 +13,54 @@ import static magic.model.target.MagicTargetFilter.*;
 
 public class MagicTargetFilterFactory {
     
-    private static final Map<String, MagicTargetFilter<MagicPermanent>> factory =
+    private static final Map<String, MagicTargetFilter<MagicPermanent>> multiple =
         new TreeMap<String, MagicTargetFilter<MagicPermanent>>(String.CASE_INSENSITIVE_ORDER);
     
     private static final Map<String, MagicTargetFilter<?>> single =
         new TreeMap<String, MagicTargetFilter<?>>(String.CASE_INSENSITIVE_ORDER);
 
     static {
-        // used by lord ability/Target <group>
-        factory.put("lands you control", TARGET_LAND_YOU_CONTROL);
-        factory.put("lands PN controls", TARGET_LAND_YOU_CONTROL);
-        factory.put("lands",TARGET_LAND);
-        factory.put("nonbasic lands", TARGET_NONBASIC_LAND);
-        factory.put("islands", TARGET_ISLAND);
-        factory.put("permanents you control", TARGET_PERMANENT_YOU_CONTROL);
-        factory.put("artifacts you control", TARGET_ARTIFACT_YOU_CONTROL);
-        factory.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
-        factory.put("enchantments you control", TARGET_ENCHANTMENT_YOU_CONTROL);
-        factory.put("red creatures and white creatures you control", TARGET_RED_OR_WHITE_CREATURE_YOU_CONTROL);
-        factory.put("creatures your opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
-        factory.put("creatures with flying your opponents control", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
-        factory.put("creatures you control with flying", TARGET_CREATURE_WITH_FLYING_YOU_CONTROL);
-        factory.put("enchanted creatures you control", TARGET_ENCHANTED_CREATURE_YOU_CONTROL);
-        factory.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
-        factory.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
-        factory.put("attacking creatures", TARGET_ATTACKING_CREATURE);
-        factory.put("blocking creatures", TARGET_BLOCKING_CREATURE);
-        factory.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
-        factory.put("nonland permanents", TARGET_NONLAND_PERMANENT);
+        // used by lord ability/target <group>
+        multiple.put("lands you control", TARGET_LAND_YOU_CONTROL);
+        multiple.put("lands",TARGET_LAND);
+        multiple.put("nonbasic lands", TARGET_NONBASIC_LAND);
+        multiple.put("islands", TARGET_ISLAND);
+        multiple.put("permanents you control", TARGET_PERMANENT_YOU_CONTROL);
+        multiple.put("artifacts you control", TARGET_ARTIFACT_YOU_CONTROL);
+        multiple.put("creatures you control", TARGET_CREATURE_YOU_CONTROL);
+        multiple.put("enchantments you control", TARGET_ENCHANTMENT_YOU_CONTROL);
+        multiple.put("red creatures and white creatures you control", TARGET_RED_OR_WHITE_CREATURE_YOU_CONTROL);
+        multiple.put("creatures your opponents control", TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
+        multiple.put("creatures with flying your opponents control", TARGET_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
+        multiple.put("creatures you control with flying", TARGET_CREATURE_WITH_FLYING_YOU_CONTROL);
+        multiple.put("enchanted creatures you control", TARGET_ENCHANTED_CREATURE_YOU_CONTROL);
+        multiple.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
+        multiple.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
+        multiple.put("attacking creatures", TARGET_ATTACKING_CREATURE);
+        multiple.put("blocking creatures", TARGET_BLOCKING_CREATURE);
+        multiple.put("creature tokens you control", TARGET_CREATURE_TOKEN_YOU_CONTROL);
+        multiple.put("nonland permanents", TARGET_NONLAND_PERMANENT);
         
-        factory.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
-        factory.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
+        multiple.put("faeries you control", TARGET_FAERIE_YOU_CONTROL);
+        multiple.put("each wolf you control", TARGET_WOLF_YOU_CONTROL);
 
-        factory.put("all sliver creatures", TARGET_SLIVER);
-        factory.put("all slivers", TARGET_SLIVER_PERMANENT);
-        factory.put("all goblins", TARGET_GOBLIN_PERMANENT);
-        factory.put("all creatures", TARGET_CREATURE);
-        factory.put("creatures", TARGET_CREATURE);
-        factory.put("creatures without flying", TARGET_CREATURE_WITHOUT_FLYING);
-        factory.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
-        factory.put("nonwhite creatures", TARGET_NONWHITE_CREATURE);
-        factory.put("artifacts", TARGET_ARTIFACT);
+        multiple.put("all sliver creatures", TARGET_SLIVER);
+        multiple.put("all slivers", TARGET_SLIVER_PERMANENT);
+        multiple.put("all goblins", TARGET_GOBLIN_PERMANENT);
+        multiple.put("all creatures", TARGET_CREATURE);
+        multiple.put("creatures", TARGET_CREATURE);
+        multiple.put("creatures without flying", TARGET_CREATURE_WITHOUT_FLYING);
+        multiple.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
+        multiple.put("nonwhite creatures", TARGET_NONWHITE_CREATURE);
+        multiple.put("artifacts", TARGET_ARTIFACT);
+        /* reconized by multiple constructor
+        <color|type|subtype> creatures you controls
+        <color|type|subtype> creatures your opponents control
+        <color|type|subtype> creatures
+        <color|type|subtype> you control
+        <color|type|subtype> your opponents control
+        <color|type|subtype> 
+        */
        
         // used by MagicTargetChoice
         single.put("opponent", TARGET_OPPONENT);
@@ -216,17 +223,13 @@ public class MagicTargetFilterFactory {
         single.put("equipment card from your library", TARGET_EQUIPMENT_CARD_FROM_LIBRARY);
     }
 
-    public static MagicTargetFilter<MagicPermanent> build(final String arg) {
-        if (factory.containsKey(arg)) {
-            return factory.get(arg);
-        } else if (arg.endsWith(" creatures PN controls")) {
-            return matchCreaturePrefix(arg, " creatures PN controls", Control.You);
+    public static MagicTargetFilter<MagicPermanent> multiple(final String arg) {
+        if (multiple.containsKey(arg)) {
+            return multiple.get(arg);
         } else if (arg.endsWith(" creatures you control")) {
             return matchCreaturePrefix(arg, " creatures you control", Control.You);
         } else if (arg.endsWith(" creatures your opponents control")) {
             return matchCreaturePrefix(arg, " creatures your opponents control", Control.Opp);
-        } else if (arg.endsWith(" creatures PN's opponents control")) {
-            return matchCreaturePrefix(arg, " creatures PN's opponents control", Control.Opp);
         } else if (arg.endsWith(" creatures")) {
             return matchCreaturePrefix(arg, " creatures", Control.Any);
         } else if (arg.endsWith(" you control")) {
