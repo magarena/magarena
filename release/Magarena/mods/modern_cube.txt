@@ -1357,6 +1357,7 @@ Ghostway
 Ghoulflesh
 Ghoulraiser
 Giant Adephage
+Giant Badger
 Giant Cockroach
 Giant Growth
 Giant Harbinger

@@ -305,6 +305,7 @@ Ashen Monstrosity
 Ashenmoor Cohort
 Ashenmoor Gouger
 Ashenmoor Liege
+Ashen Powder
 Ashen Rider
 Ashmouth Hound
 Aspect of Hydra
@@ -1932,6 +1933,7 @@ Fodder Launch
 Fog
 Fog Bank
 Fog of Gnats
+Folk of An-Havva
 Folk of the Pines
 Followed Footsteps
 Fomori Nomad
@@ -2079,6 +2081,7 @@ Ghostway
 Ghoulflesh
 Ghoulraiser
 Giant Adephage
+Giant Badger
 Giant Cockroach
 Giant Crab
 Giant Growth
@@ -4160,6 +4163,7 @@ Restless Apparition
 Restless Bones
 Restless Dead
 Restoration Angel
+Restore
 Resurrection
 Retaliator Griffin
 Returned Centaur
@@ -4269,6 +4273,7 @@ Rowan Treefolk
 Royal Assassin
 Royal Decree
 Royal Falcon
+Royal Trooper
 Rubbleback Rhino
 Rubblebelt Maaka
 Rubblehulk
@@ -4595,6 +4600,7 @@ Shrine of Burning Rage
 Shrink
 Shrivel
 Shu Cavalry
+Shu Defender
 Shu Elite Companions
 Shu Elite Infantry
 Shu Foot Soldiers
@@ -4986,6 +4992,7 @@ Steadfastness
 Steal Artifact
 Steal Enchantment
 Stealer of Secrets
+Steam Blast
 Steamclaw
 Steam Spitter
 Steam Vents
@@ -5118,6 +5125,7 @@ Surgespanner
 Surrakar Banisher
 Surrakar Marauder
 Surveilling Sprite
+Sustainer of the Realm
 Sustenance
 Suture Priest
 Suture Spirit
@@ -5411,6 +5419,7 @@ Tower of Eons
 Tower of Fortunes
 Tower of Murmurs
 Tower of the Magistrate
+Town Sentry
 Toxic Nim
 Toxin Sliver
 Trade Caravan
@@ -6067,6 +6076,7 @@ Zhalfirin Commander
 Zhalfirin Knight
 Zhang Fei, Fierce Warrior
 Zhang He, Wei General
+Zhao Zilong, Tiger General
 Zhur-Taa Swine
 Zodiac Dog
 Zodiac Dragon
