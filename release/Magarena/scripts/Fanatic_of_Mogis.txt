@@ -1,0 +1,21 @@
+name=Fanatic of Mogis
+url=http://magiccards.info/ths/en/121.html
+image=http://magiccards.info/scans/en/ths/121.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Minotaur,Shaman
+cost={3}{R}
+pt=4/2
+timing=main
+name=Fanatic of Mogis
+url=http://magiccards.info/ths/en/121.html
+image=http://magiccards.info/scans/en/ths/121.jpg
+value=2.395
+rarity=U
+type=Creature
+subtype=Minotaur,Shaman
+cost={3}{R}
+pt=4/2
+timing=main
+requires_groovy_code
