@@ -7,5 +7,5 @@ type=Creature
 subtype=Frog
 cost={2}{G}
 pt=1/1
-ability=blocks or blocked pump +2/+2
+ability=Whenever SN blocks or becomes blocked, it gets +2/+2 until end of turn.
 timing=main
