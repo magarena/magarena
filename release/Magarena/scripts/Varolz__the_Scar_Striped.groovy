@@ -30,14 +30,12 @@
             event.processTargetPermanent(game, {
                 final MagicPermanent permanent ->
                 final int amt = event.getRefCard().genPowerToughness().getPositivePower();
-                if (amt > 0) {
-                    game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        amt,
-                        true
-                    ));
-                }
+                game.doAction(new MagicChangeCountersAction(
+                    permanent,
+                    MagicCounterType.PlusOne,
+                    amt,
+                    true
+                ));
             });
         }
     }

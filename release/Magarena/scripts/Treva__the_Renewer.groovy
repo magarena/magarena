@@ -29,9 +29,7 @@
                         life++;
                     }
                 }
-                if (life>0) {
-                    game.doAction(new MagicChangeLifeAction(player,life));
-                }
+                game.doAction(new MagicChangeLifeAction(player,life));
             }
         }
     }

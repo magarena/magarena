@@ -31,10 +31,8 @@
                 final MagicTarget target ->
                 final MagicPermanent source=event.getPermanent();
                 final int amount=source.getPower();
-                if (amount > 0) {
-                    final MagicDamage damage=new MagicDamage(source,target,amount);
-                    game.doAction(new MagicDealDamageAction(damage));
-                }
+                final MagicDamage damage=new MagicDamage(source,target,amount);
+                game.doAction(new MagicDealDamageAction(damage));
             });
         }
     }

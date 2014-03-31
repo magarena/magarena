@@ -23,9 +23,7 @@
             if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
                 final int amount =  player.getNrOfPermanents(MagicSubType.Ally);
-                if (amount > 0) {
-                    game.doAction(new MagicChangeLifeAction(player,amount));
-                }
+                game.doAction(new MagicChangeLifeAction(player,amount));
             }
         }
     }

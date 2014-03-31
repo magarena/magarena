@@ -32,11 +32,13 @@ def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent permanent ->
-                for (final MagicCounterType counterType : MagicCounterType.values()) {
-                    final int amount=permanent.getCounters(counterType);
-                    if (amount>0) {
-                        game.doAction(new MagicChangeCountersAction(permanent,counterType,-amount,true));
-                    }
+                for (final MagicCounterType counterType : permanent.getCounterTypes()) {
+                    game.doAction(new MagicChangeCountersAction(
+                        permanent,
+                        counterType,
+                        -permanent.getCounters(counterType),
+                        true
+                    ));
                 }
             });
         }

@@ -17,9 +17,7 @@
             targets.addAll(game.filterPermanents(player,MagicTargetFilter.TARGET_ARTIFACT));
             final MagicDestroyAction destroy = new MagicDestroyAction(targets);
             game.doAction(destroy);
-            if (destroy.getNumDestroyed() > 0) {
-                game.doAction(new MagicChangeLifeAction(player,destroy.getNumDestroyed()*2));
-            }
+            game.doAction(new MagicChangeLifeAction(player,destroy.getNumDestroyed()*2));
         }
     }
 ]

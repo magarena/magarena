@@ -22,11 +22,8 @@
                 event.processTargetPlayer(game, {
                     final MagicPlayer targetPlayer ->
                     final MagicPlayer player = event.getPlayer();
-                    final int amount =
-                            player.getNrOfPermanents(MagicSubType.Ally);
-                    if (amount > 0) {
-                        game.doAction(new MagicChangeLifeAction(targetPlayer,-amount));
-                    }
+                    final int amount = player.getNrOfPermanents(MagicSubType.Ally);
+                    game.doAction(new MagicChangeLifeAction(targetPlayer,-amount));
                 });
             }
         }

@@ -17,9 +17,7 @@
                 game.filterPermanents(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_GOBLIN);
             //excluding itself
             final int power = 2 * (targets.size() - 1);
-            if (power>0) {
-                game.doAction(new MagicChangeTurnPTAction(creature,power,0));
-            }
+            game.doAction(new MagicChangeTurnPTAction(creature,power,0));
         }
     }
 ]

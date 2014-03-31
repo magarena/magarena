@@ -28,14 +28,12 @@
                     final MagicPlayer player = event.getPlayer();
                     final int amount =
                             player.getNrOfPermanents(MagicSubType.Ally);
-                    if (amount > 0) {
-                        final MagicDamage damage = new MagicDamage(
-                            event.getPermanent(),
-                            creature,
-                            amount
-                        );
-                        game.doAction(new MagicDealDamageAction(damage));
-                    }
+                    final MagicDamage damage = new MagicDamage(
+                        event.getPermanent(),
+                        creature,
+                        amount
+                    );
+                    game.doAction(new MagicDealDamageAction(damage));
                 });
             }
         }

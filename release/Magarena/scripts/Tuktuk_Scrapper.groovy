@@ -31,14 +31,12 @@
                         (card.isToken() && !card.getOwner().getPermanents().contains(target))) {
                         final int amount =
                                 player.getNrOfPermanents(MagicSubType.Ally);
-                        if (amount > 0) {
-                            final MagicDamage damage = new MagicDamage(
-                                event.getPermanent(),
-                                card.getOwner(),
-                                amount
-                            );
-                            game.doAction(new MagicDealDamageAction(damage));
-                        }
+                        final MagicDamage damage = new MagicDamage(
+                            event.getPermanent(),
+                            card.getOwner(),
+                            amount
+                        );
+                        game.doAction(new MagicDealDamageAction(damage));
                     }
                 });
             }

@@ -17,14 +17,12 @@
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
                 );
             for (final MagicPermanent creature : targets) {
-                if (creature.getCounters(MagicCounterType.PlusOne)>0){
-                    game.doAction(new MagicChangeCountersAction(
-                        creature,
-                        MagicCounterType.PlusOne,
-                        creature.getCounters(MagicCounterType.PlusOne),
-                        true
-                    ));
-                }
+                game.doAction(new MagicChangeCountersAction(
+                    creature,
+                    MagicCounterType.PlusOne,
+                    creature.getCounters(MagicCounterType.PlusOne),
+                    true
+                ));
             }
         }
     }

@@ -72,15 +72,12 @@ def ST = new MagicStatic(MagicLayer.Type) {
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
             for (final MagicPermanent permanent : targets) {
-                final int amount = permanent.getCounters(MagicCounterType.Gold);
-                if (amount > 0) {
-                    game.doAction(new MagicChangeCountersAction(
-                        permanent,
-                        MagicCounterType.Gold,
-                        -amount,
-                        true
-                    ));
-                }
+                game.doAction(new MagicChangeCountersAction(
+                    permanent,
+                    MagicCounterType.Gold,
+                    -permanent.getCounters(MagicCounterType.Gold),
+                    true
+                ));
             }
         }
     }

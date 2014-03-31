@@ -17,9 +17,7 @@
             final MagicPlayer player = event.getPlayer();
             final int x = player.controlsPermanent(event.getPermanent()) ? 1 : 0;
             final int amount = player.getNrOfPermanents(MagicType.Creature) - x;
-            if (amount > 0) {
-                game.doAction(new MagicChangeLifeAction(player,amount * 2));
-            }
+            game.doAction(new MagicChangeLifeAction(player,amount * 2));
         }
     }
 ]

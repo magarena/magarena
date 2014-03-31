@@ -19,9 +19,7 @@
                     event.getPermanent()
                 )
             );
-            if (power>0) {
-                game.doAction(new MagicChangeTurnPTAction(creature,power,0));
-            }
+            game.doAction(new MagicChangeTurnPTAction(creature,power,0));
         }
     }
 ]

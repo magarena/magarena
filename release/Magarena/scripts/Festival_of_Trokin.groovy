@@ -15,9 +15,7 @@
                     event.getPlayer(),
                     MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
             final int amount = 2 * targets.size();
-            if (amount > 0) {
-                game.doAction(new MagicChangeLifeAction(player,amount));
-            }
+            game.doAction(new MagicChangeLifeAction(player,amount));
         }
     }
 ]
