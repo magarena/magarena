@@ -7,7 +7,7 @@
                     permanent,
                     upkeepPlayer,
                     this,
-                    "PN gains X life where X is the number of cards in his or her hand minus 4."
+                    "PN gains X life, where X is the number of cards in his or her hand minus 4."
                 ) :
                 MagicEvent.NONE;
         }
