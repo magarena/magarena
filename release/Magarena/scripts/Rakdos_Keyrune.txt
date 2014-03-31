@@ -7,4 +7,5 @@ type=Artifact
 cost={3}
 ability=tap add mana {B} or {R}
 timing=artifact
+mana_or_combat
 requires_groovy_code
