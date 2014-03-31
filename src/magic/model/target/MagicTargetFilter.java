@@ -1177,6 +1177,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = Factory.card(MagicTargetType.OpponentsGraveyard, MagicType.Instant, MagicType.Sorcery);
 
     MagicCardFilterImpl TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Enchantment);
+    
+    MagicCardFilterImpl TARGET_ENCHANTMENT_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Creature) && target.hasType(MagicType.Enchantment);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
 
     MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Artifact);
     

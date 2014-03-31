@@ -71,6 +71,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact creature card from your graveyard", TARGET_ARTIFACT_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("artifact or enchantment card from your graveyard", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
+        single.put("enchantment creature card from your graveyard", TARGET_ENCHANTMENT_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
         single.put("creature card with converted mana cost 2 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
