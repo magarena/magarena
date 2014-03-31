@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Each opponent loses X life and PN gains X life where X is PN's devotion to black."
+                "Each opponent loses X life and PN gains X life, where X is PN's devotion to black."
             );
         }
         @Override
