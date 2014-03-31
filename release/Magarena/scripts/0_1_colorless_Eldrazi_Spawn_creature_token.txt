@@ -7,3 +7,4 @@ subtype=Eldrazi,Spawn
 cost={0}
 pt=0/1
 ability=sac add mana {1}
+mana_or_combat
