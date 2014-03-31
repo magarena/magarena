@@ -1,0 +1,12 @@
+name=Mistblade Shinobi
+url=http://magiccards.info/query?q=!mistblade%20shinobi
+image=http://mtgimage.com/card/mistblade%20shinobi.jpg
+value=4.267
+rarity=C
+type=Creature
+subtype=Human,Ninja
+cost={2}{U}
+pt=1/1
+ability=ninjutsu {U}
+timing=main
+requires_groovy_code

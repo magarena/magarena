@@ -1,0 +1,12 @@
+name=Throat Slitter
+url=http://magiccards.info/query?q=!throat%20slitter
+image=http://mtgimage.com/card/throat%20slitter.jpg
+value=3.115
+rarity=U
+type=Creature
+subtype=Rat,Ninja
+cost={4}{B}
+pt=2/2
+ability=ninjutsu {2}{B}
+timing=main
+requires_groovy_code
