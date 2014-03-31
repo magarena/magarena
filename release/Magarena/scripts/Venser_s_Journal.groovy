@@ -7,7 +7,7 @@
                     permanent,
                     upkeepPlayer,
                     this,
-                    "PN gains X life where X is the number of cards in his or her hand."
+                    "PN gains 1 life for each card in his or her hand."
                 ) :
                 MagicEvent.NONE;
         }
@@ -15,10 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = player.getHandSize();
-            if (amount > 0) {
-                game.doAction(new MagicChangeLifeAction(player,amount));
-            }
+            game.doAction(new MagicChangeLifeAction(player, player.getHandSize()));
         }
     }
 ]
