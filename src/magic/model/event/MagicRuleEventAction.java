@@ -1445,7 +1445,7 @@ public enum MagicRuleEventAction {
                 return ruleAction;
             }
         }
-        throw new RuntimeException("unknown rule: " + rule);
+        throw new RuntimeException("Unable to convert \"" + rule + "\" to an effect");
     }
 
     private static String capitalize(final String text) {
@@ -1456,7 +1456,7 @@ public enum MagicRuleEventAction {
         final Matcher matcher = pattern.matcher(rule);
         final boolean matches = matcher.matches();
         if (!matches) {
-            throw new RuntimeException("unknown rule: " + rule);
+            throw new RuntimeException("unknown effect: \"" + rule + "\"");
         }
         return matcher;
     }
