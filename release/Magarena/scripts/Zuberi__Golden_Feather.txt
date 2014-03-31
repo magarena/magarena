@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Griffin
 cost={4}{W}
 pt=3/3
-ability=flying;lord other griffin creatures get +1/+1 
+ability=flying;lord other griffin creatures get +1/+1
 static=all
 timing=main

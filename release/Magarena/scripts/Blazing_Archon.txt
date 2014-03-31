@@ -7,5 +7,5 @@ type=Creature
 subtype=Archon
 cost={6}{W}{W}{W}
 pt=5/6
-ability=flying;lord creatures your opponents control have can't attack 
+ability=flying;lord creatures your opponents control have can't attack
 timing=main

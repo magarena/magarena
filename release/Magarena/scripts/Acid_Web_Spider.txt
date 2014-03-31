@@ -7,5 +7,5 @@ type=Creature
 subtype=Spider
 cost={3}{G}{G}
 pt=3/5
-ability=reach;When SN enters the battlefield, you may destroy target Equipment. 
+ability=reach;When SN enters the battlefield, you may destroy target Equipment.
 timing=main
