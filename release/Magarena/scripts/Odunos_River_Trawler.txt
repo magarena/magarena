@@ -1,0 +1,12 @@
+name=Odunos River Trawler
+url=http://www.magiccards.info/query?q=%21odunos%20river%20trawler
+image=http://mtgimage.com/card/odunos%20river%20trawler.jpg
+value=3.364
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=2/2
+ability=When SN enters the battlefield, return target enchantment creature card from your graveyard to your hand.;\
+        cost {W}, Sacrifice SN: Return target enchantment creature card from your graveyard to your hand.
+timing=main

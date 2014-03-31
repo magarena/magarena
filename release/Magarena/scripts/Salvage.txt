@@ -1,0 +1,9 @@
+name=Salvage
+url=http://www.magiccards.info/query?q=%21salvage
+image=http://mtgimage.com/card/salvage.jpg
+value=3.36
+rarity=C
+type=Sorcery
+cost={G}
+timing=main
+requires_groovy_code=Reclaim

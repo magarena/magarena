@@ -1,0 +1,9 @@
+name=Dakmor Plague
+url=http://www.magiccards.info/query?q=%21dakmor%20plague
+image=http://mtgimage.com/set/me4/dakmor%20plague.jpg
+value=3.367
+rarity=U
+type=Sorcery
+cost={3}{B}{B}
+timing=main
+requires_groovy_code=Famine

@@ -1,0 +1,11 @@
+name=Pride of Lions
+url=http://www.magiccards.info/query?q=%21pride%20of%20lions
+image=http://mtgimage.com/card/pride%20of%20lions.jpg
+value=4
+rarity=U
+type=Creature
+subtype=Cat
+cost={3}{G}{G}
+pt=4/4
+timing=main
+requires_groovy_code=Rhox
