@@ -97,7 +97,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum MagicAbility {
-
+  
     AttacksEachTurnIfAble("attacks each turn if able",-10),
     CannotBlock("can't block",-50),
     CannotAttack("can't attack",-50),
@@ -178,536 +178,505 @@ public enum MagicAbility {
     CantActivateAbilities("can't activate abilities",-20),
 
     Undying("undying",60) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicUndyingTrigger.create());
         }
     },
     Persist("persist",60) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPersistTrigger.create());
         }
     },
-    Modular("modular", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Modular("modular " + ARG.AMOUNT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(MagicModularTrigger.create());
         }
     },
     Flanking("flanking",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicFlankingTrigger.create());
         }
     },
     Changeling("changeling",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCDA.Changeling);
         }
     },
     Exalted("exalted",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicExaltedTrigger.create());
         }
     },
     BattleCry("battle cry",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicBattleCryTrigger.create());
         }
     },
     LivingWeapon("living weapon", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicLivingWeaponTrigger.create());
         }
     },
-    Regenerate("regenerate",30) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    Regenerate("regenerate " + ARG.COST,30) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicRegenerationActivation(manaCost));
         }
     },
-    Bushido("bushido",20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Bushido("bushido " + ARG.AMOUNT,20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicBecomesBlockedPumpTrigger(n,n,false));
             card.add(new MagicWhenBlocksPumpTrigger(n,n));
         }
     },
-    Soulshift("soulshift",20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Soulshift("soulshift " + ARG.AMOUNT,20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicSoulshiftTrigger(n));
         }
     },
-    Fading("fading",-20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Fading("fading " + ARG.AMOUNT,-20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Fade,n));
             card.add(new MagicFadeVanishCounterTrigger(MagicCounterType.Fade));
         }
     },
-    Vanishing("vanishing",-20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Vanishing("vanishing " + ARG.AMOUNT,-20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             if (n > 0) {
                 card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Time,n));
             }
             card.add(new MagicFadeVanishCounterTrigger(MagicCounterType.Time));
         }
     },
-    CumulativeUpkeep("cumulative upkeep",-30) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    CumulativeUpkeep("cumulative upkeep " + ARG.COST,-30) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicCumulativeUpkeepTrigger(manaCost));
         }
     },
-    LevelUp("level up", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] token = arg.split(" ");
-            final MagicManaCost cost = MagicManaCost.create(token[0]);
-            final int maxLevel = Integer.parseInt(token[1]);
+    LevelUp("level up " + ARG.COST + " " + ARG.AMOUNT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost cost = MagicManaCost.create(arg.group("cost"));
+            final int maxLevel = Integer.parseInt(arg.group("amount"));
             card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
     },
-    BlockedPump("Whenever SN becomes blocked, it gets ", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace(" until end of turn.","").replace("+","").split("/");
+    BlockedPump("Whenever SN becomes blocked, it gets " + ARG.PT + " until end of turn." , 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = arg.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
         }
     },
-    BlockedByPump("blocked by pump", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace("+","").split("/");
+    BlockedByPump("blocked by pump " + ARG.PT, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = arg.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,true));
         }
     },
-    BlocksOrBlockedPump("Whenever SN blocks or becomes blocked, it gets ", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace(" until end of turn.","").replace("+","").split("/");
+    BlocksOrBlockedPump("Whenever SN blocks or becomes blocked, it gets " + ARG.PT + " until end of turn.", 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = arg.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
         }
     },
-    BlocksPump("Whenever SN blocks, it gets ", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] pt = arg.replace(" until end of turn.","").replace("+","").split("/");
+    BlocksPump("Whenever SN blocks, it gets " + ARG.PT + " until end of turn." , 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = arg.group("pt").replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
         }
     },
     ShockLand("As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.", -10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicRavnicaLandTrigger.create());
         }
     },
-    Devour("devour",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Devour("devour " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicDevourTrigger(n));
         }
     },
-    Rampage("rampage",20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Rampage("rampage " + ARG.AMOUNT,20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicRampageTrigger(n));
         }
     },
-    AttacksEffect("Whenever SN attacks,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    AttacksEffect("Whenever SN attacks, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfAttacksTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    UntappedEffect("Whenever SN becomes untapped,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    UntappedEffect("Whenever SN becomes untapped, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBecomesUntappedTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
     AllyGrow("ally grow",20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAllyGrowTrigger.create());
         }
     },
-    LandfallEffect("Whenever a land enters the battlefield under your control,",0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    LandfallEffect("Whenever a land enters the battlefield under your control, " + ARG.EFFECT,0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicLandfallTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    TapAddMana("tap add mana",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+    TapAddMana("tap add mana " + ARG.MANA,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg.group("mana"));
             card.add(new MagicTapManaActivation(manatype));
         }
     },
-    TapDrainAddMana("tap drain add mana",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+    TapDrainAddMana("tap drain add mana " + ARG.MANA,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg.group("mana"));
             card.add(new MagicVividManaActivation(manatype));
         }
     },
-    TapPainAddMana("tap pain add mana", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+    TapPainAddMana("tap pain add mana " + ARG.MANA, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg.group("mana"));
             card.add(new MagicPainTapManaActivation(manatype));
         }
     },
-    TapPayLifeAddMana("tap pay 1 life add mana", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+    TapPayLifeAddMana("tap pay 1 life add mana " + ARG.MANA, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg.group("mana"));
             card.add(new MagicPayLifeTapManaActivation(manatype));
         }
     },
-    SacAddMana("sac add mana",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+    SacAddMana("sac add mana " + ARG.MANA,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg.group("mana"));
             card.add(new MagicSacrificeManaActivation(manatype));
         }
     },
     SacAtEnd("At the beginning of the end step, sacrifice SN.",-100) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtEndOfTurnTrigger.Sacrifice);
         }
     },
     ExileAtEnd("exile at end",-100) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtEndOfTurnTrigger.ExileAtEnd);
         }
     },
     SacWhenTargeted("When SN becomes the target of a spell or ability, sacrifice it.",-10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenTargetedTrigger.SacWhenTargeted);
         }
     },
-    TapSacAddMana("tap sac add mana",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final List<MagicManaType> manatype = MagicManaType.getList(arg);
+    TapSacAddMana("tap sac add mana " + ARG.MANA,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final List<MagicManaType> manatype = MagicManaType.getList(arg.group("mana"));
             card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
-    DamageToOpponent("Whenever SN deals damage to an opponent,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    DamageToOpponent("Whenever SN deals damage to an opponent, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    DamageToPlayer("deals damage to a player effect", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    DamageToPlayer("deals damage to a player effect " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    CombatDamageToPlayer("Whenever SN deals combat damage to a player,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    CombatDamageToPlayer("Whenever SN deals combat damage to a player, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToPlayer(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    DamageDiscardCard("damage discard",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    DamageDiscardCard("damage discard " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicSpecterTrigger(Type.Any, Player.Any, n));
         }
     },
-    CombatDamageDiscardCard("combat damage discard",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    CombatDamageDiscardCard("combat damage discard " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicSpecterTrigger(Type.Combat, Player.Any, n));
         }
     },
-    CombatDamageDiscardRandomCard("combat damage discard random",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    CombatDamageDiscardRandomCard("combat damage discard random " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
         }
     },
-    DamageOpponentDiscardRandomCard("damage opponent discard random",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    DamageOpponentDiscardRandomCard("damage opponent discard random " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DamageCreatureGrow("Whenever SN deals damage to a creature, put a +1/+1 counter on SN.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+    DamageCreatureGrow("Whenever SN deals damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicDamageGrowTrigger(false, false));
         }
     },
-    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a +1/+1 counter on SN.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicDamageGrowTrigger(true, false));
         }
     },
     OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
         }
     },
     RecoverGraveyard("When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard);
         }
     },
     GraveyardToLibrary("When SN is put into a graveyard from anywhere, shuffle it into its owner's library.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicFromGraveyardToLibraryTrigger.create());
         }
     },
     LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);
         }
     },
-    Champion("champion",-10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(new MagicChampionTrigger(arg));
+    Champion("champion " + ARG.ANY,-10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(new MagicChampionTrigger(arg.group("any")));
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
     LeavesReturnExile("leaves return exile", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
     EntersChooseOpponent("As SN enters the battlefield, choose an opponent.", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenComesIntoPlayTrigger.ChooseOpponent);
         }
     },
     EntersTapped("SN enters the battlefield tapped.", -10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicTappedIntoPlayTrigger.create());
         }
     },
-    EntersWithCounter("enters with counter", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] token = arg.split(" ");
-            final String name = token[0];
+    EntersWithCounter("enters with counter " + ARG.WORD1 + " " + ARG.WORD2, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String name = arg.group("word1");
+            final String amount = arg.group("word2");
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(name);
-            if (token[1].equalsIgnoreCase("X")) {
+            if (amount.equalsIgnoreCase("X")) {
                 card.add(MagicWhenComesIntoPlayTrigger.XCounters(counterType));
             } else {
-                final int n = Integer.parseInt(token[1]);
+                final int n = Integer.parseInt(amount);
                 card.add(new MagicComesIntoPlayWithCounterTrigger(counterType,n));
             }
         }
     },
     EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands.", -10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
         }
     },
-    EntersTappedUnless("SN enters the battlefield tapped unless you control a", -10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] token = arg.split(" ");
-            final MagicSubType t1 = MagicSubType.getSubType(token[0]);
-            final MagicSubType t2 = MagicSubType.getSubType(token[1]);
+    EntersTappedUnless("SN enters the battlefield tapped unless you control a " + ARG.WORD1 + " " + ARG.WORD2, -10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicSubType t1 = MagicSubType.getSubType(arg.group("word1"));
+            final MagicSubType t2 = MagicSubType.getSubType(arg.group("word2"));
             card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
         }
     },
-    Echo("echo",-20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() == false: this + " does not accept empty arg";
-            card.add(new MagicEchoTrigger(MagicManaCost.create(arg)));
+    Echo("echo " + ARG.COST,-20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(new MagicEchoTrigger(MagicManaCost.create(arg.group("cost"))));
         }
     },
-    Bloodthirst("bloodthirst",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Bloodthirst("bloodthirst " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicBloodthirstTrigger(n));
         }
     },
     Storm("storm", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStormTrigger.create());
         }
     },
-    Annihilator("annihilator", 80) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Annihilator("annihilator " + ARG.AMOUNT, 80) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicAnnihilatorTrigger(n));
         }
     },
-    Multicounter("enters with counter +1/+1 for each kick", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    Multicounter("enters with counter \\+1/\\+1 for each kick " + ARG.COST, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicPlayMulticounterEvent(manaCost));
         }
     },
-    Miracle("miracle", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    Miracle("miracle " + ARG.COST, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicMiracleTrigger(manaCost));
         }
     },
-    Kicker("kicker", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost cost = MagicManaCost.create(arg);
+    Kicker("kicker " + ARG.COST, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost cost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicKickerCost(cost));
         }
     },
-    Buyback("buyback", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost cost = MagicManaCost.create(arg);
+    Buyback("buyback " + ARG.COST, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost cost = MagicManaCost.create(arg.group("cost"));
             card.add(MagicKickerCost.Buyback(cost));
         }
     },
-    Multikicker("multikicker", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost cost = MagicManaCost.create(arg);
+    Multikicker("multikicker " + ARG.COST, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost cost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicMultikickerCost(cost));
         }
     },
-    Replicate("replicate", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost cost = MagicManaCost.create(arg);
+    Replicate("replicate " + ARG.COST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost cost = MagicManaCost.create(arg.group("cost"));
             card.add(MagicMultikickerCost.Replicate(cost));
             card.add(MagicReplicateTrigger.create());
         }
     },
-    EntersEffect("When SN enters the battlefield,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create(
-                MagicRuleEventAction.create(arg)
-            ));
-        }
-    },
-    EndStepEffect("At the beginning of the end step,", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicAtEndOfTurnTrigger.create(
-                MagicRuleEventAction.create(arg)
-            ));
-        }
-    },
-    YourEndStepEffect("At the beginning of your end step,", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicAtEndOfTurnTrigger.createYour(
-                MagicRuleEventAction.create(arg)
-            ));
-        }
-    },
-    EntersKickedEffect("When SN enters the battlefield, if it was kicked,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    EntersKickedEffect("When SN enters the battlefield, if it was kicked, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenComesIntoPlayTrigger.createKicked(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    DiesEffect("When SN dies,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    EntersEffect("When SN enters the battlefield, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenComesIntoPlayTrigger.create(
+                MagicRuleEventAction.create(arg.group("effect"))
+            ));
+        }
+    },
+    EndStepEffect("At the beginning of the end step, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAtEndOfTurnTrigger.create(
+                MagicRuleEventAction.create(arg.group("effect"))
+            ));
+        }
+    },
+    YourEndStepEffect("At the beginning of your end step, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAtEndOfTurnTrigger.createYour(
+                MagicRuleEventAction.create(arg.group("effect"))
+            ));
+        }
+    },
+    DiesEffect("When SN dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDiesTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    LeavesEffect("When SN leaves the battlefield,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    LeavesEffect("When SN leaves the battlefield, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfLeavesPlayTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
     ControlEnchanted("control enchanted", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.ControlEnchanted);
         }
     },
-    SwitchPT("switch pt", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    SwitchPT("switch pt " + ARG.COST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(MagicPermanentActivation.SwitchPT(manaCost));
         }
     },
-    Evoke("evoke", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    Evoke("evoke " + ARG.COST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicEvokeActivation(manaCost));
             card.add(MagicWhenComesIntoPlayTrigger.Evoke);
         }
     },
     Evolve("evolve", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherComesIntoPlayTrigger.Evolve);
         }
     },
     Extort("extort", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicExtortTrigger.create());
         }
     },
-    Cycling("cycling", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    Cycling("cycling " + ARG.COST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicCyclingActivation(manaCost));
         }
     },
-    Reinforce("reinforce", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] token = arg.split(" ");
-            final int n = Integer.parseInt(token[0]);
-            final MagicManaCost manaCost = MagicManaCost.create(token[1]);
+    Reinforce("reinforce " + ARG.AMOUNT + " " + ARG.COST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicReinforceActivation(n, manaCost));
         }
     },
     Unleash("unleash", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicUnleashTrigger.create());
             card.add(MagicStatic.Unleash);
         }
     },
-    Ninjutsu("ninjutsu", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    Ninjutsu("ninjutsu " + ARG.COST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicNinjutsuActivation(manaCost));
         }
     },
     Cascade("cascade", 50) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            assert arg.isEmpty() : this + " does not accept arg = " + arg;
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicCascadeTrigger.create());
         }
     },
-    Lord("lord", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    Lord("lord " + ARG.ANY, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
+            final String arg = matcher.group("any");
             final String prefix = "other ";
             final boolean other = arg.startsWith(prefix);
             final String rest = arg.replaceFirst(prefix, "");
@@ -732,96 +701,95 @@ public enum MagicAbility {
             }
         }
     },
-    Poisonous("poisonous", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Poisonous("poisonous " + ARG.AMOUNT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(MagicWhenDamageIsDealtTrigger.Poisonous(n));
         }
     },
-    Monstrosity("monstrosity", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] token = arg.split(" ");
-            final int n = Integer.parseInt(token[0]);
-            final MagicManaCost manaCost = MagicManaCost.create(token[1]);
+    Monstrosity("monstrosity " + ARG.AMOUNT + " " + ARG.COST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicMonstrosityActivation(manaCost, n));
         }
     },
-    Tribute("tribute", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final String[] token = arg.split(" ", 2);
-            final int n = Integer.parseInt(token[0]);
-            final String effect  = token[1].replaceFirst("^effect ", "");
+    Tribute("tribute " + ARG.AMOUNT + " " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
+            final String effect  = arg.group("effect").replaceFirst("^effect ", "");
             card.add(MagicTributeTrigger.create(n,  MagicRuleEventAction.create(effect)));
         }
     },
-    Bestow("bestow", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(arg);
+    Bestow("bestow " + ARG.COST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(arg.group("cost"));
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    ActivatedAbility("cost", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicPermanentActivation.create(arg));
+    ActivatedAbility("cost " + ARG.ANY, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicPermanentActivation.create(arg.group("any")));
         }
     },
-    AlternateCost("alt cost", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    AlternateCost("alt cost " + ARG.ANY, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
+            final String arg = matcher.group("any");
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             final String[] tokens = arg.split(" named ");
             card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
-    AdditionalCost("As an additional cost to cast SN,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            card.add(MagicAdditionalCost.create(new MagicMatchedCostEvent(arg)));
+    AdditionalCost("As an additional cost to cast SN, " + ARG.COST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAdditionalCost.create(new MagicMatchedCostEvent(arg.group("cost"))));
         }
     },
-    HeroicEffect("Whenever you cast a spell that targets SN,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    HeroicEffect("Whenever you cast a spell that targets SN, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicHeroicTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    EachUpkeepEffect("At the beginning of each upkeep,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    EachUpkeepEffect("At the beginning of each upkeep, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtUpkeepTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    YourUpkeepEffect("At the beginning of your upkeep,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    YourUpkeepEffect("At the beginning of your upkeep, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtUpkeepTrigger.createYour(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    BattalionEffect("Whenever SN and at least two other creatures attack,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    BattalionEffect("Whenever SN and at least two other creatures attack, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicBattalionTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    SpiritOrArcaneEffect("Whenever you cast a Spirit or Arcane spell,", 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
+    SpiritOrArcaneEffect("Whenever you cast a Spirit or Arcane spell, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenYouCastSpiritOrArcaneTrigger.create(
-                MagicRuleEventAction.create(arg)
+                MagicRuleEventAction.create(arg.group("effect"))
             ));
         }
     },
-    Graft("graft",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Graft("graft " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(MagicWhenOtherComesIntoPlayTrigger.Graft);
         }
     },
-    Loyalty("loyalty",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-            final int n = Integer.parseInt(arg);
+    Loyalty("loyalty " + ARG.AMOUNT,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = Integer.parseInt(arg.group("amount"));
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Loyalty,n));
         }
     },
@@ -830,11 +798,40 @@ public enum MagicAbility {
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
     
     public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.range(Plainswalk, Forestwalk);
-                
+
+
+    private static class ARG {  
+        private static final String AMOUNT = "(?<amount>[0-9]+)";
+        private static final String amount = "amount";
+
+        private static final String COST = "(?<cost>.+)";
+        private static final String cost = "cost";
+
+        private static final String EFFECT = "(?<effect>.+)";
+        private static final String effect = "effect";
+
+        private static final String ANY = "(?<any>.+)";
+        private static final String any = "any";
+
+        private static final String MANA = "(?<mana>[^\\.]+)";
+        private static final String mana = "mana";
+        
+        private static final String WORD1 = "(?<word1>[^ ]+)";
+        private static final String word1 = "word1";
+        
+        private static final String WORD2 = "(?<word2>[^ ]+)";
+        private static final String word2 = "word2";
+
+        private static final String PT = "(?<pt>[+-][0-9]+/[+-][0-9]+)";
+        private static final String pt = "pt";
+    }  
+
+    private final Pattern pattern;
     private final String name;
     private final int score;
 
     private MagicAbility(final String aName,final int aScore) {
+        pattern = Pattern.compile(aName, Pattern.CASE_INSENSITIVE);
         name  = aName;
         score = aScore;
     }
@@ -843,14 +840,12 @@ public enum MagicAbility {
         return name;
     }
 
-    protected void addAbilityImpl(final MagicAbilityStore card, final String arg) {
-        assert arg.isEmpty() : this + " does not accept arg = " + arg;
+    protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
     }
 
     public void addAbility(final MagicAbilityStore card, final String ability) {
-        final String arg = ability.substring(getName().length()).trim();
         card.addAbility(this);
-        addAbilityImpl(card, arg);
+        addAbilityImpl(card, matched(ability));
     }
 
     @Override
@@ -869,19 +864,27 @@ public enum MagicAbility {
         }
         return score;
     }
+    
+    public boolean matches(final String rule) {
+        return pattern.matcher(rule).matches();
+    }
+    
+    public Matcher matched(final String rule) {
+        final Matcher matcher = pattern.matcher(rule);
+        final boolean matches = matcher.matches();
+        if (!matches) {
+            throw new RuntimeException("unknown ability: \"" + rule + "\"");
+        }
+        return matcher;
+    }
 
     public static MagicAbility getAbility(final String name) {
-        MagicAbility match = None;
         for (final MagicAbility ability : values()) {
-            if (name.startsWith(ability.getName()) && ability.getName().length() > match.getName().length()) {
-                match = ability;
+            if (ability.matches(name)) {
+                return ability;
             }
         }
-        if (match == None) {
-            throw new RuntimeException("Unable to convert \"" + name + "\" to an ability");
-        } else {
-            return match;
-        }
+        throw new RuntimeException("Unable to convert \"" + name + "\" to an ability");
     }
     
     public static MagicAbilityList getAbilityList(final String[] names) {
