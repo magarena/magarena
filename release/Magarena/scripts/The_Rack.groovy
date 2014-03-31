@@ -7,7 +7,7 @@
                     permanent,
                     upkeepPlayer,
                     this,
-                    "SN deals X damage to PN where X is 3 minus the number of cards in his or her hand."
+                    "SN deals X damage to PN, where X is 3 minus the number of cards in his or her hand."
                 ):
                 MagicEvent.NONE;
         }
@@ -15,14 +15,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = 3 - player.getHandSize();
-            if (amount > 0) {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    player,
-                    amount
-                );
-                game.doAction(new MagicDealDamageAction(damage));
-            }
+            final MagicDamage damage = new MagicDamage(
+                event.getSource(),
+                player,
+                amount
+            );
+            game.doAction(new MagicDealDamageAction(damage));
         }
     }
 ]
