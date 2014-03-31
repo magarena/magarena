@@ -16,6 +16,7 @@
             for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage=new MagicDamage(source,creature,1);
                 game.doAction(new MagicDealDamageAction(damage));
+            }
         }
     }
 ]
