@@ -5,13 +5,19 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN gains life equal to PN's devotion to green."
+                "SN deals damage to each opponent equal to PN's devotion to red."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getDevotion(MagicColor.Green);
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            final int amount = event.getPlayer().getDevotion(MagicColor.Red);
+            game.doAction(new MagicDealDamageAction(
+                new MagicDamage(
+                    event.getSource(),
+                    event.getPlayer().getOpponent(),
+                    amount
+                )
+            ));
         }
     }
 ]

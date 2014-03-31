@@ -5,13 +5,13 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "SN deals X damage to each creature with flying where X is PN's devotion to green."
+                "SN deals damage to each creature with flying equal to PN's devotion to green."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final int amount = event.getPlayer().getDevotion(MagicColor.Green);
             final MagicSource source = event.getSource();
-            final int amount = event.getCardOnStack().getController().getDevotion(MagicColor.Green);
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITH_FLYING);
             for (final MagicPermanent target : targets) {
