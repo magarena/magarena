@@ -491,6 +491,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
     }
 
+    public Collection<MagicCounterType> getCounterTypes() {
+        return counters.keySet();
+    }
+
     public int getCounters(final MagicCounterType counterType) {
         final Integer cnt = counters.get(counterType);
         return cnt != null ? cnt : 0;
