@@ -1,0 +1,10 @@
+name=Nightstalker Engine
+url=http://www.magiccards.info/query?q=%21nightstalker%20engine
+image=http://mtgimage.com/card/nightstalker%20engine.jpg
+value=3.724
+rarity=R
+type=Creature
+subtype=Nightstalker
+cost={4}{B}
+timing=main
+requires_groovy_code
