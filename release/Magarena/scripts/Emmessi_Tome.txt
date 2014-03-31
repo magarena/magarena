@@ -5,5 +5,5 @@ value=1.512
 rarity=R
 type=Artifact
 cost={4}
-ability=cost {5},{T}:Draw two cards, then discard a card.
+ability={5},{T}:Draw two cards, then discard a card.
 timing=artifact

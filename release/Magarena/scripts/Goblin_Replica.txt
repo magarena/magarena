@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Goblin
 cost={3}
 pt=2/2
-ability=cost {3}{R},Sacrifice SN:Destroy target artifact.
+ability={3}{R},Sacrifice SN:Destroy target artifact.
 timing=artifact

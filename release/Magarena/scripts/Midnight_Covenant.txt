@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={1}{B}
 enchant=pump,pos creature
-given_ability=cost {B}:SN gets +1/+1 until end of turn.
+given_ability={B}:SN gets +1/+1 until end of turn.
 timing=aura

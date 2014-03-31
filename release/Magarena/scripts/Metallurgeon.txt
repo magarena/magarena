@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Human,Artificer
 cost={1}{W}
 pt=1/2
-ability=cost {W}, {T}: Regenerate target artifact.
+ability={W}, {T}: Regenerate target artifact.
 timing=artifact

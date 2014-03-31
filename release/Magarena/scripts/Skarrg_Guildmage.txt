@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Shaman
 cost={R}{G}
 pt=2/2
-ability=cost {R}{G}: Creatures you control gain trample until end of turn.
+ability={R}{G}: Creatures you control gain trample until end of turn.
 timing=main
 requires_groovy_code

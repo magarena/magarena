@@ -5,5 +5,5 @@ value=4.317
 rarity=R
 type=Legendary,Land
 mana=u2
-ability=tap add mana {U};cost {U},{T}:Untap target legendary creature.
+ability=tap add mana {U};{U},{T}:Untap target legendary creature.
 timing=land

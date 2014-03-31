@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Mutant
 cost={6}{G}
 pt=0/0
-ability=graft 6;cost {G}:Target creature with +1/+1 counter gains trample until end of turn.
+ability=graft 6;{G}:Target creature with +1/+1 counter gains trample until end of turn.
 timing=main

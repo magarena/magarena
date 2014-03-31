@@ -8,5 +8,5 @@ subtype=Spirit
 cost={2}{B}
 pt=1/1
 ability=flying;\
-        cost Pay 1 life: Regenerate SN.
+        Pay 1 life: Regenerate SN.
 timing=main

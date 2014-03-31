@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=2/4
-ability=cost {W}: SN gains vigilance until end of turn.
+ability={W}: SN gains vigilance until end of turn.
 timing=main

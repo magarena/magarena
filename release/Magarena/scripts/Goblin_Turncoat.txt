@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Mercenary
 cost={1}{B}
 pt=2/1
-ability=cost Sacrifice a Goblin: Regenerate SN.
+ability=Sacrifice a Goblin: Regenerate SN.
 timing=main

@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Human,Rogue
 cost={3}{U}{B}
 pt=4/3
-ability=cost {U}{B}:SN gets -2/-0 and gains unblockable until end of turn.
+ability={U}{B}:SN gets -2/-0 and gains unblockable until end of turn.
 timing=artifact

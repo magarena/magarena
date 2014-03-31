@@ -8,5 +8,5 @@ subtype=Beast
 cost={3}{G}{G}
 pt=4/6
 ability=fading 3;\
-        cost {1}, Remove a fade counter from SN: Destroy target artifact.
+        {1}, Remove a fade counter from SN: Destroy target artifact.
 timing=main

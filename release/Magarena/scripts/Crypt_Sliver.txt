@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={1}{B}
 pt=1/1
-ability=lord all Slivers have "cost {T}: Regenerate target Sliver."
+ability=lord all Slivers have "{T}: Regenerate target Sliver."
 static=all
 timing=main

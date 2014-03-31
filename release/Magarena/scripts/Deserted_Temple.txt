@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/deserted%20temple.jpg
 value=4.063
 rarity=R
 type=Land
-ability=tap add mana {1};cost {1},{T}: Untap target land.
+ability=tap add mana {1};{1},{T}: Untap target land.
 timing=land

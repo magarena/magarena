@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Cleric
 cost={2}{G}{W}
 pt=2/2
-ability=cost {T}:Prevent the next 2 damage that would be dealt to target creature this turn.
+ability={T}:Prevent the next 2 damage that would be dealt to target creature this turn.
 timing=main

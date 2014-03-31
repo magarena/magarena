@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Druid
 cost={2}{B}
 pt=2/2
-ability=cost {G},{T},Sacrifice a creature:Destroy target enchantment.
+ability={G},{T},Sacrifice a creature:Destroy target enchantment.
 timing=main

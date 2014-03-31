@@ -7,5 +7,5 @@ type=Creature
 subtype=Viashino,Warrior
 cost={3}{R}
 pt=2/2
-ability=devour 2;cost {G}: SN gains trample until end of turn.
+ability=devour 2;{G}: SN gains trample until end of turn.
 timing=main

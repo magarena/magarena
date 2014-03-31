@@ -5,5 +5,5 @@ value=1.714
 rarity=U
 type=Artifact
 cost={2}
-ability=cost {3}, {T}: Target creature gains first strike until end of turn.
+ability={3}, {T}: Target creature gains first strike until end of turn.
 timing=artifact

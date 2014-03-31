@@ -5,5 +5,5 @@ value=4.048
 rarity=R
 type=Legendary,Land
 mana=w2
-ability=tap add mana {W};cost {W},{T}:Prevent the next 2 damage that would be dealt to target legendary creature this turn.
+ability=tap add mana {W};{W},{T}:Prevent the next 2 damage that would be dealt to target legendary creature this turn.
 timing=land

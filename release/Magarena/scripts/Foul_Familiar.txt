@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={2}{B}
 pt=3/1
-ability=can't block;cost {B},Pay 1 life:Return SN to its owner's hand.
+ability=can't block;{B},Pay 1 life:Return SN to its owner's hand.
 timing=main

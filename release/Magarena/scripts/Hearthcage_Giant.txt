@@ -8,5 +8,5 @@ subtype=Giant,Warrior
 cost={6}{R}{R}
 pt=5/5
 ability=When SN enters the battlefield, put two 3/1 red Elemental Shaman creature tokens onto the battlefield.;\
-        cost Sacrifice an Elemental: Target Giant creature gets +3/+1 until end of turn.
+        Sacrifice an Elemental: Target Giant creature gets +3/+1 until end of turn.
 timing=main

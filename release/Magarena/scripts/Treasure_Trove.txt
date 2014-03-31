@@ -5,5 +5,5 @@ value=3.102
 rarity=U
 type=Enchantment
 cost={2}{U}{U}
-ability=cost {2}{U}{U}: Draw a card.
+ability={2}{U}{U}: Draw a card.
 timing=enchantment

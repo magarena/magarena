@@ -7,5 +7,5 @@ type=Creature
 subtype=Ogre
 cost={3}{R}
 pt=3/2
-ability=haste;echo {1}{B};cost {B/R}: SN gets +1/+0 until end of turn.
+ability=haste;echo {1}{B};{B/R}: SN gets +1/+0 until end of turn.
 timing=main

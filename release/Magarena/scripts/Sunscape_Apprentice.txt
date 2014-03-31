@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={W}
 pt=1/1
-ability=cost {G},{T}:Target creature gets +1/+1 until end of turn.;\
-        cost {U}, {T}: Put target creature you control on top of its owner's library.
+ability={G},{T}:Target creature gets +1/+1 until end of turn.;\
+        {U}, {T}: Put target creature you control on top of its owner's library.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Carrier
 cost={2}{B}{B}
 pt=3/3
-ability=cost {T},Sacrifice SN:Target creature gets -3/-3 until end of turn.
+ability={T},Sacrifice SN:Target creature gets -3/-3 until end of turn.
 timing=main

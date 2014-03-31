@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Elf
 cost={3}
 pt=2/2
-ability=cost {1}{G}, Sacrifice SN: Destroy target enchantment.
+ability={1}{G}, Sacrifice SN: Destroy target enchantment.
 timing=main

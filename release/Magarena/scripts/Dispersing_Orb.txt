@@ -5,5 +5,5 @@ value=1.458
 rarity=U
 type=Enchantment
 cost={3}{U}{U}
-ability=cost {3}{U},Sacrifice a permanent:Return target permanent to its owner's hand.
+ability={3}{U},Sacrifice a permanent:Return target permanent to its owner's hand.
 timing=enchantment

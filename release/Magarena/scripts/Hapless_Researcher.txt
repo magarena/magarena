@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={U}
 pt=1/1
-ability=cost Sacrifice SN: Draw a card, then discard a card.
+ability=Sacrifice SN: Draw a card, then discard a card.
 timing=main

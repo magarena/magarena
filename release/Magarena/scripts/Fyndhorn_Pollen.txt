@@ -5,5 +5,5 @@ value=1.792
 rarity=R
 type=Enchantment
 cost={2}{G}
-ability=lord all creatures get -1/-0;cost {1}{G}:All creatures get -1/-0 until end of turn.
+ability=lord all creatures get -1/-0;{1}{G}:All creatures get -1/-0 until end of turn.
 timing=enchantment

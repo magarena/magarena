@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Shaman
 cost={3}{R}
 pt=1/1
-ability=infect;cost {1}{R},{T}:SN deals 1 damage to target creature or player.
+ability=infect;{1}{R},{T}:SN deals 1 damage to target creature or player.
 timing=main

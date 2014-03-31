@@ -8,5 +8,5 @@ subtype=Human,Nomad
 cost={W}
 pt=1/1
 ability=At the beginning of your upkeep, put a currency counter on SN.;\
-        cost {YourUpkeep},Remove two currency counters from SN: Untap target basic land.
+        {YourUpkeep},Remove two currency counters from SN: Untap target basic land.
 timing=main

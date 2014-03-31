@@ -7,5 +7,5 @@ type=Creature
 subtype=Shapeshifter
 cost={2}{B}
 pt=2/2
-ability=changeling;cost {B}: SN gains deathtouch until end of turn.
+ability=changeling;{B}: SN gains deathtouch until end of turn.
 timing=main

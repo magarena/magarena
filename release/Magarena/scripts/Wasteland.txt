@@ -5,5 +5,5 @@ value=4.591
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        cost {T},Sacrifice SN: Destroy target nonbasic land.
+        {T},Sacrifice SN: Destroy target nonbasic land.
 timing=land

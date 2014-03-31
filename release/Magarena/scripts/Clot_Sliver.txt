@@ -8,5 +8,5 @@ subtype=Sliver
 cost={1}{B}
 pt=1/1
 static=all
-ability=lord all Slivers have "cost {2}: Regenerate SN."
+ability=lord all Slivers have "{2}: Regenerate SN."
 timing=main

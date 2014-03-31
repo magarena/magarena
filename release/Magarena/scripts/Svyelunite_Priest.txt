@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Cleric
 cost={1}{U}
 pt=1/1
-ability=cost {YourUpkeep},{U}{U},{T}:Target creature gains shroud until end of turn.
+ability={YourUpkeep},{U}{U},{T}:Target creature gains shroud until end of turn.
 timing=main

@@ -6,5 +6,5 @@ rarity=R
 type=Artifact
 cost={6}
 ability=At the beginning of your upkeep, draw a card.;\
-        cost {T}: SN deals 1 damage to target creature or player.
+        {T}: SN deals 1 damage to target creature or player.
 timing=artifact

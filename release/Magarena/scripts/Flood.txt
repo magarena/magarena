@@ -5,5 +5,5 @@ value=3.857
 rarity=C
 type=Enchantment
 cost={U}
-ability=cost {U}{U}: Tap target creature without flying.
+ability={U}{U}: Tap target creature without flying.
 timing=enchantment

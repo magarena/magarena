@@ -5,5 +5,5 @@ value=3.125
 rarity=R
 type=Legendary,Artifact
 cost={2}
-ability=cost {T}:Target legendary creature gets +2/+2 until end of turn.
+ability={T}:Target legendary creature gets +2/+2 until end of turn.
 timing=artifact

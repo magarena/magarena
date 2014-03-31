@@ -6,5 +6,5 @@ rarity=R
 type=Artifact
 cost={6}
 ability=echo {6};\
-        cost {T}: Draw a card.
+        {T}: Draw a card.
 timing=artifact

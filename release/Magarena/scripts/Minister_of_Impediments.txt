@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Advisor
 cost={2}{W/U}
 pt=1/1
-ability=cost {T}: Tap target creature.
+ability={T}: Tap target creature.
 timing=main

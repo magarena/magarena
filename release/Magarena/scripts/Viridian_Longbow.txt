@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={1}
 equip={3}
-given_ability=cost {T}:SN deals 1 damage to target creature or player.
+given_ability={T}:SN deals 1 damage to target creature or player.
 timing=equipment

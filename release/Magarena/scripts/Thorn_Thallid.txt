@@ -8,5 +8,5 @@ subtype=Fungus
 cost={1}{G}{G}
 pt=2/2
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
-        cost Remove three spore counters from SN: SN deals 1 damage to target creature or player.
+        Remove three spore counters from SN: SN deals 1 damage to target creature or player.
 timing=main

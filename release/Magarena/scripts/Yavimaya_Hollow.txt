@@ -5,5 +5,5 @@ value=4.304
 rarity=R
 type=Legendary,Land
 ability=tap add mana {1};\
-        cost {G}, {T}: Regenerate target creature.
+        {G}, {T}: Regenerate target creature.
 timing=land

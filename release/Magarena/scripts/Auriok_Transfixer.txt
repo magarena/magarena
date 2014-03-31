@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Scout
 cost={W}
 pt=1/1
-ability=cost {W},{T}: Tap target artifact.
+ability={W},{T}: Tap target artifact.
 timing=main

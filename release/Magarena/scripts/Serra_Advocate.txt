@@ -7,5 +7,5 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=2/2
-ability=flying;cost {T}:Target attacking or blocking creature gets +2/+2 until end of turn.
+ability=flying;{T}:Target attacking or blocking creature gets +2/+2 until end of turn.
 timing=main

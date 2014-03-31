@@ -5,5 +5,5 @@ value=4.250
 rarity=U
 type=Artifact
 cost={4}
-ability=cost {1},{T}: Tap target artifact, creature, or land.
+ability={1},{T}: Tap target artifact, creature, or land.
 timing=artifact

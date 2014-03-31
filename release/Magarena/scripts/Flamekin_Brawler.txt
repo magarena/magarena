@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Warrior
 cost={R}
 pt=0/2
-ability=cost {R}: SN gets +1/+0 until end of turn.
+ability={R}: SN gets +1/+0 until end of turn.
 timing=main

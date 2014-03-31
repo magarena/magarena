@@ -7,5 +7,5 @@ type=Creature
 subtype=Hound
 cost={1}{W}
 pt=2/2
-ability=cost Discard a card:SN gains first strike until end of turn.
+ability=Discard a card:SN gains first strike until end of turn.
 timing=main

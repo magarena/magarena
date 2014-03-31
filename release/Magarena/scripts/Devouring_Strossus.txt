@@ -8,6 +8,6 @@ subtype=Horror
 cost={5}{B}{B}{B}
 pt=9/9
 ability=flying;trample;\
-        cost Sacrifice a creature: Regenerate SN.
+        Sacrifice a creature: Regenerate SN.
 timing=main
 requires_groovy_code

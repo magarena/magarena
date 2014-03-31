@@ -5,5 +5,5 @@ value=2.744
 rarity=U
 type=Artifact
 cost={4}
-ability=enters with counter charge 3;cost {B}{B},{T}:Put a charge counter on SN.;cost {2},{T},Remove a charge counter from SN:Put a -1/-1 counter on target creature.
+ability=enters with counter charge 3;{B}{B},{T}:Put a charge counter on SN.;{2},{T},Remove a charge counter from SN:Put a -1/-1 counter on target creature.
 timing=artifact

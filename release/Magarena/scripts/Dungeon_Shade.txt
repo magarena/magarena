@@ -7,5 +7,5 @@ type=Creature
 subtype=Shade,Spirit
 cost={3}{B}
 pt=1/1
-ability=flying;cost {B}: SN gets +1/+1 until end of turn.
+ability=flying;{B}: SN gets +1/+1 until end of turn.
 timing=main

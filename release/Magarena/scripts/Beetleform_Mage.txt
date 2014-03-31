@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Insect,Wizard
 cost={1}{G}{U}
 pt=2/2
-ability=cost {G}{B},{Once}:SN gets +2/+2 and gains flying until end of turn.
+ability={G}{B},{Once}:SN gets +2/+2 and gains flying until end of turn.
 timing=main

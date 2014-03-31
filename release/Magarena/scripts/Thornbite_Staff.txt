@@ -7,6 +7,6 @@ type=Tribal,Artifact
 subtype=Shaman,Equipment
 cost={2}
 equip={4}
-given_ability=cost {2},{T}: SN deals 1 damage to target creature or player.
+given_ability={2},{T}: SN deals 1 damage to target creature or player.
 timing=equipment
 requires_groovy_code

@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={4}{W}
 enchant=pump,pos land
-given_ability=cost {T}:Tap target creature.
+given_ability={T}:Tap target creature.
 timing=aura

@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/bazaar%20of%20baghdad.jpg
 value=4.533
 rarity=R
 type=Land
-ability=cost {T}:Draw two cards, then discard three cards.
+ability={T}:Draw two cards, then discard three cards.
 timing=land

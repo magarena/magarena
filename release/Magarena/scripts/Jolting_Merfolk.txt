@@ -8,5 +8,5 @@ subtype=Merfolk
 cost={2}{U}{U}
 pt=2/2
 ability=fading 4;\
-        cost Remove a fade counter from SN: Tap target creature.
+        Remove a fade counter from SN: Tap target creature.
 timing=main

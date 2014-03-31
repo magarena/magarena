@@ -8,5 +8,5 @@ subtype=Equipment
 cost={3}
 equip={4}
 given_ability=SN doesn't untap during your untap step.;\
-        cost {T}: SN deals 2 damage to target creature or player.
+        {T}: SN deals 2 damage to target creature or player.
 timing=equipment

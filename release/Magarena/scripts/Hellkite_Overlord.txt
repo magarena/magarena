@@ -7,5 +7,5 @@ type=Creature
 subtype=Dragon
 cost={4}{B}{R}{R}{G}
 pt=8/8
-ability=flying;trample;haste;regenerate {B}{G};cost {R}: SN gets +1/+0 until end of turn.
+ability=flying;trample;haste;regenerate {B}{G};{R}: SN gets +1/+0 until end of turn.
 timing=fmain

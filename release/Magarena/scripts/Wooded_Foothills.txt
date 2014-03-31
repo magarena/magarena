@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/wooded%20foothills.jpg
 value=4.585
 rarity=R
 type=Land
-ability=cost {T},Pay 1 life,Sacrifice SN:Search your library for a Mountain or Forest card and put it onto the battlefield. Then shuffle your library.
+ability={T},Pay 1 life,Sacrifice SN:Search your library for a Mountain or Forest card and put it onto the battlefield. Then shuffle your library.
 timing=land

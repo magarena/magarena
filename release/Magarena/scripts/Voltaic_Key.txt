@@ -5,5 +5,5 @@ value=4.593
 rarity=U
 type=Artifact
 cost={1}
-ability=cost {1},{T}:Untap target artifact.
+ability={1},{T}:Untap target artifact.
 timing=artifact

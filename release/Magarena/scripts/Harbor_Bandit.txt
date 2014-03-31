@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Rogue
 cost={2}{B}
 pt=2/2
-ability=cost {1}{U}: SN gains unblockable until end of turn.
+ability={1}{U}: SN gains unblockable until end of turn.
 timing=main
 requires_groovy_code

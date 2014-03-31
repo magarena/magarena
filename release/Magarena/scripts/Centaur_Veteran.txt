@@ -8,5 +8,5 @@ subtype=Centaur
 cost={5}{G}
 pt=3/3
 ability=trample;\
-        cost {G}, Discard a card: Regenerate SN.
+        {G}, Discard a card: Regenerate SN.
 timing=main

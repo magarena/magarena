@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={5}{B}{B}
 pt=4/4
-ability=cost {1}{B}: Regenerate target Zombie.
+ability={1}{B}: Regenerate target Zombie.
 timing=fmain
 requires_groovy_code

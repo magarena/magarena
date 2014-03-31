@@ -7,5 +7,5 @@ type=Creature
 subtype=Manticore
 cost={2}{R}{R}
 pt=2/2
-ability=flying;cost {R},{T}:SN deals 1 damage to target attacking or blocking creature.
+ability=flying;{R},{T}:SN deals 1 damage to target attacking or blocking creature.
 timing=main

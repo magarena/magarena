@@ -5,6 +5,6 @@ value=1.810
 rarity=U
 type=Artifact
 cost={2}
-ability=cost {3},{T}:Exile target card from a graveyard.;\
-        cost {1},Sacrifice SN:Exile target card from a graveyard.
+ability={3},{T}:Exile target card from a graveyard.;\
+        {1},Sacrifice SN:Exile target card from a graveyard.
 timing=artifact

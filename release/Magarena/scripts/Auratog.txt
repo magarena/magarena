@@ -7,5 +7,5 @@ type=Creature
 subtype=Atog
 cost={1}{W}
 pt=1/2
-ability=cost Sacrifice an enchantment:SN gets +2/+2 until end of turn.
+ability=Sacrifice an enchantment:SN gets +2/+2 until end of turn.
 timing=main

@@ -5,5 +5,5 @@ value=4.134
 rarity=C
 type=Artifact
 cost={0}
-ability=cost Sacrifice SN: Regenerate target artifact.
+ability=Sacrifice SN: Regenerate target artifact.
 timing=artifact

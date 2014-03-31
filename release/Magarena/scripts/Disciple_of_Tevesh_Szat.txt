@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{B}{B}
 pt=3/1
-ability=cost {T}:Target creature gets -1/-1 until end of turn.;cost {4}{B}{B},{T},Sacrifice SN:Target creature gets -6/-6 until end of turn.
+ability={T}:Target creature gets -1/-1 until end of turn.;{4}{B}{B},{T},Sacrifice SN:Target creature gets -6/-6 until end of turn.
 timing=main

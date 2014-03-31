@@ -8,5 +8,5 @@ subtype=Equipment
 cost={2}
 equip={1}
 given_pt=+1/+2
-given_ability=cost {T}:Destroy target equipment.
+given_ability={T}:Destroy target equipment.
 timing=equipment

@@ -5,6 +5,6 @@ value=2.243
 rarity=U
 type=Enchantment
 cost={G}{G}
-ability=cost {G}{G}:Return SN to its owner's hand.
+ability={G}{G}:Return SN to its owner's hand.
 timing=enchantment
 requires_groovy_code

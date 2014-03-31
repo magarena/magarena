@@ -8,5 +8,5 @@ subtype=Human,Samurai
 cost={2}{G}
 pt=2/1
 ability=can't be countered;bushido 2;\
-        cost {2}: Regenerate target Samurai.
+        {2}: Regenerate target Samurai.
 timing=main

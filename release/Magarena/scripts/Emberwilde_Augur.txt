@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Shaman
 cost={1}{R}
 pt=2/1
-ability=cost {YourUpkeep}, Sacrifice SN:SN deals 3 damage to target player.
+ability={YourUpkeep}, Sacrifice SN:SN deals 3 damage to target player.
 timing=main

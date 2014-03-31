@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={R}
 enchant=pump,pos creature
-ability=cost Sacrifice SN:SN deals 1 damage to target creature.
+ability=Sacrifice SN:SN deals 1 damage to target creature.
 given_pt=+1/+0
 timing=enchantment

@@ -7,5 +7,5 @@ type=Creature
 subtype=Wall
 cost={2}{R}
 pt=0/6
-ability=defender;cost {R}: SN gets +1/-1 until end of turn.
+ability=defender;{R}: SN gets +1/-1 until end of turn.
 timing=main

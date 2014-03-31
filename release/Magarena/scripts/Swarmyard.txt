@@ -5,5 +5,5 @@ value=4.138
 rarity=R
 type=Land
 ability=tap add mana {1};\
-        cost {T}: Regenerate target Insect, Rat, Spider, or Squirrel.
+        {T}: Regenerate target Insect, Rat, Spider, or Squirrel.
 timing=land

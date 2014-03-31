@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Knight
 cost={1}{W/B}{W/B}
 pt=2/1
-ability=protection from white;protection from black;cost {W/B}{W/B}: SN gets +1/+0 until end of turn.;cost {W/B}: SN gains flying until end of turn.;cost {W/B}: SN gains first strike until end of turn.
+ability=protection from white;protection from black;{W/B}{W/B}: SN gets +1/+0 until end of turn.;{W/B}: SN gains flying until end of turn.;{W/B}: SN gains first strike until end of turn.
 timing=main

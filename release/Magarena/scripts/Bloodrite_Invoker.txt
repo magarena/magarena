@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire,Shaman
 cost={2}{B}
 pt=3/1
-ability=cost {8}: Target player loses 3 life and you gain 3 life.
+ability={8}: Target player loses 3 life and you gain 3 life.
 timing=main

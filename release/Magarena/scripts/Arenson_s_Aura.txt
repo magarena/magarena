@@ -5,5 +5,5 @@ value=2.717
 rarity=U
 type=Enchantment
 cost={2}{W}
-ability=cost {W},Sacrifice an enchantment:Destroy target enchantment.;cost {3}{U}{U}:Counter target enchantment spell.
+ability={W},Sacrifice an enchantment:Destroy target enchantment.;{3}{U}{U}:Counter target enchantment spell.
 timing=enchantment

@@ -7,5 +7,5 @@ type=Creature
 subtype=Thalakos
 cost={2}{U}{U}
 pt=3/3
-ability=cost Discard a card: SN gains shadow until end of turn.
+ability=Discard a card: SN gains shadow until end of turn.
 timing=main

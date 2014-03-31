@@ -5,5 +5,5 @@ value=2.475
 rarity=C
 type=Artifact
 cost={2}{B}
-ability=cost {T}: Target player loses 1 life.
+ability={T}: Target player loses 1 life.
 timing=artifact

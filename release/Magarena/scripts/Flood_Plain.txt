@@ -5,5 +5,5 @@ value=4.033
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
-        cost {T},Sacrifice SN: Search your library for a Plains or Island card and put it onto the battlefield. Then shuffle your library.
+        {T},Sacrifice SN: Search your library for a Plains or Island card and put it onto the battlefield. Then shuffle your library.
 timing=land

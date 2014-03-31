@@ -7,5 +7,5 @@ type=Creature
 subtype=Wall
 cost={2}{W}
 pt=0/4
-ability=cost {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.;defender
+ability={T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.;defender
 timing=main

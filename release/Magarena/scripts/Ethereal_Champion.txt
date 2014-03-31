@@ -7,5 +7,5 @@ type=Creature
 subtype=Avatar
 cost={2}{W}{W}{W}
 pt=3/4
-ability=cost Pay 1 life:Prevent the next 1 damage that would be dealt to SN this turn.
+ability=Pay 1 life:Prevent the next 1 damage that would be dealt to SN this turn.
 timing=main

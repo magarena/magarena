@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Druid
 cost={G}
 pt=1/1
-ability=cost {G}, {T}, Sacrifice a Forest: Regenerate target creature.
+ability={G}, {T}, Sacrifice a Forest: Regenerate target creature.
 timing=main

@@ -5,5 +5,5 @@ value=1.926
 rarity=U
 type=Artifact
 cost={2}
-ability=cost {3},{T},Sacrifice SN:Destroy target land.
+ability={3},{T},Sacrifice SN:Destroy target land.
 timing=artifact

@@ -7,5 +7,5 @@ type=Creature
 subtype=Whale
 cost={3}{U}{U}
 pt=3/5
-ability=cost {U}: SN gains flying until end of turn.
+ability={U}: SN gains flying until end of turn.
 timing=main

@@ -8,5 +8,5 @@ subtype=Gorgon
 cost={3}{B}{B}{B}
 pt=5/5
 ability=flying;\
-        cost {T}: Destroy target creature. It can't be regenerated.
+        {T}: Destroy target creature. It can't be regenerated.
 timing=main

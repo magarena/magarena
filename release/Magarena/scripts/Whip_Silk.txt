@@ -8,5 +8,5 @@ subtype=Aura
 cost={G}
 enchant=flying,pos creature
 given_ability=reach
-ability=cost {G}:Return SN to its owner's hand.
+ability={G}:Return SN to its owner's hand.
 timing=enchantment

@@ -7,6 +7,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={3}{U}
 pt=2/3
-ability=cost {T}:Target creature gains flying until end of turn.
+ability={T}:Target creature gains flying until end of turn.
 timing=main
 requires_groovy_code

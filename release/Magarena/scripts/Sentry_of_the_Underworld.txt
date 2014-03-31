@@ -8,5 +8,5 @@ subtype=Griffin,Skeleton
 cost={3}{W}{B}
 pt=3/3
 ability=flying;vigilance;\
-        cost {W}{B}, Pay 3 life: Regenerate SN.
+        {W}{B}, Pay 3 life: Regenerate SN.
 timing=main

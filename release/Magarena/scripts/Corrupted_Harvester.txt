@@ -7,5 +7,5 @@ type=Creature
 subtype=Horror
 cost={4}{B}{B}
 pt=6/3
-ability=cost {B}, Sacrifice a creature: Regenerate SN.
+ability={B}, Sacrifice a creature: Regenerate SN.
 timing=main

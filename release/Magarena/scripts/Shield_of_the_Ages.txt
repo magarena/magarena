@@ -5,5 +5,5 @@ value=2.571
 rarity=U
 type=Artifact
 cost={2}
-ability=cost {2}: Prevent the next 1 damage that would be dealt to you this turn.
+ability={2}: Prevent the next 1 damage that would be dealt to you this turn.
 timing=artifact

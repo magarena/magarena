@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Druid
 cost={2}{G}{G}
 pt=2/2
-ability=cost {1}{G},Sacrifice a land: Put two 1/1 green Squirrel creature tokens onto the battlefield.;\
-        cost {1}{G},Sacrifice a land: Squirrel creatures get +1/+1 until end of turn.
+ability={1}{G},Sacrifice a land: Put two 1/1 green Squirrel creature tokens onto the battlefield.;\
+        {1}{G},Sacrifice a land: Squirrel creatures get +1/+1 until end of turn.
 timing=main

@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={5}
 pt=3/3
-ability=cost {2}: SN gets +1/+0 until end of turn.
+ability={2}: SN gets +1/+0 until end of turn.
 timing=main

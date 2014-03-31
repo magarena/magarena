@@ -5,5 +5,5 @@ value=3.646
 rarity=R
 type=Land
 ability=tap add mana {1};\
-        cost {1}{U}{B}, {T}: Target player puts the top three cards of his or her library into his or her graveyard.
+        {1}{U}{B}, {T}: Target player puts the top three cards of his or her library into his or her graveyard.
 timing=land

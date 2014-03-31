@@ -5,5 +5,5 @@ value=4.266
 rarity=R
 type=Enchantment
 cost={1}{B}{B}
-ability=cost {B}, Sacrifice a creature: Destroy target nonblack creature.
+ability={B}, Sacrifice a creature: Destroy target nonblack creature.
 timing=enchantment

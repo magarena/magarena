@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={G}
 pt=1/1
-ability=cost {R},{T}:Target creature gains first strike until end of turn.;cost {W},{T}:Tap target creature.
+ability={R},{T}:Target creature gains first strike until end of turn.;{W},{T}:Tap target creature.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Spirit
 cost={3}{G}{W}{U}
 pt=3/3
-ability=flying;cost {T}:SN deals 2 damage to target creature.
+ability=flying;{T}:SN deals 2 damage to target creature.
 timing=main

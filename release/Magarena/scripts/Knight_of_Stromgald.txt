@@ -8,6 +8,6 @@ subtype=Human,Knight
 cost={B}{B}
 pt=2/1
 ability=protection from white;\
-        cost {B}: SN gains first strike until end of turn.;\
-        cost {B}{B}: SN gets +1/+0 until end of turn.
+        {B}: SN gains first strike until end of turn.;\
+        {B}{B}: SN gets +1/+0 until end of turn.
 timing=main

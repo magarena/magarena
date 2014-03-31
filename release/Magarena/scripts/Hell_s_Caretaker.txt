@@ -7,5 +7,5 @@ type=Creature
 subtype=Horror
 cost={3}{B}
 pt=1/1
-ability=cost {YourUpkeep},{T},Sacrifice a creature:Return target creature card from your graveyard to the battlefield.
+ability={YourUpkeep},{T},Sacrifice a creature:Return target creature card from your graveyard to the battlefield.
 timing=main

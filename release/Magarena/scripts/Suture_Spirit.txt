@@ -8,5 +8,5 @@ subtype=Spirit
 cost={1}{W}
 pt=1/1
 ability=flying;\
-        cost {W/B}{W/B}{W/B}: Regenerate target creature.
+        {W/B}{W/B}{W/B}: Regenerate target creature.
 timing=main

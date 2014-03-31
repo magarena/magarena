@@ -5,5 +5,5 @@ value=4.194
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        cost {T}:Regenerate target Elephant.
+        {T}:Regenerate target Elephant.
 timing=land

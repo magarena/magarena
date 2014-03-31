@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={3}{R}{R}
 pt=4/4
-ability=cost {R}: SN gets +1/-1 until end of turn.
+ability={R}: SN gets +1/-1 until end of turn.
 timing=main

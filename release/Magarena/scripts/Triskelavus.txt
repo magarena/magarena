@@ -9,5 +9,5 @@ cost={7}
 pt=1/1
 ability=flying;\
         enters with counter +1/+1 3;\
-        cost {1},Remove a +1/+1 counter from SN: Put a 1/1 colorless Triskelavite artifact creature token with flying onto the battlefield.
+        {1},Remove a +1/+1 counter from SN: Put a 1/1 colorless Triskelavite artifact creature token with flying onto the battlefield.
 timing=artifact

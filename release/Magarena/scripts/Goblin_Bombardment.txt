@@ -5,5 +5,5 @@ value=4.227
 rarity=U
 type=Enchantment
 cost={1}{R}
-ability=cost Sacrifice a creature: SN deals 1 damage to target creature or player.
+ability=Sacrifice a creature: SN deals 1 damage to target creature or player.
 timing=enchantment

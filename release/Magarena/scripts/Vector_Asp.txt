@@ -6,6 +6,6 @@ rarity=C
 type=Artifact,Creature
 subtype=Snake
 cost={1}
-ability=cost {B}: SN gains infect until end of turn.
+ability={B}: SN gains infect until end of turn.
 pt=1/1
 timing=main

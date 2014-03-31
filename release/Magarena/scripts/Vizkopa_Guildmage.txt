@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={W}{B}
 pt=2/2
-ability=cost {1}{W}{B}: Target creature gains lifelink until end of turn.
+ability={1}{W}{B}: Target creature gains lifelink until end of turn.
 timing=main
 requires_groovy_code

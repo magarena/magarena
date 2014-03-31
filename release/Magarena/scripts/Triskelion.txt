@@ -8,5 +8,5 @@ subtype=Construct
 cost={6}
 pt=1/1
 ability=enters with counter +1/+1 3;\
-        cost Remove a +1/+1 counter from SN: SN deals 1 damage to target creature or player.
+        Remove a +1/+1 counter from SN: SN deals 1 damage to target creature or player.
 timing=main

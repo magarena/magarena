@@ -8,5 +8,5 @@ subtype=Zombie,Imp
 cost={B}
 pt=1/1
 timing=main
-ability=cost Discard a card: SN gains flying until end of turn.
+ability=Discard a card: SN gains flying until end of turn.
 requires_groovy_code

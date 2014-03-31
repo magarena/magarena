@@ -5,5 +5,5 @@ value=3.347
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        cost {2},{T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+        {2},{T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=land

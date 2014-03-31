@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Troll,Warrior
 cost={1}{B}{G}
 pt=2/2
-ability=cost Sacrifice another creature: Regenerate SN.
+ability=Sacrifice another creature: Regenerate SN.
 timing=main
 requires_groovy_code

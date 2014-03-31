@@ -5,5 +5,5 @@ value=3.065
 rarity=C
 type=Artifact
 cost={1}
-ability=cost {1},Sacrifice SN:Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
+ability={1},Sacrifice SN:Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=artifact

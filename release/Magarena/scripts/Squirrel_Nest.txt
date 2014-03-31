@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}{G}
-given_ability=cost {T}: Put a 1/1 green Squirrel creature token onto the battlefield.
+given_ability={T}: Put a 1/1 green Squirrel creature token onto the battlefield.
 enchant=pump,pos land
 timing=aura

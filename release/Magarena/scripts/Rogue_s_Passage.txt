@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/rogue's%20passage.jpg
 value=3.750
 rarity=U
 type=Land
-ability=tap add mana {1};cost {4},{T}:Target creature gains unblockable until end of turn.
+ability=tap add mana {1};{4},{T}:Target creature gains unblockable until end of turn.
 timing=land

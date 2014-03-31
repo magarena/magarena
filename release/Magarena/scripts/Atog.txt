@@ -7,5 +7,5 @@ type=Creature
 subtype=Atog
 cost={1}{R}
 pt=1/2
-ability=cost Sacrifice an artifact:SN gets +2/+2 until end of turn.
+ability=Sacrifice an artifact:SN gets +2/+2 until end of turn.
 timing=main

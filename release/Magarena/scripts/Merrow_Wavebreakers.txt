@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Soldier
 cost={4}{U}
 pt=3/3
-ability=cost {1}{U},{Q}:SN gains flying until end of turn.
+ability={1}{U},{Q}:SN gains flying until end of turn.
 timing=main

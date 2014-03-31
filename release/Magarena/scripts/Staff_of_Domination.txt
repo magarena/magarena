@@ -5,9 +5,9 @@ value=4.433
 rarity=R
 type=Artifact
 cost={3}
-ability=cost {1}: Untap SN.;\
-        cost {2},{T}: You gain 1 life.;\
-        cost {3},{T}: Untap target creature.;\
-        cost {4},{T}: Tap target creature.;\
-        cost {5},{T}: Draw a card.
+ability={1}: Untap SN.;\
+        {2},{T}: You gain 1 life.;\
+        {3},{T}: Untap target creature.;\
+        {4},{T}: Tap target creature.;\
+        {5},{T}: Draw a card.
 timing=artifact

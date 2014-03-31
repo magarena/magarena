@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Gnome
 cost={3}
 pt=2/1
-ability=cost Discard a card: Regenerate SN.
+ability=Discard a card: Regenerate SN.
 timing=artifact

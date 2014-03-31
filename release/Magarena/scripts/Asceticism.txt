@@ -6,6 +6,6 @@ rarity=R
 type=Enchantment
 cost={3}{G}{G}
 ability=lord creatures you control have hexproof;\
-        cost {1}{G}: Regenerate target creature.
+        {1}{G}: Regenerate target creature.
 static=player
 timing=enchantment

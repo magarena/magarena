@@ -6,7 +6,7 @@ rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{G/U}
-ability=cost {G/U}: SN gains shroud until end of turn.;enters with counter -1/-1 4
+ability={G/U}: SN gains shroud until end of turn.;enters with counter -1/-1 4
 pt=6/6
 timing=main
 requires_groovy_code

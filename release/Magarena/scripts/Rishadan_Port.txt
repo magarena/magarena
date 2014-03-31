@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/rishadan%20port.jpg
 value=4.603
 rarity=R
 type=Land
-ability=tap add mana {1};cost {1},{T}:Tap target land.
+ability=tap add mana {1};{1},{T}:Tap target land.
 timing=land

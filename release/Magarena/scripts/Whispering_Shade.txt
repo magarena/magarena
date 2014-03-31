@@ -7,5 +7,5 @@ type=Creature
 subtype=Shade
 cost={3}{B}
 pt=1/1
-ability=swampwalk;cost {B}: SN gets +1/+1 until end of turn.
+ability=swampwalk;{B}: SN gets +1/+1 until end of turn.
 timing=main

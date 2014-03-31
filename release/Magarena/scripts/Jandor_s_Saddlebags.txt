@@ -5,5 +5,5 @@ value=1.948
 rarity=R
 type=Artifact
 cost={2}
-ability=cost {3},{T}:Untap target creature.
+ability={3},{T}:Untap target creature.
 timing=artifact

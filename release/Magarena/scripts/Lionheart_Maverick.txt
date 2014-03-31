@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={W}
 pt=1/1
-ability=vigilance;cost {4}{W}: SN gets +1/+2 until end of turn.
+ability=vigilance;{4}{W}: SN gets +1/+2 until end of turn.
 timing=main

@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Masticore
 cost={4}
 pt=4/4
-ability=cost {2}:SN deals 1 damage to target creature.;regenerate {2}
+ability={2}:SN deals 1 damage to target creature.;regenerate {2}
 timing=artifact
 requires_groovy_code

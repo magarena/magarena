@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}{W}
 pt=2/2
-ability=cost {T}: Put a 1/1 white Human creature token onto the battlefield.
+ability={T}: Put a 1/1 white Human creature token onto the battlefield.
 timing=main
 requires_groovy_code

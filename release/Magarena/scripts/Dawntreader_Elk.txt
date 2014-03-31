@@ -7,5 +7,5 @@ type=Creature
 subtype=Elk
 cost={1}{G}
 pt=2/2
-ability=cost {G},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability={G},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main

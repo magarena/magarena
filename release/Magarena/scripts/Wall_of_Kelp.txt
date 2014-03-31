@@ -8,5 +8,5 @@ subtype=Plant,Wall
 cost={U}{U}
 pt=0/3
 ability=defender;\
-        cost {U}{U},{T}: Put a 0/1 blue Plant Wall creature token with defender named Kelp onto the battlefield.
+        {U}{U},{T}: Put a 0/1 blue Plant Wall creature token with defender named Kelp onto the battlefield.
 timing=main

@@ -8,5 +8,5 @@ subtype=Wurm
 cost={6}{G}{G}
 pt=6/6
 ability=trample;\
-        cost Discard a card: Regenerate SN.
+        Discard a card: Regenerate SN.
 timing=main

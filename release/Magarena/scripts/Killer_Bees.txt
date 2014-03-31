@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={1}{G}{G}
 pt=0/1
-ability=flying;cost {G}: SN gets +1/+1 until end of turn.
+ability=flying;{G}: SN gets +1/+1 until end of turn.
 timing=main

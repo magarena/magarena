@@ -7,5 +7,5 @@ type=Creature
 subtype=Giant
 cost={5}{R}
 pt=5/6
-ability=lord Human creatures you control have "cost {R},{T}:SN deals 1 damage to target creature or player."
+ability=lord Human creatures you control have "{R},{T}:SN deals 1 damage to target creature or player."
 timing=main

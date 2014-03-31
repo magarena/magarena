@@ -5,5 +5,5 @@ value=4.009
 rarity=R
 type=Legendary,Land
 mana=r2
-ability=tap add mana {R};cost {R},{T}:Target legendary creature gains first strike until end of turn.
+ability=tap add mana {R};{R},{T}:Target legendary creature gains first strike until end of turn.
 timing=land

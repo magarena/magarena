@@ -5,5 +5,5 @@ value=2.667
 rarity=R
 type=Artifact
 cost={4}
-ability=cost {8},{T}:Target player puts the top eight cards of his or her library into his or her graveyard.
+ability={8},{T}:Target player puts the top eight cards of his or her library into his or her graveyard.
 timing=artifact

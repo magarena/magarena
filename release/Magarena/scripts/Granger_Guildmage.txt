@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={G}
 pt=1/1
-ability=cost {W},{T}: Target creature gains first strike until end of turn.
+ability={W},{T}: Target creature gains first strike until end of turn.
 timing=main
 requires_groovy_code

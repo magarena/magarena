@@ -7,6 +7,6 @@ type=Creature
 subtype=Goblin,Wizard
 cost={2}{R}{R}
 pt=1/1
-ability=cost {R}: Target Goblin gains protection from white until end of turn.
+ability={R}: Target Goblin gains protection from white until end of turn.
 timing=main
 requires_groovy_code

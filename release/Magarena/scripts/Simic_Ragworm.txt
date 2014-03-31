@@ -7,5 +7,5 @@ type=Creature
 subtype=Worm
 cost={3}{G}
 pt=3/3
-ability=cost {U}: Untap SN.
+ability={U}: Untap SN.
 timing=main

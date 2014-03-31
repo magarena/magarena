@@ -8,5 +8,5 @@ subtype=Insect
 cost={3}{B}
 pt=1/1
 ability=intimidate;\
-        cost Sacrifice SN, {Sorcery}: Target player discards two cards.
+        Sacrifice SN, {Sorcery}: Target player discards two cards.
 timing=main

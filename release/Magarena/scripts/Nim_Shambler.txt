@@ -7,6 +7,6 @@ type=Creature
 subtype=Zombie
 cost={2}{B}{B}
 pt=2/1
-ability=cost Sacrifice a creature: Regenerate SN.
+ability=Sacrifice a creature: Regenerate SN.
 timing=main
 requires_groovy_code=Nim Grotesque

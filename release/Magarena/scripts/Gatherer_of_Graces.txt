@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Druid
 cost={1}{G}
 pt=1/2
-ability=cost Sacrifice an Aura: Regenerate SN.
+ability=Sacrifice an Aura: Regenerate SN.
 timing=main
 requires_groovy_code

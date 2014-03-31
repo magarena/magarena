@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Archer
 cost={2}{U}
 pt=1/1
-ability=exalted;cost {W},{T}:SN deals 1 damage to target attacking or blocking creature.
+ability=exalted;{W},{T}:SN deals 1 damage to target attacking or blocking creature.
 timing=main

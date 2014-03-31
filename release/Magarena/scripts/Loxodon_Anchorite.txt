@@ -7,5 +7,5 @@ type=Creature
 subtype=Elephant,Cleric
 cost={2}{W}{W}
 pt=2/3
-ability=cost {T}:Prevent the next 2 damage that would be dealt to target creature or player this turn.
+ability={T}:Prevent the next 2 damage that would be dealt to target creature or player this turn.
 timing=main

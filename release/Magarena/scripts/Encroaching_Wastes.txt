@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/encroaching%20wastes.jpg
 value=2.902
 rarity=U
 type=Land
-ability=tap add mana {1};cost {4},{T},Sacrifice SN: Destroy target nonbasic land.
+ability=tap add mana {1};{4},{T},Sacrifice SN: Destroy target nonbasic land.
 timing=land

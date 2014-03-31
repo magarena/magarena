@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Scarecrow
 cost={2}
 pt=2/1
-ability=cost {2}:Target black creature gains wither until end of turn.
+ability={2}:Target black creature gains wither until end of turn.
 timing=artifact

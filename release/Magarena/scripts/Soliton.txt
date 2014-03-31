@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={5}
 pt=3/4
-ability=cost {U}: Untap SN.
+ability={U}: Untap SN.
 timing=main

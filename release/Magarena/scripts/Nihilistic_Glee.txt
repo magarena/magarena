@@ -5,6 +5,6 @@ value=1.912
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
-ability=cost {2}{B},Discard a card: Target opponent loses 1 life and you gain 1 life.
+ability={2}{B},Discard a card: Target opponent loses 1 life and you gain 1 life.
 timing=enchantment
 requires_groovy_code

@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/marsh%20flats.jpg
 value=4.477
 rarity=R
 type=Land
-ability=cost {T},Pay 1 life,Sacrifice SN:Search your library for a Plains or Swamp card and put it onto the battlefield. Then shuffle your library.
+ability={T},Pay 1 life,Sacrifice SN:Search your library for a Plains or Swamp card and put it onto the battlefield. Then shuffle your library.
 timing=land

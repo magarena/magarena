@@ -727,9 +727,9 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    ActivatedAbility("cost " + ARG.ANY, 10) {
+    ActivatedAbility("[^\"]*:" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPermanentActivation.create(ARG.any(arg)));
+            card.add(MagicPermanentActivation.create(arg.group()));
         }
     },
     AlternateCost("alt cost " + ARG.ANY, 10) {

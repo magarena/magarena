@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 given_ability=SN doesn't untap during your untap step.;\
-        cost {1},Discard a card: Untap SN.
+        {1},Discard a card: Untap SN.
 timing=enchantment
 enchant=tap,creature

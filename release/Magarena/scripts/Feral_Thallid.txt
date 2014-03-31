@@ -8,5 +8,5 @@ subtype=Fungus
 cost={3}{G}{G}{G}
 pt=6/3
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
-        cost Remove three spore counters from SN: Regenerate SN.
+        Remove three spore counters from SN: Regenerate SN.
 timing=main

@@ -8,5 +8,5 @@ subtype=Drake
 cost={1}{R}{R}
 pt=1/2
 ability=flying;\
-        cost {R}, {Once}: SN gets +1/+0 until end of turn.
+        {R}, {Once}: SN gets +1/+0 until end of turn.
 timing=main

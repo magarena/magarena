@@ -8,6 +8,6 @@ subtype=Fungus
 cost={3}{G}{G}
 pt=5/2
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
-        cost Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.;\
-        cost Sacrifice a Saproling: Regenerate target Fungus.
+        Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.;\
+        Sacrifice a Saproling: Regenerate target Fungus.
 timing=main

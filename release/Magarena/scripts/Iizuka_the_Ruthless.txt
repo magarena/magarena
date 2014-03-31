@@ -8,5 +8,5 @@ subtype=Human,Samurai
 cost={3}{R}{R}
 pt=3/3
 ability=bushido 2;\
-        cost {2}{R}, Sacrifice a Samurai: Samurai creatures you control gain double strike until end of turn.
+        {2}{R}, Sacrifice a Samurai: Samurai creatures you control gain double strike until end of turn.
 timing=main

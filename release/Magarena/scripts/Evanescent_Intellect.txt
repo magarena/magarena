@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={U}
 enchant=pump,pos creature
-given_ability=cost {1}{U},{T}:Target player puts the top three cards of his or her library into his or her graveyard.
+given_ability={1}{U},{T}:Target player puts the top three cards of his or her library into his or her graveyard.
 timing=aura

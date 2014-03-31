@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}
 pt=2/2
-ability=cost {W}: SN gets +0/+1 until end of turn.
+ability={W}: SN gets +0/+1 until end of turn.
 timing=main

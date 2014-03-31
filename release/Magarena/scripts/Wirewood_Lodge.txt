@@ -5,5 +5,5 @@ value=4.358
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        cost {G},{T}: Untap target Elf.
+        {G},{T}: Untap target Elf.
 timing=land

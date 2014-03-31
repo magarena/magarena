@@ -6,5 +6,5 @@ type=Creature
 subtype=Kithkin,Soldier
 color=w
 cost={0}
-ability=cost {W},{T}:Tap target creature.
+ability={W},{T}:Tap target creature.
 pt=1/1

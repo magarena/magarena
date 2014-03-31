@@ -9,6 +9,6 @@ cost={4}{G}{W}
 pt=3/4
 ability=lord other green creatures you control get +1/+1;\
         lord other white creatures you control get +1/+1;\
-        cost {T}: Put a legendary 2/2 green and white Wolf creature token named Voja onto the battlefield.
+        {T}: Put a legendary 2/2 green and white Wolf creature token named Voja onto the battlefield.
 static=player
 timing=main

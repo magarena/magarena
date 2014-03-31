@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental,Shaman
 cost={2}{R}
 pt=0/1
-ability=cost {T}:SN deals 1 damage to target player.
+ability={T}:SN deals 1 damage to target player.
 timing=main
 requires_groovy_code

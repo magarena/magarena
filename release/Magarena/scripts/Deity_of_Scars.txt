@@ -8,5 +8,5 @@ subtype=Spirit,Avatar
 cost={B/G}{B/G}{B/G}{B/G}{B/G}
 pt=7/7
 ability=trample;enters with counter -1/-1 2;\
-        cost {B/G}, Remove a -1/-1 counter from SN: Regenerate SN.
+        {B/G}, Remove a -1/-1 counter from SN: Regenerate SN.
 timing=main

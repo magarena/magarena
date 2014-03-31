@@ -7,5 +7,5 @@ type=Creature
 subtype=Lizard
 cost={1}{R}
 pt=1/1
-ability=can't block;cost {R}: SN gets +1/+0 until end of turn.
+ability=can't block;{R}: SN gets +1/+0 until end of turn.
 timing=main

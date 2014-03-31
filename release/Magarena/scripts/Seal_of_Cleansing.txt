@@ -5,5 +5,5 @@ value=4.309
 rarity=C
 type=Enchantment
 cost={1}{W}
-ability=cost Sacrifice SN: Destroy target artifact or enchantment.
+ability=Sacrifice SN: Destroy target artifact or enchantment.
 timing=enchantment

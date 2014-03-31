@@ -5,5 +5,5 @@ value=3.329
 rarity=U
 type=Artifact
 cost={2}
-ability=cost {T}:Tap target artifact.
+ability={T}:Tap target artifact.
 timing=artifact

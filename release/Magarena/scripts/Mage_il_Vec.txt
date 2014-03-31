@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{R}
 pt=2/2
-ability=cost {T},Discard a card at random:SN deals 1 damage to target creature or player.
+ability={T},Discard a card at random:SN deals 1 damage to target creature or player.
 timing=main

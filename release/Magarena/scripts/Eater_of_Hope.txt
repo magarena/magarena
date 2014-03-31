@@ -8,6 +8,6 @@ subtype=Demon
 cost={5}{B}{B}
 pt=6/4
 ability=flying;\
-        cost Sacrifice another creature: Regenerate SN.
+        Sacrifice another creature: Regenerate SN.
 timing=main
 requires_groovy_code

@@ -8,6 +8,6 @@ subtype=Faerie,Wizard
 cost={3}{U}
 pt=2/2
 ability=flying;\
-        cost {U},Sacrifice SN: Counter target noncreature spell.;\
+        {U},Sacrifice SN: Counter target noncreature spell.;\
         persist
 timing=main

@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=2/3
-ability=cost {T}:SN deals 1 damage to target creature with flying.
+ability={T}:SN deals 1 damage to target creature with flying.
 timing=artifact

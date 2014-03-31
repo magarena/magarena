@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=0/2
-ability=cost {T}: You gain 1 life.
+ability={T}: You gain 1 life.
 timing=main

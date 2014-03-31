@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={U/R}
 pt=1/1
-ability=cost {U/R}: SN gains flying until end of turn.
+ability={U/R}: SN gains flying until end of turn.
 timing=main

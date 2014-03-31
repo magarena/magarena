@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 enchant=pump,pos land
-given_ability=cost {T},{Sorcery}:Target creature gains flying until end of turn.
+given_ability={T},{Sorcery}:Target creature gains flying until end of turn.
 timing=enchantment

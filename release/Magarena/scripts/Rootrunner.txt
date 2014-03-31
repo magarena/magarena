@@ -8,5 +8,5 @@ subtype=Spirit
 cost={2}{G}{G}
 pt=3/3
 ability=soulshift 3;\
-        cost {G}{G}, Sacrifice SN: Put target land on top of its owner's library.
+        {G}{G}, Sacrifice SN: Put target land on top of its owner's library.
 timing=main

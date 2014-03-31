@@ -5,5 +5,5 @@ value=4.067
 rarity=U
 type=Land
 mana=b1g1r1u1w1
-ability=tap add mana {1};cost {T}:Put a charge counter on SN.;tap drain add mana any
+ability=tap add mana {1};{T}:Put a charge counter on SN.;tap drain add mana any
 timing=land

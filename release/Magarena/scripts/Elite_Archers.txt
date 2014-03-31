@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier,Archer
 cost={5}{W}
 pt=3/3
-ability=cost {T}:SN deals 3 damage to target attacking or blocking creature.
+ability={T}:SN deals 3 damage to target attacking or blocking creature.
 timing=main

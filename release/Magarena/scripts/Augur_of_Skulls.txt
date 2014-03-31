@@ -7,6 +7,6 @@ type=Creature
 subtype=Skeleton,Wizard
 cost={1}{B}
 pt=1/1
-ability=cost {1}{B}:Regenerate SN.;\
-        cost {YourUpkeep},Sacrifice SN:Target player discards two cards.
+ability={1}{B}:Regenerate SN.;\
+        {YourUpkeep},Sacrifice SN:Target player discards two cards.
 timing=main

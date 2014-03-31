@@ -5,5 +5,5 @@ value=2.962
 rarity=R
 type=Artifact
 cost={4}
-ability=cost {8},{T}: Draw four cards.
+ability={8},{T}: Draw four cards.
 timing=artifact

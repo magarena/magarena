@@ -5,5 +5,5 @@ value=3.212
 rarity=U
 type=Enchantment
 cost={2}{G}
-ability=cost {G},Discard a card: Target creature gets +2/+2 until end of turn.;cost {G},Sacrifice SN:Target creature gets +2/+2 until end of turn.
+ability={G},Discard a card: Target creature gets +2/+2 until end of turn.;{G},Sacrifice SN:Target creature gets +2/+2 until end of turn.
 timing=enchantment

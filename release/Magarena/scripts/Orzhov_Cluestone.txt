@@ -6,5 +6,5 @@ rarity=C
 type=Artifact
 cost={3}
 ability=tap add mana {W} or {B};\
-        cost {W}{B},{T},Sacrifice SN: Draw a card.
+        {W}{B},{T},Sacrifice SN: Draw a card.
 timing=artifact

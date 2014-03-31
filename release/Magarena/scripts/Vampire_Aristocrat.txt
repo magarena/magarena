@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire,Rogue
 cost={2}{B}
 pt=2/2
-ability=cost Sacrifice a creature: SN gets +2/+2 until end of turn.
+ability=Sacrifice a creature: SN gets +2/+2 until end of turn.
 timing=main

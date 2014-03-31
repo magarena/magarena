@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={2}{W}{U}{B}
 pt=3/4
-ability=cost {U}, {T}, Sacrifice a creature or enchantment: Counter target spell.
+ability={U}, {T}, Sacrifice a creature or enchantment: Counter target spell.
 timing=main

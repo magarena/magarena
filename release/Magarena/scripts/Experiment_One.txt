@@ -8,5 +8,5 @@ subtype=Human,Ooze
 cost={G}
 pt=1/1
 ability=evolve;\
-        cost Remove two +1/+1 counters from SN: Regenerate SN.
+        Remove two +1/+1 counters from SN: Regenerate SN.
 timing=main

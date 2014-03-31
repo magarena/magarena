@@ -7,5 +7,5 @@ type=Creature
 subtype=Faerie
 cost={2}{G}{G}
 pt=1/1
-ability=flying;cost {G}{G}{G},{T}:Target creature gains flying until end of turn.
+ability=flying;{G}{G}{G},{T}:Target creature gains flying until end of turn.
 timing=main

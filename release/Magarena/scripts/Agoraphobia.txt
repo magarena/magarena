@@ -8,5 +8,5 @@ subtype=Aura
 cost={1}{U}
 enchant=pump,neg creature
 given_pt=-5/-0
-ability=cost {2}{U}:Return SN to its owner's hand.
+ability={2}{U}:Return SN to its owner's hand.
 timing=aura

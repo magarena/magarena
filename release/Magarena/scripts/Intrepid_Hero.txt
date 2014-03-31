@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=1/1
-ability=cost {T}: Destroy target creature with power 4 or greater.
+ability={T}: Destroy target creature with power 4 or greater.
 timing=main

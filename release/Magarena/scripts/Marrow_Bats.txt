@@ -8,5 +8,5 @@ subtype=Bat,Skeleton
 cost={4}{B}
 pt=4/1
 ability=flying;\
-        cost Pay 4 life: Regenerate SN.
+        Pay 4 life: Regenerate SN.
 timing=main

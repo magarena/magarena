@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Bird,Soldier
 cost={1}{W}{W}
 pt=2/2
-ability=flying;cost {1}{W}, Sacrifice SN: Exile target attacking creature.
+ability=flying;{1}{W}, Sacrifice SN: Exile target attacking creature.
 timing=main

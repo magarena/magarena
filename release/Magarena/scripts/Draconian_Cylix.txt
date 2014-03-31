@@ -5,5 +5,5 @@ value=2.000
 rarity=R
 type=Artifact
 cost={3}
-ability=cost {2}, {T}, Discard a card at random: Regenerate target creature.
+ability={2}, {T}, Discard a card at random: Regenerate target creature.
 timing=artifact

@@ -8,5 +8,5 @@ subtype=Spirit
 cost={1}{W}
 pt=1/1
 ability=flying;\
-        cost Sacrifice SN: Regenerate target artifact.
+        Sacrifice SN: Regenerate target artifact.
 timing=main

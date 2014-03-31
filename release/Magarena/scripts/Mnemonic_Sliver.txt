@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{U}
 pt=2/2
-ability=lord all slivers have "cost {2},Sacrifice SN: Draw a card."
+ability=lord all slivers have "{2},Sacrifice SN: Draw a card."
 static=all
 timing=main

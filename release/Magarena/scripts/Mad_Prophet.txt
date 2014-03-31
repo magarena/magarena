@@ -8,5 +8,5 @@ subtype=Human,Shaman
 cost={3}{R}
 pt=2/2
 ability=haste;\
-        cost {T}, Discard a card: Draw a card.
+        {T}, Discard a card: Draw a card.
 timing=fmain

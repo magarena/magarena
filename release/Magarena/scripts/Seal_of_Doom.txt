@@ -6,5 +6,5 @@ removal=3
 rarity=C
 type=Enchantment
 cost={2}{B}
-ability=cost Sacrifice SN: Destroy target nonblack creature. It can't be regenerated.
+ability=Sacrifice SN: Destroy target nonblack creature. It can't be regenerated.
 timing=enchantment

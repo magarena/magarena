@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=3/3
-ability=cost {W}{W},{T}:Destroy target red permanent.
+ability={W}{W},{T}:Destroy target red permanent.
 timing=main

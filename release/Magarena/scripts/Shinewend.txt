@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={1}{W}
 pt=0/0
-ability=flying;enters with counter +1/+1 1;cost {1}{W},Remove a +1/+1 counter from SN:Destroy target enchantment.
+ability=flying;enters with counter +1/+1 1;{1}{W},Remove a +1/+1 counter from SN:Destroy target enchantment.
 timing=main

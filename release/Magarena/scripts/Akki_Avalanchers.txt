@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
-ability=cost {Once},Sacrifice a land:SN gets +2/+0 until end of turn.
+ability={Once},Sacrifice a land:SN gets +2/+0 until end of turn.
 timing=main

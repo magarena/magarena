@@ -8,5 +8,5 @@ subtype=Zombie
 cost={2}{B}
 pt=1/4
 ability=defender;\
-        cost Sacrifice another creature: SN gains deathtouch until end of turn.
+        Sacrifice another creature: SN gains deathtouch until end of turn.
 timing=main

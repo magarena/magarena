@@ -7,6 +7,6 @@ type=Creature
 subtype=Minotaur,Wizard
 cost={R/W}{R/W}{R/W}
 pt=3/3
-ability=cost {R/W}: SN gains first strike until end of turn.
+ability={R/W}: SN gains first strike until end of turn.
 timing=main
 requires_groovy_code

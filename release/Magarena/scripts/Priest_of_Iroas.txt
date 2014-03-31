@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={R}
 pt=1/1
-ability=cost {3}{W},Sacrifice SN:Destroy target enchantment.
+ability={3}{W},Sacrifice SN:Destroy target enchantment.
 timing=main

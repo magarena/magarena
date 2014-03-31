@@ -8,6 +8,6 @@ subtype=Spike
 cost={6}{G}
 pt=0/0
 ability=enters with counter +1/+1 6;\
-        cost {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
-        cost {1}, Remove a +1/+1 counter from SN: Regenerate SN.
+        {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
+        {1}, Remove a +1/+1 counter from SN: Regenerate SN.
 timing=main

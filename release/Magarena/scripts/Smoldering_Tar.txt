@@ -6,5 +6,5 @@ rarity=U
 type=Enchantment
 cost={2}{B}{R}
 ability=At the beginning of your upkeep, target player loses 1 life.;\
-        cost {Sorcery},Sacrifice SN: SN deals 4 damage to target creature.
+        {Sorcery},Sacrifice SN: SN deals 4 damage to target creature.
 timing=enchantment

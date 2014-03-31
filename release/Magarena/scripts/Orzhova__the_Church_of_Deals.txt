@@ -5,5 +5,5 @@ value=2.919
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        cost {3}{W}{B},{T}: Target player loses 1 life and you gain 1 life.
+        {3}{W}{B},{T}: Target player loses 1 life and you gain 1 life.
 timing=land

@@ -6,6 +6,6 @@ rarity=U
 type=Creature
 subtype=Elemental,Spellshaper
 cost={2}{R}
-ability=cost {R}, {T}, Discard a card: Put a 3/1 red Elemental creature token named Spark Elemental onto the battlefield.
+ability={R}, {T}, Discard a card: Put a 3/1 red Elemental creature token named Spark Elemental onto the battlefield.
 pt=1/3
 timing=main

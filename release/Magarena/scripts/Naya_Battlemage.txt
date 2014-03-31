@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Shaman
 cost={2}{G}
 pt=2/2
-ability=cost {R},{T}:Target creature gets +2/+0 until end of turn.;cost {W},{T}:Tap target creature.
+ability={R},{T}:Target creature gets +2/+0 until end of turn.;{W},{T}:Tap target creature.
 timing=main

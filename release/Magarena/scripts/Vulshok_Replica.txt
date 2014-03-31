@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Berserker
 cost={3}
 pt=3/1
-ability=cost {1}{R},Sacrifice SN:SN deals 3 damage to target player.
+ability={1}{R},Sacrifice SN:SN deals 3 damage to target player.
 timing=artifact

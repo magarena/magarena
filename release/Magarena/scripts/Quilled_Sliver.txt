@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={1}{W}
 pt=1/1
-ability=lord all slivers have cost {T}: SN deals 1 damage to target attacking or blocking creature.
+ability=lord all slivers have "{T}: SN deals 1 damage to target attacking or blocking creature."
 static=all
 timing=main

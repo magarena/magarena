@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=cost {T}: Counter target spell unless its controller pays {1}.
+given_ability={T}: Counter target spell unless its controller pays {1}.
 enchant=pump,pos land
 timing=aura

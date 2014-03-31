@@ -7,5 +7,5 @@ type=Creature
 subtype=Griffin
 cost={3}{U}{U}
 pt=3/2
-ability=flying;cost {1}{U},Discard a card:Return SN to its owner's hand.
+ability=flying;{1}{U},Discard a card:Return SN to its owner's hand.
 timing=main

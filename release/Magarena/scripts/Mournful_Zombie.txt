@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={2}{B}
 pt=2/1
-ability=cost {W}, {T}: Target player gains 1 life.
+ability={W}, {T}: Target player gains 1 life.
 timing=main

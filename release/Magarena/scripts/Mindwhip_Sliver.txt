@@ -8,5 +8,5 @@ subtype=Sliver
 cost={2}{B}
 pt=2/2
 static=all
-ability=lord all slivers have "cost {2}, Sacrifice SN, {Sorcery}: Target player discards a card at random."
+ability=lord all slivers have "{2}, Sacrifice SN, {Sorcery}: Target player discards a card at random."
 timing=main

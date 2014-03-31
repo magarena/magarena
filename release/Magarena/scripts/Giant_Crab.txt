@@ -7,5 +7,5 @@ type=Creature
 subtype=Crab
 cost={4}{U}
 pt=3/3
-ability=cost {U}: SN gains shroud until end of turn.
+ability={U}: SN gains shroud until end of turn.
 timing=main

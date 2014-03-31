@@ -5,5 +5,5 @@ value=4.022
 rarity=R
 type=Land
 ability=tap add mana {1};\
-        cost {1}{U}{R}, {T}: Draw a card, then discard a card.
+        {1}{U}{R}, {T}: Draw a card, then discard a card.
 timing=land

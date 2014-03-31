@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Barbarian
 cost={1}{R}{R}
 pt=2/2
-ability=first strike;haste;cost Discard a card at random:SN gains protection from white until end of turn.
+ability=first strike;haste;Discard a card at random:SN gains protection from white until end of turn.
 timing=main

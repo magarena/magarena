@@ -5,5 +5,5 @@ value=3.643
 rarity=U
 type=Land
 ability=tap add mana {1};\
-        cost {2}{G}{W},{T}: Put a 1/1 green Saproling creature token onto the battlefield.
+        {2}{G}{W},{T}: Put a 1/1 green Saproling creature token onto the battlefield.
 timing=land

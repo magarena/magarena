@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Minion
 cost={B}
 pt=1/1
-ability=cost Sacrifice SN:Target creature gets -2/-0 until end of turn.
+ability=Sacrifice SN:Target creature gets -2/-0 until end of turn.
 timing=main

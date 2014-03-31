@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Knight
 cost={2}{B}{B}
 pt=3/3
-ability=cost {B}{B},{T}:Destroy target white creature.
+ability={B}{B},{T}:Destroy target white creature.
 timing=main

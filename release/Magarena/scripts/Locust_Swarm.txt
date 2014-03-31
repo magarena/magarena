@@ -7,5 +7,5 @@ type=Creature
 subtype=Insect
 cost={3}{G}
 pt=1/1
-ability=flying;regenerate {G};cost {G}, {Once}: Untap SN.
+ability=flying;regenerate {G};{G}, {Once}: Untap SN.
 timing=main

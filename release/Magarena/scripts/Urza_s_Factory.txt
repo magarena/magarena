@@ -6,5 +6,5 @@ rarity=U
 type=Land
 subtype=Urza's
 ability=tap add mana {1};\
-        cost {T},{7}: Put a 2/2 colorless Assembly-Worker artifact creature token onto the battlefield.
+        {T},{7}: Put a 2/2 colorless Assembly-Worker artifact creature token onto the battlefield.
 timing=land

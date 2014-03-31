@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
-ability=cost {G}: Target creature gains trample until end of turn.
+ability={G}: Target creature gains trample until end of turn.
 timing=main
