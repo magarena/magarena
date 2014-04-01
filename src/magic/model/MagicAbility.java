@@ -331,7 +331,7 @@ public enum MagicAbility {
             ));
         }
     },
-    AllyGrow("ally grow",20) {
+    AllyGrow("Whenever SN or another Ally enters the battlefield under your control, you may put a \\+1/\\+1 counter on SN.",20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAllyGrowTrigger.create());
         }

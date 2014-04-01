@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Soldier,Ally
 cost={W}{W}
 pt=1/1
-ability=first strike;vigilance;ally grow
+ability=first strike;vigilance;\
+        Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
 timing=main
