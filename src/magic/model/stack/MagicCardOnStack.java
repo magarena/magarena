@@ -76,6 +76,18 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     }
     
     @Override
+    public long getStateId() {
+        return magic.MurmurHash3.hash(new long[] {
+            super.getStateId(),
+            moveLocation.ordinal(),
+            payedCost.getX(),
+            payedCost.getKicker(),
+            event.getStateId(),
+            cardDef.getIndex()
+        });
+    }
+    
+    @Override
     public MagicCardDefinition getCardDefinition() {
         return cardDef;
     }
