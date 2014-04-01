@@ -1,0 +1,11 @@
+name=Zebra Unicorn
+url=http://www.magiccards.info/query?q=%21zebra%20unicorn
+image=http://mtgimage.com/card/zebra%20unicorn.jpg
+value=3.213
+rarity=U
+type=Creature
+subtype=Unicorn
+cost={2}{G}{W}
+pt=2/2
+timing=main
+requires_groovy_code=Mourning Thrull

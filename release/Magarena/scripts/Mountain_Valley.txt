@@ -1,0 +1,9 @@
+name=Mountain Valley
+url=http://www.magiccards.info/query?q=%21mountain%20valley
+image=http://mtgimage.com/card/mountain%20valley.jpg
+value=3.525
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}, Sacrifice SN: Search your library for a Mountain or Forest card and put it onto the battlefield. Then shuffle your library.
+timing=land

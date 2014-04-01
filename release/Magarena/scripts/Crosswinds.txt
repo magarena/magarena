@@ -1,0 +1,9 @@
+name=Crosswinds
+url=http://www.magiccards.info/query?q=%21crosswinds
+image=http://mtgimage.com/card/crosswinds.jpg
+value=3.354
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=lord creatures with flying get -2/-0
+timing=enchantment

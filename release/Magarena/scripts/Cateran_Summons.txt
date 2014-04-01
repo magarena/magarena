@@ -1,0 +1,9 @@
+name=Cateran Summons
+url=http://www.magiccards.info/query?q=%21cateran%20summons
+image=http://mtgimage.com/card/cateran%20summons.jpg
+value=3.742
+rarity=U
+type=Sorcery
+cost={B}
+effect=Search your library for a Mercenary card, reveal it, and put it into your hand. Then shuffle your library.
+timing=main

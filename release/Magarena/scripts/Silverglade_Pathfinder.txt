@@ -1,0 +1,11 @@
+name=Silverglade Pathfinder
+url=http://www.magiccards.info/query?q=%21silverglade%20pathfinder
+image=http://mtgimage.com/card/silverglade%20pathfinder.jpg
+value=3.75
+rarity=U
+type=Creature
+subtype=Dryad,Spellshaper
+cost={1}{G}
+pt=1/1
+ability={1}{G}, {T}, Discard a card: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+timing=main
