@@ -169,6 +169,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public long getStateId() {
         stateId = stateId != 0 ? stateId : magic.MurmurHash3.hash(new long[] {
             cardDefinition.getIndex(),
+            card.getStateId(),
             stateFlags,
             damage,
             preventDamage,
@@ -180,6 +181,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             chosenPlayer.getId(),
             getCountersHash(),
             abilityPlayedThisTurn,
+            cachedController.getId(),
             cachedTypeFlags,
             cachedSubTypeFlags.hashCode(),
             cachedColorFlags,
