@@ -201,10 +201,11 @@ ai1 ?= MMABFast
 ai2 ?= MMABFast
 debug ?= false
 selfMode ?= false
+flags ?= 
 
 %.t: $(MAG)
 	echo `hg id -n` > $*.log
-	$(RUN) \
+	$(RUN) ${flags} \
 	-Dmagarena.dir=`pwd`/release \
 	-Ddebug=${debug} \
 	magic.DeckStrCal \
