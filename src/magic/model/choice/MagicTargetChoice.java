@@ -625,7 +625,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("a Forest or Plains card from your library");
     
     public static final MagicTargetChoice ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY = 
-        new MagicTargetChoice("a Island or Mountain card from your library");
+        new MagicTargetChoice("an Island or Mountain card from your library");
     
     public static final MagicTargetChoice SWAMP_OR_FOREST_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a Swamp or Forest card from your library");
@@ -643,7 +643,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("a Mountain or Forest card from your library");
     
     public static final MagicTargetChoice ISLAND_OR_SWAMP_CARD_FROM_LIBRARY = 
-        new MagicTargetChoice("a Island or Swamp card from your library");
+        new MagicTargetChoice("an Island or Swamp card from your library");
     
     public static final MagicTargetChoice PLAINS_OR_ISLAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a Plains or Island card from your library");
