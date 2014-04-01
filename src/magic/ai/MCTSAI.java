@@ -549,8 +549,6 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     static String obj2String(final Object obj) {
         if (obj == null) {
             return "null";
-        } else if (obj instanceof MagicBuilderPayManaCostResult) {
-            return ((MagicBuilderPayManaCostResult)obj).getText();
         } else {
             return obj.toString();
         }

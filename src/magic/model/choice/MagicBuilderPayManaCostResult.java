@@ -90,19 +90,18 @@ public class MagicBuilderPayManaCostResult implements
         }
     }
 
-    public String getText() {
+    @Override
+    public String toString() {
         final StringBuilder builder=new StringBuilder();
-        builder.append(count);
+        builder.append('c').append(count);
+        builder.append('-');
+        builder.append('w').append(weight);
+        builder.append('-');
+        builder.append('x').append(x);
         for (final int amount : amountLeft) {
             builder.append('-').append(amount);
         }
-        builder.append('-').append(weight);
         return builder.toString();
-    }
-
-    @Override
-    public String toString() {
-        return x > 0 ? "X is " + x : "";
     }
 
     @Override
