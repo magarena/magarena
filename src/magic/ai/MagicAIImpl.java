@@ -7,7 +7,6 @@ public enum MagicAIImpl {
     MCTSC("monte carlo tree search (cheat)", new MCTSAI(true)),
     VEGAS("vegas", new VegasAI(false)),
     VEGASC("vegas (cheat)", new VegasAI(true)),
-    RND("random", new RandomAI()),
     MMABFast("minimax (deck strength)", magic.ai.MMAB.DeckStrAI()),
 
     MCTS2("monte carlo tree search 2", new magic.ai.next.MCTSAI(false)),
