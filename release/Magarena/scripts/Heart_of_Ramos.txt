@@ -5,5 +5,5 @@ value=3.280
 rarity=R
 type=Artifact
 cost={3}
-ability=tap add mana {R};sac add mana {R}
+ability=tap add mana {R};Sacrifice SN: Add {R} to your mana pool.
 timing=artifact

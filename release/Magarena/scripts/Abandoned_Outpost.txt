@@ -7,5 +7,5 @@ type=Land
 mana=w3u1b1r1g1
 ability=SN enters the battlefield tapped.;\
         tap add mana {W};\
-        tap sac add mana any
+        {T}, Sacrifice SN: Add any to your mana pool.
 timing=tapland

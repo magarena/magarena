@@ -5,5 +5,5 @@ value=2.672
 rarity=C
 type=Land
 mana=w1u1b1r1g3
-ability=SN enters the battlefield tapped.;tap add mana {G};tap sac add mana any
+ability=SN enters the battlefield tapped.;tap add mana {G};{T}, Sacrifice SN: Add any to your mana pool.
 timing=tapland

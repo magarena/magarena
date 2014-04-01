@@ -7,5 +7,5 @@ type=Land
 mana=u2r2
 ability=SN enters the battlefield tapped.;\
         tap add mana {1};\
-        tap pain add mana {U} or {R}
+        {T}: Add {U} or {R} to your mana pool. SN deals 1 damage to you.
 timing=tapland

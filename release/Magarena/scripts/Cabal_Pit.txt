@@ -5,6 +5,6 @@ value=3.569
 rarity=U
 type=Land
 mana=b2
-ability=tap pain add mana {B}
+ability={T}: Add {B} to your mana pool. SN deals 1 damage to you.
 timing=land
 requires_groovy_code

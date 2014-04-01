@@ -4,5 +4,5 @@ image=http://mtgimage.com/card/archaeological%20dig.jpg
 value=3.405
 rarity=U
 type=Land
-ability=tap add mana {1};tap sac add mana any
+ability=tap add mana {1};{T}, Sacrifice SN: Add any to your mana pool.
 timing=land

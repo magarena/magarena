@@ -6,5 +6,5 @@ type=Creature
 subtype=Eldrazi,Spawn
 cost={0}
 pt=0/1
-ability=sac add mana {1}
+ability=Sacrifice SN: Add {1} to your mana pool.
 mana_or_combat

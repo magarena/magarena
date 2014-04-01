@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Druid
 cost={G}
 pt=1/1
-ability=tap pain add mana {B}
+ability={T}: Add {B} to your mana pool. SN deals 1 damage to you.
 timing=main

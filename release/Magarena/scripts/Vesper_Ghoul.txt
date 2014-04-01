@@ -8,5 +8,5 @@ subtype=Zombie,Druid
 cost={2}{B}
 mana=w2u2b2g2r2
 pt=1/1
-ability=tap pay 1 life add mana any
+ability={T}, Pay 1 life: Add any to your mana pool.
 timing=main

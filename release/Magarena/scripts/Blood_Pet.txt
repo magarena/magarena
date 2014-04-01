@@ -6,6 +6,6 @@ rarity=C
 type=Creature
 subtype=Thrull
 cost={B}
-ability=sac add mana {B}
+ability=Sacrifice SN: Add {B} to your mana pool.
 pt=1/1
 timing=main

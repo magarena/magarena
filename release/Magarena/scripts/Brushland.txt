@@ -5,5 +5,5 @@ value=4.255
 rarity=R
 type=Land
 mana=w2g2
-ability=tap add mana {1};tap pain add mana {G} or {W}
+ability=tap add mana {1};{T}: Add {G} or {W} to your mana pool. SN deals 1 damage to you.
 timing=land

@@ -7,5 +7,5 @@ mana=b1g1r1u1w1
 rarity=R
 ability=SN enters the battlefield tapped.;\
         tap add mana {1};\
-        tap pain add mana any
+        {T}: Add any to your mana pool. SN deals 1 damage to you.
 timing=tapland

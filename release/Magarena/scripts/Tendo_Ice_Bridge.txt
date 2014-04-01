@@ -5,5 +5,5 @@ value=4.282
 rarity=R
 type=Land
 mana=w1u1b1r1g1
-ability=enters with counter charge 1;tap add mana {1};tap drain add mana any
+ability=enters with counter charge 1;tap add mana {1};{T}, Remove a charge counter from SN: Add any to your mana pool.
 timing=land
