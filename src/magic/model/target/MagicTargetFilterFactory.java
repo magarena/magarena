@@ -36,6 +36,7 @@ public class MagicTargetFilterFactory {
         multiple.put("nonblack creatures", TARGET_NONBLACK_CREATURE);
         multiple.put("nonwhite creatures", TARGET_NONWHITE_CREATURE);
         multiple.put("creatures without flying", TARGET_CREATURE_WITHOUT_FLYING);
+        multiple.put("creatures with flying", TARGET_CREATURE_WITH_FLYING);
         multiple.put("all sliver creatures", TARGET_SLIVER);
         multiple.put("all creatures", TARGET_CREATURE);
         multiple.put("attacking creatures", TARGET_ATTACKING_CREATURE);
