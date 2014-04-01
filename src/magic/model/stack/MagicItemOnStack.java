@@ -199,16 +199,23 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
             return obj.hashCode();
         }
     }
+    
+    private long getStateId(final Object[] arr) {
+        final long[] keys = new long[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            keys[i] = getStateId(arr, i);
+        }
+        return magic.MurmurHash3.hash(keys);
+    }
 
+    @Override
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
-            source != null ?  source.getStateId() : -1L,
-            controller != null ? controller.getId() : -1L,
-            activation != null ? activation.hashCode() : -1L,
+            source     != null ? source.getStateId() : -1L,
+            controller != null ? controller.getId()  : -1L,
+            activation != null ? activation.hashCode()   : -1L,
             getEvent() != null ? getEvent().getStateId() : -1L,
-            getStateId(choiceResults, 0),
-            getStateId(choiceResults, 1),
-            getStateId(choiceResults, 2),
+            getStateId(choiceResults)
         });
     }
    
