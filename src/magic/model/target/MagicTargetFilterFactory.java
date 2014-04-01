@@ -74,6 +74,7 @@ public class MagicTargetFilterFactory {
         single.put("enchantment creature card from your graveyard", TARGET_ENCHANTMENT_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
+        single.put("creature card with converted mana cost 3 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
         single.put("creature card with converted mana cost 2 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
         single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
