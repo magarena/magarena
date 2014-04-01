@@ -9,4 +9,4 @@ cost={2}{G}
 pt=2/2
 ability=regenerate {W}
 timing=main
-requires_groovy_code
+requires_groovy_code=Arctic Aven

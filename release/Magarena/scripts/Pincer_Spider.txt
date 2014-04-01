@@ -9,4 +9,4 @@ cost={2}{G}
 pt=2/3
 ability=reach;kicker {3}
 timing=main
-requires_groovy_code
+requires_groovy_code=Ardent Soldier

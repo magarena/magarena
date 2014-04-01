@@ -6,4 +6,4 @@ rarity=U
 type=Enchantment
 cost={3}{B}
 timing=enchantment
-requires_groovy_code
+requires_groovy_code=Hissing Miasma

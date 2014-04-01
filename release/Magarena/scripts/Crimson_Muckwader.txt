@@ -9,4 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=regenerate {2}{B}
 timing=main
-requires_groovy_code
+requires_groovy_code=Sedge Troll
