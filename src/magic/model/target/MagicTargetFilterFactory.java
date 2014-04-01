@@ -77,6 +77,7 @@ public class MagicTargetFilterFactory {
         single.put("creature card with converted mana cost 2 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
         single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
+        single.put("Dragon permanent card from your graveyard", TARGET_DRAGON_PERMANENT_CARD_FROM_GRAVEYARD);
         
         // <color|type|subtype> card from an opponent's graveyard
         single.put("instant or sorcery card from an opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
@@ -159,6 +160,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with +1/+1 counter", TARGET_CREATURE_PLUSONE_COUNTER);
         single.put("attacking creature with flying", TARGET_ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking creature without flying", TARGET_ATTACKING_CREATURE_WITHOUT_FLYING);
+        single.put("Djinn or Efreet", TARGET_DJINN_OR_EFREET);
 
         // <color|type|subtype> you control
         single.put("basic land you control", TARGET_BASIC_LAND_YOU_CONTROL);

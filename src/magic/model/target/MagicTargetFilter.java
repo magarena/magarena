@@ -699,6 +699,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                     target.hasSubType(MagicSubType.Shaman));
         }
     };
+    
+    MagicPermanentFilterImpl TARGET_DJINN_OR_EFREET = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Djinn) ||
+                   target.hasSubType(MagicSubType.Efreet);
+        }
+    };
 
     MagicPermanentFilterImpl TARGET_GOLEM_YOU_CONTROL = Factory.creature(MagicSubType.Golem, Control.You);
 
@@ -1137,6 +1144,15 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_PERMANENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return !target.getCardDefinition().isSpell();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Graveyard;
+        }
+    };
+    
+    MagicCardFilterImpl TARGET_DRAGON_PERMANENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return !target.getCardDefinition().isSpell() && target.hasSubType(MagicSubType.Dragon);
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
