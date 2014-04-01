@@ -5,5 +5,5 @@ value=2.536
 rarity=U
 type=Artifact
 cost={3}
-ability=tap add mana {G} or {W}
+ability={T}: Add {G} or {W} to your mana pool.
 timing=artifact

@@ -7,5 +7,5 @@ rarity=L
 type=Basic,Land
 subtype=Mountain
 mana=r4
-ability=tap add mana {R}
+ability={T}: Add {R} to your mana pool.
 timing=land

@@ -5,5 +5,5 @@ value=4.749
 rarity=R
 type=Artifact
 cost={0}
-ability=tap add mana {U}
+ability={T}: Add {U} to your mana pool.
 timing=artifact

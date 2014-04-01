@@ -5,7 +5,7 @@ value=4.597
 rarity=U
 type=Land
 timing=land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {T}: Target Assembly-Worker creature gets +1/+1 until end of turn.
 mana_or_combat
 requires_groovy_code

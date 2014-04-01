@@ -6,6 +6,6 @@ rarity=R
 type=Land
 subtype=Mountain,Forest
 mana=r3g3
-ability=tap add mana {R} or {G};\
+ability={T}: Add {R} or {G} to your mana pool.;\
         As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.
 timing=land

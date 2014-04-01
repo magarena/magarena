@@ -343,7 +343,7 @@ public enum MagicAbility {
             ));
         }
     },
-    TapAddMana("tap add mana " + ARG.MANA,10) {
+    TapAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicTapManaActivation(manatype));
@@ -727,7 +727,7 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    ActivatedAbility("[^\"]*:(?!( )?Add)" + ARG.ANY, 10) {
+    ActivatedAbility("[^\"]*:(?! Add)" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPermanentActivation.create(arg.group()));
         }

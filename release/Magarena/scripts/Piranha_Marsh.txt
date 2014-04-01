@@ -7,5 +7,5 @@ type=Land
 mana=b3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target player loses 1 life.;\
-        tap add mana {B}
+        {T}: Add {B} to your mana pool.
 timing=land

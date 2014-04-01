@@ -5,6 +5,6 @@ value=2.703
 rarity=C
 type=Artifact
 cost={3}
-ability=tap add mana {G} or {U};\
+ability={T}: Add {G} or {U} to your mana pool.;\
         {G}{U},{T},Sacrifice SN: Draw a card.
 timing=artifact

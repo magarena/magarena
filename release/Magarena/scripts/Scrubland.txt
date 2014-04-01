@@ -6,5 +6,5 @@ rarity=R
 type=Land
 subtype=Plains,Swamp
 mana=b4w4
-ability=tap add mana {B} or {W}
+ability={T}: Add {B} or {W} to your mana pool.
 timing=land

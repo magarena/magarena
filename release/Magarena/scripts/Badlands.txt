@@ -6,5 +6,5 @@ rarity=R
 type=Land
 subtype=Swamp,Mountain
 mana=b4r4
-ability=tap add mana {B} or {R}
+ability={T}: Add {B} or {R} to your mana pool.
 timing=land

@@ -5,5 +5,6 @@ value=4.559
 rarity=R
 type=Legendary,Land
 mana=w1
-ability=tap add mana {W};{T}:Return target legendary creature to its owner's hand.
+ability={T}: Add {W} to your mana pool.;\
+        {T}:Return target legendary creature to its owner's hand.
 timing=land

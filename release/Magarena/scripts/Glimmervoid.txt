@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/glimmervoid.jpg
 value=4.500
 rarity=R
 type=Land
-ability=tap add mana any
+ability={T}: Add one mana of any color to your mana pool.
 timing=land
 requires_groovy_code

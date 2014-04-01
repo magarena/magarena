@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/cathedral%20of%20war.jpg
 value=3.811
 rarity=R
 type=Land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         SN enters the battlefield tapped.;\
         exalted
 timing=land

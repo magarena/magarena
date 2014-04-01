@@ -7,5 +7,5 @@ type=Artifact
 cost={1}{R}{G}
 ability=alt cost {1}, Return a basic land you control to its owner's hand named Alt;\
         SN enters the battlefield tapped.;\
-        tap add mana {R} or {G}
+        {T}: Add {R} or {G} to your mana pool.
 timing=artifact

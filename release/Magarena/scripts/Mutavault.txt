@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/mutavault.jpg
 value=4.386
 rarity=R
 type=Land
-ability=tap add mana {1}
+ability={T}: Add {1} to your mana pool.
 timing=land
 mana_or_combat
 requires_groovy_code

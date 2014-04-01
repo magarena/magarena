@@ -5,7 +5,7 @@ value=3.375
 rarity=U
 type=Artifact
 cost={3}
-ability=tap add mana {W} or {U}
+ability={T}: Add {W} or {U} to your mana pool.
 timing=artifact
 mana_or_combat
 requires_groovy_code

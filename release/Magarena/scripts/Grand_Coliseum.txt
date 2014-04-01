@@ -6,6 +6,6 @@ type=Land
 mana=b1g1r1u1w1
 rarity=R
 ability=SN enters the battlefield tapped.;\
-        tap add mana {1};\
-        {T}: Add any to your mana pool. SN deals 1 damage to you.
+        {T}: Add {1} to your mana pool.;\
+        {T}: Add one mana of any color to your mana pool. SN deals 1 damage to you.
 timing=tapland

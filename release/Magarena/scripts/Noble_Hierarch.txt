@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Druid
 cost={G}
 pt=0/1
-ability=exalted;tap add mana {G} or {W} or {U}
+ability=exalted;\
+        {T}: Add {G} or {W} or {U} to your mana pool.
 timing=main

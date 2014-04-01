@@ -5,5 +5,7 @@ value=2.838
 rarity=R
 type=Land
 mana=w2b2
-ability=SN enters the battlefield tapped.;tap add mana {1};{T}: Add {W} or {B} to your mana pool. SN deals 1 damage to you.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {1} to your mana pool.;\
+        {T}: Add {W} or {B} to your mana pool. SN deals 1 damage to you.
 timing=tapland

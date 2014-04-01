@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Unicorn
 cost={3}
 pt=1/2
-ability=tap add mana any
+ability={T}: Add one mana of any color to your mana pool.
 timing=main

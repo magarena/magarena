@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/terrain%20generator.jpg
 value=4.321
 rarity=U
 type=Land
-ability=tap add mana {1}
+ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code

@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/haunted%20fengraf.jpg
 value=3.056
 rarity=C
 type=Land
-ability=tap add mana {1}
+ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code

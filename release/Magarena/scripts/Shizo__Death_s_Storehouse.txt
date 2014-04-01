@@ -5,5 +5,6 @@ value=4.064
 rarity=R
 type=Legendary,Land
 mana=b1
-ability=tap add mana {B};{T},{B}: Target legendary creature gains fear until end of turn.
+ability={T}: Add {B} to your mana pool.;\
+        {T}, {B}: Target legendary creature gains fear until end of turn.
 timing=land

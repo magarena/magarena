@@ -5,5 +5,7 @@ value=3.688
 rarity=U
 type=Land
 mana=g3
-ability=SN enters the battlefield tapped.;tap add mana {G};graft 1
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {G} to your mana pool.;\
+        graft 1
 timing=land

@@ -6,6 +6,6 @@ rarity=R
 type=Land
 mana=u2r2
 ability=SN enters the battlefield tapped.;\
-        tap add mana {1};\
+        {T}: Add {1} to your mana pool.;\
         {T}: Add {U} or {R} to your mana pool. SN deals 1 damage to you.
 timing=tapland

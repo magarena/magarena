@@ -5,5 +5,5 @@ value=4.470
 rarity=C
 type=Artifact,Land
 mana=r4
-ability=tap add mana {R}
+ability={T}: Add {R} to your mana pool.
 timing=land

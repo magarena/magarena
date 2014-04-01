@@ -7,5 +7,5 @@ type=Creature
 subtype=Snake,Shaman
 cost={1}{G}
 pt=1/2
-ability=tap add mana {G}
+ability={T}: Add {G} to your mana pool.
 timing=main

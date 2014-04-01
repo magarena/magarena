@@ -5,6 +5,7 @@ value=3.645
 rarity=U
 type=Land
 mana=r3
-ability=SN enters the battlefield tapped.;tap add mana {R}
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} to your mana pool.
 timing=land
 requires_groovy_code

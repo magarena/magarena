@@ -5,6 +5,6 @@ value=3.792
 rarity=R
 type=Land
 mana=u3b3
-ability=tap add mana {U} or {B};\
+ability={T}: Add {U} or {B} to your mana pool.;\
         SN enters the battlefield tapped unless you control a island swamp
 timing=land

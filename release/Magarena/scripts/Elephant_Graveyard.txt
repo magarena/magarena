@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/elephant%20graveyard.jpg
 value=4.194
 rarity=U
 type=Land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {T}:Regenerate target Elephant.
 timing=land

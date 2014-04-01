@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/yavimaya%20hollow.jpg
 value=4.304
 rarity=R
 type=Legendary,Land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {G}, {T}: Regenerate target creature.
 timing=land

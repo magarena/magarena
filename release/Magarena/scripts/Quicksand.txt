@@ -4,5 +4,6 @@ image=http://mtgimage.com/card/quicksand.jpg
 value=3.907
 rarity=C
 type=Land
-ability=tap add mana {1};{T},Sacrifice SN:Target attacking creature without flying gets -1/-2 until end of turn.
+ability={T}: Add {1} to your mana pool.;\
+        {T},Sacrifice SN:Target attacking creature without flying gets -1/-2 until end of turn.
 timing=land

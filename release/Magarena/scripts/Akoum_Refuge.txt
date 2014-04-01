@@ -5,7 +5,7 @@ value=3.033
 rarity=U
 type=Land
 mana=b3r3
-ability=tap add mana {B} or {R};\
+ability={T}: Add {B} or {R} to your mana pool.;\
         SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.
 timing=tapland

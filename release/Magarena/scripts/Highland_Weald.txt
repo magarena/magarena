@@ -6,5 +6,5 @@ rarity=U
 type=Snow,Land
 mana=r3g3
 ability=SN enters the battlefield tapped.;\
-        tap add mana {R} or {G}
+        {T}: Add {R} or {G} to your mana pool.
 timing=tapland

@@ -6,6 +6,6 @@ rarity=C
 type=Land
 mana=r3
 ability=SN enters the battlefield tapped.;\
-        tap add mana {R};\
+        {T}: Add {R} to your mana pool.;\
         cycling {R}
 timing=tapland

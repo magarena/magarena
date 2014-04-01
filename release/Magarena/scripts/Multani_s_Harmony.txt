@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={G}
 enchant=pump,pos creature
-given_ability=tap add mana any
+given_ability={T}: Add one mana of any color to your mana pool.
 timing=enchantment

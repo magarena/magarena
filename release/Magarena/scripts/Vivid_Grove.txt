@@ -5,5 +5,7 @@ value=3.222
 rarity=U
 type=Land
 mana=b1g3r1u1w1
-ability=SN enters the battlefield tapped.;enters with counter charge 2;tap add mana {G};{T}, Remove a charge counter from SN: Add any to your mana pool.
+ability=SN enters the battlefield tapped.;enters with counter charge 2;\
+        {T}: Add {G} to your mana pool.;\
+        {T}, Remove a charge counter from SN: Add one mana of any color to your mana pool.
 timing=tapland

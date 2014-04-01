@@ -5,6 +5,6 @@ value=3.593
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
-        tap add mana {1};\
+        {T}: Add {1} to your mana pool.;\
         cycling {2}
 timing=tapland

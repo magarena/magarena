@@ -7,5 +7,5 @@ rarity=L
 type=Basic,Land
 subtype=Plains
 mana=w4
-ability=tap add mana {W}
+ability={T}: Add {W} to your mana pool.
 timing=land

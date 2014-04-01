@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/orzhova,%20the%20church%20of%20deals.jpg
 value=2.919
 rarity=U
 type=Land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {3}{W}{B},{T}: Target player loses 1 life and you gain 1 life.
 timing=land

@@ -6,6 +6,6 @@ rarity=C
 type=Creature
 subtype=Human,Druid
 cost={R/G}
-ability=Sacrifice SN: Add any to your mana pool.
+ability=Sacrifice SN: Add one mana of any color to your mana pool.
 pt=1/1
 timing=main

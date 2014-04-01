@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Druid,Warrior
 cost={3}{G}
 pt=3/3
-ability=tap add mana {G}
+ability={T}: Add {G} to your mana pool.
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=2/1
-ability=lord lands you control have tap add mana any
+ability=lord lands you control have "{T}: Add one mana of any color to your mana pool."
 static=player
 timing=main

@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/academy%20ruins.jpg
 value=4.556
 rarity=R
 type=Legendary,Land
-ability=tap add mana {1}
+ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code

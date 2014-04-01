@@ -5,5 +5,6 @@ value=2.609
 rarity=U
 type=Artifact
 cost={2}
-ability=SN enters the battlefield tapped.;tap add mana {G}
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {G} to your mana pool.
 timing=artifact

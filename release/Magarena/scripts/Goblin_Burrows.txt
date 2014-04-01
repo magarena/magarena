@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/goblin%20burrows.jpg
 value=4.000
 rarity=U
 type=Land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.
 timing=land

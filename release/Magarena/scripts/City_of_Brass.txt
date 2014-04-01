@@ -6,5 +6,5 @@ rarity=R
 type=Land
 mana=b1g1r1u1w1
 timing=land
-ability=tap add mana any
+ability={T}: Add one mana of any color to your mana pool.
 requires_groovy_code

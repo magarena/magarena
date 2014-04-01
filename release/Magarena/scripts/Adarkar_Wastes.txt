@@ -5,5 +5,6 @@ value=4.277
 rarity=R
 type=Land
 mana=w2u2
-ability=tap add mana {1};{T}: Add {W} or {U} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add {W} or {U} to your mana pool. SN deals 1 damage to you.
 timing=land

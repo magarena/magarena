@@ -7,5 +7,5 @@ rarity=L
 type=Basic,Land
 subtype=Forest
 mana=g4
-ability=tap add mana {G}
+ability={T}: Add {G} to your mana pool.
 timing=land

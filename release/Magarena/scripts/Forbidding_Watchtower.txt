@@ -7,6 +7,6 @@ type=Land
 mana=w3
 timing=land
 ability=SN enters the battlefield tapped.;\
-        tap add mana {W}
+        {T}: Add {W} to your mana pool.
 mana_or_combat
 requires_groovy_code

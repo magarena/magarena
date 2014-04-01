@@ -5,6 +5,6 @@ value=3.773
 rarity=R
 type=Land
 mana=g3w3
-ability=tap add mana {G} or {W};\
+ability={T}: Add {G} or {W} to your mana pool.;\
         SN enters the battlefield tapped unless you control a forest plains
 timing=land

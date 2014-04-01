@@ -5,6 +5,6 @@ value=3.971
 rarity=C
 type=Land
 subtype=Desert
-ability=tap add mana {1}
+ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code

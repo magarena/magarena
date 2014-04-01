@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Myr
 cost={2}
 pt=1/1
-ability=tap add mana {U}
+ability={T}: Add {U} to your mana pool.
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Elf
 cost={B}{G}
 pt=2/2
-ability=tap add mana {B}
+ability={T}: Add {B} to your mana pool.
 timing=main

@@ -6,6 +6,6 @@ rarity=C
 type=Land
 subtype=Gate
 mana=u3b3
-ability=tap add mana {U} or {B};\
+ability={T}: Add {U} or {B} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland

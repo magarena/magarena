@@ -7,5 +7,5 @@ type=Land
 mana=u3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature gains flying until end of turn.;\
-        tap add mana {U}
+        {T}: Add {U} to your mana pool.
 timing=fmain

@@ -5,6 +5,6 @@ value=2.888
 rarity=C
 type=Land
 ability=When SN enters the battlefield, you gain 1 life.;\
-        tap add mana {1}
+        {T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code

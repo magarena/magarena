@@ -7,5 +7,5 @@ type=Creature
 subtype=Plant
 cost={1}{G}
 pt=0/2
-ability=tap add mana any
+ability={T}: Add one mana of any color to your mana pool.
 timing=main

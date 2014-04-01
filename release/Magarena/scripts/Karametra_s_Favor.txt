@@ -8,5 +8,5 @@ subtype=Aura
 cost={1}{G}
 enchant=pump,pos creature
 ability=When SN enters the battlefield, draw a card.
-given_ability=tap add mana any
+given_ability={T}: Add one mana of any color to your mana pool.
 timing=aura

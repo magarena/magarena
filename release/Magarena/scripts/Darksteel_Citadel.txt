@@ -4,5 +4,6 @@ image=http://mtgimage.com/card/darksteel%20citadel.jpg
 value=4.513
 rarity=C
 type=Artifact,Land
-ability=indestructible;tap add mana {1}
+ability=indestructible;\
+        {T}: Add {1} to your mana pool.
 timing=land

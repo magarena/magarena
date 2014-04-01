@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=2/1
-ability=tap add mana {G}
+ability={T}: Add {G} to your mana pool.
 timing=main

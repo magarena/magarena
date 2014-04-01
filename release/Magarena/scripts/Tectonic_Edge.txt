@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/tectonic%20edge.jpg
 value=3.608
 rarity=U
 type=Land
-ability=tap add mana {1}
+ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code

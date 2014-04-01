@@ -8,5 +8,5 @@ subtype=Forest,Dryad
 mana=g3
 color=g
 pt=1/1
-ability=tap add mana {G}
+ability={T}: Add {G} to your mana pool.
 timing=land

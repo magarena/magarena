@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 enchant=default,creature
-given_ability=tap add mana any;can't attack or block
+given_ability={T}: Add one mana of any color to your mana pool.;can't attack or block
 timing=aura

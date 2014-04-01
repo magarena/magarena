@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/swarmyard.jpg
 value=4.138
 rarity=R
 type=Land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {T}: Regenerate target Insect, Rat, Spider, or Squirrel.
 timing=land

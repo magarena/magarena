@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/skarrg%2C%20the%20rage%20pits.jpg
 value=3.923
 rarity=U
 type=Land
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {R}{G}, {T}: Target creature gets +1/+1 and gains trample until end of turn.
 timing=land

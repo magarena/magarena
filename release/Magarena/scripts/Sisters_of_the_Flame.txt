@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Shaman
 cost={1}{R}{R}
 pt=2/2
-ability=tap add mana {R}
+ability={T}: Add {R} to your mana pool.
 timing=main

@@ -6,5 +6,5 @@ rarity=R
 type=Land
 subtype=Forest,Island
 mana=u4g4
-ability=tap add mana {U} or {G}
+ability={T}: Add {U} or {G} to your mana pool.
 timing=land

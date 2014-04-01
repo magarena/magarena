@@ -58,7 +58,7 @@ public enum MagicManaType {
         if ("{1}".equals(name)) {
             return Arrays.asList(Colorless);
         }
-        if ("any".equals(name)) {
+        if ("one mana of any color".equals(name)) {
             return ALL_TYPES;
         }
         final String[] tokens = name.split(" or ");

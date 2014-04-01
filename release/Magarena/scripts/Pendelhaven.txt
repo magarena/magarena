@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/pendelhaven.jpg
 value=4.355
 rarity=U
 type=Legendary,Land
-ability=tap add mana {G}
+ability={T}: Add {G} to your mana pool.
 timing=land
 requires_groovy_code

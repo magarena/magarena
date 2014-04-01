@@ -5,6 +5,6 @@ value=4.000
 rarity=U
 type=Artifact
 cost={2}
-ability=tap add mana {1};\
+ability={T}: Add {1} to your mana pool.;\
         {1}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
