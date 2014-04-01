@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Land),
+        new MagicActivationHints(MagicTiming.Flash),
         "Land"
     ) {
 
@@ -23,8 +23,8 @@
             game.addEvent(new MagicPutOntoBattlefieldEvent(
                 event,
                 new MagicMayChoice(
-                    "Put a basic land card onto the battlefield?",
-                    MagicTargetChoice.BASIC_LAND_CARD_FROM_HAND
+                    "Put a land card onto the battlefield?",
+                    MagicTargetChoice.LAND_CARD_FROM_HAND
                 )
             ));
         }
