@@ -1536,7 +1536,7 @@ public enum MagicRuleEventAction {
                         choice,
                         picker,
                         action,
-                        playerRule + "$"
+                        capitalize(playerRule) + "$"
                     );
                 }
             };
