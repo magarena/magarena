@@ -1,0 +1,12 @@
+name=Twisted Abomination
+url=http://www.magiccards.info/query?q=%21twisted%20abomination
+image=http://mtgimage.com/card/twisted%20abomination.jpg
+value=4.074
+rarity=C
+type=Creature
+subtype=Zombie,Mutant
+cost={5}{B}
+pt=5/3
+ability={B}: Regenerate SN.;\
+        Swampcycling {2}
+timing=main

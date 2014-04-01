@@ -1,0 +1,11 @@
+name=Wirewood Guardian
+url=http://www.magiccards.info/query?q=%21wirewood%20guardian
+image=http://mtgimage.com/card/wirewood%20guardian.jpg
+value=2.64
+rarity=C
+type=Creature
+subtype=Elf,Mutant
+cost={5}{G}{G}
+pt=6/6
+ability=Forestcycling {2}
+timing=main

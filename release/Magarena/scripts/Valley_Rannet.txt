@@ -1,0 +1,11 @@
+name=Valley Rannet
+url=http://www.magiccards.info/query?q=%21valley%20rannet
+image=http://mtgimage.com/card/valley%20rannet.jpg
+value=2.7
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{R}{G}
+pt=6/3
+ability=Mountaincycling {2};Forestcycling {2}
+timing=main

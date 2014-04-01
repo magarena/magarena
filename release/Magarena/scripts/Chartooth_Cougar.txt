@@ -1,0 +1,12 @@
+name=Chartooth Cougar
+url=http://www.magiccards.info/query?q=%21chartooth%20cougar
+image=http://mtgimage.com/card/chartooth%20cougar.jpg
+value=3.692
+rarity=C
+type=Creature
+subtype=Cat,Beast
+cost={5}{R}
+pt=4/4
+ability={R}: SN gets +1/+0 until end of turn.;\
+        Mountaincycling {2}
+timing=main

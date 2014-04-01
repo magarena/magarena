@@ -1,0 +1,12 @@
+name=Pale Recluse
+url=http://www.magiccards.info/query?q=%21pale%20recluse
+image=http://mtgimage.com/card/pale%20recluse.jpg
+value=2.986
+rarity=C
+type=Creature
+subtype=Spider
+cost={4}{G}{W}
+pt=4/5
+ability=Reach;\
+        Forestcycling {2};Plainscycling {2}
+timing=main

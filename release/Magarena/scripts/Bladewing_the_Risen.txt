@@ -1,0 +1,12 @@
+name=Bladewing the Risen
+url=http://www.magiccards.info/query?q=%21bladewing%20the%20risen
+image=http://mtgimage.com/card/bladewing%20the%20risen.jpg
+value=4.022
+rarity=R
+type=Legendary,Creature
+subtype=Zombie,Dragon
+cost={3}{B}{B}{R}{R}
+pt=4/4
+ability=When SN enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.;\
+        {B}{R}: Dragon creatures get +1/+1 until end of turn.
+timing=main

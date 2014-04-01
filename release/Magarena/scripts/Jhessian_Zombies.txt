@@ -1,0 +1,12 @@
+name=Jhessian Zombies
+url=http://www.magiccards.info/query?q=%21jhessian%20zombies
+image=http://mtgimage.com/card/jhessian%20zombies.jpg
+value=2.229
+rarity=C
+type=Creature
+subtype=Zombie
+cost={4}{U}{B}
+pt=2/4
+ability=Fear;\
+        Islandcycling {2};Swampcycling {2}
+timing=main

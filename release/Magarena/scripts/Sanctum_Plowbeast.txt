@@ -1,0 +1,12 @@
+name=Sanctum Plowbeast
+url=http://www.magiccards.info/query?q=%21sanctum%20plowbeast
+image=http://mtgimage.com/card/sanctum%20plowbeast.jpg
+value=2.047
+rarity=C
+type=Artifact,Creature
+subtype=Beast
+cost={4}{W}{U}
+pt=3/6
+ability=Defender;\
+        Plainscycling {2};Islandcycling {2}
+timing=artifact

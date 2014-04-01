@@ -1,0 +1,12 @@
+name=Noble Templar
+url=http://www.magiccards.info/query?q=%21noble%20templar
+image=http://mtgimage.com/card/noble%20templar.jpg
+value=3.2
+rarity=C
+type=Creature
+subtype=Human,Cleric,Soldier
+cost={5}{W}
+pt=3/6
+ability=Vigilance;\
+        Plainscycling {2}
+timing=main

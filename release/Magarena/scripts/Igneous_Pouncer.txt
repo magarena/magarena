@@ -1,0 +1,12 @@
+name=Igneous Pouncer
+url=http://www.magiccards.info/query?q=%21igneous%20pouncer
+image=http://mtgimage.com/card/igneous%20pouncer.jpg
+value=2.315
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{B}{R}
+pt=5/1
+ability=Haste;\
+        Swampcycling {2};Mountaincycling {2}
+timing=main

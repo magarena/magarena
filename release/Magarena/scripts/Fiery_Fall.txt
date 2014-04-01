@@ -1,0 +1,10 @@
+name=Fiery Fall
+url=http://www.magiccards.info/query?q=%21fiery%20fall
+image=http://mtgimage.com/card/fiery%20fall.jpg
+value=2.115
+rarity=C
+type=Instant
+cost={5}{R}
+ability=Basic landcycling {1}{R}
+effect=SN deals 5 damage to target creature.
+timing=removal
