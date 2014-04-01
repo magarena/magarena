@@ -275,6 +275,7 @@ public class MagicGame {
             events.getStateId(),
             players[0].getStateId(),
             players[1].getStateId(),
+            activeSource.getStateId(),
             //triggers.getStateId(),
             //statics.getStateId(),
             exiledUntilEndOfTurn.getUnorderedStateId(),
