@@ -1,0 +1,12 @@
+name=Higure, the Still Wind
+url=http://magiccards.info/query?q=!higure,%20the%20still%20wind
+image=http://mtgimage.com/card/higure,%20the%20still%20wind.jpg
+value=3.900
+rarity=R
+type=Creature
+subtype=Human,Ninja
+cost={3}{U}{U}
+pt=3/1
+ability=ninjutsu {2}{U}{U}
+timing=main
+requires_groovy_code
