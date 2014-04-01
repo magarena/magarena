@@ -82,7 +82,6 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
             moveLocation.ordinal(),
             payedCost.getX(),
             payedCost.getKicker(),
-            event.getStateId(),
             cardDef.getIndex()
         });
     }
