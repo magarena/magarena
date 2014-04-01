@@ -36,7 +36,6 @@ public class MMAB implements MagicAI {
 
     private void log(final String message) {
         MagicGameLog.log(message);
-        System.err.println(message);
     }
 
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {

@@ -6,6 +6,7 @@ import magic.data.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
+import magic.model.MagicGameLog;
 import magic.model.MagicRandom;
 import magic.model.MagicGameReport;
 import magic.ui.GameController;
@@ -166,6 +167,7 @@ public class DeckStrCal {
 
         // Load cards and cubes.
         MagicMain.initializeEngine();
+        MagicGameLog.initialize();
 
         for (int i = 0; i < repeat; i++) {
             runDuel();

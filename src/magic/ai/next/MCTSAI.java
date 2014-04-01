@@ -110,7 +110,6 @@ public class MCTSAI implements MagicAI {
 
     private void log(final String message) {
         MagicGameLog.log(message);
-        System.err.println(message);
     }
 
     public Object[] findNextEventChoiceResults(
