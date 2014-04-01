@@ -188,7 +188,7 @@ inf: $(MAG)
 	-while true; do make debug=true 0`date +%s`.t; done
 
 buildhive:
-	make clean games=100 ai1=MMABC ai2=MCTS `date +%s`.t
+	make clean games=100 ai1=MMABC ai2=MMAB `date +%s`.t
 	touch cards/standard_all.out cards/extended_all.out cards/modern_all.out
 	touch cards/standard_all.txt cards/extended_all.txt cards/modern_all.txt
 	make zips
