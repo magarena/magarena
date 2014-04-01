@@ -32,10 +32,8 @@ function genName() {
     ai2 = genName()
 }
 
-/Saved Player/ {
+/^\t/ {
     getline
-    getline
-
     if ($8 == "0") {
         C = "1"
     } else {
