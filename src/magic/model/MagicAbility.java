@@ -14,6 +14,7 @@ import magic.model.event.MagicTapManaActivation;
 import magic.model.event.MagicPainTapManaActivation;
 import magic.model.event.MagicPayLifeTapManaActivation;
 import magic.model.event.MagicTiming;
+import magic.model.event.MagicTypeCyclingActivation;
 import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCardActivation;
@@ -650,6 +651,13 @@ public enum MagicAbility {
             card.add(new MagicCyclingActivation(manaCost));
         }
     },
+    TypeCycling(ARG.WORDRUN + "cycling " + ARG.COST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            final String type = ARG.wordrun(arg);
+            card.add(new MagicTypeCyclingActivation(manaCost,type));
+        }
+    },
     Reinforce("reinforce " + ARG.AMOUNT + " " + ARG.COST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.amount(arg);
@@ -834,6 +842,11 @@ public enum MagicAbility {
         private static final String WORD2 = "(?<word2>[^ ]+)";
         private static String word2(final Matcher m) {
             return m.group("word2");
+        }
+        
+        private static final String WORDRUN = "(?<wordrun>[^\\.]*)";
+        private static String wordrun(final Matcher m) {
+            return m.group("wordrun");
         }
 
         private static final String PT = "(?<pt>[+-][0-9]+/[+-][0-9]+)";
