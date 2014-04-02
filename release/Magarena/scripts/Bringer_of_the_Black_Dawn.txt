@@ -1,0 +1,13 @@
+name=Bringer of the Black Dawn
+url=http://magiccards.info/query?q=%21bringer%20of%20the%20black%20dawn
+image=http://mtgimage.com/card/bringer%20of%20the%20black%20dawn.jpg
+value=4.255
+rarity=R
+type=Creature
+subtype=Bringer
+cost={7}{B}{B}
+pt=5/5
+ability=alt cost {W}{U}{B}{R}{G} named Alt;\
+        trample
+timing=main
+requires_groovy_code
