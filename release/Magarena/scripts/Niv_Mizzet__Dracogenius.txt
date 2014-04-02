@@ -1,0 +1,13 @@
+name=Niv-Mizzet, Dracogenius
+url=http://www.magiccards.info/query?q=%21niv%2Dmizzet%2C%20dracogenius
+image=http://mtgimage.com/card/niv-mizzet,%20dracogenius.jpg
+value=3.984
+rarity=M
+type=Legendary,Creature
+subtype=Dragon,Wizard
+cost={2}{U}{U}{R}{R}
+pt=5/5
+ability=Flying;\
+        Whenever SN deals damage to a player, you may draw a card.;\
+        {U}{R}: SN deals 1 damage to target creature or player.
+timing=main
