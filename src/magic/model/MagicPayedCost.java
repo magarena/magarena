@@ -76,7 +76,7 @@ public class MagicPayedCost implements MagicCopyable {
 
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
-            target.getStateId(),
+            (target instanceof MagicPlayer) ? target.getId() : target.getStateId(),
             x,
             kicker
         });
