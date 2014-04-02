@@ -1020,8 +1020,6 @@ public enum MagicRuleEventAction {
     ),
     SearchLibraryToHand(
         "search your library for (?<choice>[^\\.]*), reveal it, and put it into your hand. Then shuffle your library\\.",
-        MagicTargetHint.None,
-        MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1045,8 +1043,6 @@ public enum MagicRuleEventAction {
     },
     SearchLibraryToBattlefield(
         "search your library for (?<choice>[^\\.]*) and put it onto the battlefield(?<tapped>[^\\.]*). Then shuffle your library\\.",
-        MagicTargetHint.None,
-        MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Pump,
         "Search"
     ) {
@@ -1078,8 +1074,6 @@ public enum MagicRuleEventAction {
     },
     FromHandToBattlefield(
         "put (?<choice>[^\\.]*hand) onto the battlefield(?<tapped>[^\\.]*)\\.",
-        MagicTargetHint.None,
-        MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Pump,
         "Put"
     ) {
