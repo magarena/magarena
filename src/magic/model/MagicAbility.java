@@ -735,7 +735,7 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    ActivatedAbility("[^\"]*:(?! Add)" + ARG.ANY, 10) {
+    ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicPermanentActivation.create(arg.group()));
         }
@@ -844,7 +844,7 @@ public enum MagicAbility {
             return m.group("word2");
         }
         
-        private static final String WORDRUN = "(?<wordrun>[^\\.]*)";
+        private static final String WORDRUN = "(?<wordrun>[^\\.]+)";
         private static String wordrun(final Matcher m) {
             return m.group("wordrun");
         }
@@ -932,7 +932,7 @@ public enum MagicAbility {
         return abilityList;
     }
 
-    private static final Pattern SUB_ABILITY_LIST = Pattern.compile("\"([^\"]*)\"|([A-Za-z][^,]*)");
+    private static final Pattern SUB_ABILITY_LIST = Pattern.compile("\"([^\"]+)\"|([A-Za-z][^,]+)");
     
     public static MagicAbilityList getAbilityList(final String names) {
         final MagicAbilityList abilityList = new MagicAbilityList();
