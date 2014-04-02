@@ -504,7 +504,7 @@ public class MCTSAI implements MagicAI {
         for (final MCTSGameTree p : path) {
             sb.append(" -> ").append(p.desc);
         }
-        System.err.println(sb.toString());
+        log(sb.toString());
         return true;
     }
 }
@@ -537,7 +537,7 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     }
 
     private static boolean log(final String message) {
-        System.err.println(message);
+        MagicGameLog.log(message);
         return true;
     }
 
@@ -612,16 +612,16 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     static boolean printNode(final MCTSGameTree curr, final List<Object[]> choices) {
         if (curr.choicesStr != null) {
             for (final String str : curr.choicesStr) {
-                System.err.println("PAREN: " + str);
+                log("PAREN: " + str);
             }
         } else {
-            System.err.println("PAREN: not defined");
+            log("PAREN: not defined");
         }
         for (final MCTSGameTree child : curr) {
-            System.err.println("CHILD: " + child.desc);
+            log("CHILD: " + child.desc);
         }
         for (final Object[] choice : choices) {
-            System.err.println("GAME : " + obj2String(choice[0]));
+            log("GAME : " + obj2String(choice[0]));
         }
         return true;
     }
