@@ -24,7 +24,7 @@
                 ));
             }
             final List<MagicCard> humans =
-                    game.filterCards(player,MagicTargetFilter.TARGET_HUMAN_CARD_FROM_GRAVEYARD);
+                    game.filterCards(player,MagicTargetFilter.TARGET_HUMAN_CREATURE_CARD_FROM_GRAVEYARD);
             for (final MagicCard target : humans) {
                 game.doAction(new MagicReanimateAction(
                     target,
