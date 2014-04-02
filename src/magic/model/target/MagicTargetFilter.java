@@ -1493,7 +1493,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicCardFilterImpl TARGET_ELF_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Elf);
     
-    MagicCardFilterImpl TARGET_GOBLIN_PERMANENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+    MagicCardFilterImpl TARGET_ELF_PERMANENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return !target.getCardDefinition().isSpell() &&
                    target.hasSubType(MagicSubType.Elf);
