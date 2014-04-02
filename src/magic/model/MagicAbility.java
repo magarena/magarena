@@ -402,7 +402,7 @@ public enum MagicAbility {
             ));
         }
     },
-    DamageToPlayer("deals damage to a player effect " + ARG.EFFECT, 10) {
+    DamageToPlayer("Whenever SN deals damage to a player, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToPlayer(
                 MagicRuleEventAction.create(ARG.effect(arg))
