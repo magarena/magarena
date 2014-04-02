@@ -553,7 +553,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainSelf(
-        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>[^\\.]*) until end of turn\\.", 
+        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn\\.", 
         MagicTiming.Pump
     ) {
         @Override
@@ -575,7 +575,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosen(
-        "(?<choice>[^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) and gain(s)? (?<ability>.*) until end of turn\\.", 
+        "(?<choice>[^\\.]*) get(s)? (?<pt>[0-9+]+/[0-9+]+) and gain(s)? (?<ability>.+) until end of turn\\.", 
         MagicTargetHint.Positive
     ) {
         @Override
@@ -687,7 +687,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTGainChosen(
-        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>[^\\.]*) until end of turn\\.", 
+        "(?<choice>target[^\\.]*) get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn\\.", 
         MagicTiming.Removal
     ) {
         @Override
@@ -714,7 +714,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainSelf(
-        "sn gain(s)? (?<ability>[^\\.]*) until end of turn\\."
+        "sn gain(s)? (?<ability>.+) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -743,7 +743,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainChosen(
-        "(?<choice>[^\\.]*) gains (?<ability>[^\\.]*) until end of turn\\.", 
+        "(?<choice>[^\\.]*) gains (?<ability>.+) until end of turn\\.", 
         MagicTargetHint.Positive
     ) {
         @Override
@@ -803,7 +803,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainGroup(
-        "(?<group>[^\\.]*) gain (?<ability>[^\\.]*) until end of turn\\."
+        "(?<group>[^\\.]*) gain (?<ability>.+) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
