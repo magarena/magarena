@@ -1076,6 +1076,39 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    FromHandToBattlefield(
+        "put (?<choice>[^\\.]*hand) onto the battlefield(?<tapped>[^\\.]*)\\.",
+        MagicTargetHint.None,
+        MagicGraveyardTargetPicker.PutOntoBattlefield,
+        MagicTiming.Pump,
+        "Put"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            return MagicChoice.NONE;
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice"));
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    if (matcher.group("tapped").contains("tapped")) {
+                        game.addEvent(new MagicPutOntoBattlefieldEvent(
+                            event,
+                            choice,
+                            MagicPlayMod.TAPPED
+                        ));
+                    } else {
+                        game.addEvent(new MagicPutOntoBattlefieldEvent(
+                            event,
+                            choice
+                        ));
+                    }
+                }
+            };
+        }
+    },
     Reanimate(
         "return (?<choice>[^\\.]*graveyard) to the battlefield\\.",
         MagicTargetHint.None,
