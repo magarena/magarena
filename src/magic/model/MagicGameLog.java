@@ -9,7 +9,10 @@ import java.util.Date;
 
 public class MagicGameLog {
 
-    private static final String gameLog = MagicMain.getLogsPath() + File.separator + "game.log";
+    private static final String gameLog = (System.getProperty("game.log") != null) ?
+        System.getProperty("game.log") :       
+        MagicMain.getLogsPath() + File.separator + "game.log";
+
     private static PrintWriter writer;
 
     private MagicGameLog() {}
