@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Druid
 cost={G}
 pt=1/1
+ability=When SN enters the battlefield, you may put a basic land card from your hand onto the battlefield tapped.
 timing=main
-requires_groovy_code

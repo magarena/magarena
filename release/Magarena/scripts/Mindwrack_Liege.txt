@@ -8,7 +8,7 @@ subtype=Horror
 cost={3}{U/R}{U/R}{U/R}
 pt=4/4
 ability=lord other blue creatures you control get +1/+1;\
-        lord other red creatures you control get +1/+1
+        lord other red creatures you control get +1/+1;\
+        {U/R}{U/R}{U/R}{U/R}: You may put a blue or red creature card from your hand onto the battlefield.
 static=player
 timing=main
-requires_groovy_code

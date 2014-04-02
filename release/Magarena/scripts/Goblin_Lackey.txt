@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={R}
 pt=1/1
+ability=deals damage to a player effect You may put a Goblin permanent card from your hand onto the battlefield.
 timing=main
-requires_groovy_code

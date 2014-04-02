@@ -5,5 +5,5 @@ value=4.057
 rarity=R
 type=Instant
 cost={3}{G}{G}
+effect=You may put a green creature card from your hand onto the battlefield.
 timing=token
-requires_groovy_code
