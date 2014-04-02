@@ -172,6 +172,8 @@ public class DeckStrCal {
         for (int i = 0; i < repeat; i++) {
             runDuel();
         }
+        
+        MagicGameLog.close();
     }
 
     private static void runDuel() {
