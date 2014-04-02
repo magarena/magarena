@@ -5,5 +5,5 @@ value=2.826
 rarity=C
 type=Instant
 cost={G}
-effect=Lands you control gain {T}: Add one mana of any color to your mana pool. until end of turn.
+effect=Lands you control gain "{T}: Add one mana of any color to your mana pool." until end of turn.
 timing=pump
