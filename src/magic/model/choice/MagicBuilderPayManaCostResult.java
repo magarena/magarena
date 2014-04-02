@@ -90,8 +90,7 @@ public class MagicBuilderPayManaCostResult implements
         }
     }
 
-    @Override
-    public String toString() {
+    public String getText() {
         final StringBuilder builder=new StringBuilder();
         builder.append('c').append(count);
         builder.append('-');
@@ -102,6 +101,11 @@ public class MagicBuilderPayManaCostResult implements
             builder.append('-').append(amount);
         }
         return builder.toString();
+    }
+
+    @Override
+    public String toString() {
+        return x > 0 ? "X is " + x : "";
     }
 
     @Override
