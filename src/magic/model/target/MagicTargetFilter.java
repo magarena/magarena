@@ -1283,6 +1283,16 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicCardFilterImpl TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Zombie);
 
+    MagicCardFilterImpl TARGET_ZOMBIE_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Zombie) &&
+                   target.hasSubType(MagicSubType.Zombie);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
+    
     MagicCardFilterImpl TARGET_SPIRIT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Spirit);
     
     MagicCardFilterImpl TARGET_HUMAN_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Human);
