@@ -1285,11 +1285,11 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_ZOMBIE_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.hasType(MagicType.Zombie) &&
+            return target.hasType(MagicType.Creature) &&
                    target.hasSubType(MagicSubType.Zombie);
         }
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
     
