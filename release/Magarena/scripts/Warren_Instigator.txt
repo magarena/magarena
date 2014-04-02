@@ -1,0 +1,12 @@
+name=Warren Instigator
+url=http://www.magiccards.info/query?q=%21warren%20instigator
+image=http://mtgimage.com/card/warren%20instigator.jpg
+value=4.467
+rarity=M
+type=Creature
+subtype=Goblin,Berserker
+cost={R}{R}
+pt=1/1
+ability=double strike;\
+        Whenever SN deals damage to an opponent, you may put a Goblin creature card from your hand onto the battlefield.
+timing=main

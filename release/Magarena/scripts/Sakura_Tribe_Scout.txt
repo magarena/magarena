@@ -1,0 +1,11 @@
+name=Sakura-Tribe Scout
+url=http://magiccards.info/query?q=%21sakura%2Dtribe%20scout
+image=http://mtgimage.com/card/sakura%2Dtribe%20scout.jpg
+value=3.829
+rarity=C
+type=Creature
+subtype=Snake,Shaman,Scout
+cost={G}
+pt=1/1
+ability={T}: You may put a land card from your hand onto the battlefield.
+timing=main
