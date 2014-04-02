@@ -208,13 +208,14 @@ flags ?=
 	$(RUN) ${flags} \
 	-Dmagarena.dir=`pwd`/release \
 	-Ddebug=${debug} \
+	-Dgame.log=$*.log \
 	magic.DeckStrCal \
 	--seed $* \
 	--ai1 ${ai1} --str1 ${str1} \
 	--ai2 ${ai2} --str2 ${str2} \
 	--life ${life} \
 	--games 1 \
-	--repeat ${games} >> $*.log 2>&1
+	--repeat ${games} >> $*.out 2>&1
 
 test: 100.d
 
