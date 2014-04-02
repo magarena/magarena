@@ -644,7 +644,7 @@ public class MagicEvent implements MagicCopyable {
             //don't call getStateId if source is MagicItemOnStack to avoid infinite loop
             (source instanceof MagicItemOnStack) ? -1L : source.getStateId(),
             player.getId(),
-            choice.hashCode(),
+            choice.getStateId(),
             targetPicker.hashCode(),
             action.hashCode(),
             description.hashCode(),
