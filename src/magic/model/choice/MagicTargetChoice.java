@@ -795,6 +795,16 @@ public class MagicTargetChoice extends MagicChoice {
     public final int getTargetChoiceResultIndex() {
         return 0;
     }
+    
+    @Override
+    public long getStateId() {
+        return magic.MurmurHash3.hash(new long[] {
+            targetDescription.hashCode(),
+            targetFilter.hashCode(),
+            (targeted ? 1L : -1L),
+            targetHint.hashCode()
+        });
+    }
 
     @Override
     public final boolean hasOptions(
