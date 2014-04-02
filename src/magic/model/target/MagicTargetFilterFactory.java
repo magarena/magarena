@@ -88,9 +88,12 @@ public class MagicTargetFilterFactory {
         single.put("card from your hand", TARGET_CARD_FROM_HAND);
         single.put("basic land card from your hand", TARGET_BASIC_LAND_CARD_FROM_HAND);
         single.put("blue or red creature card from your hand", TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
-        single.put("Goblin permanent card from your hand", TARGET_GOBLIN_CARD_FROM_HAND);
+        single.put("Goblin permanent card from your hand", TARGET_GOBLIN_PERMANENT_CARD_FROM_HAND);
+        single.put("Goblin creature card from your hand", TARGET_GOBLIN_CREATURE_CARD_FROM_HAND);
         single.put("green creature card from your hand", TARGET_GREEN_CREATURE_CARD_FROM_HAND);
         single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
+        single.put("Minotaur permanent card from your hand", TARGET_MINOTAUR_PERMANENT_CARD_FROM_HAND);
+        single.put("Faerie permanent card from your hand", TARGET_FAERIE_PERMANENT_CARD_FROM_HAND);
 
         // <color|type|subtype> card from your library
         single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);
@@ -107,8 +110,8 @@ public class MagicTargetFilterFactory {
         single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
         single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
-        single.put("Goblin permanent card from your library", TARGET_GOBLIN_CARD_FROM_LIBRARY);
-        single.put("Elf permanent card from your library", TARGET_ELF_CARD_FROM_LIBRARY);
+        single.put("Goblin permanent card from your library", TARGET_GOBLIN_PERMANENT_CARD_FROM_LIBRARY);
+        single.put("Elf permanent card from your library", TARGET_ELF_PERMANENT_CARD_FROM_LIBRARY);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         
         // <color|type|subtype> creature you control

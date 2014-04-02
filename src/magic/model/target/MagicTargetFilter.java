@@ -1436,14 +1436,75 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         Factory.card(MagicTargetType.Library, MagicSubType.Forest);
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicType.Land);
+    
+    MagicCardFilterImpl TARGET_MINOTAUR_PERMANENT_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return !target.getCardDefinition().isSpell() &&
+                   target.hasSubType(MagicSubType.Minotaur);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
 
     MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicSubType.Goblin);
     
+    MagicCardFilterImpl TARGET_GOBLIN_PERMANENT_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return !target.getCardDefinition().isSpell() &&
+                   target.hasSubType(MagicSubType.Goblin);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
+    
+    MagicCardFilterImpl TARGET_GOBLIN_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.isCreature() &&
+                   target.hasSubType(MagicSubType.Goblin);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
+    
+    MagicCardFilterImpl TARGET_FAERIE_PERMANENT_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return !target.getCardDefinition().isSpell() &&
+                   target.hasSubType(MagicSubType.Faerie);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
+    
     MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Goblin);
+    
+    MagicCardFilterImpl TARGET_GOBLIN_PERMANENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return !target.getCardDefinition().isSpell() &&
+                   target.hasSubType(MagicSubType.Goblin);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
     
     MagicCardFilterImpl TARGET_ELF_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Elf);
     
+    MagicCardFilterImpl TARGET_GOBLIN_PERMANENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return !target.getCardDefinition().isSpell() &&
+                   target.hasSubType(MagicSubType.Elf);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
+    
     MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicType.Artifact);
+    
     MagicCardFilterImpl TARGET_EQUIPMENT_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Equipment);
 
     MagicPermanentFilterImpl TARGET_UNPAIRED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
