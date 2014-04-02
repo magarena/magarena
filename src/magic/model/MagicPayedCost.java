@@ -73,4 +73,12 @@ public class MagicPayedCost implements MagicCopyable {
     public boolean isKicked() {
         return kicker > 0;
     }
+
+    public long getStateId() {
+        return magic.MurmurHash3.hash(new long[] {
+            target.getStateId(),
+            x,
+            kicker
+        });
+    }
 }
