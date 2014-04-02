@@ -68,6 +68,10 @@ public abstract class MagicChoice {
         return -1;
     }
 
+    public long getStateId() {
+        return description.hashCode();
+    }
+
     public boolean isValid() {
         return true;
     }
