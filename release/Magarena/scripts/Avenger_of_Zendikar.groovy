@@ -43,7 +43,7 @@
             if (event.isYes()) {
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
-                        MagicTargetFilter.TARGET_PLANT_YOU_CONTROL);
+                        MagicTargetFilter.TARGET_PLANT_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicChangeCountersAction(
                         target,

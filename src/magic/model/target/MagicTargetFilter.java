@@ -626,7 +626,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_BLINKMOTH_CREATURE = Factory.creature(MagicSubType.Blinkmoth, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_KOR_YOU_CONTROL = Factory.permanent(MagicSubType.Kor, Control.You);
+    MagicPermanentFilterImpl TARGET_KOR_CREATURE_YOU_CONTROL = Factory.creature(MagicSubType.Kor, Control.You);
 
     MagicPermanentFilterImpl TARGET_WOLF_YOU_CONTROL = Factory.permanent(MagicSubType.Wolf, Control.You);
 
@@ -642,7 +642,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_ELF_YOU_CONTROL = Factory.permanent(MagicSubType.Elf, Control.You);
     
-    MagicPermanentFilterImpl TARGET_BARBARIAN = Factory.permanent(MagicSubType.Barbarian, Control.Any);
+    MagicPermanentFilterImpl TARGET_BARBARIAN_CREATURE = Factory.creature(MagicSubType.Barbarian, Control.Any);
 
     MagicPermanentFilterImpl TARGET_ALLY_YOU_CONTROL = Factory.permanent(MagicSubType.Ally, Control.You);
 
@@ -654,7 +654,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_MODULAR_CREATURE_YOU_CONTROL = Factory.creature(MagicAbility.Modular, Control.You);
 
-    MagicPermanentFilterImpl TARGET_PLANT_YOU_CONTROL = Factory.permanent(MagicSubType.Plant, Control.You);
+    MagicPermanentFilterImpl TARGET_PLANT_CREATURE_YOU_CONTROL = Factory.creature(MagicSubType.Plant, Control.You);
 
     MagicPermanentFilterImpl TARGET_CREATURE = Factory.permanent(MagicType.Creature, Control.Any);
     
