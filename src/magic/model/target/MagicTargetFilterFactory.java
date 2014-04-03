@@ -37,7 +37,7 @@ public class MagicTargetFilterFactory {
         multiple.put("nonwhite creatures", TARGET_NONWHITE_CREATURE);
         multiple.put("creatures without flying", TARGET_CREATURE_WITHOUT_FLYING);
         multiple.put("creatures with flying", TARGET_CREATURE_WITH_FLYING);
-        multiple.put("all sliver creatures", TARGET_SLIVER);
+        multiple.put("all sliver creatures", TARGET_SLIVER_CREATURE);
         multiple.put("all creatures", TARGET_CREATURE);
         multiple.put("attacking creatures", TARGET_ATTACKING_CREATURE);
         multiple.put("blocking creatures", TARGET_BLOCKING_CREATURE);
@@ -136,10 +136,10 @@ public class MagicTargetFilterFactory {
         single.put("1/1 creature", TARGET_1_1_CREATURE);
         single.put("nonblack creature", TARGET_NONBLACK_CREATURE);
         single.put("nonartifact creature", TARGET_NONARTIFACT_CREATURE);
-        single.put("non-Demon creature", TARGET_NON_DEMON);
+        single.put("non-Demon creature", TARGET_NON_DEMON_CREATURE);
         single.put("non-Zombie creature", TARGET_NONZOMBIE_CREATURE);
         single.put("non-Human creature", TARGET_NONHUMAN_CREATURE);
-        single.put("non-Vampire, non-Werewolf, non-Zombie creature", TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE);
+        single.put("non-Vampire, non-Werewolf, non-Zombie creature", TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE);
         single.put("noncreature", TARGET_NONCREATURE);
         single.put("nonartifact, nonblack creature", TARGET_NONARTIFACT_NONBLACK_CREATURE);
         single.put("land or nonblack creature", TARGET_LAND_OR_NONBLACK_CREATURE);
@@ -229,7 +229,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact spell", TARGET_ARTIFACT_SPELL);
         single.put("enchantment spell", TARGET_ENCHANTMENT_SPELL);
         single.put("artifact or enchantment spell", TARGET_ARTIFACT_OR_ENCHANTMENT_SPELL);
-        single.put("red or green spell", TARGET_RED_GREEN_SPELL);
+        single.put("red or green spell", TARGET_RED_OR_GREEN_SPELL);
         single.put("black spell", TARGET_BLACK_SPELL);
         single.put("white spell", TARGET_WHITE_SPELL);
         single.put("red spell", TARGET_RED_SPELL);
