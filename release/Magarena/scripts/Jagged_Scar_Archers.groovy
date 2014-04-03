@@ -23,7 +23,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
                 new MagicDamageTargetPicker(source.getPower()),
                 this,
-                "SN deals damage equal to its power to target creature with flying." 
+                "SN deals damage equal to its power to target creature with flying\$." 
             );
         }
 
