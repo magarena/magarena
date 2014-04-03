@@ -6,6 +6,9 @@ def DelayedTrigger = {
             game.addDelayedAction(new MagicRemoveTriggerAction(this));
             
             final MagicCard mappedCard = staleCard.getOwner().map(game).getGraveyard().getCard(staleCard.getId());
+
+            // ensure card is not hidden, otherwise reanimate action will fail
+            mappedCard.reveal();
             
             return mappedCard.isInGraveyard() ?
                 new MagicEvent(
