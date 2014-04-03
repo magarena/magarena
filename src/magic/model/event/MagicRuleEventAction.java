@@ -1523,10 +1523,10 @@ public enum MagicRuleEventAction {
             .replaceAll("(S|s)earch your ", "PN searches PN's ")
             .replaceAll("discard ","discards ")
             .replaceAll("(D|d)raw ","PN draws ")
-            .replaceAll("Y|you don't","PN doesn't")
+            .replaceAll("(Y|y)ou don't","PN doesn't")
             .replaceAll("(Y|y)ou gain ","PN gains ")
             .replaceAll("(Y|y)ou lose ","PN loses ")
-            .replaceAll("Y|you control ","PN controls ")
+            .replaceAll("(Y|y)ou control ","PN controls ")
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("(P|p)ut ","PN puts ");
