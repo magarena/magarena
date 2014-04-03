@@ -14,6 +14,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicColor;
 import magic.model.MagicObject;
+import magic.model.MagicObjectImpl;
 import magic.model.MagicMappable;
 import magic.model.MagicPayedCost;
 import magic.model.condition.MagicCondition;
@@ -627,18 +628,6 @@ public class MagicEvent implements MagicCopyable {
         return "EVENT: " + source + " " + description + " " + (hasChoice() ? choice.getDescription() : "");
     }
 
-    private long getStateId(final Object obj) {
-        if (obj instanceof MagicPlayer) {
-            return ((MagicPlayer)obj).getId();
-        } else if (obj instanceof MagicObject) {
-            return ((MagicObject)obj).getStateId();
-        } else if (obj instanceof MagicMappable) {
-            return ((MagicMappable)obj).getId();
-        } else {
-            return obj.hashCode();
-        }
-    }
-
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
             //don't call getStateId if source is MagicItemOnStack to avoid infinite loop
@@ -648,7 +637,7 @@ public class MagicEvent implements MagicCopyable {
             targetPicker.hashCode(),
             action.hashCode(),
             description.hashCode(),
-            getStateId(ref),
+            MagicObjectImpl.getStateId(ref),
         });
     }
 }

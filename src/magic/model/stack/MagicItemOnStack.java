@@ -183,27 +183,11 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
         return source.getGame().getStack().contains(this);
     }
-
-    private long getStateId(final Object[] arr, final int idx) {
-        if (idx >= arr.length || arr[idx] == null) {
-            return -1L;
-        }
-        final Object obj = arr[idx];
-        if (obj instanceof MagicPlayer) {
-            return ((MagicPlayer)obj).getId();
-        } else if (obj instanceof MagicObject) {
-            return ((MagicObject)obj).getStateId();
-        } else if (obj instanceof MagicMappable) {
-            return ((MagicMappable)obj).getId();
-        } else {
-            return obj.hashCode();
-        }
-    }
     
     private long getStateId(final Object[] arr) {
         final long[] keys = new long[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            keys[i] = getStateId(arr, i);
+            keys[i] = MagicObjectImpl.getStateId(arr[i]);
         }
         return magic.MurmurHash3.hash(keys);
     }

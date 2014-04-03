@@ -45,4 +45,18 @@ public abstract class MagicObjectImpl implements MagicObject {
     public boolean isToken() {
         return isPermanent() && ((MagicPermanent)this).isToken();
     }
+
+    public static long getStateId(final Object obj) {
+        if (obj == null) {
+            return -1L;
+        } else if (obj instanceof MagicPlayer) {
+            return ((MagicPlayer)obj).getId();
+        } else if (obj instanceof MagicObject) {
+            return ((MagicObject)obj).getStateId();
+        } else if (obj instanceof MagicMappable) {
+            return ((MagicMappable)obj).getId();
+        } else {
+            return obj.hashCode();
+        }
+    }
 }

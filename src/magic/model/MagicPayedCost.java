@@ -3,7 +3,6 @@ package magic.model;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
-import magic.model.MagicCopyable;
 
 public class MagicPayedCost implements MagicCopyable {
 
@@ -76,7 +75,7 @@ public class MagicPayedCost implements MagicCopyable {
 
     public long getStateId() {
         return magic.MurmurHash3.hash(new long[] {
-            (target instanceof MagicPlayer) ? target.getId() : target.getStateId(),
+            MagicObjectImpl.getStateId(target),
             x,
             kicker
         });
