@@ -859,9 +859,9 @@ public enum MagicAbility {
     private final String name;
     private final int score;
 
-    private MagicAbility(final String aName,final int aScore) {
-        pattern = Pattern.compile(aName, Pattern.CASE_INSENSITIVE);
-        name  = aName;
+    private MagicAbility(final String regex,final int aScore) {
+        pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+        name  = regex.replace("\\", "");
         score = aScore;
     }
 
