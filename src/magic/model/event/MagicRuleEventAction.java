@@ -1526,7 +1526,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou don't","PN doesn't")
             .replaceAll("(Y|y)ou gain ","PN gains ")
             .replaceAll("(Y|y)ou lose ","PN loses ")
-            .replaceAll("(Y|y)ou control ","PN controls ")
+            .replaceAll("(Y|y)ou control","PN controls")
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("(P|p)ut ","PN puts ");
