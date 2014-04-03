@@ -27,9 +27,9 @@ class TestGraveBetrayal extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P,"Vigor",false,1);
-        addToHand(P, "Grave Betrayal", 1);
+        createPermanent(game,P,"Mountain",false,8);
+        createPermanent(game,P,"Chromatic Lantern",false,1);
+        createPermanent(game,P,"Grave Betrayal",false,1);
         addToHand(P, "Scavenging Ooze", 1);
         addToHand(P, "Lightning Bolt", 1);
 
@@ -38,8 +38,7 @@ class TestGraveBetrayal extends TestGameBuilder {
         P.setLife(2);
         addToLibrary(P, "Mountain", 20);
         createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P,"Goblin King",false,2);
-        addToHand(P, "Grizzly Bears", 2);
+        addToHand(P, "Dragon Fodder", 2);
 
         return game;
     }
