@@ -25,6 +25,10 @@ public class MagicCard
         public MagicCard copy(final MagicCopyMap copyMap) {
             return this;
         }
+        @Override
+        public String getName() {
+            return "NONE";
+        }
     };
 
     private static final int TOKEN_ID=-1;
