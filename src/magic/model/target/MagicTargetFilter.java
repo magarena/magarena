@@ -359,33 +359,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS = Factory.permanent(MagicType.Artifact, Control.Opp);
 
-    MagicPermanentFilterImpl TARGET_ARTIFACT_CREATURE = new MagicPermanentFilterImpl () {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isArtifact() &&
-                   target.isCreature();
-        }
-    };
+    MagicPermanentFilterImpl TARGET_ARTIFACT_CREATURE = Factory.permanentAnd(MagicType.Artifact, MagicType.Creature, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_ARTIFACT_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   target.isArtifact() &&
-                   target.isCreature();
-        }
-    };
+    MagicPermanentFilterImpl TARGET_ARTIFACT_CREATURE_YOU_CONTROL = Factory.permanentAnd(MagicType.Artifact, MagicType.Creature, Control.You);
 
-    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isArtifact()||target.isCreature();
-        }
-    };
+    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE = Factory.permanentOr(MagicType.Artifact, MagicType.Creature, Control.Any);
     
-    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) && 
-                    (target.isArtifact() || target.isCreature());
-        }
-    };
+    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE_YOU_CONTROL = Factory.permanentOr(MagicType.Artifact, MagicType.Creature, Control.You);
 
     MagicPermanentFilterImpl TARGET_ARTIFACT_OR_CREATURE_OR_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -395,19 +375,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT=new MagicPermanentFilterImpl () {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isArtifact() ||
-                   target.isEnchantment();
-        }
-    };
+    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT = Factory.permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_LAND = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isArtifact() ||
-                   target.isLand();
-        }
-    };
+    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_LAND = Factory.permanentOr(MagicType.Artifact, MagicType.Land, Control.Any);
 
     MagicPermanentFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT_OR_LAND=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -425,13 +395,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isOpponent(player) &&
-                   (target.isArtifact() || target.isEnchantment());
-        }
-    };
-
+    MagicPermanentFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = Factory.permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Opp);
+    
     MagicPermanentFilterImpl TARGET_1_1_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && target.getPower() == 1 && target.getToughness() == 1;
@@ -466,33 +431,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicPermanentFilterImpl TARGET_CREATURE_OR_LAND=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() ||
-                   target.isLand();
-        }
-    };
-
-    MagicPermanentFilterImpl TARGET_CREATURE_OR_PLANESWALKER=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() ||
-                   target.isPlaneswalker();
-        }
-    };
-
-    MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() ||
-                   target.isEnchantment();
-        }
-    };
+    MagicPermanentFilterImpl TARGET_CREATURE_OR_LAND = Factory.permanentOr(MagicType.Creature, MagicType.Land, Control.Any);
     
-    MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) && 
-                    (target.isCreature() || target.isEnchantment());
-        }
-    };
+    MagicPermanentFilterImpl TARGET_CREATURE_OR_PLANESWALKER = Factory.permanentOr(MagicType.Creature, MagicType.Planeswalker, Control.Any);
+
+    MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT = Factory.permanentOr(MagicType.Creature, MagicType.Enchantment, Control.Any);
+    
+    MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_YOU_CONTROL = Factory.permanentOr(MagicType.Creature, MagicType.Enchantment, Control.You);
 
     MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_OR_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -611,13 +556,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicPermanentFilterImpl TARGET_FOREST_OR_PLAINS_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) && 
-                   (target.hasSubType(MagicSubType.Forest) ||
-                    target.hasSubType(MagicSubType.Plains));
-        }
-    };
+    MagicPermanentFilterImpl TARGET_FOREST_OR_PLAINS = Factory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.Any);
+    
+    MagicPermanentFilterImpl TARGET_FOREST_OR_PLAINS_YOU_CONTROL = Factory.permanentOr(MagicSubType.Forest, MagicSubType.Plains, Control.You);
     
     MagicPermanentFilterImpl TARGET_RED_OR_GREEN_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -671,53 +612,41 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_WHITE_CREATURE_YOU_CONTROL = Factory.creature(MagicColor.White, Control.You);
 
-    MagicPermanentFilterImpl TARGET_BAT_YOU_CONTROL = Factory.creature(MagicSubType.Bat, Control.You);
+    MagicPermanentFilterImpl TARGET_BAT_YOU_CONTROL = Factory.permanent(MagicSubType.Bat, Control.You);
 
-    MagicPermanentFilterImpl TARGET_BEAST_YOU_CONTROL = Factory.creature(MagicSubType.Beast, Control.You);
+    MagicPermanentFilterImpl TARGET_BEAST_YOU_CONTROL = Factory.permanent(MagicSubType.Beast, Control.You);
 
-    MagicPermanentFilterImpl TARGET_DRAGON_YOU_CONTROL = Factory.creature(MagicSubType.Dragon, Control.You);
+    MagicPermanentFilterImpl TARGET_DRAGON_YOU_CONTROL = Factory.permanent(MagicSubType.Dragon, Control.You);
 
-    MagicPermanentFilterImpl TARGET_ELEMENTAL_YOU_CONTROL = Factory.creature(MagicSubType.Elemental, Control.You);
+    MagicPermanentFilterImpl TARGET_ELEMENTAL_YOU_CONTROL = Factory.permanent(MagicSubType.Elemental, Control.You);
 
-    MagicPermanentFilterImpl TARGET_KITHKIN_YOU_CONTROL = Factory.creature(MagicSubType.Kithkin, Control.You);
+    MagicPermanentFilterImpl TARGET_KITHKIN_YOU_CONTROL = Factory.permanent(MagicSubType.Kithkin, Control.You);
 
-    MagicPermanentFilterImpl TARGET_GRIFFIN = Factory.creature(MagicSubType.Griffin, Control.Any);
+    MagicPermanentFilterImpl TARGET_GRIFFIN = Factory.permanent(MagicSubType.Griffin, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_BIRD = Factory.creature(MagicSubType.Bird, Control.Any);
+    MagicPermanentFilterImpl TARGET_BIRD = Factory.permanent(MagicSubType.Bird, Control.Any);
     
     MagicPermanentFilterImpl TARGET_GOBLIN_PERMANENT = Factory.permanent(MagicSubType.Goblin, Control.Any);
     
     MagicPermanentFilterImpl TARGET_GOBLIN_CREATURE = Factory.creature(MagicSubType.Goblin, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_GOBLIN_YOU_CONTROL = Factory.creature(MagicSubType.Goblin, Control.You);
+    MagicPermanentFilterImpl TARGET_GOBLIN_YOU_CONTROL = Factory.permanent(MagicSubType.Goblin, Control.You);
 
-    MagicPermanentFilterImpl TARGET_GOBLIN_OR_SHAMAN_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   target.isCreature() &&
-                   (target.hasSubType(MagicSubType.Goblin) ||
-                    target.hasSubType(MagicSubType.Shaman));
-        }
-    };
+    MagicPermanentFilterImpl TARGET_GOBLIN_OR_SHAMAN_YOU_CONTROL = Factory.permanentOr(MagicSubType.Goblin, MagicSubType.Shaman, Control.You);
     
-    MagicPermanentFilterImpl TARGET_DJINN_OR_EFREET = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.hasSubType(MagicSubType.Djinn) ||
-                   target.hasSubType(MagicSubType.Efreet);
-        }
-    };
+    MagicPermanentFilterImpl TARGET_DJINN_OR_EFREET = Factory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_GOLEM_YOU_CONTROL = Factory.creature(MagicSubType.Golem, Control.You);
+    MagicPermanentFilterImpl TARGET_GOLEM_YOU_CONTROL = Factory.permanent(MagicSubType.Golem, Control.You);
 
     MagicPermanentFilterImpl TARGET_SQUIRREL_CREATURE = Factory.creature(MagicSubType.Squirrel, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_CAT_YOU_CONTROL = Factory.creature(MagicSubType.Cat, Control.You);
+    MagicPermanentFilterImpl TARGET_CAT_YOU_CONTROL = Factory.permanent(MagicSubType.Cat, Control.You);
 
     MagicPermanentFilterImpl TARGET_KNIGHT_CREATURE = Factory.creature(MagicSubType.Knight, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_KNIGHT_YOU_CONTROL = Factory.creature(MagicSubType.Knight, Control.You);
+    MagicPermanentFilterImpl TARGET_KNIGHT_YOU_CONTROL = Factory.permanent(MagicSubType.Knight, Control.You);
 
-    MagicPermanentFilterImpl TARGET_ILLUSION_YOU_CONTROL = Factory.creature(MagicSubType.Illusion, Control.You);
+    MagicPermanentFilterImpl TARGET_ILLUSION_YOU_CONTROL = Factory.permanent(MagicSubType.Illusion, Control.You);
 
     MagicPermanentFilterImpl TARGET_MERFOLK_CREATURE = Factory.creature(MagicSubType.Merfolk, Control.Any);
     
@@ -729,33 +658,25 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_MERFOLK_YOU_CONTROL = Factory.permanent(MagicSubType.Merfolk, Control.You);
 
-    MagicPermanentFilterImpl TARGET_SAPROLING_YOU_CONTROL = Factory.creature(MagicSubType.Saproling, Control.You);
+    MagicPermanentFilterImpl TARGET_SAPROLING_YOU_CONTROL = Factory.permanent(MagicSubType.Saproling, Control.You);
 
-    MagicPermanentFilterImpl TARGET_MYR_YOU_CONTROL = Factory.creature(MagicSubType.Myr, Control.You);
+    MagicPermanentFilterImpl TARGET_MYR_YOU_CONTROL = Factory.permanent(MagicSubType.Myr, Control.You);
 
     MagicPermanentFilterImpl TARGET_MYR_CREATURE = Factory.creature(MagicSubType.Myr, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_SAMURAI = Factory.creature(MagicSubType.Samurai, Control.Any);
+    MagicPermanentFilterImpl TARGET_SAMURAI = Factory.permanent(MagicSubType.Samurai, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_SAMURAI_YOU_CONTROL = Factory.creature(MagicSubType.Samurai, Control.You);
+    MagicPermanentFilterImpl TARGET_SAMURAI_YOU_CONTROL = Factory.permanent(MagicSubType.Samurai, Control.You);
 
     MagicPermanentFilterImpl TARGET_LEGENDARY_CREATURE = Factory.creature(MagicType.Legendary, Control.You);
 
-    MagicPermanentFilterImpl TARGET_SNAKE_YOU_CONTROL = Factory.creature(MagicSubType.Snake, Control.You);
-
-    MagicPermanentFilterImpl TARGET_TREEFOLK_OR_WARRIOR_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                    target.isCreature() &&
-                    (target.hasSubType(MagicSubType.Treefolk) ||
-                     target.hasSubType(MagicSubType.Warrior));
-        }
-    };
+    MagicPermanentFilterImpl TARGET_SNAKE_YOU_CONTROL = Factory.permanent(MagicSubType.Snake, Control.You);
+    
+    MagicPermanentFilterImpl TARGET_TREEFOLK_OR_WARRIOR_YOU_CONTROL = Factory.permanentOr(MagicSubType.Treefolk, MagicSubType.Warrior, Control.Any);
 
     MagicPermanentFilterImpl TARGET_LEGENDARY_SAMURAI_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
                    target.hasSubType(MagicSubType.Samurai) &&
                    target.hasType(MagicType.Legendary);
         }
@@ -770,23 +691,21 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicPermanentFilterImpl TARGET_VAMPIRE_YOU_CONTROL = Factory.creature(MagicSubType.Vampire, Control.You);
+    MagicPermanentFilterImpl TARGET_VAMPIRE_YOU_CONTROL = Factory.permanent(MagicSubType.Vampire, Control.You);
     
-    MagicPermanentFilterImpl TARGET_VAMPIRE = Factory.creature(MagicSubType.Vampire, Control.Any);
+    MagicPermanentFilterImpl TARGET_VAMPIRE = Factory.permanent(MagicSubType.Vampire, Control.Any);
 
     MagicPermanentFilterImpl TARGET_VAMPIRE_WEREWOLF_OR_ZOMBIE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() &&
-                   (target.hasSubType(MagicSubType.Vampire) ||
+            return target.hasSubType(MagicSubType.Vampire) ||
                     target.hasSubType(MagicSubType.Werewolf) ||
-                    target.hasSubType(MagicSubType.Zombie));
+                    target.hasSubType(MagicSubType.Zombie);
         }
     };
 
     MagicPermanentFilterImpl TARGET_NONVAMPIRE_NONWEREWOLF_NONZOMBIE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() &&
-                   !target.hasSubType(MagicSubType.Vampire) &&
+            return !target.hasSubType(MagicSubType.Vampire) &&
                    !target.hasSubType(MagicSubType.Werewolf) &&
                    !target.hasSubType(MagicSubType.Zombie);
         }
@@ -799,9 +718,9 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicPermanentFilterImpl TARGET_HUMAN = Factory.creature(MagicSubType.Human, Control.Any);
+    MagicPermanentFilterImpl TARGET_HUMAN = Factory.permanent(MagicSubType.Human, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_HUMAN_YOU_CONTROL = Factory.creature(MagicSubType.Human, Control.You);
+    MagicPermanentFilterImpl TARGET_HUMAN_YOU_CONTROL = Factory.permanent(MagicSubType.Human, Control.You);
 
     MagicPermanentFilterImpl TARGET_NONHUMAN_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -826,14 +745,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
 
-    MagicPermanentFilterImpl TARGET_SOLDIER = Factory.creature(MagicSubType.Soldier, Control.Any);
+    MagicPermanentFilterImpl TARGET_SOLDIER = Factory.permanent(MagicSubType.Soldier, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_SOLDIER_YOU_CONTROL = Factory.creature(MagicSubType.Soldier, Control.You);
+    MagicPermanentFilterImpl TARGET_SOLDIER_YOU_CONTROL = Factory.permanent(MagicSubType.Soldier, Control.You);
 
     MagicPermanentFilterImpl TARGET_NON_ZOMBIE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
                    !target.hasSubType(MagicSubType.Zombie);
         }
     };
@@ -841,34 +759,33 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_NON_VAMPIRE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
                    !target.hasSubType(MagicSubType.Vampire);
         }
     };
 
-    MagicPermanentFilterImpl TARGET_ZOMBIE_YOU_CONTROL = Factory.creature(MagicSubType.Zombie, Control.You);
+    MagicPermanentFilterImpl TARGET_ZOMBIE_YOU_CONTROL = Factory.permanent(MagicSubType.Zombie, Control.You);
 
-    MagicPermanentFilterImpl TARGET_ZOMBIE = Factory.creature(MagicSubType.Zombie, Control.Any);
+    MagicPermanentFilterImpl TARGET_ZOMBIE = Factory.permanent(MagicSubType.Zombie, Control.Any);
     
     MagicPermanentFilterImpl TARGET_BLINKMOTH_CREATURE = Factory.creature(MagicSubType.Blinkmoth, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_KOR_YOU_CONTROL = Factory.creature(MagicSubType.Kor, Control.You);
+    MagicPermanentFilterImpl TARGET_KOR_YOU_CONTROL = Factory.permanent(MagicSubType.Kor, Control.You);
 
     MagicPermanentFilterImpl TARGET_WOLF_YOU_CONTROL = Factory.permanent(MagicSubType.Wolf, Control.You);
 
-    MagicPermanentFilterImpl TARGET_SLIVER = Factory.creature(MagicSubType.Sliver, Control.Any);
+    MagicPermanentFilterImpl TARGET_SLIVER = Factory.permanent(MagicSubType.Sliver, Control.Any);
     
     MagicPermanentFilterImpl TARGET_SLIVER_PERMANENT = Factory.permanent(MagicSubType.Sliver, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_SLIVER_YOU_CONTROL = Factory.creature(MagicSubType.Sliver, Control.You);
+    MagicPermanentFilterImpl TARGET_SLIVER_YOU_CONTROL = Factory.permanent(MagicSubType.Sliver, Control.You);
 
-    MagicPermanentFilterImpl TARGET_ELF = Factory.creature(MagicSubType.Elf, Control.Any);
+    MagicPermanentFilterImpl TARGET_ELF = Factory.permanent(MagicSubType.Elf, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_ELF_YOU_CONTROL = Factory.creature(MagicSubType.Elf, Control.You);
+    MagicPermanentFilterImpl TARGET_ELF_YOU_CONTROL = Factory.permanent(MagicSubType.Elf, Control.You);
     
-    MagicPermanentFilterImpl TARGET_BARBARIAN = Factory.creature(MagicSubType.Barbarian, Control.Any);
+    MagicPermanentFilterImpl TARGET_BARBARIAN = Factory.permanent(MagicSubType.Barbarian, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_ALLY_YOU_CONTROL = Factory.creature(MagicSubType.Ally, Control.You);
+    MagicPermanentFilterImpl TARGET_ALLY_YOU_CONTROL = Factory.permanent(MagicSubType.Ally, Control.You);
 
     MagicPermanentFilterImpl TARGET_FAERIE_YOU_CONTROL = Factory.permanent(MagicSubType.Faerie, Control.You);
     
@@ -878,7 +795,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_MODULAR_CREATURE_YOU_CONTROL = Factory.creature(MagicAbility.Modular, Control.You);
 
-    MagicPermanentFilterImpl TARGET_PLANT_YOU_CONTROL = Factory.creature(MagicSubType.Plant, Control.You);
+    MagicPermanentFilterImpl TARGET_PLANT_YOU_CONTROL = Factory.permanent(MagicSubType.Plant, Control.You);
 
     MagicPermanentFilterImpl TARGET_CREATURE = Factory.permanent(MagicType.Creature, Control.Any);
     
@@ -1561,6 +1478,39 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                 }
             };
         }
+        public static final MagicPermanentFilterImpl permanentAnd(final MagicType type1, final MagicType type2, final Control control) {
+            return new MagicPermanentFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                    return target.hasType(type1) && target.hasType(type2) &&
+                           ((control == Control.You && target.isController(player)) ||
+                            (control == Control.Opp && target.isOpponent(player)) ||
+                            (control == Control.Any));
+                }
+            };
+        }
+        
+        public static final MagicPermanentFilterImpl permanentOr(final MagicType type1, final MagicType type2, final Control control) {
+            return new MagicPermanentFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                    return (target.hasType(type1) || target.hasType(type2)) &&
+                           ((control == Control.You && target.isController(player)) ||
+                            (control == Control.Opp && target.isOpponent(player)) ||
+                            (control == Control.Any));
+                }
+            };
+        }
+        
+        public static final MagicPermanentFilterImpl permanentOr(final MagicSubType subType1, final MagicSubType subType2, final Control control) {
+            return new MagicPermanentFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                    return (target.hasSubType(subType1) || target.hasSubType(subType2)) &&
+                           ((control == Control.You && target.isController(player)) ||
+                            (control == Control.Opp && target.isOpponent(player)) ||
+                            (control == Control.Any));
+                }
+            };
+        }
+        
         public static final MagicPermanentFilterImpl permanent(final MagicColor color, final Control control) {
             return new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
