@@ -18,8 +18,8 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -70,6 +70,7 @@ public class MCTSAI implements MagicAI {
     private static final int MAX_ACTIONS = 10000;
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
+    private int sims = 0;
     
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
 
@@ -134,8 +135,8 @@ public class MCTSAI implements MagicAI {
         }
 
         //normal: max time is 1000 * level
-        int MAX_TIME = 1000 * aiGame.getArtificialLevel(scorePlayer.getIndex());
-        int MAX_SIM = Integer.MAX_VALUE;
+        final int artificialLevel = aiGame.getArtificialLevel(scorePlayer.getIndex());
+        final int MAX_TIME = 1000 * aiGame.getArtificialLevel(scorePlayer.getIndex());
 
         final long START_TIME = System.currentTimeMillis();
 
@@ -143,93 +144,20 @@ public class MCTSAI implements MagicAI {
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, aiGame, RCHOICES);
 
         log("MCTS cached=" + root.getNumSim());
-
-        final int workers = THREADS - 1;
-        final ExecutorService executor = 
-            workers > 0 ?
-            new ThreadPoolExecutor(
-                workers, 
-                workers, 
-                0L, 
-                TimeUnit.MILLISECONDS,
-                new ArrayBlockingQueue<Runnable>(workers),
-                new ThreadPoolExecutor.CallerRunsPolicy()
-            ):
-            null;
-            
-        //end simulations once root is AI win or time is up
-        int sims;
-        for (sims = 0;
-             System.currentTimeMillis() - START_TIME < MAX_TIME &&
-             sims < MAX_SIM &&
-             !root.isAIWin();
-             sims++) {
-
-            //clone the MagicGame object for simulation
-            final MagicGame rootGame = new MagicGame(aiGame, aiGame.getScorePlayer());
-
-            //pass in a clone of the state,
-            //genNewTreeNode grows the tree by one node
-            //and returns the path from the root to the new node
-            final LinkedList<MCTSGameTree> path = growTree(root, rootGame);
-
-            assert path.size() >= 2 : "ERROR! length of MCTS path is " + path.size();
-            
-            // play a simulated game to get score
-            // update all nodes along the path from root to new node
-
-            // submit random play to executor
-            final Runnable task = new Runnable() {
-                @Override
-                public void run() {
-                    // propagate result of random play up the path
-                    final double score = randomPlay(path.getLast(), rootGame);
-                    final Iterator<MCTSGameTree> iter = path.descendingIterator();
-                    MCTSGameTree child = null;
-                    MCTSGameTree parent = null;
-                    while (iter.hasNext()) {
-                        child = parent;
-                        parent = iter.next();
-
-                        parent.removeVirtualLoss();
-                        parent.updateScore(child, score);
-                    }
-                }
-            };
-
-            if (executor != null) {
-                executor.submit(task);
-            } else {
-                task.run();
-            }
-            
-            // virtual loss + game theoretic value propagation
-            final Iterator<MCTSGameTree> iter = path.descendingIterator();
-            MCTSGameTree child = null;
-            MCTSGameTree parent = null;
-            while (iter.hasNext()) {
-                child = parent;
-                parent = iter.next();
-
-                parent.recordVirtualLoss();
-
-                if (child != null && child.isSolved()) {
-                    final int steps = child.getSteps() + 1;
-                    if (parent.isAI() && child.isAIWin()) {
-                        parent.setAIWin(steps);
-                    } else if (parent.isOpp() && child.isAILose()) {
-                        parent.setAILose(steps);
-                    } else if (parent.isAI() && child.isAILose()) {
-                        parent.incLose(steps);
-                    } else if (parent.isOpp() && child.isAIWin()) {
-                        parent.incLose(steps);
-                    }
-                }
-            }
-        }
-
-        if (executor != null) {
-            executor.shutdown();
+        
+        sims = 0;
+        final ExecutorService executor = Executors.newFixedThreadPool(THREADS); 
+        final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
+        executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, MAX_TIME));
+        
+        try {
+            // wait for artificialLevel + 1 seconds for jobs to finish
+            executor.awaitTermination(artificialLevel + 1, TimeUnit.SECONDS);
+        } catch (final InterruptedException ex) {
+            throw new RuntimeException(ex);
+        } finally {
+            // force termination of workers
+            executor.shutdownNow();
         }
 
         assert root.size() > 0 : "ERROR! Root has no children but there are " + size + " choices";
@@ -250,6 +178,117 @@ public class MCTSAI implements MagicAI {
         log(outputChoice(scorePlayer, root, START_TIME, bestC, sims));
 
         return startGame.map(RCHOICES.get(bestC));
+    }
+
+    public Runnable genTreeUpdateTask(
+        final MCTSGameTree root, 
+        final MagicGame aiGame, 
+        final ExecutorService executor, 
+        final BlockingQueue<Runnable> queue, 
+        final long START_TIME, 
+        final long MAX_TIME) {
+        return new Runnable() {
+            @Override
+            public void run() {
+                TreeUpdate(root, aiGame, executor, queue, START_TIME, MAX_TIME);
+            }
+        };
+    }
+    
+    private Runnable genSimulationTask(final MagicGame rootGame, final LinkedList<MCTSGameTree> path, final BlockingQueue<Runnable> queue) {
+        return new Runnable() {
+            @Override
+            public void run() {
+                // propagate result of random play up the path
+                final double score = randomPlay(path.getLast(), rootGame);
+                queue.offer(genBackpropagationTask(score, path));
+            }
+        };
+    }
+
+    private Runnable genBackpropagationTask(final double score, final LinkedList<MCTSGameTree> path) {
+        return new Runnable() {
+            @Override
+            public void run() {
+                final Iterator<MCTSGameTree> iter = path.descendingIterator();
+                MCTSGameTree child = null;
+                MCTSGameTree parent = null;
+                while (iter.hasNext()) {
+                    child = parent;
+                    parent = iter.next();
+
+                    parent.removeVirtualLoss();
+                    parent.updateScore(child, score);
+                }
+            }
+        };
+    }
+
+    public void TreeUpdate(
+        final MCTSGameTree root, 
+        final MagicGame aiGame, 
+        final ExecutorService executor, 
+        final BlockingQueue<Runnable> queue, 
+        final long START_TIME, 
+        final long MAX_TIME) {
+
+        //prioritize backpropagation tasks
+        while (queue.isEmpty() == false) {
+            try {
+                queue.take().run();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        sims++;
+
+        //clone the MagicGame object for simulation
+        final MagicGame rootGame = new MagicGame(aiGame, aiGame.getScorePlayer());
+        
+        //pass in a clone of the state,
+        //genNewTreeNode grows the tree by one node
+        //and returns the path from the root to the new node
+        final LinkedList<MCTSGameTree> path = growTree(root, rootGame);
+
+        assert path.size() >= 2 : "ERROR! length of MCTS path is " + path.size();
+        
+        // play a simulated game to get score
+        // update all nodes along the path from root to new node
+
+        // submit random play to executor
+        executor.submit(genSimulationTask(rootGame, path, queue));
+        
+        // virtual loss + game theoretic value propagation
+        final Iterator<MCTSGameTree> iter = path.descendingIterator();
+        MCTSGameTree child = null;
+        MCTSGameTree parent = null;
+        while (iter.hasNext()) {
+            child = parent;
+            parent = iter.next();
+
+            parent.recordVirtualLoss();
+
+            if (child != null && child.isSolved()) {
+                final int steps = child.getSteps() + 1;
+                if (parent.isAI() && child.isAIWin()) {
+                    parent.setAIWin(steps);
+                } else if (parent.isOpp() && child.isAILose()) {
+                    parent.setAILose(steps);
+                } else if (parent.isAI() && child.isAILose()) {
+                    parent.incLose(steps);
+                } else if (parent.isOpp() && child.isAIWin()) {
+                    parent.incLose(steps);
+                }
+            }
+        }
+       
+        // end simulations once root is AI win or time is up
+        if (System.currentTimeMillis() - START_TIME < MAX_TIME && !root.isAIWin()) {
+            executor.submit(genTreeUpdateTask(root, aiGame, executor, queue, START_TIME, MAX_TIME));
+        } else {
+            executor.shutdown();
+        }
     }
 
     private String outputChoice(
@@ -671,15 +710,15 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
         return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
     
-    synchronized void recordVirtualLoss() {
+    void recordVirtualLoss() {
         numSim++;
     }
     
-    synchronized void removeVirtualLoss() {
+    void removeVirtualLoss() {
         numSim--;
     }
 
-    synchronized void updateScore(final MCTSGameTree child, final double delta) {
+    void updateScore(final MCTSGameTree child, final double delta) {
         final double oldMean = (numSim > 0) ? sum/numSim : 0;
         sum += delta;
         numSim += 1;
