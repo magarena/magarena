@@ -5,7 +5,7 @@ value=3.217
 rarity=R
 type=Legendary,Creature
 subtype=Elder,Dragon
-cost={2}{W}{W}{G}{G}{U}{U}
+cost={2}{G}{G}{W}{W}{U}{U}
 pt=7/7
 ability=flying;\
         {W}: SN gets +0/+1 until end of turn.;\
