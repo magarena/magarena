@@ -1,0 +1,11 @@
+name=Genju of the Falls
+url=http://magiccards.info/query?q=%21genju%20of%20the%20falls
+image=http://mtgimage.com/card/genju%20of%20the%20falls.jpg
+value=4.221
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}
+enchant=pump,pos island
+timing=enchantment
+requires_groovy_code
