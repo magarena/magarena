@@ -1019,7 +1019,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SearchLibraryToHand(
-        "search your library for (?<choice>[^\\.]*), reveal it, and put it into your hand. Then shuffle your library\\.",
+        "search your library for (?<choice>[^\\.]*), reveal it, and put it into your hand. (If you do,|Then) shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1524,6 +1524,7 @@ public enum MagicRuleEventAction {
             .replaceAll("discard ","discards ")
             .replaceAll("(D|d)raw ","PN draws ")
             .replaceAll("(Y|y)ou don't","PN doesn't")
+            .replaceAll("(Y|y)ou do","PN does")
             .replaceAll("(Y|y)ou gain ","PN gains ")
             .replaceAll("(Y|y)ou lose ","PN loses ")
             .replaceAll("(Y|y)ou control","PN controls")

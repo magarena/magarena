@@ -478,7 +478,7 @@ public class MagicTargetChoice extends MagicChoice {
         new MagicTargetChoice("an enchantment to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_AURA =
-        new MagicTargetChoice("an aura to sacrifice");
+        new MagicTargetChoice("an Aura to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_MOUNTAIN = 
         new MagicTargetChoice("a Mountain to sacrifice");
