@@ -1041,6 +1041,29 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SearchLibraryToTopLibrary(
+            "search your library for (?<choice>[^\\.]*)(,| and) reveal (it,|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
+            MagicTiming.Draw,
+            "Search"
+        ) {
+            @Override
+            public MagicChoice getChoice(final Matcher matcher) {
+                return MagicChoice.NONE;
+            }
+            @Override
+            public MagicEventAction getAction(final Matcher matcher) {
+                final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
+                return new MagicEventAction () {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        game.addEvent(new MagicSearchOntoLibraryEvent(
+                            event,
+                            choice
+                        ));      
+                    }
+                };
+            }
+        },
     SearchLibraryToBattlefield(
         "search your library for (?<choice>[^\\.]*) and put it onto the battlefield(?<tapped>[^\\.]*). Then shuffle your library\\.",
         MagicTiming.Pump,
@@ -1522,6 +1545,8 @@ public enum MagicRuleEventAction {
         final String playerRule = rule
             .replaceAll("(S|s)earch your ", "PN searches PN's ")
             .replaceAll("discard ","discards ")
+            .replaceAll("reveal ","reveals ")
+            .replaceAll("(S|s)huffle your ","PN shuffles PN's ")
             .replaceAll("(D|d)raw ","PN draws ")
             .replaceAll("(Y|y)ou don't","PN doesn't")
             .replaceAll("(Y|y)ou do","PN does")
