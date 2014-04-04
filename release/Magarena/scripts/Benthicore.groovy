@@ -1,10 +1,10 @@
 def UNTAPPED_MERFOLK_YOU_CONTROL=new MagicPermanentFilterImpl(){
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target)
         {
-            return target.isCreature() && target.hasSubType(MagicSubType.Merfolk) && !target.isTapped() && !target.isOpponent(player);
+            return target.hasSubType(MagicSubType.Merfolk) && !target.isTapped() && !target.isOpponent(player);
         }
     };
-def TWO_UNTAPPED_MERFOLK_CREATURES_CONDITION = new MagicCondition() {
+def TWO_UNTAPPED_MERFOLK_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
         final MagicTargetFilter<MagicPermanent> filter =new MagicOtherPermanentTargetFilter(
             UNTAPPED_MERFOLK_YOU_CONTROL, 
@@ -15,7 +15,7 @@ def TWO_UNTAPPED_MERFOLK_CREATURES_CONDITION = new MagicCondition() {
         return game.filterPermanents(player, filter).size() >= 2;
     }
 };
-def AN_UNTAPPED_MERFOLK_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_MERFOLK_YOU_CONTROL,"an untapped merfolk you control");
+def AN_UNTAPPED_MERFOLK_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_MERFOLK_YOU_CONTROL,"an untapped Merfolk you control");
 
 [
     new MagicWhenComesIntoPlayTrigger() 
@@ -32,7 +32,7 @@ def AN_UNTAPPED_MERFOLK_YOU_CONTROL = new MagicTargetChoice(UNTAPPED_MERFOLK_YOU
             game.doAction(new MagicPlayTokenAction(event.getPlayer(),TokenCardDefinitions.get("1/1 blue Merfolk Wizard creature token")));
         }
     },
-    new MagicPermanentActivation([TWO_UNTAPPED_MERFOLK_CREATURES_CONDITION],new MagicActivationHints(MagicTiming.Removal),"Untap") 
+    new MagicPermanentActivation([TWO_UNTAPPED_MERFOLK_CONDITION],new MagicActivationHints(MagicTiming.Removal),"Untap") 
     {
 
         @Override
