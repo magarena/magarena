@@ -2,10 +2,13 @@ package magic.test;
 
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicDeckProfile;
 import magic.model.phase.MagicMainPhase;
+import magic.model.action.MagicChangeCountersAction;
+import magic.model.MagicCounterType;
 
 class TestGraveBetrayal extends TestGameBuilder {
     public MagicGame getGame() {
@@ -38,7 +41,8 @@ class TestGraveBetrayal extends TestGameBuilder {
         P.setLife(2);
         addToLibrary(P, "Mountain", 20);
         createPermanent(game,P,"Rupture Spire",false,9);
-        addToHand(P, "Dragon Fodder", 2);
+        final MagicPermanent p = createPermanent(game,P,"Thallid Germinator",false,1);
+        game.doAction(new MagicChangeCountersAction(p, MagicCounterType.Spore, 10, true));
 
         return game;
     }
