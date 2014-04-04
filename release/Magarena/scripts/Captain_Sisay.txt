@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={2}{G}{W}
 pt=2/2
+ability={T}: Search your library for a legendary card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
-requires_groovy_code

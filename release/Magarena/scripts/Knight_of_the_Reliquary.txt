@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Knight
 cost={1}{G}{W}
 pt=2/2
+ability={T}, Sacrifice a Forest or Plains: Search your library for a land card and put it onto the battlefield. Then shuffle your library.
 timing=main
 requires_groovy_code
