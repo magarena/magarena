@@ -113,6 +113,9 @@ public class MagicTargetFilterFactory {
         single.put("Goblin permanent card from your library", TARGET_GOBLIN_PERMANENT_CARD_FROM_LIBRARY);
         single.put("Elf permanent card from your library", TARGET_ELF_PERMANENT_CARD_FROM_LIBRARY);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
+        single.put("artifact or enchantment card from your library", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_LIBRARY);
+        single.put("instant or sorcery card from your library", INSTANT_OR_SORCERY_CARD_FROM_LIBRARY);
+        single.put("Treefolk or Forest card from your library", TREEFOLK_OR_FOREST_CARD_FROM_LIBRARY);
         
         // <color|type|subtype> creature you control
         single.put("non-Angel creature you control", TARGET_NON_ANGEL_CREATURE_YOU_CONTROL);

@@ -934,6 +934,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
+    MagicCardFilterImpl TREEFOLK_OR_FOREST_CARD_FROM_LIBRARY = Factory.cardOr(MagicTargetType.Library, MagicSubType.Treefolk, MagicSubType.Forest);
+    
     MagicCardFilterImpl TARGET_DRAGON_PERMANENT_CARD_FROM_GRAVEYARD = Factory.permanentCard(MagicTargetType.Graveyard, MagicSubType.Dragon);
     
     MagicCardFilterImpl TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicCardFilterImpl() {
@@ -965,8 +967,12 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD = Factory.cardOr(MagicTargetType.Graveyard, MagicType.Instant, MagicType.Sorcery);
     
+    MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_LIBRARY = Factory.cardOr(MagicTargetType.Library, MagicType.Instant, MagicType.Sorcery);
+    
     MagicCardFilterImpl ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = Factory.cardOr(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Enchantment);
 
+    MagicCardFilterImpl ARTIFACT_OR_ENCHANTMENT_CARD_FROM_LIBRARY = Factory.cardOr(MagicTargetType.Library, MagicType.Artifact, MagicType.Enchantment);
+    
     MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = Factory.cardOr(MagicTargetType.OpponentsGraveyard, MagicType.Instant, MagicType.Sorcery);
 
     MagicCardFilterImpl TARGET_ENCHANTMENT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicType.Enchantment);
