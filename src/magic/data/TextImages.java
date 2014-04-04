@@ -73,6 +73,7 @@ public class TextImages {
         TEXT_ICONS.put("{g}",IconImages.GOLDCOUNTER);
         TEXT_ICONS.put("{br}",IconImages.BRIBECOUNTER);
         TEXT_ICONS.put("{L}",IconImages.LOSE);
+        TEXT_ICONS.put(MagicCounterType.Spore.getText(),IconImages.SPORECOUNTER);
     }
 
     public static ImageIcon getIcon(final String text) {
