@@ -4,32 +4,20 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(4,4);
     }
 };
+def LC = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
+    @Override
+    public int getColorFlags(final MagicPermanent permanent, final int flags) {    
+        return MagicColor.Green.getMask();
+    }
+};
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+    @Override
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+        flags.add(MagicSubType.Spirit);
+    }
     @Override
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
         return flags | MagicType.Creature.getMask();
-    }
-    @Override
-    public void modTypeFlags(final MagicPermanent permanent, final Set<MagicType> flags) {    
-        flags.add(MagicType.Creature);
-    }
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Spirit);
-    }
-};
-def LC = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-    @Override
-    public void modColorFlags(final MagicPermanent permanent, final Set<MagicColor> flags) {    
-        flags.remove(MagicColor.White);
-        flags.remove(MagicColor.Blue);
-        flags.remove(MagicColor.Black);
-        flags.remove(MagicColor.Red);
-        flags.add(MagicColor.Green);
-    }
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Spirit);
     }
 };
 [

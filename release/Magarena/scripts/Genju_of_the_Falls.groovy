@@ -4,38 +4,26 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(3,2);
     }
 };
-def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
+def LC = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
-    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Flying, flags);
+    public int getColorFlags(final MagicPermanent permanent, final int flags) {
+        return MagicColor.Blue.getMask();
     }
 };
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+        flags.add(MagicSubType.Spirit);
+    }
+    @Override
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
         return flags | MagicType.Creature.getMask();
     }
-    @Override
-    public void modTypeFlags(final MagicPermanent permanent, final Set<MagicType> flags) {    
-        flags.add(MagicType.Creature);
-    }
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Spirit);
-    }
 };
-def LC = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
-    public void modColorFlags(final MagicPermanent permanent, final Set<MagicColor> flags) {    
-        flags.remove(MagicColor.White);
-        flags.remove(MagicColor.Green);
-        flags.remove(MagicColor.Black);
-        flags.remove(MagicColor.Red);
-        flags.add(MagicColor.Blue);
-    }
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Spirit);
+    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+        permanent.addAbility(MagicAbility.Flying, flags);
     }
 };
 [

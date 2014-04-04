@@ -4,50 +4,29 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(2,2);
     }
 };
-def BlackPump = new MagicPermanentActivation(new MagicActivationHints(MagicTiming.Pump),"Pump") {
+def LC = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
-    public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-       return [new MagicPayManaCostEvent(source,"{B}")];
-    }
-    @Override
-    public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-        return new MagicEvent(
-            source,
-            this,
-            "SN gets +1/+1 until end of turn." 
-        );
-    }
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,1));
+    public int getColorFlags(final MagicPermanent permanent,final int flags) {
+        return MagicColor.Black.getMask();
     }
 };
-    
+def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+    @Override
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+        flags.add(MagicSubType.Spirit);
+    }
+    @Override
+    public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+        return flags | MagicType.Creature.getMask();
+    }
+};
+
+def BlackPump = MagicPermanentActivation.create("{B}: SN gets +1/+1 until end of turn.");
 
 def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
     @Override
     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
         permanent.addAbility(BlackPump);
-    }
-};
-def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-    @Override
-    public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-        return flags | MagicType.Creature.getMask();
-    }
-    @Override
-    public void modTypeFlags(final MagicPermanent permanent, final Set<MagicType> flags) {    
-        flags.add(MagicType.Creature);
-    }
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Spirit);
-    }
-};
-def LC = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
-    @Override
-    public int getColorFlags(final MagicPermanent permanent,final int flags) {
-        return MagicColor.Black.getMask();
     }
 };
 [

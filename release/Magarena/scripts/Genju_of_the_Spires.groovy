@@ -4,24 +4,20 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(6,1);
     }
 };
-def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-    @Override
-    public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-        return flags | MagicType.Creature.getMask();
-    }
-    @Override
-    public void modTypeFlags(final MagicPermanent permanent, final Set<MagicType> flags) {    
-        flags.add(MagicType.Creature);
-    }
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Spirit);
-    }
-};
 def LC = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
     public int getColorFlags(final MagicPermanent permanent,final int flags) {
         return MagicColor.Red.getMask();
+    }
+};
+def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+    @Override
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+        flags.add(MagicSubType.Spirit);
+    }
+    @Override
+    public int getTypeFlags(final MagicPermanent permanent,final int flags) {
+        return flags | MagicType.Creature.getMask();
     }
 };
 [

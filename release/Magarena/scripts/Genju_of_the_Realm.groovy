@@ -4,12 +4,6 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         pt.set(8,12);
     }
 };
-def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
-    @Override
-    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Trample, flags);
-    }
-};
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
@@ -18,13 +12,14 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                MagicType.Creature.getMask();
     }
     @Override
-    public void modTypeFlags(final MagicPermanent permanent, final Set<MagicType> flags) {    
-        flags.add(MagicType.Legendary);
-        flags.add(MagicType.Creature);
-    }
-    @Override
     public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         flags.add(MagicSubType.Spirit);
+    }
+};
+def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
+    @Override
+    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
+        permanent.addAbility(MagicAbility.Trample, flags);
     }
 };
 
