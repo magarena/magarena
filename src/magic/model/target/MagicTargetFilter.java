@@ -1100,7 +1100,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicType.Land);
     
-    MagicCardFilterImpl TARGET_BASIC_LAND_CARD_FROM_LIBRARY = Factory.cardAnd(MagicTargetType.Hand, MagicType.Land, MagicType.Basic);
+    MagicCardFilterImpl TARGET_BASIC_LAND_CARD_FROM_LIBRARY = Factory.cardAnd(MagicTargetType.Library, MagicType.Land, MagicType.Basic);
     
     MagicCardFilterImpl TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
