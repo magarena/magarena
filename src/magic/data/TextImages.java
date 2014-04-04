@@ -68,7 +68,7 @@ public class TextImages {
         TEXT_ICONS.put("{t}",IconImages.TOKEN);
         TEXT_ICONS.put(MagicCounterType.PlusOne.getText() ,IconImages.PLUS);
         TEXT_ICONS.put(MagicCounterType.MinusOne.getText(),IconImages.MINUS);
-        TEXT_ICONS.put("{C}",IconImages.CHARGE);
+        TEXT_ICONS.put(MagicCounterType.Charge.getText(),IconImages.CHARGE);
         TEXT_ICONS.put("{F}",IconImages.FEATHER);
         TEXT_ICONS.put("{g}",IconImages.GOLDCOUNTER);
         TEXT_ICONS.put("{br}",IconImages.BRIBECOUNTER);
