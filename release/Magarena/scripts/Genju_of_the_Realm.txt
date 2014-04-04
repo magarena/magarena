@@ -3,7 +3,7 @@ url=http://magiccards.info/query?q=%21genju%20of%20the%20realm
 image=http://mtgimage.com/card/genju%20of%20the%20realm.jpg
 value=4.047
 rarity=R
-type=Enchantment
+type=Legendary,Enchantment
 subtype=Aura
 cost={W}{U}{B}{R}{G}
 enchant=pump,pos land

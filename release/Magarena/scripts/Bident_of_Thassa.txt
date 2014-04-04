@@ -3,7 +3,7 @@ url=http://magiccards.info/query?q=%21bident%20of%20thassa
 image=http://mtgimage.com/card/bident%20of%20thassa.jpg
 value=3.507
 rarity=R
-type=Legendary,Artifact,Enchantment
+type=Legendary,Enchantment,Artifact
 cost={2}{U}{U}
 timing=artifact
 requires_groovy_code
