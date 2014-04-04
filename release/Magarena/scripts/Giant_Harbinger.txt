@@ -7,5 +7,5 @@ type=Creature
 subtype=Giant,Shaman
 cost={4}{R}
 pt=3/4
+ability=When SN enters the battlefield, you may search your library for a Giant card, reveal it, then shuffle your library and put that card on top of it.
 timing=main
-requires_groovy_code

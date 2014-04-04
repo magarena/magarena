@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Druid
 cost={2}{G}
 pt=1/2
-ability={T}: Add one mana of any color to your mana pool.
+ability=When SN enters the battlefield, you may search your library for an Elf card, reveal it, then shuffle your library and put that card on top of it.;\
+        {T}: Add one mana of any color to your mana pool.
 timing=main
-requires_groovy_code

@@ -5,5 +5,5 @@ value=4.507
 rarity=U
 type=Instant
 cost={G}
+effect=Search your library for a creature card and reveal that card. Shuffle your library, then put the card on top of it.
 timing=removal
-requires_groovy_code=Sylvan_Tutor
