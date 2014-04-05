@@ -188,9 +188,9 @@ public enum MagicAbility {
             card.add(MagicPersistTrigger.create());
         }
     },
-    Modular("modular " + ARG.AMOUNT, 10) {
+    Modular("modular " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(MagicModularTrigger.create());
         }
@@ -226,29 +226,29 @@ public enum MagicAbility {
             card.add(new MagicRegenerationActivation(manaCost));
         }
     },
-    Bushido("bushido " + ARG.AMOUNT,20) {
+    Bushido("bushido " + ARG.NUMBER,20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicBecomesBlockedPumpTrigger(n,n,false));
             card.add(new MagicWhenBlocksPumpTrigger(n,n));
         }
     },
-    Soulshift("soulshift " + ARG.AMOUNT,20) {
+    Soulshift("soulshift " + ARG.NUMBER,20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicSoulshiftTrigger(n));
         }
     },
-    Fading("fading " + ARG.AMOUNT,-20) {
+    Fading("fading " + ARG.NUMBER,-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Fade,n));
             card.add(new MagicFadeVanishCounterTrigger(MagicCounterType.Fade));
         }
     },
-    Vanishing("vanishing " + ARG.AMOUNT,-20) {
+    Vanishing("vanishing " + ARG.NUMBER,-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             if (n > 0) {
                 card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Time,n));
             }
@@ -261,10 +261,10 @@ public enum MagicAbility {
             card.add(new MagicCumulativeUpkeepTrigger(manaCost));
         }
     },
-    LevelUp("level up " + ARG.COST + " " + ARG.AMOUNT, 10) {
+    LevelUp("level up " + ARG.COST + " " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
-            final int maxLevel = ARG.amount(arg);
+            final int maxLevel = ARG.number(arg);
             card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
     },
@@ -306,15 +306,15 @@ public enum MagicAbility {
             card.add(MagicRavnicaLandTrigger.create());
         }
     },
-    Devour("devour " + ARG.AMOUNT,10) {
+    Devour("devour " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicDevourTrigger(n));
         }
     },
-    Rampage("rampage " + ARG.AMOUNT,20) {
+    Rampage("rampage " + ARG.NUMBER,20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicRampageTrigger(n));
         }
     },
@@ -395,6 +395,46 @@ public enum MagicAbility {
             card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
+    DamageDiscardCard("Whenever SN deals damage to a player, that player discards " + ARG.AMOUNT + " card(s)?.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = ARG.amount(arg);
+            card.add(new MagicSpecterTrigger(Type.Any, Player.Any, n));
+        }
+    },
+    DamageOpponentDiscardCard("Whenever SN deals damage to an opponent, that opponent discards " + ARG.AMOUNT + " card(s)?.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = ARG.amount(arg);
+            card.add(new MagicSpecterTrigger(Type.Any, Player.Opponent, n));
+        }
+    },
+    CombatDamageDiscardCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)?.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = ARG.amount(arg);
+            card.add(new MagicSpecterTrigger(Type.Combat, Player.Any, n));
+        }
+    },
+    CombatDamageDiscardRandomCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)? at random.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = ARG.amount(arg);
+            card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
+        }
+    },
+    DamageOpponentDiscardRandomCard("damage opponent discard random " + ARG.NUMBER,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final int n = ARG.number(arg);
+            card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
+        }
+    },
+    DamageCreatureGrow("Whenever SN deals damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(new MagicDamageGrowTrigger(false, false));
+        }
+    },
+    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(new MagicDamageGrowTrigger(true, false));
+        }
+    },
     DamageToOpponent("Whenever SN deals damage to an opponent, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDamageIsDealtTrigger.DamageToOpponent(
@@ -414,40 +454,6 @@ public enum MagicAbility {
             card.add(MagicWhenDamageIsDealtTrigger.CombatDamageToPlayer(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
-        }
-    },
-    DamageDiscardCard("damage discard " + ARG.AMOUNT,10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(new MagicSpecterTrigger(Type.Any, Player.Any, n));
-        }
-    },
-    CombatDamageDiscardCard("combat damage discard " + ARG.AMOUNT,10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(new MagicSpecterTrigger(Type.Combat, Player.Any, n));
-        }
-    },
-    CombatDamageDiscardRandomCard("combat damage discard random " + ARG.AMOUNT,10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
-        }
-    },
-    DamageOpponentDiscardRandomCard("damage opponent discard random " + ARG.AMOUNT,10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
-            card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
-        }
-    },
-    DamageCreatureGrow("Whenever SN deals damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicDamageGrowTrigger(false, false));
-        }
-    },
-    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicDamageGrowTrigger(true, false));
         }
     },
     OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.",10) {
@@ -521,9 +527,9 @@ public enum MagicAbility {
             card.add(new MagicEchoTrigger(MagicManaCost.create(ARG.cost(arg))));
         }
     },
-    Bloodthirst("bloodthirst " + ARG.AMOUNT,10) {
+    Bloodthirst("bloodthirst " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicBloodthirstTrigger(n));
         }
     },
@@ -532,9 +538,9 @@ public enum MagicAbility {
             card.add(MagicStormTrigger.create());
         }
     },
-    Annihilator("annihilator " + ARG.AMOUNT, 80) {
+    Annihilator("annihilator " + ARG.NUMBER, 80) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicAnnihilatorTrigger(n));
         }
     },
@@ -658,9 +664,9 @@ public enum MagicAbility {
             card.add(new MagicTypeCyclingActivation(manaCost,type));
         }
     },
-    Reinforce("reinforce " + ARG.AMOUNT + " " + ARG.COST, 20) {
+    Reinforce("reinforce " + ARG.NUMBER + " " + ARG.COST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
             card.add(new MagicReinforceActivation(n, manaCost));
         }
@@ -709,22 +715,22 @@ public enum MagicAbility {
             }
         }
     },
-    Poisonous("poisonous " + ARG.AMOUNT, 10) {
+    Poisonous("poisonous " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(MagicWhenDamageIsDealtTrigger.Poisonous(n));
         }
     },
-    Monstrosity("monstrosity " + ARG.AMOUNT + " " + ARG.COST, 10) {
+    Monstrosity("monstrosity " + ARG.NUMBER + " " + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
             card.add(new MagicMonstrosityActivation(manaCost, n));
         }
     },
-    Tribute("tribute " + ARG.AMOUNT + " " + ARG.EFFECT, 10) {
+    Tribute("tribute " + ARG.NUMBER + " " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             final String effect  = ARG.effect(arg).replaceFirst("^effect ", "");
             card.add(MagicTributeTrigger.create(n,  MagicRuleEventAction.create(effect)));
         }
@@ -788,16 +794,16 @@ public enum MagicAbility {
             ));
         }
     },
-    Graft("graft " + ARG.AMOUNT,10) {
+    Graft("graft " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(MagicWhenOtherComesIntoPlayTrigger.Graft);
         }
     },
-    Loyalty("loyalty " + ARG.AMOUNT,10) {
+    Loyalty("loyalty " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.amount(arg);
+            final int n = ARG.number(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Loyalty,n));
         }
     },
@@ -809,9 +815,14 @@ public enum MagicAbility {
 
 
     private static class ARG {  
-        private static final String AMOUNT = "(?<amount>[0-9]+)";
+        private static final String NUMBER = "(?<number>[0-9]+)";
+        private static int number(final Matcher m) {
+            return Integer.parseInt(m.group("number"));
+        }
+        
+        private static final String AMOUNT = "(?<amount>.+)";
         private static int amount(final Matcher m) {
-            return Integer.parseInt(m.group("amount"));
+            return englishToInt(m.group("amount"));
         }
         
         private static final String COST = "(?<cost>.+)";
@@ -956,5 +967,25 @@ public enum MagicAbility {
         return player.getIndex() == 0 ?
             CannotBeTheTarget0 :
             CannotBeTheTarget1;
+    }
+    
+    public static int englishToInt(String num) {
+        if (num == null) {
+            return 1;
+        }
+        switch (num) {
+            case "a": return 1;
+            case "an": return 1;
+            case "two": return 2;
+            case "three" : return 3;
+            case "four" : return 4;
+            case "five" : return 5;
+            case "six" : return 6;
+            case "seven" : return 7;
+            case "eight" : return 8;
+            case "nine" : return 9;
+            case "ten" : return 10;
+            default: throw new RuntimeException("Unknown count: " + num);
+        }
     }
 }
