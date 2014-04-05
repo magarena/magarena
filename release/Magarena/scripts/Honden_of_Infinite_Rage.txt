@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/honden%20of%20infinite%20rage.jpg
 value=3.959
 rarity=U
 type=Legendary,Enchantment
-subtype=shrine
+subtype=Shrine
 cost={2}{R}
 timing=main
 requires_groovy_code
