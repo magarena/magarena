@@ -419,7 +419,7 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
         }
     },
-    DamageOpponentDiscardRandomCard("damage opponent discard random " + ARG.NUMBER,10) {
+    DamageOpponentDiscardRandomCard("Whenever SN deals damage to an opponent, that opponent discards " + ARG.AMOUNT + " card(s)? at random.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
