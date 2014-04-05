@@ -8,6 +8,7 @@ import magic.model.MagicCard;
 import magic.model.MagicColor;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.stack.MagicItemOnStack;
 
 import static magic.model.target.MagicTargetFilter.*;
 
@@ -79,7 +80,6 @@ public class MagicTargetFilterFactory {
         single.put("creature card with converted mana cost 2 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
         single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
-        single.put("Dragon permanent card from your graveyard", TARGET_DRAGON_PERMANENT_CARD_FROM_GRAVEYARD);
         
         // <color|type|subtype> card from an opponent's graveyard
         single.put("instant or sorcery card from an opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
@@ -88,12 +88,9 @@ public class MagicTargetFilterFactory {
         single.put("card from your hand", TARGET_CARD_FROM_HAND);
         single.put("basic land card from your hand", TARGET_BASIC_LAND_CARD_FROM_HAND);
         single.put("blue or red creature card from your hand", TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
-        single.put("Goblin permanent card from your hand", TARGET_GOBLIN_PERMANENT_CARD_FROM_HAND);
         single.put("Goblin creature card from your hand", TARGET_GOBLIN_CREATURE_CARD_FROM_HAND);
         single.put("green creature card from your hand", TARGET_GREEN_CREATURE_CARD_FROM_HAND);
         single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
-        single.put("Minotaur permanent card from your hand", TARGET_MINOTAUR_PERMANENT_CARD_FROM_HAND);
-        single.put("Faerie permanent card from your hand", TARGET_FAERIE_PERMANENT_CARD_FROM_HAND);
 
         // <color|type|subtype> card from your library
         single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);
@@ -110,8 +107,6 @@ public class MagicTargetFilterFactory {
         single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
         single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
-        single.put("Goblin permanent card from your library", TARGET_GOBLIN_PERMANENT_CARD_FROM_LIBRARY);
-        single.put("Elf permanent card from your library", TARGET_ELF_PERMANENT_CARD_FROM_LIBRARY);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         
         // <color|type|subtype> creature you control
@@ -217,28 +212,18 @@ public class MagicTargetFilterFactory {
         single.put("creature or player", TARGET_CREATURE_OR_PLAYER); 
         single.put("Sliver creature or player", TARGET_SLIVER_CREATURE_OR_PLAYER); 
        
-        // spells
+        // <color|type> spell
         single.put("spell", TARGET_SPELL);
         single.put("spell or ability", TARGET_SPELL_OR_PERMANENT);
         single.put("spell with converted mana cost 1", TARGET_SPELL_WITH_CMC_EQ_1);
         single.put("spell with converted mana cost 2", TARGET_SPELL_WITH_CMC_EQ_2);
         single.put("spell that targets a player", TARGET_SPELL_THAT_TARGETS_PLAYER);
         single.put("spell with {X} in its mana cost", TARGET_SPELL_WITH_X_COST);
-        single.put("creature spell", TARGET_CREATURE_SPELL);
         single.put("noncreature spell", TARGET_NONCREATURE_SPELL);
-        single.put("artifact spell", TARGET_ARTIFACT_SPELL);
-        single.put("enchantment spell", TARGET_ENCHANTMENT_SPELL);
         single.put("artifact or enchantment spell", TARGET_ARTIFACT_OR_ENCHANTMENT_SPELL);
         single.put("red or green spell", TARGET_RED_OR_GREEN_SPELL);
-        single.put("black spell", TARGET_BLACK_SPELL);
-        single.put("white spell", TARGET_WHITE_SPELL);
-        single.put("red spell", TARGET_RED_SPELL);
-        single.put("blue spell", TARGET_BLUE_SPELL);
-        single.put("green spell", TARGET_GREEN_SPELL);
         single.put("nonblue spell", TARGET_NONBLUE_SPELL);
         single.put("instant or sorcery spell", TARGET_INSTANT_OR_SORCERY_SPELL);
-        single.put("instant spell", TARGET_INSTANT_SPELL);
-        single.put("sorcery spell", TARGET_SORCERY_SPELL);
         single.put("creature or Aura spell", TARGET_CREATURE_OR_AURA_SPELL);
         single.put("creature or sorcery spell", TARGET_CREATURE_OR_SORCERY_SPELL);
         single.put("Spirit or Arcane spell", TARGET_SPIRIT_OR_ARCANE_SPELL);
@@ -290,6 +275,8 @@ public class MagicTargetFilterFactory {
             return matchCreaturePrefix(filter, " creature an opponent controls", Control.Opp);
         } else if (filter.endsWith(" creature")) {
             return matchCreaturePrefix(filter, " creature", Control.Any);
+        } else if (filter.endsWith(" spell")) {
+            return matchSpellPrefix(filter, " spell");
         } else if (filter.endsWith(" you control")) {
             return matchPermanentPrefix(filter, " you control", Control.You);
         } else if (filter.endsWith(" an opponent controls")) {
@@ -305,6 +292,9 @@ public class MagicTargetFilterFactory {
     
     private static MagicTargetFilter<MagicCard> matchCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
         final String prefix = arg.replace(suffix, "");
+        if (prefix.endsWith(" permanent")) {
+            return matchPermanentCardPrefix(prefix, " permanent", location);
+        }
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return Factory.card(location, c);
@@ -318,6 +308,31 @@ public class MagicTargetFilterFactory {
         for (final MagicSubType st : MagicSubType.values()) {
             if (prefix.equalsIgnoreCase(st.toString())) {
                 return Factory.card(location, st);
+            }
+        }
+        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+    }
+    
+    private static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
+        final String prefix = arg.replace(suffix, "");
+        for (final MagicSubType st : MagicSubType.values()) {
+            if (prefix.equalsIgnoreCase(st.toString())) {
+                return Factory.permanentCard(location, st);
+            }
+        }
+        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+    }
+    
+    private static MagicTargetFilter<MagicItemOnStack> matchSpellPrefix(final String arg, final String suffix) {
+        final String prefix = arg.replace(suffix, "");
+        for (final MagicColor c : MagicColor.values()) {
+            if (prefix.equalsIgnoreCase(c.getName())) {
+                return Factory.spell(c);
+            }
+        }
+        for (final MagicType t : MagicType.values()) {
+            if (prefix.equalsIgnoreCase(t.toString())) {
+                return Factory.spell(t);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");

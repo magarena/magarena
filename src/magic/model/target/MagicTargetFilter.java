@@ -99,23 +99,11 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicStackFilterImpl TARGET_RED_OR_GREEN_SPELL=Factory.spellOr(MagicColor.Red, MagicColor.Green);
     
-    MagicStackFilterImpl TARGET_BLACK_SPELL=Factory.spell(MagicColor.Black);
-    
-    MagicStackFilterImpl TARGET_WHITE_SPELL=Factory.spell(MagicColor.White);
-    
-    MagicStackFilterImpl TARGET_BLUE_SPELL=Factory.spell(MagicColor.Blue);
-    
-    MagicStackFilterImpl TARGET_GREEN_SPELL=Factory.spell(MagicColor.Green);
-    
-    MagicStackFilterImpl TARGET_RED_SPELL=Factory.spell(MagicColor.Red);
-    
     MagicStackFilterImpl TARGET_NONBLUE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
         }
     };
-    
-    MagicStackFilterImpl TARGET_CREATURE_SPELL=Factory.spell(MagicType.Creature);
     
     MagicStackFilterImpl TARGET_CREATURE_OR_AURA_SPELL=Factory.spellOr(MagicType.Creature, MagicSubType.Aura);
     
@@ -130,16 +118,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicStackFilterImpl TARGET_INSTANT_OR_SORCERY_SPELL = Factory.spellOr(MagicType.Instant, MagicType.Sorcery);
 
-    MagicStackFilterImpl TARGET_INSTANT_SPELL = Factory.spell(MagicType.Instant);
-    
-    MagicStackFilterImpl TARGET_SORCERY_SPELL = Factory.spell(MagicType.Sorcery);
-    
     MagicStackFilterImpl TARGET_SPIRIT_OR_ARCANE_SPELL= Factory.spellOr(MagicSubType.Spirit, MagicSubType.Arcane);
 
-    MagicStackFilterImpl TARGET_ARTIFACT_SPELL = Factory.spell(MagicType.Artifact);
-    
-    MagicStackFilterImpl TARGET_ENCHANTMENT_SPELL = Factory.spell(MagicType.Enchantment);
-    
     MagicStackFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT_SPELL = Factory.spellOr(MagicType.Artifact, MagicType.Enchantment);
     
     MagicPlayerFilterImpl TARGET_PLAYER=new MagicPlayerFilterImpl() {
@@ -934,8 +914,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicCardFilterImpl TARGET_DRAGON_PERMANENT_CARD_FROM_GRAVEYARD = Factory.permanentCard(MagicTargetType.Graveyard, MagicSubType.Dragon);
-    
     MagicCardFilterImpl TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
@@ -1151,23 +1129,13 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicType.Land);
     
-    MagicCardFilterImpl TARGET_MINOTAUR_PERMANENT_CARD_FROM_HAND = Factory.permanentCard(MagicTargetType.Hand, MagicSubType.Minotaur);
-    
     MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicSubType.Goblin);
-    
-    MagicCardFilterImpl TARGET_GOBLIN_PERMANENT_CARD_FROM_HAND = Factory.permanentCard(MagicTargetType.Hand, MagicSubType.Goblin);
     
     MagicCardFilterImpl TARGET_GOBLIN_CREATURE_CARD_FROM_HAND = Factory.creatureCard(MagicTargetType.Hand, MagicSubType.Goblin);;
     
-    MagicCardFilterImpl TARGET_FAERIE_PERMANENT_CARD_FROM_HAND = Factory.permanentCard(MagicTargetType.Hand, MagicSubType.Faerie);
-    
     MagicCardFilterImpl TARGET_GOBLIN_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Goblin);
     
-    MagicCardFilterImpl TARGET_GOBLIN_PERMANENT_CARD_FROM_LIBRARY = Factory.permanentCard(MagicTargetType.Library, MagicSubType.Goblin);
-    
     MagicCardFilterImpl TARGET_ELF_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Elf);
-    
-    MagicCardFilterImpl TARGET_ELF_PERMANENT_CARD_FROM_LIBRARY = Factory.permanentCard(MagicTargetType.Library, MagicSubType.Elf);
     
     MagicCardFilterImpl TARGET_ARTIFACT_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicType.Artifact);
     
