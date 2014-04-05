@@ -14,6 +14,7 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicPermanentFilterImpl;
+import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetType;
 
@@ -37,24 +38,20 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        final MagicTargetFilter<MagicPermanent> targetFilter = new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent creature) {
-                boolean hasSubType = subtypes.length == 0;
-                for (final MagicSubType subtype : subtypes) {
-                    hasSubType |= creature.hasSubType(subtype);
+        final MagicTargetFilter<MagicPermanent> targetFilter = subtypes.length == 0 ?
+            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL :
+            new MagicPermanentFilterImpl() {
+                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent tribal) {
+                    boolean hasSubType = false;
+                    for (final MagicSubType subtype : subtypes) {
+                        hasSubType |= tribal.hasSubType(subtype);
+                    }
+                    return hasSubType && tribal.isController(player);
                 }
-                return hasSubType &&
-                       creature.isCreature() &&
-                       creature.getController() == player &&
-                       creature.getId() != permanent.getId();
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return targetType == MagicTargetType.Permanent;
-            }
-        };
+            };
 
         final MagicTargetChoice targetChoice = new MagicTargetChoice(
-            targetFilter,
+            new MagicOtherPermanentTargetFilter(targetFilter, permanent),
             MagicTargetHint.None,
             "another " + targets + " to exile"
         );
