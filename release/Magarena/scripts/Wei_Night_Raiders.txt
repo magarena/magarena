@@ -8,5 +8,5 @@ subtype=Human,Soldier
 cost={2}{B}{B}
 pt=2/2
 ability=horsemanship;\
-        damage discard 1
+        Whenever SN deals damage to an opponent, that opponent discards a card.
 timing=main

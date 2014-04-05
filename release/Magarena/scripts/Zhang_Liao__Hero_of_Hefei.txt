@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={4}{B}{B}
 pt=3/3
-ability=damage discard 1
+ability=Whenever SN deals damage to an opponent, that opponent discards a card.
 timing=main

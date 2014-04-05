@@ -7,5 +7,6 @@ type=Creature
 subtype=Rat,Ninja
 cost={3}{B}{B}
 pt=3/2
-ability=ninjutsu {3}{B};combat damage discard 2
+ability=ninjutsu {3}{B};\
+        Whenever SN deals combat damage to a player, that player discards two cards.
 timing=main
