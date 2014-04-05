@@ -11,7 +11,7 @@
                         new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
                     ),
                     this,
-                    "PN may\$ pay {1}\$. If PN doesn't, PN Sacrifices a permanent."
+                    "PN may\$ pay {1}\$. If PN doesn't, PN sacrifices a permanent."
                 ):
                 MagicEvent.NONE;
         }
