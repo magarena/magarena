@@ -12,7 +12,7 @@
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicTargetFilter.MagicPowerTargetFilter(
+                new MagicPowerTargetFilter(
                     MagicTargetFilterFactory.TARGET_CREATURE,
                     source.getController().getNrOfPermanents(MagicType.Creature)
                 ),

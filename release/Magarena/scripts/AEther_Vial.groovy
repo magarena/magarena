@@ -12,9 +12,9 @@
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicTargetFilter.MagicCMCCardFilter(
+                new MagicCMCCardFilter(
                     MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_HAND,
-                    MagicTargetFilter.Operator.EQUAL,
+                    Operator.EQUAL,
                     source.getCounters(MagicCounterType.Charge)
                 ),
                 MagicTargetHint.None,

@@ -26,8 +26,8 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> throne = new MagicTargetFilter.NameTargetFilter("Throne of Empires");
-            final MagicTargetFilter<MagicPermanent> scepter = new MagicTargetFilter.NameTargetFilter("Scepter of Empires");
+            final MagicTargetFilter<MagicPermanent> throne = new MagicNameTargetFilter("Throne of Empires");
+            final MagicTargetFilter<MagicPermanent> scepter = new MagicNameTargetFilter("Scepter of Empires");
             final MagicSource source = event.getSource();
             final MagicPlayer player = source.getController();
             if(player.controlsPermanent(throne) && player.controlsPermanent(scepter)){

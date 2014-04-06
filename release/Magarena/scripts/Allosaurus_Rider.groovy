@@ -9,7 +9,7 @@ def TARGET_GREEN_CARD_FROM_HAND = new MagicCardFilterImpl() {
 
 def TWO_OTHER_GREEN_CARDS_IN_HAND = new MagicCondition() {
     public boolean accept(final MagicSource source) {
-        final MagicTargetFilter<MagicCard> filter =new MagicTargetFilter.MagicOtherCardTargetFilter(
+        final MagicTargetFilter<MagicCard> filter =new MagicOtherCardTargetFilter(
             TARGET_GREEN_CARD_FROM_HAND, 
             (MagicCard)source
         );
@@ -27,7 +27,7 @@ def TWO_OTHER_GREEN_CARDS_IN_HAND = new MagicCondition() {
     ) {
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicTargetFilter.MagicOtherCardTargetFilter(
+                new MagicOtherCardTargetFilter(
                     TARGET_GREEN_CARD_FROM_HAND, 
                     source
                 ),

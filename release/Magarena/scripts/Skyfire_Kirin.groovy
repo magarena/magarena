@@ -4,9 +4,9 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack spell) {
             final int cmc = spell.getConvertedCost();
             final MagicTargetChoice choice = new MagicTargetChoice(
-                new MagicTargetFilter.MagicCMCPermanentFilter(
+                new MagicCMCPermanentFilter(
                     MagicTargetFilterFactory.TARGET_CREATURE,
-                    MagicTargetFilter.Operator.EQUAL,
+                    Operator.EQUAL,
                     cmc
                 ),
                 MagicTargetHint.Negative,

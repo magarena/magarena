@@ -38,9 +38,9 @@ def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl ()
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(
                     source.getController(),
-                    new MagicTargetFilter.MagicCMCPermanentFilter(
+                    new MagicCMCPermanentFilter(
                         TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT,
-                        MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
+                        Operator.LESS_THAN_OR_EQUAL,
                         amount
                     )
                 );

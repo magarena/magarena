@@ -33,6 +33,8 @@ import magic.model.stack.MagicStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicLegendaryCopiesFilter;
+import magic.model.target.MagicPlaneswalkerCopiesFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
@@ -982,7 +984,7 @@ public class MagicGame {
     public void checkUniquenessRule(final MagicPermanent permanent) {
         // 704.5k "legend rule"
         if (permanent.hasType(MagicType.Legendary)) {
-            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.LegendaryCopiesFilter(permanent.getName());
+            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicLegendaryCopiesFilter(permanent.getName());
             final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
@@ -991,7 +993,7 @@ public class MagicGame {
 
         // 704.5j "planeswalker uniqueness rule."
         if (permanent.hasType(MagicType.Planeswalker)) {
-            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicTargetFilter.PlaneswalkerCopiesFilter(permanent);
+            final MagicTargetFilter<MagicPermanent> targetFilter=new MagicPlaneswalkerCopiesFilter(permanent);
             final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));

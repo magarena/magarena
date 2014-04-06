@@ -838,9 +838,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl TARGET_NONLAND_PERMANENT_CMC_LEQ_3 = new MagicTargetFilter.MagicCMCPermanentFilter(
+    public static final MagicPermanentFilterImpl TARGET_NONLAND_PERMANENT_CMC_LEQ_3 = new MagicCMCPermanentFilter(
         MagicTargetFilterFactory.TARGET_NONLAND_PERMANENT,
-        MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
+        Operator.LESS_THAN_OR_EQUAL,
         3
     );
 

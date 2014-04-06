@@ -28,9 +28,9 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(
                     source.getController(),
-                    new MagicTargetFilter.MagicCMCPermanentFilter(
+                    new MagicCMCPermanentFilter(
                         MagicTargetFilterFactory.TARGET_NONLAND_PERMANENT,
-                        MagicTargetFilter.Operator.EQUAL,
+                        Operator.EQUAL,
                         amount
                     )
                 );

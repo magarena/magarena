@@ -43,7 +43,7 @@ def control = {
                 final MagicPermanent perm ->
                 final MagicPermanent source = event.getPermanent();
                 game.doAction(new MagicTapAction(perm, true));
-                final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(perm);
+                final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(perm);
                 game.doAction(new MagicAddStaticAction(source, control(source.getController().getIndex(), filter)));
             });
         }

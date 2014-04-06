@@ -1,9 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     final int cmc = event.getRefInt();
-    final MagicTargetFilter filter = new MagicTargetFilter.MagicCMCCardFilter(
+    final MagicTargetFilter filter = new MagicCMCCardFilter(
         MagicTargetFilterFactory.card(MagicTargetType.Library, MagicType.Creature),
-        MagicTargetFilter.Operator.EQUAL,
+        Operator.EQUAL,
         cmc
     );
     final MagicTargetChoice choice = new MagicTargetChoice(

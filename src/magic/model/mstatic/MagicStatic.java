@@ -13,6 +13,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicPermanentTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.action.MagicRemoveStaticAction;
 
@@ -277,7 +278,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     };
 
     public static MagicStatic ControlAsLongAsYouControlSource(final MagicPlayer you, final MagicPermanent target) {
-        final MagicTargetFilter<MagicPermanent> filter = new MagicTargetFilter.MagicPermanentTargetFilter(target);
+        final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(target);
         return new MagicStatic(MagicLayer.Control,filter) {
             @Override
             public MagicPlayer getController(

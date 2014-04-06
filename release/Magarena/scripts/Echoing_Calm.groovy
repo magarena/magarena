@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicPermanent targetPermanent ->
                 final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicTargetFilter.NameTargetFilter(targetPermanent.getName());
+                    new MagicNameTargetFilter(targetPermanent.getName());
                 final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),targetFilter);
                 for (final MagicPermanent permanent : targets) {

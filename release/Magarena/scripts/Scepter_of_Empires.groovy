@@ -24,8 +24,8 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> crown = new MagicTargetFilter.NameTargetFilter("Crown of Empires");
-            final MagicTargetFilter<MagicPermanent> throne = new MagicTargetFilter.NameTargetFilter("Throne of Empires");
+            final MagicTargetFilter<MagicPermanent> crown = new MagicNameTargetFilter("Crown of Empires");
+            final MagicTargetFilter<MagicPermanent> throne = new MagicNameTargetFilter("Throne of Empires");
             final MagicSource source = event.getSource();
             final MagicPlayer player = source.getController();
             final int amount = (player.controlsPermanent(crown) && player.controlsPermanent(throne))? 3 : 1;

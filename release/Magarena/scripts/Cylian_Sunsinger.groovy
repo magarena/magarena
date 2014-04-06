@@ -20,7 +20,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicTargetFilter<MagicPermanent> targetFilter =
-                new MagicTargetFilter.NameTargetFilter(
+                new MagicNameTargetFilter(
                     MagicTargetFilterFactory.TARGET_CREATURE,
                     event.getPermanent().getName()
                 );

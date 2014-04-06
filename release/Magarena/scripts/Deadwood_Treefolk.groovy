@@ -10,7 +10,7 @@ def action = {
 def event = {
     final MagicPermanent permanent ->
     final MagicTargetChoice choice = new MagicTargetChoice(
-        new MagicTargetFilter.MagicOtherCardTargetFilter(
+        new MagicOtherCardTargetFilter(
             MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
             permanent.getCard()
         ),

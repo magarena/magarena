@@ -14,9 +14,9 @@
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(
                     event.getPlayer(),
-                    new MagicTargetFilter.MagicCMCPermanentFilter(
+                    new MagicCMCPermanentFilter(
                         MagicTargetFilterFactory.TARGET_PERMANENT,
-                        MagicTargetFilter.Operator.EQUAL,
+                        Operator.EQUAL,
                         event.getRefInt()
                     )
                 );
