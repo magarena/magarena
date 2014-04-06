@@ -558,7 +558,7 @@ check_unused_filter:
 	rm declared-filters used-filters
 
 check_unused_choice:
-	grep "public static final" -r src/magic/model/choice/MagicTargetChoice.java | grep -o "Choice [A-Z0-9_]*" | sed 's/Choice //' | sort | uniq > declared-choices
+	grep "public static final" -r src/magic/model/choice/MagicTargetChoice.java | grep -o "Choice [A-Z]\+[^ =]*" | sed 's/Choice //' | sort | uniq > declared-choices
 	for i in `cat declared-choices`; do grep $$i -r src release/Magarena/scripts | grep -v "public static final" | grep -o $$i; done | sort | uniq > used-choices
 	diff declared-choices used-choices | ${NO_OUTPUT}
 	rm declared-choices used-choices
