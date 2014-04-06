@@ -10,4 +10,3 @@ pt=6/5
 ability=indestructible
 timing=main
 requires_groovy_code
- 
