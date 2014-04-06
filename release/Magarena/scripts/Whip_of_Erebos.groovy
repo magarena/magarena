@@ -1,14 +1,19 @@
 def ExileAtLeaving = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.isPermanent(permanent) && act.getToLocation() != MagicLocationType.Exile) {
-                act.setToLocation(MagicLocationType.Exile);
-            }
-            return MagicEvent.NONE;
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+        if (act.isPermanent(permanent) && act.getToLocation() != MagicLocationType.Exile) {
+            act.setToLocation(MagicLocationType.Exile);
         }
-    };
+        return MagicEvent.NONE;
+    }
+};
+
 [
-    new MagicPermanentActivation([MagicCondition.SORCERY_CONDITION],new MagicActivationHints(MagicTiming.Animate),"Animate"){
+    new MagicPermanentActivation(
+        [MagicCondition.SORCERY_CONDITION],
+        new MagicActivationHints(MagicTiming.Animate),
+        "Reanimate"
+    ){
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
@@ -36,8 +41,8 @@ def ExileAtLeaving = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
                 final MagicPlayCardAction action = new MagicPlayCardAction(targetCard,event.getPlayer());
                 game.doAction(action);
                 final MagicPermanent permanent = action.getPermanent();
-                game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.Haste,MagicStatic.UntilEOT));
-                game.doAction(new MagicGainAbilityAction(permanent,MagicAbility.ExileAtEnd,MagicStatic.UntilEOT));
+                game.doAction(new MagicGainAbilityAction(permanent, MagicAbility.Haste));
+                game.doAction(new MagicGainAbilityAction(permanent, MagicAbility.ExileAtEnd));
                 game.doAction(new MagicAddTriggerAction(permanent, ExileAtLeaving));
             });
         }
