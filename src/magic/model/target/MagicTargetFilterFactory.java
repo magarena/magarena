@@ -268,11 +268,7 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Opp);
     
-    public static final MagicPermanentFilterImpl TARGET_1_1_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && target.getPower() == 1 && target.getToughness() == 1;
-        }
-    };
+    public static final MagicPermanentFilterImpl TARGET_1_1_CREATURE=new MagicPTTargetFilter(MagicTargetFilterFactory.TARGET_CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1);
 
     public static final MagicPermanentFilterImpl TARGET_NONCREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -660,19 +656,17 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl TARGET_CREATURE_POWER_2_OR_LESS = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() &&
-                   target.getPower() <= 2;
-        }
-    };
+    public static final MagicPermanentFilterImpl TARGET_CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.TARGET_CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        2
+    );
 
-    public static final MagicPermanentFilterImpl TARGET_CREATURE_POWER_4_OR_MORE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() &&
-                   target.getPower() >= 4;
-        }
-    };
+    public static final MagicPermanentFilterImpl TARGET_CREATURE_POWER_4_OR_MORE = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.TARGET_CREATURE,
+        Operator.GREATER_THAN_OR_EQUAL,
+        4
+    );
 
     public static final MagicPermanentFilterImpl TARGET_CREATURE_PLUSONE_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
