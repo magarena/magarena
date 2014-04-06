@@ -325,17 +325,17 @@ public class MagicTargetFilterFactory {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
-                return MagicTargetFilterFactory.card(location, c);
+                return card(location, c);
             }
         }
         for (final MagicType t : MagicType.values()) {
             if (prefix.equalsIgnoreCase(t.toString())) {
-                return MagicTargetFilterFactory.card(location, t);
+                return card(location, t);
             }
         }
         for (final MagicSubType st : MagicSubType.values()) {
             if (prefix.equalsIgnoreCase(st.toString())) {
-                return MagicTargetFilterFactory.card(location, st);
+                return card(location, st);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -345,17 +345,17 @@ public class MagicTargetFilterFactory {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
-                return MagicTargetFilterFactory.permanentCard(location, c);
+                return permanentCard(location, c);
             }
         }
         for (final MagicType t : MagicType.values()) {
             if (prefix.equalsIgnoreCase(t.toString())) {
-                return MagicTargetFilterFactory.permanentCard(location, t);
+                return permanentCard(location, t);
             }
         }
         for (final MagicSubType st : MagicSubType.values()) {
             if (prefix.equalsIgnoreCase(st.toString())) {
-                return MagicTargetFilterFactory.permanentCard(location, st);
+                return permanentCard(location, st);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -365,17 +365,17 @@ public class MagicTargetFilterFactory {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
-                return MagicTargetFilterFactory.creatureCard(location, c);
+                return creatureCard(location, c);
             }
         }
         for (final MagicType t : MagicType.values()) {
             if (prefix.equalsIgnoreCase(t.toString())) {
-                return MagicTargetFilterFactory.creatureCard(location, t);
+                return creatureCard(location, t);
             }
         }
         for (final MagicSubType st : MagicSubType.values()) {
             if (prefix.equalsIgnoreCase(st.toString())) {
-                return MagicTargetFilterFactory.creatureCard(location, st);
+                return creatureCard(location, st);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -384,12 +384,12 @@ public class MagicTargetFilterFactory {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
-                return MagicTargetFilterFactory.spell(c);
+                return spell(c);
             }
         }
         for (final MagicType t : MagicType.values()) {
             if (prefix.equalsIgnoreCase(t.toString())) {
-                return MagicTargetFilterFactory.spell(t);
+                return spell(t);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -399,17 +399,17 @@ public class MagicTargetFilterFactory {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
-                return MagicTargetFilterFactory.permanent(c, control);
+                return permanent(c, control);
             }
         }
         for (final MagicType t : MagicType.values()) {
             if (prefix.equalsIgnoreCase(t.toString())) {
-                return MagicTargetFilterFactory.permanent(t, control);
+                return permanent(t, control);
             }
         }
         for (final MagicSubType st : MagicSubType.values()) {
             if (prefix.equalsIgnoreCase(st.toString())) {
-                return MagicTargetFilterFactory.permanent(st, control);
+                return permanent(st, control);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -419,17 +419,17 @@ public class MagicTargetFilterFactory {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
-                return MagicTargetFilterFactory.creature(c, control);
+                return creature(c, control);
             }
         }
         for (final MagicType t : MagicType.values()) {
             if (prefix.equalsIgnoreCase(t.toString())) {
-                return MagicTargetFilterFactory.creature(t, control);
+                return creature(t, control);
             }
         }
         for (final MagicSubType st : MagicSubType.values()) {
             if (prefix.equalsIgnoreCase(st.toString())) {
-                return MagicTargetFilterFactory.creature(st, control);
+                return creature(st, control);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
