@@ -690,7 +690,7 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl permanentCard(final MagicTargetType aTargetType, final MagicType type) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-                return target.hasType(type) && !target.getCardDefinition().isSpell();
+                return target.hasType(type) && target.getCardDefinition().isPermanent();
             }
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == aTargetType;
@@ -700,7 +700,7 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl permanentCard(final MagicTargetType aTargetType, final MagicColor color) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-                return target.hasColor(color) && !target.getCardDefinition().isSpell();
+                return target.hasColor(color) && target.getCardDefinition().isPermanent();
             }
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == aTargetType;
@@ -710,7 +710,7 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl permanentCard(final MagicTargetType aTargetType, final MagicSubType subType) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-                return target.hasSubType(subType) && !target.getCardDefinition().isSpell();
+                return target.hasSubType(subType) && target.getCardDefinition().isPermanent();
             }
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == aTargetType;
