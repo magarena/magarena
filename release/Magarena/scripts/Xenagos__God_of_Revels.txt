@@ -1,0 +1,13 @@
+name=Xenagos, God of Revels
+url=http://magiccards.info/query?q=%21xenagos%2C%20god%20of%20revels
+image=http://mtgimage.com/card/xenagos%2C%20god%20of%20revels.jpg
+value=3.863
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=God
+cost={3}{R}{G}
+pt=6/5
+ability=indestructible
+timing=main
+requires_groovy_code
+ 
