@@ -14,29 +14,28 @@
         }
     },
     new MagicAtBeginOfCombatTrigger() {
-                
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer attackingPlayer) {
-            return permanent.getController() == attackingPlayer ? new MagicEvent(
-                permanent,
-                new MagicTargetChoice(new MagicOtherPermanentTargetFilter(MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL, permanent),"another target creature you control"),
-                MagicPumpTargetPicker.create(),
-                this,
-                "Another target creature\$ you control gains haste and gets +X/+X until end of turn, where X is that creature's power."
-            ):MagicEvent.NONE;
+            return permanent.getController() == attackingPlayer ? 
+                new MagicEvent(
+                    permanent,
+                    new MagicTargetChoice(
+                        new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.CREATURE_YOU_CONTROL, permanent),
+                        "another target creature you control"
+                    ),
+                    MagicPumpTargetPicker.create(),
+                    this,
+                    "Another target creature\$ you control gains haste and gets +X/+X until end of turn, where X is that creature's power."
+                ):
+                MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent perm ->
-                game.doAction(new MagicAddStaticAction(perm, new MagicStatic(MagicLayer.ModPT,MagicStatic.UntilEOT) {
-                    @Override
-                    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-                        pt.add(permanent.getPower(),permanent.getPower());
-                    }
-                }));
+                game.doAction(new MagicGainAbilityAction(perm, MagicAbility.Haste));
+                game.doAction(new MagicChangeTurnPTAction(perm, perm.getPower(), perm.getPower()));
             });
-         
         }
     }
 ]
