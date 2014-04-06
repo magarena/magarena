@@ -13,7 +13,7 @@ def LymphPrevent = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAM
 [    
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilter.TARGET_SLIVER
+        MagicTargetFilterFactory.TARGET_SLIVER
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {

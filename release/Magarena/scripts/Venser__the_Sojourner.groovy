@@ -32,7 +32,7 @@
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
                     MagicLayer.Ability,
-                    MagicTargetFilter.TARGET_CREATURE,
+                    MagicTargetFilterFactory.TARGET_CREATURE,
                     MagicStatic.UntilEOT) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {

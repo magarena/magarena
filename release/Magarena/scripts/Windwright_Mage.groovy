@@ -2,7 +2,7 @@ def LEAST_ONE_ARTIFACT_IN_GRAVEYARD = new MagicCondition() {
     public boolean accept(final MagicSource source) {
         final MagicGame game = source.getGame();
         final MagicPlayer player = source.getController();
-        return game.filterCards(player, MagicTargetFilter.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD ).size() >= 1;
+        return game.filterCards(player, MagicTargetFilterFactory.TARGET_ARTIFACT_CARD_FROM_GRAVEYARD ).size() >= 1;
     }
 };
 [

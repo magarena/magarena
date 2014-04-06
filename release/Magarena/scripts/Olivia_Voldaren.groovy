@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE,
+                    MagicTargetFilterFactory.TARGET_CREATURE,
                     source
                 ),
                 MagicTargetHint.Negative,

@@ -13,7 +13,7 @@
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                MagicTargetFilter.TARGET_LAND_YOU_CONTROL,
+                MagicTargetFilterFactory.TARGET_LAND_YOU_CONTROL,
                 MagicTargetHint.None,
                 "target land to exile"
             );

@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
-                    MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+                    MagicTargetFilterFactory.TARGET_ATTACKING_CREATURE);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicGainAbilityAction(
                     target,

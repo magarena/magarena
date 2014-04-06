@@ -33,6 +33,7 @@ import magic.model.stack.MagicStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
@@ -1002,7 +1003,7 @@ public class MagicGame {
             final Collection<MagicPermanent> targets=filterPermanents(
                 permanent.getController(),
                 new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.WORLD,
+                    MagicTargetFilterFactory.WORLD,
                     permanent
                 )
             );

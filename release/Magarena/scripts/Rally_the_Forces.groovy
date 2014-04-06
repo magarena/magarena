@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_ATTACKING_CREATURE);
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicChangeTurnPTAction(creature,1,0));
                 game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));

@@ -21,6 +21,7 @@ import magic.model.MagicType;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.target.MagicTargetFilterFactory.Control;
 
 public abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTarget> {
     public List<MagicTarget> filter(final MagicGame game, final MagicPlayer player, final MagicTargetHint targetHint) {

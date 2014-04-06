@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             final Collection<MagicPermanent> targets =
-                    game.filterPermanents(permanent.getController(),MagicTargetFilter.TARGET_CREATURE);
+                    game.filterPermanents(permanent.getController(),MagicTargetFilterFactory.TARGET_CREATURE);
             return (targets.size() == 0) ?
                 new MagicEvent(
                     permanent,

@@ -5,12 +5,13 @@ import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     public static final MagicPermanentStatic CountersEffect =
         new MagicPermanentStatic(0, MagicPermanent.NONE, new MagicStatic(
             MagicLayer.CountersPT,
-            MagicTargetFilter.TARGET_CREATURE) {
+            MagicTargetFilterFactory.TARGET_CREATURE) {
             @Override
             public void modPowerToughness(
                 final MagicPermanent source,

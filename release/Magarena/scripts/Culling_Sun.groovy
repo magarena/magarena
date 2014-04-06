@@ -1,5 +1,5 @@
 def TARGET_CREATURE_CMC_LEQ_3 = new MagicTargetFilter.MagicCMCPermanentFilter(
-    MagicTargetFilter.TARGET_CREATURE,
+    MagicTargetFilterFactory.TARGET_CREATURE,
     MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
     3
 );

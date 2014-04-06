@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_LAND);
+                    game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_LAND);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicExileUntilThisLeavesPlayAction(
                     event.getPermanent(),

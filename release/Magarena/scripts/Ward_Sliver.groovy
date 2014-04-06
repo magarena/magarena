@@ -16,7 +16,7 @@
             final MagicAbility protection = color.getProtectionAbility();
             game.doAction(new MagicAddStaticAction(event.getPermanent(), new MagicStatic(
                 MagicLayer.Ability,
-                MagicTargetFilter.TARGET_SLIVER) {
+                MagicTargetFilterFactory.TARGET_SLIVER) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
                         flags.add(protection);

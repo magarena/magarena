@@ -23,7 +23,7 @@
             final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     permanent.getController(),
-                    MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+                    MagicTargetFilterFactory.TARGET_ATTACKING_CREATURE);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeTurnPTAction(
                     target,

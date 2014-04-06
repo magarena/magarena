@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature=event.getPermanent();
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(creature.getController(),MagicTargetFilter.TARGET_ATTACKING_GOBLIN);
+                game.filterPermanents(creature.getController(),MagicTargetFilterFactory.TARGET_ATTACKING_GOBLIN);
             //excluding itself
             final int power = 2 * (targets.size() - 1);
             game.doAction(new MagicChangeTurnPTAction(creature,power,0));

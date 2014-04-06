@@ -5,6 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.Collection;
 
@@ -39,7 +40,7 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
         final MagicPermanent permanent = event.getPermanent();
         final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilter.TARGET_ATTACKING_CREATURE);
+                MagicTargetFilterFactory.TARGET_ATTACKING_CREATURE);
         for (final MagicPermanent creature : targets) {
             if (creature != permanent && creature.isAttacking()) {
                 game.doAction(new MagicChangeTurnPTAction(creature,1,0));

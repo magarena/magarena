@@ -14,7 +14,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player ->
                 final Collection<MagicPermanent> targets=
-                    game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    game.filterPermanents(player,MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : targets) {
                     game.doAction(new MagicTapAction(creature,true));
                     game.doAction(MagicChangeStateAction.Set(

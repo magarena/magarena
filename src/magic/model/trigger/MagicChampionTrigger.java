@@ -13,6 +13,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicPermanentFilterImpl;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
@@ -39,7 +40,7 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
         final MagicTargetFilter<MagicPermanent> targetFilter = subtypes.length == 0 ?
-            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL :
+            MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL :
             new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent tribal) {
                     boolean hasSubType = false;

@@ -29,7 +29,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDestroyAction(
-                game.filterPermanents(MagicTargetFilter.TARGET_CREATURE_POWER_4_OR_MORE)
+                game.filterPermanents(MagicTargetFilterFactory.TARGET_CREATURE_POWER_4_OR_MORE)
             ));
         }
     },
@@ -47,7 +47,7 @@
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
                     MagicLayer.ModPT,
-                    MagicTargetFilter.ANY
+                    MagicTargetFilterFactory.ANY
                 ) {
                     @Override
                     public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -62,7 +62,7 @@
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
                     MagicLayer.Ability,
-                    MagicTargetFilter.ANY
+                    MagicTargetFilterFactory.ANY
                 ) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {

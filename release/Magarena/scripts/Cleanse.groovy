@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_BLACK_CREATURE);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_BLACK_CREATURE);
             game.doAction(new MagicDestroyAction(targets));
         }
     }

@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilter.TARGET_ARTIFACT_YOU_CONTROL) {
+        MagicTargetFilterFactory.TARGET_ARTIFACT_YOU_CONTROL) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(MagicAbility.Shroud, flags);

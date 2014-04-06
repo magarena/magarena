@@ -11,6 +11,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSoulbondEvent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenOtherComesIntoPlayTrigger(final int priority) {
@@ -94,10 +95,10 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                 controller.getNrOfPermanents(MagicType.Creature) > 1) {
                 final boolean hasSoulbond = otherPermanent.hasAbility(MagicAbility.Soulbond);
                 if ((hasSoulbond &&
-                     game.filterPermanents(controller,MagicTargetFilter.TARGET_UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)
+                     game.filterPermanents(controller,MagicTargetFilterFactory.TARGET_UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)
                     ||
                     (!hasSoulbond &&
-                     game.filterPermanents(controller,MagicTargetFilter.TARGET_UNPAIRED_SOULBOND_CREATURE).size() > 0)) {
+                     game.filterPermanents(controller,MagicTargetFilterFactory.TARGET_UNPAIRED_SOULBOND_CREATURE).size() > 0)) {
                     return new MagicSoulbondEvent(otherPermanent,hasSoulbond);
                 } else {
                     return MagicEvent.NONE;

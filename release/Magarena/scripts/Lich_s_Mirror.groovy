@@ -22,7 +22,7 @@
             game.doAction(new MagicChangeLifeAction(player, lifeChange));
             final MagicCardList hand = new MagicCardList(player.getHand());
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-            final List<MagicPermanent> battlefield = player.filterPermanents(MagicTargetFilter.TARGET_PERMANENT_YOU_OWN);
+            final List<MagicPermanent> battlefield = player.filterPermanents(MagicTargetFilterFactory.TARGET_PERMANENT_YOU_OWN);
             for (final MagicCard card : hand) {
                 game.doAction(new MagicRemoveCardAction(
                     card,

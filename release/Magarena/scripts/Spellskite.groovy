@@ -11,7 +11,7 @@ def event = {
     return new MagicEvent(
         source,
         new MagicTargetChoice(
-            MagicTargetFilter.SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS, 
+            MagicTargetFilterFactory.SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS, 
             MagicTargetHint.Negative, 
             "target spell or ability"
         ), 

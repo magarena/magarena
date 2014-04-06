@@ -23,7 +23,7 @@
                 int life=0;
                 final MagicPlayer player=event.getPlayer();
                 final MagicColor color=event.getChosenColor();
-                final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT);
+                final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.TARGET_PERMANENT);
                 for (final MagicPermanent permanent : targets) {
                     if (permanent.hasColor(color)) {
                         life++;

@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent creature = event.getPermanent();
             final Collection<MagicPermanent> targets =
-                game.filterPermanents(creature.getController(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterPermanents(creature.getController(),MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 if (target != creature) {
                     game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1,true));

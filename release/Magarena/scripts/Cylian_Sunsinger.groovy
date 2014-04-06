@@ -21,7 +21,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicTargetFilter<MagicPermanent> targetFilter =
                 new MagicTargetFilter.NameTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE,
+                    MagicTargetFilterFactory.TARGET_CREATURE,
                     event.getPermanent().getName()
                 );
             final Collection<MagicPermanent> targets =

@@ -13,7 +13,7 @@
             game.addEvent(new MagicPopulateEvent(event.getSource()));
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 event.getPlayer(),
-                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL
+                MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL
             );
             for (final MagicPermanent creature : targets) {
                 game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Indestructible));

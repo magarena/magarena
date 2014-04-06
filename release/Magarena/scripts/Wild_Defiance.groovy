@@ -11,7 +11,7 @@
 
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     permanent.getController(),
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                    MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
             MagicPermanent targetedPerm = MagicPermanent.NONE;
             for (final MagicPermanent perm : targets) {
                 if (itemOnStack.containsInChoiceResults(perm) &&

@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final List<MagicCard> cards = game.filterCards(
                     event.getPlayer(),
-                    MagicTargetFilter.TARGET_CARD_FROM_GRAVEYARD);
+                    MagicTargetFilterFactory.TARGET_CARD_FROM_GRAVEYARD);
             for (final MagicCard card : cards) {
                 if (card.getName().equals(event.getSource().getName())) {
                     game.doAction(new MagicReanimateAction(

@@ -17,7 +17,7 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicCard> targets = game.filterCards(
                 player,
-                MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_GRAVEYARD
             );
             for (final MagicCard card : targets) {
                 if(card.getConvertedCost() == amount){

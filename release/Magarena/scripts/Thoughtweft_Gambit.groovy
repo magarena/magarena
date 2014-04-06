@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE);
+                game.filterPermanents(player,MagicTargetFilterFactory.TARGET_CREATURE);
             for (final MagicPermanent creature : targets) {
                 if (creature.isController(player)) {
                     game.doAction(new MagicUntapAction(creature));

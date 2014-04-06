@@ -1,5 +1,5 @@
 def A_PAYABLE_INSTANT_OR_SORCERY_CARD_FROM_YOUR_GRAVEYARD = new MagicTargetChoice(
-    MagicTargetFilter.PAYABLE_INSTANT_OR_SORCERY_FROM_GRAVEYARD,
+    MagicTargetFilterFactory.PAYABLE_INSTANT_OR_SORCERY_FROM_GRAVEYARD,
     "a instant or sorcery card from your graveyard"
 );
 

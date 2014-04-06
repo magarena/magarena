@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent creature) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                    MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
                     permanent
                 ),
                 MagicTargetHint.None,"another creature to return"

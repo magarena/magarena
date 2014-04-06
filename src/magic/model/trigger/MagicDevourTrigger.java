@@ -14,6 +14,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 
@@ -31,7 +32,7 @@ public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
             final MagicPermanent perm,
             final MagicPayedCost payedCost) {
         final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(
-            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+            MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
             perm
         );
         final MagicTargetChoice targetChoice = new MagicTargetChoice(

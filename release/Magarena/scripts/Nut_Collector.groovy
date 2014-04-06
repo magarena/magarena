@@ -27,7 +27,7 @@
     },
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilter.TARGET_SQUIRREL_CREATURE
+        MagicTargetFilterFactory.TARGET_SQUIRREL_CREATURE
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {

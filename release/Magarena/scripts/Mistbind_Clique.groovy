@@ -21,7 +21,7 @@
          public void executeEvent(final MagicGame game, final MagicEvent event) {
              event.processTargetPlayer(game, {
                 final MagicPlayer player ->
-                final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilter.TARGET_LAND_YOU_CONTROL);
+                final Collection<MagicPermanent> targets = player.filterPermanents(MagicTargetFilterFactory.TARGET_LAND_YOU_CONTROL);
                 for (final MagicPermanent land : targets) {
                     game.doAction(new MagicTapAction(land,true));
                 }

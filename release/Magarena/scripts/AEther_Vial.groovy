@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicTargetFilter.MagicCMCCardFilter(
-                    MagicTargetFilter.TARGET_CREATURE_CARD_FROM_HAND,
+                    MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_HAND,
                     MagicTargetFilter.Operator.EQUAL,
                     source.getCounters(MagicCounterType.Charge)
                 ),

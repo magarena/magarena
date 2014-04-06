@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets =
-                game.filterPermanents(player,MagicTargetFilter.TARGET_ENCHANTMENT);
+                game.filterPermanents(player,MagicTargetFilterFactory.TARGET_ENCHANTMENT);
             final MagicDestroyAction destroy = new MagicDestroyAction(targets);
             game.doAction(destroy);
             game.doAction(new MagicChangeLifeAction(player,destroy.getNumDestroyed()*2));

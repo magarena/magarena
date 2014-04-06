@@ -21,7 +21,7 @@
                 game.doAction(new MagicDealDamageAction(damage));
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         player,
-                        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                        MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
                     damage = new MagicDamage(event.getSource(), target, amount);
                     game.doAction(new MagicDealDamageAction(damage));

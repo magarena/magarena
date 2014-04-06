@@ -13,7 +13,7 @@
             final MagicPlayer you = event.getPlayer();
             Collection<MagicPermanent> creatures = game.filterPermanents(
                 you,
-                MagicTargetFilter.TARGET_CREATURE
+                MagicTargetFilterFactory.TARGET_CREATURE
             )
             final int amt = you.getNrOfPermanents(MagicSubType.Swamp);
             for (final MagicPermanent creature : creatures) {

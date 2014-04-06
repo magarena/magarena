@@ -47,7 +47,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_NONLAND_NONTOKEN_PERMANENT,
+                MagicTargetFilterFactory.TARGET_NONLAND_NONTOKEN_PERMANENT,
                 event.getPermanent()
             );
             final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(), AllOtherPermanent);

@@ -91,7 +91,7 @@ def PreventAllDamage = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_PERMANENT,
+                MagicTargetFilterFactory.TARGET_PERMANENT,
                 event.getPermanent()
             );
             final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(), AllOtherPermanent);

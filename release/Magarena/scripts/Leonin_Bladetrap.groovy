@@ -24,7 +24,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent source=event.getPermanent();
             final Collection<MagicPermanent> creatures=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_ATTACKING_CREATURE_WITHOUT_FLYING);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_ATTACKING_CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage=new MagicDamage(source,creature,2);
                 game.doAction(new MagicDealDamageAction(damage));

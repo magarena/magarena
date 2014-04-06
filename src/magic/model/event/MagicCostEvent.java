@@ -8,6 +8,7 @@ import magic.model.event.MagicDiscardEvent;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.condition.MagicCondition;
 import java.util.List;
 import java.util.LinkedList;
@@ -37,7 +38,7 @@ public enum MagicCostEvent {
                 source,
                 new MagicTargetChoice(
                     new MagicOtherPermanentTargetFilter(
-                        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                        MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
                         (MagicPermanent)source
                     ),
                     "another creature to sacrifice"

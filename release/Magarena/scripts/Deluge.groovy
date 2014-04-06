@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicTapAction(target,true));
             }

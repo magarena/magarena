@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource permanent = event.getPermanent();
             final Collection<MagicPermanent> creatures =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE);
             for (final MagicPermanent creature : creatures) {
                 if (permanent != creature) {
                     final MagicDamage damage=new MagicDamage(permanent,creature,4);

@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.isKicked() ? 4 : 1;
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_WITHOUT_FLYING);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE_WITHOUT_FLYING);
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                 game.doAction(new MagicDealDamageAction(damage));

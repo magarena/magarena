@@ -552,8 +552,8 @@ check_spells:
 	 grep requires_groovy_code -L $$(grep effect -L $$(grep "^type.*Sorcery" -lr release/Magarena/scripts)) | ${NO_OUTPUT}
 
 check_unused_filter:
-	grep "Impl [A-Z]\+[^ =]*" src/magic/model/target/MagicTargetFilter.java -o | sed 's/Impl //' | sort | uniq > declared-filters
-	for i in `cat declared-filters`; do grep $$i -ro src release/Magarena/scripts; done | grep -v MagicTargetFilter.java | cut -d':' -f2 | sort | uniq > used-filters
+	grep "Impl [A-Z]\+[^ =]*" src/magic/model/target/MagicTargetFilterFactory.java -o | sed 's/Impl //' | sort | uniq > declared-filters
+	for i in `cat declared-filters`; do grep $$i -ro src release/Magarena/scripts; done | grep -v MagicTargetFilterFactory.java | cut -d':' -f2 | sort | uniq > used-filters
 	diff declared-filters used-filters | ${NO_OUTPUT}
 
 crash.txt: $(wildcard *.log)

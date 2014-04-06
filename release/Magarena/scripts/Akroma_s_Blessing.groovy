@@ -15,7 +15,7 @@
             final MagicColor color = event.getChosenColor();
             final MagicAbility protection = color.getProtectionAbility();
             final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicGainAbilityAction(target, protection));
             }

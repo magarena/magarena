@@ -15,7 +15,7 @@
             final MagicPlayer player=event.getPlayer();
             int x = event.getCardOnStack().getX();
             if (x >= 5) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE);
+                final Collection<MagicPermanent> targets = game.filterPermanents(player,MagicTargetFilterFactory.TARGET_CREATURE);
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicDestroyAction(target));
                 }

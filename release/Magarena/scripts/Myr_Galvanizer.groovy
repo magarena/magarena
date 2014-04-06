@@ -20,7 +20,7 @@
             final MagicPermanent permanent = event.getPermanent();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
-                    MagicTargetFilter.TARGET_MYR_YOU_CONTROL);
+                    MagicTargetFilterFactory.TARGET_MYR_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 if (target != permanent) {
                     game.doAction(new MagicUntapAction(target));

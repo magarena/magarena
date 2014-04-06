@@ -12,6 +12,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 
 public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
@@ -26,7 +27,7 @@ public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
         final MagicTargetFilter<MagicCard> targetFilter =
             new MagicTargetFilter.MagicCMCCardFilter(
-                MagicTargetFilter.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
+                MagicTargetFilterFactory.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
                 MagicTargetFilter.Operator.LESS_THAN_OR_EQUAL,
                 cmc
             );

@@ -13,6 +13,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
 import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.action.MagicRemoveStaticAction;
 
 import java.util.Set;
@@ -41,11 +42,11 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
 
     protected MagicStatic(final MagicLayer aLayer, final boolean aIsUntilEOT) {
-        this(aLayer, MagicTargetFilter.NONE, aIsUntilEOT);
+        this(aLayer, MagicTargetFilterFactory.NONE, aIsUntilEOT);
     }
 
     protected MagicStatic(final MagicLayer aLayer) {
-        this(aLayer, MagicTargetFilter.NONE, false);
+        this(aLayer, MagicTargetFilterFactory.NONE, false);
     }
 
     @Override
@@ -62,7 +63,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
 
     public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-        if (filter == MagicTargetFilter.NONE) {
+        if (filter == MagicTargetFilterFactory.NONE) {
             return source == target && condition(game, source, target);
         } else {
             return filter.accept(game, source.getController(), target) && condition(game, source, target);

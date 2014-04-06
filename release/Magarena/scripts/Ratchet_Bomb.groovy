@@ -29,7 +29,7 @@
                 game.filterPermanents(
                     source.getController(),
                     new MagicTargetFilter.MagicCMCPermanentFilter(
-                        MagicTargetFilter.TARGET_NONLAND_PERMANENT,
+                        MagicTargetFilterFactory.TARGET_NONLAND_PERMANENT,
                         MagicTargetFilter.Operator.EQUAL,
                         amount
                     )

@@ -37,7 +37,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicTargetFilter.MagicPowerTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE,
+                    MagicTargetFilterFactory.TARGET_CREATURE,
                     source.getCounters(MagicCounterType.Treasure)
                 ),
                 MagicTargetHint.Negative,

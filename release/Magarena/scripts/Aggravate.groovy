@@ -17,7 +17,7 @@
                 final MagicPlayer targetPlayer ->
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         targetPlayer,
-                        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                        MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),

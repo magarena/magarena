@@ -1,7 +1,7 @@
 def TWO_OTHER_CREATURES_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
         final MagicTargetFilter<MagicPermanent> filter =new MagicOtherPermanentTargetFilter(
-            MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL, 
+            MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL, 
             (MagicPermanent)source
         );
         final MagicGame game = source.getGame();
@@ -22,7 +22,7 @@ def TWO_OTHER_CREATURES_CONDITION = new MagicCondition() {
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                    MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
                     source
                 ),
                 MagicTargetHint.None,

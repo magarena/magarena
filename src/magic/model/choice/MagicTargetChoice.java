@@ -9,6 +9,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetType;
@@ -26,7 +27,7 @@ import java.util.List;
 
 public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NONE =
-        new MagicTargetChoice(MagicTargetFilter.NONE,MagicTargetHint.None,"nothing") {
+        new MagicTargetChoice(MagicTargetFilterFactory.NONE,MagicTargetHint.None,"nothing") {
             @Override
             public boolean isValid() {
                 return false;

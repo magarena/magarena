@@ -2,7 +2,7 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final Collection<MagicCard> graveyardCreatures = game.filterCards(upkeepPlayer,MagicTargetFilter.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
+            final Collection<MagicCard> graveyardCreatures = game.filterCards(upkeepPlayer,MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_GRAVEYARD);
             return permanent.isController(upkeepPlayer) && graveyardCreatures.size()<6 ?
                 new MagicEvent(
                     permanent,

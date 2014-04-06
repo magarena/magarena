@@ -17,7 +17,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS);
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,4);
                 game.doAction(new MagicDealDamageAction(damage));

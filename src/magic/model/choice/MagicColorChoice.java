@@ -8,6 +8,7 @@ import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
 import magic.ui.choice.ColorChoicePanel;
@@ -53,7 +54,7 @@ public class MagicColorChoice extends MagicChoice {
     }
 
     private static Collection<Object> getArtificialMostOptions(final MagicGame game,final MagicPlayer player) {
-        final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilter.TARGET_PERMANENT);
+        final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.TARGET_PERMANENT);
         final int[] counts=new int[MagicColor.NR_COLORS];
         for (final MagicPermanent permanent : targets) {
             for (final MagicColor color : MagicColor.values()) {
@@ -78,7 +79,7 @@ public class MagicColorChoice extends MagicChoice {
 
     private static Collection<Object> getArtificialUnsummonOptions(final MagicGame game,final MagicPlayer player) {
 
-        final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilter.TARGET_CREATURE);
+        final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.TARGET_CREATURE);
         final int[] scores=new int[MagicColor.NR_COLORS];
         for (final MagicPermanent permanent : targets) {
             int score=permanent.getScore();

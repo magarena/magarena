@@ -26,7 +26,7 @@
             final MagicPermanent source=event.getPermanent();
             final int amount=source.getCounters(MagicCounterType.Charge);
             final Collection<MagicPermanent> creatures=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilter.TARGET_CREATURE);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE);
             for (final MagicPermanent creature : creatures) {
                 final MagicDamage damage=new MagicDamage(source,creature,amount);
                 game.doAction(new MagicDealDamageAction(damage));

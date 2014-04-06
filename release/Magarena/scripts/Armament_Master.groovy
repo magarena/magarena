@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilter.TARGET_KOR_CREATURE_YOU_CONTROL
+        MagicTargetFilterFactory.TARGET_KOR_CREATURE_YOU_CONTROL
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {

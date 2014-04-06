@@ -5,7 +5,7 @@
             final int cmc = spell.getConvertedCost();
             final MagicTargetChoice choice = new MagicTargetChoice(
                 new MagicTargetFilter.MagicCMCPermanentFilter(
-                    MagicTargetFilter.TARGET_CREATURE,
+                    MagicTargetFilterFactory.TARGET_CREATURE,
                     MagicTargetFilter.Operator.EQUAL,
                     cmc
                 ),

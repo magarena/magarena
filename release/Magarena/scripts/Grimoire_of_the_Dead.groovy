@@ -55,7 +55,7 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicCard> targets = game.filterCards(
                 player,
-                MagicTargetFilter.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS
+                MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS
             );
             for (final MagicCard card : targets) {
                 game.doAction(new MagicReanimateAction(

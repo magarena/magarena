@@ -15,7 +15,7 @@
             final MagicPermanent creature = event.getPermanent();
             final int power = event.getPlayer().getNrOfPermanents(
                 new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilter.TARGET_ATTACKING_AUROCHS,
+                    MagicTargetFilterFactory.TARGET_ATTACKING_AUROCHS,
                     event.getPermanent()
                 )
             );

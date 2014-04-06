@@ -50,7 +50,7 @@
             outerGame.doAction(new MagicAddStaticAction(
                 new MagicStatic(
                     MagicLayer.Ability,
-                    MagicTargetFilter.ANY) {
+                    MagicTargetFilterFactory.ANY) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
                         permanent.addAbility(MagicAbility.Indestructible, flags);

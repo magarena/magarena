@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilter.TARGET_CAT_CREATURE_YOU_CONTROL) {
+        MagicTargetFilterFactory.TARGET_CAT_CREATURE_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             pt.add(2,2);
@@ -13,7 +13,7 @@
     },
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilter.TARGET_CAT_CREATURE_YOU_CONTROL) {
+        MagicTargetFilterFactory.TARGET_CAT_CREATURE_YOU_CONTROL) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(MagicAbility.DoubleStrike, flags);

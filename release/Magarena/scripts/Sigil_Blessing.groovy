@@ -16,7 +16,7 @@
                 final MagicPermanent creature ->
                 final Collection<MagicPermanent> targets=game.filterPermanents(
                         event.getPlayer(),
-                        MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL);
+                        MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
                 for (final MagicPermanent permanent : targets) {
                     if (permanent==creature) {
                         game.doAction(new MagicChangeTurnPTAction(permanent,3,3));

@@ -10,6 +10,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicEquipTargetPicker;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 
@@ -44,7 +45,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         final MagicTargetChoice TARGET_OTHER_CREATURE_YOU_CONTROL = new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
-                MagicTargetFilter.TARGET_CREATURE_YOU_CONTROL,
+                MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
                 source.getEquippedCreature()
             ),
             MagicTargetHint.None,
