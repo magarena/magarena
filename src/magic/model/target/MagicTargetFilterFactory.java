@@ -71,20 +71,18 @@ public class MagicTargetFilterFactory {
         // used by MagicTargetChoice
         // <color|type|subtype> card from your graveyard
         single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
-        single.put("artifact creature card from your graveyard", TARGET_ARTIFACT_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("artifact or enchantment card from your graveyard", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
-        single.put("enchantment creature card from your graveyard", TARGET_ENCHANTMENT_CREATURE_CARD_FROM_GRAVEYARD);
+        
+        // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
+        
+        // <color|type|subtype> creature card from your graveyard
         single.put("creature card with converted mana cost 3 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
         single.put("creature card with converted mana cost 2 or less from your graveyard", TARGET_CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD); 
         single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
-        
-        // <color|type|subtype> permanent card from your graveyard
-        
-        // <color|type|subtype> creature card from your graveyard
         
         // <color|type|subtype> card from an opponent's graveyard
         single.put("instant or sorcery card from an opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
@@ -92,12 +90,12 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from your hand
         single.put("card from your hand", TARGET_CARD_FROM_HAND);
         single.put("basic land card from your hand", TARGET_BASIC_LAND_CARD_FROM_HAND);
-        single.put("blue or red creature card from your hand", TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
-        single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
         
         // <color|type|subtype> permanent card from your hand
         
         // <color|type|subtype> creature card from your hand
+        single.put("blue or red creature card from your hand", TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
+        single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
 
         // <color|type|subtype> card from your library
         single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);
