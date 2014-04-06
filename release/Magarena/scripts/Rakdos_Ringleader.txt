@@ -5,7 +5,9 @@ value=1.351
 rarity=U
 type=Creature
 subtype=Skeleton,Warrior
-ability=first strike;regenerate {B};combat damage discard random 1
+ability=first strike;\
+        Whenever SN deals combat damage to a player, that player discards a card at random.;\
+        regenerate {B}
 cost={4}{B}{R}
 pt=3/1
 timing=main

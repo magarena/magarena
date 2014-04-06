@@ -82,6 +82,10 @@ public class MagicTargetFilterFactory {
         single.put("creature card with infect from your graveyard", TARGET_CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD);
         single.put("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
         
+        // <color|type|subtype> permanent card from your graveyard
+        
+        // <color|type|subtype> creature card from your graveyard
+        
         // <color|type|subtype> card from an opponent's graveyard
         single.put("instant or sorcery card from an opponent's graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
         
@@ -89,13 +93,14 @@ public class MagicTargetFilterFactory {
         single.put("card from your hand", TARGET_CARD_FROM_HAND);
         single.put("basic land card from your hand", TARGET_BASIC_LAND_CARD_FROM_HAND);
         single.put("blue or red creature card from your hand", TARGET_BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
-        single.put("Goblin creature card from your hand", TARGET_GOBLIN_CREATURE_CARD_FROM_HAND);
-        single.put("green creature card from your hand", TARGET_GREEN_CREATURE_CARD_FROM_HAND);
         single.put("multicolored creature card from your hand", TARGET_MULTICOLORED_CREATURE_CARD_FROM_HAND);
+        
+        // <color|type|subtype> permanent card from your hand
+        
+        // <color|type|subtype> creature card from your hand
 
         // <color|type|subtype> card from your library
         single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);
-        single.put("green creature card from your library", TARGET_GREEN_CREATURE_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, Mountain or Forest card from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("Plains or Island card from your library", TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY);
         single.put("Plains or Swamp card from your library", TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY);
@@ -109,6 +114,13 @@ public class MagicTargetFilterFactory {
         single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
+        single.put("artifact or enchantment card from your library", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_LIBRARY);
+        single.put("instant or sorcery card from your library", INSTANT_OR_SORCERY_CARD_FROM_LIBRARY);
+        single.put("Treefolk or Forest card from your library", TREEFOLK_OR_FOREST_CARD_FROM_LIBRARY);
+        
+        // <color|type|subtype> permanent card from your library
+        
+        // <color|type|subtype> creature card from your library
         
         // <color|type|subtype> creature you control
         single.put("non-Angel creature you control", TARGET_NON_ANGEL_CREATURE_YOU_CONTROL);
@@ -262,12 +274,28 @@ public class MagicTargetFilterFactory {
         final String filter = arg.replaceFirst(" to sacrifice$", " you control");
         if (single.containsKey(filter)) {
             return single.get(filter);
+        } else if (filter.endsWith(" permanent card from your graveyard")) {
+            return matchPermanentCardPrefix(filter, " permanent card from your graveyard", MagicTargetType.Graveyard);
+        } else if (filter.endsWith(" creature card from your graveyard")) {
+            return matchCreatureCardPrefix(filter, " creature card from your graveyard", MagicTargetType.Graveyard);
         } else if (filter.endsWith(" card from your graveyard")) {
             return matchCardPrefix(filter, " card from your graveyard", MagicTargetType.Graveyard);
+        } else if (filter.endsWith(" permanent card from an opponent's graveyard")) {
+            return matchPermanentCardPrefix(filter, " permanent card from an opponent's graveyard", MagicTargetType.OpponentsGraveyard);
+        } else if (filter.endsWith(" creature card from an opponent's graveyard")) {
+            return matchCreatureCardPrefix(filter, " creature card from an opponent's graveyard", MagicTargetType.OpponentsGraveyard);
         } else if (filter.endsWith(" card from an opponent's graveyard")) {
             return matchCardPrefix(filter, " card from an opponent's graveyard", MagicTargetType.OpponentsGraveyard);
+        } else if (filter.endsWith(" permanent card from your hand")) {
+            return matchPermanentCardPrefix(filter, " permanent card from your hand", MagicTargetType.Hand);
+        } else if (filter.endsWith(" creature card from your hand")) {
+            return matchCreatureCardPrefix(filter, " creature card from your hand", MagicTargetType.Hand);
         } else if (filter.endsWith(" card from your hand")) {
             return matchCardPrefix(filter, " card from your hand", MagicTargetType.Hand);
+        } else if (filter.endsWith(" permanent card from your library")) {
+            return matchPermanentCardPrefix(filter, " permanent card from your library", MagicTargetType.Library);
+        } else if (filter.endsWith(" creature card from your library")) {
+            return matchCreatureCardPrefix(filter, " creature card from your library", MagicTargetType.Library);
         } else if (filter.endsWith(" card from your library")) {
             return matchCardPrefix(filter, " card from your library", MagicTargetType.Library);
         } else if (filter.endsWith(" creature you control")) {
@@ -293,9 +321,6 @@ public class MagicTargetFilterFactory {
     
     private static MagicTargetFilter<MagicCard> matchCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
         final String prefix = arg.replace(suffix, "");
-        if (prefix.endsWith(" permanent")) {
-            return matchPermanentCardPrefix(prefix, " permanent", location);
-        }
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return Factory.card(location, c);
@@ -316,6 +341,16 @@ public class MagicTargetFilterFactory {
     
     private static MagicTargetFilter<MagicCard> matchPermanentCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
         final String prefix = arg.replace(suffix, "");
+        for (final MagicColor c : MagicColor.values()) {
+            if (prefix.equalsIgnoreCase(c.getName())) {
+                return Factory.permanentCard(location, c);
+            }
+        }
+        for (final MagicType t : MagicType.values()) {
+            if (prefix.equalsIgnoreCase(t.toString())) {
+                return Factory.permanentCard(location, t);
+            }
+        }
         for (final MagicSubType st : MagicSubType.values()) {
             if (prefix.equalsIgnoreCase(st.toString())) {
                 return Factory.permanentCard(location, st);
@@ -324,6 +359,25 @@ public class MagicTargetFilterFactory {
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
     
+    private static MagicTargetFilter<MagicCard> matchCreatureCardPrefix(final String arg, final String suffix, final MagicTargetType location) {
+        final String prefix = arg.replace(suffix, "");
+        for (final MagicColor c : MagicColor.values()) {
+            if (prefix.equalsIgnoreCase(c.getName())) {
+                return Factory.creatureCard(location, c);
+            }
+        }
+        for (final MagicType t : MagicType.values()) {
+            if (prefix.equalsIgnoreCase(t.toString())) {
+                return Factory.creatureCard(location, t);
+            }
+        }
+        for (final MagicSubType st : MagicSubType.values()) {
+            if (prefix.equalsIgnoreCase(st.toString())) {
+                return Factory.creatureCard(location, st);
+            }
+        }
+        throw new RuntimeException("unknown target filter \"" + arg + "\"");
+    }    
     private static MagicTargetFilter<MagicItemOnStack> matchSpellPrefix(final String arg, final String suffix) {
         final String prefix = arg.replace(suffix, "");
         for (final MagicColor c : MagicColor.values()) {

@@ -7,5 +7,6 @@ type=Creature
 subtype=Specter
 cost={2}{B}{R}
 pt=2/2
-ability=flying;haste;combat damage discard 1
+ability=flying;haste;\
+        Whenever SN deals combat damage to a player, that player discards a card.
 timing=fmain

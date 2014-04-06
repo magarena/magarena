@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Shaman
 cost={R}
 pt=1/1
+ability=When SN enters the battlefield, you may search your library for an Elemental card, reveal it, then shuffle your library and put that card on top of it.
 timing=main
-requires_groovy_code

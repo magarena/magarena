@@ -5,5 +5,5 @@ value=4.380
 rarity=U
 type=Sorcery
 cost={G}
+effect=Search your library for a creature card and reveal that card. Shuffle your library, then put the card on top of it.
 timing=main
-requires_groovy_code
