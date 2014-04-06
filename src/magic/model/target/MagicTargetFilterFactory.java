@@ -29,7 +29,8 @@ public class MagicTargetFilterFactory {
         multiple.put("enchanted creatures you control", TARGET_ENCHANTED_CREATURE_YOU_CONTROL);
         multiple.put("non-human creatures you control", TARGET_NONHUMAN_CREATURE_YOU_CONTROL);
         multiple.put("attacking creatures you control", TARGET_ATTACKING_CREATURE_YOU_CONTROL);
-        
+        multiple.put("untapped creatures you control", TARGET_UNTAPPED_CREATURE_YOU_CONTROL);
+
         // <color|type|subtype> creatures your opponents control
        
         // <color|type|subtype> creatures
