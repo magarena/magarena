@@ -824,7 +824,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicCardFilterImpl TARGET_PERMANENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return !target.getCardDefinition().isSpell();
+            return target.getCardDefinition().isPermanent();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
@@ -834,7 +834,7 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
-            return cardDefinition.getConvertedCost() <= 3 && !cardDefinition.isSpell();
+            return cardDefinition.getConvertedCost() <= 3 && cardDefinition.isPermanent();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Graveyard;
