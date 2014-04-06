@@ -345,6 +345,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isSpell() {
         return isInstant()||isSorcery();
     }
+    
+    public boolean isPermanent() {
+        return isSpell() == false;
+    }
 
     public String getLongTypeString() {
         if (isBasic()) {
