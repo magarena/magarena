@@ -401,7 +401,7 @@ public enum MagicAbility {
             card.add(new MagicSpecterTrigger(Type.Any, Player.Any, n));
         }
     },
-    DamageOpponentDiscardCard("Whenever SN deals damage to an opponent, that opponent discards " + ARG.AMOUNT + " card(s)?.",10) {
+    DamageOpponentDiscardCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)?.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.amount(arg);
             card.add(new MagicSpecterTrigger(Type.Any, Player.Opponent, n));
@@ -419,9 +419,9 @@ public enum MagicAbility {
             card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
         }
     },
-    DamageOpponentDiscardRandomCard("Whenever SN deals damage to an opponent, that opponent discards " + ARG.AMOUNT + " card(s)? at random.",10) {
+    DamageOpponentDiscardRandomCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)? at random.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final int n = ARG.number(arg);
+            final int n = ARG.amount(arg);
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },

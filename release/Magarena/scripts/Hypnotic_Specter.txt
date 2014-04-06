@@ -7,5 +7,6 @@ type=Creature
 subtype=Specter
 cost={1}{B}{B}
 pt=2/2
-ability=flying;damage opponent discard random 1
+ability=flying;\
+        Whenever SN deals damage to an opponent, that player discards a card at random.
 timing=main
