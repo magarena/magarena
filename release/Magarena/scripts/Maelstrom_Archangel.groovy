@@ -1,4 +1,4 @@
-def TARGET_NONLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
+def NONLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
         return !(target.hasType(MagicType.Land));
     }
@@ -6,8 +6,8 @@ def TARGET_NONLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
         return targetType == MagicTargetType.Hand;
     }
 }; 
-def NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
-    TARGET_NONLAND_CARD_FROM_HAND,  
+def A_NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
+    NONLAND_CARD_FROM_HAND,  
     MagicTargetHint.None,
     "a nonland card from your hand"
 );
@@ -21,7 +21,7 @@ def NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        NONLAND_CARD_FROM_HAND
+                        A_NONLAND_CARD_FROM_HAND
                     ),
                     MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,

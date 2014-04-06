@@ -1,9 +1,8 @@
-def TARGET_ARTIFACT_YOU_OWN = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isOwner(player) &&
-                   target.isArtifact();
-        }
-    };
+def ARTIFACT_YOU_OWN = new MagicPermanentFilterImpl() {
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.isOwner(player) && target.isArtifact();
+    }
+};
 
 [
     new MagicSpellCardEvent() {
@@ -20,8 +19,7 @@ def TARGET_ARTIFACT_YOU_OWN = new MagicPermanentFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final MagicPlayer player ->
-                final Collection<MagicPermanent> targets =
-                        game.filterPermanents(player,TARGET_ARTIFACT_YOU_OWN);
+                final Collection<MagicPermanent> targets = game.filterPermanents(player, ARTIFACT_YOU_OWN);
                 for (final MagicPermanent permanent : targets) {
                     game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
                 }

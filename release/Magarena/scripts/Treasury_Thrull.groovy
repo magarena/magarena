@@ -1,4 +1,4 @@
-def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+def ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
         return target.hasType(MagicType.Creature) ||
                target.hasType(MagicType.Enchantment) ||
@@ -8,8 +8,8 @@ def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicCa
         return targetType==MagicTargetType.Graveyard;
     }
 };
-def ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicTargetChoice(
-    TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD,
+def AN_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicTargetChoice(
+    ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD,
     MagicTargetHint.Positive,
     "an artifact, creature or enchantment card"
 );
@@ -21,7 +21,7 @@ def ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicTargetCho
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD
+                        AN_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD
                     ),
                     MagicGraveyardTargetPicker.ReturnToHand,
                     this,

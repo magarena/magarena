@@ -1,12 +1,12 @@
-def TARGET_NONTOKEN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+def NONTOKEN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
         return target.isController(player) &&
                target.isCreature() &&
-               !target.isToken();
+               target.isNonToken();
     }
 };
 def SACRIFICE_NONTOKEN = new MagicTargetChoice(
-    TARGET_NONTOKEN_CREATURE_YOU_CONTROL,
+    NONTOKEN_CREATURE_YOU_CONTROL,
     MagicTargetHint.Positive,
     "a nontoken creature"
 );

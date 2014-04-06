@@ -1,12 +1,12 @@
-def TARGET_NONTOKEN_ARTIFACT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+def NONTOKEN_ARTIFACT_YOU_CONTROL = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
         return target.isController(player) &&
                target.isArtifact() &&
-               !target.isToken();
+               target.isNonToken();
     }
 };
 def SACRIFICE_NONTOKEN_ARTIFACT = new MagicTargetChoice(
-    TARGET_NONTOKEN_ARTIFACT_YOU_CONTROL,
+    NONTOKEN_ARTIFACT_YOU_CONTROL,
     MagicTargetHint.Positive,
     "a nontoken artifact"
 );

@@ -1,4 +1,4 @@
-def TARGET_GREEN_CARD_FROM_HAND = new MagicCardFilterImpl() {
+def GREEN_CARD_FROM_HAND = new MagicCardFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
         return target.hasColor(MagicColor.Green);
     }
@@ -10,7 +10,7 @@ def TARGET_GREEN_CARD_FROM_HAND = new MagicCardFilterImpl() {
 def TWO_OTHER_GREEN_CARDS_IN_HAND = new MagicCondition() {
     public boolean accept(final MagicSource source) {
         final MagicTargetFilter<MagicCard> filter =new MagicOtherCardTargetFilter(
-            TARGET_GREEN_CARD_FROM_HAND, 
+            GREEN_CARD_FROM_HAND, 
             (MagicCard)source
         );
         final MagicGame game = source.getGame();
@@ -28,7 +28,7 @@ def TWO_OTHER_GREEN_CARDS_IN_HAND = new MagicCondition() {
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherCardTargetFilter(
-                    TARGET_GREEN_CARD_FROM_HAND, 
+                    GREEN_CARD_FROM_HAND, 
                     source
                 ),
                 MagicTargetHint.None,

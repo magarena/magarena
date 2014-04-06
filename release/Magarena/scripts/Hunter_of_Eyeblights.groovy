@@ -1,4 +1,4 @@
-def TARGET_CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
+def CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
         return target.isCreature() && target.hasCounters();
     }
@@ -21,7 +21,7 @@ def TARGET_CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                new MagicTargetChoice(TARGET_CREATURE_WITH_COUNTER, MagicTargetHint.Negative, "target creature with a counter on it"),
+                new MagicTargetChoice(CREATURE_WITH_COUNTER, MagicTargetHint.Negative, "target creature with a counter on it"),
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature\$ with a counter on it."

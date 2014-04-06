@@ -1,11 +1,11 @@
-def TARGET_PERMANENT_COUNTERS = new MagicPermanentFilterImpl() {
+def PERMANENT_COUNTERS = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
         return target.hasCounters();
     }
 };
 
 def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
-    TARGET_PERMANENT_COUNTERS,
+    PERMANENT_COUNTERS,
     "target permanent with counters"
 )
 

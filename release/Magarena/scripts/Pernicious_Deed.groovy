@@ -1,4 +1,4 @@
-def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl () {
+def ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl () {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
         return target.isArtifact() ||
                target.isEnchantment() ||
@@ -39,7 +39,7 @@ def TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl ()
                 game.filterPermanents(
                     source.getController(),
                     new MagicCMCPermanentFilter(
-                        TARGET_ARTIFACT_OR_CREATURE_OR_ENCHANTMENT,
+                        ARTIFACT_OR_CREATURE_OR_ENCHANTMENT,
                         Operator.LESS_THAN_OR_EQUAL,
                         amount
                     )

@@ -1,4 +1,4 @@
-def TARGET_ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicCardFilterImpl() {
+def ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicCardFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
         return target.hasType(MagicType.Creature) &&
                (target.hasSubType(MagicSubType.Angel) ||
@@ -9,8 +9,8 @@ def TARGET_ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicCardFilterImpl() {
         return targetType == MagicTargetType.Hand;
     }
 }; 
-def ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicTargetChoice(
-    TARGET_ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND,  
+def AN_ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicTargetChoice(
+    ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND,  
     MagicTargetHint.None,
     "an Angel, Demon or Dragon creature card from your hand"
 );
@@ -32,7 +32,7 @@ def ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicTargetChoice(
                 event,
                 new MagicMayChoice(
                     "Put an Angel, Demon or Dragon card onto the battlefield?",
-                    ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND,
+                    AN_ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND,
                 ),
                 [MagicPlayMod.TAPPED,MagicPlayMod.ATTACKING]
             ));
