@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     final int cmc = event.getRefInt();
     final MagicTargetFilter filter = new MagicTargetFilter.MagicCMCCardFilter(
-        MagicTargetFilter.Factory.card(MagicTargetType.Library, MagicType.Creature),
+        MagicTargetFilterFactory.card(MagicTargetType.Library, MagicType.Creature),
         MagicTargetFilter.Operator.EQUAL,
         cmc
     );
