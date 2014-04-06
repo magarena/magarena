@@ -16,7 +16,7 @@
                 final MagicPlayer player ->
                 final int amount = event.isKicked() ? -2 : -1;
                 final Collection<MagicPermanent> targets=
-                    game.filterPermanents(player,MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
+                    game.filterPermanents(player,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicChangeTurnPTAction(target,amount,amount));
                 }

@@ -19,7 +19,7 @@
                 game.doAction(new MagicDealDamageAction(damage));
                 if (MagicCondition.METALCRAFT_CONDITION.accept(event.getSource())) {
                     final Collection<MagicPermanent> targets =
-                            game.filterPermanents(targetPlayer,MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
+                            game.filterPermanents(targetPlayer,MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
                     for (final MagicPermanent target : targets) {
                         game.doAction(new MagicGainAbilityAction(
                             target,

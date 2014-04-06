@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilterFactory.TARGET_ELF_YOU_CONTROL) {
+        MagicTargetFilterFactory.ELF_YOU_CONTROL) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             final int amount = source.getCounters(MagicCounterType.PlusOne);

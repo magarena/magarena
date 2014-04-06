@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDestroyAction(
-                game.filterPermanents(MagicTargetFilterFactory.TARGET_GOBLIN_PERMANENT)
+                game.filterPermanents(MagicTargetFilterFactory.GOBLIN_PERMANENT)
             ));
         }
     }

@@ -30,6 +30,6 @@ def trigger = {
     };
 }
 [
-    trigger(MagicTargetFilterFactory.TARGET_BLACK_PERMANENT_YOU_CONTROL),
-    trigger(MagicTargetFilterFactory.TARGET_GREEN_PERMANENT_YOU_CONTROL)
+    trigger(MagicTargetFilterFactory.BLACK_PERMANENT_YOU_CONTROL),
+    trigger(MagicTargetFilterFactory.GREEN_PERMANENT_YOU_CONTROL)
 ]

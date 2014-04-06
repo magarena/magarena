@@ -25,7 +25,7 @@
                 }
             };
             final MagicPlayer you = event.getPlayer();
-            final Collection<MagicPermanent> creatures = you.filterPermanents(MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
+            final Collection<MagicPermanent> creatures = you.filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
             for (final MagicPermanent creature : creatures) {
                 game.doAction(new MagicBecomesCreatureAction(
                     creature,

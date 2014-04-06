@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicPTTargetFilter(
-                    MagicTargetFilterFactory.TARGET_CREATURE,
+                    MagicTargetFilterFactory.CREATURE,
                     source.getController().getNrOfPermanents(MagicType.Creature)
                 ),
                 MagicTargetHint.Negative,

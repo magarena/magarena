@@ -20,7 +20,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.TARGET_CREATURE);
+            final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent creature : targets) {
                 if (!creature.isController(player)) {
                     game.doAction(new MagicGainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));

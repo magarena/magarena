@@ -139,7 +139,7 @@ public interface MagicCondition {
 
     MagicCondition THREE_BLACK_CREATURES_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanents(MagicTargetFilterFactory.TARGET_BLACK_CREATURE_YOU_CONTROL)>=3;
+            return source.getController().getNrOfPermanents(MagicTargetFilterFactory.BLACK_CREATURE_YOU_CONTROL)>=3;
         }
     };
     
@@ -178,7 +178,7 @@ public interface MagicCondition {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             final MagicOtherPermanentTargetFilter filter = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.TARGET_MOUNTAIN_YOU_CONTROL,
+                MagicTargetFilterFactory.MOUNTAIN_YOU_CONTROL,
                 permanent
             );
             return permanent.getController().getNrOfPermanents(filter) >= 5;
@@ -187,7 +187,7 @@ public interface MagicCondition {
 
     MagicCondition TWO_OR_MORE_WHITE_PERMANENTS=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return source.getController().getNrOfPermanents(MagicTargetFilterFactory.TARGET_WHITE_PERMANENT_YOU_CONTROL)>= 2;
+            return source.getController().getNrOfPermanents(MagicTargetFilterFactory.WHITE_PERMANENT_YOU_CONTROL)>= 2;
         }
     };
     

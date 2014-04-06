@@ -14,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicCard> targets = game.filterCards(player,MagicTargetFilterFactory.TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
+            final List<MagicCard> targets = game.filterCards(player,MagicTargetFilterFactory.INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
             if (targets.size() > 0) {
                 final MagicPermanent permanent = event.getPermanent();
                 final MagicRandom rng = new MagicRandom(player.getGraveyard().getStateId());

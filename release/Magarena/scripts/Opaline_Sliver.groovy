@@ -29,7 +29,7 @@ def OpalineDraw = new MagicWhenTargetedTrigger() {
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.TARGET_SLIVER
+        MagicTargetFilterFactory.SLIVER
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {    

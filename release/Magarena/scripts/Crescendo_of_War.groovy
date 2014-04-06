@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.ModPT,
-        MagicTargetFilterFactory.TARGET_CREATURE
+        MagicTargetFilterFactory.CREATURE
     ) {
         @Override
         public void modPowerToughness(

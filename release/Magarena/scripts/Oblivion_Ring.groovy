@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.TARGET_NONLAND_PERMANENT,
+                    MagicTargetFilterFactory.NONLAND_PERMANENT,
                     permanent
                 ),
                 MagicTargetHint.None,

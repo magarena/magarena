@@ -17,7 +17,7 @@
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets = game.filterPermanents(
                 player,
-                MagicTargetFilterFactory.TARGET_CREATURE
+                MagicTargetFilterFactory.CREATURE
             );
             MagicPermanent highest = MagicPermanent.NONE;
             for (final MagicPermanent creature : targets) {

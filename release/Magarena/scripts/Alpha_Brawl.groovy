@@ -19,7 +19,7 @@
                 final MagicPermanent permanent ->
                 final MagicPlayer player = event.getPlayer();
                 final Collection<MagicPermanent> creatures =
-                        game.filterPermanents(player.getOpponent(),MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL);
+                        game.filterPermanents(player.getOpponent(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
                 for (final MagicPermanent creature : creatures) {
                     final MagicDamage damage = new MagicDamage(
                         permanent,

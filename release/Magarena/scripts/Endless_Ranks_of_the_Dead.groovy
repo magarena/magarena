@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets =
-                    game.filterPermanents(player,MagicTargetFilterFactory.TARGET_ZOMBIE_YOU_CONTROL);
+                    game.filterPermanents(player,MagicTargetFilterFactory.ZOMBIE_YOU_CONTROL);
             def amount = targets.size().intdiv(2);
             game.doAction(new MagicPlayTokensAction(player,TokenCardDefinitions.get("2/2 black Zombie creature token"),amount));;
         }

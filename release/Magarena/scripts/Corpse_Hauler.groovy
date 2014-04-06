@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice TARGET_OTHER_CREATURE_CARD_FROM_GRAVEYARD=new MagicTargetChoice(
                 new MagicOtherCardTargetFilter(
-                    MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                    MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD,
                     source.getCard()
                 ),
                 MagicTargetHint.None,

@@ -11,7 +11,7 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     public static final MagicPermanentStatic CountersEffect =
         new MagicPermanentStatic(0, MagicPermanent.NONE, new MagicStatic(
             MagicLayer.CountersPT,
-            MagicTargetFilterFactory.TARGET_CREATURE) {
+            MagicTargetFilterFactory.CREATURE) {
             @Override
             public void modPowerToughness(
                 final MagicPermanent source,

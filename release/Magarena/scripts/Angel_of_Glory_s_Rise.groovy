@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final List<MagicPermanent> zombies =
-                    game.filterPermanents(player,MagicTargetFilterFactory.TARGET_ZOMBIE);
+                    game.filterPermanents(player,MagicTargetFilterFactory.ZOMBIE);
             for (final MagicPermanent target : zombies) {
                 game.doAction(new MagicRemoveFromPlayAction(
                     target,
@@ -24,7 +24,7 @@
                 ));
             }
             final List<MagicCard> humans =
-                    game.filterCards(player,MagicTargetFilterFactory.TARGET_HUMAN_CREATURE_CARD_FROM_GRAVEYARD);
+                    game.filterCards(player,MagicTargetFilterFactory.HUMAN_CREATURE_CARD_FROM_GRAVEYARD);
             for (final MagicCard target : humans) {
                 game.doAction(new MagicReanimateAction(
                     target,

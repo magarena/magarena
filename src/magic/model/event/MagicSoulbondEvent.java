@@ -20,7 +20,7 @@ public class MagicSoulbondEvent extends MagicEvent {
                 hasSoulbond ?
                     new MagicTargetChoice(
                         new MagicOtherPermanentTargetFilter(
-                            MagicTargetFilterFactory.TARGET_UNPAIRED_CREATURE_YOU_CONTROL,
+                            MagicTargetFilterFactory.UNPAIRED_CREATURE_YOU_CONTROL,
                             permanent
                         ),
                         MagicTargetHint.None,

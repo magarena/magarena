@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets =
-                    game.filterPermanents(player,MagicTargetFilterFactory.TARGET_MODULAR_CREATURE_YOU_CONTROL);
+                    game.filterPermanents(player,MagicTargetFilterFactory.MODULAR_CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(
                     target,

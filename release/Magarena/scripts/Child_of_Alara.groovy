@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets =
-                game.filterPermanents(MagicTargetFilterFactory.TARGET_NONLAND_PERMANENT);
+                game.filterPermanents(MagicTargetFilterFactory.NONLAND_PERMANENT);
             for (final MagicPermanent target : targets) {
                 game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
             }

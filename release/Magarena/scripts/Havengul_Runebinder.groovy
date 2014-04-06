@@ -28,7 +28,7 @@
             ));
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     player,
-                    MagicTargetFilterFactory.TARGET_ZOMBIE_YOU_CONTROL);
+                    MagicTargetFilterFactory.ZOMBIE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(
                     target,

@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_NONBLACK_CREATURE);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.NONBLACK_CREATURE);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(target,MagicCounterType.MinusOne,1,true));
             }

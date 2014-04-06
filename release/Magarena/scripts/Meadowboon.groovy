@@ -18,7 +18,7 @@
                 final MagicPlayer targetPlayer ->
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                     targetPlayer,
-                    MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL
+                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL
                 );
                 for (final MagicPermanent target : targets) {
                     game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1,true));

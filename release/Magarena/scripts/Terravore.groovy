@@ -7,7 +7,7 @@
                 final MagicPowerToughness pt) {
             final int size = game.filterCards(
                     player,
-                    MagicTargetFilterFactory.TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS).size();
+                    MagicTargetFilterFactory.LAND_CARD_FROM_ALL_GRAVEYARDS).size();
             pt.set(size, size);
         }
     }

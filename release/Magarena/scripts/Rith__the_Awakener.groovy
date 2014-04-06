@@ -23,7 +23,7 @@
                 final MagicPlayer player=event.getPlayer();
                 final MagicColor color=event.getChosenColor();
                 final Collection<MagicPermanent> targets=
-                    game.filterPermanents(player,MagicTargetFilterFactory.TARGET_PERMANENT);
+                    game.filterPermanents(player,MagicTargetFilterFactory.PERMANENT);
                 for (final MagicPermanent permanent : targets) {
                     if (permanent.hasColor(color)) {
                         game.doAction(new MagicPlayTokenAction(player,TokenCardDefinitions.get("1/1 green Saproling creature token")));

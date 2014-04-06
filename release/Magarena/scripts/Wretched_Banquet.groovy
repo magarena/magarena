@@ -17,7 +17,7 @@
                 final MagicPermanent creature ->
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
-                        MagicTargetFilterFactory.TARGET_CREATURE);
+                        MagicTargetFilterFactory.CREATURE);
                 final int power = creature.getPower();
                 boolean least = true;
                 for (final MagicPermanent permanent : targets) {

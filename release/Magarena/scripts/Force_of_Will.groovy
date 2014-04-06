@@ -7,7 +7,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherCardTargetFilter(
-                    MagicTargetFilterFactory.TARGET_BLUE_CARD_FROM_HAND, 
+                    MagicTargetFilterFactory.BLUE_CARD_FROM_HAND, 
                     source
                 ),
                 MagicTargetHint.None,

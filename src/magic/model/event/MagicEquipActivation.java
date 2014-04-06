@@ -45,7 +45,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         final MagicTargetChoice TARGET_OTHER_CREATURE_YOU_CONTROL = new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
+                MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
                 source.getEquippedCreature()
             ),
             MagicTargetHint.None,

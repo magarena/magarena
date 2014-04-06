@@ -26,7 +26,7 @@
             
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
-                    MagicTargetFilterFactory.TARGET_FOREST);
+                    MagicTargetFilterFactory.FOREST);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicUntapAction(target));
             }

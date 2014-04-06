@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
-                    MagicTargetFilterFactory.TARGET_ATTACKING_CREATURE);
+                    MagicTargetFilterFactory.ATTACKING_CREATURE);
             for (final MagicPermanent creature : targets) {
                 if (creature.hasAbility(MagicAbility.Flanking)) {
                     game.doAction(new MagicChangeTurnPTAction(creature,1,1));

@@ -19,7 +19,7 @@
                 game.doAction(new MagicDestroyAction(permanent));
                 final Collection<MagicPermanent> targets = game.filterPermanents(
                         event.getPlayer(),
-                        MagicTargetFilterFactory.TARGET_HUMAN_CREATURE);
+                        MagicTargetFilterFactory.HUMAN_CREATURE);
                 for (final MagicPermanent target : targets) {
                     final MagicDamage damage = new MagicDamage(
                         event.getSource(),

@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
             final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent target : targets) {
                 game.doAction(new MagicChangeCountersAction(
                     target,

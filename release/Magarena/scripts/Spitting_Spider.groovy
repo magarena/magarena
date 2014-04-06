@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPermanent().getController(),MagicTargetFilterFactory.TARGET_CREATURE_WITH_FLYING);
+                game.filterPermanents(event.getPermanent().getController(),MagicTargetFilterFactory.CREATURE_WITH_FLYING);
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(event.getPermanent(),target,1);
                 game.doAction(new MagicDealDamageAction(damage));

@@ -12,7 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
                     event.getPlayer(),
-                    MagicTargetFilterFactory.TARGET_ISLAND);
+                    MagicTargetFilterFactory.ISLAND);
             for (final MagicPermanent target : targets) {
                 if (target != event.getPermanent()) {
                     game.doAction(new MagicTapAction(target,true));

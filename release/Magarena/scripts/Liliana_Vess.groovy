@@ -62,7 +62,7 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicCard> targets = game.filterCards(
                 player,
-                MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS
+                MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS
             );
             for (final MagicCard card : targets) {
                 game.doAction(new MagicReanimateAction(

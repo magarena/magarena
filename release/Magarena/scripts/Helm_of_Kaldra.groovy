@@ -36,7 +36,7 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
             );
             game.doAction(action);
             final MagicPermanent kaldra = action.getPermanent();
-            for (final equip : game.filterPermanents(event.getPlayer(), MagicTargetFilterFactory.TARGET_KALDRA_EQUIPMENT)) {
+            for (final equip : game.filterPermanents(event.getPlayer(), MagicTargetFilterFactory.KALDRA_EQUIPMENT)) {
                 game.doAction(new MagicAttachAction(equip, kaldra));
             }
         }

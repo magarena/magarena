@@ -8,7 +8,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
                 new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
+                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
                     source
                 ),
                 MagicTargetHint.None,

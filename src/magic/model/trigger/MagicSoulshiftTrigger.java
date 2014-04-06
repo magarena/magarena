@@ -29,7 +29,7 @@ public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
         final MagicTargetFilter<MagicCard> targetFilter =
             new MagicCMCCardFilter(
-                MagicTargetFilterFactory.TARGET_SPIRIT_CARD_FROM_GRAVEYARD,
+                MagicTargetFilterFactory.SPIRIT_CARD_FROM_GRAVEYARD,
                 Operator.LESS_THAN_OR_EQUAL,
                 cmc
             );

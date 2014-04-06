@@ -45,7 +45,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
             for (final MagicPermanent perm : targets) {
                 game.doAction(new MagicGainControlAction(event.getPlayer(),perm,MagicStatic.UntilEOT));
                 game.doAction(new MagicUntapAction(perm));

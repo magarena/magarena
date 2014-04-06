@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final List<MagicCard> cards = game.filterCards(
                     event.getPlayer(),
-                    MagicTargetFilterFactory.TARGET_CARD_FROM_GRAVEYARD);
+                    MagicTargetFilterFactory.CARD_FROM_GRAVEYARD);
             for (final MagicCard card : cards) {
                 if (card.getName().equals("Deathpact Angel")) {
                     game.doAction(new MagicReanimateAction(

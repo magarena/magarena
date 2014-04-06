@@ -13,7 +13,7 @@
             final int amount = event.getPlayer().getDevotion(MagicColor.Green);
             final MagicSource source = event.getSource();
             final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE_WITH_FLYING);
+                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITH_FLYING);
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(source,target,amount);
                 game.doAction(new MagicDealDamageAction(damage));

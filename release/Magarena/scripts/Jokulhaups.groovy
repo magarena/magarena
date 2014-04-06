@@ -10,9 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_CREATURE);
-            targets.addAll(game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_ARTIFACT));
-            targets.addAll(game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.TARGET_LAND));
+            final Collection<MagicPermanent> targets =game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
+            targets.addAll(game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.ARTIFACT));
+            targets.addAll(game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.LAND));
             for (final MagicPermanent target : targets) {
                 game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
             }

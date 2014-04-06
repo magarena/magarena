@@ -13,8 +13,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final Collection<MagicPermanent> targets = 
-                game.filterPermanents(player,MagicTargetFilterFactory.TARGET_ENCHANTMENT);
-            targets.addAll(game.filterPermanents(player,MagicTargetFilterFactory.TARGET_ARTIFACT));
+                game.filterPermanents(player,MagicTargetFilterFactory.ENCHANTMENT);
+            targets.addAll(game.filterPermanents(player,MagicTargetFilterFactory.ARTIFACT));
             final MagicDestroyAction destroy = new MagicDestroyAction(targets);
             game.doAction(destroy);
             game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,destroy.getNumDestroyed(),true));

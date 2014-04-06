@@ -15,7 +15,7 @@
             final MagicPermanent permanent=event.getPermanent();
             final MagicTargetFilter<MagicPermanent> targetFilter =
                     new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.TARGET_CREATURE,permanent);
+                    MagicTargetFilterFactory.CREATURE,permanent);
             final Collection<MagicPermanent> targets=
                 game.filterPermanents(permanent.getController(),targetFilter);
             game.doAction(new MagicDestroyAction(targets));

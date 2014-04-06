@@ -38,7 +38,7 @@ public enum MagicCostEvent {
                 source,
                 new MagicTargetChoice(
                     new MagicOtherPermanentTargetFilter(
-                        MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL,
+                        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
                         (MagicPermanent)source
                     ),
                     "another creature to sacrifice"

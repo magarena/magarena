@@ -11,7 +11,7 @@ def event = {
     final MagicPermanent permanent ->
     final MagicTargetChoice choice = new MagicTargetChoice(
         new MagicOtherCardTargetFilter(
-            MagicTargetFilterFactory.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+            MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD,
             permanent.getCard()
         ),
         MagicTargetHint.None,

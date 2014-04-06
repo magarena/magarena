@@ -1,11 +1,11 @@
 [
     new MagicStatic(
         MagicLayer.Ability,
-        MagicTargetFilterFactory.TARGET_CREATURE
+        MagicTargetFilterFactory.CREATURE
     ) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-            final Collection<MagicPermanent> creatures = source.getGame().filterPermanents(MagicTargetFilterFactory.TARGET_CREATURE);
+            final Collection<MagicPermanent> creatures = source.getGame().filterPermanents(MagicTargetFilterFactory.CREATURE);
             int cmc = permanent.getConvertedCost();
             for (final MagicPermanent creature : creatures) {
                 if (creature.getConvertedCost() > cmc) {

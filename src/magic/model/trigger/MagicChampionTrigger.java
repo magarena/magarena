@@ -40,7 +40,7 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
         final MagicTargetFilter<MagicPermanent> targetFilter = subtypes.length == 0 ?
-            MagicTargetFilterFactory.TARGET_CREATURE_YOU_CONTROL :
+            MagicTargetFilterFactory.CREATURE_YOU_CONTROL :
             new MagicPermanentFilterImpl() {
                 public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent tribal) {
                     boolean hasSubType = false;
