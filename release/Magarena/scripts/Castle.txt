@@ -1,0 +1,10 @@
+name=Castle
+url=http://magiccards.info/query?q=%21castle
+image=http://mtgimage.com/card/castle.jpg
+value=3.189
+rarity=U
+type=Enchantment
+cost={3}{W}
+static=player
+timing=enchantment
+requires_groovy_code
