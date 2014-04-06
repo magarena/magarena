@@ -831,8 +831,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
         }
     };
     
-    MagicCardFilterImpl TREEFOLK_OR_FOREST_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Treefolk, MagicSubType.Forest);
-    
     MagicCardFilterImpl TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
@@ -861,12 +859,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD = MagicTargetFilterFactory.card(MagicTargetType.OpponentsGraveyard, MagicType.Creature);
 
     MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD = MagicTargetFilterFactory.cardOr(MagicTargetType.Graveyard, MagicType.Instant, MagicType.Sorcery);
-    
-    MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicType.Instant, MagicType.Sorcery);
-    
-    MagicCardFilterImpl ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = MagicTargetFilterFactory.cardOr(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Enchantment);
-
-    MagicCardFilterImpl ARTIFACT_OR_ENCHANTMENT_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicType.Artifact, MagicType.Enchantment);
     
     MagicCardFilterImpl TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = MagicTargetFilterFactory.cardOr(MagicTargetType.OpponentsGraveyard, MagicType.Instant, MagicType.Sorcery);
     
@@ -911,7 +903,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
                    targetType==MagicTargetType.OpponentsGraveyard;
         }
     };
-    
+   
+
     MagicCardFilterImpl LAND_CARD_FROM_YOUR_GRAVEYARD = MagicTargetFilterFactory.card(MagicTargetType.Graveyard, MagicType.Land);
 
     MagicCardFilterImpl TARGET_LAND_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
@@ -1013,26 +1006,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
             return targetType==MagicTargetType.Library;
         }
     };
-    
-    MagicCardFilterImpl TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island);
-    
-    MagicCardFilterImpl TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp);
-    
-    MagicCardFilterImpl TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Swamp);
-    
-    MagicCardFilterImpl TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Mountain);
-    
-    MagicCardFilterImpl TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Mountain);
-    
-    MagicCardFilterImpl TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Forest);
-    
-    MagicCardFilterImpl TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Forest);
-    
-    MagicCardFilterImpl TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Plains);
-
-    MagicCardFilterImpl TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Plains);
-    
-    MagicCardFilterImpl TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island);
     
     MagicPermanentFilterImpl TARGET_UNPAIRED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {

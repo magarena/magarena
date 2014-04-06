@@ -76,7 +76,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from your graveyard
         single.put("card from your graveyard", TARGET_CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your graveyard", TARGET_INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
-        single.put("artifact or enchantment card from your graveyard", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
+        single.put("artifact or enchantment card from your graveyard", cardOr(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Enchantment));
         
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", TARGET_PERMANENT_CARD_FROM_GRAVEYARD); 
@@ -104,21 +104,22 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from your library
         single.put("basic land card from your library", TARGET_BASIC_LAND_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, Mountain or Forest card from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
-        single.put("Plains or Island card from your library", TARGET_PLAINS_OR_ISLAND_CARD_FROM_LIBRARY);
-        single.put("Plains or Swamp card from your library", TARGET_PLAINS_OR_SWAMP_CARD_FROM_LIBRARY);
-        single.put("Island or Swamp card from your library", TARGET_ISLAND_OR_SWAMP_CARD_FROM_LIBRARY); 
-        single.put("Island or Mountain card from your library", TARGET_ISLAND_OR_MOUNTAIN_CARD_FROM_LIBRARY);
-        single.put("Swamp or Mountain card from your library", TARGET_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY); 
-        single.put("Swamp or Forest card from your library", TARGET_SWAMP_OR_FOREST_CARD_FROM_LIBRARY);
-        single.put("Mountain or Forest card from your library", TARGET_MOUNTAIN_OR_FOREST_CARD_FROM_LIBRARY); 
-        single.put("Mountain or Plains card from your library", TARGET_MOUNTAIN_OR_PLAINS_CARD_FROM_LIBRARY); 
-        single.put("Forest or Plains card from your library", TARGET_FOREST_OR_PLAINS_CARD_FROM_LIBRARY);
-        single.put("Forest or Island card from your library", TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY);
+        single.put("Plains or Island card from your library", cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island));
+        single.put("Plains or Swamp card from your library", cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Swamp));
+        single.put("Island or Swamp card from your library", cardOr(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Swamp));
+        single.put("Island or Mountain card from your library", cardOr(MagicTargetType.Library, MagicSubType.Island, MagicSubType.Mountain));
+        single.put("Swamp or Mountain card from your library", cardOr(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Mountain));
+        single.put("Swamp or Forest card from your library", cardOr(MagicTargetType.Library, MagicSubType.Swamp, MagicSubType.Forest));
+        single.put("Mountain or Forest card from your library", cardOr(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Forest));
+        single.put("Mountain or Plains card from your library", cardOr(MagicTargetType.Library, MagicSubType.Mountain, MagicSubType.Plains));
+        single.put("Forest or Plains card from your library", cardOr(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Plains));
+        single.put("Forest or Island card from your library", cardOr(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island));
         single.put("Plains, Island, Swamp, or Mountain card from your library", TARGET_PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
         single.put("land card with a basic land type from your library", TARGET_LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
-        single.put("artifact or enchantment card from your library", ARTIFACT_OR_ENCHANTMENT_CARD_FROM_LIBRARY);
-        single.put("instant or sorcery card from your library", INSTANT_OR_SORCERY_CARD_FROM_LIBRARY);
-        single.put("Treefolk or Forest card from your library", TREEFOLK_OR_FOREST_CARD_FROM_LIBRARY);
+        single.put("artifact or enchantment card from your library", cardOr(MagicTargetType.Library, MagicType.Artifact, MagicType.Enchantment));
+        single.put("instant or sorcery card from your library", cardOr(MagicTargetType.Library, MagicType.Instant, MagicType.Sorcery));
+        single.put("Treefolk or Forest card from your library", cardOr(MagicTargetType.Library, MagicSubType.Treefolk, MagicSubType.Forest));
+    
         
         // <color|type|subtype> permanent card from your library
         
