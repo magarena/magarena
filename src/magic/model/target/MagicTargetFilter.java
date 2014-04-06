@@ -160,8 +160,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_BLACK_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Black, Control.You);
 
-    MagicPermanentFilterImpl TARGET_RED_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Red, Control.You);
-
     MagicPermanentFilterImpl TARGET_GREEN_PERMANENT_YOU_CONTROL = Factory.permanent(MagicColor.Green, Control.You);
 
     MagicPermanentFilterImpl TARGET_PERMANENT = new MagicPermanentFilterImpl() {
@@ -193,8 +191,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicPermanentFilterImpl TARGET_SNOW_LAND_YOU_CONTROL=Factory.permanentAnd(MagicType.Land, MagicType.Snow, Control.You);
 
     MagicPermanentFilterImpl TARGET_LAND = Factory.permanent(MagicType.Land, Control.Any);
-
-    MagicPermanentFilterImpl TARGET_PLANESWALKER_YOUR_OPPONENT_CONTROLS = Factory.permanent(MagicType.Planeswalker, Control.Opp);
 
     MagicPermanentFilterImpl TARGET_LAND_OR_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -325,16 +321,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_YOU_CONTROL = Factory.permanentOr(MagicType.Creature, MagicType.Enchantment, Control.You);
 
-    MagicPermanentFilterImpl TARGET_CREATURE_OR_ENCHANTMENT_OR_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) && (
-               target.isCreature() ||
-               target.isEnchantment() ||
-               target.isLand()
-           );
-        }
-    };
-
     MagicPermanentFilterImpl TARGET_ENCHANTMENT = Factory.permanent(MagicType.Enchantment, Control.Any);
 
     MagicPermanentFilterImpl TARGET_ENCHANTMENT_YOU_CONTROL = Factory.permanent(MagicType.Enchantment, Control.You);
@@ -371,8 +357,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_MOUNTAIN_YOU_CONTROL = Factory.permanent(MagicSubType.Mountain, Control.You);
 
-    MagicPermanentFilterImpl TARGET_PLAINS_YOU_CONTROL = Factory.permanent(MagicSubType.Plains, Control.You);
-    
     MagicPermanentFilterImpl TARGET_PLAINS = Factory.permanent(MagicSubType.Plains, Control.Any);
     
     MagicPermanentFilterImpl TARGET_AURA = Factory.permanent(MagicSubType.Aura, Control.Any);
@@ -444,8 +428,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicPermanentFilterImpl TARGET_GOBLIN_PERMANENT = Factory.permanent(MagicSubType.Goblin, Control.Any);
 
-    MagicPermanentFilterImpl TARGET_GOBLIN_OR_SHAMAN_YOU_CONTROL = Factory.permanentOr(MagicSubType.Goblin, MagicSubType.Shaman, Control.You);
-    
     MagicPermanentFilterImpl TARGET_DJINN_OR_EFREET = Factory.permanentOr(MagicSubType.Djinn, MagicSubType.Efreet, Control.Any);
 
     MagicPermanentFilterImpl TARGET_SQUIRREL_CREATURE = Factory.creature(MagicSubType.Squirrel, Control.Any);
@@ -454,8 +436,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
 
     MagicPermanentFilterImpl TARGET_MYR_YOU_CONTROL = Factory.permanent(MagicSubType.Myr, Control.You);
     
-    MagicPermanentFilterImpl TARGET_TREEFOLK_OR_WARRIOR_YOU_CONTROL = Factory.permanentOr(MagicSubType.Treefolk, MagicSubType.Warrior, Control.Any);
-
     MagicPermanentFilterImpl TARGET_LEGENDARY_SAMURAI_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
@@ -854,8 +834,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicCardFilterImpl TREEFOLK_OR_FOREST_CARD_FROM_LIBRARY = Factory.cardOr(MagicTargetType.Library, MagicSubType.Treefolk, MagicSubType.Forest);
     
-    MagicCardFilterImpl TARGET_DRAGON_PERMANENT_CARD_FROM_GRAVEYARD = Factory.permanentCard(MagicTargetType.Graveyard, MagicSubType.Dragon);
-    
     MagicCardFilterImpl TARGET_PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
@@ -1059,10 +1037,6 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     
     MagicCardFilterImpl TARGET_FOREST_OR_ISLAND_CARD_FROM_LIBRARY = Factory.cardOr(MagicTargetType.Library, MagicSubType.Forest, MagicSubType.Island);
     
-    MagicCardFilterImpl TARGET_FOREST_CARD_FROM_LIBRARY = Factory.card(MagicTargetType.Library, MagicSubType.Forest);
-
-    MagicCardFilterImpl TARGET_LAND_CARD_FROM_HAND = Factory.card(MagicTargetType.Hand, MagicType.Land);
-
     MagicPermanentFilterImpl TARGET_UNPAIRED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
