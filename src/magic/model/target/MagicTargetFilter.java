@@ -963,6 +963,8 @@ public interface MagicTargetFilter<T extends MagicTarget> {
     MagicCardFilterImpl TARGET_ZOMBIE_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Zombie);
 
     MagicCardFilterImpl TARGET_ZOMBIE_CREATURE_CARD_FROM_GRAVEYARD = Factory.creatureCard(MagicTargetType.Graveyard, MagicSubType.Zombie);
+
+    MagicCardFilterImpl TARGET_SPIRIT_CARD_FROM_GRAVEYARD = Factory.card(MagicTargetType.Graveyard, MagicSubType.Spirit);
     
     MagicCardFilterImpl TARGET_HUMAN_CREATURE_CARD_FROM_GRAVEYARD = Factory.creatureCard(MagicTargetType.Graveyard, MagicSubType.Human);
     
