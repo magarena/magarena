@@ -555,6 +555,7 @@ check_unused_filter:
 	grep "Impl [A-Z]\+[^ =]*" src/magic/model/target/MagicTargetFilterFactory.java -o | sed 's/Impl //' | sort | uniq > declared-filters
 	for i in `cat declared-filters`; do grep $$i -r src release/Magarena/scripts | grep -v "public static final" | grep -o $$i; done | sort | uniq > used-filters
 	diff declared-filters used-filters | ${NO_OUTPUT}
+	rm declared-filters used-filters
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
