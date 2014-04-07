@@ -1,0 +1,12 @@
+ name=Phenax, God of Deception
+url=http://magiccards.info/query?q=%21phenax%2C%20god%20of%20deception
+image=http://mtgimage.com/card/phenax%2C%20god%20of%20deception.jpg
+value=3.582
+rarity=M
+type=Legendary,Enchantment,Creature
+subtype=God
+cost={3}{U}{B}
+pt=4/7
+ability=indestructible
+timing=main
+requires_groovy_code
