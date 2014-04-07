@@ -1,0 +1,9 @@
+ name=Breathstealer's Crypt
+url=http://magiccards.info/query?q=%21breathstealer's%20crypt
+image=http://mtgimage.com/card/breathstealer's%20crypt.jpg
+value=3.324
+rarity=R
+type=Enchantment
+cost={2}{U}{B}
+timing=enchantment
+requires_groovy_code
