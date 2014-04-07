@@ -13,38 +13,20 @@ public class MagicComesIntoPlayWithCounterTrigger extends MagicWhenComesIntoPlay
     private final MagicCounterType counterType;
     private final int amount;
 
-    public MagicComesIntoPlayWithCounterTrigger(
-            final MagicCounterType counterType,
-            final int amount) {
+    public MagicComesIntoPlayWithCounterTrigger(final MagicCounterType counterType, final int amount) {
+        super(MagicTrigger.REPLACEMENT);
         this.counterType = counterType;
         this.amount = amount;
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {
-        return new MagicEvent(
-            permanent,
-            this,
-            amount > 1 ?
-                "SN enters the battlefield with " + amount + " " + counterType.getName() + " counters on it." :
-                "SN enters the battlefield with a " + counterType.getName() + " counter on it."
-        );
-    }
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         game.doAction(new MagicChangeCountersAction(
-            event.getPermanent(),
+            permanent,
             counterType,
             amount,
             false
         ));
-    }
-    @Override
-    public boolean usesStack() {
-        return false;
+        return MagicEvent.NONE;
     }
 }
-

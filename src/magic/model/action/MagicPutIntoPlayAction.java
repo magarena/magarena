@@ -30,21 +30,28 @@ public abstract class MagicPutIntoPlayAction extends MagicAction {
             enchantedPermanent.addAura(permanent);
             permanent.setEnchantedPermanent(enchantedPermanent);
         }
+        
+        //execute comes into play with
+        for (final MagicTrigger<MagicPayedCost> trigger : permanent.getComeIntoPlayTriggers()) {
+            if (trigger.getPriority() == MagicTrigger.REPLACEMENT) {
+                game.executeTrigger(trigger,permanent,permanent,payedCost);
+            }
+        }
 
         game.addStatics(permanent);
         game.update();
 
-        final MagicPlayer controller = permanent.getController();
-
         //execute come into play triggers
         for (final MagicTrigger<MagicPayedCost> trigger : permanent.getComeIntoPlayTriggers()) {
-            game.executeTrigger(trigger,permanent,permanent,payedCost);
+            if (trigger.getPriority() > MagicTrigger.REPLACEMENT) {
+                game.executeTrigger(trigger,permanent,permanent,payedCost);
+            }
         }
 
         //execute other come into player triggers
         game.executeTrigger(MagicTriggerType.WhenOtherComesIntoPlay,permanent);
 
-        setScore(controller,permanent.getScore()+permanent.getStaticScore()+score);
+        setScore(permanent.getController(),permanent.getScore()+permanent.getStaticScore()+score);
 
         game.checkUniquenessRule(permanent);
         game.setStateCheckRequired();

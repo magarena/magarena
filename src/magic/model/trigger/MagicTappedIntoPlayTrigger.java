@@ -11,7 +11,9 @@ public class MagicTappedIntoPlayTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private static final MagicTappedIntoPlayTrigger INSTANCE = new MagicTappedIntoPlayTrigger();
 
-    private MagicTappedIntoPlayTrigger() {}
+    private MagicTappedIntoPlayTrigger() {
+        super(MagicTrigger.REPLACEMENT);
+    }
 
     public static MagicTappedIntoPlayTrigger create() {
         return INSTANCE;
