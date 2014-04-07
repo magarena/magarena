@@ -1,8 +1,8 @@
- name=Eidolon of Countless Battles
+name=Eidolon of Countless Battles
 url=http://magiccards.info/query?q=%21eidolon%20of%20countless%20battles
 image=http://mtgimage.com/card/eidolon%20of%20countless%20battles.jpg
 value=3.611
-rarity=M
+rarity=R
 type=Enchantment,Creature
 subtype=Spirit
 cost={1}{W}{W}
