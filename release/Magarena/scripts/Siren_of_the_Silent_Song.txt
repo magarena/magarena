@@ -1,4 +1,4 @@
- name=Siren of the Silent Song
+name=Siren of the Silent Song
 url=http://magiccards.info/query?q=%21siren%20of%20the%20silent%20song
 image=http://mtgimage.com/card/siren%20of%20the%20silent%20song.jpg
 value=3.854
@@ -7,5 +7,6 @@ type=Creature
 subtype=Zombie,Siren
 cost={1}{U}{B}
 pt=2/1
-ability=flying;Whenever SN becomes untapped, an opponent discards a card.; Whenever SN becomes untapped, an opponent puts the top card of his or her library into his or her graveyard.
+ability=flying
 timing=main
+requires_groovy_code
