@@ -7,7 +7,7 @@
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicDestroyTargetPicker.Destroy,
                 this,
-                "Destroy target nonblack creature\$. Its owner gains 4 life."
+                "Destroy target creature\$. Its owner gains 4 life."
             );
         }
         @Override
