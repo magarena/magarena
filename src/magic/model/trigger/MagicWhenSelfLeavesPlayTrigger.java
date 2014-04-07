@@ -11,6 +11,7 @@ import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicRuleEventAction;
 import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.MagicReturnExiledUntilThisLeavesPlayAction;
 
 public abstract class MagicWhenSelfLeavesPlayTrigger extends MagicWhenLeavesPlayTrigger {
     public MagicWhenSelfLeavesPlayTrigger(final int priority) {
@@ -40,6 +41,14 @@ public abstract class MagicWhenSelfLeavesPlayTrigger extends MagicWhenLeavesPlay
             if (act.getToLocation() == MagicLocationType.Graveyard) {
                 act.setToLocation(MagicLocationType.Exile);
             }
+            return MagicEvent.NONE;
+        }
+    };
+    
+    public static final MagicWhenSelfLeavesPlayTrigger ExileUntilLeaves = new MagicWhenSelfLeavesPlayTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(act.getPermanent(),MagicLocationType.Play));
             return MagicEvent.NONE;
         }
     };
