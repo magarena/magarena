@@ -267,8 +267,6 @@ public class MagicTargetFilterFactory {
     };
     
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Opp);
-    
-    public static final MagicPermanentFilterImpl CREATURE_1_1=new MagicPTTargetFilter(MagicTargetFilterFactory.CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1);
 
     public static final MagicPermanentFilterImpl NONCREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1132,7 +1130,7 @@ public class MagicTargetFilterFactory {
         single.put("creature an opponent controls", CREATURE_YOUR_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
-        single.put("1/1 creature", CREATURE_1_1);
+        single.put("1/1 creature", new MagicPTTargetFilter(MagicTargetFilterFactory.CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
         single.put("nonblack creature", NONBLACK_CREATURE);
         single.put("nonartifact creature", NONARTIFACT_CREATURE);
         single.put("non-Demon creature", NON_DEMON_CREATURE);
