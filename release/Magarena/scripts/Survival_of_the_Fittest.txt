@@ -1,0 +1,9 @@
+name=Survival of the Fittest
+url=http://www.magiccards.info/query?q=%21survival%20of%20the%20fittest
+image=http://mtgimage.com/card/survival%20of%20the%20fittest.jpg
+value=4.644
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability={G}, Discard a creature card: Search your library for a creature card, reveal that card, and put it into your hand. Then shuffle your library.
+timing=enchantment

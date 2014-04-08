@@ -1083,7 +1083,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SearchLibraryToHand(
-        "search your library for (?<choice>[^\\.]*), reveal it, and put it into your hand. (If you do,|Then) shuffle your library\\.",
+        "search your library for (?<choice>[^\\.]*), reveal (it|that card), and put it into your hand. (If you do,|Then) shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
