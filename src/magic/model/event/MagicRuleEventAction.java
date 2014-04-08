@@ -83,7 +83,7 @@ import java.util.Collection;
 import java.util.Set;
 
 public enum MagicRuleEventAction {
-    Destroy(
+    DestroyChosen(
         "destroy (?<choice>[^\\.]*)\\.", 
         MagicTargetHint.Negative,
         MagicDestroyTargetPicker.Destroy,
@@ -100,7 +100,24 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    DestroyNoRegen(
+    DestroyGroup(
+        "destroy all (?<group>[^\\.]*)\\.", 
+        MagicTiming.Removal,
+        "Destroy"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    game.doAction(new MagicDestroyAction(targets));
+                }
+            };
+        }
+    },
+    DestroyNoRegenChosen(
         "destroy (?<choice>[^\\.]*)\\. it can't be regenerated\\.", 
         MagicTargetHint.Negative, 
         MagicDestroyTargetPicker.DestroyNoRegen,
@@ -118,6 +135,26 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    DestroyNoRegenGroup(
+        "destroy all (?<group>[^\\.]*)\\. They can't be regenerated\\.", 
+        MagicTiming.Removal,
+        "Destroy"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),filter);
+                    for (final MagicPermanent target : targets) {
+                        game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
+                    }
+                    game.doAction(new MagicDestroyAction(targets));
+                }
+            };
+        }
+    },
     CounterUnless(
         "counter (?<choice>[^\\.]*) unless its controller pays (?<cost>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
