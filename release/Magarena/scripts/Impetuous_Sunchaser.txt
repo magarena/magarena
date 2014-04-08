@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{R}
 pt=1/1
-ability=flying;haste;attacks each turn if able
+ability=flying;haste;SN attacks each turn if able.
 timing=fmain

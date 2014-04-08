@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 given_pt=+2/+2
-given_ability=can't attack
+given_ability=SN can't attack.
 enchant=default,creature
 timing=aura

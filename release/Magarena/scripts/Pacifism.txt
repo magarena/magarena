@@ -7,6 +7,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-given_ability=can't attack or block
+given_ability=SN can't attack or block.
 timing=tapping
 enchant=can't attack or block,neg creature

@@ -5,5 +5,5 @@ value=4.167
 rarity=U
 type=Enchantment
 cost={3}{W}
-ability=lord black creatures have can't attack or block
+ability=lord black creatures have "SN can't attack or block."
 timing=enchantment

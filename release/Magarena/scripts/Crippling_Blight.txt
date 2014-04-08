@@ -8,6 +8,6 @@ type=Enchantment
 subtype=Aura
 cost={B}
 given_pt=-1/-1
-given_ability=can't block
+given_ability=SN can't block.
 timing=removal
 enchant=weaken -1/-1,neg creature

@@ -7,5 +7,5 @@ type=Creature
 subtype=Human
 cost={2}{U}{U}
 pt=3/3
-ability=can't block creatures without flying;flying
+ability=SN can block only creatures with flying.;flying
 timing=main

@@ -7,5 +7,5 @@ type=Creature
 subtype=Dauthi,Soldier
 cost={B}{B}
 pt=2/2
-ability=shadow;attacks each turn if able
+ability=shadow;SN attacks each turn if able.
 timing=main

@@ -5,5 +5,5 @@ value=3.879
 rarity=U
 type=Enchantment
 cost={2}{R}
-ability=lord white creatures have can't block;lord blue creatures have can't block
+ability=lord white creatures have "SN can't block.";lord blue creatures have "SN can't block."
 timing=enchantment

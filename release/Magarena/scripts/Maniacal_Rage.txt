@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 given_pt=2/2
-given_ability=can't block
+given_ability=SN can't block.
 timing=aura
 enchant=pump,pos creature

@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-given_ability=attacks each turn if able
+given_ability=SN attacks each turn if able.
 timing=aura
 enchant=must attack,neg creature

@@ -7,5 +7,5 @@ type=Creature
 subtype=Giant
 cost={2}{R}
 pt=4/1
-ability=can't block
+ability=SN can't block.
 timing=main

@@ -8,5 +8,5 @@ subtype=Equipment
 cost={1}
 equip={3}
 given_pt=2/2
-given_ability=can't block
+given_ability=SN can't block.
 timing=main

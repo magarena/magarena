@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={1}{U}{U}
 pt=2/2
-ability=flying;can't block creatures without flying;undying
+ability=flying;SN can block only creatures with flying.;undying
 timing=main

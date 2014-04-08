@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-given_ability=can't be blocked except by creatures with flying or reach
+given_ability=SN can't be blocked except by creatures with flying or reach.
 timing=aura
 enchant=shroud,pos creature
 requires_groovy_code

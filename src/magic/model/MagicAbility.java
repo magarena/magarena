@@ -99,14 +99,14 @@ import java.util.regex.Pattern;
 
 public enum MagicAbility {
   
-    AttacksEachTurnIfAble("attacks each turn if able",-10),
-    CannotBlock("can't block",-50),
-    CannotAttack("can't attack",-50),
-    CannotAttackOrBlock("can't attack or block",-200),
-    CannotBlockWithoutFlying("can't block creatures without flying",-40),
-    CannotBeBlockedByFlying("can't be blocked by creatures with flying",20),
-    CannotBeBlockedExceptWithFlying("can't be blocked except by creatures with flying",30),
-    CannotBeBlockedExceptWithFlyingOrReach("can't be blocked except by creatures with flying or reach",25),
+    AttacksEachTurnIfAble("SN attacks each turn if able.",-10),
+    CannotBlock("SN can't block.",-50),
+    CannotAttack("SN can't attack.",-50),
+    CannotAttackOrBlock("SN can't attack or block.",-200),
+    CannotBlockWithoutFlying("SN can block only creatures with flying.",-40),
+    CannotBeBlockedByFlying("SN can't be blocked by creatures with flying.",20),
+    CannotBeBlockedExceptWithFlying("SN can't be blocked except by creatures with flying.",30),
+    CannotBeBlockedExceptWithFlyingOrReach("SN can't be blocked except by creatures with flying or reach.",25),
     CannotBeBlockedExceptBySliver("can't be blocked except by slivers",90),
     CannotBeBlockedExceptByWalls("can't be blocked except by walls",80),
     CannotBeBlockedByWalls("can't be blocked by walls",10),

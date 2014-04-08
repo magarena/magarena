@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Ogre,Warrior
 cost={4}{R}{G}
 pt=6/6
-ability=vigilance;reach;attacks each turn if able
+ability=vigilance;reach;SN attacks each turn if able.
 timing=main
 requires_groovy_code

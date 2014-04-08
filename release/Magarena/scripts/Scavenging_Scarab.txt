@@ -2,7 +2,7 @@ name=Scavenging Scarab
 url=http://magiccards.info/query?q=%21scavenging%20scarab
 image=http://mtgimage.com/card/scavenging%20scarab.jpg
 value=1.036
-ability=can't block
+ability=SN can't block.
 rarity=C
 type=Creature
 subtype=Insect

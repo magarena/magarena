@@ -5,6 +5,6 @@ value=2.355
 rarity=C
 type=Sorcery
 cost={R}
-effect=Target creature without flying gains can't block until end of turn.
+effect=Target creature without flying gains "SN can't block." until end of turn.
 ability=storm
 timing=main

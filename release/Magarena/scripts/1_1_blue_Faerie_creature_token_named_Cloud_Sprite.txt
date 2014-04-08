@@ -6,5 +6,5 @@ type=Creature
 subtype=Faerie
 color=u
 cost={0}
-ability=flying;can't block creatures without flying
+ability=flying;SN can block only creatures with flying.
 pt=1/1

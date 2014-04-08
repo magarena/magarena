@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={R}
 given_pt=2/0
-given_ability=can't be blocked by creatures with flying
+given_ability=SN can't be blocked by creatures with flying.
 timing=aura
 enchant=pump,pos creature

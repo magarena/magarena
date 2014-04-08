@@ -6,6 +6,6 @@ rarity=R
 type=Artifact,Creature
 subtype=Juggernaut
 cost={5}
-ability=indestructible;attacks each turn if able
+ability=indestructible;SN attacks each turn if able.
 timing=main
 requires_groovy_code

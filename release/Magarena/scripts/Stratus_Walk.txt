@@ -8,6 +8,6 @@ subtype=Aura
 cost={1}{U}
 ability=When SN enters the battlefield, draw a card.
 given_ability=flying;\
-        can't block creatures without flying
+        SN can block only creatures with flying.
 timing=aura
 enchant=flying,creature

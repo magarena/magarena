@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire,Scout
 cost={1}{B}
 pt=2/1
-ability=flying;can't block
+ability=flying;SN can't block.
 timing=main

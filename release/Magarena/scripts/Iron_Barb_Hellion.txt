@@ -2,7 +2,7 @@ name=Iron-Barb Hellion
 url=http://magiccards.info/query?q=%21iron%2Dbarb%20hellion
 image=http://mtgimage.com/card/iron%2Dbarb%20hellion.jpg
 value=1.871
-ability=haste;can't block
+ability=haste;SN can't block.
 rarity=U
 type=Creature
 subtype=Hellion,Beast

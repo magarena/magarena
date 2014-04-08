@@ -2,7 +2,7 @@ name=Cloud Sprite
 url=http://magiccards.info/query?q=%21cloud%20sprite
 image=http://mtgimage.com/card/cloud%20sprite.jpg
 value=2.381
-ability=flying;can't block creatures without flying
+ability=flying;SN can block only creatures with flying.
 rarity=C
 type=Creature
 subtype=Faerie

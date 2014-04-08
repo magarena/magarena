@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={6}
 pt=5/5
-ability=infect;attacks each turn if able
+ability=infect;SN attacks each turn if able.
 timing=main

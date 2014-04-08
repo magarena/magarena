@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Scout
 cost={G}
 pt=1/1
-ability=can't be blocked except by creatures with flying or reach
+ability=SN can't be blocked except by creatures with flying or reach.
 timing=main

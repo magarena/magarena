@@ -6,6 +6,6 @@ rarity=C
 type=Artifact,Creature
 subtype=Bird
 cost={3}
-ability=flying;can't block
+ability=flying;SN can't block.
 pt=2/1
 timing=main

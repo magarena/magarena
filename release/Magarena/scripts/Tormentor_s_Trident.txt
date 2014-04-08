@@ -8,5 +8,5 @@ subtype=Equipment
 cost={2}
 equip={3}
 given_pt=3/0
-given_ability=attacks each turn if able
+given_ability=SN attacks each turn if able.
 timing=main
