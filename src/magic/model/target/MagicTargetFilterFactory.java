@@ -927,7 +927,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl BLUE_CARD_FROM_HAND = MagicTargetFilterFactory.card(MagicTargetType.Hand, MagicColor.Blue);
 
-      public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = MagicTargetFilterFactory.card(MagicTargetType.Hand, MagicType.Creature);
+    public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = MagicTargetFilterFactory.card(MagicTargetType.Hand, MagicType.Creature);
 
     public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_HAND = MagicTargetFilterFactory.creatureCardOr(MagicTargetType.Hand, MagicColor.Blue, MagicColor.Red);
 

@@ -80,6 +80,16 @@ public enum MagicCostEvent {
             return MagicDiscardEvent.Random(source);
         }
     },
+    DiscardChosen() {
+        public boolean accept(final String cost) {
+            return cost.startsWith("Discard a") &&
+                   toEvent(cost, MagicEvent.NO_SOURCE).isValid();
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            final String chosen = cost.replace("Discard ", "") + " from your hand";
+            return new MagicDiscardChosenEvent(source, new MagicTargetChoice(chosen));
+        }
+    },
     ExileSelf() {
         public boolean accept(final String cost) {
             return cost.equals("{E}");
