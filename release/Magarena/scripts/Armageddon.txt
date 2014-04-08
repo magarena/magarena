@@ -6,5 +6,5 @@ removal=2
 rarity=R
 type=Sorcery
 cost={3}{W}
+effect=Destroy all lands.
 timing=removal
-requires_groovy_code

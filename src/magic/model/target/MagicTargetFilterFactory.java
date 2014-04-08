@@ -1033,6 +1033,7 @@ public class MagicTargetFilterFactory {
         multiple.put("all creatures", CREATURE);
         multiple.put("attacking creatures", ATTACKING_CREATURE);
         multiple.put("blocking creatures", BLOCKING_CREATURE);
+        multiple.put("tapped creatures", TAPPED_CREATURE);
 
         // <color|type|subtype> you control
         multiple.put("lands you control", LAND_YOU_CONTROL);

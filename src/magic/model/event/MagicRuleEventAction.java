@@ -83,23 +83,6 @@ import java.util.Collection;
 import java.util.Set;
 
 public enum MagicRuleEventAction {
-    DestroyChosen(
-        "destroy (?<choice>[^\\.]*)\\.", 
-        MagicTargetHint.Negative,
-        MagicDestroyTargetPicker.Destroy,
-        MagicTiming.Removal,
-        "Destroy",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicDestroyAction(creature));
-                    }
-                });
-            }
-        }
-    ),
     DestroyGroup(
         "destroy all (?<group>[^\\.]*)\\.", 
         MagicTiming.Removal,
@@ -117,10 +100,10 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DestroyNoRegenChosen(
-        "destroy (?<choice>[^\\.]*)\\. it can't be regenerated\\.", 
-        MagicTargetHint.Negative, 
-        MagicDestroyTargetPicker.DestroyNoRegen,
+    DestroyChosen(
+        "destroy (?<choice>[^\\.]*)\\.", 
+        MagicTargetHint.Negative,
+        MagicDestroyTargetPicker.Destroy,
         MagicTiming.Removal,
         "Destroy",
         new MagicEventAction() {
@@ -128,7 +111,6 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
                         game.doAction(new MagicDestroyAction(creature));
                     }
                 });
@@ -155,6 +137,24 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DestroyNoRegenChosen(
+        "destroy (?<choice>[^\\.]*)\\. it can't be regenerated\\.", 
+        MagicTargetHint.Negative, 
+        MagicDestroyTargetPicker.DestroyNoRegen,
+        MagicTiming.Removal,
+        "Destroy",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
+                        game.doAction(new MagicDestroyAction(creature));
+                    }
+                });
+            }
+        }
+    ),
     CounterUnless(
         "counter (?<choice>[^\\.]*) unless its controller pays (?<cost>[^\\.]*)\\.", 
         MagicTargetHint.Negative, 
