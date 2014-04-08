@@ -12,6 +12,9 @@ import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
 
 public class MagicSoulbondEvent extends MagicEvent {
+    
+    private static final MagicTargetChoice AN_UNPAIRED_SOULBOND_CREATURE = 
+        new MagicTargetChoice("an unpaired Soulbond creature");
 
     public MagicSoulbondEvent(final MagicPermanent permanent,final boolean hasSoulbond) {
         super(
@@ -26,7 +29,7 @@ public class MagicSoulbondEvent extends MagicEvent {
                         MagicTargetHint.None,
                         "a creature other than " + permanent
                     ):
-                    MagicTargetChoice.AN_UNPAIRED_SOULBOND_CREATURE
+                    AN_UNPAIRED_SOULBOND_CREATURE
             ),
             EVENT_ACTION,
             hasSoulbond ?

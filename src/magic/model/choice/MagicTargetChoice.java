@@ -391,9 +391,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice LAND_CARD_FROM_HAND = 
         new MagicTargetChoice("a land card from your hand");
 
-    public static final MagicTargetChoice AN_UNPAIRED_SOULBOND_CREATURE = 
-        new MagicTargetChoice("an unpaired Soulbond creature");
-
     public static final MagicTargetChoice CREATURE_TOKEN_YOU_CONTROL = 
         new MagicTargetChoice("a creature token you control");
 
