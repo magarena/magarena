@@ -3,36 +3,30 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
             card.reveal();
-            return card.hasType(MagicType.Creature) ? new MagicEvent(
-                card,
-                card.getOwner(),
-                new MagicMayChoice(),
-                1,
-                this,
-                "PN draws "+card.getName()+". He or she discards it unless he or she pays 3 life\$."
-            ): new MagicEvent(
-                card,
-                card.getOwner(),
-                0,
-                this,
-                "PN draws "+card.getName()+"."
-            );
+            return card.hasType(MagicType.Creature) ? 
+                new MagicEvent(
+                    card,
+                    new MagicMayChoice("Pay 3 life? If not, discard " + card),
+                    this,
+                    "PN draws SN. PN may\$ pay 3 life. If PN doesn't, discard SN."
+                ): new MagicEvent(
+                    card,
+                    MagicEvent.NO_ACTION,
+                    "PN draws SN."
+                );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getRefInt() == 1) {
-                if (event.isYes()) { 
-                    game.addEvent(new MagicPayLifeEvent(event.getSource(),event.getPlayer(),3));
-                } else {
-                    game.doAction(new MagicRemoveCardAction(event.getCard(),MagicLocationType.OwnersHand));
-                    if (event.getPlayer() == event.getSource().getController()) {
-                        game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.OwnersHand,MagicLocationType.Graveyard));
-                    } else {
-                        game.doAction(new MagicMoveCardAction(event.getCard(),MagicLocationType.OwnersHand,MagicLocationType.OpponentsGraveyard));
-                    }
-                }
+            if (event.isYes()) {
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(), -3));
+            } else {
+                game.doAction(new MagicDiscardCardAction(event.getPlayer(), event.getCard()));
             }
+        }
+        @Override
+        public boolean usesStack() {
+            return false;
         }
     }
 ]
