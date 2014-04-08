@@ -589,6 +589,33 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PumpGainGroup(
+            "(?<group>[^\\.]*) get (?<pt>[0-9+]+/[0-9+]+) and gain (?<ability>.+) until end of turn\\.", 
+            MagicTiming.Pump, 
+            "Pump"
+        ) {
+            @Override
+            public MagicEventAction getAction(final Matcher matcher) {
+                final String[] pt = matcher.group("pt").replace("+","").split("/");
+                final int power = Integer.parseInt(pt[0]);
+                final int toughness = Integer.parseInt(pt[1]);
+                final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+                final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(matcher.group("group"));
+                return new MagicEventAction() {
+                    @Override
+                    public void executeEvent(final MagicGame game, final MagicEvent event) {
+                        final Collection<MagicPermanent> targets = game.filterPermanents(
+                            event.getPlayer(),
+                            filter
+                        );
+                        for (final MagicPermanent creature : targets) {
+                            game.doAction(new MagicChangeTurnPTAction(creature,power,toughness));
+                            game.doAction(new MagicGainAbilityAction(creature,abilityList));
+                        }
+                    }
+                };
+            }
+        },
     PumpGainSelf(
         "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn\\.", 
         MagicTiming.Pump
