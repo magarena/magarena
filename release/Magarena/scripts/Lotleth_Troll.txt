@@ -1,0 +1,12 @@
+name=Lotleth Troll
+url=http://magiccards.info/query?q=%21lotleth%20troll
+image=http://mtgimage.com/card/lotleth%20troll.jpg
+value=3.742
+rarity=R
+type=Creature
+subtype=Zombie,Troll
+cost={B}{G}
+pt=2/1
+ability=Discard a creature card: Put a +1/+1 counter on SN.;\
+        {B}: Regenerate SN.
+timing=main
