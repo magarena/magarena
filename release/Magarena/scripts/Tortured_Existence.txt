@@ -1,0 +1,9 @@
+name=Tortured Existence
+url=http://www.magiccards.info/query?q=%21tortured%20existence
+image=http://mtgimage.com/card/tortured%20existence.jpg
+value=4.163
+rarity=C
+type=Enchantment
+cost={B}
+ability={B}, Discard a creature card: Return target creature card from your graveyard to your hand.
+timing=enchantment

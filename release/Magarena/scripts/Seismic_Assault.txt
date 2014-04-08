@@ -1,0 +1,9 @@
+name=Seismic Assault
+url=http://www.magiccards.info/query?q=%21seismic%20assault
+image=http://mtgimage.com/card/seismic%20assault.jpg
+value=4.445
+rarity=R
+type=Enchantment
+cost={R}{R}{R}
+ability=Discard a land card: SN deals 2 damage to target creature or player.
+timing=enchantment

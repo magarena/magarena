@@ -1,0 +1,11 @@
+name=Simian Brawler
+url=http://www.magiccards.info/query?q=%21simian%20brawler
+image=http://mtgimage.com/card/simian%20brawler.jpg
+value=1.639
+rarity=C
+type=Creature
+subtype=Ape,Warrior
+cost={3}{G}
+pt=3/3
+ability=Discard a land card: SN gets +1/+1 until end of turn.
+timing=main

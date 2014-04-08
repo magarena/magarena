@@ -1,0 +1,11 @@
+name=Stampede Driver
+url=http://www.magiccards.info/query?q=%21stampede%20driver
+image=http://mtgimage.com/card/stampede%20driver.jpg
+value=3.724
+rarity=U
+type=Creature
+subtype=Human,Spellshaper
+cost={G}
+pt=1/1
+ability={1}{G}, {T}, Discard a card: Creatures you control get +1/+1 and gain trample until end of turn.
+timing=main

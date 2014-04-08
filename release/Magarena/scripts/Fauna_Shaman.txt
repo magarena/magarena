@@ -1,0 +1,11 @@
+name=Fauna Shaman
+url=http://www.magiccards.info/query?q=%21fauna%20shaman
+image=http://mtgimage.com/card/fauna%20shaman.jpg
+value=4.451
+rarity=R
+type=Creature
+subtype=Elf,Shaman
+cost={1}{G}
+pt=2/2
+ability={G}, {T}, Discard a creature card: Search your library for a creature card, reveal it, and put it into your hand. Then shuffle your library.
+timing=main
