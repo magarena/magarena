@@ -1,0 +1,11 @@
+name=Wirewood Symbiote
+url=http://www.magiccards.info/query?q=%21wirewood%20symbiote
+image=http://mtgimage.com/card/wirewood%20symbiote.jpg
+value=4.138
+rarity=U
+type=Creature
+subtype=Insect
+cost={G}
+pt=1/1
+ability=Return an Elf you control to its owner's hand, {Once}: Untap target creature.
+timing=main
