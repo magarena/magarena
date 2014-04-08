@@ -1,0 +1,11 @@
+name=Vampire Hounds
+url=http://magiccards.info/query?q=%21vampire%20hounds
+image=http://mtgimage.com/card/vampire%20hounds.jpg
+value=3.742
+rarity=C
+type=Creature
+subtype=Vampire,Hound
+cost={2}{B}
+pt=2/2
+ability=Discard a creature card: SN gets +2/+2 until end of turn.
+timing=main
