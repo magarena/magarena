@@ -43,7 +43,7 @@ public class ModeChoicePanel extends JPanel implements ActionListener {
         add(buttonPanel,BorderLayout.CENTER);
 
         for (int index=0; index < modes.size(); index++) {
-            final JButton button=new JButton(Integer.toString(modes.get(index) + 1));
+            final JButton button=new JButton(Integer.toString(modes.get(index)));
             button.setPreferredSize(BUTTON_DIMENSION);
             button.setBorder(BorderFactory.createLineBorder(FontsAndBorders.GRAY4));
             button.setActionCommand(Integer.toString(index));

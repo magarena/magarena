@@ -55,9 +55,9 @@ def UntapTrigger = new MagicWhenComesIntoPlayTrigger() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isMode(0)) {
+            if (event.isMode(1)) {
                 game.executeTrigger(UntapTrigger, event.getPermanent(), event.getSource(), event.getRefPayedCost());
-            } else if (event.isMode(1)) {
+            } else if (event.isMode(2)) {
                 game.executeTrigger(TapTrigger, event.getPermanent(), event.getSource(), event.getRefPayedCost());
             }
         }

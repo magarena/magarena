@@ -53,16 +53,16 @@ public class MagicOrChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object[]> choiceResultsList=new ArrayList<Object[]>();
-        for (int index=0; index < choices.length; index++) {
-            if (choices[index].hasOptions(game,player,source,true)) {
+        for (int i = 0; i < choices.length; i++) {
+            if (choices[i].hasOptions(game,player,source,true)) {
                 choiceResultsList.add(new Object[] {
-                    index
+                    i + 1
                 });
             }
         }
        
         if (choiceResultsList.isEmpty()) {
-            choiceResultsList.add(new Object[]{-1});
+            choiceResultsList.add(new Object[]{0});
         }
 
         return choiceResultsList;
@@ -80,12 +80,12 @@ public class MagicOrChoice extends MagicChoice {
         final List<Integer> availableModes = new ArrayList<Integer>();
         for (int i = 0; i < choices.length; i++) {
             if (choices[i].hasOptions(game,player,source,hints)) {
-                availableModes.add(i);
+                availableModes.add(i + 1);
             }
         }
 
         if (availableModes.isEmpty()) {
-            return new Object[]{-1};
+            return new Object[]{0};
         }
 
         controller.disableActionButton(false);
