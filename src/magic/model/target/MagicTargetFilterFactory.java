@@ -1022,6 +1022,8 @@ public class MagicTargetFilterFactory {
         multiple.put("untapped creatures you control", UNTAPPED_CREATURE_YOU_CONTROL);
 
         // <color|type|subtype> creatures your opponents control
+        multiple.put("creatures your opponents control", CREATURE_YOUR_OPPONENT_CONTROLS);
+        multiple.put("creatures you don't control", CREATURE_YOUR_OPPONENT_CONTROLS);
        
         // <color|type|subtype> creatures
         multiple.put("creatures", CREATURE);
@@ -1045,18 +1047,24 @@ public class MagicTargetFilterFactory {
         multiple.put("each wolf you control", WOLF_YOU_CONTROL);
         
         // <color|type|subtype> your opponents control
-        multiple.put("creatures your opponents control", CREATURE_YOUR_OPPONENT_CONTROLS);
         multiple.put("creatures with flying your opponents control", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         
         // <color|type|subtype> 
         multiple.put("lands",LAND);
         multiple.put("nonbasic lands", NONBASIC_LAND);
         multiple.put("islands", ISLAND);
+        multiple.put("forests", FOREST);
         multiple.put("nonland permanents", NONLAND_PERMANENT);
         multiple.put("all slivers", SLIVER_PERMANENT);
         multiple.put("all goblins", GOBLIN_PERMANENT);
+        multiple.put("goblins", GOBLIN_PERMANENT);
         multiple.put("artifacts", ARTIFACT);
-
+        multiple.put("creatures and lands", CREATURE_OR_LAND);
+        multiple.put("artifacts, creatures, and lands", ARTIFACT_OR_CREATURE_OR_LAND);
+        multiple.put("enchantments", ENCHANTMENT);
+        multiple.put("auras", AURA);
+        multiple.put("artifacts, creatures, and enchantments", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
+        multiple.put("creatures with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
 
 
         // used by MagicTargetChoice
@@ -1255,6 +1263,8 @@ public class MagicTargetFilterFactory {
             return matchPermanentPrefix(arg, " you control", Control.You);
         } else if (arg.endsWith(" your opponents control")) {
             return matchPermanentPrefix(arg, " your opponents control", Control.Opp);
+        } else if (arg.endsWith(" permanents")) {
+            return matchPermanentPrefix(arg, " permanents", Control.Any);
         } else {
             return matchPermanentPrefix(arg, "", Control.Any);
         } 

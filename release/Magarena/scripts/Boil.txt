@@ -5,5 +5,5 @@ value=4.184
 rarity=U
 type=Instant
 cost={3}{R}
+effect=Destroy all Islands.
 timing=removal
-requires_groovy_code

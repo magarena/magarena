@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Avatar
 cost={W}{U}{B}{R}{G}
 pt=6/6
-ability=trample
+ability=trample;\
+        When SN dies, destroy all nonland permanents. They can't be regenerated.
 timing=main
-requires_groovy_code

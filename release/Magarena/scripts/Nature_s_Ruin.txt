@@ -5,5 +5,5 @@ value=4.269
 rarity=U
 type=Sorcery
 cost={2}{B}
+effect=Destroy all green creatures.
 timing=main
-requires_groovy_code

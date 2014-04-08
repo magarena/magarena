@@ -5,6 +5,6 @@ value=3.417
 rarity=C
 type=Sorcery
 cost={2}{G}
+effect=Destroy all enchantments.
 timing=removal
 removal=2
-requires_groovy_code=Back to Nature

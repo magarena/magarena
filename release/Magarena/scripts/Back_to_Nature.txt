@@ -6,5 +6,5 @@ removal=2
 rarity=U
 type=Instant
 cost={1}{G}
+effect=Destroy all enchantments.
 timing=removal
-requires_groovy_code

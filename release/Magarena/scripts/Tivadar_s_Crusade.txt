@@ -5,5 +5,5 @@ value=3.643
 rarity=U
 type=Sorcery
 cost={1}{W}{W}
+effect=Destroy all Goblins.
 timing=removal
-requires_groovy_code

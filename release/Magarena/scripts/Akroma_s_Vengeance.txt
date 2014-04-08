@@ -5,6 +5,6 @@ value=3.896
 rarity=M
 type=Sorcery
 cost={4}{W}{W}
+effect=Destroy all artifacts, creatures, and enchantments.
 ability=cycling {3}
 timing=removal
-requires_groovy_code

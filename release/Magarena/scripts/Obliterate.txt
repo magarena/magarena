@@ -6,5 +6,5 @@ rarity=R
 type=Sorcery
 cost={6}{R}{R}
 ability=can't be countered
+effect=Destroy all artifacts, creatures, and lands. They can't be regenerated.
 timing=main
-requires_groovy_code=Jokulhaups

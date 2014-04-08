@@ -5,5 +5,5 @@ value=4.463
 rarity=U
 type=Sorcery
 cost={2}{B}
+effect=Destroy all green creatures. They can't be regenerated.
 timing=main
-requires_groovy_code

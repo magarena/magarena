@@ -5,6 +5,6 @@ value=4.500
 rarity=M
 type=Artifact
 cost={4}
-ability=SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {1}, {T}: Destroy all artifacts, creatures, and enchantments.
 timing=artifact
-requires_groovy_code

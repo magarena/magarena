@@ -6,5 +6,5 @@ removal=2
 rarity=U
 type=Instant
 cost={2}{W}
+effect=Destroy all enchantments.
 timing=removal
-requires_groovy_code=Back to Nature
