@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 permanent.getOpponent(),
-                MagicTargetChoice.TARGET_CARD_FROM_HAND,
+                MagicTargetChoice.A_CARD_FROM_HAND,
                 this,
                 "PN discards a card\$, then puts the top card of his or her library into his or her graveyard."
             );

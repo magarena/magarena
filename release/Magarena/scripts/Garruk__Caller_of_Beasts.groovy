@@ -42,7 +42,7 @@
                 event,
                 new MagicMayChoice(
                     "Put a green creature card onto the battlefield?",
-                    MagicTargetChoice.TARGET_GREEN_CREATURE_CARD_FROM_HAND
+                    MagicTargetChoice.A_GREEN_CREATURE_CARD_FROM_HAND
                 )
             ));
         }

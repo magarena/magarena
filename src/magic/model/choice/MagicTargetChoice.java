@@ -349,13 +349,13 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS = 
         new MagicTargetChoice("target artifact or creature card from a graveyard");
     
-    public static final MagicTargetChoice TARGET_CARD_FROM_HAND = 
+    public static final MagicTargetChoice A_CARD_FROM_HAND = 
         new MagicTargetChoice("a card from your hand");
     
     public static final MagicTargetChoice CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a creature card from your hand");
 
-    public static final MagicTargetChoice TARGET_GREEN_CREATURE_CARD_FROM_HAND = 
+    public static final MagicTargetChoice A_GREEN_CREATURE_CARD_FROM_HAND = 
         new MagicTargetChoice("a green creature card from your hand");
     
     public static final MagicTargetChoice BLUE_OR_RED_CREATURE_CARD_FROM_HAND = 
@@ -391,7 +391,7 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice LAND_CARD_FROM_HAND = 
         new MagicTargetChoice("a land card from your hand");
 
-    public static final MagicTargetChoice TARGET_UNPAIRED_SOULBOND_CREATURE = 
+    public static final MagicTargetChoice AN_UNPAIRED_SOULBOND_CREATURE = 
         new MagicTargetChoice("an unpaired Soulbond creature");
 
     public static final MagicTargetChoice CREATURE_TOKEN_YOU_CONTROL = 

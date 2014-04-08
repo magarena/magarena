@@ -43,7 +43,7 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     player,
-                    MagicTargetChoice.TARGET_CARD_FROM_HAND,
+                    MagicTargetChoice.A_CARD_FROM_HAND,
                     action,
                     "PN exiles a card from his or her hand."
                 ));

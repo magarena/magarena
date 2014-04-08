@@ -26,7 +26,7 @@ public class MagicSoulbondEvent extends MagicEvent {
                         MagicTargetHint.None,
                         "a creature other than " + permanent
                     ):
-                    MagicTargetChoice.TARGET_UNPAIRED_SOULBOND_CREATURE
+                    MagicTargetChoice.AN_UNPAIRED_SOULBOND_CREATURE
             ),
             EVENT_ACTION,
             hasSoulbond ?

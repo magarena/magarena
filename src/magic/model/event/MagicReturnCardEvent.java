@@ -17,7 +17,7 @@ public class MagicReturnCardEvent extends MagicEvent {
         super(
             source,
             player,
-            MagicTargetChoice.TARGET_CARD_FROM_HAND,
+            MagicTargetChoice.A_CARD_FROM_HAND,
             EVENT_ACTION,
             "PN put a card$ from your hand on top of your library."
         );
