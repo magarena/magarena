@@ -7,5 +7,5 @@ type=Creature
 subtype=Dryad
 cost={1}{G}
 pt=2/1
-ability=can block creatures with shadow
+ability=SN can block creatures with shadow as though SN had shadow.
 timing=main

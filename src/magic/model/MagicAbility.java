@@ -119,7 +119,7 @@ public enum MagicAbility {
     CannotBeBlockedByRed("can't be blocked by red creatures",10),
     CannotBeBlockedByWhite("can't be blocked by white creatures",10),
     CannotBeBlockedByTokens("can't be blocked by creature tokens",10),
-    CanBlockShadow("can block creatures with shadow",10),
+    CanBlockShadow("(SN )?can block creatures with shadow as though (they didn't have shadow|SN had shadow)\\.",10),
     CannotBeCountered("can't be countered",0),
     Hexproof("hexproof",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
