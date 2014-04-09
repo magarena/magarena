@@ -170,7 +170,7 @@ public enum MagicAbility {
     Shadow("shadow",30),
     Shroud("shroud",60),
     Trample("trample",30),
-    Unblockable("unblockable",100),
+    Unblockable("(SN )?can't be blocked(\\.)?",100),
     Vigilance("vigilance",20),
     Wither("wither",30),
     TotemArmor("totem armor",0),
