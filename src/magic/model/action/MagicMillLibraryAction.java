@@ -7,10 +7,13 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
+import java.util.List;
+
 public class MagicMillLibraryAction extends MagicAction {
 
     private final MagicPlayer player;
     private final int amount;
+    private final MagicCardList milledCards = new MagicCardList();
 
     public MagicMillLibraryAction(final MagicPlayer player,final int amount) {
         this.player = player;
@@ -26,19 +29,27 @@ public class MagicMillLibraryAction extends MagicAction {
             setScore(player,ArtificialScoringSystem.getMillScore(count));
             for (int c=count;c>0;c--) {
                 final MagicCard milledCard = library.getCardAtTop();
+                milledCards.add(milledCard);
                 game.doAction(new MagicRemoveCardAction(
-                        milledCard,
-                        MagicLocationType.OwnersLibrary));
+                    milledCard,
+                    MagicLocationType.OwnersLibrary
+                ));
                 game.doAction(new MagicMoveCardAction(
-                        milledCard,
-                        MagicLocationType.OwnersLibrary,
-                        MagicLocationType.Graveyard));
+                    milledCard,
+                    MagicLocationType.OwnersLibrary,
+                    MagicLocationType.Graveyard
+                ));
             }
             game.logMessage(
-                    player,
-                    player + " puts the top " + count +
-                    " cards of his or her library into his or her graveyard.");
+                player,
+                player + " puts the top " + count +
+                " cards of his or her library into his or her graveyard."
+            );
         }
+    }
+
+    public List<MagicCard> getMilledCards() {
+        return milledCards;
     }
 
     @Override

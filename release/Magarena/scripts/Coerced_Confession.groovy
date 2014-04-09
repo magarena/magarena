@@ -13,16 +13,15 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final MagicPlayer player ->
-                game.doAction(new MagicMillLibraryAction(player,4));
-                for(int i=0;i<4;i++) {
-                    if(player.getGraveyard().size-i > 0) {
-                        if(player.getGraveyard().get(player.getGraveyard().size-1-i).hasType(MagicType.Creature)) {
-                          game.doAction(new MagicDrawAction(event.getSource().getController()));
-                        }
+                final MagicMillLibraryAction millAct = new MagicMillLibraryAction(player, 4);
+                game.doAction(millAct);
+                int amount = 0;
+                for (final MagicCard card : millAct.getMilledCards()) {
+                    if (card.hasType(MagicType.Creature) && card.isInGraveyard()) {
+                        amount++;
                     }
                 }
-                MagicCard.NONE;
-
+                game.doAction(new MagicDrawAction(event.getPlayer(), amount));
             });
         }
     }
