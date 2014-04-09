@@ -99,14 +99,14 @@ import java.util.regex.Pattern;
 
 public enum MagicAbility {
   
-    AttacksEachTurnIfAble("SN attacks each turn if able.",-10),
-    CannotBlock("(SN )?can't block(.)?",-50),
-    CannotAttack("(SN )?can't attack(.)?",-50),
-    CannotAttackOrBlock("(SN )?can't attack or block(.)?",-200),
-    CannotBlockWithoutFlying("SN can block only creatures with flying.",-40),
-    CannotBeBlockedByFlying("SN can't be blocked by creatures with flying.",20),
-    CannotBeBlockedExceptWithFlying("SN can't be blocked except by creatures with flying.",30),
-    CannotBeBlockedExceptWithFlyingOrReach("SN can't be blocked except by creatures with flying or reach.",25),
+    AttacksEachTurnIfAble("SN attacks each turn if able\\.",-10),
+    CannotBlock("(SN )?can't block(\\.)?",-50),
+    CannotAttack("(SN )?can't attack(\\.)?",-50),
+    CannotAttackOrBlock("(SN )?can't attack or block(\\.)?",-200),
+    CannotBlockWithoutFlying("SN can block only creatures with flying\\.",-40),
+    CannotBeBlockedByFlying("SN can't be blocked by creatures with flying\\.",20),
+    CannotBeBlockedExceptWithFlying("SN can't be blocked except by creatures with flying\\.",30),
+    CannotBeBlockedExceptWithFlyingOrReach("SN can't be blocked except by creatures with flying or reach\\.",25),
     CannotBeBlockedExceptBySliver("can't be blocked except by slivers",90),
     CannotBeBlockedExceptByWalls("can't be blocked except by walls",80),
     CannotBeBlockedByWalls("can't be blocked by walls",10),
@@ -126,7 +126,7 @@ public enum MagicAbility {
     CannotBeTheTargetOfBlackOrRedOpponentSpell("can't be the target of black or red spells your opponents control",10),
     Deathtouch("deathtouch",60),
     Defender("defender",-100),
-    DoesNotUntap("SN doesn't untap during your untap step.",-30),
+    DoesNotUntap("SN doesn't untap during your untap step\\.",-30),
     DoubleStrike("double strike",100),
     Fear("fear",50),
     Flash("flash",0),
@@ -268,7 +268,7 @@ public enum MagicAbility {
             card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
     },
-    BlockedPump("Whenever SN becomes blocked, it gets " + ARG.PT + " until end of turn." , 10) {
+    BlockedPump("Whenever SN becomes blocked, it gets " + ARG.PT + " until end of turn\\." , 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -284,7 +284,7 @@ public enum MagicAbility {
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,true));
         }
     },
-    BlocksOrBlockedPump("Whenever SN blocks or becomes blocked, it gets " + ARG.PT + " until end of turn.", 20) {
+    BlocksOrBlockedPump("Whenever SN blocks or becomes blocked, it gets " + ARG.PT + " until end of turn\\.", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -293,7 +293,7 @@ public enum MagicAbility {
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
         }
     },
-    BlocksPump("Whenever SN blocks, it gets " + ARG.PT + " until end of turn." , 10) {
+    BlocksPump("Whenever SN blocks, it gets " + ARG.PT + " until end of turn\\." , 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -301,7 +301,7 @@ public enum MagicAbility {
             card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
         }
     },
-    ShockLand("As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.", -10) {
+    ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicRavnicaLandTrigger.create());
         }
@@ -332,7 +332,7 @@ public enum MagicAbility {
             ));
         }
     },
-    AllyGrow("Whenever SN or another Ally enters the battlefield under your control, you may put a \\+1/\\+1 counter on SN.",20) {
+    AllyGrow("Whenever SN or another Ally enters the battlefield under your control, you may put a \\+1/\\+1 counter on SN\\.",20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAllyGrowTrigger.create());
         }
@@ -344,37 +344,37 @@ public enum MagicAbility {
             ));
         }
     },
-    TapAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool.",10) {
+    TapAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicTapManaActivation(manatype));
         }
     },
-    TapDrainAddMana("\\{T\\}, Remove a charge counter from SN: Add " + ARG.MANA + " to your mana pool.",10) {
+    TapDrainAddMana("\\{T\\}, Remove a charge counter from SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicVividManaActivation(manatype));
         }
     },
-    TapPainAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool. SN deals 1 damage to you.", 10) {
+    TapPainAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool\\. SN deals 1 damage to you\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicPainTapManaActivation(manatype));
         }
     },
-    TapPayLifeAddMana("\\{T\\}, Pay 1 life: Add " + ARG.MANA + " to your mana pool.", 10) {
+    TapPayLifeAddMana("\\{T\\}, Pay 1 life: Add " + ARG.MANA + " to your mana pool\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicPayLifeTapManaActivation(manatype));
         }
     },
-    SacAddMana("Sacrifice SN: Add " + ARG.MANA + " to your mana pool.",10) {
+    SacAddMana("Sacrifice SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicSacrificeManaActivation(manatype));
         }
     },
-    SacAtEnd("At the beginning of the end step, sacrifice SN.",-100) {
+    SacAtEnd("At the beginning of the end step, sacrifice SN\\.",-100) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtEndOfTurnTrigger.Sacrifice);
         }
@@ -384,53 +384,53 @@ public enum MagicAbility {
             card.add(MagicAtEndOfTurnTrigger.ExileAtEnd);
         }
     },
-    SacWhenTargeted("When SN becomes the target of a spell or ability, sacrifice it.",-10) {
+    SacWhenTargeted("When SN becomes the target of a spell or ability, sacrifice it\\.",-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenTargetedTrigger.SacWhenTargeted);
         }
     },
-    TapSacAddMana("\\{T\\}, Sacrifice SN: Add " + ARG.MANA + " to your mana pool.",10) {
+    TapSacAddMana("\\{T\\}, Sacrifice SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
             card.add(new MagicSacrificeTapManaActivation(manatype));
         }
     },
-    DamageDiscardCard("Whenever SN deals damage to a player, that player discards " + ARG.AMOUNT + " card(s)?.",10) {
+    DamageDiscardCard("Whenever SN deals damage to a player, that player discards " + ARG.AMOUNT + " card(s)?\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.amount(arg);
             card.add(new MagicSpecterTrigger(Type.Any, Player.Any, n));
         }
     },
-    DamageOpponentDiscardCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)?.",10) {
+    DamageOpponentDiscardCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)?\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.amount(arg);
             card.add(new MagicSpecterTrigger(Type.Any, Player.Opponent, n));
         }
     },
-    CombatDamageDiscardCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)?.",10) {
+    CombatDamageDiscardCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)?\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.amount(arg);
             card.add(new MagicSpecterTrigger(Type.Combat, Player.Any, n));
         }
     },
-    CombatDamageDiscardRandomCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)? at random.",10) {
+    CombatDamageDiscardRandomCard("Whenever SN deals combat damage to a player, that player discards " + ARG.AMOUNT + " card(s)? at random\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.amount(arg);
             card.add(MagicSpecterTrigger.Random(Type.Combat, Player.Any, n));
         }
     },
-    DamageOpponentDiscardRandomCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)? at random.",10) {
+    DamageOpponentDiscardRandomCard("Whenever SN deals damage to an opponent, that (opponent|player) discards " + ARG.AMOUNT + " card(s)? at random\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.amount(arg);
             card.add(MagicSpecterTrigger.Random(Type.Any, Player.Opponent, n));
         }
     },
-    DamageCreatureGrow("Whenever SN deals damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
+    DamageCreatureGrow("Whenever SN deals damage to a creature, put a \\+1/\\+1 counter on SN\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicDamageGrowTrigger(false, false));
         }
     },
-    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a \\+1/\\+1 counter on SN.",10) {
+    CombatDamageCreatureGrow("Whenever SN deals combat damage to a creature, put a \\+1/\\+1 counter on SN\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new MagicDamageGrowTrigger(true, false));
         }
@@ -456,22 +456,22 @@ public enum MagicAbility {
             ));
         }
     },
-    OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.",10) {
+    OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
         }
     },
-    RecoverGraveyard("When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.",10) {
+    RecoverGraveyard("When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard);
         }
     },
-    GraveyardToLibrary("When SN is put into a graveyard from anywhere, shuffle it into its owner's library.",10) {
+    GraveyardToLibrary("When SN is put into a graveyard from anywhere, shuffle it into its owner's library\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicFromGraveyardToLibraryTrigger.create());
         }
     },
-    LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.",10) {
+    LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);
         }
@@ -487,12 +487,12 @@ public enum MagicAbility {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
-    EntersChooseOpponent("As SN enters the battlefield, choose an opponent.", 0) {
+    EntersChooseOpponent("As SN enters the battlefield, choose an opponent\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenComesIntoPlayTrigger.ChooseOpponent);
         }
     },
-    EntersTapped("SN enters the battlefield tapped.", -10) {
+    EntersTapped("SN enters the battlefield tapped\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicTappedIntoPlayTrigger.create());
         }
@@ -510,7 +510,7 @@ public enum MagicAbility {
             }
         }
     },
-    EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands.", -10) {
+    EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
         }
@@ -887,6 +887,11 @@ public enum MagicAbility {
         card.addAbility(this);
         addAbilityImpl(card, matched(ability));
     }
+    
+    public void addAbility(final MagicAbilityStore card) {
+        card.addAbility(this);
+        addAbilityImpl(card, null);
+    }
 
     @Override
     public String toString() {
@@ -938,7 +943,7 @@ public enum MagicAbility {
     public static MagicAbilityList getAbilityList(final Set<MagicAbility> abilities) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         for (final MagicAbility ability : abilities) {
-            ability.addAbility(abilityList, ability.getName());
+            ability.addAbility(abilityList);
         }
         return abilityList;
     }
