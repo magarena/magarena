@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=unblockable
+given_ability=SN can't be blocked.
 timing=aura
 enchant=unblockable,pos creature

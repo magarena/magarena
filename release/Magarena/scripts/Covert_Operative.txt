@@ -2,10 +2,10 @@ name=Covert Operative
 url=http://magiccards.info/query?q=%21covert%20operative
 image=http://mtgimage.com/card/covert%20operative.jpg
 value=2.694
-ability=unblockable
 rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={4}{U}
 pt=3/2
+ability=SN can't be blocked.
 timing=main

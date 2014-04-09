@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=1/1
-ability=unblockable;{U},Discard a card:Return SN to its owner's hand.
+ability=SN can't be blocked;\
+        {U},Discard a card:Return SN to its owner's hand.
 timing=main

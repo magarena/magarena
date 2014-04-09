@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-given_ability=unblockable;shroud
+given_ability=SN can't be blocked.;shroud
 timing=aura
 enchant=unblockable,pos creature

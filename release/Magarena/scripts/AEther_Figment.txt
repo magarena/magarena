@@ -7,6 +7,6 @@ type=Creature
 subtype=Illusion
 cost={1}{U}
 pt=1/1
-ability=unblockable;kicker {3}
+ability=SN can't be blocked.;kicker {3}
 timing=main
 requires_groovy_code

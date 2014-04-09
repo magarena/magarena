@@ -2,10 +2,10 @@ name=Tidal Kraken
 url=http://magiccards.info/query?q=%21tidal%20kraken
 image=http://mtgimage.com/card/tidal%20kraken.jpg
 value=3.848
-ability=unblockable
 rarity=R
 type=Creature
 subtype=Kraken
 cost={5}{U}{U}{U}
 pt=6/6
+ability=SN can't be blocked.
 timing=main

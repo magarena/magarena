@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={B}
 pt=1/1
-ability=SN can't block.;unblockable
+ability=SN can't block.;SN can't be blocked.
 timing=main

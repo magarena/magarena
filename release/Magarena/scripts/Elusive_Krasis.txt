@@ -7,5 +7,6 @@ type=Creature
 subtype=Fish,Mutant
 cost={1}{G}{U}
 pt=0/4
-ability=unblockable;evolve
+ability=SN can't be blocked.;\
+        evolve
 timing=main
