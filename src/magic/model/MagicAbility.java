@@ -33,11 +33,13 @@ import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicAllyGrowTrigger;
+import magic.model.trigger.MagicAllyTrigger;
 import magic.model.trigger.MagicAnnihilatorTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicBloodthirstTrigger;
 import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
+import magic.model.trigger.MagicConstellationTrigger;
 import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicDamageGrowTrigger;
 import magic.model.trigger.MagicDevourTrigger;
@@ -332,12 +334,21 @@ public enum MagicAbility {
             ));
         }
     },
-    AllyGrow("Whenever SN or another Ally enters the battlefield under your control, you may put a \\+1/\\+1 counter on SN.",20) {
+    ConstellationEffect("Whenever SN or another Enchantment enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAllyGrowTrigger.create());
+            card.add(MagicConstellationTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
         }
     },
-    LandfallEffect("Whenever a land enters the battlefield under your control, " + ARG.EFFECT,0) {
+    AllyEffect("Whenever SN or another Ally enters the battlefield under your control, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicAllyTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    LandfallEffect("Whenever a land enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicLandfallTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
