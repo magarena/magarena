@@ -36,6 +36,7 @@ import magic.model.trigger.MagicAllyTrigger;
 import magic.model.trigger.MagicAnnihilatorTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
+import magic.model.trigger.MagicBlockedByCreaturePumpTrigger;
 import magic.model.trigger.MagicBloodthirstTrigger;
 import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
 import magic.model.trigger.MagicConstellationTrigger;
@@ -277,12 +278,20 @@ public enum MagicAbility {
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
         }
     },
-    BlockedByPump("blocked by pump " + ARG.PT, 20) {
+    BlockedByPump("Whenever SN becomes blocked, it gets " + ARG.PT + " until end of turn for each creature blocking it\\.", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,true));
+        }
+    },
+    BlockedByCreaturePump("Whenever SN becomes blocked by a creature, SN gets " + ARG.PT + " until end of turn\\.", 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(new MagicBlockedByCreaturePumpTrigger(power,toughness));
         }
     },
     BlocksOrBlockedPump("Whenever SN blocks or becomes blocked, it gets " + ARG.PT + " until end of turn\\.", 20) {
@@ -764,7 +773,7 @@ public enum MagicAbility {
             card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
-    AlternateCost2("You may (pay )?" + ARG.ANY + " rather than pay SN's mana cost.", 10) {
+    AlternateCost2("You may (pay )?" + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
             final String arg = matcher.group("any").replace(" and ",", ");
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
