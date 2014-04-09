@@ -7,5 +7,6 @@ type=Creature
 subtype=Cephalid,Wizard
 cost={2}{U}
 pt=1/2
-ability=unblockable;{T},Sacrifice SN:Target creature gains unblockable until end of turn.
+ability=SN can't be blocked;\
+        {T},Sacrifice SN:Target creature can't be blocked this turn.
 timing=main

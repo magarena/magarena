@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk
 cost={3}{U}
 pt=2/2
-ability={U}: SN gains unblockable until end of turn.
+ability={U}: SN can't be blocked this turn.
 timing=main

@@ -5,5 +5,5 @@ value=3.750
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
-        {4},{T}:Target creature gains unblockable until end of turn.
+        {4},{T}:Target creature can't be blocked this turn.
 timing=land

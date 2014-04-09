@@ -6,6 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-given_ability=unblockable;Whenever SN attacks, scry 1.
+given_ability=SN can't be blocked.;\
+        Whenever SN attacks, scry 1.
 timing=aura
 enchant=unblockable,pos creature

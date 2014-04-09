@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Rogue
 cost={G}{U}
 pt=2/2
-ability=unblockable
+ability=SN can't be blocked.
 timing=main

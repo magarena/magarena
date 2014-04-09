@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={1}{U}{U}
 pt=4/6
-ability=unblockable
+ability=SN can't be blocked.
 timing=main
 requires_groovy_code

@@ -2,10 +2,10 @@ name=Plasma Elemental
 url=http://magiccards.info/query?q=%21plasma%20elemental
 image=http://mtgimage.com/card/plasma%20elemental.jpg
 value=3.000
-ability=unblockable
 rarity=U
 type=Creature
 subtype=Elemental
 cost={5}{U}
 pt=4/1
+ability=SN can't be blocked.
 timing=main

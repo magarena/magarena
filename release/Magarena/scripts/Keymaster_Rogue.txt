@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Rogue
 cost={3}{U}
 pt=3/2
-ability=unblockable;\
+ability=SN can't be blocked.;\
         When SN enters the battlefield, return a creature you control to its owner's hand.
 timing=main
