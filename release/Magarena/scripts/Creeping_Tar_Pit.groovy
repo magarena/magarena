@@ -43,7 +43,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 3/2 blue and black Elemental creature and is unblockable. " +
+                "Until end of turn, SN becomes a 3/2 blue and black Elemental creature and can't be blocked this turn. " +
                 "It's still a land."
             );
         }

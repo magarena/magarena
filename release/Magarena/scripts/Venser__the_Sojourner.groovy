@@ -24,7 +24,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Creatures are unblockable this turn."
+                "Creatures can't be blocked this turn."
             );
         }
         @Override

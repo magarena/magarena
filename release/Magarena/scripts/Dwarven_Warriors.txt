@@ -7,5 +7,5 @@ type=Creature
 subtype=Dwarf,Warrior
 cost={2}{R}
 pt=1/1
+ability={T}: Target creature with power 2 or less can't be blocked this turn.
 timing=main
-requires_groovy_code=Crafty Pathmage

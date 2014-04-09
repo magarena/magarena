@@ -7,7 +7,7 @@
                 MagicTargetChoice.POS_TARGET_CREATURE,
                 MagicShadowTargetPicker.create(),
                 this,
-                "Target creature\$ is unblockable this turn. PN draws a card."
+                "Target creature\$ can't be blocked this turn. PN draws a card."
             );
         }
 

@@ -7,7 +7,7 @@
                 MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
                 MagicUnblockableTargetPicker.create(),
                 this,
-                "Target creature\$ you control gets +1/+0 until end of turn and is unblockable this turn."
+                "Target creature\$ you control gets +1/+0 until end of turn and can't be blocked this turn."
             );
         }
         @Override
@@ -31,7 +31,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Each creature you control gets +1/+0 until end of turn and is unblockable this turn."
+                "Each creature you control gets +1/+0 until end of turn and can't be blocked this turn."
             );
         }
         @Override

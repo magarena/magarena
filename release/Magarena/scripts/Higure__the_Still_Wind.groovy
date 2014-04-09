@@ -28,7 +28,7 @@ def TARGET_NINJA = new MagicTargetChoice(
                 TARGET_NINJA,
                 MagicUnblockableTargetPicker.create(),
                 this,
-                "Target Ninja\$ is unblockable this turn."
+                "Target Ninja\$ can't be blocked this turn."
             );
         }
 
