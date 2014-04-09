@@ -32,7 +32,6 @@ import magic.model.event.MagicAdditionalCost;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicAllyGrowTrigger;
 import magic.model.trigger.MagicAllyTrigger;
 import magic.model.trigger.MagicAnnihilatorTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
