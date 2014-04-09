@@ -7,5 +7,5 @@ type=Creature
 subtype=Elephant
 cost={4}{G}
 pt=3/4
-ability=blocked by pump +2/+2
+ability=Whenever SN becomes blocked, it gets +2/+2 until end of turn for each creature blocking it.
 timing=main

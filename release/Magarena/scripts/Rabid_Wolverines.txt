@@ -7,5 +7,5 @@ type=Creature
 subtype=Wolverine
 cost={3}{G}{G}
 pt=4/4
-ability=blocked by pump +1/+1
+ability=Whenever SN becomes blocked by a creature, SN gets +1/+1 until end of turn.
 timing=main
