@@ -1,0 +1,10 @@
+name=Mind Grind
+url=http://magiccards.info/query?q=%21mind%20grind
+image=http://mtgimage.com/card/mind%20grind.jpg
+value=3.788
+removal=3
+rarity=R
+type=Sorcery
+cost={X}{U}{B}
+timing=removal
+requires_groovy_code
