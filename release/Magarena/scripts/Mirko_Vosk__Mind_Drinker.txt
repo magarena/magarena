@@ -1,0 +1,12 @@
+ name=Mirko Vosk, Mind Drinker
+url=http://magiccards.info/query?q=!mirko%20vosk,%20mind%20drinker
+image=http://mtgimage.com/card/mirko%20vosk,%20mind%20drinker.jpg
+value=3.530
+rarity=R
+type=Legendary,Creature
+subtype=Vampire
+cost={3}{U}{B}
+pt=2/4
+ability=flying
+timing=main
+requires_groovy_code
