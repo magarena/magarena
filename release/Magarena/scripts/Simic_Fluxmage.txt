@@ -1,0 +1,12 @@
+name=Simic Fluxmage
+url=http://magiccards.info/query?q=%21simic%20fluxmage
+image=http://mtgimage.com/card/simic%20fluxmage.jpg
+value=2.902
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{U}{U}
+pt=1/2
+ability=evolve;\
+        {1}{U}{T}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.
+timing=fmain
