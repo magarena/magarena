@@ -764,6 +764,13 @@ public enum MagicAbility {
             card.add(MagicCardActivation.create(cardDef, tokens[0], tokens[1]));
         }
     },
+    AlternateCost2("You may (pay )?" + ARG.ANY + " rather than pay SN's mana cost.", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
+            final String arg = matcher.group("any").replace(" and ",", ");
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(MagicCardActivation.create(cardDef, arg, "Alt"));
+        }
+    },
     AdditionalCost("As an additional cost to cast SN, " + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAdditionalCost.create(new MagicMatchedCostEvent(ARG.cost(arg))));

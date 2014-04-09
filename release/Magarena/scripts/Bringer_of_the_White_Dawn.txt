@@ -7,7 +7,7 @@ type=Creature
 subtype=Bringer
 cost={7}{W}{W}
 pt=5/5
-ability=alt cost {W}{U}{B}{R}{G} named Alt;\
+ability=You may pay {W}{U}{B}{R}{G} rather than pay SN's mana cost.;\
         trample;\
         At the beginning of your upkeep, you may return target artifact card from your graveyard to the battlefield.
 timing=main

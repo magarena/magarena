@@ -5,6 +5,6 @@ value=4.023
 rarity=U
 type=Instant
 cost={1}{W}{W}
-ability=alt cost discard a Plains card named Discard
+ability=You may discard a Plains card rather than pay SN's mana cost.
 effect=Destroy target artifact or enchantment.
 timing=removal

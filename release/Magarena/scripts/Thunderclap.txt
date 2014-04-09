@@ -5,6 +5,6 @@ value=3.458
 rarity=C
 type=Instant
 cost={2}{R}
-ability=alt cost Sacrifice a Mountain named Sacrifice
+ability=You may sacrifice a Mountain rather than pay SN's mana cost.
 effect=SN deals 3 damage to target creature.
 timing=removal

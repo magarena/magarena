@@ -5,6 +5,6 @@ value=4.599
 rarity=C
 type=Instant
 cost={1}{U}
-ability=alt cost Return an Island you control to its owner's hand named Bounce
+ability=You may return an Island you control to its owner's hand rather than pay SN's mana cost.
 effect=Counter target spell unless its controller pays {1}.
 timing=counter

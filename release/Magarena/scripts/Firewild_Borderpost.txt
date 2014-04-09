@@ -5,7 +5,7 @@ value=3.032
 rarity=C
 type=Artifact
 cost={1}{R}{G}
-ability=alt cost {1}, Return a basic land you control to its owner's hand named Alt;\
+ability=You may pay {1} and return a basic land you control to its owner's hand rather than pay SN's mana cost.;\
         SN enters the battlefield tapped.;\
         {T}: Add {R} or {G} to your mana pool.
 timing=artifact
