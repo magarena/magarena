@@ -668,8 +668,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() &&
-                   target.getCounters(MagicCounterType.PlusOne) > 0;
+            return target.isCreature() && target.hasCounters(MagicCounterType.PlusOne);
         }
     };
 
