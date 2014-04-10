@@ -7,6 +7,6 @@ type=Creature
 subtype=Vampire
 cost={R}
 pt=1/1
-ability=can't be blocked by humans;\
+ability=SN can't be blocked by Humans.;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main

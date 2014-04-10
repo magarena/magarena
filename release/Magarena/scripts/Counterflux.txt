@@ -6,6 +6,6 @@ rarity=R
 type=Instant
 cost={U}{U}{R}
 timing=counter
-ability=can't be countered
+ability=SN can't be countered by spells or abilities.
 effect=Counter target spell you don't control.
 requires_groovy_code

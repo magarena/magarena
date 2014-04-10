@@ -8,5 +8,5 @@ subtype=Elephant,Soldier
 cost={1}{G}{W}
 pt=4/4
 timing=main
-ability=can't be countered;\
+ability=SN can't be countered.;\
         If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.

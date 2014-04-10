@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Human,Samurai
 cost={2}{G}
 pt=2/1
-ability=can't be countered;bushido 2;\
+ability=SN can't be countered.;bushido 2;\
         {2}: Regenerate target Samurai.
 timing=main

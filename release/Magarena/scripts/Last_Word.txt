@@ -6,5 +6,5 @@ rarity=R
 type=Instant
 cost={2}{U}{U}
 timing=counter
-ability=can't be countered
+ability=SN can't be countered by spells or abilities.
 effect=Counter target spell.

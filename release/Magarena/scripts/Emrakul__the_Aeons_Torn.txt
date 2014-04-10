@@ -7,7 +7,7 @@ type=Legendary,Creature
 subtype=Eldrazi
 cost={15}
 pt=15/15
-ability=can't be countered;\
+ability=SN can't be countered.;\
         flying;\
         protection from colored spells;\
         annihilator 6;\

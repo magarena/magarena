@@ -6,6 +6,6 @@ removal=4
 rarity=U
 type=Instant
 cost={1}{R}
-ability=can't be countered
+ability=SN can't be countered by spells or abilities.
 timing=removal
 requires_groovy_code
