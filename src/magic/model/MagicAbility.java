@@ -364,6 +364,14 @@ public enum MagicAbility {
             ));
         }
     },
+    OtherEntersAnyEffect("Whenever a(n)? " + ARG.WORDRUN + " enters the battlefield, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherComesIntoPlayTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     TapAddMana("\\{T\\}: Add " + ARG.MANA + " to your mana pool\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicManaType> manatype = MagicManaType.getList(ARG.mana(arg));
@@ -517,15 +525,15 @@ public enum MagicAbility {
             card.add(MagicTappedIntoPlayTrigger.create());
         }
     },
-    EntersWithCounter("enters with counter " + ARG.WORD1 + " " + ARG.WORD2, 0) {
+    EntersWithCounter("SN enters the battlefield with " + ARG.WORD1 + " " + ARG.WORD2 + " counter(s)? on it\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String name = ARG.word1(arg);
-            final String amount = ARG.word2(arg);
+            final String name = ARG.word2(arg);
+            final String amount = ARG.word1(arg);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(name);
             if (amount.equalsIgnoreCase("X")) {
                 card.add(MagicWhenComesIntoPlayTrigger.XCounters(counterType));
             } else {
-                final int n = Integer.parseInt(amount);
+                final int n = englishToInt(amount);
                 card.add(new MagicComesIntoPlayWithCounterTrigger(counterType,n));
             }
         }
@@ -535,7 +543,7 @@ public enum MagicAbility {
             card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
         }
     },
-    EntersTappedUnless("SN enters the battlefield tapped unless you control a " + ARG.WORD1 + " " + ARG.WORD2, -10) {
+    EntersTappedUnless("SN enters the battlefield tapped unless you control a(n)? " + ARG.WORD1 + " or a(n)? " + ARG.WORD2 + "\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSubType t1 = MagicSubType.getSubType(ARG.word1(arg));
             final MagicSubType t2 = MagicSubType.getSubType(ARG.word2(arg));
