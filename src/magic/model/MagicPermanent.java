@@ -505,6 +505,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean hasCounters() {
         return counters.size() > 0; 
     }
+    
+    public boolean hasCounters(final MagicCounterType counterType) {
+        return getCounters(counterType) > 0; 
+    }
 
     public boolean hasSubType(final MagicSubType subType) {
         return cachedSubTypeFlags.contains(subType);
