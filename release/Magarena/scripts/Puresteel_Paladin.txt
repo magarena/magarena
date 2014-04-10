@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/2
+ability=Whenever an Equipment enters the battlefield under your control, you may draw a card.
 timing=main
 requires_groovy_code

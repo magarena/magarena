@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat,Cleric
 cost={3}{W}
 pt=2/3
+ability=Whenever another creature enters the battlefield under your control, you gain 2 life.
 timing=main
-requires_groovy_code
