@@ -313,7 +313,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source.getCounters(MagicCounterType.PlusOne) > 0;
+            return source.hasCounters(MagicCounterType.PlusOne);
         }
     };
 

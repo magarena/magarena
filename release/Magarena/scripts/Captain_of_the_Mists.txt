@@ -8,6 +8,6 @@ subtype=Human,Wizard
 cost={2}{U}
 pt=2/3
 ability={1}{U}, {T}: Tap target permanent.;\
-        {1}{U}, {T}: Untap target permanent.
+        {1}{U}, {T}: Untap target permanent.;\
+        Whenever another Human enters the battlefield under your control, untap SN.
 timing=main
-requires_groovy_code

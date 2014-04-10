@@ -7,6 +7,5 @@ type=Creature
 subtype=Skeleton
 cost={3}{B}
 pt=2/3
-ability=fear;Sacrifice a creature: Regenerate SN.
+ability=fear;Sacrifice a creature: Regenerate SN.;Transmute {1}{B}{B}
 timing=main
-requires_groovy_code

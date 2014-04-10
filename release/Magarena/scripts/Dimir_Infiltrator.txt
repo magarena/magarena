@@ -7,6 +7,5 @@ type=Creature
 subtype=Spirit
 cost={U}{B}
 pt=1/3
-ability=SN can't be blocked.
+ability=SN can't be blocked.;Transmute {1}{U}{B}
 timing=main
-requires_groovy_code
