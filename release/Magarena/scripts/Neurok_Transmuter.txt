@@ -1,0 +1,11 @@
+name=Neurok Transmuter
+url=http://magiccards.info/query?q=%21neurok%20transmuter
+image=http://mtgimage.com/card/neurok%20transmuter.jpg
+value=3.303
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/2
+timing=main
+requires_groovy_code
