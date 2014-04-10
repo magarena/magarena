@@ -7,6 +7,6 @@ type=Creature
 subtype=Wurm,Spirit
 cost={4}{G}{G}
 pt=2/0
-ability=enters with counter +1/+1 4
+ability=SN enters the battlefield with four +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom Nomad

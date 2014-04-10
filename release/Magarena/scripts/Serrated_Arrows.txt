@@ -6,7 +6,7 @@ removal=2
 rarity=C
 type=Artifact
 cost={4}
-ability=enters with counter arrowhead 3;\
+ability=SN enters the battlefield with three arrowhead counters on it.;\
         {T}, Remove an arrowhead counter from SN: Put a -1/-1 counter on target creature.
 timing=artifact
 requires_groovy_code

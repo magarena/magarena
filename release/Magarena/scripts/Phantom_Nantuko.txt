@@ -7,6 +7,8 @@ type=Creature
 subtype=Insect,Spirit
 pt=0/0
 cost={2}{G}
-ability=trample;enters with counter +1/+1 2;{T}: Put a +1/+1 counter on SN.
+ability=trample;\
+        SN enters the battlefield with two +1/+1 counters on it.;\
+        {T}: Put a +1/+1 counter on SN.
 timing=main
 requires_groovy_code=Phantom Nomad

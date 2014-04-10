@@ -5,6 +5,6 @@ value=3.659
 rarity=M
 type=Artifact
 cost={5}
-ability=enters with counter wish 3
+ability=SN enters the battlefield with three wish counters on it.
 timing=artifact
 requires_groovy_code

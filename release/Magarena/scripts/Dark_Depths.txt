@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/dark%20depths.jpg
 value=4.566
 rarity=R
 type=Legendary,Snow,Land
-ability=enters with counter ice 10
+ability=SN enters the battlefield with ten ice counters on it.
 timing=land
 requires_groovy_code

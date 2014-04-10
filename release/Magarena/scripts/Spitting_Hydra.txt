@@ -7,5 +7,6 @@ type=Creature
 subtype=Hydra
 cost={3}{R}{R}
 pt=0/0
-ability=enters with counter +1/+1 4;{1}{R},Remove a +1/+1 counter from SN:SN deals 1 damage to target creature.
+ability=SN enters the battlefield with four +1/+1 counters on it.;\
+        {1}{R}, Remove a +1/+1 counter from SN: SN deals 1 damage to target creature.
 timing=main

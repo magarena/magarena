@@ -1,0 +1,12 @@
+name=Glassdust Hulk
+url=http://www.magiccards.info/query?q=%21glassdust%20hulk
+image=http://mtgimage.com/card/glassdust%20hulk.jpg
+value=3.262
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={3}{W}{U}
+pt=3/4
+ability=Whenever another artifact enters the battlefield under your control, SN gets +1/+1 until end of turn and can't be blocked this turn.;\
+        Cycling {W/U}
+timing=artifact
