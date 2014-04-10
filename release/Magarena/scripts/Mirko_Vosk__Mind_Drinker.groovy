@@ -7,7 +7,6 @@
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
                     damage.getTarget(),
                     this,
                     "RN reveals cards from the top of his or her library until he or she reveals four land cards, then puts those cards into his or her graveyard."
@@ -18,12 +17,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = 4;
             final MagicPlayer player = event.getRefPlayer();
-            for(int i = 0; i < amount; ) {
-                if(player.getLibrary().size() <= 0){ i=amount; }
-                else {
-                    if(player.getLibrary().getCardAtTop().hasType(MagicType.Land)){ i++; }
-                    game.doAction(new MagicMillLibraryAction(player,1));
+            final MagicCardList library = player.getLibrary();
+            int landCards = 0;
+            while (landCards < amount && library.size() > 0) {
+                if (library.getCardAtTop().hasType(MagicType.Land)) {
+                    landCards++;
                 }
+                game.doAction(new MagicMillLibraryAction(player,1));
             }
         }
     }
