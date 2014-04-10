@@ -5,7 +5,6 @@ import magic.model.MagicColor;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
