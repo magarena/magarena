@@ -5,6 +5,8 @@ value=3.599
 rarity=R
 type=Creature
 subtype=Hydra
-ability=SN can't be countered.;haste;protection from blue;enters with counter +1/+1 X
+ability=SN can't be countered.;\
+        haste;protection from blue;\
+        SN enters the battlefield with X +1/+1 counters on it.
 cost={X}{G}
 timing=main

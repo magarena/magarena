@@ -6,5 +6,5 @@ rarity=R
 type=Land
 mana=g3u3
 ability={T}: Add {G} or {U} to your mana pool.;\
-        SN enters the battlefield tapped unless you control a forest island
+        SN enters the battlefield tapped unless you control a Forest or an Island.
 timing=land

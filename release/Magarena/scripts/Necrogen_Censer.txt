@@ -5,6 +5,6 @@ value=2.957
 rarity=C
 type=Artifact
 cost={3}
-ability=enters with counter charge 2;\
+ability=SN enters the battlefield with two charge counters on it.;\
         {T}, Remove a charge counter from SN: Target player loses 2 life.
 timing=artifact

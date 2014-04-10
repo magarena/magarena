@@ -6,7 +6,8 @@ rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{W/B}
-ability=lifelink;enters with counter -1/-1 4
+ability=lifelink;\
+        SN enters the battlefield with four -1/-1 counters on it.
 pt=6/6
 timing=main
 requires_groovy_code

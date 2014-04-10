@@ -8,6 +8,6 @@ subtype=Construct
 cost={7}
 pt=1/1
 ability=flying;\
-        enters with counter +1/+1 3;\
+        SN enters the battlefield with three +1/+1 counters on it.;\
         {1},Remove a +1/+1 counter from SN: Put a 1/1 colorless Triskelavite artifact creature token with flying onto the battlefield.
 timing=artifact

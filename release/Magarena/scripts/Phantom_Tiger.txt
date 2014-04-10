@@ -7,6 +7,6 @@ type=Creature
 subtype=Cat,Spirit
 cost={2}{G}
 pt=1/0
-ability=enters with counter +1/+1 2
+ability=SN enters the battlefield with two +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom_Nomad
