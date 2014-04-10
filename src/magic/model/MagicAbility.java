@@ -343,7 +343,7 @@ public enum MagicAbility {
     SelfOrAnotherEntersEffect("Whenever SN or another " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherComesIntoPlayTrigger.createSelfOrAnother(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg) + " you control"),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
@@ -351,7 +351,7 @@ public enum MagicAbility {
     AnotherEntersEffect("Whenever another " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherComesIntoPlayTrigger.createAnother(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg) + " you control"),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
@@ -359,7 +359,7 @@ public enum MagicAbility {
     OtherEntersEffect("Whenever a(n)? " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherComesIntoPlayTrigger.create(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg) + " you control"),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
