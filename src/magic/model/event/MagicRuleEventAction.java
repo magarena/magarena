@@ -1023,37 +1023,37 @@ public enum MagicRuleEventAction {
         }
     },
     CounterFromSelf(
-            "remove (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? from sn\\.",
-            MagicTiming.Pump
-        ) {
-            @Override
-            public MagicEventAction getAction(final Matcher matcher) {
-                final int amount = englishToInt(matcher.group("amount"));
-                final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
-                return new MagicEventAction() {
-                    @Override
-                    public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        game.doAction(new MagicChangeCountersAction(
-                            event.getPermanent(),
-                            counterType,
-                            -amount,
-                            true
-                        ));
-                    }
-                };
-            }
-            @Override
-            public String getName(final Matcher matcher) {
-                final int amount = englishToInt(matcher.group("amount"));
-                if (amount>1) {
-                    final String name = "+Counters";
-                    return name;
-                } else {
-                    final String name = "+Counter";
-                    return name;
+        "remove (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? from sn\\.",
+        MagicTiming.Pump
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = englishToInt(matcher.group("amount"));
+            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicChangeCountersAction(
+                        event.getPermanent(),
+                        counterType,
+                        -amount,
+                        true
+                    ));
                 }
+            };
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            final int amount = englishToInt(matcher.group("amount"));
+            if (amount>1) {
+                final String name = "+Counters";
+                return name;
+            } else {
+                final String name = "+Counter";
+                return name;
             }
-        },
+        }
+    },
     CounterOnChosen(
         "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (?<choice>[^\\.]*)\\."
     ) {
