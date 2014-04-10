@@ -9,6 +9,7 @@ import magic.model.MagicCounterType;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSoulbondEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -22,6 +23,19 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherComesIntoPlay;
+    }
+    
+    public static final MagicWhenOtherComesIntoPlayTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherComesIntoPlayTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
+                return filter.accept(permanent.getGame(), permanent.getController(), played);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
     }
 
     public static final MagicWhenOtherComesIntoPlayTrigger Evolve = new MagicWhenOtherComesIntoPlayTrigger() {

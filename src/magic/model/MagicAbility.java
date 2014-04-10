@@ -33,14 +33,12 @@ import magic.model.event.MagicAdditionalCost;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicAllyTrigger;
 import magic.model.trigger.MagicAnnihilatorTrigger;
 import magic.model.trigger.MagicBattleCryTrigger;
 import magic.model.trigger.MagicBecomesBlockedPumpTrigger;
 import magic.model.trigger.MagicBlockedByCreaturePumpTrigger;
 import magic.model.trigger.MagicBloodthirstTrigger;
 import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
-import magic.model.trigger.MagicConstellationTrigger;
 import magic.model.trigger.MagicCumulativeUpkeepTrigger;
 import magic.model.trigger.MagicDamageGrowTrigger;
 import magic.model.trigger.MagicDevourTrigger;
@@ -83,7 +81,6 @@ import magic.model.trigger.MagicExtortTrigger;
 import magic.model.trigger.MagicUnleashTrigger;
 import magic.model.trigger.MagicUndyingTrigger;
 import magic.model.trigger.MagicPersistTrigger;
-import magic.model.trigger.MagicLandfallTrigger;
 import magic.model.trigger.MagicCascadeTrigger;
 import magic.model.trigger.MagicWhenTargetedTrigger;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
@@ -343,23 +340,18 @@ public enum MagicAbility {
             ));
         }
     },
-    ConstellationEffect("Whenever SN or another Enchantment enters the battlefield under your control, " + ARG.EFFECT, 10) {
+    SelfOrAnotherEntersEffect("Whenever SN or another " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicConstellationTrigger.create(
+            card.add(MagicWhenOtherComesIntoPlayTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    AllyEffect("Whenever SN or another Ally enters the battlefield under your control, " + ARG.EFFECT, 10) {
+    OtherEntersEffect("Whenever a(n)? " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAllyTrigger.create(
-                MagicRuleEventAction.create(ARG.effect(arg))
-            ));
-        }
-    },
-    LandfallEffect("Whenever a land enters the battlefield under your control, " + ARG.EFFECT, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicLandfallTrigger.create(
+            card.add(MagicWhenOtherComesIntoPlayTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
