@@ -24,10 +24,7 @@ public class MagicFromCardListChoice extends MagicChoice {
     private final int amount;
 
     public MagicFromCardListChoice(final MagicCardList choiceList,final int amount) {
-        super(genDescription(amount));
-        this.choiceList=choiceList;
-        this.showList=choiceList;
-        this.amount=amount;
+        this(choiceList,choiceList,amount);
     }
     
     public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount) {
