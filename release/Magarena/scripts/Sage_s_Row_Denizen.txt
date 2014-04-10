@@ -1,0 +1,11 @@
+name=Sage's Row Denizen
+url=http://www.magiccards.info/query?q=%21sage%27s%20row%20denizen
+image=http://mtgimage.com/card/sage's%20row%20denizen.jpg
+value=2.512
+rarity=C
+type=Creature
+subtype=Vedalken,Wizard
+cost={2}{U}
+pt=2/3
+ability=Whenever another blue creature enters the battlefield under your control, target player puts the top two cards of his or her library into his or her graveyard.
+timing=main

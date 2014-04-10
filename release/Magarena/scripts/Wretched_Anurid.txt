@@ -1,0 +1,11 @@
+name=Wretched Anurid
+url=http://www.magiccards.info/query?q=%21wretched%20anurid
+image=http://mtgimage.com/card/wretched%20anurid.jpg
+value=3.145
+rarity=C
+type=Creature
+subtype=Zombie,Frog,Beast
+cost={1}{B}
+pt=3/3
+ability=Whenever another creature enters the battlefield, you lose 1 life.
+timing=main

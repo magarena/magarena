@@ -1,0 +1,11 @@
+name=Court Street Denizen
+url=http://www.magiccards.info/query?q=%21court%20street%20denizen
+image=http://mtgimage.com/card/court%20street%20denizen.jpg
+value=2.95
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=2/2
+ability=Whenever another white creature enters the battlefield under your control, tap target creature an opponent controls.
+timing=main

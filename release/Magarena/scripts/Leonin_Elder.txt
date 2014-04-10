@@ -1,0 +1,11 @@
+name=Leonin Elder
+url=http://www.magiccards.info/query?q=%21leonin%20elder
+image=http://mtgimage.com/card/leonin%20elder.jpg
+value=3.569
+rarity=C
+type=Creature
+subtype=Cat,Cleric
+cost={W}
+pt=1/1
+ability=Whenever an artifact enters the battlefield, you may gain 1 life.
+timing=main

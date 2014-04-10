@@ -1,0 +1,9 @@
+name=Lifegift
+url=http://www.magiccards.info/query?q=%21lifegift
+image=http://mtgimage.com/card/lifegift.jpg
+value=3.711
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=Whenever a land enters the battlefield, you may gain 1 life.
+timing=enchantment

@@ -1,0 +1,12 @@
+name=Kavu Monarch
+url=http://www.magiccards.info/query?q=%21kavu%20monarch
+image=http://mtgimage.com/card/kavu%20monarch.jpg
+value=4.244
+rarity=R
+type=Creature
+subtype=Kavu
+cost={2}{R}{R}
+pt=3/3
+ability=lord Kavu creatures have trample;\
+        Whenever another Kavu enters the battlefield, put a +1/+1 counter on SN.
+timing=main

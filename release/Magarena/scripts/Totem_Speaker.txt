@@ -1,0 +1,11 @@
+name=Totem Speaker
+url=http://www.magiccards.info/query?q=%21totem%20speaker
+image=http://mtgimage.com/card/totem%20speaker.jpg
+value=2
+rarity=U
+type=Creature
+subtype=Elf,Druid
+cost={4}{G}
+pt=3/3
+ability=Whenever a Beast enters the battlefield, you may gain 3 life.
+timing=main

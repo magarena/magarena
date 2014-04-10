@@ -1,0 +1,12 @@
+name=Stone-Seeder Hierophant
+url=http://www.magiccards.info/query?q=%21stone%2Dseeder%20hierophant
+image=http://mtgimage.com/card/stone-seeder%20hierophant.jpg
+value=2.862
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={2}{G}{G}
+pt=1/1
+ability=Whenever a land enters the battlefield under your control, untap SN.;\
+        {T}: Untap target land.
+timing=main

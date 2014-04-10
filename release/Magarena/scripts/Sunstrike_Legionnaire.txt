@@ -1,0 +1,13 @@
+name=Sunstrike Legionnaire
+url=http://www.magiccards.info/query?q=%21sunstrike%20legionnaire
+image=http://mtgimage.com/card/sunstrike%20legionnaire.jpg
+value=3.346
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=1/2
+ability=SN doesn't untap during your untap step.;\
+        Whenever another creature enters the battlefield, untap SN.;\
+        {T}: Tap target creature with converted mana cost 3 or less.
+timing=main
