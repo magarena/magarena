@@ -36,21 +36,5 @@
                 game.doAction(new MagicChangeCountersAction(creature,MagicCounterType.PlusOne,3,true));
             });
         }
-    },
-    
-    new MagicLandfallTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "PN gains 3 life."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPermanent().getController(),3));
-        }
     }
 ]

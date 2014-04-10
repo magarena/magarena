@@ -7,5 +7,6 @@ type=Creature
 subtype=Rat
 cost={2}{B}
 pt=1/1
+ability=Whenever a land enters the battlefield under your control, you may untap SN.
 timing=main
 requires_groovy_code

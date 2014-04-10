@@ -7,29 +7,6 @@ def EQUIPMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
 };
 
 [
-    new MagicWhenOtherComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isEquipment() && otherPermanent.isFriend(permanent)) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.DRAW_CARDS,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_NONE
-                    ),
-                    this,
-                    "PN may\$ draw a card."
-                ) :
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer()));
-            }
-        }
-    },
     new MagicStatic(
         MagicLayer.Ability,
         EQUIPMENT_YOU_CONTROL
