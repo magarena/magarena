@@ -19,12 +19,21 @@ import java.util.Set;
 public class MagicFromCardListChoice extends MagicChoice {
 
     private static final String MESSAGE="Choose a card.";
-    private final MagicCardList cardList;
+    private final MagicCardList showList;
+    private final MagicCardList choiceList;
     private final int amount;
 
-    public MagicFromCardListChoice(final MagicCardList cardList,final int amount) {
+    public MagicFromCardListChoice(final MagicCardList choiceList,final int amount) {
         super(genDescription(amount));
-        this.cardList=cardList;
+        this.choiceList=choiceList;
+        this.showList=choiceList;
+        this.amount=amount;
+    }
+    
+    public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount) {
+        super(genDescription(amount));
+        this.choiceList=choiceList;
+        this.showList=showList;
         this.amount=amount;
     }
 
@@ -67,7 +76,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object> options = new ArrayList<Object>();
-        final MagicCardList cList = new MagicCardList(this.cardList);
+        final MagicCardList cList = new MagicCardList(this.choiceList);
         Collections.sort(cList);
         final int actualAmount = Math.min(amount,cList.size());
         if (actualAmount > 0) {
@@ -86,11 +95,11 @@ public class MagicFromCardListChoice extends MagicChoice {
             final MagicSource source) throws UndoClickedException {
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
-        final Set<Object> validCards=new HashSet<Object>(this.cardList);
+        final Set<Object> validCards=new HashSet<Object>(this.choiceList);
         int actualAmount=Math.min(amount,validCards.size());
         for (;actualAmount>0;actualAmount--) {
             final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
-            controller.showCards(this.cardList);
+            controller.showCards(this.showList);
             controller.focusViewers(5,-1);
             controller.disableActionButton(false);
             controller.setValidChoices(validCards,false);
@@ -100,6 +109,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             validCards.remove(card);
             result.add(card);
         }
+        controller.clearCards();
         controller.focusViewers(0,-1);
         return new Object[]{result};
     }
