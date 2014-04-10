@@ -4,7 +4,9 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicCounterType;
 import magic.model.event.MagicEvent;
+import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicDestroyAction;
@@ -65,6 +67,23 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicDestroyAction(event.getPermanent()));
+        }
+    };
+    
+    public static final MagicAtEndOfCombatTrigger Clockwork = new MagicAtEndOfCombatTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eocPlayer) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "Remove a +1/+1 counter from SN."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            if (event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
+                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1,true));
+            }
         }
     };
 }
