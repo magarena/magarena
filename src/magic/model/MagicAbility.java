@@ -26,6 +26,7 @@ import magic.model.event.MagicKickerCost;
 import magic.model.event.MagicMultikickerCost;
 import magic.model.event.MagicMonstrosityActivation;
 import magic.model.event.MagicBestowActivation;
+import magic.model.event.MagicTransmuteActivation;
 import magic.model.event.MagicRuleEventAction;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.model.event.MagicAdditionalCost;
@@ -658,6 +659,12 @@ public enum MagicAbility {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
             card.add(new MagicEvokeActivation(manaCost));
             card.add(MagicWhenComesIntoPlayTrigger.Evoke);
+        }
+    },
+    Transmute("transmute " + ARG.COST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            card.add(new MagicTransmuteActivation(manaCost));
         }
     },
     Evolve("evolve", 20) {
