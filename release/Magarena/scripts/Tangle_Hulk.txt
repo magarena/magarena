@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Beast
 cost={5}
 pt=5/3
-ability=regenerate {2}{G}
+ability={2}{G}: Regenerate SN.
 timing=main

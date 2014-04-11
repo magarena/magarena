@@ -8,5 +8,5 @@ subtype=Rhino,Beast
 cost={4}{G}{G}
 pt=5/5
 timing=main
-ability=regenerate {2}{G}
+ability={2}{G}: Regenerate SN.
 requires_groovy_code

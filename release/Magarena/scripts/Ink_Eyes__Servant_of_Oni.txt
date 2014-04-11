@@ -7,6 +7,7 @@ type=Legendary,Creature
 subtype=Rat,Ninja
 cost={4}{B}{B}
 pt=5/4
-ability=ninjutsu {3}{B}{B};regenerate {1}{B}
+ability=ninjutsu {3}{B}{B};\
+        {1}{B}: Regenerate SN.
 timing=main
 requires_groovy_code

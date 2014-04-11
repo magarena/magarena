@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={2}{B}
 pt=1/1
-ability=regenerate {B};\
+ability={B}: Regenerate SN.;\
         Whenever SN deals combat damage to a player, that player discards a card.
 timing=main

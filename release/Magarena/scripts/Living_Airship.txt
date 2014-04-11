@@ -7,5 +7,6 @@ type=Creature
 subtype=Metathran
 cost={3}{U}
 pt=2/3
-ability=flying;regenerate {2}{G}
+ability=flying;\
+        {2}{G}: Regenerate SN.
 timing=main

@@ -7,5 +7,6 @@ type=Creature
 subtype=Cat,Spirit
 cost={1}{W}
 pt=2/1
-ability=protection from green;regenerate {B}
+ability=protection from green;\
+        {B}: Regenerate SN.
 timing=main

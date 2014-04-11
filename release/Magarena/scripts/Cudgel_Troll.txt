@@ -7,5 +7,5 @@ type=Creature
 subtype=Troll
 cost={2}{G}{G}
 pt=4/3
+ability={G}: Regenerate SN.
 timing=main
-ability=regenerate {G}

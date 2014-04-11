@@ -9,5 +9,5 @@ cost={3}{B}{G}
 pt=6/6
 timing=main
 ability=Whenever SN deals damage to a creature, put a +1/+1 counter on SN.;\
-        regenerate {B}
+        {B}: Regenerate SN.
 requires_groovy_code
