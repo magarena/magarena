@@ -7,20 +7,16 @@ def HAS_EXILED_BEFORE_CONDITION = new MagicCondition() {
 
 def public class ExileCardFromHandAction extends MagicAction {
     private final MagicPermanent source;
-    private final MagicPermanent permanent;
     private final MagicCard card;
-    private final MagicLocationType location;
 
     public ExileCardFromHandAction(final MagicPermanent source,final MagicCard card){
         this.source = source;
-        this.permanent = MagicPermanent.NONE;
         this.card = card;
-        this.location = MagicLocationType.OwnersHand;
     }
     
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicRemoveCardAction(card,location));
-        game.doAction(new MagicMoveCardAction(card,location,MagicLocationType.Exile));
+        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersHand));
+        game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
         source.addExiledCard(card);
     }
     
@@ -31,20 +27,16 @@ def public class ExileCardFromHandAction extends MagicAction {
 
 def public class ReclaimExiledCardAction extends MagicAction {
     private final MagicPermanent source;
-    private final MagicPermanent permanent;
     private final MagicCard card;
-    private final MagicLocationType location;
 
     public ReclaimExiledCardAction(final MagicPermanent source,final MagicCard card){
         this.source = source;
-        this.permanent = MagicPermanent.NONE;
         this.card = card;
-        this.location = MagicLocationType.Exile;
     }
     
     public void doAction(final MagicGame game) {
-        game.doAction(new MagicRemoveCardAction(card,location));
-        game.doAction(new MagicMoveCardAction(card,location,MagicLocationType.OwnersHand));
+        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Exile));
+        game.doAction(new MagicMoveCardAction(card, MagicLocationType.Exile, MagicLocationType.OwnersHand));
         source.removeExiledCard(card);
     }
     
