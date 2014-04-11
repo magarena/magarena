@@ -4,6 +4,7 @@ def HAS_EXILED_BEFORE_CONDITION = new MagicCondition() {
         return permanent.getExiledCards().size() > 0;
     }
 };
+
 def public class ExileCardFromHandAction extends MagicAction {
     private final MagicPermanent source;
     private final MagicPermanent permanent;
@@ -27,6 +28,7 @@ def public class ExileCardFromHandAction extends MagicAction {
         source.removeExiledCard(card);
     }
 };
+
 def public class ReclaimExiledCardAction extends MagicAction {
     private final MagicPermanent source;
     private final MagicPermanent permanent;
@@ -50,6 +52,7 @@ def public class ReclaimExiledCardAction extends MagicAction {
         source.addExiledCard(card);
     }
 };
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Draw),
@@ -76,7 +79,7 @@ def public class ReclaimExiledCardAction extends MagicAction {
             return new MagicEvent(
                 source,
                 MagicTargetChoice.A_CARD_FROM_HAND,
-                MagicExileTargetPicker.create(),
+                MagicGraveyardTargetPicker.ExileOwn,
                 1,
                 this,
                 "PN exiles a card\$ from his or her hand."
