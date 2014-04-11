@@ -6,5 +6,5 @@ rarity=R
 type=Artifact
 cost={7}
 timing=artifact
-ability=When SN dies, return SN from the graveyard to its owner's hand.;\
+ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.;\
         When SN enters the battlefield, destroy target permanent.

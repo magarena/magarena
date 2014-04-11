@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={4}{U}
 enchant=gain control,creature
-ability=When SN dies, return SN from the graveyard to its owner's hand.
+ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=enchantment
 requires_groovy_code=Unhallowed Pact

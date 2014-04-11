@@ -8,4 +8,4 @@ subtype=Human,Cleric
 cost={B}
 pt=1/1
 timing=main
-requires_groovy_code
+ability=Whenever an artifact is put into a graveyard from the battlefield, you may have target opponent lose 1 life.

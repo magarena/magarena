@@ -8,5 +8,5 @@ subtype=Aura
 cost={1}{W}
 timing=aura
 enchant=lifelink,creature you control
-ability=When SN dies, return SN from the graveyard to its owner's hand.
+ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 requires_groovy_code=Spirit Link
