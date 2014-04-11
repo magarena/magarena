@@ -5,5 +5,5 @@ value=3.769
 rarity=U
 type=Sorcery
 cost={G}
+effect=Put target card from your graveyard on top of your library.
 timing=main
-requires_groovy_code=Reclaim

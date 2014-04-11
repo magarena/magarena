@@ -5,5 +5,5 @@ value=3.454
 rarity=C
 type=Instant
 cost={G}
+effect=Put target card from your graveyard on top of your library.
 timing=draw
-requires_groovy_code

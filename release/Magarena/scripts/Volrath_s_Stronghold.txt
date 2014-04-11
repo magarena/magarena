@@ -4,6 +4,6 @@ image=http://mtgimage.com/card/volrath's%20stronghold.jpg
 value=4.453
 rarity=R
 type=Legendary,Land
-ability={T}: Add {1} to your mana pool.
+ability={T}: Add {1} to your mana pool.;\
+        {1}{B}, {T}: Put target creature card from your graveyard on top of your library.
 timing=land
-requires_groovy_code

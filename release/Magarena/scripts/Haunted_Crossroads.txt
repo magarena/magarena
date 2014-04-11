@@ -5,5 +5,5 @@ value=4.173
 rarity=U
 type=Enchantment
 cost={2}{B}
+ability={B}: Put target creature card from your graveyard on top of your library.
 timing=enchantment
-requires_groovy_code
