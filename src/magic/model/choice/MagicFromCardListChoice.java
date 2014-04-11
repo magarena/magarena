@@ -32,7 +32,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         this(choiceList, showList, amount, false);
     }
     
-    public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount, final boolean ) {
+    public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount, final boolean upTo) {
         super(genDescription(amount));
         this.choiceList = choiceList;
         this.showList = showList;
