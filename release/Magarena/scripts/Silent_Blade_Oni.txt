@@ -1,0 +1,12 @@
+name=Silent-Blade Oni
+url=http://magiccards.info/query?q=%21silent-Blade%20oni
+image=http://mtgimage.com/card/silent-blade%20oni.jpg
+value=4.292
+rarity=R
+type=Creature
+subtype=Demon,Ninja
+cost={3}{U}{U}{B}{B}
+pt=6/5
+ability=ninjutsu {4}{U}{B}
+timing=main
+requires_groovy_code
