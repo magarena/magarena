@@ -869,6 +869,14 @@ public enum MagicAbility {
             ));
         }
     },
+    PlayerCastSpellEffect("Whenever a player casts a(n)? (?<wordrun>[^\\.]*spell), " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherSpellIsCastTrigger.create(
+                MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     Graft("graft " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
