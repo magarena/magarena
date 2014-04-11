@@ -52,6 +52,7 @@ import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicDefaultTargetPicker;
+import magic.model.target.MagicDefaultPermanentTargetPicker;
 import magic.model.target.MagicDestroyTargetPicker;
 import magic.model.target.MagicExileTargetPicker;
 import magic.model.target.MagicDamageTargetPicker;
@@ -1591,7 +1592,43 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ;
+    SwitchPTSelf(
+        "switch SN's power and toughness until end of turn\\.",
+        MagicTiming.Pump,
+        "Switch"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicAddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
+                }
+            };
+        }
+    },
+    SwitchPTChosen(
+        "switch (?<choice>[^\\.]*)'s power and toughness until end of turn\\.", 
+        MagicTargetHint.None,
+        MagicDefaultPermanentTargetPicker.create(),
+        MagicTiming.Pump,
+        "Switch"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPermanent(game,new MagicPermanentAction() {
+                        public void doAction(final MagicPermanent creature) {
+                            game.doAction(new MagicAddStaticAction(creature, MagicStatic.SwitchPT));
+                        }
+                    });
+                }
+            };
+        }
+    }
+;
 
     private final Pattern pattern;
     private final MagicTargetHint hint;

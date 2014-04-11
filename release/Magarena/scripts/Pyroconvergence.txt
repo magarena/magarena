@@ -1,0 +1,9 @@
+name=Pyroconvergence
+url=http://www.magiccards.info/query?q=%21pyroconvergence
+image=http://mtgimage.com/card/pyroconvergence.jpg
+value=1.855
+rarity=U
+type=Enchantment
+cost={4}{R}
+ability=Whenever you cast a multicolored spell, SN deals 2 damage to target creature or player.
+timing=enchantment

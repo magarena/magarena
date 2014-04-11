@@ -1,0 +1,12 @@
+name=Wee Dragonauts
+url=http://www.magiccards.info/query?q=%21wee%20dragonauts
+image=http://mtgimage.com/card/wee%20dragonauts.jpg
+value=4.263
+rarity=C
+type=Creature
+subtype=Faerie,Wizard
+cost={1}{U}{R}
+pt=1/3
+ability=Flying;\
+        Whenever you cast an instant or sorcery spell, SN gets +2/+0 until end of turn.
+timing=main

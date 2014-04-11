@@ -1,0 +1,14 @@
+name=Inspired Sprite
+url=http://www.magiccards.info/query?q=%21inspired%20sprite
+image=http://mtgimage.com/card/inspired%20sprite.jpg
+value=3.083
+rarity=U
+type=Creature
+subtype=Faerie,Wizard
+cost={3}{U}
+pt=2/2
+ability=Flash;\
+        Flying;\
+        Whenever you cast a Wizard spell, you may untap SN.;\
+        {T}: Draw a card, then discard a card.
+timing=main

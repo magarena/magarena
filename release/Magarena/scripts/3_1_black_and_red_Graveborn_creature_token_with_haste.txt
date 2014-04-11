@@ -1,0 +1,10 @@
+name=3/1 black and red Graveborn creature token with haste
+token=Graveborn
+image=http://cdn.staticneo.com/w/mtg/6/6b/Graveborn.jpg
+value=3
+type=Creature
+subtype=Graveborn
+color=BR
+cost={0}
+pt=3/1
+ability=haste

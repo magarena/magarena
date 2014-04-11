@@ -1,0 +1,11 @@
+name=Pawn of Ulamog
+url=http://www.magiccards.info/query?q=%21pawn%20of%20ulamog
+image=http://mtgimage.com/card/pawn%20of%20ulamog.jpg
+value=3.971
+rarity=U
+type=Creature
+subtype=Vampire,Shaman
+cost={1}{B}{B}
+pt=2/2
+ability=Whenever SN or another nontoken creature you control dies, you may put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield.
+timing=main

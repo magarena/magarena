@@ -1,0 +1,12 @@
+name=Ballynock Trapper
+url=http://www.magiccards.info/query?q=%21ballynock%20trapper
+image=http://mtgimage.com/card/ballynock%20trapper.jpg
+value=3.259
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={3}{W}
+pt=2/2
+ability={T}: Tap target creature.;\
+        Whenever you cast a white spell, you may untap SN.
+timing=main

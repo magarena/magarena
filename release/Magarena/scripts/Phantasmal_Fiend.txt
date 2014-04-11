@@ -7,5 +7,6 @@ type=Creature
 subtype=Illusion
 cost={3}{B}
 pt=1/5
-ability={B}: SN gets +1/-1 until end of turn.;switch pt {1}{U}
+ability={B}: SN gets +1/-1 until end of turn.;\
+        {1}{U}: Switch SN's power and toughness until end of turn.
 timing=main
