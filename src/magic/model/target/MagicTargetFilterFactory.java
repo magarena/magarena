@@ -94,6 +94,25 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicStackFilterImpl BLUE_OR_BLACK_OR_RED_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && (
+                itemOnStack.hasColor(MagicColor.Blue) ||
+                itemOnStack.hasColor(MagicColor.Black) ||
+                itemOnStack.hasColor(MagicColor.Red));
+        }
+    };
+    
+    public static final MagicStackFilterImpl WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && (
+                itemOnStack.hasColor(MagicColor.White) ||
+                itemOnStack.hasColor(MagicColor.Blue) ||
+                itemOnStack.hasColor(MagicColor.Black) ||
+                itemOnStack.hasColor(MagicColor.Red));
+        }
+    };
+    
     public static final MagicStackFilterImpl CREATURE_OR_AURA_SPELL = MagicTargetFilterFactory.spellOr(MagicType.Creature, MagicSubType.Aura);
     
     public static final MagicStackFilterImpl CREATURE_OR_SORCERY_SPELL = MagicTargetFilterFactory.spellOr(MagicType.Creature, MagicType.Sorcery);
@@ -1261,6 +1280,8 @@ public class MagicTargetFilterFactory {
         single.put("noncreature spell", NONCREATURE_SPELL);
         single.put("artifact or enchantment spell", ARTIFACT_OR_ENCHANTMENT_SPELL);
         single.put("red or green spell", RED_OR_GREEN_SPELL);
+        single.put("blue, black, or red spell", BLUE_OR_BLACK_OR_RED_SPELL);
+        single.put("white, blue, black, or red spell", WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("nonblue spell", NONBLUE_SPELL);
         single.put("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
         single.put("creature or Aura spell", CREATURE_OR_AURA_SPELL);
@@ -1425,6 +1446,11 @@ public class MagicTargetFilterFactory {
         for (final MagicType t : MagicType.values()) {
             if (prefix.equalsIgnoreCase(t.toString())) {
                 return spell(t);
+            }
+        }
+        for (final MagicSubType st : MagicSubType.values()) {
+            if (prefix.equalsIgnoreCase(st.toString())) {
+                return spell(st);
             }
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
@@ -1656,6 +1682,13 @@ public class MagicTargetFilterFactory {
         return new MagicStackFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(type);
+            }
+        };
+    }
+    public static final MagicStackFilterImpl spell(final MagicSubType subType) {
+        return new MagicStackFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+                return itemOnStack.isSpell(subType);
             }
         };
     }
