@@ -1208,6 +1208,28 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    Reclaim(
+        "put (?<choice>[^\\.]*from your graveyard) on top of your library\\.",
+        MagicTargetHint.None,
+        MagicGraveyardTargetPicker.ReturnToHand,
+        MagicTiming.Draw,
+        "Reclaim",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetCard(game, new MagicCardAction() {
+                    public void doAction(final MagicCard targetCard) {
+                        game.doAction(new MagicRemoveCardAction(targetCard,MagicLocationType.Graveyard));
+                        game.doAction(new MagicMoveCardAction(
+                            targetCard,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.TopOfOwnersLibrary
+                        ));
+                    }
+                });
+            }
+        }
+    ),
     SearchLibraryToHand(
         "search your library for (?<choice>[^\\.]*), reveal (it|that card), and put it into your hand. (If you do,|Then) shuffle your library\\.",
         MagicTiming.Draw,
