@@ -88,7 +88,7 @@ import magic.model.trigger.MagicHeroicTrigger;
 import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
 import magic.model.trigger.MagicWhenSelfBecomesUntappedTrigger;
-import magic.model.trigger.MagicWhenYouCastSpiritOrArcaneTrigger;
+import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 import magic.model.trigger.MagicTributeTrigger;
 
 import java.util.EnumSet;
@@ -836,9 +836,10 @@ public enum MagicAbility {
             ));
         }
     },
-    SpiritOrArcaneEffect("Whenever you cast a Spirit or Arcane spell, " + ARG.EFFECT, 10) {
+    YouCastSpellEffect("Whenever you cast a " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenYouCastSpiritOrArcaneTrigger.create(
+            card.add(MagicWhenOtherSpellIsCastTrigger.createYou(
+                MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

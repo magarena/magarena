@@ -1302,6 +1302,10 @@ public class MagicTargetFilterFactory {
         return (MagicTargetFilter<MagicPermanent>)single(arg);
     }
     
+    public static MagicTargetFilter<MagicItemOnStack> singleItemOnStack(final String arg) {
+        return (MagicTargetFilter<MagicItemOnStack>)single(arg);
+    }
+    
     public static MagicTargetFilter<?> single(final String arg) {
         final String filter = arg.replaceFirst(" to sacrifice$", " you control");
         if (single.containsKey(filter)) {
