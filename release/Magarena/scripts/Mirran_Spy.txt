@@ -7,6 +7,6 @@ type=Creature
 subtype=Drone
 cost={2}{U}
 pt=1/3
-ability=flying
+ability=flying;\
+        Whenever you cast an artifact spell, you may untap target creature.
 timing=main
-requires_groovy_code

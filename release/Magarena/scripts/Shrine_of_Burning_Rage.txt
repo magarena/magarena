@@ -5,5 +5,7 @@ value=3.742
 rarity=U
 type=Artifact
 cost={2}
+ability=At the beginning of your upkeep, put a charge counter on SN.;\
+        Whenever you cast a red spell, put a charge counter on SN.
 timing=artifact
 requires_groovy_code

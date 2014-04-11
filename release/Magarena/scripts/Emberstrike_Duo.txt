@@ -7,5 +7,6 @@ type=Creature
 subtype=Elemental,Warrior,Shaman
 cost={1}{B/R}
 pt=1/1
+ability=Whenever you cast a black spell, SN gets +1/+1 until end of turn.;\
+        Whenever you cast a red spell, SN gains first strike until end of turn.
 timing=main
-requires_groovy_code

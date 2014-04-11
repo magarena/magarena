@@ -1,44 +1,4 @@
-def action = {
-    final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicChangeCountersAction(
-        event.getPermanent(),
-        MagicCounterType.Charge,
-        1,
-        true
-    ));
-}
-
-def getEvent = {
-    final MagicPermanent permanent ->
-    new MagicEvent(
-        permanent,
-        action,
-        "Put a charge counter on SN."
-    );
-}
-
 [
-    new MagicAtUpkeepTrigger() {
-        @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer upkeepPlayer) {
-            return permanent.isController(upkeepPlayer) ?
-                getEvent(permanent) : MagicEvent.NONE;
-        }
-    },
-    new MagicWhenOtherSpellIsCastTrigger() {
-        @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicCardOnStack cardOnStack) {
-            return (permanent.isFriend(cardOnStack) &&
-                    cardOnStack.hasColor(MagicColor.Red)) ?
-                getEvent(permanent) : MagicEvent.NONE;
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"

@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental,Shaman
 cost={2}{R}
 pt=0/1
-ability={T}:SN deals 1 damage to target player.
+ability={T}:SN deals 1 damage to target player.;\
+        Whenever you cast a red spell, you may untap SN.
 timing=main
-requires_groovy_code

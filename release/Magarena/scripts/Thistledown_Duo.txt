@@ -7,5 +7,6 @@ type=Creature
 subtype=Kithkin,Soldier,Wizard
 cost={2}{W/U}
 pt=2/2
+ability=Whenever you cast a white spell, SN gets +1/+1 until end of turn.;\
+        Whenever you cast a blue spell, SN gains flying until end of turn.
 timing=main
-requires_groovy_code

@@ -7,6 +7,6 @@ type=Creature
 subtype=Djinn
 cost={5}{U}{U}{U}
 pt=5/5
-ability=flying
+ability=flying;\
+        Whenever you cast a spell, return target permanent to its owner's hand.
 timing=main
-requires_groovy_code

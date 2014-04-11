@@ -7,5 +7,5 @@ type=Creature
 subtype=Dryad
 cost={1}{G}
 pt=1/1
+ability=Whenever you cast a white, blue, black, or red spell, put a +1/+1 counter on SN.
 timing=fmain
-requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=2/2
+ability=Whenever you cast a red spell, target creature can't block this turn.
 timing=main
-requires_groovy_code

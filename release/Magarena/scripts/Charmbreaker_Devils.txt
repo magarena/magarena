@@ -7,5 +7,6 @@ type=Creature
 subtype=Devil
 cost={5}{R}
 pt=4/4
+ability=Whenever you cast an instant or sorcery spell, SN gets +4/+0 until end of turn.
 timing=main
 requires_groovy_code

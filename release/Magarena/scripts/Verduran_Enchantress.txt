@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Druid
 cost={1}{G}{G}
 pt=0/2
+ability=Whenever you cast an enchantment spell, you may draw a card.
 timing=fmain
-requires_groovy_code=Mesa Enchantress

@@ -8,7 +8,8 @@ subtype=Spirit,Horror
 cost={2}{R/W}{R/W}{R/W}
 pt=2/4
 ability=lord other red creatures you control get +1/+1;\
-        lord other white creatures you control get +1/+1
+        lord other white creatures you control get +1/+1;\
+        Whenever you cast a red spell, SN deals 3 damage to target player.;\
+        Whenever you cast a white spell, you gain 3 life.
 static=player
 timing=main
-requires_groovy_code

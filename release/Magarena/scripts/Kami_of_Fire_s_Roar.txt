@@ -7,5 +7,5 @@ type=Creature
 subtype=Spirit
 cost={3}{R}
 pt=2/3
+ability=Whenever you cast a Spirit or Arcane spell, target creature can't block this turn.
 timing=main
-requires_groovy_code

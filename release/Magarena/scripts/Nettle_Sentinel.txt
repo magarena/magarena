@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={G}
 pt=2/2
-ability=SN doesn't untap during your untap step.
+ability=SN doesn't untap during your untap step.;\
+        Whenever you cast a green spell, you may untap SN.
 timing=main
-requires_groovy_code
