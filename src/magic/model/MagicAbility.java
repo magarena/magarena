@@ -74,6 +74,7 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 import magic.model.trigger.MagicWhenSelfLeavesPlayTrigger;
 import magic.model.trigger.MagicWhenDiesTrigger;
+import magic.model.trigger.MagicWhenOtherDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
@@ -645,9 +646,25 @@ public enum MagicAbility {
             ));
         }
     },
-    DiesEffect("When SN dies, " + ARG.EFFECT, 10) {
+    SelfDiesEffect("When SN dies, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDiesTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    AnotherDiesEffect("Whenever another " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDiesTrigger.createAnother(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    OtherDiesEffect("Whenever a(n)? " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDiesTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
