@@ -639,14 +639,14 @@ public enum MagicAbility {
             ));
         }
     },
-    SelfDiesEffect("When SN dies, " + ARG.EFFECT, 10) {
+    SelfDiesEffect("When SN (dies|is put into a graveyard from the battlefield), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDiesTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
-    SelfOrAnotherDiesEffect("Whenever SN or another " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+    SelfOrAnotherDiesEffect("Whenever SN or another " + ARG.WORDRUN + " (dies|is put into a graveyard from the battlefield), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherDiesTrigger.createSelfOrAnother(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
@@ -654,7 +654,7 @@ public enum MagicAbility {
             ));
         }
     },
-    AnotherDiesEffect("Whenever another " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+    AnotherDiesEffect("Whenever another " + ARG.WORDRUN + " (dies|is put into a graveyard from the battlefield), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherDiesTrigger.createAnother(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
@@ -662,7 +662,7 @@ public enum MagicAbility {
             ));
         }
     },
-    OtherDiesEffect("Whenever a(n)? " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+    OtherDiesEffect("Whenever a(n)? " + ARG.WORDRUN + " (dies|is put into a graveyard from the battlefield), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherDiesTrigger.create(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
