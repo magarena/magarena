@@ -100,17 +100,29 @@ public class MagicFromCardListChoice extends MagicChoice {
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(this.choiceList);
         int actualAmount=Math.min(amount,validCards.size());
-        for (;actualAmount>0;actualAmount--) {
+        if (actualAmount == 0) {
             final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
             controller.showCards(this.showList);
             controller.focusViewers(5,-1);
-            controller.disableActionButton(false);
-            controller.setValidChoices(validCards,false);
-            controller.showMessage(source,message);
-            controller.waitForInput();
-            final MagicCard card = controller.getChoiceClicked();
-            validCards.remove(card);
-            result.add(card);
+            controller.disableActionUndoButton(true);
+            controller.pause(10);
+            controller.clearCards();
+            controller.focusViewers(0,-1);
+            return new Object[]{result};
+        } else {
+	    for (;actualAmount>0;actualAmount--) {
+                final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
+                controller.showCards(this.showList);
+                controller.focusViewers(5,-1);
+                controller.disableActionButton(false);
+                controller.disableActionUndoButton(true);
+                controller.setValidChoices(validCards,false);
+                controller.showMessage(source,message);
+                controller.waitForInput();
+                final MagicCard card = controller.getChoiceClicked();
+                validCards.remove(card);
+                result.add(card);
+            }
         }
         controller.clearCards();
         controller.focusViewers(0,-1);
