@@ -5,16 +5,15 @@
             return permanent.isController(upkeepPlayer) && permanent.getEnchantedPermanent().getEquippedCreature().isValid() ?
                 new MagicEvent(
                     permanent,
+                    permanent.getEnchantedPermanent().getEquippedCreature(),
                     this,
-                    "Destroy equipped creature. ("+permanent.getEnchantedPermanent().getEquippedCreature()+")"
+                    "Destroy RN."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPermanent().getEnchantedPermanent().getEquippedCreature().isValid()) {
-                game.doAction(new MagicDestroyAction(event.getPermanent().getEnchantedPermanent().getEquippedCreature()));
-            }
+            game.doAction(new MagicDestroyAction(event.getRefPermanent()));
         }
     }
 ]
