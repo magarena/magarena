@@ -1,0 +1,11 @@
+name=Merfolk Thaumaturgist
+url=http://www.magiccards.info/query?q=%21merfolk%20thaumaturgist
+image=http://mtgimage.com/card/merfolk%20thaumaturgist.jpg
+value=3.64
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{U}
+pt=1/2
+ability={T}: Switch target creature's power and toughness until end of turn.
+timing=main
