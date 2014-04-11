@@ -7,5 +7,6 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{U}
 pt=1/4
-ability=changeling;switch pt {1}{U}
+ability=changeling;\
+        {1}{U}: Switch SN's power and toughness until end of turn.
 timing=main
