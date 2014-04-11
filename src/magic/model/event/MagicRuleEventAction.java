@@ -1255,7 +1255,7 @@ public enum MagicRuleEventAction {
             }
         },
     SearchLibraryToBattlefield(
-        "search your library for (?<choice>[^\\.]*) and put it onto the battlefield(?<tapped>[^\\.]*). Then shuffle your library\\.",
+        "search your library for (?<choice>[^\\.]*)(,| and) put it onto the battlefield(?<tapped>[^\\.]*)(. T|, t)hen shuffle your library\\.",
         MagicTiming.Pump,
         "Search"
     ) {
