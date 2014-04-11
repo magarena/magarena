@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if(event.getPermanent().isUntapped()){
+            if (event.getPermanent().isUntapped()){
                 game.doAction(new MagicChangeLifeAction(event.getPlayer(), 3));
             }else{
                 game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(), -3));

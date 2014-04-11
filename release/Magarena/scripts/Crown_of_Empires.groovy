@@ -30,7 +30,7 @@
             final MagicTargetFilter<MagicPermanent> scepter = new MagicNameTargetFilter("Scepter of Empires");
             final MagicSource source = event.getSource();
             final MagicPlayer player = source.getController();
-            if(player.controlsPermanent(throne) && player.controlsPermanent(scepter)){
+            if (player.controlsPermanent(throne) && player.controlsPermanent(scepter)){
                 event.processTargetPermanent(game, {
                     final MagicPermanent perm ->
                     game.doAction(new MagicGainControlAction(

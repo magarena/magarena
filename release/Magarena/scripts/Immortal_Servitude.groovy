@@ -20,7 +20,7 @@
                 MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD
             );
             for (final MagicCard card : targets) {
-                if(card.getConvertedCost() == amount){
+                if (card.getConvertedCost() == amount){
                     game.doAction(new MagicReanimateAction(
                         card, 
                         player

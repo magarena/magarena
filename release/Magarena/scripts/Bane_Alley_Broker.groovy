@@ -85,11 +85,11 @@ def public class ReclaimExiledCardAction extends MagicAction {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if(event.getRefInt() == 0) {
+            if (event.getRefInt() == 0) {
                game.doAction(new MagicDrawAction(event.getPlayer(),1));
                game.addEvent(exileCardFromHandEvent(event.getPermanent()));
             }
-            if(event.getRefInt() == 1) {
+            if (event.getRefInt() == 1) {
                 event.processTargetCard(game, {
                     final MagicCard card ->
                     game.doAction(new ExileCardFromHandAction(event.getPermanent(),card));
@@ -120,7 +120,7 @@ def public class ReclaimExiledCardAction extends MagicAction {
         }       
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if(event.getCardChoice().size() > 0) {
+            if (event.getCardChoice().size() > 0) {
                 final MagicCard card = event.getCardChoice().get(0);
                 game.doAction(new ReclaimExiledCardAction(event.getPermanent(),card));
             }

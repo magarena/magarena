@@ -21,7 +21,7 @@ def public MagicPermanentActivation ThrowIt(final MagicPermanent source) {
                 final MagicTarget target ->
                 final MagicDamage damage = new MagicDamage(source, target, 2);
                 game.doAction(new MagicDealDamageAction(damage));
-                if(!event.getPermanent().hasSubType(MagicSubType.Ninja)) {
+                if (!event.getPermanent().hasSubType(MagicSubType.Ninja)) {
                     game.doAction(new MagicGainControlAction(target.getController(), source, MagicStatic.Forever));
                 }
             });

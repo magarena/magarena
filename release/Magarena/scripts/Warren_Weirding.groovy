@@ -3,7 +3,7 @@ def action = {
     event.processTargetPermanent(game, {
         final MagicPermanent permanent ->
         game.doAction(new MagicSacrificeAction(permanent));
-        if(permanent.hasSubType(MagicSubType.Goblin)){
+        if (permanent.hasSubType(MagicSubType.Goblin)){
             for (int i = 0; i < 2; i++) {
                 final MagicPlayTokenAction act = new MagicPlayTokenAction(
                     event.getPlayer(),
