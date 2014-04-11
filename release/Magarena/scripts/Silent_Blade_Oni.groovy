@@ -8,7 +8,6 @@ def Cast = {
     }
 };
 
-
 [
 new MagicWhenDamageIsDealtTrigger() {
         @Override
@@ -19,9 +18,10 @@ new MagicWhenDamageIsDealtTrigger() {
                 new MagicEvent(
                     permanent,
                     permanent.getController(),
+                    new MagicMayChoice(),
                     (MagicPlayer) damage.getTarget(),
                     this,
-                    "RN reveals his or her hand. PN casts a nonland card from it."
+                    "RN reveals his or her hand. PN may cast a nonland card from it."
                 ):
                 MagicEvent.NONE;
         }
@@ -34,9 +34,15 @@ new MagicWhenDamageIsDealtTrigger() {
                     choiceList.remove(i);
                 }
             }
-            game.addEvent(new MagicEvent(
+            event.isYes() ? game.addEvent(new MagicEvent(
                 event.getSource(),
                 new MagicFromCardListChoice(choiceList,showList,1,false),
+                event.getRefPlayer(),
+                Cast,
+                ""
+            )): game.addEvent(new MagicEvent(
+                event.getSource(),
+                new MagicFromCardListChoice(choiceList,showList,0,false),
                 event.getRefPlayer(),
                 Cast,
                 ""
