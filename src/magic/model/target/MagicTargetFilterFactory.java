@@ -704,6 +704,12 @@ public class MagicTargetFilterFactory {
         Operator.LESS_THAN_OR_EQUAL,
         2
     );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS_YOU_CONTROL = new MagicPTTargetFilter(
+        MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+        Operator.LESS_THAN_OR_EQUAL,
+        2
+    );
 
     public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_MORE = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
@@ -1193,6 +1199,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken creature you control", NONTOKEN_CREATURE_YOU_CONTROL);
         single.put("creature with power 3 or greater you control", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
         single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
+        single.put("creature with power 2 or less you control", CREATURE_POWER_2_OR_LESS_YOU_CONTROL); 
         single.put("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
