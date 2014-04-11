@@ -197,7 +197,7 @@ public enum MagicRuleEventAction {
         }
     ),
     ExileCard(
-        "exile (?<choice>[^\\.]*from[^\\.]*)\\.", 
+        "exile (?<choice>[^\\.]*from[^\\.]*graveyard)\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal,
         "Exile",
