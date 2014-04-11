@@ -1,0 +1,9 @@
+name=Extortion
+url=http://magiccards.info/query?q=%21extortion
+image=http://mtgimage.com/card/extortion.jpg
+value=2.929
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+timing=removal
+requires_groovy_code
