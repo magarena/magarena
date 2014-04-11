@@ -7,5 +7,5 @@ type=Creature
 subtype=Fungus
 cost={1}{G}{G}{W}
 pt=5/4
+ability=Whenever SN or another creature you control with power 5 or greater dies, you may gain 5 life.
 timing=main
-requires_groovy_code

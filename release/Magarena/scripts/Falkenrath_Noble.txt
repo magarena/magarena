@@ -7,6 +7,6 @@ type=Creature
 subtype=Vampire
 cost={3}{B}
 pt=2/2
-ability=flying
+ability=flying;\
+        Whenever SN or another creature dies, target player loses 1 life and you gain 1 life.
 timing=fmain
-requires_groovy_code

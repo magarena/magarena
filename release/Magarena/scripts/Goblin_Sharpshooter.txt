@@ -8,6 +8,6 @@ subtype=Goblin
 cost={2}{R}
 pt=1/1
 ability=SN doesn't untap during your untap step.;\
+        Whenever a creature dies, untap SN.;\
         {T}: SN deals 1 damage to target creature or player.
 timing=main
-requires_groovy_code
