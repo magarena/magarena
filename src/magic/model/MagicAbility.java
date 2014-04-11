@@ -7,7 +7,6 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicPlayMulticounterEvent;
-import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicSacrificeManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicTapManaActivation;
@@ -218,12 +217,6 @@ public enum MagicAbility {
     LivingWeapon("living weapon", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicLivingWeaponTrigger.create());
-        }
-    },
-    Regenerate("regenerate " + ARG.COST,30) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
-            card.add(new MagicRegenerationActivation(manaCost));
         }
     },
     Bushido("bushido " + ARG.NUMBER,20) {
