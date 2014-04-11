@@ -1,0 +1,11 @@
+name=Wirewood Hivemaster
+url=http://www.magiccards.info/query?q=%21wirewood%20hivemaster
+image=http://mtgimage.com/card/wirewood%20hivemaster.jpg
+value=3.838
+rarity=U
+type=Creature
+subtype=Elf
+cost={1}{G}
+pt=1/1
+ability=Whenever another nontoken Elf enters the battlefield, you may put a 1/1 green Insect creature token onto the battlefield.
+timing=main

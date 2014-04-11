@@ -1,0 +1,12 @@
+name=Leonin Battlemage
+url=http://www.magiccards.info/query?q=%21leonin%20battlemage
+image=http://mtgimage.com/card/leonin%20battlemage.jpg
+value=2.855
+rarity=U
+type=Creature
+subtype=Cat,Wizard
+cost={3}{W}
+pt=2/3
+ability={T}: Target creature gets +1/+1 until end of turn.;\
+        Whenever you cast a spell, you may untap SN.
+timing=main

@@ -1,0 +1,11 @@
+name=Talrand, Sky Summoner
+url=http://www.magiccards.info/query?q=%21talrand%2C%20sky%20summoner
+image=http://mtgimage.com/card/talrand,%20sky%20summoner.jpg
+value=4.004
+rarity=R
+type=Legendary,Creature
+subtype=Merfolk,Wizard
+cost={2}{U}{U}
+pt=2/2
+ability=Whenever you cast an instant or sorcery spell, put a 2/2 blue Drake creature token with flying onto the battlefield.
+timing=main
