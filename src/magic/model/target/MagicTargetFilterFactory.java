@@ -94,6 +94,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicStackFilterImpl NONRED_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Red);
+        }
+    };
+    
     public static final MagicStackFilterImpl BLUE_OR_BLACK_OR_RED_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && (
@@ -121,6 +127,12 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() &&
                    !itemOnStack.isSpell(MagicType.Creature);
+        }
+    };
+    
+    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.getConvertedCost() >= 6;
         }
     };
 
@@ -240,6 +252,12 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl NONTOKEN_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return !target.isToken() && target.isCreature();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl NONTOKEN_ELF=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isToken() && target.hasSubType(MagicSubType.Elf);
         }
     };
 
@@ -569,6 +587,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl FAERIE_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Faerie, Control.You);
 
     public static final MagicPermanentFilterImpl SPIRIT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Spirit, Control.You);
+    
+    public static final MagicPermanentFilterImpl RAT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Rat, Control.You);
 
     public static final MagicPermanentFilterImpl MODULAR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Modular, Control.You);
 
@@ -999,6 +1019,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicStackFilterImpl MULTICOLORED_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return MagicColor.isMulti(itemOnStack.getSource()) && itemOnStack.isSpell();
+        }
+    };
+    
     public static final MagicPermanentFilterImpl MONOCOLORED_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {
             return MagicColor.isMono(permanent) && permanent.isCreature();
@@ -1106,6 +1132,7 @@ public class MagicTargetFilterFactory {
         multiple.put("enchantments you control", ENCHANTMENT_YOU_CONTROL);
         multiple.put("creature tokens you control", CREATURE_TOKEN_YOU_CONTROL);
         multiple.put("faeries you control", FAERIE_YOU_CONTROL);
+        multiple.put("rats you control", RAT_YOU_CONTROL);
         multiple.put("allies you control", ALLY_YOU_CONTROL);
         multiple.put("each wolf you control", WOLF_YOU_CONTROL);
         
@@ -1291,8 +1318,9 @@ public class MagicTargetFilterFactory {
         single.put("creature or enchantment", CREATURE_OR_ENCHANTMENT);
         single.put("creature or land", CREATURE_OR_LAND);
         single.put("creature or planeswalker", CREATURE_OR_PLANESWALKER);
-        single.put("creature or player", CREATURE_OR_PLAYER); 
-        single.put("Sliver creature or player", SLIVER_CREATURE_OR_PLAYER); 
+        single.put("creature or player", CREATURE_OR_PLAYER);
+        single.put("Sliver creature or player", SLIVER_CREATURE_OR_PLAYER);
+        single.put("nontoken Elf", NONTOKEN_ELF);
        
         // <color|type> spell
         single.put("spell", SPELL);
@@ -1307,10 +1335,13 @@ public class MagicTargetFilterFactory {
         single.put("blue, black, or red spell", BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("white, blue, black, or red spell", WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("nonblue spell", NONBLUE_SPELL);
+        single.put("nonred spell", NONRED_SPELL);
         single.put("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
         single.put("creature or Aura spell", CREATURE_OR_AURA_SPELL);
         single.put("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
+        single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
         single.put("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
+        single.put("multicolored spell", MULTICOLORED_SPELL);
 
         // player
         single.put("opponent", OPPONENT);
