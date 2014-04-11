@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{R}{R}
-ability=control enchanted
+ability=You control enchanted land.
 enchant=gain control,neg land
 timing=aura

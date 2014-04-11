@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}{W}
 pt=6/6
-ability=flying;leaves return exile
+ability=flying;When SN leaves the battlefield, return all cards exiled with it to the battlefield under their owners' control.
 timing=main
 requires_groovy_code

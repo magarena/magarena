@@ -9,5 +9,5 @@ cost={5}{U}{U}
 given_pt=2/2
 given_ability=flying
 timing=aura
-ability=control enchanted
+ability=You control enchanted creature.
 enchant=gain control,neg creature
