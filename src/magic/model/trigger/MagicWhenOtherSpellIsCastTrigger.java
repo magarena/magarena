@@ -19,6 +19,19 @@ public abstract class MagicWhenOtherSpellIsCastTrigger extends MagicTrigger<Magi
         return MagicTriggerType.WhenOtherSpellIsCast;
     }
     
+    public static final MagicWhenOtherSpellIsCastTrigger create(final MagicTargetFilter<MagicItemOnStack> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherSpellIsCastTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
+                return filter.accept(permanent.getGame(), permanent.getController(), spell);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
+    
     public static final MagicWhenOtherSpellIsCastTrigger createYou(final MagicTargetFilter<MagicItemOnStack> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenOtherSpellIsCastTrigger() {
             @Override

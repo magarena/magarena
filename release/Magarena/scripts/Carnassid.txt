@@ -7,5 +7,6 @@ type=Creature
 subtype=Beast
 cost={4}{G}{G}
 pt=5/4
-ability=trample;regenerate {1}{G}
+ability=trample;\
+        {1}{G}: Regenerate SN.
 timing=main

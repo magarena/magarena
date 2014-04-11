@@ -7,5 +7,5 @@ type=Creature
 subtype=Human
 cost={1}{W}
 pt=1/1
+ability=Whenever another creature you control dies, put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code

@@ -172,6 +172,14 @@ public enum MagicCostEvent {
             return new MagicConditionEvent(source, MagicCondition.YOUR_UPKEEP_CONDITION);
         }
     },
+    YourTurn() {
+        public boolean accept(final String cost) {
+            return cost.equals("{YourTurn}");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicConditionEvent(source, MagicCondition.YOUR_TURN_CONDITION);
+        }
+    },
     BounceSelf() {
         public boolean accept(final String cost) {
             return cost.equals("Return SN to its owner's hand");

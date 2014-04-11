@@ -7,5 +7,6 @@ type=Creature
 subtype=Skeleton
 cost={B}
 pt=0/2
-ability=exalted;regenerate {3}{B}
+ability=exalted;\
+        {3}{B}: Regenerate SN.
 timing=main

@@ -8,6 +8,6 @@ subtype=Insect
 cost={1}
 pt=1/1
 ability=flying;\
-        SN doesn't untap during your untap step.
+        SN doesn't untap during your untap step.;\
+        At the beginning of your upkeep, you may pay {1}. If you do, untap SN.
 timing=artifact
-requires_groovy_code

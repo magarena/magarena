@@ -7,7 +7,6 @@ import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicPlayMulticounterEvent;
-import magic.model.event.MagicRegenerationActivation;
 import magic.model.event.MagicSacrificeManaActivation;
 import magic.model.event.MagicSacrificeTapManaActivation;
 import magic.model.event.MagicTapManaActivation;
@@ -74,6 +73,7 @@ import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 import magic.model.trigger.MagicWhenSelfLeavesPlayTrigger;
 import magic.model.trigger.MagicWhenDiesTrigger;
+import magic.model.trigger.MagicWhenOtherDiesTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
@@ -99,14 +99,14 @@ import java.util.regex.Pattern;
 
 public enum MagicAbility {
   
-    AttacksEachTurnIfAble("SN attacks each turn if able\\.",-10),
+    AttacksEachTurnIfAble("(SN )?attacks each turn if able\\.",-10),
     CannotBlock("(SN )?can't block(\\.)?",-50),
     CannotAttack("(SN )?can't attack(\\.)?",-50),
     CannotAttackOrBlock("(SN )?can't attack or block(\\.)?",-200),
-    CannotBlockWithoutFlying("SN can block only creatures with flying\\.",-40),
-    CannotBeBlockedByFlying("SN can't be blocked by creatures with flying\\.",20),
-    CannotBeBlockedExceptWithFlying("SN can't be blocked except by creatures with flying\\.",30),
-    CannotBeBlockedExceptWithFlyingOrReach("SN can't be blocked except by creatures with flying or reach\\.",25),
+    CannotBlockWithoutFlying("(SN )?can block only creatures with flying\\.",-40),
+    CannotBeBlockedByFlying("(SN )?can't be blocked by creatures with flying\\.",20),
+    CannotBeBlockedExceptWithFlying("(SN )?can't be blocked except by creatures with flying\\.",30),
+    CannotBeBlockedExceptWithFlyingOrReach("(SN )?can't be blocked except by creatures with flying or reach\\.",25),
     CannotBeBlockedExceptBySliver("(SN )?can't be blocked except by Slivers\\.",90),
     CannotBeBlockedExceptByWalls("(SN )?can't be blocked except by Walls\\.",80),
     CannotBeBlockedByWalls("(SN )?can't be blocked by Walls\\.",10),
@@ -122,11 +122,11 @@ public enum MagicAbility {
     Hexproof("hexproof",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
-    CannotBeTheTargetOfNonGreen("can't be the target of nongreen spells or abilities from nongreen sources",10),
-    CannotBeTheTargetOfBlackOrRedOpponentSpell("can't be the target of black or red spells your opponents control",10),
+    CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),
+    CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
     Deathtouch("deathtouch",60),
     Defender("defender",-100),
-    DoesNotUntap("SN doesn't untap during your untap step\\.",-30),
+    DoesNotUntap("(SN )?doesn't untap during your untap step\\.",-30),
     DoubleStrike("double strike",100),
     Fear("fear",50),
     Flash("flash",0),
@@ -218,12 +218,6 @@ public enum MagicAbility {
     LivingWeapon("living weapon", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicLivingWeaponTrigger.create());
-        }
-    },
-    Regenerate("regenerate " + ARG.COST,30) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
-            card.add(new MagicRegenerationActivation(manaCost));
         }
     },
     Bushido("bushido " + ARG.NUMBER,20) {
@@ -415,7 +409,7 @@ public enum MagicAbility {
             card.add(MagicAtEndOfTurnTrigger.Sacrifice);
         }
     },
-    ExileAtEnd("exile at end",-100) {
+    ExileAtEnd("At the beginning of the end step, exile SN\\.",-100) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicAtEndOfTurnTrigger.ExileAtEnd);
         }
@@ -518,7 +512,7 @@ public enum MagicAbility {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
-    LeavesReturnExile("leaves return exile", 0) {
+    LeavesReturnExile("When SN leaves the battlefield, (each player returns|return) (the exiled card(s)? |all cards exiled with it )?to the battlefield (under (its|their) owner('s|s') control|all cards he or she owns exiled with SN).", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicLeavesReturnExileTrigger.create());
         }
@@ -645,9 +639,33 @@ public enum MagicAbility {
             ));
         }
     },
-    DiesEffect("When SN dies, " + ARG.EFFECT, 10) {
+    SelfDiesEffect("When SN dies, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenDiesTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    SelfOrAnotherDiesEffect("Whenever SN or another " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDiesTrigger.createSelfOrAnother(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    AnotherDiesEffect("Whenever another " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDiesTrigger.createAnother(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    OtherDiesEffect("Whenever a(n)? " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDiesTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
@@ -659,7 +677,7 @@ public enum MagicAbility {
             ));
         }
     },
-    ControlEnchanted("control enchanted", 10) {
+    ControlEnchanted("You control enchanted " + ARG.ANY + "\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.ControlEnchanted);
         }
@@ -839,6 +857,14 @@ public enum MagicAbility {
     YouCastSpellEffect("Whenever you cast a(n)? (?<wordrun>[^\\.]*spell), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherSpellIsCastTrigger.createYou(
+                MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    PlayerCastSpellEffect("Whenever a player casts a(n)? (?<wordrun>[^\\.]*spell), " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherSpellIsCastTrigger.create(
                 MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));

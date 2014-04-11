@@ -6,6 +6,6 @@ removal=2
 rarity=C
 type=Enchantment
 cost={2}{W}
-ability=leaves return exile
+ability=When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=removal
 requires_groovy_code

@@ -1,6 +1,10 @@
 package magic.model.trigger;
 
+import magic.model.target.MagicTargetFilter;
 import magic.model.MagicPermanent;
+import magic.model.event.MagicSourceEvent;
+import magic.model.event.MagicEvent;
+import magic.model.MagicGame;
 
 public abstract class MagicWhenOtherDiesTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenOtherDiesTrigger(final int priority) {
@@ -11,5 +15,44 @@ public abstract class MagicWhenOtherDiesTrigger extends MagicTrigger<MagicPerman
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherDies;
+    }
+    
+    public static final MagicWhenOtherDiesTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherDiesTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
+                return permanent == died || filter.accept(permanent.getGame(), permanent.getController(), died);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
+    
+    public static final MagicWhenOtherDiesTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherDiesTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
+                return permanent != died && filter.accept(permanent.getGame(), permanent.getController(), died);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
+    
+    public static final MagicWhenOtherDiesTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherDiesTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
+                return filter.accept(permanent.getGame(), permanent.getController(), died);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
     }
 }

@@ -5,6 +5,6 @@ value=3.862
 rarity=U
 type=Enchantment
 cost={B}
-ability=Remove three quest counters from SN,Sacrifice SN: Put a 5/5 black Zombie Giant creature token onto the battlefield.
+ability=Whenever a creature dies, you may put a quest counter on SN.;\
+        Remove three quest counters from SN, Sacrifice SN: Put a 5/5 black Zombie Giant creature token onto the battlefield.
 timing=enchantment
-requires_groovy_code

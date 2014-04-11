@@ -79,6 +79,13 @@ public interface MagicCondition {
                    game.getTurnPlayer() == source.getController();
         }
     };
+
+    MagicCondition YOUR_TURN_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return source.getController() == game.getTurnPlayer();
+        }
+    };
     
     MagicCondition DECLARE_ATTACKERS_BEEN_ATTACKED = new MagicCondition() {
         public boolean accept(final MagicSource source) {

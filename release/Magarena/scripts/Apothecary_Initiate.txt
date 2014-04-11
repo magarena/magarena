@@ -7,5 +7,5 @@ type=Creature
 subtype=Kithkin,Cleric
 cost={W}
 pt=1/1
+ability=Whenever a player casts a white spell, you may pay {1}. If you do, you gain 1 life.
 timing=main
-requires_groovy_code

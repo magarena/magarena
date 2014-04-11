@@ -7,5 +7,6 @@ type=Creature
 subtype=Plant,Wall
 cost={3}{G}
 pt=3/3
-ability=defender;regenerate {G}
+ability=defender;\
+        {G}: Regenerate SN.
 timing=smain

@@ -7,6 +7,6 @@ type=Creature
 subtype=Cat,Cleric
 cost={W}{W}
 pt=2/2
-ability=leaves return exile
+ability=When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
 requires_groovy_code

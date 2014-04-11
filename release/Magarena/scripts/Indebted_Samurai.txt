@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Samurai
 cost={3}{W}
 pt=2/3
-ability=bushido 1
+ability=bushido 1;\
+        Whenever a Samurai you control dies, you may put a +1/+1 counter on SN.
 timing=fmain
-requires_groovy_code

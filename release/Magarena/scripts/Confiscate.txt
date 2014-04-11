@@ -7,5 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={4}{U}{U}
 timing=aura
-ability=control enchanted
+ability=You control enchanted permanent.
 enchant=gain control,neg permanent

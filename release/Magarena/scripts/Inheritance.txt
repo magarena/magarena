@@ -5,5 +5,5 @@ value=3.662
 rarity=U
 type=Enchantment
 cost={W}
+ability=Whenever a creature dies, you may pay {3}. If you do, draw a card.
 timing=enchantment
-requires_groovy_code

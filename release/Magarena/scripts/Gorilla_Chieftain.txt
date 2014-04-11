@@ -7,5 +7,5 @@ type=Creature
 subtype=Ape
 cost={2}{G}{G}
 pt=3/3
-ability=regenerate {1}{G}
+ability={1}{G}: Regenerate SN.
 timing=main

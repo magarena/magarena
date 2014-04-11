@@ -31,15 +31,5 @@ def event = {
                     otherPermanent.isFriend(permanent)) ?
                 event(permanent) :  MagicEvent.NONE;
         }
-    },
-    new MagicWhenLeavesPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            final MagicPermanent left = act.getPermanent();
-            return (left != permanent &&
-                    left.isArtifact() &&
-                    left.isFriend(permanent)) ?
-                event(permanent) : MagicEvent.NONE;
-        }
     }
 ]

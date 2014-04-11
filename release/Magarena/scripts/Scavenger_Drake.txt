@@ -7,6 +7,6 @@ type=Creature
 subtype=Drake
 cost={3}{B}
 pt=1/1
-ability=flying
+ability=flying;\
+        Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code=Algae Gharial

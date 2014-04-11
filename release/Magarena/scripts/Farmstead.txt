@@ -6,6 +6,6 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={W}{W}{W}
+given_ability=At the beginning of your upkeep, you may pay {W}{W}. If you do, you gain 1 life.
 enchant=pump,pos land
 timing=aura
-requires_groovy_code

@@ -7,6 +7,6 @@ type=Creature
 subtype=Crocodile
 cost={3}{G}
 pt=1/1
-ability=shroud
+ability=shroud;\
+        Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code

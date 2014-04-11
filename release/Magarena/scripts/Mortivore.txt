@@ -7,5 +7,5 @@ type=Creature
 subtype=Lhurgoyf
 cost={2}{B}{B}
 timing=smain
-ability=regenerate {B}
+ability={B}: Regenerate SN.
 requires_groovy_code

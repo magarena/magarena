@@ -8,5 +8,5 @@ subtype=Slith
 cost={B}{B}
 pt=1/1
 ability=Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.;\
-        regenerate {1}{B}
+        {1}{G}: Regenerate SN.
 timing=main

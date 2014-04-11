@@ -7,5 +7,6 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=first strike;lifelink;can't be the target of black or red spells your opponents control
+ability=first strike;lifelink;\
+        SN can't be the target of black or red spells your opponents control.
 timing=main

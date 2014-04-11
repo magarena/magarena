@@ -8,5 +8,5 @@ subtype=Aura
 cost={3}{U}{U}
 given_ability=infect
 timing=aura
-ability=control enchanted
+ability=You control enchanted creature.
 enchant=gain control,neg creature

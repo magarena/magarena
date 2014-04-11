@@ -8,5 +8,5 @@ subtype=Aura
 cost={1}{B}
 enchant=pump,pos creature
 given_pt=+1/+1
-given_ability=regenerate {B}
+given_ability={B}: Regenerate SN.
 timing=aura

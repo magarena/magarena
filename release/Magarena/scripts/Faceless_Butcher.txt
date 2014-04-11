@@ -8,6 +8,6 @@ type=Creature
 subtype=Nightmare,Horror
 cost={2}{B}{B}
 pt=2/3
-ability=leaves return exile
+ability=When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
 requires_groovy_code

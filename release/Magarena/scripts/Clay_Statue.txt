@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=3/1
-ability=regenerate {2}
+ability={2}: Regenerate SN.
 timing=main

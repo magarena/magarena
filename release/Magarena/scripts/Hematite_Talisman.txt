@@ -5,5 +5,5 @@ value=1.724
 rarity=U
 type=Artifact
 cost={2}
+ability=Whenever a player casts a red spell, you may pay {3}. If you do, untap target permanent.
 timing=artifact
-requires_groovy_code

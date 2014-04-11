@@ -1378,7 +1378,18 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    Tap(
+    TapSelf(
+        "tap sn\\.",
+        MagicTiming.Tapping,
+        "Tap",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicTapAction(event.getPermanent(),true));
+            }
+        }
+    ),
+    TapChosen(
         "tap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
@@ -1743,8 +1754,15 @@ public enum MagicRuleEventAction {
         }
     }
 
+    static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay (?<cost>[^\\.]+)\\. If you do, .+");
+    
     public static MagicSourceEvent create(final String rule) {
-        final String ruleWithoutMay = rule.replaceFirst("^(Y|y)ou may ", "");
+        final Matcher mayMatcher = MAY_PAY.matcher(rule);
+        final boolean mayPay = mayMatcher.matches();
+        final MagicManaCost mayCost = mayPay ? MagicManaCost.create(mayMatcher.group("cost")) : MagicManaCost.ZERO;
+        final String prefix = mayPay ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
+
+        final String ruleWithoutMay = rule.replaceFirst(prefix, "");
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
         final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
         final Matcher matcher = ruleAction.matched(effect);
@@ -1769,8 +1787,33 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("(P|p)ut ","PN puts ");
 
-        return rule.startsWith("You may ") || rule.startsWith("you may ") ?
-            new MagicSourceEvent(ruleAction, matcher) {
+        if (mayCost != MagicManaCost.ZERO) {
+            return new MagicSourceEvent(ruleAction, matcher) {
+                @Override
+                public MagicEvent getEvent(final MagicSource source) {
+                    return new MagicEvent(
+                        source,
+                        new MagicMayChoice(
+                            new MagicPayManaCostChoice(mayCost),
+                            choice
+                        ),
+                        picker,
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                                if (event.isYes()) {
+                                    action.executeEvent(game, event);
+                                } else {
+                                    noAction.executeEvent(game, event);
+                                }
+                            }
+                        },
+                        "PN may$ pay " + mayCost + "$. If you do, " + contextRule + "$"
+                    );
+                }
+            };
+        } else if (rule.startsWith("You may ") || rule.startsWith("you may ")) {
+            return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
                     return new MagicEvent(
@@ -1793,8 +1836,9 @@ public enum MagicRuleEventAction {
                         "PN may$ " + contextRule + "$"
                     );
                 }
-            }:
-            new MagicSourceEvent(ruleAction, matcher) {
+            };
+        } else {
+            return new MagicSourceEvent(ruleAction, matcher) {
                 @Override
                 public MagicEvent getEvent(final MagicSource source) {
                     return new MagicEvent(
@@ -1806,5 +1850,6 @@ public enum MagicRuleEventAction {
                     );
                 }
             };
+        }
     }
 }
