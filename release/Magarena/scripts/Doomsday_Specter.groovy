@@ -1,10 +1,7 @@
-def Cast = {
+def Discard = {
     final MagicGame game, final MagicEvent event ->
     if (event.getCardChoice().size() > 0) {
-        final MagicCard card = (MagicCard)event.getCardChoice().get(0);
-        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-        final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(), MagicPayedCost.NO_COST);
-        game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),event.getCardChoice().get(0)));
     }
 };
 
@@ -21,24 +18,17 @@ new MagicWhenDamageIsDealtTrigger() {
                     permanent.getController(),
                     (MagicPlayer) damage.getTarget(),
                     this,
-                    "RN reveals his or her hand. PN casts a nonland card from it."
+                    "PN looks at RN's hand and chooses a card from it. RN discards that card."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList showList = event.getRefPlayer().getHand();
-            final MagicCardList choiceList = event.getRefPlayer().getHand();
-            for(int i = choiceList.size()-1; i >= 0; i--) {
-                if (choiceList.get(i).hasType(MagicType.Land)) {
-                    choiceList.remove(i);
-                }
-            }
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicFromCardListChoice(choiceList,showList,1,false),
+                new MagicFromCardListChoice(event.getRefPlayer().getHand(),1),
                 event.getRefPlayer(),
-                Cast,
+                Discard,
                 ""
             ));
         }
