@@ -1,0 +1,10 @@
+name=Brainspoil
+url=http://magiccards.info/query?q=%21brainspoil
+image=http://mtgimage.com/card/brainspoil.jpg
+value=2.774
+rarity=C
+type=Sorcery
+cost={3}{B}{B}
+timing=removal
+ability=Transmute {1}{B}{B}
+requires_groovy_code

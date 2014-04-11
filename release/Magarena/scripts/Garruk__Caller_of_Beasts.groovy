@@ -66,17 +66,20 @@
                         return (cardOnStack.getController().getId() == you.getId() && cardOnStack.hasType(MagicType.Creature)) ?
                             new MagicEvent(
                                 cardOnStack,
+                                new MagicMayChoice(),
                                 this,
-                                "PN searches his or her library for creature card and puts that card onto the battlefield. Then shuffle PN's library."
+                                "PN may search his or her library for creature card and put that card onto the battlefield. Then shuffle PN's library."
                             ):
                             MagicEvent.NONE;
                     }
                     @Override
                     public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                            event,
-                            MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY
-                        ));
+                        if(event.isYes()) {
+                            game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                                event,
+                                MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY
+                            ));
+                        }
                     }
                 }
             ));
