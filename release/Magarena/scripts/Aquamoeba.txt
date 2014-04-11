@@ -1,0 +1,11 @@
+name=Aquamoeba
+url=http://www.magiccards.info/query?q=%21aquamoeba
+image=http://mtgimage.com/card/aquamoeba.jpg
+value=3.653
+rarity=C
+type=Creature
+subtype=Elemental,Beast
+cost={1}{U}
+pt=1/3
+ability=Discard a card: Switch SN's power and toughness until end of turn.
+timing=main

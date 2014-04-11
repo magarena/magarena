@@ -1,0 +1,12 @@
+name=Fluxcharger
+url=http://www.magiccards.info/query?q=%21fluxcharger
+image=http://mtgimage.com/card/fluxcharger.jpg
+value=3.949
+rarity=U
+type=Creature
+subtype=Weird
+cost={2}{U}{R}
+pt=1/5
+ability=Flying;\
+        Whenever you cast an instant or sorcery spell, you may switch SN's power and toughness until end of turn.
+timing=main

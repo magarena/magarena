@@ -1,0 +1,11 @@
+name=Valakut Fireboar
+url=http://www.magiccards.info/query?q=%21valakut%20fireboar
+image=http://mtgimage.com/card/valakut%20fireboar.jpg
+value=3.185
+rarity=U
+type=Creature
+subtype=Elemental,Boar
+cost={4}{R}
+pt=1/7
+ability=Whenever SN attacks, switch SN's power and toughness until end of turn.
+timing=main
