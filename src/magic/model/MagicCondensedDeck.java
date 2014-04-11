@@ -28,7 +28,7 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
     public MagicCondensedDeck(final List<MagicCardDefinition> list) {
         super();
 
-        for(final MagicCardDefinition card : list) {
+        for (final MagicCardDefinition card : list) {
             addCard(card, true);
         }
     }
@@ -38,7 +38,7 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
     }
 
     public boolean addCard(final MagicCardDefinition card, final boolean ignoreCopiesLimit) {
-        if(!map.containsKey(getKey(card))) {
+        if (!map.containsKey(getKey(card))) {
             // add to end
             add(new MagicCondensedCardDefinition(card));
             map.put(getKey(card), get(size() - 1));
@@ -47,7 +47,7 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
         } else {
             final MagicCondensedCardDefinition existingCard = map.get(getKey(card));
 
-            if(ignoreCopiesLimit || existingCard.getNumCopies() < MagicDeckConstructionRule.MAX_COPIES) {
+            if (ignoreCopiesLimit || existingCard.getNumCopies() < MagicDeckConstructionRule.MAX_COPIES) {
                 existingCard.incrementNumCopies();
 
                 return true;
@@ -86,10 +86,10 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
     public MagicDeck toMagicDeck() {
         final MagicDeck deck = new MagicDeck();
 
-        for(int i = 0; i < size(); i++) {
+        for (int i = 0; i < size(); i++) {
             final MagicCondensedCardDefinition card = get(i);
 
-            for(int j = 0; j < card.getNumCopies(); j++) {
+            for (int j = 0; j < card.getNumCopies(); j++) {
                 deck.add(card.getCard());
             }
         }

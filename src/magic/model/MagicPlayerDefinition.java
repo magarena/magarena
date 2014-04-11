@@ -132,7 +132,7 @@ public class MagicPlayerDefinition {
     public void generateDeck(final RandomDeckGenerator defaultGenerator) {
         final RandomDeckGenerator customGenerator =  getDeckGenerator();
 
-        if(customGenerator == null) {
+        if (customGenerator == null) {
             defaultGenerator.generateDeck(DECK_SIZE, deckProfile, deck);
         } else {
             customGenerator.generateDeck(DECK_SIZE, deckProfile, deck);

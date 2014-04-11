@@ -27,7 +27,7 @@ public class RandomDeckGenerator {
     }
 
     private void genSpells() {
-        if(cubeDefinition == null) {
+        if (cubeDefinition == null) {
             return;
         }
 
@@ -35,7 +35,7 @@ public class RandomDeckGenerator {
         for (int rarity =  getMinRarity(); rarity <= getMaxRarity(); rarity++) {
             for (final MagicCardDefinition card : CardDefinitions.getSpellCards()) {
                 if (card.getRarity() >= getMinRarity() && card.getRarity() <= rarity && cubeDefinition.containsCard(card)) {
-                    if(acceptPossibleSpellCard(card)) {
+                    if (acceptPossibleSpellCard(card)) {
                         spellCards.add(card);
                     }
                 }
@@ -56,7 +56,7 @@ public class RandomDeckGenerator {
     }
 
     private void genLands() {
-        if(cubeDefinition == null) {
+        if (cubeDefinition == null) {
             return;
         }
 
@@ -64,7 +64,7 @@ public class RandomDeckGenerator {
         for (final MagicCardDefinition card : CardDefinitions.getLandCards()) {
             if (cubeDefinition.containsCard(card)) {
                 for (int count = 4; count > 0; count--) {
-                    if(acceptPossibleLandCard(card)) {
+                    if (acceptPossibleLandCard(card)) {
                         landCards.add(card);
                     }
                 }
@@ -102,14 +102,14 @@ public class RandomDeckGenerator {
         addRequiredSpells(condensedDeck);
 
         // count required cards added
-        for(final MagicCardDefinition card : condensedDeck.toMagicDeck()) {
-            if(card.isCreature()) {
+        for (final MagicCardDefinition card : condensedDeck.toMagicDeck()) {
+            if (card.isCreature()) {
                 countCreatures++;
-            } else if(!card.isLand()) {
+            } else if (!card.isLand()) {
                 countNonlandNoncreature++;
             }
 
-            if(card.isColorless()) {
+            if (card.isColorless()) {
                 countColorless++;
             }
 
@@ -125,7 +125,7 @@ public class RandomDeckGenerator {
             if (cardDefinition.isPlayable(profile)) {
                 final boolean creature = cardDefinition.isCreature();
 
-                if(creature && countCreatures >= maxCreatures) {
+                if (creature && countCreatures >= maxCreatures) {
                     continue;
                 }
 
@@ -143,11 +143,11 @@ public class RandomDeckGenerator {
                     continue;
                 }
 
-                if(condensedDeck.addCard(cardDefinition, false)) {
+                if (condensedDeck.addCard(cardDefinition, false)) {
                     countCost[bucket]++;
-                    if(creature) {
+                    if (creature) {
                         countCreatures++;
-                    } else if(!cardDefinition.isLand()) {
+                    } else if (!cardDefinition.isLand()) {
                         countNonlandNoncreature++;
                     }
                     if (colorless) {
@@ -178,7 +178,7 @@ public class RandomDeckGenerator {
     }
 
     protected void addRequiredCards(final MagicCondensedDeck deck, final String[] cards) {
-        for(final String name : cards) {
+        for (final String name : cards) {
             final MagicCardDefinition cardDef = CardDefinitions.getCard(name);
             if (cardDef.isValid()) {
                 deck.addCard(cardDef, false);

@@ -27,7 +27,7 @@ public final class MagicFiles {
                 }
                 @Override
                 public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-                    if(exc == null){
+                    if (exc == null){
                         Files.delete(dir);
                         return FileVisitResult.CONTINUE;
                     }

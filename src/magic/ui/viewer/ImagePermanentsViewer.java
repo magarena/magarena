@@ -48,8 +48,8 @@ public class ImagePermanentsViewer extends JPanel {
         int numCardsThisRow = 0;
         int currentRow = startingRow;
 
-        for(final ImagePermanentViewer card : cards) {
-            if(numCardsThisRow + 1 > maxCardsPerRow) {
+        for (final ImagePermanentViewer card : cards) {
+            if (numCardsThisRow + 1 > maxCardsPerRow) {
                 // goto next row
                 currentRow++;
                 numCardsThisRow = 0;
@@ -67,7 +67,7 @@ public class ImagePermanentsViewer extends JPanel {
         final List<ImagePermanentViewer> secondCards = (isTop) ? creatures : nonCreatures;
 
         int currentRow = divideIntoRows(firstCards, maxCardsPerRow, 1);
-        if(firstCards.size() > 0) { // creatures go in separate row from others
+        if (firstCards.size() > 0) { // creatures go in separate row from others
             currentRow++;
         }
 
@@ -82,7 +82,7 @@ public class ImagePermanentsViewer extends JPanel {
         int rowHeight=0;
 
         final List<ImagePermanentViewer> aViewers = new ArrayList<ImagePermanentViewer>();
-        if(isTop) {
+        if (isTop) {
             aViewers.addAll(nonCreatures);
             aViewers.addAll(creatures);
         } else {
@@ -140,13 +140,13 @@ public class ImagePermanentsViewer extends JPanel {
         final float screenHeight = (float) getHeight();
         final int numCards = creatures.size() + nonCreatures.size();
 
-        if(numCards > 0 && screenWidth > 0 && screenHeight > 0) { // ignore cases where drawing doesn't matter
+        if (numCards > 0 && screenWidth > 0 && screenHeight > 0) { // ignore cases where drawing doesn't matter
             int r;
             int maxCardsForBestNumRow = 1;
             float largestScaledCardSize = 0;
 
             // approximate number of rows needed to contain all the cards
-            for(r = (creatures.size() == 0 || nonCreatures.size() == 0) ? 1 : 2; r < numCards; r++) {
+            for (r = (creatures.size() == 0 || nonCreatures.size() == 0) ? 1 : 2; r < numCards; r++) {
                 float numCardsPerRow = (float) Math.ceil((float) numCards / r); // avoid lost of precision
 
                 // max width and height for a card using this number of rows
@@ -165,7 +165,7 @@ public class ImagePermanentsViewer extends JPanel {
 
                 // set best possible
                 final float scaledCardSize = scaledCardWidth * scaledCardHeight;
-                if(scaledCardSize  > largestScaledCardSize) {
+                if (scaledCardSize  > largestScaledCardSize) {
                     largestScaledCardSize = scaledCardSize;
                     maxCardsForBestNumRow = (int) numCardsPerRow;
                 }
@@ -183,7 +183,7 @@ public class ImagePermanentsViewer extends JPanel {
 
         for (final PermanentViewerInfo permanentInfo : permanentInfos) {
             final ImagePermanentViewer perm = new ImagePermanentViewer(this,permanentInfo);
-            if(permanentInfo.creature) {
+            if (permanentInfo.creature) {
                 creatures.add(perm);
             } else {
                 nonCreatures.add(perm);

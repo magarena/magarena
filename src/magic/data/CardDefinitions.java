@@ -189,7 +189,7 @@ public class CardDefinitions {
 
     public static void loadCardAbilities() {
         final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-        for(final MagicCardDefinition cdef : getCards()) {
+        for (final MagicCardDefinition cdef : getCards()) {
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
@@ -230,7 +230,7 @@ public class CardDefinitions {
         executor.execute(new Runnable() {
             @Override
             public void run() {
-                for(final MagicCardDefinition card : getCards()) {
+                for (final MagicCardDefinition card : getCards()) {
                     if (card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
                         loadCardText(card);
                     }

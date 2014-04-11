@@ -21,7 +21,7 @@ public class CostPanel extends JPanel {
         setOpaque(false);
         setLayout(new BorderLayout());
 
-        if(cost == null) {
+        if (cost == null) {
             return;
         }
 
@@ -41,12 +41,12 @@ public class CostPanel extends JPanel {
             manaLabels[i].setMaximumSize(MANA_ICON_SIZE);
             manaLabels[i].setHorizontalAlignment(JLabel.CENTER);
 
-            if(i > 0) {
+            if (i > 0) {
                 // previous (left) mana touches current one
                 springLayout.putConstraint(SpringLayout.EAST, manaLabels[i-1],
                              0, SpringLayout.WEST, manaLabels[i]);
             }
-            if(i == manaLabels.length - 1) {
+            if (i == manaLabels.length - 1) {
                 // last mana touches right side of panel
                 springLayout.putConstraint(SpringLayout.EAST, manaLabels[i],
                              0, SpringLayout.EAST, centerPanel);

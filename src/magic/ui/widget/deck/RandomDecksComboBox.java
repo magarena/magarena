@@ -63,7 +63,7 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
 
         if (DeckGenerators.getInstance().getNrGenerators() > 0) {
             items.add(SEPARATOR);
-            for(final String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
+            for (final String generatorName : DeckGenerators.getInstance().getGeneratorNames()) {
                 items.add(generatorName);
             }
         }
@@ -87,9 +87,9 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
             final int index,
             final boolean isSelected,
             final boolean cellHasFocus) {
-        if(selectedVal.equals(SEPARATOR)) {
+        if (selectedVal.equals(SEPARATOR)) {
             return new javax.swing.JSeparator(javax.swing.JSeparator.HORIZONTAL);
-        } else if(DeckGenerators.getInstance().getGeneratorNames().contains(selectedVal)) {
+        } else if (DeckGenerators.getInstance().getGeneratorNames().contains(selectedVal)) {
             final JPanel panel=new JPanel(new GridLayout(1,1));
             panel.setBorder(FontsAndBorders.EMPTY_BORDER);
             if (isSelected) {

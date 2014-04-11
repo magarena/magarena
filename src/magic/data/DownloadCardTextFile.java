@@ -36,7 +36,7 @@ public class DownloadCardTextFile extends WebDownloader {
         // find text in html
         int iStart =  html.indexOf(startPattern);
         String foundText = null;
-        if(iStart > -1) {
+        if (iStart > -1) {
             iStart += startPattern.length();
             final int iEnd = html.indexOf(endPattern, iStart);
             foundText = html.substring(iStart, iEnd) + " ";
@@ -48,7 +48,7 @@ public class DownloadCardTextFile extends WebDownloader {
 
         // write text out to file
         // even if there's no text we want to create the file to ensure that we don't redownload it
-        if(foundText != null) {
+        if (foundText != null) {
             FileWriter outputStream = null;
             try {
                 outputStream = new FileWriter(file);

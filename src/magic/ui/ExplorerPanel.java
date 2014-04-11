@@ -251,7 +251,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     }
 
     public void updateDeck() {
-        if(isDeckEditor()) {
+        if (isDeckEditor()) {
             deckDefs = this.deck;
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
@@ -263,7 +263,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
 
         if (deckCards.size() > 0) {
-            for(final MagicCardDefinition card : deckCards) {
+            for (final MagicCardDefinition card : deckCards) {
                 this.deck.remove(card);
             }
 
@@ -279,7 +279,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         final List<MagicCardDefinition> cardPoolCards = cardPoolTable.getSelectedCards();
 
         if (cardPoolCards.size() > 0) {
-            for(final MagicCardDefinition card : cardPoolCards) {
+            for (final MagicCardDefinition card : cardPoolCards) {
                 this.deck.add(card);
             }
 
@@ -296,9 +296,9 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         final Object source=event.getSource();
 
         if (isDeckEditor()) {
-            if(source == addButton) {
+            if (source == addButton) {
                 addSelectedToDeck();
-            } else if(source == removeButton) {
+            } else if (source == removeButton) {
                 removeSelectedFromDeck();
             }
         }
@@ -313,7 +313,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     private class CardPoolMouseListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
-            if(isDeckEditor() && e.getClickCount() > 1) {
+            if (isDeckEditor() && e.getClickCount() > 1) {
                 addSelectedToDeck();
             }
         }
@@ -322,14 +322,14 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     private class DeckMouseListener extends MouseAdapter {
         @Override
         public void mouseClicked(final MouseEvent e) {
-            if(isDeckEditor()) {
+            if (isDeckEditor()) {
                 if (e.getClickCount() > 1) {
                     if (e.getButton() == MouseEvent.BUTTON1) {
                         removeSelectedFromDeck();
                     } else if (e.getButton() == MouseEvent.BUTTON3) {
                         final List<MagicCardDefinition> deckCards = deckTable.getSelectedCards();
                         if (deckCards.size() > 0) {
-                            for(final MagicCardDefinition card : deckCards) {
+                            for (final MagicCardDefinition card : deckCards) {
                                 deck.add(card);
                             }
 
@@ -351,7 +351,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     public void setDeck(final MagicDeck deck0) {
         if (deck0 != null) {
             this.deck = deck0;
-            if(isDeckEditor()) {
+            if (isDeckEditor()) {
                 deckDefs = this.deck;
                 deckTable.setTitle(generateDeckTitle(deckDefs));
                 deckTable.setCards(deckDefs);

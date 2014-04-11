@@ -758,7 +758,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private boolean subTypeHasText(final String s) {
         final MagicSubType[] subTypeValues = MagicSubType.values();
         for (final MagicSubType subtype : subTypeValues) {
-            if(subTypeFlags.contains(subtype) && subtype.toString().toLowerCase().contains(s)) {
+            if (subTypeFlags.contains(subtype) && subtype.toString().toLowerCase().contains(s)) {
                 return true;
             }
         }
@@ -767,7 +767,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     private boolean abilityHasText(final String s) {
         for (final MagicAbility ability : MagicAbility.values()) {
-            if(hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {
+            if (hasAbility(ability) && ability.getName().toLowerCase().contains(s)) {
                 return true;
             }
         }
@@ -826,7 +826,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
             final int c = cardDefinition1.getTypeString().compareTo(cardDefinition2.getTypeString());
-            if(c == 0) {
+            if (c == 0) {
                 return cardDefinition1.getLongTypeString().compareTo(cardDefinition2.getLongTypeString());
             }
             return c;

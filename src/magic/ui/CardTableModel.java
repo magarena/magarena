@@ -94,7 +94,7 @@ public class CardTableModel implements TableModel {
 
     public int findCardIndex(final MagicCardDefinition card) {
         for (int i = 0; i < cardDefinitions.size(); i++) {
-            if(MagicCardDefinition.NAME_COMPARATOR_ASC.compare(cardDefinitions.get(i).getCard(), card) == 0) {
+            if (MagicCardDefinition.NAME_COMPARATOR_ASC.compare(cardDefinitions.get(i).getCard(), card) == 0) {
                 return i;
             }
         }
@@ -106,7 +106,7 @@ public class CardTableModel implements TableModel {
         this.cardDefinitions = new MagicCondensedDeck(defs);
 
         // re-sort if necessary
-        if(comp != null) {
+        if (comp != null) {
             Collections.sort(cardDefinitions, comp);
         }
     }
@@ -217,19 +217,19 @@ public class CardTableModel implements TableModel {
         final MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
 
         switch(columnIndex) {
-            case 0:        if(isDeck) {
+            case 0:        if (isDeck) {
                             return Integer.toString(cardDefinitions.get(rowIndex).getNumCopies());
                         } else {
                             return "";
                         }
             case 1:        return card.getName();
             case 2:        return card.getCost();
-            case 3:        if(card.isCreature()) {
+            case 3:        if (card.isCreature()) {
                             return card.getCardPower();
                         } else {
                             return "";
                         }
-            case 4:        if(card.isCreature()) {
+            case 4:        if (card.isCreature()) {
                             return card.getCardToughness();
                         } else {
                             return "";

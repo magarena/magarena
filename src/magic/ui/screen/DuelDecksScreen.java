@@ -85,7 +85,7 @@ public class DuelDecksScreen
                 @Override
                 public void actionPerformed(final ActionEvent e) {
                     final MagicPlayerDefinition[] players = screenContent.getDuel().getPlayers();
-                    if(isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
+                    if (isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
                        isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
                         saveDuel(false);
                         getFrame().nextGame();
@@ -234,7 +234,7 @@ public class DuelDecksScreen
         final String brokenRulesText =
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
 
-        if(brokenRulesText.length() > 0) {
+        if (brokenRulesText.length() > 0) {
             JOptionPane.showMessageDialog(
                     this,
                     playerName + "'s deck is illegal.\n\n" + brokenRulesText,

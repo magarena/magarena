@@ -27,11 +27,11 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
     public Ability_Mono_DeckGenerator() {
         super(null);
 
-        if(!hasChoice()) {
+        if (!hasChoice()) {
             getPossibleTribes();
         }
 
-        if(hasChoice()) {
+        if (hasChoice()) {
             final int i = randGen.nextInt(possibleAbilities.size());
             ability = possibleAbilities.get(i);
             colorText = possibleColors.get(i).get(randGen.nextInt(possibleColors.get(i).size()));
@@ -48,7 +48,7 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
     }
 
     private void getPossibleTribes() {
-        for(final MagicAbility ab : MagicAbility.values()) {
+        for (final MagicAbility ab : MagicAbility.values()) {
             final HashMap<MagicColor, Integer> countColors = new HashMap<MagicColor, Integer>();
             countColors.put(MagicColor.Black, 0);
             countColors.put(MagicColor.White, 0);
@@ -57,10 +57,10 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
             countColors.put(MagicColor.Blue,  0);
 
             // count colors
-            for(final MagicCardDefinition card : CardDefinitions.getCards()) {
+            for (final MagicCardDefinition card : CardDefinitions.getCards()) {
                 if (card.hasAbility(ab)) {
                     final int colorFlags = card.getColorFlags();
-                    for(final MagicColor c : countColors.keySet()) {
+                    for (final MagicColor c : countColors.keySet()) {
                         if (c.hasColor(colorFlags)) {
                             countColors.put(c, new Integer(countColors.get(c).intValue() + 1));
                         }
@@ -70,7 +70,7 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
 
             final ArrayList<String> choiceColors = getPossibleColors(countColors);
 
-            if(choiceColors.size() > 0) {
+            if (choiceColors.size() > 0) {
                 possibleAbilities.add(ab);
                 possibleColors.add(choiceColors);
             }
@@ -81,8 +81,8 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
         // monocolor
         final ArrayList<String> a = new ArrayList<String>();
 
-        for(final MagicColor c : countColors.keySet()) {
-            if(countColors.get(c).intValue() > MIN_NUM_CARDS_WITH_SUBTYPE) {
+        for (final MagicColor c : countColors.keySet()) {
+            if (countColors.get(c).intValue() > MIN_NUM_CARDS_WITH_SUBTYPE) {
                 a.add("" + c.getSymbol());
             }
         }
@@ -99,7 +99,7 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
     }
 
     public boolean acceptPossibleSpellCard(final MagicCardDefinition card) {
-        if(hasChoice()) {
+        if (hasChoice()) {
             return !card.isCreature() || card.hasAbility(ability);
         } else {
             return true;

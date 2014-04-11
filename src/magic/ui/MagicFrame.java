@@ -257,7 +257,7 @@ public class MagicFrame extends JFrame {
         final String brokenRulesText =
                 MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
 
-        if(brokenRulesText.length() > 0) {
+        if (brokenRulesText.length() > 0) {
             JOptionPane.showMessageDialog(
                     this,
                     playerName + "'s deck is illegal.\n\n" + brokenRulesText,

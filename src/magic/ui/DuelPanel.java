@@ -103,7 +103,7 @@ public class DuelPanel extends TexturedPanel {
         strengthViewer=new DeckStrengthViewer(duel);
         strengthViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
-        for(int i = 0; i < players.length; i++) {
+        for (int i = 0; i < players.length; i++) {
 
             final MagicPlayerDefinition player = players[i];
             player.setAvatar(duel.getConfiguration().getPlayerProfile(i).getAvatar());

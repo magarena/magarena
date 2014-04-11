@@ -120,7 +120,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             colorFilterChoices[i].setForeground(TEXT_COLOR);
             colorFilterChoices[i].setFocusPainted(false);
             colorFilterChoices[i].setAlignmentX(Component.LEFT_ALIGNMENT);
-            if(i == 0) {
+            if (i == 0) {
                 colorFilterChoices[i].setSelected(true);
             }
             colorFilterBg.add(colorFilterChoices[i]);
@@ -271,8 +271,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         final String filterString = nameTextField.getText();
         if (filterString.length() > 0) {
             final String[] filters = filterString.split(" ");
-            for(int i=0; i<filters.length; i++) {
-                if(!cardDefinition.hasText(filters[i])) {
+            for (int i=0; i<filters.length; i++) {
+                if (!cardDefinition.hasText(filters[i])) {
                     return false;
                 }
             }
@@ -337,9 +337,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         boolean resultAND = true;
 
         for (int i=0; i < checkboxes.length; i++) {
-            if(checkboxes[i].isSelected()) {
+            if (checkboxes[i].isSelected()) {
                 somethingSelected = true;
-                if(!func.checkCard(cardDefinition, i)) {
+                if (!func.checkCard(cardDefinition, i)) {
                     resultAND = false;
                 } else {
                     resultOR = true;
@@ -413,25 +413,25 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
 
-        if(source == resetButton) {
+        if (source == resetButton) {
             resetFilters();
         }
 
-        if(!disableUpdate) {
+        if (!disableUpdate) {
             explorerPanel.updateCardPool();
         }
     }
 
     @Override
     public void insertUpdate(final DocumentEvent arg0) {
-        if(!disableUpdate) {
+        if (!disableUpdate) {
             explorerPanel.updateCardPool();
         }
     }
 
     @Override
     public void removeUpdate(final DocumentEvent arg0) {
-        if(!disableUpdate) {
+        if (!disableUpdate) {
             explorerPanel.updateCardPool();
         }
     }

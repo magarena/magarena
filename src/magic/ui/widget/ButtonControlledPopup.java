@@ -79,7 +79,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        if(popupJustToggled) {
+        if (popupJustToggled) {
             // focus event just hid popup -> this event is probably from clicking on the hide button -> don't do anything
             return;
         }

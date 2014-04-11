@@ -103,9 +103,9 @@ public class CardTable extends JPanel implements ListSelectionListener {
     public List<MagicCardDefinition> getSelectedCards() {
         final List<MagicCardDefinition> selectedCards = new ArrayList<MagicCardDefinition>();
 
-        for(final int row : table.getSelectedRows()) {
+        for (final int row : table.getSelectedRows()) {
             final MagicCardDefinition card = tableModel.getCardDef(row);
-            if(card != null) {
+            if (card != null) {
                 selectedCards.add(card);
             }
         }
@@ -118,9 +118,9 @@ public class CardTable extends JPanel implements ListSelectionListener {
         if (lastSelectedCards.size() > 0) {
             final List<MagicCardDefinition> newSelectedCards = new ArrayList<MagicCardDefinition>();
 
-            for(final MagicCardDefinition card : lastSelectedCards) {
+            for (final MagicCardDefinition card : lastSelectedCards) {
                 final int index = tableModel.findCardIndex(card);
-                if(index != -1) {
+                if (index != -1) {
                     // previous card still in list
                     table.getSelectionModel().addSelectionInterval(index,index);
                     newSelectedCards.add(card);

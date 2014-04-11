@@ -269,7 +269,7 @@ public class DeckUtils {
 
         // generate list of unsupported cards
         for (int i = 0; i < unsupported.size(); i++) {
-            if(i > 0) {
+            if (i > 0) {
                 sb.append(", ");
             }
             sb.append(unsupported.get(i).getName());
