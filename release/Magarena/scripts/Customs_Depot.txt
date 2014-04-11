@@ -5,5 +5,5 @@ value=3.161
 rarity=U
 type=Enchantment
 cost={1}{U}
+ability=Whenever you cast a creature spell, you may pay {1}. If you do, draw a card, then discard a card.
 timing=enchantment
-requires_groovy_code

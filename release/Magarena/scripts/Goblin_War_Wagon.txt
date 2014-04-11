@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
 pt=3/3
-ability=SN doesn't untap during your untap step.
+ability=SN doesn't untap during your untap step.;\
+        At the beginning of your upkeep, you may pay {2}. If you do, untap SN.
 timing=artifact
-requires_groovy_code

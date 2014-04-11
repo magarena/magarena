@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Shaman
 cost={B}
 pt=1/1
+ability=Whenever a player casts a black spell, you may pay {1}. If you do, target player loses 1 life.
 timing=main
-requires_groovy_code

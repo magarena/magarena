@@ -5,5 +5,5 @@ value=2.317
 rarity=U
 type=Artifact
 cost={2}
+ability=Whenever a player casts a green spell, you may pay {3}. If you do, untap target permanent.
 timing=artifact
-requires_groovy_code

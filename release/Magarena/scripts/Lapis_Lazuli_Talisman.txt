@@ -5,5 +5,5 @@ value=1.333
 rarity=U
 type=Artifact
 cost={2}
+ability=Whenever a player casts a blue spell, you may pay {3}. If you do, untap target permanent.
 timing=artifact
-requires_groovy_code
