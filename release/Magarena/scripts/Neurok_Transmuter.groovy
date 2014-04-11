@@ -7,13 +7,13 @@ def blue = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
 def nonartifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-        return flags^MagicType.Artifact.getMask();
+        return flags & ~MagicType.Artifact.getMask();
     }
 };
 def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
     public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-        return flags|MagicType.Artifact.getMask();
+        return flags | MagicType.Artifact.getMask();
     }
 };
 
@@ -37,7 +37,7 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                 MagicTargetChoice.NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Target creature\$ becomes an artifact in addition to its other types."
+                "Target creature\$ becomes an artifact in addition to its other types until end of turn."
             );
         }
 
@@ -51,7 +51,7 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "Blue (dabedeedabeday)"
+        "Blue"
     ) {
 
         @Override
@@ -68,7 +68,7 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                 MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Target creature\$ becomes an artifact in addition to its other types."
+                "Until end of turn, target artifact creature\$ becomes blue and isn't an artifact."
             );
         }
 
