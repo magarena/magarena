@@ -653,6 +653,14 @@ public enum MagicAbility {
             ));
         }
     },
+    SelfOrAnotherDiesEffect("Whenever SN or another " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDiesTrigger.createSelfOrAnother(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     AnotherDiesEffect("Whenever another " + ARG.WORDRUN + " dies, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherDiesTrigger.createAnother(
