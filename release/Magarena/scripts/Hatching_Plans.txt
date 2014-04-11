@@ -5,5 +5,5 @@ value=3.903
 rarity=R
 type=Enchantment
 cost={1}{U}
-ability=When SN dies, draw three cards.
+ability=When SN is put into a graveyard from the battlefield, draw three cards.
 timing=enchantment

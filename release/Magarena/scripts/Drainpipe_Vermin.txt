@@ -1,0 +1,11 @@
+name=Drainpipe Vermin
+url=http://www.magiccards.info/query?q=%21drainpipe%20vermin
+image=http://mtgimage.com/card/drainpipe%20vermin.jpg
+value=2.769
+rarity=C
+type=Creature
+subtype=Rat
+cost={B}
+pt=1/1
+ability=When SN dies, you may pay {B}. If you do, target player discards a card.
+timing=main

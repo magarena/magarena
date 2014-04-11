@@ -1,0 +1,11 @@
+name=Insidious Bookworms
+url=http://www.magiccards.info/query?q=%21insidious%20bookworms
+image=http://mtgimage.com/card/insidious%20bookworms.jpg
+value=3.225
+rarity=C
+type=Creature
+subtype=Worm
+cost={B}
+pt=1/1
+ability=When SN dies, you may pay {1}{B}. If you do, target player discards a card at random.
+timing=main

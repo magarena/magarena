@@ -1,0 +1,11 @@
+name=Kalastria Highborn
+url=http://www.magiccards.info/query?q=%21kalastria%20highborn
+image=http://mtgimage.com/card/kalastria%20highborn.jpg
+value=4.402
+rarity=R
+type=Creature
+subtype=Vampire,Shaman
+cost={B}{B}
+pt=2/2
+ability=Whenever SN or another Vampire you control dies, you may pay {B}. If you do, target player loses 2 life and you gain 2 life.
+timing=main

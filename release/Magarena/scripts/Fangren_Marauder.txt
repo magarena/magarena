@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={5}{G}
 pt=5/5
+ability=Whenever an artifact is put into a graveyard from the battlefield, you may gain 5 life.
 timing=main
-requires_groovy_code

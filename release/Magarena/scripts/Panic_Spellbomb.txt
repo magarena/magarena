@@ -1,0 +1,10 @@
+name=Panic Spellbomb
+url=http://www.magiccards.info/query?q=%21panic%20spellbomb
+image=http://mtgimage.com/card/panic%20spellbomb.jpg
+value=2.798
+rarity=C
+type=Artifact
+cost={1}
+ability={T}, Sacrifice SN: Target creature can't block this turn.;\
+        When SN is put into a graveyard from the battlefield, you may pay {R}. If you do, draw a card.
+timing=artifact

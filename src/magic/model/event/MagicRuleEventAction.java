@@ -502,7 +502,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLifeChosen(
-        "(?<choice>[^\\.]*) loses (?<amount>[0-9]+) life\\.", 
+        "(?<choice>[^\\.]*) lose(s)? (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
         MagicTiming.Removal, 
         "-Life"

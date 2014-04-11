@@ -1,0 +1,10 @@
+name=Horizon Spellbomb
+url=http://www.magiccards.info/query?q=%21horizon%20spellbomb
+image=http://mtgimage.com/card/horizon%20spellbomb.jpg
+value=2.822
+rarity=C
+type=Artifact
+cost={1}
+ability={2}, {T}, Sacrifice SN: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.;\
+        When SN is put into a graveyard from the battlefield, you may pay {G}. If you do, draw a card.
+timing=artifact

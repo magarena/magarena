@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 given_ability=fear
-ability=When SN dies, return SN from the graveyard to its owner's hand.
+ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=unblockable,pos creature
