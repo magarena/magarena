@@ -31,7 +31,7 @@ public class MagicFromCardListChoice extends MagicChoice {
     public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount) {
         this(choiceList, showList, amount, false);
     }
-    
+    /** reminder to self: need to implement upTo for cases, in which player can choose "up to" any number of cards, see if it can be done with controller.enableForwardButton() */
     public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount, final boolean upTo) {
         super(genDescription(amount));
         this.choiceList = choiceList;
@@ -100,6 +100,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final Set<Object> validCards=new HashSet<Object>(this.choiceList);
         int actualAmount=Math.min(amount,validCards.size());
+        /** if there is no choice to be made, amount is 0, and so is actualAmount, but the showlist should be displayed nevertheless - I hope this takes care of it */
         if (actualAmount == 0) {
             final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
             controller.showCards(this.showList);
