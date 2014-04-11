@@ -7,5 +7,6 @@ type=Creature
 subtype=Shade,Spirit
 cost={3}{B}
 pt=1/1
-ability=regenerate {B};{B}: SN gets +1/+1 until end of turn.
+ability={B}: Regenerate SN.;\
+        {B}: SN gets +1/+1 until end of turn.
 timing=main

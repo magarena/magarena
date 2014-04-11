@@ -2,10 +2,10 @@ name=Selesnya Sentry
 url=http://magiccards.info/query?q=%21selesnya%20sentry
 image=http://mtgimage.com/card/selesnya%20sentry.jpg
 value=1.932
-ability=regenerate {5}{G}
 rarity=C
 type=Creature
 subtype=Elephant,Soldier
 cost={2}{W}
 pt=3/2
+ability={5}{G}: Regenerate SN.
 timing=main

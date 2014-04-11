@@ -7,5 +7,6 @@ type=Creature
 subtype=Insect
 cost={B}{B}
 pt=1/1
-ability=flying;regenerate {B}
+ability=flying;\
+        {B}: Regenerate SN.
 timing=main

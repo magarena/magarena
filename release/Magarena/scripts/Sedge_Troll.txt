@@ -7,6 +7,6 @@ type=Creature
 subtype=Troll
 cost={2}{R}
 pt=2/2
-ability=regenerate {B}
+ability={B}: Regenerate SN.
 timing=main
 requires_groovy_code

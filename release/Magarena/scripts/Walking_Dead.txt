@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={1}{B}
 pt=1/1
-ability=regenerate {B}
+ability={B}: Regenerate SN.
 timing=main

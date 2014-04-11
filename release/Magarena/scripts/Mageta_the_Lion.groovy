@@ -16,7 +16,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Destroy all other creatures."
+                "Destroy all creatures except SN. Those creatures can't be regenerated."
             );
         }
 

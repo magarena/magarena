@@ -7,5 +7,6 @@ type=Creature
 subtype=Harpy,Beast
 cost={2}{B}{B}
 pt=2/2
-ability=flying;regenerate {1}{B}
+ability=flying;\
+        {1}{B}: Regenerate SN.
 timing=main
