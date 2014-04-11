@@ -104,8 +104,8 @@ public class MagicFromCardListChoice extends MagicChoice {
             final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
             controller.showCards(this.showList);
             controller.focusViewers(5,-1);
-            controller.disableActionUndoButton(true);
-            controller.pause(10);
+            controller.enableForwardButton();
+            controller.waitForInput();
             controller.clearCards();
             controller.focusViewers(0,-1);
             return new Object[]{result};
@@ -115,7 +115,6 @@ public class MagicFromCardListChoice extends MagicChoice {
                 controller.showCards(this.showList);
                 controller.focusViewers(5,-1);
                 controller.disableActionButton(false);
-                controller.disableActionUndoButton(true);
                 controller.setValidChoices(validCards,false);
                 controller.showMessage(source,message);
                 controller.waitForInput();
