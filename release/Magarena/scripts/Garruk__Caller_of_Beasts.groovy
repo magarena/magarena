@@ -68,13 +68,13 @@
                                 cardOnStack,
                                 new MagicMayChoice(),
                                 this,
-                                "PN may search his or her library for creature card and put that card onto the battlefield. Then shuffle PN's library."
+                                "PN may\$ search his or her library for creature card and put that card onto the battlefield. Then shuffle PN's library."
                             ):
                             MagicEvent.NONE;
                     }
                     @Override
                     public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        if(event.isYes()) {
+                        if (event.isYes()) {
                             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                                 event,
                                 MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY
