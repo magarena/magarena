@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Warrior
 cost={3}{B}
 pt=3/2
+ability=Whenever a player casts a Kithkin spell, you may have target player loses 1 life.
 timing=main
-requires_groovy_code

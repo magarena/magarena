@@ -7,5 +7,5 @@ type=Creature
 subtype=Ogre,Warrior
 cost={3}{R}
 pt=5/4
+ability=Whenever a player casts a spell, tap SN.
 timing=main
-requires_groovy_code
