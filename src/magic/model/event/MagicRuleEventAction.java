@@ -1591,6 +1591,21 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SwitchPTSelf(
+        "switch SN's power and toughness until end of turn\\.",
+        MagicTiming.Pump,
+        "Switch"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicAddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
+                }
+            };
+        }
+    }
     ;
 
     private final Pattern pattern;
