@@ -6,6 +6,6 @@ rarity=R
 type=Artifact,Creature
 subtype=Golem
 cost={4}
-ability=modular 2
+ability=Remove a +1/+1 counter from SN: Put target artifact card from your graveyard on top of your library.;\
+        modular 2
 timing=main
-requires_groovy_code
