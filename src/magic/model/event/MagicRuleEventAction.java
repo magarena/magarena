@@ -1378,7 +1378,18 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    Tap(
+    TapSelf(
+        "tap sn\\.",
+        MagicTiming.Tapping,
+        "Tap",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicTapAction(event.getPermanent(),true));
+            }
+        }
+    ),
+    TapChosen(
         "tap (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,

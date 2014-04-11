@@ -236,6 +236,12 @@ public class MagicTargetFilterFactory {
             return target.isController(player) && !target.isToken() && target.isCreature();
         }
     };
+    
+    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isToken() && target.isCreature();
+        }
+    };
 
     public static final MagicPermanentFilterImpl NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -629,6 +635,14 @@ public class MagicTargetFilterFactory {
             return target.isController(player) &&
                    target.isCreature() &&
                    !target.hasSubType(MagicSubType.Angel);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl NON_SPIRIT_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isController(player) &&
+                   target.isCreature() &&
+                   !target.hasSubType(MagicSubType.Spirit);
         }
     };
 
@@ -1165,6 +1179,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> creature you control
         single.put("non-Angel creature you control", NON_ANGEL_CREATURE_YOU_CONTROL);
+        single.put("non-Spirit creature you control", NON_SPIRIT_CREATURE_YOU_CONTROL);
         single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", RED_OR_GREEN_CREATURE_YOU_CONTROL);
         single.put("untapped creature you control", UNTAPPED_CREATURE_YOU_CONTROL);
@@ -1176,6 +1191,9 @@ public class MagicTargetFilterFactory {
         single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
         single.put("attacking creature you control", ATTACKING_CREATURE_YOU_CONTROL);
         single.put("nontoken creature you control", NONTOKEN_CREATURE_YOU_CONTROL);
+        single.put("creature with power 3 or greater you control", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
+        single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
+        single.put("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -1211,13 +1229,12 @@ public class MagicTargetFilterFactory {
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS); 
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
-        single.put("creature with power 3 or greater you control", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
-        single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with +1/+1 counter", CREATURE_PLUSONE_COUNTER);
         single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
+        single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
 
         // <color|type|subtype> you control
