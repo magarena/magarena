@@ -22,16 +22,22 @@ public class MagicFromCardListChoice extends MagicChoice {
     private final MagicCardList showList;
     private final MagicCardList choiceList;
     private final int amount;
+    private final boolean upTo;
 
     public MagicFromCardListChoice(final MagicCardList choiceList,final int amount) {
-        this(choiceList,choiceList,amount);
+        this(choiceList, choiceList, amount, false);
     }
     
     public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount) {
+        this(choiceList, showList, amount, false);
+    }
+    
+    public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount, final boolean ) {
         super(genDescription(amount));
-        this.choiceList=choiceList;
-        this.showList=showList;
-        this.amount=amount;
+        this.choiceList = choiceList;
+        this.showList = showList;
+        this.amount = amount;
+        this.upTo = upTo;
     }
 
     private static final String genDescription(final int amount) {
