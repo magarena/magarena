@@ -360,6 +360,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl CREATURE_THAT_ISNT_ENCHANTED = new MagicPermanentFilterImpl(){
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && target.isEnchanted() == false;
+        }
+    };
+
     public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
@@ -1190,6 +1196,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with +1/+1 counter", CREATURE_PLUSONE_COUNTER);
+        single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);

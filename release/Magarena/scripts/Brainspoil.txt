@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 cost={3}{B}{B}
 timing=removal
+effect=Destroy target creature that isn't enchanted. It can't be regenerated.
 ability=Transmute {1}{B}{B}
-requires_groovy_code
