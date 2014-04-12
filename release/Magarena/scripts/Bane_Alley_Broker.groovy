@@ -5,45 +5,17 @@ def HAS_EXILED_BEFORE_CONDITION = new MagicCondition() {
     }
 };
 
-def public class ExileCardFromHandAction extends MagicAction {
-    private final MagicPermanent source;
-    private final MagicCard card;
-
-    public ExileCardFromHandAction(final MagicPermanent source,final MagicCard card){
-        this.source = source;
-        this.card = card;
-    }
-    
-    public void doAction(final MagicGame game) {
-        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.OwnersHand));
-        game.doAction(new MagicMoveCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
-        source.addExiledCard(card);
-    }
-    
-    public void undoAction(final MagicGame game) {
-        source.removeExiledCard(card);
-    }
-};
-
-def public class ReclaimExiledCardAction extends MagicAction {
-    private final MagicPermanent source;
-    private final MagicCard card;
-
-    public ReclaimExiledCardAction(final MagicPermanent source,final MagicCard card){
-        this.source = source;
-        this.card = card;
-    }
-    
-    public void doAction(final MagicGame game) {
-        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Exile));
-        game.doAction(new MagicMoveCardAction(card, MagicLocationType.Exile, MagicLocationType.OwnersHand));
-        source.removeExiledCard(card);
-    }
-    
-    public void undoAction(final MagicGame game) {
-        source.addExiledCard(card);
-    }
-};
+def ExileCard = {
+    final MagicGame game, final MagicEvent event ->
+    event.processTargetCard(game, {
+        final MagicCard card ->
+        game.doAction(new MagicExileUntilThisLeavesPlayAction(
+            event.getPermanent(),
+            card,
+            MagicLocationType.OwnersHand
+        ));
+    });
+}
 
 [
     new MagicPermanentActivation(
@@ -62,34 +34,21 @@ def public class ReclaimExiledCardAction extends MagicAction {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                0,
                 this,
                 "PN draws a card, then exiles a card from his or her hand."
             );
         }       
-        public MagicEvent exileCardFromHandEvent(final MagicPermanent source) {
-            return new MagicEvent(
-                source,
-                MagicTargetChoice.A_CARD_FROM_HAND,
-                MagicGraveyardTargetPicker.ExileOwn,
-                1,
-                this,
-                "PN exiles a card\$ from his or her hand."
-            );
-        }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getRefInt() == 0) {
-               game.doAction(new MagicDrawAction(event.getPlayer(),1));
-               game.addEvent(exileCardFromHandEvent(event.getPermanent()));
-            }
-            if (event.getRefInt() == 1) {
-                event.processTargetCard(game, {
-                    final MagicCard card ->
-                    game.doAction(new ExileCardFromHandAction(event.getPermanent(),card));
-                });
-            }
+           game.doAction(new MagicDrawAction(event.getPlayer(),1));
+           game.addEvent(new MagicEvent(
+                event.getSource(),
+                MagicTargetChoice.A_CARD_FROM_HAND,
+                MagicGraveyardTargetPicker.ExileOwn,
+                ExileCard,
+                "PN exiles a card\$ from his or her hand."
+           ));
         }
     },
     new MagicPermanentActivation(
@@ -117,7 +76,7 @@ def public class ReclaimExiledCardAction extends MagicAction {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {
                 final MagicCard card ->
-                game.doAction(new ReclaimExiledCardAction(event.getPermanent(),card));
+                game.doAction(new MagicReclaimExiledCardAction(event.getPermanent(),card));
             });
         }
     }
