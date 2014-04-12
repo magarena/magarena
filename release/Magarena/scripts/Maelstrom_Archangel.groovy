@@ -12,22 +12,18 @@ def A_NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
     "a nonland card from your hand"
 );
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource()==permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        A_NONLAND_CARD_FROM_HAND
-                    ),
-                    MagicGraveyardTargetPicker.PutOntoBattlefield,
-                    this,
-                    "PN may\$ cast target nonland card\$ from his or her hand without paying its mana cost."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    A_NONLAND_CARD_FROM_HAND
+                ),
+                MagicGraveyardTargetPicker.PutOntoBattlefield,
+                this,
+                "PN may\$ cast target nonland card\$ from his or her hand without paying its mana cost."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
