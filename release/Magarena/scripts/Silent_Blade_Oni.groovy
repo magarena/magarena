@@ -9,21 +9,16 @@ def Cast = {
 };
 
 [
-new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    permanent.isOpponent(damage.getTarget()) &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    new MagicMayChoice(),
-                    (MagicPlayer) damage.getTarget(),
-                    this,
-                    "RN reveals his or her hand. PN may cast a nonland card from it."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(),
+                damage.getTarget(),
+                this,
+                "RN reveals his or her hand. PN may cast a nonland card from it."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
