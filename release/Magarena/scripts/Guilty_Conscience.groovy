@@ -3,8 +3,8 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             final MagicPermanent enchantedCreature = permanent.getEnchantedPermanent();
-            final int amount = damage.getAmount();
-            return damage.getSource() == enchantedCreature ?
+            final int amount = damage.getDealtAmount();
+            return damage.isSource(enchantedCreature) ?
                 new MagicEvent(
                     permanent,
                     enchantedCreature,
