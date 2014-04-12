@@ -1,0 +1,12 @@
+name=Ghastlord of Fugue
+url=http://magiccards.info/query?q=%21ghastlord%20of%20fugue
+image=http://mtgimage.com/card/ghastlord%20of%20fugue.jpg
+value=4.116
+rarity=R
+type=Creature
+subtype=Spirit,Avatar
+cost={U/B}{U/B}{U/B}{U/B}{U/B}
+pt=4/4
+ability=SN can't be blocked.
+timing=main
+requires_groovy_code
