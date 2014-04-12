@@ -20,11 +20,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getRefPlayer();
-            final MagicCardList showList = player.getHand();
-            final MagicCardList choiceList = new MagicCardList();
+            final List<MagicCard> showList = player.getHand();
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicFromCardListChoice(choiceList,showList,0,false),
+                new MagicFromCardListChoice(showList),
                 event.getRefPlayer(),
                 MagicEvent.NO_ACTION,
                 "RN revealed his or her hand."
