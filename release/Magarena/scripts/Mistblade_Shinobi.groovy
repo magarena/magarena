@@ -1,20 +1,16 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                damage.getTarget().isPlayer() &&
-                damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS
-                    ),
-                    MagicBounceTargetPicker.create(),
-                    this,
-                    "PN may\$ return target creature defending player controls to its owner's hand."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS
+                ),
+                MagicBounceTargetPicker.create(),
+                this,
+                "PN may\$ return target creature defending player controls to its owner's hand."
+            );
         }
 
         @Override
