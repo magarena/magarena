@@ -50,6 +50,10 @@ public class MagicDamage {
     public boolean isTargetPlayer() {
         return target.isPlayer();
     }
+    
+    public boolean isTargetCreature() {
+        return target.isCreature();
+    }
 
     public MagicPlayer getTargetPlayer() {
         return (MagicPlayer)target;
