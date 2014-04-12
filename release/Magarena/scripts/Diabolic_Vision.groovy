@@ -55,7 +55,7 @@ def PutBackRest = {
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN looks at the top seven cards of his or her library. Then PN puts two of them into your hand and the rest into his or her graveyard."
+                "PN looks at the top five cards of his or her library. Then PN puts one of them into his or her hand and the rest on top of his or her library in any order."
             );
         }
         
