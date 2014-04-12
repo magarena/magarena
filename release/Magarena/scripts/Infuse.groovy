@@ -16,7 +16,8 @@ def TARGET_ARTIFACT_CREATURE_OR_LAND = new MagicTargetChoice(
                 cardOnStack,
                 TARGET_ARTIFACT_CREATURE_OR_LAND,
                 this,
-                "PN untaps target artifact, creature, or land.\$"
+                "PN untaps target artifact, creature, or land.\$"+
+                "PN draws a card at the beginning of the next turn's upkeep."
             );
         }
         @Override

@@ -6,7 +6,8 @@
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
-                "PN looks at target player's\$ hand."
+                "PN looks at target player's\$ hand."+
+                "PN draws a card at the beginning of the next turn's upkeep."
             );
         }
         @Override
