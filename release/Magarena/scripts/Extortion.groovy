@@ -1,12 +1,9 @@
 def DiscardTwo = {
     final MagicGame game, final MagicEvent event ->
-    if (event.getCardChoice().size() == 1) {
-        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),event.getCardChoice().get(0)));
-    } else if(event.getCardChoice().size() == 2) {
-        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),event.getCardChoice().get(1)));
-        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),event.getCardChoice().get(0)));
-    }
-    
+    event.processChosenCards(game, {
+        final MagicCard card ->
+        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),card));
+    });
 };
 
 

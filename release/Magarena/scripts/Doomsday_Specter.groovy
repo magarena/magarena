@@ -1,22 +1,20 @@
 def Discard = {
     final MagicGame game, final MagicEvent event ->
-    if (event.getCardChoice().size() > 0) {
-        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),event.getCardChoice().get(0)));
-    }
+    event.processChosenCards(game, {
+        final MagicCard card ->
+        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),card));
+    });
 };
 
 
 [
-new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    permanent.isOpponent(damage.getTarget()) &&
-                    damage.isCombat()) ?
+            return (damage.isSource(permanent) && damage.isCombat() && damage.isTargetPlayer()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
-                    (MagicPlayer) damage.getTarget(),
+                    damage.getTarget(),
                     this,
                     "PN looks at RN's hand and chooses a card from it. RN discards that card."
                 ):

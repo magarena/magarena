@@ -115,10 +115,10 @@ def public class ReclaimExiledCardAction extends MagicAction {
         }       
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getCardChoice().size() > 0) {
-                final MagicCard card = event.getCardChoice().get(0);
+            event.processChosenCards(game, {
+                final MagicCard card ->
                 game.doAction(new ReclaimExiledCardAction(event.getPermanent(),card));
-            }
+            });
         }
     }
 ]

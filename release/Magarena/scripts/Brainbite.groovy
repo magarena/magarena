@@ -1,8 +1,9 @@
 def DiscardDraw = {
     final MagicGame game, final MagicEvent event ->
-    if (event.getCardChoice().size() > 0) {
-        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),event.getCardChoice().get(0)));
-    }
+    event.processChosenCards(game, {
+        final MagicCard card ->
+        game.doAction(new MagicDiscardCardAction(event.getRefPlayer(),card));
+    });
     game.doAction(new MagicDrawAction(event.getPlayer(),1));
 };
 

@@ -1,11 +1,11 @@
 def Cast = {
     final MagicGame game, final MagicEvent event ->
-    if (event.getCardChoice().size() > 0) {
-        final MagicCard card = (MagicCard)event.getCardChoice().get(0);
+    event.processChosenCards(game, {
+        final MagicCard card ->
         game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
         final MagicCardOnStack cardOnStack=new MagicCardOnStack(card,event.getPlayer(), MagicPayedCost.NO_COST);
         game.doAction(new MagicPutItemOnStackAction(cardOnStack));
-    }
+    });
 };
 
 [
