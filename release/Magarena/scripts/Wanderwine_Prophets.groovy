@@ -1,21 +1,17 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        MagicTargetChoice.SACRIFICE_MERFOLK
-                    ),
-                    MagicSacrificeTargetPicker.create(),
-                    this,
-                    "PN may\$ sacrifice a Merfolk\$. " +
-                    "If you do, take an extra turn after this one"
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.SACRIFICE_MERFOLK
+                ),
+                MagicSacrificeTargetPicker.create(),
+                this,
+                "PN may\$ sacrifice a Merfolk\$. " +
+                "If you do, take an extra turn after this one"
+            );
         }
 
         @Override
