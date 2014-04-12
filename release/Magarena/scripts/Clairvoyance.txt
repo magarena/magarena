@@ -1,0 +1,9 @@
+name=Clairvoyance
+url=http://magiccards.info/query?q=%21clairvoyance
+image=http://mtgimage.com/card/clairvoyance.jpg
+value=3.025
+rarity=C
+type=Instant
+cost={U}
+timing=draw
+requires_groovy_code

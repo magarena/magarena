@@ -1,0 +1,9 @@
+name=Agonizing Memories
+url=http://magiccards.info/query?q=%21agonizing%20memories
+image=http://mtgimage.com/card/agonizing%20memories.jpg
+value=3.406
+rarity=U
+type=Sorcery
+cost={2}{B}{B}
+timing=removal
+requires_groovy_code
