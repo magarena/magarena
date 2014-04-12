@@ -1,21 +1,17 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicOrChoice(
-                        MagicChoice.NONE,
-                        MagicChoice.NONE
-                    ),
-                    damage.getTarget(),
-                    this,
-                    "Choose one\$ - RN discards a card; or RN returns a permanent he or she controls to its owner's hand."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicOrChoice(
+                    MagicChoice.NONE,
+                    MagicChoice.NONE
+                ),
+                damage.getTarget(),
+                this,
+                "Choose one\$ - RN discards a card; or RN returns a permanent he or she controls to its owner's hand."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
