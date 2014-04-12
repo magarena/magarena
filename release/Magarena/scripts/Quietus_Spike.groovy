@@ -2,15 +2,12 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicTarget target=damage.getTarget();
-            return (permanent.getEquippedCreature()==damage.getSource() &&
-                    target.isPlayer() &&
-                    damage.isCombat()) ?
+            return (damage.isSource(permanent.getEquippedCreature()) && damage.isTargetPlayer() && damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
                     damage.getTargetPlayer(),
                     this,
-                    "You lose half your life, rounded up."
+                    "PN loses half his or her life, rounded up."
                 ):
                 MagicEvent.NONE;
         }
