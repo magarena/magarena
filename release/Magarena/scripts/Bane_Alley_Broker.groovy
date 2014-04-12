@@ -9,7 +9,7 @@ def ExileCard = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
         final MagicCard card ->
-        game.doAction(new MagicExileUntilThisLeavesPlayAction(
+        game.doAction(new MagicExileLinkAction(
             event.getPermanent(),
             card,
             MagicLocationType.OwnersHand

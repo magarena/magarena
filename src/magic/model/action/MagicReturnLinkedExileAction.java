@@ -13,7 +13,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
+public class MagicReturnLinkedExileAction extends MagicAction {
 
     private final MagicPermanent source;
     private final MagicLocationType location;
@@ -21,22 +21,22 @@ public class MagicReturnExiledUntilThisLeavesPlayAction extends MagicAction {
     private final List<MagicPlayMod> modifications = new LinkedList<MagicPlayMod>();;
     private MagicCardList exiledList;
     
-    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {
+    public MagicReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {
         source = aSource;
         location = aLocation;
         controller = aController;
     }
     
-    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent source, final MagicLocationType location) {
+    public MagicReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location) {
         this(source, location, MagicPlayer.NONE);
     }
 
-    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController, final MagicPlayMod aModification) {
+    public MagicReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController, final MagicPlayMod aModification) {
         this(aSource, aLocation, aController);
         modifications.add(aModification);
     }
     
-    public MagicReturnExiledUntilThisLeavesPlayAction(final MagicPermanent source, final MagicLocationType location, final MagicPlayMod aModification) {
+    public MagicReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location, final MagicPlayMod aModification) {
         this(source, location);
         modifications.add(aModification);
     }

@@ -23,7 +23,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent creature ->
-                    game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                    game.doAction(new MagicExileLinkAction(
                         event.getPermanent(),
                         creature
                     ));

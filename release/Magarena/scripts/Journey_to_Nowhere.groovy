@@ -15,7 +15,7 @@
             final MagicPermanent permanent = event.getPermanent();
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
-                game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,creature));
+                game.doAction(new MagicExileLinkAction(permanent,creature));
             });
         }
     }

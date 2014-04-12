@@ -13,7 +13,7 @@
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.LAND);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                game.doAction(new MagicExileLinkAction(
                     event.getPermanent(),
                     target
                 ));
@@ -38,7 +38,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
-            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(
+            game.doAction(new MagicReturnLinkedExileAction(
                 event.getPermanent(),
                 MagicLocationType.Play,
                 MagicPlayMod.TAPPED

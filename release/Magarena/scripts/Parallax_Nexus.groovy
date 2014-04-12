@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
         final MagicCard card ->
-        game.doAction(new MagicExileUntilThisLeavesPlayAction(
+        game.doAction(new MagicExileLinkAction(
             event.getPermanent(),
             card,
             MagicLocationType.OwnersHand
@@ -68,7 +68,7 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(permanent,MagicLocationType.OwnersHand));
+            game.doAction(new MagicReturnLinkedExileAction(permanent,MagicLocationType.OwnersHand));
         }
     }
 ]

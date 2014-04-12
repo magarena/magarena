@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
                 if (event.getPermanent().isValid()) {
-                    game.doAction(new MagicExileUntilThisLeavesPlayAction(event.getPermanent(), creature));
+                    game.doAction(new MagicExileLinkAction(event.getPermanent(), creature));
                     game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicWhenSelfLeavesPlayTrigger.ExileUntilLeaves));
                 }
             });

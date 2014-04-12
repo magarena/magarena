@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSubType;
-import magic.model.action.MagicExileUntilThisLeavesPlayAction;
+import magic.model.action.MagicExileLinkAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicMayChoice;
@@ -74,7 +74,7 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
         if (event.isYes()) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicExileUntilThisLeavesPlayAction act = new MagicExileUntilThisLeavesPlayAction(permanent,creature);
+                    final MagicExileLinkAction act = new MagicExileLinkAction(permanent,creature);
                     game.doAction(act);
                     game.executeTrigger(MagicTriggerType.WhenChampioned, act);
                 }

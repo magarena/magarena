@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
-                game.doAction(new MagicExileUntilThisLeavesPlayAction(event.getPermanent(),creature));
+                game.doAction(new MagicExileLinkAction(event.getPermanent(),creature));
             });
         }
     }

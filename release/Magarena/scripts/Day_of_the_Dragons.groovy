@@ -14,7 +14,7 @@
             final Collection<MagicPermanent> targets =
                     game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                game.doAction(new MagicExileLinkAction(
                     event.getPermanent(),
                     target
                 ));
@@ -51,7 +51,7 @@
                 game.doAction(new MagicSacrificeAction(target));
             }
             final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicReturnExiledUntilThisLeavesPlayAction(
+            game.doAction(new MagicReturnLinkedExileAction(
                 permanent,
                 MagicLocationType.Play,
                 event.getPlayer()

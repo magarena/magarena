@@ -24,7 +24,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent target ->
-                    game.doAction(new MagicExileUntilThisLeavesPlayAction(permanent,target));
+                    game.doAction(new MagicExileLinkAction(permanent,target));
                 });
             }
         }

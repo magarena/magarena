@@ -26,7 +26,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent permanent ->
-                game.doAction(new MagicExileUntilThisLeavesPlayAction(
+                game.doAction(new MagicExileLinkAction(
                     event.getPermanent(),
                     permanent
                 ));
