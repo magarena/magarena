@@ -1,18 +1,13 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicTarget target = damage.getTarget();
-            return (MagicCondition.METALCRAFT_CONDITION.accept(permanent) &&
-                    permanent == damage.getSource() &&
-                    target.isPlayer() &&
-                    damage.isCombat()) ?
+            return MagicCondition.METALCRAFT_CONDITION.accept(permanent) ?
                 new MagicEvent(
                     permanent,
                     damage.getTargetPlayer(),
                     this,
-                    "PN puts the top four cards of " +
-                    "his or her library into his or her graveyard."
+                    "PN puts the top four cards of his or her library into his or her graveyard."
                 ):
                 MagicEvent.NONE;
         }
