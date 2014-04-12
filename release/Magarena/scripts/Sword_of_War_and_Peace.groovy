@@ -2,11 +2,10 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicTarget targetPlayer=damage.getTarget();
-            return (damage.getSource()==permanent.getEquippedCreature()&&damage.getTarget().isPlayer()&&damage.isCombat()) ?
+            return (damage.isSource(permanent.getEquippedCreature()) && damage.isTargetPlayer() && damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    targetPlayer,
+                    damage.getTarget(),
                     this,
                     "SN deals damage to RN equal to the number of cards in his or her hand and " +
                     "PN gains 1 life for each card in his or her hand."
