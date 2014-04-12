@@ -7,6 +7,6 @@ type=Creature
 subtype=Vampire,Warrior
 cost={3}{R}{R}
 pt=2/2
-ability=flying;haste
+ability=flying;haste;\
+        Whenever SN deals combat damage to a player, put two +1/+1 counters on SN.
 timing=fmain
-requires_groovy_code
