@@ -1282,7 +1282,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS); 
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
-        single.put("creature with +1/+1 counter", CREATURE_PLUSONE_COUNTER);
+        single.put("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         single.put("creature with a counter on it", CREATURE_WITH_COUNTER);
         single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
