@@ -15,21 +15,20 @@
                 source,
                 MagicTargetChoice.Positive("target creature"),
                 this,
-                "Put a +1/+1 counter on target creature\$ for each Elf creature you control."
+                "Put a +1/+1 counter on target creature\$ for each Elf you control."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Elf);
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent target) {
-                    game.doAction(new MagicChangeCountersAction(
-                        target,
-                        MagicCounterType.PlusOne,
-                        amount,
-                        true
-                    ));
-                }
+            event.processTargetPermanent(game, {
+                final MagicPermanent target ->
+                final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Elf);
+                game.doAction(new MagicChangeCountersAction(
+                    target,
+                    MagicCounterType.PlusOne,
+                    amount,
+                    true
+                ));
             });
         }
     }
