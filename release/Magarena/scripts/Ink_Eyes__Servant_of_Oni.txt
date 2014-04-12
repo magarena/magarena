@@ -10,4 +10,4 @@ pt=5/4
 ability=ninjutsu {3}{B}{B};\
         {1}{B}: Regenerate SN.
 timing=main
-requires_groovy_code
+requires_groovy_code=Scion of Darkness
