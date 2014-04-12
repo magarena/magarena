@@ -27,7 +27,7 @@ public class MagicRevealAction extends MagicAction {
         }
         game.addEvent(new MagicEvent(
             MagicEvent.NO_SOURCE,
-            cards.get(0).getController(),
+            cards.get(0).getOpponent(),
             new MagicFromCardListChoice(cards),
             MagicEvent.NO_ACTION,
             ""
