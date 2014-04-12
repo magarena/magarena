@@ -1,21 +1,17 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.create("{2}{W}")),
-                        MagicColorChoice.MOST_INSTANCE
-                    ),
-                    this,
-                    "PN may\$ pay {2}{W}\$. If you do, choose a color\$. " +
-                    "PN gains 1 life for each permanent of that color."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(MagicManaCost.create("{2}{W}")),
+                    MagicColorChoice.MOST_INSTANCE
+                ),
+                this,
+                "PN may\$ pay {2}{W}\$. If you do, choose a color\$. " +
+                "PN gains 1 life for each permanent of that color."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
