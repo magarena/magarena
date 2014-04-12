@@ -7,6 +7,6 @@ type=Creature
 subtype=Thrull
 cost={4}{W}{B}
 pt=4/4
-ability=extort
+ability=extort;\
+        Whenever SN attacks, you may return target artifact, creature, or enchantment card from your graveyard to your hand.
 timing=main
-requires_groovy_code
