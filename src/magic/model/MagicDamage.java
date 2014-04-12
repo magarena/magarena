@@ -31,8 +31,8 @@ public class MagicDamage {
         return source;
     }
     
-    public boolean isSource(final MagicSource aSource) {
-        return source == aSource;
+    public boolean isSource(final MagicSource other) {
+        return source == other;
     }
 
     public void setTarget(final MagicTarget target) {
@@ -41,6 +41,14 @@ public class MagicDamage {
 
     public MagicTarget getTarget() {
         return target;
+    }
+    
+    public boolean isTarget(final MagicTarget other) {
+        return target == other;
+    }
+    
+    public boolean isTargetPlayer() {
+        return target.isPlayer();
     }
 
     public MagicPlayer getTargetPlayer() {

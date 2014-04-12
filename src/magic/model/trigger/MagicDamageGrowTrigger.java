@@ -22,7 +22,7 @@ public class MagicDamageGrowTrigger extends MagicWhenDamageIsDealtTrigger {
             final MagicGame game,
             final MagicPermanent permanent,
             final MagicDamage damage) {
-        return (damage.getSource() == permanent &&
+        return (damage.isSource(permanent) &&
                 (!player || damage.getTarget().isPlayer()) &&
                 (player || (damage.getTarget().isPermanent() &&
                 damage.getTarget().isCreature())) &&

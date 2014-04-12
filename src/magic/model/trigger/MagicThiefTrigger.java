@@ -37,8 +37,8 @@ public class MagicThiefTrigger extends MagicWhenDamageIsDealtTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-        if (damage.getSource() == permanent &&
-            damage.getTarget().isPlayer() &&
+        if (damage.isSource(permanent) &&
+            damage.isTargetPlayer() &&
             (player == Player.Any || permanent.isOpponent(damage.getTarget())) &&
             (type == Type.Any || damage.isCombat())) {
             return (choice == Choice.Must) ?

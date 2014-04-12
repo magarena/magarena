@@ -43,7 +43,7 @@ public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         final MagicTarget target = damage.getTarget();
-        return (damage.getSource() == permanent &&
+        return (damage.isSource(permanent) &&
                 target.isPlayer() &&
                 ((MagicPlayer)target).getHandSize() > 0 &&
                 (player == Player.Any || permanent.isOpponent(target)) &&
