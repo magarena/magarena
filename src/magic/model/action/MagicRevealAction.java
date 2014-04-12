@@ -22,8 +22,12 @@ public class MagicRevealAction extends MagicAction {
     }
 
     public void doAction(final MagicGame game) {
+        if (cards.isEmpty()) {
+            return;
+        }
         game.addEvent(new MagicEvent(
             MagicEvent.NO_SOURCE,
+            cards.get(0).getController(),
             new MagicFromCardListChoice(cards),
             MagicEvent.NO_ACTION,
             ""
