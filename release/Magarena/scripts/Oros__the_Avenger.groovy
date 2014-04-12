@@ -1,20 +1,16 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        new MagicPayManaCostChoice(MagicManaCost.create("{2}{W}"))
-                    ),
-                    this,
-                    "You may\$ pay {2}{W}\$. If you do, SN " +
-                    "deals 3 damage to each nonwhite creature."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(MagicManaCost.create("{2}{W}"))
+                ),
+                this,
+                "You may\$ pay {2}{W}\$. If you do, SN " +
+                "deals 3 damage to each nonwhite creature."
+            );
         }
 
         @Override
