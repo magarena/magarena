@@ -20,22 +20,22 @@ public class MagicFromCardListChoice extends MagicChoice {
 
     private static final String MESSAGE="Choose a card.";
     private final MagicCardList showList;
-    private final MagicCardList choiceList;
+    private final List<MagicCard> choiceList;
     private final int amount;
     private final boolean upTo;
 
-    public MagicFromCardListChoice(final MagicCardList choiceList,final int amount) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount) {
         this(choiceList, choiceList, amount, false);
     }
     
-    public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount) {
         this(choiceList, showList, amount, false);
     }
     /** reminder to self: need to implement upTo for cases, in which player can choose "up to" any number of cards, see if it can be done with controller.enableForwardButton() */
-    public MagicFromCardListChoice(final MagicCardList choiceList,final MagicCardList showList,final int amount, final boolean upTo) {
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount, final boolean upTo) {
         super(genDescription(amount));
         this.choiceList = choiceList;
-        this.showList = showList;
+        this.showList = new MagicCardList(showList);
         this.amount = amount;
         this.upTo = upTo;
     }
@@ -50,7 +50,7 @@ public class MagicFromCardListChoice extends MagicChoice {
 
     private void createOptions(
             final Collection<Object> options,
-            final MagicCardList cList,
+            final List<MagicCard> cList,
             final MagicCard[] cards,
             final int count,
             final int aAmount,
@@ -79,7 +79,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object> options = new ArrayList<Object>();
-        final MagicCardList cList = new MagicCardList(this.choiceList);
+        final List<MagicCard> cList = new MagicCardList(this.choiceList);
         Collections.sort(cList);
         final int actualAmount = Math.min(amount,cList.size());
         if (actualAmount > 0) {
@@ -111,7 +111,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             controller.focusViewers(0,-1);
             return new Object[]{result};
         } else {
-	    for (;actualAmount>0;actualAmount--) {
+            for (;actualAmount>0;actualAmount--) {
                 final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
                 controller.showCards(this.showList);
                 controller.focusViewers(5,-1);
