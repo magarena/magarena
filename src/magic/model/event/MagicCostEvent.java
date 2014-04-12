@@ -221,7 +221,7 @@ public enum MagicCostEvent {
         private final Pattern PATTERN=Pattern.compile("(\\{[A-Z\\d/]+\\})+");
         public boolean accept(final String cost) {
             final Matcher m = PATTERN.matcher(cost);
-            return m.matches();
+            return m.matches() && toEvent(cost, MagicEvent.NO_SOURCE).isValid();
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicPayManaCostEvent(source, MagicManaCost.create(cost));
