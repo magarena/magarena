@@ -27,26 +27,30 @@ new MagicWhenDamageIsDealtTrigger() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList showList = event.getRefPlayer().getHand();
-            final MagicCardList choiceList = event.getRefPlayer().getHand();
-            for(int i = choiceList.size()-1; i >= 0; i--) {
-                if (choiceList.get(i).hasType(MagicType.Land)) {
-                    choiceList.remove(i);
+            final List<MagicCard> showList = event.getRefPlayer().getHand();
+            if (event.isYes()) {
+                final MagicCardList choiceList = new MagicCardList(showList);
+                for(int i = choiceList.size()-1; i >= 0; i--) {
+                    if (choiceList.get(i).hasType(MagicType.Land)) {
+                        choiceList.remove(i);
+                    }
                 }
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    new MagicFromCardListChoice(choiceList,showList,1,false),
+                    event.getRefPlayer(),
+                    Cast,
+                    ""
+                ));
+            } else {
+                game.addEvent(new MagicEvent(
+                    event.getSource(),
+                    new MagicFromCardListChoice(showList),
+                    event.getRefPlayer(),
+                    Cast,
+                    ""
+                ));
             }
-            event.isYes() ? game.addEvent(new MagicEvent(
-                event.getSource(),
-                new MagicFromCardListChoice(choiceList,showList,1,false),
-                event.getRefPlayer(),
-                Cast,
-                ""
-            )): game.addEvent(new MagicEvent(
-                event.getSource(),
-                new MagicFromCardListChoice(choiceList,showList,0,false),
-                event.getRefPlayer(),
-                Cast,
-                ""
-            ));
         }
     }
 ]
