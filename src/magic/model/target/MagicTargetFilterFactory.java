@@ -754,6 +754,12 @@ public class MagicTargetFilterFactory {
             return target.isCreature() && target.hasCounters(MagicCounterType.PlusOne);
         }
     };
+    
+    public static final MagicPermanentFilterImpl CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && target.hasCounters();
+        }
+    };
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.Any);
 
@@ -1277,6 +1283,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with +1/+1 counter", CREATURE_PLUSONE_COUNTER);
+        single.put("creature with a counter on it", CREATURE_WITH_COUNTER);
         single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
