@@ -96,7 +96,7 @@ public class MagicMulliganChoice extends MagicChoice {
                         MulliganScreen.isActive() ||
                         (player.getHandSize() == DuelConfig.getInstance().getHandSize() && GeneralConfig.getInstance().showMulliganScreen());
                 if (showMulliganScreen) {
-                    return new MulliganChoicePanel(controller, source, "You may take a mulligan.", player.getHand());
+                    return new MulliganChoicePanel(controller, source, "You may take a mulligan.", player.getPrivateHand());
                 } else {
                     return new MayChoicePanel(controller,source,"You may take a mulligan.");
                 }

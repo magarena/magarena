@@ -12,6 +12,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicPermanentStatic;
 
+import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -252,9 +253,13 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     public void noMaxHandSize() {
         maxHandSize = Integer.MAX_VALUE;
     }
-
-    public MagicCardList getHand() {
+    
+    public MagicCardList getPrivateHand() {
         return hand;
+    }
+
+    public List<MagicCard> getHand() {
+        return Collections.unmodifiableList(hand);
     }
 
     public void addCardToHand(final MagicCard card) {

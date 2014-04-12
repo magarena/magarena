@@ -50,7 +50,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         return targets;
     }
 
-    private void add(final MagicGame game, final MagicPlayer player, final MagicCardList cards, final List<MagicCard> targets, final boolean unique) {
+    private void add(final MagicGame game, final MagicPlayer player, final List<MagicCard> cards, final List<MagicCard> targets, final boolean unique) {
         final Set<Long> added = new HashSet<Long>();
         for (final MagicCard card : cards) {
             if (accept(game,player,card) && (unique == false || added.contains(card.getStateId()) == false)) {

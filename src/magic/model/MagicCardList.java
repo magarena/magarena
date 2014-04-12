@@ -10,7 +10,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
 
     public MagicCardList() {}
 
-    public MagicCardList(final MagicCardList cardList) {
+    public MagicCardList(final List<MagicCard> cardList) {
         super(cardList);
     }
 

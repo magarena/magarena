@@ -82,7 +82,7 @@ public class MagicCard
         final MagicPlayer mappedOwner=owner.map(game);
         MagicCard card = MagicCard.NONE;
         if (card == MagicCard.NONE) {
-            card = mappedOwner.getHand().getCard(id);
+            card = mappedOwner.getPrivateHand().getCard(id);
         }
         if (card == MagicCard.NONE) {
             card = mappedOwner.getGraveyard().getCard(id);
