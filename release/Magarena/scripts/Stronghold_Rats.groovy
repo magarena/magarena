@@ -1,16 +1,12 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.isCombat() &&
-                    damage.getTarget().isPlayer()) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Each player discards a card."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Each player discards a card."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
