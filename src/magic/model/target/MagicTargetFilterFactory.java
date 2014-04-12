@@ -392,6 +392,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl PLAINS = MagicTargetFilterFactory.permanent(MagicSubType.Plains, Control.Any);
     
     public static final MagicPermanentFilterImpl AURA = MagicTargetFilterFactory.permanent(MagicSubType.Aura, Control.Any);
+    
+    public static final MagicPermanentFilterImpl SWAMP = MagicTargetFilterFactory.permanent(MagicSubType.Swamp, Control.Any);
 
     public static final MagicPermanentFilterImpl SWAMP_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Swamp, Control.You);
 
@@ -742,6 +744,12 @@ public class MagicTargetFilterFactory {
         Operator.GREATER_THAN_OR_EQUAL,
         3
     );
+    
+    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE = new MagicPTTargetFilter(
+            MagicTargetFilterFactory.CREATURE,
+            Operator.GREATER_THAN_OR_EQUAL,
+            3
+        );
     
     public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
@@ -1141,6 +1149,7 @@ public class MagicTargetFilterFactory {
         multiple.put("attacking creatures", ATTACKING_CREATURE);
         multiple.put("blocking creatures", BLOCKING_CREATURE);
         multiple.put("tapped creatures", TAPPED_CREATURE);
+        multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
 
         // <color|type|subtype> you control
         multiple.put("lands you control", LAND_YOU_CONTROL);
@@ -1165,6 +1174,7 @@ public class MagicTargetFilterFactory {
         multiple.put("all slivers", SLIVER_PERMANENT);
         multiple.put("all goblins", GOBLIN_PERMANENT);
         multiple.put("goblins", GOBLIN_PERMANENT);
+        multiple.put("zombies", ZOMBIE);
         multiple.put("artifacts", ARTIFACT);
         multiple.put("creatures and lands", CREATURE_OR_LAND);
         multiple.put("artifacts, creatures, and lands", ARTIFACT_OR_CREATURE_OR_LAND);
