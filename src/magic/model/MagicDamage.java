@@ -30,6 +30,10 @@ public class MagicDamage {
     public MagicSource getSource() {
         return source;
     }
+    
+    public boolean isSource(final MagicSource aSource) {
+        return source == aSource;
+    }
 
     public void setTarget(final MagicTarget target) {
         this.target=target;
