@@ -22,7 +22,7 @@ public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDa
     public MagicWhenDamageIsDealtTrigger() {}
     
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-        return damage.getAmount() > 0;
+        return damage.getDealtAmount() > 0;
     }
 
     public MagicTriggerType getType() {
