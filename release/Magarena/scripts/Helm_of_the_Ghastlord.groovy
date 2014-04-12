@@ -1,11 +1,9 @@
 def Draw = new MagicWhenDamageIsDealtTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-        return (damage.getSource() == permanent &&
-                permanent.isOpponent(damage.getTarget())) ?
+        return (damage.isSource(permanent) && permanent.isOpponent(damage.getTarget())) ?
             new MagicEvent(
                 permanent,
-                permanent.getController(),
                 this,
                 "PN draws a card."
             ) :
@@ -19,11 +17,9 @@ def Draw = new MagicWhenDamageIsDealtTrigger() {
 def Discard = new MagicWhenDamageIsDealtTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-        return (damage.getSource() == permanent &&
-                permanent.isOpponent(damage.getTarget())) ?
+        return (damage.isSource(permanent) && permanent.isOpponent(damage.getTarget())) ?
             new MagicEvent(
                 permanent,
-                permanent.getController(),
                 damage.getTarget(),
                 this,
                 "RN discards a card."
