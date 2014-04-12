@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source = damage.getSource();
             return (damage.isCombat() &&
-                    damage.getTarget().isPlayer() &&
+                    damage.isTargetPlayer() &&
                     permanent.isFriend(source) &&
                     source.isPermanent() &&
                     source.hasSubType(MagicSubType.Goblin)) ?

@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource dmgSource = damage.getSource();
             return (damage.isCombat() &&
-                    damage.getTarget().isPlayer() &&
+                    damage.isTargetPlayer() &&
                     permanent.isFriend(dmgSource) &&
                     dmgSource.isCreature() &&
                     dmgSource.hasSubType(MagicSubType.Vampire)) ?

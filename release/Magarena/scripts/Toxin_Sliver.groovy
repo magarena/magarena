@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return (damage.getSource().hasSubType(MagicSubType.Sliver) &&
                     damage.isCombat() &&
-                    damage.getTarget().isCreature()) ?
+                    damage.isTargetCreature()) ?
                 new MagicEvent(
                     permanent,
                     damage.getTarget(),

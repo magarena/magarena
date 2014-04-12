@@ -5,7 +5,7 @@
             int amount = 0;
             if (permanent == damage.getSource() &&
                 damage.isCombat() &&
-                damage.getTarget().isPlayer()) {
+                damage.isTargetPlayer()) {
                 // Replacement effect.
                 amount = damage.replace();
             }

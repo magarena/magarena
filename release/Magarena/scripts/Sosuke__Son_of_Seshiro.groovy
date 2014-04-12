@@ -6,7 +6,7 @@
                     damage.getSource().isPermanent() &&
                     damage.getSource().hasSubType(MagicSubType.Warrior) &&
                     damage.isCombat() &&
-                    damage.getTarget().isCreature()) ?
+                    damage.isTargetCreature()) ?
                 new MagicEvent(
                     permanent,
                     damage.getTarget(),

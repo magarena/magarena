@@ -6,7 +6,7 @@
             return (source.isPermanent() &&
                     source.hasSubType(MagicSubType.Archer) &&
                     source.isFriend(permanent) &&
-                    damage.getTarget().isCreature()) ?
+                    damage.isTargetCreature()) ?
                 new MagicEvent(
                     source,
                     damage.getTarget().getController(),
