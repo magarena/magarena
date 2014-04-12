@@ -2,14 +2,10 @@
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicTarget targetPlayer=damage.getTarget();
-            return (damage.getSource() == permanent.getEquippedCreature() &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
+            return (damage.isSource(permanent.getEquippedCreature()) && damage.getTargetPlayer() && damage.isCombat()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getController(),
-                    targetPlayer,
+                    damage.getTarget(),
                     this,
                     "PN puts a 2/2 green Wolf creature token onto the battlefield and " +
                     "RN puts the top ten cards of his or her library into his or her graveyard."

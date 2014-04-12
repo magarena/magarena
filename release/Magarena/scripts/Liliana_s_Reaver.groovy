@@ -1,17 +1,13 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.isCombat() &&
-                    damage.getTarget().isPlayer()) ?
-                new MagicEvent(
-                    permanent,
-                    damage.getTarget(),
-                    this,
-                    "RN discards a card and PN puts a 2/2 black Zombie creature token onto the battlefield."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                damage.getTarget(),
+                this,
+                "RN discards a card and PN puts a 2/2 black Zombie creature token onto the battlefield tapped."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

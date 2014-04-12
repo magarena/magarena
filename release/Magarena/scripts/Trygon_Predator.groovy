@@ -1,20 +1,16 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
-                    damage.getTarget().isPlayer() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(
-                        MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS
-                    ),
-                    MagicDestroyTargetPicker.Destroy,
-                    this,
-                    "PN may\$ destroy target artifact or enchantment\$ an opponent controls."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(
+                    MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS
+                ),
+                MagicDestroyTargetPicker.Destroy,
+                this,
+                "PN may\$ destroy target artifact or enchantment\$ an opponent controls."
+            );
         }
 
         @Override
