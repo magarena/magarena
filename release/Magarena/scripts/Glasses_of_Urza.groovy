@@ -22,11 +22,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 MagicPlayer player ->
-                final MagicCardList showList = player.getHand();
-                final MagicCardList choiceList = new MagicCardList();
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    new MagicFromCardListChoice(choiceList,showList,0,false),
+                    new MagicFromCardListChoice(player.getHand()),
                     player,
                     MagicEvent.NO_ACTION,
                     "RN revealed his or her hand."
