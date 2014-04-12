@@ -1,0 +1,11 @@
+name=Psychic Venom
+url=http://www.magiccards.info/query?q=%21psychic%20venom
+image=http://mtgimage.com/card/psychic%20venom.jpg
+value=3.761
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+enchant=default,neg land
+timing=enchantment
+requires_groovy_code

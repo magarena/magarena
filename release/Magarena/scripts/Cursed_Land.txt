@@ -1,0 +1,11 @@
+name=Cursed Land
+url=http://www.magiccards.info/query?q=%21cursed%20land
+image=http://mtgimage.com/card/cursed%20land.jpg
+value=2.304
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{B}{B}
+enchant=default,neg land
+timing=enchantment
+requires_groovy_code

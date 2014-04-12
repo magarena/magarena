@@ -1,0 +1,13 @@
+name=Zombie Master
+url=http://www.magiccards.info/query?q=%21zombie%20master
+image=http://mtgimage.com/set/me4/zombie%20master.jpg
+value=4.425
+rarity=U
+type=Creature
+subtype=Zombie
+cost={1}{B}{B}
+pt=2/3
+ability=lord other Zombie creatures have swampwalk;\
+        lord other Zombies have "{B}: Regenerate SN."
+static=all
+timing=main
