@@ -15,20 +15,14 @@
                 source,
                 MagicTargetChoice.NEG_TARGET_PLAYER,
                 this,
-                "PN may look at target player's\$ hand."
+                "PN looks at target player's\$ hand."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 MagicPlayer player ->
-                game.addEvent(new MagicEvent(
-                    event.getSource(),
-                    new MagicFromCardListChoice(player.getHand()),
-                    player,
-                    MagicEvent.NO_ACTION,
-                    "RN revealed his or her hand."
-                ));
+                game.doAction(new MagicRevealAction(player.getHand()));
             });
         }
     }
