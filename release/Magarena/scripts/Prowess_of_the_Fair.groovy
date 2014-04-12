@@ -5,7 +5,7 @@
             return (permanent != otherPermanent && 
                     otherPermanent.isNonToken() &&
                     otherPermanent.hasSubType(MagicSubType.Elf) && 
-                    otherPermanent.isFriend(permanent)) ?
+                    otherPermanent.getCard().isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
