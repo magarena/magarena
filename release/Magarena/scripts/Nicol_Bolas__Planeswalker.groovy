@@ -37,7 +37,7 @@
                     event.getPlayer(),
                     perm
                 ));
-            } as MagicPermanentAction);
+            });
         }
     },
     new MagicPlaneswalkerActivation(-9) {
@@ -53,14 +53,17 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game, {
-                final MagicTarget target ->
-                final MagicDamage damage = new MagicDamage(event.getSource(), target, 7);
-                final MagicPlayer player = damage.getTargetPlayer(); 
+            event.processTargetPlayer(game, {
+                final MagicPlayer player ->
+                final MagicDamage damage = new MagicDamage(event.getSource(), player, 7);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.addEvent(new MagicDiscardEvent(event.getSource(), player, 7));
                 for (int i=7;i>0;i--) {
-                    game.addEvent(new MagicSacrificePermanentEvent( event.getSource(), player, MagicTargetChoice.SACRIFICE_PERMANENT ));
+                    game.addEvent(new MagicSacrificePermanentEvent(
+                        event.getSource(), 
+                        player, 
+                        MagicTargetChoice.SACRIFICE_PERMANENT
+                    ));
                 }
             });
         }
