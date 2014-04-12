@@ -4,7 +4,8 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicDiscardCardsAction;
+import magic.model.action.MagicDiscardCardAction;
+import magic.model.action.MagicCardAction;
 import magic.model.choice.MagicCardChoice;
 import magic.model.choice.MagicCardChoiceResult;
 import magic.model.choice.MagicRandomCardChoice;
@@ -63,7 +64,12 @@ public class MagicDiscardEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDiscardCardsAction(event.getPlayer(), event.getCardChoice()));
+            event.processChosenCards(game, new MagicCardAction() {
+                @Override
+                public void doAction(final MagicCard card) {
+                    game.doAction(new MagicDiscardCardAction(event.getPlayer(), card));
+                }
+            });
         }
     };
 

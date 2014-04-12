@@ -570,6 +570,12 @@ public class MagicEvent implements MagicCopyable {
             return false;
         }
     }
+    
+    public final void processChosenCards(final MagicGame game, final MagicCardAction effect) {
+        for (final MagicCard card : getCardChoice()) {
+            effect.doAction(card);
+        }
+    }
 
     public final boolean processTargetCard(final MagicGame game, final MagicCardAction effect) {
         final MagicTarget target = getLegalTarget(game);
