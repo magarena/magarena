@@ -13,9 +13,9 @@ def TARGET_LAND_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (damage.getSource() == permanent &&
+            return (damage.isSource(permanent) &&
                     permanent.isOpponent(damage.getTarget()) &&
-                    damage.getAmount() >= 6) ?
+                    damage.getDealtAmount() >= 6) ?
                 new MagicEvent(
                     permanent,
                     TARGET_LAND_YOUR_OPPONENT_CONTROLS,
