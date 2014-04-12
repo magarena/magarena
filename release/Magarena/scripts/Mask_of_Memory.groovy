@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             return (permanent.getEquippedCreature() == damage.getSource() &&
-                    damage.getTarget().isPlayer() &&
+                    damage.isTargetPlayer() &&
                     damage.isCombat()) ?
                 new MagicEvent(
                     permanent,

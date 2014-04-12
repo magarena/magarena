@@ -6,7 +6,7 @@
             return (source.isCreature() &&
                     permanent.isFriend(source) &&
                     damage.isCombat() &&
-                    damage.getTarget().isPlayer()) ?
+                    damage.isTargetPlayer()) ?
                 new MagicEvent(
                     permanent,
                     this,

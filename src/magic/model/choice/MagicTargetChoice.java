@@ -91,9 +91,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_PERMANENT = 
         MagicTargetChoice.Negative("target permanent");
     
-    public static final MagicTargetChoice POS_TARGET_PERMANENT =  
-        MagicTargetChoice.Positive("target permanent");
-    
     public static final MagicTargetChoice TARGET_NONBASIC_LAND = 
         new MagicTargetChoice("target nonbasic land");
     
@@ -211,9 +208,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL = 
         new MagicTargetChoice("a red or green creature you control");
 
-    public static final MagicTargetChoice TARGET_CREATURE_POWER_2_OR_LESS = 
-        MagicTargetChoice.Positive("target creature with power 2 or less");
-    
     public static final MagicTargetChoice NEG_TARGET_CREATURE_POWER_4_OR_MORE = 
         MagicTargetChoice.Negative("target creature with power 4 or greater");
     
@@ -267,9 +261,6 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice POS_TARGET_CREATURE_OR_PLAYER = 
         MagicTargetChoice.Positive("target creature or player");
-    
-    public static final MagicTargetChoice POS_TARGET_MERFOLK_CREATURE = 
-        MagicTargetChoice.Positive("target Merfolk creature");
     
     public static final MagicTargetChoice NEG_TARGET_VAMPIRE = 
         MagicTargetChoice.Negative("target Vampire");
@@ -340,9 +331,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD = 
         new MagicTargetChoice("target instant or sorcery card from an opponent's graveyard");
 
-    public static final MagicTargetChoice TARGET_ARTIFACT_CARD_FROM_GRAVEYARD = 
-        new MagicTargetChoice("target artifact card from your graveyard");
-    
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS = 
         new MagicTargetChoice("target creature card from a graveyard");
 
@@ -375,9 +363,6 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice CREATURE_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a creature card from your library");
-    
-    public static final MagicTargetChoice FOREST_OR_PLAINS_CARD_FROM_LIBRARY = 
-        new MagicTargetChoice("a Forest or Plains card from your library");
     
     public static final MagicTargetChoice SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a Swamp or Mountain card from your library");
