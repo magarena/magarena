@@ -5,5 +5,5 @@ value=2.829
 rarity=U
 type=Instant
 cost={W}
+effect=SN deals 1 damage to each attacking creature.
 timing=block
-requires_groovy_code=Sandstorm
