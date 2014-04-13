@@ -1,0 +1,9 @@
+name=Kormus Bell
+url=http://www.magiccards.info/query?q=%21kormus%20bell
+image=http://mtgimage.com/set/me4/kormus%20bell.jpg
+value=3.879
+rarity=R
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code

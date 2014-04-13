@@ -29,6 +29,30 @@ public class MagicCard
         public String getName() {
             return "NONE";
         }
+        @Override
+        public boolean isInHand() {
+            final boolean found = getOwner().getHand().contains(this);
+            if (found) {
+                throw new RuntimeException("Card NONE is in hand");
+            }
+            return found;
+        }
+        @Override
+        public boolean isInGraveyard() {
+            final boolean found = getOwner().getGraveyard().contains(this);
+            if (found) {
+                throw new RuntimeException("Card NONE is in graveyard");
+            }
+            return found;
+        }
+        @Override
+        public boolean isInExile() {
+            final boolean found = getOwner().getExile().contains(this);
+            if (found) {
+                throw new RuntimeException("Card NONE is in exile");
+            }
+            return found;
+        }
     };
 
     private static final int TOKEN_ID=-1;

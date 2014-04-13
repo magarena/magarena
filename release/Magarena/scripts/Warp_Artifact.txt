@@ -1,0 +1,11 @@
+name=Warp Artifact
+url=http://www.magiccards.info/query?q=%21warp%20artifact
+image=http://mtgimage.com/card/warp%20artifact.jpg
+value=2.978
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}{B}
+enchant=default,neg artifact
+timing=enchantment
+requires_groovy_code

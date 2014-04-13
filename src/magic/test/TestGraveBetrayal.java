@@ -1,5 +1,7 @@
 package magic.test;
 
+import magic.ai.MagicAI;
+import magic.ai.MagicAIImpl;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
@@ -7,8 +9,6 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
 import magic.model.MagicDeckProfile;
 import magic.model.phase.MagicMainPhase;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.MagicCounterType;
 
 class TestGraveBetrayal extends TestGameBuilder {
     public MagicGame getGame() {
@@ -20,6 +20,7 @@ class TestGraveBetrayal extends TestGameBuilder {
         final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile,14);
         duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
         duel.setStartPlayer(0);
+        duel.setAIs(new MagicAI[]{MagicAIImpl.MCTS.getAI(), MagicAIImpl.MCTS.getAI()});
 
         final MagicGame game=duel.nextGame(true);
         game.setPhase(MagicMainPhase.getFirstInstance());
@@ -31,18 +32,17 @@ class TestGraveBetrayal extends TestGameBuilder {
         P.setLife(10);
         addToLibrary(P, "Mountain", 20);
         createPermanent(game,P,"Mountain",false,8);
-        createPermanent(game,P,"Chromatic Lantern",false,1);
         createPermanent(game,P,"Grave Betrayal",false,1);
         addToHand(P, "Scavenging Ooze", 1);
         addToHand(P, "Lightning Bolt", 1);
+        addToHand(P, "Rise of the Hobgoblins", 3);
 
         P = opponent;
 
         P.setLife(2);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        final MagicPermanent p = createPermanent(game,P,"Thallid Germinator",false,1);
-        game.doAction(new MagicChangeCountersAction(p, MagicCounterType.Spore, 10, true));
+        createPermanent(game,P,"Mountain",false,9);
+        addToHand(P, "Rise of the Hobgoblins", 3);
 
         return game;
     }

@@ -1,0 +1,11 @@
+name=Feedback
+url=http://www.magiccards.info/query?q=%21feedback
+image=http://mtgimage.com/card/feedback.jpg
+value=1.957
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+enchant=default,neg enchantment
+timing=enchantment
+requires_groovy_code

@@ -1,0 +1,10 @@
+name=Meekstone
+url=http://www.magiccards.info/query?q=%21meekstone
+image=http://mtgimage.com/card/meekstone.jpg
+value=4.357
+rarity=R
+type=Artifact
+cost={1}
+ability=lord creatures with power 3 or greater have doesn't untap during your untap step.
+static=all
+timing=artifact
