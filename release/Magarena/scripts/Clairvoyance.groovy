@@ -1,3 +1,21 @@
+def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
+    return new MagicAtUpkeepTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+            return new MagicEvent(
+                event.getSource(),
+                event.getPlayer(),
+                {
+                    final MagicGame game2, final MagicEvent event2 ->
+                    game2.doAction(new MagicDrawAction(event2.getPlayer()));
+                    game2.doAction(new MagicRemoveTriggerAction(this));
+                },
+                "PN draws a card"
+            );
+        }
+    }
+};         
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -11,30 +29,12 @@
             );
         }
         @Override
-        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
-            MagicPlayer outerPlayer = outerEvent.getPlayer();
-            MagicSource outerSource = outerEvent.getSource();
-            outerEvent.processTargetPlayer(outerGame, {
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            event.processTargetPlayer(game, {
                 MagicPlayer player ->
-                outerGame.doAction(new MagicRevealAction(player.getHand()));
+                game.doAction(new MagicRevealAction(player.getHand()));
             });
-            outerGame.doAction(new MagicAddTriggerAction(new MagicAtUpkeepTrigger() {
-                @Override
-                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-                    new MagicEvent(
-                        outerSource,
-                        outerPlayer,
-                        this,
-                        "PN draws a card"
-                    );
-                }
-
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicDrawAction(outerPlayer));
-                    game.doAction(new MagicRemoveTriggerAction(this));
-                }
-            }));         
+            game.doAction(new MagicAddTriggerAction(cantrip(event)));
         }
     }
 ]
