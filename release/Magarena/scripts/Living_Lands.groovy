@@ -1,7 +1,7 @@
 [
     new MagicStatic(
         MagicLayer.SetPT,
-        MagicTargetFilterFactory.SWAMP
+        MagicTargetFilterFactory.FOREST
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -10,7 +10,7 @@
     },
     new MagicStatic(
         MagicLayer.Type,
-        MagicTargetFilterFactory.SWAMP
+        MagicTargetFilterFactory.FOREST
     ) {
         @Override
         public int getTypeFlags(final MagicPermanent permanent,final int flags) {
