@@ -5,5 +5,5 @@ value=2.769
 rarity=C
 type=Sorcery
 cost={R}
+effect=SN deals 1 damage to each creature without flying.
 timing=main
-requires_groovy_code
