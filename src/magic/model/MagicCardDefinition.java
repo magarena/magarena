@@ -536,10 +536,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
         }
     }
 
-    public void setEquipCost(final MagicManaCost equipCost) {
-        add(new MagicEquipActivation(equipCost));
-    }
-
     public void setManaSourceText(final String sourceText) {
         manaSourceText=sourceText;
         for (int index=0;index<sourceText.length();index+=2) {

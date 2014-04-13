@@ -67,11 +67,6 @@ public enum CardProperty {
             card.setCost(MagicManaCost.create(value));
         }
     },
-    EQUIP() {
-        public void setProperty(final MagicCardDefinition card, final String value) {
-            card.setEquipCost(MagicManaCost.create(value));
-        }
-    },
     MANA() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setManaSourceText(value);

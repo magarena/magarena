@@ -4,6 +4,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicActivationHints;
+import magic.model.event.MagicEquipActivation;
 import magic.model.event.MagicLevelUpActivation;
 import magic.model.event.MagicPlayCardEvent;
 import magic.model.event.MagicPlayMulticounterEvent;
@@ -796,6 +797,12 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
             card.add(MagicStatic.genABStatic(abilityList));
+        }
+    },
+    Equip("Equip " + ARG.COST, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
+            card.add(new MagicEquipActivation(cost));
         }
     },
     Poisonous("poisonous " + ARG.NUMBER, 10) {
