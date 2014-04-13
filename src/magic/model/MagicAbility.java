@@ -774,6 +774,16 @@ public enum MagicAbility {
             }
         }
     },
+    EquippedPumpGain("Equipped creature gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(MagicStatic.genPTStatic(power, toughness));
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
+            card.add(MagicStatic.genABStatic(abilityList));
+        }
+    },
     EquippedPump("Equipped creature gets " + ARG.PT + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
@@ -782,15 +792,12 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    EquippedGain("Equipped creature (has )?" + ARG.ANY, 0) {
+    EquippedGain("Equipped creature (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
             card.add(MagicStatic.genABStatic(abilityList));
         }
     },
-    /*EquippedPumpGain("Equipped creature gets " + ARG.ANY + " and has " + ARG.ANY + "\\.") {
-        
-    },*/
     Poisonous("poisonous " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
