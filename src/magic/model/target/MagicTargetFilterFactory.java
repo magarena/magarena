@@ -593,6 +593,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl RAT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Rat, Control.You);
 
     public static final MagicPermanentFilterImpl MODULAR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Modular, Control.You);
+    
+    public static final MagicPermanentFilterImpl LEVELUP_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.LevelUp, Control.You);
 
     public static final MagicPermanentFilterImpl PLANT_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Plant, Control.You);
 
@@ -1256,6 +1258,8 @@ public class MagicTargetFilterFactory {
         single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         single.put("creature with power 2 or less you control", CREATURE_POWER_2_OR_LESS_YOU_CONTROL); 
         single.put("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
+        single.put("creature with modular you control", MODULAR_CREATURE_YOU_CONTROL);
+        single.put("creature you control with level up", LEVELUP_CREATURE_YOU_CONTROL);
         
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -1265,6 +1269,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(MagicTargetFilterFactory.CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
         single.put("nonblack creature", NONBLACK_CREATURE);
+        single.put("nonwhite creature", NONWHITE_CREATURE);
         single.put("nonartifact creature", NONARTIFACT_CREATURE);
         single.put("non-Demon creature", NON_DEMON_CREATURE);
         single.put("non-Zombie creature", NONZOMBIE_CREATURE);
