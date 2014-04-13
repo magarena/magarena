@@ -1,0 +1,12 @@
+name=Healer's Headdress
+url=http://www.magiccards.info/query?q=%21healer%27s%20headdress
+image=http://mtgimage.com/card/healer's%20headdress.jpg
+value=2.724
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +0/+2 and has "{T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.";\
+        {W}{W}: Attach SN to target creature you control.;\
+        Equip {1}
+timing=artifact
