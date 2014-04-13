@@ -774,6 +774,21 @@ public enum MagicAbility {
             }
         }
     },
+    Equipped("Equipped creature" + ARG.ANY + "\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
+            final String arg = matcher.group("any");
+            final String[] tokens = arg.split(" gets | has ");
+            if (arg.contains(" gets ")) {
+                final String[] pt = tokens[1].replace('+','0').split("/");
+                final int power = Integer.parseInt(pt[0]);
+                final int toughness = Integer.parseInt(pt[1]);
+                card.add(MagicStatic.genPTStatic(power, toughness));
+            } else {
+                final MagicAbilityList abilityList = MagicAbility.getAbilityList(tokens[1]);
+                card.add(MagicStatic.genABStatic(abilityList));
+            }
+        }
+    },
     Poisonous("poisonous " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
