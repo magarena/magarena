@@ -7,6 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={1}
 equip={3}
-given_pt=+1/+0
-given_ability=SN can't be blocked by creatures with flying.
+ability=Equipped creature gets +1/+0 and can't be blocked by creatures with flying.
 timing=equipment

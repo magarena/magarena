@@ -7,7 +7,6 @@ type=Artifact
 subtype=Equipment
 cost={W}{U}
 equip={2}
-given_pt=0/2
-given_ability=vigilance
+ability=Equipped creature gets +0/+2 and has vigilance.
 timing=equipment
 requires_groovy_code

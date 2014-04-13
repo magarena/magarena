@@ -7,6 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={2}
 equip={2}
-given_pt=1/0
-given_ability=wither
+ability=Equipped creature gets +1/+0 and has wither.
 timing=equipment

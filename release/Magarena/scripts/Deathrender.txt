@@ -7,6 +7,6 @@ type=Artifact
 subtype=Equipment
 cost={4}
 equip={2}
-given_pt=2/2
+ability=Equipped creature gets +2/+2.
 timing=equipment
 requires_groovy_code

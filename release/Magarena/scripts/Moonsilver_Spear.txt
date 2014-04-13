@@ -7,6 +7,6 @@ type=Artifact
 subtype=Equipment
 cost={4}
 equip={4}
-given_ability=first strike
+ability=Equipped creature has first strike.
 timing=equipment
 requires_groovy_code

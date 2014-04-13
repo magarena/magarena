@@ -7,6 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={0}
 equip={3}
-given_pt=0/3
-given_ability=vigilance
+ability=Equipped creature gets +0/+3 and has vigilance.
 timing=equipment

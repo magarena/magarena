@@ -7,7 +7,6 @@ type=Artifact
 subtype=Equipment
 cost={4}
 equip={6}
-ability=living weapon
-given_pt=2/2
-given_ability=flying
+ability=Living weapon;\
+        Equipped creature gets +2/+2 and has flying.
 timing=equipment

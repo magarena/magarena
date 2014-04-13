@@ -7,6 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={2}
 equip={3}
-given_pt=+4/+2
-given_ability=SN doesn't untap during your untap step.
+ability=Equipped creature gets +4/+2 and doesn't untap during your untap step.
 timing=equipment

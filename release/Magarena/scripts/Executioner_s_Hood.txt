@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={2}
 equip={2}
-given_ability=intimidate
+ability=Equipped creature has intimidate.
 timing=equipment

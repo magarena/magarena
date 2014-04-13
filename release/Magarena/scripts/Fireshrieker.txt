@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={3}
 equip={2}
-given_ability=double strike
+ability=Equipped creature has double strike.
 timing=equipment

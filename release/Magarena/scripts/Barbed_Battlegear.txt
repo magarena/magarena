@@ -7,5 +7,5 @@ type=Artifact
 subtype=Equipment
 cost={3}
 equip={2}
-given_pt=4/-1
+ability=Equipped creature gets +4/-1.
 timing=equipment

@@ -7,6 +7,6 @@ type=Legendary,Artifact
 subtype=Equipment
 cost={4}
 equip={4}
-given_ability=indestructible
+ability=Equipped creature has indestructible.
 timing=equipment
 requires_groovy_code

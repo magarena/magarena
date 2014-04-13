@@ -7,7 +7,8 @@ type=Artifact
 subtype=Equipment
 cost={5}
 equip={5}
-ability=living weapon;{3}: Return SN to its owner's hand.
-given_pt=4/4
+ability=Living weapon;\
+        Equipped creature gets +4/+4.;\
+        {3}: Return SN to its owner's hand.
 given_ability=vigilance;lifelink
 timing=equipment
