@@ -22,37 +22,5 @@
                 amount
             ));
         }
-    },
-    new MagicLandfallTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
-            return new MagicEvent(
-                permanent,
-                new MagicSimpleMayChoice(
-                    MagicSimpleMayChoice.ADD_PLUSONE_COUNTER,
-                    1,
-                    MagicSimpleMayChoice.DEFAULT_YES
-                ),
-                this,
-                "PN may\$ put a +1/+1 counter on each " +
-                "Plant creature he or she controls."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(
-                        event.getPlayer(),
-                        MagicTargetFilterFactory.PLANT_CREATURE_YOU_CONTROL);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicChangeCountersAction(
-                        target,
-                        MagicCounterType.PlusOne,
-                        1,
-                        true
-                    ));
-                }
-            }
-        }
     }
 ]

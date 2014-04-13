@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental
 cost={3}{W}{W}
 pt=3/3
-ability=flying
+ability=flying;\
+        Whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 timing=main
-requires_groovy_code
