@@ -311,7 +311,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public boolean isEquipment() {
-        return isArtifact() && hasSubType(MagicSubType.Equipment);
+        return hasSubType(MagicSubType.Equipment);
     }
 
     public boolean isPlaneswalker() {
