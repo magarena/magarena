@@ -1,0 +1,12 @@
+name=Augury Owl
+url=http://magiccards.info/query?q=%21augury%20owl
+image=http://mtgimage.com/card/augury%20owl.jpg
+value=3.658
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{U}
+pt=1/1
+ability=flying
+timing=main
+requires_groovy_code
