@@ -122,27 +122,27 @@ public enum MagicAbility {
     CannotBeBlockedByTokens("(SN )?can't be blocked by creature tokens\\.",10),
     CanBlockShadow("(SN )?can block creatures with shadow as though (they didn't have shadow|SN had shadow)\\.",10),
     CannotBeCountered("(SN )?can't be countered( by spells or abilities)?\\.",0),
-    Hexproof("hexproof",80),
+    Hexproof("hexproof(\\.)?",80),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTarget1("can't be the target of spells or abilities your opponents control",80),
     CannotBeTheTargetOfNonGreen("(SN )?can't be the target of nongreen spells or abilities from nongreen sources\\.",10),
     CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
-    Deathtouch("deathtouch",60),
-    Defender("defender",-100),
+    Deathtouch("deathtouch(\\.)?",60),
+    Defender("defender(\\.)?",-100),
     DoesNotUntap("(SN )?doesn't untap during your untap step\\.",-30),
-    DoubleStrike("double strike",100),
-    Fear("fear",50),
-    Flash("flash",0),
-    Flying("flying",50),
-    FirstStrike("first strike",50),
-    Plainswalk("plainswalk",10),
-    Islandwalk("islandwalk",10),
-    Swampwalk("swampwalk",10),
-    Mountainwalk("mountainwalk",10),
-    Forestwalk("forestwalk",10),
-    Indestructible("indestructible",150),
-    Haste("haste",0),
-    Lifelink("lifelink",40),
+    DoubleStrike("double strike(\\.)?",100),
+    Fear("fear(\\.)?",50),
+    Flash("flash(\\.)?",0),
+    Flying("flying(\\.)?",50),
+    FirstStrike("first strike(\\.)?",50),
+    Plainswalk("plainswalk(\\.)?",10),
+    Islandwalk("islandwalk(\\.)?",10),
+    Swampwalk("swampwalk(\\.)?",10),
+    Mountainwalk("mountainwalk(\\.)?",10),
+    Forestwalk("forestwalk(\\.)?",10),
+    Indestructible("indestructible(\\.)?",150),
+    Haste("haste(\\.)?",0),
+    Lifelink("lifelink(\\.)?",40),
     ProtectionFromBlack("protection from black",20),
     ProtectionFromBlue("protection from blue",20),
     ProtectionFromGreen("protection from green",20),
@@ -167,17 +167,17 @@ public enum MagicAbility {
     ProtectionFromKavu("protection from Goblins",10),
     ProtectionFromSnow("protection from snow",10),
     ProtectionFromLegendaryCreatures("protection from legendary creatures",10),
-    Reach("reach",20),
-    Shadow("shadow",30),
-    Shroud("shroud",60),
-    Trample("trample",30),
+    Reach("reach(\\.)?",20),
+    Shadow("shadow(\\.)?",30),
+    Shroud("shroud(\\.)?",60),
+    Trample("trample(\\.)?",30),
     Unblockable("(SN )?can't be blocked(\\.)?",100),
-    Vigilance("vigilance",20),
-    Wither("wither",30),
+    Vigilance("vigilance(\\.)?",20),
+    Wither("wither(\\.)?",30),
     TotemArmor("totem armor",0),
-    Intimidate("intimidate",45),
-    Infect("infect",35),
-    Horsemanship("horsemanship",60),
+    Intimidate("intimidate(\\.)?",45),
+    Infect("infect(\\.)?",35),
+    Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
     CantActivateAbilities("can't activate abilities",-20),
 
@@ -774,21 +774,23 @@ public enum MagicAbility {
             }
         }
     },
-    Equipped("Equipped creature" + ARG.ANY + "\\.", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
-            final String arg = matcher.group("any");
-            final String[] tokens = arg.split(" gets | has ");
-            if (arg.contains(" gets ")) {
-                final String[] pt = tokens[1].replace('+','0').split("/");
-                final int power = Integer.parseInt(pt[0]);
-                final int toughness = Integer.parseInt(pt[1]);
-                card.add(MagicStatic.genPTStatic(power, toughness));
-            } else {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(tokens[1]);
-                card.add(MagicStatic.genABStatic(abilityList));
-            }
+    EquippedPump("Equipped creature gets " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
+    EquippedGain("Equipped creature (has )?" + ARG.ANY, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
+            card.add(MagicStatic.genABStatic(abilityList));
+        }
+    },
+    /*EquippedPumpGain("Equipped creature gets " + ARG.ANY + " and has " + ARG.ANY + "\\.") {
+        
+    },*/
     Poisonous("poisonous " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
