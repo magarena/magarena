@@ -29,6 +29,7 @@ import magic.model.event.MagicTransmuteActivation;
 import magic.model.event.MagicRuleEventAction;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.model.event.MagicAdditionalCost;
+import magic.model.event.MagicSourceEvent;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
@@ -87,6 +88,8 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicHeroicTrigger;
 import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
+import magic.model.trigger.MagicWhenSelfBlocksTrigger;
+import magic.model.trigger.MagicWhenSelfBecomesBlockedTrigger;
 import magic.model.trigger.MagicWhenSelfBecomesUntappedTrigger;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 import magic.model.trigger.MagicTributeTrigger;
@@ -262,14 +265,6 @@ public enum MagicAbility {
             card.add(new MagicLevelUpActivation(cost, maxLevel));
         }
     },
-    BlockedPump("Whenever SN becomes blocked, it gets " + ARG.PT + " until end of turn\\." , 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
-        }
-    },
     BlockedByPump("Whenever SN becomes blocked, it gets " + ARG.PT + " until end of turn for each creature blocking it\\.", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
@@ -284,23 +279,6 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(new MagicBlockedByCreaturePumpTrigger(power,toughness));
-        }
-    },
-    BlocksOrBlockedPump("Whenever SN blocks or becomes blocked, it gets " + ARG.PT + " until end of turn\\.", 20) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
-            card.add(new MagicBecomesBlockedPumpTrigger(power,toughness,false));
-        }
-    },
-    BlocksPump("Whenever SN blocks, it gets " + ARG.PT + " until end of turn\\." , 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(new MagicWhenBlocksPumpTrigger(power,toughness));
         }
     },
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
@@ -325,6 +303,27 @@ public enum MagicAbility {
             card.add(MagicWhenSelfAttacksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
+        }
+    },
+    BlocksEffect("Whenever SN blocks, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfBlocksTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    BecomesBlockedEffect("Whenever SN becomes blocked, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfBecomesBlockedTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    BlocksOrBlockedEffect("Whenever SN blocks or becomes blocked, " + ARG.EFFECT, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
+            card.add(MagicWhenSelfBlocksTrigger.create(sourceEvent));
+            card.add(MagicWhenSelfBecomesBlockedTrigger.create(sourceEvent));
         }
     },
     UntappedEffect("Whenever SN becomes untapped, " + ARG.EFFECT, 10) {

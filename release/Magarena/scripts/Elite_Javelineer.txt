@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=2/2
+ability=Whenever SN blocks, SN deals 1 damage to target attacking creature.
 timing=main
-requires_groovy_code

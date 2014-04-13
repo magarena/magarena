@@ -7,5 +7,5 @@ type=Creature
 subtype=Kor,Soldier
 cost={3}{W}{W}
 pt=3/5
+ability=Whenever SN becomes blocked, untap SN.
 timing=main
-requires_groovy_code=Silkenfist Fighter
