@@ -87,6 +87,7 @@ import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 import magic.model.trigger.MagicHeroicTrigger;
 import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
+import magic.model.trigger.MagicWhenSelfBlocksTrigger;
 import magic.model.trigger.MagicWhenSelfBecomesUntappedTrigger;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 import magic.model.trigger.MagicTributeTrigger;
@@ -323,6 +324,13 @@ public enum MagicAbility {
     AttacksEffect("Whenever SN attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfAttacksTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    BlocksEffect("Whenever SN blocks, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfBlocksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
