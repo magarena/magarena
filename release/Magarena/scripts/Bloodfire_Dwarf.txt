@@ -1,0 +1,11 @@
+name=Bloodfire Dwarf
+url=http://www.magiccards.info/query?q=%21bloodfire%20dwarf
+image=http://mtgimage.com/card/bloodfire%20dwarf.jpg
+value=3.755
+rarity=C
+type=Creature
+subtype=Dwarf
+cost={R}
+pt=1/1
+ability={R}, Sacrifice SN: SN deals 1 damage to each creature without flying.
+timing=main

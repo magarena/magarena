@@ -1,0 +1,9 @@
+name=Shivan Gorge
+url=http://www.magiccards.info/query?q=%21shivan%20gorge
+image=http://mtgimage.com/card/shivan%20gorge.jpg
+value=3.672
+rarity=M
+type=Legendary,Land
+ability={T}: Add {1} to your mana pool.;\
+        {2}{R}, {T}: SN deals 1 damage to each opponent.
+timing=land

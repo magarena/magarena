@@ -1,0 +1,11 @@
+name=Bloodfire Kavu
+url=http://www.magiccards.info/query?q=%21bloodfire%20kavu
+image=http://mtgimage.com/card/bloodfire%20kavu.jpg
+value=3.643
+rarity=U
+type=Creature
+subtype=Kavu
+cost={2}{R}{R}
+pt=2/2
+ability={R}, Sacrifice SN: SN deals 2 damage to each creature.
+timing=main

@@ -1,0 +1,11 @@
+name=Krark-Clan Shaman
+url=http://www.magiccards.info/query?q=%21krark%2Dclan%20shaman
+image=http://mtgimage.com/card/krark-clan%20shaman.jpg
+value=2.917
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={R}
+pt=1/1
+ability=Sacrifice an artifact: SN deals 1 damage to each creature without flying.
+timing=main
