@@ -6,6 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}{R}{G}
-equip={3}
+ability=Equip {3}
 timing=equipment
 requires_groovy_code

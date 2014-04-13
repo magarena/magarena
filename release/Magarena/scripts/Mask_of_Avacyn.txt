@@ -6,6 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-equip={3}
-ability=Equipped creature gets +1/+2 and has hexproof.
+ability=Equipped creature gets +1/+2 and has hexproof.;\
+        Equip {3}
 timing=equipment

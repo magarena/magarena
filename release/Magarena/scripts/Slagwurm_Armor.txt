@@ -6,6 +6,6 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={1}
-equip={3}
-ability=Equipped creature gets +0/+6.
+ability=Equipped creature gets +0/+6.;\
+        Equip {3}
 timing=equipment

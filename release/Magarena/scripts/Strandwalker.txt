@@ -6,7 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={5}
-equip={4}
 ability=living weapon;\
-        Equipped creature gets +2/+4 and has reach.
+        Equipped creature gets +2/+4 and has reach.;\
+        Equip {4}
 timing=equipment

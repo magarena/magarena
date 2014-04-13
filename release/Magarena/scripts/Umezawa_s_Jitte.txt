@@ -6,8 +6,8 @@ rarity=R
 type=Legendary,Artifact
 subtype=Equipment
 cost={2}
-equip={2}
 ability=Remove a charge counter from SN: Target creature gets -1/-1 until end of turn.;\
-        Remove a charge counter from SN: You gain 2 life.
+        Remove a charge counter from SN: You gain 2 life.;\
+        Equip {2}
 timing=equipment
 requires_groovy_code

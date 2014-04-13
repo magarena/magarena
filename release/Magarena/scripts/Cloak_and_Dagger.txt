@@ -6,7 +6,7 @@ rarity=U
 type=Tribal,Artifact
 subtype=Rogue,Equipment
 cost={2}
-equip={3}
-ability=Equipped creature gets +2/+0 and has shroud.
+ability=Equipped creature gets +2/+0 and has shroud.;\
+        Equip {3}
 timing=equipment
 requires_groovy_code

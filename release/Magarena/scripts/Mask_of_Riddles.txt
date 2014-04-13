@@ -6,7 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={U}{B}
-equip={2}
-given_ability=fear;\
-        Whenever SN deals combat damage to a player, you may draw a card.
+ability=Equipped creature has fear.;\
+        Equip {2}
+given_ability=Whenever SN deals combat damage to a player, you may draw a card.
 timing=equipment

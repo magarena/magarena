@@ -6,7 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={3}
-equip={3}
-ability=Equipped creature gets +3/+0.
+ability=Equipped creature gets +3/+0.;\
+        Equip {3}
 timing=equipment
 requires_groovy_code

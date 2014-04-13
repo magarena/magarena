@@ -6,6 +6,6 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={1}
-equip={2}
-ability=Equipped creature has flying.
+ability=Equipped creature has flying.;\
+        Equip {2}
 timing=equipment

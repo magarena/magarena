@@ -6,7 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={4}
-equip={6}
 ability=Living weapon;\
-        Equipped creature gets +2/+2 and has flying.
+        Equipped creature gets +2/+2 and has flying.;\
+        Equip {6}
 timing=equipment

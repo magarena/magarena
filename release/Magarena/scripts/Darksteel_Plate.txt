@@ -6,7 +6,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={3}
-equip={2}
 ability=indestructible;\
-        Equipped creature has indestructible.
+        Equipped creature has indestructible.;\
+        Equip {2}
 timing=equipment

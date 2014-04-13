@@ -6,7 +6,7 @@ rarity=R
 type=Legendary,Artifact
 subtype=Equipment
 cost={3}
-equip={2}
+ability=Equip {2}
 given_ability=first strike;trample;haste
 timing=equipment
 requires_groovy_code

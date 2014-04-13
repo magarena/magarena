@@ -6,7 +6,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={3}
-equip={3}
-ability=Equipped creature has deathtouch.
+ability=Equipped creature has deathtouch.;\
+        Equip {3}
 timing=equipment
 requires_groovy_code
