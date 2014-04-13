@@ -27,15 +27,15 @@ def public MagicEvent ScryXEvent(final MagicSource source,final MagicPlayer play
                 },
                 "Choose cards to be put at bottom of PN's library."
             ));
+            for(int i = 0; i < actualX - processedCards.size(); i++) {
+                topList.add(player.getLibrary().get(size-i-1));
+            }
             game.addEvent(new MagicEvent(
                 source,
                 player,
-                new MagicFromCardListChoice(processedCards, processedCards.size()),
+                new MagicFromCardListChoice(topList, topList.size()),
                 {
                     final MagicGame topGame, final MagicEvent topEvent ->
-                    for(int i = 0; i < actualX - processedCards.size(); i++) {
-                        topList.add(player.getLibrary().get(size-i-1));
-                    }
                     topEvent.processChosenCards(topGame, {
                         final MagicCard card ->
                         topGame.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
