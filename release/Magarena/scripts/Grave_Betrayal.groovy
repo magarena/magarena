@@ -32,7 +32,7 @@ def DelayedTrigger = {
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() && permanent.isEnemy(otherPermanent) && !otherPermanent.isToken()) ?
+            return (otherPermanent.isCreature() && permanent.isEnemy(otherPermanent)) ?
                 new MagicEvent(
                     permanent,
                     otherPermanent.getCard(),
