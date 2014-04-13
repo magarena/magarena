@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk
 cost={1}{U}
 pt=1/1
+ability=Whenever SN becomes blocked, you may draw three cards.
 timing=main
-requires_groovy_code

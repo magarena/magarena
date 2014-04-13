@@ -7,5 +7,5 @@ type=Creature
 subtype=Yeti,Mutant
 cost={4}{U}
 pt=3/3
+ability=Whenever SN becomes blocked, you may draw two cards.
 timing=main
-requires_groovy_code

@@ -7,6 +7,6 @@ type=Creature
 subtype=Slith
 cost={1}{U}{U}
 pt=1/1
-ability=Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
+ability=Whenever SN becomes blocked, draw a card.;\
+        Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code
