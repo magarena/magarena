@@ -1269,6 +1269,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(MagicTargetFilterFactory.CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
         single.put("nonblack creature", NONBLACK_CREATURE);
+        single.put("nonwhite creature", NONWHITE_CREATURE);
         single.put("nonartifact creature", NONARTIFACT_CREATURE);
         single.put("non-Demon creature", NON_DEMON_CREATURE);
         single.put("non-Zombie creature", NONZOMBIE_CREATURE);

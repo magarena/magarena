@@ -247,7 +247,30 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    Deals(
+    DamageGroup(
+        "sn deal(s)? (?<amount>[0-9]+) damage to each (?<group>[^\\.]*)\\.",
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicPermanent> targets = game.filterPermanents(
+                        event.getPlayer(),
+                        filter
+                    );
+                    for (final MagicPermanent target : targets) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                }
+            };
+        }
+    },
+    DamageChosen(
         "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(1), 
