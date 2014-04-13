@@ -15,7 +15,7 @@ def public MagicEvent ScryXEvent(final MagicSource source,final MagicPlayer play
             game.addEvent(new MagicEvent(
                 source,
                 player,
-                new MagicFromCardListChoice(bottomList,actualX),
+                new MagicFromCardListChoice(bottomList, actualX, true),
                 {
                     final MagicGame bottomGame, final MagicEvent bottomEvent ->
                     bottomEvent.processChosenCards(bottomGame, {
@@ -30,7 +30,7 @@ def public MagicEvent ScryXEvent(final MagicSource source,final MagicPlayer play
             game.addEvent(new MagicEvent(
                 source,
                 player,
-                new MagicFromCardListChoice(topList,topList.size()),
+                new MagicFromCardListChoice(processedCards, processedCards.size()),
                 {
                     final MagicGame topGame, final MagicEvent topEvent ->
                     for(int i = 0; i < actualX - processedCards.size(); i++) {
