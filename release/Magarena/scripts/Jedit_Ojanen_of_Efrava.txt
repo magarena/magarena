@@ -1,0 +1,13 @@
+name=Jedit Ojanen of Efrava
+url=http://magiccards.info/plc/en/131.html
+image=http://magiccards.info/scans/en/plc/131.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Cat,Warrior
+cost={3}{G}{G}{G}
+pt=5/5
+ability=forestwalk;\
+        Whenever SN blocks, put a 2/2 green cat warrior creature tokens onto the battlefield.;\
+        Whenever SN attacks, put a 2/2 green cat warrior creature tokens onto the battlefield.
+timing=main
