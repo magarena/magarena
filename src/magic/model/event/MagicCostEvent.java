@@ -164,6 +164,14 @@ public enum MagicCostEvent {
             return new MagicConditionEvent(source, MagicCondition.SORCERY_CONDITION);
         }
     },
+    Threshold() {
+        public boolean accept(final String cost) {
+            return cost.equals("{Threshold}");
+        }
+        public MagicEvent toEvent(final String cost, final MagicSource source) {
+            return new MagicConditionEvent(source, MagicCondition.THRESHOLD_CONDITION);
+        }
+    },
     YourUpkeep() {
         public boolean accept(final String cost) {
             return cost.equals("{YourUpkeep}");

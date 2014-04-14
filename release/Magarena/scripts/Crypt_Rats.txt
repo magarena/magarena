@@ -7,5 +7,5 @@ type=Creature
 subtype=Rat
 cost={2}{B}
 pt=1/1
+ability={B}: SN deals 1 damage to each creature and each player.
 timing=main
-requires_groovy_code=Pestilence Demon

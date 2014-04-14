@@ -7,5 +7,5 @@ rarity=U
 type=Instant
 cost={1}{R}{R}
 ability=SN can't be countered.
+effect=SN deals 2 damage to each creature and each player.
 timing=removal
-requires_groovy_code
