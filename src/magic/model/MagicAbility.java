@@ -91,6 +91,7 @@ import magic.model.trigger.MagicBattalionTrigger;
 import magic.model.trigger.MagicWhenSelfAttacksTrigger;
 import magic.model.trigger.MagicWhenSelfBlocksTrigger;
 import magic.model.trigger.MagicWhenSelfBecomesBlockedTrigger;
+import magic.model.trigger.MagicWhenSelfBecomesTappedTrigger;
 import magic.model.trigger.MagicWhenSelfBecomesUntappedTrigger;
 import magic.model.trigger.MagicWhenOtherSpellIsCastTrigger;
 import magic.model.trigger.MagicTributeTrigger;
@@ -330,6 +331,13 @@ public enum MagicAbility {
     UntappedEffect("Whenever SN becomes untapped, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfBecomesUntappedTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    TappedEffect("Whenever SN becomes tapped, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfBecomesTappedTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
