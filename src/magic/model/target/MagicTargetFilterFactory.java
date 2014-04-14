@@ -1408,10 +1408,17 @@ public class MagicTargetFilterFactory {
         } 
     }
     
+    @SuppressWarnings("unchecked")
+    public static MagicTargetFilter<MagicTarget> singleTarget(final String arg) {
+        return (MagicTargetFilter<MagicTarget>)single(arg);
+    }
+    
+    @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicPermanent> singlePermanent(final String arg) {
         return (MagicTargetFilter<MagicPermanent>)single(arg);
     }
     
+    @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicItemOnStack> singleItemOnStack(final String arg) {
         return (MagicTargetFilter<MagicItemOnStack>)single(arg);
     }

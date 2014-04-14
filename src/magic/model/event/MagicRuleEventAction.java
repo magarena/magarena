@@ -255,15 +255,15 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(matcher.group("group"));
+            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.singleTarget(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
+                    final Collection<MagicTarget> targets = game.filterTargets(
                         event.getPlayer(),
                         filter
                     );
-                    for (final MagicPermanent target : targets) {
+                    for (final MagicTarget target : targets) {
                         final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
