@@ -1,10 +1,4 @@
 [
-    new MagicStatic(MagicLayer.Ability,MagicTargetFilterFactory.ATTACKING_CREATURE_YOU_CONTROL) {
-        @Override
-        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.Deathtouch, flags);
-        }
-    },
     new MagicPermanentActivation(new MagicActivationHints(MagicTiming.Main),"Return"){
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
