@@ -248,6 +248,38 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    DamageTwoGroup(
+        "sn deal(s)? (?<amount>[0-9]+) damage to each (?<group1>[^\\.]*) and each (?<group2>[^\\.]*)\\.",
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicTargetFilter<MagicTarget> filter1 = MagicTargetFilterFactory.singleTarget(matcher.group("group1"));
+            final MagicTargetFilter<MagicTarget> filter2 = MagicTargetFilterFactory.singleTarget(matcher.group("group2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicTarget> targets1 = game.filterTargets(
+                        event.getPlayer(),
+                        filter1
+                    );
+                    for (final MagicTarget target : targets1) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                    final Collection<MagicTarget> targets2 = game.filterTargets(
+                        event.getPlayer(),
+                        filter2
+                    );
+                    for (final MagicTarget target : targets2) {
+                        final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
+                        game.doAction(new MagicDealDamageAction(damage));
+                    }
+                }
+            };
+        }
+    },
     DamageGroup(
         "sn deal(s)? (?<amount>[0-9]+) damage to each (?<group>[^\\.]*)\\.",
         MagicTiming.Removal,
