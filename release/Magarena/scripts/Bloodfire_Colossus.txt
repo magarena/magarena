@@ -7,5 +7,5 @@ type=Creature
 subtype=Giant
 cost={6}{R}{R}
 pt=6/6
+ability={R}, Sacrifice SN: SN deals 6 damage to each creature and each player.
 timing=main
-requires_groovy_code
