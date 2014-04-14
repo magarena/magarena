@@ -1,0 +1,11 @@
+name=Rockcaster Platoon
+url=http://www.magiccards.info/query?q=%21rockcaster%20platoon
+image=http://mtgimage.com/card/rockcaster%20platoon.jpg
+value=2.62
+rarity=U
+type=Creature
+subtype=Rhino,Soldier
+cost={5}{W}{W}
+pt=5/7
+ability={4}{G}: SN deals 2 damage to each creature with flying and each player.
+timing=main

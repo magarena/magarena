@@ -1,0 +1,11 @@
+name=Goblin Swine-Rider
+url=http://www.magiccards.info/query?q=%21goblin%20swine%2Drider
+image=http://mtgimage.com/card/goblin%20swine-rider.jpg
+value=3.35
+rarity=C
+type=Creature
+subtype=Goblin
+cost={R}
+pt=1/1
+ability=Whenever SN becomes blocked, it deals 2 damage to each attacking creature and each blocking creature.
+timing=main

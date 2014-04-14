@@ -1,0 +1,9 @@
+name=Inferno
+url=http://www.magiccards.info/query?q=%21inferno
+image=http://mtgimage.com/card/inferno.jpg
+value=4.143
+rarity=R
+type=Instant
+cost={5}{R}{R}
+effect=SN deals 6 damage to each creature and each player.
+timing=removal

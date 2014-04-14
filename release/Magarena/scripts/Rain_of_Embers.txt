@@ -1,0 +1,9 @@
+name=Rain of Embers
+url=http://www.magiccards.info/query?q=%21rain%20of%20embers
+image=http://mtgimage.com/card/rain%20of%20embers.jpg
+value=2.8
+rarity=C
+type=Sorcery
+cost={1}{R}
+effect=SN deals 1 damage to each creature and each player.
+timing=main

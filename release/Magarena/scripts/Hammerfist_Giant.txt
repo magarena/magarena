@@ -1,0 +1,11 @@
+name=Hammerfist Giant
+url=http://www.magiccards.info/query?q=%21hammerfist%20giant
+image=http://mtgimage.com/card/hammerfist%20giant.jpg
+value=3.449
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+cost={4}{R}{R}
+pt=5/4
+ability={T}: SN deals 4 damage to each creature without flying and each player.
+timing=main

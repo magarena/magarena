@@ -1,0 +1,10 @@
+name=Festering Evil
+url=http://www.magiccards.info/query?q=%21festering%20evil
+image=http://mtgimage.com/card/festering%20evil.jpg
+value=3.3
+rarity=U
+type=Enchantment
+cost={3}{B}{B}
+ability=At the beginning of your upkeep, SN deals 1 damage to each creature and each player.;\
+        {B}{B}, Sacrifice SN: SN deals 3 damage to each creature and each player.
+timing=enchantment
