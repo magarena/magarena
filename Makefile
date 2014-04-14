@@ -220,7 +220,7 @@ flags ?=
 test: 100.d
 
 debug: $(MAG)
-	-make test debug=true
+	-make 101.t debug=true games=0 
 
 %.d: $(MAG)
 	$(DEBUG) -DrndSeed=$* -DselfMode=$(selfMode) -Ddebug=$(debug) -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
