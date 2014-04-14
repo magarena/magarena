@@ -6,7 +6,7 @@
                 cardOnStack,
                 MagicTargetChoice.TARGET_PLAYER,
                 this,
-                "Target player\$ discards a card."+
+                "Target player\$ discards a card. "+
                 "PN draws a card at the beginning of the next turn's upkeep."
             );
         }
