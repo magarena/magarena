@@ -6,6 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-equip={0}
+ability=Equip {0}
 given_ability=shroud;haste
 timing=equipment

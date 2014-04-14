@@ -6,7 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={3}
-equip={4}
-ability=living weapon
-given_pt=2/2
+ability=Living weapon;\
+        Equipped creature gets +2/+2.;\
+        Equip {4}
 timing=equipment

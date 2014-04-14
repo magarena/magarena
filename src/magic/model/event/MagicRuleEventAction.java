@@ -16,6 +16,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
+import magic.model.action.MagicAttachAction;
 import magic.model.action.MagicCardOnStackAction;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.action.MagicDestroyAction;
@@ -254,15 +255,15 @@ public enum MagicRuleEventAction {
     ) {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(matcher.group("group"));
+            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.singleTarget(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = game.filterPermanents(
+                    final Collection<MagicTarget> targets = game.filterTargets(
                         event.getPlayer(),
                         filter
                     );
-                    for (final MagicPermanent target : targets) {
+                    for (final MagicTarget target : targets) {
                         final MagicDamage damage=new MagicDamage(event.getSource(),target,amount);
                         game.doAction(new MagicDealDamageAction(damage));
                     }
@@ -1676,7 +1677,24 @@ public enum MagicRuleEventAction {
                 }
             };
         }
-    }
+    },
+    AttachSelf(
+        "attach SN to (?<choice>[^\\.]*)\\.",
+        MagicTargetHint.Positive,
+        MagicPumpTargetPicker.create(),
+        MagicTiming.Pump,
+        "Attach",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                public void doAction(final MagicPermanent creature) {
+                    game.doAction(new MagicAttachAction(event.getPermanent(),creature));
+                    }
+                });
+            }
+        }
+    )
 ;
 
     private final Pattern pattern;

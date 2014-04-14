@@ -6,6 +6,6 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={2}
-equip={2}
+ability=Equip {2}
 given_ability=flying;first strike
 timing=equipment

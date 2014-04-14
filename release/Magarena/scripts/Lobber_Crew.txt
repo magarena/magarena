@@ -1,0 +1,13 @@
+name=Lobber Crew
+url=http://www.magiccards.info/query?q=%21lobber%20crew
+image=http://mtgimage.com/card/lobber%20crew.jpg
+value=3.078
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={2}{R}
+pt=0/4
+ability=Defender;\
+        {T}: SN deals 1 damage to each opponent.;\
+        Whenever you cast a multicolored spell, untap SN.
+timing=main

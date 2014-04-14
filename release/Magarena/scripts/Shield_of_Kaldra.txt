@@ -6,7 +6,7 @@ rarity=R
 type=Legendary,Artifact
 subtype=Equipment
 cost={4}
-equip={4}
-given_ability=indestructible
+ability=Equipped creature has indestructible.;\
+        Equip {4}
 timing=equipment
 requires_groovy_code

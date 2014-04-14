@@ -6,8 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
-equip={2}
-given_pt=1/0
-given_ability=vigilance
+ability=Equipped creature gets +1/+0 and has vigilance.;\
+        Equip {2}
 timing=equipment
 requires_groovy_code

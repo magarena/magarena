@@ -6,7 +6,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={4}
-equip={4}
-given_ability=first strike
+ability=Equipped creature has first strike.;\
+        Equip {4}
 timing=equipment
 requires_groovy_code

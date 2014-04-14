@@ -1,0 +1,9 @@
+name=Magma Vein
+url=http://www.magiccards.info/query?q=%21magma%20vein
+image=http://mtgimage.com/card/magma%20vein.jpg
+value=1.44
+rarity=U
+type=Enchantment
+cost={2}{R}
+ability={R}, Sacrifice a land: SN deals 1 damage to each creature without flying.
+timing=enchantment

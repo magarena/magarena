@@ -6,8 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={6}
-equip={2}
-ability=living weapon
-given_pt=3/1
-given_ability=haste
+ability=Living weapon;\
+        Equipped creature gets +3/+1 and has haste.;\
+        Equip {2}
 timing=equipment

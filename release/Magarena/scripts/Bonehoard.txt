@@ -6,7 +6,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={4}
-equip={2}
-ability=living weapon
+ability=Living weapon;\
+        Equip {2}
 timing=equipment
 requires_groovy_code

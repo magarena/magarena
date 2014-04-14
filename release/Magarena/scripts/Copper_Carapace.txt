@@ -6,7 +6,6 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={1}
-equip={3}
-given_pt=2/2
-given_ability=SN can't block.
+ability=Equipped creature gets +2/+2 and can't block.;\
+        Equip {3}
 timing=main

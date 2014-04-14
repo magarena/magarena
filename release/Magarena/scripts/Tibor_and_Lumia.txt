@@ -1,0 +1,12 @@
+name=Tibor and Lumia
+url=http://www.magiccards.info/query?q=%21tibor%20and%20lumia
+image=http://mtgimage.com/card/tibor%20and%20lumia.jpg
+value=3.693
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{U}{R}
+pt=3/3
+ability=Whenever you cast a blue spell, target creature gains flying until end of turn.;\
+        Whenever you cast a red spell, SN deals 1 damage to each creature without flying.
+timing=main

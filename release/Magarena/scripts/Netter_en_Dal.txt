@@ -1,0 +1,11 @@
+name=Netter en-Dal
+url=http://www.magiccards.info/query?q=%21netter%20en%2Ddal
+image=http://mtgimage.com/card/netter%20en-dal.jpg
+value=2.395
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={W}
+pt=1/1
+ability={W}, {T}, Discard a card: Target creature can't attack this turn.
+timing=main

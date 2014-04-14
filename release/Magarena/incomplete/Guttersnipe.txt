@@ -1,0 +1,13 @@
+name=Guttersnipe
+url=http://www.magiccards.info/query?q=%21guttersnipe
+image=http://mtgimage.com/card/guttersnipe.jpg
+value=3.938
+rarity=U
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{R}
+pt=2/2
+ability=Whenever you cast an instant or sorcery spell, SN deals 2 damage to each opponent.
+timing=main
+
+#Damage group doesn't support players

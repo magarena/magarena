@@ -1,0 +1,12 @@
+name=Neurok Stealthsuit
+url=http://www.magiccards.info/query?q=%21neurok%20stealthsuit
+image=http://mtgimage.com/card/neurok%20stealthsuit.jpg
+value=3.873
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature has shroud.;\
+        {U}{U}: Attach SN to target creature you control.;\
+        Equip {1}
+timing=artifact

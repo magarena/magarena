@@ -6,6 +6,6 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={3}
-equip={2}
+ability=Equip {2}
 given_ability=SN can't be blocked.;shroud
 timing=equipment

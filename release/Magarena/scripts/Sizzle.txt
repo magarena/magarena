@@ -1,0 +1,9 @@
+name=Sizzle
+url=http://www.magiccards.info/query?q=%21sizzle
+image=http://mtgimage.com/card/sizzle.jpg
+value=3.286
+rarity=C
+type=Sorcery
+cost={2}{R}
+effect=SN deals 3 damage to each opponent.
+timing=main

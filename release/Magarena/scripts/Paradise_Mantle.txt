@@ -6,6 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={0}
-equip={1}
-given_ability={T}: Add one mana of any color to your mana pool.
+ability=Equipped creature has "{T}: Add one mana of any color to your mana pool.";\
+        Equip {1}
 timing=equipment

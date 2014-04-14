@@ -1,0 +1,12 @@
+name=Tornado Elemental
+url=http://www.magiccards.info/query?q=%21tornado%20elemental
+image=http://mtgimage.com/card/tornado%20elemental.jpg
+value=4.421
+rarity=R
+type=Creature
+subtype=Elemental
+cost={5}{G}{G}
+pt=6/6
+ability=When SN enters the battlefield, SN deals 6 damage to each creature with flying.
+timing=main
+requires_groovy_code=Rhox

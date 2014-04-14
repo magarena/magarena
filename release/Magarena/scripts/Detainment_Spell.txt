@@ -1,0 +1,12 @@
+name=Detainment Spell
+url=http://www.magiccards.info/query?q=%21detainment%20spell
+image=http://mtgimage.com/card/detainment%20spell.jpg
+value=2.708
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+ability={1}{W}: Attach SN to target creature.
+given_ability=can't activate abilities
+enchant=default,neg creature
+timing=enchantment

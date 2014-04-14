@@ -6,7 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-equip={2}
-given_pt=1/1
-given_ability=deathtouch
+ability=Equipped creature gets +1/+1 and has deathtouch.;\
+        Equip {2}
 timing=equipment
