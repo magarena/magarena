@@ -45,7 +45,7 @@ def TARGET_ARTIFACT_CREATURE_OR_LAND = new MagicTargetChoice(
                 MagicPermanent permanent ->
                 game.doAction(new MagicTapAction(permanent, true));
             });
-            game.doAction(new MagicAddCantripTriggerAction(event));
+            game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
         }
     }
 ]

@@ -42,7 +42,7 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
                 game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.TopOfOwnersLibrary));
             });
-            game.doAction(new MagicAddCantripTriggerAction(event));
+            game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
         }
     }
 ]

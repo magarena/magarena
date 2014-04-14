@@ -16,7 +16,7 @@
                 final MagicPlayer player ->
                 game.addEvent(new MagicDiscardEvent(event.getSource(), player, 1));
             });
-            game.doAction(new MagicAddCantripTriggerAction(event)); 
+            game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
         }
     }
 ]

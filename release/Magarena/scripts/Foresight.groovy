@@ -37,7 +37,7 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
                 game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
             });
             game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
-            game.doAction(new MagicAddCantripTriggerAction(event)); 
+            game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
         }
     }
 ]

@@ -7,6 +7,7 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 
 public class MagicAddCantripTriggerAction extends MagicAction {
 
@@ -14,19 +15,19 @@ public class MagicAddCantripTriggerAction extends MagicAction {
     private final MagicTrigger<?> trigger;
     private MagicPermanentTrigger permanentTrigger;
 
-    public MagicAddCantripTriggerAction(final MagicEvent event) {
+    public MagicAddCantripTriggerAction(final MagicSource source, final MagicPlayer player) {
         this.permanent=MagicPermanent.NONE;
-        this.trigger=cantrip(event);
+        this.trigger=cantrip(source, player);
     }
     
-    public MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
+    public MagicAtUpkeepTrigger cantrip(final MagicSource source, final MagicPlayer player) {
         return new MagicAtUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                 game.addDelayedAction(new MagicRemoveTriggerAction(this));
                 return new MagicEvent(
-                    game.createDelayedSource(event.getSource(), event.getPlayer()),
-                    event.getPlayer(),
+                    source,
+                    player,
                     this,         
                     "PN draws a card"
                 );
@@ -49,7 +50,7 @@ public class MagicAddCantripTriggerAction extends MagicAction {
         game.removeTrigger(permanentTrigger);
     }
     
-    @Override
+    @Override                                                                                                                                         
     public String toString() {
         return getClass().getSimpleName()+" ("+permanent+','+trigger+')';
     }
