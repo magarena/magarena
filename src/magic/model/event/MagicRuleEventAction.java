@@ -249,7 +249,7 @@ public enum MagicRuleEventAction {
         }
     ),
     DamageTwoGroup(
-        "(sn|it) deal(s)? (?<amount>[0-9]+) damage to each (?<group1>[^\\.]*) and each (?<group2>[^\\.]*)\\.",
+        "sn deal(s)? (?<amount>[0-9]+) damage to each (?<group1>[^\\.]*) and each (?<group2>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -281,7 +281,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageGroup(
-        "(sn|it) deal(s)? (?<amount>[0-9]+) damage to each (?<group>[^\\.]*)\\.",
+        "sn deal(s)? (?<amount>[0-9]+) damage to each (?<group>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -303,8 +303,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DamageOwner(
+        "sn deal(s)? (?<amount>[0-9]+) damage to you\\.",
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),amount);
+                    game.doAction(new MagicDealDamageAction(damage));
+                }
+            };
+        }
+    },
     DamageChosen(
-        "(sn|it) deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)\\.",
+        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative, 
         new MagicDamageTargetPicker(1), 
         MagicTiming.Removal,
@@ -326,7 +343,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventSelf(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to (sn|it) this turn\\.",
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to sn this turn\\.",
         MagicTiming.Pump,
         "Prevent"
     ) {
@@ -580,7 +597,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpSelf(
-        "(sn|it) get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn\\.", 
+        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) until end of turn\\.", 
         MagicTiming.Pump, 
         "Pump"
     ) {
@@ -674,7 +691,7 @@ public enum MagicRuleEventAction {
             }
         },
     PumpGainSelf(
-        "(sn|it) get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn\\.", 
+        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn\\.", 
         MagicTiming.Pump
     ) {
         @Override
@@ -696,7 +713,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainCantSelf(
-            "(sn|it) get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) (until end of turn and|and) (?<ability>can't .+) this turn\\.", 
+            "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) (until end of turn and|and) (?<ability>can't .+) this turn\\.", 
             MagicTiming.Pump
         ) {
             @Override
@@ -857,7 +874,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainSelf(
-        "(sn|it) gain(s)? (?<ability>.+) until end of turn\\."
+        "sn gain(s)? (?<ability>.+) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -886,7 +903,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainSelfCant(
-        "(sn|it) (?<ability>can't .+) this turn\\."
+        "sn (?<ability>can't .+) this turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1048,7 +1065,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnSelf(
-        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on (sn|it)\\.",
+        "put (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? on sn\\.",
         MagicTiming.Pump
     ) {
         @Override
@@ -1106,7 +1123,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterFromSelf(
-        "remove (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? from (sn|it)\\.",
+        "remove (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? from sn\\.",
         MagicTiming.Pump
     ) {
         @Override
@@ -1205,7 +1222,7 @@ public enum MagicRuleEventAction {
         }
     },
     RecoverSelf(
-        "return (sn|it) from the graveyard to its owner's hand\\.",
+        "return sn from the graveyard to its owner's hand\\.",
         MagicTiming.Draw,
         "Return",
         new MagicEventAction() {
@@ -1236,7 +1253,7 @@ public enum MagicRuleEventAction {
         }
     ),
     BounceSelf(
-        "return (sn|it) to its owner's hand\\.",
+        "return sn to its owner's hand\\.",
         MagicTiming.Removal,
         "Bounce",
         new MagicEventAction() {
@@ -1264,7 +1281,7 @@ public enum MagicRuleEventAction {
         }
     ),
     BounceLibTopSelf(
-        "put (sn|it) on top of its owner's library\\.",
+        "put sn on top of its owner's library\\.",
         MagicTiming.Removal,
         "Bounce",
         new MagicEventAction() {
@@ -1462,7 +1479,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TapSelf(
-        "tap (sn|it)\\.",
+        "tap sn\\.",
         MagicTiming.Tapping,
         "Tap",
         new MagicEventAction() {
@@ -1490,7 +1507,7 @@ public enum MagicRuleEventAction {
         }
     ),
     UntapSelf(
-        "untap (sn|it)\\.", 
+        "untap sn\\.", 
         MagicTiming.Tapping, 
         "Untap"
     ) {
@@ -1633,7 +1650,7 @@ public enum MagicRuleEventAction {
         }
     },
     RegenerateSelf(
-        "regenerate (sn|it)\\.", 
+        "regenerate sn\\.", 
         MagicTiming.Pump, 
         "Regen"
     ) {
@@ -1675,7 +1692,7 @@ public enum MagicRuleEventAction {
         }
     },
     SwitchPTSelf(
-        "switch (SN|it)'s power and toughness until end of turn\\.",
+        "switch sn's power and toughness until end of turn\\.",
         MagicTiming.Pump,
         "Switch"
     ) {
@@ -1711,7 +1728,7 @@ public enum MagicRuleEventAction {
         }
     },
     AttachSelf(
-        "attach (SN|it) to (?<choice>[^\\.]*)\\.",
+        "attach sn to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,

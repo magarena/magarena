@@ -7,5 +7,5 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={2}{U}{U}
 pt=2/2
+ability=Whenever SN becomes tapped, you may pay {1}{U}. If you do, return target permanent to its owner's hand.
 timing=main
-requires_groovy_code

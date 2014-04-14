@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={R}
 pt=1/1
-ability=Whenever SN becomes blocked, it deals 2 damage to each attacking creature and each blocking creature.
+ability=Whenever SN becomes blocked, SN deals 2 damage to each attacking creature and each blocking creature.
 timing=main

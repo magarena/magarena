@@ -7,5 +7,5 @@ type=Creature
 subtype=Kithkin,Knight
 cost={1}{W}
 pt=2/2
-ability=Whenever SN attacks, you may pay {W}. If you do, it gains flying until end of turn.
+ability=Whenever SN attacks, you may pay {W}. If you do, SN gains flying until end of turn.
 timing=main
