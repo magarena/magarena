@@ -33,9 +33,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getRefInt() == 0 && event.isMode(0)) {
+            if (event.getRefInt() == 0 && event.isMode(1)) {
                 game.addEvent(drawTwo(event.getSource()));
-            } else if (event.getRefInt() == 0 && event.isMode(1)) {
+            } else if (event.getRefInt() == 0 && event.isMode(2)) {
                 game.addEvent(discardTwo(event.getSource()));
             } else if (event.getRefInt() == 1) {
                event.processTargetPlayer(game, {

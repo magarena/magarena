@@ -32,6 +32,10 @@ public class MagicFromCardListChoice extends MagicChoice {
         this(choiceList, choiceList, amount, false);
     }
     
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount, final boolean upTo) {
+        this(choiceList, choiceList, amount, upTo);
+    }
+    
     public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount) {
         this(choiceList, showList, amount, false);
     }
@@ -122,7 +126,13 @@ public class MagicFromCardListChoice extends MagicChoice {
                 controller.disableActionButton(false);
                 controller.setValidChoices(validCards,false);
                 controller.showMessage(source,message);
+                if(upTo) controller.enableForwardButton();
                 controller.waitForInput();
+                if(controller.isActionClicked()) {
+                    controller.clearCards();
+                    controller.focusViewers(0,-1);
+                    return new Object[] {result};
+                }
                 final MagicCard card = controller.getChoiceClicked();
                 validCards.remove(card);
                 result.add(card);
