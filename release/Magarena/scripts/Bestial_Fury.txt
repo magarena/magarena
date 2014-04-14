@@ -1,0 +1,13 @@
+name=Bestial Fury
+url=http://magiccards.info/query?q=%21bestial%20fury
+image=http://mtgimage.com/card/bestial%20fury.jpg
+value=3.871
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+given_ability=Whenever SN becomes blocked, SN gets +4/+0 until end of turn.;\
+              Whenever SN becomes blocked, SN gains trample until end of turn.
+timing=main
+enchant=pump,pos creature
+requires_groovy_code

@@ -14,7 +14,18 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
             );
         }
     }
-};         
+}; 
+
+def ARTIFACT_CREATURE_OR_LAND = new MagicPermanentFilterImpl() {
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.isLand() || target.isCreature() || target.isArtifact();
+    }
+};
+
+def TARGET_ARTIFACT_CREATURE_OR_LAND = new MagicTargetChoice(
+    ARTIFACT_CREATURE_OR_LAND,
+    "target artifact, creature or land"
+);
 
 [
     new MagicSpellCardEvent() {
@@ -22,17 +33,17 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                TARGET_ARTIFACT_CREATURE_OR_LAND,
                 this,
-                "PN looks at target player's\$ hand."+
+                "PN taps target artifact, creature, or land.\$"+
                 "PN draws a card at the beginning of the next turn's upkeep."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPlayer(game, {
-                MagicPlayer player ->
-                game.doAction(new MagicRevealAction(player.getHand()));
+            event.processTargetPermanent(game, {
+                MagicPermanent permanent ->
+                game.doAction(new MagicTapAction(permanent, true));
             });
             game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
         }
