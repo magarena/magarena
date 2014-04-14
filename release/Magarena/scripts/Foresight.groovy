@@ -21,17 +21,11 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final MagicCardList bones = new MagicCardList();
-            for(int i = 0; i < cardOnStack.getController().getGraveyard().size(); i++) {
-                if(cardOnStack.getController().getGraveyard().get(i).hasType(MagicType.Creature)) {
-                    bones.add(cardOnStack.getController().getGraveyard().get(i));
-                }
-            }
             return new MagicEvent(
                 cardOnStack,
-                new MagicFromCardListChoice(bones, bones.size(), true),
+                new MagicFromCardListChoice(cardOnStack.getController().getLibrary(), 3, false),
                 this,
-                "PN puts any number of target creature cards from his or her graveyard on top of his or her library.\$"+
+                "PN searches his or her library for three cards, exiles them, then shuffles his or her library..\$"+
                 "PN draws a card at the beginning of the next turn's upkeep."
             );
         }
@@ -39,9 +33,10 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {
                 MagicCard card ->
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.TopOfOwnersLibrary));
+                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+                game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
             });
+            game.doAction(new MagicShuffleLibraryAction(event.getPlayer()));
             game.doAction(new MagicAddTriggerAction(cantrip(event))); 
         }
     }
