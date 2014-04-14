@@ -1634,6 +1634,28 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SacrificeSelf(
+        "sacrifice sn\\.",
+        MagicTiming.Removal,
+        "Sacrifice",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            }
+        }
+    ),
+    ExileSelf(
+            "exile sn\\.",
+            MagicTiming.Removal,
+            "Exile",
+            new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
+                }
+            }
+        ),
     Scry(
         "(pn )?scry 1\\.",
         MagicTiming.Draw,
