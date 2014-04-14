@@ -34,7 +34,7 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
                 MagicPlayer player ->
                 game.doAction(new MagicRevealAction(player.getHand()));
             });
-            game.doAction(new MagicAddTriggerAction(cantrip(event)));
+            game.doAction(new MagicAddCantripTriggerAction(event));
         }
     }
 ]

@@ -1,0 +1,9 @@
+name=Mind Ravel
+url=http://magiccards.info/query?q=%21mind%20ravel
+image=http://mtgimage.com/card/mind%20ravel.jpg
+value=2.846
+rarity=C
+type=Sorcery
+cost={2}{B}
+timing=main
+requires_groovy_code

@@ -45,7 +45,7 @@ def TARGET_ARTIFACT_CREATURE_OR_LAND = new MagicTargetChoice(
                 MagicPermanent permanent ->
                 game.doAction(new MagicUntapAction(permanent));
             });
-            game.doAction(new MagicAddTriggerAction(cantrip(event))); 
+            game.doAction(new MagicAddCantripTriggerAction(event)); 
         }
     }
 ]
