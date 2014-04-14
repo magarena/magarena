@@ -636,7 +636,7 @@ exp/zermelo.tsv: $(wildcard exp/136*.log)
 bytes_per_card.%:
 	echo `hg cat -r $* release/Magarena/scripts/ | sed 's/^[[:space:]]*//' | wc -c` \
 	/ \
-	`ls -1 release/Magarena/scripts/*.txt | wc -l` \
+	`hg manifest -r $* | grep 'release/Magarena/scripts/.*.txt' | wc -l` \
 	| bc -l
 
 reminder.txt: cards/cards.xml
