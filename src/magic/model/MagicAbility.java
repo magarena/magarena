@@ -690,12 +690,6 @@ public enum MagicAbility {
             card.add(MagicStatic.ControlEnchanted);
         }
     },
-    SwitchPT("switch pt " + ARG.COST, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
-            card.add(MagicPermanentActivation.SwitchPT(manaCost));
-        }
-    },
     Evoke("evoke " + ARG.COST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
@@ -732,7 +726,7 @@ public enum MagicAbility {
             card.add(new MagicTypeCyclingActivation(manaCost,type));
         }
     },
-    Reinforce("reinforce " + ARG.NUMBER + " " + ARG.COST, 20) {
+    Reinforce("reinforce " + ARG.NUMBER + " - " + ARG.COST, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
