@@ -92,7 +92,7 @@ public enum MagicCostEvent {
     },
     ExileSelf() {
         public boolean accept(final String cost) {
-            return cost.equals("{E}");
+            return cost.equals("Exile SN");
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             return new MagicExileEvent((MagicPermanent)source);
