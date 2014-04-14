@@ -11,3 +11,5 @@ ability=Defender;\
         {T}: SN deals 1 damage to each opponent.;\
         Whenever you cast a multicolored spell, untap SN.
 timing=main
+
+#Damage group doesn't support players

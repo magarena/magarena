@@ -7,3 +7,5 @@ type=Instant
 cost={3}{B}{R}
 effect=SN deals 5 damage to each opponent.
 timing=flash
+
+#Damage group doesn't support players

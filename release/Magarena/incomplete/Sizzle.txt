@@ -7,3 +7,5 @@ type=Sorcery
 cost={2}{R}
 effect=SN deals 3 damage to each opponent.
 timing=main
+
+#Damage group doesn't support players
