@@ -23,6 +23,7 @@ public class MagicAddCantripTriggerAction extends MagicAction {
         return new MagicAtUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
+                game.addDelayedAction(new MagicRemoveTriggerAction(this));
                 return new MagicEvent(
                     event.getSource(),
                     event.getPlayer(),
@@ -34,7 +35,6 @@ public class MagicAddCantripTriggerAction extends MagicAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.doAction(new MagicDrawAction(event.getPlayer()));
-                game.doAction(new MagicRemoveTriggerAction(this));
             }
         }; 
     }
