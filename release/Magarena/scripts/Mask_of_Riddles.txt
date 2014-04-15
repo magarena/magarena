@@ -8,5 +8,5 @@ subtype=Equipment
 cost={U}{B}
 ability=Equipped creature has fear.;\
         Equip {2}
-given_ability=Whenever SN deals combat damage to a player, you may draw a card.
 timing=equipment
+requires_groovy_code

@@ -145,11 +145,11 @@ public enum MagicAbility {
     Indestructible("indestructible(\\.)?",150),
     Haste("haste(\\.)?",0),
     Lifelink("lifelink(\\.)?",40),
-    ProtectionFromBlack("protection from black",20),
-    ProtectionFromBlue("protection from blue",20),
-    ProtectionFromGreen("protection from green",20),
-    ProtectionFromRed("protection from red",20),
-    ProtectionFromWhite("protection from white",20),
+    ProtectionFromBlack("(protection )?from black(\\.)?",20),
+    ProtectionFromBlue("(protection )?from blue(\\.)?",20),
+    ProtectionFromGreen("(protection )?from green(\\.)?",20),
+    ProtectionFromRed("(protection )?from red(\\.)?",20),
+    ProtectionFromWhite("(protection )?from white(\\.)?",20),
     ProtectionFromMonoColored("protection from monocolored",50),
     ProtectionFromAllColors("protection from all colors",150),
     ProtectionFromCreatures("protection from creatures",100),
@@ -783,8 +783,12 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(MagicStatic.genPTStatic(power, toughness));
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
-            card.add(MagicStatic.genABStatic(abilityList));
+            final String abilitiesLong = ARG.any(arg).replace(", and ",",").replace(" and ",",");
+            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+            for (int a=0; a<abilityArray.length; a++) {
+                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityArray[a]);
+                card.add(MagicStatic.genABStatic(abilityList));
+            }
         }
     },
     EquippedPump("Equipped creature gets " + ARG.PT + "(\\.)?", 0) {
@@ -797,8 +801,12 @@ public enum MagicAbility {
     },
     EquippedGain("Equipped creature (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(ARG.any(arg));
-            card.add(MagicStatic.genABStatic(abilityList));
+            final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
+            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+            for (int a=0; a<abilityArray.length; a++) {
+                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityArray[a]);
+                card.add(MagicStatic.genABStatic(abilityList));
+            }
         }
     },
     Equip("Equip " + ARG.COST, 0) {

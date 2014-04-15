@@ -6,6 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {0}
-given_ability=shroud;haste
+ability=Equipped creature has haste and shroud.;\
+        Equip {0}
 timing=equipment

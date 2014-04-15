@@ -6,7 +6,6 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={3}
-ability=Equipped creature gets +2/+0.;\
+ability=Equipped creature gets +2/+0 and has first strike, vigilance, trample, and haste.;\
         Equip {3}
-given_ability=first strike;vigilance;trample;haste
 timing=equipment
