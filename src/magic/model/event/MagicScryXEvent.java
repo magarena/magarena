@@ -15,7 +15,7 @@ public class MagicScryXEvent extends MagicEvent {
     
 
     public MagicScryXEvent(final MagicSource source, final MagicPlayer player, final int X) {
-          super(source, player, new MagicFromCardListChoice(getScryList(player, X), getActualX(player, X), true),new MagicInteger(getActualX(player, X)),BottomAction,"");
+          super(source, player, X, startScrying(source, player, X), "");
     }
     
     private static int getActualX(final MagicPlayer player, final int X) {
@@ -33,6 +33,14 @@ public class MagicScryXEvent extends MagicEvent {
         return scryList;
     }
         
+    private static MagicEventAction startScrying(final MagicSource source, final MagicPlayer player, final int X) {
+        return new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.addFirstEvent(new MagicEvent(source, player, new MagicFromCardListChoice(getScryList(player, X), getActualX(player, X), true), new MagicInteger(getActualX(player, X)), BottomAction, ""));
+            }
+        };
+    }
     
     private static final MagicEventAction TopAction = new MagicEventAction() {
         @Override
@@ -50,22 +58,25 @@ public class MagicScryXEvent extends MagicEvent {
     private static final MagicEventAction BottomAction = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList processedCards = new MagicCardList();
+            final MagicCardList processedCards = new MagicCardList();                                                                  
             event.processChosenCards(game, new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    processedCards.add(card);
+                    processedCards.add(card);  
                     game.doAction(new MagicScryComplAction(event.getPlayer(), card, true));
                     game.logAppendMessage(event.getPlayer(), event.getPlayer() + " moves a card from top of his or her library to the bottom.");
                 }
             });
-            game.addEvent(new MagicEvent(
-                event.getSource(),
-                event.getPlayer(),
-                new MagicFromCardListChoice(getScryList(event.getPlayer(), event.getRefInt()-processedCards.size()), getActualX(event.getPlayer(), event.getRefInt()-processedCards.size())),
-                getActualX(event.getPlayer(), event.getRefInt()-processedCards.size()),
-                TopAction,
-                ""
-            ));
+            final int actualX =  getActualX(event.getPlayer(), event.getRefInt() - processedCards.size());
+            if(actualX > 0) {                                                                          //escape, no sense in calling TopAction if there is no choice to make
+                game.addFirstEvent(new MagicEvent(                                                     //addFirstEvent, Bottom and TopAction need to be execute in immediate succession, otherwise it breaks     
+                    event.getSource(),
+                    event.getPlayer(),
+                    new MagicFromCardListChoice(getScryList(event.getPlayer(), actualX), actualX),
+                    actualX,
+                    TopAction,
+                    ""
+                ));
+            }
         }
     };
 }

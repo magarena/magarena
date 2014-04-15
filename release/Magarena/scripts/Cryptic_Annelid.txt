@@ -1,0 +1,11 @@
+name=Cryptic Annelid
+url=http://magiccards.info/query?q=%21cryptic%20annelid
+image=http://mtgimage.com/card/cryptic%20annelid.jpg
+value=3.706
+rarity=U
+type=Creature
+subtype=Worm,Beast
+cost={3}{U}
+pt=1/4
+timing=main
+requires_groovy_code
