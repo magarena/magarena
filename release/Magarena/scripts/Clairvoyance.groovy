@@ -1,21 +1,3 @@
-def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
-    return new MagicAtUpkeepTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return new MagicEvent(
-                event.getSource(),
-                event.getPlayer(),
-                {
-                    final MagicGame game2, final MagicEvent event2 ->
-                    game2.doAction(new MagicDrawAction(event2.getPlayer()));
-                    game2.doAction(new MagicRemoveTriggerAction(this));
-                },
-                "PN draws a card"
-            );
-        }
-    }
-};         
-
 [
     new MagicSpellCardEvent() {
         @Override
@@ -33,8 +15,13 @@ def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
             event.processTargetPlayer(game, {
                 MagicPlayer player ->
                 game.doAction(new MagicRevealAction(player.getHand()));
+                game.doAction(new MagicAddTriggerAction(
+                    MagicAtUpkeepTrigger.YouDraw(
+                        event.getSource(), 
+                        event.getPlayer()
+                    )
+                ));
             });
-            game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
         }
     }
 ]

@@ -15,8 +15,13 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player ->
                 game.addEvent(new MagicDiscardEvent(event.getSource(), player, 1));
+                game.doAction(new MagicAddTriggerAction(
+                    MagicAtUpkeepTrigger.YouDraw(
+                        event.getSource(), 
+                        event.getPlayer()
+                    )
+                ));
             });
-            game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
         }
     }
 ]
