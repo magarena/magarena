@@ -180,6 +180,9 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
         for (final MagicCard card : hand) {
             set.addAll(card.getSourceActivations());
         }
+        for (final MagicCard card : graveyard) {
+            set.addAll(card.getSourceActivations());
+        }
         for (final MagicPermanent perm : permanents) {
             set.addAll(perm.getSourceActivations());
         }
