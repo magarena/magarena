@@ -26,8 +26,7 @@ public class MagicAddCantripTriggerAction extends MagicAction {
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                 game.addDelayedAction(new MagicRemoveTriggerAction(this));
                 return new MagicEvent(
-                    source,
-                    player,
+                    game.createDelayedSource(source, player),
                     this,         
                     "PN draws a card"
                 );
