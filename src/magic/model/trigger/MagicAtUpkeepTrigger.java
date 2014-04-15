@@ -53,7 +53,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
                 return new MagicEvent(
                     game.createDelayedSource(staleSource, stalePlayer),
                     this,         
-                    "PN draws a card"
+                    "PN draws a card."
                 );
             }
             @Override
