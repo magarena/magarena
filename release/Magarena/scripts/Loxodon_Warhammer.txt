@@ -6,7 +6,6 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={3}
-ability=Equipped creature gets +3/+0.;\
+ability=Equipped creature gets +3/+0 and has trample and lifelink.;\
         Equip {3}
-given_ability=lifelink;trample
 timing=equipment

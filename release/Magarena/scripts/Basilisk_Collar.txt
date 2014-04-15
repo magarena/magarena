@@ -6,6 +6,6 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equip {2}
-given_ability=deathtouch;lifelink
+ability=Equipped creature has deathtouch and lifelink;\
+        Equip {2}
 timing=equipment
