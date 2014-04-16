@@ -6,6 +6,6 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equip {2}
-given_ability=defender;flying;first strike
+ability=Equipped creature has defender, flying, and first strike.;\
+        Equip {2}
 timing=equipment

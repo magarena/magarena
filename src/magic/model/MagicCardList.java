@@ -59,10 +59,18 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
     }
 
     public MagicCard getCardAtTop() {
-        final int size = this.size();
-        return size > 0 ?
-                this.get(size()-1) :
-                MagicCard.NONE;
+        final int size = size();
+        return size > 0 ? get(size-1) : MagicCard.NONE;
+    }
+    
+    public MagicCardList getCardsFromTop(final int amount) {
+        final int size = size();
+        final MagicCardList choiceList = new MagicCardList();
+        final int actual = Math.min(amount, size);
+        for (int i = 1; i <= actual; i++) {
+            choiceList.add(get(size-i));
+        }
+        return choiceList;
     }
 
     public MagicCard removeCardAtTop() {

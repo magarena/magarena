@@ -6,8 +6,7 @@ rarity=M
 type=Artifact
 subtype=Equipment
 cost={3}
-ability=Equipped creature gets +2/+2.;\
+ability=Equipped creature gets +2/+2 and has protection from red and from white.;\
         Equip {2}
-given_ability=protection from red;protection from white
 timing=equipment
 requires_groovy_code

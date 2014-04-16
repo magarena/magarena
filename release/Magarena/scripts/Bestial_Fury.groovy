@@ -10,7 +10,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddCantripTriggerAction(game.createDelayedSource(event.getSource(), event.getPlayer()), event.getPlayer())); 
+            game.doAction(new MagicAddTriggerAction(
+                MagicAtUpkeepTrigger.YouDraw(
+                    event.getSource(), 
+                    event.getPlayer()
+                )
+            ));
         }
     }
 ]
