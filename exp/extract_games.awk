@@ -2,26 +2,22 @@ BEGIN {
     FS = "\t"
 }
 
-function genName() {
-    name = "UNKNOWN"
-    if ($0 ~ /MMAB/) {
-        name = "MMAB"
-    } else if ($0 ~ /VEGAS/) {
-        name = "VEGAS"
-    } else if ($0 ~ /MCTS2/) {
-        name = "MCTS2"
-    } else if ($0 ~ /MCTS/) {
-        name = "MCTS"
+function genName(name) {
+    if (name ~ /minimax (cheat)/) {
+        return "MMAB-C"
+    } else if ($0 ~ /vegas (cheat)/) {
+        return "VEGAS-C"
+    } else if ($0 ~ /monte carlo tree search (cheat)/) {
+        return "MCTS-C"
+    } else if ($0 ~ /minimax/) {
+        return "MMAB-H"
+    } else if ($0 ~ /vegas/) {
+        return "VEGAS-H"
+    } else if ($0 ~ /monte carlo tree search/) {
+        return "MCTS-H"
+    } else {
+        return "UNKNOWN"
     }
-
-    cheat = "?"
-    if ($0 ~ /cheat=true/) {
-        cheat = "C"
-    } else if ($0 ~ /cheat=false/) {
-        cheat = "H"
-    }
-
-    return name "-" cheat
 }
 
 /index=0/ {
@@ -39,5 +35,5 @@ function genName() {
     } else {
         C = "0"
     }
-    print ai1 "-" $3 " " ai2 "-" $6  " " C
+    print genName($2) "-" $3 " " genName($5) "-" $6  " " C
 }
