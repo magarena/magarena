@@ -19,16 +19,15 @@ import java.util.LinkedList;
 
 public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
     
-    private static final MagicCondition[] CARD_HAND_CONDITIONS = new MagicCondition[]{
+    public static final MagicCondition[] CARD_CONDITION = new MagicCondition[]{
         MagicCondition.CARD_CONDITION,  
-        MagicCondition.HAND_CONDITION
     };
     
     final boolean usesStack;
 
     public MagicCardActivation(final MagicCardDefinition cdef) {
         super(
-            CARD_HAND_CONDITIONS,
+            CARD_CONDITION,
             cdef.getActivationHints(),
             "Cast"
         );
@@ -112,7 +111,7 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicMatchedCostEvent.build(costs);
         assert matchedCostEvents.size() > 0;
 
-        return new MagicCardActivation(CARD_HAND_CONDITIONS, cardDef.getActivationHints(), name) {
+        return new MagicCardActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {
             public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
                 final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
                 for (final MagicMatchedCostEvent matched : matchedCostEvents) {

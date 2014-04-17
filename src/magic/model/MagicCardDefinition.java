@@ -89,6 +89,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private MagicCardEvent cardEvent=MagicPlayCardEvent.create();
     private final Collection<MagicActivation<MagicPermanent>> permActivations=new ArrayList<MagicActivation<MagicPermanent>>();
     private final LinkedList<MagicActivation<MagicCard>> cardActivations = new LinkedList<MagicActivation<MagicCard>>();
+    private final LinkedList<MagicActivation<MagicCard>> graveyardActivations = new LinkedList<MagicActivation<MagicCard>>();
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
@@ -639,6 +640,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public Collection<MagicActivation<MagicCard>> getCardActivations() {
         return cardActivations;
     }
+    
+    public Collection<MagicActivation<MagicCard>> getGraveyardActivations() {
+        return graveyardActivations;
+    }
 
     public void addCDA(final MagicCDA cda) {
         CDAs.add(cda);
@@ -706,6 +711,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void addCardAct(final MagicCardActivation activation) {
         cardActivations.add(activation);
+    }
+    
+    public void addGraveyardAct(final MagicCardActivation activation) {
+        graveyardActivations.add(activation);
     }
     
     public void setCardAct(final MagicCardActivation activation) {

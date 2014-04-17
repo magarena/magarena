@@ -13,18 +13,13 @@ import magic.model.stack.MagicCardOnStack;
 
 import java.util.Arrays;
 
-public class MagicFlashbackActivation extends MagicCardActivation {
+public class MagicFlashbackActivation extends MagicGraveyardActivation {
     
     final MagicManaCost cost;
     
-    private static final MagicCondition[] CARD_GRAVEYARD_CONDITIONS = new MagicCondition[]{
-        MagicCondition.CARD_CONDITION,  
-        MagicCondition.GRAVEYARD_CONDITION
-    };
-
     public MagicFlashbackActivation(final MagicCardDefinition cdef, final MagicManaCost aCost) {
         super(
-            CARD_GRAVEYARD_CONDITIONS,
+            MagicCardActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Flashback"
         );
