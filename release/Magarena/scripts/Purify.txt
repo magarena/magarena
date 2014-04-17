@@ -1,0 +1,9 @@
+name=Purify
+url=http://www.magiccards.info/query?q=%21purify
+image=http://mtgimage.com/card/purify.jpg
+value=3.524
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+effect=Destroy all artifacts and enchantments.
+timing=main

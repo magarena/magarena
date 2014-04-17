@@ -1,0 +1,10 @@
+name=Volcanic Spray
+url=http://www.magiccards.info/query?q=%21volcanic%20spray
+image=http://mtgimage.com/card/volcanic%20spray.jpg
+value=3.531
+rarity=U
+type=Sorcery
+cost={1}{R}
+effect=SN deals 1 damage to each creature without flying and each player.
+ability=Flashback {1}{R}
+timing=main

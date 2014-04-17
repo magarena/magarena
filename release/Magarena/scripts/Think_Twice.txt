@@ -1,0 +1,10 @@
+name=Think Twice
+url=http://www.magiccards.info/query?q=%21think%20twice
+image=http://mtgimage.com/card/think%20twice.jpg
+value=3.636
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Draw a card.
+ability=Flashback {2}{U}
+timing=draw

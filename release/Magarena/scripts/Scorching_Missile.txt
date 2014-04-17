@@ -1,0 +1,10 @@
+name=Scorching Missile
+url=http://www.magiccards.info/query?q=%21scorching%20missile
+image=http://mtgimage.com/card/scorching%20missile.jpg
+value=2.02
+rarity=C
+type=Sorcery
+cost={3}{R}
+effect=SN deals 4 damage to target player.
+ability=Flashback {9}{R}
+timing=main

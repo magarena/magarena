@@ -1,0 +1,10 @@
+name=Strangling Soot
+url=http://www.magiccards.info/query?q=%21strangling%20soot
+image=http://mtgimage.com/card/strangling%20soot.jpg
+value=3.286
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Destroy target creature with toughness 3 or less.
+ability=Flashback {5}{R}
+timing=removal

@@ -1,0 +1,11 @@
+name=Marshaling Cry
+url=http://www.magiccards.info/query?q=%21marshaling%20cry
+image=http://mtgimage.com/card/marshaling%20cry.jpg
+value=3.347
+rarity=C
+type=Sorcery
+cost={1}{W}{W}
+effect=Creatures you control get +1/+1 and gain vigilance until end of turn.
+ability=Cycling {2};\
+        Flashback {3}{W}
+timing=main

@@ -1,0 +1,10 @@
+name=Wild Hunger
+url=http://www.magiccards.info/query?q=%21wild%20hunger
+image=http://mtgimage.com/card/wild%20hunger.jpg
+value=3.159
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Target creature gets +3/+1 and gains trample until end of turn.
+ability=Flashback {3}{R}
+timing=pumpFlash

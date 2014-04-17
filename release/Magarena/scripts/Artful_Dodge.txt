@@ -1,0 +1,10 @@
+name=Artful Dodge
+url=http://www.magiccards.info/query?q=%21artful%20dodge
+image=http://mtgimage.com/card/artful%20dodge.jpg
+value=3.727
+rarity=C
+type=Sorcery
+cost={U}
+effect=Target creature can't be blocked this turn.
+ability=Flashback {U}
+timing=fmain
