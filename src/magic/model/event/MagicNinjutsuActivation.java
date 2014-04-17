@@ -26,6 +26,7 @@ public class MagicNinjutsuActivation extends MagicCardActivation {
         super(
             new MagicCondition[]{
                 MagicCondition.NINJUTSU_CONDITION,
+                MagicCondition.HAND_CONDITION
             },
             new MagicActivationHints(MagicTiming.Block,true),
             "Ninjutsu"
