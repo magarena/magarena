@@ -7,16 +7,11 @@ import magic.model.condition.MagicCondition;
 
 import java.util.Arrays;
 
-public class MagicRetraceActivation extends MagicCardActivation {
+public class MagicRetraceActivation extends MagicGraveyardActivation {
     
-    private static final MagicCondition[] CARD_GRAVEYARD_CONDITIONS = new MagicCondition[]{
-        MagicCondition.CARD_CONDITION,  
-        MagicCondition.GRAVEYARD_CONDITION
-    };
-
     public MagicRetraceActivation(final MagicCardDefinition cdef) {
         super(
-            CARD_GRAVEYARD_CONDITIONS,
+            MagicCardActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Retrace"
         );

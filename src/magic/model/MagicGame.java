@@ -10,7 +10,6 @@ import magic.model.action.MagicLogMarkerAction;
 import magic.model.action.MagicMarkerAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.action.MagicMoveCardAction;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.choice.MagicDeclareBlockersResult;

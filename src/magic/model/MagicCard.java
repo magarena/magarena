@@ -286,7 +286,10 @@ public class MagicCard
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
         List<MagicSourceActivation<? extends MagicSource>> sourceActs = new LinkedList<>();
-        for (final MagicActivation<MagicCard> act : getCardDefinition().getCardActivations()) {
+        final Collection<MagicActivation<MagicCard>> activations = isInHand() ? 
+            getCardDefinition().getCardActivations() :
+            getCardDefinition().getGraveyardActivations();
+        for (final MagicActivation<MagicCard> act : activations) {
             sourceActs.add(MagicSourceActivation.create(this, act));
         }
         return sourceActs;

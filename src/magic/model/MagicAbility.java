@@ -20,6 +20,7 @@ import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCardActivation;
 import magic.model.event.MagicCyclingActivation;
 import magic.model.event.MagicRetraceActivation;
+import magic.model.event.MagicFlashbackActivation;
 import magic.model.event.MagicReinforceActivation;
 import magic.model.event.MagicNinjutsuActivation;
 import magic.model.event.MagicEvokeActivation;
@@ -928,6 +929,13 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             card.add(new MagicRetraceActivation(cardDef));
+        }
+    },
+    Flashback("flashback " + ARG.COST,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            card.add(new MagicFlashbackActivation(cardDef, manaCost));
         }
     },
     None("",0);
