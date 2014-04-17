@@ -39,7 +39,7 @@ public class MagicTransmuteActivation extends MagicCardActivation {
     
     public MagicTransmuteActivation(final MagicManaCost aCost) {
         super(
-            new MagicCondition[]{MagicCondition.SORCERY_CONDITION, MagicCondition.HAND_CONDITION},
+            new MagicCondition[]{MagicCondition.SORCERY_CONDITION},
             new MagicActivationHints(MagicTiming.Main,true),
             "Transmute"
         );
