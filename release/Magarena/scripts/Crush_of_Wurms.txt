@@ -1,0 +1,10 @@
+name=Crush of Wurms
+url=http://www.magiccards.info/query?q=%21crush%20of%20wurms
+image=http://mtgimage.com/card/crush%20of%20wurms.jpg
+value=4.234
+rarity=R
+type=Sorcery
+cost={6}{G}{G}{G}
+effect=Put three 6/6 green Wurm creature tokens onto the battlefield.
+ability=Flashback {9}{G}{G}{G}
+timing=main

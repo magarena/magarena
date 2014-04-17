@@ -1,0 +1,10 @@
+name=Elephant Ambush
+url=http://www.magiccards.info/query?q=%21elephant%20ambush
+image=http://mtgimage.com/card/elephant%20ambush.jpg
+value=3.346
+rarity=C
+type=Instant
+cost={2}{G}{G}
+effect=Put a 3/3 green Elephant creature token onto the battlefield.
+ability=Flashback {6}{G}{G}
+timing=pumpFlash

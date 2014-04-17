@@ -1,0 +1,10 @@
+name=Purify the Grave
+url=http://www.magiccards.info/query?q=%21purify%20the%20grave
+image=http://mtgimage.com/card/purify%20the%20grave.jpg
+value=3.394
+rarity=U
+type=Instant
+cost={W}
+effect=Exile target card from a graveyard.
+ability=Flashback {W}
+timing=removal

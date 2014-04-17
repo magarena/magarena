@@ -32,6 +32,9 @@
       <get src="http://repo1.maven.org/maven2/com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar" 
            dest="${lib}/miglayout-swing-4.2.jar" 
            skipexisting="true" />
+      <get src="http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar" 
+         dest="${lib}/commons-io-2.4.jar" 
+         skipexisting="true" />  	  	
   </target>
 
   <!-- init - Create temporary directory to build the program -->
@@ -65,7 +68,7 @@
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
         <attribute name="SplashScreen-Image" value="magic/data/textures/logo.jpg" />
-        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar" />
+        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar lib/commons-io-2.4.jar" />
       </manifest>
     </jar>
   </target>

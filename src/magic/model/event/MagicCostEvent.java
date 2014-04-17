@@ -1,5 +1,7 @@
 package magic.model.event;
 
+
+import magic.data.EnglishToInt;
 import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicCounterType;
@@ -216,7 +218,7 @@ public enum MagicCostEvent {
         }
         public MagicEvent toEvent(final String cost, final MagicSource source) {
             final String[] costText = cost.replace("Remove ","").replace("\\scounter\\s|\\scounters\\s","").replace("from SN","").split(" ");
-            final int amount = englishToInt(costText[0]);
+            final int amount = EnglishToInt.convert(costText[0]);
             final String counterType = costText[1];
             return new MagicRemoveCounterEvent((MagicPermanent)source,MagicCounterType.getCounterRaw(counterType),amount);
         }
@@ -243,23 +245,6 @@ public enum MagicCostEvent {
     public abstract boolean accept(final String cost);
     
     public abstract MagicEvent toEvent(final String cost, final MagicSource source);
-    
-    public static int englishToInt(String num) {
-        switch (num) {
-            case "a": return 1;
-            case "an": return 1;
-            case "two": return 2;
-            case "three" : return 3;
-            case "four" : return 4;
-            case "five" : return 5;
-            case "six" : return 6;
-            case "seven" : return 7;
-            case "eight" : return 8;
-            case "nine" : return 9;
-            case "ten" : return 10;
-            default: throw new RuntimeException("Unknown count: " + num);
-        }
-    }
     
     public static final MagicCostEvent build(final String cost) {
         for (final MagicCostEvent rule : values()) {

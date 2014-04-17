@@ -1,0 +1,10 @@
+name=Bash to Bits
+url=http://www.magiccards.info/query?q=%21bash%20to%20bits
+image=http://mtgimage.com/card/bash%20to%20bits.jpg
+value=1.513
+rarity=U
+type=Instant
+cost={3}{R}
+effect=Destroy target artifact.
+ability=Flashback {4}{R}{R}
+timing=removal

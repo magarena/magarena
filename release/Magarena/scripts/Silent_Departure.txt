@@ -1,0 +1,10 @@
+name=Silent Departure
+url=http://www.magiccards.info/query?q=%21silent%20departure
+image=http://mtgimage.com/card/silent%20departure.jpg
+value=3.436
+rarity=C
+type=Sorcery
+cost={U}
+effect=Return target creature to its owner's hand.
+ability=Flashback {4}{U}
+timing=main
