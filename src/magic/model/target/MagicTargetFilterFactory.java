@@ -1095,6 +1095,8 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicCardFilterImpl INSTANT_OR_FLASH_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardOr(MagicTargetType.Library, MagicType.Instant, MagicAbility.Flash);
+    
     public static final MagicCardFilterImpl LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasSubType(MagicSubType.Plains) ||
@@ -1241,6 +1243,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment card from your library", cardOr(MagicTargetType.Library, MagicType.Artifact, MagicType.Enchantment));
         single.put("instant or sorcery card from your library", cardOr(MagicTargetType.Library, MagicType.Instant, MagicType.Sorcery));
         single.put("Treefolk or Forest card from your library", cardOr(MagicTargetType.Library, MagicSubType.Treefolk, MagicSubType.Forest));
+        single.put("instant card or a card with flash from your library", INSTANT_OR_FLASH_CARD_FROM_LIBRARY);
     
         
         // <color|type|subtype> permanent card from your library
@@ -1749,6 +1752,16 @@ public class MagicTargetFilterFactory {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
                 return target.hasType(type1) || target.hasType(type2);
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return targetType == aTargetType;
+            }
+        };
+    }
+    public static final MagicCardFilterImpl cardOr(final MagicTargetType aTargetType, final MagicType type, final MagicAbility ability) {
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return target.hasType(type) || target.hasAbility(ability);
             }
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == aTargetType;
