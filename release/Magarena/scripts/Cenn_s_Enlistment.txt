@@ -1,0 +1,10 @@
+name=Cenn's Enlistment
+url=http://magiccards.info/query?q=%21cenn's%20enlistment
+image=http://mtgimage.com/card/cenn's%20enlistment.jpg
+value=3.062
+rarity=C
+type=Sorcery
+cost={3}{W}
+effect=Put two 1/1 white Kithkin Soldier creature tokens onto the battlefield.
+ability=Retrace
+timing=token
