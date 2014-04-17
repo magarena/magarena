@@ -1658,16 +1658,17 @@ public enum MagicRuleEventAction {
             }
         ),
     Scry(
-        "(pn )?scry 1\\.",
+        "(pn )?scry (?<amount>[0-9]+)\\.",
         MagicTiming.Draw,
         "Scry"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicScryEvent(event.getSource(),event.getPlayer()));
+                    game.addEvent(new MagicScryXEvent(event.getSource(),event.getPlayer(),amount));
                 }
             };
         }
