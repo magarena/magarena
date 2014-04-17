@@ -21,6 +21,10 @@ public class EnglishToInt {
             case "eleven" : return 11;
             case "twelve" : return 12;
             case "thirteen" : return 13;
+            case "fourteen" : return 14;
+            case "fifteen" : return 15;
+            case "twenty" : return 20;
+            case "ninety-nine": return 99;
             default: throw new RuntimeException("Unknown count: " + num);
         }
     }
