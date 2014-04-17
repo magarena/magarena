@@ -18,8 +18,14 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class MagicCardActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
-
-    private static final MagicCondition[] CARD_CONDITION = new MagicCondition[]{MagicCondition.CARD_CONDITION};
+    
+    private static final MagicCondition IN_HAND_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicCard card = (MagicCard) source;
+            return card.isInHand();
+        }
+    };
+    private static final MagicCondition[] CARD_CONDITION = new MagicCondition[]{MagicCondition.CARD_CONDITION, IN_HAND_CONDITION};
     final boolean usesStack;
 
     public MagicCardActivation(final MagicCardDefinition cdef) {
@@ -66,7 +72,8 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
             if (card.getCardDefinition().isLand()) {
                 game.incLandPlayed();
             }
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+            if (card.isInHand()) { game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand)); }
+            if (card.isInGraveyard()) { game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard)); }
             if (usesStack) {
                 final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                     card,

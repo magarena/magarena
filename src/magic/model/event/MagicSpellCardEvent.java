@@ -4,9 +4,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.choice.MagicChoice;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTargetPicker;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 
