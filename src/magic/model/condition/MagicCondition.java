@@ -42,6 +42,20 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition HAND_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicCard card = (MagicCard)source;
+            return card.isInHand();
+        }
+    };
+
+    MagicCondition GRAVEYARD_CONDITION = new MagicCondition() {
+    public boolean accept(final MagicSource source) {
+            final MagicCard card = (MagicCard)source;
+            return card.isInGraveyard();
+        }
+    };
+    
     MagicCondition NINJUTSU_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
