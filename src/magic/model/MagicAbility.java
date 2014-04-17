@@ -1,5 +1,6 @@
 package magic.model;
 
+import magic.data.EnglishToInt;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -545,7 +546,7 @@ public enum MagicAbility {
             if (amount.equalsIgnoreCase("X")) {
                 card.add(MagicWhenComesIntoPlayTrigger.XCounters(counterType));
             } else {
-                final int n = englishToInt(amount);
+                final int n = EnglishToInt.convert(amount);
                 card.add(new MagicComesIntoPlayWithCounterTrigger(counterType,n));
             }
         }
@@ -953,7 +954,7 @@ public enum MagicAbility {
         
         private static final String AMOUNT = "(?<amount>.+)";
         private static int amount(final Matcher m) {
-            return englishToInt(m.group("amount"));
+            return EnglishToInt.convert(m.group("amount"));
         }
         
         private static final String COST = "(?<cost>.+)";
@@ -1103,25 +1104,5 @@ public enum MagicAbility {
         return player.getIndex() == 0 ?
             CannotBeTheTarget0 :
             CannotBeTheTarget1;
-    }
-    
-    public static int englishToInt(String num) {
-        if (num == null) {
-            return 1;
-        }
-        switch (num) {
-            case "a": return 1;
-            case "an": return 1;
-            case "two": return 2;
-            case "three" : return 3;
-            case "four" : return 4;
-            case "five" : return 5;
-            case "six" : return 6;
-            case "seven" : return 7;
-            case "eight" : return 8;
-            case "nine" : return 9;
-            case "ten" : return 10;
-            default: throw new RuntimeException("Unknown count: " + num);
-        }
     }
 }

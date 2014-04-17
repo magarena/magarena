@@ -1,5 +1,6 @@
 package magic.model.event;
 
+import magic.data.EnglishToInt;
 import magic.model.MagicGame;
 import magic.model.MagicSource;
 import magic.model.MagicLocationType;
@@ -403,7 +404,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -420,7 +421,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -440,8 +441,8 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = MagicRuleEventAction.englishToInt(matcher.group("amount1"));
-            final int amount2 = MagicRuleEventAction.englishToInt(matcher.group("amount2"));
+            final int amount1 = EnglishToInt.convert(matcher.group("amount1"));
+            final int amount2 = EnglishToInt.convert(matcher.group("amount2"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -458,8 +459,8 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = MagicRuleEventAction.englishToInt(matcher.group("amount1"));
-            final int amount2 = MagicRuleEventAction.englishToInt(matcher.group("amount2"));
+            final int amount1 = EnglishToInt.convert(matcher.group("amount1"));
+            final int amount2 = EnglishToInt.convert(matcher.group("amount2"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -481,7 +482,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = MagicRuleEventAction.englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             final boolean isRandom = matcher.group("random") != null;
             return new MagicEventAction() {
                 @Override
@@ -1070,7 +1071,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             return new MagicEventAction() {
                 @Override
@@ -1086,7 +1087,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             return (amount>1) ? "+Counters" : "+Counter";
         }
     },
@@ -1096,7 +1097,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.singlePermanent(matcher.group("group"));
             return new MagicEventAction() {
@@ -1128,7 +1129,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             return new MagicEventAction() {
                 @Override
@@ -1144,7 +1145,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             if (amount>1) {
                 final String name = "+Counters";
                 return name;
@@ -1159,7 +1160,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             return new MagicEventAction() {
                 @Override
@@ -1211,7 +1212,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             if (amount>1) {
                 final String name = "+Counters";
                 return name;
@@ -1564,7 +1565,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = TokenCardDefinitions.get(tokenName);
             return new MagicEventAction() {
@@ -1586,7 +1587,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1602,7 +1603,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = englishToInt(matcher.group("amount"));
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1907,26 +1908,6 @@ public enum MagicRuleEventAction {
             throw new RuntimeException("unknown effect: \"" + rule + "\"");
         }
         return matcher;
-    }
-    
-    public static int englishToInt(String num) {
-        if (num == null) {
-            return 1;
-        }
-        switch (num) {
-            case "a": return 1;
-            case "an": return 1;
-            case "two": return 2;
-            case "three" : return 3;
-            case "four" : return 4;
-            case "five" : return 5;
-            case "six" : return 6;
-            case "seven" : return 7;
-            case "eight" : return 8;
-            case "nine" : return 9;
-            case "ten" : return 10;
-            default: throw new RuntimeException("Unknown count: " + num);
-        }
     }
 
     static final Pattern MAY_PAY = Pattern.compile("^(Y|y)ou may pay (?<cost>[^\\.]+)\\. If you do, .+");
