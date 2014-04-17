@@ -16,9 +16,11 @@ public class MagicTypeCyclingActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
     final String type;
+    static final MagicCondition[] HAND_CONDITION = new MagicCondition[] { MagicCondition.HAND_CONDITION };
 
     public MagicTypeCyclingActivation(final MagicManaCost aCost, final String aType) {
         super(
+            HAND_CONDITION,
             new MagicActivationHints(MagicTiming.Main,true),
             aType
         );
