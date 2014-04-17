@@ -19,6 +19,7 @@ import magic.model.event.MagicVividManaActivation;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCardActivation;
 import magic.model.event.MagicCyclingActivation;
+import magic.model.event.MagicRetraceActivation;
 import magic.model.event.MagicReinforceActivation;
 import magic.model.event.MagicNinjutsuActivation;
 import magic.model.event.MagicEvokeActivation;
@@ -921,6 +922,12 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Loyalty,n));
+        }
+    },
+    Retrace("retrace",10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(new MagicRetraceActivation(cardDef));
         }
     },
     None("",0);
