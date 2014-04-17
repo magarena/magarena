@@ -1,0 +1,10 @@
+name=Monstrify
+url=http://magiccards.info/query?q=%21monstrify
+image=http://mtgimage.com/card/monstrify.jpg
+value=2.138
+rarity=C
+type=Sorcery
+cost={3}{G}
+ability=Retrace
+effect=Target creature gets +4/+4 until end of turn.
+timing=pump

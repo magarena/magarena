@@ -1,0 +1,10 @@
+name=Flame Jab
+url=http://magiccards.info/query?q=%21flame%20jab
+image=http://mtgimage.com/card/flame%20jab.jpg
+value=3.262
+rarity=C
+type=Sorcery
+cost={R}
+ability=Retrace
+effect=SN deals 1 damage to target creature or player.
+timing=removal
