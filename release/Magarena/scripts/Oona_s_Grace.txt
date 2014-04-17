@@ -6,5 +6,5 @@ rarity=C
 type=Instant
 cost={2}{U}
 effect=Target player draws a card.
+ability=Retrace
 timing=draw
-requires_groovy_code
