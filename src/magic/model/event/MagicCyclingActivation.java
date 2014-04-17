@@ -15,9 +15,11 @@ import java.util.Arrays;
 public class MagicCyclingActivation extends MagicCardActivation {
 
     final MagicManaCost cost;
+    static final MagicCondition[] HAND_CONDITION = new MagicCondition[] { MagicCondition.HAND_CONDITION };
 
     public MagicCyclingActivation(final MagicManaCost aCost) {
         super(
+            HAND_CONDITION,
             new MagicActivationHints(MagicTiming.Main,true),
             "Cycle"
         );
