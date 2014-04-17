@@ -1,0 +1,10 @@
+name=Fervent Denial
+url=http://www.magiccards.info/query?q=%21fervent%20denial
+image=http://mtgimage.com/card/fervent%20denial.jpg
+value=1.487
+rarity=U
+type=Instant
+cost={3}{U}{U}
+effect=Counter target spell.
+ability=Flashback {5}{U}{U}
+timing=counter

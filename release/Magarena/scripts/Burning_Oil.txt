@@ -1,0 +1,10 @@
+name=Burning Oil
+url=http://www.magiccards.info/query?q=%21burning%20oil
+image=http://mtgimage.com/card/burning%20oil.jpg
+value=3.106
+rarity=U
+type=Instant
+cost={1}{R}
+effect=SN deals 3 damage to target attacking or blocking creature.
+ability=Flashback {3}{W}
+timing=removal

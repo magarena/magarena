@@ -1,0 +1,10 @@
+name=Ray of Revelation
+url=http://www.magiccards.info/query?q=%21ray%20of%20revelation
+image=http://mtgimage.com/card/ray%20of%20revelation.jpg
+value=3.894
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Destroy target enchantment.
+ability=Flashback {G}
+timing=removal

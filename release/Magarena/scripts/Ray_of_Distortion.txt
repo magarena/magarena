@@ -1,0 +1,10 @@
+name=Ray of Distortion
+url=http://www.magiccards.info/query?q=%21ray%20of%20distortion
+image=http://mtgimage.com/card/ray%20of%20distortion.jpg
+value=2.017
+rarity=C
+type=Instant
+cost={3}{W}
+effect=Destroy target artifact or enchantment.
+ability=Flashback {4}{W}{W}
+timing=removal

@@ -1,0 +1,10 @@
+name=Sylvan Might
+url=http://www.magiccards.info/query?q=%21sylvan%20might
+image=http://mtgimage.com/card/sylvan%20might.jpg
+value=3.532
+rarity=U
+type=Instant
+cost={1}{G}
+effect=Target creature gets +2/+2 and gains trample until end of turn.
+ability=Flashback {2}{G}{G}
+timing=pump

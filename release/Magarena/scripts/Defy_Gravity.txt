@@ -1,0 +1,10 @@
+name=Defy Gravity
+url=http://www.magiccards.info/query?q=%21defy%20gravity
+image=http://mtgimage.com/card/defy%20gravity.jpg
+value=2.333
+rarity=C
+type=Instant
+cost={U}
+effect=Target creature gains flying until end of turn.
+ability=Flashback {U}
+timing=pumpFlash

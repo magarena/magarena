@@ -1,0 +1,10 @@
+name=Dematerialize
+url=http://www.magiccards.info/query?q=%21dematerialize
+image=http://mtgimage.com/card/dematerialize.jpg
+value=1.172
+rarity=C
+type=Sorcery
+cost={3}{U}
+effect=Return target permanent to its owner's hand.
+ability=Flashback {5}{U}{U}
+timing=main
