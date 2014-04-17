@@ -1,6 +1,6 @@
 [
     new MagicCardActivation(
-        [MagicCondition.TWO_MOUNTAINS_CONDITION, MagicCondition.CARD_CONDITION],
+        [MagicCondition.TWO_MOUNTAINS_CONDITION, MagicCondition.CARD_CONDITION, MagicCondition.HAND_CONDITION],
         new MagicActivationHints(MagicTiming.Removal,true),
         "Alt"
     ) {

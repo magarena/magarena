@@ -21,7 +21,7 @@ def TWO_OTHER_GREEN_CARDS_IN_HAND = new MagicCondition() {
     
 [
     new MagicCardActivation(
-        [TWO_OTHER_GREEN_CARDS_IN_HAND, MagicCondition.CARD_CONDITION],
+        [TWO_OTHER_GREEN_CARDS_IN_HAND, MagicCondition.CARD_CONDITION, MagicCondition.HAND_CONDITION],
         new MagicActivationHints(MagicTiming.Main),
         "Alt"
     ) {
