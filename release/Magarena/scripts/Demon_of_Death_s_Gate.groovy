@@ -1,6 +1,6 @@
 [
     new MagicCardActivation(
-        [MagicCondition.THREE_BLACK_CREATURES_CONDITION, MagicCondition.CARD_CONDITION],
+        [MagicCondition.THREE_BLACK_CREATURES_CONDITION, MagicCondition.CARD_CONDITION, MagicCondition.HAND_CONDITION],
         new MagicActivationHints(MagicTiming.Main,true),
         "Alt"
     ) {

@@ -1,6 +1,6 @@
 [
     new MagicCardActivation(
-        [MagicCondition.CARD_CONDITION],
+        [MagicCondition.CARD_CONDITION, MagicCondition.HAND_CONDITION],
         new MagicActivationHints(MagicTiming.Counter,true),
         "Alt"
     ) {
