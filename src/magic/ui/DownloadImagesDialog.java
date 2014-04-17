@@ -77,6 +77,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, dirLabel,
                 GAP,
                 SpringLayout.WEST, contentPane);
+        dirLabel.setVisible(false);
 
         dirButton = new JButton("Select Magarena data folder");
         dirButton.addActionListener(this);
@@ -91,6 +92,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, dirButton,
                 GAP,
                 SpringLayout.WEST, contentPane);
+        dirButton.setVisible(false);
 
         final JLabel dirStatus = new JLabel("Selected:");
         add(dirStatus);
@@ -102,7 +104,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, dirStatus,
                 GAP,
                 SpringLayout.WEST, contentPane);
-
+        dirStatus.setVisible(false);
 
         dirChosen = new JLabel("None");
         add(dirChosen);
@@ -114,6 +116,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 SpringLayout.WEST, dirChosen,
                 RGAP,
                 SpringLayout.EAST, dirStatus);
+        dirChosen.setVisible(false);
 
         final JLabel proxyLabel = new JLabel("Proxy configuration");
         add(proxyLabel);

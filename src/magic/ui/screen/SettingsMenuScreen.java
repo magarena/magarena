@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 
 import magic.data.URLUtils;
 import magic.ui.DownloadImagesDialog;
+import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -34,7 +35,15 @@ public class SettingsMenuScreen extends AbstractScreen {
                 getFrame().openPreferencesDialog();
             }
         });
-        menu.addMenuItem("Download images", new AbstractAction() {
+
+        menu.addMenuItem("Import", new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                new ImportDialog(getFrame());
+            }
+        }, "Migrate data from an existing installation of Magarena.");
+
+        menu.addMenuItem("Download", new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 if (downloadDialog == null || !downloadDialog.isDisplayable()) {
