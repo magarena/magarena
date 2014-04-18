@@ -1,0 +1,12 @@
+name=Kobold Drill Sergeant
+url=http://magiccards.info/query?q=%21kobold%20drill%20sergeant
+image=http://mtgimage.com/card/kobold%20drill%20sergeant.jpg
+value=2.958
+rarity=U
+type=Creature
+subtype=Kobold
+cost={1}{R}
+pt=1/2
+ability=lord Kobold creatures you control get +1/+1;\
+        lord Kobold creatures you control have trample.
+timing=main
