@@ -6,12 +6,6 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
 import magic.model.event.MagicCardActivation;
 
-import org.codehaus.groovy.control.CompilerConfiguration;
-import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
-import org.codehaus.groovy.control.customizers.ImportCustomizer;
-
-import groovy.lang.GroovyShell;
-
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -25,6 +19,12 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+
+import org.codehaus.groovy.control.CompilerConfiguration;
+import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
+import org.codehaus.groovy.control.customizers.ImportCustomizer;
+
+import groovy.lang.GroovyShell;
 
 /**
  * Load card definitions from cards.txt
