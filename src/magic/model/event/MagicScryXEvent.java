@@ -67,7 +67,7 @@ public class MagicScryXEvent extends MagicEvent {
                 }
             });
             final int actualX =  getActualX(event.getPlayer(), event.getRefInt() - processedCards.size());
-            if(actualX > 0) {                                                                          //escape, no sense in calling TopAction if there is no choice to make
+            if(actualX > 1) {                                                                          //escape, no sense in calling TopAction if there is no choice to make
                 game.addFirstEvent(new MagicEvent(                                                     //addFirstEvent, Bottom and TopAction need to be execute in immediate succession, otherwise it breaks     
                     event.getSource(),
                     event.getPlayer(),
