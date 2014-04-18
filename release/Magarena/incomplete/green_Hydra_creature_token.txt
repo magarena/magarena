@@ -1,0 +1,8 @@
+name=green Hydra creature token
+token=Hydra
+image=
+value=2
+type=Creature
+subtype=Hydra
+color=g
+cost={0}
