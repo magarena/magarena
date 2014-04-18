@@ -89,7 +89,7 @@ public class MagicCardChoice extends MagicChoice {
         int actualAmount=Math.min(amount,validCards.size());
         for (;actualAmount>0;actualAmount--) {
             final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
-            controller.focusViewers(0,-1);
+            controller.focusViewers(0);
             controller.disableActionButton(false);
             controller.setValidChoices(validCards,false);
             controller.showMessage(source,message);

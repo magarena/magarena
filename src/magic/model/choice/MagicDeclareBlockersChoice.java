@@ -81,7 +81,7 @@ public class MagicDeclareBlockersChoice extends MagicChoice {
             while (true) {
                 // Choose blocker.
                 final Set<MagicPermanent> candidateBlockers=builder.getCandidateBlockers();
-                controller.focusViewers(-1,1);
+                controller.focusViewers(-1);
                 if (candidateBlockers.isEmpty()) {
                     controller.showMessage(source,CONTINUE_MESSAGE);
                 } else {

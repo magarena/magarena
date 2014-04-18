@@ -304,10 +304,10 @@ public class GameController implements ILogBookListener {
         return sourceCardDefinition;
     }
 
-    public void focusViewers(final int handGraveyard,final int stackCombat) {
+    public void focusViewers(final int handGraveyard) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                gamePanel.focusViewers(handGraveyard,stackCombat);
+                gamePanel.focusViewers(handGraveyard);
             }
         });
     }

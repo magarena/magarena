@@ -233,7 +233,7 @@ public final class GamePanel extends JPanel {
         return logBookViewer;
     }
 
-    public void focusViewers(final int handGraveyard,final int stackCombat) {
+    public void focusViewers(final int handGraveyard) {
         if (isTextView()) {
             handGraveyardViewer.setSelectedTab(handGraveyard);
         } else {

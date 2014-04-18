@@ -142,7 +142,7 @@ public class MagicPlayChoice extends MagicChoice {
             }
         }
 
-        controller.focusViewers(0,0);
+        controller.focusViewers(0);
         if (validChoices.isEmpty()) {
             controller.showMessage(source,CONTINUE_MESSAGE);
         } else {

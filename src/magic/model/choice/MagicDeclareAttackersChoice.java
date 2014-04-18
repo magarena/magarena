@@ -87,7 +87,7 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
             return new Object[]{result};
         }
 
-        controller.focusViewers(-1,1);
+        controller.focusViewers(-1);
         controller.showMessage(source,MESSAGE);
         controller.setValidChoices(validChoices,true);
         controller.enableForwardButton();

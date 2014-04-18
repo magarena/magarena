@@ -538,9 +538,9 @@ public class MagicTargetChoice extends MagicChoice {
         controller.disableActionButton(false);
         controller.showMessage(source,getDescription());
         if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
-            controller.focusViewers(1,-1);
+            controller.focusViewers(1);
         } else if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
-            controller.focusViewers(2,-1);
+            controller.focusViewers(2);
         } 
         final MagicTargetHint usedTargetHint=getTargetHint(GeneralConfig.getInstance().getSmartTarget());
         final Set<Object> validChoices=new HashSet<Object>(game.getLegalTargets(player,source,this,usedTargetHint));
