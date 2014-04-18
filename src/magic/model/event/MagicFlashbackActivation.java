@@ -11,29 +11,29 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.stack.MagicCardOnStack;
 
-import java.util.Arrays;
+import java.util.List;
+import java.util.LinkedList;
 
 public class MagicFlashbackActivation extends MagicGraveyardActivation {
     
-    final MagicManaCost cost;
+    final List<MagicMatchedCostEvent> matchedCostEvents;
     
-    public MagicFlashbackActivation(final MagicCardDefinition cdef, final MagicManaCost aCost) {
+    public MagicFlashbackActivation(final MagicCardDefinition cdef, final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         super(
             MagicCardActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Flashback"
         );
-        cost = aCost;
+        matchedCostEvents = aMatchedCostEvents;
     }
    
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(
-            new MagicPayManaCostEvent(
-                source,
-                cost
-            )
-        );
+        final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+        for (final MagicMatchedCostEvent matched : matchedCostEvents) {
+            costEvents.add(matched.getEvent(source));
+        }
+        return costEvents;
     }
     
     @Override
