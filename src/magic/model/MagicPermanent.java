@@ -7,38 +7,31 @@ import magic.model.action.MagicChangeControlAction;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicGainControlAction;
 import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicSoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
-import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicSourceActivation;
-import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicBestowActivation;
-import magic.model.event.MagicEvent;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicPlayAuraEvent;
+import magic.model.event.MagicSourceActivation;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
+import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetNone;
-import magic.model.target.MagicTargetFilter;
 
 import javax.swing.ImageIcon;
 
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Arrays;
 import java.util.Collection;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.Map;
-import java.util.EnumMap;
 import java.util.Collections;
+import java.util.EnumMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class MagicPermanent extends MagicObjectImpl implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent> {
 

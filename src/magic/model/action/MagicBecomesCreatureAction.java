@@ -2,7 +2,6 @@ package magic.model.action;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
 import magic.model.mstatic.MagicStatic;
 
 public class MagicBecomesCreatureAction extends MagicAction {

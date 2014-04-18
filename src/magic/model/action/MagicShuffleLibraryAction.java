@@ -1,8 +1,8 @@
 package magic.model.action;
 
+import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicCardList;
 
 public class MagicShuffleLibraryAction extends MagicAction {
 

@@ -2,19 +2,18 @@ package magic.model;
 
 import magic.data.HighQualityCardImagesProvider;
 import magic.model.event.MagicActivation;
-import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceActivation;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
 import magic.ui.canvas.cards.ICardCanvas;
 
 import java.awt.image.BufferedImage;
-import java.util.Set;
-import java.util.List;
-import java.util.LinkedList;
-import java.util.TreeSet;
 import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 
 public class MagicCard
     extends MagicObjectImpl

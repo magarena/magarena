@@ -2,17 +2,12 @@ package magic.model.action;
 
 import magic.model.MagicAbility;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
-import magic.model.action.MagicAddStaticAction;
-import magic.model.action.MagicAddTriggerAction;
-import magic.model.action.MagicRemoveStaticAction;
-import magic.model.action.MagicRemoveTriggerAction;
-import magic.model.trigger.MagicAtUpkeepTrigger;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 import java.util.Set;
 

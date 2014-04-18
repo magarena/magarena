@@ -6,6 +6,10 @@ import magic.model.action.MagicAction;
 import magic.model.stack.MagicItemOnStack;
 import magic.ui.utility.GraphicsUtilities;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
+
 import java.awt.Component;
 import java.awt.Desktop;
 import java.io.File;
@@ -16,10 +20,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
 
 public class MagicGameReport implements Thread.UncaughtExceptionHandler {
 

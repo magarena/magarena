@@ -3,7 +3,6 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerState;
 
 public class MagicCleanupPlayerAction extends MagicAction {
 

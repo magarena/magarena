@@ -1,9 +1,5 @@
 package magic.model.action;
 
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Arrays;
-
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
@@ -12,6 +8,9 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.stack.MagicCardOnStack;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class MagicReturnLinkedExileAction extends MagicAction {
 

@@ -1,15 +1,15 @@
 package magic.model.action;
 
 import magic.model.MagicAbility;
+import magic.model.MagicAbilityList;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicAbilityList;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
 
-import java.util.Set;
 import java.util.EnumSet;
 import java.util.List;
+import java.util.Set;
 
 // Set an ability until end of turn.
 public class MagicGainAbilityAction extends MagicAction {

@@ -1,8 +1,8 @@
 package magic.model;
 
-import java.util.ArrayList;
-
 import magic.data.DeckUtils;
+
+import java.util.ArrayList;
 
 public class MagicDeck extends ArrayList<MagicCardDefinition> {
 

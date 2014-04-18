@@ -1,12 +1,10 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetNone;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetNone;
 
 public class MagicChangeTargetAction extends MagicAction {
 

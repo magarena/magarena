@@ -1,19 +1,13 @@
 package magic.model;
 
 import java.util.Set;
-import java.util.EnumSet;
 import java.util.List;
 import java.util.LinkedList;
 
 import magic.model.trigger.MagicTrigger;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicCardActivation;
 import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicEventSource;
-import magic.model.event.MagicCardEvent;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicCDA;
 
 public class MagicAbilityList implements MagicAbilityStore {
     private List<MagicAbility> abilities = 

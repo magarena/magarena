@@ -1,12 +1,9 @@
 package magic.model.action;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.model.MagicAbility;
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicType;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 

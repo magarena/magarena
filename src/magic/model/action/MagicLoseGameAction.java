@@ -1,7 +1,5 @@
 package magic.model.action;
 
-import java.lang.ref.Reference;
-
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;

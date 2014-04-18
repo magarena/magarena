@@ -1,12 +1,11 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPlayer;
 import magic.model.event.MagicActivationPriority;
 import magic.model.phase.MagicPhase;
 import magic.model.phase.MagicStep;
-import magic.model.target.MagicTarget;
 
 public class MagicMarkerAction extends MagicAction {
 
