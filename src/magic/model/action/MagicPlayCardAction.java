@@ -1,9 +1,5 @@
 package magic.model.action;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Collections;
-
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCounterType;
@@ -12,8 +8,12 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class MagicPlayCardAction extends MagicPutIntoPlayAction {
 

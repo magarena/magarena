@@ -10,9 +10,9 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.MagicType;
+import magic.model.event.MagicRedirectDamageEvent;
 import magic.model.target.MagicTarget;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.event.MagicRedirectDamageEvent;
 
 public class MagicDealDamageAction extends MagicAction {
 

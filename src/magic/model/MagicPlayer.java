@@ -1,19 +1,18 @@
 package magic.model;
 
-import magic.data.CardDefinitions;
+import magic.model.action.MagicLoseGameAction;
 import magic.model.choice.MagicBuilderManaCost;
 import magic.model.event.MagicActivationPriority;
-import magic.model.event.MagicSourceManaActivation;
 import magic.model.event.MagicSourceActivation;
+import magic.model.event.MagicSourceManaActivation;
+import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicPermanentStatic;
+import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
-import magic.model.action.MagicLoseGameAction;
-import magic.model.mstatic.MagicLayer;
-import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicPermanentStatic;
 
-import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;

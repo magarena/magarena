@@ -1,9 +1,8 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicObject;
 import magic.model.MagicLocationType;
+import magic.model.MagicObject;
 import magic.model.stack.MagicCardOnStack;
 
 public class MagicEnterAsCopyAction extends MagicAction {

@@ -1,6 +1,7 @@
 package magic.model;
 
 import magic.MagicMain;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;

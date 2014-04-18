@@ -3,9 +3,9 @@ package magic.model.action;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
+import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicObject;
 
 public class MagicPlayTokenAction extends MagicPutIntoPlayAction {
 

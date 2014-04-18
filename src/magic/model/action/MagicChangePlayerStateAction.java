@@ -1,14 +1,12 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.event.MagicEvent;
-import magic.model.phase.MagicPhaseType;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 
 public class MagicChangePlayerStateAction extends MagicAction {

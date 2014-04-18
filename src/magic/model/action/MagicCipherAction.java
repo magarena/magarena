@@ -1,10 +1,10 @@
 package magic.model.action;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
-import magic.model.stack.MagicCardOnStack;
+import magic.model.MagicPlayer;
 import magic.model.event.MagicCipherEvent;
+import magic.model.stack.MagicCardOnStack;
 
 public class MagicCipherAction extends MagicAction {
 

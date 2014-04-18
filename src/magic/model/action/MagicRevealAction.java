@@ -2,12 +2,12 @@ package magic.model.action;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.event.MagicEvent;
 import magic.model.choice.MagicFromCardListChoice;
+import magic.model.event.MagicEvent;
 
-import java.util.List;
-import java.util.Collection;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class MagicRevealAction extends MagicAction {
     
