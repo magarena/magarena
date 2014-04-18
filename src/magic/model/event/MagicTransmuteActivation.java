@@ -50,11 +50,7 @@ public class MagicTransmuteActivation extends MagicCardActivation {
     public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
             new MagicPayManaCostEvent(source, cost),
-            new MagicDiscardCardEvent(
-                source,
-                source.getController(),
-                source
-            )
+            new MagicDiscardSelfEvent(source)
         );
     }
     

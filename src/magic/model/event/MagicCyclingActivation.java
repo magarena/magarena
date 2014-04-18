@@ -30,11 +30,7 @@ public class MagicCyclingActivation extends MagicCardActivation {
                 source,
                 cost
             ),
-            new MagicDiscardCardEvent(
-                source,
-                source.getController(),
-                source
-            )
+            new MagicDiscardSelfEvent(source)
         );
     }
 
