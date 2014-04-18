@@ -6,14 +6,10 @@ import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.prefs.Preferences;
 
 public class GeneralConfig {
 
     private static final GeneralConfig INSTANCE=new GeneralConfig();
-
-    // can be used to store settings independently of specific Magarena installations.
-    private static final Preferences userSysPrefs = Preferences.systemRoot().node("magarena");
 
     private static final String CONFIG_FILENAME="general.cfg";
     private static final String LEFT="left";
@@ -108,10 +104,6 @@ public class GeneralConfig {
     private boolean isMissingFiles = false;
 
     private GeneralConfig() { }
-
-    public Preferences getUserSysPrefs() {
-        return userSysPrefs;
-    }
 
     public boolean isMissingFiles() {
         return isMissingFiles;

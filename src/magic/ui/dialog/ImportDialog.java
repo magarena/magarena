@@ -43,8 +43,6 @@ import java.util.concurrent.ExecutionException;
 @SuppressWarnings("serial")
 public class ImportDialog extends JDialog implements PropertyChangeListener {
 
-    private static final String LAST_IMPORT_PATH_PREF = "lastImportPath";
-
     // ui components
     private final MigLayout migLayout = new MigLayout();
     private final JTextArea taskOutput = new JTextArea(5, 20);
@@ -153,12 +151,7 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
     }
 
     private static Path getDefaultImportDirectory() {
-        final String saved = GeneralConfig.getInstance().getUserSysPrefs().get(LAST_IMPORT_PATH_PREF, "");
-        if (saved == "") {
-            return Paths.get(MagicMain.getGamePath()).getParent().getParent();
-        } else {
-            return Paths.get(saved).getParent();
-        }
+        return Paths.get(MagicMain.getGamePath()).getParent().getParent();
     }
 
     private class ImportCardDataWorker extends SwingWorker<Void, Void> {
@@ -182,7 +175,6 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            saveDefaultImportDirectory(dataPath.getParent());
             return null;
         }
 
@@ -198,10 +190,6 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             setProgressNote("");
             setProgress(0);
             taskOutput.append("\nImport complete.");
-        }
-
-        private void saveDefaultImportDirectory(final Path folder) {
-            GeneralConfig.getInstance().getUserSysPrefs().put(LAST_IMPORT_PATH_PREF, folder.toString());
         }
 
         private void importAvatars() throws IOException {
