@@ -15,24 +15,21 @@ import java.util.Arrays;
 
 public class MagicFlashbackActivation extends MagicGraveyardActivation {
     
-    final MagicManaCost cost;
+    final MagicMatchedCostEvent matchedCost;
     
-    public MagicFlashbackActivation(final MagicCardDefinition cdef, final MagicManaCost aCost) {
+    public MagicFlashbackActivation(final MagicCardDefinition cdef, final MagicMatchedCostEvent aMatchedCost) {
         super(
             MagicCardActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Flashback"
         );
-        cost = aCost;
+        matchedCost = aMatchedCost;
     }
    
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
-            new MagicPayManaCostEvent(
-                source,
-                cost
-            )
+            matchedCost.getEvent(source)
         );
     }
     
