@@ -7,9 +7,9 @@ import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicSacrificeTargetPicker;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
+import magic.model.target.MagicSacrificeTargetPicker;
 
 public class MagicSacrificePermanentEvent extends MagicEvent {
 

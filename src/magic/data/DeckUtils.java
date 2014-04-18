@@ -4,8 +4,8 @@ import magic.MagicMain;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
-import magic.model.MagicPlayerDefinition;
 import magic.model.MagicDeckProfile;
+import magic.model.MagicPlayerDefinition;
 import magic.model.MagicRandom;
 
 import javax.swing.JOptionPane;

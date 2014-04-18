@@ -3,6 +3,7 @@ package magic.model;
 import magic.data.IconImages;
 
 import javax.swing.ImageIcon;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

@@ -1,12 +1,9 @@
 package magic.model.condition;
 
 import magic.model.MagicAbility;
-import magic.model.MagicColor;
 import magic.model.MagicCard;
-import magic.model.MagicCardList;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicSource;
@@ -14,7 +11,6 @@ import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
 public interface MagicCondition {

@@ -1,9 +1,9 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
-import magic.model.MagicSource;
-import magic.model.MagicPermanent;
 import magic.model.MagicCounterType;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;

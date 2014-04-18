@@ -12,14 +12,15 @@ import magic.model.event.MagicManaActivation;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.ImageIcon;
+
 import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.image.ImageObserver;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.HashSet;
-import java.util.ArrayList;
 
 public class ImageDrawingUtils {
     public static void drawCostInfo(

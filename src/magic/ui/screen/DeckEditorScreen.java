@@ -1,17 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.AbstractAction;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
@@ -28,6 +16,18 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.viewer.DeckDescriptionPreview;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.DeckStatusPanel;
+
+import javax.swing.AbstractAction;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.awt.event.ActionEvent;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen

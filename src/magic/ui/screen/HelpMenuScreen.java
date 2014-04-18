@@ -1,14 +1,14 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
 import magic.data.URLUtils;
 import magic.ui.AboutDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
+import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class HelpMenuScreen extends AbstractScreen {

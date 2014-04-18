@@ -1,9 +1,9 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicPayedCost;
 import magic.model.MagicSubType;
 import magic.model.action.MagicTapAction;
 import magic.model.event.MagicEvent;

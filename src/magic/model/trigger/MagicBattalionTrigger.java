@@ -1,10 +1,10 @@
 package magic.model.trigger;
 
-import magic.model.MagicPermanent;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.model.condition.MagicCondition;
 
 public abstract class MagicBattalionTrigger extends MagicWhenAttacksTrigger {
     @Override

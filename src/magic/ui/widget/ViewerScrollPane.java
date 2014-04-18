@@ -6,6 +6,7 @@ import magic.ui.theme.ThemeFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+
 import java.awt.BorderLayout;
 import java.awt.Rectangle;
 

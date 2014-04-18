@@ -24,6 +24,7 @@ import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;

@@ -1,7 +1,7 @@
 package magic.model.trigger;
 
-import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicMoveCardAction;
 
 public abstract class MagicWhenOtherPutIntoGraveyardTrigger extends MagicTrigger<MagicMoveCardAction> {

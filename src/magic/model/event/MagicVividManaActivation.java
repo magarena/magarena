@@ -3,10 +3,9 @@ package magic.model.event;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 public class MagicVividManaActivation extends MagicManaActivation {
 

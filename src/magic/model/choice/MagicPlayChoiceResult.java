@@ -3,7 +3,6 @@ package magic.model.choice;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicSource;
-import magic.model.event.MagicActivation;
 import magic.model.event.MagicSourceActivation;
 
 public class MagicPlayChoiceResult implements MagicMappable<MagicPlayChoiceResult> {

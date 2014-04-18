@@ -1,8 +1,8 @@
 package magic.model.target;
 
 import magic.model.MagicCard;
-import magic.model.MagicPlayer;
 import magic.model.MagicGame;
+import magic.model.MagicPlayer;
 
 public class MagicCMCCardFilter extends MagicCardFilterImpl {
 

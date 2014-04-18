@@ -9,6 +9,7 @@ import magic.ui.widget.TextLabel;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Set;

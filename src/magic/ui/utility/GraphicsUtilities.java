@@ -34,6 +34,8 @@
 
 package magic.ui.utility;
 
+import javax.imageio.ImageIO;
+
 import java.awt.Component;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -46,8 +48,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
-
-import javax.imageio.ImageIO;
 
 /**
  * <p><code>GraphicsUtilities</code> contains a set of tools to perform

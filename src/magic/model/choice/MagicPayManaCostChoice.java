@@ -1,7 +1,6 @@
 package magic.model.choice;
 
 import magic.model.MagicCostManaType;
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;

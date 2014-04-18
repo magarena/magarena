@@ -2,8 +2,8 @@ package magic.ui;
 
 import magic.data.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.model.MagicGame;
 import magic.model.MagicCardList;
+import magic.model.MagicGame;
 import magic.ui.resolution.DefaultResolutionProfile;
 import magic.ui.resolution.ResolutionProfileResult;
 import magic.ui.resolution.ResolutionProfileType;

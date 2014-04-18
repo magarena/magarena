@@ -7,9 +7,9 @@ import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicTapAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicTapTargetPicker;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
+import magic.model.target.MagicTapTargetPicker;
 
 public class MagicTapPermanentEvent extends MagicEvent {
     

@@ -1,19 +1,19 @@
 package magic.ui.screen.widget;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.util.List;
+import magic.data.IconImages;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import magic.data.IconImages;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class ActionBar extends TexturedPanel {

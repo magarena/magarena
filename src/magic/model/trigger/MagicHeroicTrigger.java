@@ -2,10 +2,8 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicRuleEventAction;
 import magic.model.stack.MagicItemOnStack;
 
 public abstract class MagicHeroicTrigger extends MagicWhenTargetedTrigger {

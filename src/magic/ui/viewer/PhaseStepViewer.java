@@ -1,15 +1,16 @@
 package magic.ui.viewer;
 
-import java.awt.Color;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-
-import net.miginfocom.swing.MigLayout;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+
+import java.awt.Color;
 
 @SuppressWarnings("serial")
 public class PhaseStepViewer extends JPanel {

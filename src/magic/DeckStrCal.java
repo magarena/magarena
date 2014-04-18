@@ -7,8 +7,8 @@ import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
-import magic.model.MagicRandom;
 import magic.model.MagicGameReport;
+import magic.model.MagicRandom;
 import magic.ui.GameController;
 
 import java.io.File;

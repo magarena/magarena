@@ -47,7 +47,6 @@
 
 package magic.grammar;
 
-import magic.grammar.Source;
 import java.util.Vector;
 
 

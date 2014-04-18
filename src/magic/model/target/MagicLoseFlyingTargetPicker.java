@@ -5,8 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-import java.util.Set;
-
 public class MagicLoseFlyingTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicLoseFlyingTargetPicker INSTANCE = new MagicLoseFlyingTargetPicker();

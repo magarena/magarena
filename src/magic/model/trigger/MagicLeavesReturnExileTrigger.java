@@ -1,11 +1,11 @@
 package magic.model.trigger;
 
+import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicCardList;
-import magic.model.action.MagicReturnLinkedExileAction;
 import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.MagicReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
 
 public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {

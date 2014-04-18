@@ -1,20 +1,19 @@
 package magic.model.trigger;
 
-import magic.model.MagicGame;
 import magic.model.MagicCard;
-import magic.model.MagicType;
-import magic.model.MagicPermanent;
-import magic.model.MagicPayedCost;
-import magic.model.MagicLocationType;
 import magic.model.MagicCardList;
-import magic.model.MagicCardDefinition;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicEventAction;
-import magic.model.choice.MagicMayChoice;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.MagicGame;
+import magic.model.MagicLocationType;
+import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
+import magic.model.MagicType;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.MagicRemoveCardAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
+import magic.model.stack.MagicCardOnStack;
 
 
 public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {

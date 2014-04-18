@@ -1,9 +1,9 @@
 package magic.model.event;
 
 import magic.data.GeneralConfig;
+import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicAbility;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;

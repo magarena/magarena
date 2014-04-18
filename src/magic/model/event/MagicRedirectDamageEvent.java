@@ -1,10 +1,10 @@
 package magic.model.event;
 
+import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicDamage;
-import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicDealDamageAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 

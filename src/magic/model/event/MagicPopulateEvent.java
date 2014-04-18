@@ -1,8 +1,8 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.choice.MagicTargetChoice;

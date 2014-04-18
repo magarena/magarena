@@ -5,8 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicActivation;
-import magic.model.event.MagicSourceActivation;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceActivation;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.GameController;
 import magic.ui.UndoClickedException;
@@ -18,7 +18,6 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 import java.util.concurrent.Callable;
 
 public class MagicPlayChoice extends MagicChoice {

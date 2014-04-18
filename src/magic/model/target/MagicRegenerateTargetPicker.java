@@ -5,8 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
-import java.util.Set;
-
 public class MagicRegenerateTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicRegenerateTargetPicker INSTANCE = new MagicRegenerateTargetPicker();

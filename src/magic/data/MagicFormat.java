@@ -1,8 +1,5 @@
 package magic.data;
 
-import magic.model.MagicCardDefinition;
-
-import java.util.List;
 import java.util.Set;
 
 public enum MagicFormat {

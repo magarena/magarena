@@ -2,9 +2,8 @@ package magic.model.trigger;
 
 import magic.data.TokenCardDefinitions;
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicAttachAction;
 import magic.model.action.MagicPlayTokenAction;
 import magic.model.event.MagicEvent;

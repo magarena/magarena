@@ -1,6 +1,7 @@
 package magic.data;
 
 import javax.swing.ImageIcon;
+
 import java.awt.image.BufferedImage;
 
 public class IconImages {

@@ -1,20 +1,12 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.AbstractAction;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import magic.data.DuelConfig;
 import magic.data.IconImages;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
+import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicDeckProfile;
 import magic.ui.DuelPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
@@ -26,6 +18,14 @@ import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.screen.widget.SampleHandActionButton;
+
+import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class DuelDecksScreen

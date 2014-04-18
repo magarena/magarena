@@ -1,16 +1,16 @@
 package magic.ui.screen;
 
-import java.awt.Frame;
-import java.awt.event.ActionEvent;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
 import magic.data.URLUtils;
 import magic.ui.DownloadImagesDialog;
 import magic.ui.dialog.ImportDialog;
 import magic.ui.screen.widget.MenuPanel;
 import net.miginfocom.swing.MigLayout;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
+import java.awt.Frame;
+import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class SettingsMenuScreen extends AbstractScreen {

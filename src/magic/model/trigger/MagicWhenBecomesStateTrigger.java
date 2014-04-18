@@ -1,6 +1,5 @@
 package magic.model.trigger;
 
-import magic.model.MagicPermanent;
 import magic.model.action.MagicChangeStateAction;
 
 public abstract class MagicWhenBecomesStateTrigger extends MagicTrigger<MagicChangeStateAction> {

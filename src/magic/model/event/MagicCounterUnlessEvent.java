@@ -1,9 +1,9 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
-import magic.model.MagicLocationType;
 import magic.model.action.MagicCounterItemOnStackAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;

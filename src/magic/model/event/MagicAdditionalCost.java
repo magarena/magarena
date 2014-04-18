@@ -1,8 +1,8 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicSource;
 
 public abstract class MagicAdditionalCost implements MagicChangeCardDefinition, MagicEventSource {
 

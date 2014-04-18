@@ -6,9 +6,8 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
 import magic.model.action.MagicPutItemOnStackAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
-import magic.model.condition.MagicCondition;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPumpTargetPicker;
 

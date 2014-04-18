@@ -6,8 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
-import java.util.Set;
-
 public class MagicNoCombatTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private final boolean noAttacking;

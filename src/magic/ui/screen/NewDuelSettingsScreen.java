@@ -1,14 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.util.List;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
-import net.miginfocom.swing.MigLayout;
 import magic.MagicUtility;
 import magic.data.DeckType;
 import magic.data.DuelConfig;
@@ -17,7 +8,6 @@ import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.MagicFrame;
-import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.DuelSettingsPanel;
@@ -25,6 +15,15 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.player.DuelPlayerDeckPanel;
 import magic.ui.widget.player.DuelPlayerPanel;
 import magic.utility.MagicStyle;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class NewDuelSettingsScreen

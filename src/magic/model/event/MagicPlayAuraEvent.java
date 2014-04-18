@@ -7,8 +7,8 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTargetHint;
+import magic.model.target.MagicTargetPicker;
 
 public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 

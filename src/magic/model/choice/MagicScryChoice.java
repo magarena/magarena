@@ -1,9 +1,7 @@
 package magic.model.choice;
 
-import magic.data.GeneralConfig;
-import magic.model.MagicGame;
-import magic.model.MagicCard;
 import magic.model.MagicCardList;
+import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
@@ -11,9 +9,9 @@ import magic.ui.GameController;
 import magic.ui.UndoClickedException;
 import magic.ui.choice.MayChoicePanel;
 
-import java.util.concurrent.Callable;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Callable;
 
 public class MagicScryChoice extends MagicMayChoice {
     public MagicScryChoice() {

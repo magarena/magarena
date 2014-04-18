@@ -1,23 +1,14 @@
 package magic.model.trigger;
 
-import magic.model.MagicPlayer;
-import magic.model.MagicPermanent;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
-import magic.model.MagicCounterType;
-import magic.model.choice.MagicChoice;
-import magic.model.choice.MagicMayChoice;
-import magic.model.target.MagicTargetPicker;
+import magic.model.MagicPermanent;
+import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicEventAction;
-import magic.model.event.MagicRuleEventAction;
-import magic.model.action.MagicPlayTokenAction;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.action.MagicDrawAction;
-import magic.model.action.MagicChangeCountersAction;
-import magic.data.TokenCardDefinitions;
 
 public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
 

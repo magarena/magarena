@@ -1,8 +1,12 @@
 package magic.ui.screen.widget;
 
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
+import magic.data.IconImages;
+import magic.ui.screen.AbstractScreen;
+import magic.ui.screen.interfaces.IOptionsMenu;
+import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
@@ -10,13 +14,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 
-import net.miginfocom.swing.MigLayout;
-import magic.data.IconImages;
-import magic.ui.screen.AbstractScreen;
-import magic.ui.screen.interfaces.IOptionsMenu;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class StatusBar extends TexturedPanel {

@@ -1,8 +1,8 @@
 package magic.model.target;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 
 import java.util.Collection;
 

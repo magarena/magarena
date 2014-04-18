@@ -1,16 +1,16 @@
 package magic.model.trigger;
 
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicCardDefinition;
-import magic.model.event.MagicEvent;
+import magic.model.MagicPlayer;
 import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicPlayCardAction;
+import magic.model.action.MagicRemoveCardAction;
+import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenPutIntoGraveyardTrigger extends MagicTrigger<MagicMoveCardAction> {
     public MagicWhenPutIntoGraveyardTrigger(final int priority) {

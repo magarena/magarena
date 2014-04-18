@@ -1,18 +1,14 @@
 package magic.model.trigger;
 
-import magic.model.MagicGame;
-import magic.model.MagicCard;
-import magic.model.MagicDamage;
-import magic.model.MagicPermanent;
-import magic.model.MagicPayedCost;
 import magic.model.MagicCardDefinition;
-import magic.model.stack.MagicCardOnStack;
+import magic.model.MagicDamage;
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.action.MagicCastFreeCopyAction;
+import magic.model.action.MagicChangePoisonAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
-import magic.model.action.MagicPutItemOnStackAction;
-import magic.model.action.MagicChangePoisonAction;
-import magic.model.action.MagicCastFreeCopyAction;
 
 public abstract class MagicWhenDamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
     public MagicWhenDamageIsDealtTrigger(final int priority) {

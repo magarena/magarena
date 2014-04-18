@@ -1,7 +1,5 @@
 package magic.ai;
 
-import magic.ai.MagicAI;
-
 import magic.data.LRUCache;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
@@ -14,11 +12,9 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-
-import java.util.concurrent.Executors;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 

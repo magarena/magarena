@@ -1,16 +1,16 @@
 package magic.ui.widget.deck;
 
+import magic.data.DeckUtils;
+
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JComboBox;
+
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JComboBox;
-
-import magic.data.DeckUtils;
 
 @SuppressWarnings("serial")
 public abstract class DeckFilesComboBox extends JComboBox<String> {

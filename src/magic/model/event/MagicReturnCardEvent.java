@@ -2,13 +2,11 @@ package magic.model.event;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicLocationType;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicDiscardCardAction;
-import magic.model.choice.MagicCardChoice;
-import magic.model.choice.MagicCardChoiceResult;
 import magic.model.choice.MagicTargetChoice;
 
 public class MagicReturnCardEvent extends MagicEvent {

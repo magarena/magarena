@@ -1,8 +1,9 @@
 package magic.ui.widget.player;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
+import magic.model.player.HumanPlayer;
+import magic.ui.widget.FontsAndBorders;
+import magic.utility.MagicStyle;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
@@ -11,10 +12,9 @@ import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
 
-import magic.model.player.HumanPlayer;
-import magic.ui.widget.FontsAndBorders;
-import magic.utility.MagicStyle;
-import net.miginfocom.swing.MigLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
 
 @SuppressWarnings("serial")
 public class HumanPlayerJList

@@ -1,11 +1,11 @@
 package magic.model.event;
 
+import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
-import magic.model.MagicAbility;
 import magic.model.MagicPlayerState;
 import magic.model.condition.MagicCondition;
 

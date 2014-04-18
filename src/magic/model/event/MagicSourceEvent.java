@@ -1,8 +1,9 @@
 package magic.model.event;
 
-import java.util.regex.Matcher;
-import magic.model.condition.MagicCondition;
 import magic.model.MagicSource;
+import magic.model.condition.MagicCondition;
+
+import java.util.regex.Matcher;
 
 public abstract class MagicSourceEvent {
     private final MagicRuleEventAction rule;

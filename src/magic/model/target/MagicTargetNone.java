@@ -1,18 +1,16 @@
 package magic.model.target;
 
+import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
-import magic.model.MagicType;
-import magic.model.MagicSubType;
+import magic.model.MagicMappable;
+import magic.model.MagicObjectImpl;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicAbility;
-import magic.model.MagicColor;
-import magic.model.MagicMappable;
-import magic.model.MagicObject;
-import magic.model.MagicObjectImpl;
-import magic.model.target.MagicTargetFilter;
+import magic.model.MagicSubType;
+import magic.model.MagicType;
 
 public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicTargetNone> {
 

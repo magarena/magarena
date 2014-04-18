@@ -7,8 +7,8 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
-import magic.model.trigger.MagicThiefTrigger.Type;
 import magic.model.trigger.MagicThiefTrigger.Player;
+import magic.model.trigger.MagicThiefTrigger.Type;
 
 public class MagicSpecterTrigger extends MagicWhenDamageIsDealtTrigger {
 

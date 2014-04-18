@@ -1,9 +1,9 @@
 package magic.ui.widget;
 
-import javax.swing.JPanel;
-
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+
+import javax.swing.JPanel;
 
 import java.awt.Color;
 import java.awt.Graphics;

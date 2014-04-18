@@ -9,6 +9,7 @@ import magic.ui.widget.TitleBar;
 import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 

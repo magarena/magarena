@@ -1,17 +1,16 @@
 package magic.model.event;
 
+import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicCard;
-import magic.model.choice.MagicChoice;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.action.MagicPlayMod;
-import magic.model.action.MagicPlayCardAction;
-import magic.model.action.MagicShuffleLibraryAction;
 import magic.model.action.MagicCardAction;
+import magic.model.action.MagicPlayCardAction;
+import magic.model.action.MagicPlayMod;
+import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.MagicShuffleLibraryAction;
+import magic.model.choice.MagicChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
 
 public class MagicSearchOntoBattlefieldEvent extends MagicEvent {

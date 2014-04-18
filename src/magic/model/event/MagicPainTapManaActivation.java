@@ -2,12 +2,9 @@ package magic.model.event;
 
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
-import magic.model.condition.MagicCondition;
-import magic.model.event.MagicPainTapEvent;
 
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 public class MagicPainTapManaActivation extends MagicManaActivation {
 

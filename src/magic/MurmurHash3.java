@@ -1,8 +1,6 @@
 package magic;
 
-import java.io.ObjectInput;
 import java.nio.charset.Charset;
-import java.util.Set;
 
 /**
  * MurmurHash3 implementation in Java, based on Austin Appleby's <a href=

@@ -1,3 +1,8 @@
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.trigger.MagicAtUpkeepTrigger;
+
 def MagicAtUpkeepTrigger cantrip(final MagicEvent event) {
     return new MagicAtUpkeepTrigger() {
         @Override

@@ -6,6 +6,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SpringLayout;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.List;

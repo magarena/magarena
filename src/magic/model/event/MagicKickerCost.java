@@ -1,11 +1,11 @@
 package magic.model.event;
 
+import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
-import magic.model.MagicGame;
-import magic.model.choice.MagicPayManaCostChoice;
-import magic.model.choice.MagicMayChoice;
 import magic.model.action.MagicSetKickerAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicPayManaCostChoice;
 
 public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAction {
 

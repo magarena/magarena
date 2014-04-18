@@ -9,6 +9,7 @@ import magic.ui.widget.TextLabel;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;

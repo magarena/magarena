@@ -1,8 +1,9 @@
 package magic.model.event;
 
 import magic.model.MagicSource;
-import java.util.List;
+
 import java.util.LinkedList;
+import java.util.List;
 
 public class MagicMatchedCostEvent {
     

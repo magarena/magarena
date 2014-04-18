@@ -1,42 +1,25 @@
 package magic.model.event;
 
 import magic.model.MagicCardDefinition;
-import magic.model.MagicManaCost;
 import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicCopyMap;
+import magic.model.MagicCopyable;
 import magic.model.MagicGame;
+import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCopyable;
-import magic.model.MagicCopyMap;
-import magic.model.MagicCounterType;
-import magic.model.MagicLocationType;
-import magic.model.MagicPowerToughness;
-import magic.model.action.MagicTargetAction;
 import magic.model.action.MagicAddStaticAction;
 import magic.model.action.MagicPutItemOnStackAction;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicUntapAction;
-import magic.model.action.MagicPreventDamageAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.stack.MagicAbilityOnStack;
-import magic.model.target.MagicPreventTargetPicker;
-import magic.model.target.MagicTargetPicker;
-import magic.model.target.MagicTarget;
 import magic.model.mstatic.MagicStatic;
-import magic.model.mstatic.MagicLayer;
+import magic.model.stack.MagicAbilityOnStack;
 
 import java.util.Arrays;
-import java.util.EnumSet;
-import java.util.List;
 import java.util.LinkedList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.Set;
+import java.util.List;
 
 public abstract class MagicPermanentActivation extends MagicActivation<MagicPermanent> implements MagicChangeCardDefinition, MagicCopyable {
 

@@ -1,13 +1,13 @@
 package magic.model;
 
-import java.util.Set;
-import java.util.List;
-import java.util.LinkedList;
-
-import magic.model.trigger.MagicTrigger;
 import magic.model.event.MagicActivation;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicPermanentActivation;
+import magic.model.trigger.MagicTrigger;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 
 public class MagicAbilityList implements MagicAbilityStore {
     private List<MagicAbility> abilities = 

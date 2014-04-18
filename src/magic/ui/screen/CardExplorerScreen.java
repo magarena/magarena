@@ -1,9 +1,5 @@
 package magic.ui.screen;
 
-import java.util.List;
-
-import javax.swing.JPanel;
-
 import magic.ui.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
@@ -12,6 +8,10 @@ import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
+
+import javax.swing.JPanel;
+
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen

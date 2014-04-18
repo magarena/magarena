@@ -1,11 +1,12 @@
 package magic.utility;
 
-import java.awt.Color;
-import java.awt.Cursor;
+import magic.ui.widget.FontsAndBorders;
+
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 
-import magic.ui.widget.FontsAndBorders;
+import java.awt.Color;
+import java.awt.Cursor;
 
 /**
  * Utility class for implementing consistent UI style/effects.

@@ -1,15 +1,9 @@
 package magic.model.phase;
 
 import magic.model.MagicGame;
-import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.MagicPermanentList;
-import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicDestroyAction;
 import magic.model.action.MagicRemoveFromCombatAction;
-import magic.model.action.MagicRemoveFromPlayAction;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicEndOfCombatPhase extends MagicPhase {

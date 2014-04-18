@@ -1,21 +1,20 @@
 package magic.model.player;
 
+import magic.MagicMain;
+import magic.ai.MagicAIImpl;
+import magic.utility.MagicFiles;
+
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
+import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.nio.file.DirectoryStream.Filter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-
-import magic.MagicMain;
-import magic.ai.MagicAIImpl;
-import magic.model.MagicGameReport;
-import magic.utility.MagicFiles;
 
 public final class PlayerProfiles {
     private PlayerProfiles() {}
