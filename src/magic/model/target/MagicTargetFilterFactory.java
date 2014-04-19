@@ -867,6 +867,15 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicCardFilterImpl CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return true;
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
+    
     public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasType(MagicType.Artifact) ||
@@ -1226,6 +1235,7 @@ public class MagicTargetFilterFactory {
         single.put("multicolored creature card from your hand", MULTICOLORED_CREATURE_CARD_FROM_HAND);
 
         // <color|type|subtype> card from your library
+        single.put("card from your library", CARD_FROM_LIBRARY);
         single.put("basic land card from your library", BASIC_LAND_CARD_FROM_LIBRARY);
         single.put("Plains, Island, Swamp, Mountain or Forest card from your library", LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
         single.put("Plains or Island card from your library", cardOr(MagicTargetType.Library, MagicSubType.Plains, MagicSubType.Island));
