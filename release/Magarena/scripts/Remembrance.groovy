@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final String name = event.getRefPermanent().getName();
-                game.addEvent(new MagicSearchIntoHandEvent(
+                game.addEvent(new MagicSearchToLocationEvent(
                     event,
                     new MagicTargetChoice(
                         new MagicCardFilterImpl() {
@@ -30,7 +30,8 @@
                             }
                         }, 
                         "a card named ${name} from your library"
-                    )
+                    ),
+                    MagicLocationType.OwnersHand
                 ));
             }
         }

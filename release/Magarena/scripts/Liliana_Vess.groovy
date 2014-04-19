@@ -42,9 +42,10 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchOntoLibraryEvent(
+            game.addEvent(new MagicSearchToLocationEvent(
                 event,
-                A_CARD_FROM_LIBRARY
+                A_CARD_FROM_LIBRARY,
+                MagicLocationType.TopOfOwnersLibrary
             ));
         }
     },

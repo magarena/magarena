@@ -20,7 +20,7 @@ def CREATURE_CMC_6_OR_MORE = new MagicCardFilterImpl() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchIntoHandEvent(
+            game.addEvent(new MagicSearchToLocationEvent(
                 event,
                 new MagicMayChoice(
                     "Search for a creature card?",
@@ -28,7 +28,8 @@ def CREATURE_CMC_6_OR_MORE = new MagicCardFilterImpl() {
                         CREATURE_CMC_6_OR_MORE, 
                         "a creature with converted mana cost 6 or greater"
                     )
-                )
+                ),
+                MagicLocationType.OwnersHand
             ));
         }
     }

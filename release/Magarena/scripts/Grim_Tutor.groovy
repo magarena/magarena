@@ -24,9 +24,10 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchIntoHandEvent(
+            game.addEvent(new MagicSearchToLocationEvent(
                 event,
-                A_CARD_FROM_LIBRARY
+                A_CARD_FROM_LIBRARY,
+                MagicLocationType.OwnersHand
             ));
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-3));
         }

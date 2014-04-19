@@ -28,7 +28,11 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
                 game.addEvent(new MagicPayLifeEvent(event.getPermanent(), 2));
-                game.addEvent(new MagicSearchOntoLibraryEvent(event,A_CARD_FROM_LIBRARY));
+                game.addEvent(new MagicSearchToLocationEvent(
+                    event,
+                    A_CARD_FROM_LIBRARY,
+                    MagicLocationType.TopOfOwnersLibrary
+                ));
             }
         }
     }

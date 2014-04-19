@@ -4,6 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
+import magic.model.MagicLocationType;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -48,7 +49,11 @@ public class MagicTypeCyclingActivation extends MagicCardActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
             this,
-            new MagicSearchIntoHandEvent(event.getSource(), event.getPlayer(), new MagicTargetChoice("a "+type+" card from your library")),
+            new MagicSearchToLocationEvent(
+                event, 
+                new MagicTargetChoice("a "+type+" card from your library"),
+                MagicLocationType.OwnersHand
+            ),
             game.getPayedCost()
         );
         game.doAction(new MagicPutItemOnStackAction(abilityOnStack));

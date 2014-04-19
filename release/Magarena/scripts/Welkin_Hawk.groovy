@@ -22,12 +22,13 @@ def CARD_NAMED_WELKIN_HAWK = new MagicCardFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.addEvent(new MagicSearchIntoHandEvent(
+                game.addEvent(new MagicSearchToLocationEvent(
                     event,
                     new MagicTargetChoice(
                         CARD_NAMED_WELKIN_HAWK, 
                         "a card named Welkin Hawk"
-                    )
+                    ),
+                    MagicLocationType.OwnersHand
                 ));
             }
         }

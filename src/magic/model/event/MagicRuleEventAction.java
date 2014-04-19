@@ -1354,9 +1354,10 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicSearchIntoHandEvent(
+                    game.addEvent(new MagicSearchToLocationEvent(
                         event,
-                        choice
+                        choice,
+                        MagicLocationType.OwnersHand
                     ));      
                 }
             };
@@ -1377,9 +1378,10 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicSearchOntoLibraryEvent(
+                    game.addEvent(new MagicSearchToLocationEvent(
                         event,
-                        choice
+                        choice,
+                        MagicLocationType.TopOfOwnersLibrary
                     ));      
                 }
             };
@@ -1400,9 +1402,10 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicSearchOntoLibraryEvent(
+                    game.addEvent(new MagicSearchToLocationEvent(
                         event,
-                        choice
+                        choice,
+                        MagicLocationType.Graveyard
                     ));      
                 }
             };

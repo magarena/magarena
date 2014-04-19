@@ -5,6 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicLocationType;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -20,7 +21,11 @@ public class MagicTransmuteActivation extends MagicCardActivation {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicSearchIntoHandEvent(event, getTransmuteChoice(event.getRefInt())));
+            game.addEvent(new MagicSearchToLocationEvent(
+                event, 
+                getTransmuteChoice(event.getRefInt()),
+                MagicLocationType.OwnersHand
+            ));
         }
     };
         
