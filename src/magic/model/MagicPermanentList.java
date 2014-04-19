@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.util.List;
 import java.util.ArrayList;
 
 public class MagicPermanentList extends ArrayList<MagicPermanent> implements MagicCopyable {
@@ -8,7 +9,7 @@ public class MagicPermanentList extends ArrayList<MagicPermanent> implements Mag
 
     public MagicPermanentList() {}
 
-    public MagicPermanentList(final MagicPermanentList list) {
+    public MagicPermanentList(final List<MagicPermanent> list) {
         addAll(list);
     }
 
@@ -21,5 +22,15 @@ public class MagicPermanentList extends ArrayList<MagicPermanent> implements Mag
     @Override
     public MagicPermanentList copy(final MagicCopyMap copyMap) {
         return new MagicPermanentList(copyMap, this);
+    }
+    
+    public long getStateId() {
+        final long[] keys = new long[size()];
+        int idx = 0;
+        for (final MagicPermanent permanent : this) {
+            keys[idx] = permanent.getStateId();
+            idx++;
+        }
+        return magic.MurmurHash3.hash(keys);
     }
 }
