@@ -1,0 +1,12 @@
+name=Grixis Slavedriver
+url=http://www.magiccards.info/query?q=%21grixis%20slavedriver
+image=http://mtgimage.com/card/grixis%20slavedriver.jpg
+value=3.041
+rarity=U
+type=Creature
+subtype=Zombie,Giant
+cost={5}{B}
+pt=4/4
+ability=When SN leaves the battlefield, put a 2/2 black Zombie creature token onto the battlefield.;\
+        Unearth {3}{B}
+timing=main

@@ -1,0 +1,12 @@
+name=Corpse Connoisseur
+url=http://www.magiccards.info/query?q=%21corpse%20connoisseur
+image=http://mtgimage.com/card/corpse%20connoisseur.jpg
+value=3.6
+rarity=U
+type=Creature
+subtype=Zombie,Wizard
+cost={4}{B}
+pt=3/3
+ability=When SN enters the battlefield, you may search your library for a creature card and put that card into your graveyard. If you do, shuffle your library.;\
+        Unearth {3}{B}
+timing=main

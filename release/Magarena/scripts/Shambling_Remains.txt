@@ -1,0 +1,12 @@
+name=Shambling Remains
+url=http://www.magiccards.info/query?q=%21shambling%20remains
+image=http://mtgimage.com/card/shambling%20remains.jpg
+value=3.893
+rarity=U
+type=Creature
+subtype=Zombie,Horror
+cost={1}{B}{R}
+pt=4/3
+ability=SN can't block.;\
+        Unearth {B}{R}
+timing=main

@@ -1,0 +1,12 @@
+name=Kathari Screecher
+url=http://www.magiccards.info/query?q=%21kathari%20screecher
+image=http://mtgimage.com/card/kathari%20screecher.jpg
+value=2.84
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+cost={2}{U}
+pt=2/2
+ability=Flying;\
+        Unearth {2}{U}
+timing=main

@@ -1,0 +1,12 @@
+name=Scourge Devil
+url=http://www.magiccards.info/query?q=%21scourge%20devil
+image=http://mtgimage.com/card/scourge%20devil.jpg
+value=2.938
+rarity=U
+type=Creature
+subtype=Devil
+cost={4}{R}
+pt=3/3
+ability=When SN enters the battlefield, creatures you control get +1/+0 until end of turn.;\
+        Unearth {2}{R}
+timing=main

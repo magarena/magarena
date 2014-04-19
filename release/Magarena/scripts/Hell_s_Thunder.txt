@@ -1,0 +1,13 @@
+name=Hell's Thunder
+url=http://www.magiccards.info/query?q=%21hell%27s%20thunder
+image=http://mtgimage.com/card/hell's%20thunder.jpg
+value=3.644
+rarity=R
+type=Creature
+subtype=Elemental
+cost={1}{R}{R}
+pt=4/4
+ability=Flying;haste;\
+        At the beginning of the end step, sacrifice SN.;\
+        Unearth {4}{R}
+timing=fmain

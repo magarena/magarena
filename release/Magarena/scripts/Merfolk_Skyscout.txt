@@ -1,0 +1,12 @@
+name=Merfolk Skyscout
+url=http://www.magiccards.info/query?q=%21merfolk%20skyscout
+image=http://mtgimage.com/card/merfolk%20skyscout.jpg
+value=3.267
+rarity=U
+type=Creature
+subtype=Merfolk,Scout
+cost={2}{U}{U}
+pt=2/3
+ability=Flying;\
+        Whenever SN attacks or blocks, untap target permanent.
+timing=main

@@ -1,0 +1,12 @@
+name=Vithian Stinger
+url=http://www.magiccards.info/query?q=%21vithian%20stinger
+image=http://mtgimage.com/card/vithian%20stinger.jpg
+value=3.167
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={2}{R}
+pt=0/1
+ability={T}: SN deals 1 damage to target creature or player.;\
+        Unearth {1}{R}
+timing=main

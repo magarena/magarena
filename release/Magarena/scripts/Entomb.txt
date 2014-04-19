@@ -1,0 +1,9 @@
+name=Entomb
+url=http://www.magiccards.info/query?q=%21entomb
+image=http://mtgimage.com/card/entomb.jpg
+value=4.661
+rarity=R
+type=Instant
+cost={B}
+effect=Search your library for a card and put that card into your graveyard. Then shuffle your library.
+timing=draw

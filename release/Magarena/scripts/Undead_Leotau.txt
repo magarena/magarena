@@ -1,0 +1,12 @@
+name=Undead Leotau
+url=http://www.magiccards.info/query?q=%21undead%20leotau
+image=http://mtgimage.com/card/undead%20leotau.jpg
+value=1.57
+rarity=C
+type=Creature
+subtype=Zombie,Cat
+cost={5}{B}
+pt=3/4
+ability={R}: SN gets +1/+1 until end of turn.;\
+        Unearth {2}{B}
+timing=main

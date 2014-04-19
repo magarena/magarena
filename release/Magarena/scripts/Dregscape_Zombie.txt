@@ -1,0 +1,11 @@
+name=Dregscape Zombie
+url=http://www.magiccards.info/query?q=%21dregscape%20zombie
+image=http://mtgimage.com/card/dregscape%20zombie.jpg
+value=3.062
+rarity=C
+type=Creature
+subtype=Zombie
+cost={1}{B}
+pt=2/1
+ability=Unearth {B}
+timing=main
