@@ -864,6 +864,12 @@ public enum MagicAbility {
             card.add(new MagicScavengeActivation(cardDef, manaCost));
         }
     },
+    Unearth("unearth " + ARG.COST,10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.cost(arg));
+            card.add(new MagicUnearthActivation(manaCost));
+        }
+    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
