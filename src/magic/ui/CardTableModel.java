@@ -7,6 +7,7 @@ import magic.model.MagicManaCost;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

@@ -1,0 +1,12 @@
+name=Thrashing Mossdog
+url=http://www.magiccards.info/query?q=%21thrashing%20mossdog
+image=http://mtgimage.com/card/thrashing%20mossdog.jpg
+value=3.367
+rarity=C
+type=Creature
+subtype=Plant,Hound
+cost={3}{G}
+pt=3/3
+ability=Reach;\
+        Scavenge {4}{G}{G}
+timing=main

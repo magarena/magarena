@@ -6,8 +6,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 
-import java.util.Set;
-
 public class MagicPumpTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private static final MagicPumpTargetPicker INSTANCE=new MagicPumpTargetPicker();

@@ -1,5 +1,10 @@
 package magic.ui;
 
+import magic.data.IconImages;
+import magic.ui.theme.PlayerAvatar;
+
+import javax.swing.ImageIcon;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,11 +16,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import javax.swing.ImageIcon;
-
-import magic.data.IconImages;
-import magic.ui.theme.PlayerAvatar;
 
 public class AvatarImageSet {
 

@@ -4,6 +4,7 @@ import magic.ui.viewer.CardViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 import javax.swing.JLayeredPane;
+
 import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;

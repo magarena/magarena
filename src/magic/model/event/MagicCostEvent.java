@@ -2,18 +2,15 @@ package magic.model.event;
 
 
 import magic.data.EnglishToInt;
-import magic.model.MagicSource;
-import magic.model.MagicPermanent;
 import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
-import magic.model.event.MagicDiscardEvent;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetFilterFactory;
 import magic.model.condition.MagicCondition;
-import java.util.List;
-import java.util.LinkedList;
+import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

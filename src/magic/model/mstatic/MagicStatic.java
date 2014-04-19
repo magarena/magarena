@@ -1,21 +1,21 @@
 package magic.model.mstatic;
 
+import magic.model.MagicAbility;
+import magic.model.MagicAbilityList;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicColor;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.MagicAbility;
-import magic.model.MagicAbilityList;
-import magic.model.MagicCounterType;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicPermanentTargetFilter;
-import magic.model.target.MagicTargetFilterFactory;
 import magic.model.action.MagicRemoveStaticAction;
+import magic.model.target.MagicPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.Set;
 

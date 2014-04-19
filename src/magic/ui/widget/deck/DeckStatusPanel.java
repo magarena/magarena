@@ -3,15 +3,15 @@
  */
 package magic.ui.widget.deck;
 
-import java.awt.Color;
-import java.awt.Font;
+import magic.model.MagicDeck;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import magic.model.MagicDeck;
-import net.miginfocom.swing.MigLayout;
+import java.awt.Color;
+import java.awt.Font;
 
 @SuppressWarnings("serial")
 public class DeckStatusPanel extends JPanel {

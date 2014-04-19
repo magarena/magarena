@@ -1,10 +1,10 @@
 package magic.test;
 
+import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerDefinition;
-import magic.model.MagicDeckProfile;
 import magic.model.phase.MagicMainPhase;
 
 // shows the AI can cast Twincast on a Twincast, creating an endless loop.

@@ -1,6 +1,8 @@
 package magic.ui.widget.player;
 
-import java.awt.Color;
+import magic.model.player.PlayerStatistics;
+import magic.ui.widget.FontsAndBorders;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
@@ -8,9 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 
-import magic.model.player.PlayerStatistics;
-import magic.ui.widget.FontsAndBorders;
-import net.miginfocom.swing.MigLayout;
+import java.awt.Color;
 
 @SuppressWarnings("serial")
 public class PlayerMiniStatsPanel extends JPanel {

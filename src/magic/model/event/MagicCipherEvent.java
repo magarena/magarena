@@ -1,16 +1,16 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
+import magic.model.action.MagicAddTriggerAction;
 import magic.model.action.MagicChangeCardDestinationAction;
 import magic.model.action.MagicMoveCardAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicAddTriggerAction;
+import magic.model.choice.MagicMayChoice;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
 
 public class MagicCipherEvent extends MagicEvent {

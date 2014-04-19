@@ -10,6 +10,7 @@ import magic.model.MagicPlayer;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -62,6 +63,9 @@ public class MagicPlayCardAction extends MagicPutIntoPlayAction {
                     break;
                 case EXILE_AT_END_OF_TURN:
                     game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.ExileAtEnd));
+                    break;
+                case EXILE_WHEN_LEAVES:
+                    game.doAction(new MagicAddTriggerAction(permanent, MagicWhenLeavesPlayTrigger.Exile));
                     break;
                 case SACRIFICE_AT_END_OF_TURN:
                     game.doAction(new MagicAddTriggerAction(permanent, MagicAtEndOfTurnTrigger.Sacrifice));

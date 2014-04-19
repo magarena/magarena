@@ -1,14 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
@@ -24,6 +15,15 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.deck.DeckStatusPanel;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen

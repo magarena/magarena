@@ -1,10 +1,9 @@
 package magic.model.event;
 
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.action.MagicRemoveFromPlayAction;
 
 public class MagicBouncePermanentEvent extends MagicEvent {

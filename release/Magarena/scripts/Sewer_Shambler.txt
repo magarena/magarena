@@ -1,0 +1,12 @@
+name=Sewer Shambler
+url=http://www.magiccards.info/query?q=%21sewer%20shambler
+image=http://mtgimage.com/card/sewer%20shambler.jpg
+value=2.78
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=2/1
+ability=Swampwalk;\
+        Scavenge {2}{B}
+timing=main

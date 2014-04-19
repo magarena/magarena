@@ -2,9 +2,8 @@ package magic.model.trigger;
 
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.MagicPayedCost;
+import magic.model.MagicPermanent;
 import magic.model.MagicPlayerState;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.event.MagicEvent;

@@ -1,20 +1,8 @@
 package magic.model.event;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicManaCost;
-import magic.model.MagicChangeCardDefinition;
-import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicSource;
-import magic.model.MagicCopyable;
-import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
-import magic.model.MagicLocationType;
-import magic.model.MagicPowerToughness;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.MagicPermanent;
 import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicConditionFactory;
 
 import java.util.Arrays;
 

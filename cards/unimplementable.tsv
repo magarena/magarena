@@ -9,16 +9,19 @@ AEther Shockwave	choose
 AEther Storm	opponent activate
 Afflicted Deserter	transform
 Agent of Stromgald	mana pool
+Agent of Stromhald	mana pool
 Akki Rockspeaker	mana pool
 Akroma, Angel of Fury	morph
 Akuta, Born of Ash	from graveyard
 Alabaster Leech	cost modification
 Alabaster Potion	choose
+Alive // Well	split card
 All Suns' Dawn	multiple targets
 Alluring Scent	all block
 Altar of Shadows	mana pool
 Altar of the Lost	mana pool
 Alter Reality	edit card text
+Amulet of Quoz	ante
 An-Havva Township	mana pool
 An-Zerrin Ruins	creature type choice
 Ancestral Vision	suspend
@@ -42,12 +45,15 @@ Arc Mage	divided damage
 Arcane Melee	cost modification
 Archon of the Triumvirate	multiple targets
 Armageddon Clock	opponent activate
+Armed // Dangerous	split card
 Arrow Volley Trap	divided damage
 Ascending Aven	morph
 Ash Zealot	from graveyard
 Ashen Ghoul	from graveyard
 Ashes of the Fallen	creature type choice
 Ashnod's Altar	mana pool
+Assault // Battery	split card
+Assert Authority	split card
 Astral Cornucopia	mana pool
 Astrolabe	mana pool
 Atalya, Samite Master	choose
@@ -63,6 +69,7 @@ Axebane Guardian	mana pool
 Aysen Abbey	mana pool
 Azorius Chancery	mana pool
 Azorius Charm	choose
+Azorius Justicar	multiple targets
 Azorius Justiciar	multiple targets
 Azorius Signet	mana pool
 Backslide	morph
@@ -77,10 +84,15 @@ Barrin's Spite	multiple targets
 Basal Sliver	mana pool
 Basal Thrull	mana pool
 Basalt Monolith	mana pool
+Baton of Morale	banding
 Battering Craghorn	morph
+Battering Ram	banding
 Battle Hymn	mana pool
+Beck // Call	split card
 Belbe's Portal	creature type choice
 Benalish Commander	suspend
+Benalish Hero	banding
+Benalish Infantry	banding
 Betrayal of Flesh	choose
 Birchlore Rangers	morph
 Black Lotus	mana pool
@@ -111,6 +123,7 @@ Bog Witch	mana pool
 Bogardan Hellkite	divided damage
 Boneknitter	morph
 Booby Trap	name a card
+Boom // Bust	split card
 Boros Battleshaper	multiple targets
 Boros Charm	choose
 Boros Garrison	mana pool
@@ -118,24 +131,31 @@ Boros Signet	mana pool
 Bosk Banneret	cost modification
 Bottomless Vault	mana pool
 Boulderfall	divided damage
+Bound // Determined	split card
 Bow of Nylea	choose
 Braid of Fire	mana pool
 Brain Pry	name a card
 Branching Bolt	choose
 Branchsnap Lorian	morph
 Brass Herald	creature type choice
+Breaking // Entering	split card
 Bridge from Below	from graveyard
 Brighthearth Banneret	cost modification
 Brightstone Ritual	mana pool
 Brine Elemental	morph
+Bronze Tablet	ante
 Broodhatch Nantuko	morph
+Broodstar	affinity
 Brutalizer Exarch	choose
 Bubbling Muck	mana pool
+Budoka Gardener	flip
+Budoka Pupil	flip
 Bump in the Night	from graveyard
 Burning Vengeance	from graveyard
 Burning-Tree Emissary	mana pool
 Burnt Offering	mana pool
 Cabal Coffers	mana pool
+Cabal Excutioner	morph
 Cabal Executioner	morph
 Cabal Ritual	mana pool
 Cadaverous Bloom	mana pool
@@ -143,6 +163,7 @@ Caged Sun	mana pool
 Calciform Pools	mana pool
 Caller of the Hunt	creature type choice
 Callous Oppressor	creature type choice
+Camel	banding
 Cannibalize	multiple targets
 Capricious Efreet	multiple targets
 Carnival of Souls	mana pool
@@ -150,6 +171,7 @@ Carpet of Flowers	mana pool
 Carrion Beetles	multiple targets
 Cascade Bluffs	mana pool
 Castle Sengir	mana pool
+Catch // Release	split card
 Cathodion	mana pool
 Cauldron Haze	multiple targets
 Cauldron of Souls	multiple targets
@@ -167,6 +189,7 @@ Chancellor of the Dross	in opening hand
 Chancellor of the Forge	in opening hand
 Chancellor of the Spires	in opening hand
 Chancellor of the Tangle	in opening hand
+Chandra Pyromaster	multiple targets
 Chandra, Pyromaster	multiple targets
 Chandra's Phoenix	from graveyard
 Channel	mana pool
@@ -174,6 +197,7 @@ Channel the Suns	mana pool
 Chant of Vitu-Ghazi	convoke
 Chaos Charm	choose
 Chaos Moon	mana pool
+Chaos Orb	physical
 Charging Slateback	morph
 Charmed Pendant	mana pool
 Chill	cost modification
@@ -220,6 +244,7 @@ Council of the Absolute	cost modification
 Cover of Darkness	creature type choice
 Cranial Extraction	name a card
 Creeping Renaissance	choose permanent type
+Crime // Punishment	split card
 Crimson Hellkite	mana restriction
 Crosis's Attendant	mana pool
 Crosis's Charm	choose
@@ -231,6 +256,7 @@ Crypt of Agadeem	mana pool
 Cryptic Command	choose
 Crystal Quarry	mana pool
 Crystal Vein	mana pool
+Culling of the Weak	mana pool
 Culling the Weak	mana pool
 Cultural Exchange	multiple targets
 Curse of Bloodletting	enchant player
@@ -238,6 +264,7 @@ Curse of Death's Hold	enchant player
 Curse of Echoes	enchant player
 Curse of Exhaustion	enchant player
 Curse of Inertia	enchant player
+Curse of Intertia	enchant player
 Curse of Misfortunes	enchant player
 Curse of Oblivion	enchant player
 Curse of Predation	enchant player
@@ -270,6 +297,7 @@ Dawn to Dusk	choose
 Dawn's Reflection	mana pool
 Dawning Purist	morph
 Daybreak Ranger	transform
+Dead // Gone	split card
 Deadbridge Goliath	from graveyard
 Deadly Allure	blocking restriction
 Death of a Thousand Stings	from graveyard
@@ -296,9 +324,11 @@ Dichotomancy	suspend
 Dimir Aqueduct	mana pool
 Dimir Charm	choose
 Dimir Signet	mana pool
+Disrupting Pitmage	morph
 Disruptive Pitmage	morph
 Distant Melody	creature type choice
 Divine Congregation	suspend
+Divining Wish	name a card
 Divining Witch	name a card
 Doom Cannon	creature type choice
 Door of Destinies	creature type choice
@@ -306,6 +336,7 @@ Dormant Volcano	mana pool
 Double Negative	multiple targets
 Doubling Cube	mana pool
 Doubling Season	counters replacement
+Down // Dirty	split card
 Downpour	multiple targets
 Draco	cost modification
 Dragon Breath	from graveyard
@@ -342,6 +373,7 @@ Echo Tracer	morph
 Edgewalker	cost modification
 Eladamri's Vineyard	mana pool
 Elbrus, the Binding Blade	transform
+Eldazi Temple	mana restriction
 Elderwood Scion	cost modification
 Eldrazi Temple	mana restriction
 Electrolyze	divided damage
@@ -355,6 +387,7 @@ Elvish Soultiller	creature type choice
 Elvish Spirit Guide	mana pool
 Emblazoned Golem	mana restriction
 Embolden	divided prevent
+Emeral Medallion	cost modification
 Emerald Charm	choose
 Emerald Medallion	cost modification
 Endbringer's Revel	opponent activate
@@ -373,6 +406,7 @@ Etherium Sculptor	cost modification
 Etherwrought Page	choose
 Everflowing Chalice	mana pool
 Everglades	mana pool
+Evermind	splice
 Evershrike	from graveyard
 Evil Presence	becomes basic land
 Evolution Charm	choose
@@ -387,7 +421,9 @@ Fact or Fiction	separate into piles
 Faerie Macabre	multiple targets
 Faithless Looting	from graveyard
 Fallen Cleric	morph
+Falling Star	physical
 Famished Ghoul	multiple targets
+Far // Away	split card
 Farrelite Priest	mana pool
 Fatal Lore	multiple targets
 Fathom Seer	morph
@@ -402,6 +438,7 @@ Fetid Heath	mana pool
 Fever Charm	choose
 Fiery Justice	divided damage
 Final Revels	choose
+Fire // Ice	split card
 Fire at Will	divided damage
 Fire Covenant	divided damage
 Fire Sprites	mana pool
@@ -418,8 +455,10 @@ Flameshot	divided damage
 Flaming Gambit	change target
 Flaring Pain	prevent damage prevent
 Flash Flood	choose
+Flayer of Hatebound	from graveyard
 Flayer of the Hatebound	from graveyard
 Fledgling Mawcor	morph
+Flesh // Blood	split card
 Floodchaser	becomes basic land
 Flooded Grove	mana pool
 Food Chain	mana pool
@@ -464,6 +503,7 @@ Giant Dustwasp	suspend
 Gibbering Hyenas	blocking restriction
 Gift of the Deity	all block
 Gilded Lotus	mana pool
+Give // Take	split card
 Glarewielder	multiple targets
 Glissa Sunseeker	mana pool
 Glittering Lion	opponent activate
@@ -530,10 +570,12 @@ Heritage Druid	mana pool
 Hero of Iroas	cost modification
 Heroes Remembered	suspend
 Hickory Woodlot	mana pool
+Hide // Seek	split card
 High Seas	cost modification
 High Tide	mana pool
 Hinterland Hermit	transform
 Hinterland Scourge	transform
+Hit // Run	split card
 Hollow Trees	mana pool
 Homicidal Brute	transform
 Hope Charm	choose
@@ -553,6 +595,7 @@ Iceberg	mana pool
 Ichorid	from graveyard
 Ifh-Biff Efreet	opponent activate
 Ignite Disorder	divided damage
+Illusion // Reality	split card
 Imagecrafter	creature type choice
 Immerwolf	transform
 Imperial Hellkite	morph
@@ -596,6 +639,7 @@ Jade Leech	cost modification
 Jarad, Golgari Lich Lord	from graveyard
 Jaws of Stone	divided damage
 Jet Medallion	cost modification
+Jeweled Bird	ante
 Jhoira of the Ghitu	suspend
 Jinx	becomes basic land
 Joraga Treespeaker	mana pool
@@ -654,11 +698,12 @@ Liar's Pendulum	name a card
 Liege of the Axe	morph
 Liege of the Pit	morph
 Liege of the Tangle	multiple targets
+Life // Death	split card
 Life and Limb	becomes basic land
 Life from the Loam	from graveyard
 Lightning Storm	opponent activate
 Liliana of the Dark Realms	mana pool
-Liliana of the Veil	separate permanents
+Liliana of the Veil	separate into piles
 Lingering Mirage	becomes basic land
 Lion's Eye Diamond	mana pool
 Liturgy of Blood	mana pool
@@ -776,6 +821,7 @@ Nefashu	multiple targets
 Nemesis Mask	all block
 Nether Traitor	from graveyard
 Nevermore	name a card
+Night // Day	split card
 Nightbird's Clutches	multiple targets
 Nightfall Predator	transform
 Nightmare Incursion	multiple targets
@@ -792,6 +838,7 @@ Notion Thief	draw replacement
 Null Chamber	name a card
 Numot, the Devastator	multiple targets
 Nykthos, Shrine to Nyx	mana pool
+Odds // Ends	split card
 Omnath, Locus of Mana	mana pool
 One Dozen Eyes	choose
 Onslaught	divided damage
@@ -799,6 +846,7 @@ Oona's Prowler	opponent activate
 Opal Palace	mana restriction
 Orcish Farmer	becomes basic land
 Orcish Lumberjack	mana pool
+Order // Chaos	split card
 Orochi Leafcaller	mana pool
 Orzhov Basilica	mana pool
 Orzhov Charm	choose
@@ -813,6 +861,7 @@ Overlaid Terrain	mana pool
 Overwhelm	convoke
 Pack Hunt	multiple targets
 Pack's Disdain	creature type choice
+Pain // Suffering	split card
 Palladium Myr	mana pool
 Panic Attack	multiple targets
 Paradox Haze	enchant player
@@ -863,10 +912,13 @@ Prismatic Lens	mana pool
 Prized Unicorn	all block
 Proclamation of Rebirth	multiple targets
 Profane Command	choose
+Profit // Loss	split card
 Promise of Power	choose
 Prophetic Prism	mana pool
+Protect // Serve	split card
 Proteus Machine	morph
 Punishing Fire	from graveyard
+Pure // Simple	split card
 Purify the Grave	from graveyard
 Putrid Raptor	morph
 Putrid Warrior	choose
@@ -903,6 +955,7 @@ Raven Guild Master	morph
 Ravenous Demon	transform
 Ray of Revelation	from graveyard
 Reach of Branches	from graveyard
+Ready // Willing	split card
 Reality Spasm	choose
 Reality Strobe	suspend
 Reap	multiple targets
@@ -926,6 +979,7 @@ Remedy	divided prevent
 Remember the Fallen	choose
 Remote Farm	mana pool
 Repel the Darkness	multiple targets
+Research // Development	split card
 Restore Balance	suspend
 Retribution	multiple targets
 Return to Dust	mana pool
@@ -943,6 +997,7 @@ Riptide Pilferer	morph
 Riptide Replicator	creature type choice
 Riptide Shapeshifter	creature type choice
 Riptide Survivor	morph
+Rise // Fall	split card
 Rite of Flame	mana pool
 Rith's Attendant	mana pool
 Rith's Charm	choose
@@ -957,6 +1012,7 @@ Root Elemental	morph
 Root-Kin Ally	convoke
 Rosheen Meanderer	mana pool
 Rot Farm Skeleton	from graveyard
+Rough // Tumble	split card
 Ruby Leech	cost modification
 Ruby Medallion	cost modification
 Rude Awakening	choose
@@ -1064,7 +1120,7 @@ Skycloud Egg	mana pool
 Skycloud Expanse	mana pool
 Skyshroud Elf	mana pool
 Slagstorm	choose
-Slaughter Games	name card
+Slaughter Games	name a card
 Slimy Kavu	becomes basic land
 Slipstream Serpent	morph
 Smokebraider	mana pool
@@ -1094,6 +1150,7 @@ Spellskite	change target
 Spellwild Ouphe	cost modification
 Sphere of Resistance	cost modification
 Spined Basher	morph
+Spite // Malice	split card
 Spitting Gourna	morph
 Splitting Headache	choose
 Spoils of Evil	mana pool
@@ -1106,9 +1163,11 @@ Squallmonger	opponent activate
 Squee, Goblin Nabob	from graveyard
 Squeeze	cost modification
 Stalking Vampire	transform
+Stand // Deliver	split card
 Standardize	creature type choice
 Standing Stones	mana pool
 Steady Progress	multiple targets
+Steambed Aquitechts	becomes basic land
 Steel Sabotage	choose
 Steely Resolve	creature type choice
 Stinkdrinker Daredevil	cost modification
@@ -1120,7 +1179,7 @@ Stormscape Familiar	cost modification
 Stream of Consciousness	multiple targets
 Streambed Aquitects	becomes basic land
 Su-Chi	mana pool
-Subterranean Hangar	mana pool
+Subterranean Hanger	mana pool
 Sudden Storm	multiple targets
 Sulfur Vent	mana pool
 Summon the School	from graveyard
@@ -1130,6 +1189,7 @@ Sungrass Egg	mana pool
 Sungrass Prairie	mana pool
 Sunken Ruins	mana pool
 Sunscape Familiar	cost modification
+Supply // Demand	split card
 Suppression Field	cost modification
 Svyelunite Temple	mana pool
 Sword of the Meek	from graveyard
@@ -1148,6 +1208,7 @@ Temporal Cascade	choose
 Tempting Licid	all block
 Terashi's Cry	multiple targets
 Terastodon	multiple targets
+Teremko Griffin	banding
 Terraformer	becomes basic land
 Terrarion	mana pool
 Terror of Kruin Pass	transform
@@ -1177,9 +1238,11 @@ Tideshaper Mystic	becomes basic land
 Tilling Treefolk	multiple targets
 Timebender	choose
 Timecrafting	choose
+Timmerian Fiends	ante
 Tinder Farm	mana pool
 Tinder Wall	mana pool
 Titanic Bulvox	morph
+Toil // Trouble	split card
 Tolarian Academy	mana pool
 Tooth and Nail	choose
 Tormented Pariah	transform
@@ -1191,6 +1254,7 @@ Travel Preparations	multiple targets
 Treespring Lorian	morph
 Treva's Attendant	mana pool
 Treva's Charm	choose
+Trial // Error	split card
 Triassic Egg	choose
 Tribal Forcemage	morph
 Tribal Unity	creature type choice
@@ -1200,6 +1264,7 @@ Triton Tactics	multiple targets
 Tsabo's Decree	creature type choice
 Tundra Kavu	becomes basic land
 Tunnel Vision	name a card
+Turn // Burn	split card
 Twilight Mire	mana pool
 Tymaret, the Murder King	from graveyard
 Ulasht, the Hate Seed	choose
@@ -1218,6 +1283,8 @@ Upwelling	mana pool
 Ur-Golem's Eye	mana pool
 Urborg Uprising	multiple targets
 Urborg, Tomb of Yawgmoth	becomes basic land
+Urza's Avenger	banding
+Urza's Engine	banding
 Urza's Filter	cost modification
 Urza's Incubator	cost modification
 Urza's Mine	mana pool
@@ -1266,6 +1333,8 @@ Warden of Evos Isle	cost modification
 Warmonger	opponent activate
 Warriors' Lesson	multiple targets
 Wave Elemental	multiple targets
+Wax // Wane	split card
+Wear // Tear	split card
 Weathered Bodyguards	morph
 Weaver of Lies	morph
 Well of Knowledge	opponent activate

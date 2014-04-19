@@ -3,11 +3,8 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicLocationType;
-import magic.model.MagicPermanent;
-import magic.model.MagicCard;
-import magic.model.choice.MagicScryChoice;
 import magic.model.action.MagicScryAction;
+import magic.model.choice.MagicScryChoice;
 
 public class MagicScryEvent extends MagicEvent {
     

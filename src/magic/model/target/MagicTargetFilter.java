@@ -1,9 +1,9 @@
 package magic.model.target;
 
-import java.util.List;
-
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+
+import java.util.List;
 
 public interface MagicTargetFilter<T extends MagicTarget> {
 

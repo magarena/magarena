@@ -1,17 +1,12 @@
 package magic.model.condition;
 
 import magic.model.MagicAbility;
-import magic.model.MagicColor;
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
-import magic.model.MagicType;
-import magic.model.MagicManaCost;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicPermanentActivation;
 

@@ -14,13 +14,14 @@ import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 
 import javax.swing.BorderFactory;
-import javax.swing.JComboBox;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;

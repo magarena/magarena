@@ -1,16 +1,13 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
-import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicCounterType;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSourceEvent;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.MagicSource;
 import magic.model.action.MagicDrawAction;
 import magic.model.action.MagicRemoveTriggerAction;
-import magic.model.choice.MagicSimpleMayChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 
 public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtUpkeepTrigger(final int priority) {

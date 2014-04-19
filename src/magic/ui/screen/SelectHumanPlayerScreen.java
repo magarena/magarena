@@ -1,20 +1,20 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-
-import javax.swing.AbstractAction;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import magic.model.player.HumanPlayer;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.widget.player.HumanPlayerJList;
+
+import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.awt.event.ActionEvent;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class SelectHumanPlayerScreen

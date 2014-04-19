@@ -4,6 +4,7 @@ import magic.ui.GameController;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.border.Border;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.SortedSet;

@@ -1,21 +1,21 @@
 package magic.model.target;
 
-import java.util.Map;
-import java.util.TreeMap;
-
+import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicCounterType;
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.MagicCard;
-import magic.model.MagicGame;
-import magic.model.MagicAbility;
 import magic.model.MagicPlayer;
-import magic.model.MagicColor;
 import magic.model.MagicSubType;
-import magic.model.MagicCounterType;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicType;
-import magic.model.stack.MagicItemOnStack;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.stack.MagicItemOnStack;
+
+import java.util.Map;
+import java.util.TreeMap;
 
 public class MagicTargetFilterFactory {
 

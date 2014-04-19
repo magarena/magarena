@@ -2,11 +2,10 @@ package magic.model.event;
 
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.condition.MagicCondition;
 
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 public class MagicSacrificeManaActivation extends MagicManaActivation {
 

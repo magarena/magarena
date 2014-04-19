@@ -1,13 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
-import java.awt.event.ActionEvent;
-import java.util.concurrent.ExecutionException;
-
 import magic.data.DownloadMissingFiles;
 import magic.data.GeneralConfig;
 import magic.ui.screen.widget.MenuPanel;
@@ -16,6 +8,14 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.SwingWorker;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.event.ActionEvent;
+import java.util.concurrent.ExecutionException;
 
 @SuppressWarnings("serial")
 public class MainMenuScreen extends AbstractScreen {

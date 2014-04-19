@@ -1,23 +1,19 @@
 package magic.model.stack;
 
+import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
+import magic.model.MagicMappable;
 import magic.model.MagicObject;
 import magic.model.MagicObjectImpl;
-import magic.model.MagicMappable;
-import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicColor;
-import magic.model.MagicAbility;
-import magic.model.MagicType;
 import magic.model.MagicSubType;
-import magic.model.MagicPayedCost;
+import magic.model.MagicType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicCardEvent;
-import magic.model.event.MagicCardEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 

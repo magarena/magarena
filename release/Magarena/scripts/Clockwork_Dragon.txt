@@ -1,0 +1,13 @@
+name=Clockwork Dragon
+url=http://www.magiccards.info/query?q=%21clockwork%20dragon
+image=http://mtgimage.com/card/clockwork%20dragon.jpg
+value=3.873
+rarity=R
+type=Artifact,Creature
+subtype=Dragon
+cost={7}
+ability=Flying;\
+        SN enters the battlefield with six +1/+1 counters on it.;\
+        Whenever SN attacks or blocks, remove a +1/+1 counter from SN at end of combat.;\
+        {3}: Put a +1/+1 counter on SN.
+timing=artifact

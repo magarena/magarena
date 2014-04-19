@@ -1,13 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
 import magic.ai.MagicAIImpl;
 import magic.model.player.AiPlayer;
 import magic.model.player.IPlayerProfileListener;
@@ -16,6 +8,14 @@ import magic.model.player.PlayerProfiles;
 import magic.ui.dialog.AiPropertiesDialog;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.widget.player.AiPlayerJList;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
+import java.awt.event.ActionEvent;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * @author SPR

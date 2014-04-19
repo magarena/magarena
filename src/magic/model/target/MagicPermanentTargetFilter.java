@@ -1,8 +1,8 @@
 package magic.model.target;
 
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicGame;
 
 // Permanent reference can not be used because game is copied.
 public class MagicPermanentTargetFilter extends MagicPermanentFilterImpl {

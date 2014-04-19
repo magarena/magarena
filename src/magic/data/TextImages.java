@@ -1,7 +1,9 @@
 package magic.data;
 
 import magic.model.MagicCounterType;
+
 import javax.swing.ImageIcon;
+
 import java.util.HashMap;
 import java.util.Map;
 

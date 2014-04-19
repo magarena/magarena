@@ -1,6 +1,5 @@
 package magic.grammar;
 
-import magic.grammar.SourceString;
 import java.util.Scanner;
 
 class Check {

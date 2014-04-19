@@ -1,11 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Dimension;
-import java.util.Collections;
-import java.util.List;
-
-import javax.swing.JPanel;
-
 import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
@@ -13,6 +7,12 @@ import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.MenuButton;
+
+import javax.swing.JPanel;
+
+import java.awt.Dimension;
+import java.util.Collections;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class CardZoneScreen

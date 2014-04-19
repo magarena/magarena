@@ -2,6 +2,7 @@ package magic.ui.widget;
 
 import javax.swing.BorderFactory;
 import javax.swing.border.Border;
+
 import java.awt.Color;
 import java.awt.Font;
 

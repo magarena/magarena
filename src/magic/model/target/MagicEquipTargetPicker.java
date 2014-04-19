@@ -1,7 +1,7 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
 import magic.model.MagicAbility;
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;

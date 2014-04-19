@@ -9,6 +9,7 @@ import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;

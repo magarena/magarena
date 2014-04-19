@@ -1,10 +1,10 @@
 package magic.ui.screen.widget;
 
-import java.awt.Point;
-import java.awt.event.MouseEvent;
-
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
+
+import java.awt.Point;
+import java.awt.event.MouseEvent;
 
 @SuppressWarnings("serial")
 public class ActionBarButton extends MenuButton {

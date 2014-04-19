@@ -1,8 +1,8 @@
 package magic.model.player;
 
-import java.util.Properties;
-
 import magic.ai.MagicAIImpl;
+
+import java.util.Properties;
 
 public class AiPlayer extends PlayerProfile {
 

@@ -1,19 +1,19 @@
 package magic.model.event;
 
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.MagicSource;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicLocationType;
-import magic.model.MagicCounterType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.MagicSource;
 import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.choice.MagicChoice;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.target.MagicPumpTargetPicker;

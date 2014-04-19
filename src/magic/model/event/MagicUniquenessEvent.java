@@ -1,17 +1,16 @@
 package magic.model.event;
 
-import java.util.Collection;
-
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
-import magic.model.choice.MagicTargetChoice;
-import magic.model.action.MagicPermanentAction;
+
+import java.util.Collection;
 
 public class MagicUniquenessEvent extends MagicEvent {
 

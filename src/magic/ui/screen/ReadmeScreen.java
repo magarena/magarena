@@ -1,11 +1,11 @@
 package magic.ui.screen;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import magic.ui.screen.interfaces.IStatusBar;
 
 import javax.swing.JPanel;
 
-import magic.ui.screen.interfaces.IStatusBar;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @SuppressWarnings("serial")
 public class ReadmeScreen extends TextFileReaderScreen implements IStatusBar {

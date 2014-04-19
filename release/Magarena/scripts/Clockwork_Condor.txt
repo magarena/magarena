@@ -1,0 +1,12 @@
+name=Clockwork Condor
+url=http://www.magiccards.info/query?q=%21clockwork%20condor
+image=http://mtgimage.com/card/clockwork%20condor.jpg
+value=1.661
+rarity=C
+type=Artifact,Creature
+subtype=Bird
+cost={4}
+ability=Flying;\
+        SN enters the battlefield with three +1/+1 counters on it.;\
+        Whenever SN attacks or blocks, remove a +1/+1 counter from SN at end of combat.
+timing=artifact

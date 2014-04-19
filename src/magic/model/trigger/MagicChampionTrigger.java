@@ -1,9 +1,9 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
+import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicPayedCost;
 import magic.model.MagicSubType;
 import magic.model.action.MagicExileLinkAction;
 import magic.model.action.MagicPermanentAction;
@@ -12,12 +12,11 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicExileTargetPicker;
+import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicPermanentFilterImpl;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
-import magic.model.target.MagicPermanentFilterImpl;
-import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetHint;
-import magic.model.target.MagicTargetType;
 
 public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
 

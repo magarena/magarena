@@ -1,6 +1,5 @@
 package magic.data;
 
-import magic.data.MagicFormat;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;

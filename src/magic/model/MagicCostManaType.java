@@ -3,6 +3,7 @@ package magic.model;
 import magic.data.TextImages;
 
 import javax.swing.ImageIcon;
+
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;

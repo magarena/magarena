@@ -4,9 +4,9 @@ import magic.data.IconImages;
 import magic.model.MagicCopyMap;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.event.MagicPermanentActivation;
 import magic.model.event.MagicCardActivation;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicPermanentActivation;
 
 import javax.swing.ImageIcon;
 

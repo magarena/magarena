@@ -1,28 +1,25 @@
 package magic.model.event;
 
-import java.util.Arrays;
-
 import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
 import magic.model.MagicManaCost;
-import magic.model.MagicSource;
 import magic.model.MagicPermanent;
-import magic.model.MagicChangeCardDefinition;
-import magic.model.MagicType;
+import magic.model.MagicSource;
 import magic.model.MagicSubType;
+import magic.model.MagicType;
+import magic.model.action.MagicAddStaticAction;
+import magic.model.action.MagicPermanentAction;
 import magic.model.action.MagicPlayCardFromStackAction;
 import magic.model.action.MagicPutItemOnStackAction;
 import magic.model.action.MagicRemoveCardAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicAddStaticAction;
-import magic.model.mstatic.MagicStatic;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.target.MagicPumpTargetPicker;
 import magic.model.condition.MagicCondition;
+import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicPumpTargetPicker;
+
+import java.util.Arrays;
 
 public class MagicBestowActivation extends MagicCardActivation {
 

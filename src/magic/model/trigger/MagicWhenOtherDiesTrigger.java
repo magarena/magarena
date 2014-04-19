@@ -1,10 +1,10 @@
 package magic.model.trigger;
 
-import magic.model.target.MagicTargetFilter;
-import magic.model.MagicPermanent;
-import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicEvent;
 import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
+import magic.model.target.MagicTargetFilter;
 
 public abstract class MagicWhenOtherDiesTrigger extends MagicTrigger<MagicPermanent> {
     public MagicWhenOtherDiesTrigger(final int priority) {

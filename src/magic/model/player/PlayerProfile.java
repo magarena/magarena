@@ -1,17 +1,16 @@
 package magic.model.player;
 
+import magic.MagicMain;
+import magic.data.FileIO;
+import magic.data.IconImages;
+import magic.ui.theme.PlayerAvatar;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
-
-import magic.MagicMain;
-import magic.data.FileIO;
-import magic.data.IconImages;
-import magic.model.MagicGameReport;
-import magic.ui.theme.PlayerAvatar;
 
 public abstract class PlayerProfile {
 

@@ -1,13 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.event.ActionEvent;
-import java.util.concurrent.ExecutionException;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-import javax.swing.SwingWorker;
-
-import net.miginfocom.swing.MigLayout;
 import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
@@ -19,6 +11,14 @@ import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.ZoneBackgroundLabel;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+import javax.swing.SwingWorker;
+
+import java.awt.event.ActionEvent;
+import java.util.concurrent.ExecutionException;
 
 
 @SuppressWarnings("serial")

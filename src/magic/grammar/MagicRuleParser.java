@@ -7,7 +7,6 @@
 
 package magic.grammar;
 
-import magic.grammar.Source;
 
 public class MagicRuleParser extends magic.grammar.ParserMemo
 {

@@ -1,19 +1,18 @@
 package magic.model.player;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Properties;
-
 import magic.data.FileIO;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.player.PlayerProfile;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Properties;
 
 public class PlayerStatistics {
 

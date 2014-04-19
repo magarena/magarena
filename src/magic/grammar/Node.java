@@ -1,7 +1,7 @@
 package magic.grammar;
 
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Node {
     public String rule;

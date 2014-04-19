@@ -4,14 +4,15 @@ import magic.MagicMain;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
 import java.awt.event.ActionEvent;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {

@@ -1,9 +1,9 @@
 package magic.model.event;
 
-import magic.model.MagicSource;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicMappable;
+import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 
 public class MagicSourceActivation<T extends MagicSource & MagicMappable<T> & Comparable<T>> implements Comparable<MagicSourceActivation<T>> {
     public final T source;

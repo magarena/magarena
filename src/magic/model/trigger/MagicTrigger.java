@@ -5,7 +5,6 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEventAction;
 
 /** Lower priority values trigger before higher priority values. */

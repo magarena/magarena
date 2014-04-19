@@ -1,5 +1,7 @@
 package magic.ui.canvas.cards;
 
+import javax.swing.JPanel;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -15,8 +17,6 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class CardsCanvas extends JPanel {

@@ -1,10 +1,10 @@
 package magic.ui.widget;
 
+import magic.MagicMain;
+
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.SwingUtilities;
-
-import magic.MagicMain;
 
 import java.awt.Point;
 import java.awt.event.ActionEvent;

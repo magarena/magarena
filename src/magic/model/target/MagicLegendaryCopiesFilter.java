@@ -1,9 +1,9 @@
 package magic.model.target;
 
-import magic.model.MagicType;
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicGame;
+import magic.model.MagicType;
 
 public class MagicLegendaryCopiesFilter extends MagicPermanentFilterImpl {
 

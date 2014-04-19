@@ -1,14 +1,14 @@
 
 package magic.model.event;
 
+import magic.model.MagicCard;
+import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.model.choice.MagicFromCardListChoice;
-import magic.model.action.MagicScryComplAction;
 import magic.model.action.MagicCardAction;
+import magic.model.action.MagicScryComplAction;
+import magic.model.choice.MagicFromCardListChoice;
 
 public class MagicScryXEvent extends MagicEvent {
     

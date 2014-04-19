@@ -1,15 +1,14 @@
 package magic.model.trigger;
 
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicCounterType;
-import magic.model.event.MagicEvent;
 import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicDestroyAction;
+import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.event.MagicEvent;
 
 public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtEndOfCombatTrigger(final int priority) {

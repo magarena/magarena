@@ -1,11 +1,11 @@
 package magic.model.trigger;
 
-import magic.model.stack.MagicCardOnStack;
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSubType;
-import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
+import magic.model.stack.MagicCardOnStack;
 
 public abstract class MagicWhenYouCastSpiritOrArcaneTrigger extends MagicWhenOtherSpellIsCastTrigger {
     public MagicWhenYouCastSpiritOrArcaneTrigger(final int priority) {

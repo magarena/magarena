@@ -9,9 +9,8 @@ import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.target.MagicEquipTargetPicker;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 
 import java.util.Arrays;

@@ -2,10 +2,10 @@ package magic.model.trigger;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
-import magic.model.event.MagicEvent;
+import magic.model.MagicPermanent;
 import magic.model.action.MagicMoveCardAction;
+import magic.model.event.MagicEvent;
 
 public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGraveyardTrigger {
     public MagicWhenDiscardedTrigger(final int priority) {

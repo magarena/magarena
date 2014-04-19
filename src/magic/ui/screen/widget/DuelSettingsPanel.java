@@ -1,15 +1,5 @@
 package magic.ui.screen.widget;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-
-import net.miginfocom.swing.MigLayout;
 import magic.MagicUtility;
 import magic.data.CubeDefinitions;
 import magic.data.DuelConfig;
@@ -19,6 +9,16 @@ import magic.ui.dialog.DuelPropertiesDialog;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicStyle;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 @SuppressWarnings("serial")
 public class DuelSettingsPanel extends TexturedPanel {

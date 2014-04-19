@@ -2,8 +2,6 @@ package magic.model.phase;
 
 import magic.data.SoundEffects;
 import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.MagicReturnExiledAction;
 import magic.model.trigger.MagicTriggerType;
 

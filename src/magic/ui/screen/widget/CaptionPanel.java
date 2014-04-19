@@ -1,8 +1,10 @@
 package magic.ui.screen.widget;
 
-import java.awt.Color;
-import java.awt.Cursor;
-import java.awt.event.ActionEvent;
+import magic.MagicMain;
+import magic.data.IconImages;
+import magic.ui.AboutDialog;
+import magic.ui.widget.FontsAndBorders;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
@@ -10,11 +12,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import magic.MagicMain;
-import magic.data.IconImages;
-import magic.ui.AboutDialog;
-import magic.ui.widget.FontsAndBorders;
-import net.miginfocom.swing.MigLayout;
+import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class CaptionPanel extends JPanel {

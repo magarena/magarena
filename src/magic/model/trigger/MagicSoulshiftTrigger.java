@@ -10,11 +10,11 @@ import magic.model.action.MagicRemoveCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
+import magic.model.target.MagicCMCCardFilter;
 import magic.model.target.MagicGraveyardTargetPicker;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
-import magic.model.target.MagicCMCCardFilter;
 import magic.model.target.Operator;
 
 public class MagicSoulshiftTrigger extends MagicWhenDiesTrigger {

@@ -1,20 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
-
-import javax.swing.AbstractAction;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-
-import net.miginfocom.swing.MigLayout;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.model.MagicCard;
@@ -29,6 +14,21 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.SampleHandActionButton;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.AbstractAction;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
 
 @SuppressWarnings("serial")
 public class DeckViewScreen

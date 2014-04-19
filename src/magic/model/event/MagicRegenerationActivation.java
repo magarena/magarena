@@ -5,7 +5,6 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicRegenerateAction;
-import magic.model.condition.MagicCondition;
 
 import java.util.Arrays;
 

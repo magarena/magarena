@@ -1,8 +1,8 @@
 package magic.ui.widget.deck;
 
-import java.nio.file.Paths;
-
 import magic.data.DeckUtils;
+
+import java.nio.file.Paths;
 
 @SuppressWarnings("serial")
 public class CustomDecksComboxBox extends DeckFilesComboBox {

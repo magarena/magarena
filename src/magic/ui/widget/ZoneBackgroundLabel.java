@@ -6,6 +6,7 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 
 import javax.swing.JLabel;
+
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;

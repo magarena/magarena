@@ -1,13 +1,13 @@
 package magic.model.target;
 
+import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicGame;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 
-import java.util.Set;
 import java.util.EnumSet;
+import java.util.Set;
 
 public class MagicPlaneswalkerCopiesFilter extends MagicPermanentFilterImpl {
 

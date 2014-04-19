@@ -1,13 +1,13 @@
 package magic.ui.screen.widget;
 
-import java.awt.event.ActionEvent;
+import magic.data.IconImages;
+import magic.model.MagicDeck;
+import magic.ui.MagicFrame;
 
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 
-import magic.data.IconImages;
-import magic.model.MagicDeck;
-import magic.ui.MagicFrame;
+import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public final class SampleHandActionButton extends ActionBarButton {

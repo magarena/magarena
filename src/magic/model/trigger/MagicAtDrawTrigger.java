@@ -3,11 +3,8 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicCounterType;
-import magic.model.event.MagicEvent;
-import magic.model.action.MagicChangeCountersAction;
 import magic.model.action.MagicDrawAction;
-import magic.model.choice.MagicSimpleMayChoice;
+import magic.model.event.MagicEvent;
 
 public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
     public MagicAtDrawTrigger(final int priority) {

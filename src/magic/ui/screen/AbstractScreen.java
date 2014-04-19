@@ -1,16 +1,5 @@
 package magic.ui.screen;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-
-import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
-
 import magic.MagicMain;
 import magic.data.IconImages;
 import magic.ui.MagicFrame;
@@ -22,6 +11,17 @@ import magic.ui.screen.widget.StatusBar;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
+
+import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+import javax.swing.SwingConstants;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
 
 /**
  * Base class for a screen ensuring consistent style and layout.

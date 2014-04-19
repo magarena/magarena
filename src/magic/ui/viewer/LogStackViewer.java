@@ -1,8 +1,8 @@
 package magic.ui.viewer;
 
-import net.miginfocom.swing.MigLayout;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class LogStackViewer extends TexturedPanel implements IStackViewerListener  {

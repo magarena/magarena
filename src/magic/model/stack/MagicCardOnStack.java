@@ -1,24 +1,22 @@
 package magic.model.stack;
 
 import magic.model.MagicAbility;
-import magic.model.MagicColor;
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
+import magic.model.MagicObject;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.MagicType;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicObject;
 import magic.model.action.MagicMoveCardAction;
-import magic.model.event.MagicActivation;
-import magic.model.event.MagicSourceActivation;
-import magic.model.event.MagicEvent;
 import magic.model.event.MagicCardEvent;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceActivation;
 
 import javax.swing.ImageIcon;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;

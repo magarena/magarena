@@ -3,7 +3,6 @@ package magic.model.event;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 
 import java.util.Arrays;
 

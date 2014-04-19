@@ -9,8 +9,8 @@ import magic.data.History;
 import magic.data.IconImages;
 import magic.data.WebDownloader;
 
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
