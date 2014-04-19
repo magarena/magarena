@@ -78,6 +78,7 @@ import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
+import magic.model.trigger.MagicAtEndOfTurnTrigger;
 
 import java.util.Collection;
 import java.util.regex.Matcher;
@@ -1362,28 +1363,51 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-            "search your library for (?<choice>[^\\.]*)(,| and) reveal (it,|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
-            MagicTiming.Draw,
-            "Search"
-        ) {
-            @Override
-            public MagicChoice getChoice(final Matcher matcher) {
-                return MagicChoice.NONE;
-            }
-            @Override
-            public MagicEventAction getAction(final Matcher matcher) {
-                final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
-                return new MagicEventAction () {
-                    @Override
-                    public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        game.addEvent(new MagicSearchOntoLibraryEvent(
-                            event,
-                            choice
-                        ));      
-                    }
-                };
-            }
-        },
+        "search your library for (?<choice>[^\\.]*)(,| and) reveal (it,|that card.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
+        MagicTiming.Draw,
+        "Search"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            return MagicChoice.NONE;
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicSearchOntoLibraryEvent(
+                        event,
+                        choice
+                    ));      
+                }
+            };
+        }
+    },
+    SearchLibraryToGraveyard(
+        "search your library for (?<choice>[^\\.]*) and put (that card|it) into your graveyard. (If you do,|Then) shuffle your library\\.",
+        MagicTiming.Draw,
+        "Search"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            return MagicChoice.NONE;
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" from your library");
+            return new MagicEventAction () {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicSearchOntoLibraryEvent(
+                        event,
+                        choice
+                    ));      
+                }
+            };
+        }
+    },
     SearchLibraryToBattlefield(
         "search your library for (?<choice>[^\\.]*)(,| and) put it onto the battlefield(?<tapped>[^\\.]*)(. T|, t)hen shuffle your library\\.",
         MagicTiming.Pump,
@@ -1650,6 +1674,17 @@ public enum MagicRuleEventAction {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            }
+        }
+    ),
+    SacrificeSelfEndStep(
+        "sacrifice (sn|it) at the beginning of the next end step\\.",
+        MagicTiming.Removal,
+        "Sacrifice",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfTurnTrigger.Sacrifice));
             }
         }
     ),
