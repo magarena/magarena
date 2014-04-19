@@ -16,6 +16,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicAddStaticAction;
+import magic.model.action.MagicAddTriggerAction;
 import magic.model.action.MagicAttachAction;
 import magic.model.action.MagicCardAction;
 import magic.model.action.MagicCardOnStackAction;
@@ -76,6 +77,7 @@ import magic.model.target.MagicTargetHint;
 import magic.model.target.MagicTargetPicker;
 import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
+import magic.model.trigger.MagicAtEndOfCombatTrigger;
 
 import java.util.Collection;
 import java.util.regex.Matcher;
@@ -1119,6 +1121,17 @@ public enum MagicRuleEventAction {
             return CounterOnSelf.getName(matcher);
         }
     },
+    CounterFromSelfClockwork(
+        "remove a \\+1\\/\\+1 counter from (sn|it) at end of combat\\.",
+        MagicTiming.Pump,
+        "Remove",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game,final MagicEvent event) {
+                game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Clockwork));
+            }
+        }
+    ),
     CounterFromSelf(
         "remove (?<amount>[a-z]+) (?<type>[^\\.]*) counter(s)? from sn\\.",
         MagicTiming.Pump
@@ -1190,7 +1203,6 @@ public enum MagicRuleEventAction {
                 final String[] pt = counterType.getName().split("/");
                 return new MagicWeakenTargetPicker(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
             } else if (counterType.getName().contains("+")) {
-                final String[] pt = counterType.getName().split("/");
                 return MagicPumpTargetPicker.create();
             } else {
                 return MagicDefaultTargetPicker.create();
@@ -1200,7 +1212,6 @@ public enum MagicRuleEventAction {
         public MagicTiming getTiming(final Matcher matcher) {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             if (counterType.getName().contains("-")) {
-                final String[] pt = counterType.getName().split("/");
                 return MagicTiming.Removal;
             } else {
                 return MagicTiming.Pump;
