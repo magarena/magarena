@@ -228,7 +228,7 @@ public enum MagicAbility {
             ));
         }
     },
-    AttacksOrBlocksEffect("Whenever SN attacks or blocks, " + ARG.EFFECT, 10) {
+    AttacksOrBlocksEffect("When(ever)? SN attacks or blocks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             card.add(MagicWhenSelfAttacksTrigger.create(sourceEvent));
