@@ -230,12 +230,9 @@ public enum MagicAbility {
     },
     AttacksOrBlocksEffect("Whenever SN attacks or blocks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenSelfAttacksTrigger.create(
-                MagicRuleEventAction.create(ARG.effect(arg))
-            ));
-            card.add(MagicWhenSelfBlocksTrigger.create(
-                    MagicRuleEventAction.create(ARG.effect(arg))
-                ));
+            final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
+            card.add(MagicWhenSelfAttacksTrigger.create(sourceEvent));
+            card.add(MagicWhenSelfBlocksTrigger.create(sourceEvent));
         }
     },
     BecomesBlockedEffect("Whenever SN becomes blocked, " + ARG.EFFECT, 10) {
