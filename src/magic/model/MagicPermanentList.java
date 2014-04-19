@@ -24,7 +24,7 @@ public class MagicPermanentList extends ArrayList<MagicPermanent> implements Mag
         return new MagicPermanentList(copyMap, this);
     }
     
-    long getStateId() {
+    public long getStateId() {
         final long[] keys = new long[size()];
         int idx = 0;
         for (final MagicPermanent permanent : this) {
