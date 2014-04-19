@@ -11,17 +11,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicPermanent> pList = new MagicPermanentList();
-            final int players = game.getPlayers().size();
-            for(final MagicPlayer player : game.getPlayers()) {
-                pList.addAll(player.getPermanents());
-            }
-            for(final MagicPermanent permanent : pList) {
-                if(!permanent.hasType(MagicType.Land)) {
-                    final int newCtrlNr = ((int)(Math.random()*Math.pow(players,2)))%players
-                    game.doAction(new MagicGainControlAction(game.getPlayer(newCtrlNr), permanent, MagicStatic.Forever));
-                    game.doAction(new MagicUntapAction(permanent));
-                }
+            final MagicPermanentSet permanents = new MagicPermanentSet();
+            permanents.addAll(game.filterPermanents(MagicTargetFilterFactory.NONLAND_PERMANENT));
+            final MagicRandom rng = new MagicRandom(permanents.getStateId());
+            for(final MagicPermanent permanent : permanents) {
+                final int newCtrlNr = rng.nextInt(2); 
+                game.doAction(new MagicGainControlAction(game.getPlayer(newCtrlNr), permanent));
+                game.doAction(new MagicUntapAction(permanent));
             }
         }
     }
