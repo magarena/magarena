@@ -533,7 +533,9 @@ public class MagicTargetChoice extends MagicChoice {
 
         controller.disableActionButton(false);
         controller.showMessage(source,getDescription());
-        if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
+        if (targetFilter.acceptType(MagicTargetType.Hand)) {
+            controller.focusViewers(0);
+        } else if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
             controller.focusViewers(1);
         } else if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
             controller.focusViewers(2);
@@ -567,6 +569,7 @@ public class MagicTargetChoice extends MagicChoice {
         if (targetFilter.acceptType(MagicTargetType.Library)) {
             controller.clearCards();
         }
+        
         return new Object[]{controller.getChoiceClicked()};
     }
 }
