@@ -569,7 +569,7 @@ public class MagicTargetChoice extends MagicChoice {
         if (targetFilter.acceptType(MagicTargetType.Library)) {
             controller.clearCards();
         }
-        
+        controller.focusViewers(0);
         return new Object[]{controller.getChoiceClicked()};
     }
 }
