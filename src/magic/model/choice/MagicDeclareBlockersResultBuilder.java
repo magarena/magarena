@@ -61,9 +61,6 @@ public class MagicDeclareBlockersResultBuilder {
     private void buildBlockersFast() {
         System.err.println("Running randomized blocking algorithm");
 
-        //generate basic blocks
-        //buildBasicBlocks(0);
-
         //sample NUM_SAMPLES random blocks
         final MagicRandom rng = new MagicRandom(attackers.length + blockers.size());
         for (int i = 0; i < NUM_SAMPLES; i++) {
@@ -102,63 +99,7 @@ public class MagicDeclareBlockersResultBuilder {
         }
     }
 
-    private void buildBasicBlocks(final int index) {
-        // A new result is found.
-        if (index==attackers.length) {
-            final int score=combatScore.getScore(result);
-            if (results.addScore(score)) {
-                results.addScoreResult(new MagicDeclareBlockersResult(result,position++,score));
-            }
-            return;
-        }
-
-        // Get the remaining candidate blockers.
-        final MagicCombatCreature attacker=attackers[index];
-        final MagicCombatCreature[] candidateBlockers=new MagicCombatCreature[attacker.candidateBlockers.length];
-        int blockersSize=0;
-        for (final MagicCombatCreature blocker : attacker.candidateBlockers) {
-            if (blockers.contains(blocker)) {
-                candidateBlockers[blockersSize++]=blocker;
-            }
-        }
-
-        // No blockers.
-        result.addLast(new MagicCombatCreature[]{attacker});
-        buildAttacker(index+1);
-        result.removeLast();
-        if (blockersSize == 0) {
-            return;
-        }
-
-        // One blocker.
-        if (blockersSize == 1) {
-            final MagicCombatCreature blocker = candidateBlockers[0];
-            blockers.remove(blocker);
-            result.addLast(new MagicCombatCreature[]{attacker,blocker});
-            buildAttacker(index+1);
-            result.removeLast();
-            blockers.add(blocker);
-            return;
-        }
-
-        // Single blocker which does not deal lethal damage to the attacker.
-        // Not sufficient: might want to chump block with multiple blockers to
-        // survive the attack or damage the attackers enough to finish it off
-        // with direct damage
-        final int lethalDamage = attacker.lethalDamage;
-        for (int blockerIndex = 0; blockerIndex < blockersSize; blockerIndex++) {
-            final MagicCombatCreature blocker=candidateBlockers[blockerIndex];
-            if (blocker.power < lethalDamage) {
-                blockers.remove(blocker);
-                result.addLast(new MagicCombatCreature[]{attacker,blocker});
-                buildAttacker(index+1);
-                result.removeLast();
-                blockers.add(blocker);
-            }
-        }
-    }
-
-    private void buildAttacker(final int index) {
+    private void buildBlockersForAttacker(final int index) {
 
         // A new result is found.
         if (index==attackers.length) {
@@ -181,7 +122,7 @@ public class MagicDeclareBlockersResultBuilder {
 
         // No blockers.
         result.addLast(new MagicCombatCreature[]{attacker});
-        buildAttacker(index+1);
+        buildBlockersForAttacker(index+1);
         result.removeLast();
         if (blockersSize == 0) {
             return;
@@ -192,7 +133,7 @@ public class MagicDeclareBlockersResultBuilder {
             final MagicCombatCreature blocker = candidateBlockers[0];
             blockers.remove(blocker);
             result.addLast(new MagicCombatCreature[]{attacker,blocker});
-            buildAttacker(index+1);
+            buildBlockersForAttacker(index+1);
             result.removeLast();
             blockers.add(blocker);
             return;
@@ -208,7 +149,7 @@ public class MagicDeclareBlockersResultBuilder {
             if (blocker.power < lethalDamage) {
                 blockers.remove(blocker);
                 result.addLast(new MagicCombatCreature[]{attacker,blocker});
-                buildAttacker(index+1);
+                buildBlockersForAttacker(index+1);
                 result.removeLast();
                 blockers.add(blocker);
             }
@@ -232,7 +173,7 @@ public class MagicDeclareBlockersResultBuilder {
                     // Lethal blocking combination.
                     if (lethalDamage <= 0) {
                         result.addLast(Arrays.copyOf(creatures,size));
-                        buildAttacker(index+1);
+                        buildBlockersForAttacker(index+1);
                         result.removeLast();
                     } else if (blockerIndex < lastBlockerIndex) {
                         blockerIndex++;
@@ -302,7 +243,7 @@ public class MagicDeclareBlockersResultBuilder {
         if (max_blocks > MIN_SWITCH) {
             buildBlockersFast();
         } else {
-            buildAttacker(0);
+            buildBlockersForAttacker(0);
         }
     }
 }
