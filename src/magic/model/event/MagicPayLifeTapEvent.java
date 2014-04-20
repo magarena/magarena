@@ -1,6 +1,5 @@
 package magic.model.event;
 
-import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
@@ -24,7 +23,6 @@ public class MagicPayLifeTapEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicDamage damage=new MagicDamage(permanent,permanent.getController(),1);
             game.doAction(new MagicChangeLifeAction(event.getPlayer(),-1));
             game.doAction(new MagicTapAction(permanent,true));
         }
