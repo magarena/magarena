@@ -1,0 +1,9 @@
+name=Warp World
+url=http://magiccards.info/query?q=%21warp%20world
+image=http://mtgimage.com/card/warp%20world.jpg
+value=3.920
+rarity=R
+type=Sorcery
+cost={5}{R}{R}{R}
+timing=main
+requires_groovy_code

@@ -533,7 +533,9 @@ public class MagicTargetChoice extends MagicChoice {
 
         controller.disableActionButton(false);
         controller.showMessage(source,getDescription());
-        if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
+        if (targetFilter.acceptType(MagicTargetType.Hand)) {
+            controller.focusViewers(0);
+        } else if (targetFilter.acceptType(MagicTargetType.Graveyard)) {
             controller.focusViewers(1);
         } else if (targetFilter.acceptType(MagicTargetType.OpponentsGraveyard)) {
             controller.focusViewers(2);
@@ -543,15 +545,18 @@ public class MagicTargetChoice extends MagicChoice {
         if (validChoices.size()==1) {
             // There are no valid choices.
             if (validChoices.contains(MagicTargetNone.getInstance())) {
+                controller.focusViewers(0);
                 return new Object[]{MagicTargetNone.getInstance()};
             }
             // Only valid choice is player.
             if (validChoices.contains(player)) {
+                controller.focusViewers(0);
                 return new Object[]{player};
             }
             // Only valid choice is opponent.
             final MagicPlayer opponent=player.getOpponent();
             if (validChoices.contains(opponent)) {
+                controller.focusViewers(0);
                 return new Object[]{opponent};
             }
         }
@@ -567,6 +572,7 @@ public class MagicTargetChoice extends MagicChoice {
         if (targetFilter.acceptType(MagicTargetType.Library)) {
             controller.clearCards();
         }
+        controller.focusViewers(0);
         return new Object[]{controller.getChoiceClicked()};
     }
 }
