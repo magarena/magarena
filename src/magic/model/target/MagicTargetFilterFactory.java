@@ -610,6 +610,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.You);
 
+    public static final MagicPermanentFilterImpl TAPPED_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.isTapped() &&
+                   !target.hasColor(MagicColor.Black);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl UNTAPPED_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1325,6 +1333,7 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
+        single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
