@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicItemOnStack;
 
 public abstract class MagicWhenTargetedTrigger extends MagicTrigger<MagicItemOnStack> {
@@ -34,4 +35,14 @@ public abstract class MagicWhenTargetedTrigger extends MagicTrigger<MagicItemOnS
             game.doAction(new MagicSacrificeAction(event.getPermanent()));
         }
     };
+    
+    public static final MagicWhenTargetedTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenTargetedTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
+    
 }
