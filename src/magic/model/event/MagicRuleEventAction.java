@@ -41,6 +41,7 @@ import magic.model.action.MagicReanimateAction;
 import magic.model.action.MagicRegenerateAction;
 import magic.model.action.MagicRemoveCardAction;
 import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.MagicRevealAction;
 import magic.model.action.MagicSacrificeAction;
 import magic.model.action.MagicTapAction;
 import magic.model.action.MagicTargetAction;
@@ -1790,6 +1791,26 @@ public enum MagicRuleEventAction {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
                         public void doAction(final MagicPermanent creature) {
                             game.doAction(new MagicAddStaticAction(creature, MagicStatic.SwitchPT));
+                        }
+                    });
+                }
+            };
+        }
+    },
+    LookHand(
+        "look at (?<choice>[^\\.]*)'s hand\\.",
+        MagicTargetHint.Negative, 
+        MagicTiming.Flash, 
+        "Look"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTargetPlayer(game,new MagicPlayerAction() {
+                        public void doAction(final MagicPlayer player) {
+                            game.doAction(new MagicRevealAction(player.getHand()));
                         }
                     });
                 }
