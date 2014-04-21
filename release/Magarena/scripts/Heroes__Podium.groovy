@@ -1,10 +1,6 @@
-def LEGENDARY = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isController(player) && target.hasType(MagicType.Legendary) && target.isCreature();
-    }
-};
+def LEGENDARY_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.multiple("legendary creatures you control");
 
-def EventAction = {
+def MoveCards = {
     final MagicGame game, final MagicEvent event ->
     final List<MagicCard> putBackList = new MagicCardList();
     putBackList.addAll(event.getRefCardList());
@@ -14,27 +10,24 @@ def EventAction = {
         game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.OwnersHand));
         putBackList.remove(card);
     });
-    if(putBackList.size() > 0) {
-        putBackList.shuffle();
-        for(final MagicCard card : putBackList) {
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.BottomOfOwnersLibrary));
-        }
+    putBackList.shuffle();
+    for(final MagicCard card : putBackList) {
+        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
+        game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.BottomOfOwnersLibrary));
     }
 }
 
 [ 
     new MagicStatic(
         MagicLayer.ModPT,
-        LEGENDARY
+        LEGENDARY_CREATURE_YOU_CONTROL
     ) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final int amount = source.getController().getNrOfPermanents(LEGENDARY) - 1;
+            final int amount = source.getController().getNrOfPermanents(LEGENDARY_CREATURE_YOU_CONTROL) - 1;
             pt.add(amount,amount); 
         }
     },
-    
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Draw),
         "Draw"
@@ -42,7 +35,10 @@ def EventAction = {
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [new MagicTapEvent(source), new MagicPayManaCostEvent(source, "{X}")];
+            return [
+                new MagicTapEvent(source), 
+                new MagicPayManaCostEvent(source, "{X}")
+            ];
         }
 
         @Override
@@ -59,25 +55,20 @@ def EventAction = {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            
-            final List<MagicCard> showList = new MagicCardList();
+            final List<MagicCard> showList = event.getPlayer().getLibrary().getCardsFromTop(event.getRefInt());
             final List<MagicCard> choiceList = new MagicCardList();
-            final int amount = (event.getPlayer().getLibrary().size() >= event.getRefInt()) ? event.getRefInt() : event.getPlayer().getLibrary().size();
-            if(amount > 0) {
-                showList.addAll(event.getPlayer().getLibrary().getCardsFromTop(amount));
-                for(final MagicCard card : showList) {
-                    if(card.hasType(MagicType.Legendary) && card.hasType(MagicType.Creature)) choiceList.add(card);
+            for (final MagicCard card : showList) {
+                if (card.hasType(MagicType.Legendary) && card.hasType(MagicType.Creature)) {
+                    choiceList.add(card);
                 }
             }
-            if(choiceList.size() > 0) {
-                game.addEvent(new MagicEvent(
-                    event.getSource(),
-                    new MagicFromCardListChoice(choiceList, showList, 1, true),
-                    showList,
-                    EventAction,
-                    ""
-                ));
-            }
-        }            
+            game.addEvent(new MagicEvent(
+                event.getSource(),
+                new MagicFromCardListChoice(choiceList, showList, 1, true),
+                showList,
+                MoveCards,
+                ""
+            ));
+        }
     }
 ]
