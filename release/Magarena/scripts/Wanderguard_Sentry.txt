@@ -1,0 +1,11 @@
+name=Wanderguard Sentry
+url=http://www.magiccards.info/query?q=%21wanderguard%20sentry
+image=http://mtgimage.com/card/wanderguard%20sentry.jpg
+value=1.574
+rarity=C
+type=Creature
+subtype=Drone
+cost={4}{U}
+pt=3/3
+ability=When SN enters the battlefield, look at target opponent's hand.
+timing=main
