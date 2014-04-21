@@ -1,0 +1,11 @@
+name=Damia, Sage of Stone
+url=http://magiccards.info/cmd/en/191.html
+image=http://magiccards.info/scans/en/cmd/191.jpg
+value=4.021
+rarity=M
+type=Legendary,Creature
+subtype=Gorgon,Wizard
+cost={4}{G}{U}{B}
+pt=4/4
+ability=Deadtouch
+timing=fmain
