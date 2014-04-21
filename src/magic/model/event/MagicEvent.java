@@ -422,7 +422,7 @@ public class MagicEvent implements MagicCopyable {
         return hasChoice()?choice.getDescription():"";
     }
 
-    private final MagicTarget getTarget() {
+    public final MagicTarget getTarget() {
         for (Object obj : chosen) {
             if (obj instanceof MagicTarget) {
                 return (MagicTarget)obj;

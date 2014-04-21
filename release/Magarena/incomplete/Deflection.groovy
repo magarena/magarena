@@ -8,10 +8,10 @@ def SINGLE_TARGET_SPELL = new MagicStackFilterImpl() {
 
 def ChangeTargetAction = {
     final MagicGame game, final MagicEvent event ->
-    event.processTarget(game, {
-        final MagicTarget target ->
-        game.doAction(new MagicChangeTargetAction(event.getRefCardOnStack(), target));
-    });
+    // by pass the legality check which always use the player of the event
+    // in this case it should use the controller of the spell
+    final MagicTarget target = event.getTarget()
+    game.doAction(new MagicChangeTargetAction(event.getRefCardOnStack(), target));
 };    
 
 [
@@ -33,9 +33,15 @@ def ChangeTargetAction = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 final MagicCardOnStack targetSpell ->
+                final MagicChoice targetChoice = targetSpell.getEvent().getTargetChoice();
+                final MagicTargetFilter<MagicTarget> filter = (MagicTargetFilter<MagicTarget>)targetChoice.getTargetFilter();
+                final MagicTargetFilter<MagicTarget> fixedFilter = new MagicFixPlayerTargetFilter(filter, targetSpell.getController());
+                final MagicTargetHint hint = targetChoice.getTargetHint(true);
+                final String description = targetChoice.getTargetDescription();
+
                 game.addFirstEvent(new MagicEvent( 
                     event.getSource(),
-                    targetSpell.getEvent().getTargetChoice(),
+                    new MagicTargetChoice(fixedFilter, hint, description),
                     targetSpell,
                     ChangeTargetAction,
                     ""
