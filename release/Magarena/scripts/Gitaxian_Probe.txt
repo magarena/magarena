@@ -1,0 +1,10 @@
+name=Gitaxian Probe
+url=http://www.magiccards.info/query?q=%21gitaxian%20probe
+image=http://mtgimage.com/card/gitaxian%20probe.jpg
+value=4.308
+rarity=C
+type=Sorcery
+cost={P/U}
+ability=alt cost Pay 2 life named Pay 2 life
+timing=main
+requires_groovy_code

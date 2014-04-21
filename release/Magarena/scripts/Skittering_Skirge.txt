@@ -1,0 +1,12 @@
+name=Skittering Skirge
+url=http://www.magiccards.info/query?q=%21skittering%20skirge
+image=http://mtgimage.com/card/skittering%20skirge.jpg
+value=3.838
+rarity=C
+type=Creature
+subtype=Imp
+cost={B}{B}
+pt=3/2
+ability=Flying;\
+        When you cast a creature spell, sacrifice SN.
+timing=main
