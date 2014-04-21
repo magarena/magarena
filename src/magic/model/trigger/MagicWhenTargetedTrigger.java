@@ -40,7 +40,9 @@ public abstract class MagicWhenTargetedTrigger extends MagicTrigger<MagicItemOnS
         return new MagicWhenTargetedTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
-                return sourceEvent.getEvent(permanent);
+                return itemOnStack.containsInChoiceResults(permanent) ?
+                    sourceEvent.getEvent(permanent):
+                    MagicEvent.NONE;
             }
         };
     }
