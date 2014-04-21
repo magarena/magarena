@@ -5,5 +5,5 @@ value=4.053
 rarity=C
 type=Artifact
 cost={1}
+ability={T}: Look at target player's hand.
 timing=main
-requires_groovy_code

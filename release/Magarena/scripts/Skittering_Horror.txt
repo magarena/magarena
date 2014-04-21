@@ -1,0 +1,11 @@
+name=Skittering Horror
+url=http://www.magiccards.info/query?q=%21skittering%20horror
+image=http://mtgimage.com/card/skittering%20horror.jpg
+value=3.308
+rarity=C
+type=Creature
+subtype=Horror
+cost={2}{B}
+pt=4/3
+ability=When you cast a creature spell, sacrifice SN.
+timing=main
