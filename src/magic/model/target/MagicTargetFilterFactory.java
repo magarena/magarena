@@ -1114,6 +1114,71 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardAnd(MagicTargetType.Library, MagicType.Land, MagicType.Basic);
     
+    public static final MagicCardFilterImpl BASIC_FOREST_PLAINS_OR_ISLAND_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return target.hasType(MagicType.Basic) && (
+                    target.hasSubType(MagicSubType.Forest) ||
+                    target.hasSubType(MagicSubType.Plains) ||
+                    target.hasSubType(MagicSubType.Island)
+                   );
+        }
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
+    public static final MagicCardFilterImpl BASIC_PLAINS_ISLAND_OR_SWAMP_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return target.hasType(MagicType.Basic) && (
+                    target.hasSubType(MagicSubType.Plains) ||
+                    target.hasSubType(MagicSubType.Island) ||
+                    target.hasSubType(MagicSubType.Swamp)
+                   );
+        }
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
+    public static final MagicCardFilterImpl BASIC_ISLAND_SWAMP_OR_MOUNTAIN_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return target.hasType(MagicType.Basic) && (
+                    target.hasSubType(MagicSubType.Island) ||
+                    target.hasSubType(MagicSubType.Swamp) ||
+                    target.hasSubType(MagicSubType.Mountain)
+                   );
+        }
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
+    public static final MagicCardFilterImpl BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return target.hasType(MagicType.Basic) && (
+                    target.hasSubType(MagicSubType.Swamp) ||
+                    target.hasSubType(MagicSubType.Mountain) ||
+                    target.hasSubType(MagicSubType.Forest)
+                   );
+        }
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
+    public static final MagicCardFilterImpl BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(MagicGame game, MagicPlayer player, MagicCard target) {
+            return target.hasType(MagicType.Basic) && (
+                    target.hasSubType(MagicSubType.Mountain) ||
+                    target.hasSubType(MagicSubType.Forest) ||
+                    target.hasSubType(MagicSubType.Plains)
+                   );
+        }
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+    
     public static final MagicCardFilterImpl PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasSubType(MagicSubType.Plains) ||
@@ -1277,8 +1342,12 @@ public class MagicTargetFilterFactory {
         single.put("instant or sorcery card from your library", cardOr(MagicTargetType.Library, MagicType.Instant, MagicType.Sorcery));
         single.put("Treefolk or Forest card from your library", cardOr(MagicTargetType.Library, MagicSubType.Treefolk, MagicSubType.Forest));
         single.put("instant card or a card with flash from your library", INSTANT_OR_FLASH_CARD_FROM_LIBRARY);
-    
-        
+        single.put("basic Forest, Plains, or Island card from your library", BASIC_FOREST_PLAINS_OR_ISLAND_FROM_LIBRARY);
+        single.put("basic Plains, Island, or Swamp card from your library", BASIC_PLAINS_ISLAND_OR_SWAMP_FROM_LIBRARY);
+        single.put("basic Island, Swamp, or Mountain card from your library", BASIC_ISLAND_SWAMP_OR_MOUNTAIN_FROM_LIBRARY);
+        single.put("basic Swamp, Mountain, or Forest card from your library", BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY);
+        single.put("basic Mountain, Forest, or Plains card from your library", BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY);
+
         // <color|type|subtype> permanent card from your library
         
         // <color|type|subtype> creature card from your library
