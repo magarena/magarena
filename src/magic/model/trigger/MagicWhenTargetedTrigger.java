@@ -17,17 +17,20 @@ public abstract class MagicWhenTargetedTrigger extends MagicTrigger<MagicItemOnS
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenTargeted;
     }
+    
+    @Override
+    public boolean accept(final MagicPermanent permanent, final MagicItemOnStack item) {
+        return item.containsInChoiceResults(permanent);
+    }
 
     public static final MagicWhenTargetedTrigger SacWhenTargeted = new MagicWhenTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-            return target.containsInChoiceResults(permanent) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Sacrifice SN."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Sacrifice SN."
+            );
         }
 
         @Override
@@ -36,15 +39,12 @@ public abstract class MagicWhenTargetedTrigger extends MagicTrigger<MagicItemOnS
         }
     };
     
-    public static final MagicWhenTargetedTrigger create(final MagicSourceEvent sourceEvent) {
+    public static MagicWhenTargetedTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenTargetedTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
-                return itemOnStack.containsInChoiceResults(permanent) ?
-                    sourceEvent.getEvent(permanent):
-                    MagicEvent.NONE;
+                return sourceEvent.getEvent(permanent);
             }
         };
     }
-    
 }
