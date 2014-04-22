@@ -22,6 +22,8 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.KeyEvent;
 
 public class PreferencesDialog extends JDialog implements ActionListener {
@@ -53,6 +55,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private JCheckBox previewCardOnSelectCheckBox;
     private JCheckBox gameLogCheckBox;
     private JCheckBox mulliganScreenCheckbox;
+    private boolean isCustomBackground;
 
     public PreferencesDialog(final MagicFrame frame) {
 
@@ -226,6 +229,12 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         themeComboBox.setFocusable(false);
         themeComboBox.setBounds(X2,Y,W2,H);
         themeComboBox.setSelectedItem(config.getTheme());
+        themeComboBox.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent arg0) {
+                isCustomBackground = false;
+            }
+        });
         panel.add(themeComboBox);
 
         Y += 35;
@@ -239,6 +248,8 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         highlightComboBox.setBounds(X2,Y,W2,H);
         highlightComboBox.setSelectedItem(config.getHighlight());
         panel.add(highlightComboBox);
+
+        isCustomBackground = config.isCustomBackground();
 
         return panel;
 
@@ -290,6 +301,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
             config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
             config.setLogMessagesVisible(gameLogCheckBox.isSelected());
             config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
+            config.setCustomBackground(isCustomBackground);
             config.save();
             ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
             frame.repaint();

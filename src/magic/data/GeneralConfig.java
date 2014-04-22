@@ -40,6 +40,7 @@ public class GeneralConfig {
     private static final String SHOW_LOG_MESSAGES = "showLogMessages";
     private static final String MULLIGAN_SCREEN = "mulliganScreen";
     private static final String RECENT_DECK = "MostRecentDeckFilename";
+    private static final String CUSTOM_BACKGROUND = "customBackground";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
@@ -71,6 +72,7 @@ public class GeneralConfig {
     private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = false;
     private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
     private static final boolean DEFAULT_MULLIGAN_SCREEN = true;
+    private static final boolean DEFAULT_CUSTOM_BACKGROUND = false;
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -102,8 +104,16 @@ public class GeneralConfig {
     private boolean isLogViewerDisabled = false;
     private String mostRecentDeckFilename = "";
     private boolean isMissingFiles = false;
+    private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
 
     private GeneralConfig() { }
+
+    public boolean isCustomBackground() {
+        return isCustomBackground;
+    }
+    public void setCustomBackground(boolean isCustomBackground) {
+        this.isCustomBackground = isCustomBackground;
+    }
 
     public boolean isMissingFiles() {
         return isMissingFiles;
@@ -377,6 +387,7 @@ public class GeneralConfig {
         showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
         isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + DEFAULT_MULLIGAN_SCREEN));
         mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "");
+        isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
     }
 
     public void load() {
@@ -412,6 +423,7 @@ public class GeneralConfig {
         properties.setProperty(SHOW_LOG_MESSAGES, String.valueOf(showLogMessages));
         properties.setProperty(MULLIGAN_SCREEN, String.valueOf(isMulliganScreenActive));
         properties.setProperty(RECENT_DECK, mostRecentDeckFilename);
+        properties.setProperty(CUSTOM_BACKGROUND, String.valueOf(isCustomBackground));
     }
 
     public void save() {

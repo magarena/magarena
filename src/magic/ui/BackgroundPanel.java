@@ -1,8 +1,12 @@
 package magic.ui;
 
+import magic.MagicMain;
+import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.GraphicsUtilities;
 
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 import java.awt.Dimension;
@@ -10,6 +14,9 @@ import java.awt.Graphics;
 import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @SuppressWarnings("serial")
 public class BackgroundPanel extends JPanel {
@@ -35,12 +42,42 @@ public class BackgroundPanel extends JPanel {
         }
     }
 
+    public void refreshBackground() {
+        activeTheme = null;
+        repaint();
+    }
+
     private void setBackgroundImage() {
         final Theme currentTheme = ThemeFactory.getInstance().getCurrentTheme();
         if (activeTheme != currentTheme) {
             activeTheme = currentTheme;
-            image = activeTheme.getTexture(Theme.TEXTURE_BACKGROUND);
-            stretchTexture = activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1;
+            image = getBackgroundImage();
+            stretchTexture =
+                    activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1 ||
+                    GeneralConfig.getInstance().isCustomBackground();
+        }
+    }
+
+    private BufferedImage getBackgroundImage() {
+        if (GeneralConfig.getInstance().isCustomBackground()) {
+            return getCustomBackgroundImage();
+        } else {
+            return activeTheme.getTexture(Theme.TEXTURE_BACKGROUND);
+        }
+    }
+
+    private BufferedImage getCustomBackgroundImage() {
+        try {
+            final Path path = Paths.get(MagicMain.getModsPath()).resolve("background.image");
+            final BufferedImage image = ImageIO.read(path.toFile());
+            if (image != null) {
+                return GraphicsUtilities.getOptimizedImage(image);
+            } else {
+                return activeTheme.getTexture(Theme.TEXTURE_BACKGROUND);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return activeTheme.getTexture(Theme.TEXTURE_BACKGROUND);
         }
     }
 

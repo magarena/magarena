@@ -39,6 +39,7 @@ import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.utility.GraphicsUtilities;
 import net.miginfocom.swing.MigLayout;
 
+import javax.activation.MimetypesFileTypeMap;
 import javax.swing.AbstractAction;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -46,10 +47,20 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.ToolTipManager;
 
+import org.apache.commons.io.FileUtils;
+
 import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Toolkit;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.dnd.DnDConstants;
+import java.awt.dnd.DropTarget;
+import java.awt.dnd.DropTargetDragEvent;
+import java.awt.dnd.DropTargetDropEvent;
+import java.awt.dnd.DropTargetEvent;
+import java.awt.dnd.DropTargetListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -58,6 +69,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Stack;
 
 @SuppressWarnings("serial")
@@ -102,6 +114,9 @@ public class MagicFrame extends JFrame {
         setF10KeyInputMap();
         setF11KeyInputMap();
         setF12KeyInputMap();
+
+        // Enable drag and drop of background image file.
+        new DropTarget(this, new ImageDragDropListener());
 
         setVisible(true);
     }
@@ -482,6 +497,83 @@ public class MagicFrame extends JFrame {
         } else {
             JOptionPane.showMessageDialog(this, "ScreenShot saved to...\n" + imageFile.getAbsolutePath());
         }
+    }
+
+    /**
+     * Sets the background to an image that has been dragged into the Magarena frame.
+     * <p>
+     * This might be an image file or an image dragged directly from the internet browser.
+     */
+    private class ImageDragDropListener implements DropTargetListener {
+
+        @Override
+        public void drop(DropTargetDropEvent event) {
+            processDroppedImageFile(event);
+        }
+
+        @Override
+        public void dragEnter(DropTargetDragEvent event) { }
+        @Override
+        public void dragExit(DropTargetEvent event) { }
+        @Override
+        public void dragOver(DropTargetDragEvent event) { }
+        @Override
+        public void dropActionChanged(DropTargetDragEvent event) { }
+
+        @SuppressWarnings("unchecked")
+        private void processDroppedImageFile(final DropTargetDropEvent event) {
+
+            event.acceptDrop(DnDConstants.ACTION_COPY);
+
+            // Get the transfer which can provide the dropped item data
+            Transferable transferable = event.getTransferable();
+
+            // Get the data formats of the dropped item
+            DataFlavor[] flavors = transferable.getTransferDataFlavors();
+
+            for (DataFlavor flavor : flavors) {
+                try {
+                    // If the drop items are files then process the first one only.
+                    if (flavor.isFlavorJavaFileListType()) {
+
+                        final List<File> files = (List<File>)transferable.getTransferData(flavor);
+                        final File imageFile = new File(files.get(0).getPath());
+
+                        if (isValidImageFile(imageFile)) {
+                            final Path path = Paths.get(MagicMain.getModsPath()).resolve("background.image");
+                            FileUtils.copyFile(imageFile, path.toFile());
+                            ((BackgroundPanel)contentPanel).refreshBackground();
+                            config.setCustomBackground(true);
+                            config.save();
+                        } else {
+                            JOptionPane.showMessageDialog(contentPanel, "Invalid image!", "Invalid Image", JOptionPane.WARNING_MESSAGE);
+                        }
+                        break;
+                    }
+
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            // Inform that the drop is complete
+            event.dropComplete(true);
+
+        }
+
+        private boolean isValidImageFile(final File imageFile) {
+            return isValidMimeType(imageFile, "image") &&
+                    GraphicsUtilities.isValidImageFile(imageFile.toPath());
+        }
+
+        private boolean isValidMimeType(final File file, final String mimeType) {
+            final MimetypesFileTypeMap mtftp = new MimetypesFileTypeMap();
+            mtftp.addMimeTypes("image png tif jpg jpeg bmp");
+            final String mimetype = mtftp.getContentType(file);
+            final String fileType = mimetype.split("/")[0];
+            return fileType.equalsIgnoreCase(mimeType);
+        }
+
     }
 
 }
