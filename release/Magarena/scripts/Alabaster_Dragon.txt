@@ -1,0 +1,12 @@
+name=Alabaster Dragon
+url=http://magiccards.info/query?q=%21alabaster%20dragon
+image=http://mtgimage.com/card/alabaster%20dragon.jpg
+value=3.269
+rarity=R
+type=Creature
+subtype=Dragon
+cost={4}{W}{W}
+pt=4/4
+ability=flying;\
+        When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
+timing=main

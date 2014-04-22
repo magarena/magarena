@@ -39,13 +39,12 @@ public class MagicFromCardListChoice extends MagicChoice {
     public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount) {
         this(choiceList, showList, amount, false);
     }
-    /** reminder to self: need to implement upTo for cases, in which player can choose "up to" any number of cards, see if it can be done with controller.enableForwardButton() */
-    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount, final boolean upTo) {
-        super(genDescription(amount));
-        this.choiceList = choiceList;
-        this.showList = new MagicCardList(showList);
-        this.amount = amount;
-        this.upTo = upTo;
+    public MagicFromCardListChoice(final List<MagicCard> aChoiceList,final List<MagicCard> aShowList,final int aAmount, final boolean aUpTo) {
+        super(genDescription(aAmount));
+        choiceList = aChoiceList;
+        showList = new MagicCardList(aShowList);
+        amount = aAmount;
+        upTo = aUpTo;
     }
 
     private static final String genDescription(final int amount) {
@@ -79,6 +78,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         createOptions(options,cList,cards,count,aAmount,index+1);
     }
 
+    // FIXME: need to implement upTo and ordering of cards for AI
     @Override
     Collection<Object> getArtificialOptions(
             final MagicGame game,
@@ -87,7 +87,13 @@ public class MagicFromCardListChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object> options = new ArrayList<Object>();
-        final List<MagicCard> cList = new MagicCardList(this.choiceList);
+        final List<MagicCard> cList = new MagicCardList();
+        
+        //map the cards to the current game
+        for (final MagicCard card : choiceList) {
+            cList.add(card.map(game));
+        }
+
         Collections.sort(cList);
         final int actualAmount = Math.min(amount,cList.size());
         if (actualAmount > 0) {
@@ -106,12 +112,11 @@ public class MagicFromCardListChoice extends MagicChoice {
             final MagicSource source) throws UndoClickedException {
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
-        final Set<Object> validCards=new HashSet<Object>(this.choiceList);
+        final Set<Object> validCards=new HashSet<Object>(choiceList);
         int actualAmount=Math.min(amount,validCards.size());
-        /** if there is no choice to be made, amount is 0, and so is actualAmount, but the showlist should be displayed nevertheless - I hope this takes care of it */
         if (actualAmount == 0) {
             final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
-            controller.showCards(this.showList);
+            controller.showCards(showList);
             controller.focusViewers(5);
             controller.enableForwardButton();
             controller.waitForInput();
@@ -121,7 +126,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         } else {
             for (;actualAmount>0;actualAmount--) {
                 final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
-                controller.showCards(this.showList);
+                controller.showCards(showList);
                 controller.focusViewers(5);
                 controller.disableActionButton(false);
                 controller.setValidChoices(validCards,false);

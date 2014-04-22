@@ -1,0 +1,12 @@
+name=Rathi Assassin
+url=http://www.magiccards.info/query?q=%21rathi%20assassin
+image=http://mtgimage.com/card/rathi%20assassin.jpg
+value=3.316
+rarity=R
+type=Creature
+subtype=Zombie,Mercenary,Assassin
+cost={2}{B}{B}
+pt=2/2
+ability={1}{B}{B}, {T}: Destroy target tapped nonblack creature.
+timing=main
+requires_groovy_code=Cateran Kidnappers

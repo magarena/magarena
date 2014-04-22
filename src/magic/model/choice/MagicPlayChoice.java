@@ -89,6 +89,8 @@ public class MagicPlayChoice extends MagicChoice {
             final MagicGame game,
             final MagicPlayer player,
             final MagicSource source) throws UndoClickedException {
+        
+        controller.focusViewers(0);
 
         //always pass draw and begin combat if
         //  option is true and 
@@ -141,7 +143,6 @@ public class MagicPlayChoice extends MagicChoice {
             }
         }
 
-        controller.focusViewers(0);
         if (validChoices.isEmpty()) {
             controller.showMessage(source,CONTINUE_MESSAGE);
         } else {

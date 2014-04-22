@@ -1,0 +1,11 @@
+name=Telepathic Spies
+url=http://www.magiccards.info/query?q=%21telepathic%20spies
+image=http://mtgimage.com/card/telepathic%20spies.jpg
+value=2.773
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/2
+ability=When SN enters the battlefield, look at target opponent's hand.
+timing=main
