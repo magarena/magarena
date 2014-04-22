@@ -19,6 +19,7 @@ import java.util.Set;
 public class MagicFromCardListChoice extends MagicChoice {
 
     private static final String MESSAGE="Choose a card.";
+    private final String displayMessage;
     private final MagicCardList showList;
     private final List<MagicCard> choiceList;
     private final int amount;
@@ -32,27 +33,49 @@ public class MagicFromCardListChoice extends MagicChoice {
         this(choiceList, choiceList, amount, false);
     }
     
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount, final String description) {
+        this(choiceList, choiceList, amount, false, description);
+    }
+    
     public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount, final boolean upTo) {
         this(choiceList, choiceList, amount, upTo);
+    }
+    
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final int amount, final boolean upTo, final String description) {
+        this(choiceList, choiceList, amount, upTo, description);
     }
     
     public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount) {
         this(choiceList, showList, amount, false);
     }
+    
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount, final String description) {
+        this(choiceList, showList, amount, false, description);
+    }
+    
     public MagicFromCardListChoice(final List<MagicCard> aChoiceList,final List<MagicCard> aShowList,final int aAmount, final boolean aUpTo) {
-        super(genDescription(aAmount));
+        super(genDescription(aAmount, "", aUpTo));
         choiceList = aChoiceList;
         showList = new MagicCardList(aShowList);
         amount = aAmount;
         upTo = aUpTo;
+        displayMessage = genDescription(aAmount, "", aUpTo);
+    }
+    
+    public MagicFromCardListChoice(final List<MagicCard> aChoiceList,final List<MagicCard> aShowList,final int aAmount, final boolean aUpTo, final String description) {
+        super(genDescription(aAmount, description, aUpTo));
+        choiceList = aChoiceList;
+        showList = new MagicCardList(aShowList);
+        amount = aAmount;
+        upTo = aUpTo;
+        displayMessage = genDescription(aAmount, description, aUpTo);
     }
 
-    private static final String genDescription(final int amount) {
-        if (amount==1) {
-            return "Choose a card.";
-        } else {
-            return "Choose " + amount + " cards.";
-        }
+    private static final String genDescription(final int amount, final String description, final boolean aUpTo) {
+        if (aUpTo && amount == 1) return "Choose up to 1 card "+description+". ";
+        else if (aUpTo && amount != 1) return "Choose up to "+amount+" cards "+description+" .";
+        else if (!aUpTo && amount==1) return "Choose a card "+description+". ";
+        else return "Choose " + amount + " cards "+description+". ";
     }
 
     private void createOptions(
@@ -115,7 +138,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         final Set<Object> validCards=new HashSet<Object>(choiceList);
         int actualAmount=Math.min(amount,validCards.size());
         if (actualAmount == 0) {
-            final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
+            final String message=result.size()>0?result.toString()+"|"+displayMessage:displayMessage;
             controller.showCards(showList);
             controller.focusViewers(5);
             controller.enableForwardButton();
@@ -125,7 +148,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             return new Object[]{result};
         } else {
             for (;actualAmount>0;actualAmount--) {
-                final String message=result.size()>0?result.toString()+"|"+MESSAGE:MESSAGE;
+                final String message=result.size()>0?result.toString()+"|"+displayMessage:displayMessage;
                 controller.showCards(showList);
                 controller.focusViewers(5);
                 controller.disableActionButton(false);

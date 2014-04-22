@@ -37,7 +37,7 @@ public class MagicScryXEvent extends MagicEvent {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.addFirstEvent(new MagicEvent(source, player, new MagicFromCardListChoice(getScryList(player, X), getActualX(player, X), true), new MagicInteger(getActualX(player, X)), BottomAction, ""));
+                game.addFirstEvent(new MagicEvent(source, player, new MagicFromCardListChoice(getScryList(player, X), getActualX(player, X), true, "to be put on the bottom of your library"), new MagicInteger(getActualX(player, X)), BottomAction, ""));
             }
         };
     }
@@ -71,7 +71,7 @@ public class MagicScryXEvent extends MagicEvent {
                 game.addFirstEvent(new MagicEvent(                                                     //addFirstEvent, Bottom and TopAction need to be execute in immediate succession, otherwise it breaks     
                     event.getSource(),
                     event.getPlayer(),
-                    new MagicFromCardListChoice(getScryList(event.getPlayer(), actualX), actualX),
+                    new MagicFromCardListChoice(getScryList(event.getPlayer(), actualX), actualX, "to be put on the top of your library"),
                     actualX,
                     TopAction,
                     ""
