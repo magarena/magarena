@@ -15,12 +15,12 @@
                 source,
                 source.getEnchantedPermanent(),
                 this,
-                "RN gets +2/+2 until end of turn."
+                "RN gets +2/-2 until end of turn."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,2));
+            game.doAction(new MagicChangeTurnPTAction(event.getRefPermanent(),2,-2));
         }
     }
 ]
