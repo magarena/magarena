@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.NEG_TARGET_CREATURE,
-                MagicExileTargetPicker.create,
+                MagicExileTargetPicker.create(),
                 this,
                 "Exile target creature\$ and all other creatures with the same " +
                 "name as that creature."
@@ -15,14 +15,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent targetPermanent ->
-                final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicNameTargetFilter(targetPermanent.getName());
-                final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),targetFilter);
+                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
+                    MagicTargetFilterFactory.CREATURE,
+                    targetPermanent.getName()
+                );
+                final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),targetFilter);
                 for (final MagicPermanent permanent : targets) {
-                    if (permanent.isCreature()) {
-                        game.addEvent(new MagicExileEvent(permanent));
-                    }
+                    game.addEvent(new MagicExileEvent(permanent));
                 }
             });
         }
