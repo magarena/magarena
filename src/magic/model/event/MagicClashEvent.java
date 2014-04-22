@@ -22,7 +22,7 @@ public class MagicClashEvent extends MagicEvent {
             source,
             player,
             EventAction,
-            ""
+            "Clash with an opponent"
         );
         clashAction = aClashAction;
     }
@@ -31,14 +31,12 @@ public class MagicClashEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final boolean clashWin = executeClash(game, event);
-            if (clashWin) {
-                game.addFirstEvent(new MagicEvent(
-                    event.getSource(),
-                    (clashWin)?1:0,
-                    clashAction,
-                    ""
-                ));
-            }
+            game.addFirstEvent(new MagicEvent(
+                 event.getSource(),
+                 (clashWin)?1:0,
+                 clashAction,
+                 ""
+            ));
             game.executeTrigger(MagicTriggerType.WhenClash, clashWin);
         }
     };

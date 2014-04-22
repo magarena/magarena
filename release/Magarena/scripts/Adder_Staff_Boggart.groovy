@@ -1,6 +1,8 @@
 def clashAction = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1, true));
+    if(event.getRefInt() == 1) {
+        game.doAction(new MagicChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1, true));
+    }
 }
 
 [

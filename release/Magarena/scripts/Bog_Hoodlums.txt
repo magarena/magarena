@@ -7,6 +7,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={5}{B}
 ability=SN can't block.
-pt=2/1
+pt=4/1
 timing=main
 requires_groovy_code
