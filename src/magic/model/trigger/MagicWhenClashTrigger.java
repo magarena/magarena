@@ -3,7 +3,7 @@ package magic.model.trigger;
 import magic.model.MagicCardDefinition;
 import magic.model.stack.MagicItemOnStack;
 
-public abstract class MagicWhenClashTrigger extends MagicTrigger<MagicItemOnStack> {
+public abstract class MagicWhenClashTrigger extends MagicTrigger<Boolean> {
     public MagicWhenClashTrigger(final int priority) {
         super(priority);
     }
@@ -12,15 +12,5 @@ public abstract class MagicWhenClashTrigger extends MagicTrigger<MagicItemOnStac
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenClash;
-    }
-
-    @Override
-    public void change(final MagicCardDefinition cdef) {
-        cdef.addTrigger(this);
-    }
-    
-    @Override
-    public boolean usesStack() {
-        return true;
     }
 }
