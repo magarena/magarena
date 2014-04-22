@@ -1,0 +1,11 @@
+name=Wight of Precinct Six
+url=http://magiccards.info/ddm/en/46.html
+image=http://magiccards.info/scans/en/ddm/46.jpg
+value=3.778
+rarity=U
+type=Creature
+subtype=Zombie
+cost={1}{B}
+pt=1/1
+timing=fmain
+requires_groovy_code

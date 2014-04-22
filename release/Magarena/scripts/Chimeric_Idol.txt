@@ -1,0 +1,9 @@
+name=Chimeric Idol
+url=
+image=http://mtgimage.com/card/chimeric%20idol.jpg
+value=3.088
+rarity=U
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code
