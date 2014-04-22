@@ -39,16 +39,20 @@ public class MagicClashEvent extends MagicEvent {
     };
     
     public static boolean executeClash(final MagicGame game, final MagicEvent event) {
-        final MagicPlayer player = event.getPlayer();
-        final MagicPlayer opponent = player.getOpponent();
-        final MagicCard playerCard = player.getLibrary().getCardAtTop();
-        final MagicCard opponentCard = opponent.getLibrary().getCardAtTop();
+        final boolean win;
+        final MagicCard playerCard = event.getPlayer().getLibrary().getCardAtTop();
+        final MagicCard opponentCard = event.getPlayer().getOpponent().getLibrary().getCardAtTop();
            
-        final boolean win = playerCard.getConvertedCost() > opponentCard.getConvertedCost();
+        if(playerCard.getConvertedCost() > opponentCard.getConvertedCost()) win = true;
+        else win = false;
             
-        game.addFirstEvent(new MagicScryEvent(event.getSource(), player));
-        game.addFirstEvent(new MagicScryEvent(event.getSource(), opponent));
+        game.addFirstEvent(new MagicScryXEvent(event.getSource(), event.getPlayer(), 1));
+        game.addFirstEvent(new MagicScryXEvent(event.getSource(), event.getPlayer().getOpponent(), 1));
                 
         return win;
     }
+    
+    public boolean usesStack() {
+        return true;
+    } 
 }

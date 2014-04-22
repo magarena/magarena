@@ -13,6 +13,5 @@ public enum MagicPlayMod {
     PERSIST,
     UNDYING,
     BLACK,
-    ZOMBIE,
-    NONE
+    ZOMBIE
 }

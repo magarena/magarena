@@ -1,9 +1,0 @@
-name=Eyes of the Watcher
-url=http://www.magiccards.info/query?q=%21eyes%20of%20the%20watcher
-image=http://mtgimage.com/card/eyes%20of%20the%20watcher.jpg
-value=3.934
-rarity=U
-type=Enchantment
-cost={2}{U}
-ability=Whenever you cast an instant or sorcery spell, you may pay {1}. If you do, scry 2.
-timing=enchantment

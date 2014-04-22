@@ -376,12 +376,6 @@ public class MagicTargetFilterFactory {
             return target.isOwner(player);
         }
     };
-    
-    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN_AND_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
-            return target.isOwner(player) && target.isController(player);
-        }
-    };
 
     public static final MagicPermanentFilterImpl LAND_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Land, Control.You);
 
@@ -609,8 +603,6 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl WORLD = MagicTargetFilterFactory.permanent(MagicType.World, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.You);
-    
-    public static final MagicPermanentFilterImpl CREATURE_YOU_OWN = MagicTargetFilterFactory.permanent(MagicType.Creature, Own.You);
 
     public static final MagicPermanentFilterImpl CREATURE_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.Opp);
 
@@ -618,14 +610,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.You);
 
-    public static final MagicPermanentFilterImpl TAPPED_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() &&
-                   target.isTapped() &&
-                   !target.hasColor(MagicColor.Black);
-        }
-    };
-    
     public static final MagicPermanentFilterImpl UNTAPPED_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -738,12 +722,6 @@ public class MagicTargetFilterFactory {
                    target.getConvertedCost() <= 2;
         }
     };
-
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_2_OR_LESS = new MagicPTTargetFilter(
-        MagicTargetFilterFactory.CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );  
 
     public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_3_OR_LESS = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
@@ -1212,7 +1190,6 @@ public class MagicTargetFilterFactory {
         multiple.put("islands", ISLAND);
         multiple.put("forests", FOREST);
         multiple.put("nonland permanents", NONLAND_PERMANENT);
-        multiple.put("all permanents you own", PERMANENT_YOU_OWN);
         multiple.put("all slivers", SLIVER_PERMANENT);
         multiple.put("all goblins", GOBLIN_PERMANENT);
         multiple.put("goblins", GOBLIN_PERMANENT);
@@ -1339,7 +1316,6 @@ public class MagicTargetFilterFactory {
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS); 
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
-        single.put("creature with toughness 2 or less", CREATURE_TOUGHNESS_2_OR_LESS);
         single.put("creature with toughness 3 or less", CREATURE_TOUGHNESS_3_OR_LESS);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
@@ -1349,7 +1325,6 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature without flying", ATTACKING_CREATURE_WITHOUT_FLYING);
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
-        single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
@@ -1375,8 +1350,6 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> permanent
         single.put("permanent", PERMANENT);
-        single.put("permanent you own", PERMANENT_YOU_OWN);
-        single.put("permanent you both own and control", PERMANENT_YOU_OWN_AND_CONTROL);
         single.put("noncreature permanent", NONCREATURE);
         single.put("spell or permanent", SPELL_OR_PERMANENT);
         single.put("nonland permanent", NONLAND_PERMANENT);
@@ -1384,7 +1357,7 @@ public class MagicTargetFilterFactory {
         single.put("black or red permanent", BLACK_RED_PERMANENT);
         
         // <color|type|subtype>
-        single.put("creature you own", CREATURE_YOU_OWN);
+        single.put("permanent you own", PERMANENT_YOU_OWN);
         single.put("Insect, Rat, Spider, or Squirrel", INSECT_RAT_SPIDER_OR_SQUIRREL);
         single.put("Vampire, Werewolf, or Zombie", VAMPIRE_WEREWOLF_OR_ZOMBIE);
         single.put("attacking or blocking Spirit",  ATTACKING_OR_BLOCKING_SPIRIT);
@@ -1645,30 +1618,9 @@ public class MagicTargetFilterFactory {
         You,
         Opp
     }
-    
-    enum Own {
-        Any,
-        You,
-        Opp
-    }
         
     public static final MagicPermanentFilterImpl permanent(final MagicType type, final Control control) {
         return permanentOr(type, type, control);
-    }
-    
-    public static final MagicPermanentFilterImpl permanent(final MagicType type, final Own own) {
-        return permanentOr(type, type, own);
-    }
-
-    private static MagicPermanentFilterImpl permanentOr(final MagicType type1, final MagicType type2, final Own own) {
-        return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-                return target.hasType(type1) && target.hasType(type2) &&
-                       ((own == Own.You && target.isOwner(player)) ||
-                        (own == Own.Opp && target.isOwner(player)) ||
-                        (own == Own.Any));
-            }
-        };
     }
 
     public static final MagicPermanentFilterImpl permanentAnd(final MagicType type1, final MagicType type2, final Control control) {

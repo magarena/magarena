@@ -1,9 +1,0 @@
-name=Fill with Fright
-url=http://www.magiccards.info/query?q=%21fill%20with%20fright
-image=http://mtgimage.com/card/fill%20with%20fright.jpg
-value=2.741
-rarity=C
-type=Sorcery
-cost={3}{B}
-timing=main
-requires_groovy_code

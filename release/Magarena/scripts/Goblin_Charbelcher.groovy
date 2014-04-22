@@ -45,13 +45,15 @@ def MoveCards = {
                 for (int i = 1; i <= size; i++) {
                     final MagicCard card = library.get(size - i);
                     game.logAppendMessage(event.getPlayer(), "Revealed ${card}. ");
-                    choiceList.add(card);
-                    if (card.hasType(MagicType.Land)) {
-                        if (card.hasSubType(MagicSubType.Mountain)) {
-                            amount = 2 * amount;
-                        }
+                    if (card.hasType(MagicType.Land) && card.hasSubType(MagicSubType.Mountain)) {
+                        choiceList.add(card);
+                        amount = 2 * amount;
+                        break;
+                    } else if (card.hasType(MagicType.Land) && !card.hasSubType(MagicSubType.Mountain)) {
+                        choiceList.add(card);
                         break;
                     } else {
+                        choiceList.add(card);
                         amount++;
                     }
                 }

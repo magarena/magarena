@@ -15,13 +15,14 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent targetPermanent ->
-                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
-                    MagicTargetFilterFactory.ARTIFACT,
-                    targetPermanent.getName()
-                );
-                final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),targetFilter);
+                final MagicTargetFilter<MagicPermanent> targetFilter =
+                    new MagicNameTargetFilter(targetPermanent.getName());
+                final Collection<MagicPermanent> targets =
+                    game.filterPermanents(event.getPlayer(),targetFilter);
                 for (final MagicPermanent permanent : targets) {
-                    game.doAction(new MagicDestroyAction(permanent));
+                    if (permanent.isArtifact()) {
+                        game.doAction(new MagicDestroyAction(permanent));
+                    }
                 }
             });
         }

@@ -16,12 +16,12 @@ public abstract class MagicHeroicTrigger extends MagicWhenTargetedTrigger {
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicItemOnStack item) {
-        return super.accept(permanent, item) &&
-               item.isFriend(permanent) && 
-               item.isSpell(); 
+        return item.isFriend(permanent) && 
+               item.isSpell() && 
+               item.containsInChoiceResults(permanent);
     }
     
-    public static MagicHeroicTrigger create(final MagicSourceEvent sourceEvent) {
+    public static final MagicHeroicTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicHeroicTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack data) {

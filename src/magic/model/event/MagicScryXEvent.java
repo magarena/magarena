@@ -11,6 +11,8 @@ import magic.model.action.MagicScryComplAction;
 import magic.model.choice.MagicFromCardListChoice;
 
 public class MagicScryXEvent extends MagicEvent {
+    
+    
 
     public MagicScryXEvent(final MagicSource source, final MagicPlayer player, final int X) {
           super(source, player, X, startScrying(source, player, X), "");
@@ -19,6 +21,7 @@ public class MagicScryXEvent extends MagicEvent {
     private static int getActualX(final MagicPlayer player, final int X) {
         final int size = player.getLibrary().size();
         return (size > X) ? X : size;
+        
     }
     
     private static MagicCardList getScryList(final MagicPlayer player, final int X) {
@@ -34,19 +37,7 @@ public class MagicScryXEvent extends MagicEvent {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-<<<<<<< local
                 game.addFirstEvent(new MagicEvent(source, player, new MagicFromCardListChoice(getScryList(player, X), getActualX(player, X), true, "to be put on the bottom of your library"), new MagicInteger(getActualX(player, X)), BottomAction, ""));
-=======
-                game.addFirstEvent(new MagicEvent(
-                    source, 
-                    player, 
-                    new MagicFromCardListChoice(getScryList(player, X), 
-                    getActualX(player, X), true), 
-                    new MagicInteger(getActualX(player, X)), 
-                    BottomAction, 
-                    ""
-                ));
->>>>>>> other
             }
         };
     }
@@ -76,10 +67,8 @@ public class MagicScryXEvent extends MagicEvent {
                 }
             });
             final int actualX =  getActualX(event.getPlayer(), event.getRefInt() - processedCards.size());
-            //escape, no sense in calling TopAction if there is no choice to make
-            //addFirstEvent, Bottom and TopAction need to be execute in immediate succession, otherwise it breaks     
-            if(actualX > 1) {                                     
-                game.addFirstEvent(new MagicEvent(                    
+            if(actualX > 1) {                                                                          //escape, no sense in calling TopAction if there is no choice to make
+                game.addFirstEvent(new MagicEvent(                                                     //addFirstEvent, Bottom and TopAction need to be execute in immediate succession, otherwise it breaks     
                     event.getSource(),
                     event.getPlayer(),
                     new MagicFromCardListChoice(getScryList(event.getPlayer(), actualX), actualX, "to be put on the top of your library"),

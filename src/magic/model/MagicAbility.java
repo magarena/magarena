@@ -912,13 +912,6 @@ public enum MagicAbility {
             card.add(new MagicUnearthActivation(manaCost));
         }
     },
-    WhenTargeted("When(ever)? SN becomes the target of a spell or ability, " + ARG.EFFECT,-10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenTargetedTrigger.create(
-                MagicRuleEventAction.create(ARG.effect(arg))
-            ));
-        }
-    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
