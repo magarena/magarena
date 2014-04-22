@@ -1,0 +1,9 @@
+name=Obelisk of Undoing
+url=http://www.magiccards.info/query?q=%21obelisk%20of%20undoing
+image=http://mtgimage.com/card/obelisk%20of%20undoing.jpg
+value=1.784
+rarity=R
+type=Artifact
+cost={1}
+ability={6}, {T}: Return target permanent you both own and control to your hand.
+timing=artifact

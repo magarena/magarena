@@ -1,0 +1,11 @@
+name=Petrahydrox
+url=http://www.magiccards.info/query?q=%21petrahydrox
+image=http://mtgimage.com/card/petrahydrox.jpg
+value=2.907
+rarity=C
+type=Creature
+subtype=Weird
+cost={3}{U/R}
+pt=3/3
+ability=When SN becomes the target of a spell or ability, return SN to its owner's hand.
+timing=main

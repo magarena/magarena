@@ -1274,7 +1274,7 @@ public enum MagicRuleEventAction {
         }
     ),
     BounceChosen(
-        "return (?<choice>[^\\.]*) to its owner's hand\\.",
+        "return (?<choice>[^\\.]*) to (its owner's|your) hand\\.",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,

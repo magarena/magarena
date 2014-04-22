@@ -1,0 +1,11 @@
+name=Fleshpulper Giant
+url=http://www.magiccards.info/query?q=%21fleshpulper%20giant
+image=http://mtgimage.com/card/fleshpulper%20giant.jpg
+value=1.328
+rarity=U
+type=Creature
+subtype=Giant
+cost={5}{R}{R}
+pt=4/4
+ability=When SN enters the battlefield, you may destroy target creature with toughness 2 or less.
+timing=main
