@@ -11,13 +11,13 @@ import magic.model.trigger.MagicTriggerType;
 
 public class MagicClashEvent extends MagicEvent {
     
-    private static MagicAction clashAction;
+    private static MagicEventAction clashAction;
     
-    public MagicClashEvent(final MagicEvent event, final MagicAction aClashAction) {
+    public MagicClashEvent(final MagicEvent event, final MagicEventAction aClashAction) {
         this(event.getSource(), event.getPlayer(), aClashAction);
     }
 
-    public MagicClashEvent(final MagicSource source, final MagicPlayer player, final MagicAction aClashAction) {
+    public MagicClashEvent(final MagicSource source, final MagicPlayer player, final MagicEventAction aClashAction) {
         super(
             source,
             player,
@@ -32,7 +32,12 @@ public class MagicClashEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final boolean clashWin = executeClash(game, event);
             if (clashWin) {
-                game.doAction(clashAction);                
+                game.addFirstEvent(new MagicEvent(
+                    event.getSource(),
+                    (clashWin)?1:0,
+                    clashAction,
+                    ""
+                ));
             }
             game.executeTrigger(MagicTriggerType.WhenClash, clashWin);
         }
