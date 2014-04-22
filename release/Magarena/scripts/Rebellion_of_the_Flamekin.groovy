@@ -1,12 +1,11 @@
 [
     new MagicWhenClashTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Object winClash) {
-            final int winInt = ((boolean)winClash) ? 1 : 0;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Boolean winClash) {
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(new MagicPayManaCostChoice(MagicManaCost.create("{1}"))),
-                winInt,
+                winClash ? 1 : 0,
                 this,
                 "PN may\$ pay {1}. If he or she does, PN puts a 3/1 red Elemental Shaman creature token onto the battlefield. " + 
                 "If PN won the clash, that token gains haste until end of turn. "
