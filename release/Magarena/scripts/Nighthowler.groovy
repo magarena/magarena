@@ -3,7 +3,7 @@
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final int size =
-                game.filterCards(player,MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();							 
+                game.filterCards(player,MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();                             
             pt.add(size,size);
         }
         @Override

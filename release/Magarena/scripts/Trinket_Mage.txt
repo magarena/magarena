@@ -1,6 +1,6 @@
 fiercename=Treasure Mage
-url=http://magiccards.info/mbs/en/34.html
-image=http://magiccards.info/scans/en/mbs/34.jpg
+url=
+image=
 value=3.588
 rarity=U
 type=Creature

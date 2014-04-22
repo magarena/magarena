@@ -1,5 +1,5 @@
 name=Troublesome Spirit
-url=
+url=http://magiccards.info/query?q=%21troublesome%20spirit
 image=http://mtgimage.com/card/troublesome%20spirit.jpg
 value=2.088
 rarity=R
