@@ -376,6 +376,12 @@ public class MagicTargetFilterFactory {
             return target.isOwner(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN_AND_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isOwner(player) && target.isController(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl LAND_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Land, Control.You);
 
@@ -603,6 +609,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl WORLD = MagicTargetFilterFactory.permanent(MagicType.World, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.You);
+    
+    public static final MagicPermanentFilterImpl CREATURE_YOU_OWN = MagicTargetFilterFactory.permanent(MagicType.Creature, Own.You);
 
     public static final MagicPermanentFilterImpl CREATURE_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.Opp);
 
@@ -1204,6 +1212,7 @@ public class MagicTargetFilterFactory {
         multiple.put("islands", ISLAND);
         multiple.put("forests", FOREST);
         multiple.put("nonland permanents", NONLAND_PERMANENT);
+        multiple.put("all permanents you own", PERMANENT_YOU_OWN);
         multiple.put("all slivers", SLIVER_PERMANENT);
         multiple.put("all goblins", GOBLIN_PERMANENT);
         multiple.put("goblins", GOBLIN_PERMANENT);
@@ -1366,6 +1375,8 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype> permanent
         single.put("permanent", PERMANENT);
+        single.put("permanent you own", PERMANENT_YOU_OWN);
+        single.put("permanent you both own and control", PERMANENT_YOU_OWN_AND_CONTROL);
         single.put("noncreature permanent", NONCREATURE);
         single.put("spell or permanent", SPELL_OR_PERMANENT);
         single.put("nonland permanent", NONLAND_PERMANENT);
@@ -1373,7 +1384,7 @@ public class MagicTargetFilterFactory {
         single.put("black or red permanent", BLACK_RED_PERMANENT);
         
         // <color|type|subtype>
-        single.put("permanent you own", PERMANENT_YOU_OWN);
+        single.put("creature you own", CREATURE_YOU_OWN);
         single.put("Insect, Rat, Spider, or Squirrel", INSECT_RAT_SPIDER_OR_SQUIRREL);
         single.put("Vampire, Werewolf, or Zombie", VAMPIRE_WEREWOLF_OR_ZOMBIE);
         single.put("attacking or blocking Spirit",  ATTACKING_OR_BLOCKING_SPIRIT);
@@ -1634,9 +1645,30 @@ public class MagicTargetFilterFactory {
         You,
         Opp
     }
+    
+    enum Own {
+        Any,
+        You,
+        Opp
+    }
         
     public static final MagicPermanentFilterImpl permanent(final MagicType type, final Control control) {
         return permanentOr(type, type, control);
+    }
+    
+    public static final MagicPermanentFilterImpl permanent(final MagicType type, final Own own) {
+        return permanentOr(type, type, own);
+    }
+
+    private static MagicPermanentFilterImpl permanentOr(final MagicType type1, final MagicType type2, final Own own) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+                return target.hasType(type1) && target.hasType(type2) &&
+                       ((own == Own.You && target.isOwner(player)) ||
+                        (own == Own.Opp && target.isOwner(player)) ||
+                        (own == Own.Any));
+            }
+        };
     }
 
     public static final MagicPermanentFilterImpl permanentAnd(final MagicType type1, final MagicType type2, final Control control) {
