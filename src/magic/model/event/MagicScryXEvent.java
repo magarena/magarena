@@ -34,19 +34,15 @@ public class MagicScryXEvent extends MagicEvent {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-<<<<<<< local
-                game.addFirstEvent(new MagicEvent(source, player, new MagicFromCardListChoice(getScryList(player, X), getActualX(player, X), true, "to be put on the bottom of your library"), new MagicInteger(getActualX(player, X)), BottomAction, ""));
-=======
                 game.addFirstEvent(new MagicEvent(
                     source, 
                     player, 
                     new MagicFromCardListChoice(getScryList(player, X), 
-                    getActualX(player, X), true), 
+                    getActualX(player, X), true, "to be put on the bottom of your library"), 
                     new MagicInteger(getActualX(player, X)), 
                     BottomAction, 
                     ""
                 ));
->>>>>>> other
             }
         };
     }
