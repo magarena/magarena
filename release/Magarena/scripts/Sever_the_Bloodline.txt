@@ -1,0 +1,9 @@
+name=Sever the Bloodline
+url=http://www.magiccards.info/query?q=%21sever%20the%20bloodline
+image=http://mtgimage.com/card/sever%20the%20bloodline.jpg
+value=3.888
+rarity=R
+type=Sorcery
+cost={3}{B}
+ability=Flashback {5}{B}{B}
+timing=main
