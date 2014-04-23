@@ -780,7 +780,13 @@ public class MagicTargetFilterFactory {
             Operator.GREATER_THAN_OR_EQUAL,
             3
         );
-    
+
+    public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE = new MagicPTTargetFilter(
+            MagicTargetFilterFactory.CREATURE,
+            Operator.GREATER_THAN_OR_EQUAL,
+            5
+        );
+
     public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
         Operator.GREATER_THAN_OR_EQUAL,
@@ -1408,6 +1414,7 @@ public class MagicTargetFilterFactory {
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS); 
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
+        single.put("creature with power 5 or greater", CREATURE_POWER_5_OR_MORE);
         single.put("creature with toughness 2 or less", CREATURE_TOUGHNESS_2_OR_LESS);
         single.put("creature with toughness 3 or less", CREATURE_TOUGHNESS_3_OR_LESS);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
