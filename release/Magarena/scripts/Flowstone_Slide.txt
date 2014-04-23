@@ -1,0 +1,9 @@
+name=Flowstone Slide
+url=http://www.magiccards.info/query?q=%21flowstone%20slide
+image=http://mtgimage.com/card/flowstone%20slide.jpg
+value=2.838
+rarity=R
+type=Sorcery
+cost={X}{2}{R}{R}
+timing=main
+requires_groovy_code

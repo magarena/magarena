@@ -1,0 +1,12 @@
+name=Filigree Angel
+url=http://www.magiccards.info/query?q=%21filigree%20angel
+image=http://mtgimage.com/card/filigree%20angel.jpg
+value=3.128
+rarity=R
+type=Artifact,Creature
+subtype=Angel
+cost={5}{W}{W}{U}
+pt=4/4
+ability=Flying
+timing=artifact
+requires_groovy_code

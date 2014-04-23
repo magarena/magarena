@@ -1,0 +1,9 @@
+name=Esper Panorama
+url=http://www.magiccards.info/query?q=%21esper%20panorama
+image=http://mtgimage.com/card/esper%20panorama.jpg
+value=2.913
+rarity=C
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {1}, {T}, Sacrifice SN: Search your library for a basic Plains, Island, or Swamp card and put it onto the battlefield tapped. Then shuffle your library.
+timing=land

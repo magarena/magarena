@@ -1,0 +1,9 @@
+name=Armistice
+url=http://www.magiccards.info/query?q=%21armistice
+image=http://mtgimage.com/card/armistice.jpg
+value=1.482
+rarity=R
+type=Enchantment
+cost={2}{W}
+timing=enchantment
+requires_groovy_code
