@@ -80,6 +80,7 @@ import magic.model.target.MagicTrampleTargetPicker;
 import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.MagicAtUpkeepTrigger;
 
 import java.util.Collection;
 import java.util.regex.Matcher;
@@ -409,6 +410,26 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicDrawAction(event.getPlayer(), amount));
+                }
+            };
+        }
+    },
+    DrawUpkeep(
+        "(pn )?draw(s)? a card at the beginning of the next turn's upkeep\\.", 
+        MagicTiming.Draw, 
+        "Draw"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicAddTriggerAction(
+                        MagicAtUpkeepTrigger.YouDraw(
+                            event.getSource(), 
+                            event.getPlayer()
+                        )
+                    ));
                 }
             };
         }
