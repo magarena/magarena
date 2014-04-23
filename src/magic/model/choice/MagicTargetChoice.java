@@ -50,6 +50,9 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice NEG_TARGET_INSTANT_OR_SORCERY_SPELL = 
         MagicTargetChoice.Negative("target instant or sorcery spell");
+    
+    public static final MagicTargetChoice NEG_TARGET_INSTANT_SPELL =
+        MagicTargetChoice.Negative("target instant spell");
 
     public static final MagicTargetChoice NEG_TARGET_ARTIFACT_SPELL = 
         MagicTargetChoice.Negative("target artifact spell");
@@ -83,6 +86,9 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN = 
         new MagicTargetChoice("target permanent you own");
+    
+    public static final MagicTargetChoice TARGET_PERMANENT_YOU_OWN_OR_CONTROL =
+        new MagicTargetChoice("target permanent you own or control");
 
     public static final MagicTargetChoice NEG_TARGET_PERMANENT = 
         MagicTargetChoice.Negative("target permanent");

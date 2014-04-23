@@ -382,6 +382,12 @@ public class MagicTargetFilterFactory {
             return target.isOwner(player) && target.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN_OR_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isOwner(player) || target.isController(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl LAND_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Land, Control.You);
 
@@ -1461,6 +1467,7 @@ public class MagicTargetFilterFactory {
         
         // <color|type|subtype>
         single.put("creature you own", CREATURE_YOU_OWN);
+        single.put("permanent you own or control", PERMANENT_YOU_OWN_OR_CONTROL);
         single.put("Insect, Rat, Spider, or Squirrel", INSECT_RAT_SPIDER_OR_SQUIRREL);
         single.put("Vampire, Werewolf, or Zombie", VAMPIRE_WEREWOLF_OR_ZOMBIE);
         single.put("attacking or blocking Spirit",  ATTACKING_OR_BLOCKING_SPIRIT);
