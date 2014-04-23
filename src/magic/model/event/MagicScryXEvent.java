@@ -30,7 +30,7 @@ public class MagicScryXEvent extends MagicEvent {
             game.addFirstEvent(new MagicEvent(
                 event.getSource(),
                 event.getPlayer(),
-                new MagicFromCardListChoice(choiceList, choiceList.size(), true), 
+                new MagicFromCardListChoice(choiceList, choiceList.size(), true, "to be put on the bottom of your library"), 
                 choiceList.size(),
                 BottomAction, 
                 ""
@@ -54,7 +54,7 @@ public class MagicScryXEvent extends MagicEvent {
             game.addFirstEvent(new MagicEvent(                    
                 event.getSource(),
                 event.getPlayer(),
-                new MagicFromCardListChoice(choiceList, choiceList.size()),
+                new MagicFromCardListChoice(choiceList, choiceList.size(), "to be put on the top of your library"),
                 TopAction,
                 ""
             ));
