@@ -1,0 +1,9 @@
+name=Soul Rend
+url=http://www.magiccards.info/query?q=%21soul%20rend
+image=http://mtgimage.com/card/soul%20rend.jpg
+value=3.29
+rarity=U
+type=Instant
+cost={1}{B}
+timing=removal
+requires_groovy_code

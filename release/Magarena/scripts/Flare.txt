@@ -1,0 +1,9 @@
+name=Flare
+url=http://www.magiccards.info/query?q=%21flare
+image=http://mtgimage.com/card/flare.jpg
+value=1.541
+rarity=C
+type=Instant
+cost={2}{R}
+timing=removal
+requires_groovy_code

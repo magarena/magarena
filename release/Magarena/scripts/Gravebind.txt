@@ -1,0 +1,9 @@
+name=Gravebind
+url=http://www.magiccards.info/query?q=%21gravebind
+image=http://mtgimage.com/set/me4/gravebind.jpg
+value=2.52
+rarity=C
+type=Instant
+cost={B}
+timing=removal
+requires_groovy_code

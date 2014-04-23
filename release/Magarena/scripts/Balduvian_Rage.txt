@@ -1,0 +1,9 @@
+name=Balduvian Rage
+url=http://www.magiccards.info/query?q=%21balduvian%20rage
+image=http://mtgimage.com/card/balduvian%20rage.jpg
+value=3.365
+rarity=U
+type=Instant
+cost={X}{R}
+timing=pump
+requires_groovy_code

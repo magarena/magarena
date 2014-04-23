@@ -1,0 +1,9 @@
+name=Ray of Erasure
+url=http://www.magiccards.info/query?q=%21ray%20of%20erasure
+image=http://mtgimage.com/card/ray%20of%20erasure.jpg
+value=2.897
+rarity=C
+type=Instant
+cost={U}
+timing=removal
+requires_groovy_code

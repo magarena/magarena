@@ -1,0 +1,9 @@
+name=Mystic Melting
+url=http://www.magiccards.info/query?q=%21mystic%20melting
+image=http://mtgimage.com/card/mystic%20melting.jpg
+value=2.695
+rarity=U
+type=Instant
+cost={3}{G}
+timing=removal
+requires_groovy_code

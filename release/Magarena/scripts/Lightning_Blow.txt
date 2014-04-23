@@ -1,0 +1,9 @@
+name=Lightning Blow
+url=http://www.magiccards.info/query?q=%21lightning%20blow
+image=http://mtgimage.com/set/me3/lightning%20blow.jpg
+value=2.208
+rarity=C
+type=Instant
+cost={1}{W}
+timing=pump
+requires_groovy_code

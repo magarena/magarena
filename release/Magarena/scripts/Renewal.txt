@@ -1,0 +1,10 @@
+name=Renewal
+url=http://www.magiccards.info/query?q=%21renewal
+image=http://mtgimage.com/card/renewal.jpg
+value=2.882
+rarity=C
+type=Sorcery
+cost={2}{G}
+ability=As an additional cost to cast SN, sacrifice a land.
+timing=main
+requires_groovy_code

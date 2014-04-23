@@ -1,0 +1,9 @@
+name=Blessed Wine
+url=http://www.magiccards.info/query?q=%21blessed%20wine
+image=http://mtgimage.com/card/blessed%20wine.jpg
+value=1.281
+rarity=C
+type=Instant
+cost={1}{W}
+timing=pump
+requires_groovy_code

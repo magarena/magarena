@@ -1,0 +1,12 @@
+name=Ritual of Steel
+url=http://www.magiccards.info/query?q=%21ritual%20of%20steel
+image=http://mtgimage.com/card/ritual%20of%20steel.jpg
+value=1.758
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+enchant=pump,pos creature
+given_pt=+0/+2
+ability=When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.
+timing=enchantment

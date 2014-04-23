@@ -1,0 +1,9 @@
+name=Force Void
+url=http://www.magiccards.info/query?q=%21force%20void
+image=http://mtgimage.com/card/force%20void.jpg
+value=1.78
+rarity=U
+type=Instant
+cost={2}{U}
+timing=counter
+requires_groovy_code

@@ -1,0 +1,9 @@
+name=Updraft
+url=http://www.magiccards.info/query?q=%21updraft
+image=http://mtgimage.com/card/updraft.jpg
+value=2.261
+rarity=C
+type=Instant
+cost={1}{U}
+timing=pump
+requires_groovy_code

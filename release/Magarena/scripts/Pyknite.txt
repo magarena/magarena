@@ -1,0 +1,11 @@
+name=Pyknite
+url=http://www.magiccards.info/query?q=%21pyknite
+image=http://mtgimage.com/card/pyknite.jpg
+value=2.657
+rarity=C
+type=Creature
+subtype=Ouphe
+cost={2}{G}
+pt=1/1
+ability=When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.
+timing=main

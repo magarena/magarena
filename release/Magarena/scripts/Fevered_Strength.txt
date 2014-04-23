@@ -1,0 +1,9 @@
+name=Fevered Strength
+url=http://www.magiccards.info/query?q=%21fevered%20strength
+image=http://mtgimage.com/set/me3/fevered%20strength.jpg
+value=2.733
+rarity=C
+type=Instant
+cost={2}{B}
+timing=pump
+requires_groovy_code
