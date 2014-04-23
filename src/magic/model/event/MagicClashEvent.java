@@ -31,12 +31,9 @@ public class MagicClashEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final boolean clashWin = executeClash(game, event);
-            game.addFirstEvent(new MagicEvent(
-                 event.getSource(),
-                 (clashWin)?1:0,
-                 clashAction,
-                 ""
-            ));
+            if (clashWin) {
+                clashAction.executeEvent(game, event);
+            };
             game.executeTrigger(MagicTriggerType.WhenClash, clashWin);
         }
     };
