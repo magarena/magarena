@@ -165,11 +165,33 @@ final public class GraphicsUtilities {
         return capture;
     }
 
-    private static BufferedImage getCompatibleBufferedImage(final int width, final int height) {
+    public static BufferedImage getCompatibleBufferedImage(final int width, final int height) {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gs = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gc = gs.getDefaultConfiguration();
         return gc.createCompatibleImage(width, height, Transparency.OPAQUE);
+    }
+
+    public static boolean isValidImageFile(final Path imageFilePath) {
+        try {
+            final BufferedImage image = ImageIO.read(imageFilePath.toFile());
+            return (image != null);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * The images returned by ImageIO are often in custom formats which can draw really,
+     * really slowly. For best performance, it's often best to draw any image returned by
+     * ImageIO into a new image of the appropriate pixel format for your system.
+     * (http://www.jhlabs.com/ip/managed_images.html)
+     */
+    public static BufferedImage getOptimizedImage(final BufferedImage source) {
+        final BufferedImage buffImage = getCompatibleBufferedImage(source.getWidth(), source.getHeight());
+        buffImage.getGraphics().drawImage(source, 0, 0, null);
+        return buffImage;
     }
 
 }
