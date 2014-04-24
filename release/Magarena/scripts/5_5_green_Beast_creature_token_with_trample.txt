@@ -1,6 +1,6 @@
 name=5/5 green Beast creature token with trample
 token=Beast
-image=http://magiccards.info/extras/token/return-to-ravnica/wurm.jpg
+image=http://cdn.staticneo.com/w/mtg/a/a6/Beast4.jpg
 value=5
 type=Creature
 subtype=Beast
@@ -8,4 +8,3 @@ color=g
 cost={0}
 pt=5/5
 ability=trample
-#Unable to find a 5/5 green beast token with trample - Using image of Wurm
