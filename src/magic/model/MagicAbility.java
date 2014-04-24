@@ -708,15 +708,7 @@ public enum MagicAbility {
             card.add(MagicPlayAuraEvent.create("default," + ARG.wordrun(arg)));
         }
     },
-    EnchantedPump("Enchanted creature gets " + ARG.PT + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(MagicStatic.genPTStatic(power, toughness));
-        }
-    },
-    EnchantedPumpGain("Enchanted creature gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
+    AttachedPumpGain("(Equipped|Enchanted) creature gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -730,7 +722,15 @@ public enum MagicAbility {
             }
         }
     },
-    EnchantedGain("Enchanted " + ARG.WORDRUN + " (has )?" + ARG.ANY + "(\\.)?", 0) {
+    AttachedPump("(Equipped|Enchanted) creature gets " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(MagicStatic.genPTStatic(power, toughness));
+        }
+    },
+    EquippedGain("Equipped creature (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
             final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
@@ -740,29 +740,7 @@ public enum MagicAbility {
             }
         }
     },
-    EquippedPumpGain("Equipped creature gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(MagicStatic.genPTStatic(power, toughness));
-            final String abilitiesLong = ARG.any(arg).replace(", and ",",").replace(" and ",",");
-            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
-            for (String abilityString : abilityArray) {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityString);
-                card.add(MagicStatic.genABStatic(abilityList));
-            }
-        }
-    },
-    EquippedPump("Equipped creature gets " + ARG.PT + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(MagicStatic.genPTStatic(power, toughness));
-        }
-    },
-    EquippedGain("Equipped creature (has )?" + ARG.ANY + "(\\.)?", 0) {
+    EnchantedGain("Enchanted " + ARG.WORDRUN + " (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
             final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
