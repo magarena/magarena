@@ -139,13 +139,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         add(leftScrollPane);
 
         filterPanel = new ExplorerFilterPanel(this);
-
-        final JScrollPane filterScrollPane = new JScrollPane(filterPanel);
-        filterScrollPane.setBorder(FontsAndBorders.NO_BORDER);
-        filterScrollPane.setOpaque(false);
-        filterScrollPane.getViewport().setOpaque(false);
-        filterScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-        add(filterScrollPane);
+        add(filterPanel);
 
         // card pool
         cardPoolDefs = filterPanel.getCardDefinitions();
@@ -193,20 +187,20 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
                              SPACING, SpringLayout.NORTH, contentPane);
 
         // gap between card image and filter
-        springLayout.putConstraint(SpringLayout.WEST, filterScrollPane,
+        springLayout.putConstraint(SpringLayout.WEST, filterPanel,
                              SPACING, SpringLayout.EAST, leftScrollPane);
 
         // filter panel's gaps (top right)
-        springLayout.putConstraint(SpringLayout.NORTH, filterScrollPane,
+        springLayout.putConstraint(SpringLayout.NORTH, filterPanel,
                              0, SpringLayout.NORTH, leftScrollPane);
-        springLayout.putConstraint(SpringLayout.EAST, filterScrollPane,
+        springLayout.putConstraint(SpringLayout.EAST, filterPanel,
                              -SPACING, SpringLayout.EAST, contentPane);
 
         // filter panel's gap with card tables
         springLayout.putConstraint(SpringLayout.WEST, cardsPanel,
-                             0, SpringLayout.WEST, filterScrollPane);
+                             0, SpringLayout.WEST, filterPanel);
         springLayout.putConstraint(SpringLayout.NORTH, cardsPanel,
-                             SPACING, SpringLayout.SOUTH, filterScrollPane);
+                             SPACING, SpringLayout.SOUTH, filterPanel);
 
         // card tables' gap (right)
         springLayout.putConstraint(SpringLayout.EAST, cardsPanel,
