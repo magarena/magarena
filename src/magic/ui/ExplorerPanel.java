@@ -156,11 +156,14 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
 
         if (isDeckEditor()) {
+
             cardPoolTable.addMouseListener(new CardPoolMouseListener());
+            cardPoolTable.setDeckEditorSelectionMode();
 
             deckDefs = this.deck;
             deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs), true);
             deckTable.addMouseListener(new DeckMouseListener());
+            deckTable.setDeckEditorSelectionMode();
 
             final JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
             cardsSplitPane.setOneTouchExpandable(true);
