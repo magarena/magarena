@@ -1,10 +1,7 @@
 [
-    new MagicWhenBecomesBlockedTrigger() {
+    new MagicWhenSelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            if (permanent != attacker) {
-                return MagicEvent.NONE;
-            }
             final MagicPermanentList plist = permanent.getBlockingCreatures();
             boolean pump = false;
             for (final MagicPermanent blocker : plist) {

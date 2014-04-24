@@ -23,16 +23,16 @@ def event = {
             permanent.addAbility(MagicAbility.AttacksEachTurnIfAble, flags);
         }
     },
-    new MagicWhenBlocksTrigger() {
+    new MagicWhenSelfBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
-            return (permanent == blocker) ? event(permanent) : MagicEvent.NONE;
+            return event(permanent);
         }
     },
-    new MagicWhenBecomesBlockedTrigger() {
+    new MagicWhenSelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
-            return (permanent == blocked) ? event(permanent) : MagicEvent.NONE;
+            return event(permanent);
         }
     }
 ]

@@ -1,10 +1,7 @@
 [
-    new MagicWhenBecomesBlockedTrigger() {
+    new MagicWhenSelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            if (permanent != attacker) {
-                return MagicEvent.NONE;
-            }
             int amount = 0;
             for (final MagicPermanent blocker : permanent.getBlockingCreatures()) {
                 if (blocker.isArtifact() && blocker.isCreature()) {

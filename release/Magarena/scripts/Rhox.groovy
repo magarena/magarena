@@ -1,15 +1,13 @@
 [
-    new MagicWhenBecomesBlockedTrigger() {
+    new MagicWhenSelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
-            return (permanent == attacker) ?
-                new MagicEvent(
-                    permanent,
-                    new MagicMayChoice(),
-                    this,
-                    "PN may\$ have SN assign its combat damage as though it weren't blocked."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                new MagicMayChoice(),
+                this,
+                "PN may\$ have SN assign its combat damage as though it weren't blocked."
+            );
         }
 
         @Override

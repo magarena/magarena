@@ -1,15 +1,13 @@
 [
-    new MagicWhenBecomesBlockedTrigger() {
+    new MagicWhenSelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
-            return (permanent == blocked) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getOpponent(),
-                    this,
-                    "PN discards a card."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                permanent.getOpponent(),
+                this,
+                "PN discards a card."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

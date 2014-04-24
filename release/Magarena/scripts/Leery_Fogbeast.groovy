@@ -1,15 +1,12 @@
 [
-    new MagicWhenBecomesBlockedTrigger() {
-
+    new MagicWhenSelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
-            return (permanent == attacker) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "Prevent all combat damage that would be dealt this turn."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "Prevent all combat damage that would be dealt this turn."
+            );
         }
 
         @Override
