@@ -124,6 +124,9 @@ public class ExplorerPanel extends TexturedPanel {
         final Container cardsPanel; // reference panel holding both card pool and deck
 
         cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
+        if (!isDeckEditor()) {
+            cardPoolTable.setSingleSelectionMode();
+        }
 
         if (isDeckEditor()) {
             cardPoolTable.addMouseListener(new CardPoolMouseListener());
