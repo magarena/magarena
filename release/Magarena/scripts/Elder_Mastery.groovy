@@ -8,7 +8,7 @@
                     permanent,
                     damage.getTarget(),
                     this,
-                    "RN's discards two cards."
+                    "RN discards two cards."
                 ):
                 MagicEvent.NONE;
         }
