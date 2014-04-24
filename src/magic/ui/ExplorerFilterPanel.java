@@ -10,6 +10,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.ButtonControlledPopup;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -25,11 +26,9 @@ import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -43,13 +42,13 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
     private static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
     private static final String RESET_BUTTON_TEXT = "Reset";
-    private static final Dimension BUTTON_SIZE = new Dimension(70, 25);
     private static final int SEARCH_FIELD_WIDTH = 12;
     private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
     private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 40);
     private static final Dimension SEARCH_HOLDER_PANEL_SIZE = new Dimension(150, 72);
 
+    private final MigLayout layout = new MigLayout();
     private final ExplorerPanel explorerPanel;
     private ButtonControlledPopup typePopup;
     private JCheckBox[] typeCheckBoxes;
@@ -77,7 +76,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         disableUpdate = false;
 
         setBorder(FontsAndBorders.UP_BORDER);
-        setLayout(new FlowLayout(FlowLayout.LEFT));
+
+        layout.setRowConstraints("align center");
+        setLayout(layout);
 
         addCardTypeFilter();
         addCardColorFilter();
@@ -422,27 +423,23 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private void addSearchTextFilter() {
         final TitledBorder textFilterBorder = BorderFactory.createTitledBorder("Search Text");
         textFilterBorder.setTitleColor(TEXT_COLOR);
-        final JPanel textFilterPanel = new JPanel(new BorderLayout());
+        final JPanel textFilterPanel = new JPanel(new MigLayout("insets 0"));
         textFilterPanel.setOpaque(false);
         textFilterPanel.setBorder(textFilterBorder);
         textFilterPanel.setPreferredSize(SEARCH_HOLDER_PANEL_SIZE);
         nameTextField = new JTextField(SEARCH_FIELD_WIDTH);
         nameTextField.addActionListener(this);
         nameTextField.getDocument().addDocumentListener(this);
-        textFilterPanel.add(nameTextField, BorderLayout.CENTER);
+        textFilterPanel.add(nameTextField);
         add(textFilterPanel);
     }
 
     private void addResetButton() {
-        final JPanel resetFilterPanel = new JPanel(new BorderLayout());
-        resetFilterPanel.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
-        resetFilterPanel.setOpaque(false);
         resetButton = new JButton(RESET_BUTTON_TEXT);
         resetButton.setFont(FontsAndBorders.FONT1);
         resetButton.addActionListener(this);
-        resetButton.setPreferredSize(BUTTON_SIZE);
-        resetFilterPanel.add(resetButton, BorderLayout.CENTER);
-        add(resetFilterPanel);
+        resetButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
+        add(resetButton);
     }
 
 }
