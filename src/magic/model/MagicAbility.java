@@ -74,7 +74,7 @@ public enum MagicAbility {
     ProtectionFromWerewolves("protection from Werewolves",10),
     ProtectionFromColoredSpells("protection from colored spells",100),
     ProtectionFromEverything("protection from everything",200),
-    ProtectionFromZombies("protection from Zombies",10),
+    ProtectionFromZombies("protection from Zombies(\\.)?",10),
     ProtectionFromLands("protection from lands",10),
     ProtectionFromSpirits("protection from Spirits",10),
     ProtectionFromArcane("protection from Arcane",10),
@@ -728,6 +728,24 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(MagicStatic.genPTStatic(power, toughness));
+        }
+    },
+    PairedPump("As long as SN is paired with another creature, each of those creatures gets " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(MagicStatic.genPTStatic(power, toughness));
+        }
+    },
+    PairedGain("As long as SN is paired with another creature, (both creatures have|each of those creatures has) " + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
+            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+            for (String abilityString : abilityArray) {
+                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityString);
+                card.add(MagicStatic.genABStatic(abilityList));
+            }
         }
     },
     EquippedGain("Equipped creature (has )?" + ARG.ANY + "(\\.)?", 0) {
