@@ -66,7 +66,7 @@ public enum MagicAbility {
     ProtectionFromWhite("(protection )?from white(\\.)?",20),
     ProtectionFromMonoColored("protection from monocolored",50),
     ProtectionFromAllColors("protection from all colors",150),
-    ProtectionFromCreatures("protection from creatures",100),
+    ProtectionFromCreatures("protection from creatures(\\.)?",100),
     ProtectionFromArtifacts("protection from artifacts",50),
     ProtectionFromDemons("protection from Demons",10),
     ProtectionFromDragons("protection from Dragons",10),
@@ -114,7 +114,7 @@ public enum MagicAbility {
             card.add(MagicModularTrigger.create());
         }
     },
-    Flanking("flanking",10) {
+    Flanking("flanking(\\.)?",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicFlankingTrigger.create());
         }
@@ -497,7 +497,7 @@ public enum MagicAbility {
             card.add(MagicStormTrigger.create());
         }
     },
-    Annihilator("annihilator " + ARG.NUMBER, 80) {
+    Annihilator("annihilator " + ARG.NUMBER + "(\\.)?", 80) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new MagicAnnihilatorTrigger(n));
@@ -708,7 +708,7 @@ public enum MagicAbility {
             card.add(MagicPlayAuraEvent.create("default," + ARG.wordrun(arg)));
         }
     },
-    EnchantedPump("Enchanted " + ARG.WORDRUN + " gets " + ARG.PT + "(\\.)?", 0) {
+    EnchantedPump("Enchanted creature gets " + ARG.PT + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -716,7 +716,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    EnchantedPumpGain("Enchanted " + ARG.WORDRUN + " gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
+    EnchantedPumpGain("Enchanted creature gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
