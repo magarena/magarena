@@ -16,8 +16,8 @@ public class MagicScryAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-       card = player.getLibrary().removeCardAtTop();
-       player.getLibrary().addToBottom(card);
+        card = player.getLibrary().removeCardAtTop();
+        player.getLibrary().addToBottom(card);
     }
 
     @Override
