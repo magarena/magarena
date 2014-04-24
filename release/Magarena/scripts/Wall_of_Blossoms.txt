@@ -1,11 +1,12 @@
 name=Wall of Blossoms
 url=http://magiccards.info/query?q=%21wall%20of%20blossoms
-image=http://mtgimage.com/card/wall%20of%20blossoms.jpg
+image=http://mtgimage.com/set/pc2/wall%20of%20blossoms.jpg
 value=4.333
 rarity=U
 type=Creature
 subtype=Plant,Wall
 cost={1}{G}
 pt=0/4
-ability=defender;When SN enters the battlefield, draw a card.
+ability=Defender;\
+        When SN enters the battlefield, draw a card.
 timing=main

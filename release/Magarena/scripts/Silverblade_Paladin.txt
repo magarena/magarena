@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=soulbond
-given_ability=double strike
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have double strike.
 timing=main

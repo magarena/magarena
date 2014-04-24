@@ -7,6 +7,6 @@ type=Creature
 subtype=Wurm
 cost={4}{G}{G}
 pt=6/4
-ability=soulbond
-given_ability=trample
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have trample.
 timing=main

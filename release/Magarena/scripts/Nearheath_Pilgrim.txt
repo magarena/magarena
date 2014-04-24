@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=2/1
-ability=soulbond
-given_ability=lifelink
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have lifelink.
 timing=main

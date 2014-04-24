@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Berserker
 cost={1}{R}
 pt=2/1
-ability=soulbond
-given_ability=haste
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have haste.
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit,Soldier
 cost={4}{W}
 pt=2/5
-ability=soulbond
-given_ability=vigilance
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have vigilance.
 timing=main

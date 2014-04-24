@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Cleric
 cost={G}
 pt=1/1
-ability=soulbond
-given_ability=protection from Zombies
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have protection from Zombies.
 timing=main

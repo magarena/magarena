@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Soldier
 cost={3}{U}
 pt=2/3
-ability=soulbond
-given_ability=hexproof
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have hexproof.
 timing=main
