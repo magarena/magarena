@@ -30,7 +30,7 @@ import java.awt.event.MouseEvent;
 import java.util.List;
 
 
-public class ExplorerPanel extends TexturedPanel implements ActionListener {
+public class ExplorerPanel extends TexturedPanel {
 
     private static final long serialVersionUID = 1L;
 
@@ -51,6 +51,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
     private final boolean isDeckEditor;
     private MagicDeck deck;
     private MagicDeck originalDeck;
+    private DeckEditorButtonsPanel buttonsPanel;
 
     // CTR - Card Explorer
     public ExplorerPanel() {
@@ -78,32 +79,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         setLayout(springLayout);
 
         // buttons
-        final JPanel buttonsPanel = new JPanel();
-        buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
-        buttonsPanel.setOpaque(false);
-
-        // create buttons for deck editing
-        if (isDeckEditor()) {
-            addButton = new JButton(ADD_BUTTON_TEXT);
-            addButton.setFont(FontsAndBorders.FONT1);
-            addButton.setFocusable(false);
-            addButton.addActionListener(this);
-            buttonsPanel.add(addButton);
-
-            buttonsPanel.add(Box.createHorizontalStrut(SPACING));
-
-            removeButton = new JButton(REMOVE_BUTTON_TEXT);
-            removeButton.setFont(FontsAndBorders.FONT1);
-            removeButton.setFocusable(false);
-            removeButton.addActionListener(this);
-            buttonsPanel.add(removeButton);
-
-            buttonsPanel.add(Box.createHorizontalStrut(SPACING));
-        } else {
-            addButton = null;
-            removeButton = null;
-        }
-
+        buttonsPanel = new DeckEditorButtonsPanel(isDeckEditor());
         add(buttonsPanel);
 
         // left side (everything but buttons)
@@ -250,6 +226,7 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
             statsViewer.setDeck(deckDefs);
+            validate();
         }
     }
 
@@ -282,19 +259,6 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
         } else {
             // display error
             JOptionPane.showMessageDialog(MagicMain.rootFrame, "Select a valid card in the card pool to add it to the deck.", "Error", JOptionPane.ERROR_MESSAGE);
-        }
-    }
-
-    @Override
-    public void actionPerformed(final ActionEvent event) {
-        final Object source=event.getSource();
-
-        if (isDeckEditor()) {
-            if (source == addButton) {
-                addSelectedToDeck();
-            } else if (source == removeButton) {
-                removeSelectedFromDeck();
-            }
         }
     }
 
@@ -399,6 +363,56 @@ public class ExplorerPanel extends TexturedPanel implements ActionListener {
 
     private boolean isUpdatingExistingDeck() {
         return this.originalDeck != null;
+    }
+
+    @SuppressWarnings("serial")
+    private class DeckEditorButtonsPanel extends JPanel implements ActionListener {
+
+        private final boolean isDeckEditor;
+
+        public DeckEditorButtonsPanel(final boolean isDeckEditor) {
+
+            this.isDeckEditor = isDeckEditor;
+
+            setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+            setOpaque(false);
+
+            if (isDeckEditor) {
+                addButton = new JButton(ADD_BUTTON_TEXT);
+                addButton.setFont(FontsAndBorders.FONT1);
+                addButton.setFocusable(false);
+                addButton.addActionListener(this);
+                add(addButton);
+
+                add(Box.createHorizontalStrut(SPACING));
+
+                removeButton = new JButton(REMOVE_BUTTON_TEXT);
+                removeButton.setFont(FontsAndBorders.FONT1);
+                removeButton.setFocusable(false);
+                removeButton.addActionListener(this);
+                add(removeButton);
+
+                add(Box.createHorizontalStrut(SPACING));
+
+            } else {
+                addButton = null;
+                removeButton = null;
+            }
+
+        }
+
+        @Override
+        public void actionPerformed(final ActionEvent event) {
+            final Object source=event.getSource();
+            if (isDeckEditor) {
+                if (source == addButton) {
+                    addSelectedToDeck();
+                } else if (source == removeButton) {
+                    removeSelectedFromDeck();
+                }
+            }
+        }
+
     }
 
 }
