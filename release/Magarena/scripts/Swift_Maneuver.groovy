@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 MagicTargetChoice.POS_TARGET_CREATURE_OR_PLAYER,
-                MagicPumpTargetPicker.create(),
+                MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next 2 damage that would be dealt to target creature or player\$ this turn. "+
                 "PN draws a card at the beginning of the next turn's upkeep."
