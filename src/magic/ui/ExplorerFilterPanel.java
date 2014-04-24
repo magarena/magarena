@@ -77,16 +77,16 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
         setBorder(FontsAndBorders.UP_BORDER);
 
-        layout.setRowConstraints("align center");
+        layout.setLayoutConstraints("flowy, wrap 2");
         setLayout(layout);
 
         addCardTypeFilter();
+        addCardSubtypeFilter();
         addCardColorFilter();
         addManaCostFilter();
-        addCardSubtypeFilter();
         addCardRarityFilter();
-        addSearchTextFilter();
         addResetButton();
+        addSearchTextFilter();
 
     }
 
@@ -431,7 +431,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         nameTextField.addActionListener(this);
         nameTextField.getDocument().addDocumentListener(this);
         textFilterPanel.add(nameTextField);
-        add(textFilterPanel);
+        add(textFilterPanel, "spany 2");
     }
 
     private void addResetButton() {
