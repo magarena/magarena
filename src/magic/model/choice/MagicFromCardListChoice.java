@@ -53,13 +53,8 @@ public class MagicFromCardListChoice extends MagicChoice {
         this(choiceList, showList, amount, false, description);
     }
     
-    public MagicFromCardListChoice(final List<MagicCard> aChoiceList,final List<MagicCard> aShowList,final int aAmount, final boolean aUpTo) {
-        super(genDescription(aAmount, "", aUpTo));
-        choiceList = aChoiceList;
-        showList = new MagicCardList(aShowList);
-        amount = aAmount;
-        upTo = aUpTo;
-        displayMessage = genDescription(aAmount, "", aUpTo);
+    public MagicFromCardListChoice(final List<MagicCard> choiceList,final List<MagicCard> showList,final int amount, final boolean upTo) {
+        this(choiceList, showList, amount, upTo, "");
     }
     
     public MagicFromCardListChoice(final List<MagicCard> aChoiceList,final List<MagicCard> aShowList,final int aAmount, final boolean aUpTo, final String description) {
