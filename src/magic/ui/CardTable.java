@@ -48,12 +48,16 @@ public class CardTable extends JPanel implements ListSelectionListener {
     }
 
     public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer, final String title, final boolean isDeck) {
+
         this.tableModel = new CardTableModel(defs, isDeck);
+
         this.table = new JTable(tableModel);
         this.selectionModel = table.getSelectionModel();
         this.cardViewer = cardViewer;
         this.lastSelectedCards = new ArrayList<MagicCardDefinition>();
 
+        table.setAutoscrolls(false);
+        table.setDefaultRenderer(Object.class, new HideCellFocusRenderer());
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
         table.setRowHeight(20);
@@ -230,7 +234,19 @@ public class CardTable extends JPanel implements ListSelectionListener {
                 myRender.setBackground(new Color(getBackground().getRed(), getBackground().getGreen(), getBackground().getBlue()));
 
             }
+            myRender.setBorder(noFocusBorder);
             return myRender;
         }
     }
+
+    @SuppressWarnings("serial")
+    private class HideCellFocusRenderer extends DefaultTableCellRenderer {
+        @Override
+        public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+            super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+            setBorder(noFocusBorder);
+            return this;
+        }
+    }
+
 }
