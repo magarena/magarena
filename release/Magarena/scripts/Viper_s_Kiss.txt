@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={B}
 given_ability=can't activate abilities
-given_pt=-1/-1
+ability=Enchanted creature gets -1/-1.
 enchant=weaken -1/-1,neg creature
 timing=aura

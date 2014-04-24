@@ -6,8 +6,7 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={5}{U}{U}
-given_pt=2/2
-given_ability=flying
 timing=aura
-ability=You control enchanted creature.
+ability=You control enchanted creature.;\
+        Enchanted creature gets +2/+2 and has flying.
 enchant=gain control,neg creature

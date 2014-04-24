@@ -6,8 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-given_pt=1/1
-ability=totem armor
-given_ability=Whenever SN deals damage to an opponent, you may draw a card.
+ability=Enchanted creature gets +1/+1 and has "Whenever SN deals damage to an opponent, you may draw a card.";\
+        totem armor
 timing=aura
 enchant=pump,pos creature

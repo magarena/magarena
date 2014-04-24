@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Cat
 cost={3}{G}
 pt=3/3
-ability=bestow {5}{G};trample
-given_ability=trample
-given_pt=+3/+3
+ability=Bestow {5}{G};\
+        Trample;\
+        Enchanted creature gets +3/+3 and has trample.
 timing=main

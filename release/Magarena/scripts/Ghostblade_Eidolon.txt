@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Spirit
 cost={2}{W}
 pt=1/1
-ability=bestow {5}{W};double strike
-given_pt=+1/+1
-given_ability=double strike
+ability=Bestow {5}{W};\
+        Double strike;\
+        Enchanted creature gets +1/+1 and has double strike.
 timing=main

@@ -6,8 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-given_pt=2/0
-given_ability=trample
-ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
+ability=Enchanted creature gets +2/+0 and has trample.;\
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=trample,pos creature

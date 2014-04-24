@@ -2,11 +2,10 @@ name=Weakness
 url=http://magiccards.info/query?q=%21weakness
 image=http://mtgimage.com/card/weakness.jpg
 value=3.167
-removal=1
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-given_pt=-2/-1
-timing=removal
+ability=Enchanted creature gets -2/-1.
+timing=aura
 enchant=weaken -2/-1,neg creature

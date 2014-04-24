@@ -6,8 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{U}{B}{R}
-enchant=pump,pos creature
-given_pt=+3/+3
-given_ability=flying;\
-        Whenever SN deals damage to a player, that player discards two cards.
+ability=Enchanted creature gets +3/+3 and has flying.
 timing=enchantment
+enchant=pump,pos creature
+requires_groovy_code

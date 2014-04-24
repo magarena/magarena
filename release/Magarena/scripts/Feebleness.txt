@@ -7,7 +7,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
-ability=flash
-given_pt=-2/-1
+ability=Flash;\
+        Enchanted creature gets -2/-1.
 timing=flash
 enchant=weaken -2/-1,neg creature

@@ -2,11 +2,10 @@ name=Enfeeblement
 url=http://magiccards.info/query?q=%21enfeeblement
 image=http://mtgimage.com/card/enfeeblement.jpg
 value=2.741
-removal=2
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}{B}
-given_pt=-2/-2
-timing=removal
+ability=Enchanted creature gets -2/-2.
+timing=aura
 enchant=weaken -2/-2,neg creature

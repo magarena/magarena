@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{B}
-given_pt=+2/-2
-enchant=weaken +2/-2,creature
+ability=Enchanted creature gets +2/-2.
 timing=aura
+enchant=weaken +2/-2,creature
 requires_groovy_code

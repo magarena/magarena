@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=cycling {2}
-given_pt=-1/-1
-enchant=weaken,neg creature
+ability=Enchanted creature gets -1/-1.;\
+        Cycling {2}
 timing=aura
+enchant=weaken,neg creature

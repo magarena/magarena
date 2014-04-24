@@ -7,6 +7,6 @@ type=Enchantment,Creature
 subtype=Spirit
 cost={1}{B}
 pt=2/1
-ability=bestow {4}{B}
-given_pt=+2/+1
+ability=Bestow {4}{B};\
+        Enchanted creature gets +2/+1.
 timing=main

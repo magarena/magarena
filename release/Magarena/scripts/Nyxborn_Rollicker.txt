@@ -7,6 +7,6 @@ type=Enchantment,Creature
 subtype=Satyr
 cost={R}
 pt=1/1
-ability=bestow {1}{R}
-given_pt=+1/+1
+ability=Bestow {1}{R};\
+        Enchanted creature gets +1/+1.
 timing=main

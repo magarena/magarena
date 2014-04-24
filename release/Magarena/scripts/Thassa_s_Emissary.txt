@@ -7,8 +7,8 @@ type=Enchantment,Creature
 subtype=Crab
 cost={3}{U}
 pt=3/3
-ability=bestow {5}{U};\
-        Whenever SN deals combat damage to a player, draw a card.
-given_pt=+3/+3
+ability=Bestow {5}{U};\
+        Whenever SN deals combat damage to a player, draw a card.;\
+        Enchanted creature gets +3/+3.
 timing=main
 requires_groovy_code

@@ -7,8 +7,7 @@ type=Enchantment,Creature
 subtype=Spirit
 cost={1}{U}
 pt=1/1
-ability=bestow {5}{U};\
-        SN can't be blocked.
-given_pt=+1/+1
-given_ability=SN can't be blocked.
+ability=Bestow {5}{U};\
+        SN can't be blocked.;\
+        Enchanted creature gets +1/+1 and can't be blocked.
 timing=main

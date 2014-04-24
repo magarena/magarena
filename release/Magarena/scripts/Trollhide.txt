@@ -7,6 +7,5 @@ type=Enchantment
 subtype=Aura
 cost={2}{G}
 enchant=pump,pos creature
-given_pt=+2/+2
-given_ability={1}{G}: Regenerate SN.
+ability=Enchanted creature gets +2/+2 and has "{1}{G}: Regenerate SN."
 timing=enchantment

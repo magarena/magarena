@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={R}{W}
 enchant=pump,pos creature
-given_pt=+2/+2
+ability=Enchanted creature gets +2/+2.
 timing=enchantment
 requires_groovy_code=Wind Zendikon

@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Spirit
 cost={W}
 pt=1/1
-ability=bestow {3}{W};lifelink
-given_ability=lifelink
-given_pt=+1/+1
+ability=Bestow {3}{W};\
+        Lifelink;\
+        Enchanted creature gets +1/+1 and has lifelink.
 timing=main

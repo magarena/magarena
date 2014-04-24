@@ -7,6 +7,6 @@ type=Enchantment,Creature
 subtype=Wolf
 cost={2}{G}
 pt=3/1
-ability=bestow {4}{G}
-given_pt=+3/+1
+ability=Bestow {4}{G};\
+        Enchanted creature gets +3/+1.
 timing=main

@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Nymph
 cost={2}{U}
 pt=2/2
-ability=bestow {4}{U};flying
-given_pt=+2/+2
-given_ability=flying
+ability=Bestow {4}{U};\
+        Flying;\
+        Enchanted creature gets +2/+2 and has flying.
 timing=main
