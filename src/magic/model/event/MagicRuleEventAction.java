@@ -15,37 +15,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicAddStaticAction;
-import magic.model.action.MagicAddTriggerAction;
-import magic.model.action.MagicAttachAction;
-import magic.model.action.MagicCardAction;
-import magic.model.action.MagicCardOnStackAction;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicChangeTurnPTAction;
-import magic.model.action.MagicCounterItemOnStackAction;
-import magic.model.action.MagicDealDamageAction;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicDrawAction;
-import magic.model.action.MagicGainAbilityAction;
-import magic.model.action.MagicMillLibraryAction;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayMod;
-import magic.model.action.MagicPlayTokenAction;
-import magic.model.action.MagicPlayTokensAction;
-import magic.model.action.MagicPlayerAction;
-import magic.model.action.MagicPreventDamageAction;
-import magic.model.action.MagicReanimateAction;
-import magic.model.action.MagicRegenerateAction;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.action.MagicRevealAction;
-import magic.model.action.MagicSacrificeAction;
-import magic.model.action.MagicTapAction;
-import magic.model.action.MagicTargetAction;
-import magic.model.action.MagicUntapAction;
+import magic.model.action.*;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
@@ -1838,6 +1808,18 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    ShuffleSelfPerm(
+            "shuffle sn into its owner's library\\.",
+            MagicTiming.Removal,
+            "Shuffle",
+            new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicCard permanentCard = event.getPermanent().getCard();
+                    game.doAction(new MagicShuffleIntoLibraryAction(permanentCard));
+                }
+            }
+        ),
     AttachSelf(
         "attach sn to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Positive,
