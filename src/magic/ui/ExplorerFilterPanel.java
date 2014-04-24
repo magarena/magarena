@@ -42,14 +42,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
     private static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
-    private static final String FILTER_BUTTON_TEXT = "Filter";
-    private static final String HIDE_BUTTON_TEXT = "Hide";
     private static final String RESET_BUTTON_TEXT = "Reset";
     private static final Dimension BUTTON_SIZE = new Dimension(70, 25);
     private static final int SEARCH_FIELD_WIDTH = 12;
     private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-    private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 72);
+    private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 40);
     private static final Dimension SEARCH_HOLDER_PANEL_SIZE = new Dimension(150, 72);
 
     private final ExplorerPanel explorerPanel;
@@ -92,20 +90,13 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private ButtonControlledPopup addFilterPopupPanel(final String title) {
-        final TitledBorder border = BorderFactory.createTitledBorder(title);
-        border.setTitleColor(TEXT_COLOR);
-        final JPanel filterPanel = new JPanel(new BorderLayout());
-        filterPanel.setOpaque(false);
-        filterPanel.setBorder(border);
-        filterPanel.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
-        add(filterPanel);
 
-        final JButton selectButton = new JButton(FILTER_BUTTON_TEXT);
+        final JButton selectButton = new JButton(title);
         selectButton.setFont(FontsAndBorders.FONT1);
-        selectButton.setPreferredSize(BUTTON_SIZE);
-        filterPanel.add(selectButton, BorderLayout.CENTER);
+        selectButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
+        add(selectButton);
 
-        final ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, HIDE_BUTTON_TEXT, FILTER_BUTTON_TEXT);
+        final ButtonControlledPopup pop = new ButtonControlledPopup(selectButton, title, title);
         pop.setLayout(new BoxLayout(pop, BoxLayout.Y_AXIS));
         selectButton.addActionListener(new PopupCloser(pop));
         return pop;
@@ -443,12 +434,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addResetButton() {
-        final TitledBorder resetBorder = BorderFactory.createTitledBorder("Reset All");
-        resetBorder.setTitleColor(TEXT_COLOR);
         final JPanel resetFilterPanel = new JPanel(new BorderLayout());
         resetFilterPanel.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         resetFilterPanel.setOpaque(false);
-        resetFilterPanel.setBorder(resetBorder);
         resetButton = new JButton(RESET_BUTTON_TEXT);
         resetButton.setFont(FontsAndBorders.FONT1);
         resetButton.addActionListener(this);
