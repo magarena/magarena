@@ -12,7 +12,7 @@
                 cardOnStack,
                 new MagicFromCardListChoice(bodies, 3, true),
                 this,
-                "PN searches PN's library for up to three creature cards and puts them into PN's graveyard. Then shuffle PN's library."
+                "PN searches his or her library for up to three creature cards and puts them into his or her graveyard. Then shuffle PN's library."
             );
         }
         @Override
