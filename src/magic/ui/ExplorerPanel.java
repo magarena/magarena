@@ -87,44 +87,8 @@ public class ExplorerPanel extends TexturedPanel {
         filterPanel = new ExplorerFilterPanel(this);
         add(filterPanel);
 
-        // card pool
-        cardPoolDefs = filterPanel.getCardDefinitions();
-
-        // deck
-        final Container cardsPanel; // reference panel holding both card pool and deck
-
-        cardPoolTable = new CardTable(cardPoolDefs, sideBarPanel.getCardViewer(), generatePoolTitle(), false);
-
-        if (isDeckEditor()) {
-
-            cardPoolTable.addMouseListener(new CardPoolMouseListener());
-            cardPoolTable.setDeckEditorSelectionMode();
-
-            deckDefs = this.deck;
-            deckTable = new CardTable(deckDefs, sideBarPanel.getCardViewer(), generateDeckTitle(deckDefs), true);
-            deckTable.addMouseListener(new DeckMouseListener());
-            deckTable.setDeckEditorSelectionMode();
-
-            final JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-            cardsSplitPane.setOneTouchExpandable(true);
-            cardsSplitPane.setLeftComponent(cardPoolTable);
-            cardsSplitPane.setRightComponent(deckTable);
-            cardsSplitPane.setResizeWeight(0.5);
-
-            add(cardsSplitPane);
-            cardsPanel = cardsSplitPane;
-
-            // update deck stats
-            sideBarPanel.getStatsViewer().setDeck(this.deck);
-
-        } else {
-            // no deck
-            deckDefs = null;
-            deckTable = null;
-
-            add(cardPoolTable);
-            cardsPanel = cardPoolTable;
-        }
+        final Container cardsPanel = getMainContentContainer();
+        add(cardsPanel);
 
         // set sizes by defining gaps between components
         final Container contentPane = this;
@@ -172,6 +136,49 @@ public class ExplorerPanel extends TexturedPanel {
              final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
              sideBarPanel.getCardViewer().setCard(cardPoolDefs.get(index),0);
          }
+
+    }
+
+    private Container getMainContentContainer() {
+
+        // card pool
+        cardPoolDefs = filterPanel.getCardDefinitions();
+
+        cardPoolTable = new CardTable(cardPoolDefs, sideBarPanel.getCardViewer(), generatePoolTitle(), false);
+
+        if (isDeckEditor()) {
+
+            cardPoolTable.addMouseListener(new CardPoolMouseListener());
+            cardPoolTable.setDeckEditorSelectionMode();
+
+            deckDefs = this.deck;
+            deckTable = new CardTable(deckDefs, sideBarPanel.getCardViewer(), generateDeckTitle(deckDefs), true);
+            deckTable.addMouseListener(new DeckMouseListener());
+            deckTable.setDeckEditorSelectionMode();
+
+            final JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+            cardsSplitPane.setOneTouchExpandable(true);
+            cardsSplitPane.setLeftComponent(cardPoolTable);
+            cardsSplitPane.setRightComponent(deckTable);
+            cardsSplitPane.setResizeWeight(0.5);
+
+//            add(cardsSplitPane);
+//            cardsPanel = cardsSplitPane;
+
+            // update deck stats
+            sideBarPanel.getStatsViewer().setDeck(this.deck);
+
+            return cardsSplitPane;
+
+        } else {
+            // no deck
+            deckDefs = null;
+            deckTable = null;
+
+//            add(cardPoolTable);
+//            cardsPanel = cardPoolTable;
+            return cardPoolTable;
+        }
 
     }
 
