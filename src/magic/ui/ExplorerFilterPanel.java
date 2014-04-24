@@ -29,6 +29,7 @@ import javax.swing.event.DocumentListener;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -41,11 +42,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private static final String[] COST_VALUES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
     private static final String[] FILTER_CHOICES = {"Match any selected", "Match all selected", "Exclude selected"};
-    private static final String RESET_BUTTON_TEXT = "Reset";
     private static final int SEARCH_FIELD_WIDTH = 12;
     private static final Color TEXT_COLOR = ThemeFactory.getInstance().getCurrentTheme().getTextColor();
     private static final Dimension POPUP_CHECKBOXES_SIZE = new Dimension(200, 150);
-    private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 40);
+    private static final Dimension BUTTON_HOLDER_PANEL_SIZE = new Dimension(100, 36);
     private static final Dimension SEARCH_HOLDER_PANEL_SIZE = new Dimension(150, 72);
 
     private final MigLayout layout = new MigLayout();
@@ -77,7 +77,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
         setBorder(FontsAndBorders.UP_BORDER);
 
-        layout.setLayoutConstraints("flowy, wrap 2");
+        layout.setLayoutConstraints("flowy, wrap 2, gap 4");
         setLayout(layout);
 
         addCardTypeFilter();
@@ -435,8 +435,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void addResetButton() {
-        resetButton = new JButton(RESET_BUTTON_TEXT);
-        resetButton.setFont(FontsAndBorders.FONT1);
+        resetButton = new JButton("Reset");
+        resetButton.setFont(new Font("dialog", Font.BOLD + Font.ITALIC, 12));
+        resetButton.setForeground(Color.BLUE);
         resetButton.addActionListener(this);
         resetButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         add(resetButton);
