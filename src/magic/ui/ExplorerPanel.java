@@ -10,6 +10,7 @@ import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -41,8 +42,6 @@ public class ExplorerPanel extends TexturedPanel {
 
     private CardTable cardPoolTable;
     private CardTable deckTable;
-    private CardViewer cardViewer;
-    private DeckStatisticsViewer statsViewer;
     private ExplorerFilterPanel filterPanel;
     private JButton addButton;
     private JButton removeButton;
@@ -52,6 +51,7 @@ public class ExplorerPanel extends TexturedPanel {
     private MagicDeck deck;
     private MagicDeck originalDeck;
     private DeckEditorButtonsPanel buttonsPanel;
+    private SideBarPanel sideBarPanel;
 
     // CTR - Card Explorer
     public ExplorerPanel() {
@@ -78,41 +78,11 @@ public class ExplorerPanel extends TexturedPanel {
         final SpringLayout springLayout = new SpringLayout();
         setLayout(springLayout);
 
-        // buttons
         buttonsPanel = new DeckEditorButtonsPanel(isDeckEditor());
         add(buttonsPanel);
 
-        // left side (everything but buttons)
-        final JPanel leftPanel = new JPanel();
-        leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
-        leftPanel.setOpaque(false);
-
-        // card image
-        cardViewer = new CardViewer(false,true);
-        cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
-        cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
-        leftPanel.add(cardViewer);
-
-        // deck statistics
-        if (isDeckEditor()) {
-            leftPanel.add(Box.createVerticalStrut(SPACING));
-            statsViewer = new DeckStatisticsViewer();
-            statsViewer.setMaximumSize(DeckStatisticsViewer.PREFERRED_SIZE);
-            leftPanel.add(statsViewer);
-        } else {
-            statsViewer = null;
-        }
-
-        // add scrolling to left side
-        final JScrollPane leftScrollPane = new JScrollPane(leftPanel);
-        leftScrollPane.setBorder(FontsAndBorders.NO_BORDER);
-        leftScrollPane.setBackground(java.awt.Color.green);
-        leftPanel.setOpaque(false);
-        leftPanel.setBorder(FontsAndBorders.NO_BORDER);
-        leftScrollPane.setOpaque(false);
-        leftScrollPane.getViewport().setOpaque(false);
-        leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        add(leftScrollPane);
+        sideBarPanel = new SideBarPanel(isDeckEditor());
+        add(sideBarPanel);
 
         filterPanel = new ExplorerFilterPanel(this);
         add(filterPanel);
@@ -123,7 +93,7 @@ public class ExplorerPanel extends TexturedPanel {
         // deck
         final Container cardsPanel; // reference panel holding both card pool and deck
 
-        cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
+        cardPoolTable = new CardTable(cardPoolDefs, sideBarPanel.getCardViewer(), generatePoolTitle(), false);
 
         if (isDeckEditor()) {
 
@@ -131,7 +101,7 @@ public class ExplorerPanel extends TexturedPanel {
             cardPoolTable.setDeckEditorSelectionMode();
 
             deckDefs = this.deck;
-            deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs), true);
+            deckTable = new CardTable(deckDefs, sideBarPanel.getCardViewer(), generateDeckTitle(deckDefs), true);
             deckTable.addMouseListener(new DeckMouseListener());
             deckTable.setDeckEditorSelectionMode();
 
@@ -145,7 +115,7 @@ public class ExplorerPanel extends TexturedPanel {
             cardsPanel = cardsSplitPane;
 
             // update deck stats
-            statsViewer.setDeck(this.deck);
+            sideBarPanel.getStatsViewer().setDeck(this.deck);
 
         } else {
             // no deck
@@ -160,18 +130,18 @@ public class ExplorerPanel extends TexturedPanel {
         final Container contentPane = this;
 
         // card image's gap (top left)
-        springLayout.putConstraint(SpringLayout.WEST, leftScrollPane,
+        springLayout.putConstraint(SpringLayout.WEST, sideBarPanel,
                              SPACING, SpringLayout.WEST, contentPane);
-        springLayout.putConstraint(SpringLayout.NORTH, leftScrollPane,
+        springLayout.putConstraint(SpringLayout.NORTH, sideBarPanel,
                              SPACING, SpringLayout.NORTH, contentPane);
 
         // gap between card image and filter
         springLayout.putConstraint(SpringLayout.WEST, filterPanel,
-                             SPACING, SpringLayout.EAST, leftScrollPane);
+                             SPACING, SpringLayout.EAST, sideBarPanel);
 
         // filter panel's gaps (top right)
         springLayout.putConstraint(SpringLayout.NORTH, filterPanel,
-                             0, SpringLayout.NORTH, leftScrollPane);
+                             0, SpringLayout.NORTH, sideBarPanel);
         springLayout.putConstraint(SpringLayout.EAST, filterPanel,
                              -SPACING, SpringLayout.EAST, contentPane);
 
@@ -189,18 +159,18 @@ public class ExplorerPanel extends TexturedPanel {
 
         // buttons' gap (top right bottom)
         springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
-                             0, SpringLayout.EAST, leftScrollPane);
-        springLayout.putConstraint(SpringLayout.SOUTH, leftScrollPane,
+                             0, SpringLayout.EAST, sideBarPanel);
+        springLayout.putConstraint(SpringLayout.SOUTH, sideBarPanel,
                              -SPACING, SpringLayout.NORTH, buttonsPanel);
         springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
                              -SPACING, SpringLayout.SOUTH, contentPane);
 
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
-            cardViewer.setCard(MagicCardDefinition.UNKNOWN,0);
+            sideBarPanel.getCardViewer().setCard(MagicCardDefinition.UNKNOWN,0);
          } else {
              final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
-             cardViewer.setCard(cardPoolDefs.get(index),0);
+             sideBarPanel.getCardViewer().setCard(cardPoolDefs.get(index),0);
          }
 
     }
@@ -228,7 +198,7 @@ public class ExplorerPanel extends TexturedPanel {
             deckDefs = this.deck;
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
-            statsViewer.setDeck(deckDefs);
+            sideBarPanel.getStatsViewer().setDeck(deckDefs);
             validate();
         }
     }
@@ -316,7 +286,7 @@ public class ExplorerPanel extends TexturedPanel {
                 deckDefs = this.deck;
                 deckTable.setTitle(generateDeckTitle(deckDefs));
                 deckTable.setCards(deckDefs);
-                statsViewer.setDeck(deckDefs);
+                sideBarPanel.getStatsViewer().setDeck(deckDefs);
             }
         }
     }
@@ -414,6 +384,61 @@ public class ExplorerPanel extends TexturedPanel {
                     removeSelectedFromDeck();
                 }
             }
+        }
+
+    }
+
+    @SuppressWarnings("serial")
+    private class SideBarPanel extends JPanel {
+
+        private final MigLayout migLayout = new MigLayout();
+        private final JScrollPane cardScrollPane = new JScrollPane();
+        private final CardViewer cardViewer = new CardViewer(false,true);
+        private final DeckStatisticsViewer statsViewer;
+
+        private final boolean isDeckEditorMode;
+
+        private SideBarPanel(final boolean isDeckEditorMode) {
+            this.isDeckEditorMode = isDeckEditorMode;
+            statsViewer = isDeckEditorMode ? new DeckStatisticsViewer() : null;
+            setLookAndFeel();
+            refreshLayout();
+        }
+
+        private void setLookAndFeel() {
+            setLayout(migLayout);
+            setOpaque(false);
+            // card image viewer
+            cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
+            cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
+            // card image scroll pane
+            cardScrollPane.setBorder(FontsAndBorders.NO_BORDER);
+            cardScrollPane.setOpaque(false);
+            cardScrollPane.getViewport().setOpaque(false);
+            cardScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+            cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
+            // stats viewer
+            if (statsViewer != null) {
+                statsViewer.setMaximumSize(DeckStatisticsViewer.PREFERRED_SIZE);
+            }
+        }
+
+        private void refreshLayout() {
+            removeAll();
+            migLayout.setLayoutConstraints("flowy, insets 0");
+            cardScrollPane.setViewportView(cardViewer);
+            add(cardScrollPane);
+            if (isDeckEditorMode) {
+                add(statsViewer);
+            }
+        }
+
+        public CardViewer getCardViewer() {
+            return cardViewer;
+        }
+
+        public DeckStatisticsViewer getStatsViewer() {
+            return statsViewer;
         }
 
     }
