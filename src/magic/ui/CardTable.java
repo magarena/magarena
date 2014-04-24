@@ -57,6 +57,7 @@ public class CardTable extends JPanel implements ListSelectionListener {
         this.lastSelectedCards = new ArrayList<MagicCardDefinition>();
 
         table.setDefaultRenderer(Object.class, new HideCellFocusRenderer());
+        table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
         table.setRowHeight(20);
         table.setGridColor(new Color(194, 197, 203));
@@ -99,8 +100,8 @@ public class CardTable extends JPanel implements ListSelectionListener {
         }
     }
 
-    public void setSingleSelectionMode() {
-        table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+    public void setDeckEditorSelectionMode() {
+        table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
     }
 
     public void addMouseListener(final MouseListener m) {

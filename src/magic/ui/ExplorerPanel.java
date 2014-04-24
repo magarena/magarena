@@ -124,16 +124,16 @@ public class ExplorerPanel extends TexturedPanel {
         final Container cardsPanel; // reference panel holding both card pool and deck
 
         cardPoolTable = new CardTable(cardPoolDefs, cardViewer, generatePoolTitle(), false);
-        if (!isDeckEditor()) {
-            cardPoolTable.setSingleSelectionMode();
-        }
 
         if (isDeckEditor()) {
+
             cardPoolTable.addMouseListener(new CardPoolMouseListener());
+            cardPoolTable.setDeckEditorSelectionMode();
 
             deckDefs = this.deck;
             deckTable = new CardTable(deckDefs, cardViewer, generateDeckTitle(deckDefs), true);
             deckTable.addMouseListener(new DeckMouseListener());
+            deckTable.setDeckEditorSelectionMode();
 
             final JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
             cardsSplitPane.setOneTouchExpandable(true);
