@@ -6,14 +6,15 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
+import magic.ui.screen.widget.ActionBar;
+import magic.ui.screen.widget.StatusBar;
 import magic.ui.viewer.CardViewer;
 import magic.ui.viewer.DeckStatisticsViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
-import javax.swing.Box;
-import javax.swing.BoxLayout;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -21,8 +22,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
-import javax.swing.SpringLayout;
 
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -30,21 +31,15 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
 
-
+@SuppressWarnings("serial")
 public class ExplorerPanel extends TexturedPanel {
 
-    private static final long serialVersionUID = 1L;
-
-    private static final String ADD_BUTTON_TEXT = "Add";
-    private static final String REMOVE_BUTTON_TEXT = "Remove";
     private static final String CARD_POOL_TITLE = "Card Pool";
-    private static final int SPACING=10;
+    private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
     private CardTable cardPoolTable;
     private CardTable deckTable;
     private ExplorerFilterPanel filterPanel;
-    private JButton addButton;
-    private JButton removeButton;
     private List<MagicCardDefinition> cardPoolDefs;
     private MagicDeck deckDefs;
     private final boolean isDeckEditor;
@@ -52,6 +47,8 @@ public class ExplorerPanel extends TexturedPanel {
     private MagicDeck originalDeck;
     private DeckEditorButtonsPanel buttonsPanel;
     private SideBarPanel sideBarPanel;
+    private final MigLayout migLayout = new MigLayout();
+    private JSplitPane cardsSplitPane;
 
     // CTR - Card Explorer
     public ExplorerPanel() {
@@ -75,59 +72,24 @@ public class ExplorerPanel extends TexturedPanel {
 
         setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
 
-        final SpringLayout springLayout = new SpringLayout();
-        setLayout(springLayout);
-
+        // create ui components.
         buttonsPanel = new DeckEditorButtonsPanel(isDeckEditor());
-        add(buttonsPanel);
-
         sideBarPanel = new SideBarPanel(isDeckEditor());
-        add(sideBarPanel);
-
         filterPanel = new ExplorerFilterPanel(this);
-        add(filterPanel);
-
         final Container cardsPanel = getMainContentContainer();
-        add(cardsPanel);
 
-        // set sizes by defining gaps between components
-        final Container contentPane = this;
+        final JPanel rhs = new JPanel();
+        rhs.setLayout(new MigLayout("flowy, insets 0, gapy 0"));
+        rhs.add(filterPanel, "w 100%, h " + FILTERS_PANEL_HEIGHT + "!");
+        rhs.add(cardsPanel, "w 100%, h 100%");
+        rhs.setOpaque(false);
+        rhs.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
 
-        // card image's gap (top left)
-        springLayout.putConstraint(SpringLayout.WEST, sideBarPanel,
-                             SPACING, SpringLayout.WEST, contentPane);
-        springLayout.putConstraint(SpringLayout.NORTH, sideBarPanel,
-                             SPACING, SpringLayout.NORTH, contentPane);
-
-        // gap between card image and filter
-        springLayout.putConstraint(SpringLayout.WEST, filterPanel,
-                             SPACING, SpringLayout.EAST, sideBarPanel);
-
-        // filter panel's gaps (top right)
-        springLayout.putConstraint(SpringLayout.NORTH, filterPanel,
-                             0, SpringLayout.NORTH, sideBarPanel);
-        springLayout.putConstraint(SpringLayout.EAST, filterPanel,
-                             -SPACING, SpringLayout.EAST, contentPane);
-
-        // filter panel's gap with card tables
-        springLayout.putConstraint(SpringLayout.WEST, cardsPanel,
-                             0, SpringLayout.WEST, filterPanel);
-        springLayout.putConstraint(SpringLayout.NORTH, cardsPanel,
-                             SPACING, SpringLayout.SOUTH, filterPanel);
-
-        // card tables' gap (right)
-        springLayout.putConstraint(SpringLayout.EAST, cardsPanel,
-                             -SPACING, SpringLayout.EAST, contentPane);
-        springLayout.putConstraint(SpringLayout.SOUTH, cardsPanel,
-                                 -SPACING, SpringLayout.SOUTH, contentPane);
-
-        // buttons' gap (top right bottom)
-        springLayout.putConstraint(SpringLayout.EAST, buttonsPanel,
-                             0, SpringLayout.EAST, sideBarPanel);
-        springLayout.putConstraint(SpringLayout.SOUTH, sideBarPanel,
-                             -SPACING, SpringLayout.NORTH, buttonsPanel);
-        springLayout.putConstraint(SpringLayout.SOUTH, buttonsPanel,
-                             -SPACING, SpringLayout.SOUTH, contentPane);
+        migLayout.setLayoutConstraints("insets 0, gap 0");
+        migLayout.setColumnConstraints("[" + CardImagesProvider.CARD_DIMENSION.width + "!][100%]");
+        setLayout(migLayout);
+        add(sideBarPanel, "h 100%");
+        add(rhs, "w 100%, h 100%");
 
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
@@ -156,14 +118,21 @@ public class ExplorerPanel extends TexturedPanel {
             deckTable.addMouseListener(new DeckMouseListener());
             deckTable.setDeckEditorSelectionMode();
 
-            final JSplitPane cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-            cardsSplitPane.setOneTouchExpandable(true);
-            cardsSplitPane.setLeftComponent(cardPoolTable);
-            cardsSplitPane.setRightComponent(deckTable);
-            cardsSplitPane.setResizeWeight(0.5);
+            final JPanel deckPanel = new JPanel();
+            deckPanel.setOpaque(false);
+            deckPanel.setLayout(new MigLayout("insets 0, gap 0, flowy"));
+            deckPanel.add(buttonsPanel, "w 100%, h 40!");
+            deckPanel.add(deckTable, "w 100%, h 100%");
 
-//            add(cardsSplitPane);
-//            cardsPanel = cardsSplitPane;
+            cardsSplitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+            cardsSplitPane.setOneTouchExpandable(false);
+            cardsSplitPane.setLeftComponent(cardPoolTable);
+            cardsSplitPane.setRightComponent(deckPanel);
+            cardsSplitPane.setResizeWeight(0.5);
+            cardsSplitPane.setDividerSize(14);
+            cardsSplitPane.setBorder(null);
+            cardsSplitPane.setOpaque(false);
+            cardsSplitPane.setDividerLocation(getDividerPosition());
 
             // update deck stats
             sideBarPanel.getStatsViewer().setDeck(this.deck);
@@ -174,12 +143,19 @@ public class ExplorerPanel extends TexturedPanel {
             // no deck
             deckDefs = null;
             deckTable = null;
-
-//            add(cardPoolTable);
-//            cardsPanel = cardPoolTable;
             return cardPoolTable;
         }
 
+    }
+
+    private int getDividerPosition() {
+        final int splitPaneContentHeight =
+               MagicMain.rootFrame.getContentPane().getHeight() -
+               StatusBar.PANEL_HEIGHT -
+               ActionBar.PANEL_HEIGHT -
+               FILTERS_PANEL_HEIGHT -
+               (int)(cardsSplitPane.getDividerSize() / 2);
+        return (int)(splitPaneContentHeight * 0.46);
     }
 
      private String generatePoolTitle() {
@@ -345,34 +321,31 @@ public class ExplorerPanel extends TexturedPanel {
         return this.originalDeck != null;
     }
 
-    @SuppressWarnings("serial")
-    private class DeckEditorButtonsPanel extends JPanel implements ActionListener {
+    private class DeckEditorButtonsPanel extends TexturedPanel implements ActionListener {
 
         private final boolean isDeckEditor;
+        private JButton addButton;
+        private JButton removeButton;
 
         public DeckEditorButtonsPanel(final boolean isDeckEditor) {
 
             this.isDeckEditor = isDeckEditor;
 
-            setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
-            setOpaque(false);
+            setLayout(new MigLayout("insets 0 6 0 0, aligny center"));
+            setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
             if (isDeckEditor) {
-                addButton = new JButton(ADD_BUTTON_TEXT);
+                addButton = new JButton("Add to Deck");
                 addButton.setFont(FontsAndBorders.FONT1);
                 addButton.setFocusable(false);
                 addButton.addActionListener(this);
-                add(addButton);
+                add(addButton, "w 160!, h 30!");
 
-                add(Box.createHorizontalStrut(SPACING));
-
-                removeButton = new JButton(REMOVE_BUTTON_TEXT);
+                removeButton = new JButton("Remove from Deck");
                 removeButton.setFont(FontsAndBorders.FONT1);
                 removeButton.setFocusable(false);
                 removeButton.addActionListener(this);
-                add(removeButton);
-
-                add(Box.createHorizontalStrut(SPACING));
+                add(removeButton, "w 160!, h 30!");
 
             } else {
                 addButton = null;
@@ -395,18 +368,14 @@ public class ExplorerPanel extends TexturedPanel {
 
     }
 
-    @SuppressWarnings("serial")
-    private class SideBarPanel extends JPanel {
+    private class SideBarPanel extends TexturedPanel {
 
         private final MigLayout migLayout = new MigLayout();
         private final JScrollPane cardScrollPane = new JScrollPane();
         private final CardViewer cardViewer = new CardViewer(false,true);
         private final DeckStatisticsViewer statsViewer;
 
-        private final boolean isDeckEditorMode;
-
         private SideBarPanel(final boolean isDeckEditorMode) {
-            this.isDeckEditorMode = isDeckEditorMode;
             statsViewer = isDeckEditorMode ? new DeckStatisticsViewer() : null;
             setLookAndFeel();
             refreshLayout();
@@ -414,7 +383,7 @@ public class ExplorerPanel extends TexturedPanel {
 
         private void setLookAndFeel() {
             setLayout(migLayout);
-            setOpaque(false);
+            setBackground(FontsAndBorders.IMENUOVERLAY_BACKGROUND_COLOR);
             // card image viewer
             cardViewer.setPreferredSize(CardImagesProvider.CARD_DIMENSION);
             cardViewer.setMaximumSize(CardImagesProvider.CARD_DIMENSION);
@@ -424,10 +393,7 @@ public class ExplorerPanel extends TexturedPanel {
             cardScrollPane.getViewport().setOpaque(false);
             cardScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
             cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
-            // stats viewer
-            if (statsViewer != null) {
-                statsViewer.setMaximumSize(DeckStatisticsViewer.PREFERRED_SIZE);
-            }
+            cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         }
 
         private void refreshLayout() {
@@ -435,8 +401,8 @@ public class ExplorerPanel extends TexturedPanel {
             migLayout.setLayoutConstraints("flowy, insets 0");
             cardScrollPane.setViewportView(cardViewer);
             add(cardScrollPane);
-            if (isDeckEditorMode) {
-                add(statsViewer);
+            if (statsViewer != null) {
+                add(statsViewer, "w 100%, gap 6 6 6 6, aligny bottom, pushy");
             }
         }
 

@@ -18,11 +18,13 @@ import java.util.List;
 @SuppressWarnings("serial")
 public class ActionBar extends TexturedPanel {
 
+    public final static int PANEL_HEIGHT = 50;
+
     private IActionBar actionProvider;
 
     public ActionBar(final IActionBar provider0) {
         actionProvider = provider0;
-        setMinimumSize(new Dimension(getPreferredSize().width, 50));
+        setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
         setMagActionBarLayout();
     }
@@ -84,7 +86,7 @@ public class ActionBar extends TexturedPanel {
             add(action);
         } else {
             JLabel lbl = new JLabel();
-            lbl.setMinimumSize(new Dimension(120, 50));
+            lbl.setMinimumSize(new Dimension(120, PANEL_HEIGHT));
             add(lbl);
         }
     }
