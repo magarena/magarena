@@ -105,7 +105,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object> options = new ArrayList<Object>();
-        final List<MagicCard> cList = new MagicCardList();
+        final List<MagicCard> cList = new ArrayList<MagicCard>();
         
         //map the cards to the current game
         for (final MagicCard card : choiceList) {
