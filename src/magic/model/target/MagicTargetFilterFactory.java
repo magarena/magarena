@@ -355,6 +355,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ENCHANTMENT = MagicTargetFilterFactory.permanent(MagicType.Enchantment, Control.Any);
 
+    public static final MagicPermanentFilterImpl ENCHANTMENT_OR_LAND = MagicTargetFilterFactory.permanentOr(MagicType.Enchantment, MagicType.Land, Control.Any);
+    
     public static final MagicPermanentFilterImpl ENCHANTMENT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicType.Enchantment, Control.You);
 
     public static final MagicPermanentFilterImpl SPIRIT_OR_ENCHANTMENT = MagicTargetFilterFactory.permanentOr(MagicType.Enchantment, MagicSubType.Spirit, Control.Any);
@@ -544,11 +546,25 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONENCHANTMENT_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasType(MagicType.Enchantment);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ENCHANTED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
                    target.isCreature() &&
                    target.isEnchanted(); 
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl ENCHANTED_OR_ENCHANTMENT_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return (target.isCreature() && target.isEnchanted()) ||
+                    (target.isCreature() && target.hasType(MagicType.Enchantment)); 
         }
     };
 
@@ -1266,6 +1282,7 @@ public class MagicTargetFilterFactory {
         multiple.put("creatures", CREATURE);
         multiple.put("nonblack creatures", NONBLACK_CREATURE);
         multiple.put("nonwhite creatures", NONWHITE_CREATURE);
+        multiple.put("nonenchantment creatures", NONENCHANTMENT_CREATURE);
         multiple.put("creatures without flying", CREATURE_WITHOUT_FLYING);
         multiple.put("creatures with flying", CREATURE_WITH_FLYING);
         multiple.put("all sliver creatures", SLIVER_CREATURE);
@@ -1485,6 +1502,8 @@ public class MagicTargetFilterFactory {
         single.put("artifact, enchantment, or land", ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         single.put("artifact, creature, or land", ARTIFACT_OR_CREATURE_OR_LAND);
         single.put("artifact, creature, or enchantment",ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
+        single.put("enchantment or land", ENCHANTMENT_OR_LAND);
+        single.put("enchanted creature or enchantment creature", ENCHANTED_OR_ENCHANTMENT_CREATURE);
         single.put("noncreature artifact", NONCREATURE_ARTIFACT);
         single.put("Spirit or enchantment", SPIRIT_OR_ENCHANTMENT);
         single.put("creature or enchantment", CREATURE_OR_ENCHANTMENT);
