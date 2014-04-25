@@ -1,0 +1,11 @@
+name=Golden Hind
+url=http://www.magiccards.info/query?q=%21golden%20hind
+image=http://mtgimage.com/card/golden%20hind.jpg
+value=2.50
+rarity=C
+type=Creature
+subtype=Elk
+pt=2/1
+cost={1}{G}
+ability={T}: Add {G} to your mana pool.
+timing=main

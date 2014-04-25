@@ -1,0 +1,11 @@
+name=Oakheart Dryads
+url=http://www.magiccards.info/query?q=%21oakheart%20dryads
+image=http://mtgimage.com/card/oakheart%20dryads.jpg
+value=2.50
+rarity=C
+type=Enchantment,Creature
+subtype=Nymph,Dryad
+pt=2/3
+cost={2}{G}
+ability=Whenever SN or another enchantment enters the battlefield under your control, target creature gets +1/+1 until end of turn.
+timing=fmain

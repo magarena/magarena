@@ -1,0 +1,12 @@
+name=Felhide Petrifier
+url=http://www.magiccards.info/query?q=%21felhide%20petrifier
+image=http://mtgimage.com/card/felhide%20petrifier.jpg
+value=2.50
+rarity=U
+type=Creature
+subtype=Minotaur,Warrior
+cost={3}{B}
+pt=2/3
+ability=Deathtouch;\
+        lord other Minotaur creatures you control have deathtouch.
+timing=main

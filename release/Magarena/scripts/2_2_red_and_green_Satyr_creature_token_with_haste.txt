@@ -1,0 +1,11 @@
+name=2/2 red and green Satyr creature token with haste
+token=Satyr
+image=http://magiccards.info/extras/token/theros/satyr.jpg
+cost={0}
+value=2
+pt=2/2
+color=RG
+type=Creature
+ability=haste
+subtype=Satyr
+#Token image doesn't have haste

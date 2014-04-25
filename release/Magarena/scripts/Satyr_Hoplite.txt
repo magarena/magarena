@@ -1,0 +1,11 @@
+name=Satyr Hoplite
+url=http://www.magiccards.info/query?q=%21satyr%20hoplite
+image=http://mtgimage.com/card/satyr%20hoplite.jpg
+value=2.50
+rarity=C
+type=Creature
+subtype=Satyr,Soldier
+pt=1/1
+cost={R}
+ability=Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
+timing=main

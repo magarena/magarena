@@ -1,0 +1,10 @@
+name=Pensive Minotaur
+url=http://www.magiccards.info/query?q=%21pensive%20minotaur
+image=http://mtgimage.com/card/pensive%20minotaur.jpg
+value=2.50
+rarity=C
+type=Creature
+subtype=Minotaur,Warrior
+pt=2/3
+cost={2}{R}
+timing=main
