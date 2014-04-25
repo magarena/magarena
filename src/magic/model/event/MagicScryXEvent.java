@@ -51,13 +51,15 @@ public class MagicScryXEvent extends MagicEvent {
             });
             final int X = event.getRefInt() - processedCards.size();
             final MagicCardList choiceList = event.getPlayer().getLibrary().getCardsFromTop(X);
-            game.addFirstEvent(new MagicEvent(                    
-                event.getSource(),
-                event.getPlayer(),
-                new MagicFromCardListChoice(choiceList, choiceList.size(), "to be put on the top of your library"),
-                TopAction,
-                ""
-            ));
+            if (choiceList.size() > 1) {
+                game.addFirstEvent(new MagicEvent(                    
+                    event.getSource(),
+                    event.getPlayer(),
+                    new MagicFromCardListChoice(choiceList, choiceList.size(), "to be put on the top of your library"),
+                    TopAction,
+                    ""
+                ));
+            }
         }
     };
     
