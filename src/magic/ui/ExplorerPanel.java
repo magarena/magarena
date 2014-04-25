@@ -73,7 +73,7 @@ public class ExplorerPanel extends TexturedPanel {
         setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
 
         // create ui components.
-        buttonsPanel = new DeckEditorButtonsPanel(isDeckEditor());
+        buttonsPanel = new DeckEditorButtonsPanel();
         sideBarPanel = new SideBarPanel(isDeckEditor());
         filterPanel = new ExplorerFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
@@ -323,46 +323,48 @@ public class ExplorerPanel extends TexturedPanel {
 
     private class DeckEditorButtonsPanel extends TexturedPanel implements ActionListener {
 
-        private final boolean isDeckEditor;
-        private JButton addButton;
-        private JButton removeButton;
+        private final MigLayout migLayout = new MigLayout();
+        private final JButton addButton = new JButton();
+        private final JButton removeButton = new JButton();
 
-        public DeckEditorButtonsPanel(final boolean isDeckEditor) {
+        public DeckEditorButtonsPanel() {
+            setLookAndFeel();
+            refreshLayout();
+            setActions();
+        }
 
-            this.isDeckEditor = isDeckEditor;
-
-            setLayout(new MigLayout("insets 0 6 0 0, aligny center"));
+        private void setLookAndFeel() {
+            setLayout(migLayout);
             setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
+            // JButton that adds card(s) from card pool to deck.
+            addButton.setText("Add to Deck");
+            addButton.setFont(FontsAndBorders.FONT1);
+            addButton.setFocusable(false);
+            // JButton that removes card(s) from deck.
+            removeButton.setText("Remove from Deck");
+            removeButton.setFont(FontsAndBorders.FONT1);
+            removeButton.setFocusable(false);
+        }
 
-            if (isDeckEditor) {
-                addButton = new JButton("Add to Deck");
-                addButton.setFont(FontsAndBorders.FONT1);
-                addButton.setFocusable(false);
-                addButton.addActionListener(this);
-                add(addButton, "w 160!, h 30!");
+        private void refreshLayout() {
+            removeAll();
+            migLayout.setLayoutConstraints("insets 0 6 0 0, aligny center");
+            add(addButton, "w 160!, h 30!");
+            add(removeButton, "w 160!, h 30!");
+        }
 
-                removeButton = new JButton("Remove from Deck");
-                removeButton.setFont(FontsAndBorders.FONT1);
-                removeButton.setFocusable(false);
-                removeButton.addActionListener(this);
-                add(removeButton, "w 160!, h 30!");
-
-            } else {
-                addButton = null;
-                removeButton = null;
-            }
-
+        private void setActions() {
+            removeButton.addActionListener(this);
+            addButton.addActionListener(this);
         }
 
         @Override
         public void actionPerformed(final ActionEvent event) {
             final Object source=event.getSource();
-            if (isDeckEditor) {
-                if (source == addButton) {
-                    addSelectedToDeck();
-                } else if (source == removeButton) {
-                    removeSelectedFromDeck();
-                }
+            if (source == addButton) {
+                addSelectedToDeck();
+            } else if (source == removeButton) {
+                removeSelectedFromDeck();
             }
         }
 
