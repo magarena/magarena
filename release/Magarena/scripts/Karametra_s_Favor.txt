@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 enchant=pump,pos creature
-ability=When SN enters the battlefield, draw a card.
-given_ability={T}: Add one mana of any color to your mana pool.
+ability=When SN enters the battlefield, draw a card.;\
+        Enchanted creature has "{T}: Add one mana of any color to your mana pool."
 timing=aura

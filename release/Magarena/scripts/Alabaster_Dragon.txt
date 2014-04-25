@@ -8,5 +8,5 @@ subtype=Dragon
 cost={4}{W}{W}
 pt=4/4
 ability=flying;\
-        When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
+        When SN dies, shuffle SN into its owner's library.
 timing=main

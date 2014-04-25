@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}
-given_ability=swampwalk
+ability=Enchanted creature has swampwalk.
 timing=aura
 enchant=unblockable,pos creature

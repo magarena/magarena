@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-given_pt=3/3
+ability=Enchanted creature gets +3/+3.
 timing=aura
 enchant=pump,pos creature

@@ -7,7 +7,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}{B}
-given_ability=SN can't attack or block.;\
-              At the beginning of your upkeep, you lose 1 life.
-timing=tapping
+ability=Enchanted creature can't attack or block.;\
+        Enchanted creature has "At the beginning of your upkeep, you lose 1 life."
+timing=aura
 enchant=can't attack or block,neg creature

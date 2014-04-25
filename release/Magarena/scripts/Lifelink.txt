@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-given_ability=lifelink
+ability=Enchanted creature has lifelink.
 timing=aura
 enchant=lifelink,pos creature

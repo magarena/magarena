@@ -6,8 +6,8 @@ rarity=C
 type=Enchantment,Creature
 subtype=Nymph
 cost={3}{B}
-ability=intimidate;bestow {5}{B}
-given_pt=2/2
-given_ability=intimidate
 pt=2/2
+ability=Bestow {5}{B};\
+        Intimidate;\
+        Enchanted creature gets +2/+2 and has intimidate.
 timing=main

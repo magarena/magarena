@@ -6,6 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-enchant=default,creature
-given_ability={T}: Add one mana of any color to your mana pool.;SN can't attack or block.
+ability=Enchanted creature can't attack or block.;\
+        Enchanted creature has "{T}: Add one mana of any color to your mana pool."
 timing=aura
+enchant=default,creature

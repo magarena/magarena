@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=defender;flying
+ability=Enchanted creature has defender and flying.
 timing=aura
 enchant=defender,creature

@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-given_pt=-3/-0
+ability=Enchanted creature gets -3/-0.
 timing=removal
 enchant=weaken -3/-0,neg creature

@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Nymph
 cost={2}{R}
 pt=2/2
-ability=bestow {5}{R};first strike
-given_ability=first strike
-given_pt=+2/+2
+ability=Bestow {5}{R};\
+        First strike;\
+        Enchanted creature gets +2/+2 and has first strike.
 timing=main

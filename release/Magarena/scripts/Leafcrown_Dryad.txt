@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Nymph,Dryad
 cost={1}{G}
 pt=2/2
-ability=bestow {3}{G};reach
-given_ability=reach
-given_pt=+2/+2
+ability=Bestow {3}{G};\
+        Reach;\
+        Enchanted creature gets +2/+2 and has reach.
 timing=main

@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-enchant=pump,pos creature
-given_pt=+0/+2
-ability=When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.
+ability=Enchanted creature gets +0/+2.;\
+        When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.
 timing=enchantment
+enchant=pump,pos creature

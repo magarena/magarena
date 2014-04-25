@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=shroud
-ability=shroud
+ability=Shroud;\
+        Enchanted creature has shroud.
 timing=aura
 enchant=shroud,pos creature

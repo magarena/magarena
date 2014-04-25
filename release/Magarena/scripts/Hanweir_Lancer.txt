@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/2
-ability=soulbond
-given_ability=first strike
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have first strike.
 timing=main

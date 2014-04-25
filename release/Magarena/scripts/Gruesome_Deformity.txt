@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-given_ability=intimidate
+ability=Enchanted creature has intimidate.
 timing=aura
 enchant=unblockable,pos creature

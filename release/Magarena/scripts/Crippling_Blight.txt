@@ -2,12 +2,10 @@ name=Crippling Blight
 url=http://magiccards.info/query?q=%21crippling%20blight
 image=http://mtgimage.com/card/crippling%20blight.jpg
 value=2.709
-removal=1
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-given_pt=-1/-1
-given_ability=SN can't block.
-timing=removal
+ability=Enchanted creature gets -1/-1 and can't block.
+timing=aura
 enchant=weaken -1/-1,neg creature

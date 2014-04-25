@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-enchant=pump,neg creature
-given_pt=-5/-0
-ability={2}{U}:Return SN to its owner's hand.
+ability=Enchanted creature gets -5/-0.;\
+        {2}{U}:Return SN to its owner's hand.
 timing=aura
+enchant=weaken -5/-0,neg creature

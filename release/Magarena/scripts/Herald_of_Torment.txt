@@ -7,9 +7,8 @@ type=Enchantment,Creature
 subtype=Demon
 cost={1}{B}{B}
 pt=3/3
-ability=bestow {3}{B}{B};\
-        flying;\
-        At the beginning of your upkeep, you lose 1 life.
-given_pt=+3/+3
-given_ability=flying
+ability=Bestow {3}{B}{B};\
+        Flying;\
+        At the beginning of your upkeep, you lose 1 life.;\
+        Enchanted creature gets +3/+3 and has flying.
 timing=main

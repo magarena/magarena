@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
+ability=Enchanted creature has "Cumulative upkeep {1}"
 enchant=sacrifice,neg creature
-given_ability=cumulative upkeep {1}
 timing=aura

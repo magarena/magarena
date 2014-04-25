@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=Enchanted creature has "{T}: Add one mana of any color to your mana pool."
 enchant=pump,pos creature
-given_ability={T}: Add one mana of any color to your mana pool.
 timing=enchantment

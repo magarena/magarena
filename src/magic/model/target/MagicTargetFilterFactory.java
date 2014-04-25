@@ -769,6 +769,12 @@ public class MagicTargetFilterFactory {
         2
     );
 
+    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_LESS = new MagicPTTargetFilter(
+            MagicTargetFilterFactory.CREATURE,
+            Operator.LESS_THAN_OR_EQUAL,
+            3
+        );
+    
     public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_MORE = new MagicPTTargetFilter(
         MagicTargetFilterFactory.CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
@@ -1418,7 +1424,8 @@ public class MagicTargetFilterFactory {
         single.put("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);
         single.put("creature with flying", CREATURE_WITH_FLYING);
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
-        single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS); 
+        single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS);
+        single.put("creature with power 3 or less", CREATURE_POWER_3_OR_LESS);
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);
         single.put("creature with power 5 or greater", CREATURE_POWER_5_OR_MORE);
         single.put("creature with toughness 2 or less", CREATURE_TOUGHNESS_2_OR_LESS);

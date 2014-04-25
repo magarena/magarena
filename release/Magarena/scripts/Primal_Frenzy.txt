@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-given_ability=trample
+ability=Enchanted creature has trample.
 timing=aura
 enchant=trample,pos creature

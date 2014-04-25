@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_pt=1/1
-ability=flash;totem armor
-timing=pump
+ability=Flash;\
+        Enchanted creature gets +1/+1.;\
+        totem armor
+timing=pumpFlash
 enchant=pump,pos creature

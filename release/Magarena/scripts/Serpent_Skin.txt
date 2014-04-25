@@ -6,8 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-given_pt=+1/+1
-ability=flash
+ability=Flash;\
+        Enchanted creature gets +1/+1.
 enchant=pump,pos creature
 timing=pumpFlash
 requires_groovy_code=Regeneration

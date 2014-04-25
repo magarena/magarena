@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Archon
 cost={3}{W}{W}
 pt=4/4
-ability=bestow {5}{W}{W};flying;first strike
-given_ability=flying;first strike
-given_pt=+4/+4
+ability=Bestow {5}{W}{W};\
+        Flying;first strike;\
+        Enchanted creature gets +4/+4 and has flying and first strike.
 timing=main

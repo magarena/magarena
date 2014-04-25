@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
-given_ability=first strike
+ability=Enchanted creature has first strike.
 timing=aura
 enchant=first strike,pos creature

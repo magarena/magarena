@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-given_pt=0/2
-ability=flash
+ability=flash;\
+        Enchanted creature gets +0/+2.
 timing=pumpflash
 enchant=pump,pos creature

@@ -7,7 +7,7 @@ type=Enchantment,Creature
 subtype=Spirit
 cost={1}{B}
 pt=1/1
-given_ability=deathtouch
-given_pt=+1/+1
-ability=deathtouch;bestow {4}{B}
+ability=Bestow {4}{B};\
+        Deathtouch;\
+        Enchanted creature gets +1/+1 and has deathtouch.
 timing=main

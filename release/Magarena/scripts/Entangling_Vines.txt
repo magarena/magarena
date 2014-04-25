@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{G}
-given_ability=SN doesn't untap during your untap step.
+ability=Enchanted creature doesn't untap during its controller's untap step.
 timing=aura
 enchant=can't attack or block,neg tapped creature

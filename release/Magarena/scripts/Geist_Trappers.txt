@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Warrior
 cost={4}{G}
 pt=3/5
-ability=soulbond
-given_ability=reach
+ability=Soulbond;\
+        As long as SN is paired with another creature, both creatures have reach.
 timing=main

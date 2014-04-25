@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={R}
-given_ability=mountainwalk
+ability=Enchanted creature has mountainwalk.
 timing=aura
 enchant=unblockable,pos creature

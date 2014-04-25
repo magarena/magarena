@@ -7,6 +7,7 @@ type=Enchantment,Creature
 subtype=Satyr
 cost={1}{G}{G}
 pt=4/2
-ability=flash;bestow {3}{G}{G}
-given_pt=+4/+2
-timing=flash
+ability=Bestow {3}{G}{G};\
+        Flash;\
+        Enchanted creature gets +4/+2.
+timing=pumpFlash

@@ -66,7 +66,7 @@ public enum MagicAbility {
     ProtectionFromWhite("(protection )?from white(\\.)?",20),
     ProtectionFromMonoColored("protection from monocolored",50),
     ProtectionFromAllColors("protection from all colors",150),
-    ProtectionFromCreatures("protection from creatures",100),
+    ProtectionFromCreatures("protection from creatures(\\.)?",100),
     ProtectionFromArtifacts("protection from artifacts",50),
     ProtectionFromDemons("protection from Demons",10),
     ProtectionFromDragons("protection from Dragons",10),
@@ -74,7 +74,7 @@ public enum MagicAbility {
     ProtectionFromWerewolves("protection from Werewolves",10),
     ProtectionFromColoredSpells("protection from colored spells",100),
     ProtectionFromEverything("protection from everything",200),
-    ProtectionFromZombies("protection from Zombies",10),
+    ProtectionFromZombies("protection from Zombies(\\.)?",10),
     ProtectionFromLands("protection from lands",10),
     ProtectionFromSpirits("protection from Spirits",10),
     ProtectionFromArcane("protection from Arcane",10),
@@ -95,7 +95,7 @@ public enum MagicAbility {
     Infect("infect(\\.)?",35),
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
-    CantActivateAbilities("can't activate abilities",-20),
+    CantActivateAbilities("(can't activate abilities|its activated abilities can't be activated.)",-20),
 
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
@@ -114,7 +114,7 @@ public enum MagicAbility {
             card.add(MagicModularTrigger.create());
         }
     },
-    Flanking("flanking",10) {
+    Flanking("flanking(\\.)?",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicFlankingTrigger.create());
         }
@@ -497,7 +497,7 @@ public enum MagicAbility {
             card.add(MagicStormTrigger.create());
         }
     },
-    Annihilator("annihilator " + ARG.NUMBER, 80) {
+    Annihilator("annihilator " + ARG.NUMBER + "(\\.)?", 80) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new MagicAnnihilatorTrigger(n));
@@ -698,31 +698,13 @@ public enum MagicAbility {
             }
         }
     },
-    EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPlayAuraEvent.create("default," + ARG.word1(arg) + " or " + ARG.word2(arg)));
-        }
-    },
-    Enchant("Enchant " + ARG.WORDRUN, 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPlayAuraEvent.create("default," + ARG.wordrun(arg)));
-        }
-    },
-    EnchantedPump("Enchanted " + ARG.WORDRUN + " gets " + ARG.PT + "(\\.)?", 0) {
+    AttachedPumpGain("(Equipped|Enchanted) creature gets " + ARG.PT + "((,)? and (has )?|, has )" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(MagicStatic.genPTStatic(power, toughness));
-        }
-    },
-    EnchantedPumpGain("Enchanted " + ARG.WORDRUN + " gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(MagicStatic.genPTStatic(power, toughness));
-            final String abilitiesLong = ARG.any(arg).replace(", and ",",").replace(" and ",",");
+            final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
             final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
             for (String abilityString : abilityArray) {
                 final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityString);
@@ -730,7 +712,15 @@ public enum MagicAbility {
             }
         }
     },
-    EnchantedGain("Enchanted " + ARG.WORDRUN + " (has )?" + ARG.ANY + "(\\.)?", 0) {
+    AttachedPump("(Equipped|Enchanted) creature gets " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(MagicStatic.genPTStatic(power, toughness));
+        }
+    },
+    AttachedCreatureGain("(Equipped|Enchanted) creature (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
             final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
@@ -740,21 +730,7 @@ public enum MagicAbility {
             }
         }
     },
-    EquippedPumpGain("Equipped creature gets " + ARG.PT + " and (has )?" + ARG.ANY + "(\\.)?", 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String[] pt = ARG.pt(arg).replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            card.add(MagicStatic.genPTStatic(power, toughness));
-            final String abilitiesLong = ARG.any(arg).replace(", and ",",").replace(" and ",",");
-            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
-            for (String abilityString : abilityArray) {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityString);
-                card.add(MagicStatic.genABStatic(abilityList));
-            }
-        }
-    },
-    EquippedPump("Equipped creature gets " + ARG.PT + "(\\.)?", 0) {
+    PairedPump("As long as SN is paired with another creature, each of those creatures gets " + ARG.PT + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
             final int power = Integer.parseInt(pt[0]);
@@ -762,7 +738,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    EquippedGain("Equipped creature (has )?" + ARG.ANY + "(\\.)?", 0) {
+    PairedGain("As long as SN is paired with another creature, (both creatures have|each of those creatures has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
             final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
@@ -778,7 +754,17 @@ public enum MagicAbility {
             card.add(new MagicEquipActivation(cost));
         }
     },
-    Poisonous("poisonous " + ARG.NUMBER, 10) {
+    EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicPlayAuraEvent.create("default," + ARG.word1(arg) + " or " + ARG.word2(arg)));
+        }
+    },
+    Enchant("Enchant " + ARG.WORDRUN, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicPlayAuraEvent.create("default," + ARG.wordrun(arg)));
+        }
+    },
+    Poisonous("poisonous " + ARG.NUMBER + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(MagicWhenDamageIsDealtTrigger.Poisonous(n));

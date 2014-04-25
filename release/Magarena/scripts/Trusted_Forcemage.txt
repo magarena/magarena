@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Shaman
 cost={2}{G}
 pt=2/2
-ability=soulbond
-given_pt=1/1
+ability=Soulbond;\
+        As long as SN is paired with another creature, each of those creatures gets +1/+1.
 timing=main

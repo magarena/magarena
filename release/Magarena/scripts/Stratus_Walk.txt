@@ -6,8 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=When SN enters the battlefield, draw a card.
-given_ability=flying;\
-        SN can block only creatures with flying.
+ability=When SN enters the battlefield, draw a card.;\
+        Enchanted creature has flying.;\
+        Enchanted creature can block only creatures with flying.
 timing=aura
 enchant=flying,creature

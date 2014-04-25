@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{W}
-given_pt=+2/+5
-ability=cycling {3}
+ability=Enchanted creature gets +2/+5.;\
+        Cycling {3}
 timing=aura
 enchant=pump,pos creature

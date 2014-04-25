@@ -1,11 +1,11 @@
 [
     new MagicWhenClashTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final Boolean winClash) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer winner) {
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(new MagicPayManaCostChoice(MagicManaCost.create("{1}"))),
-                winClash ? 1 : 0,
+                winner,
                 this,
                 "PN may\$ pay {1}. If he or she does, PN puts a 3/1 red Elemental Shaman creature token onto the battlefield. " + 
                 "If PN won the clash, that token gains haste until end of turn. "
@@ -18,7 +18,7 @@
                 game.doAction(new MagicPlayTokenAction(
                     event.getPlayer(),
                     TokenCardDefinitions.get("3/1 red Elemental Shaman creature token"),
-                    (event.getRefInt() == 1) ? [MagicPlayMod.HASTE_UEOT] : [MagicPlayMod.NONE]
+                    (event.getRefPlayer() == event.getPlayer()) ? [MagicPlayMod.HASTE_UEOT] : [MagicPlayMod.NONE]
                 ));
             }
         }

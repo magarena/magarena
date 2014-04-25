@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{W}
-given_ability=At the beginning of your upkeep, put a 1/1 white Human creature token onto the battlefield.
+ability=Enchanted creature has "At the beginning of your upkeep, put a 1/1 white Human creature token onto the battlefield."
 timing=aura
 enchant=pump,pos creature

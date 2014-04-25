@@ -7,6 +7,6 @@ type=Enchantment,Creature
 subtype=Merfolk
 cost={2}{U}
 pt=2/3
-ability=bestow {4}{U}
-given_pt=+2/+3
+ability=Bestow {4}{U};\
+        Enchanted creature gets +2/+3.
 timing=main

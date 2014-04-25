@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{B}
-given_ability=poisonous 3
+ability=Enchanted creature has poisonous 3.
 enchant=pump,pos creature
 timing=enchantment

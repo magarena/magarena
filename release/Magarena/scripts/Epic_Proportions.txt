@@ -6,8 +6,7 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={4}{G}{G}
-given_pt=5/5
-given_ability=trample
-ability=flash
-timing=pump
+ability=Flash;\
+        Enchanted creature gets +5/+5 and has trample.
+timing=pumpFlash
 enchant=pump,pos creature

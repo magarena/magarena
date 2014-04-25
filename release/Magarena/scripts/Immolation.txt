@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-given_pt=+2/-2
+ability=Enchanted creature gets +2/-2.
 timing=aura
 enchant=weaken +2/-2,creature

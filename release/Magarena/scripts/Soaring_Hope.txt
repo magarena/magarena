@@ -7,7 +7,7 @@ type=Enchantment
 subtype=Aura
 cost={4}{W}
 ability=When SN enters the battlefield, you gain 3 life.;\
+        Enchanted creature has flying.;\
         {W}: Put SN on top of its owner's library.
-given_ability=flying
 enchant=pump,pos creature
 timing=aura

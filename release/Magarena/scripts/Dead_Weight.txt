@@ -2,11 +2,10 @@ name=Dead Weight
 url=http://magiccards.info/query?q=%21dead%20weight
 image=http://mtgimage.com/card/dead%20weight.jpg
 value=3.787
-removal=2
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-given_pt=-2/-2
-timing=removal
+ability=Enchanted creature gets -2/-2.
+timing=aura
 enchant=weaken -2/-2,neg creature

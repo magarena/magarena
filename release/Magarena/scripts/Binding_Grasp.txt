@@ -6,8 +6,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-given_pt=0/1
-enchant=gain control,neg creature
 ability=You control enchanted creature.;\
-        At the beginning of your upkeep, you may pay {1}{U}. If you don't, sacrifice SN.
+        At the beginning of your upkeep, you may pay {1}{U}. If you don't, sacrifice SN.;\
+        Enchanted creature gets +0/+1.
 timing=aura
+enchant=gain control,neg creature

@@ -1,9 +1,9 @@
 package magic.model.trigger;
 
 import magic.model.MagicCardDefinition;
-import magic.model.stack.MagicItemOnStack;
+import magic.model.MagicPlayer;
 
-public abstract class MagicWhenClashTrigger extends MagicTrigger<Boolean> {
+public abstract class MagicWhenClashTrigger extends MagicTrigger<MagicPlayer> {
     public MagicWhenClashTrigger(final int priority) {
         super(priority);
     }

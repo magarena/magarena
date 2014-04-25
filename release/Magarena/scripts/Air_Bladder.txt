@@ -7,6 +7,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-given_ability=flying;SN can block only creatures with flying.
+ability=Enchanted creature has flying.;\
+        Enchanted creature can block only creatures with flying.
 timing=aura
-enchant=flying,pos creature
+enchant=flying,creature

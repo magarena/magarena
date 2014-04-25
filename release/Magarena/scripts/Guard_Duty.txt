@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-given_ability=defender
+ability=Enchanted creature has defender.
 timing=aura
 enchant=defender,neg creature

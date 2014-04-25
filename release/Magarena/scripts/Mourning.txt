@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
-enchant=weaken,neg creature
-given_pt=-2/-0
-ability={B}:Return SN to its owner's hand.
+ability=Enchanted creature gets -2/-0.;\
+        {B}:Return SN to its owner's hand.
 timing=aura
+enchant=weaken,neg creature

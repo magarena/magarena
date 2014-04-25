@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
+ability=Enchanted creature has "{R}, {T}, Discard a card: Draw a card."
 enchant=pump,pos creature
-given_ability={R},{T},Discard a card: Draw a card.
 timing=aura
