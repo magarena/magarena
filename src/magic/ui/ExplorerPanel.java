@@ -154,7 +154,7 @@ public class ExplorerPanel extends TexturedPanel {
                StatusBar.PANEL_HEIGHT -
                ActionBar.PANEL_HEIGHT -
                FILTERS_PANEL_HEIGHT -
-               (int)(cardsSplitPane.getDividerSize() / 2);
+               (cardsSplitPane.getDividerSize() / 2);
         return (int)(splitPaneContentHeight * 0.46);
     }
 
