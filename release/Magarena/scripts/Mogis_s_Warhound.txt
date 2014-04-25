@@ -1,0 +1,13 @@
+name=Mogis's Warhound
+url=http://www.magiccards.info/query?q=%21mogis%27s%20warhound
+image=http://mtgimage.com/card/mogis's%20warhound.jpg
+value=2.50
+rarity=U
+type=Enchantment,Creature
+subtype=Hound
+pt=2/2
+cost={1}{R}
+ability=Bestow {2}{R};\
+        SN attacks each turn if able.;\
+        Enchanted creature gets +2/+2 and attacks each turn if able.
+timing=main

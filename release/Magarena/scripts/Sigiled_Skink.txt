@@ -1,0 +1,11 @@
+name=Sigiled Skink
+url=http://www.magiccards.info/query?q=%21sigiled%20skink
+image=http://mtgimage.com/card/sigiled%20skink.jpg
+value=2.50
+rarity=C
+type=Creature
+subtype=Lizard
+pt=2/1
+cost={1}{R}
+ability=Whenever SN attacks, scry 1.
+timing=main

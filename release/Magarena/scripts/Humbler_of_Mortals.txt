@@ -1,0 +1,11 @@
+name=Humbler of Mortals
+url=http://www.magiccards.info/query?q=%21humbler%20of%20mortals
+image=http://mtgimage.com/card/humbler%20of%20mortals.jpg
+value=2.50
+rarity=C
+type=Enchantment,Creature
+subtype=Elemental
+pt=5/5
+cost={4}{G}{G}
+ability=Whenever SN or another enchantment enters the battlefield under your control, creatures you control gain trample until end of turn.
+timing=fmain

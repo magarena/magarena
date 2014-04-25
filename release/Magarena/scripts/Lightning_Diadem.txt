@@ -1,0 +1,11 @@
+name=Lightning Diadem
+url=http://www.magiccards.info/query?q=%21lightning%20diadem
+image=http://mtgimage.com/card/lightning%20diadem.jpg
+value=2.50
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={5}{R}
+ability=When SN enters the battlefield, SN deals 2 damage to target creature or player.;\
+        Enchanted creature gets +2/+2
+timing=aura

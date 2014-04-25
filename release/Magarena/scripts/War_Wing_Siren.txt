@@ -1,0 +1,12 @@
+name=War-Wing Siren
+url=http://www.magiccards.info/query?q=%21war%2Dwing%20siren
+image=http://mtgimage.com/card/war-wing%20siren.jpg
+value=2.50
+rarity=C
+type=Creature
+subtype=Siren,Soldier
+pt=1/3
+cost={2}{U}
+ability=Flying;\
+        Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
+timing=main
