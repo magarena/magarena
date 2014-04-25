@@ -2,12 +2,14 @@
     new MagicWhenClashTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer winner) {
-            return (winner == permaent.getController())? new MagicEvent(
-                permanent,
-                new MagicMayChoice(),
-                this,
-                "PN may\$ draw a card. "
-            ) : MagicEvent.NONE;
+            return permanent.isController(winner) ? 
+                new MagicEvent(
+                    permanent,
+                    new MagicMayChoice(),
+                    this,
+                    "PN may\$ draw a card. "
+                ) : 
+                MagicEvent.NONE;
         }
         
         @Override
