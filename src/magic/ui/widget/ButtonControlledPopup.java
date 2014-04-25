@@ -55,9 +55,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
         // set location relative to button
         final Point location = invokePopupButton.getLocation();
         SwingUtilities.convertPointToScreen(location, invokePopupButton.getParent());
-        location.translate(0, invokePopupButton.getHeight()
-                + (invokePopupButton.getBorder() == null ? 0
-                    : invokePopupButton.getBorder().getBorderInsets(invokePopupButton).bottom));
+        location.translate(0, invokePopupButton.getHeight());
         dialog.setLocation(location);
 
         // showPopup the popup if not visible

@@ -100,6 +100,10 @@ public class CardTable extends JPanel implements ListSelectionListener {
         }
     }
 
+    public void setDeckEditorSelectionMode() {
+        table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+    }
+
     public void addMouseListener(final MouseListener m) {
         table.addMouseListener(m);
     }
