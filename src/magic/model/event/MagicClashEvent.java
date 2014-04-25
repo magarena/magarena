@@ -30,25 +30,27 @@ public class MagicClashEvent extends MagicEvent {
     private static final MagicEventAction EventAction = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final boolean clashWin = executeClash(game, event);
-            if (clashWin) {
+            final MagicPlayer winner = executeClash(game, event);
+            if (winner == event.getPlayer()) {
                 clashAction.executeEvent(game, event);
             };
-            game.executeTrigger(MagicTriggerType.WhenClash, clashWin);
+            game.executeTrigger(MagicTriggerType.WhenClash, winner);
         }
     };
     
-    public static boolean executeClash(final MagicGame game, final MagicEvent event) {
+    public static MagicPlayer executeClash(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
         final MagicPlayer opponent = player.getOpponent();
         final MagicCard playerCard = player.getLibrary().getCardAtTop();
         final MagicCard opponentCard = opponent.getLibrary().getCardAtTop();
-           
-        final boolean win = playerCard.getConvertedCost() > opponentCard.getConvertedCost();
+        final MagicPlayer winner;
+        if (playerCard.getConvertedCost() > opponentCard.getConvertedCost()) winner = player;
+        else if (playerCard.getConvertedCost() < opponentCard.getConvertedCost()) winner = opponent;
+        else winner = MagicPlayer.NONE;
             
         game.addFirstEvent(new MagicScryEvent(event.getSource(), player));
         game.addFirstEvent(new MagicScryEvent(event.getSource(), opponent));
                 
-        return win;
+        return winner;
     }
 }
