@@ -2,12 +2,11 @@ name=Galvanic Arc
 url=http://magiccards.info/query?q=%21galvanic%20arc
 image=http://mtgimage.com/card/galvanic%20arc.jpg
 value=3.394
-removal=3
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-given_ability=first strike
-ability=When SN enters the battlefield, SN deals 3 damage to target creature or player.
-timing=removal
+ability=When SN enters the battlefield, SN deals 3 damage to target creature or player.;\
+        Enchanted creature has first strike.
+timing=aura
 enchant=first strike,pos creature

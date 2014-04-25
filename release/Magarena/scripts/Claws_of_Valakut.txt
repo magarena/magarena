@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}{R}
+ability=Enchanted creature has first strike.
 enchant=pump,pos creature
-given_ability=first strike
 timing=aura
 requires_groovy_code

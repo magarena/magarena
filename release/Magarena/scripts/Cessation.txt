@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-enchant=can't attack,neg creature
-given_ability=SN can't attack.
-ability=When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
+ability=Enchanted creature can't attack.;\
+        When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
 timing=aura
+enchant=can't attack,neg creature

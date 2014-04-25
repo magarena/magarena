@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}{U}
-given_ability=can't be blocked except by walls.
+ability=Enchanted creature can't be blocked except by Walls.
 enchant=unblockable,pos creature
 timing=aura

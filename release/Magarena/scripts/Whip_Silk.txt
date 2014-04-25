@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=Enchanted creature has reach.;\
+        {G}:Return SN to its owner's hand.
+timing=aura
 enchant=flying,pos creature
-given_ability=reach
-ability={G}:Return SN to its owner's hand.
-timing=enchantment

@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-given_ability=protection from red;protection from black
+ability=Enchanted creature has protection from black and from red.
 timing=aura
 enchant=unblockable,pos creature

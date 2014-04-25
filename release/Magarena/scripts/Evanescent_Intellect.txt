@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
+ability=Enchanted creature has "{1}{U}, {T}: Target player puts the top three cards of his or her library into his or her graveyard."
 enchant=pump,pos creature
-given_ability={1}{U},{T}:Target player puts the top three cards of his or her library into his or her graveyard.
 timing=aura

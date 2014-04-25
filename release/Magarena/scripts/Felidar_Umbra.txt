@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability={1}{W}: Attach SN to target creature you control.
-given_ability=Lifelink
+ability=Enchanted creature has lifelink.;\
+        {1}{W}: Attach SN to target creature you control.
 enchant=lifelink,pos creature
-timing=enchantment
+timing=aura

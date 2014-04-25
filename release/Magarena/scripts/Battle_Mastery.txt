@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-given_ability=double strike
+ability=Enchanted creature has double strike.
 timing=aura
 enchant=first strike,pos creature

@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
-given_ability=can't be blocked by green creatures.
+ability=Enchanted creature can't be blocked by green creatures.
 enchant=pump,pos creature
 timing=aura
 requires_groovy_code

@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}{B}
-enchant=pump,pos creature
-given_ability=fear
+ability=Enchanted creature has fear.
 timing=aura
+enchant=pump,pos creature
 requires_groovy_code

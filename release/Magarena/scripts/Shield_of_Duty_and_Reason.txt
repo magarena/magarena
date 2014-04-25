@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-given_ability=protection from green;protection from blue
+ability=Enchanted creature has protection from green and from blue.
 timing=aura
 enchant=unblockable,pos creature

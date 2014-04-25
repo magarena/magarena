@@ -7,6 +7,6 @@ type=Enchantment
 subtype=Aura
 cost={W}
 timing=aura
-given_ability=first strike
+ability=Enchanted creature has first strike.
 enchant=pump,pos creature
 requires_groovy_code

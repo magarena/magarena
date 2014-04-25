@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-given_ability=islandwalk
+ability=Enchanted creature has islandwalk.
 timing=aura
 enchant=unblockable,pos creature

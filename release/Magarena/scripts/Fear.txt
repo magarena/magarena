@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}{B}
-given_ability=fear
+ability=Enchanted creature has fear.
 timing=aura
 enchant=unblockable,pos creature

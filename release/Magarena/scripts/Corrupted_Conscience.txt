@@ -6,7 +6,7 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{U}{U}
-given_ability=infect
+ability=You control enchanted creature.;\
+        Enchanted creature has infect.
 timing=aura
-ability=You control enchanted creature.
 enchant=gain control,neg creature

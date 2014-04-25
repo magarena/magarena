@@ -6,8 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=flash
-given_ability=shadow
+ability=Flash;\
+        Enchanted creature has shadow.
 timing=flash
 # not the ideal targetPicker as the creature can still
 # attack and block, but because this gives the creature

@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={4}{U}
-ability={3}{U}: Attach SN to target creature.
-given_ability=SN doesn't untap during its controller's untap step.
-enchant=can't attack or block,neg creature
+ability=Enchanted creature doesn't untap during its controller's untap step.;\
+        {3}{U}: Attach SN to target creature.
 timing=enchantment
+enchant=can't attack or block,neg creature

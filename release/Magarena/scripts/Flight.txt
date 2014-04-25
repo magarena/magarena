@@ -6,6 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-given_ability=flying
+ability=Enchanted creature has flying.
 timing=aura
 enchant=flying,pos creature

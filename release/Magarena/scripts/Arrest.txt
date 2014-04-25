@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-given_ability=SN can't attack or block.;can't activate abilities
+ability=Enchanted creature can't attack or block, and its activated abilities can't be activated.
 timing=aura
 enchant=can't attack or block,neg creature
