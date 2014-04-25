@@ -326,6 +326,7 @@ public class ExplorerPanel extends TexturedPanel {
         private final MigLayout migLayout = new MigLayout();
         private final JButton addButton = new JButton();
         private final JButton removeButton = new JButton();
+        private final JButton clearButton = new JButton();
 
         public DeckEditorButtonsPanel() {
             setLookAndFeel();
@@ -344,6 +345,10 @@ public class ExplorerPanel extends TexturedPanel {
             removeButton.setText("Remove from Deck");
             removeButton.setFont(FontsAndBorders.FONT1);
             removeButton.setFocusable(false);
+            // JButton that removes all cards from deck.
+            clearButton.setText("Clear Deck");
+            clearButton.setFont(FontsAndBorders.FONT1);
+            clearButton.setFocusable(false);
         }
 
         private void refreshLayout() {
@@ -351,11 +356,13 @@ public class ExplorerPanel extends TexturedPanel {
             migLayout.setLayoutConstraints("insets 0 6 0 0, aligny center");
             add(addButton, "w 160!, h 30!");
             add(removeButton, "w 160!, h 30!");
+            add(clearButton, "w 160!, h 30!");
         }
 
         private void setActions() {
             removeButton.addActionListener(this);
             addButton.addActionListener(this);
+            clearButton.addActionListener(this);
         }
 
         @Override
@@ -365,6 +372,21 @@ public class ExplorerPanel extends TexturedPanel {
                 addSelectedToDeck();
             } else if (source == removeButton) {
                 removeSelectedFromDeck();
+            } else if (source == clearButton) {
+                doClearDeck();
+            }
+        }
+
+        private void doClearDeck() {
+            final int userResponse =
+                    JOptionPane.showConfirmDialog(
+                            MagicMain.rootFrame,
+                            "Remove all cards from deck?",
+                            "Clear Deck",
+                            JOptionPane.YES_NO_OPTION,
+                            JOptionPane.QUESTION_MESSAGE);
+            if (userResponse == JOptionPane.YES_OPTION) {
+                setDeck(new MagicDeck());
             }
         }
 
