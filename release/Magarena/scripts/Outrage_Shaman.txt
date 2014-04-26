@@ -1,7 +1,7 @@
 name=Outrage Shaman
 url=http://magiccards.info/query?q=%21outrage%20shaman
 image=http://mtgimage.com/card/outrage%20shaman.jpg
-value=2.645
+value=2.667
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

@@ -1,7 +1,7 @@
 name=Heap Doll
 url=http://www.magiccards.info/query?q=%21heap%20doll
 image=http://mtgimage.com/card/heap%20doll.jpg
-value=3.658
+value=3.647
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow

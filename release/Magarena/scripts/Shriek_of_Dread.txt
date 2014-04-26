@@ -1,7 +1,7 @@
 name=Shriek of Dread
 url=http://magiccards.info/query?q=%21shriek%20of%20dread
 image=http://mtgimage.com/card/shriek%20of%20dread.jpg
-value=2.036
+value=2.017
 rarity=C
 type=Instant
 cost={1}{B}

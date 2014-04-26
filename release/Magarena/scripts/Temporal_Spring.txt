@@ -1,7 +1,7 @@
 name=Temporal Spring
 url=http://magiccards.info/query?q=%21temporal%20spring
 image=http://mtgimage.com/card/temporal%20spring.jpg
-value=4.029
+value=4.038
 rarity=C
 type=Sorcery
 cost={1}{G}{U}

@@ -1,7 +1,7 @@
 name=Breath of Malfegor
 url=http://www.magiccards.info/query?q=%21breath%20of%20malfegor
 image=http://mtgimage.com/card/breath%20of%20malfegor.jpg
-value=2.991
+value=3.022
 rarity=C
 type=Instant
 cost={3}{B}{R}

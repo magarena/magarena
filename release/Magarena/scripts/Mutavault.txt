@@ -1,7 +1,7 @@
 name=Mutavault
 url=http://magiccards.info/query?q=%21mutavault
 image=http://mtgimage.com/card/mutavault.jpg
-value=4.386
+value=4.382
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.

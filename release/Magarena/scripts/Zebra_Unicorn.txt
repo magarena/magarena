@@ -1,7 +1,7 @@
 name=Zebra Unicorn
 url=http://www.magiccards.info/query?q=%21zebra%20unicorn
 image=http://mtgimage.com/card/zebra%20unicorn.jpg
-value=3.213
+value=3.245
 rarity=U
 type=Creature
 subtype=Unicorn

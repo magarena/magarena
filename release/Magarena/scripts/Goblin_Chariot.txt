@@ -1,7 +1,7 @@
 name=Goblin Chariot
 url=http://magiccards.info/query?q=%21goblin%20chariot
 image=http://mtgimage.com/card/goblin%20chariot.jpg
-value=2.625
+value=2.635
 ability=haste
 rarity=C
 type=Creature

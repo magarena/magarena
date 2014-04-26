@@ -1,7 +1,7 @@
 name=Ebony Rhino
 url=http://magiccards.info/query?q=%21ebony%20rhino
 image=http://mtgimage.com/card/ebony%20rhino.jpg
-value=2.100
+value=2.058
 rarity=C
 type=Artifact,Creature
 subtype=Rhino

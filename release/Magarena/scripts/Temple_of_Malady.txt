@@ -1,7 +1,7 @@
 name=Temple of Malady
 url=http://www.magiccards.info/query?q=%21temple%20of%20malady
 image=http://mtgimage.com/card/temple%20of%20malady.jpg
-value=2.50
+value=3.719
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

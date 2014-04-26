@@ -1,7 +1,7 @@
 name=Surgespanner
 url=http://magiccards.info/query?q=%21surgespanner
 image=http://mtgimage.com/card/surgespanner.jpg
-value=3.656
+value=3.650
 rarity=R
 type=Creature
 subtype=Merfolk,Wizard

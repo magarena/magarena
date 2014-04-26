@@ -1,7 +1,7 @@
 name=Auger Spree
 url=http://magiccards.info/query?q=%21auger%20spree
 image=http://mtgimage.com/card/auger%20spree.jpg
-value=3.153
+value=3.145
 rarity=C
 type=Instant
 cost={1}{B}{R}

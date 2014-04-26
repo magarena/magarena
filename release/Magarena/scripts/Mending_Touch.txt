@@ -1,7 +1,7 @@
 name=Mending Touch
 url=http://magiccards.info/query?q=%21mending%20touch
 image=http://mtgimage.com/card/mending%20touch.jpg
-value=2.895
+value=2.909
 rarity=C
 type=Instant
 cost={G}

@@ -1,7 +1,7 @@
 name=Carrier Pigeons
 url=http://www.magiccards.info/query?q=%21carrier%20pigeons
 image=http://mtgimage.com/card/carrier%20pigeons.jpg
-value=2.657
+value=1.798
 rarity=C
 type=Creature
 subtype=Bird

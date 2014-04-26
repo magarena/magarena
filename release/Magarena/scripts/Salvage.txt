@@ -1,7 +1,7 @@
 name=Salvage
 url=http://www.magiccards.info/query?q=%21salvage
 image=http://mtgimage.com/card/salvage.jpg
-value=3.36
+value=3.360
 rarity=C
 type=Sorcery
 cost={G}

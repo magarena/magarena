@@ -1,7 +1,7 @@
 name=Mortal Combat
 url=http://www.magiccards.info/query?q=%21mortal%20combat
 image=http://mtgimage.com/card/mortal%20combat.jpg
-value=4.048
+value=4.000
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

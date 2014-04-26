@@ -1,7 +1,7 @@
 name=Castle
 url=http://magiccards.info/query?q=%21castle
 image=http://mtgimage.com/card/castle.jpg
-value=4.251
+value=3.281
 rarity=U
 type=Enchantment
 cost={3}{W}

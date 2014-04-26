@@ -1,7 +1,7 @@
 name=Time Stretch
 url=http://magiccards.info/query?q=%21time%20stretch
 image=http://mtgimage.com/card/time%20stretch.jpg
-value=4.262
+value=4.257
 rarity=R
 type=Sorcery
 cost={8}{U}{U}

@@ -1,7 +1,7 @@
 name=Deathcoil Wurm
 url=http://www.magiccards.info/query?q=%21deathcoil%20wurm
 image=http://mtgimage.com/set/me4/deathcoil%20wurm.jpg
-value=3.476
+value=3.208
 rarity=R
 type=Creature
 subtype=Wurm

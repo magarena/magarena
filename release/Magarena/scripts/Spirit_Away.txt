@@ -1,7 +1,7 @@
 name=Spirit Away
 url=http://magiccards.info/query?q=%21spirit%20away
 image=http://mtgimage.com/card/spirit%20away.jpg
-value=2.905
+value=2.929
 rarity=R
 type=Enchantment
 subtype=Aura

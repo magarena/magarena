@@ -1,7 +1,7 @@
 name=Titan's Strength
 url=http://magiccards.info/query?q=%21titan%27s%20strength
 image=http://mtgimage.com/card/titan's%20strength.jpg
-value=3.617
+value=3.623
 rarity=C
 type=Instant
 cost={R}

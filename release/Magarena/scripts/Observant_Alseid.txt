@@ -1,7 +1,7 @@
 name=Observant Alseid
 url=http://magiccards.info/query?q=%21observant%20alseid
 image=http://mtgimage.com/card/observant%20alseid.jpg
-value=3.328
+value=3.383
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph

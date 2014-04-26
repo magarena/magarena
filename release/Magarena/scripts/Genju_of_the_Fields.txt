@@ -1,7 +1,7 @@
 name=Genju of the Fields
 url=http://magiccards.info/query?q=%21genju%20of%20the%20fields
 image=http://mtgimage.com/card/genju%20of%20the%20fields.jpg
-value=3.900
+value=3.922
 rarity=U
 type=Enchantment
 subtype=Aura

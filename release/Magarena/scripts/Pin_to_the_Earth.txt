@@ -1,7 +1,7 @@
 name=Pin to the Earth
 url=http://www.magiccards.info/query?q=%21pin%20to%20the%20earth
 image=http://mtgimage.com/card/pin%20to%20the%20earth.jpg
-value=2.50
+value=2.125
 rarity=C
 type=Enchantment
 subtype=Aura

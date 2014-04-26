@@ -1,7 +1,7 @@
 name=Vulshok Gauntlets
 url=http://magiccards.info/query?q=%21vulshok%20gauntlets
 image=http://mtgimage.com/card/vulshok%20gauntlets.jpg
-value=3.167
+value=3.175
 rarity=C
 type=Artifact
 subtype=Equipment

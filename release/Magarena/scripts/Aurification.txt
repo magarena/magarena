@@ -1,7 +1,7 @@
 name=Aurification
 url=http://magiccards.info/query?q=%21aurification
 image=http://mtgimage.com/card/aurification.jpg
-value=3.605
+value=3.641
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

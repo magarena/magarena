@@ -1,7 +1,7 @@
 name=Stolen Identity
 url=http://magiccards.info/query?q=%21stolen%20identity
 image=http://mtgimage.com/card/stolen%20identity.jpg
-value=3.607
+value=3.630
 rarity=R
 type=Sorcery
 cost={4}{U}{U}

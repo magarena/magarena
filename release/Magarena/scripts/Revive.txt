@@ -1,7 +1,7 @@
 name=Revive
 url=http://magiccards.info/query?q=%21revive
 image=http://mtgimage.com/card/revive.jpg
-value=4.122
+value=4.138
 rarity=U
 type=Sorcery
 cost={1}{G}

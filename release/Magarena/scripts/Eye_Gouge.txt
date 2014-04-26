@@ -1,7 +1,7 @@
 name=Eye Gouge
 url=http://magiccards.info/query?q=%21eye%20gouge
 image=http://mtgimage.com/card/eye%20gouge.jpg
-value=3.085
+value=3.020
 rarity=C
 type=Instant
 cost={B}

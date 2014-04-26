@@ -1,7 +1,7 @@
 name=Lava Dart
 url=http://www.magiccards.info/query?q=%21lava%20dart
 image=http://mtgimage.com/card/lava%20dart.jpg
-value=3.254
+value=3.283
 rarity=C
 type=Instant
 cost={R}

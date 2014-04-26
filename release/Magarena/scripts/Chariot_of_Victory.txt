@@ -1,7 +1,7 @@
 name=Chariot of Victory
 url=http://www.magiccards.info/query?q=%21chariot%20of%20victory
 image=http://mtgimage.com/card/chariot%20of%20victory.jpg
-value=2.50
+value=3.750
 rarity=U
 type=Artifact
 subtype=Equipment

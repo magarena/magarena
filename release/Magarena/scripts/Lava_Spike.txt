@@ -1,7 +1,7 @@
 name=Lava Spike
 url=http://magiccards.info/query?q=%21lava%20spike
 image=http://mtgimage.com/card/lava%20spike.jpg
-value=4.162
+value=4.184
 rarity=C
 type=Sorcery
 subtype=Arcane

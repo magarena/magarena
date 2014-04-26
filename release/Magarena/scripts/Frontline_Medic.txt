@@ -1,7 +1,7 @@
 name=Frontline Medic
 url=http://magiccards.info/query?q=%21frontline%20medic
 image=http://mtgimage.com/card/frontline%20medic.jpg
-value=4.024
+value=4.028
 rarity=R
 type=Creature
 subtype=Human,Cleric

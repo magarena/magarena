@@ -1,7 +1,7 @@
 name=Gloom Surgeon
 url=http://magiccards.info/query?q=%21gloom%20surgeon
 image=http://mtgimage.com/card/gloom%20surgeon.jpg
-value=2.915
+value=2.945
 rarity=R
 type=Creature
 subtype=Spirit

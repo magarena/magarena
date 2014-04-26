@@ -1,7 +1,7 @@
 name=Lord of Tresserhorn
 url=http://magiccards.info/query?q=%21lord%20of%20tresserhorn
 image=http://mtgimage.com/card/lord%20of%20tresserhorn.jpg
-value=4.017
+value=4.029
 rarity=R
 type=Legendary,Creature
 subtype=Zombie

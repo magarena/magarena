@@ -1,7 +1,7 @@
 name=Call of the Herd
 url=http://www.magiccards.info/query?q=%21call%20of%20the%20herd
 image=http://mtgimage.com/card/call%20of%20the%20herd.jpg
-value=4.255
+value=4.045
 rarity=R
 type=Sorcery
 cost={2}{G}

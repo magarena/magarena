@@ -1,7 +1,7 @@
 name=Ravenous Leucrocota
 url=http://www.magiccards.info/query?q=%21ravenous%20leucrocota
 image=http://mtgimage.com/card/ravenous%20leucrocota.jpg
-value=2.50
+value=2.591
 rarity=C
 type=Creature
 subtype=Beast

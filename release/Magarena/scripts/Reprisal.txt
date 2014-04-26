@@ -1,7 +1,7 @@
 name=Reprisal
 url=http://magiccards.info/query?q=%21reprisal
 image=http://mtgimage.com/card/reprisal.jpg
-value=4.233
+value=3.921
 removal=3
 rarity=C
 type=Instant

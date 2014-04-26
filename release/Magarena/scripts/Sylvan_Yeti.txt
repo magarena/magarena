@@ -1,7 +1,7 @@
 name=Sylvan Yeti
 url=http://www.magiccards.info/query?q=%21sylvan%20yeti
 image=http://mtgimage.com/card/sylvan%20yeti.jpg
-value=3.288
+value=3.250
 rarity=R
 type=Creature
 subtype=Yeti

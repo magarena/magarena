@@ -1,7 +1,7 @@
 name=Thunderheads
 url=http://www.magiccards.info/query?q=%21thunderheads
 image=http://mtgimage.com/card/thunderheads.jpg
-value=3.214
+value=3.200
 rarity=U
 type=Instant
 cost={2}{U}

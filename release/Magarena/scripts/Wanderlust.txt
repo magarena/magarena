@@ -1,7 +1,7 @@
 name=Wanderlust
 url=http://www.magiccards.info/query?q=%21wanderlust
 image=http://mtgimage.com/card/wanderlust.jpg
-value=2.452
+value=2.398
 rarity=C
 type=Enchantment
 subtype=Aura

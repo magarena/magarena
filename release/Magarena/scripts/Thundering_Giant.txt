@@ -1,7 +1,7 @@
 name=Thundering Giant
 url=http://magiccards.info/query?q=%21thundering%20giant
 image=http://mtgimage.com/card/thundering%20giant.jpg
-value=2.188
+value=2.176
 ability=haste
 rarity=U
 type=Creature

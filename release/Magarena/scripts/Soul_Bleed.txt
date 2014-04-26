@@ -1,7 +1,7 @@
 name=Soul Bleed
 url=http://magiccards.info/query?q=%21soul%20bleed
 image=http://mtgimage.com/card/soul%20bleed.jpg
-value=1.926
+value=1.906
 rarity=C
 type=Enchantment
 subtype=Aura

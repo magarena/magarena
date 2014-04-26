@@ -1,7 +1,7 @@
 name=Simic Fluxmage
 url=http://magiccards.info/query?q=%21simic%20fluxmage
 image=http://mtgimage.com/card/simic%20fluxmage.jpg
-value=2.902
+value=2.904
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

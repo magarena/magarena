@@ -1,7 +1,7 @@
 name=Sylvok Lifestaff
 url=http://magiccards.info/query?q=%21sylvok%20lifestaff
 image=http://mtgimage.com/card/sylvok%20lifestaff.jpg
-value=3.583
+value=3.589
 rarity=C
 type=Artifact
 subtype=Equipment

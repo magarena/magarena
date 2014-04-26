@@ -1,7 +1,7 @@
 name=Skull of Orm
 url=http://magiccards.info/query?q=%21skull%20of%20orm
 image=http://mtgimage.com/card/skull%20of%20orm.jpg
-value=2.500
+value=2.513
 rarity=R
 type=Artifact
 cost={3}

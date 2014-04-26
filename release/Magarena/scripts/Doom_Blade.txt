@@ -1,7 +1,7 @@
 name=Doom Blade
 url=http://magiccards.info/query?q=%21doom%20blade
 image=http://mtgimage.com/card/doom%20blade.jpg
-value=4.393
+value=4.386
 removal=4
 rarity=C
 type=Instant

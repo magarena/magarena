@@ -1,7 +1,7 @@
 name=Oakheart Dryads
 url=http://www.magiccards.info/query?q=%21oakheart%20dryads
 image=http://mtgimage.com/card/oakheart%20dryads.jpg
-value=2.50
+value=3.042
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph,Dryad

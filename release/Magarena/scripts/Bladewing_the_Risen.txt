@@ -1,7 +1,7 @@
 name=Bladewing the Risen
 url=http://www.magiccards.info/query?q=%21bladewing%20the%20risen
 image=http://mtgimage.com/card/bladewing%20the%20risen.jpg
-value=4.022
+value=4.071
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Dragon

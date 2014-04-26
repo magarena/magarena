@@ -1,7 +1,7 @@
 name=Vedalken AEthermage
 url=http://www.magiccards.info/query?q=%21vedalken%20aethermage
 image=http://mtgimage.com/card/vedalken%20aethermage.jpg
-value=3.789
+value=3.779
 rarity=C
 type=Creature
 subtype=Vedalken,Wizard

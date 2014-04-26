@@ -1,7 +1,7 @@
 name=Crush of Wurms
 url=http://www.magiccards.info/query?q=%21crush%20of%20wurms
 image=http://mtgimage.com/card/crush%20of%20wurms.jpg
-value=4.234
+value=4.188
 rarity=R
 type=Sorcery
 cost={6}{G}{G}{G}

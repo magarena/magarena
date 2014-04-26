@@ -1,7 +1,7 @@
 name=Echo Mage
 url=http://magiccards.info/query?q=%21echo%20mage
 image=http://mtgimage.com/card/echo%20mage.jpg
-value=3.812
+value=3.882
 rarity=R
 type=Creature
 subtype=Human,Wizard

@@ -1,7 +1,7 @@
 name=Fanatic of Mogis
 url=http://magiccards.info/query?q=%21fanatic%20of%20mogis
 image=http://mtgimage.com/card/fanatic%20of%20mogis.jpg
-value=2.500
+value=3.598
 rarity=U
 type=Creature
 subtype=Minotaur,Shaman

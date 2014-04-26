@@ -1,7 +1,7 @@
 name=Thatcher Revolt
 url=http://magiccards.info/query?q=%21thatcher%20revolt
 image=http://mtgimage.com/card/thatcher%20revolt.jpg
-value=3.731
+value=3.735
 rarity=C
 type=Sorcery
 cost={2}{R}
