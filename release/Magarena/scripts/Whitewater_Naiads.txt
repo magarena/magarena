@@ -3,7 +3,7 @@ url=http://www.magiccards.info/query?q=%21whitewater%20naiads
 image=http://mtgimage.com/card/whitewater%20naiads.jpg
 value=2.50
 rarity=U
-type=Creature
+type=Enchantment,Creature
 subtype=Nymph
 pt=4/4
 cost={3}{U}{U}
