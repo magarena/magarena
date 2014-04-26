@@ -177,6 +177,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         scrollPane.setOpaque(false);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setPreferredSize(POPUP_CHECKBOXES_SIZE);
+        scrollPane.getVerticalScrollBar().setUnitIncrement(18);
         popup.add(scrollPane);
 
         final ButtonGroup bg = new ButtonGroup();
