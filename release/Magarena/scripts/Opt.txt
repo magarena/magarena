@@ -7,3 +7,5 @@ type=Instant
 cost={U}
 timing=draw
 requires_groovy_code
+#Opt is using the scry event, but shouldn't trigger
+#Future 'Whenever you scry' triggers

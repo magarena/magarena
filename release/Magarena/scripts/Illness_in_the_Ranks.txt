@@ -1,0 +1,9 @@
+name=Illness in the Ranks
+url=http://www.magiccards.info/query?q=%21illness%20in%20the%20ranks
+image=http://mtgimage.com/card/illness%20in%20the%20ranks.jpg
+value=3.208
+rarity=U
+type=Enchantment
+cost={B}
+ability=lord Creature tokens get -1/-1
+timing=enchantment

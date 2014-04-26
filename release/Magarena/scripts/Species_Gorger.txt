@@ -1,0 +1,11 @@
+name=Species Gorger
+url=http://www.magiccards.info/query?q=%21species%20gorger
+image=http://mtgimage.com/card/species%20gorger.jpg
+value=3.875
+rarity=U
+type=Creature
+subtype=Frog,Beast
+cost={3}{G}{U}
+pt=6/6
+ability=At the beginning of your upkeep, return a creature you control to its owner's hand.
+timing=main
