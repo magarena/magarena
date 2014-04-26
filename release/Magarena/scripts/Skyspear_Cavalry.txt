@@ -5,8 +5,8 @@ value=2.50
 rarity=U
 type=Creature
 subtype=Human,Soldier
-pt=2/2
 cost={3}{W}{W}
+pt=2/2
 ability=Flying;\
         Double strike
 timing=main
