@@ -5,7 +5,7 @@ value=2.50
 rarity=U
 type=Creature
 subtype=Minotaur,Warrior
-cost={3}{B}
+cost={2}{B}
 pt=2/3
 ability=Deathtouch;\
         lord other Minotaur creatures you control have deathtouch.

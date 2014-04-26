@@ -5,7 +5,7 @@ value=2.50
 rarity=U
 type=Creature
 subtype=Cockatrice
-cost={3}{U}{B}
+cost={3}{G}{U}
 pt=3/3
 ability=Flash;\
         Flying;deathtouch;\
