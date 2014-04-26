@@ -1,6 +1,7 @@
 package magic.data;
 
 import magic.MagicMain;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCubeDefinition;
 
 import java.io.File;
@@ -39,6 +40,16 @@ public class CubeDefinitions {
             names[index]=cubeDefinitions.get(index).getName();
         }
         return names;
+    }
+
+    public static String[] getFilterValues() {
+        final List<String> values = new ArrayList<String>();
+        for (MagicCubeDefinition cube : cubeDefinitions) {
+            if (!cube.toString().equalsIgnoreCase("all")) {
+              values.add(cube.toString());
+          }
+        }
+        return values.toArray(new String[values.size()]);
     }
 
     public static MagicCubeDefinition getCubeDefinition(final String name) {
@@ -86,5 +97,24 @@ public class CubeDefinitions {
         for (final MagicCubeDefinition cubeDefinition : cubeDefinitions) {
             System.err.println("Cube "+cubeDefinition.getName());
         }
+    }
+
+    public static boolean isCardInCube(MagicCardDefinition card, String cubeName) {
+        final MagicCubeDefinition cube = getCube(cubeName);
+        return cube.contains(card.getName());
+    }
+
+    //TODO: convert cubeDefinitions to a Map keyed on cubeName then can get rid of this function.
+    private static MagicCubeDefinition currentCube = null;
+    public static MagicCubeDefinition getCube(final String cubeName) {
+        if (currentCube == null || !currentCube.toString().equals(cubeName)) {
+            for (MagicCubeDefinition cube : cubeDefinitions) {
+                if (cube.toString().equals(cubeName)) {
+                    currentCube = cube;
+                    break;
+                }
+            }
+        }
+        return currentCube;
     }
 }
