@@ -75,7 +75,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
         disableUpdate = false;
 
-        setBorder(FontsAndBorders.UP_BORDER);
+        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
         setLayout(layout);

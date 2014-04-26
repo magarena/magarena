@@ -6,10 +6,10 @@ import magic.model.MagicManaCost;
 import magic.ui.viewer.CardViewer;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 
 import javax.swing.JComponent;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
@@ -31,7 +31,7 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CardTable extends JPanel implements ListSelectionListener {
+public class CardTable extends TexturedPanel implements ListSelectionListener {
 
     private static final long serialVersionUID = 113243L;
 
@@ -48,6 +48,8 @@ public class CardTable extends JPanel implements ListSelectionListener {
     }
 
     public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer, final String title, final boolean isDeck) {
+
+        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         this.tableModel = new CardTableModel(defs, isDeck);
 
