@@ -1,11 +1,11 @@
 name=Whitewater Naiads
 url=http://www.magiccards.info/query?q=%21whitewater%20naiads
 image=http://mtgimage.com/card/whitewater%20naiads.jpg
-value=2.50
+value=3.941
 rarity=U
-type=Creature
+type=Enchantment,Creature
 subtype=Nymph
-pt=4/4
 cost={3}{U}{U}
+pt=4/4
 ability=Whenever SN or another enchantment enters the battlefield under your control, target creature can't be blocked this turn.
 timing=main

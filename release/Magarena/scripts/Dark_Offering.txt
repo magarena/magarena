@@ -1,7 +1,7 @@
 name=Dark Offering
 url=http://www.magiccards.info/query?q=%21dark%20offering
 image=http://mtgimage.com/card/dark%20offering.jpg
-value=1.63
+value=1.680
 rarity=U
 type=Sorcery
 cost={4}{B}{B}

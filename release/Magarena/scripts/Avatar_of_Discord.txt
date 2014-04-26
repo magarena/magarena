@@ -1,7 +1,7 @@
 name=Avatar of Discord
 url=http://magiccards.info/query?q=%21avatar%20of%20discord
 image=http://mtgimage.com/card/avatar%20of%20discord.jpg
-value=3.827
+value=3.764
 rarity=R
 type=Creature
 subtype=Avatar

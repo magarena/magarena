@@ -1,7 +1,7 @@
 name=Pyroclasm
 url=http://magiccards.info/query?q=%21pyroclasm
 image=http://mtgimage.com/card/pyroclasm.jpg
-value=4.589
+value=4.586
 removal=2
 rarity=U
 type=Sorcery

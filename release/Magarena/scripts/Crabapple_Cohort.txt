@@ -1,7 +1,7 @@
 name=Crabapple Cohort
 url=http://magiccards.info/query?q=%21crabapple%20cohort
 image=http://mtgimage.com/card/crabapple%20cohort.jpg
-value=2.073
+value=2.023
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior

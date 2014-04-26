@@ -1,7 +1,7 @@
 name=Rakka Mar
 url=http://magiccards.info/query?q=%21rakka%20mar
 image=http://mtgimage.com/card/rakka%20mar.jpg
-value=3.469
+value=3.482
 rarity=R
 type=Legendary,Creature
 subtype=Human,Shaman

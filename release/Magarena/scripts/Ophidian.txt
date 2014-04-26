@@ -1,7 +1,7 @@
 name=Ophidian
 url=http://magiccards.info/query?q=%21ophidian
 image=http://mtgimage.com/card/ophidian.jpg
-value=3.710
+value=3.698
 rarity=C
 type=Creature
 subtype=Snake

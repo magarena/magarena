@@ -1,7 +1,7 @@
 name=Subversion
 url=http://magiccards.info/query?q=%21subversion
 image=http://mtgimage.com/card/subversion.jpg
-value=4.016
+value=4.045
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

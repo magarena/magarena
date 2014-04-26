@@ -1,7 +1,7 @@
 name=Mana Confluence
 url=http://www.magiccards.info/query?q=%21mana%20confluence
 image=http://mtgimage.com/card/mana%20confluence.jpg
-value=2.50
+value=4.528
 rarity=R
 type=Land
 mana=w3u3b3r3g3

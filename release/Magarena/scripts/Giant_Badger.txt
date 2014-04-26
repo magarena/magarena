@@ -1,7 +1,7 @@
 name=Giant Badger
 url=http://www.magiccards.info/query?q=%21giant%20badger
 image=http://mtgimage.com/card/giant%20badger.jpg
-value=3.293
+value=3.306
 rarity=C
 type=Creature
 subtype=Badger

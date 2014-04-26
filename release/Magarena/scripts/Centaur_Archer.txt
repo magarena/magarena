@@ -1,7 +1,7 @@
 name=Centaur Archer
 url=http://magiccards.info/query?q=%21centaur%20archer
 image=http://mtgimage.com/card/centaur%20archer.jpg
-value=3.293
+value=3.283
 rarity=U
 type=Creature
 subtype=Centaur,Archer

@@ -1,7 +1,7 @@
 name=Djinn of the Lamp
 url=http://magiccards.info/query?q=%21djinn%20of%20the%20lamp
 image=http://mtgimage.com/card/djinn%20of%20the%20lamp.jpg
-value=2.147
+value=2.143
 rarity=R
 type=Creature
 subtype=Djinn

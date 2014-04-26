@@ -1,7 +1,7 @@
 name=Tyrranax
 url=http://magiccards.info/query?q=%21tyrranax
 image=http://mtgimage.com/card/tyrranax.jpg
-value=2.938
+value=2.940
 rarity=C
 type=Creature
 subtype=Beast

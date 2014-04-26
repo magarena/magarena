@@ -352,6 +352,16 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_OR_ENCHANTMENT = MagicTargetFilterFactory.permanentOr(MagicType.Creature, MagicType.Enchantment, Control.Any);
     
     public static final MagicPermanentFilterImpl CREATURE_OR_ENCHANTMENT_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicType.Creature, MagicType.Enchantment, Control.You);
+    
+    public static final MagicCardFilterImpl CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Enchantment) || target.hasType(MagicType.Creature);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
+
 
     public static final MagicPermanentFilterImpl ENCHANTMENT = MagicTargetFilterFactory.permanent(MagicType.Enchantment, Control.Any);
 
@@ -415,6 +425,13 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) &&
                    target.isCreature() &&
+                   target.isToken();
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl CREATURE_TOKEN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
                    target.isToken();
         }
     };
@@ -729,6 +746,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicAbility.Flying, Control.Opp);
 
+    public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER = MagicTargetFilterFactory.creature(MagicAbility.Defender, Control.Any);
+    
     public static final MagicPermanentFilterImpl CREATURE_WITH_SHADOW = MagicTargetFilterFactory.creature(MagicAbility.Shadow, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_SHADOW = new MagicPermanentFilterImpl() {
@@ -1291,6 +1310,8 @@ public class MagicTargetFilterFactory {
         multiple.put("blocking creatures", BLOCKING_CREATURE);
         multiple.put("tapped creatures", TAPPED_CREATURE);
         multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
+        multiple.put("monocolored creatures", MONOCOLORED_CREATURE);
+        multiple.put("creature tokens", CREATURE_TOKEN);
 
         // <color|type|subtype> you control
         multiple.put("lands you control", LAND_YOU_CONTROL);
@@ -1333,6 +1354,7 @@ public class MagicTargetFilterFactory {
         single.put("instant or sorcery card from your graveyard", INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("artifact or enchantment card from your graveyard", cardOr(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Enchantment));
         single.put("artifact, creature, or enchantment card from your graveyard", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
+        single.put("creature or enchantment card from your graveyard", CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
 
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
@@ -1441,6 +1463,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with converted mana cost 2 or less", CREATURE_CONVERTED_2_OR_LESS);
         single.put("creature with flying", CREATURE_WITH_FLYING);
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
+        single.put("creature with defender",  CREATURE_WITH_DEFENDER);
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS);
         single.put("creature with power 3 or less", CREATURE_POWER_3_OR_LESS);
         single.put("creature with power 4 or greater", CREATURE_POWER_4_OR_MORE);

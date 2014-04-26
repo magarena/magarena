@@ -1,7 +1,7 @@
 name=Daru Encampment
 url=http://magiccards.info/query?q=%21daru%20encampment
 image=http://mtgimage.com/card/daru%20encampment.jpg
-value=3.357
+value=3.347
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

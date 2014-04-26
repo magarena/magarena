@@ -1,7 +1,7 @@
 name=Tempered Steel
 url=http://magiccards.info/query?q=%21tempered%20steel
 image=http://mtgimage.com/card/tempered%20steel.jpg
-value=4.090
+value=4.089
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

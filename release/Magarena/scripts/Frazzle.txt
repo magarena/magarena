@@ -1,7 +1,7 @@
 name=Frazzle
 url=http://www.magiccards.info/query?q=%21frazzle
 image=http://mtgimage.com/card/frazzle.jpg
-value=1.010
+value=1.033
 rarity=U
 type=Instant
 cost={3}{U}

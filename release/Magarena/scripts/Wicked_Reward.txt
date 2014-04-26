@@ -1,7 +1,7 @@
 name=Wicked Reward
 url=http://magiccards.info/query?q=%21wicked%20reward
 image=http://mtgimage.com/card/wicked%20reward.jpg
-value=3.048
+value=3.035
 rarity=C
 type=Instant
 cost={1}{B}

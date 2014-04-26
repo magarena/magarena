@@ -2,7 +2,7 @@ name=Vindicate
 url=http://magiccards.info/query?q=%21vindicate
 image=http://mtgimage.com/card/vindicate.jpg
 ignore=48054
-value=4.577
+value=4.579
 removal=5
 rarity=R
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Gwafa Hazid, Profiteer
 url=http://magiccards.info/query?q=%21gwafa%20hazid%2C%20profiteer
 image=http://mtgimage.com/card/gwafa%20hazid%2C%20profiteer.jpg
-value=3.282
+value=3.296
 rarity=R
 type=Legendary,Creature
 subtype=Human,Rogue

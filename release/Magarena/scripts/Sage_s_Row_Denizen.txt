@@ -1,7 +1,7 @@
 name=Sage's Row Denizen
 url=http://www.magiccards.info/query?q=%21sage%27s%20row%20denizen
 image=http://mtgimage.com/card/sage's%20row%20denizen.jpg
-value=2.512
+value=2.580
 rarity=C
 type=Creature
 subtype=Vedalken,Wizard

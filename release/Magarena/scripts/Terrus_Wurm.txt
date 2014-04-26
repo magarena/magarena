@@ -1,7 +1,7 @@
 name=Terrus Wurm
 url=http://www.magiccards.info/query?q=%21terrus%20wurm
 image=http://mtgimage.com/card/terrus%20wurm.jpg
-value=1.717
+value=1.703
 rarity=C
 type=Creature
 subtype=Zombie,Wurm

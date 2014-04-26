@@ -1,7 +1,7 @@
 name=Sundering Growth
 url=http://magiccards.info/query?q=%21sundering%20growth
 image=http://mtgimage.com/card/sundering%20growth.jpg
-value=3.925
+value=3.920
 rarity=C
 type=Instant
 cost={G/W}{G/W}

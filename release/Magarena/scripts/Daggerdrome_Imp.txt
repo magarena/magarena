@@ -1,7 +1,7 @@
 name=Daggerdrome Imp
 url=http://magiccards.info/query?q=%21daggerdrome%20imp
 image=http://mtgimage.com/card/daggerdrome%20imp.jpg
-value=3.068
+value=3.080
 rarity=C
 type=Creature
 subtype=Imp

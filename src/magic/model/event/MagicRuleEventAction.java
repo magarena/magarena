@@ -1694,6 +1694,22 @@ public enum MagicRuleEventAction {
                 }
             }
         ),
+    Scry1(
+        "(pn )?scry 1\\.",
+        MagicTiming.Draw,
+        "Scry"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.addEvent(new MagicScryEvent(event));
+                }
+            };
+        }
+    },
+    /*
     Scry(
         "(pn )?scry (?<amount>[0-9]+)\\.",
         MagicTiming.Draw,
@@ -1710,6 +1726,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    */
     RegenerateSelf(
         "regenerate sn\\.", 
         MagicTiming.Pump, 
@@ -1788,6 +1805,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    /*
     LookHand(
         "look at (?<choice>[^\\.]*)'s hand\\.",
         MagicTargetHint.Negative, 
@@ -1808,18 +1826,19 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    */
     ShuffleSelfPerm(
-            "shuffle sn into its owner's library\\.",
-            MagicTiming.Removal,
-            "Shuffle",
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicCard permanentCard = event.getPermanent().getCard();
-                    game.doAction(new MagicShuffleIntoLibraryAction(permanentCard));
-                }
+        "shuffle sn into its owner's library\\.",
+        MagicTiming.Removal,
+        "Shuffle",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicCard permanentCard = event.getPermanent().getCard();
+                game.doAction(new MagicShuffleIntoLibraryAction(permanentCard));
             }
-        ),
+        }
+    ),
     AttachSelf(
         "attach sn to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Positive,

@@ -1,7 +1,7 @@
 name=Roil Elemental
 url=http://magiccards.info/query?q=%21roil%20elemental
 image=http://mtgimage.com/card/roil%20elemental.jpg
-value=3.937
+value=3.938
 rarity=R
 type=Creature
 subtype=Elemental

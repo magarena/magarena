@@ -1,7 +1,7 @@
 name=Puppeteer Clique
 url=http://magiccards.info/query?q=%21puppeteer%20clique
 image=http://mtgimage.com/card/puppeteer%20clique.jpg
-value=3.670
+value=3.667
 rarity=R
 type=Creature
 subtype=Faerie,Wizard

@@ -1,7 +1,7 @@
 name=Dynacharge
 url=http://magiccards.info/query?q=%21dynacharge
 image=http://mtgimage.com/card/dynacharge.jpg
-value=2.766
+value=2.781
 rarity=C
 type=Instant
 cost={R}

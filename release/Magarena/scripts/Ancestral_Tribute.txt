@@ -1,7 +1,7 @@
 name=Ancestral Tribute
 url=http://www.magiccards.info/query?q=%21ancestral%20tribute
 image=http://mtgimage.com/card/ancestral%20tribute.jpg
-value=1.776
+value=1.798
 rarity=R
 type=Sorcery
 cost={5}{W}{W}

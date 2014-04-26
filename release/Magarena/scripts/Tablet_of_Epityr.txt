@@ -1,7 +1,7 @@
 name=Tablet of Epityr
 url=http://www.magiccards.info/query?q=%21tablet%20of%20epityr
 image=http://mtgimage.com/card/tablet%20of%20epityr.jpg
-value=1.788
+value=1.724
 rarity=C
 type=Artifact
 cost={1}

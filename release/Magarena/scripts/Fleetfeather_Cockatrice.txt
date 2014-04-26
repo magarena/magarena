@@ -1,11 +1,11 @@
 name=Fleetfeather Cockatrice
 url=http://www.magiccards.info/query?q=%21fleetfeather%20cockatrice
 image=http://mtgimage.com/card/fleetfeather%20cockatrice.jpg
-value=2.50
+value=3.792
 rarity=U
 type=Creature
 subtype=Cockatrice
-cost={3}{U}{B}
+cost={3}{G}{U}
 pt=3/3
 ability=Flash;\
         Flying;deathtouch;\

@@ -1,7 +1,7 @@
 name=Hero of Bladehold
 url=http://magiccards.info/query?q=%21hero%20of%20bladehold
 image=http://mtgimage.com/card/hero%20of%20bladehold.jpg
-value=4.272
+value=4.266
 rarity=M
 type=Creature
 subtype=Human,Knight

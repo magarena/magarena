@@ -1,7 +1,7 @@
 name=Grixis Panorama
 url=http://www.magiccards.info/query?q=%21grixis%20panorama
 image=http://mtgimage.com/card/grixis%20panorama.jpg
-value=2.863
+value=3.500
 rarity=C
 type=Land
 ability={T}: Add {1} to your mana pool.;\

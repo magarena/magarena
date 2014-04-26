@@ -1,7 +1,7 @@
 name=Blockbuster
 url=http://www.magiccards.info/query?q=%21blockbuster
 image=http://mtgimage.com/card/blockbuster.jpg
-value=1.679
+value=1.761
 rarity=U
 type=Enchantment
 cost={3}{R}{R}

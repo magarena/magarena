@@ -1,7 +1,7 @@
 name=Teetering Peaks
 url=http://magiccards.info/query?q=%21teetering%20peaks
 image=http://mtgimage.com/card/teetering%20peaks.jpg
-value=2.924
+value=2.926
 rarity=C
 type=Land
 mana=r3

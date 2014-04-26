@@ -1,7 +1,7 @@
 name=Gargoyle Castle
 url=http://magiccards.info/query?q=%21gargoyle%20castle
 image=http://mtgimage.com/card/gargoyle%20castle.jpg
-value=3.734
+value=3.732
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

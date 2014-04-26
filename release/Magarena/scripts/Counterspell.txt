@@ -1,7 +1,7 @@
 name=Counterspell
 url=http://magiccards.info/query?q=%21counterspell
 image=http://mtgimage.com/card/counterspell.jpg
-value=4.591
+value=4.595
 rarity=C
 type=Instant
 cost={U}{U}

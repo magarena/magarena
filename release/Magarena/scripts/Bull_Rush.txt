@@ -1,7 +1,7 @@
 name=Bull Rush
 url=http://magiccards.info/query?q=%21bull%20rush
 image=http://mtgimage.com/card/bull%20rush.jpg
-value=1.000
+value=0.998
 rarity=C
 type=Instant
 cost={R}

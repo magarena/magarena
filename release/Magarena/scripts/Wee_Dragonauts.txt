@@ -1,7 +1,7 @@
 name=Wee Dragonauts
 url=http://www.magiccards.info/query?q=%21wee%20dragonauts
 image=http://mtgimage.com/card/wee%20dragonauts.jpg
-value=4.263
+value=3.845
 rarity=C
 type=Creature
 subtype=Faerie,Wizard

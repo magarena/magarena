@@ -1,7 +1,7 @@
 name=Krovikan Fetish
 url=http://www.magiccards.info/query?q=%21krovikan%20fetish
 image=http://mtgimage.com/card/krovikan%20fetish.jpg
-value=2.25
+value=2.231
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,12 +1,12 @@
 name=Skyspear Cavalry
 url=http://www.magiccards.info/query?q=%21skyspear%20cavalry
 image=http://mtgimage.com/card/skyspear%20cavalry.jpg
-value=2.50
+value=3.346
 rarity=U
 type=Creature
 subtype=Human,Soldier
-pt=2/2
 cost={3}{W}{W}
+pt=2/2
 ability=Flying;\
         Double strike
 timing=main

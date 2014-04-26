@@ -1,7 +1,7 @@
 name=Vengeful Vampire
 url=http://magiccards.info/query?q=%21vengeful%20vampire
 image=http://mtgimage.com/card/vengeful%20vampire.jpg
-value=1.850
+value=1.815
 rarity=U
 type=Creature
 subtype=Vampire

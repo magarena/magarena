@@ -1,7 +1,7 @@
 name=Ultimate Price
 url=http://magiccards.info/query?q=%21ultimate%20price
 image=http://mtgimage.com/card/ultimate%20price.jpg
-value=3.273
+value=3.295
 removal=3
 rarity=U
 type=Instant

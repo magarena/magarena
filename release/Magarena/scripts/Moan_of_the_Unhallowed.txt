@@ -1,7 +1,7 @@
 name=Moan of the Unhallowed
 url=http://www.magiccards.info/query?q=%21moan%20of%20the%20unhallowed
 image=http://mtgimage.com/card/moan%20of%20the%20unhallowed.jpg
-value=3.753
+value=3.762
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

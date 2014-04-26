@@ -1,7 +1,7 @@
 name=Paleoloth
 url=http://www.magiccards.info/query?q=%21paleoloth
 image=http://mtgimage.com/card/paleoloth.jpg
-value=3.046
+value=3.052
 rarity=R
 type=Creature
 subtype=Beast

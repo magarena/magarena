@@ -1,7 +1,7 @@
 name=Bazaar of Baghdad
 url=http://magiccards.info/query?q=%21bazaar%20of%20baghdad
 image=http://mtgimage.com/card/bazaar%20of%20baghdad.jpg
-value=4.533
+value=4.537
 rarity=R
 type=Land
 ability={T}:Draw two cards, then discard three cards.

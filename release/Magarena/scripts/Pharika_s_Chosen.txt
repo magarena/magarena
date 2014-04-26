@@ -1,11 +1,11 @@
 name=Pharika's Chosen
 url=http://www.magiccards.info/query?q=%21pharika%27s%20chosen
 image=http://mtgimage.com/card/pharika's%20chosen.jpg
-value=2.50
+value=3.656
 rarity=C
 type=Creature
 subtype=Snake
-pt=1/1
 cost={B}
+pt=1/1
 ability=Deathtouch
 timing=main

@@ -1,10 +1,11 @@
 name=Bassara Tower Archer
 url=http://www.magiccards.info/query?q=%21bassara%20tower%20archer
 image=http://mtgimage.com/card/bassara%20tower%20archer.jpg
-value=2.50
+value=3.722
 rarity=U
 type=Creature
 subtype=Human,Archer
 cost={G}{G}
+pt=2/1
 ability=Hexproof;reach
 timing=main

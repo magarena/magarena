@@ -1,7 +1,7 @@
 name=Dwarven Patrol
 url=http://www.magiccards.info/query?q=%21dwarven%20patrol
 image=http://mtgimage.com/card/dwarven%20patrol.jpg
-value=2.719
+value=2.727
 rarity=U
 type=Creature
 subtype=Dwarf

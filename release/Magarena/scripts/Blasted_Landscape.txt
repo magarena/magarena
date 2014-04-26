@@ -1,7 +1,7 @@
 name=Blasted Landscape
 url=http://magiccards.info/query?q=%21blasted%20landscape
 image=http://mtgimage.com/card/blasted%20landscape.jpg
-value=3.593
+value=3.602
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

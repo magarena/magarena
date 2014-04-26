@@ -1,7 +1,7 @@
 name=Bident of Thassa
 url=http://magiccards.info/query?q=%21bident%20of%20thassa
 image=http://mtgimage.com/card/bident%20of%20thassa.jpg
-value=3.507
+value=3.500
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={2}{U}{U}

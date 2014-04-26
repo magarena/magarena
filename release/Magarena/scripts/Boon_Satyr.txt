@@ -1,7 +1,7 @@
 name=Boon Satyr
 url=http://magiccards.info/query?q=%21boon%20satyr
 image=http://mtgimage.com/card/boon%20satyr.jpg
-value=3.530
+value=3.535
 rarity=R
 type=Enchantment,Creature
 subtype=Satyr

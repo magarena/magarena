@@ -1,7 +1,7 @@
 name=Famine
 url=http://www.magiccards.info/query?q=%21famine
 image=http://mtgimage.com/card/famine.jpg
-value=2.605
+value=3.050
 rarity=U
 type=Sorcery
 cost={3}{B}{B}

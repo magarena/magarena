@@ -1,7 +1,7 @@
 name=Filigree Angel
 url=http://www.magiccards.info/query?q=%21filigree%20angel
 image=http://mtgimage.com/card/filigree%20angel.jpg
-value=3.128
+value=3.607
 rarity=R
 type=Artifact,Creature
 subtype=Angel

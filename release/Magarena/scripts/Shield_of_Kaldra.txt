@@ -1,7 +1,7 @@
 name=Shield of Kaldra
 url=http://magiccards.info/query?q=%21shield%20of%20kaldra
 image=http://mtgimage.com/card/shield%20of%20kaldra.jpg
-value=3.924
+value=3.942
 rarity=R
 type=Legendary,Artifact
 subtype=Equipment

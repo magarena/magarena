@@ -1,7 +1,7 @@
 name=Thorntooth Witch
 url=http://www.magiccards.info/query?q=%21thorntooth%20witch
 image=http://mtgimage.com/card/thorntooth%20witch.jpg
-value=2.91
+value=2.878
 rarity=U
 type=Creature
 subtype=Treefolk,Shaman

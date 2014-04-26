@@ -1,7 +1,7 @@
 name=Spidery Grasp
 url=http://magiccards.info/query?q=%21spidery%20grasp
 image=http://mtgimage.com/card/spidery%20grasp.jpg
-value=2.704
+value=2.730
 rarity=C
 type=Instant
 cost={2}{G}

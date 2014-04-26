@@ -1,7 +1,7 @@
 name=Snakeform
 url=http://magiccards.info/query?q=%21snakeform
 image=http://mtgimage.com/card/snakeform.jpg
-value=4.277
+value=4.282
 rarity=C
 type=Instant
 cost={2}{G/U}
