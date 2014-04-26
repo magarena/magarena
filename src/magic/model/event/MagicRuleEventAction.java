@@ -1828,17 +1828,17 @@ public enum MagicRuleEventAction {
     },
     */
     ShuffleSelfPerm(
-            "shuffle sn into its owner's library\\.",
-            MagicTiming.Removal,
-            "Shuffle",
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicCard permanentCard = event.getPermanent().getCard();
-                    game.doAction(new MagicShuffleIntoLibraryAction(permanentCard));
-                }
+        "shuffle sn into its owner's library\\.",
+        MagicTiming.Removal,
+        "Shuffle",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicCard permanentCard = event.getPermanent().getCard();
+                game.doAction(new MagicShuffleIntoLibraryAction(permanentCard));
             }
-        ),
+        }
+    ),
     AttachSelf(
         "attach sn to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Positive,
