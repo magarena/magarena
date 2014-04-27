@@ -1,0 +1,9 @@
+name=Unlikely Alliance
+url=http://www.magiccards.info/query?q=%21unlikely%20alliance
+image=http://mtgimage.com/card/unlikely%20alliance.jpg
+value=2.043
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability={1}{W}: Target nonattacking, nonblocking creature gets +0/+2 until end of turn.
+timing=enchantment
