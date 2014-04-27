@@ -18,9 +18,9 @@
             for (final MagicPermanent target : targets) {
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,1);
                 game.doAction(new MagicDealDamageAction(damage));
-                if (damage.getDealtAmount() > 0 && target.isCreature()) {
+                if (damage.getDealtAmount() > 0) {
                     game.doAction(new MagicAddTurnTriggerAction(
-                        (MagicPermanent)target, 
+                        target, 
                         MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                     ));
                 }
