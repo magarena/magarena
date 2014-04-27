@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "SN deals 3 damage to each creature. " + 
+                "SN deals 1 damage to each creature. "+
                 "If a creature dealt damage this way would die this turn, exile it instead."
             );
         }
@@ -16,7 +16,7 @@
                 MagicTargetFilterFactory.CREATURE
             );
             for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),target,3);
+                final MagicDamage damage=new MagicDamage(event.getSource(),target,1);
                 game.doAction(new MagicDealDamageAction(damage));
                 if (damage.getDealtAmount() > 0 && target.isCreature()) {
                     game.doAction(new MagicAddTurnTriggerAction(
