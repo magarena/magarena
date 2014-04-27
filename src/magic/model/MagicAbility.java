@@ -45,7 +45,7 @@ public enum MagicAbility {
     CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
     Deathtouch("deathtouch(\\.)?",60),
     Defender("defender(\\.)?",-100),
-    DoesNotUntap("(SN )?doesn't untap during (your|its controller's) untap step\\.",-30),
+    DoesNotUntap("(SN )?doesn't untap during (your|its controller's) untap step(\\.)?",-30),
     DoubleStrike("double strike(\\.)?",100),
     Fear("fear(\\.)?",50),
     Flash("flash(\\.)?",0),
@@ -95,7 +95,7 @@ public enum MagicAbility {
     Infect("infect(\\.)?",35),
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
-    CantActivateAbilities("(can't activate abilities|its activated abilities can't be activated.)",-20),
+    CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
 
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
@@ -719,7 +719,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    AttachedCreatureGain("(Equipped|Enchanted) (creature|land|permanent) (has )?" + ARG.ANY + "(\\.)?", 0) {
+    AttachedCreatureGain("(Equipped|Enchanted) (creature|land|artifact|permanent) (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.genABStatic(
                 MagicAbility.getAbilityList(
