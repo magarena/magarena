@@ -1,7 +1,7 @@
 name=Thrashing Mossdog
 url=http://www.magiccards.info/query?q=%21thrashing%20mossdog
 image=http://mtgimage.com/card/thrashing%20mossdog.jpg
-value=3.367
+value=3.375
 rarity=C
 type=Creature
 subtype=Plant,Hound

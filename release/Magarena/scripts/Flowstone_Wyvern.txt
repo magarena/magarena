@@ -1,7 +1,7 @@
 name=Flowstone Wyvern
 url=http://magiccards.info/query?q=%21flowstone%20wyvern
 image=http://mtgimage.com/card/flowstone%20wyvern.jpg
-value=2.530
+value=2.529
 rarity=R
 type=Creature
 subtype=Drake

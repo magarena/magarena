@@ -1,7 +1,7 @@
 name=Pyknite
 url=http://www.magiccards.info/query?q=%21pyknite
 image=http://mtgimage.com/card/pyknite.jpg
-value=2.657
+value=2.694
 rarity=C
 type=Creature
 subtype=Ouphe

@@ -1,0 +1,11 @@
+name=Triton Cavalry
+url=http://www.magiccards.info/query?q=%21triton%20cavalry
+image=http://mtgimage.com/card/triton%20cavalry.jpg
+value=3.750
+rarity=U
+type=Creature
+subtype=Merfolk,Soldier
+cost={3}{U}
+pt=2/4
+ability=Whenever you cast a spell that targets SN, you may return target enchantment to its owner's hand.
+timing=main

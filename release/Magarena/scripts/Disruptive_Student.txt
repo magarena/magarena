@@ -1,7 +1,7 @@
 name=Disruptive Student
 url=http://magiccards.info/query?q=%21disruptive%20student
 image=http://mtgimage.com/card/disruptive%20student.jpg
-value=4.127
+value=4.117
 rarity=C
 type=Creature
 subtype=Human,Wizard

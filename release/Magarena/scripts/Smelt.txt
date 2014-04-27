@@ -1,7 +1,7 @@
 name=Smelt
 url=http://magiccards.info/query?q=%21smelt
 image=http://mtgimage.com/card/smelt.jpg
-value=4.245
+value=4.259
 removal=1
 rarity=C
 type=Instant

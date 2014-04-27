@@ -1,7 +1,7 @@
 name=Remand
 url=http://magiccards.info/query?q=%21remand
 image=http://mtgimage.com/card/remand.jpg
-value=4.622
+value=4.628
 rarity=U
 type=Instant
 cost={1}{U}

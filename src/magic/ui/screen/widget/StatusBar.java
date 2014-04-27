@@ -22,12 +22,13 @@ import java.awt.event.ActionEvent;
 public class StatusBar extends TexturedPanel {
 
     private final static ImageIcon optionsIcon = IconImages.OPTIONS_ICON;
+    public final static int PANEL_HEIGHT = 50;
 
     private final AbstractScreen magScreen;
 
     public StatusBar(final AbstractScreen screen0) {
         this.magScreen = screen0;
-        setMinimumSize(new Dimension(getPreferredSize().width, 50));
+        setMinimumSize(new Dimension(getPreferredSize().width, PANEL_HEIGHT));
         setBackground(FontsAndBorders.MAGSCREEN_BAR_COLOR);
         layoutMagStatusBar();
     }

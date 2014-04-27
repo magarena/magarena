@@ -1,7 +1,7 @@
 name=Nema Siltlurker
 url=http://magiccards.info/query?q=%21nema%20siltlurker
 image=http://mtgimage.com/card/nema%20siltlurker.jpg
-value=1.281
+value=1.277
 rarity=C
 type=Creature
 subtype=Lizard

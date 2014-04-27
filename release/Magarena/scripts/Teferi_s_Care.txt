@@ -1,7 +1,7 @@
 name=Teferi's Care
 url=http://magiccards.info/query?q=%21teferi%27s%20care
 image=http://mtgimage.com/card/teferi's%20care.jpg
-value=2.317
+value=2.339
 rarity=U
 type=Enchantment
 cost={2}{W}

@@ -1,7 +1,7 @@
 name=Timberpack Wolf
 url=http://magiccards.info/query?q=%21timberpack%20wolf
 image=http://mtgimage.com/card/timberpack%20wolf.jpg
-value=3.585
+value=3.562
 rarity=C
 type=Creature
 subtype=Wolf

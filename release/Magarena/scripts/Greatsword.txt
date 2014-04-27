@@ -1,7 +1,7 @@
 name=Greatsword
 url=http://magiccards.info/query?q=%21greatsword
 image=http://mtgimage.com/card/greatsword.jpg
-value=1.479
+value=1.484
 rarity=U
 type=Artifact
 subtype=Equipment

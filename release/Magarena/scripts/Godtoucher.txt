@@ -1,7 +1,7 @@
 name=Godtoucher
 url=http://magiccards.info/query?q=%21godtoucher
 image=http://mtgimage.com/card/godtoucher.jpg
-value=2.400
+value=2.402
 rarity=C
 type=Creature
 subtype=Elf,Cleric

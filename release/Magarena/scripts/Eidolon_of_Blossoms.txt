@@ -1,0 +1,11 @@
+name=Eidolon of Blossoms
+url=http://www.magiccards.info/query?q=%21eidolon%20of%20blossoms
+image=http://mtgimage.com/card/eidolon%20of%20blossoms.jpg
+value=3.929
+rarity=R
+type=Enchantment,Creature
+subtype=Spirit
+cost={2}{G}{G}
+pt=2/2
+ability=Whenever SN or another enchantment enters the battlefield under your control, draw a card.
+timing=main

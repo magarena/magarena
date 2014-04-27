@@ -1,0 +1,11 @@
+name=Aspect of Gorgon
+url=http://www.magiccards.info/query?q=%21aspect%20of%20gorgon
+image=http://mtgimage.com/card/aspect%20of%20gorgon.jpg
+value=2.750
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchanted creature gets +1/+3 and has deathtouch.
+timing=main
+enchant=pump,pos creature

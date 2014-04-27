@@ -1,7 +1,7 @@
 name=Flowstone Giant
 url=http://magiccards.info/query?q=%21flowstone%20giant
 image=http://mtgimage.com/card/flowstone%20giant.jpg
-value=2.485
+value=2.486
 rarity=C
 type=Creature
 subtype=Giant

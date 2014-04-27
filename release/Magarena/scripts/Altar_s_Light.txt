@@ -1,7 +1,7 @@
 name=Altar's Light
 url=http://magiccards.info/query?q=%21altar%27s%20light
 image=http://mtgimage.com/card/altar%27s%20light.jpg
-value=2.347
+value=2.351
 rarity=U
 type=Instant
 cost={2}{W}{W}

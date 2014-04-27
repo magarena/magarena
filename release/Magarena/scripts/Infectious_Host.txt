@@ -1,7 +1,7 @@
 name=Infectious Host
 url=http://magiccards.info/query?q=%21infectious%20host
 image=http://mtgimage.com/card/infectious%20host.jpg
-value=1.762
+value=1.738
 rarity=C
 type=Creature
 subtype=Zombie

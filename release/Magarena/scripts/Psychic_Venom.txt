@@ -1,7 +1,7 @@
 name=Psychic Venom
 url=http://www.magiccards.info/query?q=%21psychic%20venom
 image=http://mtgimage.com/card/psychic%20venom.jpg
-value=3.761
+value=3.717
 rarity=C
 type=Enchantment
 subtype=Aura

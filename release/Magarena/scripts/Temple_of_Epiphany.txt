@@ -1,0 +1,10 @@
+name=Temple of Epiphany
+url=http://www.magiccards.info/query?q=%21temple%20of%20epiphany
+image=http://mtgimage.com/card/temple%20of%20epiphany.jpg
+value=3.781
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, scry 1.;\
+        {T}: Add {U} or {R} to your mana pool.
+timing=land

@@ -1,0 +1,11 @@
+name=Gold-Forged Sentinel
+url=http://www.magiccards.info/query?q=%21gold%2Dforged%20sentinel
+image=http://mtgimage.com/card/gold-forged%20sentinel.jpg
+value=1.933
+rarity=U
+type=Artifact,Creature
+subtype=Chimera
+cost={6}
+pt=4/4
+ability=Flying
+timing=main

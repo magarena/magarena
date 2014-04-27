@@ -1,7 +1,7 @@
 name=Galvanic Arc
 url=http://magiccards.info/query?q=%21galvanic%20arc
 image=http://mtgimage.com/card/galvanic%20arc.jpg
-value=3.394
+value=3.406
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,7 +1,7 @@
 name=Obstinate Baloth
 url=http://magiccards.info/query?q=%21obstinate%20baloth
 image=http://mtgimage.com/card/obstinate%20baloth.jpg
-value=4.256
+value=4.252
 rarity=R
 type=Creature
 subtype=Beast

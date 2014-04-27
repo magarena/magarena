@@ -1,7 +1,7 @@
 name=Dowsing Shaman
 url=http://magiccards.info/query?q=%21dowsing%20shaman
 image=http://mtgimage.com/card/dowsing%20shaman.jpg
-value=2.977
+value=3.000
 rarity=U
 type=Creature
 subtype=Centaur,Shaman

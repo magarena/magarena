@@ -1,7 +1,7 @@
 name=Shuriken
 url=http://magiccards.info/query?q=%21shuriken
 image=http://mtgimage.com/card/shuriken.jpg
-value=3.330
+value=3.324
 rarity=U
 type=Artifact
 subtype=Equipment

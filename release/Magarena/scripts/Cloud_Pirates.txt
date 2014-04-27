@@ -1,7 +1,7 @@
 name=Cloud Pirates
 url=http://magiccards.info/query?q=%21cloud%20pirates
 image=http://mtgimage.com/card/cloud%20pirates.jpg
-value=2.959
+value=2.961
 rarity=C
 type=Creature
 subtype=Human,Pirate

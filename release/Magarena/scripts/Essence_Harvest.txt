@@ -1,7 +1,7 @@
 name=Essence Harvest
 url=http://magiccards.info/query?q=%21essence%20harvest
 image=http://mtgimage.com/card/essence%20harvest.jpg
-value=3.635
+value=3.633
 rarity=C
 type=Sorcery
 cost={2}{B}

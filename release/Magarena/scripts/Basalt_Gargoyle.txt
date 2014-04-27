@@ -1,7 +1,7 @@
 name=Basalt Gargoyle
 url=http://magiccards.info/query?q=%21basalt%20gargoyle
 image=http://mtgimage.com/card/basalt%20gargoyle.jpg
-value=2.407
+value=2.393
 rarity=U
 type=Creature
 subtype=Gargoyle

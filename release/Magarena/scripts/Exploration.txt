@@ -1,7 +1,7 @@
 name=Exploration
 url=http://magiccards.info/query?q=%21exploration
 image=http://mtgimage.com/card/exploration.jpg
-value=4.595
+value=4.597
 rarity=R
 type=Enchantment
 cost={G}

@@ -1,7 +1,7 @@
 name=Sylvan Bounty
 url=http://www.magiccards.info/query?q=%21sylvan%20bounty
 image=http://mtgimage.com/card/sylvan%20bounty.jpg
-value=1.227
+value=1.288
 rarity=C
 type=Instant
 cost={5}{G}

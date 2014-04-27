@@ -1,7 +1,7 @@
 name=Stream of Acid
 url=http://www.magiccards.info/query?q=%21stream%20of%20acid
 image=http://mtgimage.com/card/stream%20of%20acid.jpg
-value=3.581
+value=3.562
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

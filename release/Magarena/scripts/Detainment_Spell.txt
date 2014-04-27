@@ -6,7 +6,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability={1}{W}: Attach SN to target creature.
-given_ability=can't activate abilities
+ability={1}{W}: Attach SN to target creature.;\
+        Enchanted creature can't activate abilities.
 enchant=default,neg creature
 timing=enchantment

@@ -1,7 +1,7 @@
 name=Skittering Horror
 url=http://www.magiccards.info/query?q=%21skittering%20horror
 image=http://mtgimage.com/card/skittering%20horror.jpg
-value=3.308
+value=3.763
 rarity=C
 type=Creature
 subtype=Horror

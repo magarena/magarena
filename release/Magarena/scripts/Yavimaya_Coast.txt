@@ -1,7 +1,7 @@
 name=Yavimaya Coast
 url=http://magiccards.info/query?q=%21yavimaya%20coast
 image=http://mtgimage.com/card/yavimaya%20coast.jpg
-value=4.273
+value=4.272
 rarity=R
 type=Land
 mana=b2g2

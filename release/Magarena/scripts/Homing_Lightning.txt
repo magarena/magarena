@@ -1,0 +1,9 @@
+name=Homing Lightning
+url=http://www.magiccards.info/query?q=%21homing%20lightning
+image=http://mtgimage.com/card/homing%20lightning.jpg
+value=3.233
+rarity=U
+type=Instant
+cost={2}{R}{R}
+timing=removal
+requires_groovy_code

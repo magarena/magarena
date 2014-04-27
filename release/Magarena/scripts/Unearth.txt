@@ -1,7 +1,7 @@
 name=Unearth
 url=http://www.magiccards.info/query?q=%21unearth
 image=http://mtgimage.com/card/unearth.jpg
-value=4.612
+value=4.585
 rarity=C
 type=Sorcery
 cost={B}

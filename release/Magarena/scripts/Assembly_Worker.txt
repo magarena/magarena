@@ -1,7 +1,7 @@
 name=Assembly-Worker
 url=http://magiccards.info/query?q=%21assembly%2Dworker
 image=http://mtgimage.com/card/Assembly-Worker.jpg
-value=2.847
+value=2.851
 rarity=U
 type=Artifact,Creature
 subtype=Assembly-Worker

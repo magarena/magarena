@@ -1,7 +1,7 @@
 name=Infuse
 url=http://magiccards.info/query?q=%21infuse
 image=http://mtgimage.com/card/infuse.jpg
-value=2.446
+value=2.414
 rarity=C
 type=Instant
 cost={2}{U}

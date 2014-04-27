@@ -1,7 +1,7 @@
 name=High Market
 url=http://magiccards.info/query?q=%21high%20market
 image=http://mtgimage.com/card/high%20market.jpg
-value=3.779
+value=3.786
 rarity=M
 type=Land
 ability={T}: Add {1} to your mana pool.;\

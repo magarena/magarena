@@ -1,7 +1,7 @@
 name=Skinrender
 url=http://magiccards.info/query?q=%21skinrender
 image=http://mtgimage.com/card/skinrender.jpg
-value=4.177
+value=4.181
 rarity=U
 removal=3
 type=Creature

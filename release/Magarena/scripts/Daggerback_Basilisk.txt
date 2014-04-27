@@ -1,7 +1,7 @@
 name=Daggerback Basilisk
 url=http://magiccards.info/query?q=%21daggerback%20basilisk
 image=http://mtgimage.com/card/daggerback%20basilisk.jpg
-value=3.070
+value=3.083
 ability=deathtouch
 rarity=C
 type=Creature

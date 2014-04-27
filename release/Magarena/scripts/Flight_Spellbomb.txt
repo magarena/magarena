@@ -1,7 +1,7 @@
 name=Flight Spellbomb
 url=http://www.magiccards.info/query?q=%21flight%20spellbomb
 image=http://mtgimage.com/card/flight%20spellbomb.jpg
-value=2.287
+value=2.296
 rarity=C
 type=Artifact
 cost={1}

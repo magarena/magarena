@@ -1,0 +1,11 @@
+name=Pheres-Band Thunderhoof
+url=http://www.magiccards.info/query?q=%21pheres%2Dband%20thunderhoof
+image=http://mtgimage.com/card/pheres-band%20thunderhoof.jpg
+value=2.955
+rarity=C
+type=Creature
+subtype=Centaur,Warrior
+cost={4}{G}
+pt=3/4
+ability=Whenever you cast a spell that targets SN, put two +1/+1 counters on SN.
+timing=main

@@ -1,7 +1,7 @@
 name=Simian Brawler
 url=http://www.magiccards.info/query?q=%21simian%20brawler
 image=http://mtgimage.com/card/simian%20brawler.jpg
-value=1.639
+value=1.737
 rarity=C
 type=Creature
 subtype=Ape,Warrior

@@ -1,0 +1,11 @@
+name=Leonin Iconoclast
+url=http://www.magiccards.info/query?q=%21leonin%20iconoclast
+image=http://mtgimage.com/card/leonin%20iconoclast.jpg
+value=2.792
+rarity=U
+type=Creature
+subtype=Cat,Monk
+cost={3}{W}
+pt=3/2
+ability=Whenever you cast a spell that targets SN, destroy target enchantment creature an opponent controls.
+timing=main

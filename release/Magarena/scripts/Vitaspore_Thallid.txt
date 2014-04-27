@@ -1,7 +1,7 @@
 name=Vitaspore Thallid
 url=http://magiccards.info/query?q=%21vitaspore%20thallid
 image=http://mtgimage.com/card/vitaspore%20thallid.jpg
-value=2.028
+value=2.041
 rarity=C
 type=Creature
 subtype=Fungus

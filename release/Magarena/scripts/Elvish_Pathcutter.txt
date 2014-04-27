@@ -1,7 +1,7 @@
 name=Elvish Pathcutter
 url=http://magiccards.info/query?q=%21elvish%20pathcutter
 image=http://mtgimage.com/card/elvish%20pathcutter.jpg
-value=0.970
+value=0.963
 rarity=C
 type=Creature
 subtype=Elf,Scout

@@ -1,0 +1,11 @@
+name=Nyx-Fleece Ram
+url=http://www.magiccards.info/query?q=%21nyx%2Dfleece%20ram
+image=http://mtgimage.com/card/nyx-fleece%20ram.jpg
+value=3.887
+rarity=U
+type=Enchantment,Creature
+subtype=Sheep
+cost={1}{W}
+pt=0/5
+ability=At the beginning of your upkeep, you gain 1 life.
+timing=main

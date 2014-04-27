@@ -1,7 +1,7 @@
 name=Volcanic Fallout
 url=http://magiccards.info/query?q=%21volcanic%20fallout
 image=http://mtgimage.com/card/volcanic%20fallout.jpg
-value=4.406
+value=4.401
 removal=2
 rarity=U
 type=Instant

@@ -1,7 +1,7 @@
 name=Mystic Familiar
 url=http://magiccards.info/query?q=%21mystic%20familiar
 image=http://mtgimage.com/card/mystic%20familiar.jpg
-value=3.435
+value=3.438
 rarity=C
 type=Creature
 subtype=Bird

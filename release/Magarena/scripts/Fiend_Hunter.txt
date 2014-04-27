@@ -1,7 +1,7 @@
 name=Fiend Hunter
 url=http://magiccards.info/query?q=%21fiend%20hunter
 image=http://mtgimage.com/card/fiend%20hunter.jpg
-value=3.556
+value=3.650
 removal=2
 rarity=U
 type=Creature

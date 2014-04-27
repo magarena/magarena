@@ -18,7 +18,6 @@ import java.util.Set;
 
 public class MagicFromCardListChoice extends MagicChoice {
 
-    private static final String MESSAGE="Choose a card.";
     private final String displayMessage;
     private final MagicCardList showList;
     private final List<MagicCard> choiceList;
@@ -73,7 +72,7 @@ public class MagicFromCardListChoice extends MagicChoice {
         else return "Choose " + amount + " cards "+description+". ";
     }
 
-    private void createOptions(
+    private static void createOptions(
             final Collection<Object> options,
             final List<MagicCard> cList,
             final MagicCard[] cards,
@@ -105,7 +104,7 @@ public class MagicFromCardListChoice extends MagicChoice {
             final MagicSource source) {
 
         final List<Object> options = new ArrayList<Object>();
-        final List<MagicCard> cList = new MagicCardList();
+        final List<MagicCard> cList = new ArrayList<MagicCard>();
         
         //map the cards to the current game
         for (final MagicCard card : choiceList) {

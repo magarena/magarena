@@ -1,0 +1,9 @@
+name=Flurry of Horns
+url=http://www.magiccards.info/query?q=%21flurry%20of%20horns
+image=http://mtgimage.com/card/flurry%20of%20horns.jpg
+value=3.647
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=Put two 2/3 red Minotaur creature tokens with haste onto the battlefield.
+timing=main

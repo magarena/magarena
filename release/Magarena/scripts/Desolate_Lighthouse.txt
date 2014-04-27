@@ -1,7 +1,7 @@
 name=Desolate Lighthouse
 url=http://magiccards.info/query?q=%21desolate%20lighthouse
 image=http://mtgimage.com/card/desolate%20lighthouse.jpg
-value=4.022
+value=4.021
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

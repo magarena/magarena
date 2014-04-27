@@ -1,7 +1,7 @@
 name=Thornweald Archer
 url=http://magiccards.info/query?q=%21thornweald%20archer
 image=http://mtgimage.com/card/thornweald%20archer.jpg
-value=4.207
+value=4.197
 ability=reach;deathtouch
 rarity=C
 type=Creature

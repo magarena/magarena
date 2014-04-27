@@ -1,7 +1,7 @@
 name=Mirri the Cursed
 url=http://magiccards.info/query?q=%21mirri%20the%20cursed
 image=http://mtgimage.com/card/mirri%20the%20cursed.jpg
-value=4.059
+value=4.073
 rarity=R
 type=Legendary,Creature
 subtype=Vampire,Cat

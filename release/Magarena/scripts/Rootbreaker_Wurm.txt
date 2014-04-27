@@ -1,7 +1,7 @@
 name=Rootbreaker Wurm
 url=http://magiccards.info/query?q=%21rootbreaker%20wurm
 image=http://mtgimage.com/card/rootbreaker%20wurm.jpg
-value=2.984
+value=3.000
 ability=trample
 rarity=U
 type=Creature

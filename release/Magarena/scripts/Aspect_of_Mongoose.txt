@@ -1,7 +1,7 @@
 name=Aspect of Mongoose
 url=http://magiccards.info/query?q=%21aspect%20of%20mongoose
 image=http://mtgimage.com/card/aspect%20of%20mongoose.jpg
-value=3.884
+value=3.862
 rarity=U
 type=Enchantment
 subtype=Aura

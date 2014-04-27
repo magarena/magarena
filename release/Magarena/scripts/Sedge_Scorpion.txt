@@ -1,7 +1,7 @@
 name=Sedge Scorpion
 url=http://magiccards.info/query?q=%21sedge%20scorpion
 image=http://mtgimage.com/card/sedge%20scorpion.jpg
-value=3.553
+value=3.529
 rarity=C
 type=Creature
 subtype=Scorpion

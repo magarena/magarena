@@ -1,7 +1,7 @@
 name=Splinterfright
 url=http://magiccards.info/query?q=%21splinterfright
 image=http://mtgimage.com/card/splinterfright.jpg
-value=3.895
+value=3.900
 rarity=R
 type=Creature
 subtype=Elemental

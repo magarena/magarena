@@ -1,0 +1,12 @@
+name=Supply-Line Cranes
+url=http://www.magiccards.info/query?q=%21supply%2Dline%20cranes
+image=http://mtgimage.com/card/supply-line%20cranes.jpg
+value=2.727
+rarity=C
+type=Creature
+subtype=Bird
+cost={3}{W}{W}
+pt=2/4
+ability=Flying;\
+        When SN enters the battlefield, put a +1/+1 counter on target creature.
+timing=main

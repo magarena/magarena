@@ -1,7 +1,7 @@
 name=Rishadan Port
 url=http://magiccards.info/query?q=%21rishadan%20port
 image=http://mtgimage.com/card/rishadan%20port.jpg
-value=4.603
+value=4.606
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

@@ -1,7 +1,7 @@
 name=Temple of Malice
 url=http://magiccards.info/query?q=%21temple%20of%20malice
 image=http://mtgimage.com/card/temple%20of%20malice.jpg
-value=3.780
+value=3.667
 rarity=R
 type=Land
 mana=b3r3

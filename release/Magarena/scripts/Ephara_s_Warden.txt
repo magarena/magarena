@@ -1,7 +1,7 @@
 name=Ephara's Warden
 url=http://www.magiccards.info/query?q=%21ephara%27s%20warden
 image=http://mtgimage.com/card/ephara's%20warden.jpg
-value=1.231
+value=2.016
 rarity=C
 type=Creature
 subtype=Human,Cleric

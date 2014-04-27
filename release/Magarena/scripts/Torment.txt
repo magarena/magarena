@@ -1,7 +1,7 @@
 name=Torment
 url=http://magiccards.info/query?q=%21torment
 image=http://mtgimage.com/card/torment.jpg
-value=1.970
+value=1.971
 rarity=C
 type=Enchantment
 subtype=Aura

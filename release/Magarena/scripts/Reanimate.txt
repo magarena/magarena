@@ -1,7 +1,7 @@
 name=Reanimate
 url=http://magiccards.info/query?q=%21reanimate
 image=http://mtgimage.com/card/reanimate.jpg
-value=4.505
+value=4.516
 rarity=U
 type=Sorcery
 cost={B}

@@ -1,7 +1,7 @@
 name=Hidden Path
 url=http://magiccards.info/query?q=%21hidden%20path
 image=http://mtgimage.com/card/hidden%20path.jpg
-value=1.298
+value=1.297
 rarity=R
 type=Enchantment
 cost={2}{G}{G}{G}{G}
