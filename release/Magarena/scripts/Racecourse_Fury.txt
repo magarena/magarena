@@ -6,6 +6,6 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={R}
-given_ability={T}:Target creature gains haste until end of turn.
+ability=Enchanted land has "{T}: Target creature gains haste until end of turn."
 enchant=pump,pos land
 timing=aura

@@ -6,6 +6,6 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={6}{G}{G}
-given_ability={T}: Put a 5/5 green Beast creature token with trample onto the battlefield.
+ability=Enchanted land has "{T}: Put a 5/5 green Beast creature token with trample onto the battlefield."
 enchant=pump,pos land
 timing=enchantment
