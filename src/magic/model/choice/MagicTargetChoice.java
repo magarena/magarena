@@ -243,6 +243,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_WHITE_OR_BLUE_CREATURE = 
         MagicTargetChoice.Negative("target white or blue creature");
 
+    public static final MagicTargetChoice NEG_GREEN_OR_WHITE_CREATURE =
+        MagicTargetChoice.Negative("target green or white creature");
+    
     public static final MagicTargetChoice TARGET_WHITE_CREATURE = 
         new MagicTargetChoice("target white creature");
 
