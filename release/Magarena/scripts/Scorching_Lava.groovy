@@ -15,16 +15,16 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final MagicTarget target ->
-                if (target.isCreature()) {
-                    final MagicPermanent creature = (MagicPermanent)target
-                    if (event.isKicked()){
-                        game.doAction(new MagicAddTurnTriggerAction(creature,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
-                        game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                    }
-                };
                 final MagicDamage damage=new MagicDamage(event.getSource(),target,2);
                 game.doAction(new MagicDealDamageAction(damage));
             });
+            if (event.isKicked()) {
+                event.processTargetPermanent(game, {
+                    final MagicPermanent creature ->
+                    game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
+                    game.doAction(new MagicAddTurnTriggerAction(creature,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
+                });
+            }
         }
     }
 ]
