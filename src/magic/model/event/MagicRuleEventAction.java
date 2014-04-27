@@ -1404,7 +1404,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefield(
-        "search your library for (?<choice>[^\\.]*)(,| and) put it onto the battlefield(?<tapped>[^\\.]*)(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        "search your library for (?<choice>[^\\.]*)(,| and) put it onto the battlefield(?<tapped> tapped)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
         MagicTiming.Pump,
         "Search"
     ) {
@@ -1418,24 +1418,19 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (matcher.group("tapped").contains("tapped")) {
-                        game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                            event,
-                            choice,
-                            MagicPlayMod.TAPPED
-                        ));
-                    } else {
-                        game.addEvent(new MagicSearchOntoBattlefieldEvent(
-                            event,
-                            choice
-                        ));
-                    }
+                    game.addEvent(new MagicSearchOntoBattlefieldEvent(
+                        event,
+                        choice,
+                        matcher.group("tapped") != null ? 
+                            MagicPlayMod.TAPPED : 
+                            MagicPlayMod.NONE
+                    ));
                 }
             };
         }
     },
     FromHandToBattlefield(
-        "put (?<choice>[^\\.]*hand) onto the battlefield(?<tapped>[^\\.]*)\\.",
+        "put (?<choice>[^\\.]*hand) onto the battlefield(?<tapped> tapped)?\\.",
         MagicTiming.Pump,
         "Put"
     ) {
@@ -1449,18 +1444,13 @@ public enum MagicRuleEventAction {
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (matcher.group("tapped").contains("tapped")) {
-                        game.addEvent(new MagicPutOntoBattlefieldEvent(
-                            event,
-                            choice,
-                            MagicPlayMod.TAPPED
-                        ));
-                    } else {
-                        game.addEvent(new MagicPutOntoBattlefieldEvent(
-                            event,
-                            choice
-                        ));
-                    }
+                    game.addEvent(new MagicPutOntoBattlefieldEvent(
+                        event,
+                        choice,
+                        matcher.group("tapped") != null ? 
+                            MagicPlayMod.TAPPED : 
+                            MagicPlayMod.NONE
+                    ));
                 }
             };
         }
