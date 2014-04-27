@@ -1,6 +1,7 @@
 package magic.ui;
 
 import magic.data.CardDefinitions;
+import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;
@@ -50,6 +51,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private final MigLayout layout = new MigLayout();
     private final ExplorerPanel explorerPanel;
+
+    private ButtonControlledPopup cubePopup;
+    private JCheckBox[] cubeCheckBoxes;
+    private JRadioButton[] cubeFilterChoices;
     private ButtonControlledPopup typePopup;
     private JCheckBox[] typeCheckBoxes;
     private JRadioButton[] typeFilterChoices;
@@ -67,6 +72,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private JRadioButton[] rarityFilterChoices;
     private JTextField nameTextField;
     private JButton resetButton;
+
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
     public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
@@ -80,14 +86,31 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
         setLayout(layout);
 
+        addCubeFilter();
         addCardTypeFilter();
         addCardSubtypeFilter();
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
+        addDummyFilterButton();
         addResetButton();
         addSearchTextFilter();
 
+    }
+
+    private void addDummyFilterButton() {
+        final JButton btn = new JButton();
+        btn.setVisible(false);
+        btn.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
+        add(btn);
+    }
+
+    private void addCubeFilter() {
+        cubePopup = addFilterPopupPanel("Cube");
+        final String[] filterValues = CubeDefinitions.getFilterValues();
+        cubeCheckBoxes = new JCheckBox[filterValues.length];
+        cubeFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+        populateCheckboxPopup(cubePopup, filterValues, cubeCheckBoxes, cubeFilterChoices, false);
     }
 
     private ButtonControlledPopup addFilterPopupPanel(final String title) {
@@ -113,6 +136,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         @Override
         public void actionPerformed(final ActionEvent event) {
             // close all other popups except for our own button's
+            if (p != cubePopup) {
+                cubePopup.hidePopup();
+            }
             if (p != typePopup) {
                 typePopup.hidePopup();
             }
@@ -151,6 +177,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         scrollPane.setOpaque(false);
         scrollPane.getViewport().setOpaque(false);
         scrollPane.setPreferredSize(POPUP_CHECKBOXES_SIZE);
+        scrollPane.getVerticalScrollBar().setUnitIncrement(18);
         popup.add(scrollPane);
 
         final ButtonGroup bg = new ButtonGroup();
@@ -186,6 +213,17 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
                     return false;
                 }
             }
+        }
+
+        // cube
+        if (!filterCheckboxes(cardDefinition, cubeCheckBoxes, cubeFilterChoices,
+            new CardChecker() {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final String cubeName = cubeCheckBoxes[i].getText();
+                    return CubeDefinitions.isCardInCube(card, cubeName);
+                }
+            })) {
+            return false;
         }
 
         // type
@@ -290,6 +328,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
         closePopups();
 
+        unselectFilterSet(cubeCheckBoxes, cubeFilterChoices);
         unselectFilterSet(typeCheckBoxes, typeFilterChoices);
         unselectFilterSet(colorCheckBoxes, colorFilterChoices);
         unselectFilterSet(costCheckBoxes, costFilterChoices);
@@ -312,6 +351,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     public void closePopups() {
+        cubePopup.hidePopup();
         typePopup.hidePopup();
         colorPopup.hidePopup();
         costPopup.hidePopup();
