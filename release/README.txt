@@ -62,8 +62,104 @@ Thank you for your support and have fun!
 
 
 
-Release 1.49 (April 26, 2014)
+Release 1.49 (April 27, 2014)
 ============
+frank
+Guest
+hong yie
+Lodici
+melvin
+ShawnieBoy
+
+
+- add Cube filter to card explorer filter panel.
+made parallel MCTS lock-free, use regular newFixedThreadPool instead of custom ThreadPoolExecutor
+convert ability parsing to use regex
+remove the need to start activated ability with the word 'cost'
+Implement '<type>cycling <mana cost>' to scripts
+Add 'put <chosen from hand> onto the battlefield (tapped)'
+support 'destroy all <group>' and 'destroy all <group>. They can't be regenerated.' in effect
+support 'Discard <chosen> card' as cost'
+support 'unearth <mana cost>'
+support 'scavenge <mana cost>' in ability
+support 'flashback <costs>'
+support 'retrace' ability in card script
+issue 587: Display Player which is going first on Mulligan Screen.
+Replace {E} cost with 'Exile SN'
+Add 'Exile SN' and 'Sacrifice SN' to effects
+Implement 'Whenever SN becomes tapped,' ability
+support 'deals damage to each <filter> and each <filter>'
+Add 'Attach SN to <chosen>' as a scripted effect.
+add {Threshold} activation restriction
+Add SearchLibraryToGraveyard and SacrificeSelfEndStep effects
+Add generic 'When(ever) SN becomes the target of a spell or ability," ability to scripts
+Add 'Whenever SN attacks or blocks' to scripts
+- set a custom background image by dragging image onto Magarena frame.
+Edit scripts for new 'Equip <manacost>' ability
+Add 'Equipped creature has|gains <ability>|<pt change>' to scripts
+add 'sn deals <amount> damage to each <filter>'
+add 'put <amount> <counter> on each <filter>'
+add 'whenever sn blocks or becomes blocked, <effect>'
+add 'whenever sn becomes blocked, <effect>'
+support 'when sn blocks, <effect>', 
+Add 'Switch <chosen>'s power and toughness until end of turn.' to scripts
+Add 'Switch SN's power and toughness until end of turn.' to scripts
+support 'you may pay <mana cost>. If you do, <effect>'
+add 'whenever a player casts a/an <spell>, <effect>'
+add {YourTurn} activation restriction
+add 'tap sn' effect and filters
+add 'Whenever SN or another <filter> dies, <effect>
+add 'Whenever another <filter> dies, <effect>' and 'Whenever a/an <filter> dies, <effect>'
+support relcaim effect
+Add 'Whenever another <permanent type/subtype> enters the battlefield, <effect>'
+Add 'Whenever a/an <permanent type> enters the battlefield, <effect>' ability and allow card syntax for EntersWithCounter and EntersTappedUnless
+Add 'remove <amount> <CounterType> from SN.' as an effect and allow extra syntax for PumpGainCan'tSelf
+support "Whenever another <filter> enters the battlefield under your control, <effect>"
+support 'transmute <mana cost>' ability
+Enable scripts to allow '<chosen/SN> can't... this turn'
+Add pumpGainGroup and modify regEx for search to hand
+Implement 'Whenever SN becomes blocked by a creature, it gets <pt change> until end of turn' and edit 'blocked by pump' to  'Whenever SN becomes blocked, it gets <pt change> for each creature blocking it.
+Add 'You may (pay) <cost> (and <cost>) rather than pay SN's mana cost.' to scripts.
+Convert 'damage opponent discard random' to card based syntax
+Add SearchLibraryToTopLibrary effect and syntax variants to scripts
+Add mana_or_combat to Eldrazi Spawn, can now choose which to sacrifice - Fix Issue 427
+Add '(pn ) draw(s) a card at the beginning of the next turn's upkeep' to script effects
+Enable 'Enchanted creature gains <pt change>.' and 'Enchanted creature gains <pt change> and (has) <ability> (and...)'
+shuffle SN into its owner's library' to effects (Permanents only)
+
+- moved import function out of download dialog into its own dialog.
+- import now migrates various user generated data as well as downloaded images.
+
+
+- fixes
+Grizzled Wolverine should only be able to activate ability
+when it becomes blocked, not when any creature becomes blocked.
+fixes issue 593
+
+fix: Dominus of Fealty, Issue 591
+fix unable to champion tribal permanent
+fix Garruk, Caller of Beasts Issue 517
+fix incorrect mana cost for Odious Trow
+Fix - Blasted Landscape no longer enters the battlefield tapped
+fix: Brainstorm, Issue 441
+fix: Flowstone Embrace, changing +2/+2 to +2/-2
+Master of Diversion giving ability to all attackers (issue 571)
+Walking Atlas unable to put any land onto the battlefield + Fix timing
+fix missing target notification in even description Jagged-Scar Archers, fixes issue 574
+add state trigger to Dark Depths, fixes issue 451
+maybe fix: Issue 570
+play choice should focus viewer even if choice is made automatically for the player
+each choice should enforce its own focus, it does not have to 'restore' the focus when it is done
+
+- changed the following card script syntax (old -> new):
+  * ally grow
+    -> Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
+  * tap add mana <mana>
+    -> {T}: Add <mana> to your mana pool.
+  * deals damage to a player <effect>
+    -> Whenever SN deals damage to a player, <effect>
+
+Edit combat abilities to match card text.
 
 Release 1.48 (March 30, 2014)
 ============
