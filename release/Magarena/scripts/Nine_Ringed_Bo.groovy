@@ -26,8 +26,8 @@
             event.processTargetPermanent(game, {
                 final MagicPermanent creature ->
                 final MagicDamage damage = new MagicDamage(event.getSource(),creature,1);
-                game.doAction(new MagicAddTurnTriggerAction((MagicPermanent)creature,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
                 game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new MagicAddTurnTriggerAction(creature,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
             });
         }
     }
