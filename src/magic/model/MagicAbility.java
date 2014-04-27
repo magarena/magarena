@@ -719,7 +719,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    AttachedCreatureGain("(Equipped|Enchanted) creature (has )?" + ARG.ANY + "(\\.)?", 0) {
+    AttachedCreatureGain("(Equipped|Enchanted) (creature|land) (has )?" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.genABStatic(
                 MagicAbility.getAbilityList(
@@ -1043,16 +1043,19 @@ public enum MagicAbility {
         return abilityList;
     }
 
-    private static final Pattern SUB_ABILITY_LIST = Pattern.compile("\"([^\"]+)\"|([A-Za-z][^,]+)");
+    private static final Pattern SUB_ABILITY_LIST = Pattern.compile(
+        "(?:has )?\"([^\"]+)\"(?:, and | and )?|" + 
+        "(?:has )?([A-Za-z][^,]+)(?:, and | and )|" + 
+        "(?:has )?([A-Za-z][^,]+)"
+    );
     
-    public static MagicAbilityList getAbilityList(final String text) {
-        final String names = text.replace("has ","")
-                                 .replace(", and ",",")
-                                 .replace(" and ",",");
+    public static MagicAbilityList getAbilityList(final String names) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         final Matcher m = SUB_ABILITY_LIST.matcher(names);
         while (m.find()) {
-            final String name = m.group(1) != null ? m.group(1) : m.group(2);
+            final String name = m.group(1) != null ? m.group(1) : 
+                                m.group(2) != null ? m.group(2) :
+                                m.group(3);
             getAbility(name).addAbility(abilityList, name);
         }
         return abilityList;
