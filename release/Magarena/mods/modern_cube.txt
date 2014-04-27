@@ -352,7 +352,6 @@ Blade of the Sixth Pride
 Blade Splicer
 Blade-Tribe Berserkers
 Bladetusk Boar
-Bladetusk Boar
 Blanchwood Armor
 Blasting Station
 Blaze
@@ -2256,7 +2255,6 @@ Maggot Carrier
 Magister Sphinx
 Magma Giant
 Magma Rift
-Magma Spray
 Magma Spray
 Magmaw
 Magnetic Flux
