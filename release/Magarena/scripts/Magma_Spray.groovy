@@ -13,12 +13,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTarget(game, {
-                final MagicTarget target ->
+            event.processTargetPermanent(game, {
+                final MagicPermanent target ->
                 final MagicDamage damage = new MagicDamage(event.getSource(),target,2);
                 game.doAction(new MagicDealDamageAction(damage));
                 game.doAction(new MagicAddTurnTriggerAction(
-                    (MagicPermanent)target, 
+                    target, 
                     MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                 ));
             });
