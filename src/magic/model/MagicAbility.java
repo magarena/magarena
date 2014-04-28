@@ -719,7 +719,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    AttachedCreatureGain("(Equipped|Enchanted) (creature|land|artifact|permanent) (has )?" + ARG.ANY + "(\\.)?", 0) {
+    AttachedCreatureGain("(Equipped|Enchanted) " + ARG.WORD1 + " " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.genABStatic(
                 MagicAbility.getAbilityList(

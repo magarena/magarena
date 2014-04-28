@@ -1699,7 +1699,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    /*
     Scry(
         "(pn )?scry (?<amount>[0-9]+)\\.",
         MagicTiming.Draw,
@@ -1716,7 +1715,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    */
     RegenerateSelf(
         "regenerate sn\\.", 
         MagicTiming.Pump, 
@@ -1795,7 +1793,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    /*
     LookHand(
         "look at (?<choice>[^\\.]*)'s hand\\.",
         MagicTargetHint.Negative, 
@@ -1816,7 +1813,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    */
     ShuffleSelfPerm(
         "shuffle sn into its owner's library\\.",
         MagicTiming.Removal,
