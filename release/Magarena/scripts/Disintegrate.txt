@@ -1,0 +1,9 @@
+name=Disintegrate
+url=http://www.magiccards.info/query?q=%21disintegrate
+image=http://mtgimage.com/card/disintegrate.jpg
+value=4.577
+rarity=C
+type=Sorcery
+cost={X}{R}
+timing=main
+requires_groovy_code

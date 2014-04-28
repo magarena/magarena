@@ -6,6 +6,6 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{W}
-given_ability=indestructible
+ability=Enchanted permanent has indestructible.
 timing=aura
 enchant=indestructible,pos permanent

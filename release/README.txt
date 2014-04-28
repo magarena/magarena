@@ -62,8 +62,230 @@ Thank you for your support and have fun!
 
 
 
-Release 1.49 (April 26, 2014)
+Release 1.50 (May 31, 2014)
 ============
+
+Release 1.49 (April 27, 2014)
+============
+frank
+Guest
+hong yie
+Lodici
+melvin
+ShawnieBoy
+
+- show player who is going first on Mulligan Screen
+
+- add Cube filter to card explorer filter panel
+
+- change background image by dragging image onto Magarena frame
+
+- import now migrates various user generated data as well as downloaded images
+
+- simplify implementation of parallel MCTS and make it lock-free
+
+- added the following to the card script:
+  * activation restriction: {YourTurn} - activate only during your turn
+  * activation restriction: {Threshold} - at least seven cards in your graveyard
+  * cost: Discard <chosen card>
+  * cost: Exile SN
+  * effect: Remove <amount> <counter> from SN.
+  * effect: Switch <chosen>'s power and toughness until end of turn.
+  * effect: Switch SN's power and toughness until end of turn.
+  * effect: Put <chosen from hand> onto the battlefield [tapped]
+  * effect: SN deals <amount> damage to each <creature/player>
+  * effect: SN deals damage to each <creature/player> and each <creature/player>
+  * effect: Draw a card at the beginning of the next turn's upkeep.
+  * effect: Put <amount> <counter> on each <permanent>
+  * effect: Put <chosen card from your graveyard> on top of your library.
+  * effect: Shuffle SN into its owner's library.
+  * effect: Destroy all <permanents>.
+  * effect: Destroy all <permanents>. They can't be regenerated.
+  * effect: Attach SN to <chosen>.
+  * effect: Tap SN.
+  * effect: Exile SN.
+  * effect: Sacrifice SN.
+  * effect: Sacrifice SN at the beginning of the next end step.
+  * effect: Search your library for <chosen>, reveal it, then shuffle your library. Then put that card on top of it.
+  * effect: <permanents> get <pt change> and gain <abilities> until end of turn. 
+  * ability: Whenever a/an <permanent> enters the battlefield, <effect>
+  * ability: Whenever another <permanent> enters the battlefield, <effect>
+  * ability: Whenever another <permanent> enters the battlefield under your control, <effect>
+  * ability: Whenever SN or another <permanent> dies, <effect>
+  * ability: Whenever another <permanent> dies, <effect>
+  * ability: Whenever a/an <permanent> dies, <effect>
+  * ability: Whenever a player casts a/an <spell>, <effect>
+  * ability: Whenever SN attacks or blocks, <effect>
+  * ability: Whenever SN blocks or becomes blocked, <effect>
+  * ability: Whenever SN becomes blocked, <effect>
+  * ability: Whenever SN becomes blocked by a creature, it gets <pt change> until end of turn
+  * ability: Whenever SN becomes blocked, it gets <pt change> for each creature blocking it.
+  * ability: Whenever SN becomes the target of a spell or ability, <effect>
+  * ability: Whenever SN becomes tapped, <effect>
+  * ability: When SN blocks, <effect>
+  * ability: Enchanted creature gets <pt change> and has <ability>.
+  * ability: Equipped creature gets <pt change> and has <ability>.
+  * ability: <type>cycling <mana cost>
+  * ability: transmute <mana cost>
+  * ability: unearth <mana cost>
+  * ability: scavenge <mana cost>
+  * ability: flashback <costs>
+  * ability: retrace
+  * ability: equip <mana cost>
+  * ability: You may pay <costs> rather than pay SN's mana cost.
+
+- changed the following card script syntax (old -> new):
+  * ally grow
+    -> Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
+  * tap add mana <mana>
+    -> {T}: Add <mana> to your mana pool.
+  * deals damage to a player <effect>
+    -> Whenever SN deals damage to a player, <effect>
+  * cost <costs>: <effect>
+    -> <costs>: <effect>
+  * damage opponent discard random <amount>
+    -> Whenever SN deals damage to an opponent, that player discards <amount> cards at random.
+
+- fixed the following bugs:
+  * Hand view does not reappear automatically after searching library/graveyard (issue 570)
+  * Grizzled Wolverine's ability is activated when any creature becomes blocked (issue 593)
+  * Master of Diversion giving ability to all attackers (issue 571)
+  * Blasted Landscape enters the battlefield tapped
+  * Unable to champion tribal permanent
+  * incorrect mana cost for Odious Trow
+  * Walking Atlas unable to put any land onto the battlefield
+  * Dark Depths does not trigger when counters are removed by Vampire Hexmage (issue 451)
+  * Dominus of Fealty did not show chosen target (issue 591)
+  * Jagged-Scar Archers did not show chosen target (issue 574)
+  * Trigger from Garruk, Caller of Beasts' emblem is not optional (issue 517)
+  * Brainstorm shows name of cards from hidden zone (issue 441)
+  * Flowstone Embrace gave enchanted creature +2/+2, should be +2/-2 
+  * Unable to choose when Eldrazi Spawn to pay mana cost (issue 427)
+
+- added the following cards:
+Abolish, About Face, Absorb Vis, Acorn Harvest, Adder-Staff Boggart,
+Akroan Line Breaker, Akroan Mastiff, Alabaster Dragon, Ancestral Tribute,
+Ancient Grudge, Aquamoeba, Arcades Sabboth, Arena Athlete, Armistice,
+Army of the Damned, Artful Dodge, Ashen Firebeast, Aspect of Gorgon,
+Balduvian Rage, Ballynock Trapper, Baloth Woodcrasher, Bant Panorama,
+Bargain, Bash to Bits, Bassara Tower Archer, Battlewand Oak, Beast Attack,
+Benthicore, Bestial Fury, Bident of Thassa, Bladewing the Risen,
+Blessed Wine, Blizzard Specter, Blockbuster, Bloodfire Dwarf,
+Bloodfire Kavu, Blossoming Wreath, Bog Glider, Bog Hoodlums, Bola Warrior,
+Brackwater Elemental, Braingeyser, Brainspoil, Breath of Malfegor,
+Breathstealer's Crypt, Bringer of the Black Dawn, Bringer of the Red Dawn,
+Bump in the Night, Burning Oil, Burnout, Caldera Hellion,
+Call of the Herd, Call the Skybreaker, Carbonize, Carrier Pigeons,
+Cast into Darkness, Castle, Cateran Overlord, Cateran Summons,
+Cenn's Enlistment, Chained to the Rocks, Chariot of Victory,
+Charnelhoard Wurm, Chartooth Cougar, Chatter of the Squirrel,
+Clear a Path, Cloaked Siren, Clockwork Beetle, Clockwork Condor,
+Clockwork Dragon, Clockwork Vorrac, Clutch of the Undercity,
+Coerced Confession, Coffin Purge, Consult the Necrosages,
+Copper Gnomes, Copper Tablet, Corpse Connoisseur,
+Court Street Denizen, Crippling Fatigue, Crookclaw Transmuter,
+Crosswinds, Crush of Wurms, Cursed Land, Cyclops of Eternal Fury,
+Dakmor Plague, Dark Offering, Dawnbringer Charioteers, Day of Destiny,
+Deadbridge Goliath, Deathcoil Wurm, Deep Analysis, Defy Gravity,
+Dematerialize, Demonic Hordes, Desecration Plague, Desert Sandstorm,
+Detainment Spell, Devil's Play, Dictate of Heliod, Dictate of Kruphix,
+Dictate of the Twin Gods, Didgeridoo, Dimir House Guard,
+Dimir Infiltrator, Dire Undercurrents, Disciple of the Vault,
+Disintegrate, Dizzy Spell, Doomwake Giant, Drainpipe Vermin,
+Dreadbringer Lampads, Dream Twist, Dreg Mangler, Dregscape Zombie,
+Drift of Phantasms, Drudge Beetle, Dwarven Patrol, Dwarven Thaumaturgist,
+Eagle of the Watch, Earth Rift, Eidolon of Blossoms,
+Eidolon of Countless Battles, Elephant Ambush, Enervate, Entomb,
+Ephara's Warden, Errant Doomsayers, Esper Panorama, Ethereal Usher,
+Etherium Abomination, Extinguish All Hope, Faithless Looting,
+Fall of the Gavel, Famine, Fanatic of Mogis, Fauna Shaman,
+Feast of Dreams, Feedback, Felhide Petrifier, Felidar Umbra,
+Feral Instinct, Fervent Denial, Festering Evil, Fevered Strength,
+Fiery Fall, Filigree Angel, Firebolt, Firebrand Ranger, Fire-Field Ogre,
+Fires of Undeath, Flagstones of Trokair, Flame Jab, Flame Rift,
+Flare, Fleetfeather Cockatrice, Fleshpulper Giant, Flight Spellbomb,
+Flowstone Slide, Flurry of Horns, Fluxcharger, Folk Medicine,
+Font of Fertility, Font of Fortunes, Font of Ire, Font of Vigor,
+Force Void, Forgeborn Oreads, Fortress Cyclops, Geistflame,
+Genju of the Cedars, Genju of the Falls, Genju of the Fens,
+Genju of the Fields, Genju of the Realm, Genju of the Spires,
+Glassdust Hulk, Gluttonous Cyclops, Gnaw to the Bone, Goblin Swine-Rider,
+Golden Hind, Gold-Forged Sentinel, Golgari Germination, Grasp of Phantoms,
+Gravebind, Grixis Panorama, Grixis Slavedriver, Hammerfist Giant,
+Headstone, Heal, Healer's Headdress, Hellspark Elemental, Hell's Thunder,
+Higure, the Still Wind, Homing Lightning, Honden of Cleansing Fire,
+Honden of Infinite Rage, Honden of Life's Web, Honden of Night's Reach,
+Honden of Seeing Winds, Horizon Spellbomb, Horned Cheetah, Horned Helm,
+Howling Gale, Humbler of Mortals, Hydra Broodmaster, Igneous Pouncer,
+Illness in the Ranks, Inferno, Infuse, Insidious Bookworms,
+Inspired Sprite, Jedit Ojanen of Efrava, Jhessian Zombies, Jund Panorama,
+Kalastria Highborn, Karstoderm, Kathari Screecher, Kavu Monarch,
+King Suleiman, Kobold Drill Sergeant, Kor Cartographer, Kormus Bell,
+Korozda Monitor, Krark-Clan Shaman, Krosan Wayfarer, Krovikan Fetish,
+Lagonna-Band Trailblazer, Lava Dart, Leonin Battlemage, Leonin Elder,
+Leonin Iconoclast, Lifegift, Lightning Blow, Lightning Diadem,
+Lingering Souls, Living Lands, Lobber Crew, Lotleth Troll,
+Lumengrid Sentinel, Magma Giant, Magma Spray, Magma Vein, Mana Confluence,
+Marrow Shards, Marshaling Cry, Meekstone, Meishin, the Mind Cage,
+Merfolk Seer, Merfolk Skyscout, Merfolk Thaumaturgist, Mind Grind,
+Mind Ravel, Mirko Vosk, Mind Drinker, Mistblade Shinobi,
+Moan of the Unhallowed, Moggcatcher, Mogis, God of Slaughter,
+Mogis's Warhound, Monstrify, Morgue Theft, Mortal Combat, Mountain Valley,
+Muddle the Mixture, Mystical Teachings, Mystic Melting, Mystic Retrieval,
+Naya Panorama, Netherborn Phalanx, Netter en-Dal, Neurok Stealthsuit,
+Neurok Transmuter, Nicol Bolas, Nighthowler, Nightstalker Engine,
+Nine-Ringed Bo, Niv-Mizzet, Dracogenius, Noble Templar, Noxious Field,
+Nyx-Fleece Ram, Oakheart Dryads, Obelisk of Undoing, Odunos River Trawler,
+Ogre Slumlord, Oona's Grace, Order of the Golden Cricket,
+Oreskos Swiftclaw, Origin Spellbomb, Paleoloth, Pale Recluse,
+Panic Spellbomb, Paperfin Rascal, Pawn of Ulamog, Pensive Minotaur,
+Perplex, Petrahydrox, Phalanx Leader, Pharika's Chosen, Pharika's Mender,
+Phenax, God of Deception, Pheres-Band Thunderhoof, Pilfered Plans,
+Pin to the Earth, Plague Spitter, Poison Arrow, Pride of Lions,
+Psychic Drain, Psychic Venom, Purify, Purify the Grave, Pyknite,
+Pyroconvergence, Rain of Embers, Rakeclaw Gargantuan, Rally the Peasants,
+Ramosian Lieutenant, Ramosian Revivalist, Rathi Assassin, Rathi Fiend,
+Ravenous Leucrocota, Raven's Crime, Ray of Distortion, Ray of Erasure,
+Ray of Revelation, Reap the Seagraf, Rebellion of the Flamekin,
+Reckless Charge, Red Sun's Zenith, Reki, the History of Kamigawa,
+Renewal, Renowned Weaver, Revel of the Fallen God, Riptide Chimera,
+Ritual of Steel, Roar of the Wurm, Rockcaster Platoon,
+Rocky Tar Pit, Rolling Temblor, Rotted Hulk, Ryusei, the Falling Star,
+Sage's Row Denizen, Sakashima's Student, Sakura-Tribe Scout, Salvage,
+Salvage Slasher, Samurai of the Pale Curtain, Sanctum Plowbeast,
+Satyr Grovedancer, Satyr Hoplite, Savage Conception, Saving Grasp,
+Scorching Lava, Scorching Missile, Scourge Devil, Scrambleverse,
+Seahunter, Sedraxis Specter, Seismic Assault, Seismic Shudder,
+Sek'Kuar, Deathkeeper, Sell-Sword Brute, Sever the Bloodline,
+Sewer Shambler, Shadow Alley Denizen, Shambling Remains, Shivan Gorge,
+Shoreline Ranger, Shuriken, Sigiled Skink, Sigiled Starfish,
+Silent Departure, Silverglade Pathfinder, Sima Yi, Wei Field Marshal,
+Simian Brawler, Simic Fluxmage, Siren of the Silent Song, Sizzle,
+Skittering Horror, Skittering Skirge, Skull Fracture, Skyshroud Vampire,
+Skyspear Cavalry, Slitherhead, Sluiceway Scorpion, Soul Rend,
+Sparring Collar, Spawning Grounds, Species Gorger, Spider Spawning,
+Spitting Image, Stampede Driver, Stasis Cell, Stoic Angel,
+Stoneforge Mystic, Stone-Seeder Hierophant, Strangling Soot,
+Stream of Acid, Subterranean Spirit, Sunstrike Legionnaire,
+Supply-Line Cranes, Survival of the Fittest, Swift Maneuver,
+Sylvan Bounty, Sylvan Echoes, Sylvan Might, Sylvan Yeti, Syphon Life,
+Tablet of Epityr, Talrand, Sky Summoner, Task Force, Telim'Tor's Edict,
+Temple of Epiphany, Temple of Malady, Terrus Wurm, Tethmos High Priest,
+Thassa's Devourer, Think Twice, Thorntooth Witch, Thrashing Mossdog,
+Thrill of the Hunt, Throat Slitter, Tibor and Lumia, Titania's Chosen,
+Tolaria West, Tornado Elemental, Tortured Existence, Totem Speaker,
+Touch of Death, Tower Defense, Trade Routes, Transmutation,
+Traumatic Visions, Tremor, Triton Cavalry, Triton Shorestalker,
+Twisted Abomination, Unburial Rites, Undead Leotau, Unearth, Updraft,
+Valakut Fireboar, Valley Rannet, Vampire Hounds, Vedalken AEthermage,
+Vedalken Archmage, Vermiculos, Viscera Dragger, Vithian Stinger,
+Volcanic Spray, Wanderlust, Warp Artifact, Warpath, Warren Instigator,
+War-Wing Siren, Wee Dragonauts, Where Ancients Tread, Whipflare,
+Whip of Erebos, Whirlwind, Whitemane Lion, Whitewater Naiads,
+Wight of Precinct Six, Wild Hunger, Willow Priestess, Wirewood Guardian,
+Wirewood Hivemaster, Wirewood Symbiote, Worm Harvest, Wretched Anurid,
+Xenagos, God of Revels, Yamabushi's Flame, Yamabushi's Storm,
+Zanikev Locust, Zebra Unicorn, Zhang Liao, Hero of Hefei, Zombie Master
 
 Release 1.48 (March 30, 2014)
 ============
@@ -87,7 +309,7 @@ woggle
 
 - preconstructed, custom, or random decks can be selected when starting a new duel
 
-- cards in Deck View can be filtered by Creatures, Lands and Other Spells.
+- cards in Deck View can be filtered by Creatures, Lands and Other Spells
 
 - full "game.log" file can be view from within Magarena using new menu option available
   from main game screen or by right clicking on in-game log viewer

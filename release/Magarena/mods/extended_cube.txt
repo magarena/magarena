@@ -28,6 +28,8 @@ Ajani's Chosen
 Ajani's Sunstriker
 Akroan Crusader
 Akroan Hoplite
+Akroan Line Breaker
+Akroan Mastiff
 Akroan Phalanx
 Akroan Skyguard
 Akroma's Memorial
@@ -41,6 +43,7 @@ Altar's Reap
 Ambush Viper
 Amphin Cutthroat
 Anax and Cymede
+Ancient Grudge
 Angelic Armaments
 Angelic Benediction
 Angelic Destiny
@@ -70,6 +73,7 @@ Archweaver
 Archwing Dragon
 Arctic Aven
 Ardent Recruit
+Arena Athlete
 Argent Mutation
 Argent Sphinx
 Argentum Armor
@@ -80,14 +84,17 @@ Armored Warhorse
 Armored Wolf-Rider
 Armory Guard
 Arms Dealer
+Army of the Damned
 Arrest
 Arrows of Justice
+Artful Dodge
 Artificer's Hex
 Artillerize
 Ascended Lawmage
 Asceticism
 Ashen Rider
 Ashmouth Hound
+Aspect of Gorgon
 Aspect of Hydra
 Asphodel Wanderer
 Asphyxiate
@@ -124,6 +131,7 @@ Barter in Blood
 Bar the Door
 Basilica Guards
 Basilica Screecher
+Bassara Tower Archer
 Batterhorn
 Battering Krasis
 Batterskull
@@ -139,6 +147,7 @@ Bellows Lizard
 Belltower Sphinx
 Benalish Veteran
 Benthic Giant
+Bident of Thassa
 Bile Blight
 Biomass Mutation
 Birds of Paradise
@@ -220,8 +229,10 @@ Brink of Disaster
 Bronzebeak Moa
 Bronze Sable
 Brushstrider
+Bump in the Night
 Burden of Guilt
 Buried Ruin
+Burning Oil
 Burn the Impure
 Butcher Ghoul
 Butcher's Cleaver
@@ -241,6 +252,7 @@ Carnifex Demon
 Carnival Hellsteed
 Carrion Call
 Cartel Aristocrat
+Cast into Darkness
 Catacomb Slug
 Cathars' Crusade
 Cathedral of War
@@ -256,6 +268,7 @@ Centaur Battlemaster
 Centaur Courser
 Centaur Healer
 Centaur's Herald
+Chained to the Rocks
 Champion of the Parish
 Chandra's Fury
 Chandra's Outrage
@@ -264,6 +277,7 @@ Chaos Imps
 Chapel Geist
 Charging Badger
 Charging Griffin
+Chariot of Victory
 Charmbreaker Devils
 Chasm Drake
 Chemister's Trick
@@ -280,16 +294,19 @@ Cinder Elemental
 Circle of Flame
 Claim of Erebos
 Claustrophobia
+Clear a Path
 Cleaver Riot
 Clifftop Retreat
 Clinging Anemones
 Clinging Mists
+Cloaked Siren
 Clone
 Cloudfin Raptor
 Cloudshift
 Cobblebrute
 Cobbled Wings
 Codex Shredder
+Coerced Confession
 Collective Blessing
 Combust
 Commander's Authority
@@ -313,6 +330,7 @@ Corrupted Harvester
 Corrupted Resolve
 Counterflux
 Coursers' Accord
+Court Street Denizen
 Cower in Fear
 Crackling Triton
 Craterhoof Behemoth
@@ -336,6 +354,7 @@ Culling Dais
 Curiosity
 Cursebreak
 Cyclonic Rift
+Cyclops of Eternal Fury
 Cyclops of One-Eyed Pass
 Cystbearer
 Daggerdrome Imp
@@ -355,10 +374,12 @@ Darksteel Plate
 Darksteel Relic
 Darksteel Sentinel
 Darkthicket Wolf
+Dawnbringer Charioteers
 Dawnstrike Paladin
 Dawntreader Elk
 Day of Judgment
 Deadbridge Chant
+Deadbridge Goliath
 Deadly Recluse
 Dead Reveler
 Dead Weight
@@ -384,14 +405,19 @@ Demon's Horn
 Demystify
 Deranged Outcast
 Desecration Demon
+Desecration Plague
 Desolate Lighthouse
 Destructive Revelry
 Detention Sphere
 Devastation Tide
 Deviant Glee
+Devil's Play
 Devour Flesh
 Devouring Swarm
 Diabolic Tutor
+Dictate of Heliod
+Dictate of Kruphix
+Dictate of the Twin Gods
 Dimir Cluestone
 Dimir Guildgate
 Dimir Keyrune
@@ -418,6 +444,7 @@ Divine Verdict
 Domestication
 Doom Blade
 Doomed Traveler
+Doomwake Giant
 Door to Nothingness
 Downsize
 Dragon Egg
@@ -425,9 +452,13 @@ Dragon Hatchling
 Dragon Mantle
 Dragon's Claw
 Dragonskull Summit
+Drainpipe Vermin
 Drakewing Krasis
 Dreadbore
+Dreadbringer Lampads
 Dreadwaters
+Dream Twist
+Dreg Mangler
 Drifting Shade
 Driver of the Dead
 Drogskol Captain
@@ -436,6 +467,7 @@ Dross Hopper
 Dross Ripper
 Drowned Catacomb
 Drown in Sorrow
+Drudge Beetle
 Druid's Deliverance
 Druid's Familiar
 Dryad Militant
@@ -448,8 +480,11 @@ Duskmantle Prowler
 Dutiful Thrull
 Duty-Bound Dead
 Dynacharge
+Eagle of the Watch
 Eaten by Spiders
 Eater of Hope
+Eidolon of Blossoms
+Eidolon of Countless Battles
 Elder Cathar
 Elder of Laurels
 Elderscale Wurm
@@ -477,6 +512,7 @@ Engulfing Slagwurm
 Enslave
 Entreat the Angels
 Ephara's Radiance
+Ephara's Warden
 Epiphany Storm
 Erase
 Erdwal Ripper
@@ -497,6 +533,7 @@ Executioner's Hood
 Experiment One
 Explosive Impact
 Exquisite Blood
+Extinguish All Hope
 Eye Gouge
 Eyes in the Skies
 Ezuri, Renegade Leader
@@ -506,12 +543,15 @@ Fabled Hero
 Fade into Antiquity
 Faerie Impostor
 Faerie Invaders
+Faithless Looting
 Falkenrath Aristocrat
 Falkenrath Exterminator
 Falkenrath Marauders
 Falkenrath Noble
 Falkenrath Torturer
 Fallen Ferromancer
+Fall of the Gavel
+Fanatic of Mogis
 Fanatic of Xenagos
 Fangren Marauder
 Farbog Boneflinger
@@ -521,8 +561,10 @@ Fatal Fumes
 Fate Unraveler
 Favorable Winds
 Favor of the Woods
+Feast of Dreams
 Felhide Brawler
 Felhide Minotaur
+Felhide Petrifier
 Fencing Ace
 Feral Animist
 Feral Invocation
@@ -541,29 +583,41 @@ Fire Elemental
 Firefist Striker
 Firemane Avenger
 Fireshrieker
+Fires of Undeath
 Flameblast Dragon
 Flameborn Hellion
 Flameborn Viron
 Flamecast Wheel
 Flashfreeze
 Flayer Husk
+Fleetfeather Cockatrice
 Fleetfeather Sandals
 Fleeting Distraction
 Flensermite
 Flesh-Eater Imp
 Fleshmad Steed
+Fleshpulper Giant
 Flight
+Flight Spellbomb
 Fling
 Flinthoof Boar
 Flitterstep Eidolon
+Flurry of Horns
+Fluxcharger
 Fog
 Fog Bank
+Font of Fertility
+Font of Fortunes
+Font of Ire
+Font of Vigor
 Forced Adaptation
 Forest
+Forgeborn Oreads
 Forge Devil
 Forlorn Pseudamma
 Forsaken Drifters
 Fortress Crab
+Fortress Cyclops
 Foundry Street Denizen
 Frenzied Tilling
 Frightful Delusion
@@ -591,6 +645,7 @@ Gavony Ironwright
 Gavony Township
 Gaze of Granite
 Geistcatcher's Rig
+Geistflame
 Geist-Honored Monk
 Geist of Saint Traft
 Geist Snatch
@@ -626,8 +681,10 @@ Glistener Elf
 Gloom Surgeon
 Gloomwidow
 Glorious Charge
+Gluttonous Cyclops
 Gnathosaur
 Gnawing Zombie
+Gnaw to the Bone
 Gobbling Ooze
 Goblin Arsonist
 Goblin Battle Jester
@@ -644,7 +701,9 @@ Goblin War Paint
 God-Favored General
 Godless Shrine
 Go for the Throat
+Golden Hind
 Golden Urn
+Gold-Forged Sentinel
 Gold Myr
 Goldnight Commander
 Goldnight Redeemer
@@ -660,6 +719,7 @@ Gore-House Chainwalker
 Gorgon's Head
 Grand Abolisher
 Grasp of Darkness
+Grasp of Phantoms
 Grave Betrayal
 Grave Bramble
 Gravedigger
@@ -748,9 +808,11 @@ Hollowhenge Spirit
 Holy Justiciar
 Holy Mantle
 Homicidal Seclusion
+Homing Lightning
 Honor of the Pure
 Hopeful Eidolon
 Horizon Chimera
+Horizon Spellbomb
 Horncaller's Chant
 Horrifying Revelation
 Horror of the Dim
@@ -759,14 +821,17 @@ Hover Barrier
 Hovermyr
 Howl of the Night Pack
 Human Frailty
+Humbler of Mortals
 Hunger of the Howlpack
 Hussar Patrol
+Hydra Broodmaster
 Hydrosurge
 Hysterical Blindness
 Hythonia the Cruel
 Ichorclaw Myr
 Ichor Rats
 Ichor Wellspring
+Illness in the Ranks
 Ill-Tempered Cyclops
 Immortal Servitude
 Impetuous Sunchaser
@@ -823,6 +888,7 @@ Knight of Infamy
 Knight of Obligation
 Knight Watch
 Korozda Guildmage
+Korozda Monitor
 Koth's Courier
 Kragma Butcher
 Kragma Warcaller
@@ -836,6 +902,7 @@ Kuldotha Rebirth
 Kuldotha Ringleader
 Labyrinth Champion
 Lagonna-Band Elder
+Lagonna-Band Trailblazer
 Lantern Spirit
 Lash of the Whip
 Last Breath
@@ -848,12 +915,14 @@ Leaden Myr
 Leafcrown Dryad
 Leap of Faith
 Legion Loyalist
+Leonin Iconoclast
 Leonin Relic-Warder
 Leonin Skyhunter
 Leonin Snarecaster
 Levitation
 Lifelink
 Lifesmith
+Lightning Diadem
 Lightning Elemental
 Lightning Mauler
 Lightning Prowess
@@ -861,11 +930,14 @@ Lightning Strike
 Lightning Talons
 Liliana's Reaver
 Liliana's Shade
+Lingering Souls
 Livewire Lash
 Llanowar Elves
+Lobber Crew
 Lord of the Unreal
 Lost in a Labyrinth
 Lost Leonin
+Lotleth Troll
 Loxodon Convert
 Loxodon Partisan
 Loxodon Smiter
@@ -879,8 +951,10 @@ Lux Cannon
 Lyev Skyknight
 Maalfeld Twins
 Mad Prophet
+Magma Spray
 Make a Wish
 Malignus
+Mana Confluence
 Mana Leak
 Manalith
 Manaweft Sliver
@@ -892,6 +966,7 @@ Mark of the Vampire
 Markov Blademaster
 Markov Patrician
 Marrow Bats
+Marrow Shards
 Martial Law
 Mask of Avacyn
 Massacre Wurm
@@ -937,6 +1012,7 @@ Miming Slime
 Mind Control
 Mindcrank
 Mindeye Drake
+Mind Grind
 Mind Rot
 Mind Sculpt
 Mindshrieker
@@ -945,6 +1021,7 @@ Mindstatic
 Minotaur Abomination
 Minotaur Aggressor
 Minotaur Skullcleaver
+Mirko Vosk, Mind Drinker
 Mirran Crusader
 Mirran Mettle
 Mirran Spy
@@ -954,6 +1031,9 @@ Mist Raven
 Mizzium Mortars
 Mizzium Skin
 Mnemonic Wall
+Moan of the Unhallowed
+Mogis, God of Slaughter
+Mogis's Warhound
 Molder Beast
 Moldgraf Monstrosity
 Moment of Heroism
@@ -981,6 +1061,7 @@ Myr Propagator
 Myr Sire
 Myrsmith
 Mystic Genesis
+Mystic Retrieval
 Narstad Scrapper
 Natural End
 Naturalize
@@ -1010,6 +1091,7 @@ Niblis of the Breath
 Niblis of the Mist
 Niblis of the Urn
 Nicol Bolas, Planeswalker
+Nighthowler
 Nightmare
 Night Revelers
 Nightshade Peddler
@@ -1017,6 +1099,7 @@ Nightwing Shade
 Nimbus Naiad
 Nimbus Swimmer
 Nivix Guildmage
+Niv-Mizzet, Dracogenius
 Nullify
 Numbing Dose
 Nylea, God of the Hunt
@@ -1028,14 +1111,18 @@ Nyxborn Rollicker
 Nyxborn Shieldmate
 Nyxborn Triton
 Nyxborn Wolf
+Nyx-Fleece Ram
+Oakheart Dryads
 Oath of the Ancient Wood
 Oblivion Ring
 Observant Alseid
 Obzedat, Ghost Council
 Obzedat's Aid
 Oculus
+Odunos River Trawler
 Ogre Menial
 Ogre Resister
+Ogre Slumlord
 Olivia Voldaren
 One-Eyed Scarecrow
 One Thousand Lashes
@@ -1045,6 +1132,8 @@ Opportunity
 Orchard Spirit
 Ordruun Veteran
 Oreskos Sun Guide
+Oreskos Swiftclaw
+Origin Spellbomb
 Ornitharch
 Orzhov Cluestone
 Orzhov Guildgate
@@ -1058,24 +1147,31 @@ Oxidda Scrapmelter
 Pacifism
 Pack Rat
 Painful Quandary
+Panic Spellbomb
 Paralyzing Grasp
 Paranoid Delusions
 Paraselene
 Pathbreaker Wurm
 Peace Strider
 Peak Eruption
+Pensive Minotaur
 Pentavus
 Peregrine Griffin
 Perilous Myr
 Perilous Shadow
+Phalanx Leader
 Phantasmal Bear
 Phantasmal Dragon
 Phantasmal Image
 Phantom General
 Phantom Warrior
+Pharika's Chosen
 Pharika's Cure
+Pharika's Mender
+Phenax, God of Deception
 Pheres-Band Centaurs
 Pheres-Band Raiders
+Pheres-Band Thunderhoof
 Pheres-Band Tromper
 Phyresis
 Phyrexian Crusader
@@ -1089,8 +1185,10 @@ Phyrexian Vatmother
 Phyrexia's Core
 Phytoburst
 Pierce Strider
+Pilfered Plans
 Pillarfield Ox
 Pillar of Flame
+Pin to the Earth
 Pitchburn Devils
 Plague Myr
 Plague Stinger
@@ -1122,10 +1220,12 @@ Psychic Strike
 Psychosis Crawler
 Puresteel Paladin
 Purge the Profane
+Purify the Grave
 Purphoros, God of the Forge
 Pursuit of Flight
 Putrefax
 Putrefy
+Pyroconvergence
 Quag Sickness
 Quicksilver Amulet
 Quilled Slagwurm
@@ -1148,12 +1248,15 @@ Rakdos Shred-Freak
 Rakdos's Return
 Rakish Heir
 Rally the Forces
+Rally the Peasants
 Rampant Growth
 Rancor
 Ranger's Guile
 Ratchet Bomb
+Ravenous Leucrocota
 Ravenous Rats
 Ray of Dissolution
+Ray of Revelation
 Razorfield Rhino
 Razorfield Thresher
 Razor Swine
@@ -1161,20 +1264,25 @@ Razortip Whip
 Razorverge Thicket
 Reaper from the Abyss
 Reaper of the Wilds
+Reap the Seagraf
 Rebuke
 Reckless Brute
 Reckless Reveler
 Reclaim
+Red Sun's Zenith
 Reforge the Soul
 Regathan Firecat
 Reliquary Tower
 Render Silent
 Renegade Demon
 Renounce the Guilds
+Renowned Weaver
+Reprisal
 Requiem Angel
 Rest in Peace
 Restoration Angel
 Returned Centaur
+Revel of the Fallen God
 Reverberate
 Revive
 Revoke Existence
@@ -1191,6 +1299,7 @@ Riot Devils
 Riot Gear
 Riot Piker
 Riot Ringleader
+Riptide Chimera
 Rise from the Grave
 Risen Sanctuary
 Rise of the Dark Realms
@@ -1200,10 +1309,12 @@ Roaring Primadox
 Roc Egg
 Rod of Ruin
 Rogue's Passage
+Rolling Temblor
 Rootborn Defenses
 Rootbound Crag
 Rootwalla
 Rotcrown Ghoul
+Rotted Hulk
 Rotted Hystrix
 Rotting Fensnake
 Royal Assassin
@@ -1225,16 +1336,20 @@ Saberclaw Golem
 Sacred Foundry
 Sacred Wolf
 Safe Passage
+Sage's Row Denizen
 Salvage Scout
 Sanctuary Cat
 Sands of Delirium
 Sangromancer
 Sanguimancy
 Sanguine Bond
+Satyr Grovedancer
+Satyr Hoplite
 Satyr Nyx-Smith
 Satyr Rambler
 Savageborn Hydra
 Savage Surge
+Saving Grasp
 Scab-Clan Charger
 Scalding Devil
 Scatter Arc
@@ -1248,6 +1363,7 @@ Scourge of Geier Reach
 Scourge of Valkas
 Scourge Servant
 Scouring Sands
+Scrambleverse
 Scrapskin Drake
 Screeching Silcaw
 Screeching Skaab
@@ -1288,6 +1404,9 @@ Setessan Battle Priest
 Setessan Griffin
 Setessan Oathsworn
 Setessan Starbreaker
+Sever the Bloodline
+Sewer Shambler
+Shadow Alley Denizen
 Shadowborn Apostle
 Shadowborn Demon
 Shadow Slice
@@ -1311,10 +1430,13 @@ Shrivel
 Sickleslicer
 Siege Mastodon
 Sightless Ghoul
+Sigiled Skink
+Sigiled Starfish
 Signal Pest
 Sign in Blood
 Silence
 Silent Artisan
+Silent Departure
 Silent Sentinel
 Silverblade Paladin
 Silverchase Fox
@@ -1324,10 +1446,12 @@ Silver-Inlaid Dagger
 Silver Myr
 Silverskin Armor
 Simic Cluestone
+Simic Fluxmage
 Simic Guildgate
 Simic Keyrune
 Sip of Hemlock
 Siren of the Fanged Coast
+Siren of the Silent Song
 Siren Song Lyre
 Skarrg Goliath
 Skarrg Guildmage
@@ -1348,6 +1472,7 @@ Skyknight Legionnaire
 Skylasher
 Skyline Predator
 Skyreaping
+Skyspear Cavalry
 Skywinder Drake
 Slaughter Cry
 Slaughterhorn
@@ -1356,7 +1481,9 @@ Slayers' Stronghold
 Sleep
 Slice in Twain
 Slime Molding
+Slitherhead
 Sliver Construct
+Sluiceway Scorpion
 Smallpox
 Smelt
 Smite
@@ -1382,6 +1509,7 @@ Spark Jolt
 Spark Trooper
 Spawn of Rix Maadi
 Spearpoint Oread
+Species Gorger
 Spectral Flight
 Spectral Gateguards
 Spectral Rider
@@ -1389,6 +1517,7 @@ Spellskite
 Sphere of the Suns
 Sphinx's Disciple
 Sphinx's Revelation
+Spider Spawning
 Spidery Grasp
 Spiked Baloth
 Spike Jester
@@ -1451,6 +1580,7 @@ Sunspear Shikari
 Sunspire Griffin
 Suntail Hawk
 Sun Titan
+Supply-Line Cranes
 Supreme Verdict
 Suture Priest
 Swamp
@@ -1470,6 +1600,7 @@ Tainted Strike
 Tajic, Blade of the Legion
 Talons of Falkenrath
 Talrand's Invocation
+Talrand, Sky Summoner
 Tamiyo, the Moon Sage
 Tandem Lookout
 Tangle Hulk
@@ -1483,6 +1614,8 @@ Temple Garden
 Temple of Abandon
 Temple of Deceit
 Temple of Enlightenment
+Temple of Epiphany
+Temple of Malady
 Temple of Malice
 Temple of Mystery
 Temple of Plenty
@@ -1491,11 +1624,15 @@ Temple of Triumph
 Temporal Mastery
 Tenement Crasher
 Terminus
+Terrus Wurm
+Tethmos High Priest
 Teysa, Envoy of Ghosts
 Thassa, God of the Sea
 Thassa's Bounty
+Thassa's Devourer
 Thassa's Emissary
 Thatcher Revolt
+Think Twice
 Thorncaster Sliver
 Thoughtflare
 Thought Scour
@@ -1505,6 +1642,7 @@ Thraben Purebloods
 Thraben Valiant
 Thragtusk
 Thran Golem
+Thrashing Mossdog
 Thrill-Kill Assassin
 Throne of Empires
 Thrun, the Last Troll
@@ -1531,6 +1669,7 @@ Torch Fiend
 Tormented Soul
 Tormentor's Trident
 Totally Lost
+Tower Defense
 Tower Drake
 Towering Indrik
 Towering Thunderfist
@@ -1556,7 +1695,9 @@ Trigon of Infestation
 Trigon of Mending
 Trigon of Rage
 Trigon of Thought
+Triton Cavalry
 Triton Fortune Hunter
+Triton Shorestalker
 Triton Shorethief
 Triumph of Cruelty
 Triumph of Ferocity
@@ -1576,6 +1717,7 @@ Typhoid Rats
 Ultimate Price
 Ulvenwald Bear
 Unbreathing Horde
+Unburial Rites
 Uncanny Speed
 Undead Executioner
 Undead Minotaur
@@ -1670,6 +1812,7 @@ Warmind Infantry
 Warpath Ghoul
 War Priest of Thune
 Warstorm Surge
+War-Wing Siren
 Wasteland Viper
 Watercourser
 Water Servant
@@ -1678,9 +1821,14 @@ Wayfaring Temple
 Weight of the Underworld
 Welkin Tern
 Whelming Wave
+Whipflare
+Whip of Erebos
 Whitesun's Passage
+Whitewater Naiads
+Wight of Precinct Six
 Wild Celebrants
 Wild Defiance
+Wild Hunger
 Wildwood Geist
 Wildwood Rebirth
 Wind Drake
@@ -1708,11 +1856,13 @@ Wring Flesh
 Wurmcoil Engine
 Wurm's Tooth
 Xathrid Necromancer
+Xenagos, God of Revels
 Yeva's Forcemage
 Yew Spirit
 Yoked Ox
 Young Pyromancer
 Young Wolf
+Zanikev Locust
 Zarichi Tiger
 Zealous Conscripts
 Zealous Strike

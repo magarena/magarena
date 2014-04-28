@@ -6,7 +6,6 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
-given_ability=SN doesn't untap during your untap step.;\
-        can't activate abilities
+ability=Enchanted permanent doesn't untap during its controller's untap step and its activated abilities can't be activated.
 enchant=can't attack or block,neg artifact or creature
 timing=enchantment

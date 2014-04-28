@@ -45,7 +45,7 @@ public enum MagicAbility {
     CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
     Deathtouch("deathtouch(\\.)?",60),
     Defender("defender(\\.)?",-100),
-    DoesNotUntap("(SN )?doesn't untap during (your|its controller's) untap step\\.",-30),
+    DoesNotUntap("(SN )?doesn't untap during (your|its controller's) untap step(\\.)?",-30),
     DoubleStrike("double strike(\\.)?",100),
     Fear("fear(\\.)?",50),
     Flash("flash(\\.)?",0),
@@ -95,7 +95,7 @@ public enum MagicAbility {
     Infect("infect(\\.)?",35),
     Horsemanship("horsemanship(\\.)?",60),
     Soulbond("soulbond",30),
-    CantActivateAbilities("(can't activate abilities|its activated abilities can't be activated.)",-20),
+    CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
 
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
@@ -704,12 +704,11 @@ public enum MagicAbility {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             card.add(MagicStatic.genPTStatic(power, toughness));
-            final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
-            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
-            for (String abilityString : abilityArray) {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityString);
-                card.add(MagicStatic.genABStatic(abilityList));
-            }
+            card.add(MagicStatic.genABStatic(
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
         }
     },
     AttachedPump("(Equipped|Enchanted) creature gets " + ARG.PT + "(\\.)?", 0) {
@@ -720,14 +719,13 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    AttachedCreatureGain("(Equipped|Enchanted) creature (has )?" + ARG.ANY + "(\\.)?", 0) {
+    AttachedCreatureGain("(Equipped|Enchanted) " + ARG.WORD1 + " " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
-            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
-            for (String abilityString : abilityArray) {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityString);
-                card.add(MagicStatic.genABStatic(abilityList));
-            }
+            card.add(MagicStatic.genABStatic(
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
         }
     },
     PairedPump("As long as SN is paired with another creature, each of those creatures gets " + ARG.PT + "(\\.)?", 0) {
@@ -740,12 +738,11 @@ public enum MagicAbility {
     },
     PairedGain("As long as SN is paired with another creature, (both creatures have|each of those creatures has) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final String abilitiesLong = ARG.any(arg).replace("has ","").replace(", and ",",").replace(" and ",",");
-            final String[] abilityArray = abilitiesLong.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
-            for (String abilityString : abilityArray) {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(abilityString);
-                card.add(MagicStatic.genABStatic(abilityList));
-            }
+            card.add(MagicStatic.genABStatic(
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
         }
     },
     Equip("Equip " + ARG.COST, 0) {
@@ -1046,13 +1043,19 @@ public enum MagicAbility {
         return abilityList;
     }
 
-    private static final Pattern SUB_ABILITY_LIST = Pattern.compile("\"([^\"]+)\"|([A-Za-z][^,]+)");
+    private static final Pattern SUB_ABILITY_LIST = Pattern.compile(
+        "(?:has )?\"([^\"]+)\"(?:, and | and )?|" + 
+        "(?:has )?([A-Za-z][^,]+)(?:, and | and )|" + 
+        "(?:has )?([A-Za-z][^,]+)"
+    );
     
     public static MagicAbilityList getAbilityList(final String names) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         final Matcher m = SUB_ABILITY_LIST.matcher(names);
         while (m.find()) {
-            final String name = m.group(1) != null ? m.group(1) : m.group(2);
+            final String name = m.group(1) != null ? m.group(1) : 
+                                m.group(2) != null ? m.group(2) :
+                                m.group(3);
             getAbility(name).addAbility(abilityList, name);
         }
         return abilityList;
