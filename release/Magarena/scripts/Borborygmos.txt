@@ -1,0 +1,12 @@
+name=Borborygmos
+url=http://www.magiccards.info/query?q=%21borborygmos
+image=http://mtgimage.com/card/borborygmos.jpg
+value=4.022
+rarity=R
+type=Legendary,Creature
+subtype=Cyclops
+cost={3}{R}{R}{G}{G}
+pt=6/7
+ability=Trample;\
+        Whenever SN deals combat damage to a player, put a +1/+1 counter on each creature you control.
+timing=main
