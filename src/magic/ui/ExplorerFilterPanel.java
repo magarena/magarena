@@ -2,6 +2,8 @@ package magic.ui;
 
 import magic.data.CardDefinitions;
 import magic.data.CubeDefinitions;
+import magic.data.MagicSetDefinitions;
+import magic.data.MagicSetDefinitions.MagicSets;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;
@@ -52,6 +54,10 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final MigLayout layout = new MigLayout();
     private final ExplorerPanel explorerPanel;
 
+    private ButtonControlledPopup setsPopup;
+    private JCheckBox[] setsCheckBoxes;
+    private JRadioButton[] setsFilterChoices;
+
     private ButtonControlledPopup cubePopup;
     private JCheckBox[] cubeCheckBoxes;
     private JRadioButton[] cubeFilterChoices;
@@ -87,12 +93,12 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         setLayout(layout);
 
         addCubeFilter();
+        addSetsFilter();
         addCardTypeFilter();
         addCardSubtypeFilter();
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
-        addDummyFilterButton();
         addResetButton();
         addSearchTextFilter();
 
@@ -103,6 +109,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         btn.setVisible(false);
         btn.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         add(btn);
+    }
+
+    private void addSetsFilter() {
+        setsPopup = addFilterPopupPanel("Sets");
+        setsCheckBoxes = new JCheckBox[MagicSetDefinitions.MagicSets.values().length];
+        setsFilterChoices = new JRadioButton[FILTER_CHOICES.length];
+        final String[] filterValues = MagicSetDefinitions.getFilterValues();
+        populateCheckboxPopup(setsPopup, filterValues, setsCheckBoxes, setsFilterChoices, false);
     }
 
     private void addCubeFilter() {
@@ -226,6 +240,17 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             return false;
         }
 
+        // sets
+        if (!filterCheckboxes(cardDefinition, setsCheckBoxes, setsFilterChoices,
+            new CardChecker() {
+                public boolean checkCard(final MagicCardDefinition card, final int i) {
+                    final MagicSets magicSet  = MagicSetDefinitions.MagicSets.values()[i];
+                    return  MagicSetDefinitions.isCardInSet(card, magicSet);
+                }
+            })) {
+            return false;
+        }
+
         // type
         if (!filterCheckboxes(cardDefinition, typeCheckBoxes, typeFilterChoices,
             new CardChecker() {
@@ -313,7 +338,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     public List<MagicCardDefinition> getCardDefinitions() {
 
-        final List<MagicCardDefinition> cardDefinitions=new ArrayList<MagicCardDefinition>();
+        final List<MagicCardDefinition> cardDefinitions = new ArrayList<MagicCardDefinition>();
+
         for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
 
             if (filter(cardDefinition)) {
@@ -329,6 +355,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         closePopups();
 
         unselectFilterSet(cubeCheckBoxes, cubeFilterChoices);
+        unselectFilterSet(setsCheckBoxes, setsFilterChoices);
         unselectFilterSet(typeCheckBoxes, typeFilterChoices);
         unselectFilterSet(colorCheckBoxes, colorFilterChoices);
         unselectFilterSet(costCheckBoxes, costFilterChoices);
@@ -352,6 +379,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     public void closePopups() {
         cubePopup.hidePopup();
+        setsPopup.hidePopup();
         typePopup.hidePopup();
         colorPopup.hidePopup();
         costPopup.hidePopup();
