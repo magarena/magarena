@@ -858,6 +858,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.You);
 
+    public static final MagicPermanentFilterImpl NONATTACKING_NONBLOCKING_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.isAttacking() &&
+                   !target.isBlocking();
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1301,6 +1309,7 @@ public class MagicTargetFilterFactory {
         multiple.put("creatures", CREATURE);
         multiple.put("nonblack creatures", NONBLACK_CREATURE);
         multiple.put("nonwhite creatures", NONWHITE_CREATURE);
+        multiple.put("nonartifact creatures", NONARTIFACT_CREATURE);
         multiple.put("nonenchantment creatures", NONENCHANTMENT_CREATURE);
         multiple.put("creatures without flying", CREATURE_WITHOUT_FLYING);
         multiple.put("creatures with flying", CREATURE_WITH_FLYING);
@@ -1479,6 +1488,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
+        single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);

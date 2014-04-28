@@ -1,0 +1,9 @@
+name=Stench of Decay
+url=http://www.magiccards.info/query?q=%21stench%20of%20decay
+image=http://mtgimage.com/card/stench%20of%20decay.jpg
+value=2.484
+rarity=C
+type=Instant
+cost={1}{B}{B}
+effect=Nonartifact creatures get -1/-1 until end of turn.
+timing=removal
