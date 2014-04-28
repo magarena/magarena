@@ -1,5 +1,7 @@
 package magic.model.target;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -846,6 +848,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl CREATURE_MINSUONE_COUNTER = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && target.hasCounters(MagicCounterType.MinusOne);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && target.hasCounters();
@@ -1481,6 +1489,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with toughness 3 or less", CREATURE_TOUGHNESS_3_OR_LESS);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
+        single.put("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
         single.put("creature with a counter on it", CREATURE_WITH_COUNTER);
         single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
