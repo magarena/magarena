@@ -30,10 +30,24 @@ public class MagicMayChoice extends MagicChoice {
     private final int manaChoiceResultIndex;
     private final int targetChoiceResultIndex;
 
-    public MagicMayChoice(final String description,final MagicChoice... choices) {
+    public MagicMayChoice(final String description,final MagicChoice... aChoices) {
         super(description);
-        this.choices = (choices.length > 0 && choices[0] != MagicChoice.NONE) ?
-            choices : new MagicChoice[0];
+
+        int validChoices = 0;
+        for (final MagicChoice choice : aChoices) {
+            if (choice.isValid()) {
+                validChoices++;
+            }
+        }
+
+        choices = new MagicChoice[validChoices];
+        int idx = 0;
+        for (final MagicChoice choice : aChoices) {
+            if (choice.isValid()) {
+                choices[idx] = choice;
+                idx++;
+            }
+        }
 
         MagicTargetChoice localTargetChoice = MagicTargetChoice.NONE;
         int localManaChoiceResultIndex = -1;
