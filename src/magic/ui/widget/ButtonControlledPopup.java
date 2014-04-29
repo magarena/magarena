@@ -18,8 +18,8 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
 
     private static final long serialVersionUID = 54232L;
 
-    public static final int STARTING_WIDTH = 200;
-    public static final int STARTING_HEIGHT = 200;
+    public static final int STARTING_WIDTH = 260;
+    public static final int STARTING_HEIGHT = 300;
 
     private final JDialog dialog;
     private final JButton invokePopupButton;
