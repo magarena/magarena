@@ -1,5 +1,7 @@
 package magic.model.target;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -280,8 +282,6 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl ARTIFACT_YOUR_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanent(MagicType.Artifact, Control.Opp);
 
     public static final MagicPermanentFilterImpl ARTIFACT_CREATURE = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Creature, Control.Any);
-
-    public static final MagicPermanentFilterImpl ARTIFACT_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Creature, Control.You);
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE = MagicTargetFilterFactory.permanentOr(MagicType.Artifact, MagicType.Creature, Control.Any);
     
@@ -627,8 +627,6 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl BARBARIAN_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Barbarian, Control.Any);
 
-    public static final MagicPermanentFilterImpl ALLY_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Ally, Control.You);
-    
     public static final MagicPermanentFilterImpl ALLY_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Ally, Control.You);
 
     public static final MagicPermanentFilterImpl FAERIE_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Faerie, Control.You);
@@ -640,8 +638,6 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl MODULAR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Modular, Control.You);
     
     public static final MagicPermanentFilterImpl LEVELUP_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.LevelUp, Control.You);
-
-    public static final MagicPermanentFilterImpl PLANT_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Plant, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.Any);
     
@@ -846,6 +842,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl CREATURE_MINSUONE_COUNTER = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && target.hasCounters(MagicCounterType.MinusOne);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() && target.hasCounters();
@@ -858,6 +860,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.You);
 
+    public static final MagicPermanentFilterImpl NONATTACKING_NONBLOCKING_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.isAttacking() &&
+                   !target.isBlocking();
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1301,6 +1311,7 @@ public class MagicTargetFilterFactory {
         multiple.put("creatures", CREATURE);
         multiple.put("nonblack creatures", NONBLACK_CREATURE);
         multiple.put("nonwhite creatures", NONWHITE_CREATURE);
+        multiple.put("nonartifact creatures", NONARTIFACT_CREATURE);
         multiple.put("nonenchantment creatures", NONENCHANTMENT_CREATURE);
         multiple.put("creatures without flying", CREATURE_WITHOUT_FLYING);
         multiple.put("creatures with flying", CREATURE_WITH_FLYING);
@@ -1472,6 +1483,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with toughness 3 or less", CREATURE_TOUGHNESS_3_OR_LESS);
         single.put("creature with shadow", CREATURE_WITH_SHADOW);
         single.put("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
+        single.put("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
         single.put("creature with a counter on it", CREATURE_WITH_COUNTER);
         single.put("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
         single.put("attacking creature with flying", ATTACKING_CREATURE_WITH_FLYING);
@@ -1479,6 +1491,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken creature", NONTOKEN_CREATURE);
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
+        single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);

@@ -1,0 +1,11 @@
+name=Foul Presence
+url=http://www.magiccards.info/query?q=%21foul%20presence
+image=http://mtgimage.com/card/foul%20presence.jpg
+value=3.02
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchanted creature gets -1/-1 and has "{T}: Target creature gets -1/-1 until end of turn."
+timing=aura
+enchant=default,creature

@@ -1,0 +1,11 @@
+name=Goblin Medics
+url=http://www.magiccards.info/query?q=%21goblin%20medics
+image=http://mtgimage.com/card/goblin%20medics.jpg
+value=3.611
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{R}
+pt=1/1
+ability=Whenever SN becomes tapped, SN deals 1 damage to target creature or player.
+timing=main
