@@ -33,7 +33,6 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -172,9 +171,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     }
 
     private void populateCheckboxPopup(final ButtonControlledPopup popup, final Object[] checkboxValues, final JCheckBox[] newCheckboxes, final JRadioButton[] newFilterButtons, final boolean hideAND) {
-        final JPanel checkboxesPanel = new JPanel(new GridLayout(newCheckboxes.length, 1));
+
+        final JPanel checkboxesPanel = new JPanel(new MigLayout("flowy, insets 2"));
         checkboxesPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
         checkboxesPanel.setOpaque(false);
+
         for (int i=0;i<checkboxValues.length;i++) {
             newCheckboxes[i]=new JCheckBox(checkboxValues[i].toString().replace('_', ' '));
             newCheckboxes[i].addActionListener(this);
