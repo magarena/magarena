@@ -3,6 +3,7 @@ package magic.ui.screen;
 import magic.data.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.IconImages;
+import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
 import magic.ui.ExplorerPanel;
 import magic.ui.MagicFrame;
@@ -269,6 +270,7 @@ public class DeckEditorScreen
         if (screenContent.isDeckEditor() && !screenContent.isStandaloneDeckEditor() && nextScreen instanceof DuelDecksScreen) {
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }
+        MagicSetDefinitions.clearLoadedSets();
         return true;
     }
 
