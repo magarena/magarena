@@ -283,8 +283,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ARTIFACT_CREATURE = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Creature, Control.Any);
 
-    public static final MagicPermanentFilterImpl ARTIFACT_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Creature, Control.You);
-
     public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE = MagicTargetFilterFactory.permanentOr(MagicType.Artifact, MagicType.Creature, Control.Any);
     
     public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicType.Artifact, MagicType.Creature, Control.You);
@@ -629,8 +627,6 @@ public class MagicTargetFilterFactory {
     
     public static final MagicPermanentFilterImpl BARBARIAN_CREATURE = MagicTargetFilterFactory.creature(MagicSubType.Barbarian, Control.Any);
 
-    public static final MagicPermanentFilterImpl ALLY_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Ally, Control.You);
-    
     public static final MagicPermanentFilterImpl ALLY_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Ally, Control.You);
 
     public static final MagicPermanentFilterImpl FAERIE_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Faerie, Control.You);
@@ -642,8 +638,6 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl MODULAR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Modular, Control.You);
     
     public static final MagicPermanentFilterImpl LEVELUP_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.LevelUp, Control.You);
-
-    public static final MagicPermanentFilterImpl PLANT_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Plant, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE = MagicTargetFilterFactory.permanent(MagicType.Creature, Control.Any);
     
