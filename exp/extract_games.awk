@@ -2,8 +2,8 @@ BEGIN {
     FS = "\t"
 }
 
-function genName(name) {
-    if (name ~ /minimax (cheat)/) {
+function genName() {
+           if ($0 ~ /minimax (cheat)/) {
         return "MMAB-C"
     } else if ($0 ~ /vegas (cheat)/) {
         return "VEGAS-C"
