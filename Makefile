@@ -105,10 +105,13 @@ cards/existing_scripts_%.txt: $(wildcard release/Magarena/scripts/*.txt)
 cards/existing_tokens_%.txt: $(wildcard release/Magarena/scripts/*.txt)
 	hg cat -r $* release/Magarena/scripts | awk -f scripts/extract_token_name.awk | sort > $@
 
+cards/existing_code.txt: cards/groovy.txt
+	cp cards/groovy.txt $@
+
 cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 	join -v1 -t"|" <(sort $(word 1,$^)) <(sort $(word 2,$^)) > $@
 
-cards/groovy.txt:
+cards/groovy.txt: $(wildcard release/Magarena/scripts/*.txt)
 	grep -ho "name=.*" `grep requires_groovy_code -lr release/Magarena/scripts` | sed 's/name=//' | sort > $@
 
 %_full.txt: scripts/extract_candidates.awk %.txt cards/groovy.txt cards/mtg-data.txt
