@@ -212,7 +212,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     
     public boolean hasExcludeManaOrCombat() {
         return cardDefinition.hasExcludeManaOrCombat() || 
-               (isCreature() && producesMana());
+               (producesMana() && 
+                    (isCreature() || isEnchanted() || isEquipped())
+               );
     }
 
     public MagicCard getCard() {
