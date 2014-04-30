@@ -24,7 +24,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().getHandSize() == 0) {
+            if (MagicCondition.HELLBENT.accept(event.getSource())) {
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             }
         }
