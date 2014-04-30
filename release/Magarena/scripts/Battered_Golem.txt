@@ -7,6 +7,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={3}
 pt=3/2
-ability=SN doesn't untap during your untap step.
+ability=SN doesn't untap during your untap step.;\
+        Whenever an artifact enters the battlefield, you may untap SN.
 timing=main
-requires_groovy_code
