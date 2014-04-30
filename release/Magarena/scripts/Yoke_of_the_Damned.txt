@@ -1,0 +1,11 @@
+name=Yoke of the Damned
+url=http://www.magiccards.info/query?q=%21yoke%20of%20the%20damned
+image=http://mtgimage.com/card/yoke%20of%20the%20damned.jpg
+value=3.05
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+timing=aura
+enchant=destroy,neg creature
+requires_groovy_code

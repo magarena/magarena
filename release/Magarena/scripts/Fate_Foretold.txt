@@ -1,0 +1,12 @@
+name=Fate Foretold
+url=http://www.magiccards.info/query?q=%21fate%20foretold
+image=http://mtgimage.com/card/fate%20foretold.jpg
+value=3.64
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=When SN enters the battlefield, draw a card.
+timing=aura
+enchant=default,pos creature
+requires_groovy_code

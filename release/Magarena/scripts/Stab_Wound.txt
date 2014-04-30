@@ -1,0 +1,12 @@
+name=Stab Wound
+url=http://www.magiccards.info/query?q=%21stab%20wound
+image=http://mtgimage.com/card/stab%20wound.jpg
+value=3.696
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchanted creature gets -2/-2.
+timing=aura
+enchant=weaken -2/-2,neg creature
+requires_groovy_code

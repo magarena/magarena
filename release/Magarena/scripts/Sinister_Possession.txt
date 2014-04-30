@@ -1,0 +1,11 @@
+name=Sinister Possession
+url=http://www.magiccards.info/query?q=%21sinister%20possession
+image=http://mtgimage.com/card/sinister%20possession.jpg
+value=2.629
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+timing=aura
+enchant=can't attack or block,neg creature
+requires_groovy_code
