@@ -1172,24 +1172,28 @@ public class MagicTargetFilterFactory {
             return targetType == MagicTargetType.Hand;
         }
     };
-
-    public static final MagicCardFilterImpl REBEL_CMC_3_OR_LESS_FROM_LIBRARY = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.hasSubType(MagicSubType.Rebel) && target.getConvertedCost() <= 3;
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
-        }
-    };
-
-    public static final MagicCardFilterImpl MERCENARY_CMC_2_OR_LESS_FROM_LIBRARY = new MagicCardFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-            return target.hasSubType(MagicSubType.Mercenary) && target.getConvertedCost() <= 2;
-        }
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
-        }
-    };
+    
+    public static final MagicCardFilterImpl REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(final int cmc) {
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return target.hasSubType(MagicSubType.Rebel) && target.getConvertedCost() <= cmc;
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return targetType==MagicTargetType.Library;
+            }
+        };
+    }
+    
+    public static final MagicCardFilterImpl MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(final int cmc) {
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return target.hasSubType(MagicSubType.Mercenary) && target.getConvertedCost() <= cmc;
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return targetType==MagicTargetType.Library;
+            }
+        };
+    }
 
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_HAND = MagicTargetFilterFactory.cardAnd(MagicTargetType.Hand, MagicType.Land, MagicType.Basic);
     
@@ -1388,8 +1392,18 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
-        single.put("Rebel permanent card with converted mana cost 3 or less from your library", REBEL_CMC_3_OR_LESS_FROM_LIBRARY);
-        single.put("Mercenary permanent card with converted mana cost 2 or less from your library", MERCENARY_CMC_2_OR_LESS_FROM_LIBRARY);
+        single.put("Rebel permanent card with converted mana cost 1 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(1));
+        single.put("Rebel permanent card with converted mana cost 2 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(2));
+        single.put("Rebel permanent card with converted mana cost 3 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(3));
+        single.put("Rebel permanent card with converted mana cost 4 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(4));
+        single.put("Rebel permanent card with converted mana cost 5 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(5));
+        single.put("Rebel permanent card with converted mana cost 6 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(6));
+        single.put("Mercenary permanent card with converted mana cost 1 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(1));
+        single.put("Mercenary permanent card with converted mana cost 2 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(2));
+        single.put("Mercenary permanent card with converted mana cost 3 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(3));
+        single.put("Mercenary permanent card with converted mana cost 4 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(4));
+        single.put("Mercenary permanent card with converted mana cost 5 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(5));
+        single.put("Mercenary permanent card with converted mana cost 6 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(6));
         
         // <color|type|subtype> creature card from your graveyard
         single.put("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
