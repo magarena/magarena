@@ -1173,6 +1173,15 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl REBEL_CMC_3_OR_LESS_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.hasSubType(MagicSubType.Rebel) && target.getConvertedCost() <= 3;
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Library;
+        }
+    };
+
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_HAND = MagicTargetFilterFactory.cardAnd(MagicTargetType.Hand, MagicType.Land, MagicType.Basic);
     
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_LIBRARY = MagicTargetFilterFactory.cardAnd(MagicTargetType.Library, MagicType.Land, MagicType.Basic);
@@ -1370,6 +1379,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
+        single.put("Rebel permanent card with converted mana cost 3 or less from your library", REBEL_CMC_3_OR_LESS_FROM_LIBRARY);
         
         // <color|type|subtype> creature card from your graveyard
         single.put("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
