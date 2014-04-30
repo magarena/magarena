@@ -275,7 +275,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DamageOwner(
+    DamageController(
         "sn deal(s)? (?<amount>[0-9]+) damage to you\\.",
         MagicTiming.Removal,
         "Damage"

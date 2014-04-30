@@ -7,6 +7,6 @@ type=Creature
 subtype=Efreet
 cost={2}{U}
 pt=3/4
-ability=flying
+ability=Flying;\
+        At the beginning of your upkeep, SN deals 1 damage to you.
 timing=main
-requires_groovy_code

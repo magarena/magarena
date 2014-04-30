@@ -7,5 +7,5 @@ type=Creature
 subtype=Djinn
 cost={2}{B}{B}
 pt=5/5
+ability=At the beginning of your upkeep, SN deals 1 damage to you.
 timing=main
-requires_groovy_code=Serendib Efreet
