@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={G}
 pt=1/1
-ability={W},{T}: Target creature gains first strike until end of turn.
+ability={R}, {T}: SN deals 1 damage to target creature or player and 1 damage to you.;\
+        {W},{T}: Target creature gains first strike until end of turn.
 timing=main
-requires_groovy_code

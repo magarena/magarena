@@ -7,5 +7,5 @@ type=Creature
 subtype=Devil
 cost={R}
 pt=1/1
+ability=When SN enters the battlefield, SN deals 1 damage to target creature and 1 damage to you.
 timing=main
-requires_groovy_code

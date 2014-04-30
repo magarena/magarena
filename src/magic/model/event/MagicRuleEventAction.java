@@ -277,7 +277,6 @@ public enum MagicRuleEventAction {
     },
     DamageOwner(
         "sn deal(s)? (?<amount>[0-9]+) damage to you\\.",
-        MagicTargetHint.Negative, 
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -292,10 +291,40 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DamageChosenAndController(
+        "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*) and (?<amount2>[0-9]+) damage to you\\.",
+        MagicTargetHint.Negative, 
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.processTarget(game,new MagicTargetAction() {
+                        public void doAction(final MagicTarget target) {
+                            game.doAction(new MagicDealDamageAction(
+                                new MagicDamage(event.getSource(),target,amount)
+                            ));
+                            game.doAction(new MagicDealDamageAction(
+                                new MagicDamage(event.getSource(),event.getPlayer(),amount2)
+                            ));
+                        }
+                    });
+                }
+            };
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            return new MagicDamageTargetPicker(amount);
+        }
+    },
     DamageChosen(
         "sn deal(s)? (?<amount>[0-9]+) damage to (?<choice>[^\\.]*)\\.",
         MagicTargetHint.Negative, 
-        new MagicDamageTargetPicker(1), 
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -312,6 +341,10 @@ public enum MagicRuleEventAction {
                     });
                 }
             };
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return DamageChosenAndController.getPicker(matcher);
         }
     },
     PreventSelf(
