@@ -65,6 +65,10 @@ Thank you for your support and have fun!
 Release 1.50 (May 31, 2014)
 ============
 
+- added the following to the card script:
+  * activation restriction: {Hellbent} - activate only when you have no cards in hand
+  * effect: SN deals <amount> damage to <chosen> and <amount> damage to you.
+
 Release 1.49 (April 27, 2014)
 ============
 frank
