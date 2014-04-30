@@ -1,0 +1,11 @@
+name=Citanul Druid
+url=http://www.magiccards.info/query?q=%21citanul%20druid
+image=http://mtgimage.com/card/citanul%20druid.jpg
+value=3.389
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=1/1
+ability=Whenever an opponent casts an artifact spell, put a +1/+1 counter on SN.
+timing=main
