@@ -7,5 +7,5 @@ type=Creature
 subtype=Fungus,Snake
 cost={G}
 pt=1/1
+ability=Whenever an opponent casts a blue or black spell, you may put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code

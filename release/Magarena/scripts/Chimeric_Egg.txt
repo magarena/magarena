@@ -5,5 +5,6 @@ value=3.167
 rarity=U
 type=Artifact
 cost={3}
+ability=Whenever an opponent casts a nonartifact spell, put a charge counter on SN.
 timing=artifact
 requires_groovy_code

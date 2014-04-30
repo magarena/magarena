@@ -90,6 +90,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl RED_OR_GREEN_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Red, MagicColor.Green);
     
+    public static final MagicStackFilterImpl BLUE_OR_BLACK_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Blue, MagicColor.Black);
+    
     public static final MagicStackFilterImpl NONBLUE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
@@ -129,6 +131,13 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() &&
                    !itemOnStack.isSpell(MagicType.Creature);
+        }
+    };
+    
+    public static final MagicStackFilterImpl NONARTIFACT_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() &&
+                   !itemOnStack.isSpell(MagicType.Artifact);
         }
     };
     
@@ -1591,8 +1600,10 @@ public class MagicTargetFilterFactory {
         single.put("spell that targets a player", SPELL_THAT_TARGETS_PLAYER);
         single.put("spell with {X} in its mana cost", SPELL_WITH_X_COST);
         single.put("noncreature spell", NONCREATURE_SPELL);
+        single.put("nonartifact spell", NONARTIFACT_SPELL);
         single.put("artifact or enchantment spell", ARTIFACT_OR_ENCHANTMENT_SPELL);
         single.put("red or green spell", RED_OR_GREEN_SPELL);
+        single.put("blue or black spell", BLUE_OR_BLACK_SPELL);
         single.put("blue, black, or red spell", BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("white, blue, black, or red spell", WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("nonblue spell", NONBLUE_SPELL);

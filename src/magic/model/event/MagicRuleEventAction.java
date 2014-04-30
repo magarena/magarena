@@ -402,7 +402,7 @@ public enum MagicRuleEventAction {
         }
     },
     Draw(
-        "(pn )?draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
+        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
@@ -2047,6 +2047,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou gain ","PN gains ")
             .replaceAll("(Y|y)ou lose ","PN loses ")
             .replaceAll("(Y|y)ou control","PN controls")
+            .replaceAll("(Y|y)ou draw","PN draws")
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("(P|p)ut ","PN puts ");

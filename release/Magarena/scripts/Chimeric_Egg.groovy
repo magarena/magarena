@@ -54,21 +54,5 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
         }
-    },
-    new MagicWhenOtherSpellIsCastTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return (cardOnStack.isEnemy(permanent) && !cardOnStack.hasType(MagicType.Artifact)) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN puts a charge counter on SN."
-                ) :
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,1,true));
-        }
     }
 ]
