@@ -840,6 +840,14 @@ public enum MagicAbility {
             ));
         }
     },
+    PlayerCastSpellEffect("Whenever a player casts a(n)? (?<wordrun>[^\\.]*spell), " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherSpellIsCastTrigger.create(
+                MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     YouCastSpellEffect("When(ever)? you cast a(n)? (?<wordrun>[^\\.]*spell), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenOtherSpellIsCastTrigger.createYou(
@@ -848,9 +856,9 @@ public enum MagicAbility {
             ));
         }
     },
-    PlayerCastSpellEffect("Whenever a player casts a(n)? (?<wordrun>[^\\.]*spell), " + ARG.EFFECT, 10) {
+    OpponentCastSpellEffect("Whenever an opponent casts a(n)? (?<wordrun>[^\\.]*spell), " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherSpellIsCastTrigger.create(
+            card.add(MagicWhenOtherSpellIsCastTrigger.createOpponent(
                 MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));

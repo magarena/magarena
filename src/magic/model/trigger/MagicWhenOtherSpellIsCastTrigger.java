@@ -44,4 +44,17 @@ public abstract class MagicWhenOtherSpellIsCastTrigger extends MagicTrigger<Magi
             }
         };
     }
+
+    public static final MagicWhenOtherSpellIsCastTrigger createOpponent(final MagicTargetFilter<MagicItemOnStack> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherSpellIsCastTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
+                return permanent.isEnemy(spell) && filter.accept(permanent.getGame(), permanent.getController(), spell);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
 }
