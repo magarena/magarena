@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Scout
 cost={2}{W}
 pt=2/2
+ability=Whenever SN attacks, tap target creature defending player controls.
 timing=main
-requires_groovy_code

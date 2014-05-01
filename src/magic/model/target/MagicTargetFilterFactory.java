@@ -773,6 +773,12 @@ public class MagicTargetFilterFactory {
                    !target.hasAbility(MagicAbility.Shadow);
         }
     };
+    
+    public static final MagicPermanentFilterImpl CREATURE_DEFENDING_PLAYER_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && target.isController(game.getDefendingPlayer());
+        }
+    };
 
     public static final MagicPermanentFilterImpl CREATURE_CONVERTED_3_OR_LESS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1547,6 +1553,7 @@ public class MagicTargetFilterFactory {
         single.put("Djinn or Efreet", DJINN_OR_EFREET);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
+        single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);

@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Human,Knight
 cost={3}{W}
 pt=2/2
-ability=flanking
+ability=flanking;\
+        Whenever SN attacks, tap target creature defending player controls.
 timing=main
-requires_groovy_code
