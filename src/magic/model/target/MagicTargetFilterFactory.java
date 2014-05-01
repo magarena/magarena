@@ -1096,6 +1096,17 @@ public class MagicTargetFilterFactory {
     
     public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_GRAVEYARD = MagicTargetFilterFactory.card(MagicTargetType.Graveyard, MagicType.Artifact);
 
+    public static final MagicCardFilterImpl NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD=new MagicCardFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            return target.getConvertedCost() <= 1 &&
+                   target.hasType(MagicType.Artifact) &&
+                   !target.hasType(MagicType.Creature);
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType==MagicTargetType.Graveyard;
+        }
+    };
+    
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
             return target.hasType(MagicType.Creature);
@@ -1424,6 +1435,7 @@ public class MagicTargetFilterFactory {
         multiple.put("auras", AURA);
         multiple.put("artifacts, creatures, and enchantments", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
         multiple.put("creatures with converted mana cost 3 or less", CREATURE_CONVERTED_3_OR_LESS);
+        multiple.put("Djinns and Efreets", DJINN_OR_EFREET);
 
 
         // used by MagicTargetChoice
@@ -1433,6 +1445,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment card from your graveyard", cardOr(MagicTargetType.Graveyard, MagicType.Artifact, MagicType.Enchantment));
         single.put("artifact, creature, or enchantment card from your graveyard", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         single.put("creature or enchantment card from your graveyard", CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
+        single.put("noncreature artifact card with converted mana cost 1 or less from your graveyard", NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD);
 
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
