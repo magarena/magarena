@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Human,Warrior
 cost={3}{B}{B}{B}
 pt=7/5
-ability=fear
+ability=fear;\
+        When SN enters the battlefield, sacrifice a creature.
 timing=main
-requires_groovy_code=Accursed Centaur

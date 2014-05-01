@@ -7,6 +7,6 @@ type=Creature
 subtype=Skeleton
 cost={B}
 pt=3/1
-ability={B}: Regenerate SN.
+ability=When SN enters the battlefield, sacrifice a creature.;\
+        {B}: Regenerate SN.
 timing=main
-requires_groovy_code=Accursed_Centaur

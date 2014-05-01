@@ -7,5 +7,5 @@ type=Creature
 subtype=Minion
 cost={2}{B}
 pt=3/3
+ability=When SN leaves the battlefield, sacrifice a creature.
 timing=main
-requires_groovy_code

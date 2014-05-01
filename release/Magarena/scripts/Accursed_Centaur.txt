@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Centaur
 cost={B}
 pt=2/2
+ability=When SN enters the battlefield, sacrifice a creature.
 timing=main
-requires_groovy_code

@@ -7,6 +7,6 @@ type=Creature
 subtype=Worm,Horror
 cost={2}{B}
 pt=5/1
-ability={B}: Regenerate SN.
+ability=When SN enters the battlefield, sacrifice a creature.;\
+        {B}: Regenerate SN.
 timing=main
-requires_groovy_code=Accursed Centaur
