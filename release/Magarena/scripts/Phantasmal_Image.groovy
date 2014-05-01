@@ -31,7 +31,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
                     game.doAction(action);
                     final MagicPermanent perm = action.getPermanent();
                     game.doAction(new MagicAddStaticAction(perm, ST));
-                    game.doAction(new MagicAddTriggerAction(perm, MagicWhenTargetedTrigger.SacWhenTargeted));
+                    game.doAction(new MagicAddTriggerAction(perm, MagicWhenSelfTargetedTrigger.SacWhenTargeted));
                 });
             } else {
                 game.doAction(new MagicPlayCardFromStackAction(
