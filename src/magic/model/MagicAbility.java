@@ -345,7 +345,7 @@ public enum MagicAbility {
     },
     SacWhenTargeted("When SN becomes the target of a spell or ability, sacrifice it\\.",-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenTargetedTrigger.SacWhenTargeted);
+            card.add(MagicWhenSelfTargetedTrigger.SacWhenTargeted);
         }
     },
     TapSacAddMana("\\{T\\}, Sacrifice SN: Add " + ARG.MANA + " to your mana pool\\.",10) {
@@ -905,7 +905,14 @@ public enum MagicAbility {
     },
     WhenTargeted("When(ever)? SN becomes the target of a spell or ability, " + ARG.EFFECT,-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenTargetedTrigger.create(
+            card.add(MagicWhenSelfTargetedTrigger.create(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    WhenTargetedBySpell("When(ever)? SN becomes the target of a spell, " + ARG.EFFECT,-10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenSelfTargetedTrigger.createSpell(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

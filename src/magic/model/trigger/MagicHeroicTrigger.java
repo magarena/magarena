@@ -6,11 +6,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicItemOnStack;
 
-public abstract class MagicHeroicTrigger extends MagicWhenTargetedTrigger {
-
-    public MagicHeroicTrigger(final int priority) {
-        super(priority);
-    }
+public abstract class MagicHeroicTrigger extends MagicWhenSelfTargetedTrigger {
 
     public MagicHeroicTrigger() {}
 
