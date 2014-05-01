@@ -6,11 +6,25 @@ import magic.model.action.MagicSacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicItemOnStack;
+import magic.model.target.MagicTargetFilter;
 
 public abstract class MagicWhenSelfTargetedTrigger extends MagicWhenTargetedTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicItemOnStack item) {
         return item.containsInChoiceResults(permanent);
+    }
+    
+    public static MagicWhenSelfTargetedTrigger create(final MagicTargetFilter<MagicItemOnStack> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenSelfTargetedTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
+                return super.accept(permanent, itemOnStack) && filter.accept(permanent.getGame(), permanent.getController(), itemOnStack);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
     }
     
     public static MagicWhenSelfTargetedTrigger create(final MagicSourceEvent sourceEvent) {
