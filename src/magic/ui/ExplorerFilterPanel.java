@@ -78,6 +78,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private JTextField nameTextField;
     private JButton resetButton;
 
+    private int playableCards = 0;
+    private int missingCards = 0;
+
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
     public ExplorerFilterPanel(final ExplorerPanel explorerPanel) {
@@ -337,14 +340,24 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         public boolean checkCard(MagicCardDefinition card, int i);
     }
 
-    public List<MagicCardDefinition> getCardDefinitions() {
+    public List<MagicCardDefinition> getCardDefinitions(final boolean includeInvalidCards) {
 
         final List<MagicCardDefinition> cardDefinitions = new ArrayList<MagicCardDefinition>();
 
-        for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
+        final List<MagicCardDefinition> cards =
+                includeInvalidCards ? CardDefinitions.getAllCards() : CardDefinitions.getCards();
+
+        missingCards = 0;
+        playableCards = 0;
+        for (final MagicCardDefinition cardDefinition : cards) {
 
             if (filter(cardDefinition)) {
                 cardDefinitions.add(cardDefinition);
+                if (cardDefinition.isMissing()) {
+                    missingCards++;
+                } else {
+                    playableCards++;
+                }
             }
         }
         return cardDefinitions;
@@ -510,6 +523,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         resetButton.addActionListener(this);
         resetButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         add(resetButton);
+    }
+
+    public int getPlayableCardCount() {
+        return playableCards;
+    }
+
+    public int getMissingCardCount() {
+        return missingCards;
     }
 
 }

@@ -29,6 +29,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.text.NumberFormat;
 import java.util.List;
 
 @SuppressWarnings("serial")
@@ -104,7 +105,7 @@ public class ExplorerPanel extends TexturedPanel {
     private Container getMainContentContainer() {
 
         // card pool
-        cardPoolDefs = filterPanel.getCardDefinitions();
+        cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
 
         cardPoolTable = new CardTable(cardPoolDefs, sideBarPanel.getCardViewer(), generatePoolTitle(), false);
 
@@ -158,9 +159,21 @@ public class ExplorerPanel extends TexturedPanel {
         return (int)(splitPaneContentHeight * 0.46);
     }
 
-     private String generatePoolTitle() {
-         return CARD_POOL_TITLE + " - " + cardPoolDefs.size() + " cards";
-     }
+    private String generatePoolTitle() {
+        final StringBuffer sb = new StringBuffer();
+        final int total = cardPoolDefs.size();
+        sb.append("Cards: ").append(NumberFormat.getInstance().format(total));
+        if (!isDeckEditor) {
+            sb.append("      Playable: ").append(getCountCaption(total, filterPanel.getPlayableCardCount()));
+            sb.append("      Missing: ").append(getCountCaption(total, filterPanel.getMissingCardCount()));
+        }
+        return sb.toString();
+    }
+
+    private String getCountCaption(final int total, final int value) {
+        final int percent = (int)Math.round(value / (double)total * 100);
+        return NumberFormat.getInstance().format(value) + " (" + percent + "%)";
+    }
 
     public boolean isDeckEditor() {
         return this.isDeckEditor;
@@ -171,7 +184,7 @@ public class ExplorerPanel extends TexturedPanel {
     }
 
     public void updateCardPool() {
-        cardPoolDefs = filterPanel.getCardDefinitions();
+        cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
     }

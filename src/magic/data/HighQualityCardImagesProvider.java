@@ -37,7 +37,7 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
     }
 
     private static BufferedImage loadCardImage(final String filename) {
-        return FileIO.toImg(new File(filename), IconImages.MISSING_CARD);
+        return FileIO.toImg(new File(filename), IconImages.MISSING_CARD_IMAGE);
     }
 
     @Override
@@ -45,7 +45,10 @@ public class HighQualityCardImagesProvider implements CardImagesProvider {
             final MagicCardDefinition cardDefinition,
             final int index,
             final boolean orig) {
+
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
+            return IconImages.MISSING_CARD_IMAGE;
+        } else if (cardDefinition.isMissing()) {
             return IconImages.MISSING_CARD;
         }
 

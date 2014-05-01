@@ -16,6 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -37,7 +38,9 @@ public class CardDefinitions {
     public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
     public static final String CARD_TEXT_EXT = ".txt";
 
-    private static final List<MagicCardDefinition> cards = new ArrayList<MagicCardDefinition>();
+    private static final Map<String, MagicCardDefinition> allCardsMap = new HashMap<String, MagicCardDefinition>();
+
+    private static final List<MagicCardDefinition> playableCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
@@ -75,7 +78,7 @@ public class CardDefinitions {
     }
 
     private static void filterCards() {
-        for (final MagicCardDefinition card : cards) {
+        for (final MagicCardDefinition card : playableCards) {
             if (!card.isLand() && !card.isToken()) {
                 spellCards.add(card);
             } else if (!card.isBasic() && !card.isToken()) {
@@ -88,8 +91,8 @@ public class CardDefinitions {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
 
-        cardDefinition.setIndex(cards.size());
-        cards.add(cardDefinition);
+        cardDefinition.setIndex(playableCards.size());
+        playableCards.add(cardDefinition);
         cardsMap.put(cardDefinition.getFullName(),cardDefinition);
 
         //add to tokens or all (vintage) cube
@@ -154,10 +157,7 @@ public class CardDefinitions {
         Arrays.sort(files);
 
         //load the card definitions
-        final int totalTxtCards = files.length;
-        final int totalNonTokenCards = getNonTokenCardsCount(files);
-        final int totalTokenCards = totalTxtCards - totalNonTokenCards;
-        MagicMain.setSplashStatusMessage("Loading " + totalNonTokenCards + " cards, " + totalTokenCards + " tokens...");
+        MagicMain.setSplashStatusMessage("Loading " +  getNonTokenCardsCount(files) + " playable cards...");
         for (final File file : files) {
             loadCardDefinition(file);
         }
@@ -166,6 +166,8 @@ public class CardDefinitions {
         printStatistics();
 
         addDefinition(MagicCardDefinition.UNKNOWN);
+
+        setAllCardsMap();
 
         System.err.println(getNumberOfCards()+ " card definitions");
     }
@@ -210,11 +212,11 @@ public class CardDefinitions {
     }
 
     public static int getNumberOfCards() {
-        return cards.size();
+        return playableCards.size();
     }
 
     public static MagicCardDefinition getCard(final int cindex) {
-        return cards.get(cindex);
+        return playableCards.get(cindex);
     }
 
     public static MagicCardDefinition getCard(final String name) {
@@ -276,7 +278,7 @@ public class CardDefinitions {
     }
 
     public static List<MagicCardDefinition> getCards() {
-        return cards;
+        return playableCards;
     }
 
     public static List<MagicCardDefinition> getLandCards() {
@@ -288,7 +290,44 @@ public class CardDefinitions {
     }
 
     private static void printStatistics() {
-        final CardStatistics statistics=new CardStatistics(cards);
+        final CardStatistics statistics=new CardStatistics(playableCards);
         statistics.printStatictics(System.err);
     }
+
+    private static void setAllCardsMap() {
+
+        allCardsMap.clear();
+
+        // first add playable cards
+        for (MagicCardDefinition card : playableCards) {
+            allCardsMap.put(card.getName(), card);
+        }
+
+        // next add missing cards
+        String content = null;
+        try {
+            content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/allCards.txt"));
+        } catch (final IOException ex) {
+            throw new RuntimeException("ERROR! Unable to load " + "allCards.txt");
+        }
+
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String cardName = sc.nextLine().trim();
+                if (!allCardsMap.containsKey(cardName)) {
+                    final MagicCardDefinition card = new MagicCardDefinition();
+                    card.setName(cardName);
+                    card.setFullName(cardName);
+                    card.setIsMissing(true);
+                    allCardsMap.put(cardName, card);
+                }
+            }
+        }
+
+    }
+
+    public static List<MagicCardDefinition> getAllCards() {
+        return new ArrayList<MagicCardDefinition>(allCardsMap.values());
+    }
+
 }
