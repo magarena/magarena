@@ -29,6 +29,19 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
         }
     };
     
+    public static final MagicWhenLeavesPlayTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenLeavesPlayTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+                return filter.accept(permanent.getGame(), permanent.getController(), act.getPermanent());
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
+    
     public static final MagicWhenLeavesPlayTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new MagicWhenLeavesPlayTrigger() {
             @Override

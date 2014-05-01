@@ -303,7 +303,15 @@ public enum MagicAbility {
             ));
         }
     },
-    AnotherLeavesAnyEffect("Whenever another " + ARG.WORDRUN + " leaves the battlefield, " + ARG.EFFECT, 10) {
+    LeavesEffect("Whenever a(n)? " + ARG.WORDRUN + " leaves the battlefield, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenLeavesPlayTrigger.create(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    AnotherLeavesEffect("Whenever another " + ARG.WORDRUN + " leaves the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenLeavesPlayTrigger.createAnother(
                 MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
@@ -602,7 +610,7 @@ public enum MagicAbility {
             ));
         }
     },
-    LeavesEffect("When SN leaves the battlefield, " + ARG.EFFECT, 10) {
+    SelfLeavesEffect("When SN leaves the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfLeavesPlayTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
