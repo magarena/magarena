@@ -6,6 +6,7 @@ rarity=U
 type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
-ability=trample;modular 1
+ability=trample;\
+        Whenever another artifact enters the battlefield, put a +1/+1 counter on SN.;\
+        modular 1
 timing=fmain
-requires_groovy_code
