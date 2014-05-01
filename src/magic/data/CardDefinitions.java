@@ -16,6 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -36,6 +37,8 @@ public class CardDefinitions {
     public static final String TOKEN_IMAGE_FOLDER = "tokens";
     public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
     public static final String CARD_TEXT_EXT = ".txt";
+
+    private static final Map<String, MagicCardDefinition> allCardsMap = new HashMap<String, MagicCardDefinition>();
 
     private static final List<MagicCardDefinition> playableCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
@@ -167,6 +170,8 @@ public class CardDefinitions {
 
         addDefinition(MagicCardDefinition.UNKNOWN);
 
+        setAllCardsMap();
+
         System.err.println(getNumberOfCards()+ " card definitions");
     }
 
@@ -291,4 +296,41 @@ public class CardDefinitions {
         final CardStatistics statistics=new CardStatistics(playableCards);
         statistics.printStatictics(System.err);
     }
+
+    private static void setAllCardsMap() {
+
+        allCardsMap.clear();
+
+        // first add playable cards
+        for (MagicCardDefinition card : playableCards) {
+            allCardsMap.put(card.getName(), card);
+        }
+
+        // next add missing cards
+        String content = null;
+        try {
+            content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/allCards.txt"));
+        } catch (final IOException ex) {
+            throw new RuntimeException("ERROR! Unable to load " + "allCards.txt");
+        }
+
+        try (final Scanner sc = new Scanner(content)) {
+            while (sc.hasNextLine()) {
+                final String cardName = sc.nextLine().trim();
+                if (!allCardsMap.containsKey(cardName)) {
+                    final MagicCardDefinition card = new MagicCardDefinition();
+                    card.setName(cardName);
+                    card.setFullName(cardName);
+                    card.setIsMissing(true);
+                    allCardsMap.put(cardName, card);
+                }
+            }
+        }
+
+    }
+
+    public static List<MagicCardDefinition> getAllCards() {
+        return new ArrayList<MagicCardDefinition>(allCardsMap.values());
+    }
+
 }

@@ -19,6 +19,7 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
+import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumnModel;
 
 import java.awt.BorderLayout;
@@ -47,13 +48,31 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         this(defs, cardViewer, "", false);
     }
 
+    @SuppressWarnings("serial")
     public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer, final String title, final boolean isDeck) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
 
         this.tableModel = new CardTableModel(defs, isDeck);
 
-        this.table = new JTable(tableModel);
+        this.table = new JTable(tableModel) {
+            private Color defaultForeColor;
+            @Override
+            public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
+                if (defaultForeColor == null) {
+                    defaultForeColor = table.getForeground();
+                }
+                Component c = super.prepareRenderer(renderer, row, column);
+                final MagicCardDefinition card = tableModel.getCardDef(row);
+                final boolean isRowSelected = table.isRowSelected(row);
+                if (isRowSelected) {
+                    c.setForeground(table.getSelectionForeground());
+                } else {
+                    c.setForeground(card.isMissing() ? Color.GRAY : defaultForeColor);
+                }
+                return c;
+            }
+        };
         this.selectionModel = table.getSelectionModel();
         this.cardViewer = cardViewer;
         this.lastSelectedCards = new ArrayList<MagicCardDefinition>();

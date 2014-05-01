@@ -104,7 +104,7 @@ public class ExplorerPanel extends TexturedPanel {
     private Container getMainContentContainer() {
 
         // card pool
-        cardPoolDefs = filterPanel.getCardDefinitions();
+        cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
 
         cardPoolTable = new CardTable(cardPoolDefs, sideBarPanel.getCardViewer(), generatePoolTitle(), false);
 
@@ -171,7 +171,7 @@ public class ExplorerPanel extends TexturedPanel {
     }
 
     public void updateCardPool() {
-        cardPoolDefs = filterPanel.getCardDefinitions();
+        cardPoolDefs = filterPanel.getCardDefinitions(!isDeckEditor);
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
     }

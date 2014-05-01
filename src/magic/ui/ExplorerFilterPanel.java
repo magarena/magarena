@@ -337,11 +337,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         public boolean checkCard(MagicCardDefinition card, int i);
     }
 
-    public List<MagicCardDefinition> getCardDefinitions() {
+    public List<MagicCardDefinition> getCardDefinitions(final boolean includeInvalidCards) {
 
         final List<MagicCardDefinition> cardDefinitions = new ArrayList<MagicCardDefinition>();
 
-        for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
+        final List<MagicCardDefinition> cards =
+                includeInvalidCards ? CardDefinitions.getAllCards() : CardDefinitions.getCards();
+
+        for (final MagicCardDefinition cardDefinition : cards) {
 
             if (filter(cardDefinition)) {
                 cardDefinitions.add(cardDefinition);

@@ -102,6 +102,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private String abilityProperty;
     private String requiresGroovy;
 
+    private boolean isMissing = false;
+
     private Set<MagicType> cardType = EnumSet.noneOf(MagicType.class);
 
     public MagicCardDefinition() {
@@ -247,7 +249,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public String getRarityString() {
-        return rarity.getName();
+        return (isMissing ? "" : rarity.getName());
     }
 
     public Color getRarityColor() {
@@ -279,7 +281,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
                 // Lands default to colorless
                 colorFlags = 0;
             } else {
-                assert colorFlags != 0 : "redundant color declaration: " + colorFlags; 
+                assert colorFlags != 0 : "redundant color declaration: " + colorFlags;
             }
         }
         cardType.add(type);
@@ -344,7 +346,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isSpell() {
         return isInstant()||isSorcery();
     }
-    
+
     public boolean isPermanent() {
         return isSpell() == false;
     }
@@ -440,7 +442,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public void setColors(final String colors) {
         colorFlags = MagicColor.getFlags(colors);
-        assert colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags; 
+        assert colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags;
     }
 
     public boolean hasColor(final MagicColor color) {
@@ -487,7 +489,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
             // color defaults to follow mana cost
             colorFlags = cost.getColorFlags();
         } else {
-            assert colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags; 
+            assert colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags;
         }
     }
 
@@ -638,7 +640,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public Collection<MagicActivation<MagicCard>> getCardActivations() {
         return cardActivations;
     }
-    
+
     public Collection<MagicActivation<MagicCard>> getGraveyardActivations() {
         return graveyardActivations;
     }
@@ -710,11 +712,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void addCardAct(final MagicCardActivation activation) {
         cardActivations.add(activation);
     }
-    
+
     public void addGraveyardAct(final MagicCardActivation activation) {
         graveyardActivations.add(activation);
     }
-    
+
     public void setCardAct(final MagicCardActivation activation) {
         cardActivations.clear();
         cardActivations.add(activation);
@@ -898,4 +900,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
             return TOUGHNESS_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
         }
     };
+
+    public void setIsMissing(boolean b) {
+        this.isMissing = b;
+    }
+    public boolean isMissing() {
+        return isMissing;
+    }
 }
