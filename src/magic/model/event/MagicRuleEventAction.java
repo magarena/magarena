@@ -1036,7 +1036,6 @@ public enum MagicRuleEventAction {
                 case Unblockable:
                     return MagicUnblockableTargetPicker.create();
                 default:
-                    System.out.println("DEFAULT: " + ability);
                     return MagicDefaultTargetPicker.create();
             }
         }
