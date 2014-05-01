@@ -1582,7 +1582,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TokenSingle(
-        "put (a|an) (?<name>[^\\.]*) onto the battlefield\\.",
+        "put (a|an) (?<name>[^\\.]*) onto the battlefield(?<tapped> tapped)?\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1594,7 +1594,10 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        tokenDef
+                        tokenDef,
+                        matcher.group("tapped") != null ? 
+                            MagicPlayMod.TAPPED : 
+                            MagicPlayMod.NONE
                     ));
                 }
             };
