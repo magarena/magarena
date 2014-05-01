@@ -919,6 +919,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl ATTACKING_HUMAN=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.isAttacking() &&
+                   target.hasSubType(MagicSubType.Human);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ATTACKING_AUROCHS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isAttacking() &&
@@ -1367,6 +1375,7 @@ public class MagicTargetFilterFactory {
         multiple.put("all sliver creatures", SLIVER_CREATURE);
         multiple.put("all creatures", CREATURE);
         multiple.put("attacking creatures", ATTACKING_CREATURE);
+        multiple.put("attacking Humans", ATTACKING_HUMAN);
         multiple.put("blocking creatures", BLOCKING_CREATURE);
         multiple.put("tapped creatures", TAPPED_CREATURE);
         multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
