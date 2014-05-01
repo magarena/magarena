@@ -8,5 +8,5 @@ subtype=Bird,Skeleton
 cost={4}{B}
 pt=3/2
 ability=flying;\
-        Sacrifice a creature: Regenerate SN.
+        {B}, Sacrifice a creature: Regenerate SN.
 timing=main
