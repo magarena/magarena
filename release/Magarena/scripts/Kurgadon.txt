@@ -9,5 +9,3 @@ cost={4}{G}
 pt=3/3
 ability=Whenever you cast a creature spell with converted mana cost 6 or greater, put three +1/+1 counters on SN.
 timing=main
-
-# Whenever you cast, doesn't allow targetfilters not ending in -spell
