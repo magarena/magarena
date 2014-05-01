@@ -1,0 +1,12 @@
+name=Lich Lord of Unx
+url=http://magiccards.info/arb/en/24.html
+image=http://mtgimage.com/card/lich%20lord%20of%20Unx.jpg
+value=3.657
+rarity=R
+type=Creature
+subtype=Zombie,Wizard
+cost={1}{U}{B}
+pt=2/2
+ability={U}{B},{T}: Put a 1/1 blue and black Zombie Wizard creature token onto the battlefield.
+timing=main
+requires_groovy_code
