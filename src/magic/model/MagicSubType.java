@@ -63,7 +63,7 @@ public enum MagicSubType {
     Goblin, God, Golem, Gorgon, Graveborn, Gremlin, Griffin, Hag, Harpy, Hellion, Hippo,
     Hippogriff, Homarid, Homunculus, Horror, Horse, Hound, Human, Hydra, Hyena,
     Illusion, Imp, Incarnation, Insect, Jellyfish, Juggernaut, Kavu, Kirin,
-    Kithkin, Knight, Kobold, Kor, Kraken, Lammasu, Leech, Leviathan, Lhurgoyf,
+    Kithkin, Knight, Kobold, Kor, Kraken, Lamia, Lammasu, Leech, Leviathan, Lhurgoyf,
     Licid, Lizard, Manticore, Masticore, Mercenary, Merfolk, Metathran, Minion,
     Minotaur, Monger, Mongoose, Monk, Moonfolk, Mutant, Myr, Mystic, Nautilus,
     Nephilim, Nightmare, Nightstalker, Ninja, Noggle, Nomad, Nymph, Octopus, Ogre, Ooze,
