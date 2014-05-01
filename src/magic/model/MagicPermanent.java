@@ -202,8 +202,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     /** Determines uniqueness of a mana permanent, e.g. for producing mana, all Mountains are equal. */
     public int getManaId() {
-        // Creatures or lands that can be animated are unique by default.
-        if (hasExcludeManaOrCombat()) {
+        // Creatures or lands that can be animated are unique
+        // Enchanted/equipped permanents are unique
+        if (hasExcludeManaOrCombat() || isEnchanted() || isEquipped()) {
             return (int)id;
         }
         // Uniqueness is determined by card definition and number of charge counters.
@@ -212,9 +213,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     
     public boolean hasExcludeManaOrCombat() {
         return cardDefinition.hasExcludeManaOrCombat() || 
-               (producesMana() && 
-                    (isCreature() || isEnchanted() || isEquipped())
-               );
+               (producesMana() && isCreature());
     }
 
     public MagicCard getCard() {
