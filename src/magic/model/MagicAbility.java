@@ -903,16 +903,10 @@ public enum MagicAbility {
             card.add(new MagicUnearthActivation(manaCost));
         }
     },
-    WhenTargeted("When(ever)? SN becomes the target of a spell or ability, " + ARG.EFFECT,-10) {
+    WhenTargeted("When(ever)? SN becomes the target of a(n)? (?<wordrun>[^\\,]*), " + ARG.EFFECT,-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfTargetedTrigger.create(
-                MagicRuleEventAction.create(ARG.effect(arg))
-            ));
-        }
-    },
-    WhenTargetedBySpell("When(ever)? SN becomes the target of a spell, " + ARG.EFFECT,-10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenSelfTargetedTrigger.createSpell(
+                MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
