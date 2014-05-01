@@ -446,7 +446,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public boolean hasColor(final MagicColor color) {
-        return (colorFlags&color.getMask())!=0;
+        return (colorFlags&color.getMask())!=0 && !isMissing;
     }
 
     public boolean isColorless() {
