@@ -6,8 +6,8 @@
             return enchantedPermanent == died ?
                 new MagicEvent(
                     permanent,
+                    MagicTargetChoice.NEG_TARGET_PLAYER,
                     enchantedPermanent,
-                    MagicTargetPicker.NEG_TARGET_PLAYER,
                     this,
                     "Target player\$ loses X life and PN gains X life, where X is RN's power. (X="+
                     enchantedPermanent.getPower()+")"
