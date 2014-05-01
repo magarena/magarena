@@ -17,7 +17,7 @@
                         perm,
                         this,
                         "RN gets +3/+3 until end of turn."
-                    ):
+                    );
                 }
             }
             return MagicEvent.NONE;
