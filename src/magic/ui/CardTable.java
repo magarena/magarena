@@ -187,15 +187,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
                     if (card != null) {
                         cardViewer.setCard(card,0);
                     }
-                } /* else if (e.getSource() == table.getColumnModel().getSelectionModel() && table.getColumnSelectionAllowed() ){
-                    // Column selection changed
-                    int first = e.getFirstIndex();
-                    int last = e.getLastIndex();
-                } */
-
-                /* if (e.getValueIsAdjusting()) {
-                    // The mouse button has not yet been released
-                } */
+                }
             }
         });
     }
