@@ -7,6 +7,6 @@ type=Creature
 subtype=Wolf
 cost={1}{G}{G}
 pt=3/3
-ability=hexproof
+ability=hexproof;\
+        Whenever an opponent casts a blue or black spell during your turn, put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code
