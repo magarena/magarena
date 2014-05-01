@@ -1702,6 +1702,28 @@ public enum MagicRuleEventAction {
             }
         }
     ),
+    SacrificeChosen(
+        "sacrifice (?<choice>[^\\.]*)\\.",
+        MagicTargetHint.None,
+        MagicSacrificeTargetPicker.create(),
+        MagicTiming.Removal,
+        "Sacrifice",
+        new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processTargetPermanent(game,new MagicPermanentAction() {
+                    public void doAction(final MagicPermanent creature) {
+                        game.doAction(new MagicSacrificeAction(creature));
+                    }
+                });
+            }
+        }
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            return new MagicTargetChoice(getHint(matcher), matcher.group("choice") + " you control");
+        }
+    },
     ExileSelf(
             "exile sn\\.",
             MagicTiming.Removal,
@@ -2038,6 +2060,7 @@ public enum MagicRuleEventAction {
             .replaceAll("reveal ","reveals ")
             .replaceAll("(S|s)huffle your ","PN shuffles PN's ")
             .replaceAll("(D|d)raw ","PN draws ")
+            .replaceAll("(S|s)acrifice ","PN sacrifices ")
             .replaceAll("(Y|y)ou don't","PN doesn't")
             .replaceAll("(Y|y)ou do","PN does")
             .replaceAll("(Y|y)ou gain ","PN gains ")
