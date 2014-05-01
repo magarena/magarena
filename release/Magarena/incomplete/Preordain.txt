@@ -1,0 +1,9 @@
+name=Preordain
+url=http://www.magiccards.info/query?q=%21preordain
+image=http://mtgimage.com/card/preordain.jpg
+value=4.247
+rarity=C
+type=Sorcery
+cost={U}
+timing=main
+requires_groovy_code

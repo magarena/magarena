@@ -1,0 +1,11 @@
+name=Shape Stealer
+url=http://magiccards.info/sok/en/55.html
+image=http://mtgimage.com/card/shape%20stealer.jpg
+value=3.757
+rarity=U
+type=Creature
+subtype=Shapeshifter,Spirit
+cost={U}{U}
+pt=1/1
+timing=main
+requires_groovy_code

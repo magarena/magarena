@@ -1,0 +1,10 @@
+name=Moment's Peace
+url=http://www.magiccards.info/query?q=%21moment%27s%20peace
+image=http://mtgimage.com/card/moment's%20peace.jpg
+value=4.375
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Prevent all combat damage that would be dealt this turn.
+ability=Flashback {2}{G}
+timing=block

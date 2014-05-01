@@ -1,0 +1,10 @@
+name=Grim Guardian
+url=http://www.magiccards.info/query?q=%21grim%20guardian
+image=http://mtgimage.com/card/grim%20guardian.jpg
+value=2.50
+rarity=C
+type=Enchantment,Creature
+cost={2}{B}
+pt=1/4
+ability=Whenever SN or another enchantment enters the battlefield under your control, each opponent loses 1 life.
+timing=main

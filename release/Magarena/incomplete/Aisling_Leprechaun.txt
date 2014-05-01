@@ -1,0 +1,11 @@
+name=Aisling Leprechaun
+url=http://magiccards.info/lg/en/87.html
+image=http://mtgimage.com/card/aisling%20leprechaun.jpg
+value=2.633
+rarity=C
+type=Creature
+subtype=Faerie
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code

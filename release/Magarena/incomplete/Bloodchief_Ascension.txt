@@ -1,0 +1,9 @@
+name=Bloodchief Ascension
+url=http://magiccards.info/zen/en/82.html
+image=http://mtgimage.com/card/bloodchief%20ascension.jpg
+value=4.327
+rarity=R
+type=Enchantment
+cost={B}
+timing=enchantment
+requires_groovy_code

@@ -1,0 +1,10 @@
+name=Wild Guess
+url=http://magiccards.info/m14/en/161.html
+image=http://mtgimage.com/card/wild%20guess.jpg
+value=3.222
+rarity=C
+type=Sorcery
+cost={R}{R}
+effect=PN draws two cards.
+timing=main
+requires_groovy_code
