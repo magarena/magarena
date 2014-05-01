@@ -1,0 +1,10 @@
+name=Deep Reconnaissance
+url=http://www.magiccards.info/query?q=%21deep%20reconnaissance
+image=http://mtgimage.com/card/deep%20reconnaissance.jpg
+value=2.887
+rarity=U
+type=Sorcery
+cost={2}{G}
+effect=Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
+ability=Flashback {4}{G}
+timing=main

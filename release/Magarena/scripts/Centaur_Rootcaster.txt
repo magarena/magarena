@@ -1,0 +1,11 @@
+name=Centaur Rootcaster
+url=http://www.magiccards.info/query?q=%21centaur%20rootcaster
+image=http://mtgimage.com/card/centaur%20rootcaster.jpg
+value=3.37
+rarity=C
+type=Creature
+subtype=Centaur,Druid
+cost={3}{G}
+pt=2/2
+ability=Whenever SN deals combat damage to a player, you may search your library for a basic land card and put that card onto the battlefield tapped. If you do, shuffle your library.
+timing=main
