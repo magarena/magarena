@@ -9,3 +9,4 @@ cost={4}{U}
 ability=Enchanted creature gets +4/+4.
 timing=aura
 enchant=pump,pos creature
+requires_groovy_code
