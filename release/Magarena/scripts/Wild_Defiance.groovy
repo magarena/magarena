@@ -1,35 +1,26 @@
 [
     new MagicWhenTargetedTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicItemOnStack itemOnStack) {
-            if (!itemOnStack.isInstantOrSorcerySpell()) {
-                return MagicEvent.NONE;
-            }
-
+        public boolean accept(final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isInstantOrSorcerySpell();
+        }
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
             final Collection<MagicPermanent> targets = game.filterPermanents(
-                    permanent.getController(),
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            MagicPermanent targetedPerm = MagicPermanent.NONE;
+                permanent.getController(),
+                MagicTargetFilterFactory.CREATURE_YOU_CONTROL
+            );
             for (final MagicPermanent perm : targets) {
-                if (itemOnStack.containsInChoiceResults(perm) &&
-                    perm.isCreature() &&
-                    perm.getController() == permanent.getController()) {
-                    targetedPerm = perm;
-                    break;
+                if (itemOnStack.containsInChoiceResults(perm)) {
+                    return new MagicEvent(
+                        permanent,
+                        perm,
+                        this,
+                        "RN gets +3/+3 until end of turn."
+                    ):
                 }
             }
-            return (targetedPerm != MagicPermanent.NONE) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    targetedPerm,
-                    this,
-                    "RN gets +3/+3 until end of turn."
-                ):
-                MagicEvent.NONE;
+            return MagicEvent.NONE;
         }
 
         @Override
