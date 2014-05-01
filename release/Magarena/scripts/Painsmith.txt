@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Artificer
 cost={1}{B}
 pt=2/1
-ability=Whenever you cast an artifact spell, you may have target creature get +2/+0 and gain deathtouch until end of turn.
+ability=Whenever you cast an artifact spell, you may have target creature gets +2/+0 and gains deathtouch until end of turn.
 timing=main
