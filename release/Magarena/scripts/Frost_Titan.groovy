@@ -19,11 +19,10 @@ def event = {
 
 [
     //counter opponent spell or ability unless its controller pay {2}
-    new MagicWhenTargetedTrigger() {
+    new MagicWhenSelfTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-            return (target.containsInChoiceResults(permanent) &&
-                    target.getController() != permanent.getController()) ?
+            return permanent.isEnemy(target) ?
                 new MagicEvent(
                     permanent,
                     target,
