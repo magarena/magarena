@@ -1,13 +1,11 @@
 [
-    new MagicWhenTargetedTrigger() {
+    new MagicWhenSelfTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-            final MagicPlayer targetPlayer = target.getController();
-            return (target.containsInChoiceResults(permanent) &&
-                    targetPlayer != permanent.getController()) ?
+            return permanent.isEnemy(target) ?
                 new MagicEvent(
                     permanent,
-                    targetPlayer,
+                    target.getController(),
                     this,
                     "PN loses 4 life."
                 ):
