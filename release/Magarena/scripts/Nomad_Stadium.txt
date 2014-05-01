@@ -5,6 +5,6 @@ value=0.989
 rarity=U
 type=Land
 mana=w2
-ability={T}: Add {W} to your mana pool. SN deals 1 damage to you.
+ability={T}: Add {W} to your mana pool. SN deals 1 damage to you.;\
+        {Threshold}, {W}, {T}, Sacrifice SN: You gain 4 life.
 timing=land
-requires_groovy_code

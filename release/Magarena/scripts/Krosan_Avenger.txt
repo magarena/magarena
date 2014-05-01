@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Druid
 cost={2}{G}
 pt=3/1
-ability=trample
+ability=trample;\
+        {Threshold}, {1}{G}: Regenerate SN.
 timing=main
-requires_groovy_code
