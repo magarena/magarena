@@ -911,6 +911,13 @@ public enum MagicAbility {
             ));
         }
     },
+    WhenGainLife("Whenever you gain life, " + ARG.EFFECT,-10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenLifeIsGainedTrigger.createYou(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
