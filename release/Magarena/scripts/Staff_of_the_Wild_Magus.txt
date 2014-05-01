@@ -5,6 +5,6 @@ value=1.944
 rarity=U
 type=Artifact
 cost={3}
-ability=Whenever a Forest enters the battlefield under your control, you gain 1 life.
+ability=Whenever a Forest enters the battlefield under your control, you gain 1 life.;\
+        Whenever you cast a green spell, you gain 1 life.
 timing=artifact
-requires_groovy_code

@@ -15,7 +15,6 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.*;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
@@ -24,33 +23,11 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
-import magic.model.target.MagicBounceTargetPicker;
-import magic.model.target.MagicDamageTargetPicker;
-import magic.model.target.MagicDeathtouchTargetPicker;
-import magic.model.target.MagicDefaultPermanentTargetPicker;
-import magic.model.target.MagicDefaultTargetPicker;
-import magic.model.target.MagicDestroyTargetPicker;
-import magic.model.target.MagicExileTargetPicker;
-import magic.model.target.MagicFirstStrikeTargetPicker;
-import magic.model.target.MagicFlyingTargetPicker;
-import magic.model.target.MagicGraveyardTargetPicker;
-import magic.model.target.MagicHasteTargetPicker;
-import magic.model.target.MagicIndestructibleTargetPicker;
-import magic.model.target.MagicLifelinkTargetPicker;
-import magic.model.target.MagicPreventTargetPicker;
-import magic.model.target.MagicPumpTargetPicker;
-import magic.model.target.MagicRegenerateTargetPicker;
-import magic.model.target.MagicTapTargetPicker;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetFilterFactory;
-import magic.model.target.MagicTargetHint;
-import magic.model.target.MagicTargetPicker;
-import magic.model.target.MagicTrampleTargetPicker;
-import magic.model.target.MagicWeakenTargetPicker;
 import magic.model.trigger.MagicAtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.action.*;
+import magic.model.target.*;
 
 import java.util.Collection;
 import java.util.regex.Matcher;
@@ -1047,6 +1024,22 @@ public enum MagicRuleEventAction {
             }
         }
         @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+            switch (ability) {
+                case CannotAttack:
+                    return new MagicNoCombatTargetPicker(true,false,false);
+                case CannotBlock:
+                    return new MagicNoCombatTargetPicker(false,true,false);
+                case CannotAttackOrBlock:
+                    return new MagicNoCombatTargetPicker(true,true,false);
+                case Unblockable:
+                    return MagicUnblockableTargetPicker.create();
+                default:
+                    return MagicDefaultTargetPicker.create();
+            }
+        }
+        @Override
         public MagicTargetHint getHint(final Matcher matcher) {
             final MagicAbility ability = MagicAbility.getAbility(matcher.group("ability"));
             if (ability.getName().contains("be blocked")) {
@@ -1589,7 +1582,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TokenSingle(
-        "put (a|an) (?<name>[^\\.]*) onto the battlefield\\.",
+        "put (a|an) (?<name>[^\\.]*) onto the battlefield(?<tapped> tapped)?\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1601,7 +1594,10 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new MagicPlayTokenAction(
                         event.getPlayer(),
-                        tokenDef
+                        tokenDef,
+                        matcher.group("tapped") != null ? 
+                            MagicPlayMod.TAPPED : 
+                            MagicPlayMod.NONE
                     ));
                 }
             };
