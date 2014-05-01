@@ -8,5 +8,5 @@ subtype=Kithkin,Soldier
 cost={3}{W}
 pt=2/2
 ability=flying;\
-        Whenever SN attacks, you may have target creature gains flying until end of turn.
+        Whenever SN attacks, you may have target creature gain flying until end of turn.
 timing=main

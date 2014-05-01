@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Wizard
 cost={3}{B}
 pt=2/3
-ability=Whenever you cast an enchantment spell, you may have target creature gets -2/-2 until end of turn.
+ability=Whenever you cast an enchantment spell, you may have target creature get -2/-2 until end of turn.
 timing=main
