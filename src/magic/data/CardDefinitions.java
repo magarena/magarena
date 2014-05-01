@@ -308,7 +308,7 @@ public class CardDefinitions {
         try {
             content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt"));
         } catch (final IOException ex) {
-            throw new RuntimeException("ERROR! Unable to load " + "allCards.txt");
+            throw new RuntimeException("ERROR! Unable to load AllCardNames.txt");
         }
 
         try (final Scanner sc = new Scanner(content)) {
