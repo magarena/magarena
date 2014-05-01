@@ -711,3 +711,6 @@ correct-release-label:
 
 push: clean normalize_files checks debug
 	hg push
+
+resources/magic/data/AllCardNames.txt:
+	grep "<name>" -r cards/cards.xml | sed 's/<[^>]*>//g;s/^ *//' | unaccent utf-8 | recode html..ascii | sort > $@
