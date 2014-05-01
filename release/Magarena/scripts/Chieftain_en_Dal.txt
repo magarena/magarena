@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
+ability=Whenever SN attacks, attacking creatures gain first strike until end of turn.
 timing=main
-requires_groovy_code

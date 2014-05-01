@@ -895,6 +895,14 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLANKING=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   target.isAttacking() &&
+                   target.hasAbility(MagicAbility.Flanking);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1375,6 +1383,7 @@ public class MagicTargetFilterFactory {
         multiple.put("all sliver creatures", SLIVER_CREATURE);
         multiple.put("all creatures", CREATURE);
         multiple.put("attacking creatures", ATTACKING_CREATURE);
+        multiple.put("attacking creatures with flanking", ATTACKING_CREATURE_WITH_FLANKING);
         multiple.put("attacking Humans", ATTACKING_HUMAN);
         multiple.put("blocking creatures", BLOCKING_CREATURE);
         multiple.put("tapped creatures", TAPPED_CREATURE);
