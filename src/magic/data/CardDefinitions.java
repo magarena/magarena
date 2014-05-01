@@ -157,10 +157,7 @@ public class CardDefinitions {
         Arrays.sort(files);
 
         //load the card definitions
-        final int totalTxtCards = files.length;
-        final int totalNonTokenCards = getNonTokenCardsCount(files);
-        final int totalTokenCards = totalTxtCards - totalNonTokenCards;
-        MagicMain.setSplashStatusMessage("Loading " + totalNonTokenCards + " cards, " + totalTokenCards + " tokens...");
+        MagicMain.setSplashStatusMessage("Loading " +  getNonTokenCardsCount(files) + " playable cards...");
         for (final File file : files) {
             loadCardDefinition(file);
         }
