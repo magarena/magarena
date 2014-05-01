@@ -176,6 +176,12 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         }
     }
 
+    private void doPreviewCard(final MagicCardDefinition card) {
+        if (card != null) {
+            cardViewer.setCard(card,0);
+        }
+    }
+
     @Override
     public void valueChanged(final ListSelectionEvent e) {
         SwingUtilities.invokeLater(new Runnable() {
@@ -184,9 +190,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
                 if (e.getSource() == table.getSelectionModel() && table.getRowSelectionAllowed()) {
                     // Row selection changed
                     final MagicCardDefinition card = tableModel.getCardDef(selectionModel.getLeadSelectionIndex());
-                    if (card != null) {
-                        cardViewer.setCard(card,0);
-                    }
+                    doPreviewCard(card);
                 }
             }
         });
@@ -219,9 +223,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
             if (p != null) {
                 final int row = table.rowAtPoint(p);
                 final MagicCardDefinition card = tableModel.getCardDef(row);
-                if (card != null) {
-                    cardViewer.setCard(card,0);
-                }
+                doPreviewCard(card);
             }
         }
     }
