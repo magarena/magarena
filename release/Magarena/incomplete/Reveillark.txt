@@ -1,0 +1,12 @@
+name=Reveillark
+url=http://magiccards.info/query?q=%21reveillark
+image=http://mtgimage.com/card/reveillark.jpg
+value=4.241
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{W}
+pt=4/3
+ability=evoke {R}
+timing=main
+requires_groovy_code
