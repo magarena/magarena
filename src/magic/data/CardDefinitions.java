@@ -306,7 +306,7 @@ public class CardDefinitions {
         // next add missing cards
         String content = null;
         try {
-            content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/allCards.txt"));
+            content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt"));
         } catch (final IOException ex) {
             throw new RuntimeException("ERROR! Unable to load " + "allCards.txt");
         }
