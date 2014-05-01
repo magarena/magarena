@@ -1430,7 +1430,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefield(
-        "search your library for (?<choice>[^\\.]*)(,| and) put it onto the battlefield(?<tapped> tapped)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        "search your library for (?<choice>[^\\.]*)(,| and) put (it|that card) onto the battlefield(?<tapped> tapped)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
         MagicTiming.Pump,
         "Search"
     ) {
@@ -1642,7 +1642,7 @@ public enum MagicRuleEventAction {
         }
     },
     MillChosen(
-        "(?<choice>[^\\.]*) puts the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.", 
+        "(?<choice>[^\\.]*) put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.", 
         MagicTiming.Draw, 
         "Mill"
     ) {
