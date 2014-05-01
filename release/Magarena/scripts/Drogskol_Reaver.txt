@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={5}{W}{U}
 pt=3/5
-ability=flying;double strike;lifelink
+ability=flying;double strike;lifelink;\
+        Whenever you gain life, draw a card.
 timing=fmain
-requires_groovy_code

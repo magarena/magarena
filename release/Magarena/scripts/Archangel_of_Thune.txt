@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/4
-ability=flying;lifelink
+ability=flying;lifelink;\
+        Whenever you gain life, put a +1/+1 counter on each creature you control.
 timing=main
-requires_groovy_code

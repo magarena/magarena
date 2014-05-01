@@ -5,5 +5,5 @@ value=3.700
 rarity=R
 type=Enchantment
 cost={1}{R}{W}
+ability=Whenever you gain life, you may pay {2}. If you do, SN deals 2 damage to target creature or player.
 timing=enchantment
-requires_groovy_code
