@@ -4,6 +4,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
+import magic.model.target.MagicTargetFilter;
 import magic.model.action.MagicRemoveFromPlayAction;
 
 public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemoveFromPlayAction> {
@@ -26,4 +28,17 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<MagicRemov
             return MagicEvent.NONE;
         }
     };
+    
+    public static final MagicWhenLeavesPlayTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new MagicWhenLeavesPlayTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+                return permanent != act.getPermanent() && filter.accept(permanent.getGame(), permanent.getController(), act.getPermanent());
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
+                return sourceEvent.getEvent(permanent);
+            }
+        };
+    }
 }
