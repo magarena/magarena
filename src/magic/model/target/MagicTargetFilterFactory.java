@@ -1593,6 +1593,7 @@ public class MagicTargetFilterFactory {
        
         // <color|type> spell
         single.put("spell", SPELL);
+        single.put("spell an opponent controls", SPELL_YOU_DONT_CONTROL);
         single.put("spell or ability", SPELL_OR_PERMANENT);
         single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
         single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
