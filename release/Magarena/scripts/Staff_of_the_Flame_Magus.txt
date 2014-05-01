@@ -5,6 +5,6 @@ value=1.853
 rarity=U
 type=Artifact
 cost={3}
-ability=Whenever a Mountain enters the battlefield under your control, you gain 1 life.
+ability=Whenever a Mountain enters the battlefield under your control, you gain 1 life.;\
+        Whenever you cast a red spell, you gain 1 life.
 timing=artifact
-requires_groovy_code
