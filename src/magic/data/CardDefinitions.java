@@ -37,7 +37,7 @@ public class CardDefinitions {
     public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
     public static final String CARD_TEXT_EXT = ".txt";
 
-    private static final List<MagicCardDefinition> cards = new ArrayList<MagicCardDefinition>();
+    private static final List<MagicCardDefinition> playableCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
@@ -75,7 +75,7 @@ public class CardDefinitions {
     }
 
     private static void filterCards() {
-        for (final MagicCardDefinition card : cards) {
+        for (final MagicCardDefinition card : playableCards) {
             if (!card.isLand() && !card.isToken()) {
                 spellCards.add(card);
             } else if (!card.isBasic() && !card.isToken()) {
@@ -88,8 +88,8 @@ public class CardDefinitions {
         assert cardDefinition != null : "CardDefinitions.addDefinition passed null";
         assert cardDefinition.getIndex() == -1 : "cardDefinition has been assigned index";
 
-        cardDefinition.setIndex(cards.size());
-        cards.add(cardDefinition);
+        cardDefinition.setIndex(playableCards.size());
+        playableCards.add(cardDefinition);
         cardsMap.put(cardDefinition.getFullName(),cardDefinition);
 
         //add to tokens or all (vintage) cube
@@ -210,11 +210,11 @@ public class CardDefinitions {
     }
 
     public static int getNumberOfCards() {
-        return cards.size();
+        return playableCards.size();
     }
 
     public static MagicCardDefinition getCard(final int cindex) {
-        return cards.get(cindex);
+        return playableCards.get(cindex);
     }
 
     public static MagicCardDefinition getCard(final String name) {
@@ -276,7 +276,7 @@ public class CardDefinitions {
     }
 
     public static List<MagicCardDefinition> getCards() {
-        return cards;
+        return playableCards;
     }
 
     public static List<MagicCardDefinition> getLandCards() {
@@ -288,7 +288,7 @@ public class CardDefinitions {
     }
 
     private static void printStatistics() {
-        final CardStatistics statistics=new CardStatistics(cards);
+        final CardStatistics statistics=new CardStatistics(playableCards);
         statistics.printStatictics(System.err);
     }
 }
