@@ -1,10 +1,8 @@
 
-def OpalineDraw = new MagicWhenTargetedTrigger() {
+def OpalineDraw = new MagicWhenSelfTargetedTrigger() {
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack stack) {
-        return (stack.containsInChoiceResults(permanent) &&
-                stack.isSpell() &&
-                permanent.isEnemy(stack)) ?
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack item) {
+        return item.isSpell() && permanent.isEnemy(item) ?
             new MagicEvent(
                 permanent,
                 new MagicSimpleMayChoice(
