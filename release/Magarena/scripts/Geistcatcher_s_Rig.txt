@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={6}
 pt=4/5
+ability=When SN enters the battlefield, you may have SN deal 4 damage to target creature with flying.
 timing=main
-requires_groovy_code
