@@ -112,6 +112,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Counter,
         "Counter"
     ) {
+        @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicManaCost cost = MagicManaCost.create(matcher.group("cost"));
             return new MagicEventAction() {
@@ -206,6 +207,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal,
         "Damage"
     ) {
+        @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             final MagicTargetFilter<MagicTarget> filter1 = MagicTargetFilterFactory.singleTarget(matcher.group("group1"));
@@ -238,6 +240,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal,
         "Damage"
     ) {
+        @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.singleTarget(matcher.group("group"));
@@ -261,6 +264,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal,
         "Damage"
     ) {
+        @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
@@ -278,6 +282,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal,
         "Damage"
     ) {
+        @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             final int amount2 = Integer.parseInt(matcher.group("amount2"));
@@ -309,6 +314,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Removal,
         "Damage"
     ) {
+        @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
             return new MagicEventAction() {
@@ -1726,6 +1732,29 @@ public enum MagicRuleEventAction {
         @Override
         public MagicChoice getChoice(final Matcher matcher) {
             return new MagicTargetChoice(getHint(matcher), matcher.group("choice") + " you control");
+        }
+    },
+    EachSacrificeChosen(
+        "Each (?<group>[^\\.]*) sacrifices (?<choice>[^\\.]*)\\.",
+        MagicTiming.Removal,
+        "Sacrifice"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            return MagicChoice.NONE;
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("choice")+" you control");
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
+                    }
+                }
+            };
         }
     },
     ExileSelf(

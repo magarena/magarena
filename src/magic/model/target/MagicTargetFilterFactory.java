@@ -1717,6 +1717,11 @@ public class MagicTargetFilterFactory {
     }
     
     @SuppressWarnings("unchecked")
+    public static MagicTargetFilter<MagicPlayer> singlePlayer(final String arg) {
+        return (MagicTargetFilter<MagicPlayer>)single(arg);
+    }
+    
+    @SuppressWarnings("unchecked")
     public static MagicTargetFilter<MagicPermanent> singlePermanent(final String arg) {
         return (MagicTargetFilter<MagicPermanent>)single(arg);
     }

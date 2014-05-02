@@ -1037,6 +1037,10 @@ public class MagicGame {
     public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter) {
         return targetFilter.filter(this, player, MagicTargetHint.None);
     }
+    
+    public List<MagicPlayer> filterPlayers(final MagicPlayer player,final MagicTargetFilter<MagicPlayer> targetFilter) {
+        return targetFilter.filter(this, player, MagicTargetHint.None);
+    }
 
     public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
         return targetFilter.filter(this, player, MagicTargetHint.None);
