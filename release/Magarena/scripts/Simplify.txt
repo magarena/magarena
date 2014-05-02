@@ -5,5 +5,5 @@ value=2.448
 rarity=C
 type=Sorcery
 cost={G}
+effect=Each player sacrifices an enchantment.
 timing=main
-requires_groovy_code

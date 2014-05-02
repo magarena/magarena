@@ -7,5 +7,5 @@ type=Creature
 subtype=Minotaur,Shaman
 cost={1}{R}{R}
 pt=2/3
+ability=When SN dies, each player sacrifices a land.
 timing=main
-requires_groovy_code

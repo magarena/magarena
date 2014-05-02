@@ -1682,6 +1682,7 @@ public class MagicTargetFilterFactory {
 
         // player
         single.put("opponent", OPPONENT);
+        single.put("other player", OPPONENT);
         single.put("player", PLAYER);
 
         // from a graveyard

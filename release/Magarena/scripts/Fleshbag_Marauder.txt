@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie,Warrior
 cost={2}{B}
 pt=3/1
+ability=When SN enters the battlefield, each player sacrifices a creature.
 timing=main
-requires_groovy_code

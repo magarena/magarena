@@ -6,5 +6,5 @@ rarity=C
 type=Sorcery
 subtype=Arcane
 cost={R}
+effect=Each player sacrifices a permanent.
 timing=main
-requires_groovy_code

@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Vampire,Shaman
 cost={3}{B}{B}
 pt=4/3
+ability=At the beginning of your upkeep, each player sacrifices a non-Vampire creature.
 timing=main
-requires_groovy_code
