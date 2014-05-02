@@ -1227,21 +1227,12 @@ public class MagicTargetFilterFactory {
         }
     };
     
-    public static final MagicCardFilterImpl REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(final int cmc) {
+    public static final MagicCardFilterImpl permanentCardFromLibraryMaxCMC(final MagicSubType subtype, final int cmc) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-                return target.hasSubType(MagicSubType.Rebel) && target.getConvertedCost() <= cmc;
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return targetType==MagicTargetType.Library;
-            }
-        };
-    }
-    
-    public static final MagicCardFilterImpl MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(final int cmc) {
-        return new MagicCardFilterImpl() {
-            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-                return target.hasSubType(MagicSubType.Mercenary) && target.getConvertedCost() <= cmc;
+                return target.getCardDefinition().isPermanent() && 
+                       target.hasSubType(subtype) && 
+                       target.getConvertedCost() <= cmc;
             }
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType==MagicTargetType.Library;
@@ -1450,18 +1441,18 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> permanent card from your graveyard
         single.put("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD); 
         single.put("permanent card with converted mana cost 3 or less from your graveyard", PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
-        single.put("Rebel permanent card with converted mana cost 1 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(1));
-        single.put("Rebel permanent card with converted mana cost 2 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(2));
-        single.put("Rebel permanent card with converted mana cost 3 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(3));
-        single.put("Rebel permanent card with converted mana cost 4 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(4));
-        single.put("Rebel permanent card with converted mana cost 5 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(5));
-        single.put("Rebel permanent card with converted mana cost 6 or less from your library", REBEL_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(6));
-        single.put("Mercenary permanent card with converted mana cost 1 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(1));
-        single.put("Mercenary permanent card with converted mana cost 2 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(2));
-        single.put("Mercenary permanent card with converted mana cost 3 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(3));
-        single.put("Mercenary permanent card with converted mana cost 4 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(4));
-        single.put("Mercenary permanent card with converted mana cost 5 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(5));
-        single.put("Mercenary permanent card with converted mana cost 6 or less from your library", MERCENARY_PERM_CARD_FROM_LIBRARY_CMC_AT_MOST(6));
+        single.put("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Rebel, 1));
+        single.put("Rebel permanent card with converted mana cost 2 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Rebel, 2));
+        single.put("Rebel permanent card with converted mana cost 3 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Rebel, 3));
+        single.put("Rebel permanent card with converted mana cost 4 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Rebel, 4));
+        single.put("Rebel permanent card with converted mana cost 5 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Rebel, 5));
+        single.put("Rebel permanent card with converted mana cost 6 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Rebel, 6));
+        single.put("Mercenary permanent card with converted mana cost 1 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Mercenary, 1));
+        single.put("Mercenary permanent card with converted mana cost 2 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Mercenary, 2));
+        single.put("Mercenary permanent card with converted mana cost 3 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Mercenary, 3));
+        single.put("Mercenary permanent card with converted mana cost 4 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Mercenary, 4));
+        single.put("Mercenary permanent card with converted mana cost 5 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Mercenary, 5));
+        single.put("Mercenary permanent card with converted mana cost 6 or less from your library", permanentCardFromLibraryMaxCMC(MagicSubType.Mercenary, 6));
         
         // <color|type|subtype> creature card from your graveyard
         single.put("creature card with converted mana cost 3 or less from your graveyard", CREATURE_CARD_CMC_LEQ_3_FROM_GRAVEYARD);
