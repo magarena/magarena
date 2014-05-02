@@ -6,7 +6,7 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{W}{W}
-ability=Enchanted land has "{W}{W}, {T}: Put a 0/1 white Caribou creature token onto the battlefield."
+ability=Enchanted land has "{W}{W}, {T}: Put a 0/1 white Caribou creature token onto the battlefield.";\
+        Sacrifice a Caribou token: You gain 1 life.
 enchant=pump,land you control
 timing=aura
-requires_groovy_code
