@@ -556,6 +556,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl VAMPIRE_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicSubType.Vampire, Control.You);
 
+    public static final MagicPermanentFilterImpl SKELETON_VAMPIRE_OR_ZOMBIE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Vampire) ||
+                    target.hasSubType(MagicSubType.Skeleton) ||
+                    target.hasSubType(MagicSubType.Zombie);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl VAMPIRE_WEREWOLF_OR_ZOMBIE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Vampire) ||
@@ -1547,6 +1555,7 @@ public class MagicTargetFilterFactory {
         single.put("non-Zombie creature", NONZOMBIE_CREATURE);
         single.put("non-Human creature", NONHUMAN_CREATURE);
         single.put("non-Vampire, non-Werewolf, non-Zombie creature", NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE);
+        single.put("Skeleton, Vampire, or Zombie", SKELETON_VAMPIRE_OR_ZOMBIE);
         single.put("noncreature", NONCREATURE);
         single.put("nonartifact, nonblack creature", NONARTIFACT_NONBLACK_CREATURE);
         single.put("land or nonblack creature", LAND_OR_NONBLACK_CREATURE);

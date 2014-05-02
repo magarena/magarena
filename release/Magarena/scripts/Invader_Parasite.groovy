@@ -1,27 +1,4 @@
 [
-    new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {  
-            return new MagicEvent(
-                permanent,
-                MagicTargetChoice.NEG_TARGET_LAND,
-                MagicExileTargetPicker.create(),
-                this,
-                "PN exiles target land\$."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-                game.doAction(new MagicExileLinkAction(
-                    event.getPermanent(),
-                    target
-                ));
-            });
-            
-        }
-    },
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {

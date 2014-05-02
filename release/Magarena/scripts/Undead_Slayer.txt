@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=2/2
+ability={W}, {T}: Exile target Skeleton, Vampire, or Zombie.
 timing=main
-requires_groovy_code
