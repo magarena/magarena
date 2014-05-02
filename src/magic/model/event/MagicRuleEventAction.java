@@ -191,7 +191,11 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
-                        game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                        if (event.getSource().isPermanent()) {
+                            game.doAction(new MagicExileLinkAction(event.getPermanent(), perm));
+                        } else {
+                            game.doAction(new MagicRemoveFromPlayAction(perm,MagicLocationType.Exile));
+                        }
                     }
                 });
             }
