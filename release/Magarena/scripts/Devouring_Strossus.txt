@@ -8,6 +8,6 @@ subtype=Horror
 cost={5}{B}{B}{B}
 pt=9/9
 ability=flying;trample;\
+        At the beginning of your upkeep, sacrifice a creature.;\
         Sacrifice a creature: Regenerate SN.
 timing=main
-requires_groovy_code
