@@ -1,0 +1,13 @@
+name=Nyx Weaver
+url=http://www.magiccards.info/query?q=%21nyx%20weaver
+image=http://mtgimage.com/card/nyx%20weaver.jpg
+value=2.50
+rarity=U
+type=Enchantment,Creature
+subtype=Spider
+cost={1}{B}{G}
+pt=2/3
+ability=Reach;\
+        At the beginning of your upkeep, put the top two cards of your library into your graveyard.;\
+        {1}{B}{G}, Exile SN: Return target card from your graveyard to your hand.
+timing=main

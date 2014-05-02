@@ -1,0 +1,12 @@
+name=Wormfang Turtle
+url=http://www.magiccards.info/query?q=%21wormfang%20turtle
+image=http://mtgimage.com/card/wormfang%20turtle.jpg
+value=3.417
+rarity=U
+type=Creature
+subtype=Nightmare,Beast,Turtle
+cost={2}{U}
+pt=2/4
+ability=When SN enters the battlefield, exile a land you control.;\
+        When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+timing=main

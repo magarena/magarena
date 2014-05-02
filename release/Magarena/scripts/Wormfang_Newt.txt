@@ -1,0 +1,12 @@
+name=Wormfang Newt
+url=http://www.magiccards.info/query?q=%21wormfang%20newt
+image=http://mtgimage.com/card/wormfang%20newt.jpg
+value=1.538
+rarity=C
+type=Creature
+subtype=Nightmare,Salamander,Beast
+cost={1}{U}
+pt=2/2
+ability=When SN enters the battlefield, exile a land you control.;\
+        When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+timing=main
