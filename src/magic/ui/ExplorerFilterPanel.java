@@ -25,12 +25,14 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.JToggleButton;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -53,10 +55,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
     private final MigLayout layout = new MigLayout();
     private final ExplorerPanel explorerPanel;
 
+    private final JToggleButton newCardsButton = new JToggleButton("New Cards");
+
     private ButtonControlledPopup setsPopup;
     private JCheckBox[] setsCheckBoxes;
     private JRadioButton[] setsFilterChoices;
-
     private ButtonControlledPopup cubePopup;
     private JCheckBox[] cubeCheckBoxes;
     private JRadioButton[] cubeFilterChoices;
@@ -101,6 +104,8 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         addCardColorFilter();
         addManaCostFilter();
         addCardRarityFilter();
+        addDownloadsFilter();
+        addDummyFilterButton();
         addResetButton();
         addSearchTextFilter();
 
@@ -111,6 +116,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         btn.setVisible(false);
         btn.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         add(btn);
+    }
+
+    private void addDownloadsFilter() {
+        newCardsButton.setToolTipText("Shows the most recent downloaded cards.");
+        newCardsButton.setFont(FontsAndBorders.FONT1);
+        newCardsButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
+        newCardsButton.addActionListener(this);
+        add(newCardsButton);
     }
 
     private void addSetsFilter() {
@@ -305,6 +318,11 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
             return false;
         }
 
+        // New Cards filter
+        if (newCardsButton.isSelected()) {
+            return DownloadImagesDialog.isCardInDownloadsLog(cardDefinition);
+        }
+
         return true;
     }
 
@@ -375,6 +393,7 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
         unselectFilterSet(costCheckBoxes, costFilterChoices);
         unselectFilterSet(subtypeCheckBoxes, subtypeFilterChoices);
         unselectFilterSet(rarityCheckBoxes, rarityFilterChoices);
+        newCardsButton.setSelected(false);
 
         nameTextField.setText("");
 
@@ -403,15 +422,14 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     @Override
     public void actionPerformed(final ActionEvent event) {
-        final Object source=event.getSource();
-
-        if (source == resetButton) {
+        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+        if (event.getSource() == resetButton) {
             resetFilters();
         }
-
         if (!disableUpdate) {
             explorerPanel.updateCardPool();
         }
+        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
     @Override

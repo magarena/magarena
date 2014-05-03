@@ -5,6 +5,7 @@ import magic.data.GeneralConfig;
 import magic.data.IconImages;
 import magic.data.MagicSetDefinitions;
 import magic.model.MagicDeck;
+import magic.ui.DownloadImagesDialog;
 import magic.ui.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
@@ -271,6 +272,7 @@ public class DeckEditorScreen
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }
         MagicSetDefinitions.clearLoadedSets();
+        DownloadImagesDialog.clearLoadedLogs();
         return true;
     }
 

@@ -9,6 +9,7 @@ import magic.data.GeneralConfig;
 import magic.data.History;
 import magic.data.IconImages;
 import magic.data.WebDownloader;
+import magic.model.MagicCardDefinition;
 
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
@@ -32,6 +33,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -59,6 +62,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
     private File oldDataFolder = new File("");
     private Proxy proxy;
     private boolean cancelDownload;
+    private static List<String> newCards = null;
 
     public DownloadImagesDialog(final MagicFrame frame) {
         super("Download card images and text");
@@ -451,4 +455,34 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
             }
         }
     }
+
+    public static boolean isCardInDownloadsLog(MagicCardDefinition card) {
+        if (newCards == null) {
+            newCards = getCardNamesFromDownloadLog();
+        }
+        return newCards.contains(card.getName());
+    }
+
+    private static List<String> getCardNamesFromDownloadLog() {
+        final List<String> cardNames = new ArrayList<String>();
+        Path logPath = Paths.get(MagicMain.getLogsPath()).resolve("downloads.log");
+        if (logPath.toFile().exists()) {
+            try {
+                for (final String cardName : Files.readAllLines(logPath, Charset.defaultCharset())) {
+                    cardNames.add(cardName.trim());
+                }
+            } catch (final IOException ex) {
+               throw new RuntimeException(ex);
+            }
+        }
+        return cardNames;
+    }
+
+    public static void clearLoadedLogs() {
+        if (newCards != null) {
+            newCards.clear();
+            newCards = null;
+        }
+    }
+
 }

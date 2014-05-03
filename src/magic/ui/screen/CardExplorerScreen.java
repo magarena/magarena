@@ -1,6 +1,7 @@
 package magic.ui.screen;
 
 import magic.data.MagicSetDefinitions;
+import magic.ui.DownloadImagesDialog;
 import magic.ui.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
@@ -61,6 +62,7 @@ public class CardExplorerScreen
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         MagicSetDefinitions.clearLoadedSets();
+        DownloadImagesDialog.clearLoadedLogs();
         return true;
     }
 
