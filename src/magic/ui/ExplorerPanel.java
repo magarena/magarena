@@ -35,7 +35,6 @@ import java.util.List;
 @SuppressWarnings("serial")
 public class ExplorerPanel extends TexturedPanel {
 
-    private static final String CARD_POOL_TITLE = "Card Pool";
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
     private CardTable cardPoolTable;
