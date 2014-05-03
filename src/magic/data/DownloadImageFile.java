@@ -37,4 +37,13 @@ public class DownloadImageFile extends WebDownloader {
     public boolean exists() {
         return file.exists() && file.length() != 0L && !cdef.isIgnored(file.length());
     }
+
+    public String getCardName() {
+        if (cdef != null) {
+            return cdef.getName();
+        } else {
+            return "";
+        }
+    }
+
 }

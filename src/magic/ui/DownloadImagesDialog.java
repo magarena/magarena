@@ -2,6 +2,7 @@ package magic.ui;
 
 import magic.MagicMain;
 import magic.data.CardDefinitions;
+import magic.data.DownloadImageFile;
 import magic.data.DownloadMissingFiles;
 import magic.data.FileIO;
 import magic.data.GeneralConfig;
@@ -26,9 +27,15 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DownloadImagesDialog extends JFrame implements Runnable,ActionListener {
     private static final long serialVersionUID = 1L;
@@ -325,6 +332,7 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         };
 
         int count=0;
+        final List<String> downloadedImages = new ArrayList<String>();
 
         for (final WebDownloader file : files) {
             SwingUtilities.invokeLater(new Runnable() {
@@ -348,6 +356,9 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
 
             if (!file.exists()) {
                 file.download(proxy);
+                if (file instanceof DownloadImageFile) {
+                    downloadedImages.add(((DownloadImageFile)file).getCardName());
+                }
             }
 
             count++;
@@ -376,6 +387,8 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         // reload text
         CardDefinitions.loadCardTexts();
 
+        saveDownloadLog(downloadedImages);
+
         if (!cancelDownload) {
             SwingUtilities.invokeLater(new Runnable() {
                 public void run() {
@@ -383,6 +396,23 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                     dispose();
                 }
             });
+        }
+    }
+
+    private void saveDownloadLog(final List<String> downloadLog) {
+        PrintWriter writer = null;
+        try {
+            Path logPath = Paths.get(MagicMain.getLogsPath()).resolve("downloads.log");
+            writer = new PrintWriter(logPath.toFile());
+            for (String cardName : downloadLog) {
+                writer.println(cardName);
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if (writer != null) {
+                writer.close();
+            }
         }
     }
 
