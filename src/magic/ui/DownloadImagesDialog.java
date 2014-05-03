@@ -400,20 +400,14 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
     }
 
     private void saveDownloadLog(final List<String> downloadLog) {
-        PrintWriter writer = null;
-        try {
-            Path logPath = Paths.get(MagicMain.getLogsPath()).resolve("downloads.log");
-            writer = new PrintWriter(logPath.toFile());
+        final Path logPath = Paths.get(MagicMain.getLogsPath()).resolve("downloads.log");
+        try (final PrintWriter writer = new PrintWriter(logPath.toFile())) {
             for (String cardName : downloadLog) {
                 writer.println(cardName);
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-        } finally {
-            if (writer != null) {
-                writer.close();
-            }
-        }
+        };
     }
 
     @Override
