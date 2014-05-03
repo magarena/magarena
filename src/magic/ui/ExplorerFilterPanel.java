@@ -530,8 +530,9 @@ public class ExplorerFilterPanel extends TexturedPanel implements ActionListener
 
     private void addResetButton() {
         resetButton = new JButton("Reset");
-        resetButton.setFont(new Font("dialog", Font.BOLD + Font.ITALIC, 12));
-        resetButton.setForeground(Color.BLUE);
+        resetButton.setToolTipText("Clears all filters");
+        resetButton.setFont(new Font("dialog", Font.BOLD, 12));
+        resetButton.setForeground(new Color(127, 23 ,23));
         resetButton.addActionListener(this);
         resetButton.setPreferredSize(BUTTON_HOLDER_PANEL_SIZE);
         add(resetButton, "w " + BUTTON_HOLDER_PANEL_SIZE.width + "!");
