@@ -1,0 +1,12 @@
+name=Champion's Drake
+url=http://magiccards.info/query?q=%21champion%27s%20drake
+image=http://mtgimage.com/card/champion%27s%20drake.jpg
+value=3.234
+rarity=C
+type=Creature
+subtype=Drake
+cost={1}{U}
+pt=1/1
+ability=flying
+timing=main
+requires_groovy_code
