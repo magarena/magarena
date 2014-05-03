@@ -1157,7 +1157,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game,final MagicEvent event) {
-                game.doAction(new MagicAddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Clockwork));
+                game.doAction(new MagicAddTurnTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Clockwork));
             }
         }
     ),
