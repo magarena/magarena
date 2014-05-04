@@ -894,6 +894,13 @@ public class MagicTargetFilterFactory {
             return target.isCreature() && target.hasCounters(MagicCounterType.PlusOne);
         }
     };
+
+    public static final MagicPermanentFilterImpl CREATURE_AT_LEAST_3_LEVEL_COUNTERS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() && 
+                   target.getCounters(MagicCounterType.Level) >= 3;
+        }
+    };
     
     public static final MagicPermanentFilterImpl CREATURE_MINSUONE_COUNTER = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
@@ -1667,6 +1674,7 @@ public class MagicTargetFilterFactory {
         single.put("Sliver creature or player", SLIVER_CREATURE_OR_PLAYER);
         single.put("nontoken Elf", NONTOKEN_ELF);
         single.put("legendary Samurai", LEGENDARY_SAMURAI);
+        single.put("creature with three or more level counters on it", CREATURE_AT_LEAST_3_LEVEL_COUNTERS);
        
         // <color|type> spell
         single.put("spell", SPELL);

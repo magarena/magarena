@@ -7,6 +7,6 @@ type=Creature
 subtype=Drake
 cost={1}{U}
 pt=1/1
-ability=flying
+ability=flying;\
+        SN gets +3/+3 as long as you control a creature with three or more level counters on it.
 timing=main
-requires_groovy_code
