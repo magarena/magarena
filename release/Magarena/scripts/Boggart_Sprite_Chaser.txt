@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Warrior
 cost={1}{R}
 pt=1/2
+ability=As long as you control a Faerie, SN gets +1/+1 and has flying.
 timing=main
-requires_groovy_code
