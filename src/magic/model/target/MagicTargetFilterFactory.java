@@ -1648,6 +1648,7 @@ public class MagicTargetFilterFactory {
         single.put("nonland permanent", NONLAND_PERMANENT);
         single.put("nonland permanent with converted mana cost 3 or less", NONLAND_PERMANENT_CMC_LEQ_3);
         single.put("black or red permanent", BLACK_RED_PERMANENT);
+        single.put("multicolored permanent", MULTICOLORED_PERMANENT);
         
         // <color|type|subtype>
         single.put("creature you own", CREATURE_YOU_OWN);
