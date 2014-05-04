@@ -7,5 +7,5 @@ type=Creature
 subtype=Zombie
 cost={3}{B}{B}
 pt=3/3
+ability=Whenever SN or another Zombie enters the battlefield, all non-Zombie creatures get -1/-1 until end of turn.
 timing=main
-requires_groovy_code

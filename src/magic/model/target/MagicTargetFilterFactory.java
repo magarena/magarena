@@ -1411,6 +1411,7 @@ public class MagicTargetFilterFactory {
         multiple.put("creatures with power 3 or greater", CREATURE_POWER_3_OR_MORE);
         multiple.put("monocolored creatures", MONOCOLORED_CREATURE);
         multiple.put("creature tokens", CREATURE_TOKEN);
+        multiple.put("all non-Zombie creatures", NONZOMBIE_CREATURE);
 
         // <color|type|subtype> you control
         multiple.put("lands you control", LAND_YOU_CONTROL);
