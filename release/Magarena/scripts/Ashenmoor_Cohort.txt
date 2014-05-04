@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Warrior
 cost={5}{B}
 pt=4/3
+ability=SN gets +1/+1 as long as you control another black creature.
 timing=main
-requires_groovy_code
