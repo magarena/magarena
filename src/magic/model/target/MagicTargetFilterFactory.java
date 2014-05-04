@@ -224,6 +224,14 @@ public class MagicTargetFilterFactory {
             return target.isLand() && !target.hasType(MagicType.Basic) && target.isController(player);
         }
     };
+
+    public static final MagicPermanentFilterImpl TRAPPED_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() && 
+                   target.getCounters(MagicCounterType.Trap) >= 1 && 
+                   target.isController(player);
+        }
+    };
     
     public static final MagicPermanentFilterImpl BASIC_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Land, MagicType.Basic, Control.Any);
     
@@ -1604,6 +1612,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
         single.put("nonbasic land you control", NONBASIC_LAND_YOU_CONTROL);
+        single.put("land with a trap counter on it you control", TRAPPED_LAND_YOU_CONTROL);
         single.put("Forest or Plains you control", FOREST_OR_PLAINS_YOU_CONTROL);
         single.put("creature or enchantment you control", CREATURE_OR_ENCHANTMENT_YOU_CONTROL);
         single.put("creature token you control", CREATURE_TOKEN_YOU_CONTROL);
