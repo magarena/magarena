@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Scout
 cost={1}{R}
 pt=2/1
+ability=When SN enters the battlefield, target creature can't block this turn.
 timing=fmain
-requires_groovy_code=Crossway Vampire
