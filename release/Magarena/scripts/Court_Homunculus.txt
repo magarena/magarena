@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Homunculus
 cost={W}
 pt=1/1
+ability=SN gets +1/+1 as long as you control another artifact.
 timing=main
-requires_groovy_code
