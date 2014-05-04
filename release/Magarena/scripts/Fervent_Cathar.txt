@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/1
-ability=haste
+ability=Haste;\
+        When SN enters the battlefield, target creature can't block this turn.
 timing=fmain
-requires_groovy_code
