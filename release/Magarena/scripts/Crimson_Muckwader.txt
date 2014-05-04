@@ -7,6 +7,6 @@ type=Creature
 subtype=Lizard
 cost={1}{R}
 pt=2/1
-ability={2}{B}: Regenerate SN.
+ability=SN gets +1/+1 as long as you control a Swamp.;\
+        {2}{B}: Regenerate SN.
 timing=main
-requires_groovy_code=Sedge Troll
