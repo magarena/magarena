@@ -7,5 +7,5 @@ type=Creature
 subtype=Giant,Soldier
 cost={3}{W}
 pt=2/5
+ability=SN has vigilance as long as you control a Gate.
 timing=main
-requires_groovy_code
