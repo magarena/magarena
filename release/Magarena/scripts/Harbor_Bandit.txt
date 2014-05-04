@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Rogue
 cost={2}{B}
 pt=2/2
-ability={1}{U}: SN can't be blocked this turn.
+ability=SN gets +1/+1 as long as you control an Island.;\
+        {1}{U}: SN can't be blocked this turn.
 timing=main
-requires_groovy_code
