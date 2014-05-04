@@ -770,23 +770,7 @@ public enum MagicAbility {
     },
     ControlPumpGainAlt("As long as you control a(n)? " + ARG.WORDRUN + ", SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + " )?\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicCondition condition = MagicConditionFactory.YouControl(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
-            );
-            if (arg.group("pt") != null) {
-                final String[] pt = ARG.pt(arg).replace("+","").split("/");
-                final int power = Integer.parseInt(pt[0]);
-                final int toughness = Integer.parseInt(pt[1]);
-                card.add(MagicStatic.genPTStatic(condition, power, toughness));
-            }
-            if (arg.group("any") != null) {
-                card.add(MagicStatic.genABStatic(
-                    condition,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
-                ));
-            }
+            ControlPumpGainAlt.addAbilityImpl(card, arg);
         }
     },
     Equip("Equip " + ARG.COST, 0) {
