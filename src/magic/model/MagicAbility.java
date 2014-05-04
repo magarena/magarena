@@ -768,9 +768,9 @@ public enum MagicAbility {
             }
         }
     },
-    ControlPumpGainAlt("As long as you control a(n)? " + ARG.WORDRUN + ", SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + " )?\\.", 0) {
+    ControlPumpGainAlt("As long as you control a(n)? " + ARG.WORDRUN + ", SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + ")?\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            ControlPumpGainAlt.addAbilityImpl(card, arg);
+            ControlPumpGain.addAbilityImpl(card, arg);
         }
     },
     Equip("Equip " + ARG.COST, 0) {
