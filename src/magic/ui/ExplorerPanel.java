@@ -33,7 +33,7 @@ import java.text.NumberFormat;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class ExplorerPanel extends TexturedPanel {
+public class ExplorerPanel extends JPanel {
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
@@ -70,7 +70,7 @@ public class ExplorerPanel extends TexturedPanel {
             this.deck.setContent(deck0);
         }
 
-        setBackground(FontsAndBorders.MAGSCREEN_FADE_COLOR);
+        setOpaque(false);
 
         // create ui components.
         buttonsPanel = new DeckEditorButtonsPanel();
