@@ -7,5 +7,5 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={1}{W}
 pt=2/1
+ability=As long as you control a Giant, SN gets +1/+1 and has first strike.
 timing=main
-requires_groovy_code
