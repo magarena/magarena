@@ -908,7 +908,7 @@ public enum MagicAbility {
             card.add(MagicWhenSelfTargetedTrigger.SacWhenTargeted);
         }
     },
-    WhenTargeted("When(ever)? SN becomes the target of a(n)? (?<wordrun>[^\\,]*), " + ARG.EFFECT,-10) {
+    WhenTargeted("When(ever)? SN becomes the target of a(n)? (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenSelfTargetedTrigger.create(
                 MagicTargetFilterFactory.singleItemOnStack(ARG.wordrun(arg)),
@@ -916,9 +916,16 @@ public enum MagicAbility {
             ));
         }
     },
-    WhenGainLife("Whenever you gain life, " + ARG.EFFECT,-10) {
+    WhenGainLife("Whenever you gain life, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenLifeIsGainedTrigger.createYou(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    WhenDrawCard("Whenever you draw a card, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenOtherDrawnTrigger.createYou(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
