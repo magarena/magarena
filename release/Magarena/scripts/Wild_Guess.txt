@@ -5,6 +5,6 @@ value=3.222
 rarity=C
 type=Sorcery
 cost={R}{R}
+ability=As an additional cost to cast SN, discard a card.
 effect=PN draws two cards.
 timing=main
-requires_groovy_code
