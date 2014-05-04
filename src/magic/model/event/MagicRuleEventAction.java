@@ -388,7 +388,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    Draw(
+    DrawLoseSelf(
+        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and lose(s)? (?<amount2>[a-z]+) life\\.", 
+        MagicTiming.Draw, 
+        "Draw"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount2 = EnglishToInt.convert(matcher.group("amount2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new MagicDrawAction(event.getPlayer(), amount));
+                    game.doAction(new MagicChangeLifeAction(event.getPlayer(), -amount2));
+                }
+            };
+        }
+    },
+    DrawSelf(
         "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)?\\.", 
         MagicTiming.Draw, 
         "Draw"
