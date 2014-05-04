@@ -389,7 +389,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawLoseSelf(
-        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and you lose(s)? (?<amount2>[0-9]+) life\\.", 
+        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
