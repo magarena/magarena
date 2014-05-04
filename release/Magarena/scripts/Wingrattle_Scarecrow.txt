@@ -7,5 +7,6 @@ type=Artifact,Creature
 subtype=Scarecrow
 cost={3}
 pt=2/2
+ability=SN has flying as long as you control a blue creature.;\
+        SN has persist as long as you control a black creature.
 timing=artifact
-requires_groovy_code
