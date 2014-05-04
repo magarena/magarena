@@ -698,33 +698,6 @@ public enum MagicAbility {
             card.add(MagicCascadeTrigger.create());
         }
     },
-    Lord("lord " + ARG.ANY, 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
-            final String arg = matcher.group("any");
-            final String prefix = "other ";
-            final boolean other = arg.startsWith(prefix);
-            final String rest = arg.replaceFirst(prefix, "");
-            final String[] tokens = rest.split(" get | have | has ");
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(tokens[0]);
-            if (rest.contains(" get ")) {
-                final String[] pt = tokens[1].replace('+','0').split("/");
-                final int power = Integer.parseInt(pt[0]);
-                final int toughness = Integer.parseInt(pt[1]);
-                if (other) {
-                    card.add(MagicStatic.genPTStaticOther(filter, power, toughness));
-                } else {
-                    card.add(MagicStatic.genPTStatic(filter, power, toughness));
-                }
-            } else {
-                final MagicAbilityList abilityList = MagicAbility.getAbilityList(tokens[1]);
-                if (other) {
-                    card.add(MagicStatic.genABStaticOther(filter, abilityList));
-                } else {
-                    card.add(MagicStatic.genABStatic(filter, abilityList));
-                }
-            }
-        }
-    },
     AttachedPumpGain("(Equipped|Enchanted) creature gets " + ARG.PT + "((,)? and (has )?|, has )" + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String[] pt = ARG.pt(arg).replace("+","").split("/");
@@ -746,7 +719,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(power, toughness));
         }
     },
-    AttachedCreatureGain("(Equipped|Enchanted) " + ARG.WORD1 + " " + ARG.ANY + "(\\.)?", 0) {
+    AttachedCreatureGain("(Equipped|Enchanted) (creature|artifact|land|permanent) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.genABStatic(
                 MagicAbility.getAbilityList(
@@ -948,6 +921,67 @@ public enum MagicAbility {
             card.add(MagicWhenLifeIsGainedTrigger.createYou(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
+        }
+    },
+    LordPumpGain("(?<other>other )?" + ARG.WORDRUN + " get " + ARG.PT + "((,)? and (have )?|, have )" + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            final boolean other = arg.group("other") != null; 
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            if (other) {
+                card.add(MagicStatic.genPTStaticOther(filter, power, toughness));
+                card.add(MagicStatic.genABStaticOther(
+                    filter,
+                    MagicAbility.getAbilityList(
+                        ARG.any(arg)
+                    )
+                ));
+            } else {
+                card.add(MagicStatic.genPTStatic(filter, power, toughness));
+                card.add(MagicStatic.genABStatic(
+                    filter,
+                    MagicAbility.getAbilityList(
+                        ARG.any(arg)
+                    )
+                ));
+            }
+        }
+    },
+    LordPump("(?<other>other )?" + ARG.WORDRUN + " get " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            final boolean other = arg.group("other") != null; 
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            if (other) {
+                card.add(MagicStatic.genPTStaticOther(filter, power, toughness));
+            } else {
+                card.add(MagicStatic.genPTStatic(filter, power, toughness));
+            }
+        }
+    },
+    LordGain("(?<other>other )?" + ARG.WORDRUN + " have " + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final boolean other = arg.group("other") != null;
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun(arg));
+            if (other) {
+                card.add(MagicStatic.genABStaticOther(
+                    filter,
+                    MagicAbility.getAbilityList(
+                        ARG.any(arg)
+                    )
+                ));
+            } else {
+                card.add(MagicStatic.genABStatic(
+                    filter,
+                    MagicAbility.getAbilityList(
+                        ARG.any(arg)
+                    )
+                ));
+            }
         }
     },
     None("",0);

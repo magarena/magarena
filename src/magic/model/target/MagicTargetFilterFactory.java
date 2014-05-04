@@ -1423,7 +1423,7 @@ public class MagicTargetFilterFactory {
         multiple.put("faeries you control", FAERIE_YOU_CONTROL);
         multiple.put("rats you control", RAT_YOU_CONTROL);
         multiple.put("allies you control", ALLY_YOU_CONTROL);
-        multiple.put("each wolf you control", WOLF_YOU_CONTROL);
+        multiple.put("Wolf permanents you control", WOLF_YOU_CONTROL);
         
         // <color|type|subtype> your opponents control
         multiple.put("creatures with flying your opponents control", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
