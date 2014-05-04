@@ -12,6 +12,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.condition.MagicCondition;
 import magic.model.action.MagicRemoveStaticAction;
 import magic.model.target.MagicPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
@@ -101,6 +102,24 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
         };
     }
     
+    public static MagicStatic genPTStatic(final MagicCondition condition, final int givenPower, final int givenToughness) {
+        return new MagicStatic(
+            MagicLayer.ModPT
+        ) {
+            @Override
+            public void modPowerToughness(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final MagicPowerToughness pt) {
+                pt.add(givenPower, givenToughness);
+            }
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return condition.accept(source);
+            }
+        };
+    }
+    
     public static MagicStatic genPTStaticOther(final MagicTargetFilter<MagicPermanent> filter, final int givenPower, final int givenToughness) {
         return new MagicStatic(
             MagicLayer.ModPT,
@@ -163,6 +182,24 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
                 final MagicPermanent permanent,
                 final Set<MagicAbility> flags) {
                 abilityList.giveAbility(permanent, flags);
+            }
+        };
+    }
+    
+    public static MagicStatic genABStatic(final MagicCondition condition, final MagicAbilityList abilityList) {
+        return new MagicStatic(
+            MagicLayer.Ability
+        ) {
+            @Override
+            public void modAbilityFlags(
+                final MagicPermanent source,
+                final MagicPermanent permanent,
+                final Set<MagicAbility> flags) {
+                abilityList.giveAbility(permanent, flags);
+            }
+            @Override
+            public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+                return condition.accept(source);
             }
         };
     }

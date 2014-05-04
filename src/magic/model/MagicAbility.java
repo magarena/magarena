@@ -7,6 +7,8 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.*;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
 import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicThiefTrigger.Type;
 
@@ -743,6 +745,27 @@ public enum MagicAbility {
                     ARG.any(arg)
                 )
             ));
+        }
+    },
+    ControlPumpGain("SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + " )?as long as you control a(n)? " + ARG.WORDRUN + "\\.", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCondition condition = MagicConditionFactory.YouControl(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+            );
+            if (arg.group("pt") != null) {
+                final String[] pt = ARG.pt(arg).replace("+","").split("/");
+                final int power = Integer.parseInt(pt[0]);
+                final int toughness = Integer.parseInt(pt[1]);
+                card.add(MagicStatic.genPTStatic(condition, power, toughness));
+            }
+            if (arg.group("any") != null) {
+                card.add(MagicStatic.genABStatic(
+                    condition,
+                    MagicAbility.getAbilityList(
+                        ARG.any(arg)
+                    )
+                ));
+            }
         }
     },
     Equip("Equip " + ARG.COST, 0) {

@@ -9,6 +9,7 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicPermanentActivation;
+import magic.model.target.MagicTargetFilter;
 
 public class MagicConditionFactory {
     
@@ -80,6 +81,15 @@ public class MagicConditionFactory {
             public boolean accept(final MagicSource source) {
                 final MagicGame game = source.getGame();
                 return !game.getStack().hasActivationOnTop(source,act);
+            }
+        };
+    }
+    
+    public static MagicCondition YouControl(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().controlsPermanent(filter);
             }
         };
     }
