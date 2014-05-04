@@ -1,5 +1,5 @@
 name=Acceptable Losses
-url=http://magiccards.info/od/en/172.html
+url=http://magiccards.info/query?q=%21acceptable%20losses
 image=http://mtgimage.com/card/acceptable%20losses.jpg
 value=1.045
 rarity=C
