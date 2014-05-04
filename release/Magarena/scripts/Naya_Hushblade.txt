@@ -7,5 +7,5 @@ type=Creature
 subtype=Elf,Rogue
 cost={R/W}{G}
 pt=2/1
+ability=As long as you control another multicolored permanent, SN gets +1/+1 and has shroud.
 timing=main
-requires_groovy_code
