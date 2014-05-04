@@ -7,5 +7,5 @@ type=Creature
 subtype=Ape
 cost={R}
 pt=1/1
+ability=SN gets +1/+2 as long as you control a Forest.
 timing=main
-requires_groovy_code
