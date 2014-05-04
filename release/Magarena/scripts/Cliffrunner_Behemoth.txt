@@ -7,5 +7,6 @@ type=Creature
 subtype=Rhino,Beast
 cost={3}{G}
 pt=5/3
+ability=SN has haste as long as you control a red permanent.;\
+        SN has lifelink as long as you control a white permanent.
 timing=main
-requires_groovy_code
