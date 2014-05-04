@@ -7,5 +7,5 @@ type=Creature
 subtype=Horror
 cost={2}{B}
 pt=2/2
+ability=When SN enters the battlefield, you draw a card and you lose 1 life.
 timing=fmain
-requires_groovy_code

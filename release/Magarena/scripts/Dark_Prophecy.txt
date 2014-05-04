@@ -5,5 +5,5 @@ value=3.590
 rarity=R
 type=Enchantment
 cost={B}{B}{B}
+ability=Whenever a creature you control dies, you draw a card and lose 1 life.
 timing=enchantment
-requires_groovy_code
