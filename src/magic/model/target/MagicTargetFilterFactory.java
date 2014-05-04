@@ -1657,6 +1657,7 @@ public class MagicTargetFilterFactory {
         single.put("attacking or blocking Spirit",  ATTACKING_OR_BLOCKING_SPIRIT);
         single.put("basic land", BASIC_LAND);
         single.put("nonbasic land", NONBASIC_LAND);
+        single.put("snow land", SNOW_LAND);
         single.put("Forest or Plains", FOREST_OR_PLAINS);
         single.put("artifact or land", ARTIFACT_OR_LAND);
         single.put("artifact or enchantment", ARTIFACT_OR_ENCHANTMENT);
