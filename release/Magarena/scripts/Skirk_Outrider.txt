@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=2/2
+ability=As long as you control a Beast, SN gets +2/+2 and has trample.
 timing=main
-requires_groovy_code
