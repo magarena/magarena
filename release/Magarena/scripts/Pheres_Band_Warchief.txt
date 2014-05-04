@@ -7,6 +7,7 @@ type=Creature
 subtype=Centaur,Warrior
 pt=3/3
 cost={3}{G}
-ability=Vigilance;trample;\
-        lord other Centaur creatures you control get +1/+1 and have vigilance and trample.
+ability=Vigilance;\
+        Trample;\
+        Other Centaur creatures you control get +1/+1 and have vigilance and trample.
 timing=main
