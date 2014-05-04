@@ -6,6 +6,6 @@ rarity=R
 type=Tribal,Enchantment
 subtype=Elemental
 cost={1}{W}
-ability={2}{W}, Remove four hoofprint counters from SN, {YourTurn}: Put a 4/4 white Elemental creature token with flying onto the battlefield.
+ability=Whenever you draw a card, you may put a hoofprint counter on SN.;\
+        {2}{W}, Remove four hoofprint counters from SN, {YourTurn}: Put a 4/4 white Elemental creature token with flying onto the battlefield.
 timing=enchantment
-requires_groovy_code
