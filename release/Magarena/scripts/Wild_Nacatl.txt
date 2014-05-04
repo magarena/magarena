@@ -7,5 +7,6 @@ type=Creature
 subtype=Cat,Warrior
 cost={G}
 pt=1/1
+ability=SN gets +1/+1 as long as you control a Mountain.;\
+        SN gets +1/+1 as long as you control a Plains.
 timing=main
-requires_groovy_code
