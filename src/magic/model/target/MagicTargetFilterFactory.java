@@ -1395,6 +1395,7 @@ public class MagicTargetFilterFactory {
        
         // <color|type|subtype> creatures
         multiple.put("creatures", CREATURE);
+        multiple.put("all creatures", CREATURE);
         multiple.put("nonblack creatures", NONBLACK_CREATURE);
         multiple.put("nonwhite creatures", NONWHITE_CREATURE);
         multiple.put("nonartifact creatures", NONARTIFACT_CREATURE);
