@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=1/1
+ability=As long as you control a Griffin creature, SN gets +3/+3 and has flying.
 timing=main
-requires_groovy_code
