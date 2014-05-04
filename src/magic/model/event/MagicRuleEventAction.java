@@ -389,14 +389,14 @@ public enum MagicRuleEventAction {
         }
     },
     DrawLoseSelf(
-        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and lose(s)? (?<amount2>[a-z]+) life\\.", 
+        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and you lose(s)? (?<amount2>[0-9]+) life\\.", 
         MagicTiming.Draw, 
         "Draw"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final int amount2 = EnglishToInt.convert(matcher.group("amount2"));
+            final int amount2 = Integer.parseInt(matcher.group("amount2"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2154,6 +2154,7 @@ public enum MagicRuleEventAction {
             .replaceAll("discard ","discards ")
             .replaceAll("reveal ","reveals ")
             .replaceAll("(S|s)huffle your ","PN shuffles PN's ")
+            .replaceAll("(Y|y)ou draw","PN draws")
             .replaceAll("(D|d)raw ","PN draws ")
             .replaceAll("(S|s)acrifice ","PN sacrifices ")
             .replaceAll("(Y|y)ou don't","PN doesn't")
@@ -2161,7 +2162,6 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou gain ","PN gains ")
             .replaceAll("(Y|y)ou lose ","PN loses ")
             .replaceAll("(Y|y)ou control","PN controls")
-            .replaceAll("(Y|y)ou draw","PN draws")
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("(P|p)ut ","PN puts ");
