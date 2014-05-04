@@ -7,6 +7,6 @@ type=Creature
 subtype=Faerie,Soldier
 cost={1}{U}
 pt=1/1
-ability=flying
+ability=Flying;\
+        SN gets +1/+1 as long as you control another blue creature.
 timing=main
-requires_groovy_code
