@@ -7,7 +7,7 @@ type=Creature
 subtype=Sliver
 cost={2}{R}
 pt=2/2
-ability=All Sliver creatures have "SN gets +1/+1 as long as you control a Swamp.";\
-        All Slivers have "{B}: Regenerate SN."
 static=all
+ability=all Slivers have "{B}: Regenerate SN."
 timing=main
+requires_groovy_code
