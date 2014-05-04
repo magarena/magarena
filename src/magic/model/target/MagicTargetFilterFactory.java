@@ -547,10 +547,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl MYR_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Myr, Control.You);
     
-    public static final MagicPermanentFilterImpl LEGENDARY_SAMURAI_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl LEGENDARY_SAMURAI = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isController(player) &&
-                   target.hasSubType(MagicSubType.Samurai) &&
+            return target.hasSubType(MagicSubType.Samurai) &&
                    target.hasType(MagicType.Legendary);
         }
     };
@@ -1667,6 +1666,7 @@ public class MagicTargetFilterFactory {
         single.put("creature or player", CREATURE_OR_PLAYER);
         single.put("Sliver creature or player", SLIVER_CREATURE_OR_PLAYER);
         single.put("nontoken Elf", NONTOKEN_ELF);
+        single.put("legendary Samurai", LEGENDARY_SAMURAI);
        
         // <color|type> spell
         single.put("spell", SPELL);
