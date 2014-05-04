@@ -1,0 +1,15 @@
+name=Tribal Golem
+url=http://www.magiccards.info/query?q=%21tribal%20golem
+image=http://mtgimage.com/card/tribal%20golem.jpg
+value=3.635
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=4/4
+ability=SN has trample as long as you control a Beast.;\
+        SN has haste as long as you control a Goblin.;\
+        SN has first strike as long as you control a Soldier.;\
+        SN has flying as long as you control a Wizard.;\
+        SN has "{B}: Regenerate SN." as long as you control a Zombie.
+timing=main

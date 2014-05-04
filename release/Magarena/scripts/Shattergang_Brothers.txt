@@ -1,0 +1,13 @@
+name=Shattergang Brothers
+url=http://www.magiccards.info/query?q=%21shattergang%20brothers
+image=http://mtgimage.com/card/shattergang%20brothers.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Goblin,Artificer
+cost={1}{B}{R}{G}
+pt=3/3
+ability={2}{B}, Sacrifice a creature: Each other player sacrifices a creature.;\
+        {2}{R}, Sacrifice an artifact: Each other player sacrifices an artifact.;\
+        {2}{G}, Sacrifice an enchantment: Each other player sacrifices an enchantment.
+timing=main

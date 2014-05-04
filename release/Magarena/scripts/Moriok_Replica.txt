@@ -1,0 +1,11 @@
+name=Moriok Replica
+url=http://www.magiccards.info/query?q=%21moriok%20replica
+image=http://mtgimage.com/card/moriok%20replica.jpg
+value=3.337
+rarity=C
+type=Artifact,Creature
+subtype=Warrior
+cost={3}
+pt=2/2
+ability={1}{B}, Sacrifice SN: You draw two cards and lose 2 life.
+timing=artifact

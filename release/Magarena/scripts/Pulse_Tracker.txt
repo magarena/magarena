@@ -1,0 +1,11 @@
+name=Pulse Tracker
+url=http://www.magiccards.info/query?q=%21pulse%20tracker
+image=http://mtgimage.com/card/pulse%20tracker.jpg
+value=3.951
+rarity=C
+type=Creature
+subtype=Vampire,Rogue
+cost={B}
+pt=1/1
+ability=Whenever SN attacks, each opponent loses 1 life.
+timing=main
