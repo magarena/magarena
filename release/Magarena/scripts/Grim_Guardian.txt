@@ -4,6 +4,7 @@ image=http://mtgimage.com/card/grim%20guardian.jpg
 value=2.50
 rarity=C
 type=Enchantment,Creature
+subtype=Zombie
 cost={2}{B}
 pt=1/4
 ability=Whenever SN or another enchantment enters the battlefield under your control, each opponent loses 1 life.
