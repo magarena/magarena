@@ -10,6 +10,7 @@ import magic.model.MagicSubType;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicPermanentActivation;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicOtherPermanentTargetFilter;
 
 public class MagicConditionFactory {
     
@@ -90,6 +91,17 @@ public class MagicConditionFactory {
             @Override
             public boolean accept(final MagicSource source) {
                 return source.getController().controlsPermanent(filter);
+            }
+        };
+    }
+    
+    public static MagicCondition YouControlAnother(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().controlsPermanent(
+                    new MagicOtherPermanentTargetFilter(filter, (MagicPermanent)source)
+                );
             }
         };
     }

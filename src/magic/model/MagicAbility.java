@@ -747,11 +747,15 @@ public enum MagicAbility {
             ));
         }
     },
-    ControlPumpGain("SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + " )?as long as you control a(n)? " + ARG.WORDRUN + "\\.", 0) {
+    ControlPumpGain("SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + " )?as long as you control (a(n)?|(?<another>another)) " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicCondition condition = MagicConditionFactory.YouControl(
-                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
-            );
+            final MagicCondition condition = arg.group("another") != null ?
+                MagicConditionFactory.YouControlAnother(
+                    MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+                ):
+                MagicConditionFactory.YouControl(
+                    MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+                );
             if (arg.group("pt") != null) {
                 final String[] pt = ARG.pt(arg).replace("+","").split("/");
                 final int power = Integer.parseInt(pt[0]);
@@ -768,7 +772,7 @@ public enum MagicAbility {
             }
         }
     },
-    ControlPumpGainAlt("As long as you control a(n)? " + ARG.WORDRUN + ", SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + ")?\\.", 0) {
+    ControlPumpGainAlt("As long as you control (a(n)?|(?<another>another)) " + ARG.WORDRUN + ", SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + ")?\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ControlPumpGain.addAbilityImpl(card, arg);
         }
