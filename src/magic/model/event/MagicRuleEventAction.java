@@ -587,6 +587,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    EachLoseLife(
+        "Each (?<group>[^\\.]*) loses (?<amount>[0-9]+) life\\.", 
+        MagicTiming.Removal, 
+        "-Life"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.singlePlayer(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer player : game.filterPlayers(event.getPlayer(), filter)) {
+                        game.doAction(new MagicChangeLifeAction(player, -amount));
+                    }
+                }
+            };
+        }
+    },
     LoseLifeChosen(
         "(?<choice>[^\\.]*) lose(s)? (?<amount>[0-9]+) life\\.", 
         MagicTargetHint.Negative, 
