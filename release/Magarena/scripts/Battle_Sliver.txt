@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={4}{R}
 pt=3/3
-ability=lord sliver creatures you control get +2/+0
+ability=sliver creatures you control get +2/+0
 static=player
 timing=main

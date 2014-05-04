@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat,Cleric
 cost={3}{W}
 pt=2/5
-ability=lord artifacts you control have hexproof
+ability=artifacts you control have hexproof
 timing=main

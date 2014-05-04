@@ -7,6 +7,6 @@ type=Creature
 subtype=Cyclops,Warrior
 cost={1}{B}{R}{G}
 pt=3/4
-ability=lord creatures you control have haste
+ability=creatures you control have haste
 static=player
 timing=fmain

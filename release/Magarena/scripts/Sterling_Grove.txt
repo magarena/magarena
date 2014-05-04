@@ -5,6 +5,6 @@ value=4.350
 rarity=U
 type=Enchantment
 cost={G}{W}
-ability=lord other enchantments you control have shroud;\
+ability=other enchantments you control have shroud;\
         {1}, Sacrifice SN: Search your library for an enchantment card and reveal that card. Shuffle your library, then put the card on top of it.
 timing=enchantment

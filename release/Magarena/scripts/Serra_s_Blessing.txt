@@ -5,6 +5,6 @@ value=4.430
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=lord creatures you control have vigilance
+ability=creatures you control have vigilance
 static=player
 timing=enchantment

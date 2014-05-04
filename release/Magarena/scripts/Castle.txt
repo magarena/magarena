@@ -6,5 +6,5 @@ rarity=U
 type=Enchantment
 cost={3}{W}
 static=player
-ability=lord untapped creatures you control get +0/+2
+ability=untapped creatures you control get +0/+2
 timing=main

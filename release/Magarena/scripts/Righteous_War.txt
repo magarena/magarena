@@ -5,7 +5,7 @@ value=3.602
 rarity=R
 type=Enchantment
 cost={1}{W}{B}
-ability=lord white creatures you control have protection from black;\
-        lord black creatures you control have protection from white
+ability=white creatures you control have protection from black;\
+        black creatures you control have protection from white
 static=player
 timing=enchantment

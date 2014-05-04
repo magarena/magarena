@@ -5,5 +5,5 @@ value=1.176
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}
-ability=lord white creatures have plainswalk
+ability=white creatures have plainswalk
 timing=enchantment

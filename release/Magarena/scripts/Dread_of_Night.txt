@@ -5,5 +5,5 @@ value=4.036
 rarity=U
 type=Enchantment
 cost={B}
-ability=lord white creatures get -1/-1
+ability=white creatures get -1/-1
 timing=enchantment

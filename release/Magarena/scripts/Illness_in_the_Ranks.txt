@@ -5,5 +5,5 @@ value=3.208
 rarity=U
 type=Enchantment
 cost={B}
-ability=lord Creature tokens get -1/-1
+ability=Creature tokens get -1/-1
 timing=enchantment

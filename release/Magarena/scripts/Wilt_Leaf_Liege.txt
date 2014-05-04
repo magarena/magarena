@@ -7,7 +7,7 @@ type=Creature
 subtype=Elf,Knight
 cost={1}{G/W}{G/W}{G/W}
 pt=4/4
-ability=lord other green creatures you control get +1/+1;\
-        lord other white creatures you control get +1/+1;\
+ability=other green creatures you control get +1/+1;\
+        other white creatures you control get +1/+1;\
         If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.
 timing=main

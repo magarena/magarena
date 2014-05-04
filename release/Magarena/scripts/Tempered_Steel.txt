@@ -5,5 +5,5 @@ value=4.089
 rarity=R
 type=Enchantment
 cost={1}{W}{W}
-ability=lord artifact creatures you control get +2/+2
+ability=artifact creatures you control get +2/+2
 timing=enchantment

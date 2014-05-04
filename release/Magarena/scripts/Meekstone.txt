@@ -5,6 +5,6 @@ value=4.288
 rarity=R
 type=Artifact
 cost={1}
-ability=lord creatures with power 3 or greater have doesn't untap during your untap step.
+ability=creatures with power 3 or greater have doesn't untap during your untap step.
 static=all
 timing=artifact

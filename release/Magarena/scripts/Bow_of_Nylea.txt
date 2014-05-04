@@ -5,7 +5,7 @@ value=3.697
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={1}{G}{G}
-ability=lord attacking creatures you control have deathtouch.;\
+ability=attacking creatures you control have deathtouch.;\
         {1}{G},{T}:Put a +1/+1 counter on target creature.;\
         {1}{G},{T}:SN deals 2 damage to target creature with flying.;\
         {1}{G},{T}:You gain 3 life.

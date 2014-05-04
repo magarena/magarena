@@ -7,7 +7,7 @@ type=Creature
 subtype=Merfolk
 cost={1}{U}{U}
 pt=2/2
-ability=lord other merfolk creatures you control get +1/+1;\
+ability=other merfolk creatures you control get +1/+1;\
         {T}: Target Merfolk creature can't be blocked this turn.
 static=player
 timing=main

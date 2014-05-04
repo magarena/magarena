@@ -7,6 +7,6 @@ type=Creature
 subtype=Kobold,Soldier
 cost={1}{R}
 pt=1/2
-ability=lord Kobold creatures you control get +1/+1;\
-        lord Kobold creatures you control have trample.
+ability=Kobold creatures you control get +1/+1;\
+        Kobold creatures you control have trample.
 timing=main

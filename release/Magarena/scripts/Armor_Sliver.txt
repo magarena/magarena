@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{W}
 pt=2/2
-ability=lord all sliver creatures have "{2}: SN gets +0/+1 until end of turn."
+ability=all sliver creatures have "{2}: SN gets +0/+1 until end of turn."
 static=all
 timing=main

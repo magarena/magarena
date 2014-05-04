@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={5}{R}
 pt=3/3
-ability=lord all sliver creatures have double strike
+ability=all sliver creatures have double strike
 static=all
 timing=main

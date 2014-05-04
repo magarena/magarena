@@ -5,5 +5,5 @@ value=2.488
 rarity=U
 type=Enchantment
 cost={3}{R}
-ability=lord attacking creatures you control get +1/+0
+ability=attacking creatures you control get +1/+0
 timing=enchantment

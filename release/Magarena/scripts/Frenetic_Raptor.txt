@@ -7,6 +7,6 @@ type=Creature
 subtype=Lizard,Beast
 cost={5}{R}
 pt=6/6
-ability=lord beast creatures have "SN can't block."
+ability=beast creatures have "SN can't block."
 static=all
 timing=main

@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={4}{U}
 pt=3/3
-ability=lord all sliver creatures have vigilance
+ability=all sliver creatures have vigilance
 static=all
 timing=main

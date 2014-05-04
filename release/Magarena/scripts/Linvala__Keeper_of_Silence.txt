@@ -7,5 +7,5 @@ type=Legendary,Creature
 subtype=Angel
 cost={2}{W}{W}
 pt=3/4
-ability=flying;lord creatures your opponents control have can't activate abilities
+ability=flying;creatures your opponents control have can't activate abilities
 timing=main

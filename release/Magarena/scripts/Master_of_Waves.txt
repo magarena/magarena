@@ -7,6 +7,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={3}{U}
 pt=2/1
-ability=protection from red;lord elemental creatures you control get +1/+1
+ability=protection from red;elemental creatures you control get +1/+1
 timing=main
 requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Satyr,Beast
 cost={2}{G}{G}
 pt=5/4
-ability=lord all creatures have forestwalk
+ability=all creatures have forestwalk
 timing=main

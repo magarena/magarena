@@ -7,6 +7,6 @@ type=Creature
 subtype=Angel
 cost={2}{W}{W}
 pt=4/3
-ability=flying;exalted;lord other creatures you control have exalted
+ability=flying;exalted;other creatures you control have exalted
 static=player
 timing=main

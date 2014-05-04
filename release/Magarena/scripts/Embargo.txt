@@ -5,6 +5,6 @@ value=3.870
 rarity=R
 type=Enchantment
 cost={3}{U}
-ability=lord nonland permanents have "SN doesn't untap during your untap step.";\
+ability=nonland permanents have "SN doesn't untap during your untap step.";\
         At the beginning of your upkeep, you lose 2 life.
 timing=enchantment

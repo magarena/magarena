@@ -5,6 +5,6 @@ value=4.169
 rarity=R
 type=Enchantment
 cost={W}{W}
-ability=lord white creatures get +1/+1
+ability=white creatures get +1/+1
 static=all
 timing=enchantment

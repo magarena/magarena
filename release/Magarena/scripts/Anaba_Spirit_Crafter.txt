@@ -7,6 +7,6 @@ type=Creature
 subtype=Minotaur,Shaman
 cost={2}{R}{R}
 pt=1/3
-ability=lord minotaur creatures get +1/+0
+ability=minotaur creatures get +1/+0
 static=all
 timing=main

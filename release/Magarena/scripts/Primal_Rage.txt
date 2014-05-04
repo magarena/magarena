@@ -5,6 +5,6 @@ value=4.196
 rarity=U
 type=Enchantment
 cost={1}{G}
-ability=lord creatures you control have trample
+ability=creatures you control have trample
 static=player
 timing=enchantment

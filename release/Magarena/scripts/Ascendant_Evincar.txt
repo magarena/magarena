@@ -8,7 +8,7 @@ subtype=Vampire
 cost={4}{B}{B}
 pt=3/3
 ability=flying;\
-        lord other black creatures get +1/+1;\
-        lord nonblack creatures get -1/-1
+        other black creatures get +1/+1;\
+        nonblack creatures get -1/-1
 static=all
 timing=main

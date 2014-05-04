@@ -8,7 +8,7 @@ subtype=Praetor
 cost={5}{W}{W}
 pt=4/7
 ability=vigilance;\
-        lord other creatures you control get +2/+2;\
-        lord creatures your opponents control get -2/-2
+        other creatures you control get +2/+2;\
+        creatures your opponents control get -2/-2
 static=all
 timing=main

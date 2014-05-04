@@ -5,5 +5,5 @@ value=4.248
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=lord artifacts have can't activate abilities
+ability=artifacts have can't activate abilities
 timing=enchantment

@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={4}{B}{B}
 pt=3/3
-ability=flying;lord creatures with flying your opponents control get -1/-1
+ability=flying;creatures with flying your opponents control get -1/-1
 timing=main

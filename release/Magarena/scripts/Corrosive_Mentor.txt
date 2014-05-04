@@ -7,6 +7,6 @@ type=Creature
 subtype=Elemental,Rogue
 cost={2}{B}
 pt=1/3
-ability=lord black creatures you control have wither
+ability=black creatures you control have wither
 static=player
 timing=main

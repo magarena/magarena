@@ -7,5 +7,5 @@ type=Creature
 subtype=Giant,Minion
 cost={2}{B}{B}
 pt=4/3
-ability=lord other black creatures get -1/-1
+ability=other black creatures get -1/-1
 timing=main

@@ -5,5 +5,5 @@ value=3.354
 rarity=U
 type=Enchantment
 cost={1}{G}
-ability=lord creatures with flying get -2/-0
+ability=creatures with flying get -2/-0
 timing=enchantment

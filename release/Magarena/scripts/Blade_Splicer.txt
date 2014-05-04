@@ -8,6 +8,6 @@ subtype=Human,Artificer
 cost={2}{W}
 pt=1/1
 ability=When SN enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield.;\
-        lord golem creatures you control have first strike
+        golem creatures you control have first strike
 static=player
 timing=main

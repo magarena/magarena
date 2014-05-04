@@ -5,6 +5,6 @@ value=4.014
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=lord other enchantments you control have shroud;\
-        lord enchanted creatures you control have shroud
+ability=Other enchantments you control have shroud.;\
+        Enchanted creatures you control have shroud.
 timing=enchantment

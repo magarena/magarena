@@ -5,6 +5,6 @@ value=4.015
 rarity=U
 type=Enchantment
 cost={2}{U}{U}
-ability=lord creatures you control have flying
+ability=creatures you control have flying
 static=player
 timing=enchantment

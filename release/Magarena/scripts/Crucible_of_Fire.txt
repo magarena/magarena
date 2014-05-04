@@ -5,6 +5,6 @@ value=3.058
 rarity=R
 type=Enchantment
 cost={3}{R}
-ability=lord dragon creatures you control get +3/+3
+ability=dragon creatures you control get +3/+3
 static=player
 timing=enchantment

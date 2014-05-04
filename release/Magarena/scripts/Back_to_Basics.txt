@@ -5,5 +5,5 @@ value=4.597
 rarity=R
 type=Enchantment
 cost={2}{U}
-ability=lord nonbasic lands have "SN doesn't untap during your untap step."
+ability=nonbasic lands have "SN doesn't untap during your untap step."
 timing=enchantment

@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={W}
 pt=1/1
-ability=lord all sliver creatures have flanking
+ability=all sliver creatures have flanking
 static=all
 timing=main

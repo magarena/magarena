@@ -5,6 +5,6 @@ value=4.136
 rarity=R
 type=Enchantment
 cost={1}{B}
-ability=lord black creatures get +1/+1
+ability=black creatures get +1/+1
 static=all
 timing=enchantment

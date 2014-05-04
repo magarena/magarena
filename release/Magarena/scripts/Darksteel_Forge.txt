@@ -5,6 +5,6 @@ value=3.672
 rarity=R
 type=Artifact
 cost={9}
-ability=lord artifacts you control have indestructible
+ability=artifacts you control have indestructible
 static=player
 timing=artifact

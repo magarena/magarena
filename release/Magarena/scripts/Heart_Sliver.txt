@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={1}{R}
 pt=1/1
-ability=lord all sliver creatures have haste
+ability=all sliver creatures have haste
 static=all
 timing=fmain

@@ -8,6 +8,6 @@ subtype=Angel
 cost={1}{G}{W}{U}
 pt=3/4
 ability=flying;vigilance;\
-        lord creatures have "SN doesn't untap during your untap step."
+        creatures have "SN doesn't untap during your untap step."
 timing=main
 requires_groovy_code

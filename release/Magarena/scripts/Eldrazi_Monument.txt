@@ -5,8 +5,8 @@ value=4.060
 rarity=M
 type=Artifact
 cost={5}
-ability=lord creatures you control get +1/+1;\
-        lord creatures you control have flying, indestructible
+ability=creatures you control get +1/+1;\
+        creatures you control have flying, indestructible
 static=player
 timing=main
 requires_groovy_code

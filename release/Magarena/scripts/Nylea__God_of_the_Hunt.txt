@@ -8,7 +8,7 @@ subtype=God
 cost={3}{G}
 pt=6/6
 ability=indestructible;\
-        lord other creatures you control have trample;\
+        other creatures you control have trample;\
         {3}{G}: Target creature gets +2/+2 until end of turn.
 timing=main
 requires_groovy_code

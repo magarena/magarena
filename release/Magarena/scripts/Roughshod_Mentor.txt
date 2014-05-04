@@ -7,6 +7,6 @@ type=Creature
 subtype=Giant,Warrior
 cost={5}{G}
 pt=5/4
-ability=lord green creatures you control have trample
+ability=green creatures you control have trample
 static=player
 timing=main

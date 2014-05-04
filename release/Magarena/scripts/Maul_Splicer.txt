@@ -8,6 +8,6 @@ subtype=Human,Artificer
 cost={6}{G}
 pt=1/1
 ability=When SN enters the battlefield, put two 3/3 colorless Golem artifact creature tokens onto the battlefield.;\
-        lord golem creatures you control have trample
+        golem creatures you control have trample
 static=player
 timing=main

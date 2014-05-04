@@ -5,6 +5,6 @@ value=3.576
 rarity=U
 type=Enchantment
 cost={2}{B}{B}{B}
-ability=lord creatures you control have fear
+ability=creatures you control have fear
 static=player
 timing=enchantment

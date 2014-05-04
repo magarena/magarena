@@ -7,7 +7,7 @@ type=Creature
 subtype=Zombie
 cost={1}{B}{B}
 pt=2/3
-ability=lord other Zombie creatures have swampwalk;\
-        lord other Zombies have "{B}: Regenerate SN."
+ability=other Zombie creatures have swampwalk;\
+        other Zombies have "{B}: Regenerate SN."
 static=all
 timing=main

@@ -5,5 +5,5 @@ value=3.478
 rarity=R
 type=Legendary,Enchantment
 cost={3}{W}
-ability=lord legendary creatures you control get +2/+2
+ability=legendary creatures you control get +2/+2
 timing=main

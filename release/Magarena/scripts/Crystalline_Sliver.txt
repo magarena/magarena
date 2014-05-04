@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={W}{U}
 pt=2/2
-ability=lord all sliver creatures have shroud
+ability=all sliver creatures have shroud
 static=all
 timing=main

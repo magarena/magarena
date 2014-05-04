@@ -5,5 +5,5 @@ value=1.297
 rarity=R
 type=Enchantment
 cost={2}{G}{G}{G}{G}
-ability=lord green creatures have forestwalk
+ability=green creatures have forestwalk
 timing=enchantment

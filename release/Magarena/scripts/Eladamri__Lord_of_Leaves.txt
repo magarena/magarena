@@ -7,7 +7,7 @@ type=Legendary,Creature
 subtype=Elf,Warrior
 cost={G}{G}
 pt=2/2
-ability=lord other elf creatures have forestwalk;\
-        lord other elf creatures have shroud
+ability=other elf creatures have forestwalk;\
+        other elf creatures have shroud
 static=all
 timing=main

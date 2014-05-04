@@ -5,6 +5,6 @@ value=4.031
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}
-ability=lord creatures you control have double strike, lifelink
+ability=creatures you control have double strike, lifelink
 static=player
 timing=enchantment

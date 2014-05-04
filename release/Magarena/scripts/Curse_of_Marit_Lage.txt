@@ -5,6 +5,6 @@ value=3.605
 rarity=R
 type=Enchantment
 cost={3}{R}{R}
-ability=lord islands have "SN doesn't untap during your untap step."
+ability=islands have "SN doesn't untap during your untap step."
 timing=enchantment
 requires_groovy_code

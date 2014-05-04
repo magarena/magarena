@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={6}{G}
 pt=5/5
-ability=lord sliver creatures you control have trample
+ability=sliver creatures you control have trample
 static=player
 timing=main

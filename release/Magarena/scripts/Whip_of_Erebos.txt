@@ -5,6 +5,6 @@ value=3.556
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={2}{B}{B}
-ability=lord Creatures you control have lifelink
+ability=Creatures you control have lifelink
 timing=artifact
 requires_groovy_code

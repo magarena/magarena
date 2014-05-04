@@ -7,5 +7,5 @@ type=Creature
 subtype=Goblin,Berserker
 cost={2}{R}
 pt=2/2
-ability=lord creatures you control have haste, SN attacks each turn if able.
+ability=creatures you control have haste, SN attacks each turn if able.
 timing=main

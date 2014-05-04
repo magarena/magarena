@@ -5,6 +5,6 @@ value=3.877
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=lord creature tokens you control get +1/+1;\
-        lord creature tokens you control have vigilance
+ability=creature tokens you control get +1/+1;\
+        creature tokens you control have vigilance
 timing=enchantment

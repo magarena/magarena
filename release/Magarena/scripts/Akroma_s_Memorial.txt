@@ -5,6 +5,6 @@ value=3.918
 rarity=R
 type=Legendary,Artifact
 cost={7}
-ability=lord creatures you control have flying, first strike, vigilance, trample, haste, protection from black, protection from red
+ability=creatures you control have flying, first strike, vigilance, trample, haste, protection from black, protection from red
 static=player
 timing=artifact

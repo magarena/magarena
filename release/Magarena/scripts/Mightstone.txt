@@ -5,5 +5,5 @@ value=2.333
 rarity=C
 type=Artifact
 cost={4}
-ability=lord attacking creatures get +1/+0
+ability=attacking creatures get +1/+0
 timing=artifact

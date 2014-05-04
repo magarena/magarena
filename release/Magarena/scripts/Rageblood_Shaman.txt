@@ -8,7 +8,7 @@ subtype=Minotaur,Shaman
 cost={1}{R}{R}
 pt=2/3
 ability=trample;\
-        lord other minotaur creatures you control get +1/+1;\
-        lord other minotaur creatures you control have trample
+        other minotaur creatures you control get +1/+1;\
+        other minotaur creatures you control have trample
 static=player
 timing=main

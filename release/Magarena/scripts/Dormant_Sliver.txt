@@ -7,7 +7,7 @@ type=Creature
 subtype=Sliver
 cost={2}{G}{U}
 pt=2/2
-ability=lord all sliver creatures have defender;\
-        lord all sliver creatures have "When SN enters the battlefield, draw a card."
+ability=all sliver creatures have defender;\
+        all sliver creatures have "When SN enters the battlefield, draw a card."
 static=all
 timing=main

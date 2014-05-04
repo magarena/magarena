@@ -8,5 +8,5 @@ subtype=Ogre,Rogue
 cost={3}{B}{B}
 pt=3/3
 ability=Whenever another nontoken creature dies, you may put a 1/1 black Rat creature token onto the battlefield.;\
-        lord Rats you control have deathtouch
+        Rats you control have deathtouch
 timing=main

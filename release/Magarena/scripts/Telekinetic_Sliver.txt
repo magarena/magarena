@@ -7,6 +7,6 @@ type=Creature
 subtype=Sliver
 cost={2}{U}{U}
 pt=2/2
-ability=lord all slivers have "{T}: Tap target permanent."
+ability=all slivers have "{T}: Tap target permanent."
 static=all
 timing=main
