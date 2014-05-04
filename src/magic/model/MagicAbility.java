@@ -303,6 +303,14 @@ public enum MagicAbility {
             ));
         }
     },
+    SelfOrAnotherLeavesEffect("Whenever SN or another " + ARG.WORDRUN + " leaves the battlefield, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicWhenLeavesPlayTrigger.createSelfOrAnother(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     LeavesEffect("Whenever a(n)? " + ARG.WORDRUN + " leaves the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicWhenLeavesPlayTrigger.create(
