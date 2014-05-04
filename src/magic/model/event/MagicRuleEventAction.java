@@ -713,7 +713,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainSelf(
-        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn\\.", 
+        "sn get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn(\\.)?", 
         MagicTiming.Pump
     ) {
         @Override
