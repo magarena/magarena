@@ -7,6 +7,6 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=2/2
-ability=flying
+ability=flying;\
+        As long as seven or more cards are in your graveyard, SN gets +3/+3 and has "{R}: SN gets +1/+0 until end of turn."
 timing=main
-requires_groovy_code
