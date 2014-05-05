@@ -7,6 +7,6 @@ type=Creature
 subtype=Mongoose
 cost={G}
 pt=1/1
-ability=shroud
+ability=shroud;\
+        SN gets +2/+2 as long as seven or more cards are in your graveyard.
 timing=main
-requires_groovy_code=Anurid Barkripper
