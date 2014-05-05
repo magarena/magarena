@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
+ability=SN has double strike as long as you control three or more artifacts.
 timing=main
-requires_groovy_code
