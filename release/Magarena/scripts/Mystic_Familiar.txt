@@ -7,6 +7,6 @@ type=Creature
 subtype=Bird
 cost={1}{W}
 pt=1/2
-ability=flying
+ability=flying;\
+        As long as seven or more cards are in your graveyard, SN gets +1/+1 and has protection from black.
 timing=main
-requires_groovy_code
