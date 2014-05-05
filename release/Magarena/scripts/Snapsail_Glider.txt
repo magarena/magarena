@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/2
+ability=SN has flying as long as you control three or more artifacts.
 timing=main
-requires_groovy_code
