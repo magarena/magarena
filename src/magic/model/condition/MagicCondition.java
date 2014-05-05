@@ -253,4 +253,18 @@ public interface MagicCondition {
             return permanent.getEquippedCreature().isCreature();
         }
     };
+    
+    MagicCondition IS_EQUIPPED = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.isEquipped();
+        }
+    };
+    
+    MagicCondition IS_ENCHANTED = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.isEnchanted();
+        }
+    };
 }

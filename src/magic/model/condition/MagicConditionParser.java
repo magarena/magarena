@@ -38,6 +38,16 @@ public enum MagicConditionParser {
             return MagicCondition.HELLBENT;
         }
     },
+    IsEquipped("SN is equipped") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_EQUIPPED;
+        }
+    },
+    IsEnchanted("SN is enchanted") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_ENCHANTED;
+        }
+    },
     ;
 
     private final Pattern pattern;
