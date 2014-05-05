@@ -7,6 +7,6 @@ type=Creature
 subtype=Horror
 cost={1}{B}
 pt=1/1
-ability=flying
+ability=Flying;\
+        As long as seven or more cards are in your graveyard, SN gets +2/+2 and has "When SN becomes the target of a spell or ability, sacrifice it."
 timing=main
-requires_groovy_code
