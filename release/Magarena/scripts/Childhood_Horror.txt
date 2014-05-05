@@ -7,6 +7,6 @@ type=Creature
 subtype=Horror
 cost={3}{B}
 pt=2/2
-ability=flying
+ability=flying;\
+        As long as seven or more cards are in your graveyard, SN gets +2/+2 and can't block.
 timing=main
-requires_groovy_code
