@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Nomad,Mystic
 cost={1}{W}
 pt=2/1
+ability=SN has flying as long as seven or more cards are in your graveyard.
 timing=main
-requires_groovy_code
