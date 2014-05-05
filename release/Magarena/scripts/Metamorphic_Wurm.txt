@@ -7,5 +7,5 @@ type=Creature
 subtype=Elephant,Wurm
 cost={3}{G}{G}
 pt=3/3
+ability=SN gets +4/+4 as long as seven or more cards are in your graveyard.
 timing=main
-requires_groovy_code
