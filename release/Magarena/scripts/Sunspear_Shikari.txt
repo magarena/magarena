@@ -7,5 +7,5 @@ type=Creature
 subtype=Cat,Soldier
 cost={1}{W}
 pt=2/2
+ability=As long as SN is equipped, it has first strike and lifelink.
 timing=main
-requires_groovy_code
