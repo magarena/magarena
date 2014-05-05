@@ -7,6 +7,5 @@ type=Creature
 subtype=Rat
 cost={B}{R}
 pt=2/2
-ability={Hellbent}, {B}: Regenerate SN.
+ability=As long as you have no cards in hand, SN gets +1/+0 and has "{B}: Regenerate SN."
 timing=main
-requires_groovy_code
