@@ -16,6 +16,13 @@ public enum MagicConditionParser {
             );
         }
     },
+    OpponentControl("an opponent controls a(n)? " + ARG.WORDRUN) {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.OpponentControl(
+                MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
+            );
+        }
+    },
     YouControlAnother("you control another " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControlAnother(
