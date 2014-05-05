@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Nomad,Mystic
 cost={1}{W}{W}
 pt=2/1
-ability=protection from black;protection from red
+ability=protection from black;protection from red;\
+        As long as seven or more cards are in your graveyard, SN gets +1/+1 and has flying.
 timing=main
-requires_groovy_code=Nantuko Calmer;Mystic Visionary
