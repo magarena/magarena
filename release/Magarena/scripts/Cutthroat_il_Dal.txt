@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Rogue
 cost={3}{B}
 pt=4/1
+ability=SN has shadow as long as you have no cards in hand.
 timing=main
-requires_groovy_code

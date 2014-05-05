@@ -32,7 +32,13 @@ public enum MagicConditionParser {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.METALCRAFT_CONDITION;
         }
-    };
+    },
+    Hellbent("you have no cards in hand") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HELLBENT;
+        }
+    },
+    ;
 
     private final Pattern pattern;
     
