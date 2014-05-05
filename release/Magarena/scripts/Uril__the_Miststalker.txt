@@ -1,0 +1,12 @@
+name=Uril, the Miststalker
+url=http://magiccards.info/arb/en/124.html
+image=http://www.mtgcasualplay.com/extra-images/mtg-altered-art-uril-the-miststalker.jpg
+value=4.000
+rarity=M
+type=Legendary,Creature
+subtype=Beast
+cost={2}{R}{G}{W}
+pt=5/5
+ability=hexproof
+timing=main
+requires_groovy_code

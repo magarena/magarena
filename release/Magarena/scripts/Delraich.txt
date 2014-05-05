@@ -1,0 +1,12 @@
+name=Delraich
+url=http://magiccards.info/mm/en/133.html
+image=http://magiccards.info/scans/en/mm/133.jpg
+value=4.246
+rarity=R
+type=Creature
+subtype=Horror
+cost={6}{B}
+pt=6/6
+ability=trample
+timing=main
+requires_groovy_code
