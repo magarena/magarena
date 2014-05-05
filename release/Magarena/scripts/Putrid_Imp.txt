@@ -7,6 +7,6 @@ type=Creature
 subtype=Zombie,Imp
 cost={B}
 pt=1/1
+ability=Discard a card: SN gains flying until end of turn.;\
+        As long as seven or more cards are in your graveyard, SN gets +1/+1 and can't block.
 timing=main
-ability=Discard a card: SN gains flying until end of turn.
-requires_groovy_code
