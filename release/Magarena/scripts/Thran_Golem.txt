@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=3/3
+ability=As long as SN is enchanted, it gets +2/+2 and has flying, first strike, and trample.
 timing=main
-requires_groovy_code
