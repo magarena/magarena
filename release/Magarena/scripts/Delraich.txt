@@ -1,6 +1,6 @@
 name=Delraich
-url=http://magiccards.info/mm/en/133.html
-image=http://magiccards.info/scans/en/mm/133.jpg
+url=http://magiccards.info/query?q=%21delraich
+image=http://mtgimage.com/card/delraich.jpg
 value=4.246
 rarity=R
 type=Creature
