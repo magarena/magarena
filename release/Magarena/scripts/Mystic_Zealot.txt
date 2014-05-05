@@ -7,5 +7,5 @@ type=Creature
 subtype=Human,Nomad,Mystic
 cost={3}{W}
 pt=2/4
+ability=As long as seven or more cards are in your graveyard, SN gets +1/+1 and has flying.
 timing=main
-requires_groovy_code=Nantuko Calmer;Mystic Visionary
