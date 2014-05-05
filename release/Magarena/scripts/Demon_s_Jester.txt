@@ -7,6 +7,6 @@ type=Creature
 subtype=Imp
 cost={3}{B}
 pt=2/2
-ability=flying
+ability=flying;\
+        SN gets +2/+1 as long as you have no cards in hand.
 timing=main
-requires_groovy_code
