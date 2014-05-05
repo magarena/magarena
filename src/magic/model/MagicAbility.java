@@ -8,7 +8,7 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.*;
 import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicConditionFactory;
+import magic.model.condition.MagicConditionParser;
 import magic.model.trigger.MagicThiefTrigger.Player;
 import magic.model.trigger.MagicThiefTrigger.Type;
 
@@ -747,15 +747,9 @@ public enum MagicAbility {
             ));
         }
     },
-    ControlPumpGain("SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + " )?as long as you control (a(n)?|(?<another>another)) " + ARG.WORDRUN + "\\.", 0) {
+    ControlPumpGain("SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + " )?as long as " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicCondition condition = arg.group("another") != null ?
-                MagicConditionFactory.YouControlAnother(
-                    MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
-                ):
-                MagicConditionFactory.YouControl(
-                    MagicTargetFilterFactory.singlePermanent(ARG.wordrun(arg))
-                );
+            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             if (arg.group("pt") != null) {
                 final String[] pt = ARG.pt(arg).replace("+","").split("/");
                 final int power = Integer.parseInt(pt[0]);
@@ -772,7 +766,7 @@ public enum MagicAbility {
             }
         }
     },
-    ControlPumpGainAlt("As long as you control (a(n)?|(?<another>another)) " + ARG.WORDRUN + ", SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + ")?\\.", 0) {
+    ControlPumpGainAlt("As long as " + ARG.WORDRUN + ", SN (gets " + ARG.PT + " )?(and )?(has " + ARG.ANY + ")?\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ControlPumpGain.addAbilityImpl(card, arg);
         }
@@ -1029,58 +1023,6 @@ public enum MagicAbility {
     
     public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.range(Plainswalk, Forestwalk);
 
-
-    private static class ARG {  
-        private static final String NUMBER = "(?<number>[0-9]+)";
-        private static int number(final Matcher m) {
-            return Integer.parseInt(m.group("number"));
-        }
-        
-        private static final String AMOUNT = "(?<amount>.+)";
-        private static int amount(final Matcher m) {
-            return EnglishToInt.convert(m.group("amount"));
-        }
-        
-        private static final String COST = "(?<cost>.+)";
-        private static String cost(final Matcher m) {
-            return m.group("cost");
-        }
-        
-        private static final String EFFECT = "(?<effect>.+)";
-        private static String effect(final Matcher m) {
-            return m.group("effect");
-        }
-
-        private static final String ANY = "(?<any>.+)";
-        private static String any(final Matcher m) {
-            return m.group("any");
-        }
-
-        private static final String MANA = "(?<mana>[^\\.]+)";
-        private static String mana(final Matcher m) {
-            return m.group("mana");
-        }
-        
-        private static final String WORD1 = "(?<word1>[^ ]+)";
-        private static String word1(final Matcher m) {
-            return m.group("word1");
-        }
-        
-        private static final String WORD2 = "(?<word2>[^ ]+)";
-        private static String word2(final Matcher m) {
-            return m.group("word2");
-        }
-        
-        private static final String WORDRUN = "(?<wordrun>[^\\.]+)";
-        private static String wordrun(final Matcher m) {
-            return m.group("wordrun");
-        }
-
-        private static final String PT = "(?<pt>[+-][0-9]+/[+-][0-9]+)";
-        private static String pt(final Matcher m) {
-            return m.group("pt");
-        }
-    } 
 
     private final Pattern pattern;
     private final String name;
