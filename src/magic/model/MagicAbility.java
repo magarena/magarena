@@ -766,7 +766,7 @@ public enum MagicAbility {
             }
         }
     },
-    ControlPumpGainAlt("As long as " + ARG.WORDRUN + ", (SN|it) (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
+    ControlPumpGainAlt("As long as (?<wordrun>[^\\,]*), (SN|it) (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ControlPumpGain.addAbilityImpl(card, arg);
         }
