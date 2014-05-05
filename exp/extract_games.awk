@@ -2,30 +2,22 @@ BEGIN {
     FS = "\t"
 }
 
-function genName() {
-           if ($0 ~ /minimax (cheat)/) {
+function genName(name) {
+           if (name == "minimax (cheat)") {
         return "MMAB-C"
-    } else if ($0 ~ /vegas (cheat)/) {
+    } else if (name == "vegas (cheat)") {
         return "VEGAS-C"
-    } else if ($0 ~ /monte carlo tree search (cheat)/) {
+    } else if (name == "monte carlo tree search (cheat)") {
         return "MCTS-C"
-    } else if ($0 ~ /minimax/) {
+    } else if (name == "minimax") {
         return "MMAB-H"
-    } else if ($0 ~ /vegas/) {
+    } else if (name == "vegas") {
         return "VEGAS-H"
-    } else if ($0 ~ /monte carlo tree search/) {
+    } else if (name == "monte carlo tree search") {
         return "MCTS-H"
     } else {
         return "UNKNOWN"
     }
-}
-
-/index=0/ {
-    ai1 = genName()
-}
-
-/index=1/ {
-    ai2 = genName()
 }
 
 /^\t/ {
