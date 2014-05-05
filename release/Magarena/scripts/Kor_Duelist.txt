@@ -7,5 +7,5 @@ type=Creature
 subtype=Kor,Soldier
 cost={W}
 pt=1/1
+ability=As long as SN is equipped, it has double strike.
 timing=main
-requires_groovy_code
