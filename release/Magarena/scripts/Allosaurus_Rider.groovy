@@ -25,6 +25,7 @@ def TWO_OTHER_GREEN_CARDS_IN_HAND = new MagicCondition() {
         new MagicActivationHints(MagicTiming.Main),
         "Alt"
     ) {
+        @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherCardTargetFilter(
