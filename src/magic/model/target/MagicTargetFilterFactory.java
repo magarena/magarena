@@ -610,6 +610,13 @@ public class MagicTargetFilterFactory {
         }
     };
     
+    public static final MagicPermanentFilterImpl NONELF_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasSubType(MagicSubType.Elf);
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONENCHANTMENT_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1588,6 +1595,7 @@ public class MagicTargetFilterFactory {
         single.put("non-Demon creature", NON_DEMON_CREATURE);
         single.put("non-Zombie creature", NONZOMBIE_CREATURE);
         single.put("non-Human creature", NONHUMAN_CREATURE);
+        single.put("non-Elf creature", NONELF_CREATURE);
         single.put("non-Vampire, non-Werewolf, non-Zombie creature", NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE);
         single.put("Skeleton, Vampire, or Zombie", SKELETON_VAMPIRE_OR_ZOMBIE);
         single.put("noncreature", NONCREATURE);

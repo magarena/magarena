@@ -6,5 +6,5 @@ rarity=C
 type=Tribal,Instant
 subtype=Elf
 cost={2}{B}
+effect=Destroy target non-Elf creature.
 timing=removal
-requires_groovy_code
