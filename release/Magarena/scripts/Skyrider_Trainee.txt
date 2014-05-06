@@ -1,0 +1,11 @@
+name=Skyrider Trainee
+url=http://www.magiccards.info/query?q=%21skyrider%20trainee
+image=http://mtgimage.com/card/skyrider%20trainee.jpg
+value=1.01
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}
+pt=3/3
+ability=SN has flying as long as it's enchanted.
+timing=main

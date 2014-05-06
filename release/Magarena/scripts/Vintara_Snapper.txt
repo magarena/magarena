@@ -1,0 +1,11 @@
+name=Vintara Snapper
+url=http://www.magiccards.info/query?q=%21vintara%20snapper
+image=http://mtgimage.com/card/vintara%20snapper.jpg
+value=3.093
+rarity=U
+type=Creature
+subtype=Turtle
+cost={G}{G}
+pt=2/2
+ability=SN has shroud as long as you control no untapped lands.
+timing=main

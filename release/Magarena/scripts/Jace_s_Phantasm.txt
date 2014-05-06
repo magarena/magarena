@@ -1,0 +1,12 @@
+name=Jace's Phantasm
+url=http://www.magiccards.info/query?q=%21jace%27s%20phantasm
+image=http://mtgimage.com/card/jace's%20phantasm.jpg
+value=3.976
+rarity=U
+type=Creature
+subtype=Illusion
+cost={U}
+pt=1/1
+ability=Flying;\
+        SN gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.
+timing=main

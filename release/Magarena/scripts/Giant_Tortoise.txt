@@ -1,0 +1,11 @@
+name=Giant Tortoise
+url=http://www.magiccards.info/query?q=%21giant%20tortoise
+image=http://mtgimage.com/card/giant%20tortoise.jpg
+value=3.25
+rarity=C
+type=Creature
+subtype=Turtle
+cost={1}{U}
+pt=1/1
+ability=SN gets +0/+3 as long as it's untapped.
+timing=main

@@ -1,0 +1,11 @@
+name=Bouncing Beebles
+url=http://www.magiccards.info/query?q=%21bouncing%20beebles
+image=http://mtgimage.com/card/bouncing%20beebles.jpg
+value=3.727
+rarity=C
+type=Creature
+subtype=Beeble
+cost={2}{U}
+pt=2/2
+ability=SN can't be blocked as long as defending player controls an artifact.
+timing=main

@@ -1,0 +1,11 @@
+name=Radiant Essence
+url=http://www.magiccards.info/query?q=%21radiant%20essence
+image=http://mtgimage.com/card/radiant%20essence.jpg
+value=3.562
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{G}{W}
+pt=2/3
+ability=SN gets +1/+2 as long as an opponent controls a black permanent.
+timing=main

@@ -1,0 +1,11 @@
+name=Vigilant Sentry
+url=http://www.magiccards.info/query?q=%21vigilant%20sentry
+image=http://mtgimage.com/card/vigilant%20sentry.jpg
+value=2.841
+rarity=C
+type=Creature
+subtype=Human,Nomad
+cost={1}{W}{W}
+pt=2/2
+ability=As long as seven or more cards are in your graveyard, SN gets +1/+1 and has "{T}: Target attacking or blocking creature gets +3/+3 until end of turn."
+timing=main

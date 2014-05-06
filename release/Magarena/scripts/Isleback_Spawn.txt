@@ -1,0 +1,12 @@
+name=Isleback Spawn
+url=http://www.magiccards.info/query?q=%21isleback%20spawn
+image=http://mtgimage.com/card/isleback%20spawn.jpg
+value=3.821
+rarity=R
+type=Creature
+subtype=Kraken
+cost={5}{U}{U}
+pt=4/8
+ability=Shroud;\
+        SN gets +4/+8 as long as a library has twenty or fewer cards in it.
+timing=main

@@ -1,0 +1,11 @@
+name=Kavu Runner
+url=http://www.magiccards.info/query?q=%21kavu%20runner
+image=http://mtgimage.com/card/kavu%20runner.jpg
+value=2.517
+rarity=U
+type=Creature
+subtype=Kavu
+cost={3}{R}
+pt=3/3
+ability=SN has haste as long as no opponent controls a white or blue creature.
+timing=main

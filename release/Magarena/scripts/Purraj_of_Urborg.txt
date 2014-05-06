@@ -1,0 +1,12 @@
+name=Purraj of Urborg
+url=http://www.magiccards.info/query?q=%21purraj%20of%20urborg
+image=http://mtgimage.com/card/purraj%20of%20urborg.jpg
+value=3.171
+rarity=R
+type=Legendary,Creature
+subtype=Cat,Warrior
+cost={3}{B}{B}
+pt=2/3
+ability=SN has first strike as long as it's attacking.;\
+        Whenever a player casts a black spell, you may pay {B}. If you do, put a +1/+1 counter on SN.
+timing=main

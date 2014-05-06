@@ -1,0 +1,12 @@
+name=Gorilla Titan
+url=http://www.magiccards.info/query?q=%21gorilla%20titan
+image=http://mtgimage.com/card/gorilla%20titan.jpg
+value=4.036
+rarity=U
+type=Creature
+subtype=Ape
+cost={3}{G}{G}
+pt=4/4
+ability=Trample;\
+        SN gets +4/+4 as long as there are no cards in your graveyard.
+timing=main

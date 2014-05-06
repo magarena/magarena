@@ -1,0 +1,11 @@
+name=Skittish Kavu
+url=http://www.magiccards.info/query?q=%21skittish%20kavu
+image=http://mtgimage.com/card/skittish%20kavu.jpg
+value=2.05
+rarity=U
+type=Creature
+subtype=Kavu
+cost={1}{R}
+pt=1/1
+ability=SN gets +1/+1 as long as no opponent controls a white or blue creature.
+timing=main

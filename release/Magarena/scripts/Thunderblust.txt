@@ -1,0 +1,13 @@
+name=Thunderblust
+url=http://www.magiccards.info/query?q=%21thunderblust
+image=http://mtgimage.com/card/thunderblust.jpg
+value=3.966
+rarity=R
+type=Creature
+subtype=Elemental
+cost={2}{R}{R}{R}
+pt=7/2
+ability=Haste;\
+        SN has trample as long as it has a -1/-1 counter on it.;\
+        Persist
+timing=main

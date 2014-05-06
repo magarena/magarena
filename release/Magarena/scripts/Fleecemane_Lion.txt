@@ -1,0 +1,12 @@
+name=Fleecemane Lion
+url=http://www.magiccards.info/query?q=%21fleecemane%20lion
+image=http://mtgimage.com/card/fleecemane%20lion.jpg
+value=4.22
+rarity=R
+type=Creature
+subtype=Cat
+cost={G}{W}
+pt=3/3
+ability=Monstrosity 1 {3}{G}{W};\
+        As long as SN is monstrous, it has hexproof and indestructible.
+timing=main

@@ -1,0 +1,11 @@
+name=Scrapdiver Serpent
+url=http://www.magiccards.info/query?q=%21scrapdiver%20serpent
+image=http://mtgimage.com/card/scrapdiver%20serpent.jpg
+value=2.978
+rarity=C
+type=Creature
+subtype=Serpent
+cost={5}{U}{U}
+pt=5/5
+ability=SN can't be blocked as long as defending player controls an artifact.
+timing=main

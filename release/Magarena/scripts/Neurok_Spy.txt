@@ -1,0 +1,11 @@
+name=Neurok Spy
+url=http://www.magiccards.info/query?q=%21neurok%20spy
+image=http://mtgimage.com/card/neurok%20spy.jpg
+value=2.771
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={2}{U}
+pt=2/2
+ability=SN can't be blocked as long as defending player controls an artifact.
+timing=main

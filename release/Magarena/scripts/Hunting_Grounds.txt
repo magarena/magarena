@@ -1,0 +1,9 @@
+name=Hunting Grounds
+url=http://www.magiccards.info/query?q=%21hunting%20grounds
+image=http://mtgimage.com/card/hunting%20grounds.jpg
+value=4.455
+rarity=R
+type=Enchantment
+cost={G}{W}
+ability=As long as seven or more cards are in your graveyard, SN has "Whenever an opponent casts a spell, you may put a creature card from your hand onto the battlefield."
+timing=enchantment

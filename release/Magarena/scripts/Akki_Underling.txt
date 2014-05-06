@@ -1,0 +1,11 @@
+name=Akki Underling
+url=http://www.magiccards.info/query?q=%21akki%20underling
+image=http://mtgimage.com/card/akki%20underling.jpg
+value=2.224
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}
+pt=2/1
+ability=As long as you have seven or more cards in hand, SN gets +2/+1 and has first strike.
+timing=main

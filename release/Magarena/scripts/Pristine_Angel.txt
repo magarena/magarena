@@ -1,0 +1,13 @@
+name=Pristine Angel
+url=http://www.magiccards.info/query?q=%21pristine%20angel
+image=http://mtgimage.com/card/pristine%20angel.jpg
+value=4.575
+rarity=R
+type=Creature
+subtype=Angel
+cost={4}{W}{W}
+pt=4/4
+ability=Flying;\
+        As long as SN is untapped, it has protection from artifacts and protection from all colors.;\
+        Whenever you cast a spell, you may untap SN.
+timing=main

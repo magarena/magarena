@@ -1,0 +1,11 @@
+name=Dauntless Dourbark
+url=http://www.magiccards.info/query?q=%21dauntless%20dourbark
+image=http://mtgimage.com/card/dauntless%20dourbark.jpg
+value=4.321
+rarity=R
+type=Creature
+subtype=Treefolk,Warrior
+cost={3}{G}
+ability=SN has trample as long as you control another Treefolk.
+timing=main
+requires_groovy_code

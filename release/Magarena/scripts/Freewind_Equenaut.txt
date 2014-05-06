@@ -1,0 +1,12 @@
+name=Freewind Equenaut
+url=http://www.magiccards.info/query?q=%21freewind%20equenaut
+image=http://mtgimage.com/card/freewind%20equenaut.jpg
+value=3
+rarity=C
+type=Creature
+subtype=Human,Archer
+cost={2}{W}
+pt=2/2
+ability=Flying;\
+        As long as SN is enchanted, it has "{T}: SN deals 2 damage to target attacking or blocking creature."
+timing=main
