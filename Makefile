@@ -714,3 +714,6 @@ push: clean normalize_files checks debug
 
 resources/magic/data/AllCardNames.txt:
 	grep "<name>" -r cards/cards.xml | sed 's/<[^>]*>//g;s/^ *//' | unaccent utf-8 | recode html..ascii | sort > $@
+
+missing_override:
+	grep public -B1 -r release/Magarena/scripts | awk '/Override/ {skip = NR + 1} NR != skip {print $$0}' | grep -v Override | grep release > $@
