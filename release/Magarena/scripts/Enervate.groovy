@@ -1,21 +1,10 @@
-def ARTIFACT_CREATURE_OR_LAND = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isLand() || target.isCreature() || target.isArtifact();
-    }
-};
-
-def TARGET_ARTIFACT_CREATURE_OR_LAND = new MagicTargetChoice(
-    ARTIFACT_CREATURE_OR_LAND,
-    "target artifact, creature or land"
-);
-
 [
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                TARGET_ARTIFACT_CREATURE_OR_LAND,
+                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_CREATURE_OR_LAND,
                 this,
                 "PN taps target artifact, creature, or land.\$"+
                 "PN draws a card at the beginning of the next turn's upkeep."
