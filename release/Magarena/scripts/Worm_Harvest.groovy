@@ -1,12 +1,3 @@
-def LAND_IN_GRAVEYARD = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-        return target.hasType(MagicType.Land);
-    }
-    public boolean acceptType(final MagicTargetType targetType) {
-        return targetType == MagicTargetType.Graveyard;
-    }
-};
-    
 [
     new MagicSpellCardEvent() {
         @Override
@@ -20,14 +11,15 @@ def LAND_IN_GRAVEYARD = new MagicCardFilterImpl() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(event.getPlayer(),LAND_IN_GRAVEYARD).size();
-            if(amount > 0) {
-                game.doAction(new MagicPlayTokensAction(
-                    event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 black and green Worm creature token"),
-                    amount
-                ));
-            }
+            final int amount = game.filterCards(
+                event.getPlayer(),
+                MagicTargetFilterFactory.LAND_CARD_FROM_YOUR_GRAVEYARD
+            ).size();
+            game.doAction(new MagicPlayTokensAction(
+                event.getPlayer(),
+                TokenCardDefinitions.get("1/1 black and green Worm creature token"),
+                amount
+            ));
         }
     }
 ]
