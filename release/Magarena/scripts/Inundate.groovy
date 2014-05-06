@@ -1,8 +1,8 @@
 def NONBLUE_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-            return target.isCreature() && !target.hasColor(MagicColor.Blue);
-        }
-    };
+    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+        return target.isCreature() && !target.hasColor(MagicColor.Blue);
+    }
+};
 [
     new MagicSpellCardEvent() {
         @Override
