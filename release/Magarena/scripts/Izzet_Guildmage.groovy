@@ -6,7 +6,7 @@ def INSTANT_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
 def AN_INSTANT_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicTargetChoice(
     INSTANT_YOU_CONTROL_WITH_CMC_LEQ_2,
     MagicTargetHint.Positive,
-    "an instant spell with converted mana cost 2 or less you control"
+    "an instant spell you control with converted mana cost 2 or less"
 );
 def SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
     public boolean accept(final MagicGame game,final MagicPlayer player,final MagicItemOnStack target) {
@@ -16,7 +16,7 @@ def SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
 def A_SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicTargetChoice(
     SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2,
     MagicTargetHint.Positive,
-    "a sorcery spell with converted mana cost 2 or less you control"
+    "a sorcery spell you control with converted mana cost 2 or less"
 );
 [
     new MagicPermanentActivation(
@@ -35,7 +35,7 @@ def A_SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicTargetChoice(
                 source,
                 AN_INSTANT_YOU_CONTROL_WITH_CMC_LEQ_2,
                 this,
-                "Copy target instant\$ with converted mana cost 2 or less you control. You may choose new targets for the copy."
+                "Copy target instant spell\$ you control with converted mana cost 2 or less. You may choose new targets for the copy."
             );
         }
 
@@ -63,7 +63,7 @@ def A_SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicTargetChoice(
                 source,
                 A_SORCERY_YOU_CONTROL_WITH_CMC_LEQ_2,
                 this,
-                "Copy target sorcery\$ with converted mana cost 2 or less you control. You may choose new targets for the copy."
+                "Copy target sorcery spell\$ you control with converted mana cost 2 or less. You may choose new targets for the copy."
             );
         }
 
