@@ -1,12 +1,12 @@
 name=Zur the Enchanter
-url=http://magiccards.info/csp/en/135.html
-image=http://www.kardkastle.com/images/products/alteredprints/zurtheenchanter3.jpg
+url=http://magiccards.info/query?q=%21zur%20the%20enchanter
+image=http://mtgimage.com/card/zur%20the%20enchanter.jpg
 value=4.186
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
 cost={1}{W}{U}{B}
 pt=1/4
-ability=flying
+ability=flying;\
+        Whenever SN attacks, you may search your library for an enchantment card with converted mana cost 3 or less and put it onto the battlefield. If you do, shuffle your library.
 timing=main
-requires_groovy_code
