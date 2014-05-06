@@ -49,9 +49,5 @@
                 });
             }
         }
-        @Override
-        public boolean usesStack() {
-            return false;
-        }
     }
 ]
