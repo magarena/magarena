@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicSearchToLocationEvent(
                 event,
-                MagicTargetChoice.CARD_FROM_LIBRARY
+                MagicTargetChoice.CARD_FROM_LIBRARY,
                 MagicLocationType.OwnersHand
             ));
         }
