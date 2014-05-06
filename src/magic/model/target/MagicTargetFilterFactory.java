@@ -1292,6 +1292,19 @@ public class MagicTargetFilterFactory {
             }
         };
     }
+    
+    public static final MagicCardFilterImpl permanentCardMinCMC(final MagicType type, final MagicTargetType from, final int cmc) {
+        return new MagicCardFilterImpl() {
+            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+                return target.getCardDefinition().isPermanent() && 
+                       target.hasType(type) && 
+                       target.getConvertedCost() >= cmc;
+            }
+            public boolean acceptType(final MagicTargetType targetType) {
+                return targetType == from;
+            }
+        };
+    }
 
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_HAND = MagicTargetFilterFactory.cardAnd(MagicTargetType.Hand, MagicType.Land, MagicType.Basic);
     
@@ -1555,7 +1568,8 @@ public class MagicTargetFilterFactory {
         single.put("Mercenary permanent card with converted mana cost 5 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 5));
         single.put("Mercenary permanent card with converted mana cost 6 or less from your library", permanentCardMaxCMC(MagicSubType.Mercenary, MagicTargetType.Library, 6));
         single.put("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
-
+        single.put("creature card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, 6));
+        
         // <color|type|subtype> permanent card from your library
         
         // <color|type|subtype> creature card from your library
