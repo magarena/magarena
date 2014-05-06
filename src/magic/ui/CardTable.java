@@ -158,9 +158,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
             lastSelectedCards = newSelectedCards;
         }
-        if (table.getSelectedRowCount() == 0 && table.getRowCount() > 0) {
-            table.setRowSelectionInterval(0, 0);
-        }
     }
 
     public void setCards(final List<MagicCardDefinition> defs) {
