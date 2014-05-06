@@ -1,16 +1,3 @@
-def CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-        return true;
-    }
-    public boolean acceptType(final MagicTargetType targetType) {
-        return targetType == MagicTargetType.Library;
-    }
-};
-
-def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
-    CARD_FROM_LIBRARY,
-    "a card"
-);
 [
     new MagicAtUpkeepTrigger() {
         @Override
@@ -20,7 +7,7 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "PN may\$ pay 2 Life to search his or her library for a card, then shuffle his or her library and put that card on top of it."
+                    "PN may\$ pay 2 life to search his or her library for a card, then shuffle his or her library and put that card on top of it."
                 ):
                 MagicEvent.NONE;
         }
@@ -30,7 +17,7 @@ def A_CARD_FROM_LIBRARY = new MagicTargetChoice(
                 game.addEvent(new MagicPayLifeEvent(event.getPermanent(), 2));
                 game.addEvent(new MagicSearchToLocationEvent(
                     event,
-                    A_CARD_FROM_LIBRARY,
+                    MagicTargetChoice.CARD_FROM_LIBRARY,
                     MagicLocationType.TopOfOwnersLibrary
                 ));
             }
