@@ -1,0 +1,12 @@
+name=Zur the Enchanter
+url=http://magiccards.info/csp/en/135.html
+image=http://www.kardkastle.com/images/products/alteredprints/zurtheenchanter3.jpg
+value=4.186
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{W}{U}{B}
+pt=1/4
+ability=flying
+timing=main
+requires_groovy_code
