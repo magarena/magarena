@@ -3,9 +3,11 @@ package magic.model.condition;
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
@@ -133,10 +135,24 @@ public interface MagicCondition {
         }
     };
 
+    MagicCondition UNTAPPED_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.isUntapped();
+        }
+    };
+    
     MagicCondition IS_ATTACKING_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
             return permanent.isAttacking();
+        }
+    };
+    
+    MagicCondition IS_ATTACKING_ALONE_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.isAttacking() && source.getController().getNrOfAttackers()==1;
         }
     };
 
@@ -267,4 +283,70 @@ public interface MagicCondition {
             return permanent.isEnchanted();
         }
     };
+
+    MagicCondition NO_UNTAPPED_LANDS_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_LAND_YOU_CONTROL) == 0;
+        }
+    };
+
+    MagicCondition IS_MONSTROUS_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent)source;
+            return permanent.hasState(MagicPermanentState.Monstrous) == true;
+        }
+    };
+
+    MagicCondition EMPTY_GRAVEYARD_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getGraveyard().size()==0;
+        }
+    };
+    
+    MagicCondition LIBRARY_HAS_20_OR_LESS_CARDS_CONDITION=new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPlayer player=source.getController();
+            return player.getLibrary().size()<=20 | player.getOpponent().getLibrary().size()<=20;
+        }
+    };
+    
+    MagicCondition OPP_GRAVEYARD_WITH_10_OR_MORE_CARDS_CONDTITION= new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getOpponent().getGraveyard().size()>=10;
+        }
+    };
+    
+    MagicCondition OPP_NOT_CONTROL_WHITE_OR_BLUE_CREATURE_CONDITION=new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return !source.getOpponent().controlsPermanent(MagicTargetFilterFactory.WHITE_OR_BLUE_CREATURE);
+        }
+    };
+
+    MagicCondition MOST_CARDS_IN_HAND_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return player.getHandSize() > player.getOpponent().getHandSize();
+        }
+    };
+
+    MagicCondition NO_SHELL_COUNTERS_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent) source;
+            return permanent.getCounters(MagicCounterType.Shell)==0;
+        }
+    };
+
+    MagicCondition HAS_MINUSONE_COUNTER_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent) source;
+            return permanent.getCounters(MagicCounterType.MinusOne)>=1;
+        }
+    };
+    
+    MagicCondition WARRIOR_CARD_IN_GRAVEYARD_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getController().getGraveyard().contains(MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD);
+        }
+    };
+            
 }

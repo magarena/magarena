@@ -67,7 +67,7 @@ public class MagicConditionFactory {
             }
         };
     }
-
+    
     public static MagicCondition LifeAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
