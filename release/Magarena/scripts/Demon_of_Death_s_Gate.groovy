@@ -4,6 +4,7 @@
         new MagicActivationHints(MagicTiming.Main,true),
         "Alt"
     ) {
+        @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return [
                 new MagicPayLifeEvent(source, 6),
