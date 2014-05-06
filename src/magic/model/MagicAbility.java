@@ -58,6 +58,7 @@ public enum MagicAbility {
     Swampwalk("swampwalk(\\.)?",10),
     Mountainwalk("mountainwalk(\\.)?",10),
     Forestwalk("forestwalk(\\.)?",10),
+    NonbasicLandwalk("nonbasic landwalk(\\.)?",10),
     Indestructible("indestructible(\\.)?",150),
     Haste("haste(\\.)?",0),
     Lifelink("lifelink(\\.)?",40),
@@ -67,7 +68,7 @@ public enum MagicAbility {
     ProtectionFromRed("(protection )?from red(\\.)?",20),
     ProtectionFromWhite("(protection )?from white(\\.)?",20),
     ProtectionFromMonoColored("protection from monocolored",50),
-    ProtectionFromAllColors("protection from all colors",150),
+    ProtectionFromAllColors("protection from all colors(\\.)?",150),
     ProtectionFromCreatures("protection from creatures(\\.)?",100),
     ProtectionFromArtifacts("protection from artifacts",50),
     ProtectionFromDemons("protection from Demons",10),
@@ -747,7 +748,7 @@ public enum MagicAbility {
             ));
         }
     },
-    ControlPumpGain("SN (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?as long as " + ARG.WORDRUN + "\\.", 0) {
+    ConditionPumpGain("SN (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + " )?as long as " + ARG.WORDRUN + "\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             if (arg.group("pt") != null) {
@@ -766,9 +767,9 @@ public enum MagicAbility {
             }
         }
     },
-    ControlPumpGainAlt("As long as (?<wordrun>[^\\,]*), (SN|it) (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
+    ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), (SN|it) (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            ControlPumpGain.addAbilityImpl(card, arg);
+            ConditionPumpGain.addAbilityImpl(card, arg);
         }
     },
     Equip("Equip " + ARG.COST, 0) {
@@ -1017,11 +1018,19 @@ public enum MagicAbility {
             }
         }
     },
+    ChooseNotUntap("You may choose not to untap SN during your untap step.",0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.addAbility(DoesNotUntap);
+            card.add(MagicAtUpkeepTrigger.createYour(
+                MagicRuleEventAction.create("You may untap sn.")
+            ));
+        }
+    },
     None("",0);
 
     public static final Set<MagicAbility> PROTECTION_FLAGS = EnumSet.range(ProtectionFromBlack, ProtectionFromZombies);
     
-    public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.range(Plainswalk, Forestwalk);
+    public static final Set<MagicAbility> LANDWALK_FLAGS = EnumSet.range(Plainswalk, NonbasicLandwalk);
 
 
     private final Pattern pattern;
