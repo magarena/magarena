@@ -4,6 +4,7 @@
         new MagicActivationHints(MagicTiming.Counter,true),
         "Alt"
     ) {
+        @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicOtherCardTargetFilter(
