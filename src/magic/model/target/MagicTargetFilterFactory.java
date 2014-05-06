@@ -688,6 +688,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl SPIRIT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Spirit, Control.You);
     
     public static final MagicPermanentFilterImpl RAT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Rat, Control.You);
+    
+    public static final MagicPermanentFilterImpl TREEFOLK_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicSubType.Treefolk, Control.You);
 
     public static final MagicPermanentFilterImpl MODULAR_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicAbility.Modular, Control.You);
     
@@ -1264,6 +1266,23 @@ public class MagicTargetFilterFactory {
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
+        }
+    };
+
+    public static final MagicPermanentFilterImpl UNTAPPED_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() &&
+                   target.isUntapped() &&
+                   target.isController(player);
+        }
+    };
+
+    public static MagicCardFilterImpl WARRIOR_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Graveyard;
+        }
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicCard target) {
+            return target.hasSubType(MagicSubType.Warrior);
         }
     };
     
