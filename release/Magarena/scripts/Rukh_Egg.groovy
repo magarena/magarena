@@ -14,7 +14,7 @@
             //insert trigger to act at the beginning of the next end step
             outerGame.doAction(new MagicAddTriggerAction(new MagicAtEndOfTurnTrigger() {
                 @Override
-                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final eotPlayer) {
+                public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer eotPlayer) {
                     game.doAction(new MagicPlayTokenAction(
                         game.getPlayer(event.getPlayer().getIndex()),
                         TokenCardDefinitions.get("4/4 red Bird creature token with flying")
