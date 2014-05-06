@@ -360,6 +360,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice LAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a land card from your library");
     
+    public static final MagicTargetChoice CARD_FROM_LIBRARY = 
+        new MagicTargetChoice("a card from your library");
+    
     public static final MagicTargetChoice BASIC_LAND_CARD_FROM_LIBRARY = 
         new MagicTargetChoice("a basic land card from your library");
     
