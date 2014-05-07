@@ -187,7 +187,6 @@ Akroan Phalanx
 Akroan Skyguard
 Akroma, Angel of Fury
 Akroma, Angel of Wrath
-Akroma, Angel of Wrath Avatar
 Akroma's Blessing
 Akroma's Devoted
 Akroma's Memorial
@@ -434,7 +433,6 @@ Arcane Sanctum
 Arcane Spyglass
 Arcane Teachings
 Arcanis the Omnipotent
-Arcanis, the Omnipotent Avatar
 Arcanum Wings
 Arc Blade
 Arcbound Bruiser
@@ -443,7 +441,6 @@ Arcbound Fiend
 Arcbound Hybrid
 Arcbound Lancer
 Arcbound Overseer
-Arcbound Overseer Avatar
 Arcbound Ravager
 Arcbound Reclaimer
 Arcbound Slith
@@ -586,9 +583,7 @@ Ashiok, Nightmare Weaver
 Ashiok's Adept
 Ashling's Prerogative
 Ashling, the Extinguisher
-Ashling, the Extinguisher Avatar
 Ashling the Pilgrim
-Ashling the Pilgrim Avatar
 Ashmouth Hound
 Ashnod
 Ashnod's Altar
@@ -1039,7 +1034,6 @@ Biovisionary
 Birchlore Rangers
 Bird Maiden
 Birds of Paradise
-Birds of Paradise Avatar
 Birthing Pod
 Biting Tether
 Bitterblossom
@@ -1345,7 +1339,6 @@ Borrowing 100,000 Arrows
 Borrowing the East Wind
 Boseiju, Who Shelters All
 Bosh, Iron Golem
-Bosh, Iron Golem Avatar
 Bosium Strip
 Bosk Banneret
 Bottled Cloister
@@ -1369,7 +1362,6 @@ Brackwater Elemental
 Braid of Fire
 Braids, Cabal Minion
 Braids, Conjurer Adept
-Braids, Conjurer Adept Avatar
 Braidwood Cup
 Braidwood Sextant
 Brainbite
@@ -1950,7 +1942,6 @@ Chromeshell Crab
 Chrome Steed
 Chromium
 Chronatog
-Chronatog Avatar
 Chronatog Totem
 Chronic Flooding
 Chronicler of Heroes
@@ -2537,7 +2528,6 @@ Daggerclaw Imp
 Daggerdrome Imp
 Daily Regimen
 Dakkon Blackblade
-Dakkon Blackblade Avatar
 Dakmor Bat
 Dakmor Ghoul
 Dakmor Lancer
@@ -2636,7 +2626,6 @@ Daughter of Autumn
 Daunting Defender
 Dauntless Dourbark
 Dauntless Escort
-Dauntless Escort Avatar
 Dauntless Onslaught
 Dauthi Cutthroat
 Dauthi Embrace
@@ -2943,7 +2932,6 @@ Diabolic Servitude
 Diabolic Tutor
 Diabolic Vision
 Diamond Faerie
-Diamond Faerie Avatar
 Diamond Kaleidoscope
 Diamond Valley
 Diaochan, Artful Beauty
@@ -3410,13 +3398,11 @@ Eidolon of the Great Revel
 Eiganjo Castle
 Eiganjo Free-Riders
 Eight-and-a-Half-Tails
-Eight-and-a-Half-Tails Avatar
 Eightfold Maze
 Ekundu Cyclops
 Ekundu Griffin
 Eladamri
 Eladamri, Lord of Leaves
-Eladamri, Lord of Leaves Avatar
 Eladamri's Call
 Eladamri's Vineyard
 Eland Umbra
@@ -3487,7 +3473,6 @@ Elvish Bard
 Elvish Berserker
 Elvish Branchbender
 Elvish Champion
-Elvish Champion Avatar
 Elvish Eulogist
 Elvish Farmer
 Elvish Fury
@@ -3600,7 +3585,6 @@ Engulfing Flames
 Engulfing Slagwurm
 Enigma Eidolon
 Enigma Sphinx
-Enigma Sphinx Avatar
 Enlarge
 Enlightened Tutor
 Enlisted Wurm
@@ -3653,7 +3637,6 @@ Erebos, God of the Dead
 Erebos's Emissary
 Erg Raiders
 Erhnam Djinn
-Erhnam Djinn Avatar
 Erithizon
 Eron the Relentless
 Erosion
@@ -3701,7 +3684,6 @@ Essence Warden
 Etched Champion
 Etched Monstrosity
 Etched Oracle
-Etched Oracle Avatar
 Eternal Dominion
 Eternal Dragon
 Eternal Flame
@@ -3863,7 +3845,6 @@ Falkenrath Noble
 Falkenrath Torturer
 Fall
 Fallen Angel
-Fallen Angel Avatar
 Fallen Askari
 Fallen Cleric
 Fallen Ferromancer
@@ -4047,7 +4028,6 @@ Fighting Drake
 Fight or Flight
 Fight to the Death
 Figure of Destiny
-Figure of Destiny Avatar
 Filigree Angel
 Filigree Fracture
 Filigree Sages
@@ -4152,7 +4132,6 @@ Flamespeaker's Will
 Flame Spirit
 Flamestick Courier
 Flametongue Kavu
-Flametongue Kavu Avatar
 Flame Wave
 Flamewave Invoker
 Flame-Wreathed Phoenix
@@ -4367,7 +4346,6 @@ Freed from the Real
 Freewind Equenaut
 Freewind Falcon
 Frenetic Efreet
-Frenetic Efreet Avatar
 Frenetic Ogre
 Frenetic Raptor
 Frenetic Sliver
@@ -4892,7 +4870,6 @@ Goblin Turncoat
 Goblin Vandal
 Goblin War Buggy
 Goblin Warchief
-Goblin Warchief Avatar
 Goblin War Cry
 Goblin Wardriver
 Goblin War Drums
@@ -5109,7 +5086,6 @@ Grindclock
 Grinding Station
 Grindstone
 Grinning Demon
-Grinning Demon Avatar
 Grinning Ignus
 Grinning Totem
 Grip of Amnesia
@@ -5229,7 +5205,6 @@ Gwendlyn Di Corci
 Gwyllion Hedge-Mage
 Gyre Sage
 Haakon, Stromgald Scourge
-Haakon, Stromgald Scourge Avatar
 Haazda Exonerator
 Haazda Shield Mate
 Haazda Snare Squad
@@ -5388,7 +5363,6 @@ Heartwood Dryad
 Heartwood Giant
 Heartwood Shard
 Heartwood Storyteller
-Heartwood Storyteller Avatar
 Heartwood Treefolk
 Heat of Battle
 Heat Ray
@@ -5437,7 +5411,6 @@ Hellkite Tyrant
 Hellraiser Goblin
 Hellrider
 Hell's Caretaker
-Hell's Caretaker Avatar
 Hellspark Elemental
 Hell's Thunder
 Hell Swarm
@@ -5463,7 +5436,6 @@ Heretic's Punishment
 Heritage Druid
 Hermetic Study
 Hermit Druid
-Hermit Druid Avatar
 Heroes' Bane
 Heroes' Podium
 Heroes Remembered
@@ -5513,7 +5485,6 @@ High Seas
 High Tide
 Highway Robber
 Higure, the Still Wind
-Higure, the Still Wind Avatar
 Hikari, Twilight Guardian
 Hillcomber Giant
 Hill Giant
@@ -5911,7 +5882,6 @@ Initiate of Blood
 Initiates of the Ebon Hand
 Ink Dissolver
 Ink-Eyes, Servant of Oni
-Ink-Eyes, Servant of Oni Avatar
 Inkfathom Divers
 Inkfathom Infiltrator
 Inkfathom Witch
@@ -6101,7 +6071,6 @@ Jasmine Boreal
 Jasmine Seer
 Jawbone Skulkin
 Jaws of Stone
-Jaya Ballard Avatar
 Jaya Ballard, Task Mage
 Jayemdae Tome
 Jedit Ojanen
@@ -6126,7 +6095,6 @@ Jhessian Infiltrator
 Jhessian Lookout
 Jhessian Zombies
 Jhoira of the Ghitu
-Jhoira of the Ghitu Avatar
 Jhoira's Timebug
 Jhoira's Toolbox
 Jhovall Queen
@@ -6263,7 +6231,6 @@ Karn Liberated
 Karn, Silver Golem
 Karn's Touch
 Karona, False God
-Karona, False God Avatar
 Karona's Zealot
 Karoo
 Karoo Meerkat
@@ -6543,7 +6510,6 @@ Kraul Warrior
 Krenko, Mob Boss
 Krenko's Command
 Kresh the Bloodbraided
-Kresh the Bloodbraided Avatar
 Kris Mage
 Krond the Dawn-Clad
 Krosa
@@ -6973,7 +6939,6 @@ Loxodon Anchorite
 Loxodon Convert
 Loxodon Gatekeeper
 Loxodon Hierarch
-Loxodon Hierarch Avatar
 Loxodon Mender
 Loxodon Mystic
 Loxodon Partisan
@@ -7041,7 +7006,6 @@ Lys Alana Bowmaster
 Lys Alana Huntmaster
 Lys Alana Scarblade
 Lyzolda, the Blood Witch
-Lyzolda, the Blood Witch Avatar
 Maalfeld Twins
 Macabre Waltz
 Macetail Hystrodon
@@ -7056,7 +7020,6 @@ Mad Dog
 Mad Prophet
 Madrush Cyclops
 Maelstrom Archangel
-Maelstrom Archangel Avatar
 Maelstrom Djinn
 Maelstrom Nexus
 Maelstrom Pulse
@@ -7129,7 +7092,6 @@ Malach of the Dawn
 Malakir Bloodwitch
 Malevolent Awakening
 Malfegor
-Malfegor Avatar
 Malice
 Malicious Advice
 Malicious Intent
@@ -7192,7 +7154,6 @@ Manta Riders
 Mantis Engine
 Mantle of Leadership
 Maralen of the Mornsong
-Maralen of the Mornsong Avatar
 Marath, Will of the Wild
 Marauding Knight
 Marauding Maulhorn
@@ -7224,7 +7185,6 @@ Markov Patrician
 Markov's Servant
 Markov Warlord
 Maro
-Maro Avatar
 Marrow Bats
 Marrow Chomper
 Marrow-Gnawer
@@ -7291,7 +7251,6 @@ Master of the Hunt
 Master of the Pearl Trident
 Master of the Veil
 Master of the Wild Hunt
-Master of the Wild Hunt Avatar
 Master of Waves
 Master's Call
 Master Splicer
@@ -7313,7 +7272,6 @@ Maw of the Mire
 Maw of the Obzedat
 Mayael's Aria
 Mayael the Anima
-Mayael the Anima Avatar
 May Civilization Collapse
 Mayor of Avabruck
 Maze Abomination
@@ -7569,11 +7527,9 @@ Mirri
 Mirri, Cat Warrior
 Mirri's Guile
 Mirri the Cursed
-Mirri the Cursed Avatar
 Mirrodin's Core
 Mirrored Depths
 Mirror Entity
-Mirror Entity Avatar
 Mirror Gallery
 Mirror Golem
 Mirror-Mad Phantasm
@@ -7705,7 +7661,6 @@ Momentous Fall
 Moment's Peace
 Momentum
 Momir Vig, Simic Visionary
-Momir Vig, Simic Visionary Avatar
 Mondronen Shaman
 Mongrel Pack
 Monkey Cage
@@ -7753,7 +7708,6 @@ Morgue Theft
 Morgue Thrull
 Morgue Toad
 Morinfen
-Morinfen Avatar
 Moriok Reaver
 Moriok Replica
 Moriok Rigger
@@ -7847,7 +7801,6 @@ Murder Investigation
 Murder of Crows
 Murderous Betrayal
 Murderous Redcap
-Murderous Redcap Avatar
 Murderous Spoils
 Murgish Cemetery
 Murk Dwellers
@@ -8024,7 +7977,6 @@ Necropolis
 Necropolis of Azar
 Necropolis Regent
 Necropotence
-Necropotence Avatar
 Necropouncer
 Necrosavant
 Necroskitter
@@ -8046,7 +7998,6 @@ Nefashu
 Negate
 Neko-Te
 Nekrataal
-Nekrataal Avatar
 Nekusar, the Mindrazer
 Nema Siltlurker
 Nemata, Grove Guardian
@@ -8366,7 +8317,6 @@ One Thousand Lashes
 One with Nature
 One with Nothing
 Oni of Wild Places
-Oni of Wild Places Avatar
 Oni Possession
 Only Blood Ends Your Nightmares
 Onslaught
@@ -8440,7 +8390,6 @@ Orcish Oriflamme
 Orcish Settlers
 Orcish Spy
 Orcish Squatters
-Orcish Squatters Avatar
 Orcish Veteran
 Ordeal of Erebos
 Ordeal of Heliod
@@ -8653,7 +8602,6 @@ Pawn of Ulamog
 Pay No Heed
 Peace and Quiet
 Peacekeeper
-Peacekeeper Avatar
 Peace of Mind
 Peace Strider
 Peace Talks
@@ -8732,7 +8680,6 @@ Petrified Plating
 Petrified Wood-Kin
 Pewter Golem
 Phage the Untouchable
-Phage the Untouchable Avatar
 Phalanx Formation
 Phalanx Leader
 Phantasmagorian
@@ -8932,7 +8879,6 @@ Plated Sliver
 Plated Spider
 Plated Wurm
 Platinum Angel
-Platinum Angel Avatar
 Platinum Emperion
 Plaxcaster Frogling
 Plaxmanta
@@ -9101,7 +9047,6 @@ Probe
 Proclamation of Rebirth
 Prodigal Pyromancer
 Prodigal Sorcerer
-Prodigal Sorcerer Avatar
 Profane Command
 Profane Prayers
 Profit
@@ -9400,7 +9345,6 @@ Raking Canopy
 Rakish Heir
 Rakka Mar
 Raksha Golden Cub
-Raksha Golden Cub Avatar
 Rally
 Rally the Forces
 Rally the Horde
@@ -9519,7 +9463,6 @@ Reap
 Reap and Sow
 Reaper from the Abyss
 Reaper King
-Reaper King Avatar
 Reaper of Sheoldred
 Reaper of the Wilds
 Reaping the Graves
@@ -9873,7 +9816,6 @@ Rith's Attendant
 Rith's Charm
 Rith's Grove
 Rith, the Awakener
-Rith, the Awakener Avatar
 Ritual of Restoration
 Ritual of Steel
 Ritual of Subdual
@@ -9992,7 +9934,6 @@ Rout
 Rowan Treefolk
 Rowen
 Royal Assassin
-Royal Assassin Avatar
 Royal Decree
 Royal Falcon
 Royal Herbalist
@@ -10019,7 +9960,6 @@ Rumbling Aftershocks
 Rumbling Baloth
 Rumbling Crescendo
 Rumbling Slum
-Rumbling Slum Avatar
 Rummaging Goblin
 Rummaging Wizard
 Run
@@ -10126,7 +10066,6 @@ Sai of the Shinobi
 Saji's Torrent
 Sakashima's Student
 Sakashima the Impostor
-Sakashima the Impostor Avatar
 Sakiko, Mother of Summer
 Sakura-Tribe Elder
 Sakura-Tribe Scout
@@ -10551,7 +10490,6 @@ Serpent Warrior
 Serra
 Serra Advocate
 Serra Angel
-Serra Angel Avatar
 Serra Ascendant
 Serra Avatar
 Serra Avenger
@@ -10578,7 +10516,6 @@ Servant of Tymaret
 Servant of Volrath
 Serve
 Seshiro the Anointed
-Seshiro the Anointed Avatar
 Setessan Battle Priest
 Setessan Griffin
 Setessan Oathsworn
@@ -10915,7 +10852,6 @@ Sisay
 Sisay's Ingenuity
 Sisay's Ring
 Sisters of Stone Death
-Sisters of Stone Death Avatar
 Sisters of the Flame
 Sivitri Scarzam
 Sivvi's Ruse
@@ -11097,7 +11033,6 @@ Sliver Construct
 Sliver Legion
 Sliver Overlord
 Sliver Queen
-Sliver Queen Avatar
 Sliver Queen, Brood Mother
 Sliversmith
 Slobad, Goblin Tinkerer
@@ -11548,7 +11483,6 @@ Squeaking Pie Sneak
 Squealing Devil
 Squee
 Squee, Goblin Nabob
-Squee, Goblin Nabob Avatar
 Squee's Embrace
 Squee's Revenge
 Squee's Toy
@@ -11581,7 +11515,6 @@ Stalking Assassin
 Stalking Bloodsucker
 Stalking Stones
 Stalking Tiger
-Stalking Tiger Avatar
 Stalking Vampire
 Stalking Vengeance
 Stalking Yeti
@@ -11703,7 +11636,6 @@ Stone Giant
 Stone Golem
 Stonehands
 Stonehewer Giant
-Stonehewer Giant Avatar
 Stonehorn Chanter
 Stonehorn Dignitary
 Stone Idol Trap
@@ -11817,7 +11749,6 @@ Struggle for Sanity
 Student of Elements
 Student of Warfare
 Stuffy Doll
-Stuffy Doll Avatar
 Stun
 Stun Sniper
 Stunted Growth
@@ -12273,7 +12204,6 @@ Tetravus
 Tetsuo Umezawa
 Teysa, Envoy of Ghosts
 Teysa, Orzhov Scion
-Teysa, Orzhov Scion Avatar
 Tezzeret, Agent of Bolas
 Tezzeret's Gambit
 Tezzeret the Seeker
@@ -12666,7 +12596,6 @@ Trade Caravan
 Trade Routes
 Trade Secrets
 Tradewind Rider
-Tradewind Rider Avatar
 Trading Post
 Tragic Poet
 Tragic Slip
@@ -12875,7 +12804,6 @@ Twitch
 Two-Headed Cerberus
 Two-Headed Dragon
 Two-Headed Giant of Foriys
-Two-Headed Giant of Foriys Avatar
 Two-Headed Sliver
 Tymaret, the Murder King
 Typhoid Rats
@@ -13068,7 +12996,6 @@ Vampire Interloper
 Vampire Lacerator
 Vampire Nighthawk
 Vampire Nocturnus
-Vampire Nocturnus Avatar
 Vampire Outcasts
 Vampire's Bite
 Vampire Warlord
@@ -13298,7 +13225,6 @@ Viridian Revel
 Viridian Scout
 Viridian Shaman
 Viridian Zealot
-Viridian Zealot Avatar
 Virtue's Ruin
 Virtuous Charge
 Virulent Sliver
