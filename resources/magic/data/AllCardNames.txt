@@ -613,7 +613,6 @@ Astral Cornucopia
 Astral Slide
 Astral Steel
 Astrolabe
-Aswan Jaguar
 Atalya, Samite Master
 Athreos, God of Passage
 Atog
@@ -1578,7 +1577,6 @@ Caller of Gales
 Caller of the Claw
 Caller of the Hunt
 Call for Blood
-Call from the Grave
 Call of the Conclave
 Call of the Herd
 Call of the Nightwing
@@ -3818,7 +3816,6 @@ Fade Away
 Fade from Memory
 Fade into Antiquity
 Faerie Conclave
-Faerie Dragon
 Faerie Harbinger
 Faerie Impostor
 Faerie Invaders
@@ -4516,7 +4513,6 @@ Geist Trappers
 Gelatinous Genesis
 Gelectrode
 Gelid Shackles
-Gem Bazaar
 Gemhide Sliver
 Gemini Engine
 Gem of Becoming
@@ -4828,7 +4824,6 @@ Goblin Outlander
 Goblin Patrol
 Goblin Piker
 Goblin Piledriver
-Goblin Polka Band
 Goblin Psychopath
 Goblin Pyromancer
 Goblin Raider
@@ -7967,7 +7962,6 @@ Necromantic Thirst
 Necropede
 Necroplasm
 Necropolis
-Necropolis of Azar
 Necropolis Regent
 Necropotence
 Necropouncer
@@ -8371,7 +8365,6 @@ Orcish Bloodpainter
 Orcish Cannonade
 Orcish Cannoneers
 Orcish Captain
-Orcish Catapult
 Orcish Conscripts
 Orcish Farmer
 Orcish Healer
@@ -8519,7 +8512,6 @@ Pallid Mycoderm
 Pallimud
 Panacea
 Pandemonium
-Pandora's Box
 Panglacial Wurm
 Pangosaur
 Pang Tong, "Young Phoenix"
@@ -8934,7 +8926,6 @@ Power Matrix
 Power of Fire
 Power Sink
 Powerstone Minefield
-Power Struggle
 Power Surge
 Power Taint
 Pox
@@ -9021,7 +9012,6 @@ Prince of Thralls
 Princess Lucrezia
 Prismatic Boon
 Prismatic Circle
-Prismatic Dragon
 Prismatic Lace
 Prismatic Lens
 Prismatic Omen
@@ -9296,7 +9286,6 @@ Raiding Nightstalker
 Raiding Party
 Rainbow Crow
 Rainbow Efreet
-Rainbow Knights
 Rainbow Vale
 Rain of Blades
 Rain of Daggers
@@ -13588,7 +13577,6 @@ Whetwheel
 Which of You Burns Brightest?
 Whim of Volrath
 Whims of the Fates
-Whimsy
 Whimwader
 Whipcorder
 Whipflare
