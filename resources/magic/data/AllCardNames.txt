@@ -485,7 +485,6 @@ Arcum Dagsson
 Arcum's Sleigh
 Arcum's Weathervane
 Arcum's Whistle
-Arden Angel
 Ardent Militia
 Ardent Plea
 Ardent Recruit
@@ -590,7 +589,6 @@ Ashnod's Altar
 Ashnod's Battle Gear
 Ashnod's Cylix
 Ashnod's Transmogrant
-Ashuza's Breath
 Ash Zealot
 Asmira, Holy Avenger
 Aspect of Gorgon
@@ -1601,7 +1599,6 @@ Call to the Netherworld
 Calming Licid
 Calming Verse
 Caltrops
-Camato Scout
 Camel
 Camouflage
 Cancel
@@ -5261,7 +5258,6 @@ Hanna's Custody
 Hanna, Ship's Navigator
 Hanweir Lancer
 Hanweir Watchkeep
-Hapato's Might
 Hapless Researcher
 Harabaz Druid
 Harbinger of Night
@@ -6995,8 +6991,6 @@ Lust for War
 Lu Su, Wu Advisor
 Lux Cannon
 Lu Xun, Scholar General
-Lydari Druid
-Lydari Elephant
 Lyev Decree
 Lyev Skyknight
 Lymph Sliver
@@ -7802,7 +7796,6 @@ Murder of Crows
 Murderous Betrayal
 Murderous Redcap
 Murderous Spoils
-Murgish Cemetery
 Murk Dwellers
 Murkfiend Liege
 Murmuring Bosk
@@ -10063,7 +10056,6 @@ Sages of the Anima
 Sage's Row Denizen
 Sailmonger
 Sai of the Shinobi
-Saji's Torrent
 Sakashima's Student
 Sakashima the Impostor
 Sakiko, Mother of Summer
@@ -12538,7 +12530,6 @@ Tormentor's Trident
 Tormod's Crypt
 Tornado
 Tornado Elemental
-Tornellan Protector
 Torpid Moloch
 Torpor Dust
 Torpor Orb
@@ -13069,7 +13060,6 @@ Veinfire Borderpost
 Vela the Night-Clad
 Veldrane of Sengir
 Veldt
-Velican Dragon
 Velis Vel
 Venarian Glimmer
 Venarian Gold
