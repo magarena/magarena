@@ -32,7 +32,6 @@ Abyssal Nightstalker
 Abyssal Nocturnus
 Abyssal Persecutor
 Abyssal Specter
-Academy at Tolaria West
 Academy Raider
 Academy Rector
 Academy Researchers
@@ -147,7 +146,6 @@ Agonizing Memories
 Agony Warp
 Agoraphobia
 Agrus Kos, Wojek Veteran
-Agyrem
 Air Bladder
 Airborne Aid
 Airdrop Condor
@@ -826,7 +824,6 @@ Banishment Decree
 Banners Raised
 Banshee
 Banshee's Blade
-Bant
 Bant Battlemage
 Bant Charm
 Bant Panorama
@@ -1745,7 +1742,6 @@ Celestial Mantle
 Celestial Prism
 Celestial Purge
 Celestial Sword
-Celestine Reef
 Cellar Door
 Cemetery Gate
 Cemetery Puca
@@ -2011,7 +2007,6 @@ Clergy en-Vec
 Clergy of the Holy Nimbus
 Clickslither
 Cliffrunner Behemoth
-Cliffside Market
 Cliff Threader
 Clifftop Retreat
 Clinging Anemones
@@ -3447,7 +3442,6 @@ Elixir of Immortality
 Elixir of Vitality
 Elkin Bottle
 Elkin Lair
-Eloren Wilds
 Elsewhere Flask
 Elspeth, Knight-Errant
 Elspeth, Sun's Champion
@@ -3931,7 +3925,6 @@ Feebleness
 Feedback
 Feedback Bolt
 Feeding Frenzy
-Feeding Grounds
 Feed the Machine
 Feed the Pack
 Feeling of Dread
@@ -4003,7 +3996,6 @@ Fieldmist Borderpost
 Field of Dreams
 Field of Reality
 Field of Souls
-Fields of Summer
 Field Surgeon
 Fiend Hunter
 Fiend of the Shadows
@@ -4695,7 +4687,6 @@ Glimmering Angel
 Glimmerpoint Stag
 Glimmerpost
 Glimmervoid
-Glimmervoid Basin
 Glimpse of Nature
 Glimpse the Future
 Glimpse the Sun God
@@ -4893,7 +4884,6 @@ Golden Hind
 Golden Urn
 Golden Wish
 Gold-Forged Sentinel
-Goldmeadow
 Goldmeadow Dodger
 Goldmeadow Harrier
 Goldmeadow Lookout
@@ -5089,7 +5079,6 @@ Grisly Spectacle
 Grisly Transformation
 Gristleback
 Gristle Grinner
-Grixis
 Grixis Battlemage
 Grixis Charm
 Grixis Grimblade
@@ -5560,7 +5549,6 @@ Hopeful Eidolon
 Hopping Automaton
 Horde of Boggarts
 Horde of Notions
-Horizon Boughs
 Horizon Canopy
 Horizon Chimera
 Horizon Drake
@@ -5764,7 +5752,6 @@ Imagecrafter
 Imaginary Pet
 Imi Statue
 Immaculate Magistrate
-Immersturm
 Immerwolf
 Immobilizing Ink
 Immolating Souleater
@@ -5987,7 +5974,6 @@ Island Fish Jasconius
 Island of Wak-Wak
 Island Sanctuary
 Isleback Spawn
-Isle of Vesuva
 Isochron Scepter
 Isolated Chapel
 Isolation Cell
@@ -6021,7 +6007,6 @@ Izzet Guildmage
 Izzet Keyrune
 Izzet Signet
 Izzet Staticaster
-Izzet Steam Maze
 Jabari's Banner
 Jabari's Influence
 Jace, Architect of Thought
@@ -6503,7 +6488,6 @@ Krenko's Command
 Kresh the Bloodbraided
 Kris Mage
 Krond the Dawn-Clad
-Krosa
 Krosan Archer
 Krosan Avenger
 Krosan Beast
@@ -6708,7 +6692,6 @@ Lesser Gargadon
 Lesser Werewolf
 Lethal Vapors
 Lethargy Trap
-Lethe Lake
 Leveler
 Leviathan
 Levitation
@@ -6845,7 +6828,6 @@ Living Wall
 Living Wish
 Livonya Silone
 Lizard Warrior
-Llanowar
 Llanowar Augur
 Llanowar Behemoth
 Llanowar Cavalry
@@ -7422,7 +7404,6 @@ Millstone
 Mimeofacture
 Mimic Vat
 Miming Slime
-Minamo
 Minamo, School at Water's Edge
 Minamo Scrollkeeper
 Minamo Sightbender
@@ -7517,7 +7498,6 @@ Mirri, Cat Warrior
 Mirri's Guile
 Mirri the Cursed
 Mirrodin's Core
-Mirrored Depths
 Mirror Entity
 Mirror Gallery
 Mirror Golem
@@ -7783,7 +7763,6 @@ Multani's Presence
 Mundungu
 Mungha Wurm
 Muraganda Petroglyphs
-Murasa
 Murasa Pyromancer
 Murder
 Murder Investigation
@@ -7870,7 +7849,6 @@ Mystifying Maze
 Mythic Proportions
 My Undead Horde Awakens
 My Wish Is Your Command
-Naar Isle
 Nacatl Hunt-Pride
 Nacatl Outlander
 Nacatl Savage
@@ -7931,7 +7909,6 @@ Nature's Will
 Nature's Wrath
 Nausea
 Nav Squad Commandos
-Naya
 Naya Battlemage
 Naya Charm
 Naya Hushblade
@@ -8434,7 +8411,6 @@ Orzhov Signet
 Osai Vultures
 Ostiary Thrull
 Ostracize
-Otaria
 Otarian Juggernaut
 Otherworld Atlas
 Otherworldly Journey
@@ -8519,7 +8495,6 @@ Panic
 Panic Attack
 Panic Spellbomb
 Panoptic Mirror
-Panopticon
 Panther Warriors
 Paperfin Rascal
 Paradigm Shift
@@ -8898,7 +8873,6 @@ Ponder
 Pongify
 Pontiff of Blight
 Pooling Venom
-Pools of Becoming
 Porcelain Legionnaire
 Porphyry Nodes
 Portcullis
@@ -9392,7 +9366,6 @@ Ravenous Skirge
 Ravenous Trap
 Ravenous Vampire
 Raven's Crime
-Raven's Run
 Raven's Run Dragoon
 Raving Oni-Slave
 Rayne, Academy Chancellor
@@ -10078,7 +10051,6 @@ Sanctuary Cat
 Sanctum Custodian
 Sanctum Gargoyle
 Sanctum Guardian
-Sanctum of Serra
 Sanctum Plowbeast
 Sandals of Abdallah
 Sandbar Crocodile
@@ -10321,7 +10293,6 @@ Seal of Removal
 Seal of Strength
 Sea Monster
 Seance
-Sea of Sand
 Search for Survivors
 Search for Tomorrow
 Searchlight Geist
@@ -10638,7 +10609,6 @@ Shipbreaker Kraken
 Shipwreck Singer
 Shirei, Shizo's Caretaker
 Shisato, Whispering Hunter
-Shiv
 Shivan Dragon
 Shivan Emissary
 Shivan Gorge
@@ -10911,7 +10881,6 @@ Skullsnatcher
 Skulltap
 Skybind
 Skyblinder Staff
-Skybreen
 Skyclaw Thrash
 Skycloud Egg
 Skycloud Expanse
@@ -11077,7 +11046,6 @@ Soar
 Soaring Hope
 Soaring Seacliff
 Soilshaper
-Sokenzan
 Sokenzan Bruiser
 Sokenzan Renegade
 Sokenzan Spellblade
@@ -11718,7 +11686,6 @@ Strongarm Thug
 Stronghold Assassin
 Stronghold Biologist
 Stronghold Discipline
-Stronghold Furnace
 Stronghold Gambit
 Stronghold Machinist
 Stronghold Overseer
@@ -12052,7 +12019,6 @@ Tawnos
 Tawnos's Coffin
 Tawnos's Wand
 Tawnos's Weaponry
-Tazeem
 Tear
 Teardrop Kami
 Tears of Rage
@@ -12100,7 +12066,6 @@ Tel-Jilad Stylus
 Tel-Jilad Wolf
 Teller of Tales
 Telling Time
-Tember City
 Temper
 Tempered Steel
 Tempest Drake
@@ -12213,17 +12178,11 @@ That Which Was Taken
 Thaumatog
 Thawing Glaciers
 The Abyss
-The AEther Flues
 The Brute
-The Dark Barony
 The Dead Shall Serve
-The Eon Fog
 The Fallen
 The Fate of the Flammable
-The Fourth Sphere
 Theft of Dreams
-The Great Forest
-The Hippodrome
 The Hive
 The Iron Guardian Stirs
 The Lady of the Mountain
@@ -12233,7 +12192,6 @@ Thelonite Monk
 Thelon of Havenwood
 Thelon's Chant
 Thelon's Curse
-The Maelstrom
 The Mimeoplasm
 The Pieces Are Coming Together
 The Rack
@@ -12762,7 +12720,6 @@ Turn to Dust
 Turn to Frog
 Turn to Mist
 Turn to Slag
-Turri Island
 Turtleshell Changeling
 Twiddle
 Twigwalker
@@ -12832,7 +12789,6 @@ Undead Slayer
 Undead Warchief
 Undercity Informer
 Undercity Plague
-Undercity Reaches
 Undercity Shade
 Underground River
 Underground Sea
@@ -13049,7 +13005,6 @@ Veinfire Borderpost
 Vela the Night-Clad
 Veldrane of Sengir
 Veldt
-Velis Vel
 Venarian Glimmer
 Venarian Gold
 Vendetta
