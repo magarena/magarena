@@ -169,7 +169,6 @@ Akki Raider
 Akki Rockspeaker
 Akki Underling
 Akki Underminer
-Akoum
 Akoum Battlesinger
 Akoum Boulderfoot
 Akoum Refuge
@@ -487,7 +486,6 @@ Arena
 Arena Athlete
 Arena of the Ancients
 Arenson's Aura
-Aretopolis
 Argent Mutation
 Argent Sphinx
 Argentum Armor
@@ -601,7 +599,6 @@ Assemble the Legion
 Assembly Hall
 Assembly-Worker
 Assert Authority
-Astral Arena
 Astral Cornucopia
 Astral Slide
 Astral Steel
@@ -1160,7 +1157,6 @@ Blood Funnel
 Bloodghast
 Bloodgift Demon
 Bloodhall Ooze
-Bloodhill Bastion
 Blood Hound
 Bloodhunter Bat
 Bloodhusk Ritualist
@@ -3362,7 +3358,6 @@ Echoing Truth
 Echo Mage
 Echo Tracer
 Edge of Autumn
-Edge of Malacol
 Edge of the Divinity
 Edgewalker
 Edric, Spymaster of Trest
@@ -4378,7 +4373,6 @@ Furious Resistance
 Furnace Brood
 Furnace Celebration
 Furnace Dragon
-Furnace Layer
 Furnace of Rath
 Furnace Scamp
 Furnace Spirit
@@ -4469,7 +4463,6 @@ Gatstaf Shepherd
 Gauntlet of Might
 Gauntlet of Power
 Gauntlets of Chaos
-Gavony
 Gavony Ironwright
 Gavony Township
 Gaze of Adamaro
@@ -4656,7 +4649,6 @@ Gleam of Battle
 Gleam of Resistance
 Gleancrawler
 Gleeful Sabotage
-Glen Elendra
 Glen Elendra Archmage
 Glen Elendra Liege
 Glen Elendra Pranksters
@@ -4928,7 +4920,6 @@ Grand Architect
 Grand Coliseum
 Grand Melee
 Grandmother Sengir
-Grand Ossuary
 Granger Guildmage
 Granite Gargoyle
 Granite Grip
@@ -5084,7 +5075,6 @@ Groundshaker Sliver
 Groundskeeper
 Groundswell
 Grove of the Burnwillows
-Grove of the Dreampods
 Grove of the Guardian
 Growing Ranks
 Growth Spasm
@@ -5336,7 +5326,6 @@ Heckling Fiends
 Hedge Troll
 Hedron Crab
 Hedron-Field Purists
-Hedron Fields of Agadeem
 Hedron Matrix
 Hedron Rover
 Hedron Scrabbler
@@ -6086,7 +6075,6 @@ Juggernaut
 Juju Bubble
 Jukai Messenger
 Jump
-Jund
 Jund Battlemage
 Jund Charm
 Jund Hackblade
@@ -6259,7 +6247,6 @@ Kemuri-Onna
 Kentaro, the Smiling Cat
 Kenzo the Hardhearted
 Keranos, God of Storms
-Kessig
 Kessig Cagebreakers
 Kessig Malcontents
 Kessig Recluse
@@ -6272,7 +6259,6 @@ Khalni Garden
 Khalni Gem
 Khalni Heart Expedition
 Khalni Hydra
-Kharasha Foothills
 Kher Keep
 Kiki-Jiki, Mirror Breaker
 Kiku, Night's Flower
@@ -6286,7 +6272,6 @@ Kill-Suit Cultist
 Kill Switch
 Kiln Fiend
 Kilnmouth Dragon
-Kilnspire District
 Kiln Walker
 Kindercatch
 Kindle
@@ -6530,7 +6515,6 @@ Lagac Lizard
 Lagonna-Band Elder
 Lagonna-Band Trailblazer
 Lair Delve
-Lair of the Ashen Idol
 Lairwatch Giant
 Lake of the Dead
 Lambholt Elder
@@ -7682,7 +7666,6 @@ Mountain Titan
 Mountain Valley
 Mountain Yeti
 Mounted Archers
-Mount Keralia
 Mourner's Shield
 Mournful Zombie
 Mourning
@@ -7919,7 +7902,6 @@ Nemesis Mask
 Nemesis of Mortals
 Nemesis of Reason
 Nemesis Trap
-Nephalia
 Nephalia Drownyard
 Nephalia Seakite
 Nephalia Smuggler
@@ -8070,7 +8052,6 @@ No Quarter
 No Rest for the Wicked
 Norin the Wary
 Norn's Annex
-Norn's Dominion
 Norritt
 Northern Paladin
 North Star
@@ -8221,7 +8202,6 @@ Omnath, Locus of Mana
 Omnibian
 Omniscience
 O-Naginata
-Onakke Catacomb
 Ondu Cleric
 Ondu Giant
 One Dozen Eyes
@@ -8336,14 +8316,12 @@ Oriss, Samite Guardian
 Ornate Kanzashi
 Ornitharch
 Ornithopter
-Orochi Colony
 Orochi Eggwatcher
 Orochi Hatchery
 Orochi Leafcaller
 Orochi Ranger
 Orochi Sustainer
 Oros, the Avenger
-Orzhova
 Orzhova, the Church of Deals
 Orzhov Basilica
 Orzhov Charm
@@ -8849,7 +8827,6 @@ Pox
 Pradesh Gypsies
 Praetor's Counsel
 Praetor's Grasp
-Prahv
 Prahv, Spires of Order
 Preacher
 Precinct Captain
@@ -9137,7 +9114,6 @@ Quicksilver Elemental
 Quicksilver Fountain
 Quicksilver Gargantuan
 Quicksilver Geyser
-Quicksilver Sea
 Quicksilver Wall
 Quick Sliver
 Quiet Disrepair
@@ -10325,7 +10301,6 @@ Selesnya Evangel
 Selesnya Guildgate
 Selesnya Guildmage
 Selesnya Keyrune
-Selesnya Loft Gardens
 Selesnya Sagittars
 Selesnya Sanctuary
 Selesnya Sentry
@@ -11389,7 +11364,6 @@ Staff of the Wild Magus
 Staff of Zegon
 Stag Beetle
 Staggershock
-Stairs to Infinity
 Stalker Hag
 Stalking Assassin
 Stalking Bloodsucker
@@ -11466,7 +11440,6 @@ Steeple Roc
 Stench of Decay
 Stench of Evil
 Stenchskipper
-Stensia
 Stensia Bloodhall
 Steppe Lynx
 Sterling Grove
@@ -11866,7 +11839,6 @@ Tajuru Preserver
 Take
 Takeno, Samurai General
 Takeno's Cavalry
-Takenuma
 Takenuma Bleeder
 Take Possession
 Takklemaggot
@@ -11884,7 +11856,6 @@ Talisman of Indulgence
 Talisman of Progress
 Talisman of Unity
 Tallowisp
-Talon Gates
 Talon of Pain
 Talonrend
 Talon Sliver
@@ -12127,7 +12098,6 @@ Thespian's Stage
 The Tabernacle at Pendrell Vale
 The Unspeakable
 The Wretched
-The Zephyr Maze
 Thicket Basilisk
 Thicket Elemental
 Thick-Skinned Goblin
@@ -12457,7 +12427,6 @@ Tragic Poet
 Tragic Slip
 Trailblazer
 Trailblazer's Boots
-Trail of the Mage-Rings
 Trained Armodon
 Trained Caracal
 Trained Cheetah
@@ -12597,7 +12566,6 @@ True Believer
 True Conviction
 Truefire Paladin
 True-Name Nemesis
-Truga Jungle
 Trumpet Blast
 Trumpeting Armodon
 Trusted Advisor
@@ -13553,7 +13521,6 @@ Winding Wurm
 Windreader Sphinx
 Windreaper Falcon
 Windreaver
-Windriddle Palaces
 Windrider Eel
 Wind Sail
 Windscouter
