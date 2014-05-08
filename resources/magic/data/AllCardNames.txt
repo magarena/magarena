@@ -70,7 +70,6 @@ Adarkar Wastes
 Adarkar Windform
 Adder-Staff Boggart
 Addle
-A Display of My Dark Power
 Admonition Angel
 Ad Nauseam
 Adun Oakenshield
@@ -226,12 +225,10 @@ Alley Grifters
 All Hallow's Eve
 Alliance of Arms
 Allied Strategies
-All in Good Time
 All Is Dust
 Allosaurus Rider
 Alloy Golem
 Alloy Myr
-All Shall Smolder in My Wake
 All Suns' Dawn
 Alluring Scent
 Alluring Siren
@@ -405,7 +402,6 @@ Appetite for Brains
 Apprentice Necromancer
 Apprentice Sorcerer
 Apprentice Wizard
-Approach My Molten Realm
 Aquamoeba
 Aquamorph Entity
 Aquastrand Spider
@@ -964,7 +960,6 @@ Befoul
 Beguiler of Wills
 Behemoth's Herald
 Behemoth Sledge
-Behold the Power of Destruction
 Belbe's Armor
 Belbe's Percher
 Belbe's Portal
@@ -1912,7 +1907,6 @@ Choking Tethers
 Choking Vines
 Cho-Manno, Revolutionary
 Cho-Manno's Blessing
-Choose Your Champion
 Chord of Calling
 Chorus of Might
 Chorus of the Conclave
@@ -2532,7 +2526,6 @@ Damping Matrix
 Dance of Many
 Dance of Shadows
 Dance of the Dead
-Dance, Pathetic Marionette
 Dancing Scimitar
 Dandan
 Dangerous
@@ -3195,7 +3188,6 @@ Dregscape Zombie
 Dregs of Sorrow
 Drekavac
 Drelnoch
-Drench the Soil in Their Blood
 Drifter il-Dal
 Drifting Djinn
 Drifting Meadow
@@ -3503,7 +3495,6 @@ Emberwilde Djinn
 Emblazoned Golem
 Emblem of the Warmind
 Embolden
-Embrace My Diabolical Vision
 Emerald Charm
 Emerald Dragonfly
 Emerald Medallion
@@ -3708,9 +3699,6 @@ Everlasting Torment
 Evermind
 Evernight Shade
 Evershrike
-Every Hope Shall Vanish
-Every Last Vestige Shall Rot
-Evil Comes to Fruition
 Evil Eye of Orms-by-Gore
 Evil Eye of Urborg
 Evil Presence
@@ -3920,7 +3908,6 @@ Feebleness
 Feedback
 Feedback Bolt
 Feeding Frenzy
-Feed the Machine
 Feed the Pack
 Feeling of Dread
 Feint
@@ -5668,9 +5655,7 @@ Hypochondria
 Hysterical Blindness
 Hystrodon
 Hythonia the Cruel
-I Bask in Your Silent Awe
 Ib Halfheart, Goblin Tactician
-I Call on the Ancient Magics
 Icatian Crier
 Icatian Infantry
 Icatian Javelineers
@@ -5702,7 +5687,6 @@ Ichor Wellspring
 Icy Manipulator
 Icy Prison
 Ideas Unbound
-I Delight in Your Convulsions
 Identity Crisis
 Idle Thoughts
 Idyllic Tutor
@@ -5711,13 +5695,11 @@ Igneous Golem
 Igneous Pouncer
 Ignite Disorder
 Ignite Memories
-Ignite the Cloneforge!
 Ignoble Soldier
 Ignorant Bliss
 Ihsan's Shade
 Iizuka the Ruthless
 Ikiral Outrider
-I Know All, I See All
 Ill-Gotten Gains
 Illicit Auction
 Illness in the Ranks
@@ -5766,7 +5748,6 @@ Implode
 Imposing Sovereign
 Imposing Visage
 Imprison
-Imprison This Insolent Wretch
 Impromptu Raid
 Improvised Armor
 Imp's Mischief
@@ -5903,7 +5884,6 @@ Intimidation
 Intimidation Bolt
 Intimidator Initiate
 Into the Core
-Into the Earthen Maw
 Into the Fray
 Into the Maw of Hell
 Into the North
@@ -5912,7 +5892,6 @@ Into the Void
 Into the Wilds
 Into Thin Air
 Intrepid Hero
-Introductions Are in Order
 Intruder Alarm
 Intuition
 Inundate
@@ -6413,7 +6392,6 @@ Knowledge and Power
 Knowledge Exploitation
 Knowledge Pool
 Knowledge Vault
-Know Naught but Fire
 Knucklebone Witch
 Kobold Drill Sergeant
 Kobold Overlord
@@ -6858,7 +6836,6 @@ Longbow Archer
 Long-Forgotten Gohei
 Longhorn Firebeast
 Long-Term Plans
-Look Skyward and Despair
 Looming Hoverguard
 Looming Shade
 Looter il-Kor
@@ -7231,7 +7208,6 @@ Maw of the Mire
 Maw of the Obzedat
 Mayael's Aria
 Mayael the Anima
-May Civilization Collapse
 Mayor of Avabruck
 Maze Abomination
 Maze Behemoth
@@ -7675,7 +7651,6 @@ Morphling
 Morselhoarder
 Morsel Theft
 Mortal Combat
-Mortal Flesh Is Weak
 Mortal Obstinacy
 Mortal's Ardor
 Mortal's Resolve
@@ -7780,8 +7755,6 @@ Mycosynth Fiend
 Mycosynth Golem
 Mycosynth Lattice
 Mycosynth Wellspring
-My Crushing Masterstroke
-My Genius Knows No Bounds
 Myojin of Cleansing Fire
 Myojin of Infinite Rage
 Myojin of Life's Web
@@ -7832,8 +7805,6 @@ Mystic Visionary
 Mystic Zealot
 Mystifying Maze
 Mythic Proportions
-My Undead Horde Awakens
-My Wish Is Your Command
 Nacatl Hunt-Pride
 Nacatl Outlander
 Nacatl Savage
@@ -7877,12 +7848,10 @@ Naturalize
 Natural Order
 Natural Selection
 Natural Spring
-Nature Demands an Offering
 Nature's Blessing
 Nature's Chosen
 Nature's Claim
 Nature's Cloak
-Nature Shields Its Own
 Nature's Kiss
 Nature's Lore
 Nature's Panoply
@@ -8116,7 +8085,6 @@ Norwood Riders
 Norwood Warrior
 Nostalgic Dreams
 Nosy Goblin
-Nothing Can Stop Me Now
 Notion Thief
 Not of This World
 Notorious Assassin
@@ -8267,7 +8235,6 @@ One with Nature
 One with Nothing
 Oni of Wild Places
 Oni Possession
-Only Blood Ends Your Nightmares
 Onslaught
 Onulet
 Onyx Goblet
@@ -8589,7 +8556,6 @@ Peregrination
 Peregrine Drake
 Peregrine Griffin
 Peregrine Mask
-Perhaps You've Met My Cohort
 Perilous Forays
 Perilous Myr
 Perilous Research
@@ -8827,7 +8793,6 @@ Plaxcaster Frogling
 Plaxmanta
 Plea for Guidance
 Pledge of Loyalty
-Plots That Span Centuries
 Plover Knights
 Plow Through Reito
 Plow Under
@@ -9393,7 +9358,6 @@ Reality Spasm
 Reality Strobe
 Reality Twist
 Realm Razer
-Realms Befitting My Majesty
 Realms Uncharted
 Realmwright
 Reanimate
@@ -9836,7 +9800,6 @@ Root Maze
 Rootrunner
 Roots
 Root Sliver
-Roots of All Evil
 Roots of Life
 Root Spider
 Rootwalla
@@ -9857,7 +9820,6 @@ Rot Farm Skeleton
 Rotlung Reanimator
 Rotted Hulk
 Rotted Hystrix
-Rotted Ones, Lay Siege
 Rotting Fensnake
 Rotting Giant
 Rotting Legion
@@ -11794,7 +11756,6 @@ Surrakar Banisher
 Surrakar Marauder
 Surrakar Spellblade
 Surreal Memoir
-Surrender Your Thoughts
 Surveilling Sprite
 Surveyor's Scope
 Survey the Wreckage
@@ -12151,12 +12112,9 @@ Thaumatog
 Thawing Glaciers
 The Abyss
 The Brute
-The Dead Shall Serve
 The Fallen
-The Fate of the Flammable
 Theft of Dreams
 The Hive
-The Iron Guardian Stirs
 The Lady of the Mountain
 Thelonite Druid
 Thelonite Hermit
@@ -12165,7 +12123,6 @@ Thelon of Havenwood
 Thelon's Chant
 Thelon's Curse
 The Mimeoplasm
-The Pieces Are Coming Together
 The Rack
 Thermal Blast
 Thermal Flux
@@ -12176,7 +12133,6 @@ Thermopod
 Thespian's Stage
 The Tabernacle at Pendrell Vale
 The Unspeakable
-The Very Soil Shall Shake
 The Wretched
 The Zephyr Maze
 Thicket Basilisk
@@ -12425,7 +12381,6 @@ Tomoya the Revealer
 Tonic Peddler
 Tooth and Claw
 Tooth and Nail
-Tooth, Claw, and Tail
 Tooth of Chiss-Goria
 Tooth of Ramos
 Topan Ascetic
@@ -13498,7 +13453,6 @@ Whelming Wave
 Where Ancients Tread
 Whetstone
 Whetwheel
-Which of You Burns Brightest?
 Whim of Volrath
 Whims of the Fates
 Whimwader
@@ -13850,10 +13804,6 @@ Yotian Soldier
 Young Pyromancer
 Young Wei Recruits
 Young Wolf
-Your Fate Is Thrice Sealed
-Your Inescapable Doom
-Your Puny Minds Cannot Fathom
-Your Will Is Not Your Own
 Youthful Knight
 Yuan Shao's Infantry
 Yuan Shao, the Indecisive
