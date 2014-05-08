@@ -20,6 +20,7 @@ import magic.model.mstatic.MagicPermanentStatic;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
 
@@ -909,7 +910,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 return false;
             }
         }
-
+        if (hasAbility(MagicAbility.NonbasicLandwalk) && defendingPlayer.controlsPermanent(MagicTargetFilterFactory.NONBASIC_LAND_YOU_CONTROL)) {
+            return false;
+        }
         return true;
     }
 
