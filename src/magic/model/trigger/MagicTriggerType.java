@@ -1,6 +1,7 @@
 package magic.model.trigger;
 
 public enum MagicTriggerType {
+    AtUntap,                // player
     AtUpkeep,               // player
     AtDraw,                 // player
     AtEndOfTurn,            // player

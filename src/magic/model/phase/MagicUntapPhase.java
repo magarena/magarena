@@ -8,6 +8,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.action.MagicChangeStateAction;
 import magic.model.action.MagicUntapAction;
+import magic.model.trigger.MagicTriggerType;
 
 public class MagicUntapPhase extends MagicPhase {
 
@@ -41,6 +42,7 @@ public class MagicUntapPhase extends MagicPhase {
 
     @Override
     public void executeBeginStep(final MagicGame game) {
+        game.executeTrigger(MagicTriggerType.AtUntap, game.getTurnPlayer());
         untap(game);
         game.setStep(MagicStep.NextPhase);
     }
