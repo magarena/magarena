@@ -582,7 +582,6 @@ Ashling's Prerogative
 Ashling, the Extinguisher
 Ashling the Pilgrim
 Ashmouth Hound
-Ashnod
 Ashnod's Altar
 Ashnod's Battle Gear
 Ashnod's Cylix
@@ -865,7 +864,6 @@ Barren Glory
 Barren Moor
 Barrenton Cragtreads
 Barrenton Medic
-Barrin
 Barrin, Master Wizard
 Barrin's Codex
 Barrin's Spite
@@ -2365,7 +2363,6 @@ Crossbow Infantry
 Crosstown Courier
 Crossway Vampire
 Crosswinds
-Crovax
 Crovax, Ascendant Hero
 Crovax the Cursed
 Crowd Favorites
@@ -3391,7 +3388,6 @@ Eight-and-a-Half-Tails
 Eightfold Maze
 Ekundu Cyclops
 Ekundu Griffin
-Eladamri
 Eladamri, Lord of Leaves
 Eladamri's Call
 Eladamri's Vineyard
@@ -3639,7 +3635,6 @@ Erratic Mutation
 Erratic Portal
 Error
 Ersatz Gnomes
-Ertai
 Ertai's Familiar
 Ertai's Meddling
 Ertai's Trickery
@@ -4532,7 +4527,6 @@ Geosurge
 Geothermal Crevice
 Geralf's Messenger
 Geralf's Mindcrusher
-Gerrard
 Gerrard Capashen
 Gerrard's Battle Cry
 Gerrard's Command
@@ -4651,7 +4645,6 @@ Giltspire Avenger
 Gisela, Blade of Goldnight
 Gitaxian Probe
 Give
-Gix
 Glacial Chasm
 Glacial Crevasses
 Glacial Fortress
@@ -5035,7 +5028,6 @@ Green Sun's Zenith
 Green Ward
 Greenweaver Druid
 Gremlin Mine
-Greven il-Vec
 Gridlock
 Grid Monitor
 Grief Tyrant
@@ -5237,7 +5229,6 @@ Hand of the Praetors
 Hands of Binding
 Hand to Hand
 Hankyu
-Hanna
 Hanna's Custody
 Hanna, Ship's Navigator
 Hanweir Lancer
@@ -6202,7 +6193,6 @@ Kargan Dragonlord
 Karma
 Karmic Guide
 Karmic Justice
-Karn
 Karn Liberated
 Karn, Silver Golem
 Karn's Touch
@@ -6971,7 +6961,6 @@ Lu Xun, Scholar General
 Lyev Decree
 Lyev Skyknight
 Lymph Sliver
-Lyna
 Lynx
 Lys Alana Bowmaster
 Lys Alana Huntmaster
@@ -7128,7 +7117,6 @@ Maralen of the Mornsong
 Marath, Will of the Wild
 Marauding Knight
 Marauding Maulhorn
-Maraxus
 Maraxus of Keld
 Marble Chalice
 Marble Diamond
@@ -7493,7 +7481,6 @@ Mirozel
 Mirran Crusader
 Mirran Mettle
 Mirran Spy
-Mirri
 Mirri, Cat Warrior
 Mirri's Guile
 Mirri the Cursed
@@ -7521,7 +7508,6 @@ Misery Charm
 Misfortune
 Misfortune's Gain
 Misguided Rage
-Mishra
 Mishra, Artificer Prodigy
 Mishra's Bauble
 Mishra's Factory
@@ -7754,7 +7740,6 @@ Mugging
 Mulch
 Mul Daya Channelers
 Mulldrifter
-Multani
 Multani, Maro-Sorcerer
 Multani's Acolyte
 Multani's Decree
@@ -8321,7 +8306,6 @@ Oppression
 Oppressive Rays
 Oppressive Will
 Opt
-Oracle
 Oracle en-Vec
 Oracle of Bones
 Oracle of Mul Daya
@@ -8379,7 +8363,6 @@ Oreskos Swiftclaw
 Organ Grinder
 Orgg
 Origin Spellbomb
-Orim
 Orim, Samite Healer
 Orim's Chant
 Orim's Cure
@@ -9814,7 +9797,6 @@ Rockslide Elemental
 Rocky Tar Pit
 Roc of Kher Ridges
 Rod of Ruin
-Rofellos
 Rofellos, Llanowar Emissary
 Rofellos's Gift
 Rogue Elephant
@@ -10380,7 +10362,6 @@ Sejiri Steppe
 Sekki, Seasons' Guide
 Sek'Kuar, Deathkeeper
 Selective Memory
-Selenia
 Selenia, Dark Angel
 Selesnya Charm
 Selesnya Cluestone
@@ -10439,7 +10420,6 @@ Serpent of the Endless Sea
 Serpent's Gift
 Serpent Skin
 Serpent Warrior
-Serra
 Serra Advocate
 Serra Angel
 Serra Ascendant
@@ -10687,7 +10667,6 @@ Sickening Shoal
 Sickle Ripper
 Sickleslicer
 Sidar Jabari
-Sidar Kondo
 Sideswipe
 Sidewinder Sliver
 Siege-Gang Commander
@@ -10799,7 +10778,6 @@ Sire of Insanity
 Sire of the Storm
 Sirocco
 Sir Shandlar of Eberyn
-Sisay
 Sisay's Ingenuity
 Sisay's Ring
 Sisters of Stone Death
@@ -10983,7 +10961,6 @@ Sliver Construct
 Sliver Legion
 Sliver Overlord
 Sliver Queen
-Sliver Queen, Brood Mother
 Sliversmith
 Slobad, Goblin Tinkerer
 Slow Motion
@@ -11430,7 +11407,6 @@ Squandered Resources
 Squeaking Pie Grubfellows
 Squeaking Pie Sneak
 Squealing Devil
-Squee
 Squee, Goblin Nabob
 Squee's Embrace
 Squee's Revenge
@@ -11486,7 +11462,6 @@ Stand Together
 Stangg
 Star Compass
 Starfall
-Starke
 Starke of Rath
 Starlight
 Starlight Invoker
@@ -11916,7 +11891,6 @@ Syphon Soul
 Szadek, Lord of Secrets
 Tablet of Epityr
 Tablet of the Guilds
-Tahngarth
 Tahngarth's Glare
 Tahngarth's Rage
 Tahngarth, Talruum Hero
@@ -11935,7 +11909,6 @@ Tajic, Blade of the Legion
 Taj-Nar Swordsmith
 Tajuru Archer
 Tajuru Preserver
-Takara
 Take
 Takeno, Samurai General
 Takeno's Cavalry
@@ -12015,7 +11988,6 @@ Taunting Challenge
 Taunting Elf
 Taurean Mauler
 Tavern Swindler
-Tawnos
 Tawnos's Coffin
 Tawnos's Wand
 Tawnos's Weaponry
@@ -12411,7 +12383,6 @@ Tin-Wing Chimera
 Tireless Missionaries
 Tireless Tribe
 Titan Forge
-Titania
 Titania's Boon
 Titania's Chosen
 Titania's Song
@@ -12888,7 +12859,6 @@ Ur-Golem's Eye
 Uril, the Miststalker
 Ursapine
 Ursine Fylgja
-Urza
 Urza's Armor
 Urza's Avenger
 Urza's Bauble
@@ -13245,7 +13215,6 @@ Volcano Hellion
 Volcano Imp
 Volition Reins
 Volley of Boulders
-Volrath
 Volrath's Curse
 Volrath's Dungeon
 Volrath's Gardens
@@ -13828,7 +13797,6 @@ Wu Spy
 Wu Warship
 Wydwen, the Biting Gale
 Wyluli Wolf
-Xantcha
 Xanthic Statue
 Xantid Swarm
 Xathrid Demon
