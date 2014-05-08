@@ -1,0 +1,11 @@
+name=Dreamcatcher
+url=http://www.magiccards.info/query?q=%21dreamcatcher
+image=http://mtgimage.com/card/dreamcatcher.jpg
+value=2.203
+rarity=C
+type=Creature
+subtype=Spirit
+cost={U}
+pt=1/1
+timing=main
+requires_groovy_code
