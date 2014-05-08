@@ -1843,7 +1843,6 @@ Chaos Moon
 Chaos Orb
 Chaosphere
 Chaos Warp
-Chaotic AEther
 Chaotic Backlash
 Chaotic Goo
 Chaotic Strike
@@ -5873,7 +5872,6 @@ Insubordination
 Insurrection
 Intangible Virtue
 Interdict
-Interplanar Tunnel
 Interpret the Signs
 Intervene
 Intervention Pact
@@ -7646,7 +7644,6 @@ Moriok Scavenger
 Morkrut Banshee
 Morningtide
 Moroii
-Morphic Tide
 Morphling
 Morselhoarder
 Morsel Theft
@@ -7743,7 +7740,6 @@ Mutagenic Growth
 Mutant's Prey
 Mutavault
 Mutilate
-Mutual Epiphany
 Muzzle
 Mwonvuli Acid-Moss
 Mwonvuli Beast Tracker
@@ -8774,7 +8770,6 @@ Planeswalker's Fury
 Planeswalker's Mirth
 Planeswalker's Mischief
 Planeswalker's Scorn
-Planewide Disaster
 Plant Elemental
 Plasma Elemental
 Plasm Capture
@@ -9353,7 +9348,6 @@ Reality
 Reality Acid
 Reality Anchor
 Reality Ripple
-Reality Shaping
 Reality Spasm
 Reality Strobe
 Reality Twist
@@ -11141,7 +11135,6 @@ Spark Trooper
 Sparring Collar
 Sparring Golem
 Spatial Binding
-Spatial Merging
 Spawnbroker
 Spawning Breath
 Spawning Grounds
@@ -12310,7 +12303,6 @@ Time and Tide
 Timebender
 Time Bomb
 Timecrafting
-Time Distortion
 Time Ebb
 Time Elemental
 Timely Reinforcements
