@@ -2,7 +2,7 @@
     new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return permanent.isEnemy(creature) ?			
+            return permanent.isEnemy(creature) ?            
                 new MagicEvent(
                     permanent,
                     new MagicSimpleMayChoice(
@@ -20,6 +20,6 @@
             if (event.isYes()) {
                 game.doAction(new MagicDrawAction(event.getPlayer()));
             }
-        }		
+        }        
     }
 ]
