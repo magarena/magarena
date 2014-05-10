@@ -1,0 +1,12 @@
+name=Isperia, Supreme Judge
+url=http://magiccards.info/rtr/en/171.html
+image=http://magiccards.info/scans/en/rtr/171.jpg
+value=3.888
+rarity=M
+type=Legendary,Creature
+subtype=Sphinx
+cost={2}{W}{W}{U}{U}
+pt=6/4
+ability=flying
+timing=main
+requires_groovy_code
