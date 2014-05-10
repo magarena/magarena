@@ -1,0 +1,14 @@
+name=Iona, Shield of Emeria
+url=http://magiccards.info/query?q=%21iona%2C%20shield%20of%20emeria
+image=http://mtgimage.com/card/iona%2C%20shield%20of%20emeria.jpg
+value=4.353
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+cost={6}{W}{W}{W}
+pt=7/7
+ability=flying
+timing=fmain
+requires_groovy_code
+
+# unable to prevent opponent from casting spells of a specific color
