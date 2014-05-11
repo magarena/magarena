@@ -33,6 +33,10 @@ final public class MagicUtility {
         return Boolean.getBoolean("devMode");
     }
 
+    public static boolean isDebugMode() {
+        return Boolean.getBoolean("debug");
+    }
+
     /**
      * add "-DselfMode=true" VM argument for AI vs AI mode.
      */

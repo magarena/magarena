@@ -1,6 +1,7 @@
 package magic.data;
 
 import magic.MagicMain;
+import magic.MagicUtility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
@@ -105,12 +106,24 @@ public class CardDefinitions {
         }
     }
 
-    private static MagicCardDefinition prop2carddef(final Properties content) {
-        final MagicCardDefinition cardDefinition=new MagicCardDefinition();
+    private static MagicCardDefinition prop2carddef(final File scriptFile, final boolean isMissing) {
 
-        //run through the list of properties
+        final Properties content = FileIO.toProp(scriptFile);
+        final MagicCardDefinition cardDefinition = new MagicCardDefinition();
+        cardDefinition.setIsMissing(isMissing);
+
         for (final String key : content.stringPropertyNames()) {
-            setProperty(cardDefinition, key, content.getProperty(key));
+            try {
+                setProperty(cardDefinition, key, content.getProperty(key));
+            } catch (Exception e) {
+                if (isMissing) {
+                    if (MagicUtility.isDevMode() || MagicUtility.isDebugMode()) {
+                        System.err.println(scriptFile.getName() + " [" + key + "] : "  + e.getMessage());
+                    }
+                } else {
+                    throw new RuntimeException(e);
+                }
+            }
         }
 
         return cardDefinition;
@@ -137,7 +150,7 @@ public class CardDefinitions {
 
     private static void loadCardDefinition(final File file) {
         try {
-            final MagicCardDefinition cdef = prop2carddef(FileIO.toProp(file));
+            final MagicCardDefinition cdef = prop2carddef(file, false);
             cdef.validate();
             addDefinition(cdef);
         } catch (final Throwable cause) {
@@ -336,13 +349,8 @@ public class CardDefinitions {
             if (scriptFiles != null) {
                 for (final File file : scriptFiles) {
                     MagicCardDefinition cdef = null;
-                    try {
-                        cdef = prop2carddef(FileIO.toProp(file));
-                        cdef.setIsMissing(true);
-                        missingScripts.put(cdef.getName(), cdef);
-                    } catch (Exception e) {
-                        System.out.println(file.getName() + " : " + e.getMessage());
-                    }
+                    cdef = prop2carddef(file, true);
+                    missingScripts.put(cdef.getName(), cdef);
                 }
             }
 //        }
