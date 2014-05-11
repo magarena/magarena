@@ -7,6 +7,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
+import javax.swing.AbstractButton;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -17,15 +18,24 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.KeyStroke;
+import javax.swing.SwingConstants;
+import javax.swing.ToolTipManager;
 
 import java.awt.Component;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
-public class PreferencesDialog extends JDialog implements ActionListener {
+public class PreferencesDialog
+    extends JDialog
+    implements ActionListener, MouseListener, WindowListener {
 
     private static final long serialVersionUID = 1L;
     private final static GeneralConfig config = GeneralConfig.getInstance();
@@ -68,12 +78,20 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
         this.frame=frame;
 
+        hintLabel.setVerticalAlignment(SwingConstants.TOP);
+        hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
+        hintLabel.setIcon(IconImages.MISSING_ICON);
+        hintLabel.setVerticalTextPosition(SwingConstants.TOP);
+        // hint label replaces tooltips.
+        ToolTipManager.sharedInstance().setEnabled(false);
+
         getContentPane().setLayout(new MigLayout("flowy, insets 0"));
         getContentPane().add(getTabbedSettingsPane(), "w 100%, h 100%");
         getContentPane().add(hintLabel, "w 100%, h 66!, gapx 10 10");
         getContentPane().add(getActionButtonsPanel(), "w 100%");
 
         setEscapeKeyAsCancelAction();
+        addWindowListener(this);
 
         setVisible(true);
     }
@@ -106,6 +124,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
         mulliganScreenCheckbox.setBounds(X3,Y,W3,H3);
         mulliganScreenCheckbox.setFocusable(false);
+        mulliganScreenCheckbox.addMouseListener(this);
         panel.add(mulliganScreenCheckbox);
 
         return panel;
@@ -126,6 +145,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.isPreviewCardOnSelect());
         previewCardOnSelectCheckBox.setBounds(X3,Y,W3,H3);
         previewCardOnSelectCheckBox.setFocusable(false);
+        previewCardOnSelectCheckBox.addMouseListener(this);
         panel.add(previewCardOnSelectCheckBox);
 
         return panel;
@@ -142,21 +162,24 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         final int W3=350;
 
         gameLogCheckBox = new JCheckBox("Show game log messages.", config.isLogMessagesVisible());
-        gameLogCheckBox.setToolTipText("<html>Clear this option if you would prefer the game log messages to be hidden by default.<br>You can still toggle visibility during a game by clicking on the log titlebar.</html>");
+        gameLogCheckBox.setToolTipText("Clear this option if you would prefer the game log messages to be hidden by default. You can still toggle visibility during a game by clicking on the log titlebar.");
         gameLogCheckBox.setBounds(X3,Y,W3,H3);
         gameLogCheckBox.setFocusable(false);
+        gameLogCheckBox.addMouseListener(this);
         mainPanel.add(gameLogCheckBox);
 
         Y += 30;
         soundCheckBox = new JCheckBox("Enable sound effects",config.isSound());
         soundCheckBox.setBounds(X3,Y,W3,H3);
         soundCheckBox.setFocusable(false);
+        soundCheckBox.addMouseListener(this);
         mainPanel.add(soundCheckBox);
 
         Y += 30;
         touchscreenCheckBox = new JCheckBox("Double-click to cast or activate ability (for touchscreen)",config.isTouchscreen());
         touchscreenCheckBox.setBounds(X3,Y,W3,H3);
         touchscreenCheckBox.setFocusable(false);
+        touchscreenCheckBox.addMouseListener(this);
         mainPanel.add(touchscreenCheckBox);
 
         Y += 30;
@@ -164,6 +187,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.getSkipSingle());
         skipSingleCheckBox.setBounds(X3,Y,W3,H3);
         skipSingleCheckBox.setFocusable(false);
+        skipSingleCheckBox.addMouseListener(this);
         mainPanel.add(skipSingleCheckBox);
 
         Y += 30;
@@ -171,6 +195,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.getAlwaysPass());
         alwaysPassCheckBox.setBounds(X3,Y,W3,H3);
         alwaysPassCheckBox.setFocusable(false);
+        alwaysPassCheckBox.addMouseListener(this);
         mainPanel.add(alwaysPassCheckBox);
 
         Y += 30;
@@ -178,6 +203,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.getSmartTarget());
         smartTargetCheckBox.setBounds(X3,Y,W3,H3);
         smartTargetCheckBox.setFocusable(false);
+        smartTargetCheckBox.addMouseListener(this);
         mainPanel.add(smartTargetCheckBox);
 
         Y += 30;
@@ -185,6 +211,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setBounds(X3,Y,W3,H3);
         mouseWheelPopupCheckBox.setFocusable(false);
+        mouseWheelPopupCheckBox.addMouseListener(this);
         mainPanel.add(mouseWheelPopupCheckBox);
 
         Y += 30;
@@ -236,6 +263,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 isCustomBackground = false;
             }
         });
+        themeComboBox.addMouseListener(this);
         panel.add(themeComboBox);
 
         Y += 35;
@@ -248,6 +276,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         highlightComboBox.setFocusable(false);
         highlightComboBox.setBounds(X2,Y,W2,H);
         highlightComboBox.setSelectedItem(config.getHighlight());
+        highlightComboBox.addMouseListener(this);
         panel.add(highlightComboBox);
 
         isCustomBackground = config.isCustomBackground();
@@ -270,6 +299,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.isConfirmExit());
         confirmExitCheckBox.setBounds(X3,Y,W3,H3);
         confirmExitCheckBox.setFocusable(false);
+        confirmExitCheckBox.addMouseListener(this);
         mainPanel.add(confirmExitCheckBox);
 
         Y += 30;
@@ -277,6 +307,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
                 config.isHighQuality());
         highQualityCheckBox.setBounds(X3,Y,W3,H3);
         highQualityCheckBox.setFocusable(false);
+        highQualityCheckBox.addMouseListener(this);
         mainPanel.add(highQualityCheckBox);
 
         return mainPanel;
@@ -328,5 +359,52 @@ public class PreferencesDialog extends JDialog implements ActionListener {
         buttonPanel.add(okButton, "w 100!");
         return buttonPanel;
     }
+
+    /*
+    * MouseListener overrides
+    */
+    @Override
+    public void mouseClicked(MouseEvent e) {}
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        if (e.getSource() instanceof JComponent) {
+            final JComponent c = (JComponent)e.getSource();
+            String caption = "";
+            if (c instanceof AbstractButton) {
+                caption = ((AbstractButton)c).getText();
+            }
+            hintLabel.setText("<html>" + (c.getToolTipText() == null ? caption : c.getToolTipText()) + "</html>");
+        }
+    }
+    @Override
+    public void mouseExited(MouseEvent e) {
+        if (e.getSource() instanceof JComponent) {
+            hintLabel.setText("");
+        }
+    }
+    @Override
+    public void mousePressed(MouseEvent e) {}
+    @Override
+    public void mouseReleased(MouseEvent e) {}
+
+    /*
+     * WindowListener overrides
+     */
+    @Override
+    public void windowActivated(WindowEvent e) {}
+    @Override
+    public void windowClosed(WindowEvent e) {
+        ToolTipManager.sharedInstance().setEnabled(true);
+    }
+    @Override
+    public void windowClosing(WindowEvent e) {}
+    @Override
+    public void windowDeactivated(WindowEvent e) {}
+    @Override
+    public void windowDeiconified(WindowEvent e) {}
+    @Override
+    public void windowIconified(WindowEvent e) {}
+    @Override
+    public void windowOpened(WindowEvent e) {}
 
 }
