@@ -15,8 +15,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 final MagicPlayer player ->
-                final int size =  event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
-                game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, size));
+                final int size = event.getPlayer().getNrOfPermanents(MagicSubType.Shrine);
+                game.addEvent(new MagicDiscardEvent(event.getSource(), player, size));
             });
         }
     }
