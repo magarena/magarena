@@ -62,29 +62,32 @@ public class MagicCardActivation extends MagicActivation<MagicCard> implements M
         );
     }
 
-    private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            if (card.getCardDefinition().isLand()) {
-                game.incLandPlayed();
+    private final MagicEventAction EVENT_ACTION = genPlayEventAction(MagicLocationType.OwnersHand);   
+        
+    protected MagicEventAction genPlayEventAction(final MagicLocationType fromLocation) {
+        return new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                final MagicCard card = event.getCard();
+                if (card.getCardDefinition().isLand()) {
+                    game.incLandPlayed();
+                }
+                
+                game.doAction(new MagicRemoveCardAction(card, fromLocation)); 
+                
+                if (usesStack) {
+                    final MagicCardOnStack cardOnStack=new MagicCardOnStack(
+                        card,
+                        MagicCardActivation.this,
+                        game.getPayedCost()
+                    );
+                    game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+                } else {
+                    game.doAction(new MagicPlayCardAction(card,card.getController()));
+                }
             }
-            
-            final MagicLocationType fromLocation = card.isInHand() ? MagicLocationType.OwnersHand : MagicLocationType.Graveyard;
-            game.doAction(new MagicRemoveCardAction(card, fromLocation)); 
-            
-            if (usesStack) {
-                final MagicCardOnStack cardOnStack=new MagicCardOnStack(
-                    card,
-                    MagicCardActivation.this,
-                    game.getPayedCost()
-                );
-                game.doAction(new MagicPutItemOnStackAction(cardOnStack));
-            } else {
-                game.doAction(new MagicPlayCardAction(card,card.getController()));
-            }
-        }
-    };
+        };
+    }
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
