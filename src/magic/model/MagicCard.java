@@ -54,6 +54,22 @@ public class MagicCard
             }
             return found;
         }
+        @Override
+        public boolean isInLibrary() {
+            final boolean found = getOwner().getLibrary().contains(this);
+            if (found) {
+                throw new RuntimeException("Card NONE is in library");
+            }
+            return found;
+        }
+        @Override
+        public boolean isOnBattlefield() {
+            return false;
+        }
+        @Override
+        public boolean isOnStack() {
+            return false;
+        }
     };
 
     private static final int TOKEN_ID=-1;
