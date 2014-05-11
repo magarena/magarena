@@ -344,7 +344,7 @@ public class CardDefinitions {
         final HashMap<String, MagicCardDefinition> missingScripts =
                 new HashMap<String, MagicCardDefinition>();
 
-//        if (GeneralConfig.getInstance().showMissingCardData()) {
+        if (GeneralConfig.getInstance().showMissingCardData()) {
             final File[] scriptFiles = getSortedMissingScriptFiles();
             if (scriptFiles != null) {
                 for (final File file : scriptFiles) {
@@ -353,7 +353,7 @@ public class CardDefinitions {
                     missingScripts.put(cdef.getName(), cdef);
                 }
             }
-//        }
+        }
 
         missingCards = new HashMap<String, MagicCardDefinition>();
         for (String cardName : missingCardNames) {
@@ -384,6 +384,11 @@ public class CardDefinitions {
             Arrays.sort(files);
         }
         return files;
+    }
+
+    public static void resetMissingCardData() {
+        missingCards.clear();
+        missingCards = null;
     }
 
 }

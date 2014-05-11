@@ -41,6 +41,7 @@ public class GeneralConfig {
     private static final String MULLIGAN_SCREEN = "mulliganScreen";
     private static final String RECENT_DECK = "MostRecentDeckFilename";
     private static final String CUSTOM_BACKGROUND = "customBackground";
+    private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
 
     // The most common size of card retrieved from http://mtgimage.com.
     public static final Dimension PREFERRED_CARD_SIZE = new Dimension(480, 680);
@@ -105,6 +106,7 @@ public class GeneralConfig {
     private String mostRecentDeckFilename = "";
     private boolean isMissingFiles = false;
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
+    private boolean showMissingCardData = true;
 
     private GeneralConfig() { }
 
@@ -358,6 +360,15 @@ public class GeneralConfig {
         isMulliganScreenActive = b;
     }
 
+    public boolean showMissingCardData() {
+        return showMissingCardData;
+    }
+    public void setShowMissingCardData(final boolean b) {
+        showMissingCardData = b;
+        CardDefinitions.resetMissingCardData();
+    }
+
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -388,6 +399,7 @@ public class GeneralConfig {
         isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + DEFAULT_MULLIGAN_SCREEN));
         mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "");
         isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
+        showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + true));
     }
 
     public void load() {
@@ -424,6 +436,7 @@ public class GeneralConfig {
         properties.setProperty(MULLIGAN_SCREEN, String.valueOf(isMulliganScreenActive));
         properties.setProperty(RECENT_DECK, mostRecentDeckFilename);
         properties.setProperty(CUSTOM_BACKGROUND, String.valueOf(isCustomBackground));
+        properties.setProperty(SHOW_MISSING_CARD_DATA, String.valueOf(showMissingCardData));
     }
 
     public void save() {
