@@ -189,6 +189,11 @@ public enum CardProperty {
             }
         }
     },
+    ORACLE() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            card.setText(value);
+        }
+    }
     ;
 
     private static final String SEMI = "\\s*;\\s*";
