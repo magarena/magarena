@@ -1,0 +1,9 @@
+name=Mesmeric Orb
+url=http://www.magiccards.info/query?q=%21mesmeric%20orb
+image=http://mtgimage.com/card/mesmeric%20orb.jpg
+value=4.406
+rarity=R
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code

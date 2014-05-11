@@ -1,0 +1,9 @@
+name=Drain the Well
+url=http://www.magiccards.info/query?q=%21drain%20the%20well
+image=http://mtgimage.com/card/drain%20the%20well.jpg
+value=2.511
+rarity=C
+type=Sorcery
+cost={2}{B/G}{B/G}
+timing=main
+requires_groovy_code
