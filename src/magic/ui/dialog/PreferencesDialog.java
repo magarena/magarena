@@ -18,7 +18,6 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.KeyStroke;
 
-import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -55,6 +54,7 @@ public class PreferencesDialog extends JDialog implements ActionListener {
     private JCheckBox previewCardOnSelectCheckBox;
     private JCheckBox gameLogCheckBox;
     private JCheckBox mulliganScreenCheckbox;
+    private final JLabel hintLabel = new JLabel();
     private boolean isCustomBackground;
 
     public PreferencesDialog(final MagicFrame frame) {
@@ -68,9 +68,10 @@ public class PreferencesDialog extends JDialog implements ActionListener {
 
         this.frame=frame;
 
-        getContentPane().setLayout(new BorderLayout());
-        getContentPane().add(getTabbedSettingsPane(), BorderLayout.CENTER);
-        getContentPane().add(getActionButtonsPanel(), BorderLayout.SOUTH);
+        getContentPane().setLayout(new MigLayout("flowy, insets 0"));
+        getContentPane().add(getTabbedSettingsPane(), "w 100%, h 100%");
+        getContentPane().add(hintLabel, "w 100%, h 66!, gapx 10 10");
+        getContentPane().add(getActionButtonsPanel(), "w 100%");
 
         setEscapeKeyAsCancelAction();
 
