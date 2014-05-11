@@ -387,8 +387,10 @@ public class CardDefinitions {
     }
 
     public static void resetMissingCardData() {
-        missingCards.clear();
-        missingCards = null;
+        if (missingCards != null) {
+            missingCards.clear();
+            missingCards = null;
+        }
     }
 
 }

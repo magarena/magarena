@@ -8,6 +8,7 @@ import magic.ui.widget.SliderPanel;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.AbstractButton;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -21,7 +22,6 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.ToolTipManager;
 
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -64,6 +64,7 @@ public class PreferencesDialog
     private JCheckBox previewCardOnSelectCheckBox;
     private JCheckBox gameLogCheckBox;
     private JCheckBox mulliganScreenCheckbox;
+    private JCheckBox missingCardDataCheckbox;
     private final JLabel hintLabel = new JLabel();
     private boolean isCustomBackground;
 
@@ -103,52 +104,9 @@ public class PreferencesDialog
 
     private JTabbedPane getTabbedSettingsPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("General", getGeneralSettingsPanel());
+        tabbedPane.addTab("General", getGeneralTabPanel());
         tabbedPane.addTab("Gameplay", getDuelSettingsPanel());
-        tabbedPane.addTab("Look & Feel", getThemeSettingsPanel());
-        tabbedPane.addTab("Deck Editor", getDeckEditorSettingsPanel());
-        tabbedPane.addTab("Experimental", getExperimentalSettingsPanel());
         return tabbedPane;
-    }
-
-    private Component getExperimentalSettingsPanel() {
-
-        final JPanel panel = new JPanel();
-        panel.setLayout(null);
-
-        final int Y=10;
-        final int X3=25;
-        final int H3=20;
-        final int W3=350;
-
-        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
-        mulliganScreenCheckbox.setBounds(X3,Y,W3,H3);
-        mulliganScreenCheckbox.setFocusable(false);
-        mulliganScreenCheckbox.addMouseListener(this);
-        panel.add(mulliganScreenCheckbox);
-
-        return panel;
-    }
-
-    private Component getDeckEditorSettingsPanel() {
-
-        final JPanel panel = new JPanel();
-        panel.setLayout(null);
-
-        final int Y=10;
-        final int X3=25;
-        final int H3=20;
-        final int W3=350;
-
-        previewCardOnSelectCheckBox =
-                new JCheckBox("Preview card on select (instead of mouse-over)",
-                config.isPreviewCardOnSelect());
-        previewCardOnSelectCheckBox.setBounds(X3,Y,W3,H3);
-        previewCardOnSelectCheckBox.setFocusable(false);
-        previewCardOnSelectCheckBox.addMouseListener(this);
-        panel.add(previewCardOnSelectCheckBox);
-
-        return panel;
     }
 
     private JPanel getDuelSettingsPanel() {
@@ -237,82 +195,6 @@ public class PreferencesDialog
         return mainPanel;
     }
 
-    private JPanel getThemeSettingsPanel() {
-
-        final JPanel panel = new JPanel();
-        panel.setLayout(null);
-
-        int Y=10;
-        final int X=28;
-        final int W=70;
-        final int H=25;
-        final int X2=100;
-        final int W2=255;
-
-        final JLabel themeLabel=new JLabel("Theme");
-        themeLabel.setBounds(X,Y,W,H);
-        themeLabel.setIcon(IconImages.PICTURE);
-        panel.add(themeLabel);
-        themeComboBox=new JComboBox<String>(ThemeFactory.getInstance().getThemeNames());
-        themeComboBox.setFocusable(false);
-        themeComboBox.setBounds(X2,Y,W2,H);
-        themeComboBox.setSelectedItem(config.getTheme());
-        themeComboBox.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent arg0) {
-                isCustomBackground = false;
-            }
-        });
-        themeComboBox.addMouseListener(this);
-        panel.add(themeComboBox);
-
-        Y += 35;
-        final JLabel highlightLabel = new JLabel("Highlight");
-        highlightLabel.setBounds(X,Y,W,H);
-        highlightLabel.setIcon(IconImages.PICTURE);
-        panel.add(highlightLabel);
-        final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
-        highlightComboBox = new JComboBox<String>(Highlightchoices);
-        highlightComboBox.setFocusable(false);
-        highlightComboBox.setBounds(X2,Y,W2,H);
-        highlightComboBox.setSelectedItem(config.getHighlight());
-        highlightComboBox.addMouseListener(this);
-        panel.add(highlightComboBox);
-
-        isCustomBackground = config.isCustomBackground();
-
-        return panel;
-
-    }
-
-    private JPanel getGeneralSettingsPanel() {
-
-        final JPanel mainPanel=new JPanel();
-        mainPanel.setLayout(null);
-
-        int Y=10;
-        final int X3=25;
-        final int H3=20;
-        final int W3=350;
-
-        confirmExitCheckBox = new JCheckBox("Show confirmation dialog on exit",
-                config.isConfirmExit());
-        confirmExitCheckBox.setBounds(X3,Y,W3,H3);
-        confirmExitCheckBox.setFocusable(false);
-        confirmExitCheckBox.addMouseListener(this);
-        mainPanel.add(confirmExitCheckBox);
-
-        Y += 30;
-        highQualityCheckBox = new JCheckBox("Show card images in original size",
-                config.isHighQuality());
-        highQualityCheckBox.setBounds(X3,Y,W3,H3);
-        highQualityCheckBox.setFocusable(false);
-        highQualityCheckBox.addMouseListener(this);
-        mainPanel.add(highQualityCheckBox);
-
-        return mainPanel;
-    }
-
     @Override
     public void actionPerformed(final ActionEvent event) {
         final Object source=event.getSource();
@@ -334,6 +216,7 @@ public class PreferencesDialog
             config.setLogMessagesVisible(gameLogCheckBox.isSelected());
             config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
             config.setCustomBackground(isCustomBackground);
+            config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
             config.save();
             ThemeFactory.getInstance().setCurrentTheme(config.getTheme());
             frame.repaint();
@@ -406,5 +289,97 @@ public class PreferencesDialog
     public void windowIconified(WindowEvent e) {}
     @Override
     public void windowOpened(WindowEvent e) {}
+
+
+    private JPanel getGeneralTabPanel() {
+        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 10"));
+        panel.add(getStyleSettingsPanel(), "w 100%");
+        panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
+        panel.add(getMiscSettingsPanel(), "w 100%");
+        return panel;
+    }
+
+    private JPanel getStyleSettingsPanel() {
+
+        // Theme setting
+        final JLabel themeLabel=new JLabel("Theme");
+        themeComboBox=new JComboBox<String>(ThemeFactory.getInstance().getThemeNames());
+        themeComboBox.setToolTipText("Additional themes can be downloaded from the Magarena forum. Alternatively, to set the background image you can simply drag & drop an image file onto the Magarena window.");
+        themeComboBox.addMouseListener(this);
+        themeComboBox.setFocusable(false);
+        themeComboBox.setSelectedItem(config.getTheme());
+        themeComboBox.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent arg0) {
+                isCustomBackground = false;
+            }
+        });
+
+        // Card highlight setting.
+        final JLabel highlightLabel = new JLabel("Highlight");
+        final String[] Highlightchoices = { "none", "overlay", "border", "theme" };
+        highlightComboBox = new JComboBox<String>(Highlightchoices);
+        highlightComboBox.setFocusable(false);
+        highlightComboBox.setSelectedItem(config.getHighlight());
+
+        isCustomBackground = config.isCustomBackground();
+
+        // Layout UI components.
+        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 0"));
+        panel.setBorder(BorderFactory.createTitledBorder("Look & Feel"));
+        panel.add(themeLabel, "alignx right");
+        panel.add(themeComboBox);
+        panel.add(highlightLabel, "alignx right");
+        panel.add(highlightComboBox);
+
+        return panel;
+
+    }
+
+    private JPanel getCardExplorerEditorSettingsPanel() {
+
+      previewCardOnSelectCheckBox = new JCheckBox("Preview card on select only.", config.isPreviewCardOnSelect());
+      previewCardOnSelectCheckBox.setToolTipText("By default, as you move the mouse cursor over a card entry it will display the image. If you find this a bit too sensitive then this setting will only change the image when the card entry is selected.");
+      previewCardOnSelectCheckBox.setFocusable(false);
+      previewCardOnSelectCheckBox.addMouseListener(this);
+
+      missingCardDataCheckbox = new JCheckBox("Show missing card data.", config.showMissingCardData());
+      missingCardDataCheckbox.setToolTipText("If set then the Card Explorer will display extra data for each missing card otherwise it will only show the card name. This setting can affect the time it takes the Card Explorer screen to open the first time it is accessed.");
+      missingCardDataCheckbox.addMouseListener(this);
+      previewCardOnSelectCheckBox.setFocusable(false);
+
+      // Layout UI components.
+      final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
+      panel.setBorder(BorderFactory.createTitledBorder("Card Explorer / Deck Editor"));
+      panel.add(previewCardOnSelectCheckBox);
+      panel.add(missingCardDataCheckbox);
+
+      return panel;
+
+  }
+
+    private JPanel getMiscSettingsPanel() {
+
+        confirmExitCheckBox = new JCheckBox("Show confirmation dialog on exit", config.isConfirmExit());
+        confirmExitCheckBox.setFocusable(false);
+        confirmExitCheckBox.addMouseListener(this);
+
+        highQualityCheckBox = new JCheckBox("Show card images in original size", config.isHighQuality());
+        highQualityCheckBox.setFocusable(false);
+        highQualityCheckBox.addMouseListener(this);
+
+        mulliganScreenCheckbox = new JCheckBox("Use Mulligan screen", config.showMulliganScreen());
+        mulliganScreenCheckbox.setFocusable(false);
+        mulliganScreenCheckbox.addMouseListener(this);
+
+        final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
+        panel.setBorder(BorderFactory.createTitledBorder("Misc Settings"));
+        panel.add(confirmExitCheckBox);
+        panel.add(highQualityCheckBox);
+        panel.add(mulliganScreenCheckbox);
+
+        return panel;
+
+    }
 
 }
