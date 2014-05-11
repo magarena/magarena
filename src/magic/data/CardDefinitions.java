@@ -325,7 +325,7 @@ public class CardDefinitions {
         return combined;
     }
 
-    private static List<String> getMissingCardNames() throws IOException {
+    public static List<String> getMissingCardNames() throws IOException {
         final List<String> missingCardNames = new ArrayList<String>();
         final String content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt"));
         try (final Scanner sc = new Scanner(content)) {
