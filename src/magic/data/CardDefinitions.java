@@ -9,6 +9,8 @@ import magic.model.event.MagicCardActivation;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -38,9 +40,8 @@ public class CardDefinitions {
     public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
     public static final String CARD_TEXT_EXT = ".txt";
 
-    private static final Map<String, MagicCardDefinition> allCardsMap = new HashMap<String, MagicCardDefinition>();
-
     private static final List<MagicCardDefinition> playableCards = new ArrayList<MagicCardDefinition>();
+    private static Map<String, MagicCardDefinition> missingCards = null;
     private static final List<MagicCardDefinition> landCards = new ArrayList<MagicCardDefinition>();
     private static final List<MagicCardDefinition> spellCards = new ArrayList<MagicCardDefinition>();
     private static final Map<String,MagicCardDefinition> cardsMap = new HashMap<String, MagicCardDefinition>();
@@ -144,32 +145,35 @@ public class CardDefinitions {
         }
     }
 
+    /**
+     * loads playable cards.
+     */
     public static void loadCardDefinitions() {
-        //load all files in card directory
+
         MagicMain.setSplashStatusMessage("Initializing cards database...");
+        final File[] scriptFiles = getSortedScriptFiles();
+
+        MagicMain.setSplashStatusMessage("Loading " +  getNonTokenCardsCount(scriptFiles) + " playable cards...");
+        for (final File file : scriptFiles) {
+            loadCardDefinition(file);
+        }
+        filterCards();
+        printStatistics();
+        addDefinition(MagicCardDefinition.UNKNOWN);
+
+    }
+
+    /**
+     * Gets a sorted list of all the card script files in the "cards" folder.
+     */
+    private static File[] getSortedScriptFiles() {
         final File[] files = cardDir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
                 return name.toLowerCase().endsWith(".txt");
             }
         });
-
-        //sort files to ensure consistent order
         Arrays.sort(files);
-
-        //load the card definitions
-        MagicMain.setSplashStatusMessage("Loading " +  getNonTokenCardsCount(files) + " playable cards...");
-        for (final File file : files) {
-            loadCardDefinition(file);
-        }
-
-        filterCards();
-        printStatistics();
-
-        addDefinition(MagicCardDefinition.UNKNOWN);
-
-        setAllCardsMap();
-
-        System.err.println(getNumberOfCards()+ " card definitions");
+        return files;
     }
 
     /**
@@ -294,40 +298,84 @@ public class CardDefinitions {
         statistics.printStatictics(System.err);
     }
 
-    private static void setAllCardsMap() {
-
-        allCardsMap.clear();
-
-        // first add playable cards
-        for (MagicCardDefinition card : playableCards) {
-            allCardsMap.put(card.getName(), card);
+    public static List<MagicCardDefinition> getAllCards() {
+        final List<MagicCardDefinition> combined = new ArrayList<MagicCardDefinition>();
+        if (missingCards == null) {
+            try {
+                loadMissingCards(getMissingCardNames());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
+        combined.addAll(playableCards);
+        combined.addAll(missingCards.values());
+        return combined;
+    }
 
-        // next add missing cards
-        String content = null;
-        try {
-            content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt"));
-        } catch (final IOException ex) {
-            throw new RuntimeException("ERROR! Unable to load AllCardNames.txt");
-        }
-
+    private static List<String> getMissingCardNames() throws IOException {
+        final List<String> missingCardNames = new ArrayList<String>();
+        final String content = FileIO.toStr(MagicMain.class.getResourceAsStream("/magic/data/AllCardNames.txt"));
         try (final Scanner sc = new Scanner(content)) {
             while (sc.hasNextLine()) {
                 final String cardName = sc.nextLine().trim();
-                if (!allCardsMap.containsKey(cardName)) {
-                    final MagicCardDefinition card = new MagicCardDefinition();
-                    card.setName(cardName);
-                    card.setFullName(cardName);
-                    card.setIsMissing(true);
-                    allCardsMap.put(cardName, card);
+                if (!cardsMap.containsKey(cardName)) {
+                    missingCardNames.add(cardName);
                 }
+            }
+        }
+        return missingCardNames;
+    }
+
+    private static void loadMissingCards(final List<String> missingCardNames) {
+
+        final HashMap<String, MagicCardDefinition> missingScripts =
+                new HashMap<String, MagicCardDefinition>();
+
+//        if (GeneralConfig.getInstance().showMissingCardData()) {
+            final File[] scriptFiles = getSortedMissingScriptFiles();
+            if (scriptFiles != null) {
+                for (final File file : scriptFiles) {
+                    MagicCardDefinition cdef = null;
+                    try {
+                        cdef = prop2carddef(FileIO.toProp(file));
+                        cdef.setIsMissing(true);
+                        missingScripts.put(cdef.getName(), cdef);
+                    } catch (Exception e) {
+                        System.out.println(file.getName() + " : " + e.getMessage());
+                    }
+                }
+            }
+//        }
+
+        missingCards = new HashMap<String, MagicCardDefinition>();
+        for (String cardName : missingCardNames) {
+            if (missingScripts.containsKey(cardName)) {
+                missingCards.put(cardName, missingScripts.get(cardName));
+            } else {
+                final MagicCardDefinition card = new MagicCardDefinition();
+                card.setName(cardName);
+                card.setFullName(cardName);
+                card.setIsMissing(true);
+                missingCards.put(cardName, card);
             }
         }
 
     }
 
-    public static List<MagicCardDefinition> getAllCards() {
-        return new ArrayList<MagicCardDefinition>(allCardsMap.values());
+    /**
+     * Gets a sorted list of all the script files in the "missing" folder.
+     */
+    private static File[] getSortedMissingScriptFiles() {
+        final Path cardsPath = Paths.get(MagicMain.getScriptsPath()).resolve("missing");
+        final File[] files = cardsPath.toFile().listFiles(new FilenameFilter() {
+            public boolean accept(File dir, String name) {
+                return name.toLowerCase().endsWith(".txt");
+            }
+        });
+        if (files != null) {
+            Arrays.sort(files);
+        }
+        return files;
     }
 
 }
