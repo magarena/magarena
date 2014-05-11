@@ -2,7 +2,7 @@
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            return cardOnStack.getController() != permanent.getController() ?
+            return cardOnStack.isEnemy(permanent) ?
                 new MagicEvent(
                     permanent,
                     cardOnStack.getController(),
@@ -13,18 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicCardList library = event.getPlayer().getLibrary();
-        final int size = library.size();
-            for (int c=2;c>0;c--) {
-                final MagicCard milledCard = library.getCardAtTop();
-                game.doAction(new MagicRemoveCardAction(
-                        milledCard,
-                        MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicMoveCardAction(
-                        milledCard,
-                        MagicLocationType.OwnersLibrary,
-                        MagicLocationType.Graveyard));
-            }
+            game.doAction(new MagicMillLibraryAction(event.getPlayer(), 2));
         }
     }
 ]
