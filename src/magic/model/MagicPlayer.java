@@ -281,19 +281,29 @@ public class MagicPlayer extends MagicObjectImpl implements MagicTarget, MagicMa
     }
 
     void showRandomizedHandAndLibrary() {
-        // put hand back into library
+        // empty hand, move unknown into library, known into knownCards
         final int handSize = hand.size();
+        final MagicCardList knownCards = new MagicCardList();
         while (hand.size() > 0) {
             final MagicCard card = hand.getCardAtTop();
             removeCardFromHand(card);
-            library.addToTop(card);
+            if (card.isKnown()) {
+                knownCards.add(card);
+            } else {
+                library.addToTop(card);
+            }
         }
-        // shuffle
+        
+        // shuffle library
         library.shuffle(MagicRandom.nextRNGInt(999999));
         library.setKnown(true);
-        // put handSize cards into hand
-        for (int i = 0; i < handSize; i++) {
+        
+        // put cards into hand
+        for (int i = 0; i < handSize - knownCards.size(); i++) {
             addCardToHand(library.removeCardAtTop());
+        }
+        for (final MagicCard card : knownCards) {
+            addCardToHand(card);
         }
     }
 

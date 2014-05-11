@@ -7,5 +7,5 @@ type=Creature
 subtype=Beast
 cost={4}{G}{G}
 pt=4/6
+ability=Whenever SN attacks, attacking creatures gain trample until end of turn.
 timing=main
-requires_groovy_code

@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental,Berserker
 cost={1}{R}{R}{W}
 pt=2/2
+ability=When SN enters the battlefield, creatures you control get +1/+1 and gain haste until end of turn.
 timing=fmain
-requires_groovy_code
