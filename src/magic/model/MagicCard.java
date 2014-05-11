@@ -208,50 +208,50 @@ public class MagicCard
     }
 
     public boolean isInLibrary() {
-	return getOwner().getLibrary().contains(this);
+        return getOwner().getLibrary().contains(this);
     }
 
     public boolean isOnBattlefield() {
-	for (final MagicPlayer player : getGame().getPlayers()) {
-	for (final MagicPermanent perm : player.getPermanents()) {
-	    if (perm.getCard() == this) {
-		return true;
-	    }
-	}
-	}
-	return false;
+        for (final MagicPlayer player : getGame().getPlayers()) {
+        for (final MagicPermanent perm : player.getPermanents()) {
+            if (perm.getCard() == this) {
+                return true;
+            }
+        }
+        }
+        return false;
     }
 
     public boolean isOnStack() {
-	for (final MagicItemOnStack item : getGame().getStack()) {
-	    if (item.isSpell()) {
-		final MagicCardOnStack spell = (MagicCardOnStack)item;
-		if (spell.getCard() == this) {
-		    return true;
-		}
-	    }
-	}
-	return false;
+        for (final MagicItemOnStack item : getGame().getStack()) {
+            if (item.isSpell()) {
+                final MagicCardOnStack spell = (MagicCardOnStack)item;
+                if (spell.getCard() == this) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     public MagicLocationType getLocation() {
-	if (isInHand()) {
-	    return MagicLocationType.OwnersHand;
-	} else if (isInGraveyard()) {
-	    return MagicLocationType.Graveyard;
-	} else if (isInExile()) {
-	    return MagicLocationType.Exile;
-	} else if (isOnBattlefield()) {
-	    return MagicLocationType.Play;
-	} else if (isInLibrary()) {
-	    return MagicLocationType.OwnersLibrary;
-	} else if (isOnStack()) {
-	    return MagicLocationType.Stack;
-	} else {
-	    throw new RuntimeException(this + " not found");
-	}
+        if (isInHand()) {
+            return MagicLocationType.OwnersHand;
+        } else if (isInGraveyard()) {
+            return MagicLocationType.Graveyard;
+        } else if (isInExile()) {
+            return MagicLocationType.Exile;
+        } else if (isOnBattlefield()) {
+            return MagicLocationType.Play;
+        } else if (isInLibrary()) {
+            return MagicLocationType.OwnersLibrary;
+        } else if (isOnStack()) {
+            return MagicLocationType.Stack;
+        } else {
+            throw new RuntimeException(this + " not found");
+        }
     } 
-	  
+      
 
     @Override
     public String getName() {
