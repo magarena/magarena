@@ -14,7 +14,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         super(cardList);
     }
 
-    MagicCardList(final MagicCopyMap copyMap, final MagicCardList cardList) {
+    MagicCardList(final MagicCopyMap copyMap, final List<MagicCard> cardList) {
         for (final MagicCard card : cardList) {
             add(copyMap.copy(card));
         }
