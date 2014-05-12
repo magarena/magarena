@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/temporal%20cascade.jpg
 rarity=R
 type=Sorcery
 cost={5}{U}{U}
-effect=Choose one — Each player shuffles his or her hand and graveyard into his or her library; or each player draws seven cards.;\
+effect=Choose one â€” Each player shuffles his or her hand and graveyard into his or her library; or each player draws seven cards.;\
         Entwine {2}
 timing=main
-oracle=Choose one — Each player shuffles his or her hand and graveyard into his or her library; or each player draws seven cards. Entwine {2}
+oracle=Choose one â€” Each player shuffles his or her hand and graveyard into his or her library; or each player draws seven cards. Entwine {2}

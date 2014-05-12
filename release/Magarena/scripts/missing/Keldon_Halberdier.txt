@@ -7,6 +7,6 @@ subtype=Human,Warrior
 cost={4}{R}
 pt=4/1
 ability=First strike;\
-        Suspend 4—{R}
+        Suspend 4â€”{R}
 timing=main
-oracle=First strike. Suspend 4—{R}
+oracle=First strike. Suspend 4â€”{R}

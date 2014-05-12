@@ -7,6 +7,6 @@ subtype=Kor,Rogue
 cost={4}{U}
 pt=3/1
 ability=Shadow;\
-        Suspend 2—{1}{U}
+        Suspend 2â€”{1}{U}
 timing=main
-oracle=Shadow. Suspend 2—{1}{U}
+oracle=Shadow. Suspend 2â€”{1}{U}

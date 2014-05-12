@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/plunge%20into%20darkness.jpg
 rarity=R
 type=Instant
 cost={1}{B}
-effect=Choose one — Sacrifice any number of creatures, then you gain 3 life for each sacrificed creature; or pay X life, then look at the top X cards of your library, put one of those cards into your hand, and exile the rest.;\
+effect=Choose one â€” Sacrifice any number of creatures, then you gain 3 life for each sacrificed creature; or pay X life, then look at the top X cards of your library, put one of those cards into your hand, and exile the rest.;\
         Entwine {B}
 timing=removal
-oracle=Choose one — Sacrifice any number of creatures, then you gain 3 life for each sacrificed creature; or pay X life, then look at the top X cards of your library, put one of those cards into your hand, and exile the rest. Entwine {B}
+oracle=Choose one â€” Sacrifice any number of creatures, then you gain 3 life for each sacrificed creature; or pay X life, then look at the top X cards of your library, put one of those cards into your hand, and exile the rest. Entwine {B}

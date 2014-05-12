@@ -8,6 +8,6 @@ cost={8}{U}{U}{U}
 pt=11/11
 ability=Trample;\
         SN enters the battlefield tapped.;\
-        Cumulative upkeep—Sacrifice a land.
+        Cumulative upkeepâ€”Sacrifice a land.
 timing=main
-oracle=Trample. Polar Kraken enters the battlefield tapped. Cumulative upkeep—Sacrifice a land.
+oracle=Trample. Polar Kraken enters the battlefield tapped. Cumulative upkeepâ€”Sacrifice a land.

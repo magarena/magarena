@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={4}{R}
 effect=SN deals 3 damage to target creature.;\
-        Threshold — SN deals 5 damage to that creature instead if seven or more cards are in your graveyard.
+        Threshold â€” SN deals 5 damage to that creature instead if seven or more cards are in your graveyard.
 timing=removal
-oracle=Thermal Blast deals 3 damage to target creature. Threshold — Thermal Blast deals 5 damage to that creature instead if seven or more cards are in your graveyard.
+oracle=Thermal Blast deals 3 damage to target creature. Threshold â€” Thermal Blast deals 5 damage to that creature instead if seven or more cards are in your graveyard.

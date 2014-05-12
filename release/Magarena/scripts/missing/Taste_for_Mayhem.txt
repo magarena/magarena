@@ -7,6 +7,6 @@ subtype=Aura
 cost={R}
 ability=Enchant creature;\
         Enchanted creature gets +2/+0.;\
-        Hellbent — Enchanted creature gets an additional +2/+0 as long as you have no cards in hand.
+        Hellbent â€” Enchanted creature gets an additional +2/+0 as long as you have no cards in hand.
 timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+0. Hellbent — Enchanted creature gets an additional +2/+0 as long as you have no cards in hand.
+oracle=Enchant creature. Enchanted creature gets +2/+0. Hellbent â€” Enchanted creature gets an additional +2/+0 as long as you have no cards in hand.

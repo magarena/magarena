@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/phalanx%20formation.jpg
 rarity=U
 type=Instant
 cost={2}{W}
-effect=Strive — SN costs {1}{W} more to cast for each target beyond the first.;\
+effect=Strive â€” SN costs {1}{W} more to cast for each target beyond the first.;\
         Any number of target creatures each gain double strike until end of turn.
 timing=removal
-oracle=Strive — Phalanx Formation costs {1}{W} more to cast for each target beyond the first. Any number of target creatures each gain double strike until end of turn.
+oracle=Strive â€” Phalanx Formation costs {1}{W} more to cast for each target beyond the first. Any number of target creatures each gain double strike until end of turn.

@@ -8,4 +8,4 @@ cost={G}
 pt=2/2
 ability=At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of SN.
 timing=main
-oracle=At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of Ghazb·n Ogre.
+oracle=At the beginning of your upkeep, if a player has more life than each other player, the player with the most life gains control of Ghazb√°n Ogre.

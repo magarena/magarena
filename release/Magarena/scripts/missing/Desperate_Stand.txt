@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/desperate%20stand.jpg
 rarity=U
 type=Sorcery
 cost={R}{W}
-effect=Strive — SN costs {R}{W} more to cast for each target beyond the first.;\
+effect=Strive â€” SN costs {R}{W} more to cast for each target beyond the first.;\
         Any number of target creatures each get +2/+0 and gain first strike and vigilance until end of turn.
 timing=main
-oracle=Strive — Desperate Stand costs {R}{W} more to cast for each target beyond the first. Any number of target creatures each get +2/+0 and gain first strike and vigilance until end of turn.
+oracle=Strive â€” Desperate Stand costs {R}{W} more to cast for each target beyond the first. Any number of target creatures each get +2/+0 and gain first strike and vigilance until end of turn.

@@ -7,6 +7,6 @@ subtype=Angel
 cost={5}{W}{W}{W}
 pt=6/6
 ability=Flying;\
-        Threshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.
+        Threshold â€” Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.
 timing=main
-oracle=Flying. Threshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.
+oracle=Flying. Threshold â€” Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.

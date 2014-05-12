@@ -7,6 +7,6 @@ subtype=Giant
 cost={5}{W}{W}
 pt=3/4
 ability=When SN enters the battlefield, tap all nonwhite creatures.;\
-        Suspend 5—{W}
+        Suspend 5â€”{W}
 timing=main
-oracle=When Ivory Giant enters the battlefield, tap all nonwhite creatures. Suspend 5—{W}
+oracle=When Ivory Giant enters the battlefield, tap all nonwhite creatures. Suspend 5â€”{W}

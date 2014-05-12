@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={2}{W}
 effect=Prevent all damage that sources of the color of your choice would deal this turn.;\
-        Flashback—Tap an untapped white creature you control.
+        Flashbackâ€”Tap an untapped white creature you control.
 timing=removal
-oracle=Prevent all damage that sources of the color of your choice would deal this turn. Flashback—Tap an untapped white creature you control.
+oracle=Prevent all damage that sources of the color of your choice would deal this turn. Flashbackâ€”Tap an untapped white creature you control.

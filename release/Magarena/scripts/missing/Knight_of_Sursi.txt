@@ -7,6 +7,6 @@ subtype=Human,Knight
 cost={3}{W}
 pt=2/2
 ability=Flying; flanking ;\
-        Suspend 3—{W}
+        Suspend 3â€”{W}
 timing=main
-oracle=Flying; flanking . Suspend 3—{W}
+oracle=Flying; flanking . Suspend 3â€”{W}

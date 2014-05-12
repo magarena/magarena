@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/slaughter.jpg
 rarity=U
 type=Instant
 cost={2}{B}{B}
-effect=Buyback—Pay 4 life.;\
+effect=Buybackâ€”Pay 4 life.;\
         Destroy target nonblack creature. It can't be regenerated.
 timing=removal
-oracle=Buyback—Pay 4 life.. Destroy target nonblack creature. It can't be regenerated.
+oracle=Buybackâ€”Pay 4 life.. Destroy target nonblack creature. It can't be regenerated.

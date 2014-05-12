@@ -8,7 +8,7 @@ cost={4}{R}{R}
 pt=4/4
 ability=Flying;\
         {R}: SN gets +1/+0 until end of turn.;\
-        Suspend 2—{R}{R};\
+        Suspend 2â€”{R}{R};\
         Whenever an opponent casts a spell, if SN is suspended, that player may put a time counter on SN.
 timing=main
-oracle=Flying. {R}: Pardic Dragon gets +1/+0 until end of turn. Suspend 2—{R}{R}. Whenever an opponent casts a spell, if Pardic Dragon is suspended, that player may put a time counter on Pardic Dragon.
+oracle=Flying. {R}: Pardic Dragon gets +1/+0 until end of turn. Suspend 2â€”{R}{R}. Whenever an opponent casts a spell, if Pardic Dragon is suspended, that player may put a time counter on Pardic Dragon.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={9}{R}
 pt=9/7
-ability=Suspend 10—{R};\
+ability=Suspend 10â€”{R};\
         Sacrifice an artifact, creature, or land: Remove a time counter from SN. Activate this ability only if SN is suspended.
 timing=main
-oracle=Suspend 10—{R}. Sacrifice an artifact, creature, or land: Remove a time counter from Greater Gargadon. Activate this ability only if Greater Gargadon is suspended.
+oracle=Suspend 10â€”{R}. Sacrifice an artifact, creature, or land: Remove a time counter from Greater Gargadon. Activate this ability only if Greater Gargadon is suspended.

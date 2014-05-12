@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/dwarven%20landslide.jpg
 rarity=C
 type=Sorcery
 cost={3}{R}
-effect=Kicker—{2}{R}, Sacrifice a land.;\
+effect=Kickerâ€”{2}{R}, Sacrifice a land.;\
         Destroy target land. If SN was kicked, destroy another target land.
 timing=main
-oracle=Kicker—{2}{R}, Sacrifice a land.. Destroy target land. If Dwarven Landslide was kicked, destroy another target land.
+oracle=Kickerâ€”{2}{R}, Sacrifice a land.. Destroy target land. If Dwarven Landslide was kicked, destroy another target land.

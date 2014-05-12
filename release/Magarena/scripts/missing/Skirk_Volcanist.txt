@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=3/1
-ability=Morph—Sacrifice two Mountains.;\
+ability=Morphâ€”Sacrifice two Mountains.;\
         When SN is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.
 timing=main
-oracle=Morph—Sacrifice two Mountains.. When Skirk Volcanist is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.
+oracle=Morphâ€”Sacrifice two Mountains.. When Skirk Volcanist is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.

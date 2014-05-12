@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/ajani%27s%20presence.jpg
 rarity=C
 type=Instant
 cost={W}
-effect=Strive — SN costs {2}{W} more to cast for each target beyond the first.;\
+effect=Strive â€” SN costs {2}{W} more to cast for each target beyond the first.;\
         Any number of target creatures each get +1/+1 and gain indestructible until end of turn.
 timing=removal
-oracle=Strive — Ajani's Presence costs {2}{W} more to cast for each target beyond the first. Any number of target creatures each get +1/+1 and gain indestructible until end of turn.
+oracle=Strive â€” Ajani's Presence costs {2}{W} more to cast for each target beyond the first. Any number of target creatures each get +1/+1 and gain indestructible until end of turn.

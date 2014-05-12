@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/second%20sight.jpg
 rarity=U
 type=Instant
 cost={2}{U}
-effect=Choose one — Look at the top five cards of target opponent's library, then put them back in any order; or look at the top five cards of your library, then put them back in any order.;\
+effect=Choose one â€” Look at the top five cards of target opponent's library, then put them back in any order; or look at the top five cards of your library, then put them back in any order.;\
         Entwine {U}
 timing=removal
-oracle=Choose one — Look at the top five cards of target opponent's library, then put them back in any order; or look at the top five cards of your library, then put them back in any order. Entwine {U}
+oracle=Choose one â€” Look at the top five cards of target opponent's library, then put them back in any order; or look at the top five cards of your library, then put them back in any order. Entwine {U}

@@ -9,4 +9,4 @@ pt=4/1
 ability=SN can't attack unless defending player controls an Island.;\
         When you control no Islands, sacrifice SN.
 timing=main
-oracle=Dand‚n can't attack unless defending player controls an Island. When you control no Islands, sacrifice Dand‚n.
+oracle=Dand√¢n can't attack unless defending player controls an Island. When you control no Islands, sacrifice Dand√¢n.

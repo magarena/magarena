@@ -8,4 +8,4 @@ cost={1}{B}{B}
 pt=2/3
 ability=Whenever SN blocks or becomes blocked by a creature, that creature can't be regenerated this turn.
 timing=main
-oracle=Whenever Lim-Dûl's Cohort blocks or becomes blocked by a creature, that creature can't be regenerated this turn.
+oracle=Whenever Lim-DÃ»l's Cohort blocks or becomes blocked by a creature, that creature can't be regenerated this turn.

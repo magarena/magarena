@@ -5,6 +5,6 @@ rarity=C
 type=Sorcery
 cost={2}{R}
 effect=SN deals 3 damage to target creature or player.;\
-        Suspend 1—{R}
+        Suspend 1â€”{R}
 timing=main
-oracle=Rift Bolt deals 3 damage to target creature or player. Suspend 1—{R}
+oracle=Rift Bolt deals 3 damage to target creature or player. Suspend 1â€”{R}

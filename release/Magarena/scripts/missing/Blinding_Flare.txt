@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/blinding%20flare.jpg
 rarity=U
 type=Sorcery
 cost={R}
-effect=Strive — SN costs {R} more to cast for each target beyond the first.;\
+effect=Strive â€” SN costs {R} more to cast for each target beyond the first.;\
         Any number of target creatures can't block this turn.
 timing=main
-oracle=Strive — Blinding Flare costs {R} more to cast for each target beyond the first. Any number of target creatures can't block this turn.
+oracle=Strive â€” Blinding Flare costs {R} more to cast for each target beyond the first. Any number of target creatures can't block this turn.

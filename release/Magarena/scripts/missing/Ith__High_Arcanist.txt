@@ -8,6 +8,6 @@ cost={5}{W}{U}
 pt=3/5
 ability=Vigilance;\
         {T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.;\
-        Suspend 4—{W}{U}
+        Suspend 4â€”{W}{U}
 timing=main
-oracle=Vigilance. {T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn. Suspend 4—{W}{U}
+oracle=Vigilance. {T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn. Suspend 4â€”{W}{U}

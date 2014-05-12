@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/journey%20of%20discovery.jpg
 rarity=C
 type=Sorcery
 cost={2}{G}
-effect=Choose one — Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library; or you may play up to two additional lands this turn.;\
+effect=Choose one â€” Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library; or you may play up to two additional lands this turn.;\
         Entwine {2}{G}
 timing=main
-oracle=Choose one — Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library; or you may play up to two additional lands this turn. Entwine {2}{G}
+oracle=Choose one â€” Search your library for up to two basic land cards, reveal them, put them into your hand, then shuffle your library; or you may play up to two additional lands this turn. Entwine {2}{G}

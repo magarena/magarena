@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/hour%20of%20need.jpg
 rarity=U
 type=Instant
 cost={2}{U}
-effect=Strive — SN costs {1}{U} more to cast for each target beyond the first.;\
+effect=Strive â€” SN costs {1}{U} more to cast for each target beyond the first.;\
         Exile any number of target creatures. For each creature exiled this way, its controller puts a 4/4 blue Sphinx creature token with flying onto the battlefield.
 timing=removal
-oracle=Strive — Hour of Need costs {1}{U} more to cast for each target beyond the first. Exile any number of target creatures. For each creature exiled this way, its controller puts a 4/4 blue Sphinx creature token with flying onto the battlefield.
+oracle=Strive â€” Hour of Need costs {1}{U} more to cast for each target beyond the first. Exile any number of target creatures. For each creature exiled this way, its controller puts a 4/4 blue Sphinx creature token with flying onto the battlefield.

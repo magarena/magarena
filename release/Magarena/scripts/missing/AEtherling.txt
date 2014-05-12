@@ -11,4 +11,4 @@ ability={U}: Exile SN. Return it to the battlefield under its owner's control at
         {1}: SN gets +1/-1 until end of turn.;\
         {1}: SN gets -1/+1 until end of turn.
 timing=main
-oracle={U}: Exile Ætherling. Return it to the battlefield under its owner's control at the beginning of the next end step. {U}: Ætherling can't be blocked this turn. {1}: Ætherling gets +1/-1 until end of turn. {1}: Ætherling gets -1/+1 until end of turn.
+oracle={U}: Exile Ã†therling. Return it to the battlefield under its owner's control at the beginning of the next end step. {U}: Ã†therling can't be blocked this turn. {1}: Ã†therling gets +1/-1 until end of turn. {1}: Ã†therling gets -1/+1 until end of turn.

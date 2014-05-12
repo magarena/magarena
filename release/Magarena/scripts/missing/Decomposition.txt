@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 ability=Enchant black creature;\
-        Enchanted creature has "Cumulative upkeep—Pay 1 life.";\
+        Enchanted creature has "Cumulative upkeepâ€”Pay 1 life.";\
         When enchanted creature dies, its controller loses 2 life.
 timing=main
-oracle=Enchant black creature. Enchanted creature has "Cumulative upkeep—Pay 1 life.". When enchanted creature dies, its controller loses 2 life.
+oracle=Enchant black creature. Enchanted creature has "Cumulative upkeepâ€”Pay 1 life.". When enchanted creature dies, its controller loses 2 life.

@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/rude%20awakening.jpg
 rarity=R
 type=Sorcery
 cost={4}{G}
-effect=Choose one — Untap all lands you control; or until end of turn, lands you control become 2/2 creatures that are still lands.;\
+effect=Choose one â€” Untap all lands you control; or until end of turn, lands you control become 2/2 creatures that are still lands.;\
         Entwine {2}{G}
 timing=main
-oracle=Choose one — Untap all lands you control; or until end of turn, lands you control become 2/2 creatures that are still lands. Entwine {2}{G}
+oracle=Choose one â€” Untap all lands you control; or until end of turn, lands you control become 2/2 creatures that are still lands. Entwine {2}{G}
