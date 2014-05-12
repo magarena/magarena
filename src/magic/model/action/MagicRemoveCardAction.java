@@ -19,7 +19,8 @@ public class MagicRemoveCardAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        final MagicPlayer owner=card.getOwner();
+        final MagicPlayer owner = card.getOwner();
+        assert owner == game.getPlayer(0) || owner == game.getPlayer(1) : card + " does not belong to this MagicGame";
         switch (locationType) {
             case OwnersHand:
                 index=owner.removeCardFromHand(card);
