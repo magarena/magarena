@@ -5,6 +5,6 @@ value=3.784
 rarity=C
 type=Instant
 cost={U}
-timing=tapping
 ability=buyback {2}{U}
-requires_groovy_code
+effect=Tap target artifact, creature, or land.
+timing=tapping

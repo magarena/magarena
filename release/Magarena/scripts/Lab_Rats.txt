@@ -5,6 +5,6 @@ value=3.130
 rarity=C
 type=Sorcery
 cost={B}
-timing=token
 ability=buyback {4}
-requires_groovy_code
+effect=Put a 1/1 black Rat creature token onto the battlefield.
+timing=token

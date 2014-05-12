@@ -5,6 +5,6 @@ value=2.868
 rarity=C
 type=Instant
 cost={G}
-timing=pump
 ability=buyback {4}
-requires_groovy_code
+effect=Target creature gets +2/+2 until end of turn.
+timing=pump

@@ -5,6 +5,6 @@ value=2.768
 rarity=C
 type=Sorcery
 cost={R}
-timing=pump
 ability=buyback {3}
-requires_groovy_code
+effect=Target creature gets +3/+0 until end of turn.
+timing=pump
