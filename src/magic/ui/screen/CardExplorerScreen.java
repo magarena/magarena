@@ -27,6 +27,7 @@ import java.io.PrintWriter;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @SuppressWarnings("serial")
@@ -92,6 +93,7 @@ public class CardExplorerScreen
 
     private void saveMissingCardsList() throws IOException {
         final List<String> missingCards = CardDefinitions.getMissingCardNames();
+        Collections.sort(missingCards);
         final Path savePath = Paths.get(MagicMain.getLogsPath()).resolve("CardsMissingInMagarena.txt");
         try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
             for (final String cardName : missingCards) {
