@@ -235,8 +235,16 @@ debug: $(MAG)
 # n = Z^2 / 4E^2
 #   = 48780
 #   ~ 50000
-%.str: $(MAG) release/Magarena/decks/JustRelentlessRats.dec release/Magarena/decks/LSK_G.dec
-	$(RUN) magic.DeckStrCal --deck1 $(word 2,$^) --deck2 $(word 3,$^) --ai1 $* --ai2 $* --games 50000 > $@
+%.str: $(MAG) deck1.dec deck2.dec
+	$(RUN) -ea -Dmagarena.dir=`pwd`/release \
+	magic.DeckStrCal \
+	--ai1 $* \
+	--str1 1 \
+	--deck1 $(word 2,$^) \
+	--ai2 $* \
+	--str2 1 \
+	--deck2 $(word 3,$^) \
+	--games 50000 >> $@ 2>&1 
 
 #exp/%.log: $(MAG)
 #	scripts/evaluate_ai.sh $* > $@
