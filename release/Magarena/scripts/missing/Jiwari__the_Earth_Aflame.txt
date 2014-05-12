@@ -7,6 +7,6 @@ subtype=Spirit
 cost={3}{R}{R}
 pt=3/3
 ability={X}{R}, {T}: SN deals X damage to target creature without flying.;\
-        Channel — {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.
+        Channel â€” {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.
 timing=main
-oracle={X}{R}, {T}: Jiwari, the Earth Aflame deals X damage to target creature without flying. Channel — {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.
+oracle={X}{R}, {T}: Jiwari, the Earth Aflame deals X damage to target creature without flying. Channel â€” {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.

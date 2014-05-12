@@ -6,8 +6,8 @@ type=Artifact,Creature
 subtype=Dragon
 cost={16}
 pt=9/9
-ability=Domain — SN costs {2} less to cast for each basic land type among lands you control.;\
+ability=Domain â€” SN costs {2} less to cast for each basic land type among lands you control.;\
         Flying;\
-        Domain — At the beginning of your upkeep, sacrifice SN unless you pay {10}. This cost is reduced by {2} for each basic land type among lands you control.
+        Domain â€” At the beginning of your upkeep, sacrifice SN unless you pay {10}. This cost is reduced by {2} for each basic land type among lands you control.
 timing=main
-oracle=Domain — Draco costs {2} less to cast for each basic land type among lands you control. Flying. Domain — At the beginning of your upkeep, sacrifice Draco unless you pay {10}. This cost is reduced by {2} for each basic land type among lands you control.
+oracle=Domain â€” Draco costs {2} less to cast for each basic land type among lands you control. Flying. Domain â€” At the beginning of your upkeep, sacrifice Draco unless you pay {10}. This cost is reduced by {2} for each basic land type among lands you control.

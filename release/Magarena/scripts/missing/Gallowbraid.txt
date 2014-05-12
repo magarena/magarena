@@ -7,6 +7,6 @@ subtype=Horror
 cost={3}{B}{B}
 pt=5/5
 ability=Trample;\
-        Cumulative upkeep—Pay 1 life.
+        Cumulative upkeepâ€”Pay 1 life.
 timing=main
-oracle=Trample. Cumulative upkeep—Pay 1 life.
+oracle=Trample. Cumulative upkeepâ€”Pay 1 life.

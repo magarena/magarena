@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/rain%20of%20rust.jpg
 rarity=C
 type=Instant
 cost={3}{R}{R}
-effect=Choose one — Destroy target artifact; or destroy target land.;\
+effect=Choose one â€” Destroy target artifact; or destroy target land.;\
         Entwine {3}{R}
 timing=removal
-oracle=Choose one — Destroy target artifact; or destroy target land. Entwine {3}{R}
+oracle=Choose one â€” Destroy target artifact; or destroy target land. Entwine {3}{R}

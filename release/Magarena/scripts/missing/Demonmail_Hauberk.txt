@@ -6,6 +6,6 @@ type=Artifact
 subtype=Equipment
 cost={4}
 ability=Equipped creature gets +4/+2.;\
-        Equip—Sacrifice a creature.
+        Equipâ€”Sacrifice a creature.
 timing=main
-oracle=Equipped creature gets +4/+2. Equip—Sacrifice a creature.
+oracle=Equipped creature gets +4/+2. Equipâ€”Sacrifice a creature.

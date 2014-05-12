@@ -7,6 +7,6 @@ subtype=Insect
 cost={3}{G}{G}
 pt=3/3
 ability=Flying;\
-        Suspend 4—{1}{G}
+        Suspend 4â€”{1}{G}
 timing=main
-oracle=Flying. Suspend 4—{1}{G}
+oracle=Flying. Suspend 4â€”{1}{G}

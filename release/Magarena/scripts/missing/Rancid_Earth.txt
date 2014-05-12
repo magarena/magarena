@@ -5,6 +5,6 @@ rarity=C
 type=Sorcery
 cost={1}{B}{B}
 effect=Destroy target land.;\
-        Threshold — If seven or more cards are in your graveyard, instead destroy that land and SN deals 1 damage to each creature and each player.
+        Threshold â€” If seven or more cards are in your graveyard, instead destroy that land and SN deals 1 damage to each creature and each player.
 timing=main
-oracle=Destroy target land. Threshold — If seven or more cards are in your graveyard, instead destroy that land and Rancid Earth deals 1 damage to each creature and each player.
+oracle=Destroy target land. Threshold â€” If seven or more cards are in your graveyard, instead destroy that land and Rancid Earth deals 1 damage to each creature and each player.

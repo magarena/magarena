@@ -5,6 +5,6 @@ rarity=U
 type=Sorcery
 cost={1}{W}{W}
 effect=Destroy all enchantments.;\
-        Threshold — If seven or more cards are in your graveyard, instead destroy all enchantments, then return all cards in your graveyard destroyed this way to the battlefield.
+        Threshold â€” If seven or more cards are in your graveyard, instead destroy all enchantments, then return all cards in your graveyard destroyed this way to the battlefield.
 timing=main
-oracle=Destroy all enchantments. Threshold — If seven or more cards are in your graveyard, instead destroy all enchantments, then return all cards in your graveyard destroyed this way to the battlefield.
+oracle=Destroy all enchantments. Threshold â€” If seven or more cards are in your graveyard, instead destroy all enchantments, then return all cards in your graveyard destroyed this way to the battlefield.

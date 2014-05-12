@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/tooth%20and%20nail.jpg
 rarity=R
 type=Sorcery
 cost={5}{G}{G}
-effect=Choose one — Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library; or put up to two creature cards from your hand onto the battlefield.;\
+effect=Choose one â€” Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library; or put up to two creature cards from your hand onto the battlefield.;\
         Entwine {2}
 timing=main
-oracle=Choose one — Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library; or put up to two creature cards from your hand onto the battlefield. Entwine {2}
+oracle=Choose one â€” Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library; or put up to two creature cards from your hand onto the battlefield. Entwine {2}

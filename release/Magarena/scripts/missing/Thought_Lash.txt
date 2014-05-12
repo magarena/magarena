@@ -4,8 +4,8 @@ image=http://mtgimage.com/card/thought%20lash.jpg
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
-ability=Cumulative upkeep—Exile the top card of your library.;\
+ability=Cumulative upkeepâ€”Exile the top card of your library.;\
         When a player doesn't pay SN's cumulative upkeep, that player exiles all cards from his or her library.;\
         Exile the top card of your library: Prevent the next 1 damage that would be dealt to you this turn.
 timing=main
-oracle=Cumulative upkeep—Exile the top card of your library.. When a player doesn't pay Thought Lash's cumulative upkeep, that player exiles all cards from his or her library. Exile the top card of your library: Prevent the next 1 damage that would be dealt to you this turn.
+oracle=Cumulative upkeepâ€”Exile the top card of your library.. When a player doesn't pay Thought Lash's cumulative upkeep, that player exiles all cards from his or her library. Exile the top card of your library: Prevent the next 1 damage that would be dealt to you this turn.

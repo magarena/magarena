@@ -6,7 +6,7 @@ type=Creature
 subtype=Illusion
 cost={3}{U}
 pt=2/3
-ability=Suspend 4—{1}{U};\
+ability=Suspend 4â€”{1}{U};\
         When the last time counter is removed from SN while it's exiled, creatures can't be blocked this turn.
 timing=main
-oracle=Suspend 4—{1}{U}. When the last time counter is removed from Veiling Oddity while it's exiled, creatures can't be blocked this turn.
+oracle=Suspend 4â€”{1}{U}. When the last time counter is removed from Veiling Oddity while it's exiled, creatures can't be blocked this turn.

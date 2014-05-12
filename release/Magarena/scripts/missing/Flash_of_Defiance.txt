@@ -5,6 +5,6 @@ rarity=C
 type=Sorcery
 cost={1}{R}
 effect=Green creatures and white creatures can't block this turn.;\
-        Flashback—{1}{R}, Pay 3 life.
+        Flashbackâ€”{1}{R}, Pay 3 life.
 timing=main
-oracle=Green creatures and white creatures can't block this turn. Flashback—{1}{R}, Pay 3 life.
+oracle=Green creatures and white creatures can't block this turn. Flashbackâ€”{1}{R}, Pay 3 life.

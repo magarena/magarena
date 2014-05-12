@@ -7,6 +7,6 @@ subtype=Human,Assassin
 cost={B}{B}{B}
 pt=2/2
 ability=Sacrifice SN: Destroy target nonblack creature.;\
-        Recover—Pay half your life, rounded up.
+        Recoverâ€”Pay half your life, rounded up.
 timing=main
-oracle=Sacrifice Garza's Assassin: Destroy target nonblack creature. Recover—Pay half your life, rounded up.
+oracle=Sacrifice Garza's Assassin: Destroy target nonblack creature. Recoverâ€”Pay half your life, rounded up.

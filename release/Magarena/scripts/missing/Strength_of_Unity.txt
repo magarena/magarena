@@ -6,6 +6,6 @@ type=Enchantment
 subtype=Aura
 cost={3}{W}
 ability=Enchant creature;\
-        Domain — Enchanted creature gets +1/+1 for each basic land type among lands you control.
+        Domain â€” Enchanted creature gets +1/+1 for each basic land type among lands you control.
 timing=main
-oracle=Enchant creature. Domain — Enchanted creature gets +1/+1 for each basic land type among lands you control.
+oracle=Enchant creature. Domain â€” Enchanted creature gets +1/+1 for each basic land type among lands you control.

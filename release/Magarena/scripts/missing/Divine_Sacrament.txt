@@ -5,6 +5,6 @@ rarity=R
 type=Enchantment
 cost={1}{W}{W}
 ability=White creatures get +1/+1.;\
-        Threshold — White creatures get an additional +1/+1 as long as seven or more cards are in your graveyard.
+        Threshold â€” White creatures get an additional +1/+1 as long as seven or more cards are in your graveyard.
 timing=main
-oracle=White creatures get +1/+1. Threshold — White creatures get an additional +1/+1 as long as seven or more cards are in your graveyard.
+oracle=White creatures get +1/+1. Threshold â€” White creatures get an additional +1/+1 as long as seven or more cards are in your graveyard.

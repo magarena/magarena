@@ -7,6 +7,6 @@ subtype=Spirit
 cost={3}{G}{G}
 pt=5/5
 ability={X}{G}, {T}: SN deals X damage to target creature with flying.;\
-        Channel — {X}{G}{G}, Discard Arashi: Arashi deals X damage to each creature with flying.
+        Channel â€” {X}{G}{G}, Discard Arashi: Arashi deals X damage to each creature with flying.
 timing=main
-oracle={X}{G}, {T}: Arashi, the Sky Asunder deals X damage to target creature with flying. Channel — {X}{G}{G}, Discard Arashi: Arashi deals X damage to each creature with flying.
+oracle={X}{G}, {T}: Arashi, the Sky Asunder deals X damage to target creature with flying. Channel â€” {X}{G}{G}, Discard Arashi: Arashi deals X damage to each creature with flying.

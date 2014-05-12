@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/reaping%20the%20rewards.jpg
 rarity=C
 type=Instant
 cost={W}
-effect=Buyback—Sacrifice a land.;\
+effect=Buybackâ€”Sacrifice a land.;\
         You gain 2 life.
 timing=removal
-oracle=Buyback—Sacrifice a land.. You gain 2 life.
+oracle=Buybackâ€”Sacrifice a land.. You gain 2 life.

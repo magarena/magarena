@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={4}
-ability=Domain — Equipped creature gets +1/+1 for each basic land type among lands you control.;\
+ability=Domain â€” Equipped creature gets +1/+1 for each basic land type among lands you control.;\
         Equip {3}
 timing=main
-oracle=Domain — Equipped creature gets +1/+1 for each basic land type among lands you control. Equip {3}
+oracle=Domain â€” Equipped creature gets +1/+1 for each basic land type among lands you control. Equip {3}

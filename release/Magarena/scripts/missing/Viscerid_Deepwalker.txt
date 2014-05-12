@@ -7,6 +7,6 @@ subtype=Homarid,Warrior
 cost={4}{U}
 pt=2/3
 ability={U}: SN gets +1/+0 until end of turn.;\
-        Suspend 4—{U}
+        Suspend 4â€”{U}
 timing=main
-oracle={U}: Viscerid Deepwalker gets +1/+0 until end of turn. Suspend 4—{U}
+oracle={U}: Viscerid Deepwalker gets +1/+0 until end of turn. Suspend 4â€”{U}

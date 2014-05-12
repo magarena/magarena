@@ -7,6 +7,6 @@ subtype=Aura
 cost={2}{G}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2.;\
-        Threshold — As long as seven or more cards are in your graveyard, all creatures able to block enchanted creature do so.
+        Threshold â€” As long as seven or more cards are in your graveyard, all creatures able to block enchanted creature do so.
 timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+2. Threshold — As long as seven or more cards are in your graveyard, all creatures able to block enchanted creature do so.
+oracle=Enchant creature. Enchanted creature gets +2/+2. Threshold â€” As long as seven or more cards are in your graveyard, all creatures able to block enchanted creature do so.

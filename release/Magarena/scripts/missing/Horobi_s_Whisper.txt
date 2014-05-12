@@ -6,6 +6,6 @@ type=Instant
 subtype=Arcane
 cost={1}{B}{B}
 effect=If you control a Swamp, destroy target nonblack creature.;\
-        Splice onto Arcane—Exile four cards from your graveyard.
+        Splice onto Arcaneâ€”Exile four cards from your graveyard.
 timing=removal
-oracle=If you control a Swamp, destroy target nonblack creature. Splice onto Arcane—Exile four cards from your graveyard.
+oracle=If you control a Swamp, destroy target nonblack creature. Splice onto Arcaneâ€”Exile four cards from your graveyard.

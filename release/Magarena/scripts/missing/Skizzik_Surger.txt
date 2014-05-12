@@ -7,6 +7,6 @@ subtype=Elemental
 cost={4}{R}{R}
 pt=6/4
 ability=Haste;\
-        Echo—Sacrifice two lands.
+        Echoâ€”Sacrifice two lands.
 timing=main
-oracle=Haste. Echo—Sacrifice two lands.
+oracle=Haste. Echoâ€”Sacrifice two lands.

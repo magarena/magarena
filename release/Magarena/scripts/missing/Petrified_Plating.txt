@@ -7,6 +7,6 @@ subtype=Aura
 cost={2}{G}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2.;\
-        Suspend 2—{G}
+        Suspend 2â€”{G}
 timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+2. Suspend 2—{G}
+oracle=Enchant creature. Enchanted creature gets +2/+2. Suspend 2â€”{G}

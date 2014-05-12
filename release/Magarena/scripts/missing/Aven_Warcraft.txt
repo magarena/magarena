@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={2}{W}
 effect=Creatures you control get +0/+2 until end of turn.;\
-        Threshold — If seven or more cards are in your graveyard, choose a color. Creatures you control also gain protection from the chosen color until end of turn.
+        Threshold â€” If seven or more cards are in your graveyard, choose a color. Creatures you control also gain protection from the chosen color until end of turn.
 timing=removal
-oracle=Creatures you control get +0/+2 until end of turn. Threshold — If seven or more cards are in your graveyard, choose a color. Creatures you control also gain protection from the chosen color until end of turn.
+oracle=Creatures you control get +0/+2 until end of turn. Threshold â€” If seven or more cards are in your graveyard, choose a color. Creatures you control also gain protection from the chosen color until end of turn.

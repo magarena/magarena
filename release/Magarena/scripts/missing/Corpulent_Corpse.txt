@@ -7,6 +7,6 @@ subtype=Zombie
 cost={5}{B}
 pt=3/3
 ability=Fear;\
-        Suspend 5—{B}
+        Suspend 5â€”{B}
 timing=main
-oracle=Fear. Suspend 5—{B}
+oracle=Fear. Suspend 5â€”{B}

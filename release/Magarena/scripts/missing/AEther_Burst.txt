@@ -6,4 +6,4 @@ type=Instant
 cost={1}{U}
 effect=Return up to X target creatures to their owners' hands, where X is one plus the number of cards named SN in all graveyards as you cast SN.
 timing=removal
-oracle=Return up to X target creatures to their owners' hands, where X is one plus the number of cards named Æther Burst in all graveyards as you cast Æther Burst.
+oracle=Return up to X target creatures to their owners' hands, where X is one plus the number of cards named Ã†ther Burst in all graveyards as you cast Ã†ther Burst.

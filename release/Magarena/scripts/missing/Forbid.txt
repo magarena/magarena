@@ -4,7 +4,7 @@ image=http://mtgimage.com/card/forbid.jpg
 rarity=U
 type=Instant
 cost={1}{U}{U}
-effect=Buyback—Discard two cards.;\
+effect=Buybackâ€”Discard two cards.;\
         Counter target spell.
 timing=removal
-oracle=Buyback—Discard two cards.. Counter target spell.
+oracle=Buybackâ€”Discard two cards.. Counter target spell.

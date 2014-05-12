@@ -5,6 +5,6 @@ rarity=U
 type=Sorcery
 cost={3}{R}{R}
 effect=SN deals 13 damage to target creature.;\
-        Suspend 2—{1}{R}{R}
+        Suspend 2â€”{1}{R}{R}
 timing=main
-oracle=Shivan Meteor deals 13 damage to target creature. Suspend 2—{1}{R}{R}
+oracle=Shivan Meteor deals 13 damage to target creature. Suspend 2â€”{1}{R}{R}
