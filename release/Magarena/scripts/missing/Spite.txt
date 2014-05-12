@@ -1,0 +1,9 @@
+name=Spite
+url=http://magiccards.info/query?q=%21Spite
+image=http://mtgimage.com/card/spitemalice.jpg
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Counter target noncreature spell.
+timing=removal
+oracle=Counter target noncreature spell.

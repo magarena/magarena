@@ -1,0 +1,11 @@
+name=Nightfall Predator
+url=http://magiccards.info/query?q=%21Nightfall+Predator
+image=http://mtgimage.com/card/nightfall%20predator.jpg
+rarity=R
+type=Creature
+subtype=Werewolf
+pt=4/4
+ability={R}, {T}: SN fights target creature.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle={R}, {T}: Nightfall Predator fights target creature.. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Nightfall Predator.

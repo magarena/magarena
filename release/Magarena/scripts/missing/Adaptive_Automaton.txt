@@ -1,0 +1,13 @@
+name=Adaptive Automaton
+url=http://magiccards.info/query?q=%21Adaptive+Automaton
+image=http://mtgimage.com/card/adaptive%20automaton.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=2/2
+ability=As SN enters the battlefield, choose a creature type.;\
+        SN is the chosen type in addition to its other types.;\
+        Other creatures you control of the chosen type get +1/+1.
+timing=main
+oracle=As Adaptive Automaton enters the battlefield, choose a creature type. Adaptive Automaton is the chosen type in addition to its other types. Other creatures you control of the chosen type get +1/+1.

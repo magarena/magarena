@@ -1,0 +1,9 @@
+name=Stronghold Gambit
+url=http://magiccards.info/query?q=%21Stronghold+Gambit
+image=http://mtgimage.com/card/stronghold%20gambit.jpg
+rarity=R
+type=Sorcery
+cost={1}{R}
+effect=Each player chooses a card in his or her hand. Then each player reveals his or her chosen card. The owner of each creature card revealed this way with the lowest converted mana cost puts it onto the battlefield.
+timing=main
+oracle=Each player chooses a card in his or her hand. Then each player reveals his or her chosen card. The owner of each creature card revealed this way with the lowest converted mana cost puts it onto the battlefield.

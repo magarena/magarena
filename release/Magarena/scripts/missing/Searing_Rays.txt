@@ -1,0 +1,9 @@
+name=Searing Rays
+url=http://magiccards.info/query?q=%21Searing+Rays
+image=http://mtgimage.com/card/searing%20rays.jpg
+rarity=U
+type=Sorcery
+cost={2}{R}
+effect=Choose a color. SN deals damage to each player equal to the number of creatures of that color that player controls.
+timing=main
+oracle=Choose a color. Searing Rays deals damage to each player equal to the number of creatures of that color that player controls.

@@ -1,0 +1,11 @@
+name=Whirlpool Rider
+url=http://magiccards.info/query?q=%21Whirlpool+Rider
+image=http://mtgimage.com/card/whirlpool%20rider.jpg
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={1}{U}
+pt=1/1
+ability=When SN enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.
+timing=main
+oracle=When Whirlpool Rider enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.

@@ -1,0 +1,10 @@
+name=Tear
+url=http://magiccards.info/query?q=%21Tear
+image=http://mtgimage.com/card/weartear.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Destroy target enchantment.;\
+        Fuse
+timing=removal
+oracle=Destroy target enchantment. Fuse

@@ -1,0 +1,11 @@
+name=Akki Underminer
+url=http://magiccards.info/query?q=%21Akki+Underminer
+image=http://mtgimage.com/card/akki%20underminer.jpg
+rarity=U
+type=Creature
+subtype=Goblin,Rogue,Shaman
+cost={3}{R}
+pt=1/1
+ability=Whenever SN deals combat damage to a player, that player sacrifices a permanent.
+timing=main
+oracle=Whenever Akki Underminer deals combat damage to a player, that player sacrifices a permanent.

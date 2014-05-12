@@ -1,0 +1,10 @@
+name=Faith's Shield
+url=http://magiccards.info/query?q=%21Faith%27s+Shield
+image=http://mtgimage.com/card/faith%27s%20shield.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Target permanent you control gains protection from the color of your choice until end of turn.;\
+        Fateful hour — If you have 5 or less life, instead you and each permanent you control gain protection from the color of your choice until end of turn.
+timing=removal
+oracle=Target permanent you control gains protection from the color of your choice until end of turn. Fateful hour — If you have 5 or less life, instead you and each permanent you control gain protection from the color of your choice until end of turn.

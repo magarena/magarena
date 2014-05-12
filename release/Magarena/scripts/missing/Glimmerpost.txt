@@ -1,0 +1,10 @@
+name=Glimmerpost
+url=http://magiccards.info/query?q=%21Glimmerpost
+image=http://mtgimage.com/card/glimmerpost.jpg
+rarity=C
+type=Land
+subtype=Locus
+ability=When SN enters the battlefield, you gain 1 life for each Locus on the battlefield.;\
+        {T}: Add {1} to your mana pool.
+timing=main
+oracle=When Glimmerpost enters the battlefield, you gain 1 life for each Locus on the battlefield. {T}: Add {1} to your mana pool.

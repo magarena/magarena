@@ -1,0 +1,9 @@
+name=Pull from Eternity
+url=http://magiccards.info/query?q=%21Pull+from+Eternity
+image=http://mtgimage.com/card/pull%20from%20eternity.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Put target face-up exiled card into its owner's graveyard.
+timing=removal
+oracle=Put target face-up exiled card into its owner's graveyard.

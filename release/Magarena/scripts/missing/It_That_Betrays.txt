@@ -1,0 +1,12 @@
+name=It That Betrays
+url=http://magiccards.info/query?q=%21It+That+Betrays
+image=http://mtgimage.com/card/it%20that%20betrays.jpg
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={12}
+pt=11/11
+ability=Annihilator 2;\
+        Whenever an opponent sacrifices a nontoken permanent, put that card onto the battlefield under your control.
+timing=main
+oracle=Annihilator 2. Whenever an opponent sacrifices a nontoken permanent, put that card onto the battlefield under your control.

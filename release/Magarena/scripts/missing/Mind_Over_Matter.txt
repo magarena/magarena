@@ -1,0 +1,9 @@
+name=Mind Over Matter
+url=http://magiccards.info/query?q=%21Mind+Over+Matter
+image=http://mtgimage.com/card/mind%20over%20matter.jpg
+rarity=R
+type=Enchantment
+cost={2}{U}{U}{U}{U}
+ability=Discard a card: You may tap or untap target artifact, creature, or land.
+timing=main
+oracle=Discard a card: You may tap or untap target artifact, creature, or land.

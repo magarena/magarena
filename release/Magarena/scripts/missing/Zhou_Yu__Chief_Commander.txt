@@ -1,0 +1,11 @@
+name=Zhou Yu, Chief Commander
+url=http://magiccards.info/query?q=%21Zhou+Yu%2C+Chief+Commander
+image=http://mtgimage.com/card/zhou%20yu%2C%20chief%20commander.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={5}{U}{U}
+pt=8/8
+ability=SN can't attack unless defending player controls an Island.
+timing=main
+oracle=Zhou Yu, Chief Commander can't attack unless defending player controls an Island.

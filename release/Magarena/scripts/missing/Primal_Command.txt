@@ -1,0 +1,9 @@
+name=Primal Command
+url=http://magiccards.info/query?q=%21Primal+Command
+image=http://mtgimage.com/card/primal%20command.jpg
+rarity=R
+type=Sorcery
+cost={3}{G}{G}
+effect=Choose two — Target player gains 7 life; or put target noncreature permanent on top of its owner's library; or target player shuffles his or her graveyard into his or her library; or search your library for a creature card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=Choose two — Target player gains 7 life; or put target noncreature permanent on top of its owner's library; or target player shuffles his or her graveyard into his or her library; or search your library for a creature card, reveal it, put it into your hand, then shuffle your library.

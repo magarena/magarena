@@ -1,0 +1,11 @@
+name=Selfless Exorcist
+url=http://magiccards.info/query?q=%21Selfless+Exorcist
+image=http://mtgimage.com/card/selfless%20exorcist.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}{W}
+pt=3/4
+ability={T}: Exile target creature card from a graveyard. That card deals damage equal to its power to SN.
+timing=main
+oracle={T}: Exile target creature card from a graveyard. That card deals damage equal to its power to Selfless Exorcist.

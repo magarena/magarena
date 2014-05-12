@@ -1,0 +1,11 @@
+name=Jhoira's Timebug
+url=http://magiccards.info/query?q=%21Jhoira%27s+Timebug
+image=http://mtgimage.com/card/jhoira%27s%20timebug.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Insect
+cost={2}
+pt=1/2
+ability={T}: Choose target permanent you control or suspended card you own. If that permanent or card has a time counter on it, you may remove a time counter from it or put another time counter on it.
+timing=main
+oracle={T}: Choose target permanent you control or suspended card you own. If that permanent or card has a time counter on it, you may remove a time counter from it or put another time counter on it.

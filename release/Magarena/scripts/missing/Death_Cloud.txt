@@ -1,0 +1,9 @@
+name=Death Cloud
+url=http://magiccards.info/query?q=%21Death+Cloud
+image=http://mtgimage.com/card/death%20cloud.jpg
+rarity=R
+type=Sorcery
+cost={X}{B}{B}{B}
+effect=Each player loses X life, discards X cards, sacrifices X creatures, then sacrifices X lands.
+timing=main
+oracle=Each player loses X life, discards X cards, sacrifices X creatures, then sacrifices X lands.

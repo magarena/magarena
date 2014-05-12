@@ -1,0 +1,11 @@
+name=Groundling Pouncer
+url=http://magiccards.info/query?q=%21Groundling+Pouncer
+image=http://mtgimage.com/card/groundling%20pouncer.jpg
+rarity=U
+type=Creature
+subtype=Faerie
+cost={1}{G/U}
+pt=2/1
+ability={G/U}: SN gets +1/+3 and gains flying until end of turn. Activate this ability only once each turn and only if an opponent controls a creature with flying.
+timing=main
+oracle={G/U}: Groundling Pouncer gets +1/+3 and gains flying until end of turn. Activate this ability only once each turn and only if an opponent controls a creature with flying.

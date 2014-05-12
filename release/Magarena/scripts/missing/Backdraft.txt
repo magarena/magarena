@@ -1,0 +1,9 @@
+name=Backdraft
+url=http://magiccards.info/query?q=%21Backdraft
+image=http://mtgimage.com/card/backdraft.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=Choose a player who cast one or more sorcery spells this turn. SN deals damage to that player equal to half the damage dealt by one of those sorcery spells this turn, rounded down.
+timing=removal
+oracle=Choose a player who cast one or more sorcery spells this turn. Backdraft deals damage to that player equal to half the damage dealt by one of those sorcery spells this turn, rounded down.

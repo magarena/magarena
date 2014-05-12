@@ -1,0 +1,9 @@
+name=Browse
+url=http://magiccards.info/query?q=%21Browse
+image=http://mtgimage.com/card/browse.jpg
+rarity=U
+type=Enchantment
+cost={2}{U}{U}
+ability={2}{U}{U}: Look at the top five cards of your library, put one of them into your hand, and exile the rest.
+timing=main
+oracle={2}{U}{U}: Look at the top five cards of your library, put one of them into your hand, and exile the rest.

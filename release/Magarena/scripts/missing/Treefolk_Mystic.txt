@@ -1,0 +1,11 @@
+name=Treefolk Mystic
+url=http://magiccards.info/query?q=%21Treefolk+Mystic
+image=http://mtgimage.com/card/treefolk%20mystic.jpg
+rarity=C
+type=Creature
+subtype=Treefolk
+cost={3}{G}
+pt=2/4
+ability=Whenever SN blocks or becomes blocked by a creature, destroy all Auras attached to that creature.
+timing=main
+oracle=Whenever Treefolk Mystic blocks or becomes blocked by a creature, destroy all Auras attached to that creature.

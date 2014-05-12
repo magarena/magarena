@@ -1,0 +1,9 @@
+name=Tumble
+url=http://magiccards.info/query?q=%21Tumble
+image=http://mtgimage.com/card/roughtumble.jpg
+rarity=U
+type=Sorcery
+cost={5}{R}
+effect=SN deals 6 damage to each creature with flying.
+timing=main
+oracle=Tumble deals 6 damage to each creature with flying.

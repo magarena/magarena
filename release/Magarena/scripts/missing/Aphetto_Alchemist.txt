@@ -1,0 +1,12 @@
+name=Aphetto Alchemist
+url=http://magiccards.info/query?q=%21Aphetto+Alchemist
+image=http://mtgimage.com/card/aphetto%20alchemist.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/2
+ability={T}: Untap target artifact or creature.;\
+        Morph {U}
+timing=main
+oracle={T}: Untap target artifact or creature. Morph {U}

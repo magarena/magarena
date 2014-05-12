@@ -1,0 +1,12 @@
+name=Illusionary Presence
+url=http://magiccards.info/query?q=%21Illusionary+Presence
+image=http://mtgimage.com/card/illusionary%20presence.jpg
+rarity=R
+type=Creature
+subtype=Illusion
+cost={1}{U}{U}
+pt=2/2
+ability=Cumulative upkeep {U};\
+        At the beginning of your upkeep, choose a land type. SN gains landwalk of the chosen type until end of turn.
+timing=main
+oracle=Cumulative upkeep {U}. At the beginning of your upkeep, choose a land type. Illusionary Presence gains landwalk of the chosen type until end of turn.

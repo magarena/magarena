@@ -1,0 +1,12 @@
+name=Radha, Heir to Keld
+url=http://magiccards.info/query?q=%21Radha%2C+Heir+to+Keld
+image=http://mtgimage.com/card/radha%2C%20heir%20to%20keld.jpg
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={R}{G}
+pt=2/2
+ability=Whenever SN attacks, you may add {R}{R} to your mana pool.;\
+        {T}: Add {G} to your mana pool.
+timing=main
+oracle=Whenever Radha, Heir to Keld attacks, you may add {R}{R} to your mana pool. {T}: Add {G} to your mana pool.

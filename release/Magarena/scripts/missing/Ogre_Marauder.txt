@@ -1,0 +1,11 @@
+name=Ogre Marauder
+url=http://magiccards.info/query?q=%21Ogre+Marauder
+image=http://mtgimage.com/card/ogre%20marauder.jpg
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={1}{B}{B}
+pt=3/1
+ability=Whenever SN attacks, it gains "SN can't be blocked" until end of turn unless defending player sacrifices a creature.
+timing=main
+oracle=Whenever Ogre Marauder attacks, it gains "Ogre Marauder can't be blocked" until end of turn unless defending player sacrifices a creature.

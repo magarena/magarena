@@ -1,0 +1,9 @@
+name=Purging Scythe
+url=http://magiccards.info/query?q=%21Purging+Scythe
+image=http://mtgimage.com/card/purging%20scythe.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability=At the beginning of your upkeep, SN deals 2 damage to the creature with the least toughness. If two or more creatures are tied for least toughness, you choose one of them.
+timing=main
+oracle=At the beginning of your upkeep, Purging Scythe deals 2 damage to the creature with the least toughness. If two or more creatures are tied for least toughness, you choose one of them.

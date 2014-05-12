@@ -1,0 +1,13 @@
+name=Merchant Ship
+url=http://magiccards.info/query?q=%21Merchant+Ship
+image=http://mtgimage.com/card/merchant%20ship.jpg
+rarity=U
+type=Creature
+subtype=Human
+cost={U}
+pt=0/2
+ability=SN can't attack unless defending player controls an Island.;\
+        Whenever SN attacks and isn't blocked, you gain 2 life.;\
+        When you control no Islands, sacrifice SN.
+timing=main
+oracle=Merchant Ship can't attack unless defending player controls an Island. Whenever Merchant Ship attacks and isn't blocked, you gain 2 life. When you control no Islands, sacrifice Merchant Ship.

@@ -1,0 +1,12 @@
+name=Ceta Disciple
+url=http://magiccards.info/query?q=%21Ceta+Disciple
+image=http://mtgimage.com/card/ceta%20disciple.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}
+pt=1/1
+ability={R}, {T}: Target creature gets +2/+0 until end of turn.;\
+        {G}, {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle={R}, {T}: Target creature gets +2/+0 until end of turn. {G}, {T}: Add one mana of any color to your mana pool.

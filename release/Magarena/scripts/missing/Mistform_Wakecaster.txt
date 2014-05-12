@@ -1,0 +1,13 @@
+name=Mistform Wakecaster
+url=http://magiccards.info/query?q=%21Mistform+Wakecaster
+image=http://mtgimage.com/card/mistform%20wakecaster.jpg
+rarity=U
+type=Creature
+subtype=Illusion
+cost={4}{U}
+pt=2/3
+ability=Flying;\
+        {1}: SN becomes the creature type of your choice until end of turn.;\
+        {2}{U}{U}, {T}: Choose a creature type. Each creature you control becomes that type until end of turn.
+timing=main
+oracle=Flying. {1}: Mistform Wakecaster becomes the creature type of your choice until end of turn. {2}{U}{U}, {T}: Choose a creature type. Each creature you control becomes that type until end of turn.

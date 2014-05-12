@@ -1,0 +1,9 @@
+name=Wallop
+url=http://magiccards.info/query?q=%21Wallop
+image=http://mtgimage.com/card/wallop.jpg
+rarity=U
+type=Sorcery
+cost={1}{G}
+effect=Destroy target blue or black creature with flying.
+timing=main
+oracle=Destroy target blue or black creature with flying.

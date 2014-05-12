@@ -1,0 +1,9 @@
+name=Scrounge
+url=http://magiccards.info/query?q=%21Scrounge
+image=http://mtgimage.com/card/scrounge.jpg
+rarity=U
+type=Sorcery
+cost={2}{B}
+effect=Target opponent chooses an artifact card in his or her graveyard. Put that card onto the battlefield under your control.
+timing=main
+oracle=Target opponent chooses an artifact card in his or her graveyard. Put that card onto the battlefield under your control.

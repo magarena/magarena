@@ -1,0 +1,12 @@
+name=Jiwari, the Earth Aflame
+url=http://magiccards.info/query?q=%21Jiwari%2C+the+Earth+Aflame
+image=http://mtgimage.com/card/jiwari%2C%20the%20earth%20aflame.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={3}{R}{R}
+pt=3/3
+ability={X}{R}, {T}: SN deals X damage to target creature without flying.;\
+        Channel — {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.
+timing=main
+oracle={X}{R}, {T}: Jiwari, the Earth Aflame deals X damage to target creature without flying. Channel — {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.

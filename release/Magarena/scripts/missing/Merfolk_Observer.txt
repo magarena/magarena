@@ -1,0 +1,11 @@
+name=Merfolk Observer
+url=http://magiccards.info/query?q=%21Merfolk+Observer
+image=http://mtgimage.com/card/merfolk%20observer.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+cost={1}{U}
+pt=2/1
+ability=When SN enters the battlefield, look at the top card of target player's library.
+timing=main
+oracle=When Merfolk Observer enters the battlefield, look at the top card of target player's library.

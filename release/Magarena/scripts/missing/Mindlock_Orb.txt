@@ -1,0 +1,9 @@
+name=Mindlock Orb
+url=http://magiccards.info/query?q=%21Mindlock+Orb
+image=http://mtgimage.com/card/mindlock%20orb.jpg
+rarity=R
+type=Artifact
+cost={3}{U}
+ability=Players can't search libraries.
+timing=main
+oracle=Players can't search libraries.

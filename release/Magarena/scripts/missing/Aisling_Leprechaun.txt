@@ -1,0 +1,11 @@
+name=Aisling Leprechaun
+url=http://magiccards.info/query?q=%21Aisling+Leprechaun
+image=http://mtgimage.com/card/aisling%20leprechaun.jpg
+rarity=C
+type=Creature
+subtype=Faerie
+cost={G}
+pt=1/1
+ability=Whenever SN blocks or becomes blocked by a creature, that creature becomes green.
+timing=main
+oracle=Whenever Aisling Leprechaun blocks or becomes blocked by a creature, that creature becomes green.

@@ -1,0 +1,11 @@
+name=Myr Retriever
+url=http://magiccards.info/query?q=%21Myr+Retriever
+image=http://mtgimage.com/card/myr%20retriever.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Myr
+cost={2}
+pt=1/1
+ability=When SN dies, return another target artifact card from your graveyard to your hand.
+timing=main
+oracle=When Myr Retriever dies, return another target artifact card from your graveyard to your hand.

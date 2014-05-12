@@ -1,0 +1,9 @@
+name=Glimpse the Sun God
+url=http://magiccards.info/query?q=%21Glimpse+the+Sun+God
+image=http://mtgimage.com/card/glimpse%20the%20sun%20god.jpg
+rarity=U
+type=Instant
+cost={X}{W}
+effect=Tap X target creatures. Scry 1.
+timing=removal
+oracle=Tap X target creatures. Scry 1.

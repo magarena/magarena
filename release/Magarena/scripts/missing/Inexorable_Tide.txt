@@ -1,0 +1,9 @@
+name=Inexorable Tide
+url=http://magiccards.info/query?q=%21Inexorable+Tide
+image=http://mtgimage.com/card/inexorable%20tide.jpg
+rarity=R
+type=Enchantment
+cost={3}{U}{U}
+ability=Whenever you cast a spell, proliferate.
+timing=main
+oracle=Whenever you cast a spell, proliferate.

@@ -1,0 +1,9 @@
+name=Whetstone
+url=http://magiccards.info/query?q=%21Whetstone
+image=http://mtgimage.com/card/whetstone.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability={3}: Each player puts the top two cards of his or her library into his or her graveyard.
+timing=main
+oracle={3}: Each player puts the top two cards of his or her library into his or her graveyard.

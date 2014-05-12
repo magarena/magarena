@@ -1,0 +1,12 @@
+name=Brawn
+url=http://magiccards.info/query?q=%21Brawn
+image=http://mtgimage.com/card/brawn.jpg
+rarity=U
+type=Creature
+subtype=Incarnation
+cost={3}{G}
+pt=3/3
+ability=Trample;\
+        As long as SN is in your graveyard and you control a Forest, creatures you control have trample.
+timing=main
+oracle=Trample. As long as Brawn is in your graveyard and you control a Forest, creatures you control have trample.

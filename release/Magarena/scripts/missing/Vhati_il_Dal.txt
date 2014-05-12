@@ -1,0 +1,11 @@
+name=Vhati il-Dal
+url=http://magiccards.info/query?q=%21Vhati+il-Dal
+image=http://mtgimage.com/card/vhati%20il-dal.jpg
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={2}{B}{G}
+pt=3/3
+ability={T}: Target creature's power or toughness becomes 1 until end of turn.
+timing=main
+oracle={T}: Target creature's power or toughness becomes 1 until end of turn.

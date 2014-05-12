@@ -1,0 +1,12 @@
+name=Gathan Raiders
+url=http://magiccards.info/query?q=%21Gathan+Raiders
+image=http://mtgimage.com/card/gathan%20raiders.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={3}{R}{R}
+pt=3/3
+ability=Hellbent — SN gets +2/+2 as long as you have no cards in hand.;\
+        Morph—Discard a card.
+timing=main
+oracle=Hellbent — Gathan Raiders gets +2/+2 as long as you have no cards in hand. Morph—Discard a card.

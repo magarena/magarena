@@ -1,0 +1,8 @@
+name=Unholy Citadel
+url=http://magiccards.info/query?q=%21Unholy+Citadel
+image=http://mtgimage.com/card/unholy%20citadel.jpg
+rarity=U
+type=Land
+ability=Black legendary creatures you control have "bands with other legendary creatures."
+timing=main
+oracle=Black legendary creatures you control have "bands with other legendary creatures."

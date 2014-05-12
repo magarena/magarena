@@ -1,0 +1,11 @@
+name=Flickerform
+url=http://magiccards.info/query?q=%21Flickerform
+image=http://mtgimage.com/card/flickerform.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        {2}{W}{W}: Exile enchanted creature and all Auras attached to it. At the beginning of the next end step, return that card to the battlefield under its owner's control. If you do, return the other cards exiled this way to the battlefield under their owners' control attached to that creature.
+timing=main
+oracle=Enchant creature. {2}{W}{W}: Exile enchanted creature and all Auras attached to it. At the beginning of the next end step, return that card to the battlefield under its owner's control. If you do, return the other cards exiled this way to the battlefield under their owners' control attached to that creature.

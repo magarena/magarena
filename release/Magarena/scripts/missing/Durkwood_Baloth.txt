@@ -1,0 +1,11 @@
+name=Durkwood Baloth
+url=http://magiccards.info/query?q=%21Durkwood+Baloth
+image=http://mtgimage.com/card/durkwood%20baloth.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{G}{G}
+pt=5/5
+ability=Suspend 5—{G}
+timing=main
+oracle=Suspend 5—{G}

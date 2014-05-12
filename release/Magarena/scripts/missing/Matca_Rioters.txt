@@ -1,0 +1,11 @@
+name=Matca Rioters
+url=http://magiccards.info/query?q=%21Matca+Rioters
+image=http://mtgimage.com/card/matca%20rioters.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{G}
+pt=*/*
+ability=Domain — SN's power and toughness are each equal to the number of basic land types among lands you control.
+timing=main
+oracle=Domain — Matca Rioters's power and toughness are each equal to the number of basic land types among lands you control.

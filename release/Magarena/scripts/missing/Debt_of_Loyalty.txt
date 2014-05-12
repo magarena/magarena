@@ -1,0 +1,9 @@
+name=Debt of Loyalty
+url=http://magiccards.info/query?q=%21Debt+of+Loyalty
+image=http://mtgimage.com/card/debt%20of%20loyalty.jpg
+rarity=R
+type=Instant
+cost={1}{W}{W}
+effect=Regenerate target creature. You gain control of that creature if it regenerates this way.
+timing=removal
+oracle=Regenerate target creature. You gain control of that creature if it regenerates this way.

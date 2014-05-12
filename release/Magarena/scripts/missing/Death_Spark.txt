@@ -1,0 +1,10 @@
+name=Death Spark
+url=http://magiccards.info/query?q=%21Death+Spark
+image=http://mtgimage.com/card/death%20spark.jpg
+rarity=U
+type=Instant
+cost={R}
+effect=SN deals 1 damage to target creature or player.;\
+        At the beginning of your upkeep, if SN is in your graveyard with a creature card directly above it, you may pay {1}. If you do, return SN to your hand.
+timing=removal
+oracle=Death Spark deals 1 damage to target creature or player. At the beginning of your upkeep, if Death Spark is in your graveyard with a creature card directly above it, you may pay {1}. If you do, return Death Spark to your hand.

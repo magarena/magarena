@@ -1,0 +1,13 @@
+name=Burning-Tree Bloodscale
+url=http://magiccards.info/query?q=%21Burning-Tree+Bloodscale
+image=http://mtgimage.com/card/burning-tree%20bloodscale.jpg
+rarity=C
+type=Creature
+subtype=Viashino,Berserker
+cost={2}{R}{G}
+pt=2/2
+ability=Bloodthirst 1;\
+        {2}{R}: Target creature can't block SN this turn.;\
+        {2}{G}: Target creature blocks SN this turn if able.
+timing=main
+oracle=Bloodthirst 1. {2}{R}: Target creature can't block Burning-Tree Bloodscale this turn. {2}{G}: Target creature blocks Burning-Tree Bloodscale this turn if able.

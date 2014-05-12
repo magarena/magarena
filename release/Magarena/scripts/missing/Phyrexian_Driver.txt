@@ -1,0 +1,11 @@
+name=Phyrexian Driver
+url=http://magiccards.info/query?q=%21Phyrexian+Driver
+image=http://mtgimage.com/card/phyrexian%20driver.jpg
+rarity=C
+type=Creature
+subtype=Zombie,Mercenary
+cost={2}{B}
+pt=1/1
+ability=When SN enters the battlefield, other Mercenary creatures get +1/+1 until end of turn.
+timing=main
+oracle=When Phyrexian Driver enters the battlefield, other Mercenary creatures get +1/+1 until end of turn.

@@ -1,0 +1,11 @@
+name=Barbarian Outcast
+url=http://magiccards.info/query?q=%21Barbarian+Outcast
+image=http://mtgimage.com/card/barbarian%20outcast.jpg
+rarity=C
+type=Creature
+subtype=Human,Barbarian,Beast
+cost={1}{R}
+pt=2/2
+ability=When you control no Swamps, sacrifice SN.
+timing=main
+oracle=When you control no Swamps, sacrifice Barbarian Outcast.

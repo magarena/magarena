@@ -1,0 +1,11 @@
+name=Pulsemage Advocate
+url=http://magiccards.info/query?q=%21Pulsemage+Advocate
+image=http://mtgimage.com/card/pulsemage%20advocate.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=1/3
+ability={T}: Return three target cards from an opponent's graveyard to his or her hand. Return target creature card from your graveyard to the battlefield.
+timing=main
+oracle={T}: Return three target cards from an opponent's graveyard to his or her hand. Return target creature card from your graveyard to the battlefield.

@@ -1,0 +1,10 @@
+name=Muse Vessel
+url=http://magiccards.info/query?q=%21Muse+Vessel
+image=http://mtgimage.com/card/muse%20vessel.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={3}, {T}: Target player exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery.;\
+        {1}: Choose a card exiled with SN. You may play that card this turn.
+timing=main
+oracle={3}, {T}: Target player exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery. {1}: Choose a card exiled with Muse Vessel. You may play that card this turn.

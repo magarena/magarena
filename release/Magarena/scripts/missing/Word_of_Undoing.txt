@@ -1,0 +1,9 @@
+name=Word of Undoing
+url=http://magiccards.info/query?q=%21Word+of+Undoing
+image=http://mtgimage.com/card/word%20of%20undoing.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Return target creature and all white Auras you own attached to it to their owners' hands.
+timing=removal
+oracle=Return target creature and all white Auras you own attached to it to their owners' hands.

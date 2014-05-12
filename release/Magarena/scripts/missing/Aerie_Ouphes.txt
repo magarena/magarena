@@ -1,0 +1,12 @@
+name=Aerie Ouphes
+url=http://magiccards.info/query?q=%21Aerie+Ouphes
+image=http://mtgimage.com/card/aerie%20ouphes.jpg
+rarity=C
+type=Creature
+subtype=Ouphe
+cost={4}{G}
+pt=3/3
+ability=Sacrifice SN: SN deals damage equal to its power to target creature with flying.;\
+        Persist
+timing=main
+oracle=Sacrifice Aerie Ouphes: Aerie Ouphes deals damage equal to its power to target creature with flying. Persist

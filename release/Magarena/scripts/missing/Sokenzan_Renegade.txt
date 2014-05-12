@@ -1,0 +1,12 @@
+name=Sokenzan Renegade
+url=http://magiccards.info/query?q=%21Sokenzan+Renegade
+image=http://mtgimage.com/card/sokenzan%20renegade.jpg
+rarity=U
+type=Creature
+subtype=Ogre,Samurai,Mercenary
+cost={2}{R}
+pt=3/3
+ability=Bushido 1;\
+        At the beginning of your upkeep, if a player has more cards in hand than each other player, the player who has the most cards in hand gains control of SN.
+timing=main
+oracle=Bushido 1. At the beginning of your upkeep, if a player has more cards in hand than each other player, the player who has the most cards in hand gains control of Sokenzan Renegade.

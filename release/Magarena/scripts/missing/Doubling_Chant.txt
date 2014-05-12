@@ -1,0 +1,9 @@
+name=Doubling Chant
+url=http://magiccards.info/query?q=%21Doubling+Chant
+image=http://mtgimage.com/card/doubling%20chant.jpg
+rarity=R
+type=Sorcery
+cost={5}{G}
+effect=For each creature you control, you may search your library for a creature card with the same name as that creature. Put those cards onto the battlefield, then shuffle your library.
+timing=main
+oracle=For each creature you control, you may search your library for a creature card with the same name as that creature. Put those cards onto the battlefield, then shuffle your library.

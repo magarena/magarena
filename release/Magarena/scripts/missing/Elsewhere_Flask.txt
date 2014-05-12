@@ -1,0 +1,10 @@
+name=Elsewhere Flask
+url=http://magiccards.info/query?q=%21Elsewhere+Flask
+image=http://mtgimage.com/card/elsewhere%20flask.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability=When SN enters the battlefield, draw a card.;\
+        Sacrifice SN: Choose a basic land type. Each land you control becomes that type until end of turn.
+timing=main
+oracle=When Elsewhere Flask enters the battlefield, draw a card. Sacrifice Elsewhere Flask: Choose a basic land type. Each land you control becomes that type until end of turn.

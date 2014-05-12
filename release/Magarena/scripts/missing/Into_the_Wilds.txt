@@ -1,0 +1,9 @@
+name=Into the Wilds
+url=http://magiccards.info/query?q=%21Into+the+Wilds
+image=http://mtgimage.com/card/into%20the%20wilds.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=At the beginning of your upkeep, look at the top card of your library. If it's a land card, you may put it onto the battlefield.
+timing=main
+oracle=At the beginning of your upkeep, look at the top card of your library. If it's a land card, you may put it onto the battlefield.

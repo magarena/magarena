@@ -1,0 +1,9 @@
+name=Heartbeat of Spring
+url=http://magiccards.info/query?q=%21Heartbeat+of+Spring
+image=http://mtgimage.com/card/heartbeat%20of%20spring.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+timing=main
+oracle=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.

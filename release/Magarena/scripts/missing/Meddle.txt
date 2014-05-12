@@ -1,0 +1,9 @@
+name=Meddle
+url=http://magiccards.info/query?q=%21Meddle
+image=http://mtgimage.com/card/meddle.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=If target spell has only one target and that target is a creature, change that spell's target to another creature.
+timing=removal
+oracle=If target spell has only one target and that target is a creature, change that spell's target to another creature.

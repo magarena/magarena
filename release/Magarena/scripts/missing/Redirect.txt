@@ -1,0 +1,9 @@
+name=Redirect
+url=http://magiccards.info/query?q=%21Redirect
+image=http://mtgimage.com/card/redirect.jpg
+rarity=R
+type=Instant
+cost={U}{U}
+effect=You may choose new targets for target spell.
+timing=removal
+oracle=You may choose new targets for target spell.

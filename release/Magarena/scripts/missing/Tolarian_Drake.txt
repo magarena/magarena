@@ -1,0 +1,12 @@
+name=Tolarian Drake
+url=http://magiccards.info/query?q=%21Tolarian+Drake
+image=http://mtgimage.com/card/tolarian%20drake.jpg
+rarity=C
+type=Creature
+subtype=Drake
+cost={2}{U}
+pt=2/4
+ability=Flying;\
+        Phasing
+timing=main
+oracle=Flying. Phasing

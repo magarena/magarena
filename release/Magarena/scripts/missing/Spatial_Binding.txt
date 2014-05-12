@@ -1,0 +1,9 @@
+name=Spatial Binding
+url=http://magiccards.info/query?q=%21Spatial+Binding
+image=http://mtgimage.com/card/spatial%20binding.jpg
+rarity=U
+type=Enchantment
+cost={U}{B}
+ability=Pay 1 life: Until your next upkeep, target permanent can't phase out.
+timing=main
+oracle=Pay 1 life: Until your next upkeep, target permanent can't phase out.

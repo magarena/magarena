@@ -1,0 +1,13 @@
+name=Fiend of the Shadows
+url=http://magiccards.info/query?q=%21Fiend+of+the+Shadows
+image=http://mtgimage.com/card/fiend%20of%20the%20shadows.jpg
+rarity=R
+type=Creature
+subtype=Vampire,Wizard
+cost={3}{B}{B}
+pt=3/3
+ability=Flying;\
+        Whenever SN deals combat damage to a player, that player exiles a card from his or her hand. You may play that card for as long as it remains exiled.;\
+        Sacrifice a Human: Regenerate SN.
+timing=main
+oracle=Flying. Whenever Fiend of the Shadows deals combat damage to a player, that player exiles a card from his or her hand. You may play that card for as long as it remains exiled. Sacrifice a Human: Regenerate Fiend of the Shadows.

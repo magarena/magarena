@@ -1,0 +1,12 @@
+name=Lavamancer's Skill
+url=http://magiccards.info/query?q=%21Lavamancer%27s+Skill
+image=http://mtgimage.com/card/lavamancer%27s%20skill.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Enchant creature;\
+        Enchanted creature has "{T}: This creature deals 1 damage to target creature.";\
+        As long as enchanted creature is a Wizard, it has "{T}: This creature deals 2 damage to target creature."
+timing=main
+oracle=Enchant creature. Enchanted creature has "{T}: This creature deals 1 damage to target creature.". As long as enchanted creature is a Wizard, it has "{T}: This creature deals 2 damage to target creature."

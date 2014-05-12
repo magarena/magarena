@@ -1,0 +1,11 @@
+name=Basal Sliver
+url=http://magiccards.info/query?q=%21Basal+Sliver
+image=http://mtgimage.com/card/basal%20sliver.jpg
+rarity=C
+type=Creature
+subtype=Sliver
+cost={2}{B}
+pt=2/2
+ability=All Slivers have "Sacrifice this permanent: Add {B}{B} to your mana pool."
+timing=main
+oracle=All Slivers have "Sacrifice this permanent: Add {B}{B} to your mana pool."

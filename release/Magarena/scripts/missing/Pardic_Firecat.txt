@@ -1,0 +1,12 @@
+name=Pardic Firecat
+url=http://magiccards.info/query?q=%21Pardic+Firecat
+image=http://mtgimage.com/card/pardic%20firecat.jpg
+rarity=C
+type=Creature
+subtype=Elemental,Cat
+cost={3}{R}
+pt=2/3
+ability=Haste;\
+        If SN is in a graveyard, effects from spells named Flame Burst count it as a card named Flame Burst.
+timing=main
+oracle=Haste. If Pardic Firecat is in a graveyard, effects from spells named Flame Burst count it as a card named Flame Burst.

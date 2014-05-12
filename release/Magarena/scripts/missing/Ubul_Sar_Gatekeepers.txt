@@ -1,0 +1,11 @@
+name=Ubul Sar Gatekeepers
+url=http://magiccards.info/query?q=%21Ubul+Sar+Gatekeepers
+image=http://mtgimage.com/card/ubul%20sar%20gatekeepers.jpg
+rarity=C
+type=Creature
+subtype=Zombie,Soldier
+cost={3}{B}
+pt=2/4
+ability=When SN enters the battlefield, if you control two or more Gates, target creature an opponent controls gets -2/-2 until end of turn.
+timing=main
+oracle=When Ubul Sar Gatekeepers enters the battlefield, if you control two or more Gates, target creature an opponent controls gets -2/-2 until end of turn.

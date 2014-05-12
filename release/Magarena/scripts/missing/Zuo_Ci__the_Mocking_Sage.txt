@@ -1,0 +1,12 @@
+name=Zuo Ci, the Mocking Sage
+url=http://magiccards.info/query?q=%21Zuo+Ci%2C+the+Mocking+Sage
+image=http://mtgimage.com/card/zuo%20ci%2C%20the%20mocking%20sage.jpg
+rarity=R
+type=Creature
+subtype=Human,Advisor
+cost={1}{G}{G}
+pt=1/2
+ability=Hexproof;\
+        SN can't be blocked by creatures with horsemanship.
+timing=main
+oracle=Hexproof. Zuo Ci, the Mocking Sage can't be blocked by creatures with horsemanship.

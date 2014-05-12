@@ -1,0 +1,11 @@
+name=Raging Spirit
+url=http://magiccards.info/query?q=%21Raging+Spirit
+image=http://mtgimage.com/card/raging%20spirit.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{R}
+pt=3/3
+ability={2}: SN becomes colorless until end of turn.
+timing=main
+oracle={2}: Raging Spirit becomes colorless until end of turn.

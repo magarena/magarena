@@ -1,0 +1,11 @@
+name=Pygmy Kavu
+url=http://magiccards.info/query?q=%21Pygmy+Kavu
+image=http://mtgimage.com/card/pygmy%20kavu.jpg
+rarity=C
+type=Creature
+subtype=Kavu
+cost={3}{G}
+pt=1/2
+ability=When SN enters the battlefield, draw a card for each black creature your opponents control.
+timing=main
+oracle=When Pygmy Kavu enters the battlefield, draw a card for each black creature your opponents control.

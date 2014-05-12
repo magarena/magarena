@@ -1,0 +1,9 @@
+name=Leeching Bite
+url=http://magiccards.info/query?q=%21Leeching+Bite
+image=http://mtgimage.com/card/leeching%20bite.jpg
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature gets +1/+1 until end of turn. Another target creature gets -1/-1 until end of turn.
+timing=removal
+oracle=Target creature gets +1/+1 until end of turn. Another target creature gets -1/-1 until end of turn.

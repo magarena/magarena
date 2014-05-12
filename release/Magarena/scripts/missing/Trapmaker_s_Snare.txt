@@ -1,0 +1,9 @@
+name=Trapmaker's Snare
+url=http://magiccards.info/query?q=%21Trapmaker%27s+Snare
+image=http://mtgimage.com/card/trapmaker%27s%20snare.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Search your library for a Trap card, reveal it, and put it into your hand. Then shuffle your library.
+timing=removal
+oracle=Search your library for a Trap card, reveal it, and put it into your hand. Then shuffle your library.

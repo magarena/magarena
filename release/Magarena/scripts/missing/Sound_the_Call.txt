@@ -1,0 +1,9 @@
+name=Sound the Call
+url=http://magiccards.info/query?q=%21Sound+the+Call
+image=http://mtgimage.com/card/sound%20the%20call.jpg
+rarity=C
+type=Sorcery
+cost={2}{G}
+effect=Put a 1/1 green Wolf creature token onto the battlefield. It has "This creature gets +1/+1 for each card named SN in each graveyard."
+timing=main
+oracle=Put a 1/1 green Wolf creature token onto the battlefield. It has "This creature gets +1/+1 for each card named Sound the Call in each graveyard."

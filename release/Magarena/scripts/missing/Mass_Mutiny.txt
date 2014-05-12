@@ -1,0 +1,9 @@
+name=Mass Mutiny
+url=http://magiccards.info/query?q=%21Mass+Mutiny
+image=http://mtgimage.com/card/mass%20mutiny.jpg
+rarity=R
+type=Sorcery
+cost={3}{R}{R}
+effect=For each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn.
+timing=main
+oracle=For each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn.

@@ -1,0 +1,9 @@
+name=Mirrorweave
+url=http://magiccards.info/query?q=%21Mirrorweave
+image=http://mtgimage.com/card/mirrorweave.jpg
+rarity=R
+type=Instant
+cost={2}{W/U}{W/U}
+effect=Each other creature becomes a copy of target nonlegendary creature until end of turn.
+timing=removal
+oracle=Each other creature becomes a copy of target nonlegendary creature until end of turn.

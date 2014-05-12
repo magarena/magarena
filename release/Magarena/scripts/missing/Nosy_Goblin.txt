@@ -1,0 +1,11 @@
+name=Nosy Goblin
+url=http://magiccards.info/query?q=%21Nosy+Goblin
+image=http://mtgimage.com/card/nosy%20goblin.jpg
+rarity=C
+type=Creature
+subtype=Goblin
+cost={2}{R}
+pt=2/1
+ability={T}, Sacrifice SN: Destroy target face-down creature.
+timing=main
+oracle={T}, Sacrifice Nosy Goblin: Destroy target face-down creature.

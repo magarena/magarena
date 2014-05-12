@@ -1,0 +1,10 @@
+name=Quest for the Nihil Stone
+url=http://magiccards.info/query?q=%21Quest+for+the+Nihil+Stone
+image=http://mtgimage.com/card/quest%20for%20the%20nihil%20stone.jpg
+rarity=R
+type=Enchantment
+cost={B}
+ability=Whenever an opponent discards a card, you may put a quest counter on SN.;\
+        At the beginning of each opponent's upkeep, if that player has no cards in hand and SN has two or more quest counters on it, you may have that player lose 5 life.
+timing=main
+oracle=Whenever an opponent discards a card, you may put a quest counter on Quest for the Nihil Stone. At the beginning of each opponent's upkeep, if that player has no cards in hand and Quest for the Nihil Stone has two or more quest counters on it, you may have that player lose 5 life.

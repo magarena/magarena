@@ -1,0 +1,11 @@
+name=Disruption Aura
+url=http://magiccards.info/query?q=%21Disruption+Aura
+image=http://mtgimage.com/card/disruption%20aura.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant artifact;\
+        Enchanted artifact has "At the beginning of your upkeep, sacrifice this artifact unless you pay its mana cost."
+timing=main
+oracle=Enchant artifact. Enchanted artifact has "At the beginning of your upkeep, sacrifice this artifact unless you pay its mana cost."

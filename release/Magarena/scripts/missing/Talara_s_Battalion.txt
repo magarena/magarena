@@ -1,0 +1,12 @@
+name=Talara's Battalion
+url=http://magiccards.info/query?q=%21Talara%27s+Battalion
+image=http://mtgimage.com/card/talara%27s%20battalion.jpg
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={1}{G}
+pt=4/3
+ability=Trample;\
+        Cast SN only if you've cast another green spell this turn.
+timing=main
+oracle=Trample. Cast Talara's Battalion only if you've cast another green spell this turn.

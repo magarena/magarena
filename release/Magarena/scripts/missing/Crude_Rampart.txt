@@ -1,0 +1,12 @@
+name=Crude Rampart
+url=http://magiccards.info/query?q=%21Crude+Rampart
+image=http://mtgimage.com/card/crude%20rampart.jpg
+rarity=U
+type=Creature
+subtype=Wall
+cost={3}{W}
+pt=4/5
+ability=Defender;\
+        Morph {4}{W}
+timing=main
+oracle=Defender. Morph {4}{W}

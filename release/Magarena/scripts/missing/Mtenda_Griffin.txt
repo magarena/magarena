@@ -1,0 +1,12 @@
+name=Mtenda Griffin
+url=http://magiccards.info/query?q=%21Mtenda+Griffin
+image=http://mtgimage.com/card/mtenda%20griffin.jpg
+rarity=U
+type=Creature
+subtype=Griffin
+cost={3}{W}
+pt=2/2
+ability=Flying;\
+        {W}, {T}: Return SN to its owner's hand and return target Griffin card from your graveyard to your hand. Activate this ability only during your upkeep.
+timing=main
+oracle=Flying. {W}, {T}: Return Mtenda Griffin to its owner's hand and return target Griffin card from your graveyard to your hand. Activate this ability only during your upkeep.

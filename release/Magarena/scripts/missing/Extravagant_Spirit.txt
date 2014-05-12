@@ -1,0 +1,12 @@
+name=Extravagant Spirit
+url=http://magiccards.info/query?q=%21Extravagant+Spirit
+image=http://mtgimage.com/card/extravagant%20spirit.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={3}{U}
+pt=4/4
+ability=Flying;\
+        At the beginning of your upkeep, sacrifice SN unless you pay {1} for each card in your hand.
+timing=main
+oracle=Flying. At the beginning of your upkeep, sacrifice Extravagant Spirit unless you pay {1} for each card in your hand.

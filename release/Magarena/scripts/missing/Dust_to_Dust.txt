@@ -1,0 +1,9 @@
+name=Dust to Dust
+url=http://magiccards.info/query?q=%21Dust+to+Dust
+image=http://mtgimage.com/card/dust%20to%20dust.jpg
+rarity=C
+type=Sorcery
+cost={1}{W}{W}
+effect=Exile two target artifacts.
+timing=main
+oracle=Exile two target artifacts.

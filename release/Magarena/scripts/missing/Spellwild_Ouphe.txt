@@ -1,0 +1,11 @@
+name=Spellwild Ouphe
+url=http://magiccards.info/query?q=%21Spellwild+Ouphe
+image=http://mtgimage.com/card/spellwild%20ouphe.jpg
+rarity=U
+type=Creature
+subtype=Ouphe
+cost={1}{G}
+pt=1/3
+ability=Spells that target SN cost {2} less to cast.
+timing=main
+oracle=Spells that target Spellwild Ouphe cost {2} less to cast.

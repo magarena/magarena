@@ -1,0 +1,11 @@
+name=Phyrexian Totem
+url=http://magiccards.info/query?q=%21Phyrexian+Totem
+image=http://mtgimage.com/card/phyrexian%20totem.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability={T}: Add {B} to your mana pool.;\
+        {2}{B}: SN becomes a 5/5 black Horror artifact creature with trample until end of turn.;\
+        Whenever SN is dealt damage, if it's a creature, sacrifice that many permanents.
+timing=main
+oracle={T}: Add {B} to your mana pool. {2}{B}: Phyrexian Totem becomes a 5/5 black Horror artifact creature with trample until end of turn. Whenever Phyrexian Totem is dealt damage, if it's a creature, sacrifice that many permanents.

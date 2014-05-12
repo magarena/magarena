@@ -1,0 +1,11 @@
+name=Lethargy Trap
+url=http://magiccards.info/query?q=%21Lethargy+Trap
+image=http://mtgimage.com/card/lethargy%20trap.jpg
+rarity=C
+type=Instant
+subtype=Trap
+cost={3}{U}
+effect=If three or more creatures are attacking, you may pay {U} rather than pay SN's mana cost.;\
+        Attacking creatures get -3/-0 until end of turn.
+timing=removal
+oracle=If three or more creatures are attacking, you may pay {U} rather than pay Lethargy Trap's mana cost. Attacking creatures get -3/-0 until end of turn.

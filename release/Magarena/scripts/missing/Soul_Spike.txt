@@ -1,0 +1,10 @@
+name=Soul Spike
+url=http://magiccards.info/query?q=%21Soul+Spike
+image=http://mtgimage.com/card/soul%20spike.jpg
+rarity=R
+type=Instant
+cost={5}{B}{B}
+effect=You may exile two black cards from your hand rather than pay SN's mana cost.;\
+        SN deals 4 damage to target creature or player and you gain 4 life.
+timing=removal
+oracle=You may exile two black cards from your hand rather than pay Soul Spike's mana cost. Soul Spike deals 4 damage to target creature or player and you gain 4 life.

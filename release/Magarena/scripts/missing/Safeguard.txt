@@ -1,0 +1,9 @@
+name=Safeguard
+url=http://magiccards.info/query?q=%21Safeguard
+image=http://mtgimage.com/card/safeguard.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}{W}
+ability={2}{W}: Prevent all combat damage that would be dealt by target creature this turn.
+timing=main
+oracle={2}{W}: Prevent all combat damage that would be dealt by target creature this turn.

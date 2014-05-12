@@ -1,0 +1,9 @@
+name=Suppress
+url=http://magiccards.info/query?q=%21Suppress
+image=http://mtgimage.com/card/suppress.jpg
+rarity=U
+type=Sorcery
+cost={2}{B}
+effect=Target player exiles all cards from his or her hand face down. At the beginning of the end step of that player's next turn, that player returns those cards to his or her hand.
+timing=main
+oracle=Target player exiles all cards from his or her hand face down. At the beginning of the end step of that player's next turn, that player returns those cards to his or her hand.

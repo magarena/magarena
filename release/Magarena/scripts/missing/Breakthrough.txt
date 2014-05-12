@@ -1,0 +1,9 @@
+name=Breakthrough
+url=http://magiccards.info/query?q=%21Breakthrough
+image=http://mtgimage.com/card/breakthrough.jpg
+rarity=U
+type=Sorcery
+cost={X}{U}
+effect=Draw four cards, then choose X cards in your hand and discard the rest.
+timing=main
+oracle=Draw four cards, then choose X cards in your hand and discard the rest.

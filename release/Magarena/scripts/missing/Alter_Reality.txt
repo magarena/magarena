@@ -1,0 +1,10 @@
+name=Alter Reality
+url=http://magiccards.info/query?q=%21Alter+Reality
+image=http://mtgimage.com/card/alter%20reality.jpg
+rarity=R
+type=Instant
+cost={1}{U}
+effect=Change the text of target spell or permanent by replacing all instances of one color word with another.;\
+        Flashback {1}{U}
+timing=removal
+oracle=Change the text of target spell or permanent by replacing all instances of one color word with another.. Flashback {1}{U}

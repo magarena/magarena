@@ -1,0 +1,11 @@
+name=Orcish Settlers
+url=http://magiccards.info/query?q=%21Orcish+Settlers
+image=http://mtgimage.com/card/orcish%20settlers.jpg
+rarity=U
+type=Creature
+subtype=Orc
+cost={1}{R}
+pt=1/1
+ability={X}{X}{R}, {T}, Sacrifice SN: Destroy X target lands.
+timing=main
+oracle={X}{X}{R}, {T}, Sacrifice Orcish Settlers: Destroy X target lands.

@@ -1,0 +1,9 @@
+name=Crucible of Worlds
+url=http://magiccards.info/query?q=%21Crucible+of+Worlds
+image=http://mtgimage.com/card/crucible%20of%20worlds.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=You may play land cards from your graveyard.
+timing=main
+oracle=You may play land cards from your graveyard.

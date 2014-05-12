@@ -1,0 +1,11 @@
+name=Rootwater Mystic
+url=http://magiccards.info/query?q=%21Rootwater+Mystic
+image=http://mtgimage.com/card/rootwater%20mystic.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}
+pt=1/1
+ability={1}{U}: Look at the top card of target player's library.
+timing=main
+oracle={1}{U}: Look at the top card of target player's library.

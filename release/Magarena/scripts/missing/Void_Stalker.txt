@@ -1,0 +1,11 @@
+name=Void Stalker
+url=http://magiccards.info/query?q=%21Void+Stalker
+image=http://mtgimage.com/card/void%20stalker.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={1}{U}
+pt=2/1
+ability={2}{U}, {T}: Put SN and target creature on top of their owners' libraries, then those players shuffle their libraries.
+timing=main
+oracle={2}{U}, {T}: Put Void Stalker and target creature on top of their owners' libraries, then those players shuffle their libraries.

@@ -1,0 +1,11 @@
+name=Kor Hookmaster
+url=http://magiccards.info/query?q=%21Kor+Hookmaster
+image=http://mtgimage.com/card/kor%20hookmaster.jpg
+rarity=C
+type=Creature
+subtype=Kor,Soldier
+cost={2}{W}
+pt=2/2
+ability=When SN enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.
+timing=main
+oracle=When Kor Hookmaster enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.

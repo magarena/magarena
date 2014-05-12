@@ -1,0 +1,10 @@
+name=Epicenter
+url=http://magiccards.info/query?q=%21Epicenter
+image=http://mtgimage.com/card/epicenter.jpg
+rarity=R
+type=Sorcery
+cost={4}{R}
+effect=Target player sacrifices a land.;\
+        Threshold — Each player sacrifices all lands he or she controls instead if seven or more cards are in your graveyard.
+timing=main
+oracle=Target player sacrifices a land. Threshold — Each player sacrifices all lands he or she controls instead if seven or more cards are in your graveyard.

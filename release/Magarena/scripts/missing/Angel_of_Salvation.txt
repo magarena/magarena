@@ -1,0 +1,13 @@
+name=Angel of Salvation
+url=http://magiccards.info/query?q=%21Angel+of+Salvation
+image=http://mtgimage.com/card/angel%20of%20salvation.jpg
+rarity=R
+type=Creature
+subtype=Angel
+cost={6}{W}{W}
+pt=5/5
+ability=Flash; convoke;\
+        Flying;\
+        When SN enters the battlefield, prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.
+timing=main
+oracle=Flash; convoke. Flying. When Angel of Salvation enters the battlefield, prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.

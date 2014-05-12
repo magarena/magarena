@@ -1,0 +1,12 @@
+name=Thrummingbird
+url=http://magiccards.info/query?q=%21Thrummingbird
+image=http://mtgimage.com/card/thrummingbird.jpg
+rarity=U
+type=Creature
+subtype=Bird,Horror
+cost={1}{U}
+pt=1/1
+ability=Flying;\
+        Whenever SN deals combat damage to a player, proliferate.
+timing=main
+oracle=Flying. Whenever Thrummingbird deals combat damage to a player, proliferate.

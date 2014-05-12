@@ -1,0 +1,9 @@
+name=Punishment
+url=http://magiccards.info/query?q=%21Punishment
+image=http://mtgimage.com/card/crimepunishment.jpg
+rarity=R
+type=Sorcery
+cost={X}{B}{G}
+effect=Destroy each artifact, creature, and enchantment with converted mana cost X.
+timing=main
+oracle=Destroy each artifact, creature, and enchantment with converted mana cost X.

@@ -1,0 +1,13 @@
+name=Dewdrop Spy
+url=http://magiccards.info/query?q=%21Dewdrop+Spy
+image=http://mtgimage.com/card/dewdrop%20spy.jpg
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={1}{U}{U}
+pt=2/2
+ability=Flash;\
+        Flying;\
+        When SN enters the battlefield, look at the top card of target player's library.
+timing=main
+oracle=Flash. Flying. When Dewdrop Spy enters the battlefield, look at the top card of target player's library.

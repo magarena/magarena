@@ -1,0 +1,10 @@
+name=Unearthly Blizzard
+url=http://magiccards.info/query?q=%21Unearthly+Blizzard
+image=http://mtgimage.com/card/unearthly%20blizzard.jpg
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={2}{R}
+effect=Up to three target creatures can't block this turn.
+timing=main
+oracle=Up to three target creatures can't block this turn.

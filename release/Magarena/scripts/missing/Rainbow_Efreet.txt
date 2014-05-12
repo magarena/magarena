@@ -1,0 +1,12 @@
+name=Rainbow Efreet
+url=http://magiccards.info/query?q=%21Rainbow+Efreet
+image=http://mtgimage.com/card/rainbow%20efreet.jpg
+rarity=R
+type=Creature
+subtype=Efreet
+cost={3}{U}
+pt=3/1
+ability=Flying;\
+        {U}{U}: SN phases out.
+timing=main
+oracle=Flying. {U}{U}: Rainbow Efreet phases out.

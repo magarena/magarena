@@ -1,0 +1,12 @@
+name=Puppet Conjurer
+url=http://magiccards.info/query?q=%21Puppet+Conjurer
+image=http://mtgimage.com/card/puppet%20conjurer.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Human,Wizard
+cost={1}{B}
+pt=1/2
+ability={U}, {T}: Put a 0/1 blue Homunculus artifact creature token onto the battlefield.;\
+        At the beginning of your upkeep, sacrifice a Homunculus.
+timing=main
+oracle={U}, {T}: Put a 0/1 blue Homunculus artifact creature token onto the battlefield. At the beginning of your upkeep, sacrifice a Homunculus.

@@ -1,0 +1,10 @@
+name=Surge Node
+url=http://magiccards.info/query?q=%21Surge+Node
+image=http://mtgimage.com/card/surge%20node.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability=SN enters the battlefield with six charge counters on it.;\
+        {1}, {T}, Remove a charge counter from SN: Put a charge counter on target artifact.
+timing=main
+oracle=Surge Node enters the battlefield with six charge counters on it. {1}, {T}, Remove a charge counter from Surge Node: Put a charge counter on target artifact.

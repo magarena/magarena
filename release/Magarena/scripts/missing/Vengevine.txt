@@ -1,0 +1,12 @@
+name=Vengevine
+url=http://magiccards.info/query?q=%21Vengevine
+image=http://mtgimage.com/card/vengevine.jpg
+rarity=M
+type=Creature
+subtype=Elemental
+cost={2}{G}{G}
+pt=4/3
+ability=Haste;\
+        Whenever you cast a spell, if it's the second creature spell you cast this turn, you may return SN from your graveyard to the battlefield.
+timing=main
+oracle=Haste. Whenever you cast a spell, if it's the second creature spell you cast this turn, you may return Vengevine from your graveyard to the battlefield.

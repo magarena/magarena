@@ -1,0 +1,12 @@
+name=Gravegouger
+url=http://magiccards.info/query?q=%21Gravegouger
+image=http://mtgimage.com/card/gravegouger.jpg
+rarity=C
+type=Creature
+subtype=Nightmare,Horror
+cost={2}{B}
+pt=2/2
+ability=When SN enters the battlefield, exile up to two target cards from a single graveyard.;\
+        When SN leaves the battlefield, return the exiled cards to their owner's graveyard.
+timing=main
+oracle=When Gravegouger enters the battlefield, exile up to two target cards from a single graveyard. When Gravegouger leaves the battlefield, return the exiled cards to their owner's graveyard.

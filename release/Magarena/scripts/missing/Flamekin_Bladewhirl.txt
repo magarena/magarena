@@ -1,0 +1,11 @@
+name=Flamekin Bladewhirl
+url=http://magiccards.info/query?q=%21Flamekin+Bladewhirl
+image=http://mtgimage.com/card/flamekin%20bladewhirl.jpg
+rarity=U
+type=Creature
+subtype=Elemental,Warrior
+cost={R}
+pt=2/1
+ability=As an additional cost to cast SN, reveal an Elemental card from your hand or pay {3}.
+timing=main
+oracle=As an additional cost to cast Flamekin Bladewhirl, reveal an Elemental card from your hand or pay {3}.

@@ -1,0 +1,9 @@
+name=Mana Flare
+url=http://magiccards.info/query?q=%21Mana+Flare
+image=http://mtgimage.com/card/mana%20flare.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+timing=main
+oracle=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.

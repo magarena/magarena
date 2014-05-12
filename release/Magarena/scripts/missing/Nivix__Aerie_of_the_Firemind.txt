@@ -1,0 +1,9 @@
+name=Nivix, Aerie of the Firemind
+url=http://magiccards.info/query?q=%21Nivix%2C+Aerie+of+the+Firemind
+image=http://mtgimage.com/card/nivix%2C%20aerie%20of%20the%20firemind.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {2}{U}{R}, {T}: Exile the top card of your library. Until your next turn, you may cast that card if it's an instant or sorcery.
+timing=main
+oracle={T}: Add {1} to your mana pool. {2}{U}{R}, {T}: Exile the top card of your library. Until your next turn, you may cast that card if it's an instant or sorcery.

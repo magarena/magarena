@@ -1,0 +1,11 @@
+name=Mistmeadow Skulk
+url=http://magiccards.info/query?q=%21Mistmeadow+Skulk
+image=http://mtgimage.com/card/mistmeadow%20skulk.jpg
+rarity=U
+type=Creature
+subtype=Kithkin,Rogue
+cost={1}{W}
+pt=1/1
+ability=Lifelink, protection from converted mana cost 3 or greater
+timing=main
+oracle=Lifelink, protection from converted mana cost 3 or greater

@@ -1,0 +1,9 @@
+name=Hold the Gates
+url=http://magiccards.info/query?q=%21Hold+the+Gates
+image=http://mtgimage.com/card/hold%20the%20gates.jpg
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=Creatures you control get +0/+1 for each Gate you control and have vigilance.
+timing=main
+oracle=Creatures you control get +0/+1 for each Gate you control and have vigilance.

@@ -1,0 +1,9 @@
+name=Repay in Kind
+url=http://magiccards.info/query?q=%21Repay+in+Kind
+image=http://mtgimage.com/card/repay%20in%20kind.jpg
+rarity=R
+type=Sorcery
+cost={5}{B}{B}
+effect=Each player's life total becomes the lowest life total among all players.
+timing=main
+oracle=Each player's life total becomes the lowest life total among all players.

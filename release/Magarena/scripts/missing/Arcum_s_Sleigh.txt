@@ -1,0 +1,9 @@
+name=Arcum's Sleigh
+url=http://magiccards.info/query?q=%21Arcum%27s+Sleigh
+image=http://mtgimage.com/card/arcum%27s%20sleigh.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={2}, {T}: Target creature gains vigilance until end of turn. Activate this ability only during combat and only if defending player controls a snow land.
+timing=main
+oracle={2}, {T}: Target creature gains vigilance until end of turn. Activate this ability only during combat and only if defending player controls a snow land.

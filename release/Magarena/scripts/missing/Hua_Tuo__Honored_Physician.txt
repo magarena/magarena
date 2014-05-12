@@ -1,0 +1,11 @@
+name=Hua Tuo, Honored Physician
+url=http://magiccards.info/query?q=%21Hua+Tuo%2C+Honored+Physician
+image=http://mtgimage.com/card/hua%20tuo%2C%20honored%20physician.jpg
+rarity=R
+type=Creature
+subtype=Human
+cost={1}{G}{G}
+pt=1/2
+ability={T}: Put target creature card from your graveyard on top of your library. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Put target creature card from your graveyard on top of your library. Activate this ability only during your turn, before attackers are declared.

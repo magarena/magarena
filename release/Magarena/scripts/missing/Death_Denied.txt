@@ -1,0 +1,10 @@
+name=Death Denied
+url=http://magiccards.info/query?q=%21Death+Denied
+image=http://mtgimage.com/card/death%20denied.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={X}{B}{B}
+effect=Return X target creature cards from your graveyard to your hand.
+timing=removal
+oracle=Return X target creature cards from your graveyard to your hand.

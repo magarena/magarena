@@ -1,0 +1,9 @@
+name=Dromar's Charm
+url=http://magiccards.info/query?q=%21Dromar%27s+Charm
+image=http://mtgimage.com/card/dromar%27s%20charm.jpg
+rarity=U
+type=Instant
+cost={W}{U}{B}
+effect=Choose one — You gain 5 life; or counter target spell; or target creature gets -2/-2 until end of turn.
+timing=removal
+oracle=Choose one — You gain 5 life; or counter target spell; or target creature gets -2/-2 until end of turn.

@@ -1,0 +1,11 @@
+name=Timber Wolves
+url=http://magiccards.info/query?q=%21Timber+Wolves
+image=http://mtgimage.com/card/timber%20wolves.jpg
+rarity=R
+type=Creature
+subtype=Wolf
+cost={G}
+pt=1/1
+ability=Banding
+timing=main
+oracle=Banding

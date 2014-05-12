@@ -1,0 +1,11 @@
+name=Corpse Traders
+url=http://magiccards.info/query?q=%21Corpse+Traders
+image=http://mtgimage.com/card/corpse%20traders.jpg
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={3}{B}
+pt=3/3
+ability={2}{B}, Sacrifice a creature: Target opponent reveals his or her hand. You choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={2}{B}, Sacrifice a creature: Target opponent reveals his or her hand. You choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.

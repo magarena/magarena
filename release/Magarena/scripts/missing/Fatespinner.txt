@@ -1,0 +1,11 @@
+name=Fatespinner
+url=http://magiccards.info/query?q=%21Fatespinner
+image=http://mtgimage.com/card/fatespinner.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{U}
+pt=1/2
+ability=At the beginning of each opponent's upkeep, that player chooses draw step, main phase, or combat phase. The player skips each instance of the chosen step or phase this turn.
+timing=main
+oracle=At the beginning of each opponent's upkeep, that player chooses draw step, main phase, or combat phase. The player skips each instance of the chosen step or phase this turn.

@@ -1,0 +1,11 @@
+name=Siren's Call
+url=http://magiccards.info/query?q=%21Siren%27s+Call
+image=http://mtgimage.com/card/siren%27s%20call.jpg
+rarity=U
+type=Instant
+cost={U}
+effect=Cast SN only during an opponent's turn, before attackers are declared.;\
+        Creatures the active player controls attack this turn if able.;\
+        At the beginning of the next end step, destroy all non-Wall creatures that player controls that didn't attack this turn. Ignore this effect for each creature the player didn't control continuously since the beginning of the turn.
+timing=removal
+oracle=Cast Siren's Call only during an opponent's turn, before attackers are declared. Creatures the active player controls attack this turn if able. At the beginning of the next end step, destroy all non-Wall creatures that player controls that didn't attack this turn. Ignore this effect for each creature the player didn't control continuously since the beginning of the turn.

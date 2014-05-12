@@ -1,0 +1,12 @@
+name=Arcanum Wings
+url=http://magiccards.info/query?q=%21Arcanum+Wings
+image=http://mtgimage.com/card/arcanum%20wings.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Enchanted creature has flying.;\
+        Aura swap {2}{U}
+timing=main
+oracle=Enchant creature. Enchanted creature has flying. Aura swap {2}{U}

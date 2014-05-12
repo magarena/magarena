@@ -1,0 +1,10 @@
+name=Exile into Darkness
+url=http://magiccards.info/query?q=%21Exile+into+Darkness
+image=http://mtgimage.com/card/exile%20into%20darkness.jpg
+rarity=U
+type=Sorcery
+cost={4}{B}
+effect=Target player sacrifices a creature with converted mana cost 3 or less.;\
+        At the beginning of your upkeep, if you have more cards in hand than each opponent, you may return SN from your graveyard to your hand.
+timing=main
+oracle=Target player sacrifices a creature with converted mana cost 3 or less. At the beginning of your upkeep, if you have more cards in hand than each opponent, you may return Exile into Darkness from your graveyard to your hand.

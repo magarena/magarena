@@ -1,0 +1,12 @@
+name=Djinn of Infinite Deceits
+url=http://magiccards.info/query?q=%21Djinn+of+Infinite+Deceits
+image=http://mtgimage.com/card/djinn%20of%20infinite%20deceits.jpg
+rarity=R
+type=Creature
+subtype=Djinn
+cost={4}{U}{U}
+pt=2/7
+ability=Flying;\
+        {T}: Exchange control of two target nonlegendary creatures. You can't activate this ability during combat.
+timing=main
+oracle=Flying. {T}: Exchange control of two target nonlegendary creatures. You can't activate this ability during combat.

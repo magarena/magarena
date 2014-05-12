@@ -1,0 +1,13 @@
+name=Scryb Ranger
+url=http://magiccards.info/query?q=%21Scryb+Ranger
+image=http://mtgimage.com/card/scryb%20ranger.jpg
+rarity=U
+type=Creature
+subtype=Faerie
+cost={1}{G}
+pt=1/1
+ability=Flash;\
+        Flying, protection from blue;\
+        Return a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.
+timing=main
+oracle=Flash. Flying, protection from blue. Return a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.

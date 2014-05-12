@@ -1,0 +1,9 @@
+name=Magewright's Stone
+url=http://magiccards.info/query?q=%21Magewright%27s+Stone
+image=http://mtgimage.com/card/magewright%27s%20stone.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={1}, {T}: Untap target creature that has an activated ability with {T} in its cost.
+timing=main
+oracle={1}, {T}: Untap target creature that has an activated ability with {T} in its cost.

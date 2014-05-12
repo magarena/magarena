@@ -1,0 +1,10 @@
+name=Cease-Fire
+url=http://magiccards.info/query?q=%21Cease-Fire
+image=http://mtgimage.com/card/cease-fire.jpg
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Target player can't cast creature spells this turn.;\
+        Draw a card.
+timing=removal
+oracle=Target player can't cast creature spells this turn. Draw a card.

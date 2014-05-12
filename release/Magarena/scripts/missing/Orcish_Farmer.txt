@@ -1,0 +1,11 @@
+name=Orcish Farmer
+url=http://magiccards.info/query?q=%21Orcish+Farmer
+image=http://mtgimage.com/card/orcish%20farmer.jpg
+rarity=C
+type=Creature
+subtype=Orc
+cost={1}{R}{R}
+pt=2/2
+ability={T}: Target land becomes a Swamp until its controller's next untap step.
+timing=main
+oracle={T}: Target land becomes a Swamp until its controller's next untap step.

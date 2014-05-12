@@ -1,0 +1,11 @@
+name=Jace's Archivist
+url=http://magiccards.info/query?q=%21Jace%27s+Archivist
+image=http://mtgimage.com/card/jace%27s%20archivist.jpg
+rarity=R
+type=Creature
+subtype=Vedalken,Wizard
+cost={1}{U}{U}
+pt=2/2
+ability={U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.
+timing=main
+oracle={U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.

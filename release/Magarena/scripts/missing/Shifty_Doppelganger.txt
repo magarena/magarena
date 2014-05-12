@@ -1,0 +1,11 @@
+name=Shifty Doppelganger
+url=http://magiccards.info/query?q=%21Shifty+Doppelganger
+image=http://mtgimage.com/card/shifty%20doppelganger.jpg
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={2}{U}
+pt=1/1
+ability={3}{U}, Exile SN: You may put a creature card from your hand onto the battlefield. If you do, that creature gains haste until end of turn. At the beginning of the next end step, sacrifice that creature. If you do, return SN to the battlefield.
+timing=main
+oracle={3}{U}, Exile Shifty Doppelganger: You may put a creature card from your hand onto the battlefield. If you do, that creature gains haste until end of turn. At the beginning of the next end step, sacrifice that creature. If you do, return Shifty Doppelganger to the battlefield.

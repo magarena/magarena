@@ -1,0 +1,9 @@
+name=Read the Bones
+url=http://magiccards.info/query?q=%21Read+the+Bones
+image=http://mtgimage.com/card/read%20the%20bones.jpg
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Scry 2, then draw two cards. You lose 2 life.
+timing=main
+oracle=Scry 2, then draw two cards. You lose 2 life.

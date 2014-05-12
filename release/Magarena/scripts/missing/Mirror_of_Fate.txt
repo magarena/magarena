@@ -1,0 +1,9 @@
+name=Mirror of Fate
+url=http://magiccards.info/query?q=%21Mirror+of+Fate
+image=http://mtgimage.com/card/mirror%20of%20fate.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability={T}, Sacrifice SN: Choose up to seven face-up exiled cards you own. Exile all the cards from your library, then put the chosen cards on top of your library.
+timing=main
+oracle={T}, Sacrifice Mirror of Fate: Choose up to seven face-up exiled cards you own. Exile all the cards from your library, then put the chosen cards on top of your library.

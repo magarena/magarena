@@ -1,0 +1,11 @@
+name=Reveille Squad
+url=http://magiccards.info/query?q=%21Reveille+Squad
+image=http://mtgimage.com/card/reveille%20squad.jpg
+rarity=U
+type=Creature
+subtype=Human,Rebel
+cost={2}{W}{W}
+pt=3/3
+ability=Whenever one or more creatures attack you, if SN is untapped, you may untap all creatures you control.
+timing=main
+oracle=Whenever one or more creatures attack you, if Reveille Squad is untapped, you may untap all creatures you control.

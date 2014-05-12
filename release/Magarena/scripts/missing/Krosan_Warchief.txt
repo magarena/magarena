@@ -1,0 +1,12 @@
+name=Krosan Warchief
+url=http://magiccards.info/query?q=%21Krosan+Warchief
+image=http://mtgimage.com/card/krosan%20warchief.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={2}{G}
+pt=2/2
+ability=Beast spells you cast cost {1} less to cast.;\
+        {1}{G}: Regenerate target Beast.
+timing=main
+oracle=Beast spells you cast cost {1} less to cast. {1}{G}: Regenerate target Beast.

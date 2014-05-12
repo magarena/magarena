@@ -1,0 +1,11 @@
+name=Sawtooth Ogre
+url=http://magiccards.info/query?q=%21Sawtooth+Ogre
+image=http://mtgimage.com/card/sawtooth%20ogre.jpg
+rarity=C
+type=Creature
+subtype=Ogre
+cost={2}{R}{R}
+pt=3/3
+ability=Whenever SN blocks or becomes blocked by a creature, SN deals 1 damage to that creature at end of combat.
+timing=main
+oracle=Whenever Sawtooth Ogre blocks or becomes blocked by a creature, Sawtooth Ogre deals 1 damage to that creature at end of combat.

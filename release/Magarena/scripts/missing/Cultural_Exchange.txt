@@ -1,0 +1,9 @@
+name=Cultural Exchange
+url=http://magiccards.info/query?q=%21Cultural+Exchange
+image=http://mtgimage.com/card/cultural%20exchange.jpg
+rarity=R
+type=Sorcery
+cost={4}{U}{U}
+effect=Choose any number of creatures target player controls. Choose the same number of creatures another target player controls. Those players exchange control of those creatures.
+timing=main
+oracle=Choose any number of creatures target player controls. Choose the same number of creatures another target player controls. Those players exchange control of those creatures.

@@ -1,0 +1,9 @@
+name=Twist Allegiance
+url=http://magiccards.info/query?q=%21Twist+Allegiance
+image=http://mtgimage.com/card/twist%20allegiance.jpg
+rarity=R
+type=Sorcery
+cost={6}{R}
+effect=You and target opponent each gain control of all creatures the other controls until end of turn. Untap those creatures. Those creatures gain haste until end of turn.
+timing=main
+oracle=You and target opponent each gain control of all creatures the other controls until end of turn. Untap those creatures. Those creatures gain haste until end of turn.

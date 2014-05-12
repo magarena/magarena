@@ -1,0 +1,11 @@
+name=Shu Farmer
+url=http://magiccards.info/query?q=%21Shu+Farmer
+image=http://mtgimage.com/card/shu%20farmer.jpg
+rarity=C
+type=Creature
+subtype=Human
+cost={1}{W}
+pt=1/1
+ability={T}: You gain 1 life. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: You gain 1 life. Activate this ability only during your turn, before attackers are declared.

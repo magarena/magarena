@@ -1,0 +1,9 @@
+name=Slate of Ancestry
+url=http://magiccards.info/query?q=%21Slate+of+Ancestry
+image=http://mtgimage.com/card/slate%20of%20ancestry.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={4}, {T}, Discard your hand: Draw a card for each creature you control.
+timing=main
+oracle={4}, {T}, Discard your hand: Draw a card for each creature you control.

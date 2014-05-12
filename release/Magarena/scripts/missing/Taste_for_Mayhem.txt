@@ -1,0 +1,12 @@
+name=Taste for Mayhem
+url=http://magiccards.info/query?q=%21Taste+for+Mayhem
+image=http://mtgimage.com/card/taste%20for%20mayhem.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+0.;\
+        Hellbent — Enchanted creature gets an additional +2/+0 as long as you have no cards in hand.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+0. Hellbent — Enchanted creature gets an additional +2/+0 as long as you have no cards in hand.

@@ -1,0 +1,11 @@
+name=Floodtide Serpent
+url=http://magiccards.info/query?q=%21Floodtide+Serpent
+image=http://mtgimage.com/card/floodtide%20serpent.jpg
+rarity=C
+type=Creature
+subtype=Serpent
+cost={4}{U}
+pt=4/4
+ability=SN can't attack unless you return an enchantment you control to its owner's hand.
+timing=main
+oracle=Floodtide Serpent can't attack unless you return an enchantment you control to its owner's hand.

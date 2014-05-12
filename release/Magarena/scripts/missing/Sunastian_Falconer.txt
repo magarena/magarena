@@ -1,0 +1,11 @@
+name=Sunastian Falconer
+url=http://magiccards.info/query?q=%21Sunastian+Falconer
+image=http://mtgimage.com/card/sunastian%20falconer.jpg
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={3}{R}{G}
+pt=4/4
+ability={T}: Add {2} to your mana pool.
+timing=main
+oracle={T}: Add {2} to your mana pool.

@@ -1,0 +1,12 @@
+name=Troublesome Spirit
+url=http://magiccards.info/query?q=%21Troublesome+Spirit
+image=http://mtgimage.com/card/troublesome%20spirit.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{U}{U}
+pt=3/4
+ability=Flying;\
+        At the beginning of your end step, tap all lands you control.
+timing=main
+oracle=Flying. At the beginning of your end step, tap all lands you control.

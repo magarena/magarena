@@ -1,0 +1,9 @@
+name=Cellar Door
+url=http://magiccards.info/query?q=%21Cellar+Door
+image=http://mtgimage.com/card/cellar%20door.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={3}, {T}: Target player puts the bottom card of his or her library into his or her graveyard. If it's a creature card, you put a 2/2 black Zombie creature token onto the battlefield.
+timing=main
+oracle={3}, {T}: Target player puts the bottom card of his or her library into his or her graveyard. If it's a creature card, you put a 2/2 black Zombie creature token onto the battlefield.

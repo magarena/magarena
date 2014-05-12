@@ -1,0 +1,12 @@
+name=Kor Skyfisher
+url=http://magiccards.info/query?q=%21Kor+Skyfisher
+image=http://mtgimage.com/card/kor%20skyfisher.jpg
+rarity=C
+type=Creature
+subtype=Kor,Soldier
+cost={1}{W}
+pt=2/3
+ability=Flying;\
+        When SN enters the battlefield, return a permanent you control to its owner's hand.
+timing=main
+oracle=Flying. When Kor Skyfisher enters the battlefield, return a permanent you control to its owner's hand.

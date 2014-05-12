@@ -1,0 +1,12 @@
+name=Festering Wound
+url=http://magiccards.info/query?q=%21Festering+Wound
+image=http://mtgimage.com/card/festering%20wound.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+ability=Enchant creature;\
+        At the beginning of your upkeep, you may put an infection counter on SN.;\
+        At the beginning of the upkeep of enchanted creature's controller, SN deals X damage to that player, where X is the number of infection counters on SN.
+timing=main
+oracle=Enchant creature. At the beginning of your upkeep, you may put an infection counter on Festering Wound. At the beginning of the upkeep of enchanted creature's controller, Festering Wound deals X damage to that player, where X is the number of infection counters on Festering Wound.

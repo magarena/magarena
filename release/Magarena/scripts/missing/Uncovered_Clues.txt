@@ -1,0 +1,9 @@
+name=Uncovered Clues
+url=http://magiccards.info/query?q=%21Uncovered+Clues
+image=http://mtgimage.com/card/uncovered%20clues.jpg
+rarity=C
+type=Sorcery
+cost={2}{U}
+effect=Look at the top four cards of your library. You may reveal up to two instant and/or sorcery cards from among them and put the revealed cards into your hand. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=Look at the top four cards of your library. You may reveal up to two instant and/or sorcery cards from among them and put the revealed cards into your hand. Put the rest on the bottom of your library in any order.

@@ -1,0 +1,11 @@
+name=Umbra Mystic
+url=http://magiccards.info/query?q=%21Umbra+Mystic
+image=http://mtgimage.com/card/umbra%20mystic.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}
+pt=2/2
+ability=Auras attached to permanents you control have totem armor.
+timing=main
+oracle=Auras attached to permanents you control have totem armor.

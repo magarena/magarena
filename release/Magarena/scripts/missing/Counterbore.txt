@@ -1,0 +1,9 @@
+name=Counterbore
+url=http://magiccards.info/query?q=%21Counterbore
+image=http://mtgimage.com/card/counterbore.jpg
+rarity=R
+type=Instant
+cost={3}{U}{U}
+effect=Counter target spell. Search its controller's graveyard, hand, and library for all cards with the same name as that spell and exile them. Then that player shuffles his or her library.
+timing=removal
+oracle=Counter target spell. Search its controller's graveyard, hand, and library for all cards with the same name as that spell and exile them. Then that player shuffles his or her library.

@@ -1,0 +1,9 @@
+name=Mutant's Prey
+url=http://magiccards.info/query?q=%21Mutant%27s+Prey
+image=http://mtgimage.com/card/mutant%27s%20prey.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Target creature you control with a +1/+1 counter on it fights target creature an opponent controls.
+timing=removal
+oracle=Target creature you control with a +1/+1 counter on it fights target creature an opponent controls.

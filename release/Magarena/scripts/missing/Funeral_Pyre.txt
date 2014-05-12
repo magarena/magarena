@@ -1,0 +1,9 @@
+name=Funeral Pyre
+url=http://magiccards.info/query?q=%21Funeral+Pyre
+image=http://mtgimage.com/card/funeral%20pyre.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Exile target card from a graveyard. Its owner puts a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=removal
+oracle=Exile target card from a graveyard. Its owner puts a 1/1 white Spirit creature token with flying onto the battlefield.

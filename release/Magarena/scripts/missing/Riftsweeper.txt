@@ -1,0 +1,11 @@
+name=Riftsweeper
+url=http://magiccards.info/query?q=%21Riftsweeper
+image=http://mtgimage.com/card/riftsweeper.jpg
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={1}{G}
+pt=2/2
+ability=When SN enters the battlefield, choose target face-up exiled card. Its owner shuffles it into his or her library.
+timing=main
+oracle=When Riftsweeper enters the battlefield, choose target face-up exiled card. Its owner shuffles it into his or her library.

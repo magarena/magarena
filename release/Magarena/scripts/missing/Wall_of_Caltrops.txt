@@ -1,0 +1,12 @@
+name=Wall of Caltrops
+url=http://magiccards.info/query?q=%21Wall+of+Caltrops
+image=http://mtgimage.com/card/wall%20of%20caltrops.jpg
+rarity=C
+type=Creature
+subtype=Wall
+cost={1}{W}
+pt=2/1
+ability=Defender;\
+        Whenever SN blocks a creature, if at least one other Wall creature is blocking that creature and no non-Wall creatures are blocking that creature, SN gains banding until end of turn.
+timing=main
+oracle=Defender. Whenever Wall of Caltrops blocks a creature, if at least one other Wall creature is blocking that creature and no non-Wall creatures are blocking that creature, Wall of Caltrops gains banding until end of turn.

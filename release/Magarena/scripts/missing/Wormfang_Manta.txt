@@ -1,0 +1,13 @@
+name=Wormfang Manta
+url=http://magiccards.info/query?q=%21Wormfang+Manta
+image=http://mtgimage.com/card/wormfang%20manta.jpg
+rarity=R
+type=Creature
+subtype=Nightmare,Fish,Beast
+cost={5}{U}{U}
+pt=6/1
+ability=Flying;\
+        When SN enters the battlefield, you skip your next turn.;\
+        When SN leaves the battlefield, you take an extra turn after this one.
+timing=main
+oracle=Flying. When Wormfang Manta enters the battlefield, you skip your next turn. When Wormfang Manta leaves the battlefield, you take an extra turn after this one.

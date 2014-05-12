@@ -1,0 +1,11 @@
+name=Leonin Squire
+url=http://magiccards.info/query?q=%21Leonin+Squire
+image=http://mtgimage.com/card/leonin%20squire.jpg
+rarity=C
+type=Creature
+subtype=Cat,Soldier
+cost={1}{W}
+pt=2/2
+ability=When SN enters the battlefield, return target artifact card with converted mana cost 1 or less from your graveyard to your hand.
+timing=main
+oracle=When Leonin Squire enters the battlefield, return target artifact card with converted mana cost 1 or less from your graveyard to your hand.

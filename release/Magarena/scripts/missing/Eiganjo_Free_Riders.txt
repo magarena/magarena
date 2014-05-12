@@ -1,0 +1,12 @@
+name=Eiganjo Free-Riders
+url=http://magiccards.info/query?q=%21Eiganjo+Free-Riders
+image=http://mtgimage.com/card/eiganjo%20free-riders.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=3/4
+ability=Flying;\
+        At the beginning of your upkeep, return a white creature you control to its owner's hand.
+timing=main
+oracle=Flying. At the beginning of your upkeep, return a white creature you control to its owner's hand.

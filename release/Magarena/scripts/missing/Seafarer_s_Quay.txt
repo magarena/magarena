@@ -1,0 +1,8 @@
+name=Seafarer's Quay
+url=http://magiccards.info/query?q=%21Seafarer%27s+Quay
+image=http://mtgimage.com/card/seafarer%27s%20quay.jpg
+rarity=U
+type=Land
+ability=Blue legendary creatures you control have "bands with other legendary creatures."
+timing=main
+oracle=Blue legendary creatures you control have "bands with other legendary creatures."

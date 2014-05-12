@@ -1,0 +1,9 @@
+name=Rock Slide
+url=http://magiccards.info/query?q=%21Rock+Slide
+image=http://mtgimage.com/card/rock%20slide.jpg
+rarity=C
+type=Instant
+cost={X}{R}
+effect=SN deals X damage divided as you choose among any number of target attacking or blocking creatures without flying.
+timing=removal
+oracle=Rock Slide deals X damage divided as you choose among any number of target attacking or blocking creatures without flying.

@@ -1,0 +1,11 @@
+name=Shifting Borders
+url=http://magiccards.info/query?q=%21Shifting+Borders
+image=http://mtgimage.com/card/shifting%20borders.jpg
+rarity=U
+type=Instant
+subtype=Arcane
+cost={3}{U}
+effect=Exchange control of two target lands.;\
+        Splice onto Arcane {3}{U}
+timing=removal
+oracle=Exchange control of two target lands. Splice onto Arcane {3}{U}

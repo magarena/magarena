@@ -1,0 +1,9 @@
+name=Flame Fusillade
+url=http://magiccards.info/query?q=%21Flame+Fusillade
+image=http://mtgimage.com/card/flame%20fusillade.jpg
+rarity=R
+type=Sorcery
+cost={3}{R}
+effect=Until end of turn, permanents you control gain "{T}: This permanent deals 1 damage to target creature or player."
+timing=main
+oracle=Until end of turn, permanents you control gain "{T}: This permanent deals 1 damage to target creature or player."

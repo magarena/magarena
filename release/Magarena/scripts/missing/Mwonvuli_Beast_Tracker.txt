@@ -1,0 +1,11 @@
+name=Mwonvuli Beast Tracker
+url=http://magiccards.info/query?q=%21Mwonvuli+Beast+Tracker
+image=http://mtgimage.com/card/mwonvuli%20beast%20tracker.jpg
+rarity=U
+type=Creature
+subtype=Human,Scout
+cost={1}{G}{G}
+pt=2/1
+ability=When SN enters the battlefield, search your library for a creature card with deathtouch, hexproof, reach, or trample and reveal it. Shuffle your library and put that card on top of it.
+timing=main
+oracle=When Mwonvuli Beast Tracker enters the battlefield, search your library for a creature card with deathtouch, hexproof, reach, or trample and reveal it. Shuffle your library and put that card on top of it.

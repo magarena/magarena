@@ -1,0 +1,10 @@
+name=Teferi's Isle
+url=http://magiccards.info/query?q=%21Teferi%27s+Isle
+image=http://mtgimage.com/card/teferi%27s%20isle.jpg
+rarity=R
+type=Land
+ability=Phasing;\
+        SN enters the battlefield tapped.;\
+        {T}: Add {U}{U} to your mana pool.
+timing=main
+oracle=Phasing. Teferi's Isle enters the battlefield tapped. {T}: Add {U}{U} to your mana pool.

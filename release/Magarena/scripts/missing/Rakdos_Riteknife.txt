@@ -1,0 +1,12 @@
+name=Rakdos Riteknife
+url=http://magiccards.info/query?q=%21Rakdos+Riteknife
+image=http://mtgimage.com/card/rakdos%20riteknife.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +1/+0 for each blood counter on SN and has "{T}, Sacrifice a creature: Put a blood counter on SN.";\
+        {B}{R}, Sacrifice SN: Target player sacrifices a permanent for each blood counter on SN.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature gets +1/+0 for each blood counter on Rakdos Riteknife and has "{T}, Sacrifice a creature: Put a blood counter on Rakdos Riteknife.". {B}{R}, Sacrifice Rakdos Riteknife: Target player sacrifices a permanent for each blood counter on Rakdos Riteknife. Equip {2}

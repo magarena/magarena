@@ -1,0 +1,11 @@
+name=Molder Slug
+url=http://magiccards.info/query?q=%21Molder+Slug
+image=http://mtgimage.com/card/molder%20slug.jpg
+rarity=R
+type=Creature
+subtype=Slug,Beast
+cost={3}{G}{G}
+pt=4/6
+ability=At the beginning of each player's upkeep, that player sacrifices an artifact.
+timing=main
+oracle=At the beginning of each player's upkeep, that player sacrifices an artifact.

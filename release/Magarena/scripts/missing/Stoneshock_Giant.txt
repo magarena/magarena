@@ -1,0 +1,12 @@
+name=Stoneshock Giant
+url=http://magiccards.info/query?q=%21Stoneshock+Giant
+image=http://mtgimage.com/card/stoneshock%20giant.jpg
+rarity=U
+type=Creature
+subtype=Giant
+cost={3}{R}{R}
+pt=5/4
+ability={6}{R}{R}: Monstrosity 3.;\
+        When SN becomes monstrous, creatures without flying your opponents control can't block this turn.
+timing=main
+oracle={6}{R}{R}: Monstrosity 3.. When Stoneshock Giant becomes monstrous, creatures without flying your opponents control can't block this turn.

@@ -1,0 +1,9 @@
+name=Songs of the Damned
+url=http://magiccards.info/query?q=%21Songs+of+the+Damned
+image=http://mtgimage.com/card/songs%20of%20the%20damned.jpg
+rarity=C
+type=Instant
+cost={B}
+effect=Add {B} to your mana pool for each creature card in your graveyard.
+timing=removal
+oracle=Add {B} to your mana pool for each creature card in your graveyard.

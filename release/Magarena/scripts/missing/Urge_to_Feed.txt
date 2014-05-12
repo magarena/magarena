@@ -1,0 +1,9 @@
+name=Urge to Feed
+url=http://magiccards.info/query?q=%21Urge+to+Feed
+image=http://mtgimage.com/card/urge%20to%20feed.jpg
+rarity=U
+type=Instant
+cost={B}{B}
+effect=Target creature gets -3/-3 until end of turn. You may tap any number of untapped Vampire creatures you control. If you do, put a +1/+1 counter on each of those Vampires.
+timing=removal
+oracle=Target creature gets -3/-3 until end of turn. You may tap any number of untapped Vampire creatures you control. If you do, put a +1/+1 counter on each of those Vampires.

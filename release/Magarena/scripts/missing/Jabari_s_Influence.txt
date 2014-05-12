@@ -1,0 +1,10 @@
+name=Jabari's Influence
+url=http://magiccards.info/query?q=%21Jabari%27s+Influence
+image=http://mtgimage.com/card/jabari%27s%20influence.jpg
+rarity=R
+type=Instant
+cost={3}{W}{W}
+effect=Cast SN only after combat.;\
+        Gain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.
+timing=removal
+oracle=Cast Jabari's Influence only after combat. Gain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.

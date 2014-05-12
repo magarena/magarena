@@ -1,0 +1,11 @@
+name=Sparksmith
+url=http://magiccards.info/query?q=%21Sparksmith
+image=http://mtgimage.com/card/sparksmith.jpg
+rarity=C
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=1/1
+ability={T}: SN deals X damage to target creature and X damage to you, where X is the number of Goblins on the battlefield.
+timing=main
+oracle={T}: Sparksmith deals X damage to target creature and X damage to you, where X is the number of Goblins on the battlefield.

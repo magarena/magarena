@@ -1,0 +1,12 @@
+name=Conclave's Blessing
+url=http://magiccards.info/query?q=%21Conclave%27s+Blessing
+image=http://mtgimage.com/card/conclave%27s%20blessing.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Convoke;\
+        Enchant creature;\
+        Enchanted creature gets +0/+2 for each other creature you control.
+timing=main
+oracle=Convoke. Enchant creature. Enchanted creature gets +0/+2 for each other creature you control.

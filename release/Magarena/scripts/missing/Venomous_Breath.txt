@@ -1,0 +1,9 @@
+name=Venomous Breath
+url=http://magiccards.info/query?q=%21Venomous+Breath
+image=http://mtgimage.com/card/venomous%20breath.jpg
+rarity=U
+type=Instant
+cost={3}{G}
+effect=Choose target creature. At this turn's next end of combat, destroy all creatures that blocked or were blocked by it this turn.
+timing=removal
+oracle=Choose target creature. At this turn's next end of combat, destroy all creatures that blocked or were blocked by it this turn.

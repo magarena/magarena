@@ -1,0 +1,11 @@
+name=Enemy of the Guildpact
+url=http://magiccards.info/query?q=%21Enemy+of+the+Guildpact
+image=http://mtgimage.com/card/enemy%20of%20the%20guildpact.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{B}
+pt=4/2
+ability=Protection from multicolored
+timing=main
+oracle=Protection from multicolored

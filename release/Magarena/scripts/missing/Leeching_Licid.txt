@@ -1,0 +1,12 @@
+name=Leeching Licid
+url=http://magiccards.info/query?q=%21Leeching+Licid
+image=http://mtgimage.com/card/leeching%20licid.jpg
+rarity=U
+type=Creature
+subtype=Licid
+cost={1}{B}
+pt=1/1
+ability={B}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {B} to end this effect.;\
+        At the beginning of the upkeep of enchanted creature's controller, SN deals 1 damage to that player.
+timing=main
+oracle={B}, {T}: Leeching Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {B} to end this effect. At the beginning of the upkeep of enchanted creature's controller, Leeching Licid deals 1 damage to that player.

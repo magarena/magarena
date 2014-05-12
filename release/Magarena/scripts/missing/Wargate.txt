@@ -1,0 +1,9 @@
+name=Wargate
+url=http://magiccards.info/query?q=%21Wargate
+image=http://mtgimage.com/card/wargate.jpg
+rarity=R
+type=Sorcery
+cost={X}{G}{W}{U}
+effect=Search your library for a permanent card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.
+timing=main
+oracle=Search your library for a permanent card with converted mana cost X or less, put it onto the battlefield, then shuffle your library.

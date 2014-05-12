@@ -1,0 +1,12 @@
+name=Aphetto Vulture
+url=http://magiccards.info/query?q=%21Aphetto+Vulture
+image=http://mtgimage.com/card/aphetto%20vulture.jpg
+rarity=U
+type=Creature
+subtype=Zombie,Bird
+cost={4}{B}{B}
+pt=3/2
+ability=Flying;\
+        When SN dies, you may put target Zombie card from your graveyard on top of your library.
+timing=main
+oracle=Flying. When Aphetto Vulture dies, you may put target Zombie card from your graveyard on top of your library.

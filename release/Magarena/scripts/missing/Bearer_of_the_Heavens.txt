@@ -1,0 +1,11 @@
+name=Bearer of the Heavens
+url=http://magiccards.info/query?q=%21Bearer+of+the+Heavens
+image=http://mtgimage.com/card/bearer%20of%20the%20heavens.jpg
+rarity=R
+type=Creature
+subtype=Giant
+cost={7}{R}
+pt=10/10
+ability=When SN dies, destroy all permanents at the beginning of the next end step.
+timing=main
+oracle=When Bearer of the Heavens dies, destroy all permanents at the beginning of the next end step.

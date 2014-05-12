@@ -1,0 +1,9 @@
+name=Nix
+url=http://magiccards.info/query?q=%21Nix
+image=http://mtgimage.com/card/nix.jpg
+rarity=R
+type=Instant
+cost={U}
+effect=Counter target spell if no mana was spent to cast it.
+timing=removal
+oracle=Counter target spell if no mana was spent to cast it.

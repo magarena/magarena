@@ -1,0 +1,11 @@
+name=Pangosaur
+url=http://magiccards.info/query?q=%21Pangosaur
+image=http://mtgimage.com/card/pangosaur.jpg
+rarity=R
+type=Creature
+subtype=Lizard
+cost={2}{G}{G}
+pt=6/6
+ability=Whenever a player plays a land, return SN to its owner's hand.
+timing=main
+oracle=Whenever a player plays a land, return Pangosaur to its owner's hand.

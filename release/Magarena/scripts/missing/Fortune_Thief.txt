@@ -1,0 +1,12 @@
+name=Fortune Thief
+url=http://magiccards.info/query?q=%21Fortune+Thief
+image=http://mtgimage.com/card/fortune%20thief.jpg
+rarity=R
+type=Creature
+subtype=Human,Rogue
+cost={4}{R}
+pt=0/1
+ability=Damage that would reduce your life total to less than 1 reduces it to 1 instead.;\
+        Morph {R}{R}
+timing=main
+oracle=Damage that would reduce your life total to less than 1 reduces it to 1 instead. Morph {R}{R}

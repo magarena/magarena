@@ -1,0 +1,10 @@
+name=Aquitect's Will
+url=http://magiccards.info/query?q=%21Aquitect%27s+Will
+image=http://mtgimage.com/card/aquitect%27s%20will.jpg
+rarity=C
+type=Tribal,Sorcery
+subtype=Merfolk
+cost={U}
+effect=Put a flood counter on target land. That land is an Island in addition to its other types for as long as it has a flood counter on it. If you control a Merfolk, draw a card.
+timing=main
+oracle=Put a flood counter on target land. That land is an Island in addition to its other types for as long as it has a flood counter on it. If you control a Merfolk, draw a card.

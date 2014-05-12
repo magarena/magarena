@@ -1,0 +1,9 @@
+name=Spare from Evil
+url=http://magiccards.info/query?q=%21Spare+from+Evil
+image=http://mtgimage.com/card/spare%20from%20evil.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Creatures you control gain protection from non-Human creatures until end of turn.
+timing=removal
+oracle=Creatures you control gain protection from non-Human creatures until end of turn.

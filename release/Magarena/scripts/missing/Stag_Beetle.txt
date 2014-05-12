@@ -1,0 +1,11 @@
+name=Stag Beetle
+url=http://magiccards.info/query?q=%21Stag+Beetle
+image=http://mtgimage.com/card/stag%20beetle.jpg
+rarity=R
+type=Creature
+subtype=Insect
+cost={3}{G}{G}
+pt=0/0
+ability=SN enters the battlefield with X +1/+1 counters on it, where X is the number of other creatures on the battlefield.
+timing=main
+oracle=Stag Beetle enters the battlefield with X +1/+1 counters on it, where X is the number of other creatures on the battlefield.

@@ -1,0 +1,9 @@
+name=Game Preserve
+url=http://magiccards.info/query?q=%21Game+Preserve
+image=http://mtgimage.com/card/game%20preserve.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=At the beginning of your upkeep, each player reveals the top card of his or her library. If all cards revealed this way are creature cards, put those cards onto the battlefield under their owners' control.
+timing=main
+oracle=At the beginning of your upkeep, each player reveals the top card of his or her library. If all cards revealed this way are creature cards, put those cards onto the battlefield under their owners' control.

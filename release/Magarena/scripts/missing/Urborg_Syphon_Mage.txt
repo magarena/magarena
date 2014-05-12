@@ -1,0 +1,11 @@
+name=Urborg Syphon-Mage
+url=http://magiccards.info/query?q=%21Urborg+Syphon-Mage
+image=http://mtgimage.com/card/urborg%20syphon-mage.jpg
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={2}{B}
+pt=2/2
+ability={2}{B}, {T}, Discard a card: Each other player loses 2 life. You gain life equal to the life lost this way.
+timing=main
+oracle={2}{B}, {T}, Discard a card: Each other player loses 2 life. You gain life equal to the life lost this way.

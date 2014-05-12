@@ -1,0 +1,9 @@
+name=Aegis of Honor
+url=http://magiccards.info/query?q=%21Aegis+of+Honor
+image=http://mtgimage.com/card/aegis%20of%20honor.jpg
+rarity=R
+type=Enchantment
+cost={W}
+ability={1}: The next time an instant or sorcery spell would deal damage to you this turn, that spell deals that damage to its controller instead.
+timing=main
+oracle={1}: The next time an instant or sorcery spell would deal damage to you this turn, that spell deals that damage to its controller instead.

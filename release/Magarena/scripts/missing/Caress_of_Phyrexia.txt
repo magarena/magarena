@@ -1,0 +1,9 @@
+name=Caress of Phyrexia
+url=http://magiccards.info/query?q=%21Caress+of+Phyrexia
+image=http://mtgimage.com/card/caress%20of%20phyrexia.jpg
+rarity=U
+type=Sorcery
+cost={3}{B}{B}
+effect=Target player draws three cards, loses 3 life, and gets three poison counters.
+timing=main
+oracle=Target player draws three cards, loses 3 life, and gets three poison counters.

@@ -1,0 +1,11 @@
+name=Dross Scorpion
+url=http://magiccards.info/query?q=%21Dross+Scorpion
+image=http://mtgimage.com/card/dross%20scorpion.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Scorpion
+cost={4}
+pt=3/1
+ability=Whenever SN or another artifact creature dies, you may untap target artifact.
+timing=main
+oracle=Whenever Dross Scorpion or another artifact creature dies, you may untap target artifact.

@@ -1,0 +1,11 @@
+name=Crashing Boars
+url=http://magiccards.info/query?q=%21Crashing+Boars
+image=http://mtgimage.com/card/crashing%20boars.jpg
+rarity=U
+type=Creature
+subtype=Boar
+cost={3}{G}{G}
+pt=4/4
+ability=Whenever SN attacks, defending player chooses an untapped creature he or she controls. That creature blocks SN this turn if able.
+timing=main
+oracle=Whenever Crashing Boars attacks, defending player chooses an untapped creature he or she controls. That creature blocks Crashing Boars this turn if able.

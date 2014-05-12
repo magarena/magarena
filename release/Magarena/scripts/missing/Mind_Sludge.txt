@@ -1,0 +1,9 @@
+name=Mind Sludge
+url=http://magiccards.info/query?q=%21Mind+Sludge
+image=http://mtgimage.com/card/mind%20sludge.jpg
+rarity=U
+type=Sorcery
+cost={4}{B}
+effect=Target player discards a card for each Swamp you control.
+timing=main
+oracle=Target player discards a card for each Swamp you control.

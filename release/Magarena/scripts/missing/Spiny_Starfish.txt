@@ -1,0 +1,12 @@
+name=Spiny Starfish
+url=http://magiccards.info/query?q=%21Spiny+Starfish
+image=http://mtgimage.com/card/spiny%20starfish.jpg
+rarity=U
+type=Creature
+subtype=Starfish
+cost={2}{U}
+pt=0/1
+ability={U}: Regenerate SN.;\
+        At the beginning of each end step, if SN regenerated this turn, put a 0/1 blue Starfish creature token onto the battlefield for each time it regenerated this turn.
+timing=main
+oracle={U}: Regenerate Spiny Starfish. At the beginning of each end step, if Spiny Starfish regenerated this turn, put a 0/1 blue Starfish creature token onto the battlefield for each time it regenerated this turn.

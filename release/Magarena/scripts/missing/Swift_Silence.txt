@@ -1,0 +1,9 @@
+name=Swift Silence
+url=http://magiccards.info/query?q=%21Swift+Silence
+image=http://mtgimage.com/card/swift%20silence.jpg
+rarity=R
+type=Instant
+cost={2}{W}{U}{U}
+effect=Counter all other spells. Draw a card for each spell countered this way.
+timing=removal
+oracle=Counter all other spells. Draw a card for each spell countered this way.

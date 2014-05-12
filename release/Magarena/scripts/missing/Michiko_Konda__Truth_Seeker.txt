@@ -1,0 +1,11 @@
+name=Michiko Konda, Truth Seeker
+url=http://magiccards.info/query?q=%21Michiko+Konda%2C+Truth+Seeker
+image=http://mtgimage.com/card/michiko%20konda%2C%20truth%20seeker.jpg
+rarity=R
+type=Creature
+subtype=Human,Advisor
+cost={3}{W}
+pt=2/2
+ability=Whenever a source an opponent controls deals damage to you, that player sacrifices a permanent.
+timing=main
+oracle=Whenever a source an opponent controls deals damage to you, that player sacrifices a permanent.

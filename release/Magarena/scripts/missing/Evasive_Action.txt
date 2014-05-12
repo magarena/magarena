@@ -1,0 +1,9 @@
+name=Evasive Action
+url=http://magiccards.info/query?q=%21Evasive+Action
+image=http://mtgimage.com/card/evasive%20action.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Domain — Counter target spell unless its controller pays {1} for each basic land type among lands you control.
+timing=removal
+oracle=Domain — Counter target spell unless its controller pays {1} for each basic land type among lands you control.

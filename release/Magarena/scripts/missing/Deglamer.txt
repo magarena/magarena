@@ -1,0 +1,9 @@
+name=Deglamer
+url=http://magiccards.info/query?q=%21Deglamer
+image=http://mtgimage.com/card/deglamer.jpg
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Choose target artifact or enchantment. Its owner shuffles it into his or her library.
+timing=removal
+oracle=Choose target artifact or enchantment. Its owner shuffles it into his or her library.

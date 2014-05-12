@@ -1,0 +1,11 @@
+name=Godhunter Octopus
+url=http://magiccards.info/query?q=%21Godhunter+Octopus
+image=http://mtgimage.com/card/godhunter%20octopus.jpg
+rarity=C
+type=Creature
+subtype=Octopus
+cost={5}{U}
+pt=5/5
+ability=SN can't attack unless defending player controls an enchantment or an enchanted permanent.
+timing=main
+oracle=Godhunter Octopus can't attack unless defending player controls an enchantment or an enchanted permanent.

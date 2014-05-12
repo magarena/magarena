@@ -1,0 +1,11 @@
+name=Kongming's Contraptions
+url=http://magiccards.info/query?q=%21Kongming%27s+Contraptions
+image=http://mtgimage.com/card/kongming%27s%20contraptions.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=2/4
+ability={T}: SN deals 2 damage to target attacking creature. Activate this ability only during the declare attackers step and only if you've been attacked this step.
+timing=main
+oracle={T}: Kongming's Contraptions deals 2 damage to target attacking creature. Activate this ability only during the declare attackers step and only if you've been attacked this step.

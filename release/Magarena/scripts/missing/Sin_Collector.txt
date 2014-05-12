@@ -1,0 +1,11 @@
+name=Sin Collector
+url=http://magiccards.info/query?q=%21Sin+Collector
+image=http://mtgimage.com/card/sin%20collector.jpg
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}{B}
+pt=2/1
+ability=When SN enters the battlefield, target opponent reveals his or her hand. You choose an instant or sorcery card from it and exile that card.
+timing=main
+oracle=When Sin Collector enters the battlefield, target opponent reveals his or her hand. You choose an instant or sorcery card from it and exile that card.

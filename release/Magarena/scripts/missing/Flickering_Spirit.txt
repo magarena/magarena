@@ -1,0 +1,12 @@
+name=Flickering Spirit
+url=http://magiccards.info/query?q=%21Flickering+Spirit
+image=http://mtgimage.com/card/flickering%20spirit.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{W}
+pt=2/2
+ability=Flying;\
+        {3}{W}: Exile SN, then return it to the battlefield under its owner's control.
+timing=main
+oracle=Flying. {3}{W}: Exile Flickering Spirit, then return it to the battlefield under its owner's control.

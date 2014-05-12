@@ -1,0 +1,10 @@
+name=Insist
+url=http://magiccards.info/query?q=%21Insist
+image=http://mtgimage.com/card/insist.jpg
+rarity=R
+type=Sorcery
+cost={G}
+effect=The next creature spell you cast this turn can't be countered by spells or abilities.;\
+        Draw a card.
+timing=main
+oracle=The next creature spell you cast this turn can't be countered by spells or abilities. Draw a card.

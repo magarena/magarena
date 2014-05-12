@@ -1,0 +1,10 @@
+name=Scout's Warning
+url=http://magiccards.info/query?q=%21Scout%27s+Warning
+image=http://mtgimage.com/card/scout%27s%20warning.jpg
+rarity=R
+type=Instant
+cost={W}
+effect=The next creature card you play this turn can be played as though it had flash.;\
+        Draw a card.
+timing=removal
+oracle=The next creature card you play this turn can be played as though it had flash. Draw a card.

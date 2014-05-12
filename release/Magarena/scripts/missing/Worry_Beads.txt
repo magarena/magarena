@@ -1,0 +1,9 @@
+name=Worry Beads
+url=http://magiccards.info/query?q=%21Worry+Beads
+image=http://mtgimage.com/card/worry%20beads.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=At the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard.
+timing=main
+oracle=At the beginning of each player's upkeep, that player puts the top card of his or her library into his or her graveyard.

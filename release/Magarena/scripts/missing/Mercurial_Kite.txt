@@ -1,0 +1,12 @@
+name=Mercurial Kite
+url=http://magiccards.info/query?q=%21Mercurial+Kite
+image=http://mtgimage.com/card/mercurial%20kite.jpg
+rarity=C
+type=Creature
+subtype=Bird
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        Whenever SN deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.
+timing=main
+oracle=Flying. Whenever Mercurial Kite deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.

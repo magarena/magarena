@@ -1,0 +1,9 @@
+name=Lightning Rift
+url=http://magiccards.info/query?q=%21Lightning+Rift
+image=http://mtgimage.com/card/lightning%20rift.jpg
+rarity=U
+type=Enchantment
+cost={1}{R}
+ability=Whenever a player cycles a card, you may pay {1}. If you do, SN deals 2 damage to target creature or player.
+timing=main
+oracle=Whenever a player cycles a card, you may pay {1}. If you do, Lightning Rift deals 2 damage to target creature or player.

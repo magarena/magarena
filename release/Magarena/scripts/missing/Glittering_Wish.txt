@@ -1,0 +1,9 @@
+name=Glittering Wish
+url=http://magiccards.info/query?q=%21Glittering+Wish
+image=http://mtgimage.com/card/glittering%20wish.jpg
+rarity=R
+type=Sorcery
+cost={G}{W}
+effect=You may choose a multicolored card you own from outside the game, reveal that card, and put it into your hand. Exile SN.
+timing=main
+oracle=You may choose a multicolored card you own from outside the game, reveal that card, and put it into your hand. Exile Glittering Wish.

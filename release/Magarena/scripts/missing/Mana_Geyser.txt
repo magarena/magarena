@@ -1,0 +1,9 @@
+name=Mana Geyser
+url=http://magiccards.info/query?q=%21Mana+Geyser
+image=http://mtgimage.com/card/mana%20geyser.jpg
+rarity=C
+type=Sorcery
+cost={3}{R}{R}
+effect=Add {R} to your mana pool for each tapped land your opponents control.
+timing=main
+oracle=Add {R} to your mana pool for each tapped land your opponents control.

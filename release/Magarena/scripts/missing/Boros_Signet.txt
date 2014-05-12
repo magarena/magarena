@@ -1,0 +1,9 @@
+name=Boros Signet
+url=http://magiccards.info/query?q=%21Boros+Signet
+image=http://mtgimage.com/card/boros%20signet.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability={1}, {T}: Add {R}{W} to your mana pool.
+timing=main
+oracle={1}, {T}: Add {R}{W} to your mana pool.

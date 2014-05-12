@@ -1,0 +1,10 @@
+name=Gleam of Resistance
+url=http://magiccards.info/query?q=%21Gleam+of+Resistance
+image=http://mtgimage.com/card/gleam%20of%20resistance.jpg
+rarity=C
+type=Instant
+cost={4}{W}
+effect=Creatures you control get +1/+2 until end of turn. Untap those creatures.;\
+        Basic landcycling {1}{W}
+timing=removal
+oracle=Creatures you control get +1/+2 until end of turn. Untap those creatures. Basic landcycling {1}{W}

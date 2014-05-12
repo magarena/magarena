@@ -1,0 +1,12 @@
+name=Bellowing Fiend
+url=http://magiccards.info/query?q=%21Bellowing+Fiend
+image=http://mtgimage.com/card/bellowing%20fiend.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={4}{B}
+pt=3/3
+ability=Flying;\
+        Whenever SN deals damage to a creature, SN deals 3 damage to that creature's controller and 3 damage to you.
+timing=main
+oracle=Flying. Whenever Bellowing Fiend deals damage to a creature, Bellowing Fiend deals 3 damage to that creature's controller and 3 damage to you.

@@ -1,0 +1,12 @@
+name=Kaiso, Memory of Loyalty
+url=http://magiccards.info/query?q=%21Kaiso%2C+Memory+of+Loyalty
+image=http://mtgimage.com/card/kaiso%2C%20memory%20of%20loyalty.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{W}{W}
+pt=3/4
+ability=Flying;\
+        Remove a ki counter from SN: Prevent all damage that would be dealt to target creature this turn.
+timing=main
+oracle=Flying. Remove a ki counter from Kaiso, Memory of Loyalty: Prevent all damage that would be dealt to target creature this turn.

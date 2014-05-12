@@ -1,0 +1,9 @@
+name=Nature's Will
+url=http://magiccards.info/query?q=%21Nature%27s+Will
+image=http://mtgimage.com/card/nature%27s%20will.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}{G}
+ability=Whenever one or more creatures you control deal combat damage to a player, tap all lands that player controls and untap all lands you control.
+timing=main
+oracle=Whenever one or more creatures you control deal combat damage to a player, tap all lands that player controls and untap all lands you control.

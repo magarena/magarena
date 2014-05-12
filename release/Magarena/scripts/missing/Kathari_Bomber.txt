@@ -1,0 +1,13 @@
+name=Kathari Bomber
+url=http://magiccards.info/query?q=%21Kathari+Bomber
+image=http://mtgimage.com/card/kathari%20bomber.jpg
+rarity=C
+type=Creature
+subtype=Bird,Shaman
+cost={1}{B}{R}
+pt=2/2
+ability=Flying;\
+        When SN deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield and sacrifice SN.;\
+        Unearth {3}{B}{R}
+timing=main
+oracle=Flying. When Kathari Bomber deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield and sacrifice Kathari Bomber. Unearth {3}{B}{R}

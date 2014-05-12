@@ -1,0 +1,9 @@
+name=Feral Lightning
+url=http://magiccards.info/query?q=%21Feral+Lightning
+image=http://mtgimage.com/card/feral%20lightning.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}{R}{R}
+effect=Put three 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.
+timing=main
+oracle=Put three 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.

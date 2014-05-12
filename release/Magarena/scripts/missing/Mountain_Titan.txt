@@ -1,0 +1,11 @@
+name=Mountain Titan
+url=http://magiccards.info/query?q=%21Mountain+Titan
+image=http://mtgimage.com/card/mountain%20titan.jpg
+rarity=R
+type=Creature
+subtype=Giant
+cost={2}{B}{R}
+pt=2/2
+ability={1}{R}{R}: Until end of turn, whenever you cast a black spell, put a +1/+1 counter on SN.
+timing=main
+oracle={1}{R}{R}: Until end of turn, whenever you cast a black spell, put a +1/+1 counter on Mountain Titan.

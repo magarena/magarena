@@ -1,0 +1,11 @@
+name=Noggle Bandit
+url=http://magiccards.info/query?q=%21Noggle+Bandit
+image=http://mtgimage.com/card/noggle%20bandit.jpg
+rarity=C
+type=Creature
+subtype=Noggle,Rogue
+cost={1}{U/R}{U/R}
+pt=2/2
+ability=SN can't be blocked except by creatures with defender.
+timing=main
+oracle=Noggle Bandit can't be blocked except by creatures with defender.

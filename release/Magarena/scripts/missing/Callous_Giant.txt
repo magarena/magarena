@@ -1,0 +1,11 @@
+name=Callous Giant
+url=http://magiccards.info/query?q=%21Callous+Giant
+image=http://mtgimage.com/card/callous%20giant.jpg
+rarity=R
+type=Creature
+subtype=Giant
+cost={4}{R}{R}
+pt=4/4
+ability=If a source would deal 3 or less damage to SN, prevent that damage.
+timing=main
+oracle=If a source would deal 3 or less damage to Callous Giant, prevent that damage.

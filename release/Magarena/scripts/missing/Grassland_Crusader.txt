@@ -1,0 +1,11 @@
+name=Grassland Crusader
+url=http://magiccards.info/query?q=%21Grassland+Crusader
+image=http://mtgimage.com/card/grassland%20crusader.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric,Soldier
+cost={5}{W}
+pt=2/4
+ability={T}: Target Elf or Soldier creature gets +2/+2 until end of turn.
+timing=main
+oracle={T}: Target Elf or Soldier creature gets +2/+2 until end of turn.

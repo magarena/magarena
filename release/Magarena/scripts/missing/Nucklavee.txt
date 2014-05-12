@@ -1,0 +1,12 @@
+name=Nucklavee
+url=http://magiccards.info/query?q=%21Nucklavee
+image=http://mtgimage.com/card/nucklavee.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={4}{U/R}{U/R}
+pt=4/4
+ability=When SN enters the battlefield, you may return target red sorcery card from your graveyard to your hand.;\
+        When SN enters the battlefield, you may return target blue instant card from your graveyard to your hand.
+timing=main
+oracle=When Nucklavee enters the battlefield, you may return target red sorcery card from your graveyard to your hand. When Nucklavee enters the battlefield, you may return target blue instant card from your graveyard to your hand.

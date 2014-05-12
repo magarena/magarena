@@ -1,0 +1,9 @@
+name=Burst of Strength
+url=http://magiccards.info/query?q=%21Burst+of+Strength
+image=http://mtgimage.com/card/burst%20of%20strength.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Put a +1/+1 counter on target creature and untap it.
+timing=removal
+oracle=Put a +1/+1 counter on target creature and untap it.

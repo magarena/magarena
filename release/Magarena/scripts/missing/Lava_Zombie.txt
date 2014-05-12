@@ -1,0 +1,12 @@
+name=Lava Zombie
+url=http://magiccards.info/query?q=%21Lava+Zombie
+image=http://mtgimage.com/card/lava%20zombie.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={1}{B}{R}
+pt=4/3
+ability=When SN enters the battlefield, return a black or red creature you control to its owner's hand.;\
+        {2}: SN gets +1/+0 until end of turn.
+timing=main
+oracle=When Lava Zombie enters the battlefield, return a black or red creature you control to its owner's hand. {2}: Lava Zombie gets +1/+0 until end of turn.

@@ -1,0 +1,11 @@
+name=Apes of Rath
+url=http://magiccards.info/query?q=%21Apes+of+Rath
+image=http://mtgimage.com/card/apes%20of%20rath.jpg
+rarity=U
+type=Creature
+subtype=Ape
+cost={2}{G}{G}
+pt=5/4
+ability=Whenever SN attacks, it doesn't untap during its controller's next untap step.
+timing=main
+oracle=Whenever Apes of Rath attacks, it doesn't untap during its controller's next untap step.

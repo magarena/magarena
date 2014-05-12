@@ -1,0 +1,11 @@
+name=Zealous Inquisitor
+url=http://magiccards.info/query?q=%21Zealous+Inquisitor
+image=http://mtgimage.com/card/zealous%20inquisitor.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=2/2
+ability={1}{W}: The next 1 damage that would be dealt to SN this turn is dealt to target creature instead.
+timing=main
+oracle={1}{W}: The next 1 damage that would be dealt to Zealous Inquisitor this turn is dealt to target creature instead.

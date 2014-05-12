@@ -1,0 +1,12 @@
+name=Battering Ram
+url=http://magiccards.info/query?q=%21Battering+Ram
+image=http://mtgimage.com/card/battering%20ram.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=1/1
+ability=At the beginning of combat on your turn, SN gains banding until end of combat.;\
+        Whenever SN becomes blocked by a Wall, destroy that Wall at end of combat.
+timing=main
+oracle=At the beginning of combat on your turn, Battering Ram gains banding until end of combat.. Whenever Battering Ram becomes blocked by a Wall, destroy that Wall at end of combat.

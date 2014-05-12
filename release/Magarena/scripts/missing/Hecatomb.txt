@@ -1,0 +1,10 @@
+name=Hecatomb
+url=http://magiccards.info/query?q=%21Hecatomb
+image=http://mtgimage.com/card/hecatomb.jpg
+rarity=R
+type=Enchantment
+cost={1}{B}{B}
+ability=When SN enters the battlefield, sacrifice SN unless you sacrifice four creatures.;\
+        Tap an untapped Swamp you control: SN deals 1 damage to target creature or player.
+timing=main
+oracle=When Hecatomb enters the battlefield, sacrifice Hecatomb unless you sacrifice four creatures. Tap an untapped Swamp you control: Hecatomb deals 1 damage to target creature or player.

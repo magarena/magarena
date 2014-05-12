@@ -1,0 +1,9 @@
+name=Hunter's Insight
+url=http://magiccards.info/query?q=%21Hunter%27s+Insight
+image=http://mtgimage.com/card/hunter%27s%20insight.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Choose target creature you control. Whenever that creature deals combat damage to a player or planeswalker this turn, draw that many cards.
+timing=removal
+oracle=Choose target creature you control. Whenever that creature deals combat damage to a player or planeswalker this turn, draw that many cards.

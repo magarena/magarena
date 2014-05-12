@@ -1,0 +1,9 @@
+name=Cauldron Haze
+url=http://magiccards.info/query?q=%21Cauldron+Haze
+image=http://mtgimage.com/card/cauldron%20haze.jpg
+rarity=U
+type=Instant
+cost={1}{W/B}
+effect=Choose any number of target creatures. Each of those creatures gains persist until end of turn.
+timing=removal
+oracle=Choose any number of target creatures. Each of those creatures gains persist until end of turn.

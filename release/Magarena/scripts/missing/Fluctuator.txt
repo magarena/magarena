@@ -1,0 +1,9 @@
+name=Fluctuator
+url=http://magiccards.info/query?q=%21Fluctuator
+image=http://mtgimage.com/card/fluctuator.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Cycling abilities you activate cost you up to {2} less to activate.
+timing=main
+oracle=Cycling abilities you activate cost you up to {2} less to activate.

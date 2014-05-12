@@ -1,0 +1,9 @@
+name=Hope and Glory
+url=http://magiccards.info/query?q=%21Hope+and+Glory
+image=http://mtgimage.com/card/hope%20and%20glory.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Untap two target creatures. Each of them gets +1/+1 until end of turn.
+timing=removal
+oracle=Untap two target creatures. Each of them gets +1/+1 until end of turn.

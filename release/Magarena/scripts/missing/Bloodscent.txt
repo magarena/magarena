@@ -1,0 +1,9 @@
+name=Bloodscent
+url=http://magiccards.info/query?q=%21Bloodscent
+image=http://mtgimage.com/card/bloodscent.jpg
+rarity=U
+type=Instant
+cost={3}{G}
+effect=All creatures able to block target creature this turn do so.
+timing=removal
+oracle=All creatures able to block target creature this turn do so.

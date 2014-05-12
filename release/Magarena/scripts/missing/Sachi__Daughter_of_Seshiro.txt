@@ -1,0 +1,12 @@
+name=Sachi, Daughter of Seshiro
+url=http://magiccards.info/query?q=%21Sachi%2C+Daughter+of+Seshiro
+image=http://mtgimage.com/card/sachi%2C%20daughter%20of%20seshiro.jpg
+rarity=U
+type=Creature
+subtype=Snake,Shaman
+cost={2}{G}{G}
+pt=1/3
+ability=Other Snake creatures you control get +0/+1.;\
+        Shamans you control have "{T}: Add {G}{G} to your mana pool."
+timing=main
+oracle=Other Snake creatures you control get +0/+1. Shamans you control have "{T}: Add {G}{G} to your mana pool."

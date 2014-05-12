@@ -1,0 +1,9 @@
+name=Builder's Bane
+url=http://magiccards.info/query?q=%21Builder%27s+Bane
+image=http://mtgimage.com/card/builder%27s%20bane.jpg
+rarity=C
+type=Sorcery
+cost={X}{X}{R}
+effect=Destroy X target artifacts. SN deals damage to each player equal to the number of artifacts he or she controlled put into a graveyard this way.
+timing=main
+oracle=Destroy X target artifacts. Builder's Bane deals damage to each player equal to the number of artifacts he or she controlled put into a graveyard this way.

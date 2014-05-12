@@ -1,0 +1,9 @@
+name=Muscle Burst
+url=http://magiccards.info/query?q=%21Muscle+Burst
+image=http://mtgimage.com/card/muscle%20burst.jpg
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature gets +X/+X until end of turn, where X is 3 plus the number of cards named SN in all graveyards.
+timing=removal
+oracle=Target creature gets +X/+X until end of turn, where X is 3 plus the number of cards named Muscle Burst in all graveyards.

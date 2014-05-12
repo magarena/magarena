@@ -1,0 +1,9 @@
+name=Enter the Infinite
+url=http://magiccards.info/query?q=%21Enter+the+Infinite
+image=http://mtgimage.com/card/enter%20the%20infinite.jpg
+rarity=M
+type=Sorcery
+cost={8}{U}{U}{U}{U}
+effect=Draw cards equal to the number of cards in your library, then put a card from your hand on top of your library. You have no maximum hand size until your next turn.
+timing=main
+oracle=Draw cards equal to the number of cards in your library, then put a card from your hand on top of your library. You have no maximum hand size until your next turn.

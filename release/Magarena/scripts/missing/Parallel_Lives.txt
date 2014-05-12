@@ -1,0 +1,9 @@
+name=Parallel Lives
+url=http://magiccards.info/query?q=%21Parallel+Lives
+image=http://mtgimage.com/card/parallel%20lives.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=If an effect would put one or more tokens onto the battlefield under your control, it puts twice that many of those tokens onto the battlefield instead.
+timing=main
+oracle=If an effect would put one or more tokens onto the battlefield under your control, it puts twice that many of those tokens onto the battlefield instead.

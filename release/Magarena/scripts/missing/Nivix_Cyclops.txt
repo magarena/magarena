@@ -1,0 +1,12 @@
+name=Nivix Cyclops
+url=http://magiccards.info/query?q=%21Nivix+Cyclops
+image=http://mtgimage.com/card/nivix%20cyclops.jpg
+rarity=C
+type=Creature
+subtype=Cyclops
+cost={1}{U}{R}
+pt=1/4
+ability=Defender;\
+        Whenever you cast an instant or sorcery spell, SN gets +3/+0 until end of turn and can attack this turn as though it didn't have defender.
+timing=main
+oracle=Defender. Whenever you cast an instant or sorcery spell, Nivix Cyclops gets +3/+0 until end of turn and can attack this turn as though it didn't have defender.

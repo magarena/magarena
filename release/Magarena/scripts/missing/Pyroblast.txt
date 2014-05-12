@@ -1,0 +1,9 @@
+name=Pyroblast
+url=http://magiccards.info/query?q=%21Pyroblast
+image=http://mtgimage.com/card/pyroblast.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=Choose one — Counter target spell if it's blue; or destroy target permanent if it's blue.
+timing=removal
+oracle=Choose one — Counter target spell if it's blue; or destroy target permanent if it's blue.

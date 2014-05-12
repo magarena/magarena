@@ -1,0 +1,9 @@
+name=Soul Snare
+url=http://magiccards.info/query?q=%21Soul+Snare
+image=http://mtgimage.com/card/soul%20snare.jpg
+rarity=U
+type=Enchantment
+cost={W}
+ability={W}, Sacrifice SN: Exile target creature that's attacking you or a planeswalker you control.
+timing=main
+oracle={W}, Sacrifice Soul Snare: Exile target creature that's attacking you or a planeswalker you control.

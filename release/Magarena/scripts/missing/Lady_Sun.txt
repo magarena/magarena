@@ -1,0 +1,11 @@
+name=Lady Sun
+url=http://magiccards.info/query?q=%21Lady+Sun
+image=http://mtgimage.com/card/lady%20sun.jpg
+rarity=R
+type=Creature
+subtype=Human,Advisor
+cost={1}{U}{U}
+pt=1/1
+ability={T}: Return SN and another target creature to their owners' hands. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Return Lady Sun and another target creature to their owners' hands. Activate this ability only during your turn, before attackers are declared.

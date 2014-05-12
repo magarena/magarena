@@ -1,0 +1,11 @@
+name=Crazed Firecat
+url=http://magiccards.info/query?q=%21Crazed+Firecat
+image=http://mtgimage.com/card/crazed%20firecat.jpg
+rarity=U
+type=Creature
+subtype=Elemental,Cat
+cost={5}{R}{R}
+pt=4/4
+ability=When SN enters the battlefield, flip a coin until you lose a flip. Put a +1/+1 counter on SN for each flip you win.
+timing=main
+oracle=When Crazed Firecat enters the battlefield, flip a coin until you lose a flip. Put a +1/+1 counter on Crazed Firecat for each flip you win.

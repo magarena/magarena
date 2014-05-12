@@ -1,0 +1,12 @@
+name=Omnath, Locus of Mana
+url=http://magiccards.info/query?q=%21Omnath%2C+Locus+of+Mana
+image=http://mtgimage.com/card/omnath%2C%20locus%20of%20mana.jpg
+rarity=M
+type=Creature
+subtype=Elemental
+cost={2}{G}
+pt=1/1
+ability=Green mana doesn't empty from your mana pool as steps and phases end.;\
+        SN gets +1/+1 for each green mana in your mana pool.
+timing=main
+oracle=Green mana doesn't empty from your mana pool as steps and phases end. Omnath, Locus of Mana gets +1/+1 for each green mana in your mana pool.

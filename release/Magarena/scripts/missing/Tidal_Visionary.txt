@@ -1,0 +1,11 @@
+name=Tidal Visionary
+url=http://magiccards.info/query?q=%21Tidal+Visionary
+image=http://mtgimage.com/card/tidal%20visionary.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={U}
+pt=1/1
+ability={T}: Target creature becomes the color of your choice until end of turn.
+timing=main
+oracle={T}: Target creature becomes the color of your choice until end of turn.

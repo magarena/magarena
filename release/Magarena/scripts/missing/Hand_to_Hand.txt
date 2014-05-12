@@ -1,0 +1,9 @@
+name=Hand to Hand
+url=http://magiccards.info/query?q=%21Hand+to+Hand
+image=http://mtgimage.com/card/hand%20to%20hand.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability=During combat, players can't cast instant spells or activate abilities that aren't mana abilities.
+timing=main
+oracle=During combat, players can't cast instant spells or activate abilities that aren't mana abilities.

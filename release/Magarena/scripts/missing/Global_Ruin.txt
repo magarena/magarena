@@ -1,0 +1,9 @@
+name=Global Ruin
+url=http://magiccards.info/query?q=%21Global+Ruin
+image=http://mtgimage.com/card/global%20ruin.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}
+effect=Each player chooses from the lands he or she controls a land of each basic land type, then sacrifices the rest.
+timing=main
+oracle=Each player chooses from the lands he or she controls a land of each basic land type, then sacrifices the rest.

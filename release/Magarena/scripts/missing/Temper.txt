@@ -1,0 +1,9 @@
+name=Temper
+url=http://magiccards.info/query?q=%21Temper
+image=http://mtgimage.com/card/temper.jpg
+rarity=U
+type=Instant
+cost={X}{1}{W}
+effect=Prevent the next X damage that would be dealt to target creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.
+timing=removal
+oracle=Prevent the next X damage that would be dealt to target creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.

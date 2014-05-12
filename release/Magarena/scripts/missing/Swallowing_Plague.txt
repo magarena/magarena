@@ -1,0 +1,10 @@
+name=Swallowing Plague
+url=http://magiccards.info/query?q=%21Swallowing+Plague
+image=http://mtgimage.com/card/swallowing%20plague.jpg
+rarity=U
+type=Sorcery
+subtype=Arcane
+cost={X}{B}{B}
+effect=SN deals X damage to target creature and you gain X life.
+timing=main
+oracle=Swallowing Plague deals X damage to target creature and you gain X life.

@@ -1,0 +1,9 @@
+name=Errand of Duty
+url=http://magiccards.info/query?q=%21Errand+of+Duty
+image=http://mtgimage.com/card/errand%20of%20duty1.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Put a 1/1 white Knight creature token with banding onto the battlefield.
+timing=removal
+oracle=Put a 1/1 white Knight creature token with banding onto the battlefield.

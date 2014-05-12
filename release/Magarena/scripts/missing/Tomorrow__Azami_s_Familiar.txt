@@ -1,0 +1,11 @@
+name=Tomorrow, Azami's Familiar
+url=http://magiccards.info/query?q=%21Tomorrow%2C+Azami%27s+Familiar
+image=http://mtgimage.com/card/tomorrow%2C%20azami%27s%20familiar.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={5}{U}
+pt=1/5
+ability=If you would draw a card, look at the top three cards of your library instead. Put one of those cards into your hand and the rest on the bottom of your library in any order.
+timing=main
+oracle=If you would draw a card, look at the top three cards of your library instead. Put one of those cards into your hand and the rest on the bottom of your library in any order.

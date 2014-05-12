@@ -1,0 +1,12 @@
+name=Phyrexian Scuta
+url=http://magiccards.info/query?q=%21Phyrexian+Scuta
+image=http://mtgimage.com/card/phyrexian%20scuta.jpg
+rarity=R
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=3/3
+ability=Kicker—Pay 3 life.;\
+        If SN was kicked, it enters the battlefield with two +1/+1 counters on it.
+timing=main
+oracle=Kicker—Pay 3 life.. If Phyrexian Scuta was kicked, it enters the battlefield with two +1/+1 counters on it.

@@ -1,0 +1,12 @@
+name=Chandra Nalaar
+url=http://magiccards.info/query?q=%21Chandra+Nalaar
+image=http://mtgimage.com/card/chandra%20nalaar.jpg
+rarity=R
+type=Planeswalker
+subtype=Chandra
+cost={3}{R}{R}
+ability=+1: SN deals 1 damage to target player.;\
+        -X: SN deals X damage to target creature.;\
+        -8: SN deals 10 damage to target player and each creature he or she controls.
+timing=main
+oracle=+1: Chandra Nalaar deals 1 damage to target player. -X: Chandra Nalaar deals X damage to target creature. -8: Chandra Nalaar deals 10 damage to target player and each creature he or she controls.

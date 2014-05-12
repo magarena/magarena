@@ -1,0 +1,11 @@
+name=Simian Spirit Guide
+url=http://magiccards.info/query?q=%21Simian+Spirit+Guide
+image=http://mtgimage.com/card/simian%20spirit%20guide.jpg
+rarity=C
+type=Creature
+subtype=Ape,Spirit
+cost={2}{R}
+pt=2/2
+ability=Exile SN from your hand: Add {R} to your mana pool.
+timing=main
+oracle=Exile Simian Spirit Guide from your hand: Add {R} to your mana pool.

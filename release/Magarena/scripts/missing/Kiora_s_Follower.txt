@@ -1,0 +1,11 @@
+name=Kiora's Follower
+url=http://magiccards.info/query?q=%21Kiora%27s+Follower
+image=http://mtgimage.com/card/kiora%27s%20follower.jpg
+rarity=U
+type=Creature
+subtype=Merfolk
+cost={G}{U}
+pt=2/2
+ability={T}: Untap another target permanent.
+timing=main
+oracle={T}: Untap another target permanent.

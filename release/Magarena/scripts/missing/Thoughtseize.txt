@@ -1,0 +1,9 @@
+name=Thoughtseize
+url=http://magiccards.info/query?q=%21Thoughtseize
+image=http://mtgimage.com/card/thoughtseize.jpg
+rarity=R
+type=Sorcery
+cost={B}
+effect=Target player reveals his or her hand. You choose a nonland card from it. That player discards that card. You lose 2 life.
+timing=main
+oracle=Target player reveals his or her hand. You choose a nonland card from it. That player discards that card. You lose 2 life.

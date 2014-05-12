@@ -1,0 +1,12 @@
+name=Bladewing's Thrall
+url=http://magiccards.info/query?q=%21Bladewing%27s+Thrall
+image=http://mtgimage.com/card/bladewing%27s%20thrall.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}{B}
+pt=3/3
+ability=SN has flying as long as you control a Dragon.;\
+        When a Dragon enters the battlefield, you may return SN from your graveyard to the battlefield.
+timing=main
+oracle=Bladewing's Thrall has flying as long as you control a Dragon. When a Dragon enters the battlefield, you may return Bladewing's Thrall from your graveyard to the battlefield.

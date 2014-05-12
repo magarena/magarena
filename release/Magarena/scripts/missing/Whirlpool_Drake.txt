@@ -1,0 +1,13 @@
+name=Whirlpool Drake
+url=http://magiccards.info/query?q=%21Whirlpool+Drake
+image=http://mtgimage.com/card/whirlpool%20drake.jpg
+rarity=U
+type=Creature
+subtype=Drake
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        When SN enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.;\
+        When SN dies, shuffle the cards from your hand into your library, then draw that many cards.
+timing=main
+oracle=Flying. When Whirlpool Drake enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards. When Whirlpool Drake dies, shuffle the cards from your hand into your library, then draw that many cards.

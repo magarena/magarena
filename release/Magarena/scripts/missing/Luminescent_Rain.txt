@@ -1,0 +1,9 @@
+name=Luminescent Rain
+url=http://magiccards.info/query?q=%21Luminescent+Rain
+image=http://mtgimage.com/card/luminescent%20rain.jpg
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Choose a creature type. You gain 2 life for each permanent you control of that type.
+timing=removal
+oracle=Choose a creature type. You gain 2 life for each permanent you control of that type.

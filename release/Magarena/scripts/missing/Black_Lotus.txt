@@ -1,0 +1,9 @@
+name=Black Lotus
+url=http://magiccards.info/query?q=%21Black+Lotus
+image=http://mtgimage.com/card/black%20lotus.jpg
+rarity=R
+type=Artifact
+cost={0}
+ability={T}, Sacrifice SN: Add three mana of any one color to your mana pool.
+timing=main
+oracle={T}, Sacrifice Black Lotus: Add three mana of any one color to your mana pool.

@@ -1,0 +1,13 @@
+name=Hakim, Loreweaver
+url=http://magiccards.info/query?q=%21Hakim%2C+Loreweaver
+image=http://mtgimage.com/card/hakim%2C%20loreweaver.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}{U}
+pt=2/4
+ability=Flying;\
+        {U}{U}: Return target Aura card from your graveyard to the battlefield attached to SN. Activate this ability only during your upkeep and only if Hakim isn't enchanted.;\
+        {U}{U}, {T}: Destroy all Auras attached to Hakim.
+timing=main
+oracle=Flying. {U}{U}: Return target Aura card from your graveyard to the battlefield attached to Hakim, Loreweaver. Activate this ability only during your upkeep and only if Hakim isn't enchanted. {U}{U}, {T}: Destroy all Auras attached to Hakim.

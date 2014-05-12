@@ -1,0 +1,9 @@
+name=Celestial Sword
+url=http://magiccards.info/query?q=%21Celestial+Sword
+image=http://mtgimage.com/card/celestial%20sword.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability={3}, {T}: Target creature you control gets +3/+3 until end of turn. Its controller sacrifices it at the beginning of the next end step.
+timing=main
+oracle={3}, {T}: Target creature you control gets +3/+3 until end of turn. Its controller sacrifices it at the beginning of the next end step.

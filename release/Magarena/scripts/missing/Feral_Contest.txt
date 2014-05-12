@@ -1,0 +1,9 @@
+name=Feral Contest
+url=http://magiccards.info/query?q=%21Feral+Contest
+image=http://mtgimage.com/card/feral%20contest.jpg
+rarity=C
+type=Sorcery
+cost={3}{G}
+effect=Put a +1/+1 counter on target creature you control. Another target creature blocks it this turn if able.
+timing=main
+oracle=Put a +1/+1 counter on target creature you control. Another target creature blocks it this turn if able.

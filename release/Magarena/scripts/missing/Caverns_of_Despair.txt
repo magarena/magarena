@@ -1,0 +1,10 @@
+name=Caverns of Despair
+url=http://magiccards.info/query?q=%21Caverns+of+Despair
+image=http://mtgimage.com/card/caverns%20of%20despair.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}{R}
+ability=No more than two creatures can attack each combat.;\
+        No more than two creatures can block each combat.
+timing=main
+oracle=No more than two creatures can attack each combat. No more than two creatures can block each combat.

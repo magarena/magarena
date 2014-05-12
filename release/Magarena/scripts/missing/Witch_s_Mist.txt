@@ -1,0 +1,9 @@
+name=Witch's Mist
+url=http://magiccards.info/query?q=%21Witch%27s+Mist
+image=http://mtgimage.com/card/witch%27s%20mist.jpg
+rarity=U
+type=Enchantment
+cost={2}{B}
+ability={2}{B}, {T}: Destroy target creature that was dealt damage this turn.
+timing=main
+oracle={2}{B}, {T}: Destroy target creature that was dealt damage this turn.

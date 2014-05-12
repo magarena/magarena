@@ -1,0 +1,12 @@
+name=Weathered Bodyguards
+url=http://magiccards.info/query?q=%21Weathered+Bodyguards
+image=http://mtgimage.com/card/weathered%20bodyguards.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={5}{W}
+pt=2/5
+ability=As long as SN is untapped, all combat damage that would be dealt to you by unblocked creatures is dealt to SN instead.;\
+        Morph {3}{W}
+timing=main
+oracle=As long as Weathered Bodyguards is untapped, all combat damage that would be dealt to you by unblocked creatures is dealt to Weathered Bodyguards instead. Morph {3}{W}

@@ -1,0 +1,11 @@
+name=Elvish Soultiller
+url=http://magiccards.info/query?q=%21Elvish+Soultiller
+image=http://mtgimage.com/card/elvish%20soultiller.jpg
+rarity=R
+type=Creature
+subtype=Elf,Mutant
+cost={3}{G}{G}
+pt=5/4
+ability=When SN dies, choose a creature type. Shuffle all creature cards of that type from your graveyard into your library.
+timing=main
+oracle=When Elvish Soultiller dies, choose a creature type. Shuffle all creature cards of that type from your graveyard into your library.

@@ -1,0 +1,11 @@
+name=Kitsune Bonesetter
+url=http://magiccards.info/query?q=%21Kitsune+Bonesetter
+image=http://mtgimage.com/card/kitsune%20bonesetter.jpg
+rarity=C
+type=Creature
+subtype=Fox,Cleric
+cost={2}{W}
+pt=0/1
+ability={T}: Prevent the next 3 damage that would be dealt to target creature this turn. Activate this ability only if you have more cards in hand than each opponent.
+timing=main
+oracle={T}: Prevent the next 3 damage that would be dealt to target creature this turn. Activate this ability only if you have more cards in hand than each opponent.

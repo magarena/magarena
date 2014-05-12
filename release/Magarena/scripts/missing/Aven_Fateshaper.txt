@@ -1,0 +1,13 @@
+name=Aven Fateshaper
+url=http://magiccards.info/query?q=%21Aven+Fateshaper
+image=http://mtgimage.com/card/aven%20fateshaper.jpg
+rarity=U
+type=Creature
+subtype=Bird,Wizard
+cost={6}{U}
+pt=4/5
+ability=Flying;\
+        When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.;\
+        {4}{U}: Look at the top four cards of your library, then put them back in any order.
+timing=main
+oracle=Flying. When Aven Fateshaper enters the battlefield, look at the top four cards of your library, then put them back in any order. {4}{U}: Look at the top four cards of your library, then put them back in any order.

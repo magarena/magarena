@@ -1,0 +1,11 @@
+name=Quicksilver Gargantuan
+url=http://magiccards.info/query?q=%21Quicksilver+Gargantuan
+image=http://mtgimage.com/card/quicksilver%20gargantuan.jpg
+rarity=M
+type=Creature
+subtype=Shapeshifter
+cost={5}{U}{U}
+pt=7/7
+ability=You may have SN enter the battlefield as a copy of any creature on the battlefield, except it's still 7/7.
+timing=main
+oracle=You may have Quicksilver Gargantuan enter the battlefield as a copy of any creature on the battlefield, except it's still 7/7.

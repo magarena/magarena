@@ -1,0 +1,12 @@
+name=Tainted Well
+url=http://magiccards.info/query?q=%21Tainted+Well
+image=http://mtgimage.com/card/tainted%20well.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchant land;\
+        When SN enters the battlefield, draw a card.;\
+        Enchanted land is a Swamp.
+timing=main
+oracle=Enchant land. When Tainted Well enters the battlefield, draw a card. Enchanted land is a Swamp.

@@ -1,0 +1,11 @@
+name=Magus of the Arena
+url=http://magiccards.info/query?q=%21Magus+of+the+Arena
+image=http://mtgimage.com/card/magus%20of%20the%20arena.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={4}{R}{R}
+pt=5/5
+ability={3}, {T}: Tap target creature you control and target creature of an opponent's choice he or she controls. Those creatures fight each other.
+timing=main
+oracle={3}, {T}: Tap target creature you control and target creature of an opponent's choice he or she controls. Those creatures fight each other.

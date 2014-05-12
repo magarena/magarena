@@ -1,0 +1,12 @@
+name=Ordeal of Thassa
+url=http://magiccards.info/query?q=%21Ordeal+of+Thassa
+image=http://mtgimage.com/card/ordeal%20of%20thassa.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice SN.;\
+        When you sacrifice SN, draw two cards.
+timing=main
+oracle=Enchant creature. Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Thassa. When you sacrifice Ordeal of Thassa, draw two cards.

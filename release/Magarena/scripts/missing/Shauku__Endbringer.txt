@@ -1,0 +1,14 @@
+name=Shauku, Endbringer
+url=http://magiccards.info/query?q=%21Shauku%2C+Endbringer
+image=http://mtgimage.com/card/shauku%2C%20endbringer.jpg
+rarity=R
+type=Creature
+subtype=Vampire
+cost={5}{B}{B}
+pt=5/5
+ability=Flying;\
+        SN can't attack if there's another creature on the battlefield.;\
+        At the beginning of your upkeep, you lose 3 life.;\
+        {T}: Exile target creature and put a +1/+1 counter on Shauku.
+timing=main
+oracle=Flying. Shauku, Endbringer can't attack if there's another creature on the battlefield. At the beginning of your upkeep, you lose 3 life. {T}: Exile target creature and put a +1/+1 counter on Shauku.

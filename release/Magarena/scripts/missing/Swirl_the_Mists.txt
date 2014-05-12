@@ -1,0 +1,10 @@
+name=Swirl the Mists
+url=http://magiccards.info/query?q=%21Swirl+the+Mists
+image=http://mtgimage.com/card/swirl%20the%20mists.jpg
+rarity=R
+type=Enchantment
+cost={2}{U}{U}
+ability=As SN enters the battlefield, choose a color word.;\
+        All instances of color words in the text of spells and permanents are changed to the chosen color word.
+timing=main
+oracle=As Swirl the Mists enters the battlefield, choose a color word. All instances of color words in the text of spells and permanents are changed to the chosen color word.

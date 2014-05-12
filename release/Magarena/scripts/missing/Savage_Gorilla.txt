@@ -1,0 +1,11 @@
+name=Savage Gorilla
+url=http://magiccards.info/query?q=%21Savage+Gorilla
+image=http://mtgimage.com/card/savage%20gorilla.jpg
+rarity=C
+type=Creature
+subtype=Ape
+cost={4}{G}
+pt=3/3
+ability={U}{B}, {T}, Sacrifice SN: Target creature gets -3/-3 until end of turn. Draw a card.
+timing=main
+oracle={U}{B}, {T}, Sacrifice Savage Gorilla: Target creature gets -3/-3 until end of turn. Draw a card.

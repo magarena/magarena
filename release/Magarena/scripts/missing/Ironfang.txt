@@ -1,0 +1,11 @@
+name=Ironfang
+url=http://magiccards.info/query?q=%21Ironfang
+image=http://mtgimage.com/card/ironfang.jpg
+rarity=C
+type=Creature
+subtype=Werewolf
+pt=3/1
+ability=First strike;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=First strike. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ironfang.

@@ -1,0 +1,10 @@
+name=Thunderstaff
+url=http://magiccards.info/query?q=%21Thunderstaff
+image=http://mtgimage.com/card/thunderstaff.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability=As long as SN is untapped, if a creature would deal combat damage to you, prevent 1 of that damage.;\
+        {2}, {T}: Attacking creatures get +1/+0 until end of turn.
+timing=main
+oracle=As long as Thunderstaff is untapped, if a creature would deal combat damage to you, prevent 1 of that damage. {2}, {T}: Attacking creatures get +1/+0 until end of turn.

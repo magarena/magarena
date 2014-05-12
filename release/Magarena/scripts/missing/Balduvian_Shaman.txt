@@ -1,0 +1,11 @@
+name=Balduvian Shaman
+url=http://magiccards.info/query?q=%21Balduvian+Shaman
+image=http://mtgimage.com/card/balduvian%20shaman.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric,Shaman
+cost={U}
+pt=1/1
+ability={T}: Change the text of target white enchantment you control that doesn't have cumulative upkeep by replacing all instances of one color word with another. That enchantment gains "Cumulative upkeep {1}."
+timing=main
+oracle={T}: Change the text of target white enchantment you control that doesn't have cumulative upkeep by replacing all instances of one color word with another. That enchantment gains "Cumulative upkeep {1}."

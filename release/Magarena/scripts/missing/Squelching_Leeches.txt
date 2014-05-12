@@ -1,0 +1,11 @@
+name=Squelching Leeches
+url=http://magiccards.info/query?q=%21Squelching+Leeches
+image=http://mtgimage.com/card/squelching%20leeches.jpg
+rarity=U
+type=Creature
+subtype=Leech
+cost={2}{B}{B}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of Swamps you control.
+timing=main
+oracle=Squelching Leeches's power and toughness are each equal to the number of Swamps you control.

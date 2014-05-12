@@ -1,0 +1,13 @@
+name=Nacatl Hunt-Pride
+url=http://magiccards.info/query?q=%21Nacatl+Hunt-Pride
+image=http://mtgimage.com/card/nacatl%20hunt-pride.jpg
+rarity=U
+type=Creature
+subtype=Cat,Warrior
+cost={5}{W}
+pt=5/4
+ability=Vigilance;\
+        {R}, {T}: Target creature can't block this turn.;\
+        {G}, {T}: Target creature blocks this turn if able.
+timing=main
+oracle=Vigilance. {R}, {T}: Target creature can't block this turn. {G}, {T}: Target creature blocks this turn if able.

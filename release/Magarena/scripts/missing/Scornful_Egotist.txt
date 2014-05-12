@@ -1,0 +1,11 @@
+name=Scornful Egotist
+url=http://magiccards.info/query?q=%21Scornful+Egotist
+image=http://mtgimage.com/card/scornful%20egotist.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={7}{U}
+pt=1/1
+ability=Morph {U}
+timing=main
+oracle=Morph {U}

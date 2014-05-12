@@ -1,0 +1,10 @@
+name=Punishing Fire
+url=http://magiccards.info/query?q=%21Punishing+Fire
+image=http://mtgimage.com/card/punishing%20fire.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=SN deals 2 damage to target creature or player.;\
+        Whenever an opponent gains life, you may pay {R}. If you do, return SN from your graveyard to your hand.
+timing=removal
+oracle=Punishing Fire deals 2 damage to target creature or player. Whenever an opponent gains life, you may pay {R}. If you do, return Punishing Fire from your graveyard to your hand.

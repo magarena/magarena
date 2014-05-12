@@ -1,0 +1,12 @@
+name=Djinn Illuminatus
+url=http://magiccards.info/query?q=%21Djinn+Illuminatus
+image=http://mtgimage.com/card/djinn%20illuminatus.jpg
+rarity=R
+type=Creature
+subtype=Djinn
+cost={5}{U/R}{U/R}
+pt=3/5
+ability=Flying;\
+        Each instant and sorcery spell you cast has replicate. The replicate cost is equal to its mana cost.
+timing=main
+oracle=Flying. Each instant and sorcery spell you cast has replicate. The replicate cost is equal to its mana cost.

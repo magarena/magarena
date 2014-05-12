@@ -1,0 +1,10 @@
+name=Downdraft
+url=http://magiccards.info/query?q=%21Downdraft
+image=http://mtgimage.com/card/downdraft.jpg
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability={G}: Target creature loses flying until end of turn.;\
+        Sacrifice SN: SN deals 2 damage to each creature with flying.
+timing=main
+oracle={G}: Target creature loses flying until end of turn. Sacrifice Downdraft: Downdraft deals 2 damage to each creature with flying.

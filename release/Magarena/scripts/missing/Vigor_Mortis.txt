@@ -1,0 +1,9 @@
+name=Vigor Mortis
+url=http://magiccards.info/query?q=%21Vigor+Mortis
+image=http://mtgimage.com/card/vigor%20mortis.jpg
+rarity=U
+type=Sorcery
+cost={2}{B}{B}
+effect=Return target creature card from your graveyard to the battlefield. If {G} was spent to cast SN, that creature enters the battlefield with an additional +1/+1 counter on it.
+timing=main
+oracle=Return target creature card from your graveyard to the battlefield. If {G} was spent to cast Vigor Mortis, that creature enters the battlefield with an additional +1/+1 counter on it.

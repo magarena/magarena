@@ -1,0 +1,11 @@
+name=General Jarkeld
+url=http://magiccards.info/query?q=%21General+Jarkeld
+image=http://mtgimage.com/card/general%20jarkeld.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=1/2
+ability={T}: Switch the blocking creatures of two target attacking creatures. Activate this ability only during the declare blockers step.
+timing=main
+oracle={T}: Switch the blocking creatures of two target attacking creatures. Activate this ability only during the declare blockers step.

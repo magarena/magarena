@@ -1,0 +1,9 @@
+name=Jet Medallion
+url=http://magiccards.info/query?q=%21Jet+Medallion
+image=http://mtgimage.com/card/jet%20medallion.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Black spells you cast cost {1} less to cast.
+timing=main
+oracle=Black spells you cast cost {1} less to cast.

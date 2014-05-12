@@ -1,0 +1,9 @@
+name=Reversal of Fortune
+url=http://magiccards.info/query?q=%21Reversal+of+Fortune
+image=http://mtgimage.com/card/reversal%20of%20fortune.jpg
+rarity=R
+type=Sorcery
+cost={4}{R}{R}
+effect=Target opponent reveals his or her hand. You may copy an instant or sorcery card in it. If you do, you may cast the copy without paying its mana cost.
+timing=main
+oracle=Target opponent reveals his or her hand. You may copy an instant or sorcery card in it. If you do, you may cast the copy without paying its mana cost.

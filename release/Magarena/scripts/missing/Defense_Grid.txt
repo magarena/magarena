@@ -1,0 +1,9 @@
+name=Defense Grid
+url=http://magiccards.info/query?q=%21Defense+Grid
+image=http://mtgimage.com/card/defense%20grid.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Each spell costs {3} more to cast except during its controller's turn.
+timing=main
+oracle=Each spell costs {3} more to cast except during its controller's turn.

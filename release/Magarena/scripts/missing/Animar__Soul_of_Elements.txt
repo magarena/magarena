@@ -1,0 +1,13 @@
+name=Animar, Soul of Elements
+url=http://magiccards.info/query?q=%21Animar%2C+Soul+of+Elements
+image=http://mtgimage.com/card/animar%2C%20soul%20of%20elements.jpg
+rarity=M
+type=Creature
+subtype=Elemental
+cost={U}{R}{G}
+pt=1/1
+ability=Protection from white and from black;\
+        Whenever you cast a creature spell, put a +1/+1 counter on SN.;\
+        Creature spells you cast cost {1} less to cast for each +1/+1 counter on Animar.
+timing=main
+oracle=Protection from white and from black. Whenever you cast a creature spell, put a +1/+1 counter on Animar, Soul of Elements. Creature spells you cast cost {1} less to cast for each +1/+1 counter on Animar.

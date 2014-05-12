@@ -1,0 +1,11 @@
+name=Fire Bowman
+url=http://magiccards.info/query?q=%21Fire+Bowman
+image=http://mtgimage.com/card/fire%20bowman.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier,Archer
+cost={R}
+pt=1/1
+ability=Sacrifice SN: SN deals 1 damage to target creature or player. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle=Sacrifice Fire Bowman: Fire Bowman deals 1 damage to target creature or player. Activate this ability only during your turn, before attackers are declared.

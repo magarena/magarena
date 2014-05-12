@@ -1,0 +1,11 @@
+name=Through the Breach
+url=http://magiccards.info/query?q=%21Through+the+Breach
+image=http://mtgimage.com/card/through%20the%20breach.jpg
+rarity=R
+type=Instant
+subtype=Arcane
+cost={4}{R}
+effect=You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice that creature at the beginning of the next end step.;\
+        Splice onto Arcane {2}{R}{R}
+timing=removal
+oracle=You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice that creature at the beginning of the next end step. Splice onto Arcane {2}{R}{R}

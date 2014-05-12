@@ -1,0 +1,10 @@
+name=Ruins of Trokair
+url=http://magiccards.info/query?q=%21Ruins+of+Trokair
+image=http://mtgimage.com/card/ruins%20of%20trokair.jpg
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {W} to your mana pool.;\
+        {T}, Sacrifice SN: Add {W}{W} to your mana pool.
+timing=main
+oracle=Ruins of Trokair enters the battlefield tapped. {T}: Add {W} to your mana pool. {T}, Sacrifice Ruins of Trokair: Add {W}{W} to your mana pool.

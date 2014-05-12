@@ -1,0 +1,10 @@
+name=Leyline of Lightning
+url=http://magiccards.info/query?q=%21Leyline+of+Lightning
+image=http://mtgimage.com/card/leyline%20of%20lightning.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}{R}
+ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
+        Whenever you cast a spell, you may pay {1}. If you do, SN deals 1 damage to target player.
+timing=main
+oracle=If Leyline of Lightning is in your opening hand, you may begin the game with it on the battlefield. Whenever you cast a spell, you may pay {1}. If you do, Leyline of Lightning deals 1 damage to target player.

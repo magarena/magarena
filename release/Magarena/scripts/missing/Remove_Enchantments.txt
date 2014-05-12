@@ -1,0 +1,9 @@
+name=Remove Enchantments
+url=http://magiccards.info/query?q=%21Remove+Enchantments
+image=http://mtgimage.com/card/remove%20enchantments.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Return to your hand all enchantments you both own and control, all Auras you own attached to permanents you control, and all Auras you own attached to attacking creatures your opponents control. Then destroy all other enchantments you control, all other Auras attached to permanents you control, and all other Auras attached to attacking creatures your opponents control.
+timing=removal
+oracle=Return to your hand all enchantments you both own and control, all Auras you own attached to permanents you control, and all Auras you own attached to attacking creatures your opponents control. Then destroy all other enchantments you control, all other Auras attached to permanents you control, and all other Auras attached to attacking creatures your opponents control.

@@ -1,0 +1,11 @@
+name=Lurking Informant
+url=http://magiccards.info/query?q=%21Lurking+Informant
+image=http://mtgimage.com/card/lurking%20informant.jpg
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={1}{U/B}
+pt=1/2
+ability={2}, {T}: Look at the top card of target player's library. You may put that card into that player's graveyard.
+timing=main
+oracle={2}, {T}: Look at the top card of target player's library. You may put that card into that player's graveyard.

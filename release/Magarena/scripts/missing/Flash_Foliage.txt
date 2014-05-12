@@ -1,0 +1,11 @@
+name=Flash Foliage
+url=http://magiccards.info/query?q=%21Flash+Foliage
+image=http://mtgimage.com/card/flash%20foliage.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Cast SN only during combat after blockers are declared.;\
+        Put a 1/1 green Saproling creature token onto the battlefield blocking target creature attacking you.;\
+        Draw a card.
+timing=removal
+oracle=Cast Flash Foliage only during combat after blockers are declared. Put a 1/1 green Saproling creature token onto the battlefield blocking target creature attacking you. Draw a card.

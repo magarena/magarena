@@ -1,0 +1,10 @@
+name=Pyxis of Pandemonium
+url=http://magiccards.info/query?q=%21Pyxis+of+Pandemonium
+image=http://mtgimage.com/card/pyxis%20of%20pandemonium.jpg
+rarity=R
+type=Artifact
+cost={1}
+ability={T}: Each player exiles the top card of his or her library face down.;\
+        {7}, {T}, Sacrifice SN: Each player turns face up all cards he or she owns exiled with SN, then puts all permanent cards among them onto the battlefield.
+timing=main
+oracle={T}: Each player exiles the top card of his or her library face down. {7}, {T}, Sacrifice Pyxis of Pandemonium: Each player turns face up all cards he or she owns exiled with Pyxis of Pandemonium, then puts all permanent cards among them onto the battlefield.

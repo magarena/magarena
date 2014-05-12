@@ -1,0 +1,11 @@
+name=Stonewise Fortifier
+url=http://magiccards.info/query?q=%21Stonewise+Fortifier
+image=http://mtgimage.com/card/stonewise%20fortifier.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{W}
+pt=2/2
+ability={4}{W}: Prevent all damage that would be dealt to SN by target creature this turn.
+timing=main
+oracle={4}{W}: Prevent all damage that would be dealt to Stonewise Fortifier by target creature this turn.

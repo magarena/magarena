@@ -1,0 +1,11 @@
+name=Radjan Spirit
+url=http://magiccards.info/query?q=%21Radjan+Spirit
+image=http://mtgimage.com/card/radjan%20spirit.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{G}
+pt=3/2
+ability={T}: Target creature loses flying until end of turn.
+timing=main
+oracle={T}: Target creature loses flying until end of turn.

@@ -1,0 +1,10 @@
+name=Resize
+url=http://magiccards.info/query?q=%21Resize
+image=http://mtgimage.com/card/resize.jpg
+rarity=U
+type=Instant
+cost={1}{G}
+effect=Target creature gets +3/+3 until end of turn.;\
+        Recover {1}{G}
+timing=removal
+oracle=Target creature gets +3/+3 until end of turn. Recover {1}{G}

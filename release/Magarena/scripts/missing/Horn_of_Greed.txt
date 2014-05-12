@@ -1,0 +1,9 @@
+name=Horn of Greed
+url=http://magiccards.info/query?q=%21Horn+of+Greed
+image=http://mtgimage.com/card/horn%20of%20greed.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever a player plays a land, that player draws a card.
+timing=main
+oracle=Whenever a player plays a land, that player draws a card.

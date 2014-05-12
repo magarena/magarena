@@ -1,0 +1,9 @@
+name=Treva's Charm
+url=http://magiccards.info/query?q=%21Treva%27s+Charm
+image=http://mtgimage.com/card/treva%27s%20charm.jpg
+rarity=U
+type=Instant
+cost={G}{W}{U}
+effect=Choose one — Destroy target enchantment; or exile target attacking creature; or draw a card, then discard a card.
+timing=removal
+oracle=Choose one — Destroy target enchantment; or exile target attacking creature; or draw a card, then discard a card.

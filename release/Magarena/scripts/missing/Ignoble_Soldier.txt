@@ -1,0 +1,11 @@
+name=Ignoble Soldier
+url=http://magiccards.info/query?q=%21Ignoble+Soldier
+image=http://mtgimage.com/card/ignoble%20soldier.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=3/1
+ability=Whenever SN becomes blocked, prevent all combat damage that would be dealt by it this turn.
+timing=main
+oracle=Whenever Ignoble Soldier becomes blocked, prevent all combat damage that would be dealt by it this turn.

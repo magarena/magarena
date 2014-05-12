@@ -1,0 +1,9 @@
+name=Dimir Charm
+url=http://magiccards.info/query?q=%21Dimir+Charm
+image=http://mtgimage.com/card/dimir%20charm.jpg
+rarity=U
+type=Instant
+cost={U}{B}
+effect=Choose one — Counter target sorcery spell; or destroy target creature with power 2 or less; or look at the top three cards of target player's library, then put one back and the rest into that player's graveyard.
+timing=removal
+oracle=Choose one — Counter target sorcery spell; or destroy target creature with power 2 or less; or look at the top three cards of target player's library, then put one back and the rest into that player's graveyard.

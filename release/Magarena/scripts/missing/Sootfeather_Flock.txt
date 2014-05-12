@@ -1,0 +1,12 @@
+name=Sootfeather Flock
+url=http://magiccards.info/query?q=%21Sootfeather+Flock
+image=http://mtgimage.com/card/sootfeather%20flock.jpg
+rarity=C
+type=Creature
+subtype=Bird
+cost={4}{B}
+pt=3/2
+ability=Flying;\
+        Morph {3}{B}
+timing=main
+oracle=Flying. Morph {3}{B}

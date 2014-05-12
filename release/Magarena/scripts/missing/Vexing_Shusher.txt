@@ -1,0 +1,12 @@
+name=Vexing Shusher
+url=http://magiccards.info/query?q=%21Vexing+Shusher
+image=http://mtgimage.com/card/vexing%20shusher.jpg
+rarity=R
+type=Creature
+subtype=Goblin,Shaman
+cost={R/G}{R/G}
+pt=2/2
+ability=SN can't be countered.;\
+        {R/G}: Target spell can't be countered by spells or abilities.
+timing=main
+oracle=Vexing Shusher can't be countered. {R/G}: Target spell can't be countered by spells or abilities.

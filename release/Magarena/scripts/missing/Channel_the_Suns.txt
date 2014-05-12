@@ -1,0 +1,9 @@
+name=Channel the Suns
+url=http://magiccards.info/query?q=%21Channel+the+Suns
+image=http://mtgimage.com/card/channel%20the%20suns.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Add {W}{U}{B}{R}{G} to your mana pool.
+timing=main
+oracle=Add {W}{U}{B}{R}{G} to your mana pool.

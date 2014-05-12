@@ -1,0 +1,10 @@
+name=Mirari's Wake
+url=http://magiccards.info/query?q=%21Mirari%27s+Wake
+image=http://mtgimage.com/card/mirari%27s%20wake.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}{W}
+ability=Creatures you control get +1/+1.;\
+        Whenever you tap a land for mana, add one mana to your mana pool of any type that land produced.
+timing=main
+oracle=Creatures you control get +1/+1. Whenever you tap a land for mana, add one mana to your mana pool of any type that land produced.

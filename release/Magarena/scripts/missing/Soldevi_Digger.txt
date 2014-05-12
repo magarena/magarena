@@ -1,0 +1,9 @@
+name=Soldevi Digger
+url=http://magiccards.info/query?q=%21Soldevi+Digger
+image=http://mtgimage.com/card/soldevi%20digger.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={2}: Put the top card of your graveyard on the bottom of your library.
+timing=main
+oracle={2}: Put the top card of your graveyard on the bottom of your library.

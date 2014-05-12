@@ -1,0 +1,9 @@
+name=Veiled Apparition
+url=http://magiccards.info/query?q=%21Veiled+Apparition
+image=http://mtgimage.com/card/veiled%20apparition.jpg
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=When an opponent casts a spell, if SN is an enchantment, SN becomes a 3/3 Illusion creature with flying and "At the beginning of your upkeep, sacrifice SN unless you pay {1}{U}."
+timing=main
+oracle=When an opponent casts a spell, if Veiled Apparition is an enchantment, Veiled Apparition becomes a 3/3 Illusion creature with flying and "At the beginning of your upkeep, sacrifice Veiled Apparition unless you pay {1}{U}."

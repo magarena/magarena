@@ -1,0 +1,13 @@
+name=Muck Drubb
+url=http://magiccards.info/query?q=%21Muck+Drubb
+image=http://mtgimage.com/card/muck%20drubb.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{B}{B}
+pt=3/3
+ability=Flash;\
+        When SN enters the battlefield, change the target of target spell that targets only a single creature to SN.;\
+        Madness {2}{B}
+timing=main
+oracle=Flash. When Muck Drubb enters the battlefield, change the target of target spell that targets only a single creature to Muck Drubb. Madness {2}{B}

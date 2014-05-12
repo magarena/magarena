@@ -1,0 +1,9 @@
+name=Rhystic Syphon
+url=http://magiccards.info/query?q=%21Rhystic+Syphon
+image=http://mtgimage.com/card/rhystic%20syphon.jpg
+rarity=U
+type=Sorcery
+cost={3}{B}{B}
+effect=Unless target player pays {3}, he or she loses 5 life and you gain 5 life.
+timing=main
+oracle=Unless target player pays {3}, he or she loses 5 life and you gain 5 life.

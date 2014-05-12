@@ -1,0 +1,9 @@
+name=Shaman's Trance
+url=http://magiccards.info/query?q=%21Shaman%27s+Trance
+image=http://mtgimage.com/card/shaman%27s%20trance.jpg
+rarity=R
+type=Instant
+cost={2}{R}
+effect=Until end of turn, other players can't play cards from their graveyards, and you may play cards from other players' graveyards as though they were in your graveyard.
+timing=removal
+oracle=Until end of turn, other players can't play cards from their graveyards, and you may play cards from other players' graveyards as though they were in your graveyard.

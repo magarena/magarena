@@ -1,0 +1,9 @@
+name=Ruination
+url=http://magiccards.info/query?q=%21Ruination
+image=http://mtgimage.com/card/ruination.jpg
+rarity=R
+type=Sorcery
+cost={3}{R}
+effect=Destroy all nonbasic lands.
+timing=main
+oracle=Destroy all nonbasic lands.

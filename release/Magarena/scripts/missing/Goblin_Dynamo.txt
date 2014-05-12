@@ -1,0 +1,12 @@
+name=Goblin Dynamo
+url=http://magiccards.info/query?q=%21Goblin+Dynamo
+image=http://mtgimage.com/card/goblin%20dynamo.jpg
+rarity=U
+type=Creature
+subtype=Goblin,Mutant
+cost={5}{R}{R}
+pt=4/4
+ability={T}: SN deals 1 damage to target creature or player.;\
+        {X}{R}, {T}, Sacrifice SN: SN deals X damage to target creature or player.
+timing=main
+oracle={T}: Goblin Dynamo deals 1 damage to target creature or player. {X}{R}, {T}, Sacrifice Goblin Dynamo: Goblin Dynamo deals X damage to target creature or player.

@@ -1,0 +1,12 @@
+name=Chandra, the Firebrand
+url=http://magiccards.info/query?q=%21Chandra%2C+the+Firebrand
+image=http://mtgimage.com/card/chandra%2C%20the%20firebrand.jpg
+rarity=M
+type=Planeswalker
+subtype=Chandra
+cost={3}{R}
+ability=+1: SN deals 1 damage to target creature or player.;\
+        -2: When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy.;\
+        -6: SN deals 6 damage to each of up to six target creatures and/or players.
+timing=main
+oracle=+1: Chandra, the Firebrand deals 1 damage to target creature or player. -2: When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy. -6: Chandra, the Firebrand deals 6 damage to each of up to six target creatures and/or players.

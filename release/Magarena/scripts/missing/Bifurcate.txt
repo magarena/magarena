@@ -1,0 +1,9 @@
+name=Bifurcate
+url=http://magiccards.info/query?q=%21Bifurcate
+image=http://mtgimage.com/card/bifurcate.jpg
+rarity=R
+type=Sorcery
+cost={3}{G}
+effect=Search your library for a permanent card with the same name as target nontoken creature and put that card onto the battlefield. Then shuffle your library.
+timing=main
+oracle=Search your library for a permanent card with the same name as target nontoken creature and put that card onto the battlefield. Then shuffle your library.

@@ -1,0 +1,9 @@
+name=Hanabi Blast
+url=http://magiccards.info/query?q=%21Hanabi+Blast
+image=http://mtgimage.com/card/hanabi%20blast.jpg
+rarity=U
+type=Instant
+cost={1}{R}{R}
+effect=SN deals 2 damage to target creature or player. Return SN to its owner's hand, then discard a card at random.
+timing=removal
+oracle=Hanabi Blast deals 2 damage to target creature or player. Return Hanabi Blast to its owner's hand, then discard a card at random.

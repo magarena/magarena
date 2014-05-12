@@ -1,0 +1,9 @@
+name=Wind Shear
+url=http://magiccards.info/query?q=%21Wind+Shear
+image=http://mtgimage.com/card/wind%20shear.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Attacking creatures with flying get -2/-2 and lose flying until end of turn.
+timing=removal
+oracle=Attacking creatures with flying get -2/-2 and lose flying until end of turn.

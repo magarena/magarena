@@ -1,0 +1,11 @@
+name=Descendant of Soramaro
+url=http://magiccards.info/query?q=%21Descendant+of+Soramaro
+image=http://mtgimage.com/card/descendant%20of%20soramaro.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/3
+ability={1}{U}: Look at the top X cards of your library, where X is the number of cards in your hand, then put them back in any order.
+timing=main
+oracle={1}{U}: Look at the top X cards of your library, where X is the number of cards in your hand, then put them back in any order.

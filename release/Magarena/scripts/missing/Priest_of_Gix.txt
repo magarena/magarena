@@ -1,0 +1,11 @@
+name=Priest of Gix
+url=http://magiccards.info/query?q=%21Priest+of+Gix
+image=http://mtgimage.com/card/priest%20of%20gix.jpg
+rarity=U
+type=Creature
+subtype=Human,Cleric,Minion
+cost={2}{B}
+pt=2/1
+ability=When SN enters the battlefield, add {B}{B}{B} to your mana pool.
+timing=main
+oracle=When Priest of Gix enters the battlefield, add {B}{B}{B} to your mana pool.

@@ -1,0 +1,9 @@
+name=Credit Voucher
+url=http://magiccards.info/query?q=%21Credit+Voucher
+image=http://mtgimage.com/card/credit%20voucher.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={2}, {T}, Sacrifice SN: Shuffle any number of cards from your hand into your library, then draw that many cards.
+timing=main
+oracle={2}, {T}, Sacrifice Credit Voucher: Shuffle any number of cards from your hand into your library, then draw that many cards.

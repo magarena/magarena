@@ -1,0 +1,13 @@
+name=Rakavolver
+url=http://magiccards.info/query?q=%21Rakavolver
+image=http://mtgimage.com/card/rakavolver.jpg
+rarity=R
+type=Creature
+subtype=Volver
+cost={2}{R}
+pt=2/2
+ability=Kicker {1}{W} and/or {U};\
+        If SN was kicked with its {1}{W} kicker, it enters the battlefield with two +1/+1 counters on it and with "Whenever SN deals damage, you gain that much life.";\
+        If SN was kicked with its {U} kicker, it enters the battlefield with a +1/+1 counter on it and with flying.
+timing=main
+oracle=Kicker {1}{W} and/or {U}. If Rakavolver was kicked with its {1}{W} kicker, it enters the battlefield with two +1/+1 counters on it and with "Whenever Rakavolver deals damage, you gain that much life.". If Rakavolver was kicked with its {U} kicker, it enters the battlefield with a +1/+1 counter on it and with flying.

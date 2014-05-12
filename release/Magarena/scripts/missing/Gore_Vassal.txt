@@ -1,0 +1,11 @@
+name=Gore Vassal
+url=http://magiccards.info/query?q=%21Gore+Vassal
+image=http://mtgimage.com/card/gore%20vassal.jpg
+rarity=U
+type=Creature
+subtype=Hound
+cost={2}{W}
+pt=2/1
+ability=Sacrifice SN: Put a -1/-1 counter on target creature. Then if that creature's toughness is 1 or greater, regenerate it.
+timing=main
+oracle=Sacrifice Gore Vassal: Put a -1/-1 counter on target creature. Then if that creature's toughness is 1 or greater, regenerate it.

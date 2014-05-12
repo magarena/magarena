@@ -1,0 +1,9 @@
+name=Weakstone
+url=http://magiccards.info/query?q=%21Weakstone
+image=http://mtgimage.com/card/weakstone.jpg
+rarity=U
+type=Artifact
+cost={4}
+ability=Attacking creatures get -1/-0.
+timing=main
+oracle=Attacking creatures get -1/-0.

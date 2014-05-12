@@ -1,0 +1,13 @@
+name=Melek, Izzet Paragon
+url=http://magiccards.info/query?q=%21Melek%2C+Izzet+Paragon
+image=http://mtgimage.com/card/melek%2C%20izzet%20paragon.jpg
+rarity=R
+type=Creature
+subtype=Weird,Wizard
+cost={4}{U}{R}
+pt=2/4
+ability=Play with the top card of your library revealed.;\
+        You may cast the top card of your library if it's an instant or sorcery card.;\
+        Whenever you cast an instant or sorcery spell from your library, copy it. You may choose new targets for the copy.
+timing=main
+oracle=Play with the top card of your library revealed. You may cast the top card of your library if it's an instant or sorcery card. Whenever you cast an instant or sorcery spell from your library, copy it. You may choose new targets for the copy.

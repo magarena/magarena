@@ -1,0 +1,9 @@
+name=Choking Sands
+url=http://magiccards.info/query?q=%21Choking+Sands
+image=http://mtgimage.com/card/choking%20sands.jpg
+rarity=C
+type=Sorcery
+cost={1}{B}{B}
+effect=Destroy target non-Swamp land. If that land was nonbasic, SN deals 2 damage to the land's controller.
+timing=main
+oracle=Destroy target non-Swamp land. If that land was nonbasic, Choking Sands deals 2 damage to the land's controller.

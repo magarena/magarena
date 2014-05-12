@@ -1,0 +1,13 @@
+name=Crypt Champion
+url=http://magiccards.info/query?q=%21Crypt+Champion
+image=http://mtgimage.com/card/crypt%20champion.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=2/2
+ability=Double strike;\
+        When SN enters the battlefield, each player puts a creature card with converted mana cost 3 or less from his or her graveyard onto the battlefield.;\
+        When SN enters the battlefield, sacrifice it unless {R} was spent to cast it.
+timing=main
+oracle=Double strike. When Crypt Champion enters the battlefield, each player puts a creature card with converted mana cost 3 or less from his or her graveyard onto the battlefield. When Crypt Champion enters the battlefield, sacrifice it unless {R} was spent to cast it.

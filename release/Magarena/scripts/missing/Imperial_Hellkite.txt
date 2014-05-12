@@ -1,0 +1,13 @@
+name=Imperial Hellkite
+url=http://magiccards.info/query?q=%21Imperial+Hellkite
+image=http://mtgimage.com/card/imperial%20hellkite.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={5}{R}{R}
+pt=6/6
+ability=Flying;\
+        Morph {6}{R}{R};\
+        When SN is turned face up, you may search your library for a Dragon card, reveal it, and put it into your hand. If you do, shuffle your library.
+timing=main
+oracle=Flying. Morph {6}{R}{R}. When Imperial Hellkite is turned face up, you may search your library for a Dragon card, reveal it, and put it into your hand. If you do, shuffle your library.

@@ -1,0 +1,9 @@
+name=Intervene
+url=http://magiccards.info/query?q=%21Intervene
+image=http://mtgimage.com/card/intervene.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Counter target spell that targets a creature.
+timing=removal
+oracle=Counter target spell that targets a creature.

@@ -1,0 +1,11 @@
+name=Quirion Explorer
+url=http://magiccards.info/query?q=%21Quirion+Explorer
+image=http://mtgimage.com/card/quirion%20explorer.jpg
+rarity=C
+type=Creature
+subtype=Elf,Druid,Scout
+cost={1}{G}
+pt=1/1
+ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
+timing=main
+oracle={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.

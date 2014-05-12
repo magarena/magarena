@@ -1,0 +1,10 @@
+name=Firestorm
+url=http://magiccards.info/query?q=%21Firestorm
+image=http://mtgimage.com/card/firestorm.jpg
+rarity=R
+type=Instant
+cost={R}
+effect=As an additional cost to cast SN, discard X cards.;\
+        SN deals X damage to each of X target creatures and/or players.
+timing=removal
+oracle=As an additional cost to cast Firestorm, discard X cards. Firestorm deals X damage to each of X target creatures and/or players.

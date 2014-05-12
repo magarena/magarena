@@ -1,0 +1,9 @@
+name=Swelter
+url=http://magiccards.info/query?q=%21Swelter
+image=http://mtgimage.com/card/swelter.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}
+effect=SN deals 2 damage to each of two target creatures.
+timing=main
+oracle=Swelter deals 2 damage to each of two target creatures.

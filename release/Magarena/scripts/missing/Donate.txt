@@ -1,0 +1,9 @@
+name=Donate
+url=http://magiccards.info/query?q=%21Donate
+image=http://mtgimage.com/card/donate.jpg
+rarity=R
+type=Sorcery
+cost={2}{U}
+effect=Target player gains control of target permanent you control.
+timing=main
+oracle=Target player gains control of target permanent you control.

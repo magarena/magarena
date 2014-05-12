@@ -1,0 +1,11 @@
+name=Aegis of the Gods
+url=http://magiccards.info/query?q=%21Aegis+of+the+Gods
+image=http://mtgimage.com/card/aegis%20of%20the%20gods.jpg
+rarity=R
+type=Enchantment,Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/1
+ability=You have hexproof.
+timing=main
+oracle=You have hexproof.

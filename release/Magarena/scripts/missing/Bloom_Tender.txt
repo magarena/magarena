@@ -1,0 +1,11 @@
+name=Bloom Tender
+url=http://magiccards.info/query?q=%21Bloom+Tender
+image=http://mtgimage.com/card/bloom%20tender.jpg
+rarity=R
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}
+pt=1/1
+ability={T}: For each color among permanents you control, add one mana of that color to your mana pool.
+timing=main
+oracle={T}: For each color among permanents you control, add one mana of that color to your mana pool.

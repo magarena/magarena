@@ -1,0 +1,9 @@
+name=Haunting Wind
+url=http://magiccards.info/query?q=%21Haunting+Wind
+image=http://mtgimage.com/card/haunting%20wind.jpg
+rarity=U
+type=Enchantment
+cost={3}{B}
+ability=Whenever an artifact becomes tapped or a player activates an artifact's ability without {T} in its activation cost, SN deals 1 damage to that artifact's controller.
+timing=main
+oracle=Whenever an artifact becomes tapped or a player activates an artifact's ability without {T} in its activation cost, Haunting Wind deals 1 damage to that artifact's controller.

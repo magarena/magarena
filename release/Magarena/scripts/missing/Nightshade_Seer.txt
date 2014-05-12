@@ -1,0 +1,11 @@
+name=Nightshade Seer
+url=http://magiccards.info/query?q=%21Nightshade+Seer
+image=http://mtgimage.com/card/nightshade%20seer.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{B}
+pt=1/1
+ability={2}{B}, {T}: Reveal any number of black cards in your hand. Target creature gets -X/-X until end of turn, where X is the number of cards revealed this way.
+timing=main
+oracle={2}{B}, {T}: Reveal any number of black cards in your hand. Target creature gets -X/-X until end of turn, where X is the number of cards revealed this way.

@@ -1,0 +1,11 @@
+name=Heart of Light
+url=http://magiccards.info/query?q=%21Heart+of+Light
+image=http://mtgimage.com/card/heart%20of%20light.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        Prevent all damage that would be dealt to and dealt by enchanted creature.
+timing=main
+oracle=Enchant creature. Prevent all damage that would be dealt to and dealt by enchanted creature.

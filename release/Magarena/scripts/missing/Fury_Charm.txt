@@ -1,0 +1,9 @@
+name=Fury Charm
+url=http://magiccards.info/query?q=%21Fury+Charm
+image=http://mtgimage.com/card/fury%20charm.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Choose one — Destroy target artifact; or target creature gets +1/+1 and gains trample until end of turn; or remove two time counters from target permanent or suspended card.
+timing=removal
+oracle=Choose one — Destroy target artifact; or target creature gets +1/+1 and gains trample until end of turn; or remove two time counters from target permanent or suspended card.

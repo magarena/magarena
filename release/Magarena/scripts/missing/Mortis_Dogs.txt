@@ -1,0 +1,12 @@
+name=Mortis Dogs
+url=http://magiccards.info/query?q=%21Mortis+Dogs
+image=http://mtgimage.com/card/mortis%20dogs.jpg
+rarity=C
+type=Creature
+subtype=Hound
+cost={3}{B}
+pt=2/2
+ability=Whenever SN attacks, it gets +2/+0 until end of turn.;\
+        When SN dies, target player loses life equal to its power.
+timing=main
+oracle=Whenever Mortis Dogs attacks, it gets +2/+0 until end of turn. When Mortis Dogs dies, target player loses life equal to its power.

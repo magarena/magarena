@@ -1,0 +1,10 @@
+name=Spinerock Knoll
+url=http://magiccards.info/query?q=%21Spinerock+Knoll
+image=http://mtgimage.com/card/spinerock%20knoll.jpg
+rarity=R
+type=Land
+ability=Hideaway;\
+        {T}: Add {R} to your mana pool.;\
+        {R}, {T}: You may play the exiled card without paying its mana cost if an opponent was dealt 7 or more damage this turn.
+timing=main
+oracle=Hideaway. {T}: Add {R} to your mana pool. {R}, {T}: You may play the exiled card without paying its mana cost if an opponent was dealt 7 or more damage this turn.

@@ -1,0 +1,12 @@
+name=Gigapede
+url=http://magiccards.info/query?q=%21Gigapede
+image=http://mtgimage.com/card/gigapede.jpg
+rarity=R
+type=Creature
+subtype=Insect
+cost={3}{G}{G}
+pt=6/1
+ability=Shroud;\
+        At the beginning of your upkeep, if SN is in your graveyard, you may discard a card. If you do, return SN to your hand.
+timing=main
+oracle=Shroud. At the beginning of your upkeep, if Gigapede is in your graveyard, you may discard a card. If you do, return Gigapede to your hand.

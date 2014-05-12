@@ -1,0 +1,12 @@
+name=Chained Throatseeker
+url=http://magiccards.info/query?q=%21Chained+Throatseeker
+image=http://mtgimage.com/card/chained%20throatseeker.jpg
+rarity=C
+type=Creature
+subtype=Horror
+cost={5}{U}
+pt=5/5
+ability=Infect;\
+        SN can't attack unless defending player is poisoned.
+timing=main
+oracle=Infect. Chained Throatseeker can't attack unless defending player is poisoned.

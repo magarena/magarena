@@ -1,0 +1,11 @@
+name=Children of Korlis
+url=http://magiccards.info/query?q=%21Children+of+Korlis
+image=http://mtgimage.com/card/children%20of%20korlis.jpg
+rarity=C
+type=Creature
+subtype=Human,Rebel,Cleric
+cost={W}
+pt=1/1
+ability=Sacrifice SN: You gain life equal to the life you've lost this turn.
+timing=main
+oracle=Sacrifice Children of Korlis: You gain life equal to the life you've lost this turn.

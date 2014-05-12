@@ -1,0 +1,9 @@
+name=Fated Infatuation
+url=http://magiccards.info/query?q=%21Fated+Infatuation
+image=http://mtgimage.com/card/fated%20infatuation.jpg
+rarity=R
+type=Instant
+cost={U}{U}{U}
+effect=Put a token onto the battlefield that's a copy of target creature you control. If it's your turn, scry 2.
+timing=removal
+oracle=Put a token onto the battlefield that's a copy of target creature you control. If it's your turn, scry 2.

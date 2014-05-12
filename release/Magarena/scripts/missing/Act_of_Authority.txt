@@ -1,0 +1,10 @@
+name=Act of Authority
+url=http://magiccards.info/query?q=%21Act+of+Authority
+image=http://mtgimage.com/card/act%20of%20authority.jpg
+rarity=R
+type=Enchantment
+cost={1}{W}{W}
+ability=When SN enters the battlefield, you may exile target artifact or enchantment.;\
+        At the beginning of your upkeep, you may exile target artifact or enchantment. If you do, its controller gains control of SN.
+timing=main
+oracle=When Act of Authority enters the battlefield, you may exile target artifact or enchantment. At the beginning of your upkeep, you may exile target artifact or enchantment. If you do, its controller gains control of Act of Authority.

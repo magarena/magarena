@@ -1,0 +1,12 @@
+name=Stigma Lasher
+url=http://magiccards.info/query?q=%21Stigma+Lasher
+image=http://mtgimage.com/card/stigma%20lasher.jpg
+rarity=R
+type=Creature
+subtype=Elemental,Shaman
+cost={R}{R}
+pt=2/2
+ability=Wither;\
+        Whenever SN deals damage to a player, that player can't gain life for the rest of the game.
+timing=main
+oracle=Wither. Whenever Stigma Lasher deals damage to a player, that player can't gain life for the rest of the game.

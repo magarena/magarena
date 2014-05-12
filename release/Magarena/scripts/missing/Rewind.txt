@@ -1,0 +1,9 @@
+name=Rewind
+url=http://magiccards.info/query?q=%21Rewind
+image=http://mtgimage.com/card/rewind.jpg
+rarity=C
+type=Instant
+cost={2}{U}{U}
+effect=Counter target spell. Untap up to four lands.
+timing=removal
+oracle=Counter target spell. Untap up to four lands.

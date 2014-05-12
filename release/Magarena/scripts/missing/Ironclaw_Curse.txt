@@ -1,0 +1,12 @@
+name=Ironclaw Curse
+url=http://magiccards.info/query?q=%21Ironclaw+Curse
+image=http://mtgimage.com/card/ironclaw%20curse.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={R}
+ability=Enchant creature;\
+        Enchanted creature gets -0/-1.;\
+        Enchanted creature can't block creatures with power equal to or greater than the enchanted creature's toughness.
+timing=main
+oracle=Enchant creature. Enchanted creature gets -0/-1. Enchanted creature can't block creatures with power equal to or greater than the enchanted creature's toughness.

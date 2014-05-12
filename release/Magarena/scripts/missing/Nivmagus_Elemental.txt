@@ -1,0 +1,11 @@
+name=Nivmagus Elemental
+url=http://magiccards.info/query?q=%21Nivmagus+Elemental
+image=http://mtgimage.com/card/nivmagus%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={U/R}
+pt=1/2
+ability=Exile an instant or sorcery spell you control: Put two +1/+1 counters on SN.
+timing=main
+oracle=Exile an instant or sorcery spell you control: Put two +1/+1 counters on Nivmagus Elemental.

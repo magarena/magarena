@@ -1,0 +1,9 @@
+name=Empty City Ruse
+url=http://magiccards.info/query?q=%21Empty+City+Ruse
+image=http://mtgimage.com/card/empty%20city%20ruse.jpg
+rarity=U
+type=Sorcery
+cost={W}
+effect=Target opponent skips all combat phases of his or her next turn.
+timing=main
+oracle=Target opponent skips all combat phases of his or her next turn.

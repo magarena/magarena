@@ -1,0 +1,12 @@
+name=Junk Diver
+url=http://magiccards.info/query?q=%21Junk+Diver
+image=http://mtgimage.com/card/junk%20diver.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Bird
+cost={3}
+pt=1/1
+ability=Flying;\
+        When SN dies, return another target artifact card from your graveyard to your hand.
+timing=main
+oracle=Flying. When Junk Diver dies, return another target artifact card from your graveyard to your hand.

@@ -1,0 +1,13 @@
+name=Deathrite Shaman
+url=http://magiccards.info/query?q=%21Deathrite+Shaman
+image=http://mtgimage.com/card/deathrite%20shaman.jpg
+rarity=R
+type=Creature
+subtype=Elf,Shaman
+cost={B/G}
+pt=1/2
+ability={T}: Exile target land card from a graveyard. Add one mana of any color to your mana pool.;\
+        {B}, {T}: Exile target instant or sorcery card from a graveyard. Each opponent loses 2 life.;\
+        {G}, {T}: Exile target creature card from a graveyard. You gain 2 life.
+timing=main
+oracle={T}: Exile target land card from a graveyard. Add one mana of any color to your mana pool. {B}, {T}: Exile target instant or sorcery card from a graveyard. Each opponent loses 2 life. {G}, {T}: Exile target creature card from a graveyard. You gain 2 life.

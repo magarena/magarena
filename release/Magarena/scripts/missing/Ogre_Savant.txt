@@ -1,0 +1,11 @@
+name=Ogre Savant
+url=http://magiccards.info/query?q=%21Ogre+Savant
+image=http://mtgimage.com/card/ogre%20savant.jpg
+rarity=C
+type=Creature
+subtype=Ogre,Wizard
+cost={4}{R}
+pt=3/2
+ability=When SN enters the battlefield, if {U} was spent to cast SN, return target creature to its owner's hand.
+timing=main
+oracle=When Ogre Savant enters the battlefield, if {U} was spent to cast Ogre Savant, return target creature to its owner's hand.

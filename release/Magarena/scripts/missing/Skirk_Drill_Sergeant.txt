@@ -1,0 +1,11 @@
+name=Skirk Drill Sergeant
+url=http://magiccards.info/query?q=%21Skirk+Drill+Sergeant
+image=http://mtgimage.com/card/skirk%20drill%20sergeant.jpg
+rarity=U
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=2/1
+ability=Whenever SN or another Goblin dies, you may pay {2}{R}. If you do, reveal the top card of your library. If it's a Goblin permanent card, put it onto the battlefield. Otherwise, put it into your graveyard.
+timing=main
+oracle=Whenever Skirk Drill Sergeant or another Goblin dies, you may pay {2}{R}. If you do, reveal the top card of your library. If it's a Goblin permanent card, put it onto the battlefield. Otherwise, put it into your graveyard.

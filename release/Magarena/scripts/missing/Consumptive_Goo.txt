@@ -1,0 +1,11 @@
+name=Consumptive Goo
+url=http://magiccards.info/query?q=%21Consumptive+Goo
+image=http://mtgimage.com/card/consumptive%20goo.jpg
+rarity=R
+type=Creature
+subtype=Ooze
+cost={B}{B}
+pt=1/1
+ability={2}{B}{B}: Target creature gets -1/-1 until end of turn. Put a +1/+1 counter on SN.
+timing=main
+oracle={2}{B}{B}: Target creature gets -1/-1 until end of turn. Put a +1/+1 counter on Consumptive Goo.

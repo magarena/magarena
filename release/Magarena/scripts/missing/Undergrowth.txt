@@ -1,0 +1,10 @@
+name=Undergrowth
+url=http://magiccards.info/query?q=%21Undergrowth
+image=http://mtgimage.com/card/undergrowth1.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=As an additional cost to cast SN, you may pay {2}{R}.;\
+        Prevent all combat damage that would be dealt this turn. If its additional cost was paid, SN doesn't affect combat damage that would be dealt by red creatures.
+timing=removal
+oracle=As an additional cost to cast Undergrowth, you may pay {2}{R}. Prevent all combat damage that would be dealt this turn. If its additional cost was paid, Undergrowth doesn't affect combat damage that would be dealt by red creatures.

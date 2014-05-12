@@ -1,0 +1,9 @@
+name=Fatigue
+url=http://magiccards.info/query?q=%21Fatigue
+image=http://mtgimage.com/card/fatigue.jpg
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Target player skips his or her next draw step.
+timing=main
+oracle=Target player skips his or her next draw step.

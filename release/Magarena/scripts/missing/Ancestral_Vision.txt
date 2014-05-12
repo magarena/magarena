@@ -1,0 +1,9 @@
+name=Ancestral Vision
+url=http://magiccards.info/query?q=%21Ancestral+Vision
+image=http://mtgimage.com/card/ancestral%20vision.jpg
+rarity=R
+type=Sorcery
+effect=Suspend 4—{U};\
+        Target player draws three cards.
+timing=main
+oracle=Suspend 4—{U}. Target player draws three cards.

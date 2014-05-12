@@ -1,0 +1,13 @@
+name=Predator Ooze
+url=http://magiccards.info/query?q=%21Predator+Ooze
+image=http://mtgimage.com/card/predator%20ooze.jpg
+rarity=R
+type=Creature
+subtype=Ooze
+cost={G}{G}{G}
+pt=1/1
+ability=Indestructible;\
+        Whenever SN attacks, put a +1/+1 counter on it.;\
+        Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.
+timing=main
+oracle=Indestructible. Whenever Predator Ooze attacks, put a +1/+1 counter on it. Whenever a creature dealt damage by Predator Ooze this turn dies, put a +1/+1 counter on Predator Ooze.

@@ -1,0 +1,9 @@
+name=Unwinding Clock
+url=http://magiccards.info/query?q=%21Unwinding+Clock
+image=http://mtgimage.com/card/unwinding%20clock.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=Untap all artifacts you control during each other player's untap step.
+timing=main
+oracle=Untap all artifacts you control during each other player's untap step.

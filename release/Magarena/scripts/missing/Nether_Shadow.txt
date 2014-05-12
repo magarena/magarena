@@ -1,0 +1,12 @@
+name=Nether Shadow
+url=http://magiccards.info/query?q=%21Nether+Shadow
+image=http://mtgimage.com/card/nether%20shadow.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={B}{B}
+pt=1/1
+ability=Haste;\
+        At the beginning of your upkeep, if SN is in your graveyard with three or more creature cards above it, you may put SN onto the battlefield.
+timing=main
+oracle=Haste. At the beginning of your upkeep, if Nether Shadow is in your graveyard with three or more creature cards above it, you may put Nether Shadow onto the battlefield.

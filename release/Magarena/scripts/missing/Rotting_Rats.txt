@@ -1,0 +1,12 @@
+name=Rotting Rats
+url=http://magiccards.info/query?q=%21Rotting+Rats
+image=http://mtgimage.com/card/rotting%20rats.jpg
+rarity=C
+type=Creature
+subtype=Zombie,Rat
+cost={1}{B}
+pt=1/1
+ability=When SN enters the battlefield, each player discards a card.;\
+        Unearth {1}{B}
+timing=main
+oracle=When Rotting Rats enters the battlefield, each player discards a card. Unearth {1}{B}

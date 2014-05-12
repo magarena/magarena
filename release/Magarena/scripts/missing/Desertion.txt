@@ -1,0 +1,9 @@
+name=Desertion
+url=http://magiccards.info/query?q=%21Desertion
+image=http://mtgimage.com/card/desertion.jpg
+rarity=R
+type=Instant
+cost={3}{U}{U}
+effect=Counter target spell. If an artifact or creature spell is countered this way, put that card onto the battlefield under your control instead of into its owner's graveyard.
+timing=removal
+oracle=Counter target spell. If an artifact or creature spell is countered this way, put that card onto the battlefield under your control instead of into its owner's graveyard.

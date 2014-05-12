@@ -1,0 +1,11 @@
+name=Deepwood Elder
+url=http://magiccards.info/query?q=%21Deepwood+Elder
+image=http://mtgimage.com/card/deepwood%20elder.jpg
+rarity=R
+type=Creature
+subtype=Dryad,Spellshaper
+cost={G}{G}
+pt=2/2
+ability={X}{G}{G}, {T}, Discard a card: X target lands become Forests until end of turn.
+timing=main
+oracle={X}{G}{G}, {T}, Discard a card: X target lands become Forests until end of turn.

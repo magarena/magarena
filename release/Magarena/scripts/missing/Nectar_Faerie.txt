@@ -1,0 +1,12 @@
+name=Nectar Faerie
+url=http://magiccards.info/query?q=%21Nectar+Faerie
+image=http://mtgimage.com/card/nectar%20faerie.jpg
+rarity=U
+type=Creature
+subtype=Faerie,Wizard
+cost={1}{B}
+pt=1/1
+ability=Flying;\
+        {B}, {T}: Target Faerie or Elf gains lifelink until end of turn.
+timing=main
+oracle=Flying. {B}, {T}: Target Faerie or Elf gains lifelink until end of turn.

@@ -1,0 +1,9 @@
+name=Thran Tome
+url=http://magiccards.info/query?q=%21Thran+Tome
+image=http://mtgimage.com/card/thran%20tome.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={5}, {T}: Reveal the top three cards of your library. Target opponent chooses one of those cards. Put that card into your graveyard, then draw two cards.
+timing=main
+oracle={5}, {T}: Reveal the top three cards of your library. Target opponent chooses one of those cards. Put that card into your graveyard, then draw two cards.

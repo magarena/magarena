@@ -1,0 +1,9 @@
+name=Scour
+url=http://magiccards.info/query?q=%21Scour
+image=http://mtgimage.com/card/scour.jpg
+rarity=U
+type=Instant
+cost={2}{W}{W}
+effect=Exile target enchantment. Search its controller's graveyard, hand, and library for all cards with the same name as that enchantment and exile them. Then that player shuffles his or her library.
+timing=removal
+oracle=Exile target enchantment. Search its controller's graveyard, hand, and library for all cards with the same name as that enchantment and exile them. Then that player shuffles his or her library.

@@ -1,0 +1,11 @@
+name=Greater Mossdog
+url=http://magiccards.info/query?q=%21Greater+Mossdog
+image=http://mtgimage.com/card/greater%20mossdog.jpg
+rarity=C
+type=Creature
+subtype=Plant,Hound
+cost={3}{G}
+pt=3/3
+ability=Dredge 3
+timing=main
+oracle=Dredge 3

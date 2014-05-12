@@ -1,0 +1,12 @@
+name=Wind Spirit
+url=http://magiccards.info/query?q=%21Wind+Spirit
+image=http://mtgimage.com/card/wind%20spirit.jpg
+rarity=U
+type=Creature
+subtype=Elemental,Spirit
+cost={4}{U}
+pt=3/2
+ability=Flying;\
+        SN can't be blocked except by two or more creatures.
+timing=main
+oracle=Flying. Wind Spirit can't be blocked except by two or more creatures.

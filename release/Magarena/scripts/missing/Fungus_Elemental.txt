@@ -1,0 +1,11 @@
+name=Fungus Elemental
+url=http://magiccards.info/query?q=%21Fungus+Elemental
+image=http://mtgimage.com/card/fungus%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Fungus,Elemental
+cost={3}{G}
+pt=3/3
+ability={G}, Sacrifice a Forest: Put a +2/+2 counter on SN. Activate this ability only if SN entered the battlefield this turn.
+timing=main
+oracle={G}, Sacrifice a Forest: Put a +2/+2 counter on Fungus Elemental. Activate this ability only if Fungus Elemental entered the battlefield this turn.

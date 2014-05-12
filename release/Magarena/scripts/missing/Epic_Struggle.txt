@@ -1,0 +1,9 @@
+name=Epic Struggle
+url=http://magiccards.info/query?q=%21Epic+Struggle
+image=http://mtgimage.com/card/epic%20struggle.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}{G}
+ability=At the beginning of your upkeep, if you control twenty or more creatures, you win the game.
+timing=main
+oracle=At the beginning of your upkeep, if you control twenty or more creatures, you win the game.

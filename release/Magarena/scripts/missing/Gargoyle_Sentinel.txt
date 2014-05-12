@@ -1,0 +1,12 @@
+name=Gargoyle Sentinel
+url=http://magiccards.info/query?q=%21Gargoyle+Sentinel
+image=http://mtgimage.com/card/gargoyle%20sentinel.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Gargoyle
+cost={3}
+pt=3/3
+ability=Defender;\
+        {3}: Until end of turn, SN loses defender and gains flying.
+timing=main
+oracle=Defender. {3}: Until end of turn, Gargoyle Sentinel loses defender and gains flying.

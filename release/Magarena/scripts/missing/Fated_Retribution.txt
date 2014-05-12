@@ -1,0 +1,9 @@
+name=Fated Retribution
+url=http://magiccards.info/query?q=%21Fated+Retribution
+image=http://mtgimage.com/card/fated%20retribution.jpg
+rarity=R
+type=Instant
+cost={4}{W}{W}{W}
+effect=Destroy all creatures and planeswalkers. If it's your turn, scry 2.
+timing=removal
+oracle=Destroy all creatures and planeswalkers. If it's your turn, scry 2.

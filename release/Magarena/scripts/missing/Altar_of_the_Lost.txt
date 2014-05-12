@@ -1,0 +1,10 @@
+name=Altar of the Lost
+url=http://magiccards.info/query?q=%21Altar+of+the+Lost
+image=http://mtgimage.com/card/altar%20of%20the%20lost.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability=SN enters the battlefield tapped.;\
+        {T}: Add two mana in any combination of colors to your mana pool. Spend this mana only to cast spells with flashback from a graveyard.
+timing=main
+oracle=Altar of the Lost enters the battlefield tapped. {T}: Add two mana in any combination of colors to your mana pool. Spend this mana only to cast spells with flashback from a graveyard.

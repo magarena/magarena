@@ -1,0 +1,9 @@
+name=Treacherous Urge
+url=http://magiccards.info/query?q=%21Treacherous+Urge
+image=http://mtgimage.com/card/treacherous%20urge.jpg
+rarity=U
+type=Instant
+cost={4}{B}
+effect=Target opponent reveals his or her hand. You may put a creature card from it onto the battlefield under your control. That creature gains haste. Sacrifice it at the beginning of the next end step.
+timing=removal
+oracle=Target opponent reveals his or her hand. You may put a creature card from it onto the battlefield under your control. That creature gains haste. Sacrifice it at the beginning of the next end step.

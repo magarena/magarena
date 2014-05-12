@@ -1,0 +1,12 @@
+name=Cold-Eyed Selkie
+url=http://magiccards.info/query?q=%21Cold-Eyed+Selkie
+image=http://mtgimage.com/card/cold-eyed%20selkie.jpg
+rarity=R
+type=Creature
+subtype=Merfolk,Rogue
+cost={1}{G/U}{G/U}
+pt=1/1
+ability=Islandwalk;\
+        Whenever SN deals combat damage to a player, you may draw that many cards.
+timing=main
+oracle=Islandwalk. Whenever Cold-Eyed Selkie deals combat damage to a player, you may draw that many cards.

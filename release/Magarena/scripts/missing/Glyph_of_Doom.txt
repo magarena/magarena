@@ -1,0 +1,9 @@
+name=Glyph of Doom
+url=http://magiccards.info/query?q=%21Glyph+of+Doom
+image=http://mtgimage.com/card/glyph%20of%20doom.jpg
+rarity=C
+type=Instant
+cost={B}
+effect=Choose target Wall creature. At this turn's next end of combat, destroy all creatures that were blocked by that creature this turn.
+timing=removal
+oracle=Choose target Wall creature. At this turn's next end of combat, destroy all creatures that were blocked by that creature this turn.

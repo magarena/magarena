@@ -1,0 +1,11 @@
+name=Blaze Commando
+url=http://magiccards.info/query?q=%21Blaze+Commando
+image=http://mtgimage.com/card/blaze%20commando.jpg
+rarity=U
+type=Creature
+subtype=Minotaur,Soldier
+cost={3}{R}{W}
+pt=5/3
+ability=Whenever an instant or sorcery spell you control deals damage, put two 1/1 red and white Soldier creature tokens with haste onto the battlefield.
+timing=main
+oracle=Whenever an instant or sorcery spell you control deals damage, put two 1/1 red and white Soldier creature tokens with haste onto the battlefield.

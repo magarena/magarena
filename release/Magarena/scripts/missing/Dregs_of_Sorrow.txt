@@ -1,0 +1,9 @@
+name=Dregs of Sorrow
+url=http://magiccards.info/query?q=%21Dregs+of+Sorrow
+image=http://mtgimage.com/card/dregs%20of%20sorrow.jpg
+rarity=R
+type=Sorcery
+cost={X}{4}{B}
+effect=Destroy X target nonblack creatures. Draw X cards.
+timing=main
+oracle=Destroy X target nonblack creatures. Draw X cards.

@@ -1,0 +1,10 @@
+name=Rouse
+url=http://magiccards.info/query?q=%21Rouse
+image=http://mtgimage.com/card/rouse.jpg
+rarity=C
+type=Instant
+cost={1}{B}
+effect=If you control a Swamp, you may pay 2 life rather than pay SN's mana cost.;\
+        Target creature gets +2/+0 until end of turn.
+timing=removal
+oracle=If you control a Swamp, you may pay 2 life rather than pay Rouse's mana cost. Target creature gets +2/+0 until end of turn.

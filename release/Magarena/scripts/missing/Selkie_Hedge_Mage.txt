@@ -1,0 +1,12 @@
+name=Selkie Hedge-Mage
+url=http://magiccards.info/query?q=%21Selkie+Hedge-Mage
+image=http://mtgimage.com/card/selkie%20hedge-mage.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{G/U}
+pt=2/2
+ability=When SN enters the battlefield, if you control two or more Forests, you may gain 3 life.;\
+        When SN enters the battlefield, if you control two or more Islands, you may return target tapped creature to its owner's hand.
+timing=main
+oracle=When Selkie Hedge-Mage enters the battlefield, if you control two or more Forests, you may gain 3 life. When Selkie Hedge-Mage enters the battlefield, if you control two or more Islands, you may return target tapped creature to its owner's hand.

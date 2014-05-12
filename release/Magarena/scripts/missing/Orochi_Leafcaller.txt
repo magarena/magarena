@@ -1,0 +1,11 @@
+name=Orochi Leafcaller
+url=http://magiccards.info/query?q=%21Orochi+Leafcaller
+image=http://mtgimage.com/card/orochi%20leafcaller.jpg
+rarity=C
+type=Creature
+subtype=Snake,Shaman
+cost={G}
+pt=1/1
+ability={G}: Add one mana of any color to your mana pool.
+timing=main
+oracle={G}: Add one mana of any color to your mana pool.

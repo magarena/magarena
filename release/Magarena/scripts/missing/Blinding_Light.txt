@@ -1,0 +1,9 @@
+name=Blinding Light
+url=http://magiccards.info/query?q=%21Blinding+Light
+image=http://mtgimage.com/card/blinding%20light.jpg
+rarity=U
+type=Sorcery
+cost={2}{W}
+effect=Tap all nonwhite creatures.
+timing=main
+oracle=Tap all nonwhite creatures.

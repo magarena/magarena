@@ -1,0 +1,11 @@
+name=Tsabo's Assassin
+url=http://magiccards.info/query?q=%21Tsabo%27s+Assassin
+image=http://mtgimage.com/card/tsabo%27s%20assassin.jpg
+rarity=R
+type=Creature
+subtype=Zombie,Assassin
+cost={2}{B}{B}
+pt=1/1
+ability={T}: Destroy target creature if it shares a color with the most common color among all permanents or a color tied for most common. A creature destroyed this way can't be regenerated.
+timing=main
+oracle={T}: Destroy target creature if it shares a color with the most common color among all permanents or a color tied for most common. A creature destroyed this way can't be regenerated.

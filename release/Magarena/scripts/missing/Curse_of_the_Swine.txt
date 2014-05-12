@@ -1,0 +1,9 @@
+name=Curse of the Swine
+url=http://magiccards.info/query?q=%21Curse+of+the+Swine
+image=http://mtgimage.com/card/curse%20of%20the%20swine.jpg
+rarity=R
+type=Sorcery
+cost={X}{U}{U}
+effect=Exile X target creatures. For each creature exiled this way, its controller puts a 2/2 green Boar creature token onto the battlefield.
+timing=main
+oracle=Exile X target creatures. For each creature exiled this way, its controller puts a 2/2 green Boar creature token onto the battlefield.

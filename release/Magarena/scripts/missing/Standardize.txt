@@ -1,0 +1,9 @@
+name=Standardize
+url=http://magiccards.info/query?q=%21Standardize
+image=http://mtgimage.com/card/standardize.jpg
+rarity=R
+type=Instant
+cost={U}{U}
+effect=Choose a creature type other than Wall. Each creature becomes that type until end of turn.
+timing=removal
+oracle=Choose a creature type other than Wall. Each creature becomes that type until end of turn.

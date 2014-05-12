@@ -1,0 +1,13 @@
+name=Squealing Devil
+url=http://magiccards.info/query?q=%21Squealing+Devil
+image=http://mtgimage.com/card/squealing%20devil.jpg
+rarity=U
+type=Creature
+subtype=Devil
+cost={1}{R}
+pt=2/1
+ability=Fear;\
+        When SN enters the battlefield, you may pay {X}. If you do, target creature gets +X/+0 until end of turn.;\
+        When SN enters the battlefield, sacrifice it unless {B} was spent to cast it.
+timing=main
+oracle=Fear. When Squealing Devil enters the battlefield, you may pay {X}. If you do, target creature gets +X/+0 until end of turn. When Squealing Devil enters the battlefield, sacrifice it unless {B} was spent to cast it.

@@ -1,0 +1,12 @@
+name=Sengir Bats
+url=http://magiccards.info/query?q=%21Sengir+Bats
+image=http://mtgimage.com/card/sengir%20bats1.jpg
+rarity=C
+type=Creature
+subtype=Bat
+cost={1}{B}{B}
+pt=1/2
+ability=Flying;\
+        Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.
+timing=main
+oracle=Flying. Whenever a creature dealt damage by Sengir Bats this turn dies, put a +1/+1 counter on Sengir Bats.

@@ -1,0 +1,11 @@
+name=Wu Warship
+url=http://magiccards.info/query?q=%21Wu+Warship
+image=http://mtgimage.com/card/wu%20warship.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{U}
+pt=3/3
+ability=SN can't attack unless defending player controls an Island.
+timing=main
+oracle=Wu Warship can't attack unless defending player controls an Island.

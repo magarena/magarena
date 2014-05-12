@@ -1,0 +1,9 @@
+name=Suicidal Charge
+url=http://magiccards.info/query?q=%21Suicidal+Charge
+image=http://mtgimage.com/card/suicidal%20charge.jpg
+rarity=C
+type=Enchantment
+cost={3}{B}{R}
+ability=Sacrifice SN: Creatures your opponents control get -1/-1 until end of turn. Those creatures attack this turn if able.
+timing=main
+oracle=Sacrifice Suicidal Charge: Creatures your opponents control get -1/-1 until end of turn. Those creatures attack this turn if able.

@@ -1,0 +1,12 @@
+name=Aku Djinn
+url=http://magiccards.info/query?q=%21Aku+Djinn
+image=http://mtgimage.com/card/aku%20djinn.jpg
+rarity=R
+type=Creature
+subtype=Djinn
+cost={3}{B}{B}
+pt=5/6
+ability=Trample;\
+        At the beginning of your upkeep, put a +1/+1 counter on each creature each opponent controls.
+timing=main
+oracle=Trample. At the beginning of your upkeep, put a +1/+1 counter on each creature each opponent controls.

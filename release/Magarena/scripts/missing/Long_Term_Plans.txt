@@ -1,0 +1,9 @@
+name=Long-Term Plans
+url=http://magiccards.info/query?q=%21Long-Term+Plans
+image=http://mtgimage.com/card/long-term%20plans.jpg
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Search your library for a card, shuffle your library, then put that card third from the top.
+timing=removal
+oracle=Search your library for a card, shuffle your library, then put that card third from the top.

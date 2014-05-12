@@ -1,0 +1,11 @@
+name=Riptide Mangler
+url=http://magiccards.info/query?q=%21Riptide+Mangler
+image=http://mtgimage.com/card/riptide%20mangler.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={1}{U}
+pt=0/3
+ability={1}{U}: Change SN's power to target creature's power.
+timing=main
+oracle={1}{U}: Change Riptide Mangler's power to target creature's power.

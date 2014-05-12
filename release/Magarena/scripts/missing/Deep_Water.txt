@@ -1,0 +1,9 @@
+name=Deep Water
+url=http://magiccards.info/query?q=%21Deep+Water
+image=http://mtgimage.com/card/deep%20water.jpg
+rarity=C
+type=Enchantment
+cost={U}{U}
+ability={U}: Until end of turn, if you tap a land you control for mana, it produces {U} instead of any other type.
+timing=main
+oracle={U}: Until end of turn, if you tap a land you control for mana, it produces {U} instead of any other type.

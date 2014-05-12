@@ -1,0 +1,9 @@
+name=Gelatinous Genesis
+url=http://magiccards.info/query?q=%21Gelatinous+Genesis
+image=http://mtgimage.com/card/gelatinous%20genesis.jpg
+rarity=R
+type=Sorcery
+cost={X}{X}{G}
+effect=Put X X/X green Ooze creature tokens onto the battlefield.
+timing=main
+oracle=Put X X/X green Ooze creature tokens onto the battlefield.

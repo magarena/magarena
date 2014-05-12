@@ -1,0 +1,12 @@
+name=Magus of the Disk
+url=http://magiccards.info/query?q=%21Magus+of+the+Disk
+image=http://mtgimage.com/card/magus%20of%20the%20disk.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}{W}
+pt=2/4
+ability=SN enters the battlefield tapped.;\
+        {1}, {T}: Destroy all artifacts, creatures, and enchantments.
+timing=main
+oracle=Magus of the Disk enters the battlefield tapped. {1}, {T}: Destroy all artifacts, creatures, and enchantments.

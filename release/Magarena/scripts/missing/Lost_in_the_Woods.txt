@@ -1,0 +1,9 @@
+name=Lost in the Woods
+url=http://magiccards.info/query?q=%21Lost+in+the+Woods
+image=http://mtgimage.com/card/lost%20in%20the%20woods.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}{G}
+ability=Whenever a creature attacks you or a planeswalker you control, reveal the top card of your library. If it's a Forest card, remove that creature from combat. Then put the revealed card on the bottom of your library.
+timing=main
+oracle=Whenever a creature attacks you or a planeswalker you control, reveal the top card of your library. If it's a Forest card, remove that creature from combat. Then put the revealed card on the bottom of your library.

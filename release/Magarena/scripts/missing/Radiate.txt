@@ -1,0 +1,9 @@
+name=Radiate
+url=http://magiccards.info/query?q=%21Radiate
+image=http://mtgimage.com/card/radiate.jpg
+rarity=R
+type=Instant
+cost={3}{R}{R}
+effect=Choose target instant or sorcery spell that targets only a single permanent or player. Copy that spell for each other permanent or player the spell could target. Each copy targets a different one of those permanents and players.
+timing=removal
+oracle=Choose target instant or sorcery spell that targets only a single permanent or player. Copy that spell for each other permanent or player the spell could target. Each copy targets a different one of those permanents and players.

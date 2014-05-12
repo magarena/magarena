@@ -1,0 +1,11 @@
+name=Brown Ouphe
+url=http://magiccards.info/query?q=%21Brown+Ouphe
+image=http://mtgimage.com/card/brown%20ouphe.jpg
+rarity=C
+type=Creature
+subtype=Ouphe
+cost={G}
+pt=1/1
+ability={1}{G}, {T}: Counter target activated ability from an artifact source.
+timing=main
+oracle={1}{G}, {T}: Counter target activated ability from an artifact source.

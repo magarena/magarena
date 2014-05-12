@@ -1,0 +1,9 @@
+name=Eye Spy
+url=http://magiccards.info/query?q=%21Eye+Spy
+image=http://mtgimage.com/card/eye%20spy.jpg
+rarity=U
+type=Sorcery
+cost={U}
+effect=Look at the top card of target player's library. You may put that card into his or her graveyard.
+timing=main
+oracle=Look at the top card of target player's library. You may put that card into his or her graveyard.

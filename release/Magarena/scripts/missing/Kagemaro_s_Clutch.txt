@@ -1,0 +1,11 @@
+name=Kagemaro's Clutch
+url=http://magiccards.info/query?q=%21Kagemaro%27s+Clutch
+image=http://mtgimage.com/card/kagemaro%27s%20clutch.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{B}
+ability=Enchant creature;\
+        Enchanted creature gets -X/-X, where X is the number of cards in your hand.
+timing=main
+oracle=Enchant creature. Enchanted creature gets -X/-X, where X is the number of cards in your hand.

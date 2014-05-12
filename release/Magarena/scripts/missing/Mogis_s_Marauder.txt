@@ -1,0 +1,11 @@
+name=Mogis's Marauder
+url=http://magiccards.info/query?q=%21Mogis%27s+Marauder
+image=http://mtgimage.com/card/mogis%27s%20marauder.jpg
+rarity=U
+type=Creature
+subtype=Human,Berserker
+cost={2}{B}
+pt=2/2
+ability=When SN enters the battlefield, up to X target creatures each gain intimidate and haste until end of turn, where X is your devotion to black.
+timing=main
+oracle=When Mogis's Marauder enters the battlefield, up to X target creatures each gain intimidate and haste until end of turn, where X is your devotion to black.

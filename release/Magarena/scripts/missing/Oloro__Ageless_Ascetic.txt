@@ -1,0 +1,13 @@
+name=Oloro, Ageless Ascetic
+url=http://magiccards.info/query?q=%21Oloro%2C+Ageless+Ascetic
+image=http://mtgimage.com/card/oloro%2C%20ageless%20ascetic.jpg
+rarity=M
+type=Creature
+subtype=Giant,Soldier
+cost={3}{W}{U}{B}
+pt=4/5
+ability=At the beginning of your upkeep, you gain 2 life.;\
+        Whenever you gain life, you may pay {1}. If you do, draw a card and each opponent loses 1 life.;\
+        At the beginning of your upkeep, if SN is in the command zone, you gain 2 life.
+timing=main
+oracle=At the beginning of your upkeep, you gain 2 life. Whenever you gain life, you may pay {1}. If you do, draw a card and each opponent loses 1 life. At the beginning of your upkeep, if Oloro, Ageless Ascetic is in the command zone, you gain 2 life.

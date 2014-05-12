@@ -1,0 +1,12 @@
+name=Auriok Siege Sled
+url=http://magiccards.info/query?q=%21Auriok+Siege+Sled
+image=http://mtgimage.com/card/auriok%20siege%20sled.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Juggernaut
+cost={6}
+pt=3/5
+ability={1}: Target artifact creature blocks SN this turn if able.;\
+        {1}: Target artifact creature can't block SN this turn.
+timing=main
+oracle={1}: Target artifact creature blocks Auriok Siege Sled this turn if able. {1}: Target artifact creature can't block Auriok Siege Sled this turn.

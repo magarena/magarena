@@ -1,0 +1,9 @@
+name=Extinction
+url=http://magiccards.info/query?q=%21Extinction
+image=http://mtgimage.com/card/extinction.jpg
+rarity=R
+type=Sorcery
+cost={4}{B}
+effect=Destroy all creatures of the creature type of your choice.
+timing=main
+oracle=Destroy all creatures of the creature type of your choice.

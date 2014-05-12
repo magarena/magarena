@@ -1,0 +1,9 @@
+name=Dega Sanctuary
+url=http://magiccards.info/query?q=%21Dega+Sanctuary
+image=http://mtgimage.com/card/dega%20sanctuary.jpg
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=At the beginning of your upkeep, if you control a black or red permanent, you gain 2 life. If you control a black permanent and a red permanent, you gain 4 life instead.
+timing=main
+oracle=At the beginning of your upkeep, if you control a black or red permanent, you gain 2 life. If you control a black permanent and a red permanent, you gain 4 life instead.

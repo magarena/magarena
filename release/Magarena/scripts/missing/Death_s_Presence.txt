@@ -1,0 +1,9 @@
+name=Death's Presence
+url=http://magiccards.info/query?q=%21Death%27s+Presence
+image=http://mtgimage.com/card/death%27s%20presence.jpg
+rarity=R
+type=Enchantment
+cost={5}{G}
+ability=Whenever a creature you control dies, put X +1/+1 counters on target creature you control, where X is the power of the creature that died.
+timing=main
+oracle=Whenever a creature you control dies, put X +1/+1 counters on target creature you control, where X is the power of the creature that died.

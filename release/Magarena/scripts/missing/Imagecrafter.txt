@@ -1,0 +1,11 @@
+name=Imagecrafter
+url=http://magiccards.info/query?q=%21Imagecrafter
+image=http://mtgimage.com/card/imagecrafter.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability={T}: Choose a creature type other than Wall. Target creature becomes that type until end of turn.
+timing=main
+oracle={T}: Choose a creature type other than Wall. Target creature becomes that type until end of turn.

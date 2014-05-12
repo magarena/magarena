@@ -1,0 +1,12 @@
+name=Sphinx of Uthuun
+url=http://magiccards.info/query?q=%21Sphinx+of+Uthuun
+image=http://mtgimage.com/card/sphinx%20of%20uthuun.jpg
+rarity=R
+type=Creature
+subtype=Sphinx
+cost={5}{U}{U}
+pt=5/6
+ability=Flying;\
+        When SN enters the battlefield, reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.
+timing=main
+oracle=Flying. When Sphinx of Uthuun enters the battlefield, reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.

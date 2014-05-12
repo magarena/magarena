@@ -1,0 +1,9 @@
+name=Psychic Transfer
+url=http://magiccards.info/query?q=%21Psychic+Transfer
+image=http://mtgimage.com/card/psychic%20transfer.jpg
+rarity=R
+type=Sorcery
+cost={4}{U}
+effect=If the difference between your life total and target player's life total is 5 or less, exchange life totals with that player.
+timing=main
+oracle=If the difference between your life total and target player's life total is 5 or less, exchange life totals with that player.

@@ -1,0 +1,13 @@
+name=Wormfang Crab
+url=http://magiccards.info/query?q=%21Wormfang+Crab
+image=http://mtgimage.com/card/wormfang%20crab.jpg
+rarity=U
+type=Creature
+subtype=Nightmare,Crab
+cost={3}{U}
+pt=3/6
+ability=SN can't be blocked.;\
+        When SN enters the battlefield, an opponent chooses a permanent you control other than SN and exiles it.;\
+        When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+timing=main
+oracle=Wormfang Crab can't be blocked. When Wormfang Crab enters the battlefield, an opponent chooses a permanent you control other than Wormfang Crab and exiles it. When Wormfang Crab leaves the battlefield, return the exiled card to the battlefield under its owner's control.

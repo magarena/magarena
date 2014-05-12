@@ -1,0 +1,9 @@
+name=Stir the Grave
+url=http://magiccards.info/query?q=%21Stir+the+Grave
+image=http://mtgimage.com/card/stir%20the%20grave.jpg
+rarity=C
+type=Sorcery
+cost={X}{B}
+effect=Return target creature card with converted mana cost X or less from your graveyard to the battlefield.
+timing=main
+oracle=Return target creature card with converted mana cost X or less from your graveyard to the battlefield.

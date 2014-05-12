@@ -1,0 +1,12 @@
+name=Sinking Feeling
+url=http://magiccards.info/query?q=%21Sinking+Feeling
+image=http://mtgimage.com/card/sinking%20feeling.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant creature;\
+        Enchanted creature doesn't untap during its controller's untap step.;\
+        Enchanted creature has "{1}, Put a -1/-1 counter on this creature: Untap this creature."
+timing=main
+oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. Enchanted creature has "{1}, Put a -1/-1 counter on this creature: Untap this creature."

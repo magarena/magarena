@@ -1,0 +1,9 @@
+name=Ward of Bones
+url=http://magiccards.info/query?q=%21Ward+of+Bones
+image=http://mtgimage.com/card/ward%20of%20bones.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability=Each opponent who controls more creatures than you can't play creature cards. The same is true for artifacts, enchantments, and lands.
+timing=main
+oracle=Each opponent who controls more creatures than you can't play creature cards. The same is true for artifacts, enchantments, and lands.

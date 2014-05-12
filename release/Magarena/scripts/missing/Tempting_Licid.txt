@@ -1,0 +1,12 @@
+name=Tempting Licid
+url=http://magiccards.info/query?q=%21Tempting+Licid
+image=http://mtgimage.com/card/tempting%20licid.jpg
+rarity=U
+type=Creature
+subtype=Licid
+cost={2}{G}
+pt=2/2
+ability={G}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {G} to end this effect.;\
+        All creatures able to block enchanted creature do so.
+timing=main
+oracle={G}, {T}: Tempting Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {G} to end this effect. All creatures able to block enchanted creature do so.

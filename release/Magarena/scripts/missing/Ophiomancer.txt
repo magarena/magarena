@@ -1,0 +1,11 @@
+name=Ophiomancer
+url=http://magiccards.info/query?q=%21Ophiomancer
+image=http://mtgimage.com/card/ophiomancer.jpg
+rarity=R
+type=Creature
+subtype=Human,Shaman
+cost={2}{B}
+pt=2/2
+ability=At the beginning of each upkeep, if you control no Snakes, put a 1/1 black Snake creature token with deathtouch onto the battlefield.
+timing=main
+oracle=At the beginning of each upkeep, if you control no Snakes, put a 1/1 black Snake creature token with deathtouch onto the battlefield.

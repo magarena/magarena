@@ -1,0 +1,9 @@
+name=Twilight Mire
+url=http://magiccards.info/query?q=%21Twilight+Mire
+image=http://mtgimage.com/card/twilight%20mire.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {B/G}, {T}: Add {B}{B}, {B}{G}, or {G}{G} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {B/G}, {T}: Add {B}{B}, {B}{G}, or {G}{G} to your mana pool.

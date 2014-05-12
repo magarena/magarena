@@ -1,0 +1,9 @@
+name=Rite of Passage
+url=http://magiccards.info/query?q=%21Rite+of+Passage
+image=http://mtgimage.com/card/rite%20of%20passage.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=Whenever a creature you control is dealt damage, put a +1/+1 counter on it.
+timing=main
+oracle=Whenever a creature you control is dealt damage, put a +1/+1 counter on it.

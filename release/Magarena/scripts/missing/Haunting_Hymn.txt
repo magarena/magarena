@@ -1,0 +1,9 @@
+name=Haunting Hymn
+url=http://magiccards.info/query?q=%21Haunting+Hymn
+image=http://mtgimage.com/card/haunting%20hymn.jpg
+rarity=U
+type=Instant
+cost={4}{B}{B}
+effect=Target player discards two cards. If you cast this spell during your main phase, that player discards four cards instead.
+timing=removal
+oracle=Target player discards two cards. If you cast this spell during your main phase, that player discards four cards instead.

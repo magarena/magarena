@@ -1,0 +1,10 @@
+name=Rith's Grove
+url=http://magiccards.info/query?q=%21Rith%27s+Grove
+image=http://mtgimage.com/card/rith%27s%20grove.jpg
+rarity=U
+type=Land
+subtype=Lair
+ability=When SN enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.;\
+        {T}: Add {R}, {G}, or {W} to your mana pool.
+timing=main
+oracle=When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand. {T}: Add {R}, {G}, or {W} to your mana pool.

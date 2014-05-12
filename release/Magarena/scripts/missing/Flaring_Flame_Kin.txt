@@ -1,0 +1,11 @@
+name=Flaring Flame-Kin
+url=http://magiccards.info/query?q=%21Flaring+Flame-Kin
+image=http://mtgimage.com/card/flaring%20flame-kin.jpg
+rarity=U
+type=Creature
+subtype=Elemental,Warrior
+cost={2}{R}
+pt=2/2
+ability=As long as SN is enchanted, it gets +2/+2, has trample, and has "{R}: SN gets +1/+0 until end of turn."
+timing=main
+oracle=As long as Flaring Flame-Kin is enchanted, it gets +2/+2, has trample, and has "{R}: Flaring Flame-Kin gets +1/+0 until end of turn."

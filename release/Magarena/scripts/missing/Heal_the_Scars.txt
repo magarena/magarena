@@ -1,0 +1,9 @@
+name=Heal the Scars
+url=http://magiccards.info/query?q=%21Heal+the+Scars
+image=http://mtgimage.com/card/heal%20the%20scars.jpg
+rarity=C
+type=Instant
+cost={3}{G}
+effect=Regenerate target creature. You gain life equal to that creature's toughness.
+timing=removal
+oracle=Regenerate target creature. You gain life equal to that creature's toughness.

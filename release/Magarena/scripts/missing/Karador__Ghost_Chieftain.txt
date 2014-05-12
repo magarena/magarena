@@ -1,0 +1,12 @@
+name=Karador, Ghost Chieftain
+url=http://magiccards.info/query?q=%21Karador%2C+Ghost+Chieftain
+image=http://mtgimage.com/card/karador%2C%20ghost%20chieftain.jpg
+rarity=M
+type=Creature
+subtype=Centaur,Spirit
+cost={5}{B}{G}{W}
+pt=3/4
+ability=SN costs {1} less to cast for each creature card in your graveyard.;\
+        During each of your turns, you may cast one creature card from your graveyard.
+timing=main
+oracle=Karador, Ghost Chieftain costs {1} less to cast for each creature card in your graveyard. During each of your turns, you may cast one creature card from your graveyard.

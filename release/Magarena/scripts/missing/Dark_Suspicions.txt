@@ -1,0 +1,9 @@
+name=Dark Suspicions
+url=http://magiccards.info/query?q=%21Dark+Suspicions
+image=http://mtgimage.com/card/dark%20suspicions.jpg
+rarity=R
+type=Enchantment
+cost={2}{B}{B}
+ability=At the beginning of each opponent's upkeep, that player loses X life, where X is the number of cards in that player's hand minus the number of cards in your hand.
+timing=main
+oracle=At the beginning of each opponent's upkeep, that player loses X life, where X is the number of cards in that player's hand minus the number of cards in your hand.

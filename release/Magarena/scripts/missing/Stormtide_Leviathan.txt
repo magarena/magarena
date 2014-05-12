@@ -1,0 +1,13 @@
+name=Stormtide Leviathan
+url=http://magiccards.info/query?q=%21Stormtide+Leviathan
+image=http://mtgimage.com/card/stormtide%20leviathan.jpg
+rarity=R
+type=Creature
+subtype=Leviathan
+cost={5}{U}{U}{U}
+pt=8/8
+ability=Islandwalk;\
+        All lands are Islands in addition to their other types.;\
+        Creatures without flying or islandwalk can't attack.
+timing=main
+oracle=Islandwalk. All lands are Islands in addition to their other types. Creatures without flying or islandwalk can't attack.

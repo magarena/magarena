@@ -1,0 +1,11 @@
+name=Echo Circlet
+url=http://magiccards.info/query?q=%21Echo+Circlet
+image=http://mtgimage.com/card/echo%20circlet.jpg
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature can block an additional creature.;\
+        Equip {1}
+timing=main
+oracle=Equipped creature can block an additional creature. Equip {1}

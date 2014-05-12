@@ -1,0 +1,10 @@
+name=Barbed Lightning
+url=http://magiccards.info/query?q=%21Barbed+Lightning
+image=http://mtgimage.com/card/barbed%20lightning.jpg
+rarity=C
+type=Instant
+cost={2}{R}
+effect=Choose one — SN deals 3 damage to target creature; or SN deals 3 damage to target player.;\
+        Entwine {2}
+timing=removal
+oracle=Choose one — Barbed Lightning deals 3 damage to target creature; or Barbed Lightning deals 3 damage to target player. Entwine {2}

@@ -1,0 +1,11 @@
+name=Cryptoplasm
+url=http://magiccards.info/query?q=%21Cryptoplasm
+image=http://mtgimage.com/card/cryptoplasm.jpg
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={1}{U}{U}
+pt=2/2
+ability=At the beginning of your upkeep, you may have SN become a copy of another target creature. If you do, SN gains this ability.
+timing=main
+oracle=At the beginning of your upkeep, you may have Cryptoplasm become a copy of another target creature. If you do, Cryptoplasm gains this ability.

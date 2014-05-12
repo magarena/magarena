@@ -1,0 +1,9 @@
+name=Barl's Cage
+url=http://magiccards.info/query?q=%21Barl%27s+Cage
+image=http://mtgimage.com/card/barl%27s%20cage.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={3}: Target creature doesn't untap during its controller's next untap step.
+timing=main
+oracle={3}: Target creature doesn't untap during its controller's next untap step.

@@ -1,0 +1,11 @@
+name=Zephyr Spirit
+url=http://magiccards.info/query?q=%21Zephyr+Spirit
+image=http://mtgimage.com/card/zephyr%20spirit.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={5}{U}
+pt=0/6
+ability=When SN blocks, return it to its owner's hand.
+timing=main
+oracle=When Zephyr Spirit blocks, return it to its owner's hand.

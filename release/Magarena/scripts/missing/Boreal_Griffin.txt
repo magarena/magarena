@@ -1,0 +1,12 @@
+name=Boreal Griffin
+url=http://magiccards.info/query?q=%21Boreal+Griffin
+image=http://mtgimage.com/card/boreal%20griffin.jpg
+rarity=C
+type=Creature
+subtype=Griffin
+cost={3}{W}{W}
+pt=3/2
+ability=Flying;\
+        {S}: SN gains first strike until end of turn.
+timing=main
+oracle=Flying. {S}: Boreal Griffin gains first strike until end of turn.

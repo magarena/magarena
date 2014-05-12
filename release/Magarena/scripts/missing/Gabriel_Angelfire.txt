@@ -1,0 +1,11 @@
+name=Gabriel Angelfire
+url=http://magiccards.info/query?q=%21Gabriel+Angelfire
+image=http://mtgimage.com/card/gabriel%20angelfire.jpg
+rarity=R
+type=Creature
+subtype=Angel
+cost={3}{G}{G}{W}{W}
+pt=4/4
+ability=At the beginning of your upkeep, choose flying, first strike, trample, or rampage 3. SN gains that ability until your next upkeep.
+timing=main
+oracle=At the beginning of your upkeep, choose flying, first strike, trample, or rampage 3. Gabriel Angelfire gains that ability until your next upkeep.

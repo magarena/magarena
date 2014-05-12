@@ -1,0 +1,9 @@
+name=Armillary Sphere
+url=http://magiccards.info/query?q=%21Armillary+Sphere
+image=http://mtgimage.com/card/armillary%20sphere.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability={2}, {T}, Sacrifice SN: Search your library for up to two basic land cards, reveal them, and put them into your hand. Then shuffle your library.
+timing=main
+oracle={2}, {T}, Sacrifice Armillary Sphere: Search your library for up to two basic land cards, reveal them, and put them into your hand. Then shuffle your library.

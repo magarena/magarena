@@ -1,0 +1,9 @@
+name=Strip Bare
+url=http://magiccards.info/query?q=%21Strip+Bare
+image=http://mtgimage.com/card/strip%20bare.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Destroy all Auras and Equipment attached to target creature.
+timing=removal
+oracle=Destroy all Auras and Equipment attached to target creature.

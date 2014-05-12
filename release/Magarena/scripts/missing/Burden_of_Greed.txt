@@ -1,0 +1,9 @@
+name=Burden of Greed
+url=http://magiccards.info/query?q=%21Burden+of+Greed
+image=http://mtgimage.com/card/burden%20of%20greed.jpg
+rarity=C
+type=Instant
+cost={3}{B}
+effect=Target player loses 1 life for each tapped artifact he or she controls.
+timing=removal
+oracle=Target player loses 1 life for each tapped artifact he or she controls.

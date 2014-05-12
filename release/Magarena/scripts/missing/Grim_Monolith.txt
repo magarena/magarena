@@ -1,0 +1,11 @@
+name=Grim Monolith
+url=http://magiccards.info/query?q=%21Grim+Monolith
+image=http://mtgimage.com/card/grim%20monolith.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=SN doesn't untap during your untap step.;\
+        {T}: Add {3} to your mana pool.;\
+        {4}: Untap SN.
+timing=main
+oracle=Grim Monolith doesn't untap during your untap step. {T}: Add {3} to your mana pool. {4}: Untap Grim Monolith.

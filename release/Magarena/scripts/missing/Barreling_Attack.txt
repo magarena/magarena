@@ -1,0 +1,9 @@
+name=Barreling Attack
+url=http://magiccards.info/query?q=%21Barreling+Attack
+image=http://mtgimage.com/card/barreling%20attack.jpg
+rarity=R
+type=Instant
+cost={2}{R}{R}
+effect=Target creature gains trample until end of turn. When that creature becomes blocked this turn, it gets +1/+1 until end of turn for each creature blocking it.
+timing=removal
+oracle=Target creature gains trample until end of turn. When that creature becomes blocked this turn, it gets +1/+1 until end of turn for each creature blocking it.

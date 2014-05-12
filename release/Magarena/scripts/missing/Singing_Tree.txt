@@ -1,0 +1,11 @@
+name=Singing Tree
+url=http://magiccards.info/query?q=%21Singing+Tree
+image=http://mtgimage.com/card/singing%20tree.jpg
+rarity=R
+type=Creature
+subtype=Plant
+cost={3}{G}
+pt=0/3
+ability={T}: Target attacking creature's power becomes 0 until end of turn.
+timing=main
+oracle={T}: Target attacking creature's power becomes 0 until end of turn.

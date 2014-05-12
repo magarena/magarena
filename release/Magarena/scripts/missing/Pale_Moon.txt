@@ -1,0 +1,9 @@
+name=Pale Moon
+url=http://magiccards.info/query?q=%21Pale+Moon
+image=http://mtgimage.com/card/pale%20moon.jpg
+rarity=R
+type=Instant
+cost={1}{U}
+effect=Until end of turn, if a player taps a nonbasic land for mana, it produces colorless mana instead of any other type.
+timing=removal
+oracle=Until end of turn, if a player taps a nonbasic land for mana, it produces colorless mana instead of any other type.

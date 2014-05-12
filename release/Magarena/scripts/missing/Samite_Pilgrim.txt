@@ -1,0 +1,11 @@
+name=Samite Pilgrim
+url=http://magiccards.info/query?q=%21Samite+Pilgrim
+image=http://mtgimage.com/card/samite%20pilgrim.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/1
+ability=Domain — {T}: Prevent the next X damage that would be dealt to target creature this turn, where X is the number of basic land types among lands you control.
+timing=main
+oracle=Domain — {T}: Prevent the next X damage that would be dealt to target creature this turn, where X is the number of basic land types among lands you control.

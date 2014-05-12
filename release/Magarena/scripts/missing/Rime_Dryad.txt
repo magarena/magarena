@@ -1,0 +1,11 @@
+name=Rime Dryad
+url=http://magiccards.info/query?q=%21Rime+Dryad
+image=http://mtgimage.com/card/rime%20dryad.jpg
+rarity=C
+type=Creature
+subtype=Dryad
+cost={G}
+pt=1/2
+ability=Snow forestwalk
+timing=main
+oracle=Snow forestwalk

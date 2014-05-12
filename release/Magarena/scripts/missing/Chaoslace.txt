@@ -1,0 +1,9 @@
+name=Chaoslace
+url=http://magiccards.info/query?q=%21Chaoslace
+image=http://mtgimage.com/card/chaoslace.jpg
+rarity=R
+type=Instant
+cost={R}
+effect=Target spell or permanent becomes red.
+timing=removal
+oracle=Target spell or permanent becomes red.

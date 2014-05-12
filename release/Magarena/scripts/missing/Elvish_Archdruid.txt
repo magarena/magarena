@@ -1,0 +1,12 @@
+name=Elvish Archdruid
+url=http://magiccards.info/query?q=%21Elvish+Archdruid
+image=http://mtgimage.com/card/elvish%20archdruid.jpg
+rarity=R
+type=Creature
+subtype=Elf,Druid
+cost={1}{G}{G}
+pt=2/2
+ability=Other Elf creatures you control get +1/+1.;\
+        {T}: Add {G} to your mana pool for each Elf you control.
+timing=main
+oracle=Other Elf creatures you control get +1/+1. {T}: Add {G} to your mana pool for each Elf you control.

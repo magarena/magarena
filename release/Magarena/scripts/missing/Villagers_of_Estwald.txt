@@ -1,0 +1,11 @@
+name=Villagers of Estwald
+url=http://magiccards.info/query?q=%21Villagers+of+Estwald
+image=http://mtgimage.com/card/villagers%20of%20estwald.jpg
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={2}{G}
+pt=2/3
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Villagers of Estwald.

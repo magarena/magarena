@@ -1,0 +1,13 @@
+name=Warping Wurm
+url=http://magiccards.info/query?q=%21Warping+Wurm
+image=http://mtgimage.com/card/warping%20wurm.jpg
+rarity=R
+type=Creature
+subtype=Wurm
+cost={2}{G}{U}
+pt=1/1
+ability=Phasing;\
+        At the beginning of your upkeep, SN phases out unless you pay {2}{G}{U}.;\
+        When SN phases in, put a +1/+1 counter on it.
+timing=main
+oracle=Phasing. At the beginning of your upkeep, Warping Wurm phases out unless you pay {2}{G}{U}. When Warping Wurm phases in, put a +1/+1 counter on it.

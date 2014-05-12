@@ -1,0 +1,12 @@
+name=Spellheart Chimera
+url=http://magiccards.info/query?q=%21Spellheart+Chimera
+image=http://mtgimage.com/card/spellheart%20chimera.jpg
+rarity=U
+type=Creature
+subtype=Chimera
+cost={1}{U}{R}
+pt=*/3
+ability=Flying, trample;\
+        SN's power is equal to the number of instant and sorcery cards in your graveyard.
+timing=main
+oracle=Flying, trample. Spellheart Chimera's power is equal to the number of instant and sorcery cards in your graveyard.

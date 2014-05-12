@@ -1,0 +1,13 @@
+name=Bloodcurdler
+url=http://magiccards.info/query?q=%21Bloodcurdler
+image=http://mtgimage.com/card/bloodcurdler.jpg
+rarity=R
+type=Creature
+subtype=Horror
+cost={1}{B}
+pt=1/1
+ability=Flying;\
+        At the beginning of your upkeep, put the top card of your library into your graveyard.;\
+        Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1 and has "At the beginning of your end step, exile two cards from your graveyard."
+timing=main
+oracle=Flying. At the beginning of your upkeep, put the top card of your library into your graveyard. Threshold — As long as seven or more cards are in your graveyard, Bloodcurdler gets +1/+1 and has "At the beginning of your end step, exile two cards from your graveyard."

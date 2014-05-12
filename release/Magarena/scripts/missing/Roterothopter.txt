@@ -1,0 +1,12 @@
+name=Roterothopter
+url=http://magiccards.info/query?q=%21Roterothopter
+image=http://mtgimage.com/card/roterothopter.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Thopter
+cost={1}
+pt=0/2
+ability=Flying;\
+        {2}: SN gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
+timing=main
+oracle=Flying. {2}: Roterothopter gets +1/+0 until end of turn. Activate this ability no more than twice each turn.

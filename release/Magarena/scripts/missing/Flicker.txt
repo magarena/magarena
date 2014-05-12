@@ -1,0 +1,9 @@
+name=Flicker
+url=http://magiccards.info/query?q=%21Flicker
+image=http://mtgimage.com/card/flicker.jpg
+rarity=R
+type=Sorcery
+cost={1}{W}
+effect=Exile target nontoken permanent, then return it to the battlefield under its owner's control.
+timing=main
+oracle=Exile target nontoken permanent, then return it to the battlefield under its owner's control.

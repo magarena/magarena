@@ -1,0 +1,12 @@
+name=Coastline Chimera
+url=http://magiccards.info/query?q=%21Coastline+Chimera
+image=http://mtgimage.com/card/coastline%20chimera.jpg
+rarity=C
+type=Creature
+subtype=Chimera
+cost={3}{U}
+pt=1/5
+ability=Flying;\
+        {1}{W}: SN can block an additional creature this turn.
+timing=main
+oracle=Flying. {1}{W}: Coastline Chimera can block an additional creature this turn.

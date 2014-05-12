@@ -1,0 +1,9 @@
+name=Rugged Prairie
+url=http://magiccards.info/query?q=%21Rugged+Prairie
+image=http://mtgimage.com/card/rugged%20prairie.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W} to your mana pool.

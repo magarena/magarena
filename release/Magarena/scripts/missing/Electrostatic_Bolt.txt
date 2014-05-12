@@ -1,0 +1,9 @@
+name=Electrostatic Bolt
+url=http://magiccards.info/query?q=%21Electrostatic+Bolt
+image=http://mtgimage.com/card/electrostatic%20bolt.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=SN deals 2 damage to target creature. If it's an artifact creature, SN deals 4 damage to it instead.
+timing=removal
+oracle=Electrostatic Bolt deals 2 damage to target creature. If it's an artifact creature, Electrostatic Bolt deals 4 damage to it instead.

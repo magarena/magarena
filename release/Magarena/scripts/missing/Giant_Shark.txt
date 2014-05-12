@@ -1,0 +1,13 @@
+name=Giant Shark
+url=http://magiccards.info/query?q=%21Giant+Shark
+image=http://mtgimage.com/card/giant%20shark.jpg
+rarity=C
+type=Creature
+subtype=Fish
+cost={5}{U}
+pt=4/4
+ability=SN can't attack unless defending player controls an Island.;\
+        Whenever SN blocks or becomes blocked by a creature that has been dealt damage this turn, SN gets +2/+0 and gains trample until end of turn.;\
+        When you control no Islands, sacrifice SN.
+timing=main
+oracle=Giant Shark can't attack unless defending player controls an Island. Whenever Giant Shark blocks or becomes blocked by a creature that has been dealt damage this turn, Giant Shark gets +2/+0 and gains trample until end of turn. When you control no Islands, sacrifice Giant Shark.

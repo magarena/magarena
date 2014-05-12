@@ -1,0 +1,12 @@
+name=Carry Away
+url=http://magiccards.info/query?q=%21Carry+Away
+image=http://mtgimage.com/card/carry%20away.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}{U}
+ability=Enchant Equipment;\
+        When SN enters the battlefield, unattach enchanted Equipment.;\
+        You control enchanted Equipment.
+timing=main
+oracle=Enchant Equipment. When Carry Away enters the battlefield, unattach enchanted Equipment. You control enchanted Equipment.

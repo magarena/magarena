@@ -1,0 +1,11 @@
+name=Bane of Hanweir
+url=http://magiccards.info/query?q=%21Bane+of+Hanweir
+image=http://mtgimage.com/card/bane%20of%20hanweir.jpg
+rarity=U
+type=Creature
+subtype=Werewolf
+pt=5/5
+ability=SN attacks each turn if able.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Bane of Hanweir attacks each turn if able. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Bane of Hanweir.

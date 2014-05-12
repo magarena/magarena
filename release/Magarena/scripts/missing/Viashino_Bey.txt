@@ -1,0 +1,11 @@
+name=Viashino Bey
+url=http://magiccards.info/query?q=%21Viashino+Bey
+image=http://mtgimage.com/card/viashino%20bey.jpg
+rarity=C
+type=Creature
+subtype=Viashino
+cost={2}{R}{R}
+pt=4/3
+ability=If SN attacks, all creatures you control attack if able.
+timing=main
+oracle=If Viashino Bey attacks, all creatures you control attack if able.

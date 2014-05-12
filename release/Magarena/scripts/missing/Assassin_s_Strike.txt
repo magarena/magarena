@@ -1,0 +1,9 @@
+name=Assassin's Strike
+url=http://magiccards.info/query?q=%21Assassin%27s+Strike
+image=http://mtgimage.com/card/assassin%27s%20strike.jpg
+rarity=U
+type=Sorcery
+cost={4}{B}{B}
+effect=Destroy target creature. Its controller discards a card.
+timing=main
+oracle=Destroy target creature. Its controller discards a card.

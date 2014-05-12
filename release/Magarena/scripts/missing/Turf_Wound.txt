@@ -1,0 +1,10 @@
+name=Turf Wound
+url=http://magiccards.info/query?q=%21Turf+Wound
+image=http://mtgimage.com/card/turf%20wound.jpg
+rarity=C
+type=Instant
+cost={2}{R}
+effect=Target player can't play land cards this turn.;\
+        Draw a card.
+timing=removal
+oracle=Target player can't play land cards this turn. Draw a card.

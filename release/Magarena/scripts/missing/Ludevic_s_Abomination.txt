@@ -1,0 +1,10 @@
+name=Ludevic's Abomination
+url=http://magiccards.info/query?q=%21Ludevic%27s+Abomination
+image=http://mtgimage.com/card/ludevic%27s%20abomination.jpg
+rarity=R
+type=Creature
+subtype=Lizard,Horror
+pt=13/13
+ability=Trample
+timing=main
+oracle=Trample

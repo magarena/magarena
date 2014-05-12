@@ -1,0 +1,9 @@
+name=Rain of Salt
+url=http://magiccards.info/query?q=%21Rain+of+Salt
+image=http://mtgimage.com/card/rain%20of%20salt.jpg
+rarity=U
+type=Sorcery
+cost={4}{R}{R}
+effect=Destroy two target lands.
+timing=main
+oracle=Destroy two target lands.

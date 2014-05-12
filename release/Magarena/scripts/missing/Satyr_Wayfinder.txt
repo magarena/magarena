@@ -1,0 +1,11 @@
+name=Satyr Wayfinder
+url=http://magiccards.info/query?q=%21Satyr+Wayfinder
+image=http://mtgimage.com/card/satyr%20wayfinder.jpg
+rarity=C
+type=Creature
+subtype=Satyr
+cost={1}{G}
+pt=1/1
+ability=When SN enters the battlefield, reveal the top four cards of your library. You may put a land card from among them into your hand. Put the rest into your graveyard.
+timing=main
+oracle=When Satyr Wayfinder enters the battlefield, reveal the top four cards of your library. You may put a land card from among them into your hand. Put the rest into your graveyard.

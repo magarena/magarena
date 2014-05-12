@@ -1,0 +1,9 @@
+name=Vedalken Orrery
+url=http://magiccards.info/query?q=%21Vedalken+Orrery
+image=http://mtgimage.com/card/vedalken%20orrery.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=You may cast nonland cards as though they had flash.
+timing=main
+oracle=You may cast nonland cards as though they had flash.

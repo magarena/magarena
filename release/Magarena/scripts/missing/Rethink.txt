@@ -1,0 +1,9 @@
+name=Rethink
+url=http://magiccards.info/query?q=%21Rethink
+image=http://mtgimage.com/card/rethink.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target spell unless its controller pays {X}, where X is its converted mana cost.
+timing=removal
+oracle=Counter target spell unless its controller pays {X}, where X is its converted mana cost.

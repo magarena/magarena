@@ -1,0 +1,9 @@
+name=Goblin Kites
+url=http://magiccards.info/query?q=%21Goblin+Kites
+image=http://mtgimage.com/card/goblin%20kites.jpg
+rarity=U
+type=Enchantment
+cost={1}{R}
+ability={R}: Target creature you control with toughness 2 or less gains flying until end of turn. Flip a coin at the beginning of the next end step. If you lose the flip, sacrifice that creature.
+timing=main
+oracle={R}: Target creature you control with toughness 2 or less gains flying until end of turn. Flip a coin at the beginning of the next end step. If you lose the flip, sacrifice that creature.

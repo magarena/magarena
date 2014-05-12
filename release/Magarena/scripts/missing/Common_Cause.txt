@@ -1,0 +1,9 @@
+name=Common Cause
+url=http://magiccards.info/query?q=%21Common+Cause
+image=http://mtgimage.com/card/common%20cause.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=Nonartifact creatures get +2/+2 as long as they all share a color.
+timing=main
+oracle=Nonartifact creatures get +2/+2 as long as they all share a color.

@@ -1,0 +1,9 @@
+name=Conjured Currency
+url=http://magiccards.info/query?q=%21Conjured+Currency
+image=http://mtgimage.com/card/conjured%20currency.jpg
+rarity=R
+type=Enchantment
+cost={5}{U}
+ability=At the beginning of your upkeep, you may exchange control of SN and target permanent you neither own nor control.
+timing=main
+oracle=At the beginning of your upkeep, you may exchange control of Conjured Currency and target permanent you neither own nor control.

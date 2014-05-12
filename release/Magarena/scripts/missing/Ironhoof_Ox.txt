@@ -1,0 +1,11 @@
+name=Ironhoof Ox
+url=http://magiccards.info/query?q=%21Ironhoof+Ox
+image=http://mtgimage.com/card/ironhoof%20ox.jpg
+rarity=U
+type=Creature
+subtype=Ox
+cost={3}{G}{G}
+pt=4/4
+ability=SN can't be blocked by more than one creature.
+timing=main
+oracle=Ironhoof Ox can't be blocked by more than one creature.

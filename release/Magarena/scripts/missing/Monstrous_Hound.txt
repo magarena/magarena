@@ -1,0 +1,12 @@
+name=Monstrous Hound
+url=http://magiccards.info/query?q=%21Monstrous+Hound
+image=http://mtgimage.com/card/monstrous%20hound.jpg
+rarity=R
+type=Creature
+subtype=Hound
+cost={3}{R}
+pt=4/4
+ability=SN can't attack unless you control more lands than defending player.;\
+        SN can't block unless you control more lands than attacking player.
+timing=main
+oracle=Monstrous Hound can't attack unless you control more lands than defending player. Monstrous Hound can't block unless you control more lands than attacking player.

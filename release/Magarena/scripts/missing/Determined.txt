@@ -1,0 +1,10 @@
+name=Determined
+url=http://magiccards.info/query?q=%21Determined
+image=http://mtgimage.com/card/bounddetermined.jpg
+rarity=R
+type=Instant
+cost={G}{U}
+effect=Other spells you control can't be countered by spells or abilities this turn.;\
+        Draw a card.
+timing=removal
+oracle=Other spells you control can't be countered by spells or abilities this turn. Draw a card.

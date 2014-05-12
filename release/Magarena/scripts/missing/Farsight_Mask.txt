@@ -1,0 +1,9 @@
+name=Farsight Mask
+url=http://magiccards.info/query?q=%21Farsight+Mask
+image=http://mtgimage.com/card/farsight%20mask.jpg
+rarity=U
+type=Artifact
+cost={5}
+ability=Whenever a source an opponent controls deals damage to you, if SN is untapped, you may draw a card.
+timing=main
+oracle=Whenever a source an opponent controls deals damage to you, if Farsight Mask is untapped, you may draw a card.

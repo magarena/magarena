@@ -1,0 +1,11 @@
+name=Student of Elements
+url=http://magiccards.info/query?q=%21Student+of+Elements
+image=http://mtgimage.com/card/student%20of%20elements.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+ability=When SN has flying, flip it.
+timing=main
+oracle=When Student of Elements has flying, flip it.

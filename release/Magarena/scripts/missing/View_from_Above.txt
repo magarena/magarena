@@ -1,0 +1,9 @@
+name=View from Above
+url=http://magiccards.info/query?q=%21View+from+Above
+image=http://mtgimage.com/card/view%20from%20above.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Target creature gains flying until end of turn. If you control a white permanent, return SN to its owner's hand.
+timing=removal
+oracle=Target creature gains flying until end of turn. If you control a white permanent, return View from Above to its owner's hand.

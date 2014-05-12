@@ -1,0 +1,11 @@
+name=Opal Lake Gatekeepers
+url=http://magiccards.info/query?q=%21Opal+Lake+Gatekeepers
+image=http://mtgimage.com/card/opal%20lake%20gatekeepers.jpg
+rarity=C
+type=Creature
+subtype=Vedalken,Soldier
+cost={3}{U}
+pt=2/4
+ability=When SN enters the battlefield, if you control two or more Gates, you may draw a card.
+timing=main
+oracle=When Opal Lake Gatekeepers enters the battlefield, if you control two or more Gates, you may draw a card.

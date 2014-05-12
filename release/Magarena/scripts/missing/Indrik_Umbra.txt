@@ -1,0 +1,12 @@
+name=Indrik Umbra
+url=http://magiccards.info/query?q=%21Indrik+Umbra
+image=http://mtgimage.com/card/indrik%20umbra.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={4}{G}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +4/+4 and has first strike, and all creatures able to block it do so.;\
+        Totem armor
+timing=main
+oracle=Enchant creature. Enchanted creature gets +4/+4 and has first strike, and all creatures able to block it do so. Totem armor

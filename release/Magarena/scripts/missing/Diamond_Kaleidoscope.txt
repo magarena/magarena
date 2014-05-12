@@ -1,0 +1,10 @@
+name=Diamond Kaleidoscope
+url=http://magiccards.info/query?q=%21Diamond+Kaleidoscope
+image=http://mtgimage.com/card/diamond%20kaleidoscope.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={3}, {T}: Put a 0/1 colorless Prism artifact creature token onto the battlefield.;\
+        Sacrifice a Prism token: Add one mana of any color to your mana pool.
+timing=main
+oracle={3}, {T}: Put a 0/1 colorless Prism artifact creature token onto the battlefield. Sacrifice a Prism token: Add one mana of any color to your mana pool.

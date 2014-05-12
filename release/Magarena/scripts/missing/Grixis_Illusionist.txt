@@ -1,0 +1,11 @@
+name=Grixis Illusionist
+url=http://magiccards.info/query?q=%21Grixis+Illusionist
+image=http://mtgimage.com/card/grixis%20illusionist.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability={T}: Target land you control becomes the basic land type of your choice until end of turn.
+timing=main
+oracle={T}: Target land you control becomes the basic land type of your choice until end of turn.

@@ -1,0 +1,11 @@
+name=Sedris, the Traitor King
+url=http://magiccards.info/query?q=%21Sedris%2C+the+Traitor+King
+image=http://mtgimage.com/card/sedris%2C%20the%20traitor%20king.jpg
+rarity=M
+type=Creature
+subtype=Zombie,Warrior
+cost={3}{U}{B}{R}
+pt=5/5
+ability=Each creature card in your graveyard has unearth {2}{B}.
+timing=main
+oracle=Each creature card in your graveyard has unearth {2}{B}.

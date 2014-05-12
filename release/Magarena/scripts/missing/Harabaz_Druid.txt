@@ -1,0 +1,11 @@
+name=Harabaz Druid
+url=http://magiccards.info/query?q=%21Harabaz+Druid
+image=http://mtgimage.com/card/harabaz%20druid.jpg
+rarity=R
+type=Creature
+subtype=Human,Druid,Ally
+cost={1}{G}
+pt=0/1
+ability={T}: Add X mana of any one color to your mana pool, where X is the number of Allies you control.
+timing=main
+oracle={T}: Add X mana of any one color to your mana pool, where X is the number of Allies you control.

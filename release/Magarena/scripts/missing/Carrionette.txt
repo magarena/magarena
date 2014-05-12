@@ -1,0 +1,11 @@
+name=Carrionette
+url=http://magiccards.info/query?q=%21Carrionette
+image=http://mtgimage.com/card/carrionette.jpg
+rarity=R
+type=Creature
+subtype=Skeleton
+cost={1}{B}
+pt=1/1
+ability={2}{B}{B}: Exile SN and target creature unless that creature's controller pays {2}. Activate this ability only if SN is in your graveyard.
+timing=main
+oracle={2}{B}{B}: Exile Carrionette and target creature unless that creature's controller pays {2}. Activate this ability only if Carrionette is in your graveyard.

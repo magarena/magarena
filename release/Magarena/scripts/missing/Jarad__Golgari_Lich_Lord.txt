@@ -1,0 +1,13 @@
+name=Jarad, Golgari Lich Lord
+url=http://magiccards.info/query?q=%21Jarad%2C+Golgari+Lich+Lord
+image=http://mtgimage.com/card/jarad%2C%20golgari%20lich%20lord.jpg
+rarity=M
+type=Creature
+subtype=Zombie,Elf
+cost={B}{B}{G}{G}
+pt=2/2
+ability=SN gets +1/+1 for each creature card in your graveyard.;\
+        {1}{B}{G}, Sacrifice another creature: Each opponent loses life equal to the sacrificed creature's power.;\
+        Sacrifice a Swamp and a Forest: Return Jarad from your graveyard to your hand.
+timing=main
+oracle=Jarad, Golgari Lich Lord gets +1/+1 for each creature card in your graveyard. {1}{B}{G}, Sacrifice another creature: Each opponent loses life equal to the sacrificed creature's power. Sacrifice a Swamp and a Forest: Return Jarad from your graveyard to your hand.

@@ -1,0 +1,11 @@
+name=Fickle Efreet
+url=http://magiccards.info/query?q=%21Fickle+Efreet
+image=http://mtgimage.com/card/fickle%20efreet.jpg
+rarity=R
+type=Creature
+subtype=Efreet
+cost={3}{R}
+pt=5/2
+ability=Whenever SN attacks or blocks, flip a coin at end of combat. If you lose the flip, an opponent gains control of SN.
+timing=main
+oracle=Whenever Fickle Efreet attacks or blocks, flip a coin at end of combat. If you lose the flip, an opponent gains control of Fickle Efreet.

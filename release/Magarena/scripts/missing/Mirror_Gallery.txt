@@ -1,0 +1,9 @@
+name=Mirror Gallery
+url=http://magiccards.info/query?q=%21Mirror+Gallery
+image=http://mtgimage.com/card/mirror%20gallery.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability=The "legend rule" doesn't apply.
+timing=main
+oracle=The "legend rule" doesn't apply.

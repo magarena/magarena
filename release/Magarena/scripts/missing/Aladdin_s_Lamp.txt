@@ -1,0 +1,9 @@
+name=Aladdin's Lamp
+url=http://magiccards.info/query?q=%21Aladdin%27s+Lamp
+image=http://mtgimage.com/card/aladdin%27s%20lamp.jpg
+rarity=R
+type=Artifact
+cost={10}
+ability={X}, {T}: The next time you would draw a card this turn, instead look at the top X cards of your library, put all but one of them on the bottom of your library in a random order, then draw a card. X can't be 0.
+timing=main
+oracle={X}, {T}: The next time you would draw a card this turn, instead look at the top X cards of your library, put all but one of them on the bottom of your library in a random order, then draw a card. X can't be 0.

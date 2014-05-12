@@ -1,0 +1,9 @@
+name=Fortify
+url=http://magiccards.info/query?q=%21Fortify
+image=http://mtgimage.com/card/fortify.jpg
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Choose one — Creatures you control get +2/+0 until end of turn; or creatures you control get +0/+2 until end of turn.
+timing=removal
+oracle=Choose one — Creatures you control get +2/+0 until end of turn; or creatures you control get +0/+2 until end of turn.

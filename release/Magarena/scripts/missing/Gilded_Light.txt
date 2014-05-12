@@ -1,0 +1,10 @@
+name=Gilded Light
+url=http://magiccards.info/query?q=%21Gilded+Light
+image=http://mtgimage.com/card/gilded%20light.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=You gain shroud until end of turn.;\
+        Cycling {2}
+timing=removal
+oracle=You gain shroud until end of turn.. Cycling {2}

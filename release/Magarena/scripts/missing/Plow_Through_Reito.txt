@@ -1,0 +1,10 @@
+name=Plow Through Reito
+url=http://magiccards.info/query?q=%21Plow+Through+Reito
+image=http://mtgimage.com/card/plow%20through%20reito.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={1}{W}
+effect=Sweep — Return any number of Plains you control to their owner's hand. Target creature gets +1/+1 until end of turn for each Plains returned this way.
+timing=removal
+oracle=Sweep — Return any number of Plains you control to their owner's hand. Target creature gets +1/+1 until end of turn for each Plains returned this way.

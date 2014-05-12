@@ -1,0 +1,9 @@
+name=Supply
+url=http://magiccards.info/query?q=%21Supply
+image=http://mtgimage.com/card/supplydemand.jpg
+rarity=U
+type=Sorcery
+cost={X}{G}{W}
+effect=Put X 1/1 green Saproling creature tokens onto the battlefield.
+timing=main
+oracle=Put X 1/1 green Saproling creature tokens onto the battlefield.

@@ -1,0 +1,9 @@
+name=Multani's Presence
+url=http://magiccards.info/query?q=%21Multani%27s+Presence
+image=http://mtgimage.com/card/multani%27s%20presence.jpg
+rarity=U
+type=Enchantment
+cost={G}
+ability=Whenever a spell you've cast is countered, draw a card.
+timing=main
+oracle=Whenever a spell you've cast is countered, draw a card.

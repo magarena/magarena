@@ -1,0 +1,11 @@
+name=Ceaseless Searblades
+url=http://magiccards.info/query?q=%21Ceaseless+Searblades
+image=http://mtgimage.com/card/ceaseless%20searblades.jpg
+rarity=U
+type=Creature
+subtype=Elemental,Warrior
+cost={3}{R}
+pt=2/4
+ability=Whenever you activate an ability of an Elemental, SN gets +1/+0 until end of turn.
+timing=main
+oracle=Whenever you activate an ability of an Elemental, Ceaseless Searblades gets +1/+0 until end of turn.

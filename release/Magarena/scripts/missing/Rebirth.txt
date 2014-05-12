@@ -1,0 +1,10 @@
+name=Rebirth
+url=http://magiccards.info/query?q=%21Rebirth
+image=http://mtgimage.com/card/rebirth.jpg
+rarity=R
+type=Sorcery
+cost={3}{G}{G}{G}
+effect=Remove SN from your deck before playing if you're not playing for ante.;\
+        Each player may put the top card of his or her library into the ante. If a player does, his or her life total becomes 20.
+timing=main
+oracle=Remove Rebirth from your deck before playing if you're not playing for ante. Each player may put the top card of his or her library into the ante. If a player does, his or her life total becomes 20.

@@ -1,0 +1,11 @@
+name=Barbarian Guides
+url=http://magiccards.info/query?q=%21Barbarian+Guides
+image=http://mtgimage.com/card/barbarian%20guides.jpg
+rarity=C
+type=Creature
+subtype=Human,Barbarian
+cost={2}{R}
+pt=1/2
+ability={2}{R}, {T}: Choose a land type. Target creature you control gains snow landwalk of the chosen type until end of turn. Return that creature to its owner's hand at the beginning of the next end step.
+timing=main
+oracle={2}{R}, {T}: Choose a land type. Target creature you control gains snow landwalk of the chosen type until end of turn. Return that creature to its owner's hand at the beginning of the next end step.

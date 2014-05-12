@@ -1,0 +1,12 @@
+name=Zombie Musher
+url=http://magiccards.info/query?q=%21Zombie+Musher
+image=http://mtgimage.com/card/zombie%20musher.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=2/3
+ability=Snow landwalk;\
+        {S}: Regenerate SN.
+timing=main
+oracle=Snow landwalk. {S}: Regenerate Zombie Musher.

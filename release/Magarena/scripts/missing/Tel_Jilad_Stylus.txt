@@ -1,0 +1,9 @@
+name=Tel-Jilad Stylus
+url=http://magiccards.info/query?q=%21Tel-Jilad+Stylus
+image=http://mtgimage.com/card/tel-jilad%20stylus.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={T}: Put target permanent you own on the bottom of your library.
+timing=main
+oracle={T}: Put target permanent you own on the bottom of your library.

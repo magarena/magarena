@@ -1,0 +1,9 @@
+name=Sneak Attack
+url=http://magiccards.info/query?q=%21Sneak+Attack
+image=http://mtgimage.com/card/sneak%20attack.jpg
+rarity=R
+type=Enchantment
+cost={3}{R}
+ability={R}: You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice the creature at the beginning of the next end step.
+timing=main
+oracle={R}: You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice the creature at the beginning of the next end step.

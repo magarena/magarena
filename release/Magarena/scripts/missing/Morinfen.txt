@@ -1,0 +1,12 @@
+name=Morinfen
+url=http://magiccards.info/query?q=%21Morinfen
+image=http://mtgimage.com/card/morinfen.jpg
+rarity=R
+type=Creature
+subtype=Horror
+cost={3}{B}{B}
+pt=5/4
+ability=Flying;\
+        Cumulative upkeep—Pay 1 life.
+timing=main
+oracle=Flying. Cumulative upkeep—Pay 1 life.

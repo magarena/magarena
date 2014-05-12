@@ -1,0 +1,9 @@
+name=Thrive
+url=http://magiccards.info/query?q=%21Thrive
+image=http://mtgimage.com/card/thrive.jpg
+rarity=C
+type=Sorcery
+cost={X}{G}
+effect=Put a +1/+1 counter on each of X target creatures.
+timing=main
+oracle=Put a +1/+1 counter on each of X target creatures.

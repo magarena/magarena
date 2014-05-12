@@ -1,0 +1,9 @@
+name=Gridlock
+url=http://magiccards.info/query?q=%21Gridlock
+image=http://mtgimage.com/card/gridlock.jpg
+rarity=U
+type=Instant
+cost={X}{U}
+effect=Tap X target nonland permanents.
+timing=removal
+oracle=Tap X target nonland permanents.

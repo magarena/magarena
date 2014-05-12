@@ -1,0 +1,9 @@
+name=Jandor's Ring
+url=http://magiccards.info/query?q=%21Jandor%27s+Ring
+image=http://mtgimage.com/card/jandor%27s%20ring.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability={2}, {T}, Discard the last card you drew this turn: Draw a card.
+timing=main
+oracle={2}, {T}, Discard the last card you drew this turn: Draw a card.

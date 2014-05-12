@@ -1,0 +1,9 @@
+name=Amnesia
+url=http://magiccards.info/query?q=%21Amnesia
+image=http://mtgimage.com/card/amnesia.jpg
+rarity=U
+type=Sorcery
+cost={3}{U}{U}{U}
+effect=Target player reveals his or her hand and discards all nonland cards.
+timing=main
+oracle=Target player reveals his or her hand and discards all nonland cards.

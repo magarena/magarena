@@ -1,0 +1,11 @@
+name=Sandskin
+url=http://magiccards.info/query?q=%21Sandskin
+image=http://mtgimage.com/card/sandskin.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        Prevent all combat damage that would be dealt to and dealt by enchanted creature.
+timing=main
+oracle=Enchant creature. Prevent all combat damage that would be dealt to and dealt by enchanted creature.

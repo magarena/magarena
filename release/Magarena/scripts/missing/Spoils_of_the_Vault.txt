@@ -1,0 +1,9 @@
+name=Spoils of the Vault
+url=http://magiccards.info/query?q=%21Spoils+of+the+Vault
+image=http://mtgimage.com/card/spoils%20of%20the%20vault.jpg
+rarity=R
+type=Instant
+cost={B}
+effect=Name a card. Reveal cards from the top of your library until you reveal the named card, then put that card into your hand. Exile all other cards revealed this way, and you lose 1 life for each of the exiled cards.
+timing=removal
+oracle=Name a card. Reveal cards from the top of your library until you reveal the named card, then put that card into your hand. Exile all other cards revealed this way, and you lose 1 life for each of the exiled cards.

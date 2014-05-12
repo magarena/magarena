@@ -1,0 +1,9 @@
+name=Reincarnation
+url=http://magiccards.info/query?q=%21Reincarnation
+image=http://mtgimage.com/card/reincarnation.jpg
+rarity=U
+type=Instant
+cost={1}{G}{G}
+effect=Choose target creature. When that creature dies this turn, return a creature card from its owner's graveyard to the battlefield under the control of that creature's owner.
+timing=removal
+oracle=Choose target creature. When that creature dies this turn, return a creature card from its owner's graveyard to the battlefield under the control of that creature's owner.

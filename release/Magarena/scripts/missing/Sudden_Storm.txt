@@ -1,0 +1,9 @@
+name=Sudden Storm
+url=http://magiccards.info/query?q=%21Sudden+Storm
+image=http://mtgimage.com/card/sudden%20storm.jpg
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Tap up to two target creatures. Those creatures don't untap during their controllers' next untap steps. Scry 1.
+timing=removal
+oracle=Tap up to two target creatures. Those creatures don't untap during their controllers' next untap steps. Scry 1.

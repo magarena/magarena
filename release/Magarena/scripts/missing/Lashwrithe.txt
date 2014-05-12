@@ -1,0 +1,12 @@
+name=Lashwrithe
+url=http://magiccards.info/query?q=%21Lashwrithe
+image=http://mtgimage.com/card/lashwrithe.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={4}
+ability=Living weapon;\
+        Equipped creature gets +1/+1 for each Swamp you control.;\
+        Equip {P/B}{P/B}
+timing=main
+oracle=Living weapon. Equipped creature gets +1/+1 for each Swamp you control. Equip {P/B}{P/B}

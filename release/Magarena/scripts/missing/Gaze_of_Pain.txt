@@ -1,0 +1,9 @@
+name=Gaze of Pain
+url=http://magiccards.info/query?q=%21Gaze+of+Pain
+image=http://mtgimage.com/card/gaze%20of%20pain.jpg
+rarity=C
+type=Sorcery
+cost={1}{B}
+effect=Until end of turn, whenever a creature you control attacks and isn't blocked, you may choose to have it deal damage equal to its power to a target creature. If you do, it assigns no combat damage this turn.
+timing=main
+oracle=Until end of turn, whenever a creature you control attacks and isn't blocked, you may choose to have it deal damage equal to its power to a target creature. If you do, it assigns no combat damage this turn.

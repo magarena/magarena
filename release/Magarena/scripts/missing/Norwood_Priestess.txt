@@ -1,0 +1,11 @@
+name=Norwood Priestess
+url=http://magiccards.info/query?q=%21Norwood+Priestess
+image=http://mtgimage.com/card/norwood%20priestess.jpg
+rarity=R
+type=Creature
+subtype=Elf,Druid
+cost={2}{G}{G}
+pt=1/1
+ability={T}: You may put a green creature card from your hand onto the battlefield. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: You may put a green creature card from your hand onto the battlefield. Activate this ability only during your turn, before attackers are declared.

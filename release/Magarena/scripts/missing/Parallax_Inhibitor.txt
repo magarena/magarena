@@ -1,0 +1,9 @@
+name=Parallax Inhibitor
+url=http://magiccards.info/query?q=%21Parallax+Inhibitor
+image=http://mtgimage.com/card/parallax%20inhibitor.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={1}, {T}, Sacrifice SN: Put a fade counter on each permanent with fading you control.
+timing=main
+oracle={1}, {T}, Sacrifice Parallax Inhibitor: Put a fade counter on each permanent with fading you control.

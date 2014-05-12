@@ -1,0 +1,11 @@
+name=Pendelhaven Elder
+url=http://magiccards.info/query?q=%21Pendelhaven+Elder
+image=http://mtgimage.com/card/pendelhaven%20elder.jpg
+rarity=U
+type=Creature
+subtype=Elf,Shaman
+cost={1}{G}
+pt=1/1
+ability={T}: Each 1/1 creature you control gets +1/+2 until end of turn.
+timing=main
+oracle={T}: Each 1/1 creature you control gets +1/+2 until end of turn.

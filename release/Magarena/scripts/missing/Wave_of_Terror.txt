@@ -1,0 +1,10 @@
+name=Wave of Terror
+url=http://magiccards.info/query?q=%21Wave+of+Terror
+image=http://mtgimage.com/card/wave%20of%20terror.jpg
+rarity=R
+type=Enchantment
+cost={2}{B}
+ability=Cumulative upkeep {1};\
+        At the beginning of your draw step, destroy each creature with converted mana cost equal to the number of age counters on SN. They can't be regenerated.
+timing=main
+oracle=Cumulative upkeep {1}. At the beginning of your draw step, destroy each creature with converted mana cost equal to the number of age counters on Wave of Terror. They can't be regenerated.

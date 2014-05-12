@@ -1,0 +1,9 @@
+name=Mind Unbound
+url=http://magiccards.info/query?q=%21Mind+Unbound
+image=http://mtgimage.com/card/mind%20unbound.jpg
+rarity=R
+type=Enchantment
+cost={4}{U}{U}
+ability=At the beginning of your upkeep, put a lore counter on SN, then draw a card for each lore counter on SN.
+timing=main
+oracle=At the beginning of your upkeep, put a lore counter on Mind Unbound, then draw a card for each lore counter on Mind Unbound.

@@ -1,0 +1,11 @@
+name=Cenn's Heir
+url=http://magiccards.info/query?q=%21Cenn%27s+Heir
+image=http://mtgimage.com/card/cenn%27s%20heir.jpg
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={1}{W}
+pt=1/1
+ability=Whenever SN attacks, it gets +1/+1 until end of turn for each other attacking Kithkin.
+timing=main
+oracle=Whenever Cenn's Heir attacks, it gets +1/+1 until end of turn for each other attacking Kithkin.

@@ -1,0 +1,11 @@
+name=Takenuma Bleeder
+url=http://magiccards.info/query?q=%21Takenuma+Bleeder
+image=http://mtgimage.com/card/takenuma%20bleeder.jpg
+rarity=C
+type=Creature
+subtype=Ogre,Shaman
+cost={2}{B}
+pt=3/3
+ability=Whenever SN attacks or blocks, you lose 1 life if you don't control a Demon.
+timing=main
+oracle=Whenever Takenuma Bleeder attacks or blocks, you lose 1 life if you don't control a Demon.

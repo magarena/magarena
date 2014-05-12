@@ -1,0 +1,12 @@
+name=Hokori, Dust Drinker
+url=http://magiccards.info/query?q=%21Hokori%2C+Dust+Drinker
+image=http://mtgimage.com/card/hokori%2C%20dust%20drinker.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{W}{W}
+pt=2/2
+ability=Lands don't untap during their controllers' untap steps.;\
+        At the beginning of each player's upkeep, that player untaps a land he or she controls.
+timing=main
+oracle=Lands don't untap during their controllers' untap steps. At the beginning of each player's upkeep, that player untaps a land he or she controls.

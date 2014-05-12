@@ -1,0 +1,10 @@
+name=Gilt-Leaf Ambush
+url=http://magiccards.info/query?q=%21Gilt-Leaf+Ambush
+image=http://mtgimage.com/card/gilt-leaf%20ambush.jpg
+rarity=C
+type=Tribal,Instant
+subtype=Elf
+cost={2}{G}
+effect=Put two 1/1 green Elf Warrior creature tokens onto the battlefield. Clash with an opponent. If you win, those creatures gain deathtouch until end of turn.
+timing=removal
+oracle=Put two 1/1 green Elf Warrior creature tokens onto the battlefield. Clash with an opponent. If you win, those creatures gain deathtouch until end of turn.

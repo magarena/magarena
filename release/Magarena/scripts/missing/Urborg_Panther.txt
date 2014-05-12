@@ -1,0 +1,12 @@
+name=Urborg Panther
+url=http://magiccards.info/query?q=%21Urborg+Panther
+image=http://mtgimage.com/card/urborg%20panther.jpg
+rarity=C
+type=Creature
+subtype=Nightstalker,Cat
+cost={2}{B}
+pt=2/2
+ability={B}, Sacrifice SN: Destroy target creature blocking SN.;\
+        Sacrifice a creature named Feral Shadow, a creature named Breathstealer, and SN: Search your library for a card named Spirit of the Night and put that card onto the battlefield. Then shuffle your library.
+timing=main
+oracle={B}, Sacrifice Urborg Panther: Destroy target creature blocking Urborg Panther. Sacrifice a creature named Feral Shadow, a creature named Breathstealer, and Urborg Panther: Search your library for a card named Spirit of the Night and put that card onto the battlefield. Then shuffle your library.

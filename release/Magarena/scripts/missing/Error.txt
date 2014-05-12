@@ -1,0 +1,9 @@
+name=Error
+url=http://magiccards.info/query?q=%21Error
+image=http://mtgimage.com/card/trialerror.jpg
+rarity=U
+type=Instant
+cost={U}{B}
+effect=Counter target multicolored spell.
+timing=removal
+oracle=Counter target multicolored spell.

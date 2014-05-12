@@ -1,0 +1,9 @@
+name=Sapphire Medallion
+url=http://magiccards.info/query?q=%21Sapphire+Medallion
+image=http://mtgimage.com/card/sapphire%20medallion.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Blue spells you cast cost {1} less to cast.
+timing=main
+oracle=Blue spells you cast cost {1} less to cast.

@@ -1,0 +1,11 @@
+name=Corpse Harvester
+url=http://magiccards.info/query?q=%21Corpse+Harvester
+image=http://mtgimage.com/card/corpse%20harvester.jpg
+rarity=U
+type=Creature
+subtype=Zombie,Wizard
+cost={3}{B}{B}
+pt=3/3
+ability={1}{B}, {T}, Sacrifice a creature: Search your library for a Zombie card and a Swamp card, reveal them, and put them into your hand. Then shuffle your library.
+timing=main
+oracle={1}{B}, {T}, Sacrifice a creature: Search your library for a Zombie card and a Swamp card, reveal them, and put them into your hand. Then shuffle your library.

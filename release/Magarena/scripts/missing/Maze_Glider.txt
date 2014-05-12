@@ -1,0 +1,12 @@
+name=Maze Glider
+url=http://magiccards.info/query?q=%21Maze+Glider
+image=http://mtgimage.com/card/maze%20glider.jpg
+rarity=C
+type=Creature
+subtype=Elemental
+cost={5}{U}
+pt=3/5
+ability=Flying;\
+        Multicolored creatures you control have flying.
+timing=main
+oracle=Flying. Multicolored creatures you control have flying.

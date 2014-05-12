@@ -1,0 +1,12 @@
+name=Lava Runner
+url=http://magiccards.info/query?q=%21Lava+Runner
+image=http://mtgimage.com/card/lava%20runner.jpg
+rarity=R
+type=Creature
+subtype=Lizard
+cost={1}{R}{R}
+pt=2/2
+ability=Haste;\
+        Whenever SN becomes the target of a spell or ability, that spell or ability's controller sacrifices a land.
+timing=main
+oracle=Haste. Whenever Lava Runner becomes the target of a spell or ability, that spell or ability's controller sacrifices a land.

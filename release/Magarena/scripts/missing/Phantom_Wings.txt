@@ -1,0 +1,12 @@
+name=Phantom Wings
+url=http://magiccards.info/query?q=%21Phantom+Wings
+image=http://mtgimage.com/card/phantom%20wings.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Enchanted creature has flying.;\
+        Sacrifice SN: Return enchanted creature to its owner's hand.
+timing=main
+oracle=Enchant creature. Enchanted creature has flying. Sacrifice Phantom Wings: Return enchanted creature to its owner's hand.

@@ -1,0 +1,11 @@
+name=Wild Mammoth
+url=http://magiccards.info/query?q=%21Wild+Mammoth
+image=http://mtgimage.com/card/wild%20mammoth.jpg
+rarity=U
+type=Creature
+subtype=Elephant
+cost={2}{G}
+pt=3/4
+ability=At the beginning of your upkeep, if a player controls more creatures than each other player, the player who controls the most creatures gains control of SN.
+timing=main
+oracle=At the beginning of your upkeep, if a player controls more creatures than each other player, the player who controls the most creatures gains control of Wild Mammoth.

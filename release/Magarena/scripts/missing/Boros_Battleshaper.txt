@@ -1,0 +1,11 @@
+name=Boros Battleshaper
+url=http://magiccards.info/query?q=%21Boros+Battleshaper
+image=http://mtgimage.com/card/boros%20battleshaper.jpg
+rarity=R
+type=Creature
+subtype=Minotaur,Soldier
+cost={5}{R}{W}
+pt=5/5
+ability=At the beginning of each combat, up to one target creature attacks or blocks this combat if able and up to one target creature can't attack or block this combat.
+timing=main
+oracle=At the beginning of each combat, up to one target creature attacks or blocks this combat if able and up to one target creature can't attack or block this combat.

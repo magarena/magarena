@@ -1,0 +1,12 @@
+name=Enigma Eidolon
+url=http://magiccards.info/query?q=%21Enigma+Eidolon
+image=http://mtgimage.com/card/enigma%20eidolon.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{U}
+pt=2/2
+ability={U}, Sacrifice SN: Target player puts the top three cards of his or her library into his or her graveyard.;\
+        Whenever you cast a multicolored spell, you may return SN from your graveyard to your hand.
+timing=main
+oracle={U}, Sacrifice Enigma Eidolon: Target player puts the top three cards of his or her library into his or her graveyard. Whenever you cast a multicolored spell, you may return Enigma Eidolon from your graveyard to your hand.

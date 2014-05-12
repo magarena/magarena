@@ -1,0 +1,12 @@
+name=Screeching Buzzard
+url=http://magiccards.info/query?q=%21Screeching+Buzzard
+image=http://mtgimage.com/card/screeching%20buzzard.jpg
+rarity=C
+type=Creature
+subtype=Bird
+cost={3}{B}
+pt=2/2
+ability=Flying;\
+        When SN dies, each opponent discards a card.
+timing=main
+oracle=Flying. When Screeching Buzzard dies, each opponent discards a card.

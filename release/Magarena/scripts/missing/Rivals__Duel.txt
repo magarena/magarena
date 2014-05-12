@@ -1,0 +1,9 @@
+name=Rivals' Duel
+url=http://magiccards.info/query?q=%21Rivals%27+Duel
+image=http://mtgimage.com/card/rivals%27%20duel.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}
+effect=Choose two target creatures that share no creature types. Those creatures fight each other.
+timing=main
+oracle=Choose two target creatures that share no creature types. Those creatures fight each other.

@@ -1,0 +1,9 @@
+name=Manabond
+url=http://magiccards.info/query?q=%21Manabond
+image=http://mtgimage.com/card/manabond.jpg
+rarity=R
+type=Enchantment
+cost={G}
+ability=At the beginning of your end step, you may reveal your hand and put all land cards from it onto the battlefield. If you do, discard your hand.
+timing=main
+oracle=At the beginning of your end step, you may reveal your hand and put all land cards from it onto the battlefield. If you do, discard your hand.

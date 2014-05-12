@@ -1,0 +1,9 @@
+name=Soul Barrier
+url=http://magiccards.info/query?q=%21Soul+Barrier
+image=http://mtgimage.com/card/soul%20barrier.jpg
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=Whenever an opponent casts a creature spell, SN deals 2 damage to that player unless he or she pays {2}.
+timing=main
+oracle=Whenever an opponent casts a creature spell, Soul Barrier deals 2 damage to that player unless he or she pays {2}.

@@ -1,0 +1,12 @@
+name=Sunforger
+url=http://magiccards.info/query?q=%21Sunforger
+image=http://mtgimage.com/card/sunforger.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature gets +4/+0.;\
+        {R}{W}, Unattach SN: Search your library for a red or white instant card with converted mana cost 4 or less and cast that card without paying its mana cost. Then shuffle your library.;\
+        Equip {3}
+timing=main
+oracle=Equipped creature gets +4/+0. {R}{W}, Unattach Sunforger: Search your library for a red or white instant card with converted mana cost 4 or less and cast that card without paying its mana cost. Then shuffle your library. Equip {3}

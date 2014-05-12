@@ -1,0 +1,11 @@
+name=Scarred Vinebreeder
+url=http://magiccards.info/query?q=%21Scarred+Vinebreeder
+image=http://mtgimage.com/card/scarred%20vinebreeder.jpg
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={1}{B}
+pt=1/1
+ability={2}{B}, Exile an Elf card from your graveyard: SN gets +3/+3 until end of turn.
+timing=main
+oracle={2}{B}, Exile an Elf card from your graveyard: Scarred Vinebreeder gets +3/+3 until end of turn.

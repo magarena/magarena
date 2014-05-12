@@ -1,0 +1,9 @@
+name=Fight to the Death
+url=http://magiccards.info/query?q=%21Fight+to+the+Death
+image=http://mtgimage.com/card/fight%20to%20the%20death.jpg
+rarity=R
+type=Instant
+cost={R}{W}
+effect=Destroy all blocking creatures and all blocked creatures.
+timing=removal
+oracle=Destroy all blocking creatures and all blocked creatures.

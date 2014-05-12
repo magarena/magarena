@@ -1,0 +1,9 @@
+name=Unnerve
+url=http://magiccards.info/query?q=%21Unnerve
+image=http://mtgimage.com/card/unnerve.jpg
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Each opponent discards two cards.
+timing=main
+oracle=Each opponent discards two cards.

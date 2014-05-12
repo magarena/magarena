@@ -1,0 +1,12 @@
+name=Hollow Specter
+url=http://magiccards.info/query?q=%21Hollow+Specter
+image=http://mtgimage.com/card/hollow%20specter.jpg
+rarity=R
+type=Creature
+subtype=Specter
+cost={1}{B}{B}
+pt=2/2
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you may pay {X}. If you do, that player reveals X cards from his or her hand and you choose one of them. That player discards that card.
+timing=main
+oracle=Flying. Whenever Hollow Specter deals combat damage to a player, you may pay {X}. If you do, that player reveals X cards from his or her hand and you choose one of them. That player discards that card.

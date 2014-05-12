@@ -1,0 +1,14 @@
+name=Icatian Moneychanger
+url=http://magiccards.info/query?q=%21Icatian+Moneychanger
+image=http://mtgimage.com/card/icatian%20moneychanger1.jpg
+rarity=C
+type=Creature
+subtype=Human
+cost={W}
+pt=0/2
+ability=SN enters the battlefield with three credit counters on it.;\
+        When SN enters the battlefield, it deals 3 damage to you.;\
+        At the beginning of your upkeep, put a credit counter on SN.;\
+        Sacrifice SN: You gain 1 life for each credit counter on SN. Activate this ability only during your upkeep.
+timing=main
+oracle=Icatian Moneychanger enters the battlefield with three credit counters on it. When Icatian Moneychanger enters the battlefield, it deals 3 damage to you. At the beginning of your upkeep, put a credit counter on Icatian Moneychanger. Sacrifice Icatian Moneychanger: You gain 1 life for each credit counter on Icatian Moneychanger. Activate this ability only during your upkeep.

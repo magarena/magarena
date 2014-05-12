@@ -1,0 +1,11 @@
+name=Might Weaver
+url=http://magiccards.info/query?q=%21Might+Weaver
+image=http://mtgimage.com/card/might%20weaver.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{G}
+pt=2/1
+ability={2}: Target red or white creature gains trample until end of turn.
+timing=main
+oracle={2}: Target red or white creature gains trample until end of turn.

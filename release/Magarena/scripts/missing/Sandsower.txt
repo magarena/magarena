@@ -1,0 +1,11 @@
+name=Sandsower
+url=http://magiccards.info/query?q=%21Sandsower
+image=http://mtgimage.com/card/sandsower.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{W}
+pt=1/3
+ability=Tap three untapped creatures you control: Tap target creature.
+timing=main
+oracle=Tap three untapped creatures you control: Tap target creature.

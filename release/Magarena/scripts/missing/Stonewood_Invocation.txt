@@ -1,0 +1,10 @@
+name=Stonewood Invocation
+url=http://magiccards.info/query?q=%21Stonewood+Invocation
+image=http://mtgimage.com/card/stonewood%20invocation.jpg
+rarity=R
+type=Instant
+cost={3}{G}
+effect=Split second;\
+        Target creature gets +5/+5 and gains shroud until end of turn.
+timing=removal
+oracle=Split second. Target creature gets +5/+5 and gains shroud until end of turn.

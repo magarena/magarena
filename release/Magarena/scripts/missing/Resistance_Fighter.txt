@@ -1,0 +1,11 @@
+name=Resistance Fighter
+url=http://magiccards.info/query?q=%21Resistance+Fighter
+image=http://mtgimage.com/card/resistance%20fighter.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability=Sacrifice SN: Prevent all combat damage target creature would deal this turn.
+timing=main
+oracle=Sacrifice Resistance Fighter: Prevent all combat damage target creature would deal this turn.

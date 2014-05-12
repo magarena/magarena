@@ -1,0 +1,11 @@
+name=Vow of Malice
+url=http://magiccards.info/query?q=%21Vow+of+Malice
+image=http://mtgimage.com/card/vow%20of%20malice.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2, has intimidate, and can't attack you or a planeswalker you control.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+2, has intimidate, and can't attack you or a planeswalker you control.

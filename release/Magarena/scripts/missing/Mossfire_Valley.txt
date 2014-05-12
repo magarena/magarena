@@ -1,0 +1,8 @@
+name=Mossfire Valley
+url=http://magiccards.info/query?q=%21Mossfire+Valley
+image=http://mtgimage.com/card/mossfire%20valley.jpg
+rarity=R
+type=Land
+ability={1}, {T}: Add {R}{G} to your mana pool.
+timing=main
+oracle={1}, {T}: Add {R}{G} to your mana pool.

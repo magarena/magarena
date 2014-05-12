@@ -1,0 +1,10 @@
+name=Geothermal Crevice
+url=http://magiccards.info/query?q=%21Geothermal+Crevice
+image=http://mtgimage.com/card/geothermal%20crevice.jpg
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} to your mana pool.;\
+        {T}, Sacrifice SN: Add {B}{G} to your mana pool.
+timing=main
+oracle=Geothermal Crevice enters the battlefield tapped. {T}: Add {R} to your mana pool. {T}, Sacrifice Geothermal Crevice: Add {B}{G} to your mana pool.

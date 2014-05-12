@@ -1,0 +1,12 @@
+name=Hellkite Charger
+url=http://magiccards.info/query?q=%21Hellkite+Charger
+image=http://mtgimage.com/card/hellkite%20charger.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={4}{R}{R}
+pt=5/5
+ability=Flying, haste;\
+        Whenever SN attacks, you may pay {5}{R}{R}. If you do, untap all attacking creatures and after this phase, there is an additional combat phase.
+timing=main
+oracle=Flying, haste. Whenever Hellkite Charger attacks, you may pay {5}{R}{R}. If you do, untap all attacking creatures and after this phase, there is an additional combat phase.

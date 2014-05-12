@@ -1,0 +1,11 @@
+name=Talruum Piper
+url=http://magiccards.info/query?q=%21Talruum+Piper
+image=http://mtgimage.com/card/talruum%20piper.jpg
+rarity=U
+type=Creature
+subtype=Minotaur
+cost={4}{R}
+pt=3/3
+ability=All creatures with flying able to block SN do so.
+timing=main
+oracle=All creatures with flying able to block Talruum Piper do so.

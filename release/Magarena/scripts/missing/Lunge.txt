@@ -1,0 +1,9 @@
+name=Lunge
+url=http://magiccards.info/query?q=%21Lunge
+image=http://mtgimage.com/card/lunge.jpg
+rarity=C
+type=Instant
+cost={2}{R}
+effect=SN deals 2 damage to target creature and 2 damage to target player.
+timing=removal
+oracle=Lunge deals 2 damage to target creature and 2 damage to target player.

@@ -1,0 +1,13 @@
+name=Orcish Mine
+url=http://magiccards.info/query?q=%21Orcish+Mine
+image=http://mtgimage.com/card/orcish%20mine.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{R}{R}
+ability=Enchant land;\
+        SN enters the battlefield with three ore counters on it.;\
+        At the beginning of your upkeep or whenever enchanted land becomes tapped, remove an ore counter from SN.;\
+        When the last ore counter is removed from SN, destroy enchanted land and SN deals 2 damage to that land's controller.
+timing=main
+oracle=Enchant land. Orcish Mine enters the battlefield with three ore counters on it. At the beginning of your upkeep or whenever enchanted land becomes tapped, remove an ore counter from Orcish Mine. When the last ore counter is removed from Orcish Mine, destroy enchanted land and Orcish Mine deals 2 damage to that land's controller.

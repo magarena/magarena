@@ -1,0 +1,10 @@
+name=Stir the Pride
+url=http://magiccards.info/query?q=%21Stir+the+Pride
+image=http://mtgimage.com/card/stir%20the%20pride.jpg
+rarity=U
+type=Instant
+cost={4}{W}
+effect=Choose one — Creatures you control get +2/+2 until end of turn; or until end of turn, creatures you control gain "Whenever this creature deals damage, you gain that much life.";\
+        Entwine {1}{W}
+timing=removal
+oracle=Choose one — Creatures you control get +2/+2 until end of turn; or until end of turn, creatures you control gain "Whenever this creature deals damage, you gain that much life.". Entwine {1}{W}

@@ -1,0 +1,11 @@
+name=Rustmouth Ogre
+url=http://magiccards.info/query?q=%21Rustmouth+Ogre
+image=http://mtgimage.com/card/rustmouth%20ogre.jpg
+rarity=U
+type=Creature
+subtype=Ogre
+cost={4}{R}{R}
+pt=5/4
+ability=Whenever SN deals combat damage to a player, you may destroy target artifact that player controls.
+timing=main
+oracle=Whenever Rustmouth Ogre deals combat damage to a player, you may destroy target artifact that player controls.

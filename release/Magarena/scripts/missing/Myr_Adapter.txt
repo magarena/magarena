@@ -1,0 +1,11 @@
+name=Myr Adapter
+url=http://magiccards.info/query?q=%21Myr+Adapter
+image=http://mtgimage.com/card/myr%20adapter.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Myr
+cost={3}
+pt=1/1
+ability=SN gets +1/+1 for each Equipment attached to it.
+timing=main
+oracle=Myr Adapter gets +1/+1 for each Equipment attached to it.

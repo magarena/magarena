@@ -1,0 +1,9 @@
+name=Surveyor's Scope
+url=http://magiccards.info/query?q=%21Surveyor%27s+Scope
+image=http://mtgimage.com/card/surveyor%27s%20scope.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={T}, Exile SN: Search your library for up to X basic land cards, where X is the number of players who control at least two more lands than you. Put those cards onto the battlefield, then shuffle your library.
+timing=main
+oracle={T}, Exile Surveyor's Scope: Search your library for up to X basic land cards, where X is the number of players who control at least two more lands than you. Put those cards onto the battlefield, then shuffle your library.

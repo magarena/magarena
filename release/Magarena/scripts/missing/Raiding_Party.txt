@@ -1,0 +1,10 @@
+name=Raiding Party
+url=http://magiccards.info/query?q=%21Raiding+Party
+image=http://mtgimage.com/card/raiding%20party.jpg
+rarity=U
+type=Enchantment
+cost={2}{R}
+ability=SN can't be the target of white spells or abilities from white sources.;\
+        Sacrifice an Orc: Each player may tap any number of untapped white creatures he or she controls. For each creature tapped this way, that player chooses up to two Plains. Then destroy all Plains that weren't chosen this way by any player.
+timing=main
+oracle=Raiding Party can't be the target of white spells or abilities from white sources. Sacrifice an Orc: Each player may tap any number of untapped white creatures he or she controls. For each creature tapped this way, that player chooses up to two Plains. Then destroy all Plains that weren't chosen this way by any player.

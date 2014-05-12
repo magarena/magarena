@@ -1,0 +1,9 @@
+name=Soul Conduit
+url=http://magiccards.info/query?q=%21Soul+Conduit
+image=http://mtgimage.com/card/soul%20conduit.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability={6}, {T}: Two target players exchange life totals.
+timing=main
+oracle={6}, {T}: Two target players exchange life totals.

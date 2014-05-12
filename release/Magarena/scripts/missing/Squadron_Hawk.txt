@@ -1,0 +1,12 @@
+name=Squadron Hawk
+url=http://magiccards.info/query?q=%21Squadron+Hawk
+image=http://mtgimage.com/card/squadron%20hawk.jpg
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{W}
+pt=1/1
+ability=Flying;\
+        When SN enters the battlefield, you may search your library for up to three cards named SN, reveal them, put them into your hand, then shuffle your library.
+timing=main
+oracle=Flying. When Squadron Hawk enters the battlefield, you may search your library for up to three cards named Squadron Hawk, reveal them, put them into your hand, then shuffle your library.

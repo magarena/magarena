@@ -1,0 +1,11 @@
+name=Goka the Unjust
+url=http://magiccards.info/query?q=%21Goka+the+Unjust
+image=http://mtgimage.com/card/goka%20the%20unjust.jpg
+rarity=U
+type=Creature
+subtype=Ogre,Shaman
+cost={3}{R}
+pt=4/4
+ability={T}: SN deals 4 damage to target creature that was dealt damage this turn.
+timing=main
+oracle={T}: Goka the Unjust deals 4 damage to target creature that was dealt damage this turn.

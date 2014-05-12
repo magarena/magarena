@@ -1,0 +1,11 @@
+name=Painbringer
+url=http://magiccards.info/query?q=%21Painbringer
+image=http://mtgimage.com/card/painbringer.jpg
+rarity=U
+type=Creature
+subtype=Human,Minion
+cost={2}{B}{B}
+pt=1/1
+ability={T}, Exile any number of cards from your graveyard: Target creature gets -X/-X until end of turn, where X is the number of cards exiled this way.
+timing=main
+oracle={T}, Exile any number of cards from your graveyard: Target creature gets -X/-X until end of turn, where X is the number of cards exiled this way.

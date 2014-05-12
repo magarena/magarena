@@ -1,0 +1,9 @@
+name=False Cure
+url=http://magiccards.info/query?q=%21False+Cure
+image=http://mtgimage.com/card/false%20cure.jpg
+rarity=R
+type=Instant
+cost={B}{B}
+effect=Until end of turn, whenever a player gains life, that player loses 2 life for each 1 life he or she gained.
+timing=removal
+oracle=Until end of turn, whenever a player gains life, that player loses 2 life for each 1 life he or she gained.

@@ -1,0 +1,9 @@
+name=Chaos
+url=http://magiccards.info/query?q=%21Chaos
+image=http://mtgimage.com/card/orderchaos.jpg
+rarity=U
+type=Instant
+cost={2}{R}
+effect=Creatures can't block this turn.
+timing=removal
+oracle=Creatures can't block this turn.

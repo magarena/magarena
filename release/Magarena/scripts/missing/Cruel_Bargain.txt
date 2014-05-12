@@ -1,0 +1,9 @@
+name=Cruel Bargain
+url=http://magiccards.info/query?q=%21Cruel+Bargain
+image=http://mtgimage.com/card/cruel%20bargain.jpg
+rarity=R
+type=Sorcery
+cost={B}{B}{B}
+effect=Draw four cards. You lose half your life, rounded up.
+timing=main
+oracle=Draw four cards. You lose half your life, rounded up.

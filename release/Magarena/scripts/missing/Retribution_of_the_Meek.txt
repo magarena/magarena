@@ -1,0 +1,9 @@
+name=Retribution of the Meek
+url=http://magiccards.info/query?q=%21Retribution+of+the+Meek
+image=http://mtgimage.com/card/retribution%20of%20the%20meek.jpg
+rarity=R
+type=Sorcery
+cost={2}{W}
+effect=Destroy all creatures with power 4 or greater. They can't be regenerated.
+timing=main
+oracle=Destroy all creatures with power 4 or greater. They can't be regenerated.

@@ -1,0 +1,9 @@
+name=Memoricide
+url=http://magiccards.info/query?q=%21Memoricide
+image=http://mtgimage.com/card/memoricide.jpg
+rarity=R
+type=Sorcery
+cost={3}{B}
+effect=Name a nonland card. Search target player's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.
+timing=main
+oracle=Name a nonland card. Search target player's graveyard, hand, and library for any number of cards with that name and exile them. Then that player shuffles his or her library.

@@ -1,0 +1,9 @@
+name=Foster
+url=http://magiccards.info/query?q=%21Foster
+image=http://mtgimage.com/card/foster.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}{G}
+ability=Whenever a creature you control dies, you may pay {1}. If you do, reveal cards from the top of your library until you reveal a creature card. Put that card into your hand and the rest into your graveyard.
+timing=main
+oracle=Whenever a creature you control dies, you may pay {1}. If you do, reveal cards from the top of your library until you reveal a creature card. Put that card into your hand and the rest into your graveyard.

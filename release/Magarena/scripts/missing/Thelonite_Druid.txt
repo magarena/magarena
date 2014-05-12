@@ -1,0 +1,11 @@
+name=Thelonite Druid
+url=http://magiccards.info/query?q=%21Thelonite+Druid
+image=http://mtgimage.com/card/thelonite%20druid.jpg
+rarity=U
+type=Creature
+subtype=Human,Cleric,Druid
+cost={2}{G}
+pt=1/1
+ability={1}{G}, {T}, Sacrifice a creature: Forests you control become 2/3 creatures until end of turn. They're still lands.
+timing=main
+oracle={1}{G}, {T}, Sacrifice a creature: Forests you control become 2/3 creatures until end of turn. They're still lands.

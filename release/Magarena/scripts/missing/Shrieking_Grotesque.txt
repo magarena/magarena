@@ -1,0 +1,12 @@
+name=Shrieking Grotesque
+url=http://magiccards.info/query?q=%21Shrieking+Grotesque
+image=http://mtgimage.com/card/shrieking%20grotesque.jpg
+rarity=C
+type=Creature
+subtype=Gargoyle
+cost={2}{W}
+pt=2/1
+ability=Flying;\
+        When SN enters the battlefield, if {B} was spent to cast it, target player discards a card.
+timing=main
+oracle=Flying. When Shrieking Grotesque enters the battlefield, if {B} was spent to cast it, target player discards a card.

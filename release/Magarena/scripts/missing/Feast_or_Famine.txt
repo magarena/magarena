@@ -1,0 +1,9 @@
+name=Feast or Famine
+url=http://magiccards.info/query?q=%21Feast+or+Famine
+image=http://mtgimage.com/card/feast%20or%20famine1.jpg
+rarity=C
+type=Instant
+cost={3}{B}
+effect=Choose one — Put a 2/2 black Zombie creature token onto the battlefield; or destroy target nonartifact, nonblack creature and it can't be regenerated.
+timing=removal
+oracle=Choose one — Put a 2/2 black Zombie creature token onto the battlefield; or destroy target nonartifact, nonblack creature and it can't be regenerated.

@@ -1,0 +1,12 @@
+name=Dementia Bat
+url=http://magiccards.info/query?q=%21Dementia+Bat
+image=http://mtgimage.com/card/dementia%20bat.jpg
+rarity=C
+type=Creature
+subtype=Bat
+cost={4}{B}
+pt=2/2
+ability=Flying;\
+        {4}{B}, Sacrifice SN: Target player discards two cards.
+timing=main
+oracle=Flying. {4}{B}, Sacrifice Dementia Bat: Target player discards two cards.

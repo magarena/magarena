@@ -1,0 +1,10 @@
+name=Psychic Purge
+url=http://magiccards.info/query?q=%21Psychic+Purge
+image=http://mtgimage.com/card/psychic%20purge.jpg
+rarity=C
+type=Sorcery
+cost={U}
+effect=SN deals 1 damage to target creature or player.;\
+        When a spell or ability an opponent controls causes you to discard SN, that player loses 5 life.
+timing=main
+oracle=Psychic Purge deals 1 damage to target creature or player. When a spell or ability an opponent controls causes you to discard Psychic Purge, that player loses 5 life.

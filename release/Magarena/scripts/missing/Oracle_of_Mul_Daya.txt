@@ -1,0 +1,13 @@
+name=Oracle of Mul Daya
+url=http://magiccards.info/query?q=%21Oracle+of+Mul+Daya
+image=http://mtgimage.com/card/oracle%20of%20mul%20daya.jpg
+rarity=R
+type=Creature
+subtype=Elf,Shaman
+cost={3}{G}
+pt=2/2
+ability=You may play an additional land on each of your turns.;\
+        Play with the top card of your library revealed.;\
+        You may play the top card of your library if it's a land card.
+timing=main
+oracle=You may play an additional land on each of your turns. Play with the top card of your library revealed. You may play the top card of your library if it's a land card.

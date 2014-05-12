@@ -1,0 +1,11 @@
+name=Disciple of Kangee
+url=http://magiccards.info/query?q=%21Disciple+of+Kangee
+image=http://mtgimage.com/card/disciple%20of%20kangee.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}
+pt=2/2
+ability={U}, {T}: Target creature gains flying and becomes blue until end of turn.
+timing=main
+oracle={U}, {T}: Target creature gains flying and becomes blue until end of turn.

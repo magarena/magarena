@@ -1,0 +1,12 @@
+name=Torpid Moloch
+url=http://magiccards.info/query?q=%21Torpid+Moloch
+image=http://mtgimage.com/card/torpid%20moloch.jpg
+rarity=C
+type=Creature
+subtype=Lizard
+cost={R}
+pt=3/2
+ability=Defender;\
+        Sacrifice three lands: SN loses defender until end of turn.
+timing=main
+oracle=Defender. Sacrifice three lands: Torpid Moloch loses defender until end of turn.

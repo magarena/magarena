@@ -1,0 +1,11 @@
+name=Forsaken Wastes
+url=http://magiccards.info/query?q=%21Forsaken+Wastes
+image=http://mtgimage.com/card/forsaken%20wastes.jpg
+rarity=R
+type=Enchantment
+cost={2}{B}
+ability=Players can't gain life.;\
+        At the beginning of each player's upkeep, that player loses 1 life.;\
+        Whenever SN becomes the target of a spell, that spell's controller loses 5 life.
+timing=main
+oracle=Players can't gain life. At the beginning of each player's upkeep, that player loses 1 life. Whenever Forsaken Wastes becomes the target of a spell, that spell's controller loses 5 life.

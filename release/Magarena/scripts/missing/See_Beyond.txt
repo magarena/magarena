@@ -1,0 +1,9 @@
+name=See Beyond
+url=http://magiccards.info/query?q=%21See+Beyond
+image=http://mtgimage.com/card/see%20beyond.jpg
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Draw two cards, then shuffle a card from your hand into your library.
+timing=main
+oracle=Draw two cards, then shuffle a card from your hand into your library.

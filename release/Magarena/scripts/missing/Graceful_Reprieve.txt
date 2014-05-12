@@ -1,0 +1,9 @@
+name=Graceful Reprieve
+url=http://magiccards.info/query?q=%21Graceful+Reprieve
+image=http://mtgimage.com/card/graceful%20reprieve.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=When target creature dies this turn, return that card to the battlefield under its owner's control.
+timing=removal
+oracle=When target creature dies this turn, return that card to the battlefield under its owner's control.

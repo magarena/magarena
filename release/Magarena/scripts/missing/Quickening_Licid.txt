@@ -1,0 +1,12 @@
+name=Quickening Licid
+url=http://magiccards.info/query?q=%21Quickening+Licid
+image=http://mtgimage.com/card/quickening%20licid.jpg
+rarity=U
+type=Creature
+subtype=Licid
+cost={1}{W}
+pt=1/1
+ability={1}{W}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {W} to end this effect.;\
+        Enchanted creature has first strike.
+timing=main
+oracle={1}{W}, {T}: Quickening Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {W} to end this effect. Enchanted creature has first strike.

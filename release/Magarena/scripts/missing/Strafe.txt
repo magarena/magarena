@@ -1,0 +1,9 @@
+name=Strafe
+url=http://magiccards.info/query?q=%21Strafe
+image=http://mtgimage.com/card/strafe.jpg
+rarity=U
+type=Sorcery
+cost={R}
+effect=SN deals 3 damage to target nonred creature.
+timing=main
+oracle=Strafe deals 3 damage to target nonred creature.

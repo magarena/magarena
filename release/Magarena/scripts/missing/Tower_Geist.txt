@@ -1,0 +1,12 @@
+name=Tower Geist
+url=http://magiccards.info/query?q=%21Tower+Geist
+image=http://mtgimage.com/card/tower%20geist.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        When SN enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.
+timing=main
+oracle=Flying. When Tower Geist enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.

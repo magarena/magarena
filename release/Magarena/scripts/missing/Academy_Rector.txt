@@ -1,0 +1,11 @@
+name=Academy Rector
+url=http://magiccards.info/query?q=%21Academy+Rector
+image=http://mtgimage.com/card/academy%20rector.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}
+pt=1/2
+ability=When SN dies, you may exile it. If you do, search your library for an enchantment card, put that card onto the battlefield, then shuffle your library.
+timing=main
+oracle=When Academy Rector dies, you may exile it. If you do, search your library for an enchantment card, put that card onto the battlefield, then shuffle your library.

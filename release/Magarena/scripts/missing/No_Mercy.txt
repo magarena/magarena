@@ -1,0 +1,9 @@
+name=No Mercy
+url=http://magiccards.info/query?q=%21No+Mercy
+image=http://mtgimage.com/card/no%20mercy.jpg
+rarity=R
+type=Enchantment
+cost={2}{B}{B}
+ability=Whenever a creature deals damage to you, destroy it.
+timing=main
+oracle=Whenever a creature deals damage to you, destroy it.

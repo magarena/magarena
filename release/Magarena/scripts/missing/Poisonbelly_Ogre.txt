@@ -1,0 +1,11 @@
+name=Poisonbelly Ogre
+url=http://magiccards.info/query?q=%21Poisonbelly+Ogre
+image=http://mtgimage.com/card/poisonbelly%20ogre.jpg
+rarity=C
+type=Creature
+subtype=Ogre,Warrior
+cost={4}{B}
+pt=3/3
+ability=Whenever another creature enters the battlefield, its controller loses 1 life.
+timing=main
+oracle=Whenever another creature enters the battlefield, its controller loses 1 life.

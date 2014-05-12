@@ -1,0 +1,9 @@
+name=Merchant Scroll
+url=http://magiccards.info/query?q=%21Merchant+Scroll
+image=http://mtgimage.com/card/merchant%20scroll.jpg
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Search your library for a blue instant card, reveal that card, and put it into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for a blue instant card, reveal that card, and put it into your hand. Then shuffle your library.

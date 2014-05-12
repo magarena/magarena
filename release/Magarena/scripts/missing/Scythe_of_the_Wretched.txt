@@ -1,0 +1,12 @@
+name=Scythe of the Wretched
+url=http://magiccards.info/query?q=%21Scythe+of+the+Wretched
+image=http://mtgimage.com/card/scythe%20of%20the%20wretched.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+2.;\
+        Whenever a creature dealt damage by equipped creature this turn dies, return that card to the battlefield under your control. Attach SN to that creature.;\
+        Equip {4}
+timing=main
+oracle=Equipped creature gets +2/+2. Whenever a creature dealt damage by equipped creature this turn dies, return that card to the battlefield under your control. Attach Scythe of the Wretched to that creature. Equip {4}

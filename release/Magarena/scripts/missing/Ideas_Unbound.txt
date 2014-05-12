@@ -1,0 +1,10 @@
+name=Ideas Unbound
+url=http://magiccards.info/query?q=%21Ideas+Unbound
+image=http://mtgimage.com/card/ideas%20unbound.jpg
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={U}{U}
+effect=Draw three cards. Discard three cards at the beginning of the next end step.
+timing=main
+oracle=Draw three cards. Discard three cards at the beginning of the next end step.

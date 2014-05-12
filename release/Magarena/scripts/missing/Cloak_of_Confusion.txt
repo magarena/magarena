@@ -1,0 +1,11 @@
+name=Cloak of Confusion
+url=http://magiccards.info/query?q=%21Cloak+of+Confusion
+image=http://mtgimage.com/card/cloak%20of%20confusion.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+ability=Enchant creature you control;\
+        Whenever enchanted creature attacks and isn't blocked, you may have it assign no combat damage this turn. If you do, defending player discards a card at random.
+timing=main
+oracle=Enchant creature you control. Whenever enchanted creature attacks and isn't blocked, you may have it assign no combat damage this turn. If you do, defending player discards a card at random.

@@ -1,0 +1,10 @@
+name=Gravitational Shift
+url=http://magiccards.info/query?q=%21Gravitational+Shift
+image=http://mtgimage.com/card/gravitational%20shift.jpg
+rarity=R
+type=Enchantment
+cost={3}{U}{U}
+ability=Creatures with flying get +2/+0.;\
+        Creatures without flying get -2/-0.
+timing=main
+oracle=Creatures with flying get +2/+0. Creatures without flying get -2/-0.

@@ -1,0 +1,9 @@
+name=Reign of Terror
+url=http://magiccards.info/query?q=%21Reign+of+Terror
+image=http://mtgimage.com/card/reign%20of%20terror.jpg
+rarity=U
+type=Sorcery
+cost={3}{B}{B}
+effect=Destroy all green creatures or all white creatures. They can't be regenerated. You lose 2 life for each creature that died this way.
+timing=main
+oracle=Destroy all green creatures or all white creatures. They can't be regenerated. You lose 2 life for each creature that died this way.

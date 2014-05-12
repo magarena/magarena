@@ -1,0 +1,12 @@
+name=Corrupting Licid
+url=http://magiccards.info/query?q=%21Corrupting+Licid
+image=http://mtgimage.com/card/corrupting%20licid.jpg
+rarity=U
+type=Creature
+subtype=Licid
+cost={2}{B}
+pt=2/2
+ability={B}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {B} to end this effect.;\
+        Enchanted creature has fear.
+timing=main
+oracle={B}, {T}: Corrupting Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {B} to end this effect. Enchanted creature has fear.

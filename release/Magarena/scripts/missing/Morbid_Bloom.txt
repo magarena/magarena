@@ -1,0 +1,9 @@
+name=Morbid Bloom
+url=http://magiccards.info/query?q=%21Morbid+Bloom
+image=http://mtgimage.com/card/morbid%20bloom.jpg
+rarity=U
+type=Sorcery
+cost={4}{B}{G}
+effect=Exile target creature card from a graveyard, then put X 1/1 green Saproling creature tokens onto the battlefield, where X is the exiled card's toughness.
+timing=main
+oracle=Exile target creature card from a graveyard, then put X 1/1 green Saproling creature tokens onto the battlefield, where X is the exiled card's toughness.

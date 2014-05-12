@@ -1,0 +1,11 @@
+name=Ichneumon Druid
+url=http://magiccards.info/query?q=%21Ichneumon+Druid
+image=http://mtgimage.com/card/ichneumon%20druid.jpg
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={1}{G}{G}
+pt=1/1
+ability=Whenever an opponent casts an instant spell other than the first instant spell that player casts each turn, SN deals 4 damage to him or her.
+timing=main
+oracle=Whenever an opponent casts an instant spell other than the first instant spell that player casts each turn, Ichneumon Druid deals 4 damage to him or her.

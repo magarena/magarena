@@ -1,0 +1,13 @@
+name=Dragon Breath
+url=http://magiccards.info/query?q=%21Dragon+Breath
+image=http://mtgimage.com/card/dragon%20breath.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Enchant creature;\
+        Enchanted creature has haste.;\
+        {R}: Enchanted creature gets +1/+0 until end of turn.;\
+        When a creature with converted mana cost 6 or greater enters the battlefield, you may return SN from your graveyard to the battlefield attached to that creature.
+timing=main
+oracle=Enchant creature. Enchanted creature has haste. {R}: Enchanted creature gets +1/+0 until end of turn. When a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Breath from your graveyard to the battlefield attached to that creature.

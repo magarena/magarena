@@ -1,0 +1,10 @@
+name=Lightning Coils
+url=http://magiccards.info/query?q=%21Lightning+Coils
+image=http://mtgimage.com/card/lightning%20coils.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever a nontoken creature you control dies, put a charge counter on SN.;\
+        At the beginning of your upkeep, if SN has five or more charge counters on it, remove all of them from it and put that many 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.
+timing=main
+oracle=Whenever a nontoken creature you control dies, put a charge counter on Lightning Coils. At the beginning of your upkeep, if Lightning Coils has five or more charge counters on it, remove all of them from it and put that many 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.

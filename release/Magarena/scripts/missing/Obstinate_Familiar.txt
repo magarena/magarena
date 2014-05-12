@@ -1,0 +1,11 @@
+name=Obstinate Familiar
+url=http://magiccards.info/query?q=%21Obstinate+Familiar
+image=http://mtgimage.com/card/obstinate%20familiar.jpg
+rarity=R
+type=Creature
+subtype=Lizard
+cost={R}
+pt=1/1
+ability=If you would draw a card, you may skip that draw instead.
+timing=main
+oracle=If you would draw a card, you may skip that draw instead.

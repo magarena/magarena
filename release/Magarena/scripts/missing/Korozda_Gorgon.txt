@@ -1,0 +1,12 @@
+name=Korozda Gorgon
+url=http://magiccards.info/query?q=%21Korozda+Gorgon
+image=http://mtgimage.com/card/korozda%20gorgon.jpg
+rarity=U
+type=Creature
+subtype=Gorgon
+cost={3}{B}{G}
+pt=2/5
+ability=Deathtouch;\
+        {2}, Remove a +1/+1 counter from a creature you control: Target creature gets -1/-1 until end of turn.
+timing=main
+oracle=Deathtouch. {2}, Remove a +1/+1 counter from a creature you control: Target creature gets -1/-1 until end of turn.

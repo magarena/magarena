@@ -1,0 +1,10 @@
+name=Sands of Time
+url=http://magiccards.info/query?q=%21Sands+of+Time
+image=http://mtgimage.com/card/sands%20of%20time.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=Each player skips his or her untap step.;\
+        At the beginning of each player's upkeep, that player simultaneously untaps each tapped artifact, creature, and land he or she controls and taps each untapped artifact, creature, and land he or she controls.
+timing=main
+oracle=Each player skips his or her untap step. At the beginning of each player's upkeep, that player simultaneously untaps each tapped artifact, creature, and land he or she controls and taps each untapped artifact, creature, and land he or she controls.

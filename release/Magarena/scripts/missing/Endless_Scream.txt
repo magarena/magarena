@@ -1,0 +1,12 @@
+name=Endless Scream
+url=http://magiccards.info/query?q=%21Endless+Scream
+image=http://mtgimage.com/card/endless%20scream.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={X}{B}
+ability=Enchant creature;\
+        SN enters the battlefield with X scream counters on it.;\
+        Enchanted creature gets +1/+0 for each scream counter on SN.
+timing=main
+oracle=Enchant creature. Endless Scream enters the battlefield with X scream counters on it. Enchanted creature gets +1/+0 for each scream counter on Endless Scream.

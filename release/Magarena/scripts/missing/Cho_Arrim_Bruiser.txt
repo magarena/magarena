@@ -1,0 +1,11 @@
+name=Cho-Arrim Bruiser
+url=http://magiccards.info/query?q=%21Cho-Arrim+Bruiser
+image=http://mtgimage.com/card/cho-arrim%20bruiser.jpg
+rarity=R
+type=Creature
+subtype=Ogre,Rebel
+cost={5}{W}
+pt=3/4
+ability=Whenever SN attacks, you may tap up to two target creatures.
+timing=main
+oracle=Whenever Cho-Arrim Bruiser attacks, you may tap up to two target creatures.

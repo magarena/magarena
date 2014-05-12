@@ -1,0 +1,11 @@
+name=Nomads en-Kor
+url=http://magiccards.info/query?q=%21Nomads+en-Kor
+image=http://mtgimage.com/card/nomads%20en-kor.jpg
+rarity=C
+type=Creature
+subtype=Kor,Nomad,Soldier
+cost={W}
+pt=1/1
+ability={0}: The next 1 damage that would be dealt to SN this turn is dealt to target creature you control instead.
+timing=main
+oracle={0}: The next 1 damage that would be dealt to Nomads en-Kor this turn is dealt to target creature you control instead.

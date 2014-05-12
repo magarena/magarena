@@ -1,0 +1,11 @@
+name=Stinkdrinker Daredevil
+url=http://magiccards.info/query?q=%21Stinkdrinker+Daredevil
+image=http://mtgimage.com/card/stinkdrinker%20daredevil.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={2}{R}
+pt=1/3
+ability=Giant spells you cast cost {2} less to cast.
+timing=main
+oracle=Giant spells you cast cost {2} less to cast.

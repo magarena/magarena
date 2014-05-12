@@ -1,0 +1,9 @@
+name=Hunt Down
+url=http://magiccards.info/query?q=%21Hunt+Down
+image=http://mtgimage.com/card/hunt%20down.jpg
+rarity=C
+type=Sorcery
+cost={G}
+effect=Target creature blocks target creature this turn if able.
+timing=main
+oracle=Target creature blocks target creature this turn if able.

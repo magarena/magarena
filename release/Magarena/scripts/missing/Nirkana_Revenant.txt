@@ -1,0 +1,12 @@
+name=Nirkana Revenant
+url=http://magiccards.info/query?q=%21Nirkana+Revenant
+image=http://mtgimage.com/card/nirkana%20revenant.jpg
+rarity=M
+type=Creature
+subtype=Vampire,Shade
+cost={4}{B}{B}
+pt=4/4
+ability=Whenever you tap a Swamp for mana, add {B} to your mana pool.;\
+        {B}: SN gets +1/+1 until end of turn.
+timing=main
+oracle=Whenever you tap a Swamp for mana, add {B} to your mana pool. {B}: Nirkana Revenant gets +1/+1 until end of turn.

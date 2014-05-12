@@ -1,0 +1,9 @@
+name=Clarion Ultimatum
+url=http://magiccards.info/query?q=%21Clarion+Ultimatum
+image=http://mtgimage.com/card/clarion%20ultimatum.jpg
+rarity=R
+type=Sorcery
+cost={G}{G}{W}{W}{W}{U}{U}
+effect=Choose five permanents you control. For each of those permanents, you may search your library for a card with the same name as that permanent. Put those cards onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=Choose five permanents you control. For each of those permanents, you may search your library for a card with the same name as that permanent. Put those cards onto the battlefield tapped, then shuffle your library.

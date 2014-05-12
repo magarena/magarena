@@ -1,0 +1,10 @@
+name=Steady Progress
+url=http://magiccards.info/query?q=%21Steady+Progress
+image=http://mtgimage.com/card/steady%20progress.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Proliferate.;\
+        Draw a card.
+timing=removal
+oracle=Proliferate.. Draw a card.

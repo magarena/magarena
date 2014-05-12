@@ -1,0 +1,9 @@
+name=Crystal Quarry
+url=http://magiccards.info/query?q=%21Crystal+Quarry
+image=http://mtgimage.com/card/crystal%20quarry.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {5}, {T}: Add {W}{U}{B}{R}{G} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {5}, {T}: Add {W}{U}{B}{R}{G} to your mana pool.

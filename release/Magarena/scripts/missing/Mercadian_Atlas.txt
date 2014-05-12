@@ -1,0 +1,9 @@
+name=Mercadian Atlas
+url=http://magiccards.info/query?q=%21Mercadian+Atlas
+image=http://mtgimage.com/card/mercadian%20atlas.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability=At the beginning of your end step, if you didn't play a land this turn, you may draw a card.
+timing=main
+oracle=At the beginning of your end step, if you didn't play a land this turn, you may draw a card.

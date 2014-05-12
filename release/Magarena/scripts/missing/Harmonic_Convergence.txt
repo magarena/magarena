@@ -1,0 +1,9 @@
+name=Harmonic Convergence
+url=http://magiccards.info/query?q=%21Harmonic+Convergence
+image=http://mtgimage.com/card/harmonic%20convergence.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Put all enchantments on top of their owners' libraries.
+timing=removal
+oracle=Put all enchantments on top of their owners' libraries.

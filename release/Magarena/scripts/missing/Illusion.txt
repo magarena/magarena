@@ -1,0 +1,9 @@
+name=Illusion
+url=http://magiccards.info/query?q=%21Illusion
+image=http://mtgimage.com/card/illusionreality.jpg
+rarity=U
+type=Instant
+cost={U}
+effect=Target spell or permanent becomes the color of your choice until end of turn.
+timing=removal
+oracle=Target spell or permanent becomes the color of your choice until end of turn.

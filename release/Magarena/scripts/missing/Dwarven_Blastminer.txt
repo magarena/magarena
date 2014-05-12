@@ -1,0 +1,12 @@
+name=Dwarven Blastminer
+url=http://magiccards.info/query?q=%21Dwarven+Blastminer
+image=http://mtgimage.com/card/dwarven%20blastminer.jpg
+rarity=U
+type=Creature
+subtype=Dwarf
+cost={1}{R}
+pt=1/1
+ability={2}{R}, {T}: Destroy target nonbasic land.;\
+        Morph {R}
+timing=main
+oracle={2}{R}, {T}: Destroy target nonbasic land. Morph {R}

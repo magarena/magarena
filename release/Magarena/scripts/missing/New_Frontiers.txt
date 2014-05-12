@@ -1,0 +1,9 @@
+name=New Frontiers
+url=http://magiccards.info/query?q=%21New+Frontiers
+image=http://mtgimage.com/card/new%20frontiers.jpg
+rarity=R
+type=Sorcery
+cost={X}{G}
+effect=Each player may search his or her library for up to X basic land cards and put them onto the battlefield tapped. Then each player who searched his or her library this way shuffles it.
+timing=main
+oracle=Each player may search his or her library for up to X basic land cards and put them onto the battlefield tapped. Then each player who searched his or her library this way shuffles it.

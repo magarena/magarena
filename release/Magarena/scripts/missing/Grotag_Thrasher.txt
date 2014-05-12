@@ -1,0 +1,11 @@
+name=Grotag Thrasher
+url=http://magiccards.info/query?q=%21Grotag+Thrasher
+image=http://mtgimage.com/card/grotag%20thrasher.jpg
+rarity=C
+type=Creature
+subtype=Lizard
+cost={4}{R}
+pt=3/3
+ability=Whenever SN attacks, target creature can't block this turn.
+timing=main
+oracle=Whenever Grotag Thrasher attacks, target creature can't block this turn.

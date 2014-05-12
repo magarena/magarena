@@ -1,0 +1,9 @@
+name=Tithe
+url=http://magiccards.info/query?q=%21Tithe
+image=http://mtgimage.com/card/tithe.jpg
+rarity=R
+type=Instant
+cost={W}
+effect=Search your library for a Plains card. If target opponent controls more lands than you, you may search your library for an additional Plains card. Reveal those cards and put them into your hand. Then shuffle your library.
+timing=removal
+oracle=Search your library for a Plains card. If target opponent controls more lands than you, you may search your library for an additional Plains card. Reveal those cards and put them into your hand. Then shuffle your library.

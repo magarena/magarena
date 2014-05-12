@@ -1,0 +1,12 @@
+name=Forced Worship
+url=http://magiccards.info/query?q=%21Forced+Worship
+image=http://mtgimage.com/card/forced%20worship.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        Enchanted creature can't attack.;\
+        {2}{W}: Return SN to its owner's hand.
+timing=main
+oracle=Enchant creature. Enchanted creature can't attack. {2}{W}: Return Forced Worship to its owner's hand.

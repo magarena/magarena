@@ -1,0 +1,9 @@
+name=False Peace
+url=http://magiccards.info/query?q=%21False+Peace
+image=http://mtgimage.com/card/false%20peace.jpg
+rarity=C
+type=Sorcery
+cost={W}
+effect=Target player skips all combat phases of his or her next turn.
+timing=main
+oracle=Target player skips all combat phases of his or her next turn.

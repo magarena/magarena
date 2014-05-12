@@ -1,0 +1,12 @@
+name=Hero of Iroas
+url=http://magiccards.info/query?q=%21Hero+of+Iroas
+image=http://mtgimage.com/card/hero%20of%20iroas.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=Aura spells you cast cost {1} less to cast.;\
+        Heroic — Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
+timing=main
+oracle=Aura spells you cast cost {1} less to cast. Heroic — Whenever you cast a spell that targets Hero of Iroas, put a +1/+1 counter on Hero of Iroas.

@@ -1,0 +1,13 @@
+name=Angel of Jubilation
+url=http://magiccards.info/query?q=%21Angel+of+Jubilation
+image=http://mtgimage.com/card/angel%20of%20jubilation.jpg
+rarity=R
+type=Creature
+subtype=Angel
+cost={1}{W}{W}{W}
+pt=3/3
+ability=Flying;\
+        Other nonblack creatures you control get +1/+1.;\
+        Players can't pay life or sacrifice creatures to cast spells or activate abilities.
+timing=main
+oracle=Flying. Other nonblack creatures you control get +1/+1. Players can't pay life or sacrifice creatures to cast spells or activate abilities.

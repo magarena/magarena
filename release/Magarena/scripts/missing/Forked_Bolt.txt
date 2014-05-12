@@ -1,0 +1,9 @@
+name=Forked Bolt
+url=http://magiccards.info/query?q=%21Forked+Bolt
+image=http://mtgimage.com/card/forked%20bolt.jpg
+rarity=U
+type=Sorcery
+cost={R}
+effect=SN deals 2 damage divided as you choose among one or two target creatures and/or players.
+timing=main
+oracle=Forked Bolt deals 2 damage divided as you choose among one or two target creatures and/or players.

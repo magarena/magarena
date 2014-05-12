@@ -1,0 +1,9 @@
+name=Goblin Warrens
+url=http://magiccards.info/query?q=%21Goblin+Warrens
+image=http://mtgimage.com/card/goblin%20warrens.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability={2}{R}, Sacrifice two Goblins: Put three 1/1 red Goblin creature tokens onto the battlefield.
+timing=main
+oracle={2}{R}, Sacrifice two Goblins: Put three 1/1 red Goblin creature tokens onto the battlefield.

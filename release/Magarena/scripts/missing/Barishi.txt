@@ -1,0 +1,11 @@
+name=Barishi
+url=http://magiccards.info/query?q=%21Barishi
+image=http://mtgimage.com/card/barishi.jpg
+rarity=U
+type=Creature
+subtype=Elemental
+cost={2}{G}{G}
+pt=4/3
+ability=When SN dies, exile SN, then shuffle all creature cards from your graveyard into your library.
+timing=main
+oracle=When Barishi dies, exile Barishi, then shuffle all creature cards from your graveyard into your library.

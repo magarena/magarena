@@ -1,0 +1,9 @@
+name=Planar Gate
+url=http://magiccards.info/query?q=%21Planar+Gate
+image=http://mtgimage.com/card/planar%20gate.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability=Creature spells you cast cost up to {2} less to cast.
+timing=main
+oracle=Creature spells you cast cost up to {2} less to cast.

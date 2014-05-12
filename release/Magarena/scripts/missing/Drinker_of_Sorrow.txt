@@ -1,0 +1,12 @@
+name=Drinker of Sorrow
+url=http://magiccards.info/query?q=%21Drinker+of+Sorrow
+image=http://mtgimage.com/card/drinker%20of%20sorrow.jpg
+rarity=R
+type=Creature
+subtype=Horror
+cost={2}{B}
+pt=5/3
+ability=SN can't block.;\
+        Whenever SN deals combat damage, sacrifice a permanent.
+timing=main
+oracle=Drinker of Sorrow can't block. Whenever Drinker of Sorrow deals combat damage, sacrifice a permanent.

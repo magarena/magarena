@@ -1,0 +1,9 @@
+name=Piracy
+url=http://magiccards.info/query?q=%21Piracy
+image=http://mtgimage.com/card/piracy.jpg
+rarity=R
+type=Sorcery
+cost={U}{U}
+effect=Until end of turn, you may tap lands you don't control for mana. Spend this mana only to cast spells.
+timing=main
+oracle=Until end of turn, you may tap lands you don't control for mana. Spend this mana only to cast spells.

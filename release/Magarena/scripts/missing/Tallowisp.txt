@@ -1,0 +1,11 @@
+name=Tallowisp
+url=http://magiccards.info/query?q=%21Tallowisp
+image=http://mtgimage.com/card/tallowisp.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{W}
+pt=1/3
+ability=Whenever you cast a Spirit or Arcane spell, you may search your library for an Aura card with enchant creature, reveal it, and put it into your hand. If you do, shuffle your library.
+timing=main
+oracle=Whenever you cast a Spirit or Arcane spell, you may search your library for an Aura card with enchant creature, reveal it, and put it into your hand. If you do, shuffle your library.

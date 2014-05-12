@@ -1,0 +1,11 @@
+name=Charging Rhino
+url=http://magiccards.info/query?q=%21Charging+Rhino
+image=http://mtgimage.com/card/charging%20rhino.jpg
+rarity=R
+type=Creature
+subtype=Rhino
+cost={3}{G}{G}
+pt=4/4
+ability=SN can't be blocked by more than one creature.
+timing=main
+oracle=Charging Rhino can't be blocked by more than one creature.

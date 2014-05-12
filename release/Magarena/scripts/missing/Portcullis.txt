@@ -1,0 +1,9 @@
+name=Portcullis
+url=http://magiccards.info/query?q=%21Portcullis
+image=http://mtgimage.com/card/portcullis.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=Whenever a creature enters the battlefield, if there are two or more other creatures on the battlefield, exile that creature. Return that card to the battlefield under its owner's control when SN leaves the battlefield.
+timing=main
+oracle=Whenever a creature enters the battlefield, if there are two or more other creatures on the battlefield, exile that creature. Return that card to the battlefield under its owner's control when Portcullis leaves the battlefield.

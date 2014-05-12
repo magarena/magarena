@@ -1,0 +1,9 @@
+name=Reality
+url=http://magiccards.info/query?q=%21Reality
+image=http://mtgimage.com/card/illusionreality.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Destroy target artifact.
+timing=removal
+oracle=Destroy target artifact.

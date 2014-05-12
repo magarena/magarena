@@ -1,0 +1,9 @@
+name=Reap What Is Sown
+url=http://magiccards.info/query?q=%21Reap+What+Is+Sown
+image=http://mtgimage.com/card/reap%20what%20is%20sown.jpg
+rarity=U
+type=Instant
+cost={1}{G}{W}
+effect=Put a +1/+1 counter on each of up to three target creatures.
+timing=removal
+oracle=Put a +1/+1 counter on each of up to three target creatures.

@@ -1,0 +1,11 @@
+name=Lunk Errant
+url=http://magiccards.info/query?q=%21Lunk+Errant
+image=http://mtgimage.com/card/lunk%20errant.jpg
+rarity=C
+type=Creature
+subtype=Giant,Warrior
+cost={5}{R}
+pt=4/4
+ability=Whenever SN attacks alone, it gets +1/+1 and gains trample until end of turn.
+timing=main
+oracle=Whenever Lunk Errant attacks alone, it gets +1/+1 and gains trample until end of turn.

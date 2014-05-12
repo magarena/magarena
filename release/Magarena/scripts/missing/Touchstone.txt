@@ -1,0 +1,9 @@
+name=Touchstone
+url=http://magiccards.info/query?q=%21Touchstone
+image=http://mtgimage.com/card/touchstone.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={T}: Tap target artifact you don't control.
+timing=main
+oracle={T}: Tap target artifact you don't control.

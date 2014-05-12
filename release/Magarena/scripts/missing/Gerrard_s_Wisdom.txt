@@ -1,0 +1,9 @@
+name=Gerrard's Wisdom
+url=http://magiccards.info/query?q=%21Gerrard%27s+Wisdom
+image=http://mtgimage.com/card/gerrard%27s%20wisdom.jpg
+rarity=U
+type=Sorcery
+cost={2}{W}{W}
+effect=You gain 2 life for each card in your hand.
+timing=main
+oracle=You gain 2 life for each card in your hand.

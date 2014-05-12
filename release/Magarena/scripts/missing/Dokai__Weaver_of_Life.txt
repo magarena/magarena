@@ -1,0 +1,11 @@
+name=Dokai, Weaver of Life
+url=http://magiccards.info/query?q=%21Dokai%2C+Weaver+of+Life
+image=http://mtgimage.com/card/dokai%2C%20weaver%20of%20life.jpg
+rarity=R
+type=Creature
+subtype=Human,Monk
+cost={1}{G}
+pt=3/3
+ability={4}{G}{G}, {T}: Put an X/X green Elemental creature token onto the battlefield, where X is the number of lands you control.
+timing=main
+oracle={4}{G}{G}, {T}: Put an X/X green Elemental creature token onto the battlefield, where X is the number of lands you control.

@@ -1,0 +1,12 @@
+name=Grafted Exoskeleton
+url=http://magiccards.info/query?q=%21Grafted+Exoskeleton
+image=http://mtgimage.com/card/grafted%20exoskeleton.jpg
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={4}
+ability=Equipped creature gets +2/+2 and has infect.;\
+        Whenever SN becomes unattached from a permanent, sacrifice that permanent.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature gets +2/+2 and has infect.. Whenever Grafted Exoskeleton becomes unattached from a permanent, sacrifice that permanent. Equip {2}

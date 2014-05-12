@@ -1,0 +1,9 @@
+name=Eldrazi Temple
+url=http://magiccards.info/query?q=%21Eldrazi+Temple
+image=http://mtgimage.com/card/eldrazi%20temple.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add {2} to your mana pool. Spend this mana only to cast colorless Eldrazi spells or activate abilities of colorless Eldrazi.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add {2} to your mana pool. Spend this mana only to cast colorless Eldrazi spells or activate abilities of colorless Eldrazi.

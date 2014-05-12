@@ -1,0 +1,11 @@
+name=Patron Wizard
+url=http://magiccards.info/query?q=%21Patron+Wizard
+image=http://mtgimage.com/card/patron%20wizard.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={U}{U}{U}
+pt=2/2
+ability=Tap an untapped Wizard you control: Counter target spell unless its controller pays {1}.
+timing=main
+oracle=Tap an untapped Wizard you control: Counter target spell unless its controller pays {1}.

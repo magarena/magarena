@@ -1,0 +1,9 @@
+name=Chill
+url=http://magiccards.info/query?q=%21Chill
+image=http://mtgimage.com/card/chill.jpg
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=Red spells cost {2} more to cast.
+timing=main
+oracle=Red spells cost {2} more to cast.

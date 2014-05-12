@@ -1,0 +1,9 @@
+name=Hinder
+url=http://magiccards.info/query?q=%21Hinder
+image=http://mtgimage.com/card/hinder.jpg
+rarity=U
+type=Instant
+cost={1}{U}{U}
+effect=Counter target spell. If that spell is countered this way, put that card on the top or bottom of its owner's library instead of into that player's graveyard.
+timing=removal
+oracle=Counter target spell. If that spell is countered this way, put that card on the top or bottom of its owner's library instead of into that player's graveyard.

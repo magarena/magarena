@@ -1,0 +1,10 @@
+name=Controvert
+url=http://magiccards.info/query?q=%21Controvert
+image=http://mtgimage.com/card/controvert.jpg
+rarity=U
+type=Instant
+cost={2}{U}{U}
+effect=Counter target spell.;\
+        Recover {2}{U}{U}
+timing=removal
+oracle=Counter target spell. Recover {2}{U}{U}

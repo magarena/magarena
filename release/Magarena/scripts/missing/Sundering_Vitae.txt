@@ -1,0 +1,10 @@
+name=Sundering Vitae
+url=http://magiccards.info/query?q=%21Sundering+Vitae
+image=http://mtgimage.com/card/sundering%20vitae.jpg
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Convoke;\
+        Destroy target artifact or enchantment.
+timing=removal
+oracle=Convoke. Destroy target artifact or enchantment.

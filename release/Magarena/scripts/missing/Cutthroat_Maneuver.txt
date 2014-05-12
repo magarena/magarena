@@ -1,0 +1,9 @@
+name=Cutthroat Maneuver
+url=http://magiccards.info/query?q=%21Cutthroat+Maneuver
+image=http://mtgimage.com/card/cutthroat%20maneuver.jpg
+rarity=U
+type=Instant
+cost={3}{B}
+effect=Up to two target creatures each get +1/+1 and gain lifelink until end of turn.
+timing=removal
+oracle=Up to two target creatures each get +1/+1 and gain lifelink until end of turn.

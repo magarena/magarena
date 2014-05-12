@@ -1,0 +1,12 @@
+name=Harsh Deceiver
+url=http://magiccards.info/query?q=%21Harsh+Deceiver
+image=http://mtgimage.com/card/harsh%20deceiver.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{W}
+pt=1/4
+ability={1}: Look at the top card of your library.;\
+        {2}: Reveal the top card of your library. If it's a land card, untap SN and it gets +1/+1 until end of turn. Activate this ability only once each turn.
+timing=main
+oracle={1}: Look at the top card of your library. {2}: Reveal the top card of your library. If it's a land card, untap Harsh Deceiver and it gets +1/+1 until end of turn. Activate this ability only once each turn.

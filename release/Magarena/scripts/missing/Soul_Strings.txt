@@ -1,0 +1,9 @@
+name=Soul Strings
+url=http://magiccards.info/query?q=%21Soul+Strings
+image=http://mtgimage.com/card/soul%20strings.jpg
+rarity=C
+type=Sorcery
+cost={X}{B}
+effect=Return two target creature cards from your graveyard to your hand unless any player pays {X}.
+timing=main
+oracle=Return two target creature cards from your graveyard to your hand unless any player pays {X}.

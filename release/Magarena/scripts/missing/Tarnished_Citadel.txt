@@ -1,0 +1,9 @@
+name=Tarnished Citadel
+url=http://magiccards.info/query?q=%21Tarnished+Citadel
+image=http://mtgimage.com/card/tarnished%20citadel.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add one mana of any color to your mana pool. SN deals 3 damage to you.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add one mana of any color to your mana pool. Tarnished Citadel deals 3 damage to you.

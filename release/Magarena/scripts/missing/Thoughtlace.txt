@@ -1,0 +1,9 @@
+name=Thoughtlace
+url=http://magiccards.info/query?q=%21Thoughtlace
+image=http://mtgimage.com/card/thoughtlace.jpg
+rarity=R
+type=Instant
+cost={U}
+effect=Target spell or permanent becomes blue.
+timing=removal
+oracle=Target spell or permanent becomes blue.

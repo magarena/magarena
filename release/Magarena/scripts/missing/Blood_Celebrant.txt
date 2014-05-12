@@ -1,0 +1,11 @@
+name=Blood Celebrant
+url=http://magiccards.info/query?q=%21Blood+Celebrant
+image=http://mtgimage.com/card/blood%20celebrant.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={B}
+pt=1/1
+ability={B}, Pay 1 life: Add one mana of any color to your mana pool.
+timing=main
+oracle={B}, Pay 1 life: Add one mana of any color to your mana pool.

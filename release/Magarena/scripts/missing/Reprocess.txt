@@ -1,0 +1,9 @@
+name=Reprocess
+url=http://magiccards.info/query?q=%21Reprocess
+image=http://mtgimage.com/card/reprocess.jpg
+rarity=R
+type=Sorcery
+cost={2}{B}{B}
+effect=Sacrifice any number of artifacts, creatures, and/or lands. Draw a card for each permanent sacrificed this way.
+timing=main
+oracle=Sacrifice any number of artifacts, creatures, and/or lands. Draw a card for each permanent sacrificed this way.

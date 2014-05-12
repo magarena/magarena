@@ -1,0 +1,9 @@
+name=Sealed Fate
+url=http://magiccards.info/query?q=%21Sealed+Fate
+image=http://mtgimage.com/card/sealed%20fate.jpg
+rarity=U
+type=Sorcery
+cost={X}{U}{B}
+effect=Look at the top X cards of target opponent's library. Exile one of those cards and put the rest back on top of that player's library in any order.
+timing=main
+oracle=Look at the top X cards of target opponent's library. Exile one of those cards and put the rest back on top of that player's library in any order.

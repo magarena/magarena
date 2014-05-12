@@ -1,0 +1,11 @@
+name=Brothers of Fire
+url=http://magiccards.info/query?q=%21Brothers+of+Fire
+image=http://mtgimage.com/card/brothers%20of%20fire.jpg
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={1}{R}{R}
+pt=2/2
+ability={1}{R}{R}: SN deals 1 damage to target creature or player and 1 damage to you.
+timing=main
+oracle={1}{R}{R}: Brothers of Fire deals 1 damage to target creature or player and 1 damage to you.

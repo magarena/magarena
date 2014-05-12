@@ -1,0 +1,12 @@
+name=Angel of Finality
+url=http://magiccards.info/query?q=%21Angel+of+Finality
+image=http://mtgimage.com/card/angel%20of%20finality.jpg
+rarity=R
+type=Creature
+subtype=Angel
+cost={3}{W}
+pt=3/4
+ability=Flying;\
+        When SN enters the battlefield, exile all cards from target player's graveyard.
+timing=main
+oracle=Flying. When Angel of Finality enters the battlefield, exile all cards from target player's graveyard.

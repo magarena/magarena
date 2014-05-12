@@ -1,0 +1,12 @@
+name=Academy Raider
+url=http://magiccards.info/query?q=%21Academy+Raider
+image=http://mtgimage.com/card/academy%20raider.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{R}
+pt=1/1
+ability=Intimidate;\
+        Whenever SN deals combat damage to a player, you may discard a card. If you do, draw a card.
+timing=main
+oracle=Intimidate. Whenever Academy Raider deals combat damage to a player, you may discard a card. If you do, draw a card.

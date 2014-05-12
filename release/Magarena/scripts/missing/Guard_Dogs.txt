@@ -1,0 +1,11 @@
+name=Guard Dogs
+url=http://magiccards.info/query?q=%21Guard+Dogs
+image=http://mtgimage.com/card/guard%20dogs.jpg
+rarity=U
+type=Creature
+subtype=Hound
+cost={3}{W}
+pt=2/2
+ability={2}{W}, {T}: Choose a permanent you control. Prevent all combat damage target creature would deal this turn if it shares a color with that permanent.
+timing=main
+oracle={2}{W}, {T}: Choose a permanent you control. Prevent all combat damage target creature would deal this turn if it shares a color with that permanent.

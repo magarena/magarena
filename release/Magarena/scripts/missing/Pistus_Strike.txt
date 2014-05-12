@@ -1,0 +1,9 @@
+name=Pistus Strike
+url=http://magiccards.info/query?q=%21Pistus+Strike
+image=http://mtgimage.com/card/pistus%20strike.jpg
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Destroy target creature with flying. Its controller gets a poison counter.
+timing=removal
+oracle=Destroy target creature with flying. Its controller gets a poison counter.

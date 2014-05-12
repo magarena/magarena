@@ -1,0 +1,11 @@
+name=Martyr of Spores
+url=http://magiccards.info/query?q=%21Martyr+of+Spores
+image=http://mtgimage.com/card/martyr%20of%20spores.jpg
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={G}
+pt=1/1
+ability={1}, Reveal X green cards from your hand, Sacrifice SN: Target creature gets +X/+X until end of turn.
+timing=main
+oracle={1}, Reveal X green cards from your hand, Sacrifice Martyr of Spores: Target creature gets +X/+X until end of turn.

@@ -1,0 +1,11 @@
+name=Grizzled Outcasts
+url=http://magiccards.info/query?q=%21Grizzled+Outcasts
+image=http://mtgimage.com/card/grizzled%20outcasts.jpg
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={4}{G}
+pt=4/4
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Grizzled Outcasts.

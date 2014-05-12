@@ -1,0 +1,9 @@
+name=Psychic Spear
+url=http://magiccards.info/query?q=%21Psychic+Spear
+image=http://mtgimage.com/card/psychic%20spear.jpg
+rarity=C
+type=Sorcery
+cost={B}
+effect=Target player reveals his or her hand. You choose a Spirit or Arcane card from it. That player discards that card.
+timing=main
+oracle=Target player reveals his or her hand. You choose a Spirit or Arcane card from it. That player discards that card.

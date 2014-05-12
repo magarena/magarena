@@ -1,0 +1,12 @@
+name=Surging Might
+url=http://magiccards.info/query?q=%21Surging+Might
+image=http://mtgimage.com/card/surging%20might.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.;\
+        Ripple 4
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+2. Ripple 4

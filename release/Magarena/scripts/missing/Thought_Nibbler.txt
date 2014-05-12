@@ -1,0 +1,12 @@
+name=Thought Nibbler
+url=http://magiccards.info/query?q=%21Thought+Nibbler
+image=http://mtgimage.com/card/thought%20nibbler.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={U}
+pt=1/1
+ability=Flying;\
+        Your maximum hand size is reduced by two.
+timing=main
+oracle=Flying. Your maximum hand size is reduced by two.

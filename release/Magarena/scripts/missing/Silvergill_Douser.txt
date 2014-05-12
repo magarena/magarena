@@ -1,0 +1,11 @@
+name=Silvergill Douser
+url=http://magiccards.info/query?q=%21Silvergill+Douser
+image=http://mtgimage.com/card/silvergill%20douser.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=1/1
+ability={T}: Target creature gets -X/-0 until end of turn, where X is the number of Merfolk and/or Faeries you control.
+timing=main
+oracle={T}: Target creature gets -X/-0 until end of turn, where X is the number of Merfolk and/or Faeries you control.

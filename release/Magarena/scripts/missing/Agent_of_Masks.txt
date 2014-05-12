@@ -1,0 +1,11 @@
+name=Agent of Masks
+url=http://magiccards.info/query?q=%21Agent+of+Masks
+image=http://mtgimage.com/card/agent%20of%20masks.jpg
+rarity=U
+type=Creature
+subtype=Human,Advisor
+cost={3}{W}{B}
+pt=2/3
+ability=At the beginning of your upkeep, each opponent loses 1 life. You gain life equal to the life lost this way.
+timing=main
+oracle=At the beginning of your upkeep, each opponent loses 1 life. You gain life equal to the life lost this way.

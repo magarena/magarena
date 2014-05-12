@@ -1,0 +1,10 @@
+name=Flowstone Flood
+url=http://magiccards.info/query?q=%21Flowstone+Flood
+image=http://mtgimage.com/card/flowstone%20flood.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}
+effect=Buyback—Pay 3 life, Discard a card at random.;\
+        Destroy target land.
+timing=main
+oracle=Buyback—Pay 3 life, Discard a card at random.. Destroy target land.

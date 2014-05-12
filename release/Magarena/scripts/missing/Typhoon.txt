@@ -1,0 +1,9 @@
+name=Typhoon
+url=http://magiccards.info/query?q=%21Typhoon
+image=http://mtgimage.com/card/typhoon.jpg
+rarity=R
+type=Sorcery
+cost={2}{G}
+effect=SN deals damage to each opponent equal to the number of Islands that player controls.
+timing=main
+oracle=Typhoon deals damage to each opponent equal to the number of Islands that player controls.

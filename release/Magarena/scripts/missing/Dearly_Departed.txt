@@ -1,0 +1,12 @@
+name=Dearly Departed
+url=http://magiccards.info/query?q=%21Dearly+Departed
+image=http://mtgimage.com/card/dearly%20departed.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={4}{W}{W}
+pt=5/5
+ability=Flying;\
+        As long as SN is in your graveyard, each Human creature you control enters the battlefield with an additional +1/+1 counter on it.
+timing=main
+oracle=Flying. As long as Dearly Departed is in your graveyard, each Human creature you control enters the battlefield with an additional +1/+1 counter on it.

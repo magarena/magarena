@@ -1,0 +1,9 @@
+name=Ghostform
+url=http://magiccards.info/query?q=%21Ghostform
+image=http://mtgimage.com/card/ghostform.jpg
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Up to two target creatures can't be blocked this turn.
+timing=main
+oracle=Up to two target creatures can't be blocked this turn.

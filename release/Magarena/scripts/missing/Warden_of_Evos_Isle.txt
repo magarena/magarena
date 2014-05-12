@@ -1,0 +1,12 @@
+name=Warden of Evos Isle
+url=http://magiccards.info/query?q=%21Warden+of+Evos+Isle
+image=http://mtgimage.com/card/warden%20of%20evos%20isle.jpg
+rarity=U
+type=Creature
+subtype=Bird,Wizard
+cost={2}{U}
+pt=2/2
+ability=Flying;\
+        Creature spells with flying you cast cost {1} less to cast.
+timing=main
+oracle=Flying. Creature spells with flying you cast cost {1} less to cast.

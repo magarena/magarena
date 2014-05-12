@@ -1,0 +1,9 @@
+name=Fellwar Stone
+url=http://magiccards.info/query?q=%21Fellwar+Stone
+image=http://mtgimage.com/card/fellwar%20stone.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
+timing=main
+oracle={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.

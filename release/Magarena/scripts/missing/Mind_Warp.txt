@@ -1,0 +1,9 @@
+name=Mind Warp
+url=http://magiccards.info/query?q=%21Mind+Warp
+image=http://mtgimage.com/card/mind%20warp.jpg
+rarity=U
+type=Sorcery
+cost={X}{3}{B}
+effect=Look at target player's hand and choose X cards from it. That player discards those cards.
+timing=main
+oracle=Look at target player's hand and choose X cards from it. That player discards those cards.

@@ -1,0 +1,9 @@
+name=Touch of Darkness
+url=http://magiccards.info/query?q=%21Touch+of+Darkness
+image=http://mtgimage.com/card/touch%20of%20darkness.jpg
+rarity=U
+type=Instant
+cost={B}
+effect=Any number of target creatures become black until end of turn.
+timing=removal
+oracle=Any number of target creatures become black until end of turn.

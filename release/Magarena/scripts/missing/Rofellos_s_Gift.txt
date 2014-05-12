@@ -1,0 +1,9 @@
+name=Rofellos's Gift
+url=http://magiccards.info/query?q=%21Rofellos%27s+Gift
+image=http://mtgimage.com/card/rofellos%27s%20gift.jpg
+rarity=C
+type=Sorcery
+cost={G}
+effect=Reveal any number of green cards in your hand. Return an enchantment card from your graveyard to your hand for each card revealed this way.
+timing=main
+oracle=Reveal any number of green cards in your hand. Return an enchantment card from your graveyard to your hand for each card revealed this way.

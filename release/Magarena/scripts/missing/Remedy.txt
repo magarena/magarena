@@ -1,0 +1,9 @@
+name=Remedy
+url=http://magiccards.info/query?q=%21Remedy
+image=http://mtgimage.com/card/remedy.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.
+timing=removal
+oracle=Prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.

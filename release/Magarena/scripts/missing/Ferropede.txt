@@ -1,0 +1,12 @@
+name=Ferropede
+url=http://magiccards.info/query?q=%21Ferropede
+image=http://mtgimage.com/card/ferropede.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+cost={3}
+pt=1/1
+ability=SN can't be blocked.;\
+        Whenever SN deals combat damage to a player, you may remove a counter from target permanent.
+timing=main
+oracle=Ferropede can't be blocked. Whenever Ferropede deals combat damage to a player, you may remove a counter from target permanent.

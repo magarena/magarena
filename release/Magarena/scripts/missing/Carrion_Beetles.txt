@@ -1,0 +1,11 @@
+name=Carrion Beetles
+url=http://magiccards.info/query?q=%21Carrion+Beetles
+image=http://mtgimage.com/card/carrion%20beetles.jpg
+rarity=C
+type=Creature
+subtype=Insect
+cost={B}
+pt=1/1
+ability={2}{B}, {T}: Exile up to three target cards from a single graveyard.
+timing=main
+oracle={2}{B}, {T}: Exile up to three target cards from a single graveyard.

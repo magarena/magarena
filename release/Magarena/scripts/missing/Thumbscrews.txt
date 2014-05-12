@@ -1,0 +1,9 @@
+name=Thumbscrews
+url=http://magiccards.info/query?q=%21Thumbscrews
+image=http://mtgimage.com/card/thumbscrews.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=At the beginning of your upkeep, if you have five or more cards in hand, SN deals 1 damage to target opponent.
+timing=main
+oracle=At the beginning of your upkeep, if you have five or more cards in hand, Thumbscrews deals 1 damage to target opponent.

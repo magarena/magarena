@@ -1,0 +1,9 @@
+name=Fool's Tome
+url=http://magiccards.info/query?q=%21Fool%27s+Tome
+image=http://mtgimage.com/card/fool%27s%20tome.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={2}, {T}: Draw a card. Activate this ability only if you have no cards in hand.
+timing=main
+oracle={2}, {T}: Draw a card. Activate this ability only if you have no cards in hand.

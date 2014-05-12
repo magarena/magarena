@@ -1,0 +1,9 @@
+name=Avoid Fate
+url=http://magiccards.info/query?q=%21Avoid+Fate
+image=http://mtgimage.com/card/avoid%20fate.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Counter target instant or Aura spell that targets a permanent you control.
+timing=removal
+oracle=Counter target instant or Aura spell that targets a permanent you control.

@@ -1,0 +1,12 @@
+name=Dominating Licid
+url=http://magiccards.info/query?q=%21Dominating+Licid
+image=http://mtgimage.com/card/dominating%20licid.jpg
+rarity=R
+type=Creature
+subtype=Licid
+cost={1}{U}{U}
+pt=1/1
+ability={1}{U}{U}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {U} to end this effect.;\
+        You control enchanted creature.
+timing=main
+oracle={1}{U}{U}, {T}: Dominating Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {U} to end this effect. You control enchanted creature.

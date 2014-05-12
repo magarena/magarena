@@ -1,0 +1,13 @@
+name=Goblin Fire Fiend
+url=http://magiccards.info/query?q=%21Goblin+Fire+Fiend
+image=http://mtgimage.com/card/goblin%20fire%20fiend.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Berserker
+cost={3}{R}
+pt=1/1
+ability=Haste;\
+        SN must be blocked if able.;\
+        {R}: SN gets +1/+0 until end of turn.
+timing=main
+oracle=Haste. Goblin Fire Fiend must be blocked if able. {R}: Goblin Fire Fiend gets +1/+0 until end of turn.

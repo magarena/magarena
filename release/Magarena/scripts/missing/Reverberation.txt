@@ -1,0 +1,9 @@
+name=Reverberation
+url=http://magiccards.info/query?q=%21Reverberation
+image=http://mtgimage.com/card/reverberation.jpg
+rarity=R
+type=Instant
+cost={2}{U}{U}
+effect=All damage that would be dealt this turn by target sorcery spell is dealt to that spell's controller instead.
+timing=removal
+oracle=All damage that would be dealt this turn by target sorcery spell is dealt to that spell's controller instead.

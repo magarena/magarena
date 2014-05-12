@@ -1,0 +1,9 @@
+name=Terra Eternal
+url=http://magiccards.info/query?q=%21Terra+Eternal
+image=http://mtgimage.com/card/terra%20eternal.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=All lands have indestructible.
+timing=main
+oracle=All lands have indestructible.

@@ -1,0 +1,11 @@
+name=Scalding Salamander
+url=http://magiccards.info/query?q=%21Scalding+Salamander
+image=http://mtgimage.com/card/scalding%20salamander.jpg
+rarity=U
+type=Creature
+subtype=Salamander
+cost={2}{R}
+pt=2/1
+ability=Whenever SN attacks, you may have it deal 1 damage to each creature without flying defending player controls.
+timing=main
+oracle=Whenever Scalding Salamander attacks, you may have it deal 1 damage to each creature without flying defending player controls.

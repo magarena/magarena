@@ -1,0 +1,11 @@
+name=Vedalken Plotter
+url=http://magiccards.info/query?q=%21Vedalken+Plotter
+image=http://mtgimage.com/card/vedalken%20plotter.jpg
+rarity=U
+type=Creature
+subtype=Vedalken,Wizard
+cost={2}{U}
+pt=1/1
+ability=When SN enters the battlefield, exchange control of target land you control and target land an opponent controls.
+timing=main
+oracle=When Vedalken Plotter enters the battlefield, exchange control of target land you control and target land an opponent controls.

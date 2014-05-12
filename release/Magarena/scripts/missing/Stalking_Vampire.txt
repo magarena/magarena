@@ -1,0 +1,10 @@
+name=Stalking Vampire
+url=http://magiccards.info/query?q=%21Stalking+Vampire
+image=http://mtgimage.com/card/stalking%20vampire.jpg
+rarity=U
+type=Creature
+subtype=Vampire
+pt=5/5
+ability=At the beginning of your upkeep, you may pay {2}{B}{B}. If you do, transform SN.
+timing=main
+oracle=At the beginning of your upkeep, you may pay {2}{B}{B}. If you do, transform Stalking Vampire.

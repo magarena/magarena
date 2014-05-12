@@ -1,0 +1,9 @@
+name=Spoils of Evil
+url=http://magiccards.info/query?q=%21Spoils+of+Evil
+image=http://mtgimage.com/card/spoils%20of%20evil.jpg
+rarity=R
+type=Instant
+cost={2}{B}
+effect=For each artifact or creature card in target opponent's graveyard, add {1} to your mana pool and you gain 1 life.
+timing=removal
+oracle=For each artifact or creature card in target opponent's graveyard, add {1} to your mana pool and you gain 1 life.

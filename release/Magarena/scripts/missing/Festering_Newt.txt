@@ -1,0 +1,11 @@
+name=Festering Newt
+url=http://magiccards.info/query?q=%21Festering+Newt
+image=http://mtgimage.com/card/festering%20newt.jpg
+rarity=C
+type=Creature
+subtype=Salamander
+cost={B}
+pt=1/1
+ability=When SN dies, target creature an opponent controls gets -1/-1 until end of turn. That creature gets -4/-4 instead if you control a creature named Bogbrew Witch.
+timing=main
+oracle=When Festering Newt dies, target creature an opponent controls gets -1/-1 until end of turn. That creature gets -4/-4 instead if you control a creature named Bogbrew Witch.

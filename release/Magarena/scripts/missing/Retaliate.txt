@@ -1,0 +1,9 @@
+name=Retaliate
+url=http://magiccards.info/query?q=%21Retaliate
+image=http://mtgimage.com/card/retaliate.jpg
+rarity=R
+type=Instant
+cost={2}{W}{W}
+effect=Destroy all creatures that dealt damage to you this turn.
+timing=removal
+oracle=Destroy all creatures that dealt damage to you this turn.

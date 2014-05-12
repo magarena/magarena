@@ -1,0 +1,9 @@
+name=Island Sanctuary
+url=http://magiccards.info/query?q=%21Island+Sanctuary
+image=http://mtgimage.com/card/island%20sanctuary.jpg
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=If you would draw a card during your draw step, instead you may skip that draw. If you do, until your next turn, you can't be attacked except by creatures with flying and/or islandwalk.
+timing=main
+oracle=If you would draw a card during your draw step, instead you may skip that draw. If you do, until your next turn, you can't be attacked except by creatures with flying and/or islandwalk.

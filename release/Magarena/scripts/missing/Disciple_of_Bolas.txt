@@ -1,0 +1,11 @@
+name=Disciple of Bolas
+url=http://magiccards.info/query?q=%21Disciple+of+Bolas
+image=http://mtgimage.com/card/disciple%20of%20bolas.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={3}{B}
+pt=2/1
+ability=When SN enters the battlefield, sacrifice another creature. You gain X life and draw X cards, where X is that creature's power.
+timing=main
+oracle=When Disciple of Bolas enters the battlefield, sacrifice another creature. You gain X life and draw X cards, where X is that creature's power.

@@ -1,0 +1,9 @@
+name=Juntu Stakes
+url=http://magiccards.info/query?q=%21Juntu+Stakes
+image=http://mtgimage.com/card/juntu%20stakes.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Creatures with power 1 or less don't untap during their controllers' untap steps.
+timing=main
+oracle=Creatures with power 1 or less don't untap during their controllers' untap steps.

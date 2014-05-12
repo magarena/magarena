@@ -1,0 +1,9 @@
+name=Fuel for the Cause
+url=http://magiccards.info/query?q=%21Fuel+for+the+Cause
+image=http://mtgimage.com/card/fuel%20for%20the%20cause.jpg
+rarity=C
+type=Instant
+cost={2}{U}{U}
+effect=Counter target spell, then proliferate.
+timing=removal
+oracle=Counter target spell, then proliferate.

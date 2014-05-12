@@ -1,0 +1,9 @@
+name=Thrumming Stone
+url=http://magiccards.info/query?q=%21Thrumming+Stone
+image=http://mtgimage.com/card/thrumming%20stone.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability=Spells you cast have ripple 4.
+timing=main
+oracle=Spells you cast have ripple 4.

@@ -1,0 +1,11 @@
+name=Composite Golem
+url=http://magiccards.info/query?q=%21Composite+Golem
+image=http://mtgimage.com/card/composite%20golem.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=4/4
+ability=Sacrifice SN: Add {W}{U}{B}{R}{G} to your mana pool.
+timing=main
+oracle=Sacrifice Composite Golem: Add {W}{U}{B}{R}{G} to your mana pool.

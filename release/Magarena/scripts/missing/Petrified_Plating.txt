@@ -1,0 +1,12 @@
+name=Petrified Plating
+url=http://magiccards.info/query?q=%21Petrified+Plating
+image=http://mtgimage.com/card/petrified%20plating.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.;\
+        Suspend 2—{G}
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+2. Suspend 2—{G}

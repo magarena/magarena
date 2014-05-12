@@ -1,0 +1,9 @@
+name=Elemental Augury
+url=http://magiccards.info/query?q=%21Elemental+Augury
+image=http://mtgimage.com/card/elemental%20augury.jpg
+rarity=R
+type=Enchantment
+cost={U}{B}{R}
+ability={3}: Look at the top three cards of target player's library, then put them back in any order.
+timing=main
+oracle={3}: Look at the top three cards of target player's library, then put them back in any order.

@@ -1,0 +1,9 @@
+name=Night
+url=http://magiccards.info/query?q=%21Night
+image=http://mtgimage.com/card/nightday.jpg
+rarity=U
+type=Instant
+cost={B}
+effect=Target creature gets -1/-1 until end of turn.
+timing=removal
+oracle=Target creature gets -1/-1 until end of turn.

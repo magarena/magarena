@@ -1,0 +1,9 @@
+name=Earthcraft
+url=http://magiccards.info/query?q=%21Earthcraft
+image=http://mtgimage.com/card/earthcraft.jpg
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability=Tap an untapped creature you control: Untap target basic land.
+timing=main
+oracle=Tap an untapped creature you control: Untap target basic land.

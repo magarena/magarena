@@ -1,0 +1,11 @@
+name=Scrapbasket
+url=http://magiccards.info/query?q=%21Scrapbasket
+image=http://mtgimage.com/card/scrapbasket.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Scarecrow
+cost={4}
+pt=3/2
+ability={1}: SN becomes all colors until end of turn.
+timing=main
+oracle={1}: Scrapbasket becomes all colors until end of turn.

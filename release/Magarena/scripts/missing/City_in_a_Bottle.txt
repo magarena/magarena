@@ -1,0 +1,10 @@
+name=City in a Bottle
+url=http://magiccards.info/query?q=%21City+in+a+Bottle
+image=http://mtgimage.com/card/city%20in%20a%20bottle.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Whenever a nontoken permanent originally printed in the Arabian Nights expansion other than SN is on the battlefield, its controller sacrifices it.;\
+        Players can't play cards originally printed in the Arabian Nights expansion.
+timing=main
+oracle=Whenever a nontoken permanent originally printed in the Arabian Nights expansion other than City in a Bottle is on the battlefield, its controller sacrifices it. Players can't play cards originally printed in the Arabian Nights expansion.

@@ -1,0 +1,11 @@
+name=Coldsteel Heart
+url=http://magiccards.info/query?q=%21Coldsteel+Heart
+image=http://mtgimage.com/card/coldsteel%20heart.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability=SN enters the battlefield tapped.;\
+        As SN enters the battlefield, choose a color.;\
+        {T}: Add one mana of the chosen color to your mana pool.
+timing=main
+oracle=Coldsteel Heart enters the battlefield tapped. As Coldsteel Heart enters the battlefield, choose a color. {T}: Add one mana of the chosen color to your mana pool.

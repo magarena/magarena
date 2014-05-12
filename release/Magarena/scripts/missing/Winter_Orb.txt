@@ -1,0 +1,9 @@
+name=Winter Orb
+url=http://magiccards.info/query?q=%21Winter+Orb
+image=http://mtgimage.com/card/winter%20orb.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Players can't untap more than one land during their untap steps.
+timing=main
+oracle=Players can't untap more than one land during their untap steps.

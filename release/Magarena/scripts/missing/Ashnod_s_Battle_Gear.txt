@@ -1,0 +1,10 @@
+name=Ashnod's Battle Gear
+url=http://magiccards.info/query?q=%21Ashnod%27s+Battle+Gear
+image=http://mtgimage.com/card/ashnod%27s%20battle%20gear.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability=You may choose not to untap SN during your untap step.;\
+        {2}, {T}: Target creature you control gets +2/-2 for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Ashnod's Battle Gear during your untap step. {2}, {T}: Target creature you control gets +2/-2 for as long as Ashnod's Battle Gear remains tapped.

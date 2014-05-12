@@ -1,0 +1,11 @@
+name=Lurker
+url=http://magiccards.info/query?q=%21Lurker
+image=http://mtgimage.com/card/lurker.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={2}{G}
+pt=2/3
+ability=SN can't be the target of spells unless it attacked or blocked this turn.
+timing=main
+oracle=Lurker can't be the target of spells unless it attacked or blocked this turn.

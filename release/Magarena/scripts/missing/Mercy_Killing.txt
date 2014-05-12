@@ -1,0 +1,9 @@
+name=Mercy Killing
+url=http://magiccards.info/query?q=%21Mercy+Killing
+image=http://mtgimage.com/card/mercy%20killing.jpg
+rarity=U
+type=Instant
+cost={2}{G/W}
+effect=Target creature's controller sacrifices it, then puts X 1/1 green and white Elf Warrior creature tokens onto the battlefield, where X is that creature's power.
+timing=removal
+oracle=Target creature's controller sacrifices it, then puts X 1/1 green and white Elf Warrior creature tokens onto the battlefield, where X is that creature's power.

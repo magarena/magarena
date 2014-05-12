@@ -1,0 +1,11 @@
+name=Brine Hag
+url=http://magiccards.info/query?q=%21Brine+Hag
+image=http://mtgimage.com/card/brine%20hag.jpg
+rarity=U
+type=Creature
+subtype=Hag
+cost={2}{U}{U}
+pt=2/2
+ability=When SN dies, all creatures that dealt damage to it this turn become 0/2.
+timing=main
+oracle=When Brine Hag dies, all creatures that dealt damage to it this turn become 0/2.

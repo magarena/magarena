@@ -1,0 +1,10 @@
+name=Pentad Prism
+url=http://magiccards.info/query?q=%21Pentad+Prism
+image=http://mtgimage.com/card/pentad%20prism.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability=Sunburst;\
+        Remove a charge counter from SN: Add one mana of any color to your mana pool.
+timing=main
+oracle=Sunburst. Remove a charge counter from Pentad Prism: Add one mana of any color to your mana pool.

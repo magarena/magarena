@@ -1,0 +1,12 @@
+name=Kinscaer Harpoonist
+url=http://magiccards.info/query?q=%21Kinscaer+Harpoonist
+image=http://mtgimage.com/card/kinscaer%20harpoonist.jpg
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        Whenever SN attacks, you may have target creature lose flying until end of turn.
+timing=main
+oracle=Flying. Whenever Kinscaer Harpoonist attacks, you may have target creature lose flying until end of turn.

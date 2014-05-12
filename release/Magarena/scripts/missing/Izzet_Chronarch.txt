@@ -1,0 +1,11 @@
+name=Izzet Chronarch
+url=http://magiccards.info/query?q=%21Izzet+Chronarch
+image=http://mtgimage.com/card/izzet%20chronarch.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}{R}
+pt=2/2
+ability=When SN enters the battlefield, return target instant or sorcery card from your graveyard to your hand.
+timing=main
+oracle=When Izzet Chronarch enters the battlefield, return target instant or sorcery card from your graveyard to your hand.

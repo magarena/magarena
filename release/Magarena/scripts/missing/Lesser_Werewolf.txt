@@ -1,0 +1,11 @@
+name=Lesser Werewolf
+url=http://magiccards.info/query?q=%21Lesser+Werewolf
+image=http://mtgimage.com/card/lesser%20werewolf.jpg
+rarity=U
+type=Creature
+subtype=Werewolf
+cost={3}{B}
+pt=2/4
+ability={B}: If SN's power is 1 or more, it gets -1/-0 until end of turn and put a -0/-1 counter on target creature blocking or blocked by SN. Activate this ability only during the declare blockers step.
+timing=main
+oracle={B}: If Lesser Werewolf's power is 1 or more, it gets -1/-0 until end of turn and put a -0/-1 counter on target creature blocking or blocked by Lesser Werewolf. Activate this ability only during the declare blockers step.

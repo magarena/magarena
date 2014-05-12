@@ -1,0 +1,11 @@
+name=Vital Surge
+url=http://magiccards.info/query?q=%21Vital+Surge
+image=http://mtgimage.com/card/vital%20surge.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={1}{G}
+effect=You gain 3 life.;\
+        Splice onto Arcane {1}{G}
+timing=removal
+oracle=You gain 3 life. Splice onto Arcane {1}{G}

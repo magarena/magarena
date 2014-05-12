@@ -1,0 +1,9 @@
+name=Planar Despair
+url=http://magiccards.info/query?q=%21Planar+Despair
+image=http://mtgimage.com/card/planar%20despair.jpg
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Domain — All creatures get -1/-1 until end of turn for each basic land type among lands you control.
+timing=main
+oracle=Domain — All creatures get -1/-1 until end of turn for each basic land type among lands you control.

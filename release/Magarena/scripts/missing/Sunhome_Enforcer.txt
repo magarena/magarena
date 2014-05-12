@@ -1,0 +1,12 @@
+name=Sunhome Enforcer
+url=http://magiccards.info/query?q=%21Sunhome+Enforcer
+image=http://mtgimage.com/card/sunhome%20enforcer.jpg
+rarity=U
+type=Creature
+subtype=Giant,Soldier
+cost={2}{R}{W}
+pt=2/4
+ability=Whenever SN deals combat damage, you gain that much life.;\
+        {1}{R}: SN gets +1/+0 until end of turn.
+timing=main
+oracle=Whenever Sunhome Enforcer deals combat damage, you gain that much life. {1}{R}: Sunhome Enforcer gets +1/+0 until end of turn.

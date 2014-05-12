@@ -1,0 +1,12 @@
+name=Inescapable Brute
+url=http://magiccards.info/query?q=%21Inescapable+Brute
+image=http://mtgimage.com/card/inescapable%20brute.jpg
+rarity=C
+type=Creature
+subtype=Giant,Warrior
+cost={5}{R}
+pt=3/3
+ability=Wither;\
+        SN must be blocked if able.
+timing=main
+oracle=Wither. Inescapable Brute must be blocked if able.

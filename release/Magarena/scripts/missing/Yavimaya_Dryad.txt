@@ -1,0 +1,12 @@
+name=Yavimaya Dryad
+url=http://magiccards.info/query?q=%21Yavimaya+Dryad
+image=http://mtgimage.com/card/yavimaya%20dryad.jpg
+rarity=U
+type=Creature
+subtype=Dryad
+cost={1}{G}{G}
+pt=2/1
+ability=Forestwalk;\
+        When SN enters the battlefield, you may search your library for a Forest card and put it onto the battlefield tapped under target player's control. If you do, shuffle your library.
+timing=main
+oracle=Forestwalk. When Yavimaya Dryad enters the battlefield, you may search your library for a Forest card and put it onto the battlefield tapped under target player's control. If you do, shuffle your library.

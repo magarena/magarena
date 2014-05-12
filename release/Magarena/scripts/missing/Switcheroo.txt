@@ -1,0 +1,9 @@
+name=Switcheroo
+url=http://magiccards.info/query?q=%21Switcheroo
+image=http://mtgimage.com/card/switcheroo.jpg
+rarity=U
+type=Sorcery
+cost={4}{U}
+effect=Exchange control of two target creatures.
+timing=main
+oracle=Exchange control of two target creatures.

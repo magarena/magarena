@@ -1,0 +1,11 @@
+name=Summit Apes
+url=http://magiccards.info/query?q=%21Summit+Apes
+image=http://mtgimage.com/card/summit%20apes.jpg
+rarity=U
+type=Creature
+subtype=Ape
+cost={3}{G}
+pt=5/2
+ability=As long as you control a Mountain, SN can't be blocked except by two or more creatures.
+timing=main
+oracle=As long as you control a Mountain, Summit Apes can't be blocked except by two or more creatures.

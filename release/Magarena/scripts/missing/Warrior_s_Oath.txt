@@ -1,0 +1,9 @@
+name=Warrior's Oath
+url=http://magiccards.info/query?q=%21Warrior%27s+Oath
+image=http://mtgimage.com/card/warrior%27s%20oath.jpg
+rarity=R
+type=Sorcery
+cost={R}{R}
+effect=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.
+timing=main
+oracle=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.

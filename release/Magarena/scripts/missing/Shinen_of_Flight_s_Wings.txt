@@ -1,0 +1,12 @@
+name=Shinen of Flight's Wings
+url=http://magiccards.info/query?q=%21Shinen+of+Flight%27s+Wings
+image=http://mtgimage.com/card/shinen%20of%20flight%27s%20wings.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{U}
+pt=3/3
+ability=Flying;\
+        Channel — {U}, Discard SN: Target creature gains flying until end of turn.
+timing=main
+oracle=Flying. Channel — {U}, Discard Shinen of Flight's Wings: Target creature gains flying until end of turn.

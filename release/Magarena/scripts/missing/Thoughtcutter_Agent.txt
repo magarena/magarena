@@ -1,0 +1,11 @@
+name=Thoughtcutter Agent
+url=http://magiccards.info/query?q=%21Thoughtcutter+Agent
+image=http://mtgimage.com/card/thoughtcutter%20agent.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Human,Rogue
+cost={U}{B}
+pt=1/1
+ability={U}{B}, {T}: Target player loses 1 life and reveals his or her hand.
+timing=main
+oracle={U}{B}, {T}: Target player loses 1 life and reveals his or her hand.

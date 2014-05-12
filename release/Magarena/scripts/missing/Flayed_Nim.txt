@@ -1,0 +1,12 @@
+name=Flayed Nim
+url=http://magiccards.info/query?q=%21Flayed+Nim
+image=http://mtgimage.com/card/flayed%20nim.jpg
+rarity=U
+type=Creature
+subtype=Skeleton
+cost={3}{B}
+pt=2/2
+ability=Whenever SN deals combat damage to a creature, that creature's controller loses that much life.;\
+        {2}{B}: Regenerate SN.
+timing=main
+oracle=Whenever Flayed Nim deals combat damage to a creature, that creature's controller loses that much life. {2}{B}: Regenerate Flayed Nim.

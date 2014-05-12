@@ -1,0 +1,11 @@
+name=Port Inspector
+url=http://magiccards.info/query?q=%21Port+Inspector
+image=http://mtgimage.com/card/port%20inspector.jpg
+rarity=C
+type=Creature
+subtype=Human
+cost={1}{U}
+pt=1/2
+ability=Whenever SN becomes blocked, you may look at defending player's hand.
+timing=main
+oracle=Whenever Port Inspector becomes blocked, you may look at defending player's hand.

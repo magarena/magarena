@@ -1,0 +1,9 @@
+name=Maze of Shadows
+url=http://magiccards.info/query?q=%21Maze+of+Shadows
+image=http://mtgimage.com/card/maze%20of%20shadows.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Untap target attacking creature with shadow. Prevent all combat damage that would be dealt to and dealt by that creature this turn.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Untap target attacking creature with shadow. Prevent all combat damage that would be dealt to and dealt by that creature this turn.

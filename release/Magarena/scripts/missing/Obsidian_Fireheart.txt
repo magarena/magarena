@@ -1,0 +1,11 @@
+name=Obsidian Fireheart
+url=http://magiccards.info/query?q=%21Obsidian+Fireheart
+image=http://mtgimage.com/card/obsidian%20fireheart.jpg
+rarity=M
+type=Creature
+subtype=Elemental
+cost={1}{R}{R}{R}
+pt=4/4
+ability={1}{R}{R}: Put a blaze counter on target land without a blaze counter on it. For as long as that land has a blaze counter on it, it has "At the beginning of your upkeep, this land deals 1 damage to you."
+timing=main
+oracle={1}{R}{R}: Put a blaze counter on target land without a blaze counter on it. For as long as that land has a blaze counter on it, it has "At the beginning of your upkeep, this land deals 1 damage to you."

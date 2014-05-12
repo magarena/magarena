@@ -1,0 +1,11 @@
+name=Kjeldoran Skyknight
+url=http://magiccards.info/query?q=%21Kjeldoran+Skyknight
+image=http://mtgimage.com/card/kjeldoran%20skyknight.jpg
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={2}{W}
+pt=1/1
+ability=Flying; first strike; banding
+timing=main
+oracle=Flying; first strike; banding

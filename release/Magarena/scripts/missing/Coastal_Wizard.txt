@@ -1,0 +1,11 @@
+name=Coastal Wizard
+url=http://magiccards.info/query?q=%21Coastal+Wizard
+image=http://mtgimage.com/card/coastal%20wizard.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}{U}
+pt=1/1
+ability={T}: Return SN and another target creature to their owners' hands. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Return Coastal Wizard and another target creature to their owners' hands. Activate this ability only during your turn, before attackers are declared.

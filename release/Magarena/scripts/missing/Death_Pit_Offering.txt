@@ -1,0 +1,10 @@
+name=Death Pit Offering
+url=http://magiccards.info/query?q=%21Death+Pit+Offering
+image=http://mtgimage.com/card/death%20pit%20offering.jpg
+rarity=R
+type=Enchantment
+cost={2}{B}{B}
+ability=When SN enters the battlefield, sacrifice all creatures you control.;\
+        Creatures you control get +2/+2.
+timing=main
+oracle=When Death Pit Offering enters the battlefield, sacrifice all creatures you control. Creatures you control get +2/+2.

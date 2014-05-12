@@ -1,0 +1,11 @@
+name=Trumpeting Armodon
+url=http://magiccards.info/query?q=%21Trumpeting+Armodon
+image=http://mtgimage.com/card/trumpeting%20armodon.jpg
+rarity=U
+type=Creature
+subtype=Elephant
+cost={3}{G}
+pt=3/3
+ability={1}{G}: Target creature blocks SN this turn if able.
+timing=main
+oracle={1}{G}: Target creature blocks Trumpeting Armodon this turn if able.

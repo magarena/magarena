@@ -1,0 +1,9 @@
+name=Scent of Cinder
+url=http://magiccards.info/query?q=%21Scent+of+Cinder
+image=http://mtgimage.com/card/scent%20of%20cinder.jpg
+rarity=C
+type=Sorcery
+cost={1}{R}
+effect=Reveal any number of red cards in your hand. SN deals X damage to target creature or player, where X is the number of cards revealed this way.
+timing=main
+oracle=Reveal any number of red cards in your hand. Scent of Cinder deals X damage to target creature or player, where X is the number of cards revealed this way.

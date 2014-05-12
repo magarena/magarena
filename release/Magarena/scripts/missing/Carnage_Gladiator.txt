@@ -1,0 +1,12 @@
+name=Carnage Gladiator
+url=http://magiccards.info/query?q=%21Carnage+Gladiator
+image=http://mtgimage.com/card/carnage%20gladiator.jpg
+rarity=U
+type=Creature
+subtype=Skeleton,Warrior
+cost={2}{B}{R}
+pt=4/2
+ability=Whenever a creature blocks, that creature's controller loses 1 life.;\
+        {1}{B}{R}: Regenerate SN.
+timing=main
+oracle=Whenever a creature blocks, that creature's controller loses 1 life. {1}{B}{R}: Regenerate Carnage Gladiator.

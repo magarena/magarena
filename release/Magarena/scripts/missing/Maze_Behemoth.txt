@@ -1,0 +1,12 @@
+name=Maze Behemoth
+url=http://magiccards.info/query?q=%21Maze+Behemoth
+image=http://mtgimage.com/card/maze%20behemoth.jpg
+rarity=C
+type=Creature
+subtype=Elemental
+cost={5}{G}
+pt=5/4
+ability=Trample;\
+        Multicolored creatures you control have trample.
+timing=main
+oracle=Trample. Multicolored creatures you control have trample.

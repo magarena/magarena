@@ -1,0 +1,12 @@
+name=Wormwood Dryad
+url=http://magiccards.info/query?q=%21Wormwood+Dryad
+image=http://mtgimage.com/card/wormwood%20dryad.jpg
+rarity=C
+type=Creature
+subtype=Dryad
+cost={2}{G}
+pt=3/1
+ability={G}: SN gains forestwalk until end of turn and deals 1 damage to you.;\
+        {B}: SN gains swampwalk until end of turn and deals 1 damage to you.
+timing=main
+oracle={G}: Wormwood Dryad gains forestwalk until end of turn and deals 1 damage to you. {B}: Wormwood Dryad gains swampwalk until end of turn and deals 1 damage to you.

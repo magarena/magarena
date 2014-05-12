@@ -1,0 +1,11 @@
+name=Sakiko, Mother of Summer
+url=http://magiccards.info/query?q=%21Sakiko%2C+Mother+of+Summer
+image=http://mtgimage.com/card/sakiko%2C%20mother%20of%20summer.jpg
+rarity=R
+type=Creature
+subtype=Snake,Shaman
+cost={4}{G}{G}
+pt=3/3
+ability=Whenever a creature you control deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
+timing=main
+oracle=Whenever a creature you control deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.

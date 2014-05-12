@@ -1,0 +1,10 @@
+name=Summoner's Pact
+url=http://magiccards.info/query?q=%21Summoner%27s+Pact
+image=http://mtgimage.com/card/summoner%27s%20pact.jpg
+rarity=R
+type=Instant
+cost={0}
+effect=Search your library for a green creature card, reveal it, and put it into your hand. Then shuffle your library.;\
+        At the beginning of your next upkeep, pay {2}{G}{G}. If you don't, you lose the game.
+timing=removal
+oracle=Search your library for a green creature card, reveal it, and put it into your hand. Then shuffle your library. At the beginning of your next upkeep, pay {2}{G}{G}. If you don't, you lose the game.

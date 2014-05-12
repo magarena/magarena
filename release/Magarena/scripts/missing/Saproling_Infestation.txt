@@ -1,0 +1,9 @@
+name=Saproling Infestation
+url=http://magiccards.info/query?q=%21Saproling+Infestation
+image=http://mtgimage.com/card/saproling%20infestation.jpg
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability=Whenever a player kicks a spell, you put a 1/1 green Saproling creature token onto the battlefield.
+timing=main
+oracle=Whenever a player kicks a spell, you put a 1/1 green Saproling creature token onto the battlefield.

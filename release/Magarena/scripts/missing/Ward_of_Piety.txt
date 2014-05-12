@@ -1,0 +1,11 @@
+name=Ward of Piety
+url=http://magiccards.info/query?q=%21Ward+of+Piety
+image=http://mtgimage.com/card/ward%20of%20piety.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        {1}{W}: The next 1 damage that would be dealt to enchanted creature this turn is dealt to target creature or player instead.
+timing=main
+oracle=Enchant creature. {1}{W}: The next 1 damage that would be dealt to enchanted creature this turn is dealt to target creature or player instead.

@@ -1,0 +1,12 @@
+name=Spitting Gourna
+url=http://magiccards.info/query?q=%21Spitting+Gourna
+image=http://mtgimage.com/card/spitting%20gourna.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{G}{G}
+pt=3/4
+ability=Reach;\
+        Morph {4}{G}
+timing=main
+oracle=Reach. Morph {4}{G}

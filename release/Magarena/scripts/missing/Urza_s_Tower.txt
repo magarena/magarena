@@ -1,0 +1,9 @@
+name=Urza's Tower
+url=http://magiccards.info/query?q=%21Urza%27s+Tower
+image=http://mtgimage.com/card/urza%27s%20tower1.jpg
+rarity=U
+type=Land
+subtype=Urza,Tower
+ability={T}: Add {1} to your mana pool. If you control an Urza's Mine and an Urza's Power-Plant, add {3} to your mana pool instead.
+timing=main
+oracle={T}: Add {1} to your mana pool. If you control an Urza's Mine and an Urza's Power-Plant, add {3} to your mana pool instead.

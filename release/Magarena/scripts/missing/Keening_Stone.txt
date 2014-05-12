@@ -1,0 +1,9 @@
+name=Keening Stone
+url=http://magiccards.info/query?q=%21Keening+Stone
+image=http://mtgimage.com/card/keening%20stone.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability={5}, {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in that player's graveyard.
+timing=main
+oracle={5}, {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in that player's graveyard.

@@ -1,0 +1,12 @@
+name=Demonic Appetite
+url=http://magiccards.info/query?q=%21Demonic+Appetite
+image=http://mtgimage.com/card/demonic%20appetite.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant creature you control;\
+        Enchanted creature gets +3/+3.;\
+        At the beginning of your upkeep, sacrifice a creature.
+timing=main
+oracle=Enchant creature you control. Enchanted creature gets +3/+3. At the beginning of your upkeep, sacrifice a creature.

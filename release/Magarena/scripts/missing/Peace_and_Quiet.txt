@@ -1,0 +1,9 @@
+name=Peace and Quiet
+url=http://magiccards.info/query?q=%21Peace+and+Quiet
+image=http://mtgimage.com/card/peace%20and%20quiet.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Destroy two target enchantments.
+timing=removal
+oracle=Destroy two target enchantments.

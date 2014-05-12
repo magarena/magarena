@@ -1,0 +1,13 @@
+name=Athreos, God of Passage
+url=http://magiccards.info/query?q=%21Athreos%2C+God+of+Passage
+image=http://mtgimage.com/card/athreos%2C%20god%20of%20passage.jpg
+rarity=M
+type=Enchantment,Creature
+subtype=God
+cost={1}{W}{B}
+pt=5/4
+ability=Indestructible;\
+        As long as your devotion to white and black is less than seven, Athreos isn't a creature.;\
+        Whenever another creature you own dies, return it to your hand unless target opponent pays 3 life.
+timing=main
+oracle=Indestructible. As long as your devotion to white and black is less than seven, Athreos isn't a creature. Whenever another creature you own dies, return it to your hand unless target opponent pays 3 life.

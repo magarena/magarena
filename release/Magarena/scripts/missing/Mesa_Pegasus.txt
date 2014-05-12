@@ -1,0 +1,11 @@
+name=Mesa Pegasus
+url=http://magiccards.info/query?q=%21Mesa+Pegasus
+image=http://mtgimage.com/card/mesa%20pegasus.jpg
+rarity=C
+type=Creature
+subtype=Pegasus
+cost={1}{W}
+pt=1/1
+ability=Flying; banding
+timing=main
+oracle=Flying; banding

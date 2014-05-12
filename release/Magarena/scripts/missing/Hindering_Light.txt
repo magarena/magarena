@@ -1,0 +1,10 @@
+name=Hindering Light
+url=http://magiccards.info/query?q=%21Hindering+Light
+image=http://mtgimage.com/card/hindering%20light.jpg
+rarity=C
+type=Instant
+cost={W}{U}
+effect=Counter target spell that targets you or a permanent you control.;\
+        Draw a card.
+timing=removal
+oracle=Counter target spell that targets you or a permanent you control. Draw a card.

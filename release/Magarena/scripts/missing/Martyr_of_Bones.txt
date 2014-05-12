@@ -1,0 +1,11 @@
+name=Martyr of Bones
+url=http://magiccards.info/query?q=%21Martyr+of+Bones
+image=http://mtgimage.com/card/martyr%20of%20bones.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={B}
+pt=1/1
+ability={1}, Reveal X black cards from your hand, Sacrifice SN: Exile up to X target cards from a single graveyard.
+timing=main
+oracle={1}, Reveal X black cards from your hand, Sacrifice Martyr of Bones: Exile up to X target cards from a single graveyard.

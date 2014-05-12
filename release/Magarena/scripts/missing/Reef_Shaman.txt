@@ -1,0 +1,11 @@
+name=Reef Shaman
+url=http://magiccards.info/query?q=%21Reef+Shaman
+image=http://mtgimage.com/card/reef%20shaman.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Shaman
+cost={U}
+pt=0/2
+ability={T}: Target land becomes the basic land type of your choice until end of turn.
+timing=main
+oracle={T}: Target land becomes the basic land type of your choice until end of turn.

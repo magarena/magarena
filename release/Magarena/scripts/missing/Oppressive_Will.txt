@@ -1,0 +1,9 @@
+name=Oppressive Will
+url=http://magiccards.info/query?q=%21Oppressive+Will
+image=http://mtgimage.com/card/oppressive%20will.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target spell unless its controller pays {1} for each card in your hand.
+timing=removal
+oracle=Counter target spell unless its controller pays {1} for each card in your hand.

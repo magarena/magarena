@@ -1,0 +1,9 @@
+name=Pain
+url=http://magiccards.info/query?q=%21Pain
+image=http://mtgimage.com/card/painsuffering.jpg
+rarity=U
+type=Sorcery
+cost={B}
+effect=Target player discards a card.
+timing=main
+oracle=Target player discards a card.

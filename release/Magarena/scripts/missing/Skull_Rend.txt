@@ -1,0 +1,9 @@
+name=Skull Rend
+url=http://magiccards.info/query?q=%21Skull+Rend
+image=http://mtgimage.com/card/skull%20rend.jpg
+rarity=C
+type=Sorcery
+cost={3}{B}{R}
+effect=SN deals 2 damage to each opponent. Those players each discard two cards at random.
+timing=main
+oracle=Skull Rend deals 2 damage to each opponent. Those players each discard two cards at random.

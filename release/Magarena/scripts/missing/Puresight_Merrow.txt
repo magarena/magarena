@@ -1,0 +1,11 @@
+name=Puresight Merrow
+url=http://magiccards.info/query?q=%21Puresight+Merrow
+image=http://mtgimage.com/card/puresight%20merrow.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={W/U}{W/U}
+pt=2/2
+ability={W/U}, {Q}: Look at the top card of your library. You may exile that card.
+timing=main
+oracle={W/U}, {Q}: Look at the top card of your library. You may exile that card.

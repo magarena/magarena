@@ -1,0 +1,9 @@
+name=Vernal Bloom
+url=http://magiccards.info/query?q=%21Vernal+Bloom
+image=http://mtgimage.com/card/vernal%20bloom.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=Whenever a Forest is tapped for mana, its controller adds {G} to his or her mana pool.
+timing=main
+oracle=Whenever a Forest is tapped for mana, its controller adds {G} to his or her mana pool.

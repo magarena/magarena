@@ -1,0 +1,9 @@
+name=Lion's Eye Diamond
+url=http://magiccards.info/query?q=%21Lion%27s+Eye+Diamond
+image=http://mtgimage.com/card/lion%27s%20eye%20diamond.jpg
+rarity=R
+type=Artifact
+cost={0}
+ability=Sacrifice SN, Discard your hand: Add three mana of any one color to your mana pool. Activate this ability only any time you could cast an instant.
+timing=main
+oracle=Sacrifice Lion's Eye Diamond, Discard your hand: Add three mana of any one color to your mana pool. Activate this ability only any time you could cast an instant.

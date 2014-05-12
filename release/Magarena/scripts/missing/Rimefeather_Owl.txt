@@ -1,0 +1,14 @@
+name=Rimefeather Owl
+url=http://magiccards.info/query?q=%21Rimefeather+Owl
+image=http://mtgimage.com/card/rimefeather%20owl.jpg
+rarity=R
+type=Creature
+subtype=Bird
+cost={5}{U}{U}
+pt=*/*
+ability=Flying;\
+        SN's power and toughness are each equal to the number of snow permanents on the battlefield.;\
+        {1}{S}: Put an ice counter on target permanent.;\
+        Permanents with ice counters on them are snow.
+timing=main
+oracle=Flying. Rimefeather Owl's power and toughness are each equal to the number of snow permanents on the battlefield. {1}{S}: Put an ice counter on target permanent. Permanents with ice counters on them are snow.

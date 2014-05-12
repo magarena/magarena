@@ -1,0 +1,10 @@
+name=Murmurs from Beyond
+url=http://magiccards.info/query?q=%21Murmurs+from+Beyond
+image=http://mtgimage.com/card/murmurs%20from%20beyond.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={2}{U}
+effect=Reveal the top three cards of your library. An opponent chooses one of them. Put that card into your graveyard and the rest into your hand.
+timing=removal
+oracle=Reveal the top three cards of your library. An opponent chooses one of them. Put that card into your graveyard and the rest into your hand.

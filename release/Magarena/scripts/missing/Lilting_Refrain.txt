@@ -1,0 +1,10 @@
+name=Lilting Refrain
+url=http://magiccards.info/query?q=%21Lilting+Refrain
+image=http://mtgimage.com/card/lilting%20refrain.jpg
+rarity=U
+type=Enchantment
+cost={1}{U}
+ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
+        Sacrifice SN: Counter target spell unless its controller pays {X}, where X is the number of verse counters on SN.
+timing=main
+oracle=At the beginning of your upkeep, you may put a verse counter on Lilting Refrain. Sacrifice Lilting Refrain: Counter target spell unless its controller pays {X}, where X is the number of verse counters on Lilting Refrain.

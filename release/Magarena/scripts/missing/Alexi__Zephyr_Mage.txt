@@ -1,0 +1,11 @@
+name=Alexi, Zephyr Mage
+url=http://magiccards.info/query?q=%21Alexi%2C+Zephyr+Mage
+image=http://mtgimage.com/card/alexi%2C%20zephyr%20mage.jpg
+rarity=R
+type=Creature
+subtype=Human,Spellshaper
+cost={3}{U}{U}
+pt=3/3
+ability={X}{U}, {T}, Discard two cards: Return X target creatures to their owners' hands.
+timing=main
+oracle={X}{U}, {T}, Discard two cards: Return X target creatures to their owners' hands.

@@ -1,0 +1,11 @@
+name=Treva's Attendant
+url=http://magiccards.info/query?q=%21Treva%27s+Attendant
+image=http://mtgimage.com/card/treva%27s%20attendant.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=3/3
+ability={1}, Sacrifice SN: Add {G}{W}{U} to your mana pool.
+timing=main
+oracle={1}, Sacrifice Treva's Attendant: Add {G}{W}{U} to your mana pool.

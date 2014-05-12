@@ -1,0 +1,11 @@
+name=Jasmine Seer
+url=http://magiccards.info/query?q=%21Jasmine+Seer
+image=http://mtgimage.com/card/jasmine%20seer.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{W}
+pt=1/1
+ability={2}{W}, {T}: Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.
+timing=main
+oracle={2}{W}, {T}: Reveal any number of white cards in your hand. You gain 2 life for each card revealed this way.

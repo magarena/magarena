@@ -1,0 +1,11 @@
+name=Goblin Vandal
+url=http://magiccards.info/query?q=%21Goblin+Vandal
+image=http://mtgimage.com/card/goblin%20vandal.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={R}
+pt=1/1
+ability=Whenever SN attacks and isn't blocked, you may pay {R}. If you do, destroy target artifact defending player controls and SN assigns no combat damage this turn.
+timing=main
+oracle=Whenever Goblin Vandal attacks and isn't blocked, you may pay {R}. If you do, destroy target artifact defending player controls and Goblin Vandal assigns no combat damage this turn.

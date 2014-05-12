@@ -1,0 +1,11 @@
+name=Atalya, Samite Master
+url=http://magiccards.info/query?q=%21Atalya%2C+Samite+Master
+image=http://mtgimage.com/card/atalya%2C%20samite%20master.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}{W}
+pt=2/3
+ability={X}, {T}: Choose one — Prevent the next X damage that would be dealt to target creature this turn; or you gain X life. Spend only white mana this way.
+timing=main
+oracle={X}, {T}: Choose one — Prevent the next X damage that would be dealt to target creature this turn; or you gain X life. Spend only white mana this way.

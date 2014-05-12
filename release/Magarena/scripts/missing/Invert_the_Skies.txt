@@ -1,0 +1,9 @@
+name=Invert the Skies
+url=http://magiccards.info/query?q=%21Invert+the+Skies
+image=http://mtgimage.com/card/invert%20the%20skies.jpg
+rarity=U
+type=Instant
+cost={3}{G/U}
+effect=Creatures your opponents control lose flying until end of turn if {G} was spent to cast SN, and creatures you control gain flying until end of turn if {U} was spent to cast it.
+timing=removal
+oracle=Creatures your opponents control lose flying until end of turn if {G} was spent to cast Invert the Skies, and creatures you control gain flying until end of turn if {U} was spent to cast it.

@@ -1,0 +1,12 @@
+name=Ashen Ghoul
+url=http://magiccards.info/query?q=%21Ashen+Ghoul
+image=http://mtgimage.com/card/ashen%20ghoul.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=3/1
+ability=Haste;\
+        {B}: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep and only if three or more creature cards are above SN.
+timing=main
+oracle=Haste. {B}: Return Ashen Ghoul from your graveyard to the battlefield. Activate this ability only during your upkeep and only if three or more creature cards are above Ashen Ghoul.

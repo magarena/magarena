@@ -1,0 +1,11 @@
+name=Sage of Epityr
+url=http://magiccards.info/query?q=%21Sage+of+Epityr
+image=http://mtgimage.com/card/sage%20of%20epityr.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability=When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.
+timing=main
+oracle=When Sage of Epityr enters the battlefield, look at the top four cards of your library, then put them back in any order.

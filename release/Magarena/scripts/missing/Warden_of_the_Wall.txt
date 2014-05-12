@@ -1,0 +1,11 @@
+name=Warden of the Wall
+url=http://magiccards.info/query?q=%21Warden+of+the+Wall
+image=http://mtgimage.com/card/warden%20of%20the%20wall.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {1} to your mana pool.;\
+        As long as it's not your turn, SN is a 2/3 Gargoyle artifact creature with flying.
+timing=main
+oracle=Warden of the Wall enters the battlefield tapped. {T}: Add {1} to your mana pool. As long as it's not your turn, Warden of the Wall is a 2/3 Gargoyle artifact creature with flying.

@@ -1,0 +1,9 @@
+name=Summoner's Bane
+url=http://magiccards.info/query?q=%21Summoner%27s+Bane
+image=http://mtgimage.com/card/summoner%27s%20bane.jpg
+rarity=U
+type=Instant
+cost={2}{U}{U}
+effect=Counter target creature spell. Put a 2/2 blue Illusion creature token onto the battlefield.
+timing=removal
+oracle=Counter target creature spell. Put a 2/2 blue Illusion creature token onto the battlefield.

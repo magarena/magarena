@@ -1,0 +1,13 @@
+name=Minion of the Wastes
+url=http://magiccards.info/query?q=%21Minion+of+the+Wastes
+image=http://mtgimage.com/card/minion%20of%20the%20wastes.jpg
+rarity=R
+type=Creature
+subtype=Minion
+cost={3}{B}{B}{B}
+pt=*/*
+ability=Trample;\
+        As SN enters the battlefield, pay any amount of life.;\
+        SN's power and toughness are each equal to the life paid as it entered the battlefield.
+timing=main
+oracle=Trample. As Minion of the Wastes enters the battlefield, pay any amount of life. Minion of the Wastes's power and toughness are each equal to the life paid as it entered the battlefield.

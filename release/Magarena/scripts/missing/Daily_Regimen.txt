@@ -1,0 +1,11 @@
+name=Daily Regimen
+url=http://magiccards.info/query?q=%21Daily+Regimen
+image=http://mtgimage.com/card/daily%20regimen.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        {1}{W}: Put a +1/+1 counter on enchanted creature.
+timing=main
+oracle=Enchant creature. {1}{W}: Put a +1/+1 counter on enchanted creature.

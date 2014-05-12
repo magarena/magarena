@@ -1,0 +1,9 @@
+name=Last-Ditch Effort
+url=http://magiccards.info/query?q=%21Last-Ditch+Effort
+image=http://mtgimage.com/card/last-ditch%20effort.jpg
+rarity=U
+type=Instant
+cost={R}
+effect=Sacrifice any number of creatures. SN deals that much damage to target creature or player.
+timing=removal
+oracle=Sacrifice any number of creatures. Last-Ditch Effort deals that much damage to target creature or player.

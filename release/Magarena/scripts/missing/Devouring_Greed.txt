@@ -1,0 +1,11 @@
+name=Devouring Greed
+url=http://magiccards.info/query?q=%21Devouring+Greed
+image=http://mtgimage.com/card/devouring%20greed.jpg
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={2}{B}{B}
+effect=As an additional cost to cast SN, you may sacrifice any number of Spirits.;\
+        Target player loses 2 life plus 2 life for each Spirit sacrificed this way. You gain that much life.
+timing=main
+oracle=As an additional cost to cast Devouring Greed, you may sacrifice any number of Spirits. Target player loses 2 life plus 2 life for each Spirit sacrificed this way. You gain that much life.

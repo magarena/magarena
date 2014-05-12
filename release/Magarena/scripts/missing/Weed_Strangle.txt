@@ -1,0 +1,9 @@
+name=Weed Strangle
+url=http://magiccards.info/query?q=%21Weed+Strangle
+image=http://mtgimage.com/card/weed%20strangle.jpg
+rarity=C
+type=Sorcery
+cost={3}{B}{B}
+effect=Destroy target creature. Clash with an opponent. If you win, you gain life equal to that creature's toughness.
+timing=main
+oracle=Destroy target creature. Clash with an opponent. If you win, you gain life equal to that creature's toughness.

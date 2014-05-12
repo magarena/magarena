@@ -1,0 +1,11 @@
+name=Broodwarden
+url=http://magiccards.info/query?q=%21Broodwarden
+image=http://mtgimage.com/card/broodwarden.jpg
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={3}{G}{G}
+pt=4/4
+ability=Eldrazi Spawn creatures you control get +2/+1.
+timing=main
+oracle=Eldrazi Spawn creatures you control get +2/+1.

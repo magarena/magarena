@@ -1,0 +1,13 @@
+name=Rimehorn Aurochs
+url=http://magiccards.info/query?q=%21Rimehorn+Aurochs
+image=http://mtgimage.com/card/rimehorn%20aurochs.jpg
+rarity=U
+type=Creature
+subtype=Aurochs
+cost={4}{G}
+pt=3/3
+ability=Trample;\
+        Whenever SN attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.;\
+        {2}{S}: Target creature blocks target creature this turn if able.
+timing=main
+oracle=Trample. Whenever Rimehorn Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs. {2}{S}: Target creature blocks target creature this turn if able.

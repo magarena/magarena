@@ -1,0 +1,12 @@
+name=Krovikan Sorcerer
+url=http://magiccards.info/query?q=%21Krovikan+Sorcerer
+image=http://mtgimage.com/card/krovikan%20sorcerer.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/1
+ability={T}, Discard a nonblack card: Draw a card.;\
+        {T}, Discard a black card: Draw two cards, then discard one of them.
+timing=main
+oracle={T}, Discard a nonblack card: Draw a card. {T}, Discard a black card: Draw two cards, then discard one of them.

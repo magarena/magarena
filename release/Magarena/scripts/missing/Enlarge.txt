@@ -1,0 +1,9 @@
+name=Enlarge
+url=http://magiccards.info/query?q=%21Enlarge
+image=http://mtgimage.com/card/enlarge.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}{G}
+effect=Target creature gets +7/+7 and gains trample until end of turn. It must be blocked this turn if able.
+timing=main
+oracle=Target creature gets +7/+7 and gains trample until end of turn. It must be blocked this turn if able.

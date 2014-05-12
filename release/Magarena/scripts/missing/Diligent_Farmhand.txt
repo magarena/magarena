@@ -1,0 +1,12 @@
+name=Diligent Farmhand
+url=http://magiccards.info/query?q=%21Diligent+Farmhand
+image=http://mtgimage.com/card/diligent%20farmhand.jpg
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={G}
+pt=1/1
+ability={1}{G}, Sacrifice SN: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.;\
+        If SN is in a graveyard, effects from spells named Muscle Burst count it as a card named Muscle Burst.
+timing=main
+oracle={1}{G}, Sacrifice Diligent Farmhand: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library. If Diligent Farmhand is in a graveyard, effects from spells named Muscle Burst count it as a card named Muscle Burst.

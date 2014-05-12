@@ -1,0 +1,11 @@
+name=Mad Dog
+url=http://magiccards.info/query?q=%21Mad+Dog
+image=http://mtgimage.com/card/mad%20dog.jpg
+rarity=C
+type=Creature
+subtype=Hound
+cost={1}{R}
+pt=2/2
+ability=At the beginning of your end step, if SN didn't attack or come under your control this turn, sacrifice it.
+timing=main
+oracle=At the beginning of your end step, if Mad Dog didn't attack or come under your control this turn, sacrifice it.

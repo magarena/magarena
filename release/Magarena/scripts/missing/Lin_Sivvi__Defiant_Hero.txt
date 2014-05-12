@@ -1,0 +1,12 @@
+name=Lin Sivvi, Defiant Hero
+url=http://magiccards.info/query?q=%21Lin+Sivvi%2C+Defiant+Hero
+image=http://mtgimage.com/card/lin%20sivvi%2C%20defiant%20hero.jpg
+rarity=R
+type=Creature
+subtype=Human,Rebel
+cost={1}{W}{W}
+pt=1/3
+ability={X}, {T}: Search your library for a Rebel permanent card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.;\
+        {3}: Put target Rebel card from your graveyard on the bottom of your library.
+timing=main
+oracle={X}, {T}: Search your library for a Rebel permanent card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library. {3}: Put target Rebel card from your graveyard on the bottom of your library.

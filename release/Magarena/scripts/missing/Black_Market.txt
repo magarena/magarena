@@ -1,0 +1,10 @@
+name=Black Market
+url=http://magiccards.info/query?q=%21Black+Market
+image=http://mtgimage.com/card/black%20market.jpg
+rarity=R
+type=Enchantment
+cost={3}{B}{B}
+ability=Whenever a creature dies, put a charge counter on SN.;\
+        At the beginning of your precombat main phase, add {B} to your mana pool for each charge counter on SN.
+timing=main
+oracle=Whenever a creature dies, put a charge counter on Black Market. At the beginning of your precombat main phase, add {B} to your mana pool for each charge counter on Black Market.

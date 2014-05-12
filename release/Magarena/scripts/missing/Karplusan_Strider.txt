@@ -1,0 +1,11 @@
+name=Karplusan Strider
+url=http://magiccards.info/query?q=%21Karplusan+Strider
+image=http://mtgimage.com/card/karplusan%20strider.jpg
+rarity=U
+type=Creature
+subtype=Yeti
+cost={3}{G}
+pt=3/4
+ability=SN can't be the target of blue or black spells.
+timing=main
+oracle=Karplusan Strider can't be the target of blue or black spells.

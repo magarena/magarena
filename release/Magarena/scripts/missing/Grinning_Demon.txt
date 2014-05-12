@@ -1,0 +1,12 @@
+name=Grinning Demon
+url=http://magiccards.info/query?q=%21Grinning+Demon
+image=http://mtgimage.com/card/grinning%20demon.jpg
+rarity=R
+type=Creature
+subtype=Demon
+cost={2}{B}{B}
+pt=6/6
+ability=At the beginning of your upkeep, you lose 2 life.;\
+        Morph {2}{B}{B}
+timing=main
+oracle=At the beginning of your upkeep, you lose 2 life. Morph {2}{B}{B}

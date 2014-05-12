@@ -1,0 +1,11 @@
+name=Goblin Electromancer
+url=http://magiccards.info/query?q=%21Goblin+Electromancer
+image=http://mtgimage.com/card/goblin%20electromancer.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Wizard
+cost={U}{R}
+pt=2/2
+ability=Instant and sorcery spells you cast cost {1} less to cast.
+timing=main
+oracle=Instant and sorcery spells you cast cost {1} less to cast.

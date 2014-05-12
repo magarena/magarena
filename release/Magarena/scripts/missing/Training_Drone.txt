@@ -1,0 +1,11 @@
+name=Training Drone
+url=http://magiccards.info/query?q=%21Training+Drone
+image=http://mtgimage.com/card/training%20drone.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Drone
+cost={3}
+pt=4/4
+ability=SN can't attack or block unless it's equipped.
+timing=main
+oracle=Training Drone can't attack or block unless it's equipped.

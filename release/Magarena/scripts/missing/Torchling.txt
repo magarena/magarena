@@ -1,0 +1,15 @@
+name=Torchling
+url=http://magiccards.info/query?q=%21Torchling
+image=http://mtgimage.com/card/torchling.jpg
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={3}{R}{R}
+pt=3/3
+ability={R}: Untap SN.;\
+        {R}: Target creature blocks SN this turn if able.;\
+        {R}: Change the target of target spell that targets only SN.;\
+        {1}: SN gets +1/-1 until end of turn.;\
+        {1}: SN gets -1/+1 until end of turn.
+timing=main
+oracle={R}: Untap Torchling. {R}: Target creature blocks Torchling this turn if able. {R}: Change the target of target spell that targets only Torchling. {1}: Torchling gets +1/-1 until end of turn. {1}: Torchling gets -1/+1 until end of turn.

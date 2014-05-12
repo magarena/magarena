@@ -1,0 +1,11 @@
+name=Steelclad Serpent
+url=http://magiccards.info/query?q=%21Steelclad+Serpent
+image=http://mtgimage.com/card/steelclad%20serpent.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Serpent
+cost={5}{U}
+pt=4/5
+ability=SN can't attack unless you control another artifact.
+timing=main
+oracle=Steelclad Serpent can't attack unless you control another artifact.

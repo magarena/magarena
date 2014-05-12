@@ -1,0 +1,9 @@
+name=Fated Conflagration
+url=http://magiccards.info/query?q=%21Fated+Conflagration
+image=http://mtgimage.com/card/fated%20conflagration.jpg
+rarity=R
+type=Instant
+cost={1}{R}{R}{R}
+effect=SN deals 5 damage to target creature or planeswalker. If it's your turn, scry 2.
+timing=removal
+oracle=Fated Conflagration deals 5 damage to target creature or planeswalker. If it's your turn, scry 2.

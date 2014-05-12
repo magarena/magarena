@@ -1,0 +1,10 @@
+name=Kodama's Reach
+url=http://magiccards.info/query?q=%21Kodama%27s+Reach
+image=http://mtgimage.com/card/kodama%27s%20reach.jpg
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={2}{G}
+effect=Search your library for up to two basic land cards, reveal those cards, and put one onto the battlefield tapped and the other into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for up to two basic land cards, reveal those cards, and put one onto the battlefield tapped and the other into your hand. Then shuffle your library.

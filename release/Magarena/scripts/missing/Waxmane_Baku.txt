@@ -1,0 +1,12 @@
+name=Waxmane Baku
+url=http://magiccards.info/query?q=%21Waxmane+Baku
+image=http://mtgimage.com/card/waxmane%20baku.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{W}
+pt=2/2
+ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
+        {1}, Remove X ki counters from SN: Tap X target creatures.
+timing=main
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Waxmane Baku. {1}, Remove X ki counters from Waxmane Baku: Tap X target creatures.

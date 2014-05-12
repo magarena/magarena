@@ -1,0 +1,9 @@
+name=Final Fortune
+url=http://magiccards.info/query?q=%21Final+Fortune
+image=http://mtgimage.com/card/final%20fortune.jpg
+rarity=R
+type=Instant
+cost={R}{R}
+effect=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.
+timing=removal
+oracle=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.

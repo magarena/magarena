@@ -1,0 +1,9 @@
+name=Awakening
+url=http://magiccards.info/query?q=%21Awakening
+image=http://mtgimage.com/card/awakening.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}{G}
+ability=At the beginning of each upkeep, untap all creatures and lands.
+timing=main
+oracle=At the beginning of each upkeep, untap all creatures and lands.

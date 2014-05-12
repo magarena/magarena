@@ -1,0 +1,9 @@
+name=Piety Charm
+url=http://magiccards.info/query?q=%21Piety+Charm
+image=http://mtgimage.com/card/piety%20charm.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Choose one — Destroy target Aura attached to a creature; or target Soldier creature gets +2/+2 until end of turn; or creatures you control gain vigilance until end of turn.
+timing=removal
+oracle=Choose one — Destroy target Aura attached to a creature; or target Soldier creature gets +2/+2 until end of turn; or creatures you control gain vigilance until end of turn.

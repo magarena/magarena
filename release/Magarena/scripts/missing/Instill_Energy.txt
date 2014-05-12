@@ -1,0 +1,12 @@
+name=Instill Energy
+url=http://magiccards.info/query?q=%21Instill+Energy
+image=http://mtgimage.com/card/instill%20energy.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchant creature;\
+        Enchanted creature can attack as though it had haste.;\
+        {0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.
+timing=main
+oracle=Enchant creature. Enchanted creature can attack as though it had haste. {0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.

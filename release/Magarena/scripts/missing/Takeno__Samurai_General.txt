@@ -1,0 +1,12 @@
+name=Takeno, Samurai General
+url=http://magiccards.info/query?q=%21Takeno%2C+Samurai+General
+image=http://mtgimage.com/card/takeno%2C%20samurai%20general.jpg
+rarity=R
+type=Creature
+subtype=Human,Samurai
+cost={5}{W}
+pt=3/3
+ability=Bushido 2;\
+        Each other Samurai creature you control gets +1/+1 for each point of bushido it has.
+timing=main
+oracle=Bushido 2. Each other Samurai creature you control gets +1/+1 for each point of bushido it has.

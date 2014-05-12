@@ -1,0 +1,12 @@
+name=Warrior Angel
+url=http://magiccards.info/query?q=%21Warrior+Angel
+image=http://mtgimage.com/card/warrior%20angel.jpg
+rarity=R
+type=Creature
+subtype=Angel,Warrior
+cost={4}{W}{W}
+pt=3/4
+ability=Flying;\
+        Whenever SN deals damage, you gain that much life.
+timing=main
+oracle=Flying. Whenever Warrior Angel deals damage, you gain that much life.

@@ -1,0 +1,11 @@
+name=Nova Cleric
+url=http://magiccards.info/query?q=%21Nova+Cleric
+image=http://mtgimage.com/card/nova%20cleric.jpg
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/2
+ability={2}{W}, {T}, Sacrifice SN: Destroy all enchantments.
+timing=main
+oracle={2}{W}, {T}, Sacrifice Nova Cleric: Destroy all enchantments.

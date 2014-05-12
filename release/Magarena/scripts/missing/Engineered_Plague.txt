@@ -1,0 +1,10 @@
+name=Engineered Plague
+url=http://magiccards.info/query?q=%21Engineered+Plague
+image=http://mtgimage.com/card/engineered%20plague.jpg
+rarity=U
+type=Enchantment
+cost={2}{B}
+ability=As SN enters the battlefield, choose a creature type.;\
+        All creatures of the chosen type get -1/-1.
+timing=main
+oracle=As Engineered Plague enters the battlefield, choose a creature type. All creatures of the chosen type get -1/-1.

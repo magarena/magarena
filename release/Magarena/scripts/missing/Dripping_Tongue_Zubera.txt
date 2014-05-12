@@ -1,0 +1,11 @@
+name=Dripping-Tongue Zubera
+url=http://magiccards.info/query?q=%21Dripping-Tongue+Zubera
+image=http://mtgimage.com/card/dripping-tongue%20zubera.jpg
+rarity=C
+type=Creature
+subtype=Zubera,Spirit
+cost={1}{G}
+pt=1/2
+ability=When SN dies, put a 1/1 colorless Spirit creature token onto the battlefield for each Zubera that died this turn.
+timing=main
+oracle=When Dripping-Tongue Zubera dies, put a 1/1 colorless Spirit creature token onto the battlefield for each Zubera that died this turn.

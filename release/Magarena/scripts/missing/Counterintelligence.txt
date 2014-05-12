@@ -1,0 +1,9 @@
+name=Counterintelligence
+url=http://magiccards.info/query?q=%21Counterintelligence
+image=http://mtgimage.com/card/counterintelligence.jpg
+rarity=U
+type=Sorcery
+cost={2}{U}{U}
+effect=Return one or two target creatures to their owners' hands.
+timing=main
+oracle=Return one or two target creatures to their owners' hands.

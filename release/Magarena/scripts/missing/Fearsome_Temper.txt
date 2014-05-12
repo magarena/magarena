@@ -1,0 +1,11 @@
+name=Fearsome Temper
+url=http://magiccards.info/query?q=%21Fearsome+Temper
+image=http://mtgimage.com/card/fearsome%20temper.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has "{2}{R}: Target creature can't block this creature this turn."
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+2 and has "{2}{R}: Target creature can't block this creature this turn."

@@ -1,0 +1,9 @@
+name=Ruthless Invasion
+url=http://magiccards.info/query?q=%21Ruthless+Invasion
+image=http://mtgimage.com/card/ruthless%20invasion.jpg
+rarity=C
+type=Sorcery
+cost={3}{P/R}
+effect=Nonartifact creatures can't block this turn.
+timing=main
+oracle=Nonartifact creatures can't block this turn.

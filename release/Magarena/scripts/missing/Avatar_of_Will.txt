@@ -1,0 +1,12 @@
+name=Avatar of Will
+url=http://magiccards.info/query?q=%21Avatar+of+Will
+image=http://mtgimage.com/card/avatar%20of%20will.jpg
+rarity=R
+type=Creature
+subtype=Avatar
+cost={6}{U}{U}
+pt=5/6
+ability=If an opponent has no cards in hand, SN costs {6} less to cast.;\
+        Flying
+timing=main
+oracle=If an opponent has no cards in hand, Avatar of Will costs {6} less to cast. Flying

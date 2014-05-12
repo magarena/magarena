@@ -1,0 +1,12 @@
+name=Renegade Warlord
+url=http://magiccards.info/query?q=%21Renegade+Warlord
+image=http://mtgimage.com/card/renegade%20warlord.jpg
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={4}{R}
+pt=3/3
+ability=First strike;\
+        Whenever SN attacks, each other attacking creature gets +1/+0 until end of turn.
+timing=main
+oracle=First strike. Whenever Renegade Warlord attacks, each other attacking creature gets +1/+0 until end of turn.

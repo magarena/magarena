@@ -1,0 +1,9 @@
+name=Illuminated Folio
+url=http://magiccards.info/query?q=%21Illuminated+Folio
+image=http://mtgimage.com/card/illuminated%20folio.jpg
+rarity=U
+type=Artifact
+cost={5}
+ability={1}, {T}, Reveal two cards from your hand that share a color: Draw a card.
+timing=main
+oracle={1}, {T}, Reveal two cards from your hand that share a color: Draw a card.

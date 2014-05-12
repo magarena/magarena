@@ -1,0 +1,10 @@
+name=Footsteps of the Goryo
+url=http://magiccards.info/query?q=%21Footsteps+of+the+Goryo
+image=http://mtgimage.com/card/footsteps%20of%20the%20goryo.jpg
+rarity=U
+type=Sorcery
+subtype=Arcane
+cost={2}{B}
+effect=Return target creature card from your graveyard to the battlefield. Sacrifice that creature at the beginning of the next end step.
+timing=main
+oracle=Return target creature card from your graveyard to the battlefield. Sacrifice that creature at the beginning of the next end step.

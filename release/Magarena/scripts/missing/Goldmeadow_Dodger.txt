@@ -1,0 +1,11 @@
+name=Goldmeadow Dodger
+url=http://magiccards.info/query?q=%21Goldmeadow+Dodger
+image=http://mtgimage.com/card/goldmeadow%20dodger.jpg
+rarity=C
+type=Creature
+subtype=Kithkin,Rogue
+cost={W}
+pt=1/1
+ability=SN can't be blocked by creatures with power 4 or greater.
+timing=main
+oracle=Goldmeadow Dodger can't be blocked by creatures with power 4 or greater.

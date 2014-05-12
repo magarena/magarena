@@ -1,0 +1,11 @@
+name=Kenzo the Hardhearted
+url=http://magiccards.info/query?q=%21Kenzo+the+Hardhearted
+image=http://mtgimage.com/card/kenzo%20the%20hardhearted.jpg
+rarity=U
+type=Creature
+subtype=Human,Samurai
+cost={W}
+pt=3/4
+ability=Double strike; bushido 2
+timing=main
+oracle=Double strike; bushido 2

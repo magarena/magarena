@@ -1,0 +1,13 @@
+name=Nightshade Assassin
+url=http://magiccards.info/query?q=%21Nightshade+Assassin
+image=http://mtgimage.com/card/nightshade%20assassin.jpg
+rarity=U
+type=Creature
+subtype=Human,Assassin
+cost={2}{B}{B}
+pt=2/1
+ability=First strike;\
+        When SN enters the battlefield, you may reveal X black cards in your hand. If you do, target creature gets -X/-X until end of turn.;\
+        Madness {1}{B}
+timing=main
+oracle=First strike. When Nightshade Assassin enters the battlefield, you may reveal X black cards in your hand. If you do, target creature gets -X/-X until end of turn. Madness {1}{B}

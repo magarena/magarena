@@ -1,0 +1,9 @@
+name=Morality Shift
+url=http://magiccards.info/query?q=%21Morality+Shift
+image=http://mtgimage.com/card/morality%20shift.jpg
+rarity=R
+type=Sorcery
+cost={5}{B}{B}
+effect=Exchange your graveyard and library. Then shuffle your library.
+timing=main
+oracle=Exchange your graveyard and library. Then shuffle your library.

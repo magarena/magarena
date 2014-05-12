@@ -1,0 +1,12 @@
+name=Sky Swallower
+url=http://magiccards.info/query?q=%21Sky+Swallower
+image=http://mtgimage.com/card/sky%20swallower.jpg
+rarity=R
+type=Creature
+subtype=Leviathan
+cost={3}{U}{U}
+pt=8/8
+ability=Flying;\
+        When SN enters the battlefield, target opponent gains control of all other permanents you control.
+timing=main
+oracle=Flying. When Sky Swallower enters the battlefield, target opponent gains control of all other permanents you control.

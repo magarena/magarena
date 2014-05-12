@@ -1,0 +1,11 @@
+name=Inviolability
+url=http://magiccards.info/query?q=%21Inviolability
+image=http://mtgimage.com/card/inviolability.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        Prevent all damage that would be dealt to enchanted creature.
+timing=main
+oracle=Enchant creature. Prevent all damage that would be dealt to enchanted creature.

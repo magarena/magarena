@@ -1,0 +1,9 @@
+name=Disorder
+url=http://magiccards.info/query?q=%21Disorder
+image=http://mtgimage.com/card/disorder.jpg
+rarity=U
+type=Sorcery
+cost={1}{R}
+effect=SN deals 2 damage to each white creature and each player who controls a white creature.
+timing=main
+oracle=Disorder deals 2 damage to each white creature and each player who controls a white creature.

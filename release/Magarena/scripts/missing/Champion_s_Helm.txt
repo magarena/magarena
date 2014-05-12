@@ -1,0 +1,12 @@
+name=Champion's Helm
+url=http://magiccards.info/query?q=%21Champion%27s+Helm
+image=http://mtgimage.com/card/champion%27s%20helm.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature gets +2/+2.;\
+        As long as equipped creature is legendary, it has hexproof.;\
+        Equip {1}
+timing=main
+oracle=Equipped creature gets +2/+2. As long as equipped creature is legendary, it has hexproof.. Equip {1}

@@ -1,0 +1,11 @@
+name=Noble Elephant
+url=http://magiccards.info/query?q=%21Noble+Elephant
+image=http://mtgimage.com/card/noble%20elephant.jpg
+rarity=C
+type=Creature
+subtype=Elephant
+cost={3}{W}
+pt=2/2
+ability=Trample; banding
+timing=main
+oracle=Trample; banding

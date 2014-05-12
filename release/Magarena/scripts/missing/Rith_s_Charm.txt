@@ -1,0 +1,9 @@
+name=Rith's Charm
+url=http://magiccards.info/query?q=%21Rith%27s+Charm
+image=http://mtgimage.com/card/rith%27s%20charm.jpg
+rarity=U
+type=Instant
+cost={R}{G}{W}
+effect=Choose one — Destroy target nonbasic land; or put three 1/1 green Saproling creature tokens onto the battlefield; or prevent all damage a source of your choice would deal this turn.
+timing=removal
+oracle=Choose one — Destroy target nonbasic land; or put three 1/1 green Saproling creature tokens onto the battlefield; or prevent all damage a source of your choice would deal this turn.

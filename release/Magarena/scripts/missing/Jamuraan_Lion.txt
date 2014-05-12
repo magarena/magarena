@@ -1,0 +1,11 @@
+name=Jamuraan Lion
+url=http://magiccards.info/query?q=%21Jamuraan+Lion
+image=http://mtgimage.com/card/jamuraan%20lion.jpg
+rarity=C
+type=Creature
+subtype=Cat
+cost={2}{W}
+pt=3/1
+ability={W}, {T}: Target creature can't block this turn.
+timing=main
+oracle={W}, {T}: Target creature can't block this turn.

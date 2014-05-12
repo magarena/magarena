@@ -1,0 +1,12 @@
+name=Sphinx Ambassador
+url=http://magiccards.info/query?q=%21Sphinx+Ambassador
+image=http://mtgimage.com/card/sphinx%20ambassador.jpg
+rarity=M
+type=Creature
+subtype=Sphinx
+cost={5}{U}{U}
+pt=5/5
+ability=Flying;\
+        Whenever SN deals combat damage to a player, search that player's library for a card, then that player names a card. If you searched for a creature card that isn't the named card, you may put it onto the battlefield under your control. Then that player shuffles his or her library.
+timing=main
+oracle=Flying. Whenever Sphinx Ambassador deals combat damage to a player, search that player's library for a card, then that player names a card. If you searched for a creature card that isn't the named card, you may put it onto the battlefield under your control. Then that player shuffles his or her library.

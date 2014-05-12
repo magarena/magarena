@@ -1,0 +1,9 @@
+name=Silhouette
+url=http://magiccards.info/query?q=%21Silhouette
+image=http://mtgimage.com/card/silhouette.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Prevent all damage that would be dealt to target creature this turn by spells or abilities that target it.
+timing=removal
+oracle=Prevent all damage that would be dealt to target creature this turn by spells or abilities that target it.

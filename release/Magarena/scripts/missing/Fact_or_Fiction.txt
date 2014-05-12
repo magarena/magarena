@@ -1,0 +1,9 @@
+name=Fact or Fiction
+url=http://magiccards.info/query?q=%21Fact+or+Fiction
+image=http://mtgimage.com/card/fact%20or%20fiction.jpg
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.
+timing=removal
+oracle=Reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.

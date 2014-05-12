@@ -1,0 +1,12 @@
+name=Wiitigo
+url=http://magiccards.info/query?q=%21Wiitigo
+image=http://mtgimage.com/card/wiitigo.jpg
+rarity=R
+type=Creature
+subtype=Yeti
+cost={3}{G}{G}{G}
+pt=0/0
+ability=SN enters the battlefield with six +1/+1 counters on it.;\
+        At the beginning of your upkeep, put a +1/+1 counter on SN if it has blocked or been blocked since your last upkeep. Otherwise, remove a +1/+1 counter from it.
+timing=main
+oracle=Wiitigo enters the battlefield with six +1/+1 counters on it. At the beginning of your upkeep, put a +1/+1 counter on Wiitigo if it has blocked or been blocked since your last upkeep. Otherwise, remove a +1/+1 counter from it.

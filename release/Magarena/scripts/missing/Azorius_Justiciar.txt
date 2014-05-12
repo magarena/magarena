@@ -1,0 +1,11 @@
+name=Azorius Justiciar
+url=http://magiccards.info/query?q=%21Azorius+Justiciar
+image=http://mtgimage.com/card/azorius%20justiciar.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}{W}
+pt=2/2
+ability=When SN enters the battlefield, detain up to two target creatures your opponents control.
+timing=main
+oracle=When Azorius Justiciar enters the battlefield, detain up to two target creatures your opponents control.

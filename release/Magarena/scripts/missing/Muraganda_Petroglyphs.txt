@@ -1,0 +1,9 @@
+name=Muraganda Petroglyphs
+url=http://magiccards.info/query?q=%21Muraganda+Petroglyphs
+image=http://mtgimage.com/card/muraganda%20petroglyphs.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=Creatures with no abilities get +2/+2.
+timing=main
+oracle=Creatures with no abilities get +2/+2.

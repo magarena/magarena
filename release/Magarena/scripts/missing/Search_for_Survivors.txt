@@ -1,0 +1,9 @@
+name=Search for Survivors
+url=http://magiccards.info/query?q=%21Search+for+Survivors
+image=http://mtgimage.com/card/search%20for%20survivors.jpg
+rarity=R
+type=Sorcery
+cost={2}{R}
+effect=Reorder your graveyard at random. An opponent chooses a card at random in your graveyard. If it's a creature card, put it onto the battlefield. Otherwise, exile it.
+timing=main
+oracle=Reorder your graveyard at random. An opponent chooses a card at random in your graveyard. If it's a creature card, put it onto the battlefield. Otherwise, exile it.

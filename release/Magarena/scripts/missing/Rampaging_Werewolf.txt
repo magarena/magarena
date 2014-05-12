@@ -1,0 +1,10 @@
+name=Rampaging Werewolf
+url=http://magiccards.info/query?q=%21Rampaging+Werewolf
+image=http://mtgimage.com/card/rampaging%20werewolf.jpg
+rarity=C
+type=Creature
+subtype=Werewolf
+pt=6/4
+ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Rampaging Werewolf.

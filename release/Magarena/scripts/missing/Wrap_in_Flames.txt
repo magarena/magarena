@@ -1,0 +1,9 @@
+name=Wrap in Flames
+url=http://magiccards.info/query?q=%21Wrap+in+Flames
+image=http://mtgimage.com/card/wrap%20in%20flames.jpg
+rarity=C
+type=Sorcery
+cost={3}{R}
+effect=SN deals 1 damage to each of up to three target creatures. Those creatures can't block this turn.
+timing=main
+oracle=Wrap in Flames deals 1 damage to each of up to three target creatures. Those creatures can't block this turn.

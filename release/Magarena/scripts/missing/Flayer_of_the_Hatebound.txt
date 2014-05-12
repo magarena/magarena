@@ -1,0 +1,12 @@
+name=Flayer of the Hatebound
+url=http://magiccards.info/query?q=%21Flayer+of+the+Hatebound
+image=http://mtgimage.com/card/flayer%20of%20the%20hatebound.jpg
+rarity=R
+type=Creature
+subtype=Devil
+cost={5}{R}
+pt=4/2
+ability=Undying;\
+        Whenever SN or another creature enters the battlefield from your graveyard, that creature deals damage equal to its power to target creature or player.
+timing=main
+oracle=Undying. Whenever Flayer of the Hatebound or another creature enters the battlefield from your graveyard, that creature deals damage equal to its power to target creature or player.

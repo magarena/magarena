@@ -1,0 +1,11 @@
+name=Tangle Golem
+url=http://magiccards.info/query?q=%21Tangle+Golem
+image=http://mtgimage.com/card/tangle%20golem.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={7}
+pt=5/4
+ability=Affinity for Forests
+timing=main
+oracle=Affinity for Forests

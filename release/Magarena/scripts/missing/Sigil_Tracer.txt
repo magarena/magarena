@@ -1,0 +1,11 @@
+name=Sigil Tracer
+url=http://magiccards.info/query?q=%21Sigil+Tracer
+image=http://mtgimage.com/card/sigil%20tracer.jpg
+rarity=R
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}{U}
+pt=2/2
+ability={1}{U}, Tap two untapped Wizards you control: Copy target instant or sorcery spell. You may choose new targets for the copy.
+timing=main
+oracle={1}{U}, Tap two untapped Wizards you control: Copy target instant or sorcery spell. You may choose new targets for the copy.

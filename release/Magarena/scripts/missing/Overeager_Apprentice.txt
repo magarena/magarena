@@ -1,0 +1,11 @@
+name=Overeager Apprentice
+url=http://magiccards.info/query?q=%21Overeager+Apprentice
+image=http://mtgimage.com/card/overeager%20apprentice.jpg
+rarity=C
+type=Creature
+subtype=Human,Minion
+cost={2}{B}
+pt=1/2
+ability=Discard a card, Sacrifice SN: Add {B}{B}{B} to your mana pool.
+timing=main
+oracle=Discard a card, Sacrifice Overeager Apprentice: Add {B}{B}{B} to your mana pool.

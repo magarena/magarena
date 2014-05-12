@@ -1,0 +1,9 @@
+name=Bubbling Muck
+url=http://magiccards.info/query?q=%21Bubbling+Muck
+image=http://mtgimage.com/card/bubbling%20muck.jpg
+rarity=C
+type=Sorcery
+cost={B}
+effect=Until end of turn, whenever a player taps a Swamp for mana, that player adds {B} to his or her mana pool.
+timing=main
+oracle=Until end of turn, whenever a player taps a Swamp for mana, that player adds {B} to his or her mana pool.

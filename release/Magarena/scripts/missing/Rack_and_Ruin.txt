@@ -1,0 +1,9 @@
+name=Rack and Ruin
+url=http://magiccards.info/query?q=%21Rack+and+Ruin
+image=http://mtgimage.com/card/rack%20and%20ruin.jpg
+rarity=U
+type=Instant
+cost={2}{R}
+effect=Destroy two target artifacts.
+timing=removal
+oracle=Destroy two target artifacts.

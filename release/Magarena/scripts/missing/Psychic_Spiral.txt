@@ -1,0 +1,9 @@
+name=Psychic Spiral
+url=http://magiccards.info/query?q=%21Psychic+Spiral
+image=http://mtgimage.com/card/psychic%20spiral.jpg
+rarity=U
+type=Instant
+cost={4}{U}
+effect=Shuffle all cards from your graveyard into your library. Target player puts that many cards from the top of his or her library into his or her graveyard.
+timing=removal
+oracle=Shuffle all cards from your graveyard into your library. Target player puts that many cards from the top of his or her library into his or her graveyard.

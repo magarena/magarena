@@ -1,0 +1,9 @@
+name=General's Regalia
+url=http://magiccards.info/query?q=%21General%27s+Regalia
+image=http://mtgimage.com/card/general%27s%20regalia.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability={3}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to target creature you control instead.
+timing=main
+oracle={3}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to target creature you control instead.

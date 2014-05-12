@@ -1,0 +1,12 @@
+name=Hisoka's Guard
+url=http://magiccards.info/query?q=%21Hisoka%27s+Guard
+image=http://mtgimage.com/card/hisoka%27s%20guard.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+ability=You may choose not to untap SN during your untap step.;\
+        {1}{U}, {T}: Target creature you control other than SN has shroud for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Hisoka's Guard during your untap step. {1}{U}, {T}: Target creature you control other than Hisoka's Guard has shroud for as long as Hisoka's Guard remains tapped.

@@ -1,0 +1,9 @@
+name=Ribbons of Night
+url=http://magiccards.info/query?q=%21Ribbons+of+Night
+image=http://mtgimage.com/card/ribbons%20of%20night.jpg
+rarity=U
+type=Sorcery
+cost={4}{B}
+effect=SN deals 4 damage to target creature and you gain 4 life. If {U} was spent to cast SN, draw a card.
+timing=main
+oracle=Ribbons of Night deals 4 damage to target creature and you gain 4 life. If {U} was spent to cast Ribbons of Night, draw a card.

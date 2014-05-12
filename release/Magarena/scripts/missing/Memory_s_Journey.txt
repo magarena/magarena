@@ -1,0 +1,10 @@
+name=Memory's Journey
+url=http://magiccards.info/query?q=%21Memory%27s+Journey
+image=http://mtgimage.com/card/memory%27s%20journey.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Target player shuffles up to three target cards from his or her graveyard into his or her library.;\
+        Flashback {G}
+timing=removal
+oracle=Target player shuffles up to three target cards from his or her graveyard into his or her library. Flashback {G}

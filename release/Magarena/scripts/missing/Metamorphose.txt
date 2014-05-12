@@ -1,0 +1,9 @@
+name=Metamorphose
+url=http://magiccards.info/query?q=%21Metamorphose
+image=http://mtgimage.com/card/metamorphose.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Put target permanent an opponent controls on top of its owner's library. That opponent may put an artifact, creature, enchantment, or land card from his or her hand onto the battlefield.
+timing=removal
+oracle=Put target permanent an opponent controls on top of its owner's library. That opponent may put an artifact, creature, enchantment, or land card from his or her hand onto the battlefield.

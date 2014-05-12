@@ -1,0 +1,11 @@
+name=Alpha Authority
+url=http://magiccards.info/query?q=%21Alpha+Authority
+image=http://mtgimage.com/card/alpha%20authority.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+ability=Enchant creature;\
+        Enchanted creature has hexproof and can't be blocked by more than one creature.
+timing=main
+oracle=Enchant creature. Enchanted creature has hexproof and can't be blocked by more than one creature.

@@ -1,0 +1,9 @@
+name=Brace for Impact
+url=http://magiccards.info/query?q=%21Brace+for+Impact
+image=http://mtgimage.com/card/brace%20for%20impact.jpg
+rarity=U
+type=Instant
+cost={4}{W}
+effect=Prevent all damage that would be dealt to target multicolored creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.
+timing=removal
+oracle=Prevent all damage that would be dealt to target multicolored creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.

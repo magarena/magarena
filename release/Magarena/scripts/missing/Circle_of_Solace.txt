@@ -1,0 +1,10 @@
+name=Circle of Solace
+url=http://magiccards.info/query?q=%21Circle+of+Solace
+image=http://mtgimage.com/card/circle%20of%20solace.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}
+ability=As SN enters the battlefield, choose a creature type.;\
+        {1}{W}: The next time a creature of the chosen type would deal damage to you this turn, prevent that damage.
+timing=main
+oracle=As Circle of Solace enters the battlefield, choose a creature type. {1}{W}: The next time a creature of the chosen type would deal damage to you this turn, prevent that damage.

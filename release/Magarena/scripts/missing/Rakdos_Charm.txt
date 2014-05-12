@@ -1,0 +1,9 @@
+name=Rakdos Charm
+url=http://magiccards.info/query?q=%21Rakdos+Charm
+image=http://mtgimage.com/card/rakdos%20charm.jpg
+rarity=U
+type=Instant
+cost={B}{R}
+effect=Choose one — Exile all cards from target player's graveyard; or destroy target artifact; or each creature deals 1 damage to its controller.
+timing=removal
+oracle=Choose one — Exile all cards from target player's graveyard; or destroy target artifact; or each creature deals 1 damage to its controller.

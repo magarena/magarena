@@ -1,0 +1,11 @@
+name=Predatory Nightstalker
+url=http://magiccards.info/query?q=%21Predatory+Nightstalker
+image=http://mtgimage.com/card/predatory%20nightstalker.jpg
+rarity=U
+type=Creature
+subtype=Nightstalker
+cost={3}{B}{B}
+pt=3/2
+ability=When SN enters the battlefield, you may have target opponent sacrifice a creature.
+timing=main
+oracle=When Predatory Nightstalker enters the battlefield, you may have target opponent sacrifice a creature.

@@ -1,0 +1,9 @@
+name=Hunt the Weak
+url=http://magiccards.info/query?q=%21Hunt+the+Weak
+image=http://mtgimage.com/card/hunt%20the%20weak.jpg
+rarity=C
+type=Sorcery
+cost={3}{G}
+effect=Put a +1/+1 counter on target creature you control. Then that creature fights target creature you don't control.
+timing=main
+oracle=Put a +1/+1 counter on target creature you control. Then that creature fights target creature you don't control.

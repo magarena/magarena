@@ -1,0 +1,12 @@
+name=Ur-Drago
+url=http://magiccards.info/query?q=%21Ur-Drago
+image=http://mtgimage.com/card/ur-drago.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{U}{U}{B}{B}
+pt=4/4
+ability=First strike;\
+        Creatures with swampwalk can be blocked as though they didn't have swampwalk.
+timing=main
+oracle=First strike. Creatures with swampwalk can be blocked as though they didn't have swampwalk.

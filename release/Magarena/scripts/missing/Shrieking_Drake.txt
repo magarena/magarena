@@ -1,0 +1,12 @@
+name=Shrieking Drake
+url=http://magiccards.info/query?q=%21Shrieking+Drake
+image=http://mtgimage.com/card/shrieking%20drake.jpg
+rarity=C
+type=Creature
+subtype=Drake
+cost={U}
+pt=1/1
+ability=Flying;\
+        When SN enters the battlefield, return a creature you control to its owner's hand.
+timing=main
+oracle=Flying. When Shrieking Drake enters the battlefield, return a creature you control to its owner's hand.

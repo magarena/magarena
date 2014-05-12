@@ -1,0 +1,11 @@
+name=Mangara of Corondor
+url=http://magiccards.info/query?q=%21Mangara+of+Corondor
+image=http://mtgimage.com/card/mangara%20of%20corondor.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{W}{W}
+pt=1/1
+ability={T}: Exile SN and target permanent.
+timing=main
+oracle={T}: Exile Mangara of Corondor and target permanent.

@@ -1,0 +1,11 @@
+name=Soul Kiss
+url=http://magiccards.info/query?q=%21Soul+Kiss
+image=http://mtgimage.com/card/soul%20kiss.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchant creature;\
+        {B}, Pay 1 life: Enchanted creature gets +2/+2 until end of turn. Activate this ability no more than three times each turn.
+timing=main
+oracle=Enchant creature. {B}, Pay 1 life: Enchanted creature gets +2/+2 until end of turn. Activate this ability no more than three times each turn.

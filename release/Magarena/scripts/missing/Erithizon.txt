@@ -1,0 +1,11 @@
+name=Erithizon
+url=http://magiccards.info/query?q=%21Erithizon
+image=http://mtgimage.com/card/erithizon.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={2}{G}{G}
+pt=4/4
+ability=Whenever SN attacks, put a +1/+1 counter on target creature of defending player's choice.
+timing=main
+oracle=Whenever Erithizon attacks, put a +1/+1 counter on target creature of defending player's choice.

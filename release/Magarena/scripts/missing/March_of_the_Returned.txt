@@ -1,0 +1,9 @@
+name=March of the Returned
+url=http://magiccards.info/query?q=%21March+of+the+Returned
+image=http://mtgimage.com/card/march%20of%20the%20returned.jpg
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Return up to two target creature cards from your graveyard to your hand.
+timing=main
+oracle=Return up to two target creature cards from your graveyard to your hand.

@@ -1,0 +1,9 @@
+name=Storm Herd
+url=http://magiccards.info/query?q=%21Storm+Herd
+image=http://mtgimage.com/card/storm%20herd.jpg
+rarity=R
+type=Sorcery
+cost={8}{W}{W}
+effect=Put X 1/1 white Pegasus creature tokens with flying onto the battlefield, where X is your life total.
+timing=main
+oracle=Put X 1/1 white Pegasus creature tokens with flying onto the battlefield, where X is your life total.

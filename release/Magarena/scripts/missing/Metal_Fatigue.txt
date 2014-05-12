@@ -1,0 +1,9 @@
+name=Metal Fatigue
+url=http://magiccards.info/query?q=%21Metal+Fatigue
+image=http://mtgimage.com/card/metal%20fatigue.jpg
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Tap all artifacts.
+timing=removal
+oracle=Tap all artifacts.

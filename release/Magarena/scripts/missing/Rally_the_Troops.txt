@@ -1,0 +1,10 @@
+name=Rally the Troops
+url=http://magiccards.info/query?q=%21Rally+the+Troops
+image=http://mtgimage.com/card/rally%20the%20troops.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
+        Untap all creatures you control.
+timing=removal
+oracle=Cast Rally the Troops only during the declare attackers step and only if you've been attacked this step. Untap all creatures you control.

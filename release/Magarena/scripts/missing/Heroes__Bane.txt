@@ -1,0 +1,12 @@
+name=Heroes' Bane
+url=http://magiccards.info/query?q=%21Heroes%27+Bane
+image=http://mtgimage.com/card/heroes%27%20bane.jpg
+rarity=R
+type=Creature
+subtype=Hydra
+cost={3}{G}{G}
+pt=0/0
+ability=SN enters the battlefield with four +1/+1 counters on it.;\
+        {2}{G}{G}: Put X +1/+1 counters on SN, where X is its power.
+timing=main
+oracle=Heroes' Bane enters the battlefield with four +1/+1 counters on it. {2}{G}{G}: Put X +1/+1 counters on Heroes' Bane, where X is its power.

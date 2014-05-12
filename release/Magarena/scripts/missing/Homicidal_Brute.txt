@@ -1,0 +1,10 @@
+name=Homicidal Brute
+url=http://magiccards.info/query?q=%21Homicidal+Brute
+image=http://mtgimage.com/card/homicidal%20brute.jpg
+rarity=U
+type=Creature
+subtype=Human,Mutant
+pt=5/1
+ability=At the beginning of your end step, if SN didn't attack this turn, tap SN, then transform it.
+timing=main
+oracle=At the beginning of your end step, if Homicidal Brute didn't attack this turn, tap Homicidal Brute, then transform it.

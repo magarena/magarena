@@ -1,0 +1,11 @@
+name=Nim Abomination
+url=http://magiccards.info/query?q=%21Nim+Abomination
+image=http://mtgimage.com/card/nim%20abomination.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=3/4
+ability=At the beginning of your end step, if SN is untapped, you lose 3 life.
+timing=main
+oracle=At the beginning of your end step, if Nim Abomination is untapped, you lose 3 life.

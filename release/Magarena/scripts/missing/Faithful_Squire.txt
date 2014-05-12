@@ -1,0 +1,12 @@
+name=Faithful Squire
+url=http://magiccards.info/query?q=%21Faithful+Squire
+image=http://mtgimage.com/card/faithful%20squire.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}{W}
+pt=2/2
+ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
+        At the beginning of the end step, if there are two or more ki counters on SN, you may flip it.
+timing=main
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Faithful Squire. At the beginning of the end step, if there are two or more ki counters on Faithful Squire, you may flip it.

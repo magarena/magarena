@@ -1,0 +1,12 @@
+name=Skyreach Manta
+url=http://magiccards.info/query?q=%21Skyreach+Manta
+image=http://mtgimage.com/card/skyreach%20manta.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Fish
+cost={5}
+pt=0/0
+ability=Sunburst;\
+        Flying
+timing=main
+oracle=Sunburst. Flying

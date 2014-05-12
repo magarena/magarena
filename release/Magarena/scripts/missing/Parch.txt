@@ -1,0 +1,9 @@
+name=Parch
+url=http://magiccards.info/query?q=%21Parch
+image=http://mtgimage.com/card/parch.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Choose one — SN deals 2 damage to target creature or player; or SN deals 4 damage to target blue creature.
+timing=removal
+oracle=Choose one — Parch deals 2 damage to target creature or player; or Parch deals 4 damage to target blue creature.

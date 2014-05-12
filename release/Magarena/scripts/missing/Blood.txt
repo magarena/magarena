@@ -1,0 +1,10 @@
+name=Blood
+url=http://magiccards.info/query?q=%21Blood
+image=http://mtgimage.com/card/fleshblood.jpg
+rarity=R
+type=Sorcery
+cost={R}{G}
+effect=Target creature you control deals damage equal to its power to target creature or player.;\
+        Fuse
+timing=main
+oracle=Target creature you control deals damage equal to its power to target creature or player. Fuse

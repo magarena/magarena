@@ -1,0 +1,9 @@
+name=Cleansing
+url=http://magiccards.info/query?q=%21Cleansing
+image=http://mtgimage.com/card/cleansing.jpg
+rarity=R
+type=Sorcery
+cost={W}{W}{W}
+effect=For each land, destroy that land unless any player pays 1 life.
+timing=main
+oracle=For each land, destroy that land unless any player pays 1 life.

@@ -1,0 +1,12 @@
+name=Nurturing Licid
+url=http://magiccards.info/query?q=%21Nurturing+Licid
+image=http://mtgimage.com/card/nurturing%20licid.jpg
+rarity=U
+type=Creature
+subtype=Licid
+cost={1}{G}
+pt=1/1
+ability={G}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {G} to end this effect.;\
+        {G}: Regenerate enchanted creature.
+timing=main
+oracle={G}, {T}: Nurturing Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {G} to end this effect. {G}: Regenerate enchanted creature.

@@ -1,0 +1,12 @@
+name=Preacher
+url=http://magiccards.info/query?q=%21Preacher
+image=http://mtgimage.com/card/preacher.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}{W}
+pt=1/1
+ability=You may choose not to untap SN during your untap step.;\
+        {T}: For as long as SN remains tapped, gain control of target creature of an opponent's choice he or she controls.
+timing=main
+oracle=You may choose not to untap Preacher during your untap step. {T}: For as long as Preacher remains tapped, gain control of target creature of an opponent's choice he or she controls.

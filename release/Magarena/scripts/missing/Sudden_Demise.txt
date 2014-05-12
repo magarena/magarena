@@ -1,0 +1,9 @@
+name=Sudden Demise
+url=http://magiccards.info/query?q=%21Sudden+Demise
+image=http://mtgimage.com/card/sudden%20demise.jpg
+rarity=R
+type=Sorcery
+cost={X}{R}
+effect=Choose a color. SN deals X damage to each creature of the chosen color.
+timing=main
+oracle=Choose a color. Sudden Demise deals X damage to each creature of the chosen color.

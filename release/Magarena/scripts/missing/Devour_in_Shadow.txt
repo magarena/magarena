@@ -1,0 +1,9 @@
+name=Devour in Shadow
+url=http://magiccards.info/query?q=%21Devour+in+Shadow
+image=http://mtgimage.com/card/devour%20in%20shadow.jpg
+rarity=U
+type=Instant
+cost={B}{B}
+effect=Destroy target creature. It can't be regenerated. You lose life equal to that creature's toughness.
+timing=removal
+oracle=Destroy target creature. It can't be regenerated. You lose life equal to that creature's toughness.

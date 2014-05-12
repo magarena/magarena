@@ -1,0 +1,10 @@
+name=Howlpack of Estwald
+url=http://magiccards.info/query?q=%21Howlpack+of+Estwald
+image=http://mtgimage.com/card/howlpack%20of%20estwald.jpg
+rarity=C
+type=Creature
+subtype=Werewolf
+pt=4/6
+ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Howlpack of Estwald.

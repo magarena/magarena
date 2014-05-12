@@ -1,0 +1,11 @@
+name=Hunting Cheetah
+url=http://magiccards.info/query?q=%21Hunting+Cheetah
+image=http://mtgimage.com/card/hunting%20cheetah.jpg
+rarity=U
+type=Creature
+subtype=Cat
+cost={2}{G}
+pt=2/3
+ability=Whenever SN deals damage to an opponent, you may search your library for a Forest card, reveal that card, put it into your hand, then shuffle your library.
+timing=main
+oracle=Whenever Hunting Cheetah deals damage to an opponent, you may search your library for a Forest card, reveal that card, put it into your hand, then shuffle your library.

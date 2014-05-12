@@ -1,0 +1,12 @@
+name=Guiding Spirit
+url=http://magiccards.info/query?q=%21Guiding+Spirit
+image=http://mtgimage.com/card/guiding%20spirit.jpg
+rarity=R
+type=Creature
+subtype=Angel,Spirit
+cost={1}{W}{U}
+pt=1/2
+ability=Flying;\
+        {T}: If the top card of target player's graveyard is a creature card, put that card on top of that player's library.
+timing=main
+oracle=Flying. {T}: If the top card of target player's graveyard is a creature card, put that card on top of that player's library.

@@ -1,0 +1,12 @@
+name=Rakdos Augermage
+url=http://magiccards.info/query?q=%21Rakdos+Augermage
+image=http://mtgimage.com/card/rakdos%20augermage.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={B}{B}{R}
+pt=3/2
+ability=First strike;\
+        {T}: Reveal your hand and discard a card of target opponent's choice. Then that player reveals his or her hand and discards a card of your choice. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=First strike. {T}: Reveal your hand and discard a card of target opponent's choice. Then that player reveals his or her hand and discards a card of your choice. Activate this ability only any time you could cast a sorcery.

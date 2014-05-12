@@ -1,0 +1,9 @@
+name=Ixidor's Will
+url=http://magiccards.info/query?q=%21Ixidor%27s+Will
+image=http://mtgimage.com/card/ixidor%27s%20will.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target spell unless its controller pays {2} for each Wizard on the battlefield.
+timing=removal
+oracle=Counter target spell unless its controller pays {2} for each Wizard on the battlefield.

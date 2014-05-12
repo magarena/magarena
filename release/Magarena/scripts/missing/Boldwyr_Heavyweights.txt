@@ -1,0 +1,12 @@
+name=Boldwyr Heavyweights
+url=http://magiccards.info/query?q=%21Boldwyr+Heavyweights
+image=http://mtgimage.com/card/boldwyr%20heavyweights.jpg
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+cost={2}{R}{R}
+pt=8/8
+ability=Trample;\
+        When SN enters the battlefield, each opponent may search his or her library for a creature card and put it onto the battlefield. Then each player who searched his or her library this way shuffles it.
+timing=main
+oracle=Trample. When Boldwyr Heavyweights enters the battlefield, each opponent may search his or her library for a creature card and put it onto the battlefield. Then each player who searched his or her library this way shuffles it.

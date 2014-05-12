@@ -1,0 +1,11 @@
+name=Argothian Treefolk
+url=http://magiccards.info/query?q=%21Argothian+Treefolk
+image=http://mtgimage.com/card/argothian%20treefolk.jpg
+rarity=C
+type=Creature
+subtype=Treefolk
+cost={3}{G}{G}
+pt=3/5
+ability=Prevent all damage that would be dealt to SN by artifact sources.
+timing=main
+oracle=Prevent all damage that would be dealt to Argothian Treefolk by artifact sources.

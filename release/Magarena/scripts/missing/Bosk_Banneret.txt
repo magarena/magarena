@@ -1,0 +1,11 @@
+name=Bosk Banneret
+url=http://magiccards.info/query?q=%21Bosk+Banneret
+image=http://mtgimage.com/card/bosk%20banneret.jpg
+rarity=C
+type=Creature
+subtype=Treefolk,Shaman
+cost={1}{G}
+pt=1/3
+ability=Treefolk spells and Shaman spells you cast cost {1} less to cast.
+timing=main
+oracle=Treefolk spells and Shaman spells you cast cost {1} less to cast.

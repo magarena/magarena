@@ -1,0 +1,9 @@
+name=Reciprocate
+url=http://magiccards.info/query?q=%21Reciprocate
+image=http://mtgimage.com/card/reciprocate.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Exile target creature that dealt damage to you this turn.
+timing=removal
+oracle=Exile target creature that dealt damage to you this turn.

@@ -1,0 +1,11 @@
+name=Spirit Weaver
+url=http://magiccards.info/query?q=%21Spirit+Weaver
+image=http://mtgimage.com/card/spirit%20weaver.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{W}
+pt=2/1
+ability={2}: Target green or blue creature gets +0/+1 until end of turn.
+timing=main
+oracle={2}: Target green or blue creature gets +0/+1 until end of turn.

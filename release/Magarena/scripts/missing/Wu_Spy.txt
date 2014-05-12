@@ -1,0 +1,11 @@
+name=Wu Spy
+url=http://magiccards.info/query?q=%21Wu+Spy
+image=http://mtgimage.com/card/wu%20spy.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier,Rogue
+cost={1}{U}
+pt=1/1
+ability=When SN enters the battlefield, look at the top two cards of target player's library. Put one of them into his or her graveyard.
+timing=main
+oracle=When Wu Spy enters the battlefield, look at the top two cards of target player's library. Put one of them into his or her graveyard.

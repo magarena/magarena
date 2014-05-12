@@ -1,0 +1,11 @@
+name=Auramancer's Guise
+url=http://magiccards.info/query?q=%21Auramancer%27s+Guise
+image=http://mtgimage.com/card/auramancer%27s%20guise.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 for each Aura attached to it and has vigilance.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+2 for each Aura attached to it and has vigilance.

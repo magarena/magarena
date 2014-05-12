@@ -1,0 +1,10 @@
+name=Heed the Mists
+url=http://magiccards.info/query?q=%21Heed+the+Mists
+image=http://mtgimage.com/card/heed%20the%20mists.jpg
+rarity=U
+type=Sorcery
+subtype=Arcane
+cost={3}{U}{U}
+effect=Put the top card of your library into your graveyard, then draw cards equal to that card's converted mana cost.
+timing=main
+oracle=Put the top card of your library into your graveyard, then draw cards equal to that card's converted mana cost.

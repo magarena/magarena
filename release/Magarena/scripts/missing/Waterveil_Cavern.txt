@@ -1,0 +1,9 @@
+name=Waterveil Cavern
+url=http://magiccards.info/query?q=%21Waterveil+Cavern
+image=http://mtgimage.com/card/waterveil%20cavern.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add {U} or {B} to your mana pool. SN doesn't untap during your next untap step.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add {U} or {B} to your mana pool. Waterveil Cavern doesn't untap during your next untap step.

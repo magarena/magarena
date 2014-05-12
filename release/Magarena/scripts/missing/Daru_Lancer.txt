@@ -1,0 +1,12 @@
+name=Daru Lancer
+url=http://magiccards.info/query?q=%21Daru+Lancer
+image=http://mtgimage.com/card/daru%20lancer.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}{W}
+pt=3/4
+ability=First strike;\
+        Morph {2}{W}{W}
+timing=main
+oracle=First strike. Morph {2}{W}{W}

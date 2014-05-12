@@ -1,0 +1,11 @@
+name=Ragamuffyn
+url=http://magiccards.info/query?q=%21Ragamuffyn
+image=http://mtgimage.com/card/ragamuffyn.jpg
+rarity=U
+type=Creature
+subtype=Zombie,Cleric
+cost={2}{B}
+pt=2/2
+ability=Hellbent — {T}, Sacrifice a creature or land: Draw a card. Activate this ability only if you have no cards in hand.
+timing=main
+oracle=Hellbent — {T}, Sacrifice a creature or land: Draw a card. Activate this ability only if you have no cards in hand.

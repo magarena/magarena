@@ -1,0 +1,9 @@
+name=Precognition
+url=http://magiccards.info/query?q=%21Precognition
+image=http://mtgimage.com/card/precognition.jpg
+rarity=R
+type=Enchantment
+cost={4}{U}
+ability=At the beginning of your upkeep, you may look at the top card of target opponent's library. If you do, you may put that card on the bottom of that player's library.
+timing=main
+oracle=At the beginning of your upkeep, you may look at the top card of target opponent's library. If you do, you may put that card on the bottom of that player's library.

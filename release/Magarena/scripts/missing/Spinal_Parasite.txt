@@ -1,0 +1,12 @@
+name=Spinal Parasite
+url=http://magiccards.info/query?q=%21Spinal+Parasite
+image=http://mtgimage.com/card/spinal%20parasite.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Insect
+cost={5}
+pt=-1/-1
+ability=Sunburst;\
+        Remove two +1/+1 counters from SN: Remove a counter from target permanent.
+timing=main
+oracle=Sunburst. Remove two +1/+1 counters from Spinal Parasite: Remove a counter from target permanent.

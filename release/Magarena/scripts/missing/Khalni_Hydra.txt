@@ -1,0 +1,12 @@
+name=Khalni Hydra
+url=http://magiccards.info/query?q=%21Khalni+Hydra
+image=http://mtgimage.com/card/khalni%20hydra.jpg
+rarity=M
+type=Creature
+subtype=Hydra
+cost={G}{G}{G}{G}{G}{G}{G}{G}
+pt=8/8
+ability=SN costs {G} less to cast for each green creature you control.;\
+        Trample
+timing=main
+oracle=Khalni Hydra costs {G} less to cast for each green creature you control. Trample

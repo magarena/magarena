@@ -1,0 +1,11 @@
+name=Goblin Cohort
+url=http://magiccards.info/query?q=%21Goblin+Cohort
+image=http://mtgimage.com/card/goblin%20cohort.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={R}
+pt=2/2
+ability=SN can't attack unless you've cast a creature spell this turn.
+timing=main
+oracle=Goblin Cohort can't attack unless you've cast a creature spell this turn.

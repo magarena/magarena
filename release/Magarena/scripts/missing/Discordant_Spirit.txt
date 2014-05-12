@@ -1,0 +1,12 @@
+name=Discordant Spirit
+url=http://magiccards.info/query?q=%21Discordant+Spirit
+image=http://mtgimage.com/card/discordant%20spirit.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{B}{R}
+pt=2/2
+ability=At the beginning of each end step, if it's an opponent's turn, put a +1/+1 counter on SN for each 1 damage dealt to you this turn.;\
+        At the beginning of your end step, remove all +1/+1 counters from SN.
+timing=main
+oracle=At the beginning of each end step, if it's an opponent's turn, put a +1/+1 counter on Discordant Spirit for each 1 damage dealt to you this turn. At the beginning of your end step, remove all +1/+1 counters from Discordant Spirit.

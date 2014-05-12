@@ -1,0 +1,11 @@
+name=Nether Spirit
+url=http://magiccards.info/query?q=%21Nether+Spirit
+image=http://mtgimage.com/card/nether%20spirit.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={1}{B}{B}
+pt=2/2
+ability=At the beginning of your upkeep, if SN is the only creature card in your graveyard, you may return SN to the battlefield.
+timing=main
+oracle=At the beginning of your upkeep, if Nether Spirit is the only creature card in your graveyard, you may return Nether Spirit to the battlefield.

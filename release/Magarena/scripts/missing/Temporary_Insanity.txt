@@ -1,0 +1,9 @@
+name=Temporary Insanity
+url=http://magiccards.info/query?q=%21Temporary+Insanity
+image=http://mtgimage.com/card/temporary%20insanity.jpg
+rarity=U
+type=Instant
+cost={3}{R}
+effect=Untap target creature with power less than the number of cards in your graveyard and gain control of it until end of turn. That creature gains haste until end of turn.
+timing=removal
+oracle=Untap target creature with power less than the number of cards in your graveyard and gain control of it until end of turn. That creature gains haste until end of turn.

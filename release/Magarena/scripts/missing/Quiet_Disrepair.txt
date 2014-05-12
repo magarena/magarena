@@ -1,0 +1,11 @@
+name=Quiet Disrepair
+url=http://magiccards.info/query?q=%21Quiet+Disrepair
+image=http://mtgimage.com/card/quiet%20disrepair.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+ability=Enchant artifact or enchantment;\
+        At the beginning of your upkeep, choose one — Destroy enchanted permanent; or you gain 2 life.
+timing=main
+oracle=Enchant artifact or enchantment. At the beginning of your upkeep, choose one — Destroy enchanted permanent; or you gain 2 life.

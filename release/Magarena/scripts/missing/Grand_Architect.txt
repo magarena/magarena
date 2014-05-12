@@ -1,0 +1,13 @@
+name=Grand Architect
+url=http://magiccards.info/query?q=%21Grand+Architect
+image=http://mtgimage.com/card/grand%20architect.jpg
+rarity=R
+type=Creature
+subtype=Vedalken,Artificer
+cost={1}{U}{U}
+pt=1/3
+ability=Other blue creatures you control get +1/+1.;\
+        {U}: Target artifact creature becomes blue until end of turn.;\
+        Tap an untapped blue creature you control: Add {2} to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.
+timing=main
+oracle=Other blue creatures you control get +1/+1. {U}: Target artifact creature becomes blue until end of turn. Tap an untapped blue creature you control: Add {2} to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.

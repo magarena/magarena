@@ -1,0 +1,11 @@
+name=Rimewind Cryomancer
+url=http://magiccards.info/query?q=%21Rimewind+Cryomancer
+image=http://mtgimage.com/card/rimewind%20cryomancer.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/3
+ability={1}, {T}: Counter target activated ability. Activate this ability only if you control four or more snow permanents.
+timing=main
+oracle={1}, {T}: Counter target activated ability. Activate this ability only if you control four or more snow permanents.

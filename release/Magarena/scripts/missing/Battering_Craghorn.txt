@@ -1,0 +1,12 @@
+name=Battering Craghorn
+url=http://magiccards.info/query?q=%21Battering+Craghorn
+image=http://mtgimage.com/card/battering%20craghorn.jpg
+rarity=C
+type=Creature
+subtype=Goat,Beast
+cost={2}{R}{R}
+pt=3/1
+ability=First strike;\
+        Morph {1}{R}{R}
+timing=main
+oracle=First strike. Morph {1}{R}{R}

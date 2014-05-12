@@ -1,0 +1,9 @@
+name=Unified Will
+url=http://magiccards.info/query?q=%21Unified+Will
+image=http://mtgimage.com/card/unified%20will.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Counter target spell if you control more creatures than that spell's controller.
+timing=removal
+oracle=Counter target spell if you control more creatures than that spell's controller.

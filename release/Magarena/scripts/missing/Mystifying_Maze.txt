@@ -1,0 +1,9 @@
+name=Mystifying Maze
+url=http://magiccards.info/query?q=%21Mystifying+Maze
+image=http://mtgimage.com/card/mystifying%20maze.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {4}, {T}: Exile target attacking creature an opponent controls. At the beginning of the next end step, return it to the battlefield tapped under its owner's control.
+timing=main
+oracle={T}: Add {1} to your mana pool. {4}, {T}: Exile target attacking creature an opponent controls. At the beginning of the next end step, return it to the battlefield tapped under its owner's control.

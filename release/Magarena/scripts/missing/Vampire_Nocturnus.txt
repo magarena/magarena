@@ -1,0 +1,12 @@
+name=Vampire Nocturnus
+url=http://magiccards.info/query?q=%21Vampire+Nocturnus
+image=http://mtgimage.com/card/vampire%20nocturnus.jpg
+rarity=M
+type=Creature
+subtype=Vampire
+cost={1}{B}{B}{B}
+pt=3/3
+ability=Play with the top card of your library revealed.;\
+        As long as the top card of your library is black, SN and other Vampire creatures you control get +2/+1 and have flying.
+timing=main
+oracle=Play with the top card of your library revealed. As long as the top card of your library is black, Vampire Nocturnus and other Vampire creatures you control get +2/+1 and have flying.

@@ -1,0 +1,10 @@
+name=Kaervek's Spite
+url=http://magiccards.info/query?q=%21Kaervek%27s+Spite
+image=http://mtgimage.com/card/kaervek%27s%20spite.jpg
+rarity=R
+type=Instant
+cost={B}{B}{B}
+effect=As an additional cost to cast SN, sacrifice all permanents you control and discard your hand.;\
+        Target player loses 5 life.
+timing=removal
+oracle=As an additional cost to cast Kaervek's Spite, sacrifice all permanents you control and discard your hand. Target player loses 5 life.

@@ -1,0 +1,9 @@
+name=Nightmarish End
+url=http://magiccards.info/query?q=%21Nightmarish+End
+image=http://mtgimage.com/card/nightmarish%20end.jpg
+rarity=U
+type=Instant
+cost={2}{B}
+effect=Target creature gets -X/-X until end of turn, where X is the number of cards in your hand.
+timing=removal
+oracle=Target creature gets -X/-X until end of turn, where X is the number of cards in your hand.

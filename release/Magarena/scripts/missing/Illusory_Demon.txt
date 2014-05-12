@@ -1,0 +1,12 @@
+name=Illusory Demon
+url=http://magiccards.info/query?q=%21Illusory+Demon
+image=http://mtgimage.com/card/illusory%20demon.jpg
+rarity=U
+type=Creature
+subtype=Demon,Illusion
+cost={1}{U}{B}
+pt=4/3
+ability=Flying;\
+        When you cast a spell, sacrifice SN.
+timing=main
+oracle=Flying. When you cast a spell, sacrifice Illusory Demon.

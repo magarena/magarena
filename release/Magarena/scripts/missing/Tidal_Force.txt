@@ -1,0 +1,11 @@
+name=Tidal Force
+url=http://magiccards.info/query?q=%21Tidal+Force
+image=http://mtgimage.com/card/tidal%20force.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={5}{U}{U}{U}
+pt=7/7
+ability=At the beginning of each upkeep, you may tap or untap target permanent.
+timing=main
+oracle=At the beginning of each upkeep, you may tap or untap target permanent.

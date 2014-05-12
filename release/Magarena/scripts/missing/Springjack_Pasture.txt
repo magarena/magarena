@@ -1,0 +1,10 @@
+name=Springjack Pasture
+url=http://magiccards.info/query?q=%21Springjack+Pasture
+image=http://mtgimage.com/card/springjack%20pasture.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {4}, {T}: Put a 0/1 white Goat creature token onto the battlefield.;\
+        {T}, Sacrifice X Goats: Add X mana of any one color to your mana pool. You gain X life.
+timing=main
+oracle={T}: Add {1} to your mana pool. {4}, {T}: Put a 0/1 white Goat creature token onto the battlefield. {T}, Sacrifice X Goats: Add X mana of any one color to your mana pool. You gain X life.

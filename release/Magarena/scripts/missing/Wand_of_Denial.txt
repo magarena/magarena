@@ -1,0 +1,9 @@
+name=Wand of Denial
+url=http://magiccards.info/query?q=%21Wand+of+Denial
+image=http://mtgimage.com/card/wand%20of%20denial.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={T}: Look at the top card of target player's library. If it's a nonland card, you may pay 2 life. If you do, put it into that player's graveyard.
+timing=main
+oracle={T}: Look at the top card of target player's library. If it's a nonland card, you may pay 2 life. If you do, put it into that player's graveyard.

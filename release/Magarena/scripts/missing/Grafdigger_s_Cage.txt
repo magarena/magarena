@@ -1,0 +1,10 @@
+name=Grafdigger's Cage
+url=http://magiccards.info/query?q=%21Grafdigger%27s+Cage
+image=http://mtgimage.com/card/grafdigger%27s%20cage.jpg
+rarity=R
+type=Artifact
+cost={1}
+ability=Creature cards can't enter the battlefield from graveyards or libraries.;\
+        Players can't cast cards in graveyards or libraries.
+timing=main
+oracle=Creature cards can't enter the battlefield from graveyards or libraries. Players can't cast cards in graveyards or libraries.

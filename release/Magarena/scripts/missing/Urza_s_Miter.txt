@@ -1,0 +1,9 @@
+name=Urza's Miter
+url=http://magiccards.info/query?q=%21Urza%27s+Miter
+image=http://mtgimage.com/card/urza%27s%20miter.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever an artifact you control is put into a graveyard from the battlefield, if it wasn't sacrificed, you may pay {3}. If you do, draw a card.
+timing=main
+oracle=Whenever an artifact you control is put into a graveyard from the battlefield, if it wasn't sacrificed, you may pay {3}. If you do, draw a card.

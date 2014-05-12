@@ -1,0 +1,11 @@
+name=Mogg Maniac
+url=http://magiccards.info/query?q=%21Mogg+Maniac
+image=http://mtgimage.com/card/mogg%20maniac.jpg
+rarity=U
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=1/1
+ability=Whenever SN is dealt damage, it deals that much damage to target opponent.
+timing=main
+oracle=Whenever Mogg Maniac is dealt damage, it deals that much damage to target opponent.

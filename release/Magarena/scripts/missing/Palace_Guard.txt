@@ -1,0 +1,11 @@
+name=Palace Guard
+url=http://magiccards.info/query?q=%21Palace+Guard
+image=http://mtgimage.com/card/palace%20guard.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/4
+ability=SN can block any number of creatures.
+timing=main
+oracle=Palace Guard can block any number of creatures.

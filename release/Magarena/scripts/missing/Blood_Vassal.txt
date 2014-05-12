@@ -1,0 +1,11 @@
+name=Blood Vassal
+url=http://magiccards.info/query?q=%21Blood+Vassal
+image=http://mtgimage.com/card/blood%20vassal.jpg
+rarity=C
+type=Creature
+subtype=Thrull
+cost={2}{B}
+pt=2/2
+ability=Sacrifice SN: Add {B}{B} to your mana pool.
+timing=main
+oracle=Sacrifice Blood Vassal: Add {B}{B} to your mana pool.

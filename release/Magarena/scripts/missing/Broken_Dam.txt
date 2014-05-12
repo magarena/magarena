@@ -1,0 +1,9 @@
+name=Broken Dam
+url=http://magiccards.info/query?q=%21Broken+Dam
+image=http://mtgimage.com/card/broken%20dam.jpg
+rarity=C
+type=Sorcery
+cost={U}
+effect=Tap one or two target creatures without horsemanship.
+timing=main
+oracle=Tap one or two target creatures without horsemanship.

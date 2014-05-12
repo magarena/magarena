@@ -1,0 +1,12 @@
+name=Watchdog
+url=http://magiccards.info/query?q=%21Watchdog
+image=http://mtgimage.com/card/watchdog.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Hound
+cost={3}
+pt=1/2
+ability=SN blocks each turn if able.;\
+        As long as SN is untapped, all creatures attacking you get -1/-0.
+timing=main
+oracle=Watchdog blocks each turn if able. As long as Watchdog is untapped, all creatures attacking you get -1/-0.

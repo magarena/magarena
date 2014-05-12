@@ -1,0 +1,12 @@
+name=Inferno Titan
+url=http://magiccards.info/query?q=%21Inferno+Titan
+image=http://mtgimage.com/card/inferno%20titan.jpg
+rarity=M
+type=Creature
+subtype=Giant
+cost={4}{R}{R}
+pt=6/6
+ability={R}: SN gets +1/+0 until end of turn.;\
+        Whenever SN enters the battlefield or attacks, it deals 3 damage divided as you choose among one, two, or three target creatures and/or players.
+timing=main
+oracle={R}: Inferno Titan gets +1/+0 until end of turn. Whenever Inferno Titan enters the battlefield or attacks, it deals 3 damage divided as you choose among one, two, or three target creatures and/or players.

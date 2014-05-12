@@ -1,0 +1,12 @@
+name=Exhumer Thrull
+url=http://magiccards.info/query?q=%21Exhumer+Thrull
+image=http://mtgimage.com/card/exhumer%20thrull.jpg
+rarity=U
+type=Creature
+subtype=Thrull
+cost={5}{B}
+pt=3/3
+ability=Haunt;\
+        When SN enters the battlefield or the creature it haunts dies, return target creature card from your graveyard to your hand.
+timing=main
+oracle=Haunt. When Exhumer Thrull enters the battlefield or the creature it haunts dies, return target creature card from your graveyard to your hand.

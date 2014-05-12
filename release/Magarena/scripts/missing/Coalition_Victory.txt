@@ -1,0 +1,9 @@
+name=Coalition Victory
+url=http://magiccards.info/query?q=%21Coalition+Victory
+image=http://mtgimage.com/card/coalition%20victory.jpg
+rarity=R
+type=Sorcery
+cost={3}{W}{U}{B}{R}{G}
+effect=You win the game if you control a land of each basic land type and a creature of each color.
+timing=main
+oracle=You win the game if you control a land of each basic land type and a creature of each color.

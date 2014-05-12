@@ -1,0 +1,12 @@
+name=Patron of the Orochi
+url=http://magiccards.info/query?q=%21Patron+of+the+Orochi
+image=http://mtgimage.com/card/patron%20of%20the%20orochi.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={6}{G}{G}
+pt=7/7
+ability=Snake offering;\
+        {T}: Untap all Forests and all green creatures. Activate this ability only once each turn.
+timing=main
+oracle=Snake offering. {T}: Untap all Forests and all green creatures. Activate this ability only once each turn.

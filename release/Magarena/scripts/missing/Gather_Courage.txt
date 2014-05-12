@@ -1,0 +1,10 @@
+name=Gather Courage
+url=http://magiccards.info/query?q=%21Gather+Courage
+image=http://mtgimage.com/card/gather%20courage.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Convoke;\
+        Target creature gets +2/+2 until end of turn.
+timing=removal
+oracle=Convoke. Target creature gets +2/+2 until end of turn.

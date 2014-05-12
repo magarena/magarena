@@ -1,0 +1,9 @@
+name=Orim's Prayer
+url=http://magiccards.info/query?q=%21Orim%27s+Prayer
+image=http://mtgimage.com/card/orim%27s%20prayer.jpg
+rarity=U
+type=Enchantment
+cost={1}{W}{W}
+ability=Whenever one or more creatures attack you, you gain 1 life for each attacking creature.
+timing=main
+oracle=Whenever one or more creatures attack you, you gain 1 life for each attacking creature.

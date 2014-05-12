@@ -1,0 +1,9 @@
+name=Moorland Haunt
+url=http://magiccards.info/query?q=%21Moorland+Haunt
+image=http://mtgimage.com/card/moorland%20haunt.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {W}{U}, {T}, Exile a creature card from your graveyard: Put a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=main
+oracle={T}: Add {1} to your mana pool. {W}{U}, {T}, Exile a creature card from your graveyard: Put a 1/1 white Spirit creature token with flying onto the battlefield.

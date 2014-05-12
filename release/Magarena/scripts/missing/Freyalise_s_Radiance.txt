@@ -1,0 +1,10 @@
+name=Freyalise's Radiance
+url=http://magiccards.info/query?q=%21Freyalise%27s+Radiance
+image=http://mtgimage.com/card/freyalise%27s%20radiance.jpg
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=Cumulative upkeep {2};\
+        Snow permanents don't untap during their controllers' untap steps.
+timing=main
+oracle=Cumulative upkeep {2}. Snow permanents don't untap during their controllers' untap steps.

@@ -1,0 +1,11 @@
+name=Laccolith Rig
+url=http://magiccards.info/query?q=%21Laccolith+Rig
+image=http://mtgimage.com/card/laccolith%20rig.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+ability=Enchant creature;\
+        Whenever enchanted creature becomes blocked, you may have it deal damage equal to its power to target creature. If you do, the first creature assigns no combat damage this turn.
+timing=main
+oracle=Enchant creature. Whenever enchanted creature becomes blocked, you may have it deal damage equal to its power to target creature. If you do, the first creature assigns no combat damage this turn.

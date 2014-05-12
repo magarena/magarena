@@ -1,0 +1,10 @@
+name=Finest Hour
+url=http://magiccards.info/query?q=%21Finest+Hour
+image=http://mtgimage.com/card/finest%20hour.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}{W}{U}
+ability=Exalted;\
+        Whenever a creature you control attacks alone, if it's the first combat phase of the turn, untap that creature. After this phase, there is an additional combat phase.
+timing=main
+oracle=Exalted. Whenever a creature you control attacks alone, if it's the first combat phase of the turn, untap that creature. After this phase, there is an additional combat phase.

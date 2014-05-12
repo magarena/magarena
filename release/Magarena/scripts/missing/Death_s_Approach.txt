@@ -1,0 +1,11 @@
+name=Death's Approach
+url=http://magiccards.info/query?q=%21Death%27s+Approach
+image=http://mtgimage.com/card/death%27s%20approach.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant creature;\
+        Enchanted creature gets -X/-X, where X is the number of creature cards in its controller's graveyard.
+timing=main
+oracle=Enchant creature. Enchanted creature gets -X/-X, where X is the number of creature cards in its controller's graveyard.

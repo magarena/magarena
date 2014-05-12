@@ -1,0 +1,9 @@
+name=Last Rites
+url=http://magiccards.info/query?q=%21Last+Rites
+image=http://mtgimage.com/card/last%20rites.jpg
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Discard any number of cards. Target player reveals his or her hand, then you choose a nonland card from it for each card discarded this way. That player discards those cards.
+timing=main
+oracle=Discard any number of cards. Target player reveals his or her hand, then you choose a nonland card from it for each card discarded this way. That player discards those cards.

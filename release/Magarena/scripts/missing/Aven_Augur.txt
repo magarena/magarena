@@ -1,0 +1,12 @@
+name=Aven Augur
+url=http://magiccards.info/query?q=%21Aven+Augur
+image=http://mtgimage.com/card/aven%20augur.jpg
+rarity=C
+type=Creature
+subtype=Bird,Wizard
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        Sacrifice SN: Return up to two target creatures to their owners' hands. Activate this ability only during your upkeep.
+timing=main
+oracle=Flying. Sacrifice Aven Augur: Return up to two target creatures to their owners' hands. Activate this ability only during your upkeep.

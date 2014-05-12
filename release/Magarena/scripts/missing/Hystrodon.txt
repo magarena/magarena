@@ -1,0 +1,13 @@
+name=Hystrodon
+url=http://magiccards.info/query?q=%21Hystrodon
+image=http://mtgimage.com/card/hystrodon.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={4}{G}
+pt=3/4
+ability=Trample;\
+        Whenever SN deals combat damage to a player, you may draw a card.;\
+        Morph {1}{G}{G}
+timing=main
+oracle=Trample. Whenever Hystrodon deals combat damage to a player, you may draw a card. Morph {1}{G}{G}

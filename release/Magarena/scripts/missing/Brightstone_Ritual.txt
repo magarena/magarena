@@ -1,0 +1,9 @@
+name=Brightstone Ritual
+url=http://magiccards.info/query?q=%21Brightstone+Ritual
+image=http://mtgimage.com/card/brightstone%20ritual.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=Add {R} to your mana pool for each Goblin on the battlefield.
+timing=removal
+oracle=Add {R} to your mana pool for each Goblin on the battlefield.

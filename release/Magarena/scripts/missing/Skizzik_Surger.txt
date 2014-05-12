@@ -1,0 +1,12 @@
+name=Skizzik Surger
+url=http://magiccards.info/query?q=%21Skizzik+Surger
+image=http://mtgimage.com/card/skizzik%20surger.jpg
+rarity=U
+type=Creature
+subtype=Elemental
+cost={4}{R}{R}
+pt=6/4
+ability=Haste;\
+        Echo—Sacrifice two lands.
+timing=main
+oracle=Haste. Echo—Sacrifice two lands.

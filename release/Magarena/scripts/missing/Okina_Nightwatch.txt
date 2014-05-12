@@ -1,0 +1,11 @@
+name=Okina Nightwatch
+url=http://magiccards.info/query?q=%21Okina+Nightwatch
+image=http://mtgimage.com/card/okina%20nightwatch.jpg
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={4}{G}
+pt=4/3
+ability=As long as you have more cards in hand than each opponent, SN gets +3/+3.
+timing=main
+oracle=As long as you have more cards in hand than each opponent, Okina Nightwatch gets +3/+3.

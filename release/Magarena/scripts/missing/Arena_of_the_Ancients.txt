@@ -1,0 +1,10 @@
+name=Arena of the Ancients
+url=http://magiccards.info/query?q=%21Arena+of+the+Ancients
+image=http://mtgimage.com/card/arena%20of%20the%20ancients.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Legendary creatures don't untap during their controllers' untap steps.;\
+        When SN enters the battlefield, tap all legendary creatures.
+timing=main
+oracle=Legendary creatures don't untap during their controllers' untap steps. When Arena of the Ancients enters the battlefield, tap all legendary creatures.

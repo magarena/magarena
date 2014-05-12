@@ -1,0 +1,11 @@
+name=Spellbane Centaur
+url=http://magiccards.info/query?q=%21Spellbane+Centaur
+image=http://mtgimage.com/card/spellbane%20centaur.jpg
+rarity=R
+type=Creature
+subtype=Centaur
+cost={2}{G}
+pt=3/2
+ability=Creatures you control can't be the targets of blue spells or abilities from blue sources.
+timing=main
+oracle=Creatures you control can't be the targets of blue spells or abilities from blue sources.

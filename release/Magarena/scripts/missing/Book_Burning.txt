@@ -1,0 +1,9 @@
+name=Book Burning
+url=http://magiccards.info/query?q=%21Book+Burning
+image=http://mtgimage.com/card/book%20burning.jpg
+rarity=C
+type=Sorcery
+cost={1}{R}
+effect=Any player may have SN deal 6 damage to him or her. If no one does, target player puts the top six cards of his or her library into his or her graveyard.
+timing=main
+oracle=Any player may have Book Burning deal 6 damage to him or her. If no one does, target player puts the top six cards of his or her library into his or her graveyard.

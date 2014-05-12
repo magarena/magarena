@@ -1,0 +1,12 @@
+name=Teferi's Drake
+url=http://magiccards.info/query?q=%21Teferi%27s+Drake
+image=http://mtgimage.com/card/teferi%27s%20drake.jpg
+rarity=C
+type=Creature
+subtype=Drake
+cost={2}{U}
+pt=3/2
+ability=Flying;\
+        Phasing
+timing=main
+oracle=Flying. Phasing

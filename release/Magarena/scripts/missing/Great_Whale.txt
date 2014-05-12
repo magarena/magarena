@@ -1,0 +1,11 @@
+name=Great Whale
+url=http://magiccards.info/query?q=%21Great+Whale
+image=http://mtgimage.com/card/great%20whale.jpg
+rarity=R
+type=Creature
+subtype=Whale
+cost={5}{U}{U}
+pt=5/5
+ability=When SN enters the battlefield, untap up to seven lands.
+timing=main
+oracle=When Great Whale enters the battlefield, untap up to seven lands.

@@ -1,0 +1,9 @@
+name=Release the Ants
+url=http://magiccards.info/query?q=%21Release+the+Ants
+image=http://mtgimage.com/card/release%20the%20ants.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=SN deals 1 damage to target creature or player. Clash with an opponent. If you win, return SN to its owner's hand.
+timing=removal
+oracle=Release the Ants deals 1 damage to target creature or player. Clash with an opponent. If you win, return Release the Ants to its owner's hand.

@@ -1,0 +1,9 @@
+name=Stabilizer
+url=http://magiccards.info/query?q=%21Stabilizer
+image=http://mtgimage.com/card/stabilizer.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Players can't cycle cards.
+timing=main
+oracle=Players can't cycle cards.

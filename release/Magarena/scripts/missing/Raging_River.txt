@@ -1,0 +1,9 @@
+name=Raging River
+url=http://magiccards.info/query?q=%21Raging+River
+image=http://mtgimage.com/card/raging%20river.jpg
+rarity=R
+type=Enchantment
+cost={R}{R}
+ability=Whenever one or more creatures you control attack, each defending player divides all creatures without flying he or she controls into a "left" pile and a "right" pile. Then, for each attacking creature you control, choose "left" or "right." That creature can't be blocked this combat except by creatures with flying and creatures in a pile with the chosen label.
+timing=main
+oracle=Whenever one or more creatures you control attack, each defending player divides all creatures without flying he or she controls into a "left" pile and a "right" pile. Then, for each attacking creature you control, choose "left" or "right." That creature can't be blocked this combat except by creatures with flying and creatures in a pile with the chosen label.

@@ -1,0 +1,11 @@
+name=Nightmare Lash
+url=http://magiccards.info/query?q=%21Nightmare+Lash
+image=http://mtgimage.com/card/nightmare%20lash.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={4}
+ability=Equipped creature gets +1/+1 for each Swamp you control.;\
+        Equip—Pay 3 life.
+timing=main
+oracle=Equipped creature gets +1/+1 for each Swamp you control. Equip—Pay 3 life.

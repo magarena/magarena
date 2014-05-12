@@ -1,0 +1,10 @@
+name=Repeal
+url=http://magiccards.info/query?q=%21Repeal
+image=http://mtgimage.com/card/repeal.jpg
+rarity=C
+type=Instant
+cost={X}{U}
+effect=Return target nonland permanent with converted mana cost X to its owner's hand.;\
+        Draw a card.
+timing=removal
+oracle=Return target nonland permanent with converted mana cost X to its owner's hand. Draw a card.

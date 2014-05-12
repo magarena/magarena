@@ -1,0 +1,11 @@
+name=Snow Hound
+url=http://magiccards.info/query?q=%21Snow+Hound
+image=http://mtgimage.com/card/snow%20hound.jpg
+rarity=U
+type=Creature
+subtype=Hound
+cost={2}{W}
+pt=1/1
+ability={1}, {T}: Return SN and target green or blue creature you control to their owner's hand.
+timing=main
+oracle={1}, {T}: Return Snow Hound and target green or blue creature you control to their owner's hand.

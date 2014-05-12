@@ -1,0 +1,11 @@
+name=Viashino Racketeer
+url=http://magiccards.info/query?q=%21Viashino+Racketeer
+image=http://mtgimage.com/card/viashino%20racketeer.jpg
+rarity=C
+type=Creature
+subtype=Viashino,Rogue
+cost={2}{R}
+pt=2/1
+ability=When SN enters the battlefield, you may discard a card. If you do, draw a card.
+timing=main
+oracle=When Viashino Racketeer enters the battlefield, you may discard a card. If you do, draw a card.

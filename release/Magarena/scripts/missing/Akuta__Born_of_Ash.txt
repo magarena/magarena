@@ -1,0 +1,12 @@
+name=Akuta, Born of Ash
+url=http://magiccards.info/query?q=%21Akuta%2C+Born+of+Ash
+image=http://mtgimage.com/card/akuta%2C%20born%20of%20ash.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{B}{B}
+pt=3/2
+ability=Haste;\
+        At the beginning of your upkeep, if you have more cards in hand than each opponent, you may sacrifice a Swamp. If you do, return SN from your graveyard to the battlefield.
+timing=main
+oracle=Haste. At the beginning of your upkeep, if you have more cards in hand than each opponent, you may sacrifice a Swamp. If you do, return Akuta, Born of Ash from your graveyard to the battlefield.

@@ -1,0 +1,9 @@
+name=Violent Ultimatum
+url=http://magiccards.info/query?q=%21Violent+Ultimatum
+image=http://mtgimage.com/card/violent%20ultimatum.jpg
+rarity=R
+type=Sorcery
+cost={B}{B}{R}{R}{R}{G}{G}
+effect=Destroy three target permanents.
+timing=main
+oracle=Destroy three target permanents.

@@ -1,0 +1,10 @@
+name=Voidwalk
+url=http://magiccards.info/query?q=%21Voidwalk
+image=http://mtgimage.com/card/voidwalk.jpg
+rarity=U
+type=Sorcery
+cost={3}{U}
+effect=Exile target creature. Return it to the battlefield under its owner's control at the beginning of the next end step.;\
+        Cipher
+timing=main
+oracle=Exile target creature. Return it to the battlefield under its owner's control at the beginning of the next end step. Cipher

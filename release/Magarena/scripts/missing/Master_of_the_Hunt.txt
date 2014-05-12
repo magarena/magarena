@@ -1,0 +1,11 @@
+name=Master of the Hunt
+url=http://magiccards.info/query?q=%21Master+of+the+Hunt
+image=http://mtgimage.com/card/master%20of%20the%20hunt.jpg
+rarity=R
+type=Creature
+subtype=Human
+cost={2}{G}{G}
+pt=2/2
+ability={2}{G}{G}: Put a 1/1 green Wolf creature token named Wolves of the Hunt onto the battlefield. It has "bands with other creatures named Wolves of the Hunt."
+timing=main
+oracle={2}{G}{G}: Put a 1/1 green Wolf creature token named Wolves of the Hunt onto the battlefield. It has "bands with other creatures named Wolves of the Hunt."

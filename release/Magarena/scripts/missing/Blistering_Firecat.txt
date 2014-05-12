@@ -1,0 +1,13 @@
+name=Blistering Firecat
+url=http://magiccards.info/query?q=%21Blistering+Firecat
+image=http://mtgimage.com/card/blistering%20firecat.jpg
+rarity=R
+type=Creature
+subtype=Elemental,Cat
+cost={1}{R}{R}{R}
+pt=7/1
+ability=Trample, haste;\
+        At the beginning of the end step, sacrifice SN.;\
+        Morph {R}{R}
+timing=main
+oracle=Trample, haste. At the beginning of the end step, sacrifice Blistering Firecat. Morph {R}{R}

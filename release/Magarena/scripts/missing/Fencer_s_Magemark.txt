@@ -1,0 +1,11 @@
+name=Fencer's Magemark
+url=http://magiccards.info/query?q=%21Fencer%27s+Magemark
+image=http://mtgimage.com/card/fencer%27s%20magemark.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+ability=Enchant creature;\
+        Creatures you control that are enchanted get +1/+1 and have first strike.
+timing=main
+oracle=Enchant creature. Creatures you control that are enchanted get +1/+1 and have first strike.

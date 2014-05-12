@@ -1,0 +1,13 @@
+name=Merseine
+url=http://magiccards.info/query?q=%21Merseine
+image=http://mtgimage.com/card/merseine1.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+ability=Enchant creature;\
+        SN enters the battlefield with three net counters on it.;\
+        Enchanted creature doesn't untap during its controller's untap step if SN has a net counter on it.;\
+        Pay enchanted creature's mana cost: Remove a net counter from SN. Any player may activate this ability, but only if he or she controls the enchanted creature.
+timing=main
+oracle=Enchant creature. Merseine enters the battlefield with three net counters on it. Enchanted creature doesn't untap during its controller's untap step if Merseine has a net counter on it. Pay enchanted creature's mana cost: Remove a net counter from Merseine. Any player may activate this ability, but only if he or she controls the enchanted creature.

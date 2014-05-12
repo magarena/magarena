@@ -1,0 +1,9 @@
+name=Psychic Intrusion
+url=http://magiccards.info/query?q=%21Psychic+Intrusion
+image=http://mtgimage.com/card/psychic%20intrusion.jpg
+rarity=R
+type=Sorcery
+cost={3}{U}{B}
+effect=Target opponent reveals his or her hand. You choose a nonland card from that player's graveyard or hand and exile it. You may cast that card for as long as it remains exiled, and you may spend mana as though it were mana of any color to cast that spell.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose a nonland card from that player's graveyard or hand and exile it. You may cast that card for as long as it remains exiled, and you may spend mana as though it were mana of any color to cast that spell.

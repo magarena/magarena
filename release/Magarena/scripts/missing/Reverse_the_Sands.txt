@@ -1,0 +1,9 @@
+name=Reverse the Sands
+url=http://magiccards.info/query?q=%21Reverse+the+Sands
+image=http://mtgimage.com/card/reverse%20the%20sands.jpg
+rarity=R
+type=Sorcery
+cost={6}{W}{W}
+effect=Redistribute any number of players' life totals.
+timing=main
+oracle=Redistribute any number of players' life totals.

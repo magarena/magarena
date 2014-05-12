@@ -1,0 +1,10 @@
+name=Nightbird's Clutches
+url=http://magiccards.info/query?q=%21Nightbird%27s+Clutches
+image=http://mtgimage.com/card/nightbird%27s%20clutches.jpg
+rarity=C
+type=Sorcery
+cost={1}{R}
+effect=Up to two target creatures can't block this turn.;\
+        Flashback {3}{R}
+timing=main
+oracle=Up to two target creatures can't block this turn. Flashback {3}{R}

@@ -1,0 +1,11 @@
+name=Kjeldoran Phalanx
+url=http://magiccards.info/query?q=%21Kjeldoran+Phalanx
+image=http://mtgimage.com/card/kjeldoran%20phalanx.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={5}{W}
+pt=2/5
+ability=First strike; banding
+timing=main
+oracle=First strike; banding

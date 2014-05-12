@@ -1,0 +1,9 @@
+name=Minamo's Meddling
+url=http://magiccards.info/query?q=%21Minamo%27s+Meddling
+image=http://mtgimage.com/card/minamo%27s%20meddling.jpg
+rarity=C
+type=Instant
+cost={2}{U}{U}
+effect=Counter target spell. That spell's controller reveals his or her hand, then discards each card with the same name as a card spliced onto that spell.
+timing=removal
+oracle=Counter target spell. That spell's controller reveals his or her hand, then discards each card with the same name as a card spliced onto that spell.

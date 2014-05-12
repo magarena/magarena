@@ -1,0 +1,9 @@
+name=Still Life
+url=http://magiccards.info/query?q=%21Still+Life
+image=http://mtgimage.com/card/still%20life.jpg
+rarity=U
+type=Enchantment
+cost={1}{G}{G}
+ability={G}{G}: SN becomes a 4/3 Centaur creature until end of turn. It's still an enchantment.
+timing=main
+oracle={G}{G}: Still Life becomes a 4/3 Centaur creature until end of turn. It's still an enchantment.

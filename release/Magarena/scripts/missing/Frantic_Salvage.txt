@@ -1,0 +1,10 @@
+name=Frantic Salvage
+url=http://magiccards.info/query?q=%21Frantic+Salvage
+image=http://mtgimage.com/card/frantic%20salvage.jpg
+rarity=C
+type=Instant
+cost={3}{W}
+effect=Put any number of target artifact cards from your graveyard on top of your library.;\
+        Draw a card.
+timing=removal
+oracle=Put any number of target artifact cards from your graveyard on top of your library. Draw a card.

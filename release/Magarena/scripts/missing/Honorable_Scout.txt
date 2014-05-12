@@ -1,0 +1,11 @@
+name=Honorable Scout
+url=http://magiccards.info/query?q=%21Honorable+Scout
+image=http://mtgimage.com/card/honorable%20scout.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier,Scout
+cost={W}
+pt=1/1
+ability=When SN enters the battlefield, you gain 2 life for each black and/or red creature target opponent controls.
+timing=main
+oracle=When Honorable Scout enters the battlefield, you gain 2 life for each black and/or red creature target opponent controls.

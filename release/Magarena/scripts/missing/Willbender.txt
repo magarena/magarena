@@ -1,0 +1,12 @@
+name=Willbender
+url=http://magiccards.info/query?q=%21Willbender
+image=http://mtgimage.com/card/willbender.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/2
+ability=Morph {1}{U};\
+        When SN is turned face up, change the target of target spell or ability with a single target.
+timing=main
+oracle=Morph {1}{U}. When Willbender is turned face up, change the target of target spell or ability with a single target.

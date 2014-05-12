@@ -1,0 +1,9 @@
+name=Whalebone Glider
+url=http://magiccards.info/query?q=%21Whalebone+Glider
+image=http://mtgimage.com/card/whalebone%20glider.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={2}, {T}: Target creature with power 3 or less gains flying until end of turn.
+timing=main
+oracle={2}, {T}: Target creature with power 3 or less gains flying until end of turn.

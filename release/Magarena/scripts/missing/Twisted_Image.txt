@@ -1,0 +1,10 @@
+name=Twisted Image
+url=http://magiccards.info/query?q=%21Twisted+Image
+image=http://mtgimage.com/card/twisted%20image.jpg
+rarity=U
+type=Instant
+cost={U}
+effect=Switch target creature's power and toughness until end of turn.;\
+        Draw a card.
+timing=removal
+oracle=Switch target creature's power and toughness until end of turn. Draw a card.

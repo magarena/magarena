@@ -1,0 +1,9 @@
+name=Search Warrant
+url=http://magiccards.info/query?q=%21Search+Warrant
+image=http://mtgimage.com/card/search%20warrant.jpg
+rarity=C
+type=Sorcery
+cost={W}{U}
+effect=Target player reveals his or her hand. You gain life equal to the number of cards in that player's hand.
+timing=main
+oracle=Target player reveals his or her hand. You gain life equal to the number of cards in that player's hand.

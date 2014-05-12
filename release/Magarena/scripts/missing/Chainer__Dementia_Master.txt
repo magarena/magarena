@@ -1,0 +1,13 @@
+name=Chainer, Dementia Master
+url=http://magiccards.info/query?q=%21Chainer%2C+Dementia+Master
+image=http://mtgimage.com/card/chainer%2C%20dementia%20master.jpg
+rarity=R
+type=Creature
+subtype=Human,Minion
+cost={3}{B}{B}
+pt=3/3
+ability=Nightmare creatures get +1/+1.;\
+        {B}{B}{B}, Pay 3 life: Put target creature card from a graveyard onto the battlefield under your control. That creature is black and is a Nightmare in addition to its other creature types.;\
+        When SN leaves the battlefield, exile all Nightmares.
+timing=main
+oracle=Nightmare creatures get +1/+1. {B}{B}{B}, Pay 3 life: Put target creature card from a graveyard onto the battlefield under your control. That creature is black and is a Nightmare in addition to its other creature types. When Chainer, Dementia Master leaves the battlefield, exile all Nightmares.

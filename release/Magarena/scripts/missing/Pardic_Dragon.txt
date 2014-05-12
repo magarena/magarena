@@ -1,0 +1,14 @@
+name=Pardic Dragon
+url=http://magiccards.info/query?q=%21Pardic+Dragon
+image=http://mtgimage.com/card/pardic%20dragon.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={4}{R}{R}
+pt=4/4
+ability=Flying;\
+        {R}: SN gets +1/+0 until end of turn.;\
+        Suspend 2—{R}{R};\
+        Whenever an opponent casts a spell, if SN is suspended, that player may put a time counter on SN.
+timing=main
+oracle=Flying. {R}: Pardic Dragon gets +1/+0 until end of turn. Suspend 2—{R}{R}. Whenever an opponent casts a spell, if Pardic Dragon is suspended, that player may put a time counter on Pardic Dragon.

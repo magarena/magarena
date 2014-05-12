@@ -1,0 +1,9 @@
+name=Goblin Lyre
+url=http://magiccards.info/query?q=%21Goblin+Lyre
+image=http://mtgimage.com/card/goblin%20lyre.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Sacrifice SN: Flip a coin. If you win the flip, SN deals damage to target opponent equal to the number of creatures you control. If you lose the flip, SN deals damage to you equal to the number of creatures that opponent controls.
+timing=main
+oracle=Sacrifice Goblin Lyre: Flip a coin. If you win the flip, Goblin Lyre deals damage to target opponent equal to the number of creatures you control. If you lose the flip, Goblin Lyre deals damage to you equal to the number of creatures that opponent controls.

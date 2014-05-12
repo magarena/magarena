@@ -1,0 +1,10 @@
+name=Harvest Pyre
+url=http://magiccards.info/query?q=%21Harvest+Pyre
+image=http://mtgimage.com/card/harvest%20pyre.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=As an additional cost to cast SN, exile X cards from your graveyard.;\
+        SN deals X damage to target creature.
+timing=removal
+oracle=As an additional cost to cast Harvest Pyre, exile X cards from your graveyard. Harvest Pyre deals X damage to target creature.

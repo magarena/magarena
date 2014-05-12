@@ -1,0 +1,12 @@
+name=Knacksaw Clique
+url=http://magiccards.info/query?q=%21Knacksaw+Clique
+image=http://mtgimage.com/card/knacksaw%20clique.jpg
+rarity=R
+type=Creature
+subtype=Faerie,Rogue
+cost={3}{U}
+pt=1/4
+ability=Flying;\
+        {1}{U}, {Q}: Target opponent exiles the top card of his or her library. Until end of turn, you may play that card.
+timing=main
+oracle=Flying. {1}{U}, {Q}: Target opponent exiles the top card of his or her library. Until end of turn, you may play that card.

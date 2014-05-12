@@ -1,0 +1,10 @@
+name=Whetwheel
+url=http://magiccards.info/query?q=%21Whetwheel
+image=http://mtgimage.com/card/whetwheel.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={X}{X}, {T}: Target player puts the top X cards of his or her library into his or her graveyard.;\
+        Morph {3}
+timing=main
+oracle={X}{X}, {T}: Target player puts the top X cards of his or her library into his or her graveyard. Morph {3}

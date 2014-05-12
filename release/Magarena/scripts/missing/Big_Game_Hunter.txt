@@ -1,0 +1,12 @@
+name=Big Game Hunter
+url=http://magiccards.info/query?q=%21Big+Game+Hunter
+image=http://mtgimage.com/card/big%20game%20hunter.jpg
+rarity=U
+type=Creature
+subtype=Human,Rebel,Assassin
+cost={1}{B}{B}
+pt=1/1
+ability=When SN enters the battlefield, destroy target creature with power 4 or greater. It can't be regenerated.;\
+        Madness {B}
+timing=main
+oracle=When Big Game Hunter enters the battlefield, destroy target creature with power 4 or greater. It can't be regenerated. Madness {B}

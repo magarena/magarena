@@ -1,0 +1,13 @@
+name=Oran-Rief Recluse
+url=http://magiccards.info/query?q=%21Oran-Rief+Recluse
+image=http://mtgimage.com/card/oran-rief%20recluse.jpg
+rarity=C
+type=Creature
+subtype=Spider
+cost={2}{G}
+pt=1/3
+ability=Kicker {2}{G};\
+        Reach;\
+        When SN enters the battlefield, if it was kicked, destroy target creature with flying.
+timing=main
+oracle=Kicker {2}{G}. Reach. When Oran-Rief Recluse enters the battlefield, if it was kicked, destroy target creature with flying.

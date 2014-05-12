@@ -1,0 +1,12 @@
+name=Goblin Rimerunner
+url=http://magiccards.info/query?q=%21Goblin+Rimerunner
+image=http://mtgimage.com/card/goblin%20rimerunner.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={2}{R}
+pt=2/2
+ability={T}: Target creature can't block this turn.;\
+        {S}: SN gains haste until end of turn.
+timing=main
+oracle={T}: Target creature can't block this turn. {S}: Goblin Rimerunner gains haste until end of turn.

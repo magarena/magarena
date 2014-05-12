@@ -1,0 +1,10 @@
+name=Shadow of Doubt
+url=http://magiccards.info/query?q=%21Shadow+of+Doubt
+image=http://mtgimage.com/card/shadow%20of%20doubt.jpg
+rarity=R
+type=Instant
+cost={U/B}{U/B}
+effect=Players can't search libraries this turn.;\
+        Draw a card.
+timing=removal
+oracle=Players can't search libraries this turn. Draw a card.

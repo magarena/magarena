@@ -1,0 +1,9 @@
+name=Retract
+url=http://magiccards.info/query?q=%21Retract
+image=http://mtgimage.com/card/retract.jpg
+rarity=R
+type=Instant
+cost={U}
+effect=Return all artifacts you control to their owner's hand.
+timing=removal
+oracle=Return all artifacts you control to their owner's hand.

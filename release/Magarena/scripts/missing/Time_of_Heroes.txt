@@ -1,0 +1,9 @@
+name=Time of Heroes
+url=http://magiccards.info/query?q=%21Time+of+Heroes
+image=http://mtgimage.com/card/time%20of%20heroes.jpg
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability=Each creature you control with a level counter on it gets +2/+2.
+timing=main
+oracle=Each creature you control with a level counter on it gets +2/+2.

@@ -1,0 +1,12 @@
+name=Squeaking Pie Sneak
+url=http://magiccards.info/query?q=%21Squeaking+Pie+Sneak
+image=http://mtgimage.com/card/squeaking%20pie%20sneak.jpg
+rarity=U
+type=Creature
+subtype=Goblin,Rogue
+cost={1}{B}
+pt=2/2
+ability=As an additional cost to cast SN, reveal a Goblin card from your hand or pay {3}.;\
+        Fear
+timing=main
+oracle=As an additional cost to cast Squeaking Pie Sneak, reveal a Goblin card from your hand or pay {3}. Fear

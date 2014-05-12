@@ -1,0 +1,9 @@
+name=Runesword
+url=http://magiccards.info/query?q=%21Runesword
+image=http://mtgimage.com/card/runesword.jpg
+rarity=U
+type=Artifact
+cost={6}
+ability={3}, {T}: Target attacking creature gets +2/+0 until end of turn. When that creature leaves the battlefield this turn, sacrifice SN. If the creature deals damage to a creature this turn, the creature dealt damage can't be regenerated this turn. If a creature dealt damage by the targeted creature would die this turn, exile that creature instead.
+timing=main
+oracle={3}, {T}: Target attacking creature gets +2/+0 until end of turn. When that creature leaves the battlefield this turn, sacrifice Runesword. If the creature deals damage to a creature this turn, the creature dealt damage can't be regenerated this turn. If a creature dealt damage by the targeted creature would die this turn, exile that creature instead.

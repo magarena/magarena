@@ -1,0 +1,9 @@
+name=Mystic Compass
+url=http://magiccards.info/query?q=%21Mystic+Compass
+image=http://mtgimage.com/card/mystic%20compass.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={1}, {T}: Target land becomes the basic land type of your choice until end of turn.
+timing=main
+oracle={1}, {T}: Target land becomes the basic land type of your choice until end of turn.

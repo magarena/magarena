@@ -1,0 +1,11 @@
+name=Merfolk Assassin
+url=http://magiccards.info/query?q=%21Merfolk+Assassin
+image=http://mtgimage.com/card/merfolk%20assassin.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Assassin
+cost={U}{U}
+pt=1/2
+ability={T}: Destroy target creature with islandwalk.
+timing=main
+oracle={T}: Destroy target creature with islandwalk.

@@ -1,0 +1,11 @@
+name=Phantom Whelp
+url=http://magiccards.info/query?q=%21Phantom+Whelp
+image=http://mtgimage.com/card/phantom%20whelp.jpg
+rarity=C
+type=Creature
+subtype=Illusion,Hound
+cost={1}{U}
+pt=2/2
+ability=When SN attacks or blocks, return it to its owner's hand at end of combat.
+timing=main
+oracle=When Phantom Whelp attacks or blocks, return it to its owner's hand at end of combat.

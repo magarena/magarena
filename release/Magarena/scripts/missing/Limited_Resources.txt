@@ -1,0 +1,10 @@
+name=Limited Resources
+url=http://magiccards.info/query?q=%21Limited+Resources
+image=http://mtgimage.com/card/limited%20resources.jpg
+rarity=R
+type=Enchantment
+cost={W}
+ability=When SN enters the battlefield, each player chooses five lands he or she controls and sacrifices the rest.;\
+        Players can't play lands as long as ten or more lands are on the battlefield.
+timing=main
+oracle=When Limited Resources enters the battlefield, each player chooses five lands he or she controls and sacrifices the rest. Players can't play lands as long as ten or more lands are on the battlefield.

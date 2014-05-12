@@ -1,0 +1,11 @@
+name=Norin the Wary
+url=http://magiccards.info/query?q=%21Norin+the+Wary
+image=http://mtgimage.com/card/norin%20the%20wary.jpg
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={R}
+pt=2/1
+ability=When a player casts a spell or a creature attacks, exile SN. Return it to the battlefield under its owner's control at the beginning of the next end step.
+timing=main
+oracle=When a player casts a spell or a creature attacks, exile Norin the Wary. Return it to the battlefield under its owner's control at the beginning of the next end step.

@@ -1,0 +1,12 @@
+name=Energy Vortex
+url=http://magiccards.info/query?q=%21Energy+Vortex
+image=http://mtgimage.com/card/energy%20vortex.jpg
+rarity=R
+type=Enchantment
+cost={3}{U}{U}
+ability=As SN enters the battlefield, choose an opponent.;\
+        At the beginning of your upkeep, remove all energy counters from SN.;\
+        At the beginning of the chosen player's upkeep, SN deals 3 damage to that player unless he or she pays {1} for each energy counter on SN.;\
+        {X}: Put X energy counters on SN. Activate this ability only during your upkeep.
+timing=main
+oracle=As Energy Vortex enters the battlefield, choose an opponent. At the beginning of your upkeep, remove all energy counters from Energy Vortex. At the beginning of the chosen player's upkeep, Energy Vortex deals 3 damage to that player unless he or she pays {1} for each energy counter on Energy Vortex. {X}: Put X energy counters on Energy Vortex. Activate this ability only during your upkeep.

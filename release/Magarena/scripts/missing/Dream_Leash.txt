@@ -1,0 +1,12 @@
+name=Dream Leash
+url=http://magiccards.info/query?q=%21Dream+Leash
+image=http://mtgimage.com/card/dream%20leash.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{U}{U}
+ability=Enchant permanent;\
+        You can't choose an untapped permanent as SN's target as you cast SN.;\
+        You control enchanted permanent.
+timing=main
+oracle=Enchant permanent. You can't choose an untapped permanent as Dream Leash's target as you cast Dream Leash. You control enchanted permanent.

@@ -1,0 +1,11 @@
+name=Braids, Conjurer Adept
+url=http://magiccards.info/query?q=%21Braids%2C+Conjurer+Adept
+image=http://mtgimage.com/card/braids%2C%20conjurer%20adept.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}{U}
+pt=2/2
+ability=At the beginning of each player's upkeep, that player may put an artifact, creature, or land card from his or her hand onto the battlefield.
+timing=main
+oracle=At the beginning of each player's upkeep, that player may put an artifact, creature, or land card from his or her hand onto the battlefield.

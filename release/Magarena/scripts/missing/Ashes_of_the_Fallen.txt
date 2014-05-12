@@ -1,0 +1,10 @@
+name=Ashes of the Fallen
+url=http://magiccards.info/query?q=%21Ashes+of+the+Fallen
+image=http://mtgimage.com/card/ashes%20of%20the%20fallen.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=As SN enters the battlefield, choose a creature type.;\
+        Each creature card in your graveyard has the chosen creature type in addition to its other types.
+timing=main
+oracle=As Ashes of the Fallen enters the battlefield, choose a creature type. Each creature card in your graveyard has the chosen creature type in addition to its other types.

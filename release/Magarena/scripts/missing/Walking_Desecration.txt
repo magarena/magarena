@@ -1,0 +1,11 @@
+name=Walking Desecration
+url=http://magiccards.info/query?q=%21Walking+Desecration
+image=http://mtgimage.com/card/walking%20desecration.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=1/1
+ability={B}, {T}: Creatures of the creature type of your choice attack this turn if able.
+timing=main
+oracle={B}, {T}: Creatures of the creature type of your choice attack this turn if able.

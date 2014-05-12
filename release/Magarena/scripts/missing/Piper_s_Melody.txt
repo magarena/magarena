@@ -1,0 +1,9 @@
+name=Piper's Melody
+url=http://magiccards.info/query?q=%21Piper%27s+Melody
+image=http://mtgimage.com/card/piper%27s%20melody.jpg
+rarity=U
+type=Sorcery
+cost={G}
+effect=Shuffle any number of target creature cards from your graveyard into your library.
+timing=main
+oracle=Shuffle any number of target creature cards from your graveyard into your library.

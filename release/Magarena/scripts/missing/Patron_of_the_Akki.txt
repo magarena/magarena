@@ -1,0 +1,12 @@
+name=Patron of the Akki
+url=http://magiccards.info/query?q=%21Patron+of+the+Akki
+image=http://mtgimage.com/card/patron%20of%20the%20akki.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={4}{R}{R}
+pt=5/5
+ability=Goblin offering;\
+        Whenever SN attacks, creatures you control get +2/+0 until end of turn.
+timing=main
+oracle=Goblin offering. Whenever Patron of the Akki attacks, creatures you control get +2/+0 until end of turn.

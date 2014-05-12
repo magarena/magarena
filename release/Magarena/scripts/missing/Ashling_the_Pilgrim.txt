@@ -1,0 +1,11 @@
+name=Ashling the Pilgrim
+url=http://magiccards.info/query?q=%21Ashling+the+Pilgrim
+image=http://mtgimage.com/card/ashling%20the%20pilgrim.jpg
+rarity=R
+type=Creature
+subtype=Elemental,Shaman
+cost={1}{R}
+pt=1/1
+ability={1}{R}: Put a +1/+1 counter on SN. If this is the third time this ability has resolved this turn, remove all +1/+1 counters from SN, and it deals that much damage to each creature and each player.
+timing=main
+oracle={1}{R}: Put a +1/+1 counter on Ashling the Pilgrim. If this is the third time this ability has resolved this turn, remove all +1/+1 counters from Ashling the Pilgrim, and it deals that much damage to each creature and each player.

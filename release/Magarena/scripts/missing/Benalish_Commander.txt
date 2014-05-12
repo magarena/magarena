@@ -1,0 +1,13 @@
+name=Benalish Commander
+url=http://magiccards.info/query?q=%21Benalish+Commander
+image=http://mtgimage.com/card/benalish%20commander.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of Soldiers you control.;\
+        Suspend X—{X}{W}{W}. X can't be 0.;\
+        Whenever a time counter is removed from SN while it's exiled, put a 1/1 white Soldier creature token onto the battlefield.
+timing=main
+oracle=Benalish Commander's power and toughness are each equal to the number of Soldiers you control. Suspend X—{X}{W}{W}. X can't be 0.. Whenever a time counter is removed from Benalish Commander while it's exiled, put a 1/1 white Soldier creature token onto the battlefield.

@@ -1,0 +1,9 @@
+name=Frost Breath
+url=http://magiccards.info/query?q=%21Frost+Breath
+image=http://mtgimage.com/card/frost%20breath.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
+timing=removal
+oracle=Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.

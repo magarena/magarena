@@ -1,0 +1,11 @@
+name=Metalworker
+url=http://magiccards.info/query?q=%21Metalworker
+image=http://mtgimage.com/card/metalworker.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=1/2
+ability={T}: Reveal any number of artifact cards in your hand. Add {2} to your mana pool for each card revealed this way.
+timing=main
+oracle={T}: Reveal any number of artifact cards in your hand. Add {2} to your mana pool for each card revealed this way.

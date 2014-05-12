@@ -1,0 +1,9 @@
+name=Seek the Horizon
+url=http://magiccards.info/query?q=%21Seek+the+Horizon
+image=http://mtgimage.com/card/seek%20the%20horizon.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Search your library for up to three basic land cards, reveal them, and put them into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for up to three basic land cards, reveal them, and put them into your hand. Then shuffle your library.

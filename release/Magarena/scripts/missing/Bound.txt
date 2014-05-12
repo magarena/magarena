@@ -1,0 +1,9 @@
+name=Bound
+url=http://magiccards.info/query?q=%21Bound
+image=http://mtgimage.com/card/bounddetermined.jpg
+rarity=R
+type=Instant
+cost={3}{B}{G}
+effect=Sacrifice a creature. Return up to X cards from your graveyard to your hand, where X is the number of colors that creature was. Exile this card.
+timing=removal
+oracle=Sacrifice a creature. Return up to X cards from your graveyard to your hand, where X is the number of colors that creature was. Exile this card.

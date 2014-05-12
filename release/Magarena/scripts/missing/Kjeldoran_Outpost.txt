@@ -1,0 +1,10 @@
+name=Kjeldoran Outpost
+url=http://magiccards.info/query?q=%21Kjeldoran+Outpost
+image=http://mtgimage.com/card/kjeldoran%20outpost.jpg
+rarity=R
+type=Land
+ability=If SN would enter the battlefield, sacrifice a Plains instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
+        {T}: Add {W} to your mana pool.;\
+        {1}{W}, {T}: Put a 1/1 white Soldier creature token onto the battlefield.
+timing=main
+oracle=If Kjeldoran Outpost would enter the battlefield, sacrifice a Plains instead. If you do, put Kjeldoran Outpost onto the battlefield. If you don't, put it into its owner's graveyard. {T}: Add {W} to your mana pool. {1}{W}, {T}: Put a 1/1 white Soldier creature token onto the battlefield.

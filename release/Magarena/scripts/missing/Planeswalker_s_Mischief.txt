@@ -1,0 +1,9 @@
+name=Planeswalker's Mischief
+url=http://magiccards.info/query?q=%21Planeswalker%27s+Mischief
+image=http://mtgimage.com/card/planeswalker%27s%20mischief.jpg
+rarity=R
+type=Enchantment
+cost={2}{U}
+ability={3}{U}: Target opponent reveals a card at random from his or her hand. If it's an instant or sorcery card, exile it. You may cast it without paying its mana cost for as long as it remains exiled. At the beginning of the next end step, if you haven't cast it, return it to its owner's hand. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={3}{U}: Target opponent reveals a card at random from his or her hand. If it's an instant or sorcery card, exile it. You may cast it without paying its mana cost for as long as it remains exiled. At the beginning of the next end step, if you haven't cast it, return it to its owner's hand. Activate this ability only any time you could cast a sorcery.

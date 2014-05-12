@@ -1,0 +1,11 @@
+name=Morgue Toad
+url=http://magiccards.info/query?q=%21Morgue+Toad
+image=http://mtgimage.com/card/morgue%20toad.jpg
+rarity=C
+type=Creature
+subtype=Frog
+cost={2}{B}
+pt=2/2
+ability=Sacrifice SN: Add {U}{R} to your mana pool.
+timing=main
+oracle=Sacrifice Morgue Toad: Add {U}{R} to your mana pool.

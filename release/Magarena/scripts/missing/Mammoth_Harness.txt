@@ -1,0 +1,12 @@
+name=Mammoth Harness
+url=http://magiccards.info/query?q=%21Mammoth+Harness
+image=http://mtgimage.com/card/mammoth%20harness.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{G}
+ability=Enchant creature;\
+        Enchanted creature loses flying.;\
+        Whenever enchanted creature blocks or becomes blocked by a creature, the other creature gains first strike until end of turn.
+timing=main
+oracle=Enchant creature. Enchanted creature loses flying. Whenever enchanted creature blocks or becomes blocked by a creature, the other creature gains first strike until end of turn.

@@ -1,0 +1,9 @@
+name=Catastrophe
+url=http://magiccards.info/query?q=%21Catastrophe
+image=http://mtgimage.com/card/catastrophe.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}{W}
+effect=Destroy all lands or all creatures. Creatures destroyed this way can't be regenerated.
+timing=main
+oracle=Destroy all lands or all creatures. Creatures destroyed this way can't be regenerated.

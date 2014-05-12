@@ -1,0 +1,10 @@
+name=Burn
+url=http://magiccards.info/query?q=%21Burn
+image=http://mtgimage.com/card/turnburn.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=SN deals 2 damage to target creature or player.;\
+        Fuse
+timing=removal
+oracle=Burn deals 2 damage to target creature or player. Fuse

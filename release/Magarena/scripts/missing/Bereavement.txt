@@ -1,0 +1,9 @@
+name=Bereavement
+url=http://magiccards.info/query?q=%21Bereavement
+image=http://mtgimage.com/card/bereavement.jpg
+rarity=U
+type=Enchantment
+cost={1}{B}
+ability=Whenever a green creature dies, its controller discards a card.
+timing=main
+oracle=Whenever a green creature dies, its controller discards a card.

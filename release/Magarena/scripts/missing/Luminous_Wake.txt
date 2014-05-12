@@ -1,0 +1,11 @@
+name=Luminous Wake
+url=http://magiccards.info/query?q=%21Luminous+Wake
+image=http://mtgimage.com/card/luminous%20wake.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        Whenever enchanted creature attacks or blocks, you gain 4 life.
+timing=main
+oracle=Enchant creature. Whenever enchanted creature attacks or blocks, you gain 4 life.

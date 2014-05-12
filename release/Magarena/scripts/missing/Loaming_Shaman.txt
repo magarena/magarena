@@ -1,0 +1,11 @@
+name=Loaming Shaman
+url=http://magiccards.info/query?q=%21Loaming+Shaman
+image=http://mtgimage.com/card/loaming%20shaman.jpg
+rarity=R
+type=Creature
+subtype=Centaur,Shaman
+cost={2}{G}
+pt=3/2
+ability=When SN enters the battlefield, target player shuffles any number of target cards from his or her graveyard into his or her library.
+timing=main
+oracle=When Loaming Shaman enters the battlefield, target player shuffles any number of target cards from his or her graveyard into his or her library.

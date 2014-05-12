@@ -1,0 +1,9 @@
+name=Upwelling
+url=http://magiccards.info/query?q=%21Upwelling
+image=http://mtgimage.com/card/upwelling.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=Mana pools don't empty as steps and phases end.
+timing=main
+oracle=Mana pools don't empty as steps and phases end.

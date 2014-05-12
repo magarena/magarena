@@ -1,0 +1,11 @@
+name=Orcish Spy
+url=http://magiccards.info/query?q=%21Orcish+Spy
+image=http://mtgimage.com/card/orcish%20spy1.jpg
+rarity=C
+type=Creature
+subtype=Orc,Rogue
+cost={R}
+pt=1/1
+ability={T}: Look at the top three cards of target player's library.
+timing=main
+oracle={T}: Look at the top three cards of target player's library.

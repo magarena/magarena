@@ -1,0 +1,12 @@
+name=Renegade Krasis
+url=http://magiccards.info/query?q=%21Renegade+Krasis
+image=http://mtgimage.com/card/renegade%20krasis.jpg
+rarity=R
+type=Creature
+subtype=Beast,Mutant
+cost={1}{G}{G}
+pt=3/2
+ability=Evolve;\
+        Whenever SN evolves, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.
+timing=main
+oracle=Evolve. Whenever Renegade Krasis evolves, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.

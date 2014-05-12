@@ -1,0 +1,11 @@
+name=Death Watch
+url=http://magiccards.info/query?q=%21Death+Watch
+image=http://mtgimage.com/card/death%20watch.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant creature;\
+        When enchanted creature dies, its controller loses life equal to its power and you gain life equal to its toughness.
+timing=main
+oracle=Enchant creature. When enchanted creature dies, its controller loses life equal to its power and you gain life equal to its toughness.

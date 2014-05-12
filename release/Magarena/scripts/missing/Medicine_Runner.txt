@@ -1,0 +1,11 @@
+name=Medicine Runner
+url=http://magiccards.info/query?q=%21Medicine+Runner
+image=http://mtgimage.com/card/medicine%20runner.jpg
+rarity=C
+type=Creature
+subtype=Elf,Cleric
+cost={1}{G/W}
+pt=2/1
+ability=When SN enters the battlefield, you may remove a counter from target permanent.
+timing=main
+oracle=When Medicine Runner enters the battlefield, you may remove a counter from target permanent.

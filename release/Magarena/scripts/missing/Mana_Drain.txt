@@ -1,0 +1,9 @@
+name=Mana Drain
+url=http://magiccards.info/query?q=%21Mana+Drain
+image=http://mtgimage.com/card/mana%20drain.jpg
+rarity=U
+type=Instant
+cost={U}{U}
+effect=Counter target spell. At the beginning of your next main phase, add {X} to your mana pool, where X is that spell's converted mana cost.
+timing=removal
+oracle=Counter target spell. At the beginning of your next main phase, add {X} to your mana pool, where X is that spell's converted mana cost.

@@ -1,0 +1,12 @@
+name=Gleancrawler
+url=http://magiccards.info/query?q=%21Gleancrawler
+image=http://mtgimage.com/card/gleancrawler.jpg
+rarity=R
+type=Creature
+subtype=Insect,Horror
+cost={3}{B/G}{B/G}{B/G}
+pt=6/6
+ability=Trample;\
+        At the beginning of your end step, return to your hand all creature cards in your graveyard that were put there from the battlefield this turn.
+timing=main
+oracle=Trample. At the beginning of your end step, return to your hand all creature cards in your graveyard that were put there from the battlefield this turn.

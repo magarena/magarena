@@ -1,0 +1,11 @@
+name=Dread Warlock
+url=http://magiccards.info/query?q=%21Dread+Warlock
+image=http://mtgimage.com/card/dread%20warlock.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{B}{B}
+pt=2/2
+ability=SN can't be blocked except by black creatures.
+timing=main
+oracle=Dread Warlock can't be blocked except by black creatures.

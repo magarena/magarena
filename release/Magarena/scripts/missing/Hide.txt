@@ -1,0 +1,9 @@
+name=Hide
+url=http://magiccards.info/query?q=%21Hide
+image=http://mtgimage.com/card/hideseek.jpg
+rarity=R
+type=Instant
+cost={R}{W}
+effect=Put target artifact or enchantment on the bottom of its owner's library.
+timing=removal
+oracle=Put target artifact or enchantment on the bottom of its owner's library.

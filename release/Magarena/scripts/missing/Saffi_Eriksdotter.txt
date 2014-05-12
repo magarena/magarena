@@ -1,0 +1,11 @@
+name=Saffi Eriksdotter
+url=http://magiccards.info/query?q=%21Saffi+Eriksdotter
+image=http://mtgimage.com/card/saffi%20eriksdotter.jpg
+rarity=R
+type=Creature
+subtype=Human,Scout
+cost={G}{W}
+pt=2/2
+ability=Sacrifice SN: When target creature is put into your graveyard from the battlefield this turn, return that card to the battlefield.
+timing=main
+oracle=Sacrifice Saffi Eriksdotter: When target creature is put into your graveyard from the battlefield this turn, return that card to the battlefield.

@@ -1,0 +1,10 @@
+name=Full Moon's Rise
+url=http://magiccards.info/query?q=%21Full+Moon%27s+Rise
+image=http://mtgimage.com/card/full%20moon%27s%20rise.jpg
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=Werewolf creatures you control get +1/+0 and have trample.;\
+        Sacrifice SN: Regenerate all Werewolf creatures you control.
+timing=main
+oracle=Werewolf creatures you control get +1/+0 and have trample. Sacrifice Full Moon's Rise: Regenerate all Werewolf creatures you control.

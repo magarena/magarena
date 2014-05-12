@@ -1,0 +1,10 @@
+name=Jeweled Bird
+url=http://magiccards.info/query?q=%21Jeweled+Bird
+image=http://mtgimage.com/card/jeweled%20bird.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability=Remove SN from your deck before playing if you're not playing for ante.;\
+        {T}: Put SN into the ante. If you do, put all other cards you own from the ante into your graveyard, then draw a card.
+timing=main
+oracle=Remove Jeweled Bird from your deck before playing if you're not playing for ante. {T}: Put Jeweled Bird into the ante. If you do, put all other cards you own from the ante into your graveyard, then draw a card.

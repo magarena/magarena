@@ -1,0 +1,9 @@
+name=Dramatic Rescue
+url=http://magiccards.info/query?q=%21Dramatic+Rescue
+image=http://mtgimage.com/card/dramatic%20rescue.jpg
+rarity=C
+type=Instant
+cost={W}{U}
+effect=Return target creature to its owner's hand. You gain 2 life.
+timing=removal
+oracle=Return target creature to its owner's hand. You gain 2 life.

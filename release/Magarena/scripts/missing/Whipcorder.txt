@@ -1,0 +1,12 @@
+name=Whipcorder
+url=http://magiccards.info/query?q=%21Whipcorder
+image=http://mtgimage.com/card/whipcorder.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier,Rebel
+cost={W}{W}
+pt=2/2
+ability={W}, {T}: Tap target creature.;\
+        Morph {W}
+timing=main
+oracle={W}, {T}: Tap target creature. Morph {W}

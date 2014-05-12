@@ -1,0 +1,9 @@
+name=Diversionary Tactics
+url=http://magiccards.info/query?q=%21Diversionary+Tactics
+image=http://mtgimage.com/card/diversionary%20tactics.jpg
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=Tap two untapped creatures you control: Tap target creature.
+timing=main
+oracle=Tap two untapped creatures you control: Tap target creature.

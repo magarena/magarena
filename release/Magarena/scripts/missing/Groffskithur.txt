@@ -1,0 +1,11 @@
+name=Groffskithur
+url=http://magiccards.info/query?q=%21Groffskithur
+image=http://mtgimage.com/card/groffskithur.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={5}{G}
+pt=3/3
+ability=Whenever SN becomes blocked, you may return target card named SN from your graveyard to your hand.
+timing=main
+oracle=Whenever Groffskithur becomes blocked, you may return target card named Groffskithur from your graveyard to your hand.

@@ -1,0 +1,9 @@
+name=Fall of the Hammer
+url=http://magiccards.info/query?q=%21Fall+of+the+Hammer
+image=http://mtgimage.com/card/fall%20of%20the%20hammer.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Target creature you control deals damage equal to its power to another target creature.
+timing=removal
+oracle=Target creature you control deals damage equal to its power to another target creature.

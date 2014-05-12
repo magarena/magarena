@@ -1,0 +1,9 @@
+name=Echo Chamber
+url=http://magiccards.info/query?q=%21Echo+Chamber
+image=http://mtgimage.com/card/echo%20chamber.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={4}, {T}: An opponent chooses target creature he or she controls. Put a token that's a copy of that creature onto the battlefield. That token gains haste until end of turn. Exile the token at the beginning of the next end step. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={4}, {T}: An opponent chooses target creature he or she controls. Put a token that's a copy of that creature onto the battlefield. That token gains haste until end of turn. Exile the token at the beginning of the next end step. Activate this ability only any time you could cast a sorcery.

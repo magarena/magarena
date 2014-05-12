@@ -1,0 +1,9 @@
+name=Time Spiral
+url=http://magiccards.info/query?q=%21Time+Spiral
+image=http://mtgimage.com/card/time%20spiral.jpg
+rarity=R
+type=Sorcery
+cost={4}{U}{U}
+effect=Exile SN. Each player shuffles his or her graveyard and hand into his or her library, then draws seven cards. You untap up to six lands.
+timing=main
+oracle=Exile Time Spiral. Each player shuffles his or her graveyard and hand into his or her library, then draws seven cards. You untap up to six lands.

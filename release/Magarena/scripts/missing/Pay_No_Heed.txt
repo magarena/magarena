@@ -1,0 +1,9 @@
+name=Pay No Heed
+url=http://magiccards.info/query?q=%21Pay+No+Heed
+image=http://mtgimage.com/card/pay%20no%20heed.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Prevent all damage a source of your choice would deal this turn.
+timing=removal
+oracle=Prevent all damage a source of your choice would deal this turn.

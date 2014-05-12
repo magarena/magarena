@@ -1,0 +1,13 @@
+name=Thelonite Hermit
+url=http://magiccards.info/query?q=%21Thelonite+Hermit
+image=http://mtgimage.com/card/thelonite%20hermit.jpg
+rarity=R
+type=Creature
+subtype=Elf,Shaman
+cost={3}{G}
+pt=1/1
+ability=Saproling creatures get +1/+1.;\
+        Morph {3}{G}{G};\
+        When SN is turned face up, put four 1/1 green Saproling creature tokens onto the battlefield.
+timing=main
+oracle=Saproling creatures get +1/+1. Morph {3}{G}{G}. When Thelonite Hermit is turned face up, put four 1/1 green Saproling creature tokens onto the battlefield.

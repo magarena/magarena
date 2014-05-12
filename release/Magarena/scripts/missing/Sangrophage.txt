@@ -1,0 +1,11 @@
+name=Sangrophage
+url=http://magiccards.info/query?q=%21Sangrophage
+image=http://mtgimage.com/card/sangrophage.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={B}{B}
+pt=3/3
+ability=At the beginning of your upkeep, tap SN unless you pay 2 life.
+timing=main
+oracle=At the beginning of your upkeep, tap Sangrophage unless you pay 2 life.

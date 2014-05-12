@@ -1,0 +1,9 @@
+name=Sway of the Stars
+url=http://magiccards.info/query?q=%21Sway+of+the+Stars
+image=http://mtgimage.com/card/sway%20of%20the%20stars.jpg
+rarity=R
+type=Sorcery
+cost={8}{U}{U}
+effect=Each player shuffles his or her hand, graveyard, and permanents he or she owns into his or her library, then draws seven cards. Each player's life total becomes 7.
+timing=main
+oracle=Each player shuffles his or her hand, graveyard, and permanents he or she owns into his or her library, then draws seven cards. Each player's life total becomes 7.

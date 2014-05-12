@@ -1,0 +1,9 @@
+name=Living Wish
+url=http://magiccards.info/query?q=%21Living+Wish
+image=http://mtgimage.com/card/living%20wish.jpg
+rarity=R
+type=Sorcery
+cost={1}{G}
+effect=You may choose a creature or land card you own from outside the game, reveal that card, and put it into your hand. Exile SN.
+timing=main
+oracle=You may choose a creature or land card you own from outside the game, reveal that card, and put it into your hand. Exile Living Wish.

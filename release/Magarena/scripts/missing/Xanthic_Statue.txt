@@ -1,0 +1,9 @@
+name=Xanthic Statue
+url=http://magiccards.info/query?q=%21Xanthic+Statue
+image=http://mtgimage.com/card/xanthic%20statue.jpg
+rarity=R
+type=Artifact
+cost={8}
+ability={5}: Until end of turn, SN becomes an 8/8 Golem artifact creature with trample.
+timing=main
+oracle={5}: Until end of turn, Xanthic Statue becomes an 8/8 Golem artifact creature with trample.

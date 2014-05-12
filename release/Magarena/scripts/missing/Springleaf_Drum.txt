@@ -1,0 +1,9 @@
+name=Springleaf Drum
+url=http://magiccards.info/query?q=%21Springleaf+Drum
+image=http://mtgimage.com/card/springleaf%20drum.jpg
+rarity=C
+type=Artifact
+cost={1}
+ability={T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.
+timing=main
+oracle={T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.

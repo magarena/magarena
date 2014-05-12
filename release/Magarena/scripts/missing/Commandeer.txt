@@ -1,0 +1,10 @@
+name=Commandeer
+url=http://magiccards.info/query?q=%21Commandeer
+image=http://mtgimage.com/card/commandeer.jpg
+rarity=R
+type=Instant
+cost={5}{U}{U}
+effect=You may exile two blue cards from your hand rather than pay SN's mana cost.;\
+        Gain control of target noncreature spell. You may choose new targets for it.
+timing=removal
+oracle=You may exile two blue cards from your hand rather than pay Commandeer's mana cost. Gain control of target noncreature spell. You may choose new targets for it.

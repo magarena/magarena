@@ -1,0 +1,12 @@
+name=Cunning Bandit
+url=http://magiccards.info/query?q=%21Cunning+Bandit
+image=http://mtgimage.com/card/cunning%20bandit.jpg
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={1}{R}{R}
+pt=2/2
+ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
+        At the beginning of the end step, if there are two or more ki counters on SN, you may flip it.
+timing=main
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Cunning Bandit. At the beginning of the end step, if there are two or more ki counters on Cunning Bandit, you may flip it.

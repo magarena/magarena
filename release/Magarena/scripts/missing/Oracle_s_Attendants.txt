@@ -1,0 +1,11 @@
+name=Oracle's Attendants
+url=http://magiccards.info/query?q=%21Oracle%27s+Attendants
+image=http://mtgimage.com/card/oracle%27s%20attendants.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=1/5
+ability={T}: All damage that would be dealt to target creature this turn by a source of your choice is dealt to SN instead.
+timing=main
+oracle={T}: All damage that would be dealt to target creature this turn by a source of your choice is dealt to Oracle's Attendants instead.

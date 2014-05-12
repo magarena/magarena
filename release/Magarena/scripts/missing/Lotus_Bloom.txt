@@ -1,0 +1,9 @@
+name=Lotus Bloom
+url=http://magiccards.info/query?q=%21Lotus+Bloom
+image=http://mtgimage.com/card/lotus%20bloom.jpg
+rarity=R
+type=Artifact
+ability=Suspend 3—{0};\
+        {T}, Sacrifice SN: Add three mana of any one color to your mana pool.
+timing=main
+oracle=Suspend 3—{0}. {T}, Sacrifice Lotus Bloom: Add three mana of any one color to your mana pool.

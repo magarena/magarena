@@ -1,0 +1,12 @@
+name=Shinen of Life's Roar
+url=http://magiccards.info/query?q=%21Shinen+of+Life%27s+Roar
+image=http://mtgimage.com/card/shinen%20of%20life%27s%20roar.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={1}{G}
+pt=1/2
+ability=All creatures able to block SN do so.;\
+        Channel — {2}{G}{G}, Discard SN: All creatures able to block target creature this turn do so.
+timing=main
+oracle=All creatures able to block Shinen of Life's Roar do so. Channel — {2}{G}{G}, Discard Shinen of Life's Roar: All creatures able to block target creature this turn do so.

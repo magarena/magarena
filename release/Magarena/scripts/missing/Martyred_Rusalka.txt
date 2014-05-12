@@ -1,0 +1,11 @@
+name=Martyred Rusalka
+url=http://magiccards.info/query?q=%21Martyred+Rusalka
+image=http://mtgimage.com/card/martyred%20rusalka.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={W}
+pt=1/1
+ability={W}, Sacrifice a creature: Target creature can't attack this turn.
+timing=main
+oracle={W}, Sacrifice a creature: Target creature can't attack this turn.

@@ -1,0 +1,11 @@
+name=Nessian Game Warden
+url=http://magiccards.info/query?q=%21Nessian+Game+Warden
+image=http://mtgimage.com/card/nessian%20game%20warden.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{G}{G}
+pt=4/5
+ability=When SN enters the battlefield, look at the top X cards of your library, where X is the number of Forests you control. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=When Nessian Game Warden enters the battlefield, look at the top X cards of your library, where X is the number of Forests you control. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

@@ -1,0 +1,11 @@
+name=Heartwood Giant
+url=http://magiccards.info/query?q=%21Heartwood+Giant
+image=http://mtgimage.com/card/heartwood%20giant.jpg
+rarity=R
+type=Creature
+subtype=Giant
+cost={3}{G}{G}
+pt=4/4
+ability={T}, Sacrifice a Forest: SN deals 2 damage to target player.
+timing=main
+oracle={T}, Sacrifice a Forest: Heartwood Giant deals 2 damage to target player.

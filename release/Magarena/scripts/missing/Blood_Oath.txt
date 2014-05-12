@@ -1,0 +1,9 @@
+name=Blood Oath
+url=http://magiccards.info/query?q=%21Blood+Oath
+image=http://mtgimage.com/card/blood%20oath.jpg
+rarity=R
+type=Instant
+cost={3}{R}
+effect=Choose a card type. Target opponent reveals his or her hand. SN deals 3 damage to that player for each card of the chosen type revealed this way.
+timing=removal
+oracle=Choose a card type. Target opponent reveals his or her hand. Blood Oath deals 3 damage to that player for each card of the chosen type revealed this way.

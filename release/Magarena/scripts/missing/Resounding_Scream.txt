@@ -1,0 +1,11 @@
+name=Resounding Scream
+url=http://magiccards.info/query?q=%21Resounding+Scream
+image=http://mtgimage.com/card/resounding%20scream.jpg
+rarity=C
+type=Sorcery
+cost={2}{B}
+effect=Target player discards a card at random.;\
+        Cycling {5}{U}{B}{R};\
+        When you cycle SN, target player discards two cards at random.
+timing=main
+oracle=Target player discards a card at random. Cycling {5}{U}{B}{R}. When you cycle Resounding Scream, target player discards two cards at random.

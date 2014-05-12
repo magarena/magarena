@@ -1,0 +1,11 @@
+name=Augur of Bolas
+url=http://magiccards.info/query?q=%21Augur+of+Bolas
+image=http://mtgimage.com/card/augur%20of%20bolas.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=1/3
+ability=When SN enters the battlefield, look at the top three cards of your library. You may reveal an instant or sorcery card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=When Augur of Bolas enters the battlefield, look at the top three cards of your library. You may reveal an instant or sorcery card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

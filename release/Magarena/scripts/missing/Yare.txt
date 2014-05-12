@@ -1,0 +1,9 @@
+name=Yare
+url=http://magiccards.info/query?q=%21Yare
+image=http://mtgimage.com/card/yare.jpg
+rarity=R
+type=Instant
+cost={2}{W}
+effect=Target creature defending player controls gets +3/+0 until end of turn. That creature can block up to two additional creatures this turn.
+timing=removal
+oracle=Target creature defending player controls gets +3/+0 until end of turn. That creature can block up to two additional creatures this turn.

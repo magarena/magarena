@@ -1,0 +1,12 @@
+name=Tromokratis
+url=http://magiccards.info/query?q=%21Tromokratis
+image=http://mtgimage.com/card/tromokratis.jpg
+rarity=R
+type=Creature
+subtype=Kraken
+cost={5}{U}{U}
+pt=8/8
+ability=SN has hexproof unless it's attacking or blocking.;\
+        SN can't be blocked unless all creatures defending player controls block it.
+timing=main
+oracle=Tromokratis has hexproof unless it's attacking or blocking. Tromokratis can't be blocked unless all creatures defending player controls block it.

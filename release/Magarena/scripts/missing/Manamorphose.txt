@@ -1,0 +1,10 @@
+name=Manamorphose
+url=http://magiccards.info/query?q=%21Manamorphose
+image=http://mtgimage.com/card/manamorphose.jpg
+rarity=C
+type=Instant
+cost={1}{R/G}
+effect=Add two mana in any combination of colors to your mana pool.;\
+        Draw a card.
+timing=removal
+oracle=Add two mana in any combination of colors to your mana pool. Draw a card.

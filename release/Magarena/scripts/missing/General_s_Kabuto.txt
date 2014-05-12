@@ -1,0 +1,12 @@
+name=General's Kabuto
+url=http://magiccards.info/query?q=%21General%27s+Kabuto
+image=http://mtgimage.com/card/general%27s%20kabuto.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={4}
+ability=Equipped creature has shroud.;\
+        Prevent all combat damage that would be dealt to equipped creature.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature has shroud.. Prevent all combat damage that would be dealt to equipped creature. Equip {2}

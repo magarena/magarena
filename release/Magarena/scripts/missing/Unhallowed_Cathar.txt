@@ -1,0 +1,10 @@
+name=Unhallowed Cathar
+url=http://magiccards.info/query?q=%21Unhallowed+Cathar
+image=http://mtgimage.com/card/unhallowed%20cathar.jpg
+rarity=C
+type=Creature
+subtype=Zombie,Soldier
+pt=2/1
+ability=SN can't block.
+timing=main
+oracle=Unhallowed Cathar can't block.

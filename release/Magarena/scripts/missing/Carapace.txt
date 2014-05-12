@@ -1,0 +1,12 @@
+name=Carapace
+url=http://magiccards.info/query?q=%21Carapace
+image=http://mtgimage.com/card/carapace1.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchant creature;\
+        Enchanted creature gets +0/+2.;\
+        Sacrifice SN: Regenerate enchanted creature.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +0/+2. Sacrifice Carapace: Regenerate enchanted creature.

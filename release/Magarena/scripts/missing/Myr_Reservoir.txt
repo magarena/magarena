@@ -1,0 +1,10 @@
+name=Myr Reservoir
+url=http://magiccards.info/query?q=%21Myr+Reservoir
+image=http://mtgimage.com/card/myr%20reservoir.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability={T}: Add {2} to your mana pool. Spend this mana only to cast Myr spells or activate abilities of Myr.;\
+        {3}, {T}: Return target Myr card from your graveyard to your hand.
+timing=main
+oracle={T}: Add {2} to your mana pool. Spend this mana only to cast Myr spells or activate abilities of Myr. {3}, {T}: Return target Myr card from your graveyard to your hand.

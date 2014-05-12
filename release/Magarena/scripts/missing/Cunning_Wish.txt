@@ -1,0 +1,9 @@
+name=Cunning Wish
+url=http://magiccards.info/query?q=%21Cunning+Wish
+image=http://mtgimage.com/card/cunning%20wish.jpg
+rarity=R
+type=Instant
+cost={2}{U}
+effect=You may choose an instant card you own from outside the game, reveal that card, and put it into your hand. Exile SN.
+timing=removal
+oracle=You may choose an instant card you own from outside the game, reveal that card, and put it into your hand. Exile Cunning Wish.

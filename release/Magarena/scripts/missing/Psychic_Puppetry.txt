@@ -1,0 +1,11 @@
+name=Psychic Puppetry
+url=http://magiccards.info/query?q=%21Psychic+Puppetry
+image=http://mtgimage.com/card/psychic%20puppetry.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={1}{U}
+effect=You may tap or untap target permanent.;\
+        Splice onto Arcane {U}
+timing=removal
+oracle=You may tap or untap target permanent. Splice onto Arcane {U}

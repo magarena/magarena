@@ -1,0 +1,9 @@
+name=Rhystic Scrying
+url=http://magiccards.info/query?q=%21Rhystic+Scrying
+image=http://mtgimage.com/card/rhystic%20scrying.jpg
+rarity=U
+type=Sorcery
+cost={2}{U}{U}
+effect=Draw three cards. Then, if any player pays {2}, discard three cards.
+timing=main
+oracle=Draw three cards. Then, if any player pays {2}, discard three cards.

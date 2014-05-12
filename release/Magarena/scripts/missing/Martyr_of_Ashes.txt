@@ -1,0 +1,11 @@
+name=Martyr of Ashes
+url=http://magiccards.info/query?q=%21Martyr+of+Ashes
+image=http://mtgimage.com/card/martyr%20of%20ashes.jpg
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={R}
+pt=1/1
+ability={2}, Reveal X red cards from your hand, Sacrifice SN: SN deals X damage to each creature without flying.
+timing=main
+oracle={2}, Reveal X red cards from your hand, Sacrifice Martyr of Ashes: Martyr of Ashes deals X damage to each creature without flying.

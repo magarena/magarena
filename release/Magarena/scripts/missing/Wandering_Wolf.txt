@@ -1,0 +1,11 @@
+name=Wandering Wolf
+url=http://magiccards.info/query?q=%21Wandering+Wolf
+image=http://mtgimage.com/card/wandering%20wolf.jpg
+rarity=C
+type=Creature
+subtype=Wolf
+cost={1}{G}
+pt=2/1
+ability=Creatures with power less than SN's power can't block it.
+timing=main
+oracle=Creatures with power less than Wandering Wolf's power can't block it.

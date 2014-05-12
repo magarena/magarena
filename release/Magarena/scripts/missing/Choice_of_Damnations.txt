@@ -1,0 +1,10 @@
+name=Choice of Damnations
+url=http://magiccards.info/query?q=%21Choice+of+Damnations
+image=http://mtgimage.com/card/choice%20of%20damnations.jpg
+rarity=R
+type=Sorcery
+subtype=Arcane
+cost={5}{B}
+effect=Target opponent chooses a number. You may have that player lose that much life. If you don't, that player sacrifices all but that many permanents.
+timing=main
+oracle=Target opponent chooses a number. You may have that player lose that much life. If you don't, that player sacrifices all but that many permanents.

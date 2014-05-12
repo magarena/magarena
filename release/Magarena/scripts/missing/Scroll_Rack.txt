@@ -1,0 +1,9 @@
+name=Scroll Rack
+url=http://magiccards.info/query?q=%21Scroll+Rack
+image=http://mtgimage.com/card/scroll%20rack.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={1}, {T}: Exile any number of cards from your hand face down. Put that many cards from the top of your library into your hand. Then look at the exiled cards and put them on top of your library in any order.
+timing=main
+oracle={1}, {T}: Exile any number of cards from your hand face down. Put that many cards from the top of your library into your hand. Then look at the exiled cards and put them on top of your library in any order.

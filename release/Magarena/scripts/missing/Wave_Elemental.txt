@@ -1,0 +1,11 @@
+name=Wave Elemental
+url=http://magiccards.info/query?q=%21Wave+Elemental
+image=http://mtgimage.com/card/wave%20elemental.jpg
+rarity=U
+type=Creature
+subtype=Elemental
+cost={2}{U}{U}
+pt=2/3
+ability={U}, {T}, Sacrifice SN: Tap up to three target creatures without flying.
+timing=main
+oracle={U}, {T}, Sacrifice Wave Elemental: Tap up to three target creatures without flying.

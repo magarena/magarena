@@ -1,0 +1,9 @@
+name=Fire and Brimstone
+url=http://magiccards.info/query?q=%21Fire+and+Brimstone
+image=http://mtgimage.com/card/fire%20and%20brimstone.jpg
+rarity=U
+type=Instant
+cost={3}{W}{W}
+effect=SN deals 4 damage to target player who declared an attacking creature this turn and 4 damage to you.
+timing=removal
+oracle=Fire and Brimstone deals 4 damage to target player who declared an attacking creature this turn and 4 damage to you.

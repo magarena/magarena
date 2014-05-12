@@ -1,0 +1,12 @@
+name=Glissa Sunseeker
+url=http://magiccards.info/query?q=%21Glissa+Sunseeker
+image=http://mtgimage.com/card/glissa%20sunseeker.jpg
+rarity=R
+type=Creature
+subtype=Elf
+cost={2}{G}{G}
+pt=3/2
+ability=First strike;\
+        {T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.
+timing=main
+oracle=First strike. {T}: Destroy target artifact if its converted mana cost is equal to the amount of mana in your mana pool.

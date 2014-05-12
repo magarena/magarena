@@ -1,0 +1,11 @@
+name=Rust Scarab
+url=http://magiccards.info/query?q=%21Rust+Scarab
+image=http://mtgimage.com/card/rust%20scarab.jpg
+rarity=U
+type=Creature
+subtype=Insect
+cost={4}{G}
+pt=4/5
+ability=Whenever SN becomes blocked, you may destroy target artifact or enchantment defending player controls.
+timing=main
+oracle=Whenever Rust Scarab becomes blocked, you may destroy target artifact or enchantment defending player controls.

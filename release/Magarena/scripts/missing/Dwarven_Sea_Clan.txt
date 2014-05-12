@@ -1,0 +1,11 @@
+name=Dwarven Sea Clan
+url=http://magiccards.info/query?q=%21Dwarven+Sea+Clan
+image=http://mtgimage.com/card/dwarven%20sea%20clan.jpg
+rarity=R
+type=Creature
+subtype=Dwarf
+cost={2}{R}
+pt=1/1
+ability={T}: Choose target attacking or blocking creature whose controller controls an Island. SN deals 2 damage to that creature at end of combat. Activate this ability only before the end of combat step.
+timing=main
+oracle={T}: Choose target attacking or blocking creature whose controller controls an Island. Dwarven Sea Clan deals 2 damage to that creature at end of combat. Activate this ability only before the end of combat step.

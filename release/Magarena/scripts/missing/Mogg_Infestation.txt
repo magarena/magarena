@@ -1,0 +1,9 @@
+name=Mogg Infestation
+url=http://magiccards.info/query?q=%21Mogg+Infestation
+image=http://mtgimage.com/card/mogg%20infestation.jpg
+rarity=R
+type=Sorcery
+cost={3}{R}{R}
+effect=Destroy all creatures target player controls. For each creature that died this way, put two 1/1 red Goblin creature tokens onto the battlefield under that player's control.
+timing=main
+oracle=Destroy all creatures target player controls. For each creature that died this way, put two 1/1 red Goblin creature tokens onto the battlefield under that player's control.

@@ -1,0 +1,9 @@
+name=Beacon of Immortality
+url=http://magiccards.info/query?q=%21Beacon+of+Immortality
+image=http://mtgimage.com/card/beacon%20of%20immortality.jpg
+rarity=R
+type=Instant
+cost={5}{W}
+effect=Double target player's life total. Shuffle SN into its owner's library.
+timing=removal
+oracle=Double target player's life total. Shuffle Beacon of Immortality into its owner's library.

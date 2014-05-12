@@ -1,0 +1,11 @@
+name=Mosstodon
+url=http://magiccards.info/query?q=%21Mosstodon
+image=http://mtgimage.com/card/mosstodon.jpg
+rarity=C
+type=Creature
+subtype=Plant,Elephant
+cost={4}{G}
+pt=5/3
+ability={1}: Target creature with power 5 or greater gains trample until end of turn.
+timing=main
+oracle={1}: Target creature with power 5 or greater gains trample until end of turn.

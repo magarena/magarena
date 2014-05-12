@@ -1,0 +1,9 @@
+name=Stand Together
+url=http://magiccards.info/query?q=%21Stand+Together
+image=http://mtgimage.com/card/stand%20together.jpg
+rarity=U
+type=Instant
+cost={3}{G}{G}
+effect=Put two +1/+1 counters on target creature and two +1/+1 counters on another target creature.
+timing=removal
+oracle=Put two +1/+1 counters on target creature and two +1/+1 counters on another target creature.

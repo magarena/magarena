@@ -1,0 +1,11 @@
+name=Grim Lavamancer
+url=http://magiccards.info/query?q=%21Grim+Lavamancer
+image=http://mtgimage.com/card/grim%20lavamancer.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={R}
+pt=1/1
+ability={R}, {T}, Exile two cards from your graveyard: SN deals 2 damage to target creature or player.
+timing=main
+oracle={R}, {T}, Exile two cards from your graveyard: Grim Lavamancer deals 2 damage to target creature or player.

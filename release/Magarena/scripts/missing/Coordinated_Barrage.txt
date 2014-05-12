@@ -1,0 +1,9 @@
+name=Coordinated Barrage
+url=http://magiccards.info/query?q=%21Coordinated+Barrage
+image=http://mtgimage.com/card/coordinated%20barrage.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Choose a creature type. SN deals damage to target attacking or blocking creature equal to the number of permanents you control of the chosen type.
+timing=removal
+oracle=Choose a creature type. Coordinated Barrage deals damage to target attacking or blocking creature equal to the number of permanents you control of the chosen type.

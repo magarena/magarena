@@ -1,0 +1,9 @@
+name=Acquire
+url=http://magiccards.info/query?q=%21Acquire
+image=http://mtgimage.com/card/acquire.jpg
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+effect=Search target opponent's library for an artifact card and put that card onto the battlefield under your control. Then that player shuffles his or her library.
+timing=main
+oracle=Search target opponent's library for an artifact card and put that card onto the battlefield under your control. Then that player shuffles his or her library.

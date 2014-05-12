@@ -1,0 +1,11 @@
+name=Pestilent Souleater
+url=http://magiccards.info/query?q=%21Pestilent+Souleater
+image=http://mtgimage.com/card/pestilent%20souleater.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Insect
+cost={5}
+pt=3/3
+ability={P/B}: SN gains infect until end of turn.
+timing=main
+oracle={P/B}: Pestilent Souleater gains infect until end of turn.

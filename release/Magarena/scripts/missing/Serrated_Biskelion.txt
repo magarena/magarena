@@ -1,0 +1,11 @@
+name=Serrated Biskelion
+url=http://magiccards.info/query?q=%21Serrated+Biskelion
+image=http://mtgimage.com/card/serrated%20biskelion.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=2/2
+ability={T}: Put a -1/-1 counter on SN and a -1/-1 counter on target creature.
+timing=main
+oracle={T}: Put a -1/-1 counter on Serrated Biskelion and a -1/-1 counter on target creature.

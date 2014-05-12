@@ -1,0 +1,11 @@
+name=Essence of the Wild
+url=http://magiccards.info/query?q=%21Essence+of+the+Wild
+image=http://mtgimage.com/card/essence%20of%20the%20wild.jpg
+rarity=M
+type=Creature
+subtype=Avatar
+cost={3}{G}{G}{G}
+pt=6/6
+ability=Creatures you control enter the battlefield as a copy of SN.
+timing=main
+oracle=Creatures you control enter the battlefield as a copy of Essence of the Wild.

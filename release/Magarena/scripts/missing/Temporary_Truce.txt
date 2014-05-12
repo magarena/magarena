@@ -1,0 +1,9 @@
+name=Temporary Truce
+url=http://magiccards.info/query?q=%21Temporary+Truce
+image=http://mtgimage.com/card/temporary%20truce.jpg
+rarity=R
+type=Sorcery
+cost={1}{W}
+effect=Each player may draw up to two cards. For each card less than two a player draws this way, that player gains 2 life.
+timing=main
+oracle=Each player may draw up to two cards. For each card less than two a player draws this way, that player gains 2 life.

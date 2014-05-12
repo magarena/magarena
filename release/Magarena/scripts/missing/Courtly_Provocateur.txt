@@ -1,0 +1,12 @@
+name=Courtly Provocateur
+url=http://magiccards.info/query?q=%21Courtly+Provocateur
+image=http://mtgimage.com/card/courtly%20provocateur.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/1
+ability={T}: Target creature attacks this turn if able.;\
+        {T}: Target creature blocks this turn if able.
+timing=main
+oracle={T}: Target creature attacks this turn if able. {T}: Target creature blocks this turn if able.

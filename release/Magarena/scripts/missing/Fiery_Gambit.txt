@@ -1,0 +1,9 @@
+name=Fiery Gambit
+url=http://magiccards.info/query?q=%21Fiery+Gambit
+image=http://mtgimage.com/card/fiery%20gambit.jpg
+rarity=R
+type=Sorcery
+cost={2}{R}
+effect=Flip a coin until you lose a flip or choose to stop flipping. If you lose a flip, SN has no effect. If you win one or more flips, SN deals 3 damage to target creature. If you win two or more flips, SN deals 6 damage to each opponent. If you win three or more flips, draw nine cards and untap all lands you control.
+timing=main
+oracle=Flip a coin until you lose a flip or choose to stop flipping. If you lose a flip, Fiery Gambit has no effect. If you win one or more flips, Fiery Gambit deals 3 damage to target creature. If you win two or more flips, Fiery Gambit deals 6 damage to each opponent. If you win three or more flips, draw nine cards and untap all lands you control.

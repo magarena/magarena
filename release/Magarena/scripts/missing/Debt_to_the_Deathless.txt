@@ -1,0 +1,9 @@
+name=Debt to the Deathless
+url=http://magiccards.info/query?q=%21Debt+to+the+Deathless
+image=http://mtgimage.com/card/debt%20to%20the%20deathless.jpg
+rarity=U
+type=Sorcery
+cost={X}{W}{W}{B}{B}
+effect=Each opponent loses two times X life. You gain life equal to the life lost this way.
+timing=main
+oracle=Each opponent loses two times X life. You gain life equal to the life lost this way.

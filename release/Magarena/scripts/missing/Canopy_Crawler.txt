@@ -1,0 +1,12 @@
+name=Canopy Crawler
+url=http://magiccards.info/query?q=%21Canopy+Crawler
+image=http://mtgimage.com/card/canopy%20crawler.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{G}
+pt=2/2
+ability=Amplify 1;\
+        {T}: Target creature gets +1/+1 until end of turn for each +1/+1 counter on SN.
+timing=main
+oracle=Amplify 1. {T}: Target creature gets +1/+1 until end of turn for each +1/+1 counter on Canopy Crawler.

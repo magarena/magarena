@@ -1,0 +1,12 @@
+name=Adarkar Windform
+url=http://magiccards.info/query?q=%21Adarkar+Windform
+image=http://mtgimage.com/card/adarkar%20windform.jpg
+rarity=U
+type=Creature
+subtype=Illusion
+cost={4}{U}
+pt=3/3
+ability=Flying;\
+        {1}{S}: Target creature loses flying until end of turn.
+timing=main
+oracle=Flying. {1}{S}: Target creature loses flying until end of turn.

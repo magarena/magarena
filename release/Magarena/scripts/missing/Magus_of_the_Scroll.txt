@@ -1,0 +1,11 @@
+name=Magus of the Scroll
+url=http://magiccards.info/query?q=%21Magus+of+the+Scroll
+image=http://mtgimage.com/card/magus%20of%20the%20scroll.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={R}
+pt=1/1
+ability={3}, {T}: Name a card. Reveal a card at random from your hand. If it's the named card, SN deals 2 damage to target creature or player.
+timing=main
+oracle={3}, {T}: Name a card. Reveal a card at random from your hand. If it's the named card, Magus of the Scroll deals 2 damage to target creature or player.

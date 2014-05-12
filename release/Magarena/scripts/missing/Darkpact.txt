@@ -1,0 +1,10 @@
+name=Darkpact
+url=http://magiccards.info/query?q=%21Darkpact
+image=http://mtgimage.com/card/darkpact.jpg
+rarity=R
+type=Sorcery
+cost={B}{B}{B}
+effect=Remove SN from your deck before playing if you're not playing for ante.;\
+        You own target card in the ante. Exchange that card with the top card of your library.
+timing=main
+oracle=Remove Darkpact from your deck before playing if you're not playing for ante. You own target card in the ante. Exchange that card with the top card of your library.

@@ -1,0 +1,9 @@
+name=Planar Overlay
+url=http://magiccards.info/query?q=%21Planar+Overlay
+image=http://mtgimage.com/card/planar%20overlay.jpg
+rarity=R
+type=Sorcery
+cost={2}{U}
+effect=Each player chooses a land he or she controls of each basic land type. Return those lands to their owners' hands.
+timing=main
+oracle=Each player chooses a land he or she controls of each basic land type. Return those lands to their owners' hands.

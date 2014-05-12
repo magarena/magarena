@@ -1,0 +1,11 @@
+name=Aboroth
+url=http://magiccards.info/query?q=%21Aboroth
+image=http://mtgimage.com/card/aboroth.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{G}{G}
+pt=9/9
+ability=Cumulative upkeep—Put a -1/-1 counter on SN.
+timing=main
+oracle=Cumulative upkeep—Put a -1/-1 counter on Aboroth.

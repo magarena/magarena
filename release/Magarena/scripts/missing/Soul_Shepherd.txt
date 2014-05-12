@@ -1,0 +1,11 @@
+name=Soul Shepherd
+url=http://magiccards.info/query?q=%21Soul+Shepherd
+image=http://mtgimage.com/card/soul%20shepherd.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=2/1
+ability={W}, Exile a creature card from your graveyard: You gain 1 life.
+timing=main
+oracle={W}, Exile a creature card from your graveyard: You gain 1 life.

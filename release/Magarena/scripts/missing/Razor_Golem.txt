@@ -1,0 +1,12 @@
+name=Razor Golem
+url=http://magiccards.info/query?q=%21Razor+Golem
+image=http://mtgimage.com/card/razor%20golem.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=3/4
+ability=Affinity for Plains;\
+        Vigilance
+timing=main
+oracle=Affinity for Plains. Vigilance

@@ -1,0 +1,11 @@
+name=Segmented Wurm
+url=http://magiccards.info/query?q=%21Segmented+Wurm
+image=http://mtgimage.com/card/segmented%20wurm.jpg
+rarity=U
+type=Creature
+subtype=Wurm
+cost={3}{R}{G}
+pt=5/5
+ability=Whenever SN becomes the target of a spell or ability, put a -1/-1 counter on it.
+timing=main
+oracle=Whenever Segmented Wurm becomes the target of a spell or ability, put a -1/-1 counter on it.

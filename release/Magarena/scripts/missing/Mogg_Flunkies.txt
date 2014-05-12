@@ -1,0 +1,11 @@
+name=Mogg Flunkies
+url=http://magiccards.info/query?q=%21Mogg+Flunkies
+image=http://mtgimage.com/card/mogg%20flunkies.jpg
+rarity=C
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=3/3
+ability=SN can't attack or block alone.
+timing=main
+oracle=Mogg Flunkies can't attack or block alone.

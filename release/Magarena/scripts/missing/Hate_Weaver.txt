@@ -1,0 +1,11 @@
+name=Hate Weaver
+url=http://magiccards.info/query?q=%21Hate+Weaver
+image=http://mtgimage.com/card/hate%20weaver.jpg
+rarity=U
+type=Creature
+subtype=Zombie,Wizard
+cost={1}{B}
+pt=2/1
+ability={2}: Target blue or red creature gets +1/+0 until end of turn.
+timing=main
+oracle={2}: Target blue or red creature gets +1/+0 until end of turn.

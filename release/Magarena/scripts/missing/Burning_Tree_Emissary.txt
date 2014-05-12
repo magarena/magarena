@@ -1,0 +1,11 @@
+name=Burning-Tree Emissary
+url=http://magiccards.info/query?q=%21Burning-Tree+Emissary
+image=http://mtgimage.com/card/burning-tree%20emissary.jpg
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={R/G}{R/G}
+pt=2/2
+ability=When SN enters the battlefield, add {R}{G} to your mana pool.
+timing=main
+oracle=When Burning-Tree Emissary enters the battlefield, add {R}{G} to your mana pool.

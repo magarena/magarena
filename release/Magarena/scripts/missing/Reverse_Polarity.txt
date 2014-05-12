@@ -1,0 +1,9 @@
+name=Reverse Polarity
+url=http://magiccards.info/query?q=%21Reverse+Polarity
+image=http://mtgimage.com/card/reverse%20polarity.jpg
+rarity=C
+type=Instant
+cost={W}{W}
+effect=You gain X life, where X is twice the damage dealt to you so far this turn by artifacts.
+timing=removal
+oracle=You gain X life, where X is twice the damage dealt to you so far this turn by artifacts.

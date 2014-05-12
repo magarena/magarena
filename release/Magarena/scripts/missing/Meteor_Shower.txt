@@ -1,0 +1,9 @@
+name=Meteor Shower
+url=http://magiccards.info/query?q=%21Meteor+Shower
+image=http://mtgimage.com/card/meteor%20shower.jpg
+rarity=C
+type=Sorcery
+cost={X}{X}{R}
+effect=SN deals X plus 1 damage divided as you choose among any number of target creatures and/or players.
+timing=main
+oracle=Meteor Shower deals X plus 1 damage divided as you choose among any number of target creatures and/or players.

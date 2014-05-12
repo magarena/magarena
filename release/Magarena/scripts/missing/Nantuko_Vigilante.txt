@@ -1,0 +1,12 @@
+name=Nantuko Vigilante
+url=http://magiccards.info/query?q=%21Nantuko+Vigilante
+image=http://mtgimage.com/card/nantuko%20vigilante.jpg
+rarity=C
+type=Creature
+subtype=Insect,Druid,Mutant
+cost={3}{G}
+pt=3/2
+ability=Morph {1}{G};\
+        When SN is turned face up, destroy target artifact or enchantment.
+timing=main
+oracle=Morph {1}{G}. When Nantuko Vigilante is turned face up, destroy target artifact or enchantment.

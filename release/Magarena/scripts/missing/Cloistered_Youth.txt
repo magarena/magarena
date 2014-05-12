@@ -1,0 +1,11 @@
+name=Cloistered Youth
+url=http://magiccards.info/query?q=%21Cloistered+Youth
+image=http://mtgimage.com/card/cloistered%20youth.jpg
+rarity=U
+type=Creature
+subtype=Human
+cost={1}{W}
+pt=1/1
+ability=At the beginning of your upkeep, you may transform SN.
+timing=main
+oracle=At the beginning of your upkeep, you may transform Cloistered Youth.

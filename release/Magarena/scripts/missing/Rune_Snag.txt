@@ -1,0 +1,9 @@
+name=Rune Snag
+url=http://magiccards.info/query?q=%21Rune+Snag
+image=http://mtgimage.com/card/rune%20snag.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Counter target spell unless its controller pays {2} plus an additional {2} for each card named SN in each graveyard.
+timing=removal
+oracle=Counter target spell unless its controller pays {2} plus an additional {2} for each card named Rune Snag in each graveyard.

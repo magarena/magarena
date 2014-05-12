@@ -1,0 +1,12 @@
+name=Everglove Courier
+url=http://magiccards.info/query?q=%21Everglove+Courier
+image=http://mtgimage.com/card/everglove%20courier.jpg
+rarity=U
+type=Creature
+subtype=Elf
+cost={2}{G}
+pt=2/1
+ability=You may choose not to untap SN during your untap step.;\
+        {2}{G}, {T}: Target Elf creature gets +2/+2 and has trample for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Everglove Courier during your untap step. {2}{G}, {T}: Target Elf creature gets +2/+2 and has trample for as long as Everglove Courier remains tapped.

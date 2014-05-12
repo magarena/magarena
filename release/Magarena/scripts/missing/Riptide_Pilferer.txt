@@ -1,0 +1,12 @@
+name=Riptide Pilferer
+url=http://magiccards.info/query?q=%21Riptide+Pilferer
+image=http://mtgimage.com/card/riptide%20pilferer.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Rogue
+cost={1}{U}
+pt=1/1
+ability=Whenever SN deals combat damage to a player, that player discards a card.;\
+        Morph {U}
+timing=main
+oracle=Whenever Riptide Pilferer deals combat damage to a player, that player discards a card. Morph {U}

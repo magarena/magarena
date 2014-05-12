@@ -1,0 +1,9 @@
+name=Restore the Peace
+url=http://magiccards.info/query?q=%21Restore+the+Peace
+image=http://mtgimage.com/card/restore%20the%20peace.jpg
+rarity=U
+type=Instant
+cost={1}{W}{U}
+effect=Return each creature that dealt damage this turn to its owner's hand.
+timing=removal
+oracle=Return each creature that dealt damage this turn to its owner's hand.

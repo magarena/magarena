@@ -1,0 +1,11 @@
+name=Kavu Scout
+url=http://magiccards.info/query?q=%21Kavu+Scout
+image=http://mtgimage.com/card/kavu%20scout.jpg
+rarity=C
+type=Creature
+subtype=Kavu,Scout
+cost={2}{R}
+pt=0/2
+ability=Domain — SN gets +1/+0 for each basic land type among lands you control.
+timing=main
+oracle=Domain — Kavu Scout gets +1/+0 for each basic land type among lands you control.

@@ -1,0 +1,9 @@
+name=Plague of Vermin
+url=http://magiccards.info/query?q=%21Plague+of+Vermin
+image=http://mtgimage.com/card/plague%20of%20vermin.jpg
+rarity=R
+type=Sorcery
+cost={6}{B}
+effect=Starting with you, each player may pay any amount of life. Repeat this process until no one pays life. Each player puts a 1/1 black Rat creature token onto the battlefield for each 1 life he or she paid this way.
+timing=main
+oracle=Starting with you, each player may pay any amount of life. Repeat this process until no one pays life. Each player puts a 1/1 black Rat creature token onto the battlefield for each 1 life he or she paid this way.

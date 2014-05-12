@@ -1,0 +1,9 @@
+name=Mana Web
+url=http://magiccards.info/query?q=%21Mana+Web
+image=http://mtgimage.com/card/mana%20web.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever a land an opponent controls is tapped for mana, tap all lands that player controls that could produce any type of mana that land could produce.
+timing=main
+oracle=Whenever a land an opponent controls is tapped for mana, tap all lands that player controls that could produce any type of mana that land could produce.

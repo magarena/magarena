@@ -1,0 +1,9 @@
+name=Mana Echoes
+url=http://magiccards.info/query?q=%21Mana+Echoes
+image=http://mtgimage.com/card/mana%20echoes.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}{R}
+ability=Whenever a creature enters the battlefield, you may add {X} to your mana pool, where X is the number of creatures you control that share a creature type with it.
+timing=main
+oracle=Whenever a creature enters the battlefield, you may add {X} to your mana pool, where X is the number of creatures you control that share a creature type with it.

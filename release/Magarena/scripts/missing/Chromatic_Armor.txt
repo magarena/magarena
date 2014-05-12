@@ -1,0 +1,14 @@
+name=Chromatic Armor
+url=http://magiccards.info/query?q=%21Chromatic+Armor
+image=http://mtgimage.com/card/chromatic%20armor.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{W}{U}
+ability=Enchant creature;\
+        As SN enters the battlefield, choose a color.;\
+        SN enters the battlefield with a sleight counter on it.;\
+        Prevent all damage that would be dealt to enchanted creature by sources of the last chosen color.;\
+        {X}: Put a sleight counter on SN and choose a color. X is the number of sleight counters on SN.
+timing=main
+oracle=Enchant creature. As Chromatic Armor enters the battlefield, choose a color. Chromatic Armor enters the battlefield with a sleight counter on it. Prevent all damage that would be dealt to enchanted creature by sources of the last chosen color. {X}: Put a sleight counter on Chromatic Armor and choose a color. X is the number of sleight counters on Chromatic Armor.

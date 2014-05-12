@@ -1,0 +1,10 @@
+name=Strength of Night
+url=http://magiccards.info/query?q=%21Strength+of+Night
+image=http://mtgimage.com/card/strength%20of%20night.jpg
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Kicker {B};\
+        Creatures you control get +1/+1 until end of turn. If SN was kicked, Zombie creatures you control get an additional +2/+2 until end of turn.
+timing=removal
+oracle=Kicker {B}. Creatures you control get +1/+1 until end of turn. If Strength of Night was kicked, Zombie creatures you control get an additional +2/+2 until end of turn.

@@ -1,0 +1,12 @@
+name=Conclave Phalanx
+url=http://magiccards.info/query?q=%21Conclave+Phalanx
+image=http://mtgimage.com/card/conclave%20phalanx.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}
+pt=2/4
+ability=Convoke;\
+        When SN enters the battlefield, you gain 1 life for each creature you control.
+timing=main
+oracle=Convoke. When Conclave Phalanx enters the battlefield, you gain 1 life for each creature you control.

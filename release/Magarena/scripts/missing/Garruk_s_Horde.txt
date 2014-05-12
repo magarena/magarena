@@ -1,0 +1,13 @@
+name=Garruk's Horde
+url=http://magiccards.info/query?q=%21Garruk%27s+Horde
+image=http://mtgimage.com/card/garruk%27s%20horde.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={5}{G}{G}
+pt=7/7
+ability=Trample;\
+        Play with the top card of your library revealed.;\
+        You may cast the top card of your library if it's a creature card.
+timing=main
+oracle=Trample. Play with the top card of your library revealed. You may cast the top card of your library if it's a creature card.

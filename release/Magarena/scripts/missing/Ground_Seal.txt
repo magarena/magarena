@@ -1,0 +1,10 @@
+name=Ground Seal
+url=http://magiccards.info/query?q=%21Ground+Seal
+image=http://mtgimage.com/card/ground%20seal.jpg
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability=When SN enters the battlefield, draw a card.;\
+        Cards in graveyards can't be the targets of spells or abilities.
+timing=main
+oracle=When Ground Seal enters the battlefield, draw a card. Cards in graveyards can't be the targets of spells or abilities.

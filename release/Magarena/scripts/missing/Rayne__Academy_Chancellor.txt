@@ -1,0 +1,11 @@
+name=Rayne, Academy Chancellor
+url=http://magiccards.info/query?q=%21Rayne%2C+Academy+Chancellor
+image=http://mtgimage.com/card/rayne%2C%20academy%20chancellor.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/1
+ability=Whenever you or a permanent you control becomes the target of a spell or ability an opponent controls, you may draw a card. You may draw an additional card if SN is enchanted.
+timing=main
+oracle=Whenever you or a permanent you control becomes the target of a spell or ability an opponent controls, you may draw a card. You may draw an additional card if Rayne, Academy Chancellor is enchanted.

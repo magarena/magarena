@@ -1,0 +1,13 @@
+name=Marsh Flitter
+url=http://magiccards.info/query?q=%21Marsh+Flitter
+image=http://mtgimage.com/card/marsh%20flitter.jpg
+rarity=U
+type=Creature
+subtype=Faerie,Rogue
+cost={3}{B}
+pt=1/1
+ability=Flying;\
+        When SN enters the battlefield, put two 1/1 black Goblin Rogue creature tokens onto the battlefield.;\
+        Sacrifice a Goblin: SN becomes 3/3 until end of turn.
+timing=main
+oracle=Flying. When Marsh Flitter enters the battlefield, put two 1/1 black Goblin Rogue creature tokens onto the battlefield. Sacrifice a Goblin: Marsh Flitter becomes 3/3 until end of turn.

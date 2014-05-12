@@ -1,0 +1,12 @@
+name=Quick Sliver
+url=http://magiccards.info/query?q=%21Quick+Sliver
+image=http://mtgimage.com/card/quick%20sliver.jpg
+rarity=C
+type=Creature
+subtype=Sliver
+cost={1}{G}
+pt=1/1
+ability=Flash;\
+        Any player may play Sliver cards as though they had flash.
+timing=main
+oracle=Flash. Any player may play Sliver cards as though they had flash.

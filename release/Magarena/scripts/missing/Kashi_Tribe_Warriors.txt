@@ -1,0 +1,11 @@
+name=Kashi-Tribe Warriors
+url=http://magiccards.info/query?q=%21Kashi-Tribe+Warriors
+image=http://mtgimage.com/card/kashi-tribe%20warriors.jpg
+rarity=C
+type=Creature
+subtype=Snake,Warrior
+cost={3}{G}{G}
+pt=2/4
+ability=Whenever SN deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
+timing=main
+oracle=Whenever Kashi-Tribe Warriors deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.

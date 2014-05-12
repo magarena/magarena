@@ -1,0 +1,11 @@
+name=Meletis Charlatan
+url=http://magiccards.info/query?q=%21Meletis+Charlatan
+image=http://mtgimage.com/card/meletis%20charlatan.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/3
+ability={2}{U}, {T}: The controller of target instant or sorcery spell copies it. That player may choose new targets for the copy.
+timing=main
+oracle={2}{U}, {T}: The controller of target instant or sorcery spell copies it. That player may choose new targets for the copy.

@@ -1,0 +1,10 @@
+name=Dreamstone Hedron
+url=http://magiccards.info/query?q=%21Dreamstone+Hedron
+image=http://mtgimage.com/card/dreamstone%20hedron.jpg
+rarity=U
+type=Artifact
+cost={6}
+ability={T}: Add {3} to your mana pool.;\
+        {3}, {T}, Sacrifice SN: Draw three cards.
+timing=main
+oracle={T}: Add {3} to your mana pool. {3}, {T}, Sacrifice Dreamstone Hedron: Draw three cards.

@@ -1,0 +1,9 @@
+name=Riot Control
+url=http://magiccards.info/query?q=%21Riot+Control
+image=http://mtgimage.com/card/riot%20control.jpg
+rarity=C
+type=Instant
+cost={2}{W}
+effect=You gain 1 life for each creature your opponents control. Prevent all damage that would be dealt to you this turn.
+timing=removal
+oracle=You gain 1 life for each creature your opponents control. Prevent all damage that would be dealt to you this turn.

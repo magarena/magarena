@@ -1,0 +1,12 @@
+name=Sea Drake
+url=http://magiccards.info/query?q=%21Sea+Drake
+image=http://mtgimage.com/card/sea%20drake.jpg
+rarity=U
+type=Creature
+subtype=Drake
+cost={2}{U}
+pt=4/3
+ability=Flying;\
+        When SN enters the battlefield, return two target lands you control to their owner's hand.
+timing=main
+oracle=Flying. When Sea Drake enters the battlefield, return two target lands you control to their owner's hand.

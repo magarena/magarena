@@ -1,0 +1,12 @@
+name=Nature's Chosen
+url=http://magiccards.info/query?q=%21Nature%27s+Chosen
+image=http://mtgimage.com/card/nature%27s%20chosen.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchant creature you control;\
+        {0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.;\
+        Tap enchanted creature: Untap target artifact, creature, or land. Activate this ability only if enchanted creature is white and is untapped and only once each turn.
+timing=main
+oracle=Enchant creature you control. {0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn. Tap enchanted creature: Untap target artifact, creature, or land. Activate this ability only if enchanted creature is white and is untapped and only once each turn.

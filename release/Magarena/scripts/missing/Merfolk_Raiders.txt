@@ -1,0 +1,12 @@
+name=Merfolk Raiders
+url=http://magiccards.info/query?q=%21Merfolk+Raiders
+image=http://mtgimage.com/card/merfolk%20raiders.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Soldier
+cost={1}{U}
+pt=2/3
+ability=Islandwalk;\
+        Phasing
+timing=main
+oracle=Islandwalk. Phasing

@@ -1,0 +1,11 @@
+name=Ydwen Efreet
+url=http://magiccards.info/query?q=%21Ydwen+Efreet
+image=http://mtgimage.com/card/ydwen%20efreet.jpg
+rarity=R
+type=Creature
+subtype=Efreet
+cost={R}{R}{R}
+pt=3/6
+ability=Whenever SN blocks, flip a coin. If you lose the flip, remove SN from combat and it can't block this turn. Creatures it was blocking that had become blocked by only SN this combat become unblocked.
+timing=main
+oracle=Whenever Ydwen Efreet blocks, flip a coin. If you lose the flip, remove Ydwen Efreet from combat and it can't block this turn. Creatures it was blocking that had become blocked by only Ydwen Efreet this combat become unblocked.

@@ -1,0 +1,11 @@
+name=Sky Weaver
+url=http://magiccards.info/query?q=%21Sky+Weaver
+image=http://mtgimage.com/card/sky%20weaver.jpg
+rarity=U
+type=Creature
+subtype=Metathran,Wizard
+cost={1}{U}
+pt=2/1
+ability={2}: Target white or black creature gains flying until end of turn.
+timing=main
+oracle={2}: Target white or black creature gains flying until end of turn.

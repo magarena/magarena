@@ -1,0 +1,10 @@
+name=Sapseep Forest
+url=http://magiccards.info/query?q=%21Sapseep+Forest
+image=http://mtgimage.com/card/sapseep%20forest.jpg
+rarity=U
+type=Land
+subtype=Forest
+ability=SN enters the battlefield tapped.;\
+        {G}, {T}: You gain 1 life. Activate this ability only if you control two or more green permanents.
+timing=main
+oracle=Sapseep Forest enters the battlefield tapped. {G}, {T}: You gain 1 life. Activate this ability only if you control two or more green permanents.

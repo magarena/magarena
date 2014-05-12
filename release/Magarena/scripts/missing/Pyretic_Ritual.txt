@@ -1,0 +1,9 @@
+name=Pyretic Ritual
+url=http://magiccards.info/query?q=%21Pyretic+Ritual
+image=http://mtgimage.com/card/pyretic%20ritual.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Add {R}{R}{R} to your mana pool.
+timing=removal
+oracle=Add {R}{R}{R} to your mana pool.

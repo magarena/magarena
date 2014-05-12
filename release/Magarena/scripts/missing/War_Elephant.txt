@@ -1,0 +1,11 @@
+name=War Elephant
+url=http://magiccards.info/query?q=%21War+Elephant
+image=http://mtgimage.com/card/war%20elephant1.jpg
+rarity=C
+type=Creature
+subtype=Elephant
+cost={3}{W}
+pt=2/2
+ability=Trample; banding
+timing=main
+oracle=Trample; banding

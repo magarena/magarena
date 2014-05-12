@@ -1,0 +1,11 @@
+name=Yixlid Jailer
+url=http://magiccards.info/query?q=%21Yixlid+Jailer
+image=http://mtgimage.com/card/yixlid%20jailer.jpg
+rarity=U
+type=Creature
+subtype=Zombie,Wizard
+cost={1}{B}
+pt=2/1
+ability=Cards in graveyards lose all abilities.
+timing=main
+oracle=Cards in graveyards lose all abilities.

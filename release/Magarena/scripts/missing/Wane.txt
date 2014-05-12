@@ -1,0 +1,9 @@
+name=Wane
+url=http://magiccards.info/query?q=%21Wane
+image=http://mtgimage.com/card/waxwane.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Destroy target enchantment.
+timing=removal
+oracle=Destroy target enchantment.

@@ -1,0 +1,11 @@
+name=Auratouched Mage
+url=http://magiccards.info/query?q=%21Auratouched+Mage
+image=http://mtgimage.com/card/auratouched%20mage.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={5}{W}
+pt=3/3
+ability=When SN enters the battlefield, search your library for an Aura card that could enchant it. If SN is still on the battlefield, put that Aura card onto the battlefield attached to it. Otherwise, reveal the Aura card and put it into your hand. Then shuffle your library.
+timing=main
+oracle=When Auratouched Mage enters the battlefield, search your library for an Aura card that could enchant it. If Auratouched Mage is still on the battlefield, put that Aura card onto the battlefield attached to it. Otherwise, reveal the Aura card and put it into your hand. Then shuffle your library.

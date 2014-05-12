@@ -1,0 +1,9 @@
+name=Monomania
+url=http://magiccards.info/query?q=%21Monomania
+image=http://mtgimage.com/card/monomania.jpg
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Target player chooses a card in his or her hand and discards the rest.
+timing=main
+oracle=Target player chooses a card in his or her hand and discards the rest.

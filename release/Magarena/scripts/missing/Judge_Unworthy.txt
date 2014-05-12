@@ -1,0 +1,9 @@
+name=Judge Unworthy
+url=http://magiccards.info/query?q=%21Judge+Unworthy
+image=http://mtgimage.com/card/judge%20unworthy.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Choose target attacking or blocking creature. Scry 3, then reveal the top card of your library. SN deals damage equal to that card's converted mana cost to that creature.
+timing=removal
+oracle=Choose target attacking or blocking creature. Scry 3, then reveal the top card of your library. Judge Unworthy deals damage equal to that card's converted mana cost to that creature.

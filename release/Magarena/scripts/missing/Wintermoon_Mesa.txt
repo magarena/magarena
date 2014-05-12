@@ -1,0 +1,10 @@
+name=Wintermoon Mesa
+url=http://magiccards.info/query?q=%21Wintermoon+Mesa
+image=http://mtgimage.com/card/wintermoon%20mesa.jpg
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {1} to your mana pool.;\
+        {2}, {T}, Sacrifice SN: Tap two target lands.
+timing=main
+oracle=Wintermoon Mesa enters the battlefield tapped. {T}: Add {1} to your mana pool. {2}, {T}, Sacrifice Wintermoon Mesa: Tap two target lands.

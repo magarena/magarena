@@ -1,0 +1,9 @@
+name=Autumn's Veil
+url=http://magiccards.info/query?q=%21Autumn%27s+Veil
+image=http://mtgimage.com/card/autumn%27s%20veil.jpg
+rarity=U
+type=Instant
+cost={G}
+effect=Spells you control can't be countered by blue or black spells this turn, and creatures you control can't be the targets of blue or black spells this turn.
+timing=removal
+oracle=Spells you control can't be countered by blue or black spells this turn, and creatures you control can't be the targets of blue or black spells this turn.

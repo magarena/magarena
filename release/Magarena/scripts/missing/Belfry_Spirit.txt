@@ -1,0 +1,13 @@
+name=Belfry Spirit
+url=http://magiccards.info/query?q=%21Belfry+Spirit
+image=http://mtgimage.com/card/belfry%20spirit.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{W}{W}
+pt=1/1
+ability=Flying;\
+        Haunt;\
+        When SN enters the battlefield or the creature it haunts dies, put two 1/1 black Bat creature tokens with flying onto the battlefield.
+timing=main
+oracle=Flying. Haunt. When Belfry Spirit enters the battlefield or the creature it haunts dies, put two 1/1 black Bat creature tokens with flying onto the battlefield.

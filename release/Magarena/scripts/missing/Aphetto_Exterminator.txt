@@ -1,0 +1,12 @@
+name=Aphetto Exterminator
+url=http://magiccards.info/query?q=%21Aphetto+Exterminator
+image=http://mtgimage.com/card/aphetto%20exterminator.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=3/1
+ability=Morph {3}{B};\
+        When SN is turned face up, target creature gets -3/-3 until end of turn.
+timing=main
+oracle=Morph {3}{B}. When Aphetto Exterminator is turned face up, target creature gets -3/-3 until end of turn.

@@ -1,0 +1,13 @@
+name=Ghitu Firebreathing
+url=http://magiccards.info/query?q=%21Ghitu+Firebreathing
+image=http://mtgimage.com/card/ghitu%20firebreathing.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Flash;\
+        Enchant creature;\
+        {R}: Enchanted creature gets +1/+0 until end of turn.;\
+        {R}: Return SN to its owner's hand.
+timing=main
+oracle=Flash. Enchant creature. {R}: Enchanted creature gets +1/+0 until end of turn. {R}: Return Ghitu Firebreathing to its owner's hand.

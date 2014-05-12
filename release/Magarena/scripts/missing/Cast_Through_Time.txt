@@ -1,0 +1,9 @@
+name=Cast Through Time
+url=http://magiccards.info/query?q=%21Cast+Through+Time
+image=http://mtgimage.com/card/cast%20through%20time.jpg
+rarity=M
+type=Enchantment
+cost={4}{U}{U}{U}
+ability=Instant and sorcery spells you control have rebound.
+timing=main
+oracle=Instant and sorcery spells you control have rebound.

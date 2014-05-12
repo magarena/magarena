@@ -1,0 +1,11 @@
+name=Diplomatic Escort
+url=http://magiccards.info/query?q=%21Diplomatic+Escort
+image=http://mtgimage.com/card/diplomatic%20escort.jpg
+rarity=U
+type=Creature
+subtype=Human,Spellshaper
+cost={1}{U}
+pt=1/1
+ability={U}, {T}, Discard a card: Counter target spell or ability that targets a creature.
+timing=main
+oracle={U}, {T}, Discard a card: Counter target spell or ability that targets a creature.

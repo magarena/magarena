@@ -1,0 +1,9 @@
+name=Killing Glare
+url=http://magiccards.info/query?q=%21Killing+Glare
+image=http://mtgimage.com/card/killing%20glare.jpg
+rarity=U
+type=Instant
+cost={X}{B}
+effect=Destroy target creature with power X or less.
+timing=removal
+oracle=Destroy target creature with power X or less.

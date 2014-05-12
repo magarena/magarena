@@ -1,0 +1,11 @@
+name=Tyrant of Discord
+url=http://magiccards.info/query?q=%21Tyrant+of+Discord
+image=http://mtgimage.com/card/tyrant%20of%20discord.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{R}{R}{R}
+pt=7/7
+ability=When SN enters the battlefield, target opponent chooses a permanent he or she controls at random and sacrifices it. If a nonland permanent is sacrificed this way, repeat this process.
+timing=main
+oracle=When Tyrant of Discord enters the battlefield, target opponent chooses a permanent he or she controls at random and sacrifices it. If a nonland permanent is sacrificed this way, repeat this process.

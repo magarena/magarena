@@ -1,0 +1,11 @@
+name=Blessed Breath
+url=http://magiccards.info/query?q=%21Blessed+Breath
+image=http://mtgimage.com/card/blessed%20breath.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={W}
+effect=Target creature you control gains protection from the color of your choice until end of turn.;\
+        Splice onto Arcane {W}
+timing=removal
+oracle=Target creature you control gains protection from the color of your choice until end of turn. Splice onto Arcane {W}

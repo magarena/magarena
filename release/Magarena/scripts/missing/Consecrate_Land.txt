@@ -1,0 +1,11 @@
+name=Consecrate Land
+url=http://magiccards.info/query?q=%21Consecrate+Land
+image=http://mtgimage.com/card/consecrate%20land.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant land;\
+        Enchanted land has indestructible and can't be enchanted by other Auras.
+timing=main
+oracle=Enchant land. Enchanted land has indestructible and can't be enchanted by other Auras.

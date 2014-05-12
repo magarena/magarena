@@ -1,0 +1,9 @@
+name=Clock of Omens
+url=http://magiccards.info/query?q=%21Clock+of+Omens
+image=http://mtgimage.com/card/clock%20of%20omens.jpg
+rarity=U
+type=Artifact
+cost={4}
+ability=Tap two untapped artifacts you control: Untap target artifact.
+timing=main
+oracle=Tap two untapped artifacts you control: Untap target artifact.

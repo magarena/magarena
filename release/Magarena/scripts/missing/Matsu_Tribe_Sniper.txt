@@ -1,0 +1,12 @@
+name=Matsu-Tribe Sniper
+url=http://magiccards.info/query?q=%21Matsu-Tribe+Sniper
+image=http://mtgimage.com/card/matsu-tribe%20sniper.jpg
+rarity=C
+type=Creature
+subtype=Snake,Warrior,Archer
+cost={1}{G}
+pt=1/1
+ability={T}: SN deals 1 damage to target creature with flying.;\
+        Whenever SN deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
+timing=main
+oracle={T}: Matsu-Tribe Sniper deals 1 damage to target creature with flying. Whenever Matsu-Tribe Sniper deals damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.

@@ -1,0 +1,11 @@
+name=Dread Drone
+url=http://magiccards.info/query?q=%21Dread+Drone
+image=http://mtgimage.com/card/dread%20drone.jpg
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={4}{B}
+pt=4/1
+ability=When SN enters the battlefield, put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."
+timing=main
+oracle=When Dread Drone enters the battlefield, put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."

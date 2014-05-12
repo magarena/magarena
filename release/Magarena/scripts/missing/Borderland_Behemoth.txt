@@ -1,0 +1,12 @@
+name=Borderland Behemoth
+url=http://magiccards.info/query?q=%21Borderland+Behemoth
+image=http://mtgimage.com/card/borderland%20behemoth.jpg
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+cost={5}{R}{R}
+pt=4/4
+ability=Trample;\
+        SN gets +4/+4 for each other Giant you control.
+timing=main
+oracle=Trample. Borderland Behemoth gets +4/+4 for each other Giant you control.

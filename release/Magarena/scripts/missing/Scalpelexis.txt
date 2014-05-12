@@ -1,0 +1,12 @@
+name=Scalpelexis
+url=http://magiccards.info/query?q=%21Scalpelexis
+image=http://mtgimage.com/card/scalpelexis.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={4}{U}
+pt=1/5
+ability=Flying;\
+        Whenever SN deals combat damage to a player, that player exiles the top four cards of his or her library. If two or more of those cards have the same name, repeat this process.
+timing=main
+oracle=Flying. Whenever Scalpelexis deals combat damage to a player, that player exiles the top four cards of his or her library. If two or more of those cards have the same name, repeat this process.

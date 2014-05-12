@@ -1,0 +1,9 @@
+name=Feldon's Cane
+url=http://magiccards.info/query?q=%21Feldon%27s+Cane
+image=http://mtgimage.com/card/feldon%27s%20cane.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={T}, Exile SN: Shuffle your graveyard into your library.
+timing=main
+oracle={T}, Exile Feldon's Cane: Shuffle your graveyard into your library.

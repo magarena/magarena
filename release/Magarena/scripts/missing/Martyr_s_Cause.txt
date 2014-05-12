@@ -1,0 +1,9 @@
+name=Martyr's Cause
+url=http://magiccards.info/query?q=%21Martyr%27s+Cause
+image=http://mtgimage.com/card/martyr%27s%20cause.jpg
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=Sacrifice a creature: The next time a source of your choice would deal damage to target creature or player this turn, prevent that damage.
+timing=main
+oracle=Sacrifice a creature: The next time a source of your choice would deal damage to target creature or player this turn, prevent that damage.

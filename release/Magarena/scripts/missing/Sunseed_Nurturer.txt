@@ -1,0 +1,12 @@
+name=Sunseed Nurturer
+url=http://magiccards.info/query?q=%21Sunseed+Nurturer
+image=http://mtgimage.com/card/sunseed%20nurturer.jpg
+rarity=U
+type=Creature
+subtype=Human,Druid,Wizard
+cost={2}{W}
+pt=1/1
+ability=At the beginning of your end step, if you control a creature with power 5 or greater, you may gain 2 life.;\
+        {T}: Add {1} to your mana pool.
+timing=main
+oracle=At the beginning of your end step, if you control a creature with power 5 or greater, you may gain 2 life. {T}: Add {1} to your mana pool.

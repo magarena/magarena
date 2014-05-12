@@ -1,0 +1,12 @@
+name=Nacatl War-Pride
+url=http://magiccards.info/query?q=%21Nacatl+War-Pride
+image=http://mtgimage.com/card/nacatl%20war-pride.jpg
+rarity=U
+type=Creature
+subtype=Cat,Warrior
+cost={3}{G}{G}{G}
+pt=3/3
+ability=SN must be blocked by exactly one creature if able.;\
+        Whenever SN attacks, put X tokens that are copies of SN onto the battlefield tapped and attacking, where X is the number of creatures defending player controls. Exile the tokens at the beginning of the next end step.
+timing=main
+oracle=Nacatl War-Pride must be blocked by exactly one creature if able. Whenever Nacatl War-Pride attacks, put X tokens that are copies of Nacatl War-Pride onto the battlefield tapped and attacking, where X is the number of creatures defending player controls. Exile the tokens at the beginning of the next end step.

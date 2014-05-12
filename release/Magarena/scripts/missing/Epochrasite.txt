@@ -1,0 +1,12 @@
+name=Epochrasite
+url=http://magiccards.info/query?q=%21Epochrasite
+image=http://mtgimage.com/card/epochrasite.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=1/1
+ability=SN enters the battlefield with three +1/+1 counters on it if you didn't cast it from your hand.;\
+        When SN dies, exile it with three time counters on it and it gains suspend.
+timing=main
+oracle=Epochrasite enters the battlefield with three +1/+1 counters on it if you didn't cast it from your hand. When Epochrasite dies, exile it with three time counters on it and it gains suspend.

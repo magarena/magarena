@@ -1,0 +1,12 @@
+name=Wood Elemental
+url=http://magiccards.info/query?q=%21Wood+Elemental
+image=http://mtgimage.com/card/wood%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{G}
+pt=*/*
+ability=As SN enters the battlefield, sacrifice any number of untapped Forests.;\
+        SN's power and toughness are each equal to the number of Forests sacrificed as it entered the battlefield.
+timing=main
+oracle=As Wood Elemental enters the battlefield, sacrifice any number of untapped Forests. Wood Elemental's power and toughness are each equal to the number of Forests sacrificed as it entered the battlefield.

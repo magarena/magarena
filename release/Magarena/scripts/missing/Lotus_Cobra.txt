@@ -1,0 +1,11 @@
+name=Lotus Cobra
+url=http://magiccards.info/query?q=%21Lotus+Cobra
+image=http://mtgimage.com/card/lotus%20cobra.jpg
+rarity=M
+type=Creature
+subtype=Snake
+cost={1}{G}
+pt=2/1
+ability=Landfall — Whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
+timing=main
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.

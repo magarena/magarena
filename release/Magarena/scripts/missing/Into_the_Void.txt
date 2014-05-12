@@ -1,0 +1,9 @@
+name=Into the Void
+url=http://magiccards.info/query?q=%21Into+the+Void
+image=http://mtgimage.com/card/into%20the%20void.jpg
+rarity=U
+type=Sorcery
+cost={3}{U}
+effect=Return up to two target creatures to their owners' hands.
+timing=main
+oracle=Return up to two target creatures to their owners' hands.

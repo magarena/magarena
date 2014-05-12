@@ -1,0 +1,10 @@
+name=Explosive Growth
+url=http://magiccards.info/query?q=%21Explosive+Growth
+image=http://mtgimage.com/card/explosive%20growth.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Kicker {5};\
+        Target creature gets +2/+2 until end of turn. If SN was kicked, that creature gets +5/+5 until end of turn instead.
+timing=removal
+oracle=Kicker {5}. Target creature gets +2/+2 until end of turn. If Explosive Growth was kicked, that creature gets +5/+5 until end of turn instead.

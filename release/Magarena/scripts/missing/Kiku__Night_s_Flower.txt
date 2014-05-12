@@ -1,0 +1,11 @@
+name=Kiku, Night's Flower
+url=http://magiccards.info/query?q=%21Kiku%2C+Night%27s+Flower
+image=http://mtgimage.com/card/kiku%2C%20night%27s%20flower.jpg
+rarity=R
+type=Creature
+subtype=Human,Assassin
+cost={B}{B}
+pt=1/1
+ability={2}{B}{B}, {T}: Target creature deals damage to itself equal to its power.
+timing=main
+oracle={2}{B}{B}, {T}: Target creature deals damage to itself equal to its power.

@@ -1,0 +1,10 @@
+name=Mist of Stagnation
+url=http://magiccards.info/query?q=%21Mist+of+Stagnation
+image=http://mtgimage.com/card/mist%20of%20stagnation.jpg
+rarity=R
+type=Enchantment
+cost={3}{U}{U}
+ability=Permanents don't untap during their controllers' untap steps.;\
+        At the beginning of each player's upkeep, that player chooses a permanent for each card in his or her graveyard, then untaps those permanents.
+timing=main
+oracle=Permanents don't untap during their controllers' untap steps. At the beginning of each player's upkeep, that player chooses a permanent for each card in his or her graveyard, then untaps those permanents.

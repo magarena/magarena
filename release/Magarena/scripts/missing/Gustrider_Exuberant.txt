@@ -1,0 +1,12 @@
+name=Gustrider Exuberant
+url=http://magiccards.info/query?q=%21Gustrider+Exuberant
+image=http://mtgimage.com/card/gustrider%20exuberant.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}
+pt=1/2
+ability=Flying;\
+        Sacrifice SN: Creatures you control with power 5 or greater gain flying until end of turn.
+timing=main
+oracle=Flying. Sacrifice Gustrider Exuberant: Creatures you control with power 5 or greater gain flying until end of turn.

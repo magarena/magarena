@@ -1,0 +1,13 @@
+name=Vampiric Dragon
+url=http://magiccards.info/query?q=%21Vampiric+Dragon
+image=http://mtgimage.com/card/vampiric%20dragon.jpg
+rarity=R
+type=Creature
+subtype=Vampire,Dragon
+cost={6}{B}{R}
+pt=5/5
+ability=Flying;\
+        Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.;\
+        {1}{R}: SN deals 1 damage to target creature.
+timing=main
+oracle=Flying. Whenever a creature dealt damage by Vampiric Dragon this turn dies, put a +1/+1 counter on Vampiric Dragon. {1}{R}: Vampiric Dragon deals 1 damage to target creature.

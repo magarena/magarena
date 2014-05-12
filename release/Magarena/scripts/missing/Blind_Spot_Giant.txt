@@ -1,0 +1,11 @@
+name=Blind-Spot Giant
+url=http://magiccards.info/query?q=%21Blind-Spot+Giant
+image=http://mtgimage.com/card/blind-spot%20giant.jpg
+rarity=C
+type=Creature
+subtype=Giant,Warrior
+cost={2}{R}
+pt=4/3
+ability=SN can't attack or block unless you control another Giant.
+timing=main
+oracle=Blind-Spot Giant can't attack or block unless you control another Giant.

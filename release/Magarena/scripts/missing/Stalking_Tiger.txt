@@ -1,0 +1,11 @@
+name=Stalking Tiger
+url=http://magiccards.info/query?q=%21Stalking+Tiger
+image=http://mtgimage.com/card/stalking%20tiger.jpg
+rarity=C
+type=Creature
+subtype=Cat
+cost={3}{G}
+pt=3/3
+ability=SN can't be blocked by more than one creature.
+timing=main
+oracle=Stalking Tiger can't be blocked by more than one creature.

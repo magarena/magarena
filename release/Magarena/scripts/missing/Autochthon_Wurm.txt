@@ -1,0 +1,12 @@
+name=Autochthon Wurm
+url=http://magiccards.info/query?q=%21Autochthon+Wurm
+image=http://mtgimage.com/card/autochthon%20wurm.jpg
+rarity=R
+type=Creature
+subtype=Wurm
+cost={10}{G}{G}{G}{W}{W}
+pt=9/14
+ability=Convoke;\
+        Trample
+timing=main
+oracle=Convoke. Trample

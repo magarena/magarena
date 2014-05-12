@@ -1,0 +1,11 @@
+name=Goblin Grappler
+url=http://magiccards.info/query?q=%21Goblin+Grappler
+image=http://mtgimage.com/card/goblin%20grappler.jpg
+rarity=C
+type=Creature
+subtype=Goblin
+cost={R}
+pt=1/1
+ability=Provoke
+timing=main
+oracle=Provoke

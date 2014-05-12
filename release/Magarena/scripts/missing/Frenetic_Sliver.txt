@@ -1,0 +1,11 @@
+name=Frenetic Sliver
+url=http://magiccards.info/query?q=%21Frenetic+Sliver
+image=http://mtgimage.com/card/frenetic%20sliver.jpg
+rarity=U
+type=Creature
+subtype=Sliver
+cost={1}{U}{R}
+pt=2/2
+ability=All Slivers have "{0}: If this permanent is on the battlefield, flip a coin. If you win the flip, exile this permanent and return it to the battlefield under its owner's control at the beginning of the next end step. If you lose the flip, sacrifice it."
+timing=main
+oracle=All Slivers have "{0}: If this permanent is on the battlefield, flip a coin. If you win the flip, exile this permanent and return it to the battlefield under its owner's control at the beginning of the next end step. If you lose the flip, sacrifice it."

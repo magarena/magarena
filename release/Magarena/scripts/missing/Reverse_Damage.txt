@@ -1,0 +1,9 @@
+name=Reverse Damage
+url=http://magiccards.info/query?q=%21Reverse+Damage
+image=http://mtgimage.com/card/reverse%20damage.jpg
+rarity=R
+type=Instant
+cost={1}{W}{W}
+effect=The next time a source of your choice would deal damage to you this turn, prevent that damage. You gain life equal to the damage prevented this way.
+timing=removal
+oracle=The next time a source of your choice would deal damage to you this turn, prevent that damage. You gain life equal to the damage prevented this way.

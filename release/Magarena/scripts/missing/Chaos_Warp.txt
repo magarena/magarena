@@ -1,0 +1,9 @@
+name=Chaos Warp
+url=http://magiccards.info/query?q=%21Chaos+Warp
+image=http://mtgimage.com/card/chaos%20warp.jpg
+rarity=R
+type=Instant
+cost={2}{R}
+effect=The owner of target permanent shuffles it into his or her library, then reveals the top card of his or her library. If it's a permanent card, he or she puts it onto the battlefield.
+timing=removal
+oracle=The owner of target permanent shuffles it into his or her library, then reveals the top card of his or her library. If it's a permanent card, he or she puts it onto the battlefield.

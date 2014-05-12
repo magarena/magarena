@@ -1,0 +1,13 @@
+name=Soul Collector
+url=http://magiccards.info/query?q=%21Soul+Collector
+image=http://mtgimage.com/card/soul%20collector.jpg
+rarity=R
+type=Creature
+subtype=Vampire
+cost={3}{B}{B}
+pt=3/4
+ability=Flying;\
+        Whenever a creature dealt damage by SN this turn dies, return that card to the battlefield under your control.;\
+        Morph {B}{B}{B}
+timing=main
+oracle=Flying. Whenever a creature dealt damage by Soul Collector this turn dies, return that card to the battlefield under your control. Morph {B}{B}{B}

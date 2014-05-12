@@ -1,0 +1,9 @@
+name=Broken Visage
+url=http://magiccards.info/query?q=%21Broken+Visage
+image=http://mtgimage.com/card/broken%20visage.jpg
+rarity=R
+type=Instant
+cost={4}{B}
+effect=Destroy target nonartifact attacking creature. It can't be regenerated. Put a black Spirit creature token with that creature's power and toughness onto the battlefield. Sacrifice the token at the beginning of the next end step.
+timing=removal
+oracle=Destroy target nonartifact attacking creature. It can't be regenerated. Put a black Spirit creature token with that creature's power and toughness onto the battlefield. Sacrifice the token at the beginning of the next end step.

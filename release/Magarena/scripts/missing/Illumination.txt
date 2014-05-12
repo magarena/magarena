@@ -1,0 +1,9 @@
+name=Illumination
+url=http://magiccards.info/query?q=%21Illumination
+image=http://mtgimage.com/card/illumination.jpg
+rarity=U
+type=Instant
+cost={W}{W}
+effect=Counter target artifact or enchantment spell. Its controller gains life equal to its converted mana cost.
+timing=removal
+oracle=Counter target artifact or enchantment spell. Its controller gains life equal to its converted mana cost.

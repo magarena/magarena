@@ -1,0 +1,10 @@
+name=Pact of Negation
+url=http://magiccards.info/query?q=%21Pact+of+Negation
+image=http://mtgimage.com/card/pact%20of%20negation.jpg
+rarity=R
+type=Instant
+cost={0}
+effect=Counter target spell.;\
+        At the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.
+timing=removal
+oracle=Counter target spell. At the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.

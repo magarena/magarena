@@ -1,0 +1,9 @@
+name=Static Orb
+url=http://magiccards.info/query?q=%21Static+Orb
+image=http://mtgimage.com/card/static%20orb.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=As long as SN is untapped, players can't untap more than two permanents during their untap steps.
+timing=main
+oracle=As long as Static Orb is untapped, players can't untap more than two permanents during their untap steps.

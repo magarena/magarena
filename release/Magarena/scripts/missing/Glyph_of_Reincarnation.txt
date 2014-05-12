@@ -1,0 +1,10 @@
+name=Glyph of Reincarnation
+url=http://magiccards.info/query?q=%21Glyph+of+Reincarnation
+image=http://mtgimage.com/card/glyph%20of%20reincarnation.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Cast SN only after combat.;\
+        Destroy all creatures that were blocked by target Wall this turn. They can't be regenerated. For each creature that died this way, put a creature card from the graveyard of the player who controlled that creature the last time it became blocked by that Wall onto the battlefield under its owner's control.
+timing=removal
+oracle=Cast Glyph of Reincarnation only after combat. Destroy all creatures that were blocked by target Wall this turn. They can't be regenerated. For each creature that died this way, put a creature card from the graveyard of the player who controlled that creature the last time it became blocked by that Wall onto the battlefield under its owner's control.

@@ -1,0 +1,11 @@
+name=Dual Nature
+url=http://magiccards.info/query?q=%21Dual+Nature
+image=http://mtgimage.com/card/dual%20nature.jpg
+rarity=R
+type=Enchantment
+cost={4}{G}{G}
+ability=Whenever a nontoken creature enters the battlefield, its controller puts a token that's a copy of that creature onto the battlefield.;\
+        Whenever a nontoken creature leaves the battlefield, exile all tokens with the same name as that creature.;\
+        When SN leaves the battlefield, exile all tokens put onto the battlefield with SN.
+timing=main
+oracle=Whenever a nontoken creature enters the battlefield, its controller puts a token that's a copy of that creature onto the battlefield. Whenever a nontoken creature leaves the battlefield, exile all tokens with the same name as that creature. When Dual Nature leaves the battlefield, exile all tokens put onto the battlefield with Dual Nature.

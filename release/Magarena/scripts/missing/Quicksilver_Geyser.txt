@@ -1,0 +1,9 @@
+name=Quicksilver Geyser
+url=http://magiccards.info/query?q=%21Quicksilver+Geyser
+image=http://mtgimage.com/card/quicksilver%20geyser.jpg
+rarity=C
+type=Instant
+cost={4}{U}
+effect=Return up to two target nonland permanents to their owners' hands.
+timing=removal
+oracle=Return up to two target nonland permanents to their owners' hands.

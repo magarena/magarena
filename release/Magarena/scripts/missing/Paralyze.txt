@@ -1,0 +1,13 @@
+name=Paralyze
+url=http://magiccards.info/query?q=%21Paralyze
+image=http://mtgimage.com/card/paralyze.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
+        Enchanted creature doesn't untap during its controller's untap step.;\
+        At the beginning of the upkeep of enchanted creature's controller, that player may pay {4}. If he or she does, untap the creature.
+timing=main
+oracle=Enchant creature. When Paralyze enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step. At the beginning of the upkeep of enchanted creature's controller, that player may pay {4}. If he or she does, untap the creature.

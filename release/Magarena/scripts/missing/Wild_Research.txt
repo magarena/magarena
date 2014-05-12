@@ -1,0 +1,10 @@
+name=Wild Research
+url=http://magiccards.info/query?q=%21Wild+Research
+image=http://mtgimage.com/card/wild%20research.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability={1}{W}: Search your library for an enchantment card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.;\
+        {1}{U}: Search your library for an instant card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.
+timing=main
+oracle={1}{W}: Search your library for an enchantment card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library. {1}{U}: Search your library for an instant card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle your library.

@@ -1,0 +1,9 @@
+name=Candelabra of Tawnos
+url=http://magiccards.info/query?q=%21Candelabra+of+Tawnos
+image=http://mtgimage.com/card/candelabra%20of%20tawnos.jpg
+rarity=R
+type=Artifact
+cost={1}
+ability={X}, {T}: Untap X target lands.
+timing=main
+oracle={X}, {T}: Untap X target lands.

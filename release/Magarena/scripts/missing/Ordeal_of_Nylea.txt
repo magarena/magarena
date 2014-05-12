@@ -1,0 +1,12 @@
+name=Ordeal of Nylea
+url=http://magiccards.info/query?q=%21Ordeal+of+Nylea
+image=http://mtgimage.com/card/ordeal%20of%20nylea.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{G}
+ability=Enchant creature;\
+        Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice SN.;\
+        When you sacrifice SN, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
+timing=main
+oracle=Enchant creature. Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Nylea. When you sacrifice Ordeal of Nylea, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.

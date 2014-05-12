@@ -1,0 +1,9 @@
+name=Pollen Lullaby
+url=http://magiccards.info/query?q=%21Pollen+Lullaby
+image=http://mtgimage.com/card/pollen%20lullaby.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Prevent all combat damage that would be dealt this turn. Clash with an opponent. If you win, creatures that player controls don't untap during the player's next untap step.
+timing=removal
+oracle=Prevent all combat damage that would be dealt this turn. Clash with an opponent. If you win, creatures that player controls don't untap during the player's next untap step.

@@ -1,0 +1,11 @@
+name=Amrou Seekers
+url=http://magiccards.info/query?q=%21Amrou+Seekers
+image=http://mtgimage.com/card/amrou%20seekers.jpg
+rarity=C
+type=Creature
+subtype=Kithkin,Rebel
+cost={2}{W}
+pt=2/2
+ability=SN can't be blocked except by artifact creatures and/or white creatures.
+timing=main
+oracle=Amrou Seekers can't be blocked except by artifact creatures and/or white creatures.

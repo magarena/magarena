@@ -1,0 +1,9 @@
+name=Deathlace
+url=http://magiccards.info/query?q=%21Deathlace
+image=http://mtgimage.com/card/deathlace.jpg
+rarity=R
+type=Instant
+cost={B}
+effect=Target spell or permanent becomes black.
+timing=removal
+oracle=Target spell or permanent becomes black.

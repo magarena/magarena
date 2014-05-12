@@ -1,0 +1,9 @@
+name=Squeeze
+url=http://magiccards.info/query?q=%21Squeeze
+image=http://mtgimage.com/card/squeeze.jpg
+rarity=R
+type=Enchantment
+cost={3}{U}
+ability=Sorcery spells cost {3} more to cast.
+timing=main
+oracle=Sorcery spells cost {3} more to cast.

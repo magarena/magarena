@@ -1,0 +1,12 @@
+name=Mistform Dreamer
+url=http://magiccards.info/query?q=%21Mistform+Dreamer
+image=http://mtgimage.com/card/mistform%20dreamer.jpg
+rarity=C
+type=Creature
+subtype=Illusion
+cost={2}{U}
+pt=2/1
+ability=Flying;\
+        {1}: SN becomes the creature type of your choice until end of turn.
+timing=main
+oracle=Flying. {1}: Mistform Dreamer becomes the creature type of your choice until end of turn.

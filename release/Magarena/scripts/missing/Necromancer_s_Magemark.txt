@@ -1,0 +1,12 @@
+name=Necromancer's Magemark
+url=http://magiccards.info/query?q=%21Necromancer%27s+Magemark
+image=http://mtgimage.com/card/necromancer%27s%20magemark.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+ability=Enchant creature;\
+        Creatures you control that are enchanted get +1/+1.;\
+        If a creature you control that's enchanted would die, return it to its owner's hand instead.
+timing=main
+oracle=Enchant creature. Creatures you control that are enchanted get +1/+1. If a creature you control that's enchanted would die, return it to its owner's hand instead.

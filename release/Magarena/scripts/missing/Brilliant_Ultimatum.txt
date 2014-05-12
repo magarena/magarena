@@ -1,0 +1,9 @@
+name=Brilliant Ultimatum
+url=http://magiccards.info/query?q=%21Brilliant+Ultimatum
+image=http://mtgimage.com/card/brilliant%20ultimatum.jpg
+rarity=R
+type=Sorcery
+cost={W}{W}{U}{U}{U}{B}{B}
+effect=Exile the top five cards of your library. An opponent separates those cards into two piles. You may play any number of cards from one of those piles without paying their mana costs.
+timing=main
+oracle=Exile the top five cards of your library. An opponent separates those cards into two piles. You may play any number of cards from one of those piles without paying their mana costs.

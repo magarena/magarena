@@ -1,0 +1,11 @@
+name=Beacon Behemoth
+url=http://magiccards.info/query?q=%21Beacon+Behemoth
+image=http://mtgimage.com/card/beacon%20behemoth.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{G}{G}
+pt=5/3
+ability={1}: Target creature with power 5 or greater gains vigilance until end of turn.
+timing=main
+oracle={1}: Target creature with power 5 or greater gains vigilance until end of turn.

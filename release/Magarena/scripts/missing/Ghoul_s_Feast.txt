@@ -1,0 +1,9 @@
+name=Ghoul's Feast
+url=http://magiccards.info/query?q=%21Ghoul%27s+Feast
+image=http://mtgimage.com/card/ghoul%27s%20feast.jpg
+rarity=U
+type=Instant
+cost={1}{B}
+effect=Target creature gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard.
+timing=removal
+oracle=Target creature gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard.

@@ -1,0 +1,9 @@
+name=Puncturing Light
+url=http://magiccards.info/query?q=%21Puncturing+Light
+image=http://mtgimage.com/card/puncturing%20light.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Destroy target attacking or blocking creature with power 3 or less.
+timing=removal
+oracle=Destroy target attacking or blocking creature with power 3 or less.

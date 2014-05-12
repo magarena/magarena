@@ -1,0 +1,9 @@
+name=Hull Breach
+url=http://magiccards.info/query?q=%21Hull+Breach
+image=http://mtgimage.com/card/hull%20breach.jpg
+rarity=C
+type=Sorcery
+cost={R}{G}
+effect=Choose one — Destroy target artifact; or destroy target enchantment; or destroy target artifact and target enchantment.
+timing=main
+oracle=Choose one — Destroy target artifact; or destroy target enchantment; or destroy target artifact and target enchantment.

@@ -1,0 +1,11 @@
+name=Goatnapper
+url=http://magiccards.info/query?q=%21Goatnapper
+image=http://mtgimage.com/card/goatnapper.jpg
+rarity=U
+type=Creature
+subtype=Goblin,Rogue
+cost={2}{R}
+pt=2/2
+ability=When SN enters the battlefield, untap target Goat and gain control of it until end of turn. It gains haste until end of turn.
+timing=main
+oracle=When Goatnapper enters the battlefield, untap target Goat and gain control of it until end of turn. It gains haste until end of turn.

@@ -1,0 +1,12 @@
+name=Lava Hounds
+url=http://magiccards.info/query?q=%21Lava+Hounds
+image=http://mtgimage.com/card/lava%20hounds.jpg
+rarity=U
+type=Creature
+subtype=Hound
+cost={2}{R}{R}
+pt=4/4
+ability=Haste;\
+        When SN enters the battlefield, it deals 4 damage to you.
+timing=main
+oracle=Haste. When Lava Hounds enters the battlefield, it deals 4 damage to you.

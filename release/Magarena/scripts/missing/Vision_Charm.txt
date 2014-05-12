@@ -1,0 +1,9 @@
+name=Vision Charm
+url=http://magiccards.info/query?q=%21Vision+Charm
+image=http://mtgimage.com/card/vision%20charm.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Choose one — Target player puts the top four cards of his or her library into his or her graveyard; or choose a land type and a basic land type, and each land of the first chosen type becomes the second chosen type until end of turn; or target artifact phases out.
+timing=removal
+oracle=Choose one — Target player puts the top four cards of his or her library into his or her graveyard; or choose a land type and a basic land type, and each land of the first chosen type becomes the second chosen type until end of turn; or target artifact phases out.

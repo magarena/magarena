@@ -1,0 +1,11 @@
+name=Seton, Krosan Protector
+url=http://magiccards.info/query?q=%21Seton%2C+Krosan+Protector
+image=http://mtgimage.com/card/seton%2C%20krosan%20protector.jpg
+rarity=R
+type=Creature
+subtype=Centaur,Druid
+cost={G}{G}{G}
+pt=2/2
+ability=Tap an untapped Druid you control: Add {G} to your mana pool.
+timing=main
+oracle=Tap an untapped Druid you control: Add {G} to your mana pool.

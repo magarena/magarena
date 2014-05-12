@@ -1,0 +1,12 @@
+name=Whirling Dervish
+url=http://magiccards.info/query?q=%21Whirling+Dervish
+image=http://mtgimage.com/card/whirling%20dervish.jpg
+rarity=U
+type=Creature
+subtype=Human,Monk
+cost={G}{G}
+pt=1/1
+ability=Protection from black;\
+        At the beginning of each end step, if SN dealt damage to an opponent this turn, put a +1/+1 counter on it.
+timing=main
+oracle=Protection from black. At the beginning of each end step, if Whirling Dervish dealt damage to an opponent this turn, put a +1/+1 counter on it.

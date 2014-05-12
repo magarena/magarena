@@ -1,0 +1,11 @@
+name=Thoughtpicker Witch
+url=http://magiccards.info/query?q=%21Thoughtpicker+Witch
+image=http://mtgimage.com/card/thoughtpicker%20witch.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={B}
+pt=1/1
+ability={1}, Sacrifice a creature: Look at the top two cards of target opponent's library, then exile one of them.
+timing=main
+oracle={1}, Sacrifice a creature: Look at the top two cards of target opponent's library, then exile one of them.

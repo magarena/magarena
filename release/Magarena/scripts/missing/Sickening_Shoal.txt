@@ -1,0 +1,11 @@
+name=Sickening Shoal
+url=http://magiccards.info/query?q=%21Sickening+Shoal
+image=http://mtgimage.com/card/sickening%20shoal.jpg
+rarity=R
+type=Instant
+subtype=Arcane
+cost={X}{B}{B}
+effect=You may exile a black card with converted mana cost X from your hand rather than pay SN's mana cost.;\
+        Target creature gets -X/-X until end of turn.
+timing=removal
+oracle=You may exile a black card with converted mana cost X from your hand rather than pay Sickening Shoal's mana cost. Target creature gets -X/-X until end of turn.

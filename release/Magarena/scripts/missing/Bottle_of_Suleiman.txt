@@ -1,0 +1,9 @@
+name=Bottle of Suleiman
+url=http://magiccards.info/query?q=%21Bottle+of+Suleiman
+image=http://mtgimage.com/card/bottle%20of%20suleiman.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={1}, Sacrifice SN: Flip a coin. If you lose the flip, SN deals 5 damage to you. If you win the flip, put a 5/5 colorless Djinn artifact creature token with flying onto the battlefield.
+timing=main
+oracle={1}, Sacrifice Bottle of Suleiman: Flip a coin. If you lose the flip, Bottle of Suleiman deals 5 damage to you. If you win the flip, put a 5/5 colorless Djinn artifact creature token with flying onto the battlefield.

@@ -1,0 +1,9 @@
+name=Call to Glory
+url=http://magiccards.info/query?q=%21Call+to+Glory
+image=http://mtgimage.com/card/call%20to%20glory.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Untap all creatures you control. Samurai creatures you control get +1/+1 until end of turn.
+timing=removal
+oracle=Untap all creatures you control. Samurai creatures you control get +1/+1 until end of turn.

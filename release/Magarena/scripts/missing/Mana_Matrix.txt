@@ -1,0 +1,9 @@
+name=Mana Matrix
+url=http://magiccards.info/query?q=%21Mana+Matrix
+image=http://mtgimage.com/card/mana%20matrix.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability=Instant and enchantment spells you cast cost up to {2} less to cast.
+timing=main
+oracle=Instant and enchantment spells you cast cost up to {2} less to cast.

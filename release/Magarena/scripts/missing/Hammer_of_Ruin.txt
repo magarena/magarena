@@ -1,0 +1,12 @@
+name=Hammer of Ruin
+url=http://magiccards.info/query?q=%21Hammer+of+Ruin
+image=http://mtgimage.com/card/hammer%20of%20ruin.jpg
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+0.;\
+        Whenever equipped creature deals combat damage to a player, you may destroy target Equipment that player controls.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature gets +2/+0. Whenever equipped creature deals combat damage to a player, you may destroy target Equipment that player controls. Equip {2}

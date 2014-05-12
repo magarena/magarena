@@ -1,0 +1,9 @@
+name=Moonlight Bargain
+url=http://magiccards.info/query?q=%21Moonlight+Bargain
+image=http://mtgimage.com/card/moonlight%20bargain.jpg
+rarity=R
+type=Instant
+cost={3}{B}{B}
+effect=Look at the top five cards of your library. For each card, put that card into your graveyard unless you pay 2 life. Then put the rest into your hand.
+timing=removal
+oracle=Look at the top five cards of your library. For each card, put that card into your graveyard unless you pay 2 life. Then put the rest into your hand.

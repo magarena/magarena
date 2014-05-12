@@ -1,0 +1,11 @@
+name=Ekundu Cyclops
+url=http://magiccards.info/query?q=%21Ekundu+Cyclops
+image=http://mtgimage.com/card/ekundu%20cyclops.jpg
+rarity=C
+type=Creature
+subtype=Cyclops
+cost={3}{R}
+pt=3/4
+ability=If a creature you control attacks, SN also attacks if able.
+timing=main
+oracle=If a creature you control attacks, Ekundu Cyclops also attacks if able.

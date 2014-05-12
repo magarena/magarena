@@ -1,0 +1,10 @@
+name=Setessan Tactics
+url=http://magiccards.info/query?q=%21Setessan+Tactics
+image=http://mtgimage.com/card/setessan%20tactics.jpg
+rarity=R
+type=Instant
+cost={1}{G}
+effect=Strive — SN costs {G} more to cast for each target beyond the first.;\
+        Until end of turn, any number of target creatures each get +1/+1 and gain "{T}: This creature fights another target creature."
+timing=removal
+oracle=Strive — Setessan Tactics costs {G} more to cast for each target beyond the first. Until end of turn, any number of target creatures each get +1/+1 and gain "{T}: This creature fights another target creature."

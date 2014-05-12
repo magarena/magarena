@@ -1,0 +1,11 @@
+name=Giant Slug
+url=http://magiccards.info/query?q=%21Giant+Slug
+image=http://mtgimage.com/card/giant%20slug.jpg
+rarity=C
+type=Creature
+subtype=Slug
+cost={1}{B}
+pt=1/1
+ability={5}: At the beginning of your next upkeep, choose a basic land type. SN gains landwalk of the chosen type until the end of that turn.
+timing=main
+oracle={5}: At the beginning of your next upkeep, choose a basic land type. Giant Slug gains landwalk of the chosen type until the end of that turn.

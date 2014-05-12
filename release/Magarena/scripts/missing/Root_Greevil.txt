@@ -1,0 +1,11 @@
+name=Root Greevil
+url=http://magiccards.info/query?q=%21Root+Greevil
+image=http://mtgimage.com/card/root%20greevil.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{G}
+pt=2/3
+ability={2}{G}, {T}, Sacrifice SN: Destroy all enchantments of the color of your choice.
+timing=main
+oracle={2}{G}, {T}, Sacrifice Root Greevil: Destroy all enchantments of the color of your choice.

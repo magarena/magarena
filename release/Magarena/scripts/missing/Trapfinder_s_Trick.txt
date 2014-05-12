@@ -1,0 +1,9 @@
+name=Trapfinder's Trick
+url=http://magiccards.info/query?q=%21Trapfinder%27s+Trick
+image=http://mtgimage.com/card/trapfinder%27s%20trick.jpg
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Target player reveals his or her hand and discards all Trap cards.
+timing=main
+oracle=Target player reveals his or her hand and discards all Trap cards.

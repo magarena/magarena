@@ -1,0 +1,11 @@
+name=Goblin Firestarter
+url=http://magiccards.info/query?q=%21Goblin+Firestarter
+image=http://mtgimage.com/card/goblin%20firestarter.jpg
+rarity=U
+type=Creature
+subtype=Goblin
+cost={R}
+pt=1/1
+ability=Sacrifice SN: SN deals 1 damage to target creature or player. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle=Sacrifice Goblin Firestarter: Goblin Firestarter deals 1 damage to target creature or player. Activate this ability only during your turn, before attackers are declared.

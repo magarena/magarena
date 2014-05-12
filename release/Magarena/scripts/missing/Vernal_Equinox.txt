@@ -1,0 +1,9 @@
+name=Vernal Equinox
+url=http://magiccards.info/query?q=%21Vernal+Equinox
+image=http://mtgimage.com/card/vernal%20equinox.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=Any player may cast creature and enchantment cards as though they had flash.
+timing=main
+oracle=Any player may cast creature and enchantment cards as though they had flash.

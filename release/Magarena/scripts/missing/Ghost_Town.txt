@@ -1,0 +1,9 @@
+name=Ghost Town
+url=http://magiccards.info/query?q=%21Ghost+Town
+image=http://mtgimage.com/card/ghost%20town.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {0}: Return SN to its owner's hand. Activate this ability only if it's not your turn.
+timing=main
+oracle={T}: Add {1} to your mana pool. {0}: Return Ghost Town to its owner's hand. Activate this ability only if it's not your turn.

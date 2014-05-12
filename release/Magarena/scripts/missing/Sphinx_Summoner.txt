@@ -1,0 +1,12 @@
+name=Sphinx Summoner
+url=http://magiccards.info/query?q=%21Sphinx+Summoner
+image=http://mtgimage.com/card/sphinx%20summoner.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Sphinx
+cost={3}{U}{B}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, you may search your library for an artifact creature card, reveal it, and put it into your hand. If you do, shuffle your library.
+timing=main
+oracle=Flying. When Sphinx Summoner enters the battlefield, you may search your library for an artifact creature card, reveal it, and put it into your hand. If you do, shuffle your library.

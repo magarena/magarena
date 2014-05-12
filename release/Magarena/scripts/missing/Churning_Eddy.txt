@@ -1,0 +1,9 @@
+name=Churning Eddy
+url=http://magiccards.info/query?q=%21Churning+Eddy
+image=http://mtgimage.com/card/churning%20eddy.jpg
+rarity=C
+type=Sorcery
+cost={3}{U}
+effect=Return target creature and target land to their owners' hands.
+timing=main
+oracle=Return target creature and target land to their owners' hands.

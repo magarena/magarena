@@ -1,0 +1,12 @@
+name=Cinderhaze Wretch
+url=http://magiccards.info/query?q=%21Cinderhaze+Wretch
+image=http://mtgimage.com/card/cinderhaze%20wretch.jpg
+rarity=C
+type=Creature
+subtype=Elemental,Shaman
+cost={4}{B}
+pt=3/2
+ability={T}: Target player discards a card. Activate this ability only during your turn.;\
+        Put a -1/-1 counter on SN: Untap SN.
+timing=main
+oracle={T}: Target player discards a card. Activate this ability only during your turn. Put a -1/-1 counter on Cinderhaze Wretch: Untap Cinderhaze Wretch.

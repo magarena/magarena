@@ -1,0 +1,11 @@
+name=Goblin Spy
+url=http://magiccards.info/query?q=%21Goblin+Spy
+image=http://mtgimage.com/card/goblin%20spy.jpg
+rarity=U
+type=Creature
+subtype=Goblin,Rogue
+cost={R}
+pt=1/1
+ability=Play with the top card of your library revealed.
+timing=main
+oracle=Play with the top card of your library revealed.

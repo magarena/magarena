@@ -1,0 +1,9 @@
+name=Enchantment Alteration
+url=http://magiccards.info/query?q=%21Enchantment+Alteration
+image=http://mtgimage.com/card/enchantment%20alteration.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Attach target Aura attached to a creature or land to another permanent of that type.
+timing=removal
+oracle=Attach target Aura attached to a creature or land to another permanent of that type.

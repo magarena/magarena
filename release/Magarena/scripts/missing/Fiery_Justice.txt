@@ -1,0 +1,9 @@
+name=Fiery Justice
+url=http://magiccards.info/query?q=%21Fiery+Justice
+image=http://mtgimage.com/card/fiery%20justice.jpg
+rarity=R
+type=Sorcery
+cost={R}{G}{W}
+effect=SN deals 5 damage divided as you choose among any number of target creatures and/or players. Target opponent gains 5 life.
+timing=main
+oracle=Fiery Justice deals 5 damage divided as you choose among any number of target creatures and/or players. Target opponent gains 5 life.

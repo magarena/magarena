@@ -1,0 +1,11 @@
+name=Pith Driller
+url=http://magiccards.info/query?q=%21Pith+Driller
+image=http://mtgimage.com/card/pith%20driller.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Horror
+cost={4}{P/B}
+pt=2/4
+ability=When SN enters the battlefield, put a -1/-1 counter on target creature.
+timing=main
+oracle=When Pith Driller enters the battlefield, put a -1/-1 counter on target creature.

@@ -1,0 +1,11 @@
+name=Sygg, River Cutthroat
+url=http://magiccards.info/query?q=%21Sygg%2C+River+Cutthroat
+image=http://mtgimage.com/card/sygg%2C%20river%20cutthroat.jpg
+rarity=R
+type=Creature
+subtype=Merfolk,Rogue
+cost={U/B}{U/B}
+pt=1/3
+ability=At the beginning of each end step, if an opponent lost 3 or more life this turn, you may draw a card.
+timing=main
+oracle=At the beginning of each end step, if an opponent lost 3 or more life this turn, you may draw a card.

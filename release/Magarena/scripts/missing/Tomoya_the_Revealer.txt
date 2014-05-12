@@ -1,0 +1,11 @@
+name=Tomoya the Revealer
+url=http://magiccards.info/query?q=%21Tomoya+the+Revealer
+image=http://mtgimage.com/card/tomoya%20the%20revealer.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=2/3
+ability={3}{U}{U}, {T}: Target player draws X cards, where X is the number of cards in your hand.
+timing=main
+oracle={3}{U}{U}, {T}: Target player draws X cards, where X is the number of cards in your hand.

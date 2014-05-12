@@ -1,0 +1,11 @@
+name=Scandalmonger
+url=http://magiccards.info/query?q=%21Scandalmonger
+image=http://mtgimage.com/card/scandalmonger.jpg
+rarity=U
+type=Creature
+subtype=Boar,Monger
+cost={3}{B}
+pt=3/3
+ability={2}: Target player discards a card. Any player may activate this ability but only any time he or she could cast a sorcery.
+timing=main
+oracle={2}: Target player discards a card. Any player may activate this ability but only any time he or she could cast a sorcery.

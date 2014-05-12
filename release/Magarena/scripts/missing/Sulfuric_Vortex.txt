@@ -1,0 +1,10 @@
+name=Sulfuric Vortex
+url=http://magiccards.info/query?q=%21Sulfuric+Vortex
+image=http://mtgimage.com/card/sulfuric%20vortex.jpg
+rarity=R
+type=Enchantment
+cost={1}{R}{R}
+ability=At the beginning of each player's upkeep, SN deals 2 damage to that player.;\
+        If a player would gain life, that player gains no life instead.
+timing=main
+oracle=At the beginning of each player's upkeep, Sulfuric Vortex deals 2 damage to that player. If a player would gain life, that player gains no life instead.

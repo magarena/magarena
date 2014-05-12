@@ -1,0 +1,9 @@
+name=Accumulated Knowledge
+url=http://magiccards.info/query?q=%21Accumulated+Knowledge
+image=http://mtgimage.com/card/accumulated%20knowledge.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Draw a card, then draw cards equal to the number of cards named SN in all graveyards.
+timing=removal
+oracle=Draw a card, then draw cards equal to the number of cards named Accumulated Knowledge in all graveyards.

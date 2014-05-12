@@ -1,0 +1,9 @@
+name=Ill-Gotten Gains
+url=http://magiccards.info/query?q=%21Ill-Gotten+Gains
+image=http://mtgimage.com/card/ill-gotten%20gains.jpg
+rarity=R
+type=Sorcery
+cost={2}{B}{B}
+effect=Exile SN. Each player discards his or her hand, then returns up to three cards from his or her graveyard to his or her hand.
+timing=main
+oracle=Exile Ill-Gotten Gains. Each player discards his or her hand, then returns up to three cards from his or her graveyard to his or her hand.

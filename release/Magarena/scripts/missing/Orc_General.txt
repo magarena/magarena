@@ -1,0 +1,11 @@
+name=Orc General
+url=http://magiccards.info/query?q=%21Orc+General
+image=http://mtgimage.com/card/orc%20general.jpg
+rarity=U
+type=Creature
+subtype=Orc,Warrior
+cost={2}{R}
+pt=2/2
+ability={T}, Sacrifice another Orc or Goblin: Other Orc creatures get +1/+1 until end of turn.
+timing=main
+oracle={T}, Sacrifice another Orc or Goblin: Other Orc creatures get +1/+1 until end of turn.

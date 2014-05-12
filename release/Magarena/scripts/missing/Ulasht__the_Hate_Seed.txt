@@ -1,0 +1,12 @@
+name=Ulasht, the Hate Seed
+url=http://magiccards.info/query?q=%21Ulasht%2C+the+Hate+Seed
+image=http://mtgimage.com/card/ulasht%2C%20the%20hate%20seed.jpg
+rarity=R
+type=Creature
+subtype=Hellion,Hydra
+cost={2}{R}{G}
+pt=0/0
+ability=SN enters the battlefield with a +1/+1 counter on it for each other red creature you control and a +1/+1 counter on it for each other green creature you control.;\
+        {1}, Remove a +1/+1 counter from Ulasht: Choose one — Ulasht deals 1 damage to target creature; or put a 1/1 green Saproling creature token onto the battlefield.
+timing=main
+oracle=Ulasht, the Hate Seed enters the battlefield with a +1/+1 counter on it for each other red creature you control and a +1/+1 counter on it for each other green creature you control. {1}, Remove a +1/+1 counter from Ulasht: Choose one — Ulasht deals 1 damage to target creature; or put a 1/1 green Saproling creature token onto the battlefield.

@@ -1,0 +1,9 @@
+name=Plasm Capture
+url=http://magiccards.info/query?q=%21Plasm+Capture
+image=http://mtgimage.com/card/plasm%20capture.jpg
+rarity=R
+type=Instant
+cost={G}{G}{U}{U}
+effect=Counter target spell. At the beginning of your next precombat main phase, add X mana in any combination of colors to your mana pool, where X is that spell's converted mana cost.
+timing=removal
+oracle=Counter target spell. At the beginning of your next precombat main phase, add X mana in any combination of colors to your mana pool, where X is that spell's converted mana cost.

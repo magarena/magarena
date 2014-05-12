@@ -1,0 +1,11 @@
+name=Black Ward
+url=http://magiccards.info/query?q=%21Black+Ward
+image=http://mtgimage.com/card/black%20ward.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        Enchanted creature has protection from black. This effect doesn't remove SN.
+timing=main
+oracle=Enchant creature. Enchanted creature has protection from black. This effect doesn't remove Black Ward.

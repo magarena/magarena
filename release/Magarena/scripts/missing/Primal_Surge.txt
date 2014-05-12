@@ -1,0 +1,9 @@
+name=Primal Surge
+url=http://magiccards.info/query?q=%21Primal+Surge
+image=http://mtgimage.com/card/primal%20surge.jpg
+rarity=M
+type=Sorcery
+cost={8}{G}{G}
+effect=Exile the top card of your library. If it's a permanent card, you may put it onto the battlefield. If you do, repeat this process.
+timing=main
+oracle=Exile the top card of your library. If it's a permanent card, you may put it onto the battlefield. If you do, repeat this process.

@@ -1,0 +1,9 @@
+name=Sever Soul
+url=http://magiccards.info/query?q=%21Sever+Soul
+image=http://mtgimage.com/card/sever%20soul.jpg
+rarity=C
+type=Sorcery
+cost={3}{B}{B}
+effect=Destroy target nonblack creature. It can't be regenerated. You gain life equal to its toughness.
+timing=main
+oracle=Destroy target nonblack creature. It can't be regenerated. You gain life equal to its toughness.

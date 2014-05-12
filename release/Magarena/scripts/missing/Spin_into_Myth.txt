@@ -1,0 +1,9 @@
+name=Spin into Myth
+url=http://magiccards.info/query?q=%21Spin+into+Myth
+image=http://mtgimage.com/card/spin%20into%20myth.jpg
+rarity=U
+type=Instant
+cost={4}{U}
+effect=Put target creature on top of its owner's library, then fateseal 2.
+timing=removal
+oracle=Put target creature on top of its owner's library, then fateseal 2.

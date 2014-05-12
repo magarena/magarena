@@ -1,0 +1,12 @@
+name=Indigo Faerie
+url=http://magiccards.info/query?q=%21Indigo+Faerie
+image=http://mtgimage.com/card/indigo%20faerie.jpg
+rarity=U
+type=Creature
+subtype=Faerie,Wizard
+cost={1}{U}
+pt=1/1
+ability=Flying;\
+        {U}: Target permanent becomes blue in addition to its other colors until end of turn.
+timing=main
+oracle=Flying. {U}: Target permanent becomes blue in addition to its other colors until end of turn.

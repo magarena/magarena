@@ -1,0 +1,9 @@
+name=Plagiarize
+url=http://magiccards.info/query?q=%21Plagiarize
+image=http://mtgimage.com/card/plagiarize.jpg
+rarity=R
+type=Instant
+cost={3}{U}
+effect=Until end of turn, if target player would draw a card, instead that player skips that draw and you draw a card.
+timing=removal
+oracle=Until end of turn, if target player would draw a card, instead that player skips that draw and you draw a card.

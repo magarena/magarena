@@ -1,0 +1,9 @@
+name=Untaidake, the Cloud Keeper
+url=http://magiccards.info/query?q=%21Untaidake%2C+the+Cloud+Keeper
+image=http://mtgimage.com/card/untaidake%2C%20the%20cloud%20keeper.jpg
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}, Pay 2 life: Add {2} to your mana pool. Spend this mana only to cast legendary spells.
+timing=main
+oracle=Untaidake, the Cloud Keeper enters the battlefield tapped. {T}, Pay 2 life: Add {2} to your mana pool. Spend this mana only to cast legendary spells.

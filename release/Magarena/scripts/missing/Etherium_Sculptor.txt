@@ -1,0 +1,11 @@
+name=Etherium Sculptor
+url=http://magiccards.info/query?q=%21Etherium+Sculptor
+image=http://mtgimage.com/card/etherium%20sculptor.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Vedalken,Artificer
+cost={1}{U}
+pt=1/2
+ability=Artifact spells you cast cost {1} less to cast.
+timing=main
+oracle=Artifact spells you cast cost {1} less to cast.

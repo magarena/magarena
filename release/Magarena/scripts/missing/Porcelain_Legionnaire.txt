@@ -1,0 +1,11 @@
+name=Porcelain Legionnaire
+url=http://magiccards.info/query?q=%21Porcelain+Legionnaire
+image=http://mtgimage.com/card/porcelain%20legionnaire.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Soldier
+cost={2}{P/W}
+pt=3/1
+ability=First strike
+timing=main
+oracle=First strike

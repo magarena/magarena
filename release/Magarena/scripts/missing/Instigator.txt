@@ -1,0 +1,11 @@
+name=Instigator
+url=http://magiccards.info/query?q=%21Instigator
+image=http://mtgimage.com/card/instigator.jpg
+rarity=R
+type=Creature
+subtype=Human,Spellshaper
+cost={1}{B}
+pt=1/1
+ability={1}{B}{B}, {T}, Discard a card: Creatures target player controls attack this turn if able.
+timing=main
+oracle={1}{B}{B}, {T}, Discard a card: Creatures target player controls attack this turn if able.

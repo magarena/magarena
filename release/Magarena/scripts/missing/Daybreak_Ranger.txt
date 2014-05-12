@@ -1,0 +1,12 @@
+name=Daybreak Ranger
+url=http://magiccards.info/query?q=%21Daybreak+Ranger
+image=http://mtgimage.com/card/daybreak%20ranger.jpg
+rarity=R
+type=Creature
+subtype=Human,Archer,Werewolf
+cost={2}{G}
+pt=2/2
+ability={T}: SN deals 2 damage to target creature with flying.;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle={T}: Daybreak Ranger deals 2 damage to target creature with flying. At the beginning of each upkeep, if no spells were cast last turn, transform Daybreak Ranger.

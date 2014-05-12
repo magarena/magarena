@@ -1,0 +1,12 @@
+name=Balustrade Spy
+url=http://magiccards.info/query?q=%21Balustrade+Spy
+image=http://mtgimage.com/card/balustrade%20spy.jpg
+rarity=C
+type=Creature
+subtype=Vampire,Rogue
+cost={3}{B}
+pt=2/3
+ability=Flying;\
+        When SN enters the battlefield, target player reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
+timing=main
+oracle=Flying. When Balustrade Spy enters the battlefield, target player reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.

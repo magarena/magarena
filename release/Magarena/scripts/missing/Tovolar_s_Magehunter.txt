@@ -1,0 +1,11 @@
+name=Tovolar's Magehunter
+url=http://magiccards.info/query?q=%21Tovolar%27s+Magehunter
+image=http://mtgimage.com/card/tovolar%27s%20magehunter.jpg
+rarity=R
+type=Creature
+subtype=Werewolf
+pt=5/5
+ability=Whenever an opponent casts a spell, SN deals 2 damage to that player.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Whenever an opponent casts a spell, Tovolar's Magehunter deals 2 damage to that player. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Tovolar's Magehunter.

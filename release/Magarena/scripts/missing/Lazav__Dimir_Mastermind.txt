@@ -1,0 +1,12 @@
+name=Lazav, Dimir Mastermind
+url=http://magiccards.info/query?q=%21Lazav%2C+Dimir+Mastermind
+image=http://mtgimage.com/card/lazav%2C%20dimir%20mastermind.jpg
+rarity=M
+type=Creature
+subtype=Shapeshifter
+cost={U}{U}{B}{B}
+pt=3/3
+ability=Hexproof;\
+        Whenever a creature card is put into an opponent's graveyard from anywhere, you may have SN become a copy of that card except its name is still SN, it's legendary in addition to its other types, and it gains hexproof and this ability.
+timing=main
+oracle=Hexproof. Whenever a creature card is put into an opponent's graveyard from anywhere, you may have Lazav, Dimir Mastermind become a copy of that card except its name is still Lazav, Dimir Mastermind, it's legendary in addition to its other types, and it gains hexproof and this ability.

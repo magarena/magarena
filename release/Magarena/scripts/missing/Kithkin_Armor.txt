@@ -1,0 +1,12 @@
+name=Kithkin Armor
+url=http://magiccards.info/query?q=%21Kithkin+Armor
+image=http://mtgimage.com/card/kithkin%20armor.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        Enchanted creature can't be blocked by creatures with power 3 or greater.;\
+        Sacrifice SN: The next time a source of your choice would deal damage to enchanted creature this turn, prevent that damage.
+timing=main
+oracle=Enchant creature. Enchanted creature can't be blocked by creatures with power 3 or greater. Sacrifice Kithkin Armor: The next time a source of your choice would deal damage to enchanted creature this turn, prevent that damage.

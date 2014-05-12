@@ -1,0 +1,11 @@
+name=Primal Boost
+url=http://magiccards.info/query?q=%21Primal+Boost
+image=http://mtgimage.com/card/primal%20boost.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Target creature gets +4/+4 until end of turn.;\
+        Cycling {2}{G};\
+        When you cycle SN, you may have target creature get +1/+1 until end of turn.
+timing=removal
+oracle=Target creature gets +4/+4 until end of turn. Cycling {2}{G}. When you cycle Primal Boost, you may have target creature get +1/+1 until end of turn.

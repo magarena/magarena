@@ -1,0 +1,9 @@
+name=Ends
+url=http://magiccards.info/query?q=%21Ends
+image=http://mtgimage.com/card/oddsends.jpg
+rarity=R
+type=Instant
+cost={3}{R}{W}
+effect=Target player sacrifices two attacking creatures.
+timing=removal
+oracle=Target player sacrifices two attacking creatures.

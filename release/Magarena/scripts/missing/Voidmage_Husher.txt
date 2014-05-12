@@ -1,0 +1,13 @@
+name=Voidmage Husher
+url=http://magiccards.info/query?q=%21Voidmage+Husher
+image=http://mtgimage.com/card/voidmage%20husher.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/2
+ability=Flash;\
+        When SN enters the battlefield, counter target activated ability.;\
+        Whenever you cast a spell, you may return SN to its owner's hand.
+timing=main
+oracle=Flash. When Voidmage Husher enters the battlefield, counter target activated ability.. Whenever you cast a spell, you may return Voidmage Husher to its owner's hand.

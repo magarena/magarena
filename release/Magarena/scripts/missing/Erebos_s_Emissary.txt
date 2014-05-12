@@ -1,0 +1,13 @@
+name=Erebos's Emissary
+url=http://magiccards.info/query?q=%21Erebos%27s+Emissary
+image=http://mtgimage.com/card/erebos%27s%20emissary.jpg
+rarity=U
+type=Enchantment,Creature
+subtype=Snake
+cost={3}{B}
+pt=3/3
+ability=Bestow {5}{B};\
+        Discard a creature card: SN gets +2/+2 until end of turn. If SN is an Aura, enchanted creature gets +2/+2 until end of turn instead.;\
+        Enchanted creature gets +3/+3.
+timing=main
+oracle=Bestow {5}{B}. Discard a creature card: Erebos's Emissary gets +2/+2 until end of turn. If Erebos's Emissary is an Aura, enchanted creature gets +2/+2 until end of turn instead. Enchanted creature gets +3/+3.

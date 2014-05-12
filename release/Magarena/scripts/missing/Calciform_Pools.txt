@@ -1,0 +1,10 @@
+name=Calciform Pools
+url=http://magiccards.info/query?q=%21Calciform+Pools
+image=http://mtgimage.com/card/calciform%20pools.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {1}, {T}: Put a storage counter on SN.;\
+        {1}, Remove X storage counters from SN: Add X mana in any combination of {W} and/or {U} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {1}, {T}: Put a storage counter on Calciform Pools. {1}, Remove X storage counters from Calciform Pools: Add X mana in any combination of {W} and/or {U} to your mana pool.

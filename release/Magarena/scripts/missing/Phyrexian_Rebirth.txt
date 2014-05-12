@@ -1,0 +1,9 @@
+name=Phyrexian Rebirth
+url=http://magiccards.info/query?q=%21Phyrexian+Rebirth
+image=http://mtgimage.com/card/phyrexian%20rebirth.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}{W}
+effect=Destroy all creatures, then put an X/X colorless Horror artifact creature token onto the battlefield, where X is the number of creatures destroyed this way.
+timing=main
+oracle=Destroy all creatures, then put an X/X colorless Horror artifact creature token onto the battlefield, where X is the number of creatures destroyed this way.

@@ -1,0 +1,9 @@
+name=Political Trickery
+url=http://magiccards.info/query?q=%21Political+Trickery
+image=http://mtgimage.com/card/political%20trickery.jpg
+rarity=R
+type=Sorcery
+cost={2}{U}
+effect=Exchange control of target land you control and target land an opponent controls.
+timing=main
+oracle=Exchange control of target land you control and target land an opponent controls.

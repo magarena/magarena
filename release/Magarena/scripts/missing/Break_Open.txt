@@ -1,0 +1,9 @@
+name=Break Open
+url=http://magiccards.info/query?q=%21Break+Open
+image=http://mtgimage.com/card/break%20open.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Turn target face-down creature an opponent controls face up.
+timing=removal
+oracle=Turn target face-down creature an opponent controls face up.

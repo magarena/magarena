@@ -1,0 +1,11 @@
+name=Ob Nixilis, the Fallen
+url=http://magiccards.info/query?q=%21Ob+Nixilis%2C+the+Fallen
+image=http://mtgimage.com/card/ob%20nixilis%2C%20the%20fallen.jpg
+rarity=M
+type=Creature
+subtype=Demon
+cost={3}{B}{B}
+pt=3/3
+ability=Landfall — Whenever a land enters the battlefield under your control, you may have target player lose 3 life. If you do, put three +1/+1 counters on SN.
+timing=main
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may have target player lose 3 life. If you do, put three +1/+1 counters on Ob Nixilis, the Fallen.

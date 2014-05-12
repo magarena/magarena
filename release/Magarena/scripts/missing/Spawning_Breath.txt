@@ -1,0 +1,9 @@
+name=Spawning Breath
+url=http://magiccards.info/query?q=%21Spawning+Breath
+image=http://mtgimage.com/card/spawning%20breath.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=SN deals 1 damage to target creature or player. Put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. It has "Sacrifice this creature: Add {1} to your mana pool."
+timing=removal
+oracle=Spawning Breath deals 1 damage to target creature or player. Put a 0/1 colorless Eldrazi Spawn creature token onto the battlefield. It has "Sacrifice this creature: Add {1} to your mana pool."

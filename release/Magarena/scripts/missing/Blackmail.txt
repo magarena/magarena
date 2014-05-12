@@ -1,0 +1,9 @@
+name=Blackmail
+url=http://magiccards.info/query?q=%21Blackmail
+image=http://mtgimage.com/card/blackmail.jpg
+rarity=U
+type=Sorcery
+cost={B}
+effect=Target player reveals three cards from his or her hand and you choose one of them. That player discards that card.
+timing=main
+oracle=Target player reveals three cards from his or her hand and you choose one of them. That player discards that card.

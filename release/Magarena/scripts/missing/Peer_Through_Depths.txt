@@ -1,0 +1,10 @@
+name=Peer Through Depths
+url=http://magiccards.info/query?q=%21Peer+Through+Depths
+image=http://mtgimage.com/card/peer%20through%20depths.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={1}{U}
+effect=Look at the top five cards of your library. You may reveal an instant or sorcery card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+timing=removal
+oracle=Look at the top five cards of your library. You may reveal an instant or sorcery card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

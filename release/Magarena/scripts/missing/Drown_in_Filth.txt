@@ -1,0 +1,9 @@
+name=Drown in Filth
+url=http://magiccards.info/query?q=%21Drown+in+Filth
+image=http://mtgimage.com/card/drown%20in%20filth.jpg
+rarity=C
+type=Sorcery
+cost={B}{G}
+effect=Choose target creature. Put the top four cards of your library into your graveyard, then that creature gets -1/-1 until end of turn for each land card in your graveyard.
+timing=main
+oracle=Choose target creature. Put the top four cards of your library into your graveyard, then that creature gets -1/-1 until end of turn for each land card in your graveyard.

@@ -1,0 +1,12 @@
+name=Darksteel Garrison
+url=http://magiccards.info/query?q=%21Darksteel+Garrison
+image=http://mtgimage.com/card/darksteel%20garrison.jpg
+rarity=R
+type=Artifact
+subtype=Fortification
+cost={2}
+ability=Fortified land has indestructible.;\
+        Whenever fortified land becomes tapped, target creature gets +1/+1 until end of turn.;\
+        Fortify {3}
+timing=main
+oracle=Fortified land has indestructible. Whenever fortified land becomes tapped, target creature gets +1/+1 until end of turn. Fortify {3}

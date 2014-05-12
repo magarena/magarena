@@ -1,0 +1,9 @@
+name=Jade Monolith
+url=http://magiccards.info/query?q=%21Jade+Monolith
+image=http://mtgimage.com/card/jade%20monolith.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={1}: The next time a source of your choice would deal damage to target creature this turn, that source deals that damage to you instead.
+timing=main
+oracle={1}: The next time a source of your choice would deal damage to target creature this turn, that source deals that damage to you instead.

@@ -1,0 +1,9 @@
+name=Telekinesis
+url=http://magiccards.info/query?q=%21Telekinesis
+image=http://mtgimage.com/card/telekinesis.jpg
+rarity=R
+type=Instant
+cost={U}{U}
+effect=Tap target creature. Prevent all combat damage that would be dealt by that creature this turn. It doesn't untap during its controller's next two untap steps.
+timing=removal
+oracle=Tap target creature. Prevent all combat damage that would be dealt by that creature this turn. It doesn't untap during its controller's next two untap steps.

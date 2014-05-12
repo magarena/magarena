@@ -1,0 +1,11 @@
+name=Crosis's Attendant
+url=http://magiccards.info/query?q=%21Crosis%27s+Attendant
+image=http://mtgimage.com/card/crosis%27s%20attendant.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=3/3
+ability={1}, Sacrifice SN: Add {U}{B}{R} to your mana pool.
+timing=main
+oracle={1}, Sacrifice Crosis's Attendant: Add {U}{B}{R} to your mana pool.

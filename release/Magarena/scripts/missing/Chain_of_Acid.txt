@@ -1,0 +1,9 @@
+name=Chain of Acid
+url=http://magiccards.info/query?q=%21Chain+of+Acid
+image=http://mtgimage.com/card/chain%20of%20acid.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Destroy target noncreature permanent. Then that permanent's controller may copy this spell and may choose a new target for that copy.
+timing=main
+oracle=Destroy target noncreature permanent. Then that permanent's controller may copy this spell and may choose a new target for that copy.

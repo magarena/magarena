@@ -1,0 +1,11 @@
+name=Whippoorwill
+url=http://magiccards.info/query?q=%21Whippoorwill
+image=http://mtgimage.com/card/whippoorwill.jpg
+rarity=U
+type=Creature
+subtype=Bird
+cost={G}
+pt=1/1
+ability={G}{G}, {T}: Target creature can't be regenerated this turn. Damage that would be dealt to that creature this turn can't be prevented or dealt instead to another creature or player. When the creature dies this turn, exile the creature.
+timing=main
+oracle={G}{G}, {T}: Target creature can't be regenerated this turn. Damage that would be dealt to that creature this turn can't be prevented or dealt instead to another creature or player. When the creature dies this turn, exile the creature.

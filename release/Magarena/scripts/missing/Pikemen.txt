@@ -1,0 +1,11 @@
+name=Pikemen
+url=http://magiccards.info/query?q=%21Pikemen
+image=http://mtgimage.com/card/pikemen.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=1/1
+ability=First strike; banding
+timing=main
+oracle=First strike; banding

@@ -1,0 +1,9 @@
+name=Wheel of Torture
+url=http://magiccards.info/query?q=%21Wheel+of+Torture
+image=http://mtgimage.com/card/wheel%20of%20torture.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=At the beginning of each opponent's upkeep, SN deals X damage to that player, where X is 3 minus the number of cards in his or her hand.
+timing=main
+oracle=At the beginning of each opponent's upkeep, Wheel of Torture deals X damage to that player, where X is 3 minus the number of cards in his or her hand.

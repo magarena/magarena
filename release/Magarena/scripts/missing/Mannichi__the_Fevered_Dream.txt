@@ -1,0 +1,11 @@
+name=Mannichi, the Fevered Dream
+url=http://magiccards.info/query?q=%21Mannichi%2C+the+Fevered+Dream
+image=http://mtgimage.com/card/mannichi%2C%20the%20fevered%20dream.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{R}
+pt=1/2
+ability={1}{R}: Switch each creature's power and toughness until end of turn.
+timing=main
+oracle={1}{R}: Switch each creature's power and toughness until end of turn.

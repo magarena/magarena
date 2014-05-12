@@ -1,0 +1,11 @@
+name=Doran, the Siege Tower
+url=http://magiccards.info/query?q=%21Doran%2C+the+Siege+Tower
+image=http://mtgimage.com/card/doran%2C%20the%20siege%20tower.jpg
+rarity=R
+type=Creature
+subtype=Treefolk,Shaman
+cost={B}{G}{W}
+pt=0/5
+ability=Each creature assigns combat damage equal to its toughness rather than its power.
+timing=main
+oracle=Each creature assigns combat damage equal to its toughness rather than its power.

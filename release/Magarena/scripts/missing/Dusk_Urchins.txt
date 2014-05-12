@@ -1,0 +1,12 @@
+name=Dusk Urchins
+url=http://magiccards.info/query?q=%21Dusk+Urchins
+image=http://mtgimage.com/card/dusk%20urchins.jpg
+rarity=R
+type=Creature
+subtype=Ouphe
+cost={2}{B}
+pt=4/3
+ability=Whenever SN attacks or blocks, put a -1/-1 counter on it.;\
+        When SN dies, draw a card for each -1/-1 counter on it.
+timing=main
+oracle=Whenever Dusk Urchins attacks or blocks, put a -1/-1 counter on it. When Dusk Urchins dies, draw a card for each -1/-1 counter on it.

@@ -1,0 +1,11 @@
+name=Huang Zhong, Shu General
+url=http://magiccards.info/query?q=%21Huang+Zhong%2C+Shu+General
+image=http://mtgimage.com/card/huang%20zhong%2C%20shu%20general.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=2/3
+ability=SN can't be blocked by more than one creature.
+timing=main
+oracle=Huang Zhong, Shu General can't be blocked by more than one creature.

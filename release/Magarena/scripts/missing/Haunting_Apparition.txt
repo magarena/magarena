@@ -1,0 +1,13 @@
+name=Haunting Apparition
+url=http://magiccards.info/query?q=%21Haunting+Apparition
+image=http://mtgimage.com/card/haunting%20apparition.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{U}{B}
+pt=1+*/2
+ability=Flying;\
+        As SN enters the battlefield, choose an opponent.;\
+        SN's power is equal to 1 plus the number of green creature cards in the chosen player's graveyard.
+timing=main
+oracle=Flying. As Haunting Apparition enters the battlefield, choose an opponent. Haunting Apparition's power is equal to 1 plus the number of green creature cards in the chosen player's graveyard.

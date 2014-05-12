@@ -1,0 +1,9 @@
+name=Deadfall
+url=http://magiccards.info/query?q=%21Deadfall
+image=http://mtgimage.com/card/deadfall.jpg
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=Creatures with forestwalk can be blocked as though they didn't have forestwalk.
+timing=main
+oracle=Creatures with forestwalk can be blocked as though they didn't have forestwalk.

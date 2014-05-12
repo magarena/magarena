@@ -1,0 +1,9 @@
+name=Acidic Dagger
+url=http://magiccards.info/query?q=%21Acidic+Dagger
+image=http://mtgimage.com/card/acidic%20dagger.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={4}, {T}: Whenever target creature deals combat damage to a non-Wall creature this turn, destroy that non-Wall creature. When the targeted creature leaves the battlefield this turn, sacrifice SN. Activate this ability only before blockers are declared.
+timing=main
+oracle={4}, {T}: Whenever target creature deals combat damage to a non-Wall creature this turn, destroy that non-Wall creature. When the targeted creature leaves the battlefield this turn, sacrifice Acidic Dagger. Activate this ability only before blockers are declared.

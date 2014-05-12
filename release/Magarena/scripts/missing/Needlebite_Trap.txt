@@ -1,0 +1,11 @@
+name=Needlebite Trap
+url=http://magiccards.info/query?q=%21Needlebite+Trap
+image=http://mtgimage.com/card/needlebite%20trap.jpg
+rarity=U
+type=Instant
+subtype=Trap
+cost={5}{B}{B}
+effect=If an opponent gained life this turn, you may pay {B} rather than pay SN's mana cost.;\
+        Target player loses 5 life and you gain 5 life.
+timing=removal
+oracle=If an opponent gained life this turn, you may pay {B} rather than pay Needlebite Trap's mana cost. Target player loses 5 life and you gain 5 life.

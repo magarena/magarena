@@ -1,0 +1,12 @@
+name=Emissary of Hope
+url=http://magiccards.info/query?q=%21Emissary+of+Hope
+image=http://mtgimage.com/card/emissary%20of%20hope.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{W}{W}
+pt=2/1
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you gain 1 life for each artifact that player controls.
+timing=main
+oracle=Flying. Whenever Emissary of Hope deals combat damage to a player, you gain 1 life for each artifact that player controls.

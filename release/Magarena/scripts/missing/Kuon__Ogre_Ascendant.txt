@@ -1,0 +1,11 @@
+name=Kuon, Ogre Ascendant
+url=http://magiccards.info/query?q=%21Kuon%2C+Ogre+Ascendant
+image=http://mtgimage.com/card/kuon%2C%20ogre%20ascendant.jpg
+rarity=R
+type=Creature
+subtype=Ogre,Monk
+cost={B}{B}{B}
+pt=2/4
+ability=At the beginning of the end step, if three or more creatures died this turn, flip SN.
+timing=main
+oracle=At the beginning of the end step, if three or more creatures died this turn, flip Kuon, Ogre Ascendant.

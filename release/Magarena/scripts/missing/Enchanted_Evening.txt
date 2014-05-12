@@ -1,0 +1,9 @@
+name=Enchanted Evening
+url=http://magiccards.info/query?q=%21Enchanted+Evening
+image=http://mtgimage.com/card/enchanted%20evening.jpg
+rarity=R
+type=Enchantment
+cost={3}{W/U}{W/U}
+ability=All permanents are enchantments in addition to their other types.
+timing=main
+oracle=All permanents are enchantments in addition to their other types.

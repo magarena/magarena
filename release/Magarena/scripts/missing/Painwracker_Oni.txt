@@ -1,0 +1,12 @@
+name=Painwracker Oni
+url=http://magiccards.info/query?q=%21Painwracker+Oni
+image=http://mtgimage.com/card/painwracker%20oni.jpg
+rarity=U
+type=Creature
+subtype=Demon,Spirit
+cost={3}{B}{B}
+pt=5/4
+ability=Fear;\
+        At the beginning of your upkeep, sacrifice a creature if you don't control an Ogre.
+timing=main
+oracle=Fear. At the beginning of your upkeep, sacrifice a creature if you don't control an Ogre.

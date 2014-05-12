@@ -1,0 +1,11 @@
+name=Radiant Kavu
+url=http://magiccards.info/query?q=%21Radiant+Kavu
+image=http://mtgimage.com/card/radiant%20kavu.jpg
+rarity=R
+type=Creature
+subtype=Kavu
+cost={R}{G}{W}
+pt=3/3
+ability={R}{G}{W}: Prevent all combat damage blue creatures and black creatures would deal this turn.
+timing=main
+oracle={R}{G}{W}: Prevent all combat damage blue creatures and black creatures would deal this turn.

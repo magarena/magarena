@@ -1,0 +1,9 @@
+name=Manabarbs
+url=http://magiccards.info/query?q=%21Manabarbs
+image=http://mtgimage.com/card/manabarbs.jpg
+rarity=R
+type=Enchantment
+cost={3}{R}
+ability=Whenever a player taps a land for mana, SN deals 1 damage to that player.
+timing=main
+oracle=Whenever a player taps a land for mana, Manabarbs deals 1 damage to that player.

@@ -1,0 +1,9 @@
+name=Steam Augury
+url=http://magiccards.info/query?q=%21Steam+Augury
+image=http://mtgimage.com/card/steam%20augury.jpg
+rarity=R
+type=Instant
+cost={2}{U}{R}
+effect=Reveal the top five cards of your library and separate them into two piles. An opponent chooses one of those piles. Put that pile into your hand and the other into your graveyard.
+timing=removal
+oracle=Reveal the top five cards of your library and separate them into two piles. An opponent chooses one of those piles. Put that pile into your hand and the other into your graveyard.

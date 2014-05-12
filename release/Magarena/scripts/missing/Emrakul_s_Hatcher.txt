@@ -1,0 +1,11 @@
+name=Emrakul's Hatcher
+url=http://magiccards.info/query?q=%21Emrakul%27s+Hatcher
+image=http://mtgimage.com/card/emrakul%27s%20hatcher.jpg
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={4}{R}
+pt=3/3
+ability=When SN enters the battlefield, put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."
+timing=main
+oracle=When Emrakul's Hatcher enters the battlefield, put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."

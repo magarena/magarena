@@ -1,0 +1,11 @@
+name=Keeper of the Light
+url=http://magiccards.info/query?q=%21Keeper+of+the+Light
+image=http://mtgimage.com/card/keeper%20of%20the%20light.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={W}{W}
+pt=1/2
+ability={W}, {T}: Choose target opponent who had more life than you did as you activated this ability. You gain 3 life.
+timing=main
+oracle={W}, {T}: Choose target opponent who had more life than you did as you activated this ability. You gain 3 life.

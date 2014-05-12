@@ -1,0 +1,11 @@
+name=Vanguard's Shield
+url=http://magiccards.info/query?q=%21Vanguard%27s+Shield
+image=http://mtgimage.com/card/vanguard%27s%20shield.jpg
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +0/+3 and can block an additional creature.;\
+        Equip {3}
+timing=main
+oracle=Equipped creature gets +0/+3 and can block an additional creature. Equip {3}

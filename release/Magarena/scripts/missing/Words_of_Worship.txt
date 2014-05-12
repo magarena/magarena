@@ -1,0 +1,9 @@
+name=Words of Worship
+url=http://magiccards.info/query?q=%21Words+of+Worship
+image=http://mtgimage.com/card/words%20of%20worship.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability={1}: The next time you would draw a card this turn, you gain 5 life instead.
+timing=main
+oracle={1}: The next time you would draw a card this turn, you gain 5 life instead.

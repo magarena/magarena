@@ -1,0 +1,11 @@
+name=Mire Shade
+url=http://magiccards.info/query?q=%21Mire+Shade
+image=http://mtgimage.com/card/mire%20shade.jpg
+rarity=U
+type=Creature
+subtype=Shade
+cost={1}{B}
+pt=1/1
+ability={B}, Sacrifice a Swamp: Put a +1/+1 counter on SN. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={B}, Sacrifice a Swamp: Put a +1/+1 counter on Mire Shade. Activate this ability only any time you could cast a sorcery.

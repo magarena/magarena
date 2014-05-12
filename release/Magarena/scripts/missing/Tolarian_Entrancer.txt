@@ -1,0 +1,11 @@
+name=Tolarian Entrancer
+url=http://magiccards.info/query?q=%21Tolarian+Entrancer
+image=http://mtgimage.com/card/tolarian%20entrancer.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+ability=Whenever SN becomes blocked by a creature, gain control of that creature at end of combat.
+timing=main
+oracle=Whenever Tolarian Entrancer becomes blocked by a creature, gain control of that creature at end of combat.

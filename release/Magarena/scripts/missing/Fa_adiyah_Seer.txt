@@ -1,0 +1,11 @@
+name=Fa'adiyah Seer
+url=http://magiccards.info/query?q=%21Fa%27adiyah+Seer
+image=http://mtgimage.com/card/fa%27adiyah%20seer.jpg
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{G}
+pt=1/1
+ability={T}: Draw a card and reveal it. If it isn't a land card, discard it.
+timing=main
+oracle={T}: Draw a card and reveal it. If it isn't a land card, discard it.

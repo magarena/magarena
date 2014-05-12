@@ -1,0 +1,11 @@
+name=Skirk Prospector
+url=http://magiccards.info/query?q=%21Skirk+Prospector
+image=http://mtgimage.com/card/skirk%20prospector.jpg
+rarity=C
+type=Creature
+subtype=Goblin
+cost={R}
+pt=1/1
+ability=Sacrifice a Goblin: Add {R} to your mana pool.
+timing=main
+oracle=Sacrifice a Goblin: Add {R} to your mana pool.

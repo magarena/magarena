@@ -1,0 +1,10 @@
+name=Fountain of Cho
+url=http://magiccards.info/query?q=%21Fountain+of+Cho
+image=http://mtgimage.com/card/fountain%20of%20cho.jpg
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Put a storage counter on SN.;\
+        {T}, Remove any number of storage counters from SN: Add {W} to your mana pool for each storage counter removed this way.
+timing=main
+oracle=Fountain of Cho enters the battlefield tapped. {T}: Put a storage counter on Fountain of Cho. {T}, Remove any number of storage counters from Fountain of Cho: Add {W} to your mana pool for each storage counter removed this way.

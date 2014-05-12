@@ -1,0 +1,9 @@
+name=Covenant of Minds
+url=http://magiccards.info/query?q=%21Covenant+of+Minds
+image=http://mtgimage.com/card/covenant%20of%20minds.jpg
+rarity=R
+type=Sorcery
+cost={4}{U}
+effect=Reveal the top three cards of your library. Target opponent may choose to put those cards into your hand. If he or she doesn't, put those cards into your graveyard and draw five cards.
+timing=main
+oracle=Reveal the top three cards of your library. Target opponent may choose to put those cards into your hand. If he or she doesn't, put those cards into your graveyard and draw five cards.

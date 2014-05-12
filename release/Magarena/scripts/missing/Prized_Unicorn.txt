@@ -1,0 +1,11 @@
+name=Prized Unicorn
+url=http://magiccards.info/query?q=%21Prized+Unicorn
+image=http://mtgimage.com/card/prized%20unicorn.jpg
+rarity=U
+type=Creature
+subtype=Unicorn
+cost={3}{G}
+pt=2/2
+ability=All creatures able to block SN do so.
+timing=main
+oracle=All creatures able to block Prized Unicorn do so.

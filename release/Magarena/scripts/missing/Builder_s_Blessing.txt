@@ -1,0 +1,9 @@
+name=Builder's Blessing
+url=http://magiccards.info/query?q=%21Builder%27s+Blessing
+image=http://mtgimage.com/card/builder%27s%20blessing.jpg
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=Untapped creatures you control get +0/+2.
+timing=main
+oracle=Untapped creatures you control get +0/+2.

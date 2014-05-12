@@ -1,0 +1,10 @@
+name=Part the Veil
+url=http://magiccards.info/query?q=%21Part+the+Veil
+image=http://mtgimage.com/card/part%20the%20veil.jpg
+rarity=R
+type=Instant
+subtype=Arcane
+cost={3}{U}
+effect=Return all creatures you control to their owner's hand.
+timing=removal
+oracle=Return all creatures you control to their owner's hand.

@@ -1,0 +1,10 @@
+name=Champion's Victory
+url=http://magiccards.info/query?q=%21Champion%27s+Victory
+image=http://mtgimage.com/card/champion%27s%20victory.jpg
+rarity=U
+type=Instant
+cost={U}
+effect=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
+        Return target attacking creature to its owner's hand.
+timing=removal
+oracle=Cast Champion's Victory only during the declare attackers step and only if you've been attacked this step. Return target attacking creature to its owner's hand.

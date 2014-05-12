@@ -1,0 +1,11 @@
+name=Scarblade Elite
+url=http://magiccards.info/query?q=%21Scarblade+Elite
+image=http://mtgimage.com/card/scarblade%20elite.jpg
+rarity=R
+type=Creature
+subtype=Elf,Assassin
+cost={B}{B}
+pt=2/2
+ability={T}, Exile an Assassin card from your graveyard: Destroy target creature.
+timing=main
+oracle={T}, Exile an Assassin card from your graveyard: Destroy target creature.

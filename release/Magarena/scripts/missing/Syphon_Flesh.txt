@@ -1,0 +1,9 @@
+name=Syphon Flesh
+url=http://magiccards.info/query?q=%21Syphon+Flesh
+image=http://mtgimage.com/card/syphon%20flesh.jpg
+rarity=U
+type=Sorcery
+cost={4}{B}
+effect=Each other player sacrifices a creature. You put a 2/2 black Zombie creature token onto the battlefield for each creature sacrificed this way.
+timing=main
+oracle=Each other player sacrifices a creature. You put a 2/2 black Zombie creature token onto the battlefield for each creature sacrificed this way.

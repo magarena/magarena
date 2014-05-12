@@ -1,0 +1,9 @@
+name=Trial
+url=http://magiccards.info/query?q=%21Trial
+image=http://mtgimage.com/card/trialerror.jpg
+rarity=U
+type=Instant
+cost={W}{U}
+effect=Return all creatures blocking or blocked by target creature to their owner's hand.
+timing=removal
+oracle=Return all creatures blocking or blocked by target creature to their owner's hand.

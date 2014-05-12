@@ -1,0 +1,12 @@
+name=Gaea's Liege
+url=http://magiccards.info/query?q=%21Gaea%27s+Liege
+image=http://mtgimage.com/card/gaea%27s%20liege.jpg
+rarity=R
+type=Creature
+subtype=Avatar
+cost={3}{G}{G}{G}
+pt=*/*
+ability=As long as SN isn't attacking, its power and toughness are each equal to the number of Forests you control. As long as SN is attacking, its power and toughness are each equal to the number of Forests defending player controls.;\
+        {T}: Target land becomes a Forest until SN leaves the battlefield.
+timing=main
+oracle=As long as Gaea's Liege isn't attacking, its power and toughness are each equal to the number of Forests you control. As long as Gaea's Liege is attacking, its power and toughness are each equal to the number of Forests defending player controls. {T}: Target land becomes a Forest until Gaea's Liege leaves the battlefield.

@@ -1,0 +1,12 @@
+name=Goblin Brawler
+url=http://magiccards.info/query?q=%21Goblin+Brawler
+image=http://mtgimage.com/card/goblin%20brawler.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={2}{R}
+pt=2/2
+ability=First strike;\
+        SN can't be equipped.
+timing=main
+oracle=First strike. Goblin Brawler can't be equipped.

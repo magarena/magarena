@@ -1,0 +1,9 @@
+name=Leave No Trace
+url=http://magiccards.info/query?q=%21Leave+No+Trace
+image=http://mtgimage.com/card/leave%20no%20trace.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Radiance — Destroy target enchantment and each other enchantment that shares a color with it.
+timing=removal
+oracle=Radiance — Destroy target enchantment and each other enchantment that shares a color with it.

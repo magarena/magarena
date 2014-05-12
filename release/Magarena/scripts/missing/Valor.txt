@@ -1,0 +1,12 @@
+name=Valor
+url=http://magiccards.info/query?q=%21Valor
+image=http://mtgimage.com/card/valor.jpg
+rarity=U
+type=Creature
+subtype=Incarnation
+cost={3}{W}
+pt=2/2
+ability=First strike;\
+        As long as SN is in your graveyard and you control a Plains, creatures you control have first strike.
+timing=main
+oracle=First strike. As long as Valor is in your graveyard and you control a Plains, creatures you control have first strike.

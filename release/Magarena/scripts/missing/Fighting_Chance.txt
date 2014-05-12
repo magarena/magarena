@@ -1,0 +1,9 @@
+name=Fighting Chance
+url=http://magiccards.info/query?q=%21Fighting+Chance
+image=http://mtgimage.com/card/fighting%20chance.jpg
+rarity=R
+type=Instant
+cost={R}
+effect=For each blocking creature, flip a coin. If you win the flip, prevent all combat damage that would be dealt by that creature this turn.
+timing=removal
+oracle=For each blocking creature, flip a coin. If you win the flip, prevent all combat damage that would be dealt by that creature this turn.

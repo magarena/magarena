@@ -1,0 +1,9 @@
+name=Dead Ringers
+url=http://magiccards.info/query?q=%21Dead+Ringers
+image=http://mtgimage.com/card/dead%20ringers.jpg
+rarity=C
+type=Sorcery
+cost={4}{B}
+effect=Destroy two target nonblack creatures unless either one is a color the other isn't. They can't be regenerated.
+timing=main
+oracle=Destroy two target nonblack creatures unless either one is a color the other isn't. They can't be regenerated.

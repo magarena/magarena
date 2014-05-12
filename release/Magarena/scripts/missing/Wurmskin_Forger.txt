@@ -1,0 +1,11 @@
+name=Wurmskin Forger
+url=http://magiccards.info/query?q=%21Wurmskin+Forger
+image=http://mtgimage.com/card/wurmskin%20forger.jpg
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={5}{G}{G}
+pt=2/2
+ability=When SN enters the battlefield, distribute three +1/+1 counters among one, two, or three target creatures.
+timing=main
+oracle=When Wurmskin Forger enters the battlefield, distribute three +1/+1 counters among one, two, or three target creatures.

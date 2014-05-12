@@ -1,0 +1,9 @@
+name=Cryptic Gateway
+url=http://magiccards.info/query?q=%21Cryptic+Gateway
+image=http://mtgimage.com/card/cryptic%20gateway.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability=Tap two untapped creatures you control: You may put a creature card from your hand that shares a creature type with each creature tapped this way onto the battlefield.
+timing=main
+oracle=Tap two untapped creatures you control: You may put a creature card from your hand that shares a creature type with each creature tapped this way onto the battlefield.

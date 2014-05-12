@@ -1,0 +1,11 @@
+name=Shidako, Broodmistress
+url=http://magiccards.info/query?q=%21Shidako%2C+Broodmistress
+image=http://mtgimage.com/card/shidako%2C%20broodmistress.jpg
+rarity=U
+type=Creature
+subtype=Snake,Shaman
+cost={2}{G}
+pt=3/3
+ability={G}, Sacrifice a creature: Target creature gets +3/+3 until end of turn.
+timing=main
+oracle={G}, Sacrifice a creature: Target creature gets +3/+3 until end of turn.

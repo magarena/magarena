@@ -1,0 +1,13 @@
+name=Sand Squid
+url=http://magiccards.info/query?q=%21Sand+Squid
+image=http://mtgimage.com/card/sand%20squid.jpg
+rarity=R
+type=Creature
+subtype=Squid,Beast
+cost={3}{U}
+pt=2/2
+ability=Islandwalk;\
+        You may choose not to untap SN during your untap step.;\
+        {T}: Tap target creature. That creature doesn't untap during its controller's untap step for as long as SN remains tapped.
+timing=main
+oracle=Islandwalk. You may choose not to untap Sand Squid during your untap step. {T}: Tap target creature. That creature doesn't untap during its controller's untap step for as long as Sand Squid remains tapped.

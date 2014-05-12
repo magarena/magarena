@@ -1,0 +1,11 @@
+name=Abyssal Hunter
+url=http://magiccards.info/query?q=%21Abyssal+Hunter
+image=http://mtgimage.com/card/abyssal%20hunter.jpg
+rarity=R
+type=Creature
+subtype=Human,Assassin
+cost={3}{B}
+pt=1/1
+ability={B}, {T}: Tap target creature. SN deals damage equal to SN's power to that creature.
+timing=main
+oracle={B}, {T}: Tap target creature. Abyssal Hunter deals damage equal to Abyssal Hunter's power to that creature.

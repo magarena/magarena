@@ -1,0 +1,9 @@
+name=Disarm
+url=http://magiccards.info/query?q=%21Disarm
+image=http://mtgimage.com/card/disarm.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Unattach all Equipment from target creature.
+timing=removal
+oracle=Unattach all Equipment from target creature.

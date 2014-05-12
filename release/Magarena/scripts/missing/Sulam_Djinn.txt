@@ -1,0 +1,12 @@
+name=Sulam Djinn
+url=http://magiccards.info/query?q=%21Sulam+Djinn
+image=http://mtgimage.com/card/sulam%20djinn.jpg
+rarity=U
+type=Creature
+subtype=Djinn
+cost={5}{G}
+pt=6/6
+ability=Trample;\
+        SN gets -2/-2 as long as green is the most common color among all permanents or is tied for most common.
+timing=main
+oracle=Trample. Sulam Djinn gets -2/-2 as long as green is the most common color among all permanents or is tied for most common.

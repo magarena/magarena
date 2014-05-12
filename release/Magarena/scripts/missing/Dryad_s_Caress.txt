@@ -1,0 +1,9 @@
+name=Dryad's Caress
+url=http://magiccards.info/query?q=%21Dryad%27s+Caress
+image=http://mtgimage.com/card/dryad%27s%20caress.jpg
+rarity=C
+type=Instant
+cost={4}{G}{G}
+effect=You gain 1 life for each creature on the battlefield. If {W} was spent to cast SN, untap all creatures you control.
+timing=removal
+oracle=You gain 1 life for each creature on the battlefield. If {W} was spent to cast Dryad's Caress, untap all creatures you control.

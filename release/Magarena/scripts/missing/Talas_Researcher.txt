@@ -1,0 +1,11 @@
+name=Talas Researcher
+url=http://magiccards.info/query?q=%21Talas+Researcher
+image=http://mtgimage.com/card/talas%20researcher.jpg
+rarity=R
+type=Creature
+subtype=Human,Pirate,Wizard
+cost={4}{U}
+pt=1/1
+ability={T}: Draw a card. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Draw a card. Activate this ability only during your turn, before attackers are declared.

@@ -1,0 +1,9 @@
+name=Voidslime
+url=http://magiccards.info/query?q=%21Voidslime
+image=http://mtgimage.com/card/voidslime.jpg
+rarity=R
+type=Instant
+cost={G}{U}{U}
+effect=Counter target spell, activated ability, or triggered ability.
+timing=removal
+oracle=Counter target spell, activated ability, or triggered ability.

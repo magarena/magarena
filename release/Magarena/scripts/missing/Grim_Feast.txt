@@ -1,0 +1,10 @@
+name=Grim Feast
+url=http://magiccards.info/query?q=%21Grim+Feast
+image=http://mtgimage.com/card/grim%20feast.jpg
+rarity=R
+type=Enchantment
+cost={1}{B}{G}
+ability=At the beginning of your upkeep, SN deals 1 damage to you.;\
+        Whenever a creature is put into an opponent's graveyard from the battlefield, you gain life equal to its toughness.
+timing=main
+oracle=At the beginning of your upkeep, Grim Feast deals 1 damage to you. Whenever a creature is put into an opponent's graveyard from the battlefield, you gain life equal to its toughness.

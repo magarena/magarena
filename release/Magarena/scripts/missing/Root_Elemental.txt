@@ -1,0 +1,12 @@
+name=Root Elemental
+url=http://magiccards.info/query?q=%21Root+Elemental
+image=http://mtgimage.com/card/root%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{G}{G}
+pt=6/5
+ability=Morph {5}{G}{G};\
+        When SN is turned face up, you may put a creature card from your hand onto the battlefield.
+timing=main
+oracle=Morph {5}{G}{G}. When Root Elemental is turned face up, you may put a creature card from your hand onto the battlefield.

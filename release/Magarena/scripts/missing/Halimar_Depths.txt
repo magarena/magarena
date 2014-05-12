@@ -1,0 +1,10 @@
+name=Halimar Depths
+url=http://magiccards.info/query?q=%21Halimar+Depths
+image=http://mtgimage.com/card/halimar%20depths.jpg
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, look at the top three cards of your library, then put them back in any order.;\
+        {T}: Add {U} to your mana pool.
+timing=main
+oracle=Halimar Depths enters the battlefield tapped. When Halimar Depths enters the battlefield, look at the top three cards of your library, then put them back in any order. {T}: Add {U} to your mana pool.

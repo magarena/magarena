@@ -1,0 +1,11 @@
+name=Karplusan Giant
+url=http://magiccards.info/query?q=%21Karplusan+Giant
+image=http://mtgimage.com/card/karplusan%20giant.jpg
+rarity=U
+type=Creature
+subtype=Giant
+cost={6}{R}
+pt=3/3
+ability=Tap an untapped snow land you control: SN gets +1/+1 until end of turn.
+timing=main
+oracle=Tap an untapped snow land you control: Karplusan Giant gets +1/+1 until end of turn.

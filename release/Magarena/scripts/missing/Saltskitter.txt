@@ -1,0 +1,11 @@
+name=Saltskitter
+url=http://magiccards.info/query?q=%21Saltskitter
+image=http://mtgimage.com/card/saltskitter.jpg
+rarity=C
+type=Creature
+subtype=Wurm
+cost={3}{W}
+pt=3/4
+ability=Whenever another creature enters the battlefield, exile SN. Return SN to the battlefield under its owner's control at the beginning of the next end step.
+timing=main
+oracle=Whenever another creature enters the battlefield, exile Saltskitter. Return Saltskitter to the battlefield under its owner's control at the beginning of the next end step.

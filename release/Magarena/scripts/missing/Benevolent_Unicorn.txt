@@ -1,0 +1,11 @@
+name=Benevolent Unicorn
+url=http://magiccards.info/query?q=%21Benevolent+Unicorn
+image=http://mtgimage.com/card/benevolent%20unicorn.jpg
+rarity=C
+type=Creature
+subtype=Unicorn
+cost={1}{W}
+pt=1/2
+ability=If a spell would deal damage to a creature or player, it deals that much damage minus 1 to that creature or player instead.
+timing=main
+oracle=If a spell would deal damage to a creature or player, it deals that much damage minus 1 to that creature or player instead.

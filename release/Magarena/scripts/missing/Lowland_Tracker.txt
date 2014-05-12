@@ -1,0 +1,12 @@
+name=Lowland Tracker
+url=http://magiccards.info/query?q=%21Lowland+Tracker
+image=http://mtgimage.com/card/lowland%20tracker.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}
+pt=2/2
+ability=First strike;\
+        Provoke
+timing=main
+oracle=First strike. Provoke

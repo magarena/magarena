@@ -1,0 +1,11 @@
+name=Stone Giant
+url=http://magiccards.info/query?q=%21Stone+Giant
+image=http://mtgimage.com/card/stone%20giant.jpg
+rarity=U
+type=Creature
+subtype=Giant
+cost={2}{R}{R}
+pt=3/4
+ability={T}: Target creature you control with toughness less than SN's power gains flying until end of turn. Destroy that creature at the beginning of the next end step.
+timing=main
+oracle={T}: Target creature you control with toughness less than Stone Giant's power gains flying until end of turn. Destroy that creature at the beginning of the next end step.

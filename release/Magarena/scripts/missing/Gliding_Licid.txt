@@ -1,0 +1,12 @@
+name=Gliding Licid
+url=http://magiccards.info/query?q=%21Gliding+Licid
+image=http://mtgimage.com/card/gliding%20licid.jpg
+rarity=U
+type=Creature
+subtype=Licid
+cost={2}{U}
+pt=2/2
+ability={U}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {U} to end this effect.;\
+        Enchanted creature has flying.
+timing=main
+oracle={U}, {T}: Gliding Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {U} to end this effect. Enchanted creature has flying.

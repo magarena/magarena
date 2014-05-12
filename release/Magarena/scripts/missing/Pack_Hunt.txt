@@ -1,0 +1,9 @@
+name=Pack Hunt
+url=http://magiccards.info/query?q=%21Pack+Hunt
+image=http://mtgimage.com/card/pack%20hunt.jpg
+rarity=R
+type=Sorcery
+cost={3}{G}
+effect=Search your library for up to three cards with the same name as target creature, reveal them, and put them into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for up to three cards with the same name as target creature, reveal them, and put them into your hand. Then shuffle your library.

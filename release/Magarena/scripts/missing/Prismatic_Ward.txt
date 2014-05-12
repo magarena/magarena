@@ -1,0 +1,12 @@
+name=Prismatic Ward
+url=http://magiccards.info/query?q=%21Prismatic+Ward
+image=http://mtgimage.com/card/prismatic%20ward.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        As SN enters the battlefield, choose a color.;\
+        Prevent all damage that would be dealt to enchanted creature by sources of the chosen color.
+timing=main
+oracle=Enchant creature. As Prismatic Ward enters the battlefield, choose a color. Prevent all damage that would be dealt to enchanted creature by sources of the chosen color.

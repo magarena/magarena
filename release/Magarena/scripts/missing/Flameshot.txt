@@ -1,0 +1,10 @@
+name=Flameshot
+url=http://magiccards.info/query?q=%21Flameshot
+image=http://mtgimage.com/card/flameshot.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}
+effect=You may discard a Mountain card rather than pay SN's mana cost.;\
+        SN deals 3 damage divided as you choose among one, two, or three target creatures.
+timing=main
+oracle=You may discard a Mountain card rather than pay Flameshot's mana cost. Flameshot deals 3 damage divided as you choose among one, two, or three target creatures.

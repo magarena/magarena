@@ -1,0 +1,9 @@
+name=Flash Flood
+url=http://magiccards.info/query?q=%21Flash+Flood
+image=http://mtgimage.com/card/flash%20flood.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Choose one — Destroy target red permanent; or return target Mountain to its owner's hand.
+timing=removal
+oracle=Choose one — Destroy target red permanent; or return target Mountain to its owner's hand.

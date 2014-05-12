@@ -1,0 +1,9 @@
+name=Banishing Light
+url=http://magiccards.info/query?q=%21Banishing+Light
+image=http://mtgimage.com/card/banishing%20light.jpg
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=When SN enters the battlefield, exile target nonland permanent an opponent controls until SN leaves the battlefield.
+timing=main
+oracle=When Banishing Light enters the battlefield, exile target nonland permanent an opponent controls until Banishing Light leaves the battlefield.

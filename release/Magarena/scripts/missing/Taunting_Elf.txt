@@ -1,0 +1,11 @@
+name=Taunting Elf
+url=http://magiccards.info/query?q=%21Taunting+Elf
+image=http://mtgimage.com/card/taunting%20elf.jpg
+rarity=C
+type=Creature
+subtype=Elf
+cost={G}
+pt=0/1
+ability=All creatures able to block SN do so.
+timing=main
+oracle=All creatures able to block Taunting Elf do so.

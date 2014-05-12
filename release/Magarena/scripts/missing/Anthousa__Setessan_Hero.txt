@@ -1,0 +1,11 @@
+name=Anthousa, Setessan Hero
+url=http://magiccards.info/query?q=%21Anthousa%2C+Setessan+Hero
+image=http://mtgimage.com/card/anthousa%2C%20setessan%20hero.jpg
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}{G}
+pt=4/5
+ability=Heroic — Whenever you cast a spell that targets SN, up to three target lands you control each become 2/2 Warrior creatures until end of turn. They're still lands.
+timing=main
+oracle=Heroic — Whenever you cast a spell that targets Anthousa, Setessan Hero, up to three target lands you control each become 2/2 Warrior creatures until end of turn. They're still lands.

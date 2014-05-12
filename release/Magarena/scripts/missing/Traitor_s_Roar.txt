@@ -1,0 +1,10 @@
+name=Traitor's Roar
+url=http://magiccards.info/query?q=%21Traitor%27s+Roar
+image=http://mtgimage.com/card/traitor%27s%20roar.jpg
+rarity=C
+type=Sorcery
+cost={4}{B/R}
+effect=Tap target untapped creature. It deals damage equal to its power to its controller.;\
+        Conspire
+timing=main
+oracle=Tap target untapped creature. It deals damage equal to its power to its controller. Conspire

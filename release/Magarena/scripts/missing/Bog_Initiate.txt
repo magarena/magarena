@@ -1,0 +1,11 @@
+name=Bog Initiate
+url=http://magiccards.info/query?q=%21Bog+Initiate
+image=http://mtgimage.com/card/bog%20initiate.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{B}
+pt=1/1
+ability={1}: Add {B} to your mana pool.
+timing=main
+oracle={1}: Add {B} to your mana pool.

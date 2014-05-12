@@ -1,0 +1,11 @@
+name=Sea Monster
+url=http://magiccards.info/query?q=%21Sea+Monster
+image=http://mtgimage.com/card/sea%20monster.jpg
+rarity=C
+type=Creature
+subtype=Serpent
+cost={4}{U}{U}
+pt=6/6
+ability=SN can't attack unless defending player controls an Island.
+timing=main
+oracle=Sea Monster can't attack unless defending player controls an Island.

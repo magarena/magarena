@@ -1,0 +1,11 @@
+name=Ancestor's Prophet
+url=http://magiccards.info/query?q=%21Ancestor%27s+Prophet
+image=http://mtgimage.com/card/ancestor%27s%20prophet.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={4}{W}
+pt=1/5
+ability=Tap five untapped Clerics you control: You gain 10 life.
+timing=main
+oracle=Tap five untapped Clerics you control: You gain 10 life.

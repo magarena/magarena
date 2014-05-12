@@ -1,0 +1,11 @@
+name=Shrouded Serpent
+url=http://magiccards.info/query?q=%21Shrouded+Serpent
+image=http://mtgimage.com/card/shrouded%20serpent.jpg
+rarity=R
+type=Creature
+subtype=Serpent
+cost={4}{U}{U}{U}
+pt=4/4
+ability=Whenever SN attacks, defending player may pay {4}. If he or she doesn't, SN can't be blocked this turn.
+timing=main
+oracle=Whenever Shrouded Serpent attacks, defending player may pay {4}. If he or she doesn't, Shrouded Serpent can't be blocked this turn.

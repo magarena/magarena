@@ -1,0 +1,9 @@
+name=Gifts Ungiven
+url=http://magiccards.info/query?q=%21Gifts+Ungiven
+image=http://mtgimage.com/card/gifts%20ungiven.jpg
+rarity=R
+type=Instant
+cost={3}{U}
+effect=Search your library for up to four cards with different names and reveal them. Target opponent chooses two of those cards. Put the chosen cards into your graveyard and the rest into your hand. Then shuffle your library.
+timing=removal
+oracle=Search your library for up to four cards with different names and reveal them. Target opponent chooses two of those cards. Put the chosen cards into your graveyard and the rest into your hand. Then shuffle your library.

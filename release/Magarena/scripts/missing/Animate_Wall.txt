@@ -1,0 +1,11 @@
+name=Animate Wall
+url=http://magiccards.info/query?q=%21Animate+Wall
+image=http://mtgimage.com/card/animate%20wall.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant Wall;\
+        Enchanted Wall can attack as though it didn't have defender.
+timing=main
+oracle=Enchant Wall. Enchanted Wall can attack as though it didn't have defender.

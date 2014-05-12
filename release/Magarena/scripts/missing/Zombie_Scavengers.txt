@@ -1,0 +1,11 @@
+name=Zombie Scavengers
+url=http://magiccards.info/query?q=%21Zombie+Scavengers
+image=http://mtgimage.com/card/zombie%20scavengers.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=3/1
+ability=Exile the top creature card of your graveyard: Regenerate SN.
+timing=main
+oracle=Exile the top creature card of your graveyard: Regenerate Zombie Scavengers.

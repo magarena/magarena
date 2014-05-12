@@ -1,0 +1,12 @@
+name=Mana Leech
+url=http://magiccards.info/query?q=%21Mana+Leech
+image=http://mtgimage.com/card/mana%20leech.jpg
+rarity=U
+type=Creature
+subtype=Leech
+cost={2}{B}
+pt=1/1
+ability=You may choose not to untap SN during your untap step.;\
+        {T}: Tap target land. It doesn't untap during its controller's untap step for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Mana Leech during your untap step. {T}: Tap target land. It doesn't untap during its controller's untap step for as long as Mana Leech remains tapped.

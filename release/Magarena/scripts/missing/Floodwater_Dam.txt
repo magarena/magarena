@@ -1,0 +1,9 @@
+name=Floodwater Dam
+url=http://magiccards.info/query?q=%21Floodwater+Dam
+image=http://mtgimage.com/card/floodwater%20dam.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability={X}{X}{1}, {T}: Tap X target lands.
+timing=main
+oracle={X}{X}{1}, {T}: Tap X target lands.

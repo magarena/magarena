@@ -1,0 +1,9 @@
+name=Think Tank
+url=http://magiccards.info/query?q=%21Think+Tank
+image=http://mtgimage.com/card/think%20tank.jpg
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=At the beginning of your upkeep, look at the top card of your library. You may put that card into your graveyard.
+timing=main
+oracle=At the beginning of your upkeep, look at the top card of your library. You may put that card into your graveyard.

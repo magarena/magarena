@@ -1,0 +1,12 @@
+name=Krasis Incubation
+url=http://magiccards.info/query?q=%21Krasis+Incubation
+image=http://mtgimage.com/card/krasis%20incubation.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}{U}
+ability=Enchant creature;\
+        Enchanted creature can't attack or block, and its activated abilities can't be activated.;\
+        {1}{G}{U}, Return SN to its owner's hand: Put two +1/+1 counters on enchanted creature.
+timing=main
+oracle=Enchant creature. Enchanted creature can't attack or block, and its activated abilities can't be activated. {1}{G}{U}, Return Krasis Incubation to its owner's hand: Put two +1/+1 counters on enchanted creature.

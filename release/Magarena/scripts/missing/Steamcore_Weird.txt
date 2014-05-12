@@ -1,0 +1,11 @@
+name=Steamcore Weird
+url=http://magiccards.info/query?q=%21Steamcore+Weird
+image=http://mtgimage.com/card/steamcore%20weird.jpg
+rarity=C
+type=Creature
+subtype=Weird
+cost={3}{U}
+pt=1/3
+ability=When SN enters the battlefield, if {R} was spent to cast SN, it deals 2 damage to target creature or player.
+timing=main
+oracle=When Steamcore Weird enters the battlefield, if {R} was spent to cast Steamcore Weird, it deals 2 damage to target creature or player.

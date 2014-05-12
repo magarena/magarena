@@ -1,0 +1,9 @@
+name=Signal the Clans
+url=http://magiccards.info/query?q=%21Signal+the+Clans
+image=http://mtgimage.com/card/signal%20the%20clans.jpg
+rarity=R
+type=Instant
+cost={R}{G}
+effect=Search your library for three creature cards and reveal them. If you reveal three cards with different names, choose one of them at random and put that card into your hand. Shuffle the rest into your library.
+timing=removal
+oracle=Search your library for three creature cards and reveal them. If you reveal three cards with different names, choose one of them at random and put that card into your hand. Shuffle the rest into your library.

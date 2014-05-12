@@ -1,0 +1,13 @@
+name=Chancellor of the Spires
+url=http://magiccards.info/query?q=%21Chancellor+of+the+Spires
+image=http://mtgimage.com/card/chancellor%20of%20the%20spires.jpg
+rarity=R
+type=Creature
+subtype=Sphinx
+cost={4}{U}{U}{U}
+pt=5/7
+ability=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, each opponent puts the top seven cards of his or her library into his or her graveyard.;\
+        Flying;\
+        When SN enters the battlefield, you may cast target instant or sorcery card from an opponent's graveyard without paying its mana cost.
+timing=main
+oracle=You may reveal this card from your opening hand. If you do, at the beginning of the first upkeep, each opponent puts the top seven cards of his or her library into his or her graveyard. Flying. When Chancellor of the Spires enters the battlefield, you may cast target instant or sorcery card from an opponent's graveyard without paying its mana cost.

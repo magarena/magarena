@@ -1,0 +1,9 @@
+name=Wound Reflection
+url=http://magiccards.info/query?q=%21Wound+Reflection
+image=http://mtgimage.com/card/wound%20reflection.jpg
+rarity=R
+type=Enchantment
+cost={5}{B}
+ability=At the beginning of each end step, each opponent loses life equal to the life he or she lost this turn.
+timing=main
+oracle=At the beginning of each end step, each opponent loses life equal to the life he or she lost this turn.

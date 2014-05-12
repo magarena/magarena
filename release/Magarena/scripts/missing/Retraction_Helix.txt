@@ -1,0 +1,9 @@
+name=Retraction Helix
+url=http://magiccards.info/query?q=%21Retraction+Helix
+image=http://mtgimage.com/card/retraction%20helix.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Until end of turn, target creature gains "{T}: Return target nonland permanent to its owner's hand."
+timing=removal
+oracle=Until end of turn, target creature gains "{T}: Return target nonland permanent to its owner's hand."

@@ -1,0 +1,11 @@
+name=Alms Beast
+url=http://magiccards.info/query?q=%21Alms+Beast
+image=http://mtgimage.com/card/alms%20beast.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={2}{W}{B}
+pt=6/6
+ability=Creatures blocking or blocked by SN have lifelink.
+timing=main
+oracle=Creatures blocking or blocked by Alms Beast have lifelink.

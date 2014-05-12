@@ -1,0 +1,9 @@
+name=Cerebral Vortex
+url=http://magiccards.info/query?q=%21Cerebral+Vortex
+image=http://mtgimage.com/card/cerebral%20vortex.jpg
+rarity=R
+type=Instant
+cost={1}{U}{R}
+effect=Target player draws two cards, then SN deals damage to that player equal to the number of cards he or she has drawn this turn.
+timing=removal
+oracle=Target player draws two cards, then Cerebral Vortex deals damage to that player equal to the number of cards he or she has drawn this turn.

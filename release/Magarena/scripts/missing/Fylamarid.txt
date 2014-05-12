@@ -1,0 +1,13 @@
+name=Fylamarid
+url=http://magiccards.info/query?q=%21Fylamarid
+image=http://mtgimage.com/card/fylamarid.jpg
+rarity=U
+type=Creature
+subtype=Squid,Beast
+cost={1}{U}{U}
+pt=1/3
+ability=Flying;\
+        SN can't be blocked by blue creatures.;\
+        {U}: Target creature becomes blue until end of turn.
+timing=main
+oracle=Flying. Fylamarid can't be blocked by blue creatures. {U}: Target creature becomes blue until end of turn.

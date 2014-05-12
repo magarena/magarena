@@ -1,0 +1,13 @@
+name=Medomai the Ageless
+url=http://magiccards.info/query?q=%21Medomai+the+Ageless
+image=http://mtgimage.com/card/medomai%20the%20ageless.jpg
+rarity=M
+type=Creature
+subtype=Sphinx
+cost={4}{W}{U}
+pt=4/4
+ability=Flying;\
+        Whenever SN deals combat damage to a player, take an extra turn after this one.;\
+        SN can't attack during extra turns.
+timing=main
+oracle=Flying. Whenever Medomai the Ageless deals combat damage to a player, take an extra turn after this one. Medomai the Ageless can't attack during extra turns.

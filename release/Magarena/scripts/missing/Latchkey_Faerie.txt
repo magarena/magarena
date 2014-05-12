@@ -1,0 +1,13 @@
+name=Latchkey Faerie
+url=http://magiccards.info/query?q=%21Latchkey+Faerie
+image=http://mtgimage.com/card/latchkey%20faerie.jpg
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={3}{U}
+pt=3/1
+ability=Flying;\
+        Prowl {2}{U};\
+        When SN enters the battlefield, if its prowl cost was paid, draw a card.
+timing=main
+oracle=Flying. Prowl {2}{U}. When Latchkey Faerie enters the battlefield, if its prowl cost was paid, draw a card.

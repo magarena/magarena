@@ -1,0 +1,11 @@
+name=Ember Beast
+url=http://magiccards.info/query?q=%21Ember+Beast
+image=http://mtgimage.com/card/ember%20beast.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{R}
+pt=3/4
+ability=SN can't attack or block alone.
+timing=main
+oracle=Ember Beast can't attack or block alone.

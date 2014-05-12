@@ -1,0 +1,9 @@
+name=Inquisition of Kozilek
+url=http://magiccards.info/query?q=%21Inquisition+of+Kozilek
+image=http://mtgimage.com/card/inquisition%20of%20kozilek.jpg
+rarity=U
+type=Sorcery
+cost={B}
+effect=Target player reveals his or her hand. You choose a nonland card from it with converted mana cost 3 or less. That player discards that card.
+timing=main
+oracle=Target player reveals his or her hand. You choose a nonland card from it with converted mana cost 3 or less. That player discards that card.

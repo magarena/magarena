@@ -1,0 +1,12 @@
+name=Volrath's Shapeshifter
+url=http://magiccards.info/query?q=%21Volrath%27s+Shapeshifter
+image=http://mtgimage.com/card/volrath%27s%20shapeshifter.jpg
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={1}{U}{U}
+pt=0/1
+ability=As long as the top card of your graveyard is a creature card, SN has the full text of that card and has the text "{2}: Discard a card.";\
+        {2}: Discard a card.
+timing=main
+oracle=As long as the top card of your graveyard is a creature card, Volrath's Shapeshifter has the full text of that card and has the text "{2}: Discard a card.". {2}: Discard a card.

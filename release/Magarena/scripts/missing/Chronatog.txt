@@ -1,0 +1,11 @@
+name=Chronatog
+url=http://magiccards.info/query?q=%21Chronatog
+image=http://mtgimage.com/card/chronatog.jpg
+rarity=R
+type=Creature
+subtype=Atog
+cost={1}{U}
+pt=1/2
+ability={0}: SN gets +3/+3 until end of turn. You skip your next turn. Activate this ability only once each turn.
+timing=main
+oracle={0}: Chronatog gets +3/+3 until end of turn. You skip your next turn. Activate this ability only once each turn.

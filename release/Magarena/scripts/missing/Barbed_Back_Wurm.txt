@@ -1,0 +1,11 @@
+name=Barbed-Back Wurm
+url=http://magiccards.info/query?q=%21Barbed-Back+Wurm
+image=http://mtgimage.com/card/barbed-back%20wurm.jpg
+rarity=U
+type=Creature
+subtype=Wurm
+cost={4}{B}
+pt=4/3
+ability={B}: Target green creature blocking SN gets -1/-1 until end of turn.
+timing=main
+oracle={B}: Target green creature blocking Barbed-Back Wurm gets -1/-1 until end of turn.

@@ -1,0 +1,11 @@
+name=Into the Fray
+url=http://magiccards.info/query?q=%21Into+the+Fray
+image=http://mtgimage.com/card/into%20the%20fray.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={R}
+effect=Target creature attacks this turn if able.;\
+        Splice onto Arcane {R}
+timing=removal
+oracle=Target creature attacks this turn if able. Splice onto Arcane {R}

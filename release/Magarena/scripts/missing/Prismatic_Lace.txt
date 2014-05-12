@@ -1,0 +1,9 @@
+name=Prismatic Lace
+url=http://magiccards.info/query?q=%21Prismatic+Lace
+image=http://mtgimage.com/card/prismatic%20lace.jpg
+rarity=R
+type=Instant
+cost={U}
+effect=Target permanent becomes the color or colors of your choice.
+timing=removal
+oracle=Target permanent becomes the color or colors of your choice.

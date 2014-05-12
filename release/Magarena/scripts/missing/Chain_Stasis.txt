@@ -1,0 +1,9 @@
+name=Chain Stasis
+url=http://magiccards.info/query?q=%21Chain+Stasis
+image=http://mtgimage.com/card/chain%20stasis.jpg
+rarity=R
+type=Instant
+cost={U}
+effect=You may tap or untap target creature. Then that creature's controller may pay {2}{U}. If the player does, he or she may copy this spell and may choose a new target for that copy.
+timing=removal
+oracle=You may tap or untap target creature. Then that creature's controller may pay {2}{U}. If the player does, he or she may copy this spell and may choose a new target for that copy.

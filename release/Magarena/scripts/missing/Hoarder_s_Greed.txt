@@ -1,0 +1,9 @@
+name=Hoarder's Greed
+url=http://magiccards.info/query?q=%21Hoarder%27s+Greed
+image=http://mtgimage.com/card/hoarder%27s%20greed.jpg
+rarity=U
+type=Sorcery
+cost={3}{B}
+effect=You lose 2 life and draw two cards, then clash with an opponent. If you win, repeat this process.
+timing=main
+oracle=You lose 2 life and draw two cards, then clash with an opponent. If you win, repeat this process.

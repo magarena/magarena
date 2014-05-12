@@ -1,0 +1,13 @@
+name=Artifact Ward
+url=http://magiccards.info/query?q=%21Artifact+Ward
+image=http://mtgimage.com/card/artifact%20ward.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        Enchanted creature can't be blocked by artifact creatures.;\
+        Prevent all damage that would be dealt to enchanted creature by artifact sources.;\
+        Enchanted creature can't be the target of abilities from artifact sources.
+timing=main
+oracle=Enchant creature. Enchanted creature can't be blocked by artifact creatures. Prevent all damage that would be dealt to enchanted creature by artifact sources. Enchanted creature can't be the target of abilities from artifact sources.

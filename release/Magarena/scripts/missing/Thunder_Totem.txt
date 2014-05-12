@@ -1,0 +1,10 @@
+name=Thunder Totem
+url=http://magiccards.info/query?q=%21Thunder+Totem
+image=http://mtgimage.com/card/thunder%20totem.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability={T}: Add {W} to your mana pool.;\
+        {1}{W}{W}: SN becomes a 2/2 white Spirit artifact creature with flying and first strike until end of turn.
+timing=main
+oracle={T}: Add {W} to your mana pool. {1}{W}{W}: Thunder Totem becomes a 2/2 white Spirit artifact creature with flying and first strike until end of turn.

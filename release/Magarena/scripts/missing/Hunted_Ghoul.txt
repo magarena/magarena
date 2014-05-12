@@ -1,0 +1,11 @@
+name=Hunted Ghoul
+url=http://magiccards.info/query?q=%21Hunted+Ghoul
+image=http://mtgimage.com/card/hunted%20ghoul.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={B}
+pt=1/2
+ability=SN can't block Humans.
+timing=main
+oracle=Hunted Ghoul can't block Humans.

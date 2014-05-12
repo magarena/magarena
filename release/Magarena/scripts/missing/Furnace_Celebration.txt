@@ -1,0 +1,9 @@
+name=Furnace Celebration
+url=http://magiccards.info/query?q=%21Furnace+Celebration
+image=http://mtgimage.com/card/furnace%20celebration.jpg
+rarity=U
+type=Enchantment
+cost={1}{R}{R}
+ability=Whenever you sacrifice another permanent, you may pay {2}. If you do, SN deals 2 damage to target creature or player.
+timing=main
+oracle=Whenever you sacrifice another permanent, you may pay {2}. If you do, Furnace Celebration deals 2 damage to target creature or player.

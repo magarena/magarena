@@ -1,0 +1,9 @@
+name=Hunt the Hunter
+url=http://magiccards.info/query?q=%21Hunt+the+Hunter
+image=http://mtgimage.com/card/hunt%20the%20hunter.jpg
+rarity=U
+type=Sorcery
+cost={G}
+effect=Target green creature you control gets +2/+2 until end of turn. It fights target green creature an opponent controls.
+timing=main
+oracle=Target green creature you control gets +2/+2 until end of turn. It fights target green creature an opponent controls.

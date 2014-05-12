@@ -1,0 +1,10 @@
+name=Scatter the Seeds
+url=http://magiccards.info/query?q=%21Scatter+the+Seeds
+image=http://mtgimage.com/card/scatter%20the%20seeds.jpg
+rarity=C
+type=Instant
+cost={3}{G}{G}
+effect=Convoke;\
+        Put three 1/1 green Saproling creature tokens onto the battlefield.
+timing=removal
+oracle=Convoke. Put three 1/1 green Saproling creature tokens onto the battlefield.

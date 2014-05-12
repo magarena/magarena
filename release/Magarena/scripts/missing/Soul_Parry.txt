@@ -1,0 +1,9 @@
+name=Soul Parry
+url=http://magiccards.info/query?q=%21Soul+Parry
+image=http://mtgimage.com/card/soul%20parry.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Prevent all damage one or two target creatures would deal this turn.
+timing=removal
+oracle=Prevent all damage one or two target creatures would deal this turn.

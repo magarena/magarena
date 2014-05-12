@@ -1,0 +1,11 @@
+name=Jungle Wurm
+url=http://magiccards.info/query?q=%21Jungle+Wurm
+image=http://mtgimage.com/card/jungle%20wurm.jpg
+rarity=C
+type=Creature
+subtype=Wurm
+cost={3}{G}{G}
+pt=5/5
+ability=Whenever SN becomes blocked, it gets -1/-1 until end of turn for each creature blocking it beyond the first.
+timing=main
+oracle=Whenever Jungle Wurm becomes blocked, it gets -1/-1 until end of turn for each creature blocking it beyond the first.

@@ -1,0 +1,9 @@
+name=Confusion in the Ranks
+url=http://magiccards.info/query?q=%21Confusion+in+the+Ranks
+image=http://mtgimage.com/card/confusion%20in%20the%20ranks.jpg
+rarity=R
+type=Enchantment
+cost={3}{R}{R}
+ability=Whenever an artifact, creature, or enchantment enters the battlefield, its controller chooses target permanent another player controls that shares a card type with it. Exchange control of those permanents.
+timing=main
+oracle=Whenever an artifact, creature, or enchantment enters the battlefield, its controller chooses target permanent another player controls that shares a card type with it. Exchange control of those permanents.

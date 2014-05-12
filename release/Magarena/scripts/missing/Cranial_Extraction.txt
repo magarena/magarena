@@ -1,0 +1,10 @@
+name=Cranial Extraction
+url=http://magiccards.info/query?q=%21Cranial+Extraction
+image=http://mtgimage.com/card/cranial%20extraction.jpg
+rarity=R
+type=Sorcery
+subtype=Arcane
+cost={3}{B}
+effect=Name a nonland card. Search target player's graveyard, hand, and library for all cards with that name and exile them. Then that player shuffles his or her library.
+timing=main
+oracle=Name a nonland card. Search target player's graveyard, hand, and library for all cards with that name and exile them. Then that player shuffles his or her library.

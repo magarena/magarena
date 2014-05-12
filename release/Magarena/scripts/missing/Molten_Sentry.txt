@@ -1,0 +1,11 @@
+name=Molten Sentry
+url=http://magiccards.info/query?q=%21Molten+Sentry
+image=http://mtgimage.com/card/molten%20sentry.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=*/*
+ability=As SN enters the battlefield, flip a coin. If the coin comes up heads, SN enters the battlefield as a 5/2 creature with haste. If it comes up tails, SN enters the battlefield as a 2/5 creature with defender.
+timing=main
+oracle=As Molten Sentry enters the battlefield, flip a coin. If the coin comes up heads, Molten Sentry enters the battlefield as a 5/2 creature with haste. If it comes up tails, Molten Sentry enters the battlefield as a 2/5 creature with defender.

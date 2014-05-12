@@ -1,0 +1,11 @@
+name=Academy Researchers
+url=http://magiccards.info/query?q=%21Academy+Researchers
+image=http://mtgimage.com/card/academy%20researchers.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{U}
+pt=2/2
+ability=When SN enters the battlefield, you may put an Aura card from your hand onto the battlefield attached to SN.
+timing=main
+oracle=When Academy Researchers enters the battlefield, you may put an Aura card from your hand onto the battlefield attached to Academy Researchers.

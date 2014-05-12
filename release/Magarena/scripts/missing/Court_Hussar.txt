@@ -1,0 +1,13 @@
+name=Court Hussar
+url=http://magiccards.info/query?q=%21Court+Hussar
+image=http://mtgimage.com/card/court%20hussar.jpg
+rarity=U
+type=Creature
+subtype=Vedalken,Knight
+cost={2}{U}
+pt=1/3
+ability=Vigilance;\
+        When SN enters the battlefield, look at the top three cards of your library, then put one of them into your hand and the rest on the bottom of your library in any order.;\
+        When SN enters the battlefield, sacrifice it unless {W} was spent to cast it.
+timing=main
+oracle=Vigilance. When Court Hussar enters the battlefield, look at the top three cards of your library, then put one of them into your hand and the rest on the bottom of your library in any order. When Court Hussar enters the battlefield, sacrifice it unless {W} was spent to cast it.

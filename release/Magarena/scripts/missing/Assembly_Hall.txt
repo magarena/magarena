@@ -1,0 +1,9 @@
+name=Assembly Hall
+url=http://magiccards.info/query?q=%21Assembly+Hall
+image=http://mtgimage.com/card/assembly%20hall.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability={4}, {T}: Reveal a creature card in your hand. Search your library for a card with the same name as that card, reveal it, and put it into your hand. Then shuffle your library.
+timing=main
+oracle={4}, {T}: Reveal a creature card in your hand. Search your library for a card with the same name as that card, reveal it, and put it into your hand. Then shuffle your library.

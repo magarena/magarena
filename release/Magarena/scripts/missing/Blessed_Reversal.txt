@@ -1,0 +1,9 @@
+name=Blessed Reversal
+url=http://magiccards.info/query?q=%21Blessed+Reversal
+image=http://mtgimage.com/card/blessed%20reversal.jpg
+rarity=R
+type=Instant
+cost={1}{W}
+effect=You gain 3 life for each creature attacking you.
+timing=removal
+oracle=You gain 3 life for each creature attacking you.

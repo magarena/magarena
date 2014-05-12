@@ -1,0 +1,10 @@
+name=Treetop Defense
+url=http://magiccards.info/query?q=%21Treetop+Defense
+image=http://mtgimage.com/card/treetop%20defense.jpg
+rarity=R
+type=Instant
+cost={1}{G}
+effect=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
+        Creatures you control gain reach until end of turn.
+timing=removal
+oracle=Cast Treetop Defense only during the declare attackers step and only if you've been attacked this step. Creatures you control gain reach until end of turn.

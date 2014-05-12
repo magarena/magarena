@@ -1,0 +1,10 @@
+name=Price of Knowledge
+url=http://magiccards.info/query?q=%21Price+of+Knowledge
+image=http://mtgimage.com/card/price%20of%20knowledge.jpg
+rarity=R
+type=Enchantment
+cost={6}{B}
+ability=Players have no maximum hand size.;\
+        At the beginning of each opponent's upkeep, SN deals damage to that player equal to the number of cards in that player's hand.
+timing=main
+oracle=Players have no maximum hand size. At the beginning of each opponent's upkeep, Price of Knowledge deals damage to that player equal to the number of cards in that player's hand.

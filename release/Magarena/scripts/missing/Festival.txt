@@ -1,0 +1,10 @@
+name=Festival
+url=http://magiccards.info/query?q=%21Festival
+image=http://mtgimage.com/card/festival.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Cast SN only during an opponent's upkeep.;\
+        Creatures can't attack this turn.
+timing=removal
+oracle=Cast Festival only during an opponent's upkeep. Creatures can't attack this turn.

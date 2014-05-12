@@ -1,0 +1,10 @@
+name=Quest for Pure Flame
+url=http://magiccards.info/query?q=%21Quest+for+Pure+Flame
+image=http://mtgimage.com/card/quest%20for%20pure%20flame.jpg
+rarity=U
+type=Enchantment
+cost={R}
+ability=Whenever a source you control deals damage to an opponent, you may put a quest counter on SN.;\
+        Remove four quest counters from SN and sacrifice it: If any source you control would deal damage to a creature or player this turn, it deals double that damage to that creature or player instead.
+timing=main
+oracle=Whenever a source you control deals damage to an opponent, you may put a quest counter on Quest for Pure Flame. Remove four quest counters from Quest for Pure Flame and sacrifice it: If any source you control would deal damage to a creature or player this turn, it deals double that damage to that creature or player instead.

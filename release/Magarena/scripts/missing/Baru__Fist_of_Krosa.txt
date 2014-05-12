@@ -1,0 +1,12 @@
+name=Baru, Fist of Krosa
+url=http://magiccards.info/query?q=%21Baru%2C+Fist+of+Krosa
+image=http://mtgimage.com/card/baru%2C%20fist%20of%20krosa.jpg
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={3}{G}{G}
+pt=4/4
+ability=Whenever a Forest enters the battlefield, green creatures you control get +1/+1 and gain trample until end of turn.;\
+        Grandeur — Discard another card named SN: Put an X/X green Wurm creature token onto the battlefield, where X is the number of lands you control.
+timing=main
+oracle=Whenever a Forest enters the battlefield, green creatures you control get +1/+1 and gain trample until end of turn. Grandeur — Discard another card named Baru, Fist of Krosa: Put an X/X green Wurm creature token onto the battlefield, where X is the number of lands you control.

@@ -1,0 +1,11 @@
+name=Pygmy Hippo
+url=http://magiccards.info/query?q=%21Pygmy+Hippo
+image=http://mtgimage.com/card/pygmy%20hippo.jpg
+rarity=R
+type=Creature
+subtype=Hippo
+cost={G}{U}
+pt=2/2
+ability=Whenever SN attacks and isn't blocked, you may have defending player activate a mana ability of each land he or she controls and empty his or her mana pool. If you do, SN assigns no combat damage this turn and at the beginning of your postcombat main phase, you add {X} to your mana pool, where X is the amount of mana emptied from defending player's mana pool this way.
+timing=main
+oracle=Whenever Pygmy Hippo attacks and isn't blocked, you may have defending player activate a mana ability of each land he or she controls and empty his or her mana pool. If you do, Pygmy Hippo assigns no combat damage this turn and at the beginning of your postcombat main phase, you add {X} to your mana pool, where X is the amount of mana emptied from defending player's mana pool this way.

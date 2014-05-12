@@ -1,0 +1,9 @@
+name=Dream Salvage
+url=http://magiccards.info/query?q=%21Dream+Salvage
+image=http://mtgimage.com/card/dream%20salvage.jpg
+rarity=U
+type=Instant
+cost={U/B}
+effect=Draw cards equal to the number of cards target opponent discarded this turn.
+timing=removal
+oracle=Draw cards equal to the number of cards target opponent discarded this turn.

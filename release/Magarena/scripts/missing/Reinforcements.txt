@@ -1,0 +1,9 @@
+name=Reinforcements
+url=http://magiccards.info/query?q=%21Reinforcements
+image=http://mtgimage.com/card/reinforcements1.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Put up to three target creature cards from your graveyard on top of your library.
+timing=removal
+oracle=Put up to three target creature cards from your graveyard on top of your library.

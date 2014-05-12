@@ -1,0 +1,9 @@
+name=Blood Tithe
+url=http://magiccards.info/query?q=%21Blood+Tithe
+image=http://mtgimage.com/card/blood%20tithe.jpg
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Each opponent loses 3 life. You gain life equal to the life lost this way.
+timing=main
+oracle=Each opponent loses 3 life. You gain life equal to the life lost this way.

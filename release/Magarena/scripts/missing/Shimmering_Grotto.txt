@@ -1,0 +1,9 @@
+name=Shimmering Grotto
+url=http://magiccards.info/query?q=%21Shimmering+Grotto
+image=http://mtgimage.com/card/shimmering%20grotto.jpg
+rarity=C
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {1}, {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {1}, {T}: Add one mana of any color to your mana pool.

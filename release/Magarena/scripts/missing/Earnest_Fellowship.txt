@@ -1,0 +1,9 @@
+name=Earnest Fellowship
+url=http://magiccards.info/query?q=%21Earnest+Fellowship
+image=http://mtgimage.com/card/earnest%20fellowship.jpg
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=Each creature has protection from its colors.
+timing=main
+oracle=Each creature has protection from its colors.

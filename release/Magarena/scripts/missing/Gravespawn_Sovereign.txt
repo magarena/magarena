@@ -1,0 +1,11 @@
+name=Gravespawn Sovereign
+url=http://magiccards.info/query?q=%21Gravespawn+Sovereign
+image=http://mtgimage.com/card/gravespawn%20sovereign.jpg
+rarity=R
+type=Creature
+subtype=Zombie
+cost={4}{B}{B}
+pt=3/3
+ability=Tap five untapped Zombies you control: Put target creature card from a graveyard onto the battlefield under your control.
+timing=main
+oracle=Tap five untapped Zombies you control: Put target creature card from a graveyard onto the battlefield under your control.

@@ -1,0 +1,9 @@
+name=Bullwhip
+url=http://magiccards.info/query?q=%21Bullwhip
+image=http://mtgimage.com/card/bullwhip.jpg
+rarity=U
+type=Artifact
+cost={4}
+ability={2}, {T}: SN deals 1 damage to target creature. That creature attacks this turn if able.
+timing=main
+oracle={2}, {T}: Bullwhip deals 1 damage to target creature. That creature attacks this turn if able.

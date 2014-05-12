@@ -1,0 +1,11 @@
+name=Ogre Geargrabber
+url=http://magiccards.info/query?q=%21Ogre+Geargrabber
+image=http://mtgimage.com/card/ogre%20geargrabber.jpg
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={4}{R}{R}
+pt=4/4
+ability=Whenever SN attacks, gain control of target Equipment an opponent controls until end of turn. Attach it to SN. When you lose control of that Equipment, unattach it.
+timing=main
+oracle=Whenever Ogre Geargrabber attacks, gain control of target Equipment an opponent controls until end of turn. Attach it to Ogre Geargrabber. When you lose control of that Equipment, unattach it.

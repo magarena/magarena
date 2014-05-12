@@ -1,0 +1,9 @@
+name=Chimeric Staff
+url=http://magiccards.info/query?q=%21Chimeric+Staff
+image=http://mtgimage.com/card/chimeric%20staff.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={X}: SN becomes an X/X Construct artifact creature until end of turn.
+timing=main
+oracle={X}: Chimeric Staff becomes an X/X Construct artifact creature until end of turn.

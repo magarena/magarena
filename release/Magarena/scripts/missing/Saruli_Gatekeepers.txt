@@ -1,0 +1,11 @@
+name=Saruli Gatekeepers
+url=http://magiccards.info/query?q=%21Saruli+Gatekeepers
+image=http://mtgimage.com/card/saruli%20gatekeepers.jpg
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={3}{G}
+pt=2/4
+ability=When SN enters the battlefield, if you control two or more Gates, you gain 7 life.
+timing=main
+oracle=When Saruli Gatekeepers enters the battlefield, if you control two or more Gates, you gain 7 life.

@@ -1,0 +1,9 @@
+name=Mighty Emergence
+url=http://magiccards.info/query?q=%21Mighty+Emergence
+image=http://mtgimage.com/card/mighty%20emergence.jpg
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=Whenever a creature with power 5 or greater enters the battlefield under your control, you may put two +1/+1 counters on it.
+timing=main
+oracle=Whenever a creature with power 5 or greater enters the battlefield under your control, you may put two +1/+1 counters on it.

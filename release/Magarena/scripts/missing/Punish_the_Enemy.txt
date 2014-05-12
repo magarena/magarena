@@ -1,0 +1,9 @@
+name=Punish the Enemy
+url=http://magiccards.info/query?q=%21Punish+the+Enemy
+image=http://mtgimage.com/card/punish%20the%20enemy.jpg
+rarity=C
+type=Instant
+cost={4}{R}
+effect=SN deals 3 damage to target player and 3 damage to target creature.
+timing=removal
+oracle=Punish the Enemy deals 3 damage to target player and 3 damage to target creature.

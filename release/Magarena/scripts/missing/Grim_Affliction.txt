@@ -1,0 +1,9 @@
+name=Grim Affliction
+url=http://magiccards.info/query?q=%21Grim+Affliction
+image=http://mtgimage.com/card/grim%20affliction.jpg
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Put a -1/-1 counter on target creature, then proliferate.
+timing=removal
+oracle=Put a -1/-1 counter on target creature, then proliferate.

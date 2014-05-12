@@ -1,0 +1,13 @@
+name=Izzet Staticaster
+url=http://magiccards.info/query?q=%21Izzet+Staticaster
+image=http://mtgimage.com/card/izzet%20staticaster.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{R}
+pt=0/3
+ability=Flash;\
+        Haste;\
+        {T}: SN deals 1 damage to target creature and each other creature with the same name as that creature.
+timing=main
+oracle=Flash. Haste. {T}: Izzet Staticaster deals 1 damage to target creature and each other creature with the same name as that creature.

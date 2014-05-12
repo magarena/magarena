@@ -1,0 +1,11 @@
+name=Gruul Scrapper
+url=http://magiccards.info/query?q=%21Gruul+Scrapper
+image=http://mtgimage.com/card/gruul%20scrapper.jpg
+rarity=C
+type=Creature
+subtype=Human,Berserker
+cost={3}{G}
+pt=3/2
+ability=When SN enters the battlefield, if {R} was spent to cast SN, it gains haste until end of turn.
+timing=main
+oracle=When Gruul Scrapper enters the battlefield, if {R} was spent to cast Gruul Scrapper, it gains haste until end of turn.

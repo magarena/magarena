@@ -1,0 +1,9 @@
+name=Unexpectedly Absent
+url=http://magiccards.info/query?q=%21Unexpectedly+Absent
+image=http://mtgimage.com/card/unexpectedly%20absent.jpg
+rarity=R
+type=Instant
+cost={X}{W}{W}
+effect=Put target nonland permanent into its owner's library just beneath the top X cards of that library.
+timing=removal
+oracle=Put target nonland permanent into its owner's library just beneath the top X cards of that library.

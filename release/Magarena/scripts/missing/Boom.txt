@@ -1,0 +1,9 @@
+name=Boom
+url=http://magiccards.info/query?q=%21Boom
+image=http://mtgimage.com/card/boombust.jpg
+rarity=R
+type=Sorcery
+cost={1}{R}
+effect=Destroy target land you control and target land you don't control.
+timing=main
+oracle=Destroy target land you control and target land you don't control.

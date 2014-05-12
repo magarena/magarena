@@ -1,0 +1,11 @@
+name=Krosan Colossus
+url=http://magiccards.info/query?q=%21Krosan+Colossus
+image=http://mtgimage.com/card/krosan%20colossus.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={6}{G}{G}{G}
+pt=9/9
+ability=Morph {6}{G}{G}
+timing=main
+oracle=Morph {6}{G}{G}

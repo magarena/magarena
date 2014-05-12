@@ -1,0 +1,9 @@
+name=Landslide
+url=http://magiccards.info/query?q=%21Landslide
+image=http://mtgimage.com/card/landslide.jpg
+rarity=U
+type=Sorcery
+cost={R}
+effect=Sacrifice any number of Mountains. SN deals that much damage to target player.
+timing=main
+oracle=Sacrifice any number of Mountains. Landslide deals that much damage to target player.

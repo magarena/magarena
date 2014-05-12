@@ -1,0 +1,12 @@
+name=Goblin Flotilla
+url=http://magiccards.info/query?q=%21Goblin+Flotilla
+image=http://mtgimage.com/card/goblin%20flotilla.jpg
+rarity=R
+type=Creature
+subtype=Goblin
+cost={2}{R}
+pt=2/2
+ability=Islandwalk;\
+        At the beginning of each combat, unless you pay {R}, whenever SN blocks or becomes blocked by a creature this combat, that creature gains first strike until end of turn.
+timing=main
+oracle=Islandwalk. At the beginning of each combat, unless you pay {R}, whenever Goblin Flotilla blocks or becomes blocked by a creature this combat, that creature gains first strike until end of turn.

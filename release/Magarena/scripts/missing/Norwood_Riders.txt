@@ -1,0 +1,11 @@
+name=Norwood Riders
+url=http://magiccards.info/query?q=%21Norwood+Riders
+image=http://mtgimage.com/card/norwood%20riders.jpg
+rarity=C
+type=Creature
+subtype=Elf
+cost={3}{G}
+pt=3/3
+ability=SN can't be blocked by more than one creature.
+timing=main
+oracle=Norwood Riders can't be blocked by more than one creature.

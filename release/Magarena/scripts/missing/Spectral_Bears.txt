@@ -1,0 +1,11 @@
+name=Spectral Bears
+url=http://magiccards.info/query?q=%21Spectral+Bears
+image=http://mtgimage.com/card/spectral%20bears.jpg
+rarity=U
+type=Creature
+subtype=Bear,Spirit
+cost={1}{G}
+pt=3/3
+ability=Whenever SN attacks, if defending player controls no black nontoken permanents, it doesn't untap during your next untap step.
+timing=main
+oracle=Whenever Spectral Bears attacks, if defending player controls no black nontoken permanents, it doesn't untap during your next untap step.

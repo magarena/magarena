@@ -1,0 +1,11 @@
+name=Corpsejack Menace
+url=http://magiccards.info/query?q=%21Corpsejack+Menace
+image=http://mtgimage.com/card/corpsejack%20menace.jpg
+rarity=R
+type=Creature
+subtype=Fungus
+cost={2}{B}{G}
+pt=4/4
+ability=If one or more +1/+1 counters would be placed on a creature you control, twice that many +1/+1 counters are placed on it instead.
+timing=main
+oracle=If one or more +1/+1 counters would be placed on a creature you control, twice that many +1/+1 counters are placed on it instead.

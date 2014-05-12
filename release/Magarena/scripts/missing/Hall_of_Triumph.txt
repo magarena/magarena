@@ -1,0 +1,10 @@
+name=Hall of Triumph
+url=http://magiccards.info/query?q=%21Hall+of+Triumph
+image=http://mtgimage.com/card/hall%20of%20triumph.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=As SN enters the battlefield, choose a color.;\
+        Creatures you control of the chosen color get +1/+1.
+timing=main
+oracle=As Hall of Triumph enters the battlefield, choose a color. Creatures you control of the chosen color get +1/+1.

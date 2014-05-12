@@ -1,0 +1,9 @@
+name=Ghoulcaller's Chant
+url=http://magiccards.info/query?q=%21Ghoulcaller%27s+Chant
+image=http://mtgimage.com/card/ghoulcaller%27s%20chant.jpg
+rarity=C
+type=Sorcery
+cost={B}
+effect=Choose one — Return target creature card from your graveyard to your hand; or return two target Zombie cards from your graveyard to your hand.
+timing=main
+oracle=Choose one — Return target creature card from your graveyard to your hand; or return two target Zombie cards from your graveyard to your hand.

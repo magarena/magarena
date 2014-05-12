@@ -1,0 +1,9 @@
+name=Lava Storm
+url=http://magiccards.info/query?q=%21Lava+Storm
+image=http://mtgimage.com/card/lava%20storm.jpg
+rarity=C
+type=Instant
+cost={3}{R}{R}
+effect=SN deals 2 damage to each attacking creature or SN deals 2 damage to each blocking creature.
+timing=removal
+oracle=Lava Storm deals 2 damage to each attacking creature or Lava Storm deals 2 damage to each blocking creature.

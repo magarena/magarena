@@ -1,0 +1,11 @@
+name=Mossdog
+url=http://magiccards.info/query?q=%21Mossdog
+image=http://mtgimage.com/card/mossdog.jpg
+rarity=C
+type=Creature
+subtype=Plant,Hound
+cost={G}
+pt=1/1
+ability=Whenever SN becomes the target of a spell or ability an opponent controls, put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever Mossdog becomes the target of a spell or ability an opponent controls, put a +1/+1 counter on Mossdog.

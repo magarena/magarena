@@ -1,0 +1,9 @@
+name=Aphetto Dredging
+url=http://magiccards.info/query?q=%21Aphetto+Dredging
+image=http://mtgimage.com/card/aphetto%20dredging.jpg
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Return up to three target creature cards of the creature type of your choice from your graveyard to your hand.
+timing=main
+oracle=Return up to three target creature cards of the creature type of your choice from your graveyard to your hand.

@@ -1,0 +1,10 @@
+name=Away
+url=http://magiccards.info/query?q=%21Away
+image=http://mtgimage.com/card/faraway.jpg
+rarity=U
+type=Instant
+cost={2}{B}
+effect=Target player sacrifices a creature.;\
+        Fuse
+timing=removal
+oracle=Target player sacrifices a creature. Fuse

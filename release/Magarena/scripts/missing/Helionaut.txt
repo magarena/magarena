@@ -1,0 +1,12 @@
+name=Helionaut
+url=http://magiccards.info/query?q=%21Helionaut
+image=http://mtgimage.com/card/helionaut.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/2
+ability=Flying;\
+        {1}, {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle=Flying. {1}, {T}: Add one mana of any color to your mana pool.

@@ -1,0 +1,11 @@
+name=Edgewalker
+url=http://magiccards.info/query?q=%21Edgewalker
+image=http://mtgimage.com/card/edgewalker.jpg
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}{B}
+pt=2/2
+ability=Cleric spells you cast cost {W}{B} less to cast. This effect reduces only the amount of colored mana you pay.
+timing=main
+oracle=Cleric spells you cast cost {W}{B} less to cast. This effect reduces only the amount of colored mana you pay.

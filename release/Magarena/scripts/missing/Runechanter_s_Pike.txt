@@ -1,0 +1,11 @@
+name=Runechanter's Pike
+url=http://magiccards.info/query?q=%21Runechanter%27s+Pike
+image=http://mtgimage.com/card/runechanter%27s%20pike.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature has first strike and gets +X/+0, where X is the number of instant and sorcery cards in your graveyard.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature has first strike and gets +X/+0, where X is the number of instant and sorcery cards in your graveyard. Equip {2}

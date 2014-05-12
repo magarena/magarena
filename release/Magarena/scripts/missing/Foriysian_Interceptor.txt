@@ -1,0 +1,13 @@
+name=Foriysian Interceptor
+url=http://magiccards.info/query?q=%21Foriysian+Interceptor
+image=http://mtgimage.com/card/foriysian%20interceptor.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=0/5
+ability=Flash;\
+        Defender;\
+        SN can block an additional creature.
+timing=main
+oracle=Flash. Defender. Foriysian Interceptor can block an additional creature.

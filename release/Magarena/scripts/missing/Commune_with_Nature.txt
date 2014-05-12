@@ -1,0 +1,9 @@
+name=Commune with Nature
+url=http://magiccards.info/query?q=%21Commune+with+Nature
+image=http://mtgimage.com/card/commune%20with%20nature.jpg
+rarity=C
+type=Sorcery
+cost={G}
+effect=Look at the top five cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=Look at the top five cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.

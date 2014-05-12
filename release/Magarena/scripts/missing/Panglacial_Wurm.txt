@@ -1,0 +1,12 @@
+name=Panglacial Wurm
+url=http://magiccards.info/query?q=%21Panglacial+Wurm
+image=http://mtgimage.com/card/panglacial%20wurm.jpg
+rarity=R
+type=Creature
+subtype=Wurm
+cost={5}{G}{G}
+pt=9/5
+ability=Trample;\
+        While you're searching your library, you may cast SN from your library.
+timing=main
+oracle=Trample. While you're searching your library, you may cast Panglacial Wurm from your library.

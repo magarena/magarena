@@ -1,0 +1,11 @@
+name=Nantuko Mentor
+url=http://magiccards.info/query?q=%21Nantuko+Mentor
+image=http://mtgimage.com/card/nantuko%20mentor.jpg
+rarity=R
+type=Creature
+subtype=Insect,Druid
+cost={2}{G}
+pt=1/1
+ability={2}{G}, {T}: Target creature gets +X/+X until end of turn, where X is that creature's power.
+timing=main
+oracle={2}{G}, {T}: Target creature gets +X/+X until end of turn, where X is that creature's power.

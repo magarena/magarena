@@ -1,0 +1,11 @@
+name=Nomad Mythmaker
+url=http://magiccards.info/query?q=%21Nomad+Mythmaker
+image=http://mtgimage.com/card/nomad%20mythmaker.jpg
+rarity=R
+type=Creature
+subtype=Human,Nomad,Cleric
+cost={2}{W}
+pt=2/2
+ability={W}, {T}: Put target Aura card from a graveyard onto the battlefield under your control attached to a creature you control.
+timing=main
+oracle={W}, {T}: Put target Aura card from a graveyard onto the battlefield under your control attached to a creature you control.

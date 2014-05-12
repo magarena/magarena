@@ -1,0 +1,10 @@
+name=Sivvi's Valor
+url=http://magiccards.info/query?q=%21Sivvi%27s+Valor
+image=http://mtgimage.com/card/sivvi%27s%20valor.jpg
+rarity=R
+type=Instant
+cost={2}{W}
+effect=If you control a Plains, you may tap an untapped creature you control rather than pay SN's mana cost.;\
+        All damage that would be dealt to target creature this turn is dealt to you instead.
+timing=removal
+oracle=If you control a Plains, you may tap an untapped creature you control rather than pay Sivvi's Valor's mana cost. All damage that would be dealt to target creature this turn is dealt to you instead.

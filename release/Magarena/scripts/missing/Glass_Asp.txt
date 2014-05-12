@@ -1,0 +1,11 @@
+name=Glass Asp
+url=http://magiccards.info/query?q=%21Glass+Asp
+image=http://mtgimage.com/card/glass%20asp.jpg
+rarity=C
+type=Creature
+subtype=Snake
+cost={1}{G}{G}
+pt=2/1
+ability=Whenever SN deals combat damage to a player, that player loses 2 life at the beginning of his or her next draw step unless he or she pays {2} before that step.
+timing=main
+oracle=Whenever Glass Asp deals combat damage to a player, that player loses 2 life at the beginning of his or her next draw step unless he or she pays {2} before that step.

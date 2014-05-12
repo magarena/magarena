@@ -1,0 +1,13 @@
+name=Dragon Wings
+url=http://magiccards.info/query?q=%21Dragon+Wings
+image=http://mtgimage.com/card/dragon%20wings.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Enchanted creature has flying.;\
+        Cycling {1}{U};\
+        When a creature with converted mana cost 6 or greater enters the battlefield, you may return SN from your graveyard to the battlefield attached to that creature.
+timing=main
+oracle=Enchant creature. Enchanted creature has flying. Cycling {1}{U}. When a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Wings from your graveyard to the battlefield attached to that creature.

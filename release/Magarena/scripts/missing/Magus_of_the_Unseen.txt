@@ -1,0 +1,11 @@
+name=Magus of the Unseen
+url=http://magiccards.info/query?q=%21Magus+of+the+Unseen
+image=http://mtgimage.com/card/magus%20of%20the%20unseen.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+ability={1}{U}, {T}: Untap target artifact an opponent controls and gain control of it until end of turn. It gains haste until end of turn. When you lose control of the artifact, tap it.
+timing=main
+oracle={1}{U}, {T}: Untap target artifact an opponent controls and gain control of it until end of turn. It gains haste until end of turn. When you lose control of the artifact, tap it.

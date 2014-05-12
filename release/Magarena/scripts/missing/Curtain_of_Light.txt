@@ -1,0 +1,11 @@
+name=Curtain of Light
+url=http://magiccards.info/query?q=%21Curtain+of+Light
+image=http://mtgimage.com/card/curtain%20of%20light.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Cast SN only during combat after blockers are declared.;\
+        Target unblocked attacking creature becomes blocked.;\
+        Draw a card.
+timing=removal
+oracle=Cast Curtain of Light only during combat after blockers are declared. Target unblocked attacking creature becomes blocked.. Draw a card.

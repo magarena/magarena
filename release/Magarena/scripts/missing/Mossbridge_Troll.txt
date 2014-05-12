@@ -1,0 +1,12 @@
+name=Mossbridge Troll
+url=http://magiccards.info/query?q=%21Mossbridge+Troll
+image=http://mtgimage.com/card/mossbridge%20troll.jpg
+rarity=R
+type=Creature
+subtype=Troll
+cost={5}{G}{G}
+pt=5/5
+ability=If SN would be destroyed, regenerate it.;\
+        Tap any number of untapped creatures you control other than SN with total power 10 or greater: SN gets +20/+20 until end of turn.
+timing=main
+oracle=If Mossbridge Troll would be destroyed, regenerate it. Tap any number of untapped creatures you control other than Mossbridge Troll with total power 10 or greater: Mossbridge Troll gets +20/+20 until end of turn.

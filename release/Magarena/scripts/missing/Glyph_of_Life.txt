@@ -1,0 +1,9 @@
+name=Glyph of Life
+url=http://magiccards.info/query?q=%21Glyph+of+Life
+image=http://mtgimage.com/card/glyph%20of%20life.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Choose target Wall creature. Whenever that creature is dealt damage by an attacking creature this turn, you gain that much life.
+timing=removal
+oracle=Choose target Wall creature. Whenever that creature is dealt damage by an attacking creature this turn, you gain that much life.

@@ -1,0 +1,12 @@
+name=Deftblade Elite
+url=http://magiccards.info/query?q=%21Deftblade+Elite
+image=http://mtgimage.com/card/deftblade%20elite.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability=Provoke;\
+        {1}{W}: Prevent all combat damage that would be dealt to and dealt by SN this turn.
+timing=main
+oracle=Provoke. {1}{W}: Prevent all combat damage that would be dealt to and dealt by Deftblade Elite this turn.

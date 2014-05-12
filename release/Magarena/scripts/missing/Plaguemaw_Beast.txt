@@ -1,0 +1,11 @@
+name=Plaguemaw Beast
+url=http://magiccards.info/query?q=%21Plaguemaw+Beast
+image=http://mtgimage.com/card/plaguemaw%20beast.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={3}{G}{G}
+pt=4/3
+ability={T}, Sacrifice a creature: Proliferate.
+timing=main
+oracle={T}, Sacrifice a creature: Proliferate.

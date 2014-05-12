@@ -1,0 +1,10 @@
+name=Chromatic Star
+url=http://magiccards.info/query?q=%21Chromatic+Star
+image=http://mtgimage.com/card/chromatic%20star.jpg
+rarity=C
+type=Artifact
+cost={1}
+ability={1}, {T}, Sacrifice SN: Add one mana of any color to your mana pool.;\
+        When SN is put into a graveyard from the battlefield, draw a card.
+timing=main
+oracle={1}, {T}, Sacrifice Chromatic Star: Add one mana of any color to your mana pool. When Chromatic Star is put into a graveyard from the battlefield, draw a card.

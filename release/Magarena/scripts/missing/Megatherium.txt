@@ -1,0 +1,12 @@
+name=Megatherium
+url=http://magiccards.info/query?q=%21Megatherium
+image=http://mtgimage.com/card/megatherium.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={2}{G}
+pt=4/4
+ability=Trample;\
+        When SN enters the battlefield, sacrifice it unless you pay {1} for each card in your hand.
+timing=main
+oracle=Trample. When Megatherium enters the battlefield, sacrifice it unless you pay {1} for each card in your hand.

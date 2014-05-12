@@ -1,0 +1,9 @@
+name=Serene Remembrance
+url=http://magiccards.info/query?q=%21Serene+Remembrance
+image=http://mtgimage.com/card/serene%20remembrance.jpg
+rarity=U
+type=Sorcery
+cost={G}
+effect=Shuffle SN and up to three target cards from a single graveyard into their owners' libraries.
+timing=main
+oracle=Shuffle Serene Remembrance and up to three target cards from a single graveyard into their owners' libraries.

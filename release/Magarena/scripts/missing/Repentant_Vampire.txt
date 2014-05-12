@@ -1,0 +1,13 @@
+name=Repentant Vampire
+url=http://magiccards.info/query?q=%21Repentant+Vampire
+image=http://mtgimage.com/card/repentant%20vampire.jpg
+rarity=R
+type=Creature
+subtype=Vampire
+cost={3}{B}{B}
+pt=3/3
+ability=Flying;\
+        Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.;\
+        Threshold — As long as seven or more cards are in your graveyard, SN is white and has "{T}: Destroy target black creature."
+timing=main
+oracle=Flying. Whenever a creature dealt damage by Repentant Vampire this turn dies, put a +1/+1 counter on Repentant Vampire. Threshold — As long as seven or more cards are in your graveyard, Repentant Vampire is white and has "{T}: Destroy target black creature."

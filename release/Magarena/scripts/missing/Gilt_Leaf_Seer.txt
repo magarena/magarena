@@ -1,0 +1,11 @@
+name=Gilt-Leaf Seer
+url=http://magiccards.info/query?q=%21Gilt-Leaf+Seer
+image=http://mtgimage.com/card/gilt-leaf%20seer.jpg
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={2}{G}
+pt=2/2
+ability={G}, {T}: Look at the top two cards of your library, then put them back in any order.
+timing=main
+oracle={G}, {T}: Look at the top two cards of your library, then put them back in any order.

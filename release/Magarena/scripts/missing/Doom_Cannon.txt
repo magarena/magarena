@@ -1,0 +1,10 @@
+name=Doom Cannon
+url=http://magiccards.info/query?q=%21Doom+Cannon
+image=http://mtgimage.com/card/doom%20cannon.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability=As SN enters the battlefield, choose a creature type.;\
+        {3}, {T}, Sacrifice a creature of the chosen type: SN deals 3 damage to target creature or player.
+timing=main
+oracle=As Doom Cannon enters the battlefield, choose a creature type. {3}, {T}, Sacrifice a creature of the chosen type: Doom Cannon deals 3 damage to target creature or player.

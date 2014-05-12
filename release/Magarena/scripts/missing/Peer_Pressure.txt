@@ -1,0 +1,9 @@
+name=Peer Pressure
+url=http://magiccards.info/query?q=%21Peer+Pressure
+image=http://mtgimage.com/card/peer%20pressure.jpg
+rarity=R
+type=Sorcery
+cost={3}{U}
+effect=Choose a creature type. If you control more creatures of that type than each other player, you gain control of all creatures of that type.
+timing=main
+oracle=Choose a creature type. If you control more creatures of that type than each other player, you gain control of all creatures of that type.

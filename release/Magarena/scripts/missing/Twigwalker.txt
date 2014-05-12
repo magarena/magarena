@@ -1,0 +1,11 @@
+name=Twigwalker
+url=http://magiccards.info/query?q=%21Twigwalker
+image=http://mtgimage.com/card/twigwalker.jpg
+rarity=U
+type=Creature
+subtype=Insect
+cost={2}{G}
+pt=2/2
+ability={1}{G}, Sacrifice SN: Two target creatures each get +2/+2 until end of turn.
+timing=main
+oracle={1}{G}, Sacrifice Twigwalker: Two target creatures each get +2/+2 until end of turn.

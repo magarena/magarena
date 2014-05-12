@@ -1,0 +1,12 @@
+name=Take Possession
+url=http://magiccards.info/query?q=%21Take+Possession
+image=http://mtgimage.com/card/take%20possession.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={5}{U}{U}
+ability=Split second;\
+        Enchant permanent;\
+        You control enchanted permanent.
+timing=main
+oracle=Split second. Enchant permanent. You control enchanted permanent.

@@ -1,0 +1,9 @@
+name=From the Ashes
+url=http://magiccards.info/query?q=%21From+the+Ashes
+image=http://mtgimage.com/card/from%20the%20ashes.jpg
+rarity=R
+type=Sorcery
+cost={3}{R}
+effect=Destroy all nonbasic lands. For each land destroyed this way, its controller may search his or her library for a basic land card and put it onto the battlefield. Then each player who searched his or her library this way shuffles it.
+timing=main
+oracle=Destroy all nonbasic lands. For each land destroyed this way, its controller may search his or her library for a basic land card and put it onto the battlefield. Then each player who searched his or her library this way shuffles it.

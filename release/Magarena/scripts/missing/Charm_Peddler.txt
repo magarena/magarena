@@ -1,0 +1,11 @@
+name=Charm Peddler
+url=http://magiccards.info/query?q=%21Charm+Peddler
+image=http://mtgimage.com/card/charm%20peddler.jpg
+rarity=C
+type=Creature
+subtype=Human,Spellshaper
+cost={W}
+pt=1/1
+ability={W}, {T}, Discard a card: The next time a source of your choice would deal damage to target creature this turn, prevent that damage.
+timing=main
+oracle={W}, {T}, Discard a card: The next time a source of your choice would deal damage to target creature this turn, prevent that damage.

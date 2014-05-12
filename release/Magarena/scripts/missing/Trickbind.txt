@@ -1,0 +1,10 @@
+name=Trickbind
+url=http://magiccards.info/query?q=%21Trickbind
+image=http://mtgimage.com/card/trickbind.jpg
+rarity=R
+type=Instant
+cost={1}{U}
+effect=Split second;\
+        Counter target activated or triggered ability. If a permanent's ability is countered this way, activated abilities of that permanent can't be activated this turn.
+timing=removal
+oracle=Split second. Counter target activated or triggered ability. If a permanent's ability is countered this way, activated abilities of that permanent can't be activated this turn.

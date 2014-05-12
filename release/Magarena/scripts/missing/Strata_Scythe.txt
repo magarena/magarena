@@ -1,0 +1,12 @@
+name=Strata Scythe
+url=http://magiccards.info/query?q=%21Strata+Scythe
+image=http://mtgimage.com/card/strata%20scythe.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Imprint — When SN enters the battlefield, search your library for a land card, exile it, then shuffle your library.;\
+        Equipped creature gets +1/+1 for each land on the battlefield with the same name as the exiled card.;\
+        Equip {3}
+timing=main
+oracle=Imprint — When Strata Scythe enters the battlefield, search your library for a land card, exile it, then shuffle your library. Equipped creature gets +1/+1 for each land on the battlefield with the same name as the exiled card. Equip {3}

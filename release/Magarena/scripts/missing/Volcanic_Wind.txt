@@ -1,0 +1,9 @@
+name=Volcanic Wind
+url=http://magiccards.info/query?q=%21Volcanic+Wind
+image=http://mtgimage.com/card/volcanic%20wind.jpg
+rarity=U
+type=Sorcery
+cost={4}{R}{R}
+effect=SN deals X damage divided as you choose among any number of target creatures, where X is the number of creatures on the battlefield as you cast SN.
+timing=main
+oracle=Volcanic Wind deals X damage divided as you choose among any number of target creatures, where X is the number of creatures on the battlefield as you cast Volcanic Wind.

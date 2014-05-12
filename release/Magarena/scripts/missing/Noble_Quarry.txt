@@ -1,0 +1,13 @@
+name=Noble Quarry
+url=http://magiccards.info/query?q=%21Noble+Quarry
+image=http://mtgimage.com/card/noble%20quarry.jpg
+rarity=U
+type=Enchantment,Creature
+subtype=Unicorn
+cost={2}{G}
+pt=1/1
+ability=Bestow {5}{G};\
+        All creatures able to block SN or enchanted creature do so.;\
+        Enchanted creature gets +1/+1.
+timing=main
+oracle=Bestow {5}{G}. All creatures able to block Noble Quarry or enchanted creature do so. Enchanted creature gets +1/+1.

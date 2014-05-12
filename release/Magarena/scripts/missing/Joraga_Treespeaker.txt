@@ -1,0 +1,17 @@
+name=Joraga Treespeaker
+url=http://magiccards.info/query?q=%21Joraga+Treespeaker
+image=http://mtgimage.com/card/joraga%20treespeaker.jpg
+rarity=U
+type=Creature
+subtype=Elf,Druid
+cost={G}
+pt=1/1
+ability=Level up {1}{G};\
+        LEVEL 1-4;\
+        1/2;\
+        {T}: Add {G}{G} to your mana pool.;\
+        LEVEL 5+;\
+        1/4;\
+        Elves you control have "{T}: Add {G}{G} to your mana pool."
+timing=main
+oracle=Level up {1}{G}. LEVEL 1-4. 1/2. {T}: Add {G}{G} to your mana pool. LEVEL 5+. 1/4. Elves you control have "{T}: Add {G}{G} to your mana pool."

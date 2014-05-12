@@ -1,0 +1,9 @@
+name=Three Dreams
+url=http://magiccards.info/query?q=%21Three+Dreams
+image=http://mtgimage.com/card/three%20dreams.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}
+effect=Search your library for up to three Aura cards with different names, reveal them, and put them into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for up to three Aura cards with different names, reveal them, and put them into your hand. Then shuffle your library.

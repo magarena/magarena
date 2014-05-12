@@ -1,0 +1,10 @@
+name=Quicken
+url=http://magiccards.info/query?q=%21Quicken
+image=http://mtgimage.com/card/quicken.jpg
+rarity=R
+type=Instant
+cost={U}
+effect=The next sorcery card you cast this turn can be cast as though it had flash.;\
+        Draw a card.
+timing=removal
+oracle=The next sorcery card you cast this turn can be cast as though it had flash.. Draw a card.

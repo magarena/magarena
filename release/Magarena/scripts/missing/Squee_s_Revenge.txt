@@ -1,0 +1,9 @@
+name=Squee's Revenge
+url=http://magiccards.info/query?q=%21Squee%27s+Revenge
+image=http://mtgimage.com/card/squee%27s%20revenge.jpg
+rarity=U
+type=Sorcery
+cost={1}{U}{R}
+effect=Choose a number. Flip a coin that many times or until you lose a flip, whichever comes first. If you win all the flips, draw two cards for each flip.
+timing=main
+oracle=Choose a number. Flip a coin that many times or until you lose a flip, whichever comes first. If you win all the flips, draw two cards for each flip.

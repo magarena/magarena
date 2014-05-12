@@ -1,0 +1,9 @@
+name=Killing Wave
+url=http://magiccards.info/query?q=%21Killing+Wave
+image=http://mtgimage.com/card/killing%20wave.jpg
+rarity=R
+type=Sorcery
+cost={X}{B}
+effect=For each creature, its controller sacrifices it unless he or she pays X life.
+timing=main
+oracle=For each creature, its controller sacrifices it unless he or she pays X life.

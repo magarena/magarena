@@ -1,0 +1,11 @@
+name=Brood of Cockroaches
+url=http://magiccards.info/query?q=%21Brood+of+Cockroaches
+image=http://mtgimage.com/card/brood%20of%20cockroaches.jpg
+rarity=U
+type=Creature
+subtype=Insect
+cost={1}{B}
+pt=1/1
+ability=When SN is put into your graveyard from the battlefield, at the beginning of the next end step, you lose 1 life and return SN to your hand.
+timing=main
+oracle=When Brood of Cockroaches is put into your graveyard from the battlefield, at the beginning of the next end step, you lose 1 life and return Brood of Cockroaches to your hand.

@@ -1,0 +1,11 @@
+name=Mondronen Shaman
+url=http://magiccards.info/query?q=%21Mondronen+Shaman
+image=http://mtgimage.com/card/mondronen%20shaman.jpg
+rarity=R
+type=Creature
+subtype=Human,Werewolf,Shaman
+cost={3}{R}
+pt=3/2
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Mondronen Shaman.

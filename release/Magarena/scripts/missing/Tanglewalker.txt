@@ -1,0 +1,11 @@
+name=Tanglewalker
+url=http://magiccards.info/query?q=%21Tanglewalker
+image=http://mtgimage.com/card/tanglewalker.jpg
+rarity=U
+type=Creature
+subtype=Dryad
+cost={2}{G}
+pt=2/2
+ability=Each creature you control can't be blocked as long as defending player controls an artifact land.
+timing=main
+oracle=Each creature you control can't be blocked as long as defending player controls an artifact land.

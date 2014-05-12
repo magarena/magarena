@@ -1,0 +1,9 @@
+name=Alchemist's Refuge
+url=http://magiccards.info/query?q=%21Alchemist%27s+Refuge
+image=http://mtgimage.com/card/alchemist%27s%20refuge.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {G}{U}, {T}: You may cast nonland cards this turn as though they had flash.
+timing=main
+oracle={T}: Add {1} to your mana pool. {G}{U}, {T}: You may cast nonland cards this turn as though they had flash.

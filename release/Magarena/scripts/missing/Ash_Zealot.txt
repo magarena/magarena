@@ -1,0 +1,12 @@
+name=Ash Zealot
+url=http://magiccards.info/query?q=%21Ash+Zealot
+image=http://mtgimage.com/card/ash%20zealot.jpg
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={R}{R}
+pt=2/2
+ability=First strike, haste;\
+        Whenever a player casts a spell from a graveyard, SN deals 3 damage to that player.
+timing=main
+oracle=First strike, haste. Whenever a player casts a spell from a graveyard, Ash Zealot deals 3 damage to that player.

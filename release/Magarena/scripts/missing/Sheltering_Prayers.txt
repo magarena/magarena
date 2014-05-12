@@ -1,0 +1,9 @@
+name=Sheltering Prayers
+url=http://magiccards.info/query?q=%21Sheltering+Prayers
+image=http://mtgimage.com/card/sheltering%20prayers.jpg
+rarity=R
+type=Enchantment
+cost={W}
+ability=Basic lands each player controls have shroud as long as that player controls three or fewer lands.
+timing=main
+oracle=Basic lands each player controls have shroud as long as that player controls three or fewer lands.

@@ -1,0 +1,11 @@
+name=Barrow Ghoul
+url=http://magiccards.info/query?q=%21Barrow+Ghoul
+image=http://mtgimage.com/card/barrow%20ghoul.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={1}{B}
+pt=4/4
+ability=At the beginning of your upkeep, sacrifice SN unless you exile the top creature card of your graveyard.
+timing=main
+oracle=At the beginning of your upkeep, sacrifice Barrow Ghoul unless you exile the top creature card of your graveyard.

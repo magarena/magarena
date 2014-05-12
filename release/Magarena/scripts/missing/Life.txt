@@ -1,0 +1,9 @@
+name=Life
+url=http://magiccards.info/query?q=%21Life
+image=http://mtgimage.com/card/lifedeath.jpg
+rarity=U
+type=Sorcery
+cost={G}
+effect=All lands you control become 1/1 creatures until end of turn. They're still lands.
+timing=main
+oracle=All lands you control become 1/1 creatures until end of turn. They're still lands.

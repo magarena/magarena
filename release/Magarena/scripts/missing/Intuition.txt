@@ -1,0 +1,9 @@
+name=Intuition
+url=http://magiccards.info/query?q=%21Intuition
+image=http://mtgimage.com/card/intuition.jpg
+rarity=R
+type=Instant
+cost={2}{U}
+effect=Search your library for three cards and reveal them. Target opponent chooses one. Put that card into your hand and the rest into your graveyard. Then shuffle your library.
+timing=removal
+oracle=Search your library for three cards and reveal them. Target opponent chooses one. Put that card into your hand and the rest into your graveyard. Then shuffle your library.

@@ -1,0 +1,11 @@
+name=Quirion Ranger
+url=http://magiccards.info/query?q=%21Quirion+Ranger
+image=http://mtgimage.com/card/quirion%20ranger.jpg
+rarity=C
+type=Creature
+subtype=Elf
+cost={G}
+pt=1/1
+ability=Return a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.
+timing=main
+oracle=Return a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.

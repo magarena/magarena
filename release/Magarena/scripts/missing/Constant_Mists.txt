@@ -1,0 +1,10 @@
+name=Constant Mists
+url=http://magiccards.info/query?q=%21Constant+Mists
+image=http://mtgimage.com/card/constant%20mists.jpg
+rarity=U
+type=Instant
+cost={1}{G}
+effect=Buyback—Sacrifice a land.;\
+        Prevent all combat damage that would be dealt this turn.
+timing=removal
+oracle=Buyback—Sacrifice a land.. Prevent all combat damage that would be dealt this turn.

@@ -1,0 +1,11 @@
+name=Withengar Unbound
+url=http://magiccards.info/query?q=%21Withengar+Unbound
+image=http://mtgimage.com/card/withengar%20unbound.jpg
+rarity=M
+type=Creature
+subtype=Demon
+pt=13/13
+ability=Flying, intimidate, trample;\
+        Whenever a player loses the game, put thirteen +1/+1 counters on SN.
+timing=main
+oracle=Flying, intimidate, trample. Whenever a player loses the game, put thirteen +1/+1 counters on Withengar Unbound.

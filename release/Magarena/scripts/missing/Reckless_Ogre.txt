@@ -1,0 +1,11 @@
+name=Reckless Ogre
+url=http://magiccards.info/query?q=%21Reckless+Ogre
+image=http://mtgimage.com/card/reckless%20ogre.jpg
+rarity=C
+type=Creature
+subtype=Ogre
+cost={3}{R}
+pt=3/2
+ability=Whenever SN attacks alone, it gets +3/+0 until end of turn.
+timing=main
+oracle=Whenever Reckless Ogre attacks alone, it gets +3/+0 until end of turn.

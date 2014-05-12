@@ -1,0 +1,9 @@
+name=Righteous Aura
+url=http://magiccards.info/query?q=%21Righteous+Aura
+image=http://mtgimage.com/card/righteous%20aura.jpg
+rarity=C
+type=Enchantment
+cost={1}{W}
+ability={W}, Pay 2 life: The next time a source of your choice would deal damage to you this turn, prevent that damage.
+timing=main
+oracle={W}, Pay 2 life: The next time a source of your choice would deal damage to you this turn, prevent that damage.

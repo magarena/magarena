@@ -1,0 +1,11 @@
+name=Melira's Keepers
+url=http://magiccards.info/query?q=%21Melira%27s+Keepers
+image=http://mtgimage.com/card/melira%27s%20keepers.jpg
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={4}{G}
+pt=4/4
+ability=SN can't have counters placed on it.
+timing=main
+oracle=Melira's Keepers can't have counters placed on it.

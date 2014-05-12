@@ -1,0 +1,9 @@
+name=Apostle's Blessing
+url=http://magiccards.info/query?q=%21Apostle%27s+Blessing
+image=http://mtgimage.com/card/apostle%27s%20blessing.jpg
+rarity=C
+type=Instant
+cost={1}{P/W}
+effect=Target artifact or creature you control gains protection from artifacts or from the color of your choice until end of turn.
+timing=removal
+oracle=Target artifact or creature you control gains protection from artifacts or from the color of your choice until end of turn.

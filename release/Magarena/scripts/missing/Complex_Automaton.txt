@@ -1,0 +1,11 @@
+name=Complex Automaton
+url=http://magiccards.info/query?q=%21Complex+Automaton
+image=http://mtgimage.com/card/complex%20automaton.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=4/4
+ability=At the beginning of your upkeep, if you control seven or more permanents, return SN to its owner's hand.
+timing=main
+oracle=At the beginning of your upkeep, if you control seven or more permanents, return Complex Automaton to its owner's hand.

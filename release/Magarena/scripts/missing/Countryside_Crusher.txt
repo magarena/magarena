@@ -1,0 +1,12 @@
+name=Countryside Crusher
+url=http://magiccards.info/query?q=%21Countryside+Crusher
+image=http://mtgimage.com/card/countryside%20crusher.jpg
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+cost={1}{R}{R}
+pt=3/3
+ability=At the beginning of your upkeep, reveal the top card of your library. If it's a land card, put it into your graveyard and repeat this process.;\
+        Whenever a land card is put into your graveyard from anywhere, put a +1/+1 counter on SN.
+timing=main
+oracle=At the beginning of your upkeep, reveal the top card of your library. If it's a land card, put it into your graveyard and repeat this process. Whenever a land card is put into your graveyard from anywhere, put a +1/+1 counter on Countryside Crusher.

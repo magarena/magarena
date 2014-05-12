@@ -1,0 +1,9 @@
+name=Great Defender
+url=http://magiccards.info/query?q=%21Great+Defender
+image=http://mtgimage.com/card/great%20defender.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Target creature gets +0/+X until end of turn, where X is its converted mana cost.
+timing=removal
+oracle=Target creature gets +0/+X until end of turn, where X is its converted mana cost.

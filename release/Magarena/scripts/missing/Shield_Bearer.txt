@@ -1,0 +1,11 @@
+name=Shield Bearer
+url=http://magiccards.info/query?q=%21Shield+Bearer
+image=http://mtgimage.com/card/shield%20bearer.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=0/3
+ability=Banding
+timing=main
+oracle=Banding

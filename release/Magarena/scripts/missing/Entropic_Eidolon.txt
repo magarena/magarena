@@ -1,0 +1,12 @@
+name=Entropic Eidolon
+url=http://magiccards.info/query?q=%21Entropic+Eidolon
+image=http://mtgimage.com/card/entropic%20eidolon.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{B}
+pt=2/2
+ability={B}, Sacrifice SN: Target player loses 1 life and you gain 1 life.;\
+        Whenever you cast a multicolored spell, you may return SN from your graveyard to your hand.
+timing=main
+oracle={B}, Sacrifice Entropic Eidolon: Target player loses 1 life and you gain 1 life. Whenever you cast a multicolored spell, you may return Entropic Eidolon from your graveyard to your hand.

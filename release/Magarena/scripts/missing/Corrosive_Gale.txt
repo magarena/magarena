@@ -1,0 +1,9 @@
+name=Corrosive Gale
+url=http://magiccards.info/query?q=%21Corrosive+Gale
+image=http://mtgimage.com/card/corrosive%20gale.jpg
+rarity=U
+type=Sorcery
+cost={X}{P/G}
+effect=SN deals X damage to each creature with flying.
+timing=main
+oracle=Corrosive Gale deals X damage to each creature with flying.

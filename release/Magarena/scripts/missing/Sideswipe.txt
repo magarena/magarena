@@ -1,0 +1,9 @@
+name=Sideswipe
+url=http://magiccards.info/query?q=%21Sideswipe
+image=http://mtgimage.com/card/sideswipe.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=You may change any targets of target Arcane spell.
+timing=removal
+oracle=You may change any targets of target Arcane spell.

@@ -1,0 +1,9 @@
+name=Final Revels
+url=http://magiccards.info/query?q=%21Final+Revels
+image=http://mtgimage.com/card/final%20revels.jpg
+rarity=U
+type=Sorcery
+cost={4}{B}
+effect=Choose one — All creatures get +2/+0 until end of turn; or all creatures get -0/-2 until end of turn.
+timing=main
+oracle=Choose one — All creatures get +2/+0 until end of turn; or all creatures get -0/-2 until end of turn.

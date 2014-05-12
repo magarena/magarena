@@ -1,0 +1,11 @@
+name=The Fallen
+url=http://magiccards.info/query?q=%21The+Fallen
+image=http://mtgimage.com/card/the%20fallen.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={1}{B}{B}{B}
+pt=2/3
+ability=At the beginning of your upkeep, SN deals 1 damage to each opponent it has dealt damage to this game.
+timing=main
+oracle=At the beginning of your upkeep, The Fallen deals 1 damage to each opponent it has dealt damage to this game.

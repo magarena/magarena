@@ -1,0 +1,9 @@
+name=Plague Spores
+url=http://magiccards.info/query?q=%21Plague+Spores
+image=http://mtgimage.com/card/plague%20spores.jpg
+rarity=C
+type=Sorcery
+cost={4}{B}{R}
+effect=Destroy target nonblack creature and target land. They can't be regenerated.
+timing=main
+oracle=Destroy target nonblack creature and target land. They can't be regenerated.

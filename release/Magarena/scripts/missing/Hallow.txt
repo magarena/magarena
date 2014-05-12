@@ -1,0 +1,9 @@
+name=Hallow
+url=http://magiccards.info/query?q=%21Hallow
+image=http://mtgimage.com/card/hallow.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Prevent all damage target spell would deal this turn. You gain life equal to the damage prevented this way.
+timing=removal
+oracle=Prevent all damage target spell would deal this turn. You gain life equal to the damage prevented this way.

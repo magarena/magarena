@@ -1,0 +1,11 @@
+name=Coral Fighters
+url=http://magiccards.info/query?q=%21Coral+Fighters
+image=http://mtgimage.com/card/coral%20fighters.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Soldier
+cost={1}{U}
+pt=1/1
+ability=Whenever SN attacks and isn't blocked, look at the top card of defending player's library. You may put that card on the bottom of that player's library.
+timing=main
+oracle=Whenever Coral Fighters attacks and isn't blocked, look at the top card of defending player's library. You may put that card on the bottom of that player's library.

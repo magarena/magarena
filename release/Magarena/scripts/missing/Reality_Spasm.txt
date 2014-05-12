@@ -1,0 +1,9 @@
+name=Reality Spasm
+url=http://magiccards.info/query?q=%21Reality+Spasm
+image=http://mtgimage.com/card/reality%20spasm.jpg
+rarity=U
+type=Instant
+cost={X}{U}{U}
+effect=Choose one — Tap X target permanents; or untap X target permanents.
+timing=removal
+oracle=Choose one — Tap X target permanents; or untap X target permanents.

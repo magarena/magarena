@@ -1,0 +1,10 @@
+name=Agony Warp
+url=http://magiccards.info/query?q=%21Agony+Warp
+image=http://mtgimage.com/card/agony%20warp.jpg
+rarity=C
+type=Instant
+cost={U}{B}
+effect=Target creature gets -3/-0 until end of turn.;\
+        Target creature gets -0/-3 until end of turn.
+timing=removal
+oracle=Target creature gets -3/-0 until end of turn. Target creature gets -0/-3 until end of turn.

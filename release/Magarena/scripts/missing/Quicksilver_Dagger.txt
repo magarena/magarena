@@ -1,0 +1,11 @@
+name=Quicksilver Dagger
+url=http://magiccards.info/query?q=%21Quicksilver+Dagger
+image=http://mtgimage.com/card/quicksilver%20dagger.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}{R}
+ability=Enchant creature;\
+        Enchanted creature has "{T}: This creature deals 1 damage to target player. You draw a card."
+timing=main
+oracle=Enchant creature. Enchanted creature has "{T}: This creature deals 1 damage to target player. You draw a card."

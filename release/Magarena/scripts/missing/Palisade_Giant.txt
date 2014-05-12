@@ -1,0 +1,11 @@
+name=Palisade Giant
+url=http://magiccards.info/query?q=%21Palisade+Giant
+image=http://mtgimage.com/card/palisade%20giant.jpg
+rarity=R
+type=Creature
+subtype=Giant,Soldier
+cost={4}{W}{W}
+pt=2/7
+ability=All damage that would be dealt to you or another permanent you control is dealt to SN instead.
+timing=main
+oracle=All damage that would be dealt to you or another permanent you control is dealt to Palisade Giant instead.

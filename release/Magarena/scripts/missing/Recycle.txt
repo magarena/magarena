@@ -1,0 +1,11 @@
+name=Recycle
+url=http://magiccards.info/query?q=%21Recycle
+image=http://mtgimage.com/card/recycle.jpg
+rarity=R
+type=Enchantment
+cost={4}{G}{G}
+ability=Skip your draw step.;\
+        Whenever you play a card, draw a card.;\
+        Your maximum hand size is two.
+timing=main
+oracle=Skip your draw step. Whenever you play a card, draw a card. Your maximum hand size is two.

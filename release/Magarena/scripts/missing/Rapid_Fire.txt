@@ -1,0 +1,10 @@
+name=Rapid Fire
+url=http://magiccards.info/query?q=%21Rapid+Fire
+image=http://mtgimage.com/card/rapid%20fire.jpg
+rarity=R
+type=Instant
+cost={3}{W}
+effect=Cast SN only before blockers are declared.;\
+        Target creature gains first strike until end of turn. If it doesn't have rampage, that creature gains rampage 2 until end of turn.
+timing=removal
+oracle=Cast Rapid Fire only before blockers are declared. Target creature gains first strike until end of turn. If it doesn't have rampage, that creature gains rampage 2 until end of turn.

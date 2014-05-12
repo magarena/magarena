@@ -1,0 +1,13 @@
+name=Mistform Shrieker
+url=http://magiccards.info/query?q=%21Mistform+Shrieker
+image=http://mtgimage.com/card/mistform%20shrieker.jpg
+rarity=U
+type=Creature
+subtype=Illusion
+cost={3}{U}{U}
+pt=3/3
+ability=Flying;\
+        {1}: SN becomes the creature type of your choice until end of turn.;\
+        Morph {3}{U}{U}
+timing=main
+oracle=Flying. {1}: Mistform Shrieker becomes the creature type of your choice until end of turn. Morph {3}{U}{U}

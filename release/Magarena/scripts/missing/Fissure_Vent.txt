@@ -1,0 +1,9 @@
+name=Fissure Vent
+url=http://magiccards.info/query?q=%21Fissure+Vent
+image=http://mtgimage.com/card/fissure%20vent.jpg
+rarity=C
+type=Sorcery
+cost={3}{R}{R}
+effect=Choose one or both — Destroy target artifact; and/or destroy target nonbasic land.
+timing=main
+oracle=Choose one or both — Destroy target artifact; and/or destroy target nonbasic land.

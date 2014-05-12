@@ -1,0 +1,12 @@
+name=Rockshard Elemental
+url=http://magiccards.info/query?q=%21Rockshard+Elemental
+image=http://mtgimage.com/card/rockshard%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={5}{R}{R}
+pt=4/3
+ability=Double strike;\
+        Morph {4}{R}{R}
+timing=main
+oracle=Double strike. Morph {4}{R}{R}

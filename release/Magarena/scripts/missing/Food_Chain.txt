@@ -1,0 +1,9 @@
+name=Food Chain
+url=http://magiccards.info/query?q=%21Food+Chain
+image=http://mtgimage.com/card/food%20chain.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=Exile a creature you control: Add X mana of any one color to your mana pool, where X is the exiled creature's converted mana cost plus one. Spend this mana only to cast creature spells.
+timing=main
+oracle=Exile a creature you control: Add X mana of any one color to your mana pool, where X is the exiled creature's converted mana cost plus one. Spend this mana only to cast creature spells.

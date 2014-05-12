@@ -1,0 +1,10 @@
+name=Tinder Farm
+url=http://magiccards.info/query?q=%21Tinder+Farm
+image=http://mtgimage.com/card/tinder%20farm.jpg
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {G} to your mana pool.;\
+        {T}, Sacrifice SN: Add {R}{W} to your mana pool.
+timing=main
+oracle=Tinder Farm enters the battlefield tapped. {T}: Add {G} to your mana pool. {T}, Sacrifice Tinder Farm: Add {R}{W} to your mana pool.

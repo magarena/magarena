@@ -1,0 +1,12 @@
+name=Krosan Vorine
+url=http://magiccards.info/query?q=%21Krosan+Vorine
+image=http://mtgimage.com/card/krosan%20vorine.jpg
+rarity=C
+type=Creature
+subtype=Cat,Beast
+cost={3}{G}
+pt=3/2
+ability=Provoke;\
+        SN can't be blocked by more than one creature.
+timing=main
+oracle=Provoke. Krosan Vorine can't be blocked by more than one creature.

@@ -1,0 +1,13 @@
+name=Vendilion Clique
+url=http://magiccards.info/query?q=%21Vendilion+Clique
+image=http://mtgimage.com/card/vendilion%20clique.jpg
+rarity=R
+type=Creature
+subtype=Faerie,Wizard
+cost={1}{U}{U}
+pt=3/1
+ability=Flash;\
+        Flying;\
+        When SN enters the battlefield, look at target player's hand. You may choose a nonland card from it. If you do, that player reveals the chosen card, puts it on the bottom of his or her library, then draws a card.
+timing=main
+oracle=Flash. Flying. When Vendilion Clique enters the battlefield, look at target player's hand. You may choose a nonland card from it. If you do, that player reveals the chosen card, puts it on the bottom of his or her library, then draws a card.

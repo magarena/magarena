@@ -1,0 +1,9 @@
+name=Jagged Lightning
+url=http://magiccards.info/query?q=%21Jagged+Lightning
+image=http://mtgimage.com/card/jagged%20lightning.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}{R}
+effect=SN deals 3 damage to each of two target creatures.
+timing=main
+oracle=Jagged Lightning deals 3 damage to each of two target creatures.

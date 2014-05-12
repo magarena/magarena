@@ -1,0 +1,12 @@
+name=Corpulent Corpse
+url=http://magiccards.info/query?q=%21Corpulent+Corpse
+image=http://mtgimage.com/card/corpulent%20corpse.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={5}{B}
+pt=3/3
+ability=Fear;\
+        Suspend 5—{B}
+timing=main
+oracle=Fear. Suspend 5—{B}

@@ -1,0 +1,12 @@
+name=Reaper King
+url=http://magiccards.info/query?q=%21Reaper+King
+image=http://mtgimage.com/card/reaper%20king.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Scarecrow
+cost={2/W}{2/U}{2/B}{2/R}{2/G}
+pt=6/6
+ability=Other Scarecrow creatures you control get +1/+1.;\
+        Whenever another Scarecrow enters the battlefield under your control, destroy target permanent.
+timing=main
+oracle=Other Scarecrow creatures you control get +1/+1. Whenever another Scarecrow enters the battlefield under your control, destroy target permanent.

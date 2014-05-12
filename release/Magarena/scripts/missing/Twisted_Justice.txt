@@ -1,0 +1,9 @@
+name=Twisted Justice
+url=http://magiccards.info/query?q=%21Twisted+Justice
+image=http://mtgimage.com/card/twisted%20justice.jpg
+rarity=U
+type=Sorcery
+cost={4}{U}{B}
+effect=Target player sacrifices a creature. You draw cards equal to that creature's power.
+timing=main
+oracle=Target player sacrifices a creature. You draw cards equal to that creature's power.

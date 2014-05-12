@@ -1,0 +1,10 @@
+name=Jungle Basin
+url=http://magiccards.info/query?q=%21Jungle+Basin
+image=http://mtgimage.com/card/jungle%20basin.jpg
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, sacrifice it unless you return an untapped Forest you control to its owner's hand.;\
+        {T}: Add {1}{G} to your mana pool.
+timing=main
+oracle=Jungle Basin enters the battlefield tapped. When Jungle Basin enters the battlefield, sacrifice it unless you return an untapped Forest you control to its owner's hand. {T}: Add {1}{G} to your mana pool.

@@ -1,0 +1,9 @@
+name=Mirror Sheen
+url=http://magiccards.info/query?q=%21Mirror+Sheen
+image=http://mtgimage.com/card/mirror%20sheen.jpg
+rarity=R
+type=Enchantment
+cost={1}{U/R}{U/R}
+ability={1}{U/R}{U/R}: Copy target instant or sorcery spell that targets you. You may choose new targets for the copy.
+timing=main
+oracle={1}{U/R}{U/R}: Copy target instant or sorcery spell that targets you. You may choose new targets for the copy.

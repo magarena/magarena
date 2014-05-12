@@ -1,0 +1,12 @@
+name=Voracious Cobra
+url=http://magiccards.info/query?q=%21Voracious+Cobra
+image=http://mtgimage.com/card/voracious%20cobra.jpg
+rarity=U
+type=Creature
+subtype=Snake
+cost={2}{R}{G}
+pt=2/2
+ability=First strike;\
+        Whenever SN deals combat damage to a creature, destroy that creature.
+timing=main
+oracle=First strike. Whenever Voracious Cobra deals combat damage to a creature, destroy that creature.

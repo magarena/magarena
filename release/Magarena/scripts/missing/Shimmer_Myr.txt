@@ -1,0 +1,12 @@
+name=Shimmer Myr
+url=http://magiccards.info/query?q=%21Shimmer+Myr
+image=http://mtgimage.com/card/shimmer%20myr.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Myr
+cost={3}
+pt=2/2
+ability=Flash;\
+        You may cast artifact cards as though they had flash.
+timing=main
+oracle=Flash. You may cast artifact cards as though they had flash.

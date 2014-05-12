@@ -1,0 +1,11 @@
+name=Shelkin Brownie
+url=http://magiccards.info/query?q=%21Shelkin+Brownie
+image=http://mtgimage.com/card/shelkin%20brownie.jpg
+rarity=C
+type=Creature
+subtype=Ouphe
+cost={1}{G}
+pt=1/1
+ability={T}: Target creature loses all "bands with other" abilities until end of turn.
+timing=main
+oracle={T}: Target creature loses all "bands with other" abilities until end of turn.

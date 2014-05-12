@@ -1,0 +1,12 @@
+name=Gerrard Capashen
+url=http://magiccards.info/query?q=%21Gerrard+Capashen
+image=http://mtgimage.com/card/gerrard%20capashen.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}{W}
+pt=3/4
+ability=At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand.;\
+        {3}{W}: Tap target creature. Activate this ability only if SN is attacking.
+timing=main
+oracle=At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand. {3}{W}: Tap target creature. Activate this ability only if Gerrard Capashen is attacking.

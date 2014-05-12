@@ -1,0 +1,12 @@
+name=Norritt
+url=http://magiccards.info/query?q=%21Norritt
+image=http://mtgimage.com/card/norritt.jpg
+rarity=C
+type=Creature
+subtype=Imp
+cost={3}{B}
+pt=1/1
+ability={T}: Untap target blue creature.;\
+        {T}: Choose target non-Wall creature the active player has controlled continuously since the beginning of the turn. That creature attacks this turn if able. If it doesn't, destroy it at the beginning of the next end step. Activate this ability only before attackers are declared.
+timing=main
+oracle={T}: Untap target blue creature. {T}: Choose target non-Wall creature the active player has controlled continuously since the beginning of the turn. That creature attacks this turn if able. If it doesn't, destroy it at the beginning of the next end step. Activate this ability only before attackers are declared.

@@ -1,0 +1,9 @@
+name=Congregation at Dawn
+url=http://magiccards.info/query?q=%21Congregation+at+Dawn
+image=http://mtgimage.com/card/congregation%20at%20dawn.jpg
+rarity=U
+type=Instant
+cost={G}{G}{W}
+effect=Search your library for up to three creature cards and reveal them. Shuffle your library, then put those cards on top of it in any order.
+timing=removal
+oracle=Search your library for up to three creature cards and reveal them. Shuffle your library, then put those cards on top of it in any order.

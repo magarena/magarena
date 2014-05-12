@@ -1,0 +1,9 @@
+name=Lost Hours
+url=http://magiccards.info/query?q=%21Lost+Hours
+image=http://mtgimage.com/card/lost%20hours.jpg
+rarity=C
+type=Sorcery
+cost={1}{B}
+effect=Target player reveals his or her hand. You choose a nonland card from it. That player puts that card into his or her library third from the top.
+timing=main
+oracle=Target player reveals his or her hand. You choose a nonland card from it. That player puts that card into his or her library third from the top.

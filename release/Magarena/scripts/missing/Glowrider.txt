@@ -1,0 +1,11 @@
+name=Glowrider
+url=http://magiccards.info/query?q=%21Glowrider
+image=http://mtgimage.com/card/glowrider.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=2/1
+ability=Noncreature spells cost {1} more to cast.
+timing=main
+oracle=Noncreature spells cost {1} more to cast.

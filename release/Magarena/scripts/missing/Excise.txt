@@ -1,0 +1,9 @@
+name=Excise
+url=http://magiccards.info/query?q=%21Excise
+image=http://mtgimage.com/card/excise.jpg
+rarity=C
+type=Instant
+cost={X}{W}
+effect=Exile target attacking creature unless its controller pays {X}.
+timing=removal
+oracle=Exile target attacking creature unless its controller pays {X}.

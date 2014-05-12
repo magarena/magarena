@@ -1,0 +1,10 @@
+name=Conflagrate
+url=http://magiccards.info/query?q=%21Conflagrate
+image=http://mtgimage.com/card/conflagrate.jpg
+rarity=U
+type=Sorcery
+cost={X}{X}{R}
+effect=SN deals X damage divided as you choose among any number of target creatures and/or players.;\
+        Flashback—{R}{R}, Discard X cards.
+timing=main
+oracle=Conflagrate deals X damage divided as you choose among any number of target creatures and/or players. Flashback—{R}{R}, Discard X cards.

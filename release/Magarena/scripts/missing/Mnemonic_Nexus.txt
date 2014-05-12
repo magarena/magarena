@@ -1,0 +1,9 @@
+name=Mnemonic Nexus
+url=http://magiccards.info/query?q=%21Mnemonic+Nexus
+image=http://mtgimage.com/card/mnemonic%20nexus.jpg
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Each player shuffles his or her graveyard into his or her library.
+timing=removal
+oracle=Each player shuffles his or her graveyard into his or her library.

@@ -1,0 +1,10 @@
+name=Bind
+url=http://magiccards.info/query?q=%21Bind
+image=http://mtgimage.com/card/bind.jpg
+rarity=R
+type=Instant
+cost={1}{G}
+effect=Counter target activated ability.;\
+        Draw a card.
+timing=removal
+oracle=Counter target activated ability.. Draw a card.

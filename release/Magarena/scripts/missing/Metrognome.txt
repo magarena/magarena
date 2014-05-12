@@ -1,0 +1,10 @@
+name=Metrognome
+url=http://magiccards.info/query?q=%21Metrognome
+image=http://mtgimage.com/card/metrognome.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=When a spell or ability an opponent controls causes you to discard SN, put four 1/1 colorless Gnome artifact creature tokens onto the battlefield.;\
+        {4}, {T}: Put a 1/1 colorless Gnome artifact creature token onto the battlefield.
+timing=main
+oracle=When a spell or ability an opponent controls causes you to discard Metrognome, put four 1/1 colorless Gnome artifact creature tokens onto the battlefield. {4}, {T}: Put a 1/1 colorless Gnome artifact creature token onto the battlefield.

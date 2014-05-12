@@ -1,0 +1,11 @@
+name=Xenic Poltergeist
+url=http://magiccards.info/query?q=%21Xenic+Poltergeist
+image=http://mtgimage.com/card/xenic%20poltergeist.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{B}{B}
+pt=1/1
+ability={T}: Until your next upkeep, target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost.
+timing=main
+oracle={T}: Until your next upkeep, target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost.

@@ -1,0 +1,11 @@
+name=Sages of the Anima
+url=http://magiccards.info/query?q=%21Sages+of+the+Anima
+image=http://mtgimage.com/card/sages%20of%20the%20anima.jpg
+rarity=R
+type=Creature
+subtype=Elf,Wizard
+cost={3}{G}{U}
+pt=3/4
+ability=If you would draw a card, instead reveal the top three cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.
+timing=main
+oracle=If you would draw a card, instead reveal the top three cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.

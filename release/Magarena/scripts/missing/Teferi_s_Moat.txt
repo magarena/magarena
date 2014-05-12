@@ -1,0 +1,10 @@
+name=Teferi's Moat
+url=http://magiccards.info/query?q=%21Teferi%27s+Moat
+image=http://mtgimage.com/card/teferi%27s%20moat.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}{U}
+ability=As SN enters the battlefield, choose a color.;\
+        Creatures of the chosen color without flying can't attack you.
+timing=main
+oracle=As Teferi's Moat enters the battlefield, choose a color. Creatures of the chosen color without flying can't attack you.

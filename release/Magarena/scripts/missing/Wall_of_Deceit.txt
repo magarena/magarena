@@ -1,0 +1,13 @@
+name=Wall of Deceit
+url=http://magiccards.info/query?q=%21Wall+of+Deceit
+image=http://mtgimage.com/card/wall%20of%20deceit.jpg
+rarity=U
+type=Creature
+subtype=Wall
+cost={1}{U}
+pt=0/5
+ability=Defender;\
+        {3}: Turn SN face down.;\
+        Morph {U}
+timing=main
+oracle=Defender. {3}: Turn Wall of Deceit face down. Morph {U}

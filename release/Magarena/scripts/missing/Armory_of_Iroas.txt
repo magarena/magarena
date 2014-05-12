@@ -1,0 +1,11 @@
+name=Armory of Iroas
+url=http://magiccards.info/query?q=%21Armory+of+Iroas
+image=http://mtgimage.com/card/armory%20of%20iroas.jpg
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Whenever equipped creature attacks, put a +1/+1 counter on it.;\
+        Equip {2}
+timing=main
+oracle=Whenever equipped creature attacks, put a +1/+1 counter on it. Equip {2}

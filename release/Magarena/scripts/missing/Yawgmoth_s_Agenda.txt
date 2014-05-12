@@ -1,0 +1,11 @@
+name=Yawgmoth's Agenda
+url=http://magiccards.info/query?q=%21Yawgmoth%27s+Agenda
+image=http://mtgimage.com/card/yawgmoth%27s%20agenda.jpg
+rarity=R
+type=Enchantment
+cost={3}{B}{B}
+ability=You can't cast more than one spell each turn.;\
+        You may play cards from your graveyard.;\
+        If a card would be put into your graveyard from anywhere, exile it instead.
+timing=main
+oracle=You can't cast more than one spell each turn. You may play cards from your graveyard. If a card would be put into your graveyard from anywhere, exile it instead.

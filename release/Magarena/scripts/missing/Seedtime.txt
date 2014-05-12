@@ -1,0 +1,10 @@
+name=Seedtime
+url=http://magiccards.info/query?q=%21Seedtime
+image=http://mtgimage.com/card/seedtime.jpg
+rarity=R
+type=Instant
+cost={1}{G}
+effect=Cast SN only during your turn.;\
+        Take an extra turn after this one if an opponent cast a blue spell this turn.
+timing=removal
+oracle=Cast Seedtime only during your turn. Take an extra turn after this one if an opponent cast a blue spell this turn.

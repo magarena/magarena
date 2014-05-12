@@ -1,0 +1,9 @@
+name=Weird Harvest
+url=http://magiccards.info/query?q=%21Weird+Harvest
+image=http://mtgimage.com/card/weird%20harvest.jpg
+rarity=R
+type=Sorcery
+cost={X}{G}{G}
+effect=Each player may search his or her library for up to X creature cards, reveal those cards, and put them into his or her hand. Then each player who searched his or her library this way shuffles it.
+timing=main
+oracle=Each player may search his or her library for up to X creature cards, reveal those cards, and put them into his or her hand. Then each player who searched his or her library this way shuffles it.

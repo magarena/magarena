@@ -1,0 +1,12 @@
+name=Soratami Mirror-Mage
+url=http://magiccards.info/query?q=%21Soratami+Mirror-Mage
+image=http://mtgimage.com/card/soratami%20mirror-mage.jpg
+rarity=U
+type=Creature
+subtype=Moonfolk,Wizard
+cost={3}{U}
+pt=2/1
+ability=Flying;\
+        {3}, Return three lands you control to their owner's hand: Return target creature to its owner's hand.
+timing=main
+oracle=Flying. {3}, Return three lands you control to their owner's hand: Return target creature to its owner's hand.

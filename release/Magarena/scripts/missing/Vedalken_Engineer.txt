@@ -1,0 +1,11 @@
+name=Vedalken Engineer
+url=http://magiccards.info/query?q=%21Vedalken+Engineer
+image=http://mtgimage.com/card/vedalken%20engineer.jpg
+rarity=C
+type=Creature
+subtype=Vedalken,Artificer
+cost={1}{U}
+pt=1/1
+ability={T}: Add two mana of any one color to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.
+timing=main
+oracle={T}: Add two mana of any one color to your mana pool. Spend this mana only to cast artifact spells or activate abilities of artifacts.

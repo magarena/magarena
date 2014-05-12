@@ -1,0 +1,9 @@
+name=Kruphix's Insight
+url=http://magiccards.info/query?q=%21Kruphix%27s+Insight
+image=http://mtgimage.com/card/kruphix%27s%20insight.jpg
+rarity=C
+type=Sorcery
+cost={2}{G}
+effect=Reveal the top six cards of your library. Put up to three enchantment cards from among them into your hand and the rest of the revealed cards into your graveyard.
+timing=main
+oracle=Reveal the top six cards of your library. Put up to three enchantment cards from among them into your hand and the rest of the revealed cards into your graveyard.

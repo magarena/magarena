@@ -1,0 +1,10 @@
+name=Memory Sluice
+url=http://magiccards.info/query?q=%21Memory+Sluice
+image=http://mtgimage.com/card/memory%20sluice.jpg
+rarity=C
+type=Sorcery
+cost={U/B}
+effect=Target player puts the top four cards of his or her library into his or her graveyard.;\
+        Conspire
+timing=main
+oracle=Target player puts the top four cards of his or her library into his or her graveyard. Conspire

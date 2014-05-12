@@ -1,0 +1,10 @@
+name=Mosswort Bridge
+url=http://magiccards.info/query?q=%21Mosswort+Bridge
+image=http://mtgimage.com/card/mosswort%20bridge.jpg
+rarity=R
+type=Land
+ability=Hideaway;\
+        {T}: Add {G} to your mana pool.;\
+        {G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.
+timing=main
+oracle=Hideaway. {T}: Add {G} to your mana pool. {G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.

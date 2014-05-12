@@ -1,0 +1,10 @@
+name=Cave-In
+url=http://magiccards.info/query?q=%21Cave-In
+image=http://mtgimage.com/card/cave-in.jpg
+rarity=R
+type=Sorcery
+cost={3}{R}{R}
+effect=You may exile a red card from your hand rather than pay SN's mana cost.;\
+        SN deals 2 damage to each creature and each player.
+timing=main
+oracle=You may exile a red card from your hand rather than pay Cave-In's mana cost. Cave-In deals 2 damage to each creature and each player.

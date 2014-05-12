@@ -1,0 +1,9 @@
+name=Ostracize
+url=http://magiccards.info/query?q=%21Ostracize
+image=http://mtgimage.com/card/ostracize.jpg
+rarity=C
+type=Sorcery
+cost={B}
+effect=Target opponent reveals his or her hand. You choose a creature card from it. That player discards that card.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose a creature card from it. That player discards that card.

@@ -1,0 +1,11 @@
+name=Nezumi Shortfang
+url=http://magiccards.info/query?q=%21Nezumi+Shortfang
+image=http://mtgimage.com/card/nezumi%20shortfang.jpg
+rarity=R
+type=Creature
+subtype=Rat,Rogue
+cost={1}{B}
+pt=1/1
+ability={1}{B}, {T}: Target opponent discards a card. Then if that player has no cards in hand, flip SN.
+timing=main
+oracle={1}{B}, {T}: Target opponent discards a card. Then if that player has no cards in hand, flip Nezumi Shortfang.

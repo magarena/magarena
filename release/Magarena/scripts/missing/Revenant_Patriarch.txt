@@ -1,0 +1,12 @@
+name=Revenant Patriarch
+url=http://magiccards.info/query?q=%21Revenant+Patriarch
+image=http://mtgimage.com/card/revenant%20patriarch.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={4}{B}
+pt=4/3
+ability=When SN enters the battlefield, if {W} was spent to cast it, target player skips his or her next combat phase.;\
+        SN can't block.
+timing=main
+oracle=When Revenant Patriarch enters the battlefield, if {W} was spent to cast it, target player skips his or her next combat phase. Revenant Patriarch can't block.

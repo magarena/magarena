@@ -1,0 +1,9 @@
+name=Battle Strain
+url=http://magiccards.info/query?q=%21Battle+Strain
+image=http://mtgimage.com/card/battle%20strain.jpg
+rarity=U
+type=Enchantment
+cost={1}{R}
+ability=Whenever a creature blocks, SN deals 1 damage to that creature's controller.
+timing=main
+oracle=Whenever a creature blocks, Battle Strain deals 1 damage to that creature's controller.

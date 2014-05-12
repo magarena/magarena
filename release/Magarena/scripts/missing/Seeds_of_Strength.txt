@@ -1,0 +1,11 @@
+name=Seeds of Strength
+url=http://magiccards.info/query?q=%21Seeds+of+Strength
+image=http://mtgimage.com/card/seeds%20of%20strength.jpg
+rarity=C
+type=Instant
+cost={G}{W}
+effect=Target creature gets +1/+1 until end of turn.;\
+        Target creature gets +1/+1 until end of turn.;\
+        Target creature gets +1/+1 until end of turn.
+timing=removal
+oracle=Target creature gets +1/+1 until end of turn. Target creature gets +1/+1 until end of turn. Target creature gets +1/+1 until end of turn.

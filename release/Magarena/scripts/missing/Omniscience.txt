@@ -1,0 +1,9 @@
+name=Omniscience
+url=http://magiccards.info/query?q=%21Omniscience
+image=http://mtgimage.com/card/omniscience.jpg
+rarity=M
+type=Enchantment
+cost={7}{U}{U}{U}
+ability=You may cast nonland cards from your hand without paying their mana costs.
+timing=main
+oracle=You may cast nonland cards from your hand without paying their mana costs.

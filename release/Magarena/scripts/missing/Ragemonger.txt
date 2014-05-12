@@ -1,0 +1,11 @@
+name=Ragemonger
+url=http://magiccards.info/query?q=%21Ragemonger
+image=http://mtgimage.com/card/ragemonger.jpg
+rarity=U
+type=Creature
+subtype=Minotaur,Shaman
+cost={1}{B}{R}
+pt=2/3
+ability=Minotaur spells you cast cost {B}{R} less to cast. This effect reduces only the amount of colored mana you pay.
+timing=main
+oracle=Minotaur spells you cast cost {B}{R} less to cast. This effect reduces only the amount of colored mana you pay.

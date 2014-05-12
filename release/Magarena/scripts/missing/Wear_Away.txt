@@ -1,0 +1,11 @@
+name=Wear Away
+url=http://magiccards.info/query?q=%21Wear+Away
+image=http://mtgimage.com/card/wear%20away.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={G}{G}
+effect=Destroy target artifact or enchantment.;\
+        Splice onto Arcane {3}{G}
+timing=removal
+oracle=Destroy target artifact or enchantment. Splice onto Arcane {3}{G}

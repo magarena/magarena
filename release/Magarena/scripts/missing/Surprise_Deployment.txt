@@ -1,0 +1,10 @@
+name=Surprise Deployment
+url=http://magiccards.info/query?q=%21Surprise+Deployment
+image=http://mtgimage.com/card/surprise%20deployment.jpg
+rarity=U
+type=Instant
+cost={3}{W}
+effect=Cast SN only during combat.;\
+        You may put a nonwhite creature card from your hand onto the battlefield. At the beginning of the next end step, return that creature to your hand.
+timing=removal
+oracle=Cast Surprise Deployment only during combat. You may put a nonwhite creature card from your hand onto the battlefield. At the beginning of the next end step, return that creature to your hand.

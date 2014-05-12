@@ -1,0 +1,10 @@
+name=Vivify
+url=http://magiccards.info/query?q=%21Vivify
+image=http://mtgimage.com/card/vivify.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Target land becomes a 3/3 creature until end of turn. It's still a land.;\
+        Draw a card.
+timing=removal
+oracle=Target land becomes a 3/3 creature until end of turn. It's still a land. Draw a card.

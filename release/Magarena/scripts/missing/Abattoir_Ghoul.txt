@@ -1,0 +1,12 @@
+name=Abattoir Ghoul
+url=http://magiccards.info/query?q=%21Abattoir+Ghoul
+image=http://mtgimage.com/card/abattoir%20ghoul.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=3/2
+ability=First strike;\
+        Whenever a creature dealt damage by SN this turn dies, you gain life equal to that creature's toughness.
+timing=main
+oracle=First strike. Whenever a creature dealt damage by Abattoir Ghoul this turn dies, you gain life equal to that creature's toughness.

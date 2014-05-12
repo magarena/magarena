@@ -1,0 +1,12 @@
+name=Kagemaro, First to Suffer
+url=http://magiccards.info/query?q=%21Kagemaro%2C+First+to+Suffer
+image=http://mtgimage.com/card/kagemaro%2C%20first%20to%20suffer.jpg
+rarity=R
+type=Creature
+subtype=Demon,Spirit
+cost={3}{B}{B}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of cards in your hand.;\
+        {B}, Sacrifice Kagemaro: All creatures get -X/-X until end of turn, where X is the number of cards in your hand.
+timing=main
+oracle=Kagemaro, First to Suffer's power and toughness are each equal to the number of cards in your hand. {B}, Sacrifice Kagemaro: All creatures get -X/-X until end of turn, where X is the number of cards in your hand.

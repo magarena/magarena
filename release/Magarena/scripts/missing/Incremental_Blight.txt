@@ -1,0 +1,9 @@
+name=Incremental Blight
+url=http://magiccards.info/query?q=%21Incremental+Blight
+image=http://mtgimage.com/card/incremental%20blight.jpg
+rarity=U
+type=Sorcery
+cost={3}{B}{B}
+effect=Put a -1/-1 counter on target creature, two -1/-1 counters on another target creature, and three -1/-1 counters on a third target creature.
+timing=main
+oracle=Put a -1/-1 counter on target creature, two -1/-1 counters on another target creature, and three -1/-1 counters on a third target creature.

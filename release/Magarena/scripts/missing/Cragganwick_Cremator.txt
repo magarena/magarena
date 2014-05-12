@@ -1,0 +1,11 @@
+name=Cragganwick Cremator
+url=http://magiccards.info/query?q=%21Cragganwick+Cremator
+image=http://mtgimage.com/card/cragganwick%20cremator.jpg
+rarity=R
+type=Creature
+subtype=Giant,Shaman
+cost={2}{R}{R}
+pt=5/4
+ability=When SN enters the battlefield, discard a card at random. If you discard a creature card this way, SN deals damage equal to that card's power to target player.
+timing=main
+oracle=When Cragganwick Cremator enters the battlefield, discard a card at random. If you discard a creature card this way, Cragganwick Cremator deals damage equal to that card's power to target player.

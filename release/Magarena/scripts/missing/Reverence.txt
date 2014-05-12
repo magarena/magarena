@@ -1,0 +1,9 @@
+name=Reverence
+url=http://magiccards.info/query?q=%21Reverence
+image=http://mtgimage.com/card/reverence.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}{W}
+ability=Creatures with power 2 or less can't attack you.
+timing=main
+oracle=Creatures with power 2 or less can't attack you.

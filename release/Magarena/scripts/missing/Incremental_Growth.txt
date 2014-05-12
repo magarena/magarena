@@ -1,0 +1,9 @@
+name=Incremental Growth
+url=http://magiccards.info/query?q=%21Incremental+Growth
+image=http://mtgimage.com/card/incremental%20growth.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}{G}
+effect=Put a +1/+1 counter on target creature, two +1/+1 counters on another target creature, and three +1/+1 counters on a third target creature.
+timing=main
+oracle=Put a +1/+1 counter on target creature, two +1/+1 counters on another target creature, and three +1/+1 counters on a third target creature.

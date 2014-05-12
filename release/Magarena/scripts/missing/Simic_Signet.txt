@@ -1,0 +1,9 @@
+name=Simic Signet
+url=http://magiccards.info/query?q=%21Simic+Signet
+image=http://mtgimage.com/card/simic%20signet.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability={1}, {T}: Add {G}{U} to your mana pool.
+timing=main
+oracle={1}, {T}: Add {G}{U} to your mana pool.

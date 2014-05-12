@@ -1,0 +1,9 @@
+name=Wild Swing
+url=http://magiccards.info/query?q=%21Wild+Swing
+image=http://mtgimage.com/card/wild%20swing.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}
+effect=Choose three target nonenchantment permanents. Destroy one of them at random.
+timing=main
+oracle=Choose three target nonenchantment permanents. Destroy one of them at random.

@@ -1,0 +1,10 @@
+name=Obsessive Search
+url=http://magiccards.info/query?q=%21Obsessive+Search
+image=http://mtgimage.com/card/obsessive%20search.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Draw a card.;\
+        Madness {U}
+timing=removal
+oracle=Draw a card. Madness {U}

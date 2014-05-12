@@ -1,0 +1,10 @@
+name=Blind with Anger
+url=http://magiccards.info/query?q=%21Blind+with+Anger
+image=http://mtgimage.com/card/blind%20with%20anger.jpg
+rarity=U
+type=Instant
+subtype=Arcane
+cost={3}{R}
+effect=Untap target nonlegendary creature and gain control of it until end of turn. That creature gains haste until end of turn.
+timing=removal
+oracle=Untap target nonlegendary creature and gain control of it until end of turn. That creature gains haste until end of turn.

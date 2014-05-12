@@ -1,0 +1,11 @@
+name=Illusionary Terrain
+url=http://magiccards.info/query?q=%21Illusionary+Terrain
+image=http://mtgimage.com/card/illusionary%20terrain.jpg
+rarity=U
+type=Enchantment
+cost={U}{U}
+ability=Cumulative upkeep {2};\
+        As SN enters the battlefield, choose two basic land types.;\
+        Basic lands of the first chosen type are the second chosen type.
+timing=main
+oracle=Cumulative upkeep {2}. As Illusionary Terrain enters the battlefield, choose two basic land types. Basic lands of the first chosen type are the second chosen type.

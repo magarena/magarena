@@ -1,0 +1,11 @@
+name=Order of Whiteclay
+url=http://magiccards.info/query?q=%21Order+of+Whiteclay
+image=http://mtgimage.com/card/order%20of%20whiteclay.jpg
+rarity=R
+type=Creature
+subtype=Kithkin,Cleric
+cost={1}{W}{W}
+pt=1/4
+ability={1}{W}{W}, {Q}: Return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
+timing=main
+oracle={1}{W}{W}, {Q}: Return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.

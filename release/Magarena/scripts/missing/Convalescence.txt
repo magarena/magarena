@@ -1,0 +1,9 @@
+name=Convalescence
+url=http://magiccards.info/query?q=%21Convalescence
+image=http://mtgimage.com/card/convalescence.jpg
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=At the beginning of your upkeep, if you have 10 or less life, you gain 1 life.
+timing=main
+oracle=At the beginning of your upkeep, if you have 10 or less life, you gain 1 life.

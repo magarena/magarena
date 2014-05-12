@@ -1,0 +1,11 @@
+name=Squee, Goblin Nabob
+url=http://magiccards.info/query?q=%21Squee%2C+Goblin+Nabob
+image=http://mtgimage.com/card/squee%2C%20goblin%20nabob.jpg
+rarity=R
+type=Creature
+subtype=Goblin
+cost={2}{R}
+pt=1/1
+ability=At the beginning of your upkeep, you may return SN from your graveyard to your hand.
+timing=main
+oracle=At the beginning of your upkeep, you may return Squee, Goblin Nabob from your graveyard to your hand.

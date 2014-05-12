@@ -1,0 +1,11 @@
+name=Centaur Omenreader
+url=http://magiccards.info/query?q=%21Centaur+Omenreader
+image=http://mtgimage.com/card/centaur%20omenreader.jpg
+rarity=U
+type=Creature
+subtype=Centaur,Shaman
+cost={3}{G}
+pt=3/3
+ability=As long as SN is tapped, creature spells you cast cost {2} less to cast.
+timing=main
+oracle=As long as Centaur Omenreader is tapped, creature spells you cast cost {2} less to cast.

@@ -1,0 +1,9 @@
+name=Renounce
+url=http://magiccards.info/query?q=%21Renounce
+image=http://mtgimage.com/card/renounce.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Sacrifice any number of permanents. You gain 2 life for each permanent sacrificed this way.
+timing=removal
+oracle=Sacrifice any number of permanents. You gain 2 life for each permanent sacrificed this way.

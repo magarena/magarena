@@ -1,0 +1,10 @@
+name=Midsummer Revel
+url=http://magiccards.info/query?q=%21Midsummer+Revel
+image=http://mtgimage.com/card/midsummer%20revel.jpg
+rarity=R
+type=Enchantment
+cost={3}{G}{G}
+ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
+        {G}, Sacrifice SN: Put X 3/3 green Beast creature tokens onto the battlefield, where X is the number of verse counters on SN.
+timing=main
+oracle=At the beginning of your upkeep, you may put a verse counter on Midsummer Revel. {G}, Sacrifice Midsummer Revel: Put X 3/3 green Beast creature tokens onto the battlefield, where X is the number of verse counters on Midsummer Revel.

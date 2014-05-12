@@ -1,0 +1,12 @@
+name=Notion Thief
+url=http://magiccards.info/query?q=%21Notion+Thief
+image=http://mtgimage.com/card/notion%20thief.jpg
+rarity=R
+type=Creature
+subtype=Human,Rogue
+cost={2}{U}{B}
+pt=3/1
+ability=Flash;\
+        If an opponent would draw a card except the first one he or she draws in each of his or her draw steps, instead that player skips that draw and you draw a card.
+timing=main
+oracle=Flash. If an opponent would draw a card except the first one he or she draws in each of his or her draw steps, instead that player skips that draw and you draw a card.

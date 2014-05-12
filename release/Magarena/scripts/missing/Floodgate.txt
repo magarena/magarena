@@ -1,0 +1,13 @@
+name=Floodgate
+url=http://magiccards.info/query?q=%21Floodgate
+image=http://mtgimage.com/card/floodgate.jpg
+rarity=U
+type=Creature
+subtype=Wall
+cost={3}{U}
+pt=0/5
+ability=Defender;\
+        When SN has flying, sacrifice it.;\
+        When SN leaves the battlefield, it deals damage equal to half the number of Islands you control, rounded down, to each nonblue creature without flying.
+timing=main
+oracle=Defender. When Floodgate has flying, sacrifice it. When Floodgate leaves the battlefield, it deals damage equal to half the number of Islands you control, rounded down, to each nonblue creature without flying.

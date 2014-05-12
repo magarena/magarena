@@ -1,0 +1,12 @@
+name=Grave Scrabbler
+url=http://magiccards.info/query?q=%21Grave+Scrabbler
+image=http://mtgimage.com/card/grave%20scrabbler.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=2/2
+ability=Madness {1}{B};\
+        When SN enters the battlefield, if its madness cost was paid, you may return target creature card from a graveyard to its owner's hand.
+timing=main
+oracle=Madness {1}{B}. When Grave Scrabbler enters the battlefield, if its madness cost was paid, you may return target creature card from a graveyard to its owner's hand.

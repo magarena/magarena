@@ -1,0 +1,11 @@
+name=Boreal Centaur
+url=http://magiccards.info/query?q=%21Boreal+Centaur
+image=http://mtgimage.com/card/boreal%20centaur.jpg
+rarity=C
+type=Creature
+subtype=Centaur,Warrior
+cost={1}{G}
+pt=2/2
+ability={S}: SN gets +1/+1 until end of turn. Activate this ability only once each turn.
+timing=main
+oracle={S}: Boreal Centaur gets +1/+1 until end of turn. Activate this ability only once each turn.

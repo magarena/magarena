@@ -1,0 +1,12 @@
+name=Sentry Oak
+url=http://magiccards.info/query?q=%21Sentry+Oak
+image=http://mtgimage.com/card/sentry%20oak.jpg
+rarity=U
+type=Creature
+subtype=Treefolk,Warrior
+cost={4}{W}
+pt=3/5
+ability=Defender;\
+        At the beginning of combat on your turn, you may clash with an opponent. If you win, SN gets +2/+0 and loses defender until end of turn.
+timing=main
+oracle=Defender. At the beginning of combat on your turn, you may clash with an opponent. If you win, Sentry Oak gets +2/+0 and loses defender until end of turn.

@@ -1,0 +1,9 @@
+name=Spirit of Resistance
+url=http://magiccards.info/query?q=%21Spirit+of+Resistance
+image=http://mtgimage.com/card/spirit%20of%20resistance.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=As long as you control a permanent of each color, prevent all damage that would be dealt to you.
+timing=main
+oracle=As long as you control a permanent of each color, prevent all damage that would be dealt to you.

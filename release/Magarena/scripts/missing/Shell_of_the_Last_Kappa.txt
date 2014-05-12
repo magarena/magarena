@@ -1,0 +1,10 @@
+name=Shell of the Last Kappa
+url=http://magiccards.info/query?q=%21Shell+of+the+Last+Kappa
+image=http://mtgimage.com/card/shell%20of%20the%20last%20kappa.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability={3}, {T}: Exile target instant or sorcery spell that targets you.;\
+        {3}, {T}, Sacrifice SN: You may cast a card exiled with SN without paying its mana cost.
+timing=main
+oracle={3}, {T}: Exile target instant or sorcery spell that targets you.. {3}, {T}, Sacrifice Shell of the Last Kappa: You may cast a card exiled with Shell of the Last Kappa without paying its mana cost.

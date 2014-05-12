@@ -1,0 +1,10 @@
+name=Thousand-Year Elixir
+url=http://magiccards.info/query?q=%21Thousand-Year+Elixir
+image=http://mtgimage.com/card/thousand-year%20elixir.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=You may activate abilities of creatures you control as though those creatures had haste.;\
+        {1}, {T}: Untap target creature.
+timing=main
+oracle=You may activate abilities of creatures you control as though those creatures had haste. {1}, {T}: Untap target creature.

@@ -1,0 +1,12 @@
+name=Unscythe, Killer of Kings
+url=http://magiccards.info/query?q=%21Unscythe%2C+Killer+of+Kings
+image=http://mtgimage.com/card/unscythe%2C%20killer%20of%20kings.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={U}{B}{B}{R}
+ability=Equipped creature gets +3/+3 and has first strike.;\
+        Whenever a creature dealt damage by equipped creature this turn dies, you may exile that card. If you do, put a 2/2 black Zombie creature token onto the battlefield.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature gets +3/+3 and has first strike. Whenever a creature dealt damage by equipped creature this turn dies, you may exile that card. If you do, put a 2/2 black Zombie creature token onto the battlefield. Equip {2}

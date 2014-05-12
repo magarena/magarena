@@ -1,0 +1,9 @@
+name=Barrin's Unmaking
+url=http://magiccards.info/query?q=%21Barrin%27s+Unmaking
+image=http://mtgimage.com/card/barrin%27s%20unmaking.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Return target permanent to its owner's hand if that permanent shares a color with the most common color among all permanents or a color tied for most common.
+timing=removal
+oracle=Return target permanent to its owner's hand if that permanent shares a color with the most common color among all permanents or a color tied for most common.

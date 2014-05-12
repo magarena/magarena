@@ -1,0 +1,9 @@
+name=Shower of Sparks
+url=http://magiccards.info/query?q=%21Shower+of+Sparks
+image=http://mtgimage.com/card/shower%20of%20sparks.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=SN deals 1 damage to target creature and 1 damage to target player.
+timing=removal
+oracle=Shower of Sparks deals 1 damage to target creature and 1 damage to target player.

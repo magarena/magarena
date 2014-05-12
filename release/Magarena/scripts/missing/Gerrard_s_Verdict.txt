@@ -1,0 +1,9 @@
+name=Gerrard's Verdict
+url=http://magiccards.info/query?q=%21Gerrard%27s+Verdict
+image=http://mtgimage.com/card/gerrard%27s%20verdict.jpg
+rarity=U
+type=Sorcery
+cost={W}{B}
+effect=Target player discards two cards. You gain 3 life for each land card discarded this way.
+timing=main
+oracle=Target player discards two cards. You gain 3 life for each land card discarded this way.

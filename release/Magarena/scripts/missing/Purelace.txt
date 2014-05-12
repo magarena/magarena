@@ -1,0 +1,9 @@
+name=Purelace
+url=http://magiccards.info/query?q=%21Purelace
+image=http://mtgimage.com/card/purelace.jpg
+rarity=R
+type=Instant
+cost={W}
+effect=Target spell or permanent becomes white.
+timing=removal
+oracle=Target spell or permanent becomes white.

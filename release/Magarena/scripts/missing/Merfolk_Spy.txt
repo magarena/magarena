@@ -1,0 +1,12 @@
+name=Merfolk Spy
+url=http://magiccards.info/query?q=%21Merfolk+Spy
+image=http://mtgimage.com/card/merfolk%20spy.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+cost={U}
+pt=1/1
+ability=Islandwalk;\
+        Whenever SN deals combat damage to a player, that player reveals a card at random from his or her hand.
+timing=main
+oracle=Islandwalk. Whenever Merfolk Spy deals combat damage to a player, that player reveals a card at random from his or her hand.

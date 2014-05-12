@@ -1,0 +1,9 @@
+name=Lash Out
+url=http://magiccards.info/query?q=%21Lash+Out
+image=http://mtgimage.com/card/lash%20out.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=SN deals 3 damage to target creature. Clash with an opponent. If you win, SN deals 3 damage to that creature's controller.
+timing=removal
+oracle=Lash Out deals 3 damage to target creature. Clash with an opponent. If you win, Lash Out deals 3 damage to that creature's controller.

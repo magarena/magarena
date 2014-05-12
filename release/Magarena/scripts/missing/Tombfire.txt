@@ -1,0 +1,9 @@
+name=Tombfire
+url=http://magiccards.info/query?q=%21Tombfire
+image=http://mtgimage.com/card/tombfire.jpg
+rarity=R
+type=Sorcery
+cost={B}
+effect=Target player exiles all cards with flashback from his or her graveyard.
+timing=main
+oracle=Target player exiles all cards with flashback from his or her graveyard.

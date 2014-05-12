@@ -1,0 +1,12 @@
+name=Silver Wyvern
+url=http://magiccards.info/query?q=%21Silver+Wyvern
+image=http://mtgimage.com/card/silver%20wyvern.jpg
+rarity=R
+type=Creature
+subtype=Drake
+cost={3}{U}{U}
+pt=4/3
+ability=Flying;\
+        {U}: Change the target of target spell or ability that targets only SN. The new target must be a creature.
+timing=main
+oracle=Flying. {U}: Change the target of target spell or ability that targets only Silver Wyvern. The new target must be a creature.

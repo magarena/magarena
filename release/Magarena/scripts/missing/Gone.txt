@@ -1,0 +1,9 @@
+name=Gone
+url=http://magiccards.info/query?q=%21Gone
+image=http://mtgimage.com/card/deadgone.jpg
+rarity=C
+type=Instant
+cost={2}{R}
+effect=Return target creature you don't control to its owner's hand.
+timing=removal
+oracle=Return target creature you don't control to its owner's hand.

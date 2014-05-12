@@ -1,0 +1,9 @@
+name=Citanul Flute
+url=http://magiccards.info/query?q=%21Citanul+Flute
+image=http://mtgimage.com/card/citanul%20flute.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability={X}, {T}: Search your library for a creature card with converted mana cost X or less, reveal it, and put it into your hand. Then shuffle your library.
+timing=main
+oracle={X}, {T}: Search your library for a creature card with converted mana cost X or less, reveal it, and put it into your hand. Then shuffle your library.

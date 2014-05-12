@@ -1,0 +1,11 @@
+name=Resounding Roar
+url=http://magiccards.info/query?q=%21Resounding+Roar
+image=http://mtgimage.com/card/resounding%20roar.jpg
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature gets +3/+3 until end of turn.;\
+        Cycling {5}{R}{G}{W};\
+        When you cycle SN, target creature gets +6/+6 until end of turn.
+timing=removal
+oracle=Target creature gets +3/+3 until end of turn. Cycling {5}{R}{G}{W}. When you cycle Resounding Roar, target creature gets +6/+6 until end of turn.

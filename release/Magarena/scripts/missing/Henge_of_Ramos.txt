@@ -1,0 +1,9 @@
+name=Henge of Ramos
+url=http://magiccards.info/query?q=%21Henge+of+Ramos
+image=http://mtgimage.com/card/henge%20of%20ramos.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {2}, {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {2}, {T}: Add one mana of any color to your mana pool.

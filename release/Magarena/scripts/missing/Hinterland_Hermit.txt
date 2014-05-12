@@ -1,0 +1,11 @@
+name=Hinterland Hermit
+url=http://magiccards.info/query?q=%21Hinterland+Hermit
+image=http://mtgimage.com/card/hinterland%20hermit.jpg
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={1}{R}
+pt=2/1
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Hinterland Hermit.

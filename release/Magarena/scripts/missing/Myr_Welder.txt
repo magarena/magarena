@@ -1,0 +1,12 @@
+name=Myr Welder
+url=http://magiccards.info/query?q=%21Myr+Welder
+image=http://mtgimage.com/card/myr%20welder.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Myr
+cost={3}
+pt=1/4
+ability=Imprint — {T}: Exile target artifact card from a graveyard.;\
+        SN has all activated abilities of all cards exiled with it.
+timing=main
+oracle=Imprint — {T}: Exile target artifact card from a graveyard. Myr Welder has all activated abilities of all cards exiled with it.

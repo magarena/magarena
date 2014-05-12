@@ -1,0 +1,9 @@
+name=Thran Lens
+url=http://magiccards.info/query?q=%21Thran+Lens
+image=http://mtgimage.com/card/thran%20lens.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=All permanents are colorless.
+timing=main
+oracle=All permanents are colorless.

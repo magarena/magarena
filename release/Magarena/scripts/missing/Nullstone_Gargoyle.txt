@@ -1,0 +1,12 @@
+name=Nullstone Gargoyle
+url=http://magiccards.info/query?q=%21Nullstone+Gargoyle
+image=http://mtgimage.com/card/nullstone%20gargoyle.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Gargoyle
+cost={9}
+pt=4/5
+ability=Flying;\
+        Whenever the first noncreature spell of a turn is cast, counter that spell.
+timing=main
+oracle=Flying. Whenever the first noncreature spell of a turn is cast, counter that spell.

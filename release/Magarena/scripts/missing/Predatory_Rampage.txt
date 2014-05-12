@@ -1,0 +1,9 @@
+name=Predatory Rampage
+url=http://magiccards.info/query?q=%21Predatory+Rampage
+image=http://mtgimage.com/card/predatory%20rampage.jpg
+rarity=R
+type=Sorcery
+cost={3}{G}{G}
+effect=Creatures you control get +3/+3 until end of turn. Each creature your opponents control blocks this turn if able.
+timing=main
+oracle=Creatures you control get +3/+3 until end of turn. Each creature your opponents control blocks this turn if able.

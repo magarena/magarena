@@ -1,0 +1,11 @@
+name=Wellwisher
+url=http://magiccards.info/query?q=%21Wellwisher
+image=http://mtgimage.com/card/wellwisher.jpg
+rarity=C
+type=Creature
+subtype=Elf
+cost={1}{G}
+pt=1/1
+ability={T}: You gain 1 life for each Elf on the battlefield.
+timing=main
+oracle={T}: You gain 1 life for each Elf on the battlefield.

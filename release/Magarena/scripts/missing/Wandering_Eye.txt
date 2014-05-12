@@ -1,0 +1,12 @@
+name=Wandering Eye
+url=http://magiccards.info/query?q=%21Wandering+Eye
+image=http://mtgimage.com/card/wandering%20eye.jpg
+rarity=C
+type=Creature
+subtype=Illusion
+cost={2}{U}
+pt=1/3
+ability=Flying;\
+        Players play with their hands revealed.
+timing=main
+oracle=Flying. Players play with their hands revealed.

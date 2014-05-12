@@ -1,0 +1,9 @@
+name=Quiet Speculation
+url=http://magiccards.info/query?q=%21Quiet+Speculation
+image=http://mtgimage.com/card/quiet%20speculation.jpg
+rarity=U
+type=Sorcery
+cost={1}{U}
+effect=Search target player's library for up to three cards with flashback and put them into that player's graveyard. Then the player shuffles his or her library.
+timing=main
+oracle=Search target player's library for up to three cards with flashback and put them into that player's graveyard. Then the player shuffles his or her library.

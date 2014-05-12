@@ -1,0 +1,10 @@
+name=Izzet Boilerworks
+url=http://magiccards.info/query?q=%21Izzet+Boilerworks
+image=http://mtgimage.com/card/izzet%20boilerworks.jpg
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, return a land you control to its owner's hand.;\
+        {T}: Add {U}{R} to your mana pool.
+timing=main
+oracle=Izzet Boilerworks enters the battlefield tapped. When Izzet Boilerworks enters the battlefield, return a land you control to its owner's hand. {T}: Add {U}{R} to your mana pool.

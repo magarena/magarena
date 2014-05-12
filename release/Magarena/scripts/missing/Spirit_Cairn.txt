@@ -1,0 +1,9 @@
+name=Spirit Cairn
+url=http://magiccards.info/query?q=%21Spirit+Cairn
+image=http://mtgimage.com/card/spirit%20cairn.jpg
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=Whenever a player discards a card, you may pay {W}. If you do, put a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=main
+oracle=Whenever a player discards a card, you may pay {W}. If you do, put a 1/1 white Spirit creature token with flying onto the battlefield.

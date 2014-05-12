@@ -1,0 +1,9 @@
+name=Vanish into Memory
+url=http://magiccards.info/query?q=%21Vanish+into+Memory
+image=http://mtgimage.com/card/vanish%20into%20memory.jpg
+rarity=U
+type=Instant
+cost={2}{W}{U}
+effect=Exile target creature. You draw cards equal to that creature's power. At the beginning of your next upkeep, return that card to the battlefield under its owner's control. If you do, discard cards equal to that creature's toughness.
+timing=removal
+oracle=Exile target creature. You draw cards equal to that creature's power. At the beginning of your next upkeep, return that card to the battlefield under its owner's control. If you do, discard cards equal to that creature's toughness.

@@ -1,0 +1,12 @@
+name=Rainbow Crow
+url=http://magiccards.info/query?q=%21Rainbow+Crow
+image=http://mtgimage.com/card/rainbow%20crow.jpg
+rarity=U
+type=Creature
+subtype=Bird
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        {1}: SN becomes the color of your choice until end of turn.
+timing=main
+oracle=Flying. {1}: Rainbow Crow becomes the color of your choice until end of turn.

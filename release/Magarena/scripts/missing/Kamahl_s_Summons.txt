@@ -1,0 +1,9 @@
+name=Kamahl's Summons
+url=http://magiccards.info/query?q=%21Kamahl%27s+Summons
+image=http://mtgimage.com/card/kamahl%27s%20summons.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Each player may reveal any number of creature cards from his or her hand. Then each player puts a 2/2 green Bear creature token onto the battlefield for each card he or she revealed this way.
+timing=main
+oracle=Each player may reveal any number of creature cards from his or her hand. Then each player puts a 2/2 green Bear creature token onto the battlefield for each card he or she revealed this way.

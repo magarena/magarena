@@ -1,0 +1,11 @@
+name=Wirecat
+url=http://magiccards.info/query?q=%21Wirecat
+image=http://mtgimage.com/card/wirecat.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Cat
+cost={4}
+pt=4/3
+ability=SN can't attack or block if an enchantment is on the battlefield.
+timing=main
+oracle=Wirecat can't attack or block if an enchantment is on the battlefield.

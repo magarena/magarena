@@ -1,0 +1,9 @@
+name=Redeem
+url=http://magiccards.info/query?q=%21Redeem
+image=http://mtgimage.com/card/redeem.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Prevent all damage that would be dealt this turn to up to two target creatures.
+timing=removal
+oracle=Prevent all damage that would be dealt this turn to up to two target creatures.

@@ -1,0 +1,10 @@
+name=Forsaken City
+url=http://magiccards.info/query?q=%21Forsaken+City
+image=http://mtgimage.com/card/forsaken%20city.jpg
+rarity=R
+type=Land
+ability=SN doesn't untap during your untap step.;\
+        At the beginning of your upkeep, you may exile a card from your hand. If you do, untap SN.;\
+        {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle=Forsaken City doesn't untap during your untap step. At the beginning of your upkeep, you may exile a card from your hand. If you do, untap Forsaken City. {T}: Add one mana of any color to your mana pool.

@@ -1,0 +1,11 @@
+name=Goblin Skycutter
+url=http://magiccards.info/query?q=%21Goblin+Skycutter
+image=http://mtgimage.com/card/goblin%20skycutter.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={1}{R}
+pt=2/1
+ability=Sacrifice SN: SN deals 2 damage to target creature with flying. That creature loses flying until end of turn.
+timing=main
+oracle=Sacrifice Goblin Skycutter: Goblin Skycutter deals 2 damage to target creature with flying. That creature loses flying until end of turn.

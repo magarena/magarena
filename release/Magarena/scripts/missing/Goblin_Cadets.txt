@@ -1,0 +1,11 @@
+name=Goblin Cadets
+url=http://magiccards.info/query?q=%21Goblin+Cadets
+image=http://mtgimage.com/card/goblin%20cadets.jpg
+rarity=U
+type=Creature
+subtype=Goblin
+cost={R}
+pt=2/1
+ability=Whenever SN blocks or becomes blocked, target opponent gains control of it.
+timing=main
+oracle=Whenever Goblin Cadets blocks or becomes blocked, target opponent gains control of it.

@@ -1,0 +1,9 @@
+name=Fossil Find
+url=http://magiccards.info/query?q=%21Fossil+Find
+image=http://mtgimage.com/card/fossil%20find.jpg
+rarity=U
+type=Sorcery
+cost={R/G}
+effect=Return a card at random from your graveyard to your hand, then reorder your graveyard as you choose.
+timing=main
+oracle=Return a card at random from your graveyard to your hand, then reorder your graveyard as you choose.

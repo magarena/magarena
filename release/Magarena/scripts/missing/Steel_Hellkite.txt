@@ -1,0 +1,13 @@
+name=Steel Hellkite
+url=http://magiccards.info/query?q=%21Steel+Hellkite
+image=http://mtgimage.com/card/steel%20hellkite.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Dragon
+cost={6}
+pt=5/5
+ability=Flying;\
+        {2}: SN gets +1/+0 until end of turn.;\
+        {X}: Destroy each nonland permanent with converted mana cost X whose controller was dealt combat damage by SN this turn. Activate this ability only once each turn.
+timing=main
+oracle=Flying. {2}: Steel Hellkite gets +1/+0 until end of turn. {X}: Destroy each nonland permanent with converted mana cost X whose controller was dealt combat damage by Steel Hellkite this turn. Activate this ability only once each turn.

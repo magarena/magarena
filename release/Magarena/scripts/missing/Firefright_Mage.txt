@@ -1,0 +1,11 @@
+name=Firefright Mage
+url=http://magiccards.info/query?q=%21Firefright+Mage
+image=http://mtgimage.com/card/firefright%20mage.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Spellshaper
+cost={R}
+pt=1/1
+ability={1}{R}, {T}, Discard a card: Target creature can't be blocked this turn except by artifact creatures and/or red creatures.
+timing=main
+oracle={1}{R}, {T}, Discard a card: Target creature can't be blocked this turn except by artifact creatures and/or red creatures.

@@ -1,0 +1,11 @@
+name=Lead Golem
+url=http://magiccards.info/query?q=%21Lead+Golem
+image=http://mtgimage.com/card/lead%20golem.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=3/5
+ability=Whenever SN attacks, it doesn't untap during its controller's next untap step.
+timing=main
+oracle=Whenever Lead Golem attacks, it doesn't untap during its controller's next untap step.

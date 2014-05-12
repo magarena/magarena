@@ -1,0 +1,12 @@
+name=Spellgorger Barbarian
+url=http://magiccards.info/query?q=%21Spellgorger+Barbarian
+image=http://mtgimage.com/card/spellgorger%20barbarian.jpg
+rarity=C
+type=Creature
+subtype=Human,Nightmare,Barbarian
+cost={3}{R}
+pt=3/1
+ability=When SN enters the battlefield, discard a card at random.;\
+        When SN leaves the battlefield, draw a card.
+timing=main
+oracle=When Spellgorger Barbarian enters the battlefield, discard a card at random. When Spellgorger Barbarian leaves the battlefield, draw a card.

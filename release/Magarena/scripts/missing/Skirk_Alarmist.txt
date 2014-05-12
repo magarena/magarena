@@ -1,0 +1,12 @@
+name=Skirk Alarmist
+url=http://magiccards.info/query?q=%21Skirk+Alarmist
+image=http://mtgimage.com/card/skirk%20alarmist.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{R}
+pt=1/2
+ability=Haste;\
+        {T}: Turn target face-down creature you control face up. At the beginning of the next end step, sacrifice it.
+timing=main
+oracle=Haste. {T}: Turn target face-down creature you control face up. At the beginning of the next end step, sacrifice it.

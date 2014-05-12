@@ -1,0 +1,11 @@
+name=Saprazzan Outrigger
+url=http://magiccards.info/query?q=%21Saprazzan+Outrigger
+image=http://mtgimage.com/card/saprazzan%20outrigger.jpg
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={3}{U}
+pt=5/5
+ability=When SN attacks or blocks, put it on top of its owner's library at end of combat.
+timing=main
+oracle=When Saprazzan Outrigger attacks or blocks, put it on top of its owner's library at end of combat.

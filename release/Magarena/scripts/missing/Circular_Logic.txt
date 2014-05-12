@@ -1,0 +1,10 @@
+name=Circular Logic
+url=http://magiccards.info/query?q=%21Circular+Logic
+image=http://mtgimage.com/card/circular%20logic.jpg
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Counter target spell unless its controller pays {1} for each card in your graveyard.;\
+        Madness {U}
+timing=removal
+oracle=Counter target spell unless its controller pays {1} for each card in your graveyard. Madness {U}

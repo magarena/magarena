@@ -1,0 +1,9 @@
+name=Darkwater Egg
+url=http://magiccards.info/query?q=%21Darkwater+Egg
+image=http://mtgimage.com/card/darkwater%20egg.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={2}, {T}, Sacrifice SN: Add {U}{B} to your mana pool. Draw a card.
+timing=main
+oracle={2}, {T}, Sacrifice Darkwater Egg: Add {U}{B} to your mana pool. Draw a card.

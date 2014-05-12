@@ -1,0 +1,11 @@
+name=Thing from the Deep
+url=http://magiccards.info/query?q=%21Thing+from+the+Deep
+image=http://mtgimage.com/card/thing%20from%20the%20deep.jpg
+rarity=R
+type=Creature
+subtype=Leviathan
+cost={6}{U}{U}{U}
+pt=9/9
+ability=Whenever SN attacks, sacrifice it unless you sacrifice an Island.
+timing=main
+oracle=Whenever Thing from the Deep attacks, sacrifice it unless you sacrifice an Island.

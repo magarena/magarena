@@ -1,0 +1,11 @@
+name=Sift Through Sands
+url=http://magiccards.info/query?q=%21Sift+Through+Sands
+image=http://mtgimage.com/card/sift%20through%20sands.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={1}{U}{U}
+effect=Draw two cards, then discard a card.;\
+        If you've cast a spell named Peer Through Depths and a spell named Reach Through Mists this turn, you may search your library for a card named The Unspeakable, put it onto the battlefield, then shuffle your library.
+timing=removal
+oracle=Draw two cards, then discard a card. If you've cast a spell named Peer Through Depths and a spell named Reach Through Mists this turn, you may search your library for a card named The Unspeakable, put it onto the battlefield, then shuffle your library.

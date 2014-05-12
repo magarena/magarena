@@ -1,0 +1,9 @@
+name=Triton Tactics
+url=http://magiccards.info/query?q=%21Triton+Tactics
+image=http://mtgimage.com/card/triton%20tactics.jpg
+rarity=U
+type=Instant
+cost={U}
+effect=Up to two target creatures each get +0/+3 until end of turn. Untap those creatures. At this turn's next end of combat, tap each creature that was blocked by one of those creatures this turn and it doesn't untap during its controller's next untap step.
+timing=removal
+oracle=Up to two target creatures each get +0/+3 until end of turn. Untap those creatures. At this turn's next end of combat, tap each creature that was blocked by one of those creatures this turn and it doesn't untap during its controller's next untap step.

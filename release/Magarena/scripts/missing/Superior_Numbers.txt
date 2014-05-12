@@ -1,0 +1,9 @@
+name=Superior Numbers
+url=http://magiccards.info/query?q=%21Superior+Numbers
+image=http://mtgimage.com/card/superior%20numbers.jpg
+rarity=U
+type=Sorcery
+cost={G}{G}
+effect=SN deals damage to target creature equal to the number of creatures you control in excess of the number of creatures target opponent controls.
+timing=main
+oracle=Superior Numbers deals damage to target creature equal to the number of creatures you control in excess of the number of creatures target opponent controls.

@@ -1,0 +1,11 @@
+name=Leveler
+url=http://magiccards.info/query?q=%21Leveler
+image=http://mtgimage.com/card/leveler.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Juggernaut
+cost={5}
+pt=10/10
+ability=When SN enters the battlefield, exile all cards from your library.
+timing=main
+oracle=When Leveler enters the battlefield, exile all cards from your library.

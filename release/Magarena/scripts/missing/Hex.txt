@@ -1,0 +1,9 @@
+name=Hex
+url=http://magiccards.info/query?q=%21Hex
+image=http://mtgimage.com/card/hex.jpg
+rarity=R
+type=Sorcery
+cost={4}{B}{B}
+effect=Destroy six target creatures.
+timing=main
+oracle=Destroy six target creatures.

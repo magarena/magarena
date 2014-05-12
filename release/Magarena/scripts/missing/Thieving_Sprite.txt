@@ -1,0 +1,12 @@
+name=Thieving Sprite
+url=http://magiccards.info/query?q=%21Thieving+Sprite
+image=http://mtgimage.com/card/thieving%20sprite.jpg
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={2}{B}
+pt=1/1
+ability=Flying;\
+        When SN enters the battlefield, target player reveals X cards from his or her hand, where X is the number of Faeries you control. You choose one of those cards. That player discards that card.
+timing=main
+oracle=Flying. When Thieving Sprite enters the battlefield, target player reveals X cards from his or her hand, where X is the number of Faeries you control. You choose one of those cards. That player discards that card.

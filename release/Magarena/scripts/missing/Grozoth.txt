@@ -1,0 +1,14 @@
+name=Grozoth
+url=http://magiccards.info/query?q=%21Grozoth
+image=http://mtgimage.com/card/grozoth.jpg
+rarity=R
+type=Creature
+subtype=Leviathan
+cost={6}{U}{U}{U}
+pt=9/9
+ability=Defender;\
+        When SN enters the battlefield, you may search your library for any number of cards that have converted mana cost 9, reveal them, and put them into your hand. If you do, shuffle your library.;\
+        {4}: SN loses defender until end of turn.;\
+        Transmute {1}{U}{U}
+timing=main
+oracle=Defender. When Grozoth enters the battlefield, you may search your library for any number of cards that have converted mana cost 9, reveal them, and put them into your hand. If you do, shuffle your library. {4}: Grozoth loses defender until end of turn. Transmute {1}{U}{U}

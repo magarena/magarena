@@ -1,0 +1,9 @@
+name=Reduce to Dreams
+url=http://magiccards.info/query?q=%21Reduce+to+Dreams
+image=http://mtgimage.com/card/reduce%20to%20dreams.jpg
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+effect=Return all artifacts and enchantments to their owners' hands.
+timing=main
+oracle=Return all artifacts and enchantments to their owners' hands.

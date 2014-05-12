@@ -1,0 +1,8 @@
+name=Exotic Orchard
+url=http://magiccards.info/query?q=%21Exotic+Orchard
+image=http://mtgimage.com/card/exotic%20orchard.jpg
+rarity=R
+type=Land
+ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
+timing=main
+oracle={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.

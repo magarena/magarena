@@ -1,0 +1,13 @@
+name=Raven Familiar
+url=http://magiccards.info/query?q=%21Raven+Familiar
+image=http://mtgimage.com/card/raven%20familiar.jpg
+rarity=U
+type=Creature
+subtype=Bird
+cost={2}{U}
+pt=1/2
+ability=Flying;\
+        Echo {2}{U};\
+        When SN enters the battlefield, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+timing=main
+oracle=Flying. Echo {2}{U}. When Raven Familiar enters the battlefield, look at the top three cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.

@@ -1,0 +1,9 @@
+name=Feed the Pack
+url=http://magiccards.info/query?q=%21Feed+the+Pack
+image=http://mtgimage.com/card/feed%20the%20pack.jpg
+rarity=R
+type=Enchantment
+cost={5}{G}
+ability=At the beginning of your end step, you may sacrifice a nontoken creature. If you do, put X 2/2 green Wolf creature tokens onto the battlefield, where X is the sacrificed creature's toughness.
+timing=main
+oracle=At the beginning of your end step, you may sacrifice a nontoken creature. If you do, put X 2/2 green Wolf creature tokens onto the battlefield, where X is the sacrificed creature's toughness.

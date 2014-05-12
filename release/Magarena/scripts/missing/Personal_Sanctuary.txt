@@ -1,0 +1,9 @@
+name=Personal Sanctuary
+url=http://magiccards.info/query?q=%21Personal+Sanctuary
+image=http://mtgimage.com/card/personal%20sanctuary.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=During your turn, prevent all damage that would be dealt to you.
+timing=main
+oracle=During your turn, prevent all damage that would be dealt to you.

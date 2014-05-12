@@ -1,0 +1,11 @@
+name=Varchild's Crusader
+url=http://magiccards.info/query?q=%21Varchild%27s+Crusader
+image=http://mtgimage.com/card/varchild%27s%20crusader1.jpg
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={3}{R}
+pt=3/2
+ability={0}: SN can't be blocked this turn except by Walls. Sacrifice SN at the beginning of the next end step.
+timing=main
+oracle={0}: Varchild's Crusader can't be blocked this turn except by Walls. Sacrifice Varchild's Crusader at the beginning of the next end step.

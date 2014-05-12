@@ -1,0 +1,12 @@
+name=Etched Oracle
+url=http://magiccards.info/query?q=%21Etched+Oracle
+image=http://mtgimage.com/card/etched%20oracle.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Wizard
+cost={4}
+pt=0/0
+ability=Sunburst;\
+        {1}, Remove four +1/+1 counters from SN: Target player draws three cards.
+timing=main
+oracle=Sunburst. {1}, Remove four +1/+1 counters from Etched Oracle: Target player draws three cards.

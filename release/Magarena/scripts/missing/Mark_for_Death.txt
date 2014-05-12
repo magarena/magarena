@@ -1,0 +1,9 @@
+name=Mark for Death
+url=http://magiccards.info/query?q=%21Mark+for+Death
+image=http://mtgimage.com/card/mark%20for%20death.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}
+effect=Target creature an opponent controls blocks this turn if able. Untap that creature. Other creatures that player controls can't block this turn.
+timing=main
+oracle=Target creature an opponent controls blocks this turn if able. Untap that creature. Other creatures that player controls can't block this turn.

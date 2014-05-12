@@ -1,0 +1,11 @@
+name=Sunbond
+url=http://magiccards.info/query?q=%21Sunbond
+image=http://mtgimage.com/card/sunbond.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Enchant creature;\
+        Enchanted creature has "Whenever you gain life, put that many +1/+1 counters on this creature."
+timing=main
+oracle=Enchant creature. Enchanted creature has "Whenever you gain life, put that many +1/+1 counters on this creature."

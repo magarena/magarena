@@ -1,0 +1,11 @@
+name=Guardian Beast
+url=http://magiccards.info/query?q=%21Guardian+Beast
+image=http://mtgimage.com/card/guardian%20beast.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={3}{B}
+pt=2/4
+ability=As long as SN is untapped, noncreature artifacts you control can't be enchanted, they have indestructible, and other players can't gain control of them. This effect doesn't remove Auras already attached to those artifacts.
+timing=main
+oracle=As long as Guardian Beast is untapped, noncreature artifacts you control can't be enchanted, they have indestructible, and other players can't gain control of them. This effect doesn't remove Auras already attached to those artifacts.

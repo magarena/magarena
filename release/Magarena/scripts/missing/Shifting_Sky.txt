@@ -1,0 +1,10 @@
+name=Shifting Sky
+url=http://magiccards.info/query?q=%21Shifting+Sky
+image=http://mtgimage.com/card/shifting%20sky.jpg
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=As SN enters the battlefield, choose a color.;\
+        All nonland permanents are the chosen color.
+timing=main
+oracle=As Shifting Sky enters the battlefield, choose a color. All nonland permanents are the chosen color.

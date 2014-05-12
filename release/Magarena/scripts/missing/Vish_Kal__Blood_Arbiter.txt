@@ -1,0 +1,13 @@
+name=Vish Kal, Blood Arbiter
+url=http://magiccards.info/query?q=%21Vish+Kal%2C+Blood+Arbiter
+image=http://mtgimage.com/card/vish%20kal%2C%20blood%20arbiter.jpg
+rarity=R
+type=Creature
+subtype=Vampire
+cost={4}{W}{B}{B}
+pt=5/5
+ability=Flying, lifelink;\
+        Sacrifice a creature: Put X +1/+1 counters on SN, where X is the sacrificed creature's power.;\
+        Remove all +1/+1 counters from Vish Kal: Target creature gets -1/-1 until end of turn for each +1/+1 counter removed this way.
+timing=main
+oracle=Flying, lifelink. Sacrifice a creature: Put X +1/+1 counters on Vish Kal, Blood Arbiter, where X is the sacrificed creature's power. Remove all +1/+1 counters from Vish Kal: Target creature gets -1/-1 until end of turn for each +1/+1 counter removed this way.

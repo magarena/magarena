@@ -1,0 +1,11 @@
+name=Roaring Slagwurm
+url=http://magiccards.info/query?q=%21Roaring+Slagwurm
+image=http://mtgimage.com/card/roaring%20slagwurm.jpg
+rarity=R
+type=Creature
+subtype=Wurm
+cost={5}{G}{G}
+pt=6/4
+ability=Whenever SN attacks, tap all artifacts.
+timing=main
+oracle=Whenever Roaring Slagwurm attacks, tap all artifacts.

@@ -1,0 +1,12 @@
+name=Frightshroud Courier
+url=http://magiccards.info/query?q=%21Frightshroud+Courier
+image=http://mtgimage.com/card/frightshroud%20courier.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=2/1
+ability=You may choose not to untap SN during your untap step.;\
+        {2}{B}, {T}: Target Zombie creature gets +2/+2 and has fear for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Frightshroud Courier during your untap step. {2}{B}, {T}: Target Zombie creature gets +2/+2 and has fear for as long as Frightshroud Courier remains tapped.

@@ -1,0 +1,12 @@
+name=Sheltering Ancient
+url=http://magiccards.info/query?q=%21Sheltering+Ancient
+image=http://mtgimage.com/card/sheltering%20ancient.jpg
+rarity=U
+type=Creature
+subtype=Treefolk
+cost={1}{G}
+pt=5/5
+ability=Trample;\
+        Cumulative upkeep—Put a +1/+1 counter on a creature an opponent controls.
+timing=main
+oracle=Trample. Cumulative upkeep—Put a +1/+1 counter on a creature an opponent controls.

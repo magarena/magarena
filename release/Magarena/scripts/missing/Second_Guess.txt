@@ -1,0 +1,9 @@
+name=Second Guess
+url=http://magiccards.info/query?q=%21Second+Guess
+image=http://mtgimage.com/card/second%20guess.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Counter target spell that's the second spell cast this turn.
+timing=removal
+oracle=Counter target spell that's the second spell cast this turn.

@@ -1,0 +1,9 @@
+name=Life Chisel
+url=http://magiccards.info/query?q=%21Life+Chisel
+image=http://mtgimage.com/card/life%20chisel.jpg
+rarity=U
+type=Artifact
+cost={4}
+ability=Sacrifice a creature: You gain life equal to the sacrificed creature's toughness. Activate this ability only during your upkeep.
+timing=main
+oracle=Sacrifice a creature: You gain life equal to the sacrificed creature's toughness. Activate this ability only during your upkeep.

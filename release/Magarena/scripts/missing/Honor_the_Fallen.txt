@@ -1,0 +1,9 @@
+name=Honor the Fallen
+url=http://magiccards.info/query?q=%21Honor+the+Fallen
+image=http://mtgimage.com/card/honor%20the%20fallen.jpg
+rarity=R
+type=Instant
+cost={1}{W}
+effect=Exile all creature cards from all graveyards. You gain 1 life for each card exiled this way.
+timing=removal
+oracle=Exile all creature cards from all graveyards. You gain 1 life for each card exiled this way.

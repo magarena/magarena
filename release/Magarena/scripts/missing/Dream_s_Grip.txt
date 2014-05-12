@@ -1,0 +1,10 @@
+name=Dream's Grip
+url=http://magiccards.info/query?q=%21Dream%27s+Grip
+image=http://mtgimage.com/card/dream%27s%20grip.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Choose one — Tap target permanent; or untap target permanent.;\
+        Entwine {1}
+timing=removal
+oracle=Choose one — Tap target permanent; or untap target permanent. Entwine {1}

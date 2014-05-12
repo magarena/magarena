@@ -1,0 +1,9 @@
+name=Amass the Components
+url=http://magiccards.info/query?q=%21Amass+the+Components
+image=http://mtgimage.com/card/amass%20the%20components.jpg
+rarity=C
+type=Sorcery
+cost={3}{U}
+effect=Draw three cards, then put a card from your hand on the bottom of your library.
+timing=main
+oracle=Draw three cards, then put a card from your hand on the bottom of your library.

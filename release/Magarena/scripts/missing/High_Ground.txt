@@ -1,0 +1,9 @@
+name=High Ground
+url=http://magiccards.info/query?q=%21High+Ground
+image=http://mtgimage.com/card/high%20ground.jpg
+rarity=U
+type=Enchantment
+cost={W}
+ability=Each creature you control can block an additional creature.
+timing=main
+oracle=Each creature you control can block an additional creature.

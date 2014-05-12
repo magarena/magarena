@@ -1,0 +1,10 @@
+name=Falling Timber
+url=http://magiccards.info/query?q=%21Falling+Timber
+image=http://mtgimage.com/card/falling%20timber.jpg
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Kicker—Sacrifice a land.;\
+        Prevent all combat damage target creature would deal this turn. If SN was kicked, prevent all combat damage another target creature would deal this turn.
+timing=removal
+oracle=Kicker—Sacrifice a land.. Prevent all combat damage target creature would deal this turn. If Falling Timber was kicked, prevent all combat damage another target creature would deal this turn.

@@ -1,0 +1,11 @@
+name=Noxious Toad
+url=http://magiccards.info/query?q=%21Noxious+Toad
+image=http://mtgimage.com/card/noxious%20toad.jpg
+rarity=U
+type=Creature
+subtype=Frog
+cost={2}{B}
+pt=1/1
+ability=When SN dies, each opponent discards a card.
+timing=main
+oracle=When Noxious Toad dies, each opponent discards a card.

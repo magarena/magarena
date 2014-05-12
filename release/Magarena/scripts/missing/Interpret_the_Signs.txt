@@ -1,0 +1,9 @@
+name=Interpret the Signs
+url=http://magiccards.info/query?q=%21Interpret+the+Signs
+image=http://mtgimage.com/card/interpret%20the%20signs.jpg
+rarity=U
+type=Sorcery
+cost={5}{U}
+effect=Scry 3, then reveal the top card of your library. Draw cards equal to that card's converted mana cost.
+timing=main
+oracle=Scry 3, then reveal the top card of your library. Draw cards equal to that card's converted mana cost.

@@ -1,0 +1,9 @@
+name=Final Judgment
+url=http://magiccards.info/query?q=%21Final+Judgment
+image=http://mtgimage.com/card/final%20judgment.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}{W}
+effect=Exile all creatures.
+timing=main
+oracle=Exile all creatures.

@@ -1,0 +1,12 @@
+name=Misthollow Griffin
+url=http://magiccards.info/query?q=%21Misthollow+Griffin
+image=http://mtgimage.com/card/misthollow%20griffin.jpg
+rarity=M
+type=Creature
+subtype=Griffin
+cost={2}{U}{U}
+pt=3/3
+ability=Flying;\
+        You may cast SN from exile.
+timing=main
+oracle=Flying. You may cast Misthollow Griffin from exile.

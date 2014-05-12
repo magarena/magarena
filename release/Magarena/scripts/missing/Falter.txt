@@ -1,0 +1,9 @@
+name=Falter
+url=http://magiccards.info/query?q=%21Falter
+image=http://mtgimage.com/card/falter.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Creatures without flying can't block this turn.
+timing=removal
+oracle=Creatures without flying can't block this turn.

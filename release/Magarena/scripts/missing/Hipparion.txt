@@ -1,0 +1,11 @@
+name=Hipparion
+url=http://magiccards.info/query?q=%21Hipparion
+image=http://mtgimage.com/card/hipparion.jpg
+rarity=U
+type=Creature
+subtype=Horse
+cost={1}{W}
+pt=1/3
+ability=SN can't block creatures with power 3 or greater unless you pay {1}.
+timing=main
+oracle=Hipparion can't block creatures with power 3 or greater unless you pay {1}.

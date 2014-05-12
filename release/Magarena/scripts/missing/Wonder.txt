@@ -1,0 +1,12 @@
+name=Wonder
+url=http://magiccards.info/query?q=%21Wonder
+image=http://mtgimage.com/card/wonder.jpg
+rarity=U
+type=Creature
+subtype=Incarnation
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        As long as SN is in your graveyard and you control an Island, creatures you control have flying.
+timing=main
+oracle=Flying. As long as Wonder is in your graveyard and you control an Island, creatures you control have flying.

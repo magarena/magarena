@@ -1,0 +1,13 @@
+name=Shimmering Efreet
+url=http://magiccards.info/query?q=%21Shimmering+Efreet
+image=http://mtgimage.com/card/shimmering%20efreet.jpg
+rarity=U
+type=Creature
+subtype=Efreet
+cost={2}{U}
+pt=2/2
+ability=Flying;\
+        Phasing;\
+        Whenever SN phases in, target creature phases out.
+timing=main
+oracle=Flying. Phasing. Whenever Shimmering Efreet phases in, target creature phases out.

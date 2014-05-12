@@ -1,0 +1,11 @@
+name=Duct Crawler
+url=http://magiccards.info/query?q=%21Duct+Crawler
+image=http://mtgimage.com/card/duct%20crawler.jpg
+rarity=C
+type=Creature
+subtype=Insect
+cost={R}
+pt=1/1
+ability={1}{R}: Target creature can't block SN this turn.
+timing=main
+oracle={1}{R}: Target creature can't block Duct Crawler this turn.

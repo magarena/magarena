@@ -1,0 +1,11 @@
+name=Phyrexian Soulgorger
+url=http://magiccards.info/query?q=%21Phyrexian+Soulgorger
+image=http://mtgimage.com/card/phyrexian%20soulgorger.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=8/8
+ability=Cumulative upkeep—Sacrifice a creature.
+timing=main
+oracle=Cumulative upkeep—Sacrifice a creature.

@@ -1,0 +1,11 @@
+name=Burning-Tree Shaman
+url=http://magiccards.info/query?q=%21Burning-Tree+Shaman
+image=http://mtgimage.com/card/burning-tree%20shaman.jpg
+rarity=R
+type=Creature
+subtype=Centaur,Shaman
+cost={1}{R}{G}
+pt=3/4
+ability=Whenever a player activates an ability that isn't a mana ability, SN deals 1 damage to that player.
+timing=main
+oracle=Whenever a player activates an ability that isn't a mana ability, Burning-Tree Shaman deals 1 damage to that player.

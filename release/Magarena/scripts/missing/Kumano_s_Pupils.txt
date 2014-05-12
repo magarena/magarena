@@ -1,0 +1,11 @@
+name=Kumano's Pupils
+url=http://magiccards.info/query?q=%21Kumano%27s+Pupils
+image=http://mtgimage.com/card/kumano%27s%20pupils.jpg
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={4}{R}
+pt=3/3
+ability=If a creature dealt damage by SN this turn would die, exile it instead.
+timing=main
+oracle=If a creature dealt damage by Kumano's Pupils this turn would die, exile it instead.

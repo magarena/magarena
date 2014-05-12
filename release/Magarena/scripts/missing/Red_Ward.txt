@@ -1,0 +1,11 @@
+name=Red Ward
+url=http://magiccards.info/query?q=%21Red+Ward
+image=http://mtgimage.com/card/red%20ward.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        Enchanted creature has protection from red. This effect doesn't remove SN.
+timing=main
+oracle=Enchant creature. Enchanted creature has protection from red. This effect doesn't remove Red Ward.

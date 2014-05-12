@@ -1,0 +1,12 @@
+name=Isperia the Inscrutable
+url=http://magiccards.info/query?q=%21Isperia+the+Inscrutable
+image=http://mtgimage.com/card/isperia%20the%20inscrutable.jpg
+rarity=R
+type=Creature
+subtype=Sphinx
+cost={1}{W}{W}{U}{U}
+pt=3/6
+ability=Flying;\
+        Whenever SN deals combat damage to a player, name a card. That player reveals his or her hand. If he or she reveals the named card, search your library for a creature card with flying, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=Flying. Whenever Isperia the Inscrutable deals combat damage to a player, name a card. That player reveals his or her hand. If he or she reveals the named card, search your library for a creature card with flying, reveal it, put it into your hand, then shuffle your library.

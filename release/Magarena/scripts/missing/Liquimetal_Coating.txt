@@ -1,0 +1,9 @@
+name=Liquimetal Coating
+url=http://magiccards.info/query?q=%21Liquimetal+Coating
+image=http://mtgimage.com/card/liquimetal%20coating.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={T}: Target permanent becomes an artifact in addition to its other types until end of turn.
+timing=main
+oracle={T}: Target permanent becomes an artifact in addition to its other types until end of turn.

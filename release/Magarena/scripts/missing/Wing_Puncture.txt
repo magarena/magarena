@@ -1,0 +1,9 @@
+name=Wing Puncture
+url=http://magiccards.info/query?q=%21Wing+Puncture
+image=http://mtgimage.com/card/wing%20puncture.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Target creature you control deals damage equal to its power to target creature with flying.
+timing=removal
+oracle=Target creature you control deals damage equal to its power to target creature with flying.

@@ -1,0 +1,12 @@
+name=Shapesharer
+url=http://magiccards.info/query?q=%21Shapesharer
+image=http://mtgimage.com/card/shapesharer.jpg
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={1}{U}
+pt=1/1
+ability=Changeling;\
+        {2}{U}: Target Shapeshifter becomes a copy of target creature until your next turn.
+timing=main
+oracle=Changeling. {2}{U}: Target Shapeshifter becomes a copy of target creature until your next turn.

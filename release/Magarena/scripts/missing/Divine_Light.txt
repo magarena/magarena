@@ -1,0 +1,9 @@
+name=Divine Light
+url=http://magiccards.info/query?q=%21Divine+Light
+image=http://mtgimage.com/card/divine%20light.jpg
+rarity=C
+type=Sorcery
+cost={W}
+effect=Prevent all damage that would be dealt this turn to creatures you control.
+timing=main
+oracle=Prevent all damage that would be dealt this turn to creatures you control.

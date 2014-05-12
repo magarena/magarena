@@ -1,0 +1,9 @@
+name=Gamble
+url=http://magiccards.info/query?q=%21Gamble
+image=http://mtgimage.com/card/gamble.jpg
+rarity=R
+type=Sorcery
+cost={R}
+effect=Search your library for a card, put that card into your hand, discard a card at random, then shuffle your library.
+timing=main
+oracle=Search your library for a card, put that card into your hand, discard a card at random, then shuffle your library.

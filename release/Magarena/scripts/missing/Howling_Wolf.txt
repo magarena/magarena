@@ -1,0 +1,11 @@
+name=Howling Wolf
+url=http://magiccards.info/query?q=%21Howling+Wolf
+image=http://mtgimage.com/card/howling%20wolf.jpg
+rarity=C
+type=Creature
+subtype=Wolf
+cost={2}{G}{G}
+pt=2/2
+ability=When SN enters the battlefield, you may search your library for up to three cards named SN, reveal them, and put them into your hand. If you do, shuffle your library.
+timing=main
+oracle=When Howling Wolf enters the battlefield, you may search your library for up to three cards named Howling Wolf, reveal them, and put them into your hand. If you do, shuffle your library.

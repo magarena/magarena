@@ -1,0 +1,11 @@
+name=Grollub
+url=http://magiccards.info/query?q=%21Grollub
+image=http://mtgimage.com/card/grollub.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={2}{B}
+pt=3/3
+ability=Whenever SN is dealt damage, each opponent gains that much life.
+timing=main
+oracle=Whenever Grollub is dealt damage, each opponent gains that much life.

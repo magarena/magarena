@@ -1,0 +1,11 @@
+name=Gruul Ragebeast
+url=http://magiccards.info/query?q=%21Gruul+Ragebeast
+image=http://mtgimage.com/card/gruul%20ragebeast.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={5}{R}{G}
+pt=6/6
+ability=Whenever SN or another creature enters the battlefield under your control, that creature fights target creature an opponent controls.
+timing=main
+oracle=Whenever Gruul Ragebeast or another creature enters the battlefield under your control, that creature fights target creature an opponent controls.

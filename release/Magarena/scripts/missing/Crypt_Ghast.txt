@@ -1,0 +1,12 @@
+name=Crypt Ghast
+url=http://magiccards.info/query?q=%21Crypt+Ghast
+image=http://mtgimage.com/card/crypt%20ghast.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={3}{B}
+pt=2/2
+ability=Extort;\
+        Whenever you tap a Swamp for mana, add {B} to your mana pool.
+timing=main
+oracle=Extort. Whenever you tap a Swamp for mana, add {B} to your mana pool.

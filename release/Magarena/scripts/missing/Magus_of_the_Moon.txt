@@ -1,0 +1,11 @@
+name=Magus of the Moon
+url=http://magiccards.info/query?q=%21Magus+of+the+Moon
+image=http://mtgimage.com/card/magus%20of%20the%20moon.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{R}
+pt=2/2
+ability=Nonbasic lands are Mountains.
+timing=main
+oracle=Nonbasic lands are Mountains.

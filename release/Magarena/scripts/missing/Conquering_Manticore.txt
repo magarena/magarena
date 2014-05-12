@@ -1,0 +1,12 @@
+name=Conquering Manticore
+url=http://magiccards.info/query?q=%21Conquering+Manticore
+image=http://mtgimage.com/card/conquering%20manticore.jpg
+rarity=R
+type=Creature
+subtype=Manticore
+cost={4}{R}{R}
+pt=5/5
+ability=Flying;\
+        When SN enters the battlefield, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.
+timing=main
+oracle=Flying. When Conquering Manticore enters the battlefield, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.

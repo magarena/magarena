@@ -1,0 +1,9 @@
+name=Turn the Tables
+url=http://magiccards.info/query?q=%21Turn+the+Tables
+image=http://mtgimage.com/card/turn%20the%20tables.jpg
+rarity=R
+type=Instant
+cost={3}{W}{W}
+effect=All combat damage that would be dealt to you this turn is dealt to target attacking creature instead.
+timing=removal
+oracle=All combat damage that would be dealt to you this turn is dealt to target attacking creature instead.

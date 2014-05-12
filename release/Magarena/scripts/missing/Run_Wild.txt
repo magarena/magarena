@@ -1,0 +1,9 @@
+name=Run Wild
+url=http://magiccards.info/query?q=%21Run+Wild
+image=http://mtgimage.com/card/run%20wild.jpg
+rarity=U
+type=Instant
+cost={G}
+effect=Until end of turn, target creature gains trample and "{G}: Regenerate this creature."
+timing=removal
+oracle=Until end of turn, target creature gains trample and "{G}: Regenerate this creature."

@@ -1,0 +1,11 @@
+name=Hasran Ogress
+url=http://magiccards.info/query?q=%21Hasran+Ogress
+image=http://mtgimage.com/card/hasran%20ogress1.jpg
+rarity=C
+type=Creature
+subtype=Ogre
+cost={B}{B}
+pt=3/2
+ability=Whenever SN attacks, it deals 3 damage to you unless you pay {2}.
+timing=main
+oracle=Whenever Hasran Ogress attacks, it deals 3 damage to you unless you pay {2}.

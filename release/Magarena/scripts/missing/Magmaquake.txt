@@ -1,0 +1,9 @@
+name=Magmaquake
+url=http://magiccards.info/query?q=%21Magmaquake
+image=http://mtgimage.com/card/magmaquake.jpg
+rarity=R
+type=Instant
+cost={X}{R}{R}
+effect=SN deals X damage to each creature without flying and each planeswalker.
+timing=removal
+oracle=Magmaquake deals X damage to each creature without flying and each planeswalker.

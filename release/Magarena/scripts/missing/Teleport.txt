@@ -1,0 +1,10 @@
+name=Teleport
+url=http://magiccards.info/query?q=%21Teleport
+image=http://mtgimage.com/card/teleport.jpg
+rarity=R
+type=Instant
+cost={U}{U}{U}
+effect=Cast SN only during the declare attackers step.;\
+        Target creature can't be blocked this turn.
+timing=removal
+oracle=Cast Teleport only during the declare attackers step. Target creature can't be blocked this turn.

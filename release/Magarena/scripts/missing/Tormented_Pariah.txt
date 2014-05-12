@@ -1,0 +1,11 @@
+name=Tormented Pariah
+url=http://magiccards.info/query?q=%21Tormented+Pariah
+image=http://mtgimage.com/card/tormented%20pariah.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior,Werewolf
+cost={3}{R}
+pt=3/2
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Tormented Pariah.

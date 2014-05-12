@@ -1,0 +1,12 @@
+name=Jace's Mindseeker
+url=http://magiccards.info/query?q=%21Jace%27s+Mindseeker
+image=http://mtgimage.com/card/jace%27s%20mindseeker.jpg
+rarity=R
+type=Creature
+subtype=Fish,Illusion
+cost={4}{U}{U}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, target opponent puts the top five cards of his or her library into his or her graveyard. You may cast an instant or sorcery card from among them without paying its mana cost.
+timing=main
+oracle=Flying. When Jace's Mindseeker enters the battlefield, target opponent puts the top five cards of his or her library into his or her graveyard. You may cast an instant or sorcery card from among them without paying its mana cost.

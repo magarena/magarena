@@ -1,0 +1,12 @@
+name=Rune-Scarred Demon
+url=http://magiccards.info/query?q=%21Rune-Scarred+Demon
+image=http://mtgimage.com/card/rune-scarred%20demon.jpg
+rarity=R
+type=Creature
+subtype=Demon
+cost={5}{B}{B}
+pt=6/6
+ability=Flying;\
+        When SN enters the battlefield, search your library for a card, put it into your hand, then shuffle your library.
+timing=main
+oracle=Flying. When Rune-Scarred Demon enters the battlefield, search your library for a card, put it into your hand, then shuffle your library.

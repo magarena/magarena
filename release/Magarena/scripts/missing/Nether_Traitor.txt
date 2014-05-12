@@ -1,0 +1,13 @@
+name=Nether Traitor
+url=http://magiccards.info/query?q=%21Nether+Traitor
+image=http://mtgimage.com/card/nether%20traitor.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={B}{B}
+pt=1/1
+ability=Haste;\
+        Shadow;\
+        Whenever another creature is put into your graveyard from the battlefield, you may pay {B}. If you do, return SN from your graveyard to the battlefield.
+timing=main
+oracle=Haste. Shadow. Whenever another creature is put into your graveyard from the battlefield, you may pay {B}. If you do, return Nether Traitor from your graveyard to the battlefield.

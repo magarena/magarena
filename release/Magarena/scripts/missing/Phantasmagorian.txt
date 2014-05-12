@@ -1,0 +1,12 @@
+name=Phantasmagorian
+url=http://magiccards.info/query?q=%21Phantasmagorian
+image=http://mtgimage.com/card/phantasmagorian.jpg
+rarity=U
+type=Creature
+subtype=Horror
+cost={5}{B}{B}
+pt=6/6
+ability=When you cast SN, any player may discard three cards. If a player does, counter SN.;\
+        Discard three cards: Return SN from your graveyard to your hand.
+timing=main
+oracle=When you cast Phantasmagorian, any player may discard three cards. If a player does, counter Phantasmagorian. Discard three cards: Return Phantasmagorian from your graveyard to your hand.

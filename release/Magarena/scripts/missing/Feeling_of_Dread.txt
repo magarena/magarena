@@ -1,0 +1,10 @@
+name=Feeling of Dread
+url=http://magiccards.info/query?q=%21Feeling+of+Dread
+image=http://mtgimage.com/card/feeling%20of%20dread.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Tap up to two target creatures.;\
+        Flashback {1}{U}
+timing=removal
+oracle=Tap up to two target creatures. Flashback {1}{U}

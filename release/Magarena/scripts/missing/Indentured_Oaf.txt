@@ -1,0 +1,11 @@
+name=Indentured Oaf
+url=http://magiccards.info/query?q=%21Indentured+Oaf
+image=http://mtgimage.com/card/indentured%20oaf.jpg
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={3}{R}
+pt=4/3
+ability=Prevent all damage that SN would deal to red creatures.
+timing=main
+oracle=Prevent all damage that Indentured Oaf would deal to red creatures.

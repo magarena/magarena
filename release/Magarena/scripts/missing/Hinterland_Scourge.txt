@@ -1,0 +1,11 @@
+name=Hinterland Scourge
+url=http://magiccards.info/query?q=%21Hinterland+Scourge
+image=http://mtgimage.com/card/hinterland%20scourge.jpg
+rarity=C
+type=Creature
+subtype=Werewolf
+pt=3/2
+ability=SN must be blocked if able.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Hinterland Scourge must be blocked if able. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Hinterland Scourge.

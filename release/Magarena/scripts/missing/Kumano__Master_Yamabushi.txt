@@ -1,0 +1,12 @@
+name=Kumano, Master Yamabushi
+url=http://magiccards.info/query?q=%21Kumano%2C+Master+Yamabushi
+image=http://mtgimage.com/card/kumano%2C%20master%20yamabushi.jpg
+rarity=R
+type=Creature
+subtype=Human,Shaman
+cost={3}{R}{R}
+pt=4/4
+ability={1}{R}: SN deals 1 damage to target creature or player.;\
+        If a creature dealt damage by Kumano this turn would die, exile it instead.
+timing=main
+oracle={1}{R}: Kumano, Master Yamabushi deals 1 damage to target creature or player. If a creature dealt damage by Kumano this turn would die, exile it instead.

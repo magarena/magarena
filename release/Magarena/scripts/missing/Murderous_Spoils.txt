@@ -1,0 +1,9 @@
+name=Murderous Spoils
+url=http://magiccards.info/query?q=%21Murderous+Spoils
+image=http://mtgimage.com/card/murderous%20spoils.jpg
+rarity=U
+type=Instant
+cost={5}{B}
+effect=Destroy target nonblack creature. It can't be regenerated. You gain control of all Equipment that was attached to it.
+timing=removal
+oracle=Destroy target nonblack creature. It can't be regenerated. You gain control of all Equipment that was attached to it.

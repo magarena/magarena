@@ -1,0 +1,10 @@
+name=Krosan Grip
+url=http://magiccards.info/query?q=%21Krosan+Grip
+image=http://mtgimage.com/card/krosan%20grip.jpg
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Split second;\
+        Destroy target artifact or enchantment.
+timing=removal
+oracle=Split second. Destroy target artifact or enchantment.

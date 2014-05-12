@@ -1,0 +1,11 @@
+name=Nemesis Mask
+url=http://magiccards.info/query?q=%21Nemesis+Mask
+image=http://mtgimage.com/card/nemesis%20mask.jpg
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=All creatures able to block equipped creature do so.;\
+        Equip {3}
+timing=main
+oracle=All creatures able to block equipped creature do so. Equip {3}

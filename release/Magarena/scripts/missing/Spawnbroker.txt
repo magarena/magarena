@@ -1,0 +1,11 @@
+name=Spawnbroker
+url=http://magiccards.info/query?q=%21Spawnbroker
+image=http://mtgimage.com/card/spawnbroker.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/1
+ability=When SN enters the battlefield, you may exchange control of target creature you control and target creature with power less than or equal to that creature's power an opponent controls.
+timing=main
+oracle=When Spawnbroker enters the battlefield, you may exchange control of target creature you control and target creature with power less than or equal to that creature's power an opponent controls.

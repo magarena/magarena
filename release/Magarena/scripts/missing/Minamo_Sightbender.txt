@@ -1,0 +1,11 @@
+name=Minamo Sightbender
+url=http://magiccards.info/query?q=%21Minamo+Sightbender
+image=http://mtgimage.com/card/minamo%20sightbender.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/2
+ability={X}, {T}: Target creature with power X or less can't be blocked this turn.
+timing=main
+oracle={X}, {T}: Target creature with power X or less can't be blocked this turn.

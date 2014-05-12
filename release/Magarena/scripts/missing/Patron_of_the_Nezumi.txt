@@ -1,0 +1,12 @@
+name=Patron of the Nezumi
+url=http://magiccards.info/query?q=%21Patron+of+the+Nezumi
+image=http://mtgimage.com/card/patron%20of%20the%20nezumi.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={5}{B}{B}
+pt=6/6
+ability=Rat offering;\
+        Whenever a permanent is put into an opponent's graveyard, that player loses 1 life.
+timing=main
+oracle=Rat offering. Whenever a permanent is put into an opponent's graveyard, that player loses 1 life.

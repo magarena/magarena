@@ -1,0 +1,10 @@
+name=Pursuit of Knowledge
+url=http://magiccards.info/query?q=%21Pursuit+of+Knowledge
+image=http://mtgimage.com/card/pursuit%20of%20knowledge.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}
+ability=If you would draw a card, you may put a study counter on SN instead.;\
+        Remove three study counters from SN, Sacrifice SN: Draw seven cards.
+timing=main
+oracle=If you would draw a card, you may put a study counter on Pursuit of Knowledge instead. Remove three study counters from Pursuit of Knowledge, Sacrifice Pursuit of Knowledge: Draw seven cards.

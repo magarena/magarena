@@ -1,0 +1,9 @@
+name=Thoughtbind
+url=http://magiccards.info/query?q=%21Thoughtbind
+image=http://mtgimage.com/card/thoughtbind.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target spell with converted mana cost 4 or less.
+timing=removal
+oracle=Counter target spell with converted mana cost 4 or less.

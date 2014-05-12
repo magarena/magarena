@@ -1,0 +1,14 @@
+name=Volatile Rig
+url=http://magiccards.info/query?q=%21Volatile+Rig
+image=http://mtgimage.com/card/volatile%20rig.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={4}
+pt=4/4
+ability=Trample;\
+        SN attacks each turn if able.;\
+        Whenever SN is dealt damage, flip a coin. If you lose the flip, sacrifice SN.;\
+        When SN dies, flip a coin. If you lose the flip, it deals 4 damage to each creature and each player.
+timing=main
+oracle=Trample. Volatile Rig attacks each turn if able. Whenever Volatile Rig is dealt damage, flip a coin. If you lose the flip, sacrifice Volatile Rig. When Volatile Rig dies, flip a coin. If you lose the flip, it deals 4 damage to each creature and each player.

@@ -1,0 +1,11 @@
+name=Gangrenous Goliath
+url=http://magiccards.info/query?q=%21Gangrenous+Goliath
+image=http://mtgimage.com/card/gangrenous%20goliath.jpg
+rarity=R
+type=Creature
+subtype=Zombie,Giant
+cost={3}{B}{B}
+pt=4/4
+ability=Tap three untapped Clerics you control: Return SN from your graveyard to your hand.
+timing=main
+oracle=Tap three untapped Clerics you control: Return Gangrenous Goliath from your graveyard to your hand.

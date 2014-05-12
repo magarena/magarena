@@ -1,0 +1,10 @@
+name=Saltcrusted Steppe
+url=http://magiccards.info/query?q=%21Saltcrusted+Steppe
+image=http://mtgimage.com/card/saltcrusted%20steppe.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {1}, {T}: Put a storage counter on SN.;\
+        {1}, Remove X storage counters from SN: Add X mana in any combination of {G} and/or {W} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {1}, {T}: Put a storage counter on Saltcrusted Steppe. {1}, Remove X storage counters from Saltcrusted Steppe: Add X mana in any combination of {G} and/or {W} to your mana pool.

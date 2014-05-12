@@ -1,0 +1,11 @@
+name=Plaguebearer
+url=http://magiccards.info/query?q=%21Plaguebearer
+image=http://mtgimage.com/card/plaguebearer.jpg
+rarity=R
+type=Creature
+subtype=Zombie
+cost={1}{B}
+pt=1/1
+ability={X}{X}{B}: Destroy target nonblack creature with converted mana cost X.
+timing=main
+oracle={X}{X}{B}: Destroy target nonblack creature with converted mana cost X.

@@ -1,0 +1,11 @@
+name=Taoist Mystic
+url=http://magiccards.info/query?q=%21Taoist+Mystic
+image=http://mtgimage.com/card/taoist%20mystic.jpg
+rarity=R
+type=Creature
+subtype=Human,Mystic
+cost={2}{G}
+pt=2/2
+ability=SN can't be blocked by creatures with horsemanship.
+timing=main
+oracle=Taoist Mystic can't be blocked by creatures with horsemanship.

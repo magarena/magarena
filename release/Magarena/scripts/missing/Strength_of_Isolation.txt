@@ -1,0 +1,12 @@
+name=Strength of Isolation
+url=http://magiccards.info/query?q=%21Strength+of+Isolation
+image=http://mtgimage.com/card/strength%20of%20isolation.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+2 and has protection from black.;\
+        Madness {W}
+timing=main
+oracle=Enchant creature. Enchanted creature gets +1/+2 and has protection from black. Madness {W}

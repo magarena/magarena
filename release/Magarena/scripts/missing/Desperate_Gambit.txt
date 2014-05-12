@@ -1,0 +1,9 @@
+name=Desperate Gambit
+url=http://magiccards.info/query?q=%21Desperate+Gambit
+image=http://mtgimage.com/card/desperate%20gambit.jpg
+rarity=U
+type=Instant
+cost={R}
+effect=Choose a source you control and flip a coin. If you win the flip, the next time that source would deal damage this turn, it deals double that damage instead. If you lose the flip, the next time it would deal damage this turn, prevent that damage.
+timing=removal
+oracle=Choose a source you control and flip a coin. If you win the flip, the next time that source would deal damage this turn, it deals double that damage instead. If you lose the flip, the next time it would deal damage this turn, prevent that damage.

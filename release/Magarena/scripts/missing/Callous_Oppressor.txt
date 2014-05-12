@@ -1,0 +1,13 @@
+name=Callous Oppressor
+url=http://magiccards.info/query?q=%21Callous+Oppressor
+image=http://mtgimage.com/card/callous%20oppressor.jpg
+rarity=R
+type=Creature
+subtype=Cephalid
+cost={1}{U}{U}
+pt=1/2
+ability=You may choose not to untap SN during your untap step.;\
+        As SN enters the battlefield, an opponent chooses a creature type.;\
+        {T}: Gain control of target creature that isn't of the chosen type for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Callous Oppressor during your untap step. As Callous Oppressor enters the battlefield, an opponent chooses a creature type. {T}: Gain control of target creature that isn't of the chosen type for as long as Callous Oppressor remains tapped.

@@ -1,0 +1,12 @@
+name=Serpentine Basilisk
+url=http://magiccards.info/query?q=%21Serpentine+Basilisk
+image=http://mtgimage.com/card/serpentine%20basilisk.jpg
+rarity=U
+type=Creature
+subtype=Basilisk
+cost={2}{G}{G}
+pt=2/3
+ability=Whenever SN deals combat damage to a creature, destroy that creature at end of combat.;\
+        Morph {1}{G}{G}
+timing=main
+oracle=Whenever Serpentine Basilisk deals combat damage to a creature, destroy that creature at end of combat. Morph {1}{G}{G}

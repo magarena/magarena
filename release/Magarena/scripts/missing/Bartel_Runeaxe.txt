@@ -1,0 +1,12 @@
+name=Bartel Runeaxe
+url=http://magiccards.info/query?q=%21Bartel+Runeaxe
+image=http://mtgimage.com/card/bartel%20runeaxe.jpg
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+cost={3}{B}{R}{G}
+pt=6/5
+ability=Vigilance;\
+        SN can't be the target of Aura spells.
+timing=main
+oracle=Vigilance. Bartel Runeaxe can't be the target of Aura spells.

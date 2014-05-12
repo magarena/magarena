@@ -1,0 +1,11 @@
+name=Thundering Wurm
+url=http://magiccards.info/query?q=%21Thundering+Wurm
+image=http://mtgimage.com/card/thundering%20wurm.jpg
+rarity=R
+type=Creature
+subtype=Wurm
+cost={2}{G}
+pt=4/4
+ability=When SN enters the battlefield, sacrifice it unless you discard a land card.
+timing=main
+oracle=When Thundering Wurm enters the battlefield, sacrifice it unless you discard a land card.

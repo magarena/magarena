@@ -1,0 +1,9 @@
+name=Samite Sanctuary
+url=http://magiccards.info/query?q=%21Samite+Sanctuary
+image=http://mtgimage.com/card/samite%20sanctuary.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability={2}: Prevent the next 1 damage that would be dealt to target creature this turn. Any player may activate this ability.
+timing=main
+oracle={2}: Prevent the next 1 damage that would be dealt to target creature this turn. Any player may activate this ability.

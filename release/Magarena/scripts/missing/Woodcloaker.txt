@@ -1,0 +1,12 @@
+name=Woodcloaker
+url=http://magiccards.info/query?q=%21Woodcloaker
+image=http://mtgimage.com/card/woodcloaker.jpg
+rarity=C
+type=Creature
+subtype=Elf
+cost={5}{G}
+pt=3/3
+ability=Morph {2}{G}{G};\
+        When SN is turned face up, target creature gains trample until end of turn.
+timing=main
+oracle=Morph {2}{G}{G}. When Woodcloaker is turned face up, target creature gains trample until end of turn.

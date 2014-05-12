@@ -1,0 +1,13 @@
+name=Liege of the Axe
+url=http://magiccards.info/query?q=%21Liege+of+the+Axe
+image=http://mtgimage.com/card/liege%20of%20the%20axe.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=2/3
+ability=Vigilance;\
+        Morph {1}{W};\
+        When SN is turned face up, untap it.
+timing=main
+oracle=Vigilance. Morph {1}{W}. When Liege of the Axe is turned face up, untap it.

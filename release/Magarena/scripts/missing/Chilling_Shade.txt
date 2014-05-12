@@ -1,0 +1,12 @@
+name=Chilling Shade
+url=http://magiccards.info/query?q=%21Chilling+Shade
+image=http://mtgimage.com/card/chilling%20shade.jpg
+rarity=C
+type=Creature
+subtype=Shade
+cost={2}{B}
+pt=1/1
+ability=Flying;\
+        {S}: SN gets +1/+1 until end of turn.
+timing=main
+oracle=Flying. {S}: Chilling Shade gets +1/+1 until end of turn.

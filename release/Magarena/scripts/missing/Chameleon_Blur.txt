@@ -1,0 +1,9 @@
+name=Chameleon Blur
+url=http://magiccards.info/query?q=%21Chameleon+Blur
+image=http://mtgimage.com/card/chameleon%20blur.jpg
+rarity=C
+type=Instant
+cost={3}{G}
+effect=Prevent all damage that creatures would deal to players this turn.
+timing=removal
+oracle=Prevent all damage that creatures would deal to players this turn.

@@ -1,0 +1,11 @@
+name=Sundering Titan
+url=http://magiccards.info/query?q=%21Sundering+Titan
+image=http://mtgimage.com/card/sundering%20titan.jpg
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={8}
+pt=7/10
+ability=When SN enters the battlefield or leaves the battlefield, choose a land of each basic land type, then destroy those lands.
+timing=main
+oracle=When Sundering Titan enters the battlefield or leaves the battlefield, choose a land of each basic land type, then destroy those lands.

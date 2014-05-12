@@ -1,0 +1,9 @@
+name=Gruul Signet
+url=http://magiccards.info/query?q=%21Gruul+Signet
+image=http://mtgimage.com/card/gruul%20signet.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability={1}, {T}: Add {R}{G} to your mana pool.
+timing=main
+oracle={1}, {T}: Add {R}{G} to your mana pool.

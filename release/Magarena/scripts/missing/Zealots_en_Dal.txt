@@ -1,0 +1,11 @@
+name=Zealots en-Dal
+url=http://magiccards.info/query?q=%21Zealots+en-Dal
+image=http://mtgimage.com/card/zealots%20en-dal.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=2/4
+ability=At the beginning of your upkeep, if all nonland permanents you control are white, you gain 1 life.
+timing=main
+oracle=At the beginning of your upkeep, if all nonland permanents you control are white, you gain 1 life.

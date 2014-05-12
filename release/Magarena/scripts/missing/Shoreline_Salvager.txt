@@ -1,0 +1,11 @@
+name=Shoreline Salvager
+url=http://magiccards.info/query?q=%21Shoreline+Salvager
+image=http://mtgimage.com/card/shoreline%20salvager.jpg
+rarity=U
+type=Creature
+subtype=Surrakar
+cost={3}{B}
+pt=3/3
+ability=Whenever SN deals combat damage to a player, if you control an Island, you may draw a card.
+timing=main
+oracle=Whenever Shoreline Salvager deals combat damage to a player, if you control an Island, you may draw a card.

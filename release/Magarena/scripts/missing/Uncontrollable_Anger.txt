@@ -1,0 +1,12 @@
+name=Uncontrollable Anger
+url=http://magiccards.info/query?q=%21Uncontrollable+Anger
+image=http://mtgimage.com/card/uncontrollable%20anger.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}{R}
+ability=Flash;\
+        Enchant creature;\
+        Enchanted creature gets +2/+2 and attacks each turn if able.
+timing=main
+oracle=Flash. Enchant creature. Enchanted creature gets +2/+2 and attacks each turn if able.

@@ -1,0 +1,12 @@
+name=Ruby Leech
+url=http://magiccards.info/query?q=%21Ruby+Leech
+image=http://mtgimage.com/card/ruby%20leech.jpg
+rarity=R
+type=Creature
+subtype=Leech
+cost={1}{R}
+pt=2/2
+ability=First strike;\
+        Red spells you cast cost {R} more to cast.
+timing=main
+oracle=First strike. Red spells you cast cost {R} more to cast.

@@ -1,0 +1,9 @@
+name=Order
+url=http://magiccards.info/query?q=%21Order
+image=http://mtgimage.com/card/orderchaos.jpg
+rarity=U
+type=Instant
+cost={3}{W}
+effect=Exile target attacking creature.
+timing=removal
+oracle=Exile target attacking creature.

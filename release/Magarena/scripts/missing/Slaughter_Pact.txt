@@ -1,0 +1,10 @@
+name=Slaughter Pact
+url=http://magiccards.info/query?q=%21Slaughter+Pact
+image=http://mtgimage.com/card/slaughter%20pact.jpg
+rarity=R
+type=Instant
+cost={0}
+effect=Destroy target nonblack creature.;\
+        At the beginning of your next upkeep, pay {2}{B}. If you don't, you lose the game.
+timing=removal
+oracle=Destroy target nonblack creature. At the beginning of your next upkeep, pay {2}{B}. If you don't, you lose the game.

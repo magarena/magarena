@@ -1,0 +1,9 @@
+name=Arcane Melee
+url=http://magiccards.info/query?q=%21Arcane+Melee
+image=http://mtgimage.com/card/arcane%20melee.jpg
+rarity=R
+type=Enchantment
+cost={4}{U}
+ability=Instant and sorcery spells cost {2} less to cast.
+timing=main
+oracle=Instant and sorcery spells cost {2} less to cast.

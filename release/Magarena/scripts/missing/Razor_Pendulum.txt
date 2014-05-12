@@ -1,0 +1,9 @@
+name=Razor Pendulum
+url=http://magiccards.info/query?q=%21Razor+Pendulum
+image=http://mtgimage.com/card/razor%20pendulum.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=At the beginning of each player's end step, if that player has 5 or less life, SN deals 2 damage to him or her.
+timing=main
+oracle=At the beginning of each player's end step, if that player has 5 or less life, Razor Pendulum deals 2 damage to him or her.

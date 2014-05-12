@@ -1,0 +1,9 @@
+name=Scroll of Origins
+url=http://magiccards.info/query?q=%21Scroll+of+Origins
+image=http://mtgimage.com/card/scroll%20of%20origins.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={2}, {T}: Draw a card if you have seven or more cards in hand.
+timing=main
+oracle={2}, {T}: Draw a card if you have seven or more cards in hand.

@@ -1,0 +1,11 @@
+name=Arc Mage
+url=http://magiccards.info/query?q=%21Arc+Mage
+image=http://mtgimage.com/card/arc%20mage.jpg
+rarity=U
+type=Creature
+subtype=Human,Spellshaper
+cost={2}{R}
+pt=2/2
+ability={2}{R}, {T}, Discard a card: SN deals 2 damage divided as you choose among one or two target creatures and/or players.
+timing=main
+oracle={2}{R}, {T}, Discard a card: Arc Mage deals 2 damage divided as you choose among one or two target creatures and/or players.

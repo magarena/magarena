@@ -1,0 +1,9 @@
+name=Withering Gaze
+url=http://magiccards.info/query?q=%21Withering+Gaze
+image=http://mtgimage.com/card/withering%20gaze.jpg
+rarity=U
+type=Sorcery
+cost={2}{U}
+effect=Target opponent reveals his or her hand. You draw a card for each Forest and green card in it.
+timing=main
+oracle=Target opponent reveals his or her hand. You draw a card for each Forest and green card in it.

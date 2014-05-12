@@ -1,0 +1,9 @@
+name=Mana Cylix
+url=http://magiccards.info/query?q=%21Mana+Cylix
+image=http://mtgimage.com/card/mana%20cylix.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={1}, {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle={1}, {T}: Add one mana of any color to your mana pool.

@@ -1,0 +1,9 @@
+name=Stifle
+url=http://magiccards.info/query?q=%21Stifle
+image=http://mtgimage.com/card/stifle.jpg
+rarity=R
+type=Instant
+cost={U}
+effect=Counter target activated or triggered ability.
+timing=removal
+oracle=Counter target activated or triggered ability.

@@ -1,0 +1,12 @@
+name=Lunar Avenger
+url=http://magiccards.info/query?q=%21Lunar+Avenger
+image=http://mtgimage.com/card/lunar%20avenger.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={7}
+pt=2/2
+ability=Sunburst;\
+        Remove a +1/+1 counter from SN: SN gains your choice of flying, first strike, or haste until end of turn.
+timing=main
+oracle=Sunburst. Remove a +1/+1 counter from Lunar Avenger: Lunar Avenger gains your choice of flying, first strike, or haste until end of turn.

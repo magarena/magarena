@@ -1,0 +1,10 @@
+name=Remove
+url=http://magiccards.info/query?q=%21Remove
+image=http://mtgimage.com/card/remove.jpg
+rarity=U
+type=Instant
+cost={U}
+effect=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
+        Return target attacking creature to its owner's hand.
+timing=removal
+oracle=Cast Remove only during the declare attackers step and only if you've been attacked this step. Return target attacking creature to its owner's hand.

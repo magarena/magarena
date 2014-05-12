@@ -1,0 +1,9 @@
+name=Stench of Evil
+url=http://magiccards.info/query?q=%21Stench+of+Evil
+image=http://mtgimage.com/card/stench%20of%20evil.jpg
+rarity=U
+type=Sorcery
+cost={2}{B}{B}
+effect=Destroy all Plains. For each land destroyed this way, SN deals 1 damage to that land's controller unless he or she pays {2}.
+timing=main
+oracle=Destroy all Plains. For each land destroyed this way, Stench of Evil deals 1 damage to that land's controller unless he or she pays {2}.

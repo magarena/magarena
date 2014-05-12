@@ -1,0 +1,11 @@
+name=Leyline of Punishment
+url=http://magiccards.info/query?q=%21Leyline+of+Punishment
+image=http://mtgimage.com/card/leyline%20of%20punishment.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}{R}
+ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
+        Players can't gain life.;\
+        Damage can't be prevented.
+timing=main
+oracle=If Leyline of Punishment is in your opening hand, you may begin the game with it on the battlefield. Players can't gain life. Damage can't be prevented.

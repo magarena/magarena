@@ -1,0 +1,9 @@
+name=Cryptic Command
+url=http://magiccards.info/query?q=%21Cryptic+Command
+image=http://mtgimage.com/card/cryptic%20command.jpg
+rarity=R
+type=Instant
+cost={1}{U}{U}{U}
+effect=Choose two — Counter target spell; or return target permanent to its owner's hand; or tap all creatures your opponents control; or draw a card.
+timing=removal
+oracle=Choose two — Counter target spell; or return target permanent to its owner's hand; or tap all creatures your opponents control; or draw a card.

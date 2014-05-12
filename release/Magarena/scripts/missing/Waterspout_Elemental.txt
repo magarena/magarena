@@ -1,0 +1,13 @@
+name=Waterspout Elemental
+url=http://magiccards.info/query?q=%21Waterspout+Elemental
+image=http://mtgimage.com/card/waterspout%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{U}{U}
+pt=3/4
+ability=Kicker {U};\
+        Flying;\
+        When SN enters the battlefield, if it was kicked, return all other creatures to their owners' hands and you skip your next turn.
+timing=main
+oracle=Kicker {U}. Flying. When Waterspout Elemental enters the battlefield, if it was kicked, return all other creatures to their owners' hands and you skip your next turn.

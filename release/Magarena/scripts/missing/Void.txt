@@ -1,0 +1,9 @@
+name=Void
+url=http://magiccards.info/query?q=%21Void
+image=http://mtgimage.com/card/void.jpg
+rarity=R
+type=Sorcery
+cost={3}{B}{R}
+effect=Choose a number. Destroy all artifacts and creatures with converted mana cost equal to that number. Then target player reveals his or her hand and discards all nonland cards with converted mana cost equal to the number.
+timing=main
+oracle=Choose a number. Destroy all artifacts and creatures with converted mana cost equal to that number. Then target player reveals his or her hand and discards all nonland cards with converted mana cost equal to the number.

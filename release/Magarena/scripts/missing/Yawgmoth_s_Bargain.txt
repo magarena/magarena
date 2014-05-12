@@ -1,0 +1,10 @@
+name=Yawgmoth's Bargain
+url=http://magiccards.info/query?q=%21Yawgmoth%27s+Bargain
+image=http://mtgimage.com/card/yawgmoth%27s%20bargain.jpg
+rarity=R
+type=Enchantment
+cost={4}{B}{B}
+ability=Skip your draw step.;\
+        Pay 1 life: Draw a card.
+timing=main
+oracle=Skip your draw step. Pay 1 life: Draw a card.

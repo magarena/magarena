@@ -1,0 +1,12 @@
+name=Gorilla Berserkers
+url=http://magiccards.info/query?q=%21Gorilla+Berserkers
+image=http://mtgimage.com/card/gorilla%20berserkers1.jpg
+rarity=C
+type=Creature
+subtype=Ape,Berserker
+cost={3}{G}{G}
+pt=2/3
+ability=Trample; rampage 2;\
+        SN can't be blocked except by three or more creatures.
+timing=main
+oracle=Trample; rampage 2. Gorilla Berserkers can't be blocked except by three or more creatures.

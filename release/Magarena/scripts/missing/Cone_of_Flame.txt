@@ -1,0 +1,9 @@
+name=Cone of Flame
+url=http://magiccards.info/query?q=%21Cone+of+Flame
+image=http://mtgimage.com/card/cone%20of%20flame.jpg
+rarity=U
+type=Sorcery
+cost={3}{R}{R}
+effect=SN deals 1 damage to target creature or player, 2 damage to another target creature or player, and 3 damage to a third target creature or player.
+timing=main
+oracle=Cone of Flame deals 1 damage to target creature or player, 2 damage to another target creature or player, and 3 damage to a third target creature or player.

@@ -1,0 +1,9 @@
+name=Repercussion
+url=http://magiccards.info/query?q=%21Repercussion
+image=http://mtgimage.com/card/repercussion.jpg
+rarity=R
+type=Enchantment
+cost={1}{R}{R}
+ability=Whenever a creature is dealt damage, SN deals that much damage to that creature's controller.
+timing=main
+oracle=Whenever a creature is dealt damage, Repercussion deals that much damage to that creature's controller.

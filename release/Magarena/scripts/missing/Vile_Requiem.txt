@@ -1,0 +1,10 @@
+name=Vile Requiem
+url=http://magiccards.info/query?q=%21Vile+Requiem
+image=http://mtgimage.com/card/vile%20requiem.jpg
+rarity=U
+type=Enchantment
+cost={2}{B}{B}
+ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
+        {1}{B}, Sacrifice SN: Destroy up to X target nonblack creatures, where X is the number of verse counters on SN. They can't be regenerated.
+timing=main
+oracle=At the beginning of your upkeep, you may put a verse counter on Vile Requiem. {1}{B}, Sacrifice Vile Requiem: Destroy up to X target nonblack creatures, where X is the number of verse counters on Vile Requiem. They can't be regenerated.

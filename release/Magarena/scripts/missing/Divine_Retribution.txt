@@ -1,0 +1,9 @@
+name=Divine Retribution
+url=http://magiccards.info/query?q=%21Divine+Retribution
+image=http://mtgimage.com/card/divine%20retribution.jpg
+rarity=R
+type=Instant
+cost={1}{W}
+effect=SN deals damage to target attacking creature equal to the number of attacking creatures.
+timing=removal
+oracle=Divine Retribution deals damage to target attacking creature equal to the number of attacking creatures.

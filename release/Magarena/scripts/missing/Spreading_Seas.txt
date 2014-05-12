@@ -1,0 +1,12 @@
+name=Spreading Seas
+url=http://magiccards.info/query?q=%21Spreading+Seas
+image=http://mtgimage.com/card/spreading%20seas.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant land;\
+        When SN enters the battlefield, draw a card.;\
+        Enchanted land is an Island.
+timing=main
+oracle=Enchant land. When Spreading Seas enters the battlefield, draw a card. Enchanted land is an Island.

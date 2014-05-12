@@ -1,0 +1,11 @@
+name=Sunrise Sovereign
+url=http://magiccards.info/query?q=%21Sunrise+Sovereign
+image=http://mtgimage.com/card/sunrise%20sovereign.jpg
+rarity=R
+type=Creature
+subtype=Giant,Warrior
+cost={5}{R}
+pt=5/5
+ability=Other Giant creatures you control get +2/+2 and have trample.
+timing=main
+oracle=Other Giant creatures you control get +2/+2 and have trample.

@@ -1,0 +1,9 @@
+name=Twiddle
+url=http://magiccards.info/query?q=%21Twiddle
+image=http://mtgimage.com/card/twiddle.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=You may tap or untap target artifact, creature, or land.
+timing=removal
+oracle=You may tap or untap target artifact, creature, or land.

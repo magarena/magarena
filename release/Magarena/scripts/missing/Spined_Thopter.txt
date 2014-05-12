@@ -1,0 +1,11 @@
+name=Spined Thopter
+url=http://magiccards.info/query?q=%21Spined+Thopter
+image=http://mtgimage.com/card/spined%20thopter.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Thopter
+cost={2}{P/U}
+pt=2/1
+ability=Flying
+timing=main
+oracle=Flying

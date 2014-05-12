@@ -1,0 +1,12 @@
+name=Maddening Wind
+url=http://magiccards.info/query?q=%21Maddening+Wind
+image=http://mtgimage.com/card/maddening%20wind.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchant creature;\
+        Cumulative upkeep {G};\
+        At the beginning of the upkeep of enchanted creature's controller, SN deals 2 damage to that player.
+timing=main
+oracle=Enchant creature. Cumulative upkeep {G}. At the beginning of the upkeep of enchanted creature's controller, Maddening Wind deals 2 damage to that player.

@@ -1,0 +1,9 @@
+name=Grim Return
+url=http://magiccards.info/query?q=%21Grim+Return
+image=http://mtgimage.com/card/grim%20return.jpg
+rarity=R
+type=Instant
+cost={2}{B}
+effect=Choose target creature card in a graveyard that was put there from the battlefield this turn. Put that card onto the battlefield under your control.
+timing=removal
+oracle=Choose target creature card in a graveyard that was put there from the battlefield this turn. Put that card onto the battlefield under your control.

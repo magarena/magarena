@@ -1,0 +1,11 @@
+name=Nullmage Advocate
+url=http://magiccards.info/query?q=%21Nullmage+Advocate
+image=http://mtgimage.com/card/nullmage%20advocate.jpg
+rarity=C
+type=Creature
+subtype=Insect,Druid
+cost={2}{G}
+pt=2/3
+ability={T}: Return two target cards from an opponent's graveyard to his or her hand. Destroy target artifact or enchantment.
+timing=main
+oracle={T}: Return two target cards from an opponent's graveyard to his or her hand. Destroy target artifact or enchantment.

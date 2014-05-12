@@ -1,0 +1,9 @@
+name=Essence Feed
+url=http://magiccards.info/query?q=%21Essence+Feed
+image=http://mtgimage.com/card/essence%20feed.jpg
+rarity=C
+type=Sorcery
+cost={5}{B}
+effect=Target player loses 3 life. You gain 3 life and put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."
+timing=main
+oracle=Target player loses 3 life. You gain 3 life and put three 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."

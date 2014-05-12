@@ -1,0 +1,10 @@
+name=Magmatic Core
+url=http://magiccards.info/query?q=%21Magmatic+Core
+image=http://mtgimage.com/card/magmatic%20core.jpg
+rarity=U
+type=Enchantment
+cost={2}{R}{R}
+ability=Cumulative upkeep {1};\
+        At the beginning of your end step, SN deals X damage divided as you choose among any number of target creatures, where X is the number of age counters on it.
+timing=main
+oracle=Cumulative upkeep {1}. At the beginning of your end step, Magmatic Core deals X damage divided as you choose among any number of target creatures, where X is the number of age counters on it.

@@ -1,0 +1,9 @@
+name=Blood Feud
+url=http://magiccards.info/query?q=%21Blood+Feud
+image=http://mtgimage.com/card/blood%20feud.jpg
+rarity=U
+type=Sorcery
+cost={4}{R}{R}
+effect=Target creature fights another target creature.
+timing=main
+oracle=Target creature fights another target creature.

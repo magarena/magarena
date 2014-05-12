@@ -1,0 +1,11 @@
+name=Vodalian Illusionist
+url=http://magiccards.info/query?q=%21Vodalian+Illusionist
+image=http://mtgimage.com/card/vodalian%20illusionist.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={2}{U}
+pt=2/2
+ability={U}{U}, {T}: Target creature phases out.
+timing=main
+oracle={U}{U}, {T}: Target creature phases out.

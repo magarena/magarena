@@ -1,0 +1,10 @@
+name=Mercadian Lift
+url=http://magiccards.info/query?q=%21Mercadian+Lift
+image=http://mtgimage.com/card/mercadian%20lift.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={1}, {T}: Put a winch counter on SN.;\
+        {T}, Remove X winch counters from SN: You may put a creature card with converted mana cost X from your hand onto the battlefield.
+timing=main
+oracle={1}, {T}: Put a winch counter on Mercadian Lift. {T}, Remove X winch counters from Mercadian Lift: You may put a creature card with converted mana cost X from your hand onto the battlefield.

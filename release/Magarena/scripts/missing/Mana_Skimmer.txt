@@ -1,0 +1,12 @@
+name=Mana Skimmer
+url=http://magiccards.info/query?q=%21Mana+Skimmer
+image=http://mtgimage.com/card/mana%20skimmer.jpg
+rarity=C
+type=Creature
+subtype=Leech
+cost={3}{B}
+pt=2/2
+ability=Flying;\
+        Whenever SN deals damage to a player, tap target land that player controls. That land doesn't untap during its controller's next untap step.
+timing=main
+oracle=Flying. Whenever Mana Skimmer deals damage to a player, tap target land that player controls. That land doesn't untap during its controller's next untap step.

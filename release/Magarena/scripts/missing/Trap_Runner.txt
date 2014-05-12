@@ -1,0 +1,11 @@
+name=Trap Runner
+url=http://magiccards.info/query?q=%21Trap+Runner
+image=http://mtgimage.com/card/trap%20runner.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=2/3
+ability={T}: Target unblocked attacking creature becomes blocked. Activate this ability only during combat after blockers are declared.
+timing=main
+oracle={T}: Target unblocked attacking creature becomes blocked. Activate this ability only during combat after blockers are declared.

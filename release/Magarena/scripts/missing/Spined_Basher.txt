@@ -1,0 +1,11 @@
+name=Spined Basher
+url=http://magiccards.info/query?q=%21Spined+Basher
+image=http://mtgimage.com/card/spined%20basher.jpg
+rarity=C
+type=Creature
+subtype=Zombie,Beast
+cost={2}{B}
+pt=3/1
+ability=Morph {2}{B}
+timing=main
+oracle=Morph {2}{B}

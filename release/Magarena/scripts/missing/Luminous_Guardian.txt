@@ -1,0 +1,12 @@
+name=Luminous Guardian
+url=http://magiccards.info/query?q=%21Luminous+Guardian
+image=http://mtgimage.com/card/luminous%20guardian.jpg
+rarity=U
+type=Creature
+subtype=Human,Nomad
+cost={3}{W}
+pt=1/4
+ability={W}: SN gets +0/+1 until end of turn.;\
+        {2}: SN can block an additional creature this turn.
+timing=main
+oracle={W}: Luminous Guardian gets +0/+1 until end of turn. {2}: Luminous Guardian can block an additional creature this turn.

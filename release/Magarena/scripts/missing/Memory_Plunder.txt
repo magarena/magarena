@@ -1,0 +1,9 @@
+name=Memory Plunder
+url=http://magiccards.info/query?q=%21Memory+Plunder
+image=http://mtgimage.com/card/memory%20plunder.jpg
+rarity=R
+type=Instant
+cost={U/B}{U/B}{U/B}{U/B}
+effect=You may cast target instant or sorcery card from an opponent's graveyard without paying its mana cost.
+timing=removal
+oracle=You may cast target instant or sorcery card from an opponent's graveyard without paying its mana cost.

@@ -1,0 +1,10 @@
+name=Refreshing Rain
+url=http://magiccards.info/query?q=%21Refreshing+Rain
+image=http://mtgimage.com/card/refreshing%20rain.jpg
+rarity=U
+type=Instant
+cost={3}{G}
+effect=If an opponent controls a Swamp and you control a Forest, you may cast SN without paying its mana cost.;\
+        Target player gains 6 life.
+timing=removal
+oracle=If an opponent controls a Swamp and you control a Forest, you may cast Refreshing Rain without paying its mana cost. Target player gains 6 life.

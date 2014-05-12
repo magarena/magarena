@@ -1,0 +1,12 @@
+name=Gravecrawler
+url=http://magiccards.info/query?q=%21Gravecrawler
+image=http://mtgimage.com/card/gravecrawler.jpg
+rarity=R
+type=Creature
+subtype=Zombie
+cost={B}
+pt=2/1
+ability=SN can't block.;\
+        You may cast SN from your graveyard as long as you control a Zombie.
+timing=main
+oracle=Gravecrawler can't block. You may cast Gravecrawler from your graveyard as long as you control a Zombie.

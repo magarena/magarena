@@ -1,0 +1,12 @@
+name=Bloodstoke Howler
+url=http://magiccards.info/query?q=%21Bloodstoke+Howler
+image=http://mtgimage.com/card/bloodstoke%20howler.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={5}{R}
+pt=3/4
+ability=Morph {6}{R};\
+        When SN is turned face up, Beast creatures you control get +3/+0 until end of turn.
+timing=main
+oracle=Morph {6}{R}. When Bloodstoke Howler is turned face up, Beast creatures you control get +3/+0 until end of turn.

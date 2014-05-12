@@ -1,0 +1,9 @@
+name=Forgotten Lore
+url=http://magiccards.info/query?q=%21Forgotten+Lore
+image=http://mtgimage.com/card/forgotten%20lore.jpg
+rarity=U
+type=Sorcery
+cost={G}
+effect=Target opponent chooses a card in your graveyard. You may pay {G}. If you do, repeat this process except that opponent can't choose a card already chosen for SN. Then put the last chosen card into your hand.
+timing=main
+oracle=Target opponent chooses a card in your graveyard. You may pay {G}. If you do, repeat this process except that opponent can't choose a card already chosen for Forgotten Lore. Then put the last chosen card into your hand.

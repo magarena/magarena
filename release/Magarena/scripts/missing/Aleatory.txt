@@ -1,0 +1,11 @@
+name=Aleatory
+url=http://magiccards.info/query?q=%21Aleatory
+image=http://mtgimage.com/card/aleatory.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=Cast SN only during combat after blockers are declared.;\
+        Flip a coin. If you win the flip, target creature gets +1/+1 until end of turn.;\
+        Draw a card at the beginning of the next turn's upkeep.
+timing=removal
+oracle=Cast Aleatory only during combat after blockers are declared. Flip a coin. If you win the flip, target creature gets +1/+1 until end of turn. Draw a card at the beginning of the next turn's upkeep.

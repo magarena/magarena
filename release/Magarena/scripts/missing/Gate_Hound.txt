@@ -1,0 +1,11 @@
+name=Gate Hound
+url=http://magiccards.info/query?q=%21Gate+Hound
+image=http://mtgimage.com/card/gate%20hound.jpg
+rarity=C
+type=Creature
+subtype=Hound
+cost={2}{W}
+pt=1/1
+ability=Creatures you control have vigilance as long as SN is enchanted.
+timing=main
+oracle=Creatures you control have vigilance as long as Gate Hound is enchanted.

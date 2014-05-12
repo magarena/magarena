@@ -1,0 +1,11 @@
+name=Magus of the Candelabra
+url=http://magiccards.info/query?q=%21Magus+of+the+Candelabra
+image=http://mtgimage.com/card/magus%20of%20the%20candelabra.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={G}
+pt=1/2
+ability={X}, {T}: Untap X target lands.
+timing=main
+oracle={X}, {T}: Untap X target lands.

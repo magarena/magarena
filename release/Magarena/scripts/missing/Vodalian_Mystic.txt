@@ -1,0 +1,11 @@
+name=Vodalian Mystic
+url=http://magiccards.info/query?q=%21Vodalian+Mystic
+image=http://mtgimage.com/card/vodalian%20mystic.jpg
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=1/1
+ability={T}: Target instant or sorcery spell becomes the color of your choice.
+timing=main
+oracle={T}: Target instant or sorcery spell becomes the color of your choice.

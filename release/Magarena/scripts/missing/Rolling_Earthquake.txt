@@ -1,0 +1,9 @@
+name=Rolling Earthquake
+url=http://magiccards.info/query?q=%21Rolling+Earthquake
+image=http://mtgimage.com/card/rolling%20earthquake.jpg
+rarity=R
+type=Sorcery
+cost={X}{R}
+effect=SN deals X damage to each creature without horsemanship and each player.
+timing=main
+oracle=Rolling Earthquake deals X damage to each creature without horsemanship and each player.

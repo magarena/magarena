@@ -1,0 +1,11 @@
+name=Aphetto Runecaster
+url=http://magiccards.info/query?q=%21Aphetto+Runecaster
+image=http://mtgimage.com/card/aphetto%20runecaster.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/3
+ability=Whenever a permanent is turned face up, you may draw a card.
+timing=main
+oracle=Whenever a permanent is turned face up, you may draw a card.

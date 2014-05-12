@@ -1,0 +1,11 @@
+name=Martyr of Frost
+url=http://magiccards.info/query?q=%21Martyr+of+Frost
+image=http://mtgimage.com/card/martyr%20of%20frost.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={U}
+pt=1/1
+ability={2}, Reveal X blue cards from your hand, Sacrifice SN: Counter target spell unless its controller pays {X}.
+timing=main
+oracle={2}, Reveal X blue cards from your hand, Sacrifice Martyr of Frost: Counter target spell unless its controller pays {X}.

@@ -1,0 +1,9 @@
+name=Skullscorch
+url=http://magiccards.info/query?q=%21Skullscorch
+image=http://mtgimage.com/card/skullscorch.jpg
+rarity=R
+type=Sorcery
+cost={R}{R}
+effect=Target player discards two cards at random unless that player has SN deal 4 damage to him or her.
+timing=main
+oracle=Target player discards two cards at random unless that player has Skullscorch deal 4 damage to him or her.

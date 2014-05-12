@@ -1,0 +1,12 @@
+name=Conclave Equenaut
+url=http://magiccards.info/query?q=%21Conclave+Equenaut
+image=http://mtgimage.com/card/conclave%20equenaut.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}{W}
+pt=3/3
+ability=Convoke;\
+        Flying
+timing=main
+oracle=Convoke. Flying

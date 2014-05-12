@@ -1,0 +1,10 @@
+name=Rushwood Grove
+url=http://magiccards.info/query?q=%21Rushwood+Grove
+image=http://mtgimage.com/card/rushwood%20grove.jpg
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Put a storage counter on SN.;\
+        {T}, Remove any number of storage counters from SN: Add {G} to your mana pool for each storage counter removed this way.
+timing=main
+oracle=Rushwood Grove enters the battlefield tapped. {T}: Put a storage counter on Rushwood Grove. {T}, Remove any number of storage counters from Rushwood Grove: Add {G} to your mana pool for each storage counter removed this way.

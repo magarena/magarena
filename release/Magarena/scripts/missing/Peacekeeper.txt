@@ -1,0 +1,12 @@
+name=Peacekeeper
+url=http://magiccards.info/query?q=%21Peacekeeper
+image=http://mtgimage.com/card/peacekeeper.jpg
+rarity=R
+type=Creature
+subtype=Human
+cost={2}{W}
+pt=1/1
+ability=At the beginning of your upkeep, sacrifice SN unless you pay {1}{W}.;\
+        Creatures can't attack.
+timing=main
+oracle=At the beginning of your upkeep, sacrifice Peacekeeper unless you pay {1}{W}. Creatures can't attack.

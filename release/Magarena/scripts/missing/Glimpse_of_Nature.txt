@@ -1,0 +1,9 @@
+name=Glimpse of Nature
+url=http://magiccards.info/query?q=%21Glimpse+of+Nature
+image=http://mtgimage.com/card/glimpse%20of%20nature.jpg
+rarity=R
+type=Sorcery
+cost={G}
+effect=Whenever you cast a creature spell this turn, draw a card.
+timing=main
+oracle=Whenever you cast a creature spell this turn, draw a card.

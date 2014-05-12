@@ -1,0 +1,12 @@
+name=Thermopod
+url=http://magiccards.info/query?q=%21Thermopod
+image=http://mtgimage.com/card/thermopod.jpg
+rarity=C
+type=Creature
+subtype=Slug
+cost={4}{R}
+pt=4/3
+ability={S}: SN gains haste until end of turn.;\
+        Sacrifice a creature: Add {R} to your mana pool.
+timing=main
+oracle={S}: Thermopod gains haste until end of turn.. Sacrifice a creature: Add {R} to your mana pool.

@@ -1,0 +1,11 @@
+name=Loyal Retainers
+url=http://magiccards.info/query?q=%21Loyal+Retainers
+image=http://mtgimage.com/card/loyal%20retainers.jpg
+rarity=U
+type=Creature
+subtype=Human,Advisor
+cost={2}{W}
+pt=1/1
+ability=Sacrifice SN: Return target legendary creature card from your graveyard to the battlefield. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle=Sacrifice Loyal Retainers: Return target legendary creature card from your graveyard to the battlefield. Activate this ability only during your turn, before attackers are declared.

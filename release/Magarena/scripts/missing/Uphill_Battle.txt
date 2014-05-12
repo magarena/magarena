@@ -1,0 +1,9 @@
+name=Uphill Battle
+url=http://magiccards.info/query?q=%21Uphill+Battle
+image=http://mtgimage.com/card/uphill%20battle.jpg
+rarity=U
+type=Enchantment
+cost={2}{R}
+ability=Creatures played by your opponents enter the battlefield tapped.
+timing=main
+oracle=Creatures played by your opponents enter the battlefield tapped.

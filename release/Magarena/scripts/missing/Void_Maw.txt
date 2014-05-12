@@ -1,0 +1,13 @@
+name=Void Maw
+url=http://magiccards.info/query?q=%21Void+Maw
+image=http://mtgimage.com/card/void%20maw.jpg
+rarity=R
+type=Creature
+subtype=Horror
+cost={4}{B}{B}
+pt=4/5
+ability=Trample;\
+        If another creature would die, exile it instead.;\
+        Put a card exiled with SN into its owner's graveyard: SN gets +2/+2 until end of turn.
+timing=main
+oracle=Trample. If another creature would die, exile it instead. Put a card exiled with Void Maw into its owner's graveyard: Void Maw gets +2/+2 until end of turn.

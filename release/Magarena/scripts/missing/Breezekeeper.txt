@@ -1,0 +1,12 @@
+name=Breezekeeper
+url=http://magiccards.info/query?q=%21Breezekeeper
+image=http://mtgimage.com/card/breezekeeper.jpg
+rarity=C
+type=Creature
+subtype=Djinn
+cost={3}{U}
+pt=4/4
+ability=Flying;\
+        Phasing
+timing=main
+oracle=Flying. Phasing

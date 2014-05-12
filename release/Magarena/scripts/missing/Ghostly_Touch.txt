@@ -1,0 +1,11 @@
+name=Ghostly Touch
+url=http://magiccards.info/query?q=%21Ghostly+Touch
+image=http://mtgimage.com/card/ghostly%20touch.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Enchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."
+timing=main
+oracle=Enchant creature. Enchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."

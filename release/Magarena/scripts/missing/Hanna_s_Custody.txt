@@ -1,0 +1,9 @@
+name=Hanna's Custody
+url=http://magiccards.info/query?q=%21Hanna%27s+Custody
+image=http://mtgimage.com/card/hanna%27s%20custody.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=All artifacts have shroud.
+timing=main
+oracle=All artifacts have shroud.

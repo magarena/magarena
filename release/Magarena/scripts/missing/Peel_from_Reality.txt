@@ -1,0 +1,9 @@
+name=Peel from Reality
+url=http://magiccards.info/query?q=%21Peel+from+Reality
+image=http://mtgimage.com/card/peel%20from%20reality.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Return target creature you control and target creature you don't control to their owners' hands.
+timing=removal
+oracle=Return target creature you control and target creature you don't control to their owners' hands.

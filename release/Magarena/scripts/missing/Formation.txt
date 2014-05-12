@@ -1,0 +1,10 @@
+name=Formation
+url=http://magiccards.info/query?q=%21Formation
+image=http://mtgimage.com/card/formation.jpg
+rarity=R
+type=Instant
+cost={1}{W}
+effect=Target creature gains banding until end of turn.;\
+        Draw a card at the beginning of the next turn's upkeep.
+timing=removal
+oracle=Target creature gains banding until end of turn.. Draw a card at the beginning of the next turn's upkeep.

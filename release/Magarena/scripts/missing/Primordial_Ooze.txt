@@ -1,0 +1,12 @@
+name=Primordial Ooze
+url=http://magiccards.info/query?q=%21Primordial+Ooze
+image=http://mtgimage.com/card/primordial%20ooze.jpg
+rarity=U
+type=Creature
+subtype=Ooze
+cost={R}
+pt=1/1
+ability=SN attacks each turn if able.;\
+        At the beginning of your upkeep, put a +1/+1 counter on SN. Then you may pay {X}, where X is the number of +1/+1 counters on it. If you don't, tap SN and it deals X damage to you.
+timing=main
+oracle=Primordial Ooze attacks each turn if able. At the beginning of your upkeep, put a +1/+1 counter on Primordial Ooze. Then you may pay {X}, where X is the number of +1/+1 counters on it. If you don't, tap Primordial Ooze and it deals X damage to you.

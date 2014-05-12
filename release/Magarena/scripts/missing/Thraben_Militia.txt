@@ -1,0 +1,10 @@
+name=Thraben Militia
+url=http://magiccards.info/query?q=%21Thraben+Militia
+image=http://mtgimage.com/card/thraben%20militia.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+pt=5/4
+ability=Trample
+timing=main
+oracle=Trample

@@ -1,0 +1,9 @@
+name=Descent into Madness
+url=http://magiccards.info/query?q=%21Descent+into+Madness
+image=http://mtgimage.com/card/descent%20into%20madness.jpg
+rarity=M
+type=Enchantment
+cost={3}{B}{B}
+ability=At the beginning of your upkeep, put a despair counter on SN, then each player exiles X permanents he or she controls and/or cards from his or her hand, where X is the number of despair counters on SN.
+timing=main
+oracle=At the beginning of your upkeep, put a despair counter on Descent into Madness, then each player exiles X permanents he or she controls and/or cards from his or her hand, where X is the number of despair counters on Descent into Madness.

@@ -1,0 +1,11 @@
+name=Nafs Asp
+url=http://magiccards.info/query?q=%21Nafs+Asp
+image=http://mtgimage.com/card/nafs%20asp1.jpg
+rarity=C
+type=Creature
+subtype=Snake
+cost={G}
+pt=1/1
+ability=Whenever SN deals damage to a player, that player loses 1 life at the beginning of his or her next draw step unless he or she pays {1} before that draw step.
+timing=main
+oracle=Whenever Nafs Asp deals damage to a player, that player loses 1 life at the beginning of his or her next draw step unless he or she pays {1} before that draw step.

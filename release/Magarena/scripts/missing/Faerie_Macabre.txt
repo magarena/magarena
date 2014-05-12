@@ -1,0 +1,12 @@
+name=Faerie Macabre
+url=http://magiccards.info/query?q=%21Faerie+Macabre
+image=http://mtgimage.com/card/faerie%20macabre.jpg
+rarity=C
+type=Creature
+subtype=Faerie,Rogue
+cost={1}{B}{B}
+pt=2/2
+ability=Flying;\
+        Discard SN: Exile up to two target cards from graveyards.
+timing=main
+oracle=Flying. Discard Faerie Macabre: Exile up to two target cards from graveyards.

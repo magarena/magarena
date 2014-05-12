@@ -1,0 +1,11 @@
+name=Nantuko Elder
+url=http://magiccards.info/query?q=%21Nantuko+Elder
+image=http://mtgimage.com/card/nantuko%20elder.jpg
+rarity=U
+type=Creature
+subtype=Insect,Druid
+cost={2}{G}
+pt=1/2
+ability={T}: Add {1}{G} to your mana pool.
+timing=main
+oracle={T}: Add {1}{G} to your mana pool.

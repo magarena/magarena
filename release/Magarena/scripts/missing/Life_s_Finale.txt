@@ -1,0 +1,9 @@
+name=Life's Finale
+url=http://magiccards.info/query?q=%21Life%27s+Finale
+image=http://mtgimage.com/card/life%27s%20finale.jpg
+rarity=R
+type=Sorcery
+cost={4}{B}{B}
+effect=Destroy all creatures, then search target opponent's library for up to three creature cards and put them into his or her graveyard. Then that player shuffles his or her library.
+timing=main
+oracle=Destroy all creatures, then search target opponent's library for up to three creature cards and put them into his or her graveyard. Then that player shuffles his or her library.

@@ -1,0 +1,9 @@
+name=Goblin Cannon
+url=http://magiccards.info/query?q=%21Goblin+Cannon
+image=http://mtgimage.com/card/goblin%20cannon.jpg
+rarity=U
+type=Artifact
+cost={4}
+ability={2}: SN deals 1 damage to target creature or player. Sacrifice SN.
+timing=main
+oracle={2}: Goblin Cannon deals 1 damage to target creature or player. Sacrifice Goblin Cannon.

@@ -1,0 +1,16 @@
+name=Zulaport Enforcer
+url=http://magiccards.info/query?q=%21Zulaport+Enforcer
+image=http://mtgimage.com/card/zulaport%20enforcer.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={B}
+pt=1/1
+ability=Level up {4};\
+        LEVEL 1-2;\
+        3/3;\
+        LEVEL 3+;\
+        5/5;\
+        SN can't be blocked except by black creatures.
+timing=main
+oracle=Level up {4}. LEVEL 1-2. 3/3. LEVEL 3+. 5/5. Zulaport Enforcer can't be blocked except by black creatures.

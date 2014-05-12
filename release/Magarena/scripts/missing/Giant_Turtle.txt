@@ -1,0 +1,11 @@
+name=Giant Turtle
+url=http://magiccards.info/query?q=%21Giant+Turtle
+image=http://mtgimage.com/card/giant%20turtle.jpg
+rarity=C
+type=Creature
+subtype=Turtle
+cost={1}{G}{G}
+pt=2/4
+ability=SN can't attack if it attacked during your last turn.
+timing=main
+oracle=Giant Turtle can't attack if it attacked during your last turn.

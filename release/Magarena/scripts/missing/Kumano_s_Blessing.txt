@@ -1,0 +1,12 @@
+name=Kumano's Blessing
+url=http://magiccards.info/query?q=%21Kumano%27s+Blessing
+image=http://mtgimage.com/card/kumano%27s%20blessing.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+ability=Flash;\
+        Enchant creature;\
+        If a creature dealt damage by enchanted creature this turn would die, exile it instead.
+timing=main
+oracle=Flash. Enchant creature. If a creature dealt damage by enchanted creature this turn would die, exile it instead.

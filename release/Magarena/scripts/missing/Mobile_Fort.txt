@@ -1,0 +1,12 @@
+name=Mobile Fort
+url=http://magiccards.info/query?q=%21Mobile+Fort
+image=http://mtgimage.com/card/mobile%20fort.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={4}
+pt=0/6
+ability=Defender;\
+        {3}: SN gets +3/-1 until end of turn and can attack this turn as though it didn't have defender. Activate this ability only once each turn.
+timing=main
+oracle=Defender. {3}: Mobile Fort gets +3/-1 until end of turn and can attack this turn as though it didn't have defender. Activate this ability only once each turn.

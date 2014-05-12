@@ -1,0 +1,9 @@
+name=Venarian Glimmer
+url=http://magiccards.info/query?q=%21Venarian+Glimmer
+image=http://mtgimage.com/card/venarian%20glimmer.jpg
+rarity=U
+type=Instant
+cost={X}{U}
+effect=Target player reveals his or her hand. You choose a nonland card with converted mana cost X or less from it. That player discards that card.
+timing=removal
+oracle=Target player reveals his or her hand. You choose a nonland card with converted mana cost X or less from it. That player discards that card.

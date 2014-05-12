@@ -1,0 +1,9 @@
+name=Stunted Growth
+url=http://magiccards.info/query?q=%21Stunted+Growth
+image=http://mtgimage.com/card/stunted%20growth.jpg
+rarity=R
+type=Sorcery
+cost={3}{G}{G}
+effect=Target player chooses three cards from his or her hand and puts them on top of his or her library in any order.
+timing=main
+oracle=Target player chooses three cards from his or her hand and puts them on top of his or her library in any order.

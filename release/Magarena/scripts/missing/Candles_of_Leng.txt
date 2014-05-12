@@ -1,0 +1,9 @@
+name=Candles of Leng
+url=http://magiccards.info/query?q=%21Candles+of+Leng
+image=http://mtgimage.com/card/candles%20of%20leng.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability={4}, {T}: Reveal the top card of your library. If it has the same name as a card in your graveyard, put it into your graveyard. Otherwise, draw a card.
+timing=main
+oracle={4}, {T}: Reveal the top card of your library. If it has the same name as a card in your graveyard, put it into your graveyard. Otherwise, draw a card.

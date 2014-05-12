@@ -1,0 +1,9 @@
+name=Pinecrest Ridge
+url=http://magiccards.info/query?q=%21Pinecrest+Ridge
+image=http://mtgimage.com/card/pinecrest%20ridge.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add {R} or {G} to your mana pool. SN doesn't untap during your next untap step.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add {R} or {G} to your mana pool. Pinecrest Ridge doesn't untap during your next untap step.

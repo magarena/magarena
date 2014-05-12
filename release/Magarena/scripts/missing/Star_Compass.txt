@@ -1,0 +1,10 @@
+name=Star Compass
+url=http://magiccards.info/query?q=%21Star+Compass
+image=http://mtgimage.com/card/star%20compass.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability=SN enters the battlefield tapped.;\
+        {T}: Add to your mana pool one mana of any color that a basic land you control could produce.
+timing=main
+oracle=Star Compass enters the battlefield tapped. {T}: Add to your mana pool one mana of any color that a basic land you control could produce.

@@ -1,0 +1,10 @@
+name=Crush Underfoot
+url=http://magiccards.info/query?q=%21Crush+Underfoot
+image=http://mtgimage.com/card/crush%20underfoot.jpg
+rarity=U
+type=Tribal,Instant
+subtype=Giant
+cost={1}{R}
+effect=Choose a Giant creature you control. It deals damage equal to its power to target creature.
+timing=removal
+oracle=Choose a Giant creature you control. It deals damage equal to its power to target creature.

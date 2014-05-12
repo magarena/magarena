@@ -1,0 +1,11 @@
+name=Skyshroud Sentinel
+url=http://magiccards.info/query?q=%21Skyshroud+Sentinel
+image=http://mtgimage.com/card/skyshroud%20sentinel.jpg
+rarity=C
+type=Creature
+subtype=Elf
+cost={2}{G}
+pt=1/1
+ability=When SN enters the battlefield, you may search your library for up to three cards named SN, reveal them, and put them into your hand. If you do, shuffle your library.
+timing=main
+oracle=When Skyshroud Sentinel enters the battlefield, you may search your library for up to three cards named Skyshroud Sentinel, reveal them, and put them into your hand. If you do, shuffle your library.

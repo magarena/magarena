@@ -1,0 +1,12 @@
+name=Evil Eye of Orms-by-Gore
+url=http://magiccards.info/query?q=%21Evil+Eye+of+Orms-by-Gore
+image=http://mtgimage.com/card/evil%20eye%20of%20orms-by-gore.jpg
+rarity=U
+type=Creature
+subtype=Eye
+cost={4}{B}
+pt=3/6
+ability=Non-Eye creatures you control can't attack.;\
+        SN can't be blocked except by Walls.
+timing=main
+oracle=Non-Eye creatures you control can't attack. Evil Eye of Orms-by-Gore can't be blocked except by Walls.

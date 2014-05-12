@@ -1,0 +1,10 @@
+name=Protect
+url=http://magiccards.info/query?q=%21Protect
+image=http://mtgimage.com/card/protectserve.jpg
+rarity=U
+type=Instant
+cost={2}{W}
+effect=Target creature gets +2/+4 until end of turn.;\
+        Fuse
+timing=removal
+oracle=Target creature gets +2/+4 until end of turn. Fuse

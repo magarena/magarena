@@ -1,0 +1,11 @@
+name=Cunning Giant
+url=http://magiccards.info/query?q=%21Cunning+Giant
+image=http://mtgimage.com/card/cunning%20giant.jpg
+rarity=R
+type=Creature
+subtype=Giant
+cost={5}{R}
+pt=4/4
+ability=If SN is unblocked, you may have it assign its combat damage to a creature defending player controls.
+timing=main
+oracle=If Cunning Giant is unblocked, you may have it assign its combat damage to a creature defending player controls.

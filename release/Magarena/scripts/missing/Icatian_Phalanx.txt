@@ -1,0 +1,11 @@
+name=Icatian Phalanx
+url=http://magiccards.info/query?q=%21Icatian+Phalanx
+image=http://mtgimage.com/card/icatian%20phalanx.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={4}{W}
+pt=2/4
+ability=Banding
+timing=main
+oracle=Banding

@@ -1,0 +1,10 @@
+name=Scorched Earth
+url=http://magiccards.info/query?q=%21Scorched+Earth
+image=http://mtgimage.com/card/scorched%20earth.jpg
+rarity=R
+type=Sorcery
+cost={X}{R}
+effect=As an additional cost to cast SN, discard X land cards.;\
+        Destroy X target lands.
+timing=main
+oracle=As an additional cost to cast Scorched Earth, discard X land cards. Destroy X target lands.

@@ -1,0 +1,10 @@
+name=Primal Beyond
+url=http://magiccards.info/query?q=%21Primal+Beyond
+image=http://mtgimage.com/card/primal%20beyond.jpg
+rarity=R
+type=Land
+ability=As SN enters the battlefield, you may reveal an Elemental card from your hand. If you don't, SN enters the battlefield tapped.;\
+        {T}: Add {1} to your mana pool.;\
+        {T}: Add one mana of any color to your mana pool. Spend this mana only to cast an Elemental spell or activate an ability of an Elemental.
+timing=main
+oracle=As Primal Beyond enters the battlefield, you may reveal an Elemental card from your hand. If you don't, Primal Beyond enters the battlefield tapped. {T}: Add {1} to your mana pool. {T}: Add one mana of any color to your mana pool. Spend this mana only to cast an Elemental spell or activate an ability of an Elemental.

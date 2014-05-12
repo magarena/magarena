@@ -1,0 +1,11 @@
+name=Jangling Automaton
+url=http://magiccards.info/query?q=%21Jangling+Automaton
+image=http://mtgimage.com/card/jangling%20automaton.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=3/2
+ability=Whenever SN attacks, untap all creatures defending player controls.
+timing=main
+oracle=Whenever Jangling Automaton attacks, untap all creatures defending player controls.

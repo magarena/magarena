@@ -1,0 +1,10 @@
+name=Shelter
+url=http://magiccards.info/query?q=%21Shelter
+image=http://mtgimage.com/card/shelter.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Target creature you control gains protection from the color of your choice until end of turn.;\
+        Draw a card.
+timing=removal
+oracle=Target creature you control gains protection from the color of your choice until end of turn. Draw a card.

@@ -1,0 +1,11 @@
+name=Leonin Arbiter
+url=http://magiccards.info/query?q=%21Leonin+Arbiter
+image=http://mtgimage.com/card/leonin%20arbiter.jpg
+rarity=R
+type=Creature
+subtype=Cat,Cleric
+cost={1}{W}
+pt=2/2
+ability=Players can't search libraries. Any player may pay {2} for that player to ignore this effect until end of turn.
+timing=main
+oracle=Players can't search libraries. Any player may pay {2} for that player to ignore this effect until end of turn.

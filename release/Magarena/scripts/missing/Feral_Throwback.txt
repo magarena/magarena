@@ -1,0 +1,12 @@
+name=Feral Throwback
+url=http://magiccards.info/query?q=%21Feral+Throwback
+image=http://mtgimage.com/card/feral%20throwback.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={4}{G}{G}
+pt=3/3
+ability=Amplify 2;\
+        Provoke
+timing=main
+oracle=Amplify 2. Provoke

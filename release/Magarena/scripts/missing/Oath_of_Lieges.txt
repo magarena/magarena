@@ -1,0 +1,9 @@
+name=Oath of Lieges
+url=http://magiccards.info/query?q=%21Oath+of+Lieges
+image=http://mtgimage.com/card/oath%20of%20lieges.jpg
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=At the beginning of each player's upkeep, that player chooses target player who controls more lands than he or she does and is his or her opponent. The first player may search his or her library for a basic land card, put that card onto the battlefield, then shuffle his or her library.
+timing=main
+oracle=At the beginning of each player's upkeep, that player chooses target player who controls more lands than he or she does and is his or her opponent. The first player may search his or her library for a basic land card, put that card onto the battlefield, then shuffle his or her library.

@@ -1,0 +1,11 @@
+name=Fleshgrafter
+url=http://magiccards.info/query?q=%21Fleshgrafter
+image=http://mtgimage.com/card/fleshgrafter.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{B}
+pt=2/2
+ability=Discard an artifact card: SN gets +2/+2 until end of turn.
+timing=main
+oracle=Discard an artifact card: Fleshgrafter gets +2/+2 until end of turn.

@@ -1,0 +1,11 @@
+name=Keldon Berserker
+url=http://magiccards.info/query?q=%21Keldon+Berserker
+image=http://mtgimage.com/card/keldon%20berserker.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier,Berserker
+cost={3}{R}
+pt=2/3
+ability=Whenever SN attacks, if you control no untapped lands, it gets +3/+0 until end of turn.
+timing=main
+oracle=Whenever Keldon Berserker attacks, if you control no untapped lands, it gets +3/+0 until end of turn.

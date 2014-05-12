@@ -1,0 +1,13 @@
+name=Verdeloth the Ancient
+url=http://magiccards.info/query?q=%21Verdeloth+the+Ancient
+image=http://mtgimage.com/card/verdeloth%20the%20ancient.jpg
+rarity=R
+type=Creature
+subtype=Treefolk
+cost={4}{G}{G}
+pt=4/7
+ability=Kicker {X};\
+        Saproling creatures and other Treefolk creatures get +1/+1.;\
+        When SN enters the battlefield, if it was kicked, put X 1/1 green Saproling creature tokens onto the battlefield.
+timing=main
+oracle=Kicker {X}. Saproling creatures and other Treefolk creatures get +1/+1. When Verdeloth the Ancient enters the battlefield, if it was kicked, put X 1/1 green Saproling creature tokens onto the battlefield.

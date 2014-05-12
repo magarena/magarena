@@ -1,0 +1,12 @@
+name=Balduvian Fallen
+url=http://magiccards.info/query?q=%21Balduvian+Fallen
+image=http://mtgimage.com/card/balduvian%20fallen.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=3/5
+ability=Cumulative upkeep {1};\
+        Whenever SN's cumulative upkeep is paid, it gets +1/+0 until end of turn for each {B} or {R} spent this way.
+timing=main
+oracle=Cumulative upkeep {1}. Whenever Balduvian Fallen's cumulative upkeep is paid, it gets +1/+0 until end of turn for each {B} or {R} spent this way.

@@ -1,0 +1,12 @@
+name=Bog Elemental
+url=http://magiccards.info/query?q=%21Bog+Elemental
+image=http://mtgimage.com/card/bog%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{B}{B}
+pt=5/4
+ability=Protection from white;\
+        At the beginning of your upkeep, sacrifice SN unless you sacrifice a land.
+timing=main
+oracle=Protection from white. At the beginning of your upkeep, sacrifice Bog Elemental unless you sacrifice a land.

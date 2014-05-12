@@ -1,0 +1,11 @@
+name=Totem-Guide Hartebeest
+url=http://magiccards.info/query?q=%21Totem-Guide+Hartebeest
+image=http://mtgimage.com/card/totem-guide%20hartebeest.jpg
+rarity=C
+type=Creature
+subtype=Antelope
+cost={4}{W}
+pt=2/5
+ability=When SN enters the battlefield, you may search your library for an Aura card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=When Totem-Guide Hartebeest enters the battlefield, you may search your library for an Aura card, reveal it, put it into your hand, then shuffle your library.

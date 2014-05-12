@@ -1,0 +1,11 @@
+name=Goblin Machinist
+url=http://magiccards.info/query?q=%21Goblin+Machinist
+image=http://mtgimage.com/card/goblin%20machinist.jpg
+rarity=U
+type=Creature
+subtype=Goblin
+cost={4}{R}
+pt=0/5
+ability={2}{R}: Reveal cards from the top of your library until you reveal a nonland card. SN gets +X/+0 until end of turn, where X is that card's converted mana cost. Put the revealed cards on the bottom of your library in any order.
+timing=main
+oracle={2}{R}: Reveal cards from the top of your library until you reveal a nonland card. Goblin Machinist gets +X/+0 until end of turn, where X is that card's converted mana cost. Put the revealed cards on the bottom of your library in any order.

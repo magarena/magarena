@@ -1,0 +1,9 @@
+name=Throne of Geth
+url=http://magiccards.info/query?q=%21Throne+of+Geth
+image=http://mtgimage.com/card/throne%20of%20geth.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability={T}, Sacrifice an artifact: Proliferate.
+timing=main
+oracle={T}, Sacrifice an artifact: Proliferate.

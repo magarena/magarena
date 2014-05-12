@@ -1,0 +1,11 @@
+name=Saprazzan Breaker
+url=http://magiccards.info/query?q=%21Saprazzan+Breaker
+image=http://mtgimage.com/card/saprazzan%20breaker.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={4}{U}
+pt=3/3
+ability={U}: Put the top card of your library into your graveyard. If that card is a land card, SN can't be blocked this turn.
+timing=main
+oracle={U}: Put the top card of your library into your graveyard. If that card is a land card, Saprazzan Breaker can't be blocked this turn.

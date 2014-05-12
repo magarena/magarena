@@ -1,0 +1,13 @@
+name=Skyshroud War Beast
+url=http://magiccards.info/query?q=%21Skyshroud+War+Beast
+image=http://mtgimage.com/card/skyshroud%20war%20beast.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={1}{G}
+pt=*/*
+ability=Trample;\
+        As SN enters the battlefield, choose an opponent.;\
+        SN's power and toughness are each equal to the number of nonbasic lands the chosen player controls.
+timing=main
+oracle=Trample. As Skyshroud War Beast enters the battlefield, choose an opponent. Skyshroud War Beast's power and toughness are each equal to the number of nonbasic lands the chosen player controls.

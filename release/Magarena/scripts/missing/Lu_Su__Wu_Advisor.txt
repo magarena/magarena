@@ -1,0 +1,11 @@
+name=Lu Su, Wu Advisor
+url=http://magiccards.info/query?q=%21Lu+Su%2C+Wu+Advisor
+image=http://mtgimage.com/card/lu%20su%2C%20wu%20advisor.jpg
+rarity=R
+type=Creature
+subtype=Human,Advisor
+cost={3}{U}{U}
+pt=1/2
+ability={T}: Draw a card. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Draw a card. Activate this ability only during your turn, before attackers are declared.

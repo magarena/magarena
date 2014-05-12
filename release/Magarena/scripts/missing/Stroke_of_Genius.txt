@@ -1,0 +1,9 @@
+name=Stroke of Genius
+url=http://magiccards.info/query?q=%21Stroke+of+Genius
+image=http://mtgimage.com/card/stroke%20of%20genius.jpg
+rarity=R
+type=Instant
+cost={X}{2}{U}
+effect=Target player draws X cards.
+timing=removal
+oracle=Target player draws X cards.

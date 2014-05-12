@@ -1,0 +1,9 @@
+name=Word of Binding
+url=http://magiccards.info/query?q=%21Word+of+Binding
+image=http://mtgimage.com/card/word%20of%20binding.jpg
+rarity=C
+type=Sorcery
+cost={X}{B}{B}
+effect=Tap X target creatures.
+timing=main
+oracle=Tap X target creatures.

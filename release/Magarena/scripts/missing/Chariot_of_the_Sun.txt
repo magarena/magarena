@@ -1,0 +1,9 @@
+name=Chariot of the Sun
+url=http://magiccards.info/query?q=%21Chariot+of+the+Sun
+image=http://mtgimage.com/card/chariot%20of%20the%20sun.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability={2}, {T}: Until end of turn, target creature you control gains flying and its toughness becomes 1.
+timing=main
+oracle={2}, {T}: Until end of turn, target creature you control gains flying and its toughness becomes 1.

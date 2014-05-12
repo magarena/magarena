@@ -1,0 +1,10 @@
+name=Unmask
+url=http://magiccards.info/query?q=%21Unmask
+image=http://mtgimage.com/card/unmask.jpg
+rarity=R
+type=Sorcery
+cost={3}{B}
+effect=You may exile a black card from your hand rather than pay SN's mana cost.;\
+        Target player reveals his or her hand. You choose a nonland card from it. That player discards that card.
+timing=main
+oracle=You may exile a black card from your hand rather than pay Unmask's mana cost. Target player reveals his or her hand. You choose a nonland card from it. That player discards that card.

@@ -1,0 +1,11 @@
+name=Baton of Courage
+url=http://magiccards.info/query?q=%21Baton+of+Courage
+image=http://mtgimage.com/card/baton%20of%20courage.jpg
+rarity=C
+type=Artifact
+cost={3}
+ability=Flash;\
+        Sunburst;\
+        Remove a charge counter from SN: Target creature gets +1/+1 until end of turn.
+timing=main
+oracle=Flash. Sunburst. Remove a charge counter from Baton of Courage: Target creature gets +1/+1 until end of turn.

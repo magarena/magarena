@@ -1,0 +1,11 @@
+name=Form of the Dragon
+url=http://magiccards.info/query?q=%21Form+of+the+Dragon
+image=http://mtgimage.com/card/form%20of%20the%20dragon.jpg
+rarity=R
+type=Enchantment
+cost={4}{R}{R}{R}
+ability=At the beginning of your upkeep, SN deals 5 damage to target creature or player.;\
+        At the beginning of each end step, your life total becomes 5.;\
+        Creatures without flying can't attack you.
+timing=main
+oracle=At the beginning of your upkeep, Form of the Dragon deals 5 damage to target creature or player. At the beginning of each end step, your life total becomes 5. Creatures without flying can't attack you.

@@ -1,0 +1,11 @@
+name=Riptide Chronologist
+url=http://magiccards.info/query?q=%21Riptide+Chronologist
+image=http://mtgimage.com/card/riptide%20chronologist.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}{U}
+pt=1/3
+ability={U}, Sacrifice SN: Untap all creatures of the creature type of your choice.
+timing=main
+oracle={U}, Sacrifice Riptide Chronologist: Untap all creatures of the creature type of your choice.

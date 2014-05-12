@@ -1,0 +1,11 @@
+name=Whimwader
+url=http://magiccards.info/query?q=%21Whimwader
+image=http://mtgimage.com/card/whimwader.jpg
+rarity=C
+type=Creature
+subtype=Elemental
+cost={4}{U}
+pt=6/4
+ability=SN can't attack unless defending player controls a blue permanent.
+timing=main
+oracle=Whimwader can't attack unless defending player controls a blue permanent.

@@ -1,0 +1,9 @@
+name=Primeval Light
+url=http://magiccards.info/query?q=%21Primeval+Light
+image=http://mtgimage.com/card/primeval%20light.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Destroy all enchantments target player controls.
+timing=main
+oracle=Destroy all enchantments target player controls.

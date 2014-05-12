@@ -1,0 +1,10 @@
+name=Ghastly Haunting
+url=http://magiccards.info/query?q=%21Ghastly+Haunting
+image=http://mtgimage.com/card/ghastly%20haunting.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+ability=Enchant creature;\
+        You control enchanted creature.
+timing=main
+oracle=Enchant creature. You control enchanted creature.

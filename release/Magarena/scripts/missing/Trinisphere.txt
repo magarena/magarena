@@ -1,0 +1,9 @@
+name=Trinisphere
+url=http://magiccards.info/query?q=%21Trinisphere
+image=http://mtgimage.com/card/trinisphere.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=As long as SN is untapped, each spell that would cost less than three mana to cast costs three mana to cast.
+timing=main
+oracle=As long as Trinisphere is untapped, each spell that would cost less than three mana to cast costs three mana to cast.

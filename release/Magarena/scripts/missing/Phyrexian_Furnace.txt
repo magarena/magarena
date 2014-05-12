@@ -1,0 +1,10 @@
+name=Phyrexian Furnace
+url=http://magiccards.info/query?q=%21Phyrexian+Furnace
+image=http://mtgimage.com/card/phyrexian%20furnace.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={T}: Exile the bottom card of target player's graveyard.;\
+        {1}, Sacrifice SN: Exile target card from a graveyard. Draw a card.
+timing=main
+oracle={T}: Exile the bottom card of target player's graveyard. {1}, Sacrifice Phyrexian Furnace: Exile target card from a graveyard. Draw a card.

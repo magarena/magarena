@@ -1,0 +1,9 @@
+name=Fungal Bloom
+url=http://magiccards.info/query?q=%21Fungal+Bloom
+image=http://mtgimage.com/card/fungal%20bloom.jpg
+rarity=R
+type=Enchantment
+cost={G}{G}
+ability={G}{G}: Put a spore counter on target Fungus.
+timing=main
+oracle={G}{G}: Put a spore counter on target Fungus.

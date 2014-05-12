@@ -1,0 +1,12 @@
+name=Neurok Prodigy
+url=http://magiccards.info/query?q=%21Neurok+Prodigy
+image=http://mtgimage.com/card/neurok%20prodigy.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/1
+ability=Flying;\
+        Discard an artifact card: Return SN to its owner's hand.
+timing=main
+oracle=Flying. Discard an artifact card: Return Neurok Prodigy to its owner's hand.

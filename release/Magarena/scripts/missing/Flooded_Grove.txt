@@ -1,0 +1,9 @@
+name=Flooded Grove
+url=http://magiccards.info/query?q=%21Flooded+Grove
+image=http://mtgimage.com/card/flooded%20grove.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {G/U}, {T}: Add {G}{G}, {G}{U}, or {U}{U} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {G/U}, {T}: Add {G}{G}, {G}{U}, or {U}{U} to your mana pool.

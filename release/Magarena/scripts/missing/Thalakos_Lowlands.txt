@@ -1,0 +1,9 @@
+name=Thalakos Lowlands
+url=http://magiccards.info/query?q=%21Thalakos+Lowlands
+image=http://mtgimage.com/card/thalakos%20lowlands.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add {W} or {U} to your mana pool. SN doesn't untap during your next untap step.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add {W} or {U} to your mana pool. Thalakos Lowlands doesn't untap during your next untap step.

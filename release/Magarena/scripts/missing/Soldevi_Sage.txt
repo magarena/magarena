@@ -1,0 +1,11 @@
+name=Soldevi Sage
+url=http://magiccards.info/query?q=%21Soldevi+Sage
+image=http://mtgimage.com/card/soldevi%20sage1.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+ability={T}, Sacrifice two lands: Draw three cards, then discard one of them.
+timing=main
+oracle={T}, Sacrifice two lands: Draw three cards, then discard one of them.

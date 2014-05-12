@@ -1,0 +1,11 @@
+name=Street Savvy
+url=http://magiccards.info/query?q=%21Street+Savvy
+image=http://mtgimage.com/card/street%20savvy.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchant creature;\
+        Enchanted creature gets +0/+2 and can block creatures with landwalk abilities as though they didn't have those abilities.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +0/+2 and can block creatures with landwalk abilities as though they didn't have those abilities.

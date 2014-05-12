@@ -1,0 +1,11 @@
+name=Dong Zhou, the Tyrant
+url=http://magiccards.info/query?q=%21Dong+Zhou%2C+the+Tyrant
+image=http://mtgimage.com/card/dong%20zhou%2C%20the%20tyrant.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={4}{R}
+pt=3/3
+ability=When SN enters the battlefield, target creature an opponent controls deals damage equal to its power to that player.
+timing=main
+oracle=When Dong Zhou, the Tyrant enters the battlefield, target creature an opponent controls deals damage equal to its power to that player.

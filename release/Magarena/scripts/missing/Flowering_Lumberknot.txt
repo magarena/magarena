@@ -1,0 +1,11 @@
+name=Flowering Lumberknot
+url=http://magiccards.info/query?q=%21Flowering+Lumberknot
+image=http://mtgimage.com/card/flowering%20lumberknot.jpg
+rarity=C
+type=Creature
+subtype=Treefolk
+cost={3}{G}
+pt=5/5
+ability=SN can't attack or block unless it's paired with a creature with soulbond.
+timing=main
+oracle=Flowering Lumberknot can't attack or block unless it's paired with a creature with soulbond.

@@ -1,0 +1,11 @@
+name=Master Warcraft
+url=http://magiccards.info/query?q=%21Master+Warcraft
+image=http://mtgimage.com/card/master%20warcraft.jpg
+rarity=R
+type=Instant
+cost={2}{R/W}{R/W}
+effect=Cast SN only before attackers are declared.;\
+        You choose which creatures attack this turn.;\
+        You choose which creatures block this turn and how those creatures block.
+timing=removal
+oracle=Cast Master Warcraft only before attackers are declared. You choose which creatures attack this turn. You choose which creatures block this turn and how those creatures block.

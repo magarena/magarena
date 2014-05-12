@@ -1,0 +1,9 @@
+name=Hubris
+url=http://magiccards.info/query?q=%21Hubris
+image=http://mtgimage.com/card/hubris.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Return target creature and all Auras attached to it to their owners' hands.
+timing=removal
+oracle=Return target creature and all Auras attached to it to their owners' hands.

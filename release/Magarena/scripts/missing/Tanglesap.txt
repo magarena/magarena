@@ -1,0 +1,9 @@
+name=Tanglesap
+url=http://magiccards.info/query?q=%21Tanglesap
+image=http://mtgimage.com/card/tanglesap.jpg
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Prevent all combat damage that would be dealt this turn by creatures without trample.
+timing=removal
+oracle=Prevent all combat damage that would be dealt this turn by creatures without trample.

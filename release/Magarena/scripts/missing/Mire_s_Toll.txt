@@ -1,0 +1,9 @@
+name=Mire's Toll
+url=http://magiccards.info/query?q=%21Mire%27s+Toll
+image=http://mtgimage.com/card/mire%27s%20toll.jpg
+rarity=C
+type=Sorcery
+cost={B}
+effect=Target player reveals a number of cards from his or her hand equal to the number of Swamps you control. You choose one of them. That player discards that card.
+timing=main
+oracle=Target player reveals a number of cards from his or her hand equal to the number of Swamps you control. You choose one of them. That player discards that card.

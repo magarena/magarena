@@ -1,0 +1,13 @@
+name=Council of the Absolute
+url=http://magiccards.info/query?q=%21Council+of+the+Absolute
+image=http://mtgimage.com/card/council%20of%20the%20absolute.jpg
+rarity=M
+type=Creature
+subtype=Human,Advisor
+cost={2}{W}{U}
+pt=2/4
+ability=As SN enters the battlefield, name a card other than a creature or land card.;\
+        Your opponents can't cast cards with the chosen name.;\
+        Spells with the chosen name you cast cost {2} less to cast.
+timing=main
+oracle=As Council of the Absolute enters the battlefield, name a card other than a creature or land card. Your opponents can't cast cards with the chosen name. Spells with the chosen name you cast cost {2} less to cast.

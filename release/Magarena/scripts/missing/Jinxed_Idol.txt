@@ -1,0 +1,10 @@
+name=Jinxed Idol
+url=http://magiccards.info/query?q=%21Jinxed+Idol
+image=http://mtgimage.com/card/jinxed%20idol.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=At the beginning of your upkeep, SN deals 2 damage to you.;\
+        Sacrifice a creature: Target opponent gains control of SN.
+timing=main
+oracle=At the beginning of your upkeep, Jinxed Idol deals 2 damage to you. Sacrifice a creature: Target opponent gains control of Jinxed Idol.

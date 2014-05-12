@@ -1,0 +1,13 @@
+name=Petrified Wood-Kin
+url=http://magiccards.info/query?q=%21Petrified+Wood-Kin
+image=http://mtgimage.com/card/petrified%20wood-kin.jpg
+rarity=R
+type=Creature
+subtype=Elemental,Warrior
+cost={6}{G}
+pt=3/3
+ability=SN can't be countered.;\
+        Bloodthirst X;\
+        Protection from instants
+timing=main
+oracle=Petrified Wood-Kin can't be countered. Bloodthirst X. Protection from instants

@@ -1,0 +1,9 @@
+name=Pyramids
+url=http://magiccards.info/query?q=%21Pyramids
+image=http://mtgimage.com/card/pyramids.jpg
+rarity=R
+type=Artifact
+cost={6}
+ability={2}: Choose one — Destroy target Aura attached to a land; or the next time target land would be destroyed this turn, remove all damage marked on it instead.
+timing=main
+oracle={2}: Choose one — Destroy target Aura attached to a land; or the next time target land would be destroyed this turn, remove all damage marked on it instead.

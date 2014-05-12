@@ -1,0 +1,10 @@
+name=Overlaid Terrain
+url=http://magiccards.info/query?q=%21Overlaid+Terrain
+image=http://mtgimage.com/card/overlaid%20terrain.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}{G}
+ability=As SN enters the battlefield, sacrifice all lands you control.;\
+        Lands you control have "{T}: Add two mana of any one color to your mana pool."
+timing=main
+oracle=As Overlaid Terrain enters the battlefield, sacrifice all lands you control. Lands you control have "{T}: Add two mana of any one color to your mana pool."

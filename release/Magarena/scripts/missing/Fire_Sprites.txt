@@ -1,0 +1,12 @@
+name=Fire Sprites
+url=http://magiccards.info/query?q=%21Fire+Sprites
+image=http://mtgimage.com/card/fire%20sprites.jpg
+rarity=C
+type=Creature
+subtype=Faerie
+cost={1}{G}
+pt=1/1
+ability=Flying;\
+        {G}, {T}: Add {R} to your mana pool.
+timing=main
+oracle=Flying. {G}, {T}: Add {R} to your mana pool.

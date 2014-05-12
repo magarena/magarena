@@ -1,0 +1,13 @@
+name=Rakdos, Lord of Riots
+url=http://magiccards.info/query?q=%21Rakdos%2C+Lord+of+Riots
+image=http://mtgimage.com/card/rakdos%2C%20lord%20of%20riots.jpg
+rarity=M
+type=Creature
+subtype=Demon
+cost={B}{B}{R}{R}
+pt=6/6
+ability=You can't cast SN unless an opponent lost life this turn.;\
+        Flying, trample;\
+        Creature spells you cast cost {1} less to cast for each 1 life your opponents have lost this turn.
+timing=main
+oracle=You can't cast Rakdos, Lord of Riots unless an opponent lost life this turn. Flying, trample. Creature spells you cast cost {1} less to cast for each 1 life your opponents have lost this turn.

@@ -1,0 +1,11 @@
+name=Rimewind Taskmage
+url=http://magiccards.info/query?q=%21Rimewind+Taskmage
+image=http://mtgimage.com/card/rimewind%20taskmage.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/2
+ability={1}, {T}: You may tap or untap target permanent. Activate this ability only if you control four or more snow permanents.
+timing=main
+oracle={1}, {T}: You may tap or untap target permanent. Activate this ability only if you control four or more snow permanents.

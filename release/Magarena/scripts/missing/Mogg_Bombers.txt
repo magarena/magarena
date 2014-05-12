@@ -1,0 +1,11 @@
+name=Mogg Bombers
+url=http://magiccards.info/query?q=%21Mogg+Bombers
+image=http://mtgimage.com/card/mogg%20bombers.jpg
+rarity=C
+type=Creature
+subtype=Goblin
+cost={3}{R}
+pt=3/4
+ability=When another creature enters the battlefield, sacrifice SN and it deals 3 damage to target player.
+timing=main
+oracle=When another creature enters the battlefield, sacrifice Mogg Bombers and it deals 3 damage to target player.

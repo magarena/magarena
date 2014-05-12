@@ -1,0 +1,9 @@
+name=Saproling Cluster
+url=http://magiccards.info/query?q=%21Saproling+Cluster
+image=http://mtgimage.com/card/saproling%20cluster.jpg
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability={1}, Discard a card: Put a 1/1 green Saproling creature token onto the battlefield. Any player may activate this ability.
+timing=main
+oracle={1}, Discard a card: Put a 1/1 green Saproling creature token onto the battlefield. Any player may activate this ability.

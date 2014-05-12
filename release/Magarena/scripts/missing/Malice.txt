@@ -1,0 +1,9 @@
+name=Malice
+url=http://magiccards.info/query?q=%21Malice
+image=http://mtgimage.com/card/spitemalice.jpg
+rarity=U
+type=Instant
+cost={3}{B}
+effect=Destroy target nonblack creature. It can't be regenerated.
+timing=removal
+oracle=Destroy target nonblack creature. It can't be regenerated.

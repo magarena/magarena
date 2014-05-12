@@ -1,0 +1,11 @@
+name=Living Inferno
+url=http://magiccards.info/query?q=%21Living+Inferno
+image=http://mtgimage.com/card/living%20inferno.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={6}{R}{R}
+pt=8/5
+ability={T}: SN deals damage equal to its power divided as you choose among any number of target creatures. Each of those creatures deals damage equal to its power to SN.
+timing=main
+oracle={T}: Living Inferno deals damage equal to its power divided as you choose among any number of target creatures. Each of those creatures deals damage equal to its power to Living Inferno.

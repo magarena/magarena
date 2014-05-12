@@ -1,0 +1,13 @@
+name=Gnarled Scarhide
+url=http://magiccards.info/query?q=%21Gnarled+Scarhide
+image=http://mtgimage.com/card/gnarled%20scarhide.jpg
+rarity=U
+type=Enchantment,Creature
+subtype=Minotaur
+cost={B}
+pt=2/1
+ability=Bestow {3}{B};\
+        SN can't block.;\
+        Enchanted creature gets +2/+1 and can't block.
+timing=main
+oracle=Bestow {3}{B}. Gnarled Scarhide can't block. Enchanted creature gets +2/+1 and can't block.

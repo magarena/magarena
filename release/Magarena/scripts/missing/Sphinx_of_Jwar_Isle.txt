@@ -1,0 +1,12 @@
+name=Sphinx of Jwar Isle
+url=http://magiccards.info/query?q=%21Sphinx+of+Jwar+Isle
+image=http://mtgimage.com/card/sphinx%20of%20jwar%20isle.jpg
+rarity=R
+type=Creature
+subtype=Sphinx
+cost={4}{U}{U}
+pt=5/5
+ability=Flying, shroud;\
+        You may look at the top card of your library.
+timing=main
+oracle=Flying, shroud. You may look at the top card of your library.

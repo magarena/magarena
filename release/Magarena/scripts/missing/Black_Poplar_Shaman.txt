@@ -1,0 +1,11 @@
+name=Black Poplar Shaman
+url=http://magiccards.info/query?q=%21Black+Poplar+Shaman
+image=http://mtgimage.com/card/black%20poplar%20shaman.jpg
+rarity=C
+type=Creature
+subtype=Treefolk,Shaman
+cost={2}{B}
+pt=1/3
+ability={2}{B}: Regenerate target Treefolk.
+timing=main
+oracle={2}{B}: Regenerate target Treefolk.

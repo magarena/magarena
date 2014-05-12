@@ -1,0 +1,11 @@
+name=Keeper of the Beasts
+url=http://magiccards.info/query?q=%21Keeper+of+the+Beasts
+image=http://mtgimage.com/card/keeper%20of%20the%20beasts.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={G}{G}
+pt=1/2
+ability={G}, {T}: Choose target opponent who controlled more creatures than you did as you activated this ability. Put a 2/2 green Beast creature token onto the battlefield.
+timing=main
+oracle={G}, {T}: Choose target opponent who controlled more creatures than you did as you activated this ability. Put a 2/2 green Beast creature token onto the battlefield.

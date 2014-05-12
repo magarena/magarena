@@ -1,0 +1,9 @@
+name=Lost in the Mist
+url=http://magiccards.info/query?q=%21Lost+in+the+Mist
+image=http://mtgimage.com/card/lost%20in%20the%20mist.jpg
+rarity=C
+type=Instant
+cost={3}{U}{U}
+effect=Counter target spell. Return target permanent to its owner's hand.
+timing=removal
+oracle=Counter target spell. Return target permanent to its owner's hand.

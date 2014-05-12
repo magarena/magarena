@@ -1,0 +1,11 @@
+name=Alaborn Veteran
+url=http://magiccards.info/query?q=%21Alaborn+Veteran
+image=http://mtgimage.com/card/alaborn%20veteran.jpg
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={2}{W}
+pt=2/2
+ability={T}: Target creature gets +2/+2 until end of turn. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Target creature gets +2/+2 until end of turn. Activate this ability only during your turn, before attackers are declared.

@@ -1,0 +1,9 @@
+name=Feast of Flesh
+url=http://magiccards.info/query?q=%21Feast+of+Flesh
+image=http://mtgimage.com/card/feast%20of%20flesh.jpg
+rarity=C
+type=Sorcery
+cost={B}
+effect=SN deals X damage to target creature and you gain X life, where X is 1 plus the number of cards named SN in all graveyards.
+timing=main
+oracle=Feast of Flesh deals X damage to target creature and you gain X life, where X is 1 plus the number of cards named Feast of Flesh in all graveyards.

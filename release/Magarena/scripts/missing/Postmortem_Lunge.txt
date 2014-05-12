@@ -1,0 +1,9 @@
+name=Postmortem Lunge
+url=http://magiccards.info/query?q=%21Postmortem+Lunge
+image=http://mtgimage.com/card/postmortem%20lunge.jpg
+rarity=U
+type=Sorcery
+cost={X}{P/B}
+effect=Return target creature card with converted mana cost X from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step.
+timing=main
+oracle=Return target creature card with converted mana cost X from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step.

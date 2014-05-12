@@ -1,0 +1,9 @@
+name=Gravity Sphere
+url=http://magiccards.info/query?q=%21Gravity+Sphere
+image=http://mtgimage.com/card/gravity%20sphere.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability=All creatures lose flying.
+timing=main
+oracle=All creatures lose flying.

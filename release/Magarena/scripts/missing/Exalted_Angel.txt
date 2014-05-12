@@ -1,0 +1,13 @@
+name=Exalted Angel
+url=http://magiccards.info/query?q=%21Exalted+Angel
+image=http://mtgimage.com/card/exalted%20angel.jpg
+rarity=R
+type=Creature
+subtype=Angel
+cost={4}{W}{W}
+pt=4/5
+ability=Flying;\
+        Whenever SN deals damage, you gain that much life.;\
+        Morph {2}{W}{W}
+timing=main
+oracle=Flying. Whenever Exalted Angel deals damage, you gain that much life. Morph {2}{W}{W}

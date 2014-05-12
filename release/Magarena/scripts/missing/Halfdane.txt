@@ -1,0 +1,11 @@
+name=Halfdane
+url=http://magiccards.info/query?q=%21Halfdane
+image=http://mtgimage.com/card/halfdane.jpg
+rarity=R
+type=Creature
+subtype=Shapeshifter
+cost={1}{W}{U}{B}
+pt=3/3
+ability=At the beginning of your upkeep, SN's power and toughness become equal to the power and toughness of target creature other than SN until the end of your next upkeep.
+timing=main
+oracle=At the beginning of your upkeep, Halfdane's power and toughness become equal to the power and toughness of target creature other than Halfdane until the end of your next upkeep.

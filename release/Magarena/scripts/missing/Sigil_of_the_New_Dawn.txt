@@ -1,0 +1,9 @@
+name=Sigil of the New Dawn
+url=http://magiccards.info/query?q=%21Sigil+of+the+New+Dawn
+image=http://mtgimage.com/card/sigil%20of%20the%20new%20dawn.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}
+ability=Whenever a creature is put into your graveyard from the battlefield, you may pay {1}{W}. If you do, return that card to your hand.
+timing=main
+oracle=Whenever a creature is put into your graveyard from the battlefield, you may pay {1}{W}. If you do, return that card to your hand.

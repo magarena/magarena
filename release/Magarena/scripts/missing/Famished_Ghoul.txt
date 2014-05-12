@@ -1,0 +1,11 @@
+name=Famished Ghoul
+url=http://magiccards.info/query?q=%21Famished+Ghoul
+image=http://mtgimage.com/card/famished%20ghoul.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=3/2
+ability={1}{B}, Sacrifice SN: Exile up to two target cards from a single graveyard.
+timing=main
+oracle={1}{B}, Sacrifice Famished Ghoul: Exile up to two target cards from a single graveyard.

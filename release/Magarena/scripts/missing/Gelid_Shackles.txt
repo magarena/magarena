@@ -1,0 +1,12 @@
+name=Gelid Shackles
+url=http://magiccards.info/query?q=%21Gelid+Shackles
+image=http://mtgimage.com/card/gelid%20shackles.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        Enchanted creature can't block, and its activated abilities can't be activated.;\
+        {S}: Enchanted creature gains defender until end of turn.
+timing=main
+oracle=Enchant creature. Enchanted creature can't block, and its activated abilities can't be activated. {S}: Enchanted creature gains defender until end of turn.

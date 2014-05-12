@@ -1,0 +1,12 @@
+name=Time Vault
+url=http://magiccards.info/query?q=%21Time+Vault
+image=http://mtgimage.com/card/time%20vault.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=SN enters the battlefield tapped.;\
+        SN doesn't untap during your untap step.;\
+        If you would begin your turn while SN is tapped, you may skip that turn instead. If you do, untap SN.;\
+        {T}: Take an extra turn after this one.
+timing=main
+oracle=Time Vault enters the battlefield tapped. Time Vault doesn't untap during your untap step. If you would begin your turn while Time Vault is tapped, you may skip that turn instead. If you do, untap Time Vault. {T}: Take an extra turn after this one.

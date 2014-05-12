@@ -1,0 +1,8 @@
+name=Urborg, Tomb of Yawgmoth
+url=http://magiccards.info/query?q=%21Urborg%2C+Tomb+of+Yawgmoth
+image=http://mtgimage.com/card/urborg%2C%20tomb%20of%20yawgmoth.jpg
+rarity=R
+type=Land
+ability=Each land is a Swamp in addition to its other land types.
+timing=main
+oracle=Each land is a Swamp in addition to its other land types.

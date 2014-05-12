@@ -1,0 +1,11 @@
+name=Rootwater Matriarch
+url=http://magiccards.info/query?q=%21Rootwater+Matriarch
+image=http://mtgimage.com/card/rootwater%20matriarch.jpg
+rarity=R
+type=Creature
+subtype=Merfolk
+cost={2}{U}{U}
+pt=2/3
+ability={T}: Gain control of target creature for as long as that creature is enchanted.
+timing=main
+oracle={T}: Gain control of target creature for as long as that creature is enchanted.

@@ -1,0 +1,12 @@
+name=Neko-Te
+url=http://magiccards.info/query?q=%21Neko-Te
+image=http://mtgimage.com/card/neko-te.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Whenever equipped creature deals damage to a creature, tap that creature. That creature doesn't untap during its controller's untap step for as long as SN remains on the battlefield.;\
+        Whenever equipped creature deals damage to a player, that player loses 1 life.;\
+        Equip {2}
+timing=main
+oracle=Whenever equipped creature deals damage to a creature, tap that creature. That creature doesn't untap during its controller's untap step for as long as Neko-Te remains on the battlefield. Whenever equipped creature deals damage to a player, that player loses 1 life. Equip {2}

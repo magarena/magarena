@@ -1,0 +1,9 @@
+name=Mycosynth Wellspring
+url=http://magiccards.info/query?q=%21Mycosynth+Wellspring
+image=http://mtgimage.com/card/mycosynth%20wellspring.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability=When SN enters the battlefield or is put into a graveyard from the battlefield, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=When Mycosynth Wellspring enters the battlefield or is put into a graveyard from the battlefield, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.

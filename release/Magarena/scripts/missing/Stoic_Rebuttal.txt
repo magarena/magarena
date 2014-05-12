@@ -1,0 +1,10 @@
+name=Stoic Rebuttal
+url=http://magiccards.info/query?q=%21Stoic+Rebuttal
+image=http://mtgimage.com/card/stoic%20rebuttal.jpg
+rarity=C
+type=Instant
+cost={1}{U}{U}
+effect=Metalcraft — SN costs {1} less to cast if you control three or more artifacts.;\
+        Counter target spell.
+timing=removal
+oracle=Metalcraft — Stoic Rebuttal costs {1} less to cast if you control three or more artifacts. Counter target spell.

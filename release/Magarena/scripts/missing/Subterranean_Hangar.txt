@@ -1,0 +1,10 @@
+name=Subterranean Hangar
+url=http://magiccards.info/query?q=%21Subterranean+Hangar
+image=http://mtgimage.com/card/subterranean%20hangar.jpg
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Put a storage counter on SN.;\
+        {T}, Remove any number of storage counters from SN: Add {B} to your mana pool for each storage counter removed this way.
+timing=main
+oracle=Subterranean Hangar enters the battlefield tapped. {T}: Put a storage counter on Subterranean Hangar. {T}, Remove any number of storage counters from Subterranean Hangar: Add {B} to your mana pool for each storage counter removed this way.

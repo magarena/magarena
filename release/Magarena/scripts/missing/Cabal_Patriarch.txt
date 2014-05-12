@@ -1,0 +1,12 @@
+name=Cabal Patriarch
+url=http://magiccards.info/query?q=%21Cabal+Patriarch
+image=http://mtgimage.com/card/cabal%20patriarch.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={3}{B}{B}{B}
+pt=5/5
+ability={2}{B}, Sacrifice a creature: Target creature gets -2/-2 until end of turn.;\
+        {2}{B}, Exile a creature card from your graveyard: Target creature gets -2/-2 until end of turn.
+timing=main
+oracle={2}{B}, Sacrifice a creature: Target creature gets -2/-2 until end of turn. {2}{B}, Exile a creature card from your graveyard: Target creature gets -2/-2 until end of turn.

@@ -1,0 +1,10 @@
+name=Evangelize
+url=http://magiccards.info/query?q=%21Evangelize
+image=http://mtgimage.com/card/evangelize.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}
+effect=Buyback {2}{W}{W};\
+        Gain control of target creature of an opponent's choice he or she controls.
+timing=main
+oracle=Buyback {2}{W}{W}. Gain control of target creature of an opponent's choice he or she controls.

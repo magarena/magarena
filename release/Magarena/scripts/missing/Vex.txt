@@ -1,0 +1,9 @@
+name=Vex
+url=http://magiccards.info/query?q=%21Vex
+image=http://mtgimage.com/card/vex.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target spell. That spell's controller may draw a card.
+timing=removal
+oracle=Counter target spell. That spell's controller may draw a card.

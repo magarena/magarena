@@ -1,0 +1,11 @@
+name=Molten Disaster
+url=http://magiccards.info/query?q=%21Molten+Disaster
+image=http://mtgimage.com/card/molten%20disaster.jpg
+rarity=R
+type=Sorcery
+cost={X}{R}{R}
+effect=Kicker {R};\
+        If SN was kicked, it has split second.;\
+        SN deals X damage to each creature without flying and each player.
+timing=main
+oracle=Kicker {R}. If Molten Disaster was kicked, it has split second.. Molten Disaster deals X damage to each creature without flying and each player.

@@ -1,0 +1,12 @@
+name=Caustic Wasps
+url=http://magiccards.info/query?q=%21Caustic+Wasps
+image=http://mtgimage.com/card/caustic%20wasps.jpg
+rarity=U
+type=Creature
+subtype=Insect
+cost={2}{G}
+pt=1/1
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you may destroy target artifact that player controls.
+timing=main
+oracle=Flying. Whenever Caustic Wasps deals combat damage to a player, you may destroy target artifact that player controls.

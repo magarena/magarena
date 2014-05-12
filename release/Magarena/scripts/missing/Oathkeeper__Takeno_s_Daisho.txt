@@ -1,0 +1,13 @@
+name=Oathkeeper, Takeno's Daisho
+url=http://magiccards.info/query?q=%21Oathkeeper%2C+Takeno%27s+Daisho
+image=http://mtgimage.com/card/oathkeeper%2C%20takeno%27s%20daisho.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature gets +3/+1.;\
+        Whenever equipped creature dies, return that card to the battlefield under your control if it's a Samurai card.;\
+        When SN is put into a graveyard from the battlefield, exile equipped creature.;\
+        Equip {2}
+timing=main
+oracle=Equipped creature gets +3/+1. Whenever equipped creature dies, return that card to the battlefield under your control if it's a Samurai card. When Oathkeeper, Takeno's Daisho is put into a graveyard from the battlefield, exile equipped creature. Equip {2}

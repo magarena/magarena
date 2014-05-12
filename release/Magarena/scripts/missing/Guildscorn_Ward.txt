@@ -1,0 +1,11 @@
+name=Guildscorn Ward
+url=http://magiccards.info/query?q=%21Guildscorn+Ward
+image=http://mtgimage.com/card/guildscorn%20ward.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        Enchanted creature has protection from multicolored.
+timing=main
+oracle=Enchant creature. Enchanted creature has protection from multicolored.

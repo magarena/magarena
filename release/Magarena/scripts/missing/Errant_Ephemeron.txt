@@ -1,0 +1,12 @@
+name=Errant Ephemeron
+url=http://magiccards.info/query?q=%21Errant+Ephemeron
+image=http://mtgimage.com/card/errant%20ephemeron.jpg
+rarity=C
+type=Creature
+subtype=Illusion
+cost={6}{U}
+pt=4/4
+ability=Flying;\
+        Suspend 4—{1}{U}
+timing=main
+oracle=Flying. Suspend 4—{1}{U}

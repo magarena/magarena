@@ -1,0 +1,11 @@
+name=Cyclopean Giant
+url=http://magiccards.info/query?q=%21Cyclopean+Giant
+image=http://mtgimage.com/card/cyclopean%20giant.jpg
+rarity=C
+type=Creature
+subtype=Zombie,Giant
+cost={2}{B}{B}
+pt=4/2
+ability=When SN dies, target land becomes a Swamp. Exile SN.
+timing=main
+oracle=When Cyclopean Giant dies, target land becomes a Swamp. Exile Cyclopean Giant.

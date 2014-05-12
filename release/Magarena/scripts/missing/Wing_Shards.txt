@@ -1,0 +1,10 @@
+name=Wing Shards
+url=http://magiccards.info/query?q=%21Wing+Shards
+image=http://mtgimage.com/card/wing%20shards.jpg
+rarity=U
+type=Instant
+cost={1}{W}{W}
+effect=Target player sacrifices an attacking creature.;\
+        Storm
+timing=removal
+oracle=Target player sacrifices an attacking creature. Storm

@@ -1,0 +1,11 @@
+name=Hearth Kami
+url=http://magiccards.info/query?q=%21Hearth+Kami
+image=http://mtgimage.com/card/hearth%20kami.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={1}{R}
+pt=2/1
+ability={X}, Sacrifice SN: Destroy target artifact with converted mana cost X.
+timing=main
+oracle={X}, Sacrifice Hearth Kami: Destroy target artifact with converted mana cost X.

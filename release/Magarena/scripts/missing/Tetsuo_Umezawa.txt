@@ -1,0 +1,12 @@
+name=Tetsuo Umezawa
+url=http://magiccards.info/query?q=%21Tetsuo+Umezawa
+image=http://mtgimage.com/card/tetsuo%20umezawa.jpg
+rarity=R
+type=Creature
+subtype=Human,Archer
+cost={U}{B}{R}
+pt=3/3
+ability=SN can't be the target of Aura spells.;\
+        {U}{B}{B}{R}, {T}: Destroy target tapped or blocking creature.
+timing=main
+oracle=Tetsuo Umezawa can't be the target of Aura spells. {U}{B}{B}{R}, {T}: Destroy target tapped or blocking creature.

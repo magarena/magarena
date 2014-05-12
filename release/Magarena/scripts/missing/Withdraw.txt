@@ -1,0 +1,9 @@
+name=Withdraw
+url=http://magiccards.info/query?q=%21Withdraw
+image=http://mtgimage.com/card/withdraw.jpg
+rarity=C
+type=Instant
+cost={U}{U}
+effect=Return target creature to its owner's hand. Then return another target creature to its owner's hand unless its controller pays {1}.
+timing=removal
+oracle=Return target creature to its owner's hand. Then return another target creature to its owner's hand unless its controller pays {1}.

@@ -1,0 +1,12 @@
+name=Silver Drake
+url=http://magiccards.info/query?q=%21Silver+Drake
+image=http://mtgimage.com/card/silver%20drake.jpg
+rarity=C
+type=Creature
+subtype=Drake
+cost={1}{W}{U}
+pt=3/3
+ability=Flying;\
+        When SN enters the battlefield, return a white or blue creature you control to its owner's hand.
+timing=main
+oracle=Flying. When Silver Drake enters the battlefield, return a white or blue creature you control to its owner's hand.

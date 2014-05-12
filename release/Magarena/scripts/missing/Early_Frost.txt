@@ -1,0 +1,9 @@
+name=Early Frost
+url=http://magiccards.info/query?q=%21Early+Frost
+image=http://mtgimage.com/card/early%20frost.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Tap up to three target lands.
+timing=removal
+oracle=Tap up to three target lands.

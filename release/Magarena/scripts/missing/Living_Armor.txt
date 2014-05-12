@@ -1,0 +1,9 @@
+name=Living Armor
+url=http://magiccards.info/query?q=%21Living+Armor
+image=http://mtgimage.com/card/living%20armor.jpg
+rarity=U
+type=Artifact
+cost={4}
+ability={T}, Sacrifice SN: Put X +0/+1 counters on target creature, where X is that creature's converted mana cost.
+timing=main
+oracle={T}, Sacrifice Living Armor: Put X +0/+1 counters on target creature, where X is that creature's converted mana cost.

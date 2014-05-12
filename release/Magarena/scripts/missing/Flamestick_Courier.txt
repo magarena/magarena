@@ -1,0 +1,12 @@
+name=Flamestick Courier
+url=http://magiccards.info/query?q=%21Flamestick+Courier
+image=http://mtgimage.com/card/flamestick%20courier.jpg
+rarity=U
+type=Creature
+subtype=Goblin
+cost={2}{R}
+pt=2/1
+ability=You may choose not to untap SN during your untap step.;\
+        {2}{R}, {T}: Target Goblin creature gets +2/+2 and has haste for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Flamestick Courier during your untap step. {2}{R}, {T}: Target Goblin creature gets +2/+2 and has haste for as long as Flamestick Courier remains tapped.

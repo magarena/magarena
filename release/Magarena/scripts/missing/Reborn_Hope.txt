@@ -1,0 +1,9 @@
+name=Reborn Hope
+url=http://magiccards.info/query?q=%21Reborn+Hope
+image=http://mtgimage.com/card/reborn%20hope.jpg
+rarity=U
+type=Sorcery
+cost={G}{W}
+effect=Return target multicolored card from your graveyard to your hand.
+timing=main
+oracle=Return target multicolored card from your graveyard to your hand.

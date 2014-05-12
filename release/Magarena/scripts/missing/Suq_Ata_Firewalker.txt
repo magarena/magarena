@@ -1,0 +1,12 @@
+name=Suq'Ata Firewalker
+url=http://magiccards.info/query?q=%21Suq%27Ata+Firewalker
+image=http://mtgimage.com/card/suq%27ata%20firewalker.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{U}
+pt=0/1
+ability=SN can't be the target of red spells or abilities from red sources.;\
+        {T}: SN deals 1 damage to target creature or player.
+timing=main
+oracle=Suq'Ata Firewalker can't be the target of red spells or abilities from red sources. {T}: Suq'Ata Firewalker deals 1 damage to target creature or player.

@@ -1,0 +1,10 @@
+name=Alive
+url=http://magiccards.info/query?q=%21Alive
+image=http://mtgimage.com/card/alivewell.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Put a 3/3 green Centaur creature token onto the battlefield.;\
+        Fuse
+timing=main
+oracle=Put a 3/3 green Centaur creature token onto the battlefield. Fuse

@@ -1,0 +1,9 @@
+name=Mark of Asylum
+url=http://magiccards.info/query?q=%21Mark+of+Asylum
+image=http://mtgimage.com/card/mark%20of%20asylum.jpg
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=Prevent all noncombat damage that would be dealt to creatures you control.
+timing=main
+oracle=Prevent all noncombat damage that would be dealt to creatures you control.

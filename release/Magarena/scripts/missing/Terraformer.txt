@@ -1,0 +1,11 @@
+name=Terraformer
+url=http://magiccards.info/query?q=%21Terraformer
+image=http://mtgimage.com/card/terraformer.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=2/2
+ability={1}: Choose a basic land type. Each land you control becomes that type until end of turn.
+timing=main
+oracle={1}: Choose a basic land type. Each land you control becomes that type until end of turn.

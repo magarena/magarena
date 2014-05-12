@@ -1,0 +1,9 @@
+name=Replenish
+url=http://magiccards.info/query?q=%21Replenish
+image=http://mtgimage.com/card/replenish.jpg
+rarity=R
+type=Sorcery
+cost={3}{W}
+effect=Return all enchantment cards from your graveyard to the battlefield.
+timing=main
+oracle=Return all enchantment cards from your graveyard to the battlefield.

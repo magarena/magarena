@@ -1,0 +1,9 @@
+name=Soulscour
+url=http://magiccards.info/query?q=%21Soulscour
+image=http://mtgimage.com/card/soulscour.jpg
+rarity=R
+type=Sorcery
+cost={7}{W}{W}{W}
+effect=Destroy all nonartifact permanents.
+timing=main
+oracle=Destroy all nonartifact permanents.

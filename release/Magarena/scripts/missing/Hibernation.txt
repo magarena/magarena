@@ -1,0 +1,9 @@
+name=Hibernation
+url=http://magiccards.info/query?q=%21Hibernation
+image=http://mtgimage.com/card/hibernation.jpg
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Return all green permanents to their owners' hands.
+timing=removal
+oracle=Return all green permanents to their owners' hands.

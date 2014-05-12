@@ -1,0 +1,9 @@
+name=Retraced Image
+url=http://magiccards.info/query?q=%21Retraced+Image
+image=http://mtgimage.com/card/retraced%20image.jpg
+rarity=R
+type=Sorcery
+cost={U}
+effect=Reveal a card in your hand, then put that card onto the battlefield if it has the same name as a permanent.
+timing=main
+oracle=Reveal a card in your hand, then put that card onto the battlefield if it has the same name as a permanent.

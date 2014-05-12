@@ -1,0 +1,11 @@
+name=Gulf Squid
+url=http://magiccards.info/query?q=%21Gulf+Squid
+image=http://mtgimage.com/card/gulf%20squid.jpg
+rarity=C
+type=Creature
+subtype=Squid,Beast
+cost={3}{U}
+pt=2/2
+ability=When SN enters the battlefield, tap all lands target player controls.
+timing=main
+oracle=When Gulf Squid enters the battlefield, tap all lands target player controls.

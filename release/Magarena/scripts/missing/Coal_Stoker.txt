@@ -1,0 +1,11 @@
+name=Coal Stoker
+url=http://magiccards.info/query?q=%21Coal+Stoker
+image=http://mtgimage.com/card/coal%20stoker.jpg
+rarity=C
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=3/3
+ability=When SN enters the battlefield, if you cast it from your hand, add {R}{R}{R} to your mana pool.
+timing=main
+oracle=When Coal Stoker enters the battlefield, if you cast it from your hand, add {R}{R}{R} to your mana pool.

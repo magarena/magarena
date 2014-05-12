@@ -1,0 +1,9 @@
+name=Boon Reflection
+url=http://magiccards.info/query?q=%21Boon+Reflection
+image=http://mtgimage.com/card/boon%20reflection.jpg
+rarity=R
+type=Enchantment
+cost={4}{W}
+ability=If you would gain life, you gain twice that much life instead.
+timing=main
+oracle=If you would gain life, you gain twice that much life instead.

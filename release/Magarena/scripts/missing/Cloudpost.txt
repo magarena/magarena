@@ -1,0 +1,10 @@
+name=Cloudpost
+url=http://magiccards.info/query?q=%21Cloudpost
+image=http://mtgimage.com/card/cloudpost.jpg
+rarity=C
+type=Land
+subtype=Locus
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {1} to your mana pool for each Locus on the battlefield.
+timing=main
+oracle=Cloudpost enters the battlefield tapped. {T}: Add {1} to your mana pool for each Locus on the battlefield.

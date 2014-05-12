@@ -1,0 +1,12 @@
+name=Coral Trickster
+url=http://magiccards.info/query?q=%21Coral+Trickster
+image=http://mtgimage.com/card/coral%20trickster.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Rogue
+cost={1}{U}
+pt=2/1
+ability=Morph {U};\
+        When SN is turned face up, you may tap or untap target permanent.
+timing=main
+oracle=Morph {U}. When Coral Trickster is turned face up, you may tap or untap target permanent.

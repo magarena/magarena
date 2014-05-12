@@ -1,0 +1,9 @@
+name=Mages' Contest
+url=http://magiccards.info/query?q=%21Mages%27+Contest
+image=http://mtgimage.com/card/mages%27%20contest.jpg
+rarity=R
+type=Instant
+cost={1}{R}{R}
+effect=You and target spell's controller bid life. You start the bidding with a bid of 1. In turn order, each player may top the high bid. The bidding ends if the high bid stands. The high bidder loses life equal to the high bid. If you win the bidding, counter that spell.
+timing=removal
+oracle=You and target spell's controller bid life. You start the bidding with a bid of 1. In turn order, each player may top the high bid. The bidding ends if the high bid stands. The high bidder loses life equal to the high bid. If you win the bidding, counter that spell.

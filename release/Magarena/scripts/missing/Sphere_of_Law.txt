@@ -1,0 +1,9 @@
+name=Sphere of Law
+url=http://magiccards.info/query?q=%21Sphere+of+Law
+image=http://mtgimage.com/card/sphere%20of%20law.jpg
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=If a red source would deal damage to you, prevent 2 of that damage.
+timing=main
+oracle=If a red source would deal damage to you, prevent 2 of that damage.

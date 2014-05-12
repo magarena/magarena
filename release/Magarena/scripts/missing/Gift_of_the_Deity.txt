@@ -1,0 +1,12 @@
+name=Gift of the Deity
+url=http://magiccards.info/query?q=%21Gift+of+the+Deity
+image=http://mtgimage.com/card/gift%20of%20the%20deity.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={4}{B/G}
+ability=Enchant creature;\
+        As long as enchanted creature is black, it gets +1/+1 and has deathtouch.;\
+        As long as enchanted creature is green, it gets +1/+1 and all creatures able to block it do so.
+timing=main
+oracle=Enchant creature. As long as enchanted creature is black, it gets +1/+1 and has deathtouch.. As long as enchanted creature is green, it gets +1/+1 and all creatures able to block it do so.

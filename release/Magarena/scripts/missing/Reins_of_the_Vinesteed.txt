@@ -1,0 +1,12 @@
+name=Reins of the Vinesteed
+url=http://magiccards.info/query?q=%21Reins+of+the+Vinesteed
+image=http://mtgimage.com/card/reins%20of%20the%20vinesteed.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.;\
+        When enchanted creature dies, you may return SN from your graveyard to the battlefield attached to a creature that shares a creature type with that creature.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+2. When enchanted creature dies, you may return Reins of the Vinesteed from your graveyard to the battlefield attached to a creature that shares a creature type with that creature.

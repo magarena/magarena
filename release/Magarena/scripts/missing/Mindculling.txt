@@ -1,0 +1,9 @@
+name=Mindculling
+url=http://magiccards.info/query?q=%21Mindculling
+image=http://mtgimage.com/card/mindculling.jpg
+rarity=U
+type=Sorcery
+cost={5}{U}
+effect=You draw two cards and target opponent discards two cards.
+timing=main
+oracle=You draw two cards and target opponent discards two cards.

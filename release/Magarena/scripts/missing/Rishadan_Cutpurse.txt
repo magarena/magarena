@@ -1,0 +1,11 @@
+name=Rishadan Cutpurse
+url=http://magiccards.info/query?q=%21Rishadan+Cutpurse
+image=http://mtgimage.com/card/rishadan%20cutpurse.jpg
+rarity=C
+type=Creature
+subtype=Human,Pirate
+cost={2}{U}
+pt=1/1
+ability=When SN enters the battlefield, each opponent sacrifices a permanent unless he or she pays {1}.
+timing=main
+oracle=When Rishadan Cutpurse enters the battlefield, each opponent sacrifices a permanent unless he or she pays {1}.

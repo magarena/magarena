@@ -1,0 +1,9 @@
+name=Thran Foundry
+url=http://magiccards.info/query?q=%21Thran+Foundry
+image=http://mtgimage.com/card/thran%20foundry.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={1}, {T}, Exile SN: Target player shuffles his or her graveyard into his or her library.
+timing=main
+oracle={1}, {T}, Exile Thran Foundry: Target player shuffles his or her graveyard into his or her library.

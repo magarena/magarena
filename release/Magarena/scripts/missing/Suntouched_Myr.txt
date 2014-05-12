@@ -1,0 +1,11 @@
+name=Suntouched Myr
+url=http://magiccards.info/query?q=%21Suntouched+Myr
+image=http://mtgimage.com/card/suntouched%20myr.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Myr
+cost={3}
+pt=0/0
+ability=Sunburst
+timing=main
+oracle=Sunburst

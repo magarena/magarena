@@ -1,0 +1,10 @@
+name=Ice
+url=http://magiccards.info/query?q=%21Ice
+image=http://mtgimage.com/card/fireice.jpg
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Tap target permanent.;\
+        Draw a card.
+timing=removal
+oracle=Tap target permanent. Draw a card.

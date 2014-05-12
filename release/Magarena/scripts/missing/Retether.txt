@@ -1,0 +1,9 @@
+name=Retether
+url=http://magiccards.info/query?q=%21Retether
+image=http://mtgimage.com/card/retether.jpg
+rarity=R
+type=Sorcery
+cost={3}{W}
+effect=Return each Aura card from your graveyard to the battlefield. Only creatures can be enchanted this way.
+timing=main
+oracle=Return each Aura card from your graveyard to the battlefield. Only creatures can be enchanted this way.

@@ -1,0 +1,9 @@
+name=Security Detail
+url=http://magiccards.info/query?q=%21Security+Detail
+image=http://mtgimage.com/card/security%20detail.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}
+ability={W}{W}: Put a 1/1 white Soldier creature token onto the battlefield. Activate this ability only if you control no creatures and only once each turn.
+timing=main
+oracle={W}{W}: Put a 1/1 white Soldier creature token onto the battlefield. Activate this ability only if you control no creatures and only once each turn.

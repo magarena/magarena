@@ -1,0 +1,11 @@
+name=Lys Alana Scarblade
+url=http://magiccards.info/query?q=%21Lys+Alana+Scarblade
+image=http://mtgimage.com/card/lys%20alana%20scarblade.jpg
+rarity=U
+type=Creature
+subtype=Elf,Assassin
+cost={2}{B}
+pt=1/1
+ability={T}, Discard an Elf card: Target creature gets -X/-X until end of turn, where X is the number of Elves you control.
+timing=main
+oracle={T}, Discard an Elf card: Target creature gets -X/-X until end of turn, where X is the number of Elves you control.

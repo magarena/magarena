@@ -1,0 +1,11 @@
+name=Reveka, Wizard Savant
+url=http://magiccards.info/query?q=%21Reveka%2C+Wizard+Savant
+image=http://mtgimage.com/card/reveka%2C%20wizard%20savant.jpg
+rarity=R
+type=Creature
+subtype=Dwarf,Wizard
+cost={2}{U}{U}
+pt=0/1
+ability={T}: SN deals 2 damage to target creature or player and doesn't untap during your next untap step.
+timing=main
+oracle={T}: Reveka, Wizard Savant deals 2 damage to target creature or player and doesn't untap during your next untap step.

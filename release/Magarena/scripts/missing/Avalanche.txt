@@ -1,0 +1,9 @@
+name=Avalanche
+url=http://magiccards.info/query?q=%21Avalanche
+image=http://mtgimage.com/card/avalanche.jpg
+rarity=U
+type=Sorcery
+cost={X}{2}{R}{R}
+effect=Destroy X target snow lands.
+timing=main
+oracle=Destroy X target snow lands.

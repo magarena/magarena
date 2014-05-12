@@ -1,0 +1,9 @@
+name=Vigean Intuition
+url=http://magiccards.info/query?q=%21Vigean+Intuition
+image=http://mtgimage.com/card/vigean%20intuition.jpg
+rarity=U
+type=Instant
+cost={3}{G}{U}
+effect=Choose a card type, then reveal the top four cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest into your graveyard.
+timing=removal
+oracle=Choose a card type, then reveal the top four cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest into your graveyard.

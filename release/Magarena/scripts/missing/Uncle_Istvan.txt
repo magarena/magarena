@@ -1,0 +1,11 @@
+name=Uncle Istvan
+url=http://magiccards.info/query?q=%21Uncle+Istvan
+image=http://mtgimage.com/card/uncle%20istvan.jpg
+rarity=U
+type=Creature
+subtype=Human
+cost={1}{B}{B}{B}
+pt=1/3
+ability=Prevent all damage that would be dealt to SN by creatures.
+timing=main
+oracle=Prevent all damage that would be dealt to Uncle Istvan by creatures.

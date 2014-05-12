@@ -1,0 +1,11 @@
+name=Akki Rockspeaker
+url=http://magiccards.info/query?q=%21Akki+Rockspeaker
+image=http://mtgimage.com/card/akki%20rockspeaker.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={1}{R}
+pt=1/1
+ability=When SN enters the battlefield, add {R} to your mana pool.
+timing=main
+oracle=When Akki Rockspeaker enters the battlefield, add {R} to your mana pool.

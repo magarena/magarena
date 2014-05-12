@@ -1,0 +1,13 @@
+name=Slumbering Dragon
+url=http://magiccards.info/query?q=%21Slumbering+Dragon
+image=http://mtgimage.com/card/slumbering%20dragon.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={R}
+pt=3/3
+ability=Flying;\
+        SN can't attack or block unless it has five or more +1/+1 counters on it.;\
+        Whenever a creature attacks you or a planeswalker you control, put a +1/+1 counter on SN.
+timing=main
+oracle=Flying. Slumbering Dragon can't attack or block unless it has five or more +1/+1 counters on it. Whenever a creature attacks you or a planeswalker you control, put a +1/+1 counter on Slumbering Dragon.

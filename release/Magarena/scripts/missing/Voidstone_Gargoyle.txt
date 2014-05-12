@@ -1,0 +1,14 @@
+name=Voidstone Gargoyle
+url=http://magiccards.info/query?q=%21Voidstone+Gargoyle
+image=http://mtgimage.com/card/voidstone%20gargoyle.jpg
+rarity=R
+type=Creature
+subtype=Gargoyle
+cost={3}{W}{W}
+pt=3/3
+ability=Flying;\
+        As SN enters the battlefield, name a nonland card.;\
+        The named card can't be cast.;\
+        Activated abilities of sources with the chosen name can't be activated.
+timing=main
+oracle=Flying. As Voidstone Gargoyle enters the battlefield, name a nonland card. The named card can't be cast. Activated abilities of sources with the chosen name can't be activated.

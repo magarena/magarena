@@ -1,0 +1,9 @@
+name=Bubble Matrix
+url=http://magiccards.info/query?q=%21Bubble+Matrix
+image=http://mtgimage.com/card/bubble%20matrix.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=Prevent all damage that would be dealt to creatures.
+timing=main
+oracle=Prevent all damage that would be dealt to creatures.

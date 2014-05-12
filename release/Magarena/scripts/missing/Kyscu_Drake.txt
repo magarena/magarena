@@ -1,0 +1,13 @@
+name=Kyscu Drake
+url=http://magiccards.info/query?q=%21Kyscu+Drake
+image=http://mtgimage.com/card/kyscu%20drake.jpg
+rarity=U
+type=Creature
+subtype=Drake
+cost={3}{G}
+pt=2/2
+ability=Flying;\
+        {G}: SN gets +0/+1 until end of turn. Activate this ability only once each turn.;\
+        Sacrifice SN and a creature named Spitting Drake: Search your library for a card named Viashivan Dragon and put that card onto the battlefield. Then shuffle your library.
+timing=main
+oracle=Flying. {G}: Kyscu Drake gets +0/+1 until end of turn. Activate this ability only once each turn. Sacrifice Kyscu Drake and a creature named Spitting Drake: Search your library for a card named Viashivan Dragon and put that card onto the battlefield. Then shuffle your library.

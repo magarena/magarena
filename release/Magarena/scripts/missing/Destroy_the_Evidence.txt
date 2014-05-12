@@ -1,0 +1,9 @@
+name=Destroy the Evidence
+url=http://magiccards.info/query?q=%21Destroy+the+Evidence
+image=http://mtgimage.com/card/destroy%20the%20evidence.jpg
+rarity=C
+type=Sorcery
+cost={4}{B}
+effect=Destroy target land. Its controller reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.
+timing=main
+oracle=Destroy target land. Its controller reveals cards from the top of his or her library until he or she reveals a land card, then puts those cards into his or her graveyard.

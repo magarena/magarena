@@ -1,0 +1,11 @@
+name=Blizzard
+url=http://magiccards.info/query?q=%21Blizzard
+image=http://mtgimage.com/card/blizzard.jpg
+rarity=R
+type=Enchantment
+cost={G}{G}
+ability=Cast SN only if you control a snow land.;\
+        Cumulative upkeep {2};\
+        Creatures with flying don't untap during their controllers' untap steps.
+timing=main
+oracle=Cast Blizzard only if you control a snow land. Cumulative upkeep {2}. Creatures with flying don't untap during their controllers' untap steps.

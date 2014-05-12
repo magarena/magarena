@@ -1,0 +1,11 @@
+name=Gaea's Herald
+url=http://magiccards.info/query?q=%21Gaea%27s+Herald
+image=http://mtgimage.com/card/gaea%27s%20herald.jpg
+rarity=R
+type=Creature
+subtype=Elf
+cost={1}{G}
+pt=1/1
+ability=Creature spells can't be countered.
+timing=main
+oracle=Creature spells can't be countered.

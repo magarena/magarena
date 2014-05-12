@@ -1,0 +1,13 @@
+name=Cocoon
+url=http://magiccards.info/query?q=%21Cocoon
+image=http://mtgimage.com/card/cocoon.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchant creature you control;\
+        Enchanted creature doesn't untap during your untap step if SN has a pupa counter on it.;\
+        When SN enters the battlefield, tap enchanted creature and put three pupa counters on SN.;\
+        At the beginning of your upkeep, remove a pupa counter from SN. If you can't, sacrifice it, put a +1/+1 counter on enchanted creature, and that creature gains flying.
+timing=main
+oracle=Enchant creature you control. Enchanted creature doesn't untap during your untap step if Cocoon has a pupa counter on it. When Cocoon enters the battlefield, tap enchanted creature and put three pupa counters on Cocoon. At the beginning of your upkeep, remove a pupa counter from Cocoon. If you can't, sacrifice it, put a +1/+1 counter on enchanted creature, and that creature gains flying.

@@ -1,0 +1,13 @@
+name=Boldwyr Intimidator
+url=http://magiccards.info/query?q=%21Boldwyr+Intimidator
+image=http://mtgimage.com/card/boldwyr%20intimidator.jpg
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+cost={5}{R}{R}
+pt=5/5
+ability=Cowards can't block Warriors.;\
+        {R}: Target creature becomes a Coward until end of turn.;\
+        {2}{R}: Target creature becomes a Warrior until end of turn.
+timing=main
+oracle=Cowards can't block Warriors. {R}: Target creature becomes a Coward until end of turn. {2}{R}: Target creature becomes a Warrior until end of turn.

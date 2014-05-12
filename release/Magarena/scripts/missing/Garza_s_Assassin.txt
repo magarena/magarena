@@ -1,0 +1,12 @@
+name=Garza's Assassin
+url=http://magiccards.info/query?q=%21Garza%27s+Assassin
+image=http://mtgimage.com/card/garza%27s%20assassin.jpg
+rarity=R
+type=Creature
+subtype=Human,Assassin
+cost={B}{B}{B}
+pt=2/2
+ability=Sacrifice SN: Destroy target nonblack creature.;\
+        Recover—Pay half your life, rounded up.
+timing=main
+oracle=Sacrifice Garza's Assassin: Destroy target nonblack creature. Recover—Pay half your life, rounded up.

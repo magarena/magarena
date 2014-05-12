@@ -1,0 +1,12 @@
+name=Spinebiter
+url=http://magiccards.info/query?q=%21Spinebiter
+image=http://mtgimage.com/card/spinebiter.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={4}{G}{G}
+pt=3/4
+ability=Infect;\
+        You may have SN assign its combat damage as though it weren't blocked.
+timing=main
+oracle=Infect. You may have Spinebiter assign its combat damage as though it weren't blocked.

@@ -1,0 +1,12 @@
+name=Vaporous Djinn
+url=http://magiccards.info/query?q=%21Vaporous+Djinn
+image=http://mtgimage.com/card/vaporous%20djinn.jpg
+rarity=U
+type=Creature
+subtype=Djinn
+cost={2}{U}{U}
+pt=3/4
+ability=Flying;\
+        At the beginning of your upkeep, SN phases out unless you pay {U}{U}.
+timing=main
+oracle=Flying. At the beginning of your upkeep, Vaporous Djinn phases out unless you pay {U}{U}.

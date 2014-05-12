@@ -1,0 +1,9 @@
+name=Hydroform
+url=http://magiccards.info/query?q=%21Hydroform
+image=http://mtgimage.com/card/hydroform.jpg
+rarity=C
+type=Instant
+cost={G}{U}
+effect=Target land becomes a 3/3 Elemental creature with flying until end of turn. It's still a land.
+timing=removal
+oracle=Target land becomes a 3/3 Elemental creature with flying until end of turn. It's still a land.

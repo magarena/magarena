@@ -1,0 +1,12 @@
+name=Scorned Villager
+url=http://magiccards.info/query?q=%21Scorned+Villager
+image=http://mtgimage.com/card/scorned%20villager.jpg
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={1}{G}
+pt=1/1
+ability={T}: Add {G} to your mana pool.;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle={T}: Add {G} to your mana pool. At the beginning of each upkeep, if no spells were cast last turn, transform Scorned Villager.

@@ -1,0 +1,9 @@
+name=Soulquake
+url=http://magiccards.info/query?q=%21Soulquake
+image=http://mtgimage.com/card/soulquake.jpg
+rarity=R
+type=Sorcery
+cost={3}{U}{U}{B}{B}
+effect=Return all creatures on the battlefield and all creature cards in graveyards to their owners' hands.
+timing=main
+oracle=Return all creatures on the battlefield and all creature cards in graveyards to their owners' hands.

@@ -1,0 +1,9 @@
+name=Hail of Arrows
+url=http://magiccards.info/query?q=%21Hail+of+Arrows
+image=http://mtgimage.com/card/hail%20of%20arrows.jpg
+rarity=U
+type=Instant
+cost={X}{W}
+effect=SN deals X damage divided as you choose among any number of target attacking creatures.
+timing=removal
+oracle=Hail of Arrows deals X damage divided as you choose among any number of target attacking creatures.

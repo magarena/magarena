@@ -1,0 +1,10 @@
+name=Clash of Realities
+url=http://magiccards.info/query?q=%21Clash+of+Realities
+image=http://mtgimage.com/card/clash%20of%20realities.jpg
+rarity=R
+type=Enchantment
+cost={3}{R}
+ability=All Spirits have "When this permanent enters the battlefield, you may have it deal 3 damage to target non-Spirit creature.";\
+        Non-Spirit creatures have "When this creature enters the battlefield, you may have it deal 3 damage to target Spirit creature."
+timing=main
+oracle=All Spirits have "When this permanent enters the battlefield, you may have it deal 3 damage to target non-Spirit creature.". Non-Spirit creatures have "When this creature enters the battlefield, you may have it deal 3 damage to target Spirit creature."

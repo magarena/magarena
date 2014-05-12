@@ -1,0 +1,12 @@
+name=Champion of Stray Souls
+url=http://magiccards.info/query?q=%21Champion+of+Stray+Souls
+image=http://mtgimage.com/card/champion%20of%20stray%20souls.jpg
+rarity=M
+type=Creature
+subtype=Skeleton,Warrior
+cost={4}{B}{B}
+pt=4/4
+ability={3}{B}{B}, {T}, Sacrifice X other creatures: Return X target creature cards from your graveyard to the battlefield.;\
+        {5}{B}{B}: Put SN on top of your library from your graveyard.
+timing=main
+oracle={3}{B}{B}, {T}, Sacrifice X other creatures: Return X target creature cards from your graveyard to the battlefield. {5}{B}{B}: Put Champion of Stray Souls on top of your library from your graveyard.

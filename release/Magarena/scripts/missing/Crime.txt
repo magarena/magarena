@@ -1,0 +1,9 @@
+name=Crime
+url=http://magiccards.info/query?q=%21Crime
+image=http://mtgimage.com/card/crimepunishment.jpg
+rarity=R
+type=Sorcery
+cost={3}{W}{B}
+effect=Put target creature or enchantment card from an opponent's graveyard onto the battlefield under your control.
+timing=main
+oracle=Put target creature or enchantment card from an opponent's graveyard onto the battlefield under your control.

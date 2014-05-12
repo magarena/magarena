@@ -1,0 +1,9 @@
+name=Culling Scales
+url=http://magiccards.info/query?q=%21Culling+Scales
+image=http://mtgimage.com/card/culling%20scales.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=At the beginning of your upkeep, destroy target nonland permanent with the lowest converted mana cost.
+timing=main
+oracle=At the beginning of your upkeep, destroy target nonland permanent with the lowest converted mana cost.

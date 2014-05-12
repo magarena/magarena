@@ -1,0 +1,9 @@
+name=Hint of Insanity
+url=http://magiccards.info/query?q=%21Hint+of+Insanity
+image=http://mtgimage.com/card/hint%20of%20insanity.jpg
+rarity=R
+type=Sorcery
+cost={2}{B}
+effect=Target player reveals his or her hand. That player discards all nonland cards with the same name as another card in his or her hand.
+timing=main
+oracle=Target player reveals his or her hand. That player discards all nonland cards with the same name as another card in his or her hand.

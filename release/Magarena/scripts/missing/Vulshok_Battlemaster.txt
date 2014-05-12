@@ -1,0 +1,12 @@
+name=Vulshok Battlemaster
+url=http://magiccards.info/query?q=%21Vulshok+Battlemaster
+image=http://mtgimage.com/card/vulshok%20battlemaster.jpg
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={4}{R}
+pt=2/2
+ability=Haste;\
+        When SN enters the battlefield, attach all Equipment on the battlefield to it.
+timing=main
+oracle=Haste. When Vulshok Battlemaster enters the battlefield, attach all Equipment on the battlefield to it.

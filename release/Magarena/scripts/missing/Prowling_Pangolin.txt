@@ -1,0 +1,11 @@
+name=Prowling Pangolin
+url=http://magiccards.info/query?q=%21Prowling+Pangolin
+image=http://mtgimage.com/card/prowling%20pangolin.jpg
+rarity=U
+type=Creature
+subtype=Anteater,Beast
+cost={3}{B}{B}
+pt=6/5
+ability=When SN enters the battlefield, any player may sacrifice two creatures. If a player does, sacrifice SN.
+timing=main
+oracle=When Prowling Pangolin enters the battlefield, any player may sacrifice two creatures. If a player does, sacrifice Prowling Pangolin.

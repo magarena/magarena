@@ -1,0 +1,12 @@
+name=Phantasmal Terrain
+url=http://magiccards.info/query?q=%21Phantasmal+Terrain
+image=http://mtgimage.com/card/phantasmal%20terrain.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={U}{U}
+ability=Enchant land;\
+        As SN enters the battlefield, choose a basic land type.;\
+        Enchanted land is the chosen type.
+timing=main
+oracle=Enchant land. As Phantasmal Terrain enters the battlefield, choose a basic land type. Enchanted land is the chosen type.

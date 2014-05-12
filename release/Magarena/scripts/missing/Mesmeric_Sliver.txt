@@ -1,0 +1,11 @@
+name=Mesmeric Sliver
+url=http://magiccards.info/query?q=%21Mesmeric+Sliver
+image=http://mtgimage.com/card/mesmeric%20sliver.jpg
+rarity=C
+type=Creature
+subtype=Sliver
+cost={3}{U}
+pt=2/2
+ability=All Slivers have "When this permanent enters the battlefield, you may fateseal 1."
+timing=main
+oracle=All Slivers have "When this permanent enters the battlefield, you may fateseal 1."

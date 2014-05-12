@@ -1,0 +1,12 @@
+name=Foothill Guide
+url=http://magiccards.info/query?q=%21Foothill+Guide
+image=http://mtgimage.com/card/foothill%20guide.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability=Protection from Goblins;\
+        Morph {W}
+timing=main
+oracle=Protection from Goblins. Morph {W}

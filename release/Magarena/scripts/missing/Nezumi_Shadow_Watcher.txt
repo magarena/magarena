@@ -1,0 +1,11 @@
+name=Nezumi Shadow-Watcher
+url=http://magiccards.info/query?q=%21Nezumi+Shadow-Watcher
+image=http://mtgimage.com/card/nezumi%20shadow-watcher.jpg
+rarity=U
+type=Creature
+subtype=Rat,Warrior
+cost={B}
+pt=1/1
+ability=Sacrifice SN: Destroy target Ninja.
+timing=main
+oracle=Sacrifice Nezumi Shadow-Watcher: Destroy target Ninja.

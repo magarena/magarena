@@ -1,0 +1,9 @@
+name=Mind Bomb
+url=http://magiccards.info/query?q=%21Mind+Bomb
+image=http://mtgimage.com/card/mind%20bomb.jpg
+rarity=R
+type=Sorcery
+cost={U}
+effect=Each player may discard up to three cards. SN deals damage to each player equal to 3 minus the number of cards he or she discarded this way.
+timing=main
+oracle=Each player may discard up to three cards. Mind Bomb deals damage to each player equal to 3 minus the number of cards he or she discarded this way.

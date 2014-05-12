@@ -1,0 +1,9 @@
+name=Preordain
+url=http://magiccards.info/query?q=%21Preordain
+image=http://mtgimage.com/card/preordain.jpg
+rarity=C
+type=Sorcery
+cost={U}
+effect=Scry 2, then draw a card.
+timing=main
+oracle=Scry 2, then draw a card.

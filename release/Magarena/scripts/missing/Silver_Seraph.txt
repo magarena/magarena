@@ -1,0 +1,12 @@
+name=Silver Seraph
+url=http://magiccards.info/query?q=%21Silver+Seraph
+image=http://mtgimage.com/card/silver%20seraph.jpg
+rarity=R
+type=Creature
+subtype=Angel
+cost={5}{W}{W}{W}
+pt=6/6
+ability=Flying;\
+        Threshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.
+timing=main
+oracle=Flying. Threshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.

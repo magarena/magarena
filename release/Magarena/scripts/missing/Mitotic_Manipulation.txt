@@ -1,0 +1,9 @@
+name=Mitotic Manipulation
+url=http://magiccards.info/query?q=%21Mitotic+Manipulation
+image=http://mtgimage.com/card/mitotic%20manipulation.jpg
+rarity=R
+type=Sorcery
+cost={1}{U}{U}
+effect=Look at the top seven cards of your library. You may put one of those cards onto the battlefield if it has the same name as a permanent. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=Look at the top seven cards of your library. You may put one of those cards onto the battlefield if it has the same name as a permanent. Put the rest on the bottom of your library in any order.

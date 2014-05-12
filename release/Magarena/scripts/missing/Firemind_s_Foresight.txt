@@ -1,0 +1,9 @@
+name=Firemind's Foresight
+url=http://magiccards.info/query?q=%21Firemind%27s+Foresight
+image=http://mtgimage.com/card/firemind%27s%20foresight.jpg
+rarity=R
+type=Instant
+cost={5}{U}{R}
+effect=Search your library for an instant card with converted mana cost 3, reveal it, and put it into your hand. Then repeat this process for instant cards with converted mana costs 2 and 1. Then shuffle your library.
+timing=removal
+oracle=Search your library for an instant card with converted mana cost 3, reveal it, and put it into your hand. Then repeat this process for instant cards with converted mana costs 2 and 1. Then shuffle your library.

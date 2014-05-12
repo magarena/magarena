@@ -1,0 +1,11 @@
+name=Swirling Spriggan
+url=http://magiccards.info/query?q=%21Swirling+Spriggan
+image=http://mtgimage.com/card/swirling%20spriggan.jpg
+rarity=U
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{G}{G}
+pt=3/3
+ability={G/U}{G/U}: Target creature you control becomes the color or colors of your choice until end of turn.
+timing=main
+oracle={G/U}{G/U}: Target creature you control becomes the color or colors of your choice until end of turn.

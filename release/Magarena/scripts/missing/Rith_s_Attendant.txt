@@ -1,0 +1,11 @@
+name=Rith's Attendant
+url=http://magiccards.info/query?q=%21Rith%27s+Attendant
+image=http://mtgimage.com/card/rith%27s%20attendant.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=3/3
+ability={1}, Sacrifice SN: Add {R}{G}{W} to your mana pool.
+timing=main
+oracle={1}, Sacrifice Rith's Attendant: Add {R}{G}{W} to your mana pool.

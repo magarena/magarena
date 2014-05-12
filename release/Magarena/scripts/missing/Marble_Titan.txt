@@ -1,0 +1,11 @@
+name=Marble Titan
+url=http://magiccards.info/query?q=%21Marble+Titan
+image=http://mtgimage.com/card/marble%20titan.jpg
+rarity=R
+type=Creature
+subtype=Giant
+cost={3}{W}
+pt=3/3
+ability=Creatures with power 3 or greater don't untap during their controllers' untap steps.
+timing=main
+oracle=Creatures with power 3 or greater don't untap during their controllers' untap steps.

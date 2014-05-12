@@ -1,0 +1,11 @@
+name=Strength of Unity
+url=http://magiccards.info/query?q=%21Strength+of+Unity
+image=http://mtgimage.com/card/strength%20of%20unity.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{W}
+ability=Enchant creature;\
+        Domain — Enchanted creature gets +1/+1 for each basic land type among lands you control.
+timing=main
+oracle=Enchant creature. Domain — Enchanted creature gets +1/+1 for each basic land type among lands you control.

@@ -1,0 +1,9 @@
+name=Coastal Piracy
+url=http://magiccards.info/query?q=%21Coastal+Piracy
+image=http://mtgimage.com/card/coastal%20piracy.jpg
+rarity=U
+type=Enchantment
+cost={2}{U}{U}
+ability=Whenever a creature you control deals combat damage to an opponent, you may draw a card.
+timing=main
+oracle=Whenever a creature you control deals combat damage to an opponent, you may draw a card.

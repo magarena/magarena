@@ -1,0 +1,11 @@
+name=Hollow Warrior
+url=http://magiccards.info/query?q=%21Hollow+Warrior
+image=http://mtgimage.com/card/hollow%20warrior.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem,Warrior
+cost={4}
+pt=4/4
+ability=SN can't attack or block unless you tap an untapped creature you control not declared as an attacking or blocking creature this combat.
+timing=main
+oracle=Hollow Warrior can't attack or block unless you tap an untapped creature you control not declared as an attacking or blocking creature this combat.

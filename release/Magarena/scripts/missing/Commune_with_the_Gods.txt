@@ -1,0 +1,9 @@
+name=Commune with the Gods
+url=http://magiccards.info/query?q=%21Commune+with+the+Gods
+image=http://mtgimage.com/card/commune%20with%20the%20gods.jpg
+rarity=C
+type=Sorcery
+cost={1}{G}
+effect=Reveal the top five cards of your library. You may put a creature or enchantment card from among them into your hand. Put the rest into your graveyard.
+timing=main
+oracle=Reveal the top five cards of your library. You may put a creature or enchantment card from among them into your hand. Put the rest into your graveyard.

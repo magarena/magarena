@@ -1,0 +1,9 @@
+name=Crystal Chimes
+url=http://magiccards.info/query?q=%21Crystal+Chimes
+image=http://mtgimage.com/card/crystal%20chimes.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability={3}, {T}, Sacrifice SN: Return all enchantment cards from your graveyard to your hand.
+timing=main
+oracle={3}, {T}, Sacrifice Crystal Chimes: Return all enchantment cards from your graveyard to your hand.

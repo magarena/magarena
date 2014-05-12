@@ -1,0 +1,9 @@
+name=Suppression Field
+url=http://magiccards.info/query?q=%21Suppression+Field
+image=http://mtgimage.com/card/suppression%20field.jpg
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability=Activated abilities cost {2} more to activate unless they're mana abilities.
+timing=main
+oracle=Activated abilities cost {2} more to activate unless they're mana abilities.

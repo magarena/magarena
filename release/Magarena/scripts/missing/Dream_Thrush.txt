@@ -1,0 +1,12 @@
+name=Dream Thrush
+url=http://magiccards.info/query?q=%21Dream+Thrush
+image=http://mtgimage.com/card/dream%20thrush.jpg
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{U}
+pt=1/1
+ability=Flying;\
+        {T}: Target land becomes the basic land type of your choice until end of turn.
+timing=main
+oracle=Flying. {T}: Target land becomes the basic land type of your choice until end of turn.

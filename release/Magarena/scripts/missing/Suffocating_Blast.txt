@@ -1,0 +1,9 @@
+name=Suffocating Blast
+url=http://magiccards.info/query?q=%21Suffocating+Blast
+image=http://mtgimage.com/card/suffocating%20blast.jpg
+rarity=R
+type=Instant
+cost={1}{U}{U}{R}
+effect=Counter target spell and SN deals 3 damage to target creature.
+timing=removal
+oracle=Counter target spell and Suffocating Blast deals 3 damage to target creature.

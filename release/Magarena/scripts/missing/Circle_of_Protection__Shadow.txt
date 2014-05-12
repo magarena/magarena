@@ -1,0 +1,9 @@
+name=Circle of Protection: Shadow
+url=http://magiccards.info/query?q=%21Circle+of+Protection%3A+Shadow
+image=http://mtgimage.com/card/circle%20of%20protection%20shadow.jpg
+rarity=C
+type=Enchantment
+cost={1}{W}
+ability={1}: The next time a creature of your choice with shadow would deal damage to you this turn, prevent that damage.
+timing=main
+oracle={1}: The next time a creature of your choice with shadow would deal damage to you this turn, prevent that damage.

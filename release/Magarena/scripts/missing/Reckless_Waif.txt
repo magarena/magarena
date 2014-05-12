@@ -1,0 +1,11 @@
+name=Reckless Waif
+url=http://magiccards.info/query?q=%21Reckless+Waif
+image=http://mtgimage.com/card/reckless%20waif.jpg
+rarity=U
+type=Creature
+subtype=Human,Rogue,Werewolf
+cost={R}
+pt=1/1
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Reckless Waif.

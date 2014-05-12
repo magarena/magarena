@@ -1,0 +1,12 @@
+name=Riptide Biologist
+url=http://magiccards.info/query?q=%21Riptide+Biologist
+image=http://mtgimage.com/card/riptide%20biologist.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/2
+ability=Protection from Beasts;\
+        Morph {2}{U}
+timing=main
+oracle=Protection from Beasts. Morph {2}{U}

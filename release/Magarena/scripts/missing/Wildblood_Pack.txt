@@ -1,0 +1,12 @@
+name=Wildblood Pack
+url=http://magiccards.info/query?q=%21Wildblood+Pack
+image=http://mtgimage.com/card/wildblood%20pack.jpg
+rarity=R
+type=Creature
+subtype=Werewolf
+pt=5/5
+ability=Trample;\
+        Attacking creatures you control get +3/+0.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Trample. Attacking creatures you control get +3/+0. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Wildblood Pack.

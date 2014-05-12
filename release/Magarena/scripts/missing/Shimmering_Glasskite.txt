@@ -1,0 +1,12 @@
+name=Shimmering Glasskite
+url=http://magiccards.info/query?q=%21Shimmering+Glasskite
+image=http://mtgimage.com/card/shimmering%20glasskite.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{U}
+pt=2/3
+ability=Flying;\
+        Whenever SN becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.
+timing=main
+oracle=Flying. Whenever Shimmering Glasskite becomes the target of a spell or ability for the first time in a turn, counter that spell or ability.

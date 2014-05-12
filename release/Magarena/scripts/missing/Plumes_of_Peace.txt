@@ -1,0 +1,12 @@
+name=Plumes of Peace
+url=http://magiccards.info/query?q=%21Plumes+of+Peace
+image=http://mtgimage.com/card/plumes%20of%20peace.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}{U}
+ability=Enchant creature;\
+        Enchanted creature doesn't untap during its controller's untap step.;\
+        Forecast — {W}{U}, Reveal SN from your hand: Tap target creature.
+timing=main
+oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. Forecast — {W}{U}, Reveal Plumes of Peace from your hand: Tap target creature.

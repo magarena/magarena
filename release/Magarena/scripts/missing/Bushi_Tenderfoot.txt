@@ -1,0 +1,11 @@
+name=Bushi Tenderfoot
+url=http://magiccards.info/query?q=%21Bushi+Tenderfoot
+image=http://mtgimage.com/card/bushi%20tenderfoot.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability=When a creature dealt damage by SN this turn dies, flip SN.
+timing=main
+oracle=When a creature dealt damage by Bushi Tenderfoot this turn dies, flip Bushi Tenderfoot.

@@ -1,0 +1,10 @@
+name=Kiora's Dismissal
+url=http://magiccards.info/query?q=%21Kiora%27s+Dismissal
+image=http://mtgimage.com/card/kiora%27s%20dismissal.jpg
+rarity=U
+type=Instant
+cost={U}
+effect=Strive — SN costs {U} more to cast for each target beyond the first.;\
+        Return any number of target enchantments to their owners' hands.
+timing=removal
+oracle=Strive — Kiora's Dismissal costs {U} more to cast for each target beyond the first. Return any number of target enchantments to their owners' hands.

@@ -1,0 +1,11 @@
+name=Scholar of Athreos
+url=http://magiccards.info/query?q=%21Scholar+of+Athreos
+image=http://mtgimage.com/card/scholar%20of%20athreos.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=1/4
+ability={2}{B}: Each opponent loses 1 life. You gain life equal to the life lost this way.
+timing=main
+oracle={2}{B}: Each opponent loses 1 life. You gain life equal to the life lost this way.

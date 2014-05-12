@@ -1,0 +1,9 @@
+name=Drain Power
+url=http://magiccards.info/query?q=%21Drain+Power
+image=http://mtgimage.com/card/drain%20power.jpg
+rarity=R
+type=Sorcery
+cost={U}{U}
+effect=Target player activates a mana ability of each land he or she controls. Then put all mana from that player's mana pool into yours.
+timing=main
+oracle=Target player activates a mana ability of each land he or she controls. Then put all mana from that player's mana pool into yours.

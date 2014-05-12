@@ -1,0 +1,11 @@
+name=Karametra's Acolyte
+url=http://magiccards.info/query?q=%21Karametra%27s+Acolyte
+image=http://mtgimage.com/card/karametra%27s%20acolyte.jpg
+rarity=U
+type=Creature
+subtype=Human,Druid
+cost={3}{G}
+pt=1/4
+ability={T}: Add an amount of {G} to your mana pool equal to your devotion to green.
+timing=main
+oracle={T}: Add an amount of {G} to your mana pool equal to your devotion to green.

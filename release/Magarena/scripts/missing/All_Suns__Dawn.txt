@@ -1,0 +1,9 @@
+name=All Suns' Dawn
+url=http://magiccards.info/query?q=%21All+Suns%27+Dawn
+image=http://mtgimage.com/card/all%20suns%27%20dawn.jpg
+rarity=R
+type=Sorcery
+cost={4}{G}
+effect=For each color, return up to one target card of that color from your graveyard to your hand. Exile SN.
+timing=main
+oracle=For each color, return up to one target card of that color from your graveyard to your hand. Exile All Suns' Dawn.

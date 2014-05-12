@@ -1,0 +1,9 @@
+name=Transmute Artifact
+url=http://magiccards.info/query?q=%21Transmute+Artifact
+image=http://mtgimage.com/card/transmute%20artifact.jpg
+rarity=U
+type=Sorcery
+cost={U}{U}
+effect=Sacrifice an artifact. If you do, search your library for an artifact card. If that card's converted mana cost is less than or equal to the sacrificed artifact's converted mana cost, put it onto the battlefield. If it's greater, you may pay {X}, where X is the difference. If you do, put it onto the battlefield. If you don't, put it into its owner's graveyard. Then shuffle your library.
+timing=main
+oracle=Sacrifice an artifact. If you do, search your library for an artifact card. If that card's converted mana cost is less than or equal to the sacrificed artifact's converted mana cost, put it onto the battlefield. If it's greater, you may pay {X}, where X is the difference. If you do, put it onto the battlefield. If you don't, put it into its owner's graveyard. Then shuffle your library.

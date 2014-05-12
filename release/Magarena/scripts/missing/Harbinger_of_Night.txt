@@ -1,0 +1,11 @@
+name=Harbinger of Night
+url=http://magiccards.info/query?q=%21Harbinger+of+Night
+image=http://mtgimage.com/card/harbinger%20of%20night.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{B}{B}
+pt=2/3
+ability=At the beginning of your upkeep, put a -1/-1 counter on each creature.
+timing=main
+oracle=At the beginning of your upkeep, put a -1/-1 counter on each creature.

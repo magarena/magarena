@@ -1,0 +1,10 @@
+name=Spear of Heliod
+url=http://magiccards.info/query?q=%21Spear+of+Heliod
+image=http://mtgimage.com/card/spear%20of%20heliod.jpg
+rarity=R
+type=Enchantment,Artifact
+cost={1}{W}{W}
+ability=Creatures you control get +1/+1.;\
+        {1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.
+timing=main
+oracle=Creatures you control get +1/+1. {1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.

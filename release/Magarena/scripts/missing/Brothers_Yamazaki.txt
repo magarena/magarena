@@ -1,0 +1,13 @@
+name=Brothers Yamazaki
+url=http://magiccards.info/query?q=%21Brothers+Yamazaki
+image=http://mtgimage.com/card/brothers%20yamazaki1.jpg
+rarity=U
+type=Creature
+subtype=Human,Samurai
+cost={2}{R}
+pt=2/1
+ability=Bushido 1;\
+        If there are exactly two permanents named SN on the battlefield, the "legend rule" doesn't apply to them.;\
+        Each other creature named SN gets +2/+2 and has haste.
+timing=main
+oracle=Bushido 1. If there are exactly two permanents named Brothers Yamazaki on the battlefield, the "legend rule" doesn't apply to them. Each other creature named Brothers Yamazaki gets +2/+2 and has haste.

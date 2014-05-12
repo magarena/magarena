@@ -1,0 +1,11 @@
+name=Mindslicer
+url=http://magiccards.info/query?q=%21Mindslicer
+image=http://mtgimage.com/card/mindslicer.jpg
+rarity=R
+type=Creature
+subtype=Horror
+cost={2}{B}{B}
+pt=4/3
+ability=When SN dies, each player discards his or her hand.
+timing=main
+oracle=When Mindslicer dies, each player discards his or her hand.

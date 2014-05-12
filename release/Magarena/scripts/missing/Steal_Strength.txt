@@ -1,0 +1,9 @@
+name=Steal Strength
+url=http://magiccards.info/query?q=%21Steal+Strength
+image=http://mtgimage.com/card/steal%20strength.jpg
+rarity=C
+type=Instant
+cost={1}{B}
+effect=Target creature gets +1/+1 until end of turn. Another target creature gets -1/-1 until end of turn.
+timing=removal
+oracle=Target creature gets +1/+1 until end of turn. Another target creature gets -1/-1 until end of turn.

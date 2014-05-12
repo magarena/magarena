@@ -1,0 +1,9 @@
+name=Wild Might
+url=http://magiccards.info/query?q=%21Wild+Might
+image=http://mtgimage.com/card/wild%20might.jpg
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature gets +1/+1 until end of turn. That creature gets an additional +4/+4 until end of turn unless any player pays {2}.
+timing=removal
+oracle=Target creature gets +1/+1 until end of turn. That creature gets an additional +4/+4 until end of turn unless any player pays {2}.

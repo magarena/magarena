@@ -1,0 +1,10 @@
+name=Call to the Netherworld
+url=http://magiccards.info/query?q=%21Call+to+the+Netherworld
+image=http://mtgimage.com/card/call%20to%20the%20netherworld.jpg
+rarity=C
+type=Sorcery
+cost={B}
+effect=Return target black creature card from your graveyard to your hand.;\
+        Madness {0}
+timing=main
+oracle=Return target black creature card from your graveyard to your hand. Madness {0}

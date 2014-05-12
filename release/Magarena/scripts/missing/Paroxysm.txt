@@ -1,0 +1,11 @@
+name=Paroxysm
+url=http://magiccards.info/query?q=%21Paroxysm
+image=http://mtgimage.com/card/paroxysm.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Enchant creature;\
+        At the beginning of the upkeep of enchanted creature's controller, that player reveals the top card of his or her library. If that card is a land card, destroy that creature. Otherwise, it gets +3/+3 until end of turn.
+timing=main
+oracle=Enchant creature. At the beginning of the upkeep of enchanted creature's controller, that player reveals the top card of his or her library. If that card is a land card, destroy that creature. Otherwise, it gets +3/+3 until end of turn.

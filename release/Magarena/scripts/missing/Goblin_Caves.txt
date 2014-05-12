@@ -1,0 +1,11 @@
+name=Goblin Caves
+url=http://magiccards.info/query?q=%21Goblin+Caves
+image=http://mtgimage.com/card/goblin%20caves.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}{R}
+ability=Enchant land;\
+        As long as enchanted land is a basic Mountain, Goblin creatures get +0/+2.
+timing=main
+oracle=Enchant land. As long as enchanted land is a basic Mountain, Goblin creatures get +0/+2.

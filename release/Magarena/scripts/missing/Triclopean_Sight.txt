@@ -1,0 +1,13 @@
+name=Triclopean Sight
+url=http://magiccards.info/query?q=%21Triclopean+Sight
+image=http://mtgimage.com/card/triclopean%20sight.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Flash;\
+        Enchant creature;\
+        When SN enters the battlefield, untap enchanted creature.;\
+        Enchanted creature gets +1/+1 and has vigilance.
+timing=main
+oracle=Flash. Enchant creature. When Triclopean Sight enters the battlefield, untap enchanted creature. Enchanted creature gets +1/+1 and has vigilance.

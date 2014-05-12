@@ -1,0 +1,11 @@
+name=Battletide Alchemist
+url=http://magiccards.info/query?q=%21Battletide+Alchemist
+image=http://mtgimage.com/card/battletide%20alchemist.jpg
+rarity=R
+type=Creature
+subtype=Kithkin,Cleric
+cost={3}{W}{W}
+pt=3/4
+ability=If a source would deal damage to a player, you may prevent X of that damage, where X is the number of Clerics you control.
+timing=main
+oracle=If a source would deal damage to a player, you may prevent X of that damage, where X is the number of Clerics you control.

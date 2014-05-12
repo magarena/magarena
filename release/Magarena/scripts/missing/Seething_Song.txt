@@ -1,0 +1,9 @@
+name=Seething Song
+url=http://magiccards.info/query?q=%21Seething+Song
+image=http://mtgimage.com/card/seething%20song.jpg
+rarity=C
+type=Instant
+cost={2}{R}
+effect=Add {R}{R}{R}{R}{R} to your mana pool.
+timing=removal
+oracle=Add {R}{R}{R}{R}{R} to your mana pool.

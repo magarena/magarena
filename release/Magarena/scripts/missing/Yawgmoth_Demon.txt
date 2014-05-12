@@ -1,0 +1,13 @@
+name=Yawgmoth Demon
+url=http://magiccards.info/query?q=%21Yawgmoth+Demon
+image=http://mtgimage.com/card/yawgmoth%20demon.jpg
+rarity=R
+type=Creature
+subtype=Demon
+cost={4}{B}{B}
+pt=6/6
+ability=Flying;\
+        First strike;\
+        At the beginning of your upkeep, you may sacrifice an artifact. If you don't, tap SN and it deals 2 damage to you.
+timing=main
+oracle=Flying. First strike. At the beginning of your upkeep, you may sacrifice an artifact. If you don't, tap Yawgmoth Demon and it deals 2 damage to you.

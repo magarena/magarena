@@ -1,0 +1,12 @@
+name=Infiltrator il-Kor
+url=http://magiccards.info/query?q=%21Infiltrator+il-Kor
+image=http://mtgimage.com/card/infiltrator%20il-kor.jpg
+rarity=C
+type=Creature
+subtype=Kor,Rogue
+cost={4}{U}
+pt=3/1
+ability=Shadow;\
+        Suspend 2—{1}{U}
+timing=main
+oracle=Shadow. Suspend 2—{1}{U}

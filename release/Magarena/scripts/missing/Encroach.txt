@@ -1,0 +1,9 @@
+name=Encroach
+url=http://magiccards.info/query?q=%21Encroach
+image=http://mtgimage.com/card/encroach.jpg
+rarity=U
+type=Sorcery
+cost={B}
+effect=Target player reveals his or her hand. You choose a nonbasic land card from it. That player discards that card.
+timing=main
+oracle=Target player reveals his or her hand. You choose a nonbasic land card from it. That player discards that card.

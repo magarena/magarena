@@ -1,0 +1,11 @@
+name=Cunning Advisor
+url=http://magiccards.info/query?q=%21Cunning+Advisor
+image=http://mtgimage.com/card/cunning%20advisor.jpg
+rarity=U
+type=Creature
+subtype=Human,Advisor
+cost={3}{B}
+pt=1/1
+ability={T}: Target opponent discards a card. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Target opponent discards a card. Activate this ability only during your turn, before attackers are declared.

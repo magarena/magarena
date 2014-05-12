@@ -1,0 +1,9 @@
+name=Searing Blood
+url=http://magiccards.info/query?q=%21Searing+Blood
+image=http://mtgimage.com/card/searing%20blood.jpg
+rarity=U
+type=Instant
+cost={R}{R}
+effect=SN deals 2 damage to target creature. When that creature dies this turn, SN deals 3 damage to the creature's controller.
+timing=removal
+oracle=Searing Blood deals 2 damage to target creature. When that creature dies this turn, Searing Blood deals 3 damage to the creature's controller.

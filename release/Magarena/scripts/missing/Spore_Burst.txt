@@ -1,0 +1,9 @@
+name=Spore Burst
+url=http://magiccards.info/query?q=%21Spore+Burst
+image=http://mtgimage.com/card/spore%20burst.jpg
+rarity=U
+type=Sorcery
+cost={3}{G}
+effect=Domain — Put a 1/1 green Saproling creature token onto the battlefield for each basic land type among lands you control.
+timing=main
+oracle=Domain — Put a 1/1 green Saproling creature token onto the battlefield for each basic land type among lands you control.

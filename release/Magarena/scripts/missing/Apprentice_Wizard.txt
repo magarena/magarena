@@ -1,0 +1,11 @@
+name=Apprentice Wizard
+url=http://magiccards.info/query?q=%21Apprentice+Wizard
+image=http://mtgimage.com/card/apprentice%20wizard.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{U}
+pt=0/1
+ability={U}, {T}: Add {3} to your mana pool.
+timing=main
+oracle={U}, {T}: Add {3} to your mana pool.

@@ -1,0 +1,12 @@
+name=Frontline Strategist
+url=http://magiccards.info/query?q=%21Frontline+Strategist
+image=http://mtgimage.com/card/frontline%20strategist.jpg
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability=Morph {W};\
+        When SN is turned face up, prevent all combat damage non-Soldier creatures would deal this turn.
+timing=main
+oracle=Morph {W}. When Frontline Strategist is turned face up, prevent all combat damage non-Soldier creatures would deal this turn.

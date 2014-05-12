@@ -1,0 +1,9 @@
+name=Gods Willing
+url=http://magiccards.info/query?q=%21Gods+Willing
+image=http://mtgimage.com/card/gods%20willing.jpg
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature you control gains protection from the color of your choice until end of turn. Scry 1.
+timing=removal
+oracle=Target creature you control gains protection from the color of your choice until end of turn. Scry 1.

@@ -1,0 +1,9 @@
+name=Truce
+url=http://magiccards.info/query?q=%21Truce
+image=http://mtgimage.com/card/truce.jpg
+rarity=R
+type=Instant
+cost={2}{W}
+effect=Each player may draw up to two cards. For each card less than two a player draws this way, that player gains 2 life.
+timing=removal
+oracle=Each player may draw up to two cards. For each card less than two a player draws this way, that player gains 2 life.

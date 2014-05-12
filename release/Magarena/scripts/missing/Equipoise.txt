@@ -1,0 +1,9 @@
+name=Equipoise
+url=http://magiccards.info/query?q=%21Equipoise
+image=http://mtgimage.com/card/equipoise.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=At the beginning of your upkeep, for each land target player controls in excess of the number you control, choose a land he or she controls, then the chosen permanents phase out. Repeat this process for artifacts and creatures.
+timing=main
+oracle=At the beginning of your upkeep, for each land target player controls in excess of the number you control, choose a land he or she controls, then the chosen permanents phase out. Repeat this process for artifacts and creatures.

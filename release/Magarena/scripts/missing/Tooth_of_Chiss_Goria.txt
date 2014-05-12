@@ -1,0 +1,11 @@
+name=Tooth of Chiss-Goria
+url=http://magiccards.info/query?q=%21Tooth+of+Chiss-Goria
+image=http://mtgimage.com/card/tooth%20of%20chiss-goria.jpg
+rarity=C
+type=Artifact
+cost={3}
+ability=Flash;\
+        Affinity for artifacts;\
+        {T}: Target creature gets +1/+0 until end of turn.
+timing=main
+oracle=Flash. Affinity for artifacts. {T}: Target creature gets +1/+0 until end of turn.

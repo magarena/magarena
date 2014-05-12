@@ -1,0 +1,10 @@
+name=Submerge
+url=http://magiccards.info/query?q=%21Submerge
+image=http://mtgimage.com/card/submerge.jpg
+rarity=U
+type=Instant
+cost={4}{U}
+effect=If an opponent controls a Forest and you control an Island, you may cast SN without paying its mana cost.;\
+        Put target creature on top of its owner's library.
+timing=removal
+oracle=If an opponent controls a Forest and you control an Island, you may cast Submerge without paying its mana cost. Put target creature on top of its owner's library.

@@ -1,0 +1,11 @@
+name=Thundering Tanadon
+url=http://magiccards.info/query?q=%21Thundering+Tanadon
+image=http://mtgimage.com/card/thundering%20tanadon.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Beast
+cost={4}{P/G}{P/G}
+pt=5/4
+ability=Trample
+timing=main
+oracle=Trample

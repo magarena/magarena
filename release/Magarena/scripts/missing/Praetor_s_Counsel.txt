@@ -1,0 +1,9 @@
+name=Praetor's Counsel
+url=http://magiccards.info/query?q=%21Praetor%27s+Counsel
+image=http://mtgimage.com/card/praetor%27s%20counsel.jpg
+rarity=M
+type=Sorcery
+cost={5}{G}{G}{G}
+effect=Return all cards from your graveyard to your hand. Exile SN. You have no maximum hand size for the rest of the game.
+timing=main
+oracle=Return all cards from your graveyard to your hand. Exile Praetor's Counsel. You have no maximum hand size for the rest of the game.

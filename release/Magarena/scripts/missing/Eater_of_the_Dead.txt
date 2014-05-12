@@ -1,0 +1,11 @@
+name=Eater of the Dead
+url=http://magiccards.info/query?q=%21Eater+of+the+Dead
+image=http://mtgimage.com/card/eater%20of%20the%20dead.jpg
+rarity=U
+type=Creature
+subtype=Horror
+cost={4}{B}
+pt=3/4
+ability={0}: If SN is tapped, exile target creature card from a graveyard and untap SN.
+timing=main
+oracle={0}: If Eater of the Dead is tapped, exile target creature card from a graveyard and untap Eater of the Dead.

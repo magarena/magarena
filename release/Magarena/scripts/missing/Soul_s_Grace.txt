@@ -1,0 +1,9 @@
+name=Soul's Grace
+url=http://magiccards.info/query?q=%21Soul%27s+Grace
+image=http://mtgimage.com/card/soul%27s%20grace.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=You gain life equal to target creature's power.
+timing=removal
+oracle=You gain life equal to target creature's power.

@@ -1,0 +1,11 @@
+name=Alaborn Zealot
+url=http://magiccards.info/query?q=%21Alaborn+Zealot
+image=http://mtgimage.com/card/alaborn%20zealot.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/1
+ability=When SN blocks a creature, destroy that creature and SN.
+timing=main
+oracle=When Alaborn Zealot blocks a creature, destroy that creature and Alaborn Zealot.

@@ -1,0 +1,9 @@
+name=Living End
+url=http://magiccards.info/query?q=%21Living+End
+image=http://mtgimage.com/card/living%20end.jpg
+rarity=R
+type=Sorcery
+effect=Suspend 3—{2}{B}{B};\
+        Each player exiles all creature cards from his or her graveyard, then sacrifices all creatures he or she controls, then puts all cards he or she exiled this way onto the battlefield.
+timing=main
+oracle=Suspend 3—{2}{B}{B}. Each player exiles all creature cards from his or her graveyard, then sacrifices all creatures he or she controls, then puts all cards he or she exiled this way onto the battlefield.

@@ -1,0 +1,10 @@
+name=Outbreak
+url=http://magiccards.info/query?q=%21Outbreak
+image=http://mtgimage.com/card/outbreak.jpg
+rarity=U
+type=Sorcery
+cost={3}{B}
+effect=You may discard a Swamp card rather than pay SN's mana cost.;\
+        Choose a creature type. All creatures of that type get -1/-1 until end of turn.
+timing=main
+oracle=You may discard a Swamp card rather than pay Outbreak's mana cost. Choose a creature type. All creatures of that type get -1/-1 until end of turn.

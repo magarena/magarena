@@ -1,0 +1,12 @@
+name=Glory
+url=http://magiccards.info/query?q=%21Glory
+image=http://mtgimage.com/card/glory.jpg
+rarity=R
+type=Creature
+subtype=Incarnation
+cost={3}{W}{W}
+pt=3/3
+ability=Flying;\
+        {2}{W}: Choose a color. Creatures you control gain protection from the chosen color until end of turn. Activate this ability only if SN is in your graveyard.
+timing=main
+oracle=Flying. {2}{W}: Choose a color. Creatures you control gain protection from the chosen color until end of turn. Activate this ability only if Glory is in your graveyard.

@@ -1,0 +1,11 @@
+name=Saprazzan Raider
+url=http://magiccards.info/query?q=%21Saprazzan+Raider
+image=http://mtgimage.com/card/saprazzan%20raider.jpg
+rarity=C
+type=Creature
+subtype=Merfolk
+cost={2}{U}
+pt=1/2
+ability=When SN becomes blocked, return it to its owner's hand.
+timing=main
+oracle=When Saprazzan Raider becomes blocked, return it to its owner's hand.

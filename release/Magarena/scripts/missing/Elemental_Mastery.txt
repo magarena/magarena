@@ -1,0 +1,11 @@
+name=Elemental Mastery
+url=http://magiccards.info/query?q=%21Elemental+Mastery
+image=http://mtgimage.com/card/elemental%20mastery.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{R}
+ability=Enchant creature;\
+        Enchanted creature has "{T}: Put X 1/1 red Elemental creature tokens with haste onto the battlefield, where X is this creature's power. Exile them at the beginning of the next end step."
+timing=main
+oracle=Enchant creature. Enchanted creature has "{T}: Put X 1/1 red Elemental creature tokens with haste onto the battlefield, where X is this creature's power. Exile them at the beginning of the next end step."

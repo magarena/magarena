@@ -1,0 +1,13 @@
+name=Shah of Naar Isle
+url=http://magiccards.info/query?q=%21Shah+of+Naar+Isle
+image=http://mtgimage.com/card/shah%20of%20naar%20isle.jpg
+rarity=R
+type=Creature
+subtype=Efreet
+cost={3}{R}
+pt=6/6
+ability=Trample;\
+        Echo {0};\
+        When SN's echo cost is paid, each opponent may draw up to three cards.
+timing=main
+oracle=Trample. Echo {0}. When Shah of Naar Isle's echo cost is paid, each opponent may draw up to three cards.

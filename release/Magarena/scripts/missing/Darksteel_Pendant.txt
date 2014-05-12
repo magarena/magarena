@@ -1,0 +1,10 @@
+name=Darksteel Pendant
+url=http://magiccards.info/query?q=%21Darksteel+Pendant
+image=http://mtgimage.com/card/darksteel%20pendant.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability=Indestructible;\
+        {1}, {T}: Look at the top card of your library. You may put that card on the bottom of your library.
+timing=main
+oracle=Indestructible. {1}, {T}: Look at the top card of your library. You may put that card on the bottom of your library.

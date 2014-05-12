@@ -1,0 +1,9 @@
+name=Ghastly Demise
+url=http://magiccards.info/query?q=%21Ghastly+Demise
+image=http://mtgimage.com/card/ghastly%20demise.jpg
+rarity=C
+type=Instant
+cost={B}
+effect=Destroy target nonblack creature if its toughness is less than or equal to the number of cards in your graveyard.
+timing=removal
+oracle=Destroy target nonblack creature if its toughness is less than or equal to the number of cards in your graveyard.

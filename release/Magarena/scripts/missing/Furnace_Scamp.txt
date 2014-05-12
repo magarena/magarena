@@ -1,0 +1,11 @@
+name=Furnace Scamp
+url=http://magiccards.info/query?q=%21Furnace+Scamp
+image=http://mtgimage.com/card/furnace%20scamp.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={R}
+pt=1/1
+ability=Whenever SN deals combat damage to a player, you may sacrifice it. If you do, SN deals 3 damage to that player.
+timing=main
+oracle=Whenever Furnace Scamp deals combat damage to a player, you may sacrifice it. If you do, Furnace Scamp deals 3 damage to that player.

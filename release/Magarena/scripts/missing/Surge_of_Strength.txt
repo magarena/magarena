@@ -1,0 +1,10 @@
+name=Surge of Strength
+url=http://magiccards.info/query?q=%21Surge+of+Strength
+image=http://mtgimage.com/card/surge%20of%20strength.jpg
+rarity=U
+type=Instant
+cost={R}{G}
+effect=As an additional cost to cast SN, discard a red or green card.;\
+        Target creature gains trample and gets +X/+0 until end of turn, where X is that creature's converted mana cost.
+timing=removal
+oracle=As an additional cost to cast Surge of Strength, discard a red or green card. Target creature gains trample and gets +X/+0 until end of turn, where X is that creature's converted mana cost.

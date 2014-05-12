@@ -1,0 +1,13 @@
+name=Bloodline Keeper
+url=http://magiccards.info/query?q=%21Bloodline+Keeper
+image=http://mtgimage.com/card/bloodline%20keeper.jpg
+rarity=R
+type=Creature
+subtype=Vampire
+cost={2}{B}{B}
+pt=3/3
+ability=Flying;\
+        {T}: Put a 2/2 black Vampire creature token with flying onto the battlefield.;\
+        {B}: Transform SN. Activate this ability only if you control five or more Vampires.
+timing=main
+oracle=Flying. {T}: Put a 2/2 black Vampire creature token with flying onto the battlefield. {B}: Transform Bloodline Keeper. Activate this ability only if you control five or more Vampires.

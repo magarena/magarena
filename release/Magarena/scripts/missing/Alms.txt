@@ -1,0 +1,9 @@
+name=Alms
+url=http://magiccards.info/query?q=%21Alms
+image=http://mtgimage.com/card/alms.jpg
+rarity=C
+type=Enchantment
+cost={W}
+ability={1}, Exile the top card of your graveyard: Prevent the next 1 damage that would be dealt to target creature this turn.
+timing=main
+oracle={1}, Exile the top card of your graveyard: Prevent the next 1 damage that would be dealt to target creature this turn.

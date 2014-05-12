@@ -1,0 +1,9 @@
+name=Words of Wisdom
+url=http://magiccards.info/query?q=%21Words+of+Wisdom
+image=http://mtgimage.com/card/words%20of%20wisdom.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=You draw two cards, then each other player draws a card.
+timing=removal
+oracle=You draw two cards, then each other player draws a card.

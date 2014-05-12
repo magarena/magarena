@@ -1,0 +1,11 @@
+name=Songstitcher
+url=http://magiccards.info/query?q=%21Songstitcher
+image=http://mtgimage.com/card/songstitcher.jpg
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability={1}{W}: Prevent all combat damage that would be dealt this turn by target attacking creature with flying.
+timing=main
+oracle={1}{W}: Prevent all combat damage that would be dealt this turn by target attacking creature with flying.

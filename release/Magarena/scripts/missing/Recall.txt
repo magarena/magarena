@@ -1,0 +1,9 @@
+name=Recall
+url=http://magiccards.info/query?q=%21Recall
+image=http://mtgimage.com/card/recall.jpg
+rarity=R
+type=Sorcery
+cost={X}{X}{U}
+effect=Discard X cards, then return a card from your graveyard to your hand for each card discarded this way. Exile SN.
+timing=main
+oracle=Discard X cards, then return a card from your graveyard to your hand for each card discarded this way. Exile Recall.

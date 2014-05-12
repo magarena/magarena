@@ -1,0 +1,10 @@
+name=Jar of Eyeballs
+url=http://magiccards.info/query?q=%21Jar+of+Eyeballs
+image=http://mtgimage.com/card/jar%20of%20eyeballs.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Whenever a creature you control dies, put two eyeball counters on SN.;\
+        {3}, {T}, Remove all eyeball counters from SN: Look at the top X cards of your library, where X is the number of eyeball counters removed this way. Put one of them into your hand and the rest on the bottom of your library in any order.
+timing=main
+oracle=Whenever a creature you control dies, put two eyeball counters on Jar of Eyeballs. {3}, {T}, Remove all eyeball counters from Jar of Eyeballs: Look at the top X cards of your library, where X is the number of eyeball counters removed this way. Put one of them into your hand and the rest on the bottom of your library in any order.

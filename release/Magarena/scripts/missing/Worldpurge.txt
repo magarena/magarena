@@ -1,0 +1,9 @@
+name=Worldpurge
+url=http://magiccards.info/query?q=%21Worldpurge
+image=http://mtgimage.com/card/worldpurge.jpg
+rarity=R
+type=Sorcery
+cost={4}{W/U}{W/U}{W/U}{W/U}
+effect=Return all permanents to their owners' hands. Each player chooses up to seven cards in his or her hand, then shuffles the rest into his or her library. Empty all mana pools.
+timing=main
+oracle=Return all permanents to their owners' hands. Each player chooses up to seven cards in his or her hand, then shuffles the rest into his or her library. Empty all mana pools.

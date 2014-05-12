@@ -1,0 +1,13 @@
+name=Preyseizer Dragon
+url=http://magiccards.info/query?q=%21Preyseizer+Dragon
+image=http://mtgimage.com/card/preyseizer%20dragon.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={4}{R}{R}
+pt=4/4
+ability=Flying;\
+        Devour 2;\
+        Whenever SN attacks, it deals damage to target creature or player equal to the number of +1/+1 counters on SN.
+timing=main
+oracle=Flying. Devour 2. Whenever Preyseizer Dragon attacks, it deals damage to target creature or player equal to the number of +1/+1 counters on Preyseizer Dragon.

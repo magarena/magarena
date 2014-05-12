@@ -1,0 +1,11 @@
+name=Lovisa Coldeyes
+url=http://magiccards.info/query?q=%21Lovisa+Coldeyes
+image=http://mtgimage.com/card/lovisa%20coldeyes.jpg
+rarity=R
+type=Creature
+subtype=Human
+cost={3}{R}{R}
+pt=3/3
+ability=Each creature that's a Barbarian, a Warrior, or a Berserker gets +2/+2 and has haste.
+timing=main
+oracle=Each creature that's a Barbarian, a Warrior, or a Berserker gets +2/+2 and has haste.

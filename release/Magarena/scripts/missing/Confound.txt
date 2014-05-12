@@ -1,0 +1,10 @@
+name=Confound
+url=http://magiccards.info/query?q=%21Confound
+image=http://mtgimage.com/card/confound.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Counter target spell that targets one or more creatures.;\
+        Draw a card.
+timing=removal
+oracle=Counter target spell that targets one or more creatures. Draw a card.

@@ -1,0 +1,11 @@
+name=Singe-Mind Ogre
+url=http://magiccards.info/query?q=%21Singe-Mind+Ogre
+image=http://mtgimage.com/card/singe-mind%20ogre.jpg
+rarity=C
+type=Creature
+subtype=Ogre,Mutant
+cost={2}{B}{R}
+pt=3/2
+ability=When SN enters the battlefield, target player reveals a card at random from his or her hand, then loses life equal to that card's converted mana cost.
+timing=main
+oracle=When Singe-Mind Ogre enters the battlefield, target player reveals a card at random from his or her hand, then loses life equal to that card's converted mana cost.

@@ -1,0 +1,12 @@
+name=Shade of Trokair
+url=http://magiccards.info/query?q=%21Shade+of+Trokair
+image=http://mtgimage.com/card/shade%20of%20trokair.jpg
+rarity=C
+type=Creature
+subtype=Shade
+cost={3}{W}
+pt=1/2
+ability={W}: SN gets +1/+1 until end of turn.;\
+        Suspend 3—{W}
+timing=main
+oracle={W}: Shade of Trokair gets +1/+1 until end of turn. Suspend 3—{W}

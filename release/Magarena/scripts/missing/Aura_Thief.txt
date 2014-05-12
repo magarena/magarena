@@ -1,0 +1,12 @@
+name=Aura Thief
+url=http://magiccards.info/query?q=%21Aura+Thief
+image=http://mtgimage.com/card/aura%20thief.jpg
+rarity=R
+type=Creature
+subtype=Illusion
+cost={3}{U}
+pt=2/2
+ability=Flying;\
+        When SN dies, you gain control of all enchantments.
+timing=main
+oracle=Flying. When Aura Thief dies, you gain control of all enchantments.

@@ -1,0 +1,9 @@
+name=Fall
+url=http://magiccards.info/query?q=%21Fall
+image=http://mtgimage.com/card/risefall.jpg
+rarity=U
+type=Sorcery
+cost={B}{R}
+effect=Target player reveals two cards at random from his or her hand, then discards each nonland card revealed this way.
+timing=main
+oracle=Target player reveals two cards at random from his or her hand, then discards each nonland card revealed this way.

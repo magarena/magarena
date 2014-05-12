@@ -1,0 +1,9 @@
+name=Battle Hymn
+url=http://magiccards.info/query?q=%21Battle+Hymn
+image=http://mtgimage.com/card/battle%20hymn.jpg
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Add {R} to your mana pool for each creature you control.
+timing=removal
+oracle=Add {R} to your mana pool for each creature you control.

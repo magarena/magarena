@@ -1,0 +1,12 @@
+name=Zombie Brute
+url=http://magiccards.info/query?q=%21Zombie+Brute
+image=http://mtgimage.com/card/zombie%20brute.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={6}{B}
+pt=5/4
+ability=Amplify 1;\
+        Trample
+timing=main
+oracle=Amplify 1. Trample

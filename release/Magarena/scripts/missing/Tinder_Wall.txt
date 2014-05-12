@@ -1,0 +1,13 @@
+name=Tinder Wall
+url=http://magiccards.info/query?q=%21Tinder+Wall
+image=http://mtgimage.com/card/tinder%20wall.jpg
+rarity=C
+type=Creature
+subtype=Plant,Wall
+cost={G}
+pt=0/3
+ability=Defender;\
+        Sacrifice SN: Add {R}{R} to your mana pool.;\
+        {R}, Sacrifice SN: SN deals 2 damage to target creature it's blocking.
+timing=main
+oracle=Defender. Sacrifice Tinder Wall: Add {R}{R} to your mana pool. {R}, Sacrifice Tinder Wall: Tinder Wall deals 2 damage to target creature it's blocking.

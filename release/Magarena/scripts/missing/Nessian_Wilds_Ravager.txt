@@ -1,0 +1,12 @@
+name=Nessian Wilds Ravager
+url=http://magiccards.info/query?q=%21Nessian+Wilds+Ravager
+image=http://mtgimage.com/card/nessian%20wilds%20ravager.jpg
+rarity=R
+type=Creature
+subtype=Hydra
+cost={4}{G}{G}
+pt=6/6
+ability=Tribute 6;\
+        When SN enters the battlefield, if tribute wasn't paid, you may have SN fight another target creature.
+timing=main
+oracle=Tribute 6. When Nessian Wilds Ravager enters the battlefield, if tribute wasn't paid, you may have Nessian Wilds Ravager fight another target creature.

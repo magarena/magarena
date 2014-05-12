@@ -1,0 +1,9 @@
+name=Luminesce
+url=http://magiccards.info/query?q=%21Luminesce
+image=http://mtgimage.com/card/luminesce.jpg
+rarity=U
+type=Instant
+cost={W}
+effect=Prevent all damage that black sources and red sources would deal this turn.
+timing=removal
+oracle=Prevent all damage that black sources and red sources would deal this turn.

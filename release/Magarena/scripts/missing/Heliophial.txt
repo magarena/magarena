@@ -1,0 +1,10 @@
+name=Heliophial
+url=http://magiccards.info/query?q=%21Heliophial
+image=http://mtgimage.com/card/heliophial.jpg
+rarity=C
+type=Artifact
+cost={5}
+ability=Sunburst;\
+        {2}, Sacrifice SN: SN deals damage equal to the number of charge counters on it to target creature or player.
+timing=main
+oracle=Sunburst. {2}, Sacrifice Heliophial: Heliophial deals damage equal to the number of charge counters on it to target creature or player.

@@ -1,0 +1,11 @@
+name=Johtull Wurm
+url=http://magiccards.info/query?q=%21Johtull+Wurm
+image=http://mtgimage.com/card/johtull%20wurm.jpg
+rarity=U
+type=Creature
+subtype=Wurm
+cost={5}{G}
+pt=6/6
+ability=Whenever SN becomes blocked, it gets -2/-1 until end of turn for each creature blocking it beyond the first.
+timing=main
+oracle=Whenever Johtull Wurm becomes blocked, it gets -2/-1 until end of turn for each creature blocking it beyond the first.

@@ -1,0 +1,9 @@
+name=Endure
+url=http://magiccards.info/query?q=%21Endure
+image=http://mtgimage.com/card/endure.jpg
+rarity=U
+type=Instant
+cost={3}{W}{W}
+effect=Prevent all damage that would be dealt to you and permanents you control this turn.
+timing=removal
+oracle=Prevent all damage that would be dealt to you and permanents you control this turn.

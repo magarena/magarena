@@ -1,0 +1,11 @@
+name=Dosan the Falling Leaf
+url=http://magiccards.info/query?q=%21Dosan+the+Falling+Leaf
+image=http://mtgimage.com/card/dosan%20the%20falling%20leaf.jpg
+rarity=R
+type=Creature
+subtype=Human,Monk
+cost={1}{G}{G}
+pt=2/2
+ability=Players can cast spells only during their own turns.
+timing=main
+oracle=Players can cast spells only during their own turns.

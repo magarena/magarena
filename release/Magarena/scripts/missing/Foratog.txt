@@ -1,0 +1,11 @@
+name=Foratog
+url=http://magiccards.info/query?q=%21Foratog
+image=http://mtgimage.com/card/foratog.jpg
+rarity=U
+type=Creature
+subtype=Atog
+cost={2}{G}
+pt=1/2
+ability={G}, Sacrifice a Forest: SN gets +2/+2 until end of turn.
+timing=main
+oracle={G}, Sacrifice a Forest: Foratog gets +2/+2 until end of turn.

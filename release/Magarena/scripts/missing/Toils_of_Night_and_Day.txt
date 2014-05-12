@@ -1,0 +1,10 @@
+name=Toils of Night and Day
+url=http://magiccards.info/query?q=%21Toils+of+Night+and+Day
+image=http://mtgimage.com/card/toils%20of%20night%20and%20day.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={2}{U}
+effect=You may tap or untap target permanent, then you may tap or untap another target permanent.
+timing=removal
+oracle=You may tap or untap target permanent, then you may tap or untap another target permanent.

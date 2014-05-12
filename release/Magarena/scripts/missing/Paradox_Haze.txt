@@ -1,0 +1,11 @@
+name=Paradox Haze
+url=http://magiccards.info/query?q=%21Paradox+Haze
+image=http://mtgimage.com/card/paradox%20haze.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant player;\
+        At the beginning of enchanted player's first upkeep each turn, that player gets an additional upkeep step after this step.
+timing=main
+oracle=Enchant player. At the beginning of enchanted player's first upkeep each turn, that player gets an additional upkeep step after this step.

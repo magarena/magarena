@@ -1,0 +1,11 @@
+name=Sea Gate Oracle
+url=http://magiccards.info/query?q=%21Sea+Gate+Oracle
+image=http://mtgimage.com/card/sea%20gate%20oracle.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/3
+ability=When SN enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other on the bottom of your library.
+timing=main
+oracle=When Sea Gate Oracle enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other on the bottom of your library.

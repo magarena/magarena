@@ -1,0 +1,12 @@
+name=Kruin Outlaw
+url=http://magiccards.info/query?q=%21Kruin+Outlaw
+image=http://mtgimage.com/card/kruin%20outlaw.jpg
+rarity=R
+type=Creature
+subtype=Human,Rogue,Werewolf
+cost={1}{R}{R}
+pt=2/2
+ability=First strike;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=First strike. At the beginning of each upkeep, if no spells were cast last turn, transform Kruin Outlaw.

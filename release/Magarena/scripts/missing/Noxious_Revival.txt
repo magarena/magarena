@@ -1,0 +1,9 @@
+name=Noxious Revival
+url=http://magiccards.info/query?q=%21Noxious+Revival
+image=http://mtgimage.com/card/noxious%20revival.jpg
+rarity=U
+type=Instant
+cost={P/G}
+effect=Put target card from a graveyard on top of its owner's library.
+timing=removal
+oracle=Put target card from a graveyard on top of its owner's library.

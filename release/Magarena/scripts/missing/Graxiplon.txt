@@ -1,0 +1,11 @@
+name=Graxiplon
+url=http://magiccards.info/query?q=%21Graxiplon
+image=http://mtgimage.com/card/graxiplon.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={5}{U}
+pt=3/4
+ability=SN can't be blocked unless defending player controls three or more creatures that share a creature type.
+timing=main
+oracle=Graxiplon can't be blocked unless defending player controls three or more creatures that share a creature type.

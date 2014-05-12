@@ -1,0 +1,9 @@
+name=Fight or Flight
+url=http://magiccards.info/query?q=%21Fight+or+Flight
+image=http://mtgimage.com/card/fight%20or%20flight.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}
+ability=At the beginning of each opponent's combat, separate all creatures that player controls into two piles. Only creatures in the pile of his or her choice can attack this turn.
+timing=main
+oracle=At the beginning of each opponent's combat, separate all creatures that player controls into two piles. Only creatures in the pile of his or her choice can attack this turn.

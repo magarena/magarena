@@ -1,0 +1,9 @@
+name=Blast of Genius
+url=http://magiccards.info/query?q=%21Blast+of+Genius
+image=http://mtgimage.com/card/blast%20of%20genius.jpg
+rarity=U
+type=Sorcery
+cost={4}{U}{R}
+effect=Choose target creature or player. Draw three cards, then discard a card. SN deals damage equal to the discarded card's converted mana cost to that creature or player.
+timing=main
+oracle=Choose target creature or player. Draw three cards, then discard a card. Blast of Genius deals damage equal to the discarded card's converted mana cost to that creature or player.

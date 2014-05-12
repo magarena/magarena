@@ -1,0 +1,9 @@
+name=Eye for an Eye
+url=http://magiccards.info/query?q=%21Eye+for+an+Eye
+image=http://mtgimage.com/card/eye%20for%20an%20eye.jpg
+rarity=U
+type=Instant
+cost={W}{W}
+effect=The next time a source of your choice would deal damage to you this turn, instead that source deals that much damage to you and SN deals that much damage to that source's controller.
+timing=removal
+oracle=The next time a source of your choice would deal damage to you this turn, instead that source deals that much damage to you and Eye for an Eye deals that much damage to that source's controller.

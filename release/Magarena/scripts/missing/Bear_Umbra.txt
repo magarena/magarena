@@ -1,0 +1,12 @@
+name=Bear Umbra
+url=http://magiccards.info/query?q=%21Bear+Umbra
+image=http://mtgimage.com/card/bear%20umbra.jpg
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={2}{G}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has "Whenever this creature attacks, untap all lands you control.";\
+        Totem armor
+timing=main
+oracle=Enchant creature. Enchanted creature gets +2/+2 and has "Whenever this creature attacks, untap all lands you control.". Totem armor

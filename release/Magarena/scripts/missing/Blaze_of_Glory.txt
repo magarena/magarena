@@ -1,0 +1,10 @@
+name=Blaze of Glory
+url=http://magiccards.info/query?q=%21Blaze+of+Glory
+image=http://mtgimage.com/card/blaze%20of%20glory.jpg
+rarity=R
+type=Instant
+cost={W}
+effect=Cast SN only during combat before blockers are declared.;\
+        Target creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.
+timing=removal
+oracle=Cast Blaze of Glory only during combat before blockers are declared. Target creature defending player controls can block any number of creatures this turn. It blocks each attacking creature this turn if able.

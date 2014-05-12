@@ -1,0 +1,10 @@
+name=Wheel and Deal
+url=http://magiccards.info/query?q=%21Wheel+and+Deal
+image=http://mtgimage.com/card/wheel%20and%20deal.jpg
+rarity=R
+type=Instant
+cost={3}{U}
+effect=Any number of target opponents each discards his or her hand and draws seven cards.;\
+        Draw a card.
+timing=removal
+oracle=Any number of target opponents each discards his or her hand and draws seven cards. Draw a card.

@@ -1,0 +1,9 @@
+name=Rolling Thunder
+url=http://magiccards.info/query?q=%21Rolling+Thunder
+image=http://mtgimage.com/card/rolling%20thunder.jpg
+rarity=C
+type=Sorcery
+cost={X}{R}{R}
+effect=SN deals X damage divided as you choose among any number of target creatures and/or players.
+timing=main
+oracle=Rolling Thunder deals X damage divided as you choose among any number of target creatures and/or players.

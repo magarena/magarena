@@ -1,0 +1,13 @@
+name=Woolly Razorback
+url=http://magiccards.info/query?q=%21Woolly+Razorback
+image=http://mtgimage.com/card/woolly%20razorback.jpg
+rarity=R
+type=Creature
+subtype=Boar,Beast
+cost={2}{W}{W}
+pt=7/7
+ability=SN enters the battlefield with three ice counters on it.;\
+        As long as SN has an ice counter on it, prevent all combat damage it would deal and it has defender.;\
+        Whenever SN blocks, remove an ice counter from it.
+timing=main
+oracle=Woolly Razorback enters the battlefield with three ice counters on it. As long as Woolly Razorback has an ice counter on it, prevent all combat damage it would deal and it has defender. Whenever Woolly Razorback blocks, remove an ice counter from it.

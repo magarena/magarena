@@ -1,0 +1,12 @@
+name=Narcomoeba
+url=http://magiccards.info/query?q=%21Narcomoeba
+image=http://mtgimage.com/card/narcomoeba.jpg
+rarity=U
+type=Creature
+subtype=Illusion
+cost={1}{U}
+pt=1/1
+ability=Flying;\
+        When SN is put into your graveyard from your library, you may put it onto the battlefield.
+timing=main
+oracle=Flying. When Narcomoeba is put into your graveyard from your library, you may put it onto the battlefield.

@@ -1,0 +1,10 @@
+name=Petals of Insight
+url=http://magiccards.info/query?q=%21Petals+of+Insight
+image=http://mtgimage.com/card/petals%20of%20insight.jpg
+rarity=U
+type=Sorcery
+subtype=Arcane
+cost={4}{U}
+effect=Look at the top three cards of your library. You may put those cards on the bottom of your library in any order. If you do, return SN to its owner's hand. Otherwise, draw three cards.
+timing=main
+oracle=Look at the top three cards of your library. You may put those cards on the bottom of your library in any order. If you do, return Petals of Insight to its owner's hand. Otherwise, draw three cards.

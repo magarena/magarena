@@ -1,0 +1,10 @@
+name=Declaration of Naught
+url=http://magiccards.info/query?q=%21Declaration+of+Naught
+image=http://mtgimage.com/card/declaration%20of%20naught.jpg
+rarity=R
+type=Enchantment
+cost={U}{U}
+ability=As SN enters the battlefield, name a card.;\
+        {U}: Counter target spell with the chosen name.
+timing=main
+oracle=As Declaration of Naught enters the battlefield, name a card. {U}: Counter target spell with the chosen name.

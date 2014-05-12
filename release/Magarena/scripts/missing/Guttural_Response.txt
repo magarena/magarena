@@ -1,0 +1,9 @@
+name=Guttural Response
+url=http://magiccards.info/query?q=%21Guttural+Response
+image=http://mtgimage.com/card/guttural%20response.jpg
+rarity=U
+type=Instant
+cost={R/G}
+effect=Counter target blue instant spell.
+timing=removal
+oracle=Counter target blue instant spell.

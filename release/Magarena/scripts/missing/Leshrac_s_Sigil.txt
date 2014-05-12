@@ -1,0 +1,10 @@
+name=Leshrac's Sigil
+url=http://magiccards.info/query?q=%21Leshrac%27s+Sigil
+image=http://mtgimage.com/card/leshrac%27s%20sigil.jpg
+rarity=U
+type=Enchantment
+cost={B}{B}
+ability=Whenever an opponent casts a green spell, you may pay {B}{B}. If you do, look at that player's hand and choose a card from it. The player discards that card.;\
+        {B}{B}: Return SN to its owner's hand.
+timing=main
+oracle=Whenever an opponent casts a green spell, you may pay {B}{B}. If you do, look at that player's hand and choose a card from it. The player discards that card. {B}{B}: Return Leshrac's Sigil to its owner's hand.

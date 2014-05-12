@@ -1,0 +1,9 @@
+name=Damping Matrix
+url=http://magiccards.info/query?q=%21Damping+Matrix
+image=http://mtgimage.com/card/damping%20matrix.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=Activated abilities of artifacts and creatures can't be activated unless they're mana abilities.
+timing=main
+oracle=Activated abilities of artifacts and creatures can't be activated unless they're mana abilities.

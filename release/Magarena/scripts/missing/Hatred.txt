@@ -1,0 +1,10 @@
+name=Hatred
+url=http://magiccards.info/query?q=%21Hatred
+image=http://mtgimage.com/card/hatred.jpg
+rarity=R
+type=Instant
+cost={3}{B}{B}
+effect=As an additional cost to cast SN, pay X life.;\
+        Target creature gets +X/+0 until end of turn.
+timing=removal
+oracle=As an additional cost to cast Hatred, pay X life. Target creature gets +X/+0 until end of turn.

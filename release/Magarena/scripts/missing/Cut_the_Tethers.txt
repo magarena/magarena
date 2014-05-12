@@ -1,0 +1,9 @@
+name=Cut the Tethers
+url=http://magiccards.info/query?q=%21Cut+the+Tethers
+image=http://mtgimage.com/card/cut%20the%20tethers.jpg
+rarity=U
+type=Sorcery
+cost={2}{U}{U}
+effect=For each Spirit, return it to its owner's hand unless that player pays {3}.
+timing=main
+oracle=For each Spirit, return it to its owner's hand unless that player pays {3}.

@@ -1,0 +1,11 @@
+name=Cunning Lethemancer
+url=http://magiccards.info/query?q=%21Cunning+Lethemancer
+image=http://mtgimage.com/card/cunning%20lethemancer.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{B}
+pt=2/2
+ability=At the beginning of your upkeep, each player discards a card.
+timing=main
+oracle=At the beginning of your upkeep, each player discards a card.

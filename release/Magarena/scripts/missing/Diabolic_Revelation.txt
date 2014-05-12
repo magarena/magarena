@@ -1,0 +1,9 @@
+name=Diabolic Revelation
+url=http://magiccards.info/query?q=%21Diabolic+Revelation
+image=http://mtgimage.com/card/diabolic%20revelation.jpg
+rarity=R
+type=Sorcery
+cost={X}{3}{B}{B}
+effect=Search your library for up to X cards and put those cards into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for up to X cards and put those cards into your hand. Then shuffle your library.

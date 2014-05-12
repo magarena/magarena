@@ -1,0 +1,13 @@
+name=Sky Hussar
+url=http://magiccards.info/query?q=%21Sky+Hussar
+image=http://mtgimage.com/card/sky%20hussar.jpg
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={3}{W}{U}
+pt=4/3
+ability=Flying;\
+        When SN enters the battlefield, untap all creatures you control.;\
+        Forecast — Tap two untapped white and/or blue creatures you control, Reveal SN from your hand: Draw a card.
+timing=main
+oracle=Flying. When Sky Hussar enters the battlefield, untap all creatures you control. Forecast — Tap two untapped white and/or blue creatures you control, Reveal Sky Hussar from your hand: Draw a card.

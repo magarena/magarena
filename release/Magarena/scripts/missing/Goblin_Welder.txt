@@ -1,0 +1,11 @@
+name=Goblin Welder
+url=http://magiccards.info/query?q=%21Goblin+Welder
+image=http://mtgimage.com/card/goblin%20welder.jpg
+rarity=R
+type=Creature
+subtype=Goblin,Artificer
+cost={R}
+pt=1/1
+ability={T}: Choose target artifact a player controls and target artifact card in that player's graveyard. If both targets are still legal as this ability resolves, that player simultaneously sacrifices the artifact and returns the artifact card to the battlefield.
+timing=main
+oracle={T}: Choose target artifact a player controls and target artifact card in that player's graveyard. If both targets are still legal as this ability resolves, that player simultaneously sacrifices the artifact and returns the artifact card to the battlefield.

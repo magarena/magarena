@@ -1,0 +1,13 @@
+name=Swooping Talon
+url=http://magiccards.info/query?q=%21Swooping+Talon
+image=http://mtgimage.com/card/swooping%20talon.jpg
+rarity=U
+type=Creature
+subtype=Bird,Soldier
+cost={4}{W}{W}
+pt=2/6
+ability=Flying;\
+        {1}: SN loses flying until end of turn.;\
+        Provoke
+timing=main
+oracle=Flying. {1}: Swooping Talon loses flying until end of turn. Provoke

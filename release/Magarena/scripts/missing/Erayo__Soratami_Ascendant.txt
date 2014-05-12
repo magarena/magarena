@@ -1,0 +1,12 @@
+name=Erayo, Soratami Ascendant
+url=http://magiccards.info/query?q=%21Erayo%2C+Soratami+Ascendant
+image=http://mtgimage.com/card/erayo%2C%20soratami%20ascendant.jpg
+rarity=R
+type=Creature
+subtype=Moonfolk,Monk
+cost={1}{U}
+pt=1/1
+ability=Flying;\
+        Whenever the fourth spell of a turn is cast, flip SN.
+timing=main
+oracle=Flying. Whenever the fourth spell of a turn is cast, flip Erayo, Soratami Ascendant.

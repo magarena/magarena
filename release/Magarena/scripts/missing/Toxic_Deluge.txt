@@ -1,0 +1,10 @@
+name=Toxic Deluge
+url=http://magiccards.info/query?q=%21Toxic+Deluge
+image=http://mtgimage.com/card/toxic%20deluge.jpg
+rarity=R
+type=Sorcery
+cost={2}{B}
+effect=As an additional cost to cast SN, pay X life.;\
+        All creatures get -X/-X until end of turn.
+timing=main
+oracle=As an additional cost to cast Toxic Deluge, pay X life. All creatures get -X/-X until end of turn.

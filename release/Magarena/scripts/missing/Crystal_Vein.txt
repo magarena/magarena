@@ -1,0 +1,9 @@
+name=Crystal Vein
+url=http://magiccards.info/query?q=%21Crystal+Vein
+image=http://mtgimage.com/card/crystal%20vein.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}, Sacrifice SN: Add {2} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}, Sacrifice Crystal Vein: Add {2} to your mana pool.

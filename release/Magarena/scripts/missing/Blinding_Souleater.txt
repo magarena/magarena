@@ -1,0 +1,11 @@
+name=Blinding Souleater
+url=http://magiccards.info/query?q=%21Blinding+Souleater
+image=http://mtgimage.com/card/blinding%20souleater.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Cleric
+cost={3}
+pt=1/3
+ability={P/W}, {T}: Tap target creature.
+timing=main
+oracle={P/W}, {T}: Tap target creature.

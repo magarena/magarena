@@ -1,0 +1,11 @@
+name=Adarkar Unicorn
+url=http://magiccards.info/query?q=%21Adarkar+Unicorn
+image=http://mtgimage.com/card/adarkar%20unicorn.jpg
+rarity=C
+type=Creature
+subtype=Unicorn
+cost={1}{W}{W}
+pt=2/2
+ability={T}: Add {U} or {1}{U} to your mana pool. Spend this mana only to pay cumulative upkeep costs.
+timing=main
+oracle={T}: Add {U} or {1}{U} to your mana pool. Spend this mana only to pay cumulative upkeep costs.

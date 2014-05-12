@@ -1,0 +1,10 @@
+name=Spirit Shield
+url=http://magiccards.info/query?q=%21Spirit+Shield
+image=http://mtgimage.com/card/spirit%20shield.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=You may choose not to untap SN during your untap step.;\
+        {2}, {T}: Target creature gets +0/+2 for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Spirit Shield during your untap step. {2}, {T}: Target creature gets +0/+2 for as long as Spirit Shield remains tapped.

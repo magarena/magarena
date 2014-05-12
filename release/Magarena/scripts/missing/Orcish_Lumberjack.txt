@@ -1,0 +1,11 @@
+name=Orcish Lumberjack
+url=http://magiccards.info/query?q=%21Orcish+Lumberjack
+image=http://mtgimage.com/card/orcish%20lumberjack.jpg
+rarity=C
+type=Creature
+subtype=Orc
+cost={R}
+pt=1/1
+ability={T}, Sacrifice a Forest: Add three mana in any combination of {R} and/or {G} to your mana pool.
+timing=main
+oracle={T}, Sacrifice a Forest: Add three mana in any combination of {R} and/or {G} to your mana pool.

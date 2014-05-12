@@ -1,0 +1,13 @@
+name=Stoic Ephemera
+url=http://magiccards.info/query?q=%21Stoic+Ephemera
+image=http://mtgimage.com/card/stoic%20ephemera.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{W}
+pt=5/5
+ability=Defender;\
+        Flying;\
+        When SN blocks, sacrifice it at end of combat.
+timing=main
+oracle=Defender. Flying. When Stoic Ephemera blocks, sacrifice it at end of combat.

@@ -1,0 +1,12 @@
+name=Nim Deathmantle
+url=http://magiccards.info/query?q=%21Nim+Deathmantle
+image=http://mtgimage.com/card/nim%20deathmantle.jpg
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+2, has intimidate, and is a black Zombie.;\
+        Whenever a nontoken creature is put into your graveyard from the battlefield, you may pay {4}. If you do, return that card to the battlefield and attach SN to it.;\
+        Equip {4}
+timing=main
+oracle=Equipped creature gets +2/+2, has intimidate, and is a black Zombie. Whenever a nontoken creature is put into your graveyard from the battlefield, you may pay {4}. If you do, return that card to the battlefield and attach Nim Deathmantle to it. Equip {4}

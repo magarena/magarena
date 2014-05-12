@@ -1,0 +1,9 @@
+name=Dread Charge
+url=http://magiccards.info/query?q=%21Dread+Charge
+image=http://mtgimage.com/card/dread%20charge.jpg
+rarity=R
+type=Sorcery
+cost={3}{B}
+effect=Black creatures you control can't be blocked this turn except by black creatures.
+timing=main
+oracle=Black creatures you control can't be blocked this turn except by black creatures.

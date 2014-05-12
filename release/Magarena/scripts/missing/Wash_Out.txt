@@ -1,0 +1,9 @@
+name=Wash Out
+url=http://magiccards.info/query?q=%21Wash+Out
+image=http://mtgimage.com/card/wash%20out.jpg
+rarity=U
+type=Sorcery
+cost={3}{U}
+effect=Return all permanents of the color of your choice to their owners' hands.
+timing=main
+oracle=Return all permanents of the color of your choice to their owners' hands.

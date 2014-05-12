@@ -1,0 +1,11 @@
+name=Irini Sengir
+url=http://magiccards.info/query?q=%21Irini+Sengir
+image=http://mtgimage.com/card/irini%20sengir.jpg
+rarity=U
+type=Creature
+subtype=Vampire,Dwarf
+cost={2}{B}{B}
+pt=2/2
+ability=Green enchantment spells and white enchantment spells cost {2} more to cast.
+timing=main
+oracle=Green enchantment spells and white enchantment spells cost {2} more to cast.

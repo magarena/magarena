@@ -1,0 +1,12 @@
+name=Golgari Brownscale
+url=http://magiccards.info/query?q=%21Golgari+Brownscale
+image=http://mtgimage.com/card/golgari%20brownscale.jpg
+rarity=C
+type=Creature
+subtype=Lizard
+cost={1}{G}{G}
+pt=2/3
+ability=When SN is put into your hand from your graveyard, you gain 2 life.;\
+        Dredge 2
+timing=main
+oracle=When Golgari Brownscale is put into your hand from your graveyard, you gain 2 life. Dredge 2

@@ -1,0 +1,12 @@
+name=Spitfire Handler
+url=http://magiccards.info/query?q=%21Spitfire+Handler
+image=http://mtgimage.com/card/spitfire%20handler.jpg
+rarity=U
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=1/1
+ability=SN can't block creatures with power greater than SN's power.;\
+        {R}: SN gets +1/+0 until end of turn.
+timing=main
+oracle=Spitfire Handler can't block creatures with power greater than Spitfire Handler's power. {R}: Spitfire Handler gets +1/+0 until end of turn.

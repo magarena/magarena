@@ -1,0 +1,9 @@
+name=Parallectric Feedback
+url=http://magiccards.info/query?q=%21Parallectric+Feedback
+image=http://mtgimage.com/card/parallectric%20feedback.jpg
+rarity=R
+type=Instant
+cost={3}{R}
+effect=SN deals damage to target spell's controller equal to that spell's converted mana cost.
+timing=removal
+oracle=Parallectric Feedback deals damage to target spell's controller equal to that spell's converted mana cost.

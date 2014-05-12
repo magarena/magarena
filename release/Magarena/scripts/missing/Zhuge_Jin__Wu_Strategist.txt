@@ -1,0 +1,11 @@
+name=Zhuge Jin, Wu Strategist
+url=http://magiccards.info/query?q=%21Zhuge+Jin%2C+Wu+Strategist
+image=http://mtgimage.com/card/zhuge%20jin%2C%20wu%20strategist.jpg
+rarity=R
+type=Creature
+subtype=Human,Advisor
+cost={1}{U}{U}
+pt=1/1
+ability={T}: Target creature can't be blocked this turn. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Target creature can't be blocked this turn. Activate this ability only during your turn, before attackers are declared.

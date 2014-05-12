@@ -1,0 +1,12 @@
+name=Village Ironsmith
+url=http://magiccards.info/query?q=%21Village+Ironsmith
+image=http://mtgimage.com/card/village%20ironsmith.jpg
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={1}{R}
+pt=1/1
+ability=First strike;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=First strike. At the beginning of each upkeep, if no spells were cast last turn, transform Village Ironsmith.

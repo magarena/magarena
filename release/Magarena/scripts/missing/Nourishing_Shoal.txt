@@ -1,0 +1,11 @@
+name=Nourishing Shoal
+url=http://magiccards.info/query?q=%21Nourishing+Shoal
+image=http://mtgimage.com/card/nourishing%20shoal.jpg
+rarity=R
+type=Instant
+subtype=Arcane
+cost={X}{G}{G}
+effect=You may exile a green card with converted mana cost X from your hand rather than pay SN's mana cost.;\
+        You gain X life.
+timing=removal
+oracle=You may exile a green card with converted mana cost X from your hand rather than pay Nourishing Shoal's mana cost. You gain X life.

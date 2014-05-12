@@ -1,0 +1,9 @@
+name=Reap Intellect
+url=http://magiccards.info/query?q=%21Reap+Intellect
+image=http://mtgimage.com/card/reap%20intellect.jpg
+rarity=M
+type=Sorcery
+cost={X}{2}{U}{B}
+effect=Target opponent reveals his or her hand. You choose up to X nonland cards from it and exile them. For each card exiled this way, search that player's graveyard, hand, and library for any number of cards with the same name as that card and exile them. Then that player shuffles his or her library.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose up to X nonland cards from it and exile them. For each card exiled this way, search that player's graveyard, hand, and library for any number of cards with the same name as that card and exile them. Then that player shuffles his or her library.

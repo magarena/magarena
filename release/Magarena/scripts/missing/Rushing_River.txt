@@ -1,0 +1,10 @@
+name=Rushing River
+url=http://magiccards.info/query?q=%21Rushing+River
+image=http://mtgimage.com/card/rushing%20river.jpg
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Kicker—Sacrifice a land.;\
+        Return target nonland permanent to its owner's hand. If SN was kicked, return another target nonland permanent to its owner's hand.
+timing=removal
+oracle=Kicker—Sacrifice a land.. Return target nonland permanent to its owner's hand. If Rushing River was kicked, return another target nonland permanent to its owner's hand.

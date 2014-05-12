@@ -1,0 +1,9 @@
+name=Faces of the Past
+url=http://magiccards.info/query?q=%21Faces+of+the+Past
+image=http://mtgimage.com/card/faces%20of%20the%20past.jpg
+rarity=R
+type=Enchantment
+cost={2}{U}
+ability=Whenever a creature dies, tap all untapped creatures that share a creature type with it or untap all tapped creatures that share a creature type with it.
+timing=main
+oracle=Whenever a creature dies, tap all untapped creatures that share a creature type with it or untap all tapped creatures that share a creature type with it.

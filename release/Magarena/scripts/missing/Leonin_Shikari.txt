@@ -1,0 +1,11 @@
+name=Leonin Shikari
+url=http://magiccards.info/query?q=%21Leonin+Shikari
+image=http://mtgimage.com/card/leonin%20shikari.jpg
+rarity=R
+type=Creature
+subtype=Cat,Soldier
+cost={1}{W}
+pt=2/2
+ability=You may activate equip abilities any time you could cast an instant.
+timing=main
+oracle=You may activate equip abilities any time you could cast an instant.

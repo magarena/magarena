@@ -1,0 +1,9 @@
+name=Avenging Arrow
+url=http://magiccards.info/query?q=%21Avenging+Arrow
+image=http://mtgimage.com/card/avenging%20arrow.jpg
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Destroy target creature that dealt damage this turn.
+timing=removal
+oracle=Destroy target creature that dealt damage this turn.

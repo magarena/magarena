@@ -1,0 +1,9 @@
+name=Incite
+url=http://magiccards.info/query?q=%21Incite
+image=http://mtgimage.com/card/incite.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=Target creature becomes red until end of turn and attacks this turn if able.
+timing=removal
+oracle=Target creature becomes red until end of turn and attacks this turn if able.

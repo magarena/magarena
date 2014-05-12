@@ -1,0 +1,11 @@
+name=Afiya Grove
+url=http://magiccards.info/query?q=%21Afiya+Grove
+image=http://mtgimage.com/card/afiya%20grove.jpg
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability=SN enters the battlefield with three +1/+1 counters on it.;\
+        At the beginning of your upkeep, move a +1/+1 counter from SN onto target creature.;\
+        When SN has no +1/+1 counters on it, sacrifice it.
+timing=main
+oracle=Afiya Grove enters the battlefield with three +1/+1 counters on it. At the beginning of your upkeep, move a +1/+1 counter from Afiya Grove onto target creature. When Afiya Grove has no +1/+1 counters on it, sacrifice it.

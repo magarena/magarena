@@ -1,0 +1,13 @@
+name=Wall of Nets
+url=http://magiccards.info/query?q=%21Wall+of+Nets
+image=http://mtgimage.com/card/wall%20of%20nets.jpg
+rarity=R
+type=Creature
+subtype=Wall
+cost={1}{W}{W}
+pt=0/7
+ability=Defender;\
+        At end of combat, exile all creatures blocked by SN.;\
+        When SN leaves the battlefield, return all cards exiled with SN to the battlefield under their owners' control.
+timing=main
+oracle=Defender. At end of combat, exile all creatures blocked by Wall of Nets. When Wall of Nets leaves the battlefield, return all cards exiled with Wall of Nets to the battlefield under their owners' control.

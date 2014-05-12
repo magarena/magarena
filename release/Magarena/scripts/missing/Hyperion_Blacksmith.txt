@@ -1,0 +1,11 @@
+name=Hyperion Blacksmith
+url=http://magiccards.info/query?q=%21Hyperion+Blacksmith
+image=http://mtgimage.com/card/hyperion%20blacksmith.jpg
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={1}{R}{R}
+pt=2/2
+ability={T}: You may tap or untap target artifact an opponent controls.
+timing=main
+oracle={T}: You may tap or untap target artifact an opponent controls.

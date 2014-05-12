@@ -1,0 +1,11 @@
+name=Coiling Woodworm
+url=http://magiccards.info/query?q=%21Coiling+Woodworm
+image=http://mtgimage.com/card/coiling%20woodworm.jpg
+rarity=U
+type=Creature
+subtype=Insect,Worm
+cost={2}{G}
+pt=*/1
+ability=SN's power is equal to the number of Forests on the battlefield.
+timing=main
+oracle=Coiling Woodworm's power is equal to the number of Forests on the battlefield.

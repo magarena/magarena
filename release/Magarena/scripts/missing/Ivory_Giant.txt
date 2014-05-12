@@ -1,0 +1,12 @@
+name=Ivory Giant
+url=http://magiccards.info/query?q=%21Ivory+Giant
+image=http://mtgimage.com/card/ivory%20giant.jpg
+rarity=C
+type=Creature
+subtype=Giant
+cost={5}{W}{W}
+pt=3/4
+ability=When SN enters the battlefield, tap all nonwhite creatures.;\
+        Suspend 5—{W}
+timing=main
+oracle=When Ivory Giant enters the battlefield, tap all nonwhite creatures. Suspend 5—{W}

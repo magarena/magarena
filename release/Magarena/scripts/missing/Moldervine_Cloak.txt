@@ -1,0 +1,12 @@
+name=Moldervine Cloak
+url=http://magiccards.info/query?q=%21Moldervine+Cloak
+image=http://mtgimage.com/card/moldervine%20cloak.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +3/+3.;\
+        Dredge 2
+timing=main
+oracle=Enchant creature. Enchanted creature gets +3/+3. Dredge 2

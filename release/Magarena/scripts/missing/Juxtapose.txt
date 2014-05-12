@@ -1,0 +1,9 @@
+name=Juxtapose
+url=http://magiccards.info/query?q=%21Juxtapose
+image=http://mtgimage.com/card/juxtapose.jpg
+rarity=R
+type=Sorcery
+cost={3}{U}
+effect=You and target player exchange control of the creature you each control with the highest converted mana cost. Then exchange control of artifacts the same way. If two or more permanents a player controls are tied for highest cost, their controller chooses one of them.
+timing=main
+oracle=You and target player exchange control of the creature you each control with the highest converted mana cost. Then exchange control of artifacts the same way. If two or more permanents a player controls are tied for highest cost, their controller chooses one of them.

@@ -1,0 +1,12 @@
+name=Karn Liberated
+url=http://magiccards.info/query?q=%21Karn+Liberated
+image=http://mtgimage.com/card/karn%20liberated.jpg
+rarity=M
+type=Planeswalker
+subtype=Karn
+cost={7}
+ability=+4: Target player exiles a card from his or her hand.;\
+        -3: Exile target permanent.;\
+        -14: Restart the game, leaving in exile all non-Aura permanent cards exiled with SN. Then put those cards onto the battlefield under your control.
+timing=main
+oracle=+4: Target player exiles a card from his or her hand. -3: Exile target permanent. -14: Restart the game, leaving in exile all non-Aura permanent cards exiled with Karn Liberated. Then put those cards onto the battlefield under your control.

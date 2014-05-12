@@ -1,0 +1,10 @@
+name=Dragonshift
+url=http://magiccards.info/query?q=%21Dragonshift
+image=http://mtgimage.com/card/dragonshift.jpg
+rarity=R
+type=Instant
+cost={1}{U}{R}
+effect=Until end of turn, target creature you control becomes a 4/4 blue and red Dragon, loses all abilities, and gains flying.;\
+        Overload {3}{U}{U}{R}{R}
+timing=removal
+oracle=Until end of turn, target creature you control becomes a 4/4 blue and red Dragon, loses all abilities, and gains flying. Overload {3}{U}{U}{R}{R}

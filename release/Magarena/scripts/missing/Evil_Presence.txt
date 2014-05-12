@@ -1,0 +1,11 @@
+name=Evil Presence
+url=http://magiccards.info/query?q=%21Evil+Presence
+image=http://mtgimage.com/card/evil%20presence.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant land;\
+        Enchanted land is a Swamp.
+timing=main
+oracle=Enchant land. Enchanted land is a Swamp.

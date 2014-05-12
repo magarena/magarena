@@ -1,0 +1,12 @@
+name=Skarrgan Pit-Skulk
+url=http://magiccards.info/query?q=%21Skarrgan+Pit-Skulk
+image=http://mtgimage.com/card/skarrgan%20pit-skulk.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={G}
+pt=1/1
+ability=Bloodthirst 1;\
+        Creatures with power less than SN's power can't block it.
+timing=main
+oracle=Bloodthirst 1. Creatures with power less than Skarrgan Pit-Skulk's power can't block it.

@@ -1,0 +1,12 @@
+name=Inkfathom Divers
+url=http://magiccards.info/query?q=%21Inkfathom+Divers
+image=http://mtgimage.com/card/inkfathom%20divers.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Soldier
+cost={3}{U}{U}
+pt=3/3
+ability=Islandwalk;\
+        When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.
+timing=main
+oracle=Islandwalk. When Inkfathom Divers enters the battlefield, look at the top four cards of your library, then put them back in any order.

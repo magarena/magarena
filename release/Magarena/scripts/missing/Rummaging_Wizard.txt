@@ -1,0 +1,11 @@
+name=Rummaging Wizard
+url=http://magiccards.info/query?q=%21Rummaging+Wizard
+image=http://mtgimage.com/card/rummaging%20wizard.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/2
+ability={2}{U}: Look at the top card of your library. You may put that card into your graveyard.
+timing=main
+oracle={2}{U}: Look at the top card of your library. You may put that card into your graveyard.

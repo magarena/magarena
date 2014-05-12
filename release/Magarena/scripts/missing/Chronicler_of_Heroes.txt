@@ -1,0 +1,11 @@
+name=Chronicler of Heroes
+url=http://magiccards.info/query?q=%21Chronicler+of+Heroes
+image=http://mtgimage.com/card/chronicler%20of%20heroes.jpg
+rarity=U
+type=Creature
+subtype=Centaur,Wizard
+cost={1}{G}{W}
+pt=3/3
+ability=When SN enters the battlefield, draw a card if you control a creature with a +1/+1 counter on it.
+timing=main
+oracle=When Chronicler of Heroes enters the battlefield, draw a card if you control a creature with a +1/+1 counter on it.

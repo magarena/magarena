@@ -1,0 +1,9 @@
+name=Mishra's Bauble
+url=http://magiccards.info/query?q=%21Mishra%27s+Bauble
+image=http://mtgimage.com/card/mishra%27s%20bauble.jpg
+rarity=U
+type=Artifact
+cost={0}
+ability={T}, Sacrifice SN: Look at the top card of target player's library. Draw a card at the beginning of the next turn's upkeep.
+timing=main
+oracle={T}, Sacrifice Mishra's Bauble: Look at the top card of target player's library. Draw a card at the beginning of the next turn's upkeep.

@@ -1,0 +1,13 @@
+name=Taniwha
+url=http://magiccards.info/query?q=%21Taniwha
+image=http://mtgimage.com/card/taniwha.jpg
+rarity=R
+type=Creature
+subtype=Serpent
+cost={3}{U}{U}
+pt=7/7
+ability=Trample;\
+        Phasing;\
+        At the beginning of your upkeep, all lands you control phase out.
+timing=main
+oracle=Trample. Phasing. At the beginning of your upkeep, all lands you control phase out.

@@ -1,0 +1,11 @@
+name=Aphetto Grifter
+url=http://magiccards.info/query?q=%21Aphetto+Grifter
+image=http://mtgimage.com/card/aphetto%20grifter.jpg
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}
+pt=1/1
+ability=Tap two untapped Wizards you control: Tap target permanent.
+timing=main
+oracle=Tap two untapped Wizards you control: Tap target permanent.

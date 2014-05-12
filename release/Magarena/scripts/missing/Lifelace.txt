@@ -1,0 +1,9 @@
+name=Lifelace
+url=http://magiccards.info/query?q=%21Lifelace
+image=http://mtgimage.com/card/lifelace.jpg
+rarity=R
+type=Instant
+cost={G}
+effect=Target spell or permanent becomes green.
+timing=removal
+oracle=Target spell or permanent becomes green.

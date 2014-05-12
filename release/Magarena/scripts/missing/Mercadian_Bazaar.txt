@@ -1,0 +1,10 @@
+name=Mercadian Bazaar
+url=http://magiccards.info/query?q=%21Mercadian+Bazaar
+image=http://mtgimage.com/card/mercadian%20bazaar.jpg
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Put a storage counter on SN.;\
+        {T}, Remove any number of storage counters from SN: Add {R} to your mana pool for each storage counter removed this way.
+timing=main
+oracle=Mercadian Bazaar enters the battlefield tapped. {T}: Put a storage counter on Mercadian Bazaar. {T}, Remove any number of storage counters from Mercadian Bazaar: Add {R} to your mana pool for each storage counter removed this way.

@@ -1,0 +1,10 @@
+name=Reroute
+url=http://magiccards.info/query?q=%21Reroute
+image=http://mtgimage.com/card/reroute.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=Change the target of target activated ability with a single target.;\
+        Draw a card.
+timing=removal
+oracle=Change the target of target activated ability with a single target.. Draw a card.

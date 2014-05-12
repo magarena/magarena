@@ -1,0 +1,9 @@
+name=Time Stop
+url=http://magiccards.info/query?q=%21Time+Stop
+image=http://mtgimage.com/card/time%20stop.jpg
+rarity=R
+type=Instant
+cost={4}{U}{U}
+effect=End the turn.
+timing=removal
+oracle=End the turn.

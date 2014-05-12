@@ -1,0 +1,13 @@
+name=Grand Arbiter Augustin IV
+url=http://magiccards.info/query?q=%21Grand+Arbiter+Augustin+IV
+image=http://mtgimage.com/card/grand%20arbiter%20augustin%20iv.jpg
+rarity=R
+type=Creature
+subtype=Human,Advisor
+cost={2}{W}{U}
+pt=2/3
+ability=White spells you cast cost {1} less to cast.;\
+        Blue spells you cast cost {1} less to cast.;\
+        Spells your opponents cast cost {1} more to cast.
+timing=main
+oracle=White spells you cast cost {1} less to cast. Blue spells you cast cost {1} less to cast. Spells your opponents cast cost {1} more to cast.

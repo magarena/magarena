@@ -1,0 +1,9 @@
+name=Patriarch's Bidding
+url=http://magiccards.info/query?q=%21Patriarch%27s+Bidding
+image=http://mtgimage.com/card/patriarch%27s%20bidding.jpg
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Each player chooses a creature type. Each player returns all creature cards of a type chosen this way from his or her graveyard to the battlefield.
+timing=main
+oracle=Each player chooses a creature type. Each player returns all creature cards of a type chosen this way from his or her graveyard to the battlefield.

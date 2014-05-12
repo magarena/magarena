@@ -1,0 +1,13 @@
+name=Jin-Gitaxias, Core Augur
+url=http://magiccards.info/query?q=%21Jin-Gitaxias%2C+Core+Augur
+image=http://mtgimage.com/card/jin-gitaxias%2C%20core%20augur.jpg
+rarity=M
+type=Creature
+subtype=Praetor
+cost={8}{U}{U}
+pt=5/4
+ability=Flash;\
+        At the beginning of your end step, draw seven cards.;\
+        Each opponent's maximum hand size is reduced by seven.
+timing=main
+oracle=Flash. At the beginning of your end step, draw seven cards. Each opponent's maximum hand size is reduced by seven.

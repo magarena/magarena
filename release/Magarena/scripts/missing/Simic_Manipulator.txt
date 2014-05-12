@@ -1,0 +1,12 @@
+name=Simic Manipulator
+url=http://magiccards.info/query?q=%21Simic+Manipulator
+image=http://mtgimage.com/card/simic%20manipulator.jpg
+rarity=R
+type=Creature
+subtype=Mutant,Wizard
+cost={1}{U}{U}
+pt=0/1
+ability=Evolve;\
+        {T}, Remove one or more +1/+1 counters from SN: Gain control of target creature with power less than or equal to the number of +1/+1 counters removed this way.
+timing=main
+oracle=Evolve. {T}, Remove one or more +1/+1 counters from Simic Manipulator: Gain control of target creature with power less than or equal to the number of +1/+1 counters removed this way.

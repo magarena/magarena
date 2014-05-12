@@ -1,0 +1,10 @@
+name=Distortion Strike
+url=http://magiccards.info/query?q=%21Distortion+Strike
+image=http://mtgimage.com/card/distortion%20strike.jpg
+rarity=C
+type=Sorcery
+cost={U}
+effect=Target creature gets +1/+0 until end of turn and can't be blocked this turn.;\
+        Rebound
+timing=main
+oracle=Target creature gets +1/+0 until end of turn and can't be blocked this turn. Rebound

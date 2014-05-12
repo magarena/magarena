@@ -1,0 +1,9 @@
+name=Fortified Area
+url=http://magiccards.info/query?q=%21Fortified+Area
+image=http://mtgimage.com/card/fortified%20area.jpg
+rarity=U
+type=Enchantment
+cost={1}{W}{W}
+ability=Wall creatures you control get +1/+0 and have banding.
+timing=main
+oracle=Wall creatures you control get +1/+0 and have banding.

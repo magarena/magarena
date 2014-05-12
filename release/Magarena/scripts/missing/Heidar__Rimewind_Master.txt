@@ -1,0 +1,11 @@
+name=Heidar, Rimewind Master
+url=http://magiccards.info/query?q=%21Heidar%2C+Rimewind+Master
+image=http://mtgimage.com/card/heidar%2C%20rimewind%20master.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={4}{U}
+pt=3/3
+ability={2}, {T}: Return target permanent to its owner's hand. Activate this ability only if you control four or more snow permanents.
+timing=main
+oracle={2}, {T}: Return target permanent to its owner's hand. Activate this ability only if you control four or more snow permanents.

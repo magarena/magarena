@@ -1,0 +1,9 @@
+name=Rites of Initiation
+url=http://magiccards.info/query?q=%21Rites+of+Initiation
+image=http://mtgimage.com/card/rites%20of%20initiation.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=Discard any number of cards at random. Creatures you control get +1/+0 until end of turn for each card discarded this way.
+timing=removal
+oracle=Discard any number of cards at random. Creatures you control get +1/+0 until end of turn for each card discarded this way.

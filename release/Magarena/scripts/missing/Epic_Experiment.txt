@@ -1,0 +1,9 @@
+name=Epic Experiment
+url=http://magiccards.info/query?q=%21Epic+Experiment
+image=http://mtgimage.com/card/epic%20experiment.jpg
+rarity=M
+type=Sorcery
+cost={X}{U}{R}
+effect=Exile the top X cards of your library. For each instant and sorcery card with converted mana cost X or less among them, you may cast that card without paying its mana cost. Then put all cards exiled this way that weren't cast into your graveyard.
+timing=main
+oracle=Exile the top X cards of your library. For each instant and sorcery card with converted mana cost X or less among them, you may cast that card without paying its mana cost. Then put all cards exiled this way that weren't cast into your graveyard.

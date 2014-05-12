@@ -1,0 +1,9 @@
+name=Vassal's Duty
+url=http://magiccards.info/query?q=%21Vassal%27s+Duty
+image=http://mtgimage.com/card/vassal%27s%20duty.jpg
+rarity=R
+type=Enchantment
+cost={3}{W}
+ability={1}: The next 1 damage that would be dealt to target legendary creature you control this turn is dealt to you instead.
+timing=main
+oracle={1}: The next 1 damage that would be dealt to target legendary creature you control this turn is dealt to you instead.

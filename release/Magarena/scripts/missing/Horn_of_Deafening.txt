@@ -1,0 +1,9 @@
+name=Horn of Deafening
+url=http://magiccards.info/query?q=%21Horn+of+Deafening
+image=http://mtgimage.com/card/horn%20of%20deafening.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability={2}, {T}: Prevent all combat damage that would be dealt by target creature this turn.
+timing=main
+oracle={2}, {T}: Prevent all combat damage that would be dealt by target creature this turn.

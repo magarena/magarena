@@ -1,0 +1,12 @@
+name=Spellbound Dragon
+url=http://magiccards.info/query?q=%21Spellbound+Dragon
+image=http://mtgimage.com/card/spellbound%20dragon.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{U}{R}
+pt=3/5
+ability=Flying;\
+        Whenever SN attacks, draw a card, then discard a card. SN gets +X/+0 until end of turn, where X is the discarded card's converted mana cost.
+timing=main
+oracle=Flying. Whenever Spellbound Dragon attacks, draw a card, then discard a card. Spellbound Dragon gets +X/+0 until end of turn, where X is the discarded card's converted mana cost.

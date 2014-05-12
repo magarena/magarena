@@ -1,0 +1,11 @@
+name=Spectral Shield
+url=http://magiccards.info/query?q=%21Spectral+Shield
+image=http://mtgimage.com/card/spectral%20shield.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{W}{U}
+ability=Enchant creature;\
+        Enchanted creature gets +0/+2 and can't be the target of spells.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +0/+2 and can't be the target of spells.

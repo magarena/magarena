@@ -1,0 +1,9 @@
+name=Retaliation
+url=http://magiccards.info/query?q=%21Retaliation
+image=http://mtgimage.com/card/retaliation.jpg
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=Creatures you control have "Whenever this creature becomes blocked by a creature, this creature gets +1/+1 until end of turn."
+timing=main
+oracle=Creatures you control have "Whenever this creature becomes blocked by a creature, this creature gets +1/+1 until end of turn."

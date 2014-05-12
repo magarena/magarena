@@ -1,0 +1,10 @@
+name=Feast of Worms
+url=http://magiccards.info/query?q=%21Feast+of+Worms
+image=http://mtgimage.com/card/feast%20of%20worms.jpg
+rarity=U
+type=Sorcery
+subtype=Arcane
+cost={3}{G}{G}
+effect=Destroy target land. If that land was legendary, its controller sacrifices another land.
+timing=main
+oracle=Destroy target land. If that land was legendary, its controller sacrifices another land.

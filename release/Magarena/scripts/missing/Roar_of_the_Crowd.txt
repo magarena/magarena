@@ -1,0 +1,9 @@
+name=Roar of the Crowd
+url=http://magiccards.info/query?q=%21Roar+of+the+Crowd
+image=http://mtgimage.com/card/roar%20of%20the%20crowd.jpg
+rarity=C
+type=Sorcery
+cost={3}{R}
+effect=Choose a creature type. SN deals damage to target creature or player equal to the number of permanents you control of the chosen type.
+timing=main
+oracle=Choose a creature type. Roar of the Crowd deals damage to target creature or player equal to the number of permanents you control of the chosen type.

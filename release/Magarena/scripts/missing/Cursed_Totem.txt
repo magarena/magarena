@@ -1,0 +1,9 @@
+name=Cursed Totem
+url=http://magiccards.info/query?q=%21Cursed+Totem
+image=http://mtgimage.com/card/cursed%20totem.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Activated abilities of creatures can't be activated.
+timing=main
+oracle=Activated abilities of creatures can't be activated.

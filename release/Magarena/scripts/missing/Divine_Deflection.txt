@@ -1,0 +1,9 @@
+name=Divine Deflection
+url=http://magiccards.info/query?q=%21Divine+Deflection
+image=http://mtgimage.com/card/divine%20deflection.jpg
+rarity=R
+type=Instant
+cost={X}{W}
+effect=Prevent the next X damage that would be dealt to you and/or permanents you control this turn. If damage is prevented this way, SN deals that much damage to target creature or player.
+timing=removal
+oracle=Prevent the next X damage that would be dealt to you and/or permanents you control this turn. If damage is prevented this way, Divine Deflection deals that much damage to target creature or player.

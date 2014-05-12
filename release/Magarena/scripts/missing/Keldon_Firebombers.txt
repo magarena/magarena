@@ -1,0 +1,11 @@
+name=Keldon Firebombers
+url=http://magiccards.info/query?q=%21Keldon+Firebombers
+image=http://mtgimage.com/card/keldon%20firebombers.jpg
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={3}{R}{R}
+pt=3/3
+ability=When SN enters the battlefield, each player sacrifices all lands he or she controls except for three.
+timing=main
+oracle=When Keldon Firebombers enters the battlefield, each player sacrifices all lands he or she controls except for three.

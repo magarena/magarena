@@ -1,0 +1,13 @@
+name=Fylgja
+url=http://magiccards.info/query?q=%21Fylgja
+image=http://mtgimage.com/card/fylgja.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}
+ability=Enchant creature;\
+        SN enters the battlefield with four healing counters on it.;\
+        Remove a healing counter from SN: Prevent the next 1 damage that would be dealt to enchanted creature this turn.;\
+        {2}{W}: Put a healing counter on SN.
+timing=main
+oracle=Enchant creature. Fylgja enters the battlefield with four healing counters on it. Remove a healing counter from Fylgja: Prevent the next 1 damage that would be dealt to enchanted creature this turn. {2}{W}: Put a healing counter on Fylgja.

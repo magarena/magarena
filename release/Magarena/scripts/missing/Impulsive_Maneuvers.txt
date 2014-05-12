@@ -1,0 +1,9 @@
+name=Impulsive Maneuvers
+url=http://magiccards.info/query?q=%21Impulsive+Maneuvers
+image=http://mtgimage.com/card/impulsive%20maneuvers.jpg
+rarity=R
+type=Enchantment
+cost={2}{R}{R}
+ability=Whenever a creature attacks, flip a coin. If you win the flip, the next time that creature would deal combat damage this turn, it deals double that damage instead. If you lose the flip, the next time that creature would deal combat damage this turn, prevent that damage.
+timing=main
+oracle=Whenever a creature attacks, flip a coin. If you win the flip, the next time that creature would deal combat damage this turn, it deals double that damage instead. If you lose the flip, the next time that creature would deal combat damage this turn, prevent that damage.

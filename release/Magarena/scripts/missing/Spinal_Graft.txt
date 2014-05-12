@@ -1,0 +1,12 @@
+name=Spinal Graft
+url=http://magiccards.info/query?q=%21Spinal+Graft
+image=http://mtgimage.com/card/spinal%20graft.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+ability=Enchant creature;\
+        Enchanted creature gets +3/+3.;\
+        When enchanted creature becomes the target of a spell or ability, destroy that creature. It can't be regenerated.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +3/+3. When enchanted creature becomes the target of a spell or ability, destroy that creature. It can't be regenerated.

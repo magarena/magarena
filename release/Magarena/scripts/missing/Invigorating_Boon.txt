@@ -1,0 +1,9 @@
+name=Invigorating Boon
+url=http://magiccards.info/query?q=%21Invigorating+Boon
+image=http://mtgimage.com/card/invigorating%20boon.jpg
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=Whenever a player cycles a card, you may put a +1/+1 counter on target creature.
+timing=main
+oracle=Whenever a player cycles a card, you may put a +1/+1 counter on target creature.

@@ -1,0 +1,9 @@
+name=Purge
+url=http://magiccards.info/query?q=%21Purge
+image=http://mtgimage.com/card/purge.jpg
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Destroy target artifact creature or black creature. It can't be regenerated.
+timing=removal
+oracle=Destroy target artifact creature or black creature. It can't be regenerated.

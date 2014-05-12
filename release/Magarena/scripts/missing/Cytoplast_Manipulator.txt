@@ -1,0 +1,12 @@
+name=Cytoplast Manipulator
+url=http://magiccards.info/query?q=%21Cytoplast+Manipulator
+image=http://mtgimage.com/card/cytoplast%20manipulator.jpg
+rarity=R
+type=Creature
+subtype=Human,Wizard,Mutant
+cost={2}{U}{U}
+pt=0/0
+ability=Graft 2;\
+        {U}, {T}: Gain control of target creature with a +1/+1 counter on it for as long as SN remains on the battlefield.
+timing=main
+oracle=Graft 2. {U}, {T}: Gain control of target creature with a +1/+1 counter on it for as long as Cytoplast Manipulator remains on the battlefield.

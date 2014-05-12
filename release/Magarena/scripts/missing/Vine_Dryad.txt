@@ -1,0 +1,13 @@
+name=Vine Dryad
+url=http://magiccards.info/query?q=%21Vine+Dryad
+image=http://mtgimage.com/card/vine%20dryad.jpg
+rarity=R
+type=Creature
+subtype=Dryad
+cost={3}{G}
+pt=1/3
+ability=Flash;\
+        Forestwalk;\
+        You may exile a green card from your hand rather than pay SN's mana cost.
+timing=main
+oracle=Flash. Forestwalk. You may exile a green card from your hand rather than pay Vine Dryad's mana cost.

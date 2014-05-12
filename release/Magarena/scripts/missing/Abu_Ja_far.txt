@@ -1,0 +1,11 @@
+name=Abu Ja'far
+url=http://magiccards.info/query?q=%21Abu+Ja%27far
+image=http://mtgimage.com/card/abu%20ja%27far.jpg
+rarity=U
+type=Creature
+subtype=Human
+cost={W}
+pt=0/1
+ability=When SN dies, destroy all creatures blocking or blocked by it. They can't be regenerated.
+timing=main
+oracle=When Abu Ja'far dies, destroy all creatures blocking or blocked by it. They can't be regenerated.

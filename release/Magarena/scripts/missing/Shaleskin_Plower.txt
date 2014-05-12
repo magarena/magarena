@@ -1,0 +1,12 @@
+name=Shaleskin Plower
+url=http://magiccards.info/query?q=%21Shaleskin+Plower
+image=http://mtgimage.com/card/shaleskin%20plower.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{R}
+pt=3/2
+ability=Morph {4}{R};\
+        When SN is turned face up, destroy target land.
+timing=main
+oracle=Morph {4}{R}. When Shaleskin Plower is turned face up, destroy target land.

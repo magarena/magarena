@@ -1,0 +1,9 @@
+name=Pulse of the Grid
+url=http://magiccards.info/query?q=%21Pulse+of+the+Grid
+image=http://mtgimage.com/card/pulse%20of%20the%20grid.jpg
+rarity=R
+type=Instant
+cost={1}{U}{U}
+effect=Draw two cards, then discard a card. Then if an opponent has more cards in hand than you, return SN to its owner's hand.
+timing=removal
+oracle=Draw two cards, then discard a card. Then if an opponent has more cards in hand than you, return Pulse of the Grid to its owner's hand.

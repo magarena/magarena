@@ -1,0 +1,12 @@
+name=Possessed Aven
+url=http://magiccards.info/query?q=%21Possessed+Aven
+image=http://mtgimage.com/card/possessed%20aven.jpg
+rarity=R
+type=Creature
+subtype=Bird,Soldier,Horror
+cost={2}{U}{U}
+pt=3/3
+ability=Flying;\
+        Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target blue creature."
+timing=main
+oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Possessed Aven gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target blue creature."

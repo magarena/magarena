@@ -1,0 +1,11 @@
+name=Loxodon Punisher
+url=http://magiccards.info/query?q=%21Loxodon+Punisher
+image=http://mtgimage.com/card/loxodon%20punisher.jpg
+rarity=R
+type=Creature
+subtype=Elephant,Soldier
+cost={3}{W}
+pt=2/2
+ability=SN gets +2/+2 for each Equipment attached to it.
+timing=main
+oracle=Loxodon Punisher gets +2/+2 for each Equipment attached to it.

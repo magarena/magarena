@@ -1,0 +1,11 @@
+name=Viseling
+url=http://magiccards.info/query?q=%21Viseling
+image=http://mtgimage.com/card/viseling.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={4}
+pt=2/2
+ability=At the beginning of each opponent's upkeep, SN deals X damage to that player, where X is the number of cards in his or her hand minus 4.
+timing=main
+oracle=At the beginning of each opponent's upkeep, Viseling deals X damage to that player, where X is the number of cards in his or her hand minus 4.

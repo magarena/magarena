@@ -1,0 +1,9 @@
+name=Ur-Golem's Eye
+url=http://magiccards.info/query?q=%21Ur-Golem%27s+Eye
+image=http://mtgimage.com/card/ur-golem%27s%20eye.jpg
+rarity=C
+type=Artifact
+cost={4}
+ability={T}: Add {2} to your mana pool.
+timing=main
+oracle={T}: Add {2} to your mana pool.

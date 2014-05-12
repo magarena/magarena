@@ -1,0 +1,9 @@
+name=Shattered Crypt
+url=http://magiccards.info/query?q=%21Shattered+Crypt
+image=http://mtgimage.com/card/shattered%20crypt.jpg
+rarity=C
+type=Sorcery
+cost={X}{B}{B}
+effect=Return X target creature cards from your graveyard to your hand. You lose X life.
+timing=main
+oracle=Return X target creature cards from your graveyard to your hand. You lose X life.

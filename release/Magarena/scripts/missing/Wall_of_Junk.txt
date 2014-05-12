@@ -1,0 +1,12 @@
+name=Wall of Junk
+url=http://magiccards.info/query?q=%21Wall+of+Junk
+image=http://mtgimage.com/card/wall%20of%20junk.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={2}
+pt=0/7
+ability=Defender;\
+        Whenever SN blocks, return it to its owner's hand at end of combat.
+timing=main
+oracle=Defender. Whenever Wall of Junk blocks, return it to its owner's hand at end of combat.

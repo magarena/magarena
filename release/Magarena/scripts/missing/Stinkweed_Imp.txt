@@ -1,0 +1,13 @@
+name=Stinkweed Imp
+url=http://magiccards.info/query?q=%21Stinkweed+Imp
+image=http://mtgimage.com/card/stinkweed%20imp.jpg
+rarity=C
+type=Creature
+subtype=Imp
+cost={2}{B}
+pt=1/2
+ability=Flying;\
+        Whenever SN deals combat damage to a creature, destroy that creature.;\
+        Dredge 5
+timing=main
+oracle=Flying. Whenever Stinkweed Imp deals combat damage to a creature, destroy that creature. Dredge 5

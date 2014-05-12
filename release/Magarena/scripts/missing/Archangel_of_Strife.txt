@@ -1,0 +1,14 @@
+name=Archangel of Strife
+url=http://magiccards.info/query?q=%21Archangel+of+Strife
+image=http://mtgimage.com/card/archangel%20of%20strife.jpg
+rarity=R
+type=Creature
+subtype=Angel
+cost={5}{W}{W}
+pt=6/6
+ability=Flying;\
+        As SN enters the battlefield, each player chooses war or peace.;\
+        Creatures controlled by players who chose war get +3/+0.;\
+        Creatures controlled by players who chose peace get +0/+3.
+timing=main
+oracle=Flying. As Archangel of Strife enters the battlefield, each player chooses war or peace. Creatures controlled by players who chose war get +3/+0. Creatures controlled by players who chose peace get +0/+3.

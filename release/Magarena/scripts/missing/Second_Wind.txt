@@ -1,0 +1,12 @@
+name=Second Wind
+url=http://magiccards.info/query?q=%21Second+Wind
+image=http://mtgimage.com/card/second%20wind.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant creature;\
+        {T}: Tap enchanted creature.;\
+        {T}: Untap enchanted creature.
+timing=main
+oracle=Enchant creature. {T}: Tap enchanted creature. {T}: Untap enchanted creature.

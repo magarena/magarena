@@ -1,0 +1,10 @@
+name=Cold Snap
+url=http://magiccards.info/query?q=%21Cold+Snap
+image=http://mtgimage.com/card/cold%20snap.jpg
+rarity=U
+type=Enchantment
+cost={2}{W}
+ability=Cumulative upkeep {2};\
+        At the beginning of each player's upkeep, SN deals damage to that player equal to the number of snow lands he or she controls.
+timing=main
+oracle=Cumulative upkeep {2}. At the beginning of each player's upkeep, Cold Snap deals damage to that player equal to the number of snow lands he or she controls.

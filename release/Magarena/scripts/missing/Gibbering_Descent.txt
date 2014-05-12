@@ -1,0 +1,11 @@
+name=Gibbering Descent
+url=http://magiccards.info/query?q=%21Gibbering+Descent
+image=http://mtgimage.com/card/gibbering%20descent.jpg
+rarity=R
+type=Enchantment
+cost={4}{B}{B}
+ability=At the beginning of each player's upkeep, that player loses 1 life and discards a card.;\
+        Hellbent — Skip your upkeep step if you have no cards in hand.;\
+        Madness {2}{B}{B}
+timing=main
+oracle=At the beginning of each player's upkeep, that player loses 1 life and discards a card. Hellbent — Skip your upkeep step if you have no cards in hand. Madness {2}{B}{B}

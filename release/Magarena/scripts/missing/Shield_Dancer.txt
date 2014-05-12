@@ -1,0 +1,11 @@
+name=Shield Dancer
+url=http://magiccards.info/query?q=%21Shield+Dancer
+image=http://mtgimage.com/card/shield%20dancer.jpg
+rarity=U
+type=Creature
+subtype=Human,Rebel
+cost={2}{W}
+pt=1/3
+ability={2}{W}: The next time target attacking creature would deal combat damage to SN this turn, that creature deals that damage to itself instead.
+timing=main
+oracle={2}{W}: The next time target attacking creature would deal combat damage to Shield Dancer this turn, that creature deals that damage to itself instead.

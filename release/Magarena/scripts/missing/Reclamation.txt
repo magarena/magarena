@@ -1,0 +1,9 @@
+name=Reclamation
+url=http://magiccards.info/query?q=%21Reclamation
+image=http://mtgimage.com/card/reclamation.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}{W}
+ability=Black creatures can't attack unless their controller sacrifices a land for each black creature he or she controls that's attacking.
+timing=main
+oracle=Black creatures can't attack unless their controller sacrifices a land for each black creature he or she controls that's attacking.

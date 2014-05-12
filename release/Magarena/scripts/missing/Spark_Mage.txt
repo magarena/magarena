@@ -1,0 +1,11 @@
+name=Spark Mage
+url=http://magiccards.info/query?q=%21Spark+Mage
+image=http://mtgimage.com/card/spark%20mage.jpg
+rarity=U
+type=Creature
+subtype=Dwarf,Wizard
+cost={R}
+pt=1/1
+ability=Whenever SN deals combat damage to a player, you may have SN deal 1 damage to target creature that player controls.
+timing=main
+oracle=Whenever Spark Mage deals combat damage to a player, you may have Spark Mage deal 1 damage to target creature that player controls.

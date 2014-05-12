@@ -1,0 +1,12 @@
+name=Coretapper
+url=http://magiccards.info/query?q=%21Coretapper
+image=http://mtgimage.com/card/coretapper.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Myr
+cost={2}
+pt=1/1
+ability={T}: Put a charge counter on target artifact.;\
+        Sacrifice SN: Put two charge counters on target artifact.
+timing=main
+oracle={T}: Put a charge counter on target artifact. Sacrifice Coretapper: Put two charge counters on target artifact.

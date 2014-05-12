@@ -1,0 +1,10 @@
+name=Stranglehold
+url=http://magiccards.info/query?q=%21Stranglehold
+image=http://mtgimage.com/card/stranglehold.jpg
+rarity=R
+type=Enchantment
+cost={3}{R}
+ability=Your opponents can't search libraries.;\
+        If an opponent would begin an extra turn, that player skips that turn instead.
+timing=main
+oracle=Your opponents can't search libraries. If an opponent would begin an extra turn, that player skips that turn instead.

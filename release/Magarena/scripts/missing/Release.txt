@@ -1,0 +1,10 @@
+name=Release
+url=http://magiccards.info/query?q=%21Release
+image=http://mtgimage.com/card/catchrelease.jpg
+rarity=R
+type=Sorcery
+cost={4}{R}{W}
+effect=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.;\
+        Fuse
+timing=main
+oracle=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker. Fuse

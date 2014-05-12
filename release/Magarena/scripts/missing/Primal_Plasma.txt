@@ -1,0 +1,11 @@
+name=Primal Plasma
+url=http://magiccards.info/query?q=%21Primal+Plasma
+image=http://mtgimage.com/card/primal%20plasma.jpg
+rarity=C
+type=Creature
+subtype=Elemental,Shapeshifter
+cost={3}{U}
+pt=*/*
+ability=As SN enters the battlefield, it becomes your choice of a 3/3 creature, a 2/2 creature with flying, or a 1/6 creature with defender.
+timing=main
+oracle=As Primal Plasma enters the battlefield, it becomes your choice of a 3/3 creature, a 2/2 creature with flying, or a 1/6 creature with defender.

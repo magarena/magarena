@@ -1,0 +1,11 @@
+name=Lignify
+url=http://magiccards.info/query?q=%21Lignify
+image=http://mtgimage.com/card/lignify.jpg
+rarity=C
+type=Tribal,Enchantment
+subtype=Treefolk,Aura
+cost={1}{G}
+ability=Enchant creature;\
+        Enchanted creature is a 0/4 Treefolk with no abilities.
+timing=main
+oracle=Enchant creature. Enchanted creature is a 0/4 Treefolk with no abilities.

@@ -1,0 +1,11 @@
+name=Champion Lancer
+url=http://magiccards.info/query?q=%21Champion+Lancer
+image=http://mtgimage.com/card/champion%20lancer.jpg
+rarity=R
+type=Creature
+subtype=Human,Knight
+cost={4}{W}{W}
+pt=3/3
+ability=Prevent all damage that would be dealt to SN by creatures.
+timing=main
+oracle=Prevent all damage that would be dealt to Champion Lancer by creatures.

@@ -1,0 +1,9 @@
+name=Gift of the Gargantuan
+url=http://magiccards.info/query?q=%21Gift+of+the+Gargantuan
+image=http://mtgimage.com/card/gift%20of%20the%20gargantuan.jpg
+rarity=C
+type=Sorcery
+cost={2}{G}
+effect=Look at the top four cards of your library. You may reveal a creature card and/or a land card from among them and put the revealed cards into your hand. Put the rest on the bottom of your library in any order.
+timing=main
+oracle=Look at the top four cards of your library. You may reveal a creature card and/or a land card from among them and put the revealed cards into your hand. Put the rest on the bottom of your library in any order.

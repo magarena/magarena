@@ -1,0 +1,10 @@
+name=Devouring Light
+url=http://magiccards.info/query?q=%21Devouring+Light
+image=http://mtgimage.com/card/devouring%20light.jpg
+rarity=U
+type=Instant
+cost={1}{W}{W}
+effect=Convoke;\
+        Exile target attacking or blocking creature.
+timing=removal
+oracle=Convoke. Exile target attacking or blocking creature.

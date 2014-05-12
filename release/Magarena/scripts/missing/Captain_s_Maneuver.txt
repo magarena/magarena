@@ -1,0 +1,9 @@
+name=Captain's Maneuver
+url=http://magiccards.info/query?q=%21Captain%27s+Maneuver
+image=http://mtgimage.com/card/captain%27s%20maneuver.jpg
+rarity=U
+type=Instant
+cost={X}{R}{W}
+effect=The next X damage that would be dealt to target creature or player this turn is dealt to another target creature or player instead.
+timing=removal
+oracle=The next X damage that would be dealt to target creature or player this turn is dealt to another target creature or player instead.

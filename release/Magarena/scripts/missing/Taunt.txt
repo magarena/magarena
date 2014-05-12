@@ -1,0 +1,9 @@
+name=Taunt
+url=http://magiccards.info/query?q=%21Taunt
+image=http://mtgimage.com/card/taunt.jpg
+rarity=R
+type=Sorcery
+cost={U}
+effect=During target player's next turn, creatures that player controls attack you if able.
+timing=main
+oracle=During target player's next turn, creatures that player controls attack you if able.

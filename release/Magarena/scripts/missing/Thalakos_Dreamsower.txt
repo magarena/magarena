@@ -1,0 +1,13 @@
+name=Thalakos Dreamsower
+url=http://magiccards.info/query?q=%21Thalakos+Dreamsower
+image=http://mtgimage.com/card/thalakos%20dreamsower.jpg
+rarity=U
+type=Creature
+subtype=Thalakos,Wizard
+cost={2}{U}
+pt=1/1
+ability=Shadow;\
+        You may choose not to untap SN during your untap step.;\
+        Whenever SN deals damage to an opponent, tap target creature. That creature doesn't untap during its controller's untap step for as long as SN remains tapped.
+timing=main
+oracle=Shadow. You may choose not to untap Thalakos Dreamsower during your untap step. Whenever Thalakos Dreamsower deals damage to an opponent, tap target creature. That creature doesn't untap during its controller's untap step for as long as Thalakos Dreamsower remains tapped.

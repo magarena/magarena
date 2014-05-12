@@ -1,0 +1,13 @@
+name=Wall of Resistance
+url=http://magiccards.info/query?q=%21Wall+of+Resistance
+image=http://mtgimage.com/card/wall%20of%20resistance.jpg
+rarity=C
+type=Creature
+subtype=Wall
+cost={1}{W}
+pt=0/3
+ability=Defender;\
+        Flying;\
+        At the beginning of each end step, if SN was dealt damage this turn, put a +0/+1 counter on it.
+timing=main
+oracle=Defender. Flying. At the beginning of each end step, if Wall of Resistance was dealt damage this turn, put a +0/+1 counter on it.

@@ -1,0 +1,14 @@
+name=Two-Headed Dragon
+url=http://magiccards.info/query?q=%21Two-Headed+Dragon
+image=http://mtgimage.com/card/two-headed%20dragon.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={4}{R}{R}
+pt=4/4
+ability=Flying;\
+        {1}{R}: SN gets +2/+0 until end of turn.;\
+        SN can't be blocked except by two or more creatures.;\
+        SN can block an additional creature.
+timing=main
+oracle=Flying. {1}{R}: Two-Headed Dragon gets +2/+0 until end of turn. Two-Headed Dragon can't be blocked except by two or more creatures. Two-Headed Dragon can block an additional creature.

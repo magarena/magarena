@@ -1,0 +1,9 @@
+name=Rule of Law
+url=http://magiccards.info/query?q=%21Rule+of+Law
+image=http://mtgimage.com/card/rule%20of%20law.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=Each player can't cast more than one spell each turn.
+timing=main
+oracle=Each player can't cast more than one spell each turn.

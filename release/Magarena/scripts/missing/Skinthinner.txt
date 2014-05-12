@@ -1,0 +1,12 @@
+name=Skinthinner
+url=http://magiccards.info/query?q=%21Skinthinner
+image=http://mtgimage.com/card/skinthinner.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={1}{B}
+pt=2/1
+ability=Morph {3}{B}{B};\
+        When SN is turned face up, destroy target nonblack creature. It can't be regenerated.
+timing=main
+oracle=Morph {3}{B}{B}. When Skinthinner is turned face up, destroy target nonblack creature. It can't be regenerated.

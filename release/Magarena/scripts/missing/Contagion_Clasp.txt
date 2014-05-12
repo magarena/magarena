@@ -1,0 +1,10 @@
+name=Contagion Clasp
+url=http://magiccards.info/query?q=%21Contagion+Clasp
+image=http://mtgimage.com/card/contagion%20clasp.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability=When SN enters the battlefield, put a -1/-1 counter on target creature.;\
+        {4}, {T}: Proliferate.
+timing=main
+oracle=When Contagion Clasp enters the battlefield, put a -1/-1 counter on target creature. {4}, {T}: Proliferate.

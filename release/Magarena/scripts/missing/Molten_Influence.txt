@@ -1,0 +1,9 @@
+name=Molten Influence
+url=http://magiccards.info/query?q=%21Molten+Influence
+image=http://mtgimage.com/card/molten%20influence.jpg
+rarity=R
+type=Instant
+cost={1}{R}
+effect=Counter target instant or sorcery spell unless its controller has SN deal 4 damage to him or her.
+timing=removal
+oracle=Counter target instant or sorcery spell unless its controller has Molten Influence deal 4 damage to him or her.

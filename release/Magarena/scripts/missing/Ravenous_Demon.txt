@@ -1,0 +1,11 @@
+name=Ravenous Demon
+url=http://magiccards.info/query?q=%21Ravenous+Demon
+image=http://mtgimage.com/card/ravenous%20demon.jpg
+rarity=R
+type=Creature
+subtype=Demon
+cost={3}{B}{B}
+pt=4/4
+ability=Sacrifice a Human: Transform SN. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Sacrifice a Human: Transform Ravenous Demon. Activate this ability only any time you could cast a sorcery.

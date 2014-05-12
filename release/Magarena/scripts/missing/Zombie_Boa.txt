@@ -1,0 +1,11 @@
+name=Zombie Boa
+url=http://magiccards.info/query?q=%21Zombie+Boa
+image=http://mtgimage.com/card/zombie%20boa.jpg
+rarity=C
+type=Creature
+subtype=Zombie,Snake
+cost={4}{B}
+pt=3/3
+ability={1}{B}: Choose a color. Whenever SN becomes blocked by a creature of that color this turn, destroy that creature. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={1}{B}: Choose a color. Whenever Zombie Boa becomes blocked by a creature of that color this turn, destroy that creature. Activate this ability only any time you could cast a sorcery.

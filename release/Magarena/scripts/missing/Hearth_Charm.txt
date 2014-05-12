@@ -1,0 +1,9 @@
+name=Hearth Charm
+url=http://magiccards.info/query?q=%21Hearth+Charm
+image=http://mtgimage.com/card/hearth%20charm.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=Choose one — Destroy target artifact creature; or attacking creatures get +1/+0 until end of turn; or target creature with power 2 or less can't be blocked this turn.
+timing=removal
+oracle=Choose one — Destroy target artifact creature; or attacking creatures get +1/+0 until end of turn; or target creature with power 2 or less can't be blocked this turn.

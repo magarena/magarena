@@ -1,0 +1,11 @@
+name=Complicate
+url=http://magiccards.info/query?q=%21Complicate
+image=http://mtgimage.com/card/complicate.jpg
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Counter target spell unless its controller pays {3}.;\
+        Cycling {2}{U};\
+        When you cycle SN, you may counter target spell unless its controller pays {1}.
+timing=removal
+oracle=Counter target spell unless its controller pays {3}. Cycling {2}{U}. When you cycle Complicate, you may counter target spell unless its controller pays {1}.

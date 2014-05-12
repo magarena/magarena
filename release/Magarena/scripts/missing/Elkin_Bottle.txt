@@ -1,0 +1,9 @@
+name=Elkin Bottle
+url=http://magiccards.info/query?q=%21Elkin+Bottle
+image=http://mtgimage.com/card/elkin%20bottle.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability={3}, {T}: Exile the top card of your library. Until the beginning of your next upkeep, you may play that card.
+timing=main
+oracle={3}, {T}: Exile the top card of your library. Until the beginning of your next upkeep, you may play that card.

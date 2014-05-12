@@ -1,0 +1,13 @@
+name=Abduction
+url=http://magiccards.info/query?q=%21Abduction
+image=http://mtgimage.com/card/abduction.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{U}{U}
+ability=Enchant creature;\
+        When SN enters the battlefield, untap enchanted creature.;\
+        You control enchanted creature.;\
+        When enchanted creature dies, return that card to the battlefield under its owner's control.
+timing=main
+oracle=Enchant creature. When Abduction enters the battlefield, untap enchanted creature. You control enchanted creature. When enchanted creature dies, return that card to the battlefield under its owner's control.

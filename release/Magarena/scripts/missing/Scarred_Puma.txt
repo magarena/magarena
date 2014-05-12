@@ -1,0 +1,11 @@
+name=Scarred Puma
+url=http://magiccards.info/query?q=%21Scarred+Puma
+image=http://mtgimage.com/card/scarred%20puma.jpg
+rarity=C
+type=Creature
+subtype=Cat
+cost={R}
+pt=2/1
+ability=SN can't attack unless a black or green creature also attacks.
+timing=main
+oracle=Scarred Puma can't attack unless a black or green creature also attacks.

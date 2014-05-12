@@ -1,0 +1,10 @@
+name=Irresistible Prey
+url=http://magiccards.info/query?q=%21Irresistible+Prey
+image=http://mtgimage.com/card/irresistible%20prey.jpg
+rarity=U
+type=Sorcery
+cost={G}
+effect=Target creature must be blocked this turn if able.;\
+        Draw a card.
+timing=main
+oracle=Target creature must be blocked this turn if able. Draw a card.

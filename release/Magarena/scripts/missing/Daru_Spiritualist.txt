@@ -1,0 +1,11 @@
+name=Daru Spiritualist
+url=http://magiccards.info/query?q=%21Daru+Spiritualist
+image=http://mtgimage.com/card/daru%20spiritualist.jpg
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{W}
+pt=1/1
+ability=Whenever a Cleric creature you control becomes the target of a spell or ability, it gets +0/+2 until end of turn.
+timing=main
+oracle=Whenever a Cleric creature you control becomes the target of a spell or ability, it gets +0/+2 until end of turn.

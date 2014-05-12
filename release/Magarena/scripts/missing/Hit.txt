@@ -1,0 +1,9 @@
+name=Hit
+url=http://magiccards.info/query?q=%21Hit
+image=http://mtgimage.com/card/hitrun.jpg
+rarity=U
+type=Instant
+cost={1}{B}{R}
+effect=Target player sacrifices an artifact or creature. SN deals damage to that player equal to that permanent's converted mana cost.
+timing=removal
+oracle=Target player sacrifices an artifact or creature. Hit deals damage to that player equal to that permanent's converted mana cost.

@@ -1,0 +1,10 @@
+name=Clockspinning
+url=http://magiccards.info/query?q=%21Clockspinning
+image=http://mtgimage.com/card/clockspinning.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Buyback {3};\
+        Choose a counter on target permanent or suspended card. Remove that counter from that permanent or card or put another of those counters on it.
+timing=removal
+oracle=Buyback {3}. Choose a counter on target permanent or suspended card. Remove that counter from that permanent or card or put another of those counters on it.

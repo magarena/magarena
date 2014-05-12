@@ -1,0 +1,9 @@
+name=Griffin Canyon
+url=http://magiccards.info/query?q=%21Griffin+Canyon
+image=http://mtgimage.com/card/griffin%20canyon.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Untap target Griffin. If it's a creature, it gets +1/+1 until end of turn.

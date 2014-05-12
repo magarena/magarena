@@ -1,0 +1,9 @@
+name=Serene Sunset
+url=http://magiccards.info/query?q=%21Serene+Sunset
+image=http://mtgimage.com/card/serene%20sunset.jpg
+rarity=U
+type=Instant
+cost={X}{G}
+effect=Prevent all combat damage X target creatures would deal this turn.
+timing=removal
+oracle=Prevent all combat damage X target creatures would deal this turn.

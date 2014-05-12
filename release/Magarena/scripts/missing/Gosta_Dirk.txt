@@ -1,0 +1,12 @@
+name=Gosta Dirk
+url=http://magiccards.info/query?q=%21Gosta+Dirk
+image=http://mtgimage.com/card/gosta%20dirk.jpg
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={3}{W}{W}{U}{U}
+pt=4/4
+ability=First strike;\
+        Creatures with islandwalk can be blocked as though they didn't have islandwalk.
+timing=main
+oracle=First strike. Creatures with islandwalk can be blocked as though they didn't have islandwalk.

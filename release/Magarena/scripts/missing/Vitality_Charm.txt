@@ -1,0 +1,9 @@
+name=Vitality Charm
+url=http://magiccards.info/query?q=%21Vitality+Charm
+image=http://mtgimage.com/card/vitality%20charm.jpg
+rarity=C
+type=Instant
+cost={G}
+effect=Choose one — Put a 1/1 green Insect creature token onto the battlefield; or target creature gets +1/+1 and gains trample until end of turn; or regenerate target Beast.
+timing=removal
+oracle=Choose one — Put a 1/1 green Insect creature token onto the battlefield; or target creature gets +1/+1 and gains trample until end of turn; or regenerate target Beast.

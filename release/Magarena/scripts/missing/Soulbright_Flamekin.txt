@@ -1,0 +1,11 @@
+name=Soulbright Flamekin
+url=http://magiccards.info/query?q=%21Soulbright+Flamekin
+image=http://mtgimage.com/card/soulbright%20flamekin.jpg
+rarity=C
+type=Creature
+subtype=Elemental,Shaman
+cost={1}{R}
+pt=2/1
+ability={2}: Target creature gains trample until end of turn. If this is the third time this ability has resolved this turn, you may add {R}{R}{R}{R}{R}{R}{R}{R} to your mana pool.
+timing=main
+oracle={2}: Target creature gains trample until end of turn. If this is the third time this ability has resolved this turn, you may add {R}{R}{R}{R}{R}{R}{R}{R} to your mana pool.

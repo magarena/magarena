@@ -1,0 +1,9 @@
+name=Kor Chant
+url=http://magiccards.info/query?q=%21Kor+Chant
+image=http://mtgimage.com/card/kor%20chant.jpg
+rarity=C
+type=Instant
+cost={2}{W}
+effect=All damage that would be dealt this turn to target creature you control by a source of your choice is dealt to another target creature instead.
+timing=removal
+oracle=All damage that would be dealt this turn to target creature you control by a source of your choice is dealt to another target creature instead.

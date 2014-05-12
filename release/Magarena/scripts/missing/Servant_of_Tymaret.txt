@@ -1,0 +1,12 @@
+name=Servant of Tymaret
+url=http://magiccards.info/query?q=%21Servant+of+Tymaret
+image=http://mtgimage.com/card/servant%20of%20tymaret.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={2}{B}
+pt=1/3
+ability=Inspired — Whenever SN becomes untapped, each opponent loses 1 life. You gain life equal to the life lost this way.;\
+        {2}{B}: Regenerate SN.
+timing=main
+oracle=Inspired — Whenever Servant of Tymaret becomes untapped, each opponent loses 1 life. You gain life equal to the life lost this way. {2}{B}: Regenerate Servant of Tymaret.

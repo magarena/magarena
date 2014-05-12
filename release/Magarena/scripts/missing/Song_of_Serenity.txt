@@ -1,0 +1,9 @@
+name=Song of Serenity
+url=http://magiccards.info/query?q=%21Song+of+Serenity
+image=http://mtgimage.com/card/song%20of%20serenity.jpg
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=Creatures that are enchanted can't attack or block.
+timing=main
+oracle=Creatures that are enchanted can't attack or block.

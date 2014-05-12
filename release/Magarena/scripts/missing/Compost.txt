@@ -1,0 +1,9 @@
+name=Compost
+url=http://magiccards.info/query?q=%21Compost
+image=http://mtgimage.com/card/compost.jpg
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=Whenever a black card is put into an opponent's graveyard from anywhere, you may draw a card.
+timing=main
+oracle=Whenever a black card is put into an opponent's graveyard from anywhere, you may draw a card.

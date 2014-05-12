@@ -1,0 +1,12 @@
+name=Hivis of the Scale
+url=http://magiccards.info/query?q=%21Hivis+of+the+Scale
+image=http://mtgimage.com/card/hivis%20of%20the%20scale.jpg
+rarity=R
+type=Creature
+subtype=Viashino,Shaman
+cost={3}{R}{R}
+pt=3/4
+ability=You may choose not to untap SN during your untap step.;\
+        {T}: Gain control of target Dragon for as long as you control Hivis and Hivis remains tapped.
+timing=main
+oracle=You may choose not to untap Hivis of the Scale during your untap step. {T}: Gain control of target Dragon for as long as you control Hivis and Hivis remains tapped.

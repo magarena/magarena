@@ -1,0 +1,12 @@
+name=Giant Dustwasp
+url=http://magiccards.info/query?q=%21Giant+Dustwasp
+image=http://mtgimage.com/card/giant%20dustwasp.jpg
+rarity=C
+type=Creature
+subtype=Insect
+cost={3}{G}{G}
+pt=3/3
+ability=Flying;\
+        Suspend 4—{1}{G}
+timing=main
+oracle=Flying. Suspend 4—{1}{G}

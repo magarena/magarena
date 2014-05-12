@@ -1,0 +1,13 @@
+name=Cho-Manno's Blessing
+url=http://magiccards.info/query?q=%21Cho-Manno%27s+Blessing
+image=http://mtgimage.com/card/cho-manno%27s%20blessing.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={W}{W}
+ability=Flash;\
+        Enchant creature;\
+        As SN enters the battlefield, choose a color.;\
+        Enchanted creature has protection from the chosen color. This effect doesn't remove SN.
+timing=main
+oracle=Flash. Enchant creature. As Cho-Manno's Blessing enters the battlefield, choose a color. Enchanted creature has protection from the chosen color. This effect doesn't remove Cho-Manno's Blessing.

@@ -1,0 +1,12 @@
+name=Homing Sliver
+url=http://magiccards.info/query?q=%21Homing+Sliver
+image=http://mtgimage.com/card/homing%20sliver.jpg
+rarity=C
+type=Creature
+subtype=Sliver
+cost={2}{R}
+pt=2/2
+ability=Each Sliver card in each player's hand has slivercycling {3}.;\
+        Slivercycling {3}
+timing=main
+oracle=Each Sliver card in each player's hand has slivercycling {3}. Slivercycling {3}

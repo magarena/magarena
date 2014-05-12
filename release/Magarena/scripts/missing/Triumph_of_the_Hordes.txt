@@ -1,0 +1,9 @@
+name=Triumph of the Hordes
+url=http://magiccards.info/query?q=%21Triumph+of+the+Hordes
+image=http://mtgimage.com/card/triumph%20of%20the%20hordes.jpg
+rarity=U
+type=Sorcery
+cost={2}{G}{G}
+effect=Until end of turn, creatures you control get +1/+1 and gain trample and infect.
+timing=main
+oracle=Until end of turn, creatures you control get +1/+1 and gain trample and infect.

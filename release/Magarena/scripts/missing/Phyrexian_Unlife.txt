@@ -1,0 +1,10 @@
+name=Phyrexian Unlife
+url=http://magiccards.info/query?q=%21Phyrexian+Unlife
+image=http://mtgimage.com/card/phyrexian%20unlife.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}
+ability=You don't lose the game for having 0 or less life.;\
+        As long as you have 0 or less life, all damage is dealt to you as though its source had infect.
+timing=main
+oracle=You don't lose the game for having 0 or less life. As long as you have 0 or less life, all damage is dealt to you as though its source had infect.

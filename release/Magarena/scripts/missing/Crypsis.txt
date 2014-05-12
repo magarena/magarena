@@ -1,0 +1,9 @@
+name=Crypsis
+url=http://magiccards.info/query?q=%21Crypsis
+image=http://mtgimage.com/card/crypsis.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Target creature you control gains protection from creatures your opponents control until end of turn. Untap it.
+timing=removal
+oracle=Target creature you control gains protection from creatures your opponents control until end of turn. Untap it.

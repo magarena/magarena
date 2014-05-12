@@ -1,0 +1,9 @@
+name=Upheaval
+url=http://magiccards.info/query?q=%21Upheaval
+image=http://mtgimage.com/card/upheaval.jpg
+rarity=R
+type=Sorcery
+cost={4}{U}{U}
+effect=Return all permanents to their owners' hands.
+timing=main
+oracle=Return all permanents to their owners' hands.

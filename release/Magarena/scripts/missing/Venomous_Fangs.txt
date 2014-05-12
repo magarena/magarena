@@ -1,0 +1,11 @@
+name=Venomous Fangs
+url=http://magiccards.info/query?q=%21Venomous+Fangs
+image=http://mtgimage.com/card/venomous%20fangs.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchant creature;\
+        Whenever enchanted creature deals damage to a creature, destroy the other creature.
+timing=main
+oracle=Enchant creature. Whenever enchanted creature deals damage to a creature, destroy the other creature.

@@ -1,0 +1,10 @@
+name=Breaking
+url=http://magiccards.info/query?q=%21Breaking
+image=http://mtgimage.com/card/breakingentering.jpg
+rarity=R
+type=Sorcery
+cost={U}{B}
+effect=Target player puts the top eight cards of his or her library into his or her graveyard.;\
+        Fuse
+timing=main
+oracle=Target player puts the top eight cards of his or her library into his or her graveyard. Fuse

@@ -1,0 +1,9 @@
+name=Defiling Tears
+url=http://magiccards.info/query?q=%21Defiling+Tears
+image=http://mtgimage.com/card/defiling%20tears.jpg
+rarity=U
+type=Instant
+cost={2}{B}
+effect=Until end of turn, target creature becomes black, gets +1/-1, and gains "{B}: Regenerate this creature."
+timing=removal
+oracle=Until end of turn, target creature becomes black, gets +1/-1, and gains "{B}: Regenerate this creature."

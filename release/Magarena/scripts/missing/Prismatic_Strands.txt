@@ -1,0 +1,10 @@
+name=Prismatic Strands
+url=http://magiccards.info/query?q=%21Prismatic+Strands
+image=http://mtgimage.com/card/prismatic%20strands.jpg
+rarity=C
+type=Instant
+cost={2}{W}
+effect=Prevent all damage that sources of the color of your choice would deal this turn.;\
+        Flashback—Tap an untapped white creature you control.
+timing=removal
+oracle=Prevent all damage that sources of the color of your choice would deal this turn. Flashback—Tap an untapped white creature you control.

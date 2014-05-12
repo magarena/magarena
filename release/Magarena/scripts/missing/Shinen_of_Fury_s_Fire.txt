@@ -1,0 +1,12 @@
+name=Shinen of Fury's Fire
+url=http://magiccards.info/query?q=%21Shinen+of+Fury%27s+Fire
+image=http://mtgimage.com/card/shinen%20of%20fury%27s%20fire.jpg
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{R}
+pt=2/1
+ability=Haste;\
+        Channel — {R}, Discard SN: Target creature gains haste until end of turn.
+timing=main
+oracle=Haste. Channel — {R}, Discard Shinen of Fury's Fire: Target creature gains haste until end of turn.

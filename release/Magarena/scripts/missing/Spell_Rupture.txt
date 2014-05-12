@@ -1,0 +1,9 @@
+name=Spell Rupture
+url=http://magiccards.info/query?q=%21Spell+Rupture
+image=http://mtgimage.com/card/spell%20rupture.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Counter target spell unless its controller pays {X}, where X is the greatest power among creatures you control.
+timing=removal
+oracle=Counter target spell unless its controller pays {X}, where X is the greatest power among creatures you control.

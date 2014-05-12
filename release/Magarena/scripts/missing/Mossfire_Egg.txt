@@ -1,0 +1,9 @@
+name=Mossfire Egg
+url=http://magiccards.info/query?q=%21Mossfire+Egg
+image=http://mtgimage.com/card/mossfire%20egg.jpg
+rarity=U
+type=Artifact
+cost={1}
+ability={2}, {T}, Sacrifice SN: Add {R}{G} to your mana pool. Draw a card.
+timing=main
+oracle={2}, {T}, Sacrifice Mossfire Egg: Add {R}{G} to your mana pool. Draw a card.

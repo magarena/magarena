@@ -1,0 +1,11 @@
+name=Yomiji, Who Bars the Way
+url=http://magiccards.info/query?q=%21Yomiji%2C+Who+Bars+the+Way
+image=http://mtgimage.com/card/yomiji%2C%20who%20bars%20the%20way.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={5}{W}{W}
+pt=4/4
+ability=Whenever a legendary permanent other than SN is put into a graveyard from the battlefield, return that card to its owner's hand.
+timing=main
+oracle=Whenever a legendary permanent other than Yomiji, Who Bars the Way is put into a graveyard from the battlefield, return that card to its owner's hand.

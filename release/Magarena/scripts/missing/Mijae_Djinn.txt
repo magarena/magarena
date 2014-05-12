@@ -1,0 +1,11 @@
+name=Mijae Djinn
+url=http://magiccards.info/query?q=%21Mijae+Djinn
+image=http://mtgimage.com/card/mijae%20djinn.jpg
+rarity=R
+type=Creature
+subtype=Djinn
+cost={R}{R}{R}
+pt=6/3
+ability=Whenever SN attacks, flip a coin. If you lose the flip, remove SN from combat and tap it.
+timing=main
+oracle=Whenever Mijae Djinn attacks, flip a coin. If you lose the flip, remove Mijae Djinn from combat and tap it.

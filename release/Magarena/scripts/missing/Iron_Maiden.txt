@@ -1,0 +1,9 @@
+name=Iron Maiden
+url=http://magiccards.info/query?q=%21Iron+Maiden
+image=http://mtgimage.com/card/iron%20maiden.jpg
+rarity=R
+type=Artifact
+cost={3}
+ability=At the beginning of each opponent's upkeep, SN deals X damage to that player, where X is the number of cards in his or her hand minus 4.
+timing=main
+oracle=At the beginning of each opponent's upkeep, Iron Maiden deals X damage to that player, where X is the number of cards in his or her hand minus 4.

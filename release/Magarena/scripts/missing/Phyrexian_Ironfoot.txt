@@ -1,0 +1,12 @@
+name=Phyrexian Ironfoot
+url=http://magiccards.info/query?q=%21Phyrexian+Ironfoot
+image=http://mtgimage.com/card/phyrexian%20ironfoot.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={3}
+pt=3/4
+ability=SN doesn't untap during your untap step.;\
+        {1}{S}: Untap SN.
+timing=main
+oracle=Phyrexian Ironfoot doesn't untap during your untap step. {1}{S}: Untap Phyrexian Ironfoot.

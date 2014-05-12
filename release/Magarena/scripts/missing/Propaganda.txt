@@ -1,0 +1,9 @@
+name=Propaganda
+url=http://magiccards.info/query?q=%21Propaganda
+image=http://mtgimage.com/card/propaganda.jpg
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.
+timing=main
+oracle=Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.

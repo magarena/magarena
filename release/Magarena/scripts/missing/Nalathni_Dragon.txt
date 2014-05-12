@@ -1,0 +1,12 @@
+name=Nalathni Dragon
+url=http://magiccards.info/query?q=%21Nalathni+Dragon
+image=http://mtgimage.com/card/nalathni%20dragon.jpg
+rarity=S
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}
+pt=1/1
+ability=Flying; banding;\
+        {R}: SN gets +1/+0 until end of turn. If this ability has been activated four or more times this turn, sacrifice SN at the beginning of the next end step.
+timing=main
+oracle=Flying; banding. {R}: Nalathni Dragon gets +1/+0 until end of turn. If this ability has been activated four or more times this turn, sacrifice Nalathni Dragon at the beginning of the next end step.

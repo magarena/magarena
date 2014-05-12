@@ -1,0 +1,11 @@
+name=Mortician Beetle
+url=http://magiccards.info/query?q=%21Mortician+Beetle
+image=http://mtgimage.com/card/mortician%20beetle.jpg
+rarity=R
+type=Creature
+subtype=Insect
+cost={B}
+pt=1/1
+ability=Whenever a player sacrifices a creature, you may put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever a player sacrifices a creature, you may put a +1/+1 counter on Mortician Beetle.

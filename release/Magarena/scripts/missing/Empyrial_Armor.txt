@@ -1,0 +1,11 @@
+name=Empyrial Armor
+url=http://magiccards.info/query?q=%21Empyrial+Armor
+image=http://mtgimage.com/card/empyrial%20armor.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1 for each card in your hand.
+timing=main
+oracle=Enchant creature. Enchanted creature gets +1/+1 for each card in your hand.

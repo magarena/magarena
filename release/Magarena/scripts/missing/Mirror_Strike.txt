@@ -1,0 +1,9 @@
+name=Mirror Strike
+url=http://magiccards.info/query?q=%21Mirror+Strike
+image=http://mtgimage.com/card/mirror%20strike.jpg
+rarity=U
+type=Instant
+cost={3}{W}
+effect=All combat damage that would be dealt to you this turn by target unblocked creature is dealt to its controller instead.
+timing=removal
+oracle=All combat damage that would be dealt to you this turn by target unblocked creature is dealt to its controller instead.

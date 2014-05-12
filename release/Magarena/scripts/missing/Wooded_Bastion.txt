@@ -1,0 +1,9 @@
+name=Wooded Bastion
+url=http://magiccards.info/query?q=%21Wooded+Bastion
+image=http://mtgimage.com/card/wooded%20bastion.jpg
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {G/W}, {T}: Add {G}{G}, {G}{W}, or {W}{W} to your mana pool.
+timing=main
+oracle={T}: Add {1} to your mana pool. {G/W}, {T}: Add {G}{G}, {G}{W}, or {W}{W} to your mana pool.

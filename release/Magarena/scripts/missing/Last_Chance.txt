@@ -1,0 +1,9 @@
+name=Last Chance
+url=http://magiccards.info/query?q=%21Last+Chance
+image=http://mtgimage.com/card/last%20chance.jpg
+rarity=R
+type=Sorcery
+cost={R}{R}
+effect=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.
+timing=main
+oracle=Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.

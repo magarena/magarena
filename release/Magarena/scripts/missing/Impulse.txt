@@ -1,0 +1,9 @@
+name=Impulse
+url=http://magiccards.info/query?q=%21Impulse
+image=http://mtgimage.com/card/impulse.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+timing=removal
+oracle=Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.

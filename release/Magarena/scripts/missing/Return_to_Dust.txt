@@ -1,0 +1,9 @@
+name=Return to Dust
+url=http://magiccards.info/query?q=%21Return+to+Dust
+image=http://mtgimage.com/card/return%20to%20dust.jpg
+rarity=U
+type=Instant
+cost={2}{W}{W}
+effect=Exile target artifact or enchantment. If you cast this spell during your main phase, you may exile up to one other target artifact or enchantment.
+timing=removal
+oracle=Exile target artifact or enchantment. If you cast this spell during your main phase, you may exile up to one other target artifact or enchantment.

@@ -1,0 +1,11 @@
+name=Riptide Shapeshifter
+url=http://magiccards.info/query?q=%21Riptide+Shapeshifter
+image=http://mtgimage.com/card/riptide%20shapeshifter.jpg
+rarity=U
+type=Creature
+subtype=Shapeshifter
+cost={3}{U}{U}
+pt=3/3
+ability={2}{U}{U}, Sacrifice SN: Choose a creature type. Reveal cards from the top of your library until you reveal a creature card of that type. Put that card onto the battlefield and shuffle the rest into your library.
+timing=main
+oracle={2}{U}{U}, Sacrifice Riptide Shapeshifter: Choose a creature type. Reveal cards from the top of your library until you reveal a creature card of that type. Put that card onto the battlefield and shuffle the rest into your library.

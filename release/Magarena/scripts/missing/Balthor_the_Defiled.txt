@@ -1,0 +1,12 @@
+name=Balthor the Defiled
+url=http://magiccards.info/query?q=%21Balthor+the+Defiled
+image=http://mtgimage.com/card/balthor%20the%20defiled.jpg
+rarity=R
+type=Creature
+subtype=Zombie,Dwarf
+cost={2}{B}{B}
+pt=2/2
+ability=Minion creatures get +1/+1.;\
+        {B}{B}{B}, Exile SN: Each player returns all black and all red creature cards from his or her graveyard to the battlefield.
+timing=main
+oracle=Minion creatures get +1/+1. {B}{B}{B}, Exile Balthor the Defiled: Each player returns all black and all red creature cards from his or her graveyard to the battlefield.

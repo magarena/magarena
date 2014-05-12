@@ -1,0 +1,10 @@
+name=Ethereal Haze
+url=http://magiccards.info/query?q=%21Ethereal+Haze
+image=http://mtgimage.com/card/ethereal%20haze.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={W}
+effect=Prevent all damage that would be dealt by creatures this turn.
+timing=removal
+oracle=Prevent all damage that would be dealt by creatures this turn.

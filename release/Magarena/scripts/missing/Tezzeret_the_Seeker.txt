@@ -1,0 +1,12 @@
+name=Tezzeret the Seeker
+url=http://magiccards.info/query?q=%21Tezzeret+the+Seeker
+image=http://mtgimage.com/card/tezzeret%20the%20seeker.jpg
+rarity=M
+type=Planeswalker
+subtype=Tezzeret
+cost={3}{U}{U}
+ability=+1: Untap up to two target artifacts.;\
+        -X: Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.;\
+        -5: Artifacts you control become 5/5 artifact creatures until end of turn.
+timing=main
+oracle=+1: Untap up to two target artifacts. -X: Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library. -5: Artifacts you control become 5/5 artifact creatures until end of turn.

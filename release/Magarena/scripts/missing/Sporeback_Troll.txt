@@ -1,0 +1,12 @@
+name=Sporeback Troll
+url=http://magiccards.info/query?q=%21Sporeback+Troll
+image=http://mtgimage.com/card/sporeback%20troll.jpg
+rarity=C
+type=Creature
+subtype=Troll,Mutant
+cost={3}{G}
+pt=0/0
+ability=Graft 2;\
+        {1}{G}: Regenerate target creature with a +1/+1 counter on it.
+timing=main
+oracle=Graft 2. {1}{G}: Regenerate target creature with a +1/+1 counter on it.

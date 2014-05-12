@@ -1,0 +1,8 @@
+name=Gaea's Cradle
+url=http://magiccards.info/query?q=%21Gaea%27s+Cradle
+image=http://mtgimage.com/card/gaea%27s%20cradle.jpg
+rarity=R
+type=Land
+ability={T}: Add {G} to your mana pool for each creature you control.
+timing=main
+oracle={T}: Add {G} to your mana pool for each creature you control.

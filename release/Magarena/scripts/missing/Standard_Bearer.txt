@@ -1,0 +1,11 @@
+name=Standard Bearer
+url=http://magiccards.info/query?q=%21Standard+Bearer
+image=http://mtgimage.com/card/standard%20bearer.jpg
+rarity=C
+type=Creature
+subtype=Human,Flagbearer
+cost={1}{W}
+pt=1/1
+ability=While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.
+timing=main
+oracle=While choosing targets as part of casting a spell or activating an ability, your opponents must choose at least one Flagbearer on the battlefield if able.

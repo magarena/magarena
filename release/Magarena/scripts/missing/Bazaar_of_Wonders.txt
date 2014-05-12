@@ -1,0 +1,10 @@
+name=Bazaar of Wonders
+url=http://magiccards.info/query?q=%21Bazaar+of+Wonders
+image=http://mtgimage.com/card/bazaar%20of%20wonders.jpg
+rarity=R
+type=Enchantment
+cost={3}{U}{U}
+ability=When SN enters the battlefield, exile all cards from all graveyards.;\
+        Whenever a player casts a spell, counter it if a card with the same name is in a graveyard or a nontoken permanent with the same name is on the battlefield.
+timing=main
+oracle=When Bazaar of Wonders enters the battlefield, exile all cards from all graveyards. Whenever a player casts a spell, counter it if a card with the same name is in a graveyard or a nontoken permanent with the same name is on the battlefield.

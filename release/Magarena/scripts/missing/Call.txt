@@ -1,0 +1,10 @@
+name=Call
+url=http://magiccards.info/query?q=%21Call
+image=http://mtgimage.com/card/beckcall.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}{U}
+effect=Put four 1/1 white Bird creature tokens with flying onto the battlefield.;\
+        Fuse
+timing=main
+oracle=Put four 1/1 white Bird creature tokens with flying onto the battlefield. Fuse

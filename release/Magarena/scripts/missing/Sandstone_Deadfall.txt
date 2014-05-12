@@ -1,0 +1,9 @@
+name=Sandstone Deadfall
+url=http://magiccards.info/query?q=%21Sandstone+Deadfall
+image=http://mtgimage.com/card/sandstone%20deadfall.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability={T}, Sacrifice two lands and SN: Destroy target attacking creature.
+timing=main
+oracle={T}, Sacrifice two lands and Sandstone Deadfall: Destroy target attacking creature.

@@ -1,0 +1,11 @@
+name=Archdemon of Greed
+url=http://magiccards.info/query?q=%21Archdemon+of+Greed
+image=http://mtgimage.com/card/archdemon%20of%20greed.jpg
+rarity=R
+type=Creature
+subtype=Demon
+pt=9/9
+ability=Flying, trample;\
+        At the beginning of your upkeep, sacrifice a Human. If you can't, tap SN and it deals 9 damage to you.
+timing=main
+oracle=Flying, trample. At the beginning of your upkeep, sacrifice a Human. If you can't, tap Archdemon of Greed and it deals 9 damage to you.

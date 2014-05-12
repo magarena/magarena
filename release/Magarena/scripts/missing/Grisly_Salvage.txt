@@ -1,0 +1,9 @@
+name=Grisly Salvage
+url=http://magiccards.info/query?q=%21Grisly+Salvage
+image=http://mtgimage.com/card/grisly%20salvage.jpg
+rarity=C
+type=Instant
+cost={B}{G}
+effect=Reveal the top five cards of your library. You may put a creature or land card from among them into your hand. Put the rest into your graveyard.
+timing=removal
+oracle=Reveal the top five cards of your library. You may put a creature or land card from among them into your hand. Put the rest into your graveyard.

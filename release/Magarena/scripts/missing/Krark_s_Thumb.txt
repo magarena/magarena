@@ -1,0 +1,9 @@
+name=Krark's Thumb
+url=http://magiccards.info/query?q=%21Krark%27s+Thumb
+image=http://mtgimage.com/card/krark%27s%20thumb.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=If you would flip a coin, instead flip two coins and ignore one.
+timing=main
+oracle=If you would flip a coin, instead flip two coins and ignore one.

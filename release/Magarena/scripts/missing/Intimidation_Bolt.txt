@@ -1,0 +1,9 @@
+name=Intimidation Bolt
+url=http://magiccards.info/query?q=%21Intimidation+Bolt
+image=http://mtgimage.com/card/intimidation%20bolt.jpg
+rarity=U
+type=Instant
+cost={1}{R}{W}
+effect=SN deals 3 damage to target creature. Other creatures can't attack this turn.
+timing=removal
+oracle=Intimidation Bolt deals 3 damage to target creature. Other creatures can't attack this turn.

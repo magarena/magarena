@@ -1,0 +1,12 @@
+name=Whip-Spine Drake
+url=http://magiccards.info/query?q=%21Whip-Spine+Drake
+image=http://mtgimage.com/card/whip-spine%20drake.jpg
+rarity=C
+type=Creature
+subtype=Drake
+cost={3}{U}{U}
+pt=3/3
+ability=Flying;\
+        Morph {2}{W}
+timing=main
+oracle=Flying. Morph {2}{W}

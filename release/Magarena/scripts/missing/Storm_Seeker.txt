@@ -1,0 +1,9 @@
+name=Storm Seeker
+url=http://magiccards.info/query?q=%21Storm+Seeker
+image=http://mtgimage.com/card/storm%20seeker.jpg
+rarity=U
+type=Instant
+cost={3}{G}
+effect=SN deals damage to target player equal to the number of cards in that player's hand.
+timing=removal
+oracle=Storm Seeker deals damage to target player equal to the number of cards in that player's hand.

@@ -1,0 +1,12 @@
+name=Sower of Temptation
+url=http://magiccards.info/query?q=%21Sower+of+Temptation
+image=http://mtgimage.com/card/sower%20of%20temptation.jpg
+rarity=R
+type=Creature
+subtype=Faerie,Wizard
+cost={2}{U}{U}
+pt=2/2
+ability=Flying;\
+        When SN enters the battlefield, gain control of target creature for as long as SN remains on the battlefield.
+timing=main
+oracle=Flying. When Sower of Temptation enters the battlefield, gain control of target creature for as long as Sower of Temptation remains on the battlefield.

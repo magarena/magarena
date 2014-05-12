@@ -1,0 +1,13 @@
+name=Ursine Fylgja
+url=http://magiccards.info/query?q=%21Ursine+Fylgja
+image=http://mtgimage.com/card/ursine%20fylgja.jpg
+rarity=U
+type=Creature
+subtype=Spirit,Bear
+cost={4}{W}
+pt=3/3
+ability=SN enters the battlefield with four healing counters on it.;\
+        Remove a healing counter from SN: Prevent the next 1 damage that would be dealt to SN this turn.;\
+        {2}{W}: Put a healing counter on SN.
+timing=main
+oracle=Ursine Fylgja enters the battlefield with four healing counters on it. Remove a healing counter from Ursine Fylgja: Prevent the next 1 damage that would be dealt to Ursine Fylgja this turn. {2}{W}: Put a healing counter on Ursine Fylgja.

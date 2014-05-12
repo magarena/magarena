@@ -1,0 +1,9 @@
+name=Volcanic Eruption
+url=http://magiccards.info/query?q=%21Volcanic+Eruption
+image=http://mtgimage.com/card/volcanic%20eruption.jpg
+rarity=R
+type=Sorcery
+cost={X}{U}{U}{U}
+effect=Destroy X target Mountains. SN deals damage to each creature and each player equal to the number of Mountains put into a graveyard this way.
+timing=main
+oracle=Destroy X target Mountains. Volcanic Eruption deals damage to each creature and each player equal to the number of Mountains put into a graveyard this way.

@@ -1,0 +1,11 @@
+name=Carnophage
+url=http://magiccards.info/query?q=%21Carnophage
+image=http://mtgimage.com/card/carnophage.jpg
+rarity=C
+type=Creature
+subtype=Zombie
+cost={B}
+pt=2/2
+ability=At the beginning of your upkeep, tap SN unless you pay 1 life.
+timing=main
+oracle=At the beginning of your upkeep, tap Carnophage unless you pay 1 life.

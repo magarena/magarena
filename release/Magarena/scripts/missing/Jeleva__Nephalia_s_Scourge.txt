@@ -1,0 +1,13 @@
+name=Jeleva, Nephalia's Scourge
+url=http://magiccards.info/query?q=%21Jeleva%2C+Nephalia%27s+Scourge
+image=http://mtgimage.com/card/jeleva%2C%20nephalia%27s%20scourge.jpg
+rarity=M
+type=Creature
+subtype=Vampire,Wizard
+cost={1}{U}{B}{R}
+pt=1/3
+ability=Flying;\
+        When SN enters the battlefield, each player exiles the top X cards of his or her library, where X is the amount of mana spent to cast Jeleva.;\
+        Whenever Jeleva attacks, you may cast an instant or sorcery card exiled with it without paying its mana cost.
+timing=main
+oracle=Flying. When Jeleva, Nephalia's Scourge enters the battlefield, each player exiles the top X cards of his or her library, where X is the amount of mana spent to cast Jeleva. Whenever Jeleva attacks, you may cast an instant or sorcery card exiled with it without paying its mana cost.

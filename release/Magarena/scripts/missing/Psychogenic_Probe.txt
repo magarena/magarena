@@ -1,0 +1,9 @@
+name=Psychogenic Probe
+url=http://magiccards.info/query?q=%21Psychogenic+Probe
+image=http://mtgimage.com/card/psychogenic%20probe.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=Whenever a spell or ability causes a player to shuffle his or her library, SN deals 2 damage to him or her.
+timing=main
+oracle=Whenever a spell or ability causes a player to shuffle his or her library, Psychogenic Probe deals 2 damage to him or her.

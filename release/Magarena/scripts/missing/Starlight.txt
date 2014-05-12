@@ -1,0 +1,9 @@
+name=Starlight
+url=http://magiccards.info/query?q=%21Starlight
+image=http://mtgimage.com/card/starlight.jpg
+rarity=U
+type=Sorcery
+cost={1}{W}
+effect=You gain 3 life for each black creature target opponent controls.
+timing=main
+oracle=You gain 3 life for each black creature target opponent controls.

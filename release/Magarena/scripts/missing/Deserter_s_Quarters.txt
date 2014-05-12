@@ -1,0 +1,10 @@
+name=Deserter's Quarters
+url=http://magiccards.info/query?q=%21Deserter%27s+Quarters
+image=http://mtgimage.com/card/deserter%27s%20quarters.jpg
+rarity=U
+type=Artifact
+cost={2}
+ability=You may choose not to untap SN during your untap step.;\
+        {6}, {T}: Tap target creature. It doesn't untap during its controller's untap step for as long as SN remains tapped.
+timing=main
+oracle=You may choose not to untap Deserter's Quarters during your untap step. {6}, {T}: Tap target creature. It doesn't untap during its controller's untap step for as long as Deserter's Quarters remains tapped.

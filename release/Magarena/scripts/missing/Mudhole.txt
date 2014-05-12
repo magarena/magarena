@@ -1,0 +1,9 @@
+name=Mudhole
+url=http://magiccards.info/query?q=%21Mudhole
+image=http://mtgimage.com/card/mudhole.jpg
+rarity=R
+type=Instant
+cost={2}{R}
+effect=Target player exiles all land cards from his or her graveyard.
+timing=removal
+oracle=Target player exiles all land cards from his or her graveyard.

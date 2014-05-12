@@ -1,0 +1,11 @@
+name=Ink-Treader Nephilim
+url=http://magiccards.info/query?q=%21Ink-Treader+Nephilim
+image=http://mtgimage.com/card/ink-treader%20nephilim.jpg
+rarity=R
+type=Creature
+subtype=Nephilim
+cost={R}{G}{W}{U}
+pt=3/3
+ability=Whenever a player casts an instant or sorcery spell, if that spell targets only SN, copy the spell for each other creature that spell could target. Each copy targets a different one of those creatures.
+timing=main
+oracle=Whenever a player casts an instant or sorcery spell, if that spell targets only Ink-Treader Nephilim, copy the spell for each other creature that spell could target. Each copy targets a different one of those creatures.

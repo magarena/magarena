@@ -1,0 +1,12 @@
+name=Scavenging Ghoul
+url=http://magiccards.info/query?q=%21Scavenging+Ghoul
+image=http://mtgimage.com/card/scavenging%20ghoul.jpg
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=2/2
+ability=At the beginning of each end step, put a corpse counter on SN for each creature that died this turn.;\
+        Remove a corpse counter from SN: Regenerate SN.
+timing=main
+oracle=At the beginning of each end step, put a corpse counter on Scavenging Ghoul for each creature that died this turn. Remove a corpse counter from Scavenging Ghoul: Regenerate Scavenging Ghoul.

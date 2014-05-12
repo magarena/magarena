@@ -1,0 +1,13 @@
+name=Pentarch Ward
+url=http://magiccards.info/query?q=%21Pentarch+Ward
+image=http://mtgimage.com/card/pentarch%20ward.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        As SN enters the battlefield, choose a color.;\
+        When SN enters the battlefield, draw a card.;\
+        Enchanted creature has protection from the chosen color. This effect doesn't remove SN.
+timing=main
+oracle=Enchant creature. As Pentarch Ward enters the battlefield, choose a color. When Pentarch Ward enters the battlefield, draw a card. Enchanted creature has protection from the chosen color. This effect doesn't remove Pentarch Ward.

@@ -1,0 +1,12 @@
+name=Robber Fly
+url=http://magiccards.info/query?q=%21Robber+Fly
+image=http://mtgimage.com/card/robber%20fly.jpg
+rarity=U
+type=Creature
+subtype=Insect
+cost={2}{R}
+pt=1/1
+ability=Flying;\
+        Whenever SN becomes blocked, defending player discards all the cards in his or her hand, then draws that many cards.
+timing=main
+oracle=Flying. Whenever Robber Fly becomes blocked, defending player discards all the cards in his or her hand, then draws that many cards.

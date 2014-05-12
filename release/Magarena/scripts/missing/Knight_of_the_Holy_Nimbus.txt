@@ -1,0 +1,13 @@
+name=Knight of the Holy Nimbus
+url=http://magiccards.info/query?q=%21Knight+of+the+Holy+Nimbus
+image=http://mtgimage.com/card/knight%20of%20the%20holy%20nimbus.jpg
+rarity=U
+type=Creature
+subtype=Human,Rebel,Knight
+cost={W}{W}
+pt=2/2
+ability=Flanking;\
+        If SN would be destroyed, regenerate it.;\
+        {2}: SN can't be regenerated this turn. Only any opponent may activate this ability.
+timing=main
+oracle=Flanking. If Knight of the Holy Nimbus would be destroyed, regenerate it. {2}: Knight of the Holy Nimbus can't be regenerated this turn. Only any opponent may activate this ability.

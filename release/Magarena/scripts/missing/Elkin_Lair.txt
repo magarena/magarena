@@ -1,0 +1,9 @@
+name=Elkin Lair
+url=http://magiccards.info/query?q=%21Elkin+Lair
+image=http://mtgimage.com/card/elkin%20lair.jpg
+rarity=R
+type=Enchantment
+cost={3}{R}
+ability=At the beginning of each player's upkeep, that player exiles a card at random from his or her hand. The player may play that card this turn. At the beginning of the next end step, if the player hasn't played the card, he or she puts it into his or her graveyard.
+timing=main
+oracle=At the beginning of each player's upkeep, that player exiles a card at random from his or her hand. The player may play that card this turn. At the beginning of the next end step, if the player hasn't played the card, he or she puts it into his or her graveyard.

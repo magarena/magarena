@@ -1,0 +1,11 @@
+name=Liege of the Hollows
+url=http://magiccards.info/query?q=%21Liege+of+the+Hollows
+image=http://mtgimage.com/card/liege%20of%20the%20hollows.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={2}{G}{G}
+pt=3/4
+ability=When SN dies, each player may pay any amount of mana. Then each player who paid mana this way puts that many 1/1 green Squirrel creature tokens onto the battlefield.
+timing=main
+oracle=When Liege of the Hollows dies, each player may pay any amount of mana. Then each player who paid mana this way puts that many 1/1 green Squirrel creature tokens onto the battlefield.

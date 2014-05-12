@@ -1,0 +1,9 @@
+name=Titan's Revenge
+url=http://magiccards.info/query?q=%21Titan%27s+Revenge
+image=http://mtgimage.com/card/titan%27s%20revenge.jpg
+rarity=R
+type=Sorcery
+cost={X}{R}{R}
+effect=SN deals X damage to target creature or player. Clash with an opponent. If you win, return SN to its owner's hand.
+timing=main
+oracle=Titan's Revenge deals X damage to target creature or player. Clash with an opponent. If you win, return Titan's Revenge to its owner's hand.

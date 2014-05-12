@@ -1,0 +1,11 @@
+name=Mistfolk
+url=http://magiccards.info/query?q=%21Mistfolk
+image=http://mtgimage.com/card/mistfolk.jpg
+rarity=C
+type=Creature
+subtype=Illusion
+cost={U}{U}
+pt=1/2
+ability={U}: Counter target spell that targets SN.
+timing=main
+oracle={U}: Counter target spell that targets Mistfolk.

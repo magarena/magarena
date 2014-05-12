@@ -1,0 +1,11 @@
+name=Carrion Wurm
+url=http://magiccards.info/query?q=%21Carrion+Wurm
+image=http://mtgimage.com/card/carrion%20wurm.jpg
+rarity=U
+type=Creature
+subtype=Zombie,Wurm
+cost={3}{B}{B}
+pt=6/5
+ability=Whenever SN attacks or blocks, any player may exile three cards from his or her graveyard. If a player does, SN assigns no combat damage this turn.
+timing=main
+oracle=Whenever Carrion Wurm attacks or blocks, any player may exile three cards from his or her graveyard. If a player does, Carrion Wurm assigns no combat damage this turn.

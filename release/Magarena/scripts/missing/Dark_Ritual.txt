@@ -1,0 +1,9 @@
+name=Dark Ritual
+url=http://magiccards.info/query?q=%21Dark+Ritual
+image=http://mtgimage.com/card/dark%20ritual.jpg
+rarity=C
+type=Instant
+cost={B}
+effect=Add {B}{B}{B} to your mana pool.
+timing=removal
+oracle=Add {B}{B}{B} to your mana pool.

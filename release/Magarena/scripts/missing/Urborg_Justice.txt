@@ -1,0 +1,9 @@
+name=Urborg Justice
+url=http://magiccards.info/query?q=%21Urborg+Justice
+image=http://mtgimage.com/card/urborg%20justice.jpg
+rarity=R
+type=Instant
+cost={B}{B}
+effect=Target opponent sacrifices a creature for each creature put into your graveyard from the battlefield this turn.
+timing=removal
+oracle=Target opponent sacrifices a creature for each creature put into your graveyard from the battlefield this turn.

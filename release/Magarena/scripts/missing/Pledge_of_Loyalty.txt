@@ -1,0 +1,11 @@
+name=Pledge of Loyalty
+url=http://magiccards.info/query?q=%21Pledge+of+Loyalty
+image=http://mtgimage.com/card/pledge%20of%20loyalty.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        Enchanted creature has protection from the colors of permanents you control. This effect doesn't remove SN.
+timing=main
+oracle=Enchant creature. Enchanted creature has protection from the colors of permanents you control. This effect doesn't remove Pledge of Loyalty.

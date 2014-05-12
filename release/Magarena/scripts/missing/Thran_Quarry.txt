@@ -1,0 +1,9 @@
+name=Thran Quarry
+url=http://magiccards.info/query?q=%21Thran+Quarry
+image=http://mtgimage.com/card/thran%20quarry.jpg
+rarity=R
+type=Land
+ability=At the beginning of the end step, if you control no creatures, sacrifice SN.;\
+        {T}: Add one mana of any color to your mana pool.
+timing=main
+oracle=At the beginning of the end step, if you control no creatures, sacrifice Thran Quarry. {T}: Add one mana of any color to your mana pool.

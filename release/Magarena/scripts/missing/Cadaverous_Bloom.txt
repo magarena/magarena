@@ -1,0 +1,9 @@
+name=Cadaverous Bloom
+url=http://magiccards.info/query?q=%21Cadaverous+Bloom
+image=http://mtgimage.com/card/cadaverous%20bloom.jpg
+rarity=R
+type=Enchantment
+cost={3}{B}{G}
+ability=Exile a card from your hand: Add {B}{B} or {G}{G} to your mana pool.
+timing=main
+oracle=Exile a card from your hand: Add {B}{B} or {G}{G} to your mana pool.

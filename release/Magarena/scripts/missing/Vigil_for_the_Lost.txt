@@ -1,0 +1,9 @@
+name=Vigil for the Lost
+url=http://magiccards.info/query?q=%21Vigil+for+the+Lost
+image=http://mtgimage.com/card/vigil%20for%20the%20lost.jpg
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=Whenever a creature you control dies, you may pay {X}. If you do, you gain X life.
+timing=main
+oracle=Whenever a creature you control dies, you may pay {X}. If you do, you gain X life.

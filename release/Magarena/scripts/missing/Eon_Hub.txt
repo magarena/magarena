@@ -1,0 +1,9 @@
+name=Eon Hub
+url=http://magiccards.info/query?q=%21Eon+Hub
+image=http://mtgimage.com/card/eon%20hub.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability=Players skip their upkeep steps.
+timing=main
+oracle=Players skip their upkeep steps.

@@ -1,0 +1,11 @@
+name=Towering Baloth
+url=http://magiccards.info/query?q=%21Towering+Baloth
+image=http://mtgimage.com/card/towering%20baloth.jpg
+rarity=U
+type=Creature
+subtype=Beast
+cost={6}{G}{G}
+pt=7/6
+ability=Morph {6}{G}
+timing=main
+oracle=Morph {6}{G}

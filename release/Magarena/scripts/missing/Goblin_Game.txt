@@ -1,0 +1,9 @@
+name=Goblin Game
+url=http://magiccards.info/query?q=%21Goblin+Game
+image=http://mtgimage.com/card/goblin%20game.jpg
+rarity=R
+type=Sorcery
+cost={5}{R}{R}
+effect=Each player hides at least one item, then all players reveal them simultaneously. Each player loses life equal to the number of items he or she revealed. The player who revealed the fewest items then loses half his or her life, rounded up. If two or more players are tied for fewest, each loses half his or her life, rounded up.
+timing=main
+oracle=Each player hides at least one item, then all players reveal them simultaneously. Each player loses life equal to the number of items he or she revealed. The player who revealed the fewest items then loses half his or her life, rounded up. If two or more players are tied for fewest, each loses half his or her life, rounded up.

@@ -1,0 +1,12 @@
+name=Tradewind Rider
+url=http://magiccards.info/query?q=%21Tradewind+Rider
+image=http://mtgimage.com/card/tradewind%20rider.jpg
+rarity=R
+type=Creature
+subtype=Spirit
+cost={3}{U}
+pt=1/4
+ability=Flying;\
+        {T}, Tap two untapped creatures you control: Return target permanent to its owner's hand.
+timing=main
+oracle=Flying. {T}, Tap two untapped creatures you control: Return target permanent to its owner's hand.

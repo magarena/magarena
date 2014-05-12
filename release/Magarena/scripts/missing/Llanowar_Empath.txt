@@ -1,0 +1,11 @@
+name=Llanowar Empath
+url=http://magiccards.info/query?q=%21Llanowar+Empath
+image=http://mtgimage.com/card/llanowar%20empath.jpg
+rarity=C
+type=Creature
+subtype=Elf,Shaman
+cost={3}{G}
+pt=2/2
+ability=When SN enters the battlefield, scry 2, then reveal the top card of your library. If it's a creature card, put it into your hand.
+timing=main
+oracle=When Llanowar Empath enters the battlefield, scry 2, then reveal the top card of your library. If it's a creature card, put it into your hand.

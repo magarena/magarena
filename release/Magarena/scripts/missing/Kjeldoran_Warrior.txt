@@ -1,0 +1,11 @@
+name=Kjeldoran Warrior
+url=http://magiccards.info/query?q=%21Kjeldoran+Warrior
+image=http://mtgimage.com/card/kjeldoran%20warrior.jpg
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={W}
+pt=1/1
+ability=Banding
+timing=main
+oracle=Banding

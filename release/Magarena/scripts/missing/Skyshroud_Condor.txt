@@ -1,0 +1,12 @@
+name=Skyshroud Condor
+url=http://magiccards.info/query?q=%21Skyshroud+Condor
+image=http://mtgimage.com/card/skyshroud%20condor.jpg
+rarity=U
+type=Creature
+subtype=Bird
+cost={1}{U}
+pt=2/2
+ability=Flying;\
+        Cast SN only if you've cast another spell this turn.
+timing=main
+oracle=Flying. Cast Skyshroud Condor only if you've cast another spell this turn.

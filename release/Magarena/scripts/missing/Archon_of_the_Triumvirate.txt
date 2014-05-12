@@ -1,0 +1,12 @@
+name=Archon of the Triumvirate
+url=http://magiccards.info/query?q=%21Archon+of+the+Triumvirate
+image=http://mtgimage.com/card/archon%20of%20the%20triumvirate.jpg
+rarity=R
+type=Creature
+subtype=Archon
+cost={5}{W}{U}
+pt=4/5
+ability=Flying;\
+        Whenever SN attacks, detain up to two target nonland permanents your opponents control.
+timing=main
+oracle=Flying. Whenever Archon of the Triumvirate attacks, detain up to two target nonland permanents your opponents control.

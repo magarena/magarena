@@ -1,0 +1,9 @@
+name=Pyrotechnics
+url=http://magiccards.info/query?q=%21Pyrotechnics
+image=http://mtgimage.com/card/pyrotechnics.jpg
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=SN deals 4 damage divided as you choose among any number of target creatures and/or players.
+timing=main
+oracle=Pyrotechnics deals 4 damage divided as you choose among any number of target creatures and/or players.

@@ -1,0 +1,11 @@
+name=Terrarion
+url=http://magiccards.info/query?q=%21Terrarion
+image=http://mtgimage.com/card/terrarion.jpg
+rarity=C
+type=Artifact
+cost={1}
+ability=SN enters the battlefield tapped.;\
+        {2}, {T}, Sacrifice SN: Add two mana in any combination of colors to your mana pool.;\
+        When SN is put into a graveyard from the battlefield, draw a card.
+timing=main
+oracle=Terrarion enters the battlefield tapped. {2}, {T}, Sacrifice Terrarion: Add two mana in any combination of colors to your mana pool. When Terrarion is put into a graveyard from the battlefield, draw a card.

@@ -1,0 +1,12 @@
+name=Voidmage Apprentice
+url=http://magiccards.info/query?q=%21Voidmage+Apprentice
+image=http://mtgimage.com/card/voidmage%20apprentice.jpg
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=1/1
+ability=Morph {2}{U}{U};\
+        When SN is turned face up, counter target spell.
+timing=main
+oracle=Morph {2}{U}{U}. When Voidmage Apprentice is turned face up, counter target spell.

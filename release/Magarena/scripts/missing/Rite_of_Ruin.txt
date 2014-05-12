@@ -1,0 +1,9 @@
+name=Rite of Ruin
+url=http://magiccards.info/query?q=%21Rite+of+Ruin
+image=http://mtgimage.com/card/rite%20of%20ruin.jpg
+rarity=R
+type=Sorcery
+cost={5}{R}{R}
+effect=Choose an order for artifacts, creatures, and lands. Each player sacrifices one permanent of the first type, sacrifices two of the second type, then sacrifices three of the third type.
+timing=main
+oracle=Choose an order for artifacts, creatures, and lands. Each player sacrifices one permanent of the first type, sacrifices two of the second type, then sacrifices three of the third type.

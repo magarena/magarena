@@ -1,0 +1,9 @@
+name=Descendants' Path
+url=http://magiccards.info/query?q=%21Descendants%27+Path
+image=http://mtgimage.com/card/descendants%27%20path.jpg
+rarity=R
+type=Enchantment
+cost={2}{G}
+ability=At the beginning of your upkeep, reveal the top card of your library. If it's a creature card that shares a creature type with a creature you control, you may cast that card without paying its mana cost. Otherwise, put that card on the bottom of your library.
+timing=main
+oracle=At the beginning of your upkeep, reveal the top card of your library. If it's a creature card that shares a creature type with a creature you control, you may cast that card without paying its mana cost. Otherwise, put that card on the bottom of your library.

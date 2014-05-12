@@ -1,0 +1,12 @@
+name=Soul Seizer
+url=http://magiccards.info/query?q=%21Soul+Seizer
+image=http://mtgimage.com/card/soul%20seizer.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{U}{U}
+pt=1/3
+ability=Flying;\
+        When SN deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.
+timing=main
+oracle=Flying. When Soul Seizer deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.

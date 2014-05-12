@@ -1,0 +1,9 @@
+name=Fated Return
+url=http://magiccards.info/query?q=%21Fated+Return
+image=http://mtgimage.com/card/fated%20return.jpg
+rarity=R
+type=Instant
+cost={4}{B}{B}{B}
+effect=Put target creature card from a graveyard onto the battlefield under your control. It gains indestructible. If it's your turn, scry 2.
+timing=removal
+oracle=Put target creature card from a graveyard onto the battlefield under your control. It gains indestructible. If it's your turn, scry 2.

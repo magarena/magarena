@@ -1,0 +1,9 @@
+name=Forfend
+url=http://magiccards.info/query?q=%21Forfend
+image=http://mtgimage.com/card/forfend.jpg
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Prevent all damage that would be dealt to creatures this turn.
+timing=removal
+oracle=Prevent all damage that would be dealt to creatures this turn.

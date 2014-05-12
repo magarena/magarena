@@ -1,0 +1,11 @@
+name=Afflicted Deserter
+url=http://magiccards.info/query?q=%21Afflicted+Deserter
+image=http://mtgimage.com/card/afflicted%20deserter.jpg
+rarity=U
+type=Creature
+subtype=Human,Werewolf
+cost={3}{R}
+pt=3/2
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Afflicted Deserter.

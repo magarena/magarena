@@ -1,0 +1,11 @@
+name=Earthlore
+url=http://magiccards.info/query?q=%21Earthlore
+image=http://mtgimage.com/card/earthlore.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchant land you control;\
+        Tap enchanted land: Target blocking creature gets +1/+2 until end of turn. Activate this ability only if enchanted land is untapped.
+timing=main
+oracle=Enchant land you control. Tap enchanted land: Target blocking creature gets +1/+2 until end of turn. Activate this ability only if enchanted land is untapped.

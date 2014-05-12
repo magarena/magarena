@@ -1,0 +1,11 @@
+name=King's Assassin
+url=http://magiccards.info/query?q=%21King%27s+Assassin
+image=http://mtgimage.com/card/king%27s%20assassin.jpg
+rarity=R
+type=Creature
+subtype=Human,Assassin
+cost={1}{B}{B}
+pt=1/1
+ability={T}: Destroy target tapped creature. Activate this ability only during your turn, before attackers are declared.
+timing=main
+oracle={T}: Destroy target tapped creature. Activate this ability only during your turn, before attackers are declared.

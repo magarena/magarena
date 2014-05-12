@@ -1,0 +1,12 @@
+name=Skeleton Ship
+url=http://magiccards.info/query?q=%21Skeleton+Ship
+image=http://mtgimage.com/card/skeleton%20ship.jpg
+rarity=R
+type=Creature
+subtype=Skeleton
+cost={3}{U}{B}
+pt=0/3
+ability=When you control no Islands, sacrifice SN.;\
+        {T}: Put a -1/-1 counter on target creature.
+timing=main
+oracle=When you control no Islands, sacrifice Skeleton Ship. {T}: Put a -1/-1 counter on target creature.

@@ -1,0 +1,12 @@
+name=Pallimud
+url=http://magiccards.info/query?q=%21Pallimud
+image=http://mtgimage.com/card/pallimud.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={2}{R}
+pt=*/3
+ability=As SN enters the battlefield, choose an opponent.;\
+        SN's power is equal to the number of tapped lands the chosen player controls.
+timing=main
+oracle=As Pallimud enters the battlefield, choose an opponent. Pallimud's power is equal to the number of tapped lands the chosen player controls.

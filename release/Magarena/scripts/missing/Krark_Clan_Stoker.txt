@@ -1,0 +1,11 @@
+name=Krark-Clan Stoker
+url=http://magiccards.info/query?q=%21Krark-Clan+Stoker
+image=http://mtgimage.com/card/krark-clan%20stoker.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{R}
+pt=2/2
+ability={T}, Sacrifice an artifact: Add {R}{R} to your mana pool.
+timing=main
+oracle={T}, Sacrifice an artifact: Add {R}{R} to your mana pool.

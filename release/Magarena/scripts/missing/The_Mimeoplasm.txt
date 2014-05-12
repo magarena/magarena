@@ -1,0 +1,11 @@
+name=The Mimeoplasm
+url=http://magiccards.info/query?q=%21The+Mimeoplasm
+image=http://mtgimage.com/card/the%20mimeoplasm.jpg
+rarity=M
+type=Creature
+subtype=Ooze
+cost={2}{G}{U}{B}
+pt=0/0
+ability=As SN enters the battlefield, you may exile two creature cards from graveyards. If you do, it enters the battlefield as a copy of one of those cards with a number of additional +1/+1 counters on it equal to the power of the other card.
+timing=main
+oracle=As The Mimeoplasm enters the battlefield, you may exile two creature cards from graveyards. If you do, it enters the battlefield as a copy of one of those cards with a number of additional +1/+1 counters on it equal to the power of the other card.

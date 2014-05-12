@@ -1,0 +1,11 @@
+name=Scourge of Fleets
+url=http://magiccards.info/query?q=%21Scourge+of+Fleets
+image=http://mtgimage.com/card/scourge%20of%20fleets.jpg
+rarity=R
+type=Creature
+subtype=Kraken
+cost={5}{U}{U}
+pt=6/6
+ability=When SN enters the battlefield, return each creature your opponents control with toughness X or less to its owner's hand, where X is the number of Islands you control.
+timing=main
+oracle=When Scourge of Fleets enters the battlefield, return each creature your opponents control with toughness X or less to its owner's hand, where X is the number of Islands you control.

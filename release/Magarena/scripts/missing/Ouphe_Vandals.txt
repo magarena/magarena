@@ -1,0 +1,11 @@
+name=Ouphe Vandals
+url=http://magiccards.info/query?q=%21Ouphe+Vandals
+image=http://mtgimage.com/card/ouphe%20vandals.jpg
+rarity=U
+type=Creature
+subtype=Ouphe,Rogue
+cost={2}{G}
+pt=2/2
+ability={G}, Sacrifice SN: Counter target activated ability from an artifact source and destroy that artifact if it's on the battlefield.
+timing=main
+oracle={G}, Sacrifice Ouphe Vandals: Counter target activated ability from an artifact source and destroy that artifact if it's on the battlefield.

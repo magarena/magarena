@@ -1,0 +1,9 @@
+name=Gruesome Encore
+url=http://magiccards.info/query?q=%21Gruesome+Encore
+image=http://mtgimage.com/card/gruesome%20encore.jpg
+rarity=U
+type=Sorcery
+cost={2}{B}
+effect=Put target creature card from an opponent's graveyard onto the battlefield under your control. It gains haste. Exile it at the beginning of the next end step. If that creature would leave the battlefield, exile it instead of putting it anywhere else.
+timing=main
+oracle=Put target creature card from an opponent's graveyard onto the battlefield under your control. It gains haste. Exile it at the beginning of the next end step. If that creature would leave the battlefield, exile it instead of putting it anywhere else.

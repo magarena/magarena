@@ -1,0 +1,11 @@
+name=Planar Guide
+url=http://magiccards.info/query?q=%21Planar+Guide
+image=http://mtgimage.com/card/planar%20guide.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability={3}{W}, Exile SN: Exile all creatures. At the beginning of the next end step, return those cards to the battlefield under their owners' control.
+timing=main
+oracle={3}{W}, Exile Planar Guide: Exile all creatures. At the beginning of the next end step, return those cards to the battlefield under their owners' control.

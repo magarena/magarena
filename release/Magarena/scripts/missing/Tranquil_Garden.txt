@@ -1,0 +1,9 @@
+name=Tranquil Garden
+url=http://magiccards.info/query?q=%21Tranquil+Garden
+image=http://mtgimage.com/card/tranquil%20garden.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add {G} or {W} to your mana pool. SN doesn't untap during your next untap step.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add {G} or {W} to your mana pool. Tranquil Garden doesn't untap during your next untap step.

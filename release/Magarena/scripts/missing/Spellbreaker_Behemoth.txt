@@ -1,0 +1,12 @@
+name=Spellbreaker Behemoth
+url=http://magiccards.info/query?q=%21Spellbreaker+Behemoth
+image=http://mtgimage.com/card/spellbreaker%20behemoth.jpg
+rarity=R
+type=Creature
+subtype=Beast
+cost={1}{R}{G}{G}
+pt=5/5
+ability=SN can't be countered.;\
+        Creature spells you control with power 5 or greater can't be countered.
+timing=main
+oracle=Spellbreaker Behemoth can't be countered. Creature spells you control with power 5 or greater can't be countered.

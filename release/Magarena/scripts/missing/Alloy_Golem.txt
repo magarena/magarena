@@ -1,0 +1,12 @@
+name=Alloy Golem
+url=http://magiccards.info/query?q=%21Alloy+Golem
+image=http://mtgimage.com/card/alloy%20golem.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={6}
+pt=4/4
+ability=As SN enters the battlefield, choose a color.;\
+        SN is the chosen color.
+timing=main
+oracle=As Alloy Golem enters the battlefield, choose a color. Alloy Golem is the chosen color.

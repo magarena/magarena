@@ -1,0 +1,11 @@
+name=Quarum Trench Gnomes
+url=http://magiccards.info/query?q=%21Quarum+Trench+Gnomes
+image=http://mtgimage.com/card/quarum%20trench%20gnomes.jpg
+rarity=R
+type=Creature
+subtype=Gnome
+cost={3}{R}
+pt=1/1
+ability={T}: If target Plains is tapped for mana, it produces colorless mana instead of white mana.
+timing=main
+oracle={T}: If target Plains is tapped for mana, it produces colorless mana instead of white mana.

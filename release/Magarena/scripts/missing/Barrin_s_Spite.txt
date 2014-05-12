@@ -1,0 +1,9 @@
+name=Barrin's Spite
+url=http://magiccards.info/query?q=%21Barrin%27s+Spite
+image=http://mtgimage.com/card/barrin%27s%20spite.jpg
+rarity=R
+type=Sorcery
+cost={2}{U}{B}
+effect=Choose two target creatures controlled by the same player. Their controller chooses and sacrifices one of them. Return the other to its owner's hand.
+timing=main
+oracle=Choose two target creatures controlled by the same player. Their controller chooses and sacrifices one of them. Return the other to its owner's hand.

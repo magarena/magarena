@@ -1,0 +1,9 @@
+name=Fathom Trawl
+url=http://magiccards.info/query?q=%21Fathom+Trawl
+image=http://mtgimage.com/card/fathom%20trawl.jpg
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+effect=Reveal cards from the top of your library until you reveal three nonland cards. Put the nonland cards revealed this way into your hand, then put the rest of the revealed cards on the bottom of your library in any order.
+timing=main
+oracle=Reveal cards from the top of your library until you reveal three nonland cards. Put the nonland cards revealed this way into your hand, then put the rest of the revealed cards on the bottom of your library in any order.

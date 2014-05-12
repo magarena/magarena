@@ -1,0 +1,12 @@
+name=Numot, the Devastator
+url=http://magiccards.info/query?q=%21Numot%2C+the+Devastator
+image=http://mtgimage.com/card/numot%2C%20the%20devastator.jpg
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{R}{W}{U}
+pt=6/6
+ability=Flying;\
+        Whenever SN deals combat damage to a player, you may pay {2}{R}. If you do, destroy up to two target lands.
+timing=main
+oracle=Flying. Whenever Numot, the Devastator deals combat damage to a player, you may pay {2}{R}. If you do, destroy up to two target lands.

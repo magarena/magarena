@@ -1,0 +1,9 @@
+name=Death or Glory
+url=http://magiccards.info/query?q=%21Death+or+Glory
+image=http://mtgimage.com/card/death%20or%20glory.jpg
+rarity=R
+type=Sorcery
+cost={4}{W}
+effect=Separate all creature cards in your graveyard into two piles. Exile the pile of an opponent's choice and return the other to the battlefield.
+timing=main
+oracle=Separate all creature cards in your graveyard into two piles. Exile the pile of an opponent's choice and return the other to the battlefield.

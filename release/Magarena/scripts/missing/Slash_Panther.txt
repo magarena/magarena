@@ -1,0 +1,11 @@
+name=Slash Panther
+url=http://magiccards.info/query?q=%21Slash+Panther
+image=http://mtgimage.com/card/slash%20panther.jpg
+rarity=C
+type=Artifact,Creature
+subtype=Cat
+cost={4}{P/R}
+pt=4/2
+ability=Haste
+timing=main
+oracle=Haste

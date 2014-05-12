@@ -1,0 +1,9 @@
+name=Rootwater Depths
+url=http://magiccards.info/query?q=%21Rootwater+Depths
+image=http://mtgimage.com/card/rootwater%20depths.jpg
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {T}: Add {U} or {B} to your mana pool. SN doesn't untap during your next untap step.
+timing=main
+oracle={T}: Add {1} to your mana pool. {T}: Add {U} or {B} to your mana pool. Rootwater Depths doesn't untap during your next untap step.

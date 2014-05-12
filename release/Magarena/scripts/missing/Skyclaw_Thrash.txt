@@ -1,0 +1,11 @@
+name=Skyclaw Thrash
+url=http://magiccards.info/query?q=%21Skyclaw+Thrash
+image=http://mtgimage.com/card/skyclaw%20thrash.jpg
+rarity=U
+type=Artifact,Creature
+subtype=Viashino,Warrior
+cost={3}{U}{R}
+pt=4/4
+ability=Whenever SN attacks, flip a coin. If you win the flip, SN gets +1/+1 and gains flying until end of turn.
+timing=main
+oracle=Whenever Skyclaw Thrash attacks, flip a coin. If you win the flip, Skyclaw Thrash gets +1/+1 and gains flying until end of turn.

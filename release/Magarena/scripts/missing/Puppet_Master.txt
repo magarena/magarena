@@ -1,0 +1,11 @@
+name=Puppet Master
+url=http://magiccards.info/query?q=%21Puppet+Master
+image=http://mtgimage.com/card/puppet%20master.jpg
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}{U}{U}
+ability=Enchant creature;\
+        When enchanted creature dies, return that card to its owner's hand. If that card is returned to its owner's hand this way, you may pay {U}{U}{U}. If you do, return SN to its owner's hand.
+timing=main
+oracle=Enchant creature. When enchanted creature dies, return that card to its owner's hand. If that card is returned to its owner's hand this way, you may pay {U}{U}{U}. If you do, return Puppet Master to its owner's hand.

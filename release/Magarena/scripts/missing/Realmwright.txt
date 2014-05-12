@@ -1,0 +1,12 @@
+name=Realmwright
+url=http://magiccards.info/query?q=%21Realmwright
+image=http://mtgimage.com/card/realmwright.jpg
+rarity=R
+type=Creature
+subtype=Vedalken,Wizard
+cost={U}
+pt=1/1
+ability=As SN enters the battlefield, choose a basic land type.;\
+        Lands you control are the chosen type in addition to their other types.
+timing=main
+oracle=As Realmwright enters the battlefield, choose a basic land type. Lands you control are the chosen type in addition to their other types.

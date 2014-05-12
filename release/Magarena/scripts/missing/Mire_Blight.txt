@@ -1,0 +1,11 @@
+name=Mire Blight
+url=http://magiccards.info/query?q=%21Mire+Blight
+image=http://mtgimage.com/card/mire%20blight.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Enchant creature;\
+        When enchanted creature is dealt damage, destroy it.
+timing=main
+oracle=Enchant creature. When enchanted creature is dealt damage, destroy it.

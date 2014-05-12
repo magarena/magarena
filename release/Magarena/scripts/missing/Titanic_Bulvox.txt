@@ -1,0 +1,12 @@
+name=Titanic Bulvox
+url=http://magiccards.info/query?q=%21Titanic+Bulvox
+image=http://mtgimage.com/card/titanic%20bulvox.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={6}{G}{G}
+pt=7/4
+ability=Trample;\
+        Morph {4}{G}{G}{G}
+timing=main
+oracle=Trample. Morph {4}{G}{G}{G}

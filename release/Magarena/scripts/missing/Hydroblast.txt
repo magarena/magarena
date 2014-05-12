@@ -1,0 +1,9 @@
+name=Hydroblast
+url=http://magiccards.info/query?q=%21Hydroblast
+image=http://mtgimage.com/card/hydroblast.jpg
+rarity=C
+type=Instant
+cost={U}
+effect=Choose one — Counter target spell if it's red; or destroy target permanent if it's red.
+timing=removal
+oracle=Choose one — Counter target spell if it's red; or destroy target permanent if it's red.

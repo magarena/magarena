@@ -1,0 +1,9 @@
+name=Mortuary
+url=http://magiccards.info/query?q=%21Mortuary
+image=http://mtgimage.com/card/mortuary.jpg
+rarity=R
+type=Enchantment
+cost={3}{B}
+ability=Whenever a creature is put into your graveyard from the battlefield, put that card on top of your library.
+timing=main
+oracle=Whenever a creature is put into your graveyard from the battlefield, put that card on top of your library.

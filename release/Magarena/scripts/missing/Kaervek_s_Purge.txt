@@ -1,0 +1,9 @@
+name=Kaervek's Purge
+url=http://magiccards.info/query?q=%21Kaervek%27s+Purge
+image=http://mtgimage.com/card/kaervek%27s%20purge.jpg
+rarity=U
+type=Sorcery
+cost={X}{B}{R}
+effect=Destroy target creature with converted mana cost X. If that creature dies this way, SN deals damage equal to the creature's power to the creature's controller.
+timing=main
+oracle=Destroy target creature with converted mana cost X. If that creature dies this way, Kaervek's Purge deals damage equal to the creature's power to the creature's controller.

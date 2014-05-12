@@ -1,0 +1,9 @@
+name=Misinformation
+url=http://magiccards.info/query?q=%21Misinformation
+image=http://mtgimage.com/card/misinformation.jpg
+rarity=U
+type=Instant
+cost={B}
+effect=Put up to three target cards from an opponent's graveyard on top of his or her library in any order.
+timing=removal
+oracle=Put up to three target cards from an opponent's graveyard on top of his or her library in any order.

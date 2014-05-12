@@ -1,0 +1,12 @@
+name=Scion of the Ur-Dragon
+url=http://magiccards.info/query?q=%21Scion+of+the+Ur-Dragon
+image=http://mtgimage.com/card/scion%20of%20the%20ur-dragon.jpg
+rarity=R
+type=Creature
+subtype=Dragon,Avatar
+cost={W}{U}{B}{R}{G}
+pt=4/4
+ability=Flying;\
+        {2}: Search your library for a Dragon permanent card and put it into your graveyard. If you do, SN becomes a copy of that card until end of turn. Then shuffle your library.
+timing=main
+oracle=Flying. {2}: Search your library for a Dragon permanent card and put it into your graveyard. If you do, Scion of the Ur-Dragon becomes a copy of that card until end of turn. Then shuffle your library.

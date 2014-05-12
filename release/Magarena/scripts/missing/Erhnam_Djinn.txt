@@ -1,0 +1,11 @@
+name=Erhnam Djinn
+url=http://magiccards.info/query?q=%21Erhnam+Djinn
+image=http://mtgimage.com/card/erhnam%20djinn.jpg
+rarity=R
+type=Creature
+subtype=Djinn
+cost={3}{G}
+pt=4/5
+ability=At the beginning of your upkeep, target non-Wall creature an opponent controls gains forestwalk until your next upkeep.
+timing=main
+oracle=At the beginning of your upkeep, target non-Wall creature an opponent controls gains forestwalk until your next upkeep.

@@ -1,0 +1,9 @@
+name=Active Volcano
+url=http://magiccards.info/query?q=%21Active+Volcano
+image=http://mtgimage.com/card/active%20volcano.jpg
+rarity=C
+type=Instant
+cost={R}
+effect=Choose one — Destroy target blue permanent; or return target Island to its owner's hand.
+timing=removal
+oracle=Choose one — Destroy target blue permanent; or return target Island to its owner's hand.

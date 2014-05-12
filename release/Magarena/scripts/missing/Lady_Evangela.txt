@@ -1,0 +1,11 @@
+name=Lady Evangela
+url=http://magiccards.info/query?q=%21Lady+Evangela
+image=http://mtgimage.com/card/lady%20evangela.jpg
+rarity=R
+type=Creature
+subtype=Human,Cleric
+cost={W}{U}{B}
+pt=1/2
+ability={W}{B}, {T}: Prevent all combat damage that would be dealt by target creature this turn.
+timing=main
+oracle={W}{B}, {T}: Prevent all combat damage that would be dealt by target creature this turn.

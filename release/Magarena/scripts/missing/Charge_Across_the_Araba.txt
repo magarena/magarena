@@ -1,0 +1,10 @@
+name=Charge Across the Araba
+url=http://magiccards.info/query?q=%21Charge+Across+the+Araba
+image=http://mtgimage.com/card/charge%20across%20the%20araba.jpg
+rarity=U
+type=Instant
+subtype=Arcane
+cost={4}{W}
+effect=Sweep — Return any number of Plains you control to their owner's hand. Creatures you control get +1/+1 until end of turn for each Plains returned this way.
+timing=removal
+oracle=Sweep — Return any number of Plains you control to their owner's hand. Creatures you control get +1/+1 until end of turn for each Plains returned this way.

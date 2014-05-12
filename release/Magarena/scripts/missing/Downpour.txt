@@ -1,0 +1,9 @@
+name=Downpour
+url=http://magiccards.info/query?q=%21Downpour
+image=http://mtgimage.com/card/downpour.jpg
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Tap up to three target creatures.
+timing=removal
+oracle=Tap up to three target creatures.

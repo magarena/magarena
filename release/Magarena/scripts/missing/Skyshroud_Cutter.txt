@@ -1,0 +1,11 @@
+name=Skyshroud Cutter
+url=http://magiccards.info/query?q=%21Skyshroud+Cutter
+image=http://mtgimage.com/card/skyshroud%20cutter.jpg
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{G}
+pt=2/2
+ability=If you control a Forest, rather than pay SN's mana cost, you may have each other player gain 5 life.
+timing=main
+oracle=If you control a Forest, rather than pay Skyshroud Cutter's mana cost, you may have each other player gain 5 life.

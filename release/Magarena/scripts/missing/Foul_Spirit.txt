@@ -1,0 +1,12 @@
+name=Foul Spirit
+url=http://magiccards.info/query?q=%21Foul+Spirit
+image=http://mtgimage.com/card/foul%20spirit.jpg
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{B}
+pt=3/2
+ability=Flying;\
+        When SN enters the battlefield, sacrifice a land.
+timing=main
+oracle=Flying. When Foul Spirit enters the battlefield, sacrifice a land.

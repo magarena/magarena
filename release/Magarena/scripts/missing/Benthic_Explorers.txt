@@ -1,0 +1,11 @@
+name=Benthic Explorers
+url=http://magiccards.info/query?q=%21Benthic+Explorers
+image=http://mtgimage.com/card/benthic%20explorers1.jpg
+rarity=C
+type=Creature
+subtype=Merfolk,Scout
+cost={3}{U}
+pt=2/4
+ability={T}, Untap a tapped land an opponent controls: Add one mana of any type that land could produce to your mana pool.
+timing=main
+oracle={T}, Untap a tapped land an opponent controls: Add one mana of any type that land could produce to your mana pool.

@@ -1,0 +1,9 @@
+name=Turn to Slag
+url=http://magiccards.info/query?q=%21Turn+to+Slag
+image=http://mtgimage.com/card/turn%20to%20slag.jpg
+rarity=C
+type=Sorcery
+cost={3}{R}{R}
+effect=SN deals 5 damage to target creature. Destroy all Equipment attached to that creature.
+timing=main
+oracle=Turn to Slag deals 5 damage to target creature. Destroy all Equipment attached to that creature.

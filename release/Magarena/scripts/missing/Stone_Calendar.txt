@@ -1,0 +1,9 @@
+name=Stone Calendar
+url=http://magiccards.info/query?q=%21Stone+Calendar
+image=http://mtgimage.com/card/stone%20calendar.jpg
+rarity=R
+type=Artifact
+cost={5}
+ability=Spells you cast cost up to {1} less to cast.
+timing=main
+oracle=Spells you cast cost up to {1} less to cast.

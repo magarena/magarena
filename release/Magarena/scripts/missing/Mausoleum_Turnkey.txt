@@ -1,0 +1,11 @@
+name=Mausoleum Turnkey
+url=http://magiccards.info/query?q=%21Mausoleum+Turnkey
+image=http://mtgimage.com/card/mausoleum%20turnkey.jpg
+rarity=U
+type=Creature
+subtype=Ogre,Rogue
+cost={3}{B}
+pt=3/2
+ability=When SN enters the battlefield, return target creature card of an opponent's choice from your graveyard to your hand.
+timing=main
+oracle=When Mausoleum Turnkey enters the battlefield, return target creature card of an opponent's choice from your graveyard to your hand.

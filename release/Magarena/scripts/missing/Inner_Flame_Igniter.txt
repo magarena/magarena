@@ -1,0 +1,11 @@
+name=Inner-Flame Igniter
+url=http://magiccards.info/query?q=%21Inner-Flame+Igniter
+image=http://mtgimage.com/card/inner-flame%20igniter.jpg
+rarity=U
+type=Creature
+subtype=Elemental,Warrior
+cost={2}{R}
+pt=2/2
+ability={2}{R}: Creatures you control get +1/+0 until end of turn. If this is the third time this ability has resolved this turn, creatures you control gain first strike until end of turn.
+timing=main
+oracle={2}{R}: Creatures you control get +1/+0 until end of turn. If this is the third time this ability has resolved this turn, creatures you control gain first strike until end of turn.

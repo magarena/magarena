@@ -1,0 +1,12 @@
+name=Dark Impostor
+url=http://magiccards.info/query?q=%21Dark+Impostor
+image=http://mtgimage.com/card/dark%20impostor.jpg
+rarity=R
+type=Creature
+subtype=Vampire,Assassin
+cost={2}{B}
+pt=2/2
+ability={4}{B}{B}: Exile target creature and put a +1/+1 counter on SN.;\
+        SN has all activated abilities of all creature cards exiled with it.
+timing=main
+oracle={4}{B}{B}: Exile target creature and put a +1/+1 counter on Dark Impostor. Dark Impostor has all activated abilities of all creature cards exiled with it.

@@ -1,0 +1,12 @@
+name=Volunteer Reserves
+url=http://magiccards.info/query?q=%21Volunteer+Reserves
+image=http://mtgimage.com/card/volunteer%20reserves.jpg
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/4
+ability=Banding;\
+        Cumulative upkeep {1}
+timing=main
+oracle=Banding. Cumulative upkeep {1}

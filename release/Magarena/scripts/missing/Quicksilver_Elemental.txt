@@ -1,0 +1,12 @@
+name=Quicksilver Elemental
+url=http://magiccards.info/query?q=%21Quicksilver+Elemental
+image=http://mtgimage.com/card/quicksilver%20elemental.jpg
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{U}{U}
+pt=3/4
+ability={U}: SN gains all activated abilities of target creature until end of turn.;\
+        You may spend blue mana as though it were mana of any color to pay the activation costs of SN's abilities.
+timing=main
+oracle={U}: Quicksilver Elemental gains all activated abilities of target creature until end of turn.. You may spend blue mana as though it were mana of any color to pay the activation costs of Quicksilver Elemental's abilities.

@@ -1,0 +1,12 @@
+name=Krosan Restorer
+url=http://magiccards.info/query?q=%21Krosan+Restorer
+image=http://mtgimage.com/card/krosan%20restorer.jpg
+rarity=C
+type=Creature
+subtype=Human,Druid
+cost={2}{G}
+pt=1/2
+ability={T}: Untap target land.;\
+        Threshold — {T}: Untap up to three target lands. Activate this ability only if seven or more cards are in your graveyard.
+timing=main
+oracle={T}: Untap target land. Threshold — {T}: Untap up to three target lands. Activate this ability only if seven or more cards are in your graveyard.

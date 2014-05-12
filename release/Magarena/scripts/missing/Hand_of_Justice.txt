@@ -1,0 +1,11 @@
+name=Hand of Justice
+url=http://magiccards.info/query?q=%21Hand+of+Justice
+image=http://mtgimage.com/card/hand%20of%20justice.jpg
+rarity=R
+type=Creature
+subtype=Avatar
+cost={5}{W}
+pt=2/6
+ability={T}, Tap three untapped white creatures you control: Destroy target creature.
+timing=main
+oracle={T}, Tap three untapped white creatures you control: Destroy target creature.

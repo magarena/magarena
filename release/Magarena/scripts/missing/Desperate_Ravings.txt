@@ -1,0 +1,10 @@
+name=Desperate Ravings
+url=http://magiccards.info/query?q=%21Desperate+Ravings
+image=http://mtgimage.com/card/desperate%20ravings.jpg
+rarity=U
+type=Instant
+cost={1}{R}
+effect=Draw two cards, then discard a card at random.;\
+        Flashback {2}{U}
+timing=removal
+oracle=Draw two cards, then discard a card at random. Flashback {2}{U}

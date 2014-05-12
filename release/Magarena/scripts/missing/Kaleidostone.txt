@@ -1,0 +1,10 @@
+name=Kaleidostone
+url=http://magiccards.info/query?q=%21Kaleidostone
+image=http://mtgimage.com/card/kaleidostone.jpg
+rarity=C
+type=Artifact
+cost={2}
+ability=When SN enters the battlefield, draw a card.;\
+        {5}, {T}, Sacrifice SN: Add {W}{U}{B}{R}{G} to your mana pool.
+timing=main
+oracle=When Kaleidostone enters the battlefield, draw a card. {5}, {T}, Sacrifice Kaleidostone: Add {W}{U}{B}{R}{G} to your mana pool.

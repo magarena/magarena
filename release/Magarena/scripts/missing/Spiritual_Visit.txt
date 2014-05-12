@@ -1,0 +1,11 @@
+name=Spiritual Visit
+url=http://magiccards.info/query?q=%21Spiritual+Visit
+image=http://mtgimage.com/card/spiritual%20visit.jpg
+rarity=C
+type=Instant
+subtype=Arcane
+cost={W}
+effect=Put a 1/1 colorless Spirit creature token onto the battlefield.;\
+        Splice onto Arcane {W}
+timing=removal
+oracle=Put a 1/1 colorless Spirit creature token onto the battlefield. Splice onto Arcane {W}

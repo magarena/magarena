@@ -1,0 +1,9 @@
+name=Heartwood Shard
+url=http://magiccards.info/query?q=%21Heartwood+Shard
+image=http://mtgimage.com/card/heartwood%20shard.jpg
+rarity=U
+type=Artifact
+cost={3}
+ability={3}, {T} or {G}, {T}: Target creature gains trample until end of turn.
+timing=main
+oracle={3}, {T} or {G}, {T}: Target creature gains trample until end of turn.

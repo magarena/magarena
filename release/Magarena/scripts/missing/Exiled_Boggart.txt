@@ -1,0 +1,11 @@
+name=Exiled Boggart
+url=http://magiccards.info/query?q=%21Exiled+Boggart
+image=http://mtgimage.com/card/exiled%20boggart.jpg
+rarity=C
+type=Creature
+subtype=Goblin,Rogue
+cost={1}{B}
+pt=2/2
+ability=When SN dies, discard a card.
+timing=main
+oracle=When Exiled Boggart dies, discard a card.

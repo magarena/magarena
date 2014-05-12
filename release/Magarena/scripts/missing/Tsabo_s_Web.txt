@@ -1,0 +1,10 @@
+name=Tsabo's Web
+url=http://magiccards.info/query?q=%21Tsabo%27s+Web
+image=http://mtgimage.com/card/tsabo%27s%20web.jpg
+rarity=R
+type=Artifact
+cost={2}
+ability=When SN enters the battlefield, draw a card.;\
+        Each land with an activated ability that isn't a mana ability doesn't untap during its controller's untap step.
+timing=main
+oracle=When Tsabo's Web enters the battlefield, draw a card. Each land with an activated ability that isn't a mana ability doesn't untap during its controller's untap step.

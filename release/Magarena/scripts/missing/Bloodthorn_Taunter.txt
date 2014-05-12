@@ -1,0 +1,12 @@
+name=Bloodthorn Taunter
+url=http://magiccards.info/query?q=%21Bloodthorn+Taunter
+image=http://mtgimage.com/card/bloodthorn%20taunter.jpg
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={1}{R}
+pt=1/1
+ability=Haste;\
+        {T}: Target creature with power 5 or greater gains haste until end of turn.
+timing=main
+oracle=Haste. {T}: Target creature with power 5 or greater gains haste until end of turn.

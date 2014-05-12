@@ -1,0 +1,13 @@
+name=Blind Hunter
+url=http://magiccards.info/query?q=%21Blind+Hunter
+image=http://mtgimage.com/card/blind%20hunter.jpg
+rarity=C
+type=Creature
+subtype=Bat
+cost={2}{W}{B}
+pt=2/2
+ability=Flying;\
+        Haunt;\
+        When SN enters the battlefield or the creature it haunts dies, target player loses 2 life and you gain 2 life.
+timing=main
+oracle=Flying. Haunt. When Blind Hunter enters the battlefield or the creature it haunts dies, target player loses 2 life and you gain 2 life.

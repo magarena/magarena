@@ -1,0 +1,10 @@
+name=Windbrisk Heights
+url=http://magiccards.info/query?q=%21Windbrisk+Heights
+image=http://mtgimage.com/card/windbrisk%20heights.jpg
+rarity=R
+type=Land
+ability=Hideaway;\
+        {T}: Add {W} to your mana pool.;\
+        {W}, {T}: You may play the exiled card without paying its mana cost if you attacked with three or more creatures this turn.
+timing=main
+oracle=Hideaway. {T}: Add {W} to your mana pool. {W}, {T}: You may play the exiled card without paying its mana cost if you attacked with three or more creatures this turn.

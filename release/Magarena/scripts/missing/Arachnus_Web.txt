@@ -1,0 +1,12 @@
+name=Arachnus Web
+url=http://magiccards.info/query?q=%21Arachnus+Web
+image=http://mtgimage.com/card/arachnus%20web.jpg
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchant creature;\
+        Enchanted creature can't attack or block, and its activated abilities can't be activated.;\
+        At the beginning of the end step, if enchanted creature's power is 4 or greater, destroy SN.
+timing=main
+oracle=Enchant creature. Enchanted creature can't attack or block, and its activated abilities can't be activated. At the beginning of the end step, if enchanted creature's power is 4 or greater, destroy Arachnus Web.

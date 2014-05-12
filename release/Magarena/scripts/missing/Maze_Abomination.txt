@@ -1,0 +1,12 @@
+name=Maze Abomination
+url=http://magiccards.info/query?q=%21Maze+Abomination
+image=http://mtgimage.com/card/maze%20abomination.jpg
+rarity=C
+type=Creature
+subtype=Elemental
+cost={5}{B}
+pt=4/5
+ability=Deathtouch;\
+        Multicolored creatures you control have deathtouch.
+timing=main
+oracle=Deathtouch. Multicolored creatures you control have deathtouch.

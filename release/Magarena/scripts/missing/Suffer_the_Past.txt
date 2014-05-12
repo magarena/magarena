@@ -1,0 +1,9 @@
+name=Suffer the Past
+url=http://magiccards.info/query?q=%21Suffer+the+Past
+image=http://mtgimage.com/card/suffer%20the%20past.jpg
+rarity=U
+type=Instant
+cost={X}{B}
+effect=Exile X target cards from target player's graveyard. For each card exiled this way, that player loses 1 life and you gain 1 life.
+timing=removal
+oracle=Exile X target cards from target player's graveyard. For each card exiled this way, that player loses 1 life and you gain 1 life.
