@@ -555,6 +555,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost cost = MagicManaCost.create(ARG.cost(arg));
             card.add(MagicKickerCost.Buyback(cost));
+            card.add(MagicWhenSpellIsCastTrigger.Buyback);
         }
     },
     Multikicker("multikicker " + ARG.COST, 0) {
