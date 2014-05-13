@@ -92,7 +92,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
         // listener to change card image on selection
         table.getSelectionModel().addListSelectionListener(this);
-        model.getSelectionModel().addListSelectionListener(this);
 
         // listener to sort on column header click
         final JTableHeader header = table.getTableHeader();
