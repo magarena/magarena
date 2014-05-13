@@ -184,6 +184,11 @@ public enum MagicConditionParser {
             return MagicCondition.YOU_25_OR_MORE_LIFE;
         }
     },
+    NotContolNonartifactNonwhiteCreature("you control no nonartifact, nonwhite creatures") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.NOT_CONTROL_NONARTIFACT_NONWHITE_CREATURE_CONDITION;
+        }
+    }
     ;
 
     private final Pattern pattern;

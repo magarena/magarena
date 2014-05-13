@@ -399,5 +399,12 @@ public interface MagicCondition {
             final MagicGame game = source.getGame();
             return source.getController() != game.getTurnPlayer();
         }
-    };      
+    };
+    
+    MagicCondition NOT_CONTROL_NONARTIFACT_NONWHITE_CREATURE_CONDITION = new MagicCondition() {
+        @Override
+        public boolean accept(final MagicSource source) {
+            return !source.getController().controlsPermanent(MagicTargetFilterFactory.NONARTIFACT_NONWHITE_CREATURE);
+        }
+    };
 }
