@@ -1,0 +1,9 @@
+name=Angelic Voices
+url=http://magiccards.info/query?q=%21Angelic+Voices
+image=http://mtgimage.com/card/angelic%20voices.jpg
+rarity=R
+type=Enchantment
+cost={2}{W}{W}
+ability=Creatures you control get +1/+1 as long as you control no nonartifact, nonwhite creatures.
+timing=main
+oracle=Creatures you control get +1/+1 as long as you control no nonartifact, nonwhite creatures.
