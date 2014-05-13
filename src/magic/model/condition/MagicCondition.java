@@ -363,6 +363,25 @@ public interface MagicCondition {
         }
     };
     
+    MagicCondition YOU_25_OR_MORE_LIFE = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getController().getLife() >= 25;
+        }
+    };
+    
+    MagicCondition YOU_30_OR_MORE_LIFE = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getController().getLife() >= 30;
+        }
+    };
+    
+    MagicCondition YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return YOU_30_OR_MORE_LIFE.accept(source) &&
+                   OPPONENT_TEN_OR_LESS_LIFE.accept(source);
+        }
+    };
+    
     MagicCondition WARRIOR_CARD_IN_GRAVEYARD_CONDITION = new MagicCondition() {
         public boolean accept(MagicSource source) {
             return source.getController().getGraveyard().contains(MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD);

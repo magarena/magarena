@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Monk
 cost={W}
 pt=1/1
-ability=lifelink
+ability=lifelink;\
+        As long as you have 30 or more life, SN gets +5/+5 and has flying.
 timing=main
-requires_groovy_code

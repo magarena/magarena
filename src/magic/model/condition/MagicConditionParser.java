@@ -141,11 +141,26 @@ public enum MagicConditionParser {
             return MagicCondition.OPPONENT_TEN_OR_LESS_LIFE;
         }
     },
+    You25LifeOrMore("you have 25 or more life") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_25_OR_MORE_LIFE;
+        }
+    },
+    You30LifeOrMore("you have 30 or more life") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_30_OR_MORE_LIFE;
+        }
+    },
+    You30LifeOrMoreOpponent10LifeOrLess("you have 30 or more life and an opponent has 10 or less life") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE;
+        }
+    },
     WarriorCardInGraveyard("a Warrior card is in your graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.WARRIOR_CARD_IN_GRAVEYARD_CONDITION;
         }
-    }
+    },
     ;
 
     private final Pattern pattern;
