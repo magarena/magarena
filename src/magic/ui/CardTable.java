@@ -56,12 +56,9 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         this.tableModel = new CardTableModel(defs, isDeck);
 
         this.table = new JTable(tableModel) {
-            private Color defaultForeColor;
+            private final Color defaultForeColor = getForeground();
             @Override
             public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
-                if (defaultForeColor == null) {
-                    defaultForeColor = table.getForeground();
-                }
                 Component c = super.prepareRenderer(renderer, row, column);
                 final MagicCardDefinition card = tableModel.getCardDef(row);
                 final boolean isRowSelected = table.isRowSelected(row);
