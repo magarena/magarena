@@ -387,5 +387,17 @@ public interface MagicCondition {
             return source.getController().getGraveyard().contains(MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD);
         }
     };
-            
+
+    MagicCondition OPP_NOT_CONTROL_CREATURE_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return !source.getOpponent().controlsPermanent(MagicType.Creature);
+        }
+    };
+
+    MagicCondition NOT_YOUR_TURN_CONDITION = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return source.getController() != game.getTurnPlayer();
+        }
+    };      
 }

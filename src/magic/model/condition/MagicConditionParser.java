@@ -1,6 +1,7 @@
 package magic.model.condition;
 
 import magic.model.ARG;
+import magic.model.MagicCounterType;
 import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.regex.Matcher;
@@ -41,10 +42,17 @@ public enum MagicConditionParser {
             return MagicCondition.THRESHOLD_CONDITION;
         }
     },
-    HandSevenOrMore("you have seven or more cards in hand") {
+    HandSize("you have " + ARG.AMOUNT + " or more cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicConditionFactory.HandAtLeast(7);
+            final int amount = ARG.amount(arg);
+            return MagicConditionFactory.HandAtLeast(amount);
         }
+    },
+    QuestCounters("SN has " + ARG.AMOUNT + " or more quest counters on it") {
+      public MagicCondition toCondition(final Matcher arg) {
+          final int amount = ARG.amount(arg);
+          return MagicConditionFactory.CounterAtLeast(MagicCounterType.Quest, amount);
+      }
     },
     Metalcraft("you control three or more artifacts") {
         public MagicCondition toCondition(final Matcher arg) {
@@ -131,6 +139,36 @@ public enum MagicConditionParser {
             return MagicCondition.HAS_PLUSONE_COUNTER_CONDITION;
         }
     },
+    WarriorCardInGraveyard("a Warrior card is in your graveyard") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.WARRIOR_CARD_IN_GRAVEYARD_CONDITION;
+        }
+    },
+    NoOpponentCreatures("no opponent controls a creature") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.OPP_NOT_CONTROL_CREATURE_CONDITION;
+        }
+    },
+    IsYourTurn("it's your turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOUR_TURN_CONDITION;
+        }
+    },
+    IsNotYourTurn("it's not your turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.NOT_YOUR_TURN_CONDITION;
+        }
+    },
+    You30LifeOrMore("you have 30 or more life") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_30_OR_MORE_LIFE;
+        }
+    },
+    You30LifeOrMoreOpponent10LifeOrLess("you have 30 or more life and an opponent has 10 or less life") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE;
+        }
+    },
     HasTenPlusOneCounter("it has ten or more \\+1/\\+1 counters on it") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.HAS_TEN_PLUSONE_COUNTER_CONDITION;
@@ -144,21 +182,6 @@ public enum MagicConditionParser {
     You25LifeOrMore("you have 25 or more life") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOU_25_OR_MORE_LIFE;
-        }
-    },
-    You30LifeOrMore("you have 30 or more life") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.YOU_30_OR_MORE_LIFE;
-        }
-    },
-    You30LifeOrMoreOpponent10LifeOrLess("you have 30 or more life and an opponent has 10 or less life") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.YOU_30_OR_MORE_OPPPONENT_10_OR_LESS_LIFE;
-        }
-    },
-    WarriorCardInGraveyard("a Warrior card is in your graveyard") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.WARRIOR_CARD_IN_GRAVEYARD_CONDITION;
         }
     },
     ;
