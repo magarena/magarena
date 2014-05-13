@@ -339,7 +339,27 @@ public interface MagicCondition {
     MagicCondition HAS_MINUSONE_COUNTER_CONDITION = new MagicCondition() {
         public boolean accept(MagicSource source) {
             final MagicPermanent permanent=(MagicPermanent) source;
-            return permanent.getCounters(MagicCounterType.MinusOne)>=1;
+            return permanent.hasCounters(MagicCounterType.MinusOne);
+        }
+    };
+    
+    MagicCondition HAS_PLUSONE_COUNTER_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent) source;
+            return permanent.hasCounters(MagicCounterType.PlusOne);
+        }
+    };
+    
+    MagicCondition HAS_TEN_PLUSONE_COUNTER_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicPermanent permanent=(MagicPermanent) source;
+            return permanent.getCounters(MagicCounterType.PlusOne) >= 10;
+        }
+    };
+    
+    MagicCondition OPPONENT_TEN_OR_LESS_LIFE = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            return source.getOpponent().getLife() <= 10;
         }
     };
     

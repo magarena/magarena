@@ -7,5 +7,5 @@ type=Creature
 subtype=Vampire,Rogue
 cost={B}
 pt=1/1
+ability=As long as an opponent has 10 or less life, SN gets +2/+1 and has intimidate.
 timing=main
-requires_groovy_code

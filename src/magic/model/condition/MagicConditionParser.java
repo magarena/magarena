@@ -126,6 +126,21 @@ public enum MagicConditionParser {
             return MagicCondition.HAS_MINUSONE_COUNTER_CONDITION;
         }
     },
+    HasPlusOneCounter("it has a \\+1/\\+1 counter on it") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_PLUSONE_COUNTER_CONDITION;
+        }
+    },
+    HasTenPlusOneCounter("it has ten or more \\+1/\\+1 counters on it") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_TEN_PLUSONE_COUNTER_CONDITION;
+        }
+    },
+    OpponentTenLifeOrLess("an opponent has 10 or less life") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.OPPONENT_TEN_OR_LESS_LIFE;
+        }
+    },
     WarriorCardInGraveyard("a Warrior card is in your graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.WARRIOR_CARD_IN_GRAVEYARD_CONDITION;
@@ -152,6 +167,6 @@ public enum MagicConditionParser {
                 return rule.toCondition(matcher);
             }
         }
-        throw new RuntimeException("Unable to match " + cost + " to a condition");
+        throw new RuntimeException("Unable to match \"" + cost + "\" to a condition");
     }
 }
