@@ -32,9 +32,8 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("serial")
 public class CardTable extends TexturedPanel implements ListSelectionListener {
-
-    private static final long serialVersionUID = 113243L;
 
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 20; //pixels
@@ -51,7 +50,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         this(defs, cardViewer, "", false);
     }
 
-    @SuppressWarnings("serial")
     public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer, final String title, final boolean isDeck) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
@@ -86,12 +84,8 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
             table.addMouseMotionListener(new RowMouseOverListener());
         }
 
-        // set column widths
         final TableColumnModel model = table.getColumnModel();
-        for (int i = 0; i < model.getColumnCount(); i++) {
-            model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
-            model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
-        }
+        setColumnWidths(model);
 
         // special renderer for mana symbols
         model.getColumn(CardTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostCellRenderer());
@@ -118,6 +112,13 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         titleBar = null;
         if (title.length() > 0) {
             setTitle(title);
+        }
+    }
+
+    private void setColumnWidths(final TableColumnModel model) {
+        for (int i = 0; i < model.getColumnCount(); i++) {
+            model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
+            model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
         }
     }
 
