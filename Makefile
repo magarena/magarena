@@ -150,6 +150,7 @@ M1.%: clean $(EXE) cubes release/Magarena/mods/felt_theme.zip
 			release/Magarena/decks \
 			release/Magarena/sounds \
 			release/Magarena/scripts \
+			release/Magarena/scripts_missing \
 			Magarena-1.$*/Magarena
 	cp \
 			release/Magarena/mods/felt_theme.zip \
