@@ -374,7 +374,7 @@ public class CardDefinitions {
      * Gets a sorted list of all the script files in the "missing" folder.
      */
     private static File[] getSortedMissingScriptFiles() {
-        final Path cardsPath = Paths.get(MagicMain.getScriptsPath()).resolve("missing");
+        final Path cardsPath = Paths.get(MagicMain.getScriptsMissingPath());
         final File[] files = cardsPath.toFile().listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
                 return name.toLowerCase().endsWith(".txt");

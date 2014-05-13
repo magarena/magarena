@@ -147,6 +147,10 @@ public class MagicMain {
         return getGamePath()+File.separatorChar+SCRIPTS_PATH;
     }
 
+    public static String getScriptsMissingPath() {
+        return getGamePath() + File.separatorChar + "scripts_missing";
+    }
+
     public static String getLogsPath() {
         return getDataPath(LOGS_PATH);
     }
