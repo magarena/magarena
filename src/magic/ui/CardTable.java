@@ -95,7 +95,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
         // listener to sort on column header click
         final JTableHeader header = table.getTableHeader();
-        header.setUpdateTableInRealTime(true);
         header.addMouseListener(new ColumnListener());
         header.setReorderingAllowed(true);
 
@@ -257,7 +256,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         }
     }
 
-    @SuppressWarnings("serial")
     private class HideCellFocusRenderer extends DefaultTableCellRenderer {
         @Override
         public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
