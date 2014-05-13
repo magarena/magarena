@@ -785,7 +785,12 @@ public enum MagicAbility {
             }
         }
     },
-    ConditionGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " " + ARG.ANY + "(\\.)?", 0) {
+    ConditionPumpGroupAlt(ARG.WORDRUN2 + " get(s)? " + ARG.PT + " as long as " + ARG.WORDRUN + "(\\.)?", 0){
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            ConditionPumpGroup.addAbilityImpl(card, arg);
+        }
+    },
+    ConditionGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " have " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
@@ -798,6 +803,11 @@ public enum MagicAbility {
                     )
                 ));
             }
+        }
+    },
+    ConditionGainGroupAlt(ARG.WORDRUN2 + " have " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            ConditionGainGroup.addAbilityImpl(card, arg);
         }
     },
     Equip("Equip " + ARG.COST, 0) {
