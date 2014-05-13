@@ -768,9 +768,36 @@ public enum MagicAbility {
             }
         }
     },
-    ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), (SN|it) (gets " + ARG.PT + " )?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
+    ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), (SN|it) (gets " + ARG.PT + "(.| ))?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionPumpGain.addAbilityImpl(card, arg);
+        }
+    },
+    ConditionPumpGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
+            if (arg.group("pt") != null) {
+                final String[] pt = ARG.pt(arg).replace("+","").split("/");
+                final int power = Integer.parseInt(pt[0]);
+                final int toughness = Integer.parseInt(pt[1]);
+                card.add(MagicStatic.genPTStatic(condition, filter, power, toughness));
+            }
+        }
+    },
+    ConditionGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " " + ARG.ANY + "(\\.)?", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
+            if (arg.group("any") != null) {            
+                card.add(MagicStatic.genABStatic(
+                    condition,
+                    filter,
+                    MagicAbility.getAbilityList(
+                        ARG.any(arg)
+                    )
+                ));
+            }
         }
     },
     Equip("Equip " + ARG.COST, 0) {
