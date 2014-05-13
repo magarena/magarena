@@ -1285,6 +1285,23 @@ public class MagicTargetFilterFactory {
             return target.hasSubType(MagicSubType.Warrior);
         }
     };
+
+    public static MagicPermanentFilterImpl NONARTIFACT_NONWHITE_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.isArtifact() &&
+                   !target.hasColor(MagicColor.White);
+        }
+    };
+
+    public static MagicPermanentFilterImpl UNTAPPED_LAND = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game, final MagicPlayer player, final MagicPermanent target) {
+            return target.isLand() &&
+                   target.isUntapped();
+        }
+    };
+
+    public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
     
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
@@ -1479,6 +1496,7 @@ public class MagicTargetFilterFactory {
         multiple.put("monocolored creatures", MONOCOLORED_CREATURE);
         multiple.put("creature tokens", CREATURE_TOKEN);
         multiple.put("all non-Zombie creatures", NONZOMBIE_CREATURE);
+        multiple.put("tapped creatures you control", TAPPED_CREATURE_YOU_CONTROL);
 
         // <color|type|subtype> you control
         multiple.put("lands you control", LAND_YOU_CONTROL);
@@ -1506,6 +1524,7 @@ public class MagicTargetFilterFactory {
         multiple.put("goblins", GOBLIN_PERMANENT);
         multiple.put("zombies", ZOMBIE);
         multiple.put("artifacts", ARTIFACT);
+        multiple.put("noncreature artifacts", NONCREATURE_ARTIFACT);
         multiple.put("creatures and lands", CREATURE_OR_LAND);
         multiple.put("artifacts, creatures, and lands", ARTIFACT_OR_CREATURE_OR_LAND);
         multiple.put("artifacts and enchantments", ARTIFACT_OR_ENCHANTMENT);
@@ -1717,6 +1736,7 @@ public class MagicTargetFilterFactory {
         single.put("snow land", SNOW_LAND);
         single.put("Forest or Plains", FOREST_OR_PLAINS);
         single.put("artifact or land", ARTIFACT_OR_LAND);
+        single.put("artifact land", ARTIFACT_LAND);
         single.put("artifact or enchantment", ARTIFACT_OR_ENCHANTMENT);
         single.put("artifact, enchantment, or land", ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         single.put("artifact, creature, or land", ARTIFACT_OR_CREATURE_OR_LAND);
@@ -1733,6 +1753,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken Elf", NONTOKEN_ELF);
         single.put("legendary Samurai", LEGENDARY_SAMURAI);
         single.put("creature with three or more level counters on it", CREATURE_AT_LEAST_3_LEVEL_COUNTERS);
+        single.put("untapped land", UNTAPPED_LAND );
        
         // <color|type> spell
         single.put("spell", SPELL);
