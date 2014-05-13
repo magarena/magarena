@@ -36,6 +36,9 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
 
     private static final long serialVersionUID = 113243L;
 
+    private static final Color GRID_COLOR = new Color(194, 197, 203);
+    private static final int ROW_HEIGHT = 20; //pixels
+
     private final CardViewer cardViewer;
     private final CardTableModel tableModel;
     private final JTable table;
@@ -77,8 +80,8 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         table.setDefaultRenderer(Object.class, new HideCellFocusRenderer());
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
-        table.setRowHeight(20);
-        table.setGridColor(new Color(194, 197, 203));
+        table.setRowHeight(ROW_HEIGHT);
+        table.setGridColor(GRID_COLOR);
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
         }
