@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Your opponent loses 5 life. You gain 5 life."
+                "Each opponent loses 5 life. PN gains life equal to the life lost this way."
             );
         }
         @Override

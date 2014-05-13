@@ -9,7 +9,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Your opponent loses 1 life. You gain 1 life."
+                    "Each opponent loses 1 life. PN gains life equal to the amount lost this way."
                 ):
                 MagicEvent.NONE;
         }
