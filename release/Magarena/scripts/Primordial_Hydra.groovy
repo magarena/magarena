@@ -1,24 +1,11 @@
 [
-    new MagicStatic(MagicLayer.Ability) {
-        @Override
-        public void modAbilityFlags(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final Set<MagicAbility> flags) {
-            final int amount = permanent.getCounters(MagicCounterType.PlusOne);
-            if (amount >= 10) {
-                permanent.addAbility(MagicAbility.Trample, flags);
-            }
-        }
-    },
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            final int amount = permanent.getCounters(MagicCounterType.PlusOne);
             return permanent.isController(upkeepPlayer) ?
                 new MagicEvent(
                     permanent,
-                    amount,
+                    permanent.getCounters(MagicCounterType.PlusOne),
                     this,
                     "Put RN +1/+1 counters on SN."
                 ) :

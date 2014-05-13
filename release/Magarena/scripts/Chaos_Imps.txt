@@ -7,6 +7,5 @@ type=Creature
 subtype=Imp
 cost={4}{R}{R}
 pt=6/5
-ability=flying;unleash
+ability=flying;unleash;SN has trample as long as it has a +1/+1 counter on it.
 timing=main
-requires_groovy_code
