@@ -1,0 +1,10 @@
+name=Vibrating Sphere
+url=http://magiccards.info/query?q=%21Vibrating+Sphere
+image=http://mtgimage.com/card/vibrating%20sphere.jpg
+rarity=R
+type=Artifact
+cost={4}
+ability=As long as it's your turn, creatures you control get +2/+0.;\
+        As long as it's not your turn, creatures you control get -0/-2.
+timing=main
+oracle=As long as it's your turn, creatures you control get +2/+0. As long as it's not your turn, creatures you control get -0/-2.
