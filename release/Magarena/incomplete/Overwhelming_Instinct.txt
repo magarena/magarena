@@ -1,0 +1,10 @@
+name=Overwhelming Instinct
+url=http://www.magiccards.info/query?q=%21overwhelming%20instinct
+image=http://mtgimage.com/card/overwhelming%20instinct.jpg
+value=3.607
+rarity=U
+type=Enchantment
+cost={2}{G}
+timing=enchantment
+requires_groovy_code
+#Triggers for each attacking creature when there is 3+ attacking

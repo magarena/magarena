@@ -1,0 +1,10 @@
+name=Bred for the Hunt
+url=http://www.magiccards.info/query?q=%21bred%20for%20the%20hunt
+image=http://mtgimage.com/card/bred%20for%20the%20hunt.jpg
+value=3.872
+rarity=U
+type=Enchantment
+cost={1}{G}{U}
+timing=enchantment
+requires_groovy_code
+#Need to determine if source of damage is a creature that has +1/+1 counters
