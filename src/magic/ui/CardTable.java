@@ -32,9 +32,11 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("serial")
 public class CardTable extends TexturedPanel implements ListSelectionListener {
 
-    private static final long serialVersionUID = 113243L;
+    private static final Color GRID_COLOR = new Color(194, 197, 203);
+    private static final int ROW_HEIGHT = 20; //pixels
 
     private final CardViewer cardViewer;
     private final CardTableModel tableModel;
@@ -48,7 +50,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         this(defs, cardViewer, "", false);
     }
 
-    @SuppressWarnings("serial")
     public CardTable(final List<MagicCardDefinition> defs, final CardViewer cardViewer, final String title, final boolean isDeck) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
@@ -56,12 +57,9 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         this.tableModel = new CardTableModel(defs, isDeck);
 
         this.table = new JTable(tableModel) {
-            private Color defaultForeColor;
+            private final Color defaultForeColor = getForeground();
             @Override
             public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
-                if (defaultForeColor == null) {
-                    defaultForeColor = table.getForeground();
-                }
                 Component c = super.prepareRenderer(renderer, row, column);
                 final MagicCardDefinition card = tableModel.getCardDef(row);
                 final boolean isRowSelected = table.isRowSelected(row);
@@ -80,29 +78,23 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         table.setDefaultRenderer(Object.class, new HideCellFocusRenderer());
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
-        table.setRowHeight(20);
-        table.setGridColor(new Color(194, 197, 203));
+        table.setRowHeight(ROW_HEIGHT);
+        table.setGridColor(GRID_COLOR);
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
         }
 
-        // set column widths
         final TableColumnModel model = table.getColumnModel();
-        for (int i = 0; i < model.getColumnCount(); i++) {
-            model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
-            model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
-        }
+        setColumnWidths(model);
 
         // special renderer for mana symbols
         model.getColumn(CardTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostCellRenderer());
 
         // listener to change card image on selection
         table.getSelectionModel().addListSelectionListener(this);
-        model.getSelectionModel().addListSelectionListener(this);
 
         // listener to sort on column header click
         final JTableHeader header = table.getTableHeader();
-        header.setUpdateTableInRealTime(true);
         header.addMouseListener(new ColumnListener());
         header.setReorderingAllowed(true);
 
@@ -118,6 +110,13 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         titleBar = null;
         if (title.length() > 0) {
             setTitle(title);
+        }
+    }
+
+    private void setColumnWidths(final TableColumnModel model) {
+        for (int i = 0; i < model.getColumnCount(); i++) {
+            model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
+            model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
         }
     }
 
@@ -257,7 +256,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         }
     }
 
-    @SuppressWarnings("serial")
     private class HideCellFocusRenderer extends DefaultTableCellRenderer {
         @Override
         public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
