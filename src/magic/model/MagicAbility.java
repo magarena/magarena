@@ -777,12 +777,10 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
-            if (arg.group("pt") != null) {
-                final String[] pt = ARG.pt(arg).replace("+","").split("/");
-                final int power = Integer.parseInt(pt[0]);
-                final int toughness = Integer.parseInt(pt[1]);
-                card.add(MagicStatic.genPTStatic(condition, filter, power, toughness));
-            }
+            final String[] pt = ARG.pt(arg).replace("+","").split("/");
+            final int power = Integer.parseInt(pt[0]);
+            final int toughness = Integer.parseInt(pt[1]);
+            card.add(MagicStatic.genPTStatic(condition, filter, power, toughness));
         }
     },
     ConditionPumpGroupAlt(ARG.WORDRUN2 + " get(s)? " + ARG.PT + " as long as " + ARG.WORDRUN + "(\\.)?", 0){
@@ -794,15 +792,13 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.multiple(ARG.wordrun2(arg));
-            if (arg.group("any") != null) {            
-                card.add(MagicStatic.genABStatic(
-                    condition,
-                    filter,
-                    MagicAbility.getAbilityList(
-                        ARG.any(arg)
-                    )
-                ));
-            }
+            card.add(MagicStatic.genABStatic(
+                condition,
+                filter,
+                MagicAbility.getAbilityList(
+                    ARG.any(arg)
+                )
+            ));
         }
     },
     ConditionGainGroupAlt(ARG.WORDRUN2 + " have " + ARG.ANY + " as long as " + ARG.WORDRUN + "(\\.)?", 0) {
