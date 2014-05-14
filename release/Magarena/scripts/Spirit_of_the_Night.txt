@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Demon,Spirit
 cost={6}{B}{B}{B}
 pt=6/5
-ability=flying;trample;haste;protection from black
+ability=flying;trample;haste;protection from black;\
+        SN has first strike as long as it's attacking.
 timing=main
-requires_groovy_code
