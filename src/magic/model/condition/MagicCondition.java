@@ -217,9 +217,15 @@ public interface MagicCondition {
         }
     };
 
-    MagicCondition TWO_OR_MORE_WHITE_PERMANENTS=new MagicCondition() {
+    MagicCondition TWO_OR_MORE_WHITE_PERMANENTS = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanents(MagicTargetFilterFactory.WHITE_PERMANENT_YOU_CONTROL)>= 2;
+        }
+    };
+    
+    MagicCondition EIGHT_OR_MORE_LANDS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getController().getNrOfPermanents(MagicType.Land) >= 8;
         }
     };
     

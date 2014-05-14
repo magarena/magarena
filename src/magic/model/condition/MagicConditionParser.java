@@ -64,6 +64,11 @@ public enum MagicConditionParser {
             return MagicCondition.NO_UNTAPPED_LANDS_CONDITION;
         }
     },
+    EightOrMoreLands("you control eight or more lands") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.EIGHT_OR_MORE_LANDS;
+        }
+    },
     Hellbent("you have no cards in hand") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.HELLBENT;

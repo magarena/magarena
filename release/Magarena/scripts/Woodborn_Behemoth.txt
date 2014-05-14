@@ -7,5 +7,5 @@ type=Creature
 subtype=Elemental
 cost={3}{G}{G}
 pt=4/4
+ability=As long as you control eight or more lands, SN gets +4/+4 and has trample.
 timing=main
-requires_groovy_code
