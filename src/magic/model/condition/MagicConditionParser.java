@@ -141,7 +141,12 @@ public enum MagicConditionParser {
     },
     WarriorCardInGraveyard("a Warrior card is in your graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.WARRIOR_CARD_IN_GRAVEYARD_CONDITION;
+            return MagicCondition.HAS_WARRIOR_IN_GRAVEYARD;
+        }
+    },
+    ArtifactCardInGraveyard("an artifact card is in your graveyard") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
         }
     },
     NoOpponentCreatures("no opponent controls a creature") {

@@ -382,9 +382,19 @@ public interface MagicCondition {
         }
     };
     
-    MagicCondition WARRIOR_CARD_IN_GRAVEYARD_CONDITION = new MagicCondition() {
-        public boolean accept(MagicSource source) {
-            return source.getController().getGraveyard().contains(MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD);
+    MagicCondition HAS_WARRIOR_IN_GRAVEYARD = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, MagicTargetFilterFactory.WARRIOR_CARD_FROM_GRAVEYARD).size() > 0;
+        }
+    };
+
+    MagicCondition HAS_ARTIFACT_IN_GRAVEYARD = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            final MagicPlayer player = source.getController();
+            return game.filterCards(player, MagicTargetFilterFactory.ARTIFACT_CARD_FROM_GRAVEYARD).size() > 0;
         }
     };
 
