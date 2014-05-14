@@ -141,8 +141,8 @@ public class PreferencesDialog
         mainPanel.add(touchscreenCheckBox);
 
         Y += 30;
-        skipSingleCheckBox = new JCheckBox("Skip single option choices when appropriate",
-                config.getSkipSingle());
+        skipSingleCheckBox = new JCheckBox("Automatically pass priority", config.getSkipSingle());
+        skipSingleCheckBox.setToolTipText("When the only option is to pass don't prompt player, just pass immediately.");
         skipSingleCheckBox.setBounds(X3,Y,W3,H3);
         skipSingleCheckBox.setFocusable(false);
         skipSingleCheckBox.addMouseListener(this);
@@ -157,8 +157,8 @@ public class PreferencesDialog
         mainPanel.add(alwaysPassCheckBox);
 
         Y += 30;
-        smartTargetCheckBox=new JCheckBox("Remove unusual target choices",
-                config.getSmartTarget());
+        smartTargetCheckBox=new JCheckBox("Allow only sensible choices", config.getSmartTarget());
+        smartTargetCheckBox.setToolTipText("Prevents you from choosing your own permanents for negative effects (eg. \"Destroy target creature\") or alternatively choosing an opponent's permanent for positive effects (eg. Giant Growth).");
         smartTargetCheckBox.setBounds(X3,Y,W3,H3);
         smartTargetCheckBox.setFocusable(false);
         smartTargetCheckBox.addMouseListener(this);
