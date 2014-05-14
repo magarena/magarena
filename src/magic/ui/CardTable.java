@@ -121,7 +121,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
         if (titleBar != null) {
-            add(titleBar, "w 100%");
+            add(titleBar, "w 100%, h 26!");
         }
         add(scrollpane, "w 100%, h 100%");
     }
