@@ -8,6 +8,7 @@ import magic.ui.widget.CostPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JComponent;
 import javax.swing.JScrollPane;
@@ -22,7 +23,6 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumnModel;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
@@ -38,6 +38,8 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 20; //pixels
 
+    private final MigLayout migLayout = new MigLayout();
+    private final JScrollPane scrollpane = new JScrollPane();
     private final CardViewer cardViewer;
     private final CardTableModel tableModel;
     private final JTable table;
@@ -99,18 +101,29 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         header.setReorderingAllowed(true);
 
         // add table to scroll pane
-        final JScrollPane scrollpane = new JScrollPane(table);
+        scrollpane.setViewportView(table);
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
         scrollpane.getViewport().setOpaque(false);
 
         // add title
-        setLayout(new BorderLayout());
-        add(scrollpane, BorderLayout.CENTER);
         titleBar = null;
         if (title.length() > 0) {
             setTitle(title);
         }
+
+        setLayout(migLayout);
+        refreshLayout();
+
+    }
+
+    private void refreshLayout() {
+        removeAll();
+        migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
+        if (titleBar != null) {
+            add(titleBar, "w 100%");
+        }
+        add(scrollpane, "w 100%, h 100%");
     }
 
     private void setColumnWidths(final TableColumnModel model) {
@@ -171,7 +184,6 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
             titleBar.setText(title);
         } else {
             titleBar = new TitleBar(title);
-            add(titleBar, BorderLayout.PAGE_START);
         }
     }
 
