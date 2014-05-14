@@ -246,6 +246,12 @@ public interface MagicCondition {
             return source.getController().getHandSize() == 0;
         }
     };
+    
+    MagicCondition OPPONENT_HELLBENT = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getOpponent().getHandSize() == 0;
+        }
+    };
 
     MagicCondition ENCHANTED_IS_UNTAPPED_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {

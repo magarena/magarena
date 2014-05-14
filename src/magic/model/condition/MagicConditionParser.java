@@ -74,6 +74,11 @@ public enum MagicConditionParser {
             return MagicCondition.HELLBENT;
         }
     },
+    OpponentHellbent("an opponent has no cards in hand") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.OPPONENT_HELLBENT;
+        }
+    },
     IsEquipped("SN is equipped") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_EQUIPPED;
