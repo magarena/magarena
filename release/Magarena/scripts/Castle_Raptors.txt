@@ -1,6 +1,7 @@
 name=Castle Raptors
 url=http://magiccards.info/query?q=%21Castle+Raptors
 image=http://mtgimage.com/card/castle%20raptors.jpg
+value=3
 rarity=C
 type=Creature
 subtype=Bird,Soldier

@@ -1,6 +1,7 @@
 name=Spectral Guardian
 url=http://magiccards.info/query?q=%21Spectral+Guardian
 image=http://mtgimage.com/card/spectral%20guardian.jpg
+value=3
 rarity=R
 type=Creature
 subtype=Spirit

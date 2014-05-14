@@ -1,6 +1,7 @@
 name=Angelic Voices
 url=http://magiccards.info/query?q=%21Angelic+Voices
 image=http://mtgimage.com/card/angelic%20voices.jpg
+value=3
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

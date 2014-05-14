@@ -1,6 +1,7 @@
 name=Juniper Order Advocate
 url=http://magiccards.info/query?q=%21Juniper+Order+Advocate
 image=http://mtgimage.com/card/juniper%20order%20advocate.jpg
+value=3
 rarity=U
 type=Creature
 subtype=Human,Knight
