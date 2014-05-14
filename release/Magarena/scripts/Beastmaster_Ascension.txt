@@ -5,5 +5,6 @@ value=4.052
 rarity=R
 type=Enchantment
 cost={2}{G}
+ability=As long as SN has seven or more quest counters on it, creatures you control get +5/+5.
 timing=enchantment
 requires_groovy_code

@@ -1,20 +1,4 @@
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        MagicTargetFilterFactory.CREATURE_YOU_CONTROL
-    ) {
-        @Override
-        public void modPowerToughness(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final MagicPowerToughness pt) {
-                    pt.add(5,5);
-        }
-        @Override
-        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return source != target && source.getCounters(MagicCounterType.Quest) >= 7;
-        }
-    },
     new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
