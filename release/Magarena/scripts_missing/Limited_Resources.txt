@@ -1,6 +1,7 @@
 name=Limited Resources
 url=http://magiccards.info/query?q=%21Limited+Resources
 image=http://mtgimage.com/card/limited%20resources.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={W}

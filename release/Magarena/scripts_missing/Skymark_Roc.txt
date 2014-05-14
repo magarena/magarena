@@ -1,6 +1,7 @@
 name=Skymark Roc
 url=http://magiccards.info/query?q=%21Skymark+Roc
 image=http://mtgimage.com/card/skymark%20roc.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Bird

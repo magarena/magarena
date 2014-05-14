@@ -1,6 +1,7 @@
 name=Greater Mossdog
 url=http://magiccards.info/query?q=%21Greater+Mossdog
 image=http://mtgimage.com/card/greater%20mossdog.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Plant,Hound

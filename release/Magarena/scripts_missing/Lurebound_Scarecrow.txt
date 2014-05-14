@@ -1,6 +1,7 @@
 name=Lurebound Scarecrow
 url=http://magiccards.info/query?q=%21Lurebound+Scarecrow
 image=http://mtgimage.com/card/lurebound%20scarecrow.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow

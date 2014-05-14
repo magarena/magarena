@@ -1,6 +1,7 @@
 name=Telemin Performance
 url=http://magiccards.info/query?q=%21Telemin+Performance
 image=http://mtgimage.com/card/telemin%20performance.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

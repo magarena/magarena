@@ -1,6 +1,7 @@
 name=Azamuki, Treachery Incarnate
 url=http://magiccards.info/query?q=%21Azamuki%2C+Treachery+Incarnate
 image=http://mtgimage.com/card/azamuki%2C%20treachery%20incarnate.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit

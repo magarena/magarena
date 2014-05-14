@@ -1,6 +1,7 @@
 name=Mindstab Thrull
 url=http://magiccards.info/query?q=%21Mindstab+Thrull
 image=http://mtgimage.com/card/mindstab%20thrull1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Thrull

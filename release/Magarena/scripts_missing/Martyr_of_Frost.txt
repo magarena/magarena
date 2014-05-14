@@ -1,6 +1,7 @@
 name=Martyr of Frost
 url=http://magiccards.info/query?q=%21Martyr+of+Frost
 image=http://mtgimage.com/card/martyr%20of%20frost.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

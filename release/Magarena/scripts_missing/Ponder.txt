@@ -1,6 +1,7 @@
 name=Ponder
 url=http://magiccards.info/query?q=%21Ponder
 image=http://mtgimage.com/card/ponder.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={U}

@@ -1,6 +1,7 @@
 name=Aven Warhawk
 url=http://magiccards.info/query?q=%21Aven+Warhawk
 image=http://mtgimage.com/card/aven%20warhawk.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Bird,Soldier

@@ -1,6 +1,7 @@
 name=Skirk Prospector
 url=http://magiccards.info/query?q=%21Skirk+Prospector
 image=http://mtgimage.com/card/skirk%20prospector.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin

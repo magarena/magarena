@@ -1,6 +1,7 @@
 name=Drop of Honey
 url=http://magiccards.info/query?q=%21Drop+of+Honey
 image=http://mtgimage.com/card/drop%20of%20honey.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={G}

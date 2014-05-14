@@ -1,6 +1,7 @@
 name=Eerie Procession
 url=http://magiccards.info/query?q=%21Eerie+Procession
 image=http://mtgimage.com/card/eerie%20procession.jpg
+value=2.500
 rarity=U
 type=Sorcery
 subtype=Arcane

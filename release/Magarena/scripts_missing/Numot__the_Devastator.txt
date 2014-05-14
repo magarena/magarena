@@ -1,6 +1,7 @@
 name=Numot, the Devastator
 url=http://magiccards.info/query?q=%21Numot%2C+the+Devastator
 image=http://mtgimage.com/card/numot%2C%20the%20devastator.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

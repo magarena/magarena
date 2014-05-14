@@ -1,6 +1,7 @@
 name=Gelid Shackles
 url=http://magiccards.info/query?q=%21Gelid+Shackles
 image=http://mtgimage.com/card/gelid%20shackles.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

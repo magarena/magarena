@@ -1,6 +1,7 @@
 name=Raging River
 url=http://magiccards.info/query?q=%21Raging+River
 image=http://mtgimage.com/card/raging%20river.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={R}{R}

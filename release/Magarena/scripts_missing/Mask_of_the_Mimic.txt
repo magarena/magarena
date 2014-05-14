@@ -1,6 +1,7 @@
 name=Mask of the Mimic
 url=http://magiccards.info/query?q=%21Mask+of+the+Mimic
 image=http://mtgimage.com/card/mask%20of%20the%20mimic.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}

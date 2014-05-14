@@ -1,6 +1,7 @@
 name=Plunder
 url=http://magiccards.info/query?q=%21Plunder
 image=http://mtgimage.com/card/plunder.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={4}{R}

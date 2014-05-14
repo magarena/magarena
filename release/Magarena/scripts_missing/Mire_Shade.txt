@@ -1,6 +1,7 @@
 name=Mire Shade
 url=http://magiccards.info/query?q=%21Mire+Shade
 image=http://mtgimage.com/card/mire%20shade.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Shade

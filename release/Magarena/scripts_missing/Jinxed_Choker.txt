@@ -1,6 +1,7 @@
 name=Jinxed Choker
 url=http://magiccards.info/query?q=%21Jinxed+Choker
 image=http://mtgimage.com/card/jinxed%20choker.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

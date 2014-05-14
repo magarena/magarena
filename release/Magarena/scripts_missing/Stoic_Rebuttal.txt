@@ -1,6 +1,7 @@
 name=Stoic Rebuttal
 url=http://magiccards.info/query?q=%21Stoic+Rebuttal
 image=http://mtgimage.com/card/stoic%20rebuttal.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}{U}

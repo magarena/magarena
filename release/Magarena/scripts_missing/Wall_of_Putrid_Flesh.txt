@@ -1,6 +1,7 @@
 name=Wall of Putrid Flesh
 url=http://magiccards.info/query?q=%21Wall+of+Putrid+Flesh
 image=http://mtgimage.com/card/wall%20of%20putrid%20flesh.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wall

@@ -1,6 +1,7 @@
 name=Taste of Paradise
 url=http://magiccards.info/query?q=%21Taste+of+Paradise
 image=http://mtgimage.com/card/taste%20of%20paradise1.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}

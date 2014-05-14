@@ -1,6 +1,7 @@
 name=Gyre Sage
 url=http://magiccards.info/query?q=%21Gyre+Sage
 image=http://mtgimage.com/card/gyre%20sage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Druid

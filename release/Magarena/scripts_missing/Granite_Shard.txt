@@ -1,6 +1,7 @@
 name=Granite Shard
 url=http://magiccards.info/query?q=%21Granite+Shard
 image=http://mtgimage.com/card/granite%20shard.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

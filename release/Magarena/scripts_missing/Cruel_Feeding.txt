@@ -1,6 +1,7 @@
 name=Cruel Feeding
 url=http://magiccards.info/query?q=%21Cruel+Feeding
 image=http://mtgimage.com/card/cruel%20feeding.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

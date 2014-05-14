@@ -1,6 +1,7 @@
 name=Booby Trap
 url=http://magiccards.info/query?q=%21Booby+Trap
 image=http://mtgimage.com/card/booby%20trap.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

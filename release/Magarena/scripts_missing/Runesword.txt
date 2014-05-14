@@ -1,6 +1,7 @@
 name=Runesword
 url=http://magiccards.info/query?q=%21Runesword
 image=http://mtgimage.com/card/runesword.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={6}

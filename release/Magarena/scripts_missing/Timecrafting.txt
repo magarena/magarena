@@ -1,6 +1,7 @@
 name=Timecrafting
 url=http://magiccards.info/query?q=%21Timecrafting
 image=http://mtgimage.com/card/timecrafting.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={X}{R}

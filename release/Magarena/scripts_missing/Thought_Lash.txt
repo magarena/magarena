@@ -1,6 +1,7 @@
 name=Thought Lash
 url=http://magiccards.info/query?q=%21Thought+Lash
 image=http://mtgimage.com/card/thought%20lash.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

@@ -1,6 +1,7 @@
 name=War's Toll
 url=http://magiccards.info/query?q=%21War%27s+Toll
 image=http://mtgimage.com/card/war%27s%20toll.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

@@ -1,6 +1,7 @@
 name=Two-Headed Dragon
 url=http://magiccards.info/query?q=%21Two-Headed+Dragon
 image=http://mtgimage.com/card/two-headed%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

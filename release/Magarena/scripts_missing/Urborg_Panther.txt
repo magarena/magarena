@@ -1,6 +1,7 @@
 name=Urborg Panther
 url=http://magiccards.info/query?q=%21Urborg+Panther
 image=http://mtgimage.com/card/urborg%20panther.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Nightstalker,Cat

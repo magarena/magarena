@@ -1,6 +1,7 @@
 name=Surge Node
 url=http://magiccards.info/query?q=%21Surge+Node
 image=http://mtgimage.com/card/surge%20node.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

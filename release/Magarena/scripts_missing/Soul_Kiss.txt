@@ -1,6 +1,7 @@
 name=Soul Kiss
 url=http://magiccards.info/query?q=%21Soul+Kiss
 image=http://mtgimage.com/card/soul%20kiss.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Angus Mackenzie
 url=http://magiccards.info/query?q=%21Angus+Mackenzie
 image=http://mtgimage.com/card/angus%20mackenzie.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

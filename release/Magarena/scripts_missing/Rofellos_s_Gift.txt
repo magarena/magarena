@@ -1,6 +1,7 @@
 name=Rofellos's Gift
 url=http://magiccards.info/query?q=%21Rofellos%27s+Gift
 image=http://mtgimage.com/card/rofellos%27s%20gift.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={G}

@@ -1,6 +1,7 @@
 name=Fire-Belly Changeling
 url=http://magiccards.info/query?q=%21Fire-Belly+Changeling
 image=http://mtgimage.com/card/fire-belly%20changeling.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Shapeshifter

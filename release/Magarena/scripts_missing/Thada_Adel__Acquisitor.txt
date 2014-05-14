@@ -1,6 +1,7 @@
 name=Thada Adel, Acquisitor
 url=http://magiccards.info/query?q=%21Thada+Adel%2C+Acquisitor
 image=http://mtgimage.com/card/thada%20adel%2C%20acquisitor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Merfolk,Rogue

@@ -1,6 +1,7 @@
 name=Writ of Passage
 url=http://magiccards.info/query?q=%21Writ+of+Passage
 image=http://mtgimage.com/card/writ%20of%20passage.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

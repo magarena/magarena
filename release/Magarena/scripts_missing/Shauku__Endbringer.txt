@@ -1,6 +1,7 @@
 name=Shauku, Endbringer
 url=http://magiccards.info/query?q=%21Shauku%2C+Endbringer
 image=http://mtgimage.com/card/shauku%2C%20endbringer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire

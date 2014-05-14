@@ -1,6 +1,7 @@
 name=Grinning Ignus
 url=http://magiccards.info/query?q=%21Grinning+Ignus
 image=http://mtgimage.com/card/grinning%20ignus.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental

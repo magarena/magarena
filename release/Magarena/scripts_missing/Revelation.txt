@@ -1,6 +1,7 @@
 name=Revelation
 url=http://magiccards.info/query?q=%21Revelation
 image=http://mtgimage.com/card/revelation.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={G}

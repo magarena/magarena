@@ -1,6 +1,7 @@
 name=Alter Reality
 url=http://magiccards.info/query?q=%21Alter+Reality
 image=http://mtgimage.com/card/alter%20reality.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{U}

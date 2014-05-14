@@ -1,6 +1,7 @@
 name=Preacher
 url=http://magiccards.info/query?q=%21Preacher
 image=http://mtgimage.com/card/preacher.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

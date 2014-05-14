@@ -1,6 +1,7 @@
 name=Brooding Saurian
 url=http://magiccards.info/query?q=%21Brooding+Saurian
 image=http://mtgimage.com/card/brooding%20saurian.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Lizard

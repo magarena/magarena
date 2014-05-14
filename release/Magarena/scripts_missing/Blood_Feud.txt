@@ -1,6 +1,7 @@
 name=Blood Feud
 url=http://magiccards.info/query?q=%21Blood+Feud
 image=http://mtgimage.com/card/blood%20feud.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

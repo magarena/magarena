@@ -1,6 +1,7 @@
 name=Opal Archangel
 url=http://magiccards.info/query?q=%21Opal+Archangel
 image=http://mtgimage.com/card/opal%20archangel.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{W}

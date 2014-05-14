@@ -1,6 +1,7 @@
 name=Scavenger Folk
 url=http://magiccards.info/query?q=%21Scavenger+Folk
 image=http://mtgimage.com/card/scavenger%20folk.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human

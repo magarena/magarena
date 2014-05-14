@@ -1,6 +1,7 @@
 name=Thawing Glaciers
 url=http://magiccards.info/query?q=%21Thawing+Glaciers
 image=http://mtgimage.com/card/thawing%20glaciers.jpg
+value=2.500
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

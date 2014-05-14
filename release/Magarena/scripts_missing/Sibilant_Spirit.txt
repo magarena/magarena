@@ -1,6 +1,7 @@
 name=Sibilant Spirit
 url=http://magiccards.info/query?q=%21Sibilant+Spirit
 image=http://mtgimage.com/card/sibilant%20spirit.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

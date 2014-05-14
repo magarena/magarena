@@ -1,6 +1,7 @@
 name=Prowling Nightstalker
 url=http://magiccards.info/query?q=%21Prowling+Nightstalker
 image=http://mtgimage.com/card/prowling%20nightstalker.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Nightstalker

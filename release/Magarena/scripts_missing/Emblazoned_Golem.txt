@@ -1,6 +1,7 @@
 name=Emblazoned Golem
 url=http://magiccards.info/query?q=%21Emblazoned+Golem
 image=http://mtgimage.com/card/emblazoned%20golem.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

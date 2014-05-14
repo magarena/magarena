@@ -1,6 +1,7 @@
 name=Everflowing Chalice
 url=http://magiccards.info/query?q=%21Everflowing+Chalice
 image=http://mtgimage.com/card/everflowing%20chalice.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={0}

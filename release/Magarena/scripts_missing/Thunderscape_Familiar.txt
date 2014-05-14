@@ -1,6 +1,7 @@
 name=Thunderscape Familiar
 url=http://magiccards.info/query?q=%21Thunderscape+Familiar
 image=http://mtgimage.com/card/thunderscape%20familiar.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kavu

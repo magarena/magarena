@@ -1,6 +1,7 @@
 name=Witch's Mist
 url=http://magiccards.info/query?q=%21Witch%27s+Mist
 image=http://mtgimage.com/card/witch%27s%20mist.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{B}

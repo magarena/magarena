@@ -1,6 +1,7 @@
 name=Latchkey Faerie
 url=http://magiccards.info/query?q=%21Latchkey+Faerie
 image=http://mtgimage.com/card/latchkey%20faerie.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

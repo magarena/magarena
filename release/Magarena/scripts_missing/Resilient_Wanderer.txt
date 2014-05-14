@@ -1,6 +1,7 @@
 name=Resilient Wanderer
 url=http://magiccards.info/query?q=%21Resilient+Wanderer
 image=http://mtgimage.com/card/resilient%20wanderer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Nomad

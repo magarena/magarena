@@ -1,6 +1,7 @@
 name=Platinum Emperion
 url=http://magiccards.info/query?q=%21Platinum+Emperion
 image=http://mtgimage.com/card/platinum%20emperion.jpg
+value=2.500
 rarity=M
 type=Artifact,Creature
 subtype=Golem

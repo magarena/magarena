@@ -1,6 +1,7 @@
 name=Reverse the Sands
 url=http://magiccards.info/query?q=%21Reverse+the+Sands
 image=http://mtgimage.com/card/reverse%20the%20sands.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={6}{W}{W}

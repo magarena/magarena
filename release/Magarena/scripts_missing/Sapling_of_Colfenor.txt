@@ -1,6 +1,7 @@
 name=Sapling of Colfenor
 url=http://magiccards.info/query?q=%21Sapling+of+Colfenor
 image=http://mtgimage.com/card/sapling%20of%20colfenor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Treefolk,Shaman

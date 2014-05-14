@@ -1,6 +1,7 @@
 name=Masked Admirers
 url=http://magiccards.info/query?q=%21Masked+Admirers
 image=http://mtgimage.com/card/masked%20admirers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Shaman

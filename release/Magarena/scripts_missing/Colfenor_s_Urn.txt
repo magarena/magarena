@@ -1,6 +1,7 @@
 name=Colfenor's Urn
 url=http://magiccards.info/query?q=%21Colfenor%27s+Urn
 image=http://mtgimage.com/card/colfenor%27s%20urn.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

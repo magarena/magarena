@@ -1,6 +1,7 @@
 name=Colfenor's Plans
 url=http://magiccards.info/query?q=%21Colfenor%27s+Plans
 image=http://mtgimage.com/card/colfenor%27s%20plans.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

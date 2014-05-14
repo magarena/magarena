@@ -1,6 +1,7 @@
 name=Patron of the Wild
 url=http://magiccards.info/query?q=%21Patron+of+the+Wild
 image=http://mtgimage.com/card/patron%20of%20the%20wild.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf

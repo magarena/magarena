@@ -1,6 +1,7 @@
 name=Gorilla War Cry
 url=http://magiccards.info/query?q=%21Gorilla+War+Cry
 image=http://mtgimage.com/card/gorilla%20war%20cry1.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

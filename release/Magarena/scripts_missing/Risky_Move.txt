@@ -1,6 +1,7 @@
 name=Risky Move
 url=http://magiccards.info/query?q=%21Risky+Move
 image=http://mtgimage.com/card/risky%20move.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}{R}{R}

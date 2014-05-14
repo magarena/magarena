@@ -1,6 +1,7 @@
 name=Siege Wurm
 url=http://magiccards.info/query?q=%21Siege+Wurm
 image=http://mtgimage.com/card/siege%20wurm.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm

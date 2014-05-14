@@ -1,6 +1,7 @@
 name=Breaking
 url=http://magiccards.info/query?q=%21Breaking
 image=http://mtgimage.com/card/breakingentering.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={U}{B}

@@ -1,6 +1,7 @@
 name=Headhunter
 url=http://magiccards.info/query?q=%21Headhunter
 image=http://mtgimage.com/card/headhunter.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

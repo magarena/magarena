@@ -1,6 +1,7 @@
 name=Off Balance
 url=http://magiccards.info/query?q=%21Off+Balance
 image=http://mtgimage.com/card/off%20balance.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

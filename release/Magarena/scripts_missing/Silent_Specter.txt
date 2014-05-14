@@ -1,6 +1,7 @@
 name=Silent Specter
 url=http://magiccards.info/query?q=%21Silent+Specter
 image=http://mtgimage.com/card/silent%20specter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Specter

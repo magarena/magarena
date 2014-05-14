@@ -1,6 +1,7 @@
 name=Lifespark Spellbomb
 url=http://magiccards.info/query?q=%21Lifespark+Spellbomb
 image=http://mtgimage.com/card/lifespark%20spellbomb.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={1}

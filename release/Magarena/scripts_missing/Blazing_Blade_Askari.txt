@@ -1,6 +1,7 @@
 name=Blazing Blade Askari
 url=http://magiccards.info/query?q=%21Blazing+Blade+Askari
 image=http://mtgimage.com/card/blazing%20blade%20askari.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Knight

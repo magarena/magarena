@@ -1,6 +1,7 @@
 name=Sawtooth Loon
 url=http://magiccards.info/query?q=%21Sawtooth+Loon
 image=http://mtgimage.com/card/sawtooth%20loon.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Bird

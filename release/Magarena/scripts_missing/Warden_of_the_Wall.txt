@@ -1,6 +1,7 @@
 name=Warden of the Wall
 url=http://magiccards.info/query?q=%21Warden+of+the+Wall
 image=http://mtgimage.com/card/warden%20of%20the%20wall.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

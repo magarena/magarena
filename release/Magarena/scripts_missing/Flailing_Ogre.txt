@@ -1,6 +1,7 @@
 name=Flailing Ogre
 url=http://magiccards.info/query?q=%21Flailing+Ogre
 image=http://mtgimage.com/card/flailing%20ogre.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ogre

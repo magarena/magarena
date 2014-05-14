@@ -1,6 +1,7 @@
 name=Zhalfirin Crusader
 url=http://magiccards.info/query?q=%21Zhalfirin+Crusader
 image=http://mtgimage.com/card/zhalfirin%20crusader.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight

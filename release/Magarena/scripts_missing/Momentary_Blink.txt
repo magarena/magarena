@@ -1,6 +1,7 @@
 name=Momentary Blink
 url=http://magiccards.info/query?q=%21Momentary+Blink
 image=http://mtgimage.com/card/momentary%20blink.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}

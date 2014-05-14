@@ -1,6 +1,7 @@
 name=Sphere of Law
 url=http://magiccards.info/query?q=%21Sphere+of+Law
 image=http://mtgimage.com/card/sphere%20of%20law.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={3}{W}

@@ -1,6 +1,7 @@
 name=Braids, Cabal Minion
 url=http://magiccards.info/query?q=%21Braids%2C+Cabal+Minion
 image=http://mtgimage.com/card/braids%2C%20cabal%20minion.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Minion

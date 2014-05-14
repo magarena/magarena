@@ -1,6 +1,7 @@
 name=Skirk Alarmist
 url=http://magiccards.info/query?q=%21Skirk+Alarmist
 image=http://mtgimage.com/card/skirk%20alarmist.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

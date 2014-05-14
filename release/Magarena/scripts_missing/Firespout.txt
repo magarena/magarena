@@ -1,6 +1,7 @@
 name=Firespout
 url=http://magiccards.info/query?q=%21Firespout
 image=http://mtgimage.com/card/firespout.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{R/G}

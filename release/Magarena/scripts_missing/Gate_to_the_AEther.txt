@@ -1,6 +1,7 @@
 name=Gate to the AEther
 url=http://magiccards.info/query?q=%21Gate+to+the+%C3%86ther
 image=http://mtgimage.com/card/gate%20to%20the%20aether.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

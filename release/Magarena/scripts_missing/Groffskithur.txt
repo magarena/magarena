@@ -1,6 +1,7 @@
 name=Groffskithur
 url=http://magiccards.info/query?q=%21Groffskithur
 image=http://mtgimage.com/card/groffskithur.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

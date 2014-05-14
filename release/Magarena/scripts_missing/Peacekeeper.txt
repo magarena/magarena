@@ -1,6 +1,7 @@
 name=Peacekeeper
 url=http://magiccards.info/query?q=%21Peacekeeper
 image=http://mtgimage.com/card/peacekeeper.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human

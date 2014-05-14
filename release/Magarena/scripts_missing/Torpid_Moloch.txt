@@ -1,6 +1,7 @@
 name=Torpid Moloch
 url=http://magiccards.info/query?q=%21Torpid+Moloch
 image=http://mtgimage.com/card/torpid%20moloch.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Lizard

@@ -1,6 +1,7 @@
 name=Su-Chi
 url=http://magiccards.info/query?q=%21Su-Chi
 image=http://mtgimage.com/card/su-chi.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Construct

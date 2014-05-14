@@ -1,6 +1,7 @@
 name=Sasaya, Orochi Ascendant
 url=http://magiccards.info/query?q=%21Sasaya%2C+Orochi+Ascendant
 image=http://mtgimage.com/card/sasaya%2C%20orochi%20ascendant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Snake,Monk

@@ -1,6 +1,7 @@
 name=Damping Matrix
 url=http://magiccards.info/query?q=%21Damping+Matrix
 image=http://mtgimage.com/card/damping%20matrix.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

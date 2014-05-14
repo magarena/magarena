@@ -1,6 +1,7 @@
 name=Psychic Overload
 url=http://magiccards.info/query?q=%21Psychic+Overload
 image=http://mtgimage.com/card/psychic%20overload.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

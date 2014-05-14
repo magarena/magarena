@@ -1,6 +1,7 @@
 name=Aerial Caravan
 url=http://magiccards.info/query?q=%21Aerial+Caravan
 image=http://mtgimage.com/card/aerial%20caravan.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

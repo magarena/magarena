@@ -1,6 +1,7 @@
 name=Duskmantle Seer
 url=http://magiccards.info/query?q=%21Duskmantle+Seer
 image=http://mtgimage.com/card/duskmantle%20seer.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Vampire,Wizard

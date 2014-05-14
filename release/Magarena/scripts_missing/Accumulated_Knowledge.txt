@@ -1,6 +1,7 @@
 name=Accumulated Knowledge
 url=http://magiccards.info/query?q=%21Accumulated+Knowledge
 image=http://mtgimage.com/card/accumulated%20knowledge.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

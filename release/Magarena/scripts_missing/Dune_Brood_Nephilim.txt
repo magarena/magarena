@@ -1,6 +1,7 @@
 name=Dune-Brood Nephilim
 url=http://magiccards.info/query?q=%21Dune-Brood+Nephilim
 image=http://mtgimage.com/card/dune-brood%20nephilim.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Nephilim

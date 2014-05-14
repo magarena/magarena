@@ -1,6 +1,7 @@
 name=Hanabi Blast
 url=http://magiccards.info/query?q=%21Hanabi+Blast
 image=http://mtgimage.com/card/hanabi%20blast.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}{R}

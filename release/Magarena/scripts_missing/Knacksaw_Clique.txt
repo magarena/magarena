@@ -1,6 +1,7 @@
 name=Knacksaw Clique
 url=http://magiccards.info/query?q=%21Knacksaw+Clique
 image=http://mtgimage.com/card/knacksaw%20clique.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Faerie,Rogue

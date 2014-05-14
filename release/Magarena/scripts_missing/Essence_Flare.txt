@@ -1,6 +1,7 @@
 name=Essence Flare
 url=http://magiccards.info/query?q=%21Essence+Flare
 image=http://mtgimage.com/card/essence%20flare.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

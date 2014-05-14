@@ -1,6 +1,7 @@
 name=Dwarven Strike Force
 url=http://magiccards.info/query?q=%21Dwarven+Strike+Force
 image=http://mtgimage.com/card/dwarven%20strike%20force.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Dwarf,Berserker

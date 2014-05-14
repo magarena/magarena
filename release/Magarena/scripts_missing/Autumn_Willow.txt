@@ -1,6 +1,7 @@
 name=Autumn Willow
 url=http://magiccards.info/query?q=%21Autumn+Willow
 image=http://mtgimage.com/card/autumn%20willow.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar

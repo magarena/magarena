@@ -1,6 +1,7 @@
 name=Training Grounds
 url=http://magiccards.info/query?q=%21Training+Grounds
 image=http://mtgimage.com/card/training%20grounds.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={U}

@@ -1,6 +1,7 @@
 name=Bloodlord of Vaasgoth
 url=http://magiccards.info/query?q=%21Bloodlord+of+Vaasgoth
 image=http://mtgimage.com/card/bloodlord%20of%20vaasgoth.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Vampire,Warrior

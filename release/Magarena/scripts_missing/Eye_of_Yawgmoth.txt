@@ -1,6 +1,7 @@
 name=Eye of Yawgmoth
 url=http://magiccards.info/query?q=%21Eye+of+Yawgmoth
 image=http://mtgimage.com/card/eye%20of%20yawgmoth.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

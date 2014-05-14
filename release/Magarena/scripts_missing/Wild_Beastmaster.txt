@@ -1,6 +1,7 @@
 name=Wild Beastmaster
 url=http://magiccards.info/query?q=%21Wild+Beastmaster
 image=http://mtgimage.com/card/wild%20beastmaster.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Shaman

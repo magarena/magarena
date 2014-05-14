@@ -1,6 +1,7 @@
 name=Haakon, Stromgald Scourge
 url=http://magiccards.info/query?q=%21Haakon%2C+Stromgald+Scourge
 image=http://mtgimage.com/card/haakon%2C%20stromgald%20scourge.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Knight

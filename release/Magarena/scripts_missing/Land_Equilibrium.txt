@@ -1,6 +1,7 @@
 name=Land Equilibrium
 url=http://magiccards.info/query?q=%21Land+Equilibrium
 image=http://mtgimage.com/card/land%20equilibrium.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

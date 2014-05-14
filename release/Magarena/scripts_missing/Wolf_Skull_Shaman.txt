@@ -1,6 +1,7 @@
 name=Wolf-Skull Shaman
 url=http://magiccards.info/query?q=%21Wolf-Skull+Shaman
 image=http://mtgimage.com/card/wolf-skull%20shaman.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf,Shaman

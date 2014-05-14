@@ -1,6 +1,7 @@
 name=Wormfang Manta
 url=http://magiccards.info/query?q=%21Wormfang+Manta
 image=http://mtgimage.com/card/wormfang%20manta.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Nightmare,Fish,Beast

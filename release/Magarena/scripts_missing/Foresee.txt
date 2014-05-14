@@ -1,6 +1,7 @@
 name=Foresee
 url=http://magiccards.info/query?q=%21Foresee
 image=http://mtgimage.com/card/foresee.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{U}

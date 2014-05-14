@@ -1,6 +1,7 @@
 name=Tainted Pact
 url=http://magiccards.info/query?q=%21Tainted+Pact
 image=http://mtgimage.com/card/tainted%20pact.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{B}

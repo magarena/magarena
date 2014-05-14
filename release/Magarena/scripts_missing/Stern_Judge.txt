@@ -1,6 +1,7 @@
 name=Stern Judge
 url=http://magiccards.info/query?q=%21Stern+Judge
 image=http://mtgimage.com/card/stern%20judge.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

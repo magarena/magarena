@@ -1,6 +1,7 @@
 name=Clarion Ultimatum
 url=http://magiccards.info/query?q=%21Clarion+Ultimatum
 image=http://mtgimage.com/card/clarion%20ultimatum.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={G}{G}{W}{W}{W}{U}{U}

@@ -1,6 +1,7 @@
 name=Increasing Confusion
 url=http://magiccards.info/query?q=%21Increasing+Confusion
 image=http://mtgimage.com/card/increasing%20confusion.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{U}

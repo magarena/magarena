@@ -1,6 +1,7 @@
 name=Kodama's Might
 url=http://magiccards.info/query?q=%21Kodama%27s+Might
 image=http://mtgimage.com/card/kodama%27s%20might.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

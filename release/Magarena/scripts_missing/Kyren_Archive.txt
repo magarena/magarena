@@ -1,6 +1,7 @@
 name=Kyren Archive
 url=http://magiccards.info/query?q=%21Kyren+Archive
 image=http://mtgimage.com/card/kyren%20archive.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

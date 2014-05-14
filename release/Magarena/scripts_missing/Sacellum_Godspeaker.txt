@@ -1,6 +1,7 @@
 name=Sacellum Godspeaker
 url=http://magiccards.info/query?q=%21Sacellum+Godspeaker
 image=http://mtgimage.com/card/sacellum%20godspeaker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Druid

@@ -1,6 +1,7 @@
 name=Flash Flood
 url=http://magiccards.info/query?q=%21Flash+Flood
 image=http://mtgimage.com/card/flash%20flood.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,7 @@
 name=Dance of the Dead
 url=http://magiccards.info/query?q=%21Dance+of+the+Dead
 image=http://mtgimage.com/card/dance%20of%20the%20dead.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

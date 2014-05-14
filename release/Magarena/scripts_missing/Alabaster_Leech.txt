@@ -1,6 +1,7 @@
 name=Alabaster Leech
 url=http://magiccards.info/query?q=%21Alabaster+Leech
 image=http://mtgimage.com/card/alabaster%20leech.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leech

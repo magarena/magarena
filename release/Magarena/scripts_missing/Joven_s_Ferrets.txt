@@ -1,6 +1,7 @@
 name=Joven's Ferrets
 url=http://magiccards.info/query?q=%21Joven%27s+Ferrets
 image=http://mtgimage.com/card/joven%27s%20ferrets.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Ferret

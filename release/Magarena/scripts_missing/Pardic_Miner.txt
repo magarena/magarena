@@ -1,6 +1,7 @@
 name=Pardic Miner
 url=http://magiccards.info/query?q=%21Pardic+Miner
 image=http://mtgimage.com/card/pardic%20miner.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dwarf

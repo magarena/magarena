@@ -1,6 +1,7 @@
 name=Frantic Purification
 url=http://magiccards.info/query?q=%21Frantic+Purification
 image=http://mtgimage.com/card/frantic%20purification.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{W}

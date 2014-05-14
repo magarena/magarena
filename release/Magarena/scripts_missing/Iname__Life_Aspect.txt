@@ -1,6 +1,7 @@
 name=Iname, Life Aspect
 url=http://magiccards.info/query?q=%21Iname%2C+Life+Aspect
 image=http://mtgimage.com/card/iname%2C%20life%20aspect.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

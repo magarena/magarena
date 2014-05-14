@@ -1,6 +1,7 @@
 name=Hellion Eruption
 url=http://magiccards.info/query?q=%21Hellion+Eruption
 image=http://mtgimage.com/card/hellion%20eruption.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={5}{R}

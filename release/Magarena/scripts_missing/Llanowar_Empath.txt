@@ -1,6 +1,7 @@
 name=Llanowar Empath
 url=http://magiccards.info/query?q=%21Llanowar+Empath
 image=http://mtgimage.com/card/llanowar%20empath.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Shaman

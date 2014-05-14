@@ -1,6 +1,7 @@
 name=Kalitas, Bloodchief of Ghet
 url=http://magiccards.info/query?q=%21Kalitas%2C+Bloodchief+of+Ghet
 image=http://mtgimage.com/card/kalitas%2C%20bloodchief%20of%20ghet.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Vampire,Warrior

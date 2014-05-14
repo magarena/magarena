@@ -1,6 +1,7 @@
 name=Moonlace
 url=http://magiccards.info/query?q=%21Moonlace
 image=http://mtgimage.com/card/moonlace.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}

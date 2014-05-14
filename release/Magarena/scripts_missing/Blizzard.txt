@@ -1,6 +1,7 @@
 name=Blizzard
 url=http://magiccards.info/query?q=%21Blizzard
 image=http://mtgimage.com/card/blizzard.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={G}{G}

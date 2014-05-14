@@ -1,6 +1,7 @@
 name=Experiment Kraj
 url=http://magiccards.info/query?q=%21Experiment+Kraj
 image=http://mtgimage.com/card/experiment%20kraj.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Ooze,Mutant

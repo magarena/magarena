@@ -1,6 +1,7 @@
 name=Detritivore
 url=http://magiccards.info/query?q=%21Detritivore
 image=http://mtgimage.com/card/detritivore.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Lhurgoyf

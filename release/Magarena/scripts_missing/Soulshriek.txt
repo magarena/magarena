@@ -1,6 +1,7 @@
 name=Soulshriek
 url=http://magiccards.info/query?q=%21Soulshriek
 image=http://mtgimage.com/card/soulshriek.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

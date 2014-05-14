@@ -1,6 +1,7 @@
 name=Urborg Syphon-Mage
 url=http://magiccards.info/query?q=%21Urborg+Syphon-Mage
 image=http://mtgimage.com/card/urborg%20syphon-mage.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

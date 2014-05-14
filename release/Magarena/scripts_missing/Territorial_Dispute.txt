@@ -1,6 +1,7 @@
 name=Territorial Dispute
 url=http://magiccards.info/query?q=%21Territorial+Dispute
 image=http://mtgimage.com/card/territorial%20dispute.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{R}{R}

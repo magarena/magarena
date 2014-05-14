@@ -1,6 +1,7 @@
 name=Summon the School
 url=http://magiccards.info/query?q=%21Summon+the+School
 image=http://mtgimage.com/card/summon%20the%20school.jpg
+value=2.500
 rarity=U
 type=Tribal,Sorcery
 subtype=Merfolk

@@ -1,6 +1,7 @@
 name=Delirium
 url=http://magiccards.info/query?q=%21Delirium
 image=http://mtgimage.com/card/delirium.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{B}{R}

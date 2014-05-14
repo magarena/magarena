@@ -1,6 +1,7 @@
 name=Faerie Noble
 url=http://magiccards.info/query?q=%21Faerie+Noble
 image=http://mtgimage.com/card/faerie%20noble.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Faerie

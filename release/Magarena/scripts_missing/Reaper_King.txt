@@ -1,6 +1,7 @@
 name=Reaper King
 url=http://magiccards.info/query?q=%21Reaper+King
 image=http://mtgimage.com/card/reaper%20king.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Scarecrow

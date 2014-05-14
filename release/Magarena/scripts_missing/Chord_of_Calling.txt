@@ -1,6 +1,7 @@
 name=Chord of Calling
 url=http://magiccards.info/query?q=%21Chord+of+Calling
 image=http://mtgimage.com/card/chord%20of%20calling.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={X}{G}{G}{G}

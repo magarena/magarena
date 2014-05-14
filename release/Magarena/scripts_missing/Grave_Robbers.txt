@@ -1,6 +1,7 @@
 name=Grave Robbers
 url=http://magiccards.info/query?q=%21Grave+Robbers
 image=http://mtgimage.com/card/grave%20robbers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Rogue

@@ -1,6 +1,7 @@
 name=Skaab Goliath
 url=http://magiccards.info/query?q=%21Skaab+Goliath
 image=http://mtgimage.com/card/skaab%20goliath.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Giant

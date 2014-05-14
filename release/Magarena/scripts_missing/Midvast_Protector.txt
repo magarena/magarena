@@ -1,6 +1,7 @@
 name=Midvast Protector
 url=http://magiccards.info/query?q=%21Midvast+Protector
 image=http://mtgimage.com/card/midvast%20protector.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

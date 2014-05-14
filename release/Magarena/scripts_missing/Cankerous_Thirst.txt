@@ -1,6 +1,7 @@
 name=Cankerous Thirst
 url=http://magiccards.info/query?q=%21Cankerous+Thirst
 image=http://mtgimage.com/card/cankerous%20thirst.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{B/G}

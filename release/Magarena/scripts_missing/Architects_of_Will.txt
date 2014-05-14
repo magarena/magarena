@@ -1,6 +1,7 @@
 name=Architects of Will
 url=http://magiccards.info/query?q=%21Architects+of+Will
 image=http://mtgimage.com/card/architects%20of%20will.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Human,Wizard

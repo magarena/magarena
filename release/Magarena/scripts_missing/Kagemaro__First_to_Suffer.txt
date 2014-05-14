@@ -1,6 +1,7 @@
 name=Kagemaro, First to Suffer
 url=http://magiccards.info/query?q=%21Kagemaro%2C+First+to+Suffer
 image=http://mtgimage.com/card/kagemaro%2C%20first%20to%20suffer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Demon,Spirit

@@ -1,6 +1,7 @@
 name=Brainwash
 url=http://magiccards.info/query?q=%21Brainwash
 image=http://mtgimage.com/card/brainwash.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

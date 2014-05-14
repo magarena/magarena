@@ -1,6 +1,7 @@
 name=Fortify
 url=http://magiccards.info/query?q=%21Fortify
 image=http://mtgimage.com/card/fortify.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{W}

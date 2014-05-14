@@ -1,6 +1,7 @@
 name=Monkey Cage
 url=http://magiccards.info/query?q=%21Monkey+Cage
 image=http://mtgimage.com/card/monkey%20cage.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

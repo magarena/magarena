@@ -1,6 +1,7 @@
 name=Betrayal of Flesh
 url=http://magiccards.info/query?q=%21Betrayal+of+Flesh
 image=http://mtgimage.com/card/betrayal%20of%20flesh.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={5}{B}

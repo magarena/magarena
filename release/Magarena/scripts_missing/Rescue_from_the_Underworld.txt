@@ -1,6 +1,7 @@
 name=Rescue from the Underworld
 url=http://magiccards.info/query?q=%21Rescue+from+the+Underworld
 image=http://mtgimage.com/card/rescue%20from%20the%20underworld.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={4}{B}

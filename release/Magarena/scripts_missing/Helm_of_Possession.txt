@@ -1,6 +1,7 @@
 name=Helm of Possession
 url=http://magiccards.info/query?q=%21Helm+of+Possession
 image=http://mtgimage.com/card/helm%20of%20possession.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

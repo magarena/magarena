@@ -1,6 +1,7 @@
 name=Spiraling Embers
 url=http://magiccards.info/query?q=%21Spiraling+Embers
 image=http://mtgimage.com/card/spiraling%20embers.jpg
+value=2.500
 rarity=C
 type=Sorcery
 subtype=Arcane

@@ -1,6 +1,7 @@
 name=Dementia Bat
 url=http://magiccards.info/query?q=%21Dementia+Bat
 image=http://mtgimage.com/card/dementia%20bat.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Bat

@@ -1,6 +1,7 @@
 name=Koskun Falls
 url=http://magiccards.info/query?q=%21Koskun+Falls
 image=http://mtgimage.com/card/koskun%20falls.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

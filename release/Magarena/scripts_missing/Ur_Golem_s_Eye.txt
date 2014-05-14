@@ -1,6 +1,7 @@
 name=Ur-Golem's Eye
 url=http://magiccards.info/query?q=%21Ur-Golem%27s+Eye
 image=http://mtgimage.com/card/ur-golem%27s%20eye.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={4}

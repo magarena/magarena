@@ -1,6 +1,7 @@
 name=Cave-In
 url=http://magiccards.info/query?q=%21Cave-In
 image=http://mtgimage.com/card/cave-in.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}

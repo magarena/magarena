@@ -1,6 +1,7 @@
 name=Molder Slug
 url=http://magiccards.info/query?q=%21Molder+Slug
 image=http://mtgimage.com/card/molder%20slug.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Slug,Beast

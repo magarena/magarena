@@ -1,6 +1,7 @@
 name=Duskrider Peregrine
 url=http://magiccards.info/query?q=%21Duskrider+Peregrine
 image=http://mtgimage.com/card/duskrider%20peregrine.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Bird

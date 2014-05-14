@@ -1,6 +1,7 @@
 name=Verdant Haven
 url=http://magiccards.info/query?q=%21Verdant+Haven
 image=http://mtgimage.com/card/verdant%20haven.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

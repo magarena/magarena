@@ -1,6 +1,7 @@
 name=Test of Faith
 url=http://magiccards.info/query?q=%21Test+of+Faith
 image=http://mtgimage.com/card/test%20of%20faith.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}

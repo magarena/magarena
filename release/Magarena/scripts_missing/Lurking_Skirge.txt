@@ -1,6 +1,7 @@
 name=Lurking Skirge
 url=http://magiccards.info/query?q=%21Lurking+Skirge
 image=http://mtgimage.com/card/lurking%20skirge.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{B}

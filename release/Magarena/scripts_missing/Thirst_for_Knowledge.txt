@@ -1,6 +1,7 @@
 name=Thirst for Knowledge
 url=http://magiccards.info/query?q=%21Thirst+for+Knowledge
 image=http://mtgimage.com/card/thirst%20for%20knowledge.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{U}

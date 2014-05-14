@@ -1,6 +1,7 @@
 name=Monsoon
 url=http://magiccards.info/query?q=%21Monsoon
 image=http://mtgimage.com/card/monsoon.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}{G}

@@ -1,6 +1,7 @@
 name=Dominating Licid
 url=http://magiccards.info/query?q=%21Dominating+Licid
 image=http://mtgimage.com/card/dominating%20licid.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Licid

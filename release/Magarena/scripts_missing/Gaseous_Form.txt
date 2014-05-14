@@ -1,6 +1,7 @@
 name=Gaseous Form
 url=http://magiccards.info/query?q=%21Gaseous+Form
 image=http://mtgimage.com/card/gaseous%20form.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

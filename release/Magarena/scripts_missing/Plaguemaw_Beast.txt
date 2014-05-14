@@ -1,6 +1,7 @@
 name=Plaguemaw Beast
 url=http://magiccards.info/query?q=%21Plaguemaw+Beast
 image=http://mtgimage.com/card/plaguemaw%20beast.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

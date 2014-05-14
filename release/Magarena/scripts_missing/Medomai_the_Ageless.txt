@@ -1,6 +1,7 @@
 name=Medomai the Ageless
 url=http://magiccards.info/query?q=%21Medomai+the+Ageless
 image=http://mtgimage.com/card/medomai%20the%20ageless.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Sphinx

@@ -1,6 +1,7 @@
 name=Dash Hopes
 url=http://magiccards.info/query?q=%21Dash+Hopes
 image=http://mtgimage.com/card/dash%20hopes.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}{B}

@@ -1,6 +1,7 @@
 name=Abuna's Chant
 url=http://magiccards.info/query?q=%21Abuna%27s+Chant
 image=http://mtgimage.com/card/abuna%27s%20chant.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={3}{W}

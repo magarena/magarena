@@ -1,6 +1,7 @@
 name=Lust for War
 url=http://magiccards.info/query?q=%21Lust+for+War
 image=http://mtgimage.com/card/lust%20for%20war.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

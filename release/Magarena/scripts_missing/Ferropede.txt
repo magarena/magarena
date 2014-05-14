@@ -1,6 +1,7 @@
 name=Ferropede
 url=http://magiccards.info/query?q=%21Ferropede
 image=http://mtgimage.com/card/ferropede.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Insect

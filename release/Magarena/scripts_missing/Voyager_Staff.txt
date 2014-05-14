@@ -1,6 +1,7 @@
 name=Voyager Staff
 url=http://magiccards.info/query?q=%21Voyager+Staff
 image=http://mtgimage.com/card/voyager%20staff.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

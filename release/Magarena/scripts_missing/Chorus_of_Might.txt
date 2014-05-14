@@ -1,6 +1,7 @@
 name=Chorus of Might
 url=http://magiccards.info/query?q=%21Chorus+of+Might
 image=http://mtgimage.com/card/chorus%20of%20might.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={3}{G}

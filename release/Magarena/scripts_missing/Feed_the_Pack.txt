@@ -1,6 +1,7 @@
 name=Feed the Pack
 url=http://magiccards.info/query?q=%21Feed+the+Pack
 image=http://mtgimage.com/card/feed%20the%20pack.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={5}{G}

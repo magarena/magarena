@@ -1,6 +1,7 @@
 name=Simic Basilisk
 url=http://magiccards.info/query?q=%21Simic+Basilisk
 image=http://mtgimage.com/card/simic%20basilisk.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Basilisk,Mutant

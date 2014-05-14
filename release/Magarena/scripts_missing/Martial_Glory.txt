@@ -1,6 +1,7 @@
 name=Martial Glory
 url=http://magiccards.info/query?q=%21Martial+Glory
 image=http://mtgimage.com/card/martial%20glory.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}{W}

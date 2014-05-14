@@ -1,6 +1,7 @@
 name=Zhur-Taa Druid
 url=http://magiccards.info/query?q=%21Zhur-Taa+Druid
 image=http://mtgimage.com/card/zhur-taa%20druid.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Druid

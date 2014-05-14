@@ -1,6 +1,7 @@
 name=Warrior Angel
 url=http://magiccards.info/query?q=%21Warrior+Angel
 image=http://mtgimage.com/card/warrior%20angel.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel,Warrior

@@ -1,6 +1,7 @@
 name=Anger
 url=http://magiccards.info/query?q=%21Anger
 image=http://mtgimage.com/card/anger.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Incarnation

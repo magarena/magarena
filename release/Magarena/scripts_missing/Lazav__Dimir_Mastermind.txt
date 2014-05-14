@@ -1,6 +1,7 @@
 name=Lazav, Dimir Mastermind
 url=http://magiccards.info/query?q=%21Lazav%2C+Dimir+Mastermind
 image=http://mtgimage.com/card/lazav%2C%20dimir%20mastermind.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Shapeshifter

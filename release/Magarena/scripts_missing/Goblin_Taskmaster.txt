@@ -1,6 +1,7 @@
 name=Goblin Taskmaster
 url=http://magiccards.info/query?q=%21Goblin+Taskmaster
 image=http://mtgimage.com/card/goblin%20taskmaster.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin

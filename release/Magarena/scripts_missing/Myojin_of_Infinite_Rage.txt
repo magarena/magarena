@@ -1,6 +1,7 @@
 name=Myojin of Infinite Rage
 url=http://magiccards.info/query?q=%21Myojin+of+Infinite+Rage
 image=http://mtgimage.com/card/myojin%20of%20infinite%20rage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

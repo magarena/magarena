@@ -1,6 +1,7 @@
 name=Ion Storm
 url=http://magiccards.info/query?q=%21Ion+Storm
 image=http://mtgimage.com/card/ion%20storm.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

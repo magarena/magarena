@@ -1,6 +1,7 @@
 name=Spirit Cairn
 url=http://magiccards.info/query?q=%21Spirit+Cairn
 image=http://mtgimage.com/card/spirit%20cairn.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{W}

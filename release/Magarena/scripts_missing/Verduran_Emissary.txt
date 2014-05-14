@@ -1,6 +1,7 @@
 name=Verduran Emissary
 url=http://magiccards.info/query?q=%21Verduran+Emissary
 image=http://mtgimage.com/card/verduran%20emissary.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

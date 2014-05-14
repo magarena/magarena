@@ -1,6 +1,7 @@
 name=Scryb Ranger
 url=http://magiccards.info/query?q=%21Scryb+Ranger
 image=http://mtgimage.com/card/scryb%20ranger.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Faerie

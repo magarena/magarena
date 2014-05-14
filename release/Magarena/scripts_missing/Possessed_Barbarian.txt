@@ -1,6 +1,7 @@
 name=Possessed Barbarian
 url=http://magiccards.info/query?q=%21Possessed+Barbarian
 image=http://mtgimage.com/card/possessed%20barbarian.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Barbarian,Horror

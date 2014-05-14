@@ -1,6 +1,7 @@
 name=Lash Out
 url=http://magiccards.info/query?q=%21Lash+Out
 image=http://mtgimage.com/card/lash%20out.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

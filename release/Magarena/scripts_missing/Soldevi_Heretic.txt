@@ -1,6 +1,7 @@
 name=Soldevi Heretic
 url=http://magiccards.info/query?q=%21Soldevi+Heretic
 image=http://mtgimage.com/card/soldevi%20heretic1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

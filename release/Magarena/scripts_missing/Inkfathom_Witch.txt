@@ -1,6 +1,7 @@
 name=Inkfathom Witch
 url=http://magiccards.info/query?q=%21Inkfathom+Witch
 image=http://mtgimage.com/card/inkfathom%20witch.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

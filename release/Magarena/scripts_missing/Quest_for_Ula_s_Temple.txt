@@ -1,6 +1,7 @@
 name=Quest for Ula's Temple
 url=http://magiccards.info/query?q=%21Quest+for+Ula%27s+Temple
 image=http://mtgimage.com/card/quest%20for%20ula%27s%20temple.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={U}

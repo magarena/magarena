@@ -1,6 +1,7 @@
 name=Hour of Reckoning
 url=http://magiccards.info/query?q=%21Hour+of+Reckoning
 image=http://mtgimage.com/card/hour%20of%20reckoning.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}{W}{W}

@@ -1,6 +1,7 @@
 name=Stronghold Discipline
 url=http://magiccards.info/query?q=%21Stronghold+Discipline
 image=http://mtgimage.com/card/stronghold%20discipline.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={2}{B}{B}

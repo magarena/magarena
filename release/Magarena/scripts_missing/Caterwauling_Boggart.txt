@@ -1,6 +1,7 @@
 name=Caterwauling Boggart
 url=http://magiccards.info/query?q=%21Caterwauling+Boggart
 image=http://mtgimage.com/card/caterwauling%20boggart.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

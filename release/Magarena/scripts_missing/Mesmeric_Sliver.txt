@@ -1,6 +1,7 @@
 name=Mesmeric Sliver
 url=http://magiccards.info/query?q=%21Mesmeric+Sliver
 image=http://mtgimage.com/card/mesmeric%20sliver.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Sliver

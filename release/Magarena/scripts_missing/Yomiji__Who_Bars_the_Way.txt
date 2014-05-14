@@ -1,6 +1,7 @@
 name=Yomiji, Who Bars the Way
 url=http://magiccards.info/query?q=%21Yomiji%2C+Who+Bars+the+Way
 image=http://mtgimage.com/card/yomiji%2C%20who%20bars%20the%20way.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Ruthless Invasion
 url=http://magiccards.info/query?q=%21Ruthless+Invasion
 image=http://mtgimage.com/card/ruthless%20invasion.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{P/R}

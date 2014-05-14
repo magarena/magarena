@@ -1,6 +1,7 @@
 name=Molten Hydra
 url=http://magiccards.info/query?q=%21Molten+Hydra
 image=http://mtgimage.com/card/molten%20hydra.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Hydra

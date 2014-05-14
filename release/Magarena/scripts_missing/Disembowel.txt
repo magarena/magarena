@@ -1,6 +1,7 @@
 name=Disembowel
 url=http://magiccards.info/query?q=%21Disembowel
 image=http://mtgimage.com/card/disembowel.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={X}{B}

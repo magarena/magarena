@@ -1,6 +1,7 @@
 name=Commune with Nature
 url=http://magiccards.info/query?q=%21Commune+with+Nature
 image=http://mtgimage.com/card/commune%20with%20nature.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={G}

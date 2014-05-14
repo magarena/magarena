@@ -1,6 +1,7 @@
 name=Fight or Flight
 url=http://magiccards.info/query?q=%21Fight+or+Flight
 image=http://mtgimage.com/card/fight%20or%20flight.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{W}

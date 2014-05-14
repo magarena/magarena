@@ -1,6 +1,7 @@
 name=Contamination
 url=http://magiccards.info/query?q=%21Contamination
 image=http://mtgimage.com/card/contamination.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}

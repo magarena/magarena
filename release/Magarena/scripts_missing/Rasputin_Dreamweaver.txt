@@ -1,6 +1,7 @@
 name=Rasputin Dreamweaver
 url=http://magiccards.info/query?q=%21Rasputin+Dreamweaver
 image=http://mtgimage.com/card/rasputin%20dreamweaver.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

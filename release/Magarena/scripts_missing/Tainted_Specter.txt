@@ -1,6 +1,7 @@
 name=Tainted Specter
 url=http://magiccards.info/query?q=%21Tainted+Specter
 image=http://mtgimage.com/card/tainted%20specter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Specter

@@ -1,6 +1,7 @@
 name=Vulshok War Boar
 url=http://magiccards.info/query?q=%21Vulshok+War+Boar
 image=http://mtgimage.com/card/vulshok%20war%20boar.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Boar,Beast

@@ -1,6 +1,7 @@
 name=Faerie Mechanist
 url=http://magiccards.info/query?q=%21Faerie+Mechanist
 image=http://mtgimage.com/card/faerie%20mechanist.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Faerie,Artificer

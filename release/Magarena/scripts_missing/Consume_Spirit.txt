@@ -1,6 +1,7 @@
 name=Consume Spirit
 url=http://magiccards.info/query?q=%21Consume+Spirit
 image=http://mtgimage.com/card/consume%20spirit.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={X}{1}{B}

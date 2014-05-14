@@ -1,6 +1,7 @@
 name=Tracker
 url=http://magiccards.info/query?q=%21Tracker
 image=http://mtgimage.com/card/tracker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human

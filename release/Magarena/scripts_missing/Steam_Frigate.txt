@@ -1,6 +1,7 @@
 name=Steam Frigate
 url=http://magiccards.info/query?q=%21Steam+Frigate
 image=http://mtgimage.com/card/steam%20frigate.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Pirate

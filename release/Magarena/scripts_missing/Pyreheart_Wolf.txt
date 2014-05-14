@@ -1,6 +1,7 @@
 name=Pyreheart Wolf
 url=http://magiccards.info/query?q=%21Pyreheart+Wolf
 image=http://mtgimage.com/card/pyreheart%20wolf.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wolf

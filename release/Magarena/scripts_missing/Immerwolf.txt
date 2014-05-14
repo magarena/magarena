@@ -1,6 +1,7 @@
 name=Immerwolf
 url=http://magiccards.info/query?q=%21Immerwolf
 image=http://mtgimage.com/card/immerwolf.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wolf

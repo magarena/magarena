@@ -1,6 +1,7 @@
 name=Setessan Tactics
 url=http://magiccards.info/query?q=%21Setessan+Tactics
 image=http://mtgimage.com/card/setessan%20tactics.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{G}

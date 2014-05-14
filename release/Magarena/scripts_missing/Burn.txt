@@ -1,6 +1,7 @@
 name=Burn
 url=http://magiccards.info/query?q=%21Burn
 image=http://mtgimage.com/card/turnburn.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}

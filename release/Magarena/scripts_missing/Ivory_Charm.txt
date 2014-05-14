@@ -1,6 +1,7 @@
 name=Ivory Charm
 url=http://magiccards.info/query?q=%21Ivory+Charm
 image=http://mtgimage.com/card/ivory%20charm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

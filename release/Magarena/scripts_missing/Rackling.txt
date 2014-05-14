@@ -1,6 +1,7 @@
 name=Rackling
 url=http://magiccards.info/query?q=%21Rackling
 image=http://mtgimage.com/card/rackling.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Construct

@@ -1,6 +1,7 @@
 name=Spike Cannibal
 url=http://magiccards.info/query?q=%21Spike+Cannibal
 image=http://mtgimage.com/card/spike%20cannibal.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spike

@@ -1,6 +1,7 @@
 name=Mountain Stronghold
 url=http://magiccards.info/query?q=%21Mountain+Stronghold
 image=http://mtgimage.com/card/mountain%20stronghold.jpg
+value=2.500
 rarity=U
 type=Land
 ability=Red legendary creatures you control have "bands with other legendary creatures."

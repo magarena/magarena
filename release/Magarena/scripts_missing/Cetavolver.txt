@@ -1,6 +1,7 @@
 name=Cetavolver
 url=http://magiccards.info/query?q=%21Cetavolver
 image=http://mtgimage.com/card/cetavolver.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Volver

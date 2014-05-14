@@ -1,6 +1,7 @@
 name=Library of Leng
 url=http://magiccards.info/query?q=%21Library+of+Leng
 image=http://mtgimage.com/card/library%20of%20leng.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

@@ -1,6 +1,7 @@
 name=Skyscribing
 url=http://magiccards.info/query?q=%21Skyscribing
 image=http://mtgimage.com/card/skyscribing.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={X}{U}{U}

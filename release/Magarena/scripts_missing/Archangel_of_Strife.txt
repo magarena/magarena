@@ -1,6 +1,7 @@
 name=Archangel of Strife
 url=http://magiccards.info/query?q=%21Archangel+of+Strife
 image=http://mtgimage.com/card/archangel%20of%20strife.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

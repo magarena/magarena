@@ -1,6 +1,7 @@
 name=Triumph of the Hordes
 url=http://magiccards.info/query?q=%21Triumph+of+the+Hordes
 image=http://mtgimage.com/card/triumph%20of%20the%20hordes.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{G}{G}

@@ -1,6 +1,7 @@
 name=Tormented Pariah
 url=http://magiccards.info/query?q=%21Tormented+Pariah
 image=http://mtgimage.com/card/tormented%20pariah.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Warrior,Werewolf

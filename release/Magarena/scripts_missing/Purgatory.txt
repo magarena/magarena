@@ -1,6 +1,7 @@
 name=Purgatory
 url=http://magiccards.info/query?q=%21Purgatory
 image=http://mtgimage.com/card/purgatory.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{B}

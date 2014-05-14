@@ -1,6 +1,7 @@
 name=Treasure Hunt
 url=http://magiccards.info/query?q=%21Treasure+Hunt
 image=http://mtgimage.com/card/treasure%20hunt.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={1}{U}

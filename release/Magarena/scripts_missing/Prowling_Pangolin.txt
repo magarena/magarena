@@ -1,6 +1,7 @@
 name=Prowling Pangolin
 url=http://magiccards.info/query?q=%21Prowling+Pangolin
 image=http://mtgimage.com/card/prowling%20pangolin.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Anteater,Beast

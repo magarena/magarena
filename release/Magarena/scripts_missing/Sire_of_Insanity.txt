@@ -1,6 +1,7 @@
 name=Sire of Insanity
 url=http://magiccards.info/query?q=%21Sire+of+Insanity
 image=http://mtgimage.com/card/sire%20of%20insanity.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Demon

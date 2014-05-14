@@ -1,6 +1,7 @@
 name=Cruel Ultimatum
 url=http://magiccards.info/query?q=%21Cruel+Ultimatum
 image=http://mtgimage.com/card/cruel%20ultimatum.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={U}{U}{B}{B}{B}{R}{R}

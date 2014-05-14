@@ -1,6 +1,7 @@
 name=The Unspeakable
 url=http://magiccards.info/query?q=%21The+Unspeakable
 image=http://mtgimage.com/card/the%20unspeakable.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

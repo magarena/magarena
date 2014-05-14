@@ -1,6 +1,7 @@
 name=Excruciator
 url=http://magiccards.info/query?q=%21Excruciator
 image=http://mtgimage.com/card/excruciator.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar

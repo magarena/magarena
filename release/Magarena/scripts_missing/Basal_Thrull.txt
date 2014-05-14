@@ -1,6 +1,7 @@
 name=Basal Thrull
 url=http://magiccards.info/query?q=%21Basal+Thrull
 image=http://mtgimage.com/card/basal%20thrull1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Thrull

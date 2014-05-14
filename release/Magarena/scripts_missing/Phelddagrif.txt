@@ -1,6 +1,7 @@
 name=Phelddagrif
 url=http://magiccards.info/query?q=%21Phelddagrif
 image=http://mtgimage.com/card/phelddagrif.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Phelddagrif

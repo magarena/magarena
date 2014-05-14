@@ -1,6 +1,7 @@
 name=Haze Frog
 url=http://magiccards.info/query?q=%21Haze+Frog
 image=http://mtgimage.com/card/haze%20frog.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Frog

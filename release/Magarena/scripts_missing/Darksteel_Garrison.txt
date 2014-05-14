@@ -1,6 +1,7 @@
 name=Darksteel Garrison
 url=http://magiccards.info/query?q=%21Darksteel+Garrison
 image=http://mtgimage.com/card/darksteel%20garrison.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Fortification

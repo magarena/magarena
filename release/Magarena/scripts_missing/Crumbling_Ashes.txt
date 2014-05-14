@@ -1,6 +1,7 @@
 name=Crumbling Ashes
 url=http://magiccards.info/query?q=%21Crumbling+Ashes
 image=http://mtgimage.com/card/crumbling%20ashes.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{B}

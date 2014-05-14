@@ -1,6 +1,7 @@
 name=Splintering Wind
 url=http://magiccards.info/query?q=%21Splintering+Wind
 image=http://mtgimage.com/card/splintering%20wind.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

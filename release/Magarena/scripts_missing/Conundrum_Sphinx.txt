@@ -1,6 +1,7 @@
 name=Conundrum Sphinx
 url=http://magiccards.info/query?q=%21Conundrum+Sphinx
 image=http://mtgimage.com/card/conundrum%20sphinx.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Sphinx

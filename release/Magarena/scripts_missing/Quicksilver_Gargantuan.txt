@@ -1,6 +1,7 @@
 name=Quicksilver Gargantuan
 url=http://magiccards.info/query?q=%21Quicksilver+Gargantuan
 image=http://mtgimage.com/card/quicksilver%20gargantuan.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Shapeshifter

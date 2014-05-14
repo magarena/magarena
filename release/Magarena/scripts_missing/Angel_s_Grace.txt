@@ -1,6 +1,7 @@
 name=Angel's Grace
 url=http://magiccards.info/query?q=%21Angel%27s+Grace
 image=http://mtgimage.com/card/angel%27s%20grace.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={W}

@@ -1,6 +1,7 @@
 name=Illumination
 url=http://magiccards.info/query?q=%21Illumination
 image=http://mtgimage.com/card/illumination.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={W}{W}

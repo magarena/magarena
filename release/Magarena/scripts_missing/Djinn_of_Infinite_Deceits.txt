@@ -1,6 +1,7 @@
 name=Djinn of Infinite Deceits
 url=http://magiccards.info/query?q=%21Djinn+of+Infinite+Deceits
 image=http://mtgimage.com/card/djinn%20of%20infinite%20deceits.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Djinn

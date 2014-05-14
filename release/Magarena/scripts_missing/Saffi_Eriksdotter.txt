@@ -1,6 +1,7 @@
 name=Saffi Eriksdotter
 url=http://magiccards.info/query?q=%21Saffi+Eriksdotter
 image=http://mtgimage.com/card/saffi%20eriksdotter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Scout

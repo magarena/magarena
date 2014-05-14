@@ -1,6 +1,7 @@
 name=Triclopean Sight
 url=http://magiccards.info/query?q=%21Triclopean+Sight
 image=http://mtgimage.com/card/triclopean%20sight.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

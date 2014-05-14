@@ -1,6 +1,7 @@
 name=Hostile Realm
 url=http://magiccards.info/query?q=%21Hostile+Realm
 image=http://mtgimage.com/card/hostile%20realm.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Hallow
 url=http://magiccards.info/query?q=%21Hallow
 image=http://mtgimage.com/card/hallow.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

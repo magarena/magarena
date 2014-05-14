@@ -1,6 +1,7 @@
 name=Mox Diamond
 url=http://magiccards.info/query?q=%21Mox+Diamond
 image=http://mtgimage.com/card/mox%20diamond.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={0}

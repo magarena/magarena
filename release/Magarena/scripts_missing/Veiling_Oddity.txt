@@ -1,6 +1,7 @@
 name=Veiling Oddity
 url=http://magiccards.info/query?q=%21Veiling+Oddity
 image=http://mtgimage.com/card/veiling%20oddity.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Illusion

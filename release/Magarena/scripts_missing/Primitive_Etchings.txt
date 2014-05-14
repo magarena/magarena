@@ -1,6 +1,7 @@
 name=Primitive Etchings
 url=http://magiccards.info/query?q=%21Primitive+Etchings
 image=http://mtgimage.com/card/primitive%20etchings.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

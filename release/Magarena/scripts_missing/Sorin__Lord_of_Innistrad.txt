@@ -1,6 +1,7 @@
 name=Sorin, Lord of Innistrad
 url=http://magiccards.info/query?q=%21Sorin%2C+Lord+of+Innistrad
 image=http://mtgimage.com/card/sorin%2C%20lord%20of%20innistrad.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Sorin

@@ -1,6 +1,7 @@
 name=Manor Gargoyle
 url=http://magiccards.info/query?q=%21Manor+Gargoyle
 image=http://mtgimage.com/card/manor%20gargoyle.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Gargoyle

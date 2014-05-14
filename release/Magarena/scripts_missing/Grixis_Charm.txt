@@ -1,6 +1,7 @@
 name=Grixis Charm
 url=http://magiccards.info/query?q=%21Grixis+Charm
 image=http://mtgimage.com/card/grixis%20charm.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}{B}{R}

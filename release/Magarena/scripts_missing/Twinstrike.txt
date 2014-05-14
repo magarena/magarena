@@ -1,6 +1,7 @@
 name=Twinstrike
 url=http://magiccards.info/query?q=%21Twinstrike
 image=http://mtgimage.com/card/twinstrike.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{B}{R}

@@ -1,6 +1,7 @@
 name=Carrion Beetles
 url=http://magiccards.info/query?q=%21Carrion+Beetles
 image=http://mtgimage.com/card/carrion%20beetles.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Insect

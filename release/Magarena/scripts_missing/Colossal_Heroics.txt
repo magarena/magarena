@@ -1,6 +1,7 @@
 name=Colossal Heroics
 url=http://magiccards.info/query?q=%21Colossal+Heroics
 image=http://mtgimage.com/card/colossal%20heroics.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{G}

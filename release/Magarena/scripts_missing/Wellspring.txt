@@ -1,6 +1,7 @@
 name=Wellspring
 url=http://magiccards.info/query?q=%21Wellspring
 image=http://mtgimage.com/card/wellspring.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

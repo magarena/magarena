@@ -1,6 +1,7 @@
 name=Makeshift Mannequin
 url=http://magiccards.info/query?q=%21Makeshift+Mannequin
 image=http://mtgimage.com/card/makeshift%20mannequin.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{B}

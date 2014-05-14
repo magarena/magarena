@@ -1,6 +1,7 @@
 name=Summoner's Bane
 url=http://magiccards.info/query?q=%21Summoner%27s+Bane
 image=http://mtgimage.com/card/summoner%27s%20bane.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{U}{U}

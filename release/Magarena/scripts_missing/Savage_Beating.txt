@@ -1,6 +1,7 @@
 name=Savage Beating
 url=http://magiccards.info/query?q=%21Savage+Beating
 image=http://mtgimage.com/card/savage%20beating.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{R}{R}

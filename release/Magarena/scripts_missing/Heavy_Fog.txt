@@ -1,6 +1,7 @@
 name=Heavy Fog
 url=http://magiccards.info/query?q=%21Heavy+Fog
 image=http://mtgimage.com/card/heavy%20fog.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{G}

@@ -1,6 +1,7 @@
 name=Winter Sky
 url=http://magiccards.info/query?q=%21Winter+Sky
 image=http://mtgimage.com/card/winter%20sky.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={R}

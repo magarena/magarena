@@ -1,6 +1,7 @@
 name=Putrid Cyclops
 url=http://magiccards.info/query?q=%21Putrid+Cyclops
 image=http://mtgimage.com/card/putrid%20cyclops.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Cyclops

@@ -1,6 +1,7 @@
 name=Cloven Casting
 url=http://magiccards.info/query?q=%21Cloven+Casting
 image=http://mtgimage.com/card/cloven%20casting.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={5}{U}{R}

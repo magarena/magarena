@@ -1,6 +1,7 @@
 name=Prismatic Lace
 url=http://magiccards.info/query?q=%21Prismatic+Lace
 image=http://mtgimage.com/card/prismatic%20lace.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}

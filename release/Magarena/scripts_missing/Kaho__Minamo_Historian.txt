@@ -1,6 +1,7 @@
 name=Kaho, Minamo Historian
 url=http://magiccards.info/query?q=%21Kaho%2C+Minamo+Historian
 image=http://mtgimage.com/card/kaho%2C%20minamo%20historian.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

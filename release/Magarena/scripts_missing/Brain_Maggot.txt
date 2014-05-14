@@ -1,6 +1,7 @@
 name=Brain Maggot
 url=http://magiccards.info/query?q=%21Brain+Maggot
 image=http://mtgimage.com/card/brain%20maggot.jpg
+value=2.500
 rarity=U
 type=Enchantment,Creature
 subtype=Insect

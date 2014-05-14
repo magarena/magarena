@@ -1,6 +1,7 @@
 name=Ghitu Firebreathing
 url=http://magiccards.info/query?q=%21Ghitu+Firebreathing
 image=http://mtgimage.com/card/ghitu%20firebreathing.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Cinder Crawler
 url=http://magiccards.info/query?q=%21Cinder+Crawler
 image=http://mtgimage.com/card/cinder%20crawler.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Salamander

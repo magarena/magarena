@@ -1,6 +1,7 @@
 name=Sakura-Tribe Springcaller
 url=http://magiccards.info/query?q=%21Sakura-Tribe+Springcaller
 image=http://mtgimage.com/card/sakura-tribe%20springcaller.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Snake,Shaman

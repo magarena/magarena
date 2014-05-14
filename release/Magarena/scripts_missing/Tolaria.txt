@@ -1,6 +1,7 @@
 name=Tolaria
 url=http://magiccards.info/query?q=%21Tolaria
 image=http://mtgimage.com/card/tolaria.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {U} to your mana pool.;\

@@ -1,6 +1,7 @@
 name=Slow Motion
 url=http://magiccards.info/query?q=%21Slow+Motion
 image=http://mtgimage.com/card/slow%20motion.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

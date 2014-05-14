@@ -1,6 +1,7 @@
 name=Chaotic Backlash
 url=http://magiccards.info/query?q=%21Chaotic+Backlash
 image=http://mtgimage.com/card/chaotic%20backlash.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={4}{R}

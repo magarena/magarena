@@ -1,6 +1,7 @@
 name=Imposing Visage
 url=http://magiccards.info/query?q=%21Imposing+Visage
 image=http://mtgimage.com/card/imposing%20visage.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

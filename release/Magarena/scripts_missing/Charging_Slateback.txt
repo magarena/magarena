@@ -1,6 +1,7 @@
 name=Charging Slateback
 url=http://magiccards.info/query?q=%21Charging+Slateback
 image=http://mtgimage.com/card/charging%20slateback.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

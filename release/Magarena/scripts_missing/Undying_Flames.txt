@@ -1,6 +1,7 @@
 name=Undying Flames
 url=http://magiccards.info/query?q=%21Undying+Flames
 image=http://mtgimage.com/card/undying%20flames.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{R}{R}

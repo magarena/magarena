@@ -1,6 +1,7 @@
 name=Catalyst Stone
 url=http://magiccards.info/query?q=%21Catalyst+Stone
 image=http://mtgimage.com/card/catalyst%20stone.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

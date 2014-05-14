@@ -1,6 +1,7 @@
 name=Prismatic Ward
 url=http://magiccards.info/query?q=%21Prismatic+Ward
 image=http://mtgimage.com/card/prismatic%20ward.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

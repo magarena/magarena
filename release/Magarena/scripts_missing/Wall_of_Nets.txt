@@ -1,6 +1,7 @@
 name=Wall of Nets
 url=http://magiccards.info/query?q=%21Wall+of+Nets
 image=http://mtgimage.com/card/wall%20of%20nets.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Wall

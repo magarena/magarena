@@ -1,6 +1,7 @@
 name=Shimmer Myr
 url=http://magiccards.info/query?q=%21Shimmer+Myr
 image=http://mtgimage.com/card/shimmer%20myr.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Myr

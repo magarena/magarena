@@ -1,6 +1,7 @@
 name=Kinscaer Harpoonist
 url=http://magiccards.info/query?q=%21Kinscaer+Harpoonist
 image=http://mtgimage.com/card/kinscaer%20harpoonist.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

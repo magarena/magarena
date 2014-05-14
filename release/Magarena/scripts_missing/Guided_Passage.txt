@@ -1,6 +1,7 @@
 name=Guided Passage
 url=http://magiccards.info/query?q=%21Guided+Passage
 image=http://mtgimage.com/card/guided%20passage.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={U}{R}{G}

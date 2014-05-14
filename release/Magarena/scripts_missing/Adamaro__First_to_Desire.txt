@@ -1,6 +1,7 @@
 name=Adamaro, First to Desire
 url=http://magiccards.info/query?q=%21Adamaro%2C+First+to+Desire
 image=http://mtgimage.com/card/adamaro%2C%20first%20to%20desire.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

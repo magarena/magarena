@@ -1,6 +1,7 @@
 name=Henge of Ramos
 url=http://magiccards.info/query?q=%21Henge+of+Ramos
 image=http://mtgimage.com/card/henge%20of%20ramos.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

@@ -1,6 +1,7 @@
 name=Golem-Skin Gauntlets
 url=http://magiccards.info/query?q=%21Golem-Skin+Gauntlets
 image=http://mtgimage.com/card/golem-skin%20gauntlets.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

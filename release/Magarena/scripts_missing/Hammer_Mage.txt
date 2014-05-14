@@ -1,6 +1,7 @@
 name=Hammer Mage
 url=http://magiccards.info/query?q=%21Hammer+Mage
 image=http://mtgimage.com/card/hammer%20mage.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Spellshaper

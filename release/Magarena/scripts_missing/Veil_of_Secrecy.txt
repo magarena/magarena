@@ -1,6 +1,7 @@
 name=Veil of Secrecy
 url=http://magiccards.info/query?q=%21Veil+of+Secrecy
 image=http://mtgimage.com/card/veil%20of%20secrecy.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

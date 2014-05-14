@@ -1,6 +1,7 @@
 name=Chalice of Death
 url=http://magiccards.info/query?q=%21Chalice+of+Death
 image=http://mtgimage.com/card/chalice%20of%20death.jpg
+value=2.500
 rarity=U
 type=Artifact
 ability={T}: Target player loses 5 life.

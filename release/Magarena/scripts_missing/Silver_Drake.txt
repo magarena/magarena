@@ -1,6 +1,7 @@
 name=Silver Drake
 url=http://magiccards.info/query?q=%21Silver+Drake
 image=http://mtgimage.com/card/silver%20drake.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Drake

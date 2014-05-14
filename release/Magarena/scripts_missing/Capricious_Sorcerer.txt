@@ -1,6 +1,7 @@
 name=Capricious Sorcerer
 url=http://magiccards.info/query?q=%21Capricious+Sorcerer
 image=http://mtgimage.com/card/capricious%20sorcerer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

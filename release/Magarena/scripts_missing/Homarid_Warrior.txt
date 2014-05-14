@@ -1,6 +1,7 @@
 name=Homarid Warrior
 url=http://magiccards.info/query?q=%21Homarid+Warrior
 image=http://mtgimage.com/card/homarid%20warrior1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Homarid,Warrior

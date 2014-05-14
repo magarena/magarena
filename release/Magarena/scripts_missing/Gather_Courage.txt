@@ -1,6 +1,7 @@
 name=Gather Courage
 url=http://magiccards.info/query?q=%21Gather+Courage
 image=http://mtgimage.com/card/gather%20courage.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}

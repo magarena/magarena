@@ -1,6 +1,7 @@
 name=Grim Harvest
 url=http://magiccards.info/query?q=%21Grim+Harvest
 image=http://mtgimage.com/card/grim%20harvest.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{B}

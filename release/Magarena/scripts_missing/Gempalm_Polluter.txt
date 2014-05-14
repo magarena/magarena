@@ -1,6 +1,7 @@
 name=Gempalm Polluter
 url=http://magiccards.info/query?q=%21Gempalm+Polluter
 image=http://mtgimage.com/card/gempalm%20polluter.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

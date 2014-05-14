@@ -1,6 +1,7 @@
 name=Nullmage Shepherd
 url=http://magiccards.info/query?q=%21Nullmage+Shepherd
 image=http://mtgimage.com/card/nullmage%20shepherd.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf,Shaman

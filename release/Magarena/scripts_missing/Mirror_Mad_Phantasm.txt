@@ -1,6 +1,7 @@
 name=Mirror-Mad Phantasm
 url=http://magiccards.info/query?q=%21Mirror-Mad+Phantasm
 image=http://mtgimage.com/card/mirror-mad%20phantasm.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Spirit

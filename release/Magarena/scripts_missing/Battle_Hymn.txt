@@ -1,6 +1,7 @@
 name=Battle Hymn
 url=http://magiccards.info/query?q=%21Battle+Hymn
 image=http://mtgimage.com/card/battle%20hymn.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

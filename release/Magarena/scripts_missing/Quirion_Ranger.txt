@@ -1,6 +1,7 @@
 name=Quirion Ranger
 url=http://magiccards.info/query?q=%21Quirion+Ranger
 image=http://mtgimage.com/card/quirion%20ranger.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf

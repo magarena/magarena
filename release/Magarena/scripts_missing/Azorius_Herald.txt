@@ -1,6 +1,7 @@
 name=Azorius Herald
 url=http://magiccards.info/query?q=%21Azorius+Herald
 image=http://mtgimage.com/card/azorius%20herald.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit

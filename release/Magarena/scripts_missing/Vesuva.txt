@@ -1,6 +1,7 @@
 name=Vesuva
 url=http://magiccards.info/query?q=%21Vesuva
 image=http://mtgimage.com/card/vesuva.jpg
+value=2.500
 rarity=R
 type=Land
 ability=You may have SN enter the battlefield tapped as a copy of any land on the battlefield.

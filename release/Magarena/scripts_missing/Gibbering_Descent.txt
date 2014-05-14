@@ -1,6 +1,7 @@
 name=Gibbering Descent
 url=http://magiccards.info/query?q=%21Gibbering+Descent
 image=http://mtgimage.com/card/gibbering%20descent.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{B}{B}

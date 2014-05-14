@@ -1,6 +1,7 @@
 name=Hedron Matrix
 url=http://magiccards.info/query?q=%21Hedron+Matrix
 image=http://mtgimage.com/card/hedron%20matrix.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

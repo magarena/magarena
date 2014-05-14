@@ -1,6 +1,7 @@
 name=Alive
 url=http://magiccards.info/query?q=%21Alive
 image=http://mtgimage.com/card/alivewell.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{G}

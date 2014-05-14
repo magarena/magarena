@@ -1,6 +1,7 @@
 name=Deepwood Elder
 url=http://magiccards.info/query?q=%21Deepwood+Elder
 image=http://mtgimage.com/card/deepwood%20elder.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dryad,Spellshaper

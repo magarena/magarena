@@ -1,6 +1,7 @@
 name=Nullstone Gargoyle
 url=http://magiccards.info/query?q=%21Nullstone+Gargoyle
 image=http://mtgimage.com/card/nullstone%20gargoyle.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Gargoyle

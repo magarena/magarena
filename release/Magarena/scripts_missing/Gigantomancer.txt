@@ -1,6 +1,7 @@
 name=Gigantomancer
 url=http://magiccards.info/query?q=%21Gigantomancer
 image=http://mtgimage.com/card/gigantomancer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Shaman

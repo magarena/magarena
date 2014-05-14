@@ -1,6 +1,7 @@
 name=Chronosavant
 url=http://magiccards.info/query?q=%21Chronosavant
 image=http://mtgimage.com/card/chronosavant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant

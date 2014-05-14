@@ -1,6 +1,7 @@
 name=Sphere of Grace
 url=http://magiccards.info/query?q=%21Sphere+of+Grace
 image=http://mtgimage.com/card/sphere%20of%20grace.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={3}{W}

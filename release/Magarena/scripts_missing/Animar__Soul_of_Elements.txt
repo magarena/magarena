@@ -1,6 +1,7 @@
 name=Animar, Soul of Elements
 url=http://magiccards.info/query?q=%21Animar%2C+Soul+of+Elements
 image=http://mtgimage.com/card/animar%2C%20soul%20of%20elements.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Elemental

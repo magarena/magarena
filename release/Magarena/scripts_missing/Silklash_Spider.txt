@@ -1,6 +1,7 @@
 name=Silklash Spider
 url=http://magiccards.info/query?q=%21Silklash+Spider
 image=http://mtgimage.com/card/silklash%20spider.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spider

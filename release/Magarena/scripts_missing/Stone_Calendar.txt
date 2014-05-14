@@ -1,6 +1,7 @@
 name=Stone Calendar
 url=http://magiccards.info/query?q=%21Stone+Calendar
 image=http://mtgimage.com/card/stone%20calendar.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

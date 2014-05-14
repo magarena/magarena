@@ -1,6 +1,7 @@
 name=Vow of Duty
 url=http://magiccards.info/query?q=%21Vow+of+Duty
 image=http://mtgimage.com/card/vow%20of%20duty.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

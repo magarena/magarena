@@ -1,6 +1,7 @@
 name=Mayael's Aria
 url=http://magiccards.info/query?q=%21Mayael%27s+Aria
 image=http://mtgimage.com/card/mayael%27s%20aria.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={R}{G}{W}

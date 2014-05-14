@@ -1,6 +1,7 @@
 name=Festercreep
 url=http://magiccards.info/query?q=%21Festercreep
 image=http://mtgimage.com/card/festercreep.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental

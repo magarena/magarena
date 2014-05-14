@@ -1,6 +1,7 @@
 name=Murmurs from Beyond
 url=http://magiccards.info/query?q=%21Murmurs+from+Beyond
 image=http://mtgimage.com/card/murmurs%20from%20beyond.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

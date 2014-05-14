@@ -1,6 +1,7 @@
 name=Tethered Skirge
 url=http://magiccards.info/query?q=%21Tethered+Skirge
 image=http://mtgimage.com/card/tethered%20skirge.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Imp

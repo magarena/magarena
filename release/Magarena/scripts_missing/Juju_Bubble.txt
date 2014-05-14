@@ -1,6 +1,7 @@
 name=Juju Bubble
 url=http://magiccards.info/query?q=%21Juju+Bubble
 image=http://mtgimage.com/card/juju%20bubble.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

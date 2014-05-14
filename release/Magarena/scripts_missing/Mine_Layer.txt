@@ -1,6 +1,7 @@
 name=Mine Layer
 url=http://magiccards.info/query?q=%21Mine+Layer
 image=http://mtgimage.com/card/mine%20layer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dwarf

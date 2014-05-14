@@ -1,6 +1,7 @@
 name=Jhoira's Timebug
 url=http://magiccards.info/query?q=%21Jhoira%27s+Timebug
 image=http://mtgimage.com/card/jhoira%27s%20timebug.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Insect

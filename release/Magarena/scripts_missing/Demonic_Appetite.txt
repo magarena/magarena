@@ -1,6 +1,7 @@
 name=Demonic Appetite
 url=http://magiccards.info/query?q=%21Demonic+Appetite
 image=http://mtgimage.com/card/demonic%20appetite.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

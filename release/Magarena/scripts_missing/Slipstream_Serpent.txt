@@ -1,6 +1,7 @@
 name=Slipstream Serpent
 url=http://magiccards.info/query?q=%21Slipstream+Serpent
 image=http://mtgimage.com/card/slipstream%20serpent.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Serpent

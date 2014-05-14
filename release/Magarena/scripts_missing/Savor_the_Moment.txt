@@ -1,6 +1,7 @@
 name=Savor the Moment
 url=http://magiccards.info/query?q=%21Savor+the+Moment
 image=http://mtgimage.com/card/savor%20the%20moment.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={1}{U}{U}

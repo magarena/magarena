@@ -1,6 +1,7 @@
 name=Giltspire Avenger
 url=http://magiccards.info/query?q=%21Giltspire+Avenger
 image=http://mtgimage.com/card/giltspire%20avenger.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,7 @@
 name=Witch-Maw Nephilim
 url=http://magiccards.info/query?q=%21Witch-Maw+Nephilim
 image=http://mtgimage.com/card/witch-maw%20nephilim.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Nephilim

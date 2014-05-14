@@ -1,6 +1,7 @@
 name=Ensnaring Bridge
 url=http://magiccards.info/query?q=%21Ensnaring+Bridge
 image=http://mtgimage.com/card/ensnaring%20bridge.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

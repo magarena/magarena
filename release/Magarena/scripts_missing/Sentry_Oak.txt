@@ -1,6 +1,7 @@
 name=Sentry Oak
 url=http://magiccards.info/query?q=%21Sentry+Oak
 image=http://mtgimage.com/card/sentry%20oak.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Treefolk,Warrior

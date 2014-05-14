@@ -1,6 +1,7 @@
 name=Ivy Seer
 url=http://magiccards.info/query?q=%21Ivy+Seer
 image=http://mtgimage.com/card/ivy%20seer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf,Wizard

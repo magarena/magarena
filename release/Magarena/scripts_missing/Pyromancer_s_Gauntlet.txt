@@ -1,6 +1,7 @@
 name=Pyromancer's Gauntlet
 url=http://magiccards.info/query?q=%21Pyromancer%27s+Gauntlet
 image=http://mtgimage.com/card/pyromancer%27s%20gauntlet.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

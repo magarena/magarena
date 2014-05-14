@@ -1,6 +1,7 @@
 name=Hunter's Insight
 url=http://magiccards.info/query?q=%21Hunter%27s+Insight
 image=http://mtgimage.com/card/hunter%27s%20insight.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{G}

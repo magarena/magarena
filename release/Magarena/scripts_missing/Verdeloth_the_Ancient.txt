@@ -1,6 +1,7 @@
 name=Verdeloth the Ancient
 url=http://magiccards.info/query?q=%21Verdeloth+the+Ancient
 image=http://mtgimage.com/card/verdeloth%20the%20ancient.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Treefolk

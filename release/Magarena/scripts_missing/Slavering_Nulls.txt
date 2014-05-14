@@ -1,6 +1,7 @@
 name=Slavering Nulls
 url=http://magiccards.info/query?q=%21Slavering+Nulls
 image=http://mtgimage.com/card/slavering%20nulls.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin,Zombie

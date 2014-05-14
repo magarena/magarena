@@ -1,6 +1,7 @@
 name=Kjeldoran Phalanx
 url=http://magiccards.info/query?q=%21Kjeldoran+Phalanx
 image=http://mtgimage.com/card/kjeldoran%20phalanx.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

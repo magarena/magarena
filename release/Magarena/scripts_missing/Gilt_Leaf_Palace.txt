@@ -1,6 +1,7 @@
 name=Gilt-Leaf Palace
 url=http://magiccards.info/query?q=%21Gilt-Leaf+Palace
 image=http://mtgimage.com/card/gilt-leaf%20palace.jpg
+value=2.500
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal an Elf card from your hand. If you don't, SN enters the battlefield tapped.;\

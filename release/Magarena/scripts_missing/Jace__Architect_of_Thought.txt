@@ -1,6 +1,7 @@
 name=Jace, Architect of Thought
 url=http://magiccards.info/query?q=%21Jace%2C+Architect+of+Thought
 image=http://mtgimage.com/card/jace%2C%20architect%20of%20thought.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Jace

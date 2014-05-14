@@ -1,6 +1,7 @@
 name=Dripping Dead
 url=http://magiccards.info/query?q=%21Dripping+Dead
 image=http://mtgimage.com/card/dripping%20dead.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

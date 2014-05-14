@@ -1,6 +1,7 @@
 name=Mistform Wall
 url=http://magiccards.info/query?q=%21Mistform+Wall
 image=http://mtgimage.com/card/mistform%20wall.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Illusion,Wall

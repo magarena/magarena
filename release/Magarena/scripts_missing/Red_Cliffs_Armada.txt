@@ -1,6 +1,7 @@
 name=Red Cliffs Armada
 url=http://magiccards.info/query?q=%21Red+Cliffs+Armada
 image=http://mtgimage.com/card/red%20cliffs%20armada.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

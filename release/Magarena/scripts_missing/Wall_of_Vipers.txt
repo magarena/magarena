@@ -1,6 +1,7 @@
 name=Wall of Vipers
 url=http://magiccards.info/query?q=%21Wall+of+Vipers
 image=http://mtgimage.com/card/wall%20of%20vipers.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Snake,Wall

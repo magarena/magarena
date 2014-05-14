@@ -1,6 +1,7 @@
 name=Scoria Wurm
 url=http://magiccards.info/query?q=%21Scoria+Wurm
 image=http://mtgimage.com/card/scoria%20wurm.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Wurm

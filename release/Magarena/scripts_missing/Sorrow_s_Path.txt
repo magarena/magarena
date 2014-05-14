@@ -1,6 +1,7 @@
 name=Sorrow's Path
 url=http://magiccards.info/query?q=%21Sorrow%27s+Path
 image=http://mtgimage.com/card/sorrow%27s%20path.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Choose two target blocking creatures an opponent controls. If each of those creatures could block all creatures that the other is blocking, remove both of them from combat. Each one then blocks all creatures the other was blocking.;\

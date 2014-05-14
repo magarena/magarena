@@ -1,6 +1,7 @@
 name=Vicious Betrayal
 url=http://magiccards.info/query?q=%21Vicious+Betrayal
 image=http://mtgimage.com/card/vicious%20betrayal.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{B}{B}

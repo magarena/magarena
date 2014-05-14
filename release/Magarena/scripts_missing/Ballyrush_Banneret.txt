@@ -1,6 +1,7 @@
 name=Ballyrush Banneret
 url=http://magiccards.info/query?q=%21Ballyrush+Banneret
 image=http://mtgimage.com/card/ballyrush%20banneret.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

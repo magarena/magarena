@@ -1,6 +1,7 @@
 name=Rhys the Exiled
 url=http://magiccards.info/query?q=%21Rhys+the+Exiled
 image=http://mtgimage.com/card/rhys%20the%20exiled.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Warrior

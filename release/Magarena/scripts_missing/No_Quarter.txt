@@ -1,6 +1,7 @@
 name=No Quarter
 url=http://magiccards.info/query?q=%21No+Quarter
 image=http://mtgimage.com/card/no%20quarter.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

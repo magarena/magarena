@@ -1,6 +1,7 @@
 name=Wing Shards
 url=http://magiccards.info/query?q=%21Wing+Shards
 image=http://mtgimage.com/card/wing%20shards.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}{W}

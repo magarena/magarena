@@ -1,6 +1,7 @@
 name=Phantasmal Mount
 url=http://magiccards.info/query?q=%21Phantasmal+Mount
 image=http://mtgimage.com/card/phantasmal%20mount.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion,Horse

@@ -1,6 +1,7 @@
 name=Downhill Charge
 url=http://magiccards.info/query?q=%21Downhill+Charge
 image=http://mtgimage.com/card/downhill%20charge.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{R}

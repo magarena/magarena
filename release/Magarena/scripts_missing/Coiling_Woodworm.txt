@@ -1,6 +1,7 @@
 name=Coiling Woodworm
 url=http://magiccards.info/query?q=%21Coiling+Woodworm
 image=http://mtgimage.com/card/coiling%20woodworm.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Insect,Worm

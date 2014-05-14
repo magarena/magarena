@@ -1,6 +1,7 @@
 name=Cytoplast Root-Kin
 url=http://magiccards.info/query?q=%21Cytoplast+Root-Kin
 image=http://mtgimage.com/card/cytoplast%20root-kin.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Mutant

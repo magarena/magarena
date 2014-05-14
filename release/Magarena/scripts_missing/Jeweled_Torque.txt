@@ -1,6 +1,7 @@
 name=Jeweled Torque
 url=http://magiccards.info/query?q=%21Jeweled+Torque
 image=http://mtgimage.com/card/jeweled%20torque.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

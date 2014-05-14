@@ -1,6 +1,7 @@
 name=Oracle's Attendants
 url=http://magiccards.info/query?q=%21Oracle%27s+Attendants
 image=http://mtgimage.com/card/oracle%27s%20attendants.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

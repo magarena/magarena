@@ -1,6 +1,7 @@
 name=Stormscale Anarch
 url=http://magiccards.info/query?q=%21Stormscale+Anarch
 image=http://mtgimage.com/card/stormscale%20anarch.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Viashino,Shaman

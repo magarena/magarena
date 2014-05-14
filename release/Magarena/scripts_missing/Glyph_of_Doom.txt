@@ -1,6 +1,7 @@
 name=Glyph of Doom
 url=http://magiccards.info/query?q=%21Glyph+of+Doom
 image=http://mtgimage.com/card/glyph%20of%20doom.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

@@ -1,6 +1,7 @@
 name=Vengeful Archon
 url=http://magiccards.info/query?q=%21Vengeful+Archon
 image=http://mtgimage.com/card/vengeful%20archon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Archon

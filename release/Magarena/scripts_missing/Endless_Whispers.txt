@@ -1,6 +1,7 @@
 name=Endless Whispers
 url=http://magiccards.info/query?q=%21Endless+Whispers
 image=http://mtgimage.com/card/endless%20whispers.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

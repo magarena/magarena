@@ -1,6 +1,7 @@
 name=Timber Wolves
 url=http://magiccards.info/query?q=%21Timber+Wolves
 image=http://mtgimage.com/card/timber%20wolves.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Wolf

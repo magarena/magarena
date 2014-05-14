@@ -1,6 +1,7 @@
 name=Demonic Collusion
 url=http://magiccards.info/query?q=%21Demonic+Collusion
 image=http://mtgimage.com/card/demonic%20collusion.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

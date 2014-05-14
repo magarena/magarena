@@ -1,6 +1,7 @@
 name=Lotus Cobra
 url=http://magiccards.info/query?q=%21Lotus+Cobra
 image=http://mtgimage.com/card/lotus%20cobra.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Snake

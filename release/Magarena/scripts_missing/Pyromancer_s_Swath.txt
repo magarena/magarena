@@ -1,6 +1,7 @@
 name=Pyromancer's Swath
 url=http://magiccards.info/query?q=%21Pyromancer%27s+Swath
 image=http://mtgimage.com/card/pyromancer%27s%20swath.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

@@ -1,6 +1,7 @@
 name=Fissure Vent
 url=http://magiccards.info/query?q=%21Fissure+Vent
 image=http://mtgimage.com/card/fissure%20vent.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{R}{R}

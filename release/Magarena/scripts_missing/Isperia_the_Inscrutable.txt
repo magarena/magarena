@@ -1,6 +1,7 @@
 name=Isperia the Inscrutable
 url=http://magiccards.info/query?q=%21Isperia+the+Inscrutable
 image=http://mtgimage.com/card/isperia%20the%20inscrutable.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Sphinx

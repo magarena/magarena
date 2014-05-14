@@ -1,6 +1,7 @@
 name=Fool's Tome
 url=http://magiccards.info/query?q=%21Fool%27s+Tome
 image=http://mtgimage.com/card/fool%27s%20tome.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

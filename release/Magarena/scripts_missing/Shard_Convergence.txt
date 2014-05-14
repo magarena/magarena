@@ -1,6 +1,7 @@
 name=Shard Convergence
 url=http://magiccards.info/query?q=%21Shard+Convergence
 image=http://mtgimage.com/card/shard%20convergence.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{G}

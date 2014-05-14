@@ -1,6 +1,7 @@
 name=Braids, Conjurer Adept
 url=http://magiccards.info/query?q=%21Braids%2C+Conjurer+Adept
 image=http://mtgimage.com/card/braids%2C%20conjurer%20adept.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

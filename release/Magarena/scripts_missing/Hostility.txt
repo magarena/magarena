@@ -1,6 +1,7 @@
 name=Hostility
 url=http://magiccards.info/query?q=%21Hostility
 image=http://mtgimage.com/card/hostility.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Incarnation

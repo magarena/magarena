@@ -1,6 +1,7 @@
 name=Ghoultree
 url=http://magiccards.info/query?q=%21Ghoultree
 image=http://mtgimage.com/card/ghoultree.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Treefolk

@@ -1,6 +1,7 @@
 name=Degavolver
 url=http://magiccards.info/query?q=%21Degavolver
 image=http://mtgimage.com/card/degavolver.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Volver

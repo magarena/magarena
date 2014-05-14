@@ -1,6 +1,7 @@
 name=Whirling Catapult
 url=http://magiccards.info/query?q=%21Whirling+Catapult
 image=http://mtgimage.com/card/whirling%20catapult.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

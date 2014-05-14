@@ -1,6 +1,7 @@
 name=Nameless One
 url=http://magiccards.info/query?q=%21Nameless+One
 image=http://mtgimage.com/card/nameless%20one.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wizard,Avatar

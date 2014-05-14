@@ -1,6 +1,7 @@
 name=Chromeshell Crab
 url=http://magiccards.info/query?q=%21Chromeshell+Crab
 image=http://mtgimage.com/card/chromeshell%20crab.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Crab,Beast

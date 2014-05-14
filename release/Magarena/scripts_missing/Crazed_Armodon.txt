@@ -1,6 +1,7 @@
 name=Crazed Armodon
 url=http://magiccards.info/query?q=%21Crazed+Armodon
 image=http://mtgimage.com/card/crazed%20armodon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elephant

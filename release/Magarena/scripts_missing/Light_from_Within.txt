@@ -1,6 +1,7 @@
 name=Light from Within
 url=http://magiccards.info/query?q=%21Light+from+Within
 image=http://mtgimage.com/card/light%20from%20within.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

@@ -1,6 +1,7 @@
 name=Myr Retriever
 url=http://magiccards.info/query?q=%21Myr+Retriever
 image=http://mtgimage.com/card/myr%20retriever.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Myr

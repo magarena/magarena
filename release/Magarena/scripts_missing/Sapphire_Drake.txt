@@ -1,6 +1,7 @@
 name=Sapphire Drake
 url=http://magiccards.info/query?q=%21Sapphire+Drake
 image=http://mtgimage.com/card/sapphire%20drake.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Drake

@@ -1,6 +1,7 @@
 name=Heartwood Giant
 url=http://magiccards.info/query?q=%21Heartwood+Giant
 image=http://mtgimage.com/card/heartwood%20giant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant

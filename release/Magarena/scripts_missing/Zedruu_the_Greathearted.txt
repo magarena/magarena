@@ -1,6 +1,7 @@
 name=Zedruu the Greathearted
 url=http://magiccards.info/query?q=%21Zedruu+the+Greathearted
 image=http://mtgimage.com/card/zedruu%20the%20greathearted.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Minotaur,Monk

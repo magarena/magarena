@@ -1,6 +1,7 @@
 name=Synod Artificer
 url=http://magiccards.info/query?q=%21Synod+Artificer
 image=http://mtgimage.com/card/synod%20artificer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vedalken,Artificer

@@ -1,6 +1,7 @@
 name=Hatred
 url=http://magiccards.info/query?q=%21Hatred
 image=http://mtgimage.com/card/hatred.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{B}{B}

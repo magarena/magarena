@@ -1,6 +1,7 @@
 name=Oathkeeper, Takeno's Daisho
 url=http://magiccards.info/query?q=%21Oathkeeper%2C+Takeno%27s+Daisho
 image=http://mtgimage.com/card/oathkeeper%2C%20takeno%27s%20daisho.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,7 @@
 name=Seed Spark
 url=http://magiccards.info/query?q=%21Seed+Spark
 image=http://mtgimage.com/card/seed%20spark.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{W}

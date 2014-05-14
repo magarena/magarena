@@ -1,6 +1,7 @@
 name=Venarian Gold
 url=http://magiccards.info/query?q=%21Venarian+Gold
 image=http://mtgimage.com/card/venarian%20gold.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

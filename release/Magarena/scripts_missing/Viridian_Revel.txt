@@ -1,6 +1,7 @@
 name=Viridian Revel
 url=http://magiccards.info/query?q=%21Viridian+Revel
 image=http://mtgimage.com/card/viridian%20revel.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}{G}

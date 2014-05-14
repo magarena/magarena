@@ -1,6 +1,7 @@
 name=Feldon's Cane
 url=http://magiccards.info/query?q=%21Feldon%27s+Cane
 image=http://mtgimage.com/card/feldon%27s%20cane.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

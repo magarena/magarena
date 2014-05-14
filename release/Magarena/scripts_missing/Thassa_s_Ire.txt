@@ -1,6 +1,7 @@
 name=Thassa's Ire
 url=http://magiccards.info/query?q=%21Thassa%27s+Ire
 image=http://mtgimage.com/card/thassa%27s%20ire.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={U}

@@ -1,6 +1,7 @@
 name=Foriysian Brigade
 url=http://magiccards.info/query?q=%21Foriysian+Brigade
 image=http://mtgimage.com/card/foriysian%20brigade.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

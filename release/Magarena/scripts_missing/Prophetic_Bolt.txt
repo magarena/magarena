@@ -1,6 +1,7 @@
 name=Prophetic Bolt
 url=http://magiccards.info/query?q=%21Prophetic+Bolt
 image=http://mtgimage.com/card/prophetic%20bolt.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{R}

@@ -1,6 +1,7 @@
 name=Chlorophant
 url=http://magiccards.info/query?q=%21Chlorophant
 image=http://mtgimage.com/card/chlorophant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,7 @@
 name=Ashling's Prerogative
 url=http://magiccards.info/query?q=%21Ashling%27s+Prerogative
 image=http://mtgimage.com/card/ashling%27s%20prerogative.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{R}

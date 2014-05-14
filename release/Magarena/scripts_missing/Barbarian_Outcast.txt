@@ -1,6 +1,7 @@
 name=Barbarian Outcast
 url=http://magiccards.info/query?q=%21Barbarian+Outcast
 image=http://mtgimage.com/card/barbarian%20outcast.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Barbarian,Beast

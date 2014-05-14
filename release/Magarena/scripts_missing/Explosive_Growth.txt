@@ -1,6 +1,7 @@
 name=Explosive Growth
 url=http://magiccards.info/query?q=%21Explosive+Growth
 image=http://mtgimage.com/card/explosive%20growth.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}

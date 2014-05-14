@@ -1,6 +1,7 @@
 name=Dralnu's Pet
 url=http://magiccards.info/query?q=%21Dralnu%27s+Pet
 image=http://mtgimage.com/card/dralnu%27s%20pet.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

@@ -1,6 +1,7 @@
 name=Ironclaw Curse
 url=http://magiccards.info/query?q=%21Ironclaw+Curse
 image=http://mtgimage.com/card/ironclaw%20curse.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

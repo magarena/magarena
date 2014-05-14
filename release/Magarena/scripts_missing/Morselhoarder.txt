@@ -1,6 +1,7 @@
 name=Morselhoarder
 url=http://magiccards.info/query?q=%21Morselhoarder
 image=http://mtgimage.com/card/morselhoarder.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental

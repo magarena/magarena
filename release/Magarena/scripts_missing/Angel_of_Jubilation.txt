@@ -1,6 +1,7 @@
 name=Angel of Jubilation
 url=http://magiccards.info/query?q=%21Angel+of+Jubilation
 image=http://mtgimage.com/card/angel%20of%20jubilation.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

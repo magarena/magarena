@@ -1,6 +1,7 @@
 name=Inner Fire
 url=http://magiccards.info/query?q=%21Inner+Fire
 image=http://mtgimage.com/card/inner%20fire.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{R}

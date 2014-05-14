@@ -1,6 +1,7 @@
 name=Thraben Sentry
 url=http://magiccards.info/query?q=%21Thraben+Sentry
 image=http://mtgimage.com/card/thraben%20sentry.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

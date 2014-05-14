@@ -1,6 +1,7 @@
 name=Word of Command
 url=http://magiccards.info/query?q=%21Word+of+Command
 image=http://mtgimage.com/card/word%20of%20command.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={B}{B}

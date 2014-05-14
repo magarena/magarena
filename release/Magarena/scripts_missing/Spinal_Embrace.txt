@@ -1,6 +1,7 @@
 name=Spinal Embrace
 url=http://magiccards.info/query?q=%21Spinal+Embrace
 image=http://mtgimage.com/card/spinal%20embrace.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{U}{B}

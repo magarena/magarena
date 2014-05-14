@@ -1,6 +1,7 @@
 name=Patriarch's Bidding
 url=http://magiccards.info/query?q=%21Patriarch%27s+Bidding
 image=http://mtgimage.com/card/patriarch%27s%20bidding.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

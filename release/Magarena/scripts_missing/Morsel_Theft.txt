@@ -1,6 +1,7 @@
 name=Morsel Theft
 url=http://magiccards.info/query?q=%21Morsel+Theft
 image=http://mtgimage.com/card/morsel%20theft.jpg
+value=2.500
 rarity=C
 type=Tribal,Sorcery
 subtype=Rogue

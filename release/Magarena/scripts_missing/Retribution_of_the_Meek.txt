@@ -1,6 +1,7 @@
 name=Retribution of the Meek
 url=http://magiccards.info/query?q=%21Retribution+of+the+Meek
 image=http://mtgimage.com/card/retribution%20of%20the%20meek.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{W}

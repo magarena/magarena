@@ -1,6 +1,7 @@
 name=Thumbscrews
 url=http://magiccards.info/query?q=%21Thumbscrews
 image=http://mtgimage.com/card/thumbscrews.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

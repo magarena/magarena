@@ -1,6 +1,7 @@
 name=Martyr's Cry
 url=http://magiccards.info/query?q=%21Martyr%27s+Cry
 image=http://mtgimage.com/card/martyr%27s%20cry.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={W}{W}

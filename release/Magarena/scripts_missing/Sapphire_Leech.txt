@@ -1,6 +1,7 @@
 name=Sapphire Leech
 url=http://magiccards.info/query?q=%21Sapphire+Leech
 image=http://mtgimage.com/card/sapphire%20leech.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leech

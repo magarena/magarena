@@ -1,6 +1,7 @@
 name=Quicken
 url=http://magiccards.info/query?q=%21Quicken
 image=http://mtgimage.com/card/quicken.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}

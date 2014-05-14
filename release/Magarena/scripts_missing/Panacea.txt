@@ -1,6 +1,7 @@
 name=Panacea
 url=http://magiccards.info/query?q=%21Panacea
 image=http://mtgimage.com/card/panacea.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

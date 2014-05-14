@@ -1,6 +1,7 @@
 name=Pentarch Ward
 url=http://magiccards.info/query?q=%21Pentarch+Ward
 image=http://mtgimage.com/card/pentarch%20ward.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

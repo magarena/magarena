@@ -1,6 +1,7 @@
 name=Tinder Wall
 url=http://magiccards.info/query?q=%21Tinder+Wall
 image=http://mtgimage.com/card/tinder%20wall.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Plant,Wall

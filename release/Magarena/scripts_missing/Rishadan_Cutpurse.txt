@@ -1,6 +1,7 @@
 name=Rishadan Cutpurse
 url=http://magiccards.info/query?q=%21Rishadan+Cutpurse
 image=http://mtgimage.com/card/rishadan%20cutpurse.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Pirate

@@ -1,6 +1,7 @@
 name=Goblin Brawler
 url=http://magiccards.info/query?q=%21Goblin+Brawler
 image=http://mtgimage.com/card/goblin%20brawler.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

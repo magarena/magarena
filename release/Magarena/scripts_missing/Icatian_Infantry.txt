@@ -1,6 +1,7 @@
 name=Icatian Infantry
 url=http://magiccards.info/query?q=%21Icatian+Infantry
 image=http://mtgimage.com/card/icatian%20infantry1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

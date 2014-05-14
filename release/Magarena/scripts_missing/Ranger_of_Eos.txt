@@ -1,6 +1,7 @@
 name=Ranger of Eos
 url=http://magiccards.info/query?q=%21Ranger+of+Eos
 image=http://mtgimage.com/card/ranger%20of%20eos.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

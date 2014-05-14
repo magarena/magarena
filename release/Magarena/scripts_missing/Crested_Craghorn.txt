@@ -1,6 +1,7 @@
 name=Crested Craghorn
 url=http://magiccards.info/query?q=%21Crested+Craghorn
 image=http://mtgimage.com/card/crested%20craghorn.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goat,Beast

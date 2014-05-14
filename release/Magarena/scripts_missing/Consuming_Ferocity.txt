@@ -1,6 +1,7 @@
 name=Consuming Ferocity
 url=http://magiccards.info/query?q=%21Consuming+Ferocity
 image=http://mtgimage.com/card/consuming%20ferocity.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

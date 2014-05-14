@@ -1,6 +1,7 @@
 name=Samite Ministration
 url=http://magiccards.info/query?q=%21Samite+Ministration
 image=http://mtgimage.com/card/samite%20ministration.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}

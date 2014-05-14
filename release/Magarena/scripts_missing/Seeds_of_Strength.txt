@@ -1,6 +1,7 @@
 name=Seeds of Strength
 url=http://magiccards.info/query?q=%21Seeds+of+Strength
 image=http://mtgimage.com/card/seeds%20of%20strength.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}{W}

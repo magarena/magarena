@@ -1,6 +1,7 @@
 name=Aura Barbs
 url=http://magiccards.info/query?q=%21Aura+Barbs
 image=http://mtgimage.com/card/aura%20barbs.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Arcane

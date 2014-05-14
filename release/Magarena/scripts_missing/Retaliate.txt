@@ -1,6 +1,7 @@
 name=Retaliate
 url=http://magiccards.info/query?q=%21Retaliate
 image=http://mtgimage.com/card/retaliate.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{W}{W}

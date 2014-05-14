@@ -1,6 +1,7 @@
 name=Spiritual Asylum
 url=http://magiccards.info/query?q=%21Spiritual+Asylum
 image=http://mtgimage.com/card/spiritual%20asylum.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}

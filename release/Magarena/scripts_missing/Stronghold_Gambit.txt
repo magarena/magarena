@@ -1,6 +1,7 @@
 name=Stronghold Gambit
 url=http://magiccards.info/query?q=%21Stronghold+Gambit
 image=http://mtgimage.com/card/stronghold%20gambit.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={1}{R}

@@ -1,6 +1,7 @@
 name=Junk Golem
 url=http://magiccards.info/query?q=%21Junk+Golem
 image=http://mtgimage.com/card/junk%20golem.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem

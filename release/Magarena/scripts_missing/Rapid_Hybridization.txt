@@ -1,6 +1,7 @@
 name=Rapid Hybridization
 url=http://magiccards.info/query?q=%21Rapid+Hybridization
 image=http://mtgimage.com/card/rapid%20hybridization.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}

@@ -1,6 +1,7 @@
 name=Disaster Radius
 url=http://magiccards.info/query?q=%21Disaster+Radius
 image=http://mtgimage.com/card/disaster%20radius.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={5}{R}{R}

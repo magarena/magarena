@@ -1,6 +1,7 @@
 name=Drudge Spell
 url=http://magiccards.info/query?q=%21Drudge+Spell
 image=http://mtgimage.com/card/drudge%20spell.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={B}{B}

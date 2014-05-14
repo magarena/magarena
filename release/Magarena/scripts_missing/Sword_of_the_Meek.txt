@@ -1,6 +1,7 @@
 name=Sword of the Meek
 url=http://magiccards.info/query?q=%21Sword+of+the+Meek
 image=http://mtgimage.com/card/sword%20of%20the%20meek.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

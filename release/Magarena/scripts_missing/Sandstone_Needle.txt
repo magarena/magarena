@@ -1,6 +1,7 @@
 name=Sandstone Needle
 url=http://magiccards.info/query?q=%21Sandstone+Needle
 image=http://mtgimage.com/card/sandstone%20needle.jpg
+value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped with two depletion counters on it.;\

@@ -1,6 +1,7 @@
 name=Active Volcano
 url=http://magiccards.info/query?q=%21Active+Volcano
 image=http://mtgimage.com/card/active%20volcano.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

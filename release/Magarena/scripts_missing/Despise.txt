@@ -1,6 +1,7 @@
 name=Despise
 url=http://magiccards.info/query?q=%21Despise
 image=http://mtgimage.com/card/despise.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={B}

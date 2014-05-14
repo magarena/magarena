@@ -1,6 +1,7 @@
 name=Rhystic Cave
 url=http://magiccards.info/query?q=%21Rhystic+Cave
 image=http://mtgimage.com/card/rhystic%20cave.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Choose a color. Add one mana of that color to your mana pool unless any player pays {1}. Activate this ability only any time you could cast an instant.

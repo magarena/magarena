@@ -1,6 +1,7 @@
 name=Manaforce Mace
 url=http://magiccards.info/query?q=%21Manaforce+Mace
 image=http://mtgimage.com/card/manaforce%20mace.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

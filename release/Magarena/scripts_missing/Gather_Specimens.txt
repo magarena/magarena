@@ -1,6 +1,7 @@
 name=Gather Specimens
 url=http://magiccards.info/query?q=%21Gather+Specimens
 image=http://mtgimage.com/card/gather%20specimens.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{U}{U}

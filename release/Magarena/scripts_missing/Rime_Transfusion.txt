@@ -1,6 +1,7 @@
 name=Rime Transfusion
 url=http://magiccards.info/query?q=%21Rime+Transfusion
 image=http://mtgimage.com/card/rime%20transfusion.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

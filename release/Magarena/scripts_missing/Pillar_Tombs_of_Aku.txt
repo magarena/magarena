@@ -1,6 +1,7 @@
 name=Pillar Tombs of Aku
 url=http://magiccards.info/query?q=%21Pillar+Tombs+of+Aku
 image=http://mtgimage.com/card/pillar%20tombs%20of%20aku.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

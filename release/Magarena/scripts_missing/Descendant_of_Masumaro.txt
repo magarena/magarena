@@ -1,6 +1,7 @@
 name=Descendant of Masumaro
 url=http://magiccards.info/query?q=%21Descendant+of+Masumaro
 image=http://mtgimage.com/card/descendant%20of%20masumaro.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Monk

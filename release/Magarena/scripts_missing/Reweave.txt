@@ -1,6 +1,7 @@
 name=Reweave
 url=http://magiccards.info/query?q=%21Reweave
 image=http://mtgimage.com/card/reweave.jpg
+value=2.500
 rarity=R
 type=Instant
 subtype=Arcane

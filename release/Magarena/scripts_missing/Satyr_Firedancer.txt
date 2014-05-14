@@ -1,6 +1,7 @@
 name=Satyr Firedancer
 url=http://magiccards.info/query?q=%21Satyr+Firedancer
 image=http://mtgimage.com/card/satyr%20firedancer.jpg
+value=2.500
 rarity=R
 type=Enchantment,Creature
 subtype=Satyr

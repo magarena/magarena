@@ -1,6 +1,7 @@
 name=Kavu Primarch
 url=http://magiccards.info/query?q=%21Kavu+Primarch
 image=http://mtgimage.com/card/kavu%20primarch.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kavu

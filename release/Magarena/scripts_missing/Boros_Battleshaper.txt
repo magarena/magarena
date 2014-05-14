@@ -1,6 +1,7 @@
 name=Boros Battleshaper
 url=http://magiccards.info/query?q=%21Boros+Battleshaper
 image=http://mtgimage.com/card/boros%20battleshaper.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Minotaur,Soldier

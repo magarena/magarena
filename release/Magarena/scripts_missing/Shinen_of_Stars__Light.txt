@@ -1,6 +1,7 @@
 name=Shinen of Stars' Light
 url=http://magiccards.info/query?q=%21Shinen+of+Stars%27+Light
 image=http://mtgimage.com/card/shinen%20of%20stars%27%20light.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

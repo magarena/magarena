@@ -1,6 +1,7 @@
 name=Silver Seraph
 url=http://magiccards.info/query?q=%21Silver+Seraph
 image=http://mtgimage.com/card/silver%20seraph.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

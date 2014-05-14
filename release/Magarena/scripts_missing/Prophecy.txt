@@ -1,6 +1,7 @@
 name=Prophecy
 url=http://magiccards.info/query?q=%21Prophecy
 image=http://mtgimage.com/card/prophecy.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={W}

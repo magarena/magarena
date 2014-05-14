@@ -1,6 +1,7 @@
 name=Venomous Breath
 url=http://magiccards.info/query?q=%21Venomous+Breath
 image=http://mtgimage.com/card/venomous%20breath.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{G}

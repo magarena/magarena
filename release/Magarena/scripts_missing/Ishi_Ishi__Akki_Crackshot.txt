@@ -1,6 +1,7 @@
 name=Ishi-Ishi, Akki Crackshot
 url=http://magiccards.info/query?q=%21Ishi-Ishi%2C+Akki+Crackshot
 image=http://mtgimage.com/card/ishi-ishi%2C%20akki%20crackshot.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

@@ -1,6 +1,7 @@
 name=Necromantic Thirst
 url=http://magiccards.info/query?q=%21Necromantic+Thirst
 image=http://mtgimage.com/card/necromantic%20thirst.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

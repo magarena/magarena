@@ -1,6 +1,7 @@
 name=Ironclaw Buzzardiers
 url=http://magiccards.info/query?q=%21Ironclaw+Buzzardiers
 image=http://mtgimage.com/card/ironclaw%20buzzardiers.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Orc,Scout

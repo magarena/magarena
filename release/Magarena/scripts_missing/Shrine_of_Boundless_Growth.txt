@@ -1,6 +1,7 @@
 name=Shrine of Boundless Growth
 url=http://magiccards.info/query?q=%21Shrine+of+Boundless+Growth
 image=http://mtgimage.com/card/shrine%20of%20boundless%20growth.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

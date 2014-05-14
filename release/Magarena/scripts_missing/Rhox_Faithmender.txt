@@ -1,6 +1,7 @@
 name=Rhox Faithmender
 url=http://magiccards.info/query?q=%21Rhox+Faithmender
 image=http://mtgimage.com/card/rhox%20faithmender.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Rhino,Monk

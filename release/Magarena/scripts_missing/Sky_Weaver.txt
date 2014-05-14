@@ -1,6 +1,7 @@
 name=Sky Weaver
 url=http://magiccards.info/query?q=%21Sky+Weaver
 image=http://mtgimage.com/card/sky%20weaver.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Metathran,Wizard

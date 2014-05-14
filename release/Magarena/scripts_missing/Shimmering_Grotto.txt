@@ -1,6 +1,7 @@
 name=Shimmering Grotto
 url=http://magiccards.info/query?q=%21Shimmering+Grotto
 image=http://mtgimage.com/card/shimmering%20grotto.jpg
+value=2.500
 rarity=C
 type=Land
 ability={T}: Add {1} to your mana pool.;\

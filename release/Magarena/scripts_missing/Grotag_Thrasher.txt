@@ -1,6 +1,7 @@
 name=Grotag Thrasher
 url=http://magiccards.info/query?q=%21Grotag+Thrasher
 image=http://mtgimage.com/card/grotag%20thrasher.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Lizard

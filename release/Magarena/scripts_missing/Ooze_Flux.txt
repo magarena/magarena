@@ -1,6 +1,7 @@
 name=Ooze Flux
 url=http://magiccards.info/query?q=%21Ooze+Flux
 image=http://mtgimage.com/card/ooze%20flux.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}

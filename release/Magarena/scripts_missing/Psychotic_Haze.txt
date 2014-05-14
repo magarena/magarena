@@ -1,6 +1,7 @@
 name=Psychotic Haze
 url=http://magiccards.info/query?q=%21Psychotic+Haze
 image=http://mtgimage.com/card/psychotic%20haze.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{B}{B}

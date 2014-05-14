@@ -1,6 +1,7 @@
 name=Unholy Citadel
 url=http://magiccards.info/query?q=%21Unholy+Citadel
 image=http://mtgimage.com/card/unholy%20citadel.jpg
+value=2.500
 rarity=U
 type=Land
 ability=Black legendary creatures you control have "bands with other legendary creatures."

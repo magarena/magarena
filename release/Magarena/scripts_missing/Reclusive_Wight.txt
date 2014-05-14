@@ -1,6 +1,7 @@
 name=Reclusive Wight
 url=http://magiccards.info/query?q=%21Reclusive+Wight
 image=http://mtgimage.com/card/reclusive%20wight.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Minion

@@ -1,6 +1,7 @@
 name=Retract
 url=http://magiccards.info/query?q=%21Retract
 image=http://mtgimage.com/card/retract.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}

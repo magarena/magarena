@@ -1,6 +1,7 @@
 name=Serpent Generator
 url=http://magiccards.info/query?q=%21Serpent+Generator
 image=http://mtgimage.com/card/serpent%20generator.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

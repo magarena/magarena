@@ -1,6 +1,7 @@
 name=Battlewise Hoplite
 url=http://magiccards.info/query?q=%21Battlewise+Hoplite
 image=http://mtgimage.com/card/battlewise%20hoplite.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

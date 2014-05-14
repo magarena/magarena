@@ -1,6 +1,7 @@
 name=Grafdigger's Cage
 url=http://magiccards.info/query?q=%21Grafdigger%27s+Cage
 image=http://mtgimage.com/card/grafdigger%27s%20cage.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

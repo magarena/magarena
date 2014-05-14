@@ -1,6 +1,7 @@
 name=Shrike Harpy
 url=http://magiccards.info/query?q=%21Shrike+Harpy
 image=http://mtgimage.com/card/shrike%20harpy.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Harpy

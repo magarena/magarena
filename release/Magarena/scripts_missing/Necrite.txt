@@ -1,6 +1,7 @@
 name=Necrite
 url=http://magiccards.info/query?q=%21Necrite
 image=http://mtgimage.com/card/necrite1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Thrull

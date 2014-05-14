@@ -1,6 +1,7 @@
 name=Deadly Allure
 url=http://magiccards.info/query?q=%21Deadly+Allure
 image=http://mtgimage.com/card/deadly%20allure.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={B}

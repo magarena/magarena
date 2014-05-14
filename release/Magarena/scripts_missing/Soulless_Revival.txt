@@ -1,6 +1,7 @@
 name=Soulless Revival
 url=http://magiccards.info/query?q=%21Soulless+Revival
 image=http://mtgimage.com/card/soulless%20revival.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

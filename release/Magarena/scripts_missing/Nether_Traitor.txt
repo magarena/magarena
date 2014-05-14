@@ -1,6 +1,7 @@
 name=Nether Traitor
 url=http://magiccards.info/query?q=%21Nether+Traitor
 image=http://mtgimage.com/card/nether%20traitor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

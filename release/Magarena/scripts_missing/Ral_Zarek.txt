@@ -1,6 +1,7 @@
 name=Ral Zarek
 url=http://magiccards.info/query?q=%21Ral+Zarek
 image=http://mtgimage.com/card/ral%20zarek.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Ral

@@ -1,6 +1,7 @@
 name=Ashen-Skin Zubera
 url=http://magiccards.info/query?q=%21Ashen-Skin+Zubera
 image=http://mtgimage.com/card/ashen-skin%20zubera.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zubera,Spirit

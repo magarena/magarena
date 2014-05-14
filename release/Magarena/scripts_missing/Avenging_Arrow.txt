@@ -1,6 +1,7 @@
 name=Avenging Arrow
 url=http://magiccards.info/query?q=%21Avenging+Arrow
 image=http://mtgimage.com/card/avenging%20arrow.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{W}

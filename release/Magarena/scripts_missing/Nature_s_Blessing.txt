@@ -1,6 +1,7 @@
 name=Nature's Blessing
 url=http://magiccards.info/query?q=%21Nature%27s+Blessing
 image=http://mtgimage.com/card/nature%27s%20blessing.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{G}{W}

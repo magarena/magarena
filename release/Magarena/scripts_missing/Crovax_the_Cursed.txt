@@ -1,6 +1,7 @@
 name=Crovax the Cursed
 url=http://magiccards.info/query?q=%21Crovax+the+Cursed
 image=http://mtgimage.com/card/crovax%20the%20cursed.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire

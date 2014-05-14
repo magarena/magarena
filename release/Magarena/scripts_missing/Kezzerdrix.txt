@@ -1,6 +1,7 @@
 name=Kezzerdrix
 url=http://magiccards.info/query?q=%21Kezzerdrix
 image=http://mtgimage.com/card/kezzerdrix.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Rabbit,Beast

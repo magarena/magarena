@@ -1,6 +1,7 @@
 name=Clone Shell
 url=http://magiccards.info/query?q=%21Clone+Shell
 image=http://mtgimage.com/card/clone%20shell.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Shapeshifter

@@ -1,6 +1,7 @@
 name=Land's Edge
 url=http://magiccards.info/query?q=%21Land%27s+Edge
 image=http://mtgimage.com/card/land%27s%20edge.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{R}{R}

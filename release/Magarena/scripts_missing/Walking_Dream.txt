@@ -1,6 +1,7 @@
 name=Walking Dream
 url=http://magiccards.info/query?q=%21Walking+Dream
 image=http://mtgimage.com/card/walking%20dream.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion

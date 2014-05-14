@@ -1,6 +1,7 @@
 name=Ben-Ben, Akki Hermit
 url=http://magiccards.info/query?q=%21Ben-Ben%2C+Akki+Hermit
 image=http://mtgimage.com/card/ben-ben%2C%20akki%20hermit.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Goblin,Shaman

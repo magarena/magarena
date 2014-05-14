@@ -1,6 +1,7 @@
 name=Intimidation Bolt
 url=http://magiccards.info/query?q=%21Intimidation+Bolt
 image=http://mtgimage.com/card/intimidation%20bolt.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}{W}

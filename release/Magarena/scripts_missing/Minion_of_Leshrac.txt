@@ -1,6 +1,7 @@
 name=Minion of Leshrac
 url=http://magiccards.info/query?q=%21Minion+of+Leshrac
 image=http://mtgimage.com/card/minion%20of%20leshrac.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Demon,Minion

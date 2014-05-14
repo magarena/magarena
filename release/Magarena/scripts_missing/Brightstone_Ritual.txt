@@ -1,6 +1,7 @@
 name=Brightstone Ritual
 url=http://magiccards.info/query?q=%21Brightstone+Ritual
 image=http://mtgimage.com/card/brightstone%20ritual.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

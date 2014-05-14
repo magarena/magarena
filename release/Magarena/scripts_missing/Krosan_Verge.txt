@@ -1,6 +1,7 @@
 name=Krosan Verge
 url=http://magiccards.info/query?q=%21Krosan+Verge
 image=http://mtgimage.com/card/krosan%20verge.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

@@ -1,6 +1,7 @@
 name=Word of Undoing
 url=http://magiccards.info/query?q=%21Word+of+Undoing
 image=http://mtgimage.com/card/word%20of%20undoing.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

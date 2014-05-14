@@ -1,6 +1,7 @@
 name=Immortal Coil
 url=http://magiccards.info/query?q=%21Immortal+Coil
 image=http://mtgimage.com/card/immortal%20coil.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}{B}{B}

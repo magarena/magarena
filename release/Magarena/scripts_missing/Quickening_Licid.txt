@@ -1,6 +1,7 @@
 name=Quickening Licid
 url=http://magiccards.info/query?q=%21Quickening+Licid
 image=http://mtgimage.com/card/quickening%20licid.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Licid

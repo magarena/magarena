@@ -1,6 +1,7 @@
 name=Spellweaver Volute
 url=http://magiccards.info/query?q=%21Spellweaver+Volute
 image=http://mtgimage.com/card/spellweaver%20volute.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

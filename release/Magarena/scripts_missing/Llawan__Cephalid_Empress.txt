@@ -1,6 +1,7 @@
 name=Llawan, Cephalid Empress
 url=http://magiccards.info/query?q=%21Llawan%2C+Cephalid+Empress
 image=http://mtgimage.com/card/llawan%2C%20cephalid%20empress.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Cephalid

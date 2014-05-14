@@ -1,6 +1,7 @@
 name=Noble Quarry
 url=http://magiccards.info/query?q=%21Noble+Quarry
 image=http://mtgimage.com/card/noble%20quarry.jpg
+value=2.500
 rarity=U
 type=Enchantment,Creature
 subtype=Unicorn

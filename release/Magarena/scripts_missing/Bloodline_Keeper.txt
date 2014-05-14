@@ -1,6 +1,7 @@
 name=Bloodline Keeper
 url=http://magiccards.info/query?q=%21Bloodline+Keeper
 image=http://mtgimage.com/card/bloodline%20keeper.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire

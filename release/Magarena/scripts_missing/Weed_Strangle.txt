@@ -1,6 +1,7 @@
 name=Weed Strangle
 url=http://magiccards.info/query?q=%21Weed+Strangle
 image=http://mtgimage.com/card/weed%20strangle.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{B}{B}

@@ -1,6 +1,7 @@
 name=Spark Mage
 url=http://magiccards.info/query?q=%21Spark+Mage
 image=http://mtgimage.com/card/spark%20mage.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Dwarf,Wizard

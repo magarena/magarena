@@ -1,6 +1,7 @@
 name=Gem of Becoming
 url=http://magiccards.info/query?q=%21Gem+of+Becoming
 image=http://mtgimage.com/card/gem%20of%20becoming.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

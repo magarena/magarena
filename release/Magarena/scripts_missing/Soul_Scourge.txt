@@ -1,6 +1,7 @@
 name=Soul Scourge
 url=http://magiccards.info/query?q=%21Soul+Scourge
 image=http://mtgimage.com/card/soul%20scourge.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Nightmare,Horror

@@ -1,6 +1,7 @@
 name=Oni of Wild Places
 url=http://magiccards.info/query?q=%21Oni+of+Wild+Places
 image=http://mtgimage.com/card/oni%20of%20wild%20places.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Demon,Spirit

@@ -1,6 +1,7 @@
 name=Gateway Shade
 url=http://magiccards.info/query?q=%21Gateway+Shade
 image=http://mtgimage.com/card/gateway%20shade.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Shade

@@ -1,6 +1,7 @@
 name=Harness by Force
 url=http://magiccards.info/query?q=%21Harness+by+Force
 image=http://mtgimage.com/card/harness%20by%20force.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={1}{R}{R}

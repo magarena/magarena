@@ -1,6 +1,7 @@
 name=Angel of Serenity
 url=http://magiccards.info/query?q=%21Angel+of+Serenity
 image=http://mtgimage.com/card/angel%20of%20serenity.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Angel

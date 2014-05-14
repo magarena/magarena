@@ -1,6 +1,7 @@
 name=Brothers of Fire
 url=http://magiccards.info/query?q=%21Brothers+of+Fire
 image=http://mtgimage.com/card/brothers%20of%20fire.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Shaman

@@ -1,6 +1,7 @@
 name=Grab the Reins
 url=http://magiccards.info/query?q=%21Grab+the+Reins
 image=http://mtgimage.com/card/grab%20the%20reins.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{R}

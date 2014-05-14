@@ -1,6 +1,7 @@
 name=Plunge into Darkness
 url=http://magiccards.info/query?q=%21Plunge+into+Darkness
 image=http://mtgimage.com/card/plunge%20into%20darkness.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{B}

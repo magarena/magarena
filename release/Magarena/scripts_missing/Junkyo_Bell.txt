@@ -1,6 +1,7 @@
 name=Junkyo Bell
 url=http://magiccards.info/query?q=%21Junkyo+Bell
 image=http://mtgimage.com/card/junkyo%20bell.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

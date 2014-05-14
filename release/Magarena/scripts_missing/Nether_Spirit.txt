@@ -1,6 +1,7 @@
 name=Nether Spirit
 url=http://magiccards.info/query?q=%21Nether+Spirit
 image=http://mtgimage.com/card/nether%20spirit.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

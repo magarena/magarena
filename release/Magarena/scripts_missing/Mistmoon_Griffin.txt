@@ -1,6 +1,7 @@
 name=Mistmoon Griffin
 url=http://magiccards.info/query?q=%21Mistmoon+Griffin
 image=http://mtgimage.com/card/mistmoon%20griffin.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Griffin

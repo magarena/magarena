@@ -1,6 +1,7 @@
 name=Pitfall Trap
 url=http://magiccards.info/query?q=%21Pitfall+Trap
 image=http://mtgimage.com/card/pitfall%20trap.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Trap

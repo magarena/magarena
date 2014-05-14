@@ -1,6 +1,7 @@
 name=Ludevic's Abomination
 url=http://magiccards.info/query?q=%21Ludevic%27s+Abomination
 image=http://mtgimage.com/card/ludevic%27s%20abomination.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Lizard,Horror

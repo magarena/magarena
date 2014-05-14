@@ -1,6 +1,7 @@
 name=Refraction Trap
 url=http://magiccards.info/query?q=%21Refraction+Trap
 image=http://mtgimage.com/card/refraction%20trap.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Trap

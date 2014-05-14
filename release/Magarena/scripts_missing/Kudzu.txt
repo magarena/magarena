@@ -1,6 +1,7 @@
 name=Kudzu
 url=http://magiccards.info/query?q=%21Kudzu
 image=http://mtgimage.com/card/kudzu.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

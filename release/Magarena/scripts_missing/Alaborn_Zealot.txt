@@ -1,6 +1,7 @@
 name=Alaborn Zealot
 url=http://magiccards.info/query?q=%21Alaborn+Zealot
 image=http://mtgimage.com/card/alaborn%20zealot.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

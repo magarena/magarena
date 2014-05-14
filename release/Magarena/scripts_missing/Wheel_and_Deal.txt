@@ -1,6 +1,7 @@
 name=Wheel and Deal
 url=http://magiccards.info/query?q=%21Wheel+and+Deal
 image=http://mtgimage.com/card/wheel%20and%20deal.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}

@@ -1,6 +1,7 @@
 name=Aura Finesse
 url=http://magiccards.info/query?q=%21Aura+Finesse
 image=http://mtgimage.com/card/aura%20finesse.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

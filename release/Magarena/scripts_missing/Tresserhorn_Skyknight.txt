@@ -1,6 +1,7 @@
 name=Tresserhorn Skyknight
 url=http://magiccards.info/query?q=%21Tresserhorn+Skyknight
 image=http://mtgimage.com/card/tresserhorn%20skyknight.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Knight

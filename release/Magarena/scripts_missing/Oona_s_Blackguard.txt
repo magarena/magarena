@@ -1,6 +1,7 @@
 name=Oona's Blackguard
 url=http://magiccards.info/query?q=%21Oona%27s+Blackguard
 image=http://mtgimage.com/card/oona%27s%20blackguard.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Faerie,Rogue

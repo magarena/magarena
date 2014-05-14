@@ -1,6 +1,7 @@
 name=Superior Numbers
 url=http://magiccards.info/query?q=%21Superior+Numbers
 image=http://mtgimage.com/card/superior%20numbers.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={G}{G}

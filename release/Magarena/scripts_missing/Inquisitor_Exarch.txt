@@ -1,6 +1,7 @@
 name=Inquisitor Exarch
 url=http://magiccards.info/query?q=%21Inquisitor+Exarch
 image=http://mtgimage.com/card/inquisitor%20exarch.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Cleric

@@ -1,6 +1,7 @@
 name=Krark's Thumb
 url=http://magiccards.info/query?q=%21Krark%27s+Thumb
 image=http://mtgimage.com/card/krark%27s%20thumb.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

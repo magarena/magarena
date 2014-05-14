@@ -1,6 +1,7 @@
 name=Painwracker Oni
 url=http://magiccards.info/query?q=%21Painwracker+Oni
 image=http://mtgimage.com/card/painwracker%20oni.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Demon,Spirit

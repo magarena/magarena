@@ -1,6 +1,7 @@
 name=Orzhov Pontiff
 url=http://magiccards.info/query?q=%21Orzhov+Pontiff
 image=http://mtgimage.com/card/orzhov%20pontiff.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

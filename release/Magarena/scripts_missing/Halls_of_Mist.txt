@@ -1,6 +1,7 @@
 name=Halls of Mist
 url=http://magiccards.info/query?q=%21Halls+of+Mist
 image=http://mtgimage.com/card/halls%20of%20mist.jpg
+value=2.500
 rarity=R
 type=Land
 ability=Cumulative upkeep {1};\

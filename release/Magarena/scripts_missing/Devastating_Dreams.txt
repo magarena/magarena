@@ -1,6 +1,7 @@
 name=Devastating Dreams
 url=http://magiccards.info/query?q=%21Devastating+Dreams
 image=http://mtgimage.com/card/devastating%20dreams.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={R}{R}

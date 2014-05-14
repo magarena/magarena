@@ -1,6 +1,7 @@
 name=Crazed Firecat
 url=http://magiccards.info/query?q=%21Crazed+Firecat
 image=http://mtgimage.com/card/crazed%20firecat.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental,Cat

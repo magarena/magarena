@@ -1,6 +1,7 @@
 name=Geth's Grimoire
 url=http://magiccards.info/query?q=%21Geth%27s+Grimoire
 image=http://mtgimage.com/card/geth%27s%20grimoire.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

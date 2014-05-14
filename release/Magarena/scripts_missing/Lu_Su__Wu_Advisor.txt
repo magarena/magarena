@@ -1,6 +1,7 @@
 name=Lu Su, Wu Advisor
 url=http://magiccards.info/query?q=%21Lu+Su%2C+Wu+Advisor
 image=http://mtgimage.com/card/lu%20su%2C%20wu%20advisor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Advisor

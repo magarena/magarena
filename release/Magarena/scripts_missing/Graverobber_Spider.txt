@@ -1,6 +1,7 @@
 name=Graverobber Spider
 url=http://magiccards.info/query?q=%21Graverobber+Spider
 image=http://mtgimage.com/card/graverobber%20spider.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spider

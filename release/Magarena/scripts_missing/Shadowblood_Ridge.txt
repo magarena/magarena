@@ -1,6 +1,7 @@
 name=Shadowblood Ridge
 url=http://magiccards.info/query?q=%21Shadowblood+Ridge
 image=http://mtgimage.com/card/shadowblood%20ridge.jpg
+value=2.500
 rarity=R
 type=Land
 ability={1}, {T}: Add {B}{R} to your mana pool.

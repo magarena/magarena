@@ -1,6 +1,7 @@
 name=Orim's Chant
 url=http://magiccards.info/query?q=%21Orim%27s+Chant
 image=http://mtgimage.com/card/orim%27s%20chant.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={W}

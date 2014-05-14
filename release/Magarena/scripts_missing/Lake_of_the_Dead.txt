@@ -1,6 +1,7 @@
 name=Lake of the Dead
 url=http://magiccards.info/query?q=%21Lake+of+the+Dead
 image=http://mtgimage.com/card/lake%20of%20the%20dead.jpg
+value=2.500
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice a Swamp instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\

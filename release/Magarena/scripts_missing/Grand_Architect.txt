@@ -1,6 +1,7 @@
 name=Grand Architect
 url=http://magiccards.info/query?q=%21Grand+Architect
 image=http://mtgimage.com/card/grand%20architect.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vedalken,Artificer

@@ -1,6 +1,7 @@
 name=Syphon Flesh
 url=http://magiccards.info/query?q=%21Syphon+Flesh
 image=http://mtgimage.com/card/syphon%20flesh.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}

@@ -1,6 +1,7 @@
 name=Fistful of Force
 url=http://magiccards.info/query?q=%21Fistful+of+Force
 image=http://mtgimage.com/card/fistful%20of%20force.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{G}

@@ -1,6 +1,7 @@
 name=Mistform Shrieker
 url=http://magiccards.info/query?q=%21Mistform+Shrieker
 image=http://mtgimage.com/card/mistform%20shrieker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion

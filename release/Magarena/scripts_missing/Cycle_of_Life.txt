@@ -1,6 +1,7 @@
 name=Cycle of Life
 url=http://magiccards.info/query?q=%21Cycle+of+Life
 image=http://mtgimage.com/card/cycle%20of%20life.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}{G}

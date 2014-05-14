@@ -1,6 +1,7 @@
 name=Hellfire Mongrel
 url=http://magiccards.info/query?q=%21Hellfire+Mongrel
 image=http://mtgimage.com/card/hellfire%20mongrel.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental,Hound

@@ -1,6 +1,7 @@
 name=Brilliant Ultimatum
 url=http://magiccards.info/query?q=%21Brilliant+Ultimatum
 image=http://mtgimage.com/card/brilliant%20ultimatum.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={W}{W}{U}{U}{U}{B}{B}

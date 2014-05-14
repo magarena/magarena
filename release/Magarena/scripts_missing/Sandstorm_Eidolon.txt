@@ -1,6 +1,7 @@
 name=Sandstorm Eidolon
 url=http://magiccards.info/query?q=%21Sandstorm+Eidolon
 image=http://mtgimage.com/card/sandstorm%20eidolon.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Glaring Spotlight
 url=http://magiccards.info/query?q=%21Glaring+Spotlight
 image=http://mtgimage.com/card/glaring%20spotlight.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

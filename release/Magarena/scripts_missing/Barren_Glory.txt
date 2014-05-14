@@ -1,6 +1,7 @@
 name=Barren Glory
 url=http://magiccards.info/query?q=%21Barren+Glory
 image=http://mtgimage.com/card/barren%20glory.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{W}{W}

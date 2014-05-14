@@ -1,6 +1,7 @@
 name=Veiled Sentry
 url=http://magiccards.info/query?q=%21Veiled+Sentry
 image=http://mtgimage.com/card/veiled%20sentry.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={U}

@@ -1,6 +1,7 @@
 name=Rise of Eagles
 url=http://magiccards.info/query?q=%21Rise+of+Eagles
 image=http://mtgimage.com/card/rise%20of%20eagles.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={4}{U}{U}

@@ -1,6 +1,7 @@
 name=Gempalm Sorcerer
 url=http://magiccards.info/query?q=%21Gempalm+Sorcerer
 image=http://mtgimage.com/card/gempalm%20sorcerer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,7 @@
 name=Flow of Maggots
 url=http://magiccards.info/query?q=%21Flow+of+Maggots
 image=http://mtgimage.com/card/flow%20of%20maggots.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Insect

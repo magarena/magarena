@@ -1,6 +1,7 @@
 name=Geth, Lord of the Vault
 url=http://magiccards.info/query?q=%21Geth%2C+Lord+of+the+Vault
 image=http://mtgimage.com/card/geth%2C%20lord%20of%20the%20vault.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Zombie

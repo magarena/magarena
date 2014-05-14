@@ -1,6 +1,7 @@
 name=Crab Umbra
 url=http://magiccards.info/query?q=%21Crab+Umbra
 image=http://mtgimage.com/card/crab%20umbra.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

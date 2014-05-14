@@ -1,6 +1,7 @@
 name=Pain
 url=http://magiccards.info/query?q=%21Pain
 image=http://mtgimage.com/card/painsuffering.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={B}

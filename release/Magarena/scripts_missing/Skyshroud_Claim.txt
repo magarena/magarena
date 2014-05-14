@@ -1,6 +1,7 @@
 name=Skyshroud Claim
 url=http://magiccards.info/query?q=%21Skyshroud+Claim
 image=http://mtgimage.com/card/skyshroud%20claim.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}

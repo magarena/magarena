@@ -1,6 +1,7 @@
 name=Sunrise Sovereign
 url=http://magiccards.info/query?q=%21Sunrise+Sovereign
 image=http://mtgimage.com/card/sunrise%20sovereign.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant,Warrior

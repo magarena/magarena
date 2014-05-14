@@ -1,6 +1,7 @@
 name=Endrek Sahr, Master Breeder
 url=http://magiccards.info/query?q=%21Endrek+Sahr%2C+Master+Breeder
 image=http://mtgimage.com/card/endrek%20sahr%2C%20master%20breeder.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

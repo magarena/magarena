@@ -1,6 +1,7 @@
 name=Lantern-Lit Graveyard
 url=http://magiccards.info/query?q=%21Lantern-Lit+Graveyard
 image=http://mtgimage.com/card/lantern-lit%20graveyard.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

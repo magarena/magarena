@@ -1,6 +1,7 @@
 name=Freyalise Supplicant
 url=http://magiccards.info/query?q=%21Freyalise+Supplicant
 image=http://mtgimage.com/card/freyalise%20supplicant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

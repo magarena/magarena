@@ -1,6 +1,7 @@
 name=Thalakos Dreamsower
 url=http://magiccards.info/query?q=%21Thalakos+Dreamsower
 image=http://mtgimage.com/card/thalakos%20dreamsower.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Thalakos,Wizard

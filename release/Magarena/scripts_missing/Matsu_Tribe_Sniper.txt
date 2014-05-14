@@ -1,6 +1,7 @@
 name=Matsu-Tribe Sniper
 url=http://magiccards.info/query?q=%21Matsu-Tribe+Sniper
 image=http://mtgimage.com/card/matsu-tribe%20sniper.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Snake,Warrior,Archer

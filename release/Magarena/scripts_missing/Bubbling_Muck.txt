@@ -1,6 +1,7 @@
 name=Bubbling Muck
 url=http://magiccards.info/query?q=%21Bubbling+Muck
 image=http://mtgimage.com/card/bubbling%20muck.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={B}

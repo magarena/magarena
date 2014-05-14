@@ -1,6 +1,7 @@
 name=Invigorating Boon
 url=http://magiccards.info/query?q=%21Invigorating+Boon
 image=http://mtgimage.com/card/invigorating%20boon.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}

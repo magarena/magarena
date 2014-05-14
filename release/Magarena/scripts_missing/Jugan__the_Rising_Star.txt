@@ -1,6 +1,7 @@
 name=Jugan, the Rising Star
 url=http://magiccards.info/query?q=%21Jugan%2C+the+Rising+Star
 image=http://mtgimage.com/card/jugan%2C%20the%20rising%20star.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon,Spirit

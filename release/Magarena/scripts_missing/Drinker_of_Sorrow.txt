@@ -1,6 +1,7 @@
 name=Drinker of Sorrow
 url=http://magiccards.info/query?q=%21Drinker+of+Sorrow
 image=http://mtgimage.com/card/drinker%20of%20sorrow.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Horror

@@ -1,6 +1,7 @@
 name=Boldwyr Intimidator
 url=http://magiccards.info/query?q=%21Boldwyr+Intimidator
 image=http://mtgimage.com/card/boldwyr%20intimidator.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant,Warrior

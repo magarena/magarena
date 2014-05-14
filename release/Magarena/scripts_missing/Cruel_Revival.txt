@@ -1,6 +1,7 @@
 name=Cruel Revival
 url=http://magiccards.info/query?q=%21Cruel+Revival
 image=http://mtgimage.com/card/cruel%20revival.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={4}{B}

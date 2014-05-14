@@ -1,6 +1,7 @@
 name=Exotic Disease
 url=http://magiccards.info/query?q=%21Exotic+Disease
 image=http://mtgimage.com/card/exotic%20disease.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}

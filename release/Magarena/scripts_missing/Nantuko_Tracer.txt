@@ -1,6 +1,7 @@
 name=Nantuko Tracer
 url=http://magiccards.info/query?q=%21Nantuko+Tracer
 image=http://mtgimage.com/card/nantuko%20tracer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Insect,Druid

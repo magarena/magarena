@@ -1,6 +1,7 @@
 name=Vedalken Engineer
 url=http://magiccards.info/query?q=%21Vedalken+Engineer
 image=http://mtgimage.com/card/vedalken%20engineer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Vedalken,Artificer

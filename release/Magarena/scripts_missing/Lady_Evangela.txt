@@ -1,6 +1,7 @@
 name=Lady Evangela
 url=http://magiccards.info/query?q=%21Lady+Evangela
 image=http://mtgimage.com/card/lady%20evangela.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,7 @@
 name=Null Profusion
 url=http://magiccards.info/query?q=%21Null+Profusion
 image=http://mtgimage.com/card/null%20profusion.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{B}{B}

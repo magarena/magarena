@@ -1,6 +1,7 @@
 name=Kismet
 url=http://magiccards.info/query?q=%21Kismet
 image=http://mtgimage.com/card/kismet.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={3}{W}

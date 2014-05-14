@@ -1,6 +1,7 @@
 name=Rites of Reaping
 url=http://magiccards.info/query?q=%21Rites+of+Reaping
 image=http://mtgimage.com/card/rites%20of%20reaping.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}{G}

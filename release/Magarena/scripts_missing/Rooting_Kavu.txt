@@ -1,6 +1,7 @@
 name=Rooting Kavu
 url=http://magiccards.info/query?q=%21Rooting+Kavu
 image=http://mtgimage.com/card/rooting%20kavu.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Kavu

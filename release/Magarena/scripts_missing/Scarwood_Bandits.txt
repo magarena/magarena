@@ -1,6 +1,7 @@
 name=Scarwood Bandits
 url=http://magiccards.info/query?q=%21Scarwood+Bandits
 image=http://mtgimage.com/card/scarwood%20bandits.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Rogue

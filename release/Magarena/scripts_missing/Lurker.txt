@@ -1,6 +1,7 @@
 name=Lurker
 url=http://magiccards.info/query?q=%21Lurker
 image=http://mtgimage.com/card/lurker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

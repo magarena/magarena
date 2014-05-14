@@ -1,6 +1,7 @@
 name=Cunning Giant
 url=http://magiccards.info/query?q=%21Cunning+Giant
 image=http://mtgimage.com/card/cunning%20giant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant

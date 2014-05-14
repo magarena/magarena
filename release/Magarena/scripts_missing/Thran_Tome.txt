@@ -1,6 +1,7 @@
 name=Thran Tome
 url=http://magiccards.info/query?q=%21Thran+Tome
 image=http://mtgimage.com/card/thran%20tome.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

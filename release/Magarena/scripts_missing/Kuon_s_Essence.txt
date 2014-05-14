@@ -1,6 +1,7 @@
 name=Kuon's Essence
 url=http://magiccards.info/query?q=%21Kuon%27s+Essence
 image=http://mtgimage.com/card/kuon%27s%20essence.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

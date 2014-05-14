@@ -1,6 +1,7 @@
 name=Indentured Djinn
 url=http://magiccards.info/query?q=%21Indentured+Djinn
 image=http://mtgimage.com/card/indentured%20djinn.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Djinn

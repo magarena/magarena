@@ -1,6 +1,7 @@
 name=Clearwater Goblet
 url=http://magiccards.info/query?q=%21Clearwater+Goblet
 image=http://mtgimage.com/card/clearwater%20goblet.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

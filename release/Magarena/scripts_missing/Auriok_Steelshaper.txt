@@ -1,6 +1,7 @@
 name=Auriok Steelshaper
 url=http://magiccards.info/query?q=%21Auriok+Steelshaper
 image=http://mtgimage.com/card/auriok%20steelshaper.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

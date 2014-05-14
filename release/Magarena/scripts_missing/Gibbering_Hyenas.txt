@@ -1,6 +1,7 @@
 name=Gibbering Hyenas
 url=http://magiccards.info/query?q=%21Gibbering+Hyenas
 image=http://mtgimage.com/card/gibbering%20hyenas.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Hyena

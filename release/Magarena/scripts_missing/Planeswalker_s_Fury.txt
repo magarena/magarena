@@ -1,6 +1,7 @@
 name=Planeswalker's Fury
 url=http://magiccards.info/query?q=%21Planeswalker%27s+Fury
 image=http://mtgimage.com/card/planeswalker%27s%20fury.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

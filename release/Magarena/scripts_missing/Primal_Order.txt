@@ -1,6 +1,7 @@
 name=Primal Order
 url=http://magiccards.info/query?q=%21Primal+Order
 image=http://mtgimage.com/card/primal%20order.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

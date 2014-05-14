@@ -1,6 +1,7 @@
 name=Avatar of Woe
 url=http://magiccards.info/query?q=%21Avatar+of+Woe
 image=http://mtgimage.com/card/avatar%20of%20woe.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar

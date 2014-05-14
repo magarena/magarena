@@ -1,6 +1,7 @@
 name=Slash Panther
 url=http://magiccards.info/query?q=%21Slash+Panther
 image=http://mtgimage.com/card/slash%20panther.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Cat

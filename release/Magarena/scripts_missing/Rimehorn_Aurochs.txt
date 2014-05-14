@@ -1,6 +1,7 @@
 name=Rimehorn Aurochs
 url=http://magiccards.info/query?q=%21Rimehorn+Aurochs
 image=http://mtgimage.com/card/rimehorn%20aurochs.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Aurochs

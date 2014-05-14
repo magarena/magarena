@@ -1,6 +1,7 @@
 name=Life Chisel
 url=http://magiccards.info/query?q=%21Life+Chisel
 image=http://mtgimage.com/card/life%20chisel.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

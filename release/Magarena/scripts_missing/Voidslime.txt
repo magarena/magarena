@@ -1,6 +1,7 @@
 name=Voidslime
 url=http://magiccards.info/query?q=%21Voidslime
 image=http://mtgimage.com/card/voidslime.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={G}{U}{U}

@@ -1,6 +1,7 @@
 name=Ghostly Touch
 url=http://magiccards.info/query?q=%21Ghostly+Touch
 image=http://mtgimage.com/card/ghostly%20touch.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

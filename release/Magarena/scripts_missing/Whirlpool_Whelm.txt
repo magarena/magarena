@@ -1,6 +1,7 @@
 name=Whirlpool Whelm
 url=http://magiccards.info/query?q=%21Whirlpool+Whelm
 image=http://mtgimage.com/card/whirlpool%20whelm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

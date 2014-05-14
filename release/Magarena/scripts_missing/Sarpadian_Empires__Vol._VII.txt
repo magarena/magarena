@@ -1,6 +1,7 @@
 name=Sarpadian Empires, Vol. VII
 url=http://magiccards.info/query?q=%21Sarpadian+Empires%2C+Vol.+VII
 image=http://mtgimage.com/card/sarpadian%20empires%2C%20vol.%20vii.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

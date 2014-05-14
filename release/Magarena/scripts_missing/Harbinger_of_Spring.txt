@@ -1,6 +1,7 @@
 name=Harbinger of Spring
 url=http://magiccards.info/query?q=%21Harbinger+of+Spring
 image=http://mtgimage.com/card/harbinger%20of%20spring.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

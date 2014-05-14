@@ -1,6 +1,7 @@
 name=Nix
 url=http://magiccards.info/query?q=%21Nix
 image=http://mtgimage.com/card/nix.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}

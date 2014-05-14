@@ -1,6 +1,7 @@
 name=Frost Breath
 url=http://magiccards.info/query?q=%21Frost+Breath
 image=http://mtgimage.com/card/frost%20breath.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{U}

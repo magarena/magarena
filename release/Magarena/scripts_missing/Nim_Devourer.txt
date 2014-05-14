@@ -1,6 +1,7 @@
 name=Nim Devourer
 url=http://magiccards.info/query?q=%21Nim+Devourer
 image=http://mtgimage.com/card/nim%20devourer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie

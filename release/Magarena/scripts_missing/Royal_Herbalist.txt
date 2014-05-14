@@ -1,6 +1,7 @@
 name=Royal Herbalist
 url=http://magiccards.info/query?q=%21Royal+Herbalist
 image=http://mtgimage.com/card/royal%20herbalist1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

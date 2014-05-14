@@ -1,6 +1,7 @@
 name=Satyr Hedonist
 url=http://magiccards.info/query?q=%21Satyr+Hedonist
 image=http://mtgimage.com/card/satyr%20hedonist.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Satyr

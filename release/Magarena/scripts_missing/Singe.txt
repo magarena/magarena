@@ -1,6 +1,7 @@
 name=Singe
 url=http://magiccards.info/query?q=%21Singe
 image=http://mtgimage.com/card/singe.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

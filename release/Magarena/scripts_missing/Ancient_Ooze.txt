@@ -1,6 +1,7 @@
 name=Ancient Ooze
 url=http://magiccards.info/query?q=%21Ancient+Ooze
 image=http://mtgimage.com/card/ancient%20ooze.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Ooze

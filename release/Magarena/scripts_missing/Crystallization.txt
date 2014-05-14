@@ -1,6 +1,7 @@
 name=Crystallization
 url=http://magiccards.info/query?q=%21Crystallization
 image=http://mtgimage.com/card/crystallization.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

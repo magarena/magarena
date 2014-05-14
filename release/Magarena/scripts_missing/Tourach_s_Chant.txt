@@ -1,6 +1,7 @@
 name=Tourach's Chant
 url=http://magiccards.info/query?q=%21Tourach%27s+Chant
 image=http://mtgimage.com/card/tourach%27s%20chant.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

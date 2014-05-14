@@ -1,6 +1,7 @@
 name=Mercenary Informer
 url=http://magiccards.info/query?q=%21Mercenary+Informer
 image=http://mtgimage.com/card/mercenary%20informer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Rebel,Mercenary

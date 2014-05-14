@@ -1,6 +1,7 @@
 name=Smelt-Ward Gatekeepers
 url=http://magiccards.info/query?q=%21Smelt-Ward+Gatekeepers
 image=http://mtgimage.com/card/smelt-ward%20gatekeepers.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Warrior

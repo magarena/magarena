@@ -1,6 +1,7 @@
 name=Godsend
 url=http://magiccards.info/query?q=%21Godsend
 image=http://mtgimage.com/card/godsend.jpg
+value=2.500
 rarity=M
 type=Artifact
 subtype=Equipment

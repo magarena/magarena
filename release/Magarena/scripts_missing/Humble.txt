@@ -1,6 +1,7 @@
 name=Humble
 url=http://magiccards.info/query?q=%21Humble
 image=http://mtgimage.com/card/humble.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}

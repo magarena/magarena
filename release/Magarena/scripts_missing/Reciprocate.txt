@@ -1,6 +1,7 @@
 name=Reciprocate
 url=http://magiccards.info/query?q=%21Reciprocate
 image=http://mtgimage.com/card/reciprocate.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={W}

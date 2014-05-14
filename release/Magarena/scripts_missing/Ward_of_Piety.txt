@@ -1,6 +1,7 @@
 name=Ward of Piety
 url=http://magiccards.info/query?q=%21Ward+of+Piety
 image=http://mtgimage.com/card/ward%20of%20piety.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

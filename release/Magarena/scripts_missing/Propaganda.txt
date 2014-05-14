@@ -1,6 +1,7 @@
 name=Propaganda
 url=http://magiccards.info/query?q=%21Propaganda
 image=http://mtgimage.com/card/propaganda.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{U}

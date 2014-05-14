@@ -1,6 +1,7 @@
 name=Knight of Dusk
 url=http://magiccards.info/query?q=%21Knight+of+Dusk
 image=http://mtgimage.com/card/knight%20of%20dusk.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Knight

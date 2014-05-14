@@ -1,6 +1,7 @@
 name=Sacred Rites
 url=http://magiccards.info/query?q=%21Sacred+Rites
 image=http://mtgimage.com/card/sacred%20rites.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

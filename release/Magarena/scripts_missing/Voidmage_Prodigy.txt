@@ -1,6 +1,7 @@
 name=Voidmage Prodigy
 url=http://magiccards.info/query?q=%21Voidmage+Prodigy
 image=http://mtgimage.com/card/voidmage%20prodigy.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

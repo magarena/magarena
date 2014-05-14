@@ -1,6 +1,7 @@
 name=Tezzeret the Seeker
 url=http://magiccards.info/query?q=%21Tezzeret+the+Seeker
 image=http://mtgimage.com/card/tezzeret%20the%20seeker.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Tezzeret

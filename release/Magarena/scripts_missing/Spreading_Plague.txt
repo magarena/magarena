@@ -1,6 +1,7 @@
 name=Spreading Plague
 url=http://magiccards.info/query?q=%21Spreading+Plague
 image=http://mtgimage.com/card/spreading%20plague.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{B}

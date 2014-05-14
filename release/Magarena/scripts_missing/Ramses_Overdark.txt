@@ -1,6 +1,7 @@
 name=Ramses Overdark
 url=http://magiccards.info/query?q=%21Ramses+Overdark
 image=http://mtgimage.com/card/ramses%20overdark.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Assassin

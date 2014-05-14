@@ -1,6 +1,7 @@
 name=Mirrorweave
 url=http://magiccards.info/query?q=%21Mirrorweave
 image=http://mtgimage.com/card/mirrorweave.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{W/U}{W/U}

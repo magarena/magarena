@@ -1,6 +1,7 @@
 name=Barkshell Blessing
 url=http://magiccards.info/query?q=%21Barkshell+Blessing
 image=http://mtgimage.com/card/barkshell%20blessing.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G/W}

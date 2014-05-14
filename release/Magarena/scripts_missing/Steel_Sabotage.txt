@@ -1,6 +1,7 @@
 name=Steel Sabotage
 url=http://magiccards.info/query?q=%21Steel+Sabotage
 image=http://mtgimage.com/card/steel%20sabotage.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

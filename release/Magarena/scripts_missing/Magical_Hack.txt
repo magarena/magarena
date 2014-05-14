@@ -1,6 +1,7 @@
 name=Magical Hack
 url=http://magiccards.info/query?q=%21Magical+Hack
 image=http://mtgimage.com/card/magical%20hack.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}

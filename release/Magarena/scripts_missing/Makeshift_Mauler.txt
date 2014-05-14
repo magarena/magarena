@@ -1,6 +1,7 @@
 name=Makeshift Mauler
 url=http://magiccards.info/query?q=%21Makeshift+Mauler
 image=http://mtgimage.com/card/makeshift%20mauler.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Horror

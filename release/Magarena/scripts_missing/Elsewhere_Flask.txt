@@ -1,6 +1,7 @@
 name=Elsewhere Flask
 url=http://magiccards.info/query?q=%21Elsewhere+Flask
 image=http://mtgimage.com/card/elsewhere%20flask.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={2}

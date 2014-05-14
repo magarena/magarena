@@ -1,6 +1,7 @@
 name=Auriok Replica
 url=http://magiccards.info/query?q=%21Auriok+Replica
 image=http://mtgimage.com/card/auriok%20replica.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Cleric

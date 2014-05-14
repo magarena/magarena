@@ -1,6 +1,7 @@
 name=Jabari's Influence
 url=http://magiccards.info/query?q=%21Jabari%27s+Influence
 image=http://mtgimage.com/card/jabari%27s%20influence.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{W}{W}

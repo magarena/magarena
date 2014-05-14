@@ -1,6 +1,7 @@
 name=Urban Burgeoning
 url=http://magiccards.info/query?q=%21Urban+Burgeoning
 image=http://mtgimage.com/card/urban%20burgeoning.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Hokori, Dust Drinker
 url=http://magiccards.info/query?q=%21Hokori%2C+Dust+Drinker
 image=http://mtgimage.com/card/hokori%2C%20dust%20drinker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Crookclaw Elder
 url=http://magiccards.info/query?q=%21Crookclaw+Elder
 image=http://mtgimage.com/card/crookclaw%20elder.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Bird,Wizard

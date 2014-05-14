@@ -1,6 +1,7 @@
 name=Orim's Prayer
 url=http://magiccards.info/query?q=%21Orim%27s+Prayer
 image=http://mtgimage.com/card/orim%27s%20prayer.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}{W}

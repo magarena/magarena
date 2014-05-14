@@ -1,6 +1,7 @@
 name=Magnetic Mountain
 url=http://magiccards.info/query?q=%21Magnetic+Mountain
 image=http://mtgimage.com/card/magnetic%20mountain.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{R}{R}

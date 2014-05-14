@@ -1,6 +1,7 @@
 name=Atogatog
 url=http://magiccards.info/query?q=%21Atogatog
 image=http://mtgimage.com/card/atogatog.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Atog

@@ -1,6 +1,7 @@
 name=Norwood Priestess
 url=http://magiccards.info/query?q=%21Norwood+Priestess
 image=http://mtgimage.com/card/norwood%20priestess.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Druid

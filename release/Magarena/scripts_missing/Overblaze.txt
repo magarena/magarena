@@ -1,6 +1,7 @@
 name=Overblaze
 url=http://magiccards.info/query?q=%21Overblaze
 image=http://mtgimage.com/card/overblaze.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Arcane

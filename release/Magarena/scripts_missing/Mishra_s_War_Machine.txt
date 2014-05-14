@@ -1,6 +1,7 @@
 name=Mishra's War Machine
 url=http://magiccards.info/query?q=%21Mishra%27s+War+Machine
 image=http://mtgimage.com/card/mishra%27s%20war%20machine.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Juggernaut

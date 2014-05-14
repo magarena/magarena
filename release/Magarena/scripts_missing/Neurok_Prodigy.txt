@@ -1,6 +1,7 @@
 name=Neurok Prodigy
 url=http://magiccards.info/query?q=%21Neurok+Prodigy
 image=http://mtgimage.com/card/neurok%20prodigy.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

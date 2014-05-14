@@ -1,6 +1,7 @@
 name=Kaleidostone
 url=http://magiccards.info/query?q=%21Kaleidostone
 image=http://mtgimage.com/card/kaleidostone.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={2}

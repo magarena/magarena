@@ -1,6 +1,7 @@
 name=Marshdrinker Giant
 url=http://magiccards.info/query?q=%21Marshdrinker+Giant
 image=http://mtgimage.com/card/marshdrinker%20giant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant,Warrior

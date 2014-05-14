@@ -1,6 +1,7 @@
 name=Charmed Pendant
 url=http://magiccards.info/query?q=%21Charmed+Pendant
 image=http://mtgimage.com/card/charmed%20pendant.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

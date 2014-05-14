@@ -1,6 +1,7 @@
 name=Sunscape Familiar
 url=http://magiccards.info/query?q=%21Sunscape+Familiar
 image=http://mtgimage.com/card/sunscape%20familiar.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wall

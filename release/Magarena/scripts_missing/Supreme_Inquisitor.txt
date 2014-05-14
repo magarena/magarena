@@ -1,6 +1,7 @@
 name=Supreme Inquisitor
 url=http://magiccards.info/query?q=%21Supreme+Inquisitor
 image=http://mtgimage.com/card/supreme%20inquisitor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

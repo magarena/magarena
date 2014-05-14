@@ -1,6 +1,7 @@
 name=Mortipede
 url=http://magiccards.info/query?q=%21Mortipede
 image=http://mtgimage.com/card/mortipede.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Insect

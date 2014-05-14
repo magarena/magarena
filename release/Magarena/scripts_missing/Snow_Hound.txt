@@ -1,6 +1,7 @@
 name=Snow Hound
 url=http://magiccards.info/query?q=%21Snow+Hound
 image=http://mtgimage.com/card/snow%20hound.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Hound

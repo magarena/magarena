@@ -1,6 +1,7 @@
 name=Psychogenic Probe
 url=http://magiccards.info/query?q=%21Psychogenic+Probe
 image=http://mtgimage.com/card/psychogenic%20probe.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

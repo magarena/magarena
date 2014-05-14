@@ -1,6 +1,7 @@
 name=Venarian Glimmer
 url=http://magiccards.info/query?q=%21Venarian+Glimmer
 image=http://mtgimage.com/card/venarian%20glimmer.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={X}{U}

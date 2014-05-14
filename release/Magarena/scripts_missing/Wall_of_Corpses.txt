@@ -1,6 +1,7 @@
 name=Wall of Corpses
 url=http://magiccards.info/query?q=%21Wall+of+Corpses
 image=http://mtgimage.com/card/wall%20of%20corpses.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wall

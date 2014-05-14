@@ -1,6 +1,7 @@
 name=Orcish Healer
 url=http://magiccards.info/query?q=%21Orcish+Healer
 image=http://mtgimage.com/card/orcish%20healer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Orc,Cleric

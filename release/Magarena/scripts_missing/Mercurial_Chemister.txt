@@ -1,6 +1,7 @@
 name=Mercurial Chemister
 url=http://magiccards.info/query?q=%21Mercurial+Chemister
 image=http://mtgimage.com/card/mercurial%20chemister.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,7 @@
 name=Bazaar of Wonders
 url=http://magiccards.info/query?q=%21Bazaar+of+Wonders
 image=http://mtgimage.com/card/bazaar%20of%20wonders.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

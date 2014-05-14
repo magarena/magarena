@@ -1,6 +1,7 @@
 name=Dark Temper
 url=http://magiccards.info/query?q=%21Dark+Temper
 image=http://mtgimage.com/card/dark%20temper.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{R}

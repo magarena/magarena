@@ -1,6 +1,7 @@
 name=Auntie's Snitch
 url=http://magiccards.info/query?q=%21Auntie%27s+Snitch
 image=http://mtgimage.com/card/auntie%27s%20snitch.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Goblin,Rogue

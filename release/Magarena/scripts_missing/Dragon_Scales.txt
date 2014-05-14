@@ -1,6 +1,7 @@
 name=Dragon Scales
 url=http://magiccards.info/query?q=%21Dragon+Scales
 image=http://mtgimage.com/card/dragon%20scales.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

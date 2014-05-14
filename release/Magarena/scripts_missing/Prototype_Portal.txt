@@ -1,6 +1,7 @@
 name=Prototype Portal
 url=http://magiccards.info/query?q=%21Prototype+Portal
 image=http://mtgimage.com/card/prototype%20portal.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

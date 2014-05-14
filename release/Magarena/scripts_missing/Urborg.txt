@@ -1,6 +1,7 @@
 name=Urborg
 url=http://magiccards.info/query?q=%21Urborg
 image=http://mtgimage.com/card/urborg.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {B} to your mana pool.;\

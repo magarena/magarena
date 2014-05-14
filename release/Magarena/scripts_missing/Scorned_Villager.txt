@@ -1,6 +1,7 @@
 name=Scorned Villager
 url=http://magiccards.info/query?q=%21Scorned+Villager
 image=http://mtgimage.com/card/scorned%20villager.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Werewolf

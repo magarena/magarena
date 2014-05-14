@@ -1,6 +1,7 @@
 name=Soul Charmer
 url=http://magiccards.info/query?q=%21Soul+Charmer
 image=http://mtgimage.com/card/soul%20charmer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Rebel

@@ -1,6 +1,7 @@
 name=Tempt with Reflections
 url=http://magiccards.info/query?q=%21Tempt+with+Reflections
 image=http://mtgimage.com/card/tempt%20with%20reflections.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}

@@ -1,6 +1,7 @@
 name=Energy Chamber
 url=http://magiccards.info/query?q=%21Energy+Chamber
 image=http://mtgimage.com/card/energy%20chamber.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Guttural Response
 url=http://magiccards.info/query?q=%21Guttural+Response
 image=http://mtgimage.com/card/guttural%20response.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={R/G}

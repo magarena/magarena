@@ -1,6 +1,7 @@
 name=Teferi's Isle
 url=http://magiccards.info/query?q=%21Teferi%27s+Isle
 image=http://mtgimage.com/card/teferi%27s%20isle.jpg
+value=2.500
 rarity=R
 type=Land
 ability=Phasing;\

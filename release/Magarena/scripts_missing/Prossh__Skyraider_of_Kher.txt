@@ -1,6 +1,7 @@
 name=Prossh, Skyraider of Kher
 url=http://magiccards.info/query?q=%21Prossh%2C+Skyraider+of+Kher
 image=http://mtgimage.com/card/prossh%2C%20skyraider%20of%20kher.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Dragon

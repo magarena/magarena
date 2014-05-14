@@ -1,6 +1,7 @@
 name=Patrician's Scorn
 url=http://magiccards.info/query?q=%21Patrician%27s+Scorn
 image=http://mtgimage.com/card/patrician%27s%20scorn.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={3}{W}

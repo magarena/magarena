@@ -1,6 +1,7 @@
 name=Reins of the Vinesteed
 url=http://magiccards.info/query?q=%21Reins+of+the+Vinesteed
 image=http://mtgimage.com/card/reins%20of%20the%20vinesteed.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

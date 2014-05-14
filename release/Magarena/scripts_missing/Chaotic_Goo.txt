@@ -1,6 +1,7 @@
 name=Chaotic Goo
 url=http://magiccards.info/query?q=%21Chaotic+Goo
 image=http://mtgimage.com/card/chaotic%20goo.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Ooze

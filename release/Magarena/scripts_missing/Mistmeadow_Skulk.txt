@@ -1,6 +1,7 @@
 name=Mistmeadow Skulk
 url=http://magiccards.info/query?q=%21Mistmeadow+Skulk
 image=http://mtgimage.com/card/mistmeadow%20skulk.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Kithkin,Rogue

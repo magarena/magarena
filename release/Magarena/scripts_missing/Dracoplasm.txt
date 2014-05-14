@@ -1,6 +1,7 @@
 name=Dracoplasm
 url=http://magiccards.info/query?q=%21Dracoplasm
 image=http://mtgimage.com/card/dracoplasm.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

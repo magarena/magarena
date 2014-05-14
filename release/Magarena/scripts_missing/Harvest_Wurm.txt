@@ -1,6 +1,7 @@
 name=Harvest Wurm
 url=http://magiccards.info/query?q=%21Harvest+Wurm
 image=http://mtgimage.com/card/harvest%20wurm.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm

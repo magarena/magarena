@@ -1,6 +1,7 @@
 name=Mirror Sheen
 url=http://magiccards.info/query?q=%21Mirror+Sheen
 image=http://mtgimage.com/card/mirror%20sheen.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U/R}{U/R}

@@ -1,6 +1,7 @@
 name=Flowstone Sculpture
 url=http://magiccards.info/query?q=%21Flowstone+Sculpture
 image=http://mtgimage.com/card/flowstone%20sculpture.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter

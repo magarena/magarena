@@ -1,6 +1,7 @@
 name=Errantry
 url=http://magiccards.info/query?q=%21Errantry
 image=http://mtgimage.com/card/errantry.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

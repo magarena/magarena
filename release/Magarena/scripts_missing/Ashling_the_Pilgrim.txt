@@ -1,6 +1,7 @@
 name=Ashling the Pilgrim
 url=http://magiccards.info/query?q=%21Ashling+the+Pilgrim
 image=http://mtgimage.com/card/ashling%20the%20pilgrim.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Shaman

@@ -1,6 +1,7 @@
 name=Bloom Tender
 url=http://magiccards.info/query?q=%21Bloom+Tender
 image=http://mtgimage.com/card/bloom%20tender.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Druid

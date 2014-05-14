@@ -1,6 +1,7 @@
 name=Unforge
 url=http://magiccards.info/query?q=%21Unforge
 image=http://mtgimage.com/card/unforge.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{R}

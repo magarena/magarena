@@ -1,6 +1,7 @@
 name=Primal Surge
 url=http://magiccards.info/query?q=%21Primal+Surge
 image=http://mtgimage.com/card/primal%20surge.jpg
+value=2.500
 rarity=M
 type=Sorcery
 cost={8}{G}{G}

@@ -1,6 +1,7 @@
 name=Vish Kal, Blood Arbiter
 url=http://magiccards.info/query?q=%21Vish+Kal%2C+Blood+Arbiter
 image=http://mtgimage.com/card/vish%20kal%2C%20blood%20arbiter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire

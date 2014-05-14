@@ -1,6 +1,7 @@
 name=Echo Tracer
 url=http://magiccards.info/query?q=%21Echo+Tracer
 image=http://mtgimage.com/card/echo%20tracer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

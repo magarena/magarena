@@ -1,6 +1,7 @@
 name=Obstinate Familiar
 url=http://magiccards.info/query?q=%21Obstinate+Familiar
 image=http://mtgimage.com/card/obstinate%20familiar.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Lizard

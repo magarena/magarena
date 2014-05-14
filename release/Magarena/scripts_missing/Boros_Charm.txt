@@ -1,6 +1,7 @@
 name=Boros Charm
 url=http://magiccards.info/query?q=%21Boros+Charm
 image=http://mtgimage.com/card/boros%20charm.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={R}{W}

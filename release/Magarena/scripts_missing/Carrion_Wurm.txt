@@ -1,6 +1,7 @@
 name=Carrion Wurm
 url=http://magiccards.info/query?q=%21Carrion+Wurm
 image=http://mtgimage.com/card/carrion%20wurm.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Wurm

@@ -1,6 +1,7 @@
 name=Death Pit Offering
 url=http://magiccards.info/query?q=%21Death+Pit+Offering
 image=http://mtgimage.com/card/death%20pit%20offering.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

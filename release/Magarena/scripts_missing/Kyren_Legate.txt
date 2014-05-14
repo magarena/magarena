@@ -1,6 +1,7 @@
 name=Kyren Legate
 url=http://magiccards.info/query?q=%21Kyren+Legate
 image=http://mtgimage.com/card/kyren%20legate.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin

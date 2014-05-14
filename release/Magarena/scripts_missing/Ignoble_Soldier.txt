@@ -1,6 +1,7 @@
 name=Ignoble Soldier
 url=http://magiccards.info/query?q=%21Ignoble+Soldier
 image=http://mtgimage.com/card/ignoble%20soldier.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

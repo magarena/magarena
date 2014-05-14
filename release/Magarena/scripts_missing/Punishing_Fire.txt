@@ -1,6 +1,7 @@
 name=Punishing Fire
 url=http://magiccards.info/query?q=%21Punishing+Fire
 image=http://mtgimage.com/card/punishing%20fire.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}

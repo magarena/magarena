@@ -1,6 +1,7 @@
 name=Thrashing Mudspawn
 url=http://magiccards.info/query?q=%21Thrashing+Mudspawn
 image=http://mtgimage.com/card/thrashing%20mudspawn.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

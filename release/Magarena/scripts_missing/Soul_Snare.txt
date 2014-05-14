@@ -1,6 +1,7 @@
 name=Soul Snare
 url=http://magiccards.info/query?q=%21Soul+Snare
 image=http://mtgimage.com/card/soul%20snare.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={W}

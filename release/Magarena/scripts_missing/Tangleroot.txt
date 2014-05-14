@@ -1,6 +1,7 @@
 name=Tangleroot
 url=http://magiccards.info/query?q=%21Tangleroot
 image=http://mtgimage.com/card/tangleroot.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

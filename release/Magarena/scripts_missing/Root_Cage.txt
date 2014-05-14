@@ -1,6 +1,7 @@
 name=Root Cage
 url=http://magiccards.info/query?q=%21Root+Cage
 image=http://mtgimage.com/card/root%20cage.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}

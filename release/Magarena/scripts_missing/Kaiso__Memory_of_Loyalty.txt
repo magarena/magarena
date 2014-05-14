@@ -1,6 +1,7 @@
 name=Kaiso, Memory of Loyalty
 url=http://magiccards.info/query?q=%21Kaiso%2C+Memory+of+Loyalty
 image=http://mtgimage.com/card/kaiso%2C%20memory%20of%20loyalty.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit

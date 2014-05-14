@@ -1,6 +1,7 @@
 name=Endemic Plague
 url=http://magiccards.info/query?q=%21Endemic+Plague
 image=http://mtgimage.com/card/endemic%20plague.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}

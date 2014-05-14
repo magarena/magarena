@@ -1,6 +1,7 @@
 name=Ephara's Enlightenment
 url=http://magiccards.info/query?q=%21Ephara%27s+Enlightenment
 image=http://mtgimage.com/card/ephara%27s%20enlightenment.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

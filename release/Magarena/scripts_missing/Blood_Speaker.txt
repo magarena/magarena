@@ -1,6 +1,7 @@
 name=Blood Speaker
 url=http://magiccards.info/query?q=%21Blood+Speaker
 image=http://mtgimage.com/card/blood%20speaker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ogre,Shaman

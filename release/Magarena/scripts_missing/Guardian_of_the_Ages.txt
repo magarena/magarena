@@ -1,6 +1,7 @@
 name=Guardian of the Ages
 url=http://magiccards.info/query?q=%21Guardian+of+the+Ages
 image=http://mtgimage.com/card/guardian%20of%20the%20ages.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem

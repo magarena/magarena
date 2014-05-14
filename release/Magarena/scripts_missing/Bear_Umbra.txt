@@ -1,6 +1,7 @@
 name=Bear Umbra
 url=http://magiccards.info/query?q=%21Bear+Umbra
 image=http://mtgimage.com/card/bear%20umbra.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

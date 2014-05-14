@@ -1,6 +1,7 @@
 name=Inner Calm, Outer Strength
 url=http://magiccards.info/query?q=%21Inner+Calm%2C+Outer+Strength
 image=http://mtgimage.com/card/inner%20calm%2C%20outer%20strength.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

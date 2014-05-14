@@ -1,6 +1,7 @@
 name=Gilded Lotus
 url=http://magiccards.info/query?q=%21Gilded+Lotus
 image=http://mtgimage.com/card/gilded%20lotus.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

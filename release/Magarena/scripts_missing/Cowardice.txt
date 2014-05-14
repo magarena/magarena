@@ -1,6 +1,7 @@
 name=Cowardice
 url=http://magiccards.info/query?q=%21Cowardice
 image=http://mtgimage.com/card/cowardice.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

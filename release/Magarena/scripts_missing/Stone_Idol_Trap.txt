@@ -1,6 +1,7 @@
 name=Stone Idol Trap
 url=http://magiccards.info/query?q=%21Stone+Idol+Trap
 image=http://mtgimage.com/card/stone%20idol%20trap.jpg
+value=2.500
 rarity=R
 type=Instant
 subtype=Trap

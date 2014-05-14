@@ -1,6 +1,7 @@
 name=Goham Djinn
 url=http://magiccards.info/query?q=%21Goham+Djinn
 image=http://mtgimage.com/card/goham%20djinn.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Djinn

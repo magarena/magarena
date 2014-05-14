@@ -1,6 +1,7 @@
 name=Merfolk Observer
 url=http://magiccards.info/query?q=%21Merfolk+Observer
 image=http://mtgimage.com/card/merfolk%20observer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

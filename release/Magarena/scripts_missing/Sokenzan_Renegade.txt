@@ -1,6 +1,7 @@
 name=Sokenzan Renegade
 url=http://magiccards.info/query?q=%21Sokenzan+Renegade
 image=http://mtgimage.com/card/sokenzan%20renegade.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ogre,Samurai,Mercenary

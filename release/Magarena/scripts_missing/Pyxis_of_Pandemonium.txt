@@ -1,6 +1,7 @@
 name=Pyxis of Pandemonium
 url=http://magiccards.info/query?q=%21Pyxis+of+Pandemonium
 image=http://mtgimage.com/card/pyxis%20of%20pandemonium.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

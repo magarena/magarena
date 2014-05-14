@@ -1,6 +1,7 @@
 name=Relic Bind
 url=http://magiccards.info/query?q=%21Relic+Bind
 image=http://mtgimage.com/card/relic%20bind.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

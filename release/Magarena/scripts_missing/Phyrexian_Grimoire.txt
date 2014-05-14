@@ -1,6 +1,7 @@
 name=Phyrexian Grimoire
 url=http://magiccards.info/query?q=%21Phyrexian+Grimoire
 image=http://mtgimage.com/card/phyrexian%20grimoire.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,7 @@
 name=Etched Monstrosity
 url=http://magiccards.info/query?q=%21Etched+Monstrosity
 image=http://mtgimage.com/card/etched%20monstrosity.jpg
+value=2.500
 rarity=M
 type=Artifact,Creature
 subtype=Golem

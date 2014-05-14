@@ -1,6 +1,7 @@
 name=Stabwhisker the Odious
 url=http://magiccards.info/query?q=%21Stabwhisker+the+Odious
 image=http://mtgimage.com/card/stabwhisker%20the%20odious.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Rat,Shaman

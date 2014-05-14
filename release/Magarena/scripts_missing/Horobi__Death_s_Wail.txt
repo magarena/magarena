@@ -1,6 +1,7 @@
 name=Horobi, Death's Wail
 url=http://magiccards.info/query?q=%21Horobi%2C+Death%27s+Wail
 image=http://mtgimage.com/card/horobi%2C%20death%27s%20wail.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

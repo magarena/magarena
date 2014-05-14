@@ -1,6 +1,7 @@
 name=Meltdown
 url=http://magiccards.info/query?q=%21Meltdown
 image=http://mtgimage.com/card/meltdown.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={X}{R}

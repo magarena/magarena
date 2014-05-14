@@ -1,6 +1,7 @@
 name=Nessian Wilds Ravager
 url=http://magiccards.info/query?q=%21Nessian+Wilds+Ravager
 image=http://mtgimage.com/card/nessian%20wilds%20ravager.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Hydra

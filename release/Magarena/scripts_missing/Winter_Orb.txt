@@ -1,6 +1,7 @@
 name=Winter Orb
 url=http://magiccards.info/query?q=%21Winter+Orb
 image=http://mtgimage.com/card/winter%20orb.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

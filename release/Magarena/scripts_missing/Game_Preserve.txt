@@ -1,6 +1,7 @@
 name=Game Preserve
 url=http://magiccards.info/query?q=%21Game+Preserve
 image=http://mtgimage.com/card/game%20preserve.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}

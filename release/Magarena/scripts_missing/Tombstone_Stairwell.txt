@@ -1,6 +1,7 @@
 name=Tombstone Stairwell
 url=http://magiccards.info/query?q=%21Tombstone+Stairwell
 image=http://mtgimage.com/card/tombstone%20stairwell.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

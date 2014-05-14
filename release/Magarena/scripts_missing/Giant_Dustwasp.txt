@@ -1,6 +1,7 @@
 name=Giant Dustwasp
 url=http://magiccards.info/query?q=%21Giant+Dustwasp
 image=http://mtgimage.com/card/giant%20dustwasp.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Insect

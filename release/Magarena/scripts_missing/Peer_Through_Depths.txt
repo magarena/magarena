@@ -1,6 +1,7 @@
 name=Peer Through Depths
 url=http://magiccards.info/query?q=%21Peer+Through+Depths
 image=http://mtgimage.com/card/peer%20through%20depths.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

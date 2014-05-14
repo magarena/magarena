@@ -1,6 +1,7 @@
 name=Spontaneous Generation
 url=http://magiccards.info/query?q=%21Spontaneous+Generation
 image=http://mtgimage.com/card/spontaneous%20generation.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}

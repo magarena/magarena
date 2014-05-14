@@ -1,6 +1,7 @@
 name=Massacre
 url=http://magiccards.info/query?q=%21Massacre
 image=http://mtgimage.com/card/massacre.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

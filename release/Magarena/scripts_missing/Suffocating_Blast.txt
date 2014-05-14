@@ -1,6 +1,7 @@
 name=Suffocating Blast
 url=http://magiccards.info/query?q=%21Suffocating+Blast
 image=http://mtgimage.com/card/suffocating%20blast.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{U}{U}{R}

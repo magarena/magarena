@@ -1,6 +1,7 @@
 name=Reviving Vapors
 url=http://magiccards.info/query?q=%21Reviving+Vapors
 image=http://mtgimage.com/card/reviving%20vapors.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{W}{U}

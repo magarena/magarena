@@ -1,6 +1,7 @@
 name=Sakashima the Impostor
 url=http://magiccards.info/query?q=%21Sakashima+the+Impostor
 image=http://mtgimage.com/card/sakashima%20the%20impostor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Rogue

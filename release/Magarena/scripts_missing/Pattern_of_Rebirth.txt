@@ -1,6 +1,7 @@
 name=Pattern of Rebirth
 url=http://magiccards.info/query?q=%21Pattern+of+Rebirth
 image=http://mtgimage.com/card/pattern%20of%20rebirth.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

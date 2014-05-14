@@ -1,6 +1,7 @@
 name=Capricious Efreet
 url=http://magiccards.info/query?q=%21Capricious+Efreet
 image=http://mtgimage.com/card/capricious%20efreet.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Efreet

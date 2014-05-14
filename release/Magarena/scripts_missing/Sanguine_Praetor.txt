@@ -1,6 +1,7 @@
 name=Sanguine Praetor
 url=http://magiccards.info/query?q=%21Sanguine+Praetor
 image=http://mtgimage.com/card/sanguine%20praetor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar,Praetor

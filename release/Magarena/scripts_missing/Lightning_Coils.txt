@@ -1,6 +1,7 @@
 name=Lightning Coils
 url=http://magiccards.info/query?q=%21Lightning+Coils
 image=http://mtgimage.com/card/lightning%20coils.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

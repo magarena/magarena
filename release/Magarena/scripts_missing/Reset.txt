@@ -1,6 +1,7 @@
 name=Reset
 url=http://magiccards.info/query?q=%21Reset
 image=http://mtgimage.com/card/reset.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}{U}

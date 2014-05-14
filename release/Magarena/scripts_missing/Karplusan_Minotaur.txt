@@ -1,6 +1,7 @@
 name=Karplusan Minotaur
 url=http://magiccards.info/query?q=%21Karplusan+Minotaur
 image=http://mtgimage.com/card/karplusan%20minotaur.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Minotaur,Warrior

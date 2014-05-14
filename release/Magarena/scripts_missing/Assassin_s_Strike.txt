@@ -1,6 +1,7 @@
 name=Assassin's Strike
 url=http://magiccards.info/query?q=%21Assassin%27s+Strike
 image=http://mtgimage.com/card/assassin%27s%20strike.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}{B}

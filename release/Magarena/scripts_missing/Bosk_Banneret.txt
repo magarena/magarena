@@ -1,6 +1,7 @@
 name=Bosk Banneret
 url=http://magiccards.info/query?q=%21Bosk+Banneret
 image=http://mtgimage.com/card/bosk%20banneret.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Treefolk,Shaman

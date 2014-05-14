@@ -1,6 +1,7 @@
 name=Stinkweed Imp
 url=http://magiccards.info/query?q=%21Stinkweed+Imp
 image=http://mtgimage.com/card/stinkweed%20imp.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Imp

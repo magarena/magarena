@@ -1,6 +1,7 @@
 name=Proclamation of Rebirth
 url=http://magiccards.info/query?q=%21Proclamation+of+Rebirth
 image=http://mtgimage.com/card/proclamation%20of%20rebirth.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{W}

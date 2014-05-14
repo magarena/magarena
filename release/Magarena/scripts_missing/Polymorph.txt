@@ -1,6 +1,7 @@
 name=Polymorph
 url=http://magiccards.info/query?q=%21Polymorph
 image=http://mtgimage.com/card/polymorph.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}

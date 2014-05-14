@@ -1,6 +1,7 @@
 name=Arcane Denial
 url=http://magiccards.info/query?q=%21Arcane+Denial
 image=http://mtgimage.com/card/arcane%20denial1.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

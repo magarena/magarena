@@ -1,6 +1,7 @@
 name=Desecrator Hag
 url=http://magiccards.info/query?q=%21Desecrator+Hag
 image=http://mtgimage.com/card/desecrator%20hag.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Hag

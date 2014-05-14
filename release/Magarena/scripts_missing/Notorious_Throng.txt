@@ -1,6 +1,7 @@
 name=Notorious Throng
 url=http://magiccards.info/query?q=%21Notorious+Throng
 image=http://mtgimage.com/card/notorious%20throng.jpg
+value=2.500
 rarity=R
 type=Tribal,Sorcery
 subtype=Rogue

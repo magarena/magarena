@@ -1,6 +1,7 @@
 name=Hurly-Burly
 url=http://magiccards.info/query?q=%21Hurly-Burly
 image=http://mtgimage.com/card/hurly-burly.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={1}{R}

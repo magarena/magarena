@@ -1,6 +1,7 @@
 name=Barbed Shocker
 url=http://magiccards.info/query?q=%21Barbed+Shocker
 image=http://mtgimage.com/card/barbed%20shocker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Insect

@@ -1,6 +1,7 @@
 name=Tears of Rage
 url=http://magiccards.info/query?q=%21Tears+of+Rage
 image=http://mtgimage.com/card/tears%20of%20rage.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{R}{R}

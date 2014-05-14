@@ -1,6 +1,7 @@
 name=Roterothopter
 url=http://magiccards.info/query?q=%21Roterothopter
 image=http://mtgimage.com/card/roterothopter.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Thopter

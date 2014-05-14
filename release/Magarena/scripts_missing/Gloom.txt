@@ -1,6 +1,7 @@
 name=Gloom
 url=http://magiccards.info/query?q=%21Gloom
 image=http://mtgimage.com/card/gloom.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{B}

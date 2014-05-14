@@ -1,6 +1,7 @@
 name=Apes of Rath
 url=http://magiccards.info/query?q=%21Apes+of+Rath
 image=http://mtgimage.com/card/apes%20of%20rath.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ape

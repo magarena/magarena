@@ -1,6 +1,7 @@
 name=Impulsive Maneuvers
 url=http://magiccards.info/query?q=%21Impulsive+Maneuvers
 image=http://mtgimage.com/card/impulsive%20maneuvers.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}{R}

@@ -1,6 +1,7 @@
 name=Convalescent Care
 url=http://magiccards.info/query?q=%21Convalescent+Care
 image=http://mtgimage.com/card/convalescent%20care.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

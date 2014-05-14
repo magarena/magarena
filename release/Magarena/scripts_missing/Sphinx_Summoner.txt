@@ -1,6 +1,7 @@
 name=Sphinx Summoner
 url=http://magiccards.info/query?q=%21Sphinx+Summoner
 image=http://mtgimage.com/card/sphinx%20summoner.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Sphinx

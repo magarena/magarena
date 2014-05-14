@@ -1,6 +1,7 @@
 name=Pallimud
 url=http://magiccards.info/query?q=%21Pallimud
 image=http://mtgimage.com/card/pallimud.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

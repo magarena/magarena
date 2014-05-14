@@ -1,6 +1,7 @@
 name=Commando Raid
 url=http://magiccards.info/query?q=%21Commando+Raid
 image=http://mtgimage.com/card/commando%20raid.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{R}

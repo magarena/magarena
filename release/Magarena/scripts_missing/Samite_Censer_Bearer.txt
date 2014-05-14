@@ -1,6 +1,7 @@
 name=Samite Censer-Bearer
 url=http://magiccards.info/query?q=%21Samite+Censer-Bearer
 image=http://mtgimage.com/card/samite%20censer-bearer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Rebel,Cleric

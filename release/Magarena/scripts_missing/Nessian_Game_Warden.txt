@@ -1,6 +1,7 @@
 name=Nessian Game Warden
 url=http://magiccards.info/query?q=%21Nessian+Game+Warden
 image=http://mtgimage.com/card/nessian%20game%20warden.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

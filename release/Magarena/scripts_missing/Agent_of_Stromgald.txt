@@ -1,6 +1,7 @@
 name=Agent of Stromgald
 url=http://magiccards.info/query?q=%21Agent+of+Stromgald
 image=http://mtgimage.com/card/agent%20of%20stromgald1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Knight

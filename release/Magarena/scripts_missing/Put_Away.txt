@@ -1,6 +1,7 @@
 name=Put Away
 url=http://magiccards.info/query?q=%21Put+Away
 image=http://mtgimage.com/card/put%20away.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{U}{U}

@@ -1,6 +1,7 @@
 name=Keeper of the Mind
 url=http://magiccards.info/query?q=%21Keeper+of+the+Mind
 image=http://mtgimage.com/card/keeper%20of%20the%20mind.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

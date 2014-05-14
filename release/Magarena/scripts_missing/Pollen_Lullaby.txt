@@ -1,6 +1,7 @@
 name=Pollen Lullaby
 url=http://magiccards.info/query?q=%21Pollen+Lullaby
 image=http://mtgimage.com/card/pollen%20lullaby.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}

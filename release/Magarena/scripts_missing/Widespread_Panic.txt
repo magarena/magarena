@@ -1,6 +1,7 @@
 name=Widespread Panic
 url=http://magiccards.info/query?q=%21Widespread+Panic
 image=http://mtgimage.com/card/widespread%20panic.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

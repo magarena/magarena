@@ -1,6 +1,7 @@
 name=Wrench Mind
 url=http://magiccards.info/query?q=%21Wrench+Mind
 image=http://mtgimage.com/card/wrench%20mind.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={B}{B}

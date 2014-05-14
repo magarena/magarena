@@ -1,6 +1,7 @@
 name=Cut the Tethers
 url=http://magiccards.info/query?q=%21Cut+the+Tethers
 image=http://mtgimage.com/card/cut%20the%20tethers.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{U}{U}

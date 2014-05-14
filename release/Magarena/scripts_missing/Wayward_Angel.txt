@@ -1,6 +1,7 @@
 name=Wayward Angel
 url=http://magiccards.info/query?q=%21Wayward+Angel
 image=http://mtgimage.com/card/wayward%20angel.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel,Horror

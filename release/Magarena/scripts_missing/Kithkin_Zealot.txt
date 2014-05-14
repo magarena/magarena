@@ -1,6 +1,7 @@
 name=Kithkin Zealot
 url=http://magiccards.info/query?q=%21Kithkin+Zealot
 image=http://mtgimage.com/card/kithkin%20zealot.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kithkin,Cleric

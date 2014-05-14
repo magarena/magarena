@@ -1,6 +1,7 @@
 name=Phosphorescent Feast
 url=http://magiccards.info/query?q=%21Phosphorescent+Feast
 image=http://mtgimage.com/card/phosphorescent%20feast.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{G}{G}{G}

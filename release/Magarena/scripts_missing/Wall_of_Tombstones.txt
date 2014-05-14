@@ -1,6 +1,7 @@
 name=Wall of Tombstones
 url=http://magiccards.info/query?q=%21Wall+of+Tombstones
 image=http://mtgimage.com/card/wall%20of%20tombstones.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wall

@@ -1,6 +1,7 @@
 name=Arcum's Whistle
 url=http://magiccards.info/query?q=%21Arcum%27s+Whistle
 image=http://mtgimage.com/card/arcum%27s%20whistle.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

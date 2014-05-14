@@ -1,6 +1,7 @@
 name=Undead Alchemist
 url=http://magiccards.info/query?q=%21Undead+Alchemist
 image=http://mtgimage.com/card/undead%20alchemist.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie

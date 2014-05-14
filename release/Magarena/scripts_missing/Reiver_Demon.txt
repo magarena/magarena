@@ -1,6 +1,7 @@
 name=Reiver Demon
 url=http://magiccards.info/query?q=%21Reiver+Demon
 image=http://mtgimage.com/card/reiver%20demon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Demon

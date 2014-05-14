@@ -1,6 +1,7 @@
 name=Calming Verse
 url=http://magiccards.info/query?q=%21Calming+Verse
 image=http://mtgimage.com/card/calming%20verse.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}

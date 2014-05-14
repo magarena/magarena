@@ -1,6 +1,7 @@
 name=Spinning Darkness
 url=http://magiccards.info/query?q=%21Spinning+Darkness
 image=http://mtgimage.com/card/spinning%20darkness.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={4}{B}{B}

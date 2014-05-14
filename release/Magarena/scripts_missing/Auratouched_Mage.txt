@@ -1,6 +1,7 @@
 name=Auratouched Mage
 url=http://magiccards.info/query?q=%21Auratouched+Mage
 image=http://mtgimage.com/card/auratouched%20mage.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

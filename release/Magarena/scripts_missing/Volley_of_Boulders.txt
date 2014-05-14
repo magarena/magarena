@@ -1,6 +1,7 @@
 name=Volley of Boulders
 url=http://magiccards.info/query?q=%21Volley+of+Boulders
 image=http://mtgimage.com/card/volley%20of%20boulders.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={8}{R}

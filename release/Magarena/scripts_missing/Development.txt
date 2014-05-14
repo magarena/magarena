@@ -1,6 +1,7 @@
 name=Development
 url=http://magiccards.info/query?q=%21Development
 image=http://mtgimage.com/card/researchdevelopment.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{R}

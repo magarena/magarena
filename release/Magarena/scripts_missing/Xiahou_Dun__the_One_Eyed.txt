@@ -1,6 +1,7 @@
 name=Xiahou Dun, the One-Eyed
 url=http://magiccards.info/query?q=%21Xiahou+Dun%2C+the+One-Eyed
 image=http://mtgimage.com/card/xiahou%20dun%2C%20the%20one-eyed.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

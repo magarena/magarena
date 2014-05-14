@@ -1,6 +1,7 @@
 name=Angelic Protector
 url=http://magiccards.info/query?q=%21Angelic+Protector
 image=http://mtgimage.com/card/angelic%20protector.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Angel

@@ -1,6 +1,7 @@
 name=Runed Servitor
 url=http://magiccards.info/query?q=%21Runed+Servitor
 image=http://mtgimage.com/card/runed%20servitor.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Construct

@@ -1,6 +1,7 @@
 name=Beast Walkers
 url=http://magiccards.info/query?q=%21Beast+Walkers
 image=http://mtgimage.com/card/beast%20walkers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Beast,Soldier

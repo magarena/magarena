@@ -1,6 +1,7 @@
 name=Azorius Justiciar
 url=http://magiccards.info/query?q=%21Azorius+Justiciar
 image=http://mtgimage.com/card/azorius%20justiciar.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

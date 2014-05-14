@@ -1,6 +1,7 @@
 name=Dragonspeaker Shaman
 url=http://magiccards.info/query?q=%21Dragonspeaker+Shaman
 image=http://mtgimage.com/card/dragonspeaker%20shaman.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Barbarian,Shaman

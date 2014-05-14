@@ -1,6 +1,7 @@
 name=Guild Feud
 url=http://magiccards.info/query?q=%21Guild+Feud
 image=http://mtgimage.com/card/guild%20feud.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={5}{R}

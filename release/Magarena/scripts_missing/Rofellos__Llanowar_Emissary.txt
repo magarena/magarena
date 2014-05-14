@@ -1,6 +1,7 @@
 name=Rofellos, Llanowar Emissary
 url=http://magiccards.info/query?q=%21Rofellos%2C+Llanowar+Emissary
 image=http://mtgimage.com/card/rofellos%2C%20llanowar%20emissary.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Druid

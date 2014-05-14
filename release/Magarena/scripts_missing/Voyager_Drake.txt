@@ -1,6 +1,7 @@
 name=Voyager Drake
 url=http://magiccards.info/query?q=%21Voyager+Drake
 image=http://mtgimage.com/card/voyager%20drake.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Drake

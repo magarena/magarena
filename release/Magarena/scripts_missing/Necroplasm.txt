@@ -1,6 +1,7 @@
 name=Necroplasm
 url=http://magiccards.info/query?q=%21Necroplasm
 image=http://mtgimage.com/card/necroplasm.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Ooze

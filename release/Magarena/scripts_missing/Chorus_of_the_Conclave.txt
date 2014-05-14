@@ -1,6 +1,7 @@
 name=Chorus of the Conclave
 url=http://magiccards.info/query?q=%21Chorus+of+the+Conclave
 image=http://mtgimage.com/card/chorus%20of%20the%20conclave.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dryad

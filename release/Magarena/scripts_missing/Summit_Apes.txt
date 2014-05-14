@@ -1,6 +1,7 @@
 name=Summit Apes
 url=http://magiccards.info/query?q=%21Summit+Apes
 image=http://mtgimage.com/card/summit%20apes.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ape

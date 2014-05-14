@@ -1,6 +1,7 @@
 name=Rush of Knowledge
 url=http://magiccards.info/query?q=%21Rush+of+Knowledge
 image=http://mtgimage.com/card/rush%20of%20knowledge.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={4}{U}

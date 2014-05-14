@@ -1,6 +1,7 @@
 name=Security Detail
 url=http://magiccards.info/query?q=%21Security+Detail
 image=http://mtgimage.com/card/security%20detail.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{W}

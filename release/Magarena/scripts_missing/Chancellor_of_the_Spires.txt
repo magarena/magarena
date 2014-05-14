@@ -1,6 +1,7 @@
 name=Chancellor of the Spires
 url=http://magiccards.info/query?q=%21Chancellor+of+the+Spires
 image=http://mtgimage.com/card/chancellor%20of%20the%20spires.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Sphinx

@@ -1,6 +1,7 @@
 name=Colossus of Akros
 url=http://magiccards.info/query?q=%21Colossus+of+Akros
 image=http://mtgimage.com/card/colossus%20of%20akros.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem

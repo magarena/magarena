@@ -1,6 +1,7 @@
 name=Standard Bearer
 url=http://magiccards.info/query?q=%21Standard+Bearer
 image=http://mtgimage.com/card/standard%20bearer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Flagbearer

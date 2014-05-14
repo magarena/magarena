@@ -1,6 +1,7 @@
 name=Cleansing Meditation
 url=http://magiccards.info/query?q=%21Cleansing+Meditation
 image=http://mtgimage.com/card/cleansing%20meditation.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{W}{W}

@@ -1,6 +1,7 @@
 name=Pack Hunt
 url=http://magiccards.info/query?q=%21Pack+Hunt
 image=http://mtgimage.com/card/pack%20hunt.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}

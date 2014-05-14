@@ -1,6 +1,7 @@
 name=Wheel of Torture
 url=http://magiccards.info/query?q=%21Wheel+of+Torture
 image=http://mtgimage.com/card/wheel%20of%20torture.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

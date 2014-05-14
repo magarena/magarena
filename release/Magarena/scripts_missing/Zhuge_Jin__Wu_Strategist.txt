@@ -1,6 +1,7 @@
 name=Zhuge Jin, Wu Strategist
 url=http://magiccards.info/query?q=%21Zhuge+Jin%2C+Wu+Strategist
 image=http://mtgimage.com/card/zhuge%20jin%2C%20wu%20strategist.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Advisor

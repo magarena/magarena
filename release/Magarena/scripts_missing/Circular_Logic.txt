@@ -1,6 +1,7 @@
 name=Circular Logic
 url=http://magiccards.info/query?q=%21Circular+Logic
 image=http://mtgimage.com/card/circular%20logic.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{U}

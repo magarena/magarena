@@ -1,6 +1,7 @@
 name=Primitive Justice
 url=http://magiccards.info/query?q=%21Primitive+Justice
 image=http://mtgimage.com/card/primitive%20justice.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}

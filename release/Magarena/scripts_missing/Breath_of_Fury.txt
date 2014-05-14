@@ -1,6 +1,7 @@
 name=Breath of Fury
 url=http://magiccards.info/query?q=%21Breath+of+Fury
 image=http://mtgimage.com/card/breath%20of%20fury.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

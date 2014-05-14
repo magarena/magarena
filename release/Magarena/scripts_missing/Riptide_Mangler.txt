@@ -1,6 +1,7 @@
 name=Riptide Mangler
 url=http://magiccards.info/query?q=%21Riptide+Mangler
 image=http://mtgimage.com/card/riptide%20mangler.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

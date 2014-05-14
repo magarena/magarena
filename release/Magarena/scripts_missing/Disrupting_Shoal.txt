@@ -1,6 +1,7 @@
 name=Disrupting Shoal
 url=http://magiccards.info/query?q=%21Disrupting+Shoal
 image=http://mtgimage.com/card/disrupting%20shoal.jpg
+value=2.500
 rarity=R
 type=Instant
 subtype=Arcane

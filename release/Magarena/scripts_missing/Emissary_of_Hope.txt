@@ -1,6 +1,7 @@
 name=Emissary of Hope
 url=http://magiccards.info/query?q=%21Emissary+of+Hope
 image=http://mtgimage.com/card/emissary%20of%20hope.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit

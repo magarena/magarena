@@ -1,6 +1,7 @@
 name=Tangle Golem
 url=http://magiccards.info/query?q=%21Tangle+Golem
 image=http://mtgimage.com/card/tangle%20golem.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Golem

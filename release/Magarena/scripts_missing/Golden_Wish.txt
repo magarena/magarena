@@ -1,6 +1,7 @@
 name=Golden Wish
 url=http://magiccards.info/query?q=%21Golden+Wish
 image=http://mtgimage.com/card/golden%20wish.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{W}{W}

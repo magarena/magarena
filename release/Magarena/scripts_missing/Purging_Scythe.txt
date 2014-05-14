@@ -1,6 +1,7 @@
 name=Purging Scythe
 url=http://magiccards.info/query?q=%21Purging+Scythe
 image=http://mtgimage.com/card/purging%20scythe.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

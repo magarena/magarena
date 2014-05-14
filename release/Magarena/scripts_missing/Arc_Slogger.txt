@@ -1,6 +1,7 @@
 name=Arc-Slogger
 url=http://magiccards.info/query?q=%21Arc-Slogger
 image=http://mtgimage.com/card/arc-slogger.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

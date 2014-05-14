@@ -1,6 +1,7 @@
 name=Elemental Augury
 url=http://magiccards.info/query?q=%21Elemental+Augury
 image=http://mtgimage.com/card/elemental%20augury.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={U}{B}{R}

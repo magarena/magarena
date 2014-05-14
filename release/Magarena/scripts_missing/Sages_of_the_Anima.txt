@@ -1,6 +1,7 @@
 name=Sages of the Anima
 url=http://magiccards.info/query?q=%21Sages+of+the+Anima
 image=http://mtgimage.com/card/sages%20of%20the%20anima.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Wizard

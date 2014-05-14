@@ -1,6 +1,7 @@
 name=Adarkar Valkyrie
 url=http://magiccards.info/query?q=%21Adarkar+Valkyrie
 image=http://mtgimage.com/card/adarkar%20valkyrie.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

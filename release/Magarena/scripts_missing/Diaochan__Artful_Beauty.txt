@@ -1,6 +1,7 @@
 name=Diaochan, Artful Beauty
 url=http://magiccards.info/query?q=%21Diaochan%2C+Artful+Beauty
 image=http://mtgimage.com/card/diaochan%2C%20artful%20beauty.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Advisor

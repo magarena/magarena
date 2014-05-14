@@ -1,6 +1,7 @@
 name=Solidarity of Heroes
 url=http://magiccards.info/query?q=%21Solidarity+of+Heroes
 image=http://mtgimage.com/card/solidarity%20of%20heroes.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{G}

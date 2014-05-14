@@ -1,6 +1,7 @@
 name=Molten-Tail Masticore
 url=http://magiccards.info/query?q=%21Molten-Tail+Masticore
 image=http://mtgimage.com/card/molten-tail%20masticore.jpg
+value=2.500
 rarity=M
 type=Artifact,Creature
 subtype=Masticore

@@ -1,6 +1,7 @@
 name=Stalking Yeti
 url=http://magiccards.info/query?q=%21Stalking+Yeti
 image=http://mtgimage.com/card/stalking%20yeti.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Yeti

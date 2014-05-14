@@ -1,6 +1,7 @@
 name=Wizened Snitches
 url=http://magiccards.info/query?q=%21Wizened+Snitches
 image=http://mtgimage.com/card/wizened%20snitches.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Faerie,Rogue

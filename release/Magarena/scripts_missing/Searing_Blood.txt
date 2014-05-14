@@ -1,6 +1,7 @@
 name=Searing Blood
 url=http://magiccards.info/query?q=%21Searing+Blood
 image=http://mtgimage.com/card/searing%20blood.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={R}{R}

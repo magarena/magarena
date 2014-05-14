@@ -1,6 +1,7 @@
 name=Wrap in Flames
 url=http://magiccards.info/query?q=%21Wrap+in+Flames
 image=http://mtgimage.com/card/wrap%20in%20flames.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{R}

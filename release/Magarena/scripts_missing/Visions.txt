@@ -1,6 +1,7 @@
 name=Visions
 url=http://magiccards.info/query?q=%21Visions
 image=http://mtgimage.com/card/visions.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={W}

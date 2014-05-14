@@ -1,6 +1,7 @@
 name=Battletide Alchemist
 url=http://magiccards.info/query?q=%21Battletide+Alchemist
 image=http://mtgimage.com/card/battletide%20alchemist.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Kithkin,Cleric

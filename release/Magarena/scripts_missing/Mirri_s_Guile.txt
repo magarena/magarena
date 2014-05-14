@@ -1,6 +1,7 @@
 name=Mirri's Guile
 url=http://magiccards.info/query?q=%21Mirri%27s+Guile
 image=http://mtgimage.com/card/mirri%27s%20guile.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={G}

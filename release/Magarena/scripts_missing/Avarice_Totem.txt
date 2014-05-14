@@ -1,6 +1,7 @@
 name=Avarice Totem
 url=http://magiccards.info/query?q=%21Avarice+Totem
 image=http://mtgimage.com/card/avarice%20totem.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

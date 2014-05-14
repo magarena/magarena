@@ -1,6 +1,7 @@
 name=Hazezon Tamar
 url=http://magiccards.info/query?q=%21Hazezon+Tamar
 image=http://mtgimage.com/card/hazezon%20tamar.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Warrior

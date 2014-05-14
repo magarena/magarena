@@ -1,6 +1,7 @@
 name=Necrologia
 url=http://magiccards.info/query?q=%21Necrologia
 image=http://mtgimage.com/card/necrologia.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{B}{B}

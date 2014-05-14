@@ -1,6 +1,7 @@
 name=Myojin of Life's Web
 url=http://magiccards.info/query?q=%21Myojin+of+Life%27s+Web
 image=http://mtgimage.com/card/myojin%20of%20life%27s%20web.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

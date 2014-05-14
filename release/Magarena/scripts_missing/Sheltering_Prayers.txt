@@ -1,6 +1,7 @@
 name=Sheltering Prayers
 url=http://magiccards.info/query?q=%21Sheltering+Prayers
 image=http://mtgimage.com/card/sheltering%20prayers.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={W}

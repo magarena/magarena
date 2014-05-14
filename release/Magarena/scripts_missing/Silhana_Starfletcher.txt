@@ -1,6 +1,7 @@
 name=Silhana Starfletcher
 url=http://magiccards.info/query?q=%21Silhana+Starfletcher
 image=http://mtgimage.com/card/silhana%20starfletcher.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Druid,Archer

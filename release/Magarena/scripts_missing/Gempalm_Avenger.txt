@@ -1,6 +1,7 @@
 name=Gempalm Avenger
 url=http://magiccards.info/query?q=%21Gempalm+Avenger
 image=http://mtgimage.com/card/gempalm%20avenger.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

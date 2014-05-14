@@ -1,6 +1,7 @@
 name=Curtain of Light
 url=http://magiccards.info/query?q=%21Curtain+of+Light
 image=http://mtgimage.com/card/curtain%20of%20light.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}

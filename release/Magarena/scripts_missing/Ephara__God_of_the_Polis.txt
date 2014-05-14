@@ -1,6 +1,7 @@
 name=Ephara, God of the Polis
 url=http://magiccards.info/query?q=%21Ephara%2C+God+of+the+Polis
 image=http://mtgimage.com/card/ephara%2C%20god%20of%20the%20polis.jpg
+value=2.500
 rarity=M
 type=Enchantment,Creature
 subtype=God

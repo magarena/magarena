@@ -1,6 +1,7 @@
 name=Yavimaya Dryad
 url=http://magiccards.info/query?q=%21Yavimaya+Dryad
 image=http://mtgimage.com/card/yavimaya%20dryad.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Dryad

@@ -1,6 +1,7 @@
 name=Krovikan Horror
 url=http://magiccards.info/query?q=%21Krovikan+Horror
 image=http://mtgimage.com/card/krovikan%20horror.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Horror,Spirit

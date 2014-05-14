@@ -1,6 +1,7 @@
 name=Sower of Temptation
 url=http://magiccards.info/query?q=%21Sower+of+Temptation
 image=http://mtgimage.com/card/sower%20of%20temptation.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Faerie,Wizard

@@ -1,6 +1,7 @@
 name=Predator Ooze
 url=http://magiccards.info/query?q=%21Predator+Ooze
 image=http://mtgimage.com/card/predator%20ooze.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Ooze

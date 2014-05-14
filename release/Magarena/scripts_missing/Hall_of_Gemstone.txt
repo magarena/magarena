@@ -1,6 +1,7 @@
 name=Hall of Gemstone
 url=http://magiccards.info/query?q=%21Hall+of+Gemstone
 image=http://mtgimage.com/card/hall%20of%20gemstone.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}{G}

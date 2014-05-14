@@ -1,6 +1,7 @@
 name=Vitality Charm
 url=http://magiccards.info/query?q=%21Vitality+Charm
 image=http://mtgimage.com/card/vitality%20charm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}

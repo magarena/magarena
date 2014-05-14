@@ -1,6 +1,7 @@
 name=Incandescent Soulstoke
 url=http://magiccards.info/query?q=%21Incandescent+Soulstoke
 image=http://mtgimage.com/card/incandescent%20soulstoke.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Shaman

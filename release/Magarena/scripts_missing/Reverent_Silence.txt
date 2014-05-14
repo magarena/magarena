@@ -1,6 +1,7 @@
 name=Reverent Silence
 url=http://magiccards.info/query?q=%21Reverent+Silence
 image=http://mtgimage.com/card/reverent%20silence.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}

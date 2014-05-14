@@ -1,6 +1,7 @@
 name=Aven Trailblazer
 url=http://magiccards.info/query?q=%21Aven+Trailblazer
 image=http://mtgimage.com/card/aven%20trailblazer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Bird,Soldier

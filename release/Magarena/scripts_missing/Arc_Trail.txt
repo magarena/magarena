@@ -1,6 +1,7 @@
 name=Arc Trail
 url=http://magiccards.info/query?q=%21Arc+Trail
 image=http://mtgimage.com/card/arc%20trail.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}

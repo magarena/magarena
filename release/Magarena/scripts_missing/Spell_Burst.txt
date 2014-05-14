@@ -1,6 +1,7 @@
 name=Spell Burst
 url=http://magiccards.info/query?q=%21Spell+Burst
 image=http://mtgimage.com/card/spell%20burst.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={X}{U}

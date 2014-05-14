@@ -1,6 +1,7 @@
 name=Grindstone
 url=http://magiccards.info/query?q=%21Grindstone
 image=http://mtgimage.com/card/grindstone.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

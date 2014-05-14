@@ -1,6 +1,7 @@
 name=Barbed Sextant
 url=http://magiccards.info/query?q=%21Barbed+Sextant
 image=http://mtgimage.com/card/barbed%20sextant.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={1}

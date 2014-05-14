@@ -1,6 +1,7 @@
 name=Cyclopean Giant
 url=http://magiccards.info/query?q=%21Cyclopean+Giant
 image=http://mtgimage.com/card/cyclopean%20giant.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Giant

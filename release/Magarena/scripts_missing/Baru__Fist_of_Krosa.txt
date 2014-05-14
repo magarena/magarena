@@ -1,6 +1,7 @@
 name=Baru, Fist of Krosa
 url=http://magiccards.info/query?q=%21Baru%2C+Fist+of+Krosa
 image=http://mtgimage.com/card/baru%2C%20fist%20of%20krosa.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Druid

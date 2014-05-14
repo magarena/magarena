@@ -1,6 +1,7 @@
 name=Akki Lavarunner
 url=http://magiccards.info/query?q=%21Akki+Lavarunner
 image=http://mtgimage.com/card/akki%20lavarunner.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Goblin,Warrior

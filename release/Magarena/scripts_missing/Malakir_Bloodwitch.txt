@@ -1,6 +1,7 @@
 name=Malakir Bloodwitch
 url=http://magiccards.info/query?q=%21Malakir+Bloodwitch
 image=http://mtgimage.com/card/malakir%20bloodwitch.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire,Shaman

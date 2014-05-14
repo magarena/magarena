@@ -1,6 +1,7 @@
 name=Future Sight
 url=http://magiccards.info/query?q=%21Future+Sight
 image=http://mtgimage.com/card/future%20sight.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}{U}

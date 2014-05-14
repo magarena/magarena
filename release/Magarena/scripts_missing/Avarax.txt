@@ -1,6 +1,7 @@
 name=Avarax
 url=http://magiccards.info/query?q=%21Avarax
 image=http://mtgimage.com/card/avarax.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

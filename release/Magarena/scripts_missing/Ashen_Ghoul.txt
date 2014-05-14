@@ -1,6 +1,7 @@
 name=Ashen Ghoul
 url=http://magiccards.info/query?q=%21Ashen+Ghoul
 image=http://mtgimage.com/card/ashen%20ghoul.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie

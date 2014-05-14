@@ -1,6 +1,7 @@
 name=Morbid Bloom
 url=http://magiccards.info/query?q=%21Morbid+Bloom
 image=http://mtgimage.com/card/morbid%20bloom.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}{G}

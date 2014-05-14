@@ -1,6 +1,7 @@
 name=Forsaken City
 url=http://magiccards.info/query?q=%21Forsaken+City
 image=http://mtgimage.com/card/forsaken%20city.jpg
+value=2.500
 rarity=R
 type=Land
 ability=SN doesn't untap during your untap step.;\

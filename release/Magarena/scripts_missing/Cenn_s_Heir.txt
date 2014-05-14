@@ -1,6 +1,7 @@
 name=Cenn's Heir
 url=http://magiccards.info/query?q=%21Cenn%27s+Heir
 image=http://mtgimage.com/card/cenn%27s%20heir.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier

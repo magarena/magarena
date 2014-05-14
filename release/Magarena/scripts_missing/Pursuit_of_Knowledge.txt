@@ -1,6 +1,7 @@
 name=Pursuit of Knowledge
 url=http://magiccards.info/query?q=%21Pursuit+of+Knowledge
 image=http://mtgimage.com/card/pursuit%20of%20knowledge.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{W}

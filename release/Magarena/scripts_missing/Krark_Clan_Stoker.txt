@@ -1,6 +1,7 @@
 name=Krark-Clan Stoker
 url=http://magiccards.info/query?q=%21Krark-Clan+Stoker
 image=http://mtgimage.com/card/krark-clan%20stoker.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

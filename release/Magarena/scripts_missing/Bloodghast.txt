@@ -1,6 +1,7 @@
 name=Bloodghast
 url=http://magiccards.info/query?q=%21Bloodghast
 image=http://mtgimage.com/card/bloodghast.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire,Spirit

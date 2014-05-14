@@ -1,6 +1,7 @@
 name=Fellwar Stone
 url=http://magiccards.info/query?q=%21Fellwar+Stone
 image=http://mtgimage.com/card/fellwar%20stone.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Elven Palisade
 url=http://magiccards.info/query?q=%21Elven+Palisade
 image=http://mtgimage.com/card/elven%20palisade.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={G}

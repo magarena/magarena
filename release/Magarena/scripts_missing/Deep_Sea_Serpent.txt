@@ -1,6 +1,7 @@
 name=Deep-Sea Serpent
 url=http://magiccards.info/query?q=%21Deep-Sea+Serpent
 image=http://mtgimage.com/card/deep-sea%20serpent.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Serpent

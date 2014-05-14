@@ -1,6 +1,7 @@
 name=War Dance
 url=http://magiccards.info/query?q=%21War+Dance
 image=http://mtgimage.com/card/war%20dance.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={G}

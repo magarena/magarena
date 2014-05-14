@@ -1,6 +1,7 @@
 name=Fortune Thief
 url=http://magiccards.info/query?q=%21Fortune+Thief
 image=http://mtgimage.com/card/fortune%20thief.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Rogue

@@ -1,6 +1,7 @@
 name=Mishra, Artificer Prodigy
 url=http://magiccards.info/query?q=%21Mishra%2C+Artificer+Prodigy
 image=http://mtgimage.com/card/mishra%2C%20artificer%20prodigy.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Artificer

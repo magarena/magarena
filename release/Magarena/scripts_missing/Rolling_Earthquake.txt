@@ -1,6 +1,7 @@
 name=Rolling Earthquake
 url=http://magiccards.info/query?q=%21Rolling+Earthquake
 image=http://mtgimage.com/card/rolling%20earthquake.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}

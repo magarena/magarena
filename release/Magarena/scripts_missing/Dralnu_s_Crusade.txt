@@ -1,6 +1,7 @@
 name=Dralnu's Crusade
 url=http://magiccards.info/query?q=%21Dralnu%27s+Crusade
 image=http://mtgimage.com/card/dralnu%27s%20crusade.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{B}{R}

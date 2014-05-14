@@ -1,6 +1,7 @@
 name=Shimmering Glasskite
 url=http://magiccards.info/query?q=%21Shimmering+Glasskite
 image=http://mtgimage.com/card/shimmering%20glasskite.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Thopter Assembly
 url=http://magiccards.info/query?q=%21Thopter+Assembly
 image=http://mtgimage.com/card/thopter%20assembly.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Thopter

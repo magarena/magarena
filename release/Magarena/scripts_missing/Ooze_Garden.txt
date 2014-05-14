@@ -1,6 +1,7 @@
 name=Ooze Garden
 url=http://magiccards.info/query?q=%21Ooze+Garden
 image=http://mtgimage.com/card/ooze%20garden.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}

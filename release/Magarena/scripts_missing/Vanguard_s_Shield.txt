@@ -1,6 +1,7 @@
 name=Vanguard's Shield
 url=http://magiccards.info/query?q=%21Vanguard%27s+Shield
 image=http://mtgimage.com/card/vanguard%27s%20shield.jpg
+value=2.500
 rarity=C
 type=Artifact
 subtype=Equipment

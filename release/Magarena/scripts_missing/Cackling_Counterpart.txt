@@ -1,6 +1,7 @@
 name=Cackling Counterpart
 url=http://magiccards.info/query?q=%21Cackling+Counterpart
 image=http://mtgimage.com/card/cackling%20counterpart.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{U}{U}

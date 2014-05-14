@@ -1,6 +1,7 @@
 name=Corpse Harvester
 url=http://magiccards.info/query?q=%21Corpse+Harvester
 image=http://mtgimage.com/card/corpse%20harvester.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

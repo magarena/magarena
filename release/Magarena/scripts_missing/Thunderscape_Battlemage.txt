@@ -1,6 +1,7 @@
 name=Thunderscape Battlemage
 url=http://magiccards.info/query?q=%21Thunderscape+Battlemage
 image=http://mtgimage.com/card/thunderscape%20battlemage.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,7 @@
 name=Lignify
 url=http://magiccards.info/query?q=%21Lignify
 image=http://mtgimage.com/card/lignify.jpg
+value=2.500
 rarity=C
 type=Tribal,Enchantment
 subtype=Treefolk,Aura

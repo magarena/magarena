@@ -1,6 +1,7 @@
 name=Quicksilver Behemoth
 url=http://magiccards.info/query?q=%21Quicksilver+Behemoth
 image=http://mtgimage.com/card/quicksilver%20behemoth.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

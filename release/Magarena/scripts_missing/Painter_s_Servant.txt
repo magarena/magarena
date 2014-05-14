@@ -1,6 +1,7 @@
 name=Painter's Servant
 url=http://magiccards.info/query?q=%21Painter%27s+Servant
 image=http://mtgimage.com/card/painter%27s%20servant.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Scarecrow

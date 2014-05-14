@@ -1,6 +1,7 @@
 name=Touchstone
 url=http://magiccards.info/query?q=%21Touchstone
 image=http://mtgimage.com/card/touchstone.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Brain Gorgers
 url=http://magiccards.info/query?q=%21Brain+Gorgers
 image=http://mtgimage.com/card/brain%20gorgers.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

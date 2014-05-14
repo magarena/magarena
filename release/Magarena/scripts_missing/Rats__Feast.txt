@@ -1,6 +1,7 @@
 name=Rats' Feast
 url=http://magiccards.info/query?q=%21Rats%27+Feast
 image=http://mtgimage.com/card/rats%27%20feast.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={X}{B}

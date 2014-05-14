@@ -1,6 +1,7 @@
 name=Mana Web
 url=http://magiccards.info/query?q=%21Mana+Web
 image=http://mtgimage.com/card/mana%20web.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

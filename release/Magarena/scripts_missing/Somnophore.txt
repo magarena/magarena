@@ -1,6 +1,7 @@
 name=Somnophore
 url=http://magiccards.info/query?q=%21Somnophore
 image=http://mtgimage.com/card/somnophore.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Illusion

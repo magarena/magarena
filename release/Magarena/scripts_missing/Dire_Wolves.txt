@@ -1,6 +1,7 @@
 name=Dire Wolves
 url=http://magiccards.info/query?q=%21Dire+Wolves
 image=http://mtgimage.com/card/dire%20wolves.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wolf

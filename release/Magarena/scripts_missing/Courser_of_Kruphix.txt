@@ -1,6 +1,7 @@
 name=Courser of Kruphix
 url=http://magiccards.info/query?q=%21Courser+of+Kruphix
 image=http://mtgimage.com/card/courser%20of%20kruphix.jpg
+value=2.500
 rarity=R
 type=Enchantment,Creature
 subtype=Centaur

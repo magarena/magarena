@@ -1,6 +1,7 @@
 name=Gruul Ragebeast
 url=http://magiccards.info/query?q=%21Gruul+Ragebeast
 image=http://mtgimage.com/card/gruul%20ragebeast.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

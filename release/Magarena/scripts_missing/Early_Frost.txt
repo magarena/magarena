@@ -1,6 +1,7 @@
 name=Early Frost
 url=http://magiccards.info/query?q=%21Early+Frost
 image=http://mtgimage.com/card/early%20frost.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

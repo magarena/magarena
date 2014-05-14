@@ -1,6 +1,7 @@
 name=Stinkdrinker Bandit
 url=http://magiccards.info/query?q=%21Stinkdrinker+Bandit
 image=http://mtgimage.com/card/stinkdrinker%20bandit.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin,Rogue

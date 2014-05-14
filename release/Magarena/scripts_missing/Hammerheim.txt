@@ -1,6 +1,7 @@
 name=Hammerheim
 url=http://magiccards.info/query?q=%21Hammerheim
 image=http://mtgimage.com/card/hammerheim.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {R} to your mana pool.;\

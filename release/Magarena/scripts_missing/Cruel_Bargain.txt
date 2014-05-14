@@ -1,6 +1,7 @@
 name=Cruel Bargain
 url=http://magiccards.info/query?q=%21Cruel+Bargain
 image=http://mtgimage.com/card/cruel%20bargain.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={B}{B}{B}

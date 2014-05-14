@@ -1,6 +1,7 @@
 name=Predict
 url=http://magiccards.info/query?q=%21Predict
 image=http://mtgimage.com/card/predict.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{U}

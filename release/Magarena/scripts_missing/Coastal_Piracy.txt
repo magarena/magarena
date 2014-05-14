@@ -1,6 +1,7 @@
 name=Coastal Piracy
 url=http://magiccards.info/query?q=%21Coastal+Piracy
 image=http://mtgimage.com/card/coastal%20piracy.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{U}{U}

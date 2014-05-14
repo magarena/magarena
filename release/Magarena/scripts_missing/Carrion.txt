@@ -1,6 +1,7 @@
 name=Carrion
 url=http://magiccards.info/query?q=%21Carrion
 image=http://mtgimage.com/card/carrion.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{B}{B}

@@ -1,6 +1,7 @@
 name=Gorilla Shaman
 url=http://magiccards.info/query?q=%21Gorilla+Shaman
 image=http://mtgimage.com/card/gorilla%20shaman1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Ape,Shaman

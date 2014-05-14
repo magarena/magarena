@@ -1,6 +1,7 @@
 name=Kiora's Dismissal
 url=http://magiccards.info/query?q=%21Kiora%27s+Dismissal
 image=http://mtgimage.com/card/kiora%27s%20dismissal.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}

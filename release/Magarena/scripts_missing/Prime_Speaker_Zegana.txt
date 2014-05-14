@@ -1,6 +1,7 @@
 name=Prime Speaker Zegana
 url=http://magiccards.info/query?q=%21Prime+Speaker+Zegana
 image=http://mtgimage.com/card/prime%20speaker%20zegana.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Merfolk,Wizard

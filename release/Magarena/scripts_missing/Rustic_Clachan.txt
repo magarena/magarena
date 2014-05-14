@@ -1,6 +1,7 @@
 name=Rustic Clachan
 url=http://magiccards.info/query?q=%21Rustic+Clachan
 image=http://mtgimage.com/card/rustic%20clachan.jpg
+value=2.500
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Kithkin card from your hand. If you don't, SN enters the battlefield tapped.;\

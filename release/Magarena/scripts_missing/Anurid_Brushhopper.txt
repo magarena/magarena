@@ -1,6 +1,7 @@
 name=Anurid Brushhopper
 url=http://magiccards.info/query?q=%21Anurid+Brushhopper
 image=http://mtgimage.com/card/anurid%20brushhopper.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Frog,Beast

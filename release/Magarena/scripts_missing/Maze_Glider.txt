@@ -1,6 +1,7 @@
 name=Maze Glider
 url=http://magiccards.info/query?q=%21Maze+Glider
 image=http://mtgimage.com/card/maze%20glider.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental

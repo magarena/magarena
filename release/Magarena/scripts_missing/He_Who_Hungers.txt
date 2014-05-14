@@ -1,6 +1,7 @@
 name=He Who Hungers
 url=http://magiccards.info/query?q=%21He+Who+Hungers
 image=http://mtgimage.com/card/he%20who%20hungers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

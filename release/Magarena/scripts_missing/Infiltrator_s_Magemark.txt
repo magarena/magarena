@@ -1,6 +1,7 @@
 name=Infiltrator's Magemark
 url=http://magiccards.info/query?q=%21Infiltrator%27s+Magemark
 image=http://mtgimage.com/card/infiltrator%27s%20magemark.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Mortician Beetle
 url=http://magiccards.info/query?q=%21Mortician+Beetle
 image=http://mtgimage.com/card/mortician%20beetle.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Insect

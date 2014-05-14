@@ -1,6 +1,7 @@
 name=Vhati il-Dal
 url=http://magiccards.info/query?q=%21Vhati+il-Dal
 image=http://mtgimage.com/card/vhati%20il-dal.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Warrior

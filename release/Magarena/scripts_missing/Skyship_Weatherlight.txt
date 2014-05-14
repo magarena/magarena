@@ -1,6 +1,7 @@
 name=Skyship Weatherlight
 url=http://magiccards.info/query?q=%21Skyship+Weatherlight
 image=http://mtgimage.com/card/skyship%20weatherlight1.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,7 @@
 name=Riptide Chronologist
 url=http://magiccards.info/query?q=%21Riptide+Chronologist
 image=http://mtgimage.com/card/riptide%20chronologist.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

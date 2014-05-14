@@ -1,6 +1,7 @@
 name=Defend the Hearth
 url=http://magiccards.info/query?q=%21Defend+the+Hearth
 image=http://mtgimage.com/card/defend%20the%20hearth.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{G}

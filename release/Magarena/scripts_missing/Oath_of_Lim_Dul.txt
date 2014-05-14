@@ -1,6 +1,7 @@
 name=Oath of Lim-Dul
 url=http://magiccards.info/query?q=%21Oath+of+Lim-D%C3%BBl
 image=http://mtgimage.com/card/oath%20of%20lim-dul.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{B}

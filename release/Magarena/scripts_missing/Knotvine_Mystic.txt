@@ -1,6 +1,7 @@
 name=Knotvine Mystic
 url=http://magiccards.info/query?q=%21Knotvine+Mystic
 image=http://mtgimage.com/card/knotvine%20mystic.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf,Druid

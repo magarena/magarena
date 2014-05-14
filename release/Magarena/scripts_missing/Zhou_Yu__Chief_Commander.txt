@@ -1,6 +1,7 @@
 name=Zhou Yu, Chief Commander
 url=http://magiccards.info/query?q=%21Zhou+Yu%2C+Chief+Commander
 image=http://mtgimage.com/card/zhou%20yu%2C%20chief%20commander.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

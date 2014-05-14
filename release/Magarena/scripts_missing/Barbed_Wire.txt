@@ -1,6 +1,7 @@
 name=Barbed Wire
 url=http://magiccards.info/query?q=%21Barbed+Wire
 image=http://mtgimage.com/card/barbed%20wire.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

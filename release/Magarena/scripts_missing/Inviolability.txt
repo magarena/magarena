@@ -1,6 +1,7 @@
 name=Inviolability
 url=http://magiccards.info/query?q=%21Inviolability
 image=http://mtgimage.com/card/inviolability.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Hankyu
 url=http://magiccards.info/query?q=%21Hankyu
 image=http://mtgimage.com/card/hankyu.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

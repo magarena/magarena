@@ -1,6 +1,7 @@
 name=Banishing Knack
 url=http://magiccards.info/query?q=%21Banishing+Knack
 image=http://mtgimage.com/card/banishing%20knack.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

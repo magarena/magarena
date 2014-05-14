@@ -1,6 +1,7 @@
 name=Riding the Dilu Horse
 url=http://magiccards.info/query?q=%21Riding+the+Dilu+Horse
 image=http://mtgimage.com/card/riding%20the%20dilu%20horse.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{G}

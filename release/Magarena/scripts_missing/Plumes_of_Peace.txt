@@ -1,6 +1,7 @@
 name=Plumes of Peace
 url=http://magiccards.info/query?q=%21Plumes+of+Peace
 image=http://mtgimage.com/card/plumes%20of%20peace.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

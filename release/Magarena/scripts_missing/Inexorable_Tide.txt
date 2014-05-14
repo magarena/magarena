@@ -1,6 +1,7 @@
 name=Inexorable Tide
 url=http://magiccards.info/query?q=%21Inexorable+Tide
 image=http://mtgimage.com/card/inexorable%20tide.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

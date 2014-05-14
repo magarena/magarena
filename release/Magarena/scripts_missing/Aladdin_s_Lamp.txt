@@ -1,6 +1,7 @@
 name=Aladdin's Lamp
 url=http://magiccards.info/query?q=%21Aladdin%27s+Lamp
 image=http://mtgimage.com/card/aladdin%27s%20lamp.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={10}

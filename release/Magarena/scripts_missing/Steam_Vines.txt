@@ -1,6 +1,7 @@
 name=Steam Vines
 url=http://magiccards.info/query?q=%21Steam+Vines
 image=http://mtgimage.com/card/steam%20vines.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Scornful Egotist
 url=http://magiccards.info/query?q=%21Scornful+Egotist
 image=http://mtgimage.com/card/scornful%20egotist.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

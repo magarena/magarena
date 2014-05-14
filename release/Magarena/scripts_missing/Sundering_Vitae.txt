@@ -1,6 +1,7 @@
 name=Sundering Vitae
 url=http://magiccards.info/query?q=%21Sundering+Vitae
 image=http://mtgimage.com/card/sundering%20vitae.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{G}

@@ -1,6 +1,7 @@
 name=Midnight Ritual
 url=http://magiccards.info/query?q=%21Midnight+Ritual
 image=http://mtgimage.com/card/midnight%20ritual.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{2}{B}

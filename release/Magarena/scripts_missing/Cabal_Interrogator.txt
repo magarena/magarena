@@ -1,6 +1,7 @@
 name=Cabal Interrogator
 url=http://magiccards.info/query?q=%21Cabal+Interrogator
 image=http://mtgimage.com/card/cabal%20interrogator.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

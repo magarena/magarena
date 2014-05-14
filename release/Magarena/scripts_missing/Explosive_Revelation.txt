@@ -1,6 +1,7 @@
 name=Explosive Revelation
 url=http://magiccards.info/query?q=%21Explosive+Revelation
 image=http://mtgimage.com/card/explosive%20revelation.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}{R}

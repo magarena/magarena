@@ -1,6 +1,7 @@
 name=Boreal Centaur
 url=http://magiccards.info/query?q=%21Boreal+Centaur
 image=http://mtgimage.com/card/boreal%20centaur.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Centaur,Warrior

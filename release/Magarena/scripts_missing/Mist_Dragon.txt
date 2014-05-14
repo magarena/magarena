@@ -1,6 +1,7 @@
 name=Mist Dragon
 url=http://magiccards.info/query?q=%21Mist+Dragon
 image=http://mtgimage.com/card/mist%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

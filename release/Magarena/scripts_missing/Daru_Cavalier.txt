@@ -1,6 +1,7 @@
 name=Daru Cavalier
 url=http://magiccards.info/query?q=%21Daru+Cavalier
 image=http://mtgimage.com/card/daru%20cavalier.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

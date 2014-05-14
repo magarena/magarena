@@ -1,6 +1,7 @@
 name=Hunted Wumpus
 url=http://magiccards.info/query?q=%21Hunted+Wumpus
 image=http://mtgimage.com/card/hunted%20wumpus.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

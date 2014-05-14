@@ -1,6 +1,7 @@
 name=Rebuff the Wicked
 url=http://magiccards.info/query?q=%21Rebuff+the+Wicked
 image=http://mtgimage.com/card/rebuff%20the%20wicked.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={W}

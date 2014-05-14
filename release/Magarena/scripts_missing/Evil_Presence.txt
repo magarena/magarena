@@ -1,6 +1,7 @@
 name=Evil Presence
 url=http://magiccards.info/query?q=%21Evil+Presence
 image=http://mtgimage.com/card/evil%20presence.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

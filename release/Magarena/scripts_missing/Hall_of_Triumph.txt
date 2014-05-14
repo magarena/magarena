@@ -1,6 +1,7 @@
 name=Hall of Triumph
 url=http://magiccards.info/query?q=%21Hall+of+Triumph
 image=http://mtgimage.com/card/hall%20of%20triumph.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

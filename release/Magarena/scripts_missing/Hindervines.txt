@@ -1,6 +1,7 @@
 name=Hindervines
 url=http://magiccards.info/query?q=%21Hindervines
 image=http://mtgimage.com/card/hindervines.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{G}

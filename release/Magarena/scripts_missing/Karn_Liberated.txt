@@ -1,6 +1,7 @@
 name=Karn Liberated
 url=http://magiccards.info/query?q=%21Karn+Liberated
 image=http://mtgimage.com/card/karn%20liberated.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Karn

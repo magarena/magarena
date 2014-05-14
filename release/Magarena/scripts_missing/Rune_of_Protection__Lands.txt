@@ -1,6 +1,7 @@
 name=Rune of Protection: Lands
 url=http://magiccards.info/query?q=%21Rune+of+Protection%3A+Lands
 image=http://mtgimage.com/card/rune%20of%20protection%20lands.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}

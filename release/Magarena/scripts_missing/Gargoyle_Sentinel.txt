@@ -1,6 +1,7 @@
 name=Gargoyle Sentinel
 url=http://magiccards.info/query?q=%21Gargoyle+Sentinel
 image=http://mtgimage.com/card/gargoyle%20sentinel.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Gargoyle

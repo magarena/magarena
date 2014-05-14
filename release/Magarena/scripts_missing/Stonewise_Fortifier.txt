@@ -1,6 +1,7 @@
 name=Stonewise Fortifier
 url=http://magiccards.info/query?q=%21Stonewise+Fortifier
 image=http://mtgimage.com/card/stonewise%20fortifier.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

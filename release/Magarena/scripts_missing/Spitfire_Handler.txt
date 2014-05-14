@@ -1,6 +1,7 @@
 name=Spitfire Handler
 url=http://magiccards.info/query?q=%21Spitfire+Handler
 image=http://mtgimage.com/card/spitfire%20handler.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin

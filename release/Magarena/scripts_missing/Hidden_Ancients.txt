@@ -1,6 +1,7 @@
 name=Hidden Ancients
 url=http://magiccards.info/query?q=%21Hidden+Ancients
 image=http://mtgimage.com/card/hidden%20ancients.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}

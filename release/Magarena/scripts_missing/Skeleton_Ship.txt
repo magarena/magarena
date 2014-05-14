@@ -1,6 +1,7 @@
 name=Skeleton Ship
 url=http://magiccards.info/query?q=%21Skeleton+Ship
 image=http://mtgimage.com/card/skeleton%20ship.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Skeleton

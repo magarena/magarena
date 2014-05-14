@@ -1,6 +1,7 @@
 name=Nature's Revolt
 url=http://magiccards.info/query?q=%21Nature%27s+Revolt
 image=http://mtgimage.com/card/nature%27s%20revolt.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}{G}

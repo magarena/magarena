@@ -1,6 +1,7 @@
 name=Jetting Glasskite
 url=http://magiccards.info/query?q=%21Jetting+Glasskite
 image=http://mtgimage.com/card/jetting%20glasskite.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Flowstone Flood
 url=http://magiccards.info/query?q=%21Flowstone+Flood
 image=http://mtgimage.com/card/flowstone%20flood.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}

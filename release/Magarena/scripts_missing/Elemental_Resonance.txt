@@ -1,6 +1,7 @@
 name=Elemental Resonance
 url=http://magiccards.info/query?q=%21Elemental+Resonance
 image=http://mtgimage.com/card/elemental%20resonance.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

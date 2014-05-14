@@ -1,6 +1,7 @@
 name=Take Possession
 url=http://magiccards.info/query?q=%21Take+Possession
 image=http://mtgimage.com/card/take%20possession.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

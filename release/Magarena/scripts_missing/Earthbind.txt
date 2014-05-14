@@ -1,6 +1,7 @@
 name=Earthbind
 url=http://magiccards.info/query?q=%21Earthbind
 image=http://mtgimage.com/card/earthbind.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

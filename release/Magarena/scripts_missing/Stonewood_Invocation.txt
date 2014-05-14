@@ -1,6 +1,7 @@
 name=Stonewood Invocation
 url=http://magiccards.info/query?q=%21Stonewood+Invocation
 image=http://mtgimage.com/card/stonewood%20invocation.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{G}

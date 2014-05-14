@@ -1,6 +1,7 @@
 name=Vizkopa Confessor
 url=http://magiccards.info/query?q=%21Vizkopa+Confessor
 image=http://mtgimage.com/card/vizkopa%20confessor.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

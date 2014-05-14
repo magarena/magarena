@@ -1,6 +1,7 @@
 name=Walking Desecration
 url=http://magiccards.info/query?q=%21Walking+Desecration
 image=http://mtgimage.com/card/walking%20desecration.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie

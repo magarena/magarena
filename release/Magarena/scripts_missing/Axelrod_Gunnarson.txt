@@ -1,6 +1,7 @@
 name=Axelrod Gunnarson
 url=http://magiccards.info/query?q=%21Axelrod+Gunnarson
 image=http://mtgimage.com/card/axelrod%20gunnarson.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant

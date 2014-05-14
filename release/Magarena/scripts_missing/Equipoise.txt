@@ -1,6 +1,7 @@
 name=Equipoise
 url=http://magiccards.info/query?q=%21Equipoise
 image=http://mtgimage.com/card/equipoise.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}

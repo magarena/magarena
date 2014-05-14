@@ -1,6 +1,7 @@
 name=Blessed Breath
 url=http://magiccards.info/query?q=%21Blessed+Breath
 image=http://mtgimage.com/card/blessed%20breath.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

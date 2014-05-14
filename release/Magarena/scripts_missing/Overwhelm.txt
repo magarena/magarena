@@ -1,6 +1,7 @@
 name=Overwhelm
 url=http://magiccards.info/query?q=%21Overwhelm
 image=http://mtgimage.com/card/overwhelm.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={5}{G}{G}

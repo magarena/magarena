@@ -1,6 +1,7 @@
 name=Guardian Beast
 url=http://magiccards.info/query?q=%21Guardian+Beast
 image=http://mtgimage.com/card/guardian%20beast.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

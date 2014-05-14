@@ -1,6 +1,7 @@
 name=Huntmaster of the Fells
 url=http://magiccards.info/query?q=%21Huntmaster+of+the+Fells
 image=http://mtgimage.com/card/huntmaster%20of%20the%20fells.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Human,Werewolf

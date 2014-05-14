@@ -1,6 +1,7 @@
 name=Odds
 url=http://magiccards.info/query?q=%21Odds
 image=http://mtgimage.com/card/oddsends.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}{R}

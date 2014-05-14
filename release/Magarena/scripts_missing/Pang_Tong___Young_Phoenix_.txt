@@ -1,6 +1,7 @@
 name=Pang Tong, "Young Phoenix"
 url=http://magiccards.info/query?q=%21Pang+Tong%2C+%22Young+Phoenix%22
 image=http://mtgimage.com/card/pang%20tong%2C%20young%20phoenix.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Advisor

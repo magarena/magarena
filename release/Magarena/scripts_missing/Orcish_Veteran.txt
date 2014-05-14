@@ -1,6 +1,7 @@
 name=Orcish Veteran
 url=http://magiccards.info/query?q=%21Orcish+Veteran
 image=http://mtgimage.com/card/orcish%20veteran1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Orc

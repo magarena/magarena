@@ -1,6 +1,7 @@
 name=Staff of the Ages
 url=http://magiccards.info/query?q=%21Staff+of+the+Ages
 image=http://mtgimage.com/card/staff%20of%20the%20ages.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

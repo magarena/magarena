@@ -1,6 +1,7 @@
 name=Desperate Ravings
 url=http://magiccards.info/query?q=%21Desperate+Ravings
 image=http://mtgimage.com/card/desperate%20ravings.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}

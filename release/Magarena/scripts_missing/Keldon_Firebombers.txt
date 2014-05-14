@@ -1,6 +1,7 @@
 name=Keldon Firebombers
 url=http://magiccards.info/query?q=%21Keldon+Firebombers
 image=http://mtgimage.com/card/keldon%20firebombers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

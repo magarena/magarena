@@ -1,6 +1,7 @@
 name=Grip of Amnesia
 url=http://magiccards.info/query?q=%21Grip+of+Amnesia
 image=http://mtgimage.com/card/grip%20of%20amnesia.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

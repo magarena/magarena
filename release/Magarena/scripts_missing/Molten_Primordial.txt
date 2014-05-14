@@ -1,6 +1,7 @@
 name=Molten Primordial
 url=http://magiccards.info/query?q=%21Molten+Primordial
 image=http://mtgimage.com/card/molten%20primordial.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar

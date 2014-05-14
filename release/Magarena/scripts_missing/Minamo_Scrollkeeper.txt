@@ -1,6 +1,7 @@
 name=Minamo Scrollkeeper
 url=http://magiccards.info/query?q=%21Minamo+Scrollkeeper
 image=http://mtgimage.com/card/minamo%20scrollkeeper.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

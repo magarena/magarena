@@ -1,6 +1,7 @@
 name=Wild Mammoth
 url=http://magiccards.info/query?q=%21Wild+Mammoth
 image=http://mtgimage.com/card/wild%20mammoth.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elephant

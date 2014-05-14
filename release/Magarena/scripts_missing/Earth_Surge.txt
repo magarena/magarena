@@ -1,6 +1,7 @@
 name=Earth Surge
 url=http://magiccards.info/query?q=%21Earth+Surge
 image=http://mtgimage.com/card/earth%20surge.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}

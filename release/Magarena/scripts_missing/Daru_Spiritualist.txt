@@ -1,6 +1,7 @@
 name=Daru Spiritualist
 url=http://magiccards.info/query?q=%21Daru+Spiritualist
 image=http://mtgimage.com/card/daru%20spiritualist.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,7 @@
 name=Jokulmorder
 url=http://magiccards.info/query?q=%21Jokulmorder
 image=http://mtgimage.com/card/jokulmorder.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leviathan

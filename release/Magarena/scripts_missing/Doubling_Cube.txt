@@ -1,6 +1,7 @@
 name=Doubling Cube
 url=http://magiccards.info/query?q=%21Doubling+Cube
 image=http://mtgimage.com/card/doubling%20cube.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

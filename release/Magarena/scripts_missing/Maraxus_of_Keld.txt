@@ -1,6 +1,7 @@
 name=Maraxus of Keld
 url=http://magiccards.info/query?q=%21Maraxus+of+Keld
 image=http://mtgimage.com/card/maraxus%20of%20keld.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Warrior

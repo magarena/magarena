@@ -1,6 +1,7 @@
 name=Aegis of the Gods
 url=http://magiccards.info/query?q=%21Aegis+of+the+Gods
 image=http://mtgimage.com/card/aegis%20of%20the%20gods.jpg
+value=2.500
 rarity=R
 type=Enchantment,Creature
 subtype=Human,Soldier

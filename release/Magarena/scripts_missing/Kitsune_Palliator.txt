@@ -1,6 +1,7 @@
 name=Kitsune Palliator
 url=http://magiccards.info/query?q=%21Kitsune+Palliator
 image=http://mtgimage.com/card/kitsune%20palliator.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Fox,Cleric

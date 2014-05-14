@@ -1,6 +1,7 @@
 name=Ground Seal
 url=http://magiccards.info/query?q=%21Ground+Seal
 image=http://mtgimage.com/card/ground%20seal.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}

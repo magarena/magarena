@@ -1,6 +1,7 @@
 name=Seasoned Tactician
 url=http://magiccards.info/query?q=%21Seasoned+Tactician
 image=http://mtgimage.com/card/seasoned%20tactician.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Advisor

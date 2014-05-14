@@ -1,6 +1,7 @@
 name=Mire Blight
 url=http://magiccards.info/query?q=%21Mire+Blight
 image=http://mtgimage.com/card/mire%20blight.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

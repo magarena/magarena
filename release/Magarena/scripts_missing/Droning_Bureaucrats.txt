@@ -1,6 +1,7 @@
 name=Droning Bureaucrats
 url=http://magiccards.info/query?q=%21Droning+Bureaucrats
 image=http://mtgimage.com/card/droning%20bureaucrats.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Advisor

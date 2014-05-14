@@ -1,6 +1,7 @@
 name=Heroic Defiance
 url=http://magiccards.info/query?q=%21Heroic+Defiance
 image=http://mtgimage.com/card/heroic%20defiance.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

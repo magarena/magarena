@@ -1,6 +1,7 @@
 name=Street Wraith
 url=http://magiccards.info/query?q=%21Street+Wraith
 image=http://mtgimage.com/card/street%20wraith.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wraith

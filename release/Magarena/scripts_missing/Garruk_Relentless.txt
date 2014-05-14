@@ -1,6 +1,7 @@
 name=Garruk Relentless
 url=http://magiccards.info/query?q=%21Garruk+Relentless
 image=http://mtgimage.com/card/garruk%20relentless.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Garruk

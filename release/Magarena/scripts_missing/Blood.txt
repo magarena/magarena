@@ -1,6 +1,7 @@
 name=Blood
 url=http://magiccards.info/query?q=%21Blood
 image=http://mtgimage.com/card/fleshblood.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={R}{G}

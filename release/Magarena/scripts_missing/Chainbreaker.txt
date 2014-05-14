@@ -1,6 +1,7 @@
 name=Chainbreaker
 url=http://magiccards.info/query?q=%21Chainbreaker
 image=http://mtgimage.com/card/chainbreaker.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

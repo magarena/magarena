@@ -1,6 +1,7 @@
 name=Chandra Nalaar
 url=http://magiccards.info/query?q=%21Chandra+Nalaar
 image=http://mtgimage.com/card/chandra%20nalaar.jpg
+value=2.500
 rarity=R
 type=Planeswalker
 subtype=Chandra

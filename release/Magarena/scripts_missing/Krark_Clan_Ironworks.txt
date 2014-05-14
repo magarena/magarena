@@ -1,6 +1,7 @@
 name=Krark-Clan Ironworks
 url=http://magiccards.info/query?q=%21Krark-Clan+Ironworks
 image=http://mtgimage.com/card/krark-clan%20ironworks.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

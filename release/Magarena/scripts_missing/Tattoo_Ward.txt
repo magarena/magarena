@@ -1,6 +1,7 @@
 name=Tattoo Ward
 url=http://magiccards.info/query?q=%21Tattoo+Ward
 image=http://mtgimage.com/card/tattoo%20ward.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Clockwork Avian
 url=http://magiccards.info/query?q=%21Clockwork+Avian
 image=http://mtgimage.com/card/clockwork%20avian.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Bird

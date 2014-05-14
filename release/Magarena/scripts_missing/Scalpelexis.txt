@@ -1,6 +1,7 @@
 name=Scalpelexis
 url=http://magiccards.info/query?q=%21Scalpelexis
 image=http://mtgimage.com/card/scalpelexis.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

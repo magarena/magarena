@@ -1,6 +1,7 @@
 name=Sigarda, Host of Herons
 url=http://magiccards.info/query?q=%21Sigarda%2C+Host+of+Herons
 image=http://mtgimage.com/card/sigarda%2C%20host%20of%20herons.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Angel

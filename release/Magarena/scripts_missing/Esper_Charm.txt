@@ -1,6 +1,7 @@
 name=Esper Charm
 url=http://magiccards.info/query?q=%21Esper+Charm
 image=http://mtgimage.com/card/esper%20charm.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={W}{U}{B}

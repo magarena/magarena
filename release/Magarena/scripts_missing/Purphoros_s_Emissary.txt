@@ -1,6 +1,7 @@
 name=Purphoros's Emissary
 url=http://magiccards.info/query?q=%21Purphoros%27s+Emissary
 image=http://mtgimage.com/card/purphoros%27s%20emissary.jpg
+value=2.500
 rarity=U
 type=Enchantment,Creature
 subtype=Ox

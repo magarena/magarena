@@ -1,6 +1,7 @@
 name=Reverse Polarity
 url=http://magiccards.info/query?q=%21Reverse+Polarity
 image=http://mtgimage.com/card/reverse%20polarity.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}{W}

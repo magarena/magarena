@@ -1,6 +1,7 @@
 name=Sunder
 url=http://magiccards.info/query?q=%21Sunder
 image=http://mtgimage.com/card/sunder.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{U}

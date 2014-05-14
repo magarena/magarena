@@ -1,6 +1,7 @@
 name=Marrow-Gnawer
 url=http://magiccards.info/query?q=%21Marrow-Gnawer
 image=http://mtgimage.com/card/marrow-gnawer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Rat,Rogue

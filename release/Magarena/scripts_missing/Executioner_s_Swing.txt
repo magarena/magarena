@@ -1,6 +1,7 @@
 name=Executioner's Swing
 url=http://magiccards.info/query?q=%21Executioner%27s+Swing
 image=http://mtgimage.com/card/executioner%27s%20swing.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}{B}

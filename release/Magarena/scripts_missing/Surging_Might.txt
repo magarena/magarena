@@ -1,6 +1,7 @@
 name=Surging Might
 url=http://magiccards.info/query?q=%21Surging+Might
 image=http://mtgimage.com/card/surging%20might.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

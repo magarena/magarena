@@ -1,6 +1,7 @@
 name=Brutal Deceiver
 url=http://magiccards.info/query?q=%21Brutal+Deceiver
 image=http://mtgimage.com/card/brutal%20deceiver.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

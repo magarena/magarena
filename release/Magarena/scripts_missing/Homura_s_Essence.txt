@@ -1,6 +1,7 @@
 name=Homura's Essence
 url=http://magiccards.info/query?q=%21Homura%27s+Essence
 image=http://mtgimage.com/card/homura%27s%20essence.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{R}{R}

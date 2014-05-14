@@ -1,6 +1,7 @@
 name=Rebound
 url=http://magiccards.info/query?q=%21Rebound
 image=http://mtgimage.com/card/rebound.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{U}

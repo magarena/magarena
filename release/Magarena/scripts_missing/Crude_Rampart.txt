@@ -1,6 +1,7 @@
 name=Crude Rampart
 url=http://magiccards.info/query?q=%21Crude+Rampart
 image=http://mtgimage.com/card/crude%20rampart.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wall

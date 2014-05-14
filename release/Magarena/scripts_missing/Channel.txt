@@ -1,6 +1,7 @@
 name=Channel
 url=http://magiccards.info/query?q=%21Channel
 image=http://mtgimage.com/card/channel.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={G}{G}

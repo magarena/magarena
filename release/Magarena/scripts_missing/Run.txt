@@ -1,6 +1,7 @@
 name=Run
 url=http://magiccards.info/query?q=%21Run
 image=http://mtgimage.com/card/hitrun.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{R}{G}

@@ -1,6 +1,7 @@
 name=Dakmor Salvage
 url=http://magiccards.info/query?q=%21Dakmor+Salvage
 image=http://mtgimage.com/card/dakmor%20salvage.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

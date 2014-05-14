@@ -1,6 +1,7 @@
 name=Eidolon of the Great Revel
 url=http://magiccards.info/query?q=%21Eidolon+of+the+Great+Revel
 image=http://mtgimage.com/card/eidolon%20of%20the%20great%20revel.jpg
+value=2.500
 rarity=R
 type=Enchantment,Creature
 subtype=Spirit

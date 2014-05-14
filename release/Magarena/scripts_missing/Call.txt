@@ -1,6 +1,7 @@
 name=Call
 url=http://magiccards.info/query?q=%21Call
 image=http://mtgimage.com/card/beckcall.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}{U}

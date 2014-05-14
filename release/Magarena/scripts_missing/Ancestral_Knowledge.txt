@@ -1,6 +1,7 @@
 name=Ancestral Knowledge
 url=http://magiccards.info/query?q=%21Ancestral+Knowledge
 image=http://mtgimage.com/card/ancestral%20knowledge.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U}

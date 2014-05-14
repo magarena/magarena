@@ -1,6 +1,7 @@
 name=Chromatic Armor
 url=http://magiccards.info/query?q=%21Chromatic+Armor
 image=http://mtgimage.com/card/chromatic%20armor.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

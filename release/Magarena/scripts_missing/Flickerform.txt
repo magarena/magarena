@@ -1,6 +1,7 @@
 name=Flickerform
 url=http://magiccards.info/query?q=%21Flickerform
 image=http://mtgimage.com/card/flickerform.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

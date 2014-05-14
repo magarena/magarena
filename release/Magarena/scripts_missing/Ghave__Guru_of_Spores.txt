@@ -1,6 +1,7 @@
 name=Ghave, Guru of Spores
 url=http://magiccards.info/query?q=%21Ghave%2C+Guru+of+Spores
 image=http://mtgimage.com/card/ghave%2C%20guru%20of%20spores.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Fungus,Shaman

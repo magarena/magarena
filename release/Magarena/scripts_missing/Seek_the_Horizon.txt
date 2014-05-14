@@ -1,6 +1,7 @@
 name=Seek the Horizon
 url=http://magiccards.info/query?q=%21Seek+the+Horizon
 image=http://mtgimage.com/card/seek%20the%20horizon.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{G}

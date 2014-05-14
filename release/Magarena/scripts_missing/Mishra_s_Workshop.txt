@@ -1,6 +1,7 @@
 name=Mishra's Workshop
 url=http://magiccards.info/query?q=%21Mishra%27s+Workshop
 image=http://mtgimage.com/card/mishra%27s%20workshop.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add {3} to your mana pool. Spend this mana only to cast artifact spells.

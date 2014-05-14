@@ -1,6 +1,7 @@
 name=Mind Slash
 url=http://magiccards.info/query?q=%21Mind+Slash
 image=http://mtgimage.com/card/mind%20slash.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

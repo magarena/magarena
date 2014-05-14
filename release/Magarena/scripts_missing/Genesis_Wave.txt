@@ -1,6 +1,7 @@
 name=Genesis Wave
 url=http://magiccards.info/query?q=%21Genesis+Wave
 image=http://mtgimage.com/card/genesis%20wave.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{G}{G}{G}

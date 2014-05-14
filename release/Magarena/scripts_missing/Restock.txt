@@ -1,6 +1,7 @@
 name=Restock
 url=http://magiccards.info/query?q=%21Restock
 image=http://mtgimage.com/card/restock.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

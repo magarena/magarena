@@ -1,6 +1,7 @@
 name=Veteran Brawlers
 url=http://magiccards.info/query?q=%21Veteran+Brawlers
 image=http://mtgimage.com/card/veteran%20brawlers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

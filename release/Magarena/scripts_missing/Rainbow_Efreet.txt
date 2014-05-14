@@ -1,6 +1,7 @@
 name=Rainbow Efreet
 url=http://magiccards.info/query?q=%21Rainbow+Efreet
 image=http://mtgimage.com/card/rainbow%20efreet.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Efreet

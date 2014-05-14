@@ -1,6 +1,7 @@
 name=Firefright Mage
 url=http://magiccards.info/query?q=%21Firefright+Mage
 image=http://mtgimage.com/card/firefright%20mage.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Spellshaper

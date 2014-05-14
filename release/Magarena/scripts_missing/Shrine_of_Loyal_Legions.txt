@@ -1,6 +1,7 @@
 name=Shrine of Loyal Legions
 url=http://magiccards.info/query?q=%21Shrine+of+Loyal+Legions
 image=http://mtgimage.com/card/shrine%20of%20loyal%20legions.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Descent into Madness
 url=http://magiccards.info/query?q=%21Descent+into+Madness
 image=http://mtgimage.com/card/descent%20into%20madness.jpg
+value=2.500
 rarity=M
 type=Enchantment
 cost={3}{B}{B}

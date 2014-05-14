@@ -1,6 +1,7 @@
 name=Ember Gale
 url=http://magiccards.info/query?q=%21Ember+Gale
 image=http://mtgimage.com/card/ember%20gale.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{R}

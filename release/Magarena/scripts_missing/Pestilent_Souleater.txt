@@ -1,6 +1,7 @@
 name=Pestilent Souleater
 url=http://magiccards.info/query?q=%21Pestilent+Souleater
 image=http://mtgimage.com/card/pestilent%20souleater.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Insect

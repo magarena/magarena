@@ -1,6 +1,7 @@
 name=Psychic Allergy
 url=http://magiccards.info/query?q=%21Psychic+Allergy
 image=http://mtgimage.com/card/psychic%20allergy.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

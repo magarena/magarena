@@ -1,6 +1,7 @@
 name=Arachnus Web
 url=http://magiccards.info/query?q=%21Arachnus+Web
 image=http://mtgimage.com/card/arachnus%20web.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

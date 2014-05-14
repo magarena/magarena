@@ -1,6 +1,7 @@
 name=War Tax
 url=http://magiccards.info/query?q=%21War+Tax
 image=http://mtgimage.com/card/war%20tax.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{U}

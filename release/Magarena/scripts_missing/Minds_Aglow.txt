@@ -1,6 +1,7 @@
 name=Minds Aglow
 url=http://magiccards.info/query?q=%21Minds+Aglow
 image=http://mtgimage.com/card/minds%20aglow.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={U}

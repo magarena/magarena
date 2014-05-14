@@ -1,6 +1,7 @@
 name=Satyr Piper
 url=http://magiccards.info/query?q=%21Satyr+Piper
 image=http://mtgimage.com/card/satyr%20piper.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Satyr,Rogue

@@ -1,6 +1,7 @@
 name=Arcbound Wanderer
 url=http://magiccards.info/query?q=%21Arcbound+Wanderer
 image=http://mtgimage.com/card/arcbound%20wanderer.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

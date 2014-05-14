@@ -1,6 +1,7 @@
 name=Strength of Isolation
 url=http://magiccards.info/query?q=%21Strength+of+Isolation
 image=http://mtgimage.com/card/strength%20of%20isolation.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

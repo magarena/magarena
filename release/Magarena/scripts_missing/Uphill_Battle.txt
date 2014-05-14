@@ -1,6 +1,7 @@
 name=Uphill Battle
 url=http://magiccards.info/query?q=%21Uphill+Battle
 image=http://mtgimage.com/card/uphill%20battle.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{R}

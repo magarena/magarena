@@ -1,6 +1,7 @@
 name=Merfolk Assassin
 url=http://magiccards.info/query?q=%21Merfolk+Assassin
 image=http://mtgimage.com/card/merfolk%20assassin.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Merfolk,Assassin

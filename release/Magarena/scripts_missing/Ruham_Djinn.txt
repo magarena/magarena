@@ -1,6 +1,7 @@
 name=Ruham Djinn
 url=http://magiccards.info/query?q=%21Ruham+Djinn
 image=http://mtgimage.com/card/ruham%20djinn.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Djinn

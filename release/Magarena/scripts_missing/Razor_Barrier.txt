@@ -1,6 +1,7 @@
 name=Razor Barrier
 url=http://magiccards.info/query?q=%21Razor+Barrier
 image=http://mtgimage.com/card/razor%20barrier.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}

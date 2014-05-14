@@ -1,6 +1,7 @@
 name=Undead Gladiator
 url=http://magiccards.info/query?q=%21Undead+Gladiator
 image=http://mtgimage.com/card/undead%20gladiator.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Barbarian

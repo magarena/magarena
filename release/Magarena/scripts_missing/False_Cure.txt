@@ -1,6 +1,7 @@
 name=False Cure
 url=http://magiccards.info/query?q=%21False+Cure
 image=http://mtgimage.com/card/false%20cure.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={B}{B}

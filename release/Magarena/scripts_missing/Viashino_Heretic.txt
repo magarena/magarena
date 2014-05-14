@@ -1,6 +1,7 @@
 name=Viashino Heretic
 url=http://magiccards.info/query?q=%21Viashino+Heretic
 image=http://mtgimage.com/card/viashino%20heretic.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Viashino

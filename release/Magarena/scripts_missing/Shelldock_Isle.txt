@@ -1,6 +1,7 @@
 name=Shelldock Isle
 url=http://magiccards.info/query?q=%21Shelldock+Isle
 image=http://mtgimage.com/card/shelldock%20isle.jpg
+value=2.500
 rarity=R
 type=Land
 ability=Hideaway;\

@@ -1,6 +1,7 @@
 name=Garruk's Horde
 url=http://magiccards.info/query?q=%21Garruk%27s+Horde
 image=http://mtgimage.com/card/garruk%27s%20horde.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

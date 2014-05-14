@@ -1,6 +1,7 @@
 name=Stratadon
 url=http://magiccards.info/query?q=%21Stratadon
 image=http://mtgimage.com/card/stratadon.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Beast

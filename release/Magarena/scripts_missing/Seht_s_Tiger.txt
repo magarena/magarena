@@ -1,6 +1,7 @@
 name=Seht's Tiger
 url=http://magiccards.info/query?q=%21Seht%27s+Tiger
 image=http://mtgimage.com/card/seht%27s%20tiger.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Cat

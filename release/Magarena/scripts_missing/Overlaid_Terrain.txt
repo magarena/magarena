@@ -1,6 +1,7 @@
 name=Overlaid Terrain
 url=http://magiccards.info/query?q=%21Overlaid+Terrain
 image=http://mtgimage.com/card/overlaid%20terrain.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

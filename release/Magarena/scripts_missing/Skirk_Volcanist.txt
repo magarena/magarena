@@ -1,6 +1,7 @@
 name=Skirk Volcanist
 url=http://magiccards.info/query?q=%21Skirk+Volcanist
 image=http://mtgimage.com/card/skirk%20volcanist.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin

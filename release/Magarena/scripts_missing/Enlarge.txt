@@ -1,6 +1,7 @@
 name=Enlarge
 url=http://magiccards.info/query?q=%21Enlarge
 image=http://mtgimage.com/card/enlarge.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{G}{G}

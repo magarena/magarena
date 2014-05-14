@@ -1,6 +1,7 @@
 name=Infernal Genesis
 url=http://magiccards.info/query?q=%21Infernal+Genesis
 image=http://mtgimage.com/card/infernal%20genesis.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{B}{B}

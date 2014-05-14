@@ -1,6 +1,7 @@
 name=Firewing Phoenix
 url=http://magiccards.info/query?q=%21Firewing+Phoenix
 image=http://mtgimage.com/card/firewing%20phoenix.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Phoenix

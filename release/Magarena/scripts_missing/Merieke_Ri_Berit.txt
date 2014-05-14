@@ -1,6 +1,7 @@
 name=Merieke Ri Berit
 url=http://magiccards.info/query?q=%21Merieke+Ri+Berit
 image=http://mtgimage.com/card/merieke%20ri%20berit.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human

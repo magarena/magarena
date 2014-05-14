@@ -1,6 +1,7 @@
 name=Telekinesis
 url=http://magiccards.info/query?q=%21Telekinesis
 image=http://mtgimage.com/card/telekinesis.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}{U}

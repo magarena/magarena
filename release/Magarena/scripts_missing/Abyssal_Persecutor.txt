@@ -1,6 +1,7 @@
 name=Abyssal Persecutor
 url=http://magiccards.info/query?q=%21Abyssal+Persecutor
 image=http://mtgimage.com/card/abyssal%20persecutor.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Demon

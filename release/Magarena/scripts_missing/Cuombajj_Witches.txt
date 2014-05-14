@@ -1,6 +1,7 @@
 name=Cuombajj Witches
 url=http://magiccards.info/query?q=%21Cuombajj+Witches
 image=http://mtgimage.com/card/cuombajj%20witches.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

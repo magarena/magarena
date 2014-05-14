@@ -1,6 +1,7 @@
 name=Resounding Wave
 url=http://magiccards.info/query?q=%21Resounding+Wave
 image=http://mtgimage.com/card/resounding%20wave.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{U}

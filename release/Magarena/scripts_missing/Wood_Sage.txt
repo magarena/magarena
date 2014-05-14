@@ -1,6 +1,7 @@
 name=Wood Sage
 url=http://magiccards.info/query?q=%21Wood+Sage
 image=http://mtgimage.com/card/wood%20sage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Druid

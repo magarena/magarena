@@ -1,6 +1,7 @@
 name=Mishra's Helix
 url=http://magiccards.info/query?q=%21Mishra%27s+Helix
 image=http://mtgimage.com/card/mishra%27s%20helix.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

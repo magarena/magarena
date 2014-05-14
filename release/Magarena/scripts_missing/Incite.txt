@@ -1,6 +1,7 @@
 name=Incite
 url=http://magiccards.info/query?q=%21Incite
 image=http://mtgimage.com/card/incite.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

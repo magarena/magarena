@@ -1,6 +1,7 @@
 name=Rimewind Cryomancer
 url=http://magiccards.info/query?q=%21Rimewind+Cryomancer
 image=http://mtgimage.com/card/rimewind%20cryomancer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

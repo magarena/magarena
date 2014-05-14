@@ -1,6 +1,7 @@
 name=Fyndhorn Druid
 url=http://magiccards.info/query?q=%21Fyndhorn+Druid
 image=http://mtgimage.com/card/fyndhorn%20druid1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Druid

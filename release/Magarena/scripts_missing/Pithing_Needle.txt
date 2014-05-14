@@ -1,6 +1,7 @@
 name=Pithing Needle
 url=http://magiccards.info/query?q=%21Pithing+Needle
 image=http://mtgimage.com/card/pithing%20needle.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

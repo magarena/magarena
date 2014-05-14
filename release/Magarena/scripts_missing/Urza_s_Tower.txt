@@ -1,6 +1,7 @@
 name=Urza's Tower
 url=http://magiccards.info/query?q=%21Urza%27s+Tower
 image=http://mtgimage.com/card/urza%27s%20tower1.jpg
+value=2.500
 rarity=U
 type=Land
 subtype=Urza,Tower

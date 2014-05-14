@@ -1,6 +1,7 @@
 name=Bant Sojourners
 url=http://magiccards.info/query?q=%21Bant+Sojourners
 image=http://mtgimage.com/card/bant%20sojourners.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

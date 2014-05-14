@@ -1,6 +1,7 @@
 name=Anti-Magic Aura
 url=http://magiccards.info/query?q=%21Anti-Magic+Aura
 image=http://mtgimage.com/card/anti-magic%20aura.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

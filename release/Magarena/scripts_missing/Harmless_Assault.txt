@@ -1,6 +1,7 @@
 name=Harmless Assault
 url=http://magiccards.info/query?q=%21Harmless+Assault
 image=http://mtgimage.com/card/harmless%20assault.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{W}{W}

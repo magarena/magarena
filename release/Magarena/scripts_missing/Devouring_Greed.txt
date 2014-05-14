@@ -1,6 +1,7 @@
 name=Devouring Greed
 url=http://magiccards.info/query?q=%21Devouring+Greed
 image=http://mtgimage.com/card/devouring%20greed.jpg
+value=2.500
 rarity=C
 type=Sorcery
 subtype=Arcane

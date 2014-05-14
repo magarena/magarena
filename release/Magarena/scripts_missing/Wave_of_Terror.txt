@@ -1,6 +1,7 @@
 name=Wave of Terror
 url=http://magiccards.info/query?q=%21Wave+of+Terror
 image=http://mtgimage.com/card/wave%20of%20terror.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}

@@ -1,6 +1,7 @@
 name=Behemoth's Herald
 url=http://magiccards.info/query?q=%21Behemoth%27s+Herald
 image=http://mtgimage.com/card/behemoth%27s%20herald.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf,Shaman

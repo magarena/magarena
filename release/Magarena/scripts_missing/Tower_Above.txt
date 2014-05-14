@@ -1,6 +1,7 @@
 name=Tower Above
 url=http://magiccards.info/query?q=%21Tower+Above
 image=http://mtgimage.com/card/tower%20above.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2/G}{2/G}{2/G}

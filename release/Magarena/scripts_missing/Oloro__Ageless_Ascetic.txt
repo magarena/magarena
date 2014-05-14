@@ -1,6 +1,7 @@
 name=Oloro, Ageless Ascetic
 url=http://magiccards.info/query?q=%21Oloro%2C+Ageless+Ascetic
 image=http://mtgimage.com/card/oloro%2C%20ageless%20ascetic.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Giant,Soldier

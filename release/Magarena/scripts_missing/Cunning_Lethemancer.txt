@@ -1,6 +1,7 @@
 name=Cunning Lethemancer
 url=http://magiccards.info/query?q=%21Cunning+Lethemancer
 image=http://mtgimage.com/card/cunning%20lethemancer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

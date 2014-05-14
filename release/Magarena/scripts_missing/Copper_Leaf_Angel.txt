@@ -1,6 +1,7 @@
 name=Copper-Leaf Angel
 url=http://magiccards.info/query?q=%21Copper-Leaf+Angel
 image=http://mtgimage.com/card/copper-leaf%20angel.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Angel

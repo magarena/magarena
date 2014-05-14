@@ -1,6 +1,7 @@
 name=Treva's Attendant
 url=http://magiccards.info/query?q=%21Treva%27s+Attendant
 image=http://mtgimage.com/card/treva%27s%20attendant.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

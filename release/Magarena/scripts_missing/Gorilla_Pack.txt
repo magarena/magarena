@@ -1,6 +1,7 @@
 name=Gorilla Pack
 url=http://magiccards.info/query?q=%21Gorilla+Pack
 image=http://mtgimage.com/card/gorilla%20pack.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Ape

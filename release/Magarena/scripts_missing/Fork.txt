@@ -1,6 +1,7 @@
 name=Fork
 url=http://magiccards.info/query?q=%21Fork
 image=http://mtgimage.com/card/fork.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={R}{R}

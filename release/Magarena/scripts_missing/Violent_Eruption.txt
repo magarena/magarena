@@ -1,6 +1,7 @@
 name=Violent Eruption
 url=http://magiccards.info/query?q=%21Violent+Eruption
 image=http://mtgimage.com/card/violent%20eruption.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}{R}{R}

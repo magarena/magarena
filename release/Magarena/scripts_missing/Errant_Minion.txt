@@ -1,6 +1,7 @@
 name=Errant Minion
 url=http://magiccards.info/query?q=%21Errant+Minion
 image=http://mtgimage.com/card/errant%20minion.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

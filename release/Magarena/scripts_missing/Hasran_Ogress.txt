@@ -1,6 +1,7 @@
 name=Hasran Ogress
 url=http://magiccards.info/query?q=%21Hasran+Ogress
 image=http://mtgimage.com/card/hasran%20ogress1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Ogre

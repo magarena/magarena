@@ -1,6 +1,7 @@
 name=Total War
 url=http://magiccards.info/query?q=%21Total+War
 image=http://mtgimage.com/card/total%20war.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

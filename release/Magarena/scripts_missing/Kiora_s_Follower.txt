@@ -1,6 +1,7 @@
 name=Kiora's Follower
 url=http://magiccards.info/query?q=%21Kiora%27s+Follower
 image=http://mtgimage.com/card/kiora%27s%20follower.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Merfolk

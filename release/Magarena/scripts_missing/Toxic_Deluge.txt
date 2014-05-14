@@ -1,6 +1,7 @@
 name=Toxic Deluge
 url=http://magiccards.info/query?q=%21Toxic+Deluge
 image=http://mtgimage.com/card/toxic%20deluge.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{B}

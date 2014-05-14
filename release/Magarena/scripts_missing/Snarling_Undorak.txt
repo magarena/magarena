@@ -1,6 +1,7 @@
 name=Snarling Undorak
 url=http://magiccards.info/query?q=%21Snarling+Undorak
 image=http://mtgimage.com/card/snarling%20undorak.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

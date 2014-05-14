@@ -1,6 +1,7 @@
 name=Ghostly Flame
 url=http://magiccards.info/query?q=%21Ghostly+Flame
 image=http://mtgimage.com/card/ghostly%20flame.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={B}{R}

@@ -1,6 +1,7 @@
 name=Aerie Ouphes
 url=http://magiccards.info/query?q=%21Aerie+Ouphes
 image=http://mtgimage.com/card/aerie%20ouphes.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Ouphe

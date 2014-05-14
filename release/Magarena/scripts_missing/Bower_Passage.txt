@@ -1,6 +1,7 @@
 name=Bower Passage
 url=http://magiccards.info/query?q=%21Bower+Passage
 image=http://mtgimage.com/card/bower%20passage.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}

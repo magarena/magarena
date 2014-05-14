@@ -1,6 +1,7 @@
 name=Patron of the Orochi
 url=http://magiccards.info/query?q=%21Patron+of+the+Orochi
 image=http://mtgimage.com/card/patron%20of%20the%20orochi.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

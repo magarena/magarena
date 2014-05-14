@@ -1,6 +1,7 @@
 name=Jwari Shapeshifter
 url=http://magiccards.info/query?q=%21Jwari+Shapeshifter
 image=http://mtgimage.com/card/jwari%20shapeshifter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Shapeshifter,Ally

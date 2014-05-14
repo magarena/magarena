@@ -1,6 +1,7 @@
 name=Cunning
 url=http://magiccards.info/query?q=%21Cunning
 image=http://mtgimage.com/card/cunning.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

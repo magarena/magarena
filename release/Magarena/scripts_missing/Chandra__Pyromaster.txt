@@ -1,6 +1,7 @@
 name=Chandra, Pyromaster
 url=http://magiccards.info/query?q=%21Chandra%2C+Pyromaster
 image=http://mtgimage.com/card/chandra%2C%20pyromaster.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Chandra

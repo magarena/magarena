@@ -1,6 +1,7 @@
 name=Seize the Day
 url=http://magiccards.info/query?q=%21Seize+the+Day
 image=http://mtgimage.com/card/seize%20the%20day.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}

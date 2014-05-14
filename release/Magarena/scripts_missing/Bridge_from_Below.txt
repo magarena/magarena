@@ -1,6 +1,7 @@
 name=Bridge from Below
 url=http://magiccards.info/query?q=%21Bridge+from+Below
 image=http://mtgimage.com/card/bridge%20from%20below.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

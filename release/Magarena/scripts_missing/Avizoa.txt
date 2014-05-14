@@ -1,6 +1,7 @@
 name=Avizoa
 url=http://magiccards.info/query?q=%21Avizoa
 image=http://mtgimage.com/card/avizoa.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Jellyfish

@@ -1,6 +1,7 @@
 name=Everglades
 url=http://magiccards.info/query?q=%21Everglades
 image=http://mtgimage.com/card/everglades.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

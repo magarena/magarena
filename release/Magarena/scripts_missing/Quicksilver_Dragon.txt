@@ -1,6 +1,7 @@
 name=Quicksilver Dragon
 url=http://magiccards.info/query?q=%21Quicksilver+Dragon
 image=http://mtgimage.com/card/quicksilver%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

@@ -1,6 +1,7 @@
 name=Goblin Artisans
 url=http://magiccards.info/query?q=%21Goblin+Artisans
 image=http://mtgimage.com/card/goblin%20artisans.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin,Artificer

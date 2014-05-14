@@ -1,6 +1,7 @@
 name=Energy Bolt
 url=http://magiccards.info/query?q=%21Energy+Bolt
 image=http://mtgimage.com/card/energy%20bolt.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}{W}

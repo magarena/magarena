@@ -1,6 +1,7 @@
 name=Merciless Eviction
 url=http://magiccards.info/query?q=%21Merciless+Eviction
 image=http://mtgimage.com/card/merciless%20eviction.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}{B}

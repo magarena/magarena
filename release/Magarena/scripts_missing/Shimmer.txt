@@ -1,6 +1,7 @@
 name=Shimmer
 url=http://magiccards.info/query?q=%21Shimmer
 image=http://mtgimage.com/card/shimmer.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

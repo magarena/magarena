@@ -1,6 +1,7 @@
 name=Fleshwrither
 url=http://magiccards.info/query?q=%21Fleshwrither
 image=http://mtgimage.com/card/fleshwrither.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Horror

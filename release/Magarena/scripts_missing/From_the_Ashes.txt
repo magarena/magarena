@@ -1,6 +1,7 @@
 name=From the Ashes
 url=http://magiccards.info/query?q=%21From+the+Ashes
 image=http://mtgimage.com/card/from%20the%20ashes.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}

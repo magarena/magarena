@@ -1,6 +1,7 @@
 name=Grafted Wargear
 url=http://magiccards.info/query?q=%21Grafted+Wargear
 image=http://mtgimage.com/card/grafted%20wargear.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

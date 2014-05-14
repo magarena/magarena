@@ -1,6 +1,7 @@
 name=Tainted Sigil
 url=http://magiccards.info/query?q=%21Tainted+Sigil
 image=http://mtgimage.com/card/tainted%20sigil.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}{W}{B}

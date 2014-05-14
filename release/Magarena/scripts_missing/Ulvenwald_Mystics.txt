@@ -1,6 +1,7 @@
 name=Ulvenwald Mystics
 url=http://magiccards.info/query?q=%21Ulvenwald+Mystics
 image=http://mtgimage.com/card/ulvenwald%20mystics.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Shaman,Werewolf

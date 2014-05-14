@@ -1,6 +1,7 @@
 name=Earthcraft
 url=http://magiccards.info/query?q=%21Earthcraft
 image=http://mtgimage.com/card/earthcraft.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}

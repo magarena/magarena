@@ -1,6 +1,7 @@
 name=Eldrazi Temple
 url=http://magiccards.info/query?q=%21Eldrazi+Temple
 image=http://mtgimage.com/card/eldrazi%20temple.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

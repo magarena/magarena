@@ -1,6 +1,7 @@
 name=Teferi's Imp
 url=http://magiccards.info/query?q=%21Teferi%27s+Imp
 image=http://mtgimage.com/card/teferi%27s%20imp.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Imp

@@ -1,6 +1,7 @@
 name=Razor Pendulum
 url=http://magiccards.info/query?q=%21Razor+Pendulum
 image=http://mtgimage.com/card/razor%20pendulum.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,7 @@
 name=Sea Monster
 url=http://magiccards.info/query?q=%21Sea+Monster
 image=http://mtgimage.com/card/sea%20monster.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Serpent

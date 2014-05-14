@@ -1,6 +1,7 @@
 name=Rot Wolf
 url=http://magiccards.info/query?q=%21Rot+Wolf
 image=http://mtgimage.com/card/rot%20wolf.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wolf

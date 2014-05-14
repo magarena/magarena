@@ -1,6 +1,7 @@
 name=Surreal Memoir
 url=http://magiccards.info/query?q=%21Surreal+Memoir
 image=http://mtgimage.com/card/surreal%20memoir.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}

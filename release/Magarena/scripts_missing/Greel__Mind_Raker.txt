@@ -1,6 +1,7 @@
 name=Greel, Mind Raker
 url=http://magiccards.info/query?q=%21Greel%2C+Mind+Raker
 image=http://mtgimage.com/card/greel%2C%20mind%20raker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Horror,Spellshaper

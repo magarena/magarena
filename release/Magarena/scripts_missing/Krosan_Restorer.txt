@@ -1,6 +1,7 @@
 name=Krosan Restorer
 url=http://magiccards.info/query?q=%21Krosan+Restorer
 image=http://mtgimage.com/card/krosan%20restorer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Druid

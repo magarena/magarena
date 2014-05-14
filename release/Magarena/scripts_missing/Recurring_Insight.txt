@@ -1,6 +1,7 @@
 name=Recurring Insight
 url=http://magiccards.info/query?q=%21Recurring+Insight
 image=http://mtgimage.com/card/recurring%20insight.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{U}{U}

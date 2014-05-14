@@ -1,6 +1,7 @@
 name=Moonscarred Werewolf
 url=http://magiccards.info/query?q=%21Moonscarred+Werewolf
 image=http://mtgimage.com/card/moonscarred%20werewolf.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Werewolf

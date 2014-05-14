@@ -1,6 +1,7 @@
 name=Rith's Attendant
 url=http://magiccards.info/query?q=%21Rith%27s+Attendant
 image=http://mtgimage.com/card/rith%27s%20attendant.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

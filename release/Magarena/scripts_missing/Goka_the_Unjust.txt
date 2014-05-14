@@ -1,6 +1,7 @@
 name=Goka the Unjust
 url=http://magiccards.info/query?q=%21Goka+the+Unjust
 image=http://mtgimage.com/card/goka%20the%20unjust.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ogre,Shaman

@@ -1,6 +1,7 @@
 name=Reviving Melody
 url=http://magiccards.info/query?q=%21Reviving+Melody
 image=http://mtgimage.com/card/reviving%20melody.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{G}

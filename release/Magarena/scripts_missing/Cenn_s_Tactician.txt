@@ -1,6 +1,7 @@
 name=Cenn's Tactician
 url=http://magiccards.info/query?q=%21Cenn%27s+Tactician
 image=http://mtgimage.com/card/cenn%27s%20tactician.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Kithkin,Soldier

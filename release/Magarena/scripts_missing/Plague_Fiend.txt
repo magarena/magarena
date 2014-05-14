@@ -1,6 +1,7 @@
 name=Plague Fiend
 url=http://magiccards.info/query?q=%21Plague+Fiend
 image=http://mtgimage.com/card/plague%20fiend.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Insect

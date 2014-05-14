@@ -1,6 +1,7 @@
 name=Wren's Run Vanquisher
 url=http://magiccards.info/query?q=%21Wren%27s+Run+Vanquisher
 image=http://mtgimage.com/card/wren%27s%20run%20vanquisher.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf,Warrior

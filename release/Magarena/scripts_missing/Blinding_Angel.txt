@@ -1,6 +1,7 @@
 name=Blinding Angel
 url=http://magiccards.info/query?q=%21Blinding+Angel
 image=http://mtgimage.com/card/blinding%20angel.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

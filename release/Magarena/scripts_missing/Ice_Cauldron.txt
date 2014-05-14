@@ -1,6 +1,7 @@
 name=Ice Cauldron
 url=http://magiccards.info/query?q=%21Ice+Cauldron
 image=http://mtgimage.com/card/ice%20cauldron.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

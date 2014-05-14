@@ -1,6 +1,7 @@
 name=Phyrexian Soulgorger
 url=http://magiccards.info/query?q=%21Phyrexian+Soulgorger
 image=http://mtgimage.com/card/phyrexian%20soulgorger.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Construct

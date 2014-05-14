@@ -1,6 +1,7 @@
 name=Mortis Dogs
 url=http://magiccards.info/query?q=%21Mortis+Dogs
 image=http://mtgimage.com/card/mortis%20dogs.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Hound

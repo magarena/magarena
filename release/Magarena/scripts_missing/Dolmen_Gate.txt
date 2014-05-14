@@ -1,6 +1,7 @@
 name=Dolmen Gate
 url=http://magiccards.info/query?q=%21Dolmen+Gate
 image=http://mtgimage.com/card/dolmen%20gate.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

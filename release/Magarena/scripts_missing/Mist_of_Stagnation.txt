@@ -1,6 +1,7 @@
 name=Mist of Stagnation
 url=http://magiccards.info/query?q=%21Mist+of+Stagnation
 image=http://mtgimage.com/card/mist%20of%20stagnation.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

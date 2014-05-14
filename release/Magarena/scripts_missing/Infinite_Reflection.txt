@@ -1,6 +1,7 @@
 name=Infinite Reflection
 url=http://magiccards.info/query?q=%21Infinite+Reflection
 image=http://mtgimage.com/card/infinite%20reflection.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

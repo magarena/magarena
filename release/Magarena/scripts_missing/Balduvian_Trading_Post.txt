@@ -1,6 +1,7 @@
 name=Balduvian Trading Post
 url=http://magiccards.info/query?q=%21Balduvian+Trading+Post
 image=http://mtgimage.com/card/balduvian%20trading%20post.jpg
+value=2.500
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice an untapped Mountain instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\

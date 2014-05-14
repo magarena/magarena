@@ -1,6 +1,7 @@
 name=Bounty Hunter
 url=http://magiccards.info/query?q=%21Bounty+Hunter
 image=http://mtgimage.com/card/bounty%20hunter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Archer,Minion

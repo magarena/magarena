@@ -1,6 +1,7 @@
 name=Keeper of the Flame
 url=http://magiccards.info/query?q=%21Keeper+of+the+Flame
 image=http://mtgimage.com/card/keeper%20of%20the%20flame.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

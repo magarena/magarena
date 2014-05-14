@@ -1,6 +1,7 @@
 name=Wanderwine Hub
 url=http://magiccards.info/query?q=%21Wanderwine+Hub
 image=http://mtgimage.com/card/wanderwine%20hub.jpg
+value=2.500
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Merfolk card from your hand. If you don't, SN enters the battlefield tapped.;\

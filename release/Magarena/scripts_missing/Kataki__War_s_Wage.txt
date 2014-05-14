@@ -1,6 +1,7 @@
 name=Kataki, War's Wage
 url=http://magiccards.info/query?q=%21Kataki%2C+War%27s+Wage
 image=http://mtgimage.com/card/kataki%2C%20war%27s%20wage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

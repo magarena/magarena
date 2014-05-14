@@ -1,6 +1,7 @@
 name=Champion of Stray Souls
 url=http://magiccards.info/query?q=%21Champion+of+Stray+Souls
 image=http://mtgimage.com/card/champion%20of%20stray%20souls.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Skeleton,Warrior

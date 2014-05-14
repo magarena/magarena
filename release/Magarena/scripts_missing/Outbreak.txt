@@ -1,6 +1,7 @@
 name=Outbreak
 url=http://magiccards.info/query?q=%21Outbreak
 image=http://mtgimage.com/card/outbreak.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{B}

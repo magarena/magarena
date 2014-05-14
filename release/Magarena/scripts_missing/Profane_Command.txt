@@ -1,6 +1,7 @@
 name=Profane Command
 url=http://magiccards.info/query?q=%21Profane+Command
 image=http://mtgimage.com/card/profane%20command.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{B}

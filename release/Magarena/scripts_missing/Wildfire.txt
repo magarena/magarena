@@ -1,6 +1,7 @@
 name=Wildfire
 url=http://magiccards.info/query?q=%21Wildfire
 image=http://mtgimage.com/card/wildfire.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{R}{R}

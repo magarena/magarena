@@ -1,6 +1,7 @@
 name=Eye of Ugin
 url=http://magiccards.info/query?q=%21Eye+of+Ugin
 image=http://mtgimage.com/card/eye%20of%20ugin.jpg
+value=2.500
 rarity=M
 type=Land
 ability=Colorless Eldrazi spells you cast cost {2} less to cast.;\

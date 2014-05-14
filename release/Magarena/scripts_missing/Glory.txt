@@ -1,6 +1,7 @@
 name=Glory
 url=http://magiccards.info/query?q=%21Glory
 image=http://mtgimage.com/card/glory.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Incarnation

@@ -1,6 +1,7 @@
 name=Fathom Trawl
 url=http://magiccards.info/query?q=%21Fathom+Trawl
 image=http://mtgimage.com/card/fathom%20trawl.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}{U}

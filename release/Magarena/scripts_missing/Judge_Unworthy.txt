@@ -1,6 +1,7 @@
 name=Judge Unworthy
 url=http://magiccards.info/query?q=%21Judge+Unworthy
 image=http://mtgimage.com/card/judge%20unworthy.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}

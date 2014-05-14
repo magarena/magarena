@@ -1,6 +1,7 @@
 name=False Memories
 url=http://magiccards.info/query?q=%21False+Memories
 image=http://mtgimage.com/card/false%20memories.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{U}

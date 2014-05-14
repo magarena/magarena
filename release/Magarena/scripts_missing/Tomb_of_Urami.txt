@@ -1,6 +1,7 @@
 name=Tomb of Urami
 url=http://magiccards.info/query?q=%21Tomb+of+Urami
 image=http://mtgimage.com/card/tomb%20of%20urami.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add {B} to your mana pool. SN deals 1 damage to you if you don't control an Ogre.;\

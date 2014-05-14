@@ -1,6 +1,7 @@
 name=Bereavement
 url=http://magiccards.info/query?q=%21Bereavement
 image=http://mtgimage.com/card/bereavement.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{B}

@@ -1,6 +1,7 @@
 name=Spellshift
 url=http://magiccards.info/query?q=%21Spellshift
 image=http://mtgimage.com/card/spellshift.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}

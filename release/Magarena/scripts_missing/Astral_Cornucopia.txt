@@ -1,6 +1,7 @@
 name=Astral Cornucopia
 url=http://magiccards.info/query?q=%21Astral+Cornucopia
 image=http://mtgimage.com/card/astral%20cornucopia.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={X}{X}{X}

@@ -1,6 +1,7 @@
 name=Daybreak Coronet
 url=http://magiccards.info/query?q=%21Daybreak+Coronet
 image=http://mtgimage.com/card/daybreak%20coronet.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

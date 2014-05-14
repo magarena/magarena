@@ -1,6 +1,7 @@
 name=Daru Warchief
 url=http://magiccards.info/query?q=%21Daru+Warchief
 image=http://mtgimage.com/card/daru%20warchief.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

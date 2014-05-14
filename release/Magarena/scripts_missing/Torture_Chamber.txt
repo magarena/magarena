@@ -1,6 +1,7 @@
 name=Torture Chamber
 url=http://magiccards.info/query?q=%21Torture+Chamber
 image=http://mtgimage.com/card/torture%20chamber.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

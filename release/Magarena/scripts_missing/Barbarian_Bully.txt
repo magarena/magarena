@@ -1,6 +1,7 @@
 name=Barbarian Bully
 url=http://magiccards.info/query?q=%21Barbarian+Bully
 image=http://mtgimage.com/card/barbarian%20bully.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Barbarian

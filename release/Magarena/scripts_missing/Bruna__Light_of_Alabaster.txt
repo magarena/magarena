@@ -1,6 +1,7 @@
 name=Bruna, Light of Alabaster
 url=http://magiccards.info/query?q=%21Bruna%2C+Light+of+Alabaster
 image=http://mtgimage.com/card/bruna%2C%20light%20of%20alabaster.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Angel

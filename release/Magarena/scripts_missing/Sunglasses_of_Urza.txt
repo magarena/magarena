@@ -1,6 +1,7 @@
 name=Sunglasses of Urza
 url=http://magiccards.info/query?q=%21Sunglasses+of+Urza
 image=http://mtgimage.com/card/sunglasses%20of%20urza.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

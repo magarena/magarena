@@ -1,6 +1,7 @@
 name=Stand or Fall
 url=http://magiccards.info/query?q=%21Stand+or+Fall
 image=http://mtgimage.com/card/stand%20or%20fall.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

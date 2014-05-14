@@ -1,6 +1,7 @@
 name=Funeral Charm
 url=http://magiccards.info/query?q=%21Funeral+Charm
 image=http://mtgimage.com/card/funeral%20charm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

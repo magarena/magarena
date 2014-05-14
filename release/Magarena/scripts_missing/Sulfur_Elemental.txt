@@ -1,6 +1,7 @@
 name=Sulfur Elemental
 url=http://magiccards.info/query?q=%21Sulfur+Elemental
 image=http://mtgimage.com/card/sulfur%20elemental.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental

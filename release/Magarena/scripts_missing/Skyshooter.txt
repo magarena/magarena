@@ -1,6 +1,7 @@
 name=Skyshooter
 url=http://magiccards.info/query?q=%21Skyshooter
 image=http://mtgimage.com/card/skyshooter.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Centaur,Archer

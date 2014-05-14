@@ -1,6 +1,7 @@
 name=Magistrate's Scepter
 url=http://magiccards.info/query?q=%21Magistrate%27s+Scepter
 image=http://mtgimage.com/card/magistrate%27s%20scepter.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

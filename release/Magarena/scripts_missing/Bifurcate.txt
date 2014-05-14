@@ -1,6 +1,7 @@
 name=Bifurcate
 url=http://magiccards.info/query?q=%21Bifurcate
 image=http://mtgimage.com/card/bifurcate.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}

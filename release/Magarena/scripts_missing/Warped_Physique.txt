@@ -1,6 +1,7 @@
 name=Warped Physique
 url=http://magiccards.info/query?q=%21Warped+Physique
 image=http://mtgimage.com/card/warped%20physique.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}{B}

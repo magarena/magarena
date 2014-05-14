@@ -1,6 +1,7 @@
 name=Spellbane Centaur
 url=http://magiccards.info/query?q=%21Spellbane+Centaur
 image=http://mtgimage.com/card/spellbane%20centaur.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Centaur

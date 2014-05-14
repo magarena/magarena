@@ -1,6 +1,7 @@
 name=Psychotic Fury
 url=http://magiccards.info/query?q=%21Psychotic+Fury
 image=http://mtgimage.com/card/psychotic%20fury.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

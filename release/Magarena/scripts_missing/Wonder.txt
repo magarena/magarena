@@ -1,6 +1,7 @@
 name=Wonder
 url=http://magiccards.info/query?q=%21Wonder
 image=http://mtgimage.com/card/wonder.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Incarnation

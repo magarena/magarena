@@ -1,6 +1,7 @@
 name=Kira, Great Glass-Spinner
 url=http://magiccards.info/query?q=%21Kira%2C+Great+Glass-Spinner
 image=http://mtgimage.com/card/kira%2C%20great%20glass-spinner.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

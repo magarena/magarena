@@ -1,6 +1,7 @@
 name=Titan's Revenge
 url=http://magiccards.info/query?q=%21Titan%27s+Revenge
 image=http://mtgimage.com/card/titan%27s%20revenge.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}{R}

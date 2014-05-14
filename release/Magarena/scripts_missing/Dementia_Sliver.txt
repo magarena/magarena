@@ -1,6 +1,7 @@
 name=Dementia Sliver
 url=http://magiccards.info/query?q=%21Dementia+Sliver
 image=http://mtgimage.com/card/dementia%20sliver.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Sliver

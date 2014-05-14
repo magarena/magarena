@@ -1,6 +1,7 @@
 name=Illusion
 url=http://magiccards.info/query?q=%21Illusion
 image=http://mtgimage.com/card/illusionreality.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}

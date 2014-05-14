@@ -1,6 +1,7 @@
 name=Glistening Oil
 url=http://magiccards.info/query?q=%21Glistening+Oil
 image=http://mtgimage.com/card/glistening%20oil.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

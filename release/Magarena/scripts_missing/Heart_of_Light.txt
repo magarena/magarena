@@ -1,6 +1,7 @@
 name=Heart of Light
 url=http://magiccards.info/query?q=%21Heart+of+Light
 image=http://mtgimage.com/card/heart%20of%20light.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

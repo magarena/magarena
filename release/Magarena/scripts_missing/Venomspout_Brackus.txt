@@ -1,6 +1,7 @@
 name=Venomspout Brackus
 url=http://magiccards.info/query?q=%21Venomspout+Brackus
 image=http://mtgimage.com/card/venomspout%20brackus.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,7 @@
 name=Broodhatch Nantuko
 url=http://magiccards.info/query?q=%21Broodhatch+Nantuko
 image=http://mtgimage.com/card/broodhatch%20nantuko.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Insect,Druid

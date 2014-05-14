@@ -1,6 +1,7 @@
 name=Zerapa Minotaur
 url=http://magiccards.info/query?q=%21Zerapa+Minotaur
 image=http://mtgimage.com/card/zerapa%20minotaur.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Minotaur

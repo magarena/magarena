@@ -1,6 +1,7 @@
 name=Essence of the Wild
 url=http://magiccards.info/query?q=%21Essence+of+the+Wild
 image=http://mtgimage.com/card/essence%20of%20the%20wild.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Avatar

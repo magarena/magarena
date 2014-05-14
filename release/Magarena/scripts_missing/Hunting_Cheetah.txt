@@ -1,6 +1,7 @@
 name=Hunting Cheetah
 url=http://magiccards.info/query?q=%21Hunting+Cheetah
 image=http://mtgimage.com/card/hunting%20cheetah.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Cat

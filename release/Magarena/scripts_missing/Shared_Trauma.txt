@@ -1,6 +1,7 @@
 name=Shared Trauma
 url=http://magiccards.info/query?q=%21Shared+Trauma
 image=http://mtgimage.com/card/shared%20trauma.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={B}

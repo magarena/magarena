@@ -1,6 +1,7 @@
 name=Dawn Charm
 url=http://magiccards.info/query?q=%21Dawn+Charm
 image=http://mtgimage.com/card/dawn%20charm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}

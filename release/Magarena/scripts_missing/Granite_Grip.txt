@@ -1,6 +1,7 @@
 name=Granite Grip
 url=http://magiccards.info/query?q=%21Granite+Grip
 image=http://mtgimage.com/card/granite%20grip.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Cinder Cloud
 url=http://magiccards.info/query?q=%21Cinder+Cloud
 image=http://mtgimage.com/card/cinder%20cloud.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{R}{R}

@@ -1,6 +1,7 @@
 name=Heidar, Rimewind Master
 url=http://magiccards.info/query?q=%21Heidar%2C+Rimewind+Master
 image=http://mtgimage.com/card/heidar%2C%20rimewind%20master.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

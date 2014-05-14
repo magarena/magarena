@@ -1,6 +1,7 @@
 name=Veteran Bodyguard
 url=http://magiccards.info/query?q=%21Veteran+Bodyguard
 image=http://mtgimage.com/card/veteran%20bodyguard.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human

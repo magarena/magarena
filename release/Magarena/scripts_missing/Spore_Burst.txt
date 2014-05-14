@@ -1,6 +1,7 @@
 name=Spore Burst
 url=http://magiccards.info/query?q=%21Spore+Burst
 image=http://mtgimage.com/card/spore%20burst.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{G}

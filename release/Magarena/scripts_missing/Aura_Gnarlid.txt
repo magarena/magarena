@@ -1,6 +1,7 @@
 name=Aura Gnarlid
 url=http://magiccards.info/query?q=%21Aura+Gnarlid
 image=http://mtgimage.com/card/aura%20gnarlid.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,6 +1,7 @@
 name=Kjeldoran Skyknight
 url=http://magiccards.info/query?q=%21Kjeldoran+Skyknight
 image=http://mtgimage.com/card/kjeldoran%20skyknight.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Knight

@@ -1,6 +1,7 @@
 name=Loafing Giant
 url=http://magiccards.info/query?q=%21Loafing+Giant
 image=http://mtgimage.com/card/loafing%20giant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant

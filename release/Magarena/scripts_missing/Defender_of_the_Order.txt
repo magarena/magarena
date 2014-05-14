@@ -1,6 +1,7 @@
 name=Defender of the Order
 url=http://magiccards.info/query?q=%21Defender+of+the+Order
 image=http://mtgimage.com/card/defender%20of%20the%20order.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

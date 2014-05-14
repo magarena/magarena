@@ -1,6 +1,7 @@
 name=Lingering Mirage
 url=http://magiccards.info/query?q=%21Lingering+Mirage
 image=http://mtgimage.com/card/lingering%20mirage.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

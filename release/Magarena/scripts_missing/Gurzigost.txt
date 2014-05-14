@@ -1,6 +1,7 @@
 name=Gurzigost
 url=http://magiccards.info/query?q=%21Gurzigost
 image=http://mtgimage.com/card/gurzigost.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

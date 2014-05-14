@@ -1,6 +1,7 @@
 name=Hand of Emrakul
 url=http://magiccards.info/query?q=%21Hand+of+Emrakul
 image=http://mtgimage.com/card/hand%20of%20emrakul.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Eldrazi

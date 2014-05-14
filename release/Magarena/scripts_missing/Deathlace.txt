@@ -1,6 +1,7 @@
 name=Deathlace
 url=http://magiccards.info/query?q=%21Deathlace
 image=http://mtgimage.com/card/deathlace.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={B}

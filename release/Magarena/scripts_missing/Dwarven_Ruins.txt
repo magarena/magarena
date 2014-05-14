@@ -1,6 +1,7 @@
 name=Dwarven Ruins
 url=http://magiccards.info/query?q=%21Dwarven+Ruins
 image=http://mtgimage.com/card/dwarven%20ruins.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

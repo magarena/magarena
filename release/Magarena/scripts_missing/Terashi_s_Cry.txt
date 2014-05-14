@@ -1,6 +1,7 @@
 name=Terashi's Cry
 url=http://magiccards.info/query?q=%21Terashi%27s+Cry
 image=http://mtgimage.com/card/terashi%27s%20cry.jpg
+value=2.500
 rarity=C
 type=Sorcery
 subtype=Arcane

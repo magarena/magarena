@@ -1,6 +1,7 @@
 name=Meteor Shower
 url=http://magiccards.info/query?q=%21Meteor+Shower
 image=http://mtgimage.com/card/meteor%20shower.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={X}{X}{R}

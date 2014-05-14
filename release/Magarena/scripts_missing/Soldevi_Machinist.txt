@@ -1,6 +1,7 @@
 name=Soldevi Machinist
 url=http://magiccards.info/query?q=%21Soldevi+Machinist
 image=http://mtgimage.com/card/soldevi%20machinist.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard,Artificer

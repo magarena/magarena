@@ -1,6 +1,7 @@
 name=Aegis of Honor
 url=http://magiccards.info/query?q=%21Aegis+of+Honor
 image=http://mtgimage.com/card/aegis%20of%20honor.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={W}

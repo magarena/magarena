@@ -1,6 +1,7 @@
 name=Scab-Clan Giant
 url=http://magiccards.info/query?q=%21Scab-Clan+Giant
 image=http://mtgimage.com/card/scab-clan%20giant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant,Warrior

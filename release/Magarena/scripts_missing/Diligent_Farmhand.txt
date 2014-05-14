@@ -1,6 +1,7 @@
 name=Diligent Farmhand
 url=http://magiccards.info/query?q=%21Diligent+Farmhand
 image=http://mtgimage.com/card/diligent%20farmhand.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Druid

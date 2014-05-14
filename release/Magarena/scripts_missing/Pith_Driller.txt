@@ -1,6 +1,7 @@
 name=Pith Driller
 url=http://magiccards.info/query?q=%21Pith+Driller
 image=http://mtgimage.com/card/pith%20driller.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Horror

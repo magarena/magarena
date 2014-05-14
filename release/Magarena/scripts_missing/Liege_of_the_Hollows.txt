@@ -1,6 +1,7 @@
 name=Liege of the Hollows
 url=http://magiccards.info/query?q=%21Liege+of+the+Hollows
 image=http://mtgimage.com/card/liege%20of%20the%20hollows.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

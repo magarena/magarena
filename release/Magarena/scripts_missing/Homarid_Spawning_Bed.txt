@@ -1,6 +1,7 @@
 name=Homarid Spawning Bed
 url=http://magiccards.info/query?q=%21Homarid+Spawning+Bed
 image=http://mtgimage.com/card/homarid%20spawning%20bed.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={U}{U}

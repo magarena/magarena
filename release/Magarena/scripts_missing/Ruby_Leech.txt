@@ -1,6 +1,7 @@
 name=Ruby Leech
 url=http://magiccards.info/query?q=%21Ruby+Leech
 image=http://mtgimage.com/card/ruby%20leech.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leech

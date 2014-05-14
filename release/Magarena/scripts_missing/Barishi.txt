@@ -1,6 +1,7 @@
 name=Barishi
 url=http://magiccards.info/query?q=%21Barishi
 image=http://mtgimage.com/card/barishi.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental

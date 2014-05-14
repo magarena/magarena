@@ -1,6 +1,7 @@
 name=Ogre Battledriver
 url=http://magiccards.info/query?q=%21Ogre+Battledriver
 image=http://mtgimage.com/card/ogre%20battledriver.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Ogre,Warrior

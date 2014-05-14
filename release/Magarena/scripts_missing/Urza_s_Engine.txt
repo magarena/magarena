@@ -1,6 +1,7 @@
 name=Urza's Engine
 url=http://magiccards.info/query?q=%21Urza%27s+Engine
 image=http://mtgimage.com/card/urza%27s%20engine.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut

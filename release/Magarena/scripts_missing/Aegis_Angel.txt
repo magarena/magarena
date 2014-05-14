@@ -1,6 +1,7 @@
 name=Aegis Angel
 url=http://magiccards.info/query?q=%21Aegis+Angel
 image=http://mtgimage.com/card/aegis%20angel.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

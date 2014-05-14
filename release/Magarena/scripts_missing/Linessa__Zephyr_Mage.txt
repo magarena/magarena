@@ -1,6 +1,7 @@
 name=Linessa, Zephyr Mage
 url=http://magiccards.info/query?q=%21Linessa%2C+Zephyr+Mage
 image=http://mtgimage.com/card/linessa%2C%20zephyr%20mage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

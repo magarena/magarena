@@ -1,6 +1,7 @@
 name=Hull Breach
 url=http://magiccards.info/query?q=%21Hull+Breach
 image=http://mtgimage.com/card/hull%20breach.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={R}{G}

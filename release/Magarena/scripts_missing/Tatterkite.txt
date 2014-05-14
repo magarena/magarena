@@ -1,6 +1,7 @@
 name=Tatterkite
 url=http://magiccards.info/query?q=%21Tatterkite
 image=http://mtgimage.com/card/tatterkite.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow

@@ -1,6 +1,7 @@
 name=Mole Worms
 url=http://magiccards.info/query?q=%21Mole+Worms
 image=http://mtgimage.com/card/mole%20worms.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Worm

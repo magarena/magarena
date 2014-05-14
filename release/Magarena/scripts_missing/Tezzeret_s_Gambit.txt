@@ -1,6 +1,7 @@
 name=Tezzeret's Gambit
 url=http://magiccards.info/query?q=%21Tezzeret%27s+Gambit
 image=http://mtgimage.com/card/tezzeret%27s%20gambit.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{P/U}

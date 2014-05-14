@@ -1,6 +1,7 @@
 name=Thran Forge
 url=http://magiccards.info/query?q=%21Thran+Forge
 image=http://mtgimage.com/card/thran%20forge.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

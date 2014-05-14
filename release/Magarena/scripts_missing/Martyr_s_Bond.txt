@@ -1,6 +1,7 @@
 name=Martyr's Bond
 url=http://magiccards.info/query?q=%21Martyr%27s+Bond
 image=http://mtgimage.com/card/martyr%27s%20bond.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{W}{W}

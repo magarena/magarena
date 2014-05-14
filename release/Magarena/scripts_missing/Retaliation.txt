@@ -1,6 +1,7 @@
 name=Retaliation
 url=http://magiccards.info/query?q=%21Retaliation
 image=http://mtgimage.com/card/retaliation.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{G}

@@ -1,6 +1,7 @@
 name=Nirkana Revenant
 url=http://magiccards.info/query?q=%21Nirkana+Revenant
 image=http://mtgimage.com/card/nirkana%20revenant.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Vampire,Shade

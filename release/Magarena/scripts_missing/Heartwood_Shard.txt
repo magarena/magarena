@@ -1,6 +1,7 @@
 name=Heartwood Shard
 url=http://magiccards.info/query?q=%21Heartwood+Shard
 image=http://mtgimage.com/card/heartwood%20shard.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

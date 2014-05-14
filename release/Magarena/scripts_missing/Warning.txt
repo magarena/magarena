@@ -1,6 +1,7 @@
 name=Warning
 url=http://magiccards.info/query?q=%21Warning
 image=http://mtgimage.com/card/warning.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

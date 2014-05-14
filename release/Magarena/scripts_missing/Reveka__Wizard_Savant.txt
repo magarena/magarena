@@ -1,6 +1,7 @@
 name=Reveka, Wizard Savant
 url=http://magiccards.info/query?q=%21Reveka%2C+Wizard+Savant
 image=http://mtgimage.com/card/reveka%2C%20wizard%20savant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dwarf,Wizard

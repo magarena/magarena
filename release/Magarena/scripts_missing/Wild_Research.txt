@@ -1,6 +1,7 @@
 name=Wild Research
 url=http://magiccards.info/query?q=%21Wild+Research
 image=http://mtgimage.com/card/wild%20research.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

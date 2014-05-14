@@ -1,6 +1,7 @@
 name=Magus of the Abyss
 url=http://magiccards.info/query?q=%21Magus+of+the+Abyss
 image=http://mtgimage.com/card/magus%20of%20the%20abyss.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

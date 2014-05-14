@@ -1,6 +1,7 @@
 name=Pegasus Stampede
 url=http://magiccards.info/query?q=%21Pegasus+Stampede
 image=http://mtgimage.com/card/pegasus%20stampede.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{W}

@@ -1,6 +1,7 @@
 name=Veldt
 url=http://magiccards.info/query?q=%21Veldt
 image=http://mtgimage.com/card/veldt.jpg
+value=2.500
 rarity=R
 type=Land
 ability=SN doesn't untap during your untap step if it has a depletion counter on it.;\

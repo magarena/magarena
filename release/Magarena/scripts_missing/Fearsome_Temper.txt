@@ -1,6 +1,7 @@
 name=Fearsome Temper
 url=http://magiccards.info/query?q=%21Fearsome+Temper
 image=http://mtgimage.com/card/fearsome%20temper.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

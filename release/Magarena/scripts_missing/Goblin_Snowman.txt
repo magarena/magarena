@@ -1,6 +1,7 @@
 name=Goblin Snowman
 url=http://magiccards.info/query?q=%21Goblin+Snowman
 image=http://mtgimage.com/card/goblin%20snowman.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin

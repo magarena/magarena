@@ -1,6 +1,7 @@
 name=Jeweled Bird
 url=http://magiccards.info/query?q=%21Jeweled+Bird
 image=http://mtgimage.com/card/jeweled%20bird.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

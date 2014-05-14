@@ -1,6 +1,7 @@
 name=Feral Lightning
 url=http://magiccards.info/query?q=%21Feral+Lightning
 image=http://mtgimage.com/card/feral%20lightning.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}{R}{R}

@@ -1,6 +1,7 @@
 name=Master of the Wild Hunt
 url=http://magiccards.info/query?q=%21Master+of+the+Wild+Hunt
 image=http://mtgimage.com/card/master%20of%20the%20wild%20hunt.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Human,Shaman

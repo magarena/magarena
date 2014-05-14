@@ -1,6 +1,7 @@
 name=Giant Ambush Beetle
 url=http://magiccards.info/query?q=%21Giant+Ambush+Beetle
 image=http://mtgimage.com/card/giant%20ambush%20beetle.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Insect

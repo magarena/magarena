@@ -1,6 +1,7 @@
 name=Arashi, the Sky Asunder
 url=http://magiccards.info/query?q=%21Arashi%2C+the+Sky+Asunder
 image=http://mtgimage.com/card/arashi%2C%20the%20sky%20asunder.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

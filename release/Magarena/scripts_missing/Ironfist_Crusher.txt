@@ -1,6 +1,7 @@
 name=Ironfist Crusher
 url=http://magiccards.info/query?q=%21Ironfist+Crusher
 image=http://mtgimage.com/card/ironfist%20crusher.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

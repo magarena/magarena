@@ -1,6 +1,7 @@
 name=Stigma Lasher
 url=http://magiccards.info/query?q=%21Stigma+Lasher
 image=http://mtgimage.com/card/stigma%20lasher.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Shaman

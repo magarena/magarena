@@ -1,6 +1,7 @@
 name=Scrapbasket
 url=http://magiccards.info/query?q=%21Scrapbasket
 image=http://mtgimage.com/card/scrapbasket.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

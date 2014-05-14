@@ -1,6 +1,7 @@
 name=Guardian Angel
 url=http://magiccards.info/query?q=%21Guardian+Angel
 image=http://mtgimage.com/card/guardian%20angel.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={X}{W}

@@ -1,6 +1,7 @@
 name=Reality Strobe
 url=http://magiccards.info/query?q=%21Reality+Strobe
 image=http://mtgimage.com/card/reality%20strobe.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{U}{U}

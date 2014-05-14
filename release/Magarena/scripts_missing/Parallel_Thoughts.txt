@@ -1,6 +1,7 @@
 name=Parallel Thoughts
 url=http://magiccards.info/query?q=%21Parallel+Thoughts
 image=http://mtgimage.com/card/parallel%20thoughts.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

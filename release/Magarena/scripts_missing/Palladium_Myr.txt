@@ -1,6 +1,7 @@
 name=Palladium Myr
 url=http://magiccards.info/query?q=%21Palladium+Myr
 image=http://mtgimage.com/card/palladium%20myr.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Myr

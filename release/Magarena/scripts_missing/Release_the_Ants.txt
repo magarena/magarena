@@ -1,6 +1,7 @@
 name=Release the Ants
 url=http://magiccards.info/query?q=%21Release+the+Ants
 image=http://mtgimage.com/card/release%20the%20ants.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}

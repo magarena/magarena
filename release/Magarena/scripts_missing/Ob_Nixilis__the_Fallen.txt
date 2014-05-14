@@ -1,6 +1,7 @@
 name=Ob Nixilis, the Fallen
 url=http://magiccards.info/query?q=%21Ob+Nixilis%2C+the+Fallen
 image=http://mtgimage.com/card/ob%20nixilis%2C%20the%20fallen.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Demon

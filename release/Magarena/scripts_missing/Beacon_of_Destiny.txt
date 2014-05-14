@@ -1,6 +1,7 @@
 name=Beacon of Destiny
 url=http://magiccards.info/query?q=%21Beacon+of+Destiny
 image=http://mtgimage.com/card/beacon%20of%20destiny.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

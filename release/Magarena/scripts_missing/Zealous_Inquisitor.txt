@@ -1,6 +1,7 @@
 name=Zealous Inquisitor
 url=http://magiccards.info/query?q=%21Zealous+Inquisitor
 image=http://mtgimage.com/card/zealous%20inquisitor.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

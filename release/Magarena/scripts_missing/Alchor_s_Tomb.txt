@@ -1,6 +1,7 @@
 name=Alchor's Tomb
 url=http://magiccards.info/query?q=%21Alchor%27s+Tomb
 image=http://mtgimage.com/card/alchor%27s%20tomb.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

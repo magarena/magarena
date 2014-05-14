@@ -1,6 +1,7 @@
 name=Djinn Illuminatus
 url=http://magiccards.info/query?q=%21Djinn+Illuminatus
 image=http://mtgimage.com/card/djinn%20illuminatus.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Djinn

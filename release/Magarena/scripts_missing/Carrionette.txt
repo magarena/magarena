@@ -1,6 +1,7 @@
 name=Carrionette
 url=http://magiccards.info/query?q=%21Carrionette
 image=http://mtgimage.com/card/carrionette.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Skeleton

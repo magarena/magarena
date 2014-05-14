@@ -1,6 +1,7 @@
 name=Inferno Titan
 url=http://magiccards.info/query?q=%21Inferno+Titan
 image=http://mtgimage.com/card/inferno%20titan.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Giant

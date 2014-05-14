@@ -1,6 +1,7 @@
 name=Undiscovered Paradise
 url=http://magiccards.info/query?q=%21Undiscovered+Paradise
 image=http://mtgimage.com/card/undiscovered%20paradise.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add one mana of any color to your mana pool. During your next untap step, as you untap your permanents, return SN to its owner's hand.

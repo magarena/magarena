@@ -1,6 +1,7 @@
 name=Shapeshifter's Marrow
 url=http://magiccards.info/query?q=%21Shapeshifter%27s+Marrow
 image=http://mtgimage.com/card/shapeshifter%27s%20marrow.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

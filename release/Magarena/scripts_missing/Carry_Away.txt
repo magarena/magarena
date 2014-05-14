@@ -1,6 +1,7 @@
 name=Carry Away
 url=http://magiccards.info/query?q=%21Carry+Away
 image=http://mtgimage.com/card/carry%20away.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

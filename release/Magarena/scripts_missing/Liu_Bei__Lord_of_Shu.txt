@@ -1,6 +1,7 @@
 name=Liu Bei, Lord of Shu
 url=http://magiccards.info/query?q=%21Liu+Bei%2C+Lord+of+Shu
 image=http://mtgimage.com/card/liu%20bei%2C%20lord%20of%20shu.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

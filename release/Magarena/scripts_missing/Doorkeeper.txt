@@ -1,6 +1,7 @@
 name=Doorkeeper
 url=http://magiccards.info/query?q=%21Doorkeeper
 image=http://mtgimage.com/card/doorkeeper.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Homunculus

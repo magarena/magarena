@@ -1,6 +1,7 @@
 name=Empty-Shrine Kannushi
 url=http://magiccards.info/query?q=%21Empty-Shrine+Kannushi
 image=http://mtgimage.com/card/empty-shrine%20kannushi.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

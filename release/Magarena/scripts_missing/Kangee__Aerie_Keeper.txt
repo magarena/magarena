@@ -1,6 +1,7 @@
 name=Kangee, Aerie Keeper
 url=http://magiccards.info/query?q=%21Kangee%2C+Aerie+Keeper
 image=http://mtgimage.com/card/kangee%2C%20aerie%20keeper.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Bird,Wizard

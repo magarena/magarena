@@ -1,6 +1,7 @@
 name=Thundercloud Shaman
 url=http://magiccards.info/query?q=%21Thundercloud+Shaman
 image=http://mtgimage.com/card/thundercloud%20shaman.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant,Shaman

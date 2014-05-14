@@ -1,6 +1,7 @@
 name=Remote Farm
 url=http://magiccards.info/query?q=%21Remote+Farm
 image=http://mtgimage.com/card/remote%20farm.jpg
+value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped with two depletion counters on it.;\

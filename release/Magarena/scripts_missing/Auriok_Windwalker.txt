@@ -1,6 +1,7 @@
 name=Auriok Windwalker
 url=http://magiccards.info/query?q=%21Auriok+Windwalker
 image=http://mtgimage.com/card/auriok%20windwalker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

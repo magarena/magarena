@@ -1,6 +1,7 @@
 name=Xathrid Gorgon
 url=http://magiccards.info/query?q=%21Xathrid+Gorgon
 image=http://mtgimage.com/card/xathrid%20gorgon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Gorgon

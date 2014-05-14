@@ -1,6 +1,7 @@
 name=Tidal Control
 url=http://magiccards.info/query?q=%21Tidal+Control
 image=http://mtgimage.com/card/tidal%20control.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

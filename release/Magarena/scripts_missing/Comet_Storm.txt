@@ -1,6 +1,7 @@
 name=Comet Storm
 url=http://magiccards.info/query?q=%21Comet+Storm
 image=http://mtgimage.com/card/comet%20storm.jpg
+value=2.500
 rarity=M
 type=Instant
 cost={X}{R}{R}

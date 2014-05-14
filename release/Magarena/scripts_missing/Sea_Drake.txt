@@ -1,6 +1,7 @@
 name=Sea Drake
 url=http://magiccards.info/query?q=%21Sea+Drake
 image=http://mtgimage.com/card/sea%20drake.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Drake

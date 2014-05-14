@@ -1,6 +1,7 @@
 name=Electropotence
 url=http://magiccards.info/query?q=%21Electropotence
 image=http://mtgimage.com/card/electropotence.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

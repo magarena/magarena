@@ -1,6 +1,7 @@
 name=Steel Hellkite
 url=http://magiccards.info/query?q=%21Steel+Hellkite
 image=http://mtgimage.com/card/steel%20hellkite.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Dragon

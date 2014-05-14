@@ -1,6 +1,7 @@
 name=Amrou Kithkin
 url=http://magiccards.info/query?q=%21Amrou+Kithkin
 image=http://mtgimage.com/card/amrou%20kithkin.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kithkin

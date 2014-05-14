@@ -1,6 +1,7 @@
 name=Gravecrawler
 url=http://magiccards.info/query?q=%21Gravecrawler
 image=http://mtgimage.com/card/gravecrawler.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie

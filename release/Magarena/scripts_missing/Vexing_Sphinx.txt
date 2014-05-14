@@ -1,6 +1,7 @@
 name=Vexing Sphinx
 url=http://magiccards.info/query?q=%21Vexing+Sphinx
 image=http://mtgimage.com/card/vexing%20sphinx.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Sphinx

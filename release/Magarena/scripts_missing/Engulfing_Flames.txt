@@ -1,6 +1,7 @@
 name=Engulfing Flames
 url=http://magiccards.info/query?q=%21Engulfing+Flames
 image=http://mtgimage.com/card/engulfing%20flames.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={R}

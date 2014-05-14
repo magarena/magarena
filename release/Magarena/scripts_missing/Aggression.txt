@@ -1,6 +1,7 @@
 name=Aggression
 url=http://magiccards.info/query?q=%21Aggression
 image=http://mtgimage.com/card/aggression.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

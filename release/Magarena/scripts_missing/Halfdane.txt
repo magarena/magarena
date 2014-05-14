@@ -1,6 +1,7 @@
 name=Halfdane
 url=http://magiccards.info/query?q=%21Halfdane
 image=http://mtgimage.com/card/halfdane.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

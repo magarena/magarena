@@ -1,6 +1,7 @@
 name=Burning-Tree Bloodscale
 url=http://magiccards.info/query?q=%21Burning-Tree+Bloodscale
 image=http://mtgimage.com/card/burning-tree%20bloodscale.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Viashino,Berserker

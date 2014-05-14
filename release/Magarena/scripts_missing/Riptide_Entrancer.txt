@@ -1,6 +1,7 @@
 name=Riptide Entrancer
 url=http://magiccards.info/query?q=%21Riptide+Entrancer
 image=http://mtgimage.com/card/riptide%20entrancer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

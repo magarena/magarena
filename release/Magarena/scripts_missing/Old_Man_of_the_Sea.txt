@@ -1,6 +1,7 @@
 name=Old Man of the Sea
 url=http://magiccards.info/query?q=%21Old+Man+of+the+Sea
 image=http://mtgimage.com/card/old%20man%20of%20the%20sea.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Djinn

@@ -1,6 +1,7 @@
 name=Boundless Realms
 url=http://magiccards.info/query?q=%21Boundless+Realms
 image=http://mtgimage.com/card/boundless%20realms.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={6}{G}

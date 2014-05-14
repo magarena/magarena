@@ -1,6 +1,7 @@
 name=Fireball
 url=http://magiccards.info/query?q=%21Fireball
 image=http://mtgimage.com/card/fireball.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={X}{R}

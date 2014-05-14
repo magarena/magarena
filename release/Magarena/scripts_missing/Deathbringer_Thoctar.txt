@@ -1,6 +1,7 @@
 name=Deathbringer Thoctar
 url=http://magiccards.info/query?q=%21Deathbringer+Thoctar
 image=http://mtgimage.com/card/deathbringer%20thoctar.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Beast

@@ -1,6 +1,7 @@
 name=Cephalid Shrine
 url=http://magiccards.info/query?q=%21Cephalid+Shrine
 image=http://mtgimage.com/card/cephalid%20shrine.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

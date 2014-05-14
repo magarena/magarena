@@ -1,6 +1,7 @@
 name=Exoskeletal Armor
 url=http://magiccards.info/query?q=%21Exoskeletal+Armor
 image=http://mtgimage.com/card/exoskeletal%20armor.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

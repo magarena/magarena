@@ -1,6 +1,7 @@
 name=Stasis
 url=http://magiccards.info/query?q=%21Stasis
 image=http://mtgimage.com/card/stasis.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U}

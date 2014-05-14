@@ -1,6 +1,7 @@
 name=Neko-Te
 url=http://magiccards.info/query?q=%21Neko-Te
 image=http://mtgimage.com/card/neko-te.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

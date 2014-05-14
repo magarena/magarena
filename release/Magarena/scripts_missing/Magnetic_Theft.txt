@@ -1,6 +1,7 @@
 name=Magnetic Theft
 url=http://magiccards.info/query?q=%21Magnetic+Theft
 image=http://mtgimage.com/card/magnetic%20theft.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={R}

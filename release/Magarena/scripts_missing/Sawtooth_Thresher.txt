@@ -1,6 +1,7 @@
 name=Sawtooth Thresher
 url=http://magiccards.info/query?q=%21Sawtooth+Thresher
 image=http://mtgimage.com/card/sawtooth%20thresher.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Construct

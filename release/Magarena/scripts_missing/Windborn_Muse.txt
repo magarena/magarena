@@ -1,6 +1,7 @@
 name=Windborn Muse
 url=http://magiccards.info/query?q=%21Windborn+Muse
 image=http://mtgimage.com/card/windborn%20muse.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

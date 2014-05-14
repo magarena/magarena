@@ -1,6 +1,7 @@
 name=Seedling Charm
 url=http://magiccards.info/query?q=%21Seedling+Charm
 image=http://mtgimage.com/card/seedling%20charm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}

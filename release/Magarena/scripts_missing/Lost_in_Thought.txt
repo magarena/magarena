@@ -1,6 +1,7 @@
 name=Lost in Thought
 url=http://magiccards.info/query?q=%21Lost+in+Thought
 image=http://mtgimage.com/card/lost%20in%20thought.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

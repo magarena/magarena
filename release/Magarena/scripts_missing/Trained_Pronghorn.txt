@@ -1,6 +1,7 @@
 name=Trained Pronghorn
 url=http://magiccards.info/query?q=%21Trained+Pronghorn
 image=http://mtgimage.com/card/trained%20pronghorn.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Antelope

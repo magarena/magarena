@@ -1,6 +1,7 @@
 name=Pact of the Titan
 url=http://magiccards.info/query?q=%21Pact+of+the+Titan
 image=http://mtgimage.com/card/pact%20of%20the%20titan.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={0}

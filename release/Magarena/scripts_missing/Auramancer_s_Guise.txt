@@ -1,6 +1,7 @@
 name=Auramancer's Guise
 url=http://magiccards.info/query?q=%21Auramancer%27s+Guise
 image=http://mtgimage.com/card/auramancer%27s%20guise.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

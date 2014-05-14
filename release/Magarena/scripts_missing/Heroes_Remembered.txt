@@ -1,6 +1,7 @@
 name=Heroes Remembered
 url=http://magiccards.info/query?q=%21Heroes+Remembered
 image=http://mtgimage.com/card/heroes%20remembered.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={6}{W}{W}{W}

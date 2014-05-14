@@ -1,6 +1,7 @@
 name=Molten Disaster
 url=http://magiccards.info/query?q=%21Molten+Disaster
 image=http://mtgimage.com/card/molten%20disaster.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}{R}

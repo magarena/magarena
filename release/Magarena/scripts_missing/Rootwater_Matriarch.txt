@@ -1,6 +1,7 @@
 name=Rootwater Matriarch
 url=http://magiccards.info/query?q=%21Rootwater+Matriarch
 image=http://mtgimage.com/card/rootwater%20matriarch.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Merfolk

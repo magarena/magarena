@@ -1,6 +1,7 @@
 name=Oona's Prowler
 url=http://magiccards.info/query?q=%21Oona%27s+Prowler
 image=http://mtgimage.com/card/oona%27s%20prowler.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Faerie,Rogue

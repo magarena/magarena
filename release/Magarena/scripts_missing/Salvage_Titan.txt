@@ -1,6 +1,7 @@
 name=Salvage Titan
 url=http://magiccards.info/query?q=%21Salvage+Titan
 image=http://mtgimage.com/card/salvage%20titan.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem

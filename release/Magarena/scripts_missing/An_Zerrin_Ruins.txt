@@ -1,6 +1,7 @@
 name=An-Zerrin Ruins
 url=http://magiccards.info/query?q=%21An-Zerrin+Ruins
 image=http://mtgimage.com/card/an-zerrin%20ruins.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}{R}

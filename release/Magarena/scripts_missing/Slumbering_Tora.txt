@@ -1,6 +1,7 @@
 name=Slumbering Tora
 url=http://magiccards.info/query?q=%21Slumbering+Tora
 image=http://mtgimage.com/card/slumbering%20tora.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

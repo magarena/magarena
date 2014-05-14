@@ -1,6 +1,7 @@
 name=Phantasmal Terrain
 url=http://magiccards.info/query?q=%21Phantasmal+Terrain
 image=http://mtgimage.com/card/phantasmal%20terrain.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

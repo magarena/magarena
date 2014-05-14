@@ -1,6 +1,7 @@
 name=Scrapheap
 url=http://magiccards.info/query?q=%21Scrapheap
 image=http://mtgimage.com/card/scrapheap.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

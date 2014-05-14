@@ -1,6 +1,7 @@
 name=Bottomless Vault
 url=http://magiccards.info/query?q=%21Bottomless+Vault
 image=http://mtgimage.com/card/bottomless%20vault.jpg
+value=2.500
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

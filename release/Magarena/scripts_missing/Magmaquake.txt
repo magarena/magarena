@@ -1,6 +1,7 @@
 name=Magmaquake
 url=http://magiccards.info/query?q=%21Magmaquake
 image=http://mtgimage.com/card/magmaquake.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={X}{R}{R}

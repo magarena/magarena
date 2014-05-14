@@ -1,6 +1,7 @@
 name=Living Destiny
 url=http://magiccards.info/query?q=%21Living+Destiny
 image=http://mtgimage.com/card/living%20destiny.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={3}{G}

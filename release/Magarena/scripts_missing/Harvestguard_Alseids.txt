@@ -1,6 +1,7 @@
 name=Harvestguard Alseids
 url=http://magiccards.info/query?q=%21Harvestguard+Alseids
 image=http://mtgimage.com/card/harvestguard%20alseids.jpg
+value=2.500
 rarity=C
 type=Enchantment,Creature
 subtype=Nymph

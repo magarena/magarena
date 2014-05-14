@@ -1,6 +1,7 @@
 name=Diversionary Tactics
 url=http://magiccards.info/query?q=%21Diversionary+Tactics
 image=http://mtgimage.com/card/diversionary%20tactics.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={3}{W}

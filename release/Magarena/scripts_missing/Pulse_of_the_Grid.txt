@@ -1,6 +1,7 @@
 name=Pulse of the Grid
 url=http://magiccards.info/query?q=%21Pulse+of+the+Grid
 image=http://mtgimage.com/card/pulse%20of%20the%20grid.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{U}{U}

@@ -1,6 +1,7 @@
 name=Well of Lost Dreams
 url=http://magiccards.info/query?q=%21Well+of+Lost+Dreams
 image=http://mtgimage.com/card/well%20of%20lost%20dreams.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

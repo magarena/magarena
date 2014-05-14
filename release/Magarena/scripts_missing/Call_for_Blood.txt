@@ -1,6 +1,7 @@
 name=Call for Blood
 url=http://magiccards.info/query?q=%21Call+for+Blood
 image=http://mtgimage.com/card/call%20for%20blood.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

@@ -1,6 +1,7 @@
 name=One Dozen Eyes
 url=http://magiccards.info/query?q=%21One+Dozen+Eyes
 image=http://mtgimage.com/card/one%20dozen%20eyes.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={5}{G}

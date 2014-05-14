@@ -1,6 +1,7 @@
 name=Akuta, Born of Ash
 url=http://magiccards.info/query?q=%21Akuta%2C+Born+of+Ash
 image=http://mtgimage.com/card/akuta%2C%20born%20of%20ash.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

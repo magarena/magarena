@@ -1,6 +1,7 @@
 name=Time Elemental
 url=http://magiccards.info/query?q=%21Time+Elemental
 image=http://mtgimage.com/card/time%20elemental.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

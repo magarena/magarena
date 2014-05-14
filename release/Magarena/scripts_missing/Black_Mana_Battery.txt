@@ -1,6 +1,7 @@
 name=Black Mana Battery
 url=http://magiccards.info/query?q=%21Black+Mana+Battery
 image=http://mtgimage.com/card/black%20mana%20battery.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

@@ -1,6 +1,7 @@
 name=Overmaster
 url=http://magiccards.info/query?q=%21Overmaster
 image=http://mtgimage.com/card/overmaster.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={R}

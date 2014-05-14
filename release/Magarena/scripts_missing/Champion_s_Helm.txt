@@ -1,6 +1,7 @@
 name=Champion's Helm
 url=http://magiccards.info/query?q=%21Champion%27s+Helm
 image=http://mtgimage.com/card/champion%27s%20helm.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

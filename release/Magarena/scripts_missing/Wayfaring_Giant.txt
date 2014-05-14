@@ -1,6 +1,7 @@
 name=Wayfaring Giant
 url=http://magiccards.info/query?q=%21Wayfaring+Giant
 image=http://mtgimage.com/card/wayfaring%20giant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant

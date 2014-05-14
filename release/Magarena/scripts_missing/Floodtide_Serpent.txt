@@ -1,6 +1,7 @@
 name=Floodtide Serpent
 url=http://magiccards.info/query?q=%21Floodtide+Serpent
 image=http://mtgimage.com/card/floodtide%20serpent.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Serpent

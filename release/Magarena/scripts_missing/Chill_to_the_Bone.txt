@@ -1,6 +1,7 @@
 name=Chill to the Bone
 url=http://magiccards.info/query?q=%21Chill+to+the+Bone
 image=http://mtgimage.com/card/chill%20to%20the%20bone.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={3}{B}

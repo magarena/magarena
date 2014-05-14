@@ -1,6 +1,7 @@
 name=Elemental Appeal
 url=http://magiccards.info/query?q=%21Elemental+Appeal
 image=http://mtgimage.com/card/elemental%20appeal.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={R}{R}{R}{R}

@@ -1,6 +1,7 @@
 name=Enchanted Being
 url=http://magiccards.info/query?q=%21Enchanted+Being
 image=http://mtgimage.com/card/enchanted%20being.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human

@@ -1,6 +1,7 @@
 name=Vine Kami
 url=http://magiccards.info/query?q=%21Vine+Kami
 image=http://mtgimage.com/card/vine%20kami.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

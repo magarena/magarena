@@ -1,6 +1,7 @@
 name=Soul Shepherd
 url=http://magiccards.info/query?q=%21Soul+Shepherd
 image=http://mtgimage.com/card/soul%20shepherd.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,7 @@
 name=Power Conduit
 url=http://magiccards.info/query?q=%21Power+Conduit
 image=http://mtgimage.com/card/power%20conduit.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

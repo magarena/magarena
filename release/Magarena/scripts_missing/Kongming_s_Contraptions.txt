@@ -1,6 +1,7 @@
 name=Kongming's Contraptions
 url=http://magiccards.info/query?q=%21Kongming%27s+Contraptions
 image=http://mtgimage.com/card/kongming%27s%20contraptions.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

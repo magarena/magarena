@@ -1,6 +1,7 @@
 name=Erayo, Soratami Ascendant
 url=http://magiccards.info/query?q=%21Erayo%2C+Soratami+Ascendant
 image=http://mtgimage.com/card/erayo%2C%20soratami%20ascendant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Moonfolk,Monk

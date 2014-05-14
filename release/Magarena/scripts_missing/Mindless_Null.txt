@@ -1,6 +1,7 @@
 name=Mindless Null
 url=http://magiccards.info/query?q=%21Mindless+Null
 image=http://mtgimage.com/card/mindless%20null.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

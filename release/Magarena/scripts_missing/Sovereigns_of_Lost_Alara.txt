@@ -1,6 +1,7 @@
 name=Sovereigns of Lost Alara
 url=http://magiccards.info/query?q=%21Sovereigns+of+Lost+Alara
 image=http://mtgimage.com/card/sovereigns%20of%20lost%20alara.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

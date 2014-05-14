@@ -1,6 +1,7 @@
 name=Spider Climb
 url=http://magiccards.info/query?q=%21Spider+Climb
 image=http://mtgimage.com/card/spider%20climb.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

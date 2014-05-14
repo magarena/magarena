@@ -1,6 +1,7 @@
 name=Lancers en-Kor
 url=http://magiccards.info/query?q=%21Lancers+en-Kor
 image=http://mtgimage.com/card/lancers%20en-kor.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Kor,Soldier

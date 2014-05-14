@@ -1,6 +1,7 @@
 name=O-Naginata
 url=http://magiccards.info/query?q=%21O-Naginata
 image=http://mtgimage.com/card/o-naginata.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

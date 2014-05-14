@@ -1,6 +1,7 @@
 name=City of Shadows
 url=http://magiccards.info/query?q=%21City+of+Shadows
 image=http://mtgimage.com/card/city%20of%20shadows.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}, Exile a creature you control: Put a storage counter on SN.;\

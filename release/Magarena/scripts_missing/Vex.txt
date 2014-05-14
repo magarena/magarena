@@ -1,6 +1,7 @@
 name=Vex
 url=http://magiccards.info/query?q=%21Vex
 image=http://mtgimage.com/card/vex.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{U}

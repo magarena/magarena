@@ -1,6 +1,7 @@
 name=Alabaster Potion
 url=http://magiccards.info/query?q=%21Alabaster+Potion
 image=http://mtgimage.com/card/alabaster%20potion.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={X}{W}{W}

@@ -1,6 +1,7 @@
 name=Haunted Cadaver
 url=http://magiccards.info/query?q=%21Haunted+Cadaver
 image=http://mtgimage.com/card/haunted%20cadaver.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

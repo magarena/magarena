@@ -1,6 +1,7 @@
 name=Crosis's Catacombs
 url=http://magiccards.info/query?q=%21Crosis%27s+Catacombs
 image=http://mtgimage.com/card/crosis%27s%20catacombs.jpg
+value=2.500
 rarity=U
 type=Land
 subtype=Lair

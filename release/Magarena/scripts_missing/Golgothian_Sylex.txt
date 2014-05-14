@@ -1,6 +1,7 @@
 name=Golgothian Sylex
 url=http://magiccards.info/query?q=%21Golgothian+Sylex
 image=http://mtgimage.com/card/golgothian%20sylex.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

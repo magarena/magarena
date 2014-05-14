@@ -1,6 +1,7 @@
 name=Temporal Aperture
 url=http://magiccards.info/query?q=%21Temporal+Aperture
 image=http://mtgimage.com/card/temporal%20aperture.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

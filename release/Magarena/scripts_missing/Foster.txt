@@ -1,6 +1,7 @@
 name=Foster
 url=http://magiccards.info/query?q=%21Foster
 image=http://mtgimage.com/card/foster.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

@@ -1,6 +1,7 @@
 name=Abduction
 url=http://magiccards.info/query?q=%21Abduction
 image=http://mtgimage.com/card/abduction.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

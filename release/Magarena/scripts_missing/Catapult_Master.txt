@@ -1,6 +1,7 @@
 name=Catapult Master
 url=http://magiccards.info/query?q=%21Catapult+Master
 image=http://mtgimage.com/card/catapult%20master.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

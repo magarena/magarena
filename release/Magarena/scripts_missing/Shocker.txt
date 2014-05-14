@@ -1,6 +1,7 @@
 name=Shocker
 url=http://magiccards.info/query?q=%21Shocker
 image=http://mtgimage.com/card/shocker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Insect

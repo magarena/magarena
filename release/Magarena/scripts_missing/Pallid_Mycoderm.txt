@@ -1,6 +1,7 @@
 name=Pallid Mycoderm
 url=http://magiccards.info/query?q=%21Pallid+Mycoderm
 image=http://mtgimage.com/card/pallid%20mycoderm.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Fungus

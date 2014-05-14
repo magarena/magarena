@@ -1,6 +1,7 @@
 name=Squee's Revenge
 url=http://magiccards.info/query?q=%21Squee%27s+Revenge
 image=http://mtgimage.com/card/squee%27s%20revenge.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{U}{R}

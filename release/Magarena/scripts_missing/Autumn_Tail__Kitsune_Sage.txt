@@ -1,6 +1,7 @@
 name=Autumn-Tail, Kitsune Sage
 url=http://magiccards.info/query?q=%21Autumn-Tail%2C+Kitsune+Sage
 image=http://mtgimage.com/card/autumn-tail%2C%20kitsune%20sage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Fox,Wizard

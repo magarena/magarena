@@ -1,6 +1,7 @@
 name=Truth or Tale
 url=http://magiccards.info/query?q=%21Truth+or+Tale
 image=http://mtgimage.com/card/truth%20or%20tale.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{U}

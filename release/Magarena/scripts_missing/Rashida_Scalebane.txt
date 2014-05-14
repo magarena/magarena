@@ -1,6 +1,7 @@
 name=Rashida Scalebane
 url=http://magiccards.info/query?q=%21Rashida+Scalebane
 image=http://mtgimage.com/card/rashida%20scalebane.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

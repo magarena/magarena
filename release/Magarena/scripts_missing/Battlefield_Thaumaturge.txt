@@ -1,6 +1,7 @@
 name=Battlefield Thaumaturge
 url=http://magiccards.info/query?q=%21Battlefield+Thaumaturge
 image=http://mtgimage.com/card/battlefield%20thaumaturge.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

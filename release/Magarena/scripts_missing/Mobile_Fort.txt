@@ -1,6 +1,7 @@
 name=Mobile Fort
 url=http://magiccards.info/query?q=%21Mobile+Fort
 image=http://mtgimage.com/card/mobile%20fort.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Wall

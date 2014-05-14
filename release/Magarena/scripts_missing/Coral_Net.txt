@@ -1,6 +1,7 @@
 name=Coral Net
 url=http://magiccards.info/query?q=%21Coral+Net
 image=http://mtgimage.com/card/coral%20net.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

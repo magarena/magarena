@@ -1,6 +1,7 @@
 name=Remove Enchantments
 url=http://magiccards.info/query?q=%21Remove+Enchantments
 image=http://mtgimage.com/card/remove%20enchantments.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

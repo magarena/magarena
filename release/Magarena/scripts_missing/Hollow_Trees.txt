@@ -1,6 +1,7 @@
 name=Hollow Trees
 url=http://magiccards.info/query?q=%21Hollow+Trees
 image=http://mtgimage.com/card/hollow%20trees.jpg
+value=2.500
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

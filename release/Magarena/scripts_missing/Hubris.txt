@@ -1,6 +1,7 @@
 name=Hubris
 url=http://magiccards.info/query?q=%21Hubris
 image=http://mtgimage.com/card/hubris.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

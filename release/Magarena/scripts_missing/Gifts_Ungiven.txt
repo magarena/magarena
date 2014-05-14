@@ -1,6 +1,7 @@
 name=Gifts Ungiven
 url=http://magiccards.info/query?q=%21Gifts+Ungiven
 image=http://mtgimage.com/card/gifts%20ungiven.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{U}

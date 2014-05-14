@@ -1,6 +1,7 @@
 name=Sunforger
 url=http://magiccards.info/query?q=%21Sunforger
 image=http://mtgimage.com/card/sunforger.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

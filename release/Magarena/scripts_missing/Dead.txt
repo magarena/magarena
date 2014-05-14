@@ -1,6 +1,7 @@
 name=Dead
 url=http://magiccards.info/query?q=%21Dead
 image=http://mtgimage.com/card/deadgone.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

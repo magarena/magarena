@@ -1,6 +1,7 @@
 name=Lotus Blossom
 url=http://magiccards.info/query?q=%21Lotus+Blossom
 image=http://mtgimage.com/card/lotus%20blossom.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

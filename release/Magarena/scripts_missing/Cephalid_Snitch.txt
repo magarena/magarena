@@ -1,6 +1,7 @@
 name=Cephalid Snitch
 url=http://magiccards.info/query?q=%21Cephalid+Snitch
 image=http://mtgimage.com/card/cephalid%20snitch.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Cephalid,Wizard

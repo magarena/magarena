@@ -1,6 +1,7 @@
 name=Necrosavant
 url=http://magiccards.info/query?q=%21Necrosavant
 image=http://mtgimage.com/card/necrosavant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Giant

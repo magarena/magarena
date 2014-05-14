@@ -1,6 +1,7 @@
 name=Return to Dust
 url=http://magiccards.info/query?q=%21Return+to+Dust
 image=http://mtgimage.com/card/return%20to%20dust.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{W}{W}

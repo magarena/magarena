@@ -1,6 +1,7 @@
 name=Sylvan Paradise
 url=http://magiccards.info/query?q=%21Sylvan+Paradise
 image=http://mtgimage.com/card/sylvan%20paradise.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={G}

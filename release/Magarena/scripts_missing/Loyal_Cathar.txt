@@ -1,6 +1,7 @@
 name=Loyal Cathar
 url=http://magiccards.info/query?q=%21Loyal+Cathar
 image=http://mtgimage.com/card/loyal%20cathar.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

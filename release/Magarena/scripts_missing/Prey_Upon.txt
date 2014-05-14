@@ -1,6 +1,7 @@
 name=Prey Upon
 url=http://magiccards.info/query?q=%21Prey+Upon
 image=http://mtgimage.com/card/prey%20upon.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={G}

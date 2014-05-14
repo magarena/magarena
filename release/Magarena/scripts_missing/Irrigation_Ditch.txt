@@ -1,6 +1,7 @@
 name=Irrigation Ditch
 url=http://magiccards.info/query?q=%21Irrigation+Ditch
 image=http://mtgimage.com/card/irrigation%20ditch.jpg
+value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

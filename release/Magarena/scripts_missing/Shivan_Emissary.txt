@@ -1,6 +1,7 @@
 name=Shivan Emissary
 url=http://magiccards.info/query?q=%21Shivan+Emissary
 image=http://mtgimage.com/card/shivan%20emissary.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

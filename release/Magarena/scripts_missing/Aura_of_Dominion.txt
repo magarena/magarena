@@ -1,6 +1,7 @@
 name=Aura of Dominion
 url=http://magiccards.info/query?q=%21Aura+of+Dominion
 image=http://mtgimage.com/card/aura%20of%20dominion.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

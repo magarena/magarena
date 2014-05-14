@@ -1,6 +1,7 @@
 name=Hidden Herd
 url=http://magiccards.info/query?q=%21Hidden+Herd
 image=http://mtgimage.com/card/hidden%20herd.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={G}

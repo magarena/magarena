@@ -1,6 +1,7 @@
 name=Sage of Fables
 url=http://magiccards.info/query?q=%21Sage+of+Fables
 image=http://mtgimage.com/card/sage%20of%20fables.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

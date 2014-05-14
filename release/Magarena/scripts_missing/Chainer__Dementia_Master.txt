@@ -1,6 +1,7 @@
 name=Chainer, Dementia Master
 url=http://magiccards.info/query?q=%21Chainer%2C+Dementia+Master
 image=http://mtgimage.com/card/chainer%2C%20dementia%20master.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Minion

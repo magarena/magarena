@@ -1,6 +1,7 @@
 name=Petrified Wood-Kin
 url=http://magiccards.info/query?q=%21Petrified+Wood-Kin
 image=http://mtgimage.com/card/petrified%20wood-kin.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Warrior

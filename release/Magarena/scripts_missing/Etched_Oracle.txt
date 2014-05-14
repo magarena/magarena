@@ -1,6 +1,7 @@
 name=Etched Oracle
 url=http://magiccards.info/query?q=%21Etched+Oracle
 image=http://mtgimage.com/card/etched%20oracle.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Wizard

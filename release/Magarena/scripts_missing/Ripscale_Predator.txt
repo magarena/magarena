@@ -1,6 +1,7 @@
 name=Ripscale Predator
 url=http://magiccards.info/query?q=%21Ripscale+Predator
 image=http://mtgimage.com/card/ripscale%20predator.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Lizard

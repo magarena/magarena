@@ -1,6 +1,7 @@
 name=Athreos, God of Passage
 url=http://magiccards.info/query?q=%21Athreos%2C+God+of+Passage
 image=http://mtgimage.com/card/athreos%2C%20god%20of%20passage.jpg
+value=2.500
 rarity=M
 type=Enchantment,Creature
 subtype=God

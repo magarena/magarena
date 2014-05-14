@@ -1,6 +1,7 @@
 name=River Kelpie
 url=http://magiccards.info/query?q=%21River+Kelpie
 image=http://mtgimage.com/card/river%20kelpie.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast

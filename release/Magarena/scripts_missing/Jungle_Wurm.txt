@@ -1,6 +1,7 @@
 name=Jungle Wurm
 url=http://magiccards.info/query?q=%21Jungle+Wurm
 image=http://mtgimage.com/card/jungle%20wurm.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm

@@ -1,6 +1,7 @@
 name=Arcane Melee
 url=http://magiccards.info/query?q=%21Arcane+Melee
 image=http://mtgimage.com/card/arcane%20melee.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{U}

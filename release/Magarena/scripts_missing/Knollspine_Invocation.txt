@@ -1,6 +1,7 @@
 name=Knollspine Invocation
 url=http://magiccards.info/query?q=%21Knollspine+Invocation
 image=http://mtgimage.com/card/knollspine%20invocation.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{R}{R}

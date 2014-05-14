@@ -1,6 +1,7 @@
 name=Vine Dryad
 url=http://magiccards.info/query?q=%21Vine+Dryad
 image=http://mtgimage.com/card/vine%20dryad.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dryad

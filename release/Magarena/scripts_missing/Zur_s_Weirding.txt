@@ -1,6 +1,7 @@
 name=Zur's Weirding
 url=http://magiccards.info/query?q=%21Zur%27s+Weirding
 image=http://mtgimage.com/card/zur%27s%20weirding.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}

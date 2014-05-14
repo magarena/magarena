@@ -1,6 +1,7 @@
 name=Lava Runner
 url=http://magiccards.info/query?q=%21Lava+Runner
 image=http://mtgimage.com/card/lava%20runner.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Lizard

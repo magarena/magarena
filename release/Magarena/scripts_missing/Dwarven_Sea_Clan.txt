@@ -1,6 +1,7 @@
 name=Dwarven Sea Clan
 url=http://magiccards.info/query?q=%21Dwarven+Sea+Clan
 image=http://mtgimage.com/card/dwarven%20sea%20clan.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dwarf

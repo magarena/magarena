@@ -1,6 +1,7 @@
 name=Kumano, Master Yamabushi
 url=http://magiccards.info/query?q=%21Kumano%2C+Master+Yamabushi
 image=http://mtgimage.com/card/kumano%2C%20master%20yamabushi.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Shaman

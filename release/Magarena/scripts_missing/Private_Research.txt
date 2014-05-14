@@ -1,6 +1,7 @@
 name=Private Research
 url=http://magiccards.info/query?q=%21Private+Research
 image=http://mtgimage.com/card/private%20research.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

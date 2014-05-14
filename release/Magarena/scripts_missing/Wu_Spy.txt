@@ -1,6 +1,7 @@
 name=Wu Spy
 url=http://magiccards.info/query?q=%21Wu+Spy
 image=http://mtgimage.com/card/wu%20spy.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier,Rogue

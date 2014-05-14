@@ -1,6 +1,7 @@
 name=Thunderstaff
 url=http://magiccards.info/query?q=%21Thunderstaff
 image=http://mtgimage.com/card/thunderstaff.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

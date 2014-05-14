@@ -1,6 +1,7 @@
 name=Silver Wyvern
 url=http://magiccards.info/query?q=%21Silver+Wyvern
 image=http://mtgimage.com/card/silver%20wyvern.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Drake

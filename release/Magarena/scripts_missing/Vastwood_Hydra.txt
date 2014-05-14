@@ -1,6 +1,7 @@
 name=Vastwood Hydra
 url=http://magiccards.info/query?q=%21Vastwood+Hydra
 image=http://mtgimage.com/card/vastwood%20hydra.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Hydra

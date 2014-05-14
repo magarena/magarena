@@ -1,6 +1,7 @@
 name=Compost
 url=http://magiccards.info/query?q=%21Compost
 image=http://mtgimage.com/card/compost.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}

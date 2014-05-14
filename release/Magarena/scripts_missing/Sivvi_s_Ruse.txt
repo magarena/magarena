@@ -1,6 +1,7 @@
 name=Sivvi's Ruse
 url=http://magiccards.info/query?q=%21Sivvi%27s+Ruse
 image=http://mtgimage.com/card/sivvi%27s%20ruse.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{W}{W}

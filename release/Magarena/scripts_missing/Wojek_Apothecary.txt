@@ -1,6 +1,7 @@
 name=Wojek Apothecary
 url=http://magiccards.info/query?q=%21Wojek+Apothecary
 image=http://mtgimage.com/card/wojek%20apothecary.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

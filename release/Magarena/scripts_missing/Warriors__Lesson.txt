@@ -1,6 +1,7 @@
 name=Warriors' Lesson
 url=http://magiccards.info/query?q=%21Warriors%27+Lesson
 image=http://mtgimage.com/card/warriors%27%20lesson.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={G}

@@ -1,6 +1,7 @@
 name=Hermit Druid
 url=http://magiccards.info/query?q=%21Hermit+Druid
 image=http://mtgimage.com/card/hermit%20druid.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Druid

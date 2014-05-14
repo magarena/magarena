@@ -1,6 +1,7 @@
 name=Suleiman's Legacy
 url=http://magiccards.info/query?q=%21Suleiman%27s+Legacy
 image=http://mtgimage.com/card/suleiman%27s%20legacy.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={R}{W}

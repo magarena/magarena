@@ -1,6 +1,7 @@
 name=Goblin Firestarter
 url=http://magiccards.info/query?q=%21Goblin+Firestarter
 image=http://mtgimage.com/card/goblin%20firestarter.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin

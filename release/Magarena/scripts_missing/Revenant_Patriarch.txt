@@ -1,6 +1,7 @@
 name=Revenant Patriarch
 url=http://magiccards.info/query?q=%21Revenant+Patriarch
 image=http://mtgimage.com/card/revenant%20patriarch.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Boggart Forager
 url=http://magiccards.info/query?q=%21Boggart+Forager
 image=http://mtgimage.com/card/boggart%20forager.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

@@ -1,6 +1,7 @@
 name=Punishment
 url=http://magiccards.info/query?q=%21Punishment
 image=http://mtgimage.com/card/crimepunishment.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{G}

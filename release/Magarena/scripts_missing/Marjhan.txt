@@ -1,6 +1,7 @@
 name=Marjhan
 url=http://magiccards.info/query?q=%21Marjhan
 image=http://mtgimage.com/card/marjhan.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leviathan

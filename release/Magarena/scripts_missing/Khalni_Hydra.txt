@@ -1,6 +1,7 @@
 name=Khalni Hydra
 url=http://magiccards.info/query?q=%21Khalni+Hydra
 image=http://mtgimage.com/card/khalni%20hydra.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Hydra

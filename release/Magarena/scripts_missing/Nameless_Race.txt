@@ -1,6 +1,7 @@
 name=Nameless Race
 url=http://magiccards.info/query?q=%21Nameless+Race
 image=http://mtgimage.com/card/nameless%20race.jpg
+value=2.500
 rarity=R
 type=Creature
 cost={3}{B}

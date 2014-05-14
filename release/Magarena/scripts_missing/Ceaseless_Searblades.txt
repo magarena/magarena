@@ -1,6 +1,7 @@
 name=Ceaseless Searblades
 url=http://magiccards.info/query?q=%21Ceaseless+Searblades
 image=http://mtgimage.com/card/ceaseless%20searblades.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental,Warrior

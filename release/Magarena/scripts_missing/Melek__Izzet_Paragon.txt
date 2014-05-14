@@ -1,6 +1,7 @@
 name=Melek, Izzet Paragon
 url=http://magiccards.info/query?q=%21Melek%2C+Izzet+Paragon
 image=http://mtgimage.com/card/melek%2C%20izzet%20paragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Weird,Wizard

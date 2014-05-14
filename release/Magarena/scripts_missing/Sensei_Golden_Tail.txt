@@ -1,6 +1,7 @@
 name=Sensei Golden-Tail
 url=http://magiccards.info/query?q=%21Sensei+Golden-Tail
 image=http://mtgimage.com/card/sensei%20golden-tail.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Fox,Samurai

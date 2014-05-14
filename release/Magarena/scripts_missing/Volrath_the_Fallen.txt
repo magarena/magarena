@@ -1,6 +1,7 @@
 name=Volrath the Fallen
 url=http://magiccards.info/query?q=%21Volrath+the+Fallen
 image=http://mtgimage.com/card/volrath%20the%20fallen.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

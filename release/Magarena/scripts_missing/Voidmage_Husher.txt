@@ -1,6 +1,7 @@
 name=Voidmage Husher
 url=http://magiccards.info/query?q=%21Voidmage+Husher
 image=http://mtgimage.com/card/voidmage%20husher.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

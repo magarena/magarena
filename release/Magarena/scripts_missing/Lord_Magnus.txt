@@ -1,6 +1,7 @@
 name=Lord Magnus
 url=http://magiccards.info/query?q=%21Lord+Magnus
 image=http://mtgimage.com/card/lord%20magnus.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Druid

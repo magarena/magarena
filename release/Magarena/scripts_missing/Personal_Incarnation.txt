@@ -1,6 +1,7 @@
 name=Personal Incarnation
 url=http://magiccards.info/query?q=%21Personal+Incarnation
 image=http://mtgimage.com/card/personal%20incarnation.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar,Incarnation

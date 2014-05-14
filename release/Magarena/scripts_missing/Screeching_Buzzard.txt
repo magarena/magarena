@@ -1,6 +1,7 @@
 name=Screeching Buzzard
 url=http://magiccards.info/query?q=%21Screeching+Buzzard
 image=http://mtgimage.com/card/screeching%20buzzard.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Bird

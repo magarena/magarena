@@ -1,6 +1,7 @@
 name=Shape Stealer
 url=http://magiccards.info/query?q=%21Shape+Stealer
 image=http://mtgimage.com/card/shape%20stealer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Shapeshifter,Spirit

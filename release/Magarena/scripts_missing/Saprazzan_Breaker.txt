@@ -1,6 +1,7 @@
 name=Saprazzan Breaker
 url=http://magiccards.info/query?q=%21Saprazzan+Breaker
 image=http://mtgimage.com/card/saprazzan%20breaker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

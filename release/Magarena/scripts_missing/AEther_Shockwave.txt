@@ -1,6 +1,7 @@
 name=AEther Shockwave
 url=http://magiccards.info/query?q=%21%C3%86ther+Shockwave
 image=http://mtgimage.com/card/aether%20shockwave.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{W}

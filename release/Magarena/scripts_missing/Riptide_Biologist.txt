@@ -1,6 +1,7 @@
 name=Riptide Biologist
 url=http://magiccards.info/query?q=%21Riptide+Biologist
 image=http://mtgimage.com/card/riptide%20biologist.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

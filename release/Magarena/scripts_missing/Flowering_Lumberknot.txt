@@ -1,6 +1,7 @@
 name=Flowering Lumberknot
 url=http://magiccards.info/query?q=%21Flowering+Lumberknot
 image=http://mtgimage.com/card/flowering%20lumberknot.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Treefolk

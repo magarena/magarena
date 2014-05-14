@@ -1,6 +1,7 @@
 name=Contagion Engine
 url=http://magiccards.info/query?q=%21Contagion+Engine
 image=http://mtgimage.com/card/contagion%20engine.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

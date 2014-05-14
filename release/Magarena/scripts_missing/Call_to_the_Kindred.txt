@@ -1,6 +1,7 @@
 name=Call to the Kindred
 url=http://magiccards.info/query?q=%21Call+to+the+Kindred
 image=http://mtgimage.com/card/call%20to%20the%20kindred.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

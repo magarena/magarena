@@ -1,6 +1,7 @@
 name=Mudhole
 url=http://magiccards.info/query?q=%21Mudhole
 image=http://mtgimage.com/card/mudhole.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{R}

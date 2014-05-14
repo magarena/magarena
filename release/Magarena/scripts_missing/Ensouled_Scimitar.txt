@@ -1,6 +1,7 @@
 name=Ensouled Scimitar
 url=http://magiccards.info/query?q=%21Ensouled+Scimitar
 image=http://mtgimage.com/card/ensouled%20scimitar.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

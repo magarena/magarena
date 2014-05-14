@@ -1,6 +1,7 @@
 name=Night
 url=http://magiccards.info/query?q=%21Night
 image=http://mtgimage.com/card/nightday.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={B}

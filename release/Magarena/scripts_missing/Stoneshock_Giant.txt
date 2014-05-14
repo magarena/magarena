@@ -1,6 +1,7 @@
 name=Stoneshock Giant
 url=http://magiccards.info/query?q=%21Stoneshock+Giant
 image=http://mtgimage.com/card/stoneshock%20giant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant

@@ -1,6 +1,7 @@
 name=Primal Whisperer
 url=http://magiccards.info/query?q=%21Primal+Whisperer
 image=http://mtgimage.com/card/primal%20whisperer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Soldier

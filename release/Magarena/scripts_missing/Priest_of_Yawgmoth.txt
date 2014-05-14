@@ -1,6 +1,7 @@
 name=Priest of Yawgmoth
 url=http://magiccards.info/query?q=%21Priest+of+Yawgmoth
 image=http://mtgimage.com/card/priest%20of%20yawgmoth.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

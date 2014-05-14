@@ -1,6 +1,7 @@
 name=Brassclaw Orcs
 url=http://magiccards.info/query?q=%21Brassclaw+Orcs
 image=http://mtgimage.com/card/brassclaw%20orcs1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Orc

@@ -1,6 +1,7 @@
 name=It That Betrays
 url=http://magiccards.info/query?q=%21It+That+Betrays
 image=http://mtgimage.com/card/it%20that%20betrays.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Eldrazi

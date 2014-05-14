@@ -1,6 +1,7 @@
 name=Talara's Battalion
 url=http://magiccards.info/query?q=%21Talara%27s+Battalion
 image=http://mtgimage.com/card/talara%27s%20battalion.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Warrior

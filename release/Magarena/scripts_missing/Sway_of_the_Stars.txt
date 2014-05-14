@@ -1,6 +1,7 @@
 name=Sway of the Stars
 url=http://magiccards.info/query?q=%21Sway+of+the+Stars
 image=http://mtgimage.com/card/sway%20of%20the%20stars.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={8}{U}{U}

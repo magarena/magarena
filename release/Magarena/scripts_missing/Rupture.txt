@@ -1,6 +1,7 @@
 name=Rupture
 url=http://magiccards.info/query?q=%21Rupture
 image=http://mtgimage.com/card/rupture.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{R}

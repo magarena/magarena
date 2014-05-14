@@ -1,6 +1,7 @@
 name=Sprite Noble
 url=http://magiccards.info/query?q=%21Sprite+Noble
 image=http://mtgimage.com/card/sprite%20noble.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Faerie

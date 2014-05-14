@@ -1,6 +1,7 @@
 name=Necropotence
 url=http://magiccards.info/query?q=%21Necropotence
 image=http://mtgimage.com/card/necropotence.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

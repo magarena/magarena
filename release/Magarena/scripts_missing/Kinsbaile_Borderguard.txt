@@ -1,6 +1,7 @@
 name=Kinsbaile Borderguard
 url=http://magiccards.info/query?q=%21Kinsbaile+Borderguard
 image=http://mtgimage.com/card/kinsbaile%20borderguard.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Kithkin,Soldier

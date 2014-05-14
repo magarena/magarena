@@ -1,6 +1,7 @@
 name=Eternity Vessel
 url=http://magiccards.info/query?q=%21Eternity+Vessel
 image=http://mtgimage.com/card/eternity%20vessel.jpg
+value=2.500
 rarity=M
 type=Artifact
 cost={6}

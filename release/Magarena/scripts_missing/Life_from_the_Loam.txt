@@ -1,6 +1,7 @@
 name=Life from the Loam
 url=http://magiccards.info/query?q=%21Life+from+the+Loam
 image=http://mtgimage.com/card/life%20from%20the%20loam.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={1}{G}

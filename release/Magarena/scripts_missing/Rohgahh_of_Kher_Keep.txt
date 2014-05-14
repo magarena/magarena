@@ -1,6 +1,7 @@
 name=Rohgahh of Kher Keep
 url=http://magiccards.info/query?q=%21Rohgahh+of+Kher+Keep
 image=http://mtgimage.com/card/rohgahh%20of%20kher%20keep.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Kobold

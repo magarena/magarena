@@ -1,6 +1,7 @@
 name=Nemesis Mask
 url=http://magiccards.info/query?q=%21Nemesis+Mask
 image=http://mtgimage.com/card/nemesis%20mask.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

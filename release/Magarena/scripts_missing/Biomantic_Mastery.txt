@@ -1,6 +1,7 @@
 name=Biomantic Mastery
 url=http://magiccards.info/query?q=%21Biomantic+Mastery
 image=http://mtgimage.com/card/biomantic%20mastery.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{G/U}{G/U}{G/U}

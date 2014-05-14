@@ -1,6 +1,7 @@
 name=Winter Blast
 url=http://magiccards.info/query?q=%21Winter+Blast
 image=http://mtgimage.com/card/winter%20blast.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{G}

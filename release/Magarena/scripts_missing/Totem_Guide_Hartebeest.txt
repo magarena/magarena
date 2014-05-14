@@ -1,6 +1,7 @@
 name=Totem-Guide Hartebeest
 url=http://magiccards.info/query?q=%21Totem-Guide+Hartebeest
 image=http://mtgimage.com/card/totem-guide%20hartebeest.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Antelope

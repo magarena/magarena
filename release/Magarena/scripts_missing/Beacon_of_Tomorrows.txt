@@ -1,6 +1,7 @@
 name=Beacon of Tomorrows
 url=http://magiccards.info/query?q=%21Beacon+of+Tomorrows
 image=http://mtgimage.com/card/beacon%20of%20tomorrows.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={6}{U}{U}

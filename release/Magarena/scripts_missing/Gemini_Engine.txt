@@ -1,6 +1,7 @@
 name=Gemini Engine
 url=http://magiccards.info/query?q=%21Gemini+Engine
 image=http://mtgimage.com/card/gemini%20engine.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Construct

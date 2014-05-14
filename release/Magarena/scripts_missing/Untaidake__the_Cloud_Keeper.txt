@@ -1,6 +1,7 @@
 name=Untaidake, the Cloud Keeper
 url=http://magiccards.info/query?q=%21Untaidake%2C+the+Cloud+Keeper
 image=http://mtgimage.com/card/untaidake%2C%20the%20cloud%20keeper.jpg
+value=2.500
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\

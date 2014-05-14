@@ -1,6 +1,7 @@
 name=Omniscience
 url=http://magiccards.info/query?q=%21Omniscience
 image=http://mtgimage.com/card/omniscience.jpg
+value=2.500
 rarity=M
 type=Enchantment
 cost={7}{U}{U}{U}

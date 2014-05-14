@@ -1,6 +1,7 @@
 name=Blessings of Nature
 url=http://magiccards.info/query?q=%21Blessings+of+Nature
 image=http://mtgimage.com/card/blessings%20of%20nature.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{G}

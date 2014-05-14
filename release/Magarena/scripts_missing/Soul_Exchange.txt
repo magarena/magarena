@@ -1,6 +1,7 @@
 name=Soul Exchange
 url=http://magiccards.info/query?q=%21Soul+Exchange
 image=http://mtgimage.com/card/soul%20exchange.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={B}{B}

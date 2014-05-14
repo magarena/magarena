@@ -1,6 +1,7 @@
 name=Tundra Kavu
 url=http://magiccards.info/query?q=%21Tundra+Kavu
 image=http://mtgimage.com/card/tundra%20kavu.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kavu

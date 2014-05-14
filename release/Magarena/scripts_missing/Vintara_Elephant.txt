@@ -1,6 +1,7 @@
 name=Vintara Elephant
 url=http://magiccards.info/query?q=%21Vintara+Elephant
 image=http://mtgimage.com/card/vintara%20elephant.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elephant

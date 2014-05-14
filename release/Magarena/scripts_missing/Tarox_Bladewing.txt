@@ -1,6 +1,7 @@
 name=Tarox Bladewing
 url=http://magiccards.info/query?q=%21Tarox+Bladewing
 image=http://mtgimage.com/card/tarox%20bladewing.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

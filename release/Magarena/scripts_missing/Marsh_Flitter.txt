@@ -1,6 +1,7 @@
 name=Marsh Flitter
 url=http://magiccards.info/query?q=%21Marsh+Flitter
 image=http://mtgimage.com/card/marsh%20flitter.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Faerie,Rogue

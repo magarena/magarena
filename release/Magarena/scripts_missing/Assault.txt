@@ -1,6 +1,7 @@
 name=Assault
 url=http://magiccards.info/query?q=%21Assault
 image=http://mtgimage.com/card/assaultbattery.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={R}

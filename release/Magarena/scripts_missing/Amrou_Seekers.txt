@@ -1,6 +1,7 @@
 name=Amrou Seekers
 url=http://magiccards.info/query?q=%21Amrou+Seekers
 image=http://mtgimage.com/card/amrou%20seekers.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kithkin,Rebel

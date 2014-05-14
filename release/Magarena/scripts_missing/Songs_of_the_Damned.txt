@@ -1,6 +1,7 @@
 name=Songs of the Damned
 url=http://magiccards.info/query?q=%21Songs+of+the+Damned
 image=http://mtgimage.com/card/songs%20of%20the%20damned.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

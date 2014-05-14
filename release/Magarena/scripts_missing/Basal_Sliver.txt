@@ -1,6 +1,7 @@
 name=Basal Sliver
 url=http://magiccards.info/query?q=%21Basal+Sliver
 image=http://mtgimage.com/card/basal%20sliver.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Sliver

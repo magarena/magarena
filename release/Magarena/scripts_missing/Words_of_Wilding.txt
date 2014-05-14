@@ -1,6 +1,7 @@
 name=Words of Wilding
 url=http://magiccards.info/query?q=%21Words+of+Wilding
 image=http://mtgimage.com/card/words%20of%20wilding.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}

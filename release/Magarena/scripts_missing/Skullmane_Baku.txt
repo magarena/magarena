@@ -1,6 +1,7 @@
 name=Skullmane Baku
 url=http://magiccards.info/query?q=%21Skullmane+Baku
 image=http://mtgimage.com/card/skullmane%20baku.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

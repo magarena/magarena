@@ -1,6 +1,7 @@
 name=Dormant Gomazoa
 url=http://magiccards.info/query?q=%21Dormant+Gomazoa
 image=http://mtgimage.com/card/dormant%20gomazoa.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Jellyfish

@@ -1,6 +1,7 @@
 name=Temper
 url=http://magiccards.info/query?q=%21Temper
 image=http://mtgimage.com/card/temper.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={X}{1}{W}

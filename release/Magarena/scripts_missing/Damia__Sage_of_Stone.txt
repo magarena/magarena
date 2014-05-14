@@ -1,6 +1,7 @@
 name=Damia, Sage of Stone
 url=http://magiccards.info/query?q=%21Damia%2C+Sage+of+Stone
 image=http://mtgimage.com/card/damia%2C%20sage%20of%20stone.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Gorgon,Wizard

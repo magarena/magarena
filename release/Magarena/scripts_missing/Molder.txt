@@ -1,6 +1,7 @@
 name=Molder
 url=http://magiccards.info/query?q=%21Molder
 image=http://mtgimage.com/card/molder.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={X}{G}

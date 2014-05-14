@@ -1,6 +1,7 @@
 name=Children of Korlis
 url=http://magiccards.info/query?q=%21Children+of+Korlis
 image=http://mtgimage.com/card/children%20of%20korlis.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Rebel,Cleric

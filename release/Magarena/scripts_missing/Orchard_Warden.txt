@@ -1,6 +1,7 @@
 name=Orchard Warden
 url=http://magiccards.info/query?q=%21Orchard+Warden
 image=http://mtgimage.com/card/orchard%20warden.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Treefolk,Shaman

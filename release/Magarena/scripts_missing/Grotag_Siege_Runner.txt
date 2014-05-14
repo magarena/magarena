@@ -1,6 +1,7 @@
 name=Grotag Siege-Runner
 url=http://magiccards.info/query?q=%21Grotag+Siege-Runner
 image=http://mtgimage.com/card/grotag%20siege-runner.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

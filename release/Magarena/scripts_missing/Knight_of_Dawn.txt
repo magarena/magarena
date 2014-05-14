@@ -1,6 +1,7 @@
 name=Knight of Dawn
 url=http://magiccards.info/query?q=%21Knight+of+Dawn
 image=http://mtgimage.com/card/knight%20of%20dawn.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Knight

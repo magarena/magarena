@@ -1,6 +1,7 @@
 name=Haazda Shield Mate
 url=http://magiccards.info/query?q=%21Haazda+Shield+Mate
 image=http://mtgimage.com/card/haazda%20shield%20mate.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

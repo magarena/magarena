@@ -1,6 +1,7 @@
 name=Defense Grid
 url=http://magiccards.info/query?q=%21Defense+Grid
 image=http://mtgimage.com/card/defense%20grid.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

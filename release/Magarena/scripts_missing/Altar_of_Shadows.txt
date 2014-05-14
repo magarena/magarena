@@ -1,6 +1,7 @@
 name=Altar of Shadows
 url=http://magiccards.info/query?q=%21Altar+of+Shadows
 image=http://mtgimage.com/card/altar%20of%20shadows.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={7}

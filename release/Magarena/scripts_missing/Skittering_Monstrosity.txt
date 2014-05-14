@@ -1,6 +1,7 @@
 name=Skittering Monstrosity
 url=http://magiccards.info/query?q=%21Skittering+Monstrosity
 image=http://mtgimage.com/card/skittering%20monstrosity.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Horror

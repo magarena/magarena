@@ -1,6 +1,7 @@
 name=Scattering Stroke
 url=http://magiccards.info/query?q=%21Scattering+Stroke
 image=http://mtgimage.com/card/scattering%20stroke.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{U}{U}

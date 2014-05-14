@@ -1,6 +1,7 @@
 name=Gahiji, Honored One
 url=http://magiccards.info/query?q=%21Gahiji%2C+Honored+One
 image=http://mtgimage.com/card/gahiji%2C%20honored%20one.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Beast

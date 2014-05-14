@@ -1,6 +1,7 @@
 name=Silence the Believers
 url=http://magiccards.info/query?q=%21Silence+the+Believers
 image=http://mtgimage.com/card/silence%20the%20believers.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{B}{B}

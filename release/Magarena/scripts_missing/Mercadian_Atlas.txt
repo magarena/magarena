@@ -1,6 +1,7 @@
 name=Mercadian Atlas
 url=http://magiccards.info/query?q=%21Mercadian+Atlas
 image=http://mtgimage.com/card/mercadian%20atlas.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

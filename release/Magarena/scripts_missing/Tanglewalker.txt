@@ -1,6 +1,7 @@
 name=Tanglewalker
 url=http://magiccards.info/query?q=%21Tanglewalker
 image=http://mtgimage.com/card/tanglewalker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Dryad

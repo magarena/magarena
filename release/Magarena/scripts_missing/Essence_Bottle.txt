@@ -1,6 +1,7 @@
 name=Essence Bottle
 url=http://magiccards.info/query?q=%21Essence+Bottle
 image=http://mtgimage.com/card/essence%20bottle.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

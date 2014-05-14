@@ -1,6 +1,7 @@
 name=Planeswalker's Mirth
 url=http://magiccards.info/query?q=%21Planeswalker%27s+Mirth
 image=http://mtgimage.com/card/planeswalker%27s%20mirth.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}

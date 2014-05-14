@@ -1,6 +1,7 @@
 name=Decree of Annihilation
 url=http://magiccards.info/query?q=%21Decree+of+Annihilation
 image=http://mtgimage.com/card/decree%20of%20annihilation.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={8}{R}{R}

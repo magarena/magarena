@@ -1,6 +1,7 @@
 name=Trickery Charm
 url=http://magiccards.info/query?q=%21Trickery+Charm
 image=http://mtgimage.com/card/trickery%20charm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

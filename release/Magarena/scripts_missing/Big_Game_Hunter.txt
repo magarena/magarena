@@ -1,6 +1,7 @@
 name=Big Game Hunter
 url=http://magiccards.info/query?q=%21Big+Game+Hunter
 image=http://mtgimage.com/card/big%20game%20hunter.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Rebel,Assassin

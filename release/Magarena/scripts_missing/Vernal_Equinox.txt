@@ -1,6 +1,7 @@
 name=Vernal Equinox
 url=http://magiccards.info/query?q=%21Vernal+Equinox
 image=http://mtgimage.com/card/vernal%20equinox.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}

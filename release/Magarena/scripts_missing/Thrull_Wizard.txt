@@ -1,6 +1,7 @@
 name=Thrull Wizard
 url=http://magiccards.info/query?q=%21Thrull+Wizard
 image=http://mtgimage.com/card/thrull%20wizard.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Thrull,Wizard

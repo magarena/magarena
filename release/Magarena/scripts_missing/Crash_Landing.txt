@@ -1,6 +1,7 @@
 name=Crash Landing
 url=http://magiccards.info/query?q=%21Crash+Landing
 image=http://mtgimage.com/card/crash%20landing.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{G}

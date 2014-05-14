@@ -1,6 +1,7 @@
 name=Spitting Slug
 url=http://magiccards.info/query?q=%21Spitting+Slug
 image=http://mtgimage.com/card/spitting%20slug.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Slug

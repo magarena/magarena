@@ -1,6 +1,7 @@
 name=Bloodscent
 url=http://magiccards.info/query?q=%21Bloodscent
 image=http://mtgimage.com/card/bloodscent.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{G}

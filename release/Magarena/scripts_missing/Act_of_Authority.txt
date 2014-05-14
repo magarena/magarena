@@ -1,6 +1,7 @@
 name=Act of Authority
 url=http://magiccards.info/query?q=%21Act+of+Authority
 image=http://mtgimage.com/card/act%20of%20authority.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

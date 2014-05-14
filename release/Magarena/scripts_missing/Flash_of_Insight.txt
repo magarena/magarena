@@ -1,6 +1,7 @@
 name=Flash of Insight
 url=http://magiccards.info/query?q=%21Flash+of+Insight
 image=http://mtgimage.com/card/flash%20of%20insight.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={X}{1}{U}

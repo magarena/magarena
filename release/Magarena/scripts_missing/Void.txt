@@ -1,6 +1,7 @@
 name=Void
 url=http://magiccards.info/query?q=%21Void
 image=http://mtgimage.com/card/void.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}{R}

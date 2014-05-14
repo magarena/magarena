@@ -1,6 +1,7 @@
 name=Captivating Vampire
 url=http://magiccards.info/query?q=%21Captivating+Vampire
 image=http://mtgimage.com/card/captivating%20vampire.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire

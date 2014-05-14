@@ -1,6 +1,7 @@
 name=Flameshot
 url=http://magiccards.info/query?q=%21Flameshot
 image=http://mtgimage.com/card/flameshot.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}

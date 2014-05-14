@@ -1,6 +1,7 @@
 name=Credit Voucher
 url=http://magiccards.info/query?q=%21Credit+Voucher
 image=http://mtgimage.com/card/credit%20voucher.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

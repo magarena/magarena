@@ -1,6 +1,7 @@
 name=Leyline of Punishment
 url=http://magiccards.info/query?q=%21Leyline+of+Punishment
 image=http://mtgimage.com/card/leyline%20of%20punishment.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}{R}

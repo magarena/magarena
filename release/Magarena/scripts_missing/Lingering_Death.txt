@@ -1,6 +1,7 @@
 name=Lingering Death
 url=http://magiccards.info/query?q=%21Lingering+Death
 image=http://mtgimage.com/card/lingering%20death.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

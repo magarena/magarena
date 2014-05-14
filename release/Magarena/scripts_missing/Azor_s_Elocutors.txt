@@ -1,6 +1,7 @@
 name=Azor's Elocutors
 url=http://magiccards.info/query?q=%21Azor%27s+Elocutors
 image=http://mtgimage.com/card/azor%27s%20elocutors.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Advisor

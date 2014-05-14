@@ -1,6 +1,7 @@
 name=Freyalise's Winds
 url=http://magiccards.info/query?q=%21Freyalise%27s+Winds
 image=http://mtgimage.com/card/freyalise%27s%20winds.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

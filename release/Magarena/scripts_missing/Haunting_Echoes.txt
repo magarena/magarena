@@ -1,6 +1,7 @@
 name=Haunting Echoes
 url=http://magiccards.info/query?q=%21Haunting+Echoes
 image=http://mtgimage.com/card/haunting%20echoes.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

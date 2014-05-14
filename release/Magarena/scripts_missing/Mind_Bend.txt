@@ -1,6 +1,7 @@
 name=Mind Bend
 url=http://magiccards.info/query?q=%21Mind+Bend
 image=http://mtgimage.com/card/mind%20bend.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}

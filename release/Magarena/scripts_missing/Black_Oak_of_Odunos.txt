@@ -1,6 +1,7 @@
 name=Black Oak of Odunos
 url=http://magiccards.info/query?q=%21Black+Oak+of+Odunos
 image=http://mtgimage.com/card/black%20oak%20of%20odunos.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Treefolk

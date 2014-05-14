@@ -1,6 +1,7 @@
 name=Mogg Infestation
 url=http://magiccards.info/query?q=%21Mogg+Infestation
 image=http://mtgimage.com/card/mogg%20infestation.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}

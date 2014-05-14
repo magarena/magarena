@@ -1,6 +1,7 @@
 name=Detonate
 url=http://magiccards.info/query?q=%21Detonate
 image=http://mtgimage.com/card/detonate.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={X}{R}

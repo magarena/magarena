@@ -1,6 +1,7 @@
 name=City of Traitors
 url=http://magiccards.info/query?q=%21City+of+Traitors
 image=http://mtgimage.com/card/city%20of%20traitors.jpg
+value=2.500
 rarity=R
 type=Land
 ability=When you play another land, sacrifice SN.;\

@@ -1,6 +1,7 @@
 name=Way of the Thief
 url=http://magiccards.info/query?q=%21Way+of+the+Thief
 image=http://mtgimage.com/card/way%20of%20the%20thief.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

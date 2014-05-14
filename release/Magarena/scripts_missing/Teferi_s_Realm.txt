@@ -1,6 +1,7 @@
 name=Teferi's Realm
 url=http://magiccards.info/query?q=%21Teferi%27s+Realm
 image=http://mtgimage.com/card/teferi%27s%20realm.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U}{U}

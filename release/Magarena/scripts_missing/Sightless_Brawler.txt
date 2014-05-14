@@ -1,6 +1,7 @@
 name=Sightless Brawler
 url=http://magiccards.info/query?q=%21Sightless+Brawler
 image=http://mtgimage.com/card/sightless%20brawler.jpg
+value=2.500
 rarity=U
 type=Enchantment,Creature
 subtype=Human,Warrior

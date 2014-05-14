@@ -1,6 +1,7 @@
 name=Shade's Breath
 url=http://magiccards.info/query?q=%21Shade%27s+Breath
 image=http://mtgimage.com/card/shade%27s%20breath.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{B}

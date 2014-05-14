@@ -1,6 +1,7 @@
 name=Hanna's Custody
 url=http://magiccards.info/query?q=%21Hanna%27s+Custody
 image=http://mtgimage.com/card/hanna%27s%20custody.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}

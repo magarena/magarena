@@ -1,6 +1,7 @@
 name=Sea Gate Oracle
 url=http://magiccards.info/query?q=%21Sea+Gate+Oracle
 image=http://mtgimage.com/card/sea%20gate%20oracle.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

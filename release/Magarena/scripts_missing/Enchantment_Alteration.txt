@@ -1,6 +1,7 @@
 name=Enchantment Alteration
 url=http://magiccards.info/query?q=%21Enchantment+Alteration
 image=http://mtgimage.com/card/enchantment%20alteration.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

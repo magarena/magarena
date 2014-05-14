@@ -1,6 +1,7 @@
 name=Mul Daya Channelers
 url=http://magiccards.info/query?q=%21Mul+Daya+Channelers
 image=http://mtgimage.com/card/mul%20daya%20channelers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Druid,Shaman

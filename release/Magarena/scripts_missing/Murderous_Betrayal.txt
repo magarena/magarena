@@ -1,6 +1,7 @@
 name=Murderous Betrayal
 url=http://magiccards.info/query?q=%21Murderous+Betrayal
 image=http://mtgimage.com/card/murderous%20betrayal.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={B}{B}{B}

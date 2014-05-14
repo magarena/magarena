@@ -1,6 +1,7 @@
 name=Moonlit Strider
 url=http://magiccards.info/query?q=%21Moonlit+Strider
 image=http://mtgimage.com/card/moonlit%20strider.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

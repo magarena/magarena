@@ -1,6 +1,7 @@
 name=Eye of Singularity
 url=http://magiccards.info/query?q=%21Eye+of+Singularity
 image=http://mtgimage.com/card/eye%20of%20singularity.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{W}

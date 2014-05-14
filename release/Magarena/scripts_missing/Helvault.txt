@@ -1,6 +1,7 @@
 name=Helvault
 url=http://magiccards.info/query?q=%21Helvault
 image=http://mtgimage.com/card/helvault.jpg
+value=2.500
 rarity=M
 type=Artifact
 cost={3}

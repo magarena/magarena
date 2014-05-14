@@ -1,6 +1,7 @@
 name=Shaman's Trance
 url=http://magiccards.info/query?q=%21Shaman%27s+Trance
 image=http://mtgimage.com/card/shaman%27s%20trance.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{R}

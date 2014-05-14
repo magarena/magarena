@@ -1,6 +1,7 @@
 name=Tromokratis
 url=http://magiccards.info/query?q=%21Tromokratis
 image=http://mtgimage.com/card/tromokratis.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Kraken

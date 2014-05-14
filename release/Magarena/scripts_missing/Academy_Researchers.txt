@@ -1,6 +1,7 @@
 name=Academy Researchers
 url=http://magiccards.info/query?q=%21Academy+Researchers
 image=http://mtgimage.com/card/academy%20researchers.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

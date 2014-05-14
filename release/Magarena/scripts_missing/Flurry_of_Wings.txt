@@ -1,6 +1,7 @@
 name=Flurry of Wings
 url=http://magiccards.info/query?q=%21Flurry+of+Wings
 image=http://mtgimage.com/card/flurry%20of%20wings.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={G}{W}{U}

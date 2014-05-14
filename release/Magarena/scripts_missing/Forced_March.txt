@@ -1,6 +1,7 @@
 name=Forced March
 url=http://magiccards.info/query?q=%21Forced+March
 image=http://mtgimage.com/card/forced%20march.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{B}{B}{B}

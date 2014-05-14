@@ -1,6 +1,7 @@
 name=Scuttlemutt
 url=http://magiccards.info/query?q=%21Scuttlemutt
 image=http://mtgimage.com/card/scuttlemutt.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow

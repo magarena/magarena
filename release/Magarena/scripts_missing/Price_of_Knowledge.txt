@@ -1,6 +1,7 @@
 name=Price of Knowledge
 url=http://magiccards.info/query?q=%21Price+of+Knowledge
 image=http://mtgimage.com/card/price%20of%20knowledge.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={6}{B}

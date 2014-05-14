@@ -1,6 +1,7 @@
 name=Pollenbright Wings
 url=http://magiccards.info/query?q=%21Pollenbright+Wings
 image=http://mtgimage.com/card/pollenbright%20wings.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

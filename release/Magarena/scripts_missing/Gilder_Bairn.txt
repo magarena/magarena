@@ -1,6 +1,7 @@
 name=Gilder Bairn
 url=http://magiccards.info/query?q=%21Gilder+Bairn
 image=http://mtgimage.com/card/gilder%20bairn.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ouphe

@@ -1,6 +1,7 @@
 name=Stalking Tiger
 url=http://magiccards.info/query?q=%21Stalking+Tiger
 image=http://mtgimage.com/card/stalking%20tiger.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Cat

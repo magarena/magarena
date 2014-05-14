@@ -1,6 +1,7 @@
 name=Sisay's Ingenuity
 url=http://magiccards.info/query?q=%21Sisay%27s+Ingenuity
 image=http://mtgimage.com/card/sisay%27s%20ingenuity.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

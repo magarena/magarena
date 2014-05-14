@@ -1,6 +1,7 @@
 name=Lavamancer's Skill
 url=http://magiccards.info/query?q=%21Lavamancer%27s+Skill
 image=http://mtgimage.com/card/lavamancer%27s%20skill.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

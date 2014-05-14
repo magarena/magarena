@@ -1,6 +1,7 @@
 name=Runed Stalactite
 url=http://magiccards.info/query?q=%21Runed+Stalactite
 image=http://mtgimage.com/card/runed%20stalactite.jpg
+value=2.500
 rarity=C
 type=Artifact
 subtype=Equipment

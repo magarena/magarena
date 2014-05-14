@@ -1,6 +1,7 @@
 name=Kederekt Leviathan
 url=http://magiccards.info/query?q=%21Kederekt+Leviathan
 image=http://mtgimage.com/card/kederekt%20leviathan.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leviathan

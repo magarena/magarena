@@ -1,6 +1,7 @@
 name=Dragonsoul Knight
 url=http://magiccards.info/query?q=%21Dragonsoul+Knight
 image=http://mtgimage.com/card/dragonsoul%20knight.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Knight

@@ -1,6 +1,7 @@
 name=Primal Plasma
 url=http://magiccards.info/query?q=%21Primal+Plasma
 image=http://mtgimage.com/card/primal%20plasma.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental,Shapeshifter

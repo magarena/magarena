@@ -1,6 +1,7 @@
 name=Brutal Suppression
 url=http://magiccards.info/query?q=%21Brutal+Suppression
 image=http://mtgimage.com/card/brutal%20suppression.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={R}

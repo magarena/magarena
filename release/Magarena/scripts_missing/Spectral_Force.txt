@@ -1,6 +1,7 @@
 name=Spectral Force
 url=http://magiccards.info/query?q=%21Spectral+Force
 image=http://mtgimage.com/card/spectral%20force.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Spirit

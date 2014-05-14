@@ -1,6 +1,7 @@
 name=Mourner's Shield
 url=http://magiccards.info/query?q=%21Mourner%27s+Shield
 image=http://mtgimage.com/card/mourner%27s%20shield.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

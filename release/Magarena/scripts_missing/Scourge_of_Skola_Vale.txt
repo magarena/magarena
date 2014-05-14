@@ -1,6 +1,7 @@
 name=Scourge of Skola Vale
 url=http://magiccards.info/query?q=%21Scourge+of+Skola+Vale
 image=http://mtgimage.com/card/scourge%20of%20skola%20vale.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Hydra

@@ -1,6 +1,7 @@
 name=Artifact Possession
 url=http://magiccards.info/query?q=%21Artifact+Possession
 image=http://mtgimage.com/card/artifact%20possession.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Enigma Sphinx
 url=http://magiccards.info/query?q=%21Enigma+Sphinx
 image=http://mtgimage.com/card/enigma%20sphinx.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Sphinx

@@ -1,6 +1,7 @@
 name=Assembly Hall
 url=http://magiccards.info/query?q=%21Assembly+Hall
 image=http://mtgimage.com/card/assembly%20hall.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

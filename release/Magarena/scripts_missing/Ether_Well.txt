@@ -1,6 +1,7 @@
 name=Ether Well
 url=http://magiccards.info/query?q=%21Ether+Well
 image=http://mtgimage.com/card/ether%20well.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{U}

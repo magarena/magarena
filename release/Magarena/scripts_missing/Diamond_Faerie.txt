@@ -1,6 +1,7 @@
 name=Diamond Faerie
 url=http://magiccards.info/query?q=%21Diamond+Faerie
 image=http://mtgimage.com/card/diamond%20faerie.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Faerie

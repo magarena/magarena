@@ -1,6 +1,7 @@
 name=Altar Golem
 url=http://magiccards.info/query?q=%21Altar+Golem
 image=http://mtgimage.com/card/altar%20golem.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem

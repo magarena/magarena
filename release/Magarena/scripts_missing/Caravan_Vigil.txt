@@ -1,6 +1,7 @@
 name=Caravan Vigil
 url=http://magiccards.info/query?q=%21Caravan+Vigil
 image=http://mtgimage.com/card/caravan%20vigil.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={G}

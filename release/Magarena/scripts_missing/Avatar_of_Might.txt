@@ -1,6 +1,7 @@
 name=Avatar of Might
 url=http://magiccards.info/query?q=%21Avatar+of+Might
 image=http://mtgimage.com/card/avatar%20of%20might.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar

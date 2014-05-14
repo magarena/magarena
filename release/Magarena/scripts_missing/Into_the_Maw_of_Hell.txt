@@ -1,6 +1,7 @@
 name=Into the Maw of Hell
 url=http://magiccards.info/query?q=%21Into+the+Maw+of+Hell
 image=http://mtgimage.com/card/into%20the%20maw%20of%20hell.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

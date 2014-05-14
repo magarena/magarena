@@ -1,6 +1,7 @@
 name=Midnight Charm
 url=http://magiccards.info/query?q=%21Midnight+Charm
 image=http://mtgimage.com/card/midnight%20charm.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

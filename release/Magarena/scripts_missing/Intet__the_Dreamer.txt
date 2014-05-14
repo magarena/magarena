@@ -1,6 +1,7 @@
 name=Intet, the Dreamer
 url=http://magiccards.info/query?q=%21Intet%2C+the+Dreamer
 image=http://mtgimage.com/card/intet%2C%20the%20dreamer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

@@ -1,6 +1,7 @@
 name=King Macar, the Gold-Cursed
 url=http://magiccards.info/query?q=%21King+Macar%2C+the+Gold-Cursed
 image=http://mtgimage.com/card/king%20macar%2C%20the%20gold-cursed.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human

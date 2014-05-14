@@ -1,6 +1,7 @@
 name=Druidic Satchel
 url=http://magiccards.info/query?q=%21Druidic+Satchel
 image=http://mtgimage.com/card/druidic%20satchel.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

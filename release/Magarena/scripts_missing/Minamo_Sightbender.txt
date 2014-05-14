@@ -1,6 +1,7 @@
 name=Minamo Sightbender
 url=http://magiccards.info/query?q=%21Minamo+Sightbender
 image=http://mtgimage.com/card/minamo%20sightbender.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

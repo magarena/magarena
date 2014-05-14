@@ -1,6 +1,7 @@
 name=Fyndhorn Elder
 url=http://magiccards.info/query?q=%21Fyndhorn+Elder
 image=http://mtgimage.com/card/fyndhorn%20elder.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf,Druid

@@ -1,6 +1,7 @@
 name=Burnt Offering
 url=http://magiccards.info/query?q=%21Burnt+Offering
 image=http://mtgimage.com/card/burnt%20offering.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

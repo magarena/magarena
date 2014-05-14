@@ -1,6 +1,7 @@
 name=Reincarnation
 url=http://magiccards.info/query?q=%21Reincarnation
 image=http://mtgimage.com/card/reincarnation.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{G}{G}

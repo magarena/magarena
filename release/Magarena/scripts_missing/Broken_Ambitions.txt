@@ -1,6 +1,7 @@
 name=Broken Ambitions
 url=http://magiccards.info/query?q=%21Broken+Ambitions
 image=http://mtgimage.com/card/broken%20ambitions.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={X}{U}

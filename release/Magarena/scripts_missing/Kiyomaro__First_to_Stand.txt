@@ -1,6 +1,7 @@
 name=Kiyomaro, First to Stand
 url=http://magiccards.info/query?q=%21Kiyomaro%2C+First+to+Stand
 image=http://mtgimage.com/card/kiyomaro%2C%20first%20to%20stand.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

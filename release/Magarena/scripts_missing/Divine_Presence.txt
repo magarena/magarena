@@ -1,6 +1,7 @@
 name=Divine Presence
 url=http://magiccards.info/query?q=%21Divine+Presence
 image=http://mtgimage.com/card/divine%20presence.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}

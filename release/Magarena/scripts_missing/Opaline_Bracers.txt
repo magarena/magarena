@@ -1,6 +1,7 @@
 name=Opaline Bracers
 url=http://magiccards.info/query?q=%21Opaline+Bracers
 image=http://mtgimage.com/card/opaline%20bracers.jpg
+value=2.500
 rarity=C
 type=Artifact
 subtype=Equipment

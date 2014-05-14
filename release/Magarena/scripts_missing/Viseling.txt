@@ -1,6 +1,7 @@
 name=Viseling
 url=http://magiccards.info/query?q=%21Viseling
 image=http://mtgimage.com/card/viseling.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Construct

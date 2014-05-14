@@ -1,6 +1,7 @@
 name=Imprison
 url=http://magiccards.info/query?q=%21Imprison
 image=http://mtgimage.com/card/imprison.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

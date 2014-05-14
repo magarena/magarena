@@ -1,6 +1,7 @@
 name=Gift of the Gargantuan
 url=http://magiccards.info/query?q=%21Gift+of+the+Gargantuan
 image=http://mtgimage.com/card/gift%20of%20the%20gargantuan.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={2}{G}

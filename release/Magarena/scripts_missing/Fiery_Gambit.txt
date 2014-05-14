@@ -1,6 +1,7 @@
 name=Fiery Gambit
 url=http://magiccards.info/query?q=%21Fiery+Gambit
 image=http://mtgimage.com/card/fiery%20gambit.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{R}

@@ -1,6 +1,7 @@
 name=Soltari Guerrillas
 url=http://magiccards.info/query?q=%21Soltari+Guerrillas
 image=http://mtgimage.com/card/soltari%20guerrillas.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Soltari,Soldier

@@ -1,6 +1,7 @@
 name=Shaleskin Plower
 url=http://magiccards.info/query?q=%21Shaleskin+Plower
 image=http://mtgimage.com/card/shaleskin%20plower.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

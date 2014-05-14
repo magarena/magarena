@@ -1,6 +1,7 @@
 name=Irini Sengir
 url=http://magiccards.info/query?q=%21Irini+Sengir
 image=http://mtgimage.com/card/irini%20sengir.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Vampire,Dwarf

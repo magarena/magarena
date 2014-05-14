@@ -1,6 +1,7 @@
 name=Nightshade Assassin
 url=http://magiccards.info/query?q=%21Nightshade+Assassin
 image=http://mtgimage.com/card/nightshade%20assassin.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Assassin

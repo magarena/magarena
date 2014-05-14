@@ -1,6 +1,7 @@
 name=Primeval Force
 url=http://magiccards.info/query?q=%21Primeval+Force
 image=http://mtgimage.com/card/primeval%20force.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

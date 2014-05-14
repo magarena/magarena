@@ -1,6 +1,7 @@
 name=Shimian Night Stalker
 url=http://magiccards.info/query?q=%21Shimian+Night+Stalker
 image=http://mtgimage.com/card/shimian%20night%20stalker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Nightstalker

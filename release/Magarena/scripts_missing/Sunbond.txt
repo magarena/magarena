@@ -1,6 +1,7 @@
 name=Sunbond
 url=http://magiccards.info/query?q=%21Sunbond
 image=http://mtgimage.com/card/sunbond.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

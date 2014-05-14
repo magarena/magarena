@@ -1,6 +1,7 @@
 name=Whetstone
 url=http://magiccards.info/query?q=%21Whetstone
 image=http://mtgimage.com/card/whetstone.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

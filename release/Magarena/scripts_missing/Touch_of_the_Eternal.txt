@@ -1,6 +1,7 @@
 name=Touch of the Eternal
 url=http://magiccards.info/query?q=%21Touch+of+the+Eternal
 image=http://mtgimage.com/card/touch%20of%20the%20eternal.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={5}{W}{W}

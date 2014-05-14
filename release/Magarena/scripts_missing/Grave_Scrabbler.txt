@@ -1,6 +1,7 @@
 name=Grave Scrabbler
 url=http://magiccards.info/query?q=%21Grave+Scrabbler
 image=http://mtgimage.com/card/grave%20scrabbler.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

@@ -1,6 +1,7 @@
 name=Adaptive Automaton
 url=http://magiccards.info/query?q=%21Adaptive+Automaton
 image=http://mtgimage.com/card/adaptive%20automaton.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Construct

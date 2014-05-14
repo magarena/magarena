@@ -1,6 +1,7 @@
 name=Glass Asp
 url=http://magiccards.info/query?q=%21Glass+Asp
 image=http://mtgimage.com/card/glass%20asp.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Snake

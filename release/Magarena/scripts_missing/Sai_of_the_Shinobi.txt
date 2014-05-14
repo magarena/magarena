@@ -1,6 +1,7 @@
 name=Sai of the Shinobi
 url=http://magiccards.info/query?q=%21Sai+of+the+Shinobi
 image=http://mtgimage.com/card/sai%20of%20the%20shinobi.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

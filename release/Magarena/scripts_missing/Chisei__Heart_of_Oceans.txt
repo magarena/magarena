@@ -1,6 +1,7 @@
 name=Chisei, Heart of Oceans
 url=http://magiccards.info/query?q=%21Chisei%2C+Heart+of+Oceans
 image=http://mtgimage.com/card/chisei%2C%20heart%20of%20oceans.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

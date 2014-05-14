@@ -1,6 +1,7 @@
 name=Reborn Hero
 url=http://magiccards.info/query?q=%21Reborn+Hero
 image=http://mtgimage.com/card/reborn%20hero.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

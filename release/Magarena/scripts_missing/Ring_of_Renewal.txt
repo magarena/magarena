@@ -1,6 +1,7 @@
 name=Ring of Renewal
 url=http://magiccards.info/query?q=%21Ring+of+Renewal
 image=http://mtgimage.com/card/ring%20of%20renewal.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

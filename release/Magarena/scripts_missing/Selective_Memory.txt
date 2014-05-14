@@ -1,6 +1,7 @@
 name=Selective Memory
 url=http://magiccards.info/query?q=%21Selective+Memory
 image=http://mtgimage.com/card/selective%20memory.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}

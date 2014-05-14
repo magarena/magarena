@@ -1,6 +1,7 @@
 name=Ravenous Trap
 url=http://magiccards.info/query?q=%21Ravenous+Trap
 image=http://mtgimage.com/card/ravenous%20trap.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Trap

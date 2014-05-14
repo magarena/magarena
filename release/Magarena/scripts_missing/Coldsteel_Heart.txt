@@ -1,6 +1,7 @@
 name=Coldsteel Heart
 url=http://magiccards.info/query?q=%21Coldsteel+Heart
 image=http://mtgimage.com/card/coldsteel%20heart.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

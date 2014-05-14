@@ -1,6 +1,7 @@
 name=Agent of Erebos
 url=http://magiccards.info/query?q=%21Agent+of+Erebos
 image=http://mtgimage.com/card/agent%20of%20erebos.jpg
+value=2.500
 rarity=U
 type=Enchantment,Creature
 subtype=Zombie

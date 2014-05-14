@@ -1,6 +1,7 @@
 name=Heartbeat of Spring
 url=http://magiccards.info/query?q=%21Heartbeat+of+Spring
 image=http://mtgimage.com/card/heartbeat%20of%20spring.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}

@@ -1,6 +1,7 @@
 name=Storm World
 url=http://magiccards.info/query?q=%21Storm+World
 image=http://mtgimage.com/card/storm%20world.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={R}

@@ -1,6 +1,7 @@
 name=Swarmborn Giant
 url=http://magiccards.info/query?q=%21Swarmborn+Giant
 image=http://mtgimage.com/card/swarmborn%20giant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant

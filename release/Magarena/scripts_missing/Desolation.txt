@@ -1,6 +1,7 @@
 name=Desolation
 url=http://magiccards.info/query?q=%21Desolation
 image=http://mtgimage.com/card/desolation.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{B}{B}

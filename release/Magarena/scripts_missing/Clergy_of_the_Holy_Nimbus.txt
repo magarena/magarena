@@ -1,6 +1,7 @@
 name=Clergy of the Holy Nimbus
 url=http://magiccards.info/query?q=%21Clergy+of+the+Holy+Nimbus
 image=http://mtgimage.com/card/clergy%20of%20the%20holy%20nimbus.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

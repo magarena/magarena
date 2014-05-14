@@ -1,6 +1,7 @@
 name=Vesuvan Doppelganger
 url=http://magiccards.info/query?q=%21Vesuvan+Doppelganger
 image=http://mtgimage.com/card/vesuvan%20doppelganger.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

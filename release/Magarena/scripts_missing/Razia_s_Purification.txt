@@ -1,6 +1,7 @@
 name=Razia's Purification
 url=http://magiccards.info/query?q=%21Razia%27s+Purification
 image=http://mtgimage.com/card/razia%27s%20purification.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{R}{W}

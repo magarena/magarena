@@ -1,6 +1,7 @@
 name=Lava Blister
 url=http://magiccards.info/query?q=%21Lava+Blister
 image=http://mtgimage.com/card/lava%20blister.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}

@@ -1,6 +1,7 @@
 name=Ursine Fylgja
 url=http://magiccards.info/query?q=%21Ursine+Fylgja
 image=http://mtgimage.com/card/ursine%20fylgja.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit,Bear

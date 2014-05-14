@@ -1,6 +1,7 @@
 name=Barrel Down Sokenzan
 url=http://magiccards.info/query?q=%21Barrel+Down+Sokenzan
 image=http://mtgimage.com/card/barrel%20down%20sokenzan.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

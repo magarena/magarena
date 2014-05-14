@@ -1,6 +1,7 @@
 name=Temporal Cascade
 url=http://magiccards.info/query?q=%21Temporal+Cascade
 image=http://mtgimage.com/card/temporal%20cascade.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={5}{U}{U}

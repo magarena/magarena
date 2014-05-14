@@ -1,6 +1,7 @@
 name=Eidolon of Rhetoric
 url=http://magiccards.info/query?q=%21Eidolon+of+Rhetoric
 image=http://mtgimage.com/card/eidolon%20of%20rhetoric.jpg
+value=2.500
 rarity=U
 type=Enchantment,Creature
 subtype=Spirit

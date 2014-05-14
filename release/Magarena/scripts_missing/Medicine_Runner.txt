@@ -1,6 +1,7 @@
 name=Medicine Runner
 url=http://magiccards.info/query?q=%21Medicine+Runner
 image=http://mtgimage.com/card/medicine%20runner.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Cleric

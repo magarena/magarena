@@ -1,6 +1,7 @@
 name=Taunting Elf
 url=http://magiccards.info/query?q=%21Taunting+Elf
 image=http://mtgimage.com/card/taunting%20elf.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf

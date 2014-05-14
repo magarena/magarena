@@ -1,6 +1,7 @@
 name=Tanglesap
 url=http://magiccards.info/query?q=%21Tanglesap
 image=http://mtgimage.com/card/tanglesap.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{G}

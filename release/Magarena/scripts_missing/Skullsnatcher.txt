@@ -1,6 +1,7 @@
 name=Skullsnatcher
 url=http://magiccards.info/query?q=%21Skullsnatcher
 image=http://mtgimage.com/card/skullsnatcher.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Rat,Ninja

@@ -1,6 +1,7 @@
 name=Flaming Gambit
 url=http://magiccards.info/query?q=%21Flaming+Gambit
 image=http://mtgimage.com/card/flaming%20gambit.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={X}{R}

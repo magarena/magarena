@@ -1,6 +1,7 @@
 name=Johan
 url=http://magiccards.info/query?q=%21Johan
 image=http://mtgimage.com/card/johan.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

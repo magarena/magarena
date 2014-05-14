@@ -1,6 +1,7 @@
 name=Abandon Hope
 url=http://magiccards.info/query?q=%21Abandon+Hope
 image=http://mtgimage.com/card/abandon%20hope.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={X}{1}{B}

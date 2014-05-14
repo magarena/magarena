@@ -1,6 +1,7 @@
 name=Tectonic Instability
 url=http://magiccards.info/query?q=%21Tectonic+Instability
 image=http://mtgimage.com/card/tectonic%20instability.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

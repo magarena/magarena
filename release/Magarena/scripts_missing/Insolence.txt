@@ -1,6 +1,7 @@
 name=Insolence
 url=http://magiccards.info/query?q=%21Insolence
 image=http://mtgimage.com/card/insolence.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

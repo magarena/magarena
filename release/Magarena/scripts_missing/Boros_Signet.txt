@@ -1,6 +1,7 @@
 name=Boros Signet
 url=http://magiccards.info/query?q=%21Boros+Signet
 image=http://mtgimage.com/card/boros%20signet.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={2}

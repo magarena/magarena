@@ -1,6 +1,7 @@
 name=Sen Triplets
 url=http://magiccards.info/query?q=%21Sen+Triplets
 image=http://mtgimage.com/card/sen%20triplets.jpg
+value=2.500
 rarity=M
 type=Artifact,Creature
 subtype=Human,Wizard

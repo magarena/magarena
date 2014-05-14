@@ -1,6 +1,7 @@
 name=Aluren
 url=http://magiccards.info/query?q=%21Aluren
 image=http://mtgimage.com/card/aluren.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

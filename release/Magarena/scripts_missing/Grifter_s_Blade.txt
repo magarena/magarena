@@ -1,6 +1,7 @@
 name=Grifter's Blade
 url=http://magiccards.info/query?q=%21Grifter%27s+Blade
 image=http://mtgimage.com/card/grifter%27s%20blade.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

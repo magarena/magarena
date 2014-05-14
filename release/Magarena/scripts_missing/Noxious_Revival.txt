@@ -1,6 +1,7 @@
 name=Noxious Revival
 url=http://magiccards.info/query?q=%21Noxious+Revival
 image=http://mtgimage.com/card/noxious%20revival.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={P/G}

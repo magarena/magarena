@@ -1,6 +1,7 @@
 name=Time of Heroes
 url=http://magiccards.info/query?q=%21Time+of+Heroes
 image=http://mtgimage.com/card/time%20of%20heroes.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}

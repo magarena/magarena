@@ -1,6 +1,7 @@
 name=Mindslicer
 url=http://magiccards.info/query?q=%21Mindslicer
 image=http://mtgimage.com/card/mindslicer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Horror

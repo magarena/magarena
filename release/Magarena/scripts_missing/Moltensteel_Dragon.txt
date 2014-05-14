@@ -1,6 +1,7 @@
 name=Moltensteel Dragon
 url=http://magiccards.info/query?q=%21Moltensteel+Dragon
 image=http://mtgimage.com/card/moltensteel%20dragon.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Dragon

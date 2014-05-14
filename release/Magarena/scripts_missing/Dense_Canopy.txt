@@ -1,6 +1,7 @@
 name=Dense Canopy
 url=http://magiccards.info/query?q=%21Dense+Canopy
 image=http://mtgimage.com/card/dense%20canopy.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}

@@ -1,6 +1,7 @@
 name=Recycle
 url=http://magiccards.info/query?q=%21Recycle
 image=http://mtgimage.com/card/recycle.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{G}{G}

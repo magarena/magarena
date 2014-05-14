@@ -1,6 +1,7 @@
 name=Barl's Cage
 url=http://magiccards.info/query?q=%21Barl%27s+Cage
 image=http://mtgimage.com/card/barl%27s%20cage.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,7 @@
 name=Rosheen Meanderer
 url=http://magiccards.info/query?q=%21Rosheen+Meanderer
 image=http://mtgimage.com/card/rosheen%20meanderer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant,Shaman

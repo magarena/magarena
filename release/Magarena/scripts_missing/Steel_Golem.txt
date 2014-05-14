@@ -1,6 +1,7 @@
 name=Steel Golem
 url=http://magiccards.info/query?q=%21Steel+Golem
 image=http://mtgimage.com/card/steel%20golem.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

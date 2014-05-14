@@ -1,6 +1,7 @@
 name=Sasaya's Essence
 url=http://magiccards.info/query?q=%21Sasaya%27s+Essence
 image=http://mtgimage.com/card/sasaya%27s%20essence.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}{G}

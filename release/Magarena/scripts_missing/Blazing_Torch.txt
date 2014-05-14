@@ -1,6 +1,7 @@
 name=Blazing Torch
 url=http://magiccards.info/query?q=%21Blazing+Torch
 image=http://mtgimage.com/card/blazing%20torch.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

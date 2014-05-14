@@ -1,6 +1,7 @@
 name=Samite Pilgrim
 url=http://magiccards.info/query?q=%21Samite+Pilgrim
 image=http://mtgimage.com/card/samite%20pilgrim.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

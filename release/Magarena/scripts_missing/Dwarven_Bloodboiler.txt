@@ -1,6 +1,7 @@
 name=Dwarven Bloodboiler
 url=http://magiccards.info/query?q=%21Dwarven+Bloodboiler
 image=http://mtgimage.com/card/dwarven%20bloodboiler.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dwarf

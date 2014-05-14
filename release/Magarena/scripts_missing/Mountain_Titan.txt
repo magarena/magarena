@@ -1,6 +1,7 @@
 name=Mountain Titan
 url=http://magiccards.info/query?q=%21Mountain+Titan
 image=http://mtgimage.com/card/mountain%20titan.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant

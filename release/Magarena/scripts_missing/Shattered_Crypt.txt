@@ -1,6 +1,7 @@
 name=Shattered Crypt
 url=http://magiccards.info/query?q=%21Shattered+Crypt
 image=http://mtgimage.com/card/shattered%20crypt.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={X}{B}{B}

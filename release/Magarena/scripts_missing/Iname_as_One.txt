@@ -1,6 +1,7 @@
 name=Iname as One
 url=http://magiccards.info/query?q=%21Iname+as+One
 image=http://mtgimage.com/card/iname%20as%20one.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

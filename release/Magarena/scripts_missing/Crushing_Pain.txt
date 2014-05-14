@@ -1,6 +1,7 @@
 name=Crushing Pain
 url=http://magiccards.info/query?q=%21Crushing+Pain
 image=http://mtgimage.com/card/crushing%20pain.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

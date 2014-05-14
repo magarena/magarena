@@ -1,6 +1,7 @@
 name=Scent of Cinder
 url=http://magiccards.info/query?q=%21Scent+of+Cinder
 image=http://mtgimage.com/card/scent%20of%20cinder.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={1}{R}

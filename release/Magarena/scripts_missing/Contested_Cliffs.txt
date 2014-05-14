@@ -1,6 +1,7 @@
 name=Contested Cliffs
 url=http://magiccards.info/query?q=%21Contested+Cliffs
 image=http://mtgimage.com/card/contested%20cliffs.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

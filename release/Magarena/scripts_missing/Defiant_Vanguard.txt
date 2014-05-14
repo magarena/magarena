@@ -1,6 +1,7 @@
 name=Defiant Vanguard
 url=http://magiccards.info/query?q=%21Defiant+Vanguard
 image=http://mtgimage.com/card/defiant%20vanguard.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Rebel

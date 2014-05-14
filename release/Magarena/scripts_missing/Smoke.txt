@@ -1,6 +1,7 @@
 name=Smoke
 url=http://magiccards.info/query?q=%21Smoke
 image=http://mtgimage.com/card/smoke.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={R}{R}

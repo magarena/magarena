@@ -1,6 +1,7 @@
 name=Grizzled Outcasts
 url=http://magiccards.info/query?q=%21Grizzled+Outcasts
 image=http://mtgimage.com/card/grizzled%20outcasts.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Werewolf

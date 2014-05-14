@@ -1,6 +1,7 @@
 name=Harbor Serpent
 url=http://magiccards.info/query?q=%21Harbor+Serpent
 image=http://mtgimage.com/card/harbor%20serpent.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Serpent

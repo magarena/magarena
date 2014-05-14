@@ -1,6 +1,7 @@
 name=Naya Sojourners
 url=http://magiccards.info/query?q=%21Naya+Sojourners
 image=http://mtgimage.com/card/naya%20sojourners.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Shaman

@@ -1,6 +1,7 @@
 name=Crackling Perimeter
 url=http://magiccards.info/query?q=%21Crackling+Perimeter
 image=http://mtgimage.com/card/crackling%20perimeter.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{R}

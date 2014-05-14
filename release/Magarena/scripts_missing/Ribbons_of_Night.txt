@@ -1,6 +1,7 @@
 name=Ribbons of Night
 url=http://magiccards.info/query?q=%21Ribbons+of+Night
 image=http://mtgimage.com/card/ribbons%20of%20night.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}

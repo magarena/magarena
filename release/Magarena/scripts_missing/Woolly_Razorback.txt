@@ -1,6 +1,7 @@
 name=Woolly Razorback
 url=http://magiccards.info/query?q=%21Woolly+Razorback
 image=http://mtgimage.com/card/woolly%20razorback.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Boar,Beast

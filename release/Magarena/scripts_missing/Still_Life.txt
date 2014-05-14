@@ -1,6 +1,7 @@
 name=Still Life
 url=http://magiccards.info/query?q=%21Still+Life
 image=http://mtgimage.com/card/still%20life.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}{G}

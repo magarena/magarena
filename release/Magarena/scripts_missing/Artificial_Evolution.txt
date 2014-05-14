@@ -1,6 +1,7 @@
 name=Artificial Evolution
 url=http://magiccards.info/query?q=%21Artificial+Evolution
 image=http://mtgimage.com/card/artificial%20evolution.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}

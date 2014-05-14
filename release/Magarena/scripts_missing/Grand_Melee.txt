@@ -1,6 +1,7 @@
 name=Grand Melee
 url=http://magiccards.info/query?q=%21Grand+Melee
 image=http://mtgimage.com/card/grand%20melee.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

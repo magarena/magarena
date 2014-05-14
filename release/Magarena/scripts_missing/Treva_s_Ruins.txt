@@ -1,6 +1,7 @@
 name=Treva's Ruins
 url=http://magiccards.info/query?q=%21Treva%27s+Ruins
 image=http://mtgimage.com/card/treva%27s%20ruins.jpg
+value=2.500
 rarity=U
 type=Land
 subtype=Lair

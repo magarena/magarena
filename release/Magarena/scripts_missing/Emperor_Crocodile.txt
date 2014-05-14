@@ -1,6 +1,7 @@
 name=Emperor Crocodile
 url=http://magiccards.info/query?q=%21Emperor+Crocodile
 image=http://mtgimage.com/card/emperor%20crocodile.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Crocodile

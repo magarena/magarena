@@ -1,6 +1,7 @@
 name=Magmatic Core
 url=http://magiccards.info/query?q=%21Magmatic+Core
 image=http://mtgimage.com/card/magmatic%20core.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{R}{R}

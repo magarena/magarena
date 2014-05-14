@@ -1,6 +1,7 @@
 name=Fylgja
 url=http://magiccards.info/query?q=%21Fylgja
 image=http://mtgimage.com/card/fylgja.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

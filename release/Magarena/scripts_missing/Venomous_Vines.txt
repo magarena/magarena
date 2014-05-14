@@ -1,6 +1,7 @@
 name=Venomous Vines
 url=http://magiccards.info/query?q=%21Venomous+Vines
 image=http://mtgimage.com/card/venomous%20vines.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={2}{G}{G}

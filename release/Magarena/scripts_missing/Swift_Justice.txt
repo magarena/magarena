@@ -1,6 +1,7 @@
 name=Swift Justice
 url=http://magiccards.info/query?q=%21Swift+Justice
 image=http://mtgimage.com/card/swift%20justice.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

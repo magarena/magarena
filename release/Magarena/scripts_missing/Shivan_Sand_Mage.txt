@@ -1,6 +1,7 @@
 name=Shivan Sand-Mage
 url=http://magiccards.info/query?q=%21Shivan+Sand-Mage
 image=http://mtgimage.com/card/shivan%20sand-mage.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Viashino,Shaman

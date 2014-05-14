@@ -1,6 +1,7 @@
 name=Retromancer
 url=http://magiccards.info/query?q=%21Retromancer
 image=http://mtgimage.com/card/retromancer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Viashino,Shaman

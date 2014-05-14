@@ -1,6 +1,7 @@
 name=Delay
 url=http://magiccards.info/query?q=%21Delay
 image=http://mtgimage.com/card/delay.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{U}

@@ -1,6 +1,7 @@
 name=Glyph of Reincarnation
 url=http://magiccards.info/query?q=%21Glyph+of+Reincarnation
 image=http://mtgimage.com/card/glyph%20of%20reincarnation.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}

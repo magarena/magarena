@@ -1,6 +1,7 @@
 name=Puppet's Verdict
 url=http://magiccards.info/query?q=%21Puppet%27s+Verdict
 image=http://mtgimage.com/card/puppet%27s%20verdict.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{R}{R}

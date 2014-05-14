@@ -1,6 +1,7 @@
 name=Entangling Trap
 url=http://magiccards.info/query?q=%21Entangling+Trap
 image=http://mtgimage.com/card/entangling%20trap.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}

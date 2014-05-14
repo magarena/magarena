@@ -1,6 +1,7 @@
 name=Nucklavee
 url=http://magiccards.info/query?q=%21Nucklavee
 image=http://mtgimage.com/card/nucklavee.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,7 @@
 name=Cold-Eyed Selkie
 url=http://magiccards.info/query?q=%21Cold-Eyed+Selkie
 image=http://mtgimage.com/card/cold-eyed%20selkie.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Merfolk,Rogue

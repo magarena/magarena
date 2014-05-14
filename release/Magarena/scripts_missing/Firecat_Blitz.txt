@@ -1,6 +1,7 @@
 name=Firecat Blitz
 url=http://magiccards.info/query?q=%21Firecat+Blitz
 image=http://mtgimage.com/card/firecat%20blitz.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={X}{R}{R}

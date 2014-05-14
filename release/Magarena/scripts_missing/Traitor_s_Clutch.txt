@@ -1,6 +1,7 @@
 name=Traitor's Clutch
 url=http://magiccards.info/query?q=%21Traitor%27s+Clutch
 image=http://mtgimage.com/card/traitor%27s%20clutch.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={4}{B}

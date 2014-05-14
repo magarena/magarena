@@ -1,6 +1,7 @@
 name=Bitter Ordeal
 url=http://magiccards.info/query?q=%21Bitter+Ordeal
 image=http://mtgimage.com/card/bitter%20ordeal.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{B}

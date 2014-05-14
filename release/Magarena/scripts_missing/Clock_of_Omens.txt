@@ -1,6 +1,7 @@
 name=Clock of Omens
 url=http://magiccards.info/query?q=%21Clock+of+Omens
 image=http://mtgimage.com/card/clock%20of%20omens.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

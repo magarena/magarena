@@ -1,6 +1,7 @@
 name=Martyrs of Korlis
 url=http://magiccards.info/query?q=%21Martyrs+of+Korlis
 image=http://mtgimage.com/card/martyrs%20of%20korlis.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human

@@ -1,6 +1,7 @@
 name=Betrothed of Fire
 url=http://magiccards.info/query?q=%21Betrothed+of+Fire
 image=http://mtgimage.com/card/betrothed%20of%20fire.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Mausoleum Turnkey
 url=http://magiccards.info/query?q=%21Mausoleum+Turnkey
 image=http://mtgimage.com/card/mausoleum%20turnkey.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Ogre,Rogue

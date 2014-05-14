@@ -1,6 +1,7 @@
 name=Declaration of Naught
 url=http://magiccards.info/query?q=%21Declaration+of+Naught
 image=http://mtgimage.com/card/declaration%20of%20naught.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={U}{U}

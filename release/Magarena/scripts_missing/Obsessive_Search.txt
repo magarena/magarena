@@ -1,6 +1,7 @@
 name=Obsessive Search
 url=http://magiccards.info/query?q=%21Obsessive+Search
 image=http://mtgimage.com/card/obsessive%20search.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

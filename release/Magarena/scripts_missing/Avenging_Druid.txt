@@ -1,6 +1,7 @@
 name=Avenging Druid
 url=http://magiccards.info/query?q=%21Avenging+Druid
 image=http://mtgimage.com/card/avenging%20druid.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Druid

@@ -1,6 +1,7 @@
 name=Citanul Flute
 url=http://magiccards.info/query?q=%21Citanul+Flute
 image=http://mtgimage.com/card/citanul%20flute.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

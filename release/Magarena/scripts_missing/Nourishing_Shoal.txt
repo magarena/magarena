@@ -1,6 +1,7 @@
 name=Nourishing Shoal
 url=http://magiccards.info/query?q=%21Nourishing+Shoal
 image=http://mtgimage.com/card/nourishing%20shoal.jpg
+value=2.500
 rarity=R
 type=Instant
 subtype=Arcane

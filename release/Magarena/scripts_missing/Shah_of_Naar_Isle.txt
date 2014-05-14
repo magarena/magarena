@@ -1,6 +1,7 @@
 name=Shah of Naar Isle
 url=http://magiccards.info/query?q=%21Shah+of+Naar+Isle
 image=http://mtgimage.com/card/shah%20of%20naar%20isle.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Efreet

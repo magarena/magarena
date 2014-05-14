@@ -1,6 +1,7 @@
 name=Windscouter
 url=http://magiccards.info/query?q=%21Windscouter
 image=http://mtgimage.com/card/windscouter.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Scout

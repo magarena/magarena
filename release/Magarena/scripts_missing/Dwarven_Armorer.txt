@@ -1,6 +1,7 @@
 name=Dwarven Armorer
 url=http://magiccards.info/query?q=%21Dwarven+Armorer
 image=http://mtgimage.com/card/dwarven%20armorer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dwarf

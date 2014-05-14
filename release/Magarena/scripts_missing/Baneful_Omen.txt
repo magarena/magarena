@@ -1,6 +1,7 @@
 name=Baneful Omen
 url=http://magiccards.info/query?q=%21Baneful+Omen
 image=http://mtgimage.com/card/baneful%20omen.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{B}{B}{B}

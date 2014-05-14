@@ -1,6 +1,7 @@
 name=Nomad Mythmaker
 url=http://magiccards.info/query?q=%21Nomad+Mythmaker
 image=http://mtgimage.com/card/nomad%20mythmaker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Nomad,Cleric

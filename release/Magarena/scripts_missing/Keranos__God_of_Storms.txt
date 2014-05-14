@@ -1,6 +1,7 @@
 name=Keranos, God of Storms
 url=http://magiccards.info/query?q=%21Keranos%2C+God+of+Storms
 image=http://mtgimage.com/card/keranos%2C%20god%20of%20storms.jpg
+value=2.500
 rarity=M
 type=Enchantment,Creature
 subtype=God

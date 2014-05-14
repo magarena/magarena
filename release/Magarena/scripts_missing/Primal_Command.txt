@@ -1,6 +1,7 @@
 name=Primal Command
 url=http://magiccards.info/query?q=%21Primal+Command
 image=http://mtgimage.com/card/primal%20command.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

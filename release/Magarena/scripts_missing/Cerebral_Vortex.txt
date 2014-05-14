@@ -1,6 +1,7 @@
 name=Cerebral Vortex
 url=http://magiccards.info/query?q=%21Cerebral+Vortex
 image=http://mtgimage.com/card/cerebral%20vortex.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{U}{R}

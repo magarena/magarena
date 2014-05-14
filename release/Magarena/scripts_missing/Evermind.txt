@@ -1,6 +1,7 @@
 name=Evermind
 url=http://magiccards.info/query?q=%21Evermind
 image=http://mtgimage.com/card/evermind.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Arcane

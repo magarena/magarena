@@ -1,6 +1,7 @@
 name=Blood Funnel
 url=http://magiccards.info/query?q=%21Blood+Funnel
 image=http://mtgimage.com/card/blood%20funnel.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{B}

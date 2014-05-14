@@ -1,6 +1,7 @@
 name=Delif's Cone
 url=http://magiccards.info/query?q=%21Delif%27s+Cone
 image=http://mtgimage.com/card/delif%27s%20cone.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={0}

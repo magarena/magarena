@@ -1,6 +1,7 @@
 name=Mercadian Bazaar
 url=http://magiccards.info/query?q=%21Mercadian+Bazaar
 image=http://mtgimage.com/card/mercadian%20bazaar.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

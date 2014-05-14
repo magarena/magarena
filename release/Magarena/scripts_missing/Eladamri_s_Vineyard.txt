@@ -1,6 +1,7 @@
 name=Eladamri's Vineyard
 url=http://magiccards.info/query?q=%21Eladamri%27s+Vineyard
 image=http://mtgimage.com/card/eladamri%27s%20vineyard.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={G}

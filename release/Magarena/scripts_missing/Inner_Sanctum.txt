@@ -1,6 +1,7 @@
 name=Inner Sanctum
 url=http://magiccards.info/query?q=%21Inner+Sanctum
 image=http://mtgimage.com/card/inner%20sanctum.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

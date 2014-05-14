@@ -1,6 +1,7 @@
 name=Soul Spike
 url=http://magiccards.info/query?q=%21Soul+Spike
 image=http://mtgimage.com/card/soul%20spike.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={5}{B}{B}

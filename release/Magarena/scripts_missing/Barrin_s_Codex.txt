@@ -1,6 +1,7 @@
 name=Barrin's Codex
 url=http://magiccards.info/query?q=%21Barrin%27s+Codex
 image=http://mtgimage.com/card/barrin%27s%20codex.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

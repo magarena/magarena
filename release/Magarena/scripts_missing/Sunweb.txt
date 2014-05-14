@@ -1,6 +1,7 @@
 name=Sunweb
 url=http://magiccards.info/query?q=%21Sunweb
 image=http://mtgimage.com/card/sunweb.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Wall

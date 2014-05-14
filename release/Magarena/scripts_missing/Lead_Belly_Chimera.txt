@@ -1,6 +1,7 @@
 name=Lead-Belly Chimera
 url=http://magiccards.info/query?q=%21Lead-Belly+Chimera
 image=http://mtgimage.com/card/lead-belly%20chimera.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Chimera

@@ -1,6 +1,7 @@
 name=Tormented Hero
 url=http://magiccards.info/query?q=%21Tormented+Hero
 image=http://mtgimage.com/card/tormented%20hero.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Warrior

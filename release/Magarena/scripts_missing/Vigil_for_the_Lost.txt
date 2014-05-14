@@ -1,6 +1,7 @@
 name=Vigil for the Lost
 url=http://magiccards.info/query?q=%21Vigil+for+the+Lost
 image=http://mtgimage.com/card/vigil%20for%20the%20lost.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={3}{W}

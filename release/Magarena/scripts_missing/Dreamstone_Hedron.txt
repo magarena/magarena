@@ -1,6 +1,7 @@
 name=Dreamstone Hedron
 url=http://magiccards.info/query?q=%21Dreamstone+Hedron
 image=http://mtgimage.com/card/dreamstone%20hedron.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={6}

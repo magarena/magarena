@@ -1,6 +1,7 @@
 name=Thoughtleech
 url=http://magiccards.info/query?q=%21Thoughtleech
 image=http://mtgimage.com/card/thoughtleech.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={G}{G}

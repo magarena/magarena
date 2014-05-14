@@ -1,6 +1,7 @@
 name=Candelabra of Tawnos
 url=http://magiccards.info/query?q=%21Candelabra+of+Tawnos
 image=http://mtgimage.com/card/candelabra%20of%20tawnos.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

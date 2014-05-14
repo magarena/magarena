@@ -1,6 +1,7 @@
 name=Scythe Specter
 url=http://magiccards.info/query?q=%21Scythe+Specter
 image=http://mtgimage.com/card/scythe%20specter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Specter

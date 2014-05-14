@@ -1,6 +1,7 @@
 name=Word of Blasting
 url=http://magiccards.info/query?q=%21Word+of+Blasting
 image=http://mtgimage.com/card/word%20of%20blasting.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{R}

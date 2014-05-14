@@ -1,6 +1,7 @@
 name=Transmute Artifact
 url=http://magiccards.info/query?q=%21Transmute+Artifact
 image=http://mtgimage.com/card/transmute%20artifact.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={U}{U}

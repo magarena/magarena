@@ -1,6 +1,7 @@
 name=Mindreaver
 url=http://magiccards.info/query?q=%21Mindreaver
 image=http://mtgimage.com/card/mindreaver.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

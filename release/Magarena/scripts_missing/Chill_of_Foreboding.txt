@@ -1,6 +1,7 @@
 name=Chill of Foreboding
 url=http://magiccards.info/query?q=%21Chill+of+Foreboding
 image=http://mtgimage.com/card/chill%20of%20foreboding.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{U}

@@ -1,6 +1,7 @@
 name=Maralen of the Mornsong
 url=http://magiccards.info/query?q=%21Maralen+of+the+Mornsong
 image=http://mtgimage.com/card/maralen%20of%20the%20mornsong.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Wizard

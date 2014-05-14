@@ -1,6 +1,7 @@
 name=Sigil of Sleep
 url=http://magiccards.info/query?q=%21Sigil+of+Sleep
 image=http://mtgimage.com/card/sigil%20of%20sleep.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

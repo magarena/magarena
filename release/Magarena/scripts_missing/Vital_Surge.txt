@@ -1,6 +1,7 @@
 name=Vital Surge
 url=http://magiccards.info/query?q=%21Vital+Surge
 image=http://mtgimage.com/card/vital%20surge.jpg
+value=2.500
 rarity=C
 type=Instant
 subtype=Arcane

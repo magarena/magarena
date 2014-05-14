@@ -1,6 +1,7 @@
 name=Armored Transport
 url=http://magiccards.info/query?q=%21Armored+Transport
 image=http://mtgimage.com/card/armored%20transport.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Construct

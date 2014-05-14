@@ -1,6 +1,7 @@
 name=Winter's Chill
 url=http://magiccards.info/query?q=%21Winter%27s+Chill
 image=http://mtgimage.com/card/winter%27s%20chill.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={X}{U}

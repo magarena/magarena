@@ -1,6 +1,7 @@
 name=Charge Across the Araba
 url=http://magiccards.info/query?q=%21Charge+Across+the+Araba
 image=http://mtgimage.com/card/charge%20across%20the%20araba.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Arcane

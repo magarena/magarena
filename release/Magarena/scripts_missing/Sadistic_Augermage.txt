@@ -1,6 +1,7 @@
 name=Sadistic Augermage
 url=http://magiccards.info/query?q=%21Sadistic+Augermage
 image=http://mtgimage.com/card/sadistic%20augermage.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

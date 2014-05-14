@@ -1,6 +1,7 @@
 name=Mindleech Mass
 url=http://magiccards.info/query?q=%21Mindleech+Mass
 image=http://mtgimage.com/card/mindleech%20mass.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Horror

@@ -1,6 +1,7 @@
 name=Streambed Aquitects
 url=http://magiccards.info/query?q=%21Streambed+Aquitects
 image=http://mtgimage.com/card/streambed%20aquitects.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Merfolk,Scout

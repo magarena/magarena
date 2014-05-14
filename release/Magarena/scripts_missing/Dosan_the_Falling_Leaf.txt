@@ -1,6 +1,7 @@
 name=Dosan the Falling Leaf
 url=http://magiccards.info/query?q=%21Dosan+the+Falling+Leaf
 image=http://mtgimage.com/card/dosan%20the%20falling%20leaf.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Monk

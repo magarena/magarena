@@ -1,6 +1,7 @@
 name=Nacatl Hunt-Pride
 url=http://magiccards.info/query?q=%21Nacatl+Hunt-Pride
 image=http://mtgimage.com/card/nacatl%20hunt-pride.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Cat,Warrior

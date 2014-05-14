@@ -1,6 +1,7 @@
 name=Roiling Horror
 url=http://magiccards.info/query?q=%21Roiling+Horror
 image=http://mtgimage.com/card/roiling%20horror.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Horror

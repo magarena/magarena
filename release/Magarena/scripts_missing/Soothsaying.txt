@@ -1,6 +1,7 @@
 name=Soothsaying
 url=http://magiccards.info/query?q=%21Soothsaying
 image=http://mtgimage.com/card/soothsaying.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={U}

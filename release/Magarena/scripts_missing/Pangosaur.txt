@@ -1,6 +1,7 @@
 name=Pangosaur
 url=http://magiccards.info/query?q=%21Pangosaur
 image=http://mtgimage.com/card/pangosaur.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Lizard

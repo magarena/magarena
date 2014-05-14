@@ -1,6 +1,7 @@
 name=Wicker Warcrawler
 url=http://magiccards.info/query?q=%21Wicker+Warcrawler
 image=http://mtgimage.com/card/wicker%20warcrawler.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow

@@ -1,6 +1,7 @@
 name=Predatory Urge
 url=http://magiccards.info/query?q=%21Predatory+Urge
 image=http://mtgimage.com/card/predatory%20urge.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

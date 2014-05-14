@@ -1,6 +1,7 @@
 name=Keldon Twilight
 url=http://magiccards.info/query?q=%21Keldon+Twilight
 image=http://mtgimage.com/card/keldon%20twilight.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{B}{R}

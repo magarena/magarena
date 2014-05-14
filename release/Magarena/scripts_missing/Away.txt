@@ -1,6 +1,7 @@
 name=Away
 url=http://magiccards.info/query?q=%21Away
 image=http://mtgimage.com/card/faraway.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{B}

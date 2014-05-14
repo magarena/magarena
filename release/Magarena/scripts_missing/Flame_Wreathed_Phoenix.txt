@@ -1,6 +1,7 @@
 name=Flame-Wreathed Phoenix
 url=http://magiccards.info/query?q=%21Flame-Wreathed+Phoenix
 image=http://mtgimage.com/card/flame-wreathed%20phoenix.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Phoenix

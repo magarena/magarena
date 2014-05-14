@@ -1,6 +1,7 @@
 name=Empyrial Armor
 url=http://magiccards.info/query?q=%21Empyrial+Armor
 image=http://mtgimage.com/card/empyrial%20armor.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Elite Arcanist
 url=http://magiccards.info/query?q=%21Elite+Arcanist
 image=http://mtgimage.com/card/elite%20arcanist.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

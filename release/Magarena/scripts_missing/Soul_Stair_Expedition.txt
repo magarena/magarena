@@ -1,6 +1,7 @@
 name=Soul Stair Expedition
 url=http://magiccards.info/query?q=%21Soul+Stair+Expedition
 image=http://mtgimage.com/card/soul%20stair%20expedition.jpg
+value=2.500
 rarity=C
 type=Enchantment
 cost={B}

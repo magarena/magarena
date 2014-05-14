@@ -1,6 +1,7 @@
 name=Riders of Gavony
 url=http://magiccards.info/query?q=%21Riders+of+Gavony
 image=http://mtgimage.com/card/riders%20of%20gavony.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight

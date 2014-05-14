@@ -1,6 +1,7 @@
 name=Erg Raiders
 url=http://magiccards.info/query?q=%21Erg+Raiders
 image=http://mtgimage.com/card/erg%20raiders1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Warrior

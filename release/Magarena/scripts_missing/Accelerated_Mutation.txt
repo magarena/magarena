@@ -1,6 +1,7 @@
 name=Accelerated Mutation
 url=http://magiccards.info/query?q=%21Accelerated+Mutation
 image=http://mtgimage.com/card/accelerated%20mutation.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={3}{G}{G}

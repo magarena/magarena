@@ -1,6 +1,7 @@
 name=Fated Retribution
 url=http://magiccards.info/query?q=%21Fated+Retribution
 image=http://mtgimage.com/card/fated%20retribution.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={4}{W}{W}{W}

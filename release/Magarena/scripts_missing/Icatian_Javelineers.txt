@@ -1,6 +1,7 @@
 name=Icatian Javelineers
 url=http://magiccards.info/query?q=%21Icatian+Javelineers
 image=http://mtgimage.com/card/icatian%20javelineers1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

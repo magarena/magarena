@@ -1,6 +1,7 @@
 name=Freyalise's Radiance
 url=http://magiccards.info/query?q=%21Freyalise%27s+Radiance
 image=http://mtgimage.com/card/freyalise%27s%20radiance.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}

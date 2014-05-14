@@ -1,6 +1,7 @@
 name=Prismwake Merrow
 url=http://magiccards.info/query?q=%21Prismwake+Merrow
 image=http://mtgimage.com/card/prismwake%20merrow.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

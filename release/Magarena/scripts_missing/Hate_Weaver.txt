@@ -1,6 +1,7 @@
 name=Hate Weaver
 url=http://magiccards.info/query?q=%21Hate+Weaver
 image=http://mtgimage.com/card/hate%20weaver.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

@@ -1,6 +1,7 @@
 name=Molten Slagheap
 url=http://magiccards.info/query?q=%21Molten+Slagheap
 image=http://mtgimage.com/card/molten%20slagheap.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

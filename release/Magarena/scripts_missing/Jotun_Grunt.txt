@@ -1,6 +1,7 @@
 name=Jotun Grunt
 url=http://magiccards.info/query?q=%21J%C3%B6tun+Grunt
 image=http://mtgimage.com/card/jotun%20grunt.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant,Soldier

@@ -1,6 +1,7 @@
 name=Diviner Spirit
 url=http://magiccards.info/query?q=%21Diviner+Spirit
 image=http://mtgimage.com/card/diviner%20spirit.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spirit

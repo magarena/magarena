@@ -1,6 +1,7 @@
 name=Razor Golem
 url=http://magiccards.info/query?q=%21Razor+Golem
 image=http://mtgimage.com/card/razor%20golem.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Golem

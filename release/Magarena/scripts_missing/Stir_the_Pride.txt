@@ -1,6 +1,7 @@
 name=Stir the Pride
 url=http://magiccards.info/query?q=%21Stir+the+Pride
 image=http://mtgimage.com/card/stir%20the%20pride.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={4}{W}

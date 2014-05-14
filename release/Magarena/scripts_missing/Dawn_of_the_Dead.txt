@@ -1,6 +1,7 @@
 name=Dawn of the Dead
 url=http://magiccards.info/query?q=%21Dawn+of+the+Dead
 image=http://mtgimage.com/card/dawn%20of%20the%20dead.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}{B}

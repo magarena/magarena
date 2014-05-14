@@ -1,6 +1,7 @@
 name=Unmask
 url=http://magiccards.info/query?q=%21Unmask
 image=http://mtgimage.com/card/unmask.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}

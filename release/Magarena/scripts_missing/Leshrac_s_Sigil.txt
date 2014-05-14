@@ -1,6 +1,7 @@
 name=Leshrac's Sigil
 url=http://magiccards.info/query?q=%21Leshrac%27s+Sigil
 image=http://mtgimage.com/card/leshrac%27s%20sigil.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={B}{B}

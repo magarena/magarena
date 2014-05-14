@@ -1,6 +1,7 @@
 name=Surge of Zeal
 url=http://magiccards.info/query?q=%21Surge+of+Zeal
 image=http://mtgimage.com/card/surge%20of%20zeal.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

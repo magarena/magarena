@@ -1,6 +1,7 @@
 name=Thromok the Insatiable
 url=http://magiccards.info/query?q=%21Thromok+the+Insatiable
 image=http://mtgimage.com/card/thromok%20the%20insatiable.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Hellion

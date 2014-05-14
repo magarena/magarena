@@ -1,6 +1,7 @@
 name=Tourach's Gate
 url=http://magiccards.info/query?q=%21Tourach%27s+Gate
 image=http://mtgimage.com/card/tourach%27s%20gate.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

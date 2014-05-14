@@ -1,6 +1,7 @@
 name=Homeward Path
 url=http://magiccards.info/query?q=%21Homeward+Path
 image=http://mtgimage.com/card/homeward%20path.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

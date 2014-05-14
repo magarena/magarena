@@ -1,6 +1,7 @@
 name=Wall of Shards
 url=http://magiccards.info/query?q=%21Wall+of+Shards
 image=http://mtgimage.com/card/wall%20of%20shards.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wall

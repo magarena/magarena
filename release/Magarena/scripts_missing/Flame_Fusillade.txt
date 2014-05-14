@@ -1,6 +1,7 @@
 name=Flame Fusillade
 url=http://magiccards.info/query?q=%21Flame+Fusillade
 image=http://mtgimage.com/card/flame%20fusillade.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}

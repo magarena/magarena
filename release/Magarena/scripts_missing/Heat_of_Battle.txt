@@ -1,6 +1,7 @@
 name=Heat of Battle
 url=http://magiccards.info/query?q=%21Heat+of+Battle
 image=http://mtgimage.com/card/heat%20of%20battle.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{R}

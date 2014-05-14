@@ -1,6 +1,7 @@
 name=Great Whale
 url=http://magiccards.info/query?q=%21Great+Whale
 image=http://mtgimage.com/card/great%20whale.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Whale

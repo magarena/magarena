@@ -1,6 +1,7 @@
 name=Akki Rockspeaker
 url=http://magiccards.info/query?q=%21Akki+Rockspeaker
 image=http://mtgimage.com/card/akki%20rockspeaker.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

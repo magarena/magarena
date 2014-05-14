@@ -1,6 +1,7 @@
 name=Sage of Hours
 url=http://magiccards.info/query?q=%21Sage+of+Hours
 image=http://mtgimage.com/card/sage%20of%20hours.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Human,Wizard

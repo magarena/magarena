@@ -1,6 +1,7 @@
 name=Open the Vaults
 url=http://magiccards.info/query?q=%21Open+the+Vaults
 image=http://mtgimage.com/card/open%20the%20vaults.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W}{W}

@@ -1,6 +1,7 @@
 name=Flayed Nim
 url=http://magiccards.info/query?q=%21Flayed+Nim
 image=http://mtgimage.com/card/flayed%20nim.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Skeleton

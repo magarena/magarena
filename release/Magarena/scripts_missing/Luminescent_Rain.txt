@@ -1,6 +1,7 @@
 name=Luminescent Rain
 url=http://magiccards.info/query?q=%21Luminescent+Rain
 image=http://mtgimage.com/card/luminescent%20rain.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{G}

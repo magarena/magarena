@@ -1,6 +1,7 @@
 name=Blazing Salvo
 url=http://magiccards.info/query?q=%21Blazing+Salvo
 image=http://mtgimage.com/card/blazing%20salvo.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

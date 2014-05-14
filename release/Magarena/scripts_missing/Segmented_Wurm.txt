@@ -1,6 +1,7 @@
 name=Segmented Wurm
 url=http://magiccards.info/query?q=%21Segmented+Wurm
 image=http://mtgimage.com/card/segmented%20wurm.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wurm

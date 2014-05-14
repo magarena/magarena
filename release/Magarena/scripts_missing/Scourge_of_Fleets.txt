@@ -1,6 +1,7 @@
 name=Scourge of Fleets
 url=http://magiccards.info/query?q=%21Scourge+of+Fleets
 image=http://mtgimage.com/card/scourge%20of%20fleets.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Kraken

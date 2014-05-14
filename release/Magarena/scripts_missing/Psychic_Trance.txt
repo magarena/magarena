@@ -1,6 +1,7 @@
 name=Psychic Trance
 url=http://magiccards.info/query?q=%21Psychic+Trance
 image=http://mtgimage.com/card/psychic%20trance.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{U}{U}

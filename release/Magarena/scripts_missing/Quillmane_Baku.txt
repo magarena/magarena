@@ -1,6 +1,7 @@
 name=Quillmane Baku
 url=http://magiccards.info/query?q=%21Quillmane+Baku
 image=http://mtgimage.com/card/quillmane%20baku.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

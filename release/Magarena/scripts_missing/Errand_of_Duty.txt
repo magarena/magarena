@@ -1,6 +1,7 @@
 name=Errand of Duty
 url=http://magiccards.info/query?q=%21Errand+of+Duty
 image=http://mtgimage.com/card/errand%20of%20duty1.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}

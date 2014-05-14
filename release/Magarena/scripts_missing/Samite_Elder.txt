@@ -1,6 +1,7 @@
 name=Samite Elder
 url=http://magiccards.info/query?q=%21Samite+Elder
 image=http://mtgimage.com/card/samite%20elder.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

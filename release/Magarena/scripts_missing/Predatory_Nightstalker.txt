@@ -1,6 +1,7 @@
 name=Predatory Nightstalker
 url=http://magiccards.info/query?q=%21Predatory+Nightstalker
 image=http://mtgimage.com/card/predatory%20nightstalker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Nightstalker

@@ -1,6 +1,7 @@
 name=Savage Firecat
 url=http://magiccards.info/query?q=%21Savage+Firecat
 image=http://mtgimage.com/card/savage%20firecat.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Cat

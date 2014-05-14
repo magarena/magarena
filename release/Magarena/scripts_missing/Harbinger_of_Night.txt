@@ -1,6 +1,7 @@
 name=Harbinger of Night
 url=http://magiccards.info/query?q=%21Harbinger+of+Night
 image=http://mtgimage.com/card/harbinger%20of%20night.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

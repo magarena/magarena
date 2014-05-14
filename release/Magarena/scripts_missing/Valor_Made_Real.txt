@@ -1,6 +1,7 @@
 name=Valor Made Real
 url=http://magiccards.info/query?q=%21Valor+Made+Real
 image=http://mtgimage.com/card/valor%20made%20real.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

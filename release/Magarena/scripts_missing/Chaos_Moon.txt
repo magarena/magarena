@@ -1,6 +1,7 @@
 name=Chaos Moon
 url=http://magiccards.info/query?q=%21Chaos+Moon
 image=http://mtgimage.com/card/chaos%20moon.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

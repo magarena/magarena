@@ -1,6 +1,7 @@
 name=Saruli Gatekeepers
 url=http://magiccards.info/query?q=%21Saruli+Gatekeepers
 image=http://mtgimage.com/card/saruli%20gatekeepers.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Warrior

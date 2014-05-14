@@ -1,6 +1,7 @@
 name=Leaf-Crowned Elder
 url=http://magiccards.info/query?q=%21Leaf-Crowned+Elder
 image=http://mtgimage.com/card/leaf-crowned%20elder.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Treefolk,Shaman

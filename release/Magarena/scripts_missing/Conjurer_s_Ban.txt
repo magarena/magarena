@@ -1,6 +1,7 @@
 name=Conjurer's Ban
 url=http://magiccards.info/query?q=%21Conjurer%27s+Ban
 image=http://mtgimage.com/card/conjurer%27s%20ban.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={W}{B}

@@ -1,6 +1,7 @@
 name=Basalt Golem
 url=http://magiccards.info/query?q=%21Basalt+Golem
 image=http://mtgimage.com/card/basalt%20golem.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

@@ -1,6 +1,7 @@
 name=Amber Prison
 url=http://magiccards.info/query?q=%21Amber+Prison
 image=http://mtgimage.com/card/amber%20prison.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,7 @@
 name=Belbe's Armor
 url=http://magiccards.info/query?q=%21Belbe%27s+Armor
 image=http://mtgimage.com/card/belbe%27s%20armor.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

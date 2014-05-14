@@ -1,6 +1,7 @@
 name=Myojin of Cleansing Fire
 url=http://magiccards.info/query?q=%21Myojin+of+Cleansing+Fire
 image=http://mtgimage.com/card/myojin%20of%20cleansing%20fire.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

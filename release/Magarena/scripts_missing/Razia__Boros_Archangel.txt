@@ -1,6 +1,7 @@
 name=Razia, Boros Archangel
 url=http://magiccards.info/query?q=%21Razia%2C+Boros+Archangel
 image=http://mtgimage.com/card/razia%2C%20boros%20archangel.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

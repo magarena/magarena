@@ -1,6 +1,7 @@
 name=Weight of Conscience
 url=http://magiccards.info/query?q=%21Weight+of+Conscience
 image=http://mtgimage.com/card/weight%20of%20conscience.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

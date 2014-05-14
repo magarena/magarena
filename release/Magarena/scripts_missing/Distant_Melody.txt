@@ -1,6 +1,7 @@
 name=Distant Melody
 url=http://magiccards.info/query?q=%21Distant+Melody
 image=http://mtgimage.com/card/distant%20melody.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{U}

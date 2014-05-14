@@ -1,6 +1,7 @@
 name=Icatian Moneychanger
 url=http://magiccards.info/query?q=%21Icatian+Moneychanger
 image=http://mtgimage.com/card/icatian%20moneychanger1.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human

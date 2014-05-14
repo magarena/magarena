@@ -1,6 +1,7 @@
 name=Whalebone Glider
 url=http://magiccards.info/query?q=%21Whalebone+Glider
 image=http://mtgimage.com/card/whalebone%20glider.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

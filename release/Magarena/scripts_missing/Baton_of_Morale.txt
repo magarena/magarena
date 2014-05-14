@@ -1,6 +1,7 @@
 name=Baton of Morale
 url=http://magiccards.info/query?q=%21Baton+of+Morale
 image=http://mtgimage.com/card/baton%20of%20morale.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Spiteful Blow
 url=http://magiccards.info/query?q=%21Spiteful+Blow
 image=http://mtgimage.com/card/spiteful%20blow.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B}{B}

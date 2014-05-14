@@ -1,6 +1,7 @@
 name=Shidako, Broodmistress
 url=http://magiccards.info/query?q=%21Shidako%2C+Broodmistress
 image=http://mtgimage.com/card/shidako%2C%20broodmistress.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Snake,Shaman

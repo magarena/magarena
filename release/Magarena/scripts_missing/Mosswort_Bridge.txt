@@ -1,6 +1,7 @@
 name=Mosswort Bridge
 url=http://magiccards.info/query?q=%21Mosswort+Bridge
 image=http://mtgimage.com/card/mosswort%20bridge.jpg
+value=2.500
 rarity=R
 type=Land
 ability=Hideaway;\

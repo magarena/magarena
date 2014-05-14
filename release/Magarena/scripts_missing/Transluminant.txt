@@ -1,6 +1,7 @@
 name=Transluminant
 url=http://magiccards.info/query?q=%21Transluminant
 image=http://mtgimage.com/card/transluminant.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Dryad,Shaman

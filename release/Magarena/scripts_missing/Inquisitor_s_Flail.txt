@@ -1,6 +1,7 @@
 name=Inquisitor's Flail
 url=http://magiccards.info/query?q=%21Inquisitor%27s+Flail
 image=http://mtgimage.com/card/inquisitor%27s%20flail.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

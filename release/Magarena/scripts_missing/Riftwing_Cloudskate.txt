@@ -1,6 +1,7 @@
 name=Riftwing Cloudskate
 url=http://magiccards.info/query?q=%21Riftwing+Cloudskate
 image=http://mtgimage.com/card/riftwing%20cloudskate.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion

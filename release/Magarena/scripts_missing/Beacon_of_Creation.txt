@@ -1,6 +1,7 @@
 name=Beacon of Creation
 url=http://magiccards.info/query?q=%21Beacon+of+Creation
 image=http://mtgimage.com/card/beacon%20of%20creation.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{G}

@@ -1,6 +1,7 @@
 name=Soar
 url=http://magiccards.info/query?q=%21Soar
 image=http://mtgimage.com/card/soar.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

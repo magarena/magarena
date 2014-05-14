@@ -1,6 +1,7 @@
 name=Scarred Vinebreeder
 url=http://magiccards.info/query?q=%21Scarred+Vinebreeder
 image=http://mtgimage.com/card/scarred%20vinebreeder.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Shaman

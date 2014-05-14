@@ -1,6 +1,7 @@
 name=Vexing Arcanix
 url=http://magiccards.info/query?q=%21Vexing+Arcanix
 image=http://mtgimage.com/card/vexing%20arcanix.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

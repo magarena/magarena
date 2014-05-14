@@ -1,6 +1,7 @@
 name=Starfall
 url=http://magiccards.info/query?q=%21Starfall
 image=http://mtgimage.com/card/starfall.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={4}{R}

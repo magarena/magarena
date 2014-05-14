@@ -1,6 +1,7 @@
 name=Summoner's Pact
 url=http://magiccards.info/query?q=%21Summoner%27s+Pact
 image=http://mtgimage.com/card/summoner%27s%20pact.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={0}

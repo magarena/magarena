@@ -1,6 +1,7 @@
 name=Hellcarver Demon
 url=http://magiccards.info/query?q=%21Hellcarver+Demon
 image=http://mtgimage.com/card/hellcarver%20demon.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Demon

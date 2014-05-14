@@ -1,6 +1,7 @@
 name=Forgotten Ancient
 url=http://magiccards.info/query?q=%21Forgotten+Ancient
 image=http://mtgimage.com/card/forgotten%20ancient.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,6 +1,7 @@
 name=Survival Cache
 url=http://magiccards.info/query?q=%21Survival+Cache
 image=http://mtgimage.com/card/survival%20cache.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{W}

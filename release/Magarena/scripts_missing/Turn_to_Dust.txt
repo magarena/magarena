@@ -1,6 +1,7 @@
 name=Turn to Dust
 url=http://magiccards.info/query?q=%21Turn+to+Dust
 image=http://mtgimage.com/card/turn%20to%20dust.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}

@@ -1,6 +1,7 @@
 name=Gilded Drake
 url=http://magiccards.info/query?q=%21Gilded+Drake
 image=http://mtgimage.com/card/gilded%20drake.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Drake

@@ -1,6 +1,7 @@
 name=Oath of Lieges
 url=http://magiccards.info/query?q=%21Oath+of+Lieges
 image=http://mtgimage.com/card/oath%20of%20lieges.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}

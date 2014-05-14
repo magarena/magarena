@@ -1,6 +1,7 @@
 name=Domri Rade
 url=http://magiccards.info/query?q=%21Domri+Rade
 image=http://mtgimage.com/card/domri%20rade.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Domri

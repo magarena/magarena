@@ -1,6 +1,7 @@
 name=Urza's Armor
 url=http://magiccards.info/query?q=%21Urza%27s+Armor
 image=http://mtgimage.com/card/urza%27s%20armor.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={6}

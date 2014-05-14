@@ -1,6 +1,7 @@
 name=Mother of Runes
 url=http://magiccards.info/query?q=%21Mother+of+Runes
 image=http://mtgimage.com/card/mother%20of%20runes.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

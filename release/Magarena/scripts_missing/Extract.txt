@@ -1,6 +1,7 @@
 name=Extract
 url=http://magiccards.info/query?q=%21Extract
 image=http://mtgimage.com/card/extract.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={U}

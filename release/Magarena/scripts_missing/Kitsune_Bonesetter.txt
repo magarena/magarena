@@ -1,6 +1,7 @@
 name=Kitsune Bonesetter
 url=http://magiccards.info/query?q=%21Kitsune+Bonesetter
 image=http://mtgimage.com/card/kitsune%20bonesetter.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Fox,Cleric

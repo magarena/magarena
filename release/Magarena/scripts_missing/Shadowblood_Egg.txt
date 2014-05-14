@@ -1,6 +1,7 @@
 name=Shadowblood Egg
 url=http://magiccards.info/query?q=%21Shadowblood+Egg
 image=http://mtgimage.com/card/shadowblood%20egg.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

@@ -1,6 +1,7 @@
 name=Hold the Line
 url=http://magiccards.info/query?q=%21Hold+the+Line
 image=http://mtgimage.com/card/hold%20the%20line.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{W}{W}

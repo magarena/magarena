@@ -1,6 +1,7 @@
 name=Polluted Bonds
 url=http://magiccards.info/query?q=%21Polluted+Bonds
 image=http://mtgimage.com/card/polluted%20bonds.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

@@ -1,6 +1,7 @@
 name=Rune of Protection: Blue
 url=http://magiccards.info/query?q=%21Rune+of+Protection%3A+Blue
 image=http://mtgimage.com/card/rune%20of%20protection%20blue.jpg
+value=2.500
 rarity=C
 type=Enchantment
 cost={1}{W}

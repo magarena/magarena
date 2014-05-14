@@ -1,6 +1,7 @@
 name=Dream Leash
 url=http://magiccards.info/query?q=%21Dream+Leash
 image=http://mtgimage.com/card/dream%20leash.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

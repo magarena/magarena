@@ -1,6 +1,7 @@
 name=Viridian Joiner
 url=http://magiccards.info/query?q=%21Viridian+Joiner
 image=http://mtgimage.com/card/viridian%20joiner.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Druid

@@ -1,6 +1,7 @@
 name=Thelonite Monk
 url=http://magiccards.info/query?q=%21Thelonite+Monk
 image=http://mtgimage.com/card/thelonite%20monk.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Insect,Monk,Cleric

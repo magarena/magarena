@@ -1,6 +1,7 @@
 name=Twisted Image
 url=http://magiccards.info/query?q=%21Twisted+Image
 image=http://mtgimage.com/card/twisted%20image.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}

@@ -1,6 +1,7 @@
 name=Tower of Coireall
 url=http://magiccards.info/query?q=%21Tower+of+Coireall
 image=http://mtgimage.com/card/tower%20of%20coireall.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

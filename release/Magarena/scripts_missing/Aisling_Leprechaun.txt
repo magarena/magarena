@@ -1,6 +1,7 @@
 name=Aisling Leprechaun
 url=http://magiccards.info/query?q=%21Aisling+Leprechaun
 image=http://mtgimage.com/card/aisling%20leprechaun.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Faerie

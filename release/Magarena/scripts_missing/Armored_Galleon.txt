@@ -1,6 +1,7 @@
 name=Armored Galleon
 url=http://magiccards.info/query?q=%21Armored+Galleon
 image=http://mtgimage.com/card/armored%20galleon.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Pirate

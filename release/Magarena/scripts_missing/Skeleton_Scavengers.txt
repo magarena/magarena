@@ -1,6 +1,7 @@
 name=Skeleton Scavengers
 url=http://magiccards.info/query?q=%21Skeleton+Scavengers
 image=http://mtgimage.com/card/skeleton%20scavengers.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Skeleton

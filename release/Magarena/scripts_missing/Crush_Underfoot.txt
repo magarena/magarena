@@ -1,6 +1,7 @@
 name=Crush Underfoot
 url=http://magiccards.info/query?q=%21Crush+Underfoot
 image=http://mtgimage.com/card/crush%20underfoot.jpg
+value=2.500
 rarity=U
 type=Tribal,Instant
 subtype=Giant

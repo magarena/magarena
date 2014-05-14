@@ -1,6 +1,7 @@
 name=Treacherous Link
 url=http://magiccards.info/query?q=%21Treacherous+Link
 image=http://mtgimage.com/card/treacherous%20link.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

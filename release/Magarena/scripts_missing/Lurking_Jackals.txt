@@ -1,6 +1,7 @@
 name=Lurking Jackals
 url=http://magiccards.info/query?q=%21Lurking+Jackals
 image=http://mtgimage.com/card/lurking%20jackals.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={B}

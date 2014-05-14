@@ -1,6 +1,7 @@
 name=Bladewing's Thrall
 url=http://magiccards.info/query?q=%21Bladewing%27s+Thrall
 image=http://mtgimage.com/card/bladewing%27s%20thrall.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie

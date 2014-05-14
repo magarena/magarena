@@ -1,6 +1,7 @@
 name=Sapphire Medallion
 url=http://magiccards.info/query?q=%21Sapphire+Medallion
 image=http://mtgimage.com/card/sapphire%20medallion.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

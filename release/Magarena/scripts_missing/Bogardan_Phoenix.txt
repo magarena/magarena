@@ -1,6 +1,7 @@
 name=Bogardan Phoenix
 url=http://magiccards.info/query?q=%21Bogardan+Phoenix
 image=http://mtgimage.com/card/bogardan%20phoenix.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Phoenix

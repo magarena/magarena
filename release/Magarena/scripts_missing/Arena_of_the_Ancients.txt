@@ -1,6 +1,7 @@
 name=Arena of the Ancients
 url=http://magiccards.info/query?q=%21Arena+of+the+Ancients
 image=http://mtgimage.com/card/arena%20of%20the%20ancients.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

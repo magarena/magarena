@@ -1,6 +1,7 @@
 name=Darksteel Pendant
 url=http://magiccards.info/query?q=%21Darksteel+Pendant
 image=http://mtgimage.com/card/darksteel%20pendant.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={2}

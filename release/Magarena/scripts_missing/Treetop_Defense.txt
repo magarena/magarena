@@ -1,6 +1,7 @@
 name=Treetop Defense
 url=http://magiccards.info/query?q=%21Treetop+Defense
 image=http://mtgimage.com/card/treetop%20defense.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{G}

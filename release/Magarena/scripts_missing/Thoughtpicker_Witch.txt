@@ -1,6 +1,7 @@
 name=Thoughtpicker Witch
 url=http://magiccards.info/query?q=%21Thoughtpicker+Witch
 image=http://mtgimage.com/card/thoughtpicker%20witch.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

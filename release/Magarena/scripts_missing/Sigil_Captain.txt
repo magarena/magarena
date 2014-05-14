@@ -1,6 +1,7 @@
 name=Sigil Captain
 url=http://magiccards.info/query?q=%21Sigil+Captain
 image=http://mtgimage.com/card/sigil%20captain.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Rhino,Soldier

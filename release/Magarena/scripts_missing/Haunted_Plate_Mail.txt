@@ -1,6 +1,7 @@
 name=Haunted Plate Mail
 url=http://magiccards.info/query?q=%21Haunted+Plate+Mail
 image=http://mtgimage.com/card/haunted%20plate%20mail.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

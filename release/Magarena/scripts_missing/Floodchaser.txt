@@ -1,6 +1,7 @@
 name=Floodchaser
 url=http://magiccards.info/query?q=%21Floodchaser
 image=http://mtgimage.com/card/floodchaser.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental

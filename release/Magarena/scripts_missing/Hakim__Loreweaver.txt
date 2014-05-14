@@ -1,6 +1,7 @@
 name=Hakim, Loreweaver
 url=http://magiccards.info/query?q=%21Hakim%2C+Loreweaver
 image=http://mtgimage.com/card/hakim%2C%20loreweaver.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

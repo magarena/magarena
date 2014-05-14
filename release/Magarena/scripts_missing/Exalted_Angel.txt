@@ -1,6 +1,7 @@
 name=Exalted Angel
 url=http://magiccards.info/query?q=%21Exalted+Angel
 image=http://mtgimage.com/card/exalted%20angel.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

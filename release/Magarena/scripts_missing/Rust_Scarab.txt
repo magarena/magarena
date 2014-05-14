@@ -1,6 +1,7 @@
 name=Rust Scarab
 url=http://magiccards.info/query?q=%21Rust+Scarab
 image=http://mtgimage.com/card/rust%20scarab.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Insect

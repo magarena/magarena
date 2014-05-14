@@ -1,6 +1,7 @@
 name=Treacherous Pit-Dweller
 url=http://magiccards.info/query?q=%21Treacherous+Pit-Dweller
 image=http://mtgimage.com/card/treacherous%20pit-dweller.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Demon

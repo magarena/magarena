@@ -1,6 +1,7 @@
 name=Returned Reveler
 url=http://magiccards.info/query?q=%21Returned+Reveler
 image=http://mtgimage.com/card/returned%20reveler.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Satyr

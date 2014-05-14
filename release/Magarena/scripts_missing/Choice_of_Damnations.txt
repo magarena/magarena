@@ -1,6 +1,7 @@
 name=Choice of Damnations
 url=http://magiccards.info/query?q=%21Choice+of+Damnations
 image=http://mtgimage.com/card/choice%20of%20damnations.jpg
+value=2.500
 rarity=R
 type=Sorcery
 subtype=Arcane

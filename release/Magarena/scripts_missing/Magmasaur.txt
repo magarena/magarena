@@ -1,6 +1,7 @@
 name=Magmasaur
 url=http://magiccards.info/query?q=%21Magmasaur
 image=http://mtgimage.com/card/magmasaur.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental,Lizard

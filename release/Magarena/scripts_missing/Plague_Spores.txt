@@ -1,6 +1,7 @@
 name=Plague Spores
 url=http://magiccards.info/query?q=%21Plague+Spores
 image=http://mtgimage.com/card/plague%20spores.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={4}{B}{R}

@@ -1,6 +1,7 @@
 name=Sever Soul
 url=http://magiccards.info/query?q=%21Sever+Soul
 image=http://mtgimage.com/card/sever%20soul.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{B}{B}

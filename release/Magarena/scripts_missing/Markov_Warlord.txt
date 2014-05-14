@@ -1,6 +1,7 @@
 name=Markov Warlord
 url=http://magiccards.info/query?q=%21Markov+Warlord
 image=http://mtgimage.com/card/markov%20warlord.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Vampire,Warrior

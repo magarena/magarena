@@ -1,6 +1,7 @@
 name=Myr Mindservant
 url=http://magiccards.info/query?q=%21Myr+Mindservant
 image=http://mtgimage.com/card/myr%20mindservant.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Myr

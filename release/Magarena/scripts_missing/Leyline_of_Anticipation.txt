@@ -1,6 +1,7 @@
 name=Leyline of Anticipation
 url=http://magiccards.info/query?q=%21Leyline+of+Anticipation
 image=http://mtgimage.com/card/leyline%20of%20anticipation.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

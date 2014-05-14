@@ -1,6 +1,7 @@
 name=Brothers Yamazaki
 url=http://magiccards.info/query?q=%21Brothers+Yamazaki
 image=http://mtgimage.com/card/brothers%20yamazaki1.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Samurai

@@ -1,6 +1,7 @@
 name=Night Dealings
 url=http://magiccards.info/query?q=%21Night+Dealings
 image=http://mtgimage.com/card/night%20dealings.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

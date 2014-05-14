@@ -1,6 +1,7 @@
 name=Xun Yu, Wei Advisor
 url=http://magiccards.info/query?q=%21Xun+Yu%2C+Wei+Advisor
 image=http://mtgimage.com/card/xun%20yu%2C%20wei%20advisor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Advisor

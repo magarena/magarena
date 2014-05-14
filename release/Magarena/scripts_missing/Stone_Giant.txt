@@ -1,6 +1,7 @@
 name=Stone Giant
 url=http://magiccards.info/query?q=%21Stone+Giant
 image=http://mtgimage.com/card/stone%20giant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Giant

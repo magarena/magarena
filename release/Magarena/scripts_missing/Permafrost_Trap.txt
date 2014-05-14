@@ -1,6 +1,7 @@
 name=Permafrost Trap
 url=http://magiccards.info/query?q=%21Permafrost+Trap
 image=http://mtgimage.com/card/permafrost%20trap.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Trap

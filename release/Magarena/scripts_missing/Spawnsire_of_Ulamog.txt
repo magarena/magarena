@@ -1,6 +1,7 @@
 name=Spawnsire of Ulamog
 url=http://magiccards.info/query?q=%21Spawnsire+of+Ulamog
 image=http://mtgimage.com/card/spawnsire%20of%20ulamog.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Eldrazi

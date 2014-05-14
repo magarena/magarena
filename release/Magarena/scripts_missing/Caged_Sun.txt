@@ -1,6 +1,7 @@
 name=Caged Sun
 url=http://magiccards.info/query?q=%21Caged+Sun
 image=http://mtgimage.com/card/caged%20sun.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

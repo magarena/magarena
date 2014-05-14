@@ -1,6 +1,7 @@
 name=Rite of Flame
 url=http://magiccards.info/query?q=%21Rite+of+Flame
 image=http://mtgimage.com/card/rite%20of%20flame.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={R}

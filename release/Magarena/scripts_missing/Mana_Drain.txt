@@ -1,6 +1,7 @@
 name=Mana Drain
 url=http://magiccards.info/query?q=%21Mana+Drain
 image=http://mtgimage.com/card/mana%20drain.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}{U}

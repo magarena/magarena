@@ -1,6 +1,7 @@
 name=Fetid Heath
 url=http://magiccards.info/query?q=%21Fetid+Heath
 image=http://mtgimage.com/card/fetid%20heath.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\

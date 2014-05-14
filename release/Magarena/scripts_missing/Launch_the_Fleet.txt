@@ -1,6 +1,7 @@
 name=Launch the Fleet
 url=http://magiccards.info/query?q=%21Launch+the+Fleet
 image=http://mtgimage.com/card/launch%20the%20fleet.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={W}

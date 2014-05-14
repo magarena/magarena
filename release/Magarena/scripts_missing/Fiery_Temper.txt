@@ -1,6 +1,7 @@
 name=Fiery Temper
 url=http://magiccards.info/query?q=%21Fiery+Temper
 image=http://mtgimage.com/card/fiery%20temper.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}{R}

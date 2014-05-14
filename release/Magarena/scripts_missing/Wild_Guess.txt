@@ -1,6 +1,7 @@
 name=Wild Guess
 url=http://magiccards.info/query?q=%21Wild+Guess
 image=http://mtgimage.com/card/wild%20guess.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={R}{R}

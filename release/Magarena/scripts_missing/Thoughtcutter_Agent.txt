@@ -1,6 +1,7 @@
 name=Thoughtcutter Agent
 url=http://magiccards.info/query?q=%21Thoughtcutter+Agent
 image=http://mtgimage.com/card/thoughtcutter%20agent.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Human,Rogue

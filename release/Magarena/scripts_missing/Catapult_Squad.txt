@@ -1,6 +1,7 @@
 name=Catapult Squad
 url=http://magiccards.info/query?q=%21Catapult+Squad
 image=http://mtgimage.com/card/catapult%20squad.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

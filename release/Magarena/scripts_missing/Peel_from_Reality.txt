@@ -1,6 +1,7 @@
 name=Peel from Reality
 url=http://magiccards.info/query?q=%21Peel+from+Reality
 image=http://mtgimage.com/card/peel%20from%20reality.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

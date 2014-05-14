@@ -1,6 +1,7 @@
 name=Mold Demon
 url=http://magiccards.info/query?q=%21Mold+Demon
 image=http://mtgimage.com/card/mold%20demon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Fungus,Demon

@@ -1,6 +1,7 @@
 name=Legion's Initiative
 url=http://magiccards.info/query?q=%21Legion%27s+Initiative
 image=http://mtgimage.com/card/legion%27s%20initiative.jpg
+value=2.500
 rarity=M
 type=Enchantment
 cost={R}{W}

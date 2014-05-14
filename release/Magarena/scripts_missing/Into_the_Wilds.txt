@@ -1,6 +1,7 @@
 name=Into the Wilds
 url=http://magiccards.info/query?q=%21Into+the+Wilds
 image=http://mtgimage.com/card/into%20the%20wilds.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}

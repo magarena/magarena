@@ -1,6 +1,7 @@
 name=Keldon Warlord
 url=http://magiccards.info/query?q=%21Keldon+Warlord
 image=http://mtgimage.com/card/keldon%20warlord.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Barbarian

@@ -1,6 +1,7 @@
 name=Magma Phoenix
 url=http://magiccards.info/query?q=%21Magma+Phoenix
 image=http://mtgimage.com/card/magma%20phoenix.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Phoenix

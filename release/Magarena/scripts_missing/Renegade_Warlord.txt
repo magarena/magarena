@@ -1,6 +1,7 @@
 name=Renegade Warlord
 url=http://magiccards.info/query?q=%21Renegade+Warlord
 image=http://mtgimage.com/card/renegade%20warlord.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Warrior

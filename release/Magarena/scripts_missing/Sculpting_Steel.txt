@@ -1,6 +1,7 @@
 name=Sculpting Steel
 url=http://magiccards.info/query?q=%21Sculpting+Steel
 image=http://mtgimage.com/card/sculpting%20steel.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

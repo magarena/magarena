@@ -1,6 +1,7 @@
 name=Thran Quarry
 url=http://magiccards.info/query?q=%21Thran+Quarry
 image=http://mtgimage.com/card/thran%20quarry.jpg
+value=2.500
 rarity=R
 type=Land
 ability=At the beginning of the end step, if you control no creatures, sacrifice SN.;\

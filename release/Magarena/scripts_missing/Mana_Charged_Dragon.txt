@@ -1,6 +1,7 @@
 name=Mana-Charged Dragon
 url=http://magiccards.info/query?q=%21Mana-Charged+Dragon
 image=http://mtgimage.com/card/mana-charged%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

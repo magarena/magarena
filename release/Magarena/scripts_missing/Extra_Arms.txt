@@ -1,6 +1,7 @@
 name=Extra Arms
 url=http://magiccards.info/query?q=%21Extra+Arms
 image=http://mtgimage.com/card/extra%20arms.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

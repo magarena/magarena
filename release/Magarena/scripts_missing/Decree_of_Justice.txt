@@ -1,6 +1,7 @@
 name=Decree of Justice
 url=http://magiccards.info/query?q=%21Decree+of+Justice
 image=http://mtgimage.com/card/decree%20of%20justice.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{X}{2}{W}{W}

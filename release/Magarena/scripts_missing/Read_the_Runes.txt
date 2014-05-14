@@ -1,6 +1,7 @@
 name=Read the Runes
 url=http://magiccards.info/query?q=%21Read+the+Runes
 image=http://mtgimage.com/card/read%20the%20runes.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={X}{U}

@@ -1,6 +1,7 @@
 name=Saproling Cluster
 url=http://magiccards.info/query?q=%21Saproling+Cluster
 image=http://mtgimage.com/card/saproling%20cluster.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}

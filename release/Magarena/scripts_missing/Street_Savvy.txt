@@ -1,6 +1,7 @@
 name=Street Savvy
 url=http://magiccards.info/query?q=%21Street+Savvy
 image=http://mtgimage.com/card/street%20savvy.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

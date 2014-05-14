@@ -1,6 +1,7 @@
 name=Thought Reflection
 url=http://magiccards.info/query?q=%21Thought+Reflection
 image=http://mtgimage.com/card/thought%20reflection.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{U}{U}{U}

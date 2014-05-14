@@ -1,6 +1,7 @@
 name=Fasting
 url=http://magiccards.info/query?q=%21Fasting
 image=http://mtgimage.com/card/fasting.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={W}

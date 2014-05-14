@@ -1,6 +1,7 @@
 name=Cleansing Beam
 url=http://magiccards.info/query?q=%21Cleansing+Beam
 image=http://mtgimage.com/card/cleansing%20beam.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={4}{R}

@@ -1,6 +1,7 @@
 name=Panic
 url=http://magiccards.info/query?q=%21Panic
 image=http://mtgimage.com/card/panic.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

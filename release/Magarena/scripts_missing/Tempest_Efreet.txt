@@ -1,6 +1,7 @@
 name=Tempest Efreet
 url=http://magiccards.info/query?q=%21Tempest+Efreet
 image=http://mtgimage.com/card/tempest%20efreet.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Efreet

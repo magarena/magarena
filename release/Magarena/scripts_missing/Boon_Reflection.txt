@@ -1,6 +1,7 @@
 name=Boon Reflection
 url=http://magiccards.info/query?q=%21Boon+Reflection
 image=http://mtgimage.com/card/boon%20reflection.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={4}{W}

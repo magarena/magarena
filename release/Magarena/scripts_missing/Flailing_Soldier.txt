@@ -1,6 +1,7 @@
 name=Flailing Soldier
 url=http://magiccards.info/query?q=%21Flailing+Soldier
 image=http://mtgimage.com/card/flailing%20soldier.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

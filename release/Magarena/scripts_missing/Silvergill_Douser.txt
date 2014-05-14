@@ -1,6 +1,7 @@
 name=Silvergill Douser
 url=http://magiccards.info/query?q=%21Silvergill+Douser
 image=http://mtgimage.com/card/silvergill%20douser.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard

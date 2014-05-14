@@ -1,6 +1,7 @@
 name=Nevermore
 url=http://magiccards.info/query?q=%21Nevermore
 image=http://mtgimage.com/card/nevermore.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}{W}

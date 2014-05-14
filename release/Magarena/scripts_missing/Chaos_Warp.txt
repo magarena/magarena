@@ -1,6 +1,7 @@
 name=Chaos Warp
 url=http://magiccards.info/query?q=%21Chaos+Warp
 image=http://mtgimage.com/card/chaos%20warp.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{R}

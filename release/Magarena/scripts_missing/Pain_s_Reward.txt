@@ -1,6 +1,7 @@
 name=Pain's Reward
 url=http://magiccards.info/query?q=%21Pain%27s+Reward
 image=http://mtgimage.com/card/pain%27s%20reward.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{B}

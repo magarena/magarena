@@ -1,6 +1,7 @@
 name=Treacherous Urge
 url=http://magiccards.info/query?q=%21Treacherous+Urge
 image=http://mtgimage.com/card/treacherous%20urge.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={4}{B}

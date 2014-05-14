@@ -1,6 +1,7 @@
 name=Teferi, Mage of Zhalfir
 url=http://magiccards.info/query?q=%21Teferi%2C+Mage+of+Zhalfir
 image=http://mtgimage.com/card/teferi%2C%20mage%20of%20zhalfir.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,7 @@
 name=Haunting Wind
 url=http://magiccards.info/query?q=%21Haunting+Wind
 image=http://mtgimage.com/card/haunting%20wind.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={3}{B}

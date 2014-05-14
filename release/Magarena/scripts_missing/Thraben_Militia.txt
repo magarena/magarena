@@ -1,6 +1,7 @@
 name=Thraben Militia
 url=http://magiccards.info/query?q=%21Thraben+Militia
 image=http://mtgimage.com/card/thraben%20militia.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier

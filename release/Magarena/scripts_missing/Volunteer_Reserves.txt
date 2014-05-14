@@ -1,6 +1,7 @@
 name=Volunteer Reserves
 url=http://magiccards.info/query?q=%21Volunteer+Reserves
 image=http://mtgimage.com/card/volunteer%20reserves.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

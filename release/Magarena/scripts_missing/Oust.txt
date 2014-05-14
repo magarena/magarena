@@ -1,6 +1,7 @@
 name=Oust
 url=http://magiccards.info/query?q=%21Oust
 image=http://mtgimage.com/card/oust.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={W}

@@ -1,6 +1,7 @@
 name=Trickbind
 url=http://magiccards.info/query?q=%21Trickbind
 image=http://mtgimage.com/card/trickbind.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{U}

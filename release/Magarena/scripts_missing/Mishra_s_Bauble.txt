@@ -1,6 +1,7 @@
 name=Mishra's Bauble
 url=http://magiccards.info/query?q=%21Mishra%27s+Bauble
 image=http://mtgimage.com/card/mishra%27s%20bauble.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={0}

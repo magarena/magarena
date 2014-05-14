@@ -1,6 +1,7 @@
 name=Sanctum Guardian
 url=http://magiccards.info/query?q=%21Sanctum+Guardian
 image=http://mtgimage.com/card/sanctum%20guardian.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

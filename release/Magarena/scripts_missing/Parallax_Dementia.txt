@@ -1,6 +1,7 @@
 name=Parallax Dementia
 url=http://magiccards.info/query?q=%21Parallax+Dementia
 image=http://mtgimage.com/card/parallax%20dementia.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

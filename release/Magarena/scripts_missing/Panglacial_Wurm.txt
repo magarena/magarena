@@ -1,6 +1,7 @@
 name=Panglacial Wurm
 url=http://magiccards.info/query?q=%21Panglacial+Wurm
 image=http://mtgimage.com/card/panglacial%20wurm.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Wurm

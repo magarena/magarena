@@ -1,6 +1,7 @@
 name=Subterranean Hangar
 url=http://magiccards.info/query?q=%21Subterranean+Hangar
 image=http://mtgimage.com/card/subterranean%20hangar.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

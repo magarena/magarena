@@ -1,6 +1,7 @@
 name=Red Elemental Blast
 url=http://magiccards.info/query?q=%21Red+Elemental+Blast
 image=http://mtgimage.com/card/red%20elemental%20blast.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

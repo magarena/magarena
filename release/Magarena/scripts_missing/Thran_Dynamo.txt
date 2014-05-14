@@ -1,6 +1,7 @@
 name=Thran Dynamo
 url=http://magiccards.info/query?q=%21Thran+Dynamo
 image=http://mtgimage.com/card/thran%20dynamo.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

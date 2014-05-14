@@ -1,6 +1,7 @@
 name=Infused Arrows
 url=http://magiccards.info/query?q=%21Infused+Arrows
 image=http://mtgimage.com/card/infused%20arrows.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

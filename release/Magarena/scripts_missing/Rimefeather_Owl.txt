@@ -1,6 +1,7 @@
 name=Rimefeather Owl
 url=http://magiccards.info/query?q=%21Rimefeather+Owl
 image=http://mtgimage.com/card/rimefeather%20owl.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Bird

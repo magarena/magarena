@@ -1,6 +1,7 @@
 name=Canopy Dragon
 url=http://magiccards.info/query?q=%21Canopy+Dragon
 image=http://mtgimage.com/card/canopy%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

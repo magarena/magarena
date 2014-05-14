@@ -1,6 +1,7 @@
 name=Chromatic Star
 url=http://magiccards.info/query?q=%21Chromatic+Star
 image=http://mtgimage.com/card/chromatic%20star.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={1}

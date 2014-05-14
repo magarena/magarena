@@ -1,6 +1,7 @@
 name=Infiltrator il-Kor
 url=http://magiccards.info/query?q=%21Infiltrator+il-Kor
 image=http://mtgimage.com/card/infiltrator%20il-kor.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kor,Rogue

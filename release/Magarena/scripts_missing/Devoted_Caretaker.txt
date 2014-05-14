@@ -1,6 +1,7 @@
 name=Devoted Caretaker
 url=http://magiccards.info/query?q=%21Devoted+Caretaker
 image=http://mtgimage.com/card/devoted%20caretaker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,7 @@
 name=Worldpurge
 url=http://magiccards.info/query?q=%21Worldpurge
 image=http://mtgimage.com/card/worldpurge.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{W/U}{W/U}{W/U}{W/U}

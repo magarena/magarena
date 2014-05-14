@@ -1,6 +1,7 @@
 name=Squeaking Pie Grubfellows
 url=http://magiccards.info/query?q=%21Squeaking+Pie+Grubfellows
 image=http://mtgimage.com/card/squeaking%20pie%20grubfellows.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Shaman

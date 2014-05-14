@@ -1,6 +1,7 @@
 name=Sulfuric Vortex
 url=http://magiccards.info/query?q=%21Sulfuric+Vortex
 image=http://mtgimage.com/card/sulfuric%20vortex.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{R}{R}

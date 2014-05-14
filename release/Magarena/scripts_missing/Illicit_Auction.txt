@@ -1,6 +1,7 @@
 name=Illicit Auction
 url=http://magiccards.info/query?q=%21Illicit+Auction
 image=http://mtgimage.com/card/illicit%20auction.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}

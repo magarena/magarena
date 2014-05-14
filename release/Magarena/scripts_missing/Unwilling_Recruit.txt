@@ -1,6 +1,7 @@
 name=Unwilling Recruit
 url=http://magiccards.info/query?q=%21Unwilling+Recruit
 image=http://mtgimage.com/card/unwilling%20recruit.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={X}{R}{R}{R}

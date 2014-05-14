@@ -1,6 +1,7 @@
 name=Empty the Catacombs
 url=http://magiccards.info/query?q=%21Empty+the+Catacombs
 image=http://mtgimage.com/card/empty%20the%20catacombs.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{B}

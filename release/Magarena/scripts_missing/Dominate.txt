@@ -1,6 +1,7 @@
 name=Dominate
 url=http://magiccards.info/query?q=%21Dominate
 image=http://mtgimage.com/card/dominate.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={X}{1}{U}{U}

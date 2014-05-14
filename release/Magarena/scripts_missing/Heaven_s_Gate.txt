@@ -1,6 +1,7 @@
 name=Heaven's Gate
 url=http://magiccards.info/query?q=%21Heaven%27s+Gate
 image=http://mtgimage.com/card/heaven%27s%20gate.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={W}

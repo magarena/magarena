@@ -1,6 +1,7 @@
 name=Ophiomancer
 url=http://magiccards.info/query?q=%21Ophiomancer
 image=http://mtgimage.com/card/ophiomancer.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Shaman

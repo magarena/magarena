@@ -1,6 +1,7 @@
 name=Soul Manipulation
 url=http://magiccards.info/query?q=%21Soul+Manipulation
 image=http://mtgimage.com/card/soul%20manipulation.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}{B}

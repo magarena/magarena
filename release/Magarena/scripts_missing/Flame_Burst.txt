@@ -1,6 +1,7 @@
 name=Flame Burst
 url=http://magiccards.info/query?q=%21Flame+Burst
 image=http://mtgimage.com/card/flame%20burst.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

@@ -1,6 +1,7 @@
 name=Sneak Attack
 url=http://magiccards.info/query?q=%21Sneak+Attack
 image=http://mtgimage.com/card/sneak%20attack.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

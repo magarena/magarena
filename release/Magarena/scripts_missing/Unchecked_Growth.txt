@@ -1,6 +1,7 @@
 name=Unchecked Growth
 url=http://magiccards.info/query?q=%21Unchecked+Growth
 image=http://mtgimage.com/card/unchecked%20growth.jpg
+value=2.500
 rarity=U
 type=Instant
 subtype=Arcane

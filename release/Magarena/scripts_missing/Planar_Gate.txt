@@ -1,6 +1,7 @@
 name=Planar Gate
 url=http://magiccards.info/query?q=%21Planar+Gate
 image=http://mtgimage.com/card/planar%20gate.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

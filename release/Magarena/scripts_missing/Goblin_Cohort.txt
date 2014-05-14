@@ -1,6 +1,7 @@
 name=Goblin Cohort
 url=http://magiccards.info/query?q=%21Goblin+Cohort
 image=http://mtgimage.com/card/goblin%20cohort.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

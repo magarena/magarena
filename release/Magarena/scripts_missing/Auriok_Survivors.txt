@@ -1,6 +1,7 @@
 name=Auriok Survivors
 url=http://magiccards.info/query?q=%21Auriok+Survivors
 image=http://mtgimage.com/card/auriok%20survivors.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,6 +1,7 @@
 name=Primal Boost
 url=http://magiccards.info/query?q=%21Primal+Boost
 image=http://mtgimage.com/card/primal%20boost.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{G}

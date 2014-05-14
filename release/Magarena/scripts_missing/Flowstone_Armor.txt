@@ -1,6 +1,7 @@
 name=Flowstone Armor
 url=http://magiccards.info/query?q=%21Flowstone+Armor
 image=http://mtgimage.com/card/flowstone%20armor.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

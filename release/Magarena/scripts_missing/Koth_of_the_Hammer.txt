@@ -1,6 +1,7 @@
 name=Koth of the Hammer
 url=http://magiccards.info/query?q=%21Koth+of+the+Hammer
 image=http://mtgimage.com/card/koth%20of%20the%20hammer.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Koth

@@ -1,6 +1,7 @@
 name=Standardize
 url=http://magiccards.info/query?q=%21Standardize
 image=http://mtgimage.com/card/standardize.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U}{U}

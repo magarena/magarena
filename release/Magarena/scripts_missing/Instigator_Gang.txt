@@ -1,6 +1,7 @@
 name=Instigator Gang
 url=http://magiccards.info/query?q=%21Instigator+Gang
 image=http://mtgimage.com/card/instigator%20gang.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Werewolf

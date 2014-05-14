@@ -1,6 +1,7 @@
 name=Stone-Tongue Basilisk
 url=http://magiccards.info/query?q=%21Stone-Tongue+Basilisk
 image=http://mtgimage.com/card/stone-tongue%20basilisk.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Basilisk

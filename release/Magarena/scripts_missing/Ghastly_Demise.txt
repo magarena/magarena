@@ -1,6 +1,7 @@
 name=Ghastly Demise
 url=http://magiccards.info/query?q=%21Ghastly+Demise
 image=http://mtgimage.com/card/ghastly%20demise.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={B}

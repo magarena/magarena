@@ -1,6 +1,7 @@
 name=Sworn Defender
 url=http://magiccards.info/query?q=%21Sworn+Defender
 image=http://mtgimage.com/card/sworn%20defender.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight

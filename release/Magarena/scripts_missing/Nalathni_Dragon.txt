@@ -1,6 +1,7 @@
 name=Nalathni Dragon
 url=http://magiccards.info/query?q=%21Nalathni+Dragon
 image=http://mtgimage.com/card/nalathni%20dragon.jpg
+value=2.500
 rarity=S
 type=Creature
 subtype=Dragon

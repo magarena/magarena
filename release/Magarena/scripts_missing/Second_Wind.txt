@@ -1,6 +1,7 @@
 name=Second Wind
 url=http://magiccards.info/query?q=%21Second+Wind
 image=http://mtgimage.com/card/second%20wind.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

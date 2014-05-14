@@ -1,6 +1,7 @@
 name=Waterspout Djinn
 url=http://magiccards.info/query?q=%21Waterspout+Djinn
 image=http://mtgimage.com/card/waterspout%20djinn.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Djinn

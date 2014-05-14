@@ -1,6 +1,7 @@
 name=Gideon Jura
 url=http://magiccards.info/query?q=%21Gideon+Jura
 image=http://mtgimage.com/card/gideon%20jura.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Gideon

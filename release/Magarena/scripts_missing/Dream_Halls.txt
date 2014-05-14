@@ -1,6 +1,7 @@
 name=Dream Halls
 url=http://magiccards.info/query?q=%21Dream+Halls
 image=http://mtgimage.com/card/dream%20halls.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}

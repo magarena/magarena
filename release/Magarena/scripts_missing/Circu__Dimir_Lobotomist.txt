@@ -1,6 +1,7 @@
 name=Circu, Dimir Lobotomist
 url=http://magiccards.info/query?q=%21Circu%2C+Dimir+Lobotomist
 image=http://mtgimage.com/card/circu%2C%20dimir%20lobotomist.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

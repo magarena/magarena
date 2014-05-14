@@ -1,6 +1,7 @@
 name=Necravolver
 url=http://magiccards.info/query?q=%21Necravolver
 image=http://mtgimage.com/card/necravolver.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Volver

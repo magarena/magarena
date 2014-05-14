@@ -1,6 +1,7 @@
 name=Wound Reflection
 url=http://magiccards.info/query?q=%21Wound+Reflection
 image=http://mtgimage.com/card/wound%20reflection.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={5}{B}

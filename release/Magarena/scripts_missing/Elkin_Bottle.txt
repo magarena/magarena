@@ -1,6 +1,7 @@
 name=Elkin Bottle
 url=http://magiccards.info/query?q=%21Elkin+Bottle
 image=http://mtgimage.com/card/elkin%20bottle.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

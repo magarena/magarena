@@ -1,6 +1,7 @@
 name=Elkin Lair
 url=http://magiccards.info/query?q=%21Elkin+Lair
 image=http://mtgimage.com/card/elkin%20lair.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

@@ -1,6 +1,7 @@
 name=Rakdos Augermage
 url=http://magiccards.info/query?q=%21Rakdos+Augermage
 image=http://mtgimage.com/card/rakdos%20augermage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,7 @@
 name=Tawnos's Coffin
 url=http://magiccards.info/query?q=%21Tawnos%27s+Coffin
 image=http://mtgimage.com/card/tawnos%27s%20coffin.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

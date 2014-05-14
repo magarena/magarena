@@ -1,6 +1,7 @@
 name=Infinite Hourglass
 url=http://magiccards.info/query?q=%21Infinite+Hourglass
 image=http://mtgimage.com/card/infinite%20hourglass.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,7 @@
 name=Diabolic Revelation
 url=http://magiccards.info/query?q=%21Diabolic+Revelation
 image=http://mtgimage.com/card/diabolic%20revelation.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{3}{B}{B}

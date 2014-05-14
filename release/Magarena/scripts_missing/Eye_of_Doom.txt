@@ -1,6 +1,7 @@
 name=Eye of Doom
 url=http://magiccards.info/query?q=%21Eye+of+Doom
 image=http://mtgimage.com/card/eye%20of%20doom.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

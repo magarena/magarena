@@ -1,6 +1,7 @@
 name=Provoke
 url=http://magiccards.info/query?q=%21Provoke
 image=http://mtgimage.com/card/provoke.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{G}

@@ -1,6 +1,7 @@
 name=Mistform Ultimus
 url=http://magiccards.info/query?q=%21Mistform+Ultimus
 image=http://mtgimage.com/card/mistform%20ultimus.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Illusion

@@ -1,6 +1,7 @@
 name=Auntie's Hovel
 url=http://magiccards.info/query?q=%21Auntie%27s+Hovel
 image=http://mtgimage.com/card/auntie%27s%20hovel.jpg
+value=2.500
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Goblin card from your hand. If you don't, SN enters the battlefield tapped.;\

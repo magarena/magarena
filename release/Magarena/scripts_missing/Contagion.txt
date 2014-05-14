@@ -1,6 +1,7 @@
 name=Contagion
 url=http://magiccards.info/query?q=%21Contagion
 image=http://mtgimage.com/card/contagion.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{B}{B}

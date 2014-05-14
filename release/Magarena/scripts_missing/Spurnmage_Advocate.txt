@@ -1,6 +1,7 @@
 name=Spurnmage Advocate
 url=http://magiccards.info/query?q=%21Spurnmage+Advocate
 image=http://mtgimage.com/card/spurnmage%20advocate.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Nomad

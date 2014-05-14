@@ -1,6 +1,7 @@
 name=Lim-Dul's Vault
 url=http://magiccards.info/query?q=%21Lim-D%C3%BBl%27s+Vault
 image=http://mtgimage.com/card/lim-dul%27s%20vault.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={U}{B}

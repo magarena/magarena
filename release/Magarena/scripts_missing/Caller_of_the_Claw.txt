@@ -1,6 +1,7 @@
 name=Caller of the Claw
 url=http://magiccards.info/query?q=%21Caller+of+the+Claw
 image=http://mtgimage.com/card/caller%20of%20the%20claw.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf

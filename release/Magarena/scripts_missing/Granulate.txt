@@ -1,6 +1,7 @@
 name=Granulate
 url=http://magiccards.info/query?q=%21Granulate
 image=http://mtgimage.com/card/granulate.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{R}{R}

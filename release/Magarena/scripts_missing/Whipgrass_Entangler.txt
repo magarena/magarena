@@ -1,6 +1,7 @@
 name=Whipgrass Entangler
 url=http://magiccards.info/query?q=%21Whipgrass+Entangler
 image=http://mtgimage.com/card/whipgrass%20entangler.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,7 @@
 name=Tooth and Claw
 url=http://magiccards.info/query?q=%21Tooth+and+Claw
 image=http://mtgimage.com/card/tooth%20and%20claw.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}

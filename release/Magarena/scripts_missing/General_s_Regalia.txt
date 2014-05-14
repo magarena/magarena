@@ -1,6 +1,7 @@
 name=General's Regalia
 url=http://magiccards.info/query?q=%21General%27s+Regalia
 image=http://mtgimage.com/card/general%27s%20regalia.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

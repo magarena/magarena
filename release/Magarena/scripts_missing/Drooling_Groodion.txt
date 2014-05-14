@@ -1,6 +1,7 @@
 name=Drooling Groodion
 url=http://magiccards.info/query?q=%21Drooling+Groodion
 image=http://mtgimage.com/card/drooling%20groodion.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,7 @@
 name=Viscerid Deepwalker
 url=http://magiccards.info/query?q=%21Viscerid+Deepwalker
 image=http://mtgimage.com/card/viscerid%20deepwalker.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Homarid,Warrior

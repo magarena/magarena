@@ -1,6 +1,7 @@
 name=Peregrine Drake
 url=http://magiccards.info/query?q=%21Peregrine+Drake
 image=http://mtgimage.com/card/peregrine%20drake.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Drake

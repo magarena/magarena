@@ -1,6 +1,7 @@
 name=Life's Finale
 url=http://magiccards.info/query?q=%21Life%27s+Finale
 image=http://mtgimage.com/card/life%27s%20finale.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{B}{B}

@@ -1,6 +1,7 @@
 name=Wandering Goblins
 url=http://magiccards.info/query?q=%21Wandering+Goblins
 image=http://mtgimage.com/card/wandering%20goblins.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

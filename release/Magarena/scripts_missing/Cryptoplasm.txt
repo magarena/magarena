@@ -1,6 +1,7 @@
 name=Cryptoplasm
 url=http://magiccards.info/query?q=%21Cryptoplasm
 image=http://mtgimage.com/card/cryptoplasm.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Shapeshifter

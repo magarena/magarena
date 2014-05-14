@@ -1,6 +1,7 @@
 name=Mogg Conscripts
 url=http://magiccards.info/query?q=%21Mogg+Conscripts
 image=http://mtgimage.com/card/mogg%20conscripts.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin

@@ -1,6 +1,7 @@
 name=Quirion Explorer
 url=http://magiccards.info/query?q=%21Quirion+Explorer
 image=http://mtgimage.com/card/quirion%20explorer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Druid,Scout

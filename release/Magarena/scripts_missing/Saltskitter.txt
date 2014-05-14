@@ -1,6 +1,7 @@
 name=Saltskitter
 url=http://magiccards.info/query?q=%21Saltskitter
 image=http://mtgimage.com/card/saltskitter.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm

@@ -1,6 +1,7 @@
 name=Broken Dam
 url=http://magiccards.info/query?q=%21Broken+Dam
 image=http://mtgimage.com/card/broken%20dam.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={U}

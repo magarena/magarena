@@ -1,6 +1,7 @@
 name=Gleancrawler
 url=http://magiccards.info/query?q=%21Gleancrawler
 image=http://mtgimage.com/card/gleancrawler.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Insect,Horror

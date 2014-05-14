@@ -1,6 +1,7 @@
 name=Wurmcalling
 url=http://magiccards.info/query?q=%21Wurmcalling
 image=http://mtgimage.com/card/wurmcalling.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{G}

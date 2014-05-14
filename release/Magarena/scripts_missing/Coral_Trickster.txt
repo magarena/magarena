@@ -1,6 +1,7 @@
 name=Coral Trickster
 url=http://magiccards.info/query?q=%21Coral+Trickster
 image=http://mtgimage.com/card/coral%20trickster.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue

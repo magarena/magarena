@@ -1,6 +1,7 @@
 name=Momentum
 url=http://magiccards.info/query?q=%21Momentum
 image=http://mtgimage.com/card/momentum.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

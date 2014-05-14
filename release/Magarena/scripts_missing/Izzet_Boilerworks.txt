@@ -1,6 +1,7 @@
 name=Izzet Boilerworks
 url=http://magiccards.info/query?q=%21Izzet+Boilerworks
 image=http://mtgimage.com/card/izzet%20boilerworks.jpg
+value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

@@ -1,6 +1,7 @@
 name=March of the Returned
 url=http://magiccards.info/query?q=%21March+of+the+Returned
 image=http://mtgimage.com/card/march%20of%20the%20returned.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{B}

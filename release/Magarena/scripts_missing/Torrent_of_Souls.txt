@@ -1,6 +1,7 @@
 name=Torrent of Souls
 url=http://magiccards.info/query?q=%21Torrent+of+Souls
 image=http://mtgimage.com/card/torrent%20of%20souls.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{B/R}

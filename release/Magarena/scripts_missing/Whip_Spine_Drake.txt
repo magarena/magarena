@@ -1,6 +1,7 @@
 name=Whip-Spine Drake
 url=http://magiccards.info/query?q=%21Whip-Spine+Drake
 image=http://mtgimage.com/card/whip-spine%20drake.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Drake

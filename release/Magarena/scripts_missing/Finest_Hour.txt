@@ -1,6 +1,7 @@
 name=Finest Hour
 url=http://magiccards.info/query?q=%21Finest+Hour
 image=http://mtgimage.com/card/finest%20hour.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{W}{U}

@@ -1,6 +1,7 @@
 name=Spirit Shield
 url=http://magiccards.info/query?q=%21Spirit+Shield
 image=http://mtgimage.com/card/spirit%20shield.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

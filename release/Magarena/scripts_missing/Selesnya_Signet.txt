@@ -1,6 +1,7 @@
 name=Selesnya Signet
 url=http://magiccards.info/query?q=%21Selesnya+Signet
 image=http://mtgimage.com/card/selesnya%20signet.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={2}

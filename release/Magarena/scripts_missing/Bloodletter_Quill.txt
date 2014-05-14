@@ -1,6 +1,7 @@
 name=Bloodletter Quill
 url=http://magiccards.info/query?q=%21Bloodletter+Quill
 image=http://mtgimage.com/card/bloodletter%20quill.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,7 @@
 name=Interpret the Signs
 url=http://magiccards.info/query?q=%21Interpret+the+Signs
 image=http://mtgimage.com/card/interpret%20the%20signs.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={5}{U}

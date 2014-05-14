@@ -1,6 +1,7 @@
 name=Sheltering Ancient
 url=http://magiccards.info/query?q=%21Sheltering+Ancient
 image=http://mtgimage.com/card/sheltering%20ancient.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Treefolk

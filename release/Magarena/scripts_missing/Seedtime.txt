@@ -1,6 +1,7 @@
 name=Seedtime
 url=http://magiccards.info/query?q=%21Seedtime
 image=http://mtgimage.com/card/seedtime.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{G}

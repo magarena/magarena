@@ -1,6 +1,7 @@
 name=Nantuko Blightcutter
 url=http://magiccards.info/query?q=%21Nantuko+Blightcutter
 image=http://mtgimage.com/card/nantuko%20blightcutter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Insect,Druid

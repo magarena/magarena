@@ -1,6 +1,7 @@
 name=Might of the Nephilim
 url=http://magiccards.info/query?q=%21Might+of+the+Nephilim
 image=http://mtgimage.com/card/might%20of%20the%20nephilim.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{G}

@@ -1,6 +1,7 @@
 name=Riptide Replicator
 url=http://magiccards.info/query?q=%21Riptide+Replicator
 image=http://mtgimage.com/card/riptide%20replicator.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={X}{4}

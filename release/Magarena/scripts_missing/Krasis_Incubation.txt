@@ -1,6 +1,7 @@
 name=Krasis Incubation
 url=http://magiccards.info/query?q=%21Krasis+Incubation
 image=http://mtgimage.com/card/krasis%20incubation.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Incendiary Command
 url=http://magiccards.info/query?q=%21Incendiary+Command
 image=http://mtgimage.com/card/incendiary%20command.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={3}{R}{R}

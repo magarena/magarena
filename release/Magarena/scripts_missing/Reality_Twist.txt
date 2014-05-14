@@ -1,6 +1,7 @@
 name=Reality Twist
 url=http://magiccards.info/query?q=%21Reality+Twist
 image=http://mtgimage.com/card/reality%20twist.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={U}{U}{U}

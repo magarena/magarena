@@ -1,6 +1,7 @@
 name=Mindstorm Crown
 url=http://magiccards.info/query?q=%21Mindstorm+Crown
 image=http://mtgimage.com/card/mindstorm%20crown.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

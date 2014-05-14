@@ -1,6 +1,7 @@
 name=Sphinx of Jwar Isle
 url=http://magiccards.info/query?q=%21Sphinx+of+Jwar+Isle
 image=http://mtgimage.com/card/sphinx%20of%20jwar%20isle.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Sphinx

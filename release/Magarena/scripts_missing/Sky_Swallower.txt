@@ -1,6 +1,7 @@
 name=Sky Swallower
 url=http://magiccards.info/query?q=%21Sky+Swallower
 image=http://mtgimage.com/card/sky%20swallower.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leviathan

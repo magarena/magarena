@@ -1,6 +1,7 @@
 name=Intervene
 url=http://magiccards.info/query?q=%21Intervene
 image=http://mtgimage.com/card/intervene.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

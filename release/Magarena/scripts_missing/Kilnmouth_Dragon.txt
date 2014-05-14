@@ -1,6 +1,7 @@
 name=Kilnmouth Dragon
 url=http://magiccards.info/query?q=%21Kilnmouth+Dragon
 image=http://mtgimage.com/card/kilnmouth%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

@@ -1,6 +1,7 @@
 name=Furnace Celebration
 url=http://magiccards.info/query?q=%21Furnace+Celebration
 image=http://mtgimage.com/card/furnace%20celebration.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{R}{R}

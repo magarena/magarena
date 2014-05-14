@@ -1,6 +1,7 @@
 name=Power Armor
 url=http://magiccards.info/query?q=%21Power+Armor
 image=http://mtgimage.com/card/power%20armor.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

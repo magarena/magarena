@@ -1,6 +1,7 @@
 name=Shape of the Wiitigo
 url=http://magiccards.info/query?q=%21Shape+of+the+Wiitigo
 image=http://mtgimage.com/card/shape%20of%20the%20wiitigo.jpg
+value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura

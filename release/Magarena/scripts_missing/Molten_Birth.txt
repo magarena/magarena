@@ -1,6 +1,7 @@
 name=Molten Birth
 url=http://magiccards.info/query?q=%21Molten+Birth
 image=http://mtgimage.com/card/molten%20birth.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}{R}

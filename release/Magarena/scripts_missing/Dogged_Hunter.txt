@@ -1,6 +1,7 @@
 name=Dogged Hunter
 url=http://magiccards.info/query?q=%21Dogged+Hunter
 image=http://mtgimage.com/card/dogged%20hunter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Nomad

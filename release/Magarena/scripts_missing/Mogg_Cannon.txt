@@ -1,6 +1,7 @@
 name=Mogg Cannon
 url=http://magiccards.info/query?q=%21Mogg+Cannon
 image=http://mtgimage.com/card/mogg%20cannon.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

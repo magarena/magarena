@@ -1,6 +1,7 @@
 name=Filth
 url=http://magiccards.info/query?q=%21Filth
 image=http://mtgimage.com/card/filth.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Incarnation

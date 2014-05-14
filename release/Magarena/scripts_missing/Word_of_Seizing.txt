@@ -1,6 +1,7 @@
 name=Word of Seizing
 url=http://magiccards.info/query?q=%21Word+of+Seizing
 image=http://mtgimage.com/card/word%20of%20seizing.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{R}{R}

@@ -1,6 +1,7 @@
 name=Hammer of Ruin
 url=http://magiccards.info/query?q=%21Hammer+of+Ruin
 image=http://mtgimage.com/card/hammer%20of%20ruin.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

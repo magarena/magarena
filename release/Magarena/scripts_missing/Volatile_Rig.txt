@@ -1,6 +1,7 @@
 name=Volatile Rig
 url=http://magiccards.info/query?q=%21Volatile+Rig
 image=http://mtgimage.com/card/volatile%20rig.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Construct

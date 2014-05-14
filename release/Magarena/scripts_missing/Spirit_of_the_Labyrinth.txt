@@ -1,6 +1,7 @@
 name=Spirit of the Labyrinth
 url=http://magiccards.info/query?q=%21Spirit+of+the+Labyrinth
 image=http://mtgimage.com/card/spirit%20of%20the%20labyrinth.jpg
+value=2.500
 rarity=R
 type=Enchantment,Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Knollspine Dragon
 url=http://magiccards.info/query?q=%21Knollspine+Dragon
 image=http://mtgimage.com/card/knollspine%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

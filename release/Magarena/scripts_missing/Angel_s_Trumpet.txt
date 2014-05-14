@@ -1,6 +1,7 @@
 name=Angel's Trumpet
 url=http://magiccards.info/query?q=%21Angel%27s+Trumpet
 image=http://mtgimage.com/card/angel%27s%20trumpet.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

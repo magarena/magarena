@@ -1,6 +1,7 @@
 name=Rhystic Circle
 url=http://magiccards.info/query?q=%21Rhystic+Circle
 image=http://mtgimage.com/card/rhystic%20circle.jpg
+value=2.500
 rarity=C
 type=Enchantment
 cost={2}{W}{W}

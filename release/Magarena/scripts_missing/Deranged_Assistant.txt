@@ -1,6 +1,7 @@
 name=Deranged Assistant
 url=http://magiccards.info/query?q=%21Deranged+Assistant
 image=http://mtgimage.com/card/deranged%20assistant.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

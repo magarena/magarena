@@ -1,6 +1,7 @@
 name=Festering Newt
 url=http://magiccards.info/query?q=%21Festering+Newt
 image=http://mtgimage.com/card/festering%20newt.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Salamander

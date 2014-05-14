@@ -1,6 +1,7 @@
 name=Uncle Istvan
 url=http://magiccards.info/query?q=%21Uncle+Istvan
 image=http://mtgimage.com/card/uncle%20istvan.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human

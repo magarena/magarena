@@ -1,6 +1,7 @@
 name=Thing from the Deep
 url=http://magiccards.info/query?q=%21Thing+from+the+Deep
 image=http://mtgimage.com/card/thing%20from%20the%20deep.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leviathan

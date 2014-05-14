@@ -1,6 +1,7 @@
 name=Tunnel Ignus
 url=http://magiccards.info/query?q=%21Tunnel+Ignus
 image=http://mtgimage.com/card/tunnel%20ignus.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

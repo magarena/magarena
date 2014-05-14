@@ -1,6 +1,7 @@
 name=Pyramids
 url=http://magiccards.info/query?q=%21Pyramids
 image=http://mtgimage.com/card/pyramids.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

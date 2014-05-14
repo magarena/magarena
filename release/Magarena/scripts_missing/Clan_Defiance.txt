@@ -1,6 +1,7 @@
 name=Clan Defiance
 url=http://magiccards.info/query?q=%21Clan+Defiance
 image=http://mtgimage.com/card/clan%20defiance.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}{G}

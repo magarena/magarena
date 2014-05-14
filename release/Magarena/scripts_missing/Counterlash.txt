@@ -1,6 +1,7 @@
 name=Counterlash
 url=http://magiccards.info/query?q=%21Counterlash
 image=http://mtgimage.com/card/counterlash.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={4}{U}{U}

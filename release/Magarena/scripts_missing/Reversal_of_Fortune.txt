@@ -1,6 +1,7 @@
 name=Reversal of Fortune
 url=http://magiccards.info/query?q=%21Reversal+of+Fortune
 image=http://mtgimage.com/card/reversal%20of%20fortune.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{R}{R}

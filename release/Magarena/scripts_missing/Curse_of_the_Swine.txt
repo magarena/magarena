@@ -1,6 +1,7 @@
 name=Curse of the Swine
 url=http://magiccards.info/query?q=%21Curse+of+the+Swine
 image=http://mtgimage.com/card/curse%20of%20the%20swine.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{U}{U}

@@ -1,6 +1,7 @@
 name=Corpse Lunge
 url=http://magiccards.info/query?q=%21Corpse+Lunge
 image=http://mtgimage.com/card/corpse%20lunge.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{B}

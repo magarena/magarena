@@ -1,6 +1,7 @@
 name=Omnath, Locus of Mana
 url=http://magiccards.info/query?q=%21Omnath%2C+Locus+of+Mana
 image=http://mtgimage.com/card/omnath%2C%20locus%20of%20mana.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Elemental

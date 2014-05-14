@@ -1,6 +1,7 @@
 name=Nefashu
 url=http://magiccards.info/query?q=%21Nefashu
 image=http://mtgimage.com/card/nefashu.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Mutant

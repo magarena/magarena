@@ -1,6 +1,7 @@
 name=Psychic Vortex
 url=http://magiccards.info/query?q=%21Psychic+Vortex
 image=http://mtgimage.com/card/psychic%20vortex.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}

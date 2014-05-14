@@ -1,6 +1,7 @@
 name=Chaosphere
 url=http://magiccards.info/query?q=%21Chaosphere
 image=http://mtgimage.com/card/chaosphere.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{R}

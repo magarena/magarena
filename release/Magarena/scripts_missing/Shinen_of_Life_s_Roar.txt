@@ -1,6 +1,7 @@
 name=Shinen of Life's Roar
 url=http://magiccards.info/query?q=%21Shinen+of+Life%27s+Roar
 image=http://mtgimage.com/card/shinen%20of%20life%27s%20roar.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

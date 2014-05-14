@@ -1,6 +1,7 @@
 name=Gatstaf Howler
 url=http://magiccards.info/query?q=%21Gatstaf+Howler
 image=http://mtgimage.com/card/gatstaf%20howler.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Werewolf

@@ -1,6 +1,7 @@
 name=Memory Plunder
 url=http://magiccards.info/query?q=%21Memory+Plunder
 image=http://mtgimage.com/card/memory%20plunder.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={U/B}{U/B}{U/B}{U/B}

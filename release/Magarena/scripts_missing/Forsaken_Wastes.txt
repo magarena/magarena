@@ -1,6 +1,7 @@
 name=Forsaken Wastes
 url=http://magiccards.info/query?q=%21Forsaken+Wastes
 image=http://mtgimage.com/card/forsaken%20wastes.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}

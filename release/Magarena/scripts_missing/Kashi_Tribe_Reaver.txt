@@ -1,6 +1,7 @@
 name=Kashi-Tribe Reaver
 url=http://magiccards.info/query?q=%21Kashi-Tribe+Reaver
 image=http://mtgimage.com/card/kashi-tribe%20reaver.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Snake,Warrior

@@ -1,6 +1,7 @@
 name=Fog Elemental
 url=http://magiccards.info/query?q=%21Fog+Elemental
 image=http://mtgimage.com/card/fog%20elemental.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elemental

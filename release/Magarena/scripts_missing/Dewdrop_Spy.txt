@@ -1,6 +1,7 @@
 name=Dewdrop Spy
 url=http://magiccards.info/query?q=%21Dewdrop+Spy
 image=http://mtgimage.com/card/dewdrop%20spy.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

@@ -1,6 +1,7 @@
 name=Aphetto Dredging
 url=http://magiccards.info/query?q=%21Aphetto+Dredging
 image=http://mtgimage.com/card/aphetto%20dredging.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{B}

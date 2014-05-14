@@ -1,6 +1,7 @@
 name=Glen Elendra Pranksters
 url=http://magiccards.info/query?q=%21Glen+Elendra+Pranksters
 image=http://mtgimage.com/card/glen%20elendra%20pranksters.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Faerie,Wizard

@@ -1,6 +1,7 @@
 name=Death Rattle
 url=http://magiccards.info/query?q=%21Death+Rattle
 image=http://mtgimage.com/card/death%20rattle.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={5}{B}

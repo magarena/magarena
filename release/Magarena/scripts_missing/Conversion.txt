@@ -1,6 +1,7 @@
 name=Conversion
 url=http://magiccards.info/query?q=%21Conversion
 image=http://mtgimage.com/card/conversion.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{W}{W}

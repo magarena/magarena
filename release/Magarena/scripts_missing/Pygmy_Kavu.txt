@@ -1,6 +1,7 @@
 name=Pygmy Kavu
 url=http://magiccards.info/query?q=%21Pygmy+Kavu
 image=http://mtgimage.com/card/pygmy%20kavu.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kavu

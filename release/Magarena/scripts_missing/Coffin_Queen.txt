@@ -1,6 +1,7 @@
 name=Coffin Queen
 url=http://magiccards.info/query?q=%21Coffin+Queen
 image=http://mtgimage.com/card/coffin%20queen.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Wizard

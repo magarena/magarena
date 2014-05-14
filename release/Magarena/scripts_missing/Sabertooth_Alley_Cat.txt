@@ -1,6 +1,7 @@
 name=Sabertooth Alley Cat
 url=http://magiccards.info/query?q=%21Sabertooth+Alley+Cat
 image=http://mtgimage.com/card/sabertooth%20alley%20cat.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Cat

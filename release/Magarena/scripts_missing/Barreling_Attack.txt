@@ -1,6 +1,7 @@
 name=Barreling Attack
 url=http://magiccards.info/query?q=%21Barreling+Attack
 image=http://mtgimage.com/card/barreling%20attack.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{R}{R}

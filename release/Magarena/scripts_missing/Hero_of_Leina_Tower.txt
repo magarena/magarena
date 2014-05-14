@@ -1,6 +1,7 @@
 name=Hero of Leina Tower
 url=http://magiccards.info/query?q=%21Hero+of+Leina+Tower
 image=http://mtgimage.com/card/hero%20of%20leina%20tower.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Warrior

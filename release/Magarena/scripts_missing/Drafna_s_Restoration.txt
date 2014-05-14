@@ -1,6 +1,7 @@
 name=Drafna's Restoration
 url=http://magiccards.info/query?q=%21Drafna%27s+Restoration
 image=http://mtgimage.com/card/drafna%27s%20restoration.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={U}

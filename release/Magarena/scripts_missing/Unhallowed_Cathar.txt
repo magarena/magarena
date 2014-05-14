@@ -1,6 +1,7 @@
 name=Unhallowed Cathar
 url=http://magiccards.info/query?q=%21Unhallowed+Cathar
 image=http://mtgimage.com/card/unhallowed%20cathar.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Soldier

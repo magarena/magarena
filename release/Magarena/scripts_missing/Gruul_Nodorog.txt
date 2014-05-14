@@ -1,6 +1,7 @@
 name=Gruul Nodorog
 url=http://magiccards.info/query?q=%21Gruul+Nodorog
 image=http://mtgimage.com/card/gruul%20nodorog.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

@@ -1,6 +1,7 @@
 name=Gang of Devils
 url=http://magiccards.info/query?q=%21Gang+of+Devils
 image=http://mtgimage.com/card/gang%20of%20devils.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Devil

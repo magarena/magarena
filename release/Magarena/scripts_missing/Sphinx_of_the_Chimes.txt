@@ -1,6 +1,7 @@
 name=Sphinx of the Chimes
 url=http://magiccards.info/query?q=%21Sphinx+of+the+Chimes
 image=http://mtgimage.com/card/sphinx%20of%20the%20chimes.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Sphinx

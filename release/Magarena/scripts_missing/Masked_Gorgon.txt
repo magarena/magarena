@@ -1,6 +1,7 @@
 name=Masked Gorgon
 url=http://magiccards.info/query?q=%21Masked+Gorgon
 image=http://mtgimage.com/card/masked%20gorgon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Gorgon

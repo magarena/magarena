@@ -1,6 +1,7 @@
 name=Twiddle
 url=http://magiccards.info/query?q=%21Twiddle
 image=http://mtgimage.com/card/twiddle.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={U}

@@ -1,6 +1,7 @@
 name=Scroll of Origins
 url=http://magiccards.info/query?q=%21Scroll+of+Origins
 image=http://mtgimage.com/card/scroll%20of%20origins.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Laquatus's Creativity
 url=http://magiccards.info/query?q=%21Laquatus%27s+Creativity
 image=http://mtgimage.com/card/laquatus%27s%20creativity.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={4}{U}

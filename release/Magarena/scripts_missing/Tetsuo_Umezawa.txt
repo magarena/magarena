@@ -1,6 +1,7 @@
 name=Tetsuo Umezawa
 url=http://magiccards.info/query?q=%21Tetsuo+Umezawa
 image=http://mtgimage.com/card/tetsuo%20umezawa.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Archer

@@ -1,6 +1,7 @@
 name=Rats of Rath
 url=http://magiccards.info/query?q=%21Rats+of+Rath
 image=http://mtgimage.com/card/rats%20of%20rath.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Rat

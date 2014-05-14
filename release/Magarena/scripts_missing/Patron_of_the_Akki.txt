@@ -1,6 +1,7 @@
 name=Patron of the Akki
 url=http://magiccards.info/query?q=%21Patron+of+the+Akki
 image=http://mtgimage.com/card/patron%20of%20the%20akki.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

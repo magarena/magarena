@@ -1,6 +1,7 @@
 name=Fight to the Death
 url=http://magiccards.info/query?q=%21Fight+to+the+Death
 image=http://mtgimage.com/card/fight%20to%20the%20death.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={R}{W}

@@ -1,6 +1,7 @@
 name=Umbra Stalker
 url=http://magiccards.info/query?q=%21Umbra+Stalker
 image=http://mtgimage.com/card/umbra%20stalker.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

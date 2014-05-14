@@ -1,6 +1,7 @@
 name=Willing
 url=http://magiccards.info/query?q=%21Willing
 image=http://mtgimage.com/card/readywilling.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{W}{B}

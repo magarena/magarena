@@ -1,6 +1,7 @@
 name=Banisher Priest
 url=http://magiccards.info/query?q=%21Banisher+Priest
 image=http://mtgimage.com/card/banisher%20priest.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

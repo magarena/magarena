@@ -1,6 +1,7 @@
 name=Twilight Shepherd
 url=http://magiccards.info/query?q=%21Twilight+Shepherd
 image=http://mtgimage.com/card/twilight%20shepherd.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

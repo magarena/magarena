@@ -1,6 +1,7 @@
 name=Blinkmoth Infusion
 url=http://magiccards.info/query?q=%21Blinkmoth+Infusion
 image=http://mtgimage.com/card/blinkmoth%20infusion.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={12}{U}{U}

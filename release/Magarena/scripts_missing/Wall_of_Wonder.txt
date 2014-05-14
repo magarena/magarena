@@ -1,6 +1,7 @@
 name=Wall of Wonder
 url=http://magiccards.info/query?q=%21Wall+of+Wonder
 image=http://mtgimage.com/card/wall%20of%20wonder.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Wall

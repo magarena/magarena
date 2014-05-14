@@ -1,6 +1,7 @@
 name=Mantle of Leadership
 url=http://magiccards.info/query?q=%21Mantle+of+Leadership
 image=http://mtgimage.com/card/mantle%20of%20leadership.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

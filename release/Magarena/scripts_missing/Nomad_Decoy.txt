@@ -1,6 +1,7 @@
 name=Nomad Decoy
 url=http://magiccards.info/query?q=%21Nomad+Decoy
 image=http://mtgimage.com/card/nomad%20decoy.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Nomad

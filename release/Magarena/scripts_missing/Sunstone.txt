@@ -1,6 +1,7 @@
 name=Sunstone
 url=http://magiccards.info/query?q=%21Sunstone
 image=http://mtgimage.com/card/sunstone.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={3}

@@ -1,6 +1,7 @@
 name=Sudden Demise
 url=http://magiccards.info/query?q=%21Sudden+Demise
 image=http://mtgimage.com/card/sudden%20demise.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={X}{R}

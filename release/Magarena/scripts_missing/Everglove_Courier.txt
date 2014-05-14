@@ -1,6 +1,7 @@
 name=Everglove Courier
 url=http://magiccards.info/query?q=%21Everglove+Courier
 image=http://mtgimage.com/card/everglove%20courier.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf

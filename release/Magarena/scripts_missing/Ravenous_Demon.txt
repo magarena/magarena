@@ -1,6 +1,7 @@
 name=Ravenous Demon
 url=http://magiccards.info/query?q=%21Ravenous+Demon
 image=http://mtgimage.com/card/ravenous%20demon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Demon

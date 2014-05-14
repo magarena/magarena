@@ -1,6 +1,7 @@
 name=Seer's Vision
 url=http://magiccards.info/query?q=%21Seer%27s+Vision
 image=http://mtgimage.com/card/seer%27s%20vision.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{U}{B}

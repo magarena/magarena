@@ -1,6 +1,7 @@
 name=Enraging Licid
 url=http://magiccards.info/query?q=%21Enraging+Licid
 image=http://mtgimage.com/card/enraging%20licid.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Licid

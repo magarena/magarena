@@ -1,6 +1,7 @@
 name=Feast or Famine
 url=http://magiccards.info/query?q=%21Feast+or+Famine
 image=http://mtgimage.com/card/feast%20or%20famine1.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={3}{B}

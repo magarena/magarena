@@ -1,6 +1,7 @@
 name=Aven Fateshaper
 url=http://magiccards.info/query?q=%21Aven+Fateshaper
 image=http://mtgimage.com/card/aven%20fateshaper.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Bird,Wizard

@@ -1,6 +1,7 @@
 name=Mijae Djinn
 url=http://magiccards.info/query?q=%21Mijae+Djinn
 image=http://mtgimage.com/card/mijae%20djinn.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Djinn

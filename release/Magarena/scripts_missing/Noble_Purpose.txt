@@ -1,6 +1,7 @@
 name=Noble Purpose
 url=http://magiccards.info/query?q=%21Noble+Purpose
 image=http://mtgimage.com/card/noble%20purpose.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={3}{W}{W}

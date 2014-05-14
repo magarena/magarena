@@ -1,6 +1,7 @@
 name=Cranial Extraction
 url=http://magiccards.info/query?q=%21Cranial+Extraction
 image=http://mtgimage.com/card/cranial%20extraction.jpg
+value=2.500
 rarity=R
 type=Sorcery
 subtype=Arcane

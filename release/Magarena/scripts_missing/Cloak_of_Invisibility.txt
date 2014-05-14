@@ -1,6 +1,7 @@
 name=Cloak of Invisibility
 url=http://magiccards.info/query?q=%21Cloak+of+Invisibility
 image=http://mtgimage.com/card/cloak%20of%20invisibility.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

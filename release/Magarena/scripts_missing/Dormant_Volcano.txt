@@ -1,6 +1,7 @@
 name=Dormant Volcano
 url=http://magiccards.info/query?q=%21Dormant+Volcano
 image=http://mtgimage.com/card/dormant%20volcano.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

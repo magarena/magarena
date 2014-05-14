@@ -1,6 +1,7 @@
 name=Iroas, God of Victory
 url=http://magiccards.info/query?q=%21Iroas%2C+God+of+Victory
 image=http://mtgimage.com/card/iroas%2C%20god%20of%20victory.jpg
+value=2.500
 rarity=M
 type=Enchantment,Creature
 subtype=God

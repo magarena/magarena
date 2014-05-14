@@ -1,6 +1,7 @@
 name=Lavinia of the Tenth
 url=http://magiccards.info/query?q=%21Lavinia+of+the+Tenth
 image=http://mtgimage.com/card/lavinia%20of%20the%20tenth.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

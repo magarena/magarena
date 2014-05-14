@@ -1,6 +1,7 @@
 name=Eon Hub
 url=http://magiccards.info/query?q=%21Eon+Hub
 image=http://mtgimage.com/card/eon%20hub.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

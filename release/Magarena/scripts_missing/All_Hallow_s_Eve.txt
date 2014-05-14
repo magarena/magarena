@@ -1,6 +1,7 @@
 name=All Hallow's Eve
 url=http://magiccards.info/query?q=%21All+Hallow%27s+Eve
 image=http://mtgimage.com/card/all%20hallow%27s%20eve.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={2}{B}{B}

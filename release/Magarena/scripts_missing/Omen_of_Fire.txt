@@ -1,6 +1,7 @@
 name=Omen of Fire
 url=http://magiccards.info/query?q=%21Omen+of+Fire
 image=http://mtgimage.com/card/omen%20of%20fire.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{R}{R}

@@ -1,6 +1,7 @@
 name=Stone Catapult
 url=http://magiccards.info/query?q=%21Stone+Catapult
 image=http://mtgimage.com/card/stone%20catapult.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Soldier

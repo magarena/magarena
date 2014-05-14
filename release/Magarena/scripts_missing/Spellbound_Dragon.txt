@@ -1,6 +1,7 @@
 name=Spellbound Dragon
 url=http://magiccards.info/query?q=%21Spellbound+Dragon
 image=http://mtgimage.com/card/spellbound%20dragon.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Dragon

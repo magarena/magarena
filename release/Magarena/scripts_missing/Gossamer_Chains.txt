@@ -1,6 +1,7 @@
 name=Gossamer Chains
 url=http://magiccards.info/query?q=%21Gossamer+Chains
 image=http://mtgimage.com/card/gossamer%20chains.jpg
+value=2.500
 rarity=C
 type=Enchantment
 cost={W}{W}

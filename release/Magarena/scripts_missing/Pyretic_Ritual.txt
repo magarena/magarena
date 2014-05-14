@@ -1,6 +1,7 @@
 name=Pyretic Ritual
 url=http://magiccards.info/query?q=%21Pyretic+Ritual
 image=http://mtgimage.com/card/pyretic%20ritual.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

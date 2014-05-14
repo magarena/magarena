@@ -1,6 +1,7 @@
 name=Helix Pinnacle
 url=http://magiccards.info/query?q=%21Helix+Pinnacle
 image=http://mtgimage.com/card/helix%20pinnacle.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={G}

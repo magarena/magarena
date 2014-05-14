@@ -1,6 +1,7 @@
 name=Urborg Uprising
 url=http://magiccards.info/query?q=%21Urborg+Uprising
 image=http://mtgimage.com/card/urborg%20uprising.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={4}{B}

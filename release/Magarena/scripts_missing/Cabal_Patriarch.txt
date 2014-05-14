@@ -1,6 +1,7 @@
 name=Cabal Patriarch
 url=http://magiccards.info/query?q=%21Cabal+Patriarch
 image=http://mtgimage.com/card/cabal%20patriarch.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

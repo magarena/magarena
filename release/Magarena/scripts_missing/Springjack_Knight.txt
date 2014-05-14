@@ -1,6 +1,7 @@
 name=Springjack Knight
 url=http://magiccards.info/query?q=%21Springjack+Knight
 image=http://mtgimage.com/card/springjack%20knight.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kithkin,Knight

@@ -1,6 +1,7 @@
 name=Reverse Damage
 url=http://magiccards.info/query?q=%21Reverse+Damage
 image=http://mtgimage.com/card/reverse%20damage.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{W}{W}

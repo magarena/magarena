@@ -1,6 +1,7 @@
 name=Devastating Summons
 url=http://magiccards.info/query?q=%21Devastating+Summons
 image=http://mtgimage.com/card/devastating%20summons.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={R}

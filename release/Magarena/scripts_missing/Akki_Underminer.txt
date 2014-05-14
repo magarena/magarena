@@ -1,6 +1,7 @@
 name=Akki Underminer
 url=http://magiccards.info/query?q=%21Akki+Underminer
 image=http://mtgimage.com/card/akki%20underminer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin,Rogue,Shaman

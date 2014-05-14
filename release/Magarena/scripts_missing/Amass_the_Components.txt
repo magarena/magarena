@@ -1,6 +1,7 @@
 name=Amass the Components
 url=http://magiccards.info/query?q=%21Amass+the+Components
 image=http://mtgimage.com/card/amass%20the%20components.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{U}

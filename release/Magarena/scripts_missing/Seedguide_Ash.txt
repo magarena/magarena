@@ -1,6 +1,7 @@
 name=Seedguide Ash
 url=http://magiccards.info/query?q=%21Seedguide+Ash
 image=http://mtgimage.com/card/seedguide%20ash.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Treefolk,Druid

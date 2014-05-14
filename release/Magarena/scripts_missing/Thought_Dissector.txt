@@ -1,6 +1,7 @@
 name=Thought Dissector
 url=http://magiccards.info/query?q=%21Thought+Dissector
 image=http://mtgimage.com/card/thought%20dissector.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

@@ -1,6 +1,7 @@
 name=Wormwood Dryad
 url=http://magiccards.info/query?q=%21Wormwood+Dryad
 image=http://mtgimage.com/card/wormwood%20dryad.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Dryad

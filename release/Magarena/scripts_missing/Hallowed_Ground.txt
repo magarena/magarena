@@ -1,6 +1,7 @@
 name=Hallowed Ground
 url=http://magiccards.info/query?q=%21Hallowed+Ground
 image=http://mtgimage.com/card/hallowed%20ground.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}

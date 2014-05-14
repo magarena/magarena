@@ -1,6 +1,7 @@
 name=Akroma's Devoted
 url=http://magiccards.info/query?q=%21Akroma%27s+Devoted
 image=http://mtgimage.com/card/akroma%27s%20devoted.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric

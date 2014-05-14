@@ -1,6 +1,7 @@
 name=Mirrorwood Treefolk
 url=http://magiccards.info/query?q=%21Mirrorwood+Treefolk
 image=http://mtgimage.com/card/mirrorwood%20treefolk.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Treefolk

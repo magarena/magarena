@@ -1,6 +1,7 @@
 name=Mounted Archers
 url=http://magiccards.info/query?q=%21Mounted+Archers
 image=http://mtgimage.com/card/mounted%20archers.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier,Archer

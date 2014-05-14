@@ -1,6 +1,7 @@
 name=Narcomoeba
 url=http://magiccards.info/query?q=%21Narcomoeba
 image=http://mtgimage.com/card/narcomoeba.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion

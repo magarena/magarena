@@ -1,6 +1,7 @@
 name=Tribal Forcemage
 url=http://magiccards.info/query?q=%21Tribal+Forcemage
 image=http://mtgimage.com/card/tribal%20forcemage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Wizard

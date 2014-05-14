@@ -1,6 +1,7 @@
 name=Iron-Heart Chimera
 url=http://magiccards.info/query?q=%21Iron-Heart+Chimera
 image=http://mtgimage.com/card/iron-heart%20chimera.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Chimera

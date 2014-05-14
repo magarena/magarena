@@ -1,6 +1,7 @@
 name=Howltooth Hollow
 url=http://magiccards.info/query?q=%21Howltooth+Hollow
 image=http://mtgimage.com/card/howltooth%20hollow.jpg
+value=2.500
 rarity=R
 type=Land
 ability=Hideaway;\

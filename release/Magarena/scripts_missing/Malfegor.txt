@@ -1,6 +1,7 @@
 name=Malfegor
 url=http://magiccards.info/query?q=%21Malfegor
 image=http://mtgimage.com/card/malfegor.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Demon,Dragon

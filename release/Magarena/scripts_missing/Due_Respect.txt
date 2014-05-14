@@ -1,6 +1,7 @@
 name=Due Respect
 url=http://magiccards.info/query?q=%21Due+Respect
 image=http://mtgimage.com/card/due%20respect.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}

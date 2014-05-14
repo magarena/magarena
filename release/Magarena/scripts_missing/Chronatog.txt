@@ -1,6 +1,7 @@
 name=Chronatog
 url=http://magiccards.info/query?q=%21Chronatog
 image=http://mtgimage.com/card/chronatog.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Atog

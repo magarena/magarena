@@ -1,6 +1,7 @@
 name=Contagion Clasp
 url=http://magiccards.info/query?q=%21Contagion+Clasp
 image=http://mtgimage.com/card/contagion%20clasp.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

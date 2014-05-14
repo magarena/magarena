@@ -1,6 +1,7 @@
 name=Petrified Plating
 url=http://magiccards.info/query?q=%21Petrified+Plating
 image=http://mtgimage.com/card/petrified%20plating.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

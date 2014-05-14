@@ -1,6 +1,7 @@
 name=Screams from Within
 url=http://magiccards.info/query?q=%21Screams+from+Within
 image=http://mtgimage.com/card/screams%20from%20within.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

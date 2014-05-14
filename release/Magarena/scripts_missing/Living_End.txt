@@ -1,6 +1,7 @@
 name=Living End
 url=http://magiccards.info/query?q=%21Living+End
 image=http://mtgimage.com/card/living%20end.jpg
+value=2.500
 rarity=R
 type=Sorcery
 effect=Suspend 3—{2}{B}{B};\

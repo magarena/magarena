@@ -1,6 +1,7 @@
 name=Rolling Stones
 url=http://magiccards.info/query?q=%21Rolling+Stones
 image=http://mtgimage.com/card/rolling%20stones.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}

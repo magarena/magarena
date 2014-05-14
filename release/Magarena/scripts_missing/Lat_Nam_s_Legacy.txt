@@ -1,6 +1,7 @@
 name=Lat-Nam's Legacy
 url=http://magiccards.info/query?q=%21Lat-Nam%27s+Legacy
 image=http://mtgimage.com/card/lat-nam%27s%20legacy1.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

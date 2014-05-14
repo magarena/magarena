@@ -1,6 +1,7 @@
 name=Skycloud Egg
 url=http://magiccards.info/query?q=%21Skycloud+Egg
 image=http://mtgimage.com/card/skycloud%20egg.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={1}

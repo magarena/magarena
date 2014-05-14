@@ -1,6 +1,7 @@
 name=Haunting Misery
 url=http://magiccards.info/query?q=%21Haunting+Misery
 image=http://mtgimage.com/card/haunting%20misery.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={1}{B}{B}

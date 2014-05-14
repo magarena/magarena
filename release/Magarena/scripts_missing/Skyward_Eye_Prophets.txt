@@ -1,6 +1,7 @@
 name=Skyward Eye Prophets
 url=http://magiccards.info/query?q=%21Skyward+Eye+Prophets
 image=http://mtgimage.com/card/skyward%20eye%20prophets.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

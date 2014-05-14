@@ -1,6 +1,7 @@
 name=Stalking Vengeance
 url=http://magiccards.info/query?q=%21Stalking+Vengeance
 image=http://mtgimage.com/card/stalking%20vengeance.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar

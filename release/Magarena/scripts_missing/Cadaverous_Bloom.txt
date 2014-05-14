@@ -1,6 +1,7 @@
 name=Cadaverous Bloom
 url=http://magiccards.info/query?q=%21Cadaverous+Bloom
 image=http://mtgimage.com/card/cadaverous%20bloom.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{B}{G}

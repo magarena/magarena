@@ -1,6 +1,7 @@
 name=Chameleon Spirit
 url=http://magiccards.info/query?q=%21Chameleon+Spirit
 image=http://mtgimage.com/card/chameleon%20spirit.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion,Spirit

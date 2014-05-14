@@ -1,6 +1,7 @@
 name=Kitsune Healer
 url=http://magiccards.info/query?q=%21Kitsune+Healer
 image=http://mtgimage.com/card/kitsune%20healer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Fox,Cleric

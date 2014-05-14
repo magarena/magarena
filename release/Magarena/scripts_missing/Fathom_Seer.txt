@@ -1,6 +1,7 @@
 name=Fathom Seer
 url=http://magiccards.info/query?q=%21Fathom+Seer
 image=http://mtgimage.com/card/fathom%20seer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Illusion

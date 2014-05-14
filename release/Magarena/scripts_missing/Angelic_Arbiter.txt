@@ -1,6 +1,7 @@
 name=Angelic Arbiter
 url=http://magiccards.info/query?q=%21Angelic+Arbiter
 image=http://mtgimage.com/card/angelic%20arbiter.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Angel

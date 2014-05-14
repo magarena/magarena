@@ -1,6 +1,7 @@
 name=Suffering
 url=http://magiccards.info/query?q=%21Suffering
 image=http://mtgimage.com/card/painsuffering.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={3}{R}

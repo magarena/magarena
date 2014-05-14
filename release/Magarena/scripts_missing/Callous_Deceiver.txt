@@ -1,6 +1,7 @@
 name=Callous Deceiver
 url=http://magiccards.info/query?q=%21Callous+Deceiver
 image=http://mtgimage.com/card/callous%20deceiver.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

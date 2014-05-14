@@ -1,6 +1,7 @@
 name=Mephitic Ooze
 url=http://magiccards.info/query?q=%21Mephitic+Ooze
 image=http://mtgimage.com/card/mephitic%20ooze.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Ooze

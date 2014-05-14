@@ -1,6 +1,7 @@
 name=Wand of Denial
 url=http://magiccards.info/query?q=%21Wand+of+Denial
 image=http://mtgimage.com/card/wand%20of%20denial.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

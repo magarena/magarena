@@ -1,6 +1,7 @@
 name=Forcefield
 url=http://magiccards.info/query?q=%21Forcefield
 image=http://mtgimage.com/card/forcefield.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={3}

@@ -1,6 +1,7 @@
 name=Nath's Elite
 url=http://magiccards.info/query?q=%21Nath%27s+Elite
 image=http://mtgimage.com/card/nath%27s%20elite.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Warrior

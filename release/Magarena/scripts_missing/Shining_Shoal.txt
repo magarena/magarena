@@ -1,6 +1,7 @@
 name=Shining Shoal
 url=http://magiccards.info/query?q=%21Shining+Shoal
 image=http://mtgimage.com/card/shining%20shoal.jpg
+value=2.500
 rarity=R
 type=Instant
 subtype=Arcane

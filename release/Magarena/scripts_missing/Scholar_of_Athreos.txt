@@ -1,6 +1,7 @@
 name=Scholar of Athreos
 url=http://magiccards.info/query?q=%21Scholar+of+Athreos
 image=http://mtgimage.com/card/scholar%20of%20athreos.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

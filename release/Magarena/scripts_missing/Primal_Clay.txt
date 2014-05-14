@@ -1,6 +1,7 @@
 name=Primal Clay
 url=http://magiccards.info/query?q=%21Primal+Clay
 image=http://mtgimage.com/card/primal%20clay.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Shapeshifter

@@ -1,6 +1,7 @@
 name=Prison Term
 url=http://magiccards.info/query?q=%21Prison+Term
 image=http://mtgimage.com/card/prison%20term.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

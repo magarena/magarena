@@ -1,6 +1,7 @@
 name=Natural Affinity
 url=http://magiccards.info/query?q=%21Natural+Affinity
 image=http://mtgimage.com/card/natural%20affinity.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={2}{G}

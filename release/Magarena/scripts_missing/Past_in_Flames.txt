@@ -1,6 +1,7 @@
 name=Past in Flames
 url=http://magiccards.info/query?q=%21Past+in+Flames
 image=http://mtgimage.com/card/past%20in%20flames.jpg
+value=2.500
 rarity=M
 type=Sorcery
 cost={3}{R}

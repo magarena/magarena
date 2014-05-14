@@ -1,6 +1,7 @@
 name=Ritual of the Returned
 url=http://magiccards.info/query?q=%21Ritual+of+the+Returned
 image=http://mtgimage.com/card/ritual%20of%20the%20returned.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={3}{B}

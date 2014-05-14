@@ -1,6 +1,7 @@
 name=Parallectric Feedback
 url=http://magiccards.info/query?q=%21Parallectric+Feedback
 image=http://mtgimage.com/card/parallectric%20feedback.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={3}{R}

@@ -1,6 +1,7 @@
 name=Reach of Branches
 url=http://magiccards.info/query?q=%21Reach+of+Branches
 image=http://mtgimage.com/card/reach%20of%20branches.jpg
+value=2.500
 rarity=R
 type=Tribal,Instant
 subtype=Treefolk

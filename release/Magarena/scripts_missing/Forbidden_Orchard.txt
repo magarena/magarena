@@ -1,6 +1,7 @@
 name=Forbidden Orchard
 url=http://magiccards.info/query?q=%21Forbidden+Orchard
 image=http://mtgimage.com/card/forbidden%20orchard.jpg
+value=2.500
 rarity=R
 type=Land
 ability={T}: Add one mana of any color to your mana pool.;\

@@ -1,6 +1,7 @@
 name=Mana Maze
 url=http://magiccards.info/query?q=%21Mana+Maze
 image=http://mtgimage.com/card/mana%20maze.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U}

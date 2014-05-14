@@ -1,6 +1,7 @@
 name=Precursor Golem
 url=http://magiccards.info/query?q=%21Precursor+Golem
 image=http://mtgimage.com/card/precursor%20golem.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem

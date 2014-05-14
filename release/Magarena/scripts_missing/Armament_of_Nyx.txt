@@ -1,6 +1,7 @@
 name=Armament of Nyx
 url=http://magiccards.info/query?q=%21Armament+of+Nyx
 image=http://mtgimage.com/card/armament%20of%20nyx.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

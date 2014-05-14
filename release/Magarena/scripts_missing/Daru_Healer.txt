@@ -1,6 +1,7 @@
 name=Daru Healer
 url=http://magiccards.info/query?q=%21Daru+Healer
 image=http://mtgimage.com/card/daru%20healer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Cleric

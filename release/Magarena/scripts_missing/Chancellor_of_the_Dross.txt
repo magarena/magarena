@@ -1,6 +1,7 @@
 name=Chancellor of the Dross
 url=http://magiccards.info/query?q=%21Chancellor+of+the+Dross
 image=http://mtgimage.com/card/chancellor%20of%20the%20dross.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Vampire

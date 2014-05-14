@@ -1,6 +1,7 @@
 name=Lava Hounds
 url=http://magiccards.info/query?q=%21Lava+Hounds
 image=http://mtgimage.com/card/lava%20hounds.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Hound

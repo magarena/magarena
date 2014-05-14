@@ -1,6 +1,7 @@
 name=Ashnod's Cylix
 url=http://magiccards.info/query?q=%21Ashnod%27s+Cylix
 image=http://mtgimage.com/card/ashnod%27s%20cylix.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

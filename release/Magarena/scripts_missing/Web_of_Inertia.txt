@@ -1,6 +1,7 @@
 name=Web of Inertia
 url=http://magiccards.info/query?q=%21Web+of+Inertia
 image=http://mtgimage.com/card/web%20of%20inertia.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{U}

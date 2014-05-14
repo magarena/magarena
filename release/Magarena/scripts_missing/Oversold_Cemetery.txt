@@ -1,6 +1,7 @@
 name=Oversold Cemetery
 url=http://magiccards.info/query?q=%21Oversold+Cemetery
 image=http://mtgimage.com/card/oversold%20cemetery.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{B}

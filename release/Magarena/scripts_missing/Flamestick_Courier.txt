@@ -1,6 +1,7 @@
 name=Flamestick Courier
 url=http://magiccards.info/query?q=%21Flamestick+Courier
 image=http://mtgimage.com/card/flamestick%20courier.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin

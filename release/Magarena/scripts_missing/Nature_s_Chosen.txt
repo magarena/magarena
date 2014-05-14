@@ -1,6 +1,7 @@
 name=Nature's Chosen
 url=http://magiccards.info/query?q=%21Nature%27s+Chosen
 image=http://mtgimage.com/card/nature%27s%20chosen.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

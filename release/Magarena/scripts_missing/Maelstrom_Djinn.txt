@@ -1,6 +1,7 @@
 name=Maelstrom Djinn
 url=http://magiccards.info/query?q=%21Maelstrom+Djinn
 image=http://mtgimage.com/card/maelstrom%20djinn.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Djinn

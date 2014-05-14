@@ -1,6 +1,7 @@
 name=Bargaining Table
 url=http://magiccards.info/query?q=%21Bargaining+Table
 image=http://mtgimage.com/card/bargaining%20table.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

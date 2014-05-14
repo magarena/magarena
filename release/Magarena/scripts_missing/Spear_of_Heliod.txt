@@ -1,6 +1,7 @@
 name=Spear of Heliod
 url=http://magiccards.info/query?q=%21Spear+of+Heliod
 image=http://mtgimage.com/card/spear%20of%20heliod.jpg
+value=2.500
 rarity=R
 type=Enchantment,Artifact
 cost={1}{W}{W}

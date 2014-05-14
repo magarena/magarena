@@ -1,6 +1,7 @@
 name=Grinning Totem
 url=http://magiccards.info/query?q=%21Grinning+Totem
 image=http://mtgimage.com/card/grinning%20totem.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

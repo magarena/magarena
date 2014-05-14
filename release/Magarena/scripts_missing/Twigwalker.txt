@@ -1,6 +1,7 @@
 name=Twigwalker
 url=http://magiccards.info/query?q=%21Twigwalker
 image=http://mtgimage.com/card/twigwalker.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Insect

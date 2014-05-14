@@ -1,6 +1,7 @@
 name=Jund Sojourners
 url=http://magiccards.info/query?q=%21Jund+Sojourners
 image=http://mtgimage.com/card/jund%20sojourners.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Viashino,Shaman

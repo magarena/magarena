@@ -1,6 +1,7 @@
 name=Archetype of Endurance
 url=http://magiccards.info/query?q=%21Archetype+of+Endurance
 image=http://mtgimage.com/card/archetype%20of%20endurance.jpg
+value=2.500
 rarity=U
 type=Enchantment,Creature
 subtype=Boar

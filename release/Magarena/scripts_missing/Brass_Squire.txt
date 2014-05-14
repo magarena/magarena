@@ -1,6 +1,7 @@
 name=Brass Squire
 url=http://magiccards.info/query?q=%21Brass+Squire
 image=http://mtgimage.com/card/brass%20squire.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Myr

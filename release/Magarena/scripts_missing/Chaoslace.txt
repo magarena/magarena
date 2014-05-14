@@ -1,6 +1,7 @@
 name=Chaoslace
 url=http://magiccards.info/query?q=%21Chaoslace
 image=http://mtgimage.com/card/chaoslace.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={R}

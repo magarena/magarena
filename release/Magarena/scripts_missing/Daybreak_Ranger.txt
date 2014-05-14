@@ -1,6 +1,7 @@
 name=Daybreak Ranger
 url=http://magiccards.info/query?q=%21Daybreak+Ranger
 image=http://mtgimage.com/card/daybreak%20ranger.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Archer,Werewolf

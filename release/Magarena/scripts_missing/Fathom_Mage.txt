@@ -1,6 +1,7 @@
 name=Fathom Mage
 url=http://magiccards.info/query?q=%21Fathom+Mage
 image=http://mtgimage.com/card/fathom%20mage.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

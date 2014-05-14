@@ -1,6 +1,7 @@
 name=Shattered Dreams
 url=http://magiccards.info/query?q=%21Shattered+Dreams
 image=http://mtgimage.com/card/shattered%20dreams.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={B}

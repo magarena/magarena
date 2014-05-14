@@ -1,6 +1,7 @@
 name=Goblin Diplomats
 url=http://magiccards.info/query?q=%21Goblin+Diplomats
 image=http://mtgimage.com/card/goblin%20diplomats.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Goblin

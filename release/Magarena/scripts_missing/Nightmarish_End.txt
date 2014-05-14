@@ -1,6 +1,7 @@
 name=Nightmarish End
 url=http://magiccards.info/query?q=%21Nightmarish+End
 image=http://mtgimage.com/card/nightmarish%20end.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{B}

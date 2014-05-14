@@ -1,6 +1,7 @@
 name=Timbermaw Larva
 url=http://magiccards.info/query?q=%21Timbermaw+Larva
 image=http://mtgimage.com/card/timbermaw%20larva.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

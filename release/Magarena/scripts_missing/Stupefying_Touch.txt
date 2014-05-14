@@ -1,6 +1,7 @@
 name=Stupefying Touch
 url=http://magiccards.info/query?q=%21Stupefying+Touch
 image=http://mtgimage.com/card/stupefying%20touch.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

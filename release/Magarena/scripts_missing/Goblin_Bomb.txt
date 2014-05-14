@@ -1,6 +1,7 @@
 name=Goblin Bomb
 url=http://magiccards.info/query?q=%21Goblin+Bomb
 image=http://mtgimage.com/card/goblin%20bomb.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{R}

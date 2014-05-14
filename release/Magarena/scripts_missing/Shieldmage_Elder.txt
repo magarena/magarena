@@ -1,6 +1,7 @@
 name=Shieldmage Elder
 url=http://magiccards.info/query?q=%21Shieldmage+Elder
 image=http://mtgimage.com/card/shieldmage%20elder.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric,Wizard

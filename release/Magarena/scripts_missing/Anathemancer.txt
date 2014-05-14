@@ -1,6 +1,7 @@
 name=Anathemancer
 url=http://magiccards.info/query?q=%21Anathemancer
 image=http://mtgimage.com/card/anathemancer.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

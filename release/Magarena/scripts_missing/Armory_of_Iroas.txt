@@ -1,6 +1,7 @@
 name=Armory of Iroas
 url=http://magiccards.info/query?q=%21Armory+of+Iroas
 image=http://mtgimage.com/card/armory%20of%20iroas.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment

@@ -1,6 +1,7 @@
 name=Kumano's Pupils
 url=http://magiccards.info/query?q=%21Kumano%27s+Pupils
 image=http://mtgimage.com/card/kumano%27s%20pupils.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Shaman

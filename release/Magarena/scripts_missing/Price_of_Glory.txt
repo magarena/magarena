@@ -1,6 +1,7 @@
 name=Price of Glory
 url=http://magiccards.info/query?q=%21Price+of+Glory
 image=http://mtgimage.com/card/price%20of%20glory.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={2}{R}

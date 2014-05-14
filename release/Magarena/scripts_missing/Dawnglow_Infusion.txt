@@ -1,6 +1,7 @@
 name=Dawnglow Infusion
 url=http://magiccards.info/query?q=%21Dawnglow+Infusion
 image=http://mtgimage.com/card/dawnglow%20infusion.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={X}{G/W}

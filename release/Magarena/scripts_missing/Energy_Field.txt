@@ -1,6 +1,7 @@
 name=Energy Field
 url=http://magiccards.info/query?q=%21Energy+Field
 image=http://mtgimage.com/card/energy%20field.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{U}

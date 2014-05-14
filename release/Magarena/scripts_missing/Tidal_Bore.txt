@@ -1,6 +1,7 @@
 name=Tidal Bore
 url=http://magiccards.info/query?q=%21Tidal+Bore
 image=http://mtgimage.com/card/tidal%20bore.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

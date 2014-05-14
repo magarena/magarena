@@ -1,6 +1,7 @@
 name=Solitary Confinement
 url=http://magiccards.info/query?q=%21Solitary+Confinement
 image=http://mtgimage.com/card/solitary%20confinement.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}

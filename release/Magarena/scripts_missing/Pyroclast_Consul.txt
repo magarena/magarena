@@ -1,6 +1,7 @@
 name=Pyroclast Consul
 url=http://magiccards.info/query?q=%21Pyroclast+Consul
 image=http://mtgimage.com/card/pyroclast%20consul.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental,Shaman

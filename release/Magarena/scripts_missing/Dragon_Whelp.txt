@@ -1,6 +1,7 @@
 name=Dragon Whelp
 url=http://magiccards.info/query?q=%21Dragon+Whelp
 image=http://mtgimage.com/card/dragon%20whelp.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Dragon

@@ -1,6 +1,7 @@
 name=Alaborn Veteran
 url=http://magiccards.info/query?q=%21Alaborn+Veteran
 image=http://mtgimage.com/card/alaborn%20veteran.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight

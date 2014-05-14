@@ -1,6 +1,7 @@
 name=Ayumi, the Last Visitor
 url=http://magiccards.info/query?q=%21Ayumi%2C+the+Last+Visitor
 image=http://mtgimage.com/card/ayumi%2C%20the%20last%20visitor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

@@ -1,6 +1,7 @@
 name=Soulscour
 url=http://magiccards.info/query?q=%21Soulscour
 image=http://mtgimage.com/card/soulscour.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={7}{W}{W}{W}

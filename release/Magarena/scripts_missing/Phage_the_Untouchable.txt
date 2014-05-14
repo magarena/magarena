@@ -1,6 +1,7 @@
 name=Phage the Untouchable
 url=http://magiccards.info/query?q=%21Phage+the+Untouchable
 image=http://mtgimage.com/card/phage%20the%20untouchable.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Minion

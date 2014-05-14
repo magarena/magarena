@@ -1,6 +1,7 @@
 name=Hipparion
 url=http://magiccards.info/query?q=%21Hipparion
 image=http://mtgimage.com/card/hipparion.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Horse

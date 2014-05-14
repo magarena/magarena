@@ -1,6 +1,7 @@
 name=Witch Engine
 url=http://magiccards.info/query?q=%21Witch+Engine
 image=http://mtgimage.com/card/witch%20engine.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Horror

@@ -1,6 +1,7 @@
 name=Personal Sanctuary
 url=http://magiccards.info/query?q=%21Personal+Sanctuary
 image=http://mtgimage.com/card/personal%20sanctuary.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}

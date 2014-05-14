@@ -1,6 +1,7 @@
 name=Coat of Arms
 url=http://magiccards.info/query?q=%21Coat+of+Arms
 image=http://mtgimage.com/card/coat%20of%20arms.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={5}

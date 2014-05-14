@@ -1,6 +1,7 @@
 name=Svyelunite Temple
 url=http://magiccards.info/query?q=%21Svyelunite+Temple
 image=http://mtgimage.com/card/svyelunite%20temple.jpg
+value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\

@@ -1,6 +1,7 @@
 name=Cloudchaser Kestrel
 url=http://magiccards.info/query?q=%21Cloudchaser+Kestrel
 image=http://mtgimage.com/card/cloudchaser%20kestrel.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Bird

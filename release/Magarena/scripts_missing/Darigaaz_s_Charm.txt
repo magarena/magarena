@@ -1,6 +1,7 @@
 name=Darigaaz's Charm
 url=http://magiccards.info/query?q=%21Darigaaz%27s+Charm
 image=http://mtgimage.com/card/darigaaz%27s%20charm.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={B}{R}{G}

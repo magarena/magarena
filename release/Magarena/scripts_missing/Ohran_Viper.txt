@@ -1,6 +1,7 @@
 name=Ohran Viper
 url=http://magiccards.info/query?q=%21Ohran+Viper
 image=http://mtgimage.com/card/ohran%20viper.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Snake

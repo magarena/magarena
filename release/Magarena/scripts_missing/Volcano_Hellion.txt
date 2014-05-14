@@ -1,6 +1,7 @@
 name=Volcano Hellion
 url=http://magiccards.info/query?q=%21Volcano+Hellion
 image=http://mtgimage.com/card/volcano%20hellion.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Hellion

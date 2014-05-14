@@ -1,6 +1,7 @@
 name=Destructive Urge
 url=http://magiccards.info/query?q=%21Destructive+Urge
 image=http://mtgimage.com/card/destructive%20urge.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

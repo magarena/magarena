@@ -1,6 +1,7 @@
 name=Phantasmagorian
 url=http://magiccards.info/query?q=%21Phantasmagorian
 image=http://mtgimage.com/card/phantasmagorian.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Horror

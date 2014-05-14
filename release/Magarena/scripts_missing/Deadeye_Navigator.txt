@@ -1,6 +1,7 @@
 name=Deadeye Navigator
 url=http://magiccards.info/query?q=%21Deadeye+Navigator
 image=http://mtgimage.com/card/deadeye%20navigator.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Spirit

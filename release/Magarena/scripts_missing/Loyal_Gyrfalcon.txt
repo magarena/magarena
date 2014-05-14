@@ -1,6 +1,7 @@
 name=Loyal Gyrfalcon
 url=http://magiccards.info/query?q=%21Loyal+Gyrfalcon
 image=http://mtgimage.com/card/loyal%20gyrfalcon.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Bird

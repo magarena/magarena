@@ -1,6 +1,7 @@
 name=Krond the Dawn-Clad
 url=http://magiccards.info/query?q=%21Krond+the+Dawn-Clad
 image=http://mtgimage.com/card/krond%20the%20dawn-clad.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Archon

@@ -1,6 +1,7 @@
 name=Scorching Winds
 url=http://magiccards.info/query?q=%21Scorching+Winds
 image=http://mtgimage.com/card/scorching%20winds.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={R}

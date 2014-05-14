@@ -1,6 +1,7 @@
 name=Gruul Turf
 url=http://magiccards.info/query?q=%21Gruul+Turf
 image=http://mtgimage.com/card/gruul%20turf.jpg
+value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\

@@ -1,6 +1,7 @@
 name=Brutalizer Exarch
 url=http://magiccards.info/query?q=%21Brutalizer+Exarch
 image=http://mtgimage.com/card/brutalizer%20exarch.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Cleric

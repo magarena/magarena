@@ -1,6 +1,7 @@
 name=Telling Time
 url=http://magiccards.info/query?q=%21Telling+Time
 image=http://mtgimage.com/card/telling%20time.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{U}

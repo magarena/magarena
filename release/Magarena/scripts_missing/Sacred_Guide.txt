@@ -1,6 +1,7 @@
 name=Sacred Guide
 url=http://magiccards.info/query?q=%21Sacred+Guide
 image=http://mtgimage.com/card/sacred%20guide.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

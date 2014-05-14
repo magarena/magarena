@@ -1,6 +1,7 @@
 name=Fluctuator
 url=http://magiccards.info/query?q=%21Fluctuator
 image=http://mtgimage.com/card/fluctuator.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Possessed Centaur
 url=http://magiccards.info/query?q=%21Possessed+Centaur
 image=http://mtgimage.com/card/possessed%20centaur.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Centaur,Horror

@@ -1,6 +1,7 @@
 name=Grazing Kelpie
 url=http://magiccards.info/query?q=%21Grazing+Kelpie
 image=http://mtgimage.com/card/grazing%20kelpie.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

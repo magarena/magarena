@@ -1,6 +1,7 @@
 name=Flame Javelin
 url=http://magiccards.info/query?q=%21Flame+Javelin
 image=http://mtgimage.com/card/flame%20javelin.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2/R}{2/R}{2/R}

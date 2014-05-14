@@ -1,6 +1,7 @@
 name=Roots of Life
 url=http://magiccards.info/query?q=%21Roots+of+Life
 image=http://mtgimage.com/card/roots%20of%20life.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{G}{G}

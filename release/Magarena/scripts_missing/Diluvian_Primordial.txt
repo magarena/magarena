@@ -1,6 +1,7 @@
 name=Diluvian Primordial
 url=http://magiccards.info/query?q=%21Diluvian+Primordial
 image=http://mtgimage.com/card/diluvian%20primordial.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Avatar

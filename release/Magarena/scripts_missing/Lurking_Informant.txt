@@ -1,6 +1,7 @@
 name=Lurking Informant
 url=http://magiccards.info/query?q=%21Lurking+Informant
 image=http://mtgimage.com/card/lurking%20informant.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Rogue

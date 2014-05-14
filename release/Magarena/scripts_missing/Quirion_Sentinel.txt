@@ -1,6 +1,7 @@
 name=Quirion Sentinel
 url=http://magiccards.info/query?q=%21Quirion+Sentinel
 image=http://mtgimage.com/card/quirion%20sentinel.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Druid

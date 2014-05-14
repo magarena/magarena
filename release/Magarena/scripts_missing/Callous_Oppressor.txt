@@ -1,6 +1,7 @@
 name=Callous Oppressor
 url=http://magiccards.info/query?q=%21Callous+Oppressor
 image=http://mtgimage.com/card/callous%20oppressor.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Cephalid

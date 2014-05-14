@@ -1,6 +1,7 @@
 name=Vicious Shadows
 url=http://magiccards.info/query?q=%21Vicious+Shadows
 image=http://mtgimage.com/card/vicious%20shadows.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={6}{R}

@@ -1,6 +1,7 @@
 name=Soulcatchers' Aerie
 url=http://magiccards.info/query?q=%21Soulcatchers%27+Aerie
 image=http://mtgimage.com/card/soulcatchers%27%20aerie.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}

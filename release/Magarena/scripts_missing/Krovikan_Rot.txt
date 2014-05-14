@@ -1,6 +1,7 @@
 name=Krovikan Rot
 url=http://magiccards.info/query?q=%21Krovikan+Rot
 image=http://mtgimage.com/card/krovikan%20rot.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={2}{B}

@@ -1,6 +1,7 @@
 name=Adarkar Windform
 url=http://magiccards.info/query?q=%21Adarkar+Windform
 image=http://mtgimage.com/card/adarkar%20windform.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion

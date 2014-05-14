@@ -1,6 +1,7 @@
 name=Gleam of Resistance
 url=http://magiccards.info/query?q=%21Gleam+of+Resistance
 image=http://mtgimage.com/card/gleam%20of%20resistance.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={4}{W}

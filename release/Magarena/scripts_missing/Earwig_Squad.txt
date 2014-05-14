@@ -1,6 +1,7 @@
 name=Earwig Squad
 url=http://magiccards.info/query?q=%21Earwig+Squad
 image=http://mtgimage.com/card/earwig%20squad.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Goblin,Rogue

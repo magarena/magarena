@@ -1,6 +1,7 @@
 name=Augury Adept
 url=http://magiccards.info/query?q=%21Augury+Adept
 image=http://mtgimage.com/card/augury%20adept.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Kithkin,Wizard

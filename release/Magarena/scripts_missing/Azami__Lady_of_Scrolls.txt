@@ -1,6 +1,7 @@
 name=Azami, Lady of Scrolls
 url=http://magiccards.info/query?q=%21Azami%2C+Lady+of+Scrolls
 image=http://mtgimage.com/card/azami%2C%20lady%20of%20scrolls.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard

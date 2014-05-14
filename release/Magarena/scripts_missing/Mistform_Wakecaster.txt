@@ -1,6 +1,7 @@
 name=Mistform Wakecaster
 url=http://magiccards.info/query?q=%21Mistform+Wakecaster
 image=http://mtgimage.com/card/mistform%20wakecaster.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Illusion

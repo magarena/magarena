@@ -1,6 +1,7 @@
 name=Traproot Kami
 url=http://magiccards.info/query?q=%21Traproot+Kami
 image=http://mtgimage.com/card/traproot%20kami.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

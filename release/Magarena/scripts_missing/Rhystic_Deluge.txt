@@ -1,6 +1,7 @@
 name=Rhystic Deluge
 url=http://magiccards.info/query?q=%21Rhystic+Deluge
 image=http://mtgimage.com/card/rhystic%20deluge.jpg
+value=2.500
 rarity=C
 type=Enchantment
 cost={2}{U}

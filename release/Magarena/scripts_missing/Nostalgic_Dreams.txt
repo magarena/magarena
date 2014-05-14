@@ -1,6 +1,7 @@
 name=Nostalgic Dreams
 url=http://magiccards.info/query?q=%21Nostalgic+Dreams
 image=http://mtgimage.com/card/nostalgic%20dreams.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={G}{G}

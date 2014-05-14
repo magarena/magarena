@@ -1,6 +1,7 @@
 name=Kiku, Night's Flower
 url=http://magiccards.info/query?q=%21Kiku%2C+Night%27s+Flower
 image=http://mtgimage.com/card/kiku%2C%20night%27s%20flower.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Assassin

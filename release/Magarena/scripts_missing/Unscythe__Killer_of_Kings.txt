@@ -1,6 +1,7 @@
 name=Unscythe, Killer of Kings
 url=http://magiccards.info/query?q=%21Unscythe%2C+Killer+of+Kings
 image=http://mtgimage.com/card/unscythe%2C%20killer%20of%20kings.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

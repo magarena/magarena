@@ -1,6 +1,7 @@
 name=Locust Miser
 url=http://magiccards.info/query?q=%21Locust+Miser
 image=http://mtgimage.com/card/locust%20miser.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Rat,Shaman

@@ -1,6 +1,7 @@
 name=Kitsune Mystic
 url=http://magiccards.info/query?q=%21Kitsune+Mystic
 image=http://mtgimage.com/card/kitsune%20mystic.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Fox,Wizard

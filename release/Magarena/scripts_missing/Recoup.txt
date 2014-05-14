@@ -1,6 +1,7 @@
 name=Recoup
 url=http://magiccards.info/query?q=%21Recoup
 image=http://mtgimage.com/card/recoup.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}

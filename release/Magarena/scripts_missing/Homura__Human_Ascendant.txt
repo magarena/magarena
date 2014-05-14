@@ -1,6 +1,7 @@
 name=Homura, Human Ascendant
 url=http://magiccards.info/query?q=%21Homura%2C+Human+Ascendant
 image=http://mtgimage.com/card/homura%2C%20human%20ascendant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Monk

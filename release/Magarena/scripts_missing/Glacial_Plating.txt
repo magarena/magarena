@@ -1,6 +1,7 @@
 name=Glacial Plating
 url=http://magiccards.info/query?q=%21Glacial+Plating
 image=http://mtgimage.com/card/glacial%20plating.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura

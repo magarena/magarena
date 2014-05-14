@@ -1,6 +1,7 @@
 name=Jinxed Idol
 url=http://magiccards.info/query?q=%21Jinxed+Idol
 image=http://mtgimage.com/card/jinxed%20idol.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={2}

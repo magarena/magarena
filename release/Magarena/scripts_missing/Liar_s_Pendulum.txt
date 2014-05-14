@@ -1,6 +1,7 @@
 name=Liar's Pendulum
 url=http://magiccards.info/query?q=%21Liar%27s+Pendulum
 image=http://mtgimage.com/card/liar%27s%20pendulum.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

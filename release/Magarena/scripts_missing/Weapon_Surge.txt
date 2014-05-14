@@ -1,6 +1,7 @@
 name=Weapon Surge
 url=http://magiccards.info/query?q=%21Weapon+Surge
 image=http://mtgimage.com/card/weapon%20surge.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={R}

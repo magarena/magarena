@@ -1,6 +1,7 @@
 name=Whirling Dervish
 url=http://magiccards.info/query?q=%21Whirling+Dervish
 image=http://mtgimage.com/card/whirling%20dervish.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Monk

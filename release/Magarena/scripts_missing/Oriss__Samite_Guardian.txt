@@ -1,6 +1,7 @@
 name=Oriss, Samite Guardian
 url=http://magiccards.info/query?q=%21Oriss%2C+Samite+Guardian
 image=http://mtgimage.com/card/oriss%2C%20samite%20guardian.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Cleric

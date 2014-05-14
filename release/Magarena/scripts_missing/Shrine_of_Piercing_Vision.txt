@@ -1,6 +1,7 @@
 name=Shrine of Piercing Vision
 url=http://magiccards.info/query?q=%21Shrine+of+Piercing+Vision
 image=http://mtgimage.com/card/shrine%20of%20piercing%20vision.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={2}

@@ -1,6 +1,7 @@
 name=Well
 url=http://magiccards.info/query?q=%21Well
 image=http://mtgimage.com/card/alivewell.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={W}

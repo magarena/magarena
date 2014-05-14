@@ -1,6 +1,7 @@
 name=Mishra's Groundbreaker
 url=http://magiccards.info/query?q=%21Mishra%27s+Groundbreaker
 image=http://mtgimage.com/card/mishra%27s%20groundbreaker.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

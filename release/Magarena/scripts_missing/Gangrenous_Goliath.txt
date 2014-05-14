@@ -1,6 +1,7 @@
 name=Gangrenous Goliath
 url=http://magiccards.info/query?q=%21Gangrenous+Goliath
 image=http://mtgimage.com/card/gangrenous%20goliath.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie,Giant

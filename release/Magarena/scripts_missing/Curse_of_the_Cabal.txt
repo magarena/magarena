@@ -1,6 +1,7 @@
 name=Curse of the Cabal
 url=http://magiccards.info/query?q=%21Curse+of+the+Cabal
 image=http://mtgimage.com/card/curse%20of%20the%20cabal.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={9}{B}

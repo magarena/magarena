@@ -1,6 +1,7 @@
 name=Sealock Monster
 url=http://magiccards.info/query?q=%21Sealock+Monster
 image=http://mtgimage.com/card/sealock%20monster.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Octopus

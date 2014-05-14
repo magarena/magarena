@@ -1,6 +1,7 @@
 name=Soul Conduit
 url=http://magiccards.info/query?q=%21Soul+Conduit
 image=http://mtgimage.com/card/soul%20conduit.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={6}

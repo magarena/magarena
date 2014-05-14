@@ -1,6 +1,7 @@
 name=Spirit en-Kor
 url=http://magiccards.info/query?q=%21Spirit+en-Kor
 image=http://mtgimage.com/card/spirit%20en-kor.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Kor,Spirit

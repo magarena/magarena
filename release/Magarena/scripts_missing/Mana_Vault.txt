@@ -1,6 +1,7 @@
 name=Mana Vault
 url=http://magiccards.info/query?q=%21Mana+Vault
 image=http://mtgimage.com/card/mana%20vault.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={1}

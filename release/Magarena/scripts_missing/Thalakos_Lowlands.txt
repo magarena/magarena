@@ -1,6 +1,7 @@
 name=Thalakos Lowlands
 url=http://magiccards.info/query?q=%21Thalakos+Lowlands
 image=http://mtgimage.com/card/thalakos%20lowlands.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\

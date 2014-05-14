@@ -1,6 +1,7 @@
 name=Unexpectedly Absent
 url=http://magiccards.info/query?q=%21Unexpectedly+Absent
 image=http://mtgimage.com/card/unexpectedly%20absent.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={X}{W}{W}

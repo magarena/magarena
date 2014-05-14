@@ -1,6 +1,7 @@
 name=Stonehewer Giant
 url=http://magiccards.info/query?q=%21Stonehewer+Giant
 image=http://mtgimage.com/card/stonehewer%20giant.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Giant,Warrior

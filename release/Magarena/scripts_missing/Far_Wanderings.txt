@@ -1,6 +1,7 @@
 name=Far Wanderings
 url=http://magiccards.info/query?q=%21Far+Wanderings
 image=http://mtgimage.com/card/far%20wanderings.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={2}{G}

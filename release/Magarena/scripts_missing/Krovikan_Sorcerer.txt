@@ -1,6 +1,7 @@
 name=Krovikan Sorcerer
 url=http://magiccards.info/query?q=%21Krovikan+Sorcerer
 image=http://mtgimage.com/card/krovikan%20sorcerer.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Wizard

@@ -1,6 +1,7 @@
 name=Prismatic Omen
 url=http://magiccards.info/query?q=%21Prismatic+Omen
 image=http://mtgimage.com/card/prismatic%20omen.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={1}{G}

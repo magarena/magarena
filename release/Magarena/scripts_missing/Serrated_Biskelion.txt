@@ -1,6 +1,7 @@
 name=Serrated Biskelion
 url=http://magiccards.info/query?q=%21Serrated+Biskelion
 image=http://mtgimage.com/card/serrated%20biskelion.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Construct

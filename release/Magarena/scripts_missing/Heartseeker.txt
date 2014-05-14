@@ -1,6 +1,7 @@
 name=Heartseeker
 url=http://magiccards.info/query?q=%21Heartseeker
 image=http://mtgimage.com/card/heartseeker.jpg
+value=2.500
 rarity=R
 type=Artifact
 subtype=Equipment

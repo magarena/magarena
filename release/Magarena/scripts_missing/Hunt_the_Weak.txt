@@ -1,6 +1,7 @@
 name=Hunt the Weak
 url=http://magiccards.info/query?q=%21Hunt+the+Weak
 image=http://mtgimage.com/card/hunt%20the%20weak.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{G}

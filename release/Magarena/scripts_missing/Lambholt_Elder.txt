@@ -1,6 +1,7 @@
 name=Lambholt Elder
 url=http://magiccards.info/query?q=%21Lambholt+Elder
 image=http://mtgimage.com/card/lambholt%20elder.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Werewolf

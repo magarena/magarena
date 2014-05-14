@@ -1,6 +1,7 @@
 name=Spinebiter
 url=http://magiccards.info/query?q=%21Spinebiter
 image=http://mtgimage.com/card/spinebiter.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

@@ -1,6 +1,7 @@
 name=Heartwood Storyteller
 url=http://magiccards.info/query?q=%21Heartwood+Storyteller
 image=http://mtgimage.com/card/heartwood%20storyteller.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Treefolk

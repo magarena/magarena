@@ -1,6 +1,7 @@
 name=Murderous Spoils
 url=http://magiccards.info/query?q=%21Murderous+Spoils
 image=http://mtgimage.com/card/murderous%20spoils.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={5}{B}

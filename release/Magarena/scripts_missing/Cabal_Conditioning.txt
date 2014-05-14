@@ -1,6 +1,7 @@
 name=Cabal Conditioning
 url=http://magiccards.info/query?q=%21Cabal+Conditioning
 image=http://mtgimage.com/card/cabal%20conditioning.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={6}{B}

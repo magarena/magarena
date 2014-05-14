@@ -1,6 +1,7 @@
 name=Honorable Passage
 url=http://magiccards.info/query?q=%21Honorable+Passage
 image=http://mtgimage.com/card/honorable%20passage.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}

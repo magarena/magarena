@@ -1,6 +1,7 @@
 name=Myr Servitor
 url=http://magiccards.info/query?q=%21Myr+Servitor
 image=http://mtgimage.com/card/myr%20servitor.jpg
+value=2.500
 rarity=C
 type=Artifact,Creature
 subtype=Myr

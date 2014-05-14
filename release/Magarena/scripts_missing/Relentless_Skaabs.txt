@@ -1,6 +1,7 @@
 name=Relentless Skaabs
 url=http://magiccards.info/query?q=%21Relentless+Skaabs
 image=http://mtgimage.com/card/relentless%20skaabs.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie

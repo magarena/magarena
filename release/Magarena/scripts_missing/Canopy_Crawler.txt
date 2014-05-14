@@ -1,6 +1,7 @@
 name=Canopy Crawler
 url=http://magiccards.info/query?q=%21Canopy+Crawler
 image=http://mtgimage.com/card/canopy%20crawler.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Beast

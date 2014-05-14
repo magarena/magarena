@@ -1,6 +1,7 @@
 name=Tribute to the Wild
 url=http://magiccards.info/query?q=%21Tribute+to+the+Wild
 image=http://mtgimage.com/card/tribute%20to%20the%20wild.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{G}

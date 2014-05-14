@@ -1,6 +1,7 @@
 name=Savage Summoning
 url=http://magiccards.info/query?q=%21Savage+Summoning
 image=http://mtgimage.com/card/savage%20summoning.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={G}

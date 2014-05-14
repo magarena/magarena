@@ -1,6 +1,7 @@
 name=Hum of the Radix
 url=http://magiccards.info/query?q=%21Hum+of+the+Radix
 image=http://mtgimage.com/card/hum%20of%20the%20radix.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}

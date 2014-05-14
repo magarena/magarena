@@ -1,6 +1,7 @@
 name=Endangered Armodon
 url=http://magiccards.info/query?q=%21Endangered+Armodon
 image=http://mtgimage.com/card/endangered%20armodon.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elephant

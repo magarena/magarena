@@ -1,6 +1,7 @@
 name=Dust Elemental
 url=http://magiccards.info/query?q=%21Dust+Elemental
 image=http://mtgimage.com/card/dust%20elemental.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

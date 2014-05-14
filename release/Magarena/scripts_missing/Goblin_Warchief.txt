@@ -1,6 +1,7 @@
 name=Goblin Warchief
 url=http://magiccards.info/query?q=%21Goblin+Warchief
 image=http://mtgimage.com/card/goblin%20warchief.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

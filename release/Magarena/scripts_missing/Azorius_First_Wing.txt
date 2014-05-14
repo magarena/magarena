@@ -1,6 +1,7 @@
 name=Azorius First-Wing
 url=http://magiccards.info/query?q=%21Azorius+First-Wing
 image=http://mtgimage.com/card/azorius%20first-wing.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Griffin

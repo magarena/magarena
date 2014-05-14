@@ -1,6 +1,7 @@
 name=Rest for the Weary
 url=http://magiccards.info/query?q=%21Rest+for+the+Weary
 image=http://mtgimage.com/card/rest%20for%20the%20weary.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}

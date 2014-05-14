@@ -1,6 +1,7 @@
 name=Second Sunrise
 url=http://magiccards.info/query?q=%21Second+Sunrise
 image=http://mtgimage.com/card/second%20sunrise.jpg
+value=2.500
 rarity=R
 type=Instant
 cost={1}{W}{W}

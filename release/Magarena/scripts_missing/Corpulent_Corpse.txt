@@ -1,6 +1,7 @@
 name=Corpulent Corpse
 url=http://magiccards.info/query?q=%21Corpulent+Corpse
 image=http://mtgimage.com/card/corpulent%20corpse.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie

@@ -1,6 +1,7 @@
 name=Goblin Mutant
 url=http://magiccards.info/query?q=%21Goblin+Mutant
 image=http://mtgimage.com/card/goblin%20mutant.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin,Mutant

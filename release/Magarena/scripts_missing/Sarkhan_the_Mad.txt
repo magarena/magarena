@@ -1,6 +1,7 @@
 name=Sarkhan the Mad
 url=http://magiccards.info/query?q=%21Sarkhan+the+Mad
 image=http://mtgimage.com/card/sarkhan%20the%20mad.jpg
+value=2.500
 rarity=M
 type=Planeswalker
 subtype=Sarkhan

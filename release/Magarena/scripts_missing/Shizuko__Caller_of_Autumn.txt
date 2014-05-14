@@ -1,6 +1,7 @@
 name=Shizuko, Caller of Autumn
 url=http://magiccards.info/query?q=%21Shizuko%2C+Caller+of+Autumn
 image=http://mtgimage.com/card/shizuko%2C%20caller%20of%20autumn.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Snake,Shaman

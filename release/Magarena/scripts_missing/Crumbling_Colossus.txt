@@ -1,6 +1,7 @@
 name=Crumbling Colossus
 url=http://magiccards.info/query?q=%21Crumbling+Colossus
 image=http://mtgimage.com/card/crumbling%20colossus.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

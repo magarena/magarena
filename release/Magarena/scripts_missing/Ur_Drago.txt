@@ -1,6 +1,7 @@
 name=Ur-Drago
 url=http://magiccards.info/query?q=%21Ur-Drago
 image=http://mtgimage.com/card/ur-drago.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

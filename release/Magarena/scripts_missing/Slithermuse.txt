@@ -1,6 +1,7 @@
 name=Slithermuse
 url=http://magiccards.info/query?q=%21Slithermuse
 image=http://mtgimage.com/card/slithermuse.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

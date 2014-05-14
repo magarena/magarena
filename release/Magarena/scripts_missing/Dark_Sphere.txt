@@ -1,6 +1,7 @@
 name=Dark Sphere
 url=http://magiccards.info/query?q=%21Dark+Sphere
 image=http://mtgimage.com/card/dark%20sphere.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={0}

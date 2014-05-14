@@ -1,6 +1,7 @@
 name=Frozen Solid
 url=http://magiccards.info/query?q=%21Frozen+Solid
 image=http://mtgimage.com/card/frozen%20solid.jpg
+value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura

@@ -1,6 +1,7 @@
 name=Glyph of Life
 url=http://magiccards.info/query?q=%21Glyph+of+Life
 image=http://mtgimage.com/card/glyph%20of%20life.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}

@@ -1,6 +1,7 @@
 name=Leyline of the Void
 url=http://magiccards.info/query?q=%21Leyline+of+the+Void
 image=http://mtgimage.com/card/leyline%20of%20the%20void.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{B}{B}

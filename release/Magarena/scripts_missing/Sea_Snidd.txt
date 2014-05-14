@@ -1,6 +1,7 @@
 name=Sea Snidd
 url=http://magiccards.info/query?q=%21Sea+Snidd
 image=http://mtgimage.com/card/sea%20snidd.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

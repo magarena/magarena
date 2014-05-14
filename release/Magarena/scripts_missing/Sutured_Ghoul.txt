@@ -1,6 +1,7 @@
 name=Sutured Ghoul
 url=http://magiccards.info/query?q=%21Sutured+Ghoul
 image=http://mtgimage.com/card/sutured%20ghoul.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Zombie

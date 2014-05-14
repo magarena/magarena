@@ -1,6 +1,7 @@
 name=Protean Hydra
 url=http://magiccards.info/query?q=%21Protean+Hydra
 image=http://mtgimage.com/card/protean%20hydra.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Hydra

@@ -1,6 +1,7 @@
 name=Mind Over Matter
 url=http://magiccards.info/query?q=%21Mind+Over+Matter
 image=http://mtgimage.com/card/mind%20over%20matter.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}{U}{U}

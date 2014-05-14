@@ -1,6 +1,7 @@
 name=Raving Oni-Slave
 url=http://magiccards.info/query?q=%21Raving+Oni-Slave
 image=http://mtgimage.com/card/raving%20oni-slave.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Ogre,Warrior

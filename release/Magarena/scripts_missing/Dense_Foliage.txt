@@ -1,6 +1,7 @@
 name=Dense Foliage
 url=http://magiccards.info/query?q=%21Dense+Foliage
 image=http://mtgimage.com/card/dense%20foliage.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}

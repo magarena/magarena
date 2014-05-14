@@ -1,6 +1,7 @@
 name=Covenant of Minds
 url=http://magiccards.info/query?q=%21Covenant+of+Minds
 image=http://mtgimage.com/card/covenant%20of%20minds.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{U}

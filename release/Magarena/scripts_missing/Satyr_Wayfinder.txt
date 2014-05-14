@@ -1,6 +1,7 @@
 name=Satyr Wayfinder
 url=http://magiccards.info/query?q=%21Satyr+Wayfinder
 image=http://mtgimage.com/card/satyr%20wayfinder.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Satyr

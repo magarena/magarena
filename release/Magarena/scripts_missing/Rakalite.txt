@@ -1,6 +1,7 @@
 name=Rakalite
 url=http://magiccards.info/query?q=%21Rakalite
 image=http://mtgimage.com/card/rakalite.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={6}

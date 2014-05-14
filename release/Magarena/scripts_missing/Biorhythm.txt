@@ -1,6 +1,7 @@
 name=Biorhythm
 url=http://magiccards.info/query?q=%21Biorhythm
 image=http://mtgimage.com/card/biorhythm.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={6}{G}{G}

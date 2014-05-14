@@ -1,6 +1,7 @@
 name=Loaming Shaman
 url=http://magiccards.info/query?q=%21Loaming+Shaman
 image=http://mtgimage.com/card/loaming%20shaman.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Centaur,Shaman

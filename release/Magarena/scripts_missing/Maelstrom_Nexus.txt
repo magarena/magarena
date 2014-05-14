@@ -1,6 +1,7 @@
 name=Maelstrom Nexus
 url=http://magiccards.info/query?q=%21Maelstrom+Nexus
 image=http://mtgimage.com/card/maelstrom%20nexus.jpg
+value=2.500
 rarity=M
 type=Enchantment
 cost={W}{U}{B}{R}{G}

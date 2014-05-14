@@ -1,6 +1,7 @@
 name=Complex Automaton
 url=http://magiccards.info/query?q=%21Complex+Automaton
 image=http://mtgimage.com/card/complex%20automaton.jpg
+value=2.500
 rarity=R
 type=Artifact,Creature
 subtype=Golem

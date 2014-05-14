@@ -1,6 +1,7 @@
 name=Jade Idol
 url=http://magiccards.info/query?q=%21Jade+Idol
 image=http://mtgimage.com/card/jade%20idol.jpg
+value=2.500
 rarity=U
 type=Artifact
 cost={4}

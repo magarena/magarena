@@ -1,6 +1,7 @@
 name=Andradite Leech
 url=http://magiccards.info/query?q=%21Andradite+Leech
 image=http://mtgimage.com/card/andradite%20leech.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Leech

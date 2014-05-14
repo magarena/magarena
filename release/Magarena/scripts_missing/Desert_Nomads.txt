@@ -1,6 +1,7 @@
 name=Desert Nomads
 url=http://magiccards.info/query?q=%21Desert+Nomads
 image=http://mtgimage.com/card/desert%20nomads.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Nomad

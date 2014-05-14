@@ -1,6 +1,7 @@
 name=Weight of Spires
 url=http://magiccards.info/query?q=%21Weight+of+Spires
 image=http://mtgimage.com/card/weight%20of%20spires.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={R}
