@@ -5,6 +5,6 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={2}{R}
-effect=SN deals damage to each player equal to the number of lands he or she controls.
 timing=main
 oracle=Acidic Soil deals damage to each player equal to the number of lands he or she controls.
+requires_groovy_code
