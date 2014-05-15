@@ -3,6 +3,8 @@ package magic.model.choice;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicMappable;
+import magic.model.MagicCopyable;
+import magic.model.MagicCopyMap;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicSourceManaActivation;
 import magic.model.event.MagicSourceManaActivationResult;
@@ -12,7 +14,8 @@ import java.util.List;
 
 public class MagicBuilderPayManaCostResult implements
     MagicPayManaCostResult, 
-    MagicMappable<MagicBuilderPayManaCostResult>, 
+    MagicMappable<MagicBuilderPayManaCostResult>,
+    MagicCopyable,
     Comparable<MagicBuilderPayManaCostResult> {
 
     private MagicSourceManaActivationResult[] results;
@@ -42,6 +45,20 @@ public class MagicBuilderPayManaCostResult implements
     }
 
     private MagicBuilderPayManaCostResult() {}
+
+    private MagicBuilderPayManaCostResult(final MagicCopyMap copyMap, final MagicBuilderPayManaCostResult source) {
+        results    = copyMap.copyObjects(source.results, MagicSourceManaActivationResult.class);
+        amountLeft = Arrays.copyOf(source.amountLeft,source.amountLeft.length);
+        weight     = source.weight;
+        count      = source.count;
+        x          = source.x;
+        hashCode   = source.hashCode;
+    }
+   
+    @Override
+    public MagicBuilderPayManaCostResult copy(final MagicCopyMap copyMap) {
+        return new MagicBuilderPayManaCostResult(copyMap, this);
+    }
 
     @Override
     public MagicBuilderPayManaCostResult map(final MagicGame game) {
