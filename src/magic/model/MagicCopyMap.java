@@ -25,6 +25,11 @@ public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
         if (source != null && source instanceof MagicCopyable) {
             return copy((MagicCopyable)source);
         } else {
+            assert source == null ||
+                   source instanceof Enum ||
+                   source instanceof Number ||
+                   source instanceof String :
+                   source.getClass().getName() + " not copied";
             return source;
         }
     }

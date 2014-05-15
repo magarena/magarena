@@ -1026,6 +1026,11 @@ public class MagicGame {
             if (obj != null && obj instanceof MagicMappable) {
                 mappedData[index]=((MagicMappable)obj).map(this);
             } else {
+                assert obj == null ||
+                       obj instanceof Enum ||
+                       obj instanceof Number ||
+                       obj instanceof String : 
+                       obj.getClass().getName() + " not mapped";
                 mappedData[index]=obj;
             }
         }
