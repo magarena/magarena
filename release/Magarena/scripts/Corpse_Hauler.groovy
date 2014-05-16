@@ -18,7 +18,7 @@
                     source.getCard()
                 ),
                 MagicTargetHint.None,
-                "a creature other than "+source.getCard().getName()+" to return to hand"
+                "a creature other than " + source + " to return to hand"
             );
             return new MagicEvent(
                 source,
