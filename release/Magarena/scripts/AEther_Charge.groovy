@@ -9,7 +9,7 @@
                     new MagicMayChoice(MagicTargetChoice.TARGET_OPPONENT),
                     otherPermanent,
                     this,
-                    "You may\$ have RN deal 4 damage to "+permanent.getController().getOpponent().getName()
+                    "You may\$ have RN deal 4 damage to target opponent\$"
                 ):
                 MagicEvent.NONE;
         }
