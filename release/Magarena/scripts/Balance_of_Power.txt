@@ -5,6 +5,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={3}{U}{U}
-effect=If target opponent has more cards in hand than you, draw cards equal to the difference.
 timing=main
 oracle=If target opponent has more cards in hand than you, draw cards equal to the difference.
+requires_groovy_code

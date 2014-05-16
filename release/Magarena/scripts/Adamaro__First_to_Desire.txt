@@ -3,10 +3,9 @@ url=http://magiccards.info/query?q=%21Adamaro%2C+First+to+Desire
 image=http://mtgimage.com/card/adamaro%2C%20first%20to%20desire.jpg
 value=2.500
 rarity=R
-type=Creature
+type=Legendary,Creature
 subtype=Spirit
 cost={1}{R}{R}
-pt=*/*
-ability=SN's power and toughness are each equal to the number of cards in the hand of the opponent with the most cards in hand.
 timing=main
 oracle=Adamaro, First to Desire's power and toughness are each equal to the number of cards in the hand of the opponent with the most cards in hand.
+requires_groovy_code
