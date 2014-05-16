@@ -33,7 +33,7 @@
                         MagicSimpleMayChoice.DEFAULT_YES
                     ),
                     this,
-                    permanent.getController().getName()+" may\$ remove a charge counter from SN. If PN does, PN gains 1 life."
+                    "PN may\$ remove a charge counter from SN. If PN does, PN gains 1 life."
                 ):
                 MagicEvent.NONE;
         }
@@ -41,7 +41,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().getCounters(MagicCounterType.Charge)>=1 && event.isYes()) {
                 game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,-1,true));
-                game.doAction(new MagicChangeLifeAction(event.getPermanent().getController(),1));
+                game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
             }
         }
     }
