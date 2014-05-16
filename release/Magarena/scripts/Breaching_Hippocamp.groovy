@@ -8,7 +8,7 @@
                     permanent
                 ),
                 MagicTargetHint.None,
-                "a creature other than "+permanent.getName()+" to untap"
+                "a creature other than " + permanent + " to untap"
             );
             return new MagicEvent(
                 permanent,
