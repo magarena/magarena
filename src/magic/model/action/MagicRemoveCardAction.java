@@ -39,8 +39,7 @@ public class MagicRemoveCardAction extends MagicAction {
                 break;
         }
         if (index < 0 && card.isToken() == false) {
-            System.err.println("REMOVE: Fail to remove " + card + " from " + locationType);
-            System.err.println("REMOVE: Card is in " + card.getLocation());
+            System.err.println("REMOVE: Fail to remove " + card + " from " + locationType + ", card in " + card.getLocation());
         } 
         game.setStateCheckRequired();
     }
