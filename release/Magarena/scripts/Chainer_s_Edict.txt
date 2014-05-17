@@ -9,3 +9,4 @@ cost={1}{B}
 timing=removal
 ability=Flashback {5}{B}{B}
 requires_groovy_code=Diabolic Edict
+oracle=Target player sacrifices a creature. Flashback {5}{B}{B}
