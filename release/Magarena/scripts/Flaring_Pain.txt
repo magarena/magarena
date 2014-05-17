@@ -1,0 +1,10 @@
+name=Flaring Pain
+url=http://magiccards.info/ju/en/89.html
+image=http://magiccards.info/scans/en/ju/89.jpg
+value=3.011
+rarity=C
+type=Instant
+cost={1}{R}
+timing=removal
+ability=Flashback {R}
+requires_groovy_code
