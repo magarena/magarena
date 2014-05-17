@@ -1,0 +1,12 @@
+name=Ærathi Berserker
+url=http://magiccards.info/query?q=%21aerathi%20berserker
+image=http://mtgimage.com/card/aerathi%20berserker.jpg
+value=2.344
+rarity=U
+type=Creature
+subtype=Human,Berserker
+cost={2}{R}{R}{R}
+pt=2/4
+ability=rampage 3
+timing=main
+oracle=Rampage 3

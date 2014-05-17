@@ -1,0 +1,11 @@
+name=Æther Spellbomb
+url=http://magiccards.info/query?q=%21aether%20spellbomb
+image=http://mtgimage.com/card/aether%20spellbomb.jpg
+value=4.347
+rarity=C
+type=Artifact
+cost={1}
+ability={U},Sacrifice SN: Return target creature to its owner's hand.;\
+        {1},Sacrifice SN: Draw a card.
+timing=artifact
+oracle={U}, Sacrifice Æther Spellbomb: Return target creature to its owner's hand. {1}, Sacrifice Æther Spellbomb: Draw a card.

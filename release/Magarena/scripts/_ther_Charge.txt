@@ -1,0 +1,10 @@
+name=Æther Charge
+url=http://magiccards.info/query?q=%21%C3%86ther+Charge
+image=http://mtgimage.com/card/aether%20charge.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={4}{R}
+timing=main
+oracle=Whenever a Beast enters the battlefield under your control, you may have it deal 4 damage to target opponent.
+requires_groovy_code

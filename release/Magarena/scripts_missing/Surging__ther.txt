@@ -1,0 +1,11 @@
+name=Surging Æther
+url=http://magiccards.info/query?q=%21Surging+%C3%86ther
+image=http://mtgimage.com/card/surging%20aether.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Ripple 4;\
+        Return target permanent to its owner's hand.
+timing=removal
+oracle=Ripple 4. Return target permanent to its owner's hand.

@@ -86,7 +86,7 @@ Aegis of the Gods
 Aegis of the Meek
 Aeolipile
 Aeon Chronicler
-AErathi Berserker
+Ærathi Berserker
 Aerial Caravan
 Aerial Formation
 Aerial Maneuver
@@ -95,31 +95,31 @@ Aerie Mystics
 Aerie Ouphes
 Aerie Worshippers
 Aesthir Glider
-AEther Adept
-AEther Barrier
-AEther Burst
-AEther Charge
-AEther Figment
-AEtherflame Wall
-AEther Flash
-AEtherize
-AEtherling
-AEthermage's Touch
-AEther Membrane
-AEther Mutation
-AEtherplasm
-AEther Rift
-AEther Shockwave
-AEther Snap
-AEthersnipe
-AEther Spellbomb
-AEther Sting
-AEther Storm
-AEther Tide
-AEthertow
-AEther Tradewinds
-AEther Vial
-AEther Web
+Æther Adept
+Æther Barrier
+Æther Burst
+Æther Charge
+Æther Figment
+Ætherflame Wall
+Æther Flash
+Ætherize
+Ætherling
+Æthermage's Touch
+Æther Membrane
+Æther Mutation
+Ætherplasm
+Æther Rift
+Æther Shockwave
+Æther Snap
+Æthersnipe
+Æther Spellbomb
+Æther Sting
+Æther Storm
+Æther Tide
+Æthertow
+Æther Tradewinds
+Æther Vial
+Æther Web
 Affa Guard Hound
 Afflict
 Afflicted Deserter
@@ -529,7 +529,7 @@ Armor Thrull
 Armory Guard
 Armory of Iroas
 Arms Dealer
-Arm with AEther
+Arm with Æther
 Army Ants
 Army of Allah
 Army of the Damned
@@ -729,7 +729,7 @@ Ayumi, the Last Visitor
 Azami, Lady of Scrolls
 Azamuki, Treachery Incarnate
 Azimaet Drake
-Azorius AEthermage
+Azorius Æthermage
 Azorius Arrester
 Azorius Chancery
 Azorius Charm
@@ -1322,7 +1322,7 @@ Borrowing 100,000 Arrows
 Borrowing the East Wind
 Boseiju, Who Shelters All
 Bosh, Iron Golem
-Bosium Strip
+Bösium Strip
 Bosk Banneret
 Bottled Cloister
 Bottle Gnomes
@@ -2522,7 +2522,7 @@ Dance of Many
 Dance of Shadows
 Dance of the Dead
 Dancing Scimitar
-Dandan
+Dandân
 Dangerous
 Dangerous Wager
 Daraja Griffin
@@ -2778,7 +2778,7 @@ Deglamer
 Dehydration
 Deicide
 Deity of Scars
-Deja Vu
+Déjà Vu
 Delay
 Delaying Shield
 Delif's Cone
@@ -3412,7 +3412,7 @@ Elfhame Sanctuary
 Elf Replica
 Elgaud Inquisitor
 Elgaud Shieldmate
-El-Hajjaj
+El-Hajjâj
 Elite Arcanist
 Elite Archers
 Elite Cat Warrior
@@ -4208,7 +4208,7 @@ Fog Elemental
 Fog of Gnats
 Fog Patch
 Foil
-Fold into AEther
+Fold into Æther
 Folk Medicine
 Folk of An-Havva
 Folk of the Pines
@@ -4343,7 +4343,7 @@ Frost Titan
 Frostweb Spider
 Frostwielder
 Frostwind Invoker
-Frozen AEther
+Frozen Æther
 Frozen Shade
 Frozen Solid
 Fruition
@@ -4451,7 +4451,7 @@ Gatecreeper Vine
 Gate Hound
 Gatekeeper of Malakir
 Gate to Phyrexia
-Gate to the AEther
+Gate to the Æther
 Gateway Shade
 Gathan Raiders
 Gather Courage
@@ -4523,7 +4523,7 @@ Ghastly Discovery
 Ghastly Haunting
 Ghastly Remains
 Ghave, Guru of Spores
-Ghazban Ogre
+Ghazbán Ogre
 Ghitu Encampment
 Ghitu Fire
 Ghitu Firebreathing
@@ -5678,7 +5678,7 @@ Ideas Unbound
 Identity Crisis
 Idle Thoughts
 Idyllic Tutor
-Ifh-Biff Efreet
+Ifh-Bíff Efreet
 Igneous Golem
 Igneous Pouncer
 Ignite Disorder
@@ -6057,8 +6057,8 @@ Joraga Bard
 Joraga Treespeaker
 Joraga Warcaller
 Jor Kadeen, the Prevailer
-Jotun Grunt
-Jotun Owl Keeper
+Jötun Grunt
+Jötun Owl Keeper
 Journeyer's Kite
 Journey of Discovery
 Journey to Nowhere
@@ -6096,13 +6096,13 @@ Junk Golem
 Junktroller
 Junkyo Bell
 Juntu Stakes
-Junun Efreet
+Junún Efreet
 Jushi Apprentice
 Just Fate
 Justice
 Juvenile Gloomwidow
 Juxtapose
-Juzam Djinn
+Juzám Djinn
 Jwari Scuttler
 Jwari Shapeshifter
 Jwar Isle Refuge
@@ -6254,7 +6254,7 @@ Kessig Wolf
 Kessig Wolf Run
 Keymaster Rogue
 Kezzerdrix
-Khabal Ghoul
+Khabál Ghoul
 Khalni Garden
 Khalni Gem
 Khalni Heart Expedition
@@ -6619,7 +6619,7 @@ Legacy Weapon
 Legerdemain
 Legion Loyalist
 Legion's Initiative
-Legions of Lim-Dul
+Legions of Lim-Dûl
 Leonin Abunas
 Leonin Arbiter
 Leonin Armorguard
@@ -6737,12 +6737,12 @@ Liliana's Shade
 Liliana's Specter
 Liliana Vess
 Lilting Refrain
-Lim-Dul's Cohort
-Lim-Dul's Hex
-Lim-Dul's High Guard
-Lim-Dul's Paladin
-Lim-Dul's Vault
-Lim-Dul the Necromancer
+Lim-Dûl's Cohort
+Lim-Dûl's Hex
+Lim-Dûl's High Guard
+Lim-Dûl's Paladin
+Lim-Dûl's Vault
+Lim-Dûl the Necromancer
 Limestone Golem
 Limited Resources
 Linessa, Zephyr Mage
@@ -7125,7 +7125,7 @@ Marsh Viper
 Martial Coup
 Martial Glory
 Martial Law
-Marton Stromgald
+Márton Stromgald
 Martyrdom
 Martyred Rusalka
 Martyr of Ashes
@@ -8122,7 +8122,7 @@ Oathkeeper, Takeno's Daisho
 Oath of Druids
 Oath of Ghouls
 Oath of Lieges
-Oath of Lim-Dul
+Oath of Lim-Dûl
 Oath of Mages
 Oath of Scholars
 Oath of the Ancient Wood
@@ -9630,7 +9630,7 @@ Ring of Evos Isle
 Ring of Gix
 Ring of Immortals
 Ring of Kalonia
-Ring of Ma'ruf
+Ring of Ma'rûf
 Ring of Renewal
 Ring of Three Wishes
 Ring of Thune
@@ -10126,7 +10126,7 @@ Scoria Cat
 Scoria Elemental
 Scoria Wurm
 Scorned Villager
-Scornful AEther-Lich
+Scornful Æther-Lich
 Scornful Egotist
 Scour
 Scourge Devil
@@ -10206,7 +10206,7 @@ Seal of Primordium
 Seal of Removal
 Seal of Strength
 Sea Monster
-Seance
+Séance
 Search for Survivors
 Search for Tomorrow
 Searchlight Geist
@@ -11712,7 +11712,7 @@ Surge of Thoughtweft
 Surge of Zeal
 Surgespanner
 Surgical Extraction
-Surging AEther
+Surging Æther
 Surging Dementia
 Surging Flame
 Surging Might
@@ -11822,7 +11822,7 @@ Tahngarth's Glare
 Tahngarth's Rage
 Tahngarth, Talruum Hero
 Taiga
-Tainted AEther
+Tainted Æther
 Tainted Field
 Tainted Isle
 Tainted Pact
@@ -12722,7 +12722,7 @@ Unnatural Speed
 Unnerve
 Unnerving Assault
 Unquestioned Authority
-Unravel the AEther
+Unravel the Æther
 Unruly Mob
 Unscythe, Killer of Kings
 Unseen Walker
@@ -12861,7 +12861,7 @@ Vectis Dominator
 Vectis Silencers
 Vector Asp
 Vec Townships
-Vedalken AEthermage
+Vedalken Æthermage
 Vedalken Anatomist
 Vedalken Archmage
 Vedalken Certarch

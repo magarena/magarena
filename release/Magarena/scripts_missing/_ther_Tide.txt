@@ -1,0 +1,11 @@
+name=Æther Tide
+url=http://magiccards.info/query?q=%21%C3%86ther+Tide
+image=http://mtgimage.com/card/aether%20tide.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={X}{U}
+effect=As an additional cost to cast SN, discard X creature cards.;\
+        Return X target creatures to their owners' hands.
+timing=main
+oracle=As an additional cost to cast Æther Tide, discard X creature cards. Return X target creatures to their owners' hands.

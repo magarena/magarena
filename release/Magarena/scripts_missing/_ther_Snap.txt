@@ -1,0 +1,10 @@
+name=Æther Snap
+url=http://magiccards.info/query?q=%21%C3%86ther+Snap
+image=http://mtgimage.com/card/aether%20snap.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Remove all counters from all permanents and exile all tokens.
+timing=main
+oracle=Remove all counters from all permanents and exile all tokens.

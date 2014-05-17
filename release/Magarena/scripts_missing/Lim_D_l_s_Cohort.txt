@@ -1,0 +1,12 @@
+name=Lim-Dûl's Cohort
+url=http://magiccards.info/query?q=%21Lim-D%C3%BBl%27s+Cohort
+image=http://mtgimage.com/card/lim-dul%27s%20cohort.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={1}{B}{B}
+pt=2/3
+ability=Whenever SN blocks or becomes blocked by a creature, that creature can't be regenerated this turn.
+timing=main
+oracle=Whenever Lim-Dûl's Cohort blocks or becomes blocked by a creature, that creature can't be regenerated this turn.

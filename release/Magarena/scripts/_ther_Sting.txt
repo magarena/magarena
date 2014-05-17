@@ -1,0 +1,10 @@
+name=Æther Sting
+url=http://magiccards.info/query?q=%21aether%20sting
+image=http://mtgimage.com/card/aether%20sting.jpg
+value=3.589
+rarity=U
+type=Enchantment
+cost={3}{R}
+timing=enchantment
+requires_groovy_code
+oracle=Whenever an opponent casts a creature spell, Æther Sting deals 1 damage to that player.
