@@ -248,7 +248,6 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
             final File[] oldDirs = {
                     new File(dataPath.toFile(), CardDefinitions.CARD_IMAGE_FOLDER),
                     new File(dataPath.toFile(), CardDefinitions.TOKEN_IMAGE_FOLDER),
-                    new File(dataPath.toFile(), CardDefinitions.CARD_TEXT_FOLDER),
                     new File(dataPath.toFile(), History.HISTORY_FOLDER)
                 };
 
@@ -288,7 +287,6 @@ public class ImportDialog extends JDialog implements PropertyChangeListener {
 
             // refresh
             magic.data.HighQualityCardImagesProvider.getInstance().clearCache();
-            CardDefinitions.loadCardTexts();
 
             setProgressNote("OK\n");
             if (isMissingFiles) {
