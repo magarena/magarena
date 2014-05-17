@@ -9,3 +9,4 @@ subtype=Elemental
 cost={3}{R}
 pt=4/1
 timing=fmain
+oracle=Haste

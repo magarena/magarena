@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 timing=tapping
 requires_groovy_code=Mobilize
+oracle=Untap all creatures you control.

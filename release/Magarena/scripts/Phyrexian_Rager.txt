@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=When SN enters the battlefield, you draw a card and you lose 1 life.
 timing=fmain
+oracle=When Phyrexian Rager enters the battlefield, you draw a card and you lose 1 life.

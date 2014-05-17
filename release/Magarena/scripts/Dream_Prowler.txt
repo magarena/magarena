@@ -9,3 +9,4 @@ cost={2}{U}{U}
 pt=1/5
 ability=SN can't be blocked as long as it's attacking alone.
 timing=main
+oracle=Dream Prowler can't be blocked as long as it's attacking alone.

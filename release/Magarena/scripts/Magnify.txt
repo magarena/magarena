@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 effect=All creatures get +1/+1 until end of turn.
 timing=pump
+oracle=All creatures get +1/+1 until end of turn.

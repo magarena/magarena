@@ -9,3 +9,4 @@ cost={4}{W}{W}
 pt=3/3
 ability=flash;bushido 1
 timing=flash
+oracle=Flash. Bushido 1

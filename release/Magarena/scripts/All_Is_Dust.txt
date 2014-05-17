@@ -8,3 +8,4 @@ subtype=Eldrazi
 cost={7}
 timing=main
 requires_groovy_code
+oracle=Each player sacrifices all colored permanents he or she controls.

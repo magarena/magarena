@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{W}{W}{W}
 ability=white creatures have plainswalk
 timing=enchantment
+oracle=White creatures have plainswalk.

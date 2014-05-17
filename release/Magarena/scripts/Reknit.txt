@@ -7,3 +7,4 @@ type=Instant
 cost={1}{G/W}
 effect=Regenerate target permanent.
 timing=pump
+oracle=Regenerate target permanent.

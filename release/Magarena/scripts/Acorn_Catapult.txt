@@ -7,3 +7,4 @@ type=Artifact
 cost={4}
 timing=artifact
 requires_groovy_code
+oracle={1}, {T}: Acorn Catapult deals 1 damage to target creature or player. That creature's controller or that player puts a 1/1 green Squirrel creature token onto the battlefield.

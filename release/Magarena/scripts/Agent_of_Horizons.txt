@@ -9,3 +9,4 @@ cost={2}{G}
 pt=3/2
 ability={2}{U}: SN can't be blocked this turn.
 timing=main
+oracle={2}{U}: Agent of Horizons can't be blocked this turn.

@@ -9,3 +9,4 @@ cost={1}{W}
 pt=2/1
 ability=exalted;protection from black
 timing=main
+oracle=Protection from black. Exalted

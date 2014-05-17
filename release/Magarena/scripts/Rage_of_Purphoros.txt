@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{R}
 timing=main
 requires_groovy_code
+oracle=Rage of Purphoros deals 4 damage to target creature. It can't be regenerated this turn. Scry 1.

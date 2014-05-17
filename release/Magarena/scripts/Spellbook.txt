@@ -7,3 +7,4 @@ type=Artifact
 cost={0}
 timing=artifact
 requires_groovy_code
+oracle=You have no maximum hand size.

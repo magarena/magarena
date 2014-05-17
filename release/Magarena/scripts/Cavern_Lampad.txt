@@ -11,3 +11,4 @@ ability=Bestow {5}{B};\
         Intimidate;\
         Enchanted creature gets +2/+2 and has intimidate.
 timing=main
+oracle=Bestow {5}{B}. Intimidate. Enchanted creature gets +2/+2 and has intimidate.

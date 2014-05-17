@@ -7,3 +7,4 @@ type=Artifact
 cost={3}
 timing=artifact
 requires_groovy_code
+oracle=Whenever a creature attacks, Caltrops deals 1 damage to it.

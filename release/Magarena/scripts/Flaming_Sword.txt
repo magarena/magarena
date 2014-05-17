@@ -10,3 +10,4 @@ ability=Flash;\
         Enchanted creature gets +1/+0 and has first strike.
 timing=pumpflash
 enchant=pump,pos creature
+oracle=Flash. Enchant creature. Enchanted creature gets +1/+0 and has first strike.

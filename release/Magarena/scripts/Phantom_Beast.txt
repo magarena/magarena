@@ -9,3 +9,4 @@ cost={3}{U}
 pt=4/5
 ability=When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
+oracle=When Phantom Beast becomes the target of a spell or ability, sacrifice it.

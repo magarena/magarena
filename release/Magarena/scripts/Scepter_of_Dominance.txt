@@ -7,3 +7,4 @@ type=Artifact
 cost={1}{W}{W}
 ability={W},{T}: Tap target permanent.
 timing=artifact
+oracle={W}, {T}: Tap target permanent.

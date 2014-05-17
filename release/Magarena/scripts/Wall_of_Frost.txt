@@ -10,3 +10,4 @@ pt=0/7
 ability=defender
 timing=smain
 requires_groovy_code
+oracle=Defender. Whenever Wall of Frost blocks a creature, that creature doesn't untap during its controller's next untap step.

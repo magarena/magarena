@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle=At the beginning of your upkeep, if you control five or more lands, put four +1/+1 counters on Scute Mob.

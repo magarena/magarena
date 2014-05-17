@@ -8,3 +8,4 @@ subtype=Nightstalker
 cost={4}{B}
 timing=main
 requires_groovy_code
+oracle=Nightstalker Engine's power is equal to the number of creature cards in your graveyard.

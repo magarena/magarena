@@ -9,3 +9,4 @@ cost={U}{U}
 pt=1/3
 timing=main
 requires_groovy_code
+oracle=At the beginning of each player's draw step, that player draws an additional card.

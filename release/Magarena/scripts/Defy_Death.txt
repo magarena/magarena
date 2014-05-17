@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{W}{W}
 timing=main
 requires_groovy_code
+oracle=Return target creature card from your graveyard to the battlefield. If it's an Angel, put two +1/+1 counters on it.

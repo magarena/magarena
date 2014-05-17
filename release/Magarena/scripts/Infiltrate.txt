@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Target creature can't be blocked this turn.
 timing=removal
+oracle=Target creature can't be blocked this turn.

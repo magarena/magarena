@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/2
 ability=When SN dies, put two 1/1 white Spirit creature tokens with flying onto the battlefield.
 timing=main
+oracle=When Mausoleum Guard dies, put two 1/1 white Spirit creature tokens with flying onto the battlefield.

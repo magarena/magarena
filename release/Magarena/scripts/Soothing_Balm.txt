@@ -7,3 +7,4 @@ type=Instant
 cost={1}{W}
 effect=Target player gains 5 life.
 timing=main
+oracle=Target player gains 5 life.

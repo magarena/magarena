@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 effect=Target creature gets +1/+0 and gains infect until end of turn.
 timing=pump
+oracle=Target creature gets +1/+0 and gains infect until end of turn.

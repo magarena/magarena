@@ -9,3 +9,4 @@ cost={6}
 pt=5/3
 ability={1}{G}: SN gains trample until end of turn.
 timing=main
+oracle={1}{G}: Malachite Golem gains trample until end of turn.

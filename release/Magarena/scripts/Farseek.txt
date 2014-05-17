@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{G}
 effect=Search your library for a Plains, Island, Swamp, or Mountain card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main
+oracle=Search your library for a Plains, Island, Swamp, or Mountain card and put it onto the battlefield tapped. Then shuffle your library.

@@ -7,3 +7,4 @@ type=Sorcery
 cost={G}
 timing=main
 requires_groovy_code
+oracle=You gain 1 life for each Forest on the battlefield.

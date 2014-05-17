@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Whenever Dwarven Vigilantes attacks and isn't blocked, you may have it deal damage equal to its power to target creature. If you do, Dwarven Vigilantes assigns no combat damage this turn.

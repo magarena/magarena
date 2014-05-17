@@ -7,3 +7,4 @@ type=Artifact
 cost={3}
 timing=artifact
 requires_groovy_code
+oracle={T}: Scepter of Empires deals 1 damage to target player. It deals 3 damage to that player instead if you control artifacts named Crown of Empires and Throne of Empires.

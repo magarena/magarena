@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G}{G}
 effect=Target creature can't be blocked this turn.
 timing=attack
+oracle=Target creature can't be blocked this turn.

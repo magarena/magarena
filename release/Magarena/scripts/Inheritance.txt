@@ -7,3 +7,4 @@ type=Enchantment
 cost={W}
 ability=Whenever a creature dies, you may pay {3}. If you do, draw a card.
 timing=enchantment
+oracle=Whenever a creature dies, you may pay {3}. If you do, draw a card.

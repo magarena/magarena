@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{B}
 timing=main
 requires_groovy_code
+oracle=Cast Feast of Blood only if you control two or more Vampires. Destroy target creature. You gain 4 life.

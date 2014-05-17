@@ -9,3 +9,4 @@ subtype=Treefolk,Warrior
 cost={5}{G}{G}
 pt=5/7
 timing=main
+oracle=Vigilance, trample

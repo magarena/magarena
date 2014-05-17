@@ -7,3 +7,4 @@ type=Instant
 cost={3}{W}
 timing=pump
 requires_groovy_code
+oracle=Target player gains 2 life for each creature on the battlefield.

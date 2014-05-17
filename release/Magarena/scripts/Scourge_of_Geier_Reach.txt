@@ -9,3 +9,4 @@ cost={3}{R}{R}
 pt=3/3
 timing=main
 requires_groovy_code
+oracle=Scourge of Geier Reach gets +1/+1 for each creature your opponents control.

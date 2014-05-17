@@ -9,3 +9,4 @@ cost={2}{U}{B}{R}
 pt=2/4
 timing=main
 requires_groovy_code=Underworld Dreams;Kami of the Crescent Moon
+oracle=At the beginning of each player's draw step, that player draws an additional card. Whenever an opponent draws a card, Nekusar, the Mindrazer deals 1 damage to that player.

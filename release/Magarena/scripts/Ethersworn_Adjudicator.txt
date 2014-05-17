@@ -11,3 +11,4 @@ ability=flying;\
         {1}{W}{B},{T}: Destroy target creature or enchantment.;\
         {2}{U}: Untap SN.
 timing=main
+oracle=Flying. {1}{W}{B}, {T}: Destroy target creature or enchantment. {2}{U}: Untap Ethersworn Adjudicator.

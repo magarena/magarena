@@ -10,3 +10,4 @@ pt=2/2
 ability=all slivers have "{T}: Tap target permanent."
 static=all
 timing=main
+oracle=All Slivers have "{T}: Tap target permanent."

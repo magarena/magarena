@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=2/2
 ability=forestwalk
 timing=main
+oracle=Forestwalk

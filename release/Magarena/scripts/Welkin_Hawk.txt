@@ -10,3 +10,4 @@ pt=1/1
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. When Welkin Hawk dies, you may search your library for a card named Welkin Hawk, reveal that card, put it into your hand, then shuffle your library.

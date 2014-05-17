@@ -9,3 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=unleash
 timing=main
+oracle=Unleash

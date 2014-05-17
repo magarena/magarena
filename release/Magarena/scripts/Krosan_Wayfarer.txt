@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability=Sacrifice SN: You may put a land card from your hand onto the battlefield.
 timing=main
+oracle=Sacrifice Krosan Wayfarer: You may put a land card from your hand onto the battlefield.

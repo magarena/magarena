@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=2/2
 ability=flanking;shroud
 timing=main
+oracle=Shroud. Flanking

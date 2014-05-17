@@ -9,3 +9,4 @@ cost={5}{R}{R}{R}
 pt=7/7
 ability=At the beginning of each upkeep, SN deals 3 damage to target creature or player.
 timing=main
+oracle=At the beginning of each upkeep, Magmatic Force deals 3 damage to target creature or player.

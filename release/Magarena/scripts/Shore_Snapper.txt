@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability={U}: SN gains islandwalk until end of turn.
 timing=main
+oracle={U}: Shore Snapper gains islandwalk until end of turn.

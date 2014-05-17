@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Counter target noncreature spell unless its controller pays {2}.
 timing=counter
+oracle=Counter target noncreature spell unless its controller pays {2}.

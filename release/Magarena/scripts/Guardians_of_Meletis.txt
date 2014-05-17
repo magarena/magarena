@@ -9,3 +9,4 @@ cost={3}
 pt=0/6
 ability=defender
 timing=artifact
+oracle=Defender

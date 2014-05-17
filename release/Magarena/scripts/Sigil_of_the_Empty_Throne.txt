@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{W}{W}
 ability=Whenever you cast an enchantment spell, put a 4/4 white Angel creature token with flying onto the battlefield.
 timing=enchantment
+oracle=Whenever you cast an enchantment spell, put a 4/4 white Angel creature token with flying onto the battlefield.

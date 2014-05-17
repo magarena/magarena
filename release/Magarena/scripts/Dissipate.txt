@@ -7,3 +7,4 @@ type=Instant
 cost={1}{U}{U}
 timing=counter
 requires_groovy_code
+oracle=Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.

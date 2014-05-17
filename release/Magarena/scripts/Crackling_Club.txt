@@ -10,3 +10,4 @@ ability=Enchanted creature gets +1/+0.;\
         Sacrifice SN:SN deals 1 damage to target creature.
 timing=enchantment
 enchant=pump,pos creature
+oracle=Enchant creature. Enchanted creature gets +1/+0. Sacrifice Crackling Club: Crackling Club deals 1 damage to target creature.

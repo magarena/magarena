@@ -9,3 +9,4 @@ cost={B}
 pt=1/1
 ability=Sacrifice a creature: Scry 1.
 timing=main
+oracle=Sacrifice a creature: Scry 1.

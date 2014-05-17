@@ -9,3 +9,4 @@ cost={5}{R}{R}
 pt=5/5
 ability=When SN enters the battlefield, SN deals 2 damage to each creature and each player.
 timing=main
+oracle=When Magma Giant enters the battlefield, it deals 2 damage to each creature and each player.

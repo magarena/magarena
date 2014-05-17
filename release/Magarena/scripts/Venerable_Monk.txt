@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/2
 ability=When SN enters the battlefield, you gain 2 life.
 timing=main
+oracle=When Venerable Monk enters the battlefield, you gain 2 life.

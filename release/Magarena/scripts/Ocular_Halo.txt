@@ -10,3 +10,4 @@ ability=Enchanted creature has "{T}: Draw a card."
 enchant=pump,pos creature
 timing=aura
 requires_groovy_code
+oracle=Enchant creature. Enchanted creature has "{T}: Draw a card.". {W}: Enchanted creature gains vigilance until end of turn.

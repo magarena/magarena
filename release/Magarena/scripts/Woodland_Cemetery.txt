@@ -8,3 +8,4 @@ mana=b3g3
 ability={T}: Add {B} or {G} to your mana pool.;\
         SN enters the battlefield tapped unless you control a Swamp or a Forest.
 timing=land
+oracle=Woodland Cemetery enters the battlefield tapped unless you control a Swamp or a Forest. {T}: Add {B} or {G} to your mana pool.

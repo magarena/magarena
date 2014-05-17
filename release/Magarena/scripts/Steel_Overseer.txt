@@ -9,3 +9,4 @@ cost={2}
 pt=1/1
 ability={T}: Put a +1/+1 counter on each artifact creature you control.
 timing=main
+oracle={T}: Put a +1/+1 counter on each artifact creature you control.

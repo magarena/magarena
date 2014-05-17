@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=4/3
 ability={G}: Regenerate SN.
 timing=main
+oracle={G}: Regenerate Cudgel Troll.

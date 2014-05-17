@@ -11,3 +11,4 @@ ability=Flash;\
         Enchanted creature gets -2/-1.
 timing=flash
 enchant=weaken -2/-1,neg creature
+oracle=Flash. Enchant creature. Enchanted creature gets -2/-1.

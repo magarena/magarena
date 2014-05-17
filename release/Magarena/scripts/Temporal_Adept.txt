@@ -9,3 +9,4 @@ cost={1}{U}{U}
 pt=1/1
 ability={U}{U}{U},{T}:Return target permanent to its owner's hand.
 timing=main
+oracle={U}{U}{U}, {T}: Return target permanent to its owner's hand.

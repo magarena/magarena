@@ -9,3 +9,4 @@ cost={R}
 pt=0/2
 ability=Sacrifice a Goblin: Regenerate target creature.
 timing=main
+oracle=Sacrifice a Goblin: Regenerate target creature.

@@ -10,3 +10,4 @@ pt=1/1
 ability=all sliver creatures have "When SN enters the battlefield, destroy target artifact or enchantment."
 static=all
 timing=main
+oracle=All Slivers have "When this permanent enters the battlefield, destroy target artifact or enchantment."

@@ -11,3 +11,4 @@ ability=trample;haste;\
         SN enters the battlefield with X +1/+0 counters on it.;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
+oracle=Trample, haste. Lightning Serpent enters the battlefield with X +1/+0 counters on it. At the beginning of the end step, sacrifice Lightning Serpent.

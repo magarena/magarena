@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{W}
 ability=Sacrifice a creature: Regenerate target creature.
 timing=enchantment
+oracle=Sacrifice a creature: Regenerate target creature.

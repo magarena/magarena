@@ -8,3 +8,4 @@ subtype=Human,Wizard
 cost={5}{B}
 timing=smain
 requires_groovy_code
+oracle=Dakmor Sorceress's power is equal to the number of Swamps you control.

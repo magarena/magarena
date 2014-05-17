@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 ability={G}, {T}, Discard a card: Regenerate target creature.
 timing=main
+oracle={G}, {T}, Discard a card: Regenerate target creature.

@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 ability=Whenever another Elf enters the battlefield, put a +1/+1 counter on SN.
 timing=main
+oracle=Whenever another Elf enters the battlefield, put a +1/+1 counter on Elvish Vanguard.

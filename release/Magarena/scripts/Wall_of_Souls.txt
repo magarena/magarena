@@ -10,3 +10,4 @@ pt=0/4
 ability=defender
 timing=main
 requires_groovy_code
+oracle=Defender. Whenever Wall of Souls is dealt combat damage, it deals that much damage to target opponent.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={U}
 ability=Sacrifice SN:Return target creature to its owner's hand.
 timing=enchantment
+oracle=Sacrifice Seal of Removal: Return target creature to its owner's hand.

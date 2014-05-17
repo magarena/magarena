@@ -9,3 +9,4 @@ subtype=Human,Soldier
 cost={4}{W}
 pt=2/5
 timing=main
+oracle=Vigilance

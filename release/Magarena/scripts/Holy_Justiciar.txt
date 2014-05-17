@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/1
 timing=main
 requires_groovy_code
+oracle={2}{W}, {T}: Tap target creature. If that creature is a Zombie, exile it.

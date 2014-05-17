@@ -9,3 +9,4 @@ cost={G}
 pt=2/1
 ability=SN can't block.
 timing=main
+oracle=Jungle Lion can't block.

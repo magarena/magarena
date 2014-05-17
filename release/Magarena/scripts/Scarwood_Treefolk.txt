@@ -9,3 +9,4 @@ cost={3}{G}
 pt=3/5
 ability=SN enters the battlefield tapped.
 timing=main
+oracle=Scarwood Treefolk enters the battlefield tapped.

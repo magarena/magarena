@@ -9,3 +9,4 @@ cost={B}{R}{G}
 pt=2/2
 ability=Sacrifice a creature: Put a +1/+1 counter on SN.
 timing=main
+oracle=Sacrifice a creature: Put a +1/+1 counter on Scarland Thrinax.

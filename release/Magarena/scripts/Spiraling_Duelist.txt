@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=3/1
 ability=SN has double strike as long as you control three or more artifacts.
 timing=main
+oracle=Metalcraft ? Spiraling Duelist has double strike as long as you control three or more artifacts.

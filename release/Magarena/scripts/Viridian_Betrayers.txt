@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=3/1
 timing=main
 requires_groovy_code
+oracle=Viridian Betrayers has infect as long as an opponent is poisoned.

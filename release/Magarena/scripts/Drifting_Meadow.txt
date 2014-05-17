@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         cycling {2}
 timing=tapland
+oracle=Drifting Meadow enters the battlefield tapped. {T}: Add {W} to your mana pool. Cycling {2}

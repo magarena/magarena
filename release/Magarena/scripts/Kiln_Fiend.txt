@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/2
 ability=Whenever you cast an instant or sorcery spell, SN gets +3/+0 until end of turn.
 timing=main
+oracle=Whenever you cast an instant or sorcery spell, Kiln Fiend gets +3/+0 until end of turn.

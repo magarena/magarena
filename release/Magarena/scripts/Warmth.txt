@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}
 ability=Whenever an opponent casts a red spell, you gain 2 life.
 timing=enchantment
+oracle=Whenever an opponent casts a red spell, you gain 2 life.

@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 ability=Whenever an opponent casts an artifact spell, put a +1/+1 counter on SN.
 timing=main
+oracle=Whenever an opponent casts an artifact spell, put a +1/+1 counter on Citanul Druid.

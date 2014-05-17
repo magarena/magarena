@@ -9,3 +9,4 @@ cost={R}{W}
 pt=2/1
 ability={T}: Target creature can't attack or block this turn.
 timing=smain
+oracle={T}: Target creature can't attack or block this turn.

@@ -10,3 +10,4 @@ ability=Enchanted creature gets +1/+0 and has trample.;\
         Cycling {2}
 timing=aura
 enchant=trample,pos creature
+oracle=Enchant creature. Enchanted creature gets +1/+0 and has trample. Cycling {2}

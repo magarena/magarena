@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{W}{W}
 ability=Whenever a creature enters the battlefield under your control, put a +1/+1 counter on each creature you control.
 timing=enchantment
+oracle=Whenever a creature enters the battlefield under your control, put a +1/+1 counter on each creature you control.

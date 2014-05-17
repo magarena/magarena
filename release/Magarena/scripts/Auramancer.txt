@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/2
 ability=When SN enters the battlefield, you may return target enchantment card from your graveyard to your hand.
 timing=main
+oracle=When Auramancer enters the battlefield, you may return target enchantment card from your graveyard to your hand.

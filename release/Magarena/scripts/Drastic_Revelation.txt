@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{U}{B}{R}
 timing=main
 requires_groovy_code
+oracle=Discard your hand. Draw seven cards, then discard three cards at random.

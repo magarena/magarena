@@ -10,3 +10,4 @@ pt=4/5
 ability=flying
 timing=fmain
 requires_groovy_code
+oracle=Flying. You have hexproof.

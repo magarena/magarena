@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Sorin's Vengeance deals 10 damage to target player and you gain 10 life.

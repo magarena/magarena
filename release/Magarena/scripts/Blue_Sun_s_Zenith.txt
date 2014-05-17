@@ -7,3 +7,4 @@ type=Instant
 cost={X}{U}{U}{U}
 timing=pumpFlash
 requires_groovy_code
+oracle=Target player draws X cards. Shuffle Blue Sun's Zenith into its owner's library.

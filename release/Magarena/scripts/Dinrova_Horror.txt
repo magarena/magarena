@@ -9,3 +9,4 @@ cost={4}{U}{B}
 pt=4/4
 timing=main
 requires_groovy_code
+oracle=When Dinrova Horror enters the battlefield, return target permanent to its owner's hand, then that player discards a card.

@@ -7,3 +7,4 @@ type=Artifact
 cost={4}
 timing=artifact
 requires_groovy_code
+oracle=At the beginning of each player's draw step, that player puts the cards in his or her hand on the bottom of his or her library in any order, then draws that many cards.

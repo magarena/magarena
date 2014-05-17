@@ -9,3 +9,4 @@ cost={2}{B}{B}
 enchant=default,neg land
 timing=enchantment
 requires_groovy_code
+oracle=Enchant land. At the beginning of the upkeep of enchanted land's controller, Cursed Land deals 1 damage to that player.

@@ -9,3 +9,4 @@ cost={4}{B}{B}
 enchant=pump,pos land
 ability=Enchanted land has "{T}: Target player loses 3 life."
 timing=enchantment
+oracle=Enchant land. Enchanted land has "{T}: Target player loses 3 life."

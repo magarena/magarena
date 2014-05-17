@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 ability=Whenever you cast an artifact spell, you may have target creature get +2/+0 and gain deathtouch until end of turn.
 timing=main
+oracle=Whenever you cast an artifact spell, you may have target creature get +2/+0 and gain deathtouch until end of turn.

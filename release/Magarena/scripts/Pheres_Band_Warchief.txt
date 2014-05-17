@@ -11,3 +11,4 @@ ability=Vigilance;\
         Trample;\
         Other Centaur creatures you control get +1/+1 and have vigilance and trample.
 timing=main
+oracle=Vigilance, trample. Other Centaur creatures you control get +1/+1 and have vigilance and trample.

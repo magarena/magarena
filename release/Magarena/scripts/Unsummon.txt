@@ -8,3 +8,4 @@ type=Instant
 cost={U}
 effect=Return target creature to its owner's hand.
 timing=removal
+oracle=Return target creature to its owner's hand.

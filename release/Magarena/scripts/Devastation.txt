@@ -7,3 +7,4 @@ type=Sorcery
 cost={5}{R}{R}
 effect=Destroy all creatures and lands.
 timing=main
+oracle=Destroy all creatures and lands.

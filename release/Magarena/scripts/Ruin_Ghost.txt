@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle={W}, {T}: Exile target land you control, then return it to the battlefield under your control.

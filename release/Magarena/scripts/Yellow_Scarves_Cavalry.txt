@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/1
 ability=horsemanship;SN can't block.
 timing=main
+oracle=Horsemanship. Yellow Scarves Cavalry can't block.

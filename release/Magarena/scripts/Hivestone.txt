@@ -8,3 +8,4 @@ cost={2}
 static=player
 timing=main
 requires_groovy_code
+oracle=Creatures you control are Slivers in addition to their other creature types.

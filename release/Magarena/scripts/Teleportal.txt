@@ -8,3 +8,4 @@ type=Sorcery
 cost={U}{R}
 timing=pump
 requires_groovy_code
+oracle=Target creature you control gets +1/+0 until end of turn and can't be blocked this turn. Overload {3}{U}{R}

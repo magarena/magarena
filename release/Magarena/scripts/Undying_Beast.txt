@@ -9,3 +9,4 @@ cost={3}{B}
 pt=3/2
 timing=main
 requires_groovy_code=Dark Revenant
+oracle=When Undying Beast dies, put it on top of its owner's library.

@@ -9,3 +9,4 @@ cost={3}{U}
 pt=1/4
 timing=main
 requires_groovy_code
+oracle=When Cryptic Annelid enters the battlefield, scry 1, then scry 2, then scry 3.

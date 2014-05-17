@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=SN gets +1/+2 as long as you control a Forest.
 timing=main
+oracle=Loam Lion gets +1/+2 as long as you control a Forest.

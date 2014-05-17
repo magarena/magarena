@@ -9,3 +9,4 @@ cost={2}{B}
 pt=1/1
 timing=main
 requires_groovy_code=Nim Grotesque
+oracle=Nim Lasher gets +1/+0 for each artifact you control.

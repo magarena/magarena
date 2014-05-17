@@ -9,3 +9,4 @@ cost={2}{B}
 pt=1/1
 ability=When SN dies, target player loses 2 life.
 timing=main
+oracle=When Infectious Host dies, target player loses 2 life.

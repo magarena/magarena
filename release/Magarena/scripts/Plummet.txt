@@ -8,3 +8,4 @@ type=Instant
 cost={1}{G}
 timing=removal
 effect=Destroy target creature with flying.
+oracle=Destroy target creature with flying.

@@ -7,3 +7,4 @@ type=Artifact
 cost={4}
 timing=smain
 requires_groovy_code
+oracle=At the beginning of each opponent's upkeep, Skullcage deals 2 damage to that player unless he or she has exactly three or exactly four cards in hand.

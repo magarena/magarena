@@ -7,3 +7,4 @@ type=Instant
 cost={2}{W}{W}
 effect=You gain 7 life.
 timing=draw
+oracle=You gain 7 life.

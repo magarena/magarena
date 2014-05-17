@@ -9,3 +9,4 @@ cost={U}{B}{B}{R}
 pt=3/5
 ability={T}, {YourTurn}: Target player discards a card at random.
 timing=main
+oracle={T}: Target player discards a card at random. Activate this ability only during your turn.

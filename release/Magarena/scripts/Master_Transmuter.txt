@@ -9,3 +9,4 @@ cost={3}{U}
 pt=1/2
 ability={U}, {T}, Return an artifact you control to its owner's hand: You may put an artifact card from your hand onto the battlefield.
 timing=main
+oracle={U}, {T}, Return an artifact you control to its owner's hand: You may put an artifact card from your hand onto the battlefield.

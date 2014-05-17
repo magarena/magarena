@@ -13,3 +13,4 @@ ability=SN has trample as long as you control a Beast.;\
         SN has flying as long as you control a Wizard.;\
         SN has "{B}: Regenerate SN." as long as you control a Zombie.
 timing=main
+oracle=Tribal Golem has trample as long as you control a Beast, haste as long as you control a Goblin, first strike as long as you control a Soldier, flying as long as you control a Wizard, and "{B}: Regenerate Tribal Golem" as long as you control a Zombie.

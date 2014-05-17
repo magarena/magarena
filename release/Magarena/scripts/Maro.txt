@@ -8,3 +8,4 @@ subtype=Elemental
 cost={2}{G}{G}
 timing=main
 requires_groovy_code
+oracle=Maro's power and toughness are each equal to the number of cards in your hand.

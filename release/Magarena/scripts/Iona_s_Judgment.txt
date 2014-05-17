@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{W}
 timing=removal
 effect=Exile target creature or enchantment.
+oracle=Exile target creature or enchantment.

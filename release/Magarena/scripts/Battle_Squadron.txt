@@ -9,3 +9,4 @@ cost={3}{R}{R}
 ability=flying
 timing=main
 requires_groovy_code=Scion of the Wild
+oracle=Flying. Battle Squadron's power and toughness are each equal to the number of creatures you control.

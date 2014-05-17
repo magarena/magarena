@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability={B}: SN gains fear until end of turn.
 timing=main
+oracle={B}: Hooded Kavu gains fear until end of turn.

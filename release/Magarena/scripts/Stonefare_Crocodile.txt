@@ -9,3 +9,4 @@ ability={2}{B}: SN gains lifelink until end of turn.
 cost={2}{G}
 pt=3/2
 timing=main
+oracle={2}{B}: Stonefare Crocodile gains lifelink until end of turn.

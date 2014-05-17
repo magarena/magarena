@@ -7,3 +7,4 @@ type=Instant
 cost={1}{U}
 timing=main
 requires_groovy_code
+oracle=Tap target artifact, creature, or land. Draw a card at the beginning of the next turn's upkeep.

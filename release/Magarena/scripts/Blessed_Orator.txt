@@ -10,3 +10,4 @@ pt=1/4
 ability=other creatures you control get +0/+1
 static=player
 timing=main
+oracle=Other creatures you control get +0/+1.

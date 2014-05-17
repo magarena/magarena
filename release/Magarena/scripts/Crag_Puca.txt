@@ -9,3 +9,4 @@ cost={U/R}{U/R}{U/R}
 pt=2/4
 ability={U/R}: Switch SN's power and toughness until end of turn.
 timing=main
+oracle={U/R}: Switch Crag Puca's power and toughness until end of turn.

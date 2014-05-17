@@ -9,3 +9,4 @@ cost={2}{W}{W}
 pt=2/3
 timing=main
 requires_groovy_code
+oracle=Artifacts, creatures, and lands your opponents control enter the battlefield tapped.

@@ -10,3 +10,4 @@ pt=3/3
 ability=flying;vigilance;\
         {W}{B}, Pay 3 life: Regenerate SN.
 timing=main
+oracle=Flying, vigilance. {W}{B}, Pay 3 life: Regenerate Sentry of the Underworld.

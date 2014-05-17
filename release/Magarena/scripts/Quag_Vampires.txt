@@ -9,3 +9,4 @@ cost={B}
 pt=1/1
 ability=swampwalk;enters with counter +1/+1 for each kick {1}{B}
 timing=main
+oracle=Multikicker {1}{B}. Swampwalk. Quag Vampires enters the battlefield with a +1/+1 counter on it for each time it was kicked.

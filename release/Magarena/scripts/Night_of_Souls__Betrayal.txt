@@ -8,3 +8,4 @@ cost={2}{B}{B}
 ability=all creatures get -1/-1
 static=all
 timing=enchantment
+oracle=All creatures get -1/-1.

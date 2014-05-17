@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 effect=SN deals 1 damage to each attacking creature.
 timing=block
+oracle=Rain of Blades deals 1 damage to each attacking creature.

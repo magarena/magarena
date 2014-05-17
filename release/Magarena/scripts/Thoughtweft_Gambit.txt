@@ -7,3 +7,4 @@ type=Instant
 cost={4}{W/U}{W/U}
 timing=tapping
 requires_groovy_code
+oracle=Tap all creatures your opponents control and untap all creatures you control.

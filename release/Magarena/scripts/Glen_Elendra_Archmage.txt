@@ -11,3 +11,4 @@ ability=flying;\
         {U},Sacrifice SN: Counter target noncreature spell.;\
         persist
 timing=main
+oracle=Flying. {U}, Sacrifice Glen Elendra Archmage: Counter target noncreature spell. Persist

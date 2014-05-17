@@ -8,3 +8,4 @@ cost={U}
 effect=Target creature you control gets +0/+1 and gains hexproof until end of turn.
 timing=pump
 requires_groovy_code
+oracle=Target creature you control gets +0/+1 and gains hexproof until end of turn. Overload {1}{U}

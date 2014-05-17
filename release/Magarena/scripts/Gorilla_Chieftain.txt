@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=3/3
 ability={1}{G}: Regenerate SN.
 timing=main
+oracle={1}{G}: Regenerate Gorilla Chieftain.

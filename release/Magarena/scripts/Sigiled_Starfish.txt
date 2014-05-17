@@ -9,3 +9,4 @@ cost={1}{U}
 pt=0/3
 ability={T}: Scry 1.
 timing=main
+oracle={T}: Scry 1.

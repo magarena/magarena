@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability={R}: SN gains protection from red until end of turn.
 timing=main
+oracle={R}: Keeper of Kookus gains protection from red until end of turn.

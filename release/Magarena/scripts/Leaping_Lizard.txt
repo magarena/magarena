@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=2/3
 ability={1}{G}:SN gets -0/-1 and gains flying until end of turn.
 timing=main
+oracle={1}{G}: Leaping Lizard gets -0/-1 and gains flying until end of turn.

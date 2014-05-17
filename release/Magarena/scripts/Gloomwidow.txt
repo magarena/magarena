@@ -9,3 +9,4 @@ cost={2}{G}
 pt=3/3
 ability=reach;SN can block only creatures with flying.
 timing=main
+oracle=Reach. Gloomwidow can block only creatures with flying.

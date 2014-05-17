@@ -10,3 +10,4 @@ pt=2/2
 ability=all sliver creatures have reach
 static=all
 timing=main
+oracle=All Sliver creatures have reach.

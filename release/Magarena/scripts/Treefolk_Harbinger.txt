@@ -9,3 +9,4 @@ cost={G}
 pt=0/3
 ability=When SN enters the battlefield, you may search your library for a Treefolk or Forest card, reveal it, then shuffle your library and put that card on top of it.
 timing=main
+oracle=When Treefolk Harbinger enters the battlefield, you may search your library for a Treefolk or Forest card, reveal it, then shuffle your library and put that card on top of it.

@@ -9,3 +9,4 @@ subtype=Forest
 mana=g4
 ability={T}: Add {G} to your mana pool.
 timing=land
+oracle=G

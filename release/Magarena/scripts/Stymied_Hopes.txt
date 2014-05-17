@@ -7,3 +7,4 @@ type=Instant
 cost={1}{U}
 timing=counter
 requires_groovy_code
+oracle=Counter target spell unless its controller pays {1}. Scry 1.

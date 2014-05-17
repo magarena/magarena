@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=Discard a creature card: SN gets +2/+2 until end of turn.
 timing=main
+oracle=Discard a creature card: Vampire Hounds gets +2/+2 until end of turn.

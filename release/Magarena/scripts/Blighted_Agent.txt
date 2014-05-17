@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/1
 ability=infect;SN can't be blocked.
 timing=main
+oracle=Infect. Blighted Agent can't be blocked.

@@ -9,3 +9,4 @@ cost={1}{G}
 pt=2/2
 ability=SN gets +2/+2 as long as you control three or more artifacts.
 timing=main
+oracle=Metalcraft ? Carapace Forger gets +2/+2 as long as you control three or more artifacts.

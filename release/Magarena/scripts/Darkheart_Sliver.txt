@@ -10,3 +10,4 @@ pt=2/2
 ability=all slivers have "Sacrifice SN: You gain 3 life."
 static=all
 timing=main
+oracle=All Slivers have "Sacrifice this permanent: You gain 3 life."

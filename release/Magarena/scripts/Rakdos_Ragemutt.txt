@@ -9,3 +9,4 @@ ability=haste;lifelink
 cost={3}{B}{R}
 pt=3/3
 timing=main
+oracle=Lifelink, haste

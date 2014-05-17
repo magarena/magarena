@@ -11,3 +11,4 @@ ability=Bestow {5}{R};\
         First strike;\
         Enchanted creature gets +2/+2 and has first strike.
 timing=main
+oracle=Bestow {5}{R}. First strike. Enchanted creature gets +2/+2 and has first strike.

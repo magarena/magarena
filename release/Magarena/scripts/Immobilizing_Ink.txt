@@ -10,3 +10,4 @@ ability=Enchanted creature doesn't untap during its controller's untap step.;\
         Enchanted creature has "{1}, Discard a card: Untap SN."
 timing=aura
 enchant=tap,creature
+oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. Enchanted creature has "{1}, Discard a card: Untap this creature."

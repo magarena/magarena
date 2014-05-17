@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=6/4
 ability=Whenever SN attacks or blocks, sacrifice a land.
 timing=main
+oracle=Whenever Lesser Gargadon attacks or blocks, sacrifice a land.

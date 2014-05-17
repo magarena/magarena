@@ -7,3 +7,4 @@ type=Instant
 cost={G}{G}
 effect=You gain 6 life.
 timing=removal
+oracle=You gain 6 life.

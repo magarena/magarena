@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability=SN gets +1/+2 as long as an opponent controls a nonbasic land.
 timing=main
+oracle=Skyshroud Elite gets +1/+2 as long as an opponent controls a nonbasic land.

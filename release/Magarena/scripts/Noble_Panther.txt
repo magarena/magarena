@@ -9,3 +9,4 @@ cost={1}{G}{W}
 pt=3/3
 ability={1}: SN gains first strike until end of turn.
 timing=main
+oracle={1}: Noble Panther gains first strike until end of turn.

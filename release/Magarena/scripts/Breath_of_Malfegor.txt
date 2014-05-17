@@ -7,3 +7,4 @@ type=Instant
 cost={3}{B}{R}
 effect=SN deals 5 damage to each opponent.
 timing=flash
+oracle=Breath of Malfegor deals 5 damage to each opponent.

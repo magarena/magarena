@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=4/4
 ability=As long as you control three or more artifacts, SN gets +4/+4 and has trample.
 timing=main
+oracle=Metalcraft ? As long as you control three or more artifacts, Ezuri's Brigade gets +4/+4 and has trample.

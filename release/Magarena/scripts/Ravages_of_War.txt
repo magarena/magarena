@@ -8,3 +8,4 @@ type=Sorcery
 cost={3}{W}
 effect=Destroy all lands.
 timing=removal
+oracle=Destroy all lands.

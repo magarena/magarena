@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{G}
 effect=Target creature gets +4/+4 until end of turn.
 timing=fmain
+oracle=Target creature gets +4/+4 until end of turn.

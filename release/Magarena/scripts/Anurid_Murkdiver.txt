@@ -9,3 +9,4 @@ subtype=Zombie,Frog,Beast
 cost={4}{B}{B}
 pt=4/3
 timing=main
+oracle=Swampwalk

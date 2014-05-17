@@ -9,3 +9,4 @@ subtype=Drake
 cost={4}{U}
 pt=2/5
 timing=main
+oracle=Flying

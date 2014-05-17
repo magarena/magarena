@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability=When SN dies, you gain 2 life.
 timing=artifact
+oracle=When Onulet dies, you gain 2 life.

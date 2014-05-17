@@ -10,3 +10,4 @@ pt=0/1
 ability=vigilance
 timing=main
 requires_groovy_code
+oracle=Vigilance. Rabid Wombat gets +2/+2 for each Aura attached to it.

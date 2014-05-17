@@ -8,3 +8,4 @@ subtype=Elemental
 cost={3}{R}
 timing=main
 requires_groovy_code
+oracle=First strike. Soulsurge Elemental's power is equal to the number of creatures you control.

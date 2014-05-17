@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=4/4
 ability=Sacrifice a Beast: You gain 4 life.
 timing=main
+oracle=Sacrifice a Beast: You gain 4 life.

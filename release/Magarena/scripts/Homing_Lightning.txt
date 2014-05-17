@@ -7,3 +7,4 @@ type=Instant
 cost={2}{R}{R}
 timing=removal
 requires_groovy_code
+oracle=Homing Lightning deals 4 damage to target creature and each other creature with the same name as that creature.

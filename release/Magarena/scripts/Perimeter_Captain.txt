@@ -10,3 +10,4 @@ pt=0/4
 ability=defender
 timing=smain
 requires_groovy_code
+oracle=Defender. Whenever a creature you control with defender blocks, you may gain 2 life.

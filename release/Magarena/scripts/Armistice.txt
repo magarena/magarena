@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{W}
 timing=enchantment
 requires_groovy_code
+oracle={3}{W}{W}: You draw a card and target opponent gains 3 life.

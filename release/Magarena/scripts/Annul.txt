@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Counter target artifact or enchantment spell.
 timing=counter
+oracle=Counter target artifact or enchantment spell.

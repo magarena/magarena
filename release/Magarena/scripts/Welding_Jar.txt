@@ -7,3 +7,4 @@ type=Artifact
 cost={0}
 ability=Sacrifice SN: Regenerate target artifact.
 timing=artifact
+oracle=Sacrifice Welding Jar: Regenerate target artifact.

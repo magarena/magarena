@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{W}{W}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature enters the battlefield under your control, you gain life equal to its toughness.

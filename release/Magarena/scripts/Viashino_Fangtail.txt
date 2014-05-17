@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=3/3
 ability={T}: SN deals 1 damage to target creature or player.
 timing=main
+oracle={T}: Viashino Fangtail deals 1 damage to target creature or player.

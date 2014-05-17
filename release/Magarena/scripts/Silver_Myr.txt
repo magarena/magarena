@@ -9,3 +9,4 @@ cost={2}
 pt=1/1
 ability={T}: Add {U} to your mana pool.
 timing=main
+oracle={T}: Add {U} to your mana pool.

@@ -9,3 +9,4 @@ cost={5}{U}{U}
 pt=5/5
 ability=SN can't be blocked as long as defending player controls an artifact.
 timing=main
+oracle=Scrapdiver Serpent can't be blocked as long as defending player controls an artifact.

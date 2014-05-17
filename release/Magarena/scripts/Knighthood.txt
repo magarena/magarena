@@ -8,3 +8,4 @@ cost={2}{W}
 ability=creatures you control have first strike
 static=player
 timing=enchantment
+oracle=Creatures you control have first strike.

@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=As long as you have seven or more cards in hand, SN gets +2/+1 and has fear.
 timing=main
+oracle=As long as you have seven or more cards in hand, Deathmask Nezumi gets +2/+1 and has fear.

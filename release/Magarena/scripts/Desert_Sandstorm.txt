@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{R}
 effect=SN deals 1 damage to each creature.
 timing=main
+oracle=Desert Sandstorm deals 1 damage to each creature.

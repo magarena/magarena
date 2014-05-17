@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=As long as SN is equipped, it has double strike.
 timing=main
+oracle=As long as Kor Duelist is equipped, it has double strike.

@@ -9,3 +9,4 @@ cost={2}{G}
 pt=1/2
 timing=fmain
 requires_groovy_code
+oracle=You may play two additional lands on each of your turns.

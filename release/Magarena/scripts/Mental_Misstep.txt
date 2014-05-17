@@ -8,3 +8,4 @@ cost={P/U}
 effect=Counter target spell with converted mana cost 1.
 ability=alt cost Pay 2 life named Pay 2 life
 timing=counter
+oracle=Counter target spell with converted mana cost 1.

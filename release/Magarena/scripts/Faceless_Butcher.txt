@@ -11,3 +11,4 @@ pt=2/3
 ability=When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
 requires_groovy_code
+oracle=When Faceless Butcher enters the battlefield, exile target creature other than Faceless Butcher. When Faceless Butcher leaves the battlefield, return the exiled card to the battlefield under its owner's control.

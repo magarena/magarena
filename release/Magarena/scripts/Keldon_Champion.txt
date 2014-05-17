@@ -11,3 +11,4 @@ ability=haste;\
         echo {2}{R}{R};\
         When SN enters the battlefield, SN deals 3 damage to target player.
 timing=fmain
+oracle=Haste. Echo {2}{R}{R}. When Keldon Champion enters the battlefield, it deals 3 damage to target player.

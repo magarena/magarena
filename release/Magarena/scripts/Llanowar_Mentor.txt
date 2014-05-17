@@ -9,3 +9,4 @@ cost={G}
 ability={G}, {T}, Discard a card: Put a 1/1 green Elf Druid creature token named Llanowar Elves onto the battlefield.
 pt=1/1
 timing=main
+oracle={G}, {T}, Discard a card: Put a 1/1 green Elf Druid creature token named Llanowar Elves onto the battlefield. It has "{T}: Add {G} to your mana pool."

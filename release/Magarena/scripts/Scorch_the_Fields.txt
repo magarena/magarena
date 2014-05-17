@@ -8,3 +8,4 @@ type=Sorcery
 cost={4}{R}
 timing=removal
 requires_groovy_code
+oracle=Destroy target land. Scorch the Fields deals 1 damage to each Human creature.

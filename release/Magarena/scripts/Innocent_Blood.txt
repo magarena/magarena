@@ -8,3 +8,4 @@ type=Sorcery
 cost={B}
 effect=Each player sacrifices a creature.
 timing=removal
+oracle=Each player sacrifices a creature.

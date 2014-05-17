@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{R}
 timing=main
 requires_groovy_code
+oracle=Destroy target Mountain. Peak Eruption deals 3 damage to that land's controller.

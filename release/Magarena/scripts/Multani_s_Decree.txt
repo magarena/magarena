@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{G}
 timing=main
 requires_groovy_code
+oracle=Destroy all enchantments. You gain 2 life for each enchantment destroyed this way.

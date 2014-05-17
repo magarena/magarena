@@ -9,3 +9,4 @@ cost={4}{W}
 enchant=pump,pos land
 ability=Enchanted land has "{T}: Tap target creature."
 timing=aura
+oracle=Enchant land. Enchanted land has "{T}: Tap target creature."

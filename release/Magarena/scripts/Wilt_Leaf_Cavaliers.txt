@@ -9,3 +9,4 @@ cost={G/W}{G/W}{G/W}
 pt=3/4
 ability=vigilance
 timing=main
+oracle=Vigilance

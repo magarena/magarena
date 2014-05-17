@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact. It can't be regenerated. That artifact's controller gains life equal to its converted mana cost.

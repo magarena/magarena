@@ -9,3 +9,4 @@ cost={2}{W}
 pt=1/4
 ability=Whenever SN attacks, you may pay {W}. If you do, tap target creature an opponent controls.
 timing=main
+oracle=Whenever Haazda Snare Squad attacks, you may pay {W}. If you do, tap target creature an opponent controls.

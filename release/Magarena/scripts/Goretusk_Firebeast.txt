@@ -9,3 +9,4 @@ cost={5}{R}
 pt=2/2
 ability=When SN enters the battlefield, SN deals 4 damage to target player.
 timing=main
+oracle=When Goretusk Firebeast enters the battlefield, it deals 4 damage to target player.

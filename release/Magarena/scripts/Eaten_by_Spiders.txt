@@ -8,3 +8,4 @@ type=Instant
 cost={2}{G}
 timing=removal
 requires_groovy_code
+oracle=Destroy target creature with flying and all Equipment attached to that creature.

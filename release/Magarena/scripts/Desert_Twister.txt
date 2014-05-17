@@ -8,3 +8,4 @@ type=Sorcery
 cost={4}{G}{G}
 timing=main
 effect=Destroy target permanent.
+oracle=Destroy target permanent.

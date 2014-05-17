@@ -10,3 +10,4 @@ pt=5/5
 ability=flying;\
         When SN enters the battlefield, you may return target artifact card from your graveyard to the battlefield.
 timing=main
+oracle=Flying. When Sharuum the Hegemon enters the battlefield, you may return target artifact card from your graveyard to the battlefield.

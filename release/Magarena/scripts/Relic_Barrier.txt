@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability={T}:Tap target artifact.
 timing=artifact
+oracle={T}: Tap target artifact.

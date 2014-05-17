@@ -9,3 +9,4 @@ cost={2}{U/B}{U/B}
 pt=3/3
 ability=SN can't be blocked by green creatures.
 timing=main
+oracle=Wanderbrine Rootcutters can't be blocked by green creatures.

@@ -9,3 +9,4 @@ cost={G}{G}
 pt=2/3
 timing=main
 requires_groovy_code
+oracle=If Nissa's Chosen would die, put it on the bottom of its owner's library instead.

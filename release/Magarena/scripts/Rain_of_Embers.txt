@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{R}
 effect=SN deals 1 damage to each creature and each player.
 timing=main
+oracle=Rain of Embers deals 1 damage to each creature and each player.

@@ -9,3 +9,4 @@ cost={2}{B}{B}
 pt=4/3
 ability=other black creatures get -1/-1
 timing=main
+oracle=Other black creatures get -1/-1.

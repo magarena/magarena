@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{R}
 ability={1},Discard a card at random:Put a +1/+1 counter on target creature.
 timing=enchantment
+oracle={1}, Discard a card at random: Put a +1/+1 counter on target creature.

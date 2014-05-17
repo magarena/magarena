@@ -9,3 +9,4 @@ subtype=Ogre
 cost={3}{R}
 pt=4/3
 timing=fmain
+oracle=Ogre Taskmaster can't block.

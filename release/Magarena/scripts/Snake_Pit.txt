@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{G}
 ability=Whenever an opponent casts a blue or black spell, you may put a 1/1 green Snake creature token onto the battlefield.
 timing=enchantment
+oracle=Whenever an opponent casts a blue or black spell, you may put a 1/1 green Snake creature token onto the battlefield.

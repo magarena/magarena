@@ -7,3 +7,4 @@ type=Instant
 cost={3}{R}
 timing=main
 requires_groovy_code
+oracle=Sudden Impact deals damage to target player equal to the number of cards in that player's hand.

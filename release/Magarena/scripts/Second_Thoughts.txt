@@ -7,3 +7,4 @@ type=Instant
 cost={4}{W}
 timing=removal
 requires_groovy_code
+oracle=Exile target attacking creature. Draw a card.

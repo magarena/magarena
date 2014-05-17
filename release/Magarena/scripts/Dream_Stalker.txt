@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/5
 ability=When SN enters the battlefield, return a permanent you control to its owner's hand.
 timing=main
+oracle=When Dream Stalker enters the battlefield, return a permanent you control to its owner's hand.

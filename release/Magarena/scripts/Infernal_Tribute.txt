@@ -7,3 +7,4 @@ type=Enchantment
 cost={B}{B}{B}
 ability={2}, Sacrifice a nontoken permanent: Draw a card.
 timing=enchantment
+oracle={2}, Sacrifice a nontoken permanent: Draw a card.

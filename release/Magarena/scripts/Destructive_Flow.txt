@@ -7,3 +7,4 @@ type=Enchantment
 cost={B}{R}{G}
 timing=enchantment
 requires_groovy_code
+oracle=At the beginning of each player's upkeep, that player sacrifices a nonbasic land.

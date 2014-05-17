@@ -10,3 +10,4 @@ pt=1/1
 ability=all sliver creatures have poisonous 1
 static=all
 timing=main
+oracle=All Sliver creatures have poisonous 1.

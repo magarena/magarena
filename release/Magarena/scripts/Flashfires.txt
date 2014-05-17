@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{R}
 effect=Destroy all Plains.
 timing=removal
+oracle=Destroy all Plains.

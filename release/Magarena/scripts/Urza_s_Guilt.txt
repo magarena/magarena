@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{U}{B}
 timing=main
 requires_groovy_code
+oracle=Each player draws two cards, then discards three cards, then loses 4 life.

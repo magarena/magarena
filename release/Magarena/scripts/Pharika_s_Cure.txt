@@ -7,3 +7,4 @@ type=Instant
 cost={B}{B}
 timing=removal
 requires_groovy_code=Douse in Gloom
+oracle=Pharika's Cure deals 2 damage to target creature and you gain 2 life.

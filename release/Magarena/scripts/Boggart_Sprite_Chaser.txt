@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/2
 ability=As long as you control a Faerie, SN gets +1/+1 and has flying.
 timing=main
+oracle=As long as you control a Faerie, Boggart Sprite-Chaser gets +1/+1 and has flying.

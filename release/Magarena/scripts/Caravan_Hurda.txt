@@ -9,3 +9,4 @@ subtype=Giant
 cost={4}{W}
 pt=1/5
 timing=main
+oracle=Lifelink

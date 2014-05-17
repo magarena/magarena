@@ -8,3 +8,4 @@ type=Sorcery
 cost={3}{R}{G}
 timing=removal
 requires_groovy_code
+oracle=Destroy target land. Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

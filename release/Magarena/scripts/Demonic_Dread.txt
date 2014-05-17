@@ -8,3 +8,4 @@ cost={1}{B}{R}
 effect=Target creature gains "SN can't block." until end of turn.
 ability=cascade
 timing=main
+oracle=Cascade. Target creature can't block this turn.

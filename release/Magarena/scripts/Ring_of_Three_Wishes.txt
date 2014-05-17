@@ -8,3 +8,4 @@ cost={5}
 ability=SN enters the battlefield with three wish counters on it.
 timing=artifact
 requires_groovy_code
+oracle=Ring of Three Wishes enters the battlefield with three wish counters on it. {5}, {T}, Remove a wish counter from Ring of Three Wishes: Search your library for a card and put that card into your hand. Then shuffle your library.

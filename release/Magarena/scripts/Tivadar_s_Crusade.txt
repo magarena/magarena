@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{W}{W}
 effect=Destroy all Goblins.
 timing=removal
+oracle=Destroy all Goblins.

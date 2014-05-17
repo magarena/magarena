@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{U}{B}
 timing=enchantment
 requires_groovy_code
+oracle=All creatures have "At the beginning of your upkeep, sacrifice this creature unless you pay 1 life."

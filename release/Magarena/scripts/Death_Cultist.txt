@@ -9,3 +9,4 @@ cost={B}
 pt=1/1
 ability=Sacrifice SN: Target player loses 1 life and you gain 1 life.
 timing=main
+oracle=Sacrifice Death Cultist: Target player loses 1 life and you gain 1 life.

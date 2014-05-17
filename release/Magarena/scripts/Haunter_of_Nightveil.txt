@@ -10,3 +10,4 @@ pt=3/4
 ability=creatures your opponents control get -1/-0
 static=opponent
 timing=main
+oracle=Creatures your opponents control get -1/-0.

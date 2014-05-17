@@ -8,3 +8,4 @@ cost={3}
 ability=Whenever a Mountain enters the battlefield under your control, you gain 1 life.;\
         Whenever you cast a red spell, you gain 1 life.
 timing=artifact
+oracle=Whenever you cast a red spell or a Mountain enters the battlefield under your control, you gain 1 life.

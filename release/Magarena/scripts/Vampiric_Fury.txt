@@ -7,3 +7,4 @@ type=Instant
 cost={1}{R}
 timing=pump
 requires_groovy_code
+oracle=Vampire creatures you control get +2/+0 and gain first strike until end of turn.

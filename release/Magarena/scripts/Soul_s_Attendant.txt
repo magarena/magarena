@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=Whenever another creature enters the battlefield, you may gain 1 life.
 timing=main
+oracle=Whenever another creature enters the battlefield, you may gain 1 life.

@@ -9,3 +9,4 @@ cost={3}{R}{R}
 pt=4/4
 ability=Whenever a land enters the battlefield under your control, SN gains flying until end of turn.
 timing=main
+oracle=Landfall ? Whenever a land enters the battlefield under your control, Geyser Glider gains flying until end of turn.

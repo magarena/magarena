@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{B}{B}
 effect=SN deals 3 damage to each creature and each player.
 timing=main
+oracle=Famine deals 3 damage to each creature and each player.

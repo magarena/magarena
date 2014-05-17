@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}{W}
 ability=artifact creatures you control get +2/+2
 timing=enchantment
+oracle=Artifact creatures you control get +2/+2.

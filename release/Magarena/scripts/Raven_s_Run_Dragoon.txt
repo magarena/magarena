@@ -9,3 +9,4 @@ cost={2}{G/W}{G/W}
 pt=3/3
 ability=SN can't be blocked by black creatures.
 timing=main
+oracle=Raven's Run Dragoon can't be blocked by black creatures.

@@ -9,3 +9,4 @@ cost={3}{R}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle={T}: Destroy target land unless its controller has Dwarven Driller deal 2 damage to him or her.

@@ -11,3 +11,4 @@ ability=deathtouch;\
         When SN enters the battlefield, Put two 2/2 black Zombie creature tokens onto the battlefield.;\
         Whenever SN attacks, put two 2/2 black Zombie creature tokens onto the battlefield.
 timing=main
+oracle=Deathtouch. Whenever Grave Titan enters the battlefield or attacks, put two 2/2 black Zombie creature tokens onto the battlefield.

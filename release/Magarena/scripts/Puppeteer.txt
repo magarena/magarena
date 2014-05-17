@@ -10,3 +10,4 @@ pt=1/2
 ability={U}, {T}: Tap target creature.;\
         {U}, {T}: Untap target creature.
 timing=main
+oracle={U}, {T}: You may tap or untap target creature.

@@ -11,3 +11,4 @@ ability=trample;\
         SN doesn't untap during your untap step.;\
         {YourUpkeep}, {9}: Untap SN.
 timing=main
+oracle=Trample. Colossus of Sardia doesn't untap during your untap step. {9}: Untap Colossus of Sardia. Activate this ability only during your upkeep.

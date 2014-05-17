@@ -10,3 +10,4 @@ pt=1/4
 ability=defender;\
         {B}: Regenerate SN.
 timing=smain
+oracle=Defender. {B}: Regenerate Wall of Bone.

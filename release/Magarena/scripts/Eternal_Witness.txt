@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=2/1
 ability=When SN enters the battlefield, you may return target card from your graveyard to your hand.
 timing=main
+oracle=When Eternal Witness enters the battlefield, you may return target card from your graveyard to your hand.

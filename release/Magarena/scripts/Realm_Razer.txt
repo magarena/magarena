@@ -9,3 +9,4 @@ cost={3}{R}{G}{W}
 pt=4/2
 timing=main
 requires_groovy_code
+oracle=When Realm Razer enters the battlefield, exile all lands. When Realm Razer leaves the battlefield, return the exiled cards to the battlefield tapped under their owners' control.

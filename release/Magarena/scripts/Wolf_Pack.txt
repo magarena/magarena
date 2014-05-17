@@ -9,3 +9,4 @@ cost={6}{G}{G}
 pt=7/6
 timing=main
 requires_groovy_code=Rhox
+oracle=You may have Wolf Pack assign its combat damage as though it weren't blocked.

@@ -9,3 +9,4 @@ cost={3}{G}{G}
 ability={G}: SN gets +1/-2 until end of turn.
 pt=2/7
 timing=main
+oracle={G}: Yavimaya Ancients gets +1/-2 until end of turn.

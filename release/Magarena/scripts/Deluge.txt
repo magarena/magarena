@@ -8,3 +8,4 @@ type=Instant
 cost={2}{U}
 timing=tapping
 requires_groovy_code
+oracle=Tap all creatures without flying.

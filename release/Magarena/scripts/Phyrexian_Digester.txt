@@ -9,3 +9,4 @@ subtype=Construct
 cost={3}
 pt=2/1
 timing=main
+oracle=Infect

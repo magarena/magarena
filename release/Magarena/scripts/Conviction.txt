@@ -10,3 +10,4 @@ ability=Enchanted creature gets +1/+3.;\
         {W}:Return SN to its owner's hand.
 timing=enchantment
 enchant=pump,pos creature
+oracle=Enchant creature. Enchanted creature gets +1/+3. {W}: Return Conviction to its owner's hand.

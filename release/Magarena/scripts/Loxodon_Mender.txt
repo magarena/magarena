@@ -9,3 +9,4 @@ cost={5}{W}
 pt=3/3
 ability={W}, {T}: Regenerate target artifact.
 timing=main
+oracle={W}, {T}: Regenerate target artifact.

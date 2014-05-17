@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}
 ability=Sacrifice SN: Destroy target artifact or enchantment.
 timing=enchantment
+oracle=Sacrifice Seal of Cleansing: Destroy target artifact or enchantment.

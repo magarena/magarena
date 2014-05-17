@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{G}{W}
 effect=Put target creature card from a graveyard onto the battlefield under your control.
 timing=main
+oracle=Put target creature card from a graveyard onto the battlefield under your control.

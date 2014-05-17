@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability={2}: SN gains mountainwalk until end of turn.
 timing=main
+oracle={2}: Enslaved Scout gains mountainwalk until end of turn.

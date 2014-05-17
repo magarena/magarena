@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}
 ability=At the beginning of your upkeep, you may gain 1 life.
 timing=enchantment
+oracle=At the beginning of your upkeep, you may gain 1 life.

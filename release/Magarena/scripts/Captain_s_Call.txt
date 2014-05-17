@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{W}
 effect=Put three 1/1 white Soldier creature tokens onto the battlefield.
 timing=token
+oracle=Put three 1/1 white Soldier creature tokens onto the battlefield.

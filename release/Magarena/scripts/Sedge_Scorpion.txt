@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability=deathtouch
 timing=main
+oracle=Deathtouch

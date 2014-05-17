@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 timing=pump
 requires_groovy_code
+oracle=Until end of turn, target land becomes a 3/3 creature that's still a land.

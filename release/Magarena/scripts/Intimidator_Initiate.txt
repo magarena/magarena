@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability=Whenever a player casts a red spell, you may pay {1}. If you do, target creature can't block this turn.
 timing=main
+oracle=Whenever a player casts a red spell, you may pay {1}. If you do, target creature can't block this turn.

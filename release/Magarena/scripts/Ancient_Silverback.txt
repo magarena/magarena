@@ -9,3 +9,4 @@ cost={4}{G}{G}
 pt=6/5
 ability={G}: Regenerate SN.
 timing=main
+oracle={G}: Regenerate Ancient Silverback.

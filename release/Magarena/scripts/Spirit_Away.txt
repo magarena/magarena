@@ -10,3 +10,4 @@ timing=aura
 ability=You control enchanted creature.;\
         Enchanted creature gets +2/+2 and has flying.
 enchant=gain control,neg creature
+oracle=Enchant creature. You control enchanted creature. Enchanted creature gets +2/+2 and has flying.

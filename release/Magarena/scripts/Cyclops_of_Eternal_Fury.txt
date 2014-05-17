@@ -9,3 +9,4 @@ cost={4}{R}{R}
 pt=5/3
 ability=Creatures you control have haste.
 timing=fmain
+oracle=Creatures you control have haste.

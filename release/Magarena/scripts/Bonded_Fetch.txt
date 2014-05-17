@@ -10,3 +10,4 @@ pt=0/2
 ability=defender;haste;\
         {T}: Draw a card, then discard a card.
 timing=fmain
+oracle=Defender, haste. {T}: Draw a card, then discard a card.

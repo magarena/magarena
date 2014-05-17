@@ -8,3 +8,4 @@ cost={1}{R}
 effect=Creatures you control get +1/+0 until end of turn.
 ability=buyback {2};storm
 timing=main
+oracle=Buyback {2}. Creatures you control get +1/+0 until end of turn. Storm

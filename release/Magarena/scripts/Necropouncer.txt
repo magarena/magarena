@@ -10,3 +10,4 @@ ability=Living weapon;\
         Equipped creature gets +3/+1 and has haste.;\
         Equip {2}
 timing=equipment
+oracle=Living weapon. Equipped creature gets +3/+1 and has haste. Equip {2}

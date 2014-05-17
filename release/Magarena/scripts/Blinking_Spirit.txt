@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/2
 ability={0}: Return SN to its owner's hand.
 timing=main
+oracle={0}: Return Blinking Spirit to its owner's hand.

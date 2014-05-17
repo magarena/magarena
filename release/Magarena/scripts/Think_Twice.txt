@@ -8,3 +8,4 @@ cost={1}{U}
 effect=Draw a card.
 ability=Flashback {2}{U}
 timing=draw
+oracle=Draw a card. Flashback {2}{U}

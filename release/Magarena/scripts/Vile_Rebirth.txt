@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 timing=token
 requires_groovy_code
+oracle=Exile target creature card from a graveyard. Put a 2/2 black Zombie creature token onto the battlefield.

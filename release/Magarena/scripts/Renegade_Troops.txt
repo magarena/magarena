@@ -9,3 +9,4 @@ cost={4}{R}
 pt=4/2
 ability=haste
 timing=main
+oracle=Haste

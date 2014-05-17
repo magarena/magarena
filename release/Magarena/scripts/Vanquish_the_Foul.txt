@@ -7,3 +7,4 @@ type=Sorcery
 cost={5}{W}
 timing=main
 requires_groovy_code
+oracle=Destroy target creature with power 4 or greater. Scry 1.

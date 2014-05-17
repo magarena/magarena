@@ -9,3 +9,4 @@ cost={1}{W}{W}
 ability=vigilance
 timing=main
 requires_groovy_code
+oracle=Vigilance. Cantivore's power and toughness are each equal to the number of enchantment cards in all graveyards.

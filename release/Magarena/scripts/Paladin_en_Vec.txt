@@ -9,3 +9,4 @@ cost={1}{W}{W}
 pt=2/2
 ability=first strike;protection from black;protection from red
 timing=main
+oracle=First strike, protection from black and from red

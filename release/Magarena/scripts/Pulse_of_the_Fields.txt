@@ -7,3 +7,4 @@ type=Instant
 cost={1}{W}{W}
 timing=main
 requires_groovy_code
+oracle=You gain 4 life. Then if an opponent has more life than you, return Pulse of the Fields to its owner's hand.

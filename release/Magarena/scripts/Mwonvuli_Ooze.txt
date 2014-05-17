@@ -9,3 +9,4 @@ cost={G}
 ability=cumulative upkeep {2}
 timing=main
 requires_groovy_code
+oracle=Cumulative upkeep {2}. Mwonvuli Ooze's power and toughness are each equal to 1 plus twice the number of age counters on it.

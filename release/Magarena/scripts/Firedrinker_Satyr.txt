@@ -9,3 +9,4 @@ cost={R}
 pt=2/1
 timing=main
 requires_groovy_code=Jackal Pup;Firedrinker Satyr
+oracle=Whenever Firedrinker Satyr is dealt damage, it deals that much damage to you. {1}{R}: Firedrinker Satyr gets +1/+0 until end of turn and deals 1 damage to you.

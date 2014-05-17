@@ -11,3 +11,4 @@ ability=other elf creatures have forestwalk;\
         other elf creatures have shroud
 static=all
 timing=main
+oracle=Other Elf creatures have forestwalk. Other Elves have shroud.

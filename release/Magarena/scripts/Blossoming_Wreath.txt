@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 timing=pump
 requires_groovy_code
+oracle=You gain life equal to the number of creature cards in your graveyard.

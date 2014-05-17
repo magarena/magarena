@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}
 timing=draw
 requires_groovy_code
+oracle=You draw X cards and you lose X life, where X is your devotion to black.

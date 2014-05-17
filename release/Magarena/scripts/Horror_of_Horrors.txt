@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{B}{B}
 ability=Sacrifice a Swamp:Regenerate target black creature.
 timing=enchantment
+oracle=Sacrifice a Swamp: Regenerate target black creature.

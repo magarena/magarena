@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability={3},{T}:Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=artifact
+oracle={3}, {T}: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.

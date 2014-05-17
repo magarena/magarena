@@ -9,3 +9,4 @@ cost={1}{W}
 pt=0/5
 ability=At the beginning of your upkeep, you gain 1 life.
 timing=main
+oracle=At the beginning of your upkeep, you gain 1 life.

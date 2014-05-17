@@ -7,3 +7,4 @@ type=Instant
 cost={1}{R}
 effect=SN deals 1 damage to each creature without flying.
 timing=removal
+oracle=Seismic Shudder deals 1 damage to each creature without flying.

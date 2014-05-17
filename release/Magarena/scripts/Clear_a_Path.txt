@@ -7,3 +7,4 @@ type=Sorcery
 cost={R}
 effect=Destroy target creature with defender.
 timing=main
+oracle=Destroy target creature with defender.

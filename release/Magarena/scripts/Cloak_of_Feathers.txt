@@ -7,3 +7,4 @@ type=Sorcery
 cost={U}
 timing=main
 requires_groovy_code
+oracle=Target creature gains flying until end of turn. Draw a card.

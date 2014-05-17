@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{U}
 timing=main
 requires_groovy_code
+oracle=Target creature can't be blocked this turn. Draw a card.

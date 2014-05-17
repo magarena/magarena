@@ -8,3 +8,4 @@ subtype=Merfolk
 cost={1}{U}
 timing=enchantment
 requires_groovy_code
+oracle=At the beginning of your end step, untap all Merfolk you control.

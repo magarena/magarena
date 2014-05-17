@@ -11,3 +11,4 @@ ability={1}: Untap SN.;\
         {4},{T}: Tap target creature.;\
         {5},{T}: Draw a card.
 timing=artifact
+oracle={1}: Untap Staff of Domination. {2}, {T}: You gain 1 life. {3}, {T}: Untap target creature. {4}, {T}: Tap target creature. {5}, {T}: Draw a card.

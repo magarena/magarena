@@ -8,3 +8,4 @@ subtype=Goblin
 cost={2}{R}
 ability=Whenever another Goblin you control is put into a graveyard from the battlefield, you may have SN deal 1 damage to target player.
 timing=enchantment
+oracle=Whenever another Goblin you control is put into a graveyard from the battlefield, you may have Boggart Shenanigans deal 1 damage to target player.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G/W}{G/W}{G/W}
 ability=other permanents you control have hexproof
 timing=enchantment
+oracle=Other permanents you control have hexproof.

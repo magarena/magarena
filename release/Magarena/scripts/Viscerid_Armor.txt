@@ -10,3 +10,4 @@ ability=Enchanted creature gets +1/+1.;\
         {1}{U}:Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
+oracle=Enchant creature. Enchanted creature gets +1/+1. {1}{U}: Return Viscerid Armor to its owner's hand.

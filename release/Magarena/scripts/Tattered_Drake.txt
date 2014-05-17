@@ -9,3 +9,4 @@ cost={4}{U}
 pt=2/2
 ability=flying;{B}: Regenerate SN.
 timing=main
+oracle=Flying. {B}: Regenerate Tattered Drake.

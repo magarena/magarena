@@ -9,3 +9,4 @@ cost={4}
 pt=2/3
 ability={1}{U}: SN gains flying until end of turn.
 timing=main
+oracle={1}{U}: Cobalt Golem gains flying until end of turn.

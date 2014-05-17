@@ -10,3 +10,4 @@ pt=4/4
 ability=Flying;\
         When SN enters the battlefield, scry 2.
 timing=main
+oracle=Flying. When Horizon Scholar enters the battlefield, scry 2.

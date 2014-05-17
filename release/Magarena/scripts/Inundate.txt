@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{U}{U}{U}
 timing=main
 requires_groovy_code
+oracle=Return all nonblue creatures to their owners' hands.

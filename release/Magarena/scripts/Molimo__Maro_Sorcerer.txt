@@ -9,3 +9,4 @@ cost={4}{G}{G}{G}
 ability=trample
 timing=smain
 requires_groovy_code
+oracle=Trample. Molimo, Maro-Sorcerer's power and toughness are each equal to the number of lands you control.

@@ -7,3 +7,4 @@ type=Artifact
 cost={4}
 ability={5},{T}:Draw two cards, then discard a card.
 timing=artifact
+oracle={5}, {T}: Draw two cards, then discard a card.

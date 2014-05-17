@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 ability=SN can't be blocked except by creatures with flying or reach.
 timing=main
+oracle=Orchard Spirit can't be blocked except by creatures with flying or reach.

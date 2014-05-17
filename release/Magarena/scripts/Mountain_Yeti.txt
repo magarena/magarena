@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=3/3
 ability=mountainwalk;protection from white
 timing=main
+oracle=Mountainwalk, protection from white

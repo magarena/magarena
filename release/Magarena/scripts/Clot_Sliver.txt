@@ -10,3 +10,4 @@ pt=1/1
 static=all
 ability=all Slivers have "{2}: Regenerate SN."
 timing=main
+oracle=All Slivers have "{2}: Regenerate this permanent."

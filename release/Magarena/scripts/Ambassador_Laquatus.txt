@@ -9,3 +9,4 @@ cost={1}{U}{U}
 pt=1/3
 ability={3}: Target player puts the top three cards of his or her library into his or her graveyard.
 timing=main
+oracle={3}: Target player puts the top three cards of his or her library into his or her graveyard.

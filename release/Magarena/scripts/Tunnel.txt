@@ -7,3 +7,4 @@ type=Instant
 cost={R}
 effect=Destroy target Wall. It can't be regenerated.
 timing=removal
+oracle=Destroy target Wall. It can't be regenerated.

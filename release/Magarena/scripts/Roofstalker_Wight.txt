@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 ability={1}{U}: SN gains flying until end of turn.
 timing=main
+oracle={1}{U}: Roofstalker Wight gains flying until end of turn.

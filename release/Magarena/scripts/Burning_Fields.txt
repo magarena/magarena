@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{R}
 effect=SN deals 5 damage to target opponent.
 timing=main
+oracle=Burning Fields deals 5 damage to target opponent.

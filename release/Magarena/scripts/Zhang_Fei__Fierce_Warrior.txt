@@ -9,3 +9,4 @@ cost={4}{W}{W}
 pt=4/4
 ability=vigilance;horsemanship
 timing=main
+oracle=Vigilance; horsemanship

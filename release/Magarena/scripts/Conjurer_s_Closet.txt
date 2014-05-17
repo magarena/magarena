@@ -7,3 +7,4 @@ type=Artifact
 cost={5}
 timing=main
 requires_groovy_code
+oracle=At the beginning of your end step, you may exile target creature you control, then return that card to the battlefield under your control.

@@ -8,3 +8,4 @@ cost={3}{W}
 static=player
 ability=untapped creatures you control get +0/+2
 timing=main
+oracle=Untapped creatures you control get +0/+2.

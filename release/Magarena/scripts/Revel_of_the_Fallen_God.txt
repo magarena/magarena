@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{R}{R}{G}{G}
 effect=Put four 2/2 red and green Satyr creature tokens with haste onto the battlefield.
 timing=main
+oracle=Put four 2/2 red and green Satyr creature tokens with haste onto the battlefield.

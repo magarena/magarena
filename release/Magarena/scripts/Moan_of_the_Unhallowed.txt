@@ -8,3 +8,4 @@ cost={2}{B}{B}
 effect=Put two 2/2 black Zombie creature tokens onto the battlefield.
 ability=Flashback {5}{B}{B}
 timing=main
+oracle=Put two 2/2 black Zombie creature tokens onto the battlefield. Flashback {5}{B}{B}

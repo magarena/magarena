@@ -8,3 +8,4 @@ type=Instant
 cost={X}{B}
 timing=removal
 requires_groovy_code
+oracle=Target creature gets -X/-X until end of turn.

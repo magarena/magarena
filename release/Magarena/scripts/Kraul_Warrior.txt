@@ -9,3 +9,4 @@ cost={1}{G}
 pt=2/2
 ability={5}{G}: SN gets +3/+3 until end of turn.
 timing=main
+oracle={5}{G}: Kraul Warrior gets +3/+3 until end of turn.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={B}{G}{W}
 ability=Sacrifice a land: You gain 3 life.
 timing=enchantment
+oracle=Sacrifice a land: You gain 3 life.

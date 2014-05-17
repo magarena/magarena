@@ -9,3 +9,4 @@ cost={3}{G}
 ability=trample
 timing=main
 requires_groovy_code
+oracle=Trample. Heedless One's power and toughness are each equal to the number of Elves on the battlefield.

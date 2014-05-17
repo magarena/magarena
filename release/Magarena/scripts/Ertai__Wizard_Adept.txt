@@ -9,3 +9,4 @@ cost={2}{U}
 pt=1/1
 ability={2}{U}{U},{T}: Counter target spell.
 timing=main
+oracle={2}{U}{U}, {T}: Counter target spell.

@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 ability=flash;devour 1
 timing=flash
+oracle=Flash. Devour 1

@@ -10,3 +10,4 @@ pt=0/3
 ability=defender
 timing=main
 requires_groovy_code
+oracle=Defender. Whenever Wall of Hope is dealt damage, you gain that much life.

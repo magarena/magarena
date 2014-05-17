@@ -9,3 +9,4 @@ cost={4}{B}
 pt=3/3
 timing=main
 requires_groovy_code
+oracle=Whenever Phyrexian Reaper becomes blocked by a green creature, destroy that creature. It can't be regenerated.

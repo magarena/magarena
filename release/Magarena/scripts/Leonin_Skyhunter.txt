@@ -9,3 +9,4 @@ subtype=Cat,Knight
 cost={W}{W}
 pt=2/2
 timing=main
+oracle=Flying

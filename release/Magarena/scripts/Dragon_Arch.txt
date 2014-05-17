@@ -7,3 +7,4 @@ type=Artifact
 cost={5}
 ability={2}, {T}: You may put a multicolored creature card from your hand onto the battlefield.
 timing=artifact
+oracle={2}, {T}: You may put a multicolored creature card from your hand onto the battlefield.

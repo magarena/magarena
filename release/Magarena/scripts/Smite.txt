@@ -8,3 +8,4 @@ type=Instant
 cost={W}
 timing=block
 effect=Destroy target blocked creature.
+oracle=Destroy target blocked creature.

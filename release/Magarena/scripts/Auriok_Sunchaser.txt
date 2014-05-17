@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 ability=As long as you control three or more artifacts, SN gets +2/+2 and has flying.
 timing=main
+oracle=Metalcraft ? As long as you control three or more artifacts, Auriok Sunchaser gets +2/+2 and has flying.

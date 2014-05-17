@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 ability=flying;swampwalk
 timing=main
+oracle=Flying, swampwalk

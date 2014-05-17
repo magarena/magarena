@@ -10,3 +10,4 @@ pt=3/4
 ability=flash;flying
 timing=flash
 requires_groovy_code
+oracle=Flash. Flying. When Restoration Angel enters the battlefield, you may exile target non-Angel creature you control, then return that card to the battlefield under your control.

@@ -8,3 +8,4 @@ subtype=Wizard
 cost={2}{U}
 timing=counter
 requires_groovy_code
+oracle=Counter target spell unless its controller pays {3}. If you control a Wizard, draw a card.

@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Search your library for an instant or sorcery card and reveal that card. Shuffle your library, then put the card on top of it.
 timing=removal
+oracle=Search your library for an instant or sorcery card and reveal that card. Shuffle your library, then put the card on top of it.

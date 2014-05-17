@@ -8,3 +8,4 @@ subtype=Beast
 cost={2}
 ability=modular 1;Sacrifice an artifact: Put a +1/+1 counter on SN.
 timing=main
+oracle=Sacrifice an artifact: Put a +1/+1 counter on Arcbound Ravager. Modular 1

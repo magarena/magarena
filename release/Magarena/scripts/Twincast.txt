@@ -7,3 +7,4 @@ type=Instant
 cost={U}{U}
 timing=spell
 requires_groovy_code=Reverberate
+oracle=Copy target instant or sorcery spell. You may choose new targets for the copy.

@@ -9,3 +9,4 @@ cost={2}{U}
 timing=main
 ability=vanishing 0
 requires_groovy_code
+oracle=Tidewalker enters the battlefield with a time counter on it for each Island you control. Vanishing. Tidewalker's power and toughness are each equal to the number of time counters on it.

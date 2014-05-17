@@ -9,3 +9,4 @@ cost={4}{B}
 pt=1/1
 ability=Whenever an artifact enters the battlefield, SN gets +4/+4 until end of turn.
 timing=main
+oracle=Whenever an artifact enters the battlefield, Vermiculos gets +4/+4 until end of turn.

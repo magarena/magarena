@@ -9,3 +9,4 @@ cost={4}{B}
 pt=4/2
 ability=Whenever SN or another enchantment enters the battlefield under your control, target creature gains intimidate until end of turn.
 timing=fmain
+oracle=Constellation ? Whenever Dreadbringer Lampads or another enchantment enters the battlefield under your control, target creature gains intimidate until end of turn.

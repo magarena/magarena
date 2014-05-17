@@ -10,3 +10,4 @@ pt=2/1
 ability=flash;flying
 timing=main
 requires_groovy_code
+oracle=Flash. Flying. When Pestermite enters the battlefield, you may tap or untap target permanent.

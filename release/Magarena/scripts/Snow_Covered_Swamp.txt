@@ -8,3 +8,4 @@ subtype=Swamp
 mana=b4
 ability={T}: Add {B} to your mana pool.
 timing=land
+oracle=B

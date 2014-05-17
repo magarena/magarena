@@ -9,3 +9,4 @@ cost={B}{R}
 pt=3/1
 ability=haste
 timing=fmain
+oracle=Haste

@@ -9,3 +9,4 @@ cost={3}{B}{B}
 pt=3/2
 ability=When SN enters the battlefield, you may have target opponent discard a card.
 timing=main
+oracle=When Brutal Nightstalker enters the battlefield, you may have target opponent discard a card.

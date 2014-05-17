@@ -9,3 +9,4 @@ cost={2}
 pt=1/1
 ability={2}: Regenerate target artifact creature.
 timing=artifact
+oracle={2}: Regenerate target artifact creature.

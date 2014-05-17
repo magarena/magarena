@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 ability={G}: Regenerate SN.
 timing=main
+oracle={G}: Regenerate Horned Troll.

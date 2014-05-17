@@ -9,3 +9,4 @@ cost={4}{G}
 pt=4/4
 ability={R}: SN gains haste until end of turn.
 timing=fmain
+oracle={R}: Serpentine Kavu gains haste until end of turn.

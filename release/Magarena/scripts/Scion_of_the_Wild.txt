@@ -8,3 +8,4 @@ subtype=Avatar
 cost={1}{G}{G}
 timing=smain
 requires_groovy_code
+oracle=Scion of the Wild's power and toughness are each equal to the number of creatures you control.

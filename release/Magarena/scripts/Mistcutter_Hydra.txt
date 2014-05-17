@@ -10,3 +10,4 @@ ability=SN can't be countered.;\
         SN enters the battlefield with X +1/+1 counters on it.
 cost={X}{G}
 timing=main
+oracle=Mistcutter Hydra can't be countered. Haste, protection from blue. Mistcutter Hydra enters the battlefield with X +1/+1 counters on it.

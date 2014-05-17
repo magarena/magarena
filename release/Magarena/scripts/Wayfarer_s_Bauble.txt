@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 ability={2},{T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=artifact
+oracle={2}, {T}, Sacrifice Wayfarer's Bauble: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

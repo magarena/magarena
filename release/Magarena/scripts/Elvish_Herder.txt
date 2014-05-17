@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability={G}: Target creature gains trample until end of turn.
 timing=main
+oracle={G}: Target creature gains trample until end of turn.

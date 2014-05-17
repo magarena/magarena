@@ -6,3 +6,4 @@ rarity=R
 type=Legendary,Land
 timing=land
 requires_groovy_code
+oracle=All creatures have "At the beginning of your upkeep, destroy this creature unless you pay {1}."

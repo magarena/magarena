@@ -9,3 +9,4 @@ cost={1}{U}
 enchant=pump,pos land
 ability=Enchanted land has "{T}, {Sorcery}: Target creature gains flying until end of turn."
 timing=enchantment
+oracle=Enchant land. Enchanted land has "{T}: Target creature gains flying until end of turn. Activate this ability only any time you could cast a sorcery."

@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=0/1
 timing=main
 requires_groovy_code
+oracle=Damage that would reduce your life total to less than 1 reduces it to 1 instead.

@@ -9,3 +9,4 @@ cost={4}{U}
 pt=3/3
 ability=When SN dies, target player puts the top five cards of his or her library into his or her graveyard.
 timing=main
+oracle=When Rotcrown Ghoul dies, target player puts the top five cards of his or her library into his or her graveyard.

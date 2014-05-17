@@ -9,3 +9,4 @@ cost={3}{G}
 pt=2/3
 timing=main
 requires_groovy_code
+oracle={T}: Target creature gets +4/+4 until end of turn. Activate this ability only if Greenhilt Trainee's power is 4 or greater.

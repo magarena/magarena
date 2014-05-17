@@ -9,3 +9,4 @@ cost={6}{G}{G}
 pt=6/6
 ability=soulshift 7
 timing=main
+oracle=Soulshift 7

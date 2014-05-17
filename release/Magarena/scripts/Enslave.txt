@@ -10,3 +10,4 @@ timing=aura
 ability=You control enchanted creature.
 enchant=gain control,neg creature
 requires_groovy_code
+oracle=Enchant creature. You control enchanted creature. At the beginning of your upkeep, enchanted creature deals 1 damage to its owner.

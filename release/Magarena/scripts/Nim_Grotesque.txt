@@ -9,3 +9,4 @@ cost={6}{B}
 pt=3/6
 timing=main
 requires_groovy_code
+oracle=Nim Grotesque gets +1/+0 for each artifact you control.

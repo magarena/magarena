@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{U}{U}
 timing=main
 requires_groovy_code
+oracle=Target player puts the top half of his or her library, rounded down, into his or her graveyard.

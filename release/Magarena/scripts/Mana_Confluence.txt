@@ -7,3 +7,4 @@ type=Land
 mana=w3u3b3r3g3
 ability={T}, Pay 1 life: Add one mana of any color to your mana pool.
 timing=land
+oracle={T}, Pay 1 life: Add one mana of any color to your mana pool.

@@ -9,3 +9,4 @@ cost={3}{R}
 pt=2/1
 ability=When SN dies, destroy target land.
 timing=main
+oracle=When Goblin Gardener dies, destroy target land.

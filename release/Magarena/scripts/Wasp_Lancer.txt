@@ -9,3 +9,4 @@ subtype=Faerie,Soldier
 cost={U/B}{U/B}{U/B}
 pt=3/2
 timing=main
+oracle=Flying

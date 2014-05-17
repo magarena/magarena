@@ -10,3 +10,4 @@ pt=3/3
 ability=vanishing 1;\
         Whenever another creature enters the battlefield under your control, put a time counter on SN.
 timing=main
+oracle=Vanishing 1. Whenever another creature enters the battlefield under your control, put a time counter on Soultether Golem.

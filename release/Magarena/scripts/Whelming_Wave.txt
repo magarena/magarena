@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{U}{U}
 timing=main
 requires_groovy_code
+oracle=Return all creatures to their owners' hands except for Krakens, Leviathans, Octopuses, and Serpents.

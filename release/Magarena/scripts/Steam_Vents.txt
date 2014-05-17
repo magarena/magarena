@@ -9,3 +9,4 @@ mana=u3r3
 ability={T}: Add {U} or {R} to your mana pool.;\
         As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.
 timing=land
+oracle=As Steam Vents enters the battlefield, you may pay 2 life. If you don't, Steam Vents enters the battlefield tapped.

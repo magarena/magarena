@@ -7,3 +7,4 @@ type=Artifact
 cost={3}
 ability={1}, {T}, Discard a card: Regenerate target creature.
 timing=artifact
+oracle={1}, {T}, Discard a card: Regenerate target creature.

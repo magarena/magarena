@@ -9,3 +9,4 @@ cost={1}{W}{W}
 pt=2/2
 ability={T},Pay 1 life:Counter target black spell.
 timing=main
+oracle={T}, Pay 1 life: Counter target black spell.

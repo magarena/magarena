@@ -8,3 +8,4 @@ type=Instant
 cost={2}{W}
 effect=Destroy all enchantments.
 timing=removal
+oracle=Destroy all enchantments.

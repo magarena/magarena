@@ -9,3 +9,4 @@ cost={1}{G/W}
 pt=2/2
 ability=persist
 timing=main
+oracle=Persist

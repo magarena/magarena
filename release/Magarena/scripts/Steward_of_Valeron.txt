@@ -10,3 +10,4 @@ pt=2/2
 ability=vigilance;\
         {T}: Add {G} to your mana pool.
 timing=main
+oracle=Vigilance. {T}: Add {G} to your mana pool.

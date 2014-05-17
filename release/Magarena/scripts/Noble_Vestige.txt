@@ -10,3 +10,4 @@ pt=1/2
 ability=flying;\
         {T}: Prevent the next 1 damage that would be dealt to target player this turn.
 timing=main
+oracle=Flying. {T}: Prevent the next 1 damage that would be dealt to target player this turn.

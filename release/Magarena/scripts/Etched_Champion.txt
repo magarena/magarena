@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability=SN has protection from all colors as long as you control three or more artifacts.
 timing=main
+oracle=Metalcraft ? Etched Champion has protection from all colors as long as you control three or more artifacts.

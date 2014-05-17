@@ -9,3 +9,4 @@ cost={2}{G}{U}
 pt=2/4
 timing=main
 requires_groovy_code
+oracle=Each other creature you control enters the battlefield with a number of additional +1/+1 counters on it equal to Master Biomancer's power and as a Mutant in addition to its other types.

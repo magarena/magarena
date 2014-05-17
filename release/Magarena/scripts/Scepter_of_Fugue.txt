@@ -7,3 +7,4 @@ type=Artifact
 cost={B}{B}
 ability={1}{B}, {T}, {YourTurn}: Target player discards a card.
 timing=artifact
+oracle={1}{B}, {T}: Target player discards a card. Activate this ability only during your turn.

@@ -9,3 +9,4 @@ cost={2}{U}{U}
 ability=You control enchanted artifact.
 enchant=gain control,neg artifact
 timing=aura
+oracle=Enchant artifact. You control enchanted artifact.

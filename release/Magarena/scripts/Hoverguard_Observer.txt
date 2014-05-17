@@ -9,3 +9,4 @@ subtype=Drone
 cost={2}{U}{U}
 pt=3/3
 timing=fmain
+oracle=Flying. Hoverguard Observer can block only creatures with flying.

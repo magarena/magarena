@@ -9,3 +9,4 @@ cost={3}{U}
 ability={T}:Target player draws two cards, then discards two cards.
 pt=2/2
 timing=main
+oracle={T}: Target player draws two cards, then discards two cards.

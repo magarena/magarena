@@ -7,3 +7,4 @@ type=Instant
 cost={1}{W}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact. You gain life equal to its converted mana cost.

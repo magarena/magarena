@@ -9,3 +9,4 @@ cost={5}{U}{U}
 pt=7/7
 ability=At the beginning of your upkeep, put the top seven cards of your library into your graveyard.
 timing=main
+oracle=At the beginning of your upkeep, put the top seven cards of your library into your graveyard.

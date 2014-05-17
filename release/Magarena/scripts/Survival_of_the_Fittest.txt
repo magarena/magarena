@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{G}
 ability={G}, Discard a creature card: Search your library for a creature card, reveal that card, and put it into your hand. Then shuffle your library.
 timing=enchantment
+oracle={G}, Discard a creature card: Search your library for a creature card, reveal that card, and put it into your hand. Then shuffle your library.

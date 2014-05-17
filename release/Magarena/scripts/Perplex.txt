@@ -7,3 +7,4 @@ type=Instant
 cost={1}{U}{B}
 timing=counter
 requires_groovy_code
+oracle=Counter target spell unless its controller discards his or her hand. Transmute {1}{U}{B}

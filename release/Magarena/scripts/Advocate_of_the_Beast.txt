@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/3
 ability=At the beginning of your end step, put a +1/+1 counter on target Beast creature you control.
 timing=main
+oracle=At the beginning of your end step, put a +1/+1 counter on target Beast creature you control.

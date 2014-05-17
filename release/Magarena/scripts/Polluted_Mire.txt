@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         cycling {2}
 timing=tapland
+oracle=Polluted Mire enters the battlefield tapped. {T}: Add {B} to your mana pool. Cycling {2}

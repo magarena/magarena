@@ -8,3 +8,4 @@ cost={P/U}
 ability=alt cost Pay 2 life named Pay 2 life
 timing=main
 requires_groovy_code
+oracle=Look at target player's hand. Draw a card.

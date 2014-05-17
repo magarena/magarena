@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 effect=Untap target permanent.
 timing=removal
+oracle=Untap target permanent.

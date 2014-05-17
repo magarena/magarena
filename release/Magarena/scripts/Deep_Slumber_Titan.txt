@@ -11,3 +11,4 @@ ability=SN enters the battlefield tapped.;\
         SN doesn't untap during your untap step.
 timing=main
 requires_groovy_code
+oracle=Deep-Slumber Titan enters the battlefield tapped. Deep-Slumber Titan doesn't untap during your untap step. Whenever Deep-Slumber Titan is dealt damage, untap it.

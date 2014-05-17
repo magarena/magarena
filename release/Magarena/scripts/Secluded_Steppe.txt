@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         cycling {W}
 timing=tapland
+oracle=Secluded Steppe enters the battlefield tapped. {T}: Add {W} to your mana pool. Cycling {W}

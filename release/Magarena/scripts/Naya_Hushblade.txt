@@ -9,3 +9,4 @@ cost={R/W}{G}
 pt=2/1
 ability=As long as you control another multicolored permanent, SN gets +1/+1 and has shroud.
 timing=main
+oracle=As long as you control another multicolored permanent, Naya Hushblade gets +1/+1 and has shroud.

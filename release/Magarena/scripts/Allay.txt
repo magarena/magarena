@@ -9,3 +9,4 @@ cost={1}{W}
 ability=buyback {3}
 effect=Destroy target enchantment.
 timing=removal
+oracle=Buyback {3}. Destroy target enchantment.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{G}
 ability=creatures with flying get -2/-0
 timing=enchantment
+oracle=Creatures with flying get -2/-0.

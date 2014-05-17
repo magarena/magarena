@@ -8,3 +8,4 @@ cost={3}{W}{W}
 timing=removal
 removal=2
 requires_groovy_code=Terminus
+oracle=Put all creatures on the bottom of their owners' libraries.

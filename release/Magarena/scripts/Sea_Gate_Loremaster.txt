@@ -9,3 +9,4 @@ cost={4}{U}
 pt=1/3
 timing=main
 requires_groovy_code
+oracle={T}: Draw a card for each Ally you control.

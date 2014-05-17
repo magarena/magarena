@@ -9,3 +9,4 @@ cost={1}{W}
 pt=2/2
 ability={3}{G}, {Once}: SN gets +3/+3 until end of turn.
 timing=main
+oracle={3}{G}: Knight of the Skyward Eye gets +3/+3 until end of turn. Activate this ability only once each turn.

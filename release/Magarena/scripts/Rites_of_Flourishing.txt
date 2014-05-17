@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 timing=enchantment
 requires_groovy_code
+oracle=At the beginning of each player's draw step, that player draws an additional card. Each player may play an additional land on each of his or her turns.

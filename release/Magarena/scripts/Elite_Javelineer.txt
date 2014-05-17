@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/2
 ability=Whenever SN blocks, SN deals 1 damage to target attacking creature.
 timing=main
+oracle=Whenever Elite Javelineer blocks, it deals 1 damage to target attacking creature.

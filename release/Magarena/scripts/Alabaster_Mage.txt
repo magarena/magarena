@@ -9,3 +9,4 @@ cost={1}{W}
 pt=2/1
 ability={1}{W}: Target creature you control gains lifelink until end of turn.
 timing=main
+oracle={1}{W}: Target creature you control gains lifelink until end of turn.

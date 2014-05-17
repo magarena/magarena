@@ -9,3 +9,4 @@ cost={1}{G}
 pt=0/0
 ability=graft 2;{G}:Target creature with a +1/+1 counter on it gains reach until end of turn.
 timing=main
+oracle=Graft 2. {G}: Target creature with a +1/+1 counter on it gains reach until end of turn.

@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=As long as SN is equipped, it gets +1/+1 and has first strike.
 timing=main
+oracle=As long as Auriok Glaivemaster is equipped, it gets +1/+1 and has first strike.

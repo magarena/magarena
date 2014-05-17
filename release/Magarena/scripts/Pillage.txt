@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{R}{R}
 timing=removal
 effect=Destroy target artifact or land. It can't be regenerated.
+oracle=Destroy target artifact or land. It can't be regenerated.

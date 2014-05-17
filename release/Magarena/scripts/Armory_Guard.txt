@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/5
 ability=SN has vigilance as long as you control a Gate.
 timing=main
+oracle=Armory Guard has vigilance as long as you control a Gate.

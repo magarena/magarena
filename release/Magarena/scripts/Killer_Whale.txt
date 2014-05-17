@@ -9,3 +9,4 @@ cost={3}{U}{U}
 pt=3/5
 ability={U}: SN gains flying until end of turn.
 timing=main
+oracle={U}: Killer Whale gains flying until end of turn.

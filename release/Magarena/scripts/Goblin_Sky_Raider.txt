@@ -9,3 +9,4 @@ subtype=Goblin,Warrior
 cost={2}{R}
 pt=1/2
 timing=main
+oracle=Flying

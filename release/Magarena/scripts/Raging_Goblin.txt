@@ -9,3 +9,4 @@ subtype=Goblin,Berserker
 cost={R}
 pt=1/1
 timing=fmain
+oracle=Haste

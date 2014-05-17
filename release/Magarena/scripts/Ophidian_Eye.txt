@@ -10,3 +10,4 @@ ability=flash
 timing=flash
 enchant=unblockable,pos creature
 requires_groovy_code=Curiosity
+oracle=Flash. Enchant creature. Whenever enchanted creature deals damage to an opponent, you may draw a card.

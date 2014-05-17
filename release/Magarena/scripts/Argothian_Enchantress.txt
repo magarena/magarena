@@ -10,3 +10,4 @@ pt=0/1
 ability=shroud;\
         Whenever you cast an enchantment spell, draw a card.
 timing=main
+oracle=Shroud. Whenever you cast an enchantment spell, draw a card.

@@ -10,3 +10,4 @@ pt=4/4
 ability=creatures you control have haste
 timing=fmain
 requires_groovy_code
+oracle=Creatures you control have haste. Creatures your opponents control enter the battlefield tapped.

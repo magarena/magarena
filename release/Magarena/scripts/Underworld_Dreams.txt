@@ -7,3 +7,4 @@ type=Enchantment
 cost={B}{B}{B}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever an opponent draws a card, Underworld Dreams deals 1 damage to him or her.

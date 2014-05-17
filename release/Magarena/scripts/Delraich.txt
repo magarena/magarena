@@ -10,3 +10,4 @@ pt=6/6
 ability=trample
 timing=main
 requires_groovy_code
+oracle=Trample. You may sacrifice three black creatures rather than pay Delraich's mana cost.

@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/1
 ability=SN gets +2/+1 as long as you control no untapped lands.
 timing=main
+oracle=Spur Grappler gets +2/+1 as long as you control no untapped lands.

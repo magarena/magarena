@@ -9,3 +9,4 @@ subtype=Human,Soldier
 cost={1}{W}
 pt=1/1
 timing=main
+oracle=Double strike

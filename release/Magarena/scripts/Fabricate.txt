@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{U}
 effect=Search your library for an artifact card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
+oracle=Search your library for an artifact card, reveal it, and put it into your hand. Then shuffle your library.

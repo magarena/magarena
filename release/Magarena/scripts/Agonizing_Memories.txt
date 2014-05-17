@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{B}{B}
 timing=removal
 requires_groovy_code
+oracle=Look at target player's hand and choose two cards from it. Put them on top of that player's library in any order.

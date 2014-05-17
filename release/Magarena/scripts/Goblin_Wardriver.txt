@@ -9,3 +9,4 @@ cost={R}{R}
 pt=2/2
 ability=battle cry
 timing=main
+oracle=Battle cry

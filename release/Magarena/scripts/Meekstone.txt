@@ -8,3 +8,4 @@ cost={1}
 ability=creatures with power 3 or greater have doesn't untap during your untap step.
 static=all
 timing=artifact
+oracle=Creatures with power 3 or greater don't untap during their controllers' untap steps.

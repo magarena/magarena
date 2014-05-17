@@ -12,3 +12,4 @@ ability=trample;\
         infect;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
+oracle=Trample, haste. Infect. At the beginning of the end step, sacrifice Putrefax.

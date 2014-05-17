@@ -7,3 +7,4 @@ type=Sorcery
 cost={6}{R}
 effect=SN deals 7 damage to target opponent.
 timing=main
+oracle=Searing Flesh deals 7 damage to target opponent.

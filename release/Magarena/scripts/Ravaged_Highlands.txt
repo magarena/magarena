@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.;\
         {T}, Sacrifice SN: Add one mana of any color to your mana pool.
 timing=tapland
+oracle=Ravaged Highlands enters the battlefield tapped. {T}: Add {R} to your mana pool. {T}, Sacrifice Ravaged Highlands: Add one mana of any color to your mana pool.

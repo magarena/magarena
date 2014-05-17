@@ -9,3 +9,4 @@ cost={5}{R}
 pt=4/4
 timing=smain
 requires_groovy_code
+oracle=Earth Servant gets +0/+1 for each Mountain you control.

@@ -9,3 +9,4 @@ cost={4}{G}
 pt=3/3
 ability={G}, Sacrifice another creature: Put a +1/+1 counter on SN.
 timing=main
+oracle={G}, Sacrifice another creature: Put a +1/+1 counter on Gobbling Ooze.

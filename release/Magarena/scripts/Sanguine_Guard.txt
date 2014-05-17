@@ -10,3 +10,4 @@ pt=2/2
 ability=first strike;\
         {1}{B}: Regenerate SN.
 timing=main
+oracle=First strike. {1}{B}: Regenerate Sanguine Guard.

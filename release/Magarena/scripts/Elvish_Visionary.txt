@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 ability=When SN enters the battlefield, draw a card.
 timing=main
+oracle=When Elvish Visionary enters the battlefield, draw a card.

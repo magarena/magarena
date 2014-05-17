@@ -8,3 +8,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.
 timing=artifact
+oracle=Moss Diamond enters the battlefield tapped. {T}: Add {G} to your mana pool.

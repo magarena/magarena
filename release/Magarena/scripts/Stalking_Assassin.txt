@@ -9,3 +9,4 @@ cost={1}{U}{B}
 pt=1/1
 ability={3}{U},{T}:Tap target creature.;{3}{B},{T}:Destroy target tapped creature.
 timing=main
+oracle={3}{U}, {T}: Tap target creature. {3}{B}, {T}: Destroy target tapped creature.

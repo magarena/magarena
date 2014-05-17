@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 ability={T}: Tap target creature with toughness 2 or less.
 timing=main
+oracle={T}: Tap target creature with toughness 2 or less.

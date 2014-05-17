@@ -10,3 +10,4 @@ ability=living weapon;\
         Equipped creature gets +2/+4 and has reach.;\
         Equip {4}
 timing=equipment
+oracle=Living weapon. Equipped creature gets +2/+4 and has reach. Equip {4}

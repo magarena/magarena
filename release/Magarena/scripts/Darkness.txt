@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 timing=block
 requires_groovy_code=Fog
+oracle=Prevent all combat damage that would be dealt this turn.

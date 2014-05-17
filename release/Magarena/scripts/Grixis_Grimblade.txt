@@ -9,3 +9,4 @@ cost={U/R}{B}
 pt=2/1
 ability=As long as you control another multicolored permanent, SN gets +1/+1 and has deathtouch.
 timing=main
+oracle=As long as you control another multicolored permanent, Grixis Grimblade gets +1/+1 and has deathtouch.

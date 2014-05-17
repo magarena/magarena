@@ -9,3 +9,4 @@ cost={4}{U}
 pt=3/3
 ability=Whenever SN becomes blocked, you may draw two cards.
 timing=main
+oracle=Whenever Drelnoch becomes blocked, you may draw two cards.

@@ -9,3 +9,4 @@ subtype=Goblin,Knight
 cost={2}{R/W}
 pt=1/2
 timing=main
+oracle=Flying, first strike

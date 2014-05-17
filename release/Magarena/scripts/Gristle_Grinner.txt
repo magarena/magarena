@@ -9,3 +9,4 @@ cost={4}{B}
 pt=3/3
 ability=Whenever a creature dies, SN gets +2/+2 until end of turn.
 timing=main
+oracle=Whenever a creature dies, Gristle Grinner gets +2/+2 until end of turn.

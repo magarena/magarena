@@ -9,3 +9,4 @@ subtype=Human,Soldier,Archer
 cost={W}{W}
 pt=2/2
 timing=main
+oracle=First strike; reach

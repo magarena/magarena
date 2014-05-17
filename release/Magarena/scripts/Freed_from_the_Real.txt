@@ -9,3 +9,4 @@ cost={2}{U}
 timing=aura
 enchant=default,creature
 requires_groovy_code
+oracle=Enchant creature. {U}: Tap enchanted creature. {U}: Untap enchanted creature.

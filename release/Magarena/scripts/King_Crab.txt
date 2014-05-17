@@ -9,3 +9,4 @@ cost={4}{U}{U}
 pt=4/5
 ability={1}{U}, {T}: Put target green creature on top of its owner's library.
 timing=main
+oracle={1}{U}, {T}: Put target green creature on top of its owner's library.

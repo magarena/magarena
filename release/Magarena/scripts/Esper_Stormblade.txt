@@ -9,3 +9,4 @@ cost={W/B}{U}
 pt=2/1
 ability=As long as you control another multicolored permanent, SN gets +1/+1 and has flying.
 timing=main
+oracle=As long as you control another multicolored permanent, Esper Stormblade gets +1/+1 and has flying.

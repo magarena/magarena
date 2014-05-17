@@ -9,3 +9,4 @@ cost={6}{B}
 pt=5/5
 ability=Scavenge {6}{B}
 timing=main
+oracle=Scavenge {6}{B}

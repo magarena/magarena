@@ -7,3 +7,4 @@ type=Sorcery
 cost={U}
 effect=Draw two cards, then discard two cards.
 timing=draw
+oracle=Draw two cards, then discard two cards.

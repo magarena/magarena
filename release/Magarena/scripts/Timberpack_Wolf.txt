@@ -9,3 +9,4 @@ cost={1}{G}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Timberpack Wolf gets +1/+1 for each other creature you control named Timberpack Wolf.

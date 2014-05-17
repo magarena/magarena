@@ -9,3 +9,4 @@ subtype=Ogre,Warrior
 cost={4}{R}
 pt=3/3
 timing=main
+oracle=Mountainwalk

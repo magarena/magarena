@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/1
 ability=flash;protection from red
 timing=flash
+oracle=Flash. Protection from red

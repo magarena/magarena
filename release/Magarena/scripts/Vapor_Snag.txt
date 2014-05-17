@@ -8,3 +8,4 @@ type=Instant
 cost={U}
 timing=removal
 requires_groovy_code
+oracle=Return target creature to its owner's hand. Its controller loses 1 life.

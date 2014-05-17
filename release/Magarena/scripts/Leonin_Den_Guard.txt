@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/3
 ability=As long as SN is equipped, it gets +1/+1 and has vigilance.
 timing=main
+oracle=As long as Leonin Den-Guard is equipped, it gets +1/+1 and has vigilance.

@@ -7,3 +7,4 @@ type=Sorcery
 cost={R}
 effect=Target creature gains double strike until end of turn.
 timing=fmain
+oracle=Target creature gains double strike until end of turn.

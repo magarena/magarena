@@ -9,3 +9,4 @@ cost={4}{B}
 pt=4/3
 ability={0}:SN gets -1/-0 and gains swampwalk until end of turn.
 timing=main
+oracle={0}: Viscid Lemures gets -1/-0 and gains swampwalk until end of turn.

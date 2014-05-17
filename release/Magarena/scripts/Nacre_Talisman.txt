@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability=Whenever a player casts a white spell, you may pay {3}. If you do, untap target permanent.
 timing=artifact
+oracle=Whenever a player casts a white spell, you may pay {3}. If you do, untap target permanent.

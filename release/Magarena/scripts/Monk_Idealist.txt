@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/2
 ability=When SN enters the battlefield, return target enchantment card from your graveyard to your hand.
 timing=main
+oracle=When Monk Idealist enters the battlefield, return target enchantment card from your graveyard to your hand.

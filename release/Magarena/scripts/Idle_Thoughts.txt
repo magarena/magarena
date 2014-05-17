@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{U}
 timing=enchantment
 requires_groovy_code
+oracle={2}: Draw a card if you have no cards in hand.

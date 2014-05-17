@@ -7,3 +7,4 @@ type=Instant
 cost={U}{U}
 effect=Counter target creature or Aura spell.
 timing=counter
+oracle=Counter target creature or Aura spell.

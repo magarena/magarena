@@ -7,3 +7,4 @@ type=Instant
 cost={4}{W}
 timing=token
 requires_groovy_code
+oracle=Return target creature card from your graveyard to the battlefield. Put a +1/+1 counter on it.

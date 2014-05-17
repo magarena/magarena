@@ -10,3 +10,4 @@ pt=5/5
 ability=sliver creatures you control have trample
 static=player
 timing=main
+oracle=Sliver creatures you control have trample.

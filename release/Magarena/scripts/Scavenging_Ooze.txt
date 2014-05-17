@@ -9,3 +9,4 @@ cost={1}{G}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle={G}: Exile target card from a graveyard. If it was a creature card, put a +1/+1 counter on Scavenging Ooze and you gain 1 life.

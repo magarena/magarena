@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         {T}, Sacrifice SN: Add one mana of any color to your mana pool.
 timing=tapland
+oracle=Abandoned Outpost enters the battlefield tapped. {T}: Add {W} to your mana pool. {T}, Sacrifice Abandoned Outpost: Add one mana of any color to your mana pool.

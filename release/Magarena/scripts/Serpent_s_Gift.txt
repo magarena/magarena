@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G}
 effect=Target creature gains deathtouch until end of turn.
 timing=pump
+oracle=Target creature gains deathtouch until end of turn.

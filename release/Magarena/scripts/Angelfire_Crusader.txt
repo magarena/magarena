@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/3
 ability={R}: SN gets +1/+0 until end of turn.
 timing=main
+oracle={R}: Angelfire Crusader gets +1/+0 until end of turn.

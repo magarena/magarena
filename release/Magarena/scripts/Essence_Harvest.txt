@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{B}
 timing=removal
 requires_groovy_code
+oracle=Target player loses X life and you gain X life, where X is the greatest power among creatures you control.

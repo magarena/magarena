@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{G}
 effect=Return target green card from your graveyard to your hand.
 timing=main
+oracle=Return target green card from your graveyard to your hand.

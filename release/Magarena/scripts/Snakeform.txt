@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G/U}
 timing=removal
 requires_groovy_code
+oracle=Target creature loses all abilities and becomes a 1/1 green Snake until end of turn. Draw a card.

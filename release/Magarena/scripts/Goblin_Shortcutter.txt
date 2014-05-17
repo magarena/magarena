@@ -9,3 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=When SN enters the battlefield, target creature can't block this turn.
 timing=fmain
+oracle=When Goblin Shortcutter enters the battlefield, target creature can't block this turn.

@@ -10,3 +10,4 @@ pt=1/2
 ability=flying;\
         Whenever an artifact enters the battlefield under your control, you may tap target permanent.
 timing=main
+oracle=Flying. Whenever an artifact enters the battlefield under your control, you may tap target permanent.

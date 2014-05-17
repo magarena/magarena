@@ -9,3 +9,4 @@ cost={2}{U}{U}
 pt=2/2
 ability=Whenever you cast an instant or sorcery spell, put a 2/2 blue Drake creature token with flying onto the battlefield.
 timing=main
+oracle=Whenever you cast an instant or sorcery spell, put a 2/2 blue Drake creature token with flying onto the battlefield.

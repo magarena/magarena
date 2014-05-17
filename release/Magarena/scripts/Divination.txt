@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{U}
 effect=Draw two cards.
 timing=draw
+oracle=Draw two cards.

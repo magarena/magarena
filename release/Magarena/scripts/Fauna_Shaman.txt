@@ -9,3 +9,4 @@ cost={1}{G}
 pt=2/2
 ability={G}, {T}, Discard a creature card: Search your library for a creature card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
+oracle={G}, {T}, Discard a creature card: Search your library for a creature card, reveal it, and put it into your hand. Then shuffle your library.

@@ -9,3 +9,4 @@ cost={1}{B}
 pt=1/1
 ability=When SN dies, each player sacrifices a creature.
 timing=main
+oracle=When Abyssal Gatekeeper dies, each player sacrifices a creature.

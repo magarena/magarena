@@ -7,3 +7,4 @@ type=Instant
 cost={1}{W}
 effect=Creatures you control get +1/+1 until end of turn.
 timing=pump
+oracle=Creatures you control get +1/+1 until end of turn.

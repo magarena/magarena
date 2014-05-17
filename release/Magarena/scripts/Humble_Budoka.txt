@@ -9,3 +9,4 @@ subtype=Human,Monk
 cost={1}{G}
 pt=2/2
 timing=fmain
+oracle=Shroud

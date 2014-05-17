@@ -9,3 +9,4 @@ cost={4}{G}
 pt=4/4
 ability=When SN dies, put two 2/2 green Ooze creature tokens onto the battlefield.
 timing=main
+oracle=When Mitotic Slime dies, put two 2/2 green Ooze creature tokens onto the battlefield. They have "When this creature dies, put two 1/1 green Ooze creature tokens onto the battlefield."

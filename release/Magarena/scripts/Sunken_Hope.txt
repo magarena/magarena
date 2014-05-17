@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{U}{U}
 timing=enchantment
 requires_groovy_code
+oracle=At the beginning of each player's upkeep, that player returns a creature he or she controls to its owner's hand.

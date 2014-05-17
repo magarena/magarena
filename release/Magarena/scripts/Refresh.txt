@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G}
 timing=pump
 requires_groovy_code
+oracle=Regenerate target creature. Draw a card.

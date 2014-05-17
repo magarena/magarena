@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=As long as seven or more cards are in your graveyard, SN gets +2/+2 and has "When SN dies, you lose 4 life."
 timing=main
+oracle=Threshold ? As long as seven or more cards are in your graveyard, Treacherous Werewolf gets +2/+2 and has "When Treacherous Werewolf dies, you lose 4 life."

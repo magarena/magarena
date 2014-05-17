@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{W}
 ability=Whenever a creature dies, you gain 1 life.
 timing=enchantment
+oracle=Whenever a creature dies, you gain 1 life.

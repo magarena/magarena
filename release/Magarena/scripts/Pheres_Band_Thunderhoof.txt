@@ -9,3 +9,4 @@ cost={4}{G}
 pt=3/4
 ability=Whenever you cast a spell that targets SN, put two +1/+1 counters on SN.
 timing=main
+oracle=Heroic ? Whenever you cast a spell that targets Pheres-Band Thunderhoof, put two +1/+1 counters on Pheres-Band Thunderhoof.

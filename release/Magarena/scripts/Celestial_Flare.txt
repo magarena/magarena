@@ -7,3 +7,4 @@ type=Instant
 cost={W}{W}
 timing=removal
 requires_groovy_code
+oracle=Target player sacrifices an attacking or blocking creature.

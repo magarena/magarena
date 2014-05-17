@@ -10,3 +10,4 @@ pt=6/6
 ability=flying;trample
 timing=main
 requires_groovy_code
+oracle=Flying, trample. At the beginning of your upkeep, sacrifice a non-Zombie creature, then put a 2/2 black Zombie creature token onto the battlefield.

@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 ability=As long as you control a Bird, SN gets +2/+2 and has flying.
 timing=main
+oracle=As long as you control a Bird, Cloudreach Cavalry gets +2/+2 and has flying.

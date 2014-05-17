@@ -9,3 +9,4 @@ subtype=Vampire
 cost={3}{B}{B}
 pt=4/3
 timing=main
+oracle=Flying

@@ -9,3 +9,4 @@ cost={3}{G}
 pt=4/4
 ability=At the beginning of your upkeep, return a creature you control to its owner's hand.
 timing=main
+oracle=At the beginning of your upkeep, return a creature you control to its owner's hand.

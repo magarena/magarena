@@ -10,3 +10,4 @@ pt=4/4
 ability=When SN enters the battlefield, target opponent loses 1 life and you gain 1 life.
 timing=main
 requires_groovy_code
+oracle=When Ghost Council of Orzhova enters the battlefield, target opponent loses 1 life and you gain 1 life. {1}, Sacrifice a creature: Exile Ghost Council of Orzhova. Return it to the battlefield under its owner's control at the beginning of the next end step.

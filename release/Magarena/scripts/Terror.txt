@@ -8,3 +8,4 @@ type=Instant
 cost={1}{B}
 timing=removal
 effect=Destroy target nonartifact, nonblack creature. It can't be regenerated.
+oracle=Destroy target nonartifact, nonblack creature. It can't be regenerated.

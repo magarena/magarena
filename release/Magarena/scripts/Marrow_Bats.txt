@@ -10,3 +10,4 @@ pt=4/1
 ability=flying;\
         Pay 4 life: Regenerate SN.
 timing=main
+oracle=Flying. Pay 4 life: Regenerate Marrow Bats.

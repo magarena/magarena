@@ -10,3 +10,4 @@ pt=1/1
 ability=level up {2} 5
 timing=main
 requires_groovy_code
+oracle=Level up {2}. LEVEL 1-4. 2/2. LEVEL 5+. 5/5. First strike

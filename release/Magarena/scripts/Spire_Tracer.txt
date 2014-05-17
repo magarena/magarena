@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability=SN can't be blocked except by creatures with flying or reach.
 timing=main
+oracle=Spire Tracer can't be blocked except by creatures with flying or reach.

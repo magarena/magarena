@@ -8,3 +8,4 @@ cost={2}{G}
 effect=Destroy all enchantments.
 timing=removal
 removal=2
+oracle=Destroy all enchantments.

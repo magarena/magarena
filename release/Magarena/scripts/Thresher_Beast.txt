@@ -9,3 +9,4 @@ cost={3}{G}{G}
 pt=4/4
 timing=main
 requires_groovy_code
+oracle=Whenever Thresher Beast becomes blocked, defending player sacrifices a land.

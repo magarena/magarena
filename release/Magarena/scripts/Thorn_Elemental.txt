@@ -9,3 +9,4 @@ cost={5}{G}{G}
 pt=7/7
 timing=main
 requires_groovy_code=Rhox
+oracle=You may have Thorn Elemental assign its combat damage as though it weren't blocked.

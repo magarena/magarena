@@ -9,3 +9,4 @@ cost={1}{W}{W}
 pt=1/1
 ability={W}{W},{T}:Return target artifact card from your graveyard to your hand.
 timing=main
+oracle={W}{W}, {T}: Return target artifact card from your graveyard to your hand.

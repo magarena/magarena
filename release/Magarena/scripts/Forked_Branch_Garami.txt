@@ -9,3 +9,4 @@ cost={3}{G}{G}
 pt=4/4
 ability=soulshift 4;soulshift 4
 timing=main
+oracle=Soulshift 4, soulshift 4

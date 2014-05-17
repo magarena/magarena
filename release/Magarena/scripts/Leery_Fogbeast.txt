@@ -9,3 +9,4 @@ cost={2}{G}
 pt=4/2
 timing=main
 requires_groovy_code
+oracle=Whenever Leery Fogbeast becomes blocked, prevent all combat damage that would be dealt this turn.

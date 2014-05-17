@@ -9,3 +9,4 @@ subtype=Goblin,Warrior
 cost={2}{R}
 pt=2/2
 timing=main
+oracle=Mountainwalk

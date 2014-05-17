@@ -9,3 +9,4 @@ cost={4}{R}
 pt=3/1
 ability=When SN dies, destroy target land.
 timing=main
+oracle=When Fire Snake dies, destroy target land.

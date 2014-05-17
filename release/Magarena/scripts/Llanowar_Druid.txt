@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/2
 timing=main
 requires_groovy_code
+oracle={T}, Sacrifice Llanowar Druid: Untap all Forests.

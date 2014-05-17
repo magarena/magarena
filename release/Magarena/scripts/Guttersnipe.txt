@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability=Whenever you cast an instant or sorcery spell, SN deals 2 damage to each opponent.
 timing=main
+oracle=Whenever you cast an instant or sorcery spell, Guttersnipe deals 2 damage to each opponent.

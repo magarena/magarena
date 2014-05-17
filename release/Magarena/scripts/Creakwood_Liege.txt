@@ -12,3 +12,4 @@ ability=other black creatures you control get +1/+1;\
 static=player
 timing=main
 requires_groovy_code
+oracle=Other black creatures you control get +1/+1. Other green creatures you control get +1/+1. At the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={G}
 ability=Sacrifice SN:Target creature gets +3/+3 until end of turn.
 timing=enchantment
+oracle=Sacrifice Seal of Strength: Target creature gets +3/+3 until end of turn.

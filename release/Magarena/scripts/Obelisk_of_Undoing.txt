@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 ability={6}, {T}: Return target permanent you both own and control to your hand.
 timing=artifact
+oracle={6}, {T}: Return target permanent you both own and control to your hand.

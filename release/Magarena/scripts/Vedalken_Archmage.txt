@@ -9,3 +9,4 @@ cost={2}{U}{U}
 pt=0/2
 ability=Whenever you cast an artifact spell, draw a card.
 timing=main
+oracle=Whenever you cast an artifact spell, draw a card.

@@ -9,3 +9,4 @@ cost={1}{B}{R}
 pt=1/1
 ability=When SN enters the battlefield, target player discards a card at random.
 timing=main
+oracle=When Sanity Gnawers enters the battlefield, target player discards a card at random.

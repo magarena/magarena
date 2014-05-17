@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/1
 ability=SN gets +0/+3 as long as it's untapped.
 timing=main
+oracle=Giant Tortoise gets +0/+3 as long as it's untapped.

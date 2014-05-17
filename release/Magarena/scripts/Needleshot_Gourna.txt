@@ -9,3 +9,4 @@ subtype=Beast
 cost={4}{G}{G}
 pt=3/6
 timing=main
+oracle=Reach

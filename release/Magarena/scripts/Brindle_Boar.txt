@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 ability=Sacrifice SN: You gain 4 life.
 timing=main
+oracle=Sacrifice Brindle Boar: You gain 4 life.

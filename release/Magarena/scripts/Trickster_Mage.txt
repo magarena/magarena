@@ -9,3 +9,4 @@ cost={U}
 pt=1/1
 ability={U},{T},Discard a card:Tap target artifact, creature, or land.;{U},{T},Discard a card:Untap target artifact, creature, or land.
 timing=main
+oracle={U}, {T}, Discard a card: You may tap or untap target artifact, creature, or land.

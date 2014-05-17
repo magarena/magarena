@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=6/2
 ability=At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.
 timing=main
+oracle=At the beginning of your upkeep, sacrifice Hungry Mist unless you pay {G}{G}.

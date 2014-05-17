@@ -9,3 +9,4 @@ cost={4}{G}{G}{G}
 pt=8/8
 ability=hexproof
 timing=main
+oracle=Hexproof

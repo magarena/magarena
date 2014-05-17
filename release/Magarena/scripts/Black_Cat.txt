@@ -9,3 +9,4 @@ cost={1}{B}
 pt=1/1
 ability=When SN dies, target opponent discards a card at random.
 timing=main
+oracle=When Black Cat dies, target opponent discards a card at random.

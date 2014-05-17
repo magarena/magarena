@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability=Sacrifice an artifact:SN gains flying until end of turn.
 timing=artifact
+oracle=Sacrifice an artifact: Thermal Navigator gains flying until end of turn.

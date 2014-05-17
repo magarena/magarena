@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 ability=Whenever a land enters the battlefield under your control, SN gains intimidate until end of turn.
 timing=main
+oracle=Landfall ? Whenever a land enters the battlefield under your control, Surrakar Marauder gains intimidate until end of turn.

@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 effect=Destroy target black creature.
 timing=removal
+oracle=Destroy target black creature.

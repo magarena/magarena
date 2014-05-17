@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{B}
 effect=You draw three cards and you lose 3 life.
 timing=draw
+oracle=You draw three cards and you lose 3 life.

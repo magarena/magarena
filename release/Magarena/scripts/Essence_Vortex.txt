@@ -7,3 +7,4 @@ type=Instant
 cost={1}{U}{B}
 timing=removal
 requires_groovy_code
+oracle=Destroy target creature unless its controller pays life equal to its toughness. A creature destroyed this way can't be regenerated.

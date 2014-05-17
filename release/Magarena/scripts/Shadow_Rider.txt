@@ -9,3 +9,4 @@ cost={2}{B}{B}
 pt=3/3
 ability=flanking
 timing=main
+oracle=Flanking

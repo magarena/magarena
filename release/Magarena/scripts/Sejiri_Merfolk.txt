@@ -9,3 +9,4 @@ cost={1}{U}
 pt=2/1
 ability=As long as you control a Plains, SN has first strike and lifelink.
 timing=main
+oracle=As long as you control a Plains, Sejiri Merfolk has first strike and lifelink.

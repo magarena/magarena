@@ -9,3 +9,4 @@ cost={1}{R}{R}
 pt=3/2
 ability=When SN enters the battlefield, target creature can't block this turn.
 timing=fmain
+oracle=When Crossway Vampire enters the battlefield, target creature can't block this turn.

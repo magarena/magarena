@@ -9,3 +9,4 @@ cost={4}{R}
 pt=4/4
 ability=SN has haste as long as an opponent controls a Human.
 timing=main
+oracle=Night Revelers has haste as long as an opponent controls a Human.

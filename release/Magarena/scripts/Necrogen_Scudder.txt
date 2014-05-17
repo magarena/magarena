@@ -10,3 +10,4 @@ pt=3/3
 ability=flying;\
         When SN enters the battlefield, you lose 3 life.
 timing=main
+oracle=Flying. When Necrogen Scudder enters the battlefield, you lose 3 life.

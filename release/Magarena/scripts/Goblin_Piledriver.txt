@@ -10,3 +10,4 @@ pt=1/2
 ability=protection from blue
 timing=main
 requires_groovy_code
+oracle=Protection from blue. Whenever Goblin Piledriver attacks, it gets +2/+0 until end of turn for each other attacking Goblin.

@@ -9,3 +9,4 @@ cost={6}{R}
 pt=4/4
 ability=first strike;haste;cycling {3}
 timing=main
+oracle=First strike, haste. Cycling {3}

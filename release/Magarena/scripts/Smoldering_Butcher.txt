@@ -9,3 +9,4 @@ subtype=Elemental,Warrior
 cost={3}{B}
 pt=4/2
 timing=main
+oracle=Wither

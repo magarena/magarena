@@ -8,3 +8,4 @@ mana=w3u3b3
 ability={T}: Add {W} or {U} or {B} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
+oracle=Arcane Sanctum enters the battlefield tapped. {T}: Add {W}, {U}, or {B} to your mana pool.

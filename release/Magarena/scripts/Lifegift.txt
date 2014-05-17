@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 ability=Whenever a land enters the battlefield, you may gain 1 life.
 timing=enchantment
+oracle=Whenever a land enters the battlefield, you may gain 1 life.

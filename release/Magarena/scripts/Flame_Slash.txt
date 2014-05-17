@@ -8,3 +8,4 @@ cost={R}
 effect=SN deals 4 damage to target creature.
 removal=4
 timing=removal
+oracle=Flame Slash deals 4 damage to target creature.

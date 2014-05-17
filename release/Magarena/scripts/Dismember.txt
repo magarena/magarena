@@ -10,3 +10,4 @@ ability=alt cost {1}{P/B}, Pay 2 life named Pay 2 life;\
         alt cost {1}, Pay 4 life named Pay 4 life
 effect=Target creature gets -5/-5 until end of turn.
 timing=removal
+oracle=Target creature gets -5/-5 until end of turn.

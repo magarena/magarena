@@ -9,3 +9,4 @@ cost={2}{W}
 pt=1/4
 ability=defender;extort
 timing=main
+oracle=Defender. Extort

@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G}{G}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact or enchantment. Draw a card.

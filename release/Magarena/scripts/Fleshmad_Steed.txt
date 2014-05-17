@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/2
 ability=Whenever another creature dies, tap SN.
 timing=main
+oracle=Whenever another creature dies, tap Fleshmad Steed.

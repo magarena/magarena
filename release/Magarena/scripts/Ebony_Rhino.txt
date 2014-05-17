@@ -9,3 +9,4 @@ ability=trample
 cost={7}
 pt=4/5
 timing=main
+oracle=Trample

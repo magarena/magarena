@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G/W}{G/W}{G/W}
 timing=removal
 requires_groovy_code
+oracle=Destroy all artifacts and enchantments. You gain 2 life for each permanent destroyed this way.

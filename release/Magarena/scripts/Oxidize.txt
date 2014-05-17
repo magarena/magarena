@@ -8,3 +8,4 @@ type=Instant
 cost={G}
 timing=removal
 effect=Destroy target artifact. It can't be regenerated.
+oracle=Destroy target artifact. It can't be regenerated.

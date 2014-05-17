@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 ability={3}: You may put a Minotaur permanent card from your hand onto the battlefield.
 timing=artifact
+oracle={3}: You may put a Minotaur permanent card from your hand onto the battlefield.

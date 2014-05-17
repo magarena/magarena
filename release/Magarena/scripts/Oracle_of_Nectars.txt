@@ -9,3 +9,4 @@ cost={2}{G/W}
 pt=2/2
 timing=smain
 requires_groovy_code
+oracle={X}, {T}: You gain X life.

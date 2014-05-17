@@ -8,3 +8,4 @@ type=Artifact
 cost={2}
 ability={2},{T}: Tap target creature.
 timing=artifact
+oracle={2}, {T}: Tap target creature.

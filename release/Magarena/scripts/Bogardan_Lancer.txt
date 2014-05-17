@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/1
 ability=bloodthirst 1;flanking
 timing=main
+oracle=Bloodthirst 1. Flanking

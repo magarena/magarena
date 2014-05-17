@@ -8,3 +8,4 @@ type=Instant
 cost={W}
 timing=removal
 requires_groovy_code
+oracle=Put target attacking creature on the bottom of its owner's library. Its controller gains life equal to its toughness.

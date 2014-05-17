@@ -7,3 +7,4 @@ type=Instant
 cost={2}{U}
 timing=tapping
 requires_groovy_code
+oracle=Tap target creature. It doesn't untap during its controller's next untap step. Draw a card.

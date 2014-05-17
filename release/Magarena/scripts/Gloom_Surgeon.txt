@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 timing=main
 requires_groovy_code
+oracle=If combat damage would be dealt to Gloom Surgeon, prevent that damage and exile that many cards from the top of your library.

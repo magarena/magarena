@@ -8,3 +8,4 @@ type=Sorcery
 cost={2}{R}
 timing=main
 requires_groovy_code
+oracle=Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.

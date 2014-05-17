@@ -10,3 +10,4 @@ pt=0/1
 ability=At the beginning of your upkeep, put a spore counter on SN.
 timing=main
 requires_groovy_code
+oracle=At the beginning of your upkeep, put a spore counter on Spore Flower. Remove three spore counters from Spore Flower: Prevent all combat damage that would be dealt this turn.

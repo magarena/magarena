@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability={0}:SN gets -1/-1 and gains flying until end of turn.
 timing=artifact
+oracle={0}: Hopping Automaton gets -1/-1 and gains flying until end of turn.

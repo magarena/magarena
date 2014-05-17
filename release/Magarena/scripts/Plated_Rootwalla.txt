@@ -9,3 +9,4 @@ cost={4}{G}
 pt=3/3
 ability={2}{G}, {Once}: SN gets +3/+3 until end of turn.
 timing=main
+oracle={2}{G}: Plated Rootwalla gets +3/+3 until end of turn. Activate this ability only once each turn.

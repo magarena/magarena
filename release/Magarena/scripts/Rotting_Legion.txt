@@ -9,3 +9,4 @@ cost={4}{B}
 pt=4/5
 timing=main
 ability=SN enters the battlefield tapped.
+oracle=Rotting Legion enters the battlefield tapped.

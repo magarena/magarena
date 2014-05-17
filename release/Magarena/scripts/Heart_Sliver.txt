@@ -10,3 +10,4 @@ pt=1/1
 ability=all sliver creatures have haste
 static=all
 timing=fmain
+oracle=All Sliver creatures have haste.

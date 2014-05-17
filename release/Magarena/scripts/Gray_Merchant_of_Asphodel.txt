@@ -10,3 +10,4 @@ pt=2/4
 timing=main
 requires_groovy_code
 # Need to determine the amount of life lost by opponents - some cards prevent life from being lost. See Platinum Emperion
+oracle=When Gray Merchant of Asphodel enters the battlefield, each opponent loses X life, where X is your devotion to black. You gain life equal to the life lost this way.

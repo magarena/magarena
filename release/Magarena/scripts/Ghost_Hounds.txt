@@ -10,3 +10,4 @@ pt=1/1
 ability=vigilance
 timing=main
 requires_groovy_code
+oracle=Vigilance. Whenever Ghost Hounds blocks or becomes blocked by a white creature, Ghost Hounds gains first strike until end of turn.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{R}{R}
 ability=all creatures have "SN can't block."
 timing=enchantment
+oracle=Creatures can't block.

@@ -9,3 +9,4 @@ cost={3}{R}
 pt=2/2
 ability=When SN enters the battlefield, destroy target nonbasic land.
 timing=main
+oracle=When Ravenous Baboons enters the battlefield, destroy target nonbasic land.

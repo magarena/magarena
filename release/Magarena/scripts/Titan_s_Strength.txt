@@ -7,3 +7,4 @@ type=Instant
 cost={R}
 timing=pump
 requires_groovy_code
+oracle=Target creature gets +3/+1 until end of turn. Scry 1.

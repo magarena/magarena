@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{R}{R}
 effect=All creatures get +2/-2 until end of turn.
 timing=removal
+oracle=All creatures get +2/-2 until end of turn.

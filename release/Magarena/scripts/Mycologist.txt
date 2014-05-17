@@ -11,3 +11,4 @@ ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.;\
         Sacrifice a Saproling: You gain 2 life.
 timing=main
+oracle=At the beginning of your upkeep, put a spore counter on Mycologist. Remove three spore counters from Mycologist: Put a 1/1 green Saproling creature token onto the battlefield. Sacrifice a Saproling: You gain 2 life.

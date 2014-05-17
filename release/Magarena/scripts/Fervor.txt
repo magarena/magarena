@@ -8,3 +8,4 @@ cost={2}{R}
 ability=creatures you control have haste
 static=player
 timing=enchantment
+oracle=Creatures you control have haste.

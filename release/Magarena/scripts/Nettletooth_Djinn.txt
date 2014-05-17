@@ -9,3 +9,4 @@ cost={3}{G}
 pt=4/4
 ability=At the beginning of your upkeep, SN deals 1 damage to you.
 timing=main
+oracle=At the beginning of your upkeep, Nettletooth Djinn deals 1 damage to you.

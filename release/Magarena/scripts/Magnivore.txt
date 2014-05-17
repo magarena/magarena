@@ -9,3 +9,4 @@ cost={2}{R}{R}
 ability=haste
 timing=fmain
 requires_groovy_code
+oracle=Haste. Magnivore's power and toughness are each equal to the number of sorcery cards in all graveyards.

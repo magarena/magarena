@@ -9,3 +9,4 @@ cost={B}
 pt=1/1
 ability=SN can't block.;SN can't be blocked.
 timing=main
+oracle=Tormented Soul can't block and can't be blocked.

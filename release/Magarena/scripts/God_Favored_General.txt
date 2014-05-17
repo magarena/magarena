@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 ability=Whenever SN becomes untapped, you may pay {2}{W}. If you do, put two 1/1 white Soldier enchantment creature tokens onto the battlefield.
 timing=main
+oracle=Inspired ? Whenever God-Favored General becomes untapped, you may pay {2}{W}. If you do, put two 1/1 white Soldier enchantment creature tokens onto the battlefield.

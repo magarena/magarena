@@ -9,3 +9,4 @@ cost={1}{G}{W}
 pt=3/3
 ability=Sacrifice SN: Creatures you control gain indestructible until end of turn.
 timing=main
+oracle=Sacrifice Dauntless Escort: Creatures you control gain indestructible until end of turn.

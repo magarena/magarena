@@ -8,3 +8,4 @@ cost={4}{W}{W}
 effect=Destroy all artifacts, creatures, and enchantments.
 ability=cycling {3}
 timing=removal
+oracle=Destroy all artifacts, creatures, and enchantments. Cycling {3}

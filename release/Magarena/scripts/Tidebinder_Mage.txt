@@ -9,3 +9,4 @@ cost={U}{U}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=When Tidebinder Mage enters the battlefield, tap target red or green creature an opponent controls. That creature doesn't untap during its controller's untap step for as long as you control Tidebinder Mage.

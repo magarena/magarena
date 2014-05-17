@@ -11,3 +11,4 @@ ability=other soldier creatures get +1/+1;\
         other soldier creatures have first strike
 static=all
 timing=main
+oracle=Other Soldier creatures get +1/+1 and have first strike.

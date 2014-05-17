@@ -9,3 +9,4 @@ cost={2}
 pt=2/1
 ability=defender;first strike
 timing=main
+oracle=Defender, first strike

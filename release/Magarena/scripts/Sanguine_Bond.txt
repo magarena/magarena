@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{B}{B}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever you gain life, target opponent loses that much life.

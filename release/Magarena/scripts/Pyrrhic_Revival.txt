@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{W/B}{W/B}{W/B}
 timing=main
 requires_groovy_code
+oracle=Each player returns each creature card from his or her graveyard to the battlefield with an additional -1/-1 counter on it.

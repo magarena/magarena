@@ -9,3 +9,4 @@ cost={5}{R}
 pt=4/2
 ability=Whenever another creature dies, SN deals 2 damage to target player.
 timing=main
+oracle=Whenever another creature dies, Rage Thrower deals 2 damage to target player.

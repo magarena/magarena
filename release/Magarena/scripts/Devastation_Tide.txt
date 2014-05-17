@@ -9,3 +9,4 @@ cost={3}{U}{U}
 timing=removal
 ability=miracle {1}{U}
 requires_groovy_code
+oracle=Return all nonland permanents to their owners' hands. Miracle {1}{U}

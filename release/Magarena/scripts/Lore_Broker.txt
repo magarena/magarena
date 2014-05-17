@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/2
 timing=main
 requires_groovy_code
+oracle={T}: Each player draws a card, then discards a card.

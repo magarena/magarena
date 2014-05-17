@@ -9,3 +9,4 @@ cost={4}{G}
 pt=4/4
 ability=protection from artifacts
 timing=main
+oracle=Protection from artifacts

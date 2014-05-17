@@ -9,3 +9,4 @@ cost={B}
 pt=1/1
 ability={1}{U}{R}:SN gets +3/+0 and gains flying until end of turn.
 timing=main
+oracle={1}{U}{R}: Dreadwing gets +3/+0 and gains flying until end of turn.

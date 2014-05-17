@@ -9,3 +9,4 @@ cost={3}{R}
 ability=haste
 timing=fmain
 requires_groovy_code
+oracle=Haste. Reckless One's power and toughness are each equal to the number of Goblins on the battlefield.

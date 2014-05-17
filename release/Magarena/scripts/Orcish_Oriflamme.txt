@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{R}
 ability=attacking creatures you control get +1/+0
 timing=enchantment
+oracle=Attacking creatures you control get +1/+0.

@@ -10,3 +10,4 @@ pt=1/1
 ability=all sliver creatures have flanking
 static=all
 timing=main
+oracle=All Sliver creatures have flanking.

@@ -9,3 +9,4 @@ cost={2}
 ability=Equipped creature has haste and shroud.;\
         Equip {0}
 timing=equipment
+oracle=Equipped creature has haste and shroud.. Equip {0}

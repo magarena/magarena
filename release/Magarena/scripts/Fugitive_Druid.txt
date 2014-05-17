@@ -9,3 +9,4 @@ cost={3}{G}
 pt=3/2
 ability=Whenever SN becomes the target of an Aura spell, you draw a card.
 timing=main
+oracle=Whenever Fugitive Druid becomes the target of an Aura spell, you draw a card.

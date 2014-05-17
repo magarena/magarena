@@ -9,3 +9,4 @@ subtype=Bird
 cost={2}{W}{U}
 pt=3/3
 timing=main
+oracle=Flying

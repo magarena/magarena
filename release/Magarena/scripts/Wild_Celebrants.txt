@@ -9,3 +9,4 @@ cost={3}{R}{R}
 pt=5/3
 ability=When SN enters the battlefield, you may destroy target artifact.
 timing=main
+oracle=When Wild Celebrants enters the battlefield, you may destroy target artifact.

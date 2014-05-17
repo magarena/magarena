@@ -10,3 +10,4 @@ ability=Enchanted creature gets -1/-1.;\
         Cycling {2}
 timing=aura
 enchant=weaken,neg creature
+oracle=Enchant creature. Enchanted creature gets -1/-1. Cycling {2}

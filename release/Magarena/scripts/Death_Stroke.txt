@@ -8,3 +8,4 @@ type=Sorcery
 cost={B}{B}
 timing=main
 effect=Destroy target tapped creature.
+oracle=Destroy target tapped creature.

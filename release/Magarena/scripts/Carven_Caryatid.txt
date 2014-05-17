@@ -10,3 +10,4 @@ pt=2/5
 ability=defender;\
         When SN enters the battlefield, draw a card.
 timing=smain
+oracle=Defender. When Carven Caryatid enters the battlefield, draw a card.

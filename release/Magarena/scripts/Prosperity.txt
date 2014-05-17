@@ -7,3 +7,4 @@ type=Sorcery
 cost={X}{U}
 timing=main
 requires_groovy_code
+oracle=Each player draws X cards.

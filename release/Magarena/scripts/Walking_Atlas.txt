@@ -9,3 +9,4 @@ cost={2}
 pt=1/1
 ability={T}: You may put a land card from your hand onto the battlefield.
 timing=artifact
+oracle={T}: You may put a land card from your hand onto the battlefield.

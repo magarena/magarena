@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{R}
 timing=main
 requires_groovy_code
+oracle=Draw four cards, then discard three cards at random.

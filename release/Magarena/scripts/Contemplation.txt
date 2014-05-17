@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}{W}
 ability=Whenever you cast a spell, you gain 1 life.
 timing=enchantment
+oracle=Whenever you cast a spell, you gain 1 life.

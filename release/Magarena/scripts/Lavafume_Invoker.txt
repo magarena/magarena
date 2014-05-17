@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability={8}: Creatures you control get +3/+0 until end of turn.
 timing=main
+oracle={8}: Creatures you control get +3/+0 until end of turn.

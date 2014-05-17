@@ -10,3 +10,4 @@ cost={1}{R}{G}
 pt=3/2
 ability=When SN enters the battlefield, destroy target artifact.
 timing=main
+oracle=When Vithian Renegades enters the battlefield, destroy target artifact.

@@ -9,3 +9,4 @@ cost={B/G}
 pt=1/1
 ability={1}{B/G}: Regenerate SN.
 timing=main
+oracle={1}{B/G}: Regenerate Odious Trow.

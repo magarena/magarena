@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability={T}:Target creature gains forestwalk until end of turn.
 timing=main
+oracle={T}: Target creature gains forestwalk until end of turn.

@@ -9,3 +9,4 @@ cost={4}{G}{G}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=When Bane of Progress enters the battlefield, destroy all artifacts and enchantments. Put a +1/+1 counter on Bane of Progress for each permanent destroyed this way.

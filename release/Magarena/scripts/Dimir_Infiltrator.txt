@@ -9,3 +9,4 @@ cost={U}{B}
 pt=1/3
 ability=SN can't be blocked.;Transmute {1}{U}{B}
 timing=main
+oracle=Dimir Infiltrator can't be blocked. Transmute {1}{U}{B}

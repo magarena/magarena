@@ -9,3 +9,4 @@ subtype=Elemental
 cost={2}{G}
 pt=8/0
 timing=main
+oracle=Trample

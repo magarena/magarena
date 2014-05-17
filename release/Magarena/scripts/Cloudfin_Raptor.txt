@@ -9,3 +9,4 @@ cost={U}
 pt=0/1
 ability=flying;evolve
 timing=main
+oracle=Flying. Evolve

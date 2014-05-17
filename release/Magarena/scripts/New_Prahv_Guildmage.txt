@@ -10,3 +10,4 @@ pt=2/2
 ability={W}{U}: Target creature gains flying until end of turn.
 timing=main
 requires_groovy_code
+oracle={W}{U}: Target creature gains flying until end of turn. {3}{W}{U}: Detain target nonland permanent an opponent controls.

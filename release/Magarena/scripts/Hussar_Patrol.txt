@@ -9,3 +9,4 @@ ability=flash;vigilance
 cost={2}{W}{U}
 pt=2/4
 timing=main
+oracle=Flash. Vigilance

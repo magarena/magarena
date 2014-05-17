@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 timing=main
 requires_groovy_code
+oracle=At the beginning of each opponent's upkeep, if that player has seven or more cards in hand, Ebony Owl Netsuke deals 4 damage to him or her.

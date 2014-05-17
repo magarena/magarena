@@ -10,3 +10,4 @@ pt=4/4
 ability=all sliver creatures have trample
 static=all
 timing=main
+oracle=All Sliver creatures have trample.

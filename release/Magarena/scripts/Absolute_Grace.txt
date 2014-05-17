@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}
 ability=all creatures have protection from black
 timing=enchantment
+oracle=All creatures have protection from black.

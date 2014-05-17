@@ -9,3 +9,4 @@ cost={2}{R}
 pt=3/3
 ability=SN can't block.
 timing=main
+oracle=Hulking Ogre can't block.

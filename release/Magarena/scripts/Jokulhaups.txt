@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{R}{R}
 effect=Destroy all artifacts, creatures, and lands. They can't be regenerated.
 timing=main
+oracle=Destroy all artifacts, creatures, and lands. They can't be regenerated.

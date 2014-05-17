@@ -9,3 +9,4 @@ cost={4}
 pt=3/3
 ability=When SN enters the battlefield, target opponent loses 3 life.
 timing=main
+oracle=When Pierce Strider enters the battlefield, target opponent loses 3 life.

@@ -10,3 +10,4 @@ pt=1/4
 ability=flash
 timing=main
 requires_groovy_code
+oracle=Flash. When Village Bell-Ringer enters the battlefield, untap all creatures you control.

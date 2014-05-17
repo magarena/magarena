@@ -10,3 +10,4 @@ ability=Equipped creature has indestructible.;\
         Equip {4}
 timing=equipment
 requires_groovy_code
+oracle=Equipment named Sword of Kaldra, Shield of Kaldra, and Helm of Kaldra have indestructible. Equipped creature has indestructible.. Equip {4}

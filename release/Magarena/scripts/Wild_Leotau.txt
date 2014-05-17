@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=5/4
 ability=At the beginning of your upkeep, you may pay {G}. If you don't, sacrifice SN.
 timing=main
+oracle=At the beginning of your upkeep, sacrifice Wild Leotau unless you pay {G}.

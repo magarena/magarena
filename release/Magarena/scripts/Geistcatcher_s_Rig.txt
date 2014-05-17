@@ -9,3 +9,4 @@ cost={6}
 pt=4/5
 ability=When SN enters the battlefield, you may have SN deal 4 damage to target creature with flying.
 timing=main
+oracle=When Geistcatcher's Rig enters the battlefield, you may have it deal 4 damage to target creature with flying.

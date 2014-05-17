@@ -7,3 +7,4 @@ type=Sorcery
 cost={X}{2}{R}{R}
 timing=main
 requires_groovy_code
+oracle=All creatures get +X/-X until end of turn.

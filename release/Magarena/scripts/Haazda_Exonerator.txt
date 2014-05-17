@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability={T},Sacrifice SN:Destroy target Aura.
 timing=main
+oracle={T}, Sacrifice Haazda Exonerator: Destroy target Aura.

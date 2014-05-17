@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{R}{W}
 ability={2},Sacrifice a land: Put two 1/1 red and white Goblin Soldier creature tokens onto the battlefield.
 timing=enchantment
+oracle={2}, Sacrifice a land: Put two 1/1 red and white Goblin Soldier creature tokens onto the battlefield.

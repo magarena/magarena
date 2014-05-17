@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=protection from black
 timing=main
+oracle=Protection from black

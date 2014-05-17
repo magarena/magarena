@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{R}
 timing=main
 requires_groovy_code
+oracle=Destroy target land. Draw a card.

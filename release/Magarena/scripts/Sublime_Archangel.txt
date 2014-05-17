@@ -10,3 +10,4 @@ pt=4/3
 ability=flying;exalted;other creatures you control have exalted
 static=player
 timing=main
+oracle=Flying. Exalted. Other creatures you control have exalted.

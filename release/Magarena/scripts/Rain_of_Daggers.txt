@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Destroy all creatures target opponent controls. You lose 2 life for each creature destroyed this way.

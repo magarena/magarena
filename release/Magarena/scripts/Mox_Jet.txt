@@ -8,3 +8,4 @@ type=Artifact
 cost={0}
 ability={T}: Add {B} to your mana pool.
 timing=artifact
+oracle={T}: Add {B} to your mana pool.

@@ -8,3 +8,4 @@ subtype=Giant
 cost={3}{R}
 timing=removal
 requires_groovy_code
+oracle=Giant's Ire deals 4 damage to target player. If you control a Giant, draw a card.

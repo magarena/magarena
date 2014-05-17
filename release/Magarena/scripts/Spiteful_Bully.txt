@@ -9,3 +9,4 @@ cost={1}{B}
 pt=3/3
 ability=At the beginning of your upkeep, SN deals 3 damage to target creature you control.
 timing=main
+oracle=At the beginning of your upkeep, Spiteful Bully deals 3 damage to target creature you control.

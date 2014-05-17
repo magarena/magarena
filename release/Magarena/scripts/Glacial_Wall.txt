@@ -9,3 +9,4 @@ subtype=Wall
 cost={2}{U}
 pt=0/7
 timing=smain
+oracle=Defender

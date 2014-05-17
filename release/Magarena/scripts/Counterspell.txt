@@ -7,3 +7,4 @@ type=Instant
 cost={U}{U}
 timing=counter
 effect=Counter target spell.
+oracle=Counter target spell.

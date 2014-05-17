@@ -9,3 +9,4 @@ cost={5}{U}
 pt=4/1
 ability=SN can't be blocked.
 timing=main
+oracle=Plasma Elemental can't be blocked.

@@ -8,3 +8,4 @@ subtype=Insect
 cost={2}
 ability=modular 1;flying
 timing=main
+oracle=Flying. Modular 1

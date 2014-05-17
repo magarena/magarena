@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{U}
 timing=nextturn
 requires_groovy_code
+oracle=Take an extra turn after this one.

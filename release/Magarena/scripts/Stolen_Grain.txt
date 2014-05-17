@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Stolen Grain deals 5 damage to target opponent. You gain 5 life.

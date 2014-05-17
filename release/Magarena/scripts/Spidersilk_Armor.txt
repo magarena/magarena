@@ -9,3 +9,4 @@ ability=creatures you control get +0/+1;\
         creatures you control have reach
 static=player
 timing=enchantment
+oracle=Creatures you control get +0/+1 and have reach.

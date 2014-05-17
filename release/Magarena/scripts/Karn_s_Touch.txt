@@ -7,3 +7,4 @@ type=Instant
 cost={U}{U}
 timing=animate
 requires_groovy_code
+oracle=Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn.

@@ -9,3 +9,4 @@ cost={2}{B}{B}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Whenever Smogsteed Rider attacks, each other attacking creature gains fear until end of turn.

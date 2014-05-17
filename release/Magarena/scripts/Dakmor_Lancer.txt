@@ -9,3 +9,4 @@ cost={4}{B}{B}
 pt=3/3
 ability=When SN enters the battlefield, destroy target nonblack creature.
 timing=main
+oracle=When Dakmor Lancer enters the battlefield, destroy target nonblack creature.

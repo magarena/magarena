@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{W}
 effect=Exile target tapped creature.
 timing=main
+oracle=Exile target tapped creature.

@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 ability=Unearth {B}
 timing=main
+oracle=Unearth {B}

@@ -9,3 +9,4 @@ cost={3}{W}
 pt=3/3
 ability=vigilance;{2}{R}: Creatures you control get +1/+0 until end of turn.
 timing=main
+oracle=Vigilance. {2}{R}: Creatures you control get +1/+0 until end of turn.

@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Squirrel Mob gets +1/+1 for each other Squirrel on the battlefield.

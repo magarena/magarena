@@ -7,3 +7,4 @@ type=Instant
 cost={1}{R/W}
 effect=Target creature gains double strike until end of turn.
 timing=block
+oracle=Target creature gains double strike until end of turn.

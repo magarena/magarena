@@ -10,3 +10,4 @@ pt=0/2
 ability=Whenever you cast an Aura spell, you may draw a card.
 timing=main
 requires_groovy_code
+oracle=Kor Spiritdancer gets +2/+2 for each Aura attached to it. Whenever you cast an Aura spell, you may draw a card.

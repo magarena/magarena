@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=first strike
 timing=main
+oracle=First strike

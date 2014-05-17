@@ -8,3 +8,4 @@ cost={1}{G}{G}
 ability=creatures you control get +1/+1
 static=player
 timing=enchantment
+oracle=Creatures you control get +1/+1.

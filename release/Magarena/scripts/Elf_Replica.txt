@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability={1}{G}, Sacrifice SN: Destroy target enchantment.
 timing=main
+oracle={1}{G}, Sacrifice Elf Replica: Destroy target enchantment.

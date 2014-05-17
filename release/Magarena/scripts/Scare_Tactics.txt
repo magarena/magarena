@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 effect=Creatures you control get +1/+0 until end of turn.
 timing=removal
+oracle=Creatures you control get +1/+0 until end of turn.

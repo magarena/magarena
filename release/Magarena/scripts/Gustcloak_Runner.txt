@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 timing=main
 requires_groovy_code=Gustcloak Skirmisher
+oracle=Whenever Gustcloak Runner becomes blocked, you may untap it and remove it from combat.

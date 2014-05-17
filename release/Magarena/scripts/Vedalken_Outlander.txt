@@ -9,3 +9,4 @@ cost={W}{U}
 pt=2/2
 ability=protection from red
 timing=smain
+oracle=Protection from red

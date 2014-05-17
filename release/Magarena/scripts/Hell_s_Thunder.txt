@@ -11,3 +11,4 @@ ability=Flying;haste;\
         At the beginning of the end step, sacrifice SN.;\
         Unearth {4}{R}
 timing=fmain
+oracle=Flying, haste. At the beginning of the end step, sacrifice Hell's Thunder. Unearth {4}{R}

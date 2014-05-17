@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{U}
 ability={1}{U}, Sacrifice SN: Draw two cards.
 timing=main
+oracle={1}{U}, Sacrifice Font of Fortunes: Draw two cards.

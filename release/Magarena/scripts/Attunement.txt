@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{U}
 ability=Return SN to its owner's hand: Draw three cards, then discard four cards.
 timing=enchantment
+oracle=Return Attunement to its owner's hand: Draw three cards, then discard four cards.

@@ -9,3 +9,4 @@ cost={7}
 pt=4/4
 ability={3}: Regenerate SN.
 timing=artifact
+oracle={3}: Regenerate Diabolic Machine.

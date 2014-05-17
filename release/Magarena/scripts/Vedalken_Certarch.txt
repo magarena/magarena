@@ -9,3 +9,4 @@ cost={U}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle=Metalcraft ? {T}: Tap target artifact, creature, or land. Activate this ability only if you control three or more artifacts.

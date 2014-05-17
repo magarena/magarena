@@ -9,3 +9,4 @@ cost={3}{W}
 pt=3/2
 timing=main
 ability=When SN enters the battlefield, you may destroy target Vampire, Werewolf, or Zombie.
+oracle=When Slayer of the Wicked enters the battlefield, you may destroy target Vampire, Werewolf, or Zombie.

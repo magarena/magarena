@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G/W}{G/W}
 timing=main
 requires_groovy_code
+oracle=At the beginning of your upkeep, populate.

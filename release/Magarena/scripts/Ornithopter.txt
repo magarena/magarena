@@ -9,3 +9,4 @@ subtype=Thopter
 cost={0}
 pt=0/2
 timing=main
+oracle=Flying

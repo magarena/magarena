@@ -9,3 +9,4 @@ cost={4}{W}
 pt=1/5
 timing=main
 requires_groovy_code
+oracle=Whenever Dromad Purebred is dealt damage, you gain 1 life.

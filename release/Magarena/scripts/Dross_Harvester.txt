@@ -11,3 +11,4 @@ ability=protection from white;\
         At the beginning of your end step, you lose 4 life.;\
         Whenever a creature dies, you gain 2 life.
 timing=main
+oracle=Protection from white. At the beginning of your end step, you lose 4 life. Whenever a creature dies, you gain 2 life.

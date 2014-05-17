@@ -7,3 +7,4 @@ type=Sorcery
 cost={G}
 effect=Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
+oracle=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.

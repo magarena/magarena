@@ -9,3 +9,4 @@ cost={5}{R}
 pt=4/4
 timing=main
 requires_groovy_code
+oracle={T}, Sacrifice a creature: Bloodshot Cyclops deals damage equal to the sacrificed creature's power to target creature or player.

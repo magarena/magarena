@@ -9,3 +9,4 @@ cost={4}{W}{W}
 pt=1/3
 timing=main
 requires_groovy_code
+oracle=When Evangel of Heliod enters the battlefield, put a number of 1/1 white Soldier creature tokens onto the battlefield equal to your devotion to white.

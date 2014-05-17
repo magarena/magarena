@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=Whenever an artifact is put into a graveyard from the battlefield, you may put a +1/+1 counter on SN.
 timing=main
+oracle=Whenever an artifact is put into a graveyard from the battlefield, you may put a +1/+1 counter on Moriok Rigger.

@@ -9,3 +9,4 @@ cost={5}{G}
 pt=3/6
 ability={R/G}{R/G}{R/G}: SN gets +3/+0 until end of turn.
 timing=main
+oracle={R/G}{R/G}{R/G}: Foxfire Oak gets +3/+0 until end of turn.

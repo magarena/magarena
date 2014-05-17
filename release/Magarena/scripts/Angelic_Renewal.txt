@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature is put into your graveyard from the battlefield, you may sacrifice Angelic Renewal. If you do, return that card to the battlefield.

@@ -10,3 +10,4 @@ pt=1/1
 ability=all Slivers have "{T}: Regenerate target Sliver."
 static=all
 timing=main
+oracle=All Slivers have "{T}: Regenerate target Sliver."

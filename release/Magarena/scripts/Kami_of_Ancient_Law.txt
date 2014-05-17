@@ -9,3 +9,4 @@ cost={1}{W}
 pt=2/2
 ability=Sacrifice SN:Destroy target enchantment.
 timing=main
+oracle=Sacrifice Kami of Ancient Law: Destroy target enchantment.

@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{R}
 effect=Target creature gets +5/+0 and gains haste until end of turn.
 timing=fmain
+oracle=Target creature gets +5/+0 and gains haste until end of turn.

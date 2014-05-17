@@ -9,3 +9,4 @@ cost={5}{W}{U}{B}
 pt=6/6
 ability=flying;first strike;vigilance;lifelink;protection from red;protection from green
 timing=smain
+oracle=Flying, first strike, vigilance, lifelink, protection from red and from green

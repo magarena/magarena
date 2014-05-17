@@ -8,3 +8,4 @@ subtype=Human
 cost={G}{G}
 timing=smain
 requires_groovy_code
+oracle=People of the Woods's toughness is equal to the number of Forests you control.

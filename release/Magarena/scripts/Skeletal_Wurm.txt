@@ -9,3 +9,4 @@ cost={7}{B}
 pt=7/6
 ability={B}: Regenerate SN.
 timing=main
+oracle={B}: Regenerate Skeletal Wurm.

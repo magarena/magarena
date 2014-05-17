@@ -10,3 +10,4 @@ pt=2/2
 ability=haste;\
         {T}, Discard a card: Draw a card.
 timing=fmain
+oracle=Haste. {T}, Discard a card: Draw a card.

@@ -10,3 +10,4 @@ pt=1/1
 ability=Horsemanship;\
         When SN enters the battlefield, look at target opponent's hand.
 timing=main
+oracle=Horsemanship. When Wu Scout enters the battlefield, look at target opponent's hand.

@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{R}
 effect=SN deals 4 damage to each player.
 timing=main
+oracle=Flame Rift deals 4 damage to each player.

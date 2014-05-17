@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=5/4
 ability=echo {2}{R}{R}
 timing=main
+oracle=Echo {2}{R}{R}

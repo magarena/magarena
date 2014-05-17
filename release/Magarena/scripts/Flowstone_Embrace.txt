@@ -9,3 +9,4 @@ cost={1}{R}
 timing=aura
 enchant=weaken +2/-2,creature
 requires_groovy_code
+oracle=Enchant creature. {T}: Enchanted creature gets +2/-2 until end of turn.

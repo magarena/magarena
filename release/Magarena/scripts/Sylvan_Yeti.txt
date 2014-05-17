@@ -8,3 +8,4 @@ subtype=Yeti
 cost={2}{G}{G}
 timing=main
 requires_groovy_code
+oracle=Sylvan Yeti's power is equal to the number of cards in your hand.

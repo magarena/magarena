@@ -9,3 +9,4 @@ cost={X}
 ability=defender;\
         SN enters the battlefield with X +1/+1 counters on it.
 timing=main
+oracle=Defender. Shifting Wall enters the battlefield with X +1/+1 counters on it.

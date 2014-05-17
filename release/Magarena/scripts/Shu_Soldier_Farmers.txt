@@ -9,3 +9,4 @@ cost={4}{W}
 pt=2/4
 ability=When SN enters the battlefield, you gain 4 life.
 timing=main
+oracle=When Shu Soldier-Farmers enters the battlefield, you gain 4 life.

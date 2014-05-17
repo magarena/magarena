@@ -8,3 +8,4 @@ type=Sorcery
 cost={2}{G}{G}
 effect=Destroy all artifacts.
 timing=removal
+oracle=Destroy all artifacts.

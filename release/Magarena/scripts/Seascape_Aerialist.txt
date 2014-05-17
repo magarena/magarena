@@ -9,3 +9,4 @@ cost={4}{U}
 pt=2/3
 ability=Whenever SN or another Ally enters the battlefield under your control, you may have Ally creatures you control gain flying until end of turn.
 timing=main
+oracle=Whenever Seascape Aerialist or another Ally enters the battlefield under your control, you may have Ally creatures you control gain flying until end of turn.

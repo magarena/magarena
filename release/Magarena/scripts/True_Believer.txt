@@ -9,3 +9,4 @@ cost={W}{W}
 pt=2/2
 timing=main
 requires_groovy_code=Ivory_Mask
+oracle=You have shroud.

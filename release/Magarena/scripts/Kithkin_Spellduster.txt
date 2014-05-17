@@ -9,3 +9,4 @@ cost={4}{W}
 pt=2/3
 ability=flying;{1}{W},Sacrifice SN:Destroy target enchantment.;persist
 timing=main
+oracle=Flying. {1}{W}, Sacrifice Kithkin Spellduster: Destroy target enchantment. Persist

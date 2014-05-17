@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{R}
 effect=Creatures you control gain double strike until end of turn.
 timing=fmain
+oracle=Creatures you control gain double strike until end of turn.

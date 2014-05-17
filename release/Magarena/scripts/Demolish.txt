@@ -8,3 +8,4 @@ type=Sorcery
 cost={3}{R}
 timing=removal
 effect=Destroy target artifact or land.
+oracle=Destroy target artifact or land.

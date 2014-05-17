@@ -11,3 +11,4 @@ ability=flying;\
         When SN enters the battlefield, return a blue or black creature you control to its owner's hand.
 timing=main
 requires_groovy_code
+oracle=Flying. When Doomsday Specter enters the battlefield, return a blue or black creature you control to its owner's hand. Whenever Doomsday Specter deals combat damage to a player, look at that player's hand and choose a card from it. The player discards that card.

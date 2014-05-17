@@ -8,3 +8,4 @@ cost={1}{W}
 effect=Destroy target enchantment.
 ability=Flashback {G}
 timing=removal
+oracle=Destroy target enchantment. Flashback {G}

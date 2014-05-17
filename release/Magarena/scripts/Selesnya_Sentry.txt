@@ -9,3 +9,4 @@ cost={2}{W}
 pt=3/2
 ability={5}{G}: Regenerate SN.
 timing=main
+oracle={5}{G}: Regenerate Selesnya Sentry.

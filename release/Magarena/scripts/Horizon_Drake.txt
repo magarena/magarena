@@ -9,3 +9,4 @@ cost={1}{U}{U}
 pt=3/1
 ability=flying;protection from lands
 timing=main
+oracle=Flying, protection from lands

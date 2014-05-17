@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{B}{B}
 effect=Target player discards three cards.
 timing=main
+oracle=Target player discards three cards.

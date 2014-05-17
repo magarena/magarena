@@ -9,3 +9,4 @@ cost={1}{B}{B}
 pt=1/1
 ability=When SN dies, return SN from the graveyard to its owner's hand.
 timing=main
+oracle=When Endless Cockroaches dies, return it to its owner's hand.

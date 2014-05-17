@@ -9,3 +9,4 @@ cost={7}{G}{G}
 pt=8/5
 ability=trample;soulshift 8
 timing=main
+oracle=Trample. Soulshift 8

@@ -9,3 +9,4 @@ cost={1}{R}{R}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle={R}: Grizzled Wolverine gets +2/+0 until end of turn. Activate this ability only during the declare blockers step, only if at least one creature is blocking Grizzled Wolverine, and only once each turn.

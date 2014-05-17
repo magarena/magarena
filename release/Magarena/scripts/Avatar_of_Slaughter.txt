@@ -10,3 +10,4 @@ pt=8/8
 ability=all creatures have double strike;\
         all creatures have SN attacks each turn if able.
 timing=main
+oracle=All creatures have double strike and attack each turn if able.

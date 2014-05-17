@@ -9,3 +9,4 @@ cost={2}{U/R}{U/R}
 pt=4/3
 ability=When SN enters the battlefield, return a land you control to its owner's hand.
 timing=main
+oracle=When Noggle Bridgebreaker enters the battlefield, return a land you control to its owner's hand.

@@ -10,3 +10,4 @@ pt=6/6
 ability=deathtouch;lifelink
 timing=main
 requires_groovy_code
+oracle=Deathtouch, lifelink. When Wurmcoil Engine dies, put a 3/3 colorless Wurm artifact creature token with deathtouch and a 3/3 colorless Wurm artifact creature token with lifelink onto the battlefield.

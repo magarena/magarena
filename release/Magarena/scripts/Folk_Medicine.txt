@@ -8,3 +8,4 @@ cost={2}{G}
 ability=Flashback {1}{W}
 timing=pump
 requires_groovy_code
+oracle=You gain 1 life for each creature you control. Flashback {1}{W}

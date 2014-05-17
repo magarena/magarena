@@ -9,3 +9,4 @@ cost={3}
 ability=flying;SN can't block.
 pt=2/1
 timing=main
+oracle=Flying. Aesthir Glider can't block.

@@ -9,3 +9,4 @@ cost={2}{B}
 pt=3/4
 ability=When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
+oracle=When Tar Pit Warrior becomes the target of a spell or ability, sacrifice it.

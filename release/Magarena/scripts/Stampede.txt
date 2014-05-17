@@ -7,3 +7,4 @@ type=Instant
 cost={1}{G}{G}
 timing=pump
 requires_groovy_code
+oracle=Attacking creatures get +1/+0 and gain trample until end of turn.

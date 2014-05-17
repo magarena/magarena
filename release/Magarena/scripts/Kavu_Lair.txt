@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature with power 4 or greater enters the battlefield, its controller draws a card.

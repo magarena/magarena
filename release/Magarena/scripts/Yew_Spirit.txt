@@ -9,3 +9,4 @@ cost={4}{G}
 pt=3/3
 timing=main
 requires_groovy_code
+oracle={2}{G}{G}: Yew Spirit gets +X/+X until end of turn, where X is its power.

@@ -9,3 +9,4 @@ cost={U}
 pt=1/1
 ability=SN has flying as long as it's enchanted.
 timing=main
+oracle=Fledgling Osprey has flying as long as it's enchanted.

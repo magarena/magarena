@@ -10,3 +10,4 @@ pt=3/4
 ability=creatures you control have haste
 static=player
 timing=fmain
+oracle=Creatures you control have haste.

@@ -7,3 +7,4 @@ type=Instant
 cost={R}{R}
 timing=spell
 requires_groovy_code
+oracle=Copy target instant or sorcery spell. You may choose new targets for the copy.

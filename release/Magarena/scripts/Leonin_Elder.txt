@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=Whenever an artifact enters the battlefield, you may gain 1 life.
 timing=main
+oracle=Whenever an artifact enters the battlefield, you may gain 1 life.

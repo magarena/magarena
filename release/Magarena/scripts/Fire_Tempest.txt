@@ -7,3 +7,4 @@ type=Sorcery
 cost={5}{R}{R}
 effect=SN deals 6 damage to each creature and each player.
 timing=main
+oracle=Fire Tempest deals 6 damage to each creature and each player.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{W}
 ability={1}{W}: Target creature gains first strike until end of turn.
 timing=enchantment
+oracle={1}{W}: Target creature gains first strike until end of turn.

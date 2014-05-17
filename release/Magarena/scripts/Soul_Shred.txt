@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Soul Shred deals 3 damage to target nonblack creature. You gain 3 life.

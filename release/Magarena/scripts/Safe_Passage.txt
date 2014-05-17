@@ -7,3 +7,4 @@ type=Instant
 cost={2}{W}
 timing=pump
 requires_groovy_code
+oracle=Prevent all damage that would be dealt to you and creatures you control this turn.

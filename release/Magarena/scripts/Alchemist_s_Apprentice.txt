@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/1
 ability=Sacrifice SN: Draw a card.
 timing=main
+oracle=Sacrifice Alchemist's Apprentice: Draw a card.

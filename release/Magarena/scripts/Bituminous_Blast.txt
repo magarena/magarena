@@ -9,3 +9,4 @@ ability=cascade
 effect=SN deals 4 damage to target creature.
 removal=4
 timing=removal
+oracle=Cascade. Bituminous Blast deals 4 damage to target creature.

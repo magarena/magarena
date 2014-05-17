@@ -11,3 +11,4 @@ ability=Flash;\
         Flying;\
         When SN enters the battlefield, switch target creature's power and toughness until end of turn.
 timing=pumpFlash
+oracle=Flash. Flying. When Crookclaw Transmuter enters the battlefield, switch target creature's power and toughness until end of turn.

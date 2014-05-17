@@ -9,3 +9,4 @@ subtype=Hag
 cost={W/B}
 pt=1/1
 timing=main
+oracle=Lifelink

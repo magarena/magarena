@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 effect=Target creature gets +1/+1 and gains lifelink until end of turn.
 timing=pumpFlash
+oracle=Target creature gets +1/+1 and gains lifelink until end of turn.

@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability=rampage 1
 timing=main
+oracle=Rampage 1

@@ -10,3 +10,4 @@ pt=0/1
 ability=flying;cascade;\
         {B}: Regenerate SN.
 timing=main
+oracle=Flying. {B}: Regenerate Kathari Remnant. Cascade

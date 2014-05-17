@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/1
 ability={T}: SN deals 1 damage to target creature or player and 1 damage to you.
 timing=smain
+oracle={T}: Fireslinger deals 1 damage to target creature or player and 1 damage to you.

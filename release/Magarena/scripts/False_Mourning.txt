@@ -7,3 +7,4 @@ type=Sorcery
 cost={G}
 effect=Put target card from your graveyard on top of your library.
 timing=main
+oracle=Put target card from your graveyard on top of your library.

@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Target player draws three cards.
 timing=draw
+oracle=Target player draws three cards.

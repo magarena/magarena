@@ -10,3 +10,4 @@ ability=Enchanted creature gets +3/+3 and has trample.
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code=Regeneration
+oracle=Enchant creature. Enchanted creature gets +3/+3 and has trample. {G}: Regenerate enchanted creature.

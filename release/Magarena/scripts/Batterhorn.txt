@@ -9,3 +9,4 @@ cost={4}{R}
 pt=4/3
 ability=When SN enters the battlefield, you may destroy target artifact.
 timing=main
+oracle=When Batterhorn enters the battlefield, you may destroy target artifact.

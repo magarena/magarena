@@ -10,3 +10,4 @@ pt=1/1
 ability={1}{B}:Regenerate SN.;\
         {YourUpkeep},Sacrifice SN:Target player discards two cards.
 timing=main
+oracle={1}{B}: Regenerate Augur of Skulls. Sacrifice Augur of Skulls: Target player discards two cards. Activate this ability only during your upkeep.

@@ -9,3 +9,4 @@ cost={1}{W}
 pt=2/2
 ability=Whenever you gain life, you may put a +1/+1 counter on SN.
 timing=fmain
+oracle=Whenever you gain life, you may put a +1/+1 counter on Ajani's Pridemate.

@@ -7,3 +7,4 @@ type=Instant
 cost={1}{U}
 timing=counter
 effect=Counter target noncreature spell.
+oracle=Counter target noncreature spell.

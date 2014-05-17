@@ -7,3 +7,4 @@ type=Instant
 cost={2}{U}
 timing=block
 requires_groovy_code
+oracle=Draw a card for each attacking creature.

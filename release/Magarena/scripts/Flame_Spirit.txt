@@ -9,3 +9,4 @@ cost={4}{R}
 pt=2/3
 ability={R}:SN gets +1/+0 until end of turn.
 timing=main
+oracle={R}: Flame Spirit gets +1/+0 until end of turn.

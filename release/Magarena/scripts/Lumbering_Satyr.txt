@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=5/4
 ability=all creatures have forestwalk
 timing=main
+oracle=All creatures have forestwalk.

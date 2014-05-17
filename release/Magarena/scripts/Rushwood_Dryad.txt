@@ -9,3 +9,4 @@ subtype=Dryad
 cost={1}{G}
 pt=2/1
 timing=main
+oracle=Forestwalk

@@ -9,3 +9,4 @@ cost={2}{W/U}{W/U}
 pt=3/3
 ability=SN can't be blocked by red creatures.
 timing=main
+oracle=Barrenton Cragtreads can't be blocked by red creatures.

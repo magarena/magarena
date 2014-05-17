@@ -7,3 +7,4 @@ type=Instant
 cost={3}{B}
 timing=removal
 requires_groovy_code
+oracle=Tendrils of Corruption deals X damage to target creature and you gain X life, where X is the number of Swamps you control.

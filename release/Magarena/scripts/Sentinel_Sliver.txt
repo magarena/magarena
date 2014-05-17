@@ -10,3 +10,4 @@ pt=2/2
 ability=sliver creatures you control have vigilance
 static=player
 timing=main
+oracle=Sliver creatures you control have vigilance.

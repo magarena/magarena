@@ -9,3 +9,4 @@ cost={4}{R}{R}
 pt=4/5
 ability=Whenever you cast a Spirit or Arcane spell, SN deals 2 damage to each creature without flying.
 timing=main
+oracle=Whenever you cast a Spirit or Arcane spell, Earthshaker deals 2 damage to each creature without flying.

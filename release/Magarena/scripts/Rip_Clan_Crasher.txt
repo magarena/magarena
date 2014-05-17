@@ -9,3 +9,4 @@ subtype=Human,Warrior
 cost={R}{G}
 pt=2/2
 timing=fmain
+oracle=Haste

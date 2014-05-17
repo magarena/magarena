@@ -8,3 +8,4 @@ type=Instant
 cost={4}{U}
 effect=Put target nonland permanent on top of its owner's library.
 timing=removal
+oracle=Put target nonland permanent on top of its owner's library.

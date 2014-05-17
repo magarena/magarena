@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{U}
 ability={1}{U}:Counter target red spell.
 timing=enchantment
+oracle={1}{U}: Counter target red spell.

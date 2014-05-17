@@ -9,3 +9,4 @@ cost={3}{B}{R}
 pt=2/2
 ability={2}{B}{R},{T}: Put a 1/1 black and red Demon creature token named Minor Demon onto the battlefield.
 timing=main
+oracle={2}{B}{R}, {T}: Put a 1/1 black and red Demon creature token named Minor Demon onto the battlefield.

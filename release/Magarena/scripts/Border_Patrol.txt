@@ -9,3 +9,4 @@ subtype=Human,Nomad
 cost={4}{W}
 pt=1/6
 timing=main
+oracle=Vigilance

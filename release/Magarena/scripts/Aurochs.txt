@@ -10,3 +10,4 @@ pt=2/3
 ability=trample
 timing=main
 requires_groovy_code
+oracle=Trample. Whenever Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.

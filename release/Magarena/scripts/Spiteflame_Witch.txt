@@ -9,3 +9,4 @@ cost={1}{B/R}
 pt=2/1
 ability={B}{R}: Each player loses 1 life.
 timing=main
+oracle={B}{R}: Each player loses 1 life.

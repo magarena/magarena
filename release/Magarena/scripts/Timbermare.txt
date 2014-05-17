@@ -10,3 +10,4 @@ pt=5/5
 ability=haste;echo {5}{G}
 timing=fmain
 requires_groovy_code
+oracle=Haste. Echo {5}{G}. When Timbermare enters the battlefield, tap all other creatures.

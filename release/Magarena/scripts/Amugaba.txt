@@ -9,3 +9,4 @@ cost={5}{U}{U}
 pt=6/6
 ability=flying;{2}{U},Discard a card:Return SN to its owner's hand.
 timing=main
+oracle=Flying. {2}{U}, Discard a card: Return Amugaba to its owner's hand.

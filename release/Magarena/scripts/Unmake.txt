@@ -8,3 +8,4 @@ type=Instant
 cost={W/B}{W/B}{W/B}
 timing=removal
 effect=Exile target creature.
+oracle=Exile target creature.

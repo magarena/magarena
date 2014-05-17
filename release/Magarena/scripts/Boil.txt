@@ -7,3 +7,4 @@ type=Instant
 cost={3}{R}
 effect=Destroy all Islands.
 timing=removal
+oracle=Destroy all Islands.

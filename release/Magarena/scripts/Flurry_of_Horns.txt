@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{R}
 effect=Put two 2/3 red Minotaur creature tokens with haste onto the battlefield.
 timing=main
+oracle=Put two 2/3 red Minotaur creature tokens with haste onto the battlefield.

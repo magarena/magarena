@@ -10,3 +10,4 @@ pt=1/3
 ability=minotaur creatures get +1/+0
 static=all
 timing=main
+oracle=Minotaur creatures get +1/+0.

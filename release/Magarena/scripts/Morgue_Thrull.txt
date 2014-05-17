@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=Sacrifice SN: Put the top three cards of your library into your graveyard.
 timing=main
+oracle=Sacrifice Morgue Thrull: Put the top three cards of your library into your graveyard.

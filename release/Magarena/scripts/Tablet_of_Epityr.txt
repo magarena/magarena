@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 ability=Whenever an artifact you control is put into a graveyard from the battlefield, you may pay {1}. If you do, you gain 1 life.
 timing=artifact
+oracle=Whenever an artifact you control is put into a graveyard from the battlefield, you may pay {1}. If you do, you gain 1 life.

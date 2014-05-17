@@ -7,3 +7,4 @@ type=Instant
 cost={3}{G}
 effect=Target creature gets +7/+7 until end of turn.
 timing=pump
+oracle=Target creature gets +7/+7 until end of turn.

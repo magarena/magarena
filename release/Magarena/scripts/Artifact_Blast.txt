@@ -7,3 +7,4 @@ type=Instant
 cost={R}
 effect=Counter target artifact spell.
 timing=counter
+oracle=Counter target artifact spell.

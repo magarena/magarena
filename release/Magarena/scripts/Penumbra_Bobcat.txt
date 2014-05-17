@@ -9,3 +9,4 @@ cost={2}{G}
 ability=When SN dies, put a 2/1 black Cat creature token onto the battlefield.
 pt=2/1
 timing=main
+oracle=When Penumbra Bobcat dies, put a 2/1 black Cat creature token onto the battlefield.

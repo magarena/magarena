@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability=Whenever an opponent casts a spell, SN gets +2/+2 until end of turn.
 timing=main
+oracle=Whenever an opponent casts a spell, Mogg Sentry gets +2/+2 until end of turn.

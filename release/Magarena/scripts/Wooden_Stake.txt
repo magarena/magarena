@@ -10,3 +10,4 @@ ability=Equipped creature gets +1/+0.;\
         Equip {1}
 timing=equipment
 requires_groovy_code
+oracle=Equipped creature gets +1/+0. Whenever equipped creature blocks or becomes blocked by a Vampire, destroy that creature. It can't be regenerated. Equip {1}

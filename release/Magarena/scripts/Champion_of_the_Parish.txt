@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=Whenever another Human enters the battlefield under your control, put a +1/+1 counter on SN.
 timing=fmain
+oracle=Whenever another Human enters the battlefield under your control, put a +1/+1 counter on Champion of the Parish.

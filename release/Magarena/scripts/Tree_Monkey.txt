@@ -9,3 +9,4 @@ subtype=Ape
 cost={G}
 pt=1/1
 timing=main
+oracle=Reach

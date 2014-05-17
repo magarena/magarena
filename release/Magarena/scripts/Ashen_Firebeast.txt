@@ -9,3 +9,4 @@ cost={6}{R}{R}
 pt=6/6
 ability={1}{R}: SN deals 1 damage to each creature without flying.
 timing=main
+oracle={1}{R}: Ashen Firebeast deals 1 damage to each creature without flying.

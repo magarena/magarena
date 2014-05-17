@@ -7,3 +7,4 @@ type=Enchantment
 cost={B}{B}
 ability={B}{B}:Counter target green spell.
 timing=enchantment
+oracle={B}{B}: Counter target green spell.

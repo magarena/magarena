@@ -10,3 +10,4 @@ pt=0/1
 ability=level up {1}{U} 3
 timing=main
 requires_groovy_code
+oracle=Level up {1}{U}. LEVEL 1-2. 0/1. {T}: Draw a card, then discard a card. LEVEL 3+. 0/1. {T}: Draw a card.

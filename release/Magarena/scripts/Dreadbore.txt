@@ -7,3 +7,4 @@ type=Sorcery
 cost={B}{R}
 timing=removal
 effect=Destroy target creature or planeswalker.
+oracle=Destroy target creature or planeswalker.

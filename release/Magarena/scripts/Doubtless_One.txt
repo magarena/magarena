@@ -8,3 +8,4 @@ subtype=Cleric,Avatar
 cost={3}{W}
 timing=main
 requires_groovy_code=Mourning Thrull;Doubtless One
+oracle=Doubtless One's power and toughness are each equal to the number of Clerics on the battlefield. Whenever Doubtless One deals damage, you gain that much life.

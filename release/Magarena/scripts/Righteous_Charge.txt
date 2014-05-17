@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{W}{W}
 effect=Creatures you control get +2/+2 until end of turn.
 timing=fmain
+oracle=Creatures you control get +2/+2 until end of turn.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{U}
 ability=Whenever you draw a card, you may have target player put the top card of his or her library into his or her graveyard.
 timing=enchantment
+oracle=Whenever you draw a card, you may have target player put the top card of his or her library into his or her graveyard.

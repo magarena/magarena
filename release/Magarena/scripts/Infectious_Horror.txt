@@ -9,3 +9,4 @@ cost={3}{B}
 pt=2/2
 ability=Whenever SN attacks, each opponent loses 2 life.
 timing=main
+oracle=Whenever Infectious Horror attacks, each opponent loses 2 life.

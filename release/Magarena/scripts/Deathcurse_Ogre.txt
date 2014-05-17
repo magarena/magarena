@@ -9,3 +9,4 @@ cost={5}{B}
 pt=3/3
 ability=When SN dies, each player loses 3 life.
 timing=main
+oracle=When Deathcurse Ogre dies, each player loses 3 life.

@@ -10,3 +10,4 @@ ability=indestructible;\
         {5}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.
 static=all
 timing=main
+oracle=Indestructible. Myr creatures get +1/+1. {5}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.

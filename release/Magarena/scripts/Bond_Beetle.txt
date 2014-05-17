@@ -9,3 +9,4 @@ cost={G}
 pt=0/1
 ability=When SN enters the battlefield, put a +1/+1 counter on target creature.
 timing=main
+oracle=When Bond Beetle enters the battlefield, put a +1/+1 counter on target creature.

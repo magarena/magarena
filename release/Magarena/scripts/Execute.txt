@@ -7,3 +7,4 @@ type=Instant
 cost={2}{B}
 timing=removal
 requires_groovy_code
+oracle=Destroy target white creature. It can't be regenerated. Draw a card.

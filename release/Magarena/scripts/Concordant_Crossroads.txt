@@ -8,3 +8,4 @@ cost={G}
 ability=all creatures have haste
 static=all
 timing=enchantment
+oracle=All creatures have haste.

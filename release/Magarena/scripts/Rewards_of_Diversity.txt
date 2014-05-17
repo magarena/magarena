@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{W}
 ability=Whenever an opponent casts a multicolored spell, you gain 4 life.
 timing=enchantment
+oracle=Whenever an opponent casts a multicolored spell, you gain 4 life.

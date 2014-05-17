@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=Discard a card:SN gets +0/+4 until end of turn.
 timing=main
+oracle=Discard a card: Tireless Tribe gets +0/+4 until end of turn.

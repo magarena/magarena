@@ -8,3 +8,4 @@ type=Instant
 cost={3}{W}
 timing=attack
 requires_groovy_code
+oracle=Destroy target attacking creature. You gain life equal to its power.

@@ -9,3 +9,4 @@ cost={1}{R}
 effect=Destroy target artifact or enchantment.
 ability=Flashback {G}
 timing=removal
+oracle=Destroy target artifact. Flashback {G}

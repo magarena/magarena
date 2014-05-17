@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}
 ability={W},Discard a card: You gain 3 life.
 timing=enchantment
+oracle={W}, Discard a card: You gain 3 life.

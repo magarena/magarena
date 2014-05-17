@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 ability=all creatures get -1/-0;{1}{G}:All creatures get -1/-0 until end of turn.
 timing=enchantment
+oracle=Cumulative upkeep {1}. All creatures get -1/-0. {1}{G}: All creatures get -1/-0 until end of turn.

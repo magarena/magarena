@@ -9,3 +9,4 @@ cost={2}{W}
 pt=3/1
 ability=Whenever you cast a spell that targets SN, you may tap target creature.
 timing=main
+oracle=Heroic ? Whenever you cast a spell that targets Elite Skirmisher, you may tap target creature.

@@ -7,3 +7,4 @@ type=Instant
 cost={5}{W}
 timing=removal
 requires_groovy_code
+oracle=Exile target creature, then populate.

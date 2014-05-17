@@ -11,3 +11,4 @@ ability=fear;\
         When SN enters the battlefield, destroy target nonartifact, nonblack creature.;\
         evoke {1}{B}
 timing=main
+oracle=Fear. When Shriekmaw enters the battlefield, destroy target nonartifact, nonblack creature. Evoke {1}{B}

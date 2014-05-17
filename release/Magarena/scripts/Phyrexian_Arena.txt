@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{B}{B}
 ability=At the beginning of your upkeep, you draw a card and you lose 1 life.
 timing=enchantment
+oracle=At the beginning of your upkeep, you draw a card and you lose 1 life.

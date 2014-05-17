@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 timing=fmain
 requires_groovy_code
+oracle=Your opponents can't cast spells this turn.

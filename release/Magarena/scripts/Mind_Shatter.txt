@@ -7,3 +7,4 @@ type=Sorcery
 cost={X}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Target player discards X cards at random.

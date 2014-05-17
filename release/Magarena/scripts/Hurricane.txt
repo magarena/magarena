@@ -8,3 +8,4 @@ type=Sorcery
 cost={X}{G}
 timing=removal
 requires_groovy_code
+oracle=Hurricane deals X damage to each creature with flying and each player.

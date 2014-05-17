@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/2
 ability=shadow
 timing=main
+oracle=Shadow

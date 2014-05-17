@@ -9,3 +9,4 @@ cost={4}{B/R}
 pt=3/3
 ability=When SN enters the battlefield, put a -1/-1 counter on target creature.
 timing=main
+oracle=When Cultbrand Cinder enters the battlefield, put a -1/-1 counter on target creature.

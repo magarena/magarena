@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability={2}: Prevent the next 1 damage that would be dealt to you this turn.
 timing=artifact
+oracle={2}: Prevent the next 1 damage that would be dealt to you this turn.

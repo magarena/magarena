@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Whenever Amphibious Kavu blocks or becomes blocked by one or more blue and/or black creatures, Amphibious Kavu gets +3/+3 until end of turn.

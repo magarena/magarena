@@ -9,3 +9,4 @@ cost={2}{U}
 pt=2/3
 ability=Whenever SN or another creature dies, target player puts the top card of his or her library into his or her graveyard.
 timing=main
+oracle=Whenever Selhoff Occultist or another creature dies, target player puts the top card of his or her library into his or her graveyard.

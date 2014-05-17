@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}{B}
 timing=main
 requires_groovy_code=Launch Party
+oracle=Destroy target creature. Its controller loses 2 life.

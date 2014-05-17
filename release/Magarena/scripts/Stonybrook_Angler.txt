@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/2
 ability={1}{U},{T}:Tap target creature.;{1}{U},{T}:Untap target creature.
 timing=main
+oracle={1}{U}, {T}: You may tap or untap target creature.

@@ -9,3 +9,4 @@ cost={3}{U}
 pt=2/2
 ability=flying;{U}: SN gains shroud until end of turn.
 timing=main
+oracle=Flying. {U}: Advanced Hoverguard gains shroud until end of turn.

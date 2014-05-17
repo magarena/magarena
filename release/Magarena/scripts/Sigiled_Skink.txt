@@ -9,3 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=Whenever SN attacks, scry 1.
 timing=main
+oracle=Whenever Sigiled Skink attacks, scry 1.

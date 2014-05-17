@@ -7,3 +7,4 @@ type=Instant
 cost={B}{B}
 timing=removal
 requires_groovy_code
+oracle=Target creature and all other creatures with the same name as that creature get -3/-3 until end of turn.

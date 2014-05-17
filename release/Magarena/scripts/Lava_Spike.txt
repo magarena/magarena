@@ -8,3 +8,4 @@ subtype=Arcane
 cost={R}
 effect=SN deals 3 damage to target player.
 timing=removal
+oracle=Lava Spike deals 3 damage to target player.

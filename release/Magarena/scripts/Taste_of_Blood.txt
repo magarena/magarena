@@ -7,3 +7,4 @@ type=Sorcery
 cost={B}
 timing=removal
 requires_groovy_code
+oracle=Taste of Blood deals 1 damage to target player and you gain 1 life.

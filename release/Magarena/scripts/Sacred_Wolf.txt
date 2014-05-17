@@ -9,3 +9,4 @@ cost={2}{G}
 pt=3/1
 ability=hexproof
 timing=fmain
+oracle=Hexproof

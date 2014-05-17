@@ -9,3 +9,4 @@ subtype=Insect
 cost={3}{B}
 pt=3/2
 timing=main
+oracle=Flying

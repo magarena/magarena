@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 effect=Target creature gains undying until end of turn.
 timing=pump
+oracle=Target creature gains undying until end of turn.

@@ -9,3 +9,4 @@ cost={U}
 pt=1/1
 ability={T},Sacrifice SN:Return target artifact card from your graveyard to your hand.
 timing=main
+oracle={T}, Sacrifice Rootwater Diver: Return target artifact card from your graveyard to your hand.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{R}
 ability={R}, Sacrifice a land: SN deals 1 damage to each creature without flying.
 timing=enchantment
+oracle={R}, Sacrifice a land: Magma Vein deals 1 damage to each creature without flying.

@@ -9,3 +9,4 @@ subtype=Merfolk,Soldier
 cost={4}{U/B}
 pt=3/3
 timing=main
+oracle=Persist

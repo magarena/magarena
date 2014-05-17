@@ -7,3 +7,4 @@ type=Instant
 cost={4}{R}
 timing=removal
 requires_groovy_code
+oracle=Chandra's Fury deals 4 damage to target player and 1 damage to each creature that player controls.

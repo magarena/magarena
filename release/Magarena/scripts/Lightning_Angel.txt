@@ -9,3 +9,4 @@ cost={1}{R}{W}{U}
 pt=3/4
 ability=flying;vigilance;haste
 timing=fmain
+oracle=Flying, vigilance, haste

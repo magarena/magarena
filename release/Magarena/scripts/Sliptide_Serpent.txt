@@ -9,3 +9,4 @@ cost={4}{U}{U}
 pt=4/4
 ability={3}{U}: Return SN to its owner's hand.
 timing=main
+oracle={3}{U}: Return Sliptide Serpent to its owner's hand.

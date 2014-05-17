@@ -9,3 +9,4 @@ cost={4}{R}
 pt=4/3
 ability=SN can't be blocked by creatures with flying.
 timing=main
+oracle=Stone Spirit can't be blocked by creatures with flying.

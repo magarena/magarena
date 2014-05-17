@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/3
 ability={7}{W}: You gain 5 life.
 timing=main
+oracle={7}{W}: You gain 5 life.

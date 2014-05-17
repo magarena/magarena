@@ -10,3 +10,4 @@ cost={4}{R}
 pt=3/3
 ability=When SN enters the battlefield, destroy target land.
 timing=main
+oracle=When Ogre Arsonist enters the battlefield, destroy target land.

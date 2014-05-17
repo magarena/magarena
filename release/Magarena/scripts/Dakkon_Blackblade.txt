@@ -8,3 +8,4 @@ subtype=Human,Warrior
 cost={2}{W}{U}{U}{B}
 timing=main
 requires_groovy_code=Molimo, Maro-Sorcerer
+oracle=Dakkon Blackblade's power and toughness are each equal to the number of lands you control.

@@ -9,4 +9,5 @@ cost={1}{U}
 pt=0/4
 ability=defender
 timing=smain
-requires_groovy_code=AEther Membrane
+requires_groovy_code=Æther Membrane
+oracle=Defender. Whenever Wall of Tears blocks a creature, return that creature to its owner's hand at end of combat.

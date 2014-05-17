@@ -9,3 +9,4 @@ cost={B}{B}
 pt=2/2
 ability=Whenever SN or another Vampire you control dies, you may pay {B}. If you do, target player loses 2 life and you gain 2 life.
 timing=main
+oracle=Whenever Kalastria Highborn or another Vampire you control dies, you may pay {B}. If you do, target player loses 2 life and you gain 2 life.

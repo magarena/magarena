@@ -9,3 +9,4 @@ cost={1}{B/R}{B/R}
 pt=2/2
 ability=Sacrifice SN: Destroy target nonbasic land.
 timing=main
+oracle=Sacrifice Fulminator Mage: Destroy target nonbasic land.

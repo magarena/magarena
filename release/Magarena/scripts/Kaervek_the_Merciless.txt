@@ -9,3 +9,4 @@ cost={5}{B}{R}
 pt=5/4
 timing=fmain
 requires_groovy_code
+oracle=Whenever an opponent casts a spell, Kaervek the Merciless deals damage to target creature or player equal to that spell's converted mana cost.

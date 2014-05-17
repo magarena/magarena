@@ -9,3 +9,4 @@ cost={3}{R}
 pt=2/2
 ability={R}, {T}: SN deals 1 damage to target creature or player.
 timing=main
+oracle={R}, {T}: Anaba Shaman deals 1 damage to target creature or player.

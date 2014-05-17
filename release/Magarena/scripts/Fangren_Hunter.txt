@@ -9,3 +9,4 @@ subtype=Beast
 cost={3}{G}{G}
 pt=4/4
 timing=main
+oracle=Trample

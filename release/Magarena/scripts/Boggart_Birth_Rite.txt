@@ -8,3 +8,4 @@ subtype=Goblin
 cost={B}
 effect=Return target Goblin card from your graveyard to your hand.
 timing=main
+oracle=Return target Goblin card from your graveyard to your hand.

@@ -8,3 +8,4 @@ type=Instant
 cost={B}{B}
 timing=removal
 requires_groovy_code
+oracle=Target player sacrifices a creature and loses 1 life.

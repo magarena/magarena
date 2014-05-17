@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{G}{G}
 effect=You gain 8 life.
 timing=main
+oracle=You gain 8 life.

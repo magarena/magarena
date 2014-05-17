@@ -10,3 +10,4 @@ cost={3}{R}
 pt=3/3
 ability=When SN enters the battlefield, destroy target artifact.
 timing=fmain
+oracle=When Oxidda Scrapmelter enters the battlefield, destroy target artifact.

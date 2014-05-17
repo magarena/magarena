@@ -9,3 +9,4 @@ cost={3}{U}
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. Faerie Swarm's power and toughness are each equal to the number of blue permanents you control.

@@ -8,3 +8,4 @@ type=Sorcery
 cost={5}{B}
 timing=removal
 requires_groovy_code
+oracle=Corrupt deals damage equal to the number of Swamps you control to target creature or player. You gain life equal to the damage dealt this way.

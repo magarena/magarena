@@ -9,3 +9,4 @@ cost={2}{R/G}{R/G}
 pt=3/3
 ability=SN can't be blocked by blue creatures.
 timing=main
+oracle=Mudbrawler Raiders can't be blocked by blue creatures.

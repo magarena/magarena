@@ -10,3 +10,4 @@ ability=Enchanted creature can't attack or block.;\
         {1}{W}:Return SN to its owner's hand.
 enchant=can't attack or block,neg creature
 timing=enchantment
+oracle=Enchant creature. Enchanted creature can't attack or block. {1}{W}: Return Cage of Hands to its owner's hand.

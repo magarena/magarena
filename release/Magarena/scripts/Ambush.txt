@@ -7,3 +7,4 @@ type=Instant
 cost={3}{R}
 effect=Blocking creatures gain first strike until end of turn.
 timing=block
+oracle=Blocking creatures gain first strike until end of turn.

@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability={R}, Sacrifice an artifact: SN gets +3/+0 until end of turn.
 timing=main
+oracle={R}, Sacrifice an artifact: Ferrovore gets +3/+0 until end of turn.

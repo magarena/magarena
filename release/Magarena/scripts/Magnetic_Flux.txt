@@ -7,3 +7,4 @@ type=Instant
 cost={2}{U}
 effect=Artifact creatures you control gain flying until end of turn.
 timing=pump
+oracle=Artifact creatures you control gain flying until end of turn.

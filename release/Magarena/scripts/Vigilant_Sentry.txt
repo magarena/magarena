@@ -9,3 +9,4 @@ cost={1}{W}{W}
 pt=2/2
 ability=As long as seven or more cards are in your graveyard, SN gets +1/+1 and has "{T}: Target attacking or blocking creature gets +3/+3 until end of turn."
 timing=main
+oracle=Threshold ? As long as seven or more cards are in your graveyard, Vigilant Sentry gets +1/+1 and has "{T}: Target attacking or blocking creature gets +3/+3 until end of turn."

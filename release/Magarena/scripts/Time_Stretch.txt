@@ -7,3 +7,4 @@ type=Sorcery
 cost={8}{U}{U}
 timing=main
 requires_groovy_code
+oracle=Target player takes two extra turns after this one.

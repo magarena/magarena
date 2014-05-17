@@ -9,3 +9,4 @@ cost={4}{W}
 pt=2/3
 ability=flying;soulshift 4
 timing=main
+oracle=Flying. Soulshift 4

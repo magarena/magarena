@@ -6,3 +6,4 @@ rarity=R
 type=Land
 timing=land
 requires_groovy_code
+oracle={T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.

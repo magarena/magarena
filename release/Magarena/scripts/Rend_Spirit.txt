@@ -7,3 +7,4 @@ type=Instant
 cost={2}{B}
 effect=Destroy target Spirit.
 timing=removal
+oracle=Destroy target Spirit.

@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=3/3
 timing=main
 requires_groovy_code=Laccolith Whelp
+oracle=Whenever Laccolith Warrior becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Warrior assigns no combat damage this turn.

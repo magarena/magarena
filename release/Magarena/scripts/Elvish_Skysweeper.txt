@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability={4}{G}, Sacrifice a creature: Destroy target creature with flying.
 timing=main
+oracle={4}{G}, Sacrifice a creature: Destroy target creature with flying.

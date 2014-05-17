@@ -9,3 +9,4 @@ cost={3}{U/B}
 pt=2/2
 ability={1}{U/B},{Q}:Target creature gets -2/-0 until end of turn.
 timing=main
+oracle={1}{U/B}, {Q}: Target creature gets -2/-0 until end of turn.

@@ -7,3 +7,4 @@ type=Instant
 cost={1}{G}
 timing=block
 requires_groovy_code
+oracle=Prevent all combat damage that would be dealt this turn. You gain 1 life for each attacking creature.

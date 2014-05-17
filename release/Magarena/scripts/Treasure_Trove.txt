@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{U}{U}
 ability={2}{U}{U}: Draw a card.
 timing=enchantment
+oracle={2}{U}{U}: Draw a card.

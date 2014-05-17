@@ -9,3 +9,4 @@ cost={4}{B}
 pt=4/2
 ability=Sacrifice another creature: Regenerate SN.
 timing=main
+oracle=Sacrifice another creature: Regenerate Vampire Warlord.

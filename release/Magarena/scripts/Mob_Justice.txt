@@ -8,3 +8,4 @@ type=Sorcery
 cost={1}{R}
 timing=removal
 requires_groovy_code
+oracle=Mob Justice deals damage to target player equal to the number of creatures you control.

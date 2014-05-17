@@ -8,3 +8,4 @@ subtype=Arcane
 cost={R}
 effect=Each player sacrifices a permanent.
 timing=main
+oracle=Each player sacrifices a permanent.

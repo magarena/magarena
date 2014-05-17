@@ -9,3 +9,4 @@ cost={G}{U}
 pt=2/2
 ability=SN can't be blocked.
 timing=main
+oracle=Jhessian Infiltrator can't be blocked.

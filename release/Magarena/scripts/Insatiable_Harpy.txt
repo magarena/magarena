@@ -9,3 +9,4 @@ cost={2}{B}{B}
 pt=2/2
 ability=flying;lifelink
 timing=main
+oracle=Flying, lifelink

@@ -9,3 +9,4 @@ cost={3}{G}{G}
 pt=4/4
 ability=Tap an untapped creature you control:SN gets +1/+1 until end of turn.
 timing=main
+oracle=Tap an untapped creature you control: Llanowar Behemoth gets +1/+1 until end of turn.

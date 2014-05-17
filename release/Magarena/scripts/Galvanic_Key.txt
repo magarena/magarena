@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability=flash;{3},{T}:Untap target artifact.
 timing=flash
+oracle=Flash. {3}, {T}: Untap target artifact.

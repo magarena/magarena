@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability=Whenever another red creature enters the battlefield under your control, SN gets +1/+0 until end of turn.
 timing=main
+oracle=Whenever another red creature enters the battlefield under your control, Foundry Street Denizen gets +1/+0 until end of turn.

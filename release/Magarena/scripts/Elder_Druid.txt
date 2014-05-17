@@ -10,3 +10,4 @@ pt=2/2
 ability={3}{G}, {T}: Tap target artifact, creature, or land.;\
         {3}{G}, {T}: Untap target artifact, creature, or land.
 timing=main
+oracle={3}{G}, {T}: You may tap or untap target artifact, creature, or land.

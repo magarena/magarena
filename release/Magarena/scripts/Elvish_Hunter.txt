@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle={1}{G}, {T}: Target creature doesn't untap during its controller's next untap step.

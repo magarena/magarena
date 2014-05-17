@@ -9,3 +9,4 @@ cost={2}{U}
 pt=2/2
 ability={W/U}: SN gets +0/+1 until end of turn.
 timing=main
+oracle={W/U}: Parapet Watchers gets +0/+1 until end of turn.

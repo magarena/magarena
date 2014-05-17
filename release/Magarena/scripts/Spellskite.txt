@@ -9,3 +9,4 @@ cost={2}
 pt=0/4
 timing=main
 requires_groovy_code
+oracle={P/U}: Change a target of target spell or ability to Spellskite.

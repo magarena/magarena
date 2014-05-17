@@ -12,3 +12,4 @@ ability=flash;flying;\
         other faeries you control have shroud
 static=player
 timing=flash
+oracle=Flash. Flying. Other Faerie creatures you control get +1/+1. Other Faeries you control have shroud.

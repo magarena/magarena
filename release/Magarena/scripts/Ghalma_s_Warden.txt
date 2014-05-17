@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/4
 ability=SN gets +2/+2 as long as you control three or more artifacts.
 timing=main
+oracle=Metalcraft ? Ghalma's Warden gets +2/+2 as long as you control three or more artifacts.

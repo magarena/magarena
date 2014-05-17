@@ -9,3 +9,4 @@ cost={5}{U}{U}
 pt=5/6
 ability=flying
 timing=main
+oracle=Flying

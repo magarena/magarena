@@ -9,3 +9,4 @@ cost={4}{U}
 pt=2/3
 ability={U}: SN gets +1/+0 until end of turn.
 timing=main
+oracle={U}: Sea Spirit gets +1/+0 until end of turn.

@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability={G},{T},Discard a card:Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
+oracle={G}, {T}, Discard a card: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.

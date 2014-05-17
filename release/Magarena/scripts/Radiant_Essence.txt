@@ -9,3 +9,4 @@ cost={1}{G}{W}
 pt=2/3
 ability=SN gets +1/+2 as long as an opponent controls a black permanent.
 timing=main
+oracle=Radiant Essence gets +1/+2 as long as an opponent controls a black permanent.

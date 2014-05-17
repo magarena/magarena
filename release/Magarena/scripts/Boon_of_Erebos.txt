@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 timing=pump
 requires_groovy_code
+oracle=Target creature gets +2/+0 until end of turn. Regenerate it. You lose 2 life.

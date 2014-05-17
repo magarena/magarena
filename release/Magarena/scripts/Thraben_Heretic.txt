@@ -9,3 +9,4 @@ cost={1}{W}
 pt=2/2
 ability={T}:Exile target creature card from a graveyard.
 timing=main
+oracle={T}: Exile target creature card from a graveyard.

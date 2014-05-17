@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 timing=removal
 effect=Exile target enchantment.
+oracle=Exile target enchantment.

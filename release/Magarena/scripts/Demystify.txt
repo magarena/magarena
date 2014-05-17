@@ -8,3 +8,4 @@ type=Instant
 cost={W}
 timing=removal
 effect=Destroy target enchantment.
+oracle=Destroy target enchantment.

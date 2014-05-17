@@ -9,3 +9,4 @@ mana=b3g3
 ability={T}: Add {B} or {G} to your mana pool.;\
         As SN enters the battlefield, you may pay 2 life. If you don't, SN enters the battlefield tapped.
 timing=land
+oracle=As Overgrown Tomb enters the battlefield, you may pay 2 life. If you don't, Overgrown Tomb enters the battlefield tapped.

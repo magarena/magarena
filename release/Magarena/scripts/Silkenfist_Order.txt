@@ -9,3 +9,4 @@ cost={3}{W}{W}
 pt=3/5
 ability=Whenever SN becomes blocked, untap SN.
 timing=main
+oracle=Whenever Silkenfist Order becomes blocked, untap it.

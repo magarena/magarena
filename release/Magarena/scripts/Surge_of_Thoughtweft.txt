@@ -8,3 +8,4 @@ subtype=Kithkin
 cost={1}{W}
 timing=pump
 requires_groovy_code
+oracle=Creatures you control get +1/+1 until end of turn. If you control a Kithkin, draw a card.

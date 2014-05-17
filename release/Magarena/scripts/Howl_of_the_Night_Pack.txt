@@ -7,3 +7,4 @@ type=Sorcery
 cost={6}{G}
 timing=main
 requires_groovy_code
+oracle=Put a 2/2 green Wolf creature token onto the battlefield for each Forest you control.

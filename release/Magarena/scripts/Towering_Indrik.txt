@@ -9,3 +9,4 @@ ability=reach
 cost={3}{G}
 pt=2/4
 timing=main
+oracle=Reach

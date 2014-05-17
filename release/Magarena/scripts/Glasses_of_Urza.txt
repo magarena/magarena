@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 ability={T}: Look at target player's hand.
 timing=main
+oracle={T}: Look at target player's hand.

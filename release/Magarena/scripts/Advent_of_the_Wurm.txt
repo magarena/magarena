@@ -7,3 +7,4 @@ type=Instant
 cost={1}{G}{G}{W}
 effect=Put a 5/5 green Wurm creature token with trample onto the battlefield.
 timing=token
+oracle=Put a 5/5 green Wurm creature token with trample onto the battlefield.

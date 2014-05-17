@@ -9,3 +9,4 @@ subtype=Kor,Spirit
 cost={4}{W}
 pt=4/5
 timing=smain
+oracle=Defender, flying

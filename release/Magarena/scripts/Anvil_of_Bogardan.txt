@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 timing=main
 requires_groovy_code
+oracle=Players have no maximum hand size. At the beginning of each player's draw step, that player draws an additional card, then discards a card.

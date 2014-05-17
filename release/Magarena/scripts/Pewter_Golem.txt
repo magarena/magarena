@@ -9,3 +9,4 @@ cost={5}
 pt=4/2
 ability={1}{B}: Regenerate SN.
 timing=main
+oracle={1}{B}: Regenerate Pewter Golem.

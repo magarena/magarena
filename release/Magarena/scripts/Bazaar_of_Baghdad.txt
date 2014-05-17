@@ -6,3 +6,4 @@ rarity=R
 type=Land
 ability={T}:Draw two cards, then discard three cards.
 timing=land
+oracle={T}: Draw two cards, then discard three cards.

@@ -8,3 +8,4 @@ type=Instant
 cost={2}{W}
 timing=attack
 effect=Destroy target attacking creature.
+oracle=Destroy target attacking creature.

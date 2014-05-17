@@ -8,3 +8,4 @@ subtype=Elemental
 cost={3}{B}{G}
 timing=smain
 requires_groovy_code
+oracle=Lord of Extinction's power and toughness are each equal to the number of cards in all graveyards.

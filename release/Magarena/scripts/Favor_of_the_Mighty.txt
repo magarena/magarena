@@ -8,3 +8,4 @@ subtype=Giant
 cost={1}{W}
 timing=enchantment
 requires_groovy_code
+oracle=Each creature with the highest converted mana cost has protection from all colors.

@@ -9,3 +9,4 @@ cost={4}
 pt=1/4
 ability={1}{R}: SN gets +2/+0 until end of turn.
 timing=main
+oracle={1}{R}: Hematite Golem gets +2/+0 until end of turn.

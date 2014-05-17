@@ -8,3 +8,4 @@ cost={3}
 ability=SN enters the battlefield with two charge counters on it.;\
         {T}, Remove a charge counter from SN: Target player loses 2 life.
 timing=artifact
+oracle=Necrogen Censer enters the battlefield with two charge counters on it. {T}, Remove a charge counter from Necrogen Censer: Target player loses 2 life.

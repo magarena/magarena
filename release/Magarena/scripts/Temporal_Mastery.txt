@@ -8,3 +8,4 @@ cost={5}{U}{U}
 timing=nextturn
 ability=miracle {1}{U}
 requires_groovy_code
+oracle=Take an extra turn after this one. Exile Temporal Mastery. Miracle {1}{U}

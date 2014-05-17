@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{U}
 ability={1}{U}:Target creature gains flying until end of turn.
 timing=enchantment
+oracle={1}{U}: Target creature gains flying until end of turn.

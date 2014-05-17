@@ -10,3 +10,4 @@ ability={R}:Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
 requires_groovy_code=Firebreathing
+oracle=Enchant creature. {R}: Enchanted creature gets +1/+0 until end of turn. {R}: Return Crown of Flames to its owner's hand.

@@ -7,3 +7,4 @@ type=Sorcery
 cost={X}{1}{R}{R}
 timing=main
 requires_groovy_code
+oracle=Put X 1/1 red Goblin creature tokens onto the battlefield.

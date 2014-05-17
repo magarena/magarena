@@ -9,3 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=As long as you have seven or more cards in hand, SN gets +2/+1 and has first strike.
 timing=main
+oracle=As long as you have seven or more cards in hand, Akki Underling gets +2/+1 and has first strike.

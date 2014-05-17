@@ -8,3 +8,4 @@ cost={1}{W}
 ability=creatures you control have vigilance
 static=player
 timing=enchantment
+oracle=Creatures you control have vigilance.

@@ -9,3 +9,4 @@ cost={2}{W}{W}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Prevent all damage that would be dealt to Cho-Manno, Revolutionary.

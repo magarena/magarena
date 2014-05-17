@@ -9,3 +9,4 @@ cost={3}{B}{G}
 pt=4/3
 ability=When SN enters the battlefield, you may return target creature or enchantment card from your graveyard to your hand.
 timing=main
+oracle=When Pharika's Mender enters the battlefield, you may return target creature or enchantment card from your graveyard to your hand.

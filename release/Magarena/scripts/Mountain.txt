@@ -9,3 +9,4 @@ subtype=Mountain
 mana=r4
 ability={T}: Add {R} to your mana pool.
 timing=land
+oracle=R

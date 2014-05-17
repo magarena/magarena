@@ -9,3 +9,4 @@ cost={1}{R}{R}
 pt=2/2
 ability={R}: SN gets +1/+0 until end of turn.
 timing=main
+oracle={R}: Fiery Hellhound gets +1/+0 until end of turn.

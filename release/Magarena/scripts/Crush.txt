@@ -7,3 +7,4 @@ type=Instant
 cost={R}
 effect=Destroy target noncreature artifact.
 timing=removal
+oracle=Destroy target noncreature artifact.

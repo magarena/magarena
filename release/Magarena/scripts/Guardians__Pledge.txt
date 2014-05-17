@@ -7,3 +7,4 @@ type=Instant
 cost={1}{W}{W}
 effect=White creatures you control get +2/+2 until end of turn.
 timing=pump
+oracle=White creatures you control get +2/+2 until end of turn.

@@ -10,3 +10,4 @@ ability=changeling
 timing=removal
 removal=4
 requires_groovy_code
+oracle=Changeling. Exile target creature. Its controller puts a 1/1 colorless Shapeshifter creature token with changeling onto the battlefield.

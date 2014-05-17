@@ -9,3 +9,4 @@ cost={4}
 pt=2/2
 ability=Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
+oracle=Landfall ? Whenever a land enters the battlefield under your control, Hedron Rover gets +2/+2 until end of turn.

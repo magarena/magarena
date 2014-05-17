@@ -10,3 +10,4 @@ pt=3/3
 ability=all sliver creatures have first strike
 static=all
 timing=main
+oracle=All Sliver creatures have first strike.

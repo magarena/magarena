@@ -8,3 +8,4 @@ cost={5}{R}
 ability=Basic landcycling {1}{R}
 effect=SN deals 5 damage to target creature.
 timing=removal
+oracle=Fiery Fall deals 5 damage to target creature. Basic landcycling {1}{R}

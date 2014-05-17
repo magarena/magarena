@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 timing=removal
 requires_groovy_code
+oracle=Exile target card from a graveyard. Draw a card.

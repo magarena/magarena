@@ -9,3 +9,4 @@ cost={6}{G}
 pt=4/7
 ability=cycling {3}
 timing=main
+oracle=Cycling {3}

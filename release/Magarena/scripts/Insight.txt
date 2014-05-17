@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{U}
 ability=Whenever an opponent casts a green spell, you draw a card.
 timing=enchantment
+oracle=Whenever an opponent casts a green spell, you draw a card.

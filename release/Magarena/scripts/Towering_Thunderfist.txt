@@ -9,3 +9,4 @@ ability={W}: SN gains vigilance until end of turn.
 cost={4}{R}
 pt=4/4
 timing=main
+oracle={W}: Towering Thunderfist gains vigilance until end of turn.

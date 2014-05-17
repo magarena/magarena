@@ -8,3 +8,4 @@ type=Instant
 cost={W}{B}
 timing=removal
 requires_groovy_code
+oracle=Until end of turn, creatures you control get +1/+1 and creatures your opponents control get -1/-1.

@@ -8,3 +8,4 @@ cost={3}{B}
 ability=Flashback {5}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Exile target creature and all other creatures with the same name as that creature. Flashback {5}{B}{B}

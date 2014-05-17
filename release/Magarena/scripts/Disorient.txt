@@ -7,3 +7,4 @@ type=Instant
 cost={3}{U}
 effect=Target creature gets -7/-0 until end of turn.
 timing=removal
+oracle=Target creature gets -7/-0 until end of turn.

@@ -9,3 +9,4 @@ subtype=Antelope
 cost={3}{G}
 pt=2/3
 timing=main
+oracle=Forestwalk

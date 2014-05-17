@@ -9,3 +9,4 @@ cost={3}{W}
 pt=1/2
 ability={T}: Tap target creature with power 3 or less.
 timing=main
+oracle={T}: Tap target creature with power 3 or less.

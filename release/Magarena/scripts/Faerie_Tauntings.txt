@@ -8,3 +8,4 @@ subtype=Faerie
 cost={2}{B}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever you cast a spell during an opponent's turn, you may have each opponent lose 1 life.

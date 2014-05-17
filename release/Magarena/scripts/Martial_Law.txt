@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{W}{W}
 timing=main
 requires_groovy_code
+oracle=At the beginning of your upkeep, detain target creature an opponent controls.

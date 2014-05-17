@@ -8,3 +8,4 @@ cost={U}
 effect=Return target creature to its owner's hand.
 ability=Flashback {4}{U}
 timing=main
+oracle=Return target creature to its owner's hand. Flashback {4}{U}

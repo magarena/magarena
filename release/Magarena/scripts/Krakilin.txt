@@ -9,3 +9,4 @@ cost={X}{G}{G}
 ability=SN enters the battlefield with X +1/+1 counters on it.;\
         {1}{G}: Regenerate SN.
 timing=main
+oracle=Krakilin enters the battlefield with X +1/+1 counters on it. {1}{G}: Regenerate Krakilin.

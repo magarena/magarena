@@ -9,3 +9,4 @@ cost={3}{G}
 ability=When SN enters the battlefield, draw a card.
 pt=2/2
 timing=main
+oracle=When Striped Bears enters the battlefield, draw a card.

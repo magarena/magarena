@@ -10,3 +10,4 @@ ability=Equipped creature gets +6/+6;\
         Equip {6}
 timing=equipment
 requires_groovy_code
+oracle=Equipped creature gets +6/+6. Whenever equipped creature attacks, destroy target permanent. Equip {6}

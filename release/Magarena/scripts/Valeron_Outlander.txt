@@ -9,3 +9,4 @@ subtype=Human,Scout
 cost={G}{W}
 pt=2/2
 timing=main
+oracle=Protection from black

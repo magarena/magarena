@@ -9,3 +9,4 @@ cost={1}{R}
 pt=2/2
 ability=SN can't block.
 timing=main
+oracle=Yellow Scarves Troops can't block.

@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{G}
 timing=draw
 requires_groovy_code
+oracle=Draw cards equal to the power of target creature you control.

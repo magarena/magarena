@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{U}{U}
 effect=Put two 2/2 blue Drake creature tokens with flying onto the battlefield.
 timing=token
+oracle=Put two 2/2 blue Drake creature tokens with flying onto the battlefield.

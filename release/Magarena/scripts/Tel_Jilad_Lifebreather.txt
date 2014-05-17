@@ -9,3 +9,4 @@ cost={4}{G}
 pt=3/2
 ability={G}, {T}, Sacrifice a Forest: Regenerate target creature.
 timing=main
+oracle={G}, {T}, Sacrifice a Forest: Regenerate target creature.

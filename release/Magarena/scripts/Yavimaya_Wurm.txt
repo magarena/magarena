@@ -9,3 +9,4 @@ subtype=Wurm
 cost={4}{G}{G}
 pt=6/4
 timing=main
+oracle=Trample

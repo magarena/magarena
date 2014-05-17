@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=5/1
 ability=trample;haste;cumulative upkeep {G}{G}
 timing=fmain
+oracle=Trample, haste. Cumulative upkeep {G}{G}

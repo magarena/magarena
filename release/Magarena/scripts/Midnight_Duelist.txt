@@ -9,3 +9,4 @@ cost={W}
 pt=1/2
 ability=protection from Vampires
 timing=main
+oracle=Protection from Vampires

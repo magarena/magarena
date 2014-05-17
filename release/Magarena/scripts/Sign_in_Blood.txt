@@ -7,3 +7,4 @@ type=Sorcery
 cost={B}{B}
 timing=draw
 requires_groovy_code
+oracle=Target player draws two cards and loses 2 life.

@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=2/1
 timing=main
 requires_groovy_code
+oracle=An-Havva Constable's toughness is equal to 1 plus the number of green creatures on the battlefield.

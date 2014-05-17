@@ -9,3 +9,4 @@ subtype=Plains
 mana=w4
 ability={T}: Add {W} to your mana pool.
 timing=land
+oracle=W

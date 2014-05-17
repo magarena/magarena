@@ -9,3 +9,4 @@ cost={1}{U}
 pt=2/1
 ability=Whenever SN becomes untapped, target creature an opponent controls gets -3/-0 until end of turn.
 timing=main
+oracle=Inspired ? Whenever Deepwater Hypnotist becomes untapped, target creature an opponent controls gets -3/-0 until end of turn.

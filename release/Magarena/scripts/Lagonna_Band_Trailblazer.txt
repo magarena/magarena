@@ -9,3 +9,4 @@ cost={W}
 pt=0/4
 ability=Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
+oracle=Heroic ? Whenever you cast a spell that targets Lagonna-Band Trailblazer, put a +1/+1 counter on Lagonna-Band Trailblazer.

@@ -11,3 +11,4 @@ ability=Bestow {5}{W}{W};\
         Flying;first strike;\
         Enchanted creature gets +4/+4 and has flying and first strike.
 timing=main
+oracle=Bestow {5}{W}{W}. Flying, first strike. Enchanted creature gets +4/+4 and has flying and first strike.

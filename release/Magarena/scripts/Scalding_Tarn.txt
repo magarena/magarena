@@ -6,3 +6,4 @@ rarity=R
 type=Land
 ability={T},Pay 1 life,Sacrifice SN:Search your library for an Island or Mountain card and put it onto the battlefield. Then shuffle your library.
 timing=land
+oracle={T}, Pay 1 life, Sacrifice Scalding Tarn: Search your library for an Island or Mountain card and put it onto the battlefield. Then shuffle your library.

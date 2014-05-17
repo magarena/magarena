@@ -9,3 +9,4 @@ cost={3}{B}
 pt=2/2
 ability={2}{B},{T},{Sorcery}:Target player discards a card.
 timing=main
+oracle={2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.

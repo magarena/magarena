@@ -8,3 +8,4 @@ cost={1}{U}
 ability=You may return an Island you control to its owner's hand rather than pay SN's mana cost.
 effect=Counter target spell unless its controller pays {1}.
 timing=counter
+oracle=You may return an Island you control to its owner's hand rather than pay Daze's mana cost. Counter target spell unless its controller pays {1}.

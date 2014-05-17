@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 timing=removal
 requires_groovy_code
+oracle=Each player returns a creature he or she controls to its owner's hand.

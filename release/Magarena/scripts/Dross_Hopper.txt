@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 ability=Sacrifice a creature: SN gains flying until end of turn.
 timing=main
+oracle=Sacrifice a creature: Dross Hopper gains flying until end of turn.

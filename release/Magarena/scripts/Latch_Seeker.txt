@@ -9,3 +9,4 @@ cost={1}{U}{U}
 pt=3/1
 ability=SN can't be blocked.
 timing=main
+oracle=Latch Seeker can't be blocked.

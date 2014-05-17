@@ -9,3 +9,4 @@ cost={2}{R}
 pt=0/4
 ability={R}: SN gets +1/+0 until end of turn.
 timing=main
+oracle={R}: Storm Shaman gets +1/+0 until end of turn.

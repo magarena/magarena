@@ -9,3 +9,4 @@ cost={3}{U}{B}
 pt=4/3
 ability=Unearth {1}{U}{B}
 timing=artifact
+oracle=Unearth {1}{U}{B}

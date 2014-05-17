@@ -8,3 +8,4 @@ subtype=Golem
 cost={6}
 timing=main
 requires_groovy_code
+oracle=Beast of Burden's power and toughness are each equal to the number of creatures on the battlefield.

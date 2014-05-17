@@ -9,3 +9,4 @@ cost={R}{G}{W}
 pt=2/4
 timing=main
 requires_groovy_code
+oracle=Whenever a noncreature source you control deals damage, you gain that much life.

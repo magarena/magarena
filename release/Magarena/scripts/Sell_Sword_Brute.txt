@@ -9,3 +9,4 @@ cost={1}{R}
 pt=2/2
 ability=When SN dies, SN deals 2 damage to you.
 timing=main
+oracle=When Sell-Sword Brute dies, it deals 2 damage to you.

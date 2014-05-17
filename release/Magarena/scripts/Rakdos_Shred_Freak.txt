@@ -9,3 +9,4 @@ subtype=Human,Berserker
 cost={B/R}{B/R}
 pt=2/1
 timing=main
+oracle=Haste

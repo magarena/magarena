@@ -9,3 +9,4 @@ subtype=Zombie
 cost={4}{B}
 pt=3/3
 timing=main
+oracle=Fear

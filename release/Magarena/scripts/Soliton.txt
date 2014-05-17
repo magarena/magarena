@@ -9,3 +9,4 @@ cost={5}
 pt=3/4
 ability={U}: Untap SN.
 timing=main
+oracle={U}: Untap Soliton.

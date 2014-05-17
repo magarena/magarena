@@ -7,3 +7,4 @@ type=Instant
 cost={2}{R}
 timing=removal
 requires_groovy_code
+oracle=Zap deals 1 damage to target creature or player. Draw a card.

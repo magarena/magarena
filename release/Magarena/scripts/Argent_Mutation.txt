@@ -7,3 +7,4 @@ type=Instant
 cost={2}{U}
 timing=pump
 requires_groovy_code
+oracle=Target permanent becomes an artifact in addition to its other types until end of turn. Draw a card.

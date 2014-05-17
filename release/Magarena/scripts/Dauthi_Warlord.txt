@@ -10,3 +10,4 @@ pt=0/1
 ability=shadow
 timing=main
 requires_groovy_code
+oracle=Shadow. Dauthi Warlord's power is equal to the number of creatures with shadow on the battlefield.

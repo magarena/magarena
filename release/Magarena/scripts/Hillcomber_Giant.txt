@@ -9,3 +9,4 @@ subtype=Giant,Scout
 cost={2}{W}{W}
 pt=3/3
 timing=main
+oracle=Mountainwalk

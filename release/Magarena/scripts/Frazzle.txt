@@ -7,3 +7,4 @@ type=Instant
 cost={3}{U}
 effect=Counter target nonblue spell.
 timing=counter
+oracle=Counter target nonblue spell.

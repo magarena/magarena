@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 ability=Whenever you cast an enchantment spell, draw a card.
 timing=Enchantment
+oracle=Whenever you cast an enchantment spell, draw a card.

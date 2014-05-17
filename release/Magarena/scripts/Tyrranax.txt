@@ -9,3 +9,4 @@ cost={4}{G}{G}
 pt=5/4
 ability={1}{G}:SN gets -1/+1 until end of turn.
 timing=main
+oracle={1}{G}: Tyrranax gets -1/+1 until end of turn.

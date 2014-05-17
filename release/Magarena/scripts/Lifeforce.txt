@@ -7,3 +7,4 @@ type=Enchantment
 cost={G}{G}
 ability={G}{G}:Counter target black spell.
 timing=enchantment
+oracle={G}{G}: Counter target black spell.

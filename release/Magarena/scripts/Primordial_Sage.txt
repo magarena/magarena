@@ -9,3 +9,4 @@ cost={4}{G}{G}
 pt=4/5
 ability=Whenever you cast a creature spell, you may draw a card.
 timing=main
+oracle=Whenever you cast a creature spell, you may draw a card.

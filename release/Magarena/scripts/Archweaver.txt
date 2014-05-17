@@ -9,3 +9,4 @@ ability=reach;trample
 cost={5}{G}{G}
 pt=5/5
 timing=main
+oracle=Reach, trample

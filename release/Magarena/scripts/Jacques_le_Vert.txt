@@ -9,3 +9,4 @@ cost={1}{R}{G}{W}
 pt=3/2
 ability=green creatures you control get +0/+2
 timing=main
+oracle=Green creatures you control get +0/+2.

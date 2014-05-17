@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{R}
 ability={3}{R}, Sacrifice SN: SN deals 5 damage to target player.
 timing=main
+oracle={3}{R}, Sacrifice Font of Ire: Font of Ire deals 5 damage to target player.

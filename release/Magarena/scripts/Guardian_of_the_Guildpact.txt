@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/3
 ability=protection from monocolored
 timing=main
+oracle=Protection from monocolored

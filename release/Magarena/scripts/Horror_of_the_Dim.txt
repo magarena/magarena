@@ -9,3 +9,4 @@ cost={4}{B}
 pt=3/4
 ability={U}:SN gains hexproof until end of turn.
 timing=main
+oracle={U}: Horror of the Dim gains hexproof until end of turn.

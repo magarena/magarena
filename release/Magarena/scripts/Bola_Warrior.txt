@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/1
 ability={R}, {T}, Discard a card: Target creature can't block this turn.
 timing=main
+oracle={R}, {T}, Discard a card: Target creature can't block this turn.

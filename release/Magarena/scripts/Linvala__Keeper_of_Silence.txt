@@ -9,3 +9,4 @@ cost={2}{W}{W}
 pt=3/4
 ability=flying;creatures your opponents control have can't activate abilities
 timing=main
+oracle=Flying. Activated abilities of creatures your opponents control can't be activated.

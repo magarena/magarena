@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{W}
 effect=Put two 2/2 white Knight creature tokens with vigilance onto the battlefield.
 timing=token
+oracle=Put two 2/2 white Knight creature tokens with vigilance onto the battlefield.

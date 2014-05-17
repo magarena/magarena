@@ -9,3 +9,4 @@ cost={2}{U}{U}
 pt=3/3
 ability=Discard a card: SN gains shadow until end of turn.
 timing=main
+oracle=Discard a card: Thalakos Drifters gains shadow until end of turn.

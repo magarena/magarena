@@ -9,3 +9,4 @@ cost={5}{U}
 pt=4/5
 timing=main
 requires_groovy_code
+oracle=Whenever Havengul Skaab attacks, return another creature you control to its owner's hand.

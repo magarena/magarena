@@ -9,3 +9,4 @@ cost={5}{G}{G}
 pt=6/6
 ability=Forestcycling {2}
 timing=main
+oracle=Forestcycling {2}

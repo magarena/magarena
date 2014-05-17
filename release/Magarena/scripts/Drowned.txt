@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/1
 ability={B}: Regenerate SN.
 timing=main
+oracle={B}: Regenerate Drowned.

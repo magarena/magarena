@@ -7,3 +7,4 @@ type=Instant
 cost={2}{R/W}
 effect=SN deals 4 damage to target attacking or blocking creature.
 timing=removal
+oracle=Arrows of Justice deals 4 damage to target attacking or blocking creature.

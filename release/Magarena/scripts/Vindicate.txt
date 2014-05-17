@@ -9,3 +9,4 @@ type=Sorcery
 cost={1}{W}{B}
 timing=removal
 effect=Destroy target permanent.
+oracle=Destroy target permanent.

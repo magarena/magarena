@@ -9,3 +9,4 @@ subtype=Minotaur
 cost={3}{R}
 pt=2/3
 timing=main
+oracle=First strike

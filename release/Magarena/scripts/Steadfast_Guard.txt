@@ -9,3 +9,4 @@ subtype=Human,Rebel
 cost={W}{W}
 pt=2/2
 timing=main
+oracle=Vigilance

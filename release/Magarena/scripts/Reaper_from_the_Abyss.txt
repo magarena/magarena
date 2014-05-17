@@ -10,3 +10,4 @@ pt=6/6
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. Morbid ? At the beginning of each end step, if a creature died this turn, destroy target non-Demon creature.

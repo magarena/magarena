@@ -9,3 +9,4 @@ cost={G/W}
 pt=2/1
 timing=main
 requires_groovy_code
+oracle=If an instant or sorcery card would be put into a graveyard from anywhere, exile it instead.

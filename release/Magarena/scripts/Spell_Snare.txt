@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Counter target spell with converted mana cost 2.
 timing=counter
+oracle=Counter target spell with converted mana cost 2.

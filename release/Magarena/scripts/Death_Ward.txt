@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 effect=Regenerate target creature.
 timing=pump
+oracle=Regenerate target creature.

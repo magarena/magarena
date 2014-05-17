@@ -8,3 +8,4 @@ type=Sorcery
 cost={7}{B}{B}
 effect=Destroy all creatures you don't control. They can't be regenerated.
 timing=removal
+oracle=Destroy all creatures you don't control. They can't be regenerated.

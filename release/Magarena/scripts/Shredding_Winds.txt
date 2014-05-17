@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G}
 effect=SN deals 7 damage to target creature with flying.
 timing=removal
+oracle=Shredding Winds deals 7 damage to target creature with flying.

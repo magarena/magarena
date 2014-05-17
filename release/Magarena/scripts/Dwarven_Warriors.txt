@@ -9,3 +9,4 @@ cost={2}{R}
 pt=1/1
 ability={T}: Target creature with power 2 or less can't be blocked this turn.
 timing=main
+oracle={T}: Target creature with power 2 or less can't be blocked this turn.

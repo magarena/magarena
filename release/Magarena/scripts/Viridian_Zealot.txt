@@ -9,3 +9,4 @@ cost={G}{G}
 pt=2/1
 ability={1}{G},Sacrifice SN:Destroy target artifact or enchantment.
 timing=main
+oracle={1}{G}, Sacrifice Viridian Zealot: Destroy target artifact or enchantment.

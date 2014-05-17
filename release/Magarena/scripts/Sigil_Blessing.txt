@@ -7,3 +7,4 @@ type=Instant
 cost={G}{W}
 timing=pump
 requires_groovy_code
+oracle=Until end of turn, target creature you control gets +3/+3 and other creatures you control get +1/+1.

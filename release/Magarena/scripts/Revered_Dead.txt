@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 ability={W}: Regenerate SN.
 timing=main
+oracle={W}: Regenerate Revered Dead.

@@ -10,3 +10,4 @@ pt=2/2
 ability={T}: Tap target creature.;\
         Whenever you cast a white spell, you may untap SN.
 timing=main
+oracle={T}: Tap target creature. Whenever you cast a white spell, you may untap Ballynock Trapper.

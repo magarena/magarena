@@ -9,3 +9,4 @@ cost={4}
 pt=1/4
 ability={3}: Switch SN's power and toughness until end of turn.
 timing=main
+oracle={3}: Switch Myr Quadropod's power and toughness until end of turn.

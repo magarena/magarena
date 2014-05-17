@@ -9,3 +9,4 @@ cost={3}{W}
 pt=3/2
 ability=SN can't be blocked by black creatures.;SN can't be blocked by red creatures.
 timing=main
+oracle=Sacred Knight can't be blocked by black and/or red creatures.

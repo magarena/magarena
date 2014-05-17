@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability={R},{T},Discard a card:Destroy target Wall.
 timing=main
+oracle={R}, {T}, Discard a card: Destroy target Wall.

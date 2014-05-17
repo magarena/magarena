@@ -8,3 +8,4 @@ type=Instant
 cost={1}{G}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact. Its controller loses 1 life.

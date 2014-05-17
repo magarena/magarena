@@ -9,3 +9,4 @@ cost={2}{R}
 pt=3/1
 ability={G}: SN gains trample until end of turn.
 timing=main
+oracle={G}: Viashino Grappler gains trample until end of turn.

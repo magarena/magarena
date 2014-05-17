@@ -9,3 +9,4 @@ cost={3}{U}{U}
 pt=4/4
 ability=Whenever SN or another enchantment enters the battlefield under your control, target creature can't be blocked this turn.
 timing=main
+oracle=Constellation ? Whenever Whitewater Naiads or another enchantment enters the battlefield under your control, target creature can't be blocked this turn.

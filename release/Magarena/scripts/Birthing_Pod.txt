@@ -8,3 +8,4 @@ cost={3}{P/G}
 ability=alt cost {3}, Pay 2 life named Pay 2 life
 timing=artifact
 requires_groovy_code
+oracle={1}{P/G}, {T}, Sacrifice a creature: Search your library for a creature card with converted mana cost equal to 1 plus the sacrificed creature's converted mana cost, put that card onto the battlefield, then shuffle your library. Activate this ability only any time you could cast a sorcery.

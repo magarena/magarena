@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{B}{B}
 timing=removal
 effect=Exile target land.
+oracle=Exile target land.

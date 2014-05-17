@@ -9,3 +9,4 @@ cost={5}{R}
 pt=5/4
 ability=Monstrosity 3 {5}{R}{R}
 timing=main
+oracle={5}{R}{R}: Monstrosity 3.

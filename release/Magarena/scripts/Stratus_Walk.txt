@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Enchanted creature can block only creatures with flying.
 timing=aura
 enchant=flying,creature
+oracle=Enchant creature. When Stratus Walk enters the battlefield, draw a card. Enchanted creature has flying. Enchanted creature can block only creatures with flying.

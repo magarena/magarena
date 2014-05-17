@@ -9,3 +9,4 @@ cost={G}{W}
 pt=1/2
 ability=Whenever an enchantment is put into a graveyard from the battlefield, draw a card.
 timing=main
+oracle=Whenever an enchantment is put into a graveyard from the battlefield, draw a card.

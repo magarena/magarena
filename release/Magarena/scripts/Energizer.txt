@@ -9,3 +9,4 @@ cost={4}
 pt=2/2
 ability={2},{T}:Put a +1/+1 counter on SN.
 timing=artifact
+oracle={2}, {T}: Put a +1/+1 counter on Energizer.

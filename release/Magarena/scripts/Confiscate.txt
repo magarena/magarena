@@ -9,3 +9,4 @@ cost={4}{U}{U}
 timing=aura
 ability=You control enchanted permanent.
 enchant=gain control,neg permanent
+oracle=Enchant permanent. You control enchanted permanent.

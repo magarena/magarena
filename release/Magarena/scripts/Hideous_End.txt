@@ -8,3 +8,4 @@ type=Instant
 cost={1}{B}{B}
 timing=removal
 requires_groovy_code
+oracle=Destroy target nonblack creature. Its controller loses 2 life.

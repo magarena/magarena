@@ -11,3 +11,4 @@ ability=other merfolk creatures get +1/+1;\
         other merfolk creatures have islandwalk
 static=all
 timing=main
+oracle=Other Merfolk creatures get +1/+1 and have islandwalk.

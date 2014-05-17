@@ -9,3 +9,4 @@ cost={2}{U}
 pt=2/2
 ability=When SN enters the battlefield, put two level counters on each creature you control with level up.
 timing=main
+oracle=When Venerated Teacher enters the battlefield, put two level counters on each creature you control with level up.

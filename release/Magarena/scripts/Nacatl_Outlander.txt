@@ -9,3 +9,4 @@ subtype=Cat,Scout
 cost={R}{G}
 pt=2/2
 timing=main
+oracle=Protection from blue

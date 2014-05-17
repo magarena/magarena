@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 timing=counter
 requires_groovy_code
+oracle=Counter target instant or sorcery spell unless its controller pays {1}. Draw a card.

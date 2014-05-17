@@ -12,3 +12,4 @@ ability=flying
 static=all
 timing=smain
 requires_groovy_code
+oracle=Flying. Other creatures are 1/1.

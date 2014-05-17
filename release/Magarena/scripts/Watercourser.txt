@@ -9,3 +9,4 @@ cost={2}{U}
 ability={U}: SN gets +1/-1 until end of turn.
 pt=2/3
 timing=main
+oracle={U}: Watercourser gets +1/-1 until end of turn.

@@ -9,3 +9,4 @@ cost={4}{R}
 pt=3/3
 ability=mountainwalk
 timing=main
+oracle=Mountainwalk

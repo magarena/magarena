@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=3/2
 ability=swampwalk
 timing=main
+oracle=Swampwalk

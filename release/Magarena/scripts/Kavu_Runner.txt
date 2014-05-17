@@ -9,3 +9,4 @@ cost={3}{R}
 pt=3/3
 ability=SN has haste as long as no opponent controls a white or blue creature.
 timing=main
+oracle=Kavu Runner has haste as long as no opponent controls a white or blue creature.

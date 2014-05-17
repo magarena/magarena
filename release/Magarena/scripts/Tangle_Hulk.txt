@@ -9,3 +9,4 @@ cost={5}
 pt=5/3
 ability={2}{G}: Regenerate SN.
 timing=main
+oracle={2}{G}: Regenerate Tangle Hulk.

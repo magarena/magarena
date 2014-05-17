@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability={T}: Add {1} to your mana pool.
 timing=artifact
+oracle={T}: Add {1} to your mana pool. {T}: Roll the planar die. Activate this ability only any time you could cast a sorcery.

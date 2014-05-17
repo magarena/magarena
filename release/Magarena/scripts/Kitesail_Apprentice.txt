@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability=As long as SN is equipped, it gets +1/+1 and has flying.
 timing=main
+oracle=As long as Kitesail Apprentice is equipped, it gets +1/+1 and has flying.

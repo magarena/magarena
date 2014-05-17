@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability=When SN enters the battlefield, target creature gets +2/+0 until end of turn.
 timing=main
+oracle=When Vulshok Heartstoker enters the battlefield, target creature gets +2/+0 until end of turn.

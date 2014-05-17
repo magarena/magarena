@@ -8,3 +8,4 @@ type=Instant
 cost={W}
 timing=removal
 requires_groovy_code
+oracle=Exile target creature. Its controller may search his or her library for a basic land card, put that card onto the battlefield tapped, then shuffle his or her library.

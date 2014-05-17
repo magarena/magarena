@@ -7,3 +7,4 @@ type=Sorcery
 cost={G}
 timing=main
 requires_groovy_code
+oracle=Untap all creatures you control.

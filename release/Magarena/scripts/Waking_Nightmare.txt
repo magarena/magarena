@@ -8,3 +8,4 @@ subtype=Arcane
 cost={2}{B}
 effect=Target player discards two cards.
 timing=main
+oracle=Target player discards two cards.

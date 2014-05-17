@@ -10,3 +10,4 @@ ability=Enchanted creature gets +0/+4.;\
         totem armor
 timing=aura
 enchant=pump,pos creature
+oracle=Enchant creature. Enchanted creature gets +0/+4. Totem armor

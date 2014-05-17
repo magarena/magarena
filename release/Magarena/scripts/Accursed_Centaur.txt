@@ -9,3 +9,4 @@ cost={B}
 pt=2/2
 ability=When SN enters the battlefield, sacrifice a creature.
 timing=main
+oracle=When Accursed Centaur enters the battlefield, sacrifice a creature.

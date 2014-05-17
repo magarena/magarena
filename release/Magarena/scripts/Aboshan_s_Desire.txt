@@ -10,3 +10,4 @@ ability=Enchanted creature has flying.
 enchant=flying,pos creature
 timing=aura
 requires_groovy_code
+oracle=Enchant creature. Enchanted creature has flying. Threshold ? Enchanted creature has shroud as long as seven or more cards are in your graveyard.

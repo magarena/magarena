@@ -9,3 +9,4 @@ subtype=Myr
 cost={2}
 pt=1/2
 timing=main
+oracle=Flying, vigilance

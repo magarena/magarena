@@ -9,3 +9,4 @@ cost={B}{B}
 pt=2/1
 ability={1}, {T}: Search your library for a Mercenary permanent card with converted mana cost 1 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
+oracle={1}, {T}: Search your library for a Mercenary permanent card with converted mana cost 1 or less and put it onto the battlefield. Then shuffle your library.

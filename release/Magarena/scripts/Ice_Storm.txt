@@ -8,3 +8,4 @@ type=Sorcery
 cost={2}{G}
 timing=main
 effect=Destroy target land.
+oracle=Destroy target land.

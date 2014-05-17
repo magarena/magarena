@@ -9,3 +9,4 @@ subtype=Spider
 cost={2}{G}
 pt=1/5
 timing=main
+oracle=Reach

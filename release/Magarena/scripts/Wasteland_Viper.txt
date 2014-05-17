@@ -10,3 +10,4 @@ pt=1/2
 ability=deathtouch
 timing=main
 requires_groovy_code
+oracle=Deathtouch. Bloodrush ? {G}, Discard Wasteland Viper: Target attacking creature gets +1/+2 and gains deathtouch until end of turn.

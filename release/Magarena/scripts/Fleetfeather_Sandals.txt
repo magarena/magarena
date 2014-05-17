@@ -9,3 +9,4 @@ cost={2}
 ability=Equipped creature has flying and haste.;\
         Equip {2}
 timing=equipment
+oracle=Equipped creature has flying and haste. Equip {2}

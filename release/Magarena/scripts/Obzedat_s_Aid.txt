@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{W}{B}
 effect=Return target permanent card from your graveyard to the battlefield.
 timing=main
+oracle=Return target permanent card from your graveyard to the battlefield.

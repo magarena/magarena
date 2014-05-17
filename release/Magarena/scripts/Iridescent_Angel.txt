@@ -9,3 +9,4 @@ cost={5}{W}{U}
 pt=4/4
 ability=flying;protection from all colors
 timing=smain
+oracle=Flying, protection from all colors

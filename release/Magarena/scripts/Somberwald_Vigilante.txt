@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle=Whenever Somberwald Vigilante becomes blocked by a creature, Somberwald Vigilante deals 1 damage to that creature.

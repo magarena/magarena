@@ -9,3 +9,4 @@ cost={U}
 pt=1/1
 ability={U}: SN gains flying until end of turn.
 timing=main
+oracle={U}: Manta Riders gains flying until end of turn.

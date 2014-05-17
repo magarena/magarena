@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 ability=islands have "SN doesn't untap during your untap step."
 timing=enchantment
+oracle=Islands don't untap during their controllers' untap steps.

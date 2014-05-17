@@ -9,3 +9,4 @@ subtype=Bird,Soldier
 cost={4}{W}
 pt=3/3
 timing=main
+oracle=Flying, protection from Dragons

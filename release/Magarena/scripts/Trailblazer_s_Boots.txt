@@ -9,3 +9,4 @@ cost={2}
 ability=Equipped creature has nonbasic landwalk.;\
         Equip {2}
 timing=equipment
+oracle=Equipped creature has nonbasic landwalk.. Equip {2}

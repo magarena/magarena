@@ -9,3 +9,4 @@ ability=creatures your opponents control have "When SN becomes the target of a s
 static=opponent
 timing=enchantment
 requires_groovy_code
+oracle=Each creature your opponents control is an Illusion in addition to its other types and has "When this creature becomes the target of a spell or ability, sacrifice it."

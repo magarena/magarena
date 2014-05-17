@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{G}{G}
 timing=main
 requires_groovy_code
+oracle=Destroy all artifacts. They can't be regenerated. The controller of each of those artifacts gains life equal to its converted mana cost.

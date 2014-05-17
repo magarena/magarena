@@ -9,3 +9,4 @@ cost={2}{U}
 pt=2/2
 ability=Whenever SN becomes blocked, you may draw a card.
 timing=main
+oracle=Whenever Chambered Nautilus becomes blocked, you may draw a card.

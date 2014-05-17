@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=2/2
 ability={R}, Sacrifice SN: SN deals 2 damage to each creature.
 timing=main
+oracle={R}, Sacrifice Bloodfire Kavu: Bloodfire Kavu deals 2 damage to each creature.

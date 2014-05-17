@@ -10,3 +10,4 @@ ability=Enchanted creature gets +6/+6.;\
         {G}{G}{G},Sacrifice SN: Put a 6/6 green Wurm creature token onto the battlefield.
 timing=enchantment
 enchant=pump,pos creature
+oracle=Enchant green creature. Enchanted creature gets +6/+6. {G}{G}{G}, Sacrifice Wurmweaver Coil: Put a 6/6 green Wurm creature token onto the battlefield.

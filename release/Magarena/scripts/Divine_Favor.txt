@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, you gain 3 life.;\
         Enchanted creature gets +1/+3.
 timing=aura
 enchant=pump,pos creature
+oracle=Enchant creature. When Divine Favor enters the battlefield, you gain 3 life. Enchanted creature gets +1/+3.

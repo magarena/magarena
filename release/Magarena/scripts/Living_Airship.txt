@@ -10,3 +10,4 @@ pt=2/3
 ability=flying;\
         {2}{G}: Regenerate SN.
 timing=main
+oracle=Flying. {2}{G}: Regenerate Living Airship.

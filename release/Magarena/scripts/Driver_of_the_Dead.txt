@@ -9,3 +9,4 @@ cost={3}{B}
 pt=3/2
 ability=When SN dies, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
 timing=main
+oracle=When Driver of the Dead dies, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.

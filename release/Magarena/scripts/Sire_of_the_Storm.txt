@@ -9,3 +9,4 @@ cost={4}{U}{U}
 pt=3/3
 ability=flying;Whenever you cast a Spirit or Arcane spell, you may draw a card.
 timing=main
+oracle=Flying. Whenever you cast a Spirit or Arcane spell, you may draw a card.

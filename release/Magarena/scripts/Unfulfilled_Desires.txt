@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{U}{B}
 ability={1},Pay 1 life: Draw a card, then discard a card.
 timing=enchantment
+oracle={1}, Pay 1 life: Draw a card, then discard a card.

@@ -9,3 +9,4 @@ cost={6}
 pt=3/5
 ability=When SN dies, you gain 4 life.
 timing=artifact
+oracle=When Enatu Golem dies, you gain 4 life.

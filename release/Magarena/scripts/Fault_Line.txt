@@ -8,3 +8,4 @@ cost={X}{R}{R}
 timing=removal
 removal=2
 requires_groovy_code=Earthquake
+oracle=Fault Line deals X damage to each creature without flying and each player.

@@ -9,3 +9,4 @@ ability={T}: Add {B} or {R} to your mana pool.;\
         SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.
 timing=tapland
+oracle=Akoum Refuge enters the battlefield tapped. When Akoum Refuge enters the battlefield, you gain 1 life. {T}: Add {B} or {R} to your mana pool.

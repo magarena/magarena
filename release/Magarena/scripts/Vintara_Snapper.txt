@@ -9,3 +9,4 @@ cost={G}{G}
 pt=2/2
 ability=SN has shroud as long as you control no untapped lands.
 timing=main
+oracle=Vintara Snapper has shroud as long as you control no untapped lands.

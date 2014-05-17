@@ -9,3 +9,4 @@ cost={4}{W}
 pt=3/3
 ability=SN has flying as long as it's enchanted.
 timing=main
+oracle=Skyrider Trainee has flying as long as it's enchanted.

@@ -9,3 +9,4 @@ cost={3}{U}{B}{B}
 pt=4/3
 ability=first strike
 timing=main
+oracle=First strike

@@ -7,3 +7,4 @@ type=Instant
 cost={3}{R}{R}
 timing=removal
 effect=Destroy target creature or land. It can't be regenerated.
+oracle=Destroy target creature or land. It can't be regenerated.

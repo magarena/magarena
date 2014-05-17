@@ -10,3 +10,4 @@ cost={4}{B}
 pt=3/3
 ability=When SN dies, destroy target land.
 timing=main
+oracle=When Polluted Dead dies, destroy target land.

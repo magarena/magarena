@@ -9,3 +9,4 @@ cost={2}{U}{U}
 pt=2/2
 ability={3}, {T}: Search your library for a Merfolk permanent card and put it onto the battlefield. Then shuffle your library.
 timing=main
+oracle={3}, {T}: Search your library for a Merfolk permanent card and put it onto the battlefield. Then shuffle your library.

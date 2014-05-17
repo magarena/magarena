@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{B}{B}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature is dealt damage, destroy it. It can't be regenerated.

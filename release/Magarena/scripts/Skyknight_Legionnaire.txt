@@ -9,3 +9,4 @@ subtype=Human,Knight
 cost={1}{R}{W}
 pt=2/2
 timing=fmain
+oracle=Flying, haste

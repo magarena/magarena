@@ -7,3 +7,4 @@ type=Instant
 cost={5}{R}{R}
 effect=SN deals 6 damage to each creature and each player.
 timing=removal
+oracle=Inferno deals 6 damage to each creature and each player.

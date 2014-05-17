@@ -9,3 +9,4 @@ cost={5}{B}
 pt=3/4
 ability=Whenever you cast a Treefolk spell, you may have target creature get +3/-3 until end of turn.
 timing=main
+oracle=Whenever you cast a Treefolk spell, you may have target creature get +3/-3 until end of turn.

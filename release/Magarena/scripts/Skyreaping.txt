@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{G}
 timing=main
 requires_groovy_code
+oracle=Skyreaping deals damage to each creature with flying equal to your devotion to green.

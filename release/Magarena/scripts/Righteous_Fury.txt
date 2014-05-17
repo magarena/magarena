@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{W}{W}
 timing=main
 requires_groovy_code
+oracle=Destroy all tapped creatures. You gain 2 life for each creature destroyed this way.

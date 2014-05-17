@@ -7,3 +7,4 @@ type=Instant
 cost={3}{U}
 effect=Creatures you control gain shroud until end of turn.
 timing=pump
+oracle=Creatures you control gain shroud until end of turn.

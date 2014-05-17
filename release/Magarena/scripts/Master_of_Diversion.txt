@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/2
 ability=Whenever SN attacks, tap target creature defending player controls.
 timing=main
+oracle=Whenever Master of Diversion attacks, tap target creature defending player controls.

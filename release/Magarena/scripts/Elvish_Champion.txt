@@ -11,3 +11,4 @@ ability=other elf creatures get +1/+1;\
         other elf creatures have forestwalk
 static=all
 timing=main
+oracle=Other Elf creatures get +1/+1 and have forestwalk.

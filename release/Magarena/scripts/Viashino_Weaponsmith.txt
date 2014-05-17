@@ -9,3 +9,4 @@ cost={3}{R}
 pt=2/2
 ability=Whenever SN becomes blocked by a creature, SN gets +2/+2 until end of turn.
 timing=main
+oracle=Whenever Viashino Weaponsmith becomes blocked by a creature, Viashino Weaponsmith gets +2/+2 until end of turn.

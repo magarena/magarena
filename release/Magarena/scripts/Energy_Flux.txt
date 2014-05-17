@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{U}
 ability=artifacts have "At the beginning of your upkeep, you may pay {2}. If you don't, sacrifice SN."
 timing=enchantment
+oracle=All artifacts have "At the beginning of your upkeep, sacrifice this artifact unless you pay {2}."

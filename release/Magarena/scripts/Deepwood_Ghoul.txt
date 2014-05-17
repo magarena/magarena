@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/1
 ability=Pay 2 life: Regenerate SN.
 timing=main
+oracle=Pay 2 life: Regenerate Deepwood Ghoul.

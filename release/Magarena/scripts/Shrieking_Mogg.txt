@@ -10,3 +10,4 @@ pt=1/1
 ability=haste
 timing=fmain
 requires_groovy_code=Timbermare
+oracle=Haste. When Shrieking Mogg enters the battlefield, tap all other creatures.

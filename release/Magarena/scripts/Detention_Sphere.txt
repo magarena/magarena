@@ -8,3 +8,4 @@ cost={1}{W}{U}
 ability=When SN leaves the battlefield, return the exiled cards to the battlefield under their owner's control.
 timing=enchantment
 requires_groovy_code
+oracle=When Detention Sphere enters the battlefield, you may exile target nonland permanent not named Detention Sphere and all other permanents with the same name as that permanent. When Detention Sphere leaves the battlefield, return the exiled cards to the battlefield under their owner's control.

@@ -10,3 +10,4 @@ ability=Enchanted creature gets +1/+3.
 enchant=pump,creature
 timing=aura
 requires_groovy_code
+oracle=Enchant creature. Enchanted creature gets +1/+3. {W}: Return enchanted creature to its owner's hand.

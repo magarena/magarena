@@ -10,3 +10,4 @@ ability=Shroud;\
         Enchanted creature has shroud.
 timing=aura
 enchant=shroud,pos creature
+oracle=Enchant creature. Shroud. Enchanted creature has shroud.

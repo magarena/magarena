@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 effect=Counter target spell unless its controller pays {1}.
 timing=counter
+oracle=Counter target spell unless its controller pays {1}.

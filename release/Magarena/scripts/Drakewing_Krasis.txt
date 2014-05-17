@@ -9,3 +9,4 @@ cost={1}{G}{U}
 pt=3/1
 ability=flying;trample
 timing=main
+oracle=Flying, trample

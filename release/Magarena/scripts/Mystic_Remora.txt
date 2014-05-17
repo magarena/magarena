@@ -8,3 +8,4 @@ cost={U}
 ability=cumulative upkeep {1}
 timing=enchantment
 requires_groovy_code
+oracle=Cumulative upkeep {1}. Whenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.

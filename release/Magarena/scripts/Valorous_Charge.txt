@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{W}{W}
 effect=White creatures get +2/+0 until end of turn.
 timing=fmain
+oracle=White creatures get +2/+0 until end of turn.

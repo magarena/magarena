@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/2
 ability=When SN enters the battlefield, you may search your library for a Plains card, put it onto the battlefield tapped, then shuffle your library.
 timing=main
+oracle=When Kor Cartographer enters the battlefield, you may search your library for a Plains card, put it onto the battlefield tapped, then shuffle your library.

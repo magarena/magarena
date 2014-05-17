@@ -9,3 +9,4 @@ cost={2}
 ability=Equipped creature gets +1/+0 and has first strike.;\
         Equip {1}
 timing=equipment
+oracle=Equipped creature gets +1/+0 and has first strike. Equip {1}

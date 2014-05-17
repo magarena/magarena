@@ -9,3 +9,4 @@ subtype=Cat
 cost={3}{G}
 pt=3/2
 timing=flash
+oracle=Flash

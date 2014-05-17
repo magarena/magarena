@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{U}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever an opponent casts a spell, you may draw a card unless that player pays {1}.

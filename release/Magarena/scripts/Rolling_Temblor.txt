@@ -8,3 +8,4 @@ cost={2}{R}
 effect=SN deals 2 damage to each creature without flying.
 ability=Flashback {4}{R}{R}
 timing=main
+oracle=Rolling Temblor deals 2 damage to each creature without flying. Flashback {4}{R}{R}

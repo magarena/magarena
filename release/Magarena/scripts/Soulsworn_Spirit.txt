@@ -10,3 +10,4 @@ pt=2/1
 ability=SN can't be blocked.
 timing=main
 requires_groovy_code=Azorius Arrester
+oracle=Soulsworn Spirit can't be blocked. When Soulsworn Spirit enters the battlefield, detain target creature an opponent controls.

@@ -9,3 +9,4 @@ ability={U/R}: SN gets +1/-1 until end of turn.
 cost={U/R}{U/R}
 pt=1/4
 timing=main
+oracle={U/R}: Frostburn Weird gets +1/-1 until end of turn.

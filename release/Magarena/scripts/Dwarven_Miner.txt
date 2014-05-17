@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/2
 ability={2}{R},{T}: Destroy target nonbasic land.
 timing=main
+oracle={2}{R}, {T}: Destroy target nonbasic land.

@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 ability=flying;protection from artifacts
 timing=main
+oracle=Flying, protection from artifacts

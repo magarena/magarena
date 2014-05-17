@@ -8,3 +8,4 @@ cost={R}
 effect=Target creature gets +3/+0 and gains haste until end of turn.
 ability=Flashback {2}{R}
 timing=fmain
+oracle=Target creature gets +3/+0 and gains haste until end of turn. Flashback {2}{R}

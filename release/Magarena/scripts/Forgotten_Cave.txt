@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.;\
         cycling {R}
 timing=tapland
+oracle=Forgotten Cave enters the battlefield tapped. {T}: Add {R} to your mana pool. Cycling {R}

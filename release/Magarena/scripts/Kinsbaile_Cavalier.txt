@@ -10,3 +10,4 @@ pt=2/2
 ability=knight creatures you control have double strike
 static=player
 timing=fmain
+oracle=Knight creatures you control have double strike.

@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability={R}, Sacrifice SN: SN deals 1 damage to each creature without flying.
 timing=main
+oracle={R}, Sacrifice Bloodfire Dwarf: Bloodfire Dwarf deals 1 damage to each creature without flying.

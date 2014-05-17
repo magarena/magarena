@@ -8,3 +8,4 @@ cost={B}
 ability=buyback {4}
 effect=Put a 1/1 black Rat creature token onto the battlefield.
 timing=token
+oracle=Buyback {4}. Put a 1/1 black Rat creature token onto the battlefield.

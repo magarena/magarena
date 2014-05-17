@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 timing=artifact
 requires_groovy_code
+oracle=Whenever a permanent enters the battlefield tapped and under your control, untap it.

@@ -9,3 +9,4 @@ cost={1}{U}
 ability={T}:Draw two cards, then discard three cards.
 pt=0/1
 timing=main
+oracle={T}: Draw two cards, then discard three cards.

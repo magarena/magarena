@@ -9,3 +9,4 @@ cost={5}{U}{U}{U}
 pt=6/6
 ability=SN can't be blocked.
 timing=main
+oracle=Tidal Kraken can't be blocked.

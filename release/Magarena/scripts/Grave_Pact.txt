@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{B}{B}{B}
 ability=Whenever a creature you control dies, each other player sacrifices a creature.
 timing=enchantment
+oracle=Whenever a creature you control dies, each other player sacrifices a creature.

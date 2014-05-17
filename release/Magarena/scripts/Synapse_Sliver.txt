@@ -9,3 +9,4 @@ cost={4}{U}
 pt=3/3
 ability=Sliver creatures have "Whenever SN deals combat damage to a player, you may draw a card."
 timing=main
+oracle=Whenever a Sliver deals combat damage to a player, its controller may draw a card.

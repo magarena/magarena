@@ -9,3 +9,4 @@ subtype=Human,Knight
 cost={R}{R}
 pt=2/2
 timing=main
+oracle=First strike, protection from white

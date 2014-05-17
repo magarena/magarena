@@ -7,3 +7,4 @@ type=Artifact
 cost={1}{U}{U}
 ability={3}{U},{T}: Draw a card.
 timing=artifact
+oracle={3}{U}, {T}: Draw a card.

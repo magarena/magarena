@@ -7,3 +7,4 @@ type=Artifact
 cost={0}
 ability=Sacrifice a land: You gain 2 life.
 timing=main
+oracle=Sacrifice a land: You gain 2 life.

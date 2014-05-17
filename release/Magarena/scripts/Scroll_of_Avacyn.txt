@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 timing=artifact
 requires_groovy_code
+oracle={1}, Sacrifice Scroll of Avacyn: Draw a card. If you control an Angel, you gain 5 life.

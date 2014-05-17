@@ -7,3 +7,4 @@ type=Enchantment
 cost={5}{B}{B}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature you don't control dies, return it to the battlefield under your control with an additional +1/+1 counter on it at the beginning of the next end step. That creature is a black Zombie in addition to its other colors and types.

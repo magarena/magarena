@@ -10,3 +10,4 @@ pt=7/7
 ability=At the beginning of each upkeep, draw a card.;\
         At the beginning of each upkeep, you lose 1 life.
 timing=main
+oracle=At the beginning of each upkeep, you draw a card and you lose 1 life.

@@ -8,3 +8,4 @@ cost={2}{G}
 ability=As an additional cost to cast SN, sacrifice a land.
 timing=main
 requires_groovy_code
+oracle=As an additional cost to cast Renewal, sacrifice a land. Search your library for a basic land card and put that card onto the battlefield. Then shuffle your library. Draw a card at the beginning of the next turn's upkeep.

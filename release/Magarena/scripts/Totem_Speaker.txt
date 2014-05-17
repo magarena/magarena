@@ -9,3 +9,4 @@ cost={4}{G}
 pt=3/3
 ability=Whenever a Beast enters the battlefield, you may gain 3 life.
 timing=main
+oracle=Whenever a Beast enters the battlefield, you may gain 3 life.

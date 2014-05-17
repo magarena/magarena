@@ -10,3 +10,4 @@ pt=3/3
 ability=all sliver creatures have vigilance
 static=all
 timing=main
+oracle=All Sliver creatures have vigilance.

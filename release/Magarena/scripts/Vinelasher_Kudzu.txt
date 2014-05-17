@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 ability=Whenever a land enters the battlefield under your control, put a +1/+1 counter on SN.
 timing=main
+oracle=Whenever a land enters the battlefield under your control, put a +1/+1 counter on Vinelasher Kudzu.

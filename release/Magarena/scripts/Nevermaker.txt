@@ -11,3 +11,4 @@ ability=flying;\
         evoke {3}{U};\
         When SN leaves the battlefield, put target nonland permanent on top of its owner's library.
 timing=main
+oracle=Flying. When Nevermaker leaves the battlefield, put target nonland permanent on top of its owner's library. Evoke {3}{U}

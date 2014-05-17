@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 timing=pump
 requires_groovy_code
+oracle=Choose a color. White creatures you control gain protection from the chosen color until end of turn.

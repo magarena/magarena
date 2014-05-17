@@ -7,3 +7,4 @@ type=Instant
 cost={2}{U}
 effect=Creatures your opponents control get -4/-0 until end of turn.
 timing=removal
+oracle=Creatures your opponents control get -4/-0 until end of turn.

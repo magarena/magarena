@@ -9,3 +9,4 @@ cost={3}{G}
 ability=hexproof
 timing=main
 requires_groovy_code
+oracle=Hexproof. Drove of Elves's power and toughness are each equal to the number of green permanents you control.

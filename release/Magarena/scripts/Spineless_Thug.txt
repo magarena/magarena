@@ -9,3 +9,4 @@ subtype=Zombie,Mercenary
 cost={1}{B}
 pt=2/2
 timing=fmain
+oracle=Spineless Thug can't block.

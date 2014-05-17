@@ -9,3 +9,4 @@ cost={4}{B}{B}
 pt=3/3
 ability=Whenever SN deals damage to an opponent, that opponent discards a card.
 timing=main
+oracle=Whenever Zhang Liao, Hero of Hefei deals damage to an opponent, that opponent discards a card.

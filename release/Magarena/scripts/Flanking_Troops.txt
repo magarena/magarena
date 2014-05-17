@@ -9,3 +9,4 @@ cost={2}{W}{W}
 pt=2/2
 ability=Whenever SN attacks, you may tap target creature.
 timing=main
+oracle=Whenever Flanking Troops attacks, you may tap target creature.

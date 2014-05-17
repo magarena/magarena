@@ -10,3 +10,4 @@ pt=2/2
 ability=all sliver creatures have can't be blocked except by Slivers.
 static=all
 timing=main
+oracle=Slivers can't be blocked except by Slivers.

@@ -8,3 +8,4 @@ cost={3}{U}
 ability=all creatures have "At the beginning of your upkeep, you may pay {1}. If you don't, sacrifice SN."
 static=all
 timing=enchantment
+oracle=All creatures have "At the beginning of your upkeep, sacrifice this creature unless you pay {1}."

@@ -9,3 +9,4 @@ cost={1}{G}
 pt=2/1
 ability=SN can block creatures with shadow as though SN had shadow.
 timing=main
+oracle=Heartwood Dryad can block creatures with shadow as though Heartwood Dryad had shadow.

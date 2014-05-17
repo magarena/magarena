@@ -8,3 +8,4 @@ type=Sorcery
 cost={B}{B}
 timing=removal
 requires_groovy_code
+oracle=Each player loses 1 life, discards a card, sacrifices a creature, then sacrifices a land.

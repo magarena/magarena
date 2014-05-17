@@ -7,3 +7,4 @@ type=Instant
 cost={1}{R}
 timing=removal
 effect=Destroy target artifact.
+oracle=Destroy target artifact.

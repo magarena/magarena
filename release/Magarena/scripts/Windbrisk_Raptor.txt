@@ -9,3 +9,4 @@ cost={5}{W}{W}
 pt=5/7
 ability=flying;attacking creatures you control have lifelink
 timing=main
+oracle=Flying. Attacking creatures you control have lifelink.

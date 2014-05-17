@@ -9,3 +9,4 @@ subtype=Gargoyle
 cost={1}{W}{U}{B}
 pt=4/4
 timing=main
+oracle=Flying

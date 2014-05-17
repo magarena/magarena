@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/1
 timing=main
 requires_groovy_code
+oracle=Sacrifice a creature: Falkenrath Torturer gains flying until end of turn. If the sacrificed creature was a Human, put a +1/+1 counter on Falkenrath Torturer.

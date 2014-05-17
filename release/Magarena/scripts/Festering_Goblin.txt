@@ -9,3 +9,4 @@ cost={B}
 pt=1/1
 ability=When SN dies, target creature gets -1/-1 until end of turn.
 timing=main
+oracle=When Festering Goblin dies, target creature gets -1/-1 until end of turn.

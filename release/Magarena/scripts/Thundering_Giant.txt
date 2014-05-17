@@ -9,3 +9,4 @@ subtype=Giant
 cost={3}{R}{R}
 pt=4/3
 timing=fmain
+oracle=Haste

@@ -9,3 +9,4 @@ cost={3}{G}
 pt=2/3
 ability={1}{G}: Regenerate SN.
 timing=main
+oracle={1}{G}: Regenerate Tel-Jilad Exile.

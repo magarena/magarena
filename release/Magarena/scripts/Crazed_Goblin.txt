@@ -9,3 +9,4 @@ subtype=Goblin,Warrior
 cost={R}
 pt=1/1
 timing=main
+oracle=Crazed Goblin attacks each turn if able.

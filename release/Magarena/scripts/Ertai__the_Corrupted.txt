@@ -9,3 +9,4 @@ cost={2}{W}{U}{B}
 pt=3/4
 ability={U}, {T}, Sacrifice a creature or enchantment: Counter target spell.
 timing=main
+oracle={U}, {T}, Sacrifice a creature or enchantment: Counter target spell.

@@ -8,3 +8,4 @@ subtype=Rat
 cost={1}{B}
 timing=main
 requires_groovy_code
+oracle=Swarm of Rats's power is equal to the number of Rats you control.

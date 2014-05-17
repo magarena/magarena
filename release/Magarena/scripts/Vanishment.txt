@@ -9,3 +9,4 @@ cost={4}{U}
 effect=Put target nonland permanent on top of its owner's library.
 ability=miracle {U}
 timing=removal
+oracle=Put target nonland permanent on top of its owner's library. Miracle {U}

@@ -10,3 +10,4 @@ pt=2/1
 ability=flying
 timing=fmain
 requires_groovy_code
+oracle=Flying. When Liliana's Specter enters the battlefield, each opponent discards a card.

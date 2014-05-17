@@ -9,3 +9,4 @@ cost={5}{G}{G}
 pt=7/7
 timing=main
 requires_groovy_code
+oracle=Whenever Engulfing Slagwurm blocks or becomes blocked by a creature, destroy that creature. You gain life equal to that creature's toughness.

@@ -10,3 +10,4 @@ pt=1/1
 ability=double strike;\
         {B}{G}, {Once}: SN gets +1/+1 until end of turn.
 timing=main
+oracle=Double strike. {B}{G}: Viashino Slaughtermaster gets +1/+1 until end of turn. Activate this ability only once each turn.

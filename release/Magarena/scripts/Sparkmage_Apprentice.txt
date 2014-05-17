@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/1
 ability=When SN enters the battlefield, SN deals 1 damage to target creature or player.
 timing=main
+oracle=When Sparkmage Apprentice enters the battlefield, it deals 1 damage to target creature or player.

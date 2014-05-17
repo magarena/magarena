@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{G}
 effect=Destroy target enchantment or land.
 timing=main
+oracle=Destroy target enchantment or land.

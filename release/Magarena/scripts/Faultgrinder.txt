@@ -11,3 +11,4 @@ ability=trample;\
         When SN enters the battlefield, destroy target land.;\
         evoke {4}{R}
 timing=main
+oracle=Trample. When Faultgrinder enters the battlefield, destroy target land. Evoke {4}{R}

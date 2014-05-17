@@ -9,3 +9,4 @@ subtype=Lizard,Beast
 cost={3}{R}
 pt=2/1
 timing=main
+oracle=Double strike

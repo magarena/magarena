@@ -10,3 +10,4 @@ pt=3/3
 ability=Haste;\
         Scavenge {3}{B}{G}
 timing=fmain
+oracle=Haste. Scavenge {3}{B}{G}

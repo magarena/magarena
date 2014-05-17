@@ -1,9 +1,0 @@
-name=Deja Vu
-url=http://magiccards.info/query?q=%21deja%20vu
-image=http://mtgimage.com/card/deja%20vu.jpg
-value=3.034
-rarity=C
-cost={2}{U}
-type=sorcery
-effect=Return target sorcery card from your graveyard to your hand.
-timing=main

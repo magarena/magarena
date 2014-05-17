@@ -8,3 +8,4 @@ subtype=Treefolk
 cost={2}{G}
 timing=main
 requires_groovy_code
+oracle=Treefolk Seedlings's toughness is equal to the number of Forests you control.

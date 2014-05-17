@@ -9,3 +9,4 @@ subtype=Beast
 cost={2}{G}
 pt=2/3
 timing=main
+oracle=Infect

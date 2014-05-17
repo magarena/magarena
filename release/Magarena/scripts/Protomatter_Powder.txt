@@ -7,3 +7,4 @@ type=Artifact
 cost={2}{U}
 ability={4}{W},{T},Sacrifice SN:Return target artifact card from your graveyard to the battlefield.
 timing=artifact
+oracle={4}{W}, {T}, Sacrifice Protomatter Powder: Return target artifact card from your graveyard to the battlefield.

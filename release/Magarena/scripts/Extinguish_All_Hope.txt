@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}{B}
 effect=Destroy all nonenchantment creatures.
 timing=main
+oracle=Destroy all nonenchantment creatures.

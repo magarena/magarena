@@ -9,3 +9,4 @@ cost={1}{G}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle={R}{G}{W}: Cylian Sunsinger and each other creature with the same name as it get +3/+3 until end of turn.

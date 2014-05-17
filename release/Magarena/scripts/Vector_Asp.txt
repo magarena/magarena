@@ -9,3 +9,4 @@ cost={1}
 ability={B}: SN gains infect until end of turn.
 pt=1/1
 timing=main
+oracle={B}: Vector Asp gains infect until end of turn.

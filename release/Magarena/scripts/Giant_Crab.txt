@@ -9,3 +9,4 @@ cost={4}{U}
 pt=3/3
 ability={U}: SN gains shroud until end of turn.
 timing=main
+oracle={U}: Giant Crab gains shroud until end of turn.

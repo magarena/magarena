@@ -9,3 +9,4 @@ subtype=Spirit
 cost={W}
 pt=1/1
 timing=main
+oracle=Flying

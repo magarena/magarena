@@ -9,3 +9,4 @@ cost={2}{R}
 pt=1/1
 ability=At the beginning of your upkeep, you may have SN deal 1 damage to target player.
 timing=main
+oracle=At the beginning of your upkeep, you may have Kyren Sniper deal 1 damage to target player.

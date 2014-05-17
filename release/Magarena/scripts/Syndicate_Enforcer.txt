@@ -9,3 +9,4 @@ cost={3}{B}
 pt=3/2
 ability=extort
 timing=main
+oracle=Extort

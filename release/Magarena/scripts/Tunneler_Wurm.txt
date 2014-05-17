@@ -10,3 +10,4 @@ pt=6/6
 ability=trample;\
         Discard a card: Regenerate SN.
 timing=main
+oracle=Discard a card: Regenerate Tunneler Wurm.

@@ -9,3 +9,4 @@ cost={4}{W}{W}
 pt=1/1
 ability=When SN enters the battlefield, put a 4/4 white Angel creature token with flying onto the battlefield.
 timing=main
+oracle=When Urbis Protector enters the battlefield, put a 4/4 white Angel creature token with flying onto the battlefield.

@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 ability=Sacrifice SN: Exile target card from a graveyard.
 timing=main
+oracle=Sacrifice Crypt Creeper: Exile target card from a graveyard.

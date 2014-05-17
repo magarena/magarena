@@ -9,3 +9,4 @@ cost={6}
 pt=3/4
 ability={2},Sacrifice SN:Target player draws a card.
 timing=artifact
+oracle={2}, Sacrifice Limestone Golem: Target player draws a card.

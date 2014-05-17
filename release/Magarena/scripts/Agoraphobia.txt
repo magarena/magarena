@@ -10,3 +10,4 @@ ability=Enchanted creature gets -5/-0.;\
         {2}{U}:Return SN to its owner's hand.
 timing=aura
 enchant=weaken -5/-0,neg creature
+oracle=Enchant creature. Enchanted creature gets -5/-0. {2}{U}: Return Agoraphobia to its owner's hand.

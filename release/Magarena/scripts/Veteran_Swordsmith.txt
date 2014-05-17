@@ -10,3 +10,4 @@ pt=3/2
 ability=other soldier creatures you control get +1/+0
 static=player
 timing=main
+oracle=Other Soldier creatures you control get +1/+0.

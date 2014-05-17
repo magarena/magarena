@@ -9,3 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=Whenever SN or another Ally enters the battlefield under your control, you may have Ally creatures you control gain first strike until end of turn.
 timing=main
+oracle=Whenever Highland Berserker or another Ally enters the battlefield under your control, you may have Ally creatures you control gain first strike until end of turn.

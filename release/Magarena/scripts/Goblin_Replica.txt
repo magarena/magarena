@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability={3}{R},Sacrifice SN:Destroy target artifact.
 timing=artifact
+oracle={3}{R}, Sacrifice Goblin Replica: Destroy target artifact.

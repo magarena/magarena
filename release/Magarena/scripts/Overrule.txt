@@ -7,3 +7,4 @@ type=Instant
 cost={X}{W}{U}
 timing=counter
 requires_groovy_code
+oracle=Counter target spell unless its controller pays {X}. You gain X life.

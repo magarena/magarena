@@ -7,3 +7,4 @@ type=Sorcery
 cost={R}
 effect=Creatures you control gain haste until end of turn.
 timing=fmain
+oracle=Creatures you control gain haste until end of turn.

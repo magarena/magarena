@@ -7,3 +7,4 @@ type=Land
 ability={T}: Add {1} to your mana pool.;\
         {T},Sacrifice SN:Return target land card from your graveyard to your hand.
 timing=land
+oracle={T}: Add {1} to your mana pool. {T}, Sacrifice Petrified Field: Return target land card from your graveyard to your hand.

@@ -11,3 +11,4 @@ ability=vanishing 2;\
         When SN enters the battlefield, SN deals 1 damage to target player.;\
         When SN leaves the battlefield, SN deals 1 damage to target player.
 timing=main
+oracle=Vanishing 2. When Keldon Marauders enters the battlefield or leaves the battlefield, it deals 1 damage to target player.

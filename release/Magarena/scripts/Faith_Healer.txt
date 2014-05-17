@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle=Sacrifice an enchantment: You gain life equal to the sacrificed enchantment's converted mana cost.

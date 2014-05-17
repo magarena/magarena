@@ -8,3 +8,4 @@ type=Sorcery
 cost={R}
 timing=removal
 requires_groovy_code
+oracle=Goblin War Strike deals damage equal to the number of Goblins you control to target player.

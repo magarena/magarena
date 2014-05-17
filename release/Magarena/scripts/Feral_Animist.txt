@@ -9,3 +9,4 @@ cost={1}{R}{G}
 pt=2/1
 timing=main
 requires_groovy_code
+oracle={3}: Feral Animist gets +X/+0 until end of turn, where X is its power.

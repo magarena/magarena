@@ -9,3 +9,4 @@ subtype=Elf,Barbarian
 cost={R}{G}
 pt=2/2
 timing=main
+oracle=Protection from blue

@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability={T}, {Sorcery}: You may put a land card from your hand onto the battlefield.
 timing=main
+oracle={T}: You may put a land card from your hand onto the battlefield. Activate this ability only any time you could cast a sorcery.

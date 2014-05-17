@@ -10,3 +10,4 @@ pt=3/3
 ability=Protection from red;\
         SN gets +1/+1 as long as an opponent controls a white permanent.
 timing=main
+oracle=Protection from red. Beasts of Bogardan gets +1/+1 as long as an opponent controls a white permanent.

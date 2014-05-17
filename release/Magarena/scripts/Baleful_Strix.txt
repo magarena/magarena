@@ -11,3 +11,4 @@ ability=flying;\
         deathtouch;\
         When SN enters the battlefield, draw a card.
 timing=main
+oracle=Flying, deathtouch. When Baleful Strix enters the battlefield, draw a card.

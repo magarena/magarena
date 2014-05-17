@@ -9,3 +9,4 @@ cost={2}
 pt=2/1
 ability={U}: SN gains flying until end of turn.
 timing=main
+oracle={U}: Gust-Skimmer gains flying until end of turn.

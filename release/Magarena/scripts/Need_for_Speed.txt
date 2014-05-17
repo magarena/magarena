@@ -7,3 +7,4 @@ type=Enchantment
 cost={R}
 ability=Sacrifice a land:Target creature gains haste until end of turn.
 timing=enchantment
+oracle=Sacrifice a land: Target creature gains haste until end of turn.

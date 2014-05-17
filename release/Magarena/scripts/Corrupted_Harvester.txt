@@ -9,3 +9,4 @@ cost={4}{B}{B}
 pt=6/3
 ability={B}, Sacrifice a creature: Regenerate SN.
 timing=main
+oracle={B}, Sacrifice a creature: Regenerate Corrupted Harvester.

@@ -9,3 +9,4 @@ cost={3}{G}
 pt=3/3
 ability=When SN enters the battlefield, put a 1/1 green Elf Warrior creature token onto the battlefield.
 timing=main
+oracle=When Ambassador Oak enters the battlefield, put a 1/1 green Elf Warrior creature token onto the battlefield.

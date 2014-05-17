@@ -9,3 +9,4 @@ cost={4}{U}
 pt=3/2
 ability=SN can't be blocked.
 timing=main
+oracle=Covert Operative can't be blocked.

@@ -8,3 +8,4 @@ cost={U}
 effect=Target creature gets -3/-0 until end of turn.
 ability=Transmute {1}{U}{U}
 timing=removal
+oracle=Target creature gets -3/-0 until end of turn. Transmute {1}{U}{U}

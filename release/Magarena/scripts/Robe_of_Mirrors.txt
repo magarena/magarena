@@ -9,3 +9,4 @@ cost={U}
 ability=Enchanted creature has shroud.
 timing=aura
 enchant=shroud,pos creature
+oracle=Enchant creature. Enchanted creature has shroud.

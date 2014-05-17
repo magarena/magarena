@@ -10,3 +10,4 @@ pt=2/2
 ability=all sliver creatures have shroud
 static=all
 timing=main
+oracle=All Slivers have shroud.

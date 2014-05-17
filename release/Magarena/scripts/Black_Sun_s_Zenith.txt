@@ -8,3 +8,4 @@ type=Sorcery
 cost={X}{B}{B}
 timing=removal
 requires_groovy_code
+oracle=Put X -1/-1 counters on each creature. Shuffle Black Sun's Zenith into its owner's library.

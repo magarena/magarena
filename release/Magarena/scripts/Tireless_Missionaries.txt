@@ -9,3 +9,4 @@ cost={4}{W}
 pt=2/3
 ability=When SN enters the battlefield, you gain 3 life.
 timing=main
+oracle=When Tireless Missionaries enters the battlefield, you gain 3 life.

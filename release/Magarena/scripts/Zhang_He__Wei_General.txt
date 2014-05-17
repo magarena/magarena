@@ -10,3 +10,4 @@ pt=4/2
 ability=horsemanship
 timing=main
 requires_groovy_code
+oracle=Horsemanship. Whenever Zhang He, Wei General attacks, each other creature you control gets +1/+0 until end of turn.

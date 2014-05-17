@@ -8,3 +8,4 @@ type=Instant
 cost={2}{B}{R}
 timing=removal
 effect=Destroy target creature or land.
+oracle=Destroy target creature or land.

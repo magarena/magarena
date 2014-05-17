@@ -10,3 +10,4 @@ cost={1}{W}
 pt=2/2
 ability=When SN enters the battlefield, you may destroy target enchantment.
 timing=main
+oracle=When War Priest of Thune enters the battlefield, you may destroy target enchantment.

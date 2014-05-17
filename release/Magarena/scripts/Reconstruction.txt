@@ -7,3 +7,4 @@ type=Sorcery
 cost={U}
 effect=Return target artifact card from your graveyard to your hand.
 timing=main
+oracle=Return target artifact card from your graveyard to your hand.

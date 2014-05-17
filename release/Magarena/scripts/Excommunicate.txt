@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{W}
 effect=Put target creature on top of its owner's library.
 timing=main
+oracle=Put target creature on top of its owner's library.

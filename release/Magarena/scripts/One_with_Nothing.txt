@@ -7,3 +7,4 @@ type=Instant
 cost={B}
 timing=removal
 requires_groovy_code
+oracle=Discard your hand.

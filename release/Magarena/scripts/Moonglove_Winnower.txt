@@ -9,3 +9,4 @@ subtype=Elf,Rogue
 cost={3}{B}
 pt=2/3
 timing=main
+oracle=Deathtouch

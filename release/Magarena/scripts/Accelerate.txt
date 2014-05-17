@@ -7,3 +7,4 @@ type=Instant
 cost={1}{R}
 timing=pump
 requires_groovy_code
+oracle=Target creature gains haste until end of turn. Draw a card.

@@ -10,3 +10,4 @@ ability=alt cost {3}{P/R}, Pay 2 life named Pay 2 life;\
         alt cost {3}, Pay 4 life named Pay 4 life
 timing=main
 requires_groovy_code
+oracle=Gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.

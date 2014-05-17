@@ -9,3 +9,4 @@ subtype=Island
 mana=u4
 ability={T}: Add {U} to your mana pool.
 timing=land
+oracle=U

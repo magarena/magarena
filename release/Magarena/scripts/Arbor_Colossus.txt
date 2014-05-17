@@ -10,3 +10,4 @@ pt=6/6
 ability=reach;monstrosity 3 {3}{G}{G}{G}
 timing=main
 requires_groovy_code
+oracle=Reach. {3}{G}{G}{G}: Monstrosity 3.. When Arbor Colossus becomes monstrous, destroy target creature with flying an opponent controls.

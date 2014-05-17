@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/1
 ability={YourUpkeep},{U}{U},{T}:Target creature gains shroud until end of turn.
 timing=main
+oracle={U}{U}, {T}: Target creature gains shroud until end of turn. Activate this ability only during your upkeep.

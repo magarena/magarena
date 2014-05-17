@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{R}{R}
 ability={1}{R}, Sacrifice SN: SN deals 3 damage to each tapped creature and each player.
 timing=enchantment
+oracle={1}{R}, Sacrifice Blockbuster: Blockbuster deals 3 damage to each tapped creature and each player.

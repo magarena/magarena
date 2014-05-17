@@ -11,3 +11,4 @@ ability=Bestow {4}{W};\
         vigilance;\
         Enchanted creature gets +2/+2 and has vigilance.
 timing=main
+oracle=Bestow {4}{W}. Vigilance. Enchanted creature gets +2/+2 and has vigilance.

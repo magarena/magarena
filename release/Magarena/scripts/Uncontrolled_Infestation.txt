@@ -10,3 +10,4 @@ cost={1}{R}
 timing=removal
 enchant=destroy,neg nonbasic land
 requires_groovy_code=Brink of Disaster
+oracle=Enchant nonbasic land. When enchanted land becomes tapped, destroy it.

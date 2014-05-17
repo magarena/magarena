@@ -9,3 +9,4 @@ cost={2}{B/R}{B/R}
 pt=3/3
 ability=SN can't be blocked by white creatures.
 timing=main
+oracle=Sootwalkers can't be blocked by white creatures.

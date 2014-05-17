@@ -9,3 +9,4 @@ cost={2}{B}{B}
 timing=smain
 ability={B}: Regenerate SN.
 requires_groovy_code
+oracle=Mortivore's power and toughness are each equal to the number of creature cards in all graveyards. {B}: Regenerate Mortivore.

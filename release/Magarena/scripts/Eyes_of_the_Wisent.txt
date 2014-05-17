@@ -8,3 +8,4 @@ subtype=Elemental
 cost={1}{G}
 ability=Whenever an opponent casts a blue spell during your turn, you may put a 4/4 green Elemental creature token onto the battlefield.
 timing=main
+oracle=Whenever an opponent casts a blue spell during your turn, you may put a 4/4 green Elemental creature token onto the battlefield.

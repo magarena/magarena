@@ -9,3 +9,4 @@ cost={1}{U}
 pt=2/1
 ability={3}{U}: Draw a card.
 timing=main
+oracle={3}{U}: Draw a card.

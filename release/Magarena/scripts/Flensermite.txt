@@ -9,3 +9,4 @@ subtype=Gremlin
 cost={1}{B}
 pt=1/1
 timing=main
+oracle=Infect. Lifelink

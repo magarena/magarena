@@ -10,3 +10,4 @@ ability=Flash;\
         Enchanted creature has shroud.
 timing=pumpFlash
 enchant=shroud,pos creature
+oracle=Flash. Enchant creature. Enchanted creature has shroud.

@@ -9,3 +9,4 @@ cost={1}{W}
 timing=aura
 enchant=can't attack,neg creature
 requires_groovy_code
+oracle=Enchant creature. Prevent all damage that would be dealt by enchanted creature.

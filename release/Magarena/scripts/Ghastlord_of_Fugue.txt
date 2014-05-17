@@ -10,3 +10,4 @@ pt=4/4
 ability=SN can't be blocked.
 timing=main
 requires_groovy_code
+oracle=Ghastlord of Fugue can't be blocked. Whenever Ghastlord of Fugue deals combat damage to a player, that player reveals his or her hand. You choose a card from it. That player exiles that card.

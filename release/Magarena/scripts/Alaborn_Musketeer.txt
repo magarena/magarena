@@ -9,3 +9,4 @@ subtype=Human,Soldier
 cost={1}{W}
 pt=2/1
 timing=main
+oracle=Reach

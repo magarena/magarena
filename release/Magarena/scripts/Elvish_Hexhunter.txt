@@ -9,3 +9,4 @@ cost={G/W}
 pt=1/1
 ability={G/W}, {T}, Sacrifice SN: Destroy target enchantment.
 timing=main
+oracle={G/W}, {T}, Sacrifice Elvish Hexhunter: Destroy target enchantment.

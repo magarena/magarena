@@ -9,3 +9,4 @@ ability=first strike;haste
 cost={6}{R}
 pt=6/2
 timing=main
+oracle=First strike, haste

@@ -7,3 +7,4 @@ type=Instant
 cost={W}{W}
 effect=Blocking creatures get +1/+1 until end of turn.
 timing=block
+oracle=Blocking creatures get +1/+1 until end of turn.

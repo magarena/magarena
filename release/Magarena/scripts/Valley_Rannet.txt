@@ -9,3 +9,4 @@ cost={4}{R}{G}
 pt=6/3
 ability=Mountaincycling {2};Forestcycling {2}
 timing=main
+oracle=Mountaincycling {2}, forestcycling {2}

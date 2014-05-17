@@ -10,3 +10,4 @@ ability=creatures you control get +1/+1;\
 static=player
 timing=main
 requires_groovy_code
+oracle=Creatures you control get +1/+1 and have flying and indestructible. At the beginning of your upkeep, sacrifice a creature. If you can't, sacrifice Eldrazi Monument.

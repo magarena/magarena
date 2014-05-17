@@ -9,3 +9,4 @@ cost={2}{B}{B}
 pt=2/2
 ability=When SN enters the battlefield, target opponent loses 2 life and you gain 2 life.
 timing=main
+oracle=When Dakmor Ghoul enters the battlefield, target opponent loses 2 life and you gain 2 life.

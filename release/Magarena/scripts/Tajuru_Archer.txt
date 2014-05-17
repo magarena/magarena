@@ -9,3 +9,4 @@ cost={2}{G}
 pt=1/2
 timing=main
 requires_groovy_code
+oracle=Whenever Tajuru Archer or another Ally enters the battlefield under your control, you may have Tajuru Archer deal damage to target creature with flying equal to the number of Allies you control.

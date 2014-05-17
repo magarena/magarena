@@ -9,3 +9,4 @@ cost={W}{W}
 pt=1/1
 ability={1}{W},{T}:Destroy target black creature.
 timing=main
+oracle={1}{W}, {T}: Destroy target black creature.

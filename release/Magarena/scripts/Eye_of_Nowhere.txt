@@ -8,3 +8,4 @@ subtype=Arcane
 cost={U}{U}
 effect=Return target permanent to its owner's hand.
 timing=removal
+oracle=Return target permanent to its owner's hand.

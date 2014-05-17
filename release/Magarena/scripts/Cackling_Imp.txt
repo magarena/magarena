@@ -10,3 +10,4 @@ pt=2/2
 ability=flying;\
         {T}: Target player loses 1 life.
 timing=main
+oracle=Flying. {T}: Target player loses 1 life.

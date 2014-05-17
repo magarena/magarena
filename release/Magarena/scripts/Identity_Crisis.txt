@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{W}{W}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Exile all cards from target player's hand and graveyard.

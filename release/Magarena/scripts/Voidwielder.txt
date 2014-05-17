@@ -9,3 +9,4 @@ cost={4}{U}
 pt=1/4
 ability=When SN enters the battlefield, you may return target creature to its owner's hand.
 timing=main
+oracle=When Voidwielder enters the battlefield, you may return target creature to its owner's hand.

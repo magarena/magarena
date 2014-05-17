@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/2
 ability={U}:Target player puts the top two cards of his or her library into his or her graveyard.
 timing=main
+oracle={U}, {T}: Target player puts the top two cards of his or her library into his or her graveyard.

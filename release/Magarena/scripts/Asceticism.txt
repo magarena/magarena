@@ -9,3 +9,4 @@ ability=creatures you control have hexproof;\
         {1}{G}: Regenerate target creature.
 static=player
 timing=enchantment
+oracle=Creatures you control have hexproof.. {1}{G}: Regenerate target creature.

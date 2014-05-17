@@ -9,3 +9,4 @@ subtype=Barbarian,Zombie
 cost={B}{R}
 pt=2/2
 timing=main
+oracle=Protection from white

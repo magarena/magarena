@@ -8,3 +8,4 @@ cost={R}
 effect=Destroy target artifact you don't control.
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact you don't control. Overload {4}{R}

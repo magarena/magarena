@@ -7,3 +7,4 @@ type=Instant
 cost={W/B}
 timing=removal
 requires_groovy_code
+oracle=Exile target card from a graveyard. Put a 1/1 white and black Spirit creature token with flying onto the battlefield.

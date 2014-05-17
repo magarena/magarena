@@ -7,3 +7,4 @@ type=Sorcery
 cost={R}
 effect=SN deals 1 damage to each creature without flying.
 timing=main
+oracle=Tremor deals 1 damage to each creature without flying.

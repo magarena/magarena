@@ -7,3 +7,4 @@ type=Artifact
 cost={3}
 timing=artifact
 requires_groovy_code
+oracle={T}: Nine-Ringed Bo deals 1 damage to target Spirit creature. If that creature would die this turn, exile it instead.

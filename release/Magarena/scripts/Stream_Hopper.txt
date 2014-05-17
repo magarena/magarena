@@ -9,3 +9,4 @@ cost={U/R}
 pt=1/1
 ability={U/R}: SN gains flying until end of turn.
 timing=main
+oracle={U/R}: Stream Hopper gains flying until end of turn.

@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle={G}, {T}, Discard a card: Prevent all combat damage that would be dealt this turn.

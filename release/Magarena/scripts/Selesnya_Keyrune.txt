@@ -9,3 +9,4 @@ ability={T}: Add {G} or {W} to your mana pool.
 timing=artifact
 mana_or_combat
 requires_groovy_code
+oracle={T}: Add {G} or {W} to your mana pool. {G}{W}: Selesnya Keyrune becomes a 3/3 green and white Wolf artifact creature until end of turn.

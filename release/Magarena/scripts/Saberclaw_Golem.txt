@@ -9,3 +9,4 @@ cost={5}
 pt=4/2
 ability={R}: SN gains first strike until end of turn.
 timing=main
+oracle={R}: Saberclaw Golem gains first strike until end of turn.

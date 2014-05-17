@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G}
 timing=pump
 requires_groovy_code
+oracle=Target creature gains deathtouch until end of turn.. Draw a card.

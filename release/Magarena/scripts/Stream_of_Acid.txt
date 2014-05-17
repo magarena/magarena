@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{B}{B}
 effect=Destroy target land or nonblack creature.
 timing=main
+oracle=Destroy target land or nonblack creature.

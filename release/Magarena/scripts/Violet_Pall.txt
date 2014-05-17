@@ -9,3 +9,4 @@ cost={4}{B}
 timing=removal
 removal=3
 requires_groovy_code
+oracle=Destroy target nonblack creature. Put a 1/1 black Faerie Rogue creature token with flying onto the battlefield.

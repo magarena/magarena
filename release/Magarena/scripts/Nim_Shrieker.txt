@@ -10,3 +10,4 @@ pt=0/1
 ability=flying
 timing=main
 requires_groovy_code=Nim Grotesque
+oracle=Flying. Nim Shrieker gets +1/+0 for each artifact you control.

@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 effect=SN deals 1 damage to each attacking creature.
 timing=block
+oracle=Sandstorm deals 1 damage to each attacking creature.

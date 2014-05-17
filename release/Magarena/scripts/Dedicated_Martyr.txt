@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability={W},Sacrifice SN: You gain 3 life.
 timing=main
+oracle={W}, Sacrifice Dedicated Martyr: You gain 3 life.

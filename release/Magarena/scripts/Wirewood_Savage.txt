@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 ability=Whenever a Beast enters the battlefield, you may draw a card.
 timing=main
+oracle=Whenever a Beast enters the battlefield, you may draw a card.

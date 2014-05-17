@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{B}
 timing=enchantment
 requires_groovy_code
+oracle=At the beginning of your upkeep, target opponent discards a card if you control the creature with the greatest power or tied for the greatest power.

@@ -9,3 +9,4 @@ cost={2}{R}
 pt=3/2
 timing=main
 requires_groovy_code=Jackal Pup
+oracle=Whenever Shinka Gatekeeper is dealt damage, it deals that much damage to you.

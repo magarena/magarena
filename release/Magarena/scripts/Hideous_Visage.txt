@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{B}
 effect=Creatures you control gain intimidate until end of turn.
 timing=pump
+oracle=Creatures you control gain intimidate until end of turn.

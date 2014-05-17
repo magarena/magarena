@@ -8,3 +8,4 @@ subtype=Kavu
 cost={2}{R}{G}
 timing=main
 requires_groovy_code
+oracle=Yavimaya Kavu's power is equal to the number of red creatures on the battlefield. Yavimaya Kavu's toughness is equal to the number of green creatures on the battlefield.

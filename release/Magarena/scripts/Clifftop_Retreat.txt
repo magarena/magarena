@@ -8,3 +8,4 @@ mana=r3w3
 ability={T}: Add {R} or {W} to your mana pool.;\
         SN enters the battlefield tapped unless you control a Mountain or a Plains.
 timing=land
+oracle=Clifftop Retreat enters the battlefield tapped unless you control a Mountain or a Plains. {T}: Add {R} or {W} to your mana pool.

@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability=Whenever a player casts an artifact spell, you may gain 1 life.
 timing=artifact
+oracle=Whenever a player casts an artifact spell, you may gain 1 life.

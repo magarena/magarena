@@ -10,3 +10,4 @@ pt=2/3
 ability=bushido 1;\
         Whenever a Samurai you control dies, you may put a +1/+1 counter on SN.
 timing=fmain
+oracle=Bushido 1. Whenever a Samurai you control dies, you may put a +1/+1 counter on Indebted Samurai.

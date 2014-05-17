@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature dies, that creature's controller may draw a card.

@@ -9,3 +9,4 @@ cost={4}{W}{W}
 pt=4/7
 ability=vigilance
 timing=main
+oracle=Vigilance

@@ -10,3 +10,4 @@ pt=8/8
 ability=fear;\
         Whenever a player casts a spell, sacrifice a creature.
 timing=main
+oracle=Fear. Whenever a player casts a spell, sacrifice a creature.

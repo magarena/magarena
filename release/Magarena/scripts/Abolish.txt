@@ -8,3 +8,4 @@ cost={1}{W}{W}
 ability=You may discard a Plains card rather than pay SN's mana cost.
 effect=Destroy target artifact or enchantment.
 timing=removal
+oracle=You may discard a Plains card rather than pay Abolish's mana cost. Destroy target artifact or enchantment.

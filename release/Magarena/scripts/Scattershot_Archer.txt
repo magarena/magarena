@@ -9,3 +9,4 @@ cost={G}
 pt=1/2
 ability={T}: SN deals 1 damage to each creature with flying.
 timing=smain
+oracle={T}: Scattershot Archer deals 1 damage to each creature with flying.

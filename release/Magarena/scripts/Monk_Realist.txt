@@ -10,3 +10,4 @@ cost={1}{W}
 pt=1/1
 ability=When SN enters the battlefield, destroy target enchantment.
 timing=main
+oracle=When Monk Realist enters the battlefield, destroy target enchantment.

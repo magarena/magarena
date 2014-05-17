@@ -10,3 +10,4 @@ ability=flying;\
         Whenever SN deals combat damage to a player, draw a card.
 timing=main
 requires_groovy_code=Maro
+oracle=Flying. Sturmgeist's power and toughness are each equal to the number of cards in your hand. Whenever Sturmgeist deals combat damage to a player, draw a card.

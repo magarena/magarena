@@ -9,3 +9,4 @@ cost={4}{W}
 pt=3/3
 timing=fmain
 requires_groovy_code
+oracle=If a source would deal damage to a Cleric creature you control, prevent 1 of that damage.

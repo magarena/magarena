@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle={X}{W}, {T}: Ballista Squad deals X damage to target attacking or blocking creature.

@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability=SN has deathtouch as long as you control a green permanent.
 timing=main
+oracle=Toxic Iguanar has deathtouch as long as you control a green permanent.

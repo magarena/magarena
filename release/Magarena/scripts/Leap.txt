@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 timing=pump
 requires_groovy_code=Cloak of Feathers
+oracle=Target creature gains flying until end of turn. Draw a card.

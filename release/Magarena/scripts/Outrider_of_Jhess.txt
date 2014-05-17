@@ -9,3 +9,4 @@ subtype=Human,Knight
 cost={3}{U}
 pt=2/2
 timing=main
+oracle=Exalted

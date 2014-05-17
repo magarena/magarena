@@ -9,3 +9,4 @@ cost={5}{U}
 pt=4/5
 ability=hexproof
 timing=main
+oracle=Hexproof

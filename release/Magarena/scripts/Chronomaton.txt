@@ -9,3 +9,4 @@ cost={1}
 pt=1/1
 ability={1}, {T}: Put a +1/+1 counter on SN.
 timing=main
+oracle={1}, {T}: Put a +1/+1 counter on Chronomaton.

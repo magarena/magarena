@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/2
 ability=When SN enters the battlefield, draw a card, then discard a card.
 timing=main
+oracle=When Vodalian Merchant enters the battlefield, draw a card, then discard a card.

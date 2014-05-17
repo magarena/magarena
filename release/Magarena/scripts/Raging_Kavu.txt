@@ -10,3 +10,4 @@ subtype=Kavu
 cost={1}{R}{G}
 pt=3/1
 timing=fmain
+oracle=Flash. Haste

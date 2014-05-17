@@ -1,9 +1,0 @@
-name=AEther Flash
-url=http://magiccards.info/query?q=%21aether%20flash
-image=http://mtgimage.com/card/aether%20flash.jpg
-value=4.282
-rarity=U
-type=Enchantment
-cost={2}{R}{R}
-timing=enchantment
-requires_groovy_code

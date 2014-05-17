@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}{B}
 timing=main
 requires_groovy_code=Dark_Offering
+oracle=Destroy target nonblack creature. You gain 3 life.

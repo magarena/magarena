@@ -9,3 +9,4 @@ cost={R}
 ability=Enchanted creature has vigilance.
 timing=aura
 enchant=default,pos creature
+oracle=Enchant creature. Enchanted creature has vigilance.

@@ -9,3 +9,4 @@ cost={W}
 pt=1/1
 ability={1}{W}{W}: Target creature gets +1/+1 until end of turn.
 timing=main
+oracle={1}{W}{W}: Target creature gets +1/+1 until end of turn.

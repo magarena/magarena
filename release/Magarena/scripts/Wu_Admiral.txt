@@ -9,3 +9,4 @@ cost={4}{U}
 pt=3/3
 ability=SN gets +1/+1 as long as an opponent controls an Island.
 timing=main
+oracle=Wu Admiral gets +1/+1 as long as an opponent controls an Island.

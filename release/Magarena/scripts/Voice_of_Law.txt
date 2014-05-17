@@ -9,3 +9,4 @@ cost={3}{W}
 pt=2/2
 ability=protection from red;flying
 timing=main
+oracle=Flying, protection from red

@@ -7,3 +7,4 @@ type=Instant
 cost={X}{G}
 timing=removal
 requires_groovy_code
+oracle=Windstorm deals X damage to each creature with flying.

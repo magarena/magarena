@@ -9,3 +9,4 @@ cost={B}{B}
 pt=2/1
 ability=intimidate
 timing=main
+oracle=Intimidate

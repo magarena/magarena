@@ -9,3 +9,4 @@ cost={2}{G}{G}
 pt=5/5
 ability=shroud;fading 3
 timing=main
+oracle=Shroud. Fading 3

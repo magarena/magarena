@@ -7,3 +7,4 @@ type=Legendary,Enchantment
 cost={4}{U}{U}{U}
 timing=main
 requires_groovy_code
+oracle=All creatures get -X/-0, where X is the number of cards in your hand.

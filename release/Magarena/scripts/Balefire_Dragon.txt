@@ -10,3 +10,4 @@ pt=6/6
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. Whenever Balefire Dragon deals combat damage to a player, it deals that much damage to each creature that player controls.

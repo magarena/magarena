@@ -9,3 +9,4 @@ cost={3}
 pt=2/2
 ability={T}:Target Assembly-Worker gets +1/+1 until end of turn.
 timing=main
+oracle={T}: Target Assembly-Worker creature gets +1/+1 until end of turn.

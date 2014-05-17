@@ -9,3 +9,4 @@ cost={1}{W}{W}
 pt=2/2
 ability=Whenever SN attacks, attacking creatures gain first strike until end of turn.
 timing=main
+oracle=Whenever Chieftain en-Dal attacks, attacking creatures gain first strike until end of turn.

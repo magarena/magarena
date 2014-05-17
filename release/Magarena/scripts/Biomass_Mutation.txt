@@ -7,3 +7,4 @@ type=Instant
 cost={X}{G/U}{G/U}
 timing=pump
 requires_groovy_code
+oracle=Creatures you control become X/X until end of turn.

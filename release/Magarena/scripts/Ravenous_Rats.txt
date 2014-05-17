@@ -9,3 +9,4 @@ cost={1}{B}
 pt=1/1
 ability=When SN enters the battlefield, target opponent discards a card.
 timing=main
+oracle=When Ravenous Rats enters the battlefield, target opponent discards a card.

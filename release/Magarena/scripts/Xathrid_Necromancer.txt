@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=Whenever SN or another Human creature you control dies, put a 2/2 black Zombie creature token onto the battlefield tapped.
 timing=main
+oracle=Whenever Xathrid Necromancer or another Human creature you control dies, put a 2/2 black Zombie creature token onto the battlefield tapped.

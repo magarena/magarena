@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 ability={T}: SN deals 4 damage to target attacking creature with flying.
 timing=main
+oracle={T}: Femeref Archers deals 4 damage to target attacking creature with flying.

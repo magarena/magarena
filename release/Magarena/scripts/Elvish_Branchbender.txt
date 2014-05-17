@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle={T}: Until end of turn, target Forest becomes an X/X Treefolk creature in addition to its other types, where X is the number of Elves you control.

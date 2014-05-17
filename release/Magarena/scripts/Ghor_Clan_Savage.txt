@@ -9,3 +9,4 @@ cost={3}{G}{G}
 pt=2/3
 ability=bloodthirst 3
 timing=main
+oracle=Bloodthirst 3

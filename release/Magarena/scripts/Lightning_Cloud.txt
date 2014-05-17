@@ -7,3 +7,4 @@ type=Enchantment
 cost={3}{R}
 ability=Whenever a player casts a red spell, you may pay {R}. If you do, SN deals 1 damage to target creature or player.
 timing=enchantment
+oracle=Whenever a player casts a red spell, you may pay {R}. If you do, Lightning Cloud deals 1 damage to target creature or player.

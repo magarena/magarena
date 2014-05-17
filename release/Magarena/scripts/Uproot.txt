@@ -8,3 +8,4 @@ subtype=Arcane
 cost={3}{G}
 effect=Put target land on top of its owner's library.
 timing=main
+oracle=Put target land on top of its owner's library.

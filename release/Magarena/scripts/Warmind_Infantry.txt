@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/3
 ability=Whenever SN and at least two other creatures attack, SN gets +2/+0 until end of turn.
 timing=main
+oracle=Battalion ? Whenever Warmind Infantry and at least two other creatures attack, Warmind Infantry gets +2/+0 until end of turn.

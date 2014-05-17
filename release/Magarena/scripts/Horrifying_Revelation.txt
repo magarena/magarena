@@ -7,3 +7,4 @@ type=Sorcery
 cost={B}
 timing=main
 requires_groovy_code
+oracle=Target player discards a card, then puts the top card of his or her library into his or her graveyard.

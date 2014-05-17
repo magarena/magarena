@@ -8,3 +8,4 @@ type=Sorcery
 cost={X}{B}{B}{G}
 timing=main
 requires_groovy_code
+oracle=Destroy each nonland permanent with converted mana cost X or less.

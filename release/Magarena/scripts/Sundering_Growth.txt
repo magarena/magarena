@@ -7,3 +7,4 @@ type=Instant
 cost={G/W}{G/W}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact or enchantment, then populate.

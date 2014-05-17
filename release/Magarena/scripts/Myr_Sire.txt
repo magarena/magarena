@@ -9,3 +9,4 @@ cost={2}
 pt=1/1
 ability=When SN dies, put a 1/1 colorless Myr artifact creature token onto the battlefield.
 timing=main
+oracle=When Myr Sire dies, put a 1/1 colorless Myr artifact creature token onto the battlefield.

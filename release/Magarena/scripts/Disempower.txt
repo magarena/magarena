@@ -7,3 +7,4 @@ type=Instant
 cost={1}{W}
 effect=Put target artifact or enchantment on top of its owner's library.
 timing=removal
+oracle=Put target artifact or enchantment on top of its owner's library.

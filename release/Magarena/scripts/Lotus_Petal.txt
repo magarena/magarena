@@ -7,3 +7,4 @@ type=Artifact
 cost={0}
 ability={T}, Sacrifice SN: Add one mana of any color to your mana pool.
 timing=artifact
+oracle={T}, Sacrifice Lotus Petal: Add one mana of any color to your mana pool.

@@ -9,3 +9,4 @@ cost={4}
 pt=3/3
 ability=When SN enters the battlefield, you gain 3 life.
 timing=main
+oracle=When Peace Strider enters the battlefield, you gain 3 life.

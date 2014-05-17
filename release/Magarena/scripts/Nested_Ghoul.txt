@@ -9,3 +9,4 @@ cost={3}{B}{B}
 pt=4/2
 timing=main
 requires_groovy_code
+oracle=Whenever a source deals damage to Nested Ghoul, put a 2/2 black Zombie creature token onto the battlefield.

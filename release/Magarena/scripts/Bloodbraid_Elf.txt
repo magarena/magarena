@@ -9,3 +9,4 @@ cost={2}{R}{G}
 pt=3/2
 ability=haste;cascade
 timing=main
+oracle=Haste. Cascade

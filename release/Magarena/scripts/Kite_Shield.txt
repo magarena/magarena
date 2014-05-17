@@ -9,3 +9,4 @@ cost={0}
 ability=Equipped creature gets +0/+3.;\
         Equip {3}
 timing=equipment
+oracle=Equipped creature gets +0/+3. Equip {3}

@@ -9,3 +9,4 @@ cost={W}
 pt=0/1
 ability={T}:Tap target Spirit.
 timing=main
+oracle={T}: Tap target Spirit.

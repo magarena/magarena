@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/1
 ability={U}: Return SN to its owner's hand.
 timing=main
+oracle={U}: Return Darting Merfolk to its owner's hand.

@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability=Whenever you cast a spell that targets SN, put a 1/1 red Soldier creature token with haste onto the battlefield.
 timing=main
+oracle=Heroic ? Whenever you cast a spell that targets Akroan Crusader, put a 1/1 red Soldier creature token with haste onto the battlefield.

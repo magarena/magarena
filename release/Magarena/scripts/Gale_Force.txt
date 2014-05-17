@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{G}
 effect=SN deals 5 damage to each creature with flying.
 timing=main
+oracle=Gale Force deals 5 damage to each creature with flying.

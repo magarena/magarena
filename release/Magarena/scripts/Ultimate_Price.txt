@@ -8,3 +8,4 @@ type=Instant
 cost={1}{B}
 timing=removal
 effect=Destroy target monocolored creature.
+oracle=Destroy target monocolored creature.

@@ -7,3 +7,4 @@ type=Instant
 cost={2}{G}
 timing=tapping
 requires_groovy_code
+oracle=Untap target creature. It gets +2/+4 and gains reach until end of turn.

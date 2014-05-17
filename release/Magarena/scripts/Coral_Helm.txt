@@ -7,3 +7,4 @@ type=Artifact
 cost={3}
 ability={3},Discard a card at random:Target creature gets +2/+2 until end of turn.
 timing=artifact
+oracle={3}, Discard a card at random: Target creature gets +2/+2 until end of turn.

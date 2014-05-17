@@ -10,3 +10,4 @@ pt=2/2
 static=all
 timing=main
 requires_groovy_code
+oracle=All Slivers are colorless.

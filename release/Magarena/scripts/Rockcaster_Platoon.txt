@@ -9,3 +9,4 @@ cost={5}{W}{W}
 pt=5/7
 ability={4}{G}: SN deals 2 damage to each creature with flying and each player.
 timing=main
+oracle={4}{G}: Rockcaster Platoon deals 2 damage to each creature with flying and each player.

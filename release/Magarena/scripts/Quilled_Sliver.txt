@@ -10,3 +10,4 @@ pt=1/1
 ability=all slivers have "{T}: SN deals 1 damage to target attacking or blocking creature."
 static=all
 timing=main
+oracle=All Slivers have "{T}: This permanent deals 1 damage to target attacking or blocking creature."

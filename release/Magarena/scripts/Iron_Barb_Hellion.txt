@@ -9,3 +9,4 @@ subtype=Hellion,Beast
 cost={5}{R}
 pt=5/4
 timing=fmain
+oracle=Haste. Iron-Barb Hellion can't block.

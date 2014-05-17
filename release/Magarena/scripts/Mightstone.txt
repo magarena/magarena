@@ -7,3 +7,4 @@ type=Artifact
 cost={4}
 ability=attacking creatures get +1/+0
 timing=artifact
+oracle=Attacking creatures get +1/+0.

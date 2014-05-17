@@ -9,3 +9,4 @@ cost={3}{R}{R}{G}
 pt=4/6
 ability=rampage 1
 timing=main
+oracle=Rampage 1

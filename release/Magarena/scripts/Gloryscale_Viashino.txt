@@ -9,3 +9,4 @@ cost={1}{R}{G}{W}
 pt=3/3
 ability=Whenever you cast a multicolored spell, SN gets +3/+3 until end of turn.
 timing=main
+oracle=Whenever you cast a multicolored spell, Gloryscale Viashino gets +3/+3 until end of turn.

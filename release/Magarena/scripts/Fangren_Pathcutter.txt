@@ -9,3 +9,4 @@ cost={4}{G}{G}
 pt=4/6
 ability=Whenever SN attacks, attacking creatures gain trample until end of turn.
 timing=main
+oracle=Whenever Fangren Pathcutter attacks, attacking creatures gain trample until end of turn.

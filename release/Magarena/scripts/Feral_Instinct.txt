@@ -7,3 +7,4 @@ type=Instant
 cost={1}{G}
 timing=pump
 requires_groovy_code
+oracle=Target creature gets +1/+1 until end of turn. Draw a card at the beginning of the next turn's upkeep.

@@ -7,3 +7,4 @@ type=Enchantment
 cost={B}
 ability={B}, Discard a creature card: Return target creature card from your graveyard to your hand.
 timing=enchantment
+oracle={B}, Discard a creature card: Return target creature card from your graveyard to your hand.

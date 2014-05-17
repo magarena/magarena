@@ -8,3 +8,4 @@ type=Instant
 cost={1}{U}
 timing=removal
 requires_groovy_code
+oracle=Target creature loses all abilities and becomes a 1/1 blue Frog until end of turn.

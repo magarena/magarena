@@ -9,3 +9,4 @@ subtype=Rhino
 cost={4}{G}
 pt=4/4
 timing=main
+oracle=Trample

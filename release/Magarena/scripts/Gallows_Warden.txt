@@ -10,3 +10,4 @@ pt=3/3
 ability=flying;other spirit creatures you control get +0/+1
 static=player
 timing=main
+oracle=Flying. Other Spirit creatures you control get +0/+1.

@@ -7,3 +7,4 @@ type=Legendary,Enchantment
 cost={3}{W}
 ability=legendary creatures you control get +2/+2
 timing=main
+oracle=Legendary creatures you control get +2/+2.

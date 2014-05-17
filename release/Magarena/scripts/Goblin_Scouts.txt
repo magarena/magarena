@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{R}{R}
 effect=Put three 1/1 red Goblin Scout creature tokens with mountainwalk onto the battlefield.
 timing=main
+oracle=Put three 1/1 red Goblin Scout creature tokens with mountainwalk onto the battlefield.

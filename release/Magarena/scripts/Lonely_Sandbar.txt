@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
     {T}: Add {U} to your mana pool.;\
     cycling {U}
 timing=tapland
+oracle=Lonely Sandbar enters the battlefield tapped. {T}: Add {U} to your mana pool. Cycling {U}

@@ -7,3 +7,4 @@ type=Enchantment
 cost={G}
 ability={G}{G}:Tap target creature with flying.
 timing=enchantment
+oracle={G}{G}: Tap target creature with flying.

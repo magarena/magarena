@@ -7,3 +7,4 @@ type=Instant
 cost={W}
 effect=Return target artifact or enchantment card from your graveyard to your hand.
 timing=removal
+oracle=Return target artifact or enchantment card from your graveyard to your hand.

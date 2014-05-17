@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability=Sacrifice a land,{Once}:SN gets +2/+0 and gains first strike until end of turn.
 timing=main
+oracle=Sacrifice a land: Fault Riders gets +2/+0 and gains first strike until end of turn. Activate this ability only once each turn.

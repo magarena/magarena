@@ -12,3 +12,4 @@ ability=haste;\
         echo {3}{R};\
         When SN enters the battlefield, destroy target land.
 timing=main
+oracle=Haste. Echo {3}{R}. When Avalanche Riders enters the battlefield, destroy target land.

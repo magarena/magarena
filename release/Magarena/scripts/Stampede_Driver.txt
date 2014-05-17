@@ -9,3 +9,4 @@ cost={G}
 pt=1/1
 ability={1}{G}, {T}, Discard a card: Creatures you control get +1/+1 and gain trample until end of turn.
 timing=main
+oracle={1}{G}, {T}, Discard a card: Creatures you control get +1/+1 and gain trample until end of turn.

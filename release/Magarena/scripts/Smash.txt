@@ -8,3 +8,4 @@ type=Instant
 cost={2}{R}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact. Draw a card.

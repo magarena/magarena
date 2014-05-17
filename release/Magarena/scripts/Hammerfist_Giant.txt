@@ -9,3 +9,4 @@ cost={4}{R}{R}
 pt=5/4
 ability={T}: SN deals 4 damage to each creature without flying and each player.
 timing=main
+oracle={T}: Hammerfist Giant deals 4 damage to each creature without flying and each player.

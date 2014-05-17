@@ -9,3 +9,4 @@ cost={2}{G}
 pt=2/2
 timing=fmain
 requires_groovy_code
+oracle=Yavimaya Enchantress gets +1/+1 for each enchantment on the battlefield.

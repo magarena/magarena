@@ -9,3 +9,4 @@ subtype=Arcane
 cost={2}{R}{R}
 timing=main
 effect=Destroy target artifact or land.
+oracle=Destroy target artifact or land.

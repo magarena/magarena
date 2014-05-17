@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{G}
 ability=Return SN to its owner's hand: Regenerate target creature.
 timing=enchantment
+oracle=Return Broken Fall to its owner's hand: Regenerate target creature.

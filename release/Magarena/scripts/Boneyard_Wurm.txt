@@ -8,3 +8,4 @@ subtype=Wurm
 cost={1}{G}
 timing=main
 requires_groovy_code
+oracle=Boneyard Wurm's power and toughness are each equal to the number of creature cards in your graveyard.

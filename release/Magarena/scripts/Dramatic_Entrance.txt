@@ -7,3 +7,4 @@ type=Instant
 cost={3}{G}{G}
 effect=You may put a green creature card from your hand onto the battlefield.
 timing=token
+oracle=You may put a green creature card from your hand onto the battlefield.

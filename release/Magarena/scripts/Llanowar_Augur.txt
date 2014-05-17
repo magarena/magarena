@@ -9,3 +9,4 @@ cost={G}
 pt=0/3
 ability={YourUpkeep}, Sacrifice SN: Target creature gets +3/+3 and gains trample until end of turn.
 timing=main
+oracle=Sacrifice Llanowar Augur: Target creature gets +3/+3 and gains trample until end of turn. Activate this ability only during your upkeep.

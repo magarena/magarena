@@ -8,3 +8,4 @@ cost={U}
 effect=Target creature you don't control gets -4/-0 until end of turn.
 timing=removal
 requires_groovy_code
+oracle=Target creature you don't control gets -4/-0 until end of turn. Overload {2}{U}

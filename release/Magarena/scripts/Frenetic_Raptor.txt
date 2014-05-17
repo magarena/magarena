@@ -10,3 +10,4 @@ pt=6/6
 ability=beast creatures have "SN can't block."
 static=all
 timing=main
+oracle=Beasts can't block.

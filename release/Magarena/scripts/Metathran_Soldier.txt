@@ -9,3 +9,4 @@ cost={1}{U}
 pt=1/1
 ability=SN can't be blocked.
 timing=main
+oracle=Metathran Soldier can't be blocked.

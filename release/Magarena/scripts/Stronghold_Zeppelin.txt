@@ -9,3 +9,4 @@ cost={2}{U}{U}
 pt=3/3
 ability=SN can block only creatures with flying.;flying
 timing=main
+oracle=Flying. Stronghold Zeppelin can block only creatures with flying.

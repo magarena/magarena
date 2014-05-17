@@ -10,3 +10,4 @@ pt=5/4
 ability=green creatures you control have trample
 static=player
 timing=main
+oracle=Green creatures you control have trample.

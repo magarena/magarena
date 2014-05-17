@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/2
 timing=main
 requires_groovy_code
+oracle=Whenever Tangle Asp blocks or becomes blocked by a creature, destroy that creature at end of combat.

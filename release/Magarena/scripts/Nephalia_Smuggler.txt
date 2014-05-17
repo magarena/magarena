@@ -9,3 +9,4 @@ cost={U}
 pt=1/1
 timing=main
 requires_groovy_code
+oracle={3}{U}, {T}: Exile another target creature you control, then return that card to the battlefield under your control.

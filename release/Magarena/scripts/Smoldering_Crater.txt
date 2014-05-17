@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.;\
         cycling {2}
 timing=tapland
+oracle=Smoldering Crater enters the battlefield tapped. {T}: Add {R} to your mana pool. Cycling {2}

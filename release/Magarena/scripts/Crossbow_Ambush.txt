@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 effect=Creatures you control gain reach until end of turn.
 timing=block
+oracle=Creatures you control gain reach until end of turn.

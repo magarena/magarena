@@ -8,3 +8,4 @@ cost={5}{G}{G}
 ability=storm
 effect=Put a 4/4 green Beast creature token onto the battlefield.
 timing=storm
+oracle=Put a 4/4 green Beast creature token onto the battlefield. Storm

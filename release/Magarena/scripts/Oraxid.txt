@@ -9,3 +9,4 @@ cost={3}{U}
 pt=2/3
 ability=protection from red
 timing=main
+oracle=Protection from red

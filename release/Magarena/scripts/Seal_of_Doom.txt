@@ -8,3 +8,4 @@ type=Enchantment
 cost={2}{B}
 ability=Sacrifice SN: Destroy target nonblack creature. It can't be regenerated.
 timing=enchantment
+oracle=Sacrifice Seal of Doom: Destroy target nonblack creature. It can't be regenerated.

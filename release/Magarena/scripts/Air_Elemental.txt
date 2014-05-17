@@ -9,3 +9,4 @@ subtype=Elemental
 cost={3}{U}{U}
 pt=4/4
 timing=main
+oracle=Flying

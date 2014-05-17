@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability={3}, {T}: Target creature gains first strike until end of turn.
 timing=artifact
+oracle={3}, {T}: Target creature gains first strike until end of turn.

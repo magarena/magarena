@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=2/2
 timing=fmain
 requires_groovy_code
+oracle={G}: Regenerate another target Elf. {2}{G}{G}{G}: Elf creatures you control get +3/+3 and gain trample until end of turn.

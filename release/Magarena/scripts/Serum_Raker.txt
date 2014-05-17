@@ -10,3 +10,4 @@ pt=3/2
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. When Serum Raker dies, each player discards a card.

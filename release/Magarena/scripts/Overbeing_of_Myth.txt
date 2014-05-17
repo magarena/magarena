@@ -8,3 +8,4 @@ subtype=Spirit,Avatar
 cost={G/U}{G/U}{G/U}{G/U}{G/U}
 timing=main
 requires_groovy_code=Maro;Overbeing of Myth
+oracle=Overbeing of Myth's power and toughness are each equal to the number of cards in your hand. At the beginning of your draw step, draw an additional card.

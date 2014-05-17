@@ -7,3 +7,4 @@ type=Instant
 cost={X}{W}{U}{U}
 timing=main
 requires_groovy_code
+oracle=You gain X life and draw X cards.

@@ -9,3 +9,4 @@ cost={1}{G}
 pt=1/1
 ability=Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
 timing=main
+oracle=Whenever Oran-Rief Survivalist or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Oran-Rief Survivalist.

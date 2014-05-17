@@ -10,3 +10,4 @@ pt=1/1
 ability=infect;\
         {T}: Add {1} to your mana pool.
 timing=main
+oracle=Infect. {T}: Add {1} to your mana pool.

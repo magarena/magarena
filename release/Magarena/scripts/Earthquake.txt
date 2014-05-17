@@ -8,3 +8,4 @@ type=Sorcery
 cost={X}{R}
 timing=removal
 requires_groovy_code
+oracle=Earthquake deals X damage to each creature without flying and each player.

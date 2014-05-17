@@ -8,3 +8,4 @@ type=Sorcery
 cost={2}{W}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact or enchantment. You gain 4 life.

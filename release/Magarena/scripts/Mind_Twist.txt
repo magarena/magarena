@@ -7,3 +7,4 @@ type=Sorcery
 cost={X}{B}
 timing=main
 requires_groovy_code=Mind Shatter
+oracle=Target player discards X cards at random.

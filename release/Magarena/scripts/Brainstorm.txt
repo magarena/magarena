@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 timing=draw
 requires_groovy_code
+oracle=Draw three cards, then put two cards from your hand on top of your library in any order.

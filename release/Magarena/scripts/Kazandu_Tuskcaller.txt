@@ -10,3 +10,4 @@ pt=1/1
 ability=level up {1}{G} 6
 timing=main
 requires_groovy_code
+oracle=Level up {1}{G}. LEVEL 2-5. 1/1. {T}: Put a 3/3 green Elephant creature token onto the battlefield. LEVEL 6+. 1/1. {T}: Put two 3/3 green Elephant creature tokens onto the battlefield.

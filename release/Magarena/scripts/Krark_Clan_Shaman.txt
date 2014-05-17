@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability=Sacrifice an artifact: SN deals 1 damage to each creature without flying.
 timing=main
+oracle=Sacrifice an artifact: Krark-Clan Shaman deals 1 damage to each creature without flying.

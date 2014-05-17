@@ -9,3 +9,4 @@ cost={2}{W}{W}
 pt=2/4
 ability={6}, {T}: Search your library for a Rebel permanent card with converted mana cost 5 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
+oracle={6}, {T}: Search your library for a Rebel permanent card with converted mana cost 5 or less and put it onto the battlefield. Then shuffle your library.

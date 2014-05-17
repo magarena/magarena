@@ -10,3 +10,4 @@ pt=3/3
 ability=Monstrosity 1 {3}{G}{W};\
         As long as SN is monstrous, it has hexproof and indestructible.
 timing=main
+oracle={3}{G}{W}: Monstrosity 1.. As long as Fleecemane Lion is monstrous, it has hexproof and indestructible.

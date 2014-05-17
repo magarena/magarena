@@ -9,3 +9,4 @@ cost={B/R}
 ability=Enchanted creature gets +2/-1.
 timing=aura
 enchant=pump,creature
+oracle=Enchant creature. Enchanted creature gets +2/-1.

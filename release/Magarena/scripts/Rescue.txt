@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Return target permanent you control to its owner's hand.
 timing=removal
+oracle=Return target permanent you control to its owner's hand.

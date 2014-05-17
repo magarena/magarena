@@ -10,3 +10,4 @@ pt=2/2
 ability=SN gets +1/+1 as long as you control a Plains.;\
         {W}: Regenerate SN.
 timing=main
+oracle=Hedge Troll gets +1/+1 as long as you control a Plains. {W}: Regenerate Hedge Troll.

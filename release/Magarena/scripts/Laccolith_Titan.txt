@@ -9,3 +9,4 @@ cost={5}{R}{R}
 pt=6/6
 timing=main
 requires_groovy_code=Laccolith Whelp
+oracle=Whenever Laccolith Titan becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Titan assigns no combat damage this turn.

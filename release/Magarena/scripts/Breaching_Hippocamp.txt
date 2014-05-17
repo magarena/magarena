@@ -10,3 +10,4 @@ pt=3/2
 ability=flash
 timing=flash
 requires_groovy_code
+oracle=Flash. When Breaching Hippocamp enters the battlefield, untap another target creature you control.

@@ -9,3 +9,4 @@ cost={4}{G/U}{G/U}
 pt=4/2
 ability=flash
 timing=main
+oracle=Flash

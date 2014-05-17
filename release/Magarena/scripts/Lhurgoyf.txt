@@ -8,3 +8,4 @@ subtype=Lhurgoyf
 cost={2}{G}{G}
 timing=smain
 requires_groovy_code
+oracle=Lhurgoyf's power is equal to the number of creature cards in all graveyards and its toughness is equal to that number plus 1.

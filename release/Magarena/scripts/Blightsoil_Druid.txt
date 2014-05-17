@@ -10,3 +10,4 @@ pt=1/2
 mana=g2
 ability={T}, Pay 1 life: Add {G} to your mana pool.
 timing=main
+oracle={T}, Pay 1 life: Add {G} to your mana pool.

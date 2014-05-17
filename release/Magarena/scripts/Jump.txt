@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 effect=Target creature gains flying until end of turn.
 timing=pump
+oracle=Target creature gains flying until end of turn.

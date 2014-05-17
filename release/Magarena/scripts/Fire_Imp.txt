@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/1
 ability=When SN enters the battlefield, SN deals 2 damage to target creature.
 timing=main
+oracle=When Fire Imp enters the battlefield, it deals 2 damage to target creature.

@@ -8,3 +8,4 @@ type=Instant
 cost={W}
 timing=removal
 requires_groovy_code
+oracle=Exile target creature. Its controller gains life equal to its power.

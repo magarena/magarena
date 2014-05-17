@@ -9,3 +9,4 @@ cost={2}{G}{G}{G}
 pt=5/4
 ability=vigilance;trample;undying
 timing=main
+oracle=Vigilance, trample. Undying

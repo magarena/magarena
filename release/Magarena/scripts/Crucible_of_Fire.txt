@@ -8,3 +8,4 @@ cost={3}{R}
 ability=dragon creatures you control get +3/+3
 static=player
 timing=enchantment
+oracle=Dragon creatures you control get +3/+3.

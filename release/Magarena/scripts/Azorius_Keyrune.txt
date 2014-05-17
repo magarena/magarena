@@ -9,3 +9,4 @@ ability={T}: Add {W} or {U} to your mana pool.
 timing=artifact
 mana_or_combat
 requires_groovy_code
+oracle={T}: Add {W} or {U} to your mana pool. {W}{U}: Azorius Keyrune becomes a 2/2 white and blue Bird artifact creature with flying until end of turn.

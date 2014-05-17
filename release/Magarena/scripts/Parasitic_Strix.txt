@@ -10,3 +10,4 @@ pt=2/2
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. When Parasitic Strix enters the battlefield, if you control a black permanent, target player loses 2 life and you gain 2 life.

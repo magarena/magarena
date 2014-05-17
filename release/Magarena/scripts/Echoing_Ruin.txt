@@ -8,3 +8,4 @@ type=Sorcery
 cost={1}{R}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact and all other artifacts with the same name as that artifact.

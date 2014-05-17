@@ -9,3 +9,4 @@ cost={4}{U}
 pt=3/3
 ability=SN can't be blocked as long as defending player controls an enchantment.
 timing=main
+oracle=Bubbling Beebles can't be blocked as long as defending player controls an enchantment.

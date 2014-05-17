@@ -10,3 +10,4 @@ ability=Enchanted creature gets +1/+2.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,pos creature
+oracle=Enchant creature. Enchanted creature gets +1/+2. When Brilliant Halo is put into a graveyard from the battlefield, return Brilliant Halo to its owner's hand.

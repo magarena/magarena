@@ -9,3 +9,4 @@ cost={G/U}{G/U}{G/U}
 ability=When SN enters the battlefield, draw a card.
 pt=2/2
 timing=main
+oracle=When Wistful Selkie enters the battlefield, draw a card.

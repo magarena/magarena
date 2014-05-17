@@ -9,3 +9,4 @@ cost={B}
 pt=2/2
 timing=main
 ability=SN enters the battlefield tapped.
+oracle=Diregraf Ghoul enters the battlefield tapped.

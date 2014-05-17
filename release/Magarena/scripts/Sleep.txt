@@ -8,3 +8,4 @@ type=Sorcery
 cost={2}{U}{U}
 timing=removal
 requires_groovy_code
+oracle=Tap all creatures target player controls. Those creatures don't untap during that player's next untap step.

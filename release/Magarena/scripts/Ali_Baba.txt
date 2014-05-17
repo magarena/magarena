@@ -9,3 +9,4 @@ cost={R}
 pt=1/1
 ability={R}:Tap target Wall.
 timing=main
+oracle={R}: Tap target Wall.

@@ -10,3 +10,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.
 mana_or_combat
 requires_groovy_code
+oracle=Treetop Village enters the battlefield tapped. {T}: Add {G} to your mana pool. {1}{G}: Treetop Village becomes a 3/3 green Ape creature with trample until end of turn. It's still a land.

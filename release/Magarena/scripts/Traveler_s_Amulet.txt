@@ -7,3 +7,4 @@ type=Artifact
 cost={1}
 ability={1},Sacrifice SN:Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=artifact
+oracle={1}, Sacrifice Traveler's Amulet: Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.

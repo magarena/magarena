@@ -10,3 +10,4 @@ pt=1/1
 static=all
 timing=main
 requires_groovy_code
+oracle=All Sliver creatures have frenzy 1.

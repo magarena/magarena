@@ -9,3 +9,4 @@ cost={G}
 pt=0/0
 ability=graft 1
 timing=main
+oracle=Graft 1

@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}
 timing=main
 requires_groovy_code
+oracle=Target opponent loses 3 life. Cipher

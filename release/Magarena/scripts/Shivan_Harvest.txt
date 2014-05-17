@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{R}
 ability={1}{R},Sacrifice a creature:Destroy target nonbasic land.
 timing=enchantment
+oracle={1}{R}, Sacrifice a creature: Destroy target nonbasic land.

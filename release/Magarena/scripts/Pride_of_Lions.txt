@@ -9,3 +9,4 @@ cost={3}{G}{G}
 pt=4/4
 timing=main
 requires_groovy_code=Rhox
+oracle=You may have Pride of Lions assign its combat damage as though it weren't blocked.

@@ -10,3 +10,4 @@ cost={2}{B}{B}
 pt=3/3
 ability=When SN enters the battlefield, put three -1/-1 counters on target creature.
 timing=main
+oracle=When Skinrender enters the battlefield, put three -1/-1 counters on target creature.

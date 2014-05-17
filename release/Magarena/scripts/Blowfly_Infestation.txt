@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{B}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature dies, if it had a -1/-1 counter on it, put a -1/-1 counter on target creature.

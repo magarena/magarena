@@ -9,3 +9,4 @@ subtype=Angel
 cost={4}{W}
 pt=3/3
 timing=main
+oracle=Flying, first strike, vigilance

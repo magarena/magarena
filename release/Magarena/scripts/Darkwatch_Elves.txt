@@ -9,3 +9,4 @@ cost={2}{G}
 timing=main
 pt=2/2
 ability=cycling {2};protection from black
+oracle=Protection from black. Cycling {2}

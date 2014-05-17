@@ -10,3 +10,4 @@ pt=2/2
 static=player
 timing=fmain
 requires_groovy_code
+oracle=Other Kor creatures you control get +2/+2 for each Equipment attached to Armament Master.

@@ -9,3 +9,4 @@ subtype=Basilisk
 cost={3}{G}{G}
 pt=3/5
 timing=main
+oracle=Deathtouch

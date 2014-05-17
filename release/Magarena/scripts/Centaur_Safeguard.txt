@@ -9,3 +9,4 @@ cost={2}{G/W}
 pt=3/1
 ability=When SN dies, you may gain 3 life.
 timing=main
+oracle=When Centaur Safeguard dies, you may gain 3 life.

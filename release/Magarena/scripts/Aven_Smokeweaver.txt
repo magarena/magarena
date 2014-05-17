@@ -9,3 +9,4 @@ subtype=Bird,Soldier
 cost={2}{U}{U}
 pt=2/3
 timing=main
+oracle=Flying, protection from red

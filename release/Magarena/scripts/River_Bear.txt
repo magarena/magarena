@@ -9,3 +9,4 @@ subtype=Bear
 cost={3}{G}
 pt=3/3
 timing=main
+oracle=Islandwalk

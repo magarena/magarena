@@ -9,3 +9,4 @@ cost={3}{R}
 pt=1/1
 ability={2}{R},{T},Discard a card:Destroy target land.
 timing=main
+oracle={2}{R}, {T}, Discard a card: Destroy target land.

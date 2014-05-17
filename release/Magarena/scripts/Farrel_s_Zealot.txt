@@ -9,3 +9,4 @@ cost={1}{W}{W}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Whenever Farrel's Zealot attacks and isn't blocked, you may have it deal 3 damage to target creature. If you do, Farrel's Zealot assigns no combat damage this turn.

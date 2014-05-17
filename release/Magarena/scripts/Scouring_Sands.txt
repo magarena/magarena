@@ -7,3 +7,4 @@ type=Sorcery
 cost={1}{R}
 timing=main
 requires_groovy_code
+oracle=Scouring Sands deals 1 damage to each creature your opponents control. Scry 1.

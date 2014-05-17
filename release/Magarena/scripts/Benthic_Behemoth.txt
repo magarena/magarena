@@ -9,3 +9,4 @@ subtype=Serpent
 cost={5}{U}{U}{U}
 pt=7/6
 timing=main
+oracle=Islandwalk

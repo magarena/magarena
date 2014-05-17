@@ -11,3 +11,4 @@ ability=Flash;\
         Flying;deathtouch;\
         Monstrosity 3 {5}{G}{U}
 timing=flash
+oracle=Flash. Flying, deathtouch. {5}{G}{U}: Monstrosity 3.

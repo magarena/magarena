@@ -7,3 +7,4 @@ type=Instant
 cost={1}{G}
 effect=Destroy all Auras.
 timing=removal
+oracle=Destroy all Auras.

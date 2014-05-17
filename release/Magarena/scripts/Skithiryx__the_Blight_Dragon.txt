@@ -11,3 +11,4 @@ ability=flying;infect;\
         {B}: SN gains haste until end of turn.;\
         {B}{B}: Regenerate SN.
 timing=fmain
+oracle=Flying. Infect. {B}: Skithiryx, the Blight Dragon gains haste until end of turn. {B}{B}: Regenerate Skithiryx.

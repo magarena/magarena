@@ -7,3 +7,4 @@ type=Instant
 cost={2}{U}
 timing=removal
 requires_groovy_code
+oracle=Return target permanent to its owner's hand. If that permanent is red or green, put it on top of its owner's library instead.

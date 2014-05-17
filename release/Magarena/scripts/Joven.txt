@@ -9,3 +9,4 @@ cost={3}{R}{R}
 pt=3/3
 ability={R}{R}{R},{T}:Destroy target noncreature artifact.
 timing=main
+oracle={R}{R}{R}, {T}: Destroy target noncreature artifact.

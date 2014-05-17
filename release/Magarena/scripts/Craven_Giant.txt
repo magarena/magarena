@@ -9,3 +9,4 @@ cost={2}{R}
 pt=4/1
 ability=SN can't block.
 timing=main
+oracle=Craven Giant can't block.

@@ -9,3 +9,4 @@ cost={U}{U}
 pt=1/2
 ability=When SN enters the battlefield, return target artifact or enchantment to its owner's hand.
 timing=main
+oracle=When Stern Proctor enters the battlefield, return target artifact or enchantment to its owner's hand.

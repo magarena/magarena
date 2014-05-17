@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/2
 ability={W}, {T}: Exile target Skeleton, Vampire, or Zombie.
 timing=main
+oracle={W}, {T}: Exile target Skeleton, Vampire, or Zombie.

@@ -9,3 +9,4 @@ cost={1}{B}{B}
 pt=2/2
 timing=main
 requires_groovy_code
+oracle=Relentless Rats gets +1/+1 for each other creature on the battlefield named Relentless Rats. A deck can have any number of cards named Relentless Rats.

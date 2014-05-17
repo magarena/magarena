@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{G}{U}
 timing=main
 requires_groovy_code
+oracle=Draw three cards. You may play an additional land this turn.

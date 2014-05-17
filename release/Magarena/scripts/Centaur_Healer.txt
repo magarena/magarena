@@ -9,3 +9,4 @@ ability=When SN enters the battlefield, you gain 3 life.
 cost={1}{G}{W}
 pt=3/3
 timing=main
+oracle=When Centaur Healer enters the battlefield, you gain 3 life.

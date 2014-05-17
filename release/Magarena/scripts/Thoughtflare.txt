@@ -7,3 +7,4 @@ type=Instant
 cost={3}{U}{R}
 effect=Draw four cards, then discard two cards.
 timing=draw
+oracle=Draw four cards, then discard two cards.

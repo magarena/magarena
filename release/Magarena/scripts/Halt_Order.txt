@@ -7,3 +7,4 @@ type=Instant
 cost={2}{U}
 timing=counter
 requires_groovy_code
+oracle=Counter target artifact spell. Draw a card.

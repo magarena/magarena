@@ -7,3 +7,4 @@ type=Sorcery
 cost={2}{G}{G}
 effect=Return target card from your graveyard to your hand.
 timing=main
+oracle=Return target card from your graveyard to your hand.

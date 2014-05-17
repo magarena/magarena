@@ -9,3 +9,4 @@ cost={3}{G}
 pt=3/3
 ability=Whenever SN becomes untapped, put a +1/+1 counter on SN.
 timing=main
+oracle=Inspired ? Whenever Pheres-Band Tromper becomes untapped, put a +1/+1 counter on it.

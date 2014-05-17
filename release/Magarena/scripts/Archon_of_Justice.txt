@@ -9,3 +9,4 @@ cost={3}{W}{W}
 pt=4/4
 ability=flying;When SN dies, exile target permanent.
 timing=main
+oracle=Flying. When Archon of Justice dies, exile target permanent.

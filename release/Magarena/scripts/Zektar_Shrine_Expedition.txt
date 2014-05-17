@@ -8,3 +8,4 @@ cost={1}{R}
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.
 timing=enchantment
 requires_groovy_code
+oracle=Landfall ? Whenever a land enters the battlefield under your control, you may put a quest counter on Zektar Shrine Expedition. Remove three quest counters from Zektar Shrine Expedition and sacrifice it: Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step.

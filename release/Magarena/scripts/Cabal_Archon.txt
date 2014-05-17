@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability={B}, Sacrifice a Cleric: Target player loses 2 life and you gain 2 life.
 timing=main
+oracle={B}, Sacrifice a Cleric: Target player loses 2 life and you gain 2 life.

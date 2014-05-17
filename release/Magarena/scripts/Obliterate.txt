@@ -8,3 +8,4 @@ cost={6}{R}{R}
 ability=SN can't be countered.
 effect=Destroy all artifacts, creatures, and lands. They can't be regenerated.
 timing=main
+oracle=Obliterate can't be countered. Destroy all artifacts, creatures, and lands. They can't be regenerated.

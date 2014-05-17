@@ -9,3 +9,4 @@ cost={3}{G}
 pt=5/4
 ability=At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.
 timing=main
+oracle=At the beginning of your upkeep, sacrifice Darba unless you pay {G}{G}.

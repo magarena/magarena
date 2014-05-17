@@ -9,3 +9,4 @@ cost={1}{W}
 pt=2/2
 ability=Whenever SN becomes untapped, you gain 2 life.
 timing=main
+oracle=Inspired ? Whenever Oreskos Sun Guide becomes untapped, you gain 2 life.

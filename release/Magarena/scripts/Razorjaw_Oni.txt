@@ -10,3 +10,4 @@ pt=4/5
 ability=black creatures have "SN can't block."
 static=all
 timing=fmain
+oracle=Black creatures can't block.

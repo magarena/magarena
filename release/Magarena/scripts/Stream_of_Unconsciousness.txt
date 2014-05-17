@@ -8,3 +8,4 @@ subtype=Wizard
 cost={U}
 timing=removal
 requires_groovy_code
+oracle=Target creature gets -4/-0 until end of turn. If you control a Wizard, draw a card.

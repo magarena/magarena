@@ -7,3 +7,4 @@ type=Instant
 cost={1}{R}
 timing=block
 requires_groovy_code
+oracle=Target creature can't block this turn. Draw a card.

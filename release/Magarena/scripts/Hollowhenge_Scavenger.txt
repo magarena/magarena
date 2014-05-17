@@ -9,3 +9,4 @@ cost={3}{G}{G}
 pt=4/5
 timing=main
 requires_groovy_code
+oracle=Morbid ? When Hollowhenge Scavenger enters the battlefield, if a creature died this turn, you gain 5 life.

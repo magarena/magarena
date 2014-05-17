@@ -9,3 +9,4 @@ cost={3}{B}
 ability=defender
 timing=main
 requires_groovy_code
+oracle=Defender. Drift of the Dead's power and toughness are each equal to the number of snow lands you control.

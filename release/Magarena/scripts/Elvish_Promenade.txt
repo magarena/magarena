@@ -8,3 +8,4 @@ subtype=Elf
 cost={3}{G}
 timing=main
 requires_groovy_code
+oracle=Put a 1/1 green Elf Warrior creature token onto the battlefield for each Elf you control.

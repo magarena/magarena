@@ -8,3 +8,4 @@ cost={6}
 ability=echo {6};\
         {T}: Draw a card.
 timing=artifact
+oracle=Echo {6}. {T}: Draw a card.

@@ -10,3 +10,4 @@ pt=3/3
 ability=When SN enters the battlefield, put a +1/+1 counter on target creature you don't control.;\
         {2}{B}, {T}: Destroy target creature with a counter on it.
 timing=main
+oracle=When Hunter of Eyeblights enters the battlefield, put a +1/+1 counter on target creature you don't control. {2}{B}, {T}: Destroy target creature with a counter on it.

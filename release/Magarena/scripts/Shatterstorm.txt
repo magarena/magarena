@@ -8,3 +8,4 @@ type=Sorcery
 cost={2}{R}{R}
 effect=Destroy all artifacts. They can't be regenerated.
 timing=removal
+oracle=Destroy all artifacts. They can't be regenerated.

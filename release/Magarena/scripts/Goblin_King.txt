@@ -11,3 +11,4 @@ ability=other goblin creatures get +1/+1;\
         other goblin creatures have mountainwalk
 static=all
 timing=main
+oracle=Other Goblin creatures get +1/+1 and have mountainwalk.

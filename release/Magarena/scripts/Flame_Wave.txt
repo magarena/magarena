@@ -7,3 +7,4 @@ type=Sorcery
 cost={3}{R}{R}{R}{R}
 timing=main
 requires_groovy_code
+oracle=Flame Wave deals 4 damage to target player and each creature he or she controls.

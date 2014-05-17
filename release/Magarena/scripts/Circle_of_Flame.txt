@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{R}
 timing=enchantment
 requires_groovy_code
+oracle=Whenever a creature without flying attacks you or a planeswalker you control, Circle of Flame deals 1 damage to that creature.

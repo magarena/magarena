@@ -10,3 +10,4 @@ pt=3/2
 ability=Flash;\
         Flying
 timing=flash
+oracle=Flash. Flying

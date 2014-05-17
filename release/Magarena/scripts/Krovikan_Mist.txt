@@ -9,3 +9,4 @@ cost={1}{U}
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. Krovikan Mist's power and toughness are each equal to the number of Illusions on the battlefield.

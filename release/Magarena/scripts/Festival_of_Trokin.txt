@@ -7,3 +7,4 @@ type=Sorcery
 cost={W}
 timing=main
 requires_groovy_code
+oracle=You gain 2 life for each creature you control.

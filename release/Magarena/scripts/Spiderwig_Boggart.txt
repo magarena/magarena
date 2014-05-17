@@ -9,3 +9,4 @@ cost={2}{B}
 pt=2/2
 ability=When SN enters the battlefield, target creature gains fear until end of turn.
 timing=main
+oracle=When Spiderwig Boggart enters the battlefield, target creature gains fear until end of turn.

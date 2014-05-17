@@ -9,3 +9,4 @@ cost={B}{R}{G}
 pt=3/3
 ability=When SN dies, put three 1/1 green Saproling creature tokens onto the battlefield.
 timing=main
+oracle=When Sprouting Thrinax dies, put three 1/1 green Saproling creature tokens onto the battlefield.

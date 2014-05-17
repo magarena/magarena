@@ -9,3 +9,4 @@ cost={4}{W}
 pt=2/1
 ability=Whenever you cast a Spirit or Arcane spell, regenerate target creature.
 timing=main
+oracle=Whenever you cast a Spirit or Arcane spell, regenerate target creature.

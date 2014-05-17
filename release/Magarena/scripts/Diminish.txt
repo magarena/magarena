@@ -8,3 +8,4 @@ type=Instant
 cost={U}
 timing=removal
 requires_groovy_code
+oracle=Target creature becomes 1/1 until end of turn.

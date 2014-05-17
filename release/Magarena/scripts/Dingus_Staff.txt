@@ -7,3 +7,4 @@ type=Artifact
 cost={4}
 timing=artifact
 requires_groovy_code
+oracle=Whenever a creature dies, Dingus Staff deals 2 damage to that creature's controller.

@@ -8,3 +8,4 @@ type=Instant
 cost={W}
 timing=removal
 effect=SN deals 2 damage to target attacking or blocking creature.
+oracle=Righteous Blow deals 2 damage to target attacking or blocking creature.

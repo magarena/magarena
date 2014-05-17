@@ -7,3 +7,4 @@ type=Instant
 cost={X}{R}
 timing=removal
 requires_groovy_code
+oracle=Heat Ray deals X damage to target creature.

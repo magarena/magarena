@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability={3},{T}:Untap target creature.
 timing=artifact
+oracle={3}, {T}: Untap target creature.

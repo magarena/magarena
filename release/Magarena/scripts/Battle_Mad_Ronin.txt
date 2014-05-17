@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/1
 ability=SN attacks each turn if able.;bushido 2
 timing=main
+oracle=Bushido 2. Battle-Mad Ronin attacks each turn if able.

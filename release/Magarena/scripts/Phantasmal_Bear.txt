@@ -9,3 +9,4 @@ cost={U}
 pt=2/2
 ability=When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
+oracle=When Phantasmal Bear becomes the target of a spell or ability, sacrifice it.

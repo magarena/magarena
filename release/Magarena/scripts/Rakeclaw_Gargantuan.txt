@@ -9,3 +9,4 @@ cost={2}{R}{G}{W}
 pt=5/3
 ability={1}: Target creature with power 5 or greater gains first strike until end of turn.
 timing=main
+oracle={1}: Target creature with power 5 or greater gains first strike until end of turn.

@@ -9,3 +9,4 @@ cost={2}{B/G}
 pt=2/2
 ability=wither;persist
 timing=smain
+oracle=Wither. Persist

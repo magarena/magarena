@@ -9,3 +9,4 @@ subtype=Zombie,Drake
 cost={2}{U/R}{B}
 pt=3/1
 timing=fmain
+oracle=Flying, haste

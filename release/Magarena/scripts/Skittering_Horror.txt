@@ -9,3 +9,4 @@ cost={2}{B}
 pt=4/3
 ability=When you cast a creature spell, sacrifice SN.
 timing=main
+oracle=When you cast a creature spell, sacrifice Skittering Horror.

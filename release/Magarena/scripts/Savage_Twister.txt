@@ -8,3 +8,4 @@ type=Sorcery
 cost={X}{R}{G}
 timing=removal
 requires_groovy_code
+oracle=Savage Twister deals X damage to each creature.

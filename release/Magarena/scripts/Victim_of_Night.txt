@@ -9,3 +9,4 @@ type=Instant
 cost={B}{B}
 timing=removal
 effect=Destroy target non-Vampire, non-Werewolf, non-Zombie creature.
+oracle=Destroy target non-Vampire, non-Werewolf, non-Zombie creature.

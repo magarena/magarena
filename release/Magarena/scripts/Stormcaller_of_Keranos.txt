@@ -9,3 +9,4 @@ cost={2}{R}
 pt=2/2
 ability=haste;{1}{U}: Scry 1.
 timing=main
+oracle=Haste. {1}{U}: Scry 1.

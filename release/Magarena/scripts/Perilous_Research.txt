@@ -7,3 +7,4 @@ type=Instant
 cost={1}{U}
 timing=draw
 requires_groovy_code
+oracle=Draw two cards, then sacrifice a permanent.

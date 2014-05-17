@@ -10,3 +10,4 @@ pt=5/4
 ability=flying;\
         Whenever SN or another creature you control dies, each opponent sacrifices a creature.
 timing=main
+oracle=Flying. Whenever Butcher of Malakir or another creature you control dies, each opponent sacrifices a creature.

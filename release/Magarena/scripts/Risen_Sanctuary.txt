@@ -9,3 +9,4 @@ ability=vigilance
 cost={5}{G}{W}
 pt=8/8
 timing=main
+oracle=Vigilance

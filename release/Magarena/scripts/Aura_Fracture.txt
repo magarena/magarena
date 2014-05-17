@@ -7,3 +7,4 @@ type=Enchantment
 cost={2}{W}
 ability=Sacrifice a land:Destroy target enchantment.
 timing=enchantment
+oracle=Sacrifice a land: Destroy target enchantment.

@@ -8,3 +8,4 @@ subtype=Arcane
 cost={2}{R}
 effect=Creatures you control get +2/+0 until end of turn.
 timing=pump
+oracle=Creatures you control get +2/+0 until end of turn.

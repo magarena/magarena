@@ -7,3 +7,4 @@ type=Instant
 cost={2}{B}
 effect=Target creature gets +2/+0 and gains fear until end of turn.
 timing=pump
+oracle=Target creature gets +2/+0 and gains fear until end of turn.

@@ -9,3 +9,4 @@ cost={2}
 ability=Equipped creature gets +1/+2 and has hexproof.;\
         Equip {3}
 timing=equipment
+oracle=Equipped creature gets +1/+2 and has hexproof.. Equip {3}

@@ -7,3 +7,4 @@ type=Instant
 cost={G}
 effect=SN deals 3 damage to target creature with flying.
 timing=removal
+oracle=Leaf Arrow deals 3 damage to target creature with flying.

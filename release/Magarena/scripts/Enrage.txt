@@ -7,3 +7,4 @@ type=Instant
 cost={X}{R}
 timing=pump
 requires_groovy_code=Bloodcurdling Scream
+oracle=Target creature gets +X/+0 until end of turn.

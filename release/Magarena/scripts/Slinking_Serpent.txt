@@ -9,3 +9,4 @@ subtype=Serpent
 cost={2}{U}{B}
 pt=2/3
 timing=main
+oracle=Forestwalk

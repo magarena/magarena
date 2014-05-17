@@ -10,3 +10,4 @@ enchant=gain control,creature
 ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=enchantment
 requires_groovy_code=Unhallowed Pact
+oracle=Enchant creature. When enchanted creature dies, return that card to the battlefield under your control. When Fool's Demise is put into a graveyard from the battlefield, return Fool's Demise to its owner's hand.

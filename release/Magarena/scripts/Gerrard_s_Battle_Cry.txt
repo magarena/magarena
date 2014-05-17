@@ -7,3 +7,4 @@ type=Enchantment
 cost={W}
 ability={2}{W}:Creatures you control get +1/+1 until end of turn.
 timing=enchantment
+oracle={2}{W}: Creatures you control get +1/+1 until end of turn.

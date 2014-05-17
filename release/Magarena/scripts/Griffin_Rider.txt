@@ -9,3 +9,4 @@ cost={1}{W}
 pt=1/1
 ability=As long as you control a Griffin creature, SN gets +3/+3 and has flying.
 timing=main
+oracle=As long as you control a Griffin creature, Griffin Rider gets +3/+3 and has flying.

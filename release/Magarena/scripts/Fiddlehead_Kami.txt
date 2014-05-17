@@ -9,3 +9,4 @@ cost={4}{G}
 pt=3/3
 ability=Whenever you cast a Spirit or Arcane spell, regenerate SN.
 timing=main
+oracle=Whenever you cast a Spirit or Arcane spell, regenerate Fiddlehead Kami.

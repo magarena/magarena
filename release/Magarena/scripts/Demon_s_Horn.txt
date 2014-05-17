@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability=Whenever a player casts a black spell, you may gain 1 life.
 timing=fmain
+oracle=Whenever a player casts a black spell, you may gain 1 life.

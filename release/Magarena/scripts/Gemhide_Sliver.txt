@@ -10,3 +10,4 @@ pt=1/1
 ability=all sliver creatures have "{T}: Add one mana of any color to your mana pool."
 static=all
 timing=main
+oracle=All Slivers have "{T}: Add one mana of any color to your mana pool."

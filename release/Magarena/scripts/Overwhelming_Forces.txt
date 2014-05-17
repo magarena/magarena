@@ -7,3 +7,4 @@ type=Sorcery
 cost={6}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Destroy all creatures target opponent controls. Draw a card for each creature destroyed this way.

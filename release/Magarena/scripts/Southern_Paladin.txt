@@ -9,3 +9,4 @@ cost={2}{W}{W}
 pt=3/3
 ability={W}{W},{T}:Destroy target red permanent.
 timing=main
+oracle={W}{W}, {T}: Destroy target red permanent.

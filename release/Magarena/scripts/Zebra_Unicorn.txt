@@ -9,3 +9,4 @@ cost={2}{G}{W}
 pt=2/2
 timing=main
 requires_groovy_code=Mourning Thrull
+oracle=Whenever Zebra Unicorn deals damage, you gain that much life.

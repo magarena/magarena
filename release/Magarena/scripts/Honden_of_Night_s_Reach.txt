@@ -8,3 +8,4 @@ subtype=Shrine
 cost={3}{B}
 timing=main
 requires_groovy_code
+oracle=At the beginning of your upkeep, target opponent discards a card for each Shrine you control.

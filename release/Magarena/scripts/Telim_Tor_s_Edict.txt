@@ -7,3 +7,4 @@ type=Instant
 cost={R}
 timing=removal
 requires_groovy_code
+oracle=Exile target permanent you own or control. Draw a card at the beginning of the next turn's upkeep.

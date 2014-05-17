@@ -7,3 +7,4 @@ type=Artifact
 cost={2}
 ability={1},{T}:SN deals 1 damage to target opponent.
 timing=artifact
+oracle={1}, {T}: Razortip Whip deals 1 damage to target opponent.

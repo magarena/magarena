@@ -8,3 +8,4 @@ subtype=Arcane
 cost={U}
 effect=Draw a card.
 timing=draw
+oracle=Draw a card.

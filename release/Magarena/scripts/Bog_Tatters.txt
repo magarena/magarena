@@ -9,3 +9,4 @@ subtype=Wraith
 cost={4}{B}
 pt=4/2
 timing=main
+oracle=Swampwalk

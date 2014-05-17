@@ -8,3 +8,4 @@ subtype=Arcane
 cost={R}
 effect=Target creature gains haste until end of turn.
 timing=pump
+oracle=Target creature gains haste until end of turn.

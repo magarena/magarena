@@ -7,3 +7,4 @@ type=Artifact,Land
 ability=indestructible;\
         {T}: Add {1} to your mana pool.
 timing=land
+oracle=Indestructible. {T}: Add {1} to your mana pool.

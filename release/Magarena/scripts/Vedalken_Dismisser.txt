@@ -9,3 +9,4 @@ cost={5}{U}
 pt=2/2
 ability=When SN enters the battlefield, put target creature on top of its owner's library.
 timing=main
+oracle=When Vedalken Dismisser enters the battlefield, put target creature on top of its owner's library.

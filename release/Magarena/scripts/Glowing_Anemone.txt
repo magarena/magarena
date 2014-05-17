@@ -9,3 +9,4 @@ cost={3}{U}
 pt=1/3
 ability=When SN enters the battlefield, return target land to its owner's hand.
 timing=main
+oracle=When Glowing Anemone enters the battlefield, you may return target land to its owner's hand.

@@ -9,3 +9,4 @@ cost={2}{W}
 pt=2/2
 ability=Whenever another white creature enters the battlefield under your control, tap target creature an opponent controls.
 timing=main
+oracle=Whenever another white creature enters the battlefield under your control, tap target creature an opponent controls.

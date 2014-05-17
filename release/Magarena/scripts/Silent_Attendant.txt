@@ -9,3 +9,4 @@ cost={2}{W}
 pt=0/2
 ability={T}: You gain 1 life.
 timing=main
+oracle={T}: You gain 1 life.

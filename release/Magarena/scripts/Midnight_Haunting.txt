@@ -7,3 +7,4 @@ type=Instant
 cost={2}{W}
 effect=Put two 1/1 white Spirit creature tokens with flying onto the battlefield.
 timing=token
+oracle=Put two 1/1 white Spirit creature tokens with flying onto the battlefield.

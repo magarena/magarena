@@ -7,3 +7,4 @@ type=Artifact
 cost={0}
 ability={2},{T}: You gain 1 life.
 timing=artifact
+oracle={2}, {T}: You gain 1 life.

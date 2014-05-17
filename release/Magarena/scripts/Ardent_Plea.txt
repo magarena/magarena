@@ -7,3 +7,4 @@ type=Enchantment
 cost={1}{W}{U}
 ability=exalted;cascade
 timing=enchantment
+oracle=Exalted. Cascade

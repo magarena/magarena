@@ -10,3 +10,4 @@ pt=4/6
 ability=deathtouch;monstrosity 3 {6}{B}{B}
 timing=main
 requires_groovy_code
+oracle=Deathtouch. {6}{B}{B}: Monstrosity 3.. When Hythonia the Cruel becomes monstrous, destroy all non-Gorgon creatures.

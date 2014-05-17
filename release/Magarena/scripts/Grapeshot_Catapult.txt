@@ -9,3 +9,4 @@ cost={4}
 pt=2/3
 ability={T}:SN deals 1 damage to target creature with flying.
 timing=artifact
+oracle={T}: Grapeshot Catapult deals 1 damage to target creature with flying.

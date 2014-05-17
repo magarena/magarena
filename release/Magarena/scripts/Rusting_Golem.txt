@@ -9,3 +9,4 @@ cost={4}
 ability=fading 5
 timing=main
 requires_groovy_code
+oracle=Fading 5. Rusting Golem's power and toughness are each equal to the number of fade counters on it.

@@ -9,3 +9,4 @@ cost={2}{U}
 ability=replicate {2}{U}
 effect=Return target creature to its owner's hand.
 timing=removal
+oracle=Replicate {2}{U}. Return target creature to its owner's hand.

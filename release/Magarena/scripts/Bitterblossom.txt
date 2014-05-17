@@ -8,3 +8,4 @@ subtype=Faerie
 cost={1}{B}
 timing=enchantment
 requires_groovy_code
+oracle=At the beginning of your upkeep, you lose 1 life and put a 1/1 black Faerie Rogue creature token with flying onto the battlefield.

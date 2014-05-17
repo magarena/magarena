@@ -9,3 +9,4 @@ cost={3}{G}
 ability=SN has trample as long as you control another Treefolk.
 timing=main
 requires_groovy_code
+oracle=Dauntless Dourbark's power and toughness are each equal to the number of Forests you control plus the number of Treefolk you control. Dauntless Dourbark has trample as long as you control another Treefolk.

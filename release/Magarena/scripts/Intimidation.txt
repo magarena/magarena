@@ -8,3 +8,4 @@ cost={2}{B}{B}{B}
 ability=creatures you control have fear
 static=player
 timing=enchantment
+oracle=Creatures you control have fear.

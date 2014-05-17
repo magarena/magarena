@@ -9,3 +9,4 @@ cost={4}{R}
 pt=6/3
 ability=When SN enters the battlefield, SN deals 3 damage to target creature you control.
 timing=main
+oracle=When Whiptail Moloch enters the battlefield, it deals 3 damage to target creature you control.

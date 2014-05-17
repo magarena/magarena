@@ -7,3 +7,4 @@ type=Instant
 cost={R}{G}
 timing=removal
 requires_groovy_code
+oracle=Destroy target artifact or enchantment. Destructive Revelry deals 2 damage to that permanent's controller.

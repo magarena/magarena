@@ -7,3 +7,4 @@ type=Artifact
 cost={2}{B}
 ability={T}: Target player loses 1 life.
 timing=artifact
+oracle={T}: Target player loses 1 life.

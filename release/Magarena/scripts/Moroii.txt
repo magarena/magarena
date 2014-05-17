@@ -10,3 +10,4 @@ pt=4/4
 ability=flying;\
         At the beginning of your upkeep, you lose 1 life.
 timing=main
+oracle=Flying. At the beginning of your upkeep, you lose 1 life.

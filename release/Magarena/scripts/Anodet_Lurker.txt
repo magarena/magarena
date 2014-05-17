@@ -9,3 +9,4 @@ cost={5}
 pt=3/3
 ability=When SN dies, you gain 3 life.
 timing=artifact
+oracle=When Anodet Lurker dies, you gain 3 life.

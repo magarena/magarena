@@ -9,3 +9,4 @@ cost={2}
 ability=Equip {1}
 timing=equipment
 requires_groovy_code
+oracle=Equipped creature gets +1/+0 for each artifact you control. {B}{B}: Attach Cranial Plating to target creature you control. Equip {1}

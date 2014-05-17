@@ -8,3 +8,4 @@ cost={4}
 ability={T}: You gain 1 life.;\
         {T},Discard a card: You gain 3 life.
 timing=artifact
+oracle={T}: You gain 1 life. {T}, Discard a card: You gain 3 life.

@@ -8,3 +8,4 @@ mana=r2
 ability={T}: Add {R} to your mana pool.;\
         {R},{T}:Target legendary creature gains first strike until end of turn.
 timing=land
+oracle={T}: Add {R} to your mana pool. {R}, {T}: Target legendary creature gains first strike until end of turn.

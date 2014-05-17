@@ -9,3 +9,4 @@ cost={0}
 ability=Equipped creature gets +0/+2 and has reach.;\
         Equip {2}
 timing=equipment
+oracle=Equipped creature gets +0/+2 and has reach.. Equip {2}

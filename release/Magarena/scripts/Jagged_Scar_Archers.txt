@@ -8,3 +8,4 @@ subtype=Elf,Archer
 cost={1}{G}{G}
 timing=main
 requires_groovy_code
+oracle=Jagged-Scar Archers's power and toughness are each equal to the number of Elves you control. {T}: Jagged-Scar Archers deals damage equal to its power to target creature with flying.

@@ -10,3 +10,4 @@ pt=2/2
 ability=flying;\
         {1}{B}: Regenerate SN.
 timing=main
+oracle=Flying. {1}{B}: Regenerate Screeching Harpy.

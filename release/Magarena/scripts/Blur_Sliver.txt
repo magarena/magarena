@@ -10,3 +10,4 @@ pt=2/2
 ability=sliver creatures you control have haste
 static=player
 timing=fmain
+oracle=Sliver creatures you control have haste.

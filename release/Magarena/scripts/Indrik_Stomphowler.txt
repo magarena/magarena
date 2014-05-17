@@ -9,3 +9,4 @@ cost={4}{G}
 pt=4/4
 ability=When SN enters the battlefield, destroy target artifact or enchantment.
 timing=main
+oracle=When Indrik Stomphowler enters the battlefield, destroy target artifact or enchantment.

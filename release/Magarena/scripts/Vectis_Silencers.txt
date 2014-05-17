@@ -9,3 +9,4 @@ cost={2}{U}
 pt=1/2
 ability={2}{B}: SN gains deathtouch until end of turn.
 timing=main
+oracle={2}{B}: Vectis Silencers gains deathtouch until end of turn.

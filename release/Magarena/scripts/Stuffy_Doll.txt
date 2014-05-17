@@ -11,3 +11,4 @@ ability=As SN enters the battlefield, choose an opponent.;\
         indestructible;
 timing=smain
 requires_groovy_code
+oracle=Indestructible. As Stuffy Doll enters the battlefield, choose a player. Whenever Stuffy Doll is dealt damage, it deals that much damage to the chosen player. {T}: Stuffy Doll deals 1 damage to itself.

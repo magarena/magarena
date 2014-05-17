@@ -7,3 +7,4 @@ type=Enchantment
 cost={4}{W/B}{W/B}{W/B}
 ability=At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control.
 timing=enchantment
+oracle=At the beginning of your upkeep, put target creature card from a graveyard onto the battlefield under your control.

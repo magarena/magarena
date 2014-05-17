@@ -9,3 +9,4 @@ cost={4}{B}{R}
 pt=5/3
 ability={B}{R}: SN gets +1/+0 until end of turn.
 timing=main
+oracle={B}{R}: Pavel Maliki gets +1/+0 until end of turn.

@@ -9,3 +9,4 @@ cost={1}{B}
 pt=2/1
 ability=Sacrifice a Goblin: Regenerate SN.
 timing=main
+oracle=Sacrifice a Goblin: Regenerate Goblin Turncoat.

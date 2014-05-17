@@ -11,3 +11,4 @@ ability=You control enchanted creature.;\
         Enchanted creature gets +0/+1.
 timing=aura
 enchant=gain control,neg creature
+oracle=Enchant creature. At the beginning of your upkeep, sacrifice Binding Grasp unless you pay {1}{U}. You control enchanted creature. Enchanted creature gets +0/+1.

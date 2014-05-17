@@ -7,3 +7,4 @@ type=Sorcery
 cost={4}{B}
 timing=main
 requires_groovy_code
+oracle=Put target creature card from a graveyard onto the battlefield under your control. That creature is a black Zombie in addition to its other colors and types.

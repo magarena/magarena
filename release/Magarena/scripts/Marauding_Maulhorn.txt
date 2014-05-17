@@ -9,3 +9,4 @@ cost={2}{R}{R}
 pt=5/3
 timing=main
 requires_groovy_code
+oracle=Marauding Maulhorn attacks each combat if able unless you control a creature named Advocate of the Beast.

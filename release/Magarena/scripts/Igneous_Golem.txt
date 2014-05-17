@@ -9,3 +9,4 @@ cost={5}
 pt=3/4
 ability={2}:SN gains trample until end of turn.
 timing=artifact
+oracle={2}: Igneous Golem gains trample until end of turn.

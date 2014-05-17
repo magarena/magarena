@@ -8,3 +8,4 @@ subtype=Elf
 cost={2}{B}
 effect=Destroy target non-Elf creature.
 timing=removal
+oracle=Destroy target non-Elf creature.

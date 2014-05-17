@@ -9,3 +9,4 @@ cost={4}{G}
 pt=4/4
 ability=Whenever another creature with power 3 or greater enters the battlefield under your control, you may draw a card.
 timing=main
+oracle=Whenever another creature with power 3 or greater enters the battlefield under your control, you may draw a card.

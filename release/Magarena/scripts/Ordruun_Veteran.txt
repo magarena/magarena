@@ -9,3 +9,4 @@ cost={2}{R}{W}
 pt=3/1
 ability=Whenever SN and at least two other creatures attack, SN gains double strike until end of turn.
 timing=main
+oracle=Battalion ? Whenever Ordruun Veteran and at least two other creatures attack, Ordruun Veteran gains double strike until end of turn.

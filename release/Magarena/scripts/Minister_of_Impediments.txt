@@ -9,3 +9,4 @@ cost={2}{W/U}
 pt=1/1
 ability={T}: Tap target creature.
 timing=main
+oracle={T}: Tap target creature.

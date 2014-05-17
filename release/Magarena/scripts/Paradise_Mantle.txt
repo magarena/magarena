@@ -9,3 +9,4 @@ cost={0}
 ability=Equipped creature has "{T}: Add one mana of any color to your mana pool.";\
         Equip {1}
 timing=equipment
+oracle=Equipped creature has "{T}: Add one mana of any color to your mana pool.". Equip {1}

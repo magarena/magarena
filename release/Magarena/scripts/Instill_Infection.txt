@@ -8,3 +8,4 @@ type=Instant
 cost={3}{B}
 timing=removal
 requires_groovy_code
+oracle=Put a -1/-1 counter on target creature. Draw a card.

@@ -10,3 +10,4 @@ ability=indestructible;\
         Equipped creature gets +2/+0;\
         Equip {2}
 timing=equipment
+oracle=Indestructible. Equipped creature gets +2/+0. Equip {2}

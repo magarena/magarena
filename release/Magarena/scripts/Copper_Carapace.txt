@@ -9,3 +9,4 @@ cost={1}
 ability=Equipped creature gets +2/+2 and can't block.;\
         Equip {3}
 timing=main
+oracle=Equipped creature gets +2/+2 and can't block. Equip {3}

@@ -9,3 +9,4 @@ cost={4}{W}
 pt=3/1
 ability=plainswalk
 timing=main
+oracle=Plainswalk

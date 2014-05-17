@@ -7,3 +7,4 @@ type=Instant
 cost={R}
 effect=Switch target creature's power and toughness until end of turn.
 timing=pump
+oracle=Switch target creature's power and toughness until end of turn.

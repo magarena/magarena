@@ -9,3 +9,4 @@ cost={R}
 pt=0/2
 ability={R}: SN gets +1/+0 until end of turn.
 timing=main
+oracle={R}: Flamekin Brawler gets +1/+0 until end of turn.

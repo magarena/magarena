@@ -9,3 +9,4 @@ cost={G}
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code
+oracle=Enchant creature. At the beginning of your upkeep, put a +1/+1 counter on enchanted creature.

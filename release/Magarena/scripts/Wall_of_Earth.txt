@@ -9,3 +9,4 @@ cost={1}{R}
 pt=0/6
 ability=defender
 timing=main
+oracle=Defender

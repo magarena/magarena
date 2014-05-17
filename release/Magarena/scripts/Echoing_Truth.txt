@@ -8,3 +8,4 @@ type=Instant
 cost={1}{U}
 timing=removal
 requires_groovy_code
+oracle=Return target nonland permanent and all other permanents with the same name as that permanent to their owners' hands.

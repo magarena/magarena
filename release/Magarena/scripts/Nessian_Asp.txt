@@ -9,3 +9,4 @@ cost={4}{G}
 ability=reach;monstrosity 4 {6}{G}
 pt=4/5
 timing=main
+oracle=Reach. {6}{G}: Monstrosity 4.

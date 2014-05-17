@@ -7,3 +7,4 @@ type=Sorcery
 cost={B}
 effect=Search your library for a Mercenary card, reveal it, and put it into your hand. Then shuffle your library.
 timing=main
+oracle=Search your library for a Mercenary card, reveal that card, and put it into your hand. Then shuffle your library.

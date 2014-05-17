@@ -7,3 +7,4 @@ type=Artifact
 cost={0}
 ability={3}, Sacrifice SN: Regenerate target creature.
 timing=artifact
+oracle={3}, Sacrifice Herbal Poultice: Regenerate target creature.

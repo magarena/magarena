@@ -9,3 +9,4 @@ cost={2}{B}
 pt=3/3
 ability=When SN leaves the battlefield, sacrifice a creature.
 timing=main
+oracle=When Servant of Volrath leaves the battlefield, sacrifice a creature.

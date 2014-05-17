@@ -7,3 +7,4 @@ type=Sorcery
 cost={5}{U}
 timing=main
 requires_groovy_code
+oracle=Draw a card for each Island you control.

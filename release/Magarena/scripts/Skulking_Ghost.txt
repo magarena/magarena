@@ -10,3 +10,4 @@ pt=2/1
 ability=flying;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
+oracle=Flying. When Skulking Ghost becomes the target of a spell or ability, sacrifice it.

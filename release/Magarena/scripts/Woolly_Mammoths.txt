@@ -9,3 +9,4 @@ cost={1}{G}{G}
 pt=3/2
 ability=SN has trample as long as you control a snow land.
 timing=main
+oracle=Woolly Mammoths has trample as long as you control a snow land.

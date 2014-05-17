@@ -10,3 +10,4 @@ pt=6/6
 ability=echo {4}{R}{R}
 timing=main
 requires_groovy_code
+oracle=Echo {4}{R}{R}. When Crater Hellion enters the battlefield, it deals 4 damage to each other creature.

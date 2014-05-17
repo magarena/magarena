@@ -9,3 +9,4 @@ subtype=Boar
 cost={3}{R}
 pt=3/2
 timing=main
+oracle=Intimidate

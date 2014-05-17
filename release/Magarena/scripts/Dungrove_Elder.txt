@@ -9,3 +9,4 @@ cost={2}{G}
 ability=hexproof
 timing=smain
 requires_groovy_code
+oracle=Hexproof. Dungrove Elder's power and toughness are each equal to the number of Forests you control.

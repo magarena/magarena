@@ -8,3 +8,4 @@ type=Sorcery
 cost={B}
 timing=removal
 effect=Destroy target green or white creature.
+oracle=Destroy target green or white creature.

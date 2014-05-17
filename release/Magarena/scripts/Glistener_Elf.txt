@@ -9,3 +9,4 @@ subtype=Elf,Warrior
 cost={G}
 pt=1/1
 timing=main
+oracle=Infect

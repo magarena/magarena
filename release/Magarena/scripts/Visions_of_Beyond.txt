@@ -7,3 +7,4 @@ type=Instant
 cost={U}
 timing=draw
 requires_groovy_code
+oracle=Draw a card. If a graveyard has twenty or more cards in it, draw three cards instead.

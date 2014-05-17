@@ -9,3 +9,4 @@ cost={1}{R}
 pt=1/1
 ability=When SN dies, each player sacrifices a land.
 timing=main
+oracle=When Akki Blizzard-Herder dies, each player sacrifices a land.

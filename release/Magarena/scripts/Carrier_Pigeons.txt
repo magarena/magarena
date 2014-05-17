@@ -10,3 +10,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.
 timing=main
+oracle=Flying. When Carrier Pigeons enters the battlefield, draw a card at the beginning of the next turn's upkeep.

@@ -8,3 +8,4 @@ type=Sorcery
 cost={4}{B}
 timing=removal
 requires_groovy_code
+oracle=Destroy target land. You gain 4 life.

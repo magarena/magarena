@@ -10,3 +10,4 @@ pt=4/2
 ability=Whenever SN becomes tapped, target opponent gains 2 life.;\
         {2}: Regenerate SN.
 timing=artifact
+oracle=Whenever Soldevi Steam Beast becomes tapped, target opponent gains 2 life. {2}: Regenerate Soldevi Steam Beast.

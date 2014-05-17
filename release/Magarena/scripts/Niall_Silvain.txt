@@ -9,3 +9,4 @@ cost={G}{G}{G}
 pt=2/2
 ability={G}{G}{G}{G}, {T}: Regenerate target creature.
 timing=main
+oracle={G}{G}{G}{G}, {T}: Regenerate target creature.

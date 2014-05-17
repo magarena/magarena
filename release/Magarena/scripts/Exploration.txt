@@ -7,3 +7,4 @@ type=Enchantment
 cost={G}
 timing=main
 requires_groovy_code
+oracle=You may play an additional land on each of your turns.

@@ -12,3 +12,4 @@ ability=flying;\
         haste;\
         Whenever SN deals combat damage to a creature, put a +1/+1 counter on SN.
 timing=fmain
+oracle=Flying, first strike, haste. Whenever Mirri the Cursed deals combat damage to a creature, put a +1/+1 counter on Mirri the Cursed.

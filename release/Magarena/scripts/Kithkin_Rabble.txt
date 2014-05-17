@@ -9,3 +9,4 @@ cost={3}{W}
 ability=vigilance
 timing=main
 requires_groovy_code
+oracle=Vigilance. Kithkin Rabble's power and toughness are each equal to the number of white permanents you control.

@@ -10,3 +10,4 @@ pt=2/2
 ability=flying
 timing=main
 requires_groovy_code
+oracle=Flying. Whenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can't be regenerated.

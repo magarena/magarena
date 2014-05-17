@@ -11,3 +11,4 @@ pt=2/2
 ability=deathtouch;\
         When SN enters the battlefield, destroy target artifact, enchantment, or land.
 timing=fmain
+oracle=Deathtouch. When Acidic Slime enters the battlefield, destroy target artifact, enchantment, or land.

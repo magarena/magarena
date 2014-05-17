@@ -9,3 +9,4 @@ cost={4}{R}
 pt=1/7
 ability=Whenever SN attacks, switch SN's power and toughness until end of turn.
 timing=main
+oracle=Whenever Valakut Fireboar attacks, switch its power and toughness until end of turn.

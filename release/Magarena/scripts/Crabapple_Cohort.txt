@@ -9,3 +9,4 @@ cost={4}{G}
 pt=4/4
 ability=SN gets +1/+1 as long as you control another green creature.
 timing=main
+oracle=Crabapple Cohort gets +1/+1 as long as you control another green creature.
