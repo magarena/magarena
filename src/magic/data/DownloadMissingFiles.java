@@ -75,16 +75,12 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
             }
         }
 
-        // download card images and texts
+        // download card images.
         final File cardsPathFile=new File(gamePathFile, CardDefinitions.CARD_IMAGE_FOLDER);
         final File tokensPathFile = new File(gamePathFile, CardDefinitions.TOKEN_IMAGE_FOLDER);
-        final File textPathFile = new File(gamePathFile, CardDefinitions.CARD_TEXT_FOLDER);
 
         if (!tokensPathFile.exists() && !tokensPathFile.mkdir()) {
             System.err.println("WARNING. Unable to create " + tokensPathFile);
-        }
-        if (!textPathFile.exists() && !textPathFile.mkdir()) {
-            System.err.println("WARNING. Unable to create " + textPathFile);
         }
 
         for (final MagicCardDefinition cardDefinition : CardDefinitions.getCards()) {
@@ -104,24 +100,6 @@ public class DownloadMissingFiles extends ArrayList<WebDownloader> {
                     }
                 } catch (final java.net.MalformedURLException ex) {
                     System.err.println("ERROR! URL malformed " + imageURL);
-                }
-            }
-
-            // card text
-            final String textUrl = cardDefinition.getCardInfoURL();
-            if (textUrl != null && textUrl.length() > 0) {
-                final File textFile = new File(textPathFile,
-                    cardDefinition.getCardTextName() + CardDefinitions.CARD_TEXT_EXT);
-
-                // download if the file does not exists OR it is zero length OR it is outdated
-                if (!textFile.exists() ||
-                    textFile.length() == 0L ||
-                    cardDefinition.isIgnored(textFile.length())) {
-                    try { // create URL
-                        add(new DownloadCardTextFile(textFile, new URL(textUrl)));
-                    } catch (final java.net.MalformedURLException ex) {
-                        System.err.println("ERROR! URL malformed " + textUrl);
-                    }
                 }
             }
         }

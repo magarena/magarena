@@ -331,7 +331,6 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
         final File[] oldDirs = {
             new File(oldDataFolder, CardDefinitions.CARD_IMAGE_FOLDER),
             new File(oldDataFolder, CardDefinitions.TOKEN_IMAGE_FOLDER),
-            new File(oldDataFolder, CardDefinitions.CARD_TEXT_FOLDER),
             new File(oldDataFolder, History.HISTORY_FOLDER)
         };
 
@@ -387,9 +386,6 @@ public class DownloadImagesDialog extends JFrame implements Runnable,ActionListe
                 frame.updateGameView();
             }
         });
-
-        // reload text
-        CardDefinitions.loadCardTexts();
 
         saveDownloadLog(downloadedImages);
 

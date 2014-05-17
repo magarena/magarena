@@ -190,8 +190,6 @@ public class MagicMain {
             setSplashStatusMessage("Loading card abilities...");
             CardDefinitions.loadCardAbilities();
         }
-        setSplashStatusMessage("Loading card texts...");
-        CardDefinitions.loadCardTexts();
         setSplashStatusMessage("Loading cube definitions...");
         CubeDefinitions.loadCubeDefinitions();
         setSplashStatusMessage("Loading keyword definitions...");

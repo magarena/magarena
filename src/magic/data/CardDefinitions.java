@@ -35,7 +35,6 @@ import groovy.lang.GroovyShell;
  */
 public class CardDefinitions {
 
-    public static final String CARD_TEXT_FOLDER = "texts";
     public static final String CARD_IMAGE_FOLDER = "cards";
     public static final String TOKEN_IMAGE_FOLDER = "tokens";
     public static final String CARD_IMAGE_EXT = CardImagesProvider.IMAGE_EXTENSION;
@@ -242,41 +241,6 @@ public class CardDefinitions {
             throw new RuntimeException("Unknown card: " + name);
         }
         return cardDefinition;
-    }
-
-    public static void loadCardTexts() {
-        final ExecutorService executor = Executors.newSingleThreadExecutor();
-        executor.execute(new Runnable() {
-            @Override
-            public void run() {
-                for (final MagicCardDefinition card : getCards()) {
-                    if (card != MagicCardDefinition.UNKNOWN && card.getText().length() == 0) {
-                        loadCardText(card);
-                    }
-                }
-            }
-        });
-        executor.shutdown();
-    }
-
-    private static void loadCardText(final MagicCardDefinition card) {
-        // try to load text from file
-        final StringBuilder buffer = new StringBuilder();
-        buffer.append(MagicMain.getGamePath());
-        buffer.append(File.separator);
-        buffer.append(CARD_TEXT_FOLDER);
-        buffer.append(File.separator);
-        buffer.append(card.getCardTextName());
-        buffer.append(CARD_TEXT_EXT);
-
-        try {
-            final String text = FileIO.toStr(new File(buffer.toString()));
-            if (text != null) {
-                card.setText(text);
-            }
-        } catch (IOException e) {
-            // text not downloaded or missing
-        }
     }
 
     public static MagicCardDefinition getBasicLand(final MagicColor color) {
