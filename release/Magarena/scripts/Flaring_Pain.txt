@@ -1,0 +1,10 @@
+name=Flaring Pain
+url=http://magiccards.info/query?q=%21flaring%20pain
+image=http://mtgimage.com/card/flaring%20pain.jpg
+value=3.011
+rarity=C
+type=Instant
+cost={1}{R}
+timing=removal
+ability=Flashback {R}
+requires_groovy_code
