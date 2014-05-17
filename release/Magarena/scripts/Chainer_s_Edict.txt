@@ -1,0 +1,11 @@
+name=Chainer's Edict
+url=http://magiccards.info/v13/en/10.html
+image=http://magiccards.info/scans/en/v13/10.jpg
+value=4.582
+removal=3
+rarity=U
+type=Sorcery
+cost={1}{B}
+timing=removal
+ability=Flashback {5}{B}{B}
+requires_groovy_code=Diabolic Edict
