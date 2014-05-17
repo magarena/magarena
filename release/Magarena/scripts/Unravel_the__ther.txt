@@ -1,0 +1,10 @@
+name=Unravel the Æther
+url=http://magiccards.info/query?q=%21unravel%20the%20aether
+image=http://mtgimage.com/card/unravel%20the%20aether.jpg
+value=4.435
+rarity=U
+type=Instant
+cost={1}{G}
+timing=removal
+requires_groovy_code
+oracle=Choose target artifact or enchantment. Its owner shuffles it into his or her library.

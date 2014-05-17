@@ -1,0 +1,13 @@
+name=Lim-Dûl's High Guard
+url=http://magiccards.info/query?q=%21lim%2Ddul%27s%20high%20guard
+image=http://mtgimage.com/card/lim%2Ddul%27s%20high%20guard.jpg
+value=3.595
+rarity=C
+type=Creature
+subtype=Skeleton
+cost={1}{B}{B}
+pt=2/1
+ability=first strike;\
+        {1}{B}: Regenerate SN.
+timing=main
+oracle=First strike. {1}{B}: Regenerate Lim-Dûl's High Guard.
