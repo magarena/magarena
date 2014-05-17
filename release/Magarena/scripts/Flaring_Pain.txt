@@ -1,6 +1,6 @@
 name=Flaring Pain
-url=http://magiccards.info/ju/en/89.html
-image=http://magiccards.info/scans/en/ju/89.jpg
+url=http://magiccards.info/query?q=%21flaring%20pain
+image=http://mtgimage.com/card/flaring%20pain.jpg
 value=3.011
 rarity=C
 type=Instant

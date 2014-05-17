@@ -1,6 +1,6 @@
 name=Chainer's Edict
-url=http://magiccards.info/v13/en/10.html
-image=http://magiccards.info/scans/en/v13/10.jpg
+url=http://magiccards.info/query?q=%21chainer%27s%20edict
+image=http://mtgimage.com/card/chainer%27s%20edict.jpg
 value=4.582
 removal=3
 rarity=U

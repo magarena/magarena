@@ -1,6 +1,6 @@
 name=Engulfing Flames
-url=http://magiccards.info/od/en/191.html
-image=http://magiccards.info/scans/en/od/191.jpg
+url=http://magiccards.info/query?q=%21engulfing%20flames
+image=http://mtgimage.com/card/engulfing%20flames.jpg
 value=3.011
 removal=2
 rarity=U
