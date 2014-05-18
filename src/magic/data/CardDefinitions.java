@@ -95,7 +95,7 @@ public class CardDefinitions {
 
         cardDefinition.setIndex(playableCards.size());
         playableCards.add(cardDefinition);
-        final String key = getASCIIName(cardDefinition.getFullName());
+        final String key = getASCII(cardDefinition.getFullName());
         cardsMap.put(key,cardDefinition);
 
         //add to tokens or all (vintage) cube
@@ -149,7 +149,7 @@ public class CardDefinitions {
         return fullName.replaceAll("[^A-Za-z0-9]", "_");
     }
     
-    public static String getASCIIName(String fullName) {
+    public static String getASCII(String fullName) {
         return Normalizer.normalize(fullName, Normalizer.Form.NFD)
                          .replaceAll("\\p{InCombiningDiacriticalMarks}+", "")
                          .replace("Æ", "AE");
@@ -244,7 +244,7 @@ public class CardDefinitions {
     }
 
     public static MagicCardDefinition getCard(final String original) {
-        final String name = getASCIIName(original);
+        final String name = getASCII(original);
         final MagicCardDefinition cardDefinition=cardsMap.get(name);
         if (cardDefinition == null) {
             throw new RuntimeException("Unknown card: " + original);

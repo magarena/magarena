@@ -782,11 +782,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean hasText(String s) {
         s = s.toLowerCase();
         return (
-            fullName.toLowerCase().contains(s) ||
-            name.toLowerCase().contains(s) ||
+            CardDefinitions.getASCII(fullName).toLowerCase().contains(s) ||
+            CardDefinitions.getASCII(name).toLowerCase().contains(s) ||
             subTypeHasText(s) ||
             abilityHasText(s) ||
-            getText().toLowerCase().contains(s)
+            CardDefinitions.getASCII(getText()).toLowerCase().contains(s)
         );
     }
 
