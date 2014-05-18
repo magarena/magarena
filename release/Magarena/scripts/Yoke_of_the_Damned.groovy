@@ -3,9 +3,9 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
-            return (otherPermanent.isCreature() && 
+            return (otherPermanent.isCreature() &&
                     enchantedPermanent != otherPermanent &&
-                    permanent != otherPermanent) ?
+                    enchantedPermanent.isValid()) ?
                 new MagicEvent(
                     permanent,
                     enchantedPermanent,
