@@ -152,7 +152,7 @@ public class CardDefinitions {
     public static String getASCII(String fullName) {
         return Normalizer.normalize(fullName, Normalizer.Form.NFD)
                          .replaceAll("\\p{InCombiningDiacriticalMarks}+", "")
-                         .replace("Æ", "AE");
+                         .replace("\u00C6", "AE");
     }
 
     private static void loadCardDefinition(final File file) {
