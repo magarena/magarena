@@ -43,14 +43,6 @@ Console.err.println("reading rarity from meta.xml")
 for (card <- meta \ "card") {
     val name_node = card \ "@name"
     val name = name_node.text
-        .replace("Æ", "AE")
-        .replace("û","u")
-        .replace("ö","o")
-        .replace("á","a")
-        .replace("à","a")
-        .replace("â","a")
-        .replace("é","e")
-        .replace("ú","u")
     name2card += (name -> card)
 }
 
