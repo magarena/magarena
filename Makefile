@@ -489,7 +489,7 @@ check_rarity: scripts/fix_rarity.scala cards/meta.xml
 
 # check metadata using cards.xml
 check_meta: cards/scriptable.txt
-	diff <(cat `grep name= $^ | sed 's/[^A-Za-z0-9]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
+	diff <(cat `grep name= $^ | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' $^) -d  |\
 	grep ">" |\
 	grep -v "0/0" |\
@@ -515,7 +515,7 @@ check_aura:
 check_requires_groovy_code:
 	diff \
 	<(ls -1 release/Magarena/scripts/*.groovy | cut -d'/' -f 4 | sed 's/.groovy//' | sort) \
-	<(grep requires_groovy_code -r release/Magarena/scripts/ | sed 's/.*=//' | sed 's/;/\n/g' | sed 's/.*scripts\///;s/.txt.*//' | sed 's/[^A-Za-z0-9]/_/g' | sort | uniq)
+	<(grep requires_groovy_code -r release/Magarena/scripts/ | sed 's/.*=//' | sed 's/;/\n/g' | sed 's/.*scripts\///;s/.txt.*//' | sed -f scripts/normalize_name.sed | sort | uniq)
 
 # $ must be escaped as \$ in groovy script
 check_groovy_escape:
@@ -529,7 +529,7 @@ check_empty_return:
 check_script_name:
 	diff \
 	<(ls -1 release/Magarena/scripts/ | grep txt | sort) \
-	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//;s/[^A-Za-z0-9]/_/g;s/$$/.txt/')
+	<(grep "name=" -r release/Magarena/scripts/ | sort | sed 's/.*name=//' | sed -f scripts/normalize_name.sed | sed 's/$$/.txt/')
 
 # check tokens used match tokens in scripts
 check_tokens:
@@ -705,7 +705,7 @@ incoming:
 	grep -o https.* .hg/hgrc | parallel -j0 -k hg incoming {}
 
 properties.diff:
-	diff <(cat `grep name= cards/scriptable.txt | sed 's/[^A-Za-z0-9]/_/g;s/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
+	diff <(cat `grep name= cards/scriptable.txt | sed -f scripts/normalize_name.sed | sed 's/name_/release\/Magarena\/scripts\//;s/$$/.txt/'`) \
 	     <(sed '/^$$/d' cards/scriptable.txt) -d -u > $@
 
 common_costs:
