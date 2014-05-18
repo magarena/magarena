@@ -23,6 +23,7 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.text.Normalizer;
 
 import org.codehaus.groovy.control.CompilerConfiguration;
 import org.codehaus.groovy.control.customizers.ASTTransformationCustomizer;
@@ -94,7 +95,8 @@ public class CardDefinitions {
 
         cardDefinition.setIndex(playableCards.size());
         playableCards.add(cardDefinition);
-        cardsMap.put(cardDefinition.getFullName(),cardDefinition);
+        final String key = getASCIIName(cardDefinition.getFullName());
+        cardsMap.put(key,cardDefinition);
 
         //add to tokens or all (vintage) cube
         if (cardDefinition.isToken()) {
@@ -145,6 +147,12 @@ public class CardDefinitions {
 
     public static String getCanonicalName(String fullName) {
         return fullName.replaceAll("[^A-Za-z0-9]", "_");
+    }
+    
+    public static String getASCIIName(String fullName) {
+        return Normalizer.normalize(fullName, Normalizer.Form.NFD)
+                         .replaceAll("\\p{InCombiningDiacriticalMarks}+", "")
+                         .replace("Æ", "AE");
     }
 
     private static void loadCardDefinition(final File file) {
@@ -235,10 +243,11 @@ public class CardDefinitions {
         return playableCards.get(cindex);
     }
 
-    public static MagicCardDefinition getCard(final String name) {
+    public static MagicCardDefinition getCard(final String original) {
+        final String name = getASCIIName(original);
         final MagicCardDefinition cardDefinition=cardsMap.get(name);
         if (cardDefinition == null) {
-            throw new RuntimeException("Unknown card: " + name);
+            throw new RuntimeException("Unknown card: " + original);
         }
         return cardDefinition;
     }
