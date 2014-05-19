@@ -29,6 +29,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
 
@@ -170,8 +171,9 @@ public class ExplorerPanel extends JPanel {
     }
 
     private String getCountCaption(final int total, final int value) {
-        final int percent = (int)Math.round(value / (double)total * 100);
-        return NumberFormat.getInstance().format(value) + " (" + percent + "%)";
+        final double percent = value / (double)total * 100;
+        DecimalFormat df = new DecimalFormat("0.0");
+        return value + " (" + df.format(percent) + "%)";
     }
 
     public boolean isDeckEditor() {
