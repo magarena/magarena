@@ -228,6 +228,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_ATTACKING_CREATURE = 
         MagicTargetChoice.Positive("target attacking creature");
     
+    public static final MagicTargetChoice POS_TARGET_NONATTACKING_CREATURE = 
+        MagicTargetChoice.Positive("target nonattacking creature");
+    
     public static final MagicTargetChoice POS_TARGET_BLOCKING_CREATURE = 
         MagicTargetChoice.Positive("target blocking creature");
     

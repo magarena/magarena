@@ -929,6 +929,13 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Attacking, Control.You);
 
+    public static final MagicPermanentFilterImpl NONATTACKING_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.isAttacking();
+        }
+    };
+    
     public static final MagicPermanentFilterImpl NONATTACKING_NONBLOCKING_CREATURE=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -1660,6 +1667,7 @@ public class MagicTargetFilterFactory {
         single.put("unpaired Soulbond creature", UNPAIRED_SOULBOND_CREATURE);
         single.put("monocolored creature", MONOCOLORED_CREATURE);
         single.put("attacking creature", ATTACKING_CREATURE);
+        single.put("nonattacking creature", NONATTACKING_CREATURE);
         single.put("attacking or blocking creature", ATTACKING_OR_BLOCKING_CREATURE);
         single.put("blocked creature", BLOCKED_CREATURE);
         single.put("blocking creature", BLOCKING_CREATURE);
