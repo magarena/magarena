@@ -9,4 +9,4 @@ cost={4}{G}{G}
 pt=4/4
 ability=Whenever a land enters the battlefield under your control, SN gets +4/+4 and gains trample until end of turn.
 timing=main
-oracle=Landfall ? Whenever a land enters the battlefield under your control, Baloth Woodcrasher gets +4/+4 and gains trample until end of turn.
+oracle=Landfall — Whenever a land enters the battlefield under your control, Baloth Woodcrasher gets +4/+4 and gains trample until end of turn.

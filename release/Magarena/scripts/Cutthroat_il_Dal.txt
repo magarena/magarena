@@ -9,4 +9,4 @@ cost={3}{B}
 pt=4/1
 ability=SN has shadow as long as you have no cards in hand.
 timing=main
-oracle=Hellbent ? Cutthroat il-Dal has shadow as long as you have no cards in hand.
+oracle=Hellbent — Cutthroat il-Dal has shadow as long as you have no cards in hand.

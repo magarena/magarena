@@ -7,4 +7,4 @@ type=Sorcery
 cost={1}{U}{B}
 timing=main
 requires_groovy_code
-oracle=Choose one ? Target player draws two cards; or target player discards two cards.
+oracle=Choose one — Target player draws two cards; or target player discards two cards.

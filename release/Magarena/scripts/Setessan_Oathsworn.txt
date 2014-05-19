@@ -9,4 +9,4 @@ cost={1}{G}{G}
 pt=1/1
 ability=Whenever you cast a spell that targets SN, put two +1/+1 counters on SN.
 timing=main
-oracle=Heroic ? Whenever you cast a spell that targets Setessan Oathsworn, put two +1/+1 counters on Setessan Oathsworn.
+oracle=Heroic — Whenever you cast a spell that targets Setessan Oathsworn, put two +1/+1 counters on Setessan Oathsworn.

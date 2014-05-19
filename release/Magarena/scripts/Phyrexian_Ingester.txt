@@ -9,4 +9,4 @@ cost={6}{U}
 pt=3/3
 timing=main
 requires_groovy_code
-oracle=Imprint ? When Phyrexian Ingester enters the battlefield, you may exile target nontoken creature. Phyrexian Ingester gets +X/+Y, where X is the exiled creature card's power and Y is its toughness.
+oracle=Imprint — When Phyrexian Ingester enters the battlefield, you may exile target nontoken creature. Phyrexian Ingester gets +X/+Y, where X is the exiled creature card's power and Y is its toughness.

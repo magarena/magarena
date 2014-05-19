@@ -7,4 +7,4 @@ type=Legendary,Artifact
 cost={0}
 timing=artifact
 requires_groovy_code
-oracle=Metalcraft ? {T}: Add one mana of any color to your mana pool. Activate this ability only if you control three or more artifacts.
+oracle=Metalcraft — {T}: Add one mana of any color to your mana pool. Activate this ability only if you control three or more artifacts.

@@ -9,4 +9,4 @@ cost={W}{W}
 pt=2/2
 ability=SN has double strike as long as you control three or more artifacts.
 timing=main
-oracle=Metalcraft ? Auriok Edgewright has double strike as long as you control three or more artifacts.
+oracle=Metalcraft — Auriok Edgewright has double strike as long as you control three or more artifacts.

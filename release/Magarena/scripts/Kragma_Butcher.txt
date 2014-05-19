@@ -9,4 +9,4 @@ cost={2}{R}
 pt=2/3
 ability=Whenever SN becomes untapped, SN gets +2/+0 until end of turn.
 timing=main
-oracle=Inspired ? Whenever Kragma Butcher becomes untapped, it gets +2/+0 until end of turn.
+oracle=Inspired — Whenever Kragma Butcher becomes untapped, it gets +2/+0 until end of turn.

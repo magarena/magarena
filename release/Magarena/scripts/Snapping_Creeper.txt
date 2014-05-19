@@ -9,4 +9,4 @@ cost={2}{G}
 pt=2/3
 ability=Whenever a land enters the battlefield under your control, SN gains vigilance until end of turn.
 timing=main
-oracle=Landfall ? Whenever a land enters the battlefield under your control, Snapping Creeper gains vigilance until end of turn.
+oracle=Landfall — Whenever a land enters the battlefield under your control, Snapping Creeper gains vigilance until end of turn.

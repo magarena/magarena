@@ -9,4 +9,4 @@ cost={W}
 pt=1/1
 ability=SN gets +2/+2 as long as you control three or more artifacts.
 timing=main
-oracle=Metalcraft ? Ardent Recruit gets +2/+2 as long as you control three or more artifacts.
+oracle=Metalcraft — Ardent Recruit gets +2/+2 as long as you control three or more artifacts.

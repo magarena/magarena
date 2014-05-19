@@ -9,4 +9,4 @@ cost={1}{G}{G}
 pt=2/2
 ability=SN gets +2/+2 as long as seven or more cards are in your graveyard.
 timing=main
-oracle=Threshold ? Anurid Barkripper gets +2/+2 as long as seven or more cards are in your graveyard.
+oracle=Threshold — Anurid Barkripper gets +2/+2 as long as seven or more cards are in your graveyard.

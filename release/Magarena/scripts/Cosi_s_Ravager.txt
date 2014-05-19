@@ -9,4 +9,4 @@ cost={3}{R}
 pt=2/2
 ability=Whenever a land enters the battlefield under your control, you may have SN deal 1 damage to target player.
 timing=main
-oracle=Landfall ? Whenever a land enters the battlefield under your control, you may have Cosi's Ravager deal 1 damage to target player.
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may have Cosi's Ravager deal 1 damage to target player.

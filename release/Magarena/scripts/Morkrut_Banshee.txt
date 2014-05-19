@@ -9,4 +9,4 @@ cost={3}{B}{B}
 pt=4/4
 timing=main
 requires_groovy_code
-oracle=Morbid ? When Morkrut Banshee enters the battlefield, if a creature died this turn, target creature gets -4/-4 until end of turn.
+oracle=Morbid — When Morkrut Banshee enters the battlefield, if a creature died this turn, target creature gets -4/-4 until end of turn.

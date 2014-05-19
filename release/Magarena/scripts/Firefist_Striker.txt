@@ -9,4 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=Whenever SN and at least two other creatures attack, target creature can't block this turn.
 timing=main
-oracle=Battalion ? Whenever Firefist Striker and at least two other creatures attack, target creature can't block this turn.
+oracle=Battalion — Whenever Firefist Striker and at least two other creatures attack, target creature can't block this turn.

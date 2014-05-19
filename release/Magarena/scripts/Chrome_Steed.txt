@@ -9,4 +9,4 @@ cost={4}
 pt=2/2
 ability=SN gets +2/+2 as long as you control three or more artifacts.
 timing=main
-oracle=Metalcraft ? Chrome Steed gets +2/+2 as long as you control three or more artifacts.
+oracle=Metalcraft — Chrome Steed gets +2/+2 as long as you control three or more artifacts.

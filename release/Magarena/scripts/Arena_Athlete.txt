@@ -9,4 +9,4 @@ cost={1}{R}
 pt=2/1
 ability=Whenever you cast a spell that targets SN, target creature an opponent controls can't block this turn.
 timing=main
-oracle=Heroic ? Whenever you cast a spell that targets Arena Athlete, target creature an opponent controls can't block this turn.
+oracle=Heroic — Whenever you cast a spell that targets Arena Athlete, target creature an opponent controls can't block this turn.

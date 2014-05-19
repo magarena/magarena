@@ -9,4 +9,4 @@ cost={1}{W}
 pt=3/1
 ability=Whenever SN and at least two other creatures attack, SN gains flying until end of turn.
 timing=main
-oracle=Battalion ? Whenever Daring Skyjek and at least two other creatures attack, Daring Skyjek gains flying until end of turn.
+oracle=Battalion — Whenever Daring Skyjek and at least two other creatures attack, Daring Skyjek gains flying until end of turn.

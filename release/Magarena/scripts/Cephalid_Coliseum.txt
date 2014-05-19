@@ -8,4 +8,4 @@ mana=u2
 ability={T}: Add {U} to your mana pool. SN deals 1 damage to you.;\
         {Threshold}, {U}, {T}, Sacrifice SN: Target player draws three cards, then discards three cards.
 timing=land
-oracle={T}: Add {U} to your mana pool. Cephalid Coliseum deals 1 damage to you. Threshold ? {U}, {T}, Sacrifice Cephalid Coliseum: Target player draws three cards, then discards three cards. Activate this ability only if seven or more cards are in your graveyard.
+oracle={T}: Add {U} to your mana pool. Cephalid Coliseum deals 1 damage to you. Threshold — {U}, {T}, Sacrifice Cephalid Coliseum: Target player draws three cards, then discards three cards. Activate this ability only if seven or more cards are in your graveyard.

@@ -10,4 +10,4 @@ pt=3/1
 ability=first strike
 timing=main
 requires_groovy_code
-oracle=First strike. Bloodrush ? {2}{R}, Discard Viashino Shanktail: Target attacking creature gets +3/+1 and gains first strike until end of turn.
+oracle=First strike. Bloodrush — {2}{R}, Discard Viashino Shanktail: Target attacking creature gets +3/+1 and gains first strike until end of turn.

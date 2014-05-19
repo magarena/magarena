@@ -9,4 +9,4 @@ cost={4}{U}
 pt=2/6
 ability=Whenever SN or another enchantment enters the battlefield under your control, target player puts the top two cards of his or her library into his or her graveyard.
 timing=main
-oracle=Constellation ? Whenever Thassa's Devourer or another enchantment enters the battlefield under your control, target player puts the top two cards of his or her library into his or her graveyard.
+oracle=Constellation — Whenever Thassa's Devourer or another enchantment enters the battlefield under your control, target player puts the top two cards of his or her library into his or her graveyard.

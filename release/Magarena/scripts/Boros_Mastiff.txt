@@ -9,4 +9,4 @@ cost={1}{W}
 pt=2/2
 ability=Whenever SN and at least two other creatures attack, SN gains lifelink until end of turn.
 timing=main
-oracle=Battalion ? Whenever Boros Mastiff and at least two other creatures attack, Boros Mastiff gains lifelink until end of turn.
+oracle=Battalion — Whenever Boros Mastiff and at least two other creatures attack, Boros Mastiff gains lifelink until end of turn.

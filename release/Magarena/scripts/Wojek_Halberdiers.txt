@@ -9,4 +9,4 @@ cost={R}{W}
 pt=3/2
 ability=Whenever SN and at least two other creatures attack, SN gains first strike until end of turn.
 timing=main
-oracle=Battalion ? Whenever Wojek Halberdiers and at least two other creatures attack, Wojek Halberdiers gains first strike until end of turn.
+oracle=Battalion — Whenever Wojek Halberdiers and at least two other creatures attack, Wojek Halberdiers gains first strike until end of turn.

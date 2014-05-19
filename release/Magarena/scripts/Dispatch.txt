@@ -7,4 +7,4 @@ type=Instant
 cost={W}
 timing=tapping
 requires_groovy_code
-oracle=Tap target creature. Metalcraft ? If you control three or more artifacts, exile that creature.
+oracle=Tap target creature. Metalcraft — If you control three or more artifacts, exile that creature.

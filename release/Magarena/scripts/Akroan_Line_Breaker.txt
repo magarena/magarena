@@ -9,4 +9,4 @@ cost={2}{R}
 pt=2/1
 ability=Whenever you cast a spell that targets SN, SN gets +2/+0 and gains intimidate until end of turn.
 timing=main
-oracle=Heroic ? Whenever you cast a spell that targets Akroan Line Breaker, Akroan Line Breaker gets +2/+0 and gains intimidate until end of turn.
+oracle=Heroic — Whenever you cast a spell that targets Akroan Line Breaker, Akroan Line Breaker gets +2/+0 and gains intimidate until end of turn.

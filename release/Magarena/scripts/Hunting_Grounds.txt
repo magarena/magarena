@@ -7,4 +7,4 @@ type=Enchantment
 cost={G}{W}
 ability=As long as seven or more cards are in your graveyard, SN has "Whenever an opponent casts a spell, you may put a creature card from your hand onto the battlefield."
 timing=enchantment
-oracle=Threshold ? As long as seven or more cards are in your graveyard, Hunting Grounds has "Whenever an opponent casts a spell, you may put a creature card from your hand onto the battlefield."
+oracle=Threshold — As long as seven or more cards are in your graveyard, Hunting Grounds has "Whenever an opponent casts a spell, you may put a creature card from your hand onto the battlefield."
