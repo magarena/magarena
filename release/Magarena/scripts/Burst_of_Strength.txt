@@ -5,6 +5,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={G}
-effect=Put a +1/+1 counter on target creature and untap it.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Put a +1/+1 counter on target creature and untap it.

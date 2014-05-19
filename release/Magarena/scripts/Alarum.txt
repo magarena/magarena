@@ -5,6 +5,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Untap target nonattacking creature. It gets +1/+3 until end of turn.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Untap target nonattacking creature. It gets +1/+3 until end of turn.
