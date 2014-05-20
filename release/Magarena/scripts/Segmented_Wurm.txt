@@ -7,6 +7,6 @@ type=Creature
 subtype=Wurm
 cost={3}{R}{G}
 pt=5/5
-ability=Whenever SN becomes the target of a spell or ability, put a -1/-1 counter on it.
+ability=Whenever SN becomes the target of a spell or ability, put a -1/-1 counter on SN.
 timing=main
 oracle=Whenever Segmented Wurm becomes the target of a spell or ability, put a -1/-1 counter on it.

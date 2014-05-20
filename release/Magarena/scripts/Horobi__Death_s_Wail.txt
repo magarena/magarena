@@ -7,7 +7,7 @@ type=Creature
 subtype=Spirit
 cost={2}{B}{B}
 pt=4/4
-ability=Flying;\
-        Whenever a creature becomes the target of a spell or ability, destroy that creature.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying. Whenever a creature becomes the target of a spell or ability, destroy that creature.
